@@ -9,7 +9,7 @@ at: { lat: 35.1215, lng: -90.0493 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 75
+durationS: 71
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
   The next day he was killed, at the Lorraine Motel.
 
   It was the eve of his death, and he spent it here, with the men who collected the city's garbage.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "It can seat seventy-five hundred people, on two levels."
@@ -92,3 +92,56 @@ sources:
     url: https://www.nps.gov/places/tennessee-the-lorraine-hotel-memphis.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/memphis-the-mountaintop/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.3
+    audioBytes: 1142325
+    transcript:
+      totalS: 71.3
+      lines:
+        - text: Look at this vast concrete church.
+          atS: 0
+          durationS: 2.57
+        - text: It can seat seventy-five hundred people, on two levels.
+          atS: 3.01
+          durationS: 3.8
+        - text: It was built in the early 1940s, as the headquarters of the Church of God in Christ.
+          atS: 7.31
+          durationS: 5.97
+        - text: In 1968, thirteen hundred of the city's sanitation workers were on strike, and they met here regularly.
+          atS: 13.98
+          durationS: 7.15
+        - text: On rainy days, Black workers were sent home without pay, while their white supervisors stayed on the clock.
+          atS: 21.41
+          durationS: 6.3
+        - text: They had one uniform each, and nowhere to change.
+          atS: 28.04
+          durationS: 2.96
+        - text: The best paid of them could not hope to earn more than seventy dollars a week.
+          atS: 31.32
+          durationS: 4.26
+        - text: The week before, a march had ended in a bloody confrontation with police.
+          atS: 36.4
+          durationS: 4.67
+        - text: A court banned further protests.
+          atS: 41.67
+          durationS: 2.45
+        - text: On the third of April, 1968, Martin Luther King came here to speak for the strikers.
+          atS: 44.93
+          durationS: 5.73
+        - text: He told them he had been to the mountaintop.
+          atS: 51.48
+          durationS: 2.45
+        - text: He said he had looked over, and seen the promised land.
+          atS: 54.37
+          durationS: 3.33
+        - text: And he said he might not get there with them.
+          atS: 58.03
+          durationS: 2.36
+        - text: The next day he was killed, at the Lorraine Motel.
+          atS: 61.68
+          durationS: 3.37
+        - text: It was the eve of his death, and he spent it here, with the men who collected the city's garbage.
+          atS: 65.56
+          durationS: 5.77

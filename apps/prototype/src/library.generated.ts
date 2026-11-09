@@ -71,7 +71,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 48,
+    "durationS": 46,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -81,6 +81,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look along this waterfront for the plaque.\n\nWhen Alex Haley was researching Roots, he had one clue to where his ancestor had come ashore. A port called Napolis.\n\nHe guessed it meant Annapolis, and he was right.\n\nOn the twenty-ninth of September, 1767, a ship carrying about one hundred and forty enslaved men and women arrived here.\n\nAmong the men who had put money into that cargo was Daniel of St. Thomas Jenifer, who would later sit in the convention that wrote the Constitution.\n\nIt is believed that one of the people on that ship was Kunta Kinte. Believed, not proven.\n\nA family's history came down to a single word, Napolis, and a good guess.\n",
     "teaser": "Alex Haley had one word to go on. It was the name of this harbor, misspelled.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/annapolis-a-port-called-napolis/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 45.6,
+        "audioBytes": 729799
+      }
+    ],
     "pronunciations": [
       {
         "written": "Kunta Kinte",
@@ -98,14 +106,7 @@ export const LIBRARY: readonly Echo[] = [
       "alex-haley",
       "slavery"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/annapolis-a-port-called-napolis",
-        "durationS": 48
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "annapolis-a-private-citizen-by-christmas",
@@ -121,7 +122,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 52,
+    "durationS": 50,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -131,6 +132,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the dome. It was not there when this story happened.\n\nThe original dome was torn down in 1785, and this larger one went up after it.\n\nWhen the man in this story came here in 1783, the building was unfinished, and the roof leaked.\n\nFor a few months it was the capitol of the United States, because Congress was meeting inside.\n\nOn the twenty-third of December, George Washington came into the Senate chamber and resigned his commission as commander in chief of the Continental Army.\n\nThe war was over, and he was giving the army back.\n\nHe left at dawn the next morning for Mount Vernon. He got home before nightfall on Christmas Eve.\n\nA private citizen, for the first time in almost nine years.\n",
     "teaser": "He walked into an unfinished building with a leaking roof, and gave the army back.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/annapolis-a-private-citizen-by-christmas/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 49.5,
+        "audioBytes": 792493
+      }
+    ],
     "tags": [
       "annapolis",
       "maryland-state-house",
@@ -138,14 +147,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "military"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/annapolis-a-private-citizen-by-christmas",
-        "durationS": 52
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "annapolis-married-in-that-house",
@@ -161,7 +163,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 51,
+    "durationS": 46,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -171,20 +173,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the big brick house on Maryland Avenue. It was built by Samuel Chase, who signed the Declaration of Independence.\n\nA young man who went to school here in Annapolis, at St. John's College, was married in that house. His name was Francis Scott Key.\n\nIn September 1814 he was a young lawyer, held under guard on a ship in Baltimore harbor by the British navy.\n\nThrough the night he watched the British bomb Fort McHenry with rockets.\n\nAt dawn he found the American flag still flying over the fort, tattered but intact.\n\nHe wrote the words to The Star-Spangled Banner. Congress made it the national anthem in 1931.\n\nThe anthem was written by a man who got married in that house.\n",
     "teaser": "The man who wrote the national anthem got married across the street.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/annapolis-married-in-that-house/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 45.7,
+        "audioBytes": 731471
+      }
+    ],
     "tags": [
       "annapolis",
       "maryland-avenue",
       "francis-scott-key",
       "war-of-1812"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/annapolis-married-in-that-house",
-        "durationS": 51
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "annapolis-the-dome-was-a-lookout",
@@ -200,7 +203,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 50,
+    "durationS": 48,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -210,20 +213,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Find the dome above you. In the War of 1812 it was a lookout post.\n\nAnnapolis expected to be attacked. The British fleet blockaded the town in April and again in July 1813, and came dangerously close in late August 1814.\n\nLookouts used the dome to track the movements of the British navy.\n\nPeople moved the state's documents and other valuables out of town.\n\nA British midshipman sailing past wrote that he could plainly see the inhabitants flying in all directions.\n\nAlarm guns sounded from the forts, and the militia ran to their posts.\n\nAnd then nothing. The British never landed near the city.\n\nAll that watching from up there, and the town came through the war untouched.\n",
     "teaser": "In 1814 people climbed up there to watch for the British.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/annapolis-the-dome-was-a-lookout/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 48.4,
+        "audioBytes": 776193
+      }
+    ],
     "tags": [
       "annapolis",
       "maryland-state-house",
       "war-of-1812",
       "military"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/annapolis-the-dome-was-a-lookout",
-        "durationS": 50
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "asheville-a-dome-made-of-tile",
@@ -249,6 +253,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the dome of the church of Saint Lawrence. It is made of tile.\n\nThin ceramic tile, mortared together in layers. It is a traditional Mediterranean way of building. The man who brought it to America, and made it modern, was born in Valencia, Spain. His name was Rafael Guastavino.\n\nHis vaults were lightweight, fireproof and fast to build. His company helped build more than one thousand buildings. The Boston Public Library. The New York City subway. And in 1894, the vaulted ceilings at George Vanderbilt's Biltmore Estate, here in Asheville.\n\nThen he did something unusual. In 1895 he bought land near Black Mountain, and built an estate he called Rhododendron.\n\nAnd for this church, he went back to being the architect himself. He designed it, built it, helped pay for it, and supplied the materials. Tile, from the floor to the elliptical dome. It was his culminating work.\n\nGuastavino died in 1908. He was entombed here, at Saint Lawrence.\n\nThe builder never left his dome.\n",
     "teaser": "The man who built vaults for New York's subway came to these mountains and built his own church.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/asheville-a-dome-made-of-tile/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.4,
+        "audioBytes": 1192062
+      }
+    ],
     "pronunciations": [
       {
         "written": "Guastavino",
@@ -265,14 +277,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "saint-lawrence"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/asheville-a-dome-made-of-tile",
-        "durationS": 74
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "asheville-a-government-at-the-inn",
@@ -288,7 +293,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 53,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -298,6 +303,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the great stone hotel on the side of Sunset Mountain. It went up in less than a year. Four hundred laborers and twenty Italian stonemasons, working ten-hour days.\n\nIt opened on the twelfth of July, 1913. The Secretary of State, William Jennings Bryan, gave the opening address, and said the inn was built for the ages.\n\nThe guests over the years included President Franklin Roosevelt, and the writer F. Scott Fitzgerald.\n\nAnd a guest who brought a whole government with him. Manuel Quezon, the exiled president of the Philippines, set up the headquarters of a government in exile for the Philippines, here at the inn.\n\nA nation's government, run for a while from a resort in the mountains of North Carolina.\n",
     "teaser": "This stone hotel went up in less than a year. Decades later, a whole country's government moved in.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/asheville-a-government-at-the-inn/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.2,
+        "audioBytes": 835543
+      }
+    ],
     "pronunciations": [
       {
         "written": "Quezon",
@@ -310,14 +323,7 @@ export const LIBRARY: readonly Echo[] = [
       "philippines",
       "world-war-ii"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/asheville-a-government-at-the-inn",
-        "durationS": 53
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "asheville-a-leg-in-a-boot",
@@ -333,7 +339,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 88,
+    "durationS": 82,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -343,20 +349,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "About a hundred yards north of the marker, on what is now the campus of the University of North Carolina at Asheville, there were once rough earthworks.\n\nIn April 1865, a Union colonel, Isaac Kirby, was ordered to scout in the direction of Asheville. He set out from Tennessee with nine hundred troops.\n\nThe town's defenders were the Silver Grays. Forty-four men, among them a fourteen-year-old boy and a sixty-year-old Baptist minister. Their commander bullied, argued or shamed about two hundred and fifty more into joining them. They had two small brass cannons, and they took them up to the earthworks.\n\nAt three in the afternoon, the two sides simply lined up and started firing. There was no maneuvering. Just gunfire, and a few cannon blasts, for about five hours.\n\nThen Kirby's men retreated, leaving rifles, canteens and haversacks behind.\n\nCasualties? Reports range from none to three. But it is said that the next morning, the defenders found one Union soldier's leg, still in its boot.\n\nPeople around here still argue about what to call it. A battle, a skirmish, an engagement. The marker says battle. The state's own write-up says it fell well short of one.\n",
     "teaser": "In April 1865 Asheville's old men and boys stood behind earthworks near here and fought for five hours.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/asheville-a-leg-in-a-boot/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 82.1,
+        "audioBytes": 1314942
+      }
+    ],
     "tags": [
       "asheville",
       "civil-war",
       "military",
       "unc-asheville"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/asheville-a-leg-in-a-boot",
-        "durationS": 88
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "asheville-a-yodel-on-the-top-floor",
@@ -372,7 +379,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "short",
-    "durationS": 75,
+    "durationS": 74,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -382,6 +389,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the top floor of the Flat Iron Building. In 1927, that was where a brand new radio station, WWNC, had its studio and its transmitter.\n\nBy March that year, a former railroad man named Jimmie Rodgers had moved to Asheville. He worked as a janitor, a cab driver, and a city detective. He was already sick. He had been diagnosed with tuberculosis three years before.\n\nOn the eighteenth of April, 1927, he started singing on WWNC. He and a friend played live every week.\n\nIt did not go brilliantly to begin with. At one show, in Hendersonville, the only person who came was a housekeeper.\n\nThat August he recorded his first two songs, at Bristol, on the line between Tennessee and Virginia. The Carter Family made their first recordings the same week. People call those sessions the Big Bang of Country Music.\n\nJimmie Rodgers became the Singing Brakeman, the Blue Yodeler, the Father of Country Music.\n\nBut before all that, he was a janitor singing into a microphone, somewhere up on that top floor.\n",
     "teaser": "In 1927 a janitor and part-time detective sang on a radio station at the top of this building.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/asheville-a-yodel-on-the-top-floor/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 73.6,
+        "audioBytes": 1178687
+      }
+    ],
     "pronunciations": [
       {
         "written": "WWNC",
@@ -399,14 +414,7 @@ export const LIBRARY: readonly Echo[] = [
       "radio",
       "music"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/asheville-a-yodel-on-the-top-floor",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "asheville-the-boardinghouse-called-dixieland",
@@ -422,7 +430,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "short",
-    "durationS": 74,
+    "durationS": 70,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -432,6 +440,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the big rambling house with the porches. A boardinghouse. A previous owner named it the Old Kentucky Home.\n\nIn 1906, a boy named Thomas Wolfe moved in. His mother ran the place. She did not need the money. His father made enough from his tombstone shop on the city square. But Julia Wolfe was obsessed with real estate, and she used the boardinghouse profits to buy more of it.\n\nHer son grew up, and wrote it all down. His novel Look Homeward, Angel came out in 1929. In it, this house became Dixieland. A big cheaply constructed frame house of eighteen or twenty drafty, high-ceilinged rooms.\n\nHe wrote so frankly about the town and its people that Asheville was not amused. The book was banned from the city's public library for over five years, and Wolfe stayed away from his hometown for nearly eight.\n\nIn a later book he wrote that his mother's old dilapidated house had now become a fit museum.\n\nHe was right. It opened as one in 1949. The novel has never gone out of print.\n",
     "teaser": "Thomas Wolfe grew up in this boardinghouse, wrote it into a novel, and Asheville banned the book.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/asheville-the-boardinghouse-called-dixieland/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.6,
+        "audioBytes": 1126861
+      }
+    ],
     "inspo": {
       "kind": "inspiration",
       "evidence": "building"
@@ -442,14 +458,7 @@ export const LIBRARY: readonly Echo[] = [
       "writers",
       "look-homeward-angel"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/asheville-the-boardinghouse-called-dixieland",
-        "durationS": 74
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "asheville-the-fire-at-highland-hospital",
@@ -465,7 +474,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 80,
+    "durationS": 79,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -475,6 +484,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "About a quarter mile south of here stood Highland Hospital. The site is an office park and a shopping plaza now.\n\nZelda Sayre married F. Scott Fitzgerald in 1919. He called her America's first flapper. In their day they were celebrities of the first order.\n\nIn 1936, while staying at the Grove Park Inn, Zelda Fitzgerald entered Highland Hospital, an exclusive psychiatric clinic in the Montford neighborhood. She suffered from schizophrenia. The treatments included electroshock and insulin, but also a great deal of physical activity.\n\nShe swam and played tennis. She painted, and for a time, she thrived.\n\nScott died in 1940. After that, Zelda came back to Highland three more times, for long stays.\n\nOn the tenth of March, 1948, a fire started in the kitchen and swept up through the dumbwaiter to all four floors. Of the twenty patients living there, nine died. Zelda Fitzgerald was one of them.\n\nThey are buried together in Maryland. On top of their grave are lines from The Great Gatsby.\n\nSo we beat on, boats against the current, borne back ceaselessly into the past.\n",
     "teaser": "The Jazz Age's most famous wife spent her last years at a hospital just south of here.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/asheville-the-fire-at-highland-hospital/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 78.5,
+        "audioBytes": 1256846
+      }
+    ],
     "pronunciations": [
       {
         "written": "Zelda",
@@ -488,14 +505,7 @@ export const LIBRARY: readonly Echo[] = [
       "montford",
       "writers"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/asheville-the-fire-at-highland-hospital",
-        "durationS": 80
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "asheville-the-man-who-walked-a-wheel",
@@ -511,7 +521,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 73,
+    "durationS": 71,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -521,6 +531,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Somewhere near here, George Masa kept his photography studio.\n\nHe was born in Osaka, Japan, as Masahara Iizuka. Nobody is even sure what year. He arrived in Asheville in 1915, and went to work at the Grove Park Inn, in the laundry and as a valet. He borrowed a camera, and started photographing the guests.\n\nThen the mountains took over. In the mid-1920s he joined the movement to create the Great Smoky Mountains National Park. He photographed the trails, mapped them, and measured them. He measured them with an odometer he designed himself, made from the front end of a bicycle.\n\nPicture it. A man pushing half a bicycle through the Smokies, counting the turns.\n\nHe helped route and mark the Appalachian Trail too. His friend Horace Kephart wrote that he did it on his own hook, without pay, out of sheer loyalty to the park idea. He deserves a monument, Kephart said.\n\nGeorge Masa died penniless in 1933. In 1961 a landmark in the Smokies was named for him. Masa Knob.\n",
     "teaser": "A hotel valet borrowed a camera, then measured the Smoky Mountains with half a bicycle.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/asheville-the-man-who-walked-a-wheel/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.1,
+        "audioBytes": 1137727
+      }
+    ],
     "pronunciations": [
       {
         "written": "Masa",
@@ -542,14 +560,7 @@ export const LIBRARY: readonly Echo[] = [
       "appalachian-trail",
       "photography"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/asheville-the-man-who-walked-a-wheel",
-        "durationS": 73
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "asheville-the-ymi",
@@ -565,7 +576,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 84,
+    "durationS": 81,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -575,6 +586,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the building of the Young Men's Institute. People here call it the YMI.\n\nIn the early 1890s, while George Vanderbilt was building his lavish home out at Biltmore, he put up this building as a community center for his African American workers, and for people in town. It was designed by the supervising architect of Biltmore House, Richard Sharp Smith.\n\nIt had speakers, a gym, baths, and classes for children and adults. By 1910 it even had its own orchestra. Congregations held their worship services here. One of Asheville's first Black doctors, James Byron, kept his office here. And from 1926 until 1966, a branch of the public library.\n\nThen Vanderbilt stepped away. In 1906 the YMI was incorporated, with forty-nine of Asheville's Black leaders as members. They could not raise enough to buy the building outright. They raised ten thousand dollars, and took a mortgage for the rest.\n\nBy 1977 the building had been condemned. The African American community of Asheville rallied, got it onto the National Register of Historic Places, and saved it.\n\nBuilt by a Vanderbilt. Saved by the people it was built for.\n",
     "teaser": "Vanderbilt built this for the Black workers building his mansion. Their community made it their own.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/asheville-the-ymi/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81,
+        "audioBytes": 1296970
+      }
+    ],
     "pronunciations": [
       {
         "written": "YMI",
@@ -588,14 +607,7 @@ export const LIBRARY: readonly Echo[] = [
       "vanderbilt",
       "biltmore"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/asheville-the-ymi",
-        "durationS": 84
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "atlantic-city-first-boardwalk",
@@ -4388,7 +4400,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 77,
+    "durationS": 67,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4398,6 +4410,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This old farmhouse is one of the few things left of a city made of tents.\n\nIn 1917, with the country going to war, the Army built a training camp out here, three miles west of downtown. It took six weeks to put up.\n\nIt was named Camp Greene, after Nathanael Greene, the general who forced the British out of the Carolinas in the Revolution.\n\nIt grew to six thousand acres of forest and cotton fields, bought from families like the Dowds, who lived in this house.\n\nRecruits dug five miles of trenches into the red soil, to practice the kind of fighting going on in Europe.\n\nAt its peak, more than sixty thousand soldiers lived here. In 1910, the whole of Charlotte had about thirty-four thousand people.\n\nThe first winter, rain and snow turned the camp into a red quagmire.\n\nWhen the armistice came, on the eleventh of November 1918, the camp was already disappearing. Tents came down, trenches were filled in, and the land went back to civilian use.\n\nA city of sixty thousand came and went. The Dowd family's farmhouse stayed.\n",
     "teaser": "In 1917 an army camp grew up out here that was bigger than Charlotte itself.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charlotte-a-city-of-tents/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 66.8,
+        "audioBytes": 1070436
+      }
+    ],
     "tags": [
       "charlotte",
       "west-charlotte",
@@ -4405,14 +4425,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "camp-greene"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charlotte-a-city-of-tents",
-        "durationS": 77
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "charlotte-a-navy-yard-far-from-the-sea",
@@ -4428,7 +4441,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 83,
+    "durationS": 78,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4438,6 +4451,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look around for the sea. It is about two hundred miles away, and that was the point.\n\nIn March 1862, the Confederate navy yard at Norfolk, in Virginia, was about to be captured by Union forces.\n\nSo the Confederacy moved its machinery here, to a railroad town in the middle of the Carolinas, far out of reach of the Union navy.\n\nAlong this street they built a gun carriage shop, a torpedo shop, and a forge where the largest steam hammer in the South pounded away.\n\nAbout fifteen hundred men worked here. They made marine engines, shells, torpedoes and solid shot.\n\nOne worker, Thomas Dwyer, built a machine that turned out perfectly round cannonballs.\n\nFor most of the war, the yard felt the fighting less than any other navy yard. Its real trouble was keeping trained workers.\n\nNear the end, the machinery was loaded up and sent to Lincolnton. The war ended before it could be put back together.\n\nAnd the man who owned the land, Colonel John Wilkes, simply took his property back. The Confederate government had never paid him for it.\n\nA navy yard, two hundred miles from the sea, that never paid its rent.\n",
     "teaser": "The Confederate navy built its engines and torpedoes on this street, two hundred miles from the ocean.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charlotte-a-navy-yard-far-from-the-sea/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 77.6,
+        "audioBytes": 1241799
+      }
+    ],
     "tags": [
       "charlotte",
       "uptown",
@@ -4445,14 +4466,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "navy-yard"
     ],
-    "remoteness": 0.14,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charlotte-a-navy-yard-far-from-the-sea",
-        "durationS": 83
-      }
-    ]
+    "remoteness": 0.14
   },
   {
     "id": "charlotte-a-vein-under-south-end",
@@ -4468,7 +4482,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 74,
+    "durationS": 66,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4478,20 +4492,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Somewhere under this part of town runs a vein of gold, two to six feet thick.\n\nTwo of the biggest gold mines in Charlotte were dug near this corner. They were called Rudisill and Saint Catherine.\n\nThey sat about twenty-five hundred feet apart, at opposite ends of the same vein.\n\nSaint Catherine went down four hundred and sixty feet. Rudisill went down three hundred and fifty.\n\nThe first gold in Charlotte had been struck in 1825, by Samuel McComb, near what is now Morehead and Graham Streets.\n\nIn 1830, foreign investors leased these two mines, a count among them, and brought in steam engines and stamp mills.\n\nTheir money helped persuade the federal government to build a branch mint in Charlotte.\n\nThe tunnels did not go away when the mining stopped. At one point mines honeycombed this whole area, some running under what is now the football stadium and the bank's tower uptown.\n\nRudisill was still being worked again in the 1930s.\n\nThe banks came later. The gold was down there first.\n",
     "teaser": "Two of Charlotte's biggest gold mines were dug near this corner, on the same vein.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charlotte-a-vein-under-south-end/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 66.3,
+        "audioBytes": 1061241
+      }
+    ],
     "tags": [
       "charlotte",
       "south-end",
       "gold",
       "mining"
     ],
-    "remoteness": 0.73,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charlotte-a-vein-under-south-end",
-        "durationS": 74
-      }
-    ]
+    "remoteness": 0.73
   },
   {
     "id": "charlotte-brought-to-you-by-a-laxative",
@@ -4507,7 +4522,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 72,
+    "durationS": 69,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4517,6 +4532,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Charlotte had the first commercial radio station in North Carolina, and the second in the South.\n\nIt began in March 1921 as a hobby, an amateur station set up in a man's kitchen.\n\nWithin a year it had a license, and the call letters W B T. In 1924 it moved to a building near this corner, and its studios stayed around here until 1955.\n\nIn 1933 its signal went up to fifty thousand watts, enough to blanket the East Coast.\n\nAnd what it sent out, through the thirties and forties, was country music. People then called it hillbilly.\n\nThe best known show was paid for by a laxative company from Texas, the makers of Crazy Water Crystals.\n\nIt was Charlotte's answer to the Grand Ole Opry in Nashville.\n\nThe record companies came too. For a while Charlotte was a recording center.\n\nIn July 1949 the station's owners put the first television station in North Carolina on the air.\n\nCountry music for half the coast, brought to you by a laxative. Somebody had to pay for it.\n",
     "teaser": "North Carolina's first commercial radio station filled the air with hillbilly music, paid for by a laxative.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charlotte-brought-to-you-by-a-laxative/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.4,
+        "audioBytes": 1110978
+      }
+    ],
     "pronunciations": [
       {
         "written": "WBT",
@@ -4530,14 +4553,7 @@ export const LIBRARY: readonly Echo[] = [
       "music",
       "country-music"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charlotte-brought-to-you-by-a-laxative",
-        "durationS": 72
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charlotte-fred-in-the-arcade",
@@ -4553,7 +4569,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 76,
+    "durationS": 63,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4565,20 +4581,21 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "People who work in this old arcade say they hear footsteps when nobody else is here.",
     "certaintyNote": "A reported ghost story from the arcade's former property manager, published by Our State. The script says out loud that it cannot be proven; no supernatural claim is made as fact.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/charlotte-fred-in-the-arcade/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 62.5,
+        "audioBytes": 1001055
+      }
+    ],
     "tags": [
       "charlotte",
       "uptown",
       "ghost",
       "latta-arcade"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/charlotte-fred-in-the-arcade",
-        "durationS": 76
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charlotte-roots-in-north-carolina",
@@ -4604,6 +4621,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This park carries the name of an artist who left Charlotte when he was four years old.\n\nRomare Bearden was born in Charlotte in 1911. His family moved north, and settled in Harlem.\n\nHe grew up, went to university in New York, and took a job as a caseworker for the city's social services. He kept that job until 1969.\n\nAll the while he was painting.\n\nBy the early 1960s he had found his way of working. Collage. Newspaper and magazine clippings, fabric, pencil and paint, cut and fitted together into faces made from many faces.\n\nAnd many of those pictures were drawn from what he remembered of North Carolina.\n\nHe said it plainly. Most artists take some place, and like a flower, they sink roots. My roots are in North Carolina.\n\nIn 1987 he was awarded the National Medal of Arts.\n\nFour years in Charlotte. A lifetime of pictures.\n",
     "teaser": "This park is named for an artist who left Charlotte at four, and kept painting it for the rest of his life.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charlotte-roots-in-north-carolina/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 62.3,
+        "audioBytes": 998129
+      }
+    ],
     "pronunciations": [
       {
         "written": "Romare",
@@ -4621,14 +4646,7 @@ export const LIBRARY: readonly Echo[] = [
       "romare-bearden",
       "african-american-history"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charlotte-roots-in-north-carolina",
-        "durationS": 62
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charlotte-strictly-stock",
@@ -4644,7 +4662,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "short",
-    "durationS": 75,
+    "durationS": 71,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4654,6 +4672,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "About two hundred yards from this road was a dirt track, three quarters of a mile around.\n\nOn the nineteenth of June, 1949, NASCAR held the first race of what became its top series here.\n\nIt was called Strictly Stock. The cars had to be late model, full size, American sedans, the kind the fans drove, with very few changes allowed.\n\nThirty-three drivers started. More than thirteen thousand people came to watch.\n\nOn lap one hundred and seven, Lee Petty took a turn too fast and rolled his Buick.\n\nOn lap one hundred and fifty-one, Glenn Dunnaway took the lead in his Ford, and he finished first.\n\nThen the officials looked underneath. The rear springs had been altered.\n\nHe was disqualified, and Jim Roper, who came second, was declared the winner. The springs, it turned out, had been changed in a way that was common on cars used to haul moonshine.\n\nThe car's owner sued. NASCAR won, and with it, the power to enforce its own rules.\n\nSo the first race was won, and then lost, on a set of moonshine springs.\n",
     "teaser": "NASCAR's first big race was run near this road in 1949, and the winner lost it to his springs.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charlotte-strictly-stock/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.3,
+        "audioBytes": 1141489
+      }
+    ],
     "inspo": {
       "kind": "first",
       "evidence": "area"
@@ -4664,14 +4690,7 @@ export const LIBRARY: readonly Echo[] = [
       "racing",
       "drive"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charlotte-strictly-stock",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "charlotte-the-declaration-nobody-can-find",
@@ -4687,7 +4706,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 93,
+    "durationS": 92,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4698,6 +4717,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "There is a date on the North Carolina state flag. May the twentieth, 1775. It points to this crossroads.\n\nThe story goes that in May 1775, twenty-six local men met in the log courthouse that stood where these two streets cross. They were furious about the fighting at Lexington and Concord, and they signed a paper declaring themselves a free and independent people.\n\nA tavern keeper, Captain James Jack, is said to have ridden it to Philadelphia.\n\nIf it was real, it was the first declaration of independence written by any colony.\n\nThen the trouble starts. The papers were destroyed in a fire in April 1800. Nineteen years later, one of the signers wrote it out again from memory.\n\nNobody has found the original, and the state's own historical marker program calls it widely disputed.\n\nWhat nobody disputes is a different paper. On the thirty-first of May, 1775, a committee met at the same courthouse and adopted the Mecklenburg Resolves.\n\nThe royal governor wrote that they surpassed all the horrid and treasonable publications this continent had yet produced.\n\nSo Charlotte has two declarations from that spring. The one with proof, and the one on the flag.\n\nEvery year on May the twentieth, this street still fires a cannon for the second one.\n",
     "teaser": "North Carolina put a date on its flag for a paper nobody has seen since 1800.",
     "certaintyNote": "The Mecklenburg Declaration of May 20, 1775 is disputed: no original survives and its authenticity has long been questioned. The script says so and contrasts it with the documented Mecklenburg Resolves.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charlotte-the-declaration-nobody-can-find/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 92.4,
+        "audioBytes": 1479618
+      }
+    ],
     "tags": [
       "charlotte",
       "uptown",
@@ -4705,14 +4732,7 @@ export const LIBRARY: readonly Echo[] = [
       "mecklenburg-declaration",
       "contested"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charlotte-the-declaration-nobody-can-find",
-        "durationS": 93
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charlotte-the-mint-that-moved",
@@ -4728,7 +4748,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 73,
+    "durationS": 69,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4738,6 +4758,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This federal building stands on the site of Charlotte's branch of the United States Mint. The street beside it is still called Mint Street.\n\nFor years, gold from the mines around Charlotte went all the way to Philadelphia to be made into coins.\n\nSo much came in that Congress opened a branch here. It started work in December 1837, and it only ever made gold coins.\n\nIt was designed by William Strickland, one of the best known architects in the country.\n\nBy the 1930s the government wanted this block for a bigger post office, and the mint was in the way. In 1932 it faced demolition.\n\nInstead, a group of citizens led by Mary Myers Dwelle paid to take it apart and rebuild it in the Eastover neighborhood.\n\nIt opened again on the first of June, 1936, a century after it was first dedicated. This time it was an art museum, the first in North Carolina.\n\nIt is still there, on Randolph Road.\n\nSo the coins came from here, and the building that made them went to live somewhere quieter.\n",
     "teaser": "Mint Street is still here. The mint is not.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charlotte-the-mint-that-moved/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.1,
+        "audioBytes": 1105963
+      }
+    ],
     "tags": [
       "charlotte",
       "uptown",
@@ -4745,14 +4773,7 @@ export const LIBRARY: readonly Echo[] = [
       "mint",
       "museum"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charlotte-the-mint-that-moved",
-        "durationS": 73
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charlotte-the-sandwich-from-crescent-avenue",
@@ -4768,7 +4789,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "food-drink",
     "format": "short",
-    "durationS": 75,
+    "durationS": 72,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4778,20 +4799,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Somewhere on this street, in 1941, a caterer's kitchen invented a sandwich that Charlotte would eat at parties for nearly half a century.\n\nTo old Charlotte it was simply the vegetable sandwich. Not any sandwich with vegetables in it. This one.\n\nFinely minced raw vegetables, bound with mayonnaise, on white bread. No crusts. No garlic.\n\nThe caterer was Eva Pressly, and the idea came from her sister and partner, Dot Thompson. She chopped the vegetables fine and drained them twice.\n\nYou went to the house on Crescent Avenue to pick them up. They came packed in a white shirt box.\n\nWord traveled. People as far away as New York and California called to ask about them.\n\nWhen the sisters sold the business in 1975, the recipe went with it, and it stayed a secret. Later cooks rebuilt it from memory, and added gelatin to hold it together.\n\nBy the nineties, the city's taste had moved on, and the sandwich faded away.\n\nPlain, cold, and neat. For fifty years, it was what a Charlotte party tasted like.\n",
     "teaser": "For half a century, a Charlotte party meant one small, crustless sandwich, invented on this street.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charlotte-the-sandwich-from-crescent-avenue/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.5,
+        "audioBytes": 1144415
+      }
+    ],
     "tags": [
       "charlotte",
       "elizabeth",
       "food",
       "vegetable-sandwich"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charlotte-the-sandwich-from-crescent-avenue",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charlotte-the-wall-in-front-of-the-courthouse",
@@ -4807,7 +4829,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 76,
+    "durationS": 67,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4817,6 +4839,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look back up the street to the crossing. Now take away the towers. Picture about twenty houses on two streets, and a courthouse right in the middle where they cross.\n\nThat was Charlotte in late September 1780, when the British army under Lord Cornwallis came up the road.\n\nA militia officer, William Davie, had just under a hundred and fifty mounted men.\n\nHe put them behind a stone wall in front of the courthouse, and along the roads behind hedges and houses. Then he waited for the British to ride straight into the middle of town.\n\nThe next morning, British cavalry reached the edge of Charlotte, and their commander took the bait. He charged his horsemen straight at Davie's men.\n\nThe fire from the wall threw them back. They charged again, and were thrown back again.\n\nOnly when British infantry worked around the sides did the militia pull out.\n\nFive Americans were killed. The British counted forty-four casualties.\n\nThe courthouse is long gone, and the wall with it. But the crossing is still the heart of the city.\n",
     "teaser": "In 1780 a few militia horsemen waited at this crossroads for the British cavalry to ride straight in.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charlotte-the-wall-in-front-of-the-courthouse/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 67,
+        "audioBytes": 1073362
+      }
+    ],
     "tags": [
       "charlotte",
       "uptown",
@@ -4824,14 +4854,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "battle-of-charlotte"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charlotte-the-wall-in-front-of-the-courthouse",
-        "durationS": 76
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charlotte-twenty-beds-under-the-stadium",
@@ -4847,7 +4870,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 75,
+    "durationS": 76,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4857,6 +4880,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the stadium. This ground once held North Carolina's first public hospital for Black patients.\n\nIt was called Good Samaritan. It opened in 1891, with room for twenty patients.\n\nIt was raised by Jane Wilkes and the parishioners of Saint Peter's Episcopal Church, in a South where every hospital was segregated.\n\nIts hardest day came in July 1911. A train packed with Black passengers crashed at Hamlet, and eighty-three of them needed a hospital. Good Samaritan was the closest one for Black patients.\n\nDoctors and nurses from all over Charlotte, Black and white, rushed here and treated all eighty-three together. Only three died.\n\nIn 1903 it opened a school to train Black nurses, when no nursing school in the state was open to Black women.\n\nBy the 1950s, Black Charlotte dreamed of closing it. The goal was to desegregate the hospitals.\n\nThe old building was torn down for this stadium. The first game here was in August 1996.\n\nSeventy-five thousand seats, on the ground where twenty beds used to be.\n",
     "teaser": "Before the football, this ground held a twenty-bed hospital that the whole state learned from.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charlotte-twenty-beds-under-the-stadium/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75.5,
+        "audioBytes": 1208363
+      }
+    ],
     "tags": [
       "charlotte",
       "uptown",
@@ -4864,14 +4895,7 @@ export const LIBRARY: readonly Echo[] = [
       "african-american-history",
       "segregation"
     ],
-    "remoteness": 0.17,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charlotte-twenty-beds-under-the-stadium",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 0.17
   },
   {
     "id": "chicago-allowed-to-carry-twenty-five-hundred",
@@ -4887,7 +4911,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 90,
+    "durationS": 81,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4897,6 +4921,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the river here, by the Clark Street bridge. It is narrow, and it is calm. This is where more than eight hundred people died, and the ship never left the dock.\n\nIn July 1915, the steamer Eastland was loading employees of the Western Electric Company and their families, heading for a company picnic in Michigan City, Indiana.\n\nA little after seven thirty in the morning, just as she moved away from her pier at Clark Street, the Eastland toppled over. She capsized at her dock in the Chicago River. Women and children by the hundreds were caught below decks.\n\nThat same day, a seamen's union official showed a Chicago paper his copy of the ship's record. It allowed her one hundred and forty-three passengers, all year round. In the excursion season, six hundred and fifty-three, if she kept within five miles of land. And two thousand, if she stayed in water not deep enough to submerge her.\n\nThat morning, a federal inspector said, she was allowed to carry twenty-five hundred.\n\nWhy more in summer? Because, the inspector explained, in the warm time of the year, people with life preservers on will stay in the water a long time. Sometimes two or three days.\n\nShe never got farther than this.\n",
     "teaser": "The Eastland never left the river. It rolled over at its dock.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/chicago-allowed-to-carry-twenty-five-hundred/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 80.6,
+        "audioBytes": 1290283
+      }
+    ],
     "tags": [
       "chicago",
       "chicago-river",
@@ -4904,14 +4936,7 @@ export const LIBRARY: readonly Echo[] = [
       "disaster",
       "shipwreck"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/chicago-allowed-to-carry-twenty-five-hundred",
-        "durationS": 90
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "chicago-sixty-five-degrees-then-twenty-three-inches",
@@ -4927,7 +4952,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "land",
     "format": "short",
-    "durationS": 71,
+    "durationS": 66,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4937,6 +4962,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down at the river. In the winter of 1967, Chicago was shovelling its streets into it.\n\nOn the twenty-fourth of January that year, the high was sixty-five degrees. There were thunderstorms that evening.\n\nThe snow started at two minutes past five on Thursday morning, the twenty-sixth. By ten past ten the next morning, a record twenty-three inches had fallen. It is still the greatest snowfall from a single storm in the city's records.\n\nWinds gusted to fifty-three miles an hour. Drifts four to six feet high were everywhere. In the city, twenty thousand cars and eleven hundred buses were stranded in the snow. Expectant mothers were taken to hospital by sled, bulldozer and snow plow. At least a dozen babies were born at home.\n\nWhen the city dug itself out, it had to put the snow somewhere. So it was hauled by dump truck to the Chicago River.\n\nSixty-five degrees, then twenty-three inches. And the river took what the streets could not hold.\n",
     "teaser": "Chicago's biggest snowstorm arrived two days after a warm spell, and ended up in this river.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/chicago-sixty-five-degrees-then-twenty-three-inches/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 65.9,
+        "audioBytes": 1056225
+      }
+    ],
     "tags": [
       "chicago",
       "chicago-river",
@@ -4944,14 +4977,7 @@ export const LIBRARY: readonly Echo[] = [
       "blizzard",
       "snow"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/chicago-sixty-five-degrees-then-twenty-three-inches",
-        "durationS": 71
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "chicago-the-architect-went-to-the-seaside",
@@ -4967,7 +4993,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 77,
+    "durationS": 74,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4977,6 +5003,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the dark brick walls of the Monadnock. There is not a single ornament on them. That was not the plan.\n\nThe architects were Burnham and Root. The man who controlled the investment kept urging them toward extreme simplicity, and rejected one or two of John Root's sketches as too ornate.\n\nThen Root went away. A fortnight at the seashore.\n\nWhile he was gone, Daniel Burnham ordered one of the draughtsmen to draw a straight-up-and-down, uncompromising, unornamented front.\n\nWhen Root came back, he was indignant at this brick box. Gradually, though, he threw himself into it. He said he would throw the thing up without a single ornament.\n\nWhat went up was sixteen stories. The walls carry the building themselves, and at their base they are six feet thick. Root called it Jumbo. It was the last of the tall buildings to show walls of solid masonry.\n\nIt was so heavy that it sank. By 1948 it had settled twenty inches.\n\nOne of the plainest famous buildings in America, and it started with an architect taking a holiday.\n",
     "teaser": "This building has no ornament at all, because of a two-week holiday.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/chicago-the-architect-went-to-the-seaside/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.1,
+        "audioBytes": 1187047
+      }
+    ],
     "tags": [
       "chicago",
       "loop",
@@ -4984,14 +5018,7 @@ export const LIBRARY: readonly Echo[] = [
       "monadnock",
       "burnham-and-root"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/chicago-the-architect-went-to-the-seaside",
-        "durationS": 77
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "chicago-the-case-that-outlived-the-pipe",
@@ -5007,7 +5034,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 75,
+    "durationS": 73,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5017,20 +5044,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the pale stone tower with the battlements and the pointed top. It looks like a castle. It was built to hide a pipe.\n\nThe Chicago Water Tower was built in 1869. Inside it stood a vertical iron standpipe, three feet across and one hundred and thirty-eight feet tall, connected to the main pumps of the Chicago Water Works across Michigan Avenue.\n\nThe column of water in the pipe evened out surges in pressure whenever the city's demand for water suddenly changed.\n\nThe stone is buff limestone from Joliet, Illinois, from a bed that has long since been quarried out. Look at the corners of the tower. Each block was cut back by chisel to make that rounded edge, for no reason except the light and shadow.\n\nThen came the Great Chicago Fire of 1871. The tower survived it, and became the recognized symbol of the city.\n\nIn 1911, the standpipe and the pumps were taken out.\n\nSo the most famous survivor of the fire is a beautiful stone case, with nothing inside. The wrapping is the part that lasted.\n",
     "teaser": "The city's favourite survivor of the Great Fire was built to hide a pipe.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/chicago-the-case-that-outlived-the-pipe/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 73.3,
+        "audioBytes": 1174508
+      }
+    ],
     "tags": [
       "chicago",
       "magnificent-mile",
       "great-chicago-fire",
       "water-tower"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/chicago-the-case-that-outlived-the-pipe",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "chicago-the-cow-that-took-the-blame",
@@ -5046,7 +5074,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 68,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5058,20 +5086,21 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "Nobody knows how the Great Chicago Fire started. Everybody knows about the cow.",
     "certaintyNote": "The cow story is a legend. The Library of Congress calls it a widely circulated rumor; the cause of the fire is unknown, and the script says so out loud.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/chicago-the-cow-that-took-the-blame/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 53.5,
+        "audioBytes": 856441
+      }
+    ],
     "tags": [
       "chicago",
       "great-chicago-fire",
       "legend",
       "near-west-side"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/chicago-the-cow-that-took-the-blame",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "chicago-the-garbage-inspector",
@@ -5087,7 +5116,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 77,
+    "durationS": 71,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5097,6 +5126,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This old mansion on Halsted Street is Hull-House. Jane Addams and Ellen Gates Starr opened it in 1889, to help the immigrant families of the ward around it.\n\nAddams described the streets outside in one long breath. Inexpressibly dirty. Schools inadequate. Sanitary laws unenforced. The street lighting bad, the paving miserable, and the stables foul beyond description.\n\nTenements filled the lots from street to alley. There was no trash collection, so people dumped their waste into the alleys. And those alleys were some of the only places for children to play.\n\nSo in 1898 the mayor appointed Jane Addams as Chicago's first woman garbage inspector.\n\nShe took it seriously. Two years later, she and Florence Kelley were mapping the ward and going door to door. And when Addams wondered whether bad plumbing was spreading typhoid, she sent Dr. Alice Hamilton to investigate. Hamilton found that house flies carried the disease.\n\nPeople remember her for big ideas. In this neighborhood, she also went looking in the alleys.\n",
     "teaser": "One of the most famous reformers in America took a job inspecting garbage.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/chicago-the-garbage-inspector/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 70.8,
+        "audioBytes": 1134384
+      }
+    ],
     "tags": [
       "chicago",
       "near-west-side",
@@ -5105,14 +5142,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "public-health"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/chicago-the-garbage-inspector",
-        "durationS": 77
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "chicago-the-porters-contract",
@@ -5128,7 +5158,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 84,
+    "durationS": 78,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5138,6 +5168,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "The Pullman Company did not only build sleeping cars. It ran them, on railroads all over the country, and it needed porters to serve the passengers.\n\nOn the railroads of that time, Black workers were mostly confined to service jobs. Pullman was the nation's largest employer of African Americans. Porters were forty-four percent of the people running its cars.\n\nIn 1925, the porters founded a union, the Brotherhood of Sleeping Car Porters. For four decades it was led by A. Philip Randolph. He did not work for Pullman, so the company could not punish him.\n\nThe union faced a racist industry and an anti-union corporation. At first it also faced fear in its own community, because Pullman offered jobs to African Americans, and people were afraid of losing them.\n\nIn 1937, the Pullman Company signed a contract with the Brotherhood. Higher pay, better job security, and a way to bring grievances. It was the first major labor agreement between an African American union and a corporation.\n\nThis town was built to prove a company could look after its workers. The porters proved the workers could make the company sign.\n",
     "teaser": "The company that built this town signed a first in 1937, and not willingly.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/chicago-the-porters-contract/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 77.6,
+        "audioBytes": 1243471
+      }
+    ],
     "tags": [
       "chicago",
       "pullman",
@@ -5146,14 +5184,7 @@ export const LIBRARY: readonly Echo[] = [
       "railroads",
       "pullman-porters"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/chicago-the-porters-contract",
-        "durationS": 84
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "chicago-the-sign-says-end",
@@ -5169,7 +5200,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "look-below",
-    "durationS": 33,
+    "durationS": 34,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5179,6 +5210,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "At this corner of Jackson and Michigan, look for a sign that reads, End Historic Route 66.\n\nGrant Park, right beside you, was the historic road's official eastern terminus. From here, Route 66 began its sweeping, arced path through Illinois, into Missouri, and on to Santa Monica, California.\n\nThe road begins here, or ends here, depending on your perspective. The sign is written for the people arriving. Everyone leaving has to imagine theirs.\n",
     "teaser": "Route 66 ends at this corner. Or starts, depending which way you are facing.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/chicago-the-sign-says-end/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 34.1,
+        "audioBytes": 547151
+      }
+    ],
     "tags": [
       "chicago",
       "loop",
@@ -5186,14 +5225,7 @@ export const LIBRARY: readonly Echo[] = [
       "route-66",
       "road-trip"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/chicago-the-sign-says-end",
-        "durationS": 33
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "chicago-the-strike-that-stopped-the-trains",
@@ -5209,7 +5241,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 83,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5219,6 +5251,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the clock tower. It was the Pullman Company's administration building, the center of a factory and of a whole company town, built for the workers who made Pullman's sleeping cars.\n\nOn the eleventh of May, 1894, the workers here went on strike.\n\nThe company tried to wait them out. So their union, the American Railway Union, went national. Its members would refuse to handle Pullman cars. Because Pullman cars were in such wide use, the boycott crippled rail traffic across the country.\n\nThe railroads answered by hitching Pullman cars to mail cars. Holding up the United States mail gave the federal government its opening. Thousands of U.S. marshals and Army troops were sent in. National Guard troops were stationed at the Hotel Florence, the company hotel just south of this tower.\n\nFighting at rail yards around Chicago left dozens dead. The boycott dissolved in the middle of July, and the union was defeated.\n\nGeorge Pullman never seemed to doubt his model town. When he died in 1897, tons of steel and concrete were placed over his casket, so that labor radicals could not get at the grave.\n",
     "teaser": "A strike at this factory stopped trains across the whole country.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/chicago-the-strike-that-stopped-the-trains/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75.1,
+        "audioBytes": 1203347
+      }
+    ],
     "tags": [
       "chicago",
       "pullman",
@@ -5226,14 +5266,7 @@ export const LIBRARY: readonly Echo[] = [
       "strike",
       "railroads"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/chicago-the-strike-that-stopped-the-trains",
-        "durationS": 83
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "chicago-under-the-bleachers",
@@ -5249,7 +5282,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 82,
+    "durationS": 77,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5259,6 +5292,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Right about here, there used to be a football field, Stagg Field, with stands that nobody was using.\n\nOn a squash court underneath those unused stands, the scientists of the Manhattan Project built a stack of graphite and uranium blocks, twenty feet tall, over two weeks.\n\nIt had no safety features. No shielding from radiation, and no way to cool it down.\n\nEnrico Fermi assured Arthur Compton that the likelihood of a catastrophic failure was slim. On the campus of one of the most populous cities in the country, the outcome was never certain.\n\nOn the second of December, 1942, at three fifty-three in the afternoon, with the control rods carefully removed, the Chicago Pile reached criticality. It was the first time in history that a self-sustaining nuclear reaction had been achieved.\n\nThe youngest member of the team, and the only woman, was Leona Woods. The scientists celebrated with a bottle of Chianti.\n\nThe pile was taken apart shortly afterwards. The stands are gone too. What is left is the spot, a National Historic Landmark since 1967, where the nuclear age began under the bleachers.\n",
     "teaser": "The nuclear age began on a squash court, with no way to switch it off in a hurry.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/chicago-under-the-bleachers/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 77,
+        "audioBytes": 1233858
+      }
+    ],
     "tags": [
       "chicago",
       "hyde-park",
@@ -5268,14 +5309,7 @@ export const LIBRARY: readonly Echo[] = [
       "manhattan-project",
       "science"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/chicago-under-the-bleachers",
-        "durationS": 82
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "city-hall-declaration",
@@ -5330,7 +5364,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 57,
+    "durationS": 51,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5340,20 +5374,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the tower. It is Berea sandstone, and it stands a hundred and eighty feet tall.\n\nJames Garfield, the twentieth president, is buried here.\n\nHe had been in office only four months when he was shot. It was the second of July, 1881, in a Washington railway station.\n\nIn those days presidents had no guards around them. Americans believed a president should be open to everyone.\n\nFor eighty days the country read every bulletin from his doctors. He died on the nineteenth of September.\n\nHis monument here was one of the biggest and most elaborate mausoleums of its time.\n\nGo downstairs and you can see his casket, and his wife Lucretia's, on full display.\n\nThe biggest tomb of its day holds a man who said he needed no more protection than the average American.\n",
     "teaser": "The biggest tomb of its day holds a president who wanted no guards.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/cleveland-no-more-protection/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 50.7,
+        "audioBytes": 812555
+      }
+    ],
     "tags": [
       "cleveland",
       "lake-view-cemetery",
       "garfield",
       "presidents"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/cleveland-no-more-protection",
-        "durationS": 57
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "cleveland-the-missing-letter",
@@ -5369,7 +5404,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 44,
+    "durationS": 43,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5379,6 +5414,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down at the river.\n\nOn the twenty-second of July, 1796, a party of surveyors working for General Moses Cleaveland arrived at the mouth of the Cuyahoga.\n\nThey believed it was an ideal place for a new town, and named it for him.\n\nHis land company had three and a half million acres to sell.\n\nThe town did not grow much until the Erie Canal was finished in 1825.\n\nThen, in 1831, a newspaper had a problem. The Cleveland Advertiser dropped the first a from the name, to shorten its masthead.\n\nFrom then on, the town was Cleveland.\n\nThe founder's name lost a letter, to save room on a newspaper.\n",
     "teaser": "This city is named after a man, minus one letter a newspaper could not fit.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/cleveland-the-missing-letter/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 42.8,
+        "audioBytes": 686332
+      }
+    ],
     "pronunciations": [
       {
         "written": "Cuyahoga",
@@ -5390,14 +5433,7 @@ export const LIBRARY: readonly Echo[] = [
       "cuyahoga",
       "founding"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/cleveland-the-missing-letter",
-        "durationS": 44
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "cleveland-the-river-that-burned",
@@ -5413,7 +5449,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 57,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -5423,6 +5459,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the water. On a Sunday in June 1969, this river caught fire.\n\nUpstream, railroad bridges near Republic Steel had trapped floating debris. Oil on the water made it burn.\n\nA flare tossed from a passing train probably lit it.\n\nThe fire lasted less than half an hour, and did minor damage to the bridges.\n\nClevelanders were not very surprised. The river had burned more than ten times in the century before.\n\nThen, in August, Time magazine featured the fire. It called the Cuyahoga the river that oozes rather than flows, in which a person does not drown but decays.\n\nA small fire on a working river became a world symbol of water pollution.\n\nIt did not change the laws by itself. Changes were already in motion. It just became the picture everybody remembered.\n",
     "teaser": "A short fire on a working river became a picture the whole world remembers.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/cleveland-the-river-that-burned/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55,
+        "audioBytes": 880683
+      }
+    ],
     "pronunciations": [
       {
         "written": "Cuyahoga",
@@ -5435,14 +5479,7 @@ export const LIBRARY: readonly Echo[] = [
       "river-fire",
       "environment"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/cleveland-the-river-that-burned",
-        "durationS": 57
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "craggy-gardens-balds",
@@ -6818,7 +6855,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 47,
+    "durationS": 46,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -6828,6 +6865,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Somewhere on this hill is the grave of Wild Bill Hickok.\n\nA photograph in the Library of Congress shows a woman standing beside it. Calamity Jane.\n\nIf you have watched the television series about this town, you know her as a character.\n\nThe National Archives points out that she, and the others in that series, were real people, and turn up in federal records.\n\nThere is a document with Seth Bullock's signature as marshal. There is an indictment against a man named Swearingen.\n\nAnd there is Calamity Jane, years before any of it, in the 1860 census. Under the name Martha Canary.\n\nBefore she was a legend, she was a line in a census.\n",
     "teaser": "Long before Deadwood, she was a name on a census form.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/deadwood-before-she-was-calamity/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 45.7,
+        "audioBytes": 733143
+      }
+    ],
     "tags": [
       "deadwood",
       "mount-moriah",
@@ -6835,14 +6880,7 @@ export const LIBRARY: readonly Echo[] = [
       "wild-bill-hickok",
       "old-west"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/deadwood-before-she-was-calamity",
-        "durationS": 47
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "deadwood-his-back-to-the-door",
@@ -6858,7 +6896,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 65,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -6870,6 +6908,14 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "The story everybody tells about Wild Bill's last hand. Nobody can prove it.",
     "certaintyNote": "The back-to-the-door detail comes from a 1938 folklore interview and is told as legend. The killing itself, its date and saloon are documented.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/deadwood-his-back-to-the-door/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 58.8,
+        "audioBytes": 942541
+      }
+    ],
     "pronunciations": [
       {
         "written": "Hickok",
@@ -6882,14 +6928,7 @@ export const LIBRARY: readonly Echo[] = [
       "old-west",
       "legend"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/deadwood-his-back-to-the-door",
-        "durationS": 65
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "deadwood-the-champions-of-america",
@@ -6905,7 +6944,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 44,
+    "durationS": 39,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -6915,20 +6954,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look along this street and picture both sides of it packed with people.\n\nOn the Fourth of July, 1888, Deadwood held a hub and hub race.\n\nTwo small teams of runners pulled a hose and wagon down the main street as fast as they could.\n\nBoth teams were Chinese. The photographer's caption says they were the only two Chinese hose teams in the United States.\n\nThe winners posed afterwards, twelve men in uniform.\n\nThe caption calls them the champion Chinese Hose Team of America.\n\nThe pictures were made by John Grabill.\n\nOn the Fourth of July in Deadwood, the champions of America were Chinese.\n",
     "teaser": "On the Fourth of July, 1888, the crowd lined this street to watch a race.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/deadwood-the-champions-of-america/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 39,
+        "audioBytes": 624474
+      }
+    ],
     "tags": [
       "deadwood",
       "chinese-american",
       "fourth-of-july",
       "old-west"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/deadwood-the-champions-of-america",
-        "durationS": 44
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "fairfax-she-married-the-man-who-arrested-her",
@@ -6944,7 +6984,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 73,
+    "durationS": 69,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -6954,6 +6994,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "In the Civil War this town was called Fairfax Court House.\n\nAntonia Ford was born here in 1838. Her father was a prominent local merchant, and a committed secessionist.\n\nShe was widely reported to be a Confederate spy. It was alleged that she gathered information on troop numbers from Union officers staying around town, and passed it on.\n\nIn 1863 Confederate rangers under John Mosby captured a Union general, Edwin Stoughton, here at Fairfax Courthouse.\n\nAntonia Ford was arrested and charged with helping them. No evidence was found to support her accusers.\n\nThe officer who arrested her was the Union provost marshal in Fairfax, Major Joseph Willard.\n\nWhile she was held in prison in Washington, he worked to get her released.\n\nShe is said to have made a lace cap and collar while she was in prison. The Library of Congress keeps them.\n\nShe took the oath of allegiance and was let go. In March 1864 she married Major Willard.\n\nThe accused spy married the man who had arrested her.\n",
     "teaser": "Accused of helping capture a Union general, she married the officer who locked her up.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fairfax-she-married-the-man-who-arrested-her/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 68.7,
+        "audioBytes": 1100111
+      }
+    ],
     "pronunciations": [
       {
         "written": "Mosby",
@@ -6970,14 +7018,7 @@ export const LIBRARY: readonly Echo[] = [
       "espionage",
       "mosby"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fairfax-she-married-the-man-who-arrested-her",
-        "durationS": 73
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "fairfax-thirty-killed-said-the-picture",
@@ -6993,7 +7034,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 47,
+    "durationS": 42,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7003,19 +7044,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "On the first of June, 1861, a company of United States dragoons charged into this town, and back out again.\n\nA week later an illustrated newspaper printed a picture of the charge.\n\nIts caption said they killed thirty of the enemy and carried off five prisoners, in the face of fifteen hundred troops.\n\nEarly newspaper reports said much the same. Thirty rebels killed.\n\nThen an official dispatch to the War Department put the Confederate loss at twenty-seven.\n\nAnd a man who had been in the town that night told reporters the count of the dead was exaggerated.\n\nThe war had barely started. Already, the picture was bigger than the fight.\n",
     "teaser": "A cavalry charge through this town became a picture, and the picture got bigger than the fight.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fairfax-thirty-killed-said-the-picture/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 41.6,
+        "audioBytes": 666270
+      }
+    ],
     "tags": [
       "fairfax",
       "civil-war",
       "military"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fairfax-thirty-killed-said-the-picture",
-        "durationS": 47
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "fall-river-a-description-without-a-photograph",
@@ -7031,7 +7073,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 45,
+    "durationS": 42,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7042,6 +7084,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "This house is famous for a crime. Before that, here is how its best known resident once described herself.\n\nIn June 1890 a woman from Fall River signed a passport application, to sail for Europe.\n\nPassports did not need photographs then. So she wrote a description instead.\n\nFive feet three inches tall. Grey eyes. Light brown hair. And a full face.\n\nHer name was Lizzie Borden.\n\nTwo years later she was arrested and tried for the murder of her father, Andrew, and her stepmother, Abby.\n\nA jury acquitted her.\n\nHer name lives on anyway, in the rhyme about forty whacks.\n\nA jury cleared her. The rhyme never has.\n",
     "teaser": "Two years before the trial, she described her own face on a passport form.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/fall-river-a-description-without-a-photograph/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 42.3,
+        "audioBytes": 677972
+      }
+    ],
     "tags": [
       "fall-river",
       "lizzie-borden"
@@ -7049,18 +7099,11 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "exonerated",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedBy": "James (owner), approved 2026-11-09",
       "reviewedAt": "2026-11-09",
       "contentWarning": "This echo concerns a double murder. No violence is described."
     },
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/fall-river-a-description-without-a-photograph",
-        "durationS": 45
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "fall-river-the-granite-mill-fire",
@@ -7086,20 +7129,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Near here stood the Granite Mill.\n\nIn 1874 a fire at the mill killed twenty workers. Most of them were young girls.\n\nOne of the girls was reported to be only five years old.\n\nTwenty people died at work. Some of them were children.\n",
     "teaser": "Twenty workers died here. Most of them were young girls.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fall-river-the-granite-mill-fire/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 17,
+        "audioBytes": 273806
+      }
+    ],
     "tags": [
       "fall-river",
       "textile-mills",
       "labor",
       "child-labor"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fall-river-the-granite-mill-fire",
-        "durationS": 17
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "federal-hall-two-firsts",
@@ -7780,7 +7824,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 72,
+    "durationS": 73,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7790,6 +7834,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look out over the Verde Valley, then back up at this town, clinging to Cleopatra Hill.\n\nJerome grew from a settlement of tents into a roaring mining community. For a while it was known as the wickedest town in the west. It was once the fourth largest city in the Arizona Territory.\n\nIn the 1920s, when the copper mines were at their richest, more than ten thousand people lived here. Some counts say fifteen thousand.\n\nThe town lived by the price of copper. The Second World War pushed demand up. After the war, demand slowed. In 1953 the signature mine closed.\n\nThat left somewhere between fifty and a hundred hardy souls. And they had an idea. If they could not sell copper anymore, they would sell the town itself. They promoted Jerome as a historic ghost town.\n\nIt worked. By 2010 the full-time population was four hundred and forty-four, and the town fills with tourists many days of the year.\n\nA ghost town, on purpose. The ghosts were the business plan.\n",
     "teaser": "When the mine closed, the few dozen people left decided to sell the one thing they still had.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/jerome-a-ghost-town-on-purpose/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 72.6,
+        "audioBytes": 1163223
+      }
+    ],
     "tags": [
       "jerome",
       "ghost-town",
@@ -7797,14 +7849,7 @@ export const LIBRARY: readonly Echo[] = [
       "copper",
       "old-west"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/jerome-a-ghost-town-on-purpose",
-        "durationS": 72
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "jerome-sixty-seven-men-in-cattle-cars",
@@ -7820,7 +7865,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 89,
+    "durationS": 82,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7830,6 +7875,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This town has a long memory for trouble. Here is a day of it.\n\nOn the morning of the tenth of July, 1917, hundreds of miners and other citizens, all armed, went through Jerome on what they called a drive. The object, the paper said, was cleaning up the town.\n\nThey were after the Wobblies, the Metal Miners' branch of the Industrial Workers of the World, who had called a strike in the copper district. The miners' own international union had repudiated it. City officials called the strikers undesirables.\n\nSixty-seven men were put into two cattle cars. They were given drinking water, but nothing to eat. Fifty armed citizens went along, to make sure they did not come back.\n\nThe mayor stood in the railroad yards and watched the cars disappear in the distance. As the train pulled out, several of the men shouted back at the crowd. We'll come back.\n\nAt Jerome Junction, twenty-seven miles away, armed men from Prescott were waiting, among them some of the most prominent businessmen of that city. Most of the strikers were sent on north by freight train, toward Needles.\n\nThe next morning, a newspaper headline put it plainly. Sixty-seven Wobblies, shipped from Jerome in cattle cars.\n",
     "teaser": "On a July morning in 1917, this town rounded up the strikers and shipped them out by rail.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/jerome-sixty-seven-men-in-cattle-cars/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 82.2,
+        "audioBytes": 1317032
+      }
+    ],
     "pronunciations": [
       {
         "written": "Wobblies",
@@ -7843,14 +7896,7 @@ export const LIBRARY: readonly Echo[] = [
       "iww",
       "old-west"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/jerome-sixty-seven-men-in-cattle-cars",
-        "durationS": 89
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "jerome-the-day-the-stone-melted",
@@ -7866,7 +7912,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 83,
+    "durationS": 81,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7876,20 +7922,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down along the gulch this part of town sits in. In 1898, the business district filled it. Wooden buildings and stone ones, packed in close.\n\nOn the morning of the eleventh of September, at about twenty past seven, a fire started. One paper said nobody knew how. The wire reports said it was a gasoline stove, in a cabin. A good breeze from the north did the rest.\n\nThe fire raced through the narrow gulch and the ravines leading into it. The stone buildings, one report said, melted before the flames as rapidly as pasteboard.\n\nBy the end, not a single business house remained. More than a hundred and fifty homes were gone, and the stores, and the saloons. The only building to escape was the Methodist church.\n\nHow many died? Nobody could agree. One Arizona paper said three. The wire said eleven bodies had been found, and a score or more were missing. The real number was lost in the smoke.\n\nWhat saved the town's future was a strip of open ground, between the burned district and the great works of the United Verde company. The company's plant survived. The town would be built again around it.\n",
     "teaser": "In 1898 fire swept up this gulch so fast that even the stone buildings went down like cardboard.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/jerome-the-day-the-stone-melted/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 80.7,
+        "audioBytes": 1291536
+      }
+    ],
     "tags": [
       "jerome",
       "fire",
       "mining",
       "old-west"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/jerome-the-day-the-stone-melted",
-        "durationS": 83
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "jerome-water-from-seven-miles-away",
@@ -7905,7 +7952,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 70,
+    "durationS": 62,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7915,6 +7962,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "If you are on Highway 89 Alternate, about two miles southwest of Jerome, watch the hillside above the road. You may spot an old steel pipe, riveted together, that crosses a gulch on a flume.\n\nJerome sat over one of the richest deposits of copper ore in the Southwest. What it did not have was water.\n\nAt first, it was most likely hauled up by water wagon. Then, around 1900, the United Verde company built what was probably the first real water works in town. It tapped springs in the mountains above. By 1915, the farthest of them was seven miles away.\n\nThe pipe was riveted steel, made in the company's own shops. It carried the water to a row of wooden tanks on the side of the mountain. From there, gravity did the rest. Down to the mines, and down to the kitchens.\n\nVery little of that first system is left. The wooden tanks were replaced with steel ones long ago. But a little of the old pipe is still out here, above the road.\n",
     "teaser": "Jerome sat on a fortune in copper and had no water. Look above the road for what fixed that.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/jerome-water-from-seven-miles-away/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 61.7,
+        "audioBytes": 987680
+      }
+    ],
     "tags": [
       "jerome",
       "water",
@@ -7922,14 +7977,7 @@ export const LIBRARY: readonly Echo[] = [
       "united-verde",
       "drive"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/jerome-water-from-seven-miles-away",
-        "durationS": 70
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "key-west-a-house-named-for-mercedes",
@@ -7945,7 +7993,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 74,
+    "durationS": 71,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -7955,6 +8003,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at this big wooden house from the sidewalk. It is private, so stay out here. Its veranda wraps all four sides of an inner courtyard. That courtyard is a Cuban idea.\n\nThe house was built around 1890. Its owner was Eduardo Gato, a Cuban immigrant who made a fortune in the cigar business. It has been said he brought Cuban carpenters over to build it.\n\nBut it was not built here. Gato put it on the part of his land that faced the waterfront.\n\nIn 1911, he let a group of Cuban residents of Key West turn it into a hospital, for the poor of all nations. It was named Mercedes, in honor of his wife.\n\nIn 1919 the waterfront land was sold to the City of Key West, to become a park. The house was moved here, to another piece of Gato property, and the hospital went on.\n\nIt ran until just before the Second World War, and closed for lack of money.\n\nA cigar fortune, a hospital for anyone who needed it, and a house that changed streets. All of it still standing here on Virginia Street.\n",
     "teaser": "A cigar fortune built this house. Then it became a hospital, and then it moved.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-a-house-named-for-mercedes/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.3,
+        "audioBytes": 1141489
+      }
+    ],
     "pronunciations": [
       {
         "written": "Gato",
@@ -7967,14 +8023,7 @@ export const LIBRARY: readonly Echo[] = [
       "cuban",
       "gato"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/key-west-a-house-named-for-mercedes",
-        "durationS": 74
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "key-west-ice-from-the-north",
@@ -7990,7 +8039,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "food-drink",
     "format": "short",
-    "durationS": 56,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8000,20 +8049,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Find the two old stone buildings at the corner of Wall Street and Tift Alley. The northern one is the oldest commercial building in the city. It was built as a ship chandlery. The southern one was an icehouse.\n\nAn icehouse, in the tropics.\n\nUntil 1890, nobody made ice in Key West. It came from the North, in ships built specially to carry it, and it was stored here.\n\nThe Tift company was advertising ice for sale by 1855. It was not a luxury. Ice was a vitally important commodity in the tropics, for the relief of fever victims.\n\nAnd behind the buildings, big cisterns collected the rain, to supply ships calling at the port.\n\nIce from the north, and water from the sky. On a hot island surrounded by salt water, those were things worth selling.\n",
     "teaser": "One of these old stone buildings was an icehouse, on an island where nobody could make ice.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-ice-from-the-north/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53,
+        "audioBytes": 848918
+      }
+    ],
     "tags": [
       "key-west",
       "mallory-square",
       "ice",
       "food"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/key-west-ice-from-the-north",
-        "durationS": 56
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "key-west-the-fort-that-lost-the-sea",
@@ -8029,7 +8079,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 70,
+    "durationS": 74,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8039,6 +8089,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand by the fort and look around. Grass, trees, a parking lot. The sea is somewhere beyond them.\n\nWhen this fort was built, it stood in the water. The site was in about ten feet of water at high tide, some four hundred and forty yards from shore. A wooden drawbridge seven hundred and twenty feet long connected it to the island.\n\nWork began in 1845. Yellow fever kept driving the workers away. Hurricanes kept knocking things down. On the eleventh of October, 1846, a hurricane destroyed everything built so far except the cistern, the smithy and the stable, and four workmen drowned.\n\nThey kept going. By 1861 the fort was close to completion, just in time for the Civil War. It was garrisoned all through the war, and Key West stayed in Union hands.\n\nThen, slowly, it lost the sea. In 1898 the top two tiers were taken off. And sometime between 1891 and 1939, the fort became landlocked.\n\nNobody wrote down the day the water left.\n",
     "teaser": "This fort was built out in the water. Then, at some point nobody wrote down, the water left.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-the-fort-that-lost-the-sea/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 73.9,
+        "audioBytes": 1183285
+      }
+    ],
     "tags": [
       "key-west",
       "fort-zachary-taylor",
@@ -8046,14 +8104,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "hurricane"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/key-west-the-fort-that-lost-the-sea",
-        "durationS": 70
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "key-west-the-guest-who-was-not-there",
@@ -8069,7 +8120,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 76,
+    "durationS": 67,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8081,6 +8132,14 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "This house is named for a famous visitor. The deed books say he almost certainly never stayed in it.",
     "certaintyNote": "A local legend that the documentary record contradicts. The script says aloud that it is a legend, not proven, and gives the survey's evidence against it.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/key-west-the-guest-who-was-not-there/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 67.1,
+        "audioBytes": 1074198
+      }
+    ],
     "pronunciations": [
       {
         "written": "Audubon",
@@ -8097,14 +8156,7 @@ export const LIBRARY: readonly Echo[] = [
       "legend",
       "wreckers"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/key-west-the-guest-who-was-not-there",
-        "durationS": 76
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "key-west-the-key-west-uniform",
@@ -8120,7 +8172,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 78,
+    "durationS": 73,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8130,20 +8182,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the white house in front of you. In November 1946, a tired president came here on doctor's orders.\n\nHarry Truman had become president without warning, when Franklin Roosevelt died. He spent the next year bringing the Second World War to an end. His doctor ordered him to get some rest. A quiet place was found for him, at the naval base in Key West.\n\nAt first he would not dress like the locals. He wore dress shirts and slacks, even fishing.\n\nThen he gave in. Light, comfortable sport shirts. He and his staff called it the Key West Uniform.\n\nOn his fifth trip, in November 1948, a Miami sportswear company sent him four brightly patterned shirts. One had a stylized bird on it. People wondered whether the president would actually wear them.\n\nHe wore them four days in a row, and was photographed every time.\n\nAfter that, the shirts arrived by the box. Newspapers called them spiffy, dizzy and wild. A writer for Life magazine said most people agreed they were much too loud.\n\nAs the years went on, the president's shirts only got louder.\n",
     "teaser": "A tired president came here on doctor's orders, and went home in a loud shirt.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-the-key-west-uniform/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 73.2,
+        "audioBytes": 1172836
+      }
+    ],
     "tags": [
       "key-west",
       "truman",
       "little-white-house",
       "presidents"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/key-west-the-key-west-uniform",
-        "durationS": 78
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "key-west-the-sailor-with-the-oar",
@@ -8159,7 +8212,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 49,
+    "durationS": 48,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8169,6 +8222,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Find the iron fence near the Margaret Street entrance. In the middle stands a sailor, gazing into the distance and holding an oar.\n\nOn the fifteenth of February, 1898, the battleship Maine blew up in Havana Harbor. It was the most dramatic of the incidents that led to the Spanish American War.\n\nInside this fence are tombs of the victims. Union veterans and the citizens of Key West put up the memorial that same year.\n\nLook at the gates. Capstans. Anchors. Crossed sabres. An eagle on a shield. Even the cement walks are inlaid with anchors and stars, painted blue.\n\nAnd the sailor in the middle, still gazing into the distance, as if waiting for a ship.\n",
     "teaser": "Inside an iron fence in the cemetery, a sailor holds an oar and looks into the distance.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-the-sailor-with-the-oar/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 48.1,
+        "audioBytes": 769923
+      }
+    ],
     "tags": [
       "key-west",
       "uss-maine",
@@ -8176,14 +8237,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "cemetery"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/key-west-the-sailor-with-the-oar",
-        "durationS": 49
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "key-west-the-studio-across-the-catwalk",
@@ -8199,7 +8253,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "short",
-    "durationS": 64,
+    "durationS": 61,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8209,6 +8263,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the wall around this property. It is made of old paving brick, taken from the streets of the city.\n\nThe house inside was the first one Ernest Hemingway ever owned. He kept it until the day he died.\n\nBehind the main house is a smaller building. The Hemingways built a wrought iron catwalk from the upstairs porch across to it, and the room up there became his studio. A spiral stairway led down to the patio.\n\nIt was in this house, a government survey of historic buildings says, that Hemingway wrote many of his best selling novels, and a number of his short stories.\n\nAround 1938 the property got something else nobody on the island had. A swimming pool, the first one on Key West.\n\nLater the writer moved to Cuba. He would not sell. He refused every offer for the rest of his life.\n\nSo the wall stayed up, built from the streets he walked to get home.\n",
     "teaser": "The wall around this house is made of old Key West streets. Behind it, Hemingway wrote.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-the-studio-across-the-catwalk/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 61.4,
+        "audioBytes": 983918
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -8218,14 +8280,7 @@ export const LIBRARY: readonly Echo[] = [
       "hemingway",
       "writers"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/key-west-the-studio-across-the-catwalk",
-        "durationS": 64
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "kitty-hawk-shorter-than-this-plane",
@@ -8408,7 +8463,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 67,
+    "durationS": 65,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8418,6 +8473,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look out over the river. On the sixth of June, 1862, a battle was fought on the water in front of this city.\n\nThe Confederate army had already pulled its troops out of Memphis. What was left to defend it was a small river fleet, and a few soldiers camped outside town.\n\nThe Union boats set out from an island just north of Memphis a little after four in the morning. They arrived off the city about half past five, and the battle began.\n\nIt lasted an hour and a half. When it was over, the Union had sunk or captured every Confederate boat but one.\n\nThen the son of the Union colonel, a medical cadet named Charles Ellet, went ashore, met the mayor, and raised the Union flag over the courthouse.\n\nMemphis, one of the great trading cities on the Mississippi, had fallen. Another stretch of the river was open to Union shipping.\n\nA city that size, taken before most people had finished breakfast.\n",
     "teaser": "In June 1862 a river battle was fought in front of this city at dawn, and Memphis fell by breakfast.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/memphis-before-breakfast/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 64.6,
+        "audioBytes": 1034492
+      }
+    ],
     "tags": [
       "memphis",
       "riverfront",
@@ -8425,14 +8488,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "mississippi-river"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/memphis-before-breakfast",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "memphis-it-worked-when-they-stopped",
@@ -8448,7 +8504,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "short",
-    "durationS": 87,
+    "durationS": 81,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8458,6 +8514,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at this small brick building on Union Avenue. On the evening of the fifth of July, 1954, three young men came in here to make a record.\n\nIt was hot and sticky, in the nineties. The studio had no air conditioning, because studios could not risk the noise.\n\nThe singer was Elvis Presley. He had been in once before, to record a birthday song for his mother.\n\nThe man who owned the place, Sam Phillips, could not say what he was looking for. All he would say was, I'll know it when I hear it.\n\nFor hours, nothing worked. They went down one musical dead end after another.\n\nBy around midnight the air inside was rancid. The only fresh air was out the back door.\n\nThen, on the break, Elvis started strumming his guitar and singing a blues song, That's All Right.\n\nBill Black jumped up and slapped his bass along. Scotty Moore came in on electric guitar.\n\nPhillips stuck his head out of the control room door. Try it again, he said. Let me get in there.\n\nTwo weeks later it was a record. And out of this room came the kind of music that would be called rock and roll.\n\nAll night they had tried to play what they thought they were supposed to. It worked when they stopped.\n",
     "teaser": "Elvis Presley's first real session in this little studio went nowhere for hours. Then they took a break.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/memphis-it-worked-when-they-stopped/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 80.7,
+        "audioBytes": 1291536
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -8469,14 +8533,7 @@ export const LIBRARY: readonly Echo[] = [
       "rock-and-roll",
       "music"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/memphis-it-worked-when-they-stopped",
-        "durationS": 87
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "memphis-kid-douglas",
@@ -8492,7 +8549,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 66,
+    "durationS": 60,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8502,6 +8559,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Before this was Handy Park, it was Church's Park. Musicians came here to play for tips.\n\nOne of them was a girl from northern Mississippi who had been given a guitar for her birthday, and who ran away from home to play it here. She called herself Kid Douglas.\n\nHer real name was Lizzie Douglas. Later she took the name Memphis Minnie.\n\nThe jug bands played this park too, the Memphis Jug Band among them. They came for the tips, and to learn new songs from the other bands.\n\nIn the late thirties, a man from the Delta who called himself Howlin' Wolf would come up to Memphis and play here for tips.\n\nMinnie went on to record fifty sides before the Depression shut the studios down. She wore bracelets made of silver dollars.\n\nThe National Park Service calls her the greatest female country blues singer.\n\nAll of it started on this patch of ground, for whatever people dropped in the hat.\n",
     "teaser": "A runaway girl with a guitar played for tips in this park. She became Memphis Minnie.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/memphis-kid-douglas/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 59.7,
+        "audioBytes": 956751
+      }
+    ],
     "tags": [
       "memphis",
       "beale-street",
@@ -8509,14 +8574,7 @@ export const LIBRARY: readonly Echo[] = [
       "memphis-minnie",
       "music"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/memphis-kid-douglas",
-        "durationS": 66
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "memphis-the-amp-on-the-roof",
@@ -8532,7 +8590,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 81,
+    "durationS": 70,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8544,6 +8602,14 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "The fuzzy guitar on one of the first great rock records may have come from a fall off a car roof.",
     "certaintyNote": "The amplifier story is presented by the Library of Congress essay as legend, and Ike Turner's own account differs. The script says out loud that it is a legend and gives both versions.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/memphis-the-amp-on-the-roof/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 69.5,
+        "audioBytes": 1112650
+      }
+    ],
     "tags": [
       "memphis",
       "sun-studio",
@@ -8551,14 +8617,7 @@ export const LIBRARY: readonly Echo[] = [
       "ike-turner",
       "legend"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/memphis-the-amp-on-the-roof",
-        "durationS": 81
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "memphis-the-b-side",
@@ -8574,7 +8633,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "short",
-    "durationS": 78,
+    "durationS": 72,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8584,6 +8643,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the marquee. In 1960 a small record label moved into a former movie theater at this address, 926 East McLemore.\n\nIt was called Satellite then. Soon it was renamed Stax.\n\nThe owner, Jim Stewart, still worked at a bank. His sister, Estelle Axton, ran a record shop in the old concession stand, so she could hear what the kids were buying.\n\nIn the summer of 1962, four musicians were called in to back a singer on a commercial jingle. It was a Sunday, so the bank was closed.\n\nThe session fell apart. So they started jamming on a slow blues, and Stewart recorded it without telling them.\n\nHe wanted to release it. But a single needs a B side.\n\nBooker T. Jones had a little riff he had been playing on the piano at his mother's house. He tried it on the Hammond organ instead.\n\nThey worked out the arrangement, and cut it in two or three takes.\n\nIt was the first time those four had ever played together in that line up. They called it Green Onions.\n\nA B side, from a jam, after a jingle session failed, on the day the bank was shut.\n",
     "teaser": "Green Onions came out of a failed jingle session, on a Sunday, in an old movie theater on this street.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/memphis-the-b-side/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.7,
+        "audioBytes": 1149012
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "site"
@@ -8595,14 +8662,7 @@ export const LIBRARY: readonly Echo[] = [
       "soul-music",
       "music"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/memphis-the-b-side",
-        "durationS": 78
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "memphis-the-mountaintop",
@@ -8618,7 +8678,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 75,
+    "durationS": 71,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8628,6 +8688,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at this vast concrete church. It can seat seventy-five hundred people, on two levels.\n\nIt was built in the early 1940s, as the headquarters of the Church of God in Christ.\n\nIn 1968, thirteen hundred of the city's sanitation workers were on strike, and they met here regularly.\n\nOn rainy days, Black workers were sent home without pay, while their white supervisors stayed on the clock. They had one uniform each, and nowhere to change.\n\nThe best paid of them could not hope to earn more than seventy dollars a week.\n\nThe week before, a march had ended in a bloody confrontation with police. A court banned further protests.\n\nOn the third of April, 1968, Martin Luther King came here to speak for the strikers.\n\nHe told them he had been to the mountaintop. He said he had looked over, and seen the promised land. And he said he might not get there with them.\n\nThe next day he was killed, at the Lorraine Motel.\n\nIt was the eve of his death, and he spent it here, with the men who collected the city's garbage.\n",
     "teaser": "The night before he died, Martin Luther King spoke in this church for the men who collected the city's garbage.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/memphis-the-mountaintop/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.3,
+        "audioBytes": 1142325
+      }
+    ],
     "tags": [
       "memphis",
       "civil-rights",
@@ -8635,14 +8703,7 @@ export const LIBRARY: readonly Echo[] = [
       "sanitation-strike",
       "mason-temple"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/memphis-the-mountaintop",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "memphis-the-ride-home",
@@ -8658,7 +8719,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 87,
+    "durationS": 81,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8668,6 +8729,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up the river, to the north. In April 1865 a steamboat called the Sultana left Memphis going that way, carrying Union soldiers home from the war.\n\nMore than nineteen hundred of them were men just released from prison camps.\n\nOne was Private Valmore Lambert, a farmer from Ohio.\n\nHe had fought through two years of the war. He was captured near Atlanta, and he survived eight months in Andersonville, the prison where more than thirteen thousand Union soldiers died.\n\nThe Sultana was overloaded, far beyond what it should have carried. Before leaving, the captain had a leaking boiler patched instead of properly repaired, because a repair would have taken more time.\n\nOn the twenty-seventh of April, heading north from Memphis, three of its four boilers exploded.\n\nMore than a thousand men died. It is still called the worst maritime disaster in American history. No one was ever held accountable.\n\nValmore Lambert was among them. Where his remains are, nobody knows.\n\nThe bodies that were found were buried at Fort Pickering, and later moved to the Memphis National Cemetery.\n\nHe made it through the war, and through the prison. It was the boat home that killed him.\n",
     "teaser": "He survived two years of war and eight months in Andersonville. Then he boarded a steamboat here.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/memphis-the-ride-home/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81.1,
+        "audioBytes": 1299060
+      }
+    ],
     "tags": [
       "memphis",
       "riverfront",
@@ -8676,14 +8745,7 @@ export const LIBRARY: readonly Echo[] = [
       "sultana",
       "mississippi-river"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/memphis-the-ride-home",
-        "durationS": 87
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "memphis-the-song-that-mocked-mr-crump",
@@ -8709,6 +8771,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This park is named for W. C. Handy. The city of Memphis created it in 1931, to honor him.\n\nIn 1909, Handy was hired to write a campaign song for a man running for mayor, Edward Crump.\n\nThe song was called Mr. Crump. And its words made fun of Crump's own reform platform.\n\nNobody knows whether Crump ever listened to the lyrics. Later, he said he had not hired Handy at all.\n\nCrump won anyway, and the song caught on around town.\n\nIn 1912 Handy put new words to it and published it as The Memphis Blues.\n\nSales were tiny at first, so he sold the rights, keeping only his name as composer.\n\nBy the fall of 1913, the man who bought it had sold fifty thousand copies of the sheet music.\n\nAnd on the fifteenth of July, 1914, it became the very first blues song ever recorded.\n\nA joke at a politician's expense became the first blues on record. Handy learned the music business from it the hard way.\n",
     "teaser": "The first blues ever recorded began as a campaign song that made fun of the candidate.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/memphis-the-song-that-mocked-mr-crump/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 65.6,
+        "audioBytes": 1050792
+      }
+    ],
     "pronunciations": [
       {
         "written": "Crump",
@@ -8722,14 +8792,7 @@ export const LIBRARY: readonly Echo[] = [
       "w-c-handy",
       "music"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/memphis-the-song-that-mocked-mr-crump",
-        "durationS": 66
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "memphis-they-smashed-the-press",
@@ -8745,7 +8808,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 74,
+    "durationS": 73,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8755,6 +8818,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at this church on Beale Street. In the 1890s it held the office of a newspaper, the Memphis Free Speech.\n\nOne of its writers, and later an owner, was a young schoolteacher named Ida B. Wells.\n\nIn 1892, three Black men who had opened a grocery store, Tom Moss, Calvin McDowell and Will Stewart, were taken from their jail cells by a mob and murdered.\n\nTheir store had been drawing customers away from a white-owned store nearby.\n\nWells wrote about it in this paper. Then she traveled the South, at the risk of her own life, gathering the facts of other lynchings.\n\nOne of her editorials pushed some of the city's white residents over the edge. A mob ransacked the office and destroyed the printing equipment.\n\nShe was in New York at the time. That probably saved her life.\n\nHer life was threatened, and she stayed in the North. She kept writing.\n\nIn 2020 she was awarded a Pulitzer Prize, for her courageous reporting on that violence.\n\nThey smashed the press. They could not reach the reporter.\n",
     "teaser": "A newspaper office in this church was wrecked by a mob in 1892. The reporter they wanted was out of town.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/memphis-they-smashed-the-press/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 73.4,
+        "audioBytes": 1175762
+      }
+    ],
     "tags": [
       "memphis",
       "beale-street",
@@ -8762,14 +8833,7 @@ export const LIBRARY: readonly Echo[] = [
       "journalism",
       "civil-rights"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/memphis-they-smashed-the-press",
-        "durationS": 74
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "mount-mitchell-buried-on-top",
@@ -8825,7 +8889,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 58,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8835,6 +8899,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the tall Victorian Gothic hall. Six stories, built in an L. This is Jubilee Hall.\n\nFisk opened in 1866, in the years right after the Civil War, with help from the Freedmen's Bureau.\n\nIn 1871, a chorus of students, seven women and four men, went on tour to raise money. The big northern cities first, then Europe and the British Isles.\n\nThey sang. And what they brought home was enough to buy the land for this campus, and build this hall.\n\nGround was broken on New Year's Day, 1873. The hall was dedicated on New Year's Day, 1876.\n\nSome of the black walnut furniture inside was a gift from friends in Great Britain.\n\nIt is the oldest permanent building for the higher education of Black students in the United States.\n\nEleven students, singing. This is what the songs bought.\n",
     "teaser": "Eleven students went on tour and sang this building into existence.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/nashville-a-hall-built-by-song/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.9,
+        "audioBytes": 880265
+      }
+    ],
     "tags": [
       "nashville",
       "fisk",
@@ -8842,14 +8914,7 @@ export const LIBRARY: readonly Echo[] = [
       "african-american-history",
       "music"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/nashville-a-hall-built-by-song",
-        "durationS": 58
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "nashville-she-bit-the-conductor",
@@ -8865,7 +8930,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 56,
+    "durationS": 50,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8875,6 +8940,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the capitol. For decades the state supreme court sat inside it. One of the cases it heard was brought by a young teacher named Ida B. Wells.\n\nShe was riding a train out of Memphis. The crew told her to leave the ladies' car and move to a car where a drunk man sat and other men were smoking.\n\nShe refused.\n\nWhen the conductor tried to drag her out of her seat, she fastened her teeth in the back of his hand.\n\nIt took him and two white passengers to remove her.\n\nShe sued the railroad, and she won. Five hundred dollars.\n\nThen the Tennessee Supreme Court overturned it.\n\nAfter that, she began writing. She became one of the most important journalists in the country, and led a crusade against lynching.\n\nShe lost here. It did not slow her down.\n",
     "teaser": "Before she was a famous journalist, Ida B. Wells lost a case in this building.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/nashville-she-bit-the-conductor/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 49.5,
+        "audioBytes": 792493
+      }
+    ],
     "tags": [
       "nashville",
       "capitol",
@@ -8882,14 +8955,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-rights",
       "railroads"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/nashville-she-bit-the-conductor",
-        "durationS": 56
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "nashville-six-encores",
@@ -8905,7 +8971,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 65,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8915,6 +8981,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "On the eleventh of June, 1949, a twenty-six year old walked out on this stage for his first night on the Grand Ole Opry.\n\nHis name was Hank Williams, and the song was Lovesick Blues.\n\nHe had not written it. It came from the nineteen twenties, from songwriters in New York, and it was not even a country song to begin with.\n\nHe yodeled it, and he made it his. It had gone to number one and stayed there for sixteen weeks.\n\nThat night the audience here, three thousand people, called him back for six encores.\n\nOne witness said he stopped the show colder than it had ever been stopped in its thirty-one years.\n\nThree years later, the Opry fired him for drinking.\n\nHe died on the first of January, 1953, in the back seat of a car on the way to a show. He was twenty-nine.\n\nSix encores, on the first night. Nobody in the room could have guessed how few nights were left.\n",
     "teaser": "A twenty-six year old's first night on this stage would not let him leave it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/nashville-six-encores/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 59.1,
+        "audioBytes": 947138
+      }
+    ],
     "tags": [
       "nashville",
       "downtown",
@@ -8922,14 +8996,7 @@ export const LIBRARY: readonly Echo[] = [
       "country-music",
       "hank-williams"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/nashville-six-encores",
-        "durationS": 65
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "nashville-the-architect-in-the-wall",
@@ -8945,7 +9012,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 61,
+    "durationS": 56,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8955,6 +9022,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand on the north side of the capitol and look at the lower portico. The man who designed this building is inside that wall.\n\nHis name was William Strickland, an architect from Philadelphia.\n\nThe digging began on the first of January, 1845. The walls are Tennessee limestone, quarried within half a mile of here. Some of the blocks are eight feet wide and fourteen feet long.\n\nInstead of a Roman dome, Strickland gave it a tower, after ancient Greek models.\n\nHe did not see it finished. He died in April 1854, and his funeral was held inside, in the Hall of Representatives.\n\nThen his body was placed in a recess in the walls of the north portico. It is still there.\n\nHis son finished the job. The last stone of the tower went up in July 1855.\n\nMost architects sign their buildings. Strickland is buried in his.\n",
     "teaser": "The man who designed this capitol never saw it finished. He is inside it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/nashville-the-architect-in-the-wall/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 56,
+        "audioBytes": 896983
+      }
+    ],
     "pronunciations": [
       {
         "written": "Strickland",
@@ -8967,14 +9042,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "william-strickland"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/nashville-the-architect-in-the-wall",
-        "durationS": 61
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "nashville-the-colored-lights",
@@ -8990,7 +9058,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "short",
-    "durationS": 68,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9000,6 +9068,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Inside this plain concrete-block building, the lights over the studio floor hang from the ceiling in groups of four. Each group has a red bulb, a blue, a green and a white.\n\nThey are there because Elvis Presley did not like fluorescent light.\n\nThis is RCA Studio B. It was built in 1957, the first studio in Nashville that belonged to a major label.\n\nAbout thirty-five thousand recording sessions happened in here. More than a thousand hit records came out.\n\nElvis's first session here ran overnight, in June 1958, while he was on leave from the army.\n\nHis last was exactly thirteen years later. In between, he made more than two hundred and thirty recordings in this building, among them It's Now or Never and Are You Lonesome Tonight.\n\nThe Everly Brothers cut All I Have to Do Is Dream and Cathy's Clown here too.\n\nA thousand hits, sung under colored bulbs, because one singer wanted the room to feel right.\n",
     "teaser": "The lights inside this studio are red, blue, green and white, because Elvis did not like the old ones.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/nashville-the-colored-lights/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 59.4,
+        "audioBytes": 951318
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -9011,14 +9087,7 @@ export const LIBRARY: readonly Echo[] = [
       "recording-studio",
       "rca-studio-b"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/nashville-the-colored-lights",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "nashville-the-fort-nobody-attacked",
@@ -9034,7 +9103,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 58,
+    "durationS": 50,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9044,6 +9113,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the stone walls on this hilltop. They went up during the Civil War, laid by people who had escaped slavery.\n\nThe Union army called them contraband. It was a legal word for an enslaved person who had made it to Union lines.\n\nIt protected them from being sent back to the Confederates. It also let the army use their labor for its own purposes.\n\nAbout twenty-five hundred Black masons, carpenters and laborers built Fort Negley.\n\nThey used sixty-two thousand five hundred cubic feet of stone.\n\nIn December 1864, the Battle of Nashville was fought around this city.\n\nNobody attacked this fort. It was too strong to try.\n\nAnd nearly thirteen thousand men of the United States Colored Troops helped defend Nashville.\n\nThe best compliment a fort can get is to be left alone.\n",
     "teaser": "The stone on this hill was laid by people who had escaped slavery, and it was never put to the test.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/nashville-the-fort-nobody-attacked/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 50.3,
+        "audioBytes": 805868
+      }
+    ],
     "tags": [
       "nashville",
       "civil-war",
@@ -9051,14 +9128,7 @@ export const LIBRARY: readonly Echo[] = [
       "fort-negley",
       "african-american-history"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/nashville-the-fort-nobody-attacked",
-        "durationS": 58
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "nashville-the-harmonica-wizard",
@@ -9074,7 +9144,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 69,
+    "durationS": 62,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9084,6 +9154,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "In July 1939, the Grand Ole Opry moved into this hall, the War Memorial Auditorium. For the first time, it charged admission. Twenty-five cents.\n\nThat October, it went out on a radio network for the first time, to twenty-six stations across the South and Southwest.\n\nOne of the stars that night was DeFord Bailey, the only Black musician in the cast.\n\nHe stood less than five feet tall. On the air, the host introduced him as our little mascot.\n\nHe was nothing of the kind. By all accounts he was one of the most popular performers on the show.\n\nOn the harmonica, he could make a freight train pick up speed. He could make a pack of hounds chase a fox, and the hunters call after them.\n\nThat night he played four numbers. Nobody else on the bill played as many.\n\nThe same host had nicknamed him the Harmonica Wizard. He was later elected to the Country Music Hall of Fame.\n\nThe microphone said mascot. The audience said otherwise.\n",
     "teaser": "On the Opry's first network night, the host called its biggest star a mascot.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/nashville-the-harmonica-wizard/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 61.9,
+        "audioBytes": 991442
+      }
+    ],
     "pronunciations": [
       {
         "written": "DeFord",
@@ -9098,14 +9176,7 @@ export const LIBRARY: readonly Echo[] = [
       "country-music",
       "african-american-history"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/nashville-the-harmonica-wizard",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "nashville-the-saloon-keepers-tabernacle",
@@ -9121,7 +9192,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 76,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9131,6 +9202,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at this old brick hall with its tall arched windows. It was built for preaching, by a man who owned a saloon.\n\nThomas Ryman ran a line of steamboats on the Cumberland River, and a large saloon here in Nashville.\n\nIn 1885 he fell under the preaching of a revivalist named Sam Jones, and he was converted.\n\nAfter that he set out to build the city a great hall for preaching, open to every denomination.\n\nWork started in 1889. It was dedicated in 1892 as the Union Gospel Tabernacle, and Ryman carried much of the hundred thousand dollar debt himself.\n\nWhen he died, in 1904, four thousand people came here for his memorial. Sam Jones preached it, and proposed the building take his name.\n\nFor years it was the largest auditorium in the South. Soon it was used less for revivals than for conventions, concerts and stage shows.\n\nThen the Grand Ole Opry moved in, and stayed until 1974. People came to call it the church of country music.\n\nSo the saloon keeper did get his church. It just ended up full on a Saturday night.\n",
     "teaser": "The mother church of country music was built by a steamboat man who owned a saloon.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/nashville-the-saloon-keepers-tabernacle/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.6,
+        "audioBytes": 1194988
+      }
+    ],
     "tags": [
       "nashville",
       "downtown",
@@ -9138,14 +9217,7 @@ export const LIBRARY: readonly Echo[] = [
       "country-music",
       "grand-ole-opry"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/nashville-the-saloon-keepers-tabernacle",
-        "durationS": 76
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "nashville-the-united-hilton",
@@ -9161,7 +9233,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 79,
+    "durationS": 72,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9171,6 +9243,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the mosaic front of this plant. It was built to press records, and it was built with a hotel suite on the top floor.\n\nThe company was called Southern Plastics. By the early 1960s it was turning out about a million records a month, including every single for Motown.\n\nIt moved into this new building in 1963.\n\nIn those years the South was segregated. Black customers coming to Nashville for their records would have struggled to find anywhere to stay.\n\nSo the plant gave them somewhere. Up in the penthouse, a living room, a bedroom with two twin beds, a full bathroom, and a kitchen with a push button stove.\n\nThey called it the United Hilton. Now it is known as the Motown Suite.\n\nMotown's founder, Berry Gordy, was one of the guests.\n\nThe plant also pressed some of the Beatles' first American records, for a label in Chicago.\n\nWhen a federal survey documented the building in 2012, it was still pressing vinyl, one of the largest plants of its kind in the country.\n\nA record factory with a hotel on the roof, because the hotels in town were not an option.\n",
     "teaser": "This record plant was built with a hotel suite on top, because its customers could not get a room in town.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/nashville-the-united-hilton/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.8,
+        "audioBytes": 1149848
+      }
+    ],
     "tags": [
       "nashville",
       "wedgewood-houston",
@@ -9178,14 +9258,7 @@ export const LIBRARY: readonly Echo[] = [
       "motown",
       "segregation"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/nashville-the-united-hilton",
-        "durationS": 79
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "nashville-tile-thirteen",
@@ -9201,7 +9274,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "short",
-    "durationS": 86,
+    "durationS": 83,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9211,6 +9284,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Somewhere behind this front is a metal Quonset hut, the curved-roof kind the military used all through the Second World War. A little of its roof still shows from the back.\n\nIn 1955 two brothers, Owen and Harold Bradley, bought a house here and turned it into a recording studio. That move is now credited as the birth of Music Row.\n\nThey needed more room, so they bought a Quonset hut kit and put it up out back.\n\nNeither man had been trained in acoustics. They did it by ear. Big curtains in the corners to trap the bass. Green burlap up near the ceiling, to keep out the sound of rain on the metal roof.\n\nTheir engineer found one spot near the control room that was best for a singer. Tile thirteen.\n\nOn the twenty-first of August, 1961, the band recorded a song here from a Willie Nelson demo. It was called Crazy.\n\nThe singer was Patsy Cline. Only a few months before, she had been thrown through a windshield in a car crash.\n\nWhen she started on the vocal, she stopped herself. She could not sing it up to her own standard.\n\nA few days later she came back, and sang it in one take.\n\nOne take, in a metal hut, with burlap keeping out the rain.\n",
     "teaser": "Patsy Cline sang Crazy in a war-style metal hut tuned with curtains and burlap.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/nashville-tile-thirteen/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 82.9,
+        "audioBytes": 1328317
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -9222,14 +9303,7 @@ export const LIBRARY: readonly Echo[] = [
       "patsy-cline",
       "recording-studio"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/nashville-tile-thirteen",
-        "durationS": 86
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "nashville-when-the-cumberland-came-up",
@@ -9245,7 +9319,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "land",
     "format": "short",
-    "durationS": 66,
+    "durationS": 62,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9255,6 +9329,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the river. It looks tame from here.\n\nOn the third of May, 2010, the Cumberland at Nashville rose to fifty-two and a half feet.\n\nTwo days of rain did it. Thirteen and a half inches fell on the first and second of May. That was more than double the old two-day record.\n\nThe second of May was the rainiest day in Nashville's weather records, which go back to the 1870s.\n\nDowntown, the football stadium, the hockey arena and the symphony hall all took damage. Upriver, so did the Grand Ole Opry House.\n\nEleven people died in the Nashville area.\n\nAnd it could have been worse. The river's record is fifty-six feet, set in 1927, before dams controlled the Cumberland.\n\nThe Army Corps of Engineers has said that without the dams, the 2010 flood would have come close to that, or gone past it, right here downtown.\n\nThe river looks tame because people keep a hand on it, upstream.\n",
     "teaser": "In May 2010 two days of rain put this river into the city's stadium, arena and symphony hall.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/nashville-when-the-cumberland-came-up/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 61.6,
+        "audioBytes": 987262
+      }
+    ],
     "tags": [
       "nashville",
       "downtown",
@@ -9262,14 +9344,7 @@ export const LIBRARY: readonly Echo[] = [
       "flood",
       "weather"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/nashville-when-the-cumberland-came-up",
-        "durationS": 66
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "nashville-yellow-roses-and-red",
@@ -9285,7 +9360,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 92,
+    "durationS": 87,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9295,6 +9370,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This hotel stands across the street from the state capitol. In the summer of 1920, it was the headquarters of a war.\n\nThirty-five states had ratified the amendment giving women the vote. One more was needed. Tennessee looked like the best, and maybe the only, hope.\n\nBoth sides moved in here. Carrie Chapman Catt, who led the national suffrage campaign, took Suite 309. The leader of the anti-suffrage side took rooms too.\n\nSuffragists wore yellow roses in their lapels. Their opponents wore red.\n\nThe lobby became known as the third house of the legislature.\n\nUp on the eighth floor, anti-suffrage lobbyists ran a suite as a speakeasy, in defiance of Prohibition. The whiskey was free for legislators. People called it the Jack Daniel's Suite.\n\nThe Senate passed the amendment. In the House, the vote deadlocked.\n\nThen a twenty-four year old representative, Harry Burn, changed his vote to aye. He had a letter in his pocket from his mother. Don't forget to be a good boy, she wrote, and help Mrs. Catt.\n\nBack here at the hotel, Catt heard singing coming closer. She looked out and saw people in yellow running down the hill with the news.\n\nThirty-six states. And the last vote came from a son who did what his mother told him.\n",
     "teaser": "In the summer of 1920, the vote for half the country was fought out in this hotel lobby.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/nashville-yellow-roses-and-red/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 86.8,
+        "audioBytes": 1390593
+      }
+    ],
     "tags": [
       "nashville",
       "downtown",
@@ -9302,14 +9385,7 @@ export const LIBRARY: readonly Echo[] = [
       "19th-amendment",
       "hermitage-hotel"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/nashville-yellow-roses-and-red",
-        "durationS": 92
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "new-orleans-a-district-with-his-name",
@@ -10859,7 +10935,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "look-below",
-    "durationS": 24,
+    "durationS": 20,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10869,19 +10945,20 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "From the street this synagogue has a severe, plain face.\n\nInside, in the floor of the raised reading desk, there is a trap door. The building survey records that it leads to an escape hatch and a tunnel to Barney Street.\n\nNobody walking past would know. The plainest front on the street keeps a way out under its floor.\n",
     "teaser": "The plainest front on the street hides a way out under the floor.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/newport-a-door-in-the-floor/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 20.3,
+        "audioBytes": 326469
+      }
+    ],
     "tags": [
       "newport",
       "touro-synagogue",
       "architecture"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/newport-a-door-in-the-floor",
-        "durationS": 24
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "newport-a-year-of-waiting",
@@ -10897,7 +10974,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 44,
+    "durationS": 45,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10907,6 +10984,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look around this square. The Colony House at the top of it is among the places that remember a French army.\n\nIn July 1780 French forces under the comte de Rochambeau arrived in Newport, to support the American cause.\n\nThen they waited. For nearly a year, French troops were camped in and around Newport, working out strategy with George Washington and the Continental Army.\n\nIn June 1781 Rochambeau's army began its march out of Rhode Island to join the Americans.\n\nThe campaign that march began ended in victory at Yorktown.\n\nThe road to Yorktown started with a long wait in this town.\n",
     "teaser": "A French army landed here, and then it waited for nearly a year.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/newport-a-year-of-waiting/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 44.7,
+        "audioBytes": 716007
+      }
+    ],
     "pronunciations": [
       {
         "written": "Rochambeau",
@@ -10920,14 +11005,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "military"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/newport-a-year-of-waiting",
-        "durationS": 44
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "newport-the-line-washington-borrowed",
@@ -10943,7 +11021,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 65,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10953,6 +11031,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at how the synagogue sits on its lot. It is not square to the street.\n\nIt is set at an angle, so that the ark inside, on the east wall, can face Jerusalem.\n\nIn August 1790 the new president came to Newport. The congregation that worshipped here sent George Washington a letter of welcome. It was written by their warden, Moses Seixas.\n\nIn it he praised a government which to bigotry gives no sanction, to persecution no assistance.\n\nWashington wrote back. His reply said that the Government of the United States gives to bigotry no sanction, to persecution no assistance.\n\nThe Library of Congress calls the pair of letters his clearest statement of belief in religious freedom.\n\nListen to both lines again. The president took the congregation's words, turned them round, and handed them back as a promise.\n\nThe most famous line about this building was the congregation's own, before it was the president's.\n",
     "teaser": "The most famous line about this synagogue was the congregation's before it was the president's.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/newport-the-line-washington-borrowed/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 64.8,
+        "audioBytes": 1037417
+      }
+    ],
     "pronunciations": [
       {
         "written": "Seixas",
@@ -10965,14 +11051,7 @@ export const LIBRARY: readonly Echo[] = [
       "washington",
       "religious-freedom"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/newport-the-line-washington-borrowed",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "newport-the-tower-nobody-agrees-on",
@@ -10988,7 +11067,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 59,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11000,20 +11079,21 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "A round stone tower on arches, and an argument that has run since at least 1851.",
     "certaintyNote": "The Viking origin is a long-told legend and is not established. The script says so aloud and gives the survey's likelier colonial windmill explanation.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/newport-the-tower-nobody-agrees-on/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 55.4,
+        "audioBytes": 886952
+      }
+    ],
     "tags": [
       "newport",
       "touro-park",
       "old-stone-mill",
       "legend"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/newport-the-tower-nobody-agrees-on",
-        "durationS": 59
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "news-cafe-last-ordinary-morning",
@@ -11201,7 +11281,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 69,
+    "durationS": 58,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11212,6 +11292,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look up the hill at the old agency buildings.\n\nIn the early nineteen twenties the federal government decided which Osage were unfit to control their own money.\n\nThose it judged incompetent were given guardians.\n\nGuardians often used the system, in the writer David Grann's words, to swindle the very people they were supposedly protecting.\n\nThe National Archives keeps a handwritten ledger of those guardians, the Register of Guardians, from 1919 to 1924.\n\nMollie Burkhart was Osage. She and her family were victims of William Hale, who planned the killing of several Osage people to inherit their oil rights and money.\n\nHale brought in his nephew, Ernest Burkhart, to help.\n\nErnest had married Mollie. He was later arrested for his part in the deaths of her family.\n\nNow open the register at their children. The guardian listed for them is Ernest.\n\nThe system meant to protect the children's money put it in their father's hands.\n",
     "teaser": "A government ledger named the guardian of two Osage children. It was their father.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/pawhuska-guardian-of-his-own-children/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 58,
+        "audioBytes": 928330
+      }
+    ],
     "pronunciations": [
       {
         "written": "Osage",
@@ -11227,18 +11315,11 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "convicted",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedBy": "James (owner), approved 2026-11-09",
       "reviewedAt": "2026-11-09",
       "contentWarning": "This echo concerns a series of murders in the 1920s. No violence is described."
     },
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/pawhuska-guardian-of-his-own-children",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "pawhuska-the-missing-panel",
@@ -11254,7 +11335,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 79,
+    "durationS": 69,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -11265,6 +11346,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "In 2012 the writer David Grann visited the Osage nation museum and saw a long panoramic photograph on the wall.\n\nIt was taken in 1924. It showed what looked like an innocent pageant of Osage people and white settlers.\n\nA section of it had been cut out.\n\nHe asked the museum director why. She said it held the image of a figure so frightening that she had decided to remove that piece.\n\nThen she pointed at the gap, and said, the Devil was standing right there.\n\nThe missing piece showed one of the men behind the killing of Osage people for their oil wealth.\n\nOil had been found on Osage land, and in the nineteen twenties they were among the richest people per capita in the world.\n\nThen, one by one, they began to be killed. The Osage call those years the Reign of Terror.\n\nWilliam Hale and John Ramsey were tried and sent to prison for their part.\n\nGrann has written that there was a deeper and darker conspiracy, which the investigators never exposed.\n\nThe director did not cut that figure out to forget. She cut him out because the Osage cannot forget.\n",
     "teaser": "A long photograph in this museum had a piece cut out of it, on purpose.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/pawhuska-the-missing-panel/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 68.7,
+        "audioBytes": 1100111
+      }
+    ],
     "pronunciations": [
       {
         "written": "Osage",
@@ -11284,18 +11373,11 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "convicted",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
+      "reviewedBy": "James (owner), approved 2026-11-09",
       "reviewedAt": "2026-11-09",
       "contentWarning": "This echo concerns a series of murders in the 1920s. No violence is described."
     },
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/pawhuska-the-missing-panel",
-        "durationS": 79
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "pearl-street-oysters",
@@ -12782,7 +12864,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 60,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12792,6 +12874,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Below this path, under the road, is a cave you cannot see.\n\nThe Dakota knew it as In-yan Ti-pi. It was the first building site of what became Saint Paul.\n\nIn 1838 a man of dubious reputation, who sold alcohol to Native Americans and to soldiers from Fort Snelling, built a cabin at the mouth of the cave.\n\nHis name was Pierre Parrant. Everybody called him Pig's Eye.\n\nTwo years later the army at Fort Snelling threw him out.\n\nThe cluster of cabins downstream went by two names. The Great Marsh, or, after its best known inhabitant, Pig's Eye.\n\nThen a Catholic priest, Father Lucien Galtier, built a chapel on the bluff and named it for Saint Paul.\n\nThe name stuck.\n\nThe cave did not. Its entrance was buried in 1960, when Shepard Road was built.\n\nThe city came within a priest of being called Pig's Eye.\n",
     "teaser": "The city's first resident at this spot was a whiskey seller called Pig's Eye.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/saint-paul-almost-pigs-eye/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 58.6,
+        "audioBytes": 938779
+      }
+    ],
     "pronunciations": [
       {
         "written": "Parrant",
@@ -12812,14 +12902,7 @@ export const LIBRARY: readonly Echo[] = [
       "mississippi",
       "founding"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/saint-paul-almost-pigs-eye",
-        "durationS": 60
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "saint-paul-half-a-mile-of-cellar",
@@ -12835,7 +12918,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "food-drink",
     "format": "look-below",
-    "durationS": 28,
+    "durationS": 26,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12845,6 +12928,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Up on the bluffs near here, by Shepard Road and Drake Street, stood a brewery.\n\nFrederick and William Banholzer made it one of the more successful breweries in Saint Paul by the 1880s.\n\nThey dug caves that went half a mile deep, with many chambers.\n\nWithin a year after William died in 1897, the business closed.\n\nThe beer is long gone. Half a mile of cellar was dug for it.\n",
     "teaser": "A brewery on this bluff dug its cellars half a mile deep.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/saint-paul-half-a-mile-of-cellar/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 26.1,
+        "audioBytes": 418002
+      }
+    ],
     "pronunciations": [
       {
         "written": "Banholzer",
@@ -12857,14 +12948,7 @@ export const LIBRARY: readonly Echo[] = [
       "caves",
       "west-seventh"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/saint-paul-half-a-mile-of-cellar",
-        "durationS": 28
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "saint-paul-the-end-of-the-river-road",
@@ -12890,6 +12974,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the river. For steamboats, this was the end of the road.\n\nAbove Saint Paul the river falls more than a hundred feet in about fifteen miles, through a narrow gorge full of boulders. Too treacherous for steamboats.\n\nSo Saint Paul became the head of navigation.\n\nIn 1844 the town counted forty-one steamboat arrivals. By 1857 it had more than a thousand a year.\n\nA local newspaper reported that passengers and freight overflowed from every steamboat that arrived.\n\nThen the railroads came, and the lower landing became a railroad terminal.\n\nIn 1875 a Saint Paul historian, J. Fletcher Williams, summed it up.\n\nThe opening of navigation has ceased to be of any importance or interest. Our railroads have changed all that.\n",
     "teaser": "Steamboats could go no further than here. Then the trains came.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/saint-paul-the-end-of-the-river-road/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.2,
+        "audioBytes": 868980
+      }
+    ],
     "tags": [
       "saint-paul",
       "lower-landing",
@@ -12897,14 +12989,7 @@ export const LIBRARY: readonly Echo[] = [
       "steamboats",
       "railroads"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/saint-paul-the-end-of-the-river-road",
-        "durationS": 54
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "saint-paul-the-spirit-house",
@@ -12920,7 +13005,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 54,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12930,6 +13015,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look across the pond to the foot of the sandstone bluff. That dark opening is a cave.\n\nThe Dakota call it Wakan Tipi, the Spirit House. It was a significant place for Native Americans.\n\nWhen the explorer Jonathan Carver stopped here in late 1766, he described the inside as covered with figures cut into the soft stone.\n\nLater visitors did not describe them. The soft sandstone, running water and falling ceilings may have worn them away.\n\nThen the railroads came. They cut back the bluff to make room for tracks, and destroyed much of the cave.\n\nBy the late 1880s this ground was an industrial area and a rail yard. It became a city park in 2005.\n\nThe figures are gone. The cave is still there, behind the water, closed.\n",
     "teaser": "Across the pond is the mouth of a cave the Dakota call the Spirit House.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/saint-paul-the-spirit-house/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.3,
+        "audioBytes": 853933
+      }
+    ],
     "pronunciations": [
       {
         "written": "Wakan Tipi",
@@ -12942,14 +13035,7 @@ export const LIBRARY: readonly Echo[] = [
       "dakota",
       "mississippi"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/saint-paul-the-spirit-house",
-        "durationS": 54
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "salem-a-life-in-one-house",
@@ -12965,7 +13051,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 59,
+    "durationS": 56,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -12975,6 +13061,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the plain house with the steep pointed roof. The taller part is the original, built in 1675 for a butcher named Thomas Ives.\n\nIt still has its original peaked roof and its original brick chimney.\n\nThe Park Service calls it a witness house to the witch trials of 1692.\n\nBut it is named for Sarah Narbonne. Her grandfather bought it in 1780.\n\nSarah was born in it, and lived in it for her entire life. That life stretched nearly the length of the nineteenth century.\n\nShe died in 1895, at the age of a hundred and one. Her unmarried daughter Mary lived on here until 1905.\n\nThe house has not been restored to any single moment. It is kept as a study house, to show how it changed.\n\nNearly three hundred years of people living in it, and two hundred of those years were one family.\n",
     "teaser": "She was born in this house and lived in it for a hundred and one years.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/salem-a-life-in-one-house/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.7,
+        "audioBytes": 891967
+      }
+    ],
     "pronunciations": [
       {
         "written": "Narbonne",
@@ -12986,14 +13080,7 @@ export const LIBRARY: readonly Echo[] = [
       "salem-maritime",
       "narbonne-house"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/salem-a-life-in-one-house",
-        "durationS": 59
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "salem-a-wharf-built-on-mud",
@@ -13009,7 +13096,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 54,
+    "durationS": 56,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13019,20 +13106,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down at the edge of this wharf. The stone is not where it started.\n\nRichard Derby and his son Elias Hasket Derby began building it in 1762.\n\nAs their trade grew, they kept making it longer. By 1806 it reached two thousand and forty-five feet into Salem Harbor.\n\nAt one time nearly twenty buildings stood on it, among them the counting house that ran Elias Hasket Derby's trading empire.\n\nIn 1992 an archaeological dig showed how it was made.\n\nThe 1762 section was built by laying timbers on the mud flats at low tide, then filling between the timber walls with dirt and stones.\n\nThe granite blocks came later, in the nineteenth century.\n\nUnder the stone, a merchant's ambition, packed into the mud by hand between the tides.\n",
     "teaser": "The oldest part of this wharf was built at low tide, on the mud.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/salem-a-wharf-built-on-mud/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.7,
+        "audioBytes": 892803
+      }
+    ],
     "tags": [
       "salem",
       "salem-maritime",
       "derby-wharf",
       "waterfront"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/salem-a-wharf-built-on-mud",
-        "durationS": 54
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "salem-the-judges-house",
@@ -13048,7 +13136,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 60,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13058,6 +13146,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the dark house with the steep gables. People call it the Witch House. No witch ever lived in it.\n\nIt was the home of Jonathan Corwin, a judge.\n\nIn 1692 he sat on the special court that heard the witchcraft cases.\n\nIt had begun on the first of March, when Salem authorities questioned three women. Within months more than a hundred and fifty people had been jailed.\n\nThe court Corwin sat on sentenced nineteen people to death.\n\nBy the end of October the governor had shut the court down. Nineteen years later a law restored the good names of the accused.\n\nThe house has moved since then. When the street was widened in the nineteen forties, it was shifted about thirty-five feet.\n\nThe judge's house is the only building in Salem with a direct tie to the trials. It still carries the wrong name.\n",
     "teaser": "They call it the Witch House. No witch lived here. A judge did.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/salem-the-judges-house/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.1,
+        "audioBytes": 882354
+      }
+    ],
     "pronunciations": [
       {
         "written": "Corwin",
@@ -13069,14 +13165,7 @@ export const LIBRARY: readonly Echo[] = [
       "witch-trials",
       "witch-house"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/salem-the-judges-house",
-        "durationS": 60
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "salem-the-ship-that-missed-the-war",
@@ -13092,7 +13181,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 52,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13102,6 +13191,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "If a tall ship is tied up at this wharf, it is a copy, built to look like a Salem ship from 1797.\n\nThe original Friendship made fifteen voyages, to China, India, Russia and beyond, and came home with pepper, silk, sugar and coffee.\n\nIn the summer of 1812 she was in Archangel, in Russia, when war began between Britain and the United States.\n\nNobody on board knew. The captain and crew set off for Salem.\n\nOn the fifth of September a British warship, HMS Rosamond, stopped them in the Atlantic, and took them as a prize of war.\n\nThe crew made it home to Salem. The ship did not. She was sold at auction in London in March 1813.\n\nThe war was months old before the news reached them. It came as a warship.\n",
     "teaser": "The crew sailed home from Russia without knowing their country was at war.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/salem-the-ship-that-missed-the-war/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.6,
+        "audioBytes": 858531
+      }
+    ],
     "tags": [
       "salem",
       "salem-maritime",
@@ -13110,14 +13207,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "ships"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/salem-the-ship-that-missed-the-war",
-        "durationS": 52
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "salem-the-surveyor-who-lost-his-job",
@@ -13133,7 +13223,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "short",
-    "durationS": 54,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13143,6 +13233,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the eagle on the roof. It is a fibreglass copy. The wooden original, put up in 1826, is on display inside.\n\nIn 1846 a writer who could not support his family on his books was given a job in this building. He became Surveyor of the port.\n\nHis name was Nathaniel Hawthorne. His friends in the Democratic Party had got him the job.\n\nThen in 1848 the Whigs came in, and he lost it, after a painful and prolonged fight to keep it.\n\nHe turned the pain, the anger and the betrayal into his first great novel, The Scarlet Letter.\n\nIn the introduction he describes this Custom House, and pretends to find the story among the papers of a previous surveyor.\n\nThe book begins in this building, with a man pretending to find it.\n",
     "teaser": "A writer got a government job here, lost it, and turned the anger into a famous book.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/salem-the-surveyor-who-lost-his-job/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51.8,
+        "audioBytes": 830110
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "site"
@@ -13154,14 +13252,7 @@ export const LIBRARY: readonly Echo[] = [
       "scarlet-letter",
       "books"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/salem-the-surveyor-who-lost-his-job",
-        "durationS": 54
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-antonio-a-day-at-the-mission",
@@ -13177,7 +13268,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 67,
+    "durationS": 62,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13188,6 +13279,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look around this big square inside the mission walls. Families lived here, in their own quarters. Three hundred and fifty people once lived in eighty-four little two-room apartments.\n\nTheir day was planned from start to finish, and bells told everyone what to do. The church bells rang three times a day.\n\nAfter the sunrise church service, breakfast was corn porridge called atole, and dried meat called charque.\n\nThen the men and boys went to work in the fields. The women and girls cooked, swept the dirt floors, and got wool ready for spinning. They even went fishing in the irrigation ditch outside the walls.\n\nAt noon the bells rang again. Lunch was the biggest meal. Maybe a bowl of goat stew, with fresh tortillas. After lunch came a long rest, called a siesta.\n\nAnd in the evening there was singing, games, dancing and stories.\n\nThen at sunrise, the bells started the whole day over again.\n",
     "teaser": "Bells for waking, bells for lunch, and fishing in the water ditch.",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/san-antonio-a-day-at-the-mission/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 62.3,
+        "audioBytes": 998129
+      }
+    ],
     "tags": [
       "san-antonio",
       "missions",
@@ -13195,14 +13294,7 @@ export const LIBRARY: readonly Echo[] = [
       "world-heritage",
       "kids"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/san-antonio-a-day-at-the-mission",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-antonio-a-window-for-rosa",
@@ -13218,7 +13310,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 61,
+    "durationS": 51,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13230,6 +13322,14 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "The most famous window in Spanish Texas comes with a love story nobody can prove.",
     "certaintyNote": "Folklore. The National Park Service says the window's sculptor and meaning are unknown; the script says the love story is a legend and gives the other explanation.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/san-antonio-a-window-for-rosa/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 50.9,
+        "audioBytes": 816317
+      }
+    ],
     "tags": [
       "san-antonio",
       "missions",
@@ -13238,14 +13338,7 @@ export const LIBRARY: readonly Echo[] = [
       "legend",
       "world-heritage"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/san-antonio-a-window-for-rosa",
-        "durationS": 61
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-antonio-one-governor-was-enough",
@@ -13261,7 +13354,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 69,
+    "durationS": 68,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13271,6 +13364,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the low, plain building. Its name calls it a palace. It is really a captain's house.\n\nIn the 1730s, the commander of the Spanish fort here, Captain José de Urrutia, built himself a home and office. It was known as the Captain's House, and it housed the garrison's commanders into the early 1800s.\n\nIn 1804, Juan Ignacio Pérez bought it. In July 1816, the Spanish Crown appointed him interim governor of Texas.\n\nOnly one acting governor ever lived here. But that was enough.\n\nBy the late 1800s the house was falling apart, and was used as a shop. It looked as if it might be torn down. Then the preservationist Adina De Zavala began calling it the Spanish Governor's Palace. The name stuck. The city bought the building in 1929, and restored it.\n\nArchitectural historians now think the restored building is bigger than it was in Spanish times.\n\nOne governor, one good name, and a house that grew a little when it was saved.\n",
     "teaser": "The Spanish Governor's Palace housed exactly one acting governor, and was named a century later.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-antonio-one-governor-was-enough/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 67.8,
+        "audioBytes": 1085901
+      }
+    ],
     "tags": [
       "san-antonio",
       "military-plaza",
@@ -13278,14 +13379,7 @@ export const LIBRARY: readonly Echo[] = [
       "presidio",
       "preservation"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-antonio-one-governor-was-enough",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-antonio-spirits-with-flaming-swords",
@@ -13301,7 +13395,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 72,
+    "durationS": 63,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13313,6 +13407,14 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "An old Alamo ghost story says the dead would not let the walls come down.",
     "certaintyNote": "A folk tale, recorded by Adina De Zavala in 1917 as one of the current tales of the day. The script says it is a legend; no supernatural claim is made.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/san-antonio-spirits-with-flaming-swords/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 62.6,
+        "audioBytes": 1001891
+      }
+    ],
     "tags": [
       "san-antonio",
       "alamo",
@@ -13320,14 +13422,7 @@ export const LIBRARY: readonly Echo[] = [
       "legend",
       "texas-revolution"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/san-antonio-spirits-with-flaming-swords",
-        "durationS": 72
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-antonio-the-army-gave-it-the-hump",
@@ -13343,7 +13438,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 54,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13353,6 +13448,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the top of the church front. That curved top is its familiar shaped gable, the outline people picture. The defenders in 1836 never saw it.\n\nAfter the battle, the Alamo was badly damaged. When Texas joined the United States, the U.S. Army moved in and used it as a quartermaster depot.\n\nOn the first of January, 1850, the Army leased the buildings, for a hundred and fifty dollars a month, to use as storehouses.\n\nAnd it was apparently in 1849 that the church was rebuilt with its familiar shaped gable. The design is credited to John Fries, a local builder, working under the Army's quartermaster in San Antonio.\n\nSo the most famous silhouette in Texas was added by an army supply office, to tidy up a warehouse.\n",
     "teaser": "The most famous outline in Texas was added by an army quartermaster.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-antonio-the-army-gave-it-the-hump/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53,
+        "audioBytes": 848918
+      }
+    ],
     "tags": [
       "san-antonio",
       "alamo",
@@ -13360,14 +13463,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "world-heritage"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-antonio-the-army-gave-it-the-hump",
-        "durationS": 54
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-antonio-the-chili-queens-plaza",
@@ -13383,7 +13479,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "food-drink",
     "format": "look-below",
-    "durationS": 39,
+    "durationS": 36,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13393,6 +13489,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at City Hall, sitting in the middle of this plaza. Before it was built, this was open ground.\n\nMilitary Plaza was laid out by the Spanish in 1722, as a parade ground and a market square.\n\nFor years it was a market in the open air, with the Chili Queens, and the rowdy cowboys, cattlemen and gamblers.\n\nThen, from 1888 to 1891, the city put its new City Hall right in the middle. That put an end to the open-air market, and to the Chili Queens.\n\nThe building you see stands right where the Chili Queens used to be.\n",
     "teaser": "City Hall stands in the middle of an old open-air market, on purpose or not.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-antonio-the-chili-queens-plaza/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 36.2,
+        "audioBytes": 579752
+      }
+    ],
     "tags": [
       "san-antonio",
       "military-plaza",
@@ -13400,14 +13504,7 @@ export const LIBRARY: readonly Echo[] = [
       "food",
       "market"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-antonio-the-chili-queens-plaza",
-        "durationS": 39
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-antonio-the-eye-with-a-mustache",
@@ -13423,7 +13520,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 68,
+    "durationS": 65,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13433,6 +13530,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the church walls. They are weathered and pale now, but they were once covered in colorful designs, inside and out.\n\nThe paint was made with lime and water, and possibly goat's milk. Mission artisans painted it into wet plaster, quickly, before the plaster dried.\n\nInside the convento, the priest's residence, the library has the best known fresco of all, on the ceiling. A sunburst with an eye.\n\nFor decades, only one eye and a few rays could be seen. Legends called it the Eye of God. The All Seeing Eye.\n\nIn 1988, conservators began removing two hundred and fifty years of dirt and plaster that did not belong there. To the surprise of many, they found a second eye. Then a mustache. Then a goatee.\n\nHistorians now think it was not a religious symbol at all, but a Spanish medallion. A face.\n\nSo the Eye of God turned out to have a beard. It is still up there, looking down at whoever comes in.\n",
     "teaser": "For decades people called it the Eye of God. Then the cleaners found a goatee.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-antonio-the-eye-with-a-mustache/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 64.7,
+        "audioBytes": 1036163
+      }
+    ],
     "tags": [
       "san-antonio",
       "missions",
@@ -13441,14 +13546,7 @@ export const LIBRARY: readonly Echo[] = [
       "world-heritage",
       "art"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-antonio-the-eye-with-a-mustache",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-antonio-the-mission-that-kept-moving",
@@ -13464,7 +13562,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 75,
+    "durationS": 74,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13474,6 +13572,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the chapel, and at the stone front that rises above its roof with three bells. It makes a small building look grander than it is.\n\nVisitors see this chapel looking as if its old stones had always been here. But in its first years, the mission was moved several times.\n\nIt was founded on the twenty-fourth of May, 1690, as Mission San Francisco de los Tejas, in east Texas, near what is now Nacogdoches. After three years it was abandoned. It was moved in 1716, and moved again in 1721, to the Neches River.\n\nThen an agreement with France closed the Spanish presidio that protected the eastern missions. Without it, they were a ripe target for raids.\n\nSo in 1731, the mission moved one last time, here, to the San Antonio River.\n\nEven here, things did not go to plan. A larger church was begun in 1762, and torn down in 1777 because it was structurally unsound. This little chapel, meant to be the sacristy, became the church instead.\n\nA mission that crossed Texas, and settled for its back room.\n",
     "teaser": "This chapel looks as if it has always been here. It arrived after a long trip.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-antonio-the-mission-that-kept-moving/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 73.5,
+        "audioBytes": 1176598
+      }
+    ],
     "tags": [
       "san-antonio",
       "missions",
@@ -13481,14 +13587,7 @@ export const LIBRARY: readonly Echo[] = [
       "world-heritage",
       "spanish-colonial"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-antonio-the-mission-that-kept-moving",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-antonio-twelve-thousand-pecan-shellers",
@@ -13504,7 +13603,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "look-below",
-    "durationS": 33,
+    "durationS": 30,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13514,6 +13613,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the doors of City Hall. In 1939, around twelve thousand pecan shellers marched here, to demand higher wages and better working conditions.\n\nThey were led by Emma Tenayuca. The protest and strike won them higher wages, and recognition of their union.\n\nIt also pushed many of the pecan companies to buy machines. And many of the people who marched here lost their jobs to them.\n\nA victory at this building, and a harder lesson after it.\n",
     "teaser": "In 1939 the people who cracked the city's pecans marched on this building, and won.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-antonio-twelve-thousand-pecan-shellers/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 29.8,
+        "audioBytes": 477352
+      }
+    ],
     "tags": [
       "san-antonio",
       "military-plaza",
@@ -13521,14 +13628,7 @@ export const LIBRARY: readonly Echo[] = [
       "strike",
       "women"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-antonio-twelve-thousand-pecan-shellers",
-        "durationS": 33
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-antonio-water-over-the-creek",
@@ -13544,7 +13644,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 69,
+    "durationS": 67,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13554,6 +13654,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the low stone bridge with two arches over the creek. It is not for people. It is for water.\n\nThe people of the missions began digging irrigation ditches, called acequias, even before the mission walls or the stone churches were built. A dam turned water out of the San Antonio River, and gravity carried it to the fields.\n\nWhen the ditch for Mission Espada ran into this creek, the builders needed a way across. Before the aqueduct, they would have used hollowed-out logs. Then, between 1740 and 1745, they built this.\n\nWater flowed across the top in a channel, and rejoined the earthen ditch on the other side, on its way south to the mission and the farm fields.\n\nIt has come through major floods for more than two hundred and seventy-five years. It is the oldest Spanish aqueduct in the United States.\n\nAnd it still works. Look along the top. Water can still be seen flowing over it, on its way to Mission Espada.\n",
     "teaser": "This little stone bridge was built for water, and the water still uses it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-antonio-water-over-the-creek/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 66.7,
+        "audioBytes": 1067928
+      }
+    ],
     "tags": [
       "san-antonio",
       "missions",
@@ -13562,14 +13670,7 @@ export const LIBRARY: readonly Echo[] = [
       "aqueduct",
       "world-heritage"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-antonio-water-over-the-creek",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-antonio-wooden-cannons-on-the-long-barrack",
@@ -13585,7 +13686,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 72,
+    "durationS": 69,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13595,6 +13696,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the long stone building beside the church. This is the Long Barrack, the oldest building at the Alamo. It was first a two-story convent for the mission's priests.\n\nIn 1836 it was the site of the defenders' final stand against Santa Anna's army. After a thirteen-day siege, Mexican troops killed all of the roughly one hundred and eighty-nine defenders.\n\nForty-one years later, in 1877, the convent was sold to a San Antonio merchant, Honore Grenet, for nineteen thousand dollars.\n\nHe built a wooden two-story gallery across the front, and gave it a medieval look. A crenellated top. Three octagonal wooden towers. Gun ports, and wooden cannons.\n\nAfter he died, a wholesale grocery firm bought it and used the old convent as a storehouse.\n\nIt was not until 1912 that the governor had the wooden front stripped away.\n\nThe place where the Alamo's defenders made their last stand spent decades pretending to be a castle, guarded by cannons made of wood.\n",
     "teaser": "The building of the Alamo's last stand spent decades as a store dressed up as a castle.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-antonio-wooden-cannons-on-the-long-barrack/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.1,
+        "audioBytes": 1105963
+      }
+    ],
     "tags": [
       "san-antonio",
       "alamo",
@@ -13602,14 +13711,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "world-heritage"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-antonio-wooden-cannons-on-the-long-barrack",
-        "durationS": 72
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-francisco-a-message-on-the-water-tower",
@@ -13625,7 +13727,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 68,
+    "durationS": 66,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "landmark-visible",
@@ -13635,6 +13737,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Find the water tower, and read what is painted on it.\n\nIt went up in 1940, when this island was a federal prison. There was no fresh water source here, so every drop came by boat, twice a week. The tank held two hundred and fifty thousand gallons.\n\nFrom 1969 to 1971, American Indians occupied Alcatraz. Nineteen months, the longest occupation of federal land in the country's history.\n\nThe water tower is one of the most visible landmarks in San Francisco Bay, so it was an ideal place for a message to the world. Standing on each other's shoulders, they painted the letters.\n\nPeace and freedom. Welcome. Home of the free. Indian land.\n\nThe occupation is credited with launching a national American Indian civil rights movement.\n\nWhen the National Park Service restored the water tower in 2012, it did not paint the words out. It invited the original occupiers and their families back, to paint them again.\n",
     "teaser": "The graffiti on this tower was restored on purpose, by the people who painted it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-a-message-on-the-water-tower/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 66.2,
+        "audioBytes": 1060823
+      }
+    ],
     "tags": [
       "san-francisco",
       "alcatraz",
@@ -13642,14 +13752,7 @@ export const LIBRARY: readonly Echo[] = [
       "red-power",
       "civil-rights"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-francisco-a-message-on-the-water-tower",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-francisco-a-toast-to-the-wrong-president",
@@ -13665,7 +13768,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 86,
+    "durationS": 78,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13675,6 +13778,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Somewhere in the officers' circle of this cemetery is a marker that simply reads, Pauline C. Fryer, Union Spy.\n\nShe was an actress. In April 1863 she was performing at a theater in Louisville, Kentucky, when two Confederate officers asked her to make a toast to the Confederacy, in the middle of the performance. They offered her money.\n\nShe asked the Union provost marshal in Louisville what to do. He told her to accept.\n\nThat night, where the script called for a toast to President Lincoln, she proposed a toast to Jefferson Davis. She was let go from the play. And the Union offered her a job as a spy.\n\nLater, sent into Tennessee, she was warned never to steal any documents. Only to study them and carry them in her memory. She took a fortification map anyway, and stuffed it into her boot.\n\nShe was caught, tried at General Braxton Bragg's headquarters, and sentenced to death by hanging. Before the sentence could be carried out, she fell ill. Some accounts say she was acting. Then the Confederates retreated, and left her behind.\n\nPresident Lincoln gave her the honorary rank of major. The marker says spy. She got the job by playing a part.\n",
     "teaser": "Her gravestone says Union Spy. She got the job by raising a glass.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-a-toast-to-the-wrong-president/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 78.1,
+        "audioBytes": 1250994
+      }
+    ],
     "tags": [
       "san-francisco",
       "presidio",
@@ -13682,14 +13793,7 @@ export const LIBRARY: readonly Echo[] = [
       "spy",
       "women"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-francisco-a-toast-to-the-wrong-president",
-        "durationS": 86
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-francisco-filled-by-the-tide",
@@ -13705,7 +13809,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 66,
+    "durationS": 64,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13715,20 +13819,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "The concrete basins below you are the remains of Sutro Baths.\n\nAdolph Sutro developed the baths in 1894. A classic Greek portal opened to a massive glass enclosure, with seven swimming pools at different temperatures. There were slides, trapezes, springboards and a high dive.\n\nThe Baths could hold ten thousand people at one time. They had twenty thousand bathing suits and forty thousand towels for rent.\n\nAnd the water came straight from the sea in front of you. At high tide, the Pacific could fill all one point seven million gallons in just one hour.\n\nThe Baths were not a business success for long. The owners turned them into an ice-skating rink. In 1964 developers bought the site to put up high-rise apartments, and began knocking the building down. In 1966, a fire destroyed what was left.\n\nThe apartments were never built. The glass is gone. The ocean still comes in.\n",
     "teaser": "Seven swimming pools once stood on these rocks, and the ocean filled them.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-filled-by-the-tide/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 64.4,
+        "audioBytes": 1031566
+      }
+    ],
     "tags": [
       "san-francisco",
       "lands-end",
       "sutro-baths",
       "swimming"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-francisco-filled-by-the-tide",
-        "durationS": 66
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-francisco-forty-two-tons-of-powder",
@@ -13744,7 +13849,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 77,
+    "durationS": 74,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13754,6 +13859,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look north from here, down at the ruins of Sutro Baths and the rocks around them.\n\nIn January 1887, a schooner called the Parallel left the Golden Gate headed for Astoria, Oregon. Her cargo included forty-two tons of black powder.\n\nThe ship fought head winds and a strong tide for two days. Then the captain ordered the crew to abandon ship near the rocks at Point Lobos. The nine men made it safely to Sausalito.\n\nThe empty schooner grounded near the Cliff House, right there, at the future site of Sutro Baths.\n\nRescuers from the Life-Saving Station found no crew on board. They posted watchmen and went to bed. Nobody knew what was in the hold.\n\nAt twelve thirty-four in the morning, after hours of being tossed against the rocks, the powder went off. It demolished the ship, damaged the Cliff House, and sent debris over a mile in all directions.\n\nThe next morning, according to the papers, more than fifty thousand people came out to look.\n\nA wreck with nobody on it. It was still the most dangerous thing on this shore that night.\n",
     "teaser": "A wrecked ship with nobody aboard turned out to be the dangerous kind.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-forty-two-tons-of-powder/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 73.7,
+        "audioBytes": 1179523
+      }
+    ],
     "tags": [
       "san-francisco",
       "lands-end",
@@ -13761,14 +13874,7 @@ export const LIBRARY: readonly Echo[] = [
       "sutro-baths",
       "shipwreck"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-francisco-forty-two-tons-of-powder",
-        "durationS": 77
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-francisco-hits-eight-and-nine",
@@ -13784,7 +13890,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 71,
+    "durationS": 63,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13794,6 +13900,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Walk around this steel structure and look for two large holes punched clean through it.\n\nThis is part of the bridge of the cruiser San Francisco. The command center of the ship.\n\nIn 1942, during the Battle of Guadalcanal, she took forty-five hits and twenty-five fires.\n\nIt was a gun battle at night, with the two fleets mixed up together. Veterans described it as a bar-room brawl.\n\nThese two openings are hits the Navy numbered eight and nine. Five-inch shells, thought to be from a Japanese destroyer, maybe from a single volley.\n\nThe holes themselves were not the worst of it. It was the fragments that flew inward when the shells burst.\n\nThe admiral of the task force, Daniel Callaghan, was up here with his staff. So was the ship's captain, Cassin Young, who had been in command for a week, maybe two. Neither of them survived.\n\nTheir names are on the plaque for those who did not come home. The steel next to it is still the shape that night left it.\n",
     "teaser": "The holes in this steel were made in one night, on the other side of the Pacific.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-hits-eight-and-nine/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 62.6,
+        "audioBytes": 1002727
+      }
+    ],
     "tags": [
       "san-francisco",
       "lands-end",
@@ -13802,14 +13916,7 @@ export const LIBRARY: readonly Echo[] = [
       "navy",
       "guadalcanal"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-francisco-hits-eight-and-nine",
-        "durationS": 71
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-francisco-studying-in-the-bathroom",
@@ -13825,7 +13932,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 82,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13835,6 +13942,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Somewhere along the edge of this old airfield is a hangar called Building 640. In November 1941, the Army turned it into a school.\n\nOne of the teachers described it as an abandoned, empty, unpainted, crusty-looking corrugated tin building.\n\nThe students were Nisei, Japanese Americans born to parents who had come from Japan. The Army needed them as translators in a war with Japan. They learned terms for every branch of the Japanese military, and how to read the handwritten diaries Japanese soldiers kept.\n\nAfter lights out at ten at night, students could regularly be found studying in the bathroom. It was the only place in the building where the lights were kept on.\n\nIn February 1942 an executive order sent people of Japanese descent away from their homes. The students and teachers here were not given leave to help their own families.\n\nIn May 1942, forty-five of them graduated. The program went on to turn out six thousand graduates. One general credited the linguists with ending the war two years early.\n\nFor decades, hardly anyone knew. The work stayed classified until the 1970s.\n",
     "teaser": "In a tin hangar on this field, the Army ran a secret school in 1941.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-studying-in-the-bathroom/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75,
+        "audioBytes": 1201675
+      }
+    ],
     "tags": [
       "san-francisco",
       "presidio",
@@ -13844,14 +13959,7 @@ export const LIBRARY: readonly Echo[] = [
       "japanese-american",
       "nisei"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-francisco-studying-in-the-bathroom",
-        "durationS": 82
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-francisco-the-arch-over-the-fort",
@@ -13867,7 +13975,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 61,
+    "durationS": 62,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13877,6 +13985,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up, above the brick fort, at the underside of the bridge. There is a steel arch up there. It does not cross any water. It steps over the fort.\n\nFort Point was built between 1853 and 1861 to guard the entrance to San Francisco Bay. Its guns never fired a shot in anger.\n\nIn the late 1930s, the plans for the Golden Gate Bridge also involved plans for the demolition of Fort Point.\n\nBefore construction began, Chief Engineer Joseph Strauss toured the empty fort. He changed his mind, and he changed his design.\n\nWhile the old fort has no military value now, he wrote, it remains nevertheless a fine example of the mason's art.\n\nSo he designed a steel arch to span the old fort, and the bridge went over the top of it.\n\nMost bridges are built over water. Down at this end, the bridge was built over a fort, on purpose.\n",
     "teaser": "At its very end, the Golden Gate Bridge steps over a building.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-the-arch-over-the-fort/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 61.7,
+        "audioBytes": 987680
+      }
+    ],
     "tags": [
       "san-francisco",
       "fort-point",
@@ -13885,14 +14001,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "military"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-francisco-the-arch-over-the-fort",
-        "durationS": 61
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-francisco-the-first-rangers-on-this-hill",
@@ -13918,6 +14027,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look along the rows of white headstones on this slope. More than four hundred of the men buried at the Presidio were Buffalo Soldiers.\n\nIn 1866, Congress created six segregated regiments of Black soldiers in the regular Army, soon consolidated into four. They became known as the Buffalo Soldiers. The nickname probably started on the Western frontier with the Cheyenne, and it was meant as high praise.\n\nSoldiers of the 24th Infantry and the 9th Cavalry were garrisoned here at the Presidio.\n\nBefore there was a National Park Service, the Army protected the first national parks. Soldiers from the Presidio spent their summers in Yosemite and Sequoia. They blazed trails, built roads, made maps, put out fires, and kept poachers and loggers at bay.\n\nBuffalo Soldiers did that work in the Sierra in 1899, 1903 and 1904.\n\nSo when you think of the first park rangers in the Sierra Nevada, some of them are here, on this hill.\n",
     "teaser": "Some of the first guardians of Yosemite and Sequoia are buried on this slope.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-the-first-rangers-on-this-hill/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.1,
+        "audioBytes": 1105963
+      }
+    ],
     "tags": [
       "san-francisco",
       "presidio",
@@ -13926,14 +14043,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "black-history"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-francisco-the-first-rangers-on-this-hill",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-francisco-the-lighthouse-with-a-flat-top",
@@ -13949,7 +14059,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 64,
+    "durationS": 61,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "landmark-visible",
@@ -13959,6 +14069,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look out at the water toward the Golden Gate. Among the waves there is a red and white striped tower on a rock, with a flat top.\n\nThat is the Mile Rocks light. There are two rocks out there that appear and disappear with the swell of the waves.\n\nThe lighthouse was built after the wreck of the steamship City of Rio de Janeiro in 1901, the worst shipwreck in San Francisco's history.\n\nIn 1904 a three-tiered lighthouse went up on the larger rock. At the time, it was hailed as one of America's greatest engineering feats.\n\nFor over sixty years it was kept by four men, living in cramped quarters for days at a time. Isolated from the city, while it sat in plain view.\n\nIn 1966, the Coast Guard automated the light. Its top two tiers were taken away and replaced with a helipad.\n\nSo the flat top is the clue. That is where the rest of the lighthouse used to be.\n",
     "teaser": "Out in the waves is a striped lighthouse with its top missing.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-the-lighthouse-with-a-flat-top/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 61,
+        "audioBytes": 976813
+      }
+    ],
     "tags": [
       "san-francisco",
       "lands-end",
@@ -13966,14 +14084,7 @@ export const LIBRARY: readonly Echo[] = [
       "mile-rocks",
       "shipwreck"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-francisco-the-lighthouse-with-a-flat-top",
-        "durationS": 64
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-francisco-the-unfinished-mosaic",
@@ -13989,7 +14100,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 80,
+    "durationS": 73,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -13999,6 +14110,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the building shaped like a ship, and at the tile mosaic on its veranda. It was never finished.\n\nThe Works Progress Administration built this bathhouse from 1936 to 1939, as a public place for swimmers. Showers switched on by electric eyes. Lockers for hundreds.\n\nSargent Claude Johnson, the most prominent African American artist working for the WPA in Northern California, carved the green slate on the front, and designed that mosaic.\n\nIt opened on the twenty-second of January, 1939. Then the city leased most of the building to private businessmen, who opened an exclusive restaurant and nightclub. When a group of schoolboys brought their sack lunches to the veranda, they were told to leave. Signs went up. Private. Keep out.\n\nSargent Johnson walked away from the project. The sculptor Beniamino Bufano took his animal statues away. He said he would rather have kids playing over his statues than drunks stumbling over them.\n\nThe city was found guilty of mismanagement, and the nightclub was thrown out. But the mosaic stayed the way Johnson left it.\n",
     "teaser": "The tile mosaic on this veranda was never finished, and that was a protest.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-the-unfinished-mosaic/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 73.3,
+        "audioBytes": 1174508
+      }
+    ],
     "tags": [
       "san-francisco",
       "aquatic-park",
@@ -14006,14 +14125,7 @@ export const LIBRARY: readonly Echo[] = [
       "murals",
       "maritime-museum"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-francisco-the-unfinished-mosaic",
-        "durationS": 80
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "san-francisco-two-sisters-on-the-same-rocks",
@@ -14039,6 +14151,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down at the rocks below Lands End. At low tide, if you know where to look, there are engines sitting in the surf.\n\nThey came from two oil tankers. Sisters, built identical.\n\nIn October 1922, the Lyman A. Stewart left San Francisco Bay in thickening fog. A freighter was headed in through the Golden Gate. Horns and whistles were muffled in the fog, and neither ship saw the other until it was too late.\n\nHer captain ordered the crew to abandon ship, and stayed aboard to steer her to shore. She ripped her hull open on the jagged rocks of Lands End.\n\nFifteen years later, her sister met a similar fate in the same spot. In March 1937, the Frank H. Buck was on her way through the Golden Gate in fog, and crashed head-on into a passenger liner.\n\nThe liner merely suffered a crushed bow. The tanker came to rest off Lands End, right next to her sister.\n\nIn 1938 both wrecks were dynamited to clean up the harbor approach. What the dynamite left is still down there.\n\nSame design, same fog, same rocks.\n",
     "teaser": "Two identical tankers, fifteen years apart, ended up in the same spot.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-two-sisters-on-the-same-rocks/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75,
+        "audioBytes": 1200421
+      }
+    ],
     "tags": [
       "san-francisco",
       "lands-end",
@@ -14046,14 +14166,7 @@ export const LIBRARY: readonly Echo[] = [
       "fog",
       "golden-gate"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/san-francisco-two-sisters-on-the-same-rocks",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "santa-fe-a-tank-called-the-mud-puppy",
@@ -14069,7 +14182,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 79,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14079,6 +14192,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at La Fonda, on the corner of the plaza. There has been an inn of some kind on this corner for a very long time, possibly since the 1600s.\n\nIn the days of the Santa Fe Trail, the traders came off the plains and in here. To rest, and to gamble on billiards and on monte, the favorite local card game. Fights could turn ugly. Gun violence was common.\n\nBy 1851 it was the Exchange Hotel, the most noted hostelry between Denver and the City of Mexico. Billy the Kid, Kit Carson and Buffalo Bill Cody all came through. So did two future presidents, Hayes and Grant.\n\nThen in 1880 the railroad arrived. Newer hotels followed, and the old Exchange could not keep up.\n\nIts end, in 1919, was unusual. It was a First World War victory bond rally. For every hundred dollar bond bought, a small tank called the Mud Puppy knocked down another piece of the old adobe walls.\n\nWhen the rally was over, the Exchange was little more than a pile of rubble.\n\nThe hotel you are looking at was finished on the same corner in 1922. It is still the only hotel on the plaza.\n",
     "teaser": "The old trail hotel on this corner was knocked down by a small tank, one war bond at a time.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/santa-fe-a-tank-called-the-mud-puppy/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75.4,
+        "audioBytes": 1207109
+      }
+    ],
     "pronunciations": [
       {
         "written": "La Fonda",
@@ -14096,14 +14217,7 @@ export const LIBRARY: readonly Echo[] = [
       "world-war-i",
       "old-west"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/santa-fe-a-tank-called-the-mud-puppy",
-        "durationS": 79
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "santa-fe-ben-hur-after-dark",
@@ -14119,7 +14233,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "inspo",
     "format": "short",
-    "durationS": 60,
+    "durationS": 57,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14129,6 +14243,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the long, low adobe building on the north side of the plaza, with the covered porch. The Palace of the Governors.\n\nSince 1610 it has housed the offices and living quarters of governors. Spanish colonial, Mexican, and American. It came through the Pueblo Revolt of 1680, the Spanish reconquest, the arrival of the American army in 1846, and the invasion of Confederate troops from Texas in 1862.\n\nBut the most famous thing ever made here was not a law. It was a novel.\n\nFrom 1878 to 1880, the territorial governor was Lew Wallace. By day he governed the territory. At night, in his living quarters in this building, he finished his second novel.\n\nIt was called Ben-Hur.\n\nIt made him rich and famous. Of all the governors who lived here, the world remembers the man who stayed up late, writing.\n",
     "teaser": "Governors ruled from this adobe for three centuries. One of them spent his nights finishing a novel.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/santa-fe-ben-hur-after-dark/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 56.8,
+        "audioBytes": 909104
+      }
+    ],
     "inspo": {
       "kind": "creation",
       "evidence": "building"
@@ -14140,14 +14262,7 @@ export const LIBRARY: readonly Echo[] = [
       "ben-hur",
       "writers"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/santa-fe-ben-hur-after-dark",
-        "durationS": 60
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "santa-fe-the-carpenter-who-vanished",
@@ -14163,7 +14278,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 72,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14175,6 +14290,14 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "A stranger built a staircase here that nobody else could, then left without his pay. That is the legend.",
     "certaintyNote": "A religious legend. The script says aloud that it is a legend, not proven, and gives the evidence for an ordinary builder.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/santa-fe-the-carpenter-who-vanished/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 59.1,
+        "audioBytes": 946302
+      }
+    ],
     "pronunciations": [
       {
         "written": "Loretto",
@@ -14191,14 +14314,7 @@ export const LIBRARY: readonly Echo[] = [
       "legend",
       "staircase"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/santa-fe-the-carpenter-who-vanished",
-        "durationS": 72
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "santa-fe-the-door-to-the-hill",
@@ -14214,7 +14330,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 86,
+    "durationS": 83,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14224,6 +14340,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Step into the little courtyard at 109 East Palace Avenue, and find the back wall. There is a modest bronze plaque.\n\nIn March 1943, a widow named Dorothy McKibbin went to the lobby of La Fonda, on the plaza, to hear about a job. She was introduced to a man who offered her work in an office here. He did not tell her what the job would be. She took it anyway.\n\nThe man was Robert Oppenheimer.\n\nThe next day she learned who her employer was. A secret laboratory in the mountains, at Los Alamos, part of the Manhattan Project.\n\nSoon all the civilian staff, and many of the soldiers, checked in at her office first. She gave them passes, directions or a ride, and encouragement if they were tired and confused from the journey. Every day, she and her assistants sent more than sixty-five people up. Up to the secret city, known as The Hill.\n\nPeople in Santa Fe would call her about strangers wandering around town, looking lost. Usually they were looking for her office.\n\nThe plaque on the wall says it simply. All the men and women who made the first atomic bomb passed through this portal.\n\nThe office stayed open until Dorothy McKibbin retired, in 1963.\n",
     "teaser": "Everyone who built the first atomic bomb walked through a little courtyard on this street first.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/santa-fe-the-door-to-the-hill/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 83.1,
+        "audioBytes": 1331243
+      }
+    ],
     "pronunciations": [
       {
         "written": "McKibbin",
@@ -14241,14 +14365,7 @@ export const LIBRARY: readonly Echo[] = [
       "world-war-ii",
       "oppenheimer"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/santa-fe-the-door-to-the-hill",
-        "durationS": 86
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "santa-fe-the-end-of-the-trail",
@@ -14264,7 +14381,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 65,
+    "durationS": 67,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14274,20 +14391,21 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look for a bronze plaque set at eye level in the adobe wall, on the west side of this street. Above the words, oxen pull a wagon.\n\nIt reads, This marks the route of the Santa Fe Trail, Kansas City to Santa Fe, 1822 to 1880.\n\nIn 1821 Mexico won its independence, and opened trade with the United States. The new trail ran eight hundred miles, from Independence, Missouri, to the plaza just up the street.\n\nAlmost overnight, the plaza became the hub of a vast network. One account from 1837 lists what filled it. All kinds of vehicles. Teamsters, camp cooks, roustabouts. Horses, mules, burros, pigs, and goats.\n\nWagons were unloaded. Traders put up temporary booths. Everything was loaded, unloaded, bought and sold.\n\nThen in 1880 the railroad arrived, and that was the end of the trail.\n\nThe wagons are long gone. The street you are standing on still carries the trail's name.\n",
     "teaser": "A bronze plaque in an adobe wall marks the end of an eight hundred mile road.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/santa-fe-the-end-of-the-trail/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 66.7,
+        "audioBytes": 1068764
+      }
+    ],
     "tags": [
       "santa-fe",
       "santa-fe-trail",
       "plaza",
       "old-west"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/santa-fe-the-end-of-the-trail",
-        "durationS": 65
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "santa-fe-the-mother-ditch",
@@ -14303,7 +14421,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "land",
     "format": "short",
-    "durationS": 64,
+    "durationS": 58,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14313,6 +14431,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look for the stone-lined ditch running beside this street. It might be dry, or there might be water in it. Either way, this is the Acequia Madre. The mother ditch.\n\nWhen the Spanish founded Santa Fe in 1610, they probably began digging it almost at once. It was already in use at the time of the Pueblo Revolt, in 1680.\n\nIt takes its water from the Santa Fe River, and runs west through the city for over two miles, first along this street. It is four to five feet wide, and most of it is lined with stone. It supplied the town with water for the household, and for irrigation.\n\nIt is probably the oldest Spanish acequia system left in the Southwest. And you can still trace it, walking down the street named after it.\n\nIt is not used regularly now. It only carries water when the river runs high.\n\nDug when the town was new, and still waiting for the river.\n",
     "teaser": "Beside this street runs a stone-lined ditch that Santa Fe has used since before the Pueblo Revolt.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/santa-fe-the-mother-ditch/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 57.7,
+        "audioBytes": 923732
+      }
+    ],
     "pronunciations": [
       {
         "written": "Acequia Madre",
@@ -14325,14 +14451,7 @@ export const LIBRARY: readonly Echo[] = [
       "water",
       "irrigation"
     ],
-    "remoteness": 0.47,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/santa-fe-the-mother-ditch",
-        "durationS": 64
-      }
-    ]
+    "remoteness": 0.47
   },
   {
     "id": "santa-fe-what-the-tree-rings-say",
@@ -14348,7 +14467,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 63,
+    "durationS": 64,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14358,6 +14477,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the low adobe house across the street from the chapel of San Miguel. It is known as the Oldest House.\n\nIts western part has thick adobe walls, dirt floors, low ceilings, and a corner fireplace. None of the later decoration was ever added to it.\n\nSo how old is it really? Its wood can answer that. Tree-ring samples taken from the house show its timbers were cut sometime between 1740 and 1767.\n\nThat is old. But maybe not quite as old as the name suggests.\n\nThe chapel across the street tells a similar story. It was first built around 1620, partly destroyed in the Pueblo Revolt of 1680, and rebuilt on the same site in 1710. It still has its original adobe walls. And inside is an altar screen from 1798, the oldest wooden altar screen in New Mexico.\n\nIn this neighborhood, nobody asks whether something is old. They ask how old, exactly.\n",
     "teaser": "It is called the Oldest House. Its timbers have their own opinion.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/santa-fe-what-the-tree-rings-say/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 63.9,
+        "audioBytes": 1023625
+      }
+    ],
     "pronunciations": [
       {
         "written": "San Miguel",
@@ -14371,14 +14498,7 @@ export const LIBRARY: readonly Echo[] = [
       "san-miguel",
       "adobe"
     ],
-    "remoteness": 0.11,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/santa-fe-what-the-tree-rings-say",
-        "durationS": 63
-      }
-    ]
+    "remoteness": 0.11
   },
   {
     "id": "santa-fe-when-the-plaza-was-a-pueblo",
@@ -14404,6 +14524,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand in the plaza and look around. Shops, trees, benches. Now picture a fortress of adobe, several stories high.\n\nThe Spanish laid out this plaza in the spring of 1610, at a place the local Tewa people called Ogaponge. Over at the shells by the water. The Spanish forced the Pueblo people to labor for them, and insisted that they convert.\n\nIn 1680 the Pueblos rose up. Spanish colonists took refuge in the government buildings on this plaza, and the rebels laid siege to them. The Spanish fled four hundred miles south, on foot, to El Paso.\n\nFor the next twelve years, the Pueblo people held Santa Fe. And they rebuilt the plaza for themselves. They turned it into one large multistory pueblo, arranged around two central squares, each with a kiva.\n\nIn 1692, the Spanish came back. The pueblo is long gone.\n\nBut for twelve years, the oldest capital city in the United States belonged to the people the Spanish had come to rule.\n",
     "teaser": "For twelve years, this Spanish plaza was a multistory pueblo with two kivas.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/santa-fe-when-the-plaza-was-a-pueblo/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 68.9,
+        "audioBytes": 1103873
+      }
+    ],
     "pronunciations": [
       {
         "written": "Ogaponge",
@@ -14425,14 +14553,7 @@ export const LIBRARY: readonly Echo[] = [
       "plaza",
       "tewa"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/santa-fe-when-the-plaza-was-a-pueblo",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-a-city-for-christmas",
@@ -16692,7 +16813,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 68,
+    "durationS": 65,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16702,6 +16823,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand on King Street and look at the walls of the old Hotel Ponce de Leon, now Flagler College. Look closely at the gray surface. There are bits of shell in it.\n\nA few blocks away, the Spanish built their fort from blocks of shell rock. This building used the same coquina, crushed and poured.\n\nIt is one of the earliest buildings anywhere of poured concrete. The builders mixed crushed coquina shell with cement, six parts to one. They made the mix on the spot. Then they rammed it down into wooden forms, three inches at a time.\n\nThe whole great hotel, towers and all, three inches at a time.\n\nIt was the first commission for a young architecture firm, Carrère and Hastings.\n\nThe shell, a government survey noted, gives the walls a pleasing texture. It is also a reminder of where they came from. A grand winter hotel, built the way a child builds a sandcastle. Pack it into the mould, a little at a time.\n",
     "teaser": "Look closely at these walls. There are seashells in the concrete.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/st-augustine-a-hotel-poured-from-shells/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 65.2,
+        "audioBytes": 1044105
+      }
+    ],
     "pronunciations": [
       {
         "written": "Carrère",
@@ -16719,14 +16848,7 @@ export const LIBRARY: readonly Echo[] = [
       "coquina",
       "architecture"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/st-augustine-a-hotel-poured-from-shells",
-        "durationS": 68
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "st-augustine-a-wall-of-seashells",
@@ -16742,7 +16864,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 72,
+    "durationS": 73,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16752,6 +16874,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look closely at the wall of this fort. Those gray blocks are full of shells. Tiny clam shells, glued together over thousands of years into stone.\n\nThe stone is called coquina, which is Spanish for tiny shell. The Spanish began building this fort in 1672, and the coquina was quarried across the water on Anastasia Island.\n\nNobody had ever built a fort out of coquina before. Nobody knew how it would stand up to cannon fire. So they built the walls an average of twelve feet thick, and on the ocean side as thick as nineteen.\n\nIn 1702 they found out. An English governor from Charleston captured the town and set up his cannon among the houses. Almost fifteen hundred people had taken refuge inside these walls.\n\nInstead of shattering, the stone simply compressed and absorbed the shock. The cannonballs bounced off, or sank in a few inches.\n\nThe fort held. On the way out, the English burned the town to the ground.\n\nA wall of seashells, and it did not break.\n",
     "teaser": "Look closely at this fort's walls. They are made of shells, and in 1702 nobody knew if they would hold.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/st-augustine-a-wall-of-seashells/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 72.5,
+        "audioBytes": 1168238
+      }
+    ],
     "pronunciations": [
       {
         "written": "coquina",
@@ -16769,14 +16899,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "siege-of-1702"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/st-augustine-a-wall-of-seashells",
-        "durationS": 72
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "st-augustine-acid-in-the-pool",
@@ -16792,7 +16915,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 69,
+    "durationS": 65,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16802,6 +16925,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look along this bayfront. In 1964, one of the buildings on it was the Monson Motor Lodge.\n\nSt. Augustine was the oldest city in the United States, and one of the most segregated. A local dentist, Robert Hayling, started the protests. When they got nowhere, he appealed to the Southern Christian Leadership Conference for help.\n\nMartin Luther King Junior came, and was arrested here, for trying to eat lunch at the Monson's restaurant.\n\nThen came the swim-in. African Americans got into the motel's swimming pool.\n\nThe manager threw acid into the water. Muriatic acid. Then he drained the pool, and stationed guards around it.\n\nThe pictures went out across the whole country.\n\nThat July, President Lyndon Johnson signed the Civil Rights Act of 1964. The demonstrations here are widely credited with winning it the national attention it needed.\n\nA man poured acid into a pool to keep people out. The whole country saw him do it.\n",
     "teaser": "In 1964 a motel on this bayfront became one of the most famous pictures of the civil rights movement.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/st-augustine-acid-in-the-pool/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 65.4,
+        "audioBytes": 1047866
+      }
+    ],
     "pronunciations": [
       {
         "written": "Hayling",
@@ -16814,14 +16945,7 @@ export const LIBRARY: readonly Echo[] = [
       "monson-motor-lodge",
       "martin-luther-king"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/st-augustine-acid-in-the-pool",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "st-augustine-drawings-on-ledger-paper",
@@ -16837,7 +16961,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 70,
+    "durationS": 72,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16847,6 +16971,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the top of the north wall. In the 1870s, a long wooden barracks stood up there on the gun deck, built by prisoners.\n\nThey had come from the Great Plains. Seventy-four of them, mostly warriors, taken from a reservation after the Red River War. There were Cheyenne, Kiowa, Comanche, Arapaho and Caddo. They arrived in chains and shackles.\n\nThen a new jailer, Lieutenant Richard Henry Pratt, had the chains taken off. He also set out to make them give up who they were.\n\nMany of the young men began to draw. Not on buffalo hide, the traditional way, but on paper from an accountant's ledger book. Army rosters. Day books. Whatever paper they could find.\n\nThey drew life on the plains. The long journey to Florida. Their days inside this fort.\n\nMany of those drawings survive. Native artists still make ledger art today.\n\nAnd one prisoner, in an act of resistance, etched a Kiowa Sundance camp into the walls of the prison itself.\n",
     "teaser": "Prisoners from the Great Plains were held on top of this fort. What they drew there still survives.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/st-augustine-drawings-on-ledger-paper/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 72.1,
+        "audioBytes": 1154446
+      }
+    ],
     "pronunciations": [
       {
         "written": "Kiowa",
@@ -16869,14 +17001,7 @@ export const LIBRARY: readonly Echo[] = [
       "cheyenne",
       "kiowa"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/st-augustine-drawings-on-ledger-paper",
-        "durationS": 70
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "st-augustine-the-first-thanksgiving-menu",
@@ -16892,7 +17017,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "food-drink",
     "format": "short",
-    "durationS": 75,
+    "durationS": 69,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16902,6 +17027,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look for the great cross by the water. It marks the place where the Spanish came ashore and founded St. Augustine, on the eighth of September, 1565.\n\nThe first thing they did was hold a Mass of thanksgiving. Then came dinner. Pedro Menéndez laid out a meal, and invited the people who already lived here, the Seloy.\n\nSo what was on the table?\n\nNobody wrote down the menu. But from what the five Spanish ships were carrying, historians can make a good guess. Cocido. A stew of salted pork and garbanzo beans, with plenty of garlic. Hard sea biscuits. Red wine.\n\nIf the Seloy brought food of their own, there may have been turkey, venison, gopher tortoise, mullet, corn, beans and squash.\n\nThat was fifty-six years before the Pilgrims sat down at Plymouth.\n\nIt never became the national holiday. The British won the continent, and their harvest festival won the calendar.\n\nBut in the first permanent European settlement in North America, the first thanksgiving dinner was probably pork and chickpea stew.\n",
     "teaser": "Fifty-six years before Plymouth, there was a thanksgiving dinner here. It was probably stew.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/st-augustine-the-first-thanksgiving-menu/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 68.8,
+        "audioBytes": 1101365
+      }
+    ],
     "pronunciations": [
       {
         "written": "Cocido",
@@ -16922,14 +17055,7 @@ export const LIBRARY: readonly Echo[] = [
       "thanksgiving",
       "food"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/st-augustine-the-first-thanksgiving-menu",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "st-augustine-the-free-town-in-the-marsh",
@@ -16945,7 +17071,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 91,
+    "durationS": 89,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -16955,6 +17081,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look out over the marsh. Somewhere out there was a town that disappeared, and was not found again for more than two centuries.\n\nBy the late 1600s, people enslaved by the British had learned something. If they escaped to Spanish Florida, embraced Catholicism and pledged to serve the Spanish Crown, they could be free.\n\nIn 1738 the governor granted them land, about two miles north of St. Augustine. They built their own fort, with earthen walls and thatched huts. Thirty-eight men and their families. About one hundred people.\n\nIts full name was Gracia Real de Santa Teresa de Mosé. North America's first free, legally sanctioned Black community.\n\nIn return for the land, its militia would help guard the northern approaches to St. Augustine. In 1740 a British army captured the fort. A few weeks later, its leader, Francisco Menéndez, led a surprise attack and took it back.\n\nWhen Spain gave up Florida in 1763, the people of Mosé moved to Cuba. The fort fell into ruin, then disappeared.\n\nIt was not found again until 1986, when archaeologists dug it out of the marsh.\n\nYou still cannot walk on the site itself. It is out there, under the grass and the water. The people who knew where it was had long since sailed away.\n",
     "teaser": "Out in this marsh was a town of free Black families, guarding the road to St. Augustine.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/st-augustine-the-free-town-in-the-marsh/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 89.2,
+        "audioBytes": 1428627
+      }
+    ],
     "pronunciations": [
       {
         "written": "Mosé",
@@ -16972,14 +17106,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "underground-railroad"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/st-augustine-the-free-town-in-the-marsh",
-        "durationS": 91
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "st-augustine-the-inlet-of-slaughters",
@@ -16995,7 +17122,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 92,
+    "durationS": 87,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17005,6 +17132,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look across the river at the little stone fort. It is almost two hundred years newer than the name of this water.\n\nThe name is Matanzas. In Spanish, it means slaughters.\n\nIn September 1565, a French fleet sailed to wipe out the brand new Spanish settlement at St. Augustine. A hurricane caught the ships and wrecked them far down the Florida coast.\n\nThe survivors walked north, trying to get back to their own fort. An inlet near here stopped them.\n\nThe Spanish commander, Pedro Menéndez, marched down with seventy soldiers. He told the French their fort had already been captured, and urged them to surrender. He made no promises. They had lost most of their food and weapons in the wreck, and they gave up.\n\nOne hundred and eleven Frenchmen were killed. Sixteen were spared, among them a few who said they were Catholic, and four craftsmen the new town needed.\n\nTwo weeks later, more survivors reached the inlet, among them their commander, Jean Ribault. On the twelfth of October they surrendered too. This time, one hundred and thirty-four were killed.\n\nWhy? Orders, religion, or something colder. With no new supplies until spring, there may not have been food for everyone.\n\nThe fort came much later. The name never left.\n",
     "teaser": "The little fort across the water is newer than the name of the river it guards.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/st-augustine-the-inlet-of-slaughters/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 86.5,
+        "audioBytes": 1384741
+      }
+    ],
     "pronunciations": [
       {
         "written": "Matanzas",
@@ -17025,14 +17160,7 @@ export const LIBRARY: readonly Echo[] = [
       "huguenots",
       "military"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/st-augustine-the-inlet-of-slaughters",
-        "durationS": 92
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "st-augustine-wild-cats-window",
@@ -17048,7 +17176,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 81,
+    "durationS": 77,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17058,6 +17186,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the southwest corner of the fort. In the autumn of 1837, the rooms on this side held prisoners.\n\nThey were Seminole leaders, warriors and their families. They had come to a parley under a white flag of truce, and been surrounded and taken. Over two hundred and thirty of them were brought here. Among them was the war leader Osceola, already very ill.\n\nAnother was Coacoochee, called Wild Cat.\n\nOn the night of the twenty-ninth of November, Wild Cat led an escape. Army records say the prisoners climbed out of a window in a room in the southwest corner. Twenty of them got away.\n\nWild Cat told it differently. He said he climbed out of a window, but only he and one other man escaped. Some historians doubt anyone could get through windows that size.\n\nNo one truly knows what happened that night.\n\nWhat is known is what came after. Wild Cat went back to the war, and led many victories. Most members of the Seminole Tribe of Florida today trace their heritage to those twenty prisoners.\n\nThe war ended without a treaty. The Seminoles still call themselves the Unconquered People.\n",
     "teaser": "In 1837 twenty Seminole prisoners got out of this fort. Nobody agrees how.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/st-augustine-wild-cats-window/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 76.8,
+        "audioBytes": 1230096
+      }
+    ],
     "pronunciations": [
       {
         "written": "Coacoochee",
@@ -17079,14 +17215,7 @@ export const LIBRARY: readonly Echo[] = [
       "osceola",
       "military"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/st-augustine-wild-cats-window",
-        "durationS": 81
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "st-pauls-still-standing",
@@ -25507,4 +25636,4 @@ export const ROUTES: readonly Route[] = [
 
 // What a person has really checked, as authored, before the demo override above. The
 // "true story" mark reads this, never the overridden status (`truth.ts` in the engine).
-export const VERIFIED_IDS: ReadonlySet<string> = new Set(["bald-head-captain-charlie-lit-both","bald-head-the-builder-who-lost-money","bald-head-the-prisms-coming-home","bald-head-the-swim-to-southport","bald-head-the-woman-on-the-shore","carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","caswell-beach-a-hat-from-a-helicopter","caswell-beach-a-lighthouse-poured-in-a-week","caswell-beach-the-long-day-of-dunbar-davis","caswell-beach-the-night-caswell-blew-up","caswell-beach-the-second-brightest-light","caswell-beach-yachts-on-submarine-watch","dc-a-country-he-never-saw","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-priced-by-size","dc-somewhere-to-hide","dc-the-ballroom-ward","dc-the-caretaker-heard-nothing","dc-the-cherry-tree-rebellion","dc-the-first-are-with-the-last","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-ladies-waiting-room","dc-the-man-who-found-the-bolts","dc-the-map-underfoot","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-plaque-on-the-fence","dc-the-starting-line-came-later","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-three-names-for-one-wing","dc-to-thee-we-sing","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-white-before-the-fire","dc-written-in-the-dark","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","kure-beach-five-shells-in-the-dark","oak-island-five-left-standing","oak-island-how-oak-island-became-an-island","oak-island-the-fence-on-the-dune","philadelphia-a-firehouse-on-a-market","philadelphia-a-steeple-paid-by-lottery","philadelphia-as-much-as-anyone-knows","philadelphia-congress-started-at-the-tavern","philadelphia-dorothy-todd-widow","philadelphia-hamlet-paid-for-the-hospital","philadelphia-he-left-the-year-blank","philadelphia-no-hatch-wide-enough","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-penn-on-the-tower","philadelphia-read-aloud-in-the-yard","philadelphia-rising-or-setting","philadelphia-shoes-for-bob","philadelphia-the-baby-over-the-bank-door","philadelphia-the-bell-went-to-allentown","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-first-vote-was-the-room","philadelphia-the-good-china","philadelphia-the-market-under-the-trains","philadelphia-the-room-upstairs","philadelphia-the-street-that-was-a-creek","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-washington-left-last","philadelphia-what-her-grandson-said","southport-a-fish-house-plays-a-fish-shack","southport-a-wretched-little-place","southport-carved-in-imperishable-stone","southport-croaker-queen","southport-one-floor-below-the-cells","southport-pay-on-your-way-out","southport-red-over-white","southport-the-bent-oak","southport-the-city-of-the-south-atlantic","southport-the-festival-of-free-men","southport-the-gentleman-giant","southport-the-harp-that-kept-playing","southport-the-last-cupola","southport-the-old-man-and-the-boy","southport-the-reporter-who-could-not-hear","southport-the-reverends-church","southport-the-station-in-the-river","southport-the-watch-on-the-river","southport-the-woman-who-raised-the-flags","southport-worse-than-hazel","the-distance-across-the-street","the-lady-in-grey","the-prison-corridor","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);
+export const VERIFIED_IDS: ReadonlySet<string> = new Set(["annapolis-a-port-called-napolis","annapolis-a-private-citizen-by-christmas","annapolis-married-in-that-house","annapolis-the-dome-was-a-lookout","asheville-a-dome-made-of-tile","asheville-a-government-at-the-inn","asheville-a-leg-in-a-boot","asheville-a-yodel-on-the-top-floor","asheville-the-boardinghouse-called-dixieland","asheville-the-fire-at-highland-hospital","asheville-the-man-who-walked-a-wheel","asheville-the-ymi","bald-head-captain-charlie-lit-both","bald-head-the-builder-who-lost-money","bald-head-the-prisms-coming-home","bald-head-the-swim-to-southport","bald-head-the-woman-on-the-shore","carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","caswell-beach-a-hat-from-a-helicopter","caswell-beach-a-lighthouse-poured-in-a-week","caswell-beach-the-long-day-of-dunbar-davis","caswell-beach-the-night-caswell-blew-up","caswell-beach-the-second-brightest-light","caswell-beach-yachts-on-submarine-watch","charlotte-a-city-of-tents","charlotte-a-navy-yard-far-from-the-sea","charlotte-a-vein-under-south-end","charlotte-brought-to-you-by-a-laxative","charlotte-fred-in-the-arcade","charlotte-roots-in-north-carolina","charlotte-strictly-stock","charlotte-the-declaration-nobody-can-find","charlotte-the-mint-that-moved","charlotte-the-sandwich-from-crescent-avenue","charlotte-the-wall-in-front-of-the-courthouse","charlotte-twenty-beds-under-the-stadium","chicago-allowed-to-carry-twenty-five-hundred","chicago-sixty-five-degrees-then-twenty-three-inches","chicago-the-architect-went-to-the-seaside","chicago-the-case-that-outlived-the-pipe","chicago-the-cow-that-took-the-blame","chicago-the-garbage-inspector","chicago-the-porters-contract","chicago-the-sign-says-end","chicago-the-strike-that-stopped-the-trains","chicago-under-the-bleachers","cleveland-no-more-protection","cleveland-the-missing-letter","cleveland-the-river-that-burned","dc-a-country-he-never-saw","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-priced-by-size","dc-somewhere-to-hide","dc-the-ballroom-ward","dc-the-caretaker-heard-nothing","dc-the-cherry-tree-rebellion","dc-the-first-are-with-the-last","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-ladies-waiting-room","dc-the-man-who-found-the-bolts","dc-the-map-underfoot","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-plaque-on-the-fence","dc-the-starting-line-came-later","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-three-names-for-one-wing","dc-to-thee-we-sing","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-white-before-the-fire","dc-written-in-the-dark","deadwood-before-she-was-calamity","deadwood-his-back-to-the-door","deadwood-the-champions-of-america","fairfax-she-married-the-man-who-arrested-her","fairfax-thirty-killed-said-the-picture","fall-river-a-description-without-a-photograph","fall-river-the-granite-mill-fire","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","jerome-a-ghost-town-on-purpose","jerome-sixty-seven-men-in-cattle-cars","jerome-the-day-the-stone-melted","jerome-water-from-seven-miles-away","key-west-a-house-named-for-mercedes","key-west-ice-from-the-north","key-west-the-fort-that-lost-the-sea","key-west-the-guest-who-was-not-there","key-west-the-key-west-uniform","key-west-the-sailor-with-the-oar","key-west-the-studio-across-the-catwalk","kure-beach-five-shells-in-the-dark","memphis-before-breakfast","memphis-it-worked-when-they-stopped","memphis-kid-douglas","memphis-the-amp-on-the-roof","memphis-the-b-side","memphis-the-mountaintop","memphis-the-ride-home","memphis-the-song-that-mocked-mr-crump","memphis-they-smashed-the-press","nashville-a-hall-built-by-song","nashville-she-bit-the-conductor","nashville-six-encores","nashville-the-architect-in-the-wall","nashville-the-colored-lights","nashville-the-fort-nobody-attacked","nashville-the-harmonica-wizard","nashville-the-saloon-keepers-tabernacle","nashville-the-united-hilton","nashville-tile-thirteen","nashville-when-the-cumberland-came-up","nashville-yellow-roses-and-red","newport-a-door-in-the-floor","newport-a-year-of-waiting","newport-the-line-washington-borrowed","newport-the-tower-nobody-agrees-on","oak-island-five-left-standing","oak-island-how-oak-island-became-an-island","oak-island-the-fence-on-the-dune","pawhuska-guardian-of-his-own-children","pawhuska-the-missing-panel","philadelphia-a-firehouse-on-a-market","philadelphia-a-steeple-paid-by-lottery","philadelphia-as-much-as-anyone-knows","philadelphia-congress-started-at-the-tavern","philadelphia-dorothy-todd-widow","philadelphia-hamlet-paid-for-the-hospital","philadelphia-he-left-the-year-blank","philadelphia-no-hatch-wide-enough","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-penn-on-the-tower","philadelphia-read-aloud-in-the-yard","philadelphia-rising-or-setting","philadelphia-shoes-for-bob","philadelphia-the-baby-over-the-bank-door","philadelphia-the-bell-went-to-allentown","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-first-vote-was-the-room","philadelphia-the-good-china","philadelphia-the-market-under-the-trains","philadelphia-the-room-upstairs","philadelphia-the-street-that-was-a-creek","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-washington-left-last","philadelphia-what-her-grandson-said","saint-paul-almost-pigs-eye","saint-paul-half-a-mile-of-cellar","saint-paul-the-end-of-the-river-road","saint-paul-the-spirit-house","salem-a-life-in-one-house","salem-a-wharf-built-on-mud","salem-the-judges-house","salem-the-ship-that-missed-the-war","salem-the-surveyor-who-lost-his-job","san-antonio-a-day-at-the-mission","san-antonio-a-window-for-rosa","san-antonio-one-governor-was-enough","san-antonio-spirits-with-flaming-swords","san-antonio-the-army-gave-it-the-hump","san-antonio-the-chili-queens-plaza","san-antonio-the-eye-with-a-mustache","san-antonio-the-mission-that-kept-moving","san-antonio-twelve-thousand-pecan-shellers","san-antonio-water-over-the-creek","san-antonio-wooden-cannons-on-the-long-barrack","san-francisco-a-message-on-the-water-tower","san-francisco-a-toast-to-the-wrong-president","san-francisco-filled-by-the-tide","san-francisco-forty-two-tons-of-powder","san-francisco-hits-eight-and-nine","san-francisco-studying-in-the-bathroom","san-francisco-the-arch-over-the-fort","san-francisco-the-first-rangers-on-this-hill","san-francisco-the-lighthouse-with-a-flat-top","san-francisco-the-unfinished-mosaic","san-francisco-two-sisters-on-the-same-rocks","santa-fe-a-tank-called-the-mud-puppy","santa-fe-ben-hur-after-dark","santa-fe-the-carpenter-who-vanished","santa-fe-the-door-to-the-hill","santa-fe-the-end-of-the-trail","santa-fe-the-mother-ditch","santa-fe-what-the-tree-rings-say","santa-fe-when-the-plaza-was-a-pueblo","southport-a-fish-house-plays-a-fish-shack","southport-a-wretched-little-place","southport-carved-in-imperishable-stone","southport-croaker-queen","southport-one-floor-below-the-cells","southport-pay-on-your-way-out","southport-red-over-white","southport-the-bent-oak","southport-the-city-of-the-south-atlantic","southport-the-festival-of-free-men","southport-the-gentleman-giant","southport-the-harp-that-kept-playing","southport-the-last-cupola","southport-the-old-man-and-the-boy","southport-the-reporter-who-could-not-hear","southport-the-reverends-church","southport-the-station-in-the-river","southport-the-watch-on-the-river","southport-the-woman-who-raised-the-flags","southport-worse-than-hazel","st-augustine-a-hotel-poured-from-shells","st-augustine-a-wall-of-seashells","st-augustine-acid-in-the-pool","st-augustine-drawings-on-ledger-paper","st-augustine-the-first-thanksgiving-menu","st-augustine-the-free-town-in-the-marsh","st-augustine-the-inlet-of-slaughters","st-augustine-wild-cats-window","the-distance-across-the-street","the-lady-in-grey","the-prison-corridor","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);

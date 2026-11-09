@@ -9,7 +9,7 @@ at: { lat: 42.52158, lng: -70.89888 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 60
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ script: |
 pronunciations:
   - written: "Corwin"
     say: "KOR-win"
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "People call it the Witch House."
@@ -84,3 +84,53 @@ sources:
     url: https://www.loc.gov/item/today-in-history/march-01/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/salem-the-judges-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.1
+    audioBytes: 882354
+    transcript:
+      totalS: 55.1
+      lines:
+        - text: Look at the dark house with the steep gables.
+          atS: 0
+          durationS: 2.79
+        - text: People call it the Witch House.
+          atS: 3.11
+          durationS: 2.18
+        - text: No witch ever lived in it.
+          atS: 5.74
+          durationS: 1.85
+        - text: It was the home of Jonathan Corwin, a judge.
+          atS: 8.28
+          durationS: 3.47
+        - text: In 1692 he sat on the special court that heard the witchcraft cases.
+          atS: 12.45
+          durationS: 5.43
+        - text: It had begun on the first of March, when Salem authorities questioned three women.
+          atS: 18.32
+          durationS: 4.78
+        - text: Within months more than a hundred and fifty people had been jailed.
+          atS: 23.71
+          durationS: 3.8
+        - text: The court Corwin sat on sentenced nineteen people to death.
+          atS: 28.02
+          durationS: 4.39
+        - text: By the end of October the governor had shut the court down.
+          atS: 32.91
+          durationS: 2.88
+        - text: Nineteen years later a law restored the good names of the accused.
+          atS: 36.3
+          durationS: 4.06
+        - text: The house has moved since then.
+          atS: 40.69
+          durationS: 1.85
+        - text: When the street was widened in the nineteen forties, it was shifted about thirty-five feet.
+          atS: 42.71
+          durationS: 5.45
+        - text: The judge's house is the only building in Salem with a direct tie to the trials.
+          atS: 48.4
+          durationS: 4.71
+        - text: It still carries the wrong name.
+          atS: 53.15
+          durationS: 1.93

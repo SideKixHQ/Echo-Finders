@@ -9,7 +9,7 @@ at: { lat: 29.89735, lng: -81.31205 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 81
+durationS: 77
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -39,7 +39,7 @@ pronunciations:
     say: oss-ee-OH-luh
   - written: Seminole
     say: SEM-ih-nole
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In the autumn of 1837, the rooms on this side held prisoners."
@@ -99,3 +99,68 @@ sources:
     url: https://www.nps.gov/casa/learn/historyculture/seminole-incarceration.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/st-augustine-wild-cats-window/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76.8
+    audioBytes: 1230096
+    transcript:
+      totalS: 76.8
+      lines:
+        - text: Look at the southwest corner of the fort.
+          atS: 0
+          durationS: 2.22
+        - text: In the autumn of 1837, the rooms on this side held prisoners.
+          atS: 2.39
+          durationS: 4.07
+        - text: They were Seminole leaders, warriors and their families.
+          atS: 6.79
+          durationS: 4.23
+        - text: They had come to a parley under a white flag of truce, and been surrounded and taken.
+          atS: 11.4
+          durationS: 4.75
+        - text: Over two hundred and thirty of them were brought here.
+          atS: 16.59
+          durationS: 2.83
+        - text: Among them was the war leader Osceola, already very ill.
+          atS: 20.03
+          durationS: 5.73
+        - text: Another was Coacoochee, called Wild Cat.
+          atS: 26.27
+          durationS: 4.31
+        - text: On the night of the twenty-ninth of November, Wild Cat led an escape.
+          atS: 31.02
+          durationS: 4.13
+        - text: Army records say the prisoners climbed out of a window in a room in the southwest corner.
+          atS: 35.6
+          durationS: 4.78
+        - text: Twenty of them got away.
+          atS: 40.66
+          durationS: 1.52
+        - text: Wild Cat told it differently.
+          atS: 42.42
+          durationS: 1.89
+        - text: He said he climbed out of a window, but only he and one other man escaped.
+          atS: 44.76
+          durationS: 4.02
+        - text: Some historians doubt anyone could get through windows that size.
+          atS: 49.21
+          durationS: 3.58
+        - text: No one truly knows what happened that night.
+          atS: 53.17
+          durationS: 2.57
+        - text: What is known is what came after.
+          atS: 56.06
+          durationS: 2.4
+        - text: Wild Cat went back to the war, and led many victories.
+          atS: 59.58
+          durationS: 3.64
+        - text: Most members of the Seminole Tribe of Florida today trace their heritage to those twenty prisoners.
+          atS: 63.67
+          durationS: 6.28
+        - text: The war ended without a treaty.
+          atS: 70.27
+          durationS: 2.16
+        - text: The Seminoles still call themselves the Unconquered People.
+          atS: 72.76
+          durationS: 4.05

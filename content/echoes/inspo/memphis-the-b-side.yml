@@ -12,7 +12,7 @@ inspo:
   kind: creation
   evidence: site
 format: short
-durationS: 78
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -39,7 +39,7 @@ script: |
   It was the first time those four had ever played together in that line up. They called it Green Onions.
 
   A B side, from a jam, after a jingle session failed, on the day the bank was shut.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In 1960 a small record label moved into a former movie theater at this address, 926 East McLemore."
@@ -96,3 +96,68 @@ sources:
     url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Booker-T-and-the-MGs_Green-Onions.pdf
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/memphis-the-b-side/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.7
+    audioBytes: 1149012
+    transcript:
+      totalS: 71.7
+      lines:
+        - text: Look up at the marquee.
+          atS: 0
+          durationS: 1.41
+        - text: In 1960 a small record label moved into a former movie theater at this address, 926 East McLemore.
+          atS: 1.92
+          durationS: 8.25
+        - text: It was called Satellite then.
+          atS: 10.68
+          durationS: 1.79
+        - text: Soon it was renamed Stax.
+          atS: 12.85
+          durationS: 1.94
+        - text: The owner, Jim Stewart, still worked at a bank.
+          atS: 15.12
+          durationS: 2.96
+        - text: His sister, Estelle Axton, ran a record shop in the old concession stand, so she could hear what the kids were buying.
+          atS: 18.4
+          durationS: 7.11
+        - text: In the summer of 1962, four musicians were called in to back a singer on a commercial jingle.
+          atS: 25.95
+          durationS: 6.04
+        - text: It was a Sunday, so the bank was closed.
+          atS: 32.31
+          durationS: 2.47
+        - text: The session fell apart.
+          atS: 35.11
+          durationS: 1.36
+        - text: So they started jamming on a slow blues, and Stewart recorded it without telling them.
+          atS: 36.68
+          durationS: 4.97
+        - text: He wanted to release it.
+          atS: 42.16
+          durationS: 1.39
+        - text: But a single needs a B side.
+          atS: 43.7
+          durationS: 1.96
+        - text: Booker T.
+          atS: 46.27
+          durationS: 0.59
+        - text: Jones had a little riff he had been playing on the piano at his mother's house.
+          atS: 46.89
+          durationS: 3.92
+        - text: He tried it on the Hammond organ instead.
+          atS: 51.14
+          durationS: 2.38
+        - text: They worked out the arrangement, and cut it in two or three takes.
+          atS: 54.22
+          durationS: 3.63
+        - text: It was the first time those four had ever played together in that line up.
+          atS: 58.36
+          durationS: 4.17
+        - text: They called it Green Onions.
+          atS: 62.97
+          durationS: 2
+        - text: A B side, from a jam, after a jingle session failed, on the day the bank was shut.
+          atS: 65.57
+          durationS: 6.18

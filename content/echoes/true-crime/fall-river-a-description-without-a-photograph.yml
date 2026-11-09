@@ -9,7 +9,7 @@ at: { lat: 41.6989, lng: -71.156 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 45
+durationS: 42
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -35,12 +35,12 @@ script: |
   Her name lives on anyway, in the rhyme about forty whacks.
 
   A jury cleared her. The rhyme never has.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: exonerated
-  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedBy: "James (owner), approved 2026-11-09"
   reviewedAt: "2026-11-09"
   contentWarning: "This echo concerns a double murder. No violence is described."
 claims:
@@ -79,3 +79,56 @@ sources:
     url: https://www.loc.gov/item/99403183/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/fall-river-a-description-without-a-photograph/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 42.3
+    audioBytes: 677972
+    transcript:
+      totalS: 42.3
+      lines:
+        - text: This house is famous for a crime.
+          atS: 0
+          durationS: 2.24
+        - text: Before that, here is how its best known resident once described herself.
+          atS: 2.75
+          durationS: 4.1
+        - text: In June 1890 a woman from Fall River signed a passport application, to sail for Europe.
+          atS: 7.36
+          durationS: 5.94
+        - text: Passports did not need photographs then.
+          atS: 13.63
+          durationS: 2.31
+        - text: So she wrote a description instead.
+          atS: 16.11
+          durationS: 1.93
+        - text: Five feet three inches tall.
+          atS: 18.43
+          durationS: 1.9
+        - text: Grey eyes.
+          atS: 20.54
+          durationS: 0.99
+        - text: Light brown hair.
+          atS: 21.77
+          durationS: 1.17
+        - text: And a full face.
+          atS: 23
+          durationS: 1.27
+        - text: Her name was Lizzie Borden.
+          atS: 24.51
+          durationS: 1.73
+        - text: Two years later she was arrested and tried for the murder of her father, Andrew, and her stepmother, Abby.
+          atS: 26.93
+          durationS: 6.04
+        - text: A jury acquitted her.
+          atS: 33.58
+          durationS: 1.38
+        - text: Her name lives on anyway, in the rhyme about forty whacks.
+          atS: 35.17
+          durationS: 3.88
+        - text: A jury cleared her.
+          atS: 39.37
+          durationS: 1.21
+        - text: The rhyme never has.
+          atS: 40.85
+          durationS: 1.45

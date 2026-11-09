@@ -28,7 +28,7 @@ script: |
   Buffalo Soldiers did that work in the Sierra in 1899, 1903 and 1904.
 
   So when you think of the first park rangers in the Sierra Nevada, some of them are here, on this hill.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "More than four hundred of the men buried at the Presidio were Buffalo Soldiers."
@@ -83,3 +83,44 @@ sources:
     url: https://www.nps.gov/prsf/learn/historyculture/san-francisco-national-cemetery.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-the-first-rangers-on-this-hill/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.1
+    audioBytes: 1105963
+    transcript:
+      totalS: 69.1
+      lines:
+        - text: Look along the rows of white headstones on this slope.
+          atS: 0
+          durationS: 2.93
+        - text: More than four hundred of the men buried at the Presidio were Buffalo Soldiers.
+          atS: 3.44
+          durationS: 4.91
+        - text: In 1866, Congress created six segregated regiments of Black soldiers in the regular Army, soon consolidated into four.
+          atS: 8.95
+          durationS: 9.82
+        - text: They became known as the Buffalo Soldiers.
+          atS: 19.16
+          durationS: 2.35
+        - text: The nickname probably started on the Western frontier with the Cheyenne, and it was meant as high praise.
+          atS: 22.01
+          durationS: 6.13
+        - text: Soldiers of the 24th Infantry and the 9th Cavalry were garrisoned here at the Presidio.
+          atS: 28.75
+          durationS: 5.94
+        - text: Before there was a National Park Service, the Army protected the first national parks.
+          atS: 35.5
+          durationS: 5.43
+        - text: Soldiers from the Presidio spent their summers in Yosemite and Sequoia.
+          atS: 41.26
+          durationS: 4.41
+        - text: They blazed trails, built roads, made maps, put out fires, and kept poachers and loggers at bay.
+          atS: 46.12
+          durationS: 8.14
+        - text: Buffalo Soldiers did that work in the Sierra in 1899, 1903 and 1904.
+          atS: 55.07
+          durationS: 6.88
+        - text: So when you think of the first park rangers in the Sierra Nevada, some of them are here, on this hill.
+          atS: 62.55
+          durationS: 6.5

@@ -9,7 +9,7 @@ at: { lat: 38.9788, lng: -76.4908 }
 triggerRadiusKm: 0.07
 category: history
 format: short
-durationS: 52
+durationS: 50
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   He left at dawn the next morning for Mount Vernon. He got home before nightfall on Christmas Eve.
 
   A private citizen, for the first time in almost nine years.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The original dome was torn down in 1785, and this larger one went up after it."
@@ -67,3 +67,41 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md0000/md0068/data/md0068data.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/annapolis-a-private-citizen-by-christmas/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 49.5
+    audioBytes: 792493
+    transcript:
+      totalS: 49.5
+      lines:
+        - text: Look up at the dome.
+          atS: 0
+          durationS: 1.37
+        - text: It was not there when this story happened.
+          atS: 2.18
+          durationS: 2.54
+        - text: The original dome was torn down in 1785, and this larger one went up after it.
+          atS: 5.33
+          durationS: 6.24
+        - text: When the man in this story came here in 1783, the building was unfinished, and the roof leaked.
+          atS: 12.38
+          durationS: 6.47
+        - text: For a few months it was the capitol of the United States, because Congress was meeting inside.
+          atS: 19.45
+          durationS: 5.94
+        - text: On the twenty-third of December, George Washington came into the Senate chamber and resigned his commission as commander in chief of the Continental Army.
+          atS: 25.83
+          durationS: 8.57
+        - text: The war was over, and he was giving the army back.
+          atS: 35.51
+          durationS: 3.15
+        - text: He left at dawn the next morning for Mount Vernon.
+          atS: 39.47
+          durationS: 2.72
+        - text: He got home before nightfall on Christmas Eve.
+          atS: 43
+          durationS: 2.52
+        - text: A private citizen, for the first time in almost nine years.
+          atS: 45.91
+          durationS: 3.55

@@ -9,7 +9,7 @@ at: { lat: 36.16125, lng: -86.77885 }
 triggerRadiusKm: 0.05
 category: built
 format: short
-durationS: 76
+durationS: 75
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   Then the Grand Ole Opry moved in, and stayed until 1974. People came to call it the church of country music.
 
   So the saloon keeper did get his church. It just ended up full on a Saturday night.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Thomas Ryman ran a line of steamboats on the Cumberland River, and a large saloon here in Nashville."
@@ -87,3 +87,56 @@ sources:
     url: https://home.nps.gov/subjects/nationalhistoriclandmarks/guide.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-the-saloon-keepers-tabernacle/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.6
+    audioBytes: 1194988
+    transcript:
+      totalS: 74.6
+      lines:
+        - text: Look at this old brick hall with its tall arched windows.
+          atS: 0
+          durationS: 3.37
+        - text: It was built for preaching, by a man who owned a saloon.
+          atS: 3.88
+          durationS: 3.4
+        - text: Thomas Ryman ran a line of steamboats on the Cumberland River, and a large saloon here in Nashville.
+          atS: 7.88
+          durationS: 5.75
+        - text: In 1885 he fell under the preaching of a revivalist named Sam Jones, and he was converted.
+          atS: 14.23
+          durationS: 6.4
+        - text: After that he set out to build the city a great hall for preaching, open to every denomination.
+          atS: 21.33
+          durationS: 7.01
+        - text: Work started in 1889.
+          atS: 29.04
+          durationS: 2.46
+        - text: It was dedicated in 1892 as the Union Gospel Tabernacle, and Ryman carried much of the hundred thousand dollar debt himself.
+          atS: 31.88
+          durationS: 8.81
+        - text: When he died, in 1904, four thousand people came here for his memorial.
+          atS: 41.13
+          durationS: 5.29
+        - text: Sam Jones preached it, and proposed the building take his name.
+          atS: 46.94
+          durationS: 3.81
+        - text: For years it was the largest auditorium in the South.
+          atS: 51.13
+          durationS: 3.09
+        - text: Soon it was used less for revivals than for conventions, concerts and stage shows.
+          atS: 54.66
+          durationS: 5.25
+        - text: Then the Grand Ole Opry moved in, and stayed until 1974.
+          atS: 60.6
+          durationS: 4.68
+        - text: People came to call it the church of country music.
+          atS: 65.79
+          durationS: 2.97
+        - text: So the saloon keeper did get his church.
+          atS: 69.01
+          durationS: 2.46
+        - text: It just ended up full on a Saturday night.
+          atS: 71.91
+          durationS: 2.72

@@ -9,7 +9,7 @@ at: { lat: 41.6917, lng: -87.6085 }
 triggerRadiusKm: 0.1
 category: people
 format: short
-durationS: 84
+durationS: 78
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   In 1937, the Pullman Company signed a contract with the Brotherhood. Higher pay, better job security, and a way to bring grievances. It was the first major labor agreement between an African American union and a corporation.
 
   This town was built to prove a company could look after its workers. The porters proved the workers could make the company sign.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "On the railroads of that time, Black workers were mostly confined to service jobs."
@@ -73,3 +73,59 @@ sources:
     url: https://www.nps.gov/pull/learn/historyculture/the-pullman-story-part-2.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/chicago-the-porters-contract/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77.6
+    audioBytes: 1243471
+    transcript:
+      totalS: 77.6
+      lines:
+        - text: The Pullman Company did not only build sleeping cars.
+          atS: 0
+          durationS: 3.39
+        - text: It ran them, on railroads all over the country, and it needed porters to serve the passengers.
+          atS: 4.09
+          durationS: 5.93
+        - text: On the railroads of that time, Black workers were mostly confined to service jobs.
+          atS: 11.13
+          durationS: 5.04
+        - text: Pullman was the nation's largest employer of African Americans.
+          atS: 16.78
+          durationS: 3.96
+        - text: Porters were forty-four percent of the people running its cars.
+          atS: 21.12
+          durationS: 3.59
+        - text: In 1925, the porters founded a union, the Brotherhood of Sleeping Car Porters.
+          atS: 25.09
+          durationS: 6.01
+        - text: For four decades it was led by A.
+          atS: 31.8
+          durationS: 2.32
+        - text: Philip Randolph.
+          atS: 34.15
+          durationS: 1.09
+        - text: He did not work for Pullman, so the company could not punish him.
+          atS: 35.56
+          durationS: 4.08
+        - text: The union faced a racist industry and an anti-union corporation.
+          atS: 40.15
+          durationS: 4.53
+        - text: At first it also faced fear in its own community, because Pullman offered jobs to African Americans, and people were afraid of losing them.
+          atS: 45
+          durationS: 8.9
+        - text: In 1937, the Pullman Company signed a contract with the Brotherhood.
+          atS: 54.51
+          durationS: 4.63
+        - text: Higher pay, better job security, and a way to bring grievances.
+          atS: 59.38
+          durationS: 4.4
+        - text: It was the first major labor agreement between an African American union and a corporation.
+          atS: 64.3
+          durationS: 5.34
+        - text: This town was built to prove a company could look after its workers.
+          atS: 70.24
+          durationS: 3.73
+        - text: The porters proved the workers could make the company sign.
+          atS: 74.35
+          durationS: 3.3

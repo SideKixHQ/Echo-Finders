@@ -9,7 +9,7 @@ at: { lat: 29.33282, lng: -98.46167 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 69
+durationS: 67
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   It has come through major floods for more than two hundred and seventy-five years. It is the oldest Spanish aqueduct in the United States.
 
   And it still works. Look along the top. Water can still be seen flowing over it, on its way to Mission Espada.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at the low stone bridge with two arches over the creek."
@@ -80,3 +80,53 @@ sources:
     url: https://home.nps.gov/saan/learn/news/espada-aqueduct-repair-hptc.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-antonio-water-over-the-creek/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.7
+    audioBytes: 1067928
+    transcript:
+      totalS: 66.7
+      lines:
+        - text: Look at the low stone bridge with two arches over the creek.
+          atS: 0
+          durationS: 3.75
+        - text: It is not for people.
+          atS: 4.35
+          durationS: 1.47
+        - text: It is for water.
+          atS: 6.27
+          durationS: 1.29
+        - text: The people of the missions began digging irrigation ditches, called acequias, even before the mission walls or the stone churches were built.
+          atS: 8.26
+          durationS: 8.38
+        - text: A dam turned water out of the San Antonio River, and gravity carried it to the fields.
+          atS: 17.33
+          durationS: 5.52
+        - text: When the ditch for Mission Espada ran into this creek, the builders needed a way across.
+          atS: 23.55
+          durationS: 5.08
+        - text: Before the aqueduct, they would have used hollowed-out logs.
+          atS: 29.44
+          durationS: 3.64
+        - text: Then, between 1740 and 1745, they built this.
+          atS: 33.53
+          durationS: 4.97
+        - text: Water flowed across the top in a channel, and rejoined the earthen ditch on the other side, on its way south to the mission and the farm fields.
+          atS: 39.2
+          durationS: 9.18
+        - text: It has come through major floods for more than two hundred and seventy-five years.
+          atS: 49.49
+          durationS: 4.62
+        - text: It is the oldest Spanish aqueduct in the United States.
+          atS: 54.56
+          durationS: 3.44
+        - text: And it still works.
+          atS: 58.27
+          durationS: 1.43
+        - text: Look along the top.
+          atS: 60.21
+          durationS: 1.18
+        - text: Water can still be seen flowing over it, on its way to Mission Espada.
+          atS: 61.78
+          durationS: 4.91

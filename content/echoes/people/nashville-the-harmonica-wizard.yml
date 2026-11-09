@@ -9,7 +9,7 @@ at: { lat: 36.16435, lng: -86.78375 }
 triggerRadiusKm: 0.05
 category: people
 format: short
-durationS: 69
+durationS: 62
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,7 +37,7 @@ script: |
 pronunciations:
   - written: DeFord
     say: dee-FORD
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In July 1939, the Grand Ole Opry moved into this hall, the War Memorial Auditorium."
@@ -91,3 +91,62 @@ sources:
     url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Grand-Ole-Opry_Kingsbury.pdf
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-the-harmonica-wizard/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 61.9
+    audioBytes: 991442
+    transcript:
+      totalS: 61.9
+      lines:
+        - text: In July 1939, the Grand Ole Opry moved into this hall, the War Memorial Auditorium.
+          atS: 0
+          durationS: 6.76
+        - text: For the first time, it charged admission.
+          atS: 7.14
+          durationS: 2.65
+        - text: Twenty-five cents.
+          atS: 10.17
+          durationS: 1.39
+        - text: That October, it went out on a radio network for the first time, to twenty-six stations across the South and Southwest.
+          atS: 12.26
+          durationS: 7.06
+        - text: One of the stars that night was DeFord Bailey, the only Black musician in the cast.
+          atS: 19.76
+          durationS: 4.99
+        - text: He stood less than five feet tall.
+          atS: 25.14
+          durationS: 2.18
+        - text: On the air, the host introduced him as our little mascot.
+          atS: 27.7
+          durationS: 3.29
+        - text: He was nothing of the kind.
+          atS: 31.43
+          durationS: 1.54
+        - text: By all accounts he was one of the most popular performers on the show.
+          atS: 33.35
+          durationS: 3.62
+        - text: On the harmonica, he could make a freight train pick up speed.
+          atS: 37.36
+          durationS: 3.55
+        - text: He could make a pack of hounds chase a fox, and the hunters call after them.
+          atS: 41.24
+          durationS: 4.2
+        - text: That night he played four numbers.
+          atS: 45.88
+          durationS: 2.53
+        - text: Nobody else on the bill played as many.
+          atS: 48.62
+          durationS: 2.01
+        - text: The same host had nicknamed him the Harmonica Wizard.
+          atS: 50.96
+          durationS: 3.11
+        - text: He was later elected to the Country Music Hall of Fame.
+          atS: 54.35
+          durationS: 3.19
+        - text: The microphone said mascot.
+          atS: 57.78
+          durationS: 2.03
+        - text: The audience said otherwise.
+          atS: 60.14
+          durationS: 1.76

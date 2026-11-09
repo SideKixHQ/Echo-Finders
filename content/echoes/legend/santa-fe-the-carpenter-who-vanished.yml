@@ -9,7 +9,7 @@ at: { lat: 35.6856, lng: -105.9377 }
 triggerRadiusKm: 0.05
 category: legend
 format: short
-durationS: 72
+durationS: 59
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -36,7 +36,7 @@ pronunciations:
     say: luh-RET-oh
   - written: Rochas
     say: roh-SHAH
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Inside this chapel, with its pointed Gothic arches, is a spiral staircase twenty feet high."
@@ -72,3 +72,56 @@ sources:
     url: https://www.nps.gov/places/loretto-chapel-chapel-of-our-lady-of-light.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/santa-fe-the-carpenter-who-vanished/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 59.1
+    audioBytes: 946302
+    transcript:
+      totalS: 59.1
+      lines:
+        - text: This is a legend, and you should hear it that way.
+          atS: 0
+          durationS: 2.53
+        - text: Inside this chapel, with its pointed Gothic arches, is a spiral staircase twenty feet high.
+          atS: 2.61
+          durationS: 5.52
+        - text: When the chapel was finished, around 1878, there was no way at all to get up to the choir loft.
+          atS: 8.24
+          durationS: 5.92
+        - text: According to tradition, a carpenter appeared.
+          atS: 14.28
+          durationS: 2.65
+        - text: Nobody knew his name.
+          atS: 17.04
+          durationS: 1.22
+        - text: He built the staircase, and then he vanished, without ever being paid.
+          atS: 18.38
+          durationS: 3.69
+        - text: The staircase has no central column.
+          atS: 22.19
+          durationS: 2.08
+        - text: It is held up by a curved stringer, and pinned together with wooden pegs instead of nails.
+          atS: 24.34
+          durationS: 5.34
+        - text: People called it miraculous.
+          atS: 29.83
+          durationS: 1.82
+        - text: The Sisters of Loretto, whose chapel it was, insisted the builder was Saint Joseph himself.
+          atS: 31.78
+          durationS: 6.2
+        - text: That is the legend, and it has never been proven.
+          atS: 38.19
+          durationS: 2.91
+        - text: The evidence points somewhere more ordinary.
+          atS: 41.31
+          durationS: 2.61
+        - text: Recent research suggests a French master carpenter, Francois-Jean Rochas.
+          atS: 44.24
+          durationS: 4.99
+        - text: Still, a stranger who builds a staircase nobody else could build, and leaves without his wages, is a very good story.
+          atS: 49.48
+          durationS: 6.63
+        - text: You can see why the sisters preferred theirs.
+          atS: 56.44
+          durationS: 2.63

@@ -9,7 +9,7 @@ at: { lat: 35.22583, lng: -80.88194 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 77
+durationS: 67
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   When the armistice came, on the eleventh of November 1918, the camp was already disappearing. Tents came down, trenches were filled in, and the land went back to civilian use.
 
   A city of sixty thousand came and went. The Dowd family's farmhouse stayed.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This old farmhouse is one of the few things left of a city made of tents."
@@ -93,3 +93,50 @@ sources:
     url: https://www.dncr.nc.gov/nc-historical-markers-guide-summer-2026/open
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-a-city-of-tents/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.8
+    audioBytes: 1070436
+    transcript:
+      totalS: 66.8
+      lines:
+        - text: This old farmhouse is one of the few things left of a city made of tents.
+          atS: 0
+          durationS: 4.04
+        - text: In 1917, with the country going to war, the Army built a training camp out here, three miles west of downtown.
+          atS: 4.55
+          durationS: 7.04
+        - text: It took six weeks to put up.
+          atS: 11.97
+          durationS: 1.74
+        - text: It was named Camp Greene, after Nathanael Greene, the general who forced the British out of the Carolinas in the Revolution.
+          atS: 14.1
+          durationS: 7.13
+        - text: It grew to six thousand acres of forest and cotton fields, bought from families like the Dowds, who lived in this house.
+          atS: 21.47
+          durationS: 7.12
+        - text: Recruits dug five miles of trenches into the red soil, to practice the kind of fighting going on in Europe.
+          atS: 28.76
+          durationS: 6.29
+        - text: At its peak, more than sixty thousand soldiers lived here.
+          atS: 35.43
+          durationS: 3.49
+        - text: In 1910, the whole of Charlotte had about thirty-four thousand people.
+          atS: 39.44
+          durationS: 4.31
+        - text: The first winter, rain and snow turned the camp into a red quagmire.
+          atS: 44.19
+          durationS: 4.83
+        - text: When the armistice came, on the eleventh of November 1918, the camp was already disappearing.
+          atS: 49.62
+          durationS: 6.36
+        - text: Tents came down, trenches were filled in, and the land went back to civilian use.
+          atS: 56.42
+          durationS: 5.3
+        - text: A city of sixty thousand came and went.
+          atS: 61.97
+          durationS: 2.3
+        - text: The Dowd family's farmhouse stayed.
+          atS: 64.48
+          durationS: 2.34

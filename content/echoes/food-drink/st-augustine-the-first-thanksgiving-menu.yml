@@ -9,7 +9,7 @@ at: { lat: 29.90508, lng: -81.31606 }
 triggerRadiusKm: 0.1
 category: food-drink
 format: short
-durationS: 75
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -39,7 +39,7 @@ pronunciations:
     say: seh-LOY
   - written: Menéndez
     say: meh-NEN-dez
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "It marks the place where the Spanish came ashore and founded St. Augustine, on the eighth of September, 1565."
@@ -81,3 +81,65 @@ sources:
     url: https://www.nps.gov/casa/learn/historyculture/the-first-thanksgiving.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/st-augustine-the-first-thanksgiving-menu/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.8
+    audioBytes: 1101365
+    transcript:
+      totalS: 68.8
+      lines:
+        - text: Look for the great cross by the water.
+          atS: 0
+          durationS: 2.23
+        - text: It marks the place where the Spanish came ashore and founded St.
+          atS: 2.93
+          durationS: 3.59
+        - text: Augustine, on the eighth of September, 1565.
+          atS: 6.54
+          durationS: 3.61
+        - text: The first thing they did was hold a Mass of thanksgiving.
+          atS: 10.84
+          durationS: 2.94
+        - text: Then came dinner.
+          atS: 14.11
+          durationS: 1.01
+        - text: Pedro Menéndez laid out a meal, and invited the people who already lived here, the Seloy.
+          atS: 15.72
+          durationS: 5.99
+        - text: So what was on the table?
+          atS: 21.99
+          durationS: 1.43
+        - text: Nobody wrote down the menu.
+          atS: 23.7
+          durationS: 1.67
+        - text: But from what the five Spanish ships were carrying, historians can make a good guess.
+          atS: 25.69
+          durationS: 4.91
+        - text: Cocido.
+          atS: 30.93
+          durationS: 1.99
+        - text: A stew of salted pork and garbanzo beans, with plenty of garlic.
+          atS: 33.3
+          durationS: 4.53
+        - text: Hard sea biscuits.
+          atS: 38
+          durationS: 1.31
+        - text: Red wine.
+          atS: 39.48
+          durationS: 0.82
+        - text: If the Seloy brought food of their own, there may have been turkey, venison, gopher tortoise, mullet, corn, beans and squash.
+          atS: 40.42
+          durationS: 8.53
+        - text: That was fifty-six years before the Pilgrims sat down at Plymouth.
+          atS: 49.4
+          durationS: 3.82
+        - text: It never became the national holiday.
+          atS: 53.92
+          durationS: 2.04
+        - text: The British won the continent, and their harvest festival won the calendar.
+          atS: 56.17
+          durationS: 4.4
+        - text: But in the first permanent European settlement in North America, the first thanksgiving dinner was probably pork and chickpea stew.
+          atS: 61.27
+          durationS: 7.51

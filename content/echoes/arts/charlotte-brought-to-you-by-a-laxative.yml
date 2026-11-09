@@ -9,7 +9,7 @@ at: { lat: 35.2249, lng: -80.846 }
 triggerRadiusKm: 0.05
 category: arts
 format: short
-durationS: 72
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -39,7 +39,7 @@ script: |
 pronunciations:
   - written: WBT
     say: W B T
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Charlotte had the first commercial radio station in North Carolina, and the second in the South."
@@ -92,3 +92,53 @@ sources:
     url: https://www.dncr.nc.gov/nc-historical-markers-guide-summer-2026/open
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-brought-to-you-by-a-laxative/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.4
+    audioBytes: 1110978
+    transcript:
+      totalS: 69.4
+      lines:
+        - text: Charlotte had the first commercial radio station in North Carolina, and the second in the South.
+          atS: 0
+          durationS: 5.4
+        - text: It began in March 1921 as a hobby, an amateur station set up in a man's kitchen.
+          atS: 5.91
+          durationS: 6.25
+        - text: Within a year it had a license, and the call letters W B T.
+          atS: 12.76
+          durationS: 4.53
+        - text: In 1924 it moved to a building near this corner, and its studios stayed around here until 1955.
+          atS: 17.98
+          durationS: 7.07
+        - text: In 1933 its signal went up to fifty thousand watts, enough to blanket the East Coast.
+          atS: 25.72
+          durationS: 6.2
+        - text: And what it sent out, through the thirties and forties, was country music.
+          atS: 32.58
+          durationS: 4.51
+        - text: People then called it hillbilly.
+          atS: 37.47
+          durationS: 1.72
+        - text: The best known show was paid for by a laxative company from Texas, the makers of Crazy Water Crystals.
+          atS: 40
+          durationS: 6.37
+        - text: It was Charlotte's answer to the Grand Ole Opry in Nashville.
+          atS: 47.07
+          durationS: 3.17
+        - text: The record companies came too.
+          atS: 50.84
+          durationS: 1.82
+        - text: For a while Charlotte was a recording center.
+          atS: 53.1
+          durationS: 2.6
+        - text: In July 1949 the station's owners put the first television station in North Carolina on the air.
+          atS: 56.22
+          durationS: 6.47
+        - text: Country music for half the coast, brought to you by a laxative.
+          atS: 63.19
+          durationS: 4.14
+        - text: Somebody had to pay for it.
+          atS: 67.72
+          durationS: 1.66

@@ -9,7 +9,7 @@ at: { lat: 44.9215, lng: -93.128 }
 triggerRadiusKm: 0.15
 category: food-drink
 format: look-below
-durationS: 28
+durationS: 26
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,7 +29,7 @@ script: |
 pronunciations:
   - written: "Banholzer"
     say: "BAN-holt-ser"
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Up on the bluffs near here, by Shepard Road and Drake Street, stood a brewery."
@@ -53,3 +53,29 @@ sources:
     url: https://www.nps.gov/miss/learn/historyculture/river-of-history-chapter-7.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/saint-paul-half-a-mile-of-cellar/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 26.1
+    audioBytes: 418002
+    transcript:
+      totalS: 26.1
+      lines:
+        - text: Up on the bluffs near here, by Shepard Road and Drake Street, stood a brewery.
+          atS: 0
+          durationS: 4.72
+        - text: Frederick and William Banholzer made it one of the more successful breweries in Saint Paul by the 1880s.
+          atS: 5.33
+          durationS: 6.47
+        - text: They dug caves that went half a mile deep, with many chambers.
+          atS: 12.31
+          durationS: 3.81
+        - text: Within a year after William died in 1897, the business closed.
+          atS: 16.93
+          durationS: 4.63
+        - text: The beer is long gone.
+          atS: 21.94
+          durationS: 1.46
+        - text: Half a mile of cellar was dug for it.
+          atS: 23.85
+          durationS: 2.21

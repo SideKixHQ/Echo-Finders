@@ -9,7 +9,7 @@ at: { lat: 29.39069, lng: -98.49014 }
 triggerRadiusKm: 0.06
 category: arts
 format: short
-durationS: 68
+durationS: 65
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   Historians now think it was not a religious symbol at all, but a Spanish medallion. A face.
 
   So the Eye of God turned out to have a beard. It is still up there, looking down at whoever comes in.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "They are weathered and pale now, but they were once covered in colorful designs, inside and out."
@@ -77,3 +77,62 @@ sources:
     url: https://www.nps.gov/places/mission-concepcion.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-antonio-the-eye-with-a-mustache/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.7
+    audioBytes: 1036163
+    transcript:
+      totalS: 64.7
+      lines:
+        - text: Look at the church walls.
+          atS: 0
+          durationS: 1.38
+        - text: They are weathered and pale now, but they were once covered in colorful designs, inside and out.
+          atS: 1.76
+          durationS: 6.2
+        - text: The paint was made with lime and water, and possibly goat's milk.
+          atS: 8.41
+          durationS: 4.02
+        - text: Mission artisans painted it into wet plaster, quickly, before the plaster dried.
+          atS: 12.93
+          durationS: 5.14
+        - text: Inside the convento, the priest's residence, the library has the best known fresco of all, on the ceiling.
+          atS: 18.65
+          durationS: 6.55
+        - text: A sunburst with an eye.
+          atS: 25.57
+          durationS: 1.71
+        - text: For decades, only one eye and a few rays could be seen.
+          atS: 27.93
+          durationS: 3.88
+        - text: Legends called it the Eye of God.
+          atS: 32.23
+          durationS: 2.34
+        - text: The All Seeing Eye.
+          atS: 34.85
+          durationS: 1.43
+        - text: In 1988, conservators began removing two hundred and fifty years of dirt and plaster that did not belong there.
+          atS: 36.66
+          durationS: 7.15
+        - text: To the surprise of many, they found a second eye.
+          atS: 44.26
+          durationS: 3
+        - text: Then a mustache.
+          atS: 47.58
+          durationS: 1.19
+        - text: Then a goatee.
+          atS: 49.01
+          durationS: 1.06
+        - text: Historians now think it was not a religious symbol at all, but a Spanish medallion.
+          atS: 50.57
+          durationS: 5.5
+        - text: A face.
+          atS: 56.52
+          durationS: 0.92
+        - text: So the Eye of God turned out to have a beard.
+          atS: 58.13
+          durationS: 2.72
+        - text: It is still up there, looking down at whoever comes in.
+          atS: 61.36
+          durationS: 3.33

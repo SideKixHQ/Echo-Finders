@@ -9,7 +9,7 @@ at: { lat: 29.4256, lng: -98.4863 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 72
+durationS: 63
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -33,7 +33,7 @@ script: |
   Adina De Zavala, who fought to save the Alamo, wrote the tale down in 1917. She added one fact you can check. The Alamo buildings were not destroyed, and not much injured by Andrade.
 
   The folk tale has a simple explanation for that. The soldiers were more afraid of the spirits than of their officers.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "After the battle of San Jacinto in 1836, the Mexican general Andrade set out to destroy the Alamo."
@@ -80,3 +80,53 @@ sources:
     url: https://www.nps.gov/places/spanish-governor-s-palace.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/san-antonio-spirits-with-flaming-swords/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 62.6
+    audioBytes: 1001891
+    transcript:
+      totalS: 62.6
+      lines:
+        - text: Look at the old stone walls of the Alamo, and ask yourself why they are still here.
+          atS: 0
+          durationS: 4.64
+        - text: After the battle of San Jacinto in 1836, the Mexican general Andrade set out to destroy the Alamo.
+          atS: 4.79
+          durationS: 6.76
+        - text: What follows is a legend.
+          atS: 11.62
+          durationS: 1.68
+        - text: It is a folk tale, and nobody has ever proved a word of the ghostly part.
+          atS: 13.43
+          durationS: 4.17
+        - text: The story goes that his men were met everywhere by spirits with flaming swords, who barred their way.
+          atS: 18.2
+          durationS: 5.97
+        - text: Every time new men were sent to tear down the walls, they were overcome by fright.
+          atS: 24.78
+          durationS: 4.68
+        - text: Threats and punishment could not make them go back.
+          atS: 29.96
+          durationS: 2.98
+        - text: The spirits let them take away the guns.
+          atS: 33.65
+          durationS: 2.32
+        - text: But the moment the walls were threatened, there was the flaming sword, in a ghostly hand.
+          atS: 36.57
+          durationS: 5.48
+        - text: Adina De Zavala, who fought to save the Alamo, wrote the tale down in 1917.
+          atS: 42.56
+          durationS: 5.9
+        - text: She added one fact you can check.
+          atS: 49.06
+          durationS: 1.93
+        - text: The Alamo buildings were not destroyed, and not much injured by Andrade.
+          atS: 51.27
+          durationS: 4.16
+        - text: The folk tale has a simple explanation for that.
+          atS: 55.75
+          durationS: 2.96
+        - text: The soldiers were more afraid of the spirits than of their officers.
+          atS: 59.04
+          durationS: 3.52

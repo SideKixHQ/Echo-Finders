@@ -12,7 +12,7 @@ inspo:
   kind: creation
   evidence: building
 format: short
-durationS: 87
+durationS: 81
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -41,7 +41,7 @@ script: |
   Two weeks later it was a record. And out of this room came the kind of music that would be called rock and roll.
 
   All night they had tried to play what they thought they were supposed to. It worked when they stopped.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at this small brick building on Union Avenue."
@@ -115,3 +115,77 @@ sources:
     url: https://home.nps.gov/subjects/nationalhistoriclandmarks/guide.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/memphis-it-worked-when-they-stopped/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.7
+    audioBytes: 1291536
+    transcript:
+      totalS: 80.7
+      lines:
+        - text: Look at this small brick building on Union Avenue.
+          atS: 0
+          durationS: 3.06
+        - text: On the evening of the fifth of July, 1954, three young men came in here to make a record.
+          atS: 3.76
+          durationS: 6.3
+        - text: It was hot and sticky, in the nineties.
+          atS: 10.45
+          durationS: 2.53
+        - text: The studio had no air conditioning, because studios could not risk the noise.
+          atS: 13.3
+          durationS: 4.69
+        - text: The singer was Elvis Presley.
+          atS: 18.69
+          durationS: 2.45
+        - text: He had been in once before, to record a birthday song for his mother.
+          atS: 21.75
+          durationS: 4.33
+        - text: The man who owned the place, Sam Phillips, could not say what he was looking for.
+          atS: 26.68
+          durationS: 5.1
+        - text: All he would say was, I'll know it when I hear it.
+          atS: 32.47
+          durationS: 3.08
+        - text: For hours, nothing worked.
+          atS: 36.36
+          durationS: 1.64
+        - text: They went down one musical dead end after another.
+          atS: 38.32
+          durationS: 2.93
+        - text: By around midnight the air inside was rancid.
+          atS: 41.58
+          durationS: 2.98
+        - text: The only fresh air was out the back door.
+          atS: 44.84
+          durationS: 2.37
+        - text: Then, on the break, Elvis started strumming his guitar and singing a blues song, That's All Right.
+          atS: 47.65
+          durationS: 6.51
+        - text: Bill Black jumped up and slapped his bass along.
+          atS: 54.54
+          durationS: 2.65
+        - text: Scotty Moore came in on electric guitar.
+          atS: 57.44
+          durationS: 2.36
+        - text: Phillips stuck his head out of the control room door.
+          atS: 60.12
+          durationS: 2.71
+        - text: Try it again, he said.
+          atS: 63.2
+          durationS: 1.92
+        - text: Let me get in there.
+          atS: 65.36
+          durationS: 1.29
+        - text: Two weeks later it was a record.
+          atS: 67.61
+          durationS: 2
+        - text: And out of this room came the kind of music that would be called rock and roll.
+          atS: 69.98
+          durationS: 4.12
+        - text: All night they had tried to play what they thought they were supposed to.
+          atS: 74.49
+          durationS: 3.63
+        - text: It worked when they stopped.
+          atS: 78.56
+          durationS: 2.1

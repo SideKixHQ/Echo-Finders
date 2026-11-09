@@ -9,7 +9,7 @@ at: { lat: 35.22709, lng: -80.84313 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 93
+durationS: 92
 visibility: at-hand
 certainty: contested
 certaintyNote: >-
@@ -38,7 +38,7 @@ script: |
   So Charlotte has two declarations from that spring. The one with proof, and the one on the flag.
 
   Every year on May the twentieth, this street still fires a cannon for the second one.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "There is a date on the North Carolina state flag. May the twentieth, 1775."
@@ -103,3 +103,62 @@ sources:
     url: https://www.dncr.nc.gov/blog/2024/01/17/mecklenburg-resolves-l-115
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-the-declaration-nobody-can-find/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 92.4
+    audioBytes: 1479618
+    transcript:
+      totalS: 92.4
+      lines:
+        - text: There is a date on the North Carolina state flag.
+          atS: 0
+          durationS: 3.1
+        - text: May the twentieth, 1775.
+          atS: 3.31
+          durationS: 2.9
+        - text: It points to this crossroads.
+          atS: 6.65
+          durationS: 1.83
+        - text: The story goes that in May 1775, twenty-six local men met in the log courthouse that stood where these two streets cross.
+          atS: 9
+          durationS: 8.85
+        - text: They were furious about the fighting at Lexington and Concord, and they signed a paper declaring themselves a free and independent people.
+          atS: 18.23
+          durationS: 8.63
+        - text: A tavern keeper, Captain James Jack, is said to have ridden it to Philadelphia.
+          atS: 27.36
+          durationS: 5.02
+        - text: If it was real, it was the first declaration of independence written by any colony.
+          atS: 32.82
+          durationS: 5.42
+        - text: Then the trouble starts.
+          atS: 39.2
+          durationS: 1.87
+        - text: The papers were destroyed in a fire in April 1800.
+          atS: 41.67
+          durationS: 4.05
+        - text: Nineteen years later, one of the signers wrote it out again from memory.
+          atS: 46.67
+          durationS: 4.7
+        - text: Nobody has found the original, and the state's own historical marker program calls it widely disputed.
+          atS: 52.49
+          durationS: 6.35
+        - text: What nobody disputes is a different paper.
+          atS: 59.54
+          durationS: 3.19
+        - text: On the thirty-first of May, 1775, a committee met at the same courthouse and adopted the Mecklenburg Resolves.
+          atS: 63.84
+          durationS: 7.93
+        - text: The royal governor wrote that they surpassed all the horrid and treasonable publications this continent had yet produced.
+          atS: 72.38
+          durationS: 7.05
+        - text: So Charlotte has two declarations from that spring.
+          atS: 80.03
+          durationS: 2.95
+        - text: The one with proof, and the one on the flag.
+          atS: 83.49
+          durationS: 2.93
+        - text: Every year on May the twentieth, this street still fires a cannon for the second one.
+          atS: 87.11
+          durationS: 5.31

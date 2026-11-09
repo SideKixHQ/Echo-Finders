@@ -9,7 +9,7 @@ at: { lat: 41.4966, lng: -81.70132 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 44
+durationS: 43
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ script: |
 pronunciations:
   - written: "Cuyahoga"
     say: "ky-uh-HOH-guh"
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "On the twenty-second of July, 1796, a party of surveyors working for General Moses Cleaveland arrived at the mouth of the Cuyahoga."
@@ -65,3 +65,38 @@ sources:
     url: https://www.loc.gov/item/today-in-history/july-22/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/cleveland-the-missing-letter/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 42.8
+    audioBytes: 686332
+    transcript:
+      totalS: 42.8
+      lines:
+        - text: Look down at the river.
+          atS: 0
+          durationS: 1.31
+        - text: On the twenty-second of July, 1796, a party of surveyors working for General Moses Cleaveland arrived at the mouth of the Cuyahoga.
+          atS: 2.61
+          durationS: 8.52
+        - text: They believed it was an ideal place for a new town, and named it for him.
+          atS: 11.83
+          durationS: 4.16
+        - text: His land company had three and a half million acres to sell.
+          atS: 16.8
+          durationS: 3.74
+        - text: The town did not grow much until the Erie Canal was finished in 1825.
+          atS: 21.14
+          durationS: 4.82
+        - text: Then, in 1831, a newspaper had a problem.
+          atS: 26.91
+          durationS: 3.55
+        - text: The Cleveland Advertiser dropped the first a from the name, to shorten its masthead.
+          atS: 30.91
+          durationS: 5.06
+        - text: From then on, the town was Cleveland.
+          atS: 36.66
+          durationS: 2.23
+        - text: The founder's name lost a letter, to save room on a newspaper.
+          atS: 39.28
+          durationS: 3.54

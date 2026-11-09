@@ -9,7 +9,7 @@ at: { lat: 29.715, lng: -81.237 }
 triggerRadiusKm: 0.1
 category: history
 format: short
-durationS: 92
+durationS: 87
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -41,7 +41,7 @@ pronunciations:
     say: meh-NEN-dez
   - written: Ribault
     say: ree-BOH
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "It is almost two hundred years newer than the name of this water."
@@ -106,3 +106,80 @@ sources:
     url: https://www.nps.gov/foma/learn/historyculture/fort-matanzas.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/st-augustine-the-inlet-of-slaughters/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 86.5
+    audioBytes: 1384741
+    transcript:
+      totalS: 86.5
+      lines:
+        - text: Look across the river at the little stone fort.
+          atS: 0
+          durationS: 2.79
+        - text: It is almost two hundred years newer than the name of this water.
+          atS: 3.11
+          durationS: 3.55
+        - text: The name is Matanzas.
+          atS: 7.17
+          durationS: 2.25
+        - text: In Spanish, it means slaughters.
+          atS: 9.81
+          durationS: 2.29
+        - text: In September 1565, a French fleet sailed to wipe out the brand new Spanish settlement at St.
+          atS: 12.91
+          durationS: 6.73
+        - text: Augustine.
+          atS: 19.67
+          durationS: 0.87
+        - text: A hurricane caught the ships and wrecked them far down the Florida coast.
+          atS: 20.86
+          durationS: 4.05
+        - text: The survivors walked north, trying to get back to their own fort.
+          atS: 25.36
+          durationS: 3.3
+        - text: An inlet near here stopped them.
+          atS: 29.04
+          durationS: 1.92
+        - text: The Spanish commander, Pedro Menéndez, marched down with seventy soldiers.
+          atS: 31.46
+          durationS: 4.83
+        - text: He told the French their fort had already been captured, and urged them to surrender.
+          atS: 36.73
+          durationS: 4.34
+        - text: He made no promises.
+          atS: 41.59
+          durationS: 1.49
+        - text: They had lost most of their food and weapons in the wreck, and they gave up.
+          atS: 43.77
+          durationS: 4.02
+        - text: One hundred and eleven Frenchmen were killed.
+          atS: 49.09
+          durationS: 2.44
+        - text: Sixteen were spared, among them a few who said they were Catholic, and four craftsmen the new town needed.
+          atS: 51.85
+          durationS: 7.09
+        - text: Two weeks later, more survivors reached the inlet, among them their commander, Jean Ribault.
+          atS: 59.76
+          durationS: 6.03
+        - text: On the twelfth of October they surrendered too.
+          atS: 66.39
+          durationS: 2.59
+        - text: This time, one hundred and thirty-four were killed.
+          atS: 69.42
+          durationS: 3.27
+        - text: Why?
+          atS: 73.64
+          durationS: 0.57
+        - text: Orders, religion, or something colder.
+          atS: 75.03
+          durationS: 2.79
+        - text: With no new supplies until spring, there may not have been food for everyone.
+          atS: 78.25
+          durationS: 4.1
+        - text: The fort came much later.
+          atS: 82.59
+          durationS: 1.77
+        - text: The name never left.
+          atS: 84.47
+          durationS: 2

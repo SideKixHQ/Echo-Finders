@@ -9,7 +9,7 @@ at: { lat: 41.5105, lng: -81.5913 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 57
+durationS: 51
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   Go downstairs and you can see his casket, and his wife Lucretia's, on full display.
 
   The biggest tomb of its day holds a man who said he needed no more protection than the average American.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "It is Berea sandstone, and it stands a hundred and eighty feet tall."
@@ -76,3 +76,47 @@ sources:
     url: https://www.nps.gov/articles/000/mourning-president-garfield.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/cleveland-no-more-protection/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.7
+    audioBytes: 812555
+    transcript:
+      totalS: 50.7
+      lines:
+        - text: Look up at the tower.
+          atS: 0
+          durationS: 1.37
+        - text: It is Berea sandstone, and it stands a hundred and eighty feet tall.
+          atS: 1.52
+          durationS: 4.64
+        - text: James Garfield, the twentieth president, is buried here.
+          atS: 6.61
+          durationS: 3.77
+        - text: He had been in office only four months when he was shot.
+          atS: 10.7
+          durationS: 3.17
+        - text: It was the second of July, 1881, in a Washington railway station.
+          atS: 14.2
+          durationS: 4.49
+        - text: In those days presidents had no guards around them.
+          atS: 19.2
+          durationS: 3.04
+        - text: Americans believed a president should be open to everyone.
+          atS: 22.63
+          durationS: 3.51
+        - text: For eighty days the country read every bulletin from his doctors.
+          atS: 26.57
+          durationS: 3.87
+        - text: He died on the nineteenth of September.
+          atS: 30.77
+          durationS: 2.17
+        - text: His monument here was one of the biggest and most elaborate mausoleums of its time.
+          atS: 33.22
+          durationS: 4.85
+        - text: Go downstairs and you can see his casket, and his wife Lucretia's, on full display.
+          atS: 38.88
+          durationS: 5.36
+        - text: The biggest tomb of its day holds a man who said he needed no more protection than the average American.
+          atS: 44.69
+          durationS: 6.03

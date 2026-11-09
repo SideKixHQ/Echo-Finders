@@ -9,7 +9,7 @@ at: { lat: 41.4894, lng: -71.3119 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 68
+durationS: 65
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ script: |
 pronunciations:
   - written: "Seixas"
     say: "SAY-shus"
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It is set at an angle, so that the ark inside, on the east wall, can face Jerusalem."
@@ -75,3 +75,50 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ri/ri0000/ri0083/data/ri0083data.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/newport-the-line-washington-borrowed/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.8
+    audioBytes: 1037417
+    transcript:
+      totalS: 64.8
+      lines:
+        - text: Look at how the synagogue sits on its lot.
+          atS: 0
+          durationS: 2.54
+        - text: It is not square to the street.
+          atS: 2.93
+          durationS: 1.78
+        - text: It is set at an angle, so that the ark inside, on the east wall, can face Jerusalem.
+          atS: 4.95
+          durationS: 6.18
+        - text: In August 1790 the new president came to Newport.
+          atS: 11.94
+          durationS: 4.24
+        - text: The congregation that worshipped here sent George Washington a letter of welcome.
+          atS: 16.98
+          durationS: 4.61
+        - text: It was written by their warden, Moses Seixas.
+          atS: 22.55
+          durationS: 3.54
+        - text: In it he praised a government which to bigotry gives no sanction, to persecution no assistance.
+          atS: 26.53
+          durationS: 6.04
+        - text: Washington wrote back.
+          atS: 32.89
+          durationS: 1.43
+        - text: His reply said that the Government of the United States gives to bigotry no sanction, to persecution no assistance.
+          atS: 35.43
+          durationS: 7.18
+        - text: The Library of Congress calls the pair of letters his clearest statement of belief in religious freedom.
+          atS: 43.56
+          durationS: 6.04
+        - text: Listen to both lines again.
+          atS: 50.71
+          durationS: 1.67
+        - text: The president took the congregation's words, turned them round, and handed them back as a promise.
+          atS: 53.08
+          durationS: 5.67
+        - text: The most famous line about this building was the congregation's own, before it was the president's.
+          atS: 59.44
+          durationS: 5.34

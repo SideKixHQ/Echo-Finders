@@ -9,7 +9,7 @@ at: { lat: 24.5477, lng: -81.81 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 70
+durationS: 74
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   Then, slowly, it lost the sea. In 1898 the top two tiers were taken off. And sometime between 1891 and 1939, the fort became landlocked.
 
   Nobody wrote down the day the water left.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The site was in about ten feet of water at high tide, some four hundred and forty yards from shore."
@@ -69,3 +69,62 @@ sources:
     url: https://www.loc.gov/item/fl0148/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-the-fort-that-lost-the-sea/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.9
+    audioBytes: 1183285
+    transcript:
+      totalS: 73.9
+      lines:
+        - text: Stand by the fort and look around.
+          atS: 0
+          durationS: 2.23
+        - text: Grass, trees, a parking lot.
+          atS: 2.74
+          durationS: 3.15
+        - text: The sea is somewhere beyond them.
+          atS: 6.49
+          durationS: 1.92
+        - text: When this fort was built, it stood in the water.
+          atS: 8.92
+          durationS: 2.71
+        - text: The site was in about ten feet of water at high tide, some four hundred and forty yards from shore.
+          atS: 12.32
+          durationS: 6.18
+        - text: A wooden drawbridge seven hundred and twenty feet long connected it to the island.
+          atS: 19.1
+          durationS: 4.41
+        - text: Work began in 1845.
+          atS: 24.11
+          durationS: 2.31
+        - text: Yellow fever kept driving the workers away.
+          atS: 26.75
+          durationS: 2.64
+        - text: Hurricanes kept knocking things down.
+          atS: 29.71
+          durationS: 2.25
+        - text: On the eleventh of October, 1846, a hurricane destroyed everything built so far except the cistern, the smithy and the stable, and four workmen drowned.
+          atS: 33.26
+          durationS: 10.41
+        - text: They kept going.
+          atS: 44.06
+          durationS: 1.07
+        - text: By 1861 the fort was close to completion, just in time for the Civil War.
+          atS: 45.64
+          durationS: 5.68
+        - text: It was garrisoned all through the war, and Key West stayed in Union hands.
+          atS: 51.76
+          durationS: 4.63
+        - text: Then, slowly, it lost the sea.
+          atS: 56.99
+          durationS: 3.08
+        - text: In 1898 the top two tiers were taken off.
+          atS: 61.02
+          durationS: 3.45
+        - text: And sometime between 1891 and 1939, the fort became landlocked.
+          atS: 64.98
+          durationS: 5.77
+        - text: Nobody wrote down the day the water left.
+          atS: 71.45
+          durationS: 2.44

@@ -9,7 +9,7 @@ at: { lat: 36.6658, lng: -96.34064 }
 triggerRadiusKm: 0.08
 category: true-crime
 format: short
-durationS: 69
+durationS: 58
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -40,12 +40,12 @@ script: |
 pronunciations:
   - written: "Osage"
     say: "OH-sayj"
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: convicted
-  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedBy: "James (owner), approved 2026-11-09"
   reviewedAt: "2026-11-09"
   contentWarning: "This echo concerns a series of murders in the 1920s. No violence is described."
 claims:
@@ -90,3 +90,50 @@ sources:
     url: https://www.archives.gov/news/articles/killers-flower-moon-nara-sources
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/pawhuska-guardian-of-his-own-children/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 58
+    audioBytes: 928330
+    transcript:
+      totalS: 58
+      lines:
+        - text: Look up the hill at the old agency buildings.
+          atS: 0
+          durationS: 2.48
+        - text: In the early nineteen twenties the federal government decided which Osage were unfit to control their own money.
+          atS: 2.66
+          durationS: 6.94
+        - text: Those it judged incompetent were given guardians.
+          atS: 9.88
+          durationS: 2.8
+        - text: Guardians often used the system, in the writer David Grann's words, to swindle the very people they were supposedly protecting.
+          atS: 12.79
+          durationS: 6.91
+        - text: The National Archives keeps a handwritten ledger of those guardians, the Register of Guardians, from 1919 to 1924.
+          atS: 20.03
+          durationS: 7.81
+        - text: Mollie Burkhart was Osage.
+          atS: 28.45
+          durationS: 2.31
+        - text: She and her family were victims of William Hale, who planned the killing of several Osage people to inherit their oil rights and money.
+          atS: 31.27
+          durationS: 8
+        - text: Hale brought in his nephew, Ernest Burkhart, to help.
+          atS: 39.87
+          durationS: 3.29
+        - text: Ernest had married Mollie.
+          atS: 43.85
+          durationS: 1.37
+        - text: He was later arrested for his part in the deaths of her family.
+          atS: 45.5
+          durationS: 3.46
+        - text: Now open the register at their children.
+          atS: 49.11
+          durationS: 2.09
+        - text: The guardian listed for them is Ernest.
+          atS: 51.37
+          durationS: 2.24
+        - text: The system meant to protect the children's money put it in their father's hands.
+          atS: 53.73
+          durationS: 4.23

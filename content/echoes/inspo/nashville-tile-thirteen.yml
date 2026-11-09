@@ -12,7 +12,7 @@ inspo:
   kind: creation
   evidence: building
 format: short
-durationS: 86
+durationS: 83
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -39,7 +39,7 @@ script: |
   A few days later she came back, and sang it in one take.
 
   One take, in a metal hut, with burlap keeping out the rain.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Somewhere behind this front is a metal Quonset hut, the curved-roof kind the military used all through the Second World War."
@@ -110,3 +110,68 @@ sources:
     url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Crazy_Gomery.pdf
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-tile-thirteen/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 82.9
+    audioBytes: 1328317
+    transcript:
+      totalS: 82.9
+      lines:
+        - text: Somewhere behind this front is a metal Quonset hut, the curved-roof kind the military used all through the Second World War.
+          atS: 0
+          durationS: 7.62
+        - text: A little of its roof still shows from the back.
+          atS: 8.13
+          durationS: 2.87
+        - text: In 1955 two brothers, Owen and Harold Bradley, bought a house here and turned it into a recording studio.
+          atS: 11.69
+          durationS: 6.93
+        - text: That move is now credited as the birth of Music Row.
+          atS: 19.32
+          durationS: 3.53
+        - text: They needed more room, so they bought a Quonset hut kit and put it up out back.
+          atS: 23.23
+          durationS: 4.79
+        - text: Neither man had been trained in acoustics.
+          atS: 28.63
+          durationS: 2.35
+        - text: They did it by ear.
+          atS: 31.42
+          durationS: 1.3
+        - text: Big curtains in the corners to trap the bass.
+          atS: 33.04
+          durationS: 2.73
+        - text: Green burlap up near the ceiling, to keep out the sound of rain on the metal roof.
+          atS: 36.15
+          durationS: 4.7
+        - text: Their engineer found one spot near the control room that was best for a singer.
+          atS: 41.81
+          durationS: 4.57
+        - text: Tile thirteen.
+          atS: 47.33
+          durationS: 1.35
+        - text: On the twenty-first of August, 1961, the band recorded a song here from a Willie Nelson demo.
+          atS: 49.63
+          durationS: 6.85
+        - text: It was called Crazy.
+          atS: 56.68
+          durationS: 1.79
+        - text: The singer was Patsy Cline.
+          atS: 58.66
+          durationS: 2.07
+        - text: Only a few months before, she had been thrown through a windshield in a car crash.
+          atS: 61.51
+          durationS: 4.27
+        - text: When she started on the vocal, she stopped herself.
+          atS: 66.09
+          durationS: 2.83
+        - text: She could not sing it up to her own standard.
+          atS: 69.31
+          durationS: 2.47
+        - text: A few days later she came back, and sang it in one take.
+          atS: 73.08
+          durationS: 4.24
+        - text: One take, in a metal hut, with burlap keeping out the rain.
+          atS: 78.27
+          durationS: 4.67

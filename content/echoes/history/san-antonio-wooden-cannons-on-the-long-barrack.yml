@@ -9,7 +9,7 @@ at: { lat: 29.4263, lng: -98.4864 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 72
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   It was not until 1912 that the governor had the wooden front stripped away.
 
   The place where the Alamo's defenders made their last stand spent decades pretending to be a castle, guarded by cannons made of wood.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This is the Long Barrack, the oldest building at the Alamo."
@@ -92,3 +92,50 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx0000/tx0035/data/tx0035data.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-antonio-wooden-cannons-on-the-long-barrack/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.1
+    audioBytes: 1105963
+    transcript:
+      totalS: 69.1
+      lines:
+        - text: Look at the long stone building beside the church.
+          atS: 0
+          durationS: 2.82
+        - text: This is the Long Barrack, the oldest building at the Alamo.
+          atS: 3.15
+          durationS: 3.69
+        - text: It was first a two-story convent for the mission's priests.
+          atS: 7.12
+          durationS: 3.48
+        - text: In 1836 it was the site of the defenders' final stand against Santa Anna's army.
+          atS: 10.93
+          durationS: 5.85
+        - text: After a thirteen-day siege, Mexican troops killed all of the roughly one hundred and eighty-nine defenders.
+          atS: 18.08
+          durationS: 6.43
+        - text: Forty-one years later, in 1877, the convent was sold to a San Antonio merchant, Honore Grenet, for nineteen thousand dollars.
+          atS: 25.11
+          durationS: 9.76
+        - text: He built a wooden two-story gallery across the front, and gave it a medieval look.
+          atS: 35.57
+          durationS: 4.98
+        - text: A crenellated top.
+          atS: 41.16
+          durationS: 1.48
+        - text: Three octagonal wooden towers.
+          atS: 43.07
+          durationS: 2.18
+        - text: Gun ports, and wooden cannons.
+          atS: 45.47
+          durationS: 2.02
+        - text: After he died, a wholesale grocery firm bought it and used the old convent as a storehouse.
+          atS: 48.09
+          durationS: 6.26
+        - text: It was not until 1912 that the governor had the wooden front stripped away.
+          atS: 55.04
+          durationS: 4.92
+        - text: The place where the Alamo's defenders made their last stand spent decades pretending to be a castle, guarded by cannons made of wood.
+          atS: 60.78
+          durationS: 8.28

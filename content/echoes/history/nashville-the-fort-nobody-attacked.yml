@@ -9,7 +9,7 @@ at: { lat: 36.1451, lng: -86.77466 }
 triggerRadiusKm: 0.1
 category: history
 format: short
-durationS: 58
+durationS: 50
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   And nearly thirteen thousand men of the United States Colored Troops helped defend Nashville.
 
   The best compliment a fort can get is to be left alone.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "They went up during the Civil War, laid by people who had escaped slavery."
@@ -76,3 +76,50 @@ sources:
     url: https://www.nps.gov/articles/000/fort-negley-civil-war-database.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-the-fort-nobody-attacked/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.3
+    audioBytes: 805868
+    transcript:
+      totalS: 50.3
+      lines:
+        - text: Look at the stone walls on this hilltop.
+          atS: 0
+          durationS: 2.37
+        - text: They went up during the Civil War, laid by people who had escaped slavery.
+          atS: 2.69
+          durationS: 4.25
+        - text: The Union army called them contraband.
+          atS: 7.19
+          durationS: 2.2
+        - text: It was a legal word for an enslaved person who had made it to Union lines.
+          atS: 9.6
+          durationS: 4.06
+        - text: It protected them from being sent back to the Confederates.
+          atS: 13.91
+          durationS: 2.94
+        - text: It also let the army use their labor for its own purposes.
+          atS: 17.02
+          durationS: 3.6
+        - text: About twenty-five hundred Black masons, carpenters and laborers built Fort Negley.
+          atS: 20.86
+          durationS: 5.35
+        - text: They used sixty-two thousand five hundred cubic feet of stone.
+          atS: 26.46
+          durationS: 4.38
+        - text: In December 1864, the Battle of Nashville was fought around this city.
+          atS: 31.44
+          durationS: 4.87
+        - text: Nobody attacked this fort.
+          atS: 36.81
+          durationS: 1.75
+        - text: It was too strong to try.
+          atS: 38.81
+          durationS: 1.68
+        - text: And nearly thirteen thousand men of the United States Colored Troops helped defend Nashville.
+          atS: 40.65
+          durationS: 5.43
+        - text: The best compliment a fort can get is to be left alone.
+          atS: 46.68
+          durationS: 3.61

@@ -9,7 +9,7 @@ at: { lat: 29.89835, lng: -81.3114 }
 triggerRadiusKm: 0.05
 category: arts
 format: short
-durationS: 70
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,7 +37,7 @@ pronunciations:
     say: uh-RAP-uh-hoe
   - written: Caddo
     say: KAD-oh
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In the 1870s, a long wooden barracks stood up there on the gun deck, built by prisoners."
@@ -88,3 +88,68 @@ sources:
     url: https://www.nps.gov/casa/learn/historyculture/plains-incarceration.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/st-augustine-drawings-on-ledger-paper/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.1
+    audioBytes: 1154446
+    transcript:
+      totalS: 72.1
+      lines:
+        - text: Look up at the top of the north wall.
+          atS: 0
+          durationS: 2.15
+        - text: In the 1870s, a long wooden barracks stood up there on the gun deck, built by prisoners.
+          atS: 3.1
+          durationS: 6.1
+        - text: They had come from the Great Plains.
+          atS: 9.64
+          durationS: 2.03
+        - text: Seventy-four of them, mostly warriors, taken from a reservation after the Red River War.
+          atS: 12.11
+          durationS: 5.71
+        - text: There were Cheyenne, Kiowa, Comanche, Arapaho and Caddo.
+          atS: 18.2
+          durationS: 5.64
+        - text: They arrived in chains and shackles.
+          atS: 24.54
+          durationS: 2.18
+        - text: Then a new jailer, Lieutenant Richard Henry Pratt, had the chains taken off.
+          atS: 27.05
+          durationS: 4.68
+        - text: He also set out to make them give up who they were.
+          atS: 32.33
+          durationS: 2.82
+        - text: Many of the young men began to draw.
+          atS: 35.85
+          durationS: 2.07
+        - text: Not on buffalo hide, the traditional way, but on paper from an accountant's ledger book.
+          atS: 38.43
+          durationS: 5.36
+        - text: Army rosters.
+          atS: 44.3
+          durationS: 1.17
+        - text: Day books.
+          atS: 45.72
+          durationS: 0.95
+        - text: Whatever paper they could find.
+          atS: 47.06
+          durationS: 1.82
+        - text: They drew life on the plains.
+          atS: 49.32
+          durationS: 1.98
+        - text: The long journey to Florida.
+          atS: 51.63
+          durationS: 1.83
+        - text: Their days inside this fort.
+          atS: 53.91
+          durationS: 2.13
+        - text: Many of those drawings survive.
+          atS: 56.73
+          durationS: 2.07
+        - text: Native artists still make ledger art today.
+          atS: 59.4
+          durationS: 3.27
+        - text: And one prisoner, in an act of resistance, etched a Kiowa Sundance camp into the walls of the prison itself.
+          atS: 63.27
+          durationS: 8.8

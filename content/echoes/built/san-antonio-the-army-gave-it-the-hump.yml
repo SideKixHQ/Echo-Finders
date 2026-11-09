@@ -9,7 +9,7 @@ at: { lat: 29.4259, lng: -98.4865 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 54
+durationS: 53
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -26,7 +26,7 @@ script: |
   And it was apparently in 1849 that the church was rebuilt with its familiar shaped gable. The design is credited to John Fries, a local builder, working under the Army's quartermaster in San Antonio.
 
   So the most famous silhouette in Texas was added by an army supply office, to tidy up a warehouse.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "That curved top is its familiar shaped gable"
@@ -70,3 +70,41 @@ sources:
     url: https://www.nps.gov/places/mission-san-antonio-de-valero-3rd-site-the-alamo.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-antonio-the-army-gave-it-the-hump/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53
+    audioBytes: 848918
+    transcript:
+      totalS: 53
+      lines:
+        - text: Look at the top of the church front.
+          atS: 0
+          durationS: 2
+        - text: That curved top is its familiar shaped gable, the outline people picture.
+          atS: 2.38
+          durationS: 4.64
+        - text: The defenders in 1836 never saw it.
+          atS: 7.3
+          durationS: 3.95
+        - text: After the battle, the Alamo was badly damaged.
+          atS: 12.55
+          durationS: 3.32
+        - text: When Texas joined the United States, the U.S.
+          atS: 16.31
+          durationS: 2.62
+        - text: Army moved in and used it as a quartermaster depot.
+          atS: 18.96
+          durationS: 3.46
+        - text: On the first of January, 1850, the Army leased the buildings, for a hundred and fifty dollars a month, to use as storehouses.
+          atS: 23.02
+          durationS: 8.22
+        - text: And it was apparently in 1849 that the church was rebuilt with its familiar shaped gable.
+          atS: 31.63
+          durationS: 6.37
+        - text: The design is credited to John Fries, a local builder, working under the Army's quartermaster in San Antonio.
+          atS: 38.7
+          durationS: 6.79
+        - text: So the most famous silhouette in Texas was added by an army supply office, to tidy up a warehouse.
+          atS: 46.19
+          durationS: 6.8

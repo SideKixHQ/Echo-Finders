@@ -9,12 +9,11 @@ at: { lat: 44.37194, lng: -103.73333 }
 triggerRadiusKm: 0.1
 category: legend
 format: short
-durationS: 65
+durationS: 59
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  The back-to-the-door detail comes from a 1938 folklore interview and is told as legend.
-  The killing itself, its date and saloon are documented.
+  The back-to-the-door detail comes from a 1938 folklore interview and is told as legend. The killing itself, its date and saloon are documented.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -45,7 +44,7 @@ script: |
 pronunciations:
   - written: "Hickok"
     say: "HICK-ock"
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Somewhere in this town, in Nuttall and Mann's Saloon Number Ten, Wild Bill Hickok sat down to play cards for the last time."
@@ -91,3 +90,56 @@ sources:
     url: https://www.loc.gov/item/wpalh000852/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/deadwood-his-back-to-the-door/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 58.8
+    audioBytes: 942541
+    transcript:
+      totalS: 58.8
+      lines:
+        - text: Somewhere in this town, in Nuttall and Mann's Saloon Number Ten, Wild Bill Hickok sat down to play cards for the last time.
+          atS: 0
+          durationS: 8.3
+        - text: It was the second of August, 1876.
+          atS: 8.81
+          durationS: 2.88
+        - text: He was shot and killed at the poker table by a drunken stranger.
+          atS: 11.94
+          durationS: 3.71
+        - text: An old photograph of his monument names the killer as Jack McCall.
+          atS: 16.09
+          durationS: 4.05
+        - text: Here is where the legend comes in.
+          atS: 20.53
+          durationS: 1.76
+        - text: In 1938 a man in Nebraska told an interviewer from a government writers' project what he remembered of Wild Bill.
+          atS: 22.8
+          durationS: 6.92
+        - text: He said he had watched him at target practice many times.
+          atS: 30
+          durationS: 3.18
+        - text: And he said Wild Bill died because it was the first time he was ever known to turn his back to the door.
+          atS: 33.78
+          durationS: 5.18
+        - text: That is legend, told by an old man long afterwards.
+          atS: 39.66
+          durationS: 3.38
+        - text: It is not proven.
+          atS: 43.64
+          durationS: 1.08
+        - text: He had a complaint about the movies too.
+          atS: 45.53
+          durationS: 2.31
+        - text: On screen they gave Wild Bill a cross draw.
+          atS: 48.12
+          durationS: 2.93
+        - text: In reality, he said, Hickok drew his gun straight up.
+          atS: 51.33
+          durationS: 3.88
+        - text: Everybody remembers the door.
+          atS: 55.59
+          durationS: 1.63
+        - text: Nobody can prove it.
+          atS: 57.54
+          durationS: 1.3

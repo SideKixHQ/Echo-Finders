@@ -9,7 +9,7 @@ at: { lat: 44.92346, lng: -93.12279 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 60
+durationS: 59
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -43,7 +43,7 @@ pronunciations:
     say: "GAL-tee-ay"
   - written: "In-yan Ti-pi"
     say: "in-YAHN tee-PEE"
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The Dakota knew it as In-yan Ti-pi."
@@ -93,3 +93,53 @@ sources:
     url: https://www.nps.gov/miss/learn/historyculture/river-of-history-chapter-8.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/saint-paul-almost-pigs-eye/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 58.6
+    audioBytes: 938779
+    transcript:
+      totalS: 58.6
+      lines:
+        - text: Below this path, under the road, is a cave you cannot see.
+          atS: 0
+          durationS: 4.18
+        - text: The Dakota knew it as In-yan Ti-pi.
+          atS: 4.78
+          durationS: 2.88
+        - text: It was the first building site of what became Saint Paul.
+          atS: 8.36
+          durationS: 3.24
+        - text: In 1838 a man of dubious reputation, who sold alcohol to Native Americans and to soldiers from Fort Snelling, built a cabin at the mouth of the cave.
+          atS: 12.2
+          durationS: 10.33
+        - text: His name was Pierre Parrant.
+          atS: 22.92
+          durationS: 2.03
+        - text: Everybody called him Pig's Eye.
+          atS: 25.76
+          durationS: 1.97
+        - text: Two years later the army at Fort Snelling threw him out.
+          atS: 28.43
+          durationS: 3.54
+        - text: The cluster of cabins downstream went by two names.
+          atS: 32.3
+          durationS: 3.42
+        - text: The Great Marsh, or, after its best known inhabitant, Pig's Eye.
+          atS: 36.05
+          durationS: 4.35
+        - text: Then a Catholic priest, Father Lucien Galtier, built a chapel on the bluff and named it for Saint Paul.
+          atS: 40.79
+          durationS: 6.38
+        - text: The name stuck.
+          atS: 47.5
+          durationS: 1.2
+        - text: The cave did not.
+          atS: 48.9
+          durationS: 1.28
+        - text: Its entrance was buried in 1960, when Shepard Road was built.
+          atS: 50.56
+          durationS: 4.25
+        - text: The city came within a priest of being called Pig's Eye.
+          atS: 55.19
+          durationS: 3.41

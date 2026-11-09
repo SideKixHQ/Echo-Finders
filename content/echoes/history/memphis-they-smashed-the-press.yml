@@ -9,7 +9,7 @@ at: { lat: 35.13861, lng: -90.04833 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 74
+durationS: 73
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
   In 2020 she was awarded a Pulitzer Prize, for her courageous reporting on that violence.
 
   They smashed the press. They could not reach the reporter.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at this church on Beale Street."
@@ -95,3 +95,62 @@ sources:
     url: https://www.nps.gov/people/idabwells.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/memphis-they-smashed-the-press/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.4
+    audioBytes: 1175762
+    transcript:
+      totalS: 73.4
+      lines:
+        - text: Look at this church on Beale Street.
+          atS: 0
+          durationS: 2.36
+        - text: In the 1890s it held the office of a newspaper, the Memphis Free Speech.
+          atS: 3.05
+          durationS: 5.17
+        - text: One of its writers, and later an owner, was a young schoolteacher named Ida B.
+          atS: 8.82
+          durationS: 4.77
+        - text: Wells.
+          atS: 13.62
+          durationS: 0.66
+        - text: In 1892, three Black men who had opened a grocery store, Tom Moss, Calvin McDowell and Will Stewart, were taken from their jail cells by a mob and murdered.
+          atS: 14.98
+          durationS: 10.97
+        - text: Their store had been drawing customers away from a white-owned store nearby.
+          atS: 26.76
+          durationS: 4.69
+        - text: Wells wrote about it in this paper.
+          atS: 32.4
+          durationS: 2.04
+        - text: Then she traveled the South, at the risk of her own life, gathering the facts of other lynchings.
+          atS: 35.14
+          durationS: 5.75
+        - text: One of her editorials pushed some of the city's white residents over the edge.
+          atS: 41.84
+          durationS: 4.32
+        - text: A mob ransacked the office and destroyed the printing equipment.
+          atS: 46.86
+          durationS: 4.03
+        - text: She was in New York at the time.
+          atS: 51.69
+          durationS: 2.01
+        - text: That probably saved her life.
+          atS: 54.39
+          durationS: 1.94
+        - text: Her life was threatened, and she stayed in the North.
+          atS: 56.77
+          durationS: 3.3
+        - text: She kept writing.
+          atS: 60.88
+          durationS: 1.29
+        - text: In 2020 she was awarded a Pulitzer Prize, for her courageous reporting on that violence.
+          atS: 62.76
+          durationS: 6.27
+        - text: They smashed the press.
+          atS: 69.36
+          durationS: 1.35
+        - text: They could not reach the reporter.
+          atS: 71.09
+          durationS: 2.33

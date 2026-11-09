@@ -9,7 +9,7 @@ at: { lat: 35.6863, lng: -105.9382 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 65
+durationS: 67
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   Then in 1880 the railroad arrived, and that was the end of the trail.
 
   The wagons are long gone. The street you are standing on still carries the trail's name.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look for a bronze plaque set at eye level in the adobe wall, on the west side of this street."
@@ -85,3 +85,59 @@ sources:
     url: https://www.nps.gov/articles/000/new-mexico-santa-fe-plaza.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/santa-fe-the-end-of-the-trail/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.7
+    audioBytes: 1068764
+    transcript:
+      totalS: 66.7
+      lines:
+        - text: Look for a bronze plaque set at eye level in the adobe wall, on the west side of this street.
+          atS: 0
+          durationS: 5.25
+        - text: Above the words, oxen pull a wagon.
+          atS: 5.69
+          durationS: 2.87
+        - text: It reads, This marks the route of the Santa Fe Trail, Kansas City to Santa Fe, 1822 to 1880.
+          atS: 8.94
+          durationS: 8.71
+        - text: In 1821 Mexico won its independence, and opened trade with the United States.
+          atS: 18.09
+          durationS: 5.57
+        - text: The new trail ran eight hundred miles, from Independence, Missouri, to the plaza just up the street.
+          atS: 24.17
+          durationS: 6.28
+        - text: Almost overnight, the plaza became the hub of a vast network.
+          atS: 30.96
+          durationS: 4.26
+        - text: One account from 1837 lists what filled it.
+          atS: 35.67
+          durationS: 3.32
+        - text: All kinds of vehicles.
+          atS: 39.27
+          durationS: 1.5
+        - text: Teamsters, camp cooks, roustabouts.
+          atS: 40.91
+          durationS: 2.59
+        - text: Horses, mules, burros, pigs, and goats.
+          atS: 43.68
+          durationS: 3.03
+        - text: Wagons were unloaded.
+          atS: 47.03
+          durationS: 1.37
+        - text: Traders put up temporary booths.
+          atS: 48.58
+          durationS: 2.02
+        - text: Everything was loaded, unloaded, bought and sold.
+          atS: 50.88
+          durationS: 3.6
+        - text: Then in 1880 the railroad arrived, and that was the end of the trail.
+          atS: 54.92
+          durationS: 5.24
+        - text: The wagons are long gone.
+          atS: 60.59
+          durationS: 1.8
+        - text: The street you are standing on still carries the trail's name.
+          atS: 63.09
+          durationS: 3.65

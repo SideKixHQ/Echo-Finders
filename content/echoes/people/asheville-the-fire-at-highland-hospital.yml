@@ -9,7 +9,7 @@ at: { lat: 35.61081, lng: -82.56614 }
 triggerRadiusKm: 0.05
 category: people
 format: short
-durationS: 80
+durationS: 79
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ script: |
 pronunciations:
   - written: Zelda
     say: ZEL-duh
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "About a quarter mile south of here stood Highland Hospital."
@@ -108,3 +108,68 @@ sources:
     url: https://www.dncr.nc.gov/blog-terms/buncombe-county
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/asheville-the-fire-at-highland-hospital/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 78.5
+    audioBytes: 1256846
+    transcript:
+      totalS: 78.5
+      lines:
+        - text: About a quarter mile south of here stood Highland Hospital.
+          atS: 0
+          durationS: 3.55
+        - text: The site is an office park and a shopping plaza now.
+          atS: 4.16
+          durationS: 3.15
+        - text: Zelda Sayre married F.
+          atS: 8.26
+          durationS: 1.89
+        - text: Scott Fitzgerald in 1919.
+          atS: 10.19
+          durationS: 2.38
+        - text: He called her America's first flapper.
+          atS: 13.08
+          durationS: 2.38
+        - text: In their day they were celebrities of the first order.
+          atS: 15.79
+          durationS: 3.04
+        - text: In 1936, while staying at the Grove Park Inn, Zelda Fitzgerald entered Highland Hospital, an exclusive psychiatric clinic in the Montford neighborhood.
+          atS: 19.53
+          durationS: 9.99
+        - text: She suffered from schizophrenia.
+          atS: 30.21
+          durationS: 1.78
+        - text: The treatments included electroshock and insulin, but also a great deal of physical activity.
+          atS: 32.68
+          durationS: 5.48
+        - text: She swam and played tennis.
+          atS: 38.67
+          durationS: 1.64
+        - text: She painted, and for a time, she thrived.
+          atS: 40.43
+          durationS: 2.88
+        - text: Scott died in 1940.
+          atS: 44.12
+          durationS: 1.8
+        - text: After that, Zelda came back to Highland three more times, for long stays.
+          atS: 46.61
+          durationS: 4.91
+        - text: On the tenth of March, 1948, a fire started in the kitchen and swept up through the dumbwaiter to all four floors.
+          atS: 52.13
+          durationS: 7.91
+        - text: Of the twenty patients living there, nine died.
+          atS: 60.73
+          durationS: 3.05
+        - text: Zelda Fitzgerald was one of them.
+          atS: 64.39
+          durationS: 2.16
+        - text: They are buried together in Maryland.
+          atS: 66.93
+          durationS: 1.89
+        - text: On top of their grave are lines from The Great Gatsby.
+          atS: 68.97
+          durationS: 2.88
+        - text: So we beat on, boats against the current, borne back ceaselessly into the past.
+          atS: 72.46
+          durationS: 6.03

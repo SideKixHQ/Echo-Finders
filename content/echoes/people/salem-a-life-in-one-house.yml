@@ -9,7 +9,7 @@ at: { lat: 42.52205, lng: -70.8879 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 59
+durationS: 56
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ script: |
 pronunciations:
   - written: "Narbonne"
     say: "nar-BONN"
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The taller part is the original, built in 1675 for a butcher named Thomas Ives."
@@ -79,3 +79,50 @@ sources:
     url: https://www.nps.gov/sama/learn/historyculture/places.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/salem-a-life-in-one-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.7
+    audioBytes: 891967
+    transcript:
+      totalS: 55.7
+      lines:
+        - text: Look at the plain house with the steep pointed roof.
+          atS: 0
+          durationS: 3.01
+        - text: The taller part is the original, built in 1675 for a butcher named Thomas Ives.
+          atS: 3.7
+          durationS: 6.59
+        - text: It still has its original peaked roof and its original brick chimney.
+          atS: 10.81
+          durationS: 4.09
+        - text: The Park Service calls it a witness house to the witch trials of 1692.
+          atS: 15.59
+          durationS: 4.87
+        - text: But it is named for Sarah Narbonne.
+          atS: 20.63
+          durationS: 2.3
+        - text: Her grandfather bought it in 1780.
+          atS: 23.21
+          durationS: 2.72
+        - text: Sarah was born in it, and lived in it for her entire life.
+          atS: 26.2
+          durationS: 3.8
+        - text: That life stretched nearly the length of the nineteenth century.
+          atS: 30.24
+          durationS: 3.6
+        - text: She died in 1895, at the age of a hundred and one.
+          atS: 34.17
+          durationS: 3.6
+        - text: Her unmarried daughter Mary lived on here until 1905.
+          atS: 38.09
+          durationS: 4.12
+        - text: The house has not been restored to any single moment.
+          atS: 42.6
+          durationS: 3.32
+        - text: It is kept as a study house, to show how it changed.
+          atS: 46.2
+          durationS: 3.34
+        - text: Nearly three hundred years of people living in it, and two hundred of those years were one family.
+          atS: 49.75
+          durationS: 5.93

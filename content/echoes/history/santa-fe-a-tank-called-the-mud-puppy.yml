@@ -9,7 +9,7 @@ at: { lat: 35.68685, lng: -105.93795 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 79
+durationS: 75
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ pronunciations:
     say: lah FON-dah
   - written: monte
     say: MON-tee
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at La Fonda, on the corner of the plaza."
@@ -95,3 +95,62 @@ sources:
     url: https://www.nps.gov/places/exchange-hotel-site-la-fonda.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/santa-fe-a-tank-called-the-mud-puppy/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.4
+    audioBytes: 1207109
+    transcript:
+      totalS: 75.4
+      lines:
+        - text: Look at La Fonda, on the corner of the plaza.
+          atS: 0
+          durationS: 3.13
+        - text: There has been an inn of some kind on this corner for a very long time, possibly since the 1600s.
+          atS: 3.52
+          durationS: 6.7
+        - text: In the days of the Santa Fe Trail, the traders came off the plains and in here.
+          atS: 10.73
+          durationS: 5.12
+        - text: To rest, and to gamble on billiards and on monte, the favorite local card game.
+          atS: 16.36
+          durationS: 5.27
+        - text: Fights could turn ugly.
+          atS: 21.94
+          durationS: 1.51
+        - text: Gun violence was common.
+          atS: 23.78
+          durationS: 1.6
+        - text: By 1851 it was the Exchange Hotel, the most noted hostelry between Denver and the City of Mexico.
+          atS: 25.69
+          durationS: 7.34
+        - text: Billy the Kid, Kit Carson and Buffalo Bill Cody all came through.
+          atS: 33.72
+          durationS: 4.54
+        - text: So did two future presidents, Hayes and Grant.
+          atS: 38.66
+          durationS: 3.12
+        - text: Then in 1880 the railroad arrived.
+          atS: 42.19
+          durationS: 2.67
+        - text: Newer hotels followed, and the old Exchange could not keep up.
+          atS: 45.34
+          durationS: 3.61
+        - text: Its end, in 1919, was unusual.
+          atS: 49.51
+          durationS: 2.93
+        - text: It was a First World War victory bond rally.
+          atS: 52.66
+          durationS: 2.75
+        - text: For every hundred dollar bond bought, a small tank called the Mud Puppy knocked down another piece of the old adobe walls.
+          atS: 55.74
+          durationS: 7.33
+        - text: When the rally was over, the Exchange was little more than a pile of rubble.
+          atS: 63.58
+          durationS: 4.14
+        - text: The hotel you are looking at was finished on the same corner in 1922.
+          atS: 68.05
+          durationS: 4.33
+        - text: It is still the only hotel on the plaza.
+          atS: 72.7
+          durationS: 2.67

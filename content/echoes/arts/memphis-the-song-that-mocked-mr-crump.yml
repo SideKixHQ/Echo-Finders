@@ -39,7 +39,7 @@ script: |
 pronunciations:
   - written: Crump
     say: krump
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This park is named for W. C. Handy."
@@ -95,3 +95,62 @@ sources:
     url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Memphis-Blues_Shain.pdf
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/memphis-the-song-that-mocked-mr-crump/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65.6
+    audioBytes: 1050792
+    transcript:
+      totalS: 65.6
+      lines:
+        - text: This park is named for W.
+          atS: 0
+          durationS: 1.65
+        - text: C.
+          atS: 1.67
+          durationS: 0.38
+        - text: Handy.
+          atS: 2.08
+          durationS: 0.67
+        - text: The city of Memphis created it in 1931, to honor him.
+          atS: 2.77
+          durationS: 3.99
+        - text: In 1909, Handy was hired to write a campaign song for a man running for mayor, Edward Crump.
+          atS: 7.09
+          durationS: 5.96
+        - text: The song was called Mr.
+          atS: 13.38
+          durationS: 1.29
+        - text: Crump.
+          atS: 14.69
+          durationS: 0.56
+        - text: And its words made fun of Crump's own reform platform.
+          atS: 15.42
+          durationS: 3.32
+        - text: Nobody knows whether Crump ever listened to the lyrics.
+          atS: 19.06
+          durationS: 3.09
+        - text: Later, he said he had not hired Handy at all.
+          atS: 22.76
+          durationS: 3.11
+        - text: Crump won anyway, and the song caught on around town.
+          atS: 26.68
+          durationS: 3.67
+        - text: In 1912 Handy put new words to it and published it as The Memphis Blues.
+          atS: 30.79
+          durationS: 5.59
+        - text: Sales were tiny at first, so he sold the rights, keeping only his name as composer.
+          atS: 37.49
+          durationS: 5.65
+        - text: By the fall of 1913, the man who bought it had sold fifty thousand copies of the sheet music.
+          atS: 43.75
+          durationS: 6.3
+        - text: And on the fifteenth of July, 1914, it became the very first blues song ever recorded.
+          atS: 50.49
+          durationS: 6.48
+        - text: A joke at a politician's expense became the first blues on record.
+          atS: 57.41
+          durationS: 4.75
+        - text: Handy learned the music business from it the hard way.
+          atS: 62.6
+          durationS: 3.02

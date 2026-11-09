@@ -12,7 +12,7 @@ inspo:
   kind: creation
   evidence: building
 format: short
-durationS: 60
+durationS: 57
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   It was called Ben-Hur.
 
   It made him rich and famous. Of all the governors who lived here, the world remembers the man who stayed up late, writing.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The Palace of the Governors."
@@ -67,3 +67,50 @@ sources:
     url: https://www.nps.gov/places/palace-of-the-governors.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/santa-fe-ben-hur-after-dark/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 56.8
+    audioBytes: 909104
+    transcript:
+      totalS: 56.8
+      lines:
+        - text: Look at the long, low adobe building on the north side of the plaza, with the covered porch.
+          atS: 0
+          durationS: 5.31
+        - text: The Palace of the Governors.
+          atS: 5.48
+          durationS: 1.66
+        - text: Since 1610 it has housed the offices and living quarters of governors.
+          atS: 7.42
+          durationS: 4.68
+        - text: Spanish colonial, Mexican, and American.
+          atS: 12.42
+          durationS: 3.06
+        - text: It came through the Pueblo Revolt of 1680, the Spanish reconquest, the arrival of the American army in 1846, and the invasion of Confederate troops from Texas in 1862.
+          atS: 15.87
+          durationS: 12.56
+        - text: But the most famous thing ever made here was not a law.
+          atS: 28.86
+          durationS: 3.37
+        - text: It was a novel.
+          atS: 32.55
+          durationS: 1.01
+        - text: From 1878 to 1880, the territorial governor was Lew Wallace.
+          atS: 33.89
+          durationS: 5.11
+        - text: By day he governed the territory.
+          atS: 39.32
+          durationS: 2.18
+        - text: At night, in his living quarters in this building, he finished his second novel.
+          atS: 41.89
+          durationS: 4.69
+        - text: It was called Ben-Hur.
+          atS: 46.75
+          durationS: 1.6
+        - text: It made him rich and famous.
+          atS: 48.63
+          durationS: 2.26
+        - text: Of all the governors who lived here, the world remembers the man who stayed up late, writing.
+          atS: 51.28
+          durationS: 5.47

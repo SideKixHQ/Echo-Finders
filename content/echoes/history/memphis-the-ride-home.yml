@@ -9,7 +9,7 @@ at: { lat: 35.1365, lng: -90.0627 }
 triggerRadiusKm: 0.15
 category: history
 format: short
-durationS: 87
+durationS: 81
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
   The bodies that were found were buried at Fort Pickering, and later moved to the Memphis National Cemetery.
 
   He made it through the war, and through the prison. It was the boat home that killed him.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In April 1865 a steamboat called the Sultana left Memphis going that way, carrying Union soldiers home from the war."
@@ -99,3 +99,62 @@ sources:
     url: https://www.nps.gov/people/valmore-lambert.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/memphis-the-ride-home/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.1
+    audioBytes: 1299060
+    transcript:
+      totalS: 81.1
+      lines:
+        - text: Look up the river, to the north.
+          atS: 0
+          durationS: 2.04
+        - text: In April 1865 a steamboat called the Sultana left Memphis going that way, carrying Union soldiers home from the war.
+          atS: 2.65
+          durationS: 8.35
+        - text: More than nineteen hundred of them were men just released from prison camps.
+          atS: 11.51
+          durationS: 4.01
+        - text: One was Private Valmore Lambert, a farmer from Ohio.
+          atS: 15.89
+          durationS: 3.76
+        - text: He had fought through two years of the war.
+          atS: 20.17
+          durationS: 2.41
+        - text: He was captured near Atlanta, and he survived eight months in Andersonville, the prison where more than thirteen thousand Union soldiers died.
+          atS: 23.02
+          durationS: 8.84
+        - text: The Sultana was overloaded, far beyond what it should have carried.
+          atS: 32.46
+          durationS: 3.91
+        - text: Before leaving, the captain had a leaking boiler patched instead of properly repaired, because a repair would have taken more time.
+          atS: 37.19
+          durationS: 7.26
+        - text: On the twenty-seventh of April, heading north from Memphis, three of its four boilers exploded.
+          atS: 45.74
+          durationS: 6.52
+        - text: More than a thousand men died.
+          atS: 53.08
+          durationS: 2.62
+        - text: It is still called the worst maritime disaster in American history.
+          atS: 56.52
+          durationS: 4.26
+        - text: No one was ever held accountable.
+          atS: 61.38
+          durationS: 2.22
+        - text: Valmore Lambert was among them.
+          atS: 64.3
+          durationS: 1.86
+        - text: Where his remains are, nobody knows.
+          atS: 66.48
+          durationS: 2.47
+        - text: The bodies that were found were buried at Fort Pickering, and later moved to the Memphis National Cemetery.
+          atS: 69.33
+          durationS: 5.94
+        - text: He made it through the war, and through the prison.
+          atS: 75.66
+          durationS: 2.95
+        - text: It was the boat home that killed him.
+          atS: 79.05
+          durationS: 2.08

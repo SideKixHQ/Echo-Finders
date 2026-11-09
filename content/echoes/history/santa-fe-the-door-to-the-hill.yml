@@ -9,7 +9,7 @@ at: { lat: 35.68775, lng: -105.9369 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 86
+durationS: 83
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,7 +37,7 @@ pronunciations:
     say: muh-KIB-in
   - written: La Fonda
     say: lah FON-dah
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Step into the little courtyard at 109 East Palace Avenue, and find the back wall."
@@ -94,3 +94,65 @@ sources:
     url: https://www.nps.gov/articles/000/109-east-palace.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/santa-fe-the-door-to-the-hill/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 83.1
+    audioBytes: 1331243
+    transcript:
+      totalS: 83.1
+      lines:
+        - text: Step into the little courtyard at 109 East Palace Avenue, and find the back wall.
+          atS: 0
+          durationS: 5.75
+        - text: There is a modest bronze plaque.
+          atS: 6.19
+          durationS: 1.99
+        - text: In March 1943, a widow named Dorothy McKibbin went to the lobby of La Fonda, on the plaza, to hear about a job.
+          atS: 8.78
+          durationS: 9.58
+        - text: She was introduced to a man who offered her work in an office here.
+          atS: 18.96
+          durationS: 3.58
+        - text: He did not tell her what the job would be.
+          atS: 23.14
+          durationS: 2.05
+        - text: She took it anyway.
+          atS: 25.52
+          durationS: 1.11
+        - text: The man was Robert Oppenheimer.
+          atS: 26.96
+          durationS: 1.99
+        - text: The next day she learned who her employer was.
+          atS: 29.39
+          durationS: 2.91
+        - text: A secret laboratory in the mountains, at Los Alamos, part of the Manhattan Project.
+          atS: 32.81
+          durationS: 5.42
+        - text: Soon all the civilian staff, and many of the soldiers, checked in at her office first.
+          atS: 39.18
+          durationS: 5.46
+        - text: She gave them passes, directions or a ride, and encouragement if they were tired and confused from the journey.
+          atS: 45.34
+          durationS: 7.5
+        - text: Every day, she and her assistants sent more than sixty-five people up.
+          atS: 53.16
+          durationS: 4.64
+        - text: Up to the secret city, known as The Hill.
+          atS: 58.5
+          durationS: 2.96
+        - text: People in Santa Fe would call her about strangers wandering around town, looking lost.
+          atS: 61.85
+          durationS: 5.16
+        - text: Usually they were looking for her office.
+          atS: 67.81
+          durationS: 2.02
+        - text: The plaque on the wall says it simply.
+          atS: 70.28
+          durationS: 2.09
+        - text: All the men and women who made the first atomic bomb passed through this portal.
+          atS: 72.97
+          durationS: 4.17
+        - text: The office stayed open until Dorothy McKibbin retired, in 1963.
+          atS: 77.83
+          durationS: 5.29

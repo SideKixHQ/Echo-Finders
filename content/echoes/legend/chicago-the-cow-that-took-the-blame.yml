@@ -9,7 +9,7 @@ at: { lat: 41.8693, lng: -87.6414 }
 triggerRadiusKm: 0.08
 category: legend
 format: short
-durationS: 68
+durationS: 54
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -33,7 +33,7 @@ script: |
   What came next is not a legend. Three hundred Chicagoans were dead. Ninety thousand people were left homeless. Four square miles, including the whole business district, were leveled.
 
   A whole city burned, and the one character everybody remembers is a cow.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "On the night of the eighth of October, 1871, a fire started in a barn not far from where you are standing."
@@ -86,3 +86,56 @@ sources:
     url: https://www.loc.gov/resource/sn82014064/1871-11-25/ed-1/?sp=6
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/chicago-the-cow-that-took-the-blame/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 53.5
+    audioBytes: 856441
+    transcript:
+      totalS: 53.5
+      lines:
+        - text: On the night of the eighth of October, 1871, a fire started in a barn not far from where you are standing.
+          atS: 0
+          durationS: 6.69
+        - text: A neighbor on this street was washing dishes when she saw a bright reflection on her window panes.
+          atS: 7.13
+          durationS: 4.82
+        - text: She ran into the street, and saw the O'Learys' barn and two others on fire.
+          atS: 12.33
+          durationS: 4.18
+        - text: That much comes from what witnesses told the inquiry afterwards.
+          atS: 16.83
+          durationS: 3.59
+        - text: Here is the part that comes from somewhere else.
+          atS: 20.75
+          durationS: 2.24
+        - text: The story goes that the O'Learys' cow kicked over an oil lamp, and set the straw alight.
+          atS: 23.37
+          durationS: 4.88
+        - text: It was a widely circulated rumor, and it has never stopped being told.
+          atS: 28.42
+          durationS: 3.89
+        - text: It is a legend.
+          atS: 32.44
+          durationS: 0.95
+        - text: Nobody has ever proved it.
+          atS: 33.51
+          durationS: 1.4
+        - text: No one knows for certain how the fire started.
+          atS: 35.04
+          durationS: 2.58
+        - text: What came next is not a legend.
+          atS: 37.79
+          durationS: 2.23
+        - text: Three hundred Chicagoans were dead.
+          atS: 40.23
+          durationS: 2.03
+        - text: Ninety thousand people were left homeless.
+          atS: 42.54
+          durationS: 2.28
+        - text: Four square miles, including the whole business district, were leveled.
+          atS: 45.06
+          durationS: 3.81
+        - text: A whole city burned, and the one character everybody remembers is a cow.
+          atS: 49.08
+          durationS: 4.38

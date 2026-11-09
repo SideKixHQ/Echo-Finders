@@ -9,7 +9,7 @@ at: { lat: 29.3619, lng: -98.47985 }
 triggerRadiusKm: 0.05
 category: legend
 format: short
-durationS: 61
+durationS: 51
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -31,7 +31,7 @@ script: |
   There is a less romantic idea. The window may be named for Saint Rose of Lima, the first saint of the New World.
 
   Either way, people stand here and look at it the same way. As if somebody made it for someone.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "It is called the Rose Window."
@@ -61,3 +61,50 @@ sources:
     url: https://www.nps.gov/saan/planyourvisit/sanjose.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/san-antonio-a-window-for-rosa/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 50.9
+    audioBytes: 816317
+    transcript:
+      totalS: 50.9
+      lines:
+        - text: Look for the carved stone window on this church, framed in swirling stone.
+          atS: 0
+          durationS: 4.48
+        - text: It is called the Rose Window.
+          atS: 4.66
+          durationS: 1.52
+        - text: It is known as the finest example of Spanish Colonial ornament in the United States.
+          atS: 6.3
+          durationS: 4.78
+        - text: Nobody knows for certain who carved it, or what it means.
+          atS: 11.33
+          durationS: 2.98
+        - text: So a story grew to fill the gap.
+          atS: 14.56
+          durationS: 2
+        - text: This is a legend, and it has never been proved.
+          atS: 16.71
+          durationS: 2.48
+        - text: The folklore says it was carved by Pedro Huizar, a carpenter and surveyor from Spain, as a monument to his sweetheart, Rosa.
+          atS: 19.52
+          durationS: 7.8
+        - text: Rosa set out from Spain to join him, and on the way, she was lost at sea.
+          atS: 27.76
+          durationS: 4.56
+        - text: Pedro finished the window anyway, as a declaration of love that would not end.
+          atS: 32.76
+          durationS: 4.63
+        - text: There is a less romantic idea.
+          atS: 38.09
+          durationS: 1.98
+        - text: The window may be named for Saint Rose of Lima, the first saint of the New World.
+          atS: 40.29
+          durationS: 4.78
+        - text: Either way, people stand here and look at it the same way.
+          atS: 45.77
+          durationS: 3.22
+        - text: As if somebody made it for someone.
+          atS: 49.02
+          durationS: 1.93

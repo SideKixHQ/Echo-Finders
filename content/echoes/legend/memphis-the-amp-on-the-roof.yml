@@ -9,7 +9,7 @@ at: { lat: 35.1393, lng: -90.03782 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 81
+durationS: 70
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -37,7 +37,7 @@ script: |
   The same year, Bill Haley covered the song. That was three years before he made Rock Around the Clock.
 
   Maybe it was an amplifier. Maybe it was a bass. Either way, the legend says rock and roll began with something broken on the side of a highway.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Three years before Elvis walked in, this same little studio made a record that pushed the blues toward rock and roll."
@@ -102,3 +102,74 @@ sources:
     url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Sun-Records-sessions.pdf
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/memphis-the-amp-on-the-roof/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 69.5
+    audioBytes: 1112650
+    transcript:
+      totalS: 69.5
+      lines:
+        - text: Three years before Elvis walked in, this same little studio made a record that pushed the blues toward rock and roll.
+          atS: 0
+          durationS: 6.72
+        - text: In March 1951, a band drove sixty-one miles up from Clarksdale, Mississippi, to record here.
+          atS: 7.16
+          durationS: 6.48
+        - text: Ike Turner was on piano.
+          atS: 14.34
+          durationS: 1.68
+        - text: Jackie Brenston sang.
+          atS: 16.35
+          durationS: 1.47
+        - text: The song was Rocket 88.
+          atS: 18.2
+          durationS: 1.72
+        - text: And the guitar on it sounds wrong.
+          atS: 20.31
+          durationS: 1.92
+        - text: Loud, and fuzzy, by accident.
+          atS: 22.61
+          durationS: 2.01
+        - text: What follows is a legend.
+          atS: 24.94
+          durationS: 1.51
+        - text: Nobody can prove it, and the people who were there did not agree.
+          atS: 26.83
+          durationS: 3.61
+        - text: The story is that on the drive up Highway 61, the guitar amplifier fell off the roof of the car, and the fall wrecked its speaker.
+          atS: 30.88
+          durationS: 7.88
+        - text: They plugged it in anyway.
+          atS: 39.21
+          durationS: 1.58
+        - text: Ike Turner remembered it differently.
+          atS: 40.96
+          durationS: 1.88
+        - text: He said it was the bass on top of the car that blew off.
+          atS: 43.17
+          durationS: 2.93
+        - text: It was raining, he said, and they had a lot of trouble that day.
+          atS: 46.48
+          durationS: 3.33
+        - text: They did not even expect to record.
+          atS: 49.89
+          durationS: 1.9
+        - text: They were paid twenty dollars apiece.
+          atS: 52.04
+          durationS: 2.05
+        - text: The same year, Bill Haley covered the song.
+          atS: 54.53
+          durationS: 2.68
+        - text: That was three years before he made Rock Around the Clock.
+          atS: 57.33
+          durationS: 3.12
+        - text: Maybe it was an amplifier.
+          atS: 60.84
+          durationS: 1.46
+        - text: Maybe it was a bass.
+          atS: 62.58
+          durationS: 1.23
+        - text: Either way, the legend says rock and roll began with something broken on the side of a highway.
+          atS: 64.19
+          durationS: 5.28

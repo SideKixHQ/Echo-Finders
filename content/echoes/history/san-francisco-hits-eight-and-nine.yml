@@ -9,7 +9,7 @@ at: { lat: 37.78278, lng: -122.51167 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 71
+durationS: 63
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   The admiral of the task force, Daniel Callaghan, was up here with his staff. So was the ship's captain, Cassin Young, who had been in command for a week, maybe two. Neither of them survived.
 
   Their names are on the plaque for those who did not come home. The steel next to it is still the shape that night left it.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Walk around this steel structure and look for two large holes punched clean through it."
@@ -88,3 +88,56 @@ sources:
     url: https://www.nps.gov/media/video/view.htm?id=AAAD7D76-0CF0-AD68-B715B71A19631FD6
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-hits-eight-and-nine/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 62.6
+    audioBytes: 1002727
+    transcript:
+      totalS: 62.6
+      lines:
+        - text: Walk around this steel structure and look for two large holes punched clean through it.
+          atS: 0
+          durationS: 5.18
+        - text: This is part of the bridge of the cruiser San Francisco.
+          atS: 5.62
+          durationS: 3.03
+        - text: The command center of the ship.
+          atS: 8.97
+          durationS: 1.66
+        - text: In 1942, during the Battle of Guadalcanal, she took forty-five hits and twenty-five fires.
+          atS: 11.94
+          durationS: 6.04
+        - text: It was a gun battle at night, with the two fleets mixed up together.
+          atS: 18.36
+          durationS: 4.04
+        - text: Veterans described it as a bar-room brawl.
+          atS: 23
+          durationS: 2.81
+        - text: These two openings are hits the Navy numbered eight and nine.
+          atS: 26.41
+          durationS: 3.53
+        - text: Five-inch shells, thought to be from a Japanese destroyer, maybe from a single volley.
+          atS: 30.55
+          durationS: 5.39
+        - text: The holes themselves were not the worst of it.
+          atS: 36.37
+          durationS: 2.52
+        - text: It was the fragments that flew inward when the shells burst.
+          atS: 39.17
+          durationS: 3.43
+        - text: The admiral of the task force, Daniel Callaghan, was up here with his staff.
+          atS: 42.92
+          durationS: 4.56
+        - text: So was the ship's captain, Cassin Young, who had been in command for a week, maybe two.
+          atS: 47.93
+          durationS: 5.13
+        - text: Neither of them survived.
+          atS: 53.44
+          durationS: 1.47
+        - text: Their names are on the plaque for those who did not come home.
+          atS: 55.61
+          durationS: 3.12
+        - text: The steel next to it is still the shape that night left it.
+          atS: 59.43
+          durationS: 3.17

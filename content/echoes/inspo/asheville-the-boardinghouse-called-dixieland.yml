@@ -12,7 +12,7 @@ inspo:
   kind: inspiration
   evidence: building
 format: short
-durationS: 74
+durationS: 70
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   In a later book he wrote that his mother's old dilapidated house had now become a fit museum.
 
   He was right. It opened as one in 1949. The novel has never gone out of print.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "A previous owner named it the Old Kentucky Home."
@@ -84,3 +84,65 @@ sources:
     url: https://historicsites.nc.gov/all-sites/thomas-wolfe-memorial/history
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/asheville-the-boardinghouse-called-dixieland/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.6
+    audioBytes: 1126861
+    transcript:
+      totalS: 69.6
+      lines:
+        - text: Look at the big rambling house with the porches.
+          atS: 0
+          durationS: 3
+        - text: A boardinghouse.
+          atS: 3.38
+          durationS: 1.21
+        - text: A previous owner named it the Old Kentucky Home.
+          atS: 5.03
+          durationS: 3.15
+        - text: In 1906, a boy named Thomas Wolfe moved in.
+          atS: 8.68
+          durationS: 4.03
+        - text: His mother ran the place.
+          atS: 13.22
+          durationS: 1.51
+        - text: She did not need the money.
+          atS: 15.24
+          durationS: 1.37
+        - text: His father made enough from his tombstone shop on the city square.
+          atS: 16.94
+          durationS: 3.68
+        - text: But Julia Wolfe was obsessed with real estate, and she used the boardinghouse profits to buy more of it.
+          atS: 21.22
+          durationS: 5.97
+        - text: Her son grew up, and wrote it all down.
+          atS: 27.79
+          durationS: 2.59
+        - text: His novel Look Homeward, Angel came out in 1929.
+          atS: 31.08
+          durationS: 4.12
+        - text: In it, this house became Dixieland.
+          atS: 35.58
+          durationS: 2.29
+        - text: A big cheaply constructed frame house of eighteen or twenty drafty, high-ceilinged rooms.
+          atS: 38.31
+          durationS: 5.52
+        - text: He wrote so frankly about the town and its people that Asheville was not amused.
+          atS: 44.21
+          durationS: 4.6
+        - text: The book was banned from the city's public library for over five years, and Wolfe stayed away from his hometown for nearly eight.
+          atS: 49.25
+          durationS: 7.29
+        - text: In a later book he wrote that his mother's old dilapidated house had now become a fit museum.
+          atS: 56.98
+          durationS: 5.55
+        - text: He was right.
+          atS: 62.81
+          durationS: 1.05
+        - text: It opened as one in 1949.
+          atS: 64.24
+          durationS: 2.82
+        - text: The novel has never gone out of print.
+          atS: 67.44
+          durationS: 2.17

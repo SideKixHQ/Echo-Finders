@@ -9,7 +9,7 @@ at: { lat: 41.48925, lng: -71.3123 }
 triggerRadiusKm: 0.05
 category: built
 format: look-below
-durationS: 24
+durationS: 20
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -22,7 +22,7 @@ script: |
   Inside, in the floor of the raised reading desk, there is a trap door. The building survey records that it leads to an escape hatch and a tunnel to Barney Street.
 
   Nobody walking past would know. The plainest front on the street keeps a way out under its floor.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "From the street this synagogue has a severe, plain face."
@@ -40,3 +40,26 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ri/ri0000/ri0083/data/ri0083data.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/newport-a-door-in-the-floor/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 20.3
+    audioBytes: 326469
+    transcript:
+      totalS: 20.3
+      lines:
+        - text: From the street this synagogue has a severe, plain face.
+          atS: 0
+          durationS: 3.48
+        - text: Inside, in the floor of the raised reading desk, there is a trap door.
+          atS: 3.81
+          durationS: 4.39
+        - text: The building survey records that it leads to an escape hatch and a tunnel to Barney Street.
+          atS: 8.58
+          durationS: 4.95
+        - text: Nobody walking past would know.
+          atS: 13.85
+          durationS: 1.94
+        - text: The plainest front on the street keeps a way out under its floor.
+          atS: 16.49
+          durationS: 3.86

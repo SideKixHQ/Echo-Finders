@@ -9,7 +9,7 @@ at: { lat: 35.6135, lng: -82.5625 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 88
+durationS: 82
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   Casualties? Reports range from none to three. But it is said that the next morning, the defenders found one Union soldier's leg, still in its boot.
 
   People around here still argue about what to call it. A battle, a skirmish, an engagement. The marker says battle. The state's own write-up says it fell well short of one.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "About a hundred yards north of the marker, on what is now the campus of the University of North Carolina at Asheville, there were once rough earthworks."
@@ -95,3 +95,65 @@ sources:
     url: https://www.dncr.nc.gov/blog-terms/buncombe-county
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/asheville-a-leg-in-a-boot/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 82.1
+    audioBytes: 1314942
+    transcript:
+      totalS: 82.1
+      lines:
+        - text: About a hundred yards north of the marker, on what is now the campus of the University of North Carolina at Asheville, there were once rough earthworks.
+          atS: 0
+          durationS: 8.6
+        - text: In April 1865, a Union colonel, Isaac Kirby, was ordered to scout in the direction of Asheville.
+          atS: 9.11
+          durationS: 7.06
+        - text: He set out from Tennessee with nine hundred troops.
+          atS: 16.61
+          durationS: 3.06
+        - text: The town's defenders were the Silver Grays.
+          atS: 19.96
+          durationS: 2.54
+        - text: Forty-four men, among them a fourteen-year-old boy and a sixty-year-old Baptist minister.
+          atS: 22.88
+          durationS: 5.62
+        - text: Their commander bullied, argued or shamed about two hundred and fifty more into joining them.
+          atS: 28.94
+          durationS: 5.47
+        - text: They had two small brass cannons, and they took them up to the earthworks.
+          atS: 34.85
+          durationS: 4.64
+        - text: At three in the afternoon, the two sides simply lined up and started firing.
+          atS: 40.01
+          durationS: 5.12
+        - text: There was no maneuvering.
+          atS: 45.51
+          durationS: 1.36
+        - text: Just gunfire, and a few cannon blasts, for about five hours.
+          atS: 47.08
+          durationS: 4.76
+        - text: Then Kirby's men retreated, leaving rifles, canteens and haversacks behind.
+          atS: 52.35
+          durationS: 5.38
+        - text: Casualties?
+          atS: 58.16
+          durationS: 0.94
+        - text: Reports range from none to three.
+          atS: 59.55
+          durationS: 2.1
+        - text: But it is said that the next morning, the defenders found one Union soldier's leg, still in its boot.
+          atS: 62.09
+          durationS: 6.35
+        - text: People around here still argue about what to call it.
+          atS: 68.95
+          durationS: 3.01
+        - text: A battle, a skirmish, an engagement.
+          atS: 72.47
+          durationS: 3.2
+        - text: The marker says battle.
+          atS: 76.49
+          durationS: 1.59
+        - text: The state's own write-up says it fell well short of one.
+          atS: 78.68
+          durationS: 3.42

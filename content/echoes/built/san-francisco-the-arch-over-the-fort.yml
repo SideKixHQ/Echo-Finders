@@ -9,7 +9,7 @@ at: { lat: 37.8104, lng: -122.4768 }
 triggerRadiusKm: 0.08
 category: built
 format: short
-durationS: 61
+durationS: 62
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   So he designed a steel arch to span the old fort, and the bridge went over the top of it.
 
   Most bridges are built over water. Down at this end, the bridge was built over a fort, on purpose.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Fort Point was built between 1853 and 1861 to guard the entrance to San Francisco Bay."
@@ -70,3 +70,50 @@ sources:
     url: https://www.nps.gov/goga/learn/historyculture/upload/2006-fopo-hsr.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-the-arch-over-the-fort/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 61.7
+    audioBytes: 987680
+    transcript:
+      totalS: 61.7
+      lines:
+        - text: Look up, above the brick fort, at the underside of the bridge.
+          atS: 0
+          durationS: 3.87
+        - text: There is a steel arch up there.
+          atS: 4.19
+          durationS: 1.8
+        - text: It does not cross any water.
+          atS: 6.32
+          durationS: 1.72
+        - text: It steps over the fort.
+          atS: 8.42
+          durationS: 1.72
+        - text: Fort Point was built between 1853 and 1861 to guard the entrance to San Francisco Bay.
+          atS: 10.58
+          durationS: 7.3
+        - text: Its guns never fired a shot in anger.
+          atS: 18.32
+          durationS: 2.67
+        - text: In the late 1930s, the plans for the Golden Gate Bridge also involved plans for the demolition of Fort Point.
+          atS: 22.29
+          durationS: 7.61
+        - text: Before construction began, Chief Engineer Joseph Strauss toured the empty fort.
+          atS: 31.01
+          durationS: 5.1
+        - text: He changed his mind, and he changed his design.
+          atS: 36.55
+          durationS: 3.23
+        - text: While the old fort has no military value now, he wrote, it remains nevertheless a fine example of the mason's art.
+          atS: 40.47
+          durationS: 7.58
+        - text: So he designed a steel arch to span the old fort, and the bridge went over the top of it.
+          atS: 48.66
+          durationS: 5.58
+        - text: Most bridges are built over water.
+          atS: 54.85
+          durationS: 2.24
+        - text: Down at this end, the bridge was built over a fort, on purpose.
+          atS: 57.53
+          durationS: 4.14

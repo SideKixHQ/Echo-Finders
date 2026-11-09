@@ -9,7 +9,7 @@ at: { lat: 36.6678, lng: -96.34 }
 triggerRadiusKm: 0.06
 category: true-crime
 format: short
-durationS: 79
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -44,12 +44,12 @@ pronunciations:
     say: "OH-sayj"
   - written: "Pawhuska"
     say: "paw-HUSS-kuh"
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: convicted
-  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedBy: "James (owner), approved 2026-11-09"
   reviewedAt: "2026-11-09"
   contentWarning: "This echo concerns a series of murders in the 1920s. No violence is described."
 claims:
@@ -113,3 +113,56 @@ sources:
     url: https://www.archives.gov/calendar/event/killers-of-the-flower-moon-the-osage-murders-and-the-birth-of-the-fbi
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/pawhuska-the-missing-panel/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 68.7
+    audioBytes: 1100111
+    transcript:
+      totalS: 68.7
+      lines:
+        - text: In 2012 the writer David Grann visited the Osage nation museum and saw a long panoramic photograph on the wall.
+          atS: 0
+          durationS: 8.12
+        - text: It was taken in 1924.
+          atS: 8.44
+          durationS: 2.03
+        - text: It showed what looked like an innocent pageant of Osage people and white settlers.
+          atS: 10.72
+          durationS: 5.25
+        - text: A section of it had been cut out.
+          atS: 16.35
+          durationS: 1.87
+        - text: He asked the museum director why.
+          atS: 18.43
+          durationS: 1.96
+        - text: She said it held the image of a figure so frightening that she had decided to remove that piece.
+          atS: 20.56
+          durationS: 5
+        - text: Then she pointed at the gap, and said, the Devil was standing right there.
+          atS: 25.77
+          durationS: 4.28
+        - text: The missing piece showed one of the men behind the killing of Osage people for their oil wealth.
+          atS: 30.27
+          durationS: 5.39
+        - text: Oil had been found on Osage land, and in the nineteen twenties they were among the richest people per capita in the world.
+          atS: 36.09
+          durationS: 7.13
+        - text: Then, one by one, they began to be killed.
+          atS: 43.55
+          durationS: 3.18
+        - text: The Osage call those years the Reign of Terror.
+          atS: 47.43
+          durationS: 3.31
+        - text: William Hale and John Ramsey were tried and sent to prison for their part.
+          atS: 51.43
+          durationS: 4.34
+        - text: Grann has written that there was a deeper and darker conspiracy, which the investigators never exposed.
+          atS: 56.38
+          durationS: 5.48
+        - text: The director did not cut that figure out to forget.
+          atS: 62.18
+          durationS: 2.6
+        - text: She cut him out because the Osage cannot forget.
+          atS: 65.22
+          durationS: 3.46

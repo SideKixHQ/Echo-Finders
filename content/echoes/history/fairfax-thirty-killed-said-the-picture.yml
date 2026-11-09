@@ -9,7 +9,7 @@ at: { lat: 38.8459, lng: -77.3044 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 47
+durationS: 42
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   And a man who had been in the town that night told reporters the count of the dead was exaggerated.
 
   The war had barely started. Already, the picture was bigger than the fight.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "On the first of June, 1861, a company of United States dragoons charged into this town, and back out again."
@@ -65,3 +65,38 @@ sources:
     url: https://tile.loc.gov/storage-services/service/rbc/lprbscsm/scsm1144/scsm1144.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fairfax-thirty-killed-said-the-picture/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 41.6
+    audioBytes: 666270
+    transcript:
+      totalS: 41.6
+      lines:
+        - text: On the first of June, 1861, a company of United States dragoons charged into this town, and back out again.
+          atS: 0
+          durationS: 7.57
+        - text: A week later an illustrated newspaper printed a picture of the charge.
+          atS: 8.52
+          durationS: 4.61
+        - text: Its caption said they killed thirty of the enemy and carried off five prisoners, in the face of fifteen hundred troops.
+          atS: 13.64
+          durationS: 7.01
+        - text: Early newspaper reports said much the same.
+          atS: 20.98
+          durationS: 2.59
+        - text: Thirty rebels killed.
+          atS: 23.78
+          durationS: 1.39
+        - text: Then an official dispatch to the War Department put the Confederate loss at twenty-seven.
+          atS: 25.5
+          durationS: 5.09
+        - text: And a man who had been in the town that night told reporters the count of the dead was exaggerated.
+          atS: 30.86
+          durationS: 5.51
+        - text: The war had barely started.
+          atS: 36.65
+          durationS: 1.93
+        - text: Already, the picture was bigger than the fight.
+          atS: 39.02
+          durationS: 2.54

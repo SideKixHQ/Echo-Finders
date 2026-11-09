@@ -9,7 +9,7 @@ at: { lat: 35.2265, lng: -80.84395 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 76
+durationS: 67
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   Five Americans were killed. The British counted forty-four casualties.
 
   The courthouse is long gone, and the wall with it. But the crossing is still the heart of the city.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Picture about twenty houses on two streets, and a courthouse right in the middle where they cross."
@@ -93,3 +93,59 @@ sources:
     url: https://www.dncr.nc.gov/blog/2024/01/17/mecklenburg-resolves-l-115
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-the-wall-in-front-of-the-courthouse/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 67
+    audioBytes: 1073362
+    transcript:
+      totalS: 67
+      lines:
+        - text: Look back up the street to the crossing.
+          atS: 0
+          durationS: 2.11
+        - text: Now take away the towers.
+          atS: 2.5
+          durationS: 1.64
+        - text: Picture about twenty houses on two streets, and a courthouse right in the middle where they cross.
+          atS: 5.08
+          durationS: 5.82
+        - text: That was Charlotte in late September 1780, when the British army under Lord Cornwallis came up the road.
+          atS: 11.51
+          durationS: 7.14
+        - text: A militia officer, William Davie, had just under a hundred and fifty mounted men.
+          atS: 19.09
+          durationS: 5.21
+        - text: He put them behind a stone wall in front of the courthouse, and along the roads behind hedges and houses.
+          atS: 24.9
+          durationS: 6.91
+        - text: Then he waited for the British to ride straight into the middle of town.
+          atS: 32.42
+          durationS: 3.77
+        - text: The next morning, British cavalry reached the edge of Charlotte, and their commander took the bait.
+          atS: 36.79
+          durationS: 5.77
+        - text: He charged his horsemen straight at Davie's men.
+          atS: 43
+          durationS: 2.95
+        - text: The fire from the wall threw them back.
+          atS: 46.34
+          durationS: 2.34
+        - text: They charged again, and were thrown back again.
+          atS: 48.85
+          durationS: 3.03
+        - text: Only when British infantry worked around the sides did the militia pull out.
+          atS: 52.13
+          durationS: 4.38
+        - text: Five Americans were killed.
+          atS: 56.75
+          durationS: 1.77
+        - text: The British counted forty-four casualties.
+          atS: 58.69
+          durationS: 2.59
+        - text: The courthouse is long gone, and the wall with it.
+          atS: 61.49
+          durationS: 2.79
+        - text: But the crossing is still the heart of the city.
+          atS: 64.66
+          durationS: 2.36

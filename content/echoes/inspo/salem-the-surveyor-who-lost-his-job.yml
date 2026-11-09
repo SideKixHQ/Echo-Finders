@@ -12,7 +12,7 @@ inspo:
   kind: creation
   evidence: site
 format: short
-durationS: 54
+durationS: 52
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
   In the introduction he describes this Custom House, and pretends to find the story among the papers of a previous surveyor.
 
   The book begins in this building, with a man pretending to find it.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look up at the eagle on the roof."
@@ -77,3 +77,44 @@ sources:
     url: https://www.nps.gov/places/custom-house.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/salem-the-surveyor-who-lost-his-job/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 51.8
+    audioBytes: 830110
+    transcript:
+      totalS: 51.8
+      lines:
+        - text: Look up at the eagle on the roof.
+          atS: 0
+          durationS: 1.82
+        - text: It is a fibreglass copy.
+          atS: 1.94
+          durationS: 1.69
+        - text: The wooden original, put up in 1826, is on display inside.
+          atS: 4.14
+          durationS: 4.67
+        - text: In 1846 a writer who could not support his family on his books was given a job in this building.
+          atS: 9.42
+          durationS: 6.01
+        - text: He became Surveyor of the port.
+          atS: 15.71
+          durationS: 2.07
+        - text: His name was Nathaniel Hawthorne.
+          atS: 18.29
+          durationS: 2.11
+        - text: His friends in the Democratic Party had got him the job.
+          atS: 20.72
+          durationS: 3.53
+        - text: Then in 1848 the Whigs came in, and he lost it, after a painful and prolonged fight to keep it.
+          atS: 25.2
+          durationS: 7.01
+        - text: He turned the pain, the anger and the betrayal into his first great novel, The Scarlet Letter.
+          atS: 32.73
+          durationS: 6.13
+        - text: In the introduction he describes this Custom House, and pretends to find the story among the papers of a previous surveyor.
+          atS: 39.67
+          durationS: 7.09
+        - text: The book begins in this building, with a man pretending to find it.
+          atS: 47.46
+          durationS: 4.37

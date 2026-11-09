@@ -9,7 +9,7 @@ at: { lat: 35.22895, lng: -80.8461 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 73
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   It is still there, on Randolph Road.
 
   So the coins came from here, and the building that made them went to live somewhere quieter.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This federal building stands on the site of Charlotte's branch of the United States Mint."
@@ -92,3 +92,50 @@ sources:
     url: https://www.dncr.nc.gov/blog/2024/01/11/branch-us-mint-l-5
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-the-mint-that-moved/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.1
+    audioBytes: 1105963
+    transcript:
+      totalS: 69.1
+      lines:
+        - text: This federal building stands on the site of Charlotte's branch of the United States Mint.
+          atS: 0
+          durationS: 4.95
+        - text: The street beside it is still called Mint Street.
+          atS: 5.39
+          durationS: 3.3
+        - text: For years, gold from the mines around Charlotte went all the way to Philadelphia to be made into coins.
+          atS: 9.07
+          durationS: 6.23
+        - text: So much came in that Congress opened a branch here.
+          atS: 15.74
+          durationS: 3.33
+        - text: It started work in December 1837, and it only ever made gold coins.
+          atS: 19.46
+          durationS: 5.87
+        - text: It was designed by William Strickland, one of the best known architects in the country.
+          atS: 25.77
+          durationS: 5.24
+        - text: By the 1930s the government wanted this block for a bigger post office, and the mint was in the way.
+          atS: 31.52
+          durationS: 6.65
+        - text: In 1932 it faced demolition.
+          atS: 39.13
+          durationS: 2.64
+        - text: Instead, a group of citizens led by Mary Myers Dwelle paid to take it apart and rebuild it in the Eastover neighborhood.
+          atS: 42.15
+          durationS: 7.35
+        - text: It opened again on the first of June, 1936, a century after it was first dedicated.
+          atS: 49.94
+          durationS: 6.19
+        - text: This time it was an art museum, the first in North Carolina.
+          atS: 56.56
+          durationS: 3.74
+        - text: It is still there, on Randolph Road.
+          atS: 60.63
+          durationS: 2.48
+        - text: So the coins came from here, and the building that made them went to live somewhere quieter.
+          atS: 63.55
+          durationS: 5.5

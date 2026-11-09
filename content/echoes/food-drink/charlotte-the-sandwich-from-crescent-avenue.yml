@@ -9,7 +9,7 @@ at: { lat: 35.2142, lng: -80.8215 }
 triggerRadiusKm: 0.25
 category: food-drink
 format: short
-durationS: 75
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   By the nineties, the city's taste had moved on, and the sandwich faded away.
 
   Plain, cold, and neat. For fifty years, it was what a Charlotte party tasted like.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Somewhere on this street, in 1941, a caterer's kitchen invented a sandwich that Charlotte would eat at parties for nearly half a century."
@@ -88,3 +88,65 @@ sources:
     url: https://www.ourstate.com/the-case-of-the-missing-culinary-classic/
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-the-sandwich-from-crescent-avenue/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.5
+    audioBytes: 1144415
+    transcript:
+      totalS: 71.5
+      lines:
+        - text: Somewhere on this street, in 1941, a caterer's kitchen invented a sandwich that Charlotte would eat at parties for nearly half a century.
+          atS: 0
+          durationS: 8.66
+        - text: To old Charlotte it was simply the vegetable sandwich.
+          atS: 9.47
+          durationS: 3.27
+        - text: Not any sandwich with vegetables in it.
+          atS: 13.13
+          durationS: 2.3
+        - text: This one.
+          atS: 16.03
+          durationS: 0.77
+        - text: Finely minced raw vegetables, bound with mayonnaise, on white bread.
+          atS: 17.75
+          durationS: 4.53
+        - text: No crusts.
+          atS: 22.52
+          durationS: 0.95
+        - text: No garlic.
+          atS: 23.59
+          durationS: 0.94
+        - text: The caterer was Eva Pressly, and the idea came from her sister and partner, Dot Thompson.
+          atS: 24.91
+          durationS: 5.99
+        - text: She chopped the vegetables fine and drained them twice.
+          atS: 31.42
+          durationS: 3.11
+        - text: You went to the house on Crescent Avenue to pick them up.
+          atS: 35.13
+          durationS: 2.73
+        - text: They came packed in a white shirt box.
+          atS: 37.99
+          durationS: 2.3
+        - text: Word traveled.
+          atS: 40.57
+          durationS: 1.18
+        - text: People as far away as New York and California called to ask about them.
+          atS: 42.19
+          durationS: 4.01
+        - text: When the sisters sold the business in 1975, the recipe went with it, and it stayed a secret.
+          atS: 46.71
+          durationS: 6.66
+        - text: Later cooks rebuilt it from memory, and added gelatin to hold it together.
+          atS: 54.19
+          durationS: 4.33
+        - text: By the nineties, the city's taste had moved on, and the sandwich faded away.
+          atS: 59.12
+          durationS: 5.05
+        - text: Plain, cold, and neat.
+          atS: 64.55
+          durationS: 2.7
+        - text: For fifty years, it was what a Charlotte party tasted like.
+          atS: 67.7
+          durationS: 3.77

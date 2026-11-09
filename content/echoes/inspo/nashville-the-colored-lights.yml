@@ -12,7 +12,7 @@ inspo:
   kind: creation
   evidence: building
 format: short
-durationS: 68
+durationS: 59
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ script: |
   The Everly Brothers cut All I Have to Do Is Dream and Cathy's Clown here too.
 
   A thousand hits, sung under colored bulbs, because one singer wanted the room to feel right.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Inside this plain concrete-block building, the lights over the studio floor hang from the ceiling in groups of four."
@@ -83,3 +83,47 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tn/tn0400/tn0437/data/tn0437data.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-the-colored-lights/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 59.4
+    audioBytes: 951318
+    transcript:
+      totalS: 59.4
+      lines:
+        - text: Inside this plain concrete-block building, the lights over the studio floor hang from the ceiling in groups of four.
+          atS: 0
+          durationS: 6.29
+        - text: Each group has a red bulb, a blue, a green and a white.
+          atS: 6.99
+          durationS: 3.8
+        - text: They are there because Elvis Presley did not like fluorescent light.
+          atS: 11.3
+          durationS: 3.56
+        - text: This is RCA Studio B.
+          atS: 15.37
+          durationS: 2.36
+        - text: It was built in 1957, the first studio in Nashville that belonged to a major label.
+          atS: 18.17
+          durationS: 5.28
+        - text: About thirty-five thousand recording sessions happened in here.
+          atS: 24.15
+          durationS: 3.43
+        - text: More than a thousand hit records came out.
+          atS: 28.18
+          durationS: 2.45
+        - text: Elvis's first session here ran overnight, in June 1958, while he was on leave from the army.
+          atS: 31.44
+          durationS: 6.23
+        - text: His last was exactly thirteen years later.
+          atS: 38.28
+          durationS: 2.77
+        - text: In between, he made more than two hundred and thirty recordings in this building, among them It's Now or Never and Are You Lonesome Tonight.
+          atS: 41.66
+          durationS: 7.47
+        - text: The Everly Brothers cut All I Have to Do Is Dream and Cathy's Clown here too.
+          atS: 49.37
+          durationS: 4.17
+        - text: A thousand hits, sung under colored bulbs, because one singer wanted the room to feel right.
+          atS: 53.78
+          durationS: 5.62

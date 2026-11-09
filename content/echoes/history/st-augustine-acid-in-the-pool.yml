@@ -9,7 +9,7 @@ at: { lat: 29.8943, lng: -81.31125 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 69
+durationS: 65
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ script: |
 pronunciations:
   - written: Hayling
     say: HAY-ling
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In 1964, one of the buildings on it was the Monson Motor Lodge."
@@ -85,3 +85,62 @@ sources:
     url: https://www.nps.gov/casa/learn/historyculture/african-americans-1821-to-present-day.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/st-augustine-acid-in-the-pool/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65.4
+    audioBytes: 1047866
+    transcript:
+      totalS: 65.4
+      lines:
+        - text: Look along this bayfront.
+          atS: 0
+          durationS: 1.81
+        - text: In 1964, one of the buildings on it was the Monson Motor Lodge.
+          atS: 2.25
+          durationS: 5.06
+        - text: St.
+          atS: 7.92
+          durationS: 0.27
+        - text: Augustine was the oldest city in the United States, and one of the most segregated.
+          atS: 8.21
+          durationS: 5.57
+        - text: A local dentist, Robert Hayling, started the protests.
+          atS: 14.73
+          durationS: 4.32
+        - text: When they got nowhere, he appealed to the Southern Christian Leadership Conference for help.
+          atS: 19.49
+          durationS: 4.87
+        - text: Martin Luther King Junior came, and was arrested here, for trying to eat lunch at the Monson's restaurant.
+          atS: 24.96
+          durationS: 6.15
+        - text: Then came the swim-in.
+          atS: 31.72
+          durationS: 1.36
+        - text: African Americans got into the motel's swimming pool.
+          atS: 33.59
+          durationS: 3.03
+        - text: The manager threw acid into the water.
+          atS: 37
+          durationS: 2.36
+        - text: Muriatic acid.
+          atS: 39.74
+          durationS: 1.43
+        - text: Then he drained the pool, and stationed guards around it.
+          atS: 41.45
+          durationS: 3.58
+        - text: The pictures went out across the whole country.
+          atS: 45.35
+          durationS: 2.63
+        - text: That July, President Lyndon Johnson signed the Civil Rights Act of 1964.
+          atS: 48.49
+          durationS: 5.45
+        - text: The demonstrations here are widely credited with winning it the national attention it needed.
+          atS: 54.32
+          durationS: 5.09
+        - text: A man poured acid into a pool to keep people out.
+          atS: 59.79
+          durationS: 3.22
+        - text: The whole country saw him do it.
+          atS: 63.33
+          durationS: 2.1

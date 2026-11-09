@@ -9,7 +9,7 @@ at: { lat: 36.1614, lng: -86.7787 }
 triggerRadiusKm: 0.05
 category: arts
 format: short
-durationS: 65
+durationS: 59
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   He died on the first of January, 1953, in the back seat of a car on the way to a show. He was twenty-nine.
 
   Six encores, on the first night. Nobody in the room could have guessed how few nights were left.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "On the eleventh of June, 1949, a twenty-six year old walked out on this stage for his first night on the Grand Ole Opry."
@@ -88,3 +88,50 @@ sources:
     url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/LovesickBlues.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-six-encores/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 59.1
+    audioBytes: 947138
+    transcript:
+      totalS: 59.1
+      lines:
+        - text: On the eleventh of June, 1949, a twenty-six year old walked out on this stage for his first night on the Grand Ole Opry.
+          atS: 0
+          durationS: 8.16
+        - text: His name was Hank Williams, and the song was Lovesick Blues.
+          atS: 8.54
+          durationS: 4.1
+        - text: He had not written it.
+          atS: 13.03
+          durationS: 1.19
+        - text: It came from the nineteen twenties, from songwriters in New York, and it was not even a country song to begin with.
+          atS: 14.49
+          durationS: 6.33
+        - text: He yodeled it, and he made it his.
+          atS: 21.26
+          durationS: 2.21
+        - text: It had gone to number one and stayed there for sixteen weeks.
+          atS: 23.79
+          durationS: 3.63
+        - text: That night the audience here, three thousand people, called him back for six encores.
+          atS: 27.86
+          durationS: 5.67
+        - text: One witness said he stopped the show colder than it had ever been stopped in its thirty-one years.
+          atS: 34.23
+          durationS: 5.32
+        - text: Three years later, the Opry fired him for drinking.
+          atS: 40.24
+          durationS: 3.6
+        - text: He died on the first of January, 1953, in the back seat of a car on the way to a show.
+          atS: 44.54
+          durationS: 6.02
+        - text: He was twenty-nine.
+          atS: 51.07
+          durationS: 1.43
+        - text: Six encores, on the first night.
+          atS: 52.94
+          durationS: 2.33
+        - text: Nobody in the room could have guessed how few nights were left.
+          atS: 55.79
+          durationS: 3.33

@@ -9,7 +9,7 @@ at: { lat: 24.55515, lng: -81.79028 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 74
+durationS: 71
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
 pronunciations:
   - written: Gato
     say: GAH-toe
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Its veranda wraps all four sides of an inner courtyard."
@@ -81,3 +81,59 @@ sources:
     url: https://www.loc.gov/item/fl0136/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-a-house-named-for-mercedes/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.3
+    audioBytes: 1141489
+    transcript:
+      totalS: 71.3
+      lines:
+        - text: Look at this big wooden house from the sidewalk.
+          atS: 0
+          durationS: 2.51
+        - text: It is private, so stay out here.
+          atS: 2.83
+          durationS: 2.24
+        - text: Its veranda wraps all four sides of an inner courtyard.
+          atS: 5.68
+          durationS: 3.37
+        - text: That courtyard is a Cuban idea.
+          atS: 9.65
+          durationS: 2.38
+        - text: The house was built around 1890.
+          atS: 12.35
+          durationS: 2.29
+        - text: Its owner was Eduardo Gato, a Cuban immigrant who made a fortune in the cigar business.
+          atS: 15.08
+          durationS: 5.89
+        - text: It has been said he brought Cuban carpenters over to build it.
+          atS: 21.66
+          durationS: 3.2
+        - text: But it was not built here.
+          atS: 25.31
+          durationS: 1.6
+        - text: Gato put it on the part of his land that faced the waterfront.
+          atS: 27.52
+          durationS: 3.68
+        - text: In 1911, he let a group of Cuban residents of Key West turn it into a hospital, for the poor of all nations.
+          atS: 31.71
+          durationS: 7.54
+        - text: It was named Mercedes, in honor of his wife.
+          atS: 40.19
+          durationS: 3.13
+        - text: In 1919 the waterfront land was sold to the City of Key West, to become a park.
+          atS: 44.14
+          durationS: 5.78
+        - text: The house was moved here, to another piece of Gato property, and the hospital went on.
+          atS: 50.36
+          durationS: 5.89
+        - text: It ran until just before the Second World War, and closed for lack of money.
+          atS: 56.85
+          durationS: 4.91
+        - text: A cigar fortune, a hospital for anyone who needed it, and a house that changed streets.
+          atS: 62.15
+          durationS: 5.76
+        - text: All of it still standing here on Virginia Street.
+          atS: 68.51
+          durationS: 2.77

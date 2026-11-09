@@ -9,7 +9,7 @@ at: { lat: 34.7514, lng: -112.11567 }
 triggerRadiusKm: 0.1
 category: history
 format: short
-durationS: 83
+durationS: 81
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   How many died? Nobody could agree. One Arizona paper said three. The wire said eleven bodies had been found, and a score or more were missing. The real number was lost in the smoke.
 
   What saved the town's future was a strip of open ground, between the burned district and the great works of the United Verde company. The company's plant survived. The town would be built again around it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look down along the gulch this part of town sits in."
@@ -98,3 +98,71 @@ sources:
     url: https://www.loc.gov/resource/sn84020558/1898-09-12/ed-1/?sp=1
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/jerome-the-day-the-stone-melted/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.7
+    audioBytes: 1291536
+    transcript:
+      totalS: 80.7
+      lines:
+        - text: Look down along the gulch this part of town sits in.
+          atS: 0
+          durationS: 3.09
+        - text: In 1898, the business district filled it.
+          atS: 3.69
+          durationS: 3.35
+        - text: Wooden buildings and stone ones, packed in close.
+          atS: 7.74
+          durationS: 3.46
+        - text: On the morning of the eleventh of September, at about twenty past seven, a fire started.
+          atS: 12.5
+          durationS: 5.92
+        - text: One paper said nobody knew how.
+          atS: 18.94
+          durationS: 2.21
+        - text: The wire reports said it was a gasoline stove, in a cabin.
+          atS: 21.42
+          durationS: 3.64
+        - text: A good breeze from the north did the rest.
+          atS: 25.88
+          durationS: 2.26
+        - text: The fire raced through the narrow gulch and the ravines leading into it.
+          atS: 28.75
+          durationS: 4.01
+        - text: The stone buildings, one report said, melted before the flames as rapidly as pasteboard.
+          atS: 33.26
+          durationS: 5.9
+        - text: By the end, not a single business house remained.
+          atS: 39.97
+          durationS: 3.27
+        - text: More than a hundred and fifty homes were gone, and the stores, and the saloons.
+          atS: 43.76
+          durationS: 5.1
+        - text: The only building to escape was the Methodist church.
+          atS: 49.81
+          durationS: 3.31
+        - text: How many died?
+          atS: 53.56
+          durationS: 1.09
+        - text: Nobody could agree.
+          atS: 55.34
+          durationS: 1.15
+        - text: One Arizona paper said three.
+          atS: 57.1
+          durationS: 2.39
+        - text: The wire said eleven bodies had been found, and a score or more were missing.
+          atS: 60.09
+          durationS: 4.68
+        - text: The real number was lost in the smoke.
+          atS: 65.21
+          durationS: 2.18
+        - text: What saved the town's future was a strip of open ground, between the burned district and the great works of the United Verde company.
+          atS: 67.91
+          durationS: 7.81
+        - text: The company's plant survived.
+          atS: 76.1
+          durationS: 1.68
+        - text: The town would be built again around it.
+          atS: 78.23
+          durationS: 2.44

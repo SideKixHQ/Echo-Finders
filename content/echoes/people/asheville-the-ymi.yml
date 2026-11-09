@@ -9,7 +9,7 @@ at: { lat: 35.5939, lng: -82.5503 }
 triggerRadiusKm: 0.05
 category: people
 format: short
-durationS: 84
+durationS: 81
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
 pronunciations:
   - written: YMI
     say: Y M I
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at the building of the Young Men's Institute."
@@ -88,3 +88,62 @@ sources:
     url: https://www.dncr.nc.gov/blog/2024/01/23/young-mens-institute-p-88
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/asheville-the-ymi/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81
+    audioBytes: 1296970
+    transcript:
+      totalS: 81
+      lines:
+        - text: Look at the building of the Young Men's Institute.
+          atS: 0
+          durationS: 2.48
+        - text: People here call it the YMI.
+          atS: 2.87
+          durationS: 2.18
+        - text: In the early 1890s, while George Vanderbilt was building his lavish home out at Biltmore, he put up this building as a community center for his African American workers, and for people in town.
+          atS: 5.38
+          durationS: 11.44
+        - text: It was designed by the supervising architect of Biltmore House, Richard Sharp Smith.
+          atS: 17.25
+          durationS: 5.36
+        - text: It had speakers, a gym, baths, and classes for children and adults.
+          atS: 23.22
+          durationS: 5.04
+        - text: By 1910 it even had its own orchestra.
+          atS: 28.77
+          durationS: 3.04
+        - text: Congregations held their worship services here.
+          atS: 32.62
+          durationS: 2.83
+        - text: One of Asheville's first Black doctors, James Byron, kept his office here.
+          atS: 35.83
+          durationS: 4.36
+        - text: And from 1926 until 1966, a branch of the public library.
+          atS: 40.56
+          durationS: 5.38
+        - text: Then Vanderbilt stepped away.
+          atS: 46.31
+          durationS: 1.71
+        - text: In 1906 the YMI was incorporated, with forty-nine of Asheville's Black leaders as members.
+          atS: 49.1
+          durationS: 6.44
+        - text: They could not raise enough to buy the building outright.
+          atS: 56.35
+          durationS: 2.69
+        - text: They raised ten thousand dollars, and took a mortgage for the rest.
+          atS: 59.37
+          durationS: 3.95
+        - text: By 1977 the building had been condemned.
+          atS: 64.13
+          durationS: 3.27
+        - text: The African American community of Asheville rallied, got it onto the National Register of Historic Places, and saved it.
+          atS: 68.22
+          durationS: 7.81
+        - text: Built by a Vanderbilt.
+          atS: 76.64
+          durationS: 1.57
+        - text: Saved by the people it was built for.
+          atS: 78.59
+          durationS: 2.4

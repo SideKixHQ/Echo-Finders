@@ -9,7 +9,7 @@ at: { lat: 37.8066, lng: -122.4238 }
 triggerRadiusKm: 0.07
 category: arts
 format: short
-durationS: 80
+durationS: 73
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   Sargent Johnson walked away from the project. The sculptor Beniamino Bufano took his animal statues away. He said he would rather have kids playing over his statues than drunks stumbling over them.
 
   The city was found guilty of mismanagement, and the nightclub was thrown out. But the mosaic stayed the way Johnson left it.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The Works Progress Administration built this bathhouse from 1936 to 1939, as a public place for swimmers."
@@ -85,3 +85,62 @@ sources:
     url: https://www.nps.gov/safr/learn/historyculture/aquatic-park-bathhouse.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-the-unfinished-mosaic/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.3
+    audioBytes: 1174508
+    transcript:
+      totalS: 73.3
+      lines:
+        - text: Look at the building shaped like a ship, and at the tile mosaic on its veranda.
+          atS: 0
+          durationS: 4.39
+        - text: It was never finished.
+          atS: 4.56
+          durationS: 1.42
+        - text: The Works Progress Administration built this bathhouse from 1936 to 1939, as a public place for swimmers.
+          atS: 6.93
+          durationS: 7.63
+        - text: Showers switched on by electric eyes.
+          atS: 14.88
+          durationS: 2.33
+        - text: Lockers for hundreds.
+          atS: 17.5
+          durationS: 1.38
+        - text: Sargent Claude Johnson, the most prominent African American artist working for the WPA in Northern California, carved the green slate on the front, and designed that mosaic.
+          atS: 19.12
+          durationS: 11.06
+        - text: It opened on the twenty-second of January, 1939.
+          atS: 30.51
+          durationS: 3.66
+        - text: Then the city leased most of the building to private businessmen, who opened an exclusive restaurant and nightclub.
+          atS: 34.49
+          durationS: 6.31
+        - text: When a group of schoolboys brought their sack lunches to the veranda, they were told to leave.
+          atS: 41.13
+          durationS: 5.24
+        - text: Signs went up.
+          atS: 46.65
+          durationS: 1.11
+        - text: Private.
+          atS: 48.37
+          durationS: 0.82
+        - text: Keep out.
+          atS: 50.01
+          durationS: 0.81
+        - text: Sargent Johnson walked away from the project.
+          atS: 52.12
+          durationS: 2.43
+        - text: The sculptor Beniamino Bufano took his animal statues away.
+          atS: 55.36
+          durationS: 3.89
+        - text: He said he would rather have kids playing over his statues than drunks stumbling over them.
+          atS: 59.69
+          durationS: 4.63
+        - text: The city was found guilty of mismanagement, and the nightclub was thrown out.
+          atS: 65.27
+          durationS: 4.09
+        - text: But the mosaic stayed the way Johnson left it.
+          atS: 69.96
+          durationS: 3.37

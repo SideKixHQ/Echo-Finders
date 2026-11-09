@@ -32,7 +32,7 @@ script: |
   In 1938 both wrecks were dynamited to clean up the harbor approach. What the dynamite left is still down there.
 
   Same design, same fog, same rocks.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "At low tide, if you know where to look, there are engines sitting in the surf."
@@ -89,3 +89,65 @@ sources:
     url: https://www.nps.gov/goga/learn/historyculture/vestiges-shipwrecks.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-two-sisters-on-the-same-rocks/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75
+    audioBytes: 1200421
+    transcript:
+      totalS: 75
+      lines:
+        - text: Look down at the rocks below Lands End.
+          atS: 0
+          durationS: 2.33
+        - text: At low tide, if you know where to look, there are engines sitting in the surf.
+          atS: 2.66
+          durationS: 4.64
+        - text: They came from two oil tankers.
+          atS: 7.63
+          durationS: 2.32
+        - text: Sisters, built identical.
+          atS: 10.39
+          durationS: 2.13
+        - text: In October 1922, the Lyman A.
+          atS: 13.63
+          durationS: 3.1
+        - text: Stewart left San Francisco Bay in thickening fog.
+          atS: 16.79
+          durationS: 3.55
+        - text: A freighter was headed in through the Golden Gate.
+          atS: 20.85
+          durationS: 2.7
+        - text: Horns and whistles were muffled in the fog, and neither ship saw the other until it was too late.
+          atS: 24.25
+          durationS: 5.89
+        - text: Her captain ordered the crew to abandon ship, and stayed aboard to steer her to shore.
+          atS: 30.95
+          durationS: 5.49
+        - text: She ripped her hull open on the jagged rocks of Lands End.
+          atS: 37.14
+          durationS: 3.41
+        - text: Fifteen years later, her sister met a similar fate in the same spot.
+          atS: 41.51
+          durationS: 4.54
+        - text: In March 1937, the Frank H.
+          atS: 47
+          durationS: 2.61
+        - text: Buck was on her way through the Golden Gate in fog, and crashed head-on into a passenger liner.
+          atS: 49.63
+          durationS: 5.64
+        - text: The liner merely suffered a crushed bow.
+          atS: 55.72
+          durationS: 2.36
+        - text: The tanker came to rest off Lands End, right next to her sister.
+          atS: 58.59
+          durationS: 4.24
+        - text: In 1938 both wrecks were dynamited to clean up the harbor approach.
+          atS: 63.33
+          durationS: 4.9
+        - text: What the dynamite left is still down there.
+          atS: 68.62
+          durationS: 2.54
+        - text: Same design, same fog, same rocks.
+          atS: 71.6
+          durationS: 3.36

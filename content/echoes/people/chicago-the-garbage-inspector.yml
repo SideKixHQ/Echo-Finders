@@ -9,7 +9,7 @@ at: { lat: 41.87203, lng: -87.64725 }
 triggerRadiusKm: 0.05
 category: people
 format: short
-durationS: 77
+durationS: 71
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   She took it seriously. Two years later, she and Florence Kelley were mapping the ward and going door to door. And when Addams wondered whether bad plumbing was spreading typhoid, she sent Dr. Alice Hamilton to investigate. Hamilton found that house flies carried the disease.
 
   People remember her for big ideas. In this neighborhood, she also went looking in the alleys.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "This old mansion on Halsted Street is Hull-House."
@@ -84,3 +84,65 @@ sources:
     url: https://www.nps.gov/places/hull-house.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/chicago-the-garbage-inspector/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 70.8
+    audioBytes: 1134384
+    transcript:
+      totalS: 70.8
+      lines:
+        - text: This old mansion on Halsted Street is Hull-House.
+          atS: 0
+          durationS: 3.22
+        - text: Jane Addams and Ellen Gates Starr opened it in 1889, to help the immigrant families of the ward around it.
+          atS: 4.03
+          durationS: 7.3
+        - text: Addams described the streets outside in one long breath.
+          atS: 11.84
+          durationS: 3.54
+        - text: Inexpressibly dirty.
+          atS: 15.82
+          durationS: 1.6
+        - text: Schools inadequate.
+          atS: 17.67
+          durationS: 1.31
+        - text: Sanitary laws unenforced.
+          atS: 19.37
+          durationS: 2.05
+        - text: The street lighting bad, the paving miserable, and the stables foul beyond description.
+          atS: 21.86
+          durationS: 5.64
+        - text: Tenements filled the lots from street to alley.
+          atS: 27.89
+          durationS: 2.76
+        - text: There was no trash collection, so people dumped their waste into the alleys.
+          atS: 31.09
+          durationS: 4.03
+        - text: And those alleys were some of the only places for children to play.
+          atS: 35.16
+          durationS: 3.83
+        - text: So in 1898 the mayor appointed Jane Addams as Chicago's first woman garbage inspector.
+          atS: 39.31
+          durationS: 6.65
+        - text: She took it seriously.
+          atS: 46.29
+          durationS: 1.41
+        - text: Two years later, she and Florence Kelley were mapping the ward and going door to door.
+          atS: 48.39
+          durationS: 4.7
+        - text: And when Addams wondered whether bad plumbing was spreading typhoid, she sent Dr.
+          atS: 53.53
+          durationS: 4.73
+        - text: Alice Hamilton to investigate.
+          atS: 58.28
+          durationS: 2.03
+        - text: Hamilton found that house flies carried the disease.
+          atS: 61.61
+          durationS: 3.33
+        - text: People remember her for big ideas.
+          atS: 65.22
+          durationS: 2.16
+        - text: In this neighborhood, she also went looking in the alleys.
+          atS: 67.63
+          durationS: 3.19

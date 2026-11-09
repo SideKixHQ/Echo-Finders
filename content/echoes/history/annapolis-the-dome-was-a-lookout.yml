@@ -9,7 +9,7 @@ at: { lat: 38.9785, lng: -76.4923 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 50
+durationS: 48
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   And then nothing. The British never landed near the city.
 
   All that watching from up there, and the town came through the war untouched.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In the War of 1812 it was a lookout post."
@@ -59,3 +59,44 @@ sources:
     url: https://home.nps.gov/stsp/learn/historyculture/annapolis.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/annapolis-the-dome-was-a-lookout/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 48.4
+    audioBytes: 776193
+    transcript:
+      totalS: 48.4
+      lines:
+        - text: Find the dome above you.
+          atS: 0
+          durationS: 1.89
+        - text: In the War of 1812 it was a lookout post.
+          atS: 2.5
+          durationS: 3.22
+        - text: Annapolis expected to be attacked.
+          atS: 5.96
+          durationS: 2.32
+        - text: The British fleet blockaded the town in April and again in July 1813, and came dangerously close in late August 1814.
+          atS: 8.72
+          durationS: 9.28
+        - text: Lookouts used the dome to track the movements of the British navy.
+          atS: 18.6
+          durationS: 3.67
+        - text: People moved the state's documents and other valuables out of town.
+          atS: 22.71
+          durationS: 3.93
+        - text: A British midshipman sailing past wrote that he could plainly see the inhabitants flying in all directions.
+          atS: 27.16
+          durationS: 6.57
+        - text: Alarm guns sounded from the forts, and the militia ran to their posts.
+          atS: 34.42
+          durationS: 4.59
+        - text: And then nothing.
+          atS: 39.45
+          durationS: 0.95
+        - text: The British never landed near the city.
+          atS: 40.91
+          durationS: 2.3
+        - text: All that watching from up there, and the town came through the war untouched.
+          atS: 43.65
+          durationS: 4.78

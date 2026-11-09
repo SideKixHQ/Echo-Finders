@@ -9,7 +9,7 @@ at: { lat: 44.93916, lng: -93.04636 }
 triggerRadiusKm: 0.12
 category: history
 format: short
-durationS: 54
+durationS: 53
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
 pronunciations:
   - written: "Wakan Tipi"
     say: "wah-KAHN tee-PEE"
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The Dakota call it Wakan Tipi, the Spirit House."
@@ -74,3 +74,50 @@ sources:
     url: https://www.nps.gov/miss/learn/historyculture/river-of-history-chapter-7.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/saint-paul-the-spirit-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.3
+    audioBytes: 853933
+    transcript:
+      totalS: 53.3
+      lines:
+        - text: Look across the pond to the foot of the sandstone bluff.
+          atS: 0
+          durationS: 3.06
+        - text: That dark opening is a cave.
+          atS: 3.39
+          durationS: 2.23
+        - text: The Dakota call it Wakan Tipi, the Spirit House.
+          atS: 6.13
+          durationS: 3.89
+        - text: It was a significant place for Native Americans.
+          atS: 10.72
+          durationS: 3.14
+        - text: When the explorer Jonathan Carver stopped here in late 1766, he described the inside as covered with figures cut into the soft stone.
+          atS: 14.36
+          durationS: 8.56
+        - text: Later visitors did not describe them.
+          atS: 23.36
+          durationS: 2.17
+        - text: The soft sandstone, running water and falling ceilings may have worn them away.
+          atS: 25.74
+          durationS: 5.1
+        - text: Then the railroads came.
+          atS: 31.44
+          durationS: 1.36
+        - text: They cut back the bluff to make room for tracks, and destroyed much of the cave.
+          atS: 33.12
+          durationS: 4.73
+        - text: By the late 1880s this ground was an industrial area and a rail yard.
+          atS: 38.55
+          durationS: 5
+        - text: It became a city park in 2005.
+          atS: 44.25
+          durationS: 2.89
+        - text: The figures are gone.
+          atS: 47.83
+          durationS: 1.13
+        - text: The cave is still there, behind the water, closed.
+          atS: 49.66
+          durationS: 3.66

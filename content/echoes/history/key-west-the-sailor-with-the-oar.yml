@@ -9,7 +9,7 @@ at: { lat: 24.5556, lng: -81.7968 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 49
+durationS: 48
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -26,7 +26,7 @@ script: |
   Look at the gates. Capstans. Anchors. Crossed sabres. An eagle on a shield. Even the cement walks are inlaid with anchors and stars, painted blue.
 
   And the sailor in the middle, still gazing into the distance, as if waiting for a ship.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Find the iron fence near the Margaret Street entrance."
@@ -59,3 +59,50 @@ sources:
     url: https://www.loc.gov/item/fl0141/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-the-sailor-with-the-oar/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 48.1
+    audioBytes: 769923
+    transcript:
+      totalS: 48.1
+      lines:
+        - text: Find the iron fence near the Margaret Street entrance.
+          atS: 0
+          durationS: 3.45
+        - text: In the middle stands a sailor, gazing into the distance and holding an oar.
+          atS: 3.96
+          durationS: 4.72
+        - text: On the fifteenth of February, 1898, the battleship Maine blew up in Havana Harbor.
+          atS: 9.98
+          durationS: 5.85
+        - text: It was the most dramatic of the incidents that led to the Spanish American War.
+          atS: 16.44
+          durationS: 4.34
+        - text: Inside this fence are tombs of the victims.
+          atS: 21.59
+          durationS: 2.97
+        - text: Union veterans and the citizens of Key West put up the memorial that same year.
+          atS: 25.26
+          durationS: 4.83
+        - text: Look at the gates.
+          atS: 30.79
+          durationS: 1.08
+        - text: Capstans.
+          atS: 32.11
+          durationS: 0.99
+        - text: Anchors.
+          atS: 33.34
+          durationS: 0.71
+        - text: Crossed sabres.
+          atS: 34.17
+          durationS: 1.24
+        - text: An eagle on a shield.
+          atS: 35.59
+          durationS: 1.44
+        - text: Even the cement walks are inlaid with anchors and stars, painted blue.
+          atS: 37.63
+          durationS: 4.57
+        - text: And the sailor in the middle, still gazing into the distance, as if waiting for a ship.
+          atS: 42.64
+          durationS: 5.42

@@ -9,7 +9,7 @@ at: { lat: 35.68355, lng: -105.93765 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 63
+durationS: 64
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
 pronunciations:
   - written: San Miguel
     say: san mee-GEL
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at the low adobe house across the street from the chapel of San Miguel."
@@ -72,3 +72,56 @@ sources:
     url: https://www.nps.gov/places/san-miguel-chapel-in-santa-fe.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/santa-fe-what-the-tree-rings-say/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 63.9
+    audioBytes: 1023625
+    transcript:
+      totalS: 63.9
+      lines:
+        - text: Look at the low adobe house across the street from the chapel of San Miguel.
+          atS: 0
+          durationS: 4.23
+        - text: It is known as the Oldest House.
+          atS: 4.67
+          durationS: 2.07
+        - text: Its western part has thick adobe walls, dirt floors, low ceilings, and a corner fireplace.
+          atS: 7.12
+          durationS: 6.71
+        - text: None of the later decoration was ever added to it.
+          atS: 14.34
+          durationS: 3.04
+        - text: So how old is it really?
+          atS: 17.98
+          durationS: 1.94
+        - text: Its wood can answer that.
+          atS: 20.36
+          durationS: 1.5
+        - text: Tree-ring samples taken from the house show its timbers were cut sometime between 1740 and 1767.
+          atS: 22.3
+          durationS: 7.52
+        - text: That is old.
+          atS: 30.34
+          durationS: 1.23
+        - text: But maybe not quite as old as the name suggests.
+          atS: 31.95
+          durationS: 2.89
+        - text: The chapel across the street tells a similar story.
+          atS: 35.45
+          durationS: 2.91
+        - text: It was first built around 1620, partly destroyed in the Pueblo Revolt of 1680, and rebuilt on the same site in 1710.
+          atS: 38.68
+          durationS: 8.82
+        - text: It still has its original adobe walls.
+          atS: 47.83
+          durationS: 2.55
+        - text: And inside is an altar screen from 1798, the oldest wooden altar screen in New Mexico.
+          atS: 50.71
+          durationS: 6.72
+        - text: In this neighborhood, nobody asks whether something is old.
+          atS: 57.76
+          durationS: 3.56
+        - text: They ask how old, exactly.
+          atS: 61.53
+          durationS: 2.37

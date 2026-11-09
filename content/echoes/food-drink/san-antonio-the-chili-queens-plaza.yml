@@ -9,7 +9,7 @@ at: { lat: 29.4247, lng: -98.4944 }
 triggerRadiusKm: 0.05
 category: food-drink
 format: look-below
-durationS: 39
+durationS: 36
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -26,7 +26,7 @@ script: |
   Then, from 1888 to 1891, the city put its new City Hall right in the middle. That put an end to the open-air market, and to the Chili Queens.
 
   The building you see stands right where the Chili Queens used to be.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Military Plaza was laid out by the Spanish in 1722, as a parade ground and a market square."
@@ -58,3 +58,32 @@ sources:
     url: https://www.nps.gov/places/main-and-military-plazas.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-antonio-the-chili-queens-plaza/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 36.2
+    audioBytes: 579752
+    transcript:
+      totalS: 36.2
+      lines:
+        - text: Look at City Hall, sitting in the middle of this plaza.
+          atS: 0
+          durationS: 2.86
+        - text: Before it was built, this was open ground.
+          atS: 3.24
+          durationS: 2.36
+        - text: Military Plaza was laid out by the Spanish in 1722, as a parade ground and a market square.
+          atS: 6.04
+          durationS: 7.23
+        - text: For years it was a market in the open air, with the Chili Queens, and the rowdy cowboys, cattlemen and gamblers.
+          atS: 13.6
+          durationS: 6.49
+        - text: Then, from 1888 to 1891, the city put its new City Hall right in the middle.
+          atS: 20.69
+          durationS: 6.54
+        - text: That put an end to the open-air market, and to the Chili Queens.
+          atS: 27.55
+          durationS: 3.98
+        - text: The building you see stands right where the Chili Queens used to be.
+          atS: 32.23
+          durationS: 3.95

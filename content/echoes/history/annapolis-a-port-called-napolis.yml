@@ -9,7 +9,7 @@ at: { lat: 38.9777, lng: -76.486 }
 triggerRadiusKm: 0.07
 category: history
 format: short
-durationS: 48
+durationS: 46
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ pronunciations:
     say: "KUN-tah KIN-tay"
   - written: "Jenifer"
     say: "JEN-i-fer"
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look along this waterfront for the plaque."
@@ -73,3 +73,41 @@ sources:
     url: https://www.nps.gov/articles/000/daniel-of-st-thomas-jenifer.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/annapolis-a-port-called-napolis/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 45.6
+    audioBytes: 729799
+    transcript:
+      totalS: 45.6
+      lines:
+        - text: Look along this waterfront for the plaque.
+          atS: 0
+          durationS: 2.31
+        - text: When Alex Haley was researching Roots, he had one clue to where his ancestor had come ashore.
+          atS: 2.75
+          durationS: 5.82
+        - text: A port called Napolis.
+          atS: 9.27
+          durationS: 1.8
+        - text: He guessed it meant Annapolis, and he was right.
+          atS: 11.57
+          durationS: 2.88
+        - text: On the twenty-ninth of September, 1767, a ship carrying about one hundred and forty enslaved men and women arrived here.
+          atS: 14.9
+          durationS: 7.91
+        - text: Among the men who had put money into that cargo was Daniel of St.
+          atS: 23.24
+          durationS: 4.05
+        - text: Thomas Jenifer, who would later sit in the convention that wrote the Constitution.
+          atS: 27.32
+          durationS: 5.2
+        - text: It is believed that one of the people on that ship was Kunta Kinte.
+          atS: 32.96
+          durationS: 3.83
+        - text: Believed, not proven.
+          atS: 37.23
+          durationS: 1.94
+        - text: A family's history came down to a single word, Napolis, and a good guess.
+          atS: 39.87
+          durationS: 5.69

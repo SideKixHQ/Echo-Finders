@@ -35,7 +35,7 @@ pronunciations:
     say: TAY-wah
   - written: kiva
     say: KEE-vah
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The Spanish laid out this plaza in the spring of 1610, at a place the local Tewa people called Ogaponge."
@@ -90,3 +90,56 @@ sources:
     url: https://www.nps.gov/places/barrio-de-analco-historic-district-santa-fe-new-mexico.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/santa-fe-when-the-plaza-was-a-pueblo/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.9
+    audioBytes: 1103873
+    transcript:
+      totalS: 68.9
+      lines:
+        - text: Stand in the plaza and look around.
+          atS: 0
+          durationS: 1.94
+        - text: Shops, trees, benches.
+          atS: 2.11
+          durationS: 1.82
+        - text: Now picture a fortress of adobe, several stories high.
+          atS: 4.21
+          durationS: 3.67
+        - text: The Spanish laid out this plaza in the spring of 1610, at a place the local Tewa people called Ogaponge.
+          atS: 8.21
+          durationS: 8.13
+        - text: Over at the shells by the water.
+          atS: 16.85
+          durationS: 2
+        - text: The Spanish forced the Pueblo people to labor for them, and insisted that they convert.
+          atS: 19.45
+          durationS: 4.99
+        - text: In 1680 the Pueblos rose up.
+          atS: 24.95
+          durationS: 2.44
+        - text: Spanish colonists took refuge in the government buildings on this plaza, and the rebels laid siege to them.
+          atS: 27.9
+          durationS: 5.95
+        - text: The Spanish fled four hundred miles south, on foot, to El Paso.
+          atS: 34.28
+          durationS: 4.49
+        - text: For the next twelve years, the Pueblo people held Santa Fe.
+          atS: 39.29
+          durationS: 3.7
+        - text: And they rebuilt the plaza for themselves.
+          atS: 43.32
+          durationS: 2.51
+        - text: They turned it into one large multistory pueblo, arranged around two central squares, each with a kiva.
+          atS: 46.64
+          durationS: 8.16
+        - text: In 1692, the Spanish came back.
+          atS: 55.61
+          durationS: 3.42
+        - text: The pueblo is long gone.
+          atS: 59.48
+          durationS: 1.74
+        - text: But for twelve years, the oldest capital city in the United States belonged to the people the Spanish had come to rule.
+          atS: 61.73
+          durationS: 7.19

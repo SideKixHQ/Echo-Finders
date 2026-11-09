@@ -9,7 +9,7 @@ at: { lat: 35.2256, lng: -80.8406 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 83
+durationS: 78
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
   And the man who owned the land, Colonel John Wilkes, simply took his property back. The Confederate government had never paid him for it.
 
   A navy yard, two hundred miles from the sea, that never paid its rent.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "It is about two hundred miles away, and that was the point."
@@ -98,3 +98,56 @@ sources:
     url: https://www.dncr.nc.gov/nc-historical-markers-guide-summer-2026/open
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-a-navy-yard-far-from-the-sea/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77.6
+    audioBytes: 1241799
+    transcript:
+      totalS: 77.6
+      lines:
+        - text: Look around for the sea.
+          atS: 0
+          durationS: 1.51
+        - text: It is about two hundred miles away, and that was the point.
+          atS: 1.95
+          durationS: 3.41
+        - text: In March 1862, the Confederate navy yard at Norfolk, in Virginia, was about to be captured by Union forces.
+          atS: 6.18
+          durationS: 7.89
+        - text: So the Confederacy moved its machinery here, to a railroad town in the middle of the Carolinas, far out of reach of the Union navy.
+          atS: 14.51
+          durationS: 8.6
+        - text: Along this street they built a gun carriage shop, a torpedo shop, and a forge where the largest steam hammer in the South pounded away.
+          atS: 23.81
+          durationS: 9.18
+        - text: About fifteen hundred men worked here.
+          atS: 33.69
+          durationS: 2.45
+        - text: They made marine engines, shells, torpedoes and solid shot.
+          atS: 36.58
+          durationS: 4.97
+        - text: One worker, Thomas Dwyer, built a machine that turned out perfectly round cannonballs.
+          atS: 42.16
+          durationS: 5.9
+        - text: For most of the war, the yard felt the fighting less than any other navy yard.
+          atS: 48.66
+          durationS: 4.54
+        - text: Its real trouble was keeping trained workers.
+          atS: 53.35
+          durationS: 2.66
+        - text: Near the end, the machinery was loaded up and sent to Lincolnton.
+          atS: 56.39
+          durationS: 3.78
+        - text: The war ended before it could be put back together.
+          atS: 60.5
+          durationS: 2.88
+        - text: And the man who owned the land, Colonel John Wilkes, simply took his property back.
+          atS: 63.7
+          durationS: 4.9
+        - text: The Confederate government had never paid him for it.
+          atS: 69.56
+          durationS: 2.92
+        - text: A navy yard, two hundred miles from the sea, that never paid its rent.
+          atS: 72.86
+          durationS: 4.69

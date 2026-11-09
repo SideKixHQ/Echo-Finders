@@ -9,7 +9,7 @@ at: { lat: 37.8042, lng: -122.46 }
 triggerRadiusKm: 0.15
 category: history
 format: short
-durationS: 82
+durationS: 75
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   In May 1942, forty-five of them graduated. The program went on to turn out six thousand graduates. One general credited the linguists with ending the war two years early.
 
   For decades, hardly anyone knew. The work stayed classified until the 1970s.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Somewhere along the edge of this old airfield is a hangar called Building 640."
@@ -97,3 +97,56 @@ sources:
     url: https://www.nps.gov/goga/learn/historyculture/mis-nisei-event.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-studying-in-the-bathroom/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75
+    audioBytes: 1201675
+    transcript:
+      totalS: 75
+      lines:
+        - text: Somewhere along the edge of this old airfield is a hangar called Building 640.
+          atS: 0
+          durationS: 4.91
+        - text: In November 1941, the Army turned it into a school.
+          atS: 5.51
+          durationS: 3.87
+        - text: One of the teachers described it as an abandoned, empty, unpainted, crusty-looking corrugated tin building.
+          atS: 9.76
+          durationS: 7
+        - text: The students were Nisei, Japanese Americans born to parents who had come from Japan.
+          atS: 17.28
+          durationS: 5.54
+        - text: The Army needed them as translators in a war with Japan.
+          atS: 23.42
+          durationS: 3.7
+        - text: They learned terms for every branch of the Japanese military, and how to read the handwritten diaries Japanese soldiers kept.
+          atS: 27.56
+          durationS: 7.32
+        - text: After lights out at ten at night, students could regularly be found studying in the bathroom.
+          atS: 35.57
+          durationS: 5.39
+        - text: It was the only place in the building where the lights were kept on.
+          atS: 41.4
+          durationS: 3.33
+        - text: In February 1942 an executive order sent people of Japanese descent away from their homes.
+          atS: 45.43
+          durationS: 6.36
+        - text: The students and teachers here were not given leave to help their own families.
+          atS: 52.07
+          durationS: 4.32
+        - text: In May 1942, forty-five of them graduated.
+          atS: 56.67
+          durationS: 4.12
+        - text: The program went on to turn out six thousand graduates.
+          atS: 61.12
+          durationS: 3.53
+        - text: One general credited the linguists with ending the war two years early.
+          atS: 64.92
+          durationS: 4.13
+        - text: For decades, hardly anyone knew.
+          atS: 69.3
+          durationS: 2.19
+        - text: The work stayed classified until the 1970s.
+          atS: 71.77
+          durationS: 3.27

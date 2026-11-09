@@ -9,7 +9,7 @@ at: { lat: 36.143074, lng: -86.769943 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 79
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
   When a federal survey documented the building in 2012, it was still pressing vinyl, one of the largest plants of its kind in the country.
 
   A record factory with a hotel on the roof, because the hotels in town were not an option.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at the mosaic front of this plant."
@@ -93,3 +93,56 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tn/tn0400/tn0435/data/tn0435data.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-the-united-hilton/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.8
+    audioBytes: 1149848
+    transcript:
+      totalS: 71.8
+      lines:
+        - text: Look at the mosaic front of this plant.
+          atS: 0
+          durationS: 2.25
+        - text: It was built to press records, and it was built with a hotel suite on the top floor.
+          atS: 2.5
+          durationS: 4.62
+        - text: The company was called Southern Plastics.
+          atS: 7.63
+          durationS: 2.35
+        - text: By the early 1960s it was turning out about a million records a month, including every single for Motown.
+          atS: 10.18
+          durationS: 6.7
+        - text: It moved into this new building in 1963.
+          atS: 17.58
+          durationS: 3.14
+        - text: In those years the South was segregated.
+          atS: 21.41
+          durationS: 2.45
+        - text: Black customers coming to Nashville for their records would have struggled to find anywhere to stay.
+          atS: 24.37
+          durationS: 5.04
+        - text: So the plant gave them somewhere.
+          atS: 30.11
+          durationS: 1.95
+        - text: Up in the penthouse, a living room, a bedroom with two twin beds, a full bathroom, and a kitchen with a push button stove.
+          atS: 32.72
+          durationS: 8.57
+        - text: They called it the United Hilton.
+          atS: 41.77
+          durationS: 2.03
+        - text: Now it is known as the Motown Suite.
+          atS: 44.58
+          durationS: 2.32
+        - text: Motown's founder, Berry Gordy, was one of the guests.
+          atS: 47.57
+          durationS: 3.68
+        - text: The plant also pressed some of the Beatles' first American records, for a label in Chicago.
+          atS: 51.63
+          durationS: 5.62
+        - text: When a federal survey documented the building in 2012, it was still pressing vinyl, one of the largest plants of its kind in the country.
+          atS: 57.85
+          durationS: 7.87
+        - text: A record factory with a hotel on the roof, because the hotels in town were not an option.
+          atS: 66.33
+          durationS: 5.47

@@ -9,7 +9,7 @@ at: { lat: 37.7787, lng: -122.5137 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 77
+durationS: 74
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   The next morning, according to the papers, more than fifty thousand people came out to look.
 
   A wreck with nobody on it. It was still the most dangerous thing on this shore that night.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In January 1887, a schooner called the Parallel left the Golden Gate headed for Astoria, Oregon."
@@ -77,3 +77,56 @@ sources:
     url: https://www.nps.gov/goga/learn/historyculture/vestiges-shipwrecks.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-forty-two-tons-of-powder/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.7
+    audioBytes: 1179523
+    transcript:
+      totalS: 73.7
+      lines:
+        - text: Look north from here, down at the ruins of Sutro Baths and the rocks around them.
+          atS: 0
+          durationS: 4.67
+        - text: In January 1887, a schooner called the Parallel left the Golden Gate headed for Astoria, Oregon.
+          atS: 5.62
+          durationS: 6.97
+        - text: Her cargo included forty-two tons of black powder.
+          atS: 13.1
+          durationS: 3.6
+        - text: The ship fought head winds and a strong tide for two days.
+          atS: 17.21
+          durationS: 3.76
+        - text: Then the captain ordered the crew to abandon ship near the rocks at Point Lobos.
+          atS: 21.48
+          durationS: 4.71
+        - text: The nine men made it safely to Sausalito.
+          atS: 26.8
+          durationS: 2.74
+        - text: The empty schooner grounded near the Cliff House, right there, at the future site of Sutro Baths.
+          atS: 29.92
+          durationS: 5.92
+        - text: Rescuers from the Life-Saving Station found no crew on board.
+          atS: 36.54
+          durationS: 3.81
+        - text: They posted watchmen and went to bed.
+          atS: 40.95
+          durationS: 2.36
+        - text: Nobody knew what was in the hold.
+          atS: 43.91
+          durationS: 2.1
+        - text: At twelve thirty-four in the morning, after hours of being tossed against the rocks, the powder went off.
+          atS: 46.61
+          durationS: 6.27
+        - text: It demolished the ship, damaged the Cliff House, and sent debris over a mile in all directions.
+          atS: 53.49
+          durationS: 6.67
+        - text: The next morning, according to the papers, more than fifty thousand people came out to look.
+          atS: 61.28
+          durationS: 5.62
+        - text: A wreck with nobody on it.
+          atS: 67.5
+          durationS: 1.68
+        - text: It was still the most dangerous thing on this shore that night.
+          atS: 70
+          durationS: 3.66

@@ -9,12 +9,11 @@ at: { lat: 41.4858, lng: -71.3099 }
 triggerRadiusKm: 0.05
 category: legend
 format: short
-durationS: 59
+durationS: 55
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  The Viking origin is a long-told legend and is not established. The script says so aloud
-  and gives the survey's likelier colonial windmill explanation.
+  The Viking origin is a long-told legend and is not established. The script says so aloud and gives the survey's likelier colonial windmill explanation.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -36,7 +35,7 @@ script: |
   Its wooden top was gone by 1740. Later it was used to store gunpowder, and then hay.
 
   Stand under the arches and pick your story. The likelier story has a governor's name attached to it.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The old story says Vikings."
@@ -79,3 +78,53 @@ sources:
     url: https://www.loc.gov/item/11030420/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/newport-the-tower-nobody-agrees-on/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 55.4
+    audioBytes: 886952
+    transcript:
+      totalS: 55.4
+      lines:
+        - text: Look at the round stone tower standing on its arches.
+          atS: 0
+          durationS: 3.05
+        - text: People have been arguing about who built it for a very long time.
+          atS: 3.75
+          durationS: 3.71
+        - text: The old story says Vikings.
+          atS: 8.28
+          durationS: 2.19
+        - text: The tower has traditionally been linked with Viking explorers.
+          atS: 11.08
+          durationS: 3.46
+        - text: That is legend, and it is not proven.
+          atS: 15.23
+          durationS: 2.82
+        - text: By 1851 there was already a book about it, called The controversy touching the old stone mill.
+          atS: 18.75
+          durationS: 6.51
+        - text: In 1911 another asked the question in its title.
+          atS: 25.87
+          durationS: 3.54
+        - text: Did the Norsemen erect the Newport Round Tower?
+          atS: 30.22
+          durationS: 2.81
+        - text: The building survey gives the likelier answer.
+          atS: 33.73
+          durationS: 2.55
+        - text: It probably dates from the colonial period, and was the stone windmill built by Governor Benedict Arnold.
+          atS: 36.88
+          durationS: 5.69
+        - text: Its wooden top was gone by 1740.
+          atS: 43.02
+          durationS: 2.7
+        - text: Later it was used to store gunpowder, and then hay.
+          atS: 46.32
+          durationS: 2.97
+        - text: Stand under the arches and pick your story.
+          atS: 49.81
+          durationS: 2.3
+        - text: The likelier story has a governor's name attached to it.
+          atS: 52.26
+          durationS: 3.1

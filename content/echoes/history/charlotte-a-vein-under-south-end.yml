@@ -9,7 +9,7 @@ at: { lat: 35.2148, lng: -80.8562 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 74
+durationS: 66
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
   Rudisill was still being worked again in the 1930s.
 
   The banks came later. The gold was down there first.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Somewhere under this part of town runs a vein of gold, two to six feet thick."
@@ -92,3 +92,53 @@ sources:
     url: https://www.ourstate.com/our-stint-with-the-mint/
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-a-vein-under-south-end/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.3
+    audioBytes: 1061241
+    transcript:
+      totalS: 66.3
+      lines:
+        - text: Somewhere under this part of town runs a vein of gold, two to six feet thick.
+          atS: 0
+          durationS: 4.87
+        - text: Two of the biggest gold mines in Charlotte were dug near this corner.
+          atS: 5.38
+          durationS: 3.76
+        - text: They were called Rudisill and Saint Catherine.
+          atS: 9.58
+          durationS: 2.54
+        - text: They sat about twenty-five hundred feet apart, at opposite ends of the same vein.
+          atS: 12.63
+          durationS: 4.99
+        - text: Saint Catherine went down four hundred and sixty feet.
+          atS: 18.14
+          durationS: 3.38
+        - text: Rudisill went down three hundred and fifty.
+          atS: 21.84
+          durationS: 2.72
+        - text: The first gold in Charlotte had been struck in 1825, by Samuel McComb, near what is now Morehead and Graham Streets.
+          atS: 24.94
+          durationS: 8.7
+        - text: In 1830, foreign investors leased these two mines, a count among them, and brought in steam engines and stamp mills.
+          atS: 33.88
+          durationS: 8.45
+        - text: Their money helped persuade the federal government to build a branch mint in Charlotte.
+          atS: 42.71
+          durationS: 4.48
+        - text: The tunnels did not go away when the mining stopped.
+          atS: 47.52
+          durationS: 2.94
+        - text: At one point mines honeycombed this whole area, some running under what is now the football stadium and the bank's tower uptown.
+          atS: 50.84
+          durationS: 8.06
+        - text: Rudisill was still being worked again in the 1930s.
+          atS: 59.41
+          durationS: 3.34
+        - text: The banks came later.
+          atS: 63.08
+          durationS: 1.28
+        - text: The gold was down there first.
+          atS: 64.42
+          durationS: 1.85

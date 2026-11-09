@@ -9,7 +9,7 @@ at: { lat: 37.7802, lng: -122.5131 }
 triggerRadiusKm: 0.07
 category: built
 format: short
-durationS: 66
+durationS: 64
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   The Baths were not a business success for long. The owners turned them into an ice-skating rink. In 1964 developers bought the site to put up high-rise apartments, and began knocking the building down. In 1966, a fire destroyed what was left.
 
   The apartments were never built. The glass is gone. The ocean still comes in.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The concrete basins below you are the remains of Sutro Baths."
@@ -73,3 +73,56 @@ sources:
     url: https://www.nps.gov/goga/learn/historyculture/sutro-baths.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-filled-by-the-tide/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.4
+    audioBytes: 1031566
+    transcript:
+      totalS: 64.4
+      lines:
+        - text: The concrete basins below you are the remains of Sutro Baths.
+          atS: 0
+          durationS: 4.02
+        - text: Adolph Sutro developed the baths in 1894.
+          atS: 4.62
+          durationS: 3.76
+        - text: A classic Greek portal opened to a massive glass enclosure, with seven swimming pools at different temperatures.
+          atS: 8.89
+          durationS: 6.86
+        - text: There were slides, trapezes, springboards and a high dive.
+          atS: 16.14
+          durationS: 4.67
+        - text: The Baths could hold ten thousand people at one time.
+          atS: 21.32
+          durationS: 3.23
+        - text: They had twenty thousand bathing suits and forty thousand towels for rent.
+          atS: 24.82
+          durationS: 4.42
+        - text: And the water came straight from the sea in front of you.
+          atS: 29.63
+          durationS: 2.9
+        - text: At high tide, the Pacific could fill all one point seven million gallons in just one hour.
+          atS: 32.97
+          durationS: 5.85
+        - text: The Baths were not a business success for long.
+          atS: 39.52
+          durationS: 2.7
+        - text: The owners turned them into an ice-skating rink.
+          atS: 42.74
+          durationS: 2.86
+        - text: In 1964 developers bought the site to put up high-rise apartments, and began knocking the building down.
+          atS: 46.1
+          durationS: 7.42
+        - text: In 1966, a fire destroyed what was left.
+          atS: 54.64
+          durationS: 3.99
+        - text: The apartments were never built.
+          atS: 59.01
+          durationS: 1.77
+        - text: The glass is gone.
+          atS: 60.93
+          durationS: 1.23
+        - text: The ocean still comes in.
+          atS: 62.33
+          durationS: 2.08

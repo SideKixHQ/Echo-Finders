@@ -9,7 +9,7 @@ at: { lat: 36.1654, lng: -86.7842 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 56
+durationS: 50
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   After that, she began writing. She became one of the most important journalists in the country, and led a crusade against lynching.
 
   She lost here. It did not slow her down.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "For decades the state supreme court sat inside it."
@@ -87,3 +87,59 @@ sources:
     url: https://www.nps.gov/people/idabwells.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-she-bit-the-conductor/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 49.5
+    audioBytes: 792493
+    transcript:
+      totalS: 49.5
+      lines:
+        - text: Look up at the capitol.
+          atS: 0
+          durationS: 1.36
+        - text: For decades the state supreme court sat inside it.
+          atS: 2.17
+          durationS: 3.19
+        - text: One of the cases it heard was brought by a young teacher named Ida B.
+          atS: 5.69
+          durationS: 3.99
+        - text: Wells.
+          atS: 9.71
+          durationS: 0.67
+        - text: She was riding a train out of Memphis.
+          atS: 10.76
+          durationS: 2.39
+        - text: The crew told her to leave the ladies' car and move to a car where a drunk man sat and other men were smoking.
+          atS: 13.6
+          durationS: 6.18
+        - text: She refused.
+          atS: 20.1
+          durationS: 1.02
+        - text: When the conductor tried to drag her out of her seat, she fastened her teeth in the back of his hand.
+          atS: 21.4
+          durationS: 5.2
+        - text: It took him and two white passengers to remove her.
+          atS: 26.88
+          durationS: 2.88
+        - text: She sued the railroad, and she won.
+          atS: 30.14
+          durationS: 2.24
+        - text: Five hundred dollars.
+          atS: 32.82
+          durationS: 1.28
+        - text: Then the Tennessee Supreme Court overturned it.
+          atS: 34.91
+          durationS: 2.77
+        - text: After that, she began writing.
+          atS: 38.2
+          durationS: 2.16
+        - text: She became one of the most important journalists in the country, and led a crusade against lynching.
+          atS: 40.87
+          durationS: 5.19
+        - text: She lost here.
+          atS: 46.38
+          durationS: 0.99
+        - text: It did not slow her down.
+          atS: 47.54
+          durationS: 1.91

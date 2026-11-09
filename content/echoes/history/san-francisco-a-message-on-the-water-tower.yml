@@ -9,7 +9,7 @@ at: { lat: 37.82672, lng: -122.42298 }
 triggerRadiusKm: 0.15
 category: history
 format: short
-durationS: 68
+durationS: 66
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   The occupation is credited with launching a national American Indian civil rights movement.
 
   When the National Park Service restored the water tower in 2012, it did not paint the words out. It invited the original occupiers and their families back, to paint them again.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "It went up in 1940, when this island was a federal prison."
@@ -89,3 +89,56 @@ sources:
     url: https://www.nps.gov/alca/occupations.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-a-message-on-the-water-tower/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.2
+    audioBytes: 1060823
+    transcript:
+      totalS: 66.2
+      lines:
+        - text: Find the water tower, and read what is painted on it.
+          atS: 0
+          durationS: 3.25
+        - text: It went up in 1940, when this island was a federal prison.
+          atS: 3.53
+          durationS: 4.05
+        - text: There was no fresh water source here, so every drop came by boat, twice a week.
+          atS: 8.02
+          durationS: 5.32
+        - text: The tank held two hundred and fifty thousand gallons.
+          atS: 13.72
+          durationS: 3.41
+        - text: From 1969 to 1971, American Indians occupied Alcatraz.
+          atS: 17.46
+          durationS: 5.77
+        - text: Nineteen months, the longest occupation of federal land in the country's history.
+          atS: 23.74
+          durationS: 5.22
+        - text: The water tower is one of the most visible landmarks in San Francisco Bay, so it was an ideal place for a message to the world.
+          atS: 29.66
+          durationS: 7.75
+        - text: Standing on each other's shoulders, they painted the letters.
+          atS: 37.74
+          durationS: 3.6
+        - text: Peace and freedom.
+          atS: 41.73
+          durationS: 1.6
+        - text: Welcome.
+          atS: 43.65
+          durationS: 0.72
+        - text: Home of the free.
+          atS: 44.7
+          durationS: 1.43
+        - text: Indian land.
+          atS: 46.45
+          durationS: 1.16
+        - text: The occupation is credited with launching a national American Indian civil rights movement.
+          atS: 48.42
+          durationS: 5.22
+        - text: When the National Park Service restored the water tower in 2012, it did not paint the words out.
+          atS: 54.16
+          durationS: 6.4
+        - text: It invited the original occupiers and their families back, to paint them again.
+          atS: 61.07
+          durationS: 5.16

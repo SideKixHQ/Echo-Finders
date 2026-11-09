@@ -9,7 +9,7 @@ at: { lat: 38.8461, lng: -77.3061 }
 triggerRadiusKm: 0.08
 category: people
 format: short
-durationS: 73
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -41,7 +41,7 @@ pronunciations:
     say: "MOZE-bee"
   - written: "Stoughton"
     say: "STOW-ton"
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In the Civil War this town was called Fairfax Court House."
@@ -97,3 +97,56 @@ sources:
     url: https://www.loc.gov/exhibits/treasures/tr11b.html
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fairfax-she-married-the-man-who-arrested-her/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.7
+    audioBytes: 1100111
+    transcript:
+      totalS: 68.7
+      lines:
+        - text: In the Civil War this town was called Fairfax Court House.
+          atS: 0
+          durationS: 3.71
+        - text: Antonia Ford was born here in 1838.
+          atS: 3.84
+          durationS: 3.25
+        - text: Her father was a prominent local merchant, and a committed secessionist.
+          atS: 7.48
+          durationS: 4.16
+        - text: She was widely reported to be a Confederate spy.
+          atS: 12.14
+          durationS: 2.94
+        - text: It was alleged that she gathered information on troop numbers from Union officers staying around town, and passed it on.
+          atS: 15.46
+          durationS: 6.56
+        - text: In 1863 Confederate rangers under John Mosby captured a Union general, Edwin Stoughton, here at Fairfax Courthouse.
+          atS: 22.98
+          durationS: 8.51
+        - text: Antonia Ford was arrested and charged with helping them.
+          atS: 32.3
+          durationS: 3.17
+        - text: No evidence was found to support her accusers.
+          atS: 35.98
+          durationS: 2.74
+        - text: The officer who arrested her was the Union provost marshal in Fairfax, Major Joseph Willard.
+          atS: 39.1
+          durationS: 6.25
+        - text: While she was held in prison in Washington, he worked to get her released.
+          atS: 45.86
+          durationS: 4.05
+        - text: She is said to have made a lace cap and collar while she was in prison.
+          atS: 50.61
+          durationS: 3.76
+        - text: The Library of Congress keeps them.
+          atS: 54.88
+          durationS: 1.95
+        - text: She took the oath of allegiance and was let go.
+          atS: 57.53
+          durationS: 2.96
+        - text: In March 1864 she married Major Willard.
+          atS: 61.6
+          durationS: 3.27
+        - text: The accused spy married the man who had arrested her.
+          atS: 65.32
+          durationS: 3.37

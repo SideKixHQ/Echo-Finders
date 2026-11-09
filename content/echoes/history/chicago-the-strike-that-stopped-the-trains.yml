@@ -9,7 +9,7 @@ at: { lat: 41.6926, lng: -87.6083 }
 triggerRadiusKm: 0.1
 category: history
 format: short
-durationS: 83
+durationS: 75
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   Fighting at rail yards around Chicago left dozens dead. The boycott dissolved in the middle of July, and the union was defeated.
 
   George Pullman never seemed to doubt his model town. When he died in 1897, tons of steel and concrete were placed over his casket, so that labor radicals could not get at the grave.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "It was the Pullman Company's administration building, the center of a factory and of a whole company town, built for the workers who made Pullman's sleeping cars."
@@ -90,3 +90,59 @@ sources:
     url: https://www.nps.gov/places/administration-clock-tower-building.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/chicago-the-strike-that-stopped-the-trains/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.1
+    audioBytes: 1203347
+    transcript:
+      totalS: 75.1
+      lines:
+        - text: Look at the clock tower.
+          atS: 0
+          durationS: 1.37
+        - text: It was the Pullman Company's administration building, the center of a factory and of a whole company town, built for the workers who made Pullman's sleeping cars.
+          atS: 1.54
+          durationS: 9.51
+        - text: On the eleventh of May, 1894, the workers here went on strike.
+          atS: 11.75
+          durationS: 4.47
+        - text: The company tried to wait them out.
+          atS: 16.66
+          durationS: 1.88
+        - text: So their union, the American Railway Union, went national.
+          atS: 18.62
+          durationS: 3.89
+        - text: Its members would refuse to handle Pullman cars.
+          atS: 22.95
+          durationS: 3.08
+        - text: Because Pullman cars were in such wide use, the boycott crippled rail traffic across the country.
+          atS: 26.41
+          durationS: 6.28
+        - text: The railroads answered by hitching Pullman cars to mail cars.
+          atS: 33.3
+          durationS: 3.88
+        - text: Holding up the United States mail gave the federal government its opening.
+          atS: 37.87
+          durationS: 4.05
+        - text: Thousands of U.S.
+          atS: 42.53
+          durationS: 1.2
+        - text: marshals and Army troops were sent in.
+          atS: 43.76
+          durationS: 2.59
+        - text: National Guard troops were stationed at the Hotel Florence, the company hotel just south of this tower.
+          atS: 47.3
+          durationS: 6.09
+        - text: Fighting at rail yards around Chicago left dozens dead.
+          atS: 53.91
+          durationS: 3.75
+        - text: The boycott dissolved in the middle of July, and the union was defeated.
+          atS: 58.26
+          durationS: 4.27
+        - text: George Pullman never seemed to doubt his model town.
+          atS: 63.23
+          durationS: 2.93
+        - text: When he died in 1897, tons of steel and concrete were placed over his casket, so that labor radicals could not get at the grave.
+          atS: 66.59
+          durationS: 8.55

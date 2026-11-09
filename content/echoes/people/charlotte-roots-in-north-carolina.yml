@@ -39,7 +39,7 @@ pronunciations:
     say: ROH-mer-ee
   - written: Bearden
     say: BEER-den
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "This park carries the name of an artist who left Charlotte when he was four years old."
@@ -90,3 +90,59 @@ sources:
     url: https://www.dncr.nc.gov/blog/2024/01/16/romare-bearden-1911-1988-l-113
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-roots-in-north-carolina/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 62.3
+    audioBytes: 998129
+    transcript:
+      totalS: 62.3
+      lines:
+        - text: This park carries the name of an artist who left Charlotte when he was four years old.
+          atS: 0
+          durationS: 4.59
+        - text: Romare Bearden was born in Charlotte in 1911.
+          atS: 5.28
+          durationS: 3.82
+        - text: His family moved north, and settled in Harlem.
+          atS: 9.8
+          durationS: 2.89
+        - text: He grew up, went to university in New York, and took a job as a caseworker for the city's social services.
+          atS: 13.2
+          durationS: 6.8
+        - text: He kept that job until 1969.
+          atS: 20.7
+          durationS: 2.68
+        - text: All the while he was painting.
+          atS: 24.2
+          durationS: 1.66
+        - text: By the early 1960s he had found his way of working.
+          atS: 26.37
+          durationS: 3.3
+        - text: Collage.
+          atS: 30.1
+          durationS: 0.8
+        - text: Newspaper and magazine clippings, fabric, pencil and paint, cut and fitted together into faces made from many faces.
+          atS: 31.08
+          durationS: 7.74
+        - text: And many of those pictures were drawn from what he remembered of North Carolina.
+          atS: 39.21
+          durationS: 4.38
+        - text: He said it plainly.
+          atS: 44.19
+          durationS: 1.27
+        - text: Most artists take some place, and like a flower, they sink roots.
+          atS: 46.15
+          durationS: 4.55
+        - text: My roots are in North Carolina.
+          atS: 51.4
+          durationS: 1.95
+        - text: In 1987 he was awarded the National Medal of Arts.
+          atS: 53.73
+          durationS: 4.06
+        - text: Four years in Charlotte.
+          atS: 58.24
+          durationS: 1.75
+        - text: A lifetime of pictures.
+          atS: 60.37
+          durationS: 1.95

@@ -9,7 +9,7 @@ at: { lat: 24.55583, lng: -81.8076 }
 triggerRadiusKm: 0.05
 category: people
 format: short
-durationS: 78
+durationS: 73
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   After that, the shirts arrived by the box. Newspapers called them spiffy, dizzy and wild. A writer for Life magazine said most people agreed they were much too loud.
 
   As the years went on, the president's shirts only got louder.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at the white house in front of you."
@@ -100,3 +100,68 @@ sources:
     url: https://www.loc.gov/item/2011630387/
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-the-key-west-uniform/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.2
+    audioBytes: 1172836
+    transcript:
+      totalS: 73.2
+      lines:
+        - text: Look at the white house in front of you.
+          atS: 0
+          durationS: 1.96
+        - text: In November 1946, a tired president came here on doctor's orders.
+          atS: 2.57
+          durationS: 5.13
+        - text: Harry Truman had become president without warning, when Franklin Roosevelt died.
+          atS: 8.14
+          durationS: 4.29
+        - text: He spent the next year bringing the Second World War to an end.
+          atS: 13.04
+          durationS: 3.31
+        - text: His doctor ordered him to get some rest.
+          atS: 16.79
+          durationS: 2.4
+        - text: A quiet place was found for him, at the naval base in Key West.
+          atS: 20.31
+          durationS: 4.05
+        - text: At first he would not dress like the locals.
+          atS: 24.96
+          durationS: 2.33
+        - text: He wore dress shirts and slacks, even fishing.
+          atS: 27.57
+          durationS: 2.9
+        - text: Then he gave in.
+          atS: 30.92
+          durationS: 1.25
+        - text: Light, comfortable sport shirts.
+          atS: 32.55
+          durationS: 2.18
+        - text: He and his staff called it the Key West Uniform.
+          atS: 35.12
+          durationS: 2.87
+        - text: On his fifth trip, in November 1948, a Miami sportswear company sent him four brightly patterned shirts.
+          atS: 38.69
+          durationS: 7.3
+        - text: One had a stylized bird on it.
+          atS: 46.37
+          durationS: 2.16
+        - text: People wondered whether the president would actually wear them.
+          atS: 48.91
+          durationS: 3.08
+        - text: He wore them four days in a row, and was photographed every time.
+          atS: 52.59
+          durationS: 3.97
+        - text: After that, the shirts arrived by the box.
+          atS: 57.08
+          durationS: 2.61
+        - text: Newspapers called them spiffy, dizzy and wild.
+          atS: 60.13
+          durationS: 3.85
+        - text: A writer for Life magazine said most people agreed they were much too loud.
+          atS: 64.59
+          durationS: 4.35
+        - text: As the years went on, the president's shirts only got louder.
+          atS: 69.15
+          durationS: 4.09

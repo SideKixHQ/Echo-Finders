@@ -9,7 +9,7 @@ at: { lat: 44.376, lng: -103.725 }
 triggerRadiusKm: 0.12
 category: people
 format: short
-durationS: 47
+durationS: 46
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   And there is Calamity Jane, years before any of it, in the 1860 census. Under the name Martha Canary.
 
   Before she was a legend, she was a line in a census.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Somewhere on this hill is the grave of Wild Bill Hickok."
@@ -68,3 +68,41 @@ sources:
     url: https://www.archives.gov/files/kansas-city/public/displays/deadwood/deadwood.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/deadwood-before-she-was-calamity/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 45.7
+    audioBytes: 733143
+    transcript:
+      totalS: 45.7
+      lines:
+        - text: Somewhere on this hill is the grave of Wild Bill Hickok.
+          atS: 0
+          durationS: 3.58
+        - text: A photograph in the Library of Congress shows a woman standing beside it.
+          atS: 4.69
+          durationS: 4.05
+        - text: Calamity Jane.
+          atS: 9.69
+          durationS: 1.23
+        - text: If you have watched the television series about this town, you know her as a character.
+          atS: 12.04
+          durationS: 4.95
+        - text: The National Archives points out that she, and the others in that series, were real people, and turn up in federal records.
+          atS: 17.8
+          durationS: 7.66
+        - text: There is a document with Seth Bullock's signature as marshal.
+          atS: 26.16
+          durationS: 3.4
+        - text: There is an indictment against a man named Swearingen.
+          atS: 30
+          durationS: 3.05
+        - text: And there is Calamity Jane, years before any of it, in the 1860 census.
+          atS: 33.49
+          durationS: 5.42
+        - text: Under the name Martha Canary.
+          atS: 39.52
+          durationS: 2.36
+        - text: Before she was a legend, she was a line in a census.
+          atS: 42.26
+          durationS: 3.48

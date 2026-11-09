@@ -9,7 +9,7 @@ at: { lat: 24.5593, lng: -81.8072 }
 triggerRadiusKm: 0.05
 category: food-drink
 format: short
-durationS: 56
+durationS: 53
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -28,7 +28,7 @@ script: |
   And behind the buildings, big cisterns collected the rain, to supply ships calling at the port.
 
   Ice from the north, and water from the sky. On a hot island surrounded by salt water, those were things worth selling.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Find the two old stone buildings at the corner of Wall Street and Tift Alley."
@@ -64,3 +64,50 @@ sources:
     url: https://www.loc.gov/item/fl0148/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-ice-from-the-north/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53
+    audioBytes: 848918
+    transcript:
+      totalS: 53
+      lines:
+        - text: Find the two old stone buildings at the corner of Wall Street and Tift Alley.
+          atS: 0
+          durationS: 4.27
+        - text: The northern one is the oldest commercial building in the city.
+          atS: 4.78
+          durationS: 3.32
+        - text: It was built as a ship chandlery.
+          atS: 8.54
+          durationS: 1.9
+        - text: The southern one was an icehouse.
+          atS: 10.73
+          durationS: 1.98
+        - text: An icehouse, in the tropics.
+          atS: 13.04
+          durationS: 2.08
+        - text: Until 1890, nobody made ice in Key West.
+          atS: 15.56
+          durationS: 3.55
+        - text: It came from the North, in ships built specially to carry it, and it was stored here.
+          atS: 19.43
+          durationS: 5.27
+        - text: The Tift company was advertising ice for sale by 1855.
+          atS: 25.15
+          durationS: 4.23
+        - text: It was not a luxury.
+          atS: 29.88
+          durationS: 1.37
+        - text: Ice was a vitally important commodity in the tropics, for the relief of fever victims.
+          atS: 31.58
+          durationS: 5.17
+        - text: And behind the buildings, big cisterns collected the rain, to supply ships calling at the port.
+          atS: 37.13
+          durationS: 5.97
+        - text: Ice from the north, and water from the sky.
+          atS: 43.61
+          durationS: 3.1
+        - text: On a hot island surrounded by salt water, those were things worth selling.
+          atS: 47.52
+          durationS: 5.47

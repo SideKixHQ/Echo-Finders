@@ -9,7 +9,7 @@ at: { lat: 29.8918, lng: -81.315 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 68
+durationS: 65
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ pronunciations:
     say: kuh-RAIR
   - written: Ponce de Leon
     say: PONSS duh LEE-un
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Stand on King Street and look at the walls of the old Hotel Ponce de Leon, now Flagler College."
@@ -83,3 +83,56 @@ sources:
     url: https://www.nps.gov/casa/learn/historyculture/coquina-the-rock-that-saved-st-augustine.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/st-augustine-a-hotel-poured-from-shells/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65.2
+    audioBytes: 1044105
+    transcript:
+      totalS: 65.2
+      lines:
+        - text: Stand on King Street and look at the walls of the old Hotel Ponce de Leon, now Flagler College.
+          atS: 0
+          durationS: 7.62
+        - text: Look closely at the gray surface.
+          atS: 8
+          durationS: 2.25
+        - text: There are bits of shell in it.
+          atS: 10.33
+          durationS: 1.57
+        - text: A few blocks away, the Spanish built their fort from blocks of shell rock.
+          atS: 12.11
+          durationS: 4.67
+        - text: This building used the same coquina, crushed and poured.
+          atS: 17.38
+          durationS: 3.87
+        - text: It is one of the earliest buildings anywhere of poured concrete.
+          atS: 21.69
+          durationS: 3.55
+        - text: The builders mixed crushed coquina shell with cement, six parts to one.
+          atS: 25.84
+          durationS: 4.98
+        - text: They made the mix on the spot.
+          atS: 31.27
+          durationS: 1.88
+        - text: Then they rammed it down into wooden forms, three inches at a time.
+          atS: 33.59
+          durationS: 4.25
+        - text: The whole great hotel, towers and all, three inches at a time.
+          atS: 38.35
+          durationS: 5.09
+        - text: It was the first commission for a young architecture firm, Carrère and Hastings.
+          atS: 44.38
+          durationS: 5.89
+        - text: The shell, a government survey noted, gives the walls a pleasing texture.
+          atS: 50.87
+          durationS: 4.35
+        - text: It is also a reminder of where they came from.
+          atS: 55.47
+          durationS: 2.59
+        - text: A grand winter hotel, built the way a child builds a sandcastle.
+          atS: 58.39
+          durationS: 3.92
+        - text: Pack it into the mould, a little at a time.
+          atS: 62.43
+          durationS: 2.77

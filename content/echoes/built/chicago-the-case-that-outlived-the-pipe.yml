@@ -9,7 +9,7 @@ at: { lat: 41.89716, lng: -87.62442 }
 triggerRadiusKm: 0.05
 category: built
 format: short
-durationS: 75
+durationS: 73
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   In 1911, the standpipe and the pumps were taken out.
 
   So the most famous survivor of the fire is a beautiful stone case, with nothing inside. The wrapping is the part that lasted.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The Chicago Water Tower was built in 1869."
@@ -69,3 +69,53 @@ sources:
     url: https://www.loc.gov/item/il0097/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/chicago-the-case-that-outlived-the-pipe/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.3
+    audioBytes: 1174508
+    transcript:
+      totalS: 73.3
+      lines:
+        - text: Look at the pale stone tower with the battlements and the pointed top.
+          atS: 0
+          durationS: 4.09
+        - text: It looks like a castle.
+          atS: 4.69
+          durationS: 1.46
+        - text: It was built to hide a pipe.
+          atS: 6.85
+          durationS: 1.71
+        - text: The Chicago Water Tower was built in 1869.
+          atS: 9.37
+          durationS: 3.68
+        - text: Inside it stood a vertical iron standpipe, three feet across and one hundred and thirty-eight feet tall, connected to the main pumps of the Chicago Water Works across Michigan Avenue.
+          atS: 13.65
+          durationS: 11.87
+        - text: The column of water in the pipe evened out surges in pressure whenever the city's demand for water suddenly changed.
+          atS: 26.12
+          durationS: 7.2
+        - text: The stone is buff limestone from Joliet, Illinois, from a bed that has long since been quarried out.
+          atS: 34.02
+          durationS: 6.52
+        - text: Look at the corners of the tower.
+          atS: 41.24
+          durationS: 1.75
+        - text: Each block was cut back by chisel to make that rounded edge, for no reason except the light and shadow.
+          atS: 43.5
+          durationS: 7.01
+        - text: Then came the Great Chicago Fire of 1871.
+          atS: 51.47
+          durationS: 3.74
+        - text: The tower survived it, and became the recognized symbol of the city.
+          atS: 55.81
+          durationS: 4.1
+        - text: In 1911, the standpipe and the pumps were taken out.
+          atS: 60.35
+          durationS: 3.61
+        - text: So the most famous survivor of the fire is a beautiful stone case, with nothing inside.
+          atS: 64.4
+          durationS: 5.79
+        - text: The wrapping is the part that lasted.
+          atS: 70.8
+          durationS: 2.53

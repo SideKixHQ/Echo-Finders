@@ -9,7 +9,7 @@ at: { lat: 36.16373, lng: -86.78234 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 92
+durationS: 87
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
   Back here at the hotel, Catt heard singing coming closer. She looked out and saw people in yellow running down the hill with the news.
 
   Thirty-six states. And the last vote came from a son who did what his mother told him.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "This hotel stands across the street from the state capitol."
@@ -111,3 +111,83 @@ sources:
     url: https://www.nps.gov/places/hermitage-hotel.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-yellow-roses-and-red/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 86.8
+    audioBytes: 1390593
+    transcript:
+      totalS: 86.8
+      lines:
+        - text: This hotel stands across the street from the state capitol.
+          atS: 0
+          durationS: 3.22
+        - text: In the summer of 1920, it was the headquarters of a war.
+          atS: 3.82
+          durationS: 3.63
+        - text: Thirty-five states had ratified the amendment giving women the vote.
+          atS: 7.89
+          durationS: 3.87
+        - text: One more was needed.
+          atS: 12.27
+          durationS: 1.43
+        - text: Tennessee looked like the best, and maybe the only, hope.
+          atS: 14.14
+          durationS: 3.65
+        - text: Both sides moved in here.
+          atS: 18.29
+          durationS: 1.82
+        - text: Carrie Chapman Catt, who led the national suffrage campaign, took Suite 309.
+          atS: 20.79
+          durationS: 5.77
+        - text: The leader of the anti-suffrage side took rooms too.
+          atS: 27.16
+          durationS: 3.22
+        - text: Suffragists wore yellow roses in their lapels.
+          atS: 30.96
+          durationS: 3.3
+        - text: Their opponents wore red.
+          atS: 34.65
+          durationS: 1.72
+        - text: The lobby became known as the third house of the legislature.
+          atS: 36.75
+          durationS: 3.49
+        - text: Up on the eighth floor, anti-suffrage lobbyists ran a suite as a speakeasy, in defiance of Prohibition.
+          atS: 40.68
+          durationS: 6.44
+        - text: The whiskey was free for legislators.
+          atS: 47.73
+          durationS: 2.33
+        - text: People called it the Jack Daniel's Suite.
+          atS: 50.57
+          durationS: 2.33
+        - text: The Senate passed the amendment.
+          atS: 53.51
+          durationS: 1.78
+        - text: In the House, the vote deadlocked.
+          atS: 55.73
+          durationS: 2.3
+        - text: Then a twenty-four year old representative, Harry Burn, changed his vote to aye.
+          atS: 58.41
+          durationS: 5.25
+        - text: He had a letter in his pocket from his mother.
+          atS: 64.26
+          durationS: 2.4
+        - text: Don't forget to be a good boy, she wrote, and help Mrs.
+          atS: 67.36
+          durationS: 3.37
+        - text: Catt.
+          atS: 70.76
+          durationS: 0.58
+        - text: Back here at the hotel, Catt heard singing coming closer.
+          atS: 72.64
+          durationS: 3.47
+        - text: She looked out and saw people in yellow running down the hill with the news.
+          atS: 76.63
+          durationS: 3.95
+        - text: Thirty-six states.
+          atS: 81.08
+          durationS: 1.54
+        - text: And the last vote came from a son who did what his mother told him.
+          atS: 82.84
+          durationS: 4.01

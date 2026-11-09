@@ -9,7 +9,7 @@ at: { lat: 29.3623, lng: -98.4802 }
 triggerRadiusKm: 0.06
 category: kids
 format: short
-durationS: 67
+durationS: 62
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
   And in the evening there was singing, games, dancing and stories.
 
   Then at sunrise, the bells started the whole day over again.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Three hundred and fifty people once lived in eighty-four little two-room apartments."
@@ -79,3 +79,56 @@ sources:
     url: https://www.nps.gov/saan/planyourvisit/sanjose.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/san-antonio-a-day-at-the-mission/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 62.3
+    audioBytes: 998129
+    transcript:
+      totalS: 62.3
+      lines:
+        - text: Look around this big square inside the mission walls.
+          atS: 0
+          durationS: 3.11
+        - text: Families lived here, in their own quarters.
+          atS: 3.39
+          durationS: 2.47
+        - text: Three hundred and fifty people once lived in eighty-four little two-room apartments.
+          atS: 6.3
+          durationS: 4.9
+        - text: Their day was planned from start to finish, and bells told everyone what to do.
+          atS: 11.64
+          durationS: 4.6
+        - text: The church bells rang three times a day.
+          atS: 17.05
+          durationS: 2.61
+        - text: After the sunrise church service, breakfast was corn porridge called atole, and dried meat called charque.
+          atS: 20.11
+          durationS: 7.13
+        - text: Then the men and boys went to work in the fields.
+          atS: 27.68
+          durationS: 2.6
+        - text: The women and girls cooked, swept the dirt floors, and got wool ready for spinning.
+          atS: 30.6
+          durationS: 5.1
+        - text: They even went fishing in the irrigation ditch outside the walls.
+          atS: 36.08
+          durationS: 3.68
+        - text: At noon the bells rang again.
+          atS: 40.21
+          durationS: 2.16
+        - text: Lunch was the biggest meal.
+          atS: 42.88
+          durationS: 1.85
+        - text: Maybe a bowl of goat stew, with fresh tortillas.
+          atS: 45.1
+          durationS: 3.22
+        - text: After lunch came a long rest, called a siesta.
+          atS: 49.27
+          durationS: 3.23
+        - text: And in the evening there was singing, games, dancing and stories.
+          atS: 52.94
+          durationS: 4.32
+        - text: Then at sunrise, the bells started the whole day over again.
+          atS: 57.77
+          durationS: 4.55

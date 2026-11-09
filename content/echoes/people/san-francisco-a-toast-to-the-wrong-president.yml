@@ -9,7 +9,7 @@ at: { lat: 37.7993, lng: -122.465 }
 triggerRadiusKm: 0.1
 category: people
 format: short
-durationS: 86
+durationS: 78
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   She was caught, tried at General Braxton Bragg's headquarters, and sentenced to death by hanging. Before the sentence could be carried out, she fell ill. Some accounts say she was acting. Then the Confederates retreated, and left her behind.
 
   President Lincoln gave her the honorary rank of major. The marker says spy. She got the job by playing a part.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Somewhere in the officers' circle of this cemetery is a marker that simply reads, Pauline C. Fryer, Union Spy."
@@ -102,3 +102,71 @@ sources:
     url: https://www.nps.gov/people/paulinecushman.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-a-toast-to-the-wrong-president/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 78.1
+    audioBytes: 1250994
+    transcript:
+      totalS: 78.1
+      lines:
+        - text: Somewhere in the officers' circle of this cemetery is a marker that simply reads, Pauline C.
+          atS: 0
+          durationS: 5.8
+        - text: Fryer, Union Spy.
+          atS: 5.84
+          durationS: 2.26
+        - text: She was an actress.
+          atS: 8.71
+          durationS: 1.28
+        - text: In April 1863 she was performing at a theater in Louisville, Kentucky, when two Confederate officers asked her to make a toast to the Confederacy, in the middle of the performance.
+          atS: 11.1
+          durationS: 10.57
+        - text: They offered her money.
+          atS: 21.99
+          durationS: 1.18
+        - text: She asked the Union provost marshal in Louisville what to do.
+          atS: 23.56
+          durationS: 3.33
+        - text: He told her to accept.
+          atS: 27.33
+          durationS: 1.54
+        - text: That night, where the script called for a toast to President Lincoln, she proposed a toast to Jefferson Davis.
+          atS: 29.48
+          durationS: 6.18
+        - text: She was let go from the play.
+          atS: 35.9
+          durationS: 1.96
+        - text: And the Union offered her a job as a spy.
+          atS: 38.1
+          durationS: 2.61
+        - text: Later, sent into Tennessee, she was warned never to steal any documents.
+          atS: 41.53
+          durationS: 4.84
+        - text: Only to study them and carry them in her memory.
+          atS: 46.65
+          durationS: 2.46
+        - text: She took a fortification map anyway, and stuffed it into her boot.
+          atS: 49.92
+          durationS: 4.09
+        - text: She was caught, tried at General Braxton Bragg's headquarters, and sentenced to death by hanging.
+          atS: 54.52
+          durationS: 5.97
+        - text: Before the sentence could be carried out, she fell ill.
+          atS: 61
+          durationS: 3.04
+        - text: Some accounts say she was acting.
+          atS: 64.48
+          durationS: 1.89
+        - text: Then the Confederates retreated, and left her behind.
+          atS: 66.89
+          durationS: 3.04
+        - text: President Lincoln gave her the honorary rank of major.
+          atS: 70.31
+          durationS: 3.12
+        - text: The marker says spy.
+          atS: 73.76
+          durationS: 1.79
+        - text: She got the job by playing a part.
+          atS: 75.93
+          durationS: 2.18

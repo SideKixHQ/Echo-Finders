@@ -9,7 +9,7 @@ at: { lat: 35.67917, lng: -105.93111 }
 triggerRadiusKm: 0.08
 category: land
 format: short
-durationS: 64
+durationS: 58
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
 pronunciations:
   - written: Acequia Madre
     say: ah-SEH-kee-ah MAH-dreh
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Either way, this is the Acequia Madre."
@@ -73,3 +73,53 @@ sources:
     url: https://www.loc.gov/item/nm0333/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/santa-fe-the-mother-ditch/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57.7
+    audioBytes: 923732
+    transcript:
+      totalS: 57.7
+      lines:
+        - text: Look for the stone-lined ditch running beside this street.
+          atS: 0
+          durationS: 2.87
+        - text: It might be dry, or there might be water in it.
+          atS: 2.93
+          durationS: 2.63
+        - text: Either way, this is the Acequia Madre.
+          atS: 5.89
+          durationS: 3.31
+        - text: The mother ditch.
+          atS: 9.47
+          durationS: 1.01
+        - text: When the Spanish founded Santa Fe in 1610, they probably began digging it almost at once.
+          atS: 11.3
+          durationS: 5.41
+        - text: It was already in use at the time of the Pueblo Revolt, in 1680.
+          atS: 16.99
+          durationS: 4.48
+        - text: It takes its water from the Santa Fe River, and runs west through the city for over two miles, first along this street.
+          atS: 21.79
+          durationS: 7.67
+        - text: It is four to five feet wide, and most of it is lined with stone.
+          atS: 29.91
+          durationS: 4.3
+        - text: It supplied the town with water for the household, and for irrigation.
+          atS: 34.64
+          durationS: 4.27
+        - text: It is probably the oldest Spanish acequia system left in the Southwest.
+          atS: 39.36
+          durationS: 4.45
+        - text: And you can still trace it, walking down the street named after it.
+          atS: 44.19
+          durationS: 3.82
+        - text: It is not used regularly now.
+          atS: 48.39
+          durationS: 2.01
+        - text: It only carries water when the river runs high.
+          atS: 50.78
+          durationS: 2.76
+        - text: Dug when the town was new, and still waiting for the river.
+          atS: 54.15
+          durationS: 3.53

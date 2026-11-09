@@ -9,7 +9,7 @@ at: { lat: 29.31779, lng: -98.4502 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 75
+durationS: 74
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   Even here, things did not go to plan. A larger church was begun in 1762, and torn down in 1777 because it was structurally unsound. This little chapel, meant to be the sacristy, became the church instead.
 
   A mission that crossed Texas, and settled for its back room.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at the chapel, and at the stone front that rises above its roof with three bells."
@@ -78,3 +78,53 @@ sources:
     url: https://www.nps.gov/subjects/travelspanishmissions/mission-san-francisco-de-la-espada.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-antonio-the-mission-that-kept-moving/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.5
+    audioBytes: 1176598
+    transcript:
+      totalS: 73.5
+      lines:
+        - text: Look at the chapel, and at the stone front that rises above its roof with three bells.
+          atS: 0
+          durationS: 5.24
+        - text: It makes a small building look grander than it is.
+          atS: 5.56
+          durationS: 3.03
+        - text: Visitors see this chapel looking as if its old stones had always been here.
+          atS: 9.03
+          durationS: 4.63
+        - text: But in its first years, the mission was moved several times.
+          atS: 14.05
+          durationS: 3.8
+        - text: It was founded on the twenty-fourth of May, 1690, as Mission San Francisco de los Tejas, in east Texas, near what is now Nacogdoches.
+          atS: 17.96
+          durationS: 9.94
+        - text: After three years it was abandoned.
+          atS: 28.02
+          durationS: 2.05
+        - text: It was moved in 1716, and moved again in 1721, to the Neches River.
+          atS: 30.15
+          durationS: 6.05
+        - text: Then an agreement with France closed the Spanish presidio that protected the eastern missions.
+          atS: 36.8
+          durationS: 5.46
+        - text: Without it, they were a ripe target for raids.
+          atS: 42.95
+          durationS: 3.03
+        - text: So in 1731, the mission moved one last time, here, to the San Antonio River.
+          atS: 46.57
+          durationS: 5.89
+        - text: Even here, things did not go to plan.
+          atS: 52.94
+          durationS: 2.61
+        - text: A larger church was begun in 1762, and torn down in 1777 because it was structurally unsound.
+          atS: 56.48
+          durationS: 7.4
+        - text: This little chapel, meant to be the sacristy, became the church instead.
+          atS: 64.56
+          durationS: 4.73
+        - text: A mission that crossed Texas, and settled for its back room.
+          atS: 69.67
+          durationS: 3.8

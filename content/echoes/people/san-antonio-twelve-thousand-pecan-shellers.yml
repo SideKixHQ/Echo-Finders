@@ -9,7 +9,7 @@ at: { lat: 29.4243, lng: -98.4941 }
 triggerRadiusKm: 0.04
 category: people
 format: look-below
-durationS: 33
+durationS: 30
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -24,7 +24,7 @@ script: |
   It also pushed many of the pecan companies to buy machines. And many of the people who marched here lost their jobs to them.
 
   A victory at this building, and a harder lesson after it.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In 1939, around twelve thousand pecan shellers marched here, to demand higher wages and better working conditions."
@@ -54,3 +54,32 @@ sources:
     url: https://www.nps.gov/places/main-and-military-plazas.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-antonio-twelve-thousand-pecan-shellers/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 29.8
+    audioBytes: 477352
+    transcript:
+      totalS: 29.8
+      lines:
+        - text: Look at the doors of City Hall.
+          atS: 0
+          durationS: 1.82
+        - text: In 1939, around twelve thousand pecan shellers marched here, to demand higher wages and better working conditions.
+          atS: 2.15
+          durationS: 8.29
+        - text: They were led by Emma Tenayuca.
+          atS: 10.76
+          durationS: 2.03
+        - text: The protest and strike won them higher wages, and recognition of their union.
+          atS: 13.49
+          durationS: 4.82
+        - text: It also pushed many of the pecan companies to buy machines.
+          atS: 18.63
+          durationS: 3.66
+        - text: And many of the people who marched here lost their jobs to them.
+          atS: 22.67
+          durationS: 3.36
+        - text: A victory at this building, and a harder lesson after it.
+          atS: 26.35
+          durationS: 3.41

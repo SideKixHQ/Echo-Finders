@@ -9,7 +9,7 @@ at: { lat: 34.7505, lng: -112.1148 }
 triggerRadiusKm: 0.1
 category: history
 format: short
-durationS: 72
+durationS: 73
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   It worked. By 2010 the full-time population was four hundred and forty-four, and the town fills with tourists many days of the year.
 
   A ghost town, on purpose. The ghosts were the business plan.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look out over the Verde Valley, then back up at this town, clinging to Cleopatra Hill."
@@ -80,3 +80,65 @@ sources:
     url: https://www.loc.gov/item/2018701771/
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/jerome-a-ghost-town-on-purpose/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.6
+    audioBytes: 1163223
+    transcript:
+      totalS: 72.6
+      lines:
+        - text: Look out over the Verde Valley, then back up at this town, clinging to Cleopatra Hill.
+          atS: 0
+          durationS: 5.32
+        - text: Jerome grew from a settlement of tents into a roaring mining community.
+          atS: 5.92
+          durationS: 4.45
+        - text: For a while it was known as the wickedest town in the west.
+          atS: 11.18
+          durationS: 3.4
+        - text: It was once the fourth largest city in the Arizona Territory.
+          atS: 15.53
+          durationS: 3.96
+        - text: In the 1920s, when the copper mines were at their richest, more than ten thousand people lived here.
+          atS: 20.3
+          durationS: 6.41
+        - text: Some counts say fifteen thousand.
+          atS: 27.41
+          durationS: 2.63
+        - text: The town lived by the price of copper.
+          atS: 30.56
+          durationS: 2.3
+        - text: The Second World War pushed demand up.
+          atS: 33.46
+          durationS: 2.55
+        - text: After the war, demand slowed.
+          atS: 36.19
+          durationS: 2.58
+        - text: In 1953 the signature mine closed.
+          atS: 39.58
+          durationS: 3.04
+        - text: That left somewhere between fifty and a hundred hardy souls.
+          atS: 42.9
+          durationS: 3.78
+        - text: And they had an idea.
+          atS: 47.07
+          durationS: 1.4
+        - text: If they could not sell copper anymore, they would sell the town itself.
+          atS: 48.8
+          durationS: 3.84
+        - text: They promoted Jerome as a historic ghost town.
+          atS: 53.15
+          durationS: 3.31
+        - text: It worked.
+          atS: 56.97
+          durationS: 0.89
+        - text: By 2010 the full-time population was four hundred and forty-four, and the town fills with tourists many days of the year.
+          atS: 58.47
+          durationS: 8.6
+        - text: A ghost town, on purpose.
+          atS: 67.67
+          durationS: 2.19
+        - text: The ghosts were the business plan.
+          atS: 70.68
+          durationS: 1.95

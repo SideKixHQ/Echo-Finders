@@ -12,7 +12,7 @@ inspo:
   kind: before-fame
   evidence: building
 format: short
-durationS: 75
+durationS: 74
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
 pronunciations:
   - written: WWNC
     say: W W N C
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look up at the top floor of the Flat Iron Building."
@@ -87,3 +87,56 @@ sources:
     url: https://www.dncr.nc.gov/blog/2024/01/23/jimmie-rodgers-1897-1933-p-94
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/asheville-a-yodel-on-the-top-floor/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.6
+    audioBytes: 1178687
+    transcript:
+      totalS: 73.6
+      lines:
+        - text: Look up at the top floor of the Flat Iron Building.
+          atS: 0
+          durationS: 2.9
+        - text: In 1927, that was where a brand new radio station, WWNC, had its studio and its transmitter.
+          atS: 3.34
+          durationS: 7.84
+        - text: By March that year, a former railroad man named Jimmie Rodgers had moved to Asheville.
+          atS: 11.78
+          durationS: 4.81
+        - text: He worked as a janitor, a cab driver, and a city detective.
+          atS: 17.1
+          durationS: 3.9
+        - text: He was already sick.
+          atS: 21.7
+          durationS: 1.33
+        - text: He had been diagnosed with tuberculosis three years before.
+          atS: 23.85
+          durationS: 3.51
+        - text: On the eighteenth of April, 1927, he started singing on WWNC.
+          atS: 28.17
+          durationS: 5.34
+        - text: He and a friend played live every week.
+          atS: 34.11
+          durationS: 2.5
+        - text: It did not go brilliantly to begin with.
+          atS: 37.12
+          durationS: 2.23
+        - text: At one show, in Hendersonville, the only person who came was a housekeeper.
+          atS: 39.95
+          durationS: 4.82
+        - text: That August he recorded his first two songs, at Bristol, on the line between Tennessee and Virginia.
+          atS: 45.58
+          durationS: 6.59
+        - text: The Carter Family made their first recordings the same week.
+          atS: 52.78
+          durationS: 3.78
+        - text: People call those sessions the Big Bang of Country Music.
+          atS: 57.01
+          durationS: 3.32
+        - text: Jimmie Rodgers became the Singing Brakeman, the Blue Yodeler, the Father of Country Music.
+          atS: 60.93
+          durationS: 5.75
+        - text: But before all that, he was a janitor singing into a microphone, somewhere up on that top floor.
+          atS: 67.19
+          durationS: 6.42

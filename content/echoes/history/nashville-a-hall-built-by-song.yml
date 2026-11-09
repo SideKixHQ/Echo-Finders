@@ -9,7 +9,7 @@ at: { lat: 36.16722, lng: -86.80306 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 58
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   It is the oldest permanent building for the higher education of Black students in the United States.
 
   Eleven students, singing. This is what the songs bought.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at the tall Victorian Gothic hall."
@@ -80,3 +80,53 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tn/tn0000/tn0017/data/tn0017data.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-a-hall-built-by-song/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.9
+    audioBytes: 880265
+    transcript:
+      totalS: 54.9
+      lines:
+        - text: Look at the tall Victorian Gothic hall.
+          atS: 0
+          durationS: 2.36
+        - text: Six stories, built in an L.
+          atS: 2.74
+          durationS: 2.46
+        - text: This is Jubilee Hall.
+          atS: 5.53
+          durationS: 1.46
+        - text: Fisk opened in 1866, in the years right after the Civil War, with help from the Freedmen's Bureau.
+          atS: 7.5
+          durationS: 6.06
+        - text: In 1871, a chorus of students, seven women and four men, went on tour to raise money.
+          atS: 14
+          durationS: 6.58
+        - text: The big northern cities first, then Europe and the British Isles.
+          atS: 20.79
+          durationS: 4.02
+        - text: They sang.
+          atS: 25.19
+          durationS: 1.03
+        - text: And what they brought home was enough to buy the land for this campus, and build this hall.
+          atS: 26.55
+          durationS: 4.89
+        - text: Ground was broken on New Year's Day, 1873.
+          atS: 32.25
+          durationS: 3.58
+        - text: The hall was dedicated on New Year's Day, 1876.
+          atS: 36.15
+          durationS: 3.87
+        - text: Some of the black walnut furniture inside was a gift from friends in Great Britain.
+          atS: 40.34
+          durationS: 4.53
+        - text: It is the oldest permanent building for the higher education of Black students in the United States.
+          atS: 45.38
+          durationS: 5.41
+        - text: Eleven students, singing.
+          atS: 51.12
+          durationS: 1.66
+        - text: This is what the songs bought.
+          atS: 52.99
+          durationS: 1.95

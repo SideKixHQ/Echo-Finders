@@ -9,7 +9,7 @@ at: { lat: 35.1401, lng: -90.051 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 66
+durationS: 60
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   The National Park Service calls her the greatest female country blues singer.
 
   All of it started on this patch of ground, for whatever people dropped in the hat.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Before this was Handy Park, it was Church's Park."
@@ -90,3 +90,50 @@ sources:
     url: https://www.nps.gov/locations/lowermsdeltaregion/howlin-wolf.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/memphis-kid-douglas/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 59.7
+    audioBytes: 956751
+    transcript:
+      totalS: 59.7
+      lines:
+        - text: Before this was Handy Park, it was Church's Park.
+          atS: 0
+          durationS: 3.53
+        - text: Musicians came here to play for tips.
+          atS: 4.04
+          durationS: 2.37
+        - text: One of them was a girl from northern Mississippi who had been given a guitar for her birthday, and who ran away from home to play it here.
+          atS: 6.92
+          durationS: 7.67
+        - text: She called herself Kid Douglas.
+          atS: 15.41
+          durationS: 2.5
+        - text: Her real name was Lizzie Douglas.
+          atS: 18.34
+          durationS: 2.15
+        - text: Later she took the name Memphis Minnie.
+          atS: 20.82
+          durationS: 2.51
+        - text: The jug bands played this park too, the Memphis Jug Band among them.
+          atS: 24.02
+          durationS: 4.66
+        - text: They came for the tips, and to learn new songs from the other bands.
+          atS: 29.12
+          durationS: 4.02
+        - text: In the late thirties, a man from the Delta who called himself Howlin' Wolf would come up to Memphis and play here for tips.
+          atS: 33.65
+          durationS: 7.31
+        - text: Minnie went on to record fifty sides before the Depression shut the studios down.
+          atS: 41.56
+          durationS: 4.9
+        - text: She wore bracelets made of silver dollars.
+          atS: 47.07
+          durationS: 2.44
+        - text: The National Park Service calls her the greatest female country blues singer.
+          atS: 50.02
+          durationS: 4.78
+        - text: All of it started on this patch of ground, for whatever people dropped in the hat.
+          atS: 55.24
+          durationS: 4.48

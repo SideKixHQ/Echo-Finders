@@ -9,7 +9,7 @@ at: { lat: 37.7878, lng: -122.5055 }
 triggerRadiusKm: 0.15
 category: built
 format: short
-durationS: 64
+durationS: 61
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -30,7 +30,7 @@ script: |
   In 1966, the Coast Guard automated the light. Its top two tiers were taken away and replaced with a helipad.
 
   So the flat top is the clue. That is where the rest of the lighthouse used to be.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Among the waves there is a red and white striped tower on a rock, with a flat top."
@@ -69,3 +69,50 @@ sources:
     url: https://www.nps.gov/goga/learn/historyculture/vestiges-lands-end-trail.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-the-lighthouse-with-a-flat-top/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 61
+    audioBytes: 976813
+    transcript:
+      totalS: 61
+      lines:
+        - text: Look out at the water toward the Golden Gate.
+          atS: 0
+          durationS: 2.69
+        - text: Among the waves there is a red and white striped tower on a rock, with a flat top.
+          atS: 3.51
+          durationS: 5.31
+        - text: That is the Mile Rocks light.
+          atS: 9.76
+          durationS: 1.99
+        - text: There are two rocks out there that appear and disappear with the swell of the waves.
+          atS: 12.56
+          durationS: 4.51
+        - text: The lighthouse was built after the wreck of the steamship City of Rio de Janeiro in 1901, the worst shipwreck in San Francisco's history.
+          atS: 17.88
+          durationS: 8.67
+        - text: In 1904 a three-tiered lighthouse went up on the larger rock.
+          atS: 27.5
+          durationS: 4.24
+        - text: At the time, it was hailed as one of America's greatest engineering feats.
+          atS: 32.35
+          durationS: 4.4
+        - text: For over sixty years it was kept by four men, living in cramped quarters for days at a time.
+          atS: 37.26
+          durationS: 5.83
+        - text: Isolated from the city, while it sat in plain view.
+          atS: 43.6
+          durationS: 3.72
+        - text: In 1966, the Coast Guard automated the light.
+          atS: 48.43
+          durationS: 3.35
+        - text: Its top two tiers were taken away and replaced with a helipad.
+          atS: 52.22
+          durationS: 3.7
+        - text: So the flat top is the clue.
+          atS: 56.1
+          durationS: 1.65
+        - text: That is where the rest of the lighthouse used to be.
+          atS: 58.26
+          durationS: 2.72

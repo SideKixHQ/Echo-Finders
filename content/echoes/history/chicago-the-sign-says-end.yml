@@ -9,7 +9,7 @@ at: { lat: 41.8781, lng: -87.6245 }
 triggerRadiusKm: 0.05
 category: history
 format: look-below
-durationS: 33
+durationS: 34
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -22,7 +22,7 @@ script: |
   Grant Park, right beside you, was the historic road's official eastern terminus. From here, Route 66 began its sweeping, arced path through Illinois, into Missouri, and on to Santa Monica, California.
 
   The road begins here, or ends here, depending on your perspective. The sign is written for the people arriving. Everyone leaving has to imagine theirs.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "At this corner of Jackson and Michigan, look for a sign that reads, End Historic Route 66."
@@ -48,3 +48,29 @@ sources:
     url: https://www.nps.gov/articles/000/route-66-illinois.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/chicago-the-sign-says-end/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 34.1
+    audioBytes: 547151
+    transcript:
+      totalS: 34.1
+      lines:
+        - text: At this corner of Jackson and Michigan, look for a sign that reads, End Historic Route 66.
+          atS: 0
+          durationS: 6.95
+        - text: Grant Park, right beside you, was the historic road's official eastern terminus.
+          atS: 8.07
+          durationS: 5.12
+        - text: From here, Route 66 began its sweeping, arced path through Illinois, into Missouri, and on to Santa Monica, California.
+          atS: 14
+          durationS: 8.29
+        - text: The road begins here, or ends here, depending on your perspective.
+          atS: 23.24
+          durationS: 4.46
+        - text: The sign is written for the people arriving.
+          atS: 28.65
+          durationS: 2.36
+        - text: Everyone leaving has to imagine theirs.
+          atS: 31.61
+          durationS: 2.52
