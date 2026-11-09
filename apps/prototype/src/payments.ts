@@ -9,7 +9,8 @@
  *
  * Stripe is the record of who paid for what until there are accounts (`docs/03-selling.md`,
  * ADR to follow). The device keeps the Stripe customer id, which is how Restore finds the
- * purchases again. Restoring on a different phone waits for accounts.
+ * purchases again. On a different phone, the email and receipt number from Stripe's receipt
+ * find them instead (`restoreWithReceipt`).
  */
 
 import type { Entitlement } from "@echofinders/core";
@@ -92,6 +93,19 @@ export async function finishCheckout(): Promise<Entitlement | null> {
   // Back from the card page, where renewal may have been changed: read it again.
   if (params.get("portal") === "back") return restoreFromStripe();
   return null;
+}
+
+/**
+ * Restore on another phone: the email a Stripe receipt went to and its receipt number
+ * (`api/restore.ts`). Throws, with words to show, when they do not match a payment.
+ */
+export async function restoreWithReceipt(email: string, receipt: string): Promise<Entitlement> {
+  const back = await call<{ customerId: string; entitlement: Entitlement }>("/api/restore", {
+    method: "POST",
+    body: JSON.stringify({ email, receipt }),
+  });
+  rememberCustomer(back.customerId);
+  return storeEntitlement(back.entitlement);
 }
 
 /** Restore: what Stripe says this device's customer owns, or null if it has never bought. */

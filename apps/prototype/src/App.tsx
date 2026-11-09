@@ -59,6 +59,7 @@ import {
   openCardPage,
   paymentsReady,
   restoreFromStripe,
+  restoreWithReceipt,
   setRenewalAtStripe,
   startCheckout,
 } from "./payments";
@@ -2385,6 +2386,11 @@ export function App() {
                   onCard={() => openCardPage().catch((e: Error) => setPaymentError(e.message))}
                   onRestore={async () => {
                     const back = (paymentsOn ? await restoreFromStripe().catch(() => null) : null) ?? readEntitlement();
+                    setEntitlement(back);
+                    return membershipOf(back, Date.now());
+                  }}
+                  onRestoreReceipt={async (email, receipt) => {
+                    const back = await restoreWithReceipt(email, receipt);
                     setEntitlement(back);
                     return membershipOf(back, Date.now());
                   }}

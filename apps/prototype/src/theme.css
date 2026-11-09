@@ -4521,6 +4521,18 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .membership-note { font-size: 11.5px; line-height: 1.5; color: var(--muted); }
 .membership-note:empty { display: none; }
 .membership-note:not(:empty) { margin: -2px 0 8px; }
+/* Restore on another phone: two fields and a button, inside the Membership panel. */
+.membership-restore { display: grid; gap: 10px; margin: 2px 0 10px; }
+.membership-restore label { display: grid; gap: 4px; font-size: 11.5px; color: var(--muted); }
+.membership-restore input {
+  font: inherit; font-size: 16px; color: var(--white); background: rgba(var(--rgb-panel), 0.55);
+  border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; min-height: 44px;
+}
+.membership-restore-go {
+  min-height: 44px; border: 0; border-radius: 12px; cursor: pointer; font: inherit;
+  font-size: 13.5px; font-weight: 500; background: var(--btn); color: var(--btn-ink);
+}
+.membership-restore-go:disabled { opacity: 0.6; cursor: default; }
 .membership-confirm { padding: 10px 0 0; }
 .membership-confirm p { font-size: 13px; line-height: 1.5; margin-bottom: 10px; }
 .membership-confirm-actions { display: flex; gap: 8px; }

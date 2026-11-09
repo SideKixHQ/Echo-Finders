@@ -32,6 +32,11 @@ interface Props {
   readonly onOptions: () => void;
   /** Read back what this device holds (from Stripe, when payments are on), and say what. */
   readonly onRestore: () => Membership | Promise<Membership>;
+  /**
+   * Restore on another phone, from the email and receipt number on a Stripe receipt. Only
+   * offered when payments are on; throws with words to show when nothing matches.
+   */
+  readonly onRestoreReceipt?: (email: string, receipt: string) => Promise<Membership>;
   /** Cancel All-Access renewal (false) or turn it back on (true). */
   readonly onRenewal: (on: boolean) => void;
   /** Real payments are switched on (`payments.ts`). */
@@ -49,6 +54,7 @@ export function MembershipPanel({
   freeLeft,
   onOptions,
   onRestore,
+  onRestoreReceipt,
   onRenewal,
   payments = false,
   canManageCard = false,
@@ -57,6 +63,10 @@ export function MembershipPanel({
 }: Props) {
   const [confirming, setConfirming] = useState(false);
   const [restored, setRestored] = useState<string | null>(null);
+  const [elsewhere, setElsewhere] = useState(false);
+  const [email, setEmail] = useState("");
+  const [receipt, setReceipt] = useState("");
+  const [busy, setBusy] = useState(false);
   const { name, detail } = describe(membership, freeLeft);
 
   return (
@@ -124,13 +134,73 @@ export function MembershipPanel({
       {/* Spoken when it changes, so a screen reader hears the result of the tap. */}
       <p className="membership-note" role="status">
         {error && <>{error} </>}
-        {restored && (
-          <>
-            {restored} Bought on another phone or browser? That moves over once accounts
-            arrive.
-          </>
-        )}
+        {restored}
       </p>
+
+      {/*
+        Another phone, before there are accounts: the email Stripe's receipt went to and the
+        receipt number on it. Only the person who paid was sent both.
+      */}
+      {payments && onRestoreReceipt && (
+        <>
+          <button
+            className="setting-row setting-link membership-row"
+            aria-expanded={elsewhere}
+            onClick={() => setElsewhere(!elsewhere)}
+          >
+            <span className="setting-text">
+              <strong>Bought on another phone?</strong>
+              <small>Use the email and receipt number from your Stripe receipt.</small>
+            </span>
+            <Chevron />
+          </button>
+          {elsewhere && (
+            <form
+              className="membership-restore"
+              onSubmit={async (event) => {
+                event.preventDefault();
+                setBusy(true);
+                try {
+                  const now = await onRestoreReceipt(email, receipt);
+                  setRestored(`Restored: ${describe(now, freeLeft).name}.`);
+                  setElsewhere(false);
+                } catch (failure) {
+                  setRestored(failure instanceof Error ? failure.message : "That did not work. Try again.");
+                } finally {
+                  setBusy(false);
+                }
+              }}
+            >
+              <label>
+                <span>Email on the receipt</span>
+                <input
+                  type="email"
+                  autoComplete="email"
+                  inputMode="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </label>
+              <label>
+                <span>Receipt number</span>
+                <input
+                  type="text"
+                  inputMode="numeric"
+                  placeholder="1234-5678"
+                  autoComplete="off"
+                  required
+                  value={receipt}
+                  onChange={(e) => setReceipt(e.target.value)}
+                />
+              </label>
+              <button className="membership-restore-go" type="submit" disabled={busy}>
+                {busy ? "Checking…" : "Restore"}
+              </button>
+            </form>
+          )}
+        </>
+      )}
 
       {membership.plan === "all-access" &&
         (membership.renews ? (
