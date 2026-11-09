@@ -9,7 +9,7 @@ at: { lat: 42.35760, lng: -71.05855 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 82
+durationS: 81
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -40,26 +40,160 @@ script: |
   So on this one small corner, a woman was thrown out of the colony and told to say no more.
 
   Two hundred years later, saying more was the whole business.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "It is one of the oldest buildings in the city, and among the taller ones around it, it looks it."
+    source: 2
+    quote: "The building has a unique roof type in Boston as it is one of the oldest buildings in the city. The roof is a gambrel roof, which means it has a symmetrical roof with two slopes on each side."
+  - says: "Find the little brick building on the corner with the steep, two sloped roof."
+    source: 2
+    quote: "The Old Corner Bookstore is situated on the corners of School and Washington Streets. The photograph shows the red brick building"
+  - says: "Before it was built, this ground belonged to a woman named Anne Hutchinson."
+    source: 1
+    quote: "The bookstore stands on a site once owned by Anne Hutchinson"
+  - says: "She held meetings in her house here, talking about religion."
+    source: 4
+    quote: "it stands on the site where Anne Hutchinson (1591- 1643) held her famous meetings, for the liberalism of which she was driven from the Colony."
+  - says: "The colony's leaders judged her teaching dangerous."
+    source: 3
+    quote: "Neither liberty of speech nor liberty of opinion could be allowed."
+  - says: "In sixteen thirty eight she was tried and banished."
+    source: 1
+    quote: "who was expelled from the colony in 163 8 for heresy."
+  - says: "At the end of the trial she asked why she was being sent away."
+    source: 3
+    quote: "At the conclusion of her trial, when sentence of banishment had been pronounced, she desired to know wherefore she was banished"
+  - says: "The governor told her, say no more."
+    source: 3
+    quote: "to which Winthrop replied, ‘‘ Say no more; the Court knows wherefore, and is satisfied.”’"
+  - says: "The court knows wherefore, and is satisfied."
+    source: 5
+    quote: "Winthrop. “Say no more; the court know wherefore, and is satisfied.”"
+  - says: "Later, fire took the houses on this corner."
+    source: 1
+    quote: "The original building was destroyed in the fire of 1711"
+  - says: "The building in front of you went up in its place as an apothecary's shop, and stayed one for about a hundred years."
+    source: 1
+    quote: "this gambrel-roofed structure was erected in 1718 by Dr. Thomas Creese. Initially used as a pharmacy, the building was leased to a bookseller named Timothy Harrington Carter in 1829."
+  - says: "Then the booksellers moved in."
+    source: 1
+    quote: "The firm Carter & Hendlee was followed by several other booksellers and publishers"
+  - says: "By the middle of the eighteen hundreds this was the home of Ticknor and Fields, the leading publisher in the country, and the writers came here with their manuscripts."
+    source: 1
+    quote: "Between 1833 and 1864, Ticknor & Fields was the nation's premier publisher and attracted writers such as Henry Wadsworth Longfellow, Harriet Beecher Stowe, Nathaniel Hawthorne, Ralph Waldo Emerson"
+  - says: "Hawthorne."
+    source: 1
+    quote: "Nathaniel Hawthorne"
+  - says: "Emerson."
+    source: 1
+    quote: "Ralph Waldo Emerson"
+  - says: "Longfellow."
+    source: 1
+    quote: "Henry Wadsworth Longfellow"
+  - says: "Harriet Beecher Stowe."
+    source: 1
+    quote: "Harriet Beecher Stowe"
+  - says: "Louisa May Alcott."
+    source: 1
+    quote: "and Louisa May Alcott."
+  - says: "So on this one small corner, a woman was thrown out of the colony and told to say no more."
+    source: 1
+    quote: "Anne Hutchinson, who was expelled from the colony in 163 8 for heresy."
+  - says: "Two hundred years later, saying more was the whole business."
+    source: 1
+    quote: "Between 1833 and 1864, Ticknor & Fields was the nation's premier publisher"
 sources:
   - title: "Old Corner Book Store, Corner of Washington and School streets, Boston (HABS MA-325)"
     publisher: "Historic American Buildings Survey, Library of Congress"
     url: https://www.loc.gov/item/ma1736/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Freedom Trail Audio Described Brochure"
     publisher: "National Park Service, Boston National Historical Park"
     url: https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Colonial and revolutionary landmarks of Boston (1913)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/14003283/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Literary landmarks of Boston (1922)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/22012901/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+  - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01012230/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-say-no-more/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.5
+    audioBytes: 1288611
+    transcript:
+      totalS: 80.5
+      lines:
+        - text: Find the little brick building on the corner with the steep, two sloped roof.
+          atS: 0
+          durationS: 4.35
+        - text: It is one of the oldest buildings in the city, and among the taller ones around it, it looks it.
+          atS: 5.05
+          durationS: 5.62
+        - text: Before it was built, this ground belonged to a woman named Anne Hutchinson.
+          atS: 11.78
+          durationS: 4.83
+        - text: She held meetings in her house here, talking about religion.
+          atS: 17.43
+          durationS: 3.23
+        - text: The colony's leaders judged her teaching dangerous.
+          atS: 20.98
+          durationS: 2.94
+        - text: In sixteen thirty eight she was tried and banished.
+          atS: 24.61
+          durationS: 3.45
+        - text: At the end of the trial she asked why she was being sent away.
+          atS: 29.01
+          durationS: 3.83
+        - text: The governor told her, say no more.
+          atS: 33.36
+          durationS: 2.6
+        - text: The court knows wherefore, and is satisfied.
+          atS: 36.4
+          durationS: 3.04
+        - text: Later, fire took the houses on this corner.
+          atS: 40.25
+          durationS: 2.97
+        - text: The building in front of you went up in its place as an apothecary's shop, and stayed one for about a hundred years.
+          atS: 43.55
+          durationS: 6.77
+        - text: Then the booksellers moved in.
+          atS: 50.7
+          durationS: 1.7
+        - text: By the middle of the eighteen hundreds this was the home of Ticknor and Fields, the leading publisher in the country, and the writers came here with their manuscripts.
+          atS: 52.72
+          durationS: 9.27
+        - text: Hawthorne.
+          atS: 62.5
+          durationS: 0.81
+        - text: Emerson.
+          atS: 63.55
+          durationS: 0.8
+        - text: Longfellow.
+          atS: 64.6
+          durationS: 0.91
+        - text: Harriet Beecher Stowe.
+          atS: 65.65
+          durationS: 1.53
+        - text: Louisa May Alcott.
+          atS: 67.4
+          durationS: 1.6
+        - text: So on this one small corner, a woman was thrown out of the colony and told to say no more.
+          atS: 69.81
+          durationS: 6.15
+        - text: Two hundred years later, saying more was the whole business.
+          atS: 76.66
+          durationS: 3.82

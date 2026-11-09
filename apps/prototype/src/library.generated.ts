@@ -21,7 +21,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 110,
+    "durationS": 84,
     "minAge": 10,
     "quality": 0.95,
     "visibility": "at-hand",
@@ -29,9 +29,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "In 1991 the federal government began digging foundations for an office tower at Broadway\nand Duane, and about seven metres down the crews found bone.\n\nWhat lay beneath the block was a cemetery. From the late sixteen-hundreds into the\nseventeen-nineties, free and enslaved Africans in this city had buried their dead in a\npatch of ground outside the settlement's boundary, roughly six and a half acres of it.\nLater New York built over the site and forgot. Estimates put the number of burials around\nfifteen thousand.\n\nFour hundred and nineteen men, women and children were recovered from the part that was\nexcavated. Their descendants and this city's Black community fought to stop the\nconstruction, and won. The remains were studied, then reinterred here in 2003.\n\nIt is the earliest and largest African burial ground yet found in the United States, and\nit existed partly because of a rule: from 1697, Africans were barred from the city's main\nburial ground. So they made their own, out past the edge of town.\n\nYou are standing at the edge of town.\n",
+    "script": "In 1991, while the ground on this block was being dug out for a federal office building, workers found graves.\n\nWhat lay beneath the block was a cemetery. For a century, from the 1690s to the 1790s, free and enslaved Africans in this city had buried their dead here, on land outside the city's northern palisade, eventually five to six acres of it. Later New York built over it, and it was lost under landfill and buildings. The Park Service puts the number buried here at over fifteen thousand.\n\nThe remains of four hundred and nineteen men, women and children were excavated from the part that was dug. Community activism shaped what happened next, and the descendant community reached an agreement with the government on how they would be studied and remembered. The remains were studied at Howard University, then reburied here in October 2003.\n\nIt is the nation's earliest and largest known African American cemetery. Scholars believe it exists because of a rule: in 1697, Africans were barred from burying their dead in the city's main burial ground. So they made their own, out past the edge of town.\n\nYou are standing at the edge of town.\n",
     "teaser": "Twenty-four feet below the pavement.",
     "detail": "The memorial occupies a fraction of the original site; most of the burial ground remains\nunder the surrounding streets and buildings. It was designated a National Monument in\n2006.\n",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/african-burial-ground/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 84.3,
+        "audioBytes": 1349633
+      }
+    ],
     "pronunciations": [
       {
         "written": "Duane Street",
@@ -48,14 +56,7 @@ export const LIBRARY: readonly Echo[] = [
       "archaeology",
       "memorial"
     ],
-    "remoteness": 0.38,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/african-burial-ground",
-        "durationS": 110
-      }
-    ]
+    "remoteness": 0.38
   },
   {
     "id": "annapolis-a-port-called-napolis",
@@ -612,7 +613,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "atlantic-city-first-boardwalk",
     "title": "It was invented to keep sand out of the lobbies",
-    "summary": "The world's first boardwalk was built in 1870 by hoteliers tired of sweeping.",
+    "summary": "Atlantic City's first boardwalk, in 1870, was built to keep sand out of the hotels and the trains.",
     "point": {
       "at": {
         "lat": 39.3643,
@@ -623,7 +624,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 85,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.84,
     "visibility": "landmark-visible",
@@ -631,22 +632,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Down on your right, that pale line running along the back of the beach.\n\nBoardwalks exist everywhere now. That one is where the idea came from, and it was not\nbuilt for strolling.\n\nIn eighteen seventy the hotels and the railway on that beachfront had the same complaint:\nguests walked in off the sand and brought most of the beach with them, into the lobbies,\nonto the carpets, into the railway carriages. Sweeping it out was a full-time job.\n\nSo a conductor and a hotelier proposed a wooden walkway, laid straight onto the sand, that\npeople would use because it was easier than not using it.\n\nIt was taken up every autumn and stored for the winter.\n\nEverything else that word now means, the piers and the postcards and the\namusements, grew on top of a solution to a cleaning problem.\n",
+    "script": "Down on your right, that pale line running along the back of the beach.\n\nIt was not built for strolling. It was built because of sand.\n\nAtlantic City was a commercial venture from the start, created by a railroad and a land company from Philadelphia. In eighteen seventy the town laid its first boardwalk, a footpath so that people would not walk back into the hotels, the trains and the shops with sand in their shoes.\n\nIt was ten feet wide, made of removable twelve foot sections laid on posts in the sand.\n\nA bigger one followed ten years later, and after a winter storm in eighteen eighty four, a sturdier one again, raised five feet above the beach, with businesses on both sides.\n\nEverything else that word now means, the piers and the postcards and the amusements, grew on top of a solution to a cleaning problem.\n",
     "teaser": "The pale line along the beach below is the original of its kind.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/atlantic-city-first-boardwalk/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.2,
+        "audioBytes": 868144
+      }
+    ],
     "tags": [
       "new-jersey",
       "coast",
       "seaside"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/atlantic-city-first-boardwalk",
-        "durationS": 85
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "bald-head-captain-charlie-lit-both",
@@ -879,7 +881,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 74,
+    "durationS": 70,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -889,6 +891,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the schoolhouse at the corner of Smith Court. It opened in eighteen thirty-five as\na public school for Black children, and it became the default school for most of the\nBlack children in the city.\n\nPart of the money came from a white businessman, Abiel Smith, who left it for the\neducation of Black children. The school was still worse than the white schools, and the\nfamilies here kept saying so.\n\nIn eighteen forty-nine, many of them took their children out. Classes moved back into the\nmeeting house next door. A father, Benjamin Roberts, sued so his daughter Sarah could go to\nthe school nearest her home. He lost.\n\nSo they went to the state. William Cooper Nell, who had been a pupil in the old African\nSchool himself, led the petitions. In eighteen fifty-five, Massachusetts outlawed\nsegregated public schools.\n\nNell lived on this court. On the first day of school that year, he watched a young\nstudent walk past this building, and heard what the boy said to it.\n\nGoodbye forever, colored school. Tomorrow we are like the other Boston boys.\n",
     "teaser": "Look at the schoolhouse at the corner of Smith Court. A boy once said goodbye to it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-abiel-smith-school-goodbye/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 70.4,
+        "audioBytes": 1126861
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -897,14 +907,7 @@ export const LIBRARY: readonly Echo[] = [
       "schools",
       "civil-rights"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-abiel-smith-school-goodbye",
-        "durationS": 74
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-african-meeting-house-built-by-its-people",
@@ -920,7 +923,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 70,
+    "durationS": 66,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -928,8 +931,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "You are in Smith Court. Look at the meeting house. It opened in eighteen-oh-six, and it is\nthe oldest Black church building still standing in the United States.\n\nLook at it as a building first. Somebody had to pay for it, and somebody had to build it.\n\nThe African Baptist Church was founded the year before, with twenty-four members. Fifteen\nof them were women. To give it a home, a man named Cato Gardner, born in Africa, went out\nand raised fifteen hundred dollars himself. Black craftsmen did most of the work.\n\nThen the building did its job. It was a church, and a school met on the first floor.\nFrederick Douglass spoke here. So did Maria Stewart. In eighteen thirty-two, William Lloyd\nGarrison founded the New England Anti-Slavery Society inside.\n\nPeople called it the Black Faneuil Hall.\n\nIt was meant as a compliment. But Faneuil Hall was the gift of one rich merchant, a man who\nbought and sold enslaved people. This hall was paid for and built by the people who sat in\nit.\n",
+    "script": "You are in Smith Court. Look at the meeting house. It opened in eighteen-oh-six, and it is\nthe oldest Black church building still standing in the United States.\n\nLook at it as a building for a moment. Somebody had to pay for it, and somebody had to build it.\n\nThe African Baptist Church was founded the year before, with twenty-four members. Fifteen\nof them were women. To give it a home, a man named Cato Gardner, born in Africa, went out\nand raised fifteen hundred dollars himself. Black craftsmen did most of the work.\n\nThen the building did its job. It was a church, and a school met on the first floor.\nFrederick Douglass spoke here. So did Maria Stewart. In eighteen thirty-two, William Lloyd\nGarrison founded the New England Anti-Slavery Society inside.\n\nPeople called it the Black Faneuil Hall.\n\nIt was meant as a compliment. But Faneuil Hall was the gift of one rich merchant, a man who\nbought and sold enslaved people. This hall was paid for and built by the people who sat in\nit.\n",
     "teaser": "Look at the meeting house. Somebody had to pay for it, and somebody had to build it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-african-meeting-house-built-by-its-people/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 66.3,
+        "audioBytes": 1062077
+      }
+    ],
     "pronunciations": [
       {
         "written": "Faneuil",
@@ -944,14 +955,7 @@ export const LIBRARY: readonly Echo[] = [
       "churches",
       "abolition"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-african-meeting-house-built-by-its-people",
-        "durationS": 70
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-beacon-hill-the-beacon",
@@ -975,8 +979,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Find the tall column with the eagle on top. It stands in for something that is gone.\n\nIn sixteen thirty-five, the English settlers put up a tall wooden beacon on top of this\nhill. If danger came, an attack or an outbreak, it could warn the countryside. The hill\ntook its name from it.\n\nIn seventeen seventy-five, with colonial troops gathering across the river at Cambridge,\nGeneral Gage built a small fort up here, and had the beacon taken down. A signal to the countryside was the\nlast thing he wanted.\n\nThe British left Boston in March seventeen seventy-six. Bostonians put the beacon straight\nback up.\n\nIt lasted another thirteen years. In seventeen eighty-nine, a storm blew it down. The\neagle column, designed by Charles Bulfinch, took its place.\n\nThe hill has changed even more than the beacon. It once had three peaks. Bostonians dug\nmuch of them away to fill in land around the city.\n\nThe beacon is gone, and most of the hill is gone. Only the name stayed put.\n",
+    "script": "Find the tall column with the eagle on top. It stands in for something that is gone.\n\nIn sixteen thirty-five, the English settlers put up a tall wooden beacon on top of this\nhill. If danger came, an attack or an outbreak, it could warn the countryside. The hill\ntook its name from it.\n\nIn seventeen seventy-five, with colonial troops gathering across the river at Cambridge,\nGeneral Gage built a small fort up here, and had the beacon taken down. He did not want anyone signalling to the\ncountryside.\n\nThe British left Boston in March seventeen seventy-six. Bostonians put the beacon straight\nback up.\n\nIt lasted another thirteen years. In seventeen eighty-nine, a storm blew it down. The\neagle column, designed by Charles Bulfinch, took its place.\n\nThe hill has changed even more than the beacon. It once had three peaks. Bostonians dug\nmuch of them away to fill in land around the city.\n\nThe beacon is gone, and most of the hill is gone. Only the name stayed put.\n",
     "teaser": "Find the tall column with the eagle on top. It stands in for something that is gone.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-beacon-hill-the-beacon/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 68.7,
+        "audioBytes": 1100111
+      }
+    ],
     "pronunciations": [
       {
         "written": "Bulfinch",
@@ -991,14 +1003,7 @@ export const LIBRARY: readonly Echo[] = [
       "place-names",
       "bulfinch"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-beacon-hill-the-beacon",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-brimstone-corner",
@@ -1014,7 +1019,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 76,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1022,9 +1027,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the spire on the corner. This is Park Street Church, and for more than a\ncentury Bostonians have called this spot Brimstone Corner.\n\nNobody quite agrees why.\n\nThe first story is about sermons. The church was founded in eighteen-oh-nine, as much of\nBoston was turning Unitarian, and its early ministers preached the old orthodox faith at\nfull heat. Newspapers around nineteen hundred said the name came from the first of them,\nEdward Dorr Griffin. One old Boston joke went like this. The Unitarians had managed to\nfreeze over hell, and this congregation broke a hole in the ice and let the flames up\nagain.\n\nThe second story is about the cellar. A Boston historian, in a book about Park Street\npublished in the early nineteen-twenties, said the sermons had nothing to do with it.\nDuring the War of eighteen twelve, he said, brimstone for making gunpowder was stored in\nthe building.\n\nBrimstone is sulphur. It goes into gunpowder, and it is what hell is supposed to smell of.\n\nSo the corner got its name from the pulpit, or from the basement. Either way, it was the\nsame smell.\n",
+    "script": "Look up at the spire on the corner. This is Park Street Church, and for more than a\ncentury Bostonians have called this spot Brimstone Corner.\n\nNobody quite agrees why.\n\nThe first story is about sermons. The church was founded in eighteen-oh-nine, as much of\nBoston was turning Unitarian, and its early ministers preached the old orthodox faith at\nfull heat. Newspapers around nineteen hundred said the name came from the first of them,\nEdward Dorr Griffin. One old Boston joke went like this. The Unitarians had managed to\nfreeze over hell, and this congregation broke a hole in the ice and let the flames up\nagain.\n\nThe second story is about what was kept inside. A Boston historian, in a book about Park Street\npublished in the early nineteen-twenties, said the sermons had nothing to do with it.\nDuring the War of eighteen twelve, he said, brimstone for making gunpowder was stored in\nthe building.\n\nBrimstone is sulphur. It goes into gunpowder, and it is what hell is supposed to smell of.\n\nSo the corner got its name from the pulpit, or from the storeroom. Either way, it was the\nsame smell.\n",
     "teaser": "Look up at the spire on the corner. Bostonians have called this spot Brimstone Corner for more than a century.",
     "certaintyNote": "Two origins for the nickname circulate in the record. Newspapers of 1897 and 1902 credit the preaching of the first minister, Edward Dorr Griffin; a 1922 New York Herald review of a history of Park Street reports its author, Dr. Lawrence, saying instead that brimstone for gunpowder was stored in the building during the War of 1812. The script gives both and picks neither.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-brimstone-corner/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.5,
+        "audioBytes": 1192898
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1033,14 +1046,7 @@ export const LIBRARY: readonly Echo[] = [
       "war-of-1812",
       "place-names"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-brimstone-corner",
-        "durationS": 76
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-common-cows",
@@ -1056,7 +1062,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 60,
+    "durationS": 59,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1066,6 +1072,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the grass around you. For about two hundred years, this was a pasture.\n\nThe town bought the land in sixteen thirty-four, and families grazed their cattle here.\nThere were rules about it. Each family could only put so many cows on the Common, so the\ngrass would not run out.\n\nOn hot days the cows sheltered under a huge old elm. The ground around it was swampy then.\n\nIn the winter of seventeen seventy-five, the Common was taken over by something else.\nBritish soldiers dug artillery positions into it, and a garrison of about seventeen\nhundred men camped here.\n\nIn March they sailed away.\n\nThe cows stayed. They kept grazing this ground for another fifty-four years, until the\ncity banned them in eighteen thirty. The pasture fences came down six years after that.\n\nThe British army held the Common for one winter. The cows held it for two centuries.\n",
     "teaser": "Look at the grass around you. For about two hundred years, this was a pasture.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-common-cows/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 59.1,
+        "audioBytes": 947138
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1073,14 +1087,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "farming"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-common-cows",
-        "durationS": 60
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-franklins-other-corner",
@@ -1096,7 +1103,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 97,
+    "durationS": 88,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1107,6 +1114,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Stand on Milk Street and look across at the Old South Meeting House, the big brick church\nwith the tall steeple.\n\nBenjamin Franklin was baptized in there, as a baby, in seventeen oh six. And the story\nBoston has told for a very long time is that he was born right about where you are\nstanding, in a small wooden house that belonged to his father, a candle maker.\n\nIt was a plain house. Clapboard on the front, rough shingles on the sides, about twenty\nfeet wide on the street. It stood for over a century, and it burned down in eighteen\neleven. A newspaper office was later built on the site.\n\nTidy enough. Except for one detail.\n\nIn eighteen seventy three, the Boston historian Samuel Adams Drake pointed out that a\ncorner of Hanover Street, across town, also claimed the honour. And the witness for that\nother corner, by his account, was Franklin himself, who was said to have told a reliable\nperson he was born there.\n\nOther evidence points back here. Drake weighed the two and threw up his hands. A plague on\nboth the houses, he wrote.\n\nWhat is certain is that the boy grew up at the Hanover Street house, making tallow candles\nfor his father. What is likely is that he was born on Milk Street.\n\nSo look at the church across the road. Whichever corner he was born on, he was carried\nover there to be baptized.\n",
     "teaser": "Look across the street at Old South. He was baptized in there.",
     "certaintyNote": "Milk Street is the generally accepted birthplace, but an 1873 history records a rival claim for Hanover Street, said to rest on Franklin's own word. The script presents both and says which is likelier. The baptism at Old South is not in dispute.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-franklins-other-corner/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 88.2,
+        "audioBytes": 1412745
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1114,14 +1129,7 @@ export const LIBRARY: readonly Echo[] = [
       "benjamin-franklin",
       "old-south"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-franklins-other-corner",
-        "durationS": 97
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-granary-five-in-one-grave",
@@ -1137,7 +1145,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 48,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1147,6 +1155,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look for a stone that faces Tremont Street. It belongs to five men.\n\nOn the fifth of March, seventeen seventy, British soldiers fired into a crowd on King\nStreet. Three days later, Boston buried the dead.\n\nWitnesses said around ten thousand people followed the funeral. That was most of the town.\n\nThe procession ended here. Samuel Gray, Samuel Maverick, James Caldwell and Crispus\nAttucks went into the same plot. A week later a fifth man, Patrick Carr, was laid in with\nthem.\n\nTwo of them, Attucks and Caldwell, were sailors with no family and no home in Boston.\nBefore the funeral, their bodies lay in state at Faneuil Hall.\n\nNobody in Boston was their family. That week, the whole town was.\n",
     "teaser": "Look for a stone that faces Tremont Street. It belongs to five men.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-granary-five-in-one-grave/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.8,
+        "audioBytes": 877757
+      }
+    ],
     "pronunciations": [
       {
         "written": "Attucks",
@@ -1165,14 +1181,7 @@ export const LIBRARY: readonly Echo[] = [
       "boston-massacre",
       "burial-ground"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-granary-five-in-one-grave",
-        "durationS": 48
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-hayden-house-keg",
@@ -1188,7 +1197,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 77,
+    "durationS": 74,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1199,6 +1208,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "This is sixty-six Phillips Street. It is a private home, so please look from the\nsidewalk.\n\nIn eighteen fifty it was a boarding house run by Lewis and Harriet Hayden. Both had\nescaped slavery in Kentucky. Lewis was out in the city. Harriet almost certainly ran the\nhouse. Between them it became the busiest Underground Railroad safe house in Boston.\n\nThat summer, the census found two famous guests living here. William and Ellen Craft had\nescaped from Georgia, Ellen dressed as a white slaveholder and William posing as her slave.\n\nThat autumn, under the new Fugitive Slave Law, slave catchers came to Boston looking for\nthem. It was the city's first test of the law.\n\nWhat happened next is William Craft's own account. He said that he and Lewis Hayden had a\nkeg of gunpowder under this house, with a fuse attached, ready to light if anyone tried to\ntake them. That is his word. No other record of the keg survives that we know of.\n\nNobody tried. The slave catchers gave up.\n\nAn abolitionist paper later explained why. The marshal knew that the road to hell lay over\nLewis Hayden's threshold.\n",
     "teaser": "This is sixty-six Phillips Street. Please look from the sidewalk.",
     "certaintyNote": "The gunpowder keg rests on William Craft's own later account, quoted by Henry Ingersoll Bowditch and cited by the National Park Service. The script attributes it to him and says no other record of the keg is known to us.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-hayden-house-keg/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.3,
+        "audioBytes": 1189972
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1207,14 +1224,7 @@ export const LIBRARY: readonly Echo[] = [
       "underground-railroad",
       "abolition"
     ],
-    "remoteness": 0.15,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-hayden-house-keg",
-        "durationS": 77
-      }
-    ]
+    "remoteness": 0.15
   },
   {
     "id": "boston-in-short-i-lost-most-all",
@@ -1230,7 +1240,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 87,
+    "durationS": 91,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1240,6 +1250,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look for the old stone foundations in this park. They belonged to the Great House, later the\nThree Cranes Tavern. In seventeen seventy-five this was the middle of Charlestown.\n\nThat spring, about sixteen hundred people lived here. Wooden houses, workshops, warehouses,\nnarrow streets, a ferry across to Boston.\n\nBy June, most of them had gone. The British army was shut up in Boston, the colonial army\nwas gathering outside, and Charlestown sat in between.\n\nOn the seventeenth of June, the militia dug in on the hill above the town. During the\nbattle, colonial soldiers fired on the British from the empty houses. General William Howe\nordered the town set on fire.\n\nA British general, John Burgoyne, had been directing guns from Copp's Hill, across the\nwater. He wrote that the timber church steeples were great pyramids of fire above the rest.\n\nAfterwards, more than four hundred and fifty families listed what they had lost. One man,\nWillson Chamberlain, began his list and ran out of room on the paper. He ended it with one\nline.\n\nIn short, I lost most all that I had.\n\nThe town asked Congress to pay. Congress said it lamented the distress. Nobody was ever\ncompensated.\n\nOf the town Chamberlain lost, this is what you can still see. A tavern's foundations, in a\npark.\n",
     "teaser": "Look for the old foundations in this park. They are most of what is left of a town.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-in-short-i-lost-most-all/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 90.7,
+        "audioBytes": 1452033
+      }
+    ],
     "pronunciations": [
       {
         "written": "Burgoyne",
@@ -1255,14 +1273,52 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "archaeology"
     ],
-    "remoteness": 0.37,
+    "remoteness": 0.37
+  },
+  {
+    "id": "boston-mother-goose",
+    "title": "Looking for Mother Goose",
+    "summary": "Boston tradition puts Mother Goose in this burying ground. Even her grave is in dispute.",
+    "point": {
+      "at": {
+        "lat": 42.35741,
+        "lng": -71.06171
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Granary Burying Ground, Tremont Street, Boston, Massachusetts"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 64,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are in the Granary Burying Ground. John Hancock and Paul Revere are buried here. But one\nname draws a different kind of visitor. They are looking for Mother Goose.\n\nWhat follows is a legend, and a disputed one.\n\nThe family story goes like this. In sixteen ninety-two, a widower named Isaac Goose married\nElizabeth Foster. Her daughter, also Elizabeth, married a Boston printer, Thomas Fleet. And\nFleet, the story says, printed the rhymes she sang to her grandchildren, and named the\ncollection for her.\n\nEven the grave is a puzzle. A Boston paper reported that the stone people call Mother\nGoose's belongs to Isaac's first wife, Mary, who died in sixteen ninety. Elizabeth was\nburied here too, but her stone is not standing.\n\nAnd one Boston antiquary, William Whitmore, went further. He argued that Mother Goose was\nnot Elizabeth at all, and that the name did not even start in Boston.\n\nSo she may not be here. People still come looking.\n",
+    "teaser": "Some visitors come here for Hancock and Revere. Some come for Mother Goose.",
+    "certaintyNote": "A Boston tradition, not established fact. A Boston Transcript item reprinted in 1920 gives the family tradition and says the stone shown is Mary Goose's; a 1908 guidebook reports the antiquary William H. Whitmore's argument that Mother Goose was not a Boston woman at all. The script says out loud it is a legend and disputed.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-in-short-i-lost-most-all",
-        "durationS": 87
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/boston-mother-goose/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 63.8,
+        "audioBytes": 1021953
       }
-    ]
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "burial-ground",
+      "granary",
+      "nursery-rhymes",
+      "folklore"
+    ],
+    "remoteness": 0
   },
   {
     "id": "boston-say-no-more",
@@ -1278,7 +1334,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 82,
+    "durationS": 81,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1288,6 +1344,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Find the little brick building on the corner with the steep, two sloped roof. It is one of\nthe oldest buildings in the city, and among the taller ones around it, it looks it.\n\nBefore it was built, this ground belonged to a woman named Anne Hutchinson.\n\nShe held meetings in her house here, talking about religion. The colony's leaders judged\nher teaching dangerous. In sixteen thirty eight she was tried and banished.\n\nAt the end of the trial she asked why she was being sent away. The governor told her, say\nno more. The court knows wherefore, and is satisfied.\n\nLater, fire took the houses on this corner. The building in front of you went up in its\nplace as an apothecary's shop, and stayed one for about a hundred years.\n\nThen the booksellers moved in.\n\nBy the middle of the eighteen hundreds this was the home of Ticknor and Fields, the\nleading publisher in the country, and the writers came here with their manuscripts.\nHawthorne. Emerson. Longfellow. Harriet Beecher Stowe. Louisa May Alcott.\n\nSo on this one small corner, a woman was thrown out of the colony and told to say no more.\n\nTwo hundred years later, saying more was the whole business.\n",
     "teaser": "Find the little brick building with the steep roof.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-say-no-more/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 80.5,
+        "audioBytes": 1288611
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1296,14 +1360,7 @@ export const LIBRARY: readonly Echo[] = [
       "publishing",
       "anne-hutchinson"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-say-no-more",
-        "durationS": 82
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-shaw-memorial-forty-faces",
@@ -1319,7 +1376,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 79,
+    "durationS": 81,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1329,6 +1386,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the soldiers in the bronze, not the man on the horse. Look at their faces.\n\nThey are not one face repeated. Some are young, some older. The features and the builds\nare different.\n\nThat was the point. The sculptor, Augustus Saint-Gaudens, was first expected to make a\nstatue of Colonel Robert Gould Shaw alone on horseback. Shaw's family objected. He had not\nbeen a great commander, they said, and it seemed pretentious. So Saint-Gaudens put him\namong his men.\n\nThe men were the Fifty-fourth Massachusetts, one of the first Black regiments of the Civil\nWar. They marched down this street, off to the war, in eighteen sixty-three. That July, in\nthe assault on Fort Wagner in South Carolina, Shaw and many of his men were killed.\n\nIn his New York studio, Saint-Gaudens hired Black men to pose, and modelled some forty\nheads. The work took him about fourteen years, longer than anything else in his career.\n\nIt was unveiled in eighteen ninety-seven, and the original inscriptions named only the\nwhite officers who fell. The names of the Black soldiers were added in the early\nnineteen-eighties.\n\nThe faces came first. The names took another eighty-five years.\n",
     "teaser": "Look at the soldiers in the bronze, not the man on the horse. Look at their faces.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-shaw-memorial-forty-faces/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 80.6,
+        "audioBytes": 1291118
+      }
+    ],
     "pronunciations": [
       {
         "written": "Saint-Gaudens",
@@ -1344,14 +1409,7 @@ export const LIBRARY: readonly Echo[] = [
       "sculpture",
       "54th-massachusetts"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-shaw-memorial-forty-faces",
-        "durationS": 79
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-sides-made-of-iron",
@@ -1367,7 +1425,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 86,
+    "durationS": 79,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1375,8 +1433,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the side of the ship in front of you.\n\nIn August eighteen twelve, about seven hundred and fifty miles east of Boston, she met the\nBritish frigate Guerriere.\n\nThe Royal Navy was the most powerful in the world. The American navy had fewer than two\ndozen ships. The British captain said he would take this one in thirty minutes.\n\nHer captain, Isaac Hull, held his fire as they closed. He waited until the two ships were\nside by side. Then he fired the whole broadside.\n\nThe Guerriere was wrecked. And at some point in the fight, a British cannonball hit this\nhull and bounced off. One of the crew shouted that her sides were made of iron.\n\nThey were not. They were live oak, a wood so dense it can weigh seventy-five pounds to the\ncubic foot. It grew on the swampy islands off Georgia. The first timber cutters sent from New\nEngland fell sick within days, and enslaved men were brought in to build the roads to get it out.\n\nShe has been rebuilt again and again since. But below the waterline, a good part of her\noriginal wood is still there.\n\nThe nickname stuck. She has been Old Ironsides for more than two hundred years.\n\nShe has never been iron.\n",
+    "script": "Look at the side of the ship in front of you.\n\nIn August eighteen twelve, about seven hundred and fifty miles east of Boston, she met the\nBritish frigate Guerriere.\n\nThe Royal Navy was the most powerful in the world. The American navy had fewer than two\ndozen ships. The British captain said he would take this one in thirty minutes.\n\nHer captain, Isaac Hull, held his fire as they closed. He waited until the two ships were\nside by side. Then he fired the whole broadside.\n\nThe Guerriere was wrecked. And at some point in the fight, a British cannonball hit this\nhull and bounced off. One of the crew said that her sides were made of iron.\n\nThey were not. They were live oak, a wood so dense it can weigh seventy-five pounds to the\ncubic foot. It grew on the swampy islands off Georgia. The first timber cutters sent from New\nEngland fell sick within days, and enslaved men were brought in to build the roads to get it out.\n\nShe has been rebuilt again and again since. But below the waterline, a good part of her\noriginal wood is still there.\n\nThe nickname stuck. She has been Old Ironsides for more than two hundred years.\n\nShe has never been iron.\n",
     "teaser": "Look at the side of the ship. A cannonball once bounced off it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-sides-made-of-iron/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 79.3,
+        "audioBytes": 1269385
+      }
+    ],
     "pronunciations": [
       {
         "written": "Guerriere",
@@ -1393,14 +1459,7 @@ export const LIBRARY: readonly Echo[] = [
       "war-of-1812",
       "ships"
     ],
-    "remoteness": 0.24,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-sides-made-of-iron",
-        "durationS": 86
-      }
-    ]
+    "remoteness": 0.24
   },
   {
     "id": "boston-state-house-dome-copper",
@@ -1416,7 +1475,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 67,
+    "durationS": 63,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "landmark-visible",
@@ -1424,8 +1483,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up the hill at the dome of the State House. It was not always gold.\n\nIn November eighteen-oh-two, a New Hampshire newspaper reported that the superb dome of\nthe new State House had just been coppered. The sheets, it said, were made in\nMassachusetts by Colonel Revere and son.\n\nThat is Paul Revere. After the war he went into industry, and in eighteen-oh-one he opened\na copper mill. The paper added, with some pride, that it was the only sheet copper works\nin America.\n\nSo for about seventy years the dome was the colour of copper. It was gilded in the\neighteen-seventies, and Boston argued about whether the gold was worth the money. A\nnewspaper later made a point of it. Real gold leaf, not gilt paint.\n\nThen in nineteen forty-two, with the country at war, the dome was to be painted a dull\ngrey, as an air raid precaution.\n\nRevere is remembered for one night on a horse. Look up. This was his day job.\n",
+    "script": "Look up the hill at the dome of the State House. It was not always gold.\n\nIn November eighteen-oh-two, a New Hampshire newspaper reported that the superb dome of\nthe new State House had just been coppered. The sheets, it said, were made in\nMassachusetts by Colonel Revere and son.\n\nThat is Paul Revere. After the war he went into industry, and opened a copper mill. The paper added, with some pride, that it was the only sheet copper works\nin America.\n\nSo for about seventy years the dome was the colour of copper. It was gilded in the\neighteen-seventies, and Boston argued about whether the gold was worth the money. A\nnewspaper later made a point of it. Real gold leaf, not gilt paint.\n\nThen in nineteen forty-two, with the country at war, the dome was to be painted a dull\ngrey, as an air raid precaution.\n\nRevere is remembered for one night on a horse. Look up. This was his day job.\n",
     "teaser": "Look up the hill at the gold dome. It was not always gold.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-state-house-dome-copper/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 63.4,
+        "audioBytes": 1016101
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1434,14 +1501,7 @@ export const LIBRARY: readonly Echo[] = [
       "paul-revere",
       "second-world-war"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-state-house-dome-copper",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-swan-boats-mrs-paget",
@@ -1457,7 +1517,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 74,
+    "durationS": 76,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1465,8 +1525,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Watch a swan boat come round the pond. Look at the back of it. That is where the driver\nsits, pedalling as if on a bicycle, and paddle wheels push the whole thing along.\n\nThe boats began running here in eighteen seventy-seven. They were designed by a man named\nRobert Paget.\n\nSixteen years later, newspapers across the country ran a small item about who was really\nin charge. The owner and manager of the Boston swan boats, they reported, was a woman.\nMrs. Paget.\n\nShe did not stand at the landing calling for fares. She left that to a man. But she came\ndown to the landing often, studied the business, and made a very comfortable living from\nit. By then she had been running it for fourteen years.\n\nIn nineteen thirty-eight, the owner of the fleet was still a Paget, John Paget. When\nShirley Temple came to town, he made her an honorary admiral of the swan boat navy.\n\nAs for the man at the landing, one story from those years gives his whole sales pitch.\nGrown folks, ten cents. Children, five. Babies thrown in.\n",
+    "script": "Watch a swan boat come round the pond. Look at the back of it. That is where the driver\nsits, pedalling as if on a bicycle, and paddle wheels push the whole thing along.\n\nThe boats began running here in eighteen seventy-seven. They were designed by a man named\nRobert Paget.\n\nSixteen years later, newspapers across the country ran a small item about who was really\nin charge. The owner and manager of the Boston swan boats, they reported, was a woman.\nMrs. Paget.\n\nShe did not stand at the landing calling for fares. She left that to a man. But she came\ndown to the landing often, studied the business, and made a very comfortable living from\nit. By then she had been running it for fourteen years.\n\nIn nineteen thirty-eight, the owner of the fleet was still a Paget, John Paget. When\nShirley Temple came to town, she was made an honorary admiral of the swan boat navy, and\nhe promised her an admiral's hat.\n\nAs for the man at the landing, one story from those years gives his whole sales pitch.\nGrown folks, ten cents. Children, five. Babies thrown in.\n",
     "teaser": "Watch a swan boat come round the pond. Look at the back of it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-swan-boats-mrs-paget/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75.7,
+        "audioBytes": 1212124
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1475,14 +1543,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "family-business"
     ],
-    "remoteness": 0.21,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-swan-boats-mrs-paget",
-        "durationS": 74
-      }
-    ]
+    "remoteness": 0.21
   },
   {
     "id": "boston-the-church-inside-the-church",
@@ -1498,7 +1559,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 82,
+    "durationS": 72,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1506,8 +1567,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the walls of King's Chapel. Dark, rough blocks of stone.\n\nNobody quarried them. There were no quarries yet. The stone was gathered off the surface\nof the ground in Braintree, south of here, and the builders had little skill at dressing\nit. That is why it looks the way it does.\n\nNow picture this corner in the summer of seventeen forty nine.\n\nThere is already a church here. A wooden one, old and decaying. The governor lays the\ncornerstone for a new stone chapel, gives the workmen money to drink his health, and then\nwalks inside the old wooden church for a service.\n\nBecause the plan was not to pull the old church down first.\n\nThe plan was to build the new one around it.\n\nSo for nearly four years the congregation kept worshipping in a wooden church while stone\nwalls went up on every side of them. Only when the old building was too far gone did they\nmove out, and borrow somebody else's.\n\nBy the summer of seventeen fifty four the stone chapel was in use. The pulpit was carried\nover from the old church into the new one.\n\nMost buildings replace the one before them. This one swallowed it.\n",
+    "script": "Look at the walls of King's Chapel. Rough blocks of stone.\n\nNobody quarried them. There were no quarries yet. The stone was gathered off the surface\nof the ground in Braintree, south of here, and the builders had little skill at dressing\nit. That is why it looks the way it does.\n\nNow picture this corner in the summer of seventeen forty nine.\n\nThere is already a church here. A wooden one, old and decaying. The governor lays the\ncornerstone for a new stone chapel, gives the workmen money to drink his health, and then\nwalks inside the old wooden church for a service.\n\nBecause the plan was not to pull the old church down first.\n\nThe plan was to build the new one around it.\n\nSo for nearly four years the congregation kept worshipping in a wooden church while stone\nwalls went up on every side of them. Only when the old building was too far gone did they\nmove out, and borrow somebody else's.\n\nBy the summer of seventeen fifty four the stone chapel was in use. The pulpit was carried\nover from the old church into the new one.\n\nMost buildings replace the one before them. This one swallowed it.\n",
     "teaser": "Look at the stone. Nobody quarried it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-church-inside-the-church/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 72.1,
+        "audioBytes": 1154446
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1515,14 +1584,7 @@ export const LIBRARY: readonly Echo[] = [
       "kings-chapel",
       "architecture"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-the-church-inside-the-church",
-        "durationS": 82
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-the-house-that-stayed-useful",
@@ -1538,7 +1600,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 77,
+    "durationS": 74,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1548,6 +1610,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the house at number nineteen, North Square. Everything else you can see from here\nis younger than it.\n\nIt went up around sixteen eighty. That makes it the oldest building in downtown Boston.\n\nPaul Revere bought it in seventeen seventy. He was a silversmith, a veteran and a father of\nfive. On the night of the eighteenth of April, seventeen seventy-five, he set out from this\nsquare to warn Samuel Adams and John Hancock.\n\nThe Reveres owned the house for thirty years and lived in it for about twenty. In eighteen\nhundred, he sold it.\n\nWhat came next is why it is still here.\n\nIt became a boarding house for sailors. Then a tenement, with shops on the ground floor. At\none point it was a cigar factory. At another, a bank. Nobody was preserving it. It was just\na building people kept finding a use for.\n\nBy the early nineteen hundreds it faced demolition. A great-grandson of Paul Revere bought\nit, and in April nineteen oh eight it opened as a museum.\n\nTwenty years of Reveres. A century of sailors, shopkeepers and cigar makers.\n\nThe house only remembers the twenty.\n",
     "teaser": "Look at the house at number nineteen. Everything around it is younger.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-house-that-stayed-useful/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.2,
+        "audioBytes": 1187883
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1556,14 +1626,96 @@ export const LIBRARY: readonly Echo[] = [
       "paul-revere",
       "houses"
     ],
-    "remoteness": 0.1,
+    "remoteness": 0.1
+  },
+  {
+    "id": "boston-the-lady-in-black",
+    "title": "The Lady in Black",
+    "summary": "Fort Warren's ghost story: a Confederate prisoner's wife, hanged in a black dress, who never left. Rangers still tell it.",
+    "point": {
+      "at": {
+        "lat": 42.32028,
+        "lng": -70.92778
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Fort Warren, Georges Island, Boston Harbor Islands, Massachusetts"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 77,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are inside Fort Warren, the granite fort on Georges Island. In summer, the rangers here\noften finish their tour with one story. The Lady in Black.\n\nIt is a legend. Nobody has ever proved a word of it.\n\nThe story goes like this. During the Civil War, this fort held Confederate prisoners. One of\nthem was Captain Andrew Lanier. His young wife came north from Georgia to free him. She put\non a man's clothes, took a pistol, and came out to the fort in the dark, in a small boat\nloaded with picks and shovels.\n\nShe crawled through a grating to his cell. They began to dig a tunnel. A guard heard the\nclink of a pick.\n\nCaught, she drew her pistol and fired at the commander. The shot killed her own husband.\nShe went to the gallows in a black dress found in the fort's stores.\n\nSince then, the story says, a lady in black walks these walls. A sentry who swore she tried\nto throttle him was suspected of drinking, and put in irons.\n\nThe fullest telling came from the harbour historian Edward Rowe Snow. In nineteen forty-six\nhe told reporters he would hide here on Halloween night and wait for her, armed with a\nbroomstick.\n\nKeep an eye on the dark arches. If she comes, you will be the first to prove it.\n",
+    "teaser": "Rangers here end the tour with one story. It is not in the records.",
+    "certaintyNote": "A ghost story, not history. Its fullest early telling is a 1946 United Press report quoting the harbour historian Edward Rowe Snow; National Park Service rangers tell it after fort tours. No record of the hanging is cited by either source. The script says out loud it is a legend and unproven.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-the-house-that-stayed-useful",
-        "durationS": 77
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/boston-the-lady-in-black/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 76.7,
+        "audioBytes": 1228007
       }
-    ]
+    ],
+    "tags": [
+      "boston",
+      "boston-harbor-islands",
+      "georges-island",
+      "fort-warren",
+      "civil-war",
+      "ghosts"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "boston-the-letter-on-the-slate",
+    "title": "The Letter on the Slate",
+    "summary": "The story goes that a gravestone here inspired The Scarlet Letter. Hawthorne did end his novel in this burying ground.",
+    "point": {
+      "at": {
+        "lat": 42.35822,
+        "lng": -71.0603
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "King's Chapel Burying Ground, Tremont Street, Boston, Massachusetts"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 61,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are in the burying ground beside King's Chapel. John Winthrop, the colony's first\ngovernor, lies here.\n\nThere is a story about this ground, and the park service tells it too. One of these\ngravestones, it says, inspired Nathaniel Hawthorne to write The Scarlet Letter.\n\nTreat that as a legend. No stone has ever been shown to be the one.\n\nBut Hawthorne did put this ground in his book. He lodged his troubled minister in a house\nthat stood where King's Chapel was later built, with the graveyard on one side.\n\nAnd at the very end, he buried Hester Prynne here. In his words, a new grave was dug in\nthat burial ground beside which King's Chapel has since been built, near an old and sunken\none. One slate stone served for both, carved with a shield.\n\nThe novel closes on that shield. On a field, sable, the letter A, gules.\n\nBlack field. Red letter.\n\nLook along the old slate stones. If one of them gave Hawthorne the idea, it has never said\nwhich.\n",
+    "teaser": "One of these stones, the story goes, gave Hawthorne his idea. Nobody can say which.",
+    "certaintyNote": "A popular tradition. The National Park Service states that a gravestone here inspired The Scarlet Letter, but names no stone and cites nothing; no source we could reach records Hawthorne saying so. What is documented is the novel's own text, which sets its ending in this burying ground. The script says out loud the stone story is a legend and unproven.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/boston-the-letter-on-the-slate/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 61.4,
+        "audioBytes": 983501
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "burial-ground",
+      "kings-chapel",
+      "literature",
+      "hawthorne"
+    ],
+    "remoteness": 0
   },
   {
     "id": "boston-the-lion-and-the-unicorn",
@@ -1579,7 +1731,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 81,
+    "durationS": 78,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1589,6 +1741,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Find the end of the old brick State House with the balcony on it. Now look up, past the\nbalcony, to the two corners of the roof.\n\nA lion on one side. A unicorn on the other. The badge of the British king.\n\nOn the eighteenth of July, seventeen seventy six, a crowd filled the street below you to\nhear a document read aloud from that balcony. It was the Declaration of Independence, and\nBoston was hearing it for the first time.\n\nSix years earlier, soldiers had fired into a crowd on this same spot. This time the guns\nwent off in celebration.\n\nThen the crowd turned to the roof.\n\nThe lion and the unicorn came down. They were carried a little way down the street,\nheaped up with every other royal emblem that could be found in town, and burned in a\nbonfire outside a tavern.\n\nFor about a hundred years, those corners stayed bare. Then the building was restored, and\nnew figures went back up.\n\nSo the pair you are looking at never heard the Declaration. The ones that did are ash.\n\nBoston burned the king's animals to make a point. A century later, it put them back to\nmake another.\n",
     "teaser": "Look up at the two corners of the roof.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-lion-and-the-unicorn/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 77.5,
+        "audioBytes": 1241381
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1596,14 +1756,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "old-state-house"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-the-lion-and-the-unicorn",
-        "durationS": 81
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-the-poem-that-built-a-statue",
@@ -1619,7 +1772,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 88,
+    "durationS": 87,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1627,8 +1780,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the rider. When this design was first described, it was Revere stopping for a\nmoment in the middle of his ride, to warn the people.\n\nIt won a competition in eighteen eighty-four. Ten models were entered. The winner\nwas a sculptor from Utah, twenty-three years old, who had come to Boston a few years before\nwith no money at all.\n\nThe newspapers announced the winner and got his name wrong. They called him Charles Dillon.\nHis name was Cyrus Dallin.\n\nOn the Fourth of July, eighteen eighty-five, he signed a contract for a bronze to stand in\nCopley Square. The money was supposed to come from public subscription. It never did.\n\nDallin became one of the best-known sculptors in the country. He kept asking Boston about\nhis statue. Boston kept being sympathetic.\n\nAfter more than half a century, he tried something new. He wrote a poem, in the rhythm of\nLongfellow.\n\nListen, my children, and you shall hear, of the ignoble failure of Boston to rear, the\ngreatest creation of my long career, the equestrian statue of Paul Revere.\n\nThe city found the money. In September nineteen forty, fifty-five years after the contract,\nthis statue was unveiled here. Dallin was seventy-eight.\n\nHe said it was the poem that did it. It was probably the only poem he ever wrote.\n",
+    "script": "Look at the rider. When this design was first described, it was Revere stopping for a\nmoment in the middle of his ride, to warn the people.\n\nIt won a competition in eighteen eighty-four. Ten models were entered. The winner\nwas a sculptor from Utah, twenty-three years old, who had come to Boston a few years before\nwith no money at all.\n\nThe newspapers announced the winner and got his name wrong. They called him Charles Dillon.\nHis name was Cyrus Dallin.\n\nOn the Fourth of July, eighteen eighty-five, he signed a contract for a bronze to stand in\nCopley Square. The money was supposed to come from public subscription. It never did.\n\nDallin became one of the best-known sculptors in the country. He kept asking Boston about\nhis statue. Boston kept being sympathetic.\n\nAfter more than half a century, he tried something new. He wrote a poem, in the rhythm of\nLongfellow.\n\nListen, my children, and you shall hear, of the ignoble failure of Boston to rear, the\ngreatest creation of my long career, the equestrian statue of Paul Revere.\n\nThe city found the money. In nineteen forty, fifty-five years after the contract, this\nstatue went up here. Dallin was seventy-eight.\n\nHe said it was the poem that did it. It was probably the only poem he ever wrote.\n",
     "teaser": "This statue was designed in 1884. Look at the date it went up.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-poem-that-built-a-statue/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 86.7,
+        "audioBytes": 1387667
+      }
+    ],
     "pronunciations": [
       {
         "written": "Dallin",
@@ -1644,14 +1805,7 @@ export const LIBRARY: readonly Echo[] = [
       "statues",
       "sculpture"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-the-poem-that-built-a-statue",
-        "durationS": 88
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-the-school-that-lost-its-ground",
@@ -1667,7 +1821,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 84,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1675,8 +1829,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "You are on School Street. It is named after a school that is not here.\n\nFind the bronze statue of Benjamin Franklin, set back from the sidewalk. Close by, in the\nsixteen thirties, the town of Boston started its first school. The Latin School. A plain\nbuilding of one storey, big enough for about a hundred boys.\n\nNow look up the street, toward the dark stone church on the corner. That is King's Chapel.\n\nIn the seventeen forties the chapel wanted to rebuild, bigger. It needed more ground, and\npart of that ground had the schoolhouse on it. After a good deal of haggling, the church\nbuilt the school a new house on the other side of the street, and took the old site.\n\nThe town was not pleased. A local wit put it in verse. A fig for your learning, I tell you\nthe town, to make the church larger, must pull the school down.\n\nThe school moved many more times after that. It is still open, nearly four hundred years\non, just not on the street that carries its name.\n\nAs for Franklin. He started here at eight years old, and he lasted one year.\n\nOf everyone who ever studied on this street, he is the one who stayed.\n",
+    "script": "You are on School Street. It is named after a school that is not here.\n\nFind the bronze statue of Benjamin Franklin, set back from the sidewalk. Close by, in the\nsixteen thirties, the town of Boston started its first school. The Latin School. A plain building of one storey, big enough for about a hundred pupils.\n\nNow look up the street, toward the dark stone church on the corner. That is King's Chapel.\n\nIn the seventeen forties the chapel wanted to rebuild, bigger. It needed more ground, and\npart of that ground had the schoolhouse on it. After a good deal of haggling, the church\nbuilt the school a new house on the other side of the street, and took the old site.\n\nThe town was not pleased. A local wit put it in verse. A fig for your learning, I tell you\nthe town, to make the church larger, must pull the school down.\n\nIn time the school moved on again, away from this street. The street kept the name\nanyway.\n\nAs for Franklin. He started here at eight years old, and he lasted one year.\n\nOf everyone who ever studied on this street, he is the one who stayed.\n",
     "teaser": "This street is named after a school that is not here.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-school-that-lost-its-ground/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.6,
+        "audioBytes": 1194570
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1685,14 +1847,7 @@ export const LIBRARY: readonly Echo[] = [
       "latin-school",
       "benjamin-franklin"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-the-school-that-lost-its-ground",
-        "durationS": 84
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-the-sextons-lodgers",
@@ -1708,7 +1863,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 75,
+    "durationS": 69,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1718,6 +1873,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the brick tower, and the tablet on its front. It says the signal lanterns of Paul\nRevere were shown in the steeple of this church.\n\nIt does not say who carried them up.\n\nOn the night of the eighteenth of April, seventeen seventy-five, by the usual account, two\nmen let themselves in. One was John Pulling, a member of the vestry. The other was the man\nwho kept the church, its sexton. His name was Robert Newman.\n\nThey climbed to the top of the tower, the tallest structure in the town. They held two\nlanterns near the windows, briefly. Then they got out.\n\nTwo lanterns meant the British troops were crossing the river by water, heading for\nLexington and Concord.\n\nNewman lived a block up this street, on the corner of Sheafe Street. And there is one more\ndetail about that house.\n\nAt the time, British officers were quartered in it, on the Newman family.\n\nSo the signal that the army was moving went up from the tallest building in Boston. And the\nman who hung it was sharing his home with the army's officers.\n",
     "teaser": "The tablet on the tower says what happened here. It does not say who did it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-sextons-lodgers/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 68.5,
+        "audioBytes": 1096350
+      }
+    ],
     "pronunciations": [
       {
         "written": "Sheafe Street",
@@ -1733,19 +1896,12 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "paul-revere"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-the-sextons-lodgers",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-the-spire-that-fell",
     "title": "The Spire That Fell",
-    "summary": "Old North's spire has blown down twice. The one above you went up in 1955, a copy of the one that stood in 1775.",
+    "summary": "Old North's spire has blown down twice. The one above you went up in 1955, billed as a copy of the 1775 spire.",
     "point": {
       "at": {
         "lat": 42.36612,
@@ -1756,7 +1912,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 80,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1764,8 +1920,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the white spire on top of the tower.\n\nIt is younger than it looks.\n\nThe first spire went up in the seventeen hundreds. A guidebook called it the most elegant\nin the town. Early in the eighteen hundreds, a gale blew it down.\n\nIts replacement was built from a model by Charles Bulfinch, the architect of the State\nHouse. That one stood for about a hundred and fifty years.\n\nThen, on the thirty-first of August, nineteen fifty-four, Hurricane Carol reached Boston.\nThe wind worked at the spire for more than an hour. It swayed, cracked, and went over into\nthe street.\n\nAn amateur photographer visiting from New York happened to catch it as it fell.\n\nWithin weeks there was a fund to put it back. Money came from well beyond Boston. A Lions\nClub in Maine voted to send ten dollars.\n\nIn October nineteen fifty-five, a new spire was dedicated here. At the ceremony it was\ndescribed as a duplicate of the spire the lanterns hung from in seventeen seventy-five.\n\nSo when you look up, you are seeing the night of the lanterns, more or less. You are just\nseeing it in a copy about seventy years old.\n",
+    "script": "Look up at the white spire on top of the tower.\n\nIt is younger than it looks.\n\nThe first spire went up in the seventeen hundreds. It was described as the most elegant in\nthe town. Early in the eighteen hundreds, a gale blew it down.\n\nIts replacement was built from a model by Charles Bulfinch, the architect of the State\nHouse. That one stood for about a hundred and fifty years.\n\nThen, on the thirty-first of August, nineteen fifty-four, Hurricane Carol reached Boston.\nThe wind worked at the spire for more than an hour. It swayed, cracked, and went over.\n\nAn amateur photographer visiting from New York happened to catch it as it fell.\n\nWithin days, people were offering money to put it back. One Lions Club voted to send\nten dollars.\n\nIn October nineteen fifty-five, a new spire was dedicated here. At the ceremony it was\ndescribed as a duplicate of the spire the lanterns hung from in seventeen seventy-five.\n\nSo when you look up, you are seeing the night of the lanterns, more or less. You are just\nseeing it in a copy about seventy years old.\n",
     "teaser": "Look up at the white spire. It is younger than it looks.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-spire-that-fell/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75,
+        "audioBytes": 1200421
+      }
+    ],
     "pronunciations": [
       {
         "written": "Bulfinch",
@@ -1781,14 +1945,7 @@ export const LIBRARY: readonly Echo[] = [
       "storms",
       "hurricanes"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-the-spire-that-fell",
-        "durationS": 80
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-the-spy-question",
@@ -1804,7 +1961,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 88,
+    "durationS": 70,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1812,10 +1969,18 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at Faneuil Hall, at the little tower on the end nearest the harbour, and then at\nthe very tip of it. That gold shape catching the light is not an arrow, and it is not a\nrooster.\n\nIt is a grasshopper.\n\nIt is about four feet long, hammered out of copper and covered in gold, and it has been up\nthere since seventeen forty two. A craftsman named Shem Drowne made it, probably copying\nthe grasshopper on the Royal Exchange in London.\n\nIt has been knocked off by an earthquake. It has come down in a fire. In the nineteen\nseventies it was stolen, and after a week of searching it turned up hidden inside the\ntower it fell from.\n\nAnd there is a story about it that nobody has ever proved.\n\nThe story goes that during the War of Eighteen Twelve, with Boston nervous about British\nspies, a stranger could be stopped and asked one question. What is on top of Faneuil Hall?\n\nAny Bostonian would know. A spy would have to guess.\n\nThe National Park Service tells that one as a legend, and a legend is what it is.\n\nBut stand here for a minute and watch the people walking past. Count how many of them look\nup.\n\nThen decide whether the question would still work.\n",
+    "script": "Look up at Faneuil Hall, at the little tower on its roof, and then at the very tip of\nit. That gold shape catching the light is not an arrow, and it is not a\nrooster.\n\nIt is a grasshopper.\n\nIt is about four feet long, made of copper and covered in gold, and it has been up\nthere since seventeen forty two. A craftsman named Shem Drowne made it, probably copying\nthe grasshopper on the Royal Exchange in London.\n\nIt has been knocked off by an earthquake. It needed mending after a fire. In the nineteen\nseventies it was stolen, and after a week of searching it turned up hidden in the hall's own\ntower.\n\nAnd there is a story about it that nobody has ever proved.\n\nThe story goes that during the War of Eighteen Twelve, with Boston nervous about British\nspies, a stranger could be stopped and asked one question. What is on top of Faneuil Hall?\n\nAny Bostonian would know. A spy would have to guess.\n\nThe National Park Service tells that one as a legend, and a legend is what it is.\n\nBut stand here for a minute and watch the people walking past. Count how many of them look\nup.\n\nThen decide whether the question would still work.\n",
     "teaser": "Look at the very top of Faneuil Hall. That is not a rooster.",
     "certaintyNote": "The weathervane, its maker and its history are documented by the National Park Service. The spy test is a legend the Park Service itself labels as one; the script says so out loud.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/boston-the-spy-question/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 69.9,
+        "audioBytes": 1120173
+      }
+    ],
     "pronunciations": [
       {
         "written": "Faneuil",
@@ -1834,14 +1999,7 @@ export const LIBRARY: readonly Echo[] = [
       "weathervane",
       "folklore"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/boston-the-spy-question",
-        "durationS": 88
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-the-stone-they-shot-at",
@@ -1857,7 +2015,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 80,
+    "durationS": 74,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1869,6 +2027,14 @@ export const LIBRARY: readonly Echo[] = [
     "teaser": "Some of these slate stones, people will tell you, carry British musket marks.",
     "certaintyNote": "A long-told tradition, not an established fact. The National Park Service says only that some historians suggest British soldiers used headstones here for target practice; an 1892 history says the stones are \"said to bear the marks\". The script says out loud that it is unproven. Malcom's epitaph and his wine-smuggling are documented in the 1921 sketch.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/boston-the-stone-they-shot-at/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 73.7,
+        "audioBytes": 1179523
+      }
+    ],
     "pronunciations": [
       {
         "written": "Malcom",
@@ -1888,14 +2054,7 @@ export const LIBRARY: readonly Echo[] = [
       "burying-grounds",
       "revolution"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/boston-the-stone-they-shot-at",
-        "durationS": 80
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-the-street-that-ran-into-the-sea",
@@ -1911,7 +2070,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 94,
+    "durationS": 81,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1921,6 +2080,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "You are on Long Wharf. Turn around and look back toward the city, straight up State\nStreet. If the view is clear, the old brick State House sits at the far end.\n\nThat straight line is the whole idea.\n\nWhen this wharf was begun, around seventeen ten, it was laid out as the main street\ncarried on into the harbour. King Street, it was called then, and the wharf was built to\nthe same width. The street simply kept going into the sea.\n\nAnd it went a long way. Close to two thousand feet. About a third of a mile, with\nwarehouses along one side nearly the whole length. A ship could tie up at the end, and a\nmerchant could step off the deck and walk one straight road to the Town House.\n\nThe landward end of the old wharf is now under solid ground. The city filled in along the\nshore and ran a new avenue across the heads of the wharves, so what you are standing on is\nonly part of the original.\n\nIt was built for cargo.\n\nOn the first of October, seventeen sixty eight, warships anchored off this wharf and put\ntwo regiments of British soldiers ashore, sent to bring an unruly town to heel. They\nmarched into town with drums beating and bayonets fixed.\n\nThe road built to bring the world into Boston had just brought in an army.\n",
     "teaser": "Turn around and look straight up State Street.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-street-that-ran-into-the-sea/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81,
+        "audioBytes": 1296970
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1929,14 +2096,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "long-wharf"
     ],
-    "remoteness": 0.24,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-the-street-that-ran-into-the-sea",
-        "durationS": 94
-      }
-    ]
+    "remoteness": 0.24
   },
   {
     "id": "boston-the-whites-of-their-eyes",
@@ -1952,7 +2112,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 65,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -1963,6 +2123,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "The bronze figure on these grounds is Colonel William Prescott. He is shown walking\nalong the top of an earth wall, the way witnesses said he did at dawn, while British cannon\nfired at it.\n\nPrescott commanded the earthwork on this hill. And he usually gets the credit for the most\nfamous order of the battle.\n\nDon't fire until you see the whites of their eyes.\n\nHere is the trouble. Nobody can show that he said it.\n\nSome accounts give the line to Prescott. Others give it to General Israel Putnam. The park\nservice, which looks after this hill, calls it possibly a myth.\n\nWhat the record supports is plainer. Wait. Do not waste a shot on men too far away. Fire\ntogether, on the signal.\n\nWhatever was actually shouted, officers passed it along the line. And when the British\ncame up the slope, more than fourteen hundred men fired at once.\n\nThe words may be a legend.\n\nThe waiting was real.\n",
     "teaser": "Everyone knows the order. Nobody can show who gave it.",
     "certaintyNote": "The order \"don't fire until you see the whites of their eyes\" is credited by some to Colonel William Prescott and by others to General Israel Putnam (NPS, Israel Putnam); the NPS article on Prescott calls it possibly a myth. What the sources support is that officers told the men to hold their fire and fire together. The script says this out loud.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-whites-of-their-eyes/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.9,
+        "audioBytes": 880265
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -1972,14 +2140,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "quotations"
     ],
-    "remoteness": 0.47,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-the-whites-of-their-eyes",
-        "durationS": 65
-      }
-    ]
+    "remoteness": 0.47
   },
   {
     "id": "boston-the-wrong-hill",
@@ -1995,7 +2156,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 83,
+    "durationS": 78,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -2003,8 +2164,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Find the plaque on the eastern wall of the lodge beside the monument. It begins with two\nwords. Breed's Hill.\n\nYou are not standing on Bunker Hill. Bunker Hill is the higher one, to the northwest. A\nchurch stands on top of it now.\n\nIn June seventeen seventy-five, the colonial officers had orders to fortify Bunker Hill.\nThey talked it over, and on the night of the sixteenth they dug in here instead. This hill\nwas lower, but it was closer to Boston and steep for anyone marching up it.\n\nAt the time, it barely had a name of its own. Some locals called it Breed's, after a family\nwhose cattle grazed here.\n\nThe battle was fought on this hill the next day, and it went into print as Bunker Hill. A\nBritish map even swapped the two hills round.\n\nThe Breeds asked for the battle to be renamed almost at once. In the seventeen nineties they\nbought land up here, and asked again. They kept asking for more than a century.\n\nIn nineteen twenty-three, the state finally gave them something. Not the battle. The plaque.\n\nRead it. Breed's Hill. Site of the Battle of Bunker Hill.\n\nThat is as far as anyone was ever willing to go.\n",
+    "script": "Find the plaque on the eastern wall of the lodge beside the monument. It begins with two\nwords. Breed's Hill.\n\nYou are not standing on Bunker Hill. Bunker Hill is the higher one, to the northwest. A\nchurch stands on top of it now.\n\nIn June seventeen seventy-five, the colonial officers had orders to fortify Bunker Hill.\nThey talked it over, and on the night of the sixteenth they dug in here instead. This hill\nwas lower, but it was closer to Boston and steep for anyone marching up it.\n\nAt the time, it barely had a name of its own. Some locals called it Breed's, after a family\nwhose cattle grazed here.\n\nThe battle was fought on this hill the next day, and it went into print as Bunker Hill. A\nBritish map even swapped the two hills round.\n\nThe Breeds asked for the battle to be renamed almost at once. In the seventeen nineties they\nbought land up here, and asked again. They kept asking for decades.\n\nIn nineteen twenty-three, the state finally gave them something. Not the battle. The plaque.\n\nRead it. Breed's Hill. Site of the Battle of Bunker Hill.\n\nThat is as far as anyone was ever willing to go.\n",
     "teaser": "Find the plaque on the lodge. It starts with the name of a different hill.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-wrong-hill/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 78.4,
+        "audioBytes": 1256010
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -2014,14 +2183,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "place-names"
     ],
-    "remoteness": 0.48,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-the-wrong-hill",
-        "durationS": 83
-      }
-    ]
+    "remoteness": 0.48
   },
   {
     "id": "boston-waiting-for-mister-rotch",
@@ -2037,7 +2199,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 100,
+    "durationS": 93,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -2047,6 +2209,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "This is the Old South Meeting House. On the morning of the sixteenth of December,\nseventeen seventy three, nearly five thousand people crowded in. About a third of the town.\n\nThree ships full of tea were tied up at a wharf nearby. By law, the tea had to be landed\nand the tax paid by the next day. The crowd wanted the ships sent home instead.\n\nOnly the governor could let them go. And the governor was not in town. He was at his\ncountry house in Milton, ten miles away.\n\nSo the owner of one of the ships, Francis Rotch, was sent to ask him. In December. Twenty\nmiles there and back, in freezing rain.\n\nAnd everyone waited.\n\nThey waited through the morning. They broke off and came back at three. By four it was\ngetting dark, and Rotch had still not returned. Thousands of people in this building, in\nthe dusk, waiting on one man on a cold road.\n\nWhen he finally came in, the answer was no.\n\nBy the traditional account, Samuel Adams stood and said, this meeting can do nothing more\nto save the country. A war whoop went up at the doors. Men with soot on their faces were\nalready in the street, heading for the wharf.\n\nBy the end of the night, three hundred and forty two chests of tea were in the harbour.\n\nIt began as a meeting that ran out of options. Look at the doors. That is the way they\nwent.\n",
     "teaser": "Nearly five thousand people waited in there for one man.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-waiting-for-mister-rotch/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 92.8,
+        "audioBytes": 1486305
+      }
+    ],
     "pronunciations": [
       {
         "written": "Rotch",
@@ -2061,14 +2231,7 @@ export const LIBRARY: readonly Echo[] = [
       "tea-party",
       "old-south"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-waiting-for-mister-rotch",
-        "durationS": 100
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-what-the-auditor-found",
@@ -2084,7 +2247,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 85,
+    "durationS": 80,
     "minAge": 12,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -2094,6 +2257,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look across Commercial Street, at the slope rising toward Copp's Hill.\n\nOn the fifteenth of January, nineteen nineteen, a little after noon, a steel tank stood on\nthe waterfront here. It held molasses. Close to two million gallons of it, stored for\nmaking alcohol.\n\nPeople nearby heard a muffled roar. The tank split into two great pieces, and the molasses\ncame out as a wave.\n\nIt knocked out spans of the elevated railway that ran along this street. It crushed a fire\nstation. In a city building close by, workers had been eating their lunch. On the slope\nacross the road, a small house slid down into the street.\n\nFiremen had to hose the molasses away before they could reach anyone. It was days before\nthe last of the dead were found. Twenty-one people were killed.\n\nThe next day, the company's lawyer gave a statement. The tank, he suggested, had been blown\nup from outside. Perhaps by enemies of the United States.\n\nIt took six years to answer him. A court auditor sat for eight hundred and fifty-one days\nand heard nine hundred and ten witnesses. In January nineteen twenty-five, he gave his\nfinding.\n\nHe found the company responsible.\n\nThe tank had simply not been strong enough to hold what was in it.\n",
     "teaser": "Look up the slope across the road. In 1919 a house slid down it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-what-the-auditor-found/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 80.4,
+        "audioBytes": 1291118
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -2102,14 +2273,7 @@ export const LIBRARY: readonly Echo[] = [
       "disasters",
       "molasses-flood"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-what-the-auditor-found",
-        "durationS": 85
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "boston-where-the-water-was",
@@ -2125,7 +2289,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 97,
+    "durationS": 92,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -2135,6 +2299,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "You are near the bottom of Pearl Street. Look around. Office towers, traffic, pavement.\nNot a drop of harbour in sight.\n\nOn the night of the sixteenth of December, seventeen seventy three, this was the edge of\nthe water.\n\nA footpath called Flounder Lane wound along the shoreline under a hill and came into this\nstreet. Opposite the end of the street stood Griffin's Wharf. And tied up at Griffin's\nWharf were three ships carrying tea.\n\nAbout a hundred and fifty men, faces darkened with soot, came down from the Old South\nMeeting House. A ten minute walk. They split into three groups and boarded the ships. They\ntold the crews to open the hatches and hand over the hoisting tackle, and promised them no\nharm.\n\nFor three hours they hauled up chests, split them open with axes, and tipped the tea over\nthe side. Three hundred and forty two chests. They were careful to take nothing else. One\npadlock was broken by accident, and it was replaced a few days later.\n\nThen they went home without a word to each other. One of them remembered it as the\nstillest night Boston had known in months.\n\nAfterwards the city kept building out into the harbour. The footpath became a street, and\nthe street became part of the waterfront avenue. The filling nearly wiped Griffin's Wharf\noff the map.\n\nThe most famous splash in American history happened somewhere under the ground around you.\n",
     "teaser": "Look around. Not a drop of harbour in sight.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-where-the-water-was/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 92.4,
+        "audioBytes": 1479618
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -2143,14 +2315,7 @@ export const LIBRARY: readonly Echo[] = [
       "tea-party",
       "griffins-wharf"
     ],
-    "remoteness": 0.23,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-where-the-water-was",
-        "durationS": 97
-      }
-    ]
+    "remoteness": 0.23
   },
   {
     "id": "boston-who-said-fire",
@@ -2166,7 +2331,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 103,
+    "durationS": 97,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -2176,6 +2341,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look down. Under the balcony of the Old State House there is a circle of cobblestones set\ninto the street.\n\nIt marks a cold March night in seventeen seventy. A light snow on the ground. A lone\nBritish sentry outside the Custom House, and some local boys giving him a hard time.\n\nIt grew. Labourers, sailors, men with sticks and clubs. A captain and a small squad came to\nrescue the sentry, and the crowd closed in around them.\n\nA soldier was struck. He got up, aimed and fired. The others fired too.\n\nFive people died. By the next morning the town was calling it a massacre.\n\nAnd then came the question that decided everything. Who said fire?\n\nIf the captain gave the order, he was guilty and his men had only obeyed. If nobody did,\nthe soldiers had chosen to shoot on their own.\n\nLawyer after lawyer refused to defend them. John Adams said yes.\n\nAt the trial the witnesses contradicted each other, even about what the captain had been\nwearing. But several swore he had been standing in front of his own men when they fired.\nOne of them, a free Black man named Newton Prince, said he heard no order at all.\n\nNobody stands in front of muskets he has just told to fire. The captain was acquitted. So\nwere six of his soldiers. Two were convicted of manslaughter and branded on the thumb.\n\nYears later, Adams said this night laid the foundation of American independence. He spent\nthat autumn defending the men who fired.\n",
     "teaser": "Look down for a circle of cobblestones.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-who-said-fire/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 96.6,
+        "audioBytes": 1546492
+      }
+    ],
     "tags": [
       "boston",
       "boston-core",
@@ -2184,19 +2357,12 @@ export const LIBRARY: readonly Echo[] = [
       "boston-massacre",
       "john-adams"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/boston-who-said-fire",
-        "durationS": 103
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "bowling-green-king-george",
     "title": "They pulled the king down and made him into bullets",
-    "summary": "A crowd toppled a gilded statue of George III here in 1776 and melted it into musket balls.",
+    "summary": "A crowd toppled a statue of George III here in 1776, and it was melted into musket balls.",
     "point": {
       "at": {
         "lat": 40.70463,
@@ -2207,7 +2373,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 90,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.9,
     "visibility": "at-hand",
@@ -2215,9 +2381,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This is the oldest public park in the city, and the fence around it has been here since\n1771.\n\nLook at the tops of the posts. They used to have small crowns on them.\n\nOn the ninth of July 1776, the Declaration of Independence was read aloud to Washington's\ntroops a few streets north of here. The crowd came down to this green afterwards, where a\ngilded lead statue of King George the Third sat on horseback, and pulled it down.\n\nThe lead went to Connecticut and came back as musket balls. Somebody, at some point, took\na saw to the crowns on the fence.\n\nTwo hundred and fifty years later the fence is still standing and the crowns are still\nmissing, which is a fairly direct way of making a point.\n",
-    "teaser": "The fence is original. Look at the tops of the posts.",
+    "script": "This is the oldest public park in the city. Look at the iron fence around it.\n\nLook at the tops of the posts. They used to have small golden crowns on them.\n\nOn the ninth of July 1776, the Declaration of Independence was read aloud to Washington's troops on the Commons, a few streets north of here. That night a rowdy crowd of soldiers and civilians marched down Broadway to this green, where an equestrian statue of King George the Third had stood for only six years, and pulled it down.\n\nThe statue was carted off to Connecticut and melted down, two tons of metal turned into more than forty two thousand musket balls for Washington's army. And the crowd cut the crowns off the fence.\n\nTwo hundred and fifty years later the fence is still standing and you can still see where the crowns were, which is a fairly direct way of making a point.\n",
+    "teaser": "Look at the tops of the posts.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/bowling-green-king-george/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.1,
+        "audioBytes": 866054
+      }
+    ],
     "pronunciations": [
       {
         "written": "Bowling Green",
@@ -2233,16 +2407,9 @@ export const LIBRARY: readonly Echo[] = [
     "simple": {
       "title": "The crown came off the fence",
       "durationS": 40,
-      "script": "This is the oldest park in New York. The fence has been here since 1771.\n\nLook at the tops of the posts. They used to have small crowns on them.\n\nIn 1776 a crowd pulled down a statue of the king that stood here, and melted it into musket balls. Somebody also sawed the crowns off this fence.\n\nThe fence is still standing. The crowns are still gone.\n"
+      "script": "Look at the iron fence around this park, at the tops of the posts. They used to have small golden crowns on them.\n\nIn 1776 a crowd pulled down a statue of the king that stood here, and it was melted into musket balls. The crowd also cut the crowns off this fence.\n\nThe fence is still standing. The crowns are still gone.\n"
     },
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/bowling-green-king-george",
-        "durationS": 90
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "canaveral-free-speed",
@@ -2286,7 +2453,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "canyon-of-heroes",
     "title": "A canyon named after confetti",
-    "summary": "Granite strips in the pavement name every ticker-tape parade since 1886.",
+    "summary": "Granite markers in the Broadway pavement name every ticker-tape parade held downtown.",
     "point": {
       "at": {
         "lat": 40.7098,
@@ -2297,7 +2464,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "food-drink",
     "format": "short",
-    "durationS": 55,
+    "durationS": 57,
     "minAge": 0,
     "quality": 0.82,
     "visibility": "at-hand",
@@ -2305,22 +2472,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look down at the pavement.\n\nSet into it along this stretch of Broadway are thin strips of granite, each one naming a\ndate and a person. There are more than two hundred of them.\n\nEvery strip is a ticker-tape parade. The first was in 1886, for the dedication of the\nStatue of Liberty, and nobody organised it. Clerks in the offices above started throwing\nthe used tape from their stock tickers out of the windows, because they could not think\nof anything better to do.\n\nNobody has used ticker tape since the 1960s. They shred paper for it now.\n\nSo this is a canyon named after confetti, which was named after rubbish.\n",
+    "script": "Look down at the pavement.\n\nSet into the sidewalks along this stretch of Broadway, from Battery Place to Chambers Street, are granite markers, one for each ticker-tape parade. Lower Manhattan has had two hundred and nine of them.\n\nTicker tape was a one-inch ribbon of paper on which the ticker machine printed stock prices, and the brokers' offices along here produced a lot of it. Once tall buildings had turned these narrow streets into stone canyons, office workers discovered that tape thrown out of the windows made a dramatic effect.\n\nThe first officially organised ticker-tape parades welcomed home the soldiers of the First World War. Since 1919 the mayor has decided who gets one.\n\nNobody uses actual ticker tape now. It is confetti.\n\nSo this is a canyon named after confetti, which was named after scrap paper.\n",
     "teaser": "Look down at the pavement.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/canyon-of-heroes/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 56.6,
+        "audioBytes": 907014
+      }
+    ],
     "tags": [
       "new-york",
       "parades",
       "broadway"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/canyon-of-heroes",
-        "durationS": 55
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "carolina-beach-a-haven-called-seabreeze",
@@ -2710,7 +2878,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 95,
+    "durationS": 79,
     "minAge": 0,
     "quality": 0.88,
     "visibility": "at-hand",
@@ -2718,10 +2886,18 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The round sandstone building ahead of you was built to stop an invasion that never came.\n\nIt went up between 1808 and 1811, out on a small island off the tip of Manhattan, its\nguns pointed down the harbour at a British fleet everyone expected and nobody saw. The\nlandfill came later. So did almost everything else it has been.\n\nBecause in 1855 the fort became a door. On the first of August that year it opened as the\nEmigrant Landing Depot, the first immigration station in the United States, run by\nthe State of New York, and over the next thirty-five years something like eight million\npeople walked through it and out into the rest of their lives. Nikola Tesla came through\nhere. So did Harry Houdini, and Emma Goldman, and Joseph Pulitzer.\n\nIn 1890 the federal government took the job over, and two years later moved it to a\nbigger island further out, where the ferries go now. The fort stayed, and became other\nthings again: a beer garden, a theatre, an aquarium.\n\nEight million arrivals, and almost nobody stops here. Most people walk past it to queue\nfor the boat.\n",
+    "script": "The round sandstone building ahead of you was built to stop an invasion that never came.\n\nIt went up between 1808 and 1811, on the rocks off the tip of Manhattan, about three hundred feet offshore, with a bridge back to the land. Its guns never had occasion to fire on the enemy. The landfill came later. So did almost everything else it has been.\n\nBecause in 1855 the fort became a door. In August that year Castle Garden opened as an immigrant landing depot, the first official immigrant processing center in the nation, leased to the State of New York. Over the next thirty-four years more than eight million people came through it and out into the rest of their lives. In those years, two out of every three immigrants to the United States passed through this one building.\n\nIt closed in 1890, when the federal government took immigration over. In 1892 the work moved out to Ellis Island, where the ferries go now. The fort stayed, and became other things again: a theatre and opera house before all that, an aquarium after it.\n\nEight million arrivals, and almost nobody stops here. Most people walk past it to queue for the boat.\n",
     "teaser": "Before Ellis Island, there was this.",
     "detail": "The fort has had at least five lives: coastal battery, public promenade and entertainment\nhall, immigration depot, city aquarium, and finally a national monument. Jenny Lind gave\nher first American concert in it in 1850.\n",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/castle-clinton-eight-million/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 78.9,
+        "audioBytes": 1262697
+      }
+    ],
     "pronunciations": [
       {
         "written": "Nikola Tesla",
@@ -2741,16 +2917,9 @@ export const LIBRARY: readonly Echo[] = [
     "simple": {
       "title": "Eight million doors",
       "durationS": 35,
-      "script": "This round stone fort was an immigration station before Ellis Island was built.\n\nEight million people came through this one building.\n\nIf your family reached New York before 1892, this is probably the door they walked through.\n"
+      "script": "This round stone fort was an immigration station before Ellis Island opened.\n\nMore than eight million people came through this one building.\n\nFor about thirty-four years, two out of every three people moving to America walked through this door.\n"
     },
-    "remoteness": 0.18,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/castle-clinton-eight-million",
-        "durationS": 95
-      }
-    ]
+    "remoteness": 0.18
   },
   {
     "id": "caswell-beach-a-hat-from-a-helicopter",
@@ -3064,7 +3233,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 90,
+    "durationS": 80,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3072,8 +3241,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Find the house numbered ninety-nine on this row, and look at its iron balcony. There are\ntwo letters worked into the ironwork. A C and a P.\n\nThe letters have nothing to do with this house.\n\nThe house went up around seventeen forty. It was built by Othniel Beale, a wharf owner\nwho had come down from Marblehead in Massachusetts, and his wharf was right across the\nstreet. He built three dwellings under one roof, kept the biggest for his family and let\nthe other two. The ground floor was for trade, split by an arched passage through to the\nyards at the back.\n\nBy the nineteen thirties this stretch of the old waterfront had slid into dilapidation.\n\nThis was the first house on the row to be rescued. Judge Lionel Legge and his wife took it\non, with Susan Pringle Frost, an estate agent who had spent years saving old Charleston\nhouses one at a time. They put back the early windows. They replaced the shop fronts with\ncargo doors. And they hung a balcony salvaged from a house on Elizabeth Street that has\nsince been demolished. The C. F. Prigge house.\n\nThey are credited with starting the revival of the whole block. It is called Rainbow Row\nnow.\n\nThe row was saved one house at a time. The first one wears a stranger's initials.\n",
+    "script": "Find the house numbered ninety-nine on this row, and look at its iron balcony. There are\ntwo letters worked into the ironwork. A C and a P.\n\nThe letters have nothing to do with this house.\n\nThe house went up around seventeen forty. It was built by Othniel Beale, a wharf owner\nwho had come down from Marblehead in Massachusetts, and his wharf was right across the\nstreet. He built three dwellings in a row, kept the biggest for his family and let the other two. The ground floor was for trade, split by an arched passage through to the\nyards at the back.\n\nBy the nineteen thirties this neighbourhood had slid into dilapidation.\n\nThis was the first house on the row to be rescued. Judge Lionel Legge and his wife are credited with that, along with Susan Pringle Frost, an estate agent who had spent years saving old Charleston houses. They restored the early windows. They replaced the shop fronts with\ncargo doors. And the iron balcony was salvaged from a house on Elizabeth Street that has since been demolished. The C. F. Prigge house.\n\nThey are credited with the revival of the whole block. It is called Rainbow Row\nnow.\n\nThe row was saved one house at a time. The first one wears a stranger's initials.\n",
     "teaser": "Find the house numbered ninety-nine and look at its iron balcony.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-a-strangers-initials/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 80.3,
+        "audioBytes": 1285685
+      }
+    ],
     "pronunciations": [
       {
         "written": "Othniel",
@@ -3095,14 +3272,7 @@ export const LIBRARY: readonly Echo[] = [
       "rainbow-row",
       "preservation"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-a-strangers-initials",
-        "durationS": 90
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-a-wharf-he-was-willing-to-lose",
@@ -3118,7 +3288,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 78,
+    "durationS": 76,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3126,8 +3296,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The ground under this square was once part of a wharf. A big one, on the Cooper River, built by a merchant named Christopher Gadsden.\n\nBy seventeen seventy four, Gadsden owned four stores, merchant ships, two rice plantations, and a whole district of Charleston. The wharf had just been finished, at great cost. To pay for itself, it needed ships, and trade.\n\nThat year he went to Philadelphia, to the first Continental Congress. And there he argued for cutting off all trade with Britain. Others wanted South Carolina's rice and indigo left out of the boycott. Gadsden did not.\n\nIf he won, his own wharf would sit idle. He argued for it anyway.\n\nWhen nervous delegates warned that the coastal towns could be shelled, Gadsden's reply was later written down like this. Our seaport towns are composed of brick and wood. If they are destroyed, we have clay and timber enough to rebuild them. But if the liberties of our country are destroyed, where shall we find the material to replace them?\n\nHe was ready to let the wharf stand empty. A piece of it is still here, under the visitor centre beside you.\n",
+    "script": "Part of this waterfront was once a wharf. A big one, on the Cooper River, built by a merchant named Christopher Gadsden.\n\nBy seventeen seventy four, Gadsden owned four stores, several merchant ships, two rice plantations, and a whole district of Charleston. The wharf had just been finished, at great cost. To pay for itself, it needed ships, and trade.\n\nThat year he went to Philadelphia, to the first Continental Congress. And there he argued for cutting off all trade with Britain. Others wanted South Carolina's rice and indigo left out of the boycott. Gadsden did not.\n\nIf he won, his own wharf would sit idle. He argued for it anyway.\n\nWhen nervous delegates warned that the coastal towns could be shelled, Gadsden's reply was later written down like this. Our seaport towns are composed of brick and wood. If they are destroyed, we have clay and timber enough to rebuild them. But if the liberties of our country are destroyed, where shall we find the material to replace them?\n\nHe was ready to let the wharf stand empty. Part of it is now the site of the visitor centre beside you.\n",
     "teaser": "Brick and wood, clay and timber.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-a-wharf-he-was-willing-to-lose/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 76,
+        "audioBytes": 1217558
+      }
+    ],
     "pronunciations": [
       {
         "written": "Gadsden",
@@ -3140,14 +3318,7 @@ export const LIBRARY: readonly Echo[] = [
       "american-revolution",
       "waterfront"
     ],
-    "remoteness": 0.58,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-a-wharf-he-was-willing-to-lose",
-        "durationS": 78
-      }
-    ]
+    "remoteness": 0.56
   },
   {
     "id": "charleston-bolted-together",
@@ -3163,7 +3334,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 95,
+    "durationS": 78,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3171,8 +3342,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look along the house fronts on this street for iron on the outside of the walls. A plate,\nor the end of a bolt, up between the floors. Not every house has one. Many old buildings\nin this city do, and a lot of them were put there because of one night.\n\nAt about ten o'clock on the thirty-first of August, eighteen eighty-six, an earthquake\nhit Charleston. It came with no warning and a roar like nothing anyone had heard. Walls\nand chimneys came down into the streets. Overturned lamps started fires. It was said at\nthe time that more people were killed or hurt in those few seconds than the shelling of\nthe whole Civil War siege had managed.\n\nIn the months that followed, much of the town was not so much rebuilt as bolted back\ntogether. Iron bolts and iron plates went into the cracked walls.\n\nThe test came on St. Patrick's Day, eighteen eighty-seven. At ten past nine in the\nmorning there was another violent shock, with the same underground roar. The buildings\nseemed to be thrust forward and pulled back.\n\nA report from Charleston that day said that most of the buildings in town had been made\nearthquake-proof by iron bolts and plates, and that without them there would have been\nserious damage. Unrepaired cracks widened. Windows rattled. Plaster fell.\n\nThe St. Patrick's Day celebrations went ahead as planned. Somebody had done the\nironmongery.\n",
+    "script": "Look along the house fronts on this street for iron on the outside of the walls. A plate,\nor the end of a bolt, up between the floors. Where you find one, it may be there because of one night.\n\nAt about ten o'clock on the thirty-first of August, eighteen eighty-six, an earthquake\nhit Charleston. It came with a horrid roar. Walls\nand chimneys came down into the streets. Overturned lamps started fires. It was said at\nthe time that more people were killed or hurt in those few seconds than the shelling of\nthe whole Civil War siege had managed.\n\nIn the months that followed, iron bolts and iron plates went into the cracked walls.\n\nThe test came on St. Patrick's Day, eighteen eighty-seven. At ten past nine in the\nmorning there was another violent shock, with the same underground roar. The buildings\nseemed to be thrust forward and pulled back.\n\nA report from Charleston that day said that most of the buildings in town had been made\nearthquake-proof by iron bolts and plates, and that without them there would have been\nserious damage. Unrepaired cracks widened. Windows rattled. Plaster fell.\n\nThe St. Patrick's Day celebrations were not interrupted. Somebody had done the\nironmongery.\n",
     "teaser": "Look along the house fronts for iron on the outside of the walls.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-bolted-together/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 77.8,
+        "audioBytes": 1245561
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -3180,14 +3359,7 @@ export const LIBRARY: readonly Echo[] = [
       "earthquake",
       "architecture"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-bolted-together",
-        "durationS": 95
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-built-for-a-capital",
@@ -3203,7 +3375,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 79,
+    "durationS": 76,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3211,8 +3383,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "You are standing at the crossing of Meeting and Broad. Four corners, four buildings. A\nchurch, a city hall, a federal post office and court, and a county courthouse. Charleston\ncalls this the Four Corners of the Law. The law of the church, of the city, of the nation\nand of the state.\n\nLook at the courthouse, on the north-west corner. It was not built to be a courthouse.\n\nIt went up in seventeen fifty-three as the statehouse of the colony. The royal governor's\ncouncil met upstairs. From its balcony over Meeting Street, the Declaration of\nIndependence was read aloud for the first time in South Carolina.\n\nIn seventeen eighty-eight it burned. Only the foundations, the walls and the doorways\nwere left.\n\nBy then the rest of the state wanted the capital moved to the middle of South Carolina,\nnot left out on its edge. Charleston rebuilt fast anyway, anxious to keep its place in\nthe government.\n\nBy the time the work was finished, in seventeen ninety-two, the capital was in Columbia.\n\nSo the courts moved in, and they are still there. It is the state's corner of this\ncrossing. It just never got the state back.\n",
+    "script": "You are standing at the crossing of Meeting and Broad. Four corners, four buildings. A\nchurch, a city hall, a federal post office and court, and a county courthouse. Charleston\ncalls this the Four Corners of the Law. The law of the church, of the city, of the nation\nand of the state.\n\nLook at the courthouse, on the north-west corner. It was not built to be a courthouse.\n\nIt went up in seventeen fifty-three as the statehouse of the colony. The Royal Governor's council met upstairs. From its balcony over Meeting Street, the Declaration of\nIndependence was read aloud for the first time in South Carolina.\n\nIn seventeen eighty-eight it burned. Only the foundations, the walls and the doorways\nwere left.\n\nThe rest of the state had asked for the capital to be moved to the middle of South Carolina, not left out on its edge. Charleston rebuilt fast anyway, anxious to keep its place in\nthe government.\n\nBy the time the work was finished, in seventeen ninety-two, the capital was in Columbia.\n\nSo the courts moved in, and they are still there. It is the state's corner of this\ncrossing. It just never got the state back.\n",
     "teaser": "Four corners, four buildings, four kinds of law. One of them was meant for something else.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-built-for-a-capital/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 76.1,
+        "audioBytes": 1218812
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -3221,14 +3401,7 @@ export const LIBRARY: readonly Echo[] = [
       "courthouse",
       "revolution"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-built-for-a-capital",
-        "durationS": 79
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-built-to-fall-inward",
@@ -3244,7 +3417,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 94,
+    "durationS": 91,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3252,8 +3425,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The squat brick building with the steep tiled roof is the Powder Magazine. It went up in\nseventeen thirteen, and it is the oldest public building in South Carolina.\n\nLook at how solid it is. The walls are thirty-two inches thick, and when it was built they\nhad no windows at all.\n\nCharles Town was a small walled settlement then, at the southern edge of England's claims,\nand it expected attack, from the Spanish, the French, and pirates. The town's gunpowder\nwas kept here.\n\nIt was condemned in seventeen seventy, then filled with powder again when the Revolution\ncame. One old guide to the city says that during the British siege of seventeen eighty a\nshell landed close by, and after that it was given up as a magazine.\n\nWhich brings you to the question every powder store has to answer. What happens if it goes\noff?\n\nHere, the answer was in the roof. According to the Park Service, the timbers inside were\nbuilt so that if there were ever an explosion in the building, it would collapse in on\nitself.\n\nNot outward, into the town. Inward.\n\nLater it was a printing house, and then a livery stable. Since nineteen-oh-two it has\nbelonged to the Colonial Dames, and today it is a museum.\n\nMore than three hundred years on, it is still a building designed, if the worst came, to\nbury its own disaster.\n",
+    "script": "The squat brick building with the steep tiled roof is the Powder Magazine. It went up in\nseventeen thirteen, and it is the oldest public building in South Carolina.\n\nLook at how solid it is. The walls are thirty-two inches thick, and when it was built they\nhad no windows at all.\n\nCharles Town was the southernmost English settlement then, behind fortification walls, and it faced attack from the Spanish, the French, Native Americans and pirates. The town's gunpowder\nwas kept here.\n\nIt was condemned in seventeen seventy, then filled with powder again when the Revolution\ncame. One old guide to the city says that during the British siege of seventeen eighty a\nshell landed close by, and after that it was given up as a magazine.\n\nWhich brings you to the question every powder store has to answer. What happens if it goes\noff?\n\nHere, the answer was in the roof. According to the Park Service, the roof structure inside was built so that if there were ever an explosion in the building, it would implode.\n\nNot outward, into the town. Inward.\n\nLater it was used for storage, a printing house, and a livery stable. Since nineteen-oh-two it has\nbelonged to the Colonial Dames, and today it is a museum.\n\nMore than three hundred years on, it is still a building designed, if the worst came, to\nbury its own disaster.\n",
     "teaser": "A squat brick building with a steep tiled roof. Every powder store has to answer one question.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-built-to-fall-inward/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 91.2,
+        "audioBytes": 1459556
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -3262,14 +3443,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "revolutionary-war"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-built-to-fall-inward",
-        "durationS": 94
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-calhoun-moved-by-night",
@@ -3285,7 +3459,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 120,
+    "durationS": 110,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3293,8 +3467,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Across the street from St. Philip's Church is its western churchyard. In the middle of it\nstands a large stone sarcophagus. It holds John C. Calhoun.\n\nCalhoun was vice president, secretary of state, and one of the most powerful politicians\nof his age. In the Senate he led the defence of slavery, and called it a positive good. He\ndied in eighteen fifty, ten years before the war his ideas helped to bring, and he was\nburied here after what one paper called the grandest pageant the city had ever seen.\n\nHe did not stay put.\n\nAs the war went on, it began to look as if Charleston would fall, and some in the city\nfeared what would be done to his grave. So a few men decided to move him. At night, and in\nsecret.\n\nOne of them remembered being summoned from camp in the dark. When he reached the church,\nthe coffin had already been dug up and carried inside. One candle. Two or three men\nstanding by. In complete silence they lifted it, carried it down the middle aisle and out\nthrough the north door, and buried it again in another spot.\n\nSome time after the war, it was dug up once more, quietly, and put back. Later the state\npaid for the sarcophagus you can see.\n\nThe plain marble slab that first covered the grave, carved with just his name, was broken\nin the earthquake of eighteen eighty-six. The church set it against the north wall of the\nchurchyard, near the place where he had lain hidden.\n\nFor a while, then, the tomb with his name on it was empty. The man who had argued the South\ntoward secession spent part of the war it led to hidden, in a secret grave beside this\nchurch.\n",
+    "script": "Across the street from St. Philip's Church is its western churchyard. In the middle of it\nstands a large stone sarcophagus. It holds John C. Calhoun.\n\nCalhoun was vice president, secretary of state, and one of the most powerful politicians\nof his age. In the Senate he led the pro-slavery faction, and called slavery a positive good. He died in eighteen fifty, a decade before the Civil War, and he was\nburied here after what one paper called the grandest civic and military pageant ever seen in the city.\n\nHe did not stay put.\n\nAs the war went on, it began to look as if Charleston would fall, and some in the city\nfeared what would be done to his grave. So a few men decided to move him. At night, and in\nsecret.\n\nOne of them remembered being summoned from camp in the dark. When he reached the church,\nthe coffin had already been dug up and carried inside. One candle. Two or three men\nstanding by. In complete silence they lifted it, carried it down the middle aisle and out\nthrough the north door, and buried it again in another spot.\n\nShortly after the war, it was dug up once more, and quietly put back in the tomb. Later the state\npaid for the sarcophagus you can see.\n\nThe plain marble slab that first covered the grave, carved with just his name, was broken\nin the earthquake of eighteen eighty-six. The church set it against the north wall of the\nchurchyard, near the place where he had lain hidden.\n\nFor a while, then, the tomb with his name on it was empty. The man who had argued the South\ntoward secession spent part of the war it led to hidden, in a secret grave beside this\nchurch.\n",
     "teaser": "In the churchyard across from St. Philip's stands a stone sarcophagus. For part of the war, the grave under it was empty.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-calhoun-moved-by-night/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 110.2,
+        "audioBytes": 1764248
+      }
+    ],
     "pronunciations": [
       {
         "written": "Calhoun",
@@ -3309,14 +3491,7 @@ export const LIBRARY: readonly Echo[] = [
       "churchyards",
       "civil-war"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-calhoun-moved-by-night",
-        "durationS": 120
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-five-times-across",
@@ -3332,7 +3507,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 108,
+    "durationS": 104,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3340,8 +3515,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the white steeple of St. Michael's. The bells hang up there. If they are\nringing, listen.\n\nA Charleston historian, writing in nineteen-oh-six, counted how many times those bells\nhad crossed the Atlantic. She made it five.\n\nThe first crossing was the obvious one. They were made in England, and imported in\nseventeen sixty-four.\n\nThe second came at the end of the Revolution. In seventeen eighty-two the British army\nwas getting ready to leave Charleston, and an artillery officer claimed the bells as his\nown, a perquisite of his rank. He had them taken down. The church appealed, and an order\ncame from New York to give them back. Too late. They were already on a ship to England.\n\nThe third crossing was a business deal. A merchant who had once lived in Charleston bought\nthem in England, as a speculation, and shipped them back to sell to the church. When they\narrived, people ran down to the wharf, hauled them to the church themselves, and swung\nthem back up into the steeple. Then the merchant died suddenly, his estate went bankrupt,\nand nobody ever asked for payment.\n\nThe fourth and fifth came with the Civil War. The bells were sent inland to Columbia for\nsafekeeping, and in eighteen sixty-five Columbia burned. They broke in the fire. The\npieces were gathered up and sent back to the same English foundry that had made them.\nThe foundry still had the original moulds. The bells were recast, and came home.\n\nBy that historian's account, they ring today with the same tone they rang for the\nbirthday of King George.\n",
+    "script": "Look up at the white steeple of St. Michael's. The bells hang up there. If they are\nringing, listen.\n\nA Charleston historian, writing in nineteen-oh-six, counted how many times those bells\nhad crossed the Atlantic. She made it five.\n\nThe first crossing was the obvious one. They were made in England, and imported in\nseventeen sixty-four.\n\nThe second came at the end of the Revolution. In seventeen eighty-two the British army\nwas getting ready to leave Charleston, and an artillery officer claimed the bells as his\nown, a perquisite of his rank. He had them taken down. The church appealed, and an order\ncame from New York to give them back. Too late. They were already on a ship to England.\n\nThe third crossing was a business deal. A merchant who had once lived in Charleston bought\nthem in England, as a speculation, and shipped them back to sell to the church. When they\narrived, people ran down to the wharf, hauled them to the church themselves, and swung\nthem back up into the steeple. Then the merchant died suddenly, his estate went bankrupt,\nand nobody ever asked for payment.\n\nThe fourth and fifth came with the Civil War. The bells were sent inland to Columbia for\nsafekeeping, and in eighteen sixty-five Columbia burned. They broke in the fire. The\npieces were gathered up and sent back to the same English foundry that had made them.\nThe foundry still had the original moulds. The bells were recast, and came home.\n\nBy that historian's account, they ring today with the same tone they rang for the\nbirthday of the King.\n",
     "teaser": "Look up at the white steeple of St. Michael's. The bells up there have been around.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-five-times-across/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 103.8,
+        "audioBytes": 1661848
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -3351,14 +3534,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "civil-war"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-five-times-across",
-        "durationS": 108
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-gothic-over-brick",
@@ -3374,7 +3550,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 85,
+    "durationS": 84,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3382,8 +3558,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the Unitarian Church. A tower with battlements, pointed windows, buttresses down\nthe sides. It looks like a piece of medieval England.\n\nLook again at the buttresses.\n\nButtresses are supposed to hold a building up. According to the Park Service, these are\nfalse. They are there for the look. Inside, the vaulted ceiling, modelled on the chapel of\nHenry the Seventh at Westminster, is lath and plaster.\n\nThe Gothic is a costume. Underneath it is a much plainer building.\n\nIn seventeen seventy-two, work began here on a small rectangular brick church, because the\nIndependent Church over on Meeting Street had more members than it could hold. The\nRevolution stopped the work. The church was finally finished in seventeen eighty-seven.\n\nThen, in eighteen fifty-two, a young architect named Francis Lee was given two years to\nremake it in the romantic taste of the day. He added the chancel at the back and the\nfour-storey tower, and he covered the old brick walls in stucco.\n\nWhen the earthquake of eighteen eighty-six badly damaged it, people from across the\ncountry sent money for the repairs.\n\nSo the oldest Unitarian church in the South is an eighteenth-century meeting house in a\nnineteenth-century dream of the Middle Ages. The brick is still in there, under the\nstucco.\n",
+    "script": "Look at the Unitarian Church. A tower with battlements, pointed windows, buttresses down\nthe sides. It looks like a piece of Gothic England.\n\nLook again at the buttresses.\n\nButtresses are supposed to hold a building up. According to the Park Service, these are\nfalse. They are there for the look. Inside, the vaulted ceiling, modelled on the chapel of\nHenry the Seventh at Westminster, is lath and plaster.\n\nThe Gothic is a costume. Underneath it is a much plainer building.\n\nIn seventeen seventy-two, work began here on a small rectangular brick church, because the Independent Church, now the Circular Church, had more members than it could hold. The Revolution interrupted the work. The church was finally finished in seventeen eighty-seven.\n\nThen, in eighteen fifty-two, a young architect named Francis Lee was given two years to\nremake it in the romantic taste of the day. He added the chancel at the back and the\nfour-storey tower, and he covered the old brick walls in stucco.\n\nWhen the earthquake of eighteen eighty-six badly damaged it, people from across the\ncountry sent money for the repairs.\n\nSo the oldest Unitarian church in the South is an eighteenth-century meeting house in a\nnineteenth-century dream of the Middle Ages. The brick is still in there, under the\nstucco.\n",
     "teaser": "Crenellated tower, pointed windows, buttresses. Look again at the buttresses.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-gothic-over-brick/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 84,
+        "audioBytes": 1344617
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -3391,14 +3575,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "gothic-revival"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-gothic-over-brick",
-        "durationS": 85
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-hey-charleston",
@@ -3422,8 +3599,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the porch railings on this building. They were designed to look like the stone tracery around a Gothic church window. It was built in the eighteen thirties as a hospital for sailors.\n\nFrom eighteen ninety five, it was home to something louder. The Jenkins Orphanage.\n\nThe Reverend Daniel Jenkins had been born enslaved, and orphaned young. In eighteen ninety one he took in four boys he found sheltering in an abandoned building. Soon there were hundreds. To pay for them, he did something unusual. He gathered up instruments, hired two local musicians as teachers, and sent the boys out as a brass band.\n\nIt worked. The band played the streets of Charleston, then New York and London. It marched in the inaugural parades of two presidents.\n\nAnd it played the tunes of the Gullah people of the Sea Islands, with a small boy out front, dancing the steps. In Harlem, the pianist Willie the Lion Smith remembered, people would shout to that boy. Hey Charleston, do your Geechie dance.\n\nJames P Johnson heard the band and wrote a set of tunes in that rhythm. One of them was called The Charleston, and it went around the world.\n\nBy many accounts, the craze started here. With orphans, earning their keep.\n",
+    "script": "Look at the porch railings on this building. They were designed to look like the tracery around a Gothic stained glass window. It was built in the eighteen thirties as a hospital for sailors.\n\nFrom eighteen ninety five, it was home to something louder. The Jenkins Orphanage.\n\nThe Reverend Daniel Jenkins had been born enslaved, and orphaned young. In eighteen ninety one he took in four boys he found sheltering in an abandoned building. Soon the orphanage housed hundreds of boys. To pay for them, he did something unusual. He gathered up instruments, hired two local musicians as teachers, and sent the boys out as a brass band.\n\nIt worked. The band played the streets of Charleston, then New York and London. It marched in the inaugural parades of two presidents.\n\nAnd it played the tunes of the Gullah people of the Sea Islands, with a small boy out front, dancing the steps. In Harlem, the pianist Willie the Lion Smith remembered, people would shout to that boy. Hey Charleston, do your Geechie dance.\n\nThe jazz pianist James P Johnson listened to the band and wrote eight tunes he called charlestons. One of them became The Charleston, and it went around the world.\n\nBy many accounts, the craze started here. With orphans, earning their keep.\n",
     "teaser": "A boy dancing in front of a band of orphans.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-hey-charleston/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 84.2,
+        "audioBytes": 1348797
+      }
+    ],
     "pronunciations": [
       {
         "written": "Geechie",
@@ -3441,14 +3626,49 @@ export const LIBRARY: readonly Echo[] = [
       "jazz",
       "african-american-history"
     ],
-    "remoteness": 0.15,
+    "remoteness": 0.15
+  },
+  {
+    "id": "charleston-madame-margots-bargain",
+    "title": "Madame Margot's Bargain",
+    "summary": "A Charleston folk legend said a milliner's fortune came from a bargain with the Devil. Her lane stood behind this block.",
+    "point": {
+      "at": {
+        "lat": 32.78398,
+        "lng": -79.9358
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "George Street between King Street and St. Philip Street, Charleston, South Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are standing beside a city block bounded by King, George, St. Philip and Calhoun streets. Somewhere in the middle of it, a Charleston writer said, there once ran a narrow passage called Lilac Lane. This is a legend, and nobody can prove it.\n\nThe writer was John Bennett. He told the story of a milliner he called Madame Margot. That was not her real name. He changed it on purpose.\n\nShe was born here, he wrote, to refugees from San Domingo. Her shop was on the fashionable west side of King Street, a little above the Bend. Her cottage was in Lilac Lane, named for two Indian lilac trees at the George Street entrance.\n\nShe became rich. Very rich. Plantations in the country, houses in town. And the town explained it the old way. People said she had made a bargain with the Devil.\n\nBennett insisted the story was a genuine folk legend, not his invention. But he also wrote what he believed was underneath it. She had made her money by wise purchases of real estate. Popular superstition, he said, did the rest.\n\nBy his time, the lane was already gone. Trees, passage, cottage and gardens, he wrote, all have disappeared together.\n",
+    "teaser": "Somewhere behind this block was a lane named for two lilac trees.",
+    "certaintyNote": "A folk legend recorded by the Charleston writer John Bennett in Madame Margot (1921), who also says the Devil part was popular superstition explaining a real fortune. The script says aloud that it is a legend; no supernatural claim is made.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-hey-charleston",
-        "durationS": 84
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/charleston-madame-margots-bargain/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 71.7,
+        "audioBytes": 1148176
       }
-    ]
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "folklore",
+      "king-street"
+    ],
+    "remoteness": 0
   },
   {
     "id": "charleston-not-called-catfish",
@@ -3464,7 +3684,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 83,
+    "durationS": 80,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3472,8 +3692,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look across the street at numbers eighty-nine and ninety-one Church Street. The federal\nsurvey of historic buildings files them under two names. Cabbage Row. And Catfish Row.\n\nOnly one of those is a Charleston name.\n\nIn the nineteen twenties a Charleston man, DuBose Heyward, and his wife Dorothy wrote a\nplay called Porgy. It is set in a crowded courtyard of Black Charlestonians called\nCatfish Row. Its hero is a disabled beggar who gets around the city in a little cart\npulled by a goat.\n\nIt ran for a year on Broadway, then went on tour. When it reached Washington in\nnineteen twenty-eight, the Evening Star explained to its readers that the sets were\nauthentic, drawn after a visit to Charleston. And then it added a correction. The row\nitself, the paper said, is not called Catfish in Charleston. It is referred to as\nCabbage Row. Porgy himself, it said, was based on a real person.\n\nA few years later George Gershwin turned the play into an opera, Porgy and Bess. A\nWashington paper reported, perhaps generously, that he had spent his spare time for two\nyears visiting Catfish Row.\n\nHe could not have. There is no such place. It is across the street, under another name.\n",
+    "script": "Look across the street at numbers eighty-nine and ninety-one Church Street. The federal\nsurvey of historic buildings files them under two names. Cabbage Row. And Catfish Row.\n\nOnly one of those is a Charleston name.\n\nIn the nineteen twenties two Charlestonians, DuBose and Dorothy Heyward, wrote a play called Porgy. It is set among the Black Charlestonians of a place called Catfish Row. Its hero is a disabled beggar with a little goat cart.\n\nIt ran for more than a year in New York, then went on tour. When it came to Washington, the Evening Star explained to its readers that the sets were\nauthentic, drawn after a visit to Charleston. And then it added a correction. The row\nitself, the paper said, is not called Catfish in Charleston. It is referred to as\nCabbage Row. Porgy himself, it said, was based on a real person.\n\nA few years later George Gershwin turned the play into an opera, Porgy and Bess. A\nWashington paper reported, perhaps generously, that he had spent all his spare time for two years in Charleston, visiting Catfish Row.\n\nHe could not have. There is no such place. It is across the street, under another name.\n",
     "teaser": "Look across the street at numbers eighty-nine and ninety-one. They have two names.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-not-called-catfish/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 80.3,
+        "audioBytes": 1285685
+      }
+    ],
     "pronunciations": [
       {
         "written": "DuBose Heyward",
@@ -3488,14 +3716,7 @@ export const LIBRARY: readonly Echo[] = [
       "theatre",
       "opera"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-not-called-catfish",
-        "durationS": 83
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-sermons-on-the-tide",
@@ -3519,8 +3740,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The stuccoed church on this corner, with the pointed windows, is the French Huguenot\nChurch. Look closely at the decoration. Some of what looks like carved stone is iron.\n\nBut the story here is about time, and water.\n\nThe Huguenots were French Protestants who came to Carolina in the sixteen-eighties. Many\nof them settled on plantations outside the town, and the easiest road to church was the\nriver. So on Sundays they came to service by boat.\n\nA boat on these rivers moves when the tide lets it. Leave at the wrong hour and you row\nagainst it the whole way.\n\nIn sixteen ninety-three the French took their complaints to the Lords Proprietors, the men\nwho ran the colony. The answer came back with a list of protections. Their land would not\nbe taken from their children. Their marriages would be recognised. And they were not to be\nmade to begin their worship at an hour inconvenient to the tide.\n\nThe Park Service says services here were timed to the tides, for the families arriving by\nboat from the plantations.\n\nThe church that stood here in seventeen ninety-six was blown up on purpose, to stop a fire\nspreading through the neighbourhood. This one went up in the eighteen-forties. The\ncongregation is still French Calvinist, the only congregation of its kind in the\ncountry.\n\nThe river is a few streets east of you, still rising and falling twice a day. Somewhere in\na colonial record there is a promise that Sunday would wait for it.\n",
+    "script": "The stuccoed church on this corner, with the pointed windows, is the French Huguenot\nChurch. Look closely at the decoration. Some of what looks like carved stone is iron.\n\nBut the story here is about time, and water.\n\nThe Huguenots were French Protestants who flocked to Carolina in the sixteen-eighties. Many of the families who worshipped here lived on plantations outside the town. So on Sundays they came to service by boat.\n\nA boat on these rivers moves when the tide lets it. Leave at the wrong hour and you row\nagainst it the whole way.\n\nThe French took their complaints to the Lords Proprietors, the men who ran the colony, and in sixteen ninety-three an answer came back. It came with a list of protections. Their land would not be taken from their children because they were aliens. Their marriages would be recognised. And they were not to be\nmade to begin their worship at an hour inconvenient to the tide.\n\nThe Park Service says services here were timed to the tides, for the families arriving by\nboat from the plantations.\n\nThe church that stood here in seventeen ninety-six was blown up on purpose, to stop a fire\nspreading through the neighbourhood. This one went up in the eighteen-forties. Today the congregation is French Calvinist, the only congregation of its kind in the country.\n\nThe river is a few streets east of you, still rising and falling twice a day. Somewhere in\na colonial record there is a promise that Sunday would wait for it.\n",
     "teaser": "Some of the carving on this church is not stone. But the real story here is about water.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-sermons-on-the-tide/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 101.5,
+        "audioBytes": 1625486
+      }
+    ],
     "pronunciations": [
       {
         "written": "Huguenot",
@@ -3539,14 +3768,7 @@ export const LIBRARY: readonly Echo[] = [
       "churches",
       "colonial"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-sermons-on-the-tide",
-        "durationS": 102
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-skulls-over-the-market",
@@ -3562,7 +3784,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 97,
+    "durationS": 93,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3570,8 +3792,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the band of decoration under the roof of the Market Hall. Those shapes are\nskulls. Bulls, and sheep.\n\nThey are an advertisement. This was a meat market.\n\nThe land was given to the city for a market in seventeen eighty-eight, and after a great\nfire the hall and the long open sheds behind it went up in eighteen forty and forty-one.\nEvery day, meat and produce came in from the country around the town. The rules were\nstrict. Cuts and weights were regulated. Vendors had to wear clean white aprons. And to\nkeep everything fresh, whatever was left at the end of the day was thrown into the street.\n\nWhich is where the market's other workers came in.\n\nBuzzards cleaned the streets around the market, and Charlestonians valued the service so\nmuch that the birds were protected by law. People called them Charleston eagles. A\nvisiting reporter in eighteen seventy-four watched one pick the street clean, then fly up\nto sit on the market-house roof, protected, he wrote, like any official of the city.\n\nYou may have heard that these sheds were a slave market. The record puts those sales\nsomewhere else. Charleston sold enslaved people at the Exchange, and after eighteen\nfifty-six in private marts on Chalmers, State and Queen streets.\n\nThese sheds were built to sell beef. One of the buildings built to sell people is still\nstanding, a few blocks south of here, on Chalmers Street.\n",
+    "script": "Look up at the band of decoration under the roof of the Market Hall. Those shapes are\nskulls. Bulls, and sheep.\n\nThey are an advertisement. This was a meat market.\n\nThe land was given to the city for a market in seventeen eighty-eight, and after a great\nfire the hall and the long open sheds behind it went up in eighteen forty and forty-one.\nEvery day, meat and produce came in from the rural communities nearby. The rules were strict. Cuts and weights were regulated. Vendors had to wear clean white aprons. And vendors had to bring only fresh goods, so whatever was left at the end of the day was thrown into the street.\n\nWhich is where the market's other workers came in.\n\nBuzzards cleaned the streets around the market, and Charlestonians valued the service so\nmuch that the birds were protected by law. People called them Charleston eagles. A\nvisiting reporter in eighteen seventy-four watched one pick the street clean, then fly up\nto sit on the market-house roof, protected, he wrote, like any official of the city.\n\nYou may have heard that these sheds were a slave market. The record puts those sales\nsomewhere else. Charleston sold enslaved people at the Exchange, and after eighteen\nfifty-six in private marts on Chalmers, State and Queen streets.\n\nThese sheds were built to sell beef. One of the buildings built to sell people is still\nstanding, a few blocks south of here, on Chalmers Street.\n",
     "teaser": "Look up under the roof of the Market Hall. Those shapes are skulls.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-skulls-over-the-market/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 93,
+        "audioBytes": 1488813
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -3580,14 +3810,56 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "birds"
     ],
-    "remoteness": 0,
+    "remoteness": 0
+  },
+  {
+    "id": "charleston-steps-that-only-go-up",
+    "title": "Steps That Only Go Up",
+    "summary": "A legend of Charleston: a condemned man promised to return, and the footsteps that came afterwards only ever climbed the stairs.",
+    "point": {
+      "at": {
+        "lat": 32.7721,
+        "lng": -79.9305
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Corner of Meeting Street and Atlantic Street, Charleston, South Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand at this corner, where Atlantic Street meets Meeting Street. A house once stood here, and it is gone. What is left is a story. It is a legend, and nobody can prove it.\n\nA Charleston historian, writing in nineteen-oh-six, called it the only well-authenticated ghost story known in Charles Town.\n\nDuring the Revolution, while the British held the town, they sentenced an American officer, Colonel Isaac Hayne, to hang. The house on this corner belonged to Mrs. Peronneau, his wife's sister. She had knelt with his children before the British commander and begged for his life. It did no good.\n\nOn the day of the execution, the story goes, he passed along Atlantic Street on his way to the gallows. She stood at the north window and cried out to him. Return, return to us.\n\nHe answered, I will if I can. And he walked on.\n\nEver after, the story says, anyone at that north window after dark would hear a ghostly voice in the street below. Then steps on the stair, and in the hall. As of a man returning. Never going down. Always up.\n\nThe house came down more than a century ago. The street he walked is still here.\n",
+    "teaser": "I will if I can, he said, and walked on.",
+    "certaintyNote": "A ghost story recorded as tradition by Harriott Horry Ravenel in 1906. The script says aloud that it is a legend; the voice and the footsteps are not established, and the house no longer stands.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-skulls-over-the-market",
-        "durationS": 97
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/charleston-steps-that-only-go-up/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 72.1,
+        "audioBytes": 1154446
       }
-    ]
+    ],
+    "pronunciations": [
+      {
+        "written": "Peronneau",
+        "say": "PERR-oh-no"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "ghosts",
+      "revolutionary-war"
+    ],
+    "remoteness": 0
   },
   {
     "id": "charleston-the-audience-on-the-sea-wall",
@@ -3603,7 +3875,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 91,
+    "durationS": 84,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3611,8 +3883,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look out across the harbour to the low fort near its mouth. That is Fort Sumter.\n\nAt half past four in the morning on the twelfth of April, eighteen sixty-one, a mortar\nfired from Fort Johnson, across the water. The shell arched high over the harbour and\nburst in the air above Sumter. It was a signal. Within half an hour, every Confederate\nbattery that could reach the fort was firing at it.\n\nAnd the town came out to watch.\n\nA Charleston writer, telling it years later, says that within five minutes this Battery\nswarmed with people. Then the houses behind you, the wharves, the rooftops. The road was\nso jammed with carriages that boys got from the pavement to the sea wall by jumping from\none carriage roof to the next.\n\nThey watched all that day and into the next. Fathers, brothers and sons were out in the\nbatteries on the islands. On the second day the fort caught fire, its flag came down,\nand the garrison agreed to leave.\n\nThe people on this wall had come to see a war begin. They did not expect to be in it.\n\nTwo summers later, Union troops took Morris Island, at the harbour mouth, and the\nbombardment of Charleston began in earnest. The siege went on until February eighteen\nsixty-five. The guns were pointed at the city behind you.\n",
+    "script": "Look out across the harbour to the low fort near its mouth. That is Fort Sumter.\n\nAt half past four in the morning on the twelfth of April, eighteen sixty-one, a mortar\nfired from Fort Johnson, across the water. The shell arched high over the harbour and\nburst in the air above Sumter. It was a signal. Within half an hour, every Confederate\nbattery that could reach the fort was firing at it.\n\nAnd the town came out to watch.\n\nA Charleston writer, telling it years later, says that within five minutes this Battery\nswarmed with people. Then the houses behind you, the wharves, the rooftops. The road was\nso jammed with carriages that boys got from the pavement to the sea wall by jumping from\none carriage roof to the next.\n\nThey watched all that day and into the next. The men of the town were out in the batteries on the islands. On the second day the fort caught fire, its flag came down, and the garrison agreed to leave.\n\nThe people on this wall had come to see a war begin. They did not expect to be in it.\n\nTwo summers later, Union troops took Morris Island, at the harbour mouth, and the\nbombardment of Charleston began in earnest. The siege went on until February eighteen\nsixty-five. The guns were pointed at the city behind you.\n",
     "teaser": "Look out across the harbour to the low fort near its mouth.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-audience-on-the-sea-wall/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 83.5,
+        "audioBytes": 1336258
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -3621,14 +3901,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "fort-sumter"
     ],
-    "remoteness": 0.27,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-audience-on-the-sea-wall",
-        "durationS": 91
-      }
-    ]
+    "remoteness": 0.14
   },
   {
     "id": "charleston-the-bedsheet",
@@ -3644,7 +3917,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 96,
+    "durationS": 88,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3654,6 +3927,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look out at the water. The boats to Fort Sumter leave from this wharf, and the harbour runs from here down to the open sea.\n\nAt three in the morning on the thirteenth of May, eighteen sixty two, a Confederate steamer called the Planter began to move away from a Charleston wharf. Her three white officers were ashore for the night. That was against standing orders, and it happened often.\n\nThe men left aboard were enslaved. One of them was a pilot in his early twenties named Robert Smalls.\n\nThey fired the boilers and steamed up the Cooper River to another wharf, where their wives and children were waiting aboard another boat. Sixteen people in all. Then they turned for the sea.\n\nSmalls put on the captain's coat and straw hat. He knew the signals. He was the pilot. At about a quarter past four the Planter came up to Fort Sumter, with Fort Moultrie across the channel. Smalls gave the signal. The fort let them pass.\n\nIt was not over. As they reached the Union fleet, a warship took them for an attacker and readied its guns. The crew ran a bedsheet up the mast.\n\nThe wharves they left from are gone, and nobody can point to the exact spot now. The water they crossed is in front of you.\n\nRobert Smalls went on to serve five terms in Congress. That night, all of it hung on a sheet.\n",
     "teaser": "Three in the morning, a borrowed straw hat, and the signal for Fort Sumter.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-bedsheet/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 88,
+        "audioBytes": 1408565
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -3661,14 +3942,7 @@ export const LIBRARY: readonly Echo[] = [
       "freedom-seekers",
       "waterfront"
     ],
-    "remoteness": 0.63,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-bedsheet",
-        "durationS": 96
-      }
-    ]
+    "remoteness": 0.63
   },
   {
     "id": "charleston-the-castle-on-the-square",
@@ -3684,7 +3958,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 75,
+    "durationS": 73,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3692,8 +3966,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the long building on the north side of the square. Battlements along the roof. Towers at the corners. It looks like a fortress because it was meant to be one. Not against a foreign army.\n\nIn eighteen twenty two, the authorities said they had uncovered a plan by enslaved Charlestonians to rise and take the city. In the aftermath, the state built an arsenal here, with a guard of armed men to live in it and patrol the streets. When federal surveyors described the building in the nineteen fifties, they put its purpose plainly. A safeguard against slave uprisings.\n\nIn the eighteen forties the guard was disbanded. Cadets of a new state military academy moved in and took over its duties. That academy was the Citadel. For decades its cadets drilled on the grass in front of you, which was called Citadel Green.\n\nThe building kept growing. A third storey, then wings, then a fourth. In nineteen twenty two the cadets left for a new campus, and the green was renamed for Francis Marion.\n\nThe building is a hotel now. It still has the battlements.\n",
+    "script": "Look at the long building on the north side of the square. Battlements along the roof. Towers at the corners. It looks like a fortress because it was meant to be one. Not against a foreign army.\n\nIn eighteen twenty two, the authorities said they had uncovered a plan by enslaved Charlestonians to rise and take the city. In the aftermath, the state built an arsenal here, to house a guard of armed men who patrolled the city. When federal surveyors described the building in the nineteen fifties, they put its purpose plainly. A safeguard against slave uprisings.\n\nIn the eighteen forties, cadets of a new state military academy moved in. That academy was the Citadel. For decades its cadets drilled and paraded on the grass in front of you, which was called Citadel Green.\n\nThe building kept growing. A third storey, then wings, then a fourth. In nineteen twenty two the academy left the building, and after it moved away the green was renamed for Francis Marion.\n\nThe building is a hotel now. It still has the battlements.\n",
     "teaser": "It looks like a fortress because it was one.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-castle-on-the-square/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 72.5,
+        "audioBytes": 1161551
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -3701,14 +3983,7 @@ export const LIBRARY: readonly Echo[] = [
       "the-citadel",
       "architecture"
     ],
-    "remoteness": 0.42,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-castle-on-the-square",
-        "durationS": 75
-      }
-    ]
+    "remoteness": 0.19
   },
   {
     "id": "charleston-the-congregation-that-rebuilt",
@@ -3724,7 +3999,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 86,
+    "durationS": 85,
     "minAge": 12,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3732,9 +4007,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the steeple. This church was built in eighteen ninety one. The congregation inside it is much older, and for about thirty years it had no legal right to meet at all.\n\nIt begins with a lottery ticket. In seventeen ninety nine, a Charleston carpenter named Denmark Vesey won fifteen hundred dollars, and used it to buy his own freedom.\n\nVesey was one of the founders of the African Church, the congregation that became this one. In eighteen twenty two, the authorities said, he was at the centre of a plan for the enslaved people of the city to rise and win their freedom.\n\nThe plan was betrayed before it began. More than a hundred people were arrested. Thirty five men were hanged, Vesey among them. And the church was destroyed. Accounts differ on whether it was burned or torn down.\n\nThe congregation rebuilt. In eighteen thirty four, all Black churches were outlawed, so they met in secret. In eighteen sixty five they organised again, openly, and took a new name. Emanuel.\n\nOn a June evening in two thousand fifteen, nine of its members were killed at Bible study in this building, and the congregation endured that too.\n\nThe building is from eighteen ninety one. The congregation has been rebuilding since eighteen twenty two.\n",
+    "script": "Look up at the steeple. This church was built in eighteen ninety one. The congregation inside it is much older, and for about thirty years it had no legal right to meet at all.\n\nIt begins with a lottery ticket. In seventeen ninety nine, a Charleston carpenter named Denmark Vesey won fifteen hundred dollars, and used it to buy his own freedom.\n\nVesey was one of the founders of the African Church, the congregation that became this one. In eighteen twenty two, the authorities said, he was at the centre of a plan for the enslaved people of the city to rise and win their freedom.\n\nThe plan was betrayed before it began. More than a hundred people were arrested. Thirty five men were hanged, Vesey among them. And the church was destroyed. Accounts differ on whether it was burned or torn down.\n\nThe congregation rebuilt. In eighteen thirty four, all Black churches were outlawed, so they met in secret. In eighteen sixty five they organised again, openly, and took a new name. Emanuel.\n\nOn a June evening in two thousand fifteen, nine people were killed at Bible study in this building, and the congregation endured that too.\n\nThe building is from eighteen ninety one. The congregation has been rebuilding since eighteen twenty two.\n",
     "teaser": "It begins with a winning lottery ticket.",
     "certaintyNote": "The two NPS pages differ on the 1822 plot. The church page gives 313 arrested and says the church was burned; the Denmark Vesey page gives 131 arrested and charged, 67 convicted, calls the plot alleged, and says white Charlestonians tore the church down. Both give 35 executed. The script hedges the arrests, the plan and the destruction.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-congregation-that-rebuilt/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 84.9,
+        "audioBytes": 1360082
+      }
+    ],
     "pronunciations": [
       {
         "written": "Denmark Vesey",
@@ -3752,14 +4035,7 @@ export const LIBRARY: readonly Echo[] = [
       "african-american-history",
       "churches"
     ],
-    "remoteness": 0.37,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-congregation-that-rebuilt",
-        "durationS": 86
-      }
-    ]
+    "remoteness": 0.22
   },
   {
     "id": "charleston-the-fire-and-the-brick-law",
@@ -3775,7 +4051,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 96,
+    "durationS": 94,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3783,8 +4059,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look south down Church Street at the walls. Brick. Stucco over brick. Stone.\n\nThat is not only taste. It is a fire, and a law.\n\nOn the afternoon of the eighteenth of November, seventeen forty, a fire broke out in\nCharles Town. By one account it took every house from about this corner, Broad and\nChurch, down to Granville Bastion, at the water's edge, where the East Battery now\nbegins. Three hundred houses, by the count at the time, and storehouses, stables and\nwarehouses with them. This was the oldest part of town, and full of goods. The tide was\nhigh that afternoon, and by one account that is the only reason the ships at the wharves\ndid not burn as well.\n\nParliament in London sent twenty thousand pounds.\n\nAnd on the tenth of December, three weeks after the fire, the colony passed an act for\nrebuilding the town. Every new building was to be made of brick, or stone, or both. The\nact even fixed the price of bricks.\n\nThe town had tried a law like that once before and given it up, because bricks were\nscarce. This time it stuck. A Charleston historian, writing in nineteen-oh-six, noted that\nmany of the small, dark brick houses between Broad and Water Street date from that time on.\n\nYou are standing at the edge of the fire. What it took was rebuilt in the only materials\nthe law would allow.\n",
+    "script": "Look south down Church Street at the walls. Brick. Stucco over brick. Stone.\n\nThat is not just taste. It is a fire, and a law.\n\nOn the afternoon of the eighteenth of November, seventeen forty, a fire broke out in\nCharles Town. By one account it took every house from about this corner, Broad and\nChurch, down to Granville Bastion, at the water's edge, where the East Battery now\nbegins. Three hundred houses, by the count at the time, and storehouses, stables and\nwarehouses with them. This was the oldest part of town, and full of goods. The tide was\nhigh that afternoon, and by one account, had it not been, the shipping would have burned as well.\n\nParliament in London sent twenty thousand pounds.\n\nAnd on the tenth of December, three weeks after the fire, the colony passed an act for\nrebuilding the town. Every new building was to be made of brick, or stone, or both. The act even fixed the prices of building materials, bricks included.\n\nThe town had tried a law like that once before and given it up, because bricks were\nscarce. This time the town was rebuilt of brick. A Charleston historian, writing in nineteen-oh-six, noted that\nmany of the small, dark brick houses between Broad and Water Street date from that time on.\n\nYou are standing at the edge of the fire. What it took was rebuilt in the materials the law required.\n",
     "teaser": "Look down Church Street at the walls. There is a reason for what they are made of.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-fire-and-the-brick-law/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 94.2,
+        "audioBytes": 1508875
+      }
+    ],
     "pronunciations": [
       {
         "written": "Granville",
@@ -3799,14 +4083,7 @@ export const LIBRARY: readonly Echo[] = [
       "colonial",
       "architecture"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-fire-and-the-brick-law",
-        "durationS": 96
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-the-museums-front-door",
@@ -3822,7 +4099,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 67,
+    "durationS": 65,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3830,8 +4107,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Four tall columns stand at this end of the park, holding up nothing. Look at the tops. Corinthian capitals, the kind crowned with leaves.\n\nThey were the front entrance of a great hall, built here in eighteen ninety nine for a Confederate reunion. After the reunion it was rarely used. It became a theatre, then for a while a city hospital.\n\nIn nineteen oh seven it found a lasting tenant. The Charleston Museum moved in, with its natural history collections, its workshops and its library. A city guidebook of nineteen nineteen called it the oldest museum in America, founded in seventeen seventy three. Older, the guide pointed out, than the nation.\n\nThe museum stayed for some seventy years. Then it built a new home on Meeting Street and moved out. The old hall had already been declared a fire hazard.\n\nIn nineteen eighty one, it burned to the ground.\n\nThe museum is still open, over on Meeting Street. Its old front door is here, with nothing behind it.\n",
+    "script": "Four tall columns stand at this end of the park, holding up nothing. Look at the tops. Corinthian capitals, the kind crowned with leaves.\n\nThey were the front entrance of a great hall, built here in eighteen ninety nine for a Confederate reunion. After the reunion it was rarely used. It became a theatre, then for a while a city hospital.\n\nIn nineteen oh seven it found a lasting tenant. The Charleston Museum moved in, with its natural history collections, its workshops and its library. A city guidebook of nineteen nineteen called it the oldest museum in America, founded in seventeen seventy three. Older, the guide pointed out, than the nation.\n\nIn the nineteen seventies the museum commissioned a new home on Meeting Street, and moved out. The old hall had already been declared a fire hazard.\n\nIn nineteen eighty one, it burned to the ground.\n\nThe museum is still open, over on Meeting Street. Its old front door is here, with nothing behind it.\n",
     "teaser": "Four columns, holding up nothing.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-museums-front-door/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 64.7,
+        "audioBytes": 1036163
+      }
+    ],
     "pronunciations": [
       {
         "written": "Rutledge Avenue",
@@ -3845,14 +4130,7 @@ export const LIBRARY: readonly Echo[] = [
       "parks",
       "ruins"
     ],
-    "remoteness": 0.49,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-museums-front-door",
-        "durationS": 67
-      }
-    ]
+    "remoteness": 0.37
   },
   {
     "id": "charleston-the-night-the-wall-opened",
@@ -3868,7 +4146,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 89,
+    "durationS": 88,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -3876,8 +4154,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the old jail. Heavy walls, towers, the look of a building nothing could move.\n\nIt used to be taller.\n\nIt was built in eighteen-oh-two, and for most of the century it had a fourth floor. Over\nthe eight-sided wing at the back stood a tall tower, which the records call the\nventilator, or the high cupola.\n\nOn the last night of August, eighteen eighty-six, an earthquake struck Charleston.\n\nThe local paper reported that the jail's walls, in some places nearly three feet thick,\nyielded to the quivering earth like so much glass. Cracks ran from the top of the building\ndown into the foundations.\n\nThe jailer made a decision. Rather than leave his prisoners in cells that might come down\non them, he let them out into the jail yard.\n\nThe yard had a wall around it. The earthquake opened a gap in it.\n\nThere were sixty-nine prisoners in the jail that night. Thirty-six of them went out\nthrough the gap.\n\nAfterwards the tower was condemned and torn down, and the top floor was taken off. The\nbuilding you are looking at is the jail the earthquake left behind. It went on holding\nprisoners until nineteen thirty-nine.\n\nIt still looks like nothing could get out of it. For one night, more than half of the\npeople inside proved otherwise.\n",
+    "script": "Look up at the old jail. Heavy walls, towers, the look of a building nothing could move.\n\nIt used to be taller.\n\nIt was built in eighteen-oh-two, and through the eighteen hundreds the main building had a fourth floor. Over\nthe eight-sided wing at the back stood a tall tower, which the records call the\nventilator, or the high cupola.\n\nOn the last night of August, eighteen eighty-six, an earthquake struck Charleston.\n\nThe local paper reported that the jail's walls, in some places nearly three feet thick,\nyielded to the quivering earth like so much glass. Cracks ran from the top of the building\ndown into the foundations.\n\nThe jailer made a decision. Rather than leave his prisoners in cells that might come down\non them, he let them out into the jail yard.\n\nThe yard had a wall around it. The earthquake opened a gap in it.\n\nThere were sixty-nine prisoners in the jail that night. Thirty-six of them went out\nthrough the gap.\n\nAfterwards the tower was condemned and torn down, and the top storey was removed. The\nbuilding you are looking at is the jail the earthquake left behind. It went on holding\nprisoners until nineteen thirty-nine.\n\nIt still looks like nothing could get out of it. For one night, more than half of the\npeople inside proved otherwise.\n",
     "teaser": "Look up at the Old Jail. It used to be taller.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-night-the-wall-opened/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 87.6,
+        "audioBytes": 1403132
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -3885,14 +4171,7 @@ export const LIBRARY: readonly Echo[] = [
       "earthquake-1886",
       "architecture"
     ],
-    "remoteness": 0.12,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-night-the-wall-opened",
-        "durationS": 89
-      }
-    ]
+    "remoteness": 0.12
   },
   {
     "id": "charleston-the-petition-of-forty-seven",
@@ -3916,8 +4195,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the front of this synagogue. Tall columns, a deep porch, a heavy roof line. It was designed to look like a temple from ancient Greece.\n\nThe congregation is older than the building. It began in seventeen forty nine, and by the end of that century it was the largest Jewish community in the country.\n\nIn eighteen twenty four, forty seven members sent the trustees a petition. They asked for shorter Hebrew rituals. They asked for prayers and sermons in English. The trustees said no, and for a time the congregation split.\n\nBy eighteen thirty three, the congregation was back together, and most of it was on the petitioners' side. Then the Charleston fire of eighteen thirty eight burned the first synagogue, which stood on this spot.\n\nThis one was built to replace it in eighteen forty. When its first service was held, the year after, it was the new kind. Beth Elohim became the first Reform congregation in America, and this is now the oldest synagogue in the country in continuous use.\n\nThe petition of eighteen twenty four was turned down. Seventeen years later, it had the whole building.\n",
+    "script": "Look at the front of this synagogue. Tall columns, a deep porch, a heavy roof line. It was designed to look like a temple from ancient Greece.\n\nThe congregation is older than the building. It began in seventeen forty nine, and by the end of that century it was the largest Jewish community in the country.\n\nIn eighteen twenty four, forty seven members sent the trustees a petition. They asked for shorter Hebrew rituals. They asked for prayers and sermons in English. The trustees said no, and for a time the congregation split.\n\nBy eighteen thirty three, the congregation was back together, with nearly two hundred members supporting reform. Then the Charleston fire of eighteen thirty eight burned the first synagogue, which stood on this spot.\n\nThis one was built to replace it in eighteen forty. When its first service was held, the year after, it was the new kind. Beth Elohim became the first Reform congregation in America, and this is now the oldest synagogue in the country in continuous use.\n\nThe petition of eighteen twenty four was turned down. Seventeen years later, it had the whole building.\n",
     "teaser": "The petition lost. Seventeen years later it had the whole building.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-petition-of-forty-seven/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 76.3,
+        "audioBytes": 1221737
+      }
+    ],
     "pronunciations": [
       {
         "written": "Kahal Kadosh Beth Elohim",
@@ -3935,14 +4222,7 @@ export const LIBRARY: readonly Echo[] = [
       "religion",
       "architecture"
     ],
-    "remoteness": 0.1,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-petition-of-forty-seven",
-        "durationS": 76
-      }
-    ]
+    "remoteness": 0.1
   },
   {
     "id": "charleston-the-piece-somebody-kept",
@@ -3966,8 +4246,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "On the King Street side of this square, behind an iron fence, is a fragment of old wall. It is easy to walk past. It is the oldest thing on the square.\n\nIn seventeen fifty nine, this was the northern edge of Charleston, and the road into town came through here. To guard it, the colony built a horn work, a great fortification designed by a German engineer named Emmanuel Hesse. It covered five acres. It mounted eighteen cannon. A wide moat ran along its north side. Parts of it were built of tabby, the old coastal building material you can see in that fragment.\n\nIn seventeen eighty, a British army laid siege to Charleston, and the horn work was the city's main defence.\n\nIt was not enough. Charleston surrendered, and it was the largest American surrender until the Civil War.\n\nFour years later, the horn work was taken down. Somebody kept this piece, and put a fence around it.\n",
+    "script": "On the King Street side of this square, behind an iron fence, is a fragment of old wall. It is easy to walk past. It is the oldest thing on the square.\n\nIn the eighteenth century, this was the northern edge of Charleston, and the road into town came through here. To guard it, a horn work was built in seventeen fifty nine, a great fortification designed by a German engineer named Emmanuel Hesse. It covered five acres. It mounted eighteen cannon. A wide moat ran along its north side. Parts of it were built of tabby, the old coastal building material you can see in that fragment.\n\nIn seventeen eighty, a British army laid siege to Charleston, and the horn work was the city's main defence.\n\nIt was not enough. Charleston surrendered, and it was the largest American surrender until the Civil War.\n\nFour years later, the horn work was taken down. Somebody kept this piece, and put a fence around it.\n",
     "teaser": "The oldest thing on the square is easy to walk past.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-piece-somebody-kept/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 63.7,
+        "audioBytes": 1019863
+      }
+    ],
     "pronunciations": [
       {
         "written": "Emmanuel Hesse",
@@ -3981,19 +4269,12 @@ export const LIBRARY: readonly Echo[] = [
       "fortifications",
       "ruins"
     ],
-    "remoteness": 0.41,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-piece-somebody-kept",
-        "durationS": 64
-      }
-    ]
+    "remoteness": 0.16
   },
   {
     "id": "charleston-the-playhouse-on-dock-street",
     "title": "The Playhouse on Dock Street",
-    "summary": "America's first building made for theatre stood on this side of the block in 1736. You are on the street it was named for.",
+    "summary": "What is said to be America's first building made for theatre stood on this side of the block. You are on its street.",
     "point": {
       "at": {
         "lat": 32.77818,
@@ -4004,7 +4285,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 89,
+    "durationS": 63,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4012,8 +4293,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the iron balcony on the corner. The name on the building is the Dock Street\nTheatre.\n\nNow look at the street sign. You are standing on Queen Street.\n\nQueen Street used to be called Dock Street. And on this side of the block, in seventeen\nthirty-six, Charleston put up a building for one purpose only. Plays. It is said to have\nbeen the first building in America made for the theatre.\n\nNobody was building a monument. A history of the city written in nineteen-oh-six says the\nearly playhouses here were described as temporary, and were probably not much more than\nbarns. Planters and merchants came to watch tragedies, and Addison's Cato, and a comedy\ncalled The Recruiting Officer, put on by special request of the local militia.\n\nThe barn is long gone. The building in front of you started life around eighteen-oh-nine\nas the Planter's Hotel, where planters from up-country stayed for the horse-racing season.\nThen, in the nineteen-thirties, the city restored it as a Works Progress Administration\nproject. It built an eighteenth-century style theatre into the back of the old hotel, and\ngave the whole thing the old playhouse's name.\n\nSo America's first theatre is a story told by a hotel, about a barn, on a street that\nchanged its name.\n\nFor a theatre, that seems about right.\n",
+    "script": "Look up at the iron balcony on the corner. The name on the building is the Dock Street\nTheatre.\n\nNow look at the street sign. You are standing on Queen Street.\n\nQueen Street used to be called Dock Street. And on this side of the block, in seventeen\nthirty-six, Charleston put up a building for one purpose only. Plays. It is said to have\nbeen the first building in America made for the theatre.\n\nThat playhouse is long gone. The building in front of you started life around eighteen-oh-nine\nas the Planter's Hotel, where planters from the midlands stayed for the horse-racing season.\nThen, in the nineteen-thirties, the city restored it as a Works Progress Administration\nproject. It built an eighteenth-century style theatre into the back of the old hotel, and\ngave the whole thing the old playhouse's name.\n\nSo America's first theatre is a story told by a hotel, about a lost playhouse, on a street that\nchanged its name.\n\nFor a theatre, that seems about right.\n",
     "teaser": "The sign says Dock Street Theatre. Look at the street sign. You are on Queen Street.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-playhouse-on-dock-street/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 63.2,
+        "audioBytes": 1012340
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -4021,14 +4310,7 @@ export const LIBRARY: readonly Echo[] = [
       "theatre",
       "colonial"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-playhouse-on-dock-street",
-        "durationS": 89
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-the-powder-behind-the-wall",
@@ -4044,7 +4326,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 80,
+    "durationS": 84,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4052,8 +4334,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The building at the foot of Broad Street is the Exchange. When it was finished, in\nseventeen seventy-one, the harbour came right up to it. Everything between it and the\nwater now is filled land.\n\nThink about what is underneath it.\n\nIn the spring of seventeen eighty a British army laid siege to Charleston. During the\nsiege the defenders moved ten thousand pounds of gunpowder out of the town's main\nmagazine, by night, and carried it down into the vaults of this building. Then they\nbricked it in.\n\nThe city surrendered in May. The British took vast stores of powder when it fell. They\nheld Charleston for more than two years. They used the Exchange as barracks, and the\ncellar became their military prison, the Provost. In one damp, dark room they kept\ncriminals and suspected rebels together, men and women, some held on the thinnest of\ncharges.\n\nWilliam Moultrie, one of the American commanders, wrote about it afterwards. The Provost,\nhe said, was right next to the powder. The British never found it. When the Americans\ncame back into the town, it was still there.\n\nFor more than two years, the British had been guarding it for them.\n",
+    "script": "The building at the foot of Broad Street is the Exchange. When it was finished, in seventeen seventy-one, it fronted the harbour. Everything between it and the water now is filled land.\n\nThink about what is underneath it.\n\nIn the spring of seventeen eighty a British army laid siege to Charleston. During the siege, after a shell burst close to the powder magazine on Cumberland Street, the defenders moved ten thousand pounds of gunpowder out of it, by night, and carried it down into the vaults of this building. Then they\nbricked it in.\n\nThe city surrendered in May. The British took vast stores of powder when it fell. They\nheld Charleston for more than two years. They used the Exchange as barracks, and the\ncellar became their military prison, the Provost. In one damp, dark room they kept the lowest criminals together with anyone, however respectable, against whom a complaint was brought, men and women alike.\n\nWilliam Moultrie, one of the American commanders, wrote about it afterwards. The Provost,\nhe said, was right next to the powder. The British never found it. When the Americans\ncame back into the town, it was still there.\n\nFor more than two years, the British had been guarding it for them.\n",
     "teaser": "Look at the building at the foot of Broad Street. Think about what is under it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-powder-behind-the-wall/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 84.4,
+        "audioBytes": 1351305
+      }
+    ],
     "pronunciations": [
       {
         "written": "Moultrie",
@@ -4067,14 +4357,7 @@ export const LIBRARY: readonly Echo[] = [
       "old-exchange",
       "revolution"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-powder-behind-the-wall",
-        "durationS": 80
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-the-sailor-on-the-steeple",
@@ -4090,7 +4373,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 98,
+    "durationS": 95,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4098,8 +4381,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up Church Street at the steeple of St. Philip's. The church sits right out in the\nroadway, the way parish churches did in England, and the street has to bend around it.\n\nThis is not the steeple this story is about.\n\nIn seventeen ninety-six a great fire swept through this part of town. It destroyed the\nFrench church on the corner behind you. And it reached the older St. Philip's, which stood\non this same spot, and set its steeple alight.\n\nAn enslaved Black man, a sailor by one account, climbed up the outside of the tower and\ntore off the burning shingles.\n\nIt worked. The church was saved.\n\nFor this, the old accounts agree, he was given his freedom. One adds a sum of money, and a\nfishing boat, completely fitted out with nets.\n\nThen the story got away from him. A popular poem moved it to the other great church in\ntown, and called it How He Saved St. Michael's. By nineteen-oh-one it was a favourite piece\nfor recitation contests. A book about Charleston published that year set the record straight, and\nthen added four words of its own. Thus is history made.\n\nThe church he saved burned anyway, in eighteen thirty-five, and the one in front of you was\nbuilt to replace it. Its steeple came a decade later.\n\nThe histories that tell this story record his reward in detail. The money. The boat. The\nnets. They do not record his name.\n",
+    "script": "Look up Church Street at the steeple of St. Philip's. The church sits right out in the\nroadway, the way parish churches did in England, and the street has to bend around it.\n\nThis is not the steeple this story is about.\n\nIn seventeen ninety-six a great fire swept through this part of town. It destroyed the French church on the corner behind you. And it reached the older St. Philip's, which stood\non this same spot, and set its steeple alight.\n\nAn enslaved Black man, a sailor by one account, climbed up the outside of the tower and\ntore off the burning shingles.\n\nIt worked. The church was saved.\n\nFor this, the old accounts agree, he was given his freedom. One adds a sum of money, and a\nfishing boat, completely fitted out with nets.\n\nThen the story got away from him. A popular poem moved it to the other great church in\ntown, and called it How He Saved St. Michael's. By the start of the nineteen hundreds it was a favourite piece for recitation contests. A book about Charleston from those years set the record straight, and then added four words of its own. Thus is history made.\n\nThe church he saved burned anyway, in eighteen thirty-five, and the one in front of you was\nbuilt to replace it. Its steeple came a decade later.\n\nThe histories that tell this story record his reward in detail. The money. The boat. The\nnets. They do not record his name.\n",
     "teaser": "Look up Church Street at the steeple of St. Philip's. It is not the steeple this story is about.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-sailor-on-the-steeple/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 95.1,
+        "audioBytes": 1522668
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -4108,14 +4399,7 @@ export const LIBRARY: readonly Echo[] = [
       "fires",
       "slavery"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-sailor-on-the-steeple",
-        "durationS": 98
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-the-street-named-for-a-meeting-house",
@@ -4131,7 +4415,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 90,
+    "durationS": 87,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4139,8 +4423,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look into the graveyard around the Circular Congregational Church. It is the oldest burial\nground in Charleston, and one of its monuments has stood here since the sixteen hundreds.\n\nNow think about the name of the street you are standing on.\n\nMeeting Street is named for a building that is not here. In the first years of the town,\nits dissenters, English Congregationalists, Scots and Irish Presbyterians and French\nHuguenots, put up a plain meeting house on this spot. It was painted white. People called\nit the White Meeting House, and the road in front of it took the name.\n\nSince then, this site has been through almost everything Charleston could throw at it.\nDuring the Revolution the meeting house was turned into a granary, and horses grazed\namong these graves. In eighteen-oh-six a new church went up here, round, designed by the\nCharleston-born architect Robert Mills. It gave the congregation its name. It burned in\nthe great fire of eighteen sixty-one, stood as a ruin for twenty-five years, and the\nearthquake of eighteen eighty-six finished it off.\n\nThe church in front of you was built after that, around eighteen ninety-two, and it was\nbuilt partly from the old bricks.\n\nEvery church before this one has gone. The street is still named for the first of them.\nAnd the graves have outlasted all of them.\n",
+    "script": "Look into the graveyard around the Circular Congregational Church. It is the oldest burial\nground in Charleston, and one of its monuments has stood here since the sixteen hundreds.\n\nNow think about the name of the street you are standing on.\n\nMeeting Street is named for a building that is not here. In the first years of the town,\nits dissenters, English Congregationalists, Scots and Irish Presbyterians and French\nHuguenots, put up a plain meeting house on this spot. It was white. People called it the White Meeting House, and the road in front of it took the name.\n\nSince then, this site has been through almost everything Charleston could throw at it.\nDuring the Revolution the meeting house was turned into a granary, and horses were pastured among these graves. In eighteen-oh-six a new church went up here, round, designed by the\nCharleston-born architect Robert Mills. It gave the congregation its name. It burned in\nthe great fire of eighteen sixty-one, stood as a ruin for twenty-five years, and the\nearthquake of eighteen eighty-six finished it off.\n\nThe church in front of you was built after that, around eighteen ninety-two, and it was\nbuilt partly from the old bricks.\n\nEvery church before this one has gone. The street is still named for the first of them.\nAnd the graves have outlasted all of them.\n",
     "teaser": "Look into the oldest graveyard in Charleston. Then look at the name of the street you are standing on.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-street-named-for-a-meeting-house/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 87.1,
+        "audioBytes": 1394354
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
@@ -4149,14 +4441,7 @@ export const LIBRARY: readonly Echo[] = [
       "churchyards",
       "place-names"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-street-named-for-a-meeting-house",
-        "durationS": 90
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "charleston-the-tables-in-the-shed",
@@ -4180,8 +4465,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the front of number six Chalmers Street. A high arch. Eight-sided pillars. A large\niron gate.\n\nIt is a handsome front, for what happened behind it.\n\nThis is the only building known to survive in South Carolina that was used as a slave\nauction gallery. For a long time, Charleston sold enslaved men, women and children in the\nopen, on the north side of the Exchange building. In eighteen fifty-six the city banned\nthose public sales.\n\nThe trade did not stop. It moved indoors and off the main streets, into sales rooms and\nyards along Chalmers, State and Queen streets.\n\nThis was one of them, known as Ryan's Mart. Behind the front stood a four-storey building\nwith a barracoon, a jail where people were held until they were sold. There was a kitchen.\nThere was a morgue.\n\nThe shed you are looking at went up in eighteen fifty-nine. Inside, the people being sold\nstood on tables three feet high and ten feet long. The tables were set lengthwise, so that\nbuyers could walk along beside them and look.\n\nSomeone thought carefully about what the buyers needed to see.\n\nSales were held here for only a few years, until the Civil War brought slavery to an end.\nHistorians estimate that nearly half of all the Africans brought to America in slavery\narrived through Charleston.\n\nIn nineteen thirty-eight a woman named Miriam Wilson bought this building and made it a\nmuseum of African American history. A room built for buyers became a room for remembering\nthe people who were sold.\n",
+    "script": "Look at the front of number six Chalmers Street. A high arch. Eight-sided pillars. A large\niron gate.\n\nIt is a handsome front, for what happened behind it.\n\nThis is the only building known to survive in South Carolina that was used as a slave\nauction gallery. For a long time, Charleston customarily sold enslaved men, women and children on the north side of the Exchange building. In eighteen fifty-six the city banned\nthose public sales.\n\nThe trade did not stop. It moved into sales rooms, yards and marts along Chalmers, State and Queen streets.\n\nThis was one of them, known as Ryan's Mart. Behind the front stood a four-storey building with a barracoon, a jail where people were held until they were sold. There was a kitchen.\nThere was a morgue.\n\nThe shed you are looking at went up in eighteen fifty-nine. Inside, the people being sold\nstood on tables three feet high and ten feet long. The tables were set lengthwise, so that\nbuyers could walk along beside them and look.\n\nSomeone thought carefully about what the buyers needed to see.\n\nSales were held here for only a few years, until the Civil War brought slavery to an end.\nHistorians estimate that nearly half of all the Africans brought to America in slavery\narrived through Charleston.\n\nIn nineteen thirty-eight a woman named Miriam Wilson bought this building and made it a\nmuseum of African American history. A room built for buyers became a room for remembering\nthe people who were sold.\n",
     "teaser": "A high arch, eight-sided pillars and an iron gate. A handsome front, for what happened behind it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-tables-in-the-shed/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 104.3,
+        "audioBytes": 1669372
+      }
+    ],
     "pronunciations": [
       {
         "written": "barracoon",
@@ -4196,14 +4489,50 @@ export const LIBRARY: readonly Echo[] = [
       "african-american-history",
       "antebellum"
     ],
-    "remoteness": 0,
+    "remoteness": 0
+  },
+  {
+    "id": "charleston-the-window-marion-missed",
+    "title": "The Window Marion Missed",
+    "summary": "Charleston long pointed to this corner house as the one Francis Marion fell from. Even the old histories doubted the spot.",
+    "point": {
+      "at": {
+        "lat": 32.77436,
+        "lng": -79.93318
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Colonel John Stuart House, 106 Tradd Street at Orange Street, Charleston, South Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the big house on this corner, where Tradd Street meets Orange. For a long time, Charleston pointed to it as the house Francis Marion fell from. Which house it really was is a legend, and nobody can prove it.\n\nThe fall itself is in the histories. As a British army closed in on the town for the siege, Marion was at a dinner party. The custom then, one history says, was for the host to turn the key on his guests until they had done due honour to his Madeira and port.\n\nMarion was a small, spare man of sober habits, and he did not want to stay. So he tried to let himself down from a window. He misjudged the distance. One account says he broke his leg. Another says he badly dislocated his ankle.\n\nEither way, he was sent out of town to his home in St. John's to mend. So when Charles Town surrendered, he was not in it. He was one of three Continental officers who were not handed over. Tarleton would later call him the Swamp Fox.\n\nThe historian who told the story in nineteen-oh-six added a doubt. Marion's fellow general, William Moultrie, remembered it as the house next to one on Friend Street, at the other end of this block.\n\nSo this might not be the window. But somewhere along this block, a man climbed out of a dinner party and fell into history.\n",
+    "teaser": "A locked door, a dinner party, and a window.",
+    "certaintyNote": "A long-told tradition about which house Francis Marion fell from. The fall itself is in the histories; which window is legend, and the 1906 account itself doubts it. The script says so aloud.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-tables-in-the-shed",
-        "durationS": 104
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/charleston-the-window-marion-missed/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 81.9,
+        "audioBytes": 1311181
       }
-    ]
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "revolutionary-war",
+      "francis-marion"
+    ],
+    "remoteness": 0
   },
   {
     "id": "charleston-the-yard-named-for-a-water-tank",
@@ -4219,7 +4548,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 60,
+    "durationS": 57,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4227,22 +4556,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand under the oaks and look toward the building with the columns at the end of the green. That is the college's main building, and it has a person's name. Randolph Hall. The old library on the green has a person's name too. Towell.\n\nThe green itself is called the Cistern.\n\nIn the nineteenth century, the college built an oval cistern here to hold its water supply. The name stuck to the whole yard, oaks and all.\n\nThe college is old. It was founded in seventeen seventy, and its founders included three signers of the Declaration of Independence. Its first classes met in former Revolutionary War barracks. The main building went up in eighteen twenty nine. The columns came twenty five years later.\n\nIt is the oldest municipal college in the United States, and a National Historic Landmark.\n\nAnd the heart of it is named after a water tank.\n",
+    "script": "Stand under the oaks and look toward the building with the columns at the end of the green. That is the college's main building, and it has a person's name. Randolph Hall. The old library on the green has a person's name too. Towell.\n\nThe green itself is called the Cistern.\n\nIn the nineteenth century, an oval cistern was built here to hold the campus water supply. The name stuck to the whole yard, oaks and all.\n\nThe college is old. It was founded in seventeen seventy, and its founders included three signers of the Declaration of Independence. Its first classes met in former Revolutionary War barracks. The main building went up in eighteen twenty nine. The columns came twenty five years later.\n\nIt is the oldest municipal college in the United States, and a National Historic Landmark.\n\nAnd the heart of it is named after a water tank.\n",
     "teaser": "Randolph Hall, Towell Library, and the Cistern.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-the-yard-named-for-a-water-tank/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 57.2,
+        "audioBytes": 915791
+      }
+    ],
     "tags": [
       "charleston",
       "charleston-core",
       "college-of-charleston",
       "architecture"
     ],
-    "remoteness": 0.27,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-the-yard-named-for-a-water-tank",
-        "durationS": 60
-      }
-    ]
+    "remoteness": 0.09
   },
   {
     "id": "charleston-what-the-survey-wrote-down",
@@ -4258,7 +4588,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 72,
+    "durationS": 66,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4266,8 +4596,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the long plain wing that runs back from the house along Elizabeth Street. Up at the second floor there are six blank panels with pointed tops. Windows that were never windows.\n\nThis is the back of a planter's town house. Governor William Aiken lived here. What makes the place rare is not the front. It is everything behind it.\n\nWhen federal surveyors came in the late nineteen fifties and early sixties, they found the working yard still standing. A stable with six stalls. A carriage room. A harness room. A hay loft. And in the garden, two small brick cow houses. One was nearly gone. The other had an earth floor and room for two animals.\n\nThey measured the floorboards. They noted a wrought iron lock on one door, stamped with its maker's name.\n\nUpstairs at the far end of the wing were two small rooms with fireplaces. The surveyors wrote that they appear to have been used for living purposes.\n\nThey wrote down the hinges and the locks. They did not write down who lived in those rooms.\n",
+    "script": "Look at the long plain wing that runs back from the house along Elizabeth Street. Up at the second floor there are six blank panels with pointed tops. Windows that were never windows.\n\nThis is the back of a planter's town house. Governor William Aiken lived here. What makes the place rare is not the front. It is everything behind it.\n\nWhen federal surveyors came in the late nineteen fifties and early sixties, they found the working yard still standing. A stable with six stalls. A carriage room. A harness room. A hay loft. And in the garden, two small brick cow houses. One was nearly gone. The other had an earth floor and room for two animals.\n\nThey measured the floorboards. They noted a wrought iron lock on one door, stamped with its maker's name.\n\nUpstairs, at the end nearest the house, were two rooms with fireplaces. The surveyors wrote that they appear to have been used for living purposes.\n\nThey wrote down the hinges and the locks. They did not write down who lived in those rooms.\n",
     "teaser": "Six windows that were never windows.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-what-the-survey-wrote-down/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 66.4,
+        "audioBytes": 1062913
+      }
+    ],
     "pronunciations": [
       {
         "written": "Aiken",
@@ -4280,14 +4618,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "town-houses"
     ],
-    "remoteness": 0.63,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-what-the-survey-wrote-down",
-        "durationS": 72
-      }
-    ]
+    "remoteness": 0.43
   },
   {
     "id": "charleston-where-the-tide-came-in",
@@ -4303,7 +4634,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 93,
+    "durationS": 88,
     "minAge": 12,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4311,8 +4642,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Somewhere in this garden is a small stone with a pirate's name on it. Stede Bonnet. It\nwas put up in nineteen forty-three, and it is easy to walk straight past.\n\nBonnet was not the usual kind of pirate. The old histories describe a gentleman. Educated,\nwell off, a former army major. Nobody could say why he took to the sea.\n\nIn the autumn of seventeen eighteen, ships from Charles Town caught him and brought him\nback in irons. He escaped once, in a woman's dress, and was hunted down in the sandhills\nof Sullivan's Island.\n\nThe record of the trials was printed the following year. Most of his crew were hanged in\nNovember. Bonnet followed on the tenth of December, executed, it says, at the White Point\nnear Charles Town.\n\nThat is here.\n\nThere was no garden then. The point took its name from the heaps of white oyster shell\nalong the shore. A Charleston historian, writing in nineteen-oh-six, recorded where the\npirates went afterwards. They were buried on the White Point shoal, just above the\nlow-water mark. Out on the mud, at the edge of the tide.\n\nThe city later filled the shoal in. This garden was laid out in eighteen thirty-seven, on\nmade ground, and the oaks you are standing under grew up on top of it.\n\nThey were buried where the tide came in. The city moved the tide.\n",
+    "script": "Somewhere in this garden is a small stone with a pirate's name on it. Stede Bonnet. It\nwas put up in nineteen forty-three, and it is easy to walk straight past.\n\nBonnet was not the usual kind of pirate. The old histories describe a gentleman by birth and education, of fair estate, a former army major. There seemed no reason why he took to piracy.\n\nIn the autumn of seventeen eighteen, ships from Charles Town caught him and brought him\nback in irons. He escaped once, in a woman's dress, and was hunted down in the sandhills\nof Sullivan's Island.\n\nThe record of the trials was printed the following year. Twenty-two of his crew were hanged in November. Bonnet followed on the tenth of December, executed, it says, at the White Point\nnear Charles Town.\n\nThat is here.\n\nThere was no garden then. The point took its name from the oyster shells heaped along the shore. A Charleston historian, writing in nineteen-oh-six, recorded where the\npirates went afterwards. They were buried on the White Point shoal, just above the\nlow-water mark. Out on the mud, at the edge of the tide.\n\nThe city later filled the shoal in. This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on top of it.\n\nThey were buried where the tide came in. The city moved the tide.\n",
     "teaser": "Somewhere in this garden is a small stone with a pirate's name on it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-where-the-tide-came-in/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 87.5,
+        "audioBytes": 1401878
+      }
+    ],
     "pronunciations": [
       {
         "written": "Stede Bonnet",
@@ -4327,14 +4666,7 @@ export const LIBRARY: readonly Echo[] = [
       "pirates",
       "colonial"
     ],
-    "remoteness": 0.27,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-where-the-tide-came-in",
-        "durationS": 93
-      }
-    ]
+    "remoteness": 0.12
   },
   {
     "id": "charleston-whose-arms-on-the-roof",
@@ -4350,7 +4682,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 78,
+    "durationS": 77,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -4358,8 +4690,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Turn your back on the harbour and look across the street at number twenty-one. A big,\nthree-storey house with deep piazzas down the south side. Now look at the very top of the\nfront, at the low wall that hides the roof. There is a coat of arms up there.\n\nWhen the federal building survey wrote this house up, it called that an unusual feature.\nAs far as anyone knew, it was the only house in the city with one.\n\nThe arms are not the builder's.\n\nThe house was standing by eighteen twenty-nine. It was built by Charles Edmondston, and\nit looks straight out over the harbour.\n\nIn eighteen thirty-eight it was sold. Not by Edmondston, but by the assignees handling\nhis firm's affairs. The price was fifteen thousand five hundred dollars.\n\nThe buyer was Charles Alston. He redecorated the whole house in the Greek Revival style,\nadded a third tier to the piazzas, and put his family's arms on the parapet, on the\nfront that faces the water.\n\nThe survey ended up filing the house under three names. Edmondston, Alston, and a later\nfamily's. Only one of them is written on the roof.\n",
+    "script": "Turn your back on the harbour and look across the street at number twenty-one. A big,\nthree-storey house with deep piazzas down the south side. Now look at the very top of the\nfront, at the low wall that hides the roof. There is a coat of arms up there.\n\nWhen the federal building survey wrote this house up, it called that an unusual feature.\nAs far as anyone knew, it was the only house in the city with one.\n\nThe arms are not the builder's.\n\nThe house was standing by eighteen twenty-nine. It was built by Charles Edmondston, and\nit looks straight out over the harbour.\n\nIn eighteen thirty-eight it was sold. Not by Edmondston, but by the assignees handling\nhis firm's affairs. The price was fifteen thousand five hundred dollars.\n\nThe buyer was Charles Alston. He redecorated the whole house in the Greek Revival style,\nadded a third tier to the piazzas, and put his family's arms on the parapet, on the\nfront that faces the water.\n\nThe survey ended up filing the house under three names. Edmondston, Alston, and Middleton-Smith. Only one of them is written on the roof.\n",
     "teaser": "Turn your back on the harbour and look at the roofline of number twenty-one.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/charleston-whose-arms-on-the-roof/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 76.5,
+        "audioBytes": 1224663
+      }
+    ],
     "pronunciations": [
       {
         "written": "Edmondston",
@@ -4377,14 +4717,7 @@ export const LIBRARY: readonly Echo[] = [
       "battery",
       "houses"
     ],
-    "remoteness": 0.21,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/charleston-whose-arms-on-the-roof",
-        "durationS": 78
-      }
-    ]
+    "remoteness": 0.13
   },
   {
     "id": "charlotte-a-city-of-tents",
@@ -5314,7 +5647,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "city-hall-declaration",
     "title": "What the army did after they heard it",
-    "summary": "Washington had the Declaration read to his troops here. They did not stay to discuss it.",
+    "summary": "Washington had the Declaration read to his troops here. That night a crowd went down Broadway and pulled down the king.",
     "point": {
       "at": {
         "lat": 40.7127,
@@ -5325,7 +5658,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 95,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.93,
     "visibility": "at-hand",
@@ -5333,22 +5666,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This was not a park. It was the Common, the rough field outside town where you put the\nthings nobody wanted near them. A poorhouse. A prison. A gallows.\n\nOn the ninth of July 1776, George Washington had his army formed up on this ground, in\nsquares, and had an officer read out a document that had arrived from Philadelphia five\ndays earlier.\n\nThere is no record of the soldiers being told to do anything afterwards.\n\nWhat they did was walk down Broadway, about a mile, to the little green at the bottom of\nthe island, and pull a two-ton gilded statue of the king off its plinth.\n\nWashington was not pleased. He put out an order the next morning calling it disorderly,\nand asking that in future such matters be left to the proper authorities.\n\nThe war he had just read them into lasted another seven years.\n",
+    "script": "This was not a park. It was the Commons, then the northernmost edge of the city.\n\nOn the evening of the ninth of July 1776, soldiers of George Washington's army assembled on this ground, and heard read out a document that Congress had adopted in Philadelphia five days earlier. When the reading came to an end, the soldiers erupted into cheers.\n\nWhat happened next was not in the orders. A rowdy crowd of soldiers and civilians marched from here down Broadway to the little green at the bottom of the island, and pulled a statue of the king off its plinth.\n\nWashington was not pleased. In his general orders the next day he wrote that it had so much the appearance of riot and want of order in the army that he disapproved the manner.\n\nBritish troops would not leave this city for another seven years.\n",
     "teaser": "This was not a park.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/city-hall-declaration/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51.6,
+        "audioBytes": 826766
+      }
+    ],
     "tags": [
       "new-york",
       "revolution",
       "washington"
     ],
-    "remoteness": 0.26,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/city-hall-declaration",
-        "durationS": 95
-      }
-    ]
+    "remoteness": 0.26
   },
   {
     "id": "cleveland-no-more-protection",
@@ -5484,7 +5818,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "craggy-gardens-balds",
     "title": "Nobody is sure why the tops are bare",
-    "summary": "The southern Appalachian balds are treeless well below the tree line, and the reason is still argued over.",
+    "summary": "The bare summits around Craggy Gardens are balds, and nobody is sure how they formed.",
     "point": {
       "at": {
         "lat": 35.7011,
@@ -5495,32 +5829,33 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "land",
     "format": "short",
-    "durationS": 90,
+    "durationS": 52,
     "minAge": 0,
     "quality": 0.85,
     "visibility": "landmark-visible",
-    "certainty": "contested",
+    "certainty": "documented",
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the tops of the ridges around you. The trees stop, and then there is grass.\n\nThat is odd. These summits are nowhere near high enough to be above the tree line.\nThere are forests on mountains twice this height. Something else is keeping them bare.\n\nThey are called balds, and after a century of argument there is still no agreed\nexplanation. Cattle grazing is the obvious one, except some were bare before the cattle.\nFire. Ice-age climate that never quite reverted. Grazing by animals that are extinct.\n\nWhat is agreed is that they are closing. Without something to keep them open, the forest\ncomes back, and it has been coming back for decades.\n\nSo the mystery is solving itself, in the least useful way.\n",
+    "script": "Look at the tops of the ridges around you. The trees stop, and then there are shrubs and grass.\n\nThey are called balds, and the Park Service's own history of this road says plainly that the origin of the balds is unclear.\n\nOne idea is natural: fires started by lightning. Another is human: that people cleared them to graze livestock in the summer. Grazing was widespread in the Great Craggies until the nineteen twenties, when it was stopped to protect the water supply for Asheville.\n\nWhat is clear is that a bald does not have to stay bald. Further down the Parkway, Tennessee Bald was largely bare when the road was being planned in the nineteen thirties. Today it is covered in spruce and fir.\n\nSo the mystery might be solving itself, in the least useful way.\n",
     "teaser": "Look at the tops of the ridges. Something is missing.",
     "certaintyNote": "Grazing, fire, ice-age climate and megafauna browsing have all been proposed. No single explanation is accepted, and the script says so rather than picking one.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/craggy-gardens-balds/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52,
+        "audioBytes": 832617
+      }
+    ],
     "tags": [
       "blue-ridge",
       "north-carolina",
       "appalachians",
       "ecology"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/craggy-gardens-balds",
-        "durationS": 90
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "dakota-three-minutes",
@@ -7148,7 +7483,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "federal-hall-two-firsts",
     "title": "Two American firsts happened on this corner",
-    "summary": "A free press was won here in 1735, and the first president sworn in on the balcony in 1789.",
+    "summary": "A free press was argued for here in 1735, and the first president sworn in here in 1789.",
     "point": {
       "at": {
         "lat": 40.70733,
@@ -7159,7 +7494,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 105,
+    "durationS": 70,
     "minAge": 0,
     "quality": 0.9,
     "visibility": "at-hand",
@@ -7167,9 +7502,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand facing the columns, and know first that this is not the building.\n\nThe one that mattered was New York's City Hall, and it stood on this exact spot. Two\nthings happened in it that the country is still living inside.\n\nIn 1735 a printer named John Peter Zenger was tried here for libel. He had published\ncriticism of the royal governor in his newspaper, and under the law of the time truth was\nno defence. Printing it was the crime, whether or not it was accurate. The jury\nacquitted him anyway. It was not yet law, but it was the beginning of the argument that\nbecame a free press.\n\nFifty-four years later the same site, rebuilt as Federal Hall, was the first Capitol of\nthe United States. On the thirtieth of April 1789, George Washington stepped onto a\nbalcony above this street and took the oath as the first president, in front of a crowd\nfilling Wall Street below you.\n\nThat building was demolished in 1812. What you are looking at went up in 1842, as a\ncustoms house. The statue of Washington faces the street, roughly where the balcony was.\n",
+    "script": "Stand facing the columns, and know that this is not the building.\n\nThe one that mattered was New York's old City Hall, and it stood on this site. What happened in it, the country is still living inside.\n\nIn 1735 a printer named John Peter Zenger was tried here for libel. He had attacked the government of Governor William Cosby in his newspaper. The chief justice told the jury the law was very clear, and that the truth could not be admitted to justify a libel. Zenger's lawyer, Andrew Hamilton, argued that the truth is a defence. The jury came back with not guilty. The Park Service says the trial would lead the way for the First Amendment and a free press.\n\nFifty-four years later the same building, remodelled for the new federal government, was where the First Congress met. On the thirtieth of April 1789, George Washington was inaugurated here as the country's first president.\n\nThat building was demolished in 1812. What you are looking at opened in 1842, as a customs house.\n",
     "teaser": "The building is not the one it happened in. The corner is.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/federal-hall-two-firsts/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.7,
+        "audioBytes": 1115576
+      }
+    ],
     "pronunciations": [
       {
         "written": "John Peter Zenger",
@@ -7187,14 +7530,7 @@ export const LIBRARY: readonly Echo[] = [
       "press-freedom",
       "wall-street"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/federal-hall-two-firsts",
-        "durationS": 105
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "fort-fisher-it-amounted-to-nothing",
@@ -7745,7 +8081,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 85,
+    "durationS": 56,
     "minAge": 0,
     "quality": 0.85,
     "visibility": "at-hand",
@@ -7753,22 +8089,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "On the fourth of December 1783, in an upstairs room of this building, George Washington\nsaid goodbye to the officers he had fought beside for eight years.\n\nThe British had sailed out of the harbour nine days earlier. The war was over, and he was\ngoing home to Virginia, believing he was finished with public life.\n\nBy the accounts that survive, he could not finish what he meant to say. He raised a glass,\nmanaged a few sentences, and then asked each man to come and take his hand. Grown soldiers\nwept. He walked out without trusting himself to speak again.\n\nSix years later he was back in this city, taking an oath three streets from here.\n",
+    "script": "On the fourth of December 1783, in the Long Room upstairs in this building, George Washington said goodbye to the officers of the Continental Army.\n\nThe last British soldiers had left the city nine days earlier. The war was over, and he was going home to Mount Vernon.\n\nThe best known account comes from one of the officers there, Benjamin Tallmadge. He wrote that Washington's emotions were too strong to be concealed. He filled a glass of wine, said a few sentences, and then asked each man to come and take him by the hand. General Knox was nearest. Washington, in tears, could not speak, and the two men embraced in silence. Tallmadge said he had never before witnessed such a scene of sorrow and weeping.\n\nSix years later Washington was back in this city, on Wall Street, taking the oath as the first president.\n",
     "teaser": "Upstairs, in the Long Room.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/fraunces-tavern-farewell/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.8,
+        "audioBytes": 894057
+      }
+    ],
     "tags": [
       "new-york",
       "revolution",
       "washington"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/fraunces-tavern-farewell",
-        "durationS": 85
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "hatteras-moved-the-lighthouse",
@@ -7784,7 +8121,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 100,
+    "durationS": 64,
     "minAge": 0,
     "quality": 0.9,
     "visibility": "landmark-visible",
@@ -7792,23 +8129,24 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The hook of sand below is Cape Hatteras. The shoals run out from it for a dozen miles\nunderwater, two ocean currents meet directly over them, and the wrecks in that stretch of\nsea number in the hundreds. It has been called the Graveyard of the Atlantic since the\neighteen hundreds.\n\nWhich is why there has been a lighthouse down there since eighteen oh three, and the\ncurrent one since eighteen seventy: a hundred and ninety-eight feet of brick, the\ntallest in the country.\n\nIt was built fifteen hundred feet from the sea. By the nineteen nineties the sea was a\nhundred and twenty feet away.\n\nSo in nineteen ninety-nine they jacked up four thousand eight hundred tons of brick,\nput it on rails, and moved it. It took twenty-three days to travel twenty-nine hundred\nfeet.\n\nIt did not crack.\n",
+    "script": "The hook of sand below is Cape Hatteras. The Diamond Shoals run out from it as much as ten miles underwater, the Gulf Stream meets the Labrador Current over them, and together they earned this stretch of sea its name: the Graveyard of the Atlantic.\n\nWhich is why there has been a lighthouse down there since eighteen oh three, and the current one since eighteen seventy: brick, two hundred and eight feet from the foundation to the top of the lantern, the tallest brick light tower in the country.\n\nWhen it was finished it stood fifteen hundred feet from the sea. By nineteen seventy the sea was a hundred and twenty feet away.\n\nSo in nineteen ninety nine they jacked up four thousand eight hundred and thirty tons of brick, put it on rails, and pushed it two thousand nine hundred feet to the southwest. It set off on the seventeenth of June and was set down on its new foundation on the ninth of July.\n\nThat November the light came back on.\n",
     "teaser": "The cape below you is the reason that stretch of sea is called the Graveyard of the Atlantic.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/hatteras-moved-the-lighthouse/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 64.3,
+        "audioBytes": 1029476
+      }
+    ],
     "tags": [
       "north-carolina",
       "outer-banks",
       "lighthouse",
       "coastal-erosion"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/hatteras-moved-the-lighthouse",
-        "durationS": 100
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "jerome-a-ghost-town-on-purpose",
@@ -8296,7 +8634,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 95,
+    "durationS": 51,
     "minAge": 0,
     "quality": 0.95,
     "visibility": "landmark-visible",
@@ -8304,23 +8642,24 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look down and to your left. That thin line of sand between the sea and the sound is the\nOuter Banks.\n\nOn the seventeenth of December nineteen oh three, on the dunes down there, an aeroplane\nleft the ground under its own power with a person aboard and landed at a point higher than\nwhere it started. It was in the air for twelve seconds and it travelled a hundred and\ntwenty feet.\n\nNow look along the cabin you are sitting in.\n\nDepending on the aircraft, that entire first flight would have started and finished\nwithout leaving this fuselage. They flew three more times that day; the longest covered\neight hundred and fifty-two feet.\n\nSixty-six years after the fourth flight, people landed on the moon.\n",
+    "script": "Look down and to your left. That thin line of sand between the sea and the sound is the Outer Banks.\n\nOn the seventeenth of December nineteen oh three, at the Kill Devil Hills down there, Orville Wright took off in a powered aeroplane and kept it in the air until it hit the sand about a hundred and twenty feet from the rail.\n\nNow look along the cabin you are sitting in.\n\nDepending on the aircraft, that entire first flight would have started and finished without leaving this fuselage. They flew three more times that day; the last and longest, with Wilbur at the controls, covered eight hundred and fifty two feet in fifty nine seconds.\n\nThen a gust of wind caught the machine, rolled it over, and damaged it beyond easy repair. It never flew again.\n",
     "teaser": "Look down at the sandbar on your left. Then look along the cabin.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/kitty-hawk-shorter-than-this-plane/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 50.5,
+        "audioBytes": 809630
+      }
+    ],
     "tags": [
       "north-carolina",
       "outer-banks",
       "aviation",
       "wright-brothers"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/kitty-hawk-shorter-than-this-plane",
-        "durationS": 95
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "kure-beach-five-shells-in-the-dark",
@@ -8372,7 +8711,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "linn-cove-viaduct-last-piece",
     "title": "The last seven miles took fifty-two years",
-    "summary": "The Parkway's final section opened in 1987, built from above so as not to touch the mountain.",
+    "summary": "The Blue Ridge Parkway was begun in 1935. Its last link, around Grandfather Mountain, opened in 1987.",
     "point": {
       "at": {
         "lat": 36.0975,
@@ -8383,7 +8722,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 100,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.92,
     "visibility": "landmark-visible",
@@ -8391,28 +8730,29 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The road ahead curls around the side of the mountain on concrete legs.\n\nConstruction on the Blue Ridge Parkway started in nineteen thirty-five. This stretch,\nabout seven miles of it, did not open until nineteen eighty-seven.\n\nThe hold-up was the mountain. Grandfather Mountain is old, steep and unusually rich in\nrare plants, and the ordinary way to put a road across something like that is to cut a\nshelf into it and push the spoil over the side. Nobody was willing to do that here.\n\nSo they built it from the top down instead. Each segment of the viaduct was cast off-site,\ncarried out along the piece already finished, and lowered into place. Almost no heavy\nmachinery ever touched the ground underneath it.\n\nThe Parkway is four hundred and sixty-nine miles long. The last seven took a third of the\ntime.\n",
+    "script": "The road ahead curls around the side of the mountain on concrete legs.\n\nConstruction on the Blue Ridge Parkway started in September nineteen thirty five. This stretch, the last link of about seven and a half miles, did not open until nineteen eighty seven.\n\nThe hold-up was the mountain. Grandfather Mountain supports dozens of rare and endangered species, and the man who owned much of it, Hugh Morton, fought the Park Service's plans for years, warning that a deep cut through the mountain would destroy its beauty and its fragile ecology. His opposition held the road up for nearly twenty years.\n\nSo they built this piece from the top down instead. The viaduct is made of one hundred and fifty three precast concrete segments. Each one was carried out along the deck already finished and lowered into place by crane. The only construction road ran from the south end to the second pier. From there on, the bridge was built from itself.\n\nThe Parkway is four hundred and sixty nine miles long. It was finished here, exactly fifty two years after the first dirt was turned.\n",
     "teaser": "The road you are on was the last part to be finished, and it took the longest.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/linn-cove-viaduct-last-piece/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.8,
+        "audioBytes": 1197914
+      }
+    ],
     "tags": [
       "blue-ridge",
       "north-carolina",
       "engineering",
       "grandfather-mountain"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/linn-cove-viaduct-last-piece",
-        "durationS": 100
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "linville-gorge-too-steep",
     "title": "It survived by being difficult",
-    "summary": "Linville Gorge was never logged, because nobody could work out how to get the timber out.",
+    "summary": "Most of these mountains were logged. Linville Gorge, the deepest canyon in the East, was largely left untouched.",
     "point": {
       "at": {
         "lat": 35.9606,
@@ -8423,7 +8763,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "land",
     "format": "short",
-    "durationS": 90,
+    "durationS": 49,
     "minAge": 0,
     "quality": 0.86,
     "visibility": "landmark-visible",
@@ -8431,23 +8771,24 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Almost everything you have driven through today grew back. The southern Appalachians were\nlogged hard between about eighteen eighty and nineteen thirty, and most of what looks\nancient out there is a century old at most.\n\nThe gorge on your right is the exception.\n\nIt is around two thousand feet deep with walls to match, and the timber companies looked\nat it and could not make the arithmetic work. There was no way to get logs out that cost\nless than the logs were worth.\n\nSo it was left. Not protected, not fought over. Just skipped.\n\nIt is one of the few places in the eastern United States where you can look at a forest\nthat nobody ever got around to cutting down.\n",
+    "script": "Almost everything you have driven through today has a past. By the early nineteen thirties much of the land in these mountains had been stripped by logging and poor farming, and most of what looks ancient out there grew back afterwards.\n\nThe gorge on your right is different.\n\nLinville Gorge is fifteen hundred feet deep, and when the Park Service wrote up this stretch of road, it called it the deepest canyon in the eastern United States. The lumber companies cut the country around it. A narrow gauge railway carried the timber out to a mill. But the gorge itself, the record says, was largely untouched.\n\nIn nineteen fifty one it was set aside as the first designated wilderness area in the East.\n\nIt is one of the few places out here where you can look at a forest that was never cut down.\n",
     "teaser": "Almost every forest you have driven through today is second growth. One is not.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/linville-gorge-too-steep/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 49,
+        "audioBytes": 784970
+      }
+    ],
     "tags": [
       "blue-ridge",
       "north-carolina",
       "wilderness",
       "forest"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/linville-gorge-too-steep",
-        "durationS": 90
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "memphis-before-breakfast",
@@ -8837,8 +9178,8 @@ export const LIBRARY: readonly Echo[] = [
   },
   {
     "id": "mount-mitchell-buried-on-top",
-    "title": "He is buried on the summit he argued about",
-    "summary": "Elisha Mitchell died proving this was the highest peak in the east. He was right.",
+    "title": "He died settling the height of this mountain",
+    "summary": "Elisha Mitchell died in 1857 trying to settle whether this was the highest peak in the east. It was.",
     "point": {
       "at": {
         "lat": 35.7654,
@@ -8849,7 +9190,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 95,
+    "durationS": 68,
     "minAge": 0,
     "quality": 0.88,
     "visibility": "landmark-visible",
@@ -8857,23 +9198,24 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Off to the left is the highest ground anywhere east of the Mississippi. Six thousand six\nhundred and eighty-four feet.\n\nIt is named after a professor called Elisha Mitchell, who measured it in the eighteen\nthirties and said it was the tallest. A former student of his said it was not, and said so\npublicly, at length.\n\nIn eighteen fifty-seven Mitchell went back up to take the measurements again and settle\nit. He did not come down. They found him days later in a pool below a waterfall.\n\nHis figures were correct, and the argument ended the way arguments do when one side stops\nbeing available.\n\nHe is buried on the summit.\n",
+    "script": "Off to the left is the highest ground anywhere east of the Mississippi. Six thousand six hundred and eighty four feet.\n\nIt is named after Elisha Mitchell, a minister and a professor at the University of North Carolina. In eighteen thirty five he went up into the Black Mountains and measured one of the peaks at six thousand four hundred and seventy six feet, higher than Mount Washington in New Hampshire, which had been taken for the highest point in the range.\n\nNot everybody accepted it. It was suggested that he had been mistaken, and had never measured the highest peak at all.\n\nIn June eighteen fifty seven he went back up, alone, partly to settle the question. He did not come down. Days later his body was found in deep water at the foot of a cliff about forty feet high. His watch had stopped.\n\nLater surveys confirmed that this was indeed the highest point east of the Mississippi. The mountain that had been called Black Dome now carries his name.\n",
     "teaser": "The highest ground east of the Mississippi is off to your left.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/mount-mitchell-buried-on-top/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 67.5,
+        "audioBytes": 1081303
+      }
+    ],
     "tags": [
       "blue-ridge",
       "north-carolina",
       "appalachians",
       "mountains"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/mount-mitchell-buried-on-top",
-        "durationS": 95
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "nashville-a-hall-built-by-song",
@@ -9401,7 +9743,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 78,
+    "durationS": 81,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9409,9 +9751,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look across Basin Street, away from the French Quarter.\n\nFor twenty years, the blocks over there were a legal red-light district. It operated openly from eighteen ninety-seven.\n\nThe newspapers called it Storyville, and explained the name. The district had been set up by an ordinance, and the man behind the ordinance was named Story.\n\nMusic was a sideline here, but a real one. Bands worked the dance halls and cabarets. Pete Lala's. The hundred and one Ranch. The Tuxedo Dance Hall. The Big Twenty-Five. A young pianist named Jelly Roll Morton started out playing in this neighborhood.\n\nJazz was not born here, whatever the legend says. The National Park Service is firm about that. But Storyville put the new music in front of people who might never have heard it otherwise.\n\nIt ended at midnight on the twelfth of November, nineteen seventeen. Everything closed at the stroke of twelve, at the request of the Navy Department. One wire report said more than a third of the district's two thousand women had already left the city.\n\nIn the nineteen-forties nearly every building over there was torn down for public housing.\n\nThe name outlived every one of them.\n",
-    "teaser": "The name outlived every building.",
+    "script": "Look across Basin Street, away from the French Quarter.\n\nFor twenty years, the blocks over there were a legal red-light district. It operated openly from eighteen ninety-seven.\n\nThe newspapers called it Storyville, and explained the name. The district had been set up by an ordinance, and the man behind the ordinance was named Story.\n\nMusic was a sideline here, but a real one. Bands worked the dance halls and cabarets. Pete Lala's. The hundred and one Ranch. The Tuxedo Dance Hall. The Big Twenty-Five. A young pianist named Jelly Roll Morton started out playing in this neighborhood.\n\nJazz was not born here, whatever the legend says. The National Park Service is firm about that. But Storyville put the new music in front of people who might never have heard it otherwise.\n\nIt ended at midnight on the twelfth of November, nineteen seventeen. Everything closed at the stroke of twelve, at the request of the Navy Department. One wire report said more than a third of the district's two thousand women had already left the city.\n\nIn the nineteen-forties nearly every building over there was torn down for public housing.\n\nThe name has outlasted almost all of them.\n",
+    "teaser": "The name outlasted almost every building.",
     "detail": "The National Park Service says only six original Storyville structures and remnants\nsurvive, among them Frank Early's Saloon. The Tango Belt, another early jazz district,\nlay just across Basin and North Rampart streets in the French Quarter.\n",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-a-district-with-his-name/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 80.9,
+        "audioBytes": 1295298
+      }
+    ],
     "tags": [
       "new-orleans",
       "new-orleans-core",
@@ -9420,14 +9770,7 @@ export const LIBRARY: readonly Echo[] = [
       "jazz",
       "music"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-a-district-with-his-name",
-        "durationS": 78
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-a-tomb-used-again",
@@ -9443,7 +9786,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 78,
+    "durationS": 74,
     "minAge": 10,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9451,9 +9794,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the wall around this cemetery, and how thick it is.\n\nIn the old St. Louis cemeteries, the wall was never just a fence. It was built as tombs, stacked in tiers. Visitors a century ago were told these vaults were called ovens, after the oldest tombs here, which were brick and shaped like ovens.\n\nWhy build up instead of down? A guidebook of nineteen hundred and two put it plainly. The soil is low and wet. Dig very deep, and you strike water.\n\nBut that is only half the answer. The other half is what happens inside.\n\nA family tomb usually held two vaults, with a space for bones beneath. When a vault was needed again, the law first made the family wait. A year or two, the guidebooks said. Then the slab came off, the old wooden coffin was broken up and burned, and what remained was moved down into the space below. The vault was ready again.\n\nIn these cemeteries, one guide wrote, generation after generation mingle their dust in the same crypt.\n\nEach tomb behind that wall is not one person. It is a family, folded down into one small house.\n",
+    "script": "Look at the wall around this cemetery, and how thick it is.\n\nIn the old St. Louis cemeteries, the wall was never just a fence. It was built as tombs, stacked in tiers. Visitors a century ago were told these vaults were called ovens, after the oldest tombs here, which were brick and shaped like ovens.\n\nWhy build up instead of down? A guidebook of nineteen hundred and two put it plainly. The soil is low and wet. Dig very deep, and you strike water.\n\nBut that is not the whole answer. The rest is what happens inside.\n\nA family tomb usually held two vaults, with a space for bones beneath. When a vault was needed again, the law first made the family wait. A year or two, the guidebooks said. Then the slab came off, the old wooden coffin was broken up and burned, and what remained was moved down into the space below. The vault was ready again.\n\nIn these cemeteries, one guide wrote, generation after generation mingle their dust in the same crypt.\n\nEach tomb behind that wall is not one person. It is a family, folded down into one small house.\n",
     "teaser": "The wall is not just a wall.",
-    "detail": "The 1904 Picayune guide says St. Louis No. 1 was by then closed to new tombs and opened\nonly to heirs. Not every guide agreed that the ground was too wet everywhere: an 1845\nguide notes that at the Firemen's cemetery out on the Metairie ridge, graves could be\nsunk six feet without reaching water.\n",
+    "detail": "Not every guide agreed that the ground was too wet everywhere: an 1845\nguide notes that at the Firemen's cemetery out on the Metairie ridge, graves could be\nsunk six feet without reaching water.\n",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-a-tomb-used-again/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.4,
+        "audioBytes": 1192062
+      }
+    ],
     "tags": [
       "new-orleans",
       "new-orleans-core",
@@ -9461,14 +9812,7 @@ export const LIBRARY: readonly Echo[] = [
       "cemetery",
       "st-louis-cemetery"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-a-tomb-used-again",
-        "durationS": 78
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-an-american-house",
@@ -9484,7 +9828,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 96,
+    "durationS": 91,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9492,8 +9836,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look across at the front of this house. Five openings wide, evenly spaced, in pale yellow brick. Then look at the front door, set back into the wall, with slender columns on either side and a half-oval fan of glass above it.\n\nNow look at its neighbours.\n\nIn eighteen nineteen the architect Benjamin Henry Latrobe, who had worked on the Capitol in Washington, came to live in New Orleans. He was taken with the city's Creole character, and he could see what was coming. Merchants from the old United States, he wrote, had already begun to bring in the lopsided London house. In a few years, he predicted, this will be an American town.\n\nThis house is part of what he saw coming. It was built around eighteen thirty-one for Samuel Hermann, a wealthy merchant. The federal survey of it describes a plan from the northeastern United States, adapted to work as a New Orleans townhouse. The yellow brick, it has been said, came all the way from Philadelphia.\n\nLatrobe was half right. The American houses did come. But they had to fit the town the French had already laid out. Narrow, deep lots. Buildings right up to the street. Courtyards hidden behind. The Americans' favourite front yards hardly ever appeared in the Quarter. They kept the iron balconies too.\n\nLook at the door again. It is an American door.\n\nIt just had to stand where the street told it to.\n",
+    "script": "Look across at the front of this house. Five openings wide, evenly spaced, in pale yellow brick. Then look at the front door, set back into the wall, with slender columns on either side and a half-oval fan of glass above it.\n\nNow look at its neighbours.\n\nIn eighteen nineteen the architect Benjamin Henry Latrobe, who had worked on the Capitol in Washington, came to live in New Orleans. He was taken with the city's Creole character, and he could see what was coming. Merchants from the old United States, he wrote, had already begun to bring in the lopsided London house. In a few years, he predicted, this will be an American town.\n\nThis house is part of what he saw coming. It was built around eighteen thirty-one for Samuel Hermann, a wealthy merchant. The federal survey of it describes a plan from the northeastern United States, adapted to work as a New Orleans townhouse. The yellow brick, it has been said, came all the way from Philadelphia.\n\nLatrobe was half right. The American houses did come. But much of the Creole look survived, and the newcomers had to fit the tight blocks the French had laid out. Buildings crowding each other and the narrow streets. Courtyards hidden behind. Iron balconies over the sidewalk.\n\nLook at the door again. It is an American door.\n\nIt just had to stand where the street told it to.\n",
     "teaser": "Look at the front door across the street, set back into the wall under a fan of glass.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-an-american-house/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 90.8,
+        "audioBytes": 1454541
+      }
+    ],
     "pronunciations": [
       {
         "written": "Hermann-Grima",
@@ -9511,14 +9863,50 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "st-louis-street"
     ],
-    "remoteness": 0,
+    "remoteness": 0
+  },
+  {
+    "id": "new-orleans-ghosts-under-the-oaks",
+    "title": "Ghosts Under the Oaks",
+    "summary": "Under these oaks Creole gentlemen settled quarrels at sunrise. The old writers said the place must be crowded with ghosts.",
+    "point": {
+      "at": {
+        "lat": 29.9858,
+        "lng": -90.0929
+      },
+      "triggerRadiusKm": 0.12,
+      "place": "The Oaks, old dueling ground, City Park, New Orleans, Louisiana"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old live oaks around you, hung with moss.\n\nIn the early eighteen-hundreds this grove was the dueling ground of the Creole gentlemen of New Orleans. They met here in the early morning, with pistol, saber, even shotgun.\n\nA city guide of nineteen-oh-four listed what they fought about. A slight at a ball. A quarrel with a rival lover. Politics. The last opera. Whether a famous singer could reach a certain note. Legal points. Scientific questions. All of it, the guide said, came to a direct issue under these oaks.\n\nSo the oaks collected ghosts. What a troop of ghostly stories come up under the oaks, the guide wrote. Grace King, a few years earlier, put it another way. What a trooping of ghosts there would be under these old trees, she wrote, if everyone who had fought here could come back in spirit.\n\nTreat that as a legend. Nobody has shown that any duellist walks here. What is real is a line the guide found cut on old tombs in the St. Louis cemeteries. Died on the field of honor.\n\nStand under the branches in the early morning, and the story is easy to believe. That is all it ever needed.\n",
+    "teaser": "Every quarrel in old New Orleans, it was said, ended up under these trees.",
+    "certaintyNote": "The duels under the Oaks are documented in the 1904 and 1913 Picayune guides. The ghosts are a manner of speaking in Grace King (1895) and the 1904 guide, not a reported sighting, and the script says so aloud. The precise dueling tree is not located here.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-an-american-house",
-        "durationS": 96
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/new-orleans-ghosts-under-the-oaks/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 72.4,
+        "audioBytes": 1159461
       }
-    ]
+    ],
+    "tags": [
+      "new-orleans",
+      "city-park",
+      "duels",
+      "ghosts",
+      "legend"
+    ],
+    "remoteness": 1
   },
   {
     "id": "new-orleans-her-initials-in-the-iron",
@@ -9534,7 +9922,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 90,
+    "durationS": 80,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9542,8 +9930,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the long red brick building along this side of the square, at the cast iron railings on its balconies. Somewhere in the pattern, two letters are twisted together. An A and a P.\n\nThey belong to a woman who was supposed to be dead.\n\nMicaela Almonester was born in this city, the daughter of the rich Spaniard who paid for the cathedral. She married into a noble French family, the Pontalbas, and went to live in France.\n\nThe marriage went badly. There were lawsuits. In the end she won her independence from her husband and his family.\n\nThen, one October morning in eighteen thirty-four, at the family château, she was found on the floor of her rooms, shot several times. Her father-in-law, the old baron, was found dead in his armchair with a pistol in his hand.\n\nShe lived. She carried the bullets in her body for the rest of her life.\n\nTwelve years later she put a plan to the city. She would tear down her father's old buildings on both sides of this square, and put up something grander, if the council would play its part. The council backed out. She built them anyway. They were finished around eighteen fifty.\n\nThe A is for Almonester. The P is for Pontalba.\n\nShe kept both.\n",
+    "script": "Look up at the long red brick building along this side of the square, at the cast iron railings on its balconies. Somewhere in the pattern, two letters are twisted together. An A and a P.\n\nThey belong to a woman who was supposed to be dead.\n\nMicaela Almonester was born in this city, the daughter of the rich Spaniard who paid for the cathedral. She married into a noble French family, the Pontalbas, and went to live in France.\n\nThe marriage went badly. There were lawsuits. In the end she won her independence from her husband and his family.\n\nThen, one October morning in eighteen thirty-four, at the family château, she was found on the floor of her rooms, shot several times. Her father-in-law, the old baron, was found dead in his armchair with a pistol in his hand.\n\nShe lived. She carried the bullets in her body for the rest of her life.\n\nTwelve years later she put a plan to the city. She would tear down the old buildings on both sides of this square, and put up something grander, if the council would play its part. The council backed out. She built them anyway. They were finished around eighteen fifty.\n\nThe A is for Almonester. The P is for Pontalba.\n\nShe kept both.\n",
     "teaser": "Look for two letters twisted together in the iron balconies.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-her-initials-in-the-iron/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 79.6,
+        "audioBytes": 1275236
+      }
+    ],
     "pronunciations": [
       {
         "written": "Micaela",
@@ -9570,14 +9966,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "ironwork"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-her-initials-in-the-iron",
-        "durationS": 90
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-love-street",
@@ -9593,7 +9982,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 91,
+    "durationS": 87,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9601,10 +9990,18 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the street sign. It says Rampart.\n\nBack on the old town side of Esplanade, that name makes sense. The city's defenses ran along that line. But this stretch was laid out later, on a plantation, when its owner cut his land into streets and lots in the early eighteen-hundreds. He named this one himself.\n\nHe called it Rue d'Amour. Love Street.\n\nHis name was Bernard de Marigny, and he named the whole neighborhood like a poet. Poet Street. Good Children Street. Piety. Desire. And Craps.\n\nCraps is where the stories split. Grace King, writing about the old Creole families in nineteen twenty-one, said he named it after a game he was addicted to. A guidebook from nineteen hundred and four says the street got the name because boys played the game there. Neither one gives a source. Take your pick.\n\nMarigny meant to build a Creole city that would outshine the American one growing up across Canal Street. It never came. One story says a sale of the whole faubourg fell apart in a notary's office, because his wife did not come to sign.\n\nLater the city tidied up its map. Love Street became part of Rampart. Good Children became St. Claude. Moreau became Chartres.\n\nThe pretty names, King wrote, are all that survive of his scheme. Even some of those were taken off the signs.\n",
+    "script": "Look at the street sign. It says Rampart.\n\nBack on the old town side of Esplanade, that name makes sense. The city's defenses ran along that line. But this stretch was laid out many years after the city was founded, when the owner of a plantation here cut his land into streets and lots. He named this street himself.\n\nHe called it Rue d'Amour. Love Street.\n\nHis name was Bernard de Marigny, and he named the whole neighborhood like a poet. Poet Street. Good Children Street. Piety. Desire. And Craps.\n\nCraps is where the stories split. Grace King, writing about the old Creole families in nineteen twenty-one, said he named it after a game he was addicted to. A guidebook from nineteen hundred and four says the street got the name because boys played the game there. Neither gives a source. Take your pick.\n\nMarigny meant to build a Creole city that would outshine the American one. It never came. One story says a sale of the whole faubourg fell apart in a notary's office, because his wife did not come to sign.\n\nLater the city tidied up its map. Love Street became part of Rampart. Good Children became St. Claude. Moreau became Chartres.\n\nThe pretty names, King wrote, are all that survive of his scheme. Even some of those were taken off the signs.\n",
     "teaser": "This stretch of Rampart was called Love Street.",
-    "detail": "The 1913 Picayune guide dates the laying out of the Faubourg Marigny to 1805. The guides\ncredit the naming of Love Street to \"Mandeville de Marigny\"; Bernard de Marigny de\nMandeville is the same man. The 1904 guide notes that older residents still called this\nstretch Love Street after the city council made it part of Rampart.\n",
-    "certaintyNote": "The street names and their later renaming are documented in the 1900, 1904 and 1913 Picayune guides and Grace King's Creole Families of New Orleans (1921). Why one street was called Craps is disputed: King says Marigny named it for a game he was addicted to, the 1904 guide says boys playing the game there gave the street its name, and neither cites a source. The failed sale of the faubourg is King's retelling of an American narrator's account, and the script hedges it.",
+    "detail": "The 1900 and 1904 Picayune guides\ncredit the naming of Love Street to \"Mandeville de Marigny\"; Bernard de Marigny de\nMandeville is the same man. The 1904 guide notes that older residents still called this\nstretch Love Street after the city council made it part of Rampart.\n",
+    "certaintyNote": "The street names and their later renaming are documented in the 1900 and 1904 Picayune guides and Grace King's Creole Families of New Orleans (1921). Why one street was called Craps is disputed: King says Marigny named it for a game he was addicted to, the 1904 guide says boys playing the game there gave the street its name, and neither cites a source. The failed sale of the faubourg is King's retelling of an American narrator's account, and the script hedges it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-love-street/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 86.7,
+        "audioBytes": 1388503
+      }
+    ],
     "pronunciations": [
       {
         "written": "Marigny",
@@ -9630,14 +10027,7 @@ export const LIBRARY: readonly Echo[] = [
       "street-names",
       "creole"
     ],
-    "remoteness": 0.25,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-love-street",
-        "durationS": 91
-      }
-    ]
+    "remoteness": 0.25
   },
   {
     "id": "new-orleans-named-for-empty-ground",
@@ -9653,7 +10043,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 60,
+    "durationS": 63,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9664,6 +10054,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look down Esplanade Avenue, toward the river. The trees, the wide middle, the old houses on both sides.\n\nA guidebook of nineteen hundred and four said this avenue was to the Creoles what St. Charles Avenue was to the Americans. Their grand residence street.\n\nThe name is older than the houses, and it is a soldier's word.\n\nRight here, where Rampart now crosses Esplanade, the Spanish governor Carondelet put up a fort in seventeen ninety-six. Fort St. Ferdinand. It was part of a ring of defenses around the town.\n\nAn esplanade is the open, cleared ground that lies outside a line of fortifications like that. Flat, bare and empty. That is what this was.\n\nThe fort was taken down early in the eighteen-hundreds, and the town spread out across the cleared ground.\n\nSo the finest address in Creole New Orleans is named for the space that was meant to stay empty.\n",
     "teaser": "The best address in Creole New Orleans is a military word.",
     "detail": "The 1913 Picayune guide calls Esplanade the principal residence street of the French\nQuarter and says Fort St. Ferdinand was dismantled in the early part of the nineteenth\ncentury; the Rampart Street defenses did not wholly disappear until 1820.\n",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-named-for-empty-ground/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 63.3,
+        "audioBytes": 1014012
+      }
+    ],
     "pronunciations": [
       {
         "written": "Esplanade",
@@ -9681,14 +10079,7 @@ export const LIBRARY: readonly Echo[] = [
       "fortifications",
       "creole"
     ],
-    "remoteness": 0.25,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-named-for-empty-ground",
-        "durationS": 60
-      }
-    ]
+    "remoteness": 0.25
   },
   {
     "id": "new-orleans-no-funerals-at-the-cathedral",
@@ -9704,7 +10095,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 85,
+    "durationS": 79,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9715,6 +10106,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look at the front of this church. The plain stucco face, the open porch, the bell tower above.\n\nIt was built for one purpose. Funerals.\n\nIn the early eighteen-hundreds, Catholic funerals in New Orleans were held at the cathedral, in the middle of the old town. The city council came to fear that the custom was spreading disease, in a city where epidemics came back again and again.\n\nSo the council asked the church to build a chapel out here instead, at the back edge of town, close to the cemetery. The church bought this lot in eighteen twenty-five, for four hundred and twenty-five dollars. The chapel was finished in eighteen twenty-seven.\n\nThat same year the council made it law. A funeral at the cathedral would now cost a fifty dollar fine.\n\nSo for years, this was where the city's Catholic dead stopped on their way to the tomb.\n\nLater the chapel became a parish church. It was called the Italian church for a while, then served the city's Spanish speakers, which is how it came by the name it carries now. Our Lady of Guadalupe.\n\nThe building was enlarged, but its front was left as it was. It was made to be the last door a great many people came through.\n",
     "teaser": "A fifty dollar fine for a funeral.",
     "detail": "Sources differ on how long it served only the dead. The HABS report says the funeral\nordinance was struck down by the Louisiana Supreme Court in 1844, when the chapel became\nthe parish church of St. Anthony of Padua; the 1913 Picayune guide says it was in\nconstant use as a mortuary chapel until 1870. It was renamed Our Lady of Guadalupe in\n1918 and enlarged in 1952.\n",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-no-funerals-at-the-cathedral/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 79.1,
+        "audioBytes": 1267295
+      }
+    ],
     "pronunciations": [
       {
         "written": "Guadalupe",
@@ -9732,14 +10131,56 @@ export const LIBRARY: readonly Echo[] = [
       "church",
       "epidemics"
     ],
-    "remoteness": 0,
+    "remoteness": 0
+  },
+  {
+    "id": "new-orleans-st-johns-eve-on-the-bayou",
+    "title": "St. John's Eve on the Bayou",
+    "summary": "The old guides said that on St. John's Eve the Voudous gathered on this bayou to dance. Even the old writers disagreed on where.",
+    "point": {
+      "at": {
+        "lat": 29.98096,
+        "lng": -90.08876
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Magnolia Bridge, Bayou St. John, New Orleans, Louisiana"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along the water of Bayou St. John.\n\nThe old guidebooks said that on one night of the year this bayou had visitors. What follows is legend. The guides wrote it from rumor and old memory, and none of them names anyone who was there.\n\nThe night was St. John's Eve, in June, the great festival of the Voudous. Once the police kept too close a watch on Congo Square, a guide of nineteen-oh-four said, they came out here instead, to the banks of the bayou where the water met the swamp. They put up their altars, it said, and danced the Dance of the Serpent around a boiling pot.\n\nThe guide of nineteen hundred tells the same story but sends Marie Laveau and her followers to the shore of Lake Pontchartrain.\n\nHenry Castellanos, writing in eighteen ninety-five, said the yearly feast near the bayou, with reporters and the police invited, was only a device to fool the unwary. Her real meetings, he wrote, were held somewhere else, out on the lakeshore.\n\nDecades later, a wire story was still calling St. John's Eve the greatest of all days for voodoo.\n\nSo the legend keeps moving. The water stays where it is.\n",
+    "teaser": "One night a year, the old guides said, this water had visitors.",
+    "certaintyNote": "Told as tradition by the 1900 and 1904 Picayune guides, who disagree with each other and with Castellanos (1895) on where the St. John's Eve gatherings were held; no witness is named. The script says aloud it is legend, makes no supernatural claim, and names no living person.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-no-funerals-at-the-cathedral",
-        "durationS": 85
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/new-orleans-st-johns-eve-on-the-bayou/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 67.7,
+        "audioBytes": 1084229
       }
-    ]
+    ],
+    "pronunciations": [
+      {
+        "written": "Voudous",
+        "say": "VOO-dooz"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "bayou-st-john",
+      "voodoo",
+      "legend",
+      "marie-laveau"
+    ],
+    "remoteness": 1
   },
   {
     "id": "new-orleans-the-arrest-that-was-planned",
@@ -9763,9 +10204,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look along the railroad tracks.\n\nOn the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington, across the lake. He took a seat in the car for white passengers.\n\nUnder a Louisiana law two years old, that seat was not his. The law said railroads must keep separate cars by race, and under that law Plessy was Black. His own petition later told the court that no one could see it in him.\n\nThe conductor told him to move. He refused. He was arrested and taken to the parish jail.\n\nNone of it was an accident. A committee of citizens had organized to test the law in court, and Plessy volunteered. The railroad was in on the plan. The detective who arrested him had been hired ahead of time. The arrest is remembered here, by these tracks.\n\nThe case went all the way to the Supreme Court. In eighteen ninety-six it lost, seven votes to one. The ruling made separate but equal the law of the land, and it stood for almost sixty years.\n\nThe one dissenting justice wrote that the Constitution is color-blind.\n\nMore than a century later, a descendant of the judge who first ruled against Plessy and a member of the Plessy family came to this story together. They were photographed standing on the tracks where he was arrested.\n\nA Plessy and a Ferguson, side by side.\n",
+    "script": "Look along the railroad tracks.\n\nOn the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington. He took a seat in the car for white passengers.\n\nUnder a Louisiana law two years old, that seat was not his. The law said railroads must keep separate cars by race, and under that law Plessy was Black. His own petition later told the court that it could not be seen in him.\n\nThe conductor told him to move. He refused. He was arrested and taken to the parish jail.\n\nNone of it was an accident. A committee of citizens had organized to test the law in court, and Plessy volunteered. The railroad was in on the plan. The detective who arrested him had been hired ahead of time. The arrest is remembered here, by these tracks.\n\nThe case went all the way to the Supreme Court. In eighteen ninety-six it lost, seven votes to one. The ruling made separate but equal the law of the land, and it stood for almost sixty years.\n\nThe one dissenting justice wrote that the Constitution is color-blind.\n\nMore than a century later, a descendant of the judge who first ruled against Plessy and a member of the Plessy family came to this story together. They were photographed standing on the tracks where he was arrested.\n\nA Plessy and a Ferguson, side by side.\n",
     "teaser": "Everyone knew it was going to happen.",
     "detail": "The Comité des Citoyens formed in 1891. Plessy's trial judge was John Howard Ferguson of\nthe Orleans Parish Criminal Court. The Supreme Court heard the case on 13 April 1896 and\ndecided it on 18 May; Brown v. Board of Education overturned it in 1954. One National\nPark Service page gives the date of the arrest as 8 June; the Supreme Court record and the\nJean Lafitte park page give 7 June.\n",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-arrest-that-was-planned/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 96.8,
+        "audioBytes": 1550253
+      }
+    ],
     "pronunciations": [
       {
         "written": "Plessy",
@@ -9784,14 +10233,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-rights",
       "railroad"
     ],
-    "remoteness": 0.61,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-arrest-that-was-planned",
-        "durationS": 97
-      }
-    ]
+    "remoteness": 0.45
   },
   {
     "id": "new-orleans-the-blacksmith-shop-with-no-blacksmiths",
@@ -9807,7 +10249,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 96,
+    "durationS": 87,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9815,10 +10257,18 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the small, low cottage on the corner of Bourbon and Saint Philip. Its walls are brick packed between wooden posts, the way houses here were built long ago, and in places the plaster over them has worn thin.\n\nIt is called Lafitte's Blacksmith Shop. The story goes that the smuggler Jean Lafitte and his brother Pierre ran a forge on this corner, as cover for their real business.\n\nIt is an old story. George Washington Cable printed it as fact in eighteen eighty-four. By the nineteen-thirties there was a bronze plate on the building that read Lafitte's Rendezvous, site blacksmith shop, eighteen ten.\n\nBut when federal surveyors studied the cottage in the nineteen-thirties, they found no record of who built it, or when. And the National Park Service, which tells the Lafittes' story today, says plainly that no evidence confirms the legend.\n\nWhat the records do show is across the street.\n\nOn the opposite corner stood a house bought in eighteen sixteen by Marie Louise Villard, a free woman of color and Pierre Lafitte's partner of many years. They had seven children together. The house was in her name, so the government could not seize it for the brothers' crimes. Pierre was in this neighborhood often. That, the Park Service suggests, may be how the legend found this corner.\n\nSo the Lafittes probably never shod a horse here.\n\nBut one of them had a family just over the road.\n",
+    "script": "Look at the small, low cottage on the corner of Bourbon and Saint Philip. Its walls are brick packed between wooden posts, the way houses here were built long ago, and in places the plaster over them has worn thin.\n\nIt is called Lafitte's Blacksmith Shop. The story goes that the smuggler Jean Lafitte and his brother Pierre ran a forge on this corner, as cover for their real business.\n\nIt is an old story. George Washington Cable printed it as fact in eighteen eighty-four. When federal surveyors came to study the cottage, they found a bronze plate on the corner that read Lafitte's Rendezvous, site blacksmith shop, eighteen ten.\n\nBut they also found no record of who built it, or when. And the National Park Service, which tells the Lafittes' story today, says plainly that no evidence confirms the legend.\n\nWhat the records do show is across the street.\n\nOn the opposite corner stood a house bought in eighteen sixteen by Marie Louise Villard, a free woman of color and Pierre Lafitte's partner of many years. They had seven children together. The house was in her name, so the government could not seize it for the brothers' crimes. Pierre was in this neighborhood often. That, the Park Service suggests, may be how the legend found this corner.\n\nSo the Lafittes probably never shod a horse here.\n\nBut one of them had a family just over the road.\n",
     "teaser": "Look at the little cottage on the corner of Bourbon and Saint Philip.",
     "certaintyNote": "The blacksmith shop is a tradition in print since at least 1884; the National Park Service says no evidence confirms it. Marie Louise Villard's house across the street is documented. The script says which is which.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/new-orleans-the-blacksmith-shop-with-no-blacksmiths/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 86.9,
+        "audioBytes": 1391429
+      }
+    ],
     "pronunciations": [
       {
         "written": "Lafitte",
@@ -9837,14 +10287,7 @@ export const LIBRARY: readonly Echo[] = [
       "legend",
       "bourbon-street"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/new-orleans-the-blacksmith-shop-with-no-blacksmiths",
-        "durationS": 96
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-candle-on-good-friday",
@@ -9860,7 +10303,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 96,
+    "durationS": 99,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9868,8 +10311,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "You are standing beside the side wall of the Cabildo. Look at the row of arched windows along the ground floor.\n\nKeep them in mind.\n\nOn Good Friday in seventeen eighty-eight, candles were burning in the private chapel of the colony's military treasurer, a couple of blocks up Chartres Street from here. The story is that one fell against the lace on the altar.\n\nThe fire went from house to house.\n\nA correspondent for a European newspaper reported something else. He said the priests would not allow the alarm to be rung, because on Good Friday every bell must be silent.\n\nBy the end, eight hundred and fifty-six houses were gone. The church. The town hall. The guardhouse that stood right here.\n\nA few years later, another fire took much of what had been rebuilt.\n\nSo here is the thing about the French Quarter. Much of the old city you walk through was built after those fires, while Spain ruled it. A New Orleans writer in the eighteen nineties put it plainly. An ill-built French town went into the ashes. A stately Spanish city came out.\n\nNow look again at the wall beside you. When the Cabildo went up on this spot, part of the burned guardhouse wall was still standing. The builders kept it, and laid out these windows to its old rhythm.\n\nThe town hall is Spanish. Part of the wall it stands on is older than the fire.\n",
+    "script": "You are standing beside the side wall of the Cabildo. Look at the row of arched windows along the ground floor.\n\nKeep them in mind.\n\nOn Good Friday in seventeen eighty-eight, candles were burning in the private chapel of the colony's military treasurer, a block up Chartres Street from here, near St. Louis Street. The story is that one fell against the lace on the altar.\n\nThe fire went from house to house.\n\nA correspondent for a European newspaper reported something else. He said the priests would not allow the alarm to be rung, because on Good Friday every bell must be silent.\n\nBy the end, eight hundred and fifty-six houses were gone. The church. The town hall. The guardhouse that stood right here.\n\nA few years later, another fire took much of what had been rebuilt.\n\nSo here is the thing about the French Quarter. Much of the old city you walk through was built after those fires, while Spain ruled it. A New Orleans writer in the eighteen nineties put it plainly. An ill-built French town went into the ashes. A stately Spanish city came out.\n\nNow look again at the wall beside you. When the Cabildo went up on this spot, the builders worked what was left of the burned guardhouse walls into it. In the nineteen sixties, restorers found its remains inside these walls, and put the windows along this side back to their original plan.\n\nThe town hall is Spanish. Part of the wall it stands on is older than the fire.\n",
     "teaser": "Look at the arched windows along this wall. Part of it is older than the fire.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-candle-on-good-friday/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 98.5,
+        "audioBytes": 1576167
+      }
+    ],
     "pronunciations": [
       {
         "written": "Cabildo",
@@ -9888,14 +10339,7 @@ export const LIBRARY: readonly Echo[] = [
       "fires",
       "spanish-colonial"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-candle-on-good-friday",
-        "durationS": 96
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-casket-girls",
@@ -9911,7 +10355,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 107,
+    "durationS": 92,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9919,10 +10363,18 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the convent roof, and the small windows set into it.\n\nThe nuns who lived here belong to one of the oldest stories in New Orleans. In the early years of the colony, France sent young women across the ocean to marry its colonists. Each one came with a small chest of clothes. The French called them the filles à la cassette. In English, the casket girls.\n\nThat much the old writers agree on. Almost nothing else.\n\nGeorge Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king. He says those sixty were the first of many shiploads. Grace King, eleven years later, has sixty girls too. She says they were the last.\n\nA city guide from nineteen-oh-four tells it differently again. Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character.\n\nCable admitted the record was slender. The Creoles, he wrote, were never careful about checking their traditions.\n\nSo the story kept growing. In recent years some tellers have added something none of the old writers ever mentioned. That the little chests carried vampires into the city, and that they are still up there, under this roof.\n\nThere is no record of that. None. It is a legend built on top of a legend.\n\nThe women were real. Their chests were real. And as far as anyone ever wrote down at the time, what was in them was clothes.\n",
+    "script": "Look up at the convent roof, and the small windows set into it.\n\nThe nuns who lived here belong to one of the oldest stories in New Orleans. In the early years of the colony, France sent young women across the ocean to marry its colonists. Each one came with a small chest of clothes. The French called them the filles à la cassette. In English, the casket girls.\n\nThat much the old writers agree on. Almost nothing else.\n\nGeorge Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king. He says those sixty were only the first company, and more came in later years. Grace King, eleven years later, has sixty girls too. She says they were the last.\n\nA city guide from nineteen-oh-four tells it differently again. Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character.\n\nCable admitted the record was slender. The Creoles, he wrote, were never careful about checking their traditions.\n\nSo the story kept growing. In recent years some tellers have added something none of the old writers ever mentioned. That the little chests carried vampires into the city, and that they are still up there, under this roof.\n\nThere is no record of that. None. It is a legend built on top of a legend.\n\nThe women were real. Their chests were real. And as far as anyone ever wrote down at the time, what was in them was clothes.\n",
     "teaser": "Look up at the convent roof, and the small windows set into it.",
     "certaintyNote": "The women and their chests are a colonial tradition the old accounts disagree about, and Cable himself called the record slender. The modern vampire tale has no source at all. The script says both out loud.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/new-orleans-the-casket-girls/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 91.9,
+        "audioBytes": 1470841
+      }
+    ],
     "pronunciations": [
       {
         "written": "filles à la cassette",
@@ -9941,14 +10393,7 @@ export const LIBRARY: readonly Echo[] = [
       "legend",
       "women"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/new-orleans-the-casket-girls",
-        "durationS": 107
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-champion-who-stopped",
@@ -9964,7 +10409,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 103,
+    "durationS": 96,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -9974,6 +10419,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the iron railing on the balcony of the building across Royal Street. A writer in nineteen nineteen pointed out a monogram twined into that ironwork. It belonged to the Louisiana Bank, which put up this building in eighteen sixteen.\n\nBut the man people came here to think about was not a banker.\n\nPaul Morphy was born in New Orleans in eighteen thirty-seven, the son of a judge. When he was about ten, his father explained to him how the chess pieces move. Within two years the boy was beating the best players in the city. Before he turned thirteen, a famous Hungarian master passing through New Orleans played him three games. The boy won two, and drew the other.\n\nHe went on to Paris and London, and came home the greatest chess player in the world. The city gave him a set of chessmen in gold and silver.\n\nAnd then he stopped.\n\nIn his later years, a newspaper reported, he never played. Now and then friends would coax him to sit down at a board, and in the middle of the game he would suddenly sweep the pieces away, stand up and leave. When the master Steinitz came to New Orleans, people tried several times to bring the two of them together. Morphy would not do it.\n\nHe died in this house in July eighteen eighty-four. He was forty-seven.\n\nThe same report added one more thing. While Steinitz was playing in New Orleans, Morphy followed his games closely in the newspapers.\n\nAnd he criticised the moves.\n",
     "teaser": "Look at the iron railing on the balcony across Royal Street.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-champion-who-stopped/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 96.2,
+        "audioBytes": 1540640
+      }
+    ],
     "pronunciations": [
       {
         "written": "Morphy",
@@ -9991,14 +10444,7 @@ export const LIBRARY: readonly Echo[] = [
       "chess",
       "royal-street"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-champion-who-stopped",
-        "durationS": 103
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-crosses-on-the-tomb",
@@ -10014,7 +10460,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 96,
+    "durationS": 85,
     "minAge": 10,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10022,11 +10468,19 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look through the gate. Somewhere in there is the tomb of Marie Laveau.\n\nStart with what the record says. When she died, in June of eighteen eighty-one, a New Orleans obituary was reprinted as far away as Omaha. It said she was buried at five in the evening in her family tomb in this cemetery, followed by a large crowd, the most prominent and the most humble.\n\nIt called her a nurse. In yellow fever and cholera epidemics, it said, she was always called on, and always went. She sat with condemned prisoners in their last hours.\n\nThe closest it came to anything else was one line. The ignorant, it said, credited her cures to unnatural means.\n\nIt never used the word voodoo.\n\nWithin a couple of decades, the guidebooks had a different woman. A voodoo queen, keeping a sacred serpent in a carved box in her bedroom. They give no source for any of it.\n\nThe legend outgrew the nurse. In nineteen thirty-seven, a wire story reported that the bricks of her crumbling tomb were scratched with crosses, left by people who traced one, said a prayer, and slipped away. People still come hoping for luck. That is a custom built on a legend, not a fact.\n\nThe gate is as close as this story needs to bring you. Please do not add a mark of your own.\n\nThe nurse is in the record. The queen is in the scratches.\n",
+    "script": "Look through the gate. Somewhere in there is the tomb of Marie Laveau.\n\nStart with what the record says. When she died, in June of eighteen eighty-one, a New Orleans obituary was reprinted as far away as Omaha. It said she was buried at five in the evening in her family tomb in this cemetery, followed by a large crowd, the most prominent and the most humble.\n\nIt called her a nurse. In yellow fever and cholera epidemics, it said, she was always called on, and always went. She sat with condemned prisoners in their last hours.\n\nThe closest it came to anything else was one line. The ignorant, it said, credited her cures to unnatural means.\n\nIt never used the word voodoo.\n\nBy nineteen-oh-four, a city guide had a different woman. A voodoo queen, keeping a sacred serpent in a carved box in her bedroom. It does not say where it got any of that.\n\nThe legend outgrew the nurse. Decades later, a wire story reported that the bricks of her crumbling tomb were scratched with crosses, left by people who traced one, said a prayer, and slipped away. People still come hoping for luck. That is a custom built on a legend, not a fact.\n\nThe gate is as close as this story needs to bring you. Please do not add a mark of your own.\n\nThe nurse is in the record. The queen is in the scratches.\n",
     "teaser": "Her obituary never used the word.",
-    "detail": "An 1898 New York Sun piece, reprinted in Savannah, follows two visitors led to the tomb\nby a local woman who tells them that anything you get in a cemetery will bring you luck.\n",
+    "detail": "An 1898 New York Sun piece, reprinted in Savannah, follows two visitors hunting, guidebook\nin hand, for Marie Laveau's old cottage.\n",
     "certaintyNote": "Marie Laveau's death, burial in this cemetery and nursing work are from her 1881 obituary. The voodoo-queen story, the serpent in the box and the idea that marking her tomb brings luck or a wish are folklore; the script says so out loud. No supernatural claim is made.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/new-orleans-the-crosses-on-the-tomb/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 85.1,
+        "audioBytes": 1363007
+      }
+    ],
     "pronunciations": [
       {
         "written": "Marie Laveau",
@@ -10041,14 +10495,7 @@ export const LIBRARY: readonly Echo[] = [
       "cemetery",
       "folklore"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/new-orleans-the-crosses-on-the-tomb",
-        "durationS": 96
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-duke-on-the-street-sign",
@@ -10072,8 +10519,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the two street signs on this corner. Bourbon. And Dumaine.\n\nOn this street of all streets, people tend to assume the name has something to do with what is in their glass.\n\nIt doesn't.\n\nWhen French engineers laid out this town in the seventeen-twenties, they drew a grid of streets and gave them names from the very top of French society. George Washington Cable, writing in eighteen eighty-four, listed who was being honoured. The dukes of Orleans, Chartres, Maine and Bourbon. The princes of Conti and Condé. The Count of Toulouse.\n\nSo the grid around you is a kind of family tree of the French court. Orleans Street. Chartres Street. Conti. Toulouse. And Bourbon, for the Duke of Bourbon.\n\nNow look at the other sign again. Dumaine. Say it slowly. Du Maine. On the old French plans of the city, it is written Rue du Maine. The street of the Duke of Maine.\n\nA city guide from nineteen-oh-four put it simply. All through the old French Quarter, it said, the street names suggest the city's royal descent.\n\nThe duke is still up there on the sign.\n\nEverything else on Bourbon Street came later.\n",
+    "script": "Look at the street signs on this corner. Bourbon. And Dumaine.\n\nOn this street of all streets, people tend to assume the name has something to do with what is in their glass.\n\nIt doesn't.\n\nWhen French engineers laid out this town in the seventeen-twenties, they drew a grid of streets and gave them names from the very top of French society. George Washington Cable, writing in eighteen eighty-four, listed who was being honoured. The dukes of Orleans, Chartres, Maine and Bourbon. The princes of Conti and Condé. The Count of Toulouse.\n\nSo the grid around you is a kind of family tree of the French court. Orleans Street. Chartres Street. Conti. Toulouse. And Bourbon, for the Duke of Bourbon.\n\nNow look at the other sign again. Dumaine. Say it slowly. Du Maine. On the old French plans of the city, it is written Rue du Maine. The street of the Duke of Maine.\n\nA city guide from nineteen-oh-four put it simply. All through the old French Quarter, it said, the street names suggest the city's royal descent.\n\nThe duke is still up there on the sign.\n\nEverything else on Bourbon Street came later.\n",
     "teaser": "Look at the two street signs on this corner.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-duke-on-the-street-sign/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 77.6,
+        "audioBytes": 1243471
+      }
+    ],
     "pronunciations": [
       {
         "written": "Dumaine",
@@ -10103,14 +10558,7 @@ export const LIBRARY: readonly Echo[] = [
       "bourbon-street",
       "street-names"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-duke-on-the-street-sign",
-        "durationS": 78
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-emperor-never-came",
@@ -10126,7 +10574,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 98,
+    "durationS": 81,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10134,10 +10582,18 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look across at the three-storey house on the corner of Chartres and Saint Louis, with iron balconies on both street fronts and an old tile roof.\n\nIt is called the Napoleon House. The story is that it was meant for Napoleon himself.\n\nIn his last years, Napoleon was held prisoner on the island of Saint Helena. In New Orleans there were Frenchmen who still adored him. One of them was Nicholas Girod, a former mayor of the city, who lived in this house.\n\nThe story goes that Girod and his friends paid for a fast ship called the Seraphine, signed on a crew of Baratarian privateers, and planned to sail to the island, take the emperor off by night, and bring him here.\n\nThen word came that Napoleon had died, in May eighteen twenty-one. The ship never sailed.\n\nIs it true? A New Orleans writer in eighteen ninety-five said there could be no doubt the expedition was real. A federal survey in nineteen fifty-five called it a popular legend.\n\nIt is not even clear which house it is. A city guide of nineteen-oh-four gave the name Napoleon House to a different mansion altogether, near Canal Street, and expected it to be torn down that year. And the survey of nineteen fifty-five found two houses on this short stretch of Chartres Street, both going by the name.\n\nThe emperor never came to New Orleans.\n\nBut the city had more than one house ready for him.\n",
+    "script": "Look across at the three-storey house on the corner of Chartres and Saint Louis, with iron balconies on both street fronts and an old tile roof.\n\nIt is called the Napoleon House. The story is that it was meant for Napoleon himself.\n\nIn his last years, Napoleon was held prisoner on the island of Saint Helena. In New Orleans there were Frenchmen who still adored him. One of them was Nicholas Girod, a former mayor of the city, whose family built this house.\n\nThe story goes that Girod and his friends paid for a fast ship called the Seraphine, signed on one of Jean Lafitte's old gunners as mate, and planned to sail to the island, take the emperor off by night, and bring him here.\n\nThen word came that Napoleon had died, in May eighteen twenty-one. The ship never sailed.\n\nIs it true? A city guide of nineteen-oh-four said there was every reason to believe it. A federal survey in nineteen fifty-five called it a popular legend.\n\nIt is not even clear which house it is. That same guide gave the name Napoleon House to a different mansion altogether, near Canal Street, and expected it to be torn down that year. And the survey of nineteen fifty-five found two houses on this short stretch of Chartres Street, both going by the name.\n\nThe emperor never came to New Orleans.\n\nBut the city had more than one house ready for him.\n",
     "teaser": "Look across at the old house on the corner, with the iron balconies.",
     "certaintyNote": "The rescue plot is told as certain by some nineteenth-century writers and called a popular legend by the 1955 federal survey; even the house it attaches to has moved. The script says so.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/new-orleans-the-emperor-never-came/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 80.5,
+        "audioBytes": 1288611
+      }
+    ],
     "pronunciations": [
       {
         "written": "Girod",
@@ -10164,14 +10620,7 @@ export const LIBRARY: readonly Echo[] = [
       "legend",
       "chartres-street"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/new-orleans-the-emperor-never-came",
-        "durationS": 98
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-file-sellers",
@@ -10187,7 +10636,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "food-drink",
     "format": "short",
-    "durationS": 84,
+    "durationS": 81,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10197,6 +10646,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Walk in under the long roof of the market and look along the line of columns.\n\nBefore there was any roof here, there was the open levee, just downriver of the old parade ground. People laid out what they had to sell on the ground. Vegetables, fruit, game, skins, herbs, baskets. Hunters and trappers. Black vendors. Native traders. In the Spanish years a butcher's shed went up, and the market grew along the river from there.\n\nOne thing kept arriving, long after the sheds went up.\n\nAt the start of the twentieth century, Choctaw women still came here twice a week from their settlement at Bayou Lacombe, across Lake Pontchartrain. They crossed the lake by steamer, walked from the lakeshore to this market, and sat with bundles of herbs, baskets, and one thing above all.\n\nDried sassafras leaves, pounded into a powder. Filé.\n\nIt was a Native food first. Creole cooks took it up to thicken their gumbo, and kept it. A guidebook from nineteen oh four says the Choctaw sellers here always found a ready sale.\n\nSo if your gumbo in this city comes with filé, that powder is a Native food, and for a long time, Choctaw women sold it right here.\n",
     "teaser": "Before there was a roof here, there was the open levee and whatever people had to sell.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-file-sellers/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81.2,
+        "audioBytes": 1299896
+      }
+    ],
     "pronunciations": [
       {
         "written": "Filé",
@@ -10223,14 +10680,7 @@ export const LIBRARY: readonly Echo[] = [
       "choctaw",
       "gumbo"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-file-sellers",
-        "durationS": 84
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-fire-in-the-kitchen",
@@ -10246,7 +10696,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 100,
+    "durationS": 86,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10254,8 +10704,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look across at the big house on the corner of Royal Street.\n\nOn the morning of the tenth of April, eighteen thirty-four, flames broke out of it. The fire had started in the kitchen.\n\nIt was started on purpose. A woman held captive in this house told the mayor afterwards that she had set it herself. It was, she said, the only way left to end what she and the others were suffering. The English writer Harriet Martineau, who heard the story in this city a few years later, says it was the cook, kept chained within a few yards of the kitchen fire.\n\nNeighbours and firemen ran in. They forced open doors that had always been kept locked, and behind them they found seven people in chains, starved, covered in wounds. The editor of the city newspaper, the Bee, was there. He wrote that he saw where the collars and manacles had cut into their flesh.\n\nThey were carried through the streets to the mayor's office, and their irons were struck off. At least two thousand people came to see them that day.\n\nThe woman who held them, Madame Lalaurie, never answered for it. She left in her carriage, reached the lake, and escaped by boat to Mobile and then to France. A crowd tore her house apart.\n\nNeither of the old accounts gives the name of the woman who lit that fire.\n\nWhat was being done in this house came out because she set it on fire.\n",
+    "script": "Look across at the big house on the corner of Royal Street.\n\nOn the morning of the tenth of April, eighteen thirty-four, flames broke out of it. The fire had started in the kitchen.\n\nIt was started on purpose. A woman held captive in this house told the mayor afterwards that she had set it herself. It was, she said, the only way left to end what she and the others were suffering. The English writer Harriet Martineau tells it a little differently. She says it was the cook, kept chained within eight yards of the fireplace.\n\nNeighbours and firemen ran in. They forced the doors open, and found seven people in chains, starving, covered in wounds. The owner of a city newspaper, the Bee, was there. He wrote that he saw where the collars and manacles had cut into their flesh.\n\nThey were carried through the streets to the mayor's office, and their irons were struck off. At least two thousand people came to see them that day.\n\nThe woman who held them, Madame Lalaurie, never answered for it. She left in her carriage, reached the lake, and escaped by boat to Mobile and then to France. A crowd tore her house apart.\n\nNeither of the old accounts gives the name of the woman who lit that fire.\n\nWhat was being done in this house came out because she set it on fire.\n",
     "teaser": "Look across at the house on the corner.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-fire-in-the-kitchen/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 86.2,
+        "audioBytes": 1380980
+      }
+    ],
     "pronunciations": [
       {
         "written": "Lalaurie",
@@ -10273,14 +10731,7 @@ export const LIBRARY: readonly Echo[] = [
       "slavery",
       "royal-street"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-fire-in-the-kitchen",
-        "durationS": 100
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-flag-on-the-mint",
@@ -10296,7 +10747,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 100,
+    "durationS": 85,
     "minAge": 12,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10304,8 +10755,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the roof of the Mint, above the columns.\n\nSunday the twenty-seventh of April, eighteen sixty-two. A Union fleet had fought its way up the river, and the city had nothing left to resist it with. The mayor refused to raise the United States flag himself. So the navy sent a party ashore to raise one here.\n\nThey put it up at about eight in the morning, and went back to their ship. They left no guard. Instead, guns up in the rigging of the warship lying off the Mint were aimed at the flagstaff, with orders to fire on anyone who touched it.\n\nAt eleven, the crews gathered on deck for prayers.\n\nAbout twenty minutes in, the guns went off. Men were on the roof. They tore the flag down and got away with it.\n\nAccounts disagree about who reached it first. They agree on who ended up with it. William Mumford.\n\nWhen General Benjamin Butler took command of the city a few days later, Mumford was arrested and tried for treason by a military commission. His wife and three children knelt in front of Butler to beg for his life.\n\nOn the seventh of June, he was hanged on a scaffold built in front of the Mint, near where you are standing.\n\nButler's side called it justice. Mumford's side called it murder, and him a martyr.\n\nThe flag he pulled down had been flying for a little over three hours.\n",
+    "script": "Look up at the roof of the Mint, above the columns.\n\nSunday the twenty-seventh of April, eighteen sixty-two. A Union fleet had fought its way up the river, and the city had nothing left to resist it with. The mayor refused to raise the United States flag himself. So the navy sent a party ashore to raise one here.\n\nThey put it up at about eight in the morning, and went back to their ship. They left no guard. Instead, guns up in the rigging of the warship lying off the Mint were aimed at the flagstaff, with orders to fire on anyone who touched it.\n\nAt eleven, the crews gathered on deck for prayers.\n\nAbout twenty minutes in, the guns went off. Men were on the roof. They tore the flag down and got away with it.\n\nAccounts disagree about who reached it first. They agree on who ended up with it. William Mumford.\n\nWhen General Benjamin Butler took command of the city, Mumford was arrested and tried for treason by a military commission.   On the seventh of June, he was hanged from a beam fixed between the two middle columns of the Mint's front porch, near where you are standing.\n\nButler's biographer wrote that his life was justly forfeited. A Louisiana school history later called the hanging unjust and cruel.\n\nThe flag he pulled down had been flying for a little over three hours.\n",
     "teaser": "Look up at the roof of the Mint. A flag flew there for about three hours.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-flag-on-the-mint/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 85.2,
+        "audioBytes": 1363843
+      }
+    ],
     "pronunciations": [
       {
         "written": "Esplanade",
@@ -10319,14 +10778,115 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "esplanade"
     ],
-    "remoteness": 0.16,
+    "remoteness": 0
+  },
+  {
+    "id": "new-orleans-the-girl-on-the-belvedere",
+    "title": "The Girl on the Belvedere",
+    "summary": "The old guidebooks said a girl's ghost circled the lookout on top of 1140 Royal. A writer who knew the tenants said it was memories.",
+    "point": {
+      "at": {
+        "lat": 29.96178,
+        "lng": -90.06117
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "1140 Royal Street at Governor Nicholls Street, French Quarter, New Orleans, Louisiana"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the top of the big house on the corner. The little lookout on the roof is called a belvedere.\n\nThis is the house New Orleans has called haunted for more than a century. What follows is a legend. Nobody has ever proved a ghost here.\n\nThe true part is bad enough. In April eighteen thirty-four, a fire broke out in the house that stood here, and the people who ran in found seven enslaved people in chains. The woman who held them, Madame Lalaurie, escaped to France.\n\nThe ghost came later. City guides of nineteen hundred and nineteen-oh-four tell it the same way. A little girl, chased by her mistress with a whip, ran up and up the winding stairs to the belvedere, and leapt from the roof into the courtyard. On dark and stormy nights, they said, she is seen walking round and round up there, and her sobs are heard above the storm.\n\nThey said no tenant could stay. Servants would not stay either, and the house to rent sign kept going back up on the balcony. One later owner turned it into a bar called the Haunted Saloon.\n\nNot everyone believed it. Henry Castellanos, writing in eighteen ninety-five, said the house had been rebuilt after the crowd wrecked it, and the belvedere was added then. He had talked to people who lived here. Nothing haunted them, he wrote, except memories.\n\nSo the girl is said to walk on a lookout that was built after her story ends.\n\nThe ghost is a legend. The cruelty that made people tell it is not.\n",
+    "teaser": "Look up at the little lookout on the roof.",
+    "certaintyNote": "The ghost is told by the Picayune guides of 1900 and 1904 as something \"said\", with no witness named; Castellanos (1895), who spoke with tenants, denied any haunting, and a 1902 guide called the stories doubtful. The 1834 discovery of the chained captives is documented and is told in new-orleans-the-fire-in-the-kitchen; this echo keeps to the legend and says aloud it is unproven.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-flag-on-the-mint",
-        "durationS": 100
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/new-orleans-the-girl-on-the-belvedere/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 88.3,
+        "audioBytes": 1413581
       }
-    ]
+    ],
+    "pronunciations": [
+      {
+        "written": "Lalaurie",
+        "say": "lah-LOR-ee"
+      },
+      {
+        "written": "belvedere",
+        "say": "BEL-vuh-deer"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "ghosts",
+      "legend",
+      "lalaurie"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "new-orleans-the-grand-zombis-square",
+    "title": "The Grand Zombi's Square",
+    "summary": "Old guides said Congo Square was the favorite haunt of the Voudou serpent spirit, and that offerings still turned up there at midnight.",
+    "point": {
+      "at": {
+        "lat": 29.95985,
+        "lng": -90.06735
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Louis Armstrong Park gateway, North Rampart Street, facing Congo Square, New Orleans, Louisiana"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 77,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look through the gateway, toward the open square inside the park. Congo Square.\n\nOn Sundays, enslaved people gathered there to dance and drum. That part is history. But by the time the old guidebooks were written, the square had another story laid over it. Treat that as legend.\n\nA city guide of nineteen-oh-four said that around this square cling wild superstitions, echoes of weird music, and visions of ghostly figures dancing. It said the Voudous believed the square was a charmed spot, which their serpent spirit, the Grand Zombi, had chosen for his favorite haunt.\n\nLong after the dancing stopped, the guide went on, someone would still now and then leave an offering in the middle of the square at the midnight hour. A roasted bird stuck all over with needles and pins, with coins laid round the dish.\n\nThe city tried to rename the place. For a while the city directory called it Beauregard Square. A newspaper story of eighteen ninety-eight said it did not do much good. Black New Orleanians, it said, still called it Congo Square.\n\nNone of the guides names anyone who saw a ghost here. The spirit is a legend. The name stuck.\n",
+    "teaser": "The old guides said the square had a spirit of its own.",
+    "certaintyNote": "The Sunday gatherings in Congo Square are documented; the midnight rites, the Grand Zombi's haunt and the offerings are told by the 1904 Picayune guide as superstition and legend, with no witness named. The script says aloud it is legend and makes no supernatural claim.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/new-orleans-the-grand-zombis-square/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 76.9,
+        "audioBytes": 1231350
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Grand Zombi",
+        "say": "grahn zom-BEE"
+      },
+      {
+        "written": "Voudous",
+        "say": "VOO-dooz"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "treme",
+      "congo-square",
+      "voodoo",
+      "ghosts",
+      "legend"
+    ],
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-harbor-behind-the-cemetery",
@@ -10342,7 +10902,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 76,
+    "durationS": 69,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10350,9 +10910,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the street sign. Basin Street.\n\nThere is no basin here now. A little over a century ago, there was.\n\nTurn the corner at St. Louis Street, a guidebook of nineteen hundred told its readers, and the Old Basin bursts upon the view. A square of water at the end of a canal, with oyster luggers and charcoal schooners tied up along its banks, unloading.\n\nThe canal ran from here out to Bayou St. John, and through the bayou boats could reach Lake Pontchartrain. A schooner could come in off the lake and finish its trip close under the old city ramparts.\n\nIt was a Spanish governor's project. The Baron de Carondelet had it dug in the seventeen-nineties, to drain the swamps behind the city and to bring trade to its back door. The digging was done by gangs of enslaved men, lent free of charge by the city's wealthy.\n\nBy nineteen hundred and four, the guidebooks noted that a railway company had bought the land along the canal, for car yards and warehouses.\n\nThe water is gone, and so are the schooners. The street kept the name.\n",
+    "script": "Look at the street sign. Basin Street.\n\nThere is no basin here now. A little over a century ago, there was.\n\nTurn the corner at St. Louis Street, an old city guide told its readers, and the Old Basin bursts upon the view. A square of water at the end of a canal, with oyster luggers and charcoal schooners tied up along its banks, unloading.\n\nThe canal ran from here out to Bayou St. John, and through the bayou boats could reach Lake Pontchartrain. A schooner could come in off the lake and finish its trip close under the old city ramparts.\n\nIt was a Spanish governor's project. The Baron de Carondelet had it dug in the seventeen-nineties, to drain the swamps behind the city and to bring trade to its back door. The digging was done by a large force of enslaved men, borrowed from their owners in town and country.\n\nBy nineteen hundred and four, the guidebooks noted that a railway company had taken over the land along the canal, for car yards and warehouses.\n\nThe water is gone, and so are the schooners. The street kept the name.\n",
     "teaser": "There is no basin on Basin Street.",
     "detail": "The 1900 and 1904 Picayune guides place the Old Basin between St. Claude and North\nFranklin streets, Carondelet Walk and Toulouse, with the luggers' landing on the banks\nfrom St. Louis Street to Toulouse. The 1913 guide dates the canal and basin to 1794-1796\n(it names the governor as Claiborne, an error; the earlier guides credit Carondelet).\n",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-harbor-behind-the-cemetery/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 68.7,
+        "audioBytes": 1100111
+      }
+    ],
     "pronunciations": [
       {
         "written": "Carondelet",
@@ -10379,14 +10947,7 @@ export const LIBRARY: readonly Echo[] = [
       "canal",
       "waterways"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-harbor-behind-the-cemetery",
-        "durationS": 76
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-inquisitor-who-came-back",
@@ -10402,7 +10963,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 102,
+    "durationS": 93,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10412,6 +10973,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look through the railings into the garden behind the cathedral.\n\nAround seventeen eighty-nine, a Spanish Capuchin friar named Antonio de Sedella called on the governor of this colony, Esteban Miró. He showed him a commission. He had been sent to set up the Holy Office of the Inquisition in New Orleans.\n\nHis preparations were complete, he said. Some night soon, he would send for soldiers to help him make the arrests.\n\nThe governor was polite. Then he made preparations of his own.\n\nThe next night there was a heavy knocking at the friar's door. He opened it to an officer and a file of grenadiers. He thanked them for coming so promptly, and told them he did not need them yet.\n\nHe was told he was under arrest. The next day he was on a ship for Cádiz.\n\nMiró wrote to Madrid that the very word Inquisition, spoken in New Orleans, could drive people out of the colony.\n\nAnd then the friar came back.\n\nHe came back as Père Antoine, the parish priest of this cathedral, for nearly fifty years. A guidebook from eighteen forty-five says he was supposed to have married or buried nearly half the people of the place. When a church official tried to suspend him, his congregation left the cathedral and ran to his door.\n\nHe lived in a little cabin in the alley back here. He is buried at the foot of the altar.\n\nNew Orleans threw out the inquisitor. Then it kept the priest for half a century.\n",
     "teaser": "He came to set up the Inquisition. The governor had other plans.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-inquisitor-who-came-back/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 92.9,
+        "audioBytes": 1487141
+      }
+    ],
     "pronunciations": [
       {
         "written": "Antonio de Sedella",
@@ -10441,14 +11010,7 @@ export const LIBRARY: readonly Echo[] = [
       "churches",
       "spanish-colonial"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-inquisitor-who-came-back",
-        "durationS": 102
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-legislature-in-the-convent",
@@ -10472,8 +11034,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look through the gate in the wall along Chartres Street.\n\nThe building behind it is two storeys of plastered brick. Its middle section steps forward under a triangular pediment, and a steep slate roof sits over the whole thing.\n\nIt was built for the Ursuline nuns. They lived behind this wall until eighteen twenty-four, when they moved to a new convent further downriver. A city guide of nineteen-oh-four called this the oldest building in Louisiana.\n\nThen the empty convent found a tenant nobody would have predicted.\n\nIn eighteen thirty-one, the State of Louisiana leased the building from the nuns. The state legislature held its sessions inside these walls. For a while, the laws of Louisiana were argued over in a house built for nuns.\n\nIt did not last. The lease ran out, and the nuns gave the building to the archbishop of New Orleans. For most of the rest of the century, it was where the archbishops lived.\n\nThat same guide told its readers to look for one thing inside. The staircase. Each step, it said, was a single massive piece of timber, worn down by the feet of many generations.\n\nMost of those feet belonged to nuns and priests. For one short stretch, some of them belonged to politicians.\n",
+    "script": "Look through the gate in the wall along Chartres Street.\n\nThe building behind it is two storeys of plastered brick. Its middle section steps forward under a triangular pediment, and a steep slate roof sits over the whole thing.\n\nIt was built for the Ursuline nuns. They lived behind this wall until eighteen twenty-four, when they moved to a new convent further downriver. A city guide of nineteen-oh-four called this the oldest building in Louisiana.\n\nThen the empty convent found a tenant nobody would have predicted.\n\nIn eighteen thirty-one, the State of Louisiana leased the building from the nuns. The state legislature held its sessions inside these walls. For a while, the laws of Louisiana were argued over in a house built for nuns.\n\nIt was short-lived. The lease ran out, and the nuns gave the building to the archbishop of New Orleans. For most of the rest of the century, it was where the archbishops lived.\n\nThat same guide told its readers to look for one thing inside. The staircase. Each step, it said, was a single massive piece of timber, worn down by the feet of many generations.\n\nMost of those feet belonged to nuns and priests. For one short stretch, some of them belonged to politicians.\n",
     "teaser": "Look through the gate in the wall along Chartres Street.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-legislature-in-the-convent/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 83.8,
+        "audioBytes": 1341692
+      }
+    ],
     "tags": [
       "new-orleans",
       "new-orleans-core",
@@ -10482,14 +11052,7 @@ export const LIBRARY: readonly Echo[] = [
       "convent",
       "architecture"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-legislature-in-the-convent",
-        "durationS": 84
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-man-under-the-altar",
@@ -10505,7 +11068,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 82,
+    "durationS": 79,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10515,6 +11078,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the three spires on the front of the cathedral.\n\nThey are younger than they look. The front you are facing was remodelled around eighteen fifty, when steeples were raised on the old towers and the portico was added.\n\nThe church before that was paid for by one man.\n\nIn seventeen eighty-eight, fire took the old parish church along with most of the town. Don Andrés Almonester y Roxas, a Spaniard who had grown very rich in this colony, offered to build a new one at his own expense.\n\nHe asked for something in return. Masses for his soul, said for ever.\n\nA guidebook from eighteen forty-five says the bargain was being kept. Every Saturday evening, it says, at sunset, the bell tolled for the founder.\n\nHe died in seventeen ninety-eight and was buried in front of the altar. A writer in the eighteen nineties described his name, his coat of arms and his motto, cut into the stone over him.\n\nThe building has been remade around him since. The steeples are new. The portico is new.\n\nHe is still inside, under the floor, at the front.\n\nAnd by his own arrangement, someone is meant to be praying for him.\n",
     "teaser": "Look up at the three spires. They are younger than they look.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-man-under-the-altar/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 79,
+        "audioBytes": 1265623
+      }
+    ],
     "pronunciations": [
       {
         "written": "Andrés Almonester y Roxas",
@@ -10529,14 +11100,7 @@ export const LIBRARY: readonly Echo[] = [
       "churches",
       "spanish-colonial"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-man-under-the-altar",
-        "durationS": 82
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-neutral-ground",
@@ -10552,7 +11116,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 89,
+    "durationS": 85,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10560,9 +11124,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the strip down the middle of Canal Street, where the streetcar tracks run.\n\nAnywhere else it would be a median. In New Orleans it is the neutral ground.\n\nStart with the street's name. Canal Street really did have a canal, of a sort. A narrow, crooked stream once ran here, and the Spanish used it as a moat in front of the city wall. When Americans began settling upriver, they filled their lots with earth dug from its banks, and it grew into a straight, deep ditch. Iron posts and chains along the edge kept people from falling in. As far as anyone knows, nothing ever sailed on it.\n\nBy eighteen thirty-eight the ditch had been filled in as far as Claiborne Street, and the car tracks were laid on the ground it left behind. The guidebooks called that ground the neutral ground.\n\nThey also called Canal Street the line between two cities. The French and Creole town downriver. The American town upriver. A guidebook of nineteen hundred and four said this street divided New Orleans into two phases of life, two styles of architecture, two forms of civilization.\n\nThe old guidebooks never stop to explain the word neutral. Maybe it did not need explaining.\n\nStand here, in the middle of the line between two cities, and decide for yourself.\n",
+    "script": "Look at the strip down the middle of Canal Street, where the streetcar tracks run.\n\nAnywhere else it would be a median. In New Orleans it is the neutral ground.\n\nStart with the street's name. Canal Street really did have a canal, of a sort. A narrow, crooked stream once ran here, and the Spanish used it as a moat in front of the city wall. When Americans began settling upriver, they filled their lots with earth dug from its banks, and it grew into a straight, deep ditch. Iron posts and chains along the edge kept people from falling in. As far as anyone knows, nothing ever sailed on it.\n\nBy eighteen thirty-eight the ditch had been filled in as far as Claiborne Street, and the car tracks were laid on the ground it left behind. The guidebooks called that ground the neutral ground.\n\nThey also called Canal Street the line between the French and American sections of the city. The French and Creole town downriver. The American town upriver. A guidebook of nineteen hundred and four said this street divided New Orleans into two phases of life, two styles of architecture, two forms of civilization.\n\nThe old guidebooks never stop to explain the word neutral. Maybe it did not need explaining.\n\nStand here, in the middle of that line, and decide for yourself.\n",
     "teaser": "Neutral between what?",
-    "detail": "By 1900 the guidebooks used \"neutral ground\" for the middle of North Rampart, St. Charles\nAvenue and Elysian Fields as well. The statue of Henry Clay stood on the Canal Street\nneutral ground at this intersection from 1856 until 1900, when it was moved to Lafayette\nSquare.\n",
+    "detail": "By 1900 the guidebooks used \"neutral ground\" for the middle of North Rampart, St. Charles\nAvenue and Elysian Fields as well. The statue of Henry Clay stood on the Canal Street\nneutral ground at this intersection until shortly before 1904, when it was moved to\nLafayette Square.\n",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-neutral-ground/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 85.2,
+        "audioBytes": 1364679
+      }
+    ],
     "pronunciations": [
       {
         "written": "Claiborne",
@@ -10576,14 +11148,7 @@ export const LIBRARY: readonly Echo[] = [
       "language",
       "streetcar"
     ],
-    "remoteness": 0.2,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-neutral-ground",
-        "durationS": 89
-      }
-    ]
+    "remoteness": 0.2
   },
   {
     "id": "new-orleans-the-noise-on-the-common",
@@ -10599,7 +11164,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 97,
+    "durationS": 87,
     "minAge": 10,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10607,9 +11172,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look out across this open square.\n\nOne Sunday afternoon early in eighteen nineteen, an architect named Benjamin Latrobe set out from the old town for a walk along a canal. He went up St. Peter Street, toward the common ground at the back of the city, and he heard something he could not place.\n\nHe thought it was a horse mill. Horses, tramping round and round on a wooden floor.\n\nIt was people. Five or six hundred of them, he reckoned, gathered in an open space at the edge of the common. People would come to call that space Congo Square.\n\nThey stood in circles, and inside each circle was a ring of dancers, the largest not ten feet across.\n\nHe wrote down what he saw. An old man sitting astride a drum, beating it with the edge of his hand, with incredible quickness. A stringed instrument with a gourd for a body and a small carved figure of a seated man at the top of its neck, played by a man who looked eighty or ninety years old. Women answering the music in two notes. A man singing in a language that was not French.\n\nHe was told they met here every Sunday afternoon. He did not like what he heard, and his journal says so in ugly terms.\n\nThen he walked on, about a mile along the canal. He came back after sunset, near the same spot.\n\nThey were still playing.\n",
+    "script": "Look out across this open square.\n\nOne Sunday afternoon, soon after he reached the city in eighteen nineteen, an architect named Benjamin Latrobe set out from the old town for a walk along a canal. He went up St. Peter Street, toward the common ground at the back of the city, and he heard something he could not place.\n\nHe thought it was a horse mill. Horses, tramping on a wooden floor.\n\nIt was people. Five or six hundred of them, he reckoned, gathered in an open space at the edge of the common. People would come to call that space Congo Square.\n\nThey stood in circles, and inside each circle was a ring of dancers, the largest not ten feet across.\n\nHe wrote down what he saw. An old man sitting astride a drum, beating it with the edge of his hand, with incredible quickness. A stringed instrument with a gourd for a body and a small carved figure of a seated man at the top of its neck, played by a man who looked eighty or ninety years old. Women answering the music in two notes. A man singing in a language that was not French.\n\nHe was told they met here every Sunday afternoon. He did not like what he heard, and his journal says so in ugly terms.\n\nThen he walked on, about a mile along the canal. He came back after sunset, near the same spot.\n\nThey were still playing.\n",
     "teaser": "He thought it was horses on a wooden floor.",
     "detail": "Latrobe's journals were published in 1905 as The Journal of Latrobe; the passage falls\nbetween his entries of 9 January and 8 March 1819. The National Park Service notes that\nenslaved people gathered on Sundays at a market outside the city's rampart by the\nmid-eighteenth century, and that the dancing in Congo Square ended before the Civil War.\n",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-noise-on-the-common/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 86.5,
+        "audioBytes": 1384741
+      }
+    ],
     "pronunciations": [
       {
         "written": "Latrobe",
@@ -10628,14 +11201,7 @@ export const LIBRARY: readonly Echo[] = [
       "music",
       "slavery"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-noise-on-the-common",
-        "durationS": 97
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-opera-house-that-isnt-here",
@@ -10651,7 +11217,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "arts",
     "format": "short",
-    "durationS": 80,
+    "durationS": 77,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10659,8 +11225,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand at the corner of Bourbon and Toulouse, and look for an opera house.\n\nThere isn't one. For sixty years, there was.\n\nThe French Opera House opened here in December eighteen fifty-nine. A city guide from nineteen-oh-four counted about two thousand eight hundred seats, in four tiers, and every tier had its own French name. The gallery, at the top, was popularly called le paradis. Paradise.\n\nDuring the Civil War the house went dark. In eighteen sixty-six it was ready to open again, and its new director was sailing from France with a whole company of singers, aboard a ship called the Evening Star.\n\nThe ship went down. The entire company was lost.\n\nThe house opened anyway, and kept going for another half century.\n\nThen, early on the fourth of December, nineteen nineteen, a fire started in a restaurant at the front of the building. Within hours the French Opera House had burned to the ground. Its season had opened on Armistice night, barely three weeks before. The management said it was the most successful season the house had ever had.\n\nSo look up, above the corner, into the empty air.\n\nThat is about where Paradise used to be.\n",
+    "script": "Stand at the corner of Bourbon and Toulouse, and look for an opera house.\n\nThere is none. For sixty years, there was.\n\nThe French Opera House opened here in December eighteen fifty-nine. A city guide from nineteen-oh-four counted about two thousand eight hundred seats, in four tiers, and every tier had its own French name. The gallery, at the top, was popularly called le paradis. Paradise.\n\nDuring the Civil War the house went dark. In eighteen sixty-six it was ready to open again, and its new director was sailing from France with a whole company of singers, aboard a ship called the Evening Star.\n\nThe ship went down. The entire company was lost.\n\nThe house opened anyway, and the opera carried on.\n\nThen, early on the fourth of December, nineteen nineteen, a fire started in a restaurant at the front of the building. By morning the French Opera House had burned to the ground. Its season had opened on Armistice night, only weeks before. The management said it was the most successful season the house had ever had.\n\nSo look up, above the corner, into the empty air.\n\nThat is about where Paradise used to be.\n",
     "teaser": "Stand at the corner of Bourbon and Toulouse, and look for an opera house.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-opera-house-that-isnt-here/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 76.9,
+        "audioBytes": 1231350
+      }
+    ],
     "pronunciations": [
       {
         "written": "le paradis",
@@ -10679,14 +11253,7 @@ export const LIBRARY: readonly Echo[] = [
       "music",
       "bourbon-street"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-opera-house-that-isnt-here",
-        "durationS": 80
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-priests-house",
@@ -10702,7 +11269,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 86,
+    "durationS": 85,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10712,6 +11279,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the building to the right of the cathedral. It is a near twin of the Cabildo on the other side. Arches below, arches above.\n\nIt was built to be the priests' house. The name says so. The Presbytère.\n\nNo priest ever lived in it.\n\nThe rich Spaniard who paid for the cathedral started this building in the seventeen nineties, and got it as far as the first row of arches. Then, in seventeen ninety-eight, he died.\n\nAnd it stopped. For years it was just the ground floor, roofed over with boards and rented out.\n\nThe church wardens finally finished it in eighteen thirteen. By then New Orleans belonged to the United States. They let it to shopkeepers, and then to the courts, because the rent was useful. The parish priest went on living in a small frame house round the back.\n\nIn the nineteen thirties, workmen stripped the stucco off the walls, and found the pause written in the brickwork. At the sills of the upper windows, the bricks and the mortar change completely.\n\nLook at those upper window sills now. The join is covered again, but that line is about fifteen years of nothing.\n\nThe priests' house became a courthouse, and later a museum. It has been a lot of things.\n\nIt was never a home.\n",
     "teaser": "It was built to be the priests' house. No priest ever lived in it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-priests-house/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 84.6,
+        "audioBytes": 1355066
+      }
+    ],
     "pronunciations": [
       {
         "written": "Presbytère",
@@ -10730,14 +11305,7 @@ export const LIBRARY: readonly Echo[] = [
       "spanish-colonial",
       "architecture"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-priests-house",
-        "durationS": 86
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-river-above-the-street",
@@ -10753,7 +11321,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "land",
     "format": "short",
-    "durationS": 85,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10763,6 +11331,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Stand at the rail and look at the water. Then turn round and look back at the cathedral.\n\nTo get here from the square, you walked uphill. You probably did not notice. A guidebook from nineteen oh four made the same point. The slope starts a long way back, it said, and rises so gently that you cannot feel it.\n\nThat slope is the levee. A great bank of earth between the city and the Mississippi, added to again and again as the years went on.\n\nBecause when the river floods, it rises far above the level of the streets behind you. The cathedral you are looking at sits lower than the water in front of you can reach.\n\nA New Orleans writer in the eighteen nineties described the yellow floods rising high above the land, threatening to tear the levees like cobwebs.\n\nNow look left and right along the bank. The river does not run straight past the old city. It bends around it.\n\nThe same writer said the river had shaped its banks here into the edges of the moon in its first quarter.\n\nThat is the crescent. That is why it is the Crescent City. Not a nickname somebody chose. A description of the water you are standing above.\n",
     "teaser": "You walked uphill to get here. You probably did not notice.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-river-above-the-street/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75.1,
+        "audioBytes": 1202511
+      }
+    ],
     "tags": [
       "new-orleans",
       "new-orleans-core",
@@ -10770,14 +11346,69 @@ export const LIBRARY: readonly Echo[] = [
       "levee",
       "riverfront"
     ],
-    "remoteness": 0,
+    "remoteness": 0
+  },
+  {
+    "id": "new-orleans-the-singing-priest",
+    "title": "The Singing Priest",
+    "summary": "Old guidebooks said a beloved Capuchin, Father Dagobert, could still be heard singing at night in St. Louis Cemetery.",
+    "point": {
+      "at": {
+        "lat": 29.95997,
+        "lng": -90.07137
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. Louis Cemetery No. 1, St. Louis Street side, New Orleans, Louisiana"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 76,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along the wall of the old cemetery.\n\nThe old guides called this the mother cemetery of the city. And they said that at night, people passing through could hear singing in there.\n\nTake it as a legend. It is a story the guidebooks repeated, not something anyone proved.\n\nThe singer, they said, was a priest. Father Dagobert, a French Capuchin who became superior of the city's Capuchins in colonial days. He christened, married and buried the town for half a century. Grace King, writing in eighteen ninety-five, said he had been praised in so many poems and stories that there was nothing new left to say.\n\nA city guide of nineteen-oh-four called him the singing Père. Old traditions say, it went on, that even now at night, passing through St. Louis Cemetery, you can hear his sweet voice chanting the Te Deum, or singing the lullabies Creole mothers sang to their children. The people are not afraid of his ghost, it said. They stop to listen.\n\nAn earlier guide added a second ghost. A fiddler called Tintin Calendro, playing among these tombs. But that guide admitted he had walked straight out of a storyteller's imagination.\n\nSo if you hear music here after dark, the legend has a name ready for it. Whether anyone is singing is another matter.\n",
+    "teaser": "Some passers-by, the old guides said, heard singing behind this wall.",
+    "certaintyNote": "Father Dagobert is a documented colonial Capuchin superior. The singing ghost is an \"old tradition\" reported by the 1904 Picayune guide, which says only \"St. Louis Cemetery\" and names no witness. The 1900 guide's fiddling ghost, Tintin Calendro, is admitted there to come from fiction. The script says aloud that both are legend.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-river-above-the-street",
-        "durationS": 85
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/new-orleans-the-singing-priest/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 75.5,
+        "audioBytes": 1208363
       }
-    ]
+    ],
+    "pronunciations": [
+      {
+        "written": "Dagobert",
+        "say": "DAH-goh-bair"
+      },
+      {
+        "written": "Père",
+        "say": "pair"
+      },
+      {
+        "written": "Te Deum",
+        "say": "tay DAY-um"
+      },
+      {
+        "written": "Tintin Calendro",
+        "say": "tan-TAN kah-LEN-droh"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "treme",
+      "cemeteries",
+      "ghosts",
+      "legend",
+      "capuchins"
+    ],
+    "remoteness": 0
   },
   {
     "id": "new-orleans-the-woman-who-never-lived-here",
@@ -10793,7 +11424,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 118,
+    "durationS": 109,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10801,8 +11432,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look across at the house set up high on its brick ground floor, with a long wooden gallery across the front, and a roof that sweeps down steeply and then flattens out over the gallery, like the brim of a hat.\n\nIt is called Madame John's Legacy.\n\nMadame John never lived here. She never lived anywhere.\n\nShe is a character in a story by the New Orleans writer George Washington Cable. In it, a gentleman named John, about to die, gives his house to the woman who has looked after him, and to her baby daughter. Cable describes it as a frame house with a deep front gallery, the roof running out over it. She sells it, puts the money in a bank, and the bank fails.\n\nSomewhere along the way, the story attached itself to this house. By nineteen-oh-four a city guide was pointing visitors here as the house that John left behind. The name stuck.\n\nThe real story of this ground, according to the federal survey of the building, belongs to someone else. Her name was Elizabeth Real. Her husband, a ship's captain, held this lot in the seventeen-twenties. He was killed at Natchez in seventeen twenty-nine. She married the innkeeper next door, outlived him too, and kept this property in her own hands for about fifty years.\n\nWhen she made her will in seventeen sixty-nine, she was described as ill in body because of her great age, but sound in spirit.\n\nThe house in front of you came after her. A building contract signed weeks after the great fire of seventeen eighty-eight describes a house that matches it.\n\nSo the name on this house belongs to a woman somebody made up. The ground under it belonged to one who was very real.\n",
+    "script": "Look across at the house set up high on its brick ground floor, with a long wooden gallery across the front, and a roof that sweeps down steeply and then flattens out over the gallery, like the brim of a hat.\n\nIt is called Madame John's Legacy.\n\nMadame John never lived here. She never lived anywhere.\n\nShe is a character in a story by the writer George Washington Cable. In it, a gentleman named John, about to die, gives his house to the woman who has looked after him, and to her baby daughter. Cable describes it as a frame house with a deep front gallery, the roof running out over it. She sells it, puts the money in a bank, and the bank fails.\n\nSomewhere along the way, the story attached itself to this house. By nineteen thirteen a city guide was pointing visitors here, to Madame John's Legacy. The name stuck.\n\nThe real story of this ground, according to the federal survey of the building, belongs to someone else. Her name was Elizabeth Real. Her husband, a ship's captain, held this lot in the seventeen-twenties. He was killed at Natchez in seventeen twenty-nine. She married the innkeeper next door, outlived him too, and kept this property in her own hands for some fifty years.\n\nWhen she made her will in seventeen sixty-nine, she was described as ill in body because of her great age, but sound in spirit.\n\nThe house in front of you came after her. A building contract signed weeks after the great fire of seventeen eighty-eight describes a house that matches it.\n\nSo the name on this house belongs to a woman somebody made up. The ground under it belonged to one who was very real.\n",
     "teaser": "Look at the roof sweeping down over the long front gallery.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-woman-who-never-lived-here/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 108.6,
+        "audioBytes": 1739171
+      }
+    ],
     "pronunciations": [
       {
         "written": "Elizabeth Real",
@@ -10821,14 +11460,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "literature"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-the-woman-who-never-lived-here",
-        "durationS": 118
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-twenty-days-of-france",
@@ -10844,7 +11476,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 94,
+    "durationS": 82,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10852,8 +11484,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Face the Cabildo, the arcaded building to the left of the cathedral. Look up at the triangle above its centre arches. There is an eagle carved in it.\n\nThat eagle was not there yet on the day that matters.\n\nIn November eighteen oh three, Louisiana was still Spanish. Spain had already agreed to hand it back to France, and the city already knew that France had sold it on to the United States.\n\nOn the thirtieth of November, in the council chamber upstairs, the Spanish governor handed the colony to a French official named Laussat. Out in this square, the Spanish flag came down and the French tricolour went up.\n\nIt stayed up for twenty days.\n\nOn the twentieth of December, the American commissioners rode into the square at the head of their troops. They went up to the same building, and Laussat gave them the keys of the city. Then they all walked out onto the gallery up there to watch the flags change again.\n\nA guard of about fifty old French soldiers had kept watch over their flag for those three weeks. As it came down, they took it in their arms, and marched away with it in silence.\n\nThe eagle was carved into that triangle eighteen years later. By then, nobody needed telling whose building it was.\n",
+    "script": "Face the Cabildo, the arcaded building to the left of the cathedral. Look up at the triangle above its centre arches. There is an eagle carved in it.\n\nThat eagle was not there yet on the day that matters.\n\nIn November eighteen oh three, Louisiana was still Spanish. Spain had already agreed to hand it back to France, and the city already knew that France had sold it on to the United States.\n\nOn the thirtieth of November, in the council chamber of this building, the Spanish governor handed the colony to a French official named Laussat. Out in this square, the Spanish flag came down and the French tricolour went up.\n\nIt stayed up for twenty days.\n\nOn the twentieth of December, the American commissioners rode into the square at the head of their troops. They went up to the same building, and Laussat gave them the keys of the city. Then they all walked out onto the gallery up there to watch the flags change again.\n\nA guard of fifty old French soldiers had kept watch over their flag for those three weeks. As it came down, they took it in their arms, and marched away with it in silence.\n\nThe eagle was carved into that triangle eighteen years later. By then, nobody needed telling whose building it was.\n",
     "teaser": "There is an eagle over the Cabildo's arches. It was not there yet on the day that matters.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-twenty-days-of-france/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81.5,
+        "audioBytes": 1304911
+      }
+    ],
     "pronunciations": [
       {
         "written": "Cabildo",
@@ -10871,14 +11511,7 @@ export const LIBRARY: readonly Echo[] = [
       "french-quarter",
       "louisiana-purchase"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-twenty-days-of-france",
-        "durationS": 94
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "new-orleans-words-on-the-base",
@@ -10894,7 +11527,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 88,
+    "durationS": 75,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -10902,8 +11535,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Walk to the statue's granite base and find the line cut into it. The Union must and shall be preserved.\n\nNow look up at the man on the horse. Andrew Jackson, who defended this city against the British in eighteen fifteen.\n\nThe statue was unveiled here on the ninth of February, eighteen fifty-six. The square was packed with soldiers, families and children. People crowded the balconies of the red brick buildings on either side. When the sculptor, Clark Mills, pulled the white cover away, a salute of a hundred guns went off.\n\nThe words on the base were not there that day.\n\nSix years later, Louisiana had left the Union, and a Union fleet came up the river and took New Orleans. The general sent to govern the city was Benjamin Butler. Much of the city came to hate him.\n\nButler had that sentence cut deep into the granite under Jackson's horse. His admiring biographer said it was the motto the base had been meant to carry all along.\n\nSo the city's own hero, in the middle of the city's own square, was made to say the one thing the city least wanted to hear, in the voice of the army that had taken it.\n\nNobody ever chiselled it off.\n",
+    "script": "Walk to the statue's granite base and find the line cut into it. The Union must and shall be preserved.\n\nNow look up at the man on the horse. Andrew Jackson, who defended this city against the British in eighteen fifteen.\n\nThe statue was unveiled here on the ninth of February, eighteen fifty-six. The square was packed with soldiers, families and children. People crowded the balconies of the red brick buildings on either side. When the sculptor, Clark Mills, pulled the white cover away, a salute of a hundred guns went off.\n\nThe words on the base were not there that day.\n\nSix years later, Louisiana had left the Union, and a Union fleet came up the river and took New Orleans. The general sent to govern the city was Benjamin Butler. Much of the city came to hate him.\n\nButler had that sentence cut deep into the granite under Jackson's horse. His admiring biographer said it was the motto the base had been meant to carry all along.\n\nSo the city's own hero, in the middle of the city's own square, was made to say the thing the city least wanted to hear, in the voice of the army that had taken it.\n\nNobody ever chiselled it off.\n",
     "teaser": "Find the line cut into the granite base. It was not there on the day the statue was unveiled.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-words-on-the-base/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75.3,
+        "audioBytes": 1206273
+      }
+    ],
     "tags": [
       "new-orleans",
       "new-orleans-core",
@@ -10912,14 +11553,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "statues"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/new-orleans-words-on-the-base",
-        "durationS": 88
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "newport-a-door-in-the-floor",
@@ -11382,7 +12016,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "pearl-street-oysters",
     "title": "A street paved with rubbish",
-    "summary": "Pearl Street is white underneath because people threw their lunch on the ground.",
+    "summary": "Pearl Street is named after heaps of oyster shells, and was once paved with them.",
     "point": {
       "at": {
         "lat": 40.7038,
@@ -11393,7 +12027,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "kids",
     "format": "short",
-    "durationS": 85,
+    "durationS": 55,
     "minAge": 0,
     "quality": 0.9,
     "visibility": "at-hand",
@@ -11401,23 +12035,24 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "You are standing on a street that was paved with rubbish.\n\nLook at the name. Pearl Street. The Dutch called it that because the ground here was\nwhite. Not with stone, but with oyster shells. Millions of them, crushed flat and\ntrodden down until they made a road.\n\nFour hundred years ago, the water around this island held about half of all the oysters\nin the world. Three hundred and fifty square miles of oyster beds. Some of the oysters\nwere as big as a dinner plate.\n\nThere were so many that they were cheap, so everybody ate them. Not in restaurants. From\ncarts in the street, the way you might buy a hot dog now. You ate the oyster, and you\nthrew the shell on the ground.\n\nEnough people did that, for enough years, that the shells became the street.\n\nOne more thing. The Dutch kept opening them to look for pearls. They never found a single\none. New York oysters don't make them.\n",
+    "script": "You are standing on a street named after a rubbish heap.\n\nLook at the name. Pearl Street. The Dutch called it Paerlstraat, and it was named after a shell midden. That is a giant pile of oyster shells that people had thrown away. Later, the street itself was paved with oyster shells.\n\nOysters have lived in the water around this island for about ten thousand years. The Lenape people, who lived here first, ate so many that they left huge piles of shells all over the area.\n\nWhen New York grew, oysters were cheap, so everybody ate them. Not just in restaurants. Oyster carts lined the streets, the way you might buy a hot dog now.\n\nBy 1880 the city was farming about seven hundred million oysters.\n\nAnd there is something else. The Dutch were disappointed with these oysters at first, because they do not make pearls. So, despite its name, Pearl Street was never about pearls.\n",
     "teaser": "Why is it called Pearl Street?",
     "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/pearl-street-oysters/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 55.1,
+        "audioBytes": 882354
+      }
+    ],
     "tags": [
       "new-york",
       "oysters",
       "food",
       "dutch"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "UrTldiIxfedDl9tlesyS",
-        "audioKey": "speech/pearl-street-oysters",
-        "durationS": 85
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "philadelphia-a-firehouse-on-a-market",
@@ -14569,7 +15204,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 78,
+    "durationS": 76,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14579,6 +15214,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the house on the corner, with the iron porches and the battlements along the roofline. It was begun in eighteen fifty-three for Charles Green, in the Gothic style, and finished in eighteen sixty-one.\n\nOn the twenty-second of December, eighteen sixty-four, it became the headquarters of General William Tecumseh Sherman. His army had marched from Atlanta to the sea, and Savannah was his.\n\nThat same day, Sherman dated a telegram to President Lincoln.\n\nIt went by way of Fort Monroe, in Virginia, and it is marked from there on the twenty-fifth. Christmas Day.\n\nIt reads, I beg to present you as a Christmas gift the City of Savannah, with one hundred and fifty heavy guns and plenty of ammunition, and also about twenty-five thousand bales of cotton.\n\nLincoln answered the day after Christmas. Many, many thanks for your Christmas gift, he wrote. He admitted that when Sherman left Atlanta for the coast, he had been anxious, if not fearful.\n\nSherman kept his headquarters in this house until the first of February.\n\nThe telegram, and a copy of the reply, are in the Library of Congress. Not many Christmas presents come with an inventory.\n",
     "teaser": "Not many Christmas presents come with an inventory.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-a-city-for-christmas/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 76,
+        "audioBytes": 1216722
+      }
+    ],
     "pronunciations": [
       {
         "written": "Meldrim",
@@ -14592,14 +15235,7 @@ export const LIBRARY: readonly Echo[] = [
       "squares",
       "lincoln"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-a-city-for-christmas",
-        "durationS": 78
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-ballast-stones",
@@ -14615,7 +15251,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 96,
+    "durationS": 88,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14623,9 +15259,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look down at the cobbles under your feet, and at the rough stone in the old walls along River Street.\n\nYou will hear, probably more than once today, that this stone crossed the ocean as ballast. Ships that came over light carried rock low in the hold to keep them steady, dumped it here, and loaded cotton for the voyage out.\n\nHere is what the record actually supports.\n\nShips really did arrive that way. On the second of November eighteen eighty nine, the Savannah Morning News listed a Norwegian bark up from Buenos Aires, in ballast. Another came from Brazil, in ballast. That was an ordinary day.\n\nBallast really was dumped on this waterfront. A city guide from eighteen eighty one boasted that when a railway's wharves downriver were filled in, the four quarters of the habitable globe had contributed, by way of ballast from foreign ships. When the old eastern wharves were recorded in two thousand seven, just before they were demolished, the ballast that filled them was still there.\n\nAnd when federal surveyors photographed a stone warehouse on River Street in the nineteen thirties, they wrote that its rubble stone was said to have been brought over as ballast.\n\nSaid to have been. Even then it was the story, not the receipt.\n\nSo nobody can show you which stone came from where. But the ships came in heavy with rock, and the rock had to go somewhere.\n",
+    "script": "Look down at the cobbles under your feet, and at the rough stone in the old walls along River Street.\n\nYou will hear, probably more than once today, that this stone crossed the ocean as ballast. Ships that came over light carried rock low in the hold to keep them steady, dumped it here, and loaded cotton for the voyage out.\n\nHere is what the record actually supports.\n\nShips really did arrive that way. On the second of November eighteen eighty nine, the Savannah Morning News listed a Norwegian bark up from Buenos Aires, in ballast. A British steamship came in from Teneriffe, in ballast. That was an ordinary day.\n\nBallast really was dumped on this waterfront. A city guide of the early eighteen eighties boasted that when a railway's wharves downriver were filled in, the four quarters of the habitable globe had contributed, by way of ballast from foreign ships. When the old eastern wharves were recorded in two thousand seven, ahead of their demolition, the ballast that filled them was still there.\n\nAnd when federal surveyors photographed a stone warehouse on River Street in the nineteen thirties, they wrote that its rubble stone was said to have been brought over as ballast.\n\nSaid to have been. Even then it was the story, not the receipt.\n\nSo nobody can show you which stone came from where. But the ships came in heavy with rock, and the rock had to go somewhere.\n",
     "teaser": "Everyone will tell you this stone was ballast. Here is what the record says.",
     "certaintyNote": "That ships arriving in ballast came up this river, and that foreign ballast was used as waterfront fill, is documented. That the stones in River Street's walls and paving are that ballast is a tradition recorded as \"said to have been\" since the 1930s; no source ties any particular stone to a ship. The script says so.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-ballast-stones/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 87.7,
+        "audioBytes": 1403967
+      }
+    ],
     "tags": [
       "savannah",
       "savannah-core",
@@ -14633,14 +15277,7 @@ export const LIBRARY: readonly Echo[] = [
       "shipping",
       "cotton"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-ballast-stones",
-        "durationS": 96
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-city-hall-dome",
@@ -14656,7 +15293,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 72,
+    "durationS": 67,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14664,9 +15301,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the dome on City Hall.\n\nIt was not built to look like that.\n\nThis is the spot where the City Exchange stood from seventeen ninety nine. In nineteen oh four the city tore it down and started again. The new City Hall was finished at the end of nineteen oh five, and the first council met here in January nineteen oh six.\n\nThe dome rises another seventy feet above the building. It was sheathed in copper, and for many years the city simply let that copper weather on its own.\n\nThen the air got to it. In nineteen sixty six the city painted the dome to stop it deteriorating. The culprit, according to the federal survey of the building, was a local fertilizer plant.\n\nBy the early nineteen eighties it wore a protective coating, coloured to look like the weathered copper it had been designed to become all along.\n\nWhat you are looking at now came after that.\n\nIt was designed to change colour on its own. The city has been choosing its colour ever since.\n",
+    "script": "Look up at the dome on City Hall.\n\nIt was not built to look like that.\n\nThis is the spot where the City Exchange stood from seventeen ninety nine. In nineteen oh four the city tore it down and started again. The new City Hall was finished at the end of nineteen oh five, and the first council met here in January nineteen oh six.\n\nThe dome rises another seventy feet above the building. It was sheathed in copper, and for many years the city simply let that copper weather on its own.\n\nThen the air got to it. In nineteen sixty six the city painted the dome to stop it deteriorating. The culprit, according to the federal survey of the building, was a local fertilizer plant.\n\nLater the survey found it under a protective coating, coloured to look like the weathered copper it had been designed to become all along.\n\nWhat you are looking at now came after that.\n\nIt was designed to change colour on its own. The city has been choosing its colour ever since.\n",
     "teaser": "Look up at the dome. It was not built to look like that.",
     "detail": "The cornerstone, laid on the eleventh of August 1904, is at the northeast corner about twenty feet above the ground below, and is easiest to see from one of the footbridges over Factors Walk. The architect was Hyman W. Witcover.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-city-hall-dome/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 66.7,
+        "audioBytes": 1068764
+      }
+    ],
     "tags": [
       "savannah",
       "savannah-core",
@@ -14674,14 +15319,7 @@ export const LIBRARY: readonly Echo[] = [
       "civic",
       "bay-street"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-city-hall-dome",
-        "durationS": 72
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-cotton-exchange",
@@ -14697,7 +15335,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 66,
+    "durationS": 61,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14705,9 +15343,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at how you get into the Cotton Exchange. Not from the pavement. From a bridge, with iron railings, across a gap.\n\nThe building opened for business at noon on a Monday in September eighteen eighty seven, when Savannah ranked first among the cotton ports of the Atlantic coast. From Bay Street it looks like three storeys. From River Street, round the back, it is six.\n\nWhat it stands on is the interesting part.\n\nThis was the Drayton Street slip, the way down from the bluff to the river. In March eighteen eighty six the Morning News watched workmen pulling up the stones of that slip. Part of it was filled in and walled off. By August, iron pillars and girders were in place to carry the building, and the old iron footbridge across the slip had been taken down, to be put up again somewhere else.\n\nSo the Cotton Exchange is standing on iron legs, over the old way down to the water.\n",
+    "script": "Look at how you get into the Cotton Exchange. Not from the pavement. From a bridge, with iron railings, across a gap.\n\nThe building opened for business at noon on a Monday in September eighteen eighty seven, when Savannah ranked first among the cotton ports of the Atlantic coast. From Bay Street it looks like three storeys. From River Street, round the back, it is six.\n\nWhat it stands on is the interesting part.\n\nThis was the Drayton Street slip, the way down from the bluff to the river. In March eighteen eighty six the Morning News watched workmen pulling up the stones of that slip. Part of it was to be filled in and walled off. By August, iron pillars and girders were in place to carry the building, and the old iron footbridge across the slip had been taken down, to be put up again somewhere else.\n\nSo the Cotton Exchange is standing on iron legs, over the old way down to the water.\n",
     "teaser": "Look at how you get in. Not from the pavement. From a bridge.",
     "detail": "In March 1889 the Exchange's members gave three hundred and fifty dollars for a little park and a fountain on the open ground in front of the building, running out to the middle of Bay Street. The architect was William G. Preston.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-cotton-exchange/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 61,
+        "audioBytes": 976813
+      }
+    ],
     "pronunciations": [
       {
         "written": "Drayton",
@@ -14721,14 +15367,50 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "bay-street"
     ],
-    "remoteness": 0,
+    "remoteness": 0
+  },
+  {
+    "id": "savannah-dinner-under-the-trees",
+    "title": "Dinner Under the Trees",
+    "summary": "Every old Savannah guidebook told how a dinner party at Bonaventure was finished under the trees while the house burned.",
+    "point": {
+      "at": {
+        "lat": 32.0476,
+        "lng": -81.0411
+      },
+      "triggerRadiusKm": 0.12,
+      "place": "Bonaventure Cemetery, Savannah, Georgia"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 51,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Before this was a cemetery, it was a country estate. And it has a story that every old Savannah guidebook liked to tell.\n\nTreat it as a legend. None of those guidebooks names a guest, or quotes anyone who was there.\n\nThe first house, the story goes, stood on the high ground over the river, facing a garden that ran down in terraces to the water.\n\nOne evening, in the middle of a dinner party, the roof caught fire.\n\nNothing could save the house. So the host had the dinner carried out under the trees, and there it was finished, while the house burned to the ground.\n\nA guide for strangers told it in eighteen eighty one. Another guidebook told it in eighteen ninety. Another in nineteen ten. Each time, the dinner was finished.\n\nNobody can show you the burned house now. But the story still sets the table out here, under the oaks.\n",
+    "teaser": "The roof was on fire. The host did not stop dinner.",
+    "certaintyNote": "A plantation legend repeated by Savannah guidebooks of 1881, 1890 and 1910, none of which gives a date, a host's name for that night, or a first-hand witness. Later ghost stories grew from it; those are not in the sources and are left out. The script says aloud that it is a legend.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-cotton-exchange",
-        "durationS": 66
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/savannah-dinner-under-the-trees/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 50.5,
+        "audioBytes": 808794
       }
-    ]
+    ],
+    "tags": [
+      "savannah",
+      "bonaventure",
+      "cemeteries",
+      "ghosts",
+      "legend"
+    ],
+    "remoteness": 1
   },
   {
     "id": "savannah-factors-walk",
@@ -14744,7 +15426,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 78,
+    "durationS": 72,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14752,8 +15434,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand at the railing and look down. Between Bay Street and the row of old buildings on the river side there is a gap, and narrow iron bridges cross it.\n\nFollow one of those bridges to its door. You are walking into the top floor of the building.\n\nThis was the row of the cotton factors, the brokers of the cotton trade. One of these buildings, at the two hundred block of East Bay, went up in eighteen twenty three. When federal surveyors measured it, they described entrances on the fourth floor, a cantilevered walk, and more bridges reaching the floors below.\n\nThe offices were up here, level with the street and the merchants. The warehouse floors stacked down the face of the bluff toward the river.\n\nA stone store on the west side of Bay Street, built around eighteen sixteen, works the same way. Three storeys from Bay Street. Four from the river. Every floor but the attic opens onto a different level of the town.\n\nSo none of these buildings has one ground floor. There is the floor at the water, and the floor at the street, and an iron bridge in between.\n",
+    "script": "Stand at the railing and look down. Between Bay Street and the row of old buildings on the river side there is a gap, and narrow iron bridges cross it.\n\nFollow one of those bridges to its door. You are walking into the top floor of the building.\n\nThis was the row of the cotton factors, the brokers of the cotton trade. One of these buildings, at the two hundred block of East Bay, went up in eighteen twenty three. When federal surveyors recorded it, they described entrances on the fourth floor, a cantilevered walk, and more bridges reaching the floors below.\n\nThe offices were up here, level with the street and the merchants. The warehouse floors stacked down the face of the bluff toward the river.\n\nA stone store on the west side of Bay Street, built around eighteen sixteen, works the same way. Three storeys from Bay Street. Four from the river. Every floor but the attic opens onto a different level of the town.\n\nSo none of these buildings has one ground floor. There is the floor at the water, and the floor at the street, and an iron bridge in between.\n",
     "teaser": "Follow one of the iron bridges to its door.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-factors-walk/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 72.1,
+        "audioBytes": 1154446
+      }
+    ],
     "pronunciations": [
       {
         "written": "factors",
@@ -14767,14 +15457,7 @@ export const LIBRARY: readonly Echo[] = [
       "cotton",
       "architecture"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-factors-walk",
-        "durationS": 78
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-first-african-baptist",
@@ -14790,7 +15473,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 82,
+    "durationS": 76,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14800,6 +15483,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the walls of this church. Smooth, pale stucco.\n\nUnderneath it is brick. Savannah grey brick, laid four bricks deep. And the history of this building, as recorded for the federal survey, says those bricks were formed by hand at night, on the bank of the river, by members of this congregation, after they had worked a full day for the people who owned them.\n\nThey had been worshipping on this spot since the eighteen thirties, in an old wooden church bought from a white Baptist congregation that had moved to a new building. They paid for it with money earned working nights, with their owners' permission. Often, the survey notes, it was money they had been saving to buy their own freedom, or their family's.\n\nIn eighteen fifty five they pulled the wooden church down and began this one. It took four years. It cost more than ten thousand dollars, and it was paid off before the end of eighteen fifty nine, the year it was finished.\n\nIt is recorded as the first brick building in Savannah owned by African Americans.\n\nThe stucco went on in the nineteen forties. So you cannot see a single one of those bricks. They are all still there.\n",
     "teaser": "Look at the walls. You cannot see a single brick.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-first-african-baptist/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 76.3,
+        "audioBytes": 1221737
+      }
+    ],
     "tags": [
       "savannah",
       "savannah-core",
@@ -14807,14 +15498,7 @@ export const LIBRARY: readonly Echo[] = [
       "religion",
       "slavery"
     ],
-    "remoteness": 0.14,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-first-african-baptist",
-        "durationS": 82
-      }
-    ]
+    "remoteness": 0.14
   },
   {
     "id": "savannah-old-harbor-light",
@@ -14830,7 +15514,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 62,
+    "durationS": 54,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14838,8 +15522,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the tall iron post at this end of the park, with the light at the top.\n\nThat is a lighthouse. Or it was.\n\nThe United States government put it up in eighteen fifty eight, a cast iron standard on a granite foundation, here on the Bay, as a beacon for mariners finding their way up the Savannah River.\n\nNotice where it stands. Not on a headland. Not out on the water. Up on the bluff, at the end of a city street, on what was then the Bay Street green. In nineteen hundred the city's park commission asked for money to improve that green, and suggested a name for it. Emmet Park.\n\nWhen federal surveyors came to record the light in the nineteen thirties, they noted two things about it.\n\nIt had not been used for many years.\n\nAnd it was well maintained.\n\nSomebody was looking after a light that nobody needed.\n",
+    "script": "Look at the tall iron post at this end of the park, with the light at the top.\n\nThat is a lighthouse. Or it was.\n\nThe United States government put it up in eighteen fifty eight, a cast iron standard on a granite foundation, here on the Bay, as a beacon for mariners finding their way up the Savannah River.\n\nNotice where it stands. Not on a headland. Not out on the water. Up on the bluff, on the Bay. In nineteen hundred the city's park commission asked for money to improve the Bay Street green, and suggested a name for it. Emmet Park.\n\nWhen federal surveyors came to record the light, they noted a pair of things about it.\n\nIt had not been used for many years.\n\nAnd it was well maintained.\n\nSomebody was looking after a light that nobody needed.\n",
     "teaser": "It is a lighthouse. Or it was.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-old-harbor-light/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 54.4,
+        "audioBytes": 871070
+      }
+    ],
     "tags": [
       "savannah",
       "savannah-core",
@@ -14847,14 +15539,7 @@ export const LIBRARY: readonly Echo[] = [
       "lighthouses",
       "shipping"
     ],
-    "remoteness": 0.23,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-old-harbor-light",
-        "durationS": 62
-      }
-    ]
+    "remoteness": 0.23
   },
   {
     "id": "savannah-pirates-house",
@@ -14870,7 +15555,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 95,
+    "durationS": 84,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14878,10 +15563,18 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This low old building calls itself the Pirates' House. Before you go in, it is worth knowing which parts of that are history, and which are a very good story.\n\nStart with the book. In Treasure Island, published in eighteen eighty three, Robert Louis Stevenson gives his pirate captain, Flint, a death but no grave. Billy Bones says Flint handed him the map at Savannah, when he lay dying. Long John Silver puts it more bluntly. Flint died of rum at Savannah.\n\nThat is all Stevenson says. He never names a house. And Flint never existed.\n\nThe house came later. In February nineteen fifty one, the food editor of a Sunday magazine in the Washington Evening Star wrote about the newly restored tavern here, in the old Trustees' Garden. Tradition has it, the article said, that the man Stevenson based Flint on died in an upstairs bedroom of the old inn. And Flint's ghost is said to haunt the area on moonless nights.\n\nThe house tells its own story too. It says it opened in seventeen fifty three as an inn for seafarers, and soon became a meeting place for pirates and sailors back from ports around the world.\n\nNone of that is proven. Not the inn's pirates, not the real man behind Flint, and certainly not the ghost.\n\nBut Stevenson did send Flint to Savannah to die. Savannah has been happy to find him a room.\n",
+    "script": "This low old building calls itself the Pirates' House. Before you go in, it is worth knowing which parts of that are history, and which are a very good story.\n\nStart with the book. In Treasure Island, published in eighteen eighty three, Robert Louis Stevenson gives his pirate captain, Flint, a death but no grave. Billy Bones says Flint handed him the map at Savannah, when he lay dying. Long John Silver puts it more bluntly. Flint died of rum at Savannah.\n\nThat is all Stevenson says. He never names a house.\n\nThe house came later. In February nineteen fifty one, the food editor of a Sunday magazine in the Washington Evening Star wrote about the newly restored tavern here. Tradition has it, the article said, that the man Stevenson based Flint on died in an upstairs bedroom of the old inn. And Flint's ghost is said to haunt the area on moonless nights.\n\nThe story has grown since. A Library of Congress photograph of the house, captioned from the photographer's notes, says it opened in seventeen fifty three as an inn for seafarers, and soon became a meeting place for pirates and sailors back from ports around the world.\n\nNone of that is proven. Not the inn's pirates, not the real man behind Flint, and certainly not the ghost.\n\nBut Stevenson did send Flint to Savannah to die. Savannah has been happy to find him a room.\n",
     "teaser": "Stevenson gave Captain Flint a death in Savannah, but no address.",
-    "certaintyNote": "A published tradition. Captain Flint is a fictional character; Treasure Island places his death at Savannah but names no house. The upstairs-room tradition and the ghost are reported in 1951 as \"tradition\" and \"said to\"; the 1753 inn claim is the house's own account. The script says plainly that none of it is proven.",
+    "certaintyNote": "A published tradition. Captain Flint is a fictional character; Treasure Island places his death at Savannah but names no house. The upstairs-room tradition and the ghost are reported in 1951 as \"tradition\" and \"said to\"; the 1753 inn claim comes from a Library of Congress photo caption based on the photographer's notes. The script says plainly that none of it is proven.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/savannah-pirates-house/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 83.9,
+        "audioBytes": 1342945
+      }
+    ],
     "pronunciations": [
       {
         "written": "Stevenson",
@@ -14895,14 +15588,49 @@ export const LIBRARY: readonly Echo[] = [
       "literature",
       "ghosts"
     ],
-    "remoteness": 0.27,
+    "remoteness": 0.27
+  },
+  {
+    "id": "savannah-raleigh-on-gas-works-hill",
+    "title": "Raleigh on Gas Works Hill",
+    "summary": "A 1910 Savannah guidebook began the city's history with Sir Walter Raleigh landing here in 1584. The record says otherwise.",
+    "point": {
+      "at": {
+        "lat": 32.0787,
+        "lng": -81.0835
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "East Bay Street and East Broad Street, Savannah, Georgia"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 59,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are at the eastern end of the bluff. Hold on to that, because a legend once started the whole story of this city right here.\n\nIn nineteen ten, a Savannah guidebook opened its timeline of the city not with Oglethorpe, but with Sir Walter Raleigh. In fifteen eighty four, it said, tradition tells us, Raleigh landed here, and held a conference with an Indian chief, near what was known as Gas Works Hill.\n\nThe gas-house stood at the eastern end of this bluff, where a Revolutionary fort called Fort Wayne had been.\n\nIt is a legend, and hard to keep. The National Park Service tells the year differently. Raleigh's charter came on condition that he stayed in England. In April fifteen eighty four he sent an expedition instead, and it arrived on the Outer Banks of what is now North Carolina.\n\nSo nobody can say who, if anyone, stood on this hill in fifteen eighty four. But for a while, the city liked its story to start a century and a half before Oglethorpe.\n",
+    "teaser": "Savannah once said its story began here, with Sir Walter Raleigh.",
+    "certaintyNote": "A local tradition printed in the 1910 Illustrated guide to Savannah as \"tradition tells us\". The National Park Service's account of the 1584 voyage puts it on the Outer Banks, with Raleigh's charter requiring him to stay in England. The script says aloud that it is a legend.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
         "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/savannah-pirates-house",
-        "durationS": 95
+        "audioKey": "audio/savannah-raleigh-on-gas-works-hill/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 59.2,
+        "audioBytes": 948392
       }
-    ]
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "colonial",
+      "legend"
+    ],
+    "remoteness": 0.28
   },
   {
     "id": "savannah-steamship-savannah",
@@ -14918,7 +15646,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 85,
+    "durationS": 77,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14926,8 +15654,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look out at the river, and picture a sailing ship like any other, with one odd thing about her. Smoke, and a paddle wheel on each side.\n\nShe was called the Savannah. Merchants of this city paid for her, at the suggestion of a captain named Moses Rogers, and she was built in the North. In May eighteen nineteen she left this river for Liverpool.\n\nIt was cautious engineering. The iron paddle wheels were hinged, so the crew could fold them up onto the deck. She burned pitch pine, not coal, so the engine was used sparingly. Old accounts disagree about how many days it actually ran.\n\nOff Cape Clear, on the south coast of Ireland, someone saw her coming. A ship under sail, pouring out smoke. She was signalled to Liverpool as a vessel on fire, and a cutter was sent out from Cork to her relief.\n\nShe did not need relief. She went on into Liverpool, and then to Saint Petersburg, and came home to Savannah that November, by one account with not a screw, nor a bolt, nor a rope yarn parted.\n\nBy this city's proud account, she was the first steamship to cross the Atlantic.\n\nThe first people to see her do it thought she was on fire.\n",
+    "script": "Look out at the river, and picture a sailing ship like any other, with something odd about her. Smoke, and a paddle wheel on each side.\n\nShe was called the Savannah. Merchants of this city paid for her, at the suggestion of a captain named Moses Rogers, and she was built in the North. In May eighteen nineteen she left this river for Liverpool.\n\nIt was cautious engineering. The iron paddle wheels were hinged, so the crew could fold them up onto the deck. She burned pitch pine, not coal, so the engine was used sparingly. Old accounts disagree about how many days it actually ran.\n\nOff Cape Clear, someone saw her coming. A ship under sail, pouring out smoke. She was signalled to Liverpool as a vessel on fire, and a cutter was sent out from Cork to her relief.\n\nShe did not need relief. She went on into Liverpool, and then to Saint Petersburg, and came home to Savannah that November, by one account with not a screw, nor a bolt, nor a rope yarn parted.\n\nBy this city's proud account, she was the first steamship to cross the Atlantic.\n\nThe first people to see her do it thought she was on fire.\n",
     "teaser": "The first people to see her cross thought she was burning.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-steamship-savannah/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 77.1,
+        "audioBytes": 1235112
+      }
+    ],
     "pronunciations": [
       {
         "written": "Cape Clear",
@@ -14941,14 +15677,7 @@ export const LIBRARY: readonly Echo[] = [
       "shipping",
       "firsts"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-steamship-savannah",
-        "durationS": 85
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-thackerays-comfortable-quarters",
@@ -14964,7 +15693,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 80,
+    "durationS": 74,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -14972,9 +15701,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand across from the house with the stuccoed front and the iron railings round its balconies. A cotton merchant named Andrew Low built it in the eighteen forties.\n\nOn Saint Valentine's Day, one year in the eighteen fifties, a famous English novelist sat in this house and wrote a letter home.\n\nHe was William Makepeace Thackeray, the author of Vanity Fair, and he was crossing America giving lectures.\n\nHe was tired of hotels. Tired of the crowds drinking at the bar, and the tearing northern bustle. Here, he wrote, he had the most comfortable quarters he had found anywhere in the United States.\n\nHe liked the town as well. Wide streets, trees, a few cows and carriages toiling through the sandy road.\n\nAnd he was honest about the people who came to hear him. A snug little audience of three or four hundred, he wrote, far too lazy to laugh or applaud.\n\nThe last time he stayed, Low had been a widower. Now there was a pretty new wife, and a baby daughter crowing in the nursery next door.\n\nA great writer, in a fine house, describing his audience as too lazy to clap.\n\nHe was having a wonderful time.\n",
+    "script": "Stand across from the house with the stuccoed front and the iron railings round its balconies. A cotton merchant named Andrew Low built it in the eighteen forties.\n\nOn Saint Valentine's Day, one year in the eighteen fifties, a famous English novelist sat in this house and wrote a letter home.\n\nHe was William Makepeace Thackeray, and he was crossing America giving lectures.\n\nHe was tired of hotels. Tired of the crowds drinking at the bar, and the tearing northern bustle. Here, he wrote, he had the most comfortable quarters he had found anywhere in the United States.\n\nHe liked the town as well. Wide streets, trees, a few cows and carriages toiling through the sandy road.\n\nAnd he was honest about the people who came to hear him. A snug little audience of three or four hundred, he wrote, far too lazy to laugh or applaud.\n\nThe last time he stayed, Low had been a widower. Now there was a pretty new wife, and a baby daughter crowing in the nursery next door.\n\nA great writer, in a fine house, describing his audience as too lazy to clap.\n\nHe was having a wonderful time.\n",
     "teaser": "On Saint Valentine's Day, a novelist sat in this house and wrote a letter home.",
     "detail": "The year is uncertain. The 1887 edition of the letters dates it, in brackets, to 1855; the Historic American Buildings Survey record says Thackeray was a guest in 1853 and 1856.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-thackerays-comfortable-quarters/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 73.9,
+        "audioBytes": 1183285
+      }
+    ],
     "pronunciations": [
       {
         "written": "Thackeray",
@@ -14991,14 +15728,7 @@ export const LIBRARY: readonly Echo[] = [
       "lafayette-square",
       "writers"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-thackerays-comfortable-quarters",
-        "durationS": 80
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-the-chimney-with-privies-in-its-base",
@@ -15014,7 +15744,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 70,
+    "durationS": 69,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15022,22 +15752,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Find the tall, many-sided brick chimney rising over the old railroad shops.\n\nIt was built in eighteen fifty five for the Central of Georgia Railroad. A hundred and twenty three feet high, standing on a hundred and twenty piles.\n\nIt was three things at once.\n\nFirst, a chimney. Through flues under the yard it pulled the smoke from every forge and boiler in the shops.\n\nSecond, a water tank. Round its waist sits a ring of cast iron panels, made here in Savannah. Behind them was a tank of forty thousand gallons, for filling the locomotives.\n\nThird, look at the base. Between the brick buttresses there are little arched cells. Those were the workers' privies.\n\nWhen the government surveyed the shops, it said the combination of smokestack and privy appeared to be unique.\n\nThe day it was finished, the railroad's superintendent and the master bricklayer climbed to the top before the scaffolding came down, and drank a bottle of champagne up there.\n\nThe bosses toasted it from the top. Everyone else used it from the bottom.\n",
+    "script": "Find the tall, many-sided brick chimney rising over the old railroad shops.\n\nIt was built in eighteen fifty five for the Central of Georgia Railroad. A hundred and twenty three feet high, standing on a hundred and twenty piles.\n\nIt was three things at once.\n\nFirst, a chimney. Through flues under the yard it pulled the smoke from every forge and boiler in the shops.\n\nSecond, a water tank. Round its waist sits a ring of cast iron panels, made here in Savannah. Behind them was a tank of forty thousand gallons, for filling the locomotives.\n\nThird, look at the base. Between the brick buttresses there are little arched cells. Those were the workers' privies.\n\nWhen the government surveyed the shops, it said the combination of smokestack and privy appeared to be unique.\n\nWhen it was finished, the railroad's superintendent and the man responsible for its masonry climbed to the top before the scaffolding came down, and drank a bottle of champagne up there.\n\nThe bosses toasted it from the top. Everyone else used it from the bottom.\n",
     "teaser": "It was three things at once. Look at the base.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-chimney-with-privies-in-its-base/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.1,
+        "audioBytes": 1106798
+      }
+    ],
     "tags": [
       "savannah",
       "savannah-core",
       "railroads",
       "engineering"
     ],
-    "remoteness": 0.35,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-chimney-with-privies-in-its-base",
-        "durationS": 70
-      }
-    ]
+    "remoteness": 0.35
   },
   {
     "id": "savannah-the-church-copied-from-itself",
@@ -15053,7 +15784,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 81,
+    "durationS": 79,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15061,8 +15792,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the white steeple on the corner of Bull Street and Oglethorpe Avenue.\n\nThe Independent Presbyterian Church was dedicated in eighteen nineteen. Fifty years later, a history of the city called it one of the most elegant and spacious houses of worship in the country.\n\nOn the evening of the sixth of April, eighteen eighty-nine, a clerk in a dry goods store on Broughton Street stepped into a shop window to light the gas. A gust of wind blew the flame against something light and flammable.\n\nBy morning more than fifty buildings were gone. The Savannah Morning News described what was left of this church. Skeleton walls.\n\nWhat you are looking at went up in eighteen ninety. It was rebuilt from measured drawings of the church that burned. A copy of itself, built to its own measurements.\n\nThe congregation had reasons to be faithful to the old design. By one account from the nineteen thirties, a legacy left to the church required that its high pulpit never be changed.\n\nSo the church in front of you is about seventy years younger than it looks.\n\nThe original stood for seventy years. The copy has now stood for well over a century.\n",
+    "script": "Look up at the white steeple on the corner of Bull Street and Oglethorpe Avenue.\n\nThe Independent Presbyterian Church was dedicated in eighteen nineteen. Fifty years later, a history of the city called it one of the most elegant and spacious houses of worship in the country.\n\nOn the evening of the sixth of April, eighteen eighty-nine, a clerk in a dry goods store on Broughton Street stepped into a shop window to light the gas. A gust of wind blew the flame against something light and flammable.\n\nBy morning more than fifty buildings were gone. The Savannah Morning News described what was left of this church. Skeleton walls.\n\nWhat you are looking at went up in eighteen ninety. It was rebuilt from measured drawings of the church that burned. A copy of itself, built to its own measurements.\n\nThe congregation had reasons to be faithful to the old design. By one account in the federal survey, a legacy left to the church required that its high pulpit never be changed.\n\nSo the church in front of you is about seventy years younger than it looks.\n\nThe original stood for seventy years. The copy has now stood for well over a century.\n",
     "teaser": "This church is about seventy years younger than it looks.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-church-copied-from-itself/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 78.7,
+        "audioBytes": 1259772
+      }
+    ],
     "tags": [
       "savannah",
       "savannah-core",
@@ -15070,14 +15809,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "fire"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-church-copied-from-itself",
-        "durationS": 81
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-the-fountain-that-kept-getting-more-parisian",
@@ -15093,7 +15825,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 69,
+    "durationS": 70,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15101,9 +15833,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Walk up to the edge of the basin and look at the fountain. The tiers, the figures, the water falling from one level to the next.\n\nNow ask where it came from. Savannah's own guidebooks never quite agreed.\n\nIn eighteen ninety, one said it was designed from a prize model shown at an exhibition in London, and that it was similar to the grand fountain in the Place de la Concorde, in Paris.\n\nIn eighteen ninety nine, another went further. An exact reproduction, it said, of the one in Paris.\n\nBy nineteen ten, a third guide had it modelled on Paris. Close, but no longer exact.\n\nWhat is certain is plainer. Before the fountain, the middle of this park was marked by a small wooden bridge. The fountain went in around eighteen fifty eight, and local photographers were soon selling pictures of it. After the war, a photographer who had followed Sherman's army put it in his book of the campaign.\n\nThe fountain has not changed much since. The story keeps improving.\n",
+    "script": "Walk up to the edge of the basin and look at the fountain. The tiers, the figures, the water falling from level to level.\n\nNow ask where it came from. Savannah's own guidebooks never quite agreed.\n\nIn eighteen ninety, one said it was designed from a prize model shown at an exhibition in London, and that it was similar to the grand fountain in the Place de la Concorde, in Paris.\n\nIn eighteen ninety nine, another went further. An exact reproduction, it said, of the one in Paris.\n\nBy nineteen ten, a third guide had it modelled on Paris. Close, but no longer exact.\n\nWhat is certain is plainer. Before the fountain, the middle of this park was marked by a small wooden bridge. The fountain went in around eighteen fifty eight, and a photographer on Broughton Street put it on a stereo card. After the war, a photographer who had followed Sherman's army put it in his book of the campaign.\n\nThe fountain has not changed much since. The story keeps improving.\n",
     "teaser": "Ask where it came from. The guidebooks never quite agreed.",
     "certaintyNote": "The fountain's date is documented, from a dated stereograph record at the Library of Congress. Its model is not settled in these sources: an 1890 guide ties it to a prize model shown in London and calls it similar to the Place de la Concorde fountain, an 1899 guide calls it an exact reproduction of the Paris fountain, and a 1910 guide says only that it was modelled on it. The script reports each claim as the guidebook's, not as fact. A widely repeated account that it was ordered from a manufacturer's catalogue could not be sourced from reachable sites and is left out.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-fountain-that-kept-getting-more-parisian/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.8,
+        "audioBytes": 1117665
+      }
+    ],
     "pronunciations": [
       {
         "written": "Place de la Concorde",
@@ -15116,14 +15856,7 @@ export const LIBRARY: readonly Echo[] = [
       "forsyth-park",
       "fountains"
     ],
-    "remoteness": 0.11,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-fountain-that-kept-getting-more-parisian",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0.11
   },
   {
     "id": "savannah-the-gate-in-the-bull-street-wall",
@@ -15139,7 +15872,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 72,
+    "durationS": 64,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15147,8 +15880,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand on Bull Street beside the garden wall of the big stuccoed house on the corner of Harris Street.\n\nMost people come to this house for its stories. This one is written down.\n\nThe house was built around eighteen forty by Francis Sorrel, a Frenchman. One of his sons became a doctor, and kept his office in the basement. The way in to that office was not the front door. It was a gateway in this wall, on Bull Street.\n\nLater the gateway was bricked up. In nineteen seventeen, a writer remembering the doctor said you could still make out its outline in the wall.\n\nThen in the nineteen thirties a new owner wanted a gate on Bull Street again. She had the wall opened, but in a different place, and the old opening stayed filled with brick.\n\nSo walk along it slowly, and look for a patch of brick that does not quite match. Nobody can promise it is still there. It was more than a hundred years ago.\n\nHouses keep their doors. Walls keep the ones they lost.\n",
-    "teaser": "Most people come to this house for its stories. This one is written down.",
+    "script": "Stand on Bull Street beside the garden wall of the big stuccoed house on the corner of Harris Street.\n\nMost people come to this house for its stories. This story is written down.\n\nThe house was built around eighteen forty by Francis Sorrel, a Frenchman. One of his sons became a doctor, and kept his office in the basement. The way in to that office was not the front door. It was a gateway in this wall, on Bull Street.\n\nLater the gateway was bricked up. In nineteen seventeen, a writer remembering the doctor said you could still make out its outline in the wall.\n\nThen a later owner wanted a gate on Bull Street again. She had the wall opened, but in a different place, and the old opening stayed filled with brick.\n\nSo walk along it slowly, and look for a patch of brick that does not quite match. Nobody can promise it is still there. It was more than a hundred years ago.\n\nHouses keep their doors. Walls keep the ones they lost.\n",
+    "teaser": "Most people come to this house for its stories. This story is written down.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-gate-in-the-bull-street-wall/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 64.2,
+        "audioBytes": 1028640
+      }
+    ],
     "pronunciations": [
       {
         "written": "Sorrel",
@@ -15161,14 +15902,7 @@ export const LIBRARY: readonly Echo[] = [
       "madison-square",
       "architecture"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-gate-in-the-bull-street-wall",
-        "durationS": 72
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-the-gate-she-made",
@@ -15184,7 +15918,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 78,
+    "durationS": 85,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15192,8 +15926,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This is the house where Juliette Gordon Low was born, in eighteen sixty. Her family called her Daisy. Fifty-two years later, in this city, she started the Girl Scouts.\n\nHer grandfather bought the house in eighteen thirty-one, and Gordons lived here for generations. The Girl Scouts bought it in nineteen fifty-three.\n\nIf you go into the garden, look for the iron double gate in the east wall.\n\nShe made it.\n\nNot ordered it. Designed and made it, in eighteen eighty-nine, for her own house in England, an estate called Wellesbourne. In nineteen twenty-six she brought it home to Savannah, to stand at the entrance of a small park east of the city, where many of the early Girl Scout meetings were held. In nineteen seventy-two it was moved here for safekeeping.\n\nThe garden around it is a reconstruction, laid out in the nineteen fifties from the memories of her relatives. They did not agree. One remembered circles. Another remembered dirt paths, violets, a banana tree. A photograph taken at Daisy's wedding, in eighteen eighty-six, showed paths running out from the porch.\n\nEverything else in this garden had to be remembered. The gate, she made.\n",
+    "script": "This is the house where Juliette Gordon Low was born, in eighteen sixty. Her family called her Daisy. Fifty-two years later, in this city, she started the Girl Scouts.\n\nThe Gordons bought the house in eighteen thirty-one, and Gordons lived here for generations. The Girl Scouts bought it in nineteen fifty-three.\n\nIf you go into the garden, look for the iron double gate in the east wall.\n\nShe made it.\n\nNot ordered it. Designed and made it, in eighteen eighty-nine, for her own house in England, an estate called Wellesbourne. In nineteen twenty-six she brought it home to Savannah, to stand at the entrance of a small park east of the city, where many of the early Girl Scout meetings were held. In nineteen seventy-two it was moved here for safekeeping.\n\nThe garden around it is a reconstruction, laid out in the nineteen fifties from the memories of her relatives. They did not agree. One remembered circles. Another remembered dirt paths, violets, a banana tree. A photograph taken at Daisy's wedding, in eighteen eighty-six, showed paths running out from the porch.\n\nEverything else in this garden had to be remembered. The gate, she made.\n",
     "teaser": "Everything else in the garden had to be remembered.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-gate-she-made/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 84.6,
+        "audioBytes": 1355066
+      }
+    ],
     "pronunciations": [
       {
         "written": "Wellesbourne",
@@ -15208,14 +15950,7 @@ export const LIBRARY: readonly Echo[] = [
       "gardens",
       "museums"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-gate-she-made",
-        "durationS": 78
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-the-general-facing-south",
@@ -15231,7 +15966,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 79,
+    "durationS": 82,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15239,8 +15974,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand on the south side of the square and look up at the man in bronze.\n\nHe is young. Full uniform, a hand resting on his sword hilt. When the statue was unveiled in November nineteen ten, the newspapers made a point of it. Most old prints showed James Oglethorpe as an old man. The sculptor, Daniel Chester French, gave the city a soldier instead.\n\nNow look at which way he is facing.\n\nWhen the figure was hoisted onto its pedestal, a few weeks before the unveiling, the Atlanta paper noted one detail. The figure faces south.\n\nSouth, in Oglethorpe's day, was the problem. The land below Savannah was claimed by both Britain and Spain, and Georgia was meant, in part, as a military buffer against Spanish Florida. Oglethorpe built a fort town on St. Simons Island. In seventeen forty he besieged St. Augustine for thirty-eight days, and failed. Two years later he turned back a Spanish invasion of Georgia.\n\nThe papers of nineteen ten did not say whether that was the point of the pose.\n\nHe sailed for England in seventeen forty-three and never came back. He is buried at Cranham, on the edge of London.\n\nHe is still watching the southern road.\n",
+    "script": "Stand on the south side of the square and look up at the man in bronze.\n\nHe is no old man. Full uniform, a hand resting on his sword hilt. When the statue was unveiled in November nineteen ten, the newspapers made a point of it. Most old prints showed James Oglethorpe as an old man. The sculptor, Daniel Chester French, gave the city a soldier instead.\n\nNow look at which way he is facing.\n\nWhen the figure was hoisted onto its pedestal, a few weeks before the unveiling, the Atlanta paper noted one detail. The figure faces south.\n\nSouth, in Oglethorpe's day, was the problem. The land below Savannah was claimed by both Britain and Spain, and Georgia was meant, in part, as a military buffer against Spanish Florida. Oglethorpe built a fort town called Frederica. In seventeen forty he besieged St. Augustine for thirty-eight days, and failed. Two years later he turned back a Spanish invasion of Georgia.\n\nThe papers of nineteen ten did not say whether that was the point of the pose.\n\nHe sailed for England in seventeen forty-three and never came back. He is buried at Cranham, in London.\n\nHe is still watching the southern road.\n",
     "teaser": "Look up at the man in bronze, then look at which way he is facing.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-general-facing-south/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 82.1,
+        "audioBytes": 1314942
+      }
+    ],
     "pronunciations": [
       {
         "written": "Oglethorpe",
@@ -15258,14 +16001,7 @@ export const LIBRARY: readonly Echo[] = [
       "colonial",
       "monuments"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-general-facing-south",
-        "durationS": 79
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-the-general-who-went-missing",
@@ -15281,7 +16017,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 99,
+    "durationS": 100,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15291,6 +16027,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look at the tall monument in the middle of Johnson Square.\n\nWhen it went up in eighteen twenty-nine, it was paid for partly by a state lottery, and it was meant to honour two Revolutionary generals at once. Nathanael Greene, and Casimir Pulaski. A city history forty years later described it as plain, without an inscription.\n\nGreene had died near Savannah in seventeen eighty-six, after what may have been sunstroke. He was buried in the old burying ground on what was then South Broad Street, with the artillery firing minute guns.\n\nAnd then Savannah lost him.\n\nFor more than a century nobody could say for certain where his body was. The stories grew. That he had been spirited away at night. That he had been sunk in a creek. That he had been carried off to Cumberland Island.\n\nIn March nineteen-oh-one, a committee sent by the Rhode Island Society of the Cincinnati opened a family vault in that old cemetery. Inside was a coffin plate. On it, the name Greene, and the date seventeen eighty-six. Beside him lay a second body, believed to be his son, George Washington Greene, who had drowned in the river as a young man.\n\nNone of the stories was true. He had been exactly where he was put.\n\nIn November nineteen-oh-two, father and son were buried again. Here, beneath the monument.\n\nFor seventy-three years, it had been his memorial with nobody under it. It just took a while for him to arrive.\n",
     "teaser": "The monument went up first. The general arrived seventy-three years later.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-general-who-went-missing/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 99.9,
+        "audioBytes": 1599154
+      }
+    ],
     "pronunciations": [
       {
         "written": "Nathanael Greene",
@@ -15308,14 +16052,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "monuments"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-general-who-went-missing",
-        "durationS": 99
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-the-library-on-loan",
@@ -15331,7 +16068,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 60,
+    "durationS": 61,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15341,20 +16078,107 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Face the building on the corner, with the portico and a man's name on the front. W. B. Hodgson Hall.\n\nWilliam Hodgson did not build it. His widow Margaret and her sister Mary Telfair built it in his memory, in eighteen seventy six, for the Georgia Historical Society.\n\nThe Society had been collecting since eighteen thirty nine. Books, papers, anything touching the history of Georgia. By eighteen ninety it had about twenty thousand volumes.\n\nA guidebook of the time admitted the outside was plain. It was built for the convenience of a library. The inside was the part worth seeing.\n\nThen, in eighteen ninety three, the Society lent its books and this building to the city, so that Savannah could have a public library. The Society kept on collecting.\n\nA husband's name on the front. His widow's money in the walls. And for a while, the books inside belonged to everyone.\n",
     "teaser": "The name on the front belongs to a man who did not build it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-library-on-loan/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 61,
+        "audioBytes": 977231
+      }
+    ],
     "tags": [
       "savannah",
       "savannah-core",
       "forsyth-park",
       "libraries"
     ],
-    "remoteness": 0.08,
+    "remoteness": 0.08
+  },
+  {
+    "id": "savannah-the-lion-on-the-bed",
+    "title": "The Lion on the Bed",
+    "summary": "In 1888 a Savannah lodger wrote to the Morning News about the thing he found lying on his bed at three in the morning.",
+    "point": {
+      "at": {
+        "lat": 32.076,
+        "lng": -81.09245
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Chippewa Square, east side, Savannah, Georgia"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on the east side of the square, by the old theater.\n\nThis is a ghost story, and it is a legend. Nobody has ever proven a word of it.\n\nIn August eighteen eighty eight, the Savannah Morning News printed a letter signed only with initials. The writer said he had rented a room in an old hotel in this city. Its end window looked down into a square. Across the street stood a grand old church. To the east of the square was the theater.\n\nHe never named the square. A city guidebook of nineteen ten called this one Theater Square.\n\nNight after night, he wrote, something woke him just before the church clock struck three. A hand feeling under his pillow. The bed lifting under him. Then a voice, a man in great agony, crying out, Oh my God.\n\nAnd lying on the bed beside him was a creature about four feet long. A brassy yellow lion, with the face of a man of thirty or so. Short dark hair. A close beard. A contemptuous curl to the lip.\n\nHe prayed. It backed slowly off the foot of the bed and was gone.\n\nHis friends tied it to a sad tragedy in the old house years before. Others said trickery, or his own mind. He left the next day.\n\nIt is just a story in an old newspaper. But he signed off saying he knew what he saw.\n",
+    "teaser": "Something was lying on the bed beside him. It had a man's face.",
+    "certaintyNote": "A ghost story published as a reader's letter in the Savannah Morning News, 10 August 1888, signed only F. H. T. Nothing in it can be checked: the writer names neither the hotel nor the square, and the tie to this square rests only on his mention of a theater to the east. The script says aloud that it is a legend.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-library-on-loan",
-        "durationS": 60
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/savannah-the-lion-on-the-bed/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 84.8,
+        "audioBytes": 1357992
       }
-    ]
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "ghosts",
+      "squares",
+      "legend"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "savannah-the-m-and-t-oaks",
+    "title": "The Letters in the Oaks",
+    "summary": "Tradition says Bonaventure's oak avenues were planted to spell M and T, for two families joined by a wedding.",
+    "point": {
+      "at": {
+        "lat": 32.0488,
+        "lng": -81.0464
+      },
+      "triggerRadiusKm": 0.1,
+      "place": "Bonaventure Cemetery, entrance avenue, Savannah, Georgia"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 51,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along the avenue of live oaks, and then across to the others.\n\nThere is a legend about these trees. Treat it as just that. Every book that tells it calls it tradition.\n\nThe land was first settled by a colonel named John Mulryne. In seventeen sixty one his daughter Mary married Josiah Tattnall, and the estate came to the Tattnalls.\n\nThe avenues, the story goes, were planted around the time of that wedding. And they were planted in the shape of two letters. M, for Mulryne. T, for Tattnall.\n\nIn eighteen ninety nine a Savannah book went further. Even at this late date, it said, you could trace the outline of the letters in the shape of the aisles between the trees.\n\nNobody has ever produced the plan. So walk the avenues, and see whether you can find them.\n",
+    "teaser": "Look along the avenue. Is it spelling something?",
+    "certaintyNote": "Every source that tells it calls it tradition: guidebooks of 1890, 1899 and 1910. None shows a planting plan. The script says aloud that it is a legend, not proven.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/savannah-the-m-and-t-oaks/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 51,
+        "audioBytes": 817571
+      }
+    ],
+    "tags": [
+      "savannah",
+      "bonaventure",
+      "cemeteries",
+      "trees",
+      "legend"
+    ],
+    "remoteness": 1
   },
   {
     "id": "savannah-the-night-the-cathedral-burned",
@@ -15370,7 +16194,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 87,
+    "durationS": 69,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15378,9 +16202,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the two spires of the cathedral, then down the long walls beneath them.\n\nOn a Sunday night in February, eighteen ninety eight, a streetcar driver coming through this square saw fire. It was about ten minutes to eleven.\n\nThe alarm went in quickly. It did not help. Every engine in the city was down at a big fire on River Street. The hose wagons that came had almost no pressure. Firemen stood on the Harris Street sidewalk, about where you are, and their streams barely reached the first window sill.\n\nIt was three quarters of an hour before an engine arrived. By then the roof was gone.\n\nThousands of people stood around the square and watched sparks pour from the towers like fireworks. Some of the sparks burned holes in their hats and coats.\n\nThe next morning the paper said nothing remained but the four walls and parts of the two spires.\n\nThe rebuilding went to the same architect who had designed the church in the first place. He kept its lines. The spires, the towers, the tall pointed windows. Two years and eight months after the fire, the cathedral was dedicated again.\n\nSo the shape you are looking at is the shape that crowd watched burn. What is new is almost everything inside.\n",
+    "script": "Look up at the two spires of the cathedral, then down the long walls beneath them.\n\nOn a night in February, eighteen ninety eight, a streetcar driver coming through this square saw fire. It was about ten minutes to eleven.\n\nThe alarm went in quickly. It did not help. Every engine in the city was down at a big fire on River Street. The hose wagons that came had almost no pressure. Firemen stood on the Harris Street sidewalk, about where you are, and their streams barely reached the first window sill.\n\nIt was three quarters of an hour before an engine arrived. By then the roof was gone.\n\nThousands of people stood around the square and watched sparks pour from the towers like fireworks. Some of the sparks burned holes in their hats and coats.\n\nThe next morning the paper said nothing remained but the four walls and parts of the two spires.\n\nThe walls were built on again. Two years and eight months after the fire, the cathedral was dedicated again.\n\nSo the shape you are looking at is the shape that crowd watched burn. What is new is almost everything inside.\n",
     "teaser": "The firemen stood on this sidewalk. Their water reached the first window sill.",
     "detail": "The 1900 report names the architect as E. M. Baldwin of Baltimore, who drew the plans for the original building in the 1870s, and says it was a matter of economy as well as taste to preserve its spires, towers and high Gothic windows.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-night-the-cathedral-burned/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.1,
+        "audioBytes": 1105963
+      }
+    ],
     "tags": [
       "savannah",
       "savannah-core",
@@ -15388,14 +16220,7 @@ export const LIBRARY: readonly Echo[] = [
       "fires",
       "churches"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-night-the-cathedral-burned",
-        "durationS": 87
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-the-sergeant-who-would-not-be-an-officer",
@@ -15411,7 +16236,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 81,
+    "durationS": 74,
     "minAge": 8,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15421,6 +16246,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Look up at the bronze soldier on top of the monument in the middle of the square. His left hand holds a battle-worn flag out at arm's length. His right hand is pressed against his side, over a bullet wound.\n\nHis name was William Jasper, a sergeant in a South Carolina regiment.\n\nSome time before he died, the British fleet bombarded Fort Moultrie, and the fort's flagstaff was shot in two. Jasper caught the flag, tied it to a sponge staff, and jumped up onto the rampart to hold it there until a new pole was found.\n\nHe was offered a commission as an officer. He turned it down. He said he could neither read nor write, and so did not think himself worthy. The governor offered it again. He refused again.\n\nOn the ninth of October, seventeen seventy nine, in the attack on the British lines at Spring Hill, Jasper was mortally wounded. He carried his regiment's colours off the field anyway.\n\nA hundred years later to the day, Savannah laid the cornerstone of this monument. When it was unveiled in eighteen eighty eight, the President came.\n\nHe refused to be made an officer. So the city made him fifteen feet tall.\n",
     "teaser": "Look at his right hand.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-sergeant-who-would-not-be-an-officer/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.4,
+        "audioBytes": 1190808
+      }
+    ],
     "pronunciations": [
       {
         "written": "Moultrie",
@@ -15434,14 +16267,49 @@ export const LIBRARY: readonly Echo[] = [
       "american-revolution",
       "monuments"
     ],
-    "remoteness": 0,
+    "remoteness": 0
+  },
+  {
+    "id": "savannah-the-spring-that-smelled-of-the-bolt",
+    "title": "The Spring That Smelled of the Bolt",
+    "summary": "Thunderbolt is said to be named for a bolt from the sky that struck here and left a spring behind.",
+    "point": {
+      "at": {
+        "lat": 32.0342,
+        "lng": -81.0468
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "River Drive waterfront, Thunderbolt, Georgia"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 46,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "This little river town has a strange name. Thunderbolt.\n\nIt comes with a legend, and the legend is very old. Treat it as a legend, because that is all anyone has ever had.\n\nA thunderbolt fell here, the story goes, and where it struck, a spring came gushing out of the ground.\n\nWhen Savannah's historians wrote it down in eighteen sixty nine, they credited it to Oglethorpe's own account of Carolina and Georgia. And they quoted the best line. A spring arose in that place, which still smells of the bolt.\n\nA Savannah guidebook of eighteen ninety was more careful. Whether the tradition be founded on fact or not, it wrote, it is nevertheless believed to be true. Old inhabitants pointed out the Thunderbolt spring with faith and pride.\n\nNobody has ever proven a bolt made a spring. But the name stuck.\n",
+    "teaser": "A bolt from the sky, and a spring where it struck.",
+    "certaintyNote": "A place-name legend. Savannah's 1869 history credits it to Oglethorpe's account of Carolina and Georgia; the 1890 guidebook calls it local tradition and says plainly that it may not be founded on fact. The script says aloud that it is a legend.",
+    "voice": "wC1005J19tvhoqqC2hkf",
     "renders": [
       {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-sergeant-who-would-not-be-an-officer",
-        "durationS": 81
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/savannah-the-spring-that-smelled-of-the-bolt/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 46.1,
+        "audioBytes": 738994
       }
-    ]
+    ],
+    "tags": [
+      "savannah",
+      "thunderbolt",
+      "rivers",
+      "legend"
+    ],
+    "remoteness": 1
   },
   {
     "id": "savannah-the-stone-beside-the-grave",
@@ -15457,7 +16325,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 101,
+    "durationS": 99,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15465,8 +16333,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Find the big rough granite stone in the southeast corner of Wright Square.\n\nIt honours Tomochichi, the Yamacraw leader whose friendship the first colonists depended on. When he died, he had asked to be buried among the English. His body came down the river by canoe. Oglethorpe himself was one of the pall-bearers, and the militia fired three volleys as he was lowered into the ground, in this square.\n\nExactly where in this square, nobody knows.\n\nIn eighteen ninety-nine, as the Georgia Society of Colonial Dames prepared to mark the grave, the Savannah Morning News laid out the candidates. One tradition put him under the courthouse. Another, under the Gordon monument in the middle of the square. A pile of stones had once stood here, said to be over his body.\n\nThe best evidence the Dames had came from an old woman who had died a few months before, at eighty-nine. She remembered recess at a school near the square, and the children shouting, let's go play on old Tomochichi's grave. They would race to the northeast corner, in front of the Lutheran church.\n\nSo why is the stone in the southeast corner?\n\nBecause it could be seen better here. The paper said so, plainly.\n\nThe granite came from Stone Mountain, given by a quarry owner and carried free by the railroad. A few days before the dedication, the same paper pointed out that it was not, technically, a boulder.\n\nLook across to the northeast corner. He may well be over there.\n",
+    "script": "Find the big rough granite stone in the southeast corner of Wright Square.\n\nIt honours Tomochichi, the Yamacraw leader whose friendship the first colonists depended on. When he died, he had asked to be buried among the English. His body came down the river by canoe. Oglethorpe himself was one of the pall-bearers, and the militia fired three volleys as he was lowered into the ground, in this square.\n\nExactly where in this square, nobody knows.\n\nIn eighteen ninety-nine, as the Georgia Society of Colonial Dames prepared to mark the grave, the Savannah Morning News laid out the candidates. One tradition put him under the courthouse. Another, under the Gordon monument in the middle of the square. A pile of stones had once stood here, said to be over his body.\n\nThe best evidence the Dames had came from an old woman who had died a few months before, at eighty-nine. She remembered recess at a school near the square, and the children shouting, let's go play on old Tomochichi's grave. They would race to the northeast corner, in front of the Lutheran church.\n\nSo why is the stone in the southeast corner?\n\nBecause it could be seen better here. The paper said so, plainly.\n\nThe granite came from Stone Mountain, given by a man named W. H. Venable and carried by the railroad. A few days before the dedication, the same paper pointed out that it was not, technically, a boulder.\n\nLook across to the northeast corner. He may well be over there.\n",
     "teaser": "The children used to play on his grave. Not where the stone is.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-stone-beside-the-grave/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 98.8,
+        "audioBytes": 1582436
+      }
+    ],
     "pronunciations": [
       {
         "written": "Tomochichi",
@@ -15485,14 +16361,7 @@ export const LIBRARY: readonly Echo[] = [
       "native-american",
       "monuments"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-stone-beside-the-grave",
-        "durationS": 101
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-the-synagogue-with-the-onion-dome",
@@ -15518,6 +16387,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "From the east side of the square, look at the building with the pointed windows and the tower. Buttresses down its sides. A big pointed window over the entrance. Inside, the plan is shaped like a cross, with a nave and transepts.\n\nYou would guess it was a church.\n\nNow look at the very top of the tower. An onion dome.\n\nThis is a synagogue, the home of Congregation Mickve Israel. It went up between eighteen seventy six and eighteen seventy eight.\n\nThe congregation is far older than the building. Savannah's first colonists arrived in February, seventeen thirty three. In July, a group of about forty Jewish settlers arrived straight from London, paying their own way. They brought two scrolls of the Law with them, and an Ark to keep them in.\n\nHow the congregation grew from there is not clear. In eighteen sixty nine, a historian of the city spent a long time trying to find the date it was founded, and gave up. Its written records begin in seventeen ninety, the year of its charter.\n\nThe scrolls arrived first. The paperwork caught up fifty seven years later.\n",
     "teaser": "Pointed windows, buttresses, a tower. Now look at the very top.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-synagogue-with-the-onion-dome/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75.6,
+        "audioBytes": 1210034
+      }
+    ],
     "pronunciations": [
       {
         "written": "Mickve Israel",
@@ -15531,14 +16408,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "jewish-history"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-synagogue-with-the-onion-dome",
-        "durationS": 76
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-the-vaults-on-south-broad",
@@ -15554,7 +16424,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 69,
+    "durationS": 71,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15562,9 +16432,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Walk in among the old brick vaults.\n\nThis was the town's burying ground from about seventeen fifty. First for the parish of Christ Church, then, from seventeen eighty-nine, for people of every denomination. The avenue outside was called South Broad Street then.\n\nIn December eighteen sixty-four, Sherman's army marched into Savannah.\n\nA history of the city, published in eighteen sixty-nine, makes an accusation about what followed. It says soldiers broke open the vaults in this old burying ground, searching for valuables they believed had been hidden inside. It says the same happened at Bonaventure, outside town. And it says Union earthworks were dug straight through the Catholic cemetery.\n\nThat is one account. It was written by Savannahians who had every reason to resent the occupation, and it should be heard that way.\n\nYou may hear other stories in here about what the soldiers did. This one has an advantage. Somebody wrote it down within four years, while the damage could still be seen.\n\nEvery one of these vaults was built to stay shut.\n",
-    "teaser": "Every one of these vaults was built to stay shut.",
+    "script": "Walk in among the old brick vaults.\n\nThis was the town's burying ground from about seventeen fifty. First for the parish of Christ Church, then, from seventeen eighty-nine, for people of every denomination. The avenue outside was called South Broad Street then.\n\nIn December eighteen sixty-four, Sherman's army marched into Savannah.\n\nA history of the city, published in eighteen sixty-nine, makes an accusation about what followed. It says soldiers broke open the vaults in this old burying ground, searching for valuables they believed had been hidden inside. It says the same happened at Bonaventure, outside town. And it says Union earthworks were dug straight through the Catholic cemetery.\n\nThat is a single account. It was written by Savannahians who had every reason to resent the occupation, and it should be heard that way.\n\nYou might hear other stories in here about what the soldiers did. This story has an advantage. Somebody wrote it down within four years, while the damage could still be seen.\n\nAll of these vaults were built to stay shut.\n",
+    "teaser": "All of these vaults were built to stay shut.",
     "certaintyNote": "The break-ins rest on one account, the city history of 1869, written by Savannahians hostile to the occupation. No Union record was consulted. The often-told story that soldiers altered dates on the gravestones could not be sourced and is not used.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-vaults-on-south-broad/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.4,
+        "audioBytes": 1143997
+      }
+    ],
     "tags": [
       "savannah",
       "savannah-core",
@@ -15572,14 +16450,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "colonial"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-vaults-on-south-broad",
-        "durationS": 69
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-the-word-in-the-basement",
@@ -15595,7 +16466,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 74,
+    "durationS": 71,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15605,6 +16476,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "Start with the front of the house. The curved double stair. The curved porch above it. The cast-iron balcony on the side.\n\nIt was finished in eighteen nineteen, to designs by the English architect William Jay. When surveyors from the Historic American Buildings Survey came here in the nineteen thirties, this is what they wrote about. The curves. The Greek fret on the parlour ceiling. A white marble mantel, carved with women carrying baskets of fruit.\n\nThen they reached the basement. They listed a kitchen, a bakery, a wine cellar, and servants' quarters.\n\nThat was all. One word. Servants.\n\nBehind the house stands its original carriage house. The Library of Congress record for this property now describes it as containing one of the earliest intact urban slave quarters in the South. The people who lived and worked there were enslaved by the families in the big house.\n\nThe survey that measured every curve of the staircase did not write down a single one of their names.\n\nTheir rooms are still standing. The house is a museum now, and the quarters are part of it.\n",
     "teaser": "The surveyors measured every curve of this house. Then they got to the basement.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-the-word-in-the-basement/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.4,
+        "audioBytes": 1143161
+      }
+    ],
     "tags": [
       "savannah",
       "savannah-core",
@@ -15612,14 +16491,7 @@ export const LIBRARY: readonly Echo[] = [
       "architecture",
       "museums"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-the-word-in-the-basement",
-        "durationS": 74
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-twenty-two-squares",
@@ -15635,7 +16507,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "built",
     "format": "short",
-    "durationS": 90,
+    "durationS": 53,
     "minAge": 0,
     "quality": 0.87,
     "visibility": "landmark-visible",
@@ -15643,22 +16515,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "If you can see the ground on the left, look for a pattern: a grid, interrupted at regular\nintervals by small green squares.\n\nThat layout was drawn in seventeen thirty-three, before there was a city to put it in.\nJames Oglethorpe laid out a repeating unit, a square with house lots and civic lots\naround it, and the plan was simply to keep repeating it as the place grew.\n\nTwenty-four were eventually built. Twenty-two are still there.\n\nCities almost never survive this. Street plans get widened for carts, then for trams, then\nfor cars, and the awkward bits get straightened out. Savannah's squares are exactly the\nawkward bits. They force traffic to slow down and go around.\n\nThree were lost to a road scheme in the nineteen fifties. One has since been put back.\n",
+    "script": "If you can see the ground on the left, look for a pattern: a grid, interrupted at regular\nintervals by small green squares.\n\nThat layout was drawn in seventeen thirty-three, before there was a city to put it in.\nJames Oglethorpe laid out a repeating unit, a square with house lots and civic lots\naround it, and the plan was simply to keep repeating it as the place grew.\n\nTwenty-four were eventually built. Twenty-two are still there.\n\nCities almost never survive this. Street plans get widened for carts, then for trams, then\nfor cars, and the awkward bits get straightened out. Savannah's squares are exactly the\nawkward bits. They force traffic to slow down and go around.\n\nA few have been lost along the way. The plan has not.\n",
     "teaser": "If the cloud is thin, look for the pattern. You will know it when you see it.",
     "voice": "IMlxLW3qgn0MWgfz7Vnh",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-twenty-two-squares/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 52.9,
+        "audioBytes": 847246
+      }
+    ],
     "tags": [
       "georgia",
       "urban-planning",
       "colonial"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-twenty-two-squares",
-        "durationS": 90
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-waving-girl",
@@ -15674,7 +16547,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 86,
+    "durationS": 82,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15682,9 +16555,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the statue, waving at the river.\n\nHer name was Florence Martus. She was born in eighteen sixty eight on Cockspur Island, at the mouth of this river, the daughter of a sergeant at Fort Pulaski. As a small child she waved her handkerchief at the passing ships, and the sailors waved back.\n\nA few years later she went to live with her brother George, a lightkeeper, in a cottage on Elba Island, between here and the sea. And she kept waving. A cloth by day. A lantern by night. Every ship in. Every ship out.\n\nThe ships answered. Steamers gave three blasts of the whistle. Sailing ships dipped their flags. A reporter wrote that a letter addressed only to the Waving Girl would probably reach her from anywhere in the world.\n\nThe sailors had a story about why. A sweetheart lost at sea, they said, and she waved so that she would be the first to greet him when he came home.\n\nShe never confirmed it. In nineteen twenty three she told a reporter that the sailors were all her sweethearts.\n\nIn nineteen thirty one her brother retired, and she came ashore with him. She had been waving for forty four years.\n\nShe died in nineteen forty three. Here, she is still at it.\n",
+    "script": "Look at the statue, waving at the river.\n\nHer name was Florence Martus. She was born in eighteen sixty eight on Cockspur Island, at the mouth of this river, the daughter of a sergeant at Fort Pulaski. As a small child she waved her handkerchief at the passing ships, and the sailors waved back.\n\nA few years later she went to live with her brother George, a lightkeeper, in a cottage on Elba Island, between here and the sea. And she kept waving. A cloth by day. A lantern by night. Every ship in. Every ship out.\n\nThe ships answered. Steamers gave three blasts of the whistle. Sailing ships dipped their flags. A reporter wrote that a letter addressed only to the Waving Girl would probably reach her from anywhere in the world.\n\nThe sailors had a story about why. A sweetheart lost at sea, they said, and she waved in memory of him.\n\nShe never confirmed it. In nineteen twenty three she told a reporter that the sailors were all her sweethearts.\n\nIn nineteen thirty one her brother retired, and she came ashore with him. She had been waving for forty four years.\n\nShe died in nineteen forty three. Here, she is still at it.\n",
     "teaser": "Sailors had a story about why she waved. She did not confirm it.",
     "detail": "The statue is by Felix de Weldon. Newspapers in 1931 and 1936 retold the lost-sweetheart story as sailors' legend; Martus and her brother declined to confirm it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-waving-girl/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81.6,
+        "audioBytes": 1306583
+      }
+    ],
     "pronunciations": [
       {
         "written": "Martus",
@@ -15706,14 +16587,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "shipping"
     ],
-    "remoteness": 0.22,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-waving-girl",
-        "durationS": 86
-      }
-    ]
+    "remoteness": 0.22
   },
   {
     "id": "savannah-wesleys-empty-lot",
@@ -15729,7 +16603,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "people",
     "format": "short",
-    "durationS": 94,
+    "durationS": 87,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15737,8 +16611,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the white columns of Christ Church, facing the square.\n\nThis building went up in the eighteen thirties. A fire gutted it in eighteen ninety-seven, and it was rebuilt the year after. So none of what you are looking at was here for the most famous minister this congregation ever had.\n\nIn fact, nothing was.\n\nJohn Wesley, who would go on to found Methodism, arrived in Savannah in seventeen thirty-six as the colony's minister. This lot had been set aside for a church in the summer of seventeen thirty-three. But work did not begin until seventeen forty, and the first church was not finished until seventeen fifty. In Wesley's time, services were held in a courthouse a short walk north, near the bluff.\n\nA chronicler of the day remembered a night when a ball and public prayers were announced for the same hour. The church was full. The ballroom was so empty that the dancing could not go ahead.\n\nIt did not last. Wesley refused communion to Sophia Williamson, a woman he had courted before she married another man. Many in town thought it was spite. Facing a court case, he left Georgia in December seventeen thirty-seven, writing that he had shaken off the dust of his feet.\n\nAs far as the record shows, he never preached on this spot. The church's list of its ministers has his name on it all the same.\n",
+    "script": "Look at the white columns of Christ Church, facing the square.\n\nThis building went up in the eighteen thirties. A fire gutted it in eighteen ninety-seven, and it was rebuilt the year after. So none of what you are looking at was here for the most famous minister this congregation ever had.\n\nIn fact, nothing was.\n\nJohn Wesley, who would go on to found Methodism, arrived in Savannah in seventeen thirty-six as the colony's minister. This lot had been set aside for a church in the summer of seventeen thirty-three. But work did not begin until seventeen forty, and the first church was not finished until seventeen fifty. In Wesley's time, services were held in a courthouse on Bull Street.\n\nA chronicler of the day remembered a night when a ball and public prayers were announced for the same hour. The church was full. The ballroom was so empty that the dancing could not go ahead.\n\nIt did not last. Wesley refused communion to Sophia Williamson, a woman he had courted before she married another man. Many in town thought it was spite. Facing a court case, he left Georgia in December seventeen thirty-seven, writing that he had shaken off the dust of his feet.\n\nAs far as the record shows, he never preached on this spot. The federal survey of this building still credits him with founding the first Sunday school in the world, here.\n",
     "teaser": "None of what you are looking at was here for its most famous minister. Nothing was.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-wesleys-empty-lot/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 87.4,
+        "audioBytes": 1398534
+      }
+    ],
     "tags": [
       "savannah",
       "savannah-core",
@@ -15746,14 +16628,7 @@ export const LIBRARY: readonly Echo[] = [
       "colonial",
       "religion"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-wesleys-empty-lot",
-        "durationS": 94
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-white-paper-in-their-hats",
@@ -15769,7 +16644,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 96,
+    "durationS": 91,
     "minAge": 12,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15777,8 +16652,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand in the park here, beside the old railroad depot. In seventeen seventy nine this ground was Spring Hill, the strongest point in the British lines around Savannah. It guarded the road to Augusta.\n\nOn the eighth of October, the French and American armies besieging the town got their orders for an attack on this spot, before dawn. Nobody was to fire until the redoubt was taken. And so that they could tell friend from enemy in the dark, every man was to wear a piece of white paper in his hat.\n\nThat night, a sergeant major of the American grenadiers slipped away to the British. He took a copy of the orders with him. The British commander moved men to this side of his line.\n\nThe columns lost their way in the dark and arrived in daylight. The British were waiting. French and American flags were planted on the redoubt, and torn down, and planted again. The fight began at daybreak. By nine o'clock it was over.\n\nThe allies had brought about four thousand nine hundred men. Around eleven hundred were killed or wounded that morning.\n\nIn eighteen thirty seven, the redoubt itself was dug down to fill the ground for the new railroad depot. Bayonets and bullets came up with the soil.\n\nThey had planned everything, down to the paper in their hats. What they could not plan for was a man walking across with the plan.\n",
+    "script": "Stand in the park here, beside the old railroad depot. In seventeen seventy nine this ground was Spring Hill, the best fortified point in the British lines around Savannah. It guarded the road to Augusta.\n\nOn the eighth of October, the French and American armies besieging the town got their orders for an attack on this spot, before dawn. Nobody was to fire until the redoubt was taken. And so that they could tell friend from enemy in the dark, every man was to wear a piece of white paper in his hat.\n\nThat night, a sergeant major of the American grenadiers slipped away to the British. He took a copy of the orders with him. The British commander moved men to this side of his line.\n\nThe columns lost their way in the dark and arrived in daylight. The British were waiting. French and American flags were planted on the redoubt, and torn down, and planted again. The fight began at daybreak. By nine o'clock it was over.\n\nThe allies had more than six and a half thousand men. Around eleven hundred were killed or wounded that morning.\n\nIn eighteen thirty seven, the redoubt itself was dug down to fill the ground for the new railroad depot. Bayonets and bullets came up with the soil.\n\nThey had planned everything, down to the paper in their hats. What they could not plan for was a man walking across with the plan.\n",
     "teaser": "Every man was to wear a piece of white paper in his hat.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-white-paper-in-their-hats/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 91.3,
+        "audioBytes": 1462482
+      }
+    ],
     "tags": [
       "savannah",
       "savannah-core",
@@ -15786,14 +16669,7 @@ export const LIBRARY: readonly Echo[] = [
       "siege-of-savannah",
       "battlefields"
     ],
-    "remoteness": 0.26,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-white-paper-in-their-hats",
-        "durationS": 96
-      }
-    ]
+    "remoteness": 0.26
   },
   {
     "id": "savannah-who-lies-under-the-pulaski-monument",
@@ -15809,7 +16685,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 87,
+    "durationS": 82,
     "minAge": 12,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15820,6 +16696,14 @@ export const LIBRARY: readonly Echo[] = [
     "script": "Look up at the tall marble column in the middle of the square. Liberty stands on top, holding a flag.\n\nNow look lower down, for the carved panel of a man falling from his horse, still gripping his sword.\n\nThat is Casimir Pulaski, a Polish cavalry commander who fought for the Americans. On the ninth of October, seventeen seventy nine, he was hit by grapeshot leading an attack on the British lines around Savannah. Two days later he was dead.\n\nThis monument was finished in eighteen fifty five. What lies beneath it is a harder question.\n\nOne account says he was put aboard a ship bound for Charleston, died at sea, and was buried at sea. An officer of his who was wounded and on board the same ship said so. The Park Service still says he was reported to have been buried at sea.\n\nThe other story says he was carried to a plantation called Greenwich, died there, and was buried at night under a palmetto tree. A city guidebook in nineteen ten went further. His remains, it said, were dug up in eighteen fifty four and placed beneath this monument.\n\nPeople were arguing about it while the marble was going up.\n\nThe man falling from his horse is certain. The man beneath him is not.\n",
     "teaser": "People were arguing about it while the marble was going up.",
     "certaintyNote": "Where Pulaski was buried is disputed in the sources used. An 1890 guide cites a staff officer aboard the ship who said he died at sea and was buried at sea, and a 1929 Georgia Historical Society publication treats that as final; the National Park Service says he was reported to have been buried at sea. A 1910 city guide says instead that he died at the Greenwich plantation, was buried there under a palmetto, and that his remains were placed beneath this monument in 1854. The script gives both and settles neither.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-who-lies-under-the-pulaski-monument/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 82,
+        "audioBytes": 1313270
+      }
+    ],
     "pronunciations": [
       {
         "written": "Casimir Pulaski",
@@ -15833,14 +16717,7 @@ export const LIBRARY: readonly Echo[] = [
       "american-revolution",
       "monuments"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-who-lies-under-the-pulaski-monument",
-        "durationS": 87
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-yamacraw-bluff",
@@ -15856,7 +16733,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 92,
+    "durationS": 90,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15864,9 +16741,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Find the granite bench beside the path, just west of City Hall.\n\nIt was put here in nineteen oh six to mark the spot where, by tradition, James Oglethorpe pitched his tent under four pine trees in February seventeen thirty three. The town around you grew out from that tent.\n\nNow look north, toward the river, and think about the drop.\n\nOne of the colonists, Peter Gordon, wrote the landing down. The bluff was forty feet straight up, he said, and the sand was so loose that carrying their goods to the top would have been miserable, if Captain Scott and his men had not built them stairs.\n\nAbout an hour after they landed, they had visitors. The Yamacraw came with their chief, Tomochichi, and a trader to interpret. One of their men danced in front, white feathers on his head and rattles in his hands.\n\nThis was not empty country. Oglethorpe had come up the river weeks earlier, chosen the site, and made terms with Tomochichi before a single colonist arrived.\n\nWhen Oglethorpe wrote to London to explain his choice, he listed the height, the dry sandy soil, the fresh water and the shelter of the pines. Then he gave what he called the last and fullest proof that the place was healthy.\n\nAn Indian nation, who knew the nature of this country, had chosen it for their home.\n",
+    "script": "Find the granite bench beside the path, just west of City Hall.\n\nIt was put here in nineteen oh six to mark the spot where, by tradition, James Oglethorpe pitched his tent under four pine trees in February seventeen thirty three. The town around you grew out from that tent.\n\nNow look north, toward the river, and think about the drop.\n\nOne of the colonists, Peter Gordon, wrote the landing down. The bluff was forty feet straight up, he said, and the sand was so loose that carrying their goods to the top would have been miserable, if Captain Scott and his men had not built them stairs.\n\nAbout an hour after they landed, they had visitors. The Yamacraw came with their chief, Tomochichi, and a trader to interpret. One of their men danced in front, white feathers on his head and rattles in his hands.\n\nThis was not empty country. Oglethorpe had come up the river weeks earlier, chosen the site, and made terms with Tomochichi before a single colonist arrived.\n\nWhen Oglethorpe wrote to London to explain his choice, he listed the height, the dry sandy soil, the fresh water and the shelter of the pines. Then he gave what he called the last and fullest consideration of how healthy the place was.\n\nAn Indian nation, who knew the nature of this country, had chosen it for their home.\n",
     "teaser": "Find the granite bench, then look at the drop to the river.",
     "detail": "The colonists' own dates are Old Style. The 1910 guide converts their landing on the first of February to the twelfth of February 1733, New Style, and the bench was set here on the twelfth of February 1906 by the Colonial Dames.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-yamacraw-bluff/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 89.8,
+        "audioBytes": 1438240
+      }
+    ],
     "pronunciations": [
       {
         "written": "Yamacraw",
@@ -15888,14 +16773,7 @@ export const LIBRARY: readonly Echo[] = [
       "riverfront",
       "indigenous"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-yamacraw-bluff",
-        "durationS": 92
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "savannah-you-are-my-prisoner",
@@ -15911,7 +16789,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 89,
+    "durationS": 93,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -15921,6 +16799,14 @@ export const LIBRARY: readonly Echo[] = [
     "factCheck": "corroborated",
     "script": "The grand house on the west side of Telfair Square is the Telfair Academy, designed by the English architect William Jay about two centuries ago. Mary Telfair left it in her will to become an academy of arts and sciences.\n\nBut the academy's own account of this ground goes back further. This, it says, was the site of Government House, home of Georgia's royal governor.\n\nIn January seventeen seventy-six, British warships were lying off Tybee. On the eighteenth, Savannah's Council of Safety voted to arrest the governor, Sir James Wright.\n\nA major named Joseph Habersham, twenty-four years old, volunteered. That evening the governor was meeting his council in his house. Habersham walked past the sentries at the door, alone. He went into the room, up to the head of the table, laid his hand on the governor's shoulder, and said, Sir James, you are my prisoner.\n\nAccording to the city's history of eighteen sixty-nine, the councillors assumed he had a large force close behind him. They fled through the doors and the windows.\n\nHe did not have a large force.\n\nWright gave his word that he would not leave town, and was kept in his own house under guard.\n\nHe kept his word for twenty-four days. Then he slipped past the sentries, ran to Bonaventure, and was rowed out to a British ship.\n",
     "teaser": "He walked in alone, put a hand on the governor's shoulder, and the room emptied.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/savannah-you-are-my-prisoner/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 93,
+        "audioBytes": 1489231
+      }
+    ],
     "pronunciations": [
       {
         "written": "Habersham",
@@ -15938,14 +16824,7 @@ export const LIBRARY: readonly Echo[] = [
       "squares",
       "museums"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/savannah-you-are-my-prisoner",
-        "durationS": 89
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "southport-a-fish-house-plays-a-fish-shack",
@@ -17323,7 +18202,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 97,
+    "durationS": 55,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17331,9 +18210,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the balcony.\n\nOn April 4, 1968, Martin Luther King Jr. stood there.\n\nHe had come to Memphis to support striking Black sanitation workers seeking better pay\nand safer working conditions.\n\nThe Lorraine was a place to stay while that work continued.\n\nThen King was shot.\n\nHe died that evening.\n\nPause before looking away.\n\nThis site can become so familiar through photographs that the balcony starts to feel\nlike an image rather than a place.\n\nBut it was a place.\n\nThere was a room behind him. A city around him. A campaign still underway.\n\nThe workers’ demands had not disappeared. Neither had the need for the work he was\ndoing.\n\nToday, the museum preserves this location within the larger history of civil rights.\n\nLook at the balcony once more.\n\nRemember the reason he was in Memphis, as well as what happened here.\n",
+    "script": "Look up at the balcony.\n\nOn April 4, 1968, Martin Luther King Jr. stood there.\n\nHe had come to Memphis to support thirteen hundred striking Black sanitation workers\nseeking better pay and safer working conditions.\n\nThe Lorraine was a place to stay while that work continued.\n\nThen King was shot and killed on the balcony of his room.\n\nPause before looking away.\n\nThis site can become so familiar through photographs that the balcony starts to feel\nlike an image rather than a place.\n\nBut it was a place.\n\nThere was a room behind him. A city around him. A campaign still underway.\n\nThe workers’ demands had not disappeared. Neither had the need for the work he was\ndoing.\n\nToday, the museum preserves this location within the larger history of civil rights.\n\nLook at the balcony once more.\n\nRemember the reason he was in Memphis, as well as what happened here.\n",
     "teaser": "Look up at the balcony.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-balcony/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 55.2,
+        "audioBytes": 884444
+      }
+    ],
     "tags": [
       "memphis",
       "civil-rights"
@@ -17341,18 +18228,11 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": true,
       "convictionStatus": "convicted",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-09",
+      "reviewedAt": "2026-11-09",
       "contentWarning": "This echo describes an assassination. No violence is described in detail."
     },
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-balcony",
-        "durationS": 97
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "the-children-at-the-lighthouse",
@@ -17368,7 +18248,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 103,
+    "durationS": 73,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17376,22 +18256,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look up at the lighthouse.\n\nBefore the tower was completed, this was a construction site where children sometimes\nplayed.\n\nIn July 1873, children rode a cart used to transport building materials.\n\nThe cart overturned into the water.\n\nThree girls drowned, including two daughters of construction superintendent Hezekiah\nPittee. A younger sister survived.\n\nThe museum documents that tragedy.\n\nThe ghost stories came afterward.\n\nIts published accounts describe reports of unexplained footsteps and a little girl\nappearing in the keeper’s house.\n\nSome people connect those stories to the children who died.\n\nThat connection is belief, not an established fact.\n\nPause beneath the tower.\n\nA lighthouse is built to guide people away from danger.\n\nHere, a childhood accident became part of the place’s remembered history, then part of\nits folklore.\n\nThe deaths were real.\n\nThe stories of children still moving through the property remain unverified.\n\nBoth deserve to be told with care.\n",
+    "script": "Look up at the lighthouse.\n\nBefore the tower was completed, this was a construction site where children sometimes played.\n\nIn July 1873, children rode a cart used to carry building supplies down to the water.\n\nThe board that should have stopped it at the end of the rail was not in place, and the cart flipped into the water.\n\nThree girls drowned, including two daughters of construction superintendent Hezekiah Pittee. A younger sister, Carrie, survived.\n\nThe museum documents that tragedy.\n\nThe ghost stories came afterward.\n\nIts published accounts describe reports of footsteps upstairs with nobody there, and a little girl appearing beside a bed in the keepers' house.\n\nSome people connect those stories to the children who died.\n\nThat connection is belief, not an established fact. It is a legend, and the museum itself says it cannot explain what is reported.\n\nPause beneath the tower.\n\nA lighthouse is built to guide people away from danger.\n\nHere, a childhood accident became part of the place's remembered history, then part of its folklore.\n\nThe deaths were real.\n\nThe stories of children still moving through the property remain unverified.\n\nBoth deserve to be told with care.\n",
     "teaser": "Look up at the lighthouse.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-children-at-the-lighthouse/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 73.4,
+        "audioBytes": 1175762
+      }
+    ],
     "tags": [
       "st-augustine",
       "ghosts"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-children-at-the-lighthouse",
-        "durationS": 103
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "the-distance-across-the-street",
@@ -17453,7 +18334,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 100,
+    "durationS": 67,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17461,9 +18342,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the empty frames.\n\nIn most museums, an empty frame means something is being moved or restored.\n\nHere, it means something was stolen.\n\nEarly on March 18, 1990, two men dressed as police officers arrived at the Isabella\nStewart Gardner Museum. They claimed they were responding to a disturbance.\n\nA guard let them inside.\n\nThe men restrained the guards and stole thirteen works of art.\n\nAmong the missing pieces were paintings by Rembrandt and Vermeer. The thieves left\nbehind spaces that visitors would continue to see for decades.\n\nPause beside one of those spaces.\n\nA museum normally asks you to examine what is present: the brushwork, the light, the\nexpression on a face.\n\nThis room also asks you to notice what is missing.\n\nThe theft remains unresolved, and the museum continues seeking the return of its art.\n\nThose frames are waiting.\n\nThe most striking thing in this room may be something nobody can show you.\n",
+    "script": "Look at the empty frames.\n\nIn most museums, an empty frame means something is being moved or restored.\n\nHere, it means something was stolen.\n\nIsabella Stewart Gardner built this place after 1898, as her house and her museum.\n\nEarly on March 18, 1990, two men in police uniforms rang the intercom at the Isabella\nStewart Gardner Museum. They said they were responding to a disturbance.\n\nThe guard on duty let them inside.\n\nThe men restrained the guards and stole thirteen works of art.\n\nAmong the missing pieces were paintings by Rembrandt and Vermeer. The thieves cut\nRembrandt's only seascape from its frame, and left the frame of a Manet behind.\n\nPause beside an empty frame.\n\nA museum normally asks you to examine what is present: the brushwork, the light, the\nexpression on a face.\n\nThis room also asks you to notice what is missing.\n\nThe theft remains unresolved, and the museum continues seeking the return of its art.\n\nThose frames are waiting.\n\nThe most striking thing in this room might be something nobody can show you.\n",
     "teaser": "Look at the empty frames.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-empty-frames/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 66.7,
+        "audioBytes": 1068764
+      }
+    ],
     "tags": [
       "boston",
       "art-theft"
@@ -17471,18 +18360,11 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "unsolved",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-09",
+      "reviewedAt": "2026-11-09",
       "contentWarning": "This echo describes an armed robbery. Nobody is described as hurt."
     },
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-empty-frames",
-        "durationS": 100
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "the-footsteps-above-the-gallows",
@@ -17498,7 +18380,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 98,
+    "durationS": 58,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17506,22 +18388,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look at the upstairs windows.\n\nOne of the Whaley House’s oldest ghost stories begins with footsteps.\n\nBefore the house was built, James Robinson, known as Yankee Jim, was executed on this\nproperty in 1852.\n\nThe Whaley family built their home here several years later.\n\nAccording to the house’s published account, family members reported heavy footsteps\nupstairs and on the staircase.\n\nThomas Whaley believed the sounds belonged to Robinson.\n\nThat is the legend’s explanation. It is not proof of a haunting.\n\nBut notice the strange overlap.\n\nA family built a home on land where a public execution had taken place. The story later\nplaced the dead man inside their everyday surroundings.\n\nNo distant cemetery. No ruined castle.\n\nJust someone walking above the rooms where people lived.\n\nLook at the windows again.\n\nThe unsettling part of this legend is how little it needs: a quiet room downstairs, and\nfootsteps where nobody should be.\n",
+    "script": "Look at the upstairs windows.\n\nOne of the Whaley House’s oldest ghost stories begins with footsteps.\n\nBefore the house was built, James Robinson, known as Yankee Jim, was convicted of grand\nlarceny and hanged on this property in 1852.\n\nThomas and Anna Whaley built their home here in 1857.\n\nAccording to the house’s published account, family members reported heavy footsteps\nupstairs and on the staircase.\n\nThomas Whaley believed the sounds belonged to Robinson.\n\nThat is the legend’s explanation. It is not proof of a haunting.\n\nBut notice the strange overlap.\n\nA family built a home on land where a public execution had taken place. The story later\nplaced the dead man inside their everyday surroundings.\n\nNo distant cemetery. No ruined castle.\n\nJust someone walking above the rooms where people lived.\n\nLook at the windows again.\n\nThe unsettling part of this legend is how little it needs: a quiet room downstairs, and\nfootsteps where nobody should be.\n",
     "teaser": "Look at the upstairs windows.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-footsteps-above-the-gallows/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 58,
+        "audioBytes": 930002
+      }
+    ],
     "tags": [
       "san-diego",
       "ghosts"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-footsteps-above-the-gallows",
-        "durationS": 98
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "the-garage-that-vanished",
@@ -17537,7 +18420,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 96,
+    "durationS": 67,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17545,9 +18428,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The garage is gone.\n\nOn February 14, 1929, it stood at this address.\n\nInside, seven men associated with George “Bugs” Moran’s bootlegging organization were\nlined up against a wall and shot.\n\nThe killings became known as the St. Valentine’s Day Massacre.\n\nThe crime helped define the public image of Prohibition-era Chicago: rival\norganizations, illegal alcohol, and violence reaching far beyond a private dispute.\n\nAl Capone became a leading suspect in public accounts.\n\nBut he was never convicted of this massacre, and the case remains unsolved.\n\nLook at the space where the building stood.\n\nYou cannot inspect its rooms here. Even the original bullet-marked wall was removed;\nportions are now displayed at the Mob Museum in Las Vegas.\n\nThe address survives in Chicago.\n\nThe evidence traveled.\n\nThe name became famous.\n\nBehind that name were seven deaths, and a crime whose reputation became clearer than its\ncomplete solution.\n",
+    "script": "The garage is gone.\n\nOn February 14, 1929, it stood at this address.\n\nInside, seven men associated with George “Bugs” Moran’s bootlegging organization were\nlined up against a wall and shot.\n\nThe killings became known as the St. Valentine’s Day Massacre.\n\nThe crime helped define the public image of Prohibition-era Chicago: rival\norganizations, illegal alcohol, and violence reaching far beyond a private dispute.\n\nAl Capone's Chicago Outfit was widely suspected of ordering it.\n\nBut Capone was never charged with this massacre, nobody was ever prosecuted for it, and the case remains unsolved.\n\nLook at the space where the building stood.\n\nYou cannot inspect its rooms here. When the garage was due to be demolished in 1967, the\nbricks of the wall were saved; some are now displayed at the Mob Museum in Las Vegas.\n\nThe address survives in Chicago.\n\nThe evidence traveled.\n\nThe name became famous.\n\nBehind that name were seven deaths, and a crime whose reputation became clearer than its\ncomplete solution.\n",
     "teaser": "The garage is gone.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-garage-that-vanished/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 67,
+        "audioBytes": 1073362
+      }
+    ],
     "tags": [
       "chicago",
       "prohibition"
@@ -17555,18 +18446,11 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "unsolved",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-09",
+      "reviewedAt": "2026-11-09",
       "contentWarning": "This echo describes the killing of seven men. No violence is described in detail."
     },
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-garage-that-vanished",
-        "durationS": 96
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "the-girl-who-wanted-her-doll",
@@ -17582,7 +18466,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 108,
+    "durationS": 64,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17590,22 +18474,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This story begins with a visitor’s claim.\n\nIn the 1990s, Japanese psychic Aiko Gibo visited Mary King’s Close.\n\nAccording to the attraction’s account, she said she sensed a young girl in a room off\nAllan’s Close.\n\nThe girl, she claimed, was called Annie and was distressed because she had lost her\ndoll.\n\nGibo brought a replacement.\n\nVisitors later began leaving toys of their own.\n\nHere is the important distinction: the attraction says its researchers have not found a\nhistorical record identifying a child named Annie as the girl in this story.\n\nThe ghost’s identity is unverified.\n\nThe visitors’ response is real.\n\nPeople heard about a lonely child and wanted to offer comfort.\n\nLook around the room.\n\nSome ghost stories are built around a threat approaching from the dark.\n\nThis one is built around something missing.\n\nA child without her family.\n\nA doll that could be replaced.\n\nA small act of kindness offered to someone nobody could prove was there.\n",
+    "script": "This story begins with a visitor’s claim.\n\nIn the 1990s, Japanese psychic Aiko Gibo visited Mary King’s Close.\n\nAccording to the attraction’s account, she said she sensed a young girl in a room off\nAllan’s Close.\n\nThe girl, she claimed, was called Annie and was distressed because she had lost her\ndoll.\n\nGibo brought a replacement.\n\nVisitors later began leaving toys of their own.\n\nHere is the important distinction: the attraction says its researchers have not found a\nhistorical record identifying a child named Annie as the girl in this story.\n\nThe ghost is a legend, and its identity is unverified.\n\nThe visitors’ response is real.\n\nPeople heard about a lonely child and wanted to offer comfort.\n\nLook around the room.\n\nSome ghost stories are built around a threat approaching from the dark.\n\nThis story is built around something missing.\n\nA child without her family.\n\nA doll that could be replaced.\n\nA small act of kindness offered to someone nobody could prove was there.\n",
     "teaser": "This story begins with a visitor’s claim.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-girl-who-wanted-her-doll/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 64.4,
+        "audioBytes": 1031566
+      }
+    ],
     "tags": [
       "edinburgh",
       "ghosts"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-girl-who-wanted-her-doll",
-        "durationS": 108
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "the-lady-in-grey",
@@ -17650,7 +18535,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "the-last-movie",
     "title": "The Last Movie",
-    "summary": "Stand outside the theatre and look at the entrance.",
+    "summary": "John Dillinger walked out of this theatre into a Federal ambush on the night of July 22, 1934.",
     "point": {
       "at": {
         "lat": 41.92636,
@@ -17661,7 +18546,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 96,
+    "durationS": 69,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17669,9 +18554,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Stand outside the theatre and look at the entrance.\n\nOn July 22, 1934, John Dillinger walked through it to watch Manhattan Melodrama.\n\nHe was one of the country’s most wanted fugitives.\n\nFederal agents knew he might come here. A woman accompanying him had provided\ninformation about his plans.\n\nThey waited outside.\n\nAccording to the FBI’s account, Dillinger emerged at about ten-thirty that night. Agent\nMelvin Purvis lit a cigar to signal the others.\n\nThe FBI says Dillinger drew a pistol and ran toward a nearby alley.\n\nAgents fired. Dillinger was fatally wounded.\n\nStay on the sidewalk. There is no need to enter the alley.\n\nLook back toward the theatre doors.\n\nMovie audiences leave carrying a story that has just ended.\n\nThat night, Dillinger stepped out of a fictional gangster story and into the final\nmoments of his own.\n\nThe theatre remains. The nationwide pursuit ended just beyond it.\n",
+    "script": "Stand outside the theatre and look at the entrance.\n\nOn the night of July 22, 1934, John Dillinger came here to watch a film called Manhattan Melodrama.\n\nHe was the country's Public Enemy Number One.\n\nFederal agents knew he might come here. According to the newspapers the next day, a woman who knew him had told them he would be at the Biograph that night.\n\nThey waited outside, for nearly three hours.\n\nAccording to the Associated Press, Dillinger walked out through the lobby and down the street, past Melvin Purvis, the agent in charge, who was sitting in a parked car. Purvis moved his right arm in a signal.\n\nThe same report says Dillinger darted toward an alley, reaching for a pistol.\n\nAgents fired. Three bullets hit him. It was ten forty at night.\n\nStay on the sidewalk. There is no need to enter the alley.\n\nLook back toward the theatre doors.\n\nMovie audiences leave carrying a story that has just ended.\n\nThat night, Dillinger stepped out of a gangster film and into the final moments of his own story.\n\nThe theatre remains. The nationwide pursuit ended just beyond it.\n",
     "teaser": "Stand outside the theatre and look at the entrance.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-last-movie/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 69.1,
+        "audioBytes": 1105963
+      }
+    ],
     "tags": [
       "chicago",
       "dillinger"
@@ -17679,18 +18572,11 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "convicted",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-09",
+      "reviewedAt": "2026-11-09",
       "contentWarning": "This echo describes a killing. No violence is described in detail."
     },
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-last-movie",
-        "durationS": 96
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "the-lights-beyond-the-ridge",
@@ -17706,7 +18592,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 100,
+    "durationS": 58,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17714,22 +18600,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look out toward the ridges.\n\nFor more than a century, people have reported unusual lights around Brown Mountain.\n\nThe descriptions vary: bright points that appear, seem to move, then disappear.\n\nThe lights became part of Appalachian folklore, often given ghostly explanations.\n\nThe National Park Service notes that studies have linked reports to ordinary sources,\nincluding vehicle headlights.\n\nSo a distant light is not evidence of a spirit.\n\nBut distance makes certainty difficult.\n\nYou may not see the road beneath a moving light. You may not recognize the angle. Trees\ncan hide a source and reveal it again.\n\nThat uncertainty helped the legend endure.\n\nWatch from the designated overlook. There is no need to chase anything into the woods.\n\nIf you see a light, notice its direction and movement before deciding what it is.\n\nThe landscape is real.\n\nThe reports are documented.\n\nWhat people make of them is where the ghost story begins.\n",
+    "script": "Look out toward the ridges.\n\nSince at least 1910, people have reported unusual lights around Brown Mountain.\n\nThe descriptions vary: bright points that appear, seem to move, then disappear.\n\nThe lights became part of local folklore, often given ghostly explanations. The Park Service calls them a legend.\n\nThe National Park Service notes that studies have linked reports to ordinary sources,\nincluding vehicle headlights.\n\nSo a distant light is not evidence of a spirit.\n\nBut distance makes certainty difficult.\n\nYou might not see the road beneath a moving light. You might not recognize the angle. Trees\ncan hide a source and reveal it again.\n\nThat uncertainty is part of why the legend endures.\n\nWatch from the designated overlook. There is no need to chase anything into the woods.\n\nIf you see a light, notice its direction and movement before deciding what it is.\n\nThe landscape is real.\n\nThe reports are documented.\n\nWhat people make of them is where the ghost story begins.\n",
     "teaser": "Look out toward the ridges.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-lights-beyond-the-ridge/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 57.6,
+        "audioBytes": 922478
+      }
+    ],
     "tags": [
       "blue-ridge-parkway",
       "ghosts"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-lights-beyond-the-ridge",
-        "durationS": 100
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "the-men-who-left-their-faces-behind",
@@ -17745,7 +18632,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 100,
+    "durationS": 64,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17753,9 +18640,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look into the cells.\n\nIn June 1962, the men inside needed the guards to believe they were sleeping.\n\nSo they left faces on their pillows.\n\nFrank Morris and brothers John and Clarence Anglin made dummy heads using materials that\nincluded paint and human hair.\n\nBehind the cells, they prepared an escape route. They also assembled makeshift flotation\nequipment from raincoats.\n\nOn the night of June 11, the three men disappeared from their cells.\n\nBy morning, the deception was discovered.\n\nThe faces were still in bed.\n\nThe men were gone.\n\nTheir ultimate fate has never been conclusively established. The escape does not prove\nthey survived the bay.\n\nWhen you later look toward the mainland, notice the water between here and there.\n\nThe men overcame the walls, the checks, and the locks.\n\nThe unanswered part begins beyond the island.\n\nThey left behind something that looked like sleep, and a mystery that never settled.\n",
+    "script": "Look into the cells.\n\nIn June 1962, the men inside needed the guards to believe they were sleeping.\n\nSo they left faces on their pillows.\n\nFrank Morris and brothers John and Clarence Anglin made realistic dummy heads, complete\nwith human hair.\n\nBehind the cells, they prepared an escape route, enlarging the vent holes in their back walls. They also made crude life vests and a raft\nfrom prison-issued raincoats.\n\nOn the night of June 11, the three men disappeared from their cells.\n\nBy morning, the deception was discovered.\n\nThe faces were still in bed.\n\nThe men were gone.\n\nTheir ultimate fate has never been conclusively established. They are officially listed as missing, presumed drowned. The escape does not prove\nthey survived the bay.\n\nWhen you later look toward the mainland, notice the water between here and there.\n\nThe men overcame the walls, the checks, and the locks.\n\nThe unanswered part begins beyond the island.\n\nThey left behind something that looked like sleep, and a mystery that never settled.\n",
     "teaser": "Look into the cells.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-men-who-left-their-faces-behind/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 64.2,
+        "audioBytes": 1028640
+      }
+    ],
     "inside": true,
     "tags": [
       "san-francisco",
@@ -17764,18 +18659,11 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "convicted",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-09",
+      "reviewedAt": "2026-11-09",
       "contentWarning": "This echo describes a prison escape. No violence is described."
     },
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-men-who-left-their-faces-behind",
-        "durationS": 100
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "the-music-in-the-empty-room",
@@ -17830,7 +18718,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 101,
+    "durationS": 68,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17838,9 +18726,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This block is often associated with the American Revolution.\n\nBut its history includes a much more recent act of violence.\n\nOn January 24, 1975, a bomb exploded in the building at 101 Broad Street, part of the\nFraunces Tavern complex.\n\nFour people were killed.\n\nThe organization known as FALN claimed responsibility.\n\nThat claim belongs to the historical record. It does not establish the identity of every\nperson involved in preparing or placing the bomb.\n\nLook at the buildings together.\n\nIt is easy to imagine a historic place as belonging to one period: colonial rooms, old\npaintings, a famous farewell.\n\nPeople continued using these buildings long after that period ended.\n\nThey came here to work, meet, and eat.\n\nThe bombing became another chapter in the life of this block.\n\nStanding here, you are beside a place associated with the founding of a country and with\npeople whose lives ended almost two centuries later.\n\nBoth histories belong to it.\n",
+    "script": "This block is often associated with the American Revolution.\n\nBut its history includes a much more recent act of violence.\n\nOn January 24, 1975, at lunchtime, a bomb exploded in the building at 101 Broad Street,\npart of the Fraunces Tavern complex.\n\nFour people were killed, and dozens were injured.\n\nThe organization known as the FALN claimed responsibility.\n\nThat claim belongs to the historical record. It does not establish the identity of every\nperson involved in preparing or placing the bomb.\n\nLook at the buildings together.\n\nIt is easy to imagine a historic place as belonging to one period: colonial rooms, old\npaintings, Washington's farewell to his officers in 1783.\n\nPeople continued using these buildings long after that period ended.\n\nThey came here to work, meet, and eat.\n\nThe bombing became another chapter in the life of this block.\n\nStanding here, you are beside a place associated with the founding of a country and with\npeople whose lives ended almost two centuries later.\n\nBoth histories belong to it.\n",
     "teaser": "This block is often associated with the American Revolution.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-other-history-of-fraunces-tavern/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 67.9,
+        "audioBytes": 1087572
+      }
+    ],
     "tags": [
       "new-york",
       "lower-manhattan"
@@ -17848,18 +18744,11 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": true,
       "convictionStatus": "unsolved",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-09",
+      "reviewedAt": "2026-11-09",
       "contentWarning": "This echo describes a bombing that killed four people. No injuries are described."
     },
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-other-history-of-fraunces-tavern",
-        "durationS": 101
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "the-prison-corridor",
@@ -17916,7 +18805,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 99,
+    "durationS": 67,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -17924,27 +18813,28 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look toward the station entrance.\n\nOn June 17, 1933, officers brought a handcuffed prisoner through Union Station.\n\nHis name was Frank Nash. They were taking him back to federal prison.\n\nOutside, a car waited.\n\nAs the officers gathered around it, armed men attacked.\n\nThe apparent purpose was to free Nash.\n\nInstead, Nash and four law enforcement officers were killed.\n\nA journey that should have continued toward prison ended here, outside a railway\nstation.\n\nThe killings became known as the Kansas City Massacre.\n\nThey helped drive changes in federal law enforcement, including broader authority for\nfederal agents.\n\nLook at the people arriving and leaving now.\n\nStations are places of movement. Someone steps off a train, crosses a lobby, finds a\nride, continues home.\n\nFor five people that morning, the next part of the journey never happened.\n\nThis entrance became the boundary between an ordinary transfer and a nationally\nconsequential crime.\n",
+    "script": "Look toward the station entrance.\n\nOn June 17, 1933, officers brought a handcuffed prisoner through Union Station.\n\nHis name was Frank Nash. They were taking him back to federal prison.\n\nOutside, a car waited.\n\nAs the officers gathered around it, armed men attacked.\n\nReports at the time called it an effort by gangsters to free Nash, or to kill him.\n\nInstead, Nash and four law enforcement officers were killed.\n\nA journey that should have continued toward prison ended here, outside a railway\nstation.\n\nThe killings became known as the Kansas City Massacre.\n\nThey helped drive changes in federal law enforcement, including broader authority for\nfederal agents.\n\nLook at the people arriving and leaving now.\n\nStations are places of movement. Someone steps off a train, crosses a lobby, finds a\nride, continues home.\n\nFor five people that morning, the next part of the journey never happened.\n\nThis entrance became the boundary between an ordinary transfer and a nationally\nconsequential crime.\n",
     "teaser": "Look toward the station entrance.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-prisoner-who-never-reached-the-prison/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 66.8,
+        "audioBytes": 1070436
+      }
+    ],
     "tags": [
       "kansas-city"
     ],
     "trueCrimeReview": {
       "involvesLivingPeople": false,
       "convictionStatus": "convicted",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-09",
+      "reviewedAt": "2026-11-09",
       "contentWarning": "This echo describes a shooting in which five people died. No violence is described in detail."
     },
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-prisoner-who-never-reached-the-prison",
-        "durationS": 99
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "the-queen-in-the-wrong-corridor",
@@ -18039,7 +18929,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "legend",
     "format": "short",
-    "durationS": 100,
+    "durationS": 66,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -18047,22 +18937,23 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "You are aboard a ship where movement and unfamiliar sounds can have ordinary\nexplanations.\n\nThat makes the story of stateroom B340 especially difficult to separate from its\nsurroundings.\n\nThe Queen Mary’s operator publishes reports of nighttime knocks, bathroom lights\nswitching on, faucets running, and doors opening or closing unexpectedly.\n\nThe room has become part of the ship’s ghost folklore.\n\nThose reports are not independently established evidence of spirits.\n\nStill, imagine the situation they describe.\n\nYou are inside a small cabin. You hear a knock.\n\nYou open the door.\n\nNobody is there.\n\nYou close it and return to bed.\n\nThen you hear another sound.\n\nA ship is full of compartments you cannot see into, pipes behind walls, and passages\nbeyond doors.\n\nB340’s legend lives in that uncertainty.\n\nYou know you heard something.\n\nThe harder question is whether the explanation is somewhere nearby, hidden by the ship\nitself.\n",
+    "script": "You are aboard a ship where movement and unfamiliar sounds can have ordinary\nexplanations.\n\nThat makes the story of stateroom B340 especially difficult to separate from its\nsurroundings.\n\nThe Queen Mary’s operator publishes reports of nighttime knocks, bathroom lights\nswitching on, faucets running, and doors opening or closing unexpectedly.\n\nThe room has become part of the ship’s ghost folklore. It is a legend.\n\nThose reports are not independently established evidence of spirits.\n\nStill, imagine the situation they describe.\n\nYou are inside a small cabin. You hear a knock.\n\nYou open the door.\n\nNobody is there.\n\nYou close it and return to bed.\n\nThen you hear another sound.\n\nA ship is full of compartments you cannot see into, pipes behind walls, and passages\nbeyond doors.\n\nB340’s legend lives in that uncertainty.\n\nYou know you heard something.\n\nThe harder question is whether the explanation is somewhere nearby, hidden by the ship\nitself.\n",
     "teaser": "You are aboard a ship where movement and unfamiliar sounds can have ordinary explanations.",
     "certaintyNote": "A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-room-that-knocks-back/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 65.6,
+        "audioBytes": 1050792
+      }
+    ],
     "tags": [
       "long-beach",
       "ghosts"
     ],
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-room-that-knocks-back",
-        "durationS": 100
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "the-turn-onto-elm-street",
@@ -18078,7 +18969,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "true-crime",
     "format": "short",
-    "durationS": 101,
+    "durationS": 88,
     "minAge": 16,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -18086,9 +18977,17 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Watch the curve of Elm Street.\n\nOn November 22, 1963, President John F. Kennedy’s motorcade passed through this plaza.\n\nPeople had gathered to see him.\n\nAt about twelve-thirty, Kennedy was shot while riding along Elm Street.\n\nHe was taken to Parkland Memorial Hospital, where he was pronounced dead.\n\nLook toward the former Texas School Book Depository.\n\nThe Warren Commission concluded that Lee Harvey Oswald fired from that building. Later\ninvestigations and decades of debate followed.\n\nThis short account does not settle every disputed question.\n\nBut the central event is documented: a president was fatally shot during a public\nmotorcade on the street beside you.\n\nNotice how compact the setting is.\n\nThe road. The windows. The sidewalks where witnesses stood.\n\nAn event that expanded into millions of pages of investigation began within this small\nstretch of city.\n\nYou can stand beside the route.\n\nYou cannot recover the certainty people had before the motorcade reached it.\n",
+    "script": "Watch the curve of Elm Street.\n\nOn November 22, 1963, President John F. Kennedy's motorcade turned here, off Houston Street and onto Elm.\n\nPeople had gathered to see him. He waved to the crowd outside the Texas School Book Depository as he passed it.\n\nThe clock on top of that building said twelve thirty. Seconds later, shots rang out, and Kennedy was hit while riding along Elm Street.\n\nHe was taken to Parkland Memorial Hospital, where he was pronounced dead at one o'clock.\n\nLook toward the former Texas School Book Depository.\n\nAccording to the Warren Commission, the shots were fired from a sixth floor window of that building, and they were fired by Lee Harvey Oswald. Oswald never stood trial. He was shot dead two days later, in the basement of the Dallas police building. Years afterwards, a committee of the House of Representatives agreed that Oswald fired, but concluded that the President was probably assassinated as a result of a conspiracy.\n\nThis short account does not settle every disputed question.\n\nBut the central event is documented: a president was fatally shot during a public motorcade on the street beside you.\n\nNotice how compact the setting is.\n\nThe road. The windows. The sidewalks where witnesses stood.\n\nAn event that has been investigated ever since began within this small stretch of city.\n\nYou can stand beside the route.\n\nYou cannot recover the certainty people had before the motorcade reached it.\n",
     "teaser": "Watch the curve of Elm Street.",
     "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/the-turn-onto-elm-street/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 88.3,
+        "audioBytes": 1414416
+      }
+    ],
     "tags": [
       "dallas",
       "kennedy"
@@ -18096,18 +18995,11 @@ export const LIBRARY: readonly Echo[] = [
     "trueCrimeReview": {
       "involvesLivingPeople": true,
       "convictionStatus": "alleged",
-      "reviewedBy": "TODO: a named human, before this can leave draft.",
-      "reviewedAt": "2026-10-09",
+      "reviewedBy": "James (owner), approved 2026-11-09",
+      "reviewedAt": "2026-11-09",
       "contentWarning": "This echo describes an assassination. No violence is described in detail."
     },
-    "remoteness": 1,
-    "renders": [
-      {
-        "voiceId": "wC1005J19tvhoqqC2hkf",
-        "audioKey": "speech/the-turn-onto-elm-street",
-        "durationS": 101
-      }
-    ]
+    "remoteness": 1
   },
   {
     "id": "trinity-tallest-thing",
@@ -18208,7 +19100,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "wall-street-the-wall",
     "title": "The street is named after something that isn't there",
-    "summary": "A nine-foot palisade crossed the island here, built mostly by people who were not free.",
+    "summary": "In 1653 a wall crossed the island here against an English invasion. Enslaved workers helped build it.",
     "point": {
       "at": {
         "lat": 40.7074,
@@ -18219,7 +19111,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 90,
+    "durationS": 77,
     "minAge": 10,
     "quality": 0.92,
     "visibility": "at-hand",
@@ -18227,8 +19119,16 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Look down the street. It runs river to river, and you can very nearly see one end from the\nother.\n\nThat is not an accident. It is the width of the island, and in 1653 the Dutch decided to\nfence it off.\n\nThe governor, Peter Stuyvesant, ordered a palisade built right across here. Nine feet\nhigh, made of packed earth and fifteen-foot planks, running from the Hudson to the East\nRiver. It was meant to stop an English invasion.\n\nThe people who built it were mostly enslaved Africans, owned by the Dutch West India\nCompany.\n\nThe invasion never came. The English took the colony anyway, eleven years later, by\nsailing in and asking. And in 1699 they pulled the wall down and used the wood for\nsomething else.\n\nIt stood for forty-six years. It has been gone for more than three hundred.\n\nThe street kept the name, which means this is a street named after a thing that is not\nthere, put up by people who were never free to walk away from it.\n",
+    "script": "Look down the street. It runs across the island, toward the water at both ends.\n\nThat is not an accident. In 1653 the Dutch decided to fence the town off.\n\nEngland and the Dutch Republic were at war, and word had reached the governor, Peter Stuyvesant, that English troops were gathering in New England for a possible invasion from the north. In March the city's council resolved to surround the greater part of the town with a high stockade. Someone, possibly Stuyvesant himself, sketched it in the margin of the court minutes: nine feet above the ground, three feet in it, with a ditch and an embankment. In the end a palisade proved too costly, and they nailed slats across posts set fifteen feet apart. It ran across the island from the East River to the Hudson.\n\nThe colony's enslaved workers helped to build it.\n\nThe invasion from New England never came. The English took the colony anyway, eleven years later.\n\nThe Dutch called the wall Het Cingel, the Belt. It gave its name to the street, which means this is a street named after a thing that is not there, put up partly by people who were never free to walk away from it.\n",
     "teaser": "Look down the street. It runs river to river.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/wall-street-the-wall/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 76.5,
+        "audioBytes": 1225499
+      }
+    ],
     "pronunciations": [
       {
         "written": "Peter Stuyvesant",
@@ -18241,14 +19141,7 @@ export const LIBRARY: readonly Echo[] = [
       "slavery",
       "wall-street"
     ],
-    "remoteness": 0,
-    "renders": [
-      {
-        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
-        "audioKey": "speech/wall-street-the-wall",
-        "durationS": 90
-      }
-    ]
+    "remoteness": 0
   },
   {
     "id": "wilmington-a-bar-takes-a-road-trip",
@@ -25636,4 +26529,4 @@ export const ROUTES: readonly Route[] = [
 
 // What a person has really checked, as authored, before the demo override above. The
 // "true story" mark reads this, never the overridden status (`truth.ts` in the engine).
-export const VERIFIED_IDS: ReadonlySet<string> = new Set(["annapolis-a-port-called-napolis","annapolis-a-private-citizen-by-christmas","annapolis-married-in-that-house","annapolis-the-dome-was-a-lookout","asheville-a-dome-made-of-tile","asheville-a-government-at-the-inn","asheville-a-leg-in-a-boot","asheville-a-yodel-on-the-top-floor","asheville-the-boardinghouse-called-dixieland","asheville-the-fire-at-highland-hospital","asheville-the-man-who-walked-a-wheel","asheville-the-ymi","bald-head-captain-charlie-lit-both","bald-head-the-builder-who-lost-money","bald-head-the-prisms-coming-home","bald-head-the-swim-to-southport","bald-head-the-woman-on-the-shore","carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","caswell-beach-a-hat-from-a-helicopter","caswell-beach-a-lighthouse-poured-in-a-week","caswell-beach-the-long-day-of-dunbar-davis","caswell-beach-the-night-caswell-blew-up","caswell-beach-the-second-brightest-light","caswell-beach-yachts-on-submarine-watch","charlotte-a-city-of-tents","charlotte-a-navy-yard-far-from-the-sea","charlotte-a-vein-under-south-end","charlotte-brought-to-you-by-a-laxative","charlotte-fred-in-the-arcade","charlotte-roots-in-north-carolina","charlotte-strictly-stock","charlotte-the-declaration-nobody-can-find","charlotte-the-mint-that-moved","charlotte-the-sandwich-from-crescent-avenue","charlotte-the-wall-in-front-of-the-courthouse","charlotte-twenty-beds-under-the-stadium","chicago-allowed-to-carry-twenty-five-hundred","chicago-sixty-five-degrees-then-twenty-three-inches","chicago-the-architect-went-to-the-seaside","chicago-the-case-that-outlived-the-pipe","chicago-the-cow-that-took-the-blame","chicago-the-garbage-inspector","chicago-the-porters-contract","chicago-the-sign-says-end","chicago-the-strike-that-stopped-the-trains","chicago-under-the-bleachers","cleveland-no-more-protection","cleveland-the-missing-letter","cleveland-the-river-that-burned","dc-a-country-he-never-saw","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-priced-by-size","dc-somewhere-to-hide","dc-the-ballroom-ward","dc-the-caretaker-heard-nothing","dc-the-cherry-tree-rebellion","dc-the-first-are-with-the-last","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-ladies-waiting-room","dc-the-man-who-found-the-bolts","dc-the-map-underfoot","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-plaque-on-the-fence","dc-the-starting-line-came-later","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-three-names-for-one-wing","dc-to-thee-we-sing","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-white-before-the-fire","dc-written-in-the-dark","deadwood-before-she-was-calamity","deadwood-his-back-to-the-door","deadwood-the-champions-of-america","fairfax-she-married-the-man-who-arrested-her","fairfax-thirty-killed-said-the-picture","fall-river-a-description-without-a-photograph","fall-river-the-granite-mill-fire","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","jerome-a-ghost-town-on-purpose","jerome-sixty-seven-men-in-cattle-cars","jerome-the-day-the-stone-melted","jerome-water-from-seven-miles-away","key-west-a-house-named-for-mercedes","key-west-ice-from-the-north","key-west-the-fort-that-lost-the-sea","key-west-the-guest-who-was-not-there","key-west-the-key-west-uniform","key-west-the-sailor-with-the-oar","key-west-the-studio-across-the-catwalk","kure-beach-five-shells-in-the-dark","memphis-before-breakfast","memphis-it-worked-when-they-stopped","memphis-kid-douglas","memphis-the-amp-on-the-roof","memphis-the-b-side","memphis-the-mountaintop","memphis-the-ride-home","memphis-the-song-that-mocked-mr-crump","memphis-they-smashed-the-press","nashville-a-hall-built-by-song","nashville-she-bit-the-conductor","nashville-six-encores","nashville-the-architect-in-the-wall","nashville-the-colored-lights","nashville-the-fort-nobody-attacked","nashville-the-harmonica-wizard","nashville-the-saloon-keepers-tabernacle","nashville-the-united-hilton","nashville-tile-thirteen","nashville-when-the-cumberland-came-up","nashville-yellow-roses-and-red","newport-a-door-in-the-floor","newport-a-year-of-waiting","newport-the-line-washington-borrowed","newport-the-tower-nobody-agrees-on","oak-island-five-left-standing","oak-island-how-oak-island-became-an-island","oak-island-the-fence-on-the-dune","pawhuska-guardian-of-his-own-children","pawhuska-the-missing-panel","philadelphia-a-firehouse-on-a-market","philadelphia-a-steeple-paid-by-lottery","philadelphia-as-much-as-anyone-knows","philadelphia-congress-started-at-the-tavern","philadelphia-dorothy-todd-widow","philadelphia-hamlet-paid-for-the-hospital","philadelphia-he-left-the-year-blank","philadelphia-no-hatch-wide-enough","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-penn-on-the-tower","philadelphia-read-aloud-in-the-yard","philadelphia-rising-or-setting","philadelphia-shoes-for-bob","philadelphia-the-baby-over-the-bank-door","philadelphia-the-bell-went-to-allentown","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-first-vote-was-the-room","philadelphia-the-good-china","philadelphia-the-market-under-the-trains","philadelphia-the-room-upstairs","philadelphia-the-street-that-was-a-creek","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-washington-left-last","philadelphia-what-her-grandson-said","saint-paul-almost-pigs-eye","saint-paul-half-a-mile-of-cellar","saint-paul-the-end-of-the-river-road","saint-paul-the-spirit-house","salem-a-life-in-one-house","salem-a-wharf-built-on-mud","salem-the-judges-house","salem-the-ship-that-missed-the-war","salem-the-surveyor-who-lost-his-job","san-antonio-a-day-at-the-mission","san-antonio-a-window-for-rosa","san-antonio-one-governor-was-enough","san-antonio-spirits-with-flaming-swords","san-antonio-the-army-gave-it-the-hump","san-antonio-the-chili-queens-plaza","san-antonio-the-eye-with-a-mustache","san-antonio-the-mission-that-kept-moving","san-antonio-twelve-thousand-pecan-shellers","san-antonio-water-over-the-creek","san-antonio-wooden-cannons-on-the-long-barrack","san-francisco-a-message-on-the-water-tower","san-francisco-a-toast-to-the-wrong-president","san-francisco-filled-by-the-tide","san-francisco-forty-two-tons-of-powder","san-francisco-hits-eight-and-nine","san-francisco-studying-in-the-bathroom","san-francisco-the-arch-over-the-fort","san-francisco-the-first-rangers-on-this-hill","san-francisco-the-lighthouse-with-a-flat-top","san-francisco-the-unfinished-mosaic","san-francisco-two-sisters-on-the-same-rocks","santa-fe-a-tank-called-the-mud-puppy","santa-fe-ben-hur-after-dark","santa-fe-the-carpenter-who-vanished","santa-fe-the-door-to-the-hill","santa-fe-the-end-of-the-trail","santa-fe-the-mother-ditch","santa-fe-what-the-tree-rings-say","santa-fe-when-the-plaza-was-a-pueblo","southport-a-fish-house-plays-a-fish-shack","southport-a-wretched-little-place","southport-carved-in-imperishable-stone","southport-croaker-queen","southport-one-floor-below-the-cells","southport-pay-on-your-way-out","southport-red-over-white","southport-the-bent-oak","southport-the-city-of-the-south-atlantic","southport-the-festival-of-free-men","southport-the-gentleman-giant","southport-the-harp-that-kept-playing","southport-the-last-cupola","southport-the-old-man-and-the-boy","southport-the-reporter-who-could-not-hear","southport-the-reverends-church","southport-the-station-in-the-river","southport-the-watch-on-the-river","southport-the-woman-who-raised-the-flags","southport-worse-than-hazel","st-augustine-a-hotel-poured-from-shells","st-augustine-a-wall-of-seashells","st-augustine-acid-in-the-pool","st-augustine-drawings-on-ledger-paper","st-augustine-the-first-thanksgiving-menu","st-augustine-the-free-town-in-the-marsh","st-augustine-the-inlet-of-slaughters","st-augustine-wild-cats-window","the-distance-across-the-street","the-lady-in-grey","the-prison-corridor","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);
+export const VERIFIED_IDS: ReadonlySet<string> = new Set(["african-burial-ground","annapolis-a-port-called-napolis","annapolis-a-private-citizen-by-christmas","annapolis-married-in-that-house","annapolis-the-dome-was-a-lookout","asheville-a-dome-made-of-tile","asheville-a-government-at-the-inn","asheville-a-leg-in-a-boot","asheville-a-yodel-on-the-top-floor","asheville-the-boardinghouse-called-dixieland","asheville-the-fire-at-highland-hospital","asheville-the-man-who-walked-a-wheel","asheville-the-ymi","atlantic-city-first-boardwalk","bald-head-captain-charlie-lit-both","bald-head-the-builder-who-lost-money","bald-head-the-prisms-coming-home","bald-head-the-swim-to-southport","bald-head-the-woman-on-the-shore","boston-abiel-smith-school-goodbye","boston-african-meeting-house-built-by-its-people","boston-beacon-hill-the-beacon","boston-brimstone-corner","boston-common-cows","boston-franklins-other-corner","boston-granary-five-in-one-grave","boston-hayden-house-keg","boston-in-short-i-lost-most-all","boston-mother-goose","boston-say-no-more","boston-shaw-memorial-forty-faces","boston-sides-made-of-iron","boston-state-house-dome-copper","boston-swan-boats-mrs-paget","boston-the-church-inside-the-church","boston-the-house-that-stayed-useful","boston-the-lady-in-black","boston-the-letter-on-the-slate","boston-the-lion-and-the-unicorn","boston-the-poem-that-built-a-statue","boston-the-school-that-lost-its-ground","boston-the-sextons-lodgers","boston-the-spire-that-fell","boston-the-spy-question","boston-the-stone-they-shot-at","boston-the-street-that-ran-into-the-sea","boston-the-whites-of-their-eyes","boston-the-wrong-hill","boston-waiting-for-mister-rotch","boston-what-the-auditor-found","boston-where-the-water-was","boston-who-said-fire","bowling-green-king-george","canyon-of-heroes","carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","castle-clinton-eight-million","caswell-beach-a-hat-from-a-helicopter","caswell-beach-a-lighthouse-poured-in-a-week","caswell-beach-the-long-day-of-dunbar-davis","caswell-beach-the-night-caswell-blew-up","caswell-beach-the-second-brightest-light","caswell-beach-yachts-on-submarine-watch","charleston-a-strangers-initials","charleston-a-wharf-he-was-willing-to-lose","charleston-bolted-together","charleston-built-for-a-capital","charleston-built-to-fall-inward","charleston-calhoun-moved-by-night","charleston-five-times-across","charleston-gothic-over-brick","charleston-hey-charleston","charleston-madame-margots-bargain","charleston-not-called-catfish","charleston-sermons-on-the-tide","charleston-skulls-over-the-market","charleston-steps-that-only-go-up","charleston-the-audience-on-the-sea-wall","charleston-the-bedsheet","charleston-the-castle-on-the-square","charleston-the-congregation-that-rebuilt","charleston-the-fire-and-the-brick-law","charleston-the-museums-front-door","charleston-the-night-the-wall-opened","charleston-the-petition-of-forty-seven","charleston-the-piece-somebody-kept","charleston-the-playhouse-on-dock-street","charleston-the-powder-behind-the-wall","charleston-the-sailor-on-the-steeple","charleston-the-street-named-for-a-meeting-house","charleston-the-tables-in-the-shed","charleston-the-window-marion-missed","charleston-the-yard-named-for-a-water-tank","charleston-what-the-survey-wrote-down","charleston-where-the-tide-came-in","charleston-whose-arms-on-the-roof","charlotte-a-city-of-tents","charlotte-a-navy-yard-far-from-the-sea","charlotte-a-vein-under-south-end","charlotte-brought-to-you-by-a-laxative","charlotte-fred-in-the-arcade","charlotte-roots-in-north-carolina","charlotte-strictly-stock","charlotte-the-declaration-nobody-can-find","charlotte-the-mint-that-moved","charlotte-the-sandwich-from-crescent-avenue","charlotte-the-wall-in-front-of-the-courthouse","charlotte-twenty-beds-under-the-stadium","chicago-allowed-to-carry-twenty-five-hundred","chicago-sixty-five-degrees-then-twenty-three-inches","chicago-the-architect-went-to-the-seaside","chicago-the-case-that-outlived-the-pipe","chicago-the-cow-that-took-the-blame","chicago-the-garbage-inspector","chicago-the-porters-contract","chicago-the-sign-says-end","chicago-the-strike-that-stopped-the-trains","chicago-under-the-bleachers","city-hall-declaration","cleveland-no-more-protection","cleveland-the-missing-letter","cleveland-the-river-that-burned","craggy-gardens-balds","dc-a-country-he-never-saw","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-priced-by-size","dc-somewhere-to-hide","dc-the-ballroom-ward","dc-the-caretaker-heard-nothing","dc-the-cherry-tree-rebellion","dc-the-first-are-with-the-last","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-ladies-waiting-room","dc-the-man-who-found-the-bolts","dc-the-map-underfoot","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-plaque-on-the-fence","dc-the-starting-line-came-later","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-three-names-for-one-wing","dc-to-thee-we-sing","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-white-before-the-fire","dc-written-in-the-dark","deadwood-before-she-was-calamity","deadwood-his-back-to-the-door","deadwood-the-champions-of-america","fairfax-she-married-the-man-who-arrested-her","fairfax-thirty-killed-said-the-picture","fall-river-a-description-without-a-photograph","fall-river-the-granite-mill-fire","federal-hall-two-firsts","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","fraunces-tavern-farewell","hatteras-moved-the-lighthouse","jerome-a-ghost-town-on-purpose","jerome-sixty-seven-men-in-cattle-cars","jerome-the-day-the-stone-melted","jerome-water-from-seven-miles-away","key-west-a-house-named-for-mercedes","key-west-ice-from-the-north","key-west-the-fort-that-lost-the-sea","key-west-the-guest-who-was-not-there","key-west-the-key-west-uniform","key-west-the-sailor-with-the-oar","key-west-the-studio-across-the-catwalk","kitty-hawk-shorter-than-this-plane","kure-beach-five-shells-in-the-dark","linn-cove-viaduct-last-piece","linville-gorge-too-steep","memphis-before-breakfast","memphis-it-worked-when-they-stopped","memphis-kid-douglas","memphis-the-amp-on-the-roof","memphis-the-b-side","memphis-the-mountaintop","memphis-the-ride-home","memphis-the-song-that-mocked-mr-crump","memphis-they-smashed-the-press","mount-mitchell-buried-on-top","nashville-a-hall-built-by-song","nashville-she-bit-the-conductor","nashville-six-encores","nashville-the-architect-in-the-wall","nashville-the-colored-lights","nashville-the-fort-nobody-attacked","nashville-the-harmonica-wizard","nashville-the-saloon-keepers-tabernacle","nashville-the-united-hilton","nashville-tile-thirteen","nashville-when-the-cumberland-came-up","nashville-yellow-roses-and-red","new-orleans-a-district-with-his-name","new-orleans-a-tomb-used-again","new-orleans-an-american-house","new-orleans-ghosts-under-the-oaks","new-orleans-her-initials-in-the-iron","new-orleans-love-street","new-orleans-named-for-empty-ground","new-orleans-no-funerals-at-the-cathedral","new-orleans-st-johns-eve-on-the-bayou","new-orleans-the-arrest-that-was-planned","new-orleans-the-blacksmith-shop-with-no-blacksmiths","new-orleans-the-candle-on-good-friday","new-orleans-the-casket-girls","new-orleans-the-champion-who-stopped","new-orleans-the-crosses-on-the-tomb","new-orleans-the-duke-on-the-street-sign","new-orleans-the-emperor-never-came","new-orleans-the-file-sellers","new-orleans-the-fire-in-the-kitchen","new-orleans-the-flag-on-the-mint","new-orleans-the-girl-on-the-belvedere","new-orleans-the-grand-zombis-square","new-orleans-the-harbor-behind-the-cemetery","new-orleans-the-inquisitor-who-came-back","new-orleans-the-legislature-in-the-convent","new-orleans-the-man-under-the-altar","new-orleans-the-neutral-ground","new-orleans-the-noise-on-the-common","new-orleans-the-opera-house-that-isnt-here","new-orleans-the-priests-house","new-orleans-the-river-above-the-street","new-orleans-the-singing-priest","new-orleans-the-woman-who-never-lived-here","new-orleans-twenty-days-of-france","new-orleans-words-on-the-base","newport-a-door-in-the-floor","newport-a-year-of-waiting","newport-the-line-washington-borrowed","newport-the-tower-nobody-agrees-on","oak-island-five-left-standing","oak-island-how-oak-island-became-an-island","oak-island-the-fence-on-the-dune","pawhuska-guardian-of-his-own-children","pawhuska-the-missing-panel","pearl-street-oysters","philadelphia-a-firehouse-on-a-market","philadelphia-a-steeple-paid-by-lottery","philadelphia-as-much-as-anyone-knows","philadelphia-congress-started-at-the-tavern","philadelphia-dorothy-todd-widow","philadelphia-hamlet-paid-for-the-hospital","philadelphia-he-left-the-year-blank","philadelphia-no-hatch-wide-enough","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-penn-on-the-tower","philadelphia-read-aloud-in-the-yard","philadelphia-rising-or-setting","philadelphia-shoes-for-bob","philadelphia-the-baby-over-the-bank-door","philadelphia-the-bell-went-to-allentown","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-first-vote-was-the-room","philadelphia-the-good-china","philadelphia-the-market-under-the-trains","philadelphia-the-room-upstairs","philadelphia-the-street-that-was-a-creek","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-washington-left-last","philadelphia-what-her-grandson-said","saint-paul-almost-pigs-eye","saint-paul-half-a-mile-of-cellar","saint-paul-the-end-of-the-river-road","saint-paul-the-spirit-house","salem-a-life-in-one-house","salem-a-wharf-built-on-mud","salem-the-judges-house","salem-the-ship-that-missed-the-war","salem-the-surveyor-who-lost-his-job","san-antonio-a-day-at-the-mission","san-antonio-a-window-for-rosa","san-antonio-one-governor-was-enough","san-antonio-spirits-with-flaming-swords","san-antonio-the-army-gave-it-the-hump","san-antonio-the-chili-queens-plaza","san-antonio-the-eye-with-a-mustache","san-antonio-the-mission-that-kept-moving","san-antonio-twelve-thousand-pecan-shellers","san-antonio-water-over-the-creek","san-antonio-wooden-cannons-on-the-long-barrack","san-francisco-a-message-on-the-water-tower","san-francisco-a-toast-to-the-wrong-president","san-francisco-filled-by-the-tide","san-francisco-forty-two-tons-of-powder","san-francisco-hits-eight-and-nine","san-francisco-studying-in-the-bathroom","san-francisco-the-arch-over-the-fort","san-francisco-the-first-rangers-on-this-hill","san-francisco-the-lighthouse-with-a-flat-top","san-francisco-the-unfinished-mosaic","san-francisco-two-sisters-on-the-same-rocks","santa-fe-a-tank-called-the-mud-puppy","santa-fe-ben-hur-after-dark","santa-fe-the-carpenter-who-vanished","santa-fe-the-door-to-the-hill","santa-fe-the-end-of-the-trail","santa-fe-the-mother-ditch","santa-fe-what-the-tree-rings-say","santa-fe-when-the-plaza-was-a-pueblo","savannah-a-city-for-christmas","savannah-ballast-stones","savannah-city-hall-dome","savannah-cotton-exchange","savannah-dinner-under-the-trees","savannah-factors-walk","savannah-first-african-baptist","savannah-old-harbor-light","savannah-pirates-house","savannah-raleigh-on-gas-works-hill","savannah-steamship-savannah","savannah-thackerays-comfortable-quarters","savannah-the-chimney-with-privies-in-its-base","savannah-the-church-copied-from-itself","savannah-the-fountain-that-kept-getting-more-parisian","savannah-the-gate-in-the-bull-street-wall","savannah-the-gate-she-made","savannah-the-general-facing-south","savannah-the-general-who-went-missing","savannah-the-library-on-loan","savannah-the-lion-on-the-bed","savannah-the-m-and-t-oaks","savannah-the-night-the-cathedral-burned","savannah-the-sergeant-who-would-not-be-an-officer","savannah-the-spring-that-smelled-of-the-bolt","savannah-the-stone-beside-the-grave","savannah-the-synagogue-with-the-onion-dome","savannah-the-vaults-on-south-broad","savannah-the-word-in-the-basement","savannah-twenty-two-squares","savannah-waving-girl","savannah-wesleys-empty-lot","savannah-white-paper-in-their-hats","savannah-who-lies-under-the-pulaski-monument","savannah-yamacraw-bluff","savannah-you-are-my-prisoner","southport-a-fish-house-plays-a-fish-shack","southport-a-wretched-little-place","southport-carved-in-imperishable-stone","southport-croaker-queen","southport-one-floor-below-the-cells","southport-pay-on-your-way-out","southport-red-over-white","southport-the-bent-oak","southport-the-city-of-the-south-atlantic","southport-the-festival-of-free-men","southport-the-gentleman-giant","southport-the-harp-that-kept-playing","southport-the-last-cupola","southport-the-old-man-and-the-boy","southport-the-reporter-who-could-not-hear","southport-the-reverends-church","southport-the-station-in-the-river","southport-the-watch-on-the-river","southport-the-woman-who-raised-the-flags","southport-worse-than-hazel","st-augustine-a-hotel-poured-from-shells","st-augustine-a-wall-of-seashells","st-augustine-acid-in-the-pool","st-augustine-drawings-on-ledger-paper","st-augustine-the-first-thanksgiving-menu","st-augustine-the-free-town-in-the-marsh","st-augustine-the-inlet-of-slaughters","st-augustine-wild-cats-window","the-balcony","the-children-at-the-lighthouse","the-distance-across-the-street","the-empty-frames","the-footsteps-above-the-gallows","the-garage-that-vanished","the-girl-who-wanted-her-doll","the-lady-in-grey","the-last-movie","the-lights-beyond-the-ridge","the-men-who-left-their-faces-behind","the-other-history-of-fraunces-tavern","the-prison-corridor","the-prisoner-who-never-reached-the-prison","the-room-that-knocks-back","the-turn-onto-elm-street","wall-street-the-wall","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);

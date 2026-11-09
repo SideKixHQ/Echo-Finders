@@ -1,0 +1,154 @@
+# Drafted by Claude Code (2026-11-09) for the New Orleans ghost legends.
+# Listening spot: The Magnolia footbridge over Bayou St. John, a public pedestrian bridge, looking along the water.
+# Position: Wikidata Q111975759 Magnolia Garden Bridge point (29.9809622, -90.088759) (medium confidence).
+id: new-orleans-st-johns-eve-on-the-bayou
+title: "St. John's Eve on the Bayou"
+summary: "The old guides said that on St. John's Eve the Voudous gathered on this bayou to dance. Even the old writers disagreed on where."
+place: "Magnolia Bridge, Bayou St. John, New Orleans, Louisiana"
+at: { lat: 29.98096, lng: -90.08876 }
+triggerRadiusKm: 0.06
+category: legend
+format: short
+durationS: 68
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  Told as tradition by the 1900 and 1904 Picayune guides, who disagree with each other and with Castellanos (1895) on where the St. John's Eve gatherings were held; no witness is named. The script says aloud it is legend, makes no supernatural claim, and names no living person.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [new-orleans, bayou-st-john, voodoo, legend, marie-laveau]
+teaser: "One night a year, the old guides said, this water had visitors."
+script: |
+  Look along the water of Bayou St. John.
+
+  The old guidebooks said that on one night of the year this bayou had visitors. What follows is legend. The guides wrote it from rumor and old memory, and none of them names anyone who was there.
+
+  The night was St. John's Eve, in June, the great festival of the Voudous. Once the police kept too close a watch on Congo Square, a guide of nineteen-oh-four said, they came out here instead, to the banks of the bayou where the water met the swamp. They put up their altars, it said, and danced the Dance of the Serpent around a boiling pot.
+
+  The guide of nineteen hundred tells the same story but sends Marie Laveau and her followers to the shore of Lake Pontchartrain.
+
+  Henry Castellanos, writing in eighteen ninety-five, said the yearly feast near the bayou, with reporters and the police invited, was only a device to fool the unwary. Her real meetings, he wrote, were held somewhere else, out on the lakeshore.
+
+  Decades later, a wire story was still calling St. John's Eve the greatest of all days for voodoo.
+
+  So the legend keeps moving. The water stays where it is.
+pronunciations:
+  - written: Voudous
+    say: VOO-dooz
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look along the water of Bayou St. John."
+    source: 1
+    quote: "It was in these sylvan: solitudes that the ‘“Voudoos” used to hold their baechanalian festivals on the’ night of St. John’s Eve."
+  - says: "The old guidebooks said that on one night of the year this bayou had visitors."
+    source: 1
+    quote: "It was in these sylvan: solitudes that the ‘“Voudoos” used to hold their baechanalian festivals on the’ night of St. John’s Eve."
+  - says: "The night was St. John's Eve, in June, the great festival of the Voudous."
+    source: 1
+    quote: "St. John’s Eve, June 24, was the great Voudoo festival."
+  - says: "Once the police kept too close a watch on Congo Square, a guide of nineteen-oh-four said, they came out here instead, to the banks of the bayou where the water met the swamp."
+    source: 1
+    quote: "After the Congo Plains _ were laid out into streets, and the square itself placed under such strict police surveillance, the Voudoos used to assemble on the banks of the Bayou St. John, just where the waters meet the dreary swamp land."
+  - says: "Once the police kept too close a watch on Congo Square, a guide of nineteen-oh-four said, they came out here instead, to the banks of the bayou where the water met the swamp."
+    source: 1
+    quote: "Copyright 1904 by"
+  - says: "They put up their altars, it said, and danced the Dance of the Serpent around a boiling pot."
+    source: 1
+    quote: "In this wild and dismal spot they used to erect their altars and sing their weird unearthly chants while . 44 they danced the wild ‘Dance of the Serpent” around the boiling pot."
+  - says: "The guide of nineteen hundred tells the same story but sends Marie Laveau and her followers to the shore of Lake Pontchartrain."
+    source: 2
+    quote: "Marie Lavean used to assemble ther adherents in @ wild and dismal spot on the banks of Lake Pontchartrain"
+  - says: "Henry Castellanos, writing in eighteen ninety-five, said the yearly feast near the bayou, with reporters and the police invited, was only a device to fool the unwary."
+    source: 3
+    quote: "She would invite the reporters of the press, the mag- nates of the police force, the swells of the sporting fra- ternity to their public dances and drinking bouts"
+  - says: "Henry Castellanos, writing in eighteen ninety-five, said the yearly feast near the bayou, with reporters and the police invited, was only a device to fool the unwary."
+    source: 3
+    quote: "These festivals occurred yearly on St. John’s eve, at some convenient spot not far from the bayou which bears that name. But this was a mere device to hoodwink the unwary."
+  - says: "Henry Castellanos, writing in eighteen ninety-five, said the yearly feast near the bayou, with reporters and the police invited, was only a device to fool the unwary."
+    source: 3
+    quote: "New Orleans, September 1, 1895."
+  - says: "Her real meetings, he wrote, were held somewhere else, out on the lakeshore."
+    source: 3
+    quote: "Her secret conclaves were usu- ally held in a retired spot upon the lake shore"
+  - says: "Decades later, a wire story was still calling St. John's Eve the greatest of all days for voodoo."
+    source: 4
+    quote: "On St. John's Eve. in June, the greatest of all days for voodooism."
+sources:
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Congo Square and the Voudoos; Bayou St. John"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (1900), Rampart Street and Congo Square; Bayou St. John"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse_0/picayunesguideto00unse_0.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "New Orleans As It Was, Episodes of Louisiana Life (1895), by Henry C. Castellanos"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansasitwa00cast/neworleansasitwa00cast.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Black Magic and Voodoo Still Rife in Louisiana (United Press), The daily independent, Elizabeth City, N.C., 11 February 1937, p. 8"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn91068099/1937-02-11/ed-1/?sp=8
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-orleans-st-johns-eve-on-the-bayou/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 67.7
+    audioBytes: 1084229
+    transcript:
+      totalS: 67.7
+      lines:
+        - text: Look along the water of Bayou St.
+          atS: 0
+          durationS: 1.82
+        - text: John.
+          atS: 1.85
+          durationS: 0.5
+        - text: The old guidebooks said that on one night of the year this bayou had visitors.
+          atS: 2.86
+          durationS: 4.17
+        - text: What follows is legend.
+          atS: 7.2
+          durationS: 1.4
+        - text: The guides wrote it from rumor and old memory, and none of them names anyone who was there.
+          atS: 8.93
+          durationS: 4.89
+        - text: The night was St.
+          atS: 14.2
+          durationS: 0.81
+        - text: John's Eve, in June, the great festival of the Voudous.
+          atS: 15.04
+          durationS: 4.02
+        - text: Once the police kept too close a watch on Congo Square, a guide of nineteen-oh-four said, they came out here instead, to the banks of the bayou where the water met the swamp.
+          atS: 19.33
+          durationS: 9.38
+        - text: They put up their altars, it said, and danced the Dance of the Serpent around a boiling pot.
+          atS: 29.04
+          durationS: 5.4
+        - text: The guide of nineteen hundred tells the same story but sends Marie Laveau and her followers to the shore of Lake Pontchartrain.
+          atS: 34.76
+          durationS: 7.44
+        - text: Henry Castellanos, writing in eighteen ninety-five, said the yearly feast near the bayou, with reporters and the police invited, was only a device to fool the unwary.
+          atS: 42.41
+          durationS: 10.6
+        - text: Her real meetings, he wrote, were held somewhere else, out on the lakeshore.
+          atS: 53.26
+          durationS: 4.05
+        - text: Decades later, a wire story was still calling St.
+          atS: 58
+          durationS: 2.98
+        - text: John's Eve the greatest of all days for voodoo.
+          atS: 61.01
+          durationS: 2.72
+        - text: So the legend keeps moving.
+          atS: 64.24
+          durationS: 1.59
+        - text: The water stays where it is.
+          atS: 65.98
+          durationS: 1.73

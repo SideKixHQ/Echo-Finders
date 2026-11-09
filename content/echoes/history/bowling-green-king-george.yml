@@ -1,34 +1,30 @@
 id: bowling-green-king-george
 title: They pulled the king down and made him into bullets
-summary: A crowd toppled a gilded statue of George III here in 1776 and melted it into musket balls.
+summary: "A crowd toppled a statue of George III here in 1776, and it was melted into musket balls."
 place: Bowling Green, Manhattan
 at: { lat: 40.70463, lng: -74.01319 }
 triggerRadiusKm: 0.06
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: history
 format: short
-durationS: 90
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
 quality: 0.9
 tags: [new-york, revolution, statues, protest]
-teaser: The fence is original. Look at the tops of the posts.
+teaser: "Look at the tops of the posts."
 script: |
-  This is the oldest public park in the city, and the fence around it has been here since
-  1771.
+  This is the oldest public park in the city. Look at the iron fence around it.
 
-  Look at the tops of the posts. They used to have small crowns on them.
+  Look at the tops of the posts. They used to have small golden crowns on them.
 
-  On the ninth of July 1776, the Declaration of Independence was read aloud to Washington's
-  troops a few streets north of here. The crowd came down to this green afterwards, where a
-  gilded lead statue of King George the Third sat on horseback, and pulled it down.
+  On the ninth of July 1776, the Declaration of Independence was read aloud to Washington's troops on the Commons, a few streets north of here. That night a rowdy crowd of soldiers and civilians marched down Broadway to this green, where an equestrian statue of King George the Third had stood for only six years, and pulled it down.
 
-  The lead went to Connecticut and came back as musket balls. Somebody, at some point, took
-  a saw to the crowns on the fence.
+  The statue was carted off to Connecticut and melted down, two tons of metal turned into more than forty two thousand musket balls for Washington's army. And the crowd cut the crowns off the fence.
 
-  Two hundred and fifty years later the fence is still standing and the crowns are still
-  missing, which is a fairly direct way of making a point.
+  Two hundred and fifty years later the fence is still standing and you can still see where the crowns were, which is a fairly direct way of making a point.
+
 pronunciations:
   - written: Bowling Green
     say: BOH-ling Green
@@ -36,19 +32,79 @@ simple:
   title: The crown came off the fence
   durationS: 40
   script: |
-    This is the oldest park in New York. The fence has been here since 1771.
+    Look at the iron fence around this park, at the tops of the posts. They used to have small golden crowns on them.
 
-    Look at the tops of the posts. They used to have small crowns on them.
-
-    In 1776 a crowd pulled down a statue of the king that stood here, and melted it into musket balls. Somebody also sawed the crowns off this fence.
+    In 1776 a crowd pulled down a statue of the king that stood here, and it was melted into musket balls. The crowd also cut the crowns off this fence.
 
     The fence is still standing. The crowns are still gone.
 
-editorial: draft
-factCheck: single-source
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "They used to have small golden crowns on them."
+    source: 1
+    quote: "you can see where the crowd cut off golden crowns that once topped them"
+  - says: "On the ninth of July 1776, the Declaration of Independence was read aloud to Washington's troops on the Commons, a few streets north of here."
+    source: 1
+    quote: "On the evening of July 9, 1776, soldiers of the Continental Army, under the command of General George Washington, assembled at the Commons"
+  - says: "That night a rowdy crowd of soldiers and civilians marched down Broadway to this green, where an equestrian statue of King George the Third had stood for only six years, and pulled it down."
+    source: 1
+    quote: "a rowdy crowd of soldiers and civilians marched from the Commons down Broadway to Bowling Green. There, zealous revelers pulled down an equestrian statue of King George III, which had been erected only six years earlier, in 1770."
+  - says: "two tons of metal turned into more than forty two thousand musket balls for Washington's army"
+    source: 2
+    quote: "It was melted into two tons of metal and turned into 42,088 musket balls for George Washington's Continental army."
+  - says: "This is the oldest public park in the city."
+    source: 2
+    quote: "Bowling Green is New York City's oldest public park."
+  - says: "The statue was carted off to Connecticut and melted down"
+    source: 1
+    quote: "The rest of the statue was carted off to Connecticut, where it was eventually melted into musket balls to be used against the King’s men in the war."
+  - says: "Two hundred and fifty years later the fence is still standing and you can still see where the crowns were"
+    source: 1
+    quote: "if you look closely at the posts on the iron fence surrounding the park, you can see where the crowd cut off golden crowns that once topped them"
 sources:
-  - title: Bowling Green
-    publisher: NYC Parks
-    url: https://www.nycgovparks.org/parks/bowling-green/history
-    retrievedAt: "2026-09-21"
+  - title: "Looking Back at Downtown's First Independence Day"
+    publisher: "Downtown Alliance"
+    url: https://downtownny.com/news/independence-day-history-downtown/
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Bowling Green"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/bowling-green.htm
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/bowling-green-king-george/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.1
+    audioBytes: 866054
+    transcript:
+      totalS: 54.1
+      lines:
+        - text: This is the oldest public park in the city.
+          atS: 0
+          durationS: 2.47
+        - text: Look at the iron fence around it.
+          atS: 3.08
+          durationS: 1.82
+        - text: Look at the tops of the posts.
+          atS: 5.41
+          durationS: 1.7
+        - text: They used to have small golden crowns on them.
+          atS: 7.49
+          durationS: 2.24
+        - text: On the ninth of July 1776, the Declaration of Independence was read aloud to Washington's troops on the Commons, a few streets north of here.
+          atS: 10.54
+          durationS: 8.97
+        - text: That night a rowdy crowd of soldiers and civilians marched down Broadway to this green, where an equestrian statue of King George the Third had stood for only six years, and pulled it down.
+          atS: 20.21
+          durationS: 12.66
+        - text: The statue was carted off to Connecticut and melted down, two tons of metal turned into more than forty two thousand musket balls for Washington's army.
+          atS: 33.38
+          durationS: 9.02
+        - text: And the crowd cut the crowns off the fence.
+          atS: 42.68
+          durationS: 2.54
+        - text: Two hundred and fifty years later the fence is still standing and you can still see where the crowns were, which is a fairly direct way of making a point.
+          atS: 45.6
+          durationS: 8.45

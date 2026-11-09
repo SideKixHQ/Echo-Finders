@@ -9,7 +9,7 @@ at: { lat: 32.79160, lng: -79.93505 }
 triggerRadiusKm: 0.05
 category: built
 format: short
-durationS: 72
+durationS: 66
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -25,27 +25,159 @@ script: |
 
   They measured the floorboards. They noted a wrought iron lock on one door, stamped with its maker's name.
 
-  Upstairs at the far end of the wing were two small rooms with fireplaces. The surveyors wrote that they appear to have been used for living purposes.
+  Upstairs, at the end nearest the house, were two rooms with fireplaces. The surveyors wrote that they appear to have been used for living purposes.
 
   They wrote down the hinges and the locks. They did not write down who lived in those rooms.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Up at the second floor there are six blank panels with pointed tops."
+    source: 2
+    quote: "On the west side, along Elizabeth Street, six blank panels with pointed heads are located at the second floor level."
+  - says: "This is the back of a planter's town house."
+    source: 1
+    quote: "An unusually complete surviving example of a of Significance: fine ante helium planter's town house group, once the home of Governor William Aiken."
+  - says: "Governor William Aiken lived here."
+    source: 1
+    quote: "Governor William Aiken lived here and the house went to his daughter"
+  - says: "When federal surveyors came in the late nineteen fifties and early sixties, they found the working yard still standing."
+    source: 1
+    quote: "Prepared by Beatrice St. J. Ravenel Architectural Historian Charleston July 1958"
+  - says: "When federal surveyors came in the late nineteen fifties and early sixties, they found the working yard still standing."
+    source: 2
+    quote: "This building forms part of a town-house group which remains virtually complete"
+  - says: "When federal surveyors came in the late nineteen fifties and early sixties, they found the working yard still standing."
+    source: 2
+    quote: "Prepared by Harley J. McKee, Architect National Park Service June 1963"
+  - says: "A stable with six stalls."
+    source: 2
+    quote: "The north half is occupied by a stable of six stalls and the south end by a carriage # room; between them is a small harness room"
+  - says: "A carriage room."
+    source: 2
+    quote: "the south end by a carriage # room"
+  - says: "A harness room."
+    source: 2
+    quote: "between them is a small harness room"
+  - says: "A hay loft."
+    source: 2
+    quote: "The north half is occupied by a hay loft"
+  - says: "And in the garden, two small brick cow houses."
+    source: 3
+    quote: "At one time there were cow houses at the east and west ends of a transverse axis in the garden"
+  - says: "And in the garden, two small brick cow houses."
+    source: 3
+    quote: "It is rectangular tn plan, about 10' x 14*, and is constructed of brick."
+  - says: "One was nearly gone."
+    source: 3
+    quote: "very little remains of the one at the east."
+  - says: "The other had an earth floor and room for two animals."
+    source: 3
+    quote: "It appears that this structure had an earth floor, and accommodated two animals."
+  - says: "They measured the floorboards."
+    source: 2
+    quote: "Longleaf yellow pine boards varying from 9-1/2\" to 12\" in width, on the second floor."
+  - says: "They noted a wrought iron lock on one door, stamped with its maker's name."
+    source: 2
+    quote: "The door to the other room has a wrought-iron box lock, bearing a coat of arms with the name \"Carpenter and Co., Batemritee.\""
+  - says: "Upstairs, at the end nearest the house, were two rooms with fireplaces."
+    source: 2
+    quote: "At the south half are two rooms separated by a small stair hall"
+  - says: "Upstairs, at the end nearest the house, were two rooms with fireplaces."
+    source: 2
+    quote: "adjoins the house at the northwest corner"
+  - says: "Upstairs, at the end nearest the house, were two rooms with fireplaces."
+    source: 2
+    quote: "There is a fireplace in the other room but its mantel has been removed."
+  - says: "The surveyors wrote that they appear to have been used for living purposes."
+    source: 2
+    quote: "they appear to have been used for living purposes."
 sources:
   - title: "Robinson-Aiken House, 48 Elizabeth Street, Charleston (HABS SC-269), data pages"
     publisher: "Historic American Buildings Survey, Library of Congress"
-    url: https://www.loc.gov/item/sc0023/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc0000/sc0023/data/sc0023data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Robinson-Aiken Service Building and Stable (HABS SC-275), data pages"
     publisher: "Historic American Buildings Survey, Library of Congress"
-    url: https://www.loc.gov/item/sc0025/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc0000/sc0025/data/sc0025data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Robinson-Aiken Cow House (HABS SC-274), data pages"
     publisher: "Historic American Buildings Survey, Library of Congress"
-    url: https://www.loc.gov/item/sc0022/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc0000/sc0022/data/sc0022data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
 pronunciations:
   - written: Aiken
     say: AY-kin
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-what-the-survey-wrote-down/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.4
+    audioBytes: 1062913
+    transcript:
+      totalS: 66.4
+      lines:
+        - text: Look at the long plain wing that runs back from the house along Elizabeth Street.
+          atS: 0
+          durationS: 4.42
+        - text: Up at the second floor there are six blank panels with pointed tops.
+          atS: 4.75
+          durationS: 4.23
+        - text: Windows that were never windows.
+          atS: 9.36
+          durationS: 1.98
+        - text: This is the back of a planter's town house.
+          atS: 11.67
+          durationS: 2.53
+        - text: Governor William Aiken lived here.
+          atS: 14.48
+          durationS: 2.45
+        - text: What makes the place rare is not the front.
+          atS: 17.37
+          durationS: 2.48
+        - text: It is everything behind it.
+          atS: 20
+          durationS: 1.64
+        - text: When federal surveyors came in the late nineteen fifties and early sixties, they found the working yard still standing.
+          atS: 22.25
+          durationS: 7.07
+        - text: A stable with six stalls.
+          atS: 29.64
+          durationS: 2.33
+        - text: A carriage room.
+          atS: 32.13
+          durationS: 0.93
+        - text: A harness room.
+          atS: 33.23
+          durationS: 1.03
+        - text: A hay loft.
+          atS: 34.44
+          durationS: 0.95
+        - text: And in the garden, two small brick cow houses.
+          atS: 35.56
+          durationS: 3.51
+        - text: One was nearly gone.
+          atS: 39.31
+          durationS: 1.31
+        - text: The other had an earth floor and room for two animals.
+          atS: 40.87
+          durationS: 3.2
+        - text: They measured the floorboards.
+          atS: 44.24
+          durationS: 1.48
+        - text: They noted a wrought iron lock on one door, stamped with its maker's name.
+          atS: 45.89
+          durationS: 4.61
+        - text: Upstairs, at the end nearest the house, were two rooms with fireplaces.
+          atS: 51.11
+          durationS: 4.55
+        - text: The surveyors wrote that they appear to have been used for living purposes.
+          atS: 56.1
+          durationS: 4.33
+        - text: They wrote down the hinges and the locks.
+          atS: 60.87
+          durationS: 2.29
+        - text: They did not write down who lived in those rooms.
+          atS: 63.6
+          durationS: 2.76

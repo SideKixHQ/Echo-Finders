@@ -1,45 +1,102 @@
 id: craggy-gardens-balds
 title: Nobody is sure why the tops are bare
-summary: The southern Appalachian balds are treeless well below the tree line, and the reason is still argued over.
+summary: "The bare summits around Craggy Gardens are balds, and nobody is sure how they formed."
 place: Craggy Gardens, Blue Ridge Parkway
 at: { lat: 35.7011, lng: -82.3792 }
 triggerRadiusKm: 3
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: land
 format: short
-durationS: 90
+durationS: 52
 visibility: landmark-visible
-certainty: contested
+certainty: documented
 certaintyNote: >-
-  Grazing, fire, ice-age climate and megafauna browsing have all been proposed. No single
-  explanation is accepted, and the script says so rather than picking one.
+  Grazing, fire, ice-age climate and megafauna browsing have all been proposed. No single explanation is accepted, and the script says so rather than picking one.
 minAge: 0
 quality: 0.85
 tags: [blue-ridge, north-carolina, appalachians, ecology]
 teaser: Look at the tops of the ridges. Something is missing.
 script: |
-  Look at the tops of the ridges around you. The trees stop, and then there is grass.
+  Look at the tops of the ridges around you. The trees stop, and then there are shrubs and grass.
 
-  That is odd. These summits are nowhere near high enough to be above the tree line.
-  There are forests on mountains twice this height. Something else is keeping them bare.
+  They are called balds, and the Park Service's own history of this road says plainly that the origin of the balds is unclear.
 
-  They are called balds, and after a century of argument there is still no agreed
-  explanation. Cattle grazing is the obvious one, except some were bare before the cattle.
-  Fire. Ice-age climate that never quite reverted. Grazing by animals that are extinct.
+  One idea is natural: fires started by lightning. Another is human: that people cleared them to graze livestock in the summer. Grazing was widespread in the Great Craggies until the nineteen twenties, when it was stopped to protect the water supply for Asheville.
 
-  What is agreed is that they are closing. Without something to keep them open, the forest
-  comes back, and it has been coming back for decades.
+  What is clear is that a bald does not have to stay bald. Further down the Parkway, Tennessee Bald was largely bare when the road was being planned in the nineteen thirties. Today it is covered in spruce and fir.
 
-  So the mystery is solving itself, in the least useful way.
-editorial: draft
+  So the mystery might be solving itself, in the least useful way.
+
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "The trees stop, and then there are shrubs and grass."
+    source: 2
+    quote: "the shrubs and grasses of the summit balds give the area a “garden” feel"
+  - says: "They are called balds, and the Park Service's own history of this road says plainly that the origin of the balds is unclear."
+    source: 1
+    quote: "The origin of the balds is unclear"
+  - says: "One idea is natural: fires started by lightning."
+    source: 1
+    quote: "natural forces such as lightning-caused fires may have been responsible"
+  - says: "Another is human: that people cleared them to graze livestock in the summer."
+    source: 1
+    quote: "or the balds may have been cleared by man for pasturing livestock during the summer season"
+  - says: "Grazing was widespread in the Great Craggies until the nineteen twenties, when it was stopped to protect the water supply for Asheville."
+    source: 1
+    quote: "Grazing ,was widespread in the Great Craggies until the 1920s. To protect the Asheville and Woodfin watersheds in 1920, grazing, camping, and picnicking in the area were forbidden"
+  - says: "Further down the Parkway, Tennessee Bald was largely bare when the road was being planned in the nineteen thirties."
+    source: 1
+    quote: "In the 1930s, when the parkway was being planned, the mountain was largely bald."
+  - says: "Today it is covered in spruce and fir."
+    source: 1
+    quote: "it is cloaked in a serni-boreal forest of spruce and fraser fir"
 sources:
-  - title: Craggy Gardens and the southern Appalachian balds
-    publisher: National Park Service
-    url: https://www.nps.gov/blri/
-    retrievedAt: "2026-09-22"
+  - title: "Blue Ridge Parkway (HAER NC-42), written historical and descriptive data"
+    publisher: "Historic American Engineering Record, Library of Congress"
+    url: https://www.loc.gov/item/nc0478/
+    retrievedAt: "2026-11-09"
     rights: public-domain
-  - title: Southern Appalachian grass and heath balds — origin and maintenance
-    publisher: USDA Forest Service, Southern Research Station
-    retrievedAt: "2026-09-22"
+  - title: "Craggy Gardens"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/craggy-gardens.htm
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/craggy-gardens-balds/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52
+    audioBytes: 832617
+    transcript:
+      totalS: 52
+      lines:
+        - text: Look at the tops of the ridges around you.
+          atS: 0
+          durationS: 2.24
+        - text: The trees stop, and then there are shrubs and grass.
+          atS: 2.68
+          durationS: 2.9
+        - text: They are called balds, and the Park Service's own history of this road says plainly that the origin of the balds is unclear.
+          atS: 6.03
+          durationS: 7.76
+        - text: "One idea is natural: fires started by lightning."
+          atS: 14.73
+          durationS: 3.89
+        - text: "Another is human: that people cleared them to graze livestock in the summer."
+          atS: 19.06
+          durationS: 4.52
+        - text: Grazing was widespread in the Great Craggies until the nineteen twenties, when it was stopped to protect the water supply for Asheville.
+          atS: 24.88
+          durationS: 7.86
+        - text: What is clear is that a bald does not have to stay bald.
+          atS: 33.18
+          durationS: 3.9
+        - text: Further down the Parkway, Tennessee Bald was largely bare when the road was being planned in the nineteen thirties.
+          atS: 37.59
+          durationS: 6.74
+        - text: Today it is covered in spruce and fir.
+          atS: 44.85
+          durationS: 2.72
+        - text: So the mystery might be solving itself, in the least useful way.
+          atS: 48.01
+          durationS: 3.96

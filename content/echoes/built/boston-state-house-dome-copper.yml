@@ -9,7 +9,7 @@ at: { lat: 42.35705, lng: -71.06410 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 67
+durationS: 63
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -23,8 +23,7 @@ script: |
   the new State House had just been coppered. The sheets, it said, were made in
   Massachusetts by Colonel Revere and son.
 
-  That is Paul Revere. After the war he went into industry, and in eighteen-oh-one he opened
-  a copper mill. The paper added, with some pride, that it was the only sheet copper works
+  That is Paul Revere. After the war he went into industry, and opened a copper mill. The paper added, with some pride, that it was the only sheet copper works
   in America.
 
   So for about seventy years the dome was the colour of copper. It was gilded in the
@@ -35,31 +34,121 @@ script: |
   grey, as an air raid precaution.
 
   Revere is remembered for one night on a horse. Look up. This was his day job.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look up the hill at the dome of the State House."
+    source: 5
+    quote: "With its golden dome clearly visible atop Beacon Hill, the Massachusetts State House sits at the western edge of the Boston Common."
+  - says: "In November eighteen-oh-two, a New Hampshire newspaper reported that the superb dome of the new State House had just been coppered."
+    source: 1
+    quote: "the furperb dome of the new State-House has recently been coppered"
+  - says: "The sheets, it said, were made in Massachusetts by Colonel Revere and son."
+    source: 1
+    quote: "that the ffieets were manufactured in MafTachufetts byColonel Revere & son."
+  - says: "That is Paul Revere."
+    source: 2
+    quote: "After the Revolution, he established a successful foundry and copper mill."
+  - says: "After the war he went into industry, and opened a copper mill."
+    source: 2
+    quote: "After the Revolution, he established a successful foundry and copper mill."
+  - says: "The paper added, with some pride, that it was the only sheet copper works in America."
+    source: 1
+    quote: "the only manufactory of Sheet Copper in America, is in this State"
+  - says: "So for about seventy years the dome was the colour of copper."
+    source: 3
+    quote: "the gilding of the State House dome is a more solid evidence that low spirits are getting to be at a discount."
+  - says: "It was gilded in the eighteen-seventies, and Boston argued about whether the gold was worth the money."
+    source: 3
+    quote: "I really find it hard to understand how our people ever made up their | minds to invest 80 much money in mere ornament"
+  - says: "It was gilded in the eighteen-seventies, and Boston argued about whether the gold was worth the money."
+    source: 3
+    quote: "were long at loggerheads about the matter: the Artistic, or “Hunt” party, wanting the dome gilded"
+  - says: "Real gold leaf, not gilt paint."
+    source: 4
+    quote: "For it is real gold leaf, and not gilt paint, that tops the State House."
+  - says: "Then in nineteen forty-two, with the country at war, the dome was to be painted a dull grey, as an air raid precaution."
+    source: 4
+    quote: "One of the minor items in the air raid precaution hereabouts is the painting of the State House dome a dull gray."
+  - says: "Revere is remembered for one night on a horse."
+    source: 2
+    quote: "While many people know of Paul Revere as an ardent supporter of the American Revolution and an accomplished master silversmith, there is more to his story."
 sources:
   - title: "United States Oracle and Portsmouth Advertiser, November 20, 1802, page 3"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83025545/1802-11-20/ed-1/?sp=3
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Paul Revere"
     publisher: "National Park Service"
     url: https://www.nps.gov/people/paul-revere.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "New-York Tribune, April 17, 1875, page 1 (Boston letter on the gilding of the State House dome)"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83030214/1875-04-17/ed-1/?sp=1
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Springfield Weekly Republican, March 12, 1942, page 9"
     publisher: "Library of Congress, Chronicling America"
     url: https://www.loc.gov/resource/sn83020847/1942-03-12/ed-1/?sp=9
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
   - title: "Massachusetts State House"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/massachusetts-state-house.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-state-house-dome-copper/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 63.4
+    audioBytes: 1016101
+    transcript:
+      totalS: 63.4
+      lines:
+        - text: Look up the hill at the dome of the State House.
+          atS: 0
+          durationS: 2.75
+        - text: It was not always gold.
+          atS: 3
+          durationS: 1.71
+        - text: In November eighteen-oh-two, a New Hampshire newspaper reported that the superb dome of the new State House had just been coppered.
+          atS: 5.08
+          durationS: 8.48
+        - text: The sheets, it said, were made in Massachusetts by Colonel Revere and son.
+          atS: 13.94
+          durationS: 4.74
+        - text: That is Paul Revere.
+          atS: 19.19
+          durationS: 1.52
+        - text: After the war he went into industry, and opened a copper mill.
+          atS: 21.15
+          durationS: 4.01
+        - text: The paper added, with some pride, that it was the only sheet copper works in America.
+          atS: 26.27
+          durationS: 5.27
+        - text: So for about seventy years the dome was the colour of copper.
+          atS: 31.98
+          durationS: 3.68
+        - text: It was gilded in the eighteen-seventies, and Boston argued about whether the gold was worth the money.
+          atS: 36.11
+          durationS: 5.84
+        - text: A newspaper later made a point of it.
+          atS: 42.55
+          durationS: 2.26
+        - text: Real gold leaf, not gilt paint.
+          atS: 45.33
+          durationS: 2.75
+        - text: Then in nineteen forty-two, with the country at war, the dome was to be painted a dull grey, as an air raid precaution.
+          atS: 48.68
+          durationS: 7.37
+        - text: Revere is remembered for one night on a horse.
+          atS: 56.75
+          durationS: 3.09
+        - text: Look up.
+          atS: 60.44
+          durationS: 0.71
+        - text: This was his day job.
+          atS: 61.85
+          durationS: 1.59

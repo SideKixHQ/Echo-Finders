@@ -9,7 +9,7 @@ at: { lat: 29.95846, lng: -90.07066 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 85
+durationS: 79
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -43,16 +43,115 @@ pronunciations:
     say: gwah-duh-LOO-pay
   - written: Conti
     say: KON-tie
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "It was built for one purpose."
+    source: 1
+    quote: "directing that the Mortuary Chapel should be used for such purposes."
+  - says: "In the early eighteen-hundreds, Catholic funerals in New Orleans were held at the cathedral, in the middle of the old town."
+    source: 2
+    quote: "Up to the year 1819 all funerals of Catholics took place from the Cathedral."
+  - says: "The city council came to fear that the custom was spreading disease, in a city where epidemics came back again and again."
+    source: 2
+    quote: "the City Council, fearing that with the growth"
+  - says: "The city council came to fear that the custom was spreading disease, in a city where epidemics came back again and again."
+    source: 1
+    quote: "conducive to the 3pread of infection during the epidemics that afflicted the city from time to time"
+  - says: "The church bought this lot in eighteen twenty-five, for four hundred and twenty-five dollars."
+    source: 2
+    quote: "The Cathedral acquired the site on December 20, 1825, for the sum of $425."
+  - says: "The chapel was finished in eighteen twenty-seven."
+    source: 1
+    quote: "This church was designed and built by Gurlie and Guillot, local architects and contractors, for the Wardens of the St* Louis Cathedral in 1827."
+  - says: "A funeral at the cathedral would now cost a fifty dollar fine."
+    source: 1
+    quote: "In September, 1827, the City Council passed an ordinance forbidding funerals being held in the Cathedral"
+  - says: "A funeral at the cathedral would now cost a fifty dollar fine."
+    source: 1
+    quote: "Violation of the ordinance carried a fine of $50"
+  - says: "So for years, this was where the city's Catholic dead stopped on their way to the tomb."
+    source: 2
+    quote: "As a mortuary chapel this edifice was in constant use down to 1870."
+  - says: "So for years, this was where the city's Catholic dead stopped on their way to the tomb."
+    source: 1
+    quote: "The lot which the Wardens bought from the City was convenient to the parish cemetery"
+  - says: "It was called the Italian church for a while, then served the city's Spanish speakers, which is how it came by the name it carries now."
+    source: 1
+    quote: "Be- cause the majority of the parishioners spoke Italian, it was generally called the Italian Church. Later, because of a shift in population, Spanish became the prevalent language, the name was changed to Our Lady of Guadaloupe."
+  - says: "Our Lady of Guadalupe."
+    source: 1
+    quote: "the name was changed to Our Lady of Guadaloupe."
+  - says: "It was made to be the last door a great many people came through."
+    source: 1
+    quote: "directing that the Mortuary Chapel should be used for such purposes."
 sources:
   - title: "Our Lady of Guadaloupe Church (St. Anthony of Padua, The Mortuary Chapel), 411 North Rampart Street, HABS LA-1104, written historical and descriptive data (1958)"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/la0048/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0048/data/la0048data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), North Rampart: the church of St. Anthony of Padua"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/13004346/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse/picayunesguideto00unse.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-no-funerals-at-the-cathedral/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 79.1
+    audioBytes: 1267295
+    transcript:
+      totalS: 79.1
+      lines:
+        - text: Look at the front of this church.
+          atS: 0
+          durationS: 1.79
+        - text: The plain stucco face, the open porch, the bell tower above.
+          atS: 2.48
+          durationS: 4.55
+        - text: It was built for one purpose.
+          atS: 7.55
+          durationS: 2.07
+        - text: Funerals.
+          atS: 10.12
+          durationS: 0.95
+        - text: In the early eighteen-hundreds, Catholic funerals in New Orleans were held at the cathedral, in the middle of the old town.
+          atS: 11.77
+          durationS: 7.06
+        - text: The city council came to fear that the custom was spreading disease, in a city where epidemics came back again and again.
+          atS: 19.34
+          durationS: 7.37
+        - text: So the council asked the church to build a chapel out here instead, at the back edge of town, close to the cemetery.
+          atS: 27.16
+          durationS: 6.56
+        - text: The church bought this lot in eighteen twenty-five, for four hundred and twenty-five dollars.
+          atS: 34.23
+          durationS: 5.51
+        - text: The chapel was finished in eighteen twenty-seven.
+          atS: 40.25
+          durationS: 2.79
+        - text: That same year the council made it law.
+          atS: 43.55
+          durationS: 2.39
+        - text: A funeral at the cathedral would now cost a fifty dollar fine.
+          atS: 46.38
+          durationS: 3.6
+        - text: So for years, this was where the city's Catholic dead stopped on their way to the tomb.
+          atS: 50.93
+          durationS: 4.68
+        - text: Later the chapel became a parish church.
+          atS: 56.31
+          durationS: 2.53
+        - text: It was called the Italian church for a while, then served the city's Spanish speakers, which is how it came by the name it carries now.
+          atS: 59.54
+          durationS: 7.94
+        - text: Our Lady of Guadalupe.
+          atS: 68.08
+          durationS: 2.43
+        - text: The building was enlarged, but its front was left as it was.
+          atS: 71.2
+          durationS: 3.55
+        - text: It was made to be the last door a great many people came through.
+          atS: 75.36
+          durationS: 3.77

@@ -9,14 +9,11 @@ at: { lat: 42.36712, lng: -71.05584 }
 triggerRadiusKm: 0.06
 category: legend
 format: short
-durationS: 80
+durationS: 74
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A long-told tradition, not an established fact. The National Park Service says only that
-  some historians suggest British soldiers used headstones here for target practice; an 1892
-  history says the stones are "said to bear the marks". The script says out loud that it is
-  unproven. Malcom's epitaph and his wine-smuggling are documented in the 1921 sketch.
+  A long-told tradition, not an established fact. The National Park Service says only that some historians suggest British soldiers used headstones here for target practice; an 1892 history says the stones are "said to bear the marks". The script says out loud that it is unproven. Malcom's epitaph and his wine-smuggling are documented in the 1921 sketch.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -53,26 +50,143 @@ pronunciations:
     say: MAL-kum
   - written: Copp's Hill
     say: KOPS Hill
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Some of them, people will tell you, are pitted by British musket balls."
+    source: 2
+    quote: "There are several stones that are said to bear the marks of English bullets, having been used as targets by the un- welcome Redcoats."
+  - says: "The story goes that redcoats used them for target practice while the army held Boston."
+    source: 1
+    quote: "During the Revolutionary War, some historians suggest British soldiers performed target practice on some headstones here."
+  - says: "One stone gets named more than any other."
+    source: 2
+    quote: "The stone of Capt. Daniel Malcom would seem to be the stone most likely to receive such at- tention from the British soldiers"
+  - says: "It belongs to a merchant, Captain Daniel Malcom, who died in seventeen sixty-nine."
+    source: 3
+    quote: "CAPT. DANIEL MALCOM MERCHT. who departed this life October 23d 1769"
+  - says: "A true son of Liberty."
+    source: 3
+    quote: "a true son of Liberty a Friend to the Publick an Enemy to opprefsion"
+  - says: "A friend to the public."
+    source: 4
+    quote: "A true son of Liberty. A friend to the public. An enemy to oppression."
+  - says: "An enemy to oppression."
+    source: 4
+    quote: "An enemy to oppression."
+  - says: "And one of the foremost in opposing the Revenue Acts on America."
+    source: 2
+    quote: "one of the foremost in opposing the Revenue Acts on America."
+  - says: "One night in seventeen sixty-eight, with friends carrying clubs, he brought sixty casks of wine ashore from a ship down the harbour, without paying the King's duty."
+    source: 3
+    quote: "In February, 1768, aided by friends armed with clubs, he smuggled in at night a cargo of sixty casks of wine from a vessel anchored five miles down the harbor."
+  - says: "One night in seventeen sixty-eight, with friends carrying clubs, he brought sixty casks of wine ashore from a ship down the harbour, without paying the King's duty."
+    source: 4
+    quote: "he was deter- mined that his cargo, consisting of wines, should escape the unpopu- lar duties."
+  - says: "So when the soldiers came, the story says, his stone was the one they chose."
+    source: 2
+    quote: "The stone of Capt. Daniel Malcom would seem to be the stone most likely to receive such at- tention from the British soldiers"
+  - says: "Nobody has proved it."
+    source: 1
+    quote: "some historians suggest British soldiers performed target practice on some headstones here."
+  - says: "A history of Boston's burial grounds from eighteen ninety-two put it carefully."
+    source: 2
+    quote: "HISTORIC BURIAL-PLACES OF BOSTON AND: VICINIFY, BY JOHN M. MERRIAM."
+  - says: "Several stones here are said to bear the marks, and Malcom's would seem the most likely."
+    source: 2
+    quote: "There are several stones that are said to bear the marks of English bullets"
+  - says: "Several stones here are said to bear the marks, and Malcom's would seem the most likely."
+    source: 2
+    quote: "would seem to be the stone most likely to receive such at- tention"
+  - says: "The park service today says only that some historians suggest it."
+    source: 1
+    quote: "some historians suggest British soldiers performed target practice on some headstones here."
 sources:
   - title: "Copp's Hill Burying Ground"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/copp-s-hill-burying-ground.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Historic burial-places of Boston and vicinity, by John M. Merriam (Worcester, 1892)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/18006883/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Historical sketch of Copp's Hill burying ground, with inscriptions and quaint epitaphs, by John Norton (Boston, 1921)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/22013534/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Old Copp's Hill and burial ground; with historic sketches, by Edward MacDonald (Boston, 1879)"
     publisher: "Library of Congress"
     url: https://www.loc.gov/item/03024090/
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/boston-the-stone-they-shot-at/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 73.7
+    audioBytes: 1179523
+    transcript:
+      totalS: 73.7
+      lines:
+        - text: Look at the slate headstones on this hill.
+          atS: 0
+          durationS: 2.32
+        - text: Some of them, people will tell you, are pitted by British musket balls.
+          atS: 2.93
+          durationS: 4.23
+        - text: The story goes that redcoats used them for target practice while the army held Boston.
+          atS: 7.75
+          durationS: 5.09
+        - text: One stone gets named more than any other.
+          atS: 13.54
+          durationS: 2.65
+        - text: It belongs to a merchant, Captain Daniel Malcom, who died in seventeen sixty-nine.
+          atS: 16.63
+          durationS: 5.84
+        - text: Listen to what was carved on it.
+          atS: 22.91
+          durationS: 1.78
+        - text: A true son of Liberty.
+          atS: 25.01
+          durationS: 1.6
+        - text: A friend to the public.
+          atS: 26.94
+          durationS: 1.45
+        - text: An enemy to oppression.
+          atS: 28.56
+          durationS: 1.42
+        - text: And one of the foremost in opposing the Revenue Acts on America.
+          atS: 30.3
+          durationS: 3.8
+        - text: Malcom meant it.
+          atS: 34.7
+          durationS: 1.51
+        - text: One night in seventeen sixty-eight, with friends carrying clubs, he brought sixty casks of wine ashore from a ship down the harbour, without paying the King's duty.
+          atS: 36.65
+          durationS: 9.7
+        - text: So when the soldiers came, the story says, his stone was the one they chose.
+          atS: 46.87
+          durationS: 4.83
+        - text: Is it true?
+          atS: 51.94
+          durationS: 0.8
+        - text: Nobody has proved it.
+          atS: 53.07
+          durationS: 1.29
+        - text: A history of Boston's burial grounds from eighteen ninety-two put it carefully.
+          atS: 54.6
+          durationS: 4.68
+        - text: Several stones here are said to bear the marks, and Malcom's would seem the most likely.
+          atS: 59.6
+          durationS: 4.63
+        - text: The park service today says only that some historians suggest it.
+          atS: 64.75
+          durationS: 3.45
+        - text: But nobody needed the soldiers to fire.
+          atS: 68.44
+          durationS: 2.21
+        - text: The stone had already said exactly what it thought of them.
+          atS: 70.82
+          durationS: 2.83

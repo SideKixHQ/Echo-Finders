@@ -9,7 +9,7 @@ at: { lat: 29.95661, lng: -90.06178 }
 triggerRadiusKm: 0.06
 category: land
 format: short
-durationS: 85
+durationS: 75
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,21 +32,111 @@ script: |
   The same writer said the river had shaped its banks here into the edges of the moon in its first quarter.
 
   That is the crescent. That is why it is the Crescent City. Not a nickname somebody chose. A description of the water you are standing above.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "A guidebook from nineteen oh four made the same point."
+    source: 1
+    quote: "Copyright 1904 by"
+  - says: "A guidebook from nineteen oh four made the same point."
+    source: 1
+    quote: "The slope begins at a considerable distance back, and the ascent up hill is so gradual as to be imperceptible."
+  - says: "A great bank of earth between the city and the Mississippi, added to again and again as the years went on."
+    source: 1
+    quote: "The constant additions made to the levee in consequence cause a gradual slope up to the river front."
+  - says: "A great bank of earth between the city and the Mississippi, added to again and again as the years went on."
+    source: 1
+    quote: "New Orleans is surrounded on all sides by huge walls of earth called Levees"
+  - says: "A New Orleans writer in the eighteen nineties described the yellow floods rising high above the land, threatening to tear the levees like cobwebs."
+    source: 2
+    quote: "when its gigantic yellow floods rise high above the level of the land, threatening momentarily to rend like cobwebs the stout levees that withstand it"
+  - says: "A New Orleans writer in the eighteen nineties described the yellow floods rising high above the land, threatening to tear the levees like cobwebs."
+    source: 2
+    quote: "Copyricut, 1895, By MACMILLAN AND CO."
+  - says: "The same writer said the river had shaped its banks here into the edges of the moon in its first quarter."
+    source: 2
+    quote: "having here shaped its banks into the concave and convex edges of the moon in its first quarter."
+  - says: "That is why it is the Crescent City."
+    source: 2
+    quote: "It is called the Crescent City, the Mississippi River, in its incessant travail of building and destroying"
 sources:
   - title: "The Picayune's guide to New Orleans (1904)"
     publisher: "The Picayune, New Orleans, 1904; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "New Orleans, the place and the people (1895)"
     publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/01008773/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansplacep00kin/neworleansplacep00kin.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Vieux Carré: A Creole Neighborhood in New Orleans (Teaching with Historic Places)"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-river-above-the-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.1
+    audioBytes: 1202511
+    transcript:
+      totalS: 75.1
+      lines:
+        - text: Stand at the rail and look at the water.
+          atS: 0
+          durationS: 1.89
+        - text: Then turn round and look back at the cathedral.
+          atS: 1.93
+          durationS: 2.47
+        - text: To get here from the square, you walked uphill.
+          atS: 4.84
+          durationS: 2.59
+        - text: You probably did not notice.
+          atS: 7.87
+          durationS: 1.65
+        - text: A guidebook from nineteen oh four made the same point.
+          atS: 9.9
+          durationS: 3.15
+        - text: The slope starts a long way back, it said, and rises so gently that you cannot feel it.
+          atS: 13.43
+          durationS: 5.2
+        - text: That slope is the levee.
+          atS: 19.33
+          durationS: 1.73
+        - text: A great bank of earth between the city and the Mississippi, added to again and again as the years went on.
+          atS: 21.57
+          durationS: 6.81
+        - text: Because when the river floods, it rises far above the level of the streets behind you.
+          atS: 28.83
+          durationS: 5.07
+        - text: The cathedral you are looking at sits lower than the water in front of you can reach.
+          atS: 34.5
+          durationS: 4.45
+        - text: A New Orleans writer in the eighteen nineties described the yellow floods rising high above the land, threatening to tear the levees like cobwebs.
+          atS: 39.46
+          durationS: 8.75
+        - text: Now look left and right along the bank.
+          atS: 48.91
+          durationS: 2.31
+        - text: The river does not run straight past the old city.
+          atS: 51.66
+          durationS: 3
+        - text: It bends around it.
+          atS: 54.98
+          durationS: 1.42
+        - text: The same writer said the river had shaped its banks here into the edges of the moon in its first quarter.
+          atS: 57
+          durationS: 6.21
+        - text: That is the crescent.
+          atS: 63.73
+          durationS: 1.63
+        - text: That is why it is the Crescent City.
+          atS: 65.79
+          durationS: 2.8
+        - text: Not a nickname somebody chose.
+          atS: 69.03
+          durationS: 2.19
+        - text: A description of the water you are standing above.
+          atS: 71.67
+          durationS: 3.42

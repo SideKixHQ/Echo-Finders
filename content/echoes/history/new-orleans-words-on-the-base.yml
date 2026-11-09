@@ -9,7 +9,7 @@ at: { lat: 29.95741, lng: -90.06297 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 88
+durationS: 75
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,39 +29,132 @@ script: |
 
   Butler had that sentence cut deep into the granite under Jackson's horse. His admiring biographer said it was the motto the base had been meant to carry all along.
 
-  So the city's own hero, in the middle of the city's own square, was made to say the one thing the city least wanted to hear, in the voice of the army that had taken it.
+  So the city's own hero, in the middle of the city's own square, was made to say the thing the city least wanted to hear, in the voice of the army that had taken it.
 
   Nobody ever chiselled it off.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "The Union must and shall be preserved."
+    source: 1
+    quote: "The incription on tke granite base of the monument was cut by General Butler’s orders during the Civil War. It runs: ‘The Union must and shall be preserved.”"
+  - says: "Andrew Jackson, who defended this city against the British in eighteen fifteen."
+    source: 1
+    quote: "January 8, 1815, General Andrew Jackson and his band of Creole and American soldiery won the famous victory over the British on the Plains of Chalmette."
+  - says: "The statue was unveiled here on the ninth of February, eighteen fifty-six."
+    source: 3
+    quote: "INAUGURATION or mg, or ANDREW JACKSON, FebrUnry 9, 1856."
+  - says: "The square was packed with soldiers, families and children."
+    source: 5
+    quote: "The entire square was filled with soldiers and civilians and gaily dressed women, and merry children."
+  - says: "When the sculptor, Clark Mills, pulled the white cover away, a salute of a hundred guns went off."
+    source: 5
+    quote: "the artist, Clark Mills, suddenly drew aside the white covering, and the glorious statue was revealed."
+  - says: "When the sculptor, Clark Mills, pulled the white cover away, a salute of a hundred guns went off."
+    source: 4
+    quote: "the loud ,f salvos of theariillery-of the hundred guns"
+  - says: "When the sculptor, Clark Mills, pulled the white cover away, a salute of a hundred guns went off."
+    source: 3
+    quote: "a alnto of one hundred gun immediatelly after the inaugunrtion."
+  - says: "Six years later, Louisiana had left the Union, and a Union fleet came up the river and took New Orleans."
+    source: 6
+    quote: "the convention decided that Louisiana would join her sister States in withdrawing from the Union (January 26, 1861)."
+  - says: "Six years later, Louisiana had left the Union, and a Union fleet came up the river and took New Orleans."
+    source: 6
+    quote: "New Orleans was in the hands of the enemy."
+  - says: "The general sent to govern the city was Benjamin Butler."
+    source: 6
+    quote: "On May 1, the city was handed over by Farragut to the control of General B. F. Butler"
+  - says: "Butler had that sentence cut deep into the granite under Jackson's horse."
+    source: 2
+    quote: "The general caused to be cut deep into the granite base of the statue of General Jackson, the motto originally designed to adorn it"
+  - says: "His admiring biographer said it was the motto the base had been meant to carry all along."
+    source: 2
+    quote: "the motto originally designed to adorn it"
 sources:
   - title: "The Picayune's guide to New Orleans (1904)"
     publisher: "The Picayune, New Orleans, 1904; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "General Butler in New Orleans (1864)"
     publisher: "James Parton, Mason Brothers, 1864; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/32008202/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/generalbutlerinn02part/generalbutlerinn02part.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "New Orleans daily crescent, February 9, 1856: programme for the inauguration of Clark Mills' equestrian statue of Andrew Jackson"
     publisher: "Chronicling America, Library of Congress"
     url: https://www.loc.gov/resource/sn82015753/1856-02-09/ed-1/?sp=2
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Feliciana Democrat, February 16, 1856: Inauguration of Jackson's Statue"
     publisher: "Chronicling America, Library of Congress"
     url: https://www.loc.gov/resource/sn88067030/1856-02-16/ed-1/?sp=3
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Houma Ceres, March 20, 1856: The Inauguration of the Statue"
     publisher: "Chronicling America, Library of Congress"
     url: https://www.loc.gov/resource/sn83026391/1856-03-20/ed-1/?sp=3
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "A history of Louisiana (1905)"
     publisher: "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/34036146/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/historyoflouisia00king/historyoflouisia00king.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-words-on-the-base/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.3
+    audioBytes: 1206273
+    transcript:
+      totalS: 75.3
+      lines:
+        - text: Walk to the statue's granite base and find the line cut into it.
+          atS: 0
+          durationS: 4.06
+        - text: The Union must and shall be preserved.
+          atS: 4.31
+          durationS: 3.09
+        - text: Now look up at the man on the horse.
+          atS: 7.64
+          durationS: 1.93
+        - text: Andrew Jackson, who defended this city against the British in eighteen fifteen.
+          atS: 9.89
+          durationS: 5.13
+        - text: The statue was unveiled here on the ninth of February, eighteen fifty-six.
+          atS: 15.35
+          durationS: 4.66
+        - text: The square was packed with soldiers, families and children.
+          atS: 20.45
+          durationS: 3.7
+        - text: People crowded the balconies of the red brick buildings on either side.
+          atS: 24.47
+          durationS: 3.97
+        - text: When the sculptor, Clark Mills, pulled the white cover away, a salute of a hundred guns went off.
+          atS: 28.89
+          durationS: 6.04
+        - text: The words on the base were not there that day.
+          atS: 35.62
+          durationS: 2.52
+        - text: Six years later, Louisiana had left the Union, and a Union fleet came up the river and took New Orleans.
+          atS: 39.44
+          durationS: 6.37
+        - text: The general sent to govern the city was Benjamin Butler.
+          atS: 46.51
+          durationS: 3.3
+        - text: Much of the city came to hate him.
+          atS: 50.62
+          durationS: 1.9
+        - text: Butler had that sentence cut deep into the granite under Jackson's horse.
+          atS: 53.22
+          durationS: 4.39
+        - text: His admiring biographer said it was the motto the base had been meant to carry all along.
+          atS: 58.21
+          durationS: 4.88
+        - text: So the city's own hero, in the middle of the city's own square, was made to say the thing the city least wanted to hear, in the voice of the army that had taken it.
+          atS: 63.53
+          durationS: 9.22
+        - text: Nobody ever chiselled it off.
+          atS: 73.44
+          durationS: 1.88

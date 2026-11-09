@@ -12,6 +12,7 @@ import { Collection } from "./Collection";
 import { IndexedDbCollection } from "./collection-store";
 import { Privacy } from "./Privacy";
 import { ReportEcho } from "./Feedback";
+import { SuggestSheet } from "./Suggest";
 import { feedbackAvailable } from "./feedback";
 import { SENTRY_DSN } from "./error-report";
 import { readSettings, saveSettings } from "./settings-store";
@@ -1588,6 +1589,8 @@ export function App() {
   const [routePicker, setRoutePicker] = useState<Echo | null>(null);
   /** The echo whose "Something wrong with this story?" is open (`ReportEcho`). */
   const [reporting, setReporting] = useState<Echo | null>(null);
+  /** The echo whose "Know more about this place?" is open (`SuggestSheet`). */
+  const [suggesting, setSuggesting] = useState<Echo | null>(null);
   const [deletedRoute, setDeletedRoute] = useState<{ route: SavedRoute; index: number } | null>(null);
   const [echoesView, setEchoesView] = useState<"echoes" | "routes">("echoes");
   const ordered = (ids: readonly string[]) => {
@@ -2241,10 +2244,18 @@ export function App() {
                     now from 35,000 feet.
                   */
                   {...(selfDirected ? { onCamera: setCamera } : {})}
-                  {...(feedbackAvailable(SENTRY_DSN) ? { onReport: setReporting } : {})}
+                  {...(feedbackAvailable(SENTRY_DSN) ? { onReport: setReporting, onSuggest: setSuggesting } : {})}
                   onClose={() => setSelectedId(null)}
                 />
               ) : null}
+              {suggesting && (
+                <SuggestSheet
+                  dsn={SENTRY_DSN}
+                  release={__BUILD_COMMIT__}
+                  echo={suggesting}
+                  onClose={() => setSuggesting(null)}
+                />
+              )}
               {reporting && (
                 <ReportEcho
                   echo={reporting}

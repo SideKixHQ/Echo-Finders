@@ -19,9 +19,9 @@ teaser: "Everyone knew it was going to happen."
 script: |
   Look along the railroad tracks.
 
-  On the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington, across the lake. He took a seat in the car for white passengers.
+  On the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington. He took a seat in the car for white passengers.
 
-  Under a Louisiana law two years old, that seat was not his. The law said railroads must keep separate cars by race, and under that law Plessy was Black. His own petition later told the court that no one could see it in him.
+  Under a Louisiana law two years old, that seat was not his. The law said railroads must keep separate cars by race, and under that law Plessy was Black. His own petition later told the court that it could not be seen in him.
 
   The conductor told him to move. He refused. He was arrested and taken to the parish jail.
 
@@ -45,26 +45,143 @@ pronunciations:
     say: PLESS-ee
   - written: Marigny
     say: MAIR-uh-nee
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "On the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington."
+    source: 2
+    quote: "that on June 7,1892, he engaged and paid for a first class passage on the East Louisiana Railway from New Orleans to Covington"
+  - says: "On the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington."
+    source: 1
+    quote: "a shoe maker, and a civil rights activist"
+  - says: "Under a Louisiana law two years old, that seat was not his."
+    source: 1
+    quote: "But on June 10, 1890, the State of Louisiana passed a law called Act 111, or the Separate Car Act."
+  - says: "The law said railroads must keep separate cars by race, and under that law Plessy was Black."
+    source: 1
+    quote: "This law said that train companies had to give “equal but separate” seating for white and Black passengers."
+  - says: "The law said railroads must keep separate cars by race, and under that law Plessy was Black."
+    source: 4
+    quote: "He was one-eighth African American, which under Louisiana state law classified him as an African American."
+  - says: "His own petition later told the court that it could not be seen in him."
+    source: 2
+    quote: "that the mixture of colored blood was not discernible in him"
+  - says: "A committee of citizens had organized to test the law in court, and Plessy volunteered."
+    source: 1
+    quote: "In 1891, a group called the Citizens Committee ( Comité de Citoyens ) formed to test the law in court."
+  - says: "A committee of citizens had organized to test the law in court, and Plessy volunteered."
+    source: 1
+    quote: "Homer Plessy volunteered to help test the law."
+  - says: "The case went all the way to the Supreme Court."
+    source: 1
+    quote: "The case eventually reached the U.S. Supreme Court."
+  - says: "In eighteen ninety-six it lost, seven votes to one."
+    source: 3
+    quote: "The Supreme Court announced its decision in May of 1896. Seven of the eight participating justices sided with Ferguson"
+  - says: "The ruling made separate but equal the law of the land, and it stood for almost sixty years."
+    source: 1
+    quote: "This ruling stayed in place for almost 60 years"
+  - says: "The one dissenting justice wrote that the Constitution is color-blind."
+    source: 2
+    quote: "Our Constitution is color-blind, and neither knows nor tolerates classes among citizens."
+  - says: "The one dissenting justice wrote that the Constitution is color-blind."
+    source: 2
+    quote: "Dissenting Opinion: Harlan, J."
+  - says: "More than a century later, a descendant of the judge who first ruled against Plessy and a member of the Plessy family came to this story together."
+    source: 4
+    quote: "Phoebe Ferguson is a great-great-granddaughter of Judge John Howard Ferguson. Judge Ferguson served on the Orleans Parish Criminal Court and ruled against Homer Plessy."
+  - says: "A Plessy and a Ferguson, side by side."
+    source: 4
+    quote: "Phoebe Ferguson and Keith Plessy stand on the railroad tracks where Homer Plessy was arrested in 1892."
 sources:
   - title: "Homer Plessy"
     publisher: "National Park Service, Jean Lafitte National Historical Park and Preserve"
     url: https://www.nps.gov/people/homer-plessy.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "U.S. Reports: Plessy v. Ferguson, 163 U.S. 537 (1896)"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/usrep163537/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep163/usrep163537/usrep163537.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Plessy in the Making"
     publisher: "National Park Service, Brown v. Board of Education National Historical Park"
     url: https://www.nps.gov/brvb/learn/historyculture/plessy.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Plessy and Ferguson (program announcement, 2010)"
     publisher: "National Park Service, Brown v. Board of Education National Historical Park"
     url: https://www.nps.gov/brvb/learn/news/plessyferguson.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-arrest-that-was-planned/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 96.8
+    audioBytes: 1550253
+    transcript:
+      totalS: 96.8
+      lines:
+        - text: Look along the railroad tracks.
+          atS: 0
+          durationS: 1.87
+        - text: On the seventh of June, eighteen ninety-two, a shoemaker named Homer Plessy bought a first-class ticket on the East Louisiana Railroad, for Covington.
+          atS: 2.31
+          durationS: 10.91
+        - text: He took a seat in the car for white passengers.
+          atS: 14.34
+          durationS: 2.68
+        - text: Under a Louisiana law two years old, that seat was not his.
+          atS: 17.53
+          durationS: 4.42
+        - text: The law said railroads must keep separate cars by race, and under that law Plessy was Black.
+          atS: 22.47
+          durationS: 6.61
+        - text: His own petition later told the court that it could not be seen in him.
+          atS: 29.88
+          durationS: 4.09
+        - text: The conductor told him to move.
+          atS: 34.35
+          durationS: 2.03
+        - text: He refused.
+          atS: 36.5
+          durationS: 1.15
+        - text: He was arrested and taken to the parish jail.
+          atS: 37.83
+          durationS: 2.96
+        - text: None of it was an accident.
+          atS: 41.23
+          durationS: 1.7
+        - text: A committee of citizens had organized to test the law in court, and Plessy volunteered.
+          atS: 43.17
+          durationS: 5.79
+        - text: The railroad was in on the plan.
+          atS: 49.56
+          durationS: 2.05
+        - text: The detective who arrested him had been hired ahead of time.
+          atS: 51.94
+          durationS: 3.4
+        - text: The arrest is remembered here, by these tracks.
+          atS: 56.04
+          durationS: 2.92
+        - text: The case went all the way to the Supreme Court.
+          atS: 59.57
+          durationS: 2.76
+        - text: In eighteen ninety-six it lost, seven votes to one.
+          atS: 62.77
+          durationS: 3.95
+        - text: The ruling made separate but equal the law of the land, and it stood for almost sixty years.
+          atS: 67.67
+          durationS: 6
+        - text: The one dissenting justice wrote that the Constitution is color-blind.
+          atS: 74.63
+          durationS: 4.3
+        - text: More than a century later, a descendant of the judge who first ruled against Plessy and a member of the Plessy family came to this story together.
+          atS: 79.37
+          durationS: 8.92
+        - text: They were photographed standing on the tracks where he was arrested.
+          atS: 89.1
+          durationS: 3.64
+        - text: A Plessy and a Ferguson, side by side.
+          atS: 93.55
+          durationS: 3.27

@@ -9,7 +9,7 @@ at: { lat: 32.07993, lng: -81.09157 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 99
+durationS: 100
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,13 +34,74 @@ script: |
   In November nineteen-oh-two, father and son were buried again. Here, beneath the monument.
 
   For seventy-three years, it had been his memorial with nobody under it. It just took a while for him to arrive.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 pronunciations:
   - written: Nathanael Greene
     say: nuh-THAN-yel GREEN
   - written: Casimir Pulaski
     say: KAZ-ih-meer puh-LASS-kee
+claims:
+  - says: "When it went up in eighteen twenty-nine, it was paid for partly by a state lottery"
+    source: 1
+    quote: "a lottery was granted by the legislature, for the purpose of raising the sum of $35,000,"
+  - says: "it was meant to honour two Revolutionary generals at once"
+    source: 1
+    quote: "that was placed in Johnson square in 1829, and was called the ‘« Greene and Pulaski Monument.”"
+  - says: "Nathanael Greene, and Casimir Pulaski."
+    source: 1
+    quote: "was called the ‘« Greene and Pulaski Monument.”"
+  - says: "A city history forty years later described it as plain, without an inscription."
+    source: 1
+    quote: "is plain and without inscription."
+  - says: "Greene had died near Savannah in seventeen eighty-six, after what may have been sunstroke."
+    source: 5
+    quote: "Here, in June 1786, Greene died from what may have been the complications of sunstroke,"
+  - says: "He was buried in the old burying ground on what was then South Broad Street, with the artillery firing minute guns."
+    source: 1
+    quote: "interred with military honors in the old burying-ground on South Broad street. The procession, civic and military, was formed on the Bay and escorted the remains. The Chatham Artillery was in front firing minute-guns"
+  - says: "And then Savannah lost him."
+    source: 2
+    quote: "after having been lost lo all human search and Investigation for nearly US years,"
+  - says: "That he had been spirited away at night."
+    source: 3
+    quote: "tradition had it they had been spirited away after a public interment in 17S6."
+  - says: "That he had been sunk in a creek."
+    source: 2
+    quote: "their Immersion in Ihe waters of Runaway Nigger Creek"
+  - says: "That he had been carried off to Cumberland Island."
+    source: 2
+    quote: "their interment at Dungeness, on Cumberland Island"
+  - says: "In March nineteen-oh-one, a committee sent by the Rhode Island Society of the Cincinnati opened a family vault in that old cemetery."
+    source: 4
+    quote: "The Rhode Island society of tho Cincinnati pursued tho search last year, and on March 3. 1901, Colonel Gardiner and his associates discovered a coffin plate upon which Greene's name could be plainly discerned."
+  - says: "opened a family vault in that old cemetery"
+    source: 2
+    quote: "It was in the vault of the Jones family that the remains were found."
+  - says: "Inside was a coffin plate."
+    source: 2
+    quote: "By the coffin plate, the remains of Gen. Greene were known,"
+  - says: "On it, the name Greene, and the date seventeen eighty-six."
+    source: 2
+    quote: "Below the name line is the date, 1786, which is plainly visible."
+  - says: "Beside him lay a second body, believed to be his son, George Washington Greene, who had drowned in the river as a young man."
+    source: 2
+    quote: "History has it that young George Washington Greene, who was a son of Gen. Greene, was drowned, when about 18 or 19 years old, in the Savannah river, and that his body was placed by that of Ills father."
+  - says: "None of the stories was true."
+    source: 2
+    quote: "they were incorrect, and the body lay for more than a century just where it had been originally bestowed."
+  - says: "He had been exactly where he was put."
+    source: 2
+    quote: "the body lay for more than a century just where it had been originally bestowed."
+  - says: "In November nineteen-oh-two, father and son were buried again."
+    source: 4
+    quote: "The reinterment of the remains of General Nathaniel Greene, the revolutionary hero, and his son. George Washington Greene, took place in Savannah today"
+  - says: "Here, beneath the monument."
+    source: 4
+    quote: "Body of Gen. Greene Placed Beneath Monument."
+  - says: "For seventy-three years, it had been his memorial with nobody under it."
+    source: 1
+    quote: "that was placed in Johnson square in 1829,"
 sources:
   - title: "Historical record of the city of Savannah (Lee and Agnew, 1869): Burial of Major-General Greene; Monuments"
     publisher: "Library of Congress"
@@ -67,3 +128,77 @@ sources:
     url: https://www.nps.gov/people/nathanael-greene.htm
     retrievedAt: "2026-10-15"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-general-who-went-missing/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 99.9
+    audioBytes: 1599154
+    transcript:
+      totalS: 99.9
+      lines:
+        - text: Look at the tall monument in the middle of Johnson Square.
+          atS: 0
+          durationS: 3.03
+        - text: When it went up in eighteen twenty-nine, it was paid for partly by a state lottery, and it was meant to honour two Revolutionary generals at once.
+          atS: 3.47
+          durationS: 8.92
+        - text: Nathanael Greene, and Casimir Pulaski.
+          atS: 12.83
+          durationS: 3.48
+        - text: A city history forty years later described it as plain, without an inscription.
+          atS: 16.82
+          durationS: 5.2
+        - text: Greene had died near Savannah in seventeen eighty-six, after what may have been sunstroke.
+          atS: 22.72
+          durationS: 5.28
+        - text: He was buried in the old burying ground on what was then South Broad Street, with the artillery firing minute guns.
+          atS: 28.61
+          durationS: 7.04
+        - text: And then Savannah lost him.
+          atS: 36.08
+          durationS: 2.07
+        - text: For more than a century nobody could say for certain where his body was.
+          atS: 38.85
+          durationS: 4.28
+        - text: The stories grew.
+          atS: 43.51
+          durationS: 1.5
+        - text: That he had been spirited away at night.
+          atS: 45.45
+          durationS: 2.4
+        - text: That he had been sunk in a creek.
+          atS: 48.3
+          durationS: 1.96
+        - text: That he had been carried off to Cumberland Island.
+          atS: 50.58
+          durationS: 2.58
+        - text: In March nineteen-oh-one, a committee sent by the Rhode Island Society of the Cincinnati opened a family vault in that old cemetery.
+          atS: 54.11
+          durationS: 8.59
+        - text: Inside was a coffin plate.
+          atS: 63.52
+          durationS: 1.93
+        - text: On it, the name Greene, and the date seventeen eighty-six.
+          atS: 65.77
+          durationS: 4.54
+        - text: Beside him lay a second body, believed to be his son, George Washington Greene, who had drowned in the river as a young man.
+          atS: 70.75
+          durationS: 8.19
+        - text: None of the stories was true.
+          atS: 79.75
+          durationS: 1.6
+        - text: He had been exactly where he was put.
+          atS: 81.73
+          durationS: 2.7
+        - text: In November nineteen-oh-two, father and son were buried again.
+          atS: 85.14
+          durationS: 4.19
+        - text: Here, beneath the monument.
+          atS: 89.57
+          durationS: 2.04
+        - text: For seventy-three years, it had been his memorial with nobody under it.
+          atS: 92.05
+          durationS: 4.49
+        - text: It just took a while for him to arrive.
+          atS: 97.24
+          durationS: 2.65

@@ -1,0 +1,165 @@
+# Drafted by Claude Code (2026-11-09) for the Boston core: legend batch.
+# Listening spot: Inside the Granary Burying Ground (public, City of Boston), on the paths among the stones; open daily in daylight.
+# Position: Wikidata Q1140339 (Granary Burying Ground) coordinate, inside the grounds about 30 m west of boston-granary-five-in-one-grave (medium confidence).
+id: boston-mother-goose
+title: "Looking for Mother Goose"
+summary: "Boston tradition puts Mother Goose in this burying ground. Even her grave is in dispute."
+place: "Granary Burying Ground, Tremont Street, Boston, Massachusetts"
+at: { lat: 42.35741, lng: -71.06171 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 64
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A Boston tradition, not established fact. A Boston Transcript item reprinted in 1920 gives the family tradition and says the stone shown is Mary Goose's; a 1908 guidebook reports the antiquary William H. Whitmore's argument that Mother Goose was not a Boston woman at all. The script says out loud it is a legend and disputed.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [boston, boston-core, freedom-trail, burial-ground, granary, nursery-rhymes, folklore]
+teaser: "Some visitors come here for Hancock and Revere. Some come for Mother Goose."
+script: |
+  You are in the Granary Burying Ground. John Hancock and Paul Revere are buried here. But one
+  name draws a different kind of visitor. They are looking for Mother Goose.
+
+  What follows is a legend, and a disputed one.
+
+  The family story goes like this. In sixteen ninety-two, a widower named Isaac Goose married
+  Elizabeth Foster. Her daughter, also Elizabeth, married a Boston printer, Thomas Fleet. And
+  Fleet, the story says, printed the rhymes she sang to her grandchildren, and named the
+  collection for her.
+
+  Even the grave is a puzzle. A Boston paper reported that the stone people call Mother
+  Goose's belongs to Isaac's first wife, Mary, who died in sixteen ninety. Elizabeth was
+  buried here too, but her stone is not standing.
+
+  And one Boston antiquary, William Whitmore, went further. He argued that Mother Goose was
+  not Elizabeth at all, and that the name did not even start in Boston.
+
+  So she may not be here. People still come looking.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "You are in the Granary Burying Ground."
+    source: 4
+    quote: "Granary Burying Ground"
+  - says: "John Hancock and Paul Revere are buried here."
+    source: 4
+    quote: "Patriots John Hancock , Paul Revere , James Otis, Samuel Adams , Robert Treat Paine, victims of the Boston Massacre , and whole families of settlers ravaged by fire and plague are interred in this cemetery"
+  - says: "But one name draws a different kind of visitor."
+    source: 2
+    quote: "One stone that many seek here, and some have seemed to identify, is not to be found"
+  - says: "They are looking for Mother Goose."
+    source: 2
+    quote: "This is the tablet marking the grave of ‘“ Mother Goose.”"
+  - says: "They are looking for Mother Goose."
+    source: 3
+    quote: "Outside the fence of the old Granary burying ground, where the original Mother Goose is interred"
+  - says: "What follows is a legend, and a disputed one."
+    source: 2
+    quote: "who, in his “ Genesis of a Boston Myth,” marshaled strong evidence to sustain his assertion"
+  - says: "In sixteen ninety-two, a widower named Isaac Goose married Elizabeth Foster."
+    source: 1
+    quote: "She died in 1690, leaving four children. In 1692 Isaac Goose married Elizabeth, daughter of William Foster of Charlestown."
+  - says: "Her daughter, also Elizabeth, married a Boston printer, Thomas Fleet."
+    source: 1
+    quote: "the oldest of whom, Elizabeth, married"
+  - says: "Her daughter, also Elizabeth, married a Boston printer, Thomas Fleet."
+    source: 1
+    quote: "Thomas Fleet, a printer, of Roston."
+  - says: "And Fleet, the story says, printed the rhymes she sang to her grandchildren, and named the collection for her."
+    source: 1
+    quote: "always tho tradition that' she was the \"Mother Goose\" of the nursery rhymes. N6t that she was the author of them, but that her son-in-law, Thoma. Fleet, printed a collection of the thymes, as she sang them to her grandchildren and named it for her."
+  - says: "A Boston paper reported that the stone people call Mother Goose's belongs to Isaac's first wife, Mary, who died in sixteen ninety."
+    source: 1
+    quote: "Boston Transcript. The grave of Mother Goose In Granary buying ground Is that of Mary, daughter of Jonathan Ralston and wife of Isaac Goose. She died in 1690"
+  - says: "Elizabeth was buried here too, but her stone is not standing."
+    source: 1
+    quote: "was buried in Granary burying ground, but her stone is not now standing."
+  - says: "And one Boston antiquary, William Whitmore, went further."
+    source: 2
+    quote: "According to the late William H. Whitmore"
+  - says: "He argued that Mother Goose was not Elizabeth at all, and that the name did not even start in Boston."
+    source: 2
+    quote: "‘*‘ Mother Goose” was not Elizabeth Vergoose, the worthy seventeenth-century matron, as has been alleged; nor was “ Mother Goose” a name that originated in Boston."
+  - says: "So she may not be here."
+    source: 2
+    quote: "is not to be found, if we are to accept the word of an authoritative antiquary."
+sources:
+  - title: "Mother Goose Identified (from the Boston Transcript), Albuquerque Morning Journal, January 20, 1920, page 6"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84031081/1920-01-20/ed-1/?sp=6
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Boston, a guide book, by Edwin M. Bacon (revised edition, 1908)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/33007578/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Wilmington Morning Star, August 15, 1941, page 8 (a Boston column)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn78002169/1941-08-15/ed-1/?sp=8
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Granary Burying Ground"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/granary-burying-ground.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/boston-mother-goose/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 63.8
+    audioBytes: 1021953
+    transcript:
+      totalS: 63.8
+      lines:
+        - text: You are in the Granary Burying Ground.
+          atS: 0
+          durationS: 2.11
+        - text: John Hancock and Paul Revere are buried here.
+          atS: 2.26
+          durationS: 2.93
+        - text: But one name draws a different kind of visitor.
+          atS: 5.51
+          durationS: 2.75
+        - text: They are looking for Mother Goose.
+          atS: 8.54
+          durationS: 1.61
+        - text: What follows is a legend, and a disputed one.
+          atS: 10.54
+          durationS: 3.01
+        - text: The family story goes like this.
+          atS: 14.24
+          durationS: 1.97
+        - text: In sixteen ninety-two, a widower named Isaac Goose married Elizabeth Foster.
+          atS: 16.55
+          durationS: 5.48
+        - text: Her daughter, also Elizabeth, married a Boston printer, Thomas Fleet.
+          atS: 22.35
+          durationS: 4.92
+        - text: And Fleet, the story says, printed the rhymes she sang to her grandchildren, and named the collection for her.
+          atS: 27.71
+          durationS: 6.75
+        - text: Even the grave is a puzzle.
+          atS: 35.16
+          durationS: 1.6
+        - text: A Boston paper reported that the stone people call Mother Goose's belongs to Isaac's first wife, Mary, who died in sixteen ninety.
+          atS: 37.2
+          durationS: 8.14
+        - text: Elizabeth was buried here too, but her stone is not standing.
+          atS: 45.72
+          durationS: 3.8
+        - text: And one Boston antiquary, William Whitmore, went further.
+          atS: 50.12
+          durationS: 3.89
+        - text: He argued that Mother Goose was not Elizabeth at all, and that the name did not even start in Boston.
+          atS: 54.71
+          durationS: 5.49
+        - text: So she may not be here.
+          atS: 60.52
+          durationS: 1.44
+        - text: People still come looking.
+          atS: 62.35
+          durationS: 1.46

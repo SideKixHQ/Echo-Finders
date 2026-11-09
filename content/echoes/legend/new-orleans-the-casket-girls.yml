@@ -9,13 +9,11 @@ at: { lat: 29.9604, lng: -90.06058 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 107
+durationS: 92
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  The women and their chests are a colonial tradition the old accounts disagree about, and
-  Cable himself called the record slender. The modern vampire tale has no source at all. The
-  script says both out loud.
+  The women and their chests are a colonial tradition the old accounts disagree about, and Cable himself called the record slender. The modern vampire tale has no source at all. The script says both out loud.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -28,7 +26,7 @@ script: |
 
   That much the old writers agree on. Almost nothing else.
 
-  George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king. He says those sixty were the first of many shiploads. Grace King, eleven years later, has sixty girls too. She says they were the last.
+  George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king. He says those sixty were only the first company, and more came in later years. Grace King, eleven years later, has sixty girls too. She says they were the last.
 
   A city guide from nineteen-oh-four tells it differently again. Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character.
 
@@ -44,21 +42,159 @@ pronunciations:
     say: fee ah lah kah-SET
   - written: Quebec
     say: kay-BECK
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "The nuns who lived here belong to one of the oldest stories in New Orleans."
+    source: 1
+    quote: "grouping to- gether in the Place d’Armes under escort of the Ur- suline nuns"
+  - says: "In the early years of the colony, France sent young women across the ocean to marry its colonists."
+    source: 3
+    quote: "twenty young gir's who were sent by the King of I'rance to be married to the colonists."
+  - says: "Each one came with a small chest of clothes."
+    source: 1
+    quote: "many small, stout chests of clothing. There was a trunk for each maiden, a maiden for each trunk"
+  - says: "The French called them the filles à la cassette."
+    source: 2
+    quote: "They are known as ‘les filles a la cassette,” from the little trunk or cas- sette, containing a trousseau"
+  - says: "In English, the casket girls."
+    source: 1
+    quote: "the casket-girls."
+  - says: "George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king."
+    source: 1
+    quote: "In the winter of 1727-28 a crowning benefit had been reached."
+  - says: "George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king."
+    source: 1
+    quote: "under escort of the Ur- suline nuns, a good threescore"
+  - says: "George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king."
+    source: 1
+    quote: "There was a trunk for each maiden, a maiden for each trunk, and both maidens and trunks the gift of the king."
+  - says: "George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king."
+    source: 1
+    quote: "COPYRIGHT, 1884, BY CHARLES SCRIBNER’S SONS"
+  - says: "He says those sixty were only the first company, and more came in later years."
+    source: 1
+    quote: "this was but the initial consignment. Similar companies came in subsequent years"
+  - says: "Grace King, eleven years later, has sixty girls too."
+    source: 2
+    quote: "This was an inter- esting lot of sixty"
+  - says: "Grace King, eleven years later, has sixty girls too."
+    source: 2
+    quote: "Copyricut, 1895, By MACMILLAN AND CO."
+  - says: "She says they were the last."
+    source: 2
+    quote: "the governor gave them charge of the last shipment of girls sent by the mother country."
+  - says: "A city guide from nineteen-oh-four tells it differently again."
+    source: 3
+    quote: "Copyright 1904 by"
+  - says: "Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character."
+    source: 3
+    quote: "The Bishop of Quebee was charged with selecting good and pious young women for this purpose, and as a proof of her respectability each young woman was pro- vided by the Bishop with a curiously wrought casket."
+  - says: "Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character."
+    source: 3
+    quote: "In 1706 thése girls"
+  - says: "Cable admitted the record was slender."
+    source: 1
+    quote: "There cannot but linger a regret around this slender fact, so full of romance and the best poetry of real life, that it is so slender."
+  - says: "The Creoles, he wrote, were never careful about checking their traditions."
+    source: 1
+    quote: "But the Creoles have never been careful for the authentication of their traditions"
 sources:
   - title: "The Creoles of Louisiana (1884), by George W. Cable"
     publisher: "Charles Scribner's Sons, via the Library of Congress"
-    url: https://www.loc.gov/item/01008769/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/creolesoflouisia01cabl/creolesoflouisia01cabl.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "New Orleans, the Place and the People (1895), by Grace King"
     publisher: "Macmillan and Co., via the Library of Congress"
-    url: https://www.loc.gov/item/01008773/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansplacep00kin/neworleansplacep00kin.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's Guide to New Orleans (1904)"
     publisher: "The Picayune, via the Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-orleans-the-casket-girls/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 91.9
+    audioBytes: 1470841
+    transcript:
+      totalS: 91.9
+      lines:
+        - text: Look up at the convent roof, and the small windows set into it.
+          atS: 0
+          durationS: 3.5
+        - text: The nuns who lived here belong to one of the oldest stories in New Orleans.
+          atS: 3.88
+          durationS: 3.91
+        - text: In the early years of the colony, France sent young women across the ocean to marry its colonists.
+          atS: 8.12
+          durationS: 5.68
+        - text: Each one came with a small chest of clothes.
+          atS: 14.12
+          durationS: 2.61
+        - text: The French called them the filles à la cassette.
+          atS: 17.01
+          durationS: 2.65
+        - text: In English, the casket girls.
+          atS: 19.98
+          durationS: 1.94
+        - text: That much the old writers agree on.
+          atS: 22.36
+          durationS: 2.11
+        - text: Almost nothing else.
+          atS: 24.63
+          durationS: 1.16
+        - text: George Washington Cable, in eighteen eighty-four, has about sixty of them landing in the winter of seventeen twenty-seven, under the eye of the nuns, with a trunk for each girl, the gift of the king.
+          atS: 26.17
+          durationS: 10.54
+        - text: He says those sixty were only the first company, and more came in later years.
+          atS: 37.04
+          durationS: 4.24
+        - text: Grace King, eleven years later, has sixty girls too.
+          atS: 41.52
+          durationS: 3.31
+        - text: She says they were the last.
+          atS: 45.21
+          durationS: 1.5
+        - text: A city guide from nineteen-oh-four tells it differently again.
+          atS: 46.95
+          durationS: 3.3
+        - text: Twenty girls, years earlier, each chosen by the Bishop of Quebec, each given a little chest as proof of her good character.
+          atS: 50.57
+          durationS: 7.02
+        - text: Cable admitted the record was slender.
+          atS: 58.29
+          durationS: 2.1
+        - text: The Creoles, he wrote, were never careful about checking their traditions.
+          atS: 60.55
+          durationS: 3.98
+        - text: So the story kept growing.
+          atS: 65.34
+          durationS: 1.56
+        - text: In recent years some tellers have added something none of the old writers ever mentioned.
+          atS: 67.34
+          durationS: 4.74
+        - text: That the little chests carried vampires into the city, and that they are still up there, under this roof.
+          atS: 72.35
+          durationS: 5.69
+        - text: There is no record of that.
+          atS: 78.37
+          durationS: 1.39
+        - text: None.
+          atS: 80.08
+          durationS: 0.55
+        - text: It is a legend built on top of a legend.
+          atS: 80.95
+          durationS: 2.64
+        - text: The women were real.
+          atS: 83.87
+          durationS: 1.33
+        - text: Their chests were real.
+          atS: 85.32
+          durationS: 1.54
+        - text: And as far as anyone ever wrote down at the time, what was in them was clothes.
+          atS: 87.11
+          durationS: 4.75

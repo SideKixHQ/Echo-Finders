@@ -1,6 +1,6 @@
 id: castle-clinton-eight-million
 title: Eight million people walked through this fort
-summary: A harbour fort that became America's first immigration station, decades before Ellis Island.
+summary: "A harbour fort that became America's first immigration station, decades before Ellis Island."
 place: Castle Clinton, Battery Park, Manhattan
 
 at: { lat: 40.70331, lng: -74.01705 }
@@ -9,7 +9,7 @@ triggerRadiusKm: 0.09
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: history
 format: short
-durationS: 95
+durationS: 79
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -21,22 +21,13 @@ teaser: Before Ellis Island, there was this.
 script: |
   The round sandstone building ahead of you was built to stop an invasion that never came.
 
-  It went up between 1808 and 1811, out on a small island off the tip of Manhattan, its
-  guns pointed down the harbour at a British fleet everyone expected and nobody saw. The
-  landfill came later. So did almost everything else it has been.
+  It went up between 1808 and 1811, on the rocks off the tip of Manhattan, about three hundred feet offshore, with a bridge back to the land. Its guns never had occasion to fire on the enemy. The landfill came later. So did almost everything else it has been.
 
-  Because in 1855 the fort became a door. On the first of August that year it opened as the
-  Emigrant Landing Depot, the first immigration station in the United States, run by
-  the State of New York, and over the next thirty-five years something like eight million
-  people walked through it and out into the rest of their lives. Nikola Tesla came through
-  here. So did Harry Houdini, and Emma Goldman, and Joseph Pulitzer.
+  Because in 1855 the fort became a door. In August that year Castle Garden opened as an immigrant landing depot, the first official immigrant processing center in the nation, leased to the State of New York. Over the next thirty-four years more than eight million people came through it and out into the rest of their lives. In those years, two out of every three immigrants to the United States passed through this one building.
 
-  In 1890 the federal government took the job over, and two years later moved it to a
-  bigger island further out, where the ferries go now. The fort stayed, and became other
-  things again: a beer garden, a theatre, an aquarium.
+  It closed in 1890, when the federal government took immigration over. In 1892 the work moved out to Ellis Island, where the ferries go now. The fort stayed, and became other things again: a theatre and opera house before all that, an aquarium after it.
 
-  Eight million arrivals, and almost nobody stops here. Most people walk past it to queue
-  for the boat.
+  Eight million arrivals, and almost nobody stops here. Most people walk past it to queue for the boat.
 
 detail: |
   The fort has had at least five lives: coastal battery, public promenade and entertainment
@@ -53,23 +44,118 @@ simple:
   title: Eight million doors
   durationS: 35
   script: |
-    This round stone fort was an immigration station before Ellis Island was built.
+    This round stone fort was an immigration station before Ellis Island opened.
 
-    Eight million people came through this one building.
+    More than eight million people came through this one building.
 
-    If your family reached New York before 1892, this is probably the door they walked through.
+    For about thirty-four years, two out of every three people moving to America walked through this door.
 
-editorial: draft
+editorial: approved
 factCheck: corroborated
-
+claims:
+  - says: "It went up between 1808 and 1811, on the rocks off the tip of Manhattan"
+    source: 1
+    quote: "Southwest Battery was constructed on the rocks off the tip of Manhattan between 1808 and 1811."
+  - says: "about three hundred feet offshore, with a bridge back to the land"
+    source: 2
+    quote: "It was originally located 300 feet offshore and connected to Manhattan via a bridge."
+  - says: "Its guns never had occasion to fire on the enemy."
+    source: 1
+    quote: "Southwest Battery never had occasion to fire upon the enemy."
+  - says: "Because in 1855 the fort became a door."
+    source: 1
+    quote: "On August 3, 1855, Castle Garden opened as an immigrant landing depot."
+  - says: "In August that year Castle Garden opened as an immigrant landing depot, the first official immigrant processing center in the nation"
+    source: 1
+    quote: "On August 3, 1855, Castle Garden opened as an immigrant landing depot. The creation of Castle Garden, the first official immigrant processing center in the nation"
+  - says: "leased to the State of New York"
+    source: 2
+    quote: "In 1855, now leased to NY State, Castle Garden opened as an immigration landing depot."
+  - says: "Over the next thirty-four years more than eight million people came through it"
+    source: 1
+    quote: "During the next 34 years, over 8 million people entered the United States through Castle Garden."
+  - says: "In those years, two out of every three immigrants to the United States passed through this one building."
+    source: 1
+    quote: "Two out of every three immigrants to the United States in this period passed through the Castle Garden."
+  - says: "It closed in 1890"
+    source: 1
+    quote: "It was closed on April 18, 1890."
+  - says: "when the federal government took immigration over"
+    source: 1
+    quote: "With the Federal government taking control of immigration"
+  - says: "In 1892 the work moved out to Ellis Island"
+    source: 2
+    quote: "The immigration processing was transferred to federal control and relocated to the Barge Office and then to Ellis Island in 1892."
+  - says: "a theatre and opera house before all that"
+    source: 1
+    quote: "Castle Garden served as an opera house and theater until 1854."
+  - says: "an aquarium after it"
+    source: 1
+    quote: "reopened as the New York City Aquarium on December 10, 1896."
+  - says: "Eight million arrivals"
+    source: 1
+    quote: "over 8 million people entered the United States through Castle Garden"
+  - says: "Most people walk past it to queue for the boat."
+    source: 1
+    quote: "Today the site houses the ticket office for the Statue of Liberty ."
 sources:
-  - title: Castle Clinton National Monument — History & Culture
-    publisher: National Park Service
+  - title: "Castle Clinton National Monument: History & Culture"
+    publisher: "National Park Service"
     url: https://www.nps.gov/cacl/learn/historyculture/index.htm
-    retrievedAt: "2026-09-21"
+    retrievedAt: "2026-11-09"
     rights: public-domain
-  - title: Castle Clinton National Monument
-    publisher: Lower Manhattan Historical Association
+  - title: "Castle Clinton National Monument"
+    publisher: "Lower Manhattan Historical Association"
     url: https://www.historiclowermanhattan.org/immigration/castle-clinton-national-monument
-    retrievedAt: "2026-09-21"
-    rights: public-domain
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/castle-clinton-eight-million/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 78.9
+    audioBytes: 1262697
+    transcript:
+      totalS: 78.9
+      lines:
+        - text: The round sandstone building ahead of you was built to stop an invasion that never came.
+          atS: 0
+          durationS: 4.64
+        - text: It went up between 1808 and 1811, on the rocks off the tip of Manhattan, about three hundred feet offshore, with a bridge back to the land.
+          atS: 5.46
+          durationS: 9.45
+        - text: Its guns never had occasion to fire on the enemy.
+          atS: 15.6
+          durationS: 2.95
+        - text: The landfill came later.
+          atS: 18.94
+          durationS: 1.66
+        - text: So did almost everything else it has been.
+          atS: 21.04
+          durationS: 2.38
+        - text: Because in 1855 the fort became a door.
+          atS: 23.93
+          durationS: 3.4
+        - text: In August that year Castle Garden opened as an immigrant landing depot, the first official immigrant processing center in the nation, leased to the State of New York.
+          atS: 28.44
+          durationS: 10.31
+        - text: Over the next thirty-four years more than eight million people came through it and out into the rest of their lives.
+          atS: 39.45
+          durationS: 7.2
+        - text: In those years, two out of every three immigrants to the United States passed through this one building.
+          atS: 47.34
+          durationS: 6.2
+        - text: It closed in 1890, when the federal government took immigration over.
+          atS: 53.75
+          durationS: 4.53
+        - text: In 1892 the work moved out to Ellis Island, where the ferries go now.
+          atS: 58.61
+          durationS: 4.83
+        - text: "The fort stayed, and became other things again: a theatre and opera house before all that, an aquarium after it."
+          atS: 64.04
+          durationS: 7.41
+        - text: Eight million arrivals, and almost nobody stops here.
+          atS: 71.96
+          durationS: 3.45
+        - text: Most people walk past it to queue for the boat.
+          atS: 76.01
+          durationS: 2.84

@@ -9,7 +9,7 @@ at: { lat: 42.35997, lng: -71.06515 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 74
+durationS: 70
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,21 +37,129 @@ script: |
   student walk past this building, and heard what the boy said to it.
 
   Goodbye forever, colored school. Tomorrow we are like the other Boston boys.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look at the schoolhouse at the corner of Smith Court."
+    source: 1
+    quote: "Nell, then living at 3 Smith Court , recalled watching a young Black student walking past the Smith School."
+  - says: "It opened in eighteen thirty-five as a public school for Black children, and it became the default school for most of the Black children in the city."
+    source: 1
+    quote: "Opened in 1835, the Abiel Smith School served as a segregated public school for African American students in Boston."
+  - says: "It opened in eighteen thirty-five as a public school for Black children, and it became the default school for most of the Black children in the city."
+    source: 3
+    quote: "became the default school for most of the city's Black students."
+  - says: "Part of the money came from a white businessman, Abiel Smith, who left it for the education of Black children."
+    source: 1
+    quote: "In 1815, White businessman Abiel Smith died and bequeathed $4,000 for the education of African American children in Boston."
+  - says: "Part of the money came from a white businessman, Abiel Smith, who left it for the education of Black children."
+    source: 1
+    quote: "they later used a portion of it to construct the Abiel Smith School."
+  - says: "The school was still worse than the white schools, and the families here kept saying so."
+    source: 1
+    quote: "the conditions in this school proved inferior to those of the White schools in the city and the Black community continued to fight for equal opportunities in education."
+  - says: "In eighteen forty-nine, many of them took their children out."
+    source: 2
+    quote: "Classes returned to the meeting house in 1849 when many African Americans chose to withdraw their children from the Smith School to protest segregated education."
+  - says: "Classes moved back into the meeting house next door."
+    source: 2
+    quote: "Classes returned to the meeting house in 1849"
+  - says: "A father, Benjamin Roberts, sued so his daughter Sarah could go to the school nearest her home."
+    source: 1
+    quote: "Roberts wanted his daughter to be able to attend the school closest to their home, rather than the Smith School"
+  - says: "A father, Benjamin Roberts, sued so his daughter Sarah could go to the school nearest her home."
+    source: 1
+    quote: "filed suit on behalf of his daughter Sarah, against the Boston School Committee in 1849."
+  - says: "He lost."
+    source: 1
+    quote: "did not win the lawsuit."
+  - says: "William Cooper Nell, who had been a pupil in the old African School himself, led the petitions."
+    source: 1
+    quote: "William Cooper Nell , once a student at the African School, spearheaded the movement for equal schools."
+  - says: "William Cooper Nell, who had been a pupil in the old African School himself, led the petitions."
+    source: 1
+    quote: "Nell and others in the Equal Schools movement led petition drives, protests, and eventually a boycott of the Smith School."
+  - says: "In eighteen fifty-five, Massachusetts outlawed segregated public schools."
+    source: 1
+    quote: "took their cause to the state legislature which finally outlawed public school segregation in Massachusetts in 1855."
+  - says: "Nell lived on this court."
+    source: 1
+    quote: "Nell, then living at 3 Smith Court"
+  - says: "On the first day of school that year, he watched a young student walk past this building, and heard what the boy said to it."
+    source: 1
+    quote: "On the first day of school that year, Nell, then living at 3 Smith Court , recalled watching a young Black student walking past the Smith School."
+  - says: "Goodbye forever, colored school."
+    source: 1
+    quote: "“Good bye forever colored school!,” the student said"
+  - says: "Tomorrow we are like the other Boston boys."
+    source: 1
+    quote: "“Tomorrow we are like the other Boston boys.”"
 sources:
   - title: "Abiel Smith School"
     publisher: "National Park Service, Boston African American National Historic Site"
     url: https://www.nps.gov/boaf/learn/historyculture/abiel-smith-school.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "African Meeting House"
     publisher: "National Park Service, Boston African American National Historic Site"
     url: https://www.nps.gov/boaf/learn/historyculture/amh.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Black Struggle for Equal Education in Boston, 1787 to 1976"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/000/the-black-struggle-for-equal-education-in-boston-1787-to-1976.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-abiel-smith-school-goodbye/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 70.4
+    audioBytes: 1126861
+    transcript:
+      totalS: 70.4
+      lines:
+        - text: Look at the schoolhouse at the corner of Smith Court.
+          atS: 0
+          durationS: 2.94
+        - text: It opened in eighteen thirty-five as a public school for Black children, and it became the default school for most of the Black children in the city.
+          atS: 3.26
+          durationS: 8.56
+        - text: Part of the money came from a white businessman, Abiel Smith, who left it for the education of Black children.
+          atS: 12.52
+          durationS: 6.28
+        - text: The school was still worse than the white schools, and the families here kept saying so.
+          atS: 19.49
+          durationS: 4.95
+        - text: In eighteen forty-nine, many of them took their children out.
+          atS: 25.04
+          durationS: 3.84
+        - text: Classes moved back into the meeting house next door.
+          atS: 30.18
+          durationS: 3.1
+        - text: A father, Benjamin Roberts, sued so his daughter Sarah could go to the school nearest her home.
+          atS: 33.61
+          durationS: 5.85
+        - text: He lost.
+          atS: 39.79
+          durationS: 0.78
+        - text: So they went to the state.
+          atS: 40.84
+          durationS: 1.46
+        - text: William Cooper Nell, who had been a pupil in the old African School himself, led the petitions.
+          atS: 42.75
+          durationS: 6.42
+        - text: In eighteen fifty-five, Massachusetts outlawed segregated public schools.
+          atS: 50.12
+          durationS: 5.07
+        - text: Nell lived on this court.
+          atS: 55.63
+          durationS: 1.58
+        - text: On the first day of school that year, he watched a young student walk past this building, and heard what the boy said to it.
+          atS: 57.82
+          durationS: 6.85
+        - text: Goodbye forever, colored school.
+          atS: 64.99
+          durationS: 2.11
+        - text: Tomorrow we are like the other Boston boys.
+          atS: 67.43
+          durationS: 2.93

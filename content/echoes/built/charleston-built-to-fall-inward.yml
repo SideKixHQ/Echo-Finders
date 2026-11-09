@@ -9,7 +9,7 @@ at: { lat: 32.77956, lng: -79.93008 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 94
+durationS: 91
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -23,8 +23,7 @@ script: |
   Look at how solid it is. The walls are thirty-two inches thick, and when it was built they
   had no windows at all.
 
-  Charles Town was a small walled settlement then, at the southern edge of England's claims,
-  and it expected attack, from the Spanish, the French, and pirates. The town's gunpowder
+  Charles Town was the southernmost English settlement then, behind fortification walls, and it faced attack from the Spanish, the French, Native Americans and pirates. The town's gunpowder
   was kept here.
 
   It was condemned in seventeen seventy, then filled with powder again when the Revolution
@@ -34,27 +33,127 @@ script: |
   Which brings you to the question every powder store has to answer. What happens if it goes
   off?
 
-  Here, the answer was in the roof. According to the Park Service, the timbers inside were
-  built so that if there were ever an explosion in the building, it would collapse in on
-  itself.
+  Here, the answer was in the roof. According to the Park Service, the roof structure inside was built so that if there were ever an explosion in the building, it would implode.
 
   Not outward, into the town. Inward.
 
-  Later it was a printing house, and then a livery stable. Since nineteen-oh-two it has
+  Later it was used for storage, a printing house, and a livery stable. Since nineteen-oh-two it has
   belonged to the Colonial Dames, and today it is a museum.
 
   More than three hundred years on, it is still a building designed, if the worst came, to
   bury its own disaster.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "The squat brick building with the steep tiled roof is the Powder Magazine."
+    source: 1
+    quote: "The Powder Magazine's tile roof is typical of very early buildings, as are the 32-inch thick brick walls"
+  - says: "It went up in seventeen thirteen, and it is the oldest public building in South Carolina."
+    source: 1
+    quote: "the Powder Magazine is the oldest public building in South Carolina"
+  - says: "It went up in seventeen thirteen, and it is the oldest public building in South Carolina."
+    source: 1
+    quote: "the Powder Magazine was built in 1713 to store the city's supply of gun powder."
+  - says: "The walls are thirty-two inches thick, and when it was built they had no windows at all."
+    source: 1
+    quote: "the 32-inch thick brick walls, which originally would not have had windows."
+  - says: "Charles Town was the southernmost English settlement then, behind fortification walls, and it faced attack from the Spanish, the French, Native Americans and pirates."
+    source: 1
+    quote: "Charles Town was the southernmost English settlement in the late 1600s, and subject to attacks by the Spanish, French, Native Americans, and pirates."
+  - says: "Charles Town was the southernmost English settlement then, behind fortification walls, and it faced attack from the Spanish, the French, Native Americans and pirates."
+    source: 1
+    quote: "in addition to fortification walls constructed around the city"
+  - says: "The town's gunpowder was kept here."
+    source: 1
+    quote: "to store the city's supply of gun powder."
+  - says: "It was condemned in seventeen seventy, then filled with powder again when the Revolution came."
+    source: 1
+    quote: "this structure was condemned in 1770. Shortly thereafter, the outbreak of the Revolutionary War created a new demand for the old Magazine, and it was again used to store powder."
+  - says: "One old guide to the city says that during the British siege of seventeen eighty a shell landed close by, and after that it was given up as a magazine."
+    source: 2
+    quote: "During the British siege in. 1780, a shell fell near it, which showed its danger, and it was abandoned as a powder magazine."
+  - says: "According to the Park Service, the roof structure inside was built so that if there were ever an explosion in the building, it would implode."
+    source: 1
+    quote: "The interior roof structure was constructed so that the building would implode were any explosions to occur inside."
+  - says: "Not outward, into the town."
+    source: 1
+    quote: "The interior roof structure was constructed so that the building would implode were any explosions to occur inside."
+  - says: "Later it was used for storage, a printing house, and a livery stable."
+    source: 1
+    quote: "After 1820, the building was used for a variety of things including storage, a printing house, and livery stable."
+  - says: "Since nineteen-oh-two it has belonged to the Colonial Dames, and today it is a museum."
+    source: 1
+    quote: "Since 1902 the Powder Magazine has been owned by the South Carolina Society of Colonial Dames, which operates the property as a museum of early Charleston history."
+  - says: "More than three hundred years on, it is still a building designed, if the worst came, to bury its own disaster."
+    source: 1
+    quote: "the Powder Magazine was built in 1713"
 sources:
   - title: "Powder Magazine"
     publisher: "National Park Service, Travel Historic Charleston"
     url: https://www.nps.gov/places/powder-magazine.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Guide to Charleston, S.C., with brief history of the city (C. Irvine Walker, 1919), the Old Powder Magazine"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/20002718/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/guidetocharlesto00walk/guidetocharlesto00walk.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-built-to-fall-inward/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 91.2
+    audioBytes: 1459556
+    transcript:
+      totalS: 91.2
+      lines:
+        - text: The squat brick building with the steep tiled roof is the Powder Magazine.
+          atS: 0
+          durationS: 4.19
+        - text: It went up in seventeen thirteen, and it is the oldest public building in South Carolina.
+          atS: 4.79
+          durationS: 5.8
+        - text: Look at how solid it is.
+          atS: 11.2
+          durationS: 1.75
+        - text: The walls are thirty-two inches thick, and when it was built they had no windows at all.
+          atS: 13.34
+          durationS: 5.47
+        - text: Charles Town was the southernmost English settlement then, behind fortification walls, and it faced attack from the Spanish, the French, Native Americans and pirates.
+          atS: 19.5
+          durationS: 11.09
+        - text: The town's gunpowder was kept here.
+          atS: 31.2
+          durationS: 2.34
+        - text: It was condemned in seventeen seventy, then filled with powder again when the Revolution came.
+          atS: 34.24
+          durationS: 5.67
+        - text: One old guide to the city says that during the British siege of seventeen eighty a shell landed close by, and after that it was given up as a magazine.
+          atS: 40.86
+          durationS: 10.03
+        - text: Which brings you to the question every powder store has to answer.
+          atS: 51.58
+          durationS: 3.77
+        - text: What happens if it goes off?
+          atS: 55.87
+          durationS: 1.72
+        - text: Here, the answer was in the roof.
+          atS: 58.54
+          durationS: 2.02
+        - text: According to the Park Service, the roof structure inside was built so that if there were ever an explosion in the building, it would implode.
+          atS: 61.16
+          durationS: 7.94
+        - text: Not outward, into the town.
+          atS: 69.38
+          durationS: 1.85
+        - text: Inward.
+          atS: 71.5
+          durationS: 0.71
+        - text: Later it was used for storage, a printing house, and a livery stable.
+          atS: 72.82
+          durationS: 4.51
+        - text: Since nineteen-oh-two it has belonged to the Colonial Dames, and today it is a museum.
+          atS: 77.93
+          durationS: 5.62
+        - text: More than three hundred years on, it is still a building designed, if the worst came, to bury its own disaster.
+          atS: 84.24
+          durationS: 6.92

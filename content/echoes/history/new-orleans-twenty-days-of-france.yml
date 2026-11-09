@@ -9,7 +9,7 @@ at: { lat: 29.95739, lng: -90.06353 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 94
+durationS: 82
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -23,13 +23,13 @@ script: |
 
   In November eighteen oh three, Louisiana was still Spanish. Spain had already agreed to hand it back to France, and the city already knew that France had sold it on to the United States.
 
-  On the thirtieth of November, in the council chamber upstairs, the Spanish governor handed the colony to a French official named Laussat. Out in this square, the Spanish flag came down and the French tricolour went up.
+  On the thirtieth of November, in the council chamber of this building, the Spanish governor handed the colony to a French official named Laussat. Out in this square, the Spanish flag came down and the French tricolour went up.
 
   It stayed up for twenty days.
 
   On the twentieth of December, the American commissioners rode into the square at the head of their troops. They went up to the same building, and Laussat gave them the keys of the city. Then they all walked out onto the gallery up there to watch the flags change again.
 
-  A guard of about fifty old French soldiers had kept watch over their flag for those three weeks. As it came down, they took it in their arms, and marched away with it in silence.
+  A guard of fifty old French soldiers had kept watch over their flag for those three weeks. As it came down, they took it in their arms, and marched away with it in silence.
 
   The eagle was carved into that triangle eighteen years later. By then, nobody needed telling whose building it was.
 pronunciations:
@@ -37,31 +37,136 @@ pronunciations:
     say: kah-BEEL-doh
   - written: Laussat
     say: loh-SAH
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "In November eighteen oh three, Louisiana was still Spanish."
+    source: 1
+    quote: "On November 30, 1803, the official ceremony marking the retrocession of the colony of Louisiana from Spain to France took place in the Cabildo."
+  - says: "Spain had already agreed to hand it back to France, and the city already knew that France had sold it on to the United States."
+    source: 3
+    quote: "a secret treaty was signed at St. Ildefonso"
+  - says: "Spain had already agreed to hand it back to France, and the city already knew that France had sold it on to the United States."
+    source: 3
+    quote: "Before many days had passed the French flag was to be re- placed by the ‘‘ Stars and Stripes.’’ As this fact was already known"
+  - says: "On the thirtieth of November, in the council chamber of this building, the Spanish governor handed the colony to a French official named Laussat."
+    source: 3
+    quote: "On the 30th of November, 1803, Laussat proceeded to the City Hall (the old Cabildo)"
+  - says: "On the thirtieth of November, in the council chamber of this building, the Spanish governor handed the colony to a French official named Laussat."
+    source: 3
+    quote: "where he met Governor Salcedo and Casa Calvo, who had been appointed to transfer Louisiana to France. The three gentlemen solemnly took their seats in the council chamber."
+  - says: "Out in this square, the Spanish flag came down and the French tricolour went up."
+    source: 3
+    quote: "It now descended from its staff amid salutes of artillery and the flag of France rose in its place."
+  - says: "It stayed up for twenty days."
+    source: 1
+    quote: "Twenty days later, the French sold the colony to the United States."
+  - says: "On the twentieth of December, the American commissioners rode into the square at the head of their troops."
+    source: 2
+    quote: "on December 20th, was consummated what the Loui- siamlans must most devoutly have hoped would be their last change of government."
+  - says: "On the twentieth of December, the American commissioners rode into the square at the head of their troops."
+    source: 2
+    quote: "General Wilkinson and Governor Claiborne, the American commissioners, on horseback at the head"
+  - says: "On the twentieth of December, the American commissioners rode into the square at the head of their troops."
+    source: 5
+    quote: "Lower Louisiana was transferred in New Orleans in December 1803"
+  - says: "They went up to the same building, and Laussat gave them the keys of the city."
+    source: 2
+    quote: "Laussat delivered the keys of the city to Clai- borne"
+  - says: "A guard of fifty old French soldiers had kept watch over their flag for those three weeks."
+    source: 2
+    quote: "a band of fifty old soldiers formed themselves into a guard of honour, which was to act as a kind of death watch to their national colours."
+  - says: "A guard of fifty old French soldiers had kept watch over their flag for those three weeks."
+    source: 2
+    quote: "The legal formalities of three weeks before were re- peated."
+  - says: "As it came down, they took it in their arms, and marched away with it in silence."
+    source: 2
+    quote: "received in their arms the Tricolor as it descended, and while the Americans were rending the air with their shouts, they marched silently away"
+  - says: "The eagle was carved into that triangle eighteen years later."
+    source: 1
+    quote: "Within the tympanum is a high-relief sculpture of American emblems executed in 1821 by Pietro Cardelli."
+  - says: "The eagle was carved into that triangle eighteen years later."
+    source: 4
+    quote: "that of the Cabildo is ornamented with the American Eagle"
 sources:
   - title: "The Cabildo, 711 Chartres Street, New Orleans (HABS LA-18-4), written historical and descriptive data"
     publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
-    url: https://www.loc.gov/item/la0007/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0007/data/la0007data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "New Orleans, the place and the people (1895)"
     publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/01008773/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansplacep00kin/neworleansplacep00kin.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "A history of Louisiana (1905)"
     publisher: "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/34036146/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/historyoflouisia00king/historyoflouisia00king.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data"
     publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
-    url: https://www.loc.gov/item/la0008/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0008/data/la0008data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Louisiana Purchase Transfer Document"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/louisiana-purchase-transfer-document.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-twenty-days-of-france/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.5
+    audioBytes: 1304911
+    transcript:
+      totalS: 81.5
+      lines:
+        - text: Face the Cabildo, the arcaded building to the left of the cathedral.
+          atS: 0
+          durationS: 4.43
+        - text: Look up at the triangle above its centre arches.
+          atS: 4.68
+          durationS: 3.01
+        - text: There is an eagle carved in it.
+          atS: 7.74
+          durationS: 1.9
+        - text: That eagle was not there yet on the day that matters.
+          atS: 9.97
+          durationS: 3.17
+        - text: In November eighteen oh three, Louisiana was still Spanish.
+          atS: 13.58
+          durationS: 3.95
+        - text: Spain had already agreed to hand it back to France, and the city already knew that France had sold it on to the United States.
+          atS: 18.04
+          durationS: 7.74
+        - text: On the thirtieth of November, in the council chamber of this building, the Spanish governor handed the colony to a French official named Laussat.
+          atS: 26.6
+          durationS: 8.95
+        - text: Out in this square, the Spanish flag came down and the French tricolour went up.
+          atS: 36.25
+          durationS: 5.22
+        - text: It stayed up for twenty days.
+          atS: 42.17
+          durationS: 2.11
+        - text: On the twentieth of December, the American commissioners rode into the square at the head of their troops.
+          atS: 44.98
+          durationS: 5.82
+        - text: They went up to the same building, and Laussat gave them the keys of the city.
+          atS: 51.12
+          durationS: 4.63
+        - text: Then they all walked out onto the gallery up there to watch the flags change again.
+          atS: 56.7
+          durationS: 4.46
+        - text: A guard of fifty old French soldiers had kept watch over their flag for those three weeks.
+          atS: 61.86
+          durationS: 5.36
+        - text: As it came down, they took it in their arms, and marched away with it in silence.
+          atS: 68.03
+          durationS: 4.96
+        - text: The eagle was carved into that triangle eighteen years later.
+          atS: 73.94
+          durationS: 3.67
+        - text: By then, nobody needed telling whose building it was.
+          atS: 78.22
+          durationS: 3.29

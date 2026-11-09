@@ -81,6 +81,15 @@ and the page you were on. Your email address only if you type it in, so that we 
 **What is not:** where you are, what you have found, or anything else about you. It goes to
 the same service as error reports, Sentry, and is read by us to fix and improve the app.
 
+### Stories and places you suggest
+**Only when you press Send**, in **Settings → Know a story? → Suggest a story or a place**.
+**What is sent:** what you wrote, the place you named, which kind of suggestion it is and the
+version of the app. **Where you are standing only if you tick "add my location"**, read from
+your phone at that moment. Your email address only if you type it in, so that we can credit
+you or reply. It goes to the same service as feedback, Sentry, and is read by us to research
+new stories. We check every story ourselves before anyone hears it; nothing you send is
+published as you wrote it.
+
 ### When you buy a pass
 **Payments are handled by Stripe.** You type your card details and email address on
 Stripe's own checkout page; we never see or store your card number. Stripe's privacy policy

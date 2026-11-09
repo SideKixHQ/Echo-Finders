@@ -9,12 +9,11 @@ at: { lat: 29.88543, lng: -81.28852 }
 triggerRadiusKm: 0.06
 category: legend
 format: short
-durationS: 103
+durationS: 73
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published legend. The script says out loud that the haunting is reported, not proven;
-  no supernatural claim is established.
+  A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -23,49 +22,136 @@ teaser: "Look up at the lighthouse."
 script: |
   Look up at the lighthouse.
 
-  Before the tower was completed, this was a construction site where children sometimes
-  played.
+  Before the tower was completed, this was a construction site where children sometimes played.
 
-  In July 1873, children rode a cart used to transport building materials.
+  In July 1873, children rode a cart used to carry building supplies down to the water.
 
-  The cart overturned into the water.
+  The board that should have stopped it at the end of the rail was not in place, and the cart flipped into the water.
 
-  Three girls drowned, including two daughters of construction superintendent Hezekiah
-  Pittee. A younger sister survived.
+  Three girls drowned, including two daughters of construction superintendent Hezekiah Pittee. A younger sister, Carrie, survived.
 
   The museum documents that tragedy.
 
   The ghost stories came afterward.
 
-  Its published accounts describe reports of unexplained footsteps and a little girl
-  appearing in the keeper’s house.
+  Its published accounts describe reports of footsteps upstairs with nobody there, and a little girl appearing beside a bed in the keepers' house.
 
   Some people connect those stories to the children who died.
 
-  That connection is belief, not an established fact.
+  That connection is belief, not an established fact. It is a legend, and the museum itself says it cannot explain what is reported.
 
   Pause beneath the tower.
 
   A lighthouse is built to guide people away from danger.
 
-  Here, a childhood accident became part of the place’s remembered history, then part of
-  its folklore.
+  Here, a childhood accident became part of the place's remembered history, then part of its folklore.
 
   The deaths were real.
 
   The stories of children still moving through the property remain unverified.
 
   Both deserve to be told with care.
-editorial: draft
+
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Before the tower was completed, this was a construction site where children sometimes played."
+    source: 1
+    quote: "the Pittee children turned the construction site into a playground inviting the children of the workers into their fun"
+  - says: "In July 1873, children rode a cart used to carry building supplies down to the water."
+    source: 1
+    quote: "On July 10, 1873, the three Pittee sisters, Mary (15), Eliza (13), and Carrie (4), along with an unknown African-American girl (10), whose father may have worked on the site, were riding in the cart as normal."
+  - says: "The board that should have stopped it at the end of the rail was not in place, and the cart flipped into the water."
+    source: 1
+    quote: "The wooden board that stopped the cart from going into the water was not in place. The cart carrying the girls flipped into the water, trapping the girls underneath."
+  - says: "Three girls drowned, including two daughters of construction superintendent Hezekiah Pittee."
+    source: 2
+    quote: "During Pittee’s time here as Superintendent, he lost two daughters in an accidental drowning when the girls became trapped under a supply cart."
+  - says: "A younger sister, Carrie, survived."
+    source: 1
+    quote: "three of the four girls had drowned; the only survivor was the youngest, Carrie."
+  - says: "Its published accounts describe reports of footsteps upstairs with nobody there, and a little girl appearing beside a bed in the keepers' house."
+    source: 1
+    quote: "reported hearing footsteps upstairs. He went to investigate but no one was up there."
+  - says: "a little girl appearing beside a bed"
+    source: 1
+    quote: "He tells the story of waking up one night with a small girl standing by his bed."
+  - says: "Some people connect those stories to the children who died."
+    source: 1
+    quote: "strange occurrences have been repeatedly attributed to the spirits of the girls"
+  - says: "the museum itself says it cannot explain what is reported"
+    source: 1
+    quote: "Obviously, we cannot explain the events that are reported to us on our tours"
 sources:
-  - title: "Ghost stories the pittee girls"
+  - title: "Ghost Stories: The Pittee Girls"
     publisher: "St. Augustine Lighthouse and Maritime Museum"
     url: https://www.staugustinelighthouse.org/2020/03/02/ghost-stories-the-pittee-girls/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
-  - title: "Pittee descendants visit the museum"
+  - title: "Pittee Descendants Visit the Museum"
     publisher: "St. Augustine Lighthouse and Maritime Museum"
     url: https://www.staugustinelighthouse.org/2023/03/19/pittee-descendants-visit-the-museum/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-children-at-the-lighthouse/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 73.4
+    audioBytes: 1175762
+    transcript:
+      totalS: 73.4
+      lines:
+        - text: Look up at the lighthouse.
+          atS: 0
+          durationS: 1.33
+        - text: Before the tower was completed, this was a construction site where children sometimes played.
+          atS: 1.94
+          durationS: 5.14
+        - text: In July 1873, children rode a cart used to carry building supplies down to the water.
+          atS: 7.69
+          durationS: 5.89
+        - text: The board that should have stopped it at the end of the rail was not in place, and the cart flipped into the water.
+          atS: 14.01
+          durationS: 5.56
+        - text: Three girls drowned, including two daughters of construction superintendent Hezekiah Pittee.
+          atS: 20.02
+          durationS: 5.64
+        - text: A younger sister, Carrie, survived.
+          atS: 26.04
+          durationS: 2.24
+        - text: The museum documents that tragedy.
+          atS: 28.66
+          durationS: 2
+        - text: The ghost stories came afterward.
+          atS: 30.99
+          durationS: 1.66
+        - text: Its published accounts describe reports of footsteps upstairs with nobody there, and a little girl appearing beside a bed in the keepers' house.
+          atS: 32.86
+          durationS: 7.14
+        - text: Some people connect those stories to the children who died.
+          atS: 40.32
+          durationS: 3.14
+        - text: That connection is belief, not an established fact.
+          atS: 43.9
+          durationS: 3.37
+        - text: It is a legend, and the museum itself says it cannot explain what is reported.
+          atS: 47.7
+          durationS: 4.93
+        - text: Pause beneath the tower.
+          atS: 53.59
+          durationS: 1.56
+        - text: A lighthouse is built to guide people away from danger.
+          atS: 55.47
+          durationS: 3.09
+        - text: Here, a childhood accident became part of the place's remembered history, then part of its folklore.
+          atS: 59
+          durationS: 5.78
+        - text: The deaths were real.
+          atS: 65.29
+          durationS: 1.23
+        - text: The stories of children still moving through the property remain unverified.
+          atS: 66.8
+          durationS: 4.05
+        - text: Both deserve to be told with care.
+          atS: 71.24
+          durationS: 2.18

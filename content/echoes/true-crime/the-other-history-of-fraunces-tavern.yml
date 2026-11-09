@@ -9,7 +9,7 @@ at: { lat: 40.70330, lng: -74.01145 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 101
+durationS: 68
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -22,12 +22,12 @@ script: |
 
   But its history includes a much more recent act of violence.
 
-  On January 24, 1975, a bomb exploded in the building at 101 Broad Street, part of the
-  Fraunces Tavern complex.
+  On January 24, 1975, at lunchtime, a bomb exploded in the building at 101 Broad Street,
+  part of the Fraunces Tavern complex.
 
-  Four people were killed.
+  Four people were killed, and dozens were injured.
 
-  The organization known as FALN claimed responsibility.
+  The organization known as the FALN claimed responsibility.
 
   That claim belongs to the historical record. It does not establish the identity of every
   person involved in preparing or placing the bomb.
@@ -35,7 +35,7 @@ script: |
   Look at the buildings together.
 
   It is easy to imagine a historic place as belonging to one period: colonial rooms, old
-  paintings, a famous farewell.
+  paintings, Washington's farewell to his officers in 1783.
 
   People continued using these buildings long after that period ended.
 
@@ -47,27 +47,102 @@ script: |
   people whose lives ended almost two centuries later.
 
   Both histories belong to it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: unsolved
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-09"
+  reviewedAt: "2026-11-09"
   contentWarning: "This echo describes a bombing that killed four people. No injuries are described."
+claims:
+  - says: "This block is often associated with the American Revolution."
+    source: 1
+    quote: "Fraunces Tavern was the epicenter of Patriot activity in New York City during the American Revolutionary era."
+  - says: "On January 24, 1975, at lunchtime, a bomb exploded in the building at 101 Broad Street, part of the Fraunces Tavern complex."
+    source: 1
+    quote: "On January 24 a bomb exploded in the 101 Broad Street building of the Fraunces Tavern five building complex, killing four people."
+  - says: "part of the Fraunces Tavern complex"
+    source: 3
+    quote: "The five buildings together form the Fraunces Tavern Complex recorded herein."
+  - says: "at lunchtime"
+    source: 2
+    quote: "On January 24, 1975, a lunch-time bombing of an annex of the Fraunces Tavern"
+  - says: "Four people were killed, and dozens were injured."
+    source: 2
+    quote: "killed 4 persons and injured 53"
+  - says: "The organization known as the FALN claimed responsibility."
+    source: 1
+    quote: "The “Fuerzas Armadas de Liberacion Nacional Puertorriquera” claimed responsibility for the bombing."
+  - says: "Washington's farewell to his officers in 1783"
+    source: 1
+    quote: "On December 4, 1783, nine days after the last British soldiers left American soil, George Washington invited the officers of the Continental Army to join him in the Long Room of Fraunces Tavern to bid them farewell."
+  - says: "Standing here, you are beside a place associated with the founding of a country and with people whose lives ended almost two centuries later."
+    source: 1
+    quote: "1975 On January 24 a bomb exploded in the 101 Broad Street building"
 sources:
   - title: "History"
     publisher: "Fraunces Tavern Museum"
     url: https://frauncestavernmuseum.squarespace.com/history
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: fair-use-facts
-  - title: "Buildings of the Department of State"
+  - title: "Buildings of the Department of State: Fraunces Tavern"
     publisher: "U.S. Department of State, Office of the Historian"
     url: https://history.state.gov/departmenthistory/buildings/section11
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: public-domain
-  - title: "Fraunces Tavern Museum Complex (HABS)"
-    publisher: "Library of Congress"
+  - title: "Fraunces Tavern Museum Complex, 54-58 Pearl Street, 101-103 Broad Street & 24-26 Water Street (HABS NY-6321)"
+    publisher: "Historic American Buildings Survey, Library of Congress"
     url: https://www.loc.gov/item/ny1654/
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-other-history-of-fraunces-tavern/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 67.9
+    audioBytes: 1087572
+    transcript:
+      totalS: 67.9
+      lines:
+        - text: This block is often associated with the American Revolution.
+          atS: 0
+          durationS: 3.26
+        - text: But its history includes a much more recent act of violence.
+          atS: 3.7
+          durationS: 3.47
+        - text: On January 24, 1975, at lunchtime, a bomb exploded in the building at 101 Broad Street, part of the Fraunces Tavern complex.
+          atS: 7.62
+          durationS: 9.98
+        - text: Four people were killed, and dozens were injured.
+          atS: 18.04
+          durationS: 2.65
+        - text: The organization known as the FALN claimed responsibility.
+          atS: 21.2
+          durationS: 4.12
+        - text: That claim belongs to the historical record.
+          atS: 25.7
+          durationS: 2.62
+        - text: It does not establish the identity of every person involved in preparing or placing the bomb.
+          atS: 28.61
+          durationS: 5.13
+        - text: Look at the buildings together.
+          atS: 34.34
+          durationS: 1.54
+        - text: "It is easy to imagine a historic place as belonging to one period: colonial rooms, old paintings, Washington's farewell to his officers in 1783."
+          atS: 36.21
+          durationS: 10.67
+        - text: People continued using these buildings long after that period ended.
+          atS: 47.32
+          durationS: 3.88
+        - text: They came here to work, meet, and eat.
+          atS: 51.58
+          durationS: 2.54
+        - text: The bombing became another chapter in the life of this block.
+          atS: 54.57
+          durationS: 3.19
+        - text: Standing here, you are beside a place associated with the founding of a country and with people whose lives ended almost two centuries later.
+          atS: 58.14
+          durationS: 7.78
+        - text: Both histories belong to it.
+          atS: 66.16
+          durationS: 1.73

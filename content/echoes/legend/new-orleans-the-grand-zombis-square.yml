@@ -1,0 +1,157 @@
+# Drafted by Claude Code (2026-11-09) for the New Orleans ghost legends.
+# Listening spot: Public sidewalk on North Rampart Street at the main gateway of Louis Armstrong Park, looking in toward Congo Square. Kept outside the square so it does not overlap new-orleans-the-noise-on-the-common, which plays inside.
+# Position: On the North Rampart Street frontage of the park, about 150 m from the Wikidata Q1105886 Congo Square point (29.960833, -90.068333) and about 200 m from the noise-on-the-common point (low confidence; check on site).
+id: new-orleans-the-grand-zombis-square
+title: "The Grand Zombi's Square"
+summary: "Old guides said Congo Square was the favorite haunt of the Voudou serpent spirit, and that offerings still turned up there at midnight."
+place: "Louis Armstrong Park gateway, North Rampart Street, facing Congo Square, New Orleans, Louisiana"
+at: { lat: 29.95985, lng: -90.06735 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 77
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The Sunday gatherings in Congo Square are documented; the midnight rites, the Grand Zombi's haunt and the offerings are told by the 1904 Picayune guide as superstition and legend, with no witness named. The script says aloud it is legend and makes no supernatural claim.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [new-orleans, treme, congo-square, voodoo, ghosts, legend]
+teaser: "The old guides said the square had a spirit of its own."
+script: |
+  Look through the gateway, toward the open square inside the park. Congo Square.
+
+  On Sundays, enslaved people gathered there to dance and drum. That part is history. But by the time the old guidebooks were written, the square had another story laid over it. Treat that as legend.
+
+  A city guide of nineteen-oh-four said that around this square cling wild superstitions, echoes of weird music, and visions of ghostly figures dancing. It said the Voudous believed the square was a charmed spot, which their serpent spirit, the Grand Zombi, had chosen for his favorite haunt.
+
+  Long after the dancing stopped, the guide went on, someone would still now and then leave an offering in the middle of the square at the midnight hour. A roasted bird stuck all over with needles and pins, with coins laid round the dish.
+
+  The city tried to rename the place. For a while the city directory called it Beauregard Square. A newspaper story of eighteen ninety-eight said it did not do much good. Black New Orleanians, it said, still called it Congo Square.
+
+  None of the guides names anyone who saw a ghost here. The spirit is a legend. The name stuck.
+pronunciations:
+  - written: Grand Zombi
+    say: grahn zom-BEE
+  - written: Voudous
+    say: VOO-dooz
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Congo Square."
+    source: 2
+    quote: "Later, the area became known as Congo Square"
+  - says: "On Sundays, enslaved people gathered there to dance and drum."
+    source: 2
+    quote: "By the mid-18th century, slaves gathered socially on Sundays at a special market outside the city's rampart. Later, the area became known as Congo Square, famous for its African dances"
+  - says: "A city guide of nineteen-oh-four said that around this square cling wild superstitions, echoes of weird music, and visions of ghostly figures dancing."
+    source: 1
+    quote: "around which cling wild superstitions and legends of fetich worship, echoes of weird musie and visions of ghostly figures dancing the wild “Congo” of their native plains"
+  - says: "A city guide of nineteen-oh-four said that around this square cling wild superstitions, echoes of weird music, and visions of ghostly figures dancing."
+    source: 1
+    quote: "Copyright 1904 by"
+  - says: "It said the Voudous believed the square was a charmed spot, which their serpent spirit, the Grand Zombi, had chosen for his favorite haunt."
+    source: 1
+    quote: "The Voudoos believed Congo. Square to be a charmed spot, which the Grand Zombi had chosen for his favorite haunt"
+  - says: "It said the Voudous believed the square was a charmed spot, which their serpent spirit, the Grand Zombi, had chosen for his favorite haunt."
+    source: 1
+    quote: "The “Grand Zombi,’” or serpent, was the peculiar object of worship"
+  - says: "A roasted bird stuck all over with needles and pins, with coins laid round the dish."
+    source: 1
+    quote: "occasionally some fowl] or bird finely roasted with needles and pins stuck all over it, and dimes and nickles arranged around the dish is placed in the middle of the square at the midnight hour, as an offering to the voudoo spirit"
+  - says: "For a while the city directory called it Beauregard Square."
+    source: 3
+    quote: "the city authorities changed the name of the open place to Beauregard square, but it didn’t do much good. They can call it that in the directory and paint the name at the corners"
+  - says: "For a while the city directory called it Beauregard Square."
+    source: 4
+    quote: "This is known as Beauregard square. It formerly bere the name cf Congo Square"
+  - says: "A newspaper story of eighteen ninety-eight said it did not do much good."
+    source: 3
+    quote: "but it didn’t do much good."
+  - says: "Black New Orleanians, it said, still called it Congo Square."
+    source: 3
+    quote: "but the negroes call it Congo square."
+  - says: "None of the guides names anyone who saw a ghost here."
+    source: 1
+    quote: "visions of ghostly figures dancing the wild “Congo” of their native plains"
+sources:
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Congo Square and the Voudoos"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Jazz Origins in New Orleans"
+    publisher: "National Park Service, New Orleans Jazz National Historical Park"
+    url: https://www.nps.gov/jazz/learn/historyculture/history_early.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "A Voudoo Queen's Grave (from the New York Sun), The morning news, Savannah, 26 June 1898, p. 20"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn86063034/1898-06-26/ed-1/?sp=20
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), Beauregard Square"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse/picayunesguideto00unse.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-orleans-the-grand-zombis-square/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 76.9
+    audioBytes: 1231350
+    transcript:
+      totalS: 76.9
+      lines:
+        - text: Look through the gateway, toward the open square inside the park.
+          atS: 0
+          durationS: 3.73
+        - text: Congo Square.
+          atS: 4.17
+          durationS: 1.24
+        - text: On Sundays, enslaved people gathered there to dance and drum.
+          atS: 6.01
+          durationS: 4.1
+        - text: That part is history.
+          atS: 10.62
+          durationS: 1.87
+        - text: But by the time the old guidebooks were written, the square had another story laid over it.
+          atS: 13.1
+          durationS: 5.05
+        - text: Treat that as legend.
+          atS: 18.96
+          durationS: 1.63
+        - text: A city guide of nineteen-oh-four said that around this square cling wild superstitions, echoes of weird music, and visions of ghostly figures dancing.
+          atS: 21.54
+          durationS: 9.91
+        - text: It said the Voudous believed the square was a charmed spot, which their serpent spirit, the Grand Zombi, had chosen for his favorite haunt.
+          atS: 32.15
+          durationS: 8.4
+        - text: Long after the dancing stopped, the guide went on, someone would still now and then leave an offering in the middle of the square at the midnight hour.
+          atS: 41.25
+          durationS: 8.14
+        - text: A roasted bird stuck all over with needles and pins, with coins laid round the dish.
+          atS: 49.99
+          durationS: 5.17
+        - text: The city tried to rename the place.
+          atS: 55.6
+          durationS: 2.03
+        - text: For a while the city directory called it Beauregard Square.
+          atS: 58.07
+          durationS: 3.73
+        - text: A newspaper story of eighteen ninety-eight said it did not do much good.
+          atS: 62.4
+          durationS: 4.25
+        - text: Black New Orleanians, it said, still called it Congo Square.
+          atS: 67.04
+          durationS: 3.77
+        - text: None of the guides names anyone who saw a ghost here.
+          atS: 71.09
+          durationS: 2.83
+        - text: The spirit is a legend.
+          atS: 74.3
+          durationS: 1.37
+        - text: The name stuck.
+          atS: 75.88
+          durationS: 1.02

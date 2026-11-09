@@ -9,7 +9,7 @@ at: { lat: 32.77170, lng: -79.92772 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 78
+durationS: 77
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,18 +36,134 @@ script: |
   added a third tier to the piazzas, and put his family's arms on the parapet, on the
   front that faces the water.
 
-  The survey ended up filing the house under three names. Edmondston, Alston, and a later
-  family's. Only one of them is written on the roof.
+  The survey ended up filing the house under three names. Edmondston, Alston, and Middleton-Smith. Only one of them is written on the roof.
 pronunciations:
   - written: Edmondston
     say: ED-mund-stun
   - written: Alston
     say: AWL-stun
-editorial: draft
+editorial: approved
 factCheck: single-source
+claims:
+  - says: "Turn your back on the harbour and look across the street at number twenty-one."
+    source: 1
+    quote: "Location: 21 East Battery, Charleston"
+  - says: "Turn your back on the harbour and look across the street at number twenty-one."
+    source: 1
+    quote: "magnificent view overlooking harbor and High Battery. House faces east."
+  - says: "A big, three-storey house with deep piazzas down the south side."
+    source: 1
+    quote: "This large three-story brick house"
+  - says: "A big, three-storey house with deep piazzas down the south side."
+    source: 1
+    quote: "The wide piazzas to the south add even greater width to the house."
+  - says: "There is a coat of arms up there."
+    source: 1
+    quote: "the roof is partly hidden by a parapet, which bears on it the Alston coat of arms."
+  - says: "When the federal building survey wrote this house up, it called that an unusual feature."
+    source: 1
+    quote: "This is rather an unusual feature"
+  - says: "As far as anyone knew, it was the only house in the city with one."
+    source: 1
+    quote: "as far as is known, is the only house in the city which ha.s it."
+  - says: "The house was standing by eighteen twenty-nine."
+    source: 1
+    quote: "Date of erection: By 1829."
+  - says: "It was built by Charles Edmondston, and it looks straight out over the harbour."
+    source: 1
+    quote: "Charles Edmonston, original owner."
+  - says: "It was built by Charles Edmondston, and it looks straight out over the harbour."
+    source: 1
+    quote: "Edmonston 1 s name is sometimes found spelled Edmondston."
+  - says: "It was built by Charles Edmondston, and it looks straight out over the harbour."
+    source: 1
+    quote: "magnificent view overlooking harbor and High Battery."
+  - says: "In eighteen thirty-eight it was sold."
+    source: 1
+    quote: "The house and lot were sold in 1838 by Edmondston's assignees to Charles Alston for $15,500."
+  - says: "Not by Edmondston, but by the assignees handling his firm's affairs."
+    source: 1
+    quote: "Account book, Assignees of Charles Edmondston & Co."
+  - says: "The price was fifteen thousand five hundred dollars."
+    source: 1
+    quote: "to Charles Alston for $15,500."
+  - says: "The buyer was Charles Alston."
+    source: 1
+    quote: "sold in 1838 by Edmondston's assignees to Charles Alston"
+  - says: "He redecorated the whole house in the Greek Revival style, added a third tier to the piazzas, and put his family's arms on the parapet, on the front that faces the water."
+    source: 1
+    quote: "Charles Alston redecorated the house in Greek Revival style, added a third story to the piazzas and placed his arms on a parapet on the east front."
+  - says: "The survey ended up filing the house under three names."
+    source: 1
+    quote: "Charles Edmonston House HABS No. SC-54 (Alston House; Middleton-Smith House)"
+  - says: "Edmondston, Alston, and Middleton-Smith."
+    source: 1
+    quote: "Charles Edmonston House HABS No. SC-54 (Alston House; Middleton-Smith House)"
+  - says: "Only one of them is written on the roof."
+    source: 1
+    quote: "which bears on it the Alston coat of arms."
 sources:
   - title: "Charles Edmonston House, 21 East Battery Street, Charleston (HABS SC-54)"
     publisher: "Library of Congress, Historic American Buildings Survey"
-    url: https://www.loc.gov/item/sc0045/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc0000/sc0045/data/sc0045data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-whose-arms-on-the-roof/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76.5
+    audioBytes: 1224663
+    transcript:
+      totalS: 76.5
+      lines:
+        - text: Turn your back on the harbour and look across the street at number twenty-one.
+          atS: 0
+          durationS: 4.54
+        - text: A big, three-storey house with deep piazzas down the south side.
+          atS: 4.92
+          durationS: 4.41
+        - text: Now look at the very top of the front, at the low wall that hides the roof.
+          atS: 9.85
+          durationS: 4.81
+        - text: There is a coat of arms up there.
+          atS: 15.09
+          durationS: 1.98
+        - text: When the federal building survey wrote this house up, it called that an unusual feature.
+          atS: 17.59
+          durationS: 5.14
+        - text: As far as anyone knew, it was the only house in the city with one.
+          atS: 23.06
+          durationS: 4.42
+        - text: The arms are not the builder's.
+          atS: 27.92
+          durationS: 2.05
+        - text: The house was standing by eighteen twenty-nine.
+          atS: 30.36
+          durationS: 3.02
+        - text: It was built by Charles Edmondston, and it looks straight out over the harbour.
+          atS: 34.08
+          durationS: 4.89
+        - text: In eighteen thirty-eight it was sold.
+          atS: 39.4
+          durationS: 2.47
+        - text: Not by Edmondston, but by the assignees handling his firm's affairs.
+          atS: 42.39
+          durationS: 4.8
+        - text: The price was fifteen thousand five hundred dollars.
+          atS: 47.62
+          durationS: 3.13
+        - text: The buyer was Charles Alston.
+          atS: 51.36
+          durationS: 2.81
+        - text: He redecorated the whole house in the Greek Revival style, added a third tier to the piazzas, and put his family's arms on the parapet, on the front that faces the water.
+          atS: 54.78
+          durationS: 10.46
+        - text: The survey ended up filing the house under three names.
+          atS: 65.84
+          durationS: 3.41
+        - text: Edmondston, Alston, and Middleton-Smith.
+          atS: 69.64
+          durationS: 4.01
+        - text: Only one of them is written on the roof.
+          atS: 74.25
+          durationS: 2.24

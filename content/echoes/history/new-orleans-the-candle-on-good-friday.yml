@@ -9,7 +9,7 @@ at: { lat: 29.95747, lng: -90.06403 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 96
+durationS: 99
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -21,7 +21,7 @@ script: |
 
   Keep them in mind.
 
-  On Good Friday in seventeen eighty-eight, candles were burning in the private chapel of the colony's military treasurer, a couple of blocks up Chartres Street from here. The story is that one fell against the lace on the altar.
+  On Good Friday in seventeen eighty-eight, candles were burning in the private chapel of the colony's military treasurer, a block up Chartres Street from here, near St. Louis Street. The story is that one fell against the lace on the altar.
 
   The fire went from house to house.
 
@@ -33,7 +33,7 @@ script: |
 
   So here is the thing about the French Quarter. Much of the old city you walk through was built after those fires, while Spain ruled it. A New Orleans writer in the eighteen nineties put it plainly. An ill-built French town went into the ashes. A stately Spanish city came out.
 
-  Now look again at the wall beside you. When the Cabildo went up on this spot, part of the burned guardhouse wall was still standing. The builders kept it, and laid out these windows to its old rhythm.
+  Now look again at the wall beside you. When the Cabildo went up on this spot, the builders worked what was left of the burned guardhouse walls into it. In the nineteen sixties, restorers found its remains inside these walls, and put the windows along this side back to their original plan.
 
   The town hall is Spanish. Part of the wall it stands on is older than the fire.
 pronunciations:
@@ -41,26 +41,155 @@ pronunciations:
     say: kah-BEEL-doh
   - written: Chartres
     say: CHAR-ters
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "You are standing beside the side wall of the Cabildo."
+    source: 3
+    quote: "The Cabildo is located on the corner of Chartres Street and St. Peter Street."
+  - says: "On Good Friday in seventeen eighty-eight, candles were burning in the private chapel of the colony's military treasurer, a block up Chartres Street from here, near St. Louis Street."
+    source: 1
+    quote: "occurred in New Orleans on Good Friday, 1788. It started on Chartres street, near St. Louis, in the chapel of the house of Don Vincento José Nuiiez, the military treasurer of the colony"
+  - says: "The story is that one fell against the lace on the altar."
+    source: 1
+    quote: "from a lighted candle falling against the lace draperies of the altar."
+  - says: "A correspondent for a European newspaper reported something else."
+    source: 1
+    quote: "the Gazette des Deux-Ponts of August, 1798, which curiously, and fortunately enough for us, had a correspondent on the spot"
+  - says: "He said the priests would not allow the alarm to be rung, because on Good Friday every bell must be silent."
+    source: 1
+    quote: "the fire taking place on Good Friday, the priests refused to allow the alarm to be rung, because on that day all bells must be dumb."
+  - says: "By the end, eight hundred and fifty-six houses were gone."
+    source: 2
+    quote: "eight hundred and fifty-six houses, the Cathedral, Convent of the Capuchins, Town Hall, the arsenal and all its contents, were consumed."
+  - says: "So here is the thing about the French Quarter."
+    source: 4
+    quote: "the rebuilding reflected some Spanish influence"
+  - says: "Much of the old city you walk through was built after those fires, while Spain ruled it."
+    source: 4
+    quote: "Under the Spanish, growth and prosperity increased as the city’s promise as a great world port came to be realized. During this period, 1788 to 1794, two great fires swept the city, and the rebuilding reflected some Spanish influence."
+  - says: "Much of the old city you walk through was built after those fires, while Spain ruled it."
+    source: 4
+    quote: "The Creole townhouse was the most common of housing units when the city was rebuilt after the fires of 1788 and 1794."
+  - says: "A New Orleans writer in the eighteen nineties put it plainly."
+    source: 1
+    quote: "Copyricut, 1895, By MACMILLAN AND CO."
+  - says: "An ill-built French town went into the ashes."
+    source: 1
+    quote: "What lay in the ashes was, at best, but an irregular, ill-built, French town."
+  - says: "A stately Spanish city came out."
+    source: 1
+    quote: "What arose from them was a stately Spanish city"
+  - says: "When the Cabildo went up on this spot, the builders worked what was left of the burned guardhouse walls into it."
+    source: 3
+    quote: "It is known that surviving portions of the walls of the fire damaged Corps de Garde building were incorporated into the Cabildo."
+  - says: "In the nineteen sixties, restorers found its remains inside these walls, and put the windows along this side back to their original plan."
+    source: 3
+    quote: "The new work was begun in 1966"
+  - says: "In the nineteen sixties, restorers found its remains inside these walls, and put the windows along this side back to their original plan."
+    source: 3
+    quote: "This restoration was drawn from records and from remains of the building discovered in the walls of the Cabildo. In addition, the original floor of bricks laid on their sides was revealed, and the original plan of the fenestration along St. Peter Street was restored."
+  - says: "The town hall is Spanish."
+    source: 3
+    quote: "the most significant surviving monument of the Spanish rule in Louisiana"
 sources:
   - title: "New Orleans, the place and the people (1895)"
     publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/01008773/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansplacep00kin/neworleansplacep00kin.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "A history of Louisiana (1905)"
     publisher: "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress"
-    url: https://www.loc.gov/item/34036146/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/historyoflouisia00king/historyoflouisia00king.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Cabildo, 711 Chartres Street, New Orleans (HABS LA-18-4), written historical and descriptive data"
     publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
-    url: https://www.loc.gov/item/la0007/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0007/data/la0007data.pdf
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Vieux Carré: A Creole Neighborhood in New Orleans (Teaching with Historic Places)"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-candle-on-good-friday/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 98.5
+    audioBytes: 1576167
+    transcript:
+      totalS: 98.5
+      lines:
+        - text: You are standing beside the side wall of the Cabildo.
+          atS: 0
+          durationS: 3.61
+        - text: Look at the row of arched windows along the ground floor.
+          atS: 4.05
+          durationS: 3.17
+        - text: Keep them in mind.
+          atS: 7.73
+          durationS: 1.32
+        - text: On Good Friday in seventeen eighty-eight, candles were burning in the private chapel of the colony's military treasurer, a block up Chartres Street from here, near St.
+          atS: 10.17
+          durationS: 10.26
+        - text: Louis Street.
+          atS: 20.46
+          durationS: 0.93
+        - text: The story is that one fell against the lace on the altar.
+          atS: 21.99
+          durationS: 3.25
+        - text: The fire went from house to house.
+          atS: 25.75
+          durationS: 2.21
+        - text: A correspondent for a European newspaper reported something else.
+          atS: 28.65
+          durationS: 4.2
+        - text: He said the priests would not allow the alarm to be rung, because on Good Friday every bell must be silent.
+          atS: 33.55
+          durationS: 6.37
+        - text: By the end, eight hundred and fifty-six houses were gone.
+          atS: 40.53
+          durationS: 3.99
+        - text: The church.
+          atS: 44.97
+          durationS: 0.96
+        - text: The town hall.
+          atS: 46.1
+          durationS: 1.11
+        - text: The guardhouse that stood right here.
+          atS: 47.43
+          durationS: 2.36
+        - text: A few years later, another fire took much of what had been rebuilt.
+          atS: 50.39
+          durationS: 4.01
+        - text: So here is the thing about the French Quarter.
+          atS: 55.09
+          durationS: 2.38
+        - text: Much of the old city you walk through was built after those fires, while Spain ruled it.
+          atS: 58.17
+          durationS: 5.28
+        - text: A New Orleans writer in the eighteen nineties put it plainly.
+          atS: 64.05
+          durationS: 3.17
+        - text: An ill-built French town went into the ashes.
+          atS: 67.92
+          durationS: 3.08
+        - text: A stately Spanish city came out.
+          atS: 71.44
+          durationS: 2.1
+        - text: Now look again at the wall beside you.
+          atS: 74.23
+          durationS: 2.03
+        - text: When the Cabildo went up on this spot, the builders worked what was left of the burned guardhouse walls into it.
+          atS: 77.38
+          durationS: 6.34
+        - text: In the nineteen sixties, restorers found its remains inside these walls, and put the windows along this side back to their original plan.
+          atS: 84.16
+          durationS: 8.03
+        - text: The town hall is Spanish.
+          atS: 93.01
+          durationS: 1.96
+        - text: Part of the wall it stands on is older than the fire.
+          atS: 95.41
+          durationS: 3.04

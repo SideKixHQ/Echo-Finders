@@ -1,0 +1,169 @@
+# Drafted by Claude Code (2026-11-09) for the Charleston ghost legends (batch 2).
+# Listening spot: Public sidewalk at the corner of Meeting Street and Atlantic Street, south of Broad. The house in the story is gone; nothing to enter.
+# Position: Meeting and Atlantic intersection from the Overture street segments in the app's Charleston street file (apps/prototype/public/streets), nudged onto the corner sidewalk (high confidence for the corner; the house's exact footprint is not known).
+id: charleston-steps-that-only-go-up
+title: "Steps That Only Go Up"
+summary: "A legend of Charleston: a condemned man promised to return, and the footsteps that came afterwards only ever climbed the stairs."
+place: "Corner of Meeting Street and Atlantic Street, Charleston, South Carolina"
+at: { lat: 32.77210, lng: -79.93050 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 72
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A ghost story recorded as tradition by Harriott Horry Ravenel in 1906. The script says aloud that it is a legend; the voice and the footsteps are not established, and the house no longer stands.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [charleston, charleston-core, south-of-broad, ghosts, revolutionary-war]
+teaser: "I will if I can, he said, and walked on."
+script: |
+  Stand at this corner, where Atlantic Street meets Meeting Street. A house once stood here, and it is gone. What is left is a story. It is a legend, and nobody can prove it.
+
+  A Charleston historian, writing in nineteen-oh-six, called it the only well-authenticated ghost story known in Charles Town.
+
+  During the Revolution, while the British held the town, they sentenced an American officer, Colonel Isaac Hayne, to hang. The house on this corner belonged to Mrs. Peronneau, his wife's sister. She had knelt with his children before the British commander and begged for his life. It did no good.
+
+  On the day of the execution, the story goes, he passed along Atlantic Street on his way to the gallows. She stood at the north window and cried out to him. Return, return to us.
+
+  He answered, I will if I can. And he walked on.
+
+  Ever after, the story says, anyone at that north window after dark would hear a ghostly voice in the street below. Then steps on the stair, and in the hall. As of a man returning. Never going down. Always up.
+
+  The house came down more than a century ago. The street he walked is still here.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "A house once stood here, and it is gone."
+    source: 1
+    quote: "The house, which until ten years ago stood at the corner of Meeting and Atlantic streets"
+  - says: "It is a legend, and nobody can prove it."
+    source: 1
+    quote: "These latter, when resting on tradition only, are introduced by"
+  - says: "A Charleston historian, writing in nineteen-oh-six, called it the only well-authenticated ghost story known in Charles Town."
+    source: 1
+    quote: "Published November, 1906."
+  - says: "A Charleston historian, writing in nineteen-oh-six, called it the only well-authenticated ghost story known in Charles Town."
+    source: 1
+    quote: "this tragic event was curiously shown by its giving rise to the only well-authenticated ghost story known in Charles Town."
+  - says: "During the Revolution, while the British held the town, they sentenced an American officer, Colonel Isaac Hayne, to hang."
+    source: 1
+    quote: "Hayne, Colonel Isaac, story of"
+  - says: "During the Revolution, while the British held the town, they sentenced an American officer, Colonel Isaac Hayne, to hang."
+    source: 1
+    quote: "Hayne, accompanied by several friends, walked from the Provost to the place of execution"
+  - says: "The house on this corner belonged to Mrs. Peronneau, his wife's sister."
+    source: 1
+    quote: "belonged at that time to Mrs. Arthur Peronneau, who had been a Miss Hutson, sister to Colonel Hayne’s wife."
+  - says: "She had knelt with his children before the British commander and begged for his life."
+    source: 1
+    quote: "His wife’s sister, Mrs. Peronneau, and his little children, received in the large drawing-room of the Brewton House, knelt before Raw- don, imploring mercy."
+  - says: "On the day of the execution, the story goes, he passed along Atlantic Street on his way to the gallows."
+    source: 1
+    quote: "On the day of the execution he passed (the story goes) through Atlantic Street on the way to the gallows"
+  - says: "She stood at the north window and cried out to him."
+    source: 1
+    quote: "she, standing at the north window, cried to him in agony"
+  - says: "Return, return to us."
+    source: 1
+    quote: "“ Return, return to us.”"
+  - says: "He answered, I will if I can."
+    source: 1
+    quote: "He replied, “I will if I can,” and walked on."
+  - says: "Ever after, the story says, anyone at that north window after dark would hear a ghostly voice in the street below."
+    source: 1
+    quote: "Ever after, any one standing at the north window after nightfall would hear a ghostly voice in the street below"
+  - says: "Then steps on the stair, and in the hall."
+    source: 1
+    quote: "and steps sounding on the stair and in the hall, as of a man returning, — never going down, always up!"
+  - says: "Never going down."
+    source: 1
+    quote: "never going down, always up!"
+  - says: "The house came down more than a century ago."
+    source: 1
+    quote: "The house, which until ten years ago stood at the corner of Meeting and Atlantic streets"
+sources:
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906)"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+pronunciations:
+  - written: Peronneau
+    say: PERR-oh-no
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/charleston-steps-that-only-go-up/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 72.1
+    audioBytes: 1154446
+    transcript:
+      totalS: 72.1
+      lines:
+        - text: Stand at this corner, where Atlantic Street meets Meeting Street.
+          atS: 0
+          durationS: 3.41
+        - text: A house once stood here, and it is gone.
+          atS: 3.8
+          durationS: 2.5
+        - text: What is left is a story.
+          atS: 6.8
+          durationS: 1.83
+        - text: It is a legend, and nobody can prove it.
+          atS: 8.96
+          durationS: 2.5
+        - text: A Charleston historian, writing in nineteen-oh-six, called it the only well-authenticated ghost story known in Charles Town.
+          atS: 11.78
+          durationS: 7.43
+        - text: During the Revolution, while the British held the town, they sentenced an American officer, Colonel Isaac Hayne, to hang.
+          atS: 19.82
+          durationS: 6.82
+        - text: The house on this corner belonged to Mrs.
+          atS: 27.14
+          durationS: 2.06
+        - text: Peronneau, his wife's sister.
+          atS: 29.25
+          durationS: 2.1
+        - text: She had knelt with his children before the British commander and begged for his life.
+          atS: 31.73
+          durationS: 4.74
+        - text: It did no good.
+          atS: 36.79
+          durationS: 1.17
+        - text: On the day of the execution, the story goes, he passed along Atlantic Street on his way to the gallows.
+          atS: 38.29
+          durationS: 5.87
+        - text: She stood at the north window and cried out to him.
+          atS: 44.49
+          durationS: 2.6
+        - text: Return, return to us.
+          atS: 47.33
+          durationS: 1.82
+        - text: He answered, I will if I can.
+          atS: 49.44
+          durationS: 2.29
+        - text: And he walked on.
+          atS: 52.05
+          durationS: 1.16
+        - text: Ever after, the story says, anyone at that north window after dark would hear a ghostly voice in the street below.
+          atS: 53.53
+          durationS: 6.7
+        - text: Then steps on the stair, and in the hall.
+          atS: 60.56
+          durationS: 2.32
+        - text: As of a man returning.
+          atS: 63.05
+          durationS: 1.44
+        - text: Never going down.
+          atS: 64.74
+          durationS: 1.18
+        - text: Always up.
+          atS: 66.07
+          durationS: 0.88
+        - text: The house came down more than a century ago.
+          atS: 67.4
+          durationS: 2.46
+        - text: The street he walked is still here.
+          atS: 70.07
+          durationS: 2.01

@@ -23,15 +23,12 @@ script: |
   It is a handsome front, for what happened behind it.
 
   This is the only building known to survive in South Carolina that was used as a slave
-  auction gallery. For a long time, Charleston sold enslaved men, women and children in the
-  open, on the north side of the Exchange building. In eighteen fifty-six the city banned
+  auction gallery. For a long time, Charleston customarily sold enslaved men, women and children on the north side of the Exchange building. In eighteen fifty-six the city banned
   those public sales.
 
-  The trade did not stop. It moved indoors and off the main streets, into sales rooms and
-  yards along Chalmers, State and Queen streets.
+  The trade did not stop. It moved into sales rooms, yards and marts along Chalmers, State and Queen streets.
 
-  This was one of them, known as Ryan's Mart. Behind the front stood a four-storey building
-  with a barracoon, a jail where people were held until they were sold. There was a kitchen.
+  This was one of them, known as Ryan's Mart. Behind the front stood a four-storey building with a barracoon, a jail where people were held until they were sold. There was a kitchen.
   There was a morgue.
 
   The shed you are looking at went up in eighteen fifty-nine. Inside, the people being sold
@@ -50,16 +47,148 @@ script: |
 pronunciations:
   - written: "barracoon"
     say: "bar-uh-KOON"
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "Look at the front of number six Chalmers Street."
+    source: 1
+    quote: "Location: 6 Chalmers Street, Charleston, SC"
+  - says: "A high arch."
+    source: 1
+    quote: "the front facade was more impressive with its high arch, octagonal pillars and a large iron gate."
+  - says: "Eight-sided pillars."
+    source: 1
+    quote: "octagonal pillars"
+  - says: "A large iron gate."
+    source: 1
+    quote: "and a large iron gate."
+  - says: "This is the only building known to survive in South Carolina that was used as a slave auction gallery."
+    source: 1
+    quote: "is the only known extant building used as a slave auction gallery in South Carolina."
+  - says: "For a long time, Charleston customarily sold enslaved men, women and children on the north side of the Exchange building."
+    source: 1
+    quote: "Customarily in Charleston, enslaved men, women, and children were sold on the north side of the Exchange Building (then the Custom House)."
+  - says: "In eighteen fifty-six the city banned those public sales."
+    source: 1
+    quote: "An 1856 city ordinance prohibited this practice of public sales"
+  - says: "It moved into sales rooms, yards and marts along Chalmers, State and Queen streets."
+    source: 1
+    quote: "resulting in a number of sales rooms, yards, or marts along Chalmers, State and Queen Streets."
+  - says: "This was one of them, known as Ryan's Mart."
+    source: 1
+    quote: "Ryan's Mart, now the Old Slave Mart, occupied the land between Chalmers and Queen Street"
+  - says: "Behind the front stood a four-storey building with a barracoon, a jail where people were held until they were sold."
+    source: 1
+    quote: "a four-story brick tenement building with offices and \"barracoon\" (slave jail in Portuguese) where enslaved people were held before sales"
+  - says: "There was a kitchen."
+    source: 1
+    quote: "a kitchen and a morgue."
+  - says: "There was a morgue."
+    source: 1
+    quote: "a kitchen and a morgue."
+  - says: "The shed you are looking at went up in eighteen fifty-nine."
+    source: 1
+    quote: "When it was first constructed in 1859, the open ended building was referred to as a shed"
+  - says: "Inside, the people being sold stood on tables three feet high and ten feet long."
+    source: 1
+    quote: "When sales were held in the shed, enslaved people stood on auction tables, three feet high and ten feet long, placed lengthwise so enslavers could pass by them during the auction."
+  - says: "The tables were set lengthwise, so that buyers could walk along beside them and look."
+    source: 1
+    quote: "placed lengthwise so enslavers could pass by them during the auction."
+  - says: "Sales were held here for only a few years, until the Civil War brought slavery to an end."
+    source: 1
+    quote: "The building was used for this purpose only a short time before the defeat of the South in the Civil War led to the end of slavery."
+  - says: "Historians estimate that nearly half of all the Africans brought to America in slavery arrived through Charleston."
+    source: 2
+    quote: "Historians estimate that nearly half of all Africans brought to America as enslaved people arrived in Charleston."
+  - says: "In nineteen thirty-eight a woman named Miriam Wilson bought this building and made it a museum of African American history."
+    source: 1
+    quote: "In 1938, the property was purchased by Miriam B. Wilson, who turned the site into a museum of African American history, arts and crafts."
+  - says: "A room built for buyers became a room for remembering the people who were sold."
+    source: 1
+    quote: "who turned the site into a museum of African American history"
 sources:
   - title: "Old Slave Mart"
     publisher: "National Park Service, Travel Historic Charleston"
     url: https://www.nps.gov/places/old-slave-mart.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Charleston, SC"
     publisher: "National Park Service"
     url: https://www.nps.gov/places/charleston-sc.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-tables-in-the-shed/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 104.3
+    audioBytes: 1669372
+    transcript:
+      totalS: 104.3
+      lines:
+        - text: Look at the front of number six Chalmers Street.
+          atS: 0
+          durationS: 3.12
+        - text: A high arch.
+          atS: 3.73
+          durationS: 1.16
+        - text: Eight-sided pillars.
+          atS: 5.17
+          durationS: 1.43
+        - text: A large iron gate.
+          atS: 6.84
+          durationS: 1.64
+        - text: It is a handsome front, for what happened behind it.
+          atS: 8.8
+          durationS: 2.9
+        - text: This is the only building known to survive in South Carolina that was used as a slave auction gallery.
+          atS: 12.21
+          durationS: 6.07
+        - text: For a long time, Charleston customarily sold enslaved men, women and children on the north side of the Exchange building.
+          atS: 19.1
+          durationS: 7.64
+        - text: In eighteen fifty-six the city banned those public sales.
+          atS: 27.69
+          durationS: 3.71
+        - text: The trade did not stop.
+          atS: 31.92
+          durationS: 1.44
+        - text: It moved into sales rooms, yards and marts along Chalmers, State and Queen streets.
+          atS: 33.96
+          durationS: 5.78
+        - text: This was one of them, known as Ryan's Mart.
+          atS: 40.34
+          durationS: 2.8
+        - text: Behind the front stood a four-storey building with a barracoon, a jail where people were held until they were sold.
+          atS: 44.09
+          durationS: 7
+        - text: There was a kitchen.
+          atS: 51.7
+          durationS: 1.06
+        - text: There was a morgue.
+          atS: 53.14
+          durationS: 1.07
+        - text: The shed you are looking at went up in eighteen fifty-nine.
+          atS: 54.65
+          durationS: 3.53
+        - text: Inside, the people being sold stood on tables three feet high and ten feet long.
+          atS: 58.88
+          durationS: 6.2
+        - text: The tables were set lengthwise, so that buyers could walk along beside them and look.
+          atS: 65.59
+          durationS: 5.33
+        - text: Someone thought carefully about what the buyers needed to see.
+          atS: 71.73
+          durationS: 3.63
+        - text: Sales were held here for only a few years, until the Civil War brought slavery to an end.
+          atS: 76.17
+          durationS: 5.85
+        - text: Historians estimate that nearly half of all the Africans brought to America in slavery arrived through Charleston.
+          atS: 82.98
+          durationS: 7.56
+        - text: In nineteen thirty-eight a woman named Miriam Wilson bought this building and made it a museum of African American history.
+          atS: 91.05
+          durationS: 7.89
+        - text: A room built for buyers became a room for remembering the people who were sold.
+          atS: 99.64
+          durationS: 4.62

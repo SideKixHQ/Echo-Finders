@@ -22,25 +22,19 @@ script: |
 
   But the story here is about time, and water.
 
-  The Huguenots were French Protestants who came to Carolina in the sixteen-eighties. Many
-  of them settled on plantations outside the town, and the easiest road to church was the
-  river. So on Sundays they came to service by boat.
+  The Huguenots were French Protestants who flocked to Carolina in the sixteen-eighties. Many of the families who worshipped here lived on plantations outside the town. So on Sundays they came to service by boat.
 
   A boat on these rivers moves when the tide lets it. Leave at the wrong hour and you row
   against it the whole way.
 
-  In sixteen ninety-three the French took their complaints to the Lords Proprietors, the men
-  who ran the colony. The answer came back with a list of protections. Their land would not
-  be taken from their children. Their marriages would be recognised. And they were not to be
+  The French took their complaints to the Lords Proprietors, the men who ran the colony, and in sixteen ninety-three an answer came back. It came with a list of protections. Their land would not be taken from their children because they were aliens. Their marriages would be recognised. And they were not to be
   made to begin their worship at an hour inconvenient to the tide.
 
   The Park Service says services here were timed to the tides, for the families arriving by
   boat from the plantations.
 
   The church that stood here in seventeen ninety-six was blown up on purpose, to stop a fire
-  spreading through the neighbourhood. This one went up in the eighteen-forties. The
-  congregation is still French Calvinist, the only congregation of its kind in the
-  country.
+  spreading through the neighbourhood. This one went up in the eighteen-forties. Today the congregation is French Calvinist, the only congregation of its kind in the country.
 
   The river is a few streets east of you, still rising and falling twice a day. Somewhere in
   a colonial record there is a promise that Sunday would wait for it.
@@ -49,21 +43,138 @@ pronunciations:
     say: "HYOO-guh-not"
   - written: "Calvinist"
     say: "KAL-vin-ist"
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "The stuccoed church on this corner, with the pointed windows, is the French Huguenot Church."
+    source: 1
+    quote: "The stucco over brick Huguenot church is ornamented with windows, buttresses, and decorative details typical of the Gothic Revival."
+  - says: "Some of what looks like carved stone is iron."
+    source: 1
+    quote: "The use of iron for many of these decorative details was unusual, but reflects the difficulty of obtaining carved stonework"
+  - says: "The Huguenots were French Protestants who flocked to Carolina in the sixteen-eighties."
+    source: 3
+    quote: "After the revo- cation of the Edict of Nantes, in 1685, great numbers of Huguenots flocked to South Carolina"
+  - says: "Many of the families who worshipped here lived on plantations outside the town."
+    source: 1
+    quote: "Services were timed with the tides to accommodate those arriving by boat from the nearby plantations."
+  - says: "So on Sundays they came to service by boat."
+    source: 2
+    quote: "(they came to church by water)"
+  - says: "The French took their complaints to the Lords Proprietors, the men who ran the colony, and in sixteen ninety-three an answer came back."
+    source: 2
+    quote: "petitioned the Proprietors on the injustice done to their people. The Proprietors in reply sent the following eo worthy answer to the Governor and Council in 1693"
+  - says: "Their land would not be taken from their children because they were aliens."
+    source: 2
+    quote: "The French have complained to us chat they are threatened to have their estates taken from their children after their death because they are aliens."
+  - says: "Their land would not be taken from their children because they were aliens."
+    source: 2
+    quote: "God forbid that we should take advantage of the forfeiture, nor do we so intend"
+  - says: "Their marriages would be recognised."
+    source: 2
+    quote: "that the validity of D 34 CHARLESTON their marriages and legitimacy of their children shall be recognized"
+  - says: "And they were not to be made to begin their worship at an hour inconvenient to the tide."
+    source: 2
+    quote: "They order that the French shall not be ee to begin their Divine worship at an hour inconvenient to the tide"
+  - says: "The Park Service says services here were timed to the tides, for the families arriving by boat from the plantations."
+    source: 1
+    quote: "Services were timed with the tides to accommodate those arriving by boat from the nearby plantations."
+  - says: "The church that stood here in seventeen ninety-six was blown up on purpose, to stop a fire spreading through the neighbourhood."
+    source: 1
+    quote: "The first church of this denomination was built in 1687, but detonated in 1796 to create a fire break for a blaze raging through the neighborhood."
+  - says: "The church that stood here in seventeen ninety-six was blown up on purpose, to stop a fire spreading through the neighbourhood."
+    source: 3
+    quote: "In the great fire of 1796 the Huguenot Church was blown up to prevent the spreading of the flames."
+  - says: "This one went up in the eighteen-forties."
+    source: 1
+    quote: "Completed in 1845, it was the first Gothic Revival building constructed in Charleston"
+  - says: "Today the congregation is French Calvinist, the only congregation of its kind in the country."
+    source: 1
+    quote: "Today's active congregation, reestablished in 1983, is the only French Calvinist congregation in the United States."
+  - says: "Somewhere in a colonial record there is a promise that Sunday would wait for it."
+    source: 2
+    quote: "which we will shall be registered that it may remain upon record in Carolina"
 sources:
   - title: "French Huguenot Church"
     publisher: "National Park Service, Travel Historic Charleston"
     url: https://www.nps.gov/places/french-huguenot-church.htm
-    retrievedAt: "2026-10-15"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), the Proprietors' answer of 1693"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/06042434/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Charleston, S.C. and vicinity illustrated (1901), the Huguenot Church in the fire of 1796"
     publisher: "Library of Congress"
-    url: https://www.loc.gov/item/02003003/
-    retrievedAt: "2026-10-15"
+    url: https://tile.loc.gov/storage-services/public/gdc/02003003/02003003.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-sermons-on-the-tide/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 101.5
+    audioBytes: 1625486
+    transcript:
+      totalS: 101.5
+      lines:
+        - text: The stuccoed church on this corner, with the pointed windows, is the French Huguenot Church.
+          atS: 0
+          durationS: 7.54
+        - text: Look closely at the decoration.
+          atS: 8.14
+          durationS: 2.06
+        - text: Some of what looks like carved stone is iron.
+          atS: 10.52
+          durationS: 3.29
+        - text: But the story here is about time, and water.
+          atS: 14.18
+          durationS: 3.38
+        - text: The Huguenots were French Protestants who flocked to Carolina in the sixteen-eighties.
+          atS: 18
+          durationS: 6.33
+        - text: Many of the families who worshipped here lived on plantations outside the town.
+          atS: 24.76
+          durationS: 4.56
+        - text: So on Sundays they came to service by boat.
+          atS: 29.84
+          durationS: 3.02
+        - text: A boat on these rivers moves when the tide lets it.
+          atS: 33.37
+          durationS: 3.34
+        - text: Leave at the wrong hour and you row against it the whole way.
+          atS: 37.22
+          durationS: 3.38
+        - text: The French took their complaints to the Lords Proprietors, the men who ran the colony, and in sixteen ninety-three an answer came back.
+          atS: 41.2
+          durationS: 8.58
+        - text: It came with a list of protections.
+          atS: 50.29
+          durationS: 2.13
+        - text: Their land would not be taken from their children because they were aliens.
+          atS: 52.8
+          durationS: 4.01
+        - text: Their marriages would be recognised.
+          atS: 57.25
+          durationS: 2.1
+        - text: And they were not to be made to begin their worship at an hour inconvenient to the tide.
+          atS: 59.79
+          durationS: 5.1
+        - text: The Park Service says services here were timed to the tides, for the families arriving by boat from the plantations.
+          atS: 66.19
+          durationS: 7.29
+        - text: The church that stood here in seventeen ninety-six was blown up on purpose, to stop a fire spreading through the neighbourhood.
+          atS: 74.18
+          durationS: 7.72
+        - text: This one went up in the eighteen-forties.
+          atS: 82.28
+          durationS: 2.42
+        - text: Today the congregation is French Calvinist, the only congregation of its kind in the country.
+          atS: 85.02
+          durationS: 6.32
+        - text: The river is a few streets east of you, still rising and falling twice a day.
+          atS: 91.78
+          durationS: 4.77
+        - text: Somewhere in a colonial record there is a promise that Sunday would wait for it.
+          atS: 97.25
+          durationS: 4.27

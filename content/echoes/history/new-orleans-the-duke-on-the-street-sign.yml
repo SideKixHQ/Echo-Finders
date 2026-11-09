@@ -17,7 +17,7 @@ quality: 0.75
 tags: [new-orleans, new-orleans-core, french-quarter, bourbon-street, street-names]
 teaser: "Look at the two street signs on this corner."
 script: |
-  Look at the two street signs on this corner. Bourbon. And Dumaine.
+  Look at the street signs on this corner. Bourbon. And Dumaine.
 
   On this street of all streets, people tend to assume the name has something to do with what is in their glass.
 
@@ -45,21 +45,165 @@ pronunciations:
     say: too-LOOSE
   - written: Chartres
     say: CHAR-ters
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "And Dumaine."
+    source: 3
+    quote: "Crossing these streets from the river, were Bienyille, Conti, St. Louis, Toulouse, St. Peter, Orleans, St. Anne, Dumaine and St. Philip."
+  - says: "When French engineers laid out this town in the seventeen-twenties, they drew a grid of streets and gave them names from the very top of French society."
+    source: 1
+    quote: "he sent his chief of engineers to the settlement ‘*to choose a suitable site for a city worthy to become the capital of Louisiana.”"
+  - says: "When French engineers laid out this town in the seventeen-twenties, they drew a grid of streets and gave them names from the very top of French society."
+    source: 1
+    quote: "in the naming of streets, the dukes of Orleans, Chartres, Maine, and Bourbon, the princes of Conti and Condé, and the Count of Toulouse, had been honored; where, finally, in June to August, 1722"
+  - says: "George Washington Cable, writing in eighteen eighty-four, listed who was being honoured."
+    source: 1
+    quote: "COPYRIGHT, 1884, BY CHARLES SCRIBNER’S SONS"
+  - says: "The dukes of Orleans, Chartres, Maine and Bourbon."
+    source: 1
+    quote: "the dukes of Orleans, Chartres, Maine, and Bourbon"
+  - says: "The princes of Conti and Condé."
+    source: 1
+    quote: "the princes of Conti and Condé"
+  - says: "The Count of Toulouse."
+    source: 1
+    quote: "the Count of Toulouse, had been honored"
+  - says: "So the grid around you is a kind of family tree of the French court."
+    source: 1
+    quote: "in the naming of streets, the dukes of Orleans, Chartres, Maine, and Bourbon, the princes of Conti and Condé, and the Count of Toulouse, had been honored"
+  - says: "Orleans Street."
+    source: 2
+    quote: "9. Rue d'Orleans"
+  - says: "Chartres Street."
+    source: 2
+    quote: "3. Rue de Chartres"
+  - says: "Conti."
+    source: 2
+    quote: "12. Rue de Conti"
+  - says: "Toulouse."
+    source: 2
+    quote: "11. Rue de Toulouse"
+  - says: "And Bourbon, for the Duke of Bourbon."
+    source: 1
+    quote: "the dukes of Orleans, Chartres, Maine, and Bourbon"
+  - says: "Du Maine."
+    source: 2
+    quote: "7. Rue du Maine"
+  - says: "On the old French plans of the city, it is written Rue du Maine."
+    source: 2
+    quote: "7. Rue du Maine"
+  - says: "The street of the Duke of Maine."
+    source: 1
+    quote: "the dukes of Orleans, Chartres, Maine, and Bourbon"
+  - says: "A city guide from nineteen-oh-four put it simply."
+    source: 3
+    quote: "Copyright 1904 by"
+  - says: "All through the old French Quarter, it said, the street names suggest the city's royal descent."
+    source: 3
+    quote: "all through the old French Quarter the streets suggest the city’s royal descent and ancient faith and customs."
+  - says: "Everything else on Bourbon Street came later."
+    source: 3
+    quote: "We have Bourbon and Orleans, Dauphine and Bur- gundy"
 sources:
   - title: "The Creoles of Louisiana (1884), by George W. Cable"
     publisher: "Charles Scribner's Sons, via the Library of Congress"
-    url: https://www.loc.gov/item/01008769/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/creolesoflouisia01cabl/creolesoflouisia01cabl.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "Vieux Carré, A Creole Neighborhood in New Orleans (Teaching with Historic Places), Map 3 street key"
     publisher: "National Park Service"
     url: https://www.nps.gov/articles/vieux-carre-a-creole-neighborhood-in-new-orleans-teaching-with-historic-places.htm
-    retrievedAt: "2026-10-14"
+    retrievedAt: "2026-11-09"
     rights: public-domain
   - title: "The Picayune's Guide to New Orleans (1904)"
     publisher: "The Picayune, via the Library of Congress"
-    url: https://www.loc.gov/item/04005555/
-    retrievedAt: "2026-10-14"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-duke-on-the-street-sign/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77.6
+    audioBytes: 1243471
+    transcript:
+      totalS: 77.6
+      lines:
+        - text: Look at the street signs on this corner.
+          atS: 0
+          durationS: 2.18
+        - text: Bourbon.
+          atS: 2.79
+          durationS: 0.73
+        - text: And Dumaine.
+          atS: 3.69
+          durationS: 1.14
+        - text: On this street of all streets, people tend to assume the name has something to do with what is in their glass.
+          atS: 5.43
+          durationS: 5.92
+        - text: It doesn't.
+          atS: 11.6
+          durationS: 0.81
+        - text: When French engineers laid out this town in the seventeen-twenties, they drew a grid of streets and gave them names from the very top of French society.
+          atS: 12.85
+          durationS: 8.82
+        - text: George Washington Cable, writing in eighteen eighty-four, listed who was being honoured.
+          atS: 22.28
+          durationS: 5.71
+        - text: The dukes of Orleans, Chartres, Maine and Bourbon.
+          atS: 28.69
+          durationS: 4.2
+        - text: The princes of Conti and Condé.
+          atS: 33.4
+          durationS: 2.48
+        - text: The Count of Toulouse.
+          atS: 36.27
+          durationS: 1.67
+        - text: So the grid around you is a kind of family tree of the French court.
+          atS: 38.38
+          durationS: 3.5
+        - text: Orleans Street.
+          atS: 42.32
+          durationS: 1.08
+        - text: Chartres Street.
+          atS: 43.72
+          durationS: 1.24
+        - text: Conti.
+          atS: 45.09
+          durationS: 0.94
+        - text: Toulouse.
+          atS: 46.18
+          durationS: 0.92
+        - text: And Bourbon, for the Duke of Bourbon.
+          atS: 47.43
+          durationS: 2.54
+        - text: Now look at the other sign again.
+          atS: 50.48
+          durationS: 1.72
+        - text: Dumaine.
+          atS: 52.8
+          durationS: 0.79
+        - text: Say it slowly.
+          atS: 53.92
+          durationS: 1.1
+        - text: Du Maine.
+          atS: 55.34
+          durationS: 0.87
+        - text: On the old French plans of the city, it is written Rue du Maine.
+          atS: 56.73
+          durationS: 3.89
+        - text: The street of the Duke of Maine.
+          atS: 61
+          durationS: 1.9
+        - text: A city guide from nineteen-oh-four put it simply.
+          atS: 63.18
+          durationS: 3.21
+        - text: All through the old French Quarter, it said, the street names suggest the city's royal descent.
+          atS: 66.83
+          durationS: 5.31
+        - text: The duke is still up there on the sign.
+          atS: 72.41
+          durationS: 2.04
+        - text: Everything else on Bourbon Street came later.
+          atS: 75.06
+          durationS: 2.59
