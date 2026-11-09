@@ -28,7 +28,7 @@
    the middle of each eye, and a glance slides the pair across the face and back. */
 .echo-char-life {
   transform-box: fill-box; transform-origin: 50% 50%;
-  transition: transform 220ms ease-out;
+  transition: transform 260ms ease-out;
 }
 .echo-char-life path { transform-box: fill-box; transform-origin: 50% 50%; transition: transform 70ms ease-in; }
 .echo-char-life.blink path { transform: scaleY(0.08); }

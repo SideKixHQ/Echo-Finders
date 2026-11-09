@@ -424,6 +424,13 @@ const r2 = (n: number | undefined) => (n ?? 0).toFixed(2);
  * back. Timers rather than an animation loop, so a creature that is not talking costs
  * nothing, and none of it under reduced motion.
  */
+/**
+ * How far a glance slides the eyes, in the face's own units (the body is 238 across). It was
+ * 9, under 4% of the face, and read as a twitch rather than a look (James, 2026-11-08: "make
+ * the glance bigger"). 22 is a clear look to the side that keeps both eyes on the face.
+ */
+const GLANCE = 22;
+
 function useLife(active: boolean): { readonly blink: boolean; readonly look: number } {
   const [blink, setBlink] = useState(false);
   const [look, setLook] = useState(0);
@@ -621,7 +628,7 @@ function EchoCharacterInner({ face, r, uid, gazeDeg = 0, detail }: EchoCharacter
         <circle cx={centreX(right)} cy={centreY(right)} r={29} fill={`url(#ecEye-${uid})`} />
         <g
           className={life.blink ? "echo-char-life blink" : "echo-char-life"}
-          style={{ transform: `translateX(${life.look * 9}px)` }}
+          style={{ transform: `translateX(${life.look * GLANCE}px)` }}
         >
           <path d={toPath(left)} fill={skin.eye} />
           <path d={toPath(right)} fill={skin.eye} />
