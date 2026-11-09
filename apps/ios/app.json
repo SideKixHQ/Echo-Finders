@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Echo Finders",
+    "slug": "echo-finders",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.echofinders.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSLocationWhenInUseUsageDescription": "Echo Finders plays the stories of the place you are standing in, so it needs to know where you are."
+      }
+    },
+    "owner": "echofinders",
+    "scheme": "echofinders",
+    "extra": {
+      "eas": {
+        "projectId": "d1a83f71-a44c-4e52-ad76-446041fb41ae"
+      }
+    }
+  }
+}
