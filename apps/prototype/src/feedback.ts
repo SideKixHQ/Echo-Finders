@@ -29,6 +29,27 @@ export const FEEDBACK_KINDS: Readonly<Record<FeedbackKind, string>> = {
   fact: "A story got something wrong",
 };
 
+/**
+ * Suggestions (James, 2026-11-09: "a fun way for users to suggest a place to add echoes or
+ * to suggest an echo"). Free for everyone. A story or a place goes to editorial research,
+ * where it is checked like anything else we write (ADR-0016); "it happened to me" is the
+ * waiting list for Firsthand, the recorded-in-your-own-voice echoes of ADR-0013.
+ */
+export type SuggestKind = "story" | "place" | "mine";
+
+export const SUGGEST_KINDS: Readonly<Record<SuggestKind, string>> = {
+  story: "I know a story",
+  place: "A place you should add",
+  mine: "It happened to me here",
+};
+
+/** Where a suggestion is about, if the sender added where they were standing. */
+export interface SuggestedSpot {
+  readonly lat: number;
+  readonly lng: number;
+  readonly accuracyM?: number;
+}
+
 /** Long enough for a real paragraph, short enough that nobody pastes a book. */
 export const MAX_MESSAGE = 2000;
 
@@ -38,8 +59,12 @@ export interface Feedback {
    * start on "Something's not working", and the first real message, "This is great", was
    * filed as a bug because nobody changes a default. Better uncategorised than wrong.
    */
-  readonly kind?: FeedbackKind;
+  readonly kind?: FeedbackKind | SuggestKind;
   readonly message: string;
+  /** A suggestion's place, as they named it ("the bench at Greenfield Lake"). */
+  readonly place?: string;
+  /** Where they were standing, only when they ticked the box to add it. */
+  readonly at?: SuggestedSpot;
   readonly email?: string;
   /**
    * The echo it is about, when it was sent from that echo's card ("Something wrong with
@@ -48,7 +73,7 @@ export interface Feedback {
    */
   readonly echo?: { readonly id: string; readonly title: string };
   /** Where in the app it was sent from. */
-  readonly source?: "settings" | "echo-card";
+  readonly source?: "settings" | "echo-card" | "suggest";
 }
 
 /** Feedback can be sent from this build only when Sentry is configured for it. */
@@ -93,10 +118,11 @@ export function feedbackEnvelope(
     contexts: {
       feedback: {
         // The kind leads the message so it reads in the inbox list, where tags do not show.
-        message: `${label(feedback)}${feedback.message.trim().slice(0, MAX_MESSAGE)}`,
+        message: `${label(feedback)}${placeLine(feedback)}${feedback.message.trim().slice(0, MAX_MESSAGE)}`,
         ...(email ? { contact_email: email } : {}),
         url: path.replace(/[?#].*$/, ""),
         source: feedback.source ?? "settings",
+        ...(feedback.at ? { at: spot(feedback.at) } : {}),
       },
     },
   };
@@ -125,9 +151,25 @@ export async function sendFeedback(
   }
 }
 
+/** Five decimals is about a metre: enough to find the spot, no false precision beyond it. */
+function spot(at: SuggestedSpot): SuggestedSpot {
+  const r = (n: number) => Math.round(n * 1e5) / 1e5;
+  return { lat: r(at.lat), lng: r(at.lng), ...(at.accuracyM ? { accuracyM: Math.round(at.accuracyM) } : {}) };
+}
+
+/** "Place: name (lat, lng). " so the inbox list says where without opening the item. */
+function placeLine(feedback: Feedback): string {
+  const name = feedback.place?.trim().slice(0, 200);
+  const at = feedback.at ? spot(feedback.at) : undefined;
+  if (!name && !at) return "";
+  return `Place: ${name ?? ""}${at ? `${name ? " " : ""}(${at.lat}, ${at.lng})` : ""}. `;
+}
+
+const KIND_LABELS: Readonly<Record<FeedbackKind | SuggestKind, string>> = { ...FEEDBACK_KINDS, ...SUGGEST_KINDS };
+
 /** "[A story got something wrong · Title] ", "[An idea] ", "[About: Title] " or nothing. */
 function label(feedback: Feedback): string {
   const { kind, echo } = feedback;
-  if (kind) return `[${FEEDBACK_KINDS[kind]}${echo ? ` · ${echo.title}` : ""}] `;
+  if (kind) return `[${KIND_LABELS[kind]}${echo ? ` · ${echo.title}` : ""}] `;
   return echo ? `[About: ${echo.title}] ` : "";
 }
