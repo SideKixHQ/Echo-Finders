@@ -7,7 +7,7 @@ triggerRadiusKm: 0.06
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: history
 format: short
-durationS: 63
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -38,7 +38,7 @@ simple:
 
     The fence is still standing. The crowns are still gone.
 
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "They used to have small golden crowns on them."
@@ -73,3 +73,38 @@ sources:
     url: https://www.nps.gov/places/bowling-green.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/bowling-green-king-george/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.1
+    audioBytes: 866054
+    transcript:
+      totalS: 54.1
+      lines:
+        - text: This is the oldest public park in the city.
+          atS: 0
+          durationS: 2.47
+        - text: Look at the iron fence around it.
+          atS: 3.08
+          durationS: 1.82
+        - text: Look at the tops of the posts.
+          atS: 5.41
+          durationS: 1.7
+        - text: They used to have small golden crowns on them.
+          atS: 7.49
+          durationS: 2.24
+        - text: On the ninth of July 1776, the Declaration of Independence was read aloud to Washington's troops on the Commons, a few streets north of here.
+          atS: 10.54
+          durationS: 8.97
+        - text: That night a rowdy crowd of soldiers and civilians marched down Broadway to this green, where an equestrian statue of King George the Third had stood for only six years, and pulled it down.
+          atS: 20.21
+          durationS: 12.66
+        - text: The statue was carted off to Connecticut and melted down, two tons of metal turned into more than forty two thousand musket balls for Washington's army.
+          atS: 33.38
+          durationS: 9.02
+        - text: And the crowd cut the crowns off the fence.
+          atS: 42.68
+          durationS: 2.54
+        - text: Two hundred and fifty years later the fence is still standing and you can still see where the crowns were, which is a fairly direct way of making a point.
+          atS: 45.6
+          durationS: 8.45

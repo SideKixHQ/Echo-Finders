@@ -9,7 +9,7 @@ at: { lat: 42.35450, lng: -71.05355 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 97
+durationS: 92
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -44,7 +44,7 @@ script: |
   off the map.
 
   The most famous splash in American history happened somewhere under the ground around you.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "You are near the bottom of Pearl Street."
@@ -139,3 +139,77 @@ sources:
     url: https://www.loc.gov/item/33007578/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-where-the-water-was/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 92.4
+    audioBytes: 1479618
+    transcript:
+      totalS: 92.4
+      lines:
+        - text: You are near the bottom of Pearl Street.
+          atS: 0
+          durationS: 2.04
+        - text: Look around.
+          atS: 2.22
+          durationS: 0.88
+        - text: Office towers, traffic, pavement.
+          atS: 3.48
+          durationS: 2.3
+        - text: Not a drop of harbour in sight.
+          atS: 6.03
+          durationS: 2.03
+        - text: On the night of the sixteenth of December, seventeen seventy three, this was the edge of the water.
+          atS: 8.87
+          durationS: 6.13
+        - text: A footpath called Flounder Lane wound along the shoreline under a hill and came into this street.
+          atS: 15.44
+          durationS: 6.5
+        - text: Opposite the end of the street stood Griffin's Wharf.
+          atS: 22.55
+          durationS: 2.72
+        - text: And tied up at Griffin's Wharf were three ships carrying tea.
+          atS: 25.7
+          durationS: 4.01
+        - text: About a hundred and fifty men, faces darkened with soot, came down from the Old South Meeting House.
+          atS: 30.41
+          durationS: 7.12
+        - text: A ten minute walk.
+          atS: 38.22
+          durationS: 1.32
+        - text: They split into three groups and boarded the ships.
+          atS: 39.98
+          durationS: 2.93
+        - text: They told the crews to open the hatches and hand over the hoisting tackle, and promised them no harm.
+          atS: 43.42
+          durationS: 5.95
+        - text: For three hours they hauled up chests, split them open with axes, and tipped the tea over the side.
+          atS: 49.7
+          durationS: 6.33
+        - text: Three hundred and forty two chests.
+          atS: 56.41
+          durationS: 2.66
+        - text: They were careful to take nothing else.
+          atS: 59.4
+          durationS: 2.17
+        - text: One padlock was broken by accident, and it was replaced a few days later.
+          atS: 61.81
+          durationS: 4.75
+        - text: Then they went home without a word to each other.
+          atS: 67
+          durationS: 2.66
+        - text: One of them remembered it as the stillest night Boston had known in months.
+          atS: 70.1
+          durationS: 4.51
+        - text: Afterwards the city kept building out into the harbour.
+          atS: 75.05
+          durationS: 3.17
+        - text: The footpath became a street, and the street became part of the waterfront avenue.
+          atS: 78.54
+          durationS: 4.97
+        - text: The filling nearly wiped Griffin's Wharf off the map.
+          atS: 83.95
+          durationS: 2.86
+        - text: The most famous splash in American history happened somewhere under the ground around you.
+          atS: 87.41
+          durationS: 5

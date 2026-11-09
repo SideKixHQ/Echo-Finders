@@ -9,7 +9,7 @@ at: { lat: 42.35705, lng: -71.06410 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 67
+durationS: 63
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   grey, as an air raid precaution.
 
   Revere is remembered for one night on a horse. Look up. This was his day job.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look up the hill at the dome of the State House."
@@ -99,3 +99,56 @@ sources:
     url: https://www.nps.gov/places/massachusetts-state-house.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-state-house-dome-copper/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 63.4
+    audioBytes: 1016101
+    transcript:
+      totalS: 63.4
+      lines:
+        - text: Look up the hill at the dome of the State House.
+          atS: 0
+          durationS: 2.75
+        - text: It was not always gold.
+          atS: 3
+          durationS: 1.71
+        - text: In November eighteen-oh-two, a New Hampshire newspaper reported that the superb dome of the new State House had just been coppered.
+          atS: 5.08
+          durationS: 8.48
+        - text: The sheets, it said, were made in Massachusetts by Colonel Revere and son.
+          atS: 13.94
+          durationS: 4.74
+        - text: That is Paul Revere.
+          atS: 19.19
+          durationS: 1.52
+        - text: After the war he went into industry, and opened a copper mill.
+          atS: 21.15
+          durationS: 4.01
+        - text: The paper added, with some pride, that it was the only sheet copper works in America.
+          atS: 26.27
+          durationS: 5.27
+        - text: So for about seventy years the dome was the colour of copper.
+          atS: 31.98
+          durationS: 3.68
+        - text: It was gilded in the eighteen-seventies, and Boston argued about whether the gold was worth the money.
+          atS: 36.11
+          durationS: 5.84
+        - text: A newspaper later made a point of it.
+          atS: 42.55
+          durationS: 2.26
+        - text: Real gold leaf, not gilt paint.
+          atS: 45.33
+          durationS: 2.75
+        - text: Then in nineteen forty-two, with the country at war, the dome was to be painted a dull grey, as an air raid precaution.
+          atS: 48.68
+          durationS: 7.37
+        - text: Revere is remembered for one night on a horse.
+          atS: 56.75
+          durationS: 3.09
+        - text: Look up.
+          atS: 60.44
+          durationS: 0.71
+        - text: This was his day job.
+          atS: 61.85
+          durationS: 1.59

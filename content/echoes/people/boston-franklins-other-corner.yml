@@ -9,13 +9,11 @@ at: { lat: 42.35666, lng: -71.05840 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 97
+durationS: 88
 visibility: at-hand
 certainty: contested
 certaintyNote: >-
-  Milk Street is the generally accepted birthplace, but an 1873 history records a rival claim
-  for Hanover Street, said to rest on Franklin's own word. The script presents both and says
-  which is likelier. The baptism at Old South is not in dispute.
+  Milk Street is the generally accepted birthplace, but an 1873 history records a rival claim for Hanover Street, said to rest on Franklin's own word. The script presents both and says which is likelier. The baptism at Old South is not in dispute.
 minAge: 0
 quality: 0.75
 tags: [boston, boston-core, freedom-trail, benjamin-franklin, old-south]
@@ -47,7 +45,7 @@ script: |
 
   So look at the church across the road. Whichever corner he was born on, he was carried
   over there to be baptized.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Stand on Milk Street and look across at the Old South Meeting House, the big brick church with the tall steeple."
@@ -122,3 +120,65 @@ sources:
     url: https://www.nps.gov/bost/learn/historyculture/osmh.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-franklins-other-corner/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 88.2
+    audioBytes: 1412745
+    transcript:
+      totalS: 88.2
+      lines:
+        - text: Stand on Milk Street and look across at the Old South Meeting House, the big brick church with the tall steeple.
+          atS: 0
+          durationS: 6.91
+        - text: Benjamin Franklin was baptized in there, as a baby, in seventeen oh six.
+          atS: 7.19
+          durationS: 5.18
+        - text: And the story Boston has told for a very long time is that he was born right about where you are standing, in a small wooden house that belonged to his father, a candle maker.
+          atS: 12.57
+          durationS: 10.6
+        - text: It was a plain house.
+          atS: 24.13
+          durationS: 1.44
+        - text: Clapboard on the front, rough shingles on the sides, about twenty feet wide on the street.
+          atS: 25.77
+          durationS: 5.79
+        - text: It stood for over a century, and it burned down in eighteen eleven.
+          atS: 32.17
+          durationS: 4.03
+        - text: A newspaper office was later built on the site.
+          atS: 36.9
+          durationS: 2.7
+        - text: Tidy enough.
+          atS: 40.11
+          durationS: 1.02
+        - text: Except for one detail.
+          atS: 41.83
+          durationS: 1.56
+        - text: In eighteen seventy three, the Boston historian Samuel Adams Drake pointed out that a corner of Hanover Street, across town, also claimed the honour.
+          atS: 43.83
+          durationS: 8.92
+        - text: And the witness for that other corner, by his account, was Franklin himself, who was said to have told a reliable person he was born there.
+          atS: 53.02
+          durationS: 8.39
+        - text: Other evidence points back here.
+          atS: 62.11
+          durationS: 2.04
+        - text: Drake weighed the two and threw up his hands.
+          atS: 64.97
+          durationS: 2.59
+        - text: A plague on both the houses, he wrote.
+          atS: 67.88
+          durationS: 2.32
+        - text: What is certain is that the boy grew up at the Hanover Street house, making tallow candles for his father.
+          atS: 70.59
+          durationS: 6.01
+        - text: What is likely is that he was born on Milk Street.
+          atS: 77.11
+          durationS: 2.87
+        - text: So look at the church across the road.
+          atS: 80.49
+          durationS: 2.14
+        - text: Whichever corner he was born on, he was carried over there to be baptized.
+          atS: 83.14
+          durationS: 5.1

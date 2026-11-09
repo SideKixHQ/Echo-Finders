@@ -9,14 +9,11 @@ at: { lat: 29.95997, lng: -90.07137 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 93
+durationS: 76
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  Father Dagobert is a documented colonial Capuchin superior. The singing ghost is an "old
-  tradition" reported by the 1904 Picayune guide, which says only "St. Louis Cemetery" and names no
-  witness. The 1900 guide's fiddling ghost, Tintin Calendro, is admitted there to come from fiction.
-  The script says aloud that both are legend.
+  Father Dagobert is a documented colonial Capuchin superior. The singing ghost is an "old tradition" reported by the 1904 Picayune guide, which says only "St. Louis Cemetery" and names no witness. The 1900 guide's fiddling ghost, Tintin Calendro, is admitted there to come from fiction. The script says aloud that both are legend.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -45,7 +42,7 @@ pronunciations:
     say: tay DAY-um
   - written: Tintin Calendro
     say: tan-TAN kah-LEN-droh
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The old guides called this the mother cemetery of the city."
@@ -109,3 +106,68 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse_0/picayunesguideto00unse_0.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-orleans-the-singing-priest/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 75.5
+    audioBytes: 1208363
+    transcript:
+      totalS: 75.5
+      lines:
+        - text: Look along the wall of the old cemetery.
+          atS: 0
+          durationS: 2.26
+        - text: The old guides called this the mother cemetery of the city.
+          atS: 2.38
+          durationS: 3.03
+        - text: And they said that at night, people passing through could hear singing in there.
+          atS: 5.74
+          durationS: 3.8
+        - text: Take it as a legend.
+          atS: 9.97
+          durationS: 1.22
+        - text: It is a story the guidebooks repeated, not something anyone proved.
+          atS: 11.44
+          durationS: 3.81
+        - text: The singer, they said, was a priest.
+          atS: 15.52
+          durationS: 1.77
+        - text: Father Dagobert, a French Capuchin who became superior of the city's Capuchins in colonial days.
+          atS: 17.5
+          durationS: 6.29
+        - text: He christened, married and buried the town for half a century.
+          atS: 24.03
+          durationS: 3.47
+        - text: Grace King, writing in eighteen ninety-five, said he had been praised in so many poems and stories that there was nothing new left to say.
+          atS: 27.83
+          durationS: 8.88
+        - text: A city guide of nineteen-oh-four called him the singing Père.
+          atS: 37.15
+          durationS: 4.18
+        - text: Old traditions say, it went on, that even now at night, passing through St.
+          atS: 41.84
+          durationS: 4.77
+        - text: Louis Cemetery, you can hear his sweet voice chanting the Te Deum, or singing the lullabies Creole mothers sang to their children.
+          atS: 46.64
+          durationS: 7.88
+        - text: The people are not afraid of his ghost, it said.
+          atS: 54.67
+          durationS: 2.71
+        - text: They stop to listen.
+          atS: 57.42
+          durationS: 1.06
+        - text: An earlier guide added a second ghost.
+          atS: 58.55
+          durationS: 2.23
+        - text: A fiddler called Tintin Calendro, playing among these tombs.
+          atS: 60.81
+          durationS: 4.13
+        - text: But that guide admitted he had walked straight out of a storyteller's imagination.
+          atS: 64.98
+          durationS: 4.15
+        - text: So if you hear music here after dark, the legend has a name ready for it.
+          atS: 69.19
+          durationS: 3.95
+        - text: Whether anyone is singing is another matter.
+          atS: 73.19
+          durationS: 2.28

@@ -9,7 +9,7 @@ at: { lat: 29.96599, lng: -90.06355 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 60
+durationS: 63
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -39,7 +39,7 @@ pronunciations:
     say: ESS-pluh-nade
   - written: Carondelet
     say: kuh-RON-duh-let
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look down Esplanade Avenue, toward the river."
@@ -77,3 +77,56 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-named-for-empty-ground/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 63.3
+    audioBytes: 1014012
+    transcript:
+      totalS: 63.3
+      lines:
+        - text: Look down Esplanade Avenue, toward the river.
+          atS: 0
+          durationS: 3.84
+        - text: The trees, the wide middle, the old houses on both sides.
+          atS: 4.12
+          durationS: 4.4
+        - text: A guidebook of nineteen hundred and four said this avenue was to the Creoles what St.
+          atS: 9.03
+          durationS: 5.28
+        - text: Charles Avenue was to the Americans.
+          atS: 14.34
+          durationS: 2.43
+        - text: Their grand residence street.
+          atS: 17.28
+          durationS: 1.78
+        - text: The name is older than the houses, and it is a soldier's word.
+          atS: 19.56
+          durationS: 3.57
+        - text: Right here, where Rampart now crosses Esplanade, the Spanish governor Carondelet put up a fort in seventeen ninety-six.
+          atS: 23.94
+          durationS: 9.15
+        - text: Fort St.
+          atS: 33.53
+          durationS: 0.67
+        - text: Ferdinand.
+          atS: 34.23
+          durationS: 0.91
+        - text: It was part of a ring of defenses around the town.
+          atS: 35.74
+          durationS: 3.08
+        - text: An esplanade is the open, cleared ground that lies outside a line of fortifications like that.
+          atS: 39.51
+          durationS: 6.07
+        - text: Flat, bare and empty.
+          atS: 46.28
+          durationS: 2.22
+        - text: That is what this was.
+          atS: 49.01
+          durationS: 1.39
+        - text: The fort was taken down early in the eighteen-hundreds, and the town spread out across the cleared ground.
+          atS: 50.84
+          durationS: 6
+        - text: So the finest address in Creole New Orleans is named for the space that was meant to stay empty.
+          atS: 57.8
+          durationS: 5.5

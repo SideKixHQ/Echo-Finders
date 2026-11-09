@@ -9,7 +9,7 @@ triggerRadiusKm: 0.09
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: history
 format: short
-durationS: 85
+durationS: 79
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -50,7 +50,7 @@ simple:
 
     For about thirty-four years, two out of every three people moving to America walked through this door.
 
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It went up between 1808 and 1811, on the rocks off the tip of Manhattan"
@@ -109,3 +109,53 @@ sources:
     url: https://www.historiclowermanhattan.org/immigration/castle-clinton-national-monument
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/castle-clinton-eight-million/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 78.9
+    audioBytes: 1262697
+    transcript:
+      totalS: 78.9
+      lines:
+        - text: The round sandstone building ahead of you was built to stop an invasion that never came.
+          atS: 0
+          durationS: 4.64
+        - text: It went up between 1808 and 1811, on the rocks off the tip of Manhattan, about three hundred feet offshore, with a bridge back to the land.
+          atS: 5.46
+          durationS: 9.45
+        - text: Its guns never had occasion to fire on the enemy.
+          atS: 15.6
+          durationS: 2.95
+        - text: The landfill came later.
+          atS: 18.94
+          durationS: 1.66
+        - text: So did almost everything else it has been.
+          atS: 21.04
+          durationS: 2.38
+        - text: Because in 1855 the fort became a door.
+          atS: 23.93
+          durationS: 3.4
+        - text: In August that year Castle Garden opened as an immigrant landing depot, the first official immigrant processing center in the nation, leased to the State of New York.
+          atS: 28.44
+          durationS: 10.31
+        - text: Over the next thirty-four years more than eight million people came through it and out into the rest of their lives.
+          atS: 39.45
+          durationS: 7.2
+        - text: In those years, two out of every three immigrants to the United States passed through this one building.
+          atS: 47.34
+          durationS: 6.2
+        - text: It closed in 1890, when the federal government took immigration over.
+          atS: 53.75
+          durationS: 4.53
+        - text: In 1892 the work moved out to Ellis Island, where the ferries go now.
+          atS: 58.61
+          durationS: 4.83
+        - text: "The fort stayed, and became other things again: a theatre and opera house before all that, an aquarium after it."
+          atS: 64.04
+          durationS: 7.41
+        - text: Eight million arrivals, and almost nobody stops here.
+          atS: 71.96
+          durationS: 3.45
+        - text: Most people walk past it to queue for the boat.
+          atS: 76.01
+          durationS: 2.84

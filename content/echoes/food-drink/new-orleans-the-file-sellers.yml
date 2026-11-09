@@ -9,7 +9,7 @@ at: { lat: 29.95765, lng: -90.06172 }
 triggerRadiusKm: 0.05
 category: food-drink
 format: short
-durationS: 84
+durationS: 81
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -39,7 +39,7 @@ pronunciations:
     say: PONCH-er-train
   - written: Choctaw
     say: CHOK-taw
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In the Spanish years a butcher's shed went up, and the market grew along the river from there."
@@ -102,3 +102,62 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/normansneworlean00norm/normansneworlean00norm.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-file-sellers/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.2
+    audioBytes: 1299896
+    transcript:
+      totalS: 81.2
+      lines:
+        - text: Walk in under the long roof of the market and look along the line of columns.
+          atS: 0
+          durationS: 4.6
+        - text: Before there was any roof here, there was the open levee, just downriver of the old parade ground.
+          atS: 5.55
+          durationS: 6.21
+        - text: People laid out what they had to sell on the ground.
+          atS: 12.46
+          durationS: 2.9
+        - text: Vegetables, fruit, game, skins, herbs, baskets.
+          atS: 15.74
+          durationS: 5.14
+        - text: Hunters and trappers.
+          atS: 21.06
+          durationS: 1.38
+        - text: Black vendors.
+          atS: 22.77
+          durationS: 1.06
+        - text: Native traders.
+          atS: 24
+          durationS: 1.2
+        - text: In the Spanish years a butcher's shed went up, and the market grew along the river from there.
+          atS: 25.7
+          durationS: 5.65
+        - text: One thing kept arriving, long after the sheds went up.
+          atS: 31.96
+          durationS: 3.53
+        - text: At the start of the twentieth century, Choctaw women still came here twice a week from their settlement at Bayou Lacombe, across Lake Pontchartrain.
+          atS: 36.1
+          durationS: 9.72
+        - text: They crossed the lake by steamer, walked from the lakeshore to this market, and sat with bundles of herbs, baskets, and one thing above all.
+          atS: 46.51
+          durationS: 8.72
+        - text: Dried sassafras leaves, pounded into a powder.
+          atS: 55.55
+          durationS: 3.32
+        - text: Filé.
+          atS: 59.2
+          durationS: 0.84
+        - text: It was a Native food first.
+          atS: 60.19
+          durationS: 1.92
+        - text: Creole cooks took it up to thicken their gumbo, and kept it.
+          atS: 62.54
+          durationS: 3.52
+        - text: A guidebook from nineteen oh four says the Choctaw sellers here always found a ready sale.
+          atS: 66.39
+          durationS: 5.72
+        - text: So if your gumbo in this city comes with filé, that powder is a Native food, and for a long time, Choctaw women sold it right here.
+          atS: 72.49
+          durationS: 8.69

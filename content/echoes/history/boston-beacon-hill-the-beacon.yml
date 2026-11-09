@@ -40,7 +40,7 @@ script: |
 pronunciations:
   - written: Bulfinch
     say: BULL-finch
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In sixteen thirty-five, the English settlers put up a tall wooden beacon on top of this hill."
@@ -101,3 +101,62 @@ sources:
     url: https://www.loc.gov/item/01012230/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-beacon-hill-the-beacon/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.7
+    audioBytes: 1100111
+    transcript:
+      totalS: 68.7
+      lines:
+        - text: Find the tall column with the eagle on top.
+          atS: 0
+          durationS: 2.74
+        - text: It stands in for something that is gone.
+          atS: 3.02
+          durationS: 2.32
+        - text: In sixteen thirty-five, the English settlers put up a tall wooden beacon on top of this hill.
+          atS: 6.15
+          durationS: 5.78
+        - text: If danger came, an attack or an outbreak, it could warn the countryside.
+          atS: 12.45
+          durationS: 4.9
+        - text: The hill took its name from it.
+          atS: 17.79
+          durationS: 1.78
+        - text: In seventeen seventy-five, with colonial troops gathering across the river at Cambridge, General Gage built a small fort up here, and had the beacon taken down.
+          atS: 20.26
+          durationS: 10.26
+        - text: He did not want anyone signalling to the countryside.
+          atS: 31.03
+          durationS: 3.15
+        - text: The British left Boston in March seventeen seventy-six.
+          atS: 34.5
+          durationS: 3.69
+        - text: Bostonians put the beacon straight back up.
+          atS: 38.41
+          durationS: 2.7
+        - text: It lasted another thirteen years.
+          atS: 41.55
+          durationS: 2.4
+        - text: In seventeen eighty-nine, a storm blew it down.
+          atS: 44.4
+          durationS: 3.52
+        - text: The eagle column, designed by Charles Bulfinch, took its place.
+          atS: 48.24
+          durationS: 4.33
+        - text: The hill has changed even more than the beacon.
+          atS: 52.95
+          durationS: 2.9
+        - text: It once had three peaks.
+          atS: 56.37
+          durationS: 1.96
+        - text: Bostonians dug much of them away to fill in land around the city.
+          atS: 58.71
+          durationS: 4.25
+        - text: The beacon is gone, and most of the hill is gone.
+          atS: 63.34
+          durationS: 3.05
+        - text: Only the name stayed put.
+          atS: 66.72
+          durationS: 1.96

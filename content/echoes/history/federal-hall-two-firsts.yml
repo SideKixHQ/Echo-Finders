@@ -9,7 +9,7 @@ triggerRadiusKm: 0.06
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: history
 format: short
-durationS: 74
+durationS: 70
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ pronunciations:
     say: HOW-ston Street
     ipa: ˈhaʊstən
 
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The one that mattered was New York's old City Hall, and it stood on this site."
@@ -86,3 +86,50 @@ sources:
     url: https://www.nps.gov/feha/learn/hc.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/federal-hall-two-firsts/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.7
+    audioBytes: 1115576
+    transcript:
+      totalS: 69.7
+      lines:
+        - text: Stand facing the columns, and know that this is not the building.
+          atS: 0
+          durationS: 3.69
+        - text: The one that mattered was New York's old City Hall, and it stood on this site.
+          atS: 3.94
+          durationS: 4.69
+        - text: What happened in it, the country is still living inside.
+          atS: 9.32
+          durationS: 3.71
+        - text: In 1735 a printer named John Peter Zenger was tried here for libel.
+          atS: 13.85
+          durationS: 4.84
+        - text: He had attacked the government of Governor William Cosby in his newspaper.
+          atS: 19.2
+          durationS: 3.8
+        - text: The chief justice told the jury the law was very clear, and that the truth could not be admitted to justify a libel.
+          atS: 23.44
+          durationS: 7.31
+        - text: Zenger's lawyer, Andrew Hamilton, argued that the truth is a defence.
+          atS: 31.36
+          durationS: 4.69
+        - text: The jury came back with not guilty.
+          atS: 36.56
+          durationS: 2.57
+        - text: The Park Service says the trial would lead the way for the First Amendment and a free press.
+          atS: 39.82
+          durationS: 5.48
+        - text: Fifty-four years later the same building, remodelled for the new federal government, was where the First Congress met.
+          atS: 45.91
+          durationS: 7.1
+        - text: On the thirtieth of April 1789, George Washington was inaugurated here as the country's first president.
+          atS: 53.71
+          durationS: 7.58
+        - text: That building was demolished in 1812.
+          atS: 62.1
+          durationS: 2.67
+        - text: What you are looking at opened in 1842, as a customs house.
+          atS: 65.15
+          durationS: 4.51

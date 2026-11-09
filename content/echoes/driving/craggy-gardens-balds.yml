@@ -7,12 +7,11 @@ triggerRadiusKm: 3
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: land
 format: short
-durationS: 57
+durationS: 52
 visibility: landmark-visible
 certainty: documented
 certaintyNote: >-
-  Grazing, fire, ice-age climate and megafauna browsing have all been proposed. No single
-  explanation is accepted, and the script says so rather than picking one.
+  Grazing, fire, ice-age climate and megafauna browsing have all been proposed. No single explanation is accepted, and the script says so rather than picking one.
 minAge: 0
 quality: 0.85
 tags: [blue-ridge, north-carolina, appalachians, ecology]
@@ -28,7 +27,7 @@ script: |
 
   So the mystery might be solving itself, in the least useful way.
 
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The trees stop, and then there are shrubs and grass."
@@ -63,3 +62,41 @@ sources:
     url: https://www.nps.gov/places/craggy-gardens.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/craggy-gardens-balds/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52
+    audioBytes: 832617
+    transcript:
+      totalS: 52
+      lines:
+        - text: Look at the tops of the ridges around you.
+          atS: 0
+          durationS: 2.24
+        - text: The trees stop, and then there are shrubs and grass.
+          atS: 2.68
+          durationS: 2.9
+        - text: They are called balds, and the Park Service's own history of this road says plainly that the origin of the balds is unclear.
+          atS: 6.03
+          durationS: 7.76
+        - text: "One idea is natural: fires started by lightning."
+          atS: 14.73
+          durationS: 3.89
+        - text: "Another is human: that people cleared them to graze livestock in the summer."
+          atS: 19.06
+          durationS: 4.52
+        - text: Grazing was widespread in the Great Craggies until the nineteen twenties, when it was stopped to protect the water supply for Asheville.
+          atS: 24.88
+          durationS: 7.86
+        - text: What is clear is that a bald does not have to stay bald.
+          atS: 33.18
+          durationS: 3.9
+        - text: Further down the Parkway, Tennessee Bald was largely bare when the road was being planned in the nineteen thirties.
+          atS: 37.59
+          durationS: 6.74
+        - text: Today it is covered in spruce and fir.
+          atS: 44.85
+          durationS: 2.72
+        - text: So the mystery might be solving itself, in the least useful way.
+          atS: 48.01
+          durationS: 3.96

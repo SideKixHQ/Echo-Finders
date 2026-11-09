@@ -9,7 +9,7 @@ at: { lat: 42.35788, lng: -71.05948 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 84
+durationS: 75
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,7 +37,7 @@ script: |
   As for Franklin. He started here at eight years old, and he lasted one year.
 
   Of everyone who ever studied on this street, he is the one who stayed.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "You are on School Street."
@@ -105,3 +105,68 @@ sources:
     url: https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-school-that-lost-its-ground/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.6
+    audioBytes: 1194570
+    transcript:
+      totalS: 74.6
+      lines:
+        - text: You are on School Street.
+          atS: 0
+          durationS: 1.53
+        - text: It is named after a school that is not here.
+          atS: 1.92
+          durationS: 2.64
+        - text: Find the bronze statue of Benjamin Franklin, set back from the sidewalk.
+          atS: 5.36
+          durationS: 4.86
+        - text: Close by, in the sixteen thirties, the town of Boston started its first school.
+          atS: 10.74
+          durationS: 5.63
+        - text: The Latin School.
+          atS: 16.61
+          durationS: 1.29
+        - text: A plain building of one storey, big enough for about a hundred pupils.
+          atS: 18.29
+          durationS: 4.47
+        - text: Now look up the street, toward the dark stone church on the corner.
+          atS: 23.14
+          durationS: 3.84
+        - text: That is King's Chapel.
+          atS: 27.26
+          durationS: 1.53
+        - text: In the seventeen forties the chapel wanted to rebuild, bigger.
+          atS: 29.23
+          durationS: 4.13
+        - text: It needed more ground, and part of that ground had the schoolhouse on it.
+          atS: 33.69
+          durationS: 4.93
+        - text: After a good deal of haggling, the church built the school a new house on the other side of the street, and took the old site.
+          atS: 39.58
+          durationS: 7.62
+        - text: The town was not pleased.
+          atS: 47.52
+          durationS: 1.78
+        - text: A local wit put it in verse.
+          atS: 49.62
+          durationS: 2.11
+        - text: A fig for your learning, I tell you the town, to make the church larger, must pull the school down.
+          atS: 52.12
+          durationS: 6.12
+        - text: In time the school moved on again, away from this street.
+          atS: 58.84
+          durationS: 3.92
+        - text: The street kept the name anyway.
+          atS: 62.97
+          durationS: 1.95
+        - text: As for Franklin.
+          atS: 65.2
+          durationS: 1.13
+        - text: He started here at eight years old, and he lasted one year.
+          atS: 66.65
+          durationS: 3.45
+        - text: Of everyone who ever studied on this street, he is the one who stayed.
+          atS: 70.38
+          durationS: 4.2

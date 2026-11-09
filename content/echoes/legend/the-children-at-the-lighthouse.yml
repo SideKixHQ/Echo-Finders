@@ -9,12 +9,11 @@ at: { lat: 29.88543, lng: -81.28852 }
 triggerRadiusKm: 0.06
 category: legend
 format: short
-durationS: 88
+durationS: 73
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published legend. The script says out loud that the haunting is reported, not proven;
-  no supernatural claim is established.
+  A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -53,7 +52,7 @@ script: |
 
   Both deserve to be told with care.
 
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Before the tower was completed, this was a construction site where children sometimes played."
@@ -94,3 +93,65 @@ sources:
     url: https://www.staugustinelighthouse.org/2023/03/19/pittee-descendants-visit-the-museum/
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-children-at-the-lighthouse/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 73.4
+    audioBytes: 1175762
+    transcript:
+      totalS: 73.4
+      lines:
+        - text: Look up at the lighthouse.
+          atS: 0
+          durationS: 1.33
+        - text: Before the tower was completed, this was a construction site where children sometimes played.
+          atS: 1.94
+          durationS: 5.14
+        - text: In July 1873, children rode a cart used to carry building supplies down to the water.
+          atS: 7.69
+          durationS: 5.89
+        - text: The board that should have stopped it at the end of the rail was not in place, and the cart flipped into the water.
+          atS: 14.01
+          durationS: 5.56
+        - text: Three girls drowned, including two daughters of construction superintendent Hezekiah Pittee.
+          atS: 20.02
+          durationS: 5.64
+        - text: A younger sister, Carrie, survived.
+          atS: 26.04
+          durationS: 2.24
+        - text: The museum documents that tragedy.
+          atS: 28.66
+          durationS: 2
+        - text: The ghost stories came afterward.
+          atS: 30.99
+          durationS: 1.66
+        - text: Its published accounts describe reports of footsteps upstairs with nobody there, and a little girl appearing beside a bed in the keepers' house.
+          atS: 32.86
+          durationS: 7.14
+        - text: Some people connect those stories to the children who died.
+          atS: 40.32
+          durationS: 3.14
+        - text: That connection is belief, not an established fact.
+          atS: 43.9
+          durationS: 3.37
+        - text: It is a legend, and the museum itself says it cannot explain what is reported.
+          atS: 47.7
+          durationS: 4.93
+        - text: Pause beneath the tower.
+          atS: 53.59
+          durationS: 1.56
+        - text: A lighthouse is built to guide people away from danger.
+          atS: 55.47
+          durationS: 3.09
+        - text: Here, a childhood accident became part of the place's remembered history, then part of its folklore.
+          atS: 59
+          durationS: 5.78
+        - text: The deaths were real.
+          atS: 65.29
+          durationS: 1.23
+        - text: The stories of children still moving through the property remain unverified.
+          atS: 66.8
+          durationS: 4.05
+        - text: Both deserve to be told with care.
+          atS: 71.24
+          durationS: 2.18

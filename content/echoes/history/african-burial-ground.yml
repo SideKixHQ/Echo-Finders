@@ -8,7 +8,7 @@ triggerRadiusKm: 0.07
 
 category: history
 format: short
-durationS: 86
+durationS: 84
 visibility: at-hand
 certainty: documented
 minAge: 10
@@ -39,7 +39,7 @@ pronunciations:
   - written: reinterred
     say: ree-in-TERD
 
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In 1991, while the ground on this block was being dug out for a federal office building, workers found graves."
@@ -104,3 +104,47 @@ sources:
     url: https://www.nps.gov/afbg/learn/historyculture/reinterment.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/african-burial-ground/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84.3
+    audioBytes: 1349633
+    transcript:
+      totalS: 84.3
+      lines:
+        - text: In 1991, while the ground on this block was being dug out for a federal office building, workers found graves.
+          atS: 0
+          durationS: 7.25
+        - text: What lay beneath the block was a cemetery.
+          atS: 8.06
+          durationS: 2.2
+        - text: For a century, from the 1690s to the 1790s, free and enslaved Africans in this city had buried their dead here, on land outside the city's northern palisade, eventually five to six acres of it.
+          atS: 10.95
+          durationS: 14.86
+        - text: Later New York built over it, and it was lost under landfill and buildings.
+          atS: 26.32
+          durationS: 4.84
+        - text: The Park Service puts the number buried here at over fifteen thousand.
+          atS: 31.86
+          durationS: 4.19
+        - text: The remains of four hundred and nineteen men, women and children were excavated from the part that was dug.
+          atS: 36.43
+          durationS: 6.27
+        - text: Community activism shaped what happened next, and the descendant community reached an agreement with the government on how they would be studied and remembered.
+          atS: 44
+          durationS: 8.94
+        - text: The remains were studied at Howard University, then reburied here in October 2003.
+          atS: 53.64
+          durationS: 6.83
+        - text: It is the nation's earliest and largest known African American cemetery.
+          atS: 61.07
+          durationS: 5.02
+        - text: "Scholars believe it exists because of a rule: in 1697, Africans were barred from burying their dead in the city's main burial ground."
+          atS: 67.04
+          durationS: 9.54
+        - text: So they made their own, out past the edge of town.
+          atS: 77.02
+          durationS: 3.41
+        - text: You are standing at the edge of town.
+          atS: 81.13
+          durationS: 3.16

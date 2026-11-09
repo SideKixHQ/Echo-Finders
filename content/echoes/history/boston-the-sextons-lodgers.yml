@@ -9,7 +9,7 @@ at: { lat: 42.36623, lng: -71.05462 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 75
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -42,7 +42,7 @@ script: |
 pronunciations:
   - written: Sheafe Street
     say: SHEEF Street
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It says the signal lanterns of Paul Revere were shown in the steeple of this church."
@@ -114,3 +114,59 @@ sources:
     url: https://www.loc.gov/item/01015801/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-sextons-lodgers/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.5
+    audioBytes: 1096350
+    transcript:
+      totalS: 68.5
+      lines:
+        - text: Look at the brick tower, and the tablet on its front.
+          atS: 0
+          durationS: 3.11
+        - text: It says the signal lanterns of Paul Revere were shown in the steeple of this church.
+          atS: 3.5
+          durationS: 4.83
+        - text: It does not say who carried them up.
+          atS: 8.93
+          durationS: 2.1
+        - text: On the night of the eighteenth of April, seventeen seventy-five, by the usual account, two men let themselves in.
+          atS: 12.14
+          durationS: 6.98
+        - text: One was John Pulling, a member of the vestry.
+          atS: 19.73
+          durationS: 3.2
+        - text: The other was the man who kept the church, its sexton.
+          atS: 23.37
+          durationS: 3.79
+        - text: His name was Robert Newman.
+          atS: 27.67
+          durationS: 2
+        - text: They climbed to the top of the tower, the tallest structure in the town.
+          atS: 30.96
+          durationS: 3.88
+        - text: They held two lanterns near the windows, briefly.
+          atS: 35.28
+          durationS: 3.03
+        - text: Then they got out.
+          atS: 38.75
+          durationS: 1.43
+        - text: Two lanterns meant the British troops were crossing the river by water, heading for Lexington and Concord.
+          atS: 40.79
+          durationS: 5.96
+        - text: Newman lived a block up this street, on the corner of Sheafe Street.
+          atS: 47.18
+          durationS: 3.6
+        - text: And there is one more detail about that house.
+          atS: 51.22
+          durationS: 2.45
+        - text: At the time, British officers were quartered in it, on the Newman family.
+          atS: 54.18
+          durationS: 4.33
+        - text: So the signal that the army was moving went up from the tallest building in Boston.
+          atS: 59.02
+          durationS: 4.78
+        - text: And the man who hung it was sharing his home with the army's officers.
+          atS: 64.32
+          durationS: 4.13

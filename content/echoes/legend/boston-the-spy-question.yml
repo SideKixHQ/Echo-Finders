@@ -9,12 +9,11 @@ at: { lat: 42.36010, lng: -71.05575 }
 triggerRadiusKm: 0.05
 category: legend
 format: short
-durationS: 88
+durationS: 70
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  The weathervane, its maker and its history are documented by the National Park Service. The
-  spy test is a legend the Park Service itself labels as one; the script says so out loud.
+  The weathervane, its maker and its history are documented by the National Park Service. The spy test is a legend the Park Service itself labels as one; the script says so out loud.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -48,7 +47,7 @@ script: |
   up.
 
   Then decide whether the question would still work.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look up at Faneuil Hall, at the little tower on its roof, and then at the very tip of it."
@@ -119,3 +118,62 @@ pronunciations:
     say: "FAN-yul"
   - written: "Drowne"
     say: "DROWN"
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/boston-the-spy-question/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 69.9
+    audioBytes: 1120173
+    transcript:
+      totalS: 69.9
+      lines:
+        - text: Look up at Faneuil Hall, at the little tower on its roof, and then at the very tip of it.
+          atS: 0
+          durationS: 5.78
+        - text: That gold shape catching the light is not an arrow, and it is not a rooster.
+          atS: 6.22
+          durationS: 4.57
+        - text: It is a grasshopper.
+          atS: 11.04
+          durationS: 1.22
+        - text: It is about four feet long, made of copper and covered in gold, and it has been up there since seventeen forty two.
+          atS: 12.54
+          durationS: 6.88
+        - text: A craftsman named Shem Drowne made it, probably copying the grasshopper on the Royal Exchange in London.
+          atS: 19.75
+          durationS: 6.13
+        - text: It has been knocked off by an earthquake.
+          atS: 26.09
+          durationS: 1.9
+        - text: It needed mending after a fire.
+          atS: 28.07
+          durationS: 2.02
+        - text: In the nineteen seventies it was stolen, and after a week of searching it turned up hidden in the hall's own tower.
+          atS: 30.42
+          durationS: 6.17
+        - text: And there is a story about it that nobody has ever proved.
+          atS: 36.7
+          durationS: 3.06
+        - text: The story goes that during the War of Eighteen Twelve, with Boston nervous about British spies, a stranger could be stopped and asked one question.
+          atS: 40.09
+          durationS: 8.89
+        - text: What is on top of Faneuil Hall?
+          atS: 49.31
+          durationS: 2.21
+        - text: Any Bostonian would know.
+          atS: 51.79
+          durationS: 1.66
+        - text: A spy would have to guess.
+          atS: 53.63
+          durationS: 1.56
+        - text: The National Park Service tells that one as a legend, and a legend is what it is.
+          atS: 55.51
+          durationS: 5.29
+        - text: But stand here for a minute and watch the people walking past.
+          atS: 61.24
+          durationS: 3.32
+        - text: Count how many of them look up.
+          atS: 64.95
+          durationS: 1.78
+        - text: Then decide whether the question would still work.
+          atS: 67.17
+          durationS: 2.77

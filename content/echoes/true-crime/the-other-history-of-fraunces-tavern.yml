@@ -9,7 +9,7 @@ at: { lat: 40.70330, lng: -74.01145 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 76
+durationS: 68
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -47,13 +47,13 @@ script: |
   people whose lives ended almost two centuries later.
 
   Both histories belong to it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: unsolved
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-09"
+  reviewedAt: "2026-11-09"
   contentWarning: "This echo describes a bombing that killed four people. No injuries are described."
 claims:
   - says: "This block is often associated with the American Revolution."
@@ -96,3 +96,53 @@ sources:
     url: https://www.loc.gov/item/ny1654/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-other-history-of-fraunces-tavern/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 67.9
+    audioBytes: 1087572
+    transcript:
+      totalS: 67.9
+      lines:
+        - text: This block is often associated with the American Revolution.
+          atS: 0
+          durationS: 3.26
+        - text: But its history includes a much more recent act of violence.
+          atS: 3.7
+          durationS: 3.47
+        - text: On January 24, 1975, at lunchtime, a bomb exploded in the building at 101 Broad Street, part of the Fraunces Tavern complex.
+          atS: 7.62
+          durationS: 9.98
+        - text: Four people were killed, and dozens were injured.
+          atS: 18.04
+          durationS: 2.65
+        - text: The organization known as the FALN claimed responsibility.
+          atS: 21.2
+          durationS: 4.12
+        - text: That claim belongs to the historical record.
+          atS: 25.7
+          durationS: 2.62
+        - text: It does not establish the identity of every person involved in preparing or placing the bomb.
+          atS: 28.61
+          durationS: 5.13
+        - text: Look at the buildings together.
+          atS: 34.34
+          durationS: 1.54
+        - text: "It is easy to imagine a historic place as belonging to one period: colonial rooms, old paintings, Washington's farewell to his officers in 1783."
+          atS: 36.21
+          durationS: 10.67
+        - text: People continued using these buildings long after that period ended.
+          atS: 47.32
+          durationS: 3.88
+        - text: They came here to work, meet, and eat.
+          atS: 51.58
+          durationS: 2.54
+        - text: The bombing became another chapter in the life of this block.
+          atS: 54.57
+          durationS: 3.19
+        - text: Standing here, you are beside a place associated with the founding of a country and with people whose lives ended almost two centuries later.
+          atS: 58.14
+          durationS: 7.78
+        - text: Both histories belong to it.
+          atS: 66.16
+          durationS: 1.73

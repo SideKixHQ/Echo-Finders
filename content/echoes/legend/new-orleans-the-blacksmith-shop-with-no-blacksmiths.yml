@@ -9,13 +9,11 @@ at: { lat: 29.96097, lng: -90.06353 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 96
+durationS: 87
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  The blacksmith shop is a tradition in print since at least 1884; the National Park Service
-  says no evidence confirms it. Marie Louise Villard's house across the street is documented.
-  The script says which is which.
+  The blacksmith shop is a tradition in print since at least 1884; the National Park Service says no evidence confirms it. Marie Louise Villard's house across the street is documented. The script says which is which.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -42,7 +40,7 @@ pronunciations:
     say: lah-FEET
   - written: Villard
     say: vee-YAR
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the small, low cottage on the corner of Bourbon and Saint Philip."
@@ -109,3 +107,62 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/creolesoflouisia01cabl/creolesoflouisia01cabl.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-orleans-the-blacksmith-shop-with-no-blacksmiths/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 86.9
+    audioBytes: 1391429
+    transcript:
+      totalS: 86.9
+      lines:
+        - text: Look at the small, low cottage on the corner of Bourbon and Saint Philip.
+          atS: 0
+          durationS: 3.8
+        - text: Its walls are brick packed between wooden posts, the way houses here were built long ago, and in places the plaster over them has worn thin.
+          atS: 4.24
+          durationS: 8.97
+        - text: It is called Lafitte's Blacksmith Shop.
+          atS: 13.65
+          durationS: 2.9
+        - text: The story goes that the smuggler Jean Lafitte and his brother Pierre ran a forge on this corner, as cover for their real business.
+          atS: 17.07
+          durationS: 7.86
+        - text: It is an old story.
+          atS: 25.44
+          durationS: 1.56
+        - text: George Washington Cable printed it as fact in eighteen eighty-four.
+          atS: 27.5
+          durationS: 4.33
+        - text: When federal surveyors came to study the cottage, they found a bronze plate on the corner that read Lafitte's Rendezvous, site blacksmith shop, eighteen ten.
+          atS: 32.44
+          durationS: 10.08
+        - text: But they also found no record of who built it, or when.
+          atS: 42.96
+          durationS: 3.34
+        - text: And the National Park Service, which tells the Lafittes' story today, says plainly that no evidence confirms the legend.
+          atS: 46.74
+          durationS: 7.05
+        - text: What the records do show is across the street.
+          atS: 54.17
+          durationS: 2.51
+        - text: On the opposite corner stood a house bought in eighteen sixteen by Marie Louise Villard, a free woman of color and Pierre Lafitte's partner of many years.
+          atS: 57.06
+          durationS: 9.08
+        - text: They had seven children together.
+          atS: 66.65
+          durationS: 1.74
+        - text: The house was in her name, so the government could not seize it for the brothers' crimes.
+          atS: 69
+          durationS: 4.46
+        - text: Pierre was in this neighborhood often.
+          atS: 74.27
+          durationS: 1.9
+        - text: That, the Park Service suggests, may be how the legend found this corner.
+          atS: 76.45
+          durationS: 4.12
+        - text: So the Lafittes probably never shod a horse here.
+          atS: 81.08
+          durationS: 2.79
+        - text: But one of them had a family just over the road.
+          atS: 84.31
+          durationS: 2.58

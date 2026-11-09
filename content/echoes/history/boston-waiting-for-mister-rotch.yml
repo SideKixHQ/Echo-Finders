@@ -9,7 +9,7 @@ at: { lat: 42.35705, lng: -71.05870 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 100
+durationS: 93
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -45,7 +45,7 @@ script: |
 
   It began as a meeting that ran out of options. Look at the doors. That is the way they
   went.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Thousands of people in this building, in the dusk, waiting on one man on a cold road."
@@ -140,3 +140,86 @@ sources:
 pronunciations:
   - written: "Rotch"
     say: "ROTCH, rhymes with notch"
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-waiting-for-mister-rotch/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 92.8
+    audioBytes: 1486305
+    transcript:
+      totalS: 92.8
+      lines:
+        - text: This is the Old South Meeting House.
+          atS: 0
+          durationS: 2.6
+        - text: On the morning of the sixteenth of December, seventeen seventy three, nearly five thousand people crowded in.
+          atS: 3.55
+          durationS: 6.52
+        - text: About a third of the town.
+          atS: 10.52
+          durationS: 1.63
+        - text: Three ships full of tea were tied up at a wharf nearby.
+          atS: 12.42
+          durationS: 3.63
+        - text: By law, the tea had to be landed and the tax paid by the next day.
+          atS: 16.5
+          durationS: 4.27
+        - text: The crowd wanted the ships sent home instead.
+          atS: 21.28
+          durationS: 2.53
+        - text: Only the governor could let them go.
+          atS: 24.41
+          durationS: 1.78
+        - text: And the governor was not in town.
+          atS: 26.37
+          durationS: 1.88
+        - text: He was at his country house in Milton, ten miles away.
+          atS: 28.69
+          durationS: 3.54
+        - text: So the owner of one of the ships, Francis Rotch, was sent to ask him.
+          atS: 33.04
+          durationS: 5.64
+        - text: In December.
+          atS: 39.29
+          durationS: 0.94
+        - text: Twenty miles there and back, in freezing rain.
+          atS: 40.74
+          durationS: 2.98
+        - text: And everyone waited.
+          atS: 44.16
+          durationS: 1.23
+        - text: They waited through the morning.
+          atS: 46.09
+          durationS: 1.56
+        - text: They broke off and came back at three.
+          atS: 48.34
+          durationS: 2.2
+        - text: By four it was getting dark, and Rotch had still not returned.
+          atS: 51.06
+          durationS: 5.28
+        - text: Thousands of people in this building, in the dusk, waiting on one man on a cold road.
+          atS: 56.78
+          durationS: 5.33
+        - text: When he finally came in, the answer was no.
+          atS: 62.81
+          durationS: 2.9
+        - text: By the traditional account, Samuel Adams stood and said, this meeting can do nothing more to save the country.
+          atS: 66.32
+          durationS: 6.35
+        - text: A war whoop went up at the doors.
+          atS: 73.97
+          durationS: 1.98
+        - text: Men with soot on their faces were already in the street, heading for the wharf.
+          atS: 76.34
+          durationS: 4.13
+        - text: By the end of the night, three hundred and forty two chests of tea were in the harbour.
+          atS: 80.98
+          durationS: 4.74
+        - text: It began as a meeting that ran out of options.
+          atS: 86.04
+          durationS: 3.12
+        - text: Look at the doors.
+          atS: 89.55
+          durationS: 1.17
+        - text: That is the way they went.
+          atS: 90.93
+          durationS: 1.9

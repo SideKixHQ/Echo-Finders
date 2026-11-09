@@ -9,15 +9,11 @@ at: { lat: 42.35672, lng: -71.06190 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 76
+durationS: 75
 visibility: at-hand
 certainty: contested
 certaintyNote: >-
-  Two origins for the nickname circulate in the record. Newspapers of 1897 and 1902 credit
-  the preaching of the first minister, Edward Dorr Griffin; a 1922 New York Herald review
-  of a history of Park Street reports its author, Dr. Lawrence, saying instead that brimstone
-  for gunpowder was stored in the building during the War of 1812. The script gives both
-  and picks neither.
+  Two origins for the nickname circulate in the record. Newspapers of 1897 and 1902 credit the preaching of the first minister, Edward Dorr Griffin; a 1922 New York Herald review of a history of Park Street reports its author, Dr. Lawrence, saying instead that brimstone for gunpowder was stored in the building during the War of 1812. The script gives both and picks neither.
 minAge: 0
 quality: 0.75
 tags: [boston, boston-core, freedom-trail, churches, war-of-1812, place-names]
@@ -44,7 +40,7 @@ script: |
 
   So the corner got its name from the pulpit, or from the storeroom. Either way, it was the
   same smell.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This is Park Street Church, and for more than a century Bostonians have called this spot Brimstone Corner."
@@ -121,3 +117,56 @@ sources:
     url: https://www.loc.gov/resource/sn86090383/1909-02-20/ed-1/?sp=2
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-brimstone-corner/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.5
+    audioBytes: 1192898
+    transcript:
+      totalS: 74.5
+      lines:
+        - text: Look up at the spire on the corner.
+          atS: 0
+          durationS: 2.08
+        - text: This is Park Street Church, and for more than a century Bostonians have called this spot Brimstone Corner.
+          atS: 2.59
+          durationS: 7.12
+        - text: Nobody quite agrees why.
+          atS: 10.03
+          durationS: 1.75
+        - text: The first story is about sermons.
+          atS: 12.48
+          durationS: 2.17
+        - text: The church was founded in eighteen-oh-nine, as much of Boston was turning Unitarian, and its early ministers preached the old orthodox faith at full heat.
+          atS: 15.04
+          durationS: 10.38
+        - text: Newspapers around nineteen hundred said the name came from the first of them, Edward Dorr Griffin.
+          atS: 26.11
+          durationS: 5.73
+        - text: One old Boston joke went like this.
+          atS: 32.66
+          durationS: 2.32
+        - text: The Unitarians had managed to freeze over hell, and this congregation broke a hole in the ice and let the flames up again.
+          atS: 35.49
+          durationS: 6.91
+        - text: The second story is about what was kept inside.
+          atS: 43.1
+          durationS: 3.12
+        - text: A Boston historian, in a book about Park Street published in the early nineteen-twenties, said the sermons had nothing to do with it.
+          atS: 46.82
+          durationS: 7.28
+        - text: During the War of eighteen twelve, he said, brimstone for making gunpowder was stored in the building.
+          atS: 54.71
+          durationS: 6.43
+        - text: Brimstone is sulphur.
+          atS: 61.58
+          durationS: 1.49
+        - text: It goes into gunpowder, and it is what hell is supposed to smell of.
+          atS: 63.39
+          durationS: 3.84
+        - text: So the corner got its name from the pulpit, or from the storeroom.
+          atS: 67.84
+          durationS: 3.85
+        - text: Either way, it was the same smell.
+          atS: 72.13
+          durationS: 2.36

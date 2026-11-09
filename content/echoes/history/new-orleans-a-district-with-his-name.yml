@@ -9,7 +9,7 @@ at: { lat: 29.95801, lng: -90.07205 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 88
+durationS: 81
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -36,7 +36,7 @@ detail: |
   The National Park Service says only six original Storyville structures and remnants
   survive, among them Frank Early's Saloon. The Tango Belt, another early jazz district,
   lay just across Basin and North Rampart streets in the French Quarter.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look across Basin Street, away from the French Quarter."
@@ -112,3 +112,71 @@ sources:
     url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Lomax-JellyRollMorton.pdf
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-a-district-with-his-name/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.9
+    audioBytes: 1295298
+    transcript:
+      totalS: 80.9
+      lines:
+        - text: Look across Basin Street, away from the French Quarter.
+          atS: 0
+          durationS: 3.54
+        - text: For twenty years, the blocks over there were a legal red-light district.
+          atS: 4.14
+          durationS: 4.11
+        - text: It operated openly from eighteen ninety-seven.
+          atS: 8.64
+          durationS: 3.18
+        - text: The newspapers called it Storyville, and explained the name.
+          atS: 12.42
+          durationS: 3.91
+        - text: The district had been set up by an ordinance, and the man behind the ordinance was named Story.
+          atS: 16.85
+          durationS: 5.59
+        - text: Music was a sideline here, but a real one.
+          atS: 23.13
+          durationS: 2.81
+        - text: Bands worked the dance halls and cabarets.
+          atS: 26.26
+          durationS: 2.8
+        - text: Pete Lala's.
+          atS: 29.34
+          durationS: 1.07
+        - text: The hundred and one Ranch.
+          atS: 30.56
+          durationS: 1.5
+        - text: The Tuxedo Dance Hall.
+          atS: 32.23
+          durationS: 1.7
+        - text: The Big Twenty-Five.
+          atS: 34.1
+          durationS: 1.42
+        - text: A young pianist named Jelly Roll Morton started out playing in this neighborhood.
+          atS: 36.12
+          durationS: 4.81
+        - text: Jazz was not born here, whatever the legend says.
+          atS: 41.53
+          durationS: 3.06
+        - text: The National Park Service is firm about that.
+          atS: 44.98
+          durationS: 2.65
+        - text: But Storyville put the new music in front of people who might never have heard it otherwise.
+          atS: 47.95
+          durationS: 4.93
+        - text: It ended at midnight on the twelfth of November, nineteen seventeen.
+          atS: 53.58
+          durationS: 4.35
+        - text: Everything closed at the stroke of twelve, at the request of the Navy Department.
+          atS: 58.54
+          durationS: 4.91
+        - text: One wire report said more than a third of the district's two thousand women had already left the city.
+          atS: 64.14
+          durationS: 6.05
+        - text: In the nineteen-forties nearly every building over there was torn down for public housing.
+          atS: 71.01
+          durationS: 5.68
+        - text: The name has outlasted almost all of them.
+          atS: 77.19
+          durationS: 3.7

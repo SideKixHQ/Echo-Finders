@@ -9,7 +9,7 @@ at: { lat: 29.95952, lng: -90.063 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 118
+durationS: 109
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -39,7 +39,7 @@ pronunciations:
     say: Elizabeth ray-AHL
   - written: Natchez
     say: NATCH-iz
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It is called Madame John's Legacy."
@@ -124,3 +124,74 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse/picayunesguideto00unse.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-woman-who-never-lived-here/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 108.6
+    audioBytes: 1739171
+    transcript:
+      totalS: 108.6
+      lines:
+        - text: Look across at the house set up high on its brick ground floor, with a long wooden gallery across the front, and a roof that sweeps down steeply and then flattens out over the gallery, like the brim of a hat.
+          atS: 0
+          durationS: 12.27
+        - text: It is called Madame John's Legacy.
+          atS: 12.88
+          durationS: 3.02
+        - text: Madame John never lived here.
+          atS: 16.59
+          durationS: 1.95
+        - text: She never lived anywhere.
+          atS: 18.79
+          durationS: 1.5
+        - text: She is a character in a story by the writer George Washington Cable.
+          atS: 20.98
+          durationS: 3.96
+        - text: In it, a gentleman named John, about to die, gives his house to the woman who has looked after him, and to her baby daughter.
+          atS: 25.32
+          durationS: 7.91
+        - text: Cable describes it as a frame house with a deep front gallery, the roof running out over it.
+          atS: 33.67
+          durationS: 5.6
+        - text: She sells it, puts the money in a bank, and the bank fails.
+          atS: 39.51
+          durationS: 4.11
+        - text: Somewhere along the way, the story attached itself to this house.
+          atS: 44.43
+          durationS: 4.04
+        - text: By nineteen thirteen a city guide was pointing visitors here, to Madame John's Legacy.
+          atS: 48.98
+          durationS: 5.36
+        - text: The name stuck.
+          atS: 54.73
+          durationS: 1.29
+        - text: The real story of this ground, according to the federal survey of the building, belongs to someone else.
+          atS: 56.4
+          durationS: 6.09
+        - text: Her name was Elizabeth Real.
+          atS: 62.94
+          durationS: 2.76
+        - text: Her husband, a ship's captain, held this lot in the seventeen-twenties.
+          atS: 66.21
+          durationS: 3.95
+        - text: He was killed at Natchez in seventeen twenty-nine.
+          atS: 70.4
+          durationS: 3
+        - text: She married the innkeeper next door, outlived him too, and kept this property in her own hands for some fifty years.
+          atS: 74.1
+          durationS: 6.76
+        - text: When she made her will in seventeen sixty-nine, she was described as ill in body because of her great age, but sound in spirit.
+          atS: 81.36
+          durationS: 8.65
+        - text: The house in front of you came after her.
+          atS: 90.71
+          durationS: 2.6
+        - text: A building contract signed weeks after the great fire of seventeen eighty-eight describes a house that matches it.
+          atS: 93.75
+          durationS: 6.44
+        - text: So the name on this house belongs to a woman somebody made up.
+          atS: 100.8
+          durationS: 3.74
+        - text: The ground under it belonged to one who was very real.
+          atS: 104.98
+          durationS: 3.65

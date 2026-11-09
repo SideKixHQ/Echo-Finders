@@ -9,7 +9,7 @@ at: { lat: 29.96045, lng: -90.07020 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 76
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -44,7 +44,7 @@ pronunciations:
     say: BY-oo Saint John
   - written: luggers
     say: LUG-erz
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Basin Street."
@@ -101,3 +101,59 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/creolesoflouisia01cabl/creolesoflouisia01cabl.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-harbor-behind-the-cemetery/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.7
+    audioBytes: 1100111
+    transcript:
+      totalS: 68.7
+      lines:
+        - text: Look at the street sign.
+          atS: 0
+          durationS: 1.33
+        - text: Basin Street.
+          atS: 1.54
+          durationS: 1.03
+        - text: There is no basin here now.
+          atS: 2.9
+          durationS: 1.56
+        - text: A little over a century ago, there was.
+          atS: 4.78
+          durationS: 2.58
+        - text: Turn the corner at St.
+          atS: 8.06
+          durationS: 1.1
+        - text: Louis Street, an old city guide told its readers, and the Old Basin bursts upon the view.
+          atS: 9.18
+          durationS: 5.41
+        - text: A square of water at the end of a canal, with oyster luggers and charcoal schooners tied up along its banks, unloading.
+          atS: 14.98
+          durationS: 7.6
+        - text: The canal ran from here out to Bayou St.
+          atS: 23.7
+          durationS: 2.32
+        - text: John, and through the bayou boats could reach Lake Pontchartrain.
+          atS: 26.04
+          durationS: 4.26
+        - text: A schooner could come in off the lake and finish its trip close under the old city ramparts.
+          atS: 31
+          durationS: 4.91
+        - text: It was a Spanish governor's project.
+          atS: 36.61
+          durationS: 2.07
+        - text: The Baron de Carondelet had it dug in the seventeen-nineties, to drain the swamps behind the city and to bring trade to its back door.
+          atS: 39.49
+          durationS: 8.13
+        - text: The digging was done by a large force of enslaved men, borrowed from their owners in town and country.
+          atS: 48.05
+          durationS: 6.32
+        - text: By nineteen hundred and four, the guidebooks noted that a railway company had taken over the land along the canal, for car yards and warehouses.
+          atS: 54.97
+          durationS: 8.61
+        - text: The water is gone, and so are the schooners.
+          atS: 64.03
+          durationS: 2.56
+        - text: The street kept the name.
+          atS: 66.91
+          durationS: 1.78

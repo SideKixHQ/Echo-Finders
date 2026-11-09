@@ -9,14 +9,11 @@ at: { lat: 42.36712, lng: -71.05584 }
 triggerRadiusKm: 0.06
 category: legend
 format: short
-durationS: 80
+durationS: 74
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A long-told tradition, not an established fact. The National Park Service says only that
-  some historians suggest British soldiers used headstones here for target practice; an 1892
-  history says the stones are "said to bear the marks". The script says out loud that it is
-  unproven. Malcom's epitaph and his wine-smuggling are documented in the 1921 sketch.
+  A long-told tradition, not an established fact. The National Park Service says only that some historians suggest British soldiers used headstones here for target practice; an 1892 history says the stones are "said to bear the marks". The script says out loud that it is unproven. Malcom's epitaph and his wine-smuggling are documented in the 1921 sketch.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -53,7 +50,7 @@ pronunciations:
     say: MAL-kum
   - written: Copp's Hill
     say: KOPS Hill
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Some of them, people will tell you, are pitted by British musket balls."
@@ -125,3 +122,71 @@ sources:
     url: https://www.loc.gov/item/03024090/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/boston-the-stone-they-shot-at/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 73.7
+    audioBytes: 1179523
+    transcript:
+      totalS: 73.7
+      lines:
+        - text: Look at the slate headstones on this hill.
+          atS: 0
+          durationS: 2.32
+        - text: Some of them, people will tell you, are pitted by British musket balls.
+          atS: 2.93
+          durationS: 4.23
+        - text: The story goes that redcoats used them for target practice while the army held Boston.
+          atS: 7.75
+          durationS: 5.09
+        - text: One stone gets named more than any other.
+          atS: 13.54
+          durationS: 2.65
+        - text: It belongs to a merchant, Captain Daniel Malcom, who died in seventeen sixty-nine.
+          atS: 16.63
+          durationS: 5.84
+        - text: Listen to what was carved on it.
+          atS: 22.91
+          durationS: 1.78
+        - text: A true son of Liberty.
+          atS: 25.01
+          durationS: 1.6
+        - text: A friend to the public.
+          atS: 26.94
+          durationS: 1.45
+        - text: An enemy to oppression.
+          atS: 28.56
+          durationS: 1.42
+        - text: And one of the foremost in opposing the Revenue Acts on America.
+          atS: 30.3
+          durationS: 3.8
+        - text: Malcom meant it.
+          atS: 34.7
+          durationS: 1.51
+        - text: One night in seventeen sixty-eight, with friends carrying clubs, he brought sixty casks of wine ashore from a ship down the harbour, without paying the King's duty.
+          atS: 36.65
+          durationS: 9.7
+        - text: So when the soldiers came, the story says, his stone was the one they chose.
+          atS: 46.87
+          durationS: 4.83
+        - text: Is it true?
+          atS: 51.94
+          durationS: 0.8
+        - text: Nobody has proved it.
+          atS: 53.07
+          durationS: 1.29
+        - text: A history of Boston's burial grounds from eighteen ninety-two put it carefully.
+          atS: 54.6
+          durationS: 4.68
+        - text: Several stones here are said to bear the marks, and Malcom's would seem the most likely.
+          atS: 59.6
+          durationS: 4.63
+        - text: The park service today says only that some historians suggest it.
+          atS: 64.75
+          durationS: 3.45
+        - text: But nobody needed the soldiers to fire.
+          atS: 68.44
+          durationS: 2.21
+        - text: The stone had already said exactly what it thought of them.
+          atS: 70.82
+          durationS: 2.83

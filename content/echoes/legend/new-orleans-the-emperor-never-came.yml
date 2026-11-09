@@ -9,13 +9,11 @@ at: { lat: 29.95588, lng: -90.0653 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 98
+durationS: 81
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  The rescue plot is told as certain by some nineteenth-century writers and called a popular
-  legend by the 1955 federal survey; even the house it attaches to has moved. The script says
-  so.
+  The rescue plot is told as certain by some nineteenth-century writers and called a popular legend by the 1955 federal survey; even the house it attaches to has moved. The script says so.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -48,7 +46,7 @@ pronunciations:
     say: CHAR-ters
   - written: Baratarian
     say: bar-uh-TARE-ee-un
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look across at the three-storey house on the corner of Chartres and Saint Louis, with iron balconies on both street fronts and an old tile roof."
@@ -136,3 +134,62 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdc/20006638/20006638.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-orleans-the-emperor-never-came/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 80.5
+    audioBytes: 1288611
+    transcript:
+      totalS: 80.5
+      lines:
+        - text: Look across at the three-storey house on the corner of Chartres and Saint Louis, with iron balconies on both street fronts and an old tile roof.
+          atS: 0
+          durationS: 8.03
+        - text: It is called the Napoleon House.
+          atS: 8.47
+          durationS: 2.02
+        - text: The story is that it was meant for Napoleon himself.
+          atS: 10.88
+          durationS: 2.97
+        - text: In his last years, Napoleon was held prisoner on the island of Saint Helena.
+          atS: 14.29
+          durationS: 4.49
+        - text: In New Orleans there were Frenchmen who still adored him.
+          atS: 19.23
+          durationS: 2.79
+        - text: One of them was Nicholas Girod, a former mayor of the city, whose family built this house.
+          atS: 22.34
+          durationS: 6.53
+        - text: The story goes that Girod and his friends paid for a fast ship called the Seraphine, signed on one of Jean Lafitte's old gunners as mate, and planned to sail to the island, take the emperor off by night, and bring him here.
+          atS: 29.25
+          durationS: 13.15
+        - text: Then word came that Napoleon had died, in May eighteen twenty-one.
+          atS: 42.68
+          durationS: 4.27
+        - text: The ship never sailed.
+          atS: 47.2
+          durationS: 1.27
+        - text: Is it true?
+          atS: 48.51
+          durationS: 0.86
+        - text: A city guide of nineteen-oh-four said there was every reason to believe it.
+          atS: 49.75
+          durationS: 3.61
+        - text: A federal survey in nineteen fifty-five called it a popular legend.
+          atS: 53.6
+          durationS: 3.87
+        - text: It is not even clear which house it is.
+          atS: 57.91
+          durationS: 2.15
+        - text: That same guide gave the name Napoleon House to a different mansion altogether, near Canal Street, and expected it to be torn down that year.
+          atS: 60.34
+          durationS: 8.03
+        - text: And the survey of nineteen fifty-five found two houses on this short stretch of Chartres Street, both going by the name.
+          atS: 68.75
+          durationS: 6.46
+        - text: The emperor never came to New Orleans.
+          atS: 75.81
+          durationS: 1.89
+        - text: But the city had more than one house ready for him.
+          atS: 77.86
+          durationS: 2.62

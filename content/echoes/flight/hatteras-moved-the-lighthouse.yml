@@ -7,7 +7,7 @@ triggerRadiusKm: 50
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: built
 format: short
-durationS: 71
+durationS: 64
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -25,7 +25,7 @@ script: |
 
   That November the light came back on.
 
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The hook of sand below is Cape Hatteras."
@@ -75,3 +75,35 @@ sources:
     url: https://www.nps.gov/caha/learn/historyculture/movingthelighthouse.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/hatteras-moved-the-lighthouse/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.3
+    audioBytes: 1029476
+    transcript:
+      totalS: 64.3
+      lines:
+        - text: The hook of sand below is Cape Hatteras.
+          atS: 0
+          durationS: 2.84
+        - text: "The Diamond Shoals run out from it as much as ten miles underwater, the Gulf Stream meets the Labrador Current over them, and together they earned this stretch of sea its name: the Graveyard of the Atlantic."
+          atS: 3.96
+          durationS: 12.61
+        - text: "Which is why there has been a lighthouse down there since eighteen oh three, and the current one since eighteen seventy: brick, two hundred and eight feet from the foundation to the top of the lantern, the tallest brick light tower in the country."
+          atS: 16.78
+          durationS: 14.94
+        - text: When it was finished it stood fifteen hundred feet from the sea.
+          atS: 32.83
+          durationS: 3.88
+        - text: By nineteen seventy the sea was a hundred and twenty feet away.
+          atS: 37.41
+          durationS: 4.03
+        - text: So in nineteen ninety nine they jacked up four thousand eight hundred and thirty tons of brick, put it on rails, and pushed it two thousand nine hundred feet to the southwest.
+          atS: 42.25
+          durationS: 11.17
+        - text: It set off on the seventeenth of June and was set down on its new foundation on the ninth of July.
+          atS: 54.12
+          durationS: 6.97
+        - text: That November the light came back on.
+          atS: 61.78
+          durationS: 2.5

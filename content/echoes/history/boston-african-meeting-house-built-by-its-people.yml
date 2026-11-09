@@ -9,7 +9,7 @@ at: { lat: 42.36001, lng: -71.06545 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 70
+durationS: 66
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -38,7 +38,7 @@ script: |
 pronunciations:
   - written: Faneuil
     say: FAN-yul
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "You are in Smith Court."
@@ -107,3 +107,65 @@ sources:
     url: https://www.nps.gov/bost/learn/faneuil-hall-virtual-tour.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-african-meeting-house-built-by-its-people/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.3
+    audioBytes: 1062077
+    transcript:
+      totalS: 66.3
+      lines:
+        - text: You are in Smith Court.
+          atS: 0
+          durationS: 1.36
+        - text: Look at the meeting house.
+          atS: 1.38
+          durationS: 1.21
+        - text: It opened in eighteen-oh-six, and it is the oldest Black church building still standing in the United States.
+          atS: 2.71
+          durationS: 6.19
+        - text: Look at it as a building for a moment.
+          atS: 9.17
+          durationS: 2.02
+        - text: Somebody had to pay for it, and somebody had to build it.
+          atS: 11.4
+          durationS: 3.06
+        - text: The African Baptist Church was founded the year before, with twenty-four members.
+          atS: 14.68
+          durationS: 4.76
+        - text: Fifteen of them were women.
+          atS: 19.76
+          durationS: 1.49
+        - text: To give it a home, a man named Cato Gardner, born in Africa, went out and raised fifteen hundred dollars himself.
+          atS: 21.69
+          durationS: 7.55
+        - text: Black craftsmen did most of the work.
+          atS: 29.68
+          durationS: 2.29
+        - text: Then the building did its job.
+          atS: 32.17
+          durationS: 1.7
+        - text: It was a church, and a school met on the first floor.
+          atS: 34.31
+          durationS: 3.22
+        - text: Frederick Douglass spoke here.
+          atS: 38.13
+          durationS: 1.92
+        - text: So did Maria Stewart.
+          atS: 40.48
+          durationS: 1.63
+        - text: In eighteen thirty-two, William Lloyd Garrison founded the New England Anti-Slavery Society inside.
+          atS: 43.06
+          durationS: 6.56
+        - text: People called it the Black Faneuil Hall.
+          atS: 50.06
+          durationS: 2.67
+        - text: It was meant as a compliment.
+          atS: 53.24
+          durationS: 1.53
+        - text: But Faneuil Hall was the gift of one rich merchant, a man who bought and sold enslaved people.
+          atS: 55.22
+          durationS: 6.52
+        - text: This hall was paid for and built by the people who sat in it.
+          atS: 62.44
+          durationS: 3.88

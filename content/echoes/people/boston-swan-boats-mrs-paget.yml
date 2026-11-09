@@ -9,7 +9,7 @@ at: { lat: 42.35410, lng: -71.06985 }
 triggerRadiusKm: 0.06
 category: people
 format: short
-durationS: 74
+durationS: 76
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,7 +37,7 @@ script: |
 
   As for the man at the landing, one story from those years gives his whole sales pitch.
   Grown folks, ten cents. Children, five. Babies thrown in.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "That is where the driver sits, pedalling as if on a bicycle, and paddle wheels push the whole thing along."
@@ -122,3 +122,68 @@ sources:
     url: https://www.loc.gov/resource/sn94051692/1899-04-08/ed-1/?sp=3
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-swan-boats-mrs-paget/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.7
+    audioBytes: 1212124
+    transcript:
+      totalS: 75.7
+      lines:
+        - text: Watch a swan boat come round the pond.
+          atS: 0
+          durationS: 2.36
+        - text: Look at the back of it.
+          atS: 2.96
+          durationS: 1.21
+        - text: That is where the driver sits, pedalling as if on a bicycle, and paddle wheels push the whole thing along.
+          atS: 4.87
+          durationS: 6.33
+        - text: The boats began running here in eighteen seventy-seven.
+          atS: 12.49
+          durationS: 3.29
+        - text: They were designed by a man named Robert Paget.
+          atS: 16.22
+          durationS: 3.02
+        - text: Sixteen years later, newspapers across the country ran a small item about who was really in charge.
+          atS: 20.54
+          durationS: 6.32
+        - text: The owner and manager of the Boston swan boats, they reported, was a woman.
+          atS: 27.24
+          durationS: 4.61
+        - text: Mrs.
+          atS: 32.29
+          durationS: 0.34
+        - text: Paget.
+          atS: 32.67
+          durationS: 0.72
+        - text: She did not stand at the landing calling for fares.
+          atS: 33.99
+          durationS: 3.17
+        - text: She left that to a man.
+          atS: 37.55
+          durationS: 1.67
+        - text: But she came down to the landing often, studied the business, and made a very comfortable living from it.
+          atS: 39.82
+          durationS: 6.62
+        - text: By then she had been running it for fourteen years.
+          atS: 47.25
+          durationS: 3.19
+        - text: In nineteen thirty-eight, the owner of the fleet was still a Paget, John Paget.
+          atS: 51.26
+          durationS: 5.22
+        - text: When Shirley Temple came to town, she was made an honorary admiral of the swan boat navy, and he promised her an admiral's hat.
+          atS: 57.09
+          durationS: 7.35
+        - text: As for the man at the landing, one story from those years gives his whole sales pitch.
+          atS: 65.13
+          durationS: 4.91
+        - text: Grown folks, ten cents.
+          atS: 70.37
+          durationS: 1.96
+        - text: Children, five.
+          atS: 72.48
+          durationS: 1.56
+        - text: Babies thrown in.
+          atS: 74.31
+          durationS: 1.38

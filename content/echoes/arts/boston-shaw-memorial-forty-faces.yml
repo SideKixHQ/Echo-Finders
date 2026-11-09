@@ -9,7 +9,7 @@ at: { lat: 42.35760, lng: -71.06350 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 79
+durationS: 81
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -42,7 +42,7 @@ script: |
 pronunciations:
   - written: Saint-Gaudens
     say: saint GAW-dens
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "They are not one face repeated."
@@ -112,3 +112,68 @@ sources:
     url: https://www.nps.gov/places/robert-gould-shaw-massachusetts-54th-regiment-memorial.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-shaw-memorial-forty-faces/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.6
+    audioBytes: 1291118
+    transcript:
+      totalS: 80.6
+      lines:
+        - text: Look at the soldiers in the bronze, not the man on the horse.
+          atS: 0
+          durationS: 3.75
+        - text: Look at their faces.
+          atS: 4.08
+          durationS: 1.33
+        - text: They are not one face repeated.
+          atS: 6.01
+          durationS: 2.12
+        - text: Some are young, some older.
+          atS: 8.52
+          durationS: 2.1
+        - text: The features and the builds are different.
+          atS: 11.13
+          durationS: 2
+        - text: That was the point.
+          atS: 13.25
+          durationS: 1.14
+        - text: The sculptor, Augustus Saint-Gaudens, was first expected to make a statue of Colonel Robert Gould Shaw alone on horseback.
+          atS: 14.99
+          durationS: 8.46
+        - text: Shaw's family objected.
+          atS: 24.27
+          durationS: 1.56
+        - text: He had not been a great commander, they said, and it seemed pretentious.
+          atS: 26.15
+          durationS: 4.4
+        - text: So Saint-Gaudens put him among his men.
+          atS: 30.99
+          durationS: 2.64
+        - text: The men were the Fifty-fourth Massachusetts, one of the first Black regiments of the Civil War.
+          atS: 34.44
+          durationS: 5.69
+        - text: They marched down this street, off to the war, in eighteen sixty-three.
+          atS: 40.73
+          durationS: 4.35
+        - text: That July, in the assault on Fort Wagner in South Carolina, Shaw and many of his men were killed.
+          atS: 45.59
+          durationS: 6.1
+        - text: In his New York studio, Saint-Gaudens hired Black men to pose, and modelled some forty heads.
+          atS: 52.38
+          durationS: 6.11
+        - text: The work took him about fourteen years, longer than anything else in his career.
+          atS: 59.3
+          durationS: 4.57
+        - text: It was unveiled in eighteen ninety-seven, and the original inscriptions named only the white officers who fell.
+          atS: 64.32
+          durationS: 7.04
+        - text: The names of the Black soldiers were added in the early nineteen-eighties.
+          atS: 71.74
+          durationS: 3.98
+        - text: The faces came first.
+          atS: 75.97
+          durationS: 1.79
+        - text: The names took another eighty-five years.
+          atS: 78.08
+          durationS: 2.54

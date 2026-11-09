@@ -9,7 +9,7 @@ at: { lat: 42.37616, lng: -71.06082 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 83
+durationS: 78
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -41,7 +41,7 @@ script: |
   Read it. Breed's Hill. Site of the Battle of Bunker Hill.
 
   That is as far as anyone was ever willing to go.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Find the plaque on the eastern wall of the lodge beside the monument."
@@ -138,3 +138,80 @@ sources:
     url: https://www.nps.gov/places/bunker-hill-monument.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-wrong-hill/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 78.4
+    audioBytes: 1256010
+    transcript:
+      totalS: 78.4
+      lines:
+        - text: Find the plaque on the eastern wall of the lodge beside the monument.
+          atS: 0
+          durationS: 4.13
+        - text: It begins with two words.
+          atS: 4.46
+          durationS: 1.78
+        - text: Breed's Hill.
+          atS: 6.84
+          durationS: 1.28
+        - text: You are not standing on Bunker Hill.
+          atS: 9.07
+          durationS: 2.14
+        - text: Bunker Hill is the higher one, to the northwest.
+          atS: 11.9
+          durationS: 3.21
+        - text: A church stands on top of it now.
+          atS: 15.43
+          durationS: 2.16
+        - text: In June seventeen seventy-five, the colonial officers had orders to fortify Bunker Hill.
+          atS: 18.29
+          durationS: 6.05
+        - text: They talked it over, and on the night of the sixteenth they dug in here instead.
+          atS: 24.77
+          durationS: 4.47
+        - text: This hill was lower, but it was closer to Boston and steep for anyone marching up it.
+          atS: 29.85
+          durationS: 5.07
+        - text: At the time, it barely had a name of its own.
+          atS: 35.36
+          durationS: 2.69
+        - text: Some locals called it Breed's, after a family whose cattle grazed here.
+          atS: 38.44
+          durationS: 4.35
+        - text: The battle was fought on this hill the next day, and it went into print as Bunker Hill.
+          atS: 43.4
+          durationS: 4.92
+        - text: A British map even swapped the two hills round.
+          atS: 49.13
+          durationS: 3.05
+        - text: The Breeds asked for the battle to be renamed almost at once.
+          atS: 52.57
+          durationS: 3.62
+        - text: In the seventeen nineties they bought land up here, and asked again.
+          atS: 56.89
+          durationS: 4.26
+        - text: They kept asking for decades.
+          atS: 61.66
+          durationS: 1.92
+        - text: In nineteen twenty-three, the state finally gave them something.
+          atS: 64.18
+          durationS: 3.9
+        - text: Not the battle.
+          atS: 68.41
+          durationS: 0.91
+        - text: The plaque.
+          atS: 69.46
+          durationS: 0.91
+        - text: Read it.
+          atS: 70.75
+          durationS: 0.69
+        - text: Breed's Hill.
+          atS: 71.64
+          durationS: 0.93
+        - text: Site of the Battle of Bunker Hill.
+          atS: 72.9
+          durationS: 1.89
+        - text: That is as far as anyone was ever willing to go.
+          atS: 75.39
+          durationS: 3.04

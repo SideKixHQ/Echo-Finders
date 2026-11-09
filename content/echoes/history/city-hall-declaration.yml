@@ -6,7 +6,7 @@ at: { lat: 40.71270, lng: -74.00600 }
 triggerRadiusKm: 0.1
 category: history
 format: short
-durationS: 60
+durationS: 52
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -25,7 +25,7 @@ script: |
 
   British troops would not leave this city for another seven years.
 
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It was the Commons, then the northernmost edge of the city."
@@ -60,3 +60,38 @@ sources:
     url: https://downtownny.com/news/fraunces-tavern-long-room-george-washington/
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/city-hall-declaration/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 51.6
+    audioBytes: 826766
+    transcript:
+      totalS: 51.6
+      lines:
+        - text: This was not a park.
+          atS: 0
+          durationS: 1.42
+        - text: It was the Commons, then the northernmost edge of the city.
+          atS: 1.7
+          durationS: 3.9
+        - text: On the evening of the ninth of July 1776, soldiers of George Washington's army assembled on this ground, and heard read out a document that Congress had adopted in Philadelphia five days earlier.
+          atS: 6.29
+          durationS: 12.61
+        - text: When the reading came to an end, the soldiers erupted into cheers.
+          atS: 19.34
+          durationS: 3.89
+        - text: What happened next was not in the orders.
+          atS: 23.48
+          durationS: 2.72
+        - text: A rowdy crowd of soldiers and civilians marched from here down Broadway to the little green at the bottom of the island, and pulled a statue of the king off its plinth.
+          atS: 26.4
+          durationS: 9.04
+        - text: Washington was not pleased.
+          atS: 35.89
+          durationS: 1.63
+        - text: In his general orders the next day he wrote that it had so much the appearance of riot and want of order in the army that he disapproved the manner.
+          atS: 37.9
+          durationS: 8.68
+        - text: British troops would not leave this city for another seven years.
+          atS: 47.53
+          durationS: 4.06

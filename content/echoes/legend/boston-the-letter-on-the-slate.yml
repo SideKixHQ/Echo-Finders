@@ -9,14 +9,11 @@ at: { lat: 42.35822, lng: -71.0603 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 71
+durationS: 61
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A popular tradition. The National Park Service states that a gravestone here inspired The Scarlet
-  Letter, but names no stone and cites nothing; no source we could reach records Hawthorne saying so. What
-  is documented is the novel's own text, which sets its ending in this burying ground. The script says out
-  loud the stone story is a legend and unproven.
+  A popular tradition. The National Park Service states that a gravestone here inspired The Scarlet Letter, but names no stone and cites nothing; no source we could reach records Hawthorne saying so. What is documented is the novel's own text, which sets its ending in this burying ground. The script says out loud the stone story is a legend and unproven.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -44,7 +41,7 @@ script: |
 
   Look along the old slate stones. If one of them gave Hawthorne the idea, it has never said
   which.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "You are in the burying ground beside King's Chapel."
@@ -111,3 +108,62 @@ sources:
     url: https://www.nps.gov/places/king-s-chapel.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/boston-the-letter-on-the-slate/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 61.4
+    audioBytes: 983501
+    transcript:
+      totalS: 61.4
+      lines:
+        - text: You are in the burying ground beside King's Chapel.
+          atS: 0
+          durationS: 2.96
+        - text: John Winthrop, the colony's first governor, lies here.
+          atS: 3.29
+          durationS: 3.34
+        - text: There is a story about this ground, and the park service tells it too.
+          atS: 7.07
+          durationS: 3.83
+        - text: One of these gravestones, it says, inspired Nathaniel Hawthorne to write The Scarlet Letter.
+          atS: 11.34
+          durationS: 5.3
+        - text: Treat that as a legend.
+          atS: 17.03
+          durationS: 1.39
+        - text: No stone has ever been shown to be the one.
+          atS: 18.52
+          durationS: 2.56
+        - text: But Hawthorne did put this ground in his book.
+          atS: 21.59
+          durationS: 2.48
+        - text: He lodged his troubled minister in a house that stood where King's Chapel was later built, with the graveyard on one side.
+          atS: 24.4
+          durationS: 6.91
+        - text: And at the very end, he buried Hester Prynne here.
+          atS: 31.46
+          durationS: 3.06
+        - text: In his words, a new grave was dug in that burial ground beside which King's Chapel has since been built, near an old and sunken one.
+          atS: 35.04
+          durationS: 8.17
+        - text: One slate stone served for both, carved with a shield.
+          atS: 43.65
+          durationS: 3.67
+        - text: The novel closes on that shield.
+          atS: 47.57
+          durationS: 1.9
+        - text: On a field, sable, the letter A, gules.
+          atS: 49.75
+          durationS: 3.39
+        - text: Black field.
+          atS: 53.29
+          durationS: 0.87
+        - text: Red letter.
+          atS: 54.31
+          durationS: 0.7
+        - text: Look along the old slate stones.
+          atS: 55.33
+          durationS: 2.01
+        - text: If one of them gave Hawthorne the idea, it has never said which.
+          atS: 57.67
+          durationS: 3.73

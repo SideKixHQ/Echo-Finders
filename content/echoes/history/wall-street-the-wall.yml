@@ -6,7 +6,7 @@ at: { lat: 40.70740, lng: -74.01100 }
 triggerRadiusKm: 0.1
 category: history
 format: short
-durationS: 90
+durationS: 77
 visibility: at-hand
 certainty: documented
 minAge: 10
@@ -29,7 +29,7 @@ script: |
 pronunciations:
   - written: Peter Stuyvesant
     say: STY-ve-sant
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In 1653 the Dutch decided to fence the town off."
@@ -79,3 +79,53 @@ sources:
     url: https://www.nps.gov/afbg/learn/historyculture/african-burial-ground-in-history.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wall-street-the-wall/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76.5
+    audioBytes: 1225499
+    transcript:
+      totalS: 76.5
+      lines:
+        - text: Look down the street.
+          atS: 0
+          durationS: 1.22
+        - text: It runs across the island, toward the water at both ends.
+          atS: 1.66
+          durationS: 3.21
+        - text: That is not an accident.
+          atS: 5.14
+          durationS: 1.92
+        - text: In 1653 the Dutch decided to fence the town off.
+          atS: 8.36
+          durationS: 3.75
+        - text: England and the Dutch Republic were at war, and word had reached the governor, Peter Stuyvesant, that English troops were gathering in New England for a possible invasion from the north.
+          atS: 12.71
+          durationS: 10.09
+        - text: In March the city's council resolved to surround the greater part of the town with a high stockade.
+          atS: 23.18
+          durationS: 5.67
+        - text: "Someone, possibly Stuyvesant himself, sketched it in the margin of the court minutes: nine feet above the ground, three feet in it, with a ditch and an embankment."
+          atS: 29.23
+          durationS: 10.59
+        - text: In the end a palisade proved too costly, and they nailed slats across posts set fifteen feet apart.
+          atS: 40.26
+          durationS: 6.86
+        - text: It ran across the island from the East River to the Hudson.
+          atS: 47.73
+          durationS: 3.15
+        - text: The colony's enslaved workers helped to build it.
+          atS: 51.48
+          durationS: 2.95
+        - text: The invasion from New England never came.
+          atS: 54.94
+          durationS: 2.5
+        - text: The English took the colony anyway, eleven years later.
+          atS: 58.04
+          durationS: 3.38
+        - text: The Dutch called the wall Het Cingel, the Belt.
+          atS: 62.37
+          durationS: 3.42
+        - text: It gave its name to the street, which means this is a street named after a thing that is not there, put up partly by people who were never free to walk away from it.
+          atS: 66.31
+          durationS: 10.23

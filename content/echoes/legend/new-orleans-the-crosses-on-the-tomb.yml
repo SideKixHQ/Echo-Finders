@@ -9,14 +9,11 @@ at: { lat: 29.95920, lng: -90.07125 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 96
+durationS: 85
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  Marie Laveau's death, burial in this cemetery and nursing work are from her 1881
-  obituary. The voodoo-queen story, the serpent in the box and the idea that marking her
-  tomb brings luck or a wish are folklore; the script says so out loud. No supernatural
-  claim is made.
+  Marie Laveau's death, burial in this cemetery and nursing work are from her 1881 obituary. The voodoo-queen story, the serpent in the box and the idea that marking her tomb brings luck or a wish are folklore; the script says so out loud. No supernatural claim is made.
 minAge: 10
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -46,7 +43,7 @@ detail: |
 pronunciations:
   - written: Marie Laveau
     say: muh-REE lah-VOH
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Somewhere in there is the tomb of Marie Laveau."
@@ -100,3 +97,77 @@ sources:
     url: https://www.loc.gov/resource/sn86063034/1898-06-26/ed-1/?sp=20
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-orleans-the-crosses-on-the-tomb/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 85.1
+    audioBytes: 1363007
+    transcript:
+      totalS: 85.1
+      lines:
+        - text: Look through the gate.
+          atS: 0
+          durationS: 1
+        - text: Somewhere in there is the tomb of Marie Laveau.
+          atS: 1.32
+          durationS: 3.62
+        - text: Start with what the record says.
+          atS: 5.27
+          durationS: 1.71
+        - text: When she died, in June of eighteen eighty-one, a New Orleans obituary was reprinted as far away as Omaha.
+          atS: 7.58
+          durationS: 6.25
+        - text: It said she was buried at five in the evening in her family tomb in this cemetery, followed by a large crowd, the most prominent and the most humble.
+          atS: 14.27
+          durationS: 8.9
+        - text: It called her a nurse.
+          atS: 23.99
+          durationS: 1.29
+        - text: In yellow fever and cholera epidemics, it said, she was always called on, and always went.
+          atS: 26.09
+          durationS: 5.97
+        - text: She sat with condemned prisoners in their last hours.
+          atS: 32.66
+          durationS: 3.23
+        - text: The closest it came to anything else was one line.
+          atS: 36.27
+          durationS: 3.05
+        - text: The ignorant, it said, credited her cures to unnatural means.
+          atS: 39.76
+          durationS: 4.19
+        - text: It never used the word voodoo.
+          atS: 44.47
+          durationS: 1.82
+        - text: By nineteen-oh-four, a city guide had a different woman.
+          atS: 46.98
+          durationS: 3.31
+        - text: A voodoo queen, keeping a sacred serpent in a carved box in her bedroom.
+          atS: 50.5
+          durationS: 4.38
+        - text: It does not say where it got any of that.
+          atS: 55.09
+          durationS: 2.02
+        - text: The legend outgrew the nurse.
+          atS: 57.49
+          durationS: 2.01
+        - text: Decades later, a wire story reported that the bricks of her crumbling tomb were scratched with crosses, left by people who traced one, said a prayer, and slipped away.
+          atS: 60.1
+          durationS: 9.88
+        - text: People still come hoping for luck.
+          atS: 70.59
+          durationS: 1.77
+        - text: That is a custom built on a legend, not a fact.
+          atS: 72.79
+          durationS: 3.17
+        - text: The gate is as close as this story needs to bring you.
+          atS: 76.57
+          durationS: 3.11
+        - text: Please do not add a mark of your own.
+          atS: 79.92
+          durationS: 1.81
+        - text: The nurse is in the record.
+          atS: 81.81
+          durationS: 1.43
+        - text: The queen is in the scratches.
+          atS: 83.39
+          durationS: 1.73

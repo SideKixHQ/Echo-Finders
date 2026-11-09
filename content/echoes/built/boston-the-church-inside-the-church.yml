@@ -9,7 +9,7 @@ at: { lat: 42.35795, lng: -71.06035 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 82
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -41,7 +41,7 @@ script: |
   over from the old church into the new one.
 
   Most buildings replace the one before them. This one swallowed it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the walls of King's Chapel."
@@ -111,3 +111,65 @@ sources:
     url: https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-church-inside-the-church/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.1
+    audioBytes: 1154446
+    transcript:
+      totalS: 72.1
+      lines:
+        - text: Look at the walls of King's Chapel.
+          atS: 0
+          durationS: 1.89
+        - text: Rough blocks of stone.
+          atS: 2.22
+          durationS: 1.45
+        - text: Nobody quarried them.
+          atS: 3.84
+          durationS: 1.2
+        - text: There were no quarries yet.
+          atS: 5.36
+          durationS: 1.5
+        - text: The stone was gathered off the surface of the ground in Braintree, south of here, and the builders had little skill at dressing it.
+          atS: 7.19
+          durationS: 6.98
+        - text: That is why it looks the way it does.
+          atS: 14.68
+          durationS: 2.29
+        - text: Now picture this corner in the summer of seventeen forty nine.
+          atS: 17.57
+          durationS: 3.27
+        - text: There is already a church here.
+          atS: 21.22
+          durationS: 1.74
+        - text: A wooden one, old and decaying.
+          atS: 23.24
+          durationS: 2.55
+        - text: The governor lays the cornerstone for a new stone chapel, gives the workmen money to drink his health, and then walks inside the old wooden church for a service.
+          atS: 26.4
+          durationS: 9.22
+        - text: Because the plan was not to pull the old church down first.
+          atS: 36.32
+          durationS: 3.96
+        - text: The plan was to build the new one around it.
+          atS: 40.66
+          durationS: 2.69
+        - text: So for nearly four years the congregation kept worshipping in a wooden church while stone walls went up on every side of them.
+          atS: 43.95
+          durationS: 7.83
+        - text: Only when the old building was too far gone did they move out, and borrow somebody else's.
+          atS: 52.38
+          durationS: 5.9
+        - text: By the summer of seventeen fifty four the stone chapel was in use.
+          atS: 59.4
+          durationS: 4.11
+        - text: The pulpit was carried over from the old church into the new one.
+          atS: 63.95
+          durationS: 3.49
+        - text: Most buildings replace the one before them.
+          atS: 67.88
+          durationS: 2.19
+        - text: This one swallowed it.
+          atS: 70.52
+          durationS: 1.56

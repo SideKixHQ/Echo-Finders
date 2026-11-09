@@ -9,7 +9,7 @@ triggerRadiusKm: 50
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: history
 format: short
-durationS: 56
+durationS: 51
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   Then a gust of wind caught the machine, rolled it over, and damaged it beyond easy repair. It never flew again.
 
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "That thin line of sand between the sea and the sound is the Outer Banks."
@@ -60,3 +60,35 @@ sources:
     url: https://www.nps.gov/wrbr/learn/historyculture/thefirstflight.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/kitty-hawk-shorter-than-this-plane/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.5
+    audioBytes: 809630
+    transcript:
+      totalS: 50.5
+      lines:
+        - text: Look down and to your left.
+          atS: 0
+          durationS: 1.76
+        - text: That thin line of sand between the sea and the sound is the Outer Banks.
+          atS: 2.15
+          durationS: 4.85
+        - text: On the seventeenth of December nineteen oh three, at the Kill Devil Hills down there, Orville Wright took off in a powered aeroplane and kept it in the air until it hit the sand about a hundred and twenty feet from the rail.
+          atS: 7.61
+          durationS: 13.8
+        - text: Now look along the cabin you are sitting in.
+          atS: 21.65
+          durationS: 2.28
+        - text: Depending on the aircraft, that entire first flight would have started and finished without leaving this fuselage.
+          atS: 23.99
+          durationS: 6.33
+        - text: They flew three more times that day; the last and longest, with Wilbur at the controls, covered eight hundred and fifty two feet in fifty nine seconds.
+          atS: 31.13
+          durationS: 10.33
+        - text: Then a gust of wind caught the machine, rolled it over, and damaged it beyond easy repair.
+          atS: 42.27
+          durationS: 6.07
+        - text: It never flew again.
+          atS: 48.95
+          durationS: 1.58

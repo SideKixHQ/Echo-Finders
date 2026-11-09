@@ -9,7 +9,7 @@ at: { lat: 29.95777, lng: -90.06345 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 82
+durationS: 79
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -39,7 +39,7 @@ script: |
 pronunciations:
   - written: Andrés Almonester y Roxas
     say: ahn-DRESS al-mo-NESS-ter ee ROH-hahs
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look up at the three spires on the front of the cathedral."
@@ -105,3 +105,62 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/historyoflouisia00king/historyoflouisia00king.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-man-under-the-altar/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 79
+    audioBytes: 1265623
+    transcript:
+      totalS: 79
+      lines:
+        - text: Look up at the three spires on the front of the cathedral.
+          atS: 0
+          durationS: 3.01
+        - text: They are younger than they look.
+          atS: 3.45
+          durationS: 1.66
+        - text: The front you are facing was remodelled around eighteen fifty, when steeples were raised on the old towers and the portico was added.
+          atS: 5.71
+          durationS: 7.98
+        - text: The church before that was paid for by one man.
+          atS: 14.38
+          durationS: 3.42
+        - text: In seventeen eighty-eight, fire took the old parish church along with most of the town.
+          atS: 19.11
+          durationS: 5.86
+        - text: Don Andrés Almonester y Roxas, a Spaniard who had grown very rich in this colony, offered to build a new one at his own expense.
+          atS: 25.67
+          durationS: 9.79
+        - text: He asked for something in return.
+          atS: 35.84
+          durationS: 1.99
+        - text: Masses for his soul, said for ever.
+          atS: 38.15
+          durationS: 3.15
+        - text: A guidebook from eighteen forty-five says the bargain was being kept.
+          atS: 42.41
+          durationS: 3.96
+        - text: Every Saturday evening, it says, at sunset, the bell tolled for the founder.
+          atS: 46.97
+          durationS: 4.8
+        - text: He died in seventeen ninety-eight and was buried in front of the altar.
+          atS: 52.37
+          durationS: 3.95
+        - text: A writer in the eighteen nineties described his name, his coat of arms and his motto, cut into the stone over him.
+          atS: 56.83
+          durationS: 7.48
+        - text: The building has been remade around him since.
+          atS: 64.91
+          durationS: 2.72
+        - text: The steeples are new.
+          atS: 68.01
+          durationS: 1.25
+        - text: The portico is new.
+          atS: 69.42
+          durationS: 1.42
+        - text: He is still inside, under the floor, at the front.
+          atS: 71.04
+          durationS: 3.38
+        - text: And by his own arrangement, someone is meant to be praying for him.
+          atS: 74.8
+          durationS: 4.24

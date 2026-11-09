@@ -9,7 +9,7 @@ at: { lat: 29.95739, lng: -90.06353 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 94
+durationS: 82
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,7 +37,7 @@ pronunciations:
     say: kah-BEEL-doh
   - written: Laussat
     say: loh-SAH
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In November eighteen oh three, Louisiana was still Spanish."
@@ -114,3 +114,59 @@ sources:
     url: https://www.nps.gov/articles/louisiana-purchase-transfer-document.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-twenty-days-of-france/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.5
+    audioBytes: 1304911
+    transcript:
+      totalS: 81.5
+      lines:
+        - text: Face the Cabildo, the arcaded building to the left of the cathedral.
+          atS: 0
+          durationS: 4.43
+        - text: Look up at the triangle above its centre arches.
+          atS: 4.68
+          durationS: 3.01
+        - text: There is an eagle carved in it.
+          atS: 7.74
+          durationS: 1.9
+        - text: That eagle was not there yet on the day that matters.
+          atS: 9.97
+          durationS: 3.17
+        - text: In November eighteen oh three, Louisiana was still Spanish.
+          atS: 13.58
+          durationS: 3.95
+        - text: Spain had already agreed to hand it back to France, and the city already knew that France had sold it on to the United States.
+          atS: 18.04
+          durationS: 7.74
+        - text: On the thirtieth of November, in the council chamber of this building, the Spanish governor handed the colony to a French official named Laussat.
+          atS: 26.6
+          durationS: 8.95
+        - text: Out in this square, the Spanish flag came down and the French tricolour went up.
+          atS: 36.25
+          durationS: 5.22
+        - text: It stayed up for twenty days.
+          atS: 42.17
+          durationS: 2.11
+        - text: On the twentieth of December, the American commissioners rode into the square at the head of their troops.
+          atS: 44.98
+          durationS: 5.82
+        - text: They went up to the same building, and Laussat gave them the keys of the city.
+          atS: 51.12
+          durationS: 4.63
+        - text: Then they all walked out onto the gallery up there to watch the flags change again.
+          atS: 56.7
+          durationS: 4.46
+        - text: A guard of fifty old French soldiers had kept watch over their flag for those three weeks.
+          atS: 61.86
+          durationS: 5.36
+        - text: As it came down, they took it in their arms, and marched away with it in silence.
+          atS: 68.03
+          durationS: 4.96
+        - text: The eagle was carved into that triangle eighteen years later.
+          atS: 73.94
+          durationS: 3.67
+        - text: By then, nobody needed telling whose building it was.
+          atS: 78.22
+          durationS: 3.29

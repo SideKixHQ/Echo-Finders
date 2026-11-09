@@ -9,7 +9,7 @@ at: { lat: 41.92636, lng: -87.64968 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 80
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -44,13 +44,13 @@ script: |
 
   The theatre remains. The nationwide pursuit ended just beyond it.
 
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: convicted
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-09"
+  reviewedAt: "2026-11-09"
   contentWarning: "This echo describes a killing. No violence is described in detail."
 claims:
   - says: "On the night of July 22, 1934, John Dillinger came here to watch a film called Manhattan Melodrama."
@@ -108,3 +108,68 @@ sources:
     url: https://www.loc.gov/resource/sn84026749/1934-07-23/ed-1/?sp=4
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-last-movie/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 69.1
+    audioBytes: 1105963
+    transcript:
+      totalS: 69.1
+      lines:
+        - text: Stand outside the theatre and look at the entrance.
+          atS: 0
+          durationS: 3.03
+        - text: On the night of July 22, 1934, John Dillinger came here to watch a film called Manhattan Melodrama.
+          atS: 3.73
+          durationS: 7.01
+        - text: He was the country's Public Enemy Number One.
+          atS: 10.89
+          durationS: 2.62
+        - text: Federal agents knew he might come here.
+          atS: 13.9
+          durationS: 2.3
+        - text: According to the newspapers the next day, a woman who knew him had told them he would be at the Biograph that night.
+          atS: 16.89
+          durationS: 6.12
+        - text: They waited outside, for nearly three hours.
+          atS: 23.61
+          durationS: 2.78
+        - text: According to the Associated Press, Dillinger walked out through the lobby and down the street, past Melvin Purvis, the agent in charge, who was sitting in a parked car.
+          atS: 26.99
+          durationS: 9.89
+        - text: Purvis moved his right arm in a signal.
+          atS: 37.49
+          durationS: 2.18
+        - text: The same report says Dillinger darted toward an alley, reaching for a pistol.
+          atS: 40.18
+          durationS: 4.17
+        - text: Agents fired.
+          atS: 44.73
+          durationS: 1.02
+        - text: Three bullets hit him.
+          atS: 46.2
+          durationS: 1.27
+        - text: It was ten forty at night.
+          atS: 47.74
+          durationS: 1.56
+        - text: Stay on the sidewalk.
+          atS: 49.58
+          durationS: 1.25
+        - text: There is no need to enter the alley.
+          atS: 51.07
+          durationS: 1.81
+        - text: Look back toward the theatre doors.
+          atS: 53.27
+          durationS: 1.85
+        - text: Movie audiences leave carrying a story that has just ended.
+          atS: 55.55
+          durationS: 3.56
+        - text: That night, Dillinger stepped out of a gangster film and into the final moments of his own story.
+          atS: 59.63
+          durationS: 5.14
+        - text: The theatre remains.
+          atS: 65.1
+          durationS: 1.2
+        - text: The nationwide pursuit ended just beyond it.
+          atS: 66.5
+          durationS: 2.55

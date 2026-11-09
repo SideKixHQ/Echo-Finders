@@ -9,7 +9,7 @@ at: { lat: 42.35541, lng: -71.06513 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 60
+durationS: 59
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ script: |
   city banned them in eighteen thirty. The pasture fences came down six years after that.
 
   The British army held the Common for one winter. The cows held it for two centuries.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "For about two hundred years, this was a pasture."
@@ -101,3 +101,56 @@ sources:
     url: https://www.loc.gov/resource/sn90059182/1931-01-09/ed-1/?sp=5
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-common-cows/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 59.1
+    audioBytes: 947138
+    transcript:
+      totalS: 59.1
+      lines:
+        - text: Look at the grass around you.
+          atS: 0
+          durationS: 1.63
+        - text: For about two hundred years, this was a pasture.
+          atS: 1.68
+          durationS: 3.1
+        - text: The town bought the land in sixteen thirty-four, and families grazed their cattle here.
+          atS: 4.83
+          durationS: 5.27
+        - text: There were rules about it.
+          atS: 10.17
+          durationS: 1.43
+        - text: Each family could only put so many cows on the Common, so the grass would not run out.
+          atS: 11.75
+          durationS: 5.49
+        - text: On hot days the cows sheltered under a huge old elm.
+          atS: 17.68
+          durationS: 3.8
+        - text: The ground around it was swampy then.
+          atS: 21.92
+          durationS: 2.39
+        - text: In the winter of seventeen seventy-five, the Common was taken over by something else.
+          atS: 24.82
+          durationS: 5.34
+        - text: British soldiers dug artillery positions into it, and a garrison of about seventeen hundred men camped here.
+          atS: 30.6
+          durationS: 7.01
+        - text: In March they sailed away.
+          atS: 38.13
+          durationS: 1.97
+        - text: The cows stayed.
+          atS: 40.43
+          durationS: 1.6
+        - text: They kept grazing this ground for another fifty-four years, until the city banned them in eighteen thirty.
+          atS: 42.54
+          durationS: 6.3
+        - text: The pasture fences came down six years after that.
+          atS: 49.35
+          durationS: 3.17
+        - text: The British army held the Common for one winter.
+          atS: 53.22
+          durationS: 2.74
+        - text: The cows held it for two centuries.
+          atS: 56.47
+          durationS: 2.65

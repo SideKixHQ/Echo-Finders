@@ -9,7 +9,7 @@ at: { lat: 29.96199, lng: -90.06138 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 100
+durationS: 86
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -37,7 +37,7 @@ pronunciations:
     say: lah-LOH-ree
   - written: Martineau
     say: MAR-tin-oh
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "On the morning of the tenth of April, eighteen thirty-four, flames broke out of it."
@@ -92,3 +92,68 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-fire-in-the-kitchen/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 86.2
+    audioBytes: 1380980
+    transcript:
+      totalS: 86.2
+      lines:
+        - text: Look across at the big house on the corner of Royal Street.
+          atS: 0
+          durationS: 3.4
+        - text: On the morning of the tenth of April, eighteen thirty-four, flames broke out of it.
+          atS: 3.73
+          durationS: 5.48
+        - text: The fire had started in the kitchen.
+          atS: 9.72
+          durationS: 2.21
+        - text: It was started on purpose.
+          atS: 12.31
+          durationS: 1.8
+        - text: A woman held captive in this house told the mayor afterwards that she had set it herself.
+          atS: 15.41
+          durationS: 4.96
+        - text: It was, she said, the only way left to end what she and the others were suffering.
+          atS: 20.8
+          durationS: 4.9
+        - text: The English writer Harriet Martineau tells it a little differently.
+          atS: 26.66
+          durationS: 3.75
+        - text: She says it was the cook, kept chained within eight yards of the fireplace.
+          atS: 30.92
+          durationS: 4.33
+        - text: Neighbours and firemen ran in.
+          atS: 35.95
+          durationS: 1.86
+        - text: They forced the doors open, and found seven people in chains, starving, covered in wounds.
+          atS: 38.13
+          durationS: 6.18
+        - text: The owner of a city newspaper, the Bee, was there.
+          atS: 45.26
+          durationS: 3.25
+        - text: He wrote that he saw where the collars and manacles had cut into their flesh.
+          atS: 49.02
+          durationS: 3.9
+        - text: They were carried through the streets to the mayor's office, and their irons were struck off.
+          atS: 53.52
+          durationS: 4.81
+        - text: At least two thousand people came to see them that day.
+          atS: 58.84
+          durationS: 2.85
+        - text: The woman who held them, Madame Lalaurie, never answered for it.
+          atS: 62.3
+          durationS: 4.73
+        - text: She left in her carriage, reached the lake, and escaped by boat to Mobile and then to France.
+          atS: 67.53
+          durationS: 6.76
+        - text: A crowd tore her house apart.
+          atS: 74.8
+          durationS: 2.3
+        - text: Neither of the old accounts gives the name of the woman who lit that fire.
+          atS: 77.48
+          durationS: 4.05
+        - text: What was being done in this house came out because she set it on fire.
+          atS: 82.35
+          durationS: 3.89

@@ -9,7 +9,7 @@ at: { lat: 42.35870, lng: -71.05672 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 81
+durationS: 78
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -42,7 +42,7 @@ script: |
 
   Boston burned the king's animals to make a point. A century later, it put them back to
   make another.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Find the end of the old brick State House with the balcony on it."
@@ -128,3 +128,65 @@ sources:
     url: https://www.loc.gov/item/01015801/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-lion-and-the-unicorn/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77.5
+    audioBytes: 1241381
+    transcript:
+      totalS: 77.5
+      lines:
+        - text: Find the end of the old brick State House with the balcony on it.
+          atS: 0
+          durationS: 3.52
+        - text: Now look up, past the balcony, to the two corners of the roof.
+          atS: 4.03
+          durationS: 4.61
+        - text: A lion on one side.
+          atS: 9.33
+          durationS: 1.61
+        - text: A unicorn on the other.
+          atS: 11.64
+          durationS: 1.82
+        - text: The badge of the British king.
+          atS: 14.28
+          durationS: 1.78
+        - text: On the eighteenth of July, seventeen seventy six, a crowd filled the street below you to hear a document read aloud from that balcony.
+          atS: 16.87
+          durationS: 8.78
+        - text: It was the Declaration of Independence, and Boston was hearing it for the first time.
+          atS: 26.09
+          durationS: 4.91
+        - text: Six years earlier, soldiers had fired into a crowd on this same spot.
+          atS: 31.51
+          durationS: 4.48
+        - text: This time the guns went off in celebration.
+          atS: 36.94
+          durationS: 2.47
+        - text: Then the crowd turned to the roof.
+          atS: 40.72
+          durationS: 1.78
+        - text: The lion and the unicorn came down.
+          atS: 43.19
+          durationS: 2.37
+        - text: They were carried a little way down the street, heaped up with every other royal emblem that could be found in town, and burned in a bonfire outside a tavern.
+          atS: 46.51
+          durationS: 8.73
+        - text: For about a hundred years, those corners stayed bare.
+          atS: 56.05
+          durationS: 3.63
+        - text: Then the building was restored, and new figures went back up.
+          atS: 60.38
+          durationS: 3.7
+        - text: So the pair you are looking at never heard the Declaration.
+          atS: 64.69
+          durationS: 3.06
+        - text: The ones that did are ash.
+          atS: 68.36
+          durationS: 1.95
+        - text: Boston burned the king's animals to make a point.
+          atS: 70.75
+          durationS: 2.8
+        - text: A century later, it put them back to make another.
+          atS: 73.99
+          durationS: 3.52

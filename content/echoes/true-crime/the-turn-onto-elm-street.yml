@@ -51,8 +51,8 @@ factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: alleged
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-09"
+  reviewedAt: "2026-11-09"
   contentWarning: "This echo describes an assassination. No violence is described in detail."
 claims:
   - says: "On November 22, 1963, President John F. Kennedy's motorcade turned here, off Houston Street and onto Elm."

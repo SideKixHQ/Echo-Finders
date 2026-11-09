@@ -9,7 +9,7 @@ at: { lat: 42.35877, lng: -71.05717 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 103
+durationS: 97
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -46,7 +46,7 @@ script: |
 
   Years later, Adams said this night laid the foundation of American independence. He spent
   that autumn defending the men who fired.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Under the balcony of the Old State House there is a circle of cobblestones set into the street."
@@ -146,3 +146,95 @@ sources:
     url: https://www.nps.gov/articles/000/boston-massacre-trial.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-who-said-fire/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 96.6
+    audioBytes: 1546492
+    transcript:
+      totalS: 96.6
+      lines:
+        - text: Look down.
+          atS: 0
+          durationS: 0.94
+        - text: Under the balcony of the Old State House there is a circle of cobblestones set into the street.
+          atS: 2.06
+          durationS: 4.82
+        - text: It marks a cold March night in seventeen seventy.
+          atS: 7.57
+          durationS: 3.36
+        - text: A light snow on the ground.
+          atS: 11.62
+          durationS: 1.7
+        - text: A lone British sentry outside the Custom House, and some local boys giving him a hard time.
+          atS: 13.92
+          durationS: 5.11
+        - text: It grew.
+          atS: 19.53
+          durationS: 0.79
+        - text: Labourers, sailors, men with sticks and clubs.
+          atS: 20.82
+          durationS: 3.65
+        - text: A captain and a small squad came to rescue the sentry, and the crowd closed in around them.
+          atS: 25.05
+          durationS: 5.13
+        - text: A soldier was struck.
+          atS: 30.56
+          durationS: 1.27
+        - text: He got up, aimed and fired.
+          atS: 32.25
+          durationS: 2.09
+        - text: The others fired too.
+          atS: 34.66
+          durationS: 1.47
+        - text: Five people died.
+          atS: 36.51
+          durationS: 1.39
+        - text: By the next morning the town was calling it a massacre.
+          atS: 38.23
+          durationS: 2.84
+        - text: And then came the question that decided everything.
+          atS: 41.46
+          durationS: 2.83
+        - text: Who said fire?
+          atS: 44.5
+          durationS: 1.23
+        - text: If the captain gave the order, he was guilty and his men had only obeyed.
+          atS: 46.06
+          durationS: 4.42
+        - text: If nobody did, the soldiers had chosen to shoot on their own.
+          atS: 50.8
+          durationS: 3.69
+        - text: Lawyer after lawyer refused to defend them.
+          atS: 55.1
+          durationS: 2.6
+        - text: John Adams said yes.
+          atS: 58.3
+          durationS: 1.63
+        - text: At the trial the witnesses contradicted each other, even about what the captain had been wearing.
+          atS: 60.88
+          durationS: 5.26
+        - text: But several swore he had been standing in front of his own men when they fired.
+          atS: 66.53
+          durationS: 4.21
+        - text: One of them, a free Black man named Newton Prince, said he heard no order at all.
+          atS: 71.18
+          durationS: 5.06
+        - text: Nobody stands in front of muskets he has just told to fire.
+          atS: 76.63
+          durationS: 3.33
+        - text: The captain was acquitted.
+          atS: 80.28
+          durationS: 1.38
+        - text: So were six of his soldiers.
+          atS: 81.91
+          durationS: 1.73
+        - text: Two were convicted of manslaughter and branded on the thumb.
+          atS: 83.85
+          durationS: 3.63
+        - text: Years later, Adams said this night laid the foundation of American independence.
+          atS: 88.18
+          durationS: 4.89
+        - text: He spent that autumn defending the men who fired.
+          atS: 93.39
+          durationS: 3.2

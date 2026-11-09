@@ -9,7 +9,7 @@ at: { lat: 29.9617, lng: -90.0576 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 92
+durationS: 85
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -37,7 +37,7 @@ script: |
 pronunciations:
   - written: Esplanade
     say: ess-pluh-NAYD
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Sunday the twenty-seventh of April, eighteen sixty-two."
@@ -124,3 +124,71 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse/picayunesguideto00unse.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-flag-on-the-mint/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85.2
+    audioBytes: 1363843
+    transcript:
+      totalS: 85.2
+      lines:
+        - text: Look up at the roof of the Mint, above the columns.
+          atS: 0
+          durationS: 3.27
+        - text: Sunday the twenty-seventh of April, eighteen sixty-two.
+          atS: 3.79
+          durationS: 3.75
+        - text: A Union fleet had fought its way up the river, and the city had nothing left to resist it with.
+          atS: 8.35
+          durationS: 5.39
+        - text: The mayor refused to raise the United States flag himself.
+          atS: 14.43
+          durationS: 3.41
+        - text: So the navy sent a party ashore to raise one here.
+          atS: 18.8
+          durationS: 3.24
+        - text: They put it up at about eight in the morning, and went back to their ship.
+          atS: 22.48
+          durationS: 3.61
+        - text: They left no guard.
+          atS: 26.6
+          durationS: 1.29
+        - text: Instead, guns up in the rigging of the warship lying off the Mint were aimed at the flagstaff, with orders to fire on anyone who touched it.
+          atS: 28.4
+          durationS: 7.85
+        - text: At eleven, the crews gathered on deck for prayers.
+          atS: 36.76
+          durationS: 3.16
+        - text: About twenty minutes in, the guns went off.
+          atS: 40.3
+          durationS: 2.8
+        - text: Men were on the roof.
+          atS: 43.48
+          durationS: 1.24
+        - text: They tore the flag down and got away with it.
+          atS: 44.84
+          durationS: 2.43
+        - text: Accounts disagree about who reached it first.
+          atS: 47.71
+          durationS: 2.7
+        - text: They agree on who ended up with it.
+          atS: 50.49
+          durationS: 2.14
+        - text: William Mumford.
+          atS: 53.74
+          durationS: 1.13
+        - text: When General Benjamin Butler took command of the city, Mumford was arrested and tried for treason by a military commission.
+          atS: 55.98
+          durationS: 7.03
+        - text: On the seventh of June, he was hanged from a beam fixed between the two middle columns of the Mint's front porch, near where you are standing.
+          atS: 63.53
+          durationS: 7.78
+        - text: Butler's biographer wrote that his life was justly forfeited.
+          atS: 72.12
+          durationS: 3.67
+        - text: A Louisiana school history later called the hanging unjust and cruel.
+          atS: 76.3
+          durationS: 4.27
+        - text: The flag he pulled down had been flying for a little over three hours.
+          atS: 81.08
+          durationS: 4.09

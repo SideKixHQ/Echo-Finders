@@ -7,7 +7,7 @@ triggerRadiusKm: 40
 voice: IMlxLW3qgn0MWgfz7Vnh
 category: built
 format: short
-durationS: 61
+durationS: 54
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   Everything else that word now means, the piers and the postcards and the amusements, grew on top of a solution to a cleaning problem.
 
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Atlantic City was a commercial venture from the start, created by a railroad and a land company from Philadelphia."
@@ -54,3 +54,35 @@ sources:
     url: https://www.loc.gov/item/nj1459/
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/atlantic-city-first-boardwalk/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.2
+    audioBytes: 868144
+    transcript:
+      totalS: 54.2
+      lines:
+        - text: Down on your right, that pale line running along the back of the beach.
+          atS: 0
+          durationS: 4.23
+        - text: It was not built for strolling.
+          atS: 4.4
+          durationS: 1.65
+        - text: It was built because of sand.
+          atS: 6.22
+          durationS: 1.79
+        - text: Atlantic City was a commercial venture from the start, created by a railroad and a land company from Philadelphia.
+          atS: 9.31
+          durationS: 6.94
+        - text: In eighteen seventy the town laid its first boardwalk, a footpath so that people would not walk back into the hotels, the trains and the shops with sand in their shoes.
+          atS: 17.37
+          durationS: 9.5
+        - text: It was ten feet wide, made of removable twelve foot sections laid on posts in the sand.
+          atS: 27.47
+          durationS: 5.65
+        - text: A bigger one followed ten years later, and after a winter storm in eighteen eighty four, a sturdier one again, raised five feet above the beach, with businesses on both sides.
+          atS: 34.08
+          durationS: 11.15
+        - text: Everything else that word now means, the piers and the postcards and the amusements, grew on top of a solution to a cleaning problem.
+          atS: 46.17
+          durationS: 8.02

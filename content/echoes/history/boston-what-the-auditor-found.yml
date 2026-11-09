@@ -9,7 +9,7 @@ at: { lat: 42.36833, lng: -71.05576 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 85
+durationS: 80
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -43,7 +43,7 @@ script: |
   He found the company responsible.
 
   The tank had simply not been strong enough to hold what was in it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look across Commercial Street, at the slope rising toward Copp's Hill."
@@ -136,3 +136,74 @@ sources:
     url: https://www.loc.gov/resource/sn85025007/1919-01-16/ed-1/?sp=3
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-what-the-auditor-found/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.4
+    audioBytes: 1291118
+    transcript:
+      totalS: 80.4
+      lines:
+        - text: Look across Commercial Street, at the slope rising toward Copp's Hill.
+          atS: 0
+          durationS: 4.19
+        - text: On the fifteenth of January, nineteen nineteen, a little after noon, a steel tank stood on the waterfront here.
+          atS: 4.52
+          durationS: 7.15
+        - text: It held molasses.
+          atS: 12.11
+          durationS: 1.63
+        - text: Close to two million gallons of it, stored for making alcohol.
+          atS: 13.98
+          durationS: 3.77
+        - text: People nearby heard a muffled roar.
+          atS: 18.26
+          durationS: 2.17
+        - text: The tank split into two great pieces, and the molasses came out as a wave.
+          atS: 20.87
+          durationS: 4.75
+        - text: It knocked out spans of the elevated railway that ran along this street.
+          atS: 26.01
+          durationS: 3.99
+        - text: It crushed a fire station.
+          atS: 30.44
+          durationS: 1.68
+        - text: In a city building close by, workers had been eating their lunch.
+          atS: 32.51
+          durationS: 3.83
+        - text: On the slope across the road, a small house slid down into the street.
+          atS: 37.03
+          durationS: 4.2
+        - text: Firemen had to hose the molasses away before they could reach anyone.
+          atS: 41.84
+          durationS: 3.61
+        - text: It was days before the last of the dead were found.
+          atS: 45.89
+          durationS: 2.86
+        - text: Twenty-one people were killed.
+          atS: 49.13
+          durationS: 1.86
+        - text: The next day, the company's lawyer gave a statement.
+          atS: 51.94
+          durationS: 3.06
+        - text: The tank, he suggested, had been blown up from outside.
+          atS: 55.52
+          durationS: 3.35
+        - text: Perhaps by enemies of the United States.
+          atS: 59.38
+          durationS: 2.58
+        - text: It took six years to answer him.
+          atS: 62.34
+          durationS: 2.04
+        - text: A court auditor sat for eight hundred and fifty-one days and heard nine hundred and ten witnesses.
+          atS: 64.99
+          durationS: 6.02
+        - text: In January nineteen twenty-five, he gave his finding.
+          atS: 71.46
+          durationS: 3.05
+        - text: He found the company responsible.
+          atS: 74.76
+          durationS: 1.83
+        - text: The tank had simply not been strong enough to hold what was in it.
+          atS: 76.92
+          durationS: 3.52

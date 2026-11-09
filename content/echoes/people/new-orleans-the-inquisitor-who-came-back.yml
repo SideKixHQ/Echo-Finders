@@ -9,7 +9,7 @@ at: { lat: 29.95834, lng: -90.06426 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 102
+durationS: 93
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -49,7 +49,7 @@ pronunciations:
     say: pair ahn-TWAHN
   - written: Capuchin
     say: KAP-yoo-chin
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Around seventeen eighty-nine, a Spanish Capuchin friar named Antonio de Sedella called on the governor of this colony, Esteban Miró."
@@ -115,3 +115,77 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0008/data/la0008data.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-inquisitor-who-came-back/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 92.9
+    audioBytes: 1487141
+    transcript:
+      totalS: 92.9
+      lines:
+        - text: Look through the railings into the garden behind the cathedral.
+          atS: 0
+          durationS: 3.39
+        - text: Around seventeen eighty-nine, a Spanish Capuchin friar named Antonio de Sedella called on the governor of this colony, Esteban Miró.
+          atS: 4.2
+          durationS: 11.64
+        - text: He showed him a commission.
+          atS: 16.45
+          durationS: 1.28
+        - text: He had been sent to set up the Holy Office of the Inquisition in New Orleans.
+          atS: 18.11
+          durationS: 4.42
+        - text: His preparations were complete, he said.
+          atS: 22.86
+          durationS: 2.24
+        - text: Some night soon, he would send for soldiers to help him make the arrests.
+          atS: 25.48
+          durationS: 4.43
+        - text: The governor was polite.
+          atS: 30.36
+          durationS: 1.37
+        - text: Then he made preparations of his own.
+          atS: 31.97
+          durationS: 2.37
+        - text: The next night there was a heavy knocking at the friar's door.
+          atS: 34.95
+          durationS: 3.12
+        - text: He opened it to an officer and a file of grenadiers.
+          atS: 38.39
+          durationS: 3.22
+        - text: He thanked them for coming so promptly, and told them he did not need them yet.
+          atS: 41.94
+          durationS: 4.24
+        - text: He was told he was under arrest.
+          atS: 46.61
+          durationS: 1.94
+        - text: The next day he was on a ship for Cádiz.
+          atS: 48.99
+          durationS: 2.98
+        - text: Miró wrote to Madrid that the very word Inquisition, spoken in New Orleans, could drive people out of the colony.
+          atS: 52.3
+          durationS: 7.06
+        - text: And then the friar came back.
+          atS: 59.74
+          durationS: 1.57
+        - text: He came back as Père Antoine, the parish priest of this cathedral, for nearly fifty years.
+          atS: 61.52
+          durationS: 6.28
+        - text: A guidebook from eighteen forty-five says he was supposed to have married or buried nearly half the people of the place.
+          atS: 68.41
+          durationS: 6.95
+        - text: When a church official tried to suspend him, his congregation left the cathedral and ran to his door.
+          atS: 76.06
+          durationS: 5.6
+        - text: He lived in a little cabin in the alley back here.
+          atS: 82.47
+          durationS: 2.38
+        - text: He is buried at the foot of the altar.
+          atS: 85.36
+          durationS: 1.92
+        - text: New Orleans threw out the inquisitor.
+          atS: 87.97
+          durationS: 1.9
+        - text: Then it kept the priest for half a century.
+          atS: 90.47
+          durationS: 2.4

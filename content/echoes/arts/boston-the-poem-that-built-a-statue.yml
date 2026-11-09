@@ -9,7 +9,7 @@ at: { lat: 42.36558, lng: -71.05326 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 88
+durationS: 87
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -46,7 +46,7 @@ script: |
 pronunciations:
   - written: Dallin
     say: DAL-in
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "When this design was first described, it was Revere stopping for a moment in the middle of his ride, to warn the people."
@@ -138,3 +138,77 @@ sources:
     url: https://www.loc.gov/resource/sn83045863/1940-09-14/ed-1/?sp=4
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-poem-that-built-a-statue/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 86.7
+    audioBytes: 1387667
+    transcript:
+      totalS: 86.7
+      lines:
+        - text: Look at the rider.
+          atS: 0
+          durationS: 1.22
+        - text: When this design was first described, it was Revere stopping for a moment in the middle of his ride, to warn the people.
+          atS: 2.17
+          durationS: 6.97
+        - text: It won a competition in eighteen eighty-four.
+          atS: 9.74
+          durationS: 2.67
+        - text: Ten models were entered.
+          atS: 12.85
+          durationS: 1.59
+        - text: The winner was a sculptor from Utah, twenty-three years old, who had come to Boston a few years before with no money at all.
+          atS: 15.05
+          durationS: 7.49
+        - text: The newspapers announced the winner and got his name wrong.
+          atS: 23.23
+          durationS: 3.26
+        - text: They called him Charles Dillon.
+          atS: 26.94
+          durationS: 1.98
+        - text: His name was Cyrus Dallin.
+          atS: 29.43
+          durationS: 2.29
+        - text: On the Fourth of July, eighteen eighty-five, he signed a contract for a bronze to stand in Copley Square.
+          atS: 32.42
+          durationS: 6.58
+        - text: The money was supposed to come from public subscription.
+          atS: 39.44
+          durationS: 2.84
+        - text: It never did.
+          atS: 42.44
+          durationS: 0.95
+        - text: Dallin became one of the best-known sculptors in the country.
+          atS: 43.9
+          durationS: 3.66
+        - text: He kept asking Boston about his statue.
+          atS: 47.94
+          durationS: 2.65
+        - text: Boston kept being sympathetic.
+          atS: 50.97
+          durationS: 2.16
+        - text: After more than half a century, he tried something new.
+          atS: 53.51
+          durationS: 3.39
+        - text: He wrote a poem, in the rhythm of Longfellow.
+          atS: 57.18
+          durationS: 2.59
+        - text: Listen, my children, and you shall hear, of the ignoble failure of Boston to rear, the greatest creation of my long career, the equestrian statue of Paul Revere.
+          atS: 60.37
+          durationS: 10.41
+        - text: The city found the money.
+          atS: 71.11
+          durationS: 2.03
+        - text: In nineteen forty, fifty-five years after the contract, this statue went up here.
+          atS: 74.44
+          durationS: 5.2
+        - text: Dallin was seventy-eight.
+          atS: 79.97
+          durationS: 1.74
+        - text: He said it was the poem that did it.
+          atS: 81.89
+          durationS: 1.82
+        - text: It was probably the only poem he ever wrote.
+          atS: 83.88
+          durationS: 2.77

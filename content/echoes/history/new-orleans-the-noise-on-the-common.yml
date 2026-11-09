@@ -9,7 +9,7 @@ at: { lat: 29.96126, lng: -90.06863 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 97
+durationS: 87
 visibility: at-hand
 certainty: documented
 minAge: 10
@@ -44,7 +44,7 @@ pronunciations:
     say: luh-TROBE
   - written: Congo Square
     say: KONG-go Square
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "One Sunday afternoon, soon after he reached the city in eighteen nineteen, an architect named Benjamin Latrobe set out from the old town for a walk along a canal."
@@ -103,3 +103,71 @@ sources:
     url: https://www.nps.gov/jazz/learn/historyculture/history_early.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-noise-on-the-common/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 86.5
+    audioBytes: 1384741
+    transcript:
+      totalS: 86.5
+      lines:
+        - text: Look out across this open square.
+          atS: 0
+          durationS: 2.18
+        - text: One Sunday afternoon, soon after he reached the city in eighteen nineteen, an architect named Benjamin Latrobe set out from the old town for a walk along a canal.
+          atS: 3.3
+          durationS: 10.69
+        - text: He went up St.
+          atS: 14.5
+          durationS: 0.94
+        - text: Peter Street, toward the common ground at the back of the city, and he heard something he could not place.
+          atS: 15.46
+          durationS: 5.75
+        - text: He thought it was a horse mill.
+          atS: 21.91
+          durationS: 1.52
+        - text: Horses, tramping on a wooden floor.
+          atS: 23.75
+          durationS: 2.24
+        - text: It was people.
+          atS: 26.2
+          durationS: 1.04
+        - text: Five or six hundred of them, he reckoned, gathered in an open space at the edge of the common.
+          atS: 27.76
+          durationS: 5.32
+        - text: People would come to call that space Congo Square.
+          atS: 33.77
+          durationS: 3.23
+        - text: They stood in circles, and inside each circle was a ring of dancers, the largest not ten feet across.
+          atS: 37.38
+          durationS: 7.2
+        - text: He wrote down what he saw.
+          atS: 45.02
+          durationS: 1.6
+        - text: An old man sitting astride a drum, beating it with the edge of his hand, with incredible quickness.
+          atS: 47.07
+          durationS: 6
+        - text: A stringed instrument with a gourd for a body and a small carved figure of a seated man at the top of its neck, played by a man who looked eighty or ninety years old.
+          atS: 53.67
+          durationS: 10.61
+        - text: Women answering the music in two notes.
+          atS: 64.73
+          durationS: 2.4
+        - text: A man singing in a language that was not French.
+          atS: 67.41
+          durationS: 2.87
+        - text: He was told they met here every Sunday afternoon.
+          atS: 70.66
+          durationS: 2.83
+        - text: He did not like what he heard, and his journal says so in ugly terms.
+          atS: 73.82
+          durationS: 4.34
+        - text: Then he walked on, about a mile along the canal.
+          atS: 78.6
+          durationS: 2.94
+        - text: He came back after sunset, near the same spot.
+          atS: 81.86
+          durationS: 3.13
+        - text: They were still playing.
+          atS: 85.15
+          durationS: 1.32

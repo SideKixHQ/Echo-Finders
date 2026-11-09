@@ -9,7 +9,7 @@ at: { lat: 37.82671, lng: -122.42298 }
 triggerRadiusKm: 0.06
 category: true-crime
 format: short
-durationS: 75
+durationS: 64
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -50,13 +50,13 @@ script: |
   The unanswered part begins beyond the island.
 
   They left behind something that looked like sleep, and a mystery that never settled.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: convicted
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-09"
+  reviewedAt: "2026-11-09"
   contentWarning: "This echo describes a prison escape. No violence is described."
 claims:
   - says: "In June 1962, the men inside needed the guards to believe they were sleeping."
@@ -97,3 +97,62 @@ sources:
     url: https://www.loc.gov/resource/sn82015425/1962-06-13/ed-1/?sp=1
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-men-who-left-their-faces-behind/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 64.2
+    audioBytes: 1028640
+    transcript:
+      totalS: 64.2
+      lines:
+        - text: Look into the cells.
+          atS: 0
+          durationS: 1.31
+        - text: In June 1962, the men inside needed the guards to believe they were sleeping.
+          atS: 1.64
+          durationS: 5.03
+        - text: So they left faces on their pillows.
+          atS: 7.11
+          durationS: 1.99
+        - text: Frank Morris and brothers John and Clarence Anglin made realistic dummy heads, complete with human hair.
+          atS: 9.69
+          durationS: 6.08
+        - text: Behind the cells, they prepared an escape route, enlarging the vent holes in their back walls.
+          atS: 16.29
+          durationS: 5.15
+        - text: They also made crude life vests and a raft from prison-issued raincoats.
+          atS: 21.83
+          durationS: 4.57
+        - text: On the night of June 11, the three men disappeared from their cells.
+          atS: 26.84
+          durationS: 3.87
+        - text: By morning, the deception was discovered.
+          atS: 31.22
+          durationS: 2.41
+        - text: The faces were still in bed.
+          atS: 34.08
+          durationS: 1.7
+        - text: The men were gone.
+          atS: 36.05
+          durationS: 1.1
+        - text: Their ultimate fate has never been conclusively established.
+          atS: 37.85
+          durationS: 3.22
+        - text: They are officially listed as missing, presumed drowned.
+          atS: 41.39
+          durationS: 3.47
+        - text: The escape does not prove they survived the bay.
+          atS: 45.24
+          durationS: 2.54
+        - text: When you later look toward the mainland, notice the water between here and there.
+          atS: 48.39
+          durationS: 4.14
+        - text: The men overcame the walls, the checks, and the locks.
+          atS: 52.74
+          durationS: 3.67
+        - text: The unanswered part begins beyond the island.
+          atS: 56.8
+          durationS: 2.61
+        - text: They left behind something that looked like sleep, and a mystery that never settled.
+          atS: 59.73
+          durationS: 4.49

@@ -9,13 +9,11 @@ at: { lat: 29.98580, lng: -90.09290 }
 triggerRadiusKm: 0.12
 category: legend
 format: short
-durationS: 83
+durationS: 72
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  The duels under the Oaks are documented in the 1904 and 1913 Picayune guides. The ghosts are a
-  manner of speaking in Grace King (1895) and the 1904 guide, not a reported sighting, and the script
-  says so aloud. The precise dueling tree is not located here.
+  The duels under the Oaks are documented in the 1904 and 1913 Picayune guides. The ghosts are a manner of speaking in Grace King (1895) and the 1904 guide, not a reported sighting, and the script says so aloud. The precise dueling tree is not located here.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -33,7 +31,7 @@ script: |
   Treat that as a legend. Nobody has shown that any duellist walks here. What is real is a line the guide found cut on old tombs in the St. Louis cemeteries. Died on the field of honor.
 
   Stand under the branches in the early morning, and the story is easy to believe. That is all it ever needed.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In the early eighteen-hundreds this grove was the dueling ground of the Creole gentlemen of New Orleans."
@@ -100,3 +98,80 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse/picayunesguideto00unse.pdf
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-orleans-ghosts-under-the-oaks/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 72.4
+    audioBytes: 1159461
+    transcript:
+      totalS: 72.4
+      lines:
+        - text: Look at the old live oaks around you, hung with moss.
+          atS: 0
+          durationS: 3.03
+        - text: In the early eighteen-hundreds this grove was the dueling ground of the Creole gentlemen of New Orleans.
+          atS: 3.84
+          durationS: 5.63
+        - text: They met here in the early morning, with pistol, saber, even shotgun.
+          atS: 9.98
+          durationS: 4.5
+        - text: A city guide of nineteen-oh-four listed what they fought about.
+          atS: 14.81
+          durationS: 3.54
+        - text: A slight at a ball.
+          atS: 18.56
+          durationS: 1.34
+        - text: A quarrel with a rival lover.
+          atS: 20.14
+          durationS: 1.78
+        - text: Politics.
+          atS: 22.2
+          durationS: 0.87
+        - text: The last opera.
+          atS: 23.18
+          durationS: 1.09
+        - text: Whether a famous singer could reach a certain note.
+          atS: 24.6
+          durationS: 2.64
+        - text: Legal points.
+          atS: 27.75
+          durationS: 0.94
+        - text: Scientific questions.
+          atS: 28.97
+          durationS: 1.47
+        - text: All of it, the guide said, came to a direct issue under these oaks.
+          atS: 31.05
+          durationS: 3.92
+        - text: So the oaks collected ghosts.
+          atS: 35.41
+          durationS: 1.99
+        - text: What a troop of ghostly stories come up under the oaks, the guide wrote.
+          atS: 38.51
+          durationS: 4.04
+        - text: Grace King, a few years earlier, put it another way.
+          atS: 43.5
+          durationS: 3.08
+        - text: What a trooping of ghosts there would be under these old trees, she wrote, if everyone who had fought here could come back in spirit.
+          atS: 47.53
+          durationS: 6.93
+        - text: Treat that as a legend.
+          atS: 54.58
+          durationS: 1.44
+        - text: Nobody has shown that any duellist walks here.
+          atS: 56.26
+          durationS: 2.74
+        - text: What is real is a line the guide found cut on old tombs in the St.
+          atS: 59.12
+          durationS: 4.43
+        - text: Louis cemeteries.
+          atS: 63.58
+          durationS: 1.14
+        - text: Died on the field of honor.
+          atS: 64.86
+          durationS: 1.52
+        - text: Stand under the branches in the early morning, and the story is easy to believe.
+          atS: 66.48
+          durationS: 4.13
+        - text: That is all it ever needed.
+          atS: 70.78
+          durationS: 1.61

@@ -9,7 +9,7 @@ at: { lat: 29.95741, lng: -90.06297 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 88
+durationS: 75
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   So the city's own hero, in the middle of the city's own square, was made to say the thing the city least wanted to hear, in the voice of the army that had taken it.
 
   Nobody ever chiselled it off.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The Union must and shall be preserved."
@@ -102,3 +102,59 @@ sources:
     url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/historyoflouisia00king/historyoflouisia00king.text.txt
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-words-on-the-base/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.3
+    audioBytes: 1206273
+    transcript:
+      totalS: 75.3
+      lines:
+        - text: Walk to the statue's granite base and find the line cut into it.
+          atS: 0
+          durationS: 4.06
+        - text: The Union must and shall be preserved.
+          atS: 4.31
+          durationS: 3.09
+        - text: Now look up at the man on the horse.
+          atS: 7.64
+          durationS: 1.93
+        - text: Andrew Jackson, who defended this city against the British in eighteen fifteen.
+          atS: 9.89
+          durationS: 5.13
+        - text: The statue was unveiled here on the ninth of February, eighteen fifty-six.
+          atS: 15.35
+          durationS: 4.66
+        - text: The square was packed with soldiers, families and children.
+          atS: 20.45
+          durationS: 3.7
+        - text: People crowded the balconies of the red brick buildings on either side.
+          atS: 24.47
+          durationS: 3.97
+        - text: When the sculptor, Clark Mills, pulled the white cover away, a salute of a hundred guns went off.
+          atS: 28.89
+          durationS: 6.04
+        - text: The words on the base were not there that day.
+          atS: 35.62
+          durationS: 2.52
+        - text: Six years later, Louisiana had left the Union, and a Union fleet came up the river and took New Orleans.
+          atS: 39.44
+          durationS: 6.37
+        - text: The general sent to govern the city was Benjamin Butler.
+          atS: 46.51
+          durationS: 3.3
+        - text: Much of the city came to hate him.
+          atS: 50.62
+          durationS: 1.9
+        - text: Butler had that sentence cut deep into the granite under Jackson's horse.
+          atS: 53.22
+          durationS: 4.39
+        - text: His admiring biographer said it was the motto the base had been meant to carry all along.
+          atS: 58.21
+          durationS: 4.88
+        - text: So the city's own hero, in the middle of the city's own square, was made to say the thing the city least wanted to hear, in the voice of the army that had taken it.
+          atS: 63.53
+          durationS: 9.22
+        - text: Nobody ever chiselled it off.
+          atS: 73.44
+          durationS: 1.88

@@ -9,7 +9,7 @@ at: { lat: 42.36374, lng: -71.05368 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 77
+durationS: 74
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -41,7 +41,7 @@ script: |
   Twenty years of Reveres. A century of sailors, shopkeepers and cigar makers.
 
   The house only remembers the twenty.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the house at number nineteen, North Square."
@@ -115,3 +115,74 @@ sources:
     url: https://www.nps.gov/places/paul-revere-house.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-house-that-stayed-useful/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.2
+    audioBytes: 1187883
+    transcript:
+      totalS: 74.2
+      lines:
+        - text: Look at the house at number nineteen, North Square.
+          atS: 0
+          durationS: 2.96
+        - text: Everything else you can see from here is younger than it.
+          atS: 3.17
+          durationS: 2.97
+        - text: It went up around sixteen eighty.
+          atS: 6.84
+          durationS: 2.34
+        - text: That makes it the oldest building in downtown Boston.
+          atS: 9.51
+          durationS: 3.08
+        - text: Paul Revere bought it in seventeen seventy.
+          atS: 13.28
+          durationS: 2.72
+        - text: He was a silversmith, a veteran and a father of five.
+          atS: 16.51
+          durationS: 3.48
+        - text: On the night of the eighteenth of April, seventeen seventy-five, he set out from this square to warn Samuel Adams and John Hancock.
+          atS: 20.43
+          durationS: 7.65
+        - text: The Reveres owned the house for thirty years and lived in it for about twenty.
+          atS: 28.69
+          durationS: 4.48
+        - text: In eighteen hundred, he sold it.
+          atS: 33.61
+          durationS: 2.3
+        - text: What came next is why it is still here.
+          atS: 36.42
+          durationS: 2.65
+        - text: It became a boarding house for sailors.
+          atS: 39.39
+          durationS: 2.24
+        - text: Then a tenement, with shops on the ground floor.
+          atS: 41.91
+          durationS: 2.67
+        - text: At one point it was a cigar factory.
+          atS: 45.09
+          durationS: 2.26
+        - text: At another, a bank.
+          atS: 47.63
+          durationS: 1.8
+        - text: Nobody was preserving it.
+          atS: 50.13
+          durationS: 1.59
+        - text: It was just a building people kept finding a use for.
+          atS: 51.9
+          durationS: 2.86
+        - text: By the early nineteen hundreds it faced demolition.
+          atS: 55.36
+          durationS: 3.18
+        - text: A great-grandson of Paul Revere bought it, and in April nineteen oh eight it opened as a museum.
+          atS: 58.86
+          durationS: 6.44
+        - text: Twenty years of Reveres.
+          atS: 65.69
+          durationS: 1.74
+        - text: A century of sailors, shopkeepers and cigar makers.
+          atS: 67.71
+          durationS: 3.89
+        - text: The house only remembers the twenty.
+          atS: 71.98
+          durationS: 2.18

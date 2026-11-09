@@ -9,13 +9,11 @@ at: { lat: 42.36024, lng: -71.06908 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 77
+durationS: 74
 visibility: at-hand
 certainty: documented
 certaintyNote: >-
-  The gunpowder keg rests on William Craft's own later account, quoted by Henry Ingersoll
-  Bowditch and cited by the National Park Service. The script attributes it to him and says
-  no other record of the keg is known to us.
+  The gunpowder keg rests on William Craft's own later account, quoted by Henry Ingersoll Bowditch and cited by the National Park Service. The script attributes it to him and says no other record of the keg is known to us.
 minAge: 0
 quality: 0.75
 tags: [boston, boston-core, black-heritage-trail, beacon-hill, underground-railroad, abolition]
@@ -42,7 +40,7 @@ script: |
 
   An abolitionist paper later explained why. The marshal knew that the road to hell lay over
   Lewis Hayden's threshold.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "This is sixty-six Phillips Street."
@@ -107,3 +105,68 @@ sources:
     url: https://www.nps.gov/places/lewis-and-harriet-hayden-house.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-hayden-house-keg/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.3
+    audioBytes: 1189972
+    transcript:
+      totalS: 74.3
+      lines:
+        - text: This is sixty-six Phillips Street.
+          atS: 0
+          durationS: 2.1
+        - text: It is a private home, so please look from the sidewalk.
+          atS: 2.35
+          durationS: 2.85
+        - text: In eighteen fifty it was a boarding house run by Lewis and Harriet Hayden.
+          atS: 6.14
+          durationS: 3.88
+        - text: Both had escaped slavery in Kentucky.
+          atS: 10.4
+          durationS: 2.52
+        - text: Lewis was out in the city.
+          atS: 13.43
+          durationS: 1.58
+        - text: Harriet almost certainly ran the house.
+          atS: 15.34
+          durationS: 2.58
+        - text: Between them it became the busiest Underground Railroad safe house in Boston.
+          atS: 18.24
+          durationS: 5.03
+        - text: That summer, the census found two famous guests living here.
+          atS: 23.71
+          durationS: 4.18
+        - text: William and Ellen Craft had escaped from Georgia, Ellen dressed as a white slaveholder and William posing as her slave.
+          atS: 28.4
+          durationS: 7.55
+        - text: That autumn, under the new Fugitive Slave Law, slave catchers came to Boston looking for them.
+          atS: 36.76
+          durationS: 5.65
+        - text: It was the city's first test of the law.
+          atS: 43.22
+          durationS: 2.45
+        - text: What happened next is William Craft's own account.
+          atS: 46.18
+          durationS: 3.1
+        - text: He said that he and Lewis Hayden had a keg of gunpowder under this house, with a fuse attached, ready to light if anyone tried to take them.
+          atS: 49.67
+          durationS: 7.87
+        - text: That is his word.
+          atS: 58.14
+          durationS: 1.3
+        - text: No other record of the keg survives that we know of.
+          atS: 59.77
+          durationS: 2.88
+        - text: Nobody tried.
+          atS: 62.92
+          durationS: 1.15
+        - text: The slave catchers gave up.
+          atS: 64.46
+          durationS: 1.88
+        - text: An abolitionist paper later explained why.
+          atS: 66.78
+          durationS: 2.76
+        - text: The marshal knew that the road to hell lay over Lewis Hayden's threshold.
+          atS: 69.87
+          durationS: 4.44

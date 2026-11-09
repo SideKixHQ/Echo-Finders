@@ -9,13 +9,11 @@ at: { lat: 42.32028, lng: -70.92778 }
 triggerRadiusKm: 0.15
 category: legend
 format: short
-durationS: 90
+durationS: 77
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A ghost story, not history. Its fullest early telling is a 1946 United Press report quoting the harbour
-  historian Edward Rowe Snow; National Park Service rangers tell it after fort tours. No record of the hanging
-  is cited by either source. The script says out loud it is a legend and unproven.
+  A ghost story, not history. Its fullest early telling is a 1946 United Press report quoting the harbour historian Edward Rowe Snow; National Park Service rangers tell it after fort tours. No record of the hanging is cited by either source. The script says out loud it is a legend and unproven.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -46,7 +44,7 @@ script: |
   broomstick.
 
   Keep an eye on the dark arches. If she comes, you will be the first to prove it.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "You are inside Fort Warren, the granite fort on Georges Island."
@@ -129,3 +127,77 @@ sources:
     url: https://www.nps.gov/thingstodo/fort-tours-on-georges-island.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/boston-the-lady-in-black/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 76.7
+    audioBytes: 1228007
+    transcript:
+      totalS: 76.7
+      lines:
+        - text: You are inside Fort Warren, the granite fort on Georges Island.
+          atS: 0
+          durationS: 4.14
+        - text: In summer, the rangers here often finish their tour with one story.
+          atS: 4.59
+          durationS: 4.1
+        - text: The Lady in Black.
+          atS: 9.01
+          durationS: 1.2
+        - text: It is a legend.
+          atS: 10.53
+          durationS: 1.02
+        - text: Nobody has ever proved a word of it.
+          atS: 11.94
+          durationS: 1.98
+        - text: The story goes like this.
+          atS: 15.04
+          durationS: 1.49
+        - text: During the Civil War, this fort held Confederate prisoners.
+          atS: 16.96
+          durationS: 3.69
+        - text: One of them was Captain Andrew Lanier.
+          atS: 21.09
+          durationS: 2.15
+        - text: His young wife came north from Georgia to free him.
+          atS: 23.49
+          durationS: 2.71
+        - text: She put on a man's clothes, took a pistol, and came out to the fort in the dark, in a small boat loaded with picks and shovels.
+          atS: 26.52
+          durationS: 7.72
+        - text: She crawled through a grating to his cell.
+          atS: 34.62
+          durationS: 2.26
+        - text: They began to dig a tunnel.
+          atS: 37.09
+          durationS: 1.39
+        - text: A guard heard the clink of a pick.
+          atS: 38.87
+          durationS: 1.81
+        - text: Caught, she drew her pistol and fired at the commander.
+          atS: 41.12
+          durationS: 3.08
+        - text: The shot killed her own husband.
+          atS: 44.48
+          durationS: 1.85
+        - text: She went to the gallows in a black dress found in the fort's stores.
+          atS: 46.65
+          durationS: 3.46
+        - text: Since then, the story says, a lady in black walks these walls.
+          atS: 50.43
+          durationS: 4.33
+        - text: A sentry who swore she tried to throttle him was suspected of drinking, and put in irons.
+          atS: 55.04
+          durationS: 4.95
+        - text: The fullest telling came from the harbour historian Edward Rowe Snow.
+          atS: 60.37
+          durationS: 4.1
+        - text: In nineteen forty-six he told reporters he would hide here on Halloween night and wait for her, armed with a broomstick.
+          atS: 64.8
+          durationS: 6.93
+        - text: Keep an eye on the dark arches.
+          atS: 72.11
+          durationS: 1.67
+        - text: If she comes, you will be the first to prove it.
+          atS: 73.9
+          durationS: 2.77

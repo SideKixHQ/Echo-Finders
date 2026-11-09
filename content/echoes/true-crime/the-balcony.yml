@@ -9,7 +9,7 @@ at: { lat: 35.13450, lng: -90.05780 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 64
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -46,13 +46,13 @@ script: |
   Look at the balcony once more.
 
   Remember the reason he was in Memphis, as well as what happened here.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: convicted
-  reviewedBy: "TODO: a named human, before this can leave draft."
-  reviewedAt: "2026-10-09"
+  reviewedBy: "James (owner), approved 2026-11-09"
+  reviewedAt: "2026-11-09"
   contentWarning: "This echo describes an assassination. No violence is described in detail."
 claims:
   - says: "On April 4, 1968, Martin Luther King Jr. stood there."
@@ -92,3 +92,62 @@ sources:
     url: https://civilrightsmuseum.org/about-us/
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-balcony/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 55.2
+    audioBytes: 884444
+    transcript:
+      totalS: 55.2
+      lines:
+        - text: Look up at the balcony.
+          atS: 0
+          durationS: 1.22
+        - text: On April 4, 1968, Martin Luther King Jr.
+          atS: 1.54
+          durationS: 3.78
+        - text: stood there.
+          atS: 5.35
+          durationS: 0.66
+        - text: He had come to Memphis to support thirteen hundred striking Black sanitation workers seeking better pay and safer working conditions.
+          atS: 6.29
+          durationS: 8.08
+        - text: The Lorraine was a place to stay while that work continued.
+          atS: 14.62
+          durationS: 3.49
+        - text: Then King was shot and killed on the balcony of his room.
+          atS: 18.62
+          durationS: 3.11
+        - text: Pause before looking away.
+          atS: 22.18
+          durationS: 1.67
+        - text: This site can become so familiar through photographs that the balcony starts to feel like an image rather than a place.
+          atS: 24
+          durationS: 6.62
+        - text: But it was a place.
+          atS: 31
+          durationS: 1.14
+        - text: There was a room behind him.
+          atS: 32.58
+          durationS: 1.4
+        - text: A city around him.
+          atS: 34.37
+          durationS: 1.2
+        - text: A campaign still underway.
+          atS: 35.94
+          durationS: 1.82
+        - text: The workers’ demands had not disappeared.
+          atS: 38.21
+          durationS: 2.25
+        - text: Neither had the need for the work he was doing.
+          atS: 40.9
+          durationS: 2.29
+        - text: Today, the museum preserves this location within the larger history of civil rights.
+          atS: 43.7
+          durationS: 5.4
+        - text: Look at the balcony once more.
+          atS: 49.48
+          durationS: 1.75
+        - text: Remember the reason he was in Memphis, as well as what happened here.
+          atS: 51.44
+          durationS: 3.77

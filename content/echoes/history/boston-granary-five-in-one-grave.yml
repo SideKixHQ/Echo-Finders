@@ -9,7 +9,7 @@ at: { lat: 42.35720, lng: -71.06128 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 48
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -37,7 +37,7 @@ pronunciations:
     say: AT-ucks
   - written: Faneuil
     say: FAN-yul
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look for a stone that faces Tremont Street."
@@ -95,3 +95,50 @@ sources:
     url: https://www.nps.gov/places/granary-burying-ground.htm
     retrievedAt: "2026-11-09"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-granary-five-in-one-grave/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.8
+    audioBytes: 877757
+    transcript:
+      totalS: 54.8
+      lines:
+        - text: Look for a stone that faces Tremont Street.
+          atS: 0
+          durationS: 3.16
+        - text: It belongs to five men.
+          atS: 3.48
+          durationS: 1.77
+        - text: On the fifth of March, seventeen seventy, British soldiers fired into a crowd on King Street.
+          atS: 6.06
+          durationS: 6.05
+        - text: Three days later, Boston buried the dead.
+          atS: 12.62
+          durationS: 2.97
+        - text: Witnesses said around ten thousand people followed the funeral.
+          atS: 16.1
+          durationS: 3.53
+        - text: That was most of the town.
+          atS: 20.06
+          durationS: 1.45
+        - text: The procession ended here.
+          atS: 21.83
+          durationS: 1.69
+        - text: Samuel Gray, Samuel Maverick, James Caldwell and Crispus Attucks went into the same plot.
+          atS: 24.78
+          durationS: 7.22
+        - text: A week later a fifth man, Patrick Carr, was laid in with them.
+          atS: 32.67
+          durationS: 4.3
+        - text: Two of them, Attucks and Caldwell, were sailors with no family and no home in Boston.
+          atS: 37.55
+          durationS: 6.53
+        - text: Before the funeral, their bodies lay in state at Faneuil Hall.
+          atS: 44.88
+          durationS: 4.23
+        - text: Nobody in Boston was their family.
+          atS: 50.06
+          durationS: 2
+        - text: That week, the whole town was.
+          atS: 52.57
+          durationS: 2.23

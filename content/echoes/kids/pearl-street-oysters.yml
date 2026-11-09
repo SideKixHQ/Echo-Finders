@@ -6,7 +6,7 @@ at: { lat: 40.70380, lng: -74.01120 }
 triggerRadiusKm: 0.09
 category: kids
 format: short
-durationS: 66
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -27,7 +27,7 @@ script: |
 
   And there is something else. The Dutch were disappointed with these oysters at first, because they do not make pearls. So, despite its name, Pearl Street was never about pearls.
 
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Pearl Street."
@@ -72,3 +72,56 @@ sources:
     url: https://downtownny.com/news/oyster-history-downtown/
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/pearl-street-oysters/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 55.1
+    audioBytes: 882354
+    transcript:
+      totalS: 55.1
+      lines:
+        - text: You are standing on a street named after a rubbish heap.
+          atS: 0
+          durationS: 3.15
+        - text: Look at the name.
+          atS: 3.47
+          durationS: 0.85
+        - text: Pearl Street.
+          atS: 4.6
+          durationS: 0.91
+        - text: The Dutch called it Paerlstraat, and it was named after a shell midden.
+          atS: 5.83
+          durationS: 4.08
+        - text: That is a giant pile of oyster shells that people had thrown away.
+          atS: 10.34
+          durationS: 3.77
+        - text: Later, the street itself was paved with oyster shells.
+          atS: 14.56
+          durationS: 3.21
+        - text: Oysters have lived in the water around this island for about ten thousand years.
+          atS: 18.09
+          durationS: 4.11
+        - text: The Lenape people, who lived here first, ate so many that they left huge piles of shells all over the area.
+          atS: 22.37
+          durationS: 6.5
+        - text: When New York grew, oysters were cheap, so everybody ate them.
+          atS: 29.2
+          durationS: 3.59
+        - text: Not just in restaurants.
+          atS: 33.17
+          durationS: 1.44
+        - text: Oyster carts lined the streets, the way you might buy a hot dog now.
+          atS: 34.93
+          durationS: 4.26
+        - text: By 1880 the city was farming about seven hundred million oysters.
+          atS: 39.71
+          durationS: 4.39
+        - text: And there is something else.
+          atS: 44.48
+          durationS: 1.32
+        - text: The Dutch were disappointed with these oysters at first, because they do not make pearls.
+          atS: 46.13
+          durationS: 4.47
+        - text: So, despite its name, Pearl Street was never about pearls.
+          atS: 50.92
+          durationS: 4.16
