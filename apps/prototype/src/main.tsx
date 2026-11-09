@@ -20,6 +20,16 @@ startErrorReporting(SENTRY_DSN, __BUILD_COMMIT__);
 // (`analytics.ts`, DEPLOY.md).
 startAnalytics();
 
+// The page itself never scrolls on a phone (theme.css, "On an actual phone"). Safari can
+// still restore an old scroll position on reload, or leave the page nudged after the
+// keyboard closes; either slides the app up under the address bar. Put it back.
+if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+const settle = () => {
+  if (window.scrollY !== 0) window.scrollTo(0, 0);
+};
+window.addEventListener("load", settle);
+document.addEventListener("focusout", () => setTimeout(settle, 50));
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <App />

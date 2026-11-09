@@ -1787,7 +1787,19 @@ body {
    the address bar *hidden*, so a full-height layout is always taller than what
    you can see, which is the same bug again in a smaller dose. */
 @media (max-width: 680px), (pointer: coarse) {
-  body { padding: 0; display: block; place-items: initial; }
+  /*
+     The page is exactly the visible screen, and it does not scroll.
+
+     The body kept the desk layout's `min-height: 100vh` here, and on mobile Safari `vh` is
+     the screen with the address bar hidden, while the phone frame is `100dvh`, the screen
+     you can actually see. So the page was one toolbar taller than the screen and could
+     scroll; Safari scrolled it (restoring a position on reload, or nudging it when the ZIP
+     field took focus) and the whole app slid up under the address bar, its top bar hidden
+     and a black band below the tab bar (James, 2026-11-09: "when i load it on my phone it
+     is not centered"). Everything that needs to scroll does so inside its own panel.
+  */
+  html, body { height: 100dvh; overflow: hidden; overscroll-behavior: none; }
+  body { padding: 0; display: block; place-items: initial; min-height: 0; }
   .stage { display: block; }
 
   .phone {
