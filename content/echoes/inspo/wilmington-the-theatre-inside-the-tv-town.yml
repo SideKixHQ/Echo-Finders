@@ -76,3 +76,9 @@ renders:
         - text: The cameras just pointed at it and gave it a new name.
           atS: 28.91
           durationS: 3.51
+archive:
+  - imageKey: archive/loc-habs-nc0364-102476.jpg
+    year: 1961
+    caption: "City Hall-Thalian Hall front steps and columns, Third Street"
+    credit: "William J. Boney Jr., Historic American Buildings Survey, Library of Congress, Prints and Photographs (HABS NC,65-WILM,4--1, 1961), https://www.loc.gov/pictures/item/nc0364.photos.102476p/"
+    rights: public-domain

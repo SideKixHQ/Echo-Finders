@@ -92,3 +92,9 @@ renders:
         - text: Wilmington gradually made a continuous place to walk beside the water that had shaped its economy long before visitors came here simply to enjoy the view.
           atS: 42.83
           durationS: 10.07
+archive:
+  - imageKey: archive/loc-pan-6a15338.jpg
+    year: 1918
+    caption: "Wilmington's working waterfront seen across the Cape Fear"
+    credit: "Haines Photo Co., Library of Congress, Prints and Photographs (PAN US GEOG - North Carolina no. 5, 1918), https://www.loc.gov/item/2007662492/"
+    rights: public-domain

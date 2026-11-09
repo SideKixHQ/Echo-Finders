@@ -73,3 +73,9 @@ renders:
         - text: For an evening, a touring reputation became something local residents could experience together.
           atS: 39.53
           durationS: 5.79
+archive:
+  - imageKey: archive/loc-habs-nc0364-102482.jpg
+    year: 1961
+    caption: "Inside Thalian Hall: the stage and proscenium"
+    credit: "William J. Boney Jr., Historic American Buildings Survey, Library of Congress, Prints and Photographs (HABS NC,65-WILM,4--7, 1961), https://www.loc.gov/pictures/item/nc0364.photos.102482p/"
+    rights: public-domain

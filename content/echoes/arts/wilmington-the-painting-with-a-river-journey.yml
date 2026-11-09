@@ -102,3 +102,9 @@ renders:
         - text: The object survives because later people keep accepting responsibility for its future.
           atS: 51.25
           durationS: 5.36
+archive:
+  - imageKey: archive/loc-csas-02952.jpg
+    year: 1938
+    caption: "St. James Church side entrance below the tower"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2745, 1938), https://www.loc.gov/item/2017888684/"
+    rights: public-domain

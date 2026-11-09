@@ -102,3 +102,9 @@ renders:
         - text: The builders' labor then transformed the design into the surviving structure before you.
           atS: 49.91
           durationS: 5.31
+archive:
+  - imageKey: archive/loc-csas-02919.jpg
+    year: 1935
+    caption: "The Bellamy house from Market Street, belvedere on the roof"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2714, between 1935 and 1938), https://www.loc.gov/item/2017888651/"
+    rights: public-domain
