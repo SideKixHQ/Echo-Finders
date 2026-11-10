@@ -4375,59 +4375,109 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .mapbar .jchip { width: 100%; }
 .mapbar .jchip-caret { margin-left: auto; }
 
+/*
+ * The trip sheet (`JourneyChip.tsx`, the trip board of 2026-11-10).
+ *
+ * Open, the map bar becomes the whole screen above the tab bar and dims the map, and the
+ * sheet sits in it from the top of the bar to just above the tabs. The bar keeps its own
+ * rows where they were (the padding is the offsets it had), so the map's measured top
+ * (`.mapbar-row`, `RouteMap`) does not move under it. The sheet scrolls inside itself
+ * and never runs under the tab bar.
+ */
+.mapbar:has(.jmenu) {
+  inset: 0; padding: var(--top-gap) var(--gutter) 0;
+  background: rgba(var(--rgb-shadow), 0.5);
+}
+.mapbar:has(.jmenu) .mapbar-row, .mapbar:has(.jmenu) .jchip-wrap { position: static; }
+/* The search box's pulse would glow round the sheet's edge. */
+.mapbar:has(.jmenu) .msearch { visibility: hidden; }
 .jmenu {
-  position: absolute; top: calc(100% + 8px); left: 0; z-index: 42;
-  width: min(300px, calc(100vw - 30px)); padding: 6px; border-radius: 16px;
-  background: rgba(var(--rgb-panel), 0.98); border: 1px solid var(--line-2);
-  backdrop-filter: blur(16px); box-shadow: 0 16px 44px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
+  position: absolute; z-index: 42; box-sizing: border-box;
+  top: calc(var(--top-gap) - 4px); left: 12px; right: 12px; bottom: calc(var(--nav-h) + 12px);
+  display: flex; flex-direction: column; gap: 14px;
+  padding: 18px 16px; border-radius: 24px;
+  background: rgb(var(--rgb-panel)); border: 1px solid var(--line-2);
+  box-shadow: 0 20px 50px rgba(var(--rgb-shadow), calc(0.6 * var(--shadow-k)));
   animation: catpopIn 0.16s var(--ease);
-  /* Never runs under the tab bar: the menu scrolls inside itself instead. */
-  max-height: calc(100dvh - var(--nav-h) - 150px); overflow-y: auto; overscroll-behavior: contain;
+  overflow-y: auto; overscroll-behavior: contain;
+}
+.jmenu > * { flex: none; }
+.jmenu-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.jmenu-top h2 { margin: 0; font-size: var(--fs-echo); font-weight: 700; color: var(--white); }
+.jmenu-close {
+  width: 44px; height: 44px; flex: none; border: 0; border-radius: 50%; cursor: pointer;
+  display: grid; place-items: center; background: rgba(var(--rgb-hair), 0.1); color: var(--white);
+}
+.jmenu-close svg {
+  width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round;
 }
 /* Walk / Drive / Fly: a visible row, the way every maps app shows travel mode. */
 .jmenu-modes {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; padding: 3px;
-  margin-bottom: 6px; border-radius: 12px; background: rgba(var(--rgb-hair), 0.06);
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 5px;
+  border-radius: 16px; background: rgba(var(--rgb-hair), 0.08);
 }
 .jmenu-mode {
-  display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px;
-  border: 0; border-radius: 10px; background: none; cursor: pointer;
-  font: inherit; font-size: var(--fs-button); color: var(--cool);
-}
-.jmenu-mode svg {
-  width: 17px; height: 17px; flex: none; fill: none; stroke: currentColor;
-  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+  display: flex; align-items: center; justify-content: center; min-height: 48px;
+  border: 0; border-radius: 12px; background: none; cursor: pointer;
+  font: inherit; font-size: var(--fs-button); color: var(--white);
 }
 .jmenu-mode.on {
   color: var(--aqua); background: rgba(var(--rgb-accent), 0.12);
   box-shadow: inset 0 0 0 1px rgba(var(--rgb-accent), 0.45);
 }
-.jmenu-empty { margin: 8px 10px; font-size: var(--fs-secondary); color: var(--muted); }
+.jmenu-empty { margin: 0 2px; font-size: var(--fs-secondary); color: var(--muted); }
+/* Around here and Plan a walk: the two choices that are not a tour, as cards. */
+.jmenu-card {
+  display: flex; align-items: center; gap: 14px; width: 100%; min-height: 64px;
+  padding: 14px; border-radius: 16px; border: 1px solid var(--line-2); background: none;
+  cursor: pointer; font: inherit; color: var(--white); text-align: left;
+}
+.jmenu-card.on { border: 1.5px solid var(--aqua); background: rgba(var(--rgb-accent), 0.08); }
+.jmenu-card span, .jmenu-item span { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
+.jmenu-card b { font-size: var(--fs-button); font-weight: 600; }
+.jmenu-card small { font-size: var(--fs-secondary); color: var(--cool); }
+.jmenu-item small { font-size: var(--fs-secondary); color: var(--muted); }
+/* A list row, as "Where are you?" still uses it for places (`LookSomewhere`). */
 .jmenu-item {
   display: flex; align-items: center; gap: 11px; width: 100%; min-height: 48px;
   padding: 6px 10px; border: 0; border-radius: 11px; background: none; cursor: pointer;
   font: inherit; font-size: var(--fs-button); color: var(--white); text-align: left;
 }
-.jmenu-item > svg:not(.jmenu-tick) {
-  width: 19px; height: 19px; flex: none; fill: none; stroke: var(--cool);
-  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+/* In the sheet, a tour: its full name, then how far, how long and how many echoes. */
+.jmenu .jmenu-item {
+  gap: 12px; min-height: 64px; padding: 8px 2px;
+  border-bottom: 1px solid var(--line); border-radius: 0;
 }
-.jmenu-item span { display: flex; flex-direction: column; gap: 2px; flex: 1; }
-.jmenu-item small { font-size: var(--fs-secondary); color: var(--muted); }
-.jmenu-item.on { background: rgba(var(--rgb-accent), 0.09); }
-.jmenu-item.on > svg { stroke: var(--aqua); }
-.jmenu-item .jmenu-tick { width: 16px; height: 16px; stroke: var(--aqua); stroke-width: 2.2; }
-.jmenu-more {
-  margin-top: 4px; border-top: 1px solid var(--line); border-radius: 0 0 11px 11px;
-  font-size: var(--fs-button); color: var(--aqua);
+.jmenu .jmenu-item b { font-size: var(--fs-body); font-weight: 600; line-height: 1.3; }
+.jmenu .jmenu-item small { color: var(--muted); }
+.jmenu .jmenu-item.on b { color: var(--aqua); }
+.jmenu-tick { width: 22px; height: 22px; stroke: var(--aqua); stroke-width: 2.6; }
+.jmenu-chev {
+  width: 18px; height: 18px; flex: none; fill: none; stroke: var(--muted); stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
 }
-@media (hover: hover) { .jmenu-item:hover { background: rgba(var(--rgb-hair), 0.07); } }
+/* Tours in other cities, Journey details: links, not rows. */
+.jmenu-link {
+  display: flex; align-items: center; min-height: 44px; padding: 0 2px; border: 0; background: none;
+  cursor: pointer; font: inherit; font-size: var(--fs-button); font-weight: 600; text-align: left;
+  color: var(--aqua); text-decoration: underline; text-underline-offset: 3px;
+}
+.jmenu-link span { display: flex; flex-direction: column; gap: 2px; }
+.jmenu-link small { font-size: var(--fs-secondary); font-weight: 400; color: var(--muted); text-decoration: none; }
+@media (hover: hover) {
+  .jmenu-item:hover, .jmenu-card:hover { background: rgba(var(--rgb-hair), 0.06); }
+  .jmenu .jmenu-item:hover { background: none; }
+  .jmenu-card.on:hover { background: rgba(var(--rgb-accent), 0.12); }
+}
 /* Guided walks and road trips (JourneyChip.tsx, GuidedRoutes): a heading, the ones near you,
-   then the rest by city. The "other cities" toggle is a quiet row, not the aqua footer link. */
-.jmenu-routes { margin-top: 6px; border-top: 1px solid var(--line); padding-top: 6px; }
-.jmenu-head { margin: 4px 10px 2px; font-size: var(--fs-label); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
-.jmenu-area-name { margin: 8px 10px 0; font-size: var(--fs-secondary); font-weight: 600; color: var(--cool); }
-.jmenu-routes .jmenu-more { border-top: 0; border-radius: 11px; margin-top: 0; }
+   then the rest by city behind a link. */
+.jmenu-routes { display: flex; flex-direction: column; }
+.jmenu-head {
+  margin: 4px 0 2px; font-size: var(--fs-label); font-weight: 600; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--muted);
+}
+.jmenu-far { margin-top: 8px; }
+.jmenu-area-name { margin: 14px 0 0; font-size: var(--fs-secondary); font-weight: 600; color: var(--cool); }
 @media (prefers-reduced-motion: reduce) { .jmenu { animation: none; } }
 
 /* The categories take the rest of the row, in their own pill so the strip reads as one key. */
@@ -4466,7 +4516,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  * `--btn-ink`, which the contrast audit holds at 11.9:1 and 7.1:1), and a selected route's
  * caption moves from muted to cool so it clears 4.5:1 on its tint in both themes.
  */
-.jmenu-mode.on { background: var(--btn-flat); color: var(--btn-ink); box-shadow: none; }
+.jmenu-mode.on { background: var(--btn-flat); color: var(--btn-ink); box-shadow: none; font-weight: 600; }
 .jmenu-item.on small { color: var(--cool); }
 
 /*
