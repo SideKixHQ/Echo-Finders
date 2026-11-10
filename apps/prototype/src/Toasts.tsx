@@ -142,6 +142,43 @@ export function SyncedToast({
   );
 }
 
+/** How long "Saved to My Echoes" stays, ms: long enough to read, gone before it is in the way. */
+export const SAVED_SHOW_MS = 3200;
+
+/**
+ * Saved: where it went. Save said "Saved" and nothing said where, and My Echoes did not
+ * show it, so a saved echo looked like it had gone nowhere. Slides away by itself.
+ */
+export function SavedToast({
+  title,
+  showMs,
+  onClose,
+}: {
+  readonly title: string;
+  readonly showMs: number;
+  readonly onClose: () => void;
+}) {
+  const [leaving, leave] = useLeave(onClose);
+  useEffect(() => {
+    const t = setTimeout(leave, showMs);
+    return () => clearTimeout(t);
+  }, [leave, showMs]);
+  return (
+    <Shell kind="saved" leaving={leaving}>
+      <span className="toast-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+        </svg>
+      </span>
+      <span className="toast-words">
+        <b>Saved to My Echoes</b>
+        <span>{title}</span>
+      </span>
+      <Close onClick={leave} />
+    </Shell>
+  );
+}
+
 /** C: the first tap on a locked echo, once ever. */
 export function LockedToast({ line, onClose }: { readonly line: string; readonly onClose: () => void }) {
   const [leaving, leave] = useLeave(onClose);

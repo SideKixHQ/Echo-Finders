@@ -38,7 +38,8 @@ import { Rail, type WalkingView } from "./Rail";
 import { MODE_PHRASE } from "./travel";
 import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { holdLockScreen, primeLockScreen } from "./lock-screen";
-import { HowEchoesUnlock, NearToast, SyncedToast } from "./Toasts";
+import { savedList } from "./saved-list";
+import { HowEchoesUnlock, NearToast, SavedToast, SAVED_SHOW_MS, SyncedToast } from "./Toasts";
 import {
   HOW_KEY,
   LOCKED_KEY,
@@ -1234,13 +1235,8 @@ export function App() {
    * said it already lived. The ordering came with it rather than being dropped with the
    * sheet: "Saved to hear" in the order you added them is a list about last Tuesday.
    */
-  const savedNearby = useMemo(() => {
-    const from = state.position?.at;
-    return savedEchoes
-      .map((echo) => ({ echo, distanceKm: from ? distanceKm(from, echo.point.at) : 0 }))
-      .sort((a, b) => a.distanceKm - b.distanceKm)
-      .map((s) => s.echo);
-  }, [savedEchoes, state.position]);
+  // Every saved echo, not only the ones on this journey (`saved-list.ts`).
+  const savedNearby = useMemo(() => savedList(chosen, LIBRARY_BY_ID, state.position?.at), [chosen, state.position]);
   const suggestion = useMemo(
     () => ROUTES.find((r) => r.id !== route.id && (corridorCounts[r.id] ?? 0) > 1) ?? null,
     [route.id, corridorCounts],
@@ -1285,7 +1281,14 @@ export function App() {
    * map. "Just this one" is now a single tap on that chip, so All only ever means all.
    */
   const allCategories = useCallback(() => setCats(null), []);
+  /** "Saved to My Echoes": which echo was just saved, for the toast that says where it went. */
+  const [savedToast, setSavedToast] = useState<string | null>(null);
+  // Leaving the map lets it go, so it does not come back on the way in again.
+  useEffect(() => setSavedToast(null), [tab]);
+  const chosenRef = useRef(chosen);
+  chosenRef.current = chosen;
   const toggleSave = useCallback((echo: Echo) => {
+    setSavedToast(chosenRef.current.has(echo.id) ? null : echo.id);
     setChosen((current) => {
       const next = new Set(current);
       if (next.has(echo.id)) next.delete(echo.id);
@@ -1722,6 +1725,14 @@ export function App() {
     setPan({ x: 0, y: 0 });
     setZoom(1);
   };
+  /** The map, on this echo, its card open: Go in the search, and Go on a saved echo. */
+  const goToEcho = (echo: Echo) => {
+    setTab("map");
+    setListening(false);
+    lookSomewhere({ label: echo.point.place.split(",")[0]!.trim(), detail: "", at: echo.point.at }, roamMode);
+    setFocusId(echo.id);
+    setSelectedId(echo.id);
+  };
   const openPlanner = () => {
     const start = state.position?.at;
     if (!start) return;
@@ -1997,11 +2008,7 @@ export function App() {
                   library={LIBRARY}
                   saved={chosen}
                   onLook={(hit) => lookSomewhere(hit, roamMode)}
-                  onGo={(echo) => {
-                    lookSomewhere({ label: echo.point.place.split(",")[0]!.trim(), detail: "", at: echo.point.at }, roamMode);
-                    setFocusId(echo.id);
-                    setSelectedId(echo.id);
-                  }}
+                  onGo={goToEcho}
                   onSave={toggleSave}
                 />
                 <div className="mapbar-row">
@@ -2540,6 +2547,13 @@ export function App() {
               isHeard={(id) => stateOf(id) === "heard" || found.heardBefore.has(id)}
               saved={savedNearby}
               onSave={toggleSave}
+              onGo={goToEcho}
+              onFindNear={() => {
+                // Back to the map, framed on you rather than on somewhere looked up.
+                setLookAt(null);
+                setWalkingView("map");
+                setTab("map");
+              }}
               mode={roaming ? roamMode : route.mode}
               view={echoesView}
               onView={setEchoesView}
@@ -2834,6 +2848,18 @@ export function App() {
                       setListening(true);
                     }}
                     onClose={() => setSyncedNow(null)}
+                  />
+                );
+              }
+              // On the map, where the card and the search that saved it are.
+              const justSaved = savedToast && tab === "map" && chosen.has(savedToast) ? LIBRARY_BY_ID.get(savedToast) : undefined;
+              if (justSaved) {
+                return (
+                  <SavedToast
+                    key={`saved-${justSaved.id}`}
+                    title={justSaved.title}
+                    showMs={SAVED_SHOW_MS}
+                    onClose={() => setSavedToast(null)}
                   />
                 );
               }
