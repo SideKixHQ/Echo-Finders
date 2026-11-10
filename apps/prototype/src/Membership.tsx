@@ -23,6 +23,7 @@
 
 import { useState } from "react";
 import { CITIES, FREE_ECHO_LIMIT, type Membership } from "@echofinders/core";
+import { keepWhole } from "./Paywall";
 
 interface Props {
   readonly membership: Membership;
@@ -85,8 +86,8 @@ export function MembershipPanel({
           <strong>Membership options</strong>
           <small>
             {membership.plan === "free"
-              ? "A Week Pass, a City Pass, or All-Access for every city, road trip and flight."
-              : "See the plans, or add a year of All-Access."}
+              ? keepWhole("A Week Pass, a City Pass, or All-Access for every city, road trip and flight.")
+              : keepWhole("See the plans, or add a year of All-Access.")}
           </small>
         </span>
         <Chevron />
@@ -107,7 +108,7 @@ export function MembershipPanel({
             <small>
               {payments
                 ? "No card yet. When you buy, Stripe holds your card, never Echo Finders, and you change it here."
-                : "No card yet: payments are not switched on. When they are, your card is held by Stripe, never by Echo Finders, and you change it here."}
+                : "Stripe will hold your card, never Echo Finders, and you will change it here."}
             </small>
           </span>
           {!payments && <span className="membership-soon mono">Soon</span>}

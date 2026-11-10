@@ -113,7 +113,7 @@ export function DirectionsBar({ echo, directions, from, onEnd, step, toStart = f
         </p>
         <p className="dir-sheet-note">
           {g && !g.streets
-            ? "No street map here yet, so the line is straight. When you arrive it unlocks. Tap Play."
+            ? "Head this way, as the crow flies. When you arrive it unlocks. Tap Play."
             : "When you arrive it unlocks. Tap Play."}
         </p>
         <button className="dir-end" onClick={onEnd}>

@@ -6,18 +6,13 @@
  * moment they are switched off.
  *
  * Every control says what is *lost* by turning it off. A switch whose consequence is
- * unclear is not really a choice, and the fallbacks come from the engine
- * (`featureAvailability`) rather than being written twice.
+ * unclear is not really a choice. (The "What works right now" ON/OFF table that listed the
+ * engine's `featureAvailability` was taken off this screen, 2026-11-10: it was a developer's
+ * view of the app, and each switch already says what turning it off costs.)
  */
 
 import { useState, type ReactNode } from "react";
-import {
-  capabilitiesImpliedBy,
-  featureAvailability,
-  type Capability,
-  type FeatureId,
-  type PrivacySettings,
-} from "@echofinders/core";
+import type { PrivacySettings } from "@echofinders/core";
 import { SENTRY_DSN, errorReportsAllowed, setErrorReportsAllowed } from "./error-report";
 import { Feedback } from "./Feedback";
 import { Suggest } from "./Suggest";
@@ -55,15 +50,6 @@ interface Props {
   readonly membership?: ReactNode;
 }
 
-const FEATURE_LABELS: Record<FeatureId, string> = {
-  "map-browsing": "Browsing the map",
-  "capture-on-screen": "Opening echoes",
-  "capture-hands-free": "Hands-free walking",
-  "haptic-guidance": "Buzz as you get closer",
-  "camera-viewfinder": "Camera view",
-  "passing-alerts": "Alerts when passing something",
-};
-
 export function Privacy({
   settings,
   onChange,
@@ -81,10 +67,6 @@ export function Privacy({
   onOwnerOff,
   membership,
 }: Props) {
-  // What the app would actually be granted, given these settings. Shown so the fallbacks
-  // below are the real ones rather than a hand-written list that drifts.
-  const granted = [...capabilitiesImpliedBy(settings)] as Capability[];
-  const features = featureAvailability([...granted, "haptics"]);
   // Kept by error-report.ts itself, not in PrivacySettings: it has to be readable before
   // the app renders, which is when reporting starts.
   const [errorReports, setErrorReports] = useState(errorReportsAllowed);
@@ -201,21 +183,6 @@ export function Privacy({
         }}
       />
 
-      <section className="panel">
-        <h3>What works right now</h3>
-        <ul className="feature-list">
-          {features.map((feature) => (
-            <li key={feature.feature} className={`feature feature-${feature.level}`}>
-              <span className="feature-name">{FEATURE_LABELS[feature.feature]}</span>
-              <span className="feature-level">
-                {feature.level === "full" ? "on" : feature.level === "degraded" ? "limited" : "off"}
-              </span>
-              {feature.fallback && <small className="feature-fallback">{feature.fallback}</small>}
-            </li>
-          ))}
-        </ul>
-      </section>
-
       {owner && onOwnerOff && (
         <section className="panel">
           <h3>{tester ? "Tester mode" : "Owner mode"}</h3>
@@ -258,8 +225,8 @@ export function Privacy({
         <button className="danger-row" onClick={startOver}>
           <span>Start over</span>
           <small>
-            Forgets the onboarding, your ratings and everything synced, then reloads. Use it
-            when the app looks like an older version of itself.
+            Clears your echoes, ratings and settings on this phone and opens the app fresh,
+            from the first screen.
           </small>
         </button>
       </section>

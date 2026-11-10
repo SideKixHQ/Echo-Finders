@@ -1530,21 +1530,6 @@ body {
   font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
 }
-.feature-list { list-style: none; }
-.feature {
-  display: grid; grid-template-columns: 1fr auto; gap: 2px 10px;
-  padding: 7px 0; border-bottom: 1px solid var(--line); font-size: var(--fs-secondary);
-}
-.feature:last-child { border-bottom: 0; }
-.feature-level { font-family: "Space Grotesk", monospace; font-size: var(--fs-secondary); text-transform: uppercase; letter-spacing: 0.1em; }
-.feature-full .feature-level { color: var(--aqua); }
-.feature-degraded .feature-level { color: var(--gold); }
-.feature-unavailable .feature-level { color: var(--muted); }
-.feature-unavailable .feature-name { color: var(--muted); }
-/* --muted-soft, not a literal. At the old 0.7 this composed to 4.43:1 on the dark panel —
-   seven hundredths under 1.4.3 — and to 1.73:1 on white, because the literal never learned
-   about the light scheme. */
-.feature-fallback { grid-column: 1 / -1; font-size: var(--fs-secondary); color: var(--muted-soft); line-height: 1.5; }
 
 .panel-danger { border-color: rgba(255, 0, 122, 0.24); }
 .danger-row {
@@ -3763,6 +3748,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 /* The sum that decides between them, said as a fact rather than a "best value" badge. */
 .paywall-sum { text-wrap: balance; margin: 10px 0 12px; font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted); }
+/* A product name kept on one line: "All-Access" broke at its own hyphen (`keepWhole`, Paywall.tsx). */
+.nobreak { white-space: nowrap; }
 /* "Buying for another city?" (Paywall.tsx): a link in the sum's own line, so it costs the
    screen no height, with a 44px target drawn outside the text. */
 .paywall-other {
