@@ -1,0 +1,105 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Museum District and Rice University.
+# Listening spot: outside Rice Stadium, on the far west side of the Rice University campus, where President Kennedy gave the moon speech (NPS).
+# Position: Wikidata Q1857419 (Rice Stadium), 29.71639, -95.40917, the stadium's centre; the radius takes in the stands and the sidewalks around them (high confidence).
+id: houston-why-does-rice-play-texas
+title: "Why Does Rice Play Texas?"
+summary: "On 12 September 1962, in this stadium, President Kennedy set the moon as the goal, and explained it with a football joke."
+place: "Rice Stadium, Rice University, Houston, Texas"
+at: { lat: 29.71639, lng: -95.40917 }
+triggerRadiusKm: 0.12
+category: history
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.9
+tags: [houston, rice-university, kennedy, space, moon, apollo, speeches]
+teaser: "The most famous line about the moon was set up by a joke about college football."
+script: |
+  Look at the stands of this stadium. Plain concrete, row on row.
+
+  The most famous sentence ever spoken about the moon was spoken here. And it was set up with a joke about football.
+
+  The stadium was designed and built in nine months, by engineers who reused forms from the Gulf Freeway to pour the concrete.
+
+  On the twelfth of September, nineteen sixty two, President John Kennedy came here to speak. Just seven months earlier, John Glenn had circled the Earth. Now Kennedy wanted more.
+
+  But why, some say, the moon, he asked. Why choose this as our goal? And they may well ask, why climb the highest mountain?
+
+  Then, standing in Rice's own stadium, he asked one more.
+
+  Why does Rice play Texas?
+
+  We choose to go to the moon, he said. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard.
+
+  Look at the stands again. Seven years later, men walked on the moon, and talked to a room in this city.
+
+  It started as a football joke.
+
+pronunciations: []
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "The most famous sentence ever spoken about the moon was spoken here."
+    source: 1
+    quote: "And then when John F. Kennedy spoke at Rice University to announce the Space Program, he spoke in Rice Stadium, from the 1950s."
+  - says: "The stadium was designed and built in nine months, by engineers who reused forms from the Gulf Freeway to pour the concrete."
+    source: 1
+    quote: "It was designed and built in nine months, and the engineers that worked on the Gulf Freeway that I showed you, they reused some of the forms here to contract the concrete stadium structure."
+  - says: "On the twelfth of September, nineteen sixty two, President John Kennedy came here to speak."
+    source: 2
+    quote: "President John F. Kennedy proposed a new challenge on September 12, 1962, in an address at Rice University"
+  - says: "Just seven months earlier, John Glenn had circled the Earth."
+    source: 3
+    quote: "President John F. Kennedy and astronaut Lieutenant Colonel John Glenn, Jr. look inside the Friendship 7 space capsule. 23 February 1962."
+  - says: "Just seven months earlier, John Glenn had circled the Earth."
+    source: 2
+    quote: "In the flood of enthusiasm after Glenn’s flight, President John F. Kennedy proposed a new challenge on September 12, 1962"
+  - says: "But why, some say, the moon, he asked."
+    source: 2
+    quote: "But why, some say, the moon?"
+  - says: "Why choose this as our goal?"
+    source: 2
+    quote: "Why choose this as our goal?"
+  - says: "And they may well ask, why climb the highest mountain?"
+    source: 2
+    quote: "And they may well ask why climb the highest mountain?"
+  - says: "Why does Rice play Texas?"
+    source: 2
+    quote: "Why does Rice play Texas?"
+  - says: "We choose to go to the moon, he said."
+    source: 4
+    quote: "\"We choose to go to the moon,\" Kennedy said during a speech at Rice University in Houston on Sept. 12, 1962."
+  - says: "We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard."
+    source: 2
+    quote: "We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard"
+  - says: "Seven years later, men walked on the moon, and talked to a room in this city."
+    source: 5
+    quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
+sources:
+  - title: "Houston: A Case Study in Urban Cultural Landscapes (Texas Cultural Landscape Symposium)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/houston-a-case-study-in-urban-cultural-landscapes.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Transcript of John Glenn's Official Communication with the Command Center (1962)"
+    publisher: "National Archives, Milestone Documents"
+    url: https://www.archives.gov/milestone-documents/john-glenns-official-communication-with-the-command-center
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "John Fitzgerald Kennedy: The First One Hundred Years"
+    publisher: "National Park Service"
+    url: https://home.nps.gov/articles/000/john-fitzgerald-kennedy-the-first-one-hundred-years.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "JFK legacy: Setting America on course for the moon"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/jfk-legacy-setting-america-on-course-for-the-moon/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "The Eagle Has Landed, 1969 (video transcript, ARC 45017)"
+    publisher: "National Archives"
+    url: https://www.archives.gov/files/social-media/transcripts/transcript-eagle-has-landed-1969-45017.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain

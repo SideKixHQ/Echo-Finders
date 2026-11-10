@@ -1,0 +1,98 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Freedmen's Town and Fourth Ward: legend.
+# Listening spot: the streets of the Freedmen's Town Historic District, Fourth Ward, the neighborhood the Evening Journal called Freedmantown in September 1884 (WPA Houston guide, 1942). No source fixes where the "Thing" was seen.
+# Position: Wikidata Q109999719 (Freedmen's Town Historic District), 29.75611, -95.37972, the district's centre (area evidence only).
+id: houston-the-thing-in-freedmantown
+title: "The Thing in Freedmantown"
+summary: "In September 1884 a newspaper reported a skeleton in a dress walking Freedmantown at night. Hundreds of shots were fired. Nobody caught it."
+place: "Freedmen's Town Historic District, Fourth Ward, Houston, Texas"
+at: { lat: 29.75611, lng: -95.37972 }
+triggerRadiusKm: 0.15
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 86
+visibility: position-only
+certainty: legend
+certaintyNote: >-
+  A ghost scare, not a proven event. The account is the Houston Evening Journal's, from September 1884, quoted in the WPA's Houston guide of 1942; the paper itself mocked the neighborhood and floated a political explanation. Nothing in the record says what, if anything, was seen. The script says out loud that it is a legend.
+minAge: 0
+quality: 0.75
+tags: [houston, freedmens-town, fourth-ward, ghosts, legend, 1884, african-american-history]
+teaser: "A skeleton in a dress, a club formed to shoot it, and a soldier company holding the bridge."
+script: |
+  Look along these streets. In the eighteen eighties, this was Freedmantown, built by people who had been freed from slavery.
+
+  This is a legend. Nobody ever proved there was anything here at all.
+
+  On the twenty third of September, eighteen eighty four, the Evening Journal reported that Freedmantown was in a ferment. Something had been seen at night. The paper called it the Thing. It looked, the paper said, like a skeleton dressed in a mother hubbard, a long loose house dress, with the bones shining through.
+
+  The next day, the paper said the Thing had come again.
+
+  It was an election autumn, and the paper wrote that someone had told a newspaper in Saint Louis the whole ghost was a political trick, to scare voters.
+
+  Then the shooting started.
+
+  The paper reported that several hundred shots were fired by something called the Anti Ghost Club. A deputy named Glass posted his men around the gullies and the alleys. A militia company held the bridge.
+
+  And the paper's last word on it was this.
+
+  The Thing remains a mystery.
+
+  Look down the street, after dark.
+
+  It has never been explained. It has also never been caught.
+
+pronunciations: []
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In the eighteen eighties, this was Freedmantown, built by people who had been freed from slavery."
+    source: 1
+    quote: "the greatest proportion of the black population was concentrated in Third Ward, in Freedman’s Town and similar neighborhoods in Fourth Ward"
+  - says: "On the twenty third of September, eighteen eighty four, the Evening Journal reported that Freedmantown was in a ferment."
+    source: 2
+    quote: "On September 23 the Evening Journal reported:"
+  - says: "On the twenty third of September, eighteen eighty four, the Evening Journal reported that Freedmantown was in a ferment."
+    source: 2
+    quote: "Freedmantown is in a ferment over the “Thing’ which"
+  - says: "The paper called it the Thing."
+    source: 2
+    quote: "Freedmantown is in a ferment over the “Thing’ which"
+  - says: "It looked, the paper said, like a skeleton dressed in a mother hubbard, a long loose house dress, with the bones shining through."
+    source: 2
+    quote: "looked as if it was a skeleton dressed in a mother hubbard with the bones shining through."
+  - says: "The next day, the paper said the Thing had come again."
+    source: 2
+    quote: "The ‘Thing’ again materialized last night in Freedmantown"
+  - says: "It was an election autumn, and the paper wrote that someone had told a newspaper in Saint Louis the whole ghost was a political trick, to scare voters."
+    source: 2
+    quote: "Some rascally correspondent has telephoned the St. Louis Globe-Democrat that the appearance of the"
+  - says: "It was an election autumn, and the paper wrote that someone had told a newspaper in Saint Louis the whole ghost was a political trick, to scare voters."
+    source: 2
+    quote: "ghost, is but a ruse of the Committee of Twenty-one to force the straight out Republican voters to vote the mongrel ticket for county offices."
+  - says: "The paper reported that several hundred shots were fired by something called the Anti Ghost Club."
+    source: 2
+    quote: "Several hundred shots were fired by the Anti-Ghost Club"
+  - says: "A deputy named Glass posted his men around the gullies and the alleys."
+    source: 2
+    quote: "Deputy Glass placed his men around the gullies and alley-ways"
+  - says: "A militia company held the bridge."
+    source: 2
+    quote: "the Davis Rifles held the bridge"
+  - says: "The Thing remains a mystery."
+    source: 2
+    quote: "The ‘Thing’ remains a mystery."
+  - says: "It was an election autumn, and the paper wrote that someone had told a newspaper in Saint Louis the whole ghost was a political trick, to scare voters."
+    source: 2
+    quote: "When bolting Republican ““Mugwumps” helped elect Grover Cleveland"
+sources:
+  - title: "Emancipation Park, HALS TX-7, Written Historical and Descriptive Data"
+    publisher: "Historic American Landscapes Survey, National Park Service (Library of Congress)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx1100/tx1147/data/tx1147data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), quoting the Houston Evening Journal, September 1884"
+    publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"
+    url: https://archive.org/details/houstonahistory00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

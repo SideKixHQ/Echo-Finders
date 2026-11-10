@@ -1,0 +1,88 @@
+# Drafted by Claude Code (2026-11-10) for Houston, NRG Park: legend.
+# Listening spot: outside the Astrodome's north side, 8400 Kirby Drive, in NRG Park. The building is closed; the echo is heard from outside.
+# Position: about 120 m north of Wikidata Q1025406 (Astrodome, 29.685, -95.40778), on the plaza by the north facade (medium confidence).
+id: houston-the-man-in-the-brown-suit
+title: "The Man in the Brown Suit"
+summary: "The workers who emptied the closed Astrodome in 2017 were warned about a man in a brown suit on the upper deck. None of them saw him."
+place: "Astrodome, north side, 8400 Kirby Drive, NRG Park, Houston, Texas"
+at: { lat: 29.68610, lng: -95.40778 }
+triggerRadiusKm: 0.08
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 78
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A ghost story, not history. Its only source is a 2017 Boston Globe report quoting a worker inside the closed Astrodome, who said the people who hired his crew told them about a man in a brown suit on an upper deck. Nobody quoted had seen him. The script says out loud that it is a legend and that no one has seen him.
+minAge: 0
+quality: 0.7
+tags: [houston, astrodome, nrg-park, ghosts, legend]
+teaser: "Nobody on the crew ever saw him. They were told to look for him anyway."
+script: |
+  Look at the great curve of the Astrodome. It has been closed to the public for years. Inside, it is dark.
+
+  This is a legend. Nobody has proved a word of it.
+
+  In February twenty seventeen, Houston hosted the Super Bowl next door, and a small crew from New York was brought in to work on the empty floor of the old dome. The AstroTurf lay rolled up in cylinders. Old peanut shells were still on the floor.
+
+  The people who hired them gave the crew a warning.
+
+  There's a man in a brown suit who you'll see sometimes, they said. Up there, on the upper deck, where the light peeks through. The dome, they told them, is haunted by that man.
+
+  One of the crew told a reporter that at six o'clock it gets a little creepy. The sunlight goes, the lights go out, and only the small lights stay on.
+
+  He felt a cold breeze once, and wondered what it was. But neither he nor anyone else on the crew ever saw the man in the brown suit.
+
+  What they did see, the week before, was a raccoon, or maybe a possum, walking right up the ramp.
+
+  Look up at the roof line, where the light gets in.
+
+  If he is there, he has the whole place to himself.
+
+pronunciations: []
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In February twenty seventeen, Houston hosted the Super Bowl next door, and a small crew from New York was brought in to work on the empty floor of the old dome."
+    source: 1
+    quote: "A small group of men and women brought in from New York have been working to unload the souvenirs in a fenced-in area on the floor."
+  - says: "In February twenty seventeen, Houston hosted the Super Bowl next door, and a small crew from New York was brought in to work on the empty floor of the old dome."
+    source: 1
+    quote: "Now it is used to store souvenirs that will be shuttled next door to NRG Stadium, where Super Bowl LI was played Sunday."
+  - says: "The AstroTurf lay rolled up in cylinders."
+    source: 1
+    quote: "The famous AstroTurf has been stripped and rolled up in cylinders"
+  - says: "Old peanut shells were still on the floor."
+    source: 1
+    quote: "Peanut shells can still be found on the floor in the Astrodome, years after it closed."
+  - says: "There's a man in a brown suit who you'll see sometimes, they said."
+    source: 1
+    quote: "“The people who brought us in say, ‘There’s a man in a brown suit who you’ll see sometimes,’ ’’ he said as he pointed to an upper deck where light peeks through."
+  - says: "Up there, on the upper deck, where the light peeks through."
+    source: 1
+    quote: "he said as he pointed to an upper deck where light peeks through."
+  - says: "The dome, they told them, is haunted by that man."
+    source: 1
+    quote: "The people here tell us that it is haunted by that man."
+  - says: "One of the crew told a reporter that at six o'clock it gets a little creepy."
+    source: 1
+    quote: "“At 6 o’clock it gets a little creepy,’’ said Bellmier."
+  - says: "The sunlight goes, the lights go out, and only the small lights stay on."
+    source: 1
+    quote: "The sunlight is gone, the lights go out and just the LEDs are on"
+  - says: "He felt a cold breeze once, and wondered what it was."
+    source: 1
+    quote: "Neither he nor any of the other crew has seen the ghost, although he said he felt a cold breeze and wondered aloud what it was."
+  - says: "But neither he nor anyone else on the crew ever saw the man in the brown suit."
+    source: 1
+    quote: "Neither he nor any of the other crew has seen the ghost"
+  - says: "What they did see, the week before, was a raccoon, or maybe a possum, walking right up the ramp."
+    source: 1
+    quote: "somebody saw a raccoon or a possum walk right in there last week and walk right up that ramp"
+sources:
+  - title: "Memories are all that's left of Houston Astrodome"
+    publisher: "The Boston Globe, 5 February 2017"
+    url: https://www.bostonglobe.com/sports/2017/02/05/memories-are-all-that-left-houston-astrodome/9bLKJjXajRgOuc0awXe92M/story.html
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

@@ -1,0 +1,94 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Buffalo Bayou (River Oaks).
+# Listening spot: the grounds of Bayou Bend, 6003 Memorial Drive, Ima Hogg's house and gardens inside a loop of Buffalo Bayou, now part of the Museum of Fine Arts, Houston (HALS TX-11). Entry is through the museum.
+# Position: Wikidata Q2892295 (Bayou Bend Collection and Gardens), 29.75766, -95.42026 (high confidence for the house).
+id: houston-if-there-is-such-a-thing
+title: "If There Is Such a Thing"
+summary: "Ima Hogg moved into her pink house on Buffalo Bayou in 1928. Months later the bayou flooded her garden. She replanted, then gave it away."
+place: "Bayou Bend, 6003 Memorial Drive, River Oaks, Houston, Texas"
+at: { lat: 29.75766, lng: -95.42026 }
+triggerRadiusKm: 0.08
+inside: true
+category: people
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [houston, buffalo-bayou, river-oaks, bayou-bend, ima-hogg, gardens, museum-of-fine-arts]
+teaser: "She asked her architects for a style that might not exist. Then the bayou came up the lawn."
+script: |
+  Look at the house. Pink stucco, black iron balconies. Below it, the land drops away through the trees to Buffalo Bayou, which loops right around this place. That loop is why it is called Bayou Bend.
+
+  The woman who built it asked for a style that she was not sure existed.
+
+  Her name was Ima Hogg. Her father, Jim Hogg, was the first governor of Texas born in Texas. Before he died, he told his children not to sell the family plantation, because he believed there was oil under it. In nineteen eighteen they drilled. He was right.
+
+  In the nineteen twenties, Ima and her brothers laid out a new neighborhood along this bayou, River Oaks. For her own house, she told the architects what she wanted. Southern colonial, she asked for, with a Latin flavor, if there is such a thing.
+
+  She moved in on the fifth of November, nineteen twenty eight.
+
+  On the thirty first of May, nineteen twenty nine, the bayou flooded. The new garden and the lawn below the house were wrecked, and trees the family loved were lost.
+
+  So she spent the next year replanting. Hundreds of trees, shrubs and flowers. Old roses. A white garden in the woods.
+
+  Then, in nineteen fifty seven, she gave the whole place away, to the Museum of Fine Arts, so anyone could walk through it.
+
+  Look down toward the water, through the trees she planted after the flood.
+
+  It turned out there was such a thing.
+
+pronunciations:
+  - written: Ima Hogg
+    say: EYE-muh HOG
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Pink stucco, black iron balconies."
+    source: 1
+    quote: "Another antebellum influence was the pink stucco on the exterior surface and black ornamental iron used on the numerous balconies and porches."
+  - says: "That loop is why it is called Bayou Bend."
+    source: 1
+    quote: "Bayou Bend is named for its situation inside the loop of a meander along Buffalo Bayou, the primary waterway of the City of Houston."
+  - says: "Her father, Jim Hogg, was the first governor of Texas born in Texas."
+    source: 1
+    quote: "In 1890, James Stephen Hogg became the first native-born Texan elected governor of the state."
+  - says: "Before he died, he told his children not to sell the family plantation, because he believed there was oil under it."
+    source: 1
+    quote: "Prior to his death in 1906, Jim Hogg instructed his children to not sell the property, believing there was oil beneath it."
+  - says: "In nineteen eighteen they drilled."
+    source: 1
+    quote: "In 1918 drilling began at Varner, providing the primary source of great personal wealth"
+  - says: "In the nineteen twenties, Ima and her brothers laid out a new neighborhood along this bayou, River Oaks."
+    source: 1
+    quote: "during the 1920s Will Hogg in partnership with his younger sister Ima and brother Mike, began the development of a suburban residential neighborhood along the banks of Buffalo Bayou."
+  - says: "Southern colonial, she asked for, with a Latin flavor, if there is such a thing."
+    source: 1
+    quote: "Miss Ima directed Briscoe and Staub to design a house that was “Southern colonial with a Latin flavor, if there is such a thing.”"
+  - says: "She moved in on the fifth of November, nineteen twenty eight."
+    source: 1
+    quote: "was completed by November 5, 1928, when the family moved in."
+  - says: "On the thirty first of May, nineteen twenty nine, the bayou flooded."
+    source: 1
+    quote: "A disastrous flood on May 31, 1929, resulted in the need to repair much of the"
+  - says: "The new garden and the lawn below the house were wrecked, and trees the family loved were lost."
+    source: 1
+    quote: "garden, particularly the newly installed cottage garden and the extensive lawn below the house. Also damaged were the naturally wooded slopes of the bayou and many specimen trees cherished by the family."
+  - says: "Hundreds of trees, shrubs and flowers."
+    source: 1
+    quote: "This work included the planting of hundreds of trees, shrubs and flowers."
+  - says: "Old roses."
+    source: 1
+    quote: "at least six varieties of “Old Time Roses” and fifteen tree roses."
+  - says: "A white garden in the woods."
+    source: 1
+    quote: "the third significant element, now known as the White Garden, was well established."
+  - says: "Then, in nineteen fifty seven, she gave the whole place away, to the Museum of Fine Arts, so anyone could walk through it."
+    source: 1
+    quote: "In 1957, Ima Hogg gifted Bayou Bend to the Museum of Fine Arts Houston"
+sources:
+  - title: "Bayou Bend (Bayou Bend Collection and Gardens), HALS TX-11, Written Historical and Descriptive Data"
+    publisher: "Historic American Landscapes Survey, National Park Service (Library of Congress)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx1300/tx1348/data/tx1348data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain

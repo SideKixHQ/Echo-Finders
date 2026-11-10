@@ -1,0 +1,108 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Downtown and Market Square cluster.
+# Listening spot: the top of the bank at Allen's Landing Memorial Park, at the foot of Main Street, just below the junction of Buffalo and White Oak Bayous.
+# Position: Wikidata Q115209939 (Allen's Landing Memorial Park), 29.763898, -95.358893, on the south bank, on land (medium confidence for the exact landing).
+id: houston-we-passed-the-city
+title: "We Passed the City"
+summary: "In January 1837 the first steamer reached the new town of Houston. A party rowing ahead to find it went straight past."
+place: "Allen's Landing, Main Street at Buffalo Bayou, Downtown Houston, Texas"
+at: { lat: 29.76390, lng: -95.35889 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, downtown, allens-landing, buffalo-bayou, founding, allen-brothers, republic-of-texas]
+teaser: "The first boatload of people looking for Houston rowed right past it."
+script: |
+  Look down at the water from the top of this bank. Just upstream, a smaller bayou, White Oak, runs into this one.
+
+  The first people who came looking for Houston went straight past it.
+
+  In the summer of eighteen thirty six, two brothers, Augustus and John Allen, bought the land beside these two bayous. They named it the town of Houston, and their advertisements called it the great commercial emporium of Texas. John Allen told the Texas Congress it was one of the most healthy places in the lower country. The bayou, he promised, is navigable at all times.
+
+  At the end of that year, a young merchant named Francis Lubbock sailed for Houston on a steamer called the Laura, with his groceries below deck.
+
+  No steamboat had ever come this far. Fallen trees blocked the bayou. The passengers went ashore, made winches out of tree trunks, and hauled the snags out of the way. Twelve miles of bayou took them three days.
+
+  Near the end, Lubbock and a few others got tired of the steamer and rowed ahead in a small boat to find the city.
+
+  So little evidence could we see of a landing, he wrote, that we passed by the site and run into White Oak Bayou.
+
+  They backed down, and found a road laid off from the water's edge. On shore were stakes and footprints.
+
+  This, about the first of January, eighteen thirty seven, was Houston.
+
+  Look at the bank again. Stakes, footprints, and an advertisement.
+
+  It was enough.
+
+pronunciations:
+  - written: Lubbock
+    say: LUB-uk
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Just upstream, a smaller bayou, White Oak, runs into this one."
+    source: 3
+    quote: "This is the larger Buffalo Bayou, and then the smaller White Oak."
+  - says: "In the summer of eighteen thirty six, two brothers, Augustus and John Allen, bought the land beside these two bayous."
+    source: 2
+    quote: "In the town of Columbia on August 24, 1836, William Austin obtained a court release from McKinney, and immediately deeded the property to the Allens."
+  - says: "In the summer of eighteen thirty six, two brothers, Augustus and John Allen, bought the land beside these two bayous."
+    source: 2
+    quote: "were especially interested in the region at the junction of Buffalo and White Oak Bayous."
+  - says: "They named it the town of Houston, and their advertisements called it the great commercial emporium of Texas."
+    source: 2
+    quote: "making it, beyond all doubt, the great interior commercial emporium of Texas."
+  - says: "John Allen told the Texas Congress it was one of the most healthy places in the lower country."
+    source: 2
+    quote: "It is one of the most healthy places in the lower country"
+  - says: "The bayou, he promised, is navigable at all times."
+    source: 2
+    quote: "The bayou is navigable at all times for boats drawing six feet of water"
+  - says: "At the end of that year, a young merchant named Francis Lubbock sailed for Houston on a steamer called the Laura, with his groceries below deck."
+    source: 2
+    quote: "the prospective merchant sailed late in 1836 aboard the steamer Laura for the much-advertised new capital; below deck was Lubbock’s stock of groceries."
+  - says: "No steamboat had ever come this far."
+    source: 1
+    quote: "the Laura being the first steamer that ever reached her landing."
+  - says: "The passengers went ashore, made winches out of tree trunks, and hauled the snags out of the way."
+    source: 1
+    quote: "We had to rig what were called Spanish windlasses on the shore to heave the logs and snags out of our way, the passengers all working faithfully."
+  - says: "Twelve miles of bayou took them three days."
+    source: 1
+    quote: "we were three days making the distance to Houston, only six miles by the dirt road, but twelve by the bayou."
+  - says: "Near the end, Lubbock and a few others got tired of the steamer and rowed ahead in a small boat to find the city."
+    source: 1
+    quote: "Just before reaching our destination a party of us, becoming weary of the steamer, took a yawl and concluded we would hunt for the city."
+  - says: "So little evidence could we see of a landing, he wrote, that we passed by the site and run into White Oak Bayou."
+    source: 1
+    quote: "So little evidence could we see of a landing that we passed by the site and run into White Oak Bayou"
+  - says: "They backed down, and found a road laid off from the water's edge."
+    source: 1
+    quote: "We then backed down the bayou, and by close observation discovered a road or street laid oft' from the water's edge."
+  - says: "On shore were stakes and footprints."
+    source: 1
+    quote: "Upon landing we found stakes and footprints, indicating that we were in the town tract."
+  - says: "This, about the first of January, eighteen thirty seven, was Houston."
+    source: 1
+    quote: "This was about the first of January, 1837, when I discovered Houston."
+sources:
+  - title: "Six Decades in Texas, or Memoirs of Francis Richard Lubbock (1900)"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/sixdecadesintexa00lubb
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942)"
+    publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"
+    url: https://archive.org/details/houstonahistory00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Houston: A Case Study in Urban Cultural Landscapes"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/houston-a-case-study-in-urban-cultural-landscapes.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
