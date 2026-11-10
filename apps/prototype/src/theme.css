@@ -859,21 +859,6 @@ body {
  * a category and correctly falls back to the chip's own ink.
  */
 .chip svg { stroke: var(--cat, currentColor); }
-/* Onboarding's chips are the map's chips, so they wear the same marks the same way:
-   the label greys out when off, the glyph keeps its hue. */
-.onb-chip svg {
-  width: 14px; height: 14px; flex: none; fill: none;
-  stroke: var(--cat, currentColor); stroke-width: 1.8;
-  stroke-linecap: round; stroke-linejoin: round;
-}
-.onb-chip:not(.on) svg { opacity: 0.55; }
-/* One tap for the answer most people want, now that the step starts empty. */
-.onb-all {
-  align-self: flex-start; margin-top: 10px; min-height: 44px; padding: 0 14px;
-  border-radius: 99px; cursor: pointer; font: inherit; font-size: var(--fs-button);
-  color: var(--aqua); background: none; border: 1px solid rgba(var(--rgb-hair), 0.22);
-}
-.onb-all:disabled { opacity: 0.4; cursor: default; }
 .chip.on { background: rgba(var(--rgb-hair), 0.08); }
 .chip.on .chip-dot { opacity: 1; }
 
@@ -2224,146 +2209,111 @@ body {
 }
 
 
-/* ── Onboarding ───────────────────────────────────────────────────────────────
-   Full screen and above everything, because it is the only moment the app gets
-   to ask three questions whose answers it cannot guess. Built from the design's
-   `.onb` metrics. */
+/* ── First run ────────────────────────────────────────────────────────────────
+   One screen, above everything (`Onboarding.tsx`). The echo, one line, and the two ways
+   in: here, or somewhere you search for. Built from the approved FirstRun board, in
+   tokens so the light scheme follows. */
 .onb {
-  position: absolute; inset: 0; z-index: 1200; background: var(--space);
-  display: flex; flex-direction: column; padding: 54px 22px 28px;
+  position: absolute; inset: 0; z-index: 1200;
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(var(--rgb-hair), 0.07) 0%, transparent 60%),
+    var(--space);
+  display: flex; flex-direction: column; align-items: center;
+  padding: max(24px, env(safe-area-inset-top)) 28px max(40px, calc(env(safe-area-inset-bottom) + 24px));
+  overflow-y: auto; scrollbar-width: none;
 }
-.onb-top { display: flex; align-items: center; justify-content: space-between; flex: none; }
-.onb-dots { display: flex; gap: 6px; }
-.onb-dots i {
-  width: 6px; height: 6px; border-radius: 99px; display: block;
-  background: rgba(var(--rgb-hair), 0.25); transition: 0.24s var(--ease);
+.onb::-webkit-scrollbar { display: none; }
+.fr-hero {
+  flex: 1 0 auto; width: 100%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 44px; padding: 16px 0 32px;
 }
-.onb-dots i.on { width: 18px; background: var(--aqua); }
-.onb-skip {
-  background: none; border: 0; cursor: pointer; font: inherit;
-  font-size: var(--fs-secondary); color: var(--muted); padding: 6px 2px;
+/* The echo itself: ember in both schemes, because it is the character, not a surface. */
+.fr-orb {
+  width: 132px; height: 132px; border-radius: 50%; flex: none;
+  background: radial-gradient(circle at 35% 30%, #ffd77a, #ff9e12 60%, #c96a00);
+  box-shadow: 0 0 80px rgba(255, 158, 18, 0.55);
 }
-/* Centred while it fits, scrolled from the top when it does not. It was justify-content:
-   center, which on a step taller than the phone pushed the heading up under the dots and
-   the last button off the bottom, half of each beyond reach of the scroll (James,
-   2026-11-08: "it is cut off"). Auto margins centre the same way and never overflow
-   upward. */
-.onb-body {
-  flex: 1; min-height: 0; overflow-y: auto; scrollbar-width: none;
-  display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;
+.fr-words { display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; }
+.fr-words h1 {
+  margin: 0; font-size: var(--fs-title); line-height: 1.15; font-weight: 700;
+  letter-spacing: -0.02em; color: var(--white); text-wrap: balance;
 }
-.onb-body > :first-child { margin-top: auto; }
-.onb-body > :last-child { margin-bottom: auto; }
-.onb-body::-webkit-scrollbar { display: none; }
-.onb h2 { font-size: var(--fs-title); font-weight: 600; letter-spacing: -0.02em; line-height: 1.2; }
-.onb-lead { font-size: var(--fs-body); line-height: 1.6; color: var(--muted); margin: 6px 0 14px; }
+.fr-words p { margin: 0; font-size: var(--fs-button); color: var(--cool); }
 
-/* A choice, not a radio button. The consequence is the label. */
-.onb-card {
-  display: block; width: 100%; text-align: left; cursor: pointer; font: inherit;
-  padding: 14px 15px; border-radius: 16px; margin-bottom: 2px;
-  background: rgba(var(--rgb-panel), 0.55); border: 1px solid var(--line);
-  transition: border-color 0.16s var(--ease), background 0.16s var(--ease);
+.fr-actions { width: 100%; max-width: 420px; display: flex; flex-direction: column; gap: 16px; flex: none; }
+.fr-go {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 60px; border: 0; border-radius: 18px; cursor: pointer;
+  background: var(--btn); color: var(--btn-ink);
+  font: inherit; font-size: var(--fs-button); font-weight: 600;
 }
-/* White. It had no colour of its own, so the title of every choice card inherited the
-   screen's muted ink and read as disabled text. */
-.onb-card b { display: block; font-size: var(--fs-button); font-weight: 500; margin-bottom: 4px; color: var(--white); }
-.onb-card small { display: block; font-size: var(--fs-secondary); line-height: 1.55; color: var(--muted); }
-.onb-card.on { border-color: var(--aqua); background: rgba(var(--rgb-accent), 0.08); }
+.fr-go svg { width: 22px; height: 22px; fill: currentColor; flex: none; }
+.fr-go[aria-busy="true"] { opacity: 0.75; cursor: progress; }
 
-/* The permission, stated in our words before the system says anything. */
-.onb-perm {
-  display: flex; gap: 12px; align-items: flex-start; margin: 4px 0 18px;
-  padding: 14px 15px; border-radius: 16px;
-  background: rgba(var(--rgb-accent), 0.07); border: 1px solid rgba(var(--rgb-accent), 0.28);
+/* The search box glows and its border runs, so the second way in is seen as one. */
+.fr-trace {
+  padding: 3px; border-radius: 19px;
+  background: linear-gradient(90deg, var(--aqua), var(--indigo-soft), var(--ember), var(--aqua));
+  background-size: 300% 100%;
+  animation: fr-trace 3s linear infinite, fr-pulse 2s ease-in-out infinite;
 }
-.onb-perm-ic { flex: none; color: var(--aqua); }
-.onb-perm-ic svg {
-  width: 20px; height: 20px; fill: none; stroke: currentColor;
-  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+@keyframes fr-trace { to { background-position: 300% 0; } }
+@keyframes fr-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(var(--rgb-accent), 0); }
+  50% { box-shadow: 0 0 0 6px rgba(var(--rgb-accent), 0.22), 0 0 26px rgba(var(--rgb-accent), 0.45); }
 }
-.onb-perm b { display: block; font-size: var(--fs-button); font-weight: 500; margin-bottom: 3px; }
-.onb-perm small { display: block; font-size: var(--fs-secondary); line-height: 1.55; color: var(--muted); }
+.fr-search {
+  display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 18px;
+  border-radius: 16px; background: var(--space); cursor: text;
+}
+/* White on the warm paper ground, as the light board draws it. */
+:root[data-theme="light"] .fr-search { background: var(--slate); }
+.fr-search svg {
+  width: 22px; height: 22px; flex: none; fill: none;
+  stroke: var(--aqua); stroke-width: 2; stroke-linecap: round;
+}
+.fr-caret {
+  width: 2px; height: 24px; background: var(--aqua); flex: none;
+  animation: fr-blink 1s steps(1) infinite;
+}
+.fr-search:focus-within .fr-caret { display: none; }
+@keyframes fr-blink { 50% { opacity: 0; } }
+.fr-search input {
+  flex: 1; min-width: 0; min-height: 44px; border: 0; outline: none; background: none;
+  color: var(--white); font: inherit; font-size: var(--fs-body); margin-left: -10px;
+}
+.fr-search:focus-within input { margin-left: 0; }
+.fr-search input::placeholder { color: var(--muted); opacity: 1; }
+.fr-search input::-webkit-search-cancel-button { display: none; }
+/* The box has no border of its own to change, so a keyboard gets the app's ring on it. */
+.fr-trace:has(input:focus-visible) { outline: 2px solid var(--aqua); outline-offset: 3px; }
 
-.onb-go {
-  width: 100%; padding: 14px; border-radius: 14px; border: 0; cursor: pointer; font: inherit;
-  background: var(--btn); color: var(--btn-ink); font-size: var(--fs-button); font-weight: 500;
+.fr-hits { display: flex; flex-direction: column; gap: 6px; }
+.fr-hit {
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+  min-height: 52px; padding: 8px 16px; border-radius: 14px; cursor: pointer; text-align: left;
+  font: inherit; background: rgba(var(--rgb-panel), 0.55); border: 1px solid var(--line-2);
 }
-.onb-go:disabled { opacity: 0.6; cursor: default; }
-.onb-alt {
-  width: 100%; min-height: 44px; padding: 11px; border-radius: 14px; border: 0; cursor: pointer; font: inherit;
-  background: none; color: var(--muted); font-size: var(--fs-secondary); margin-top: 4px;
-}
+.fr-hit b { font-size: var(--fs-button); font-weight: 600; color: var(--white); }
+.fr-hit small { font-size: var(--fs-secondary); color: var(--muted); margin-top: 2px; }
+.fr-empty { margin: 0; text-align: center; font-size: var(--fs-secondary); color: var(--muted); }
+.fr-free { margin: 4px 0 0; text-align: center; font-size: var(--fs-body); color: var(--cool); }
 
 /* A question, not a score. Two answers, and no number comes back. See `ratings.ts`. */
-/* ── Onboarding, to the design's own flow ─────────────────────────────────────
-   Six steps with a fixed header, which is what makes six feel like three. */
-.onb-back, .onb-skip {
-  background: none; border: 0; cursor: pointer; font: inherit; color: var(--muted);
-  padding: 6px 2px; display: grid; place-items: center;
-}
-.onb-back svg {
-  width: 20px; height: 20px; fill: none; stroke: currentColor;
-  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
-}
-.onb-skip { font-size: var(--fs-secondary); }
-.onb-wordmark {
-  font-family: "Space Grotesk", monospace; font-size: var(--fs-secondary); letter-spacing: 0.22em;
-  font-weight: 600; color: var(--aqua); margin-bottom: 8px;
-}
-/* A value card is a claim with a glyph, not a choice. It must not look pressable. */
-.onb-card { display: flex; gap: 12px; align-items: flex-start; }
-.onb-value { cursor: default; background: none; border-color: transparent; padding: 9px 0; }
-.onb-ic { flex: none; color: var(--aqua); }
-.onb-ic svg {
-  width: 20px; height: 20px; fill: none; stroke: currentColor;
-  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
-}
-.onb-card.on .onb-ic { color: var(--aqua); }
+/* Searching, the echo steps aside so the places fit above the keyboard. */
+.fr-searching .fr-orb { display: none; }
+.fr-searching .fr-hero { gap: 0; }
 
-.onb-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
-.onb-chip {
-  display: flex; align-items: center; gap: 7px; min-height: 44px; padding: 9px 13px; border-radius: 99px;
-  border: 1px solid var(--line-2); background: none; cursor: pointer; font: inherit;
-  font-size: var(--fs-secondary); color: var(--muted);
+/* A short phone (an SE): the same screen, a size down. */
+@media (max-height: 700px) {
+  .fr-hero { gap: 28px; padding: 8px 0 20px; }
+  .fr-orb { width: 104px; height: 104px; }
+  .fr-actions { gap: 14px; }
 }
-.onb-chip.on { background: rgba(var(--rgb-hair), 0.08); border-color: currentColor; }
-.onb-sum {
-  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); color: var(--muted);
-  margin: 6px 0 14px;
+@media (prefers-reduced-motion: reduce) {
+  .fr-trace, .fr-caret { animation: none; }
 }
-
-.onb-wave {
-  display: flex; align-items: center; gap: 3px; height: 54px; margin: 6px 0 14px;
-}
-.onb-wave i {
-  flex: 1; border-radius: 99px; background: rgba(var(--rgb-accent), 0.35); display: block;
-}
-.onb-test {
-  display: flex; align-items: center; justify-content: center; gap: 8px;
-  width: 100%; padding: 13px; border-radius: 14px; cursor: pointer; font: inherit;
-  background: none; border: 1px solid var(--line-2); color: var(--white); font-size: var(--fs-secondary);
-  margin-bottom: 14px;
-}
-.onb-test svg { width: 15px; height: 15px; fill: currentColor; }
-
-.onb-row {
-  display: flex; align-items: center; gap: 12px; padding: 13px 0; margin-bottom: 10px;
-  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
-}
-.onb-row div { flex: 1; }
-.onb-row b { display: block; font-size: var(--fs-button); font-weight: 500; margin-bottom: 3px; }
-.onb-row small { display: block; font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted); }
-.onb-sw {
-  flex: none; width: 44px; height: 26px; border-radius: 99px; cursor: pointer; padding: 0;
-  border: 1px solid var(--line-2); background: rgba(var(--rgb-hair), 0.1); position: relative;
-}
-.onb-sw i {
-  position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%;
-  background: var(--cool); transition: 0.18s var(--ease);
-}
-.onb-sw.on { background: rgba(var(--rgb-accent), 0.25); border-color: var(--aqua); }
-.onb-sw.on i { left: 20px; background: var(--aqua); }
 
 /* Back out of the plan, which is now reached from the package screen rather than a tab. */
 .plan-close {
@@ -2378,7 +2328,7 @@ body {
 .entry-wish .entry-glyph { opacity: 0.75; }
 .entry-wish .entry-text h4 { color: var(--cool); }
 
-/* Flight number, and what it resolved to. */
+/* Flight number, on the package screen. */
 .onb-field {
   width: 100%; padding: 14px 15px; border-radius: 14px; font: inherit; font-size: var(--fs-body);
   background: rgba(var(--rgb-panel), 0.55); border: 1px solid var(--line-2);
@@ -2392,21 +2342,6 @@ body {
    else. */
 .onb-field:focus { border-color: var(--aqua); }
 .onb-field:focus:not(:focus-visible) { outline: none; }
-.onb-alt-left { text-align: left; padding-left: 2px; }
-.onb-route {
-  padding: 14px 15px; border-radius: 14px; margin: 6px 0 16px;
-  background: rgba(var(--rgb-accent), 0.07); border: 1px solid rgba(var(--rgb-accent), 0.28);
-}
-.onb-route b { display: block; font-size: var(--fs-button); font-weight: 500; }
-.onb-route-line {
-  display: block; height: 2px; margin: 9px 0; border-radius: 2px;
-  background: rgba(var(--rgb-hair), 0.16); position: relative;
-}
-.onb-route-line i {
-  position: absolute; inset: 0 auto 0 0; width: 38%; border-radius: 2px;
-  background: var(--aqua); box-shadow: 0 0 8px var(--aqua);
-}
-.onb-route small { display: block; font-size: var(--fs-secondary); color: var(--muted); }
 
 /* Which build this is. Quiet, at the bottom of settings, where it is findable when
    somebody asks "is this the new one" and invisible the rest of the time. */
@@ -2610,20 +2545,6 @@ body {
   font-size: var(--fs-secondary); line-height: 1.6;
 }
 
-
-/* A secondary choice, not a sentence.
-   `.onb-alt` was plain muted text at body size, so "No route. Just drive and find what I
-   pass." read as a stray line of prose rather than as the other half of the decision. */
-.onb-alt {
-  color: var(--aqua); text-decoration: underline; text-underline-offset: 3px;
-}
-.onb-alt:hover { filter: brightness(1.15); }
-
-/* The note about what is not built yet. Small, last, and not in the mono face, which made
-   it look like debug output stuck to the screen. */
-.onb-note {
-  margin: 10px 2px 0; font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted); opacity: 0.8;
-}
 
 /* Stopped, as a state rather than as a reading of 0:00.
    Ember, because ember is what "you did this" means everywhere else here, and because the
@@ -4069,18 +3990,6 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   font-size: var(--fs-label); font-style: normal; letter-spacing: 0.1em; line-height: 1.45;
   text-align: center; color: #fff; background: rgba(0, 0, 0, 0.5);
 }
-/* First run: three asks, each with its reason. Only the first is a system permission;
-   the third is a promise about the phone, which is why it is stated before the walk
-   rather than discovered at forty percent battery. */
-.onb-asks { display: flex; flex-direction: column; gap: 10px; }
-.onb-perm-need { border-color: rgba(var(--rgb-accent), 0.32); }
-.onb-ic-aqua { color: var(--aqua); background: rgba(var(--rgb-accent), 0.12); }
-.onb-ic-indigo { color: var(--indigo-soft); background: rgba(155, 149, 255, 0.12); }
-.onb-ic-ember { color: var(--ember-core); background: rgba(255, 158, 18, 0.12); }
-.onb-without {
-  margin: 14px 0 0; text-align: center; font-size: var(--fs-secondary);
-  letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
-}
 /* A collection row carrying its archive plate. The glyph rides over it with a shade under
    it, exactly as on the map card, so one echo looks like one echo wherever it appears. */
 .entry-plate { position: relative; overflow: hidden; border: 1px solid rgba(255, 158, 18, 0.28); }
@@ -4559,7 +4468,6 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   width: 44px; height: 44px; margin: 0 -11px -11px 2px; padding: 5.5px 0 0;
   place-items: start center; background: none;
 }
-.onb-back, .onb-skip { min-width: 44px; min-height: 44px; }
 
 /*
  * The trip sheet's selected states, on solid fills rather than tints.
@@ -5218,7 +5126,7 @@ body.seat { padding: 0; display: block; }
 .pop-where, .pop-state, .pop-reach, .pop-save,
 .echobar-place, .echobar-facts,
 .rose-hum small, .hear-acts button, .hear-clock span,
-.entry-text p, .onb-card small, .setting-text small, .setting-cost,
+.entry-text p, .setting-text small, .setting-cost,
 .feature-fallback, .feature-level, .screen-head p, .jmenu-item small,
 .synced-where, .chip, .hear-voice, .hear-speed { font-size: var(--fs-secondary); }
 .pop-kicker, .pop-rarity, .truth,
@@ -5226,7 +5134,6 @@ body.seat { padding: 0; display: block; }
 .hear-kicker span, .hear-rarity, .coll-stat small,
 .entry-glyph i, .entry-meta, .group-head, .panel h3,
 .synced-kicker, .synced-rare-cat, .synced-next-kicker, .city-card-kick { font-size: var(--fs-label); }
-.onb-skip { font-size: var(--fs-secondary); }
 /* MapLibre's own stylesheet sets 12px on the map container, and it loads after this one,
    hence the element in the selector. */
 div.maplibregl-map { font-size: var(--fs-label); }

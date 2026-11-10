@@ -65,18 +65,9 @@ async function standAtCastleClinton(heard, { handsFree = false } = {}) {
   p.on('pageerror', (e) => errors.push(e.message));
   await p.goto(`http://127.0.0.1:${PORT}/`, { waitUntil: 'domcontentloaded' });
   await p.waitForTimeout(800);
-  for (let i = 0; i < 9 && await p.locator('.onb').count(); i++) {
-    const start = p.getByRole('button', { name: /Start looking/ });
-    const allow = p.getByRole('button', { name: /Allow location/ });
-    if (await start.count()) await start.click();
-    else if (await allow.count()) { await allow.click(); await p.waitForTimeout(1500); }
-    else {
-      const all = p.locator('.onb-all');
-      if (await all.count() && await all.isEnabled()) await all.click();
-      await p.locator('.onb-go').first().click();
-    }
-    await p.waitForTimeout(400);
-  }
+  // First run is one screen: Find echoes near me asks for the location and opens the map.
+  await p.getByRole('button', { name: 'Find echoes near me' }).click();
+  await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
   await p.waitForTimeout(3000);
   await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
   await p.waitForTimeout(600);

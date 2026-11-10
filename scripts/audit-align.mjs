@@ -175,21 +175,11 @@ async function measure(p, size, screen) {
 }
 
 async function onboard(p) {
-  for (let i = 0; i < 9 && await p.locator('.onb').count(); i++) {
-    const start = p.getByRole('button', { name: /Start looking/ });
-    const allow = p.getByRole('button', { name: /Allow location/ });
-    if (await start.count()) await start.click();
-    else if (await allow.count()) { await allow.click(); await p.waitForTimeout(1500); }
-    else {
-      const all = p.locator('.onb-all');
-      if (await all.count() && await all.isEnabled()) await all.click();
-      await p.locator('.onb-go').first().click();
-    }
-    await p.waitForTimeout(400);
-  }
-  // Captures made before the welcome screens close are history, not a moment, and get no
-  // card (App.tsx), so the walk only starts once the map is properly up.
-  await p.locator('.onb').waitFor({ state: 'detached', timeout: 10000 }).catch(() => {});
+  // First run is one screen: Find echoes near me asks for the location and opens the map.
+  await p.getByRole('button', { name: 'Find echoes near me' }).click();
+  // Captures made before first run closes are history, not a moment, and get no card
+  // (App.tsx), so the walk only starts once the map is properly up.
+  await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
   await p.waitForTimeout(2500);
   await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
   await p.waitForTimeout(1500);

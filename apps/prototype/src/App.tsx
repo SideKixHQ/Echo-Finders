@@ -91,9 +91,6 @@ import {
   type Route,
 } from "@echofinders/core";
 
-/** Nothing chosen. Onboarding's starting point, and never the map's. */
-const EMPTY_CATS: ReadonlySet<EchoCategory> = new Set();
-
 /** The walk is the richest route, so it is what the prototype opens on. */
 /**
  * Is this somebody building the app, or somebody using it?
@@ -117,17 +114,6 @@ const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(LIBRARY.map((e) => [e.i
  */
 const SHARED_ECHO = takeSharedEcho((id) => LIBRARY_BY_ID.has(id));
 
-/**
- * The headphones check in onboarding: a real recording in the real narrator's voice.
- *
- * It used to play LIBRARY[0], an unrecorded New York demo, so the volume check was the
- * browser's robot voice, it went through the journey (counting as one of the free ten and
- * leaving an echo "playing" on the map) and nothing stopped it when the step was left
- * (James, 2026-11-08). Now it is a file played straight through the narrator, outside the
- * journey, and onboarding stops it on the way out.
- */
-const TEST_LINE: string | null =
-  LIBRARY.flatMap((e) => e.renders ?? []).find((r) => r.audioKey.startsWith("audio/"))?.audioKey ?? null;
 /** How far from a searched place its echoes are shown. */
 const LOOK_RADIUS_KM = 25;
 /** Exploring, "everything around me" reaches this far: a city centre and its edges. */
@@ -238,8 +224,6 @@ export function App() {
   const [beacon, setBeacon] = useState<string | null>(null);
   const hum = useMemo(() => new Hum(), []);
   useEffect(() => () => hum.close(), [hum]);
-  /** Whether the journey screen actually resolved to a route, so "just drive" can roam. */
-  const roamRouteChosen = useRef(false);
 
   /**
    * The real device location. Asked for once, by a tap, and held for the life of the app:
@@ -296,14 +280,9 @@ export function App() {
   /**
    * Which categories are on. `null` means all of them.
    *
-   * Onboarding starts from an EMPTY set rather than from `null`, which is a different
-   * thing and the reason that step read backwards: the screen says "Pick as many as you
-   * like" over nine chips that are already picked, so the only available action is
-   * deselecting, and the button underneath counts down instead of up. Nobody picks by
-   * unpicking.
-   *
-   * `null` stays the resting state for everything after onboarding, because a listener
-   * who has never opened the filter row should see the whole library rather than nothing.
+   * First run no longer asks (it used to be a step of nine chips), so `null` is where
+   * everybody starts: a listener who has never opened the filter row should see the whole
+   * library rather than nothing.
    */
   const [cats, setCats] = useState<ReadonlySet<EchoCategory> | null>(null);
   /*
@@ -2506,61 +2485,21 @@ export function App() {
           )}
 
           {/*
-            Onboarding sits above the package screen, because two of its three steps decide
-            things the package screen assumes: who is listening, and whether we know where
-            they are.
+            First run: one screen, above everything. Find echoes near me asks for the
+            location and opens the map where you are; the search opens it on the place
+            picked. Everything the old six steps asked starts at its default (walking,
+            around here, every category, kids mode off in Settings).
           */}
           {!onboarded && (
             <Onboarding
+              library={LIBRARY}
               onAskLocation={() => gps.start()}
-              kids={kids}
-              onKids={setKidsMode}
-              /*
-                What the onboarding chips show, which is NOT `activeCats`.
-                
-                `activeCats` resolves an untouched filter to the whole library, which is
-                right for the map and wrong for the question. Passed here it lit all nine
-                chips under the words "Pick as many as you like", so the step read
-                backwards. Untouched here means nothing chosen yet.
-              */
-              cats={cats ?? EMPTY_CATS}
-              onAllCats={() => setCats(ALL_CATEGORIES)}
-              onToggleCats={(categories) =>
-                setCats((current) => {
-                  /*
-                    During onboarding an untouched filter means NOTHING chosen, not
-                    everything: the step is asking, so the first tap has to add rather
-                    than subtract. Afterwards `null` still means all, which is why this
-                    reads `current ?? (onboarded ? ALL : EMPTY)` rather than picking one.
-                  */
-                  const next = new Set(current ?? (onboarded ? ALL_CATEGORIES : []));
-                  if (categories.some((c) => next.has(c))) {
-                    for (const c of categories) next.delete(c);
-                  } else {
-                    for (const c of categories) next.add(c);
-                  }
-                  return next;
-                })
-              }
-              /* The real narrator, saying a real line, through whatever the listener has
-                 in their ears. A volume set against silence is not set. */
-              onTestLine={() => (TEST_LINE ? speech.play(TEST_LINE) : playOrAsk(LIBRARY[0]!))}
-              onStopTest={() => speech.stop()}
-              routes={ROUTES}
-              onFlight={(routeId) => {
-                const found = routeId ? ROUTES.find((r) => r.id === routeId) : undefined;
-                roamRouteChosen.current = Boolean(found);
-                if (found) onSelectRoute(found);
+              onNearMe={() => {
+                switchTravel("walking");
+                finishOnboarding();
               }}
-              onDone={({ roaming: roam, mode }) => {
-                /*
-                 * Driving without a route still roams, and still has to be driving.
-                 * Roaming used to imply walking, so a driver hunting for echoes was run at
-                 * walking pace with a three hundred metre corridor and a rule that asked
-                 * them to stand still. `roamMode` keeps the two apart.
-                 */
-                setRoaming(roam || (mode === "driving" && !roamRouteChosen.current));
-                setTravel(mode);
+              onLook={(hit) => {
+                lookSomewhere(hit, "walking");
                 finishOnboarding();
               }}
             />
