@@ -1,0 +1,131 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Queens (more NYC batch). A rare find: about 14 km from the Midtown cluster.
+# Listening spot: The public sidewalk on Austin Street by the Kew Gardens railroad station at Lefferts Boulevard, the commercial strip where the attack began. Deliberately not at the door of the apartment building: the listener stands on the street, never on a doorstep (docs/14-true-crime.md).
+# Position: Austin Street at Lefferts Boulevard, from the street plan (medium confidence).
+id: new-york-thirty-eight-was-wrong
+title: "Thirty Eight Was Wrong"
+summary: "In 1964 Kitty Genovese was murdered on this street. The famous number, 38 neighbours who did nothing, was not true."
+place: "Austin Street near Lefferts Boulevard, Kew Gardens, Queens"
+at: { lat: 40.70950, lng: -73.83080 }
+triggerRadiusKm: 0.08
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 105
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.9
+tags: [new-york, queens, kew-gardens, 1964, bystander-effect, journalism, 911]
+teaser: "Everyone knows the number. The number was wrong."
+script: |
+  Look along Austin Street. Shops, a railroad station, apartment windows above. It looks like a safe place to come home late.
+
+  In March, nineteen sixty four, a woman named Kitty Genovese came home along this street from work, at three in the morning. She was twenty eight. She managed a bar.
+
+  A man named Winston Moseley attacked her here with a knife. A neighbour shouted from a window. Leave that girl alone. Moseley ran, and then came back, and found her inside the back of her building. She died on the way to hospital. Moseley was convicted of her murder, and died in prison more than fifty years later.
+
+  It was one of more than six hundred murders in the city that year. It might have been forgotten.
+
+  But two weeks later, a newspaper put it on the front page. Thirty eight respectable, law abiding citizens, it said, had watched, and not one of them had called the police.
+
+  The number had come from the police commissioner, over lunch with an editor.
+
+  And it was wrong. Nobody saw the whole attack. Many people heard only noises, and thought it was a quarrel or a drunk. Two people did call the police. And a seventy year old neighbour went out into the dark, and held Kitty in her arms until help came.
+
+  The wrong version is the one the world remembers. It became a lesson about strangers, taught in classrooms everywhere.
+
+  Remember the other one.
+
+  Somebody went out.
+
+pronunciations:
+  - written: Genovese
+    say: jen-oh-VEE-zee
+  - written: Moseley
+    say: MOZE-lee
+editorial: draft
+factCheck: corroborated
+trueCrimeReview:
+  # Moseley was convicted and has died. Kitty Genovese's family and friends, some named in
+  # the coverage, may be alive, so this is marked true and carries three sources. No witness
+  # or neighbour is named: the script calls them "a neighbour", including the woman who
+  # held her, because naming a private person adds nothing and could cost them something.
+  involvesLivingPeople: true
+  convictionStatus: convicted
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-11-10"
+  contentWarning: This echo describes a murder. No violence is described in detail.
+claims:
+  - says: "In March, nineteen sixty four, a woman named Kitty Genovese came home along this street from work, at three in the morning."
+    source: 3
+    quote: "Genovese was a 28-year-old bar manager living in a seemingly safe, well-kept Queens neighborhood when she was attacked while returning home from work after 3 a.m."
+  - says: "In March, nineteen sixty four, a woman named Kitty Genovese came home along this street from work, at three in the morning."
+    source: 2
+    quote: "Austin Street in the Queens borough of New York was the site of the infamous rape and murder of Kitty Genovese in March 1964."
+  - says: "She was twenty eight."
+    source: 3
+    quote: "Genovese was a 28-year-old bar manager"
+  - says: "She managed a bar."
+    source: 1
+    quote: "Kitty, as she was known, was a bar manager on her way home from work in the early morning hours."
+  - says: "A man named Winston Moseley attacked her here with a knife."
+    source: 3
+    quote: "Genovese's random stabbing by Winston Moseley on March 13, 1964, in Kew Gardens, Queens"
+  - says: "A neighbour shouted from a window. Leave that girl alone."
+    source: 1
+    quote: "After one man raises his window — he shouted, \"Leave that girl alone!\" — Moseley ran into the darkness."
+  - says: "Moseley ran, and then came back, and found her inside the back of her building."
+    source: 3
+    quote: "Moseley retreated to his car but returned minutes later and found Genovese in a hallway at the back of her building"
+  - says: "She died on the way to hospital."
+    source: 2
+    quote: "Genovese died on the way to a hospital."
+  - says: "Moseley was convicted of her murder, and died in prison more than fifty years later."
+    source: 3
+    quote: "Moseley was convicted of murder and sentenced to death, a punishment later reduced to life in prison."
+  - says: "Moseley was convicted of her murder, and died in prison more than fifty years later."
+    source: 2
+    quote: "He had been imprisoned for almost 52 years, since July 7, 1964"
+  - says: "It was one of more than six hundred murders in the city that year."
+    source: 2
+    quote: "It was one of 636 murders in the city that year."
+  - says: "But two weeks later, a newspaper put it on the front page."
+    source: 2
+    quote: "Two weeks later, the Times published a more extensive, though flawed, front-page account quoting the police and Genovese’s neighbors."
+  - says: "Thirty eight respectable, law abiding citizens, it said, had watched, and not one of them had called the police."
+    source: 2
+    quote: "“For more than half an hour 38 respectable, law-abiding citizens watched a killer stalk and stab a woman in three separate attacks in Kew Gardens,” it began."
+  - says: "The number had come from the police commissioner, over lunch with an editor."
+    source: 3
+    quote: "The story was not widely reported until A.M. Rosenthal, then metro editor of the Times, had lunch with Police Commissioner Michael Murphy, who told him about the 38 witnesses."
+  - says: "Nobody saw the whole attack."
+    source: 2
+    quote: "None saw the attack in its entirety."
+  - says: "Many people heard only noises, and thought it was a quarrel or a drunk."
+    source: 2
+    quote: "Many thought they had heard lovers or drunks quarreling."
+  - says: "Two people did call the police."
+    source: 2
+    quote: "And afterward, two people did call the police."
+  - says: "And a seventy year old neighbour went out into the dark, and held Kitty in her arms until help came."
+    source: 2
+    quote: "A 70-year-old woman ventured out and cradled the dying victim in her arms until they arrived."
+  - says: "It became a lesson about strangers, taught in classrooms everywhere."
+    source: 3
+    quote: "The case also gave rise to research into the \"bystander effect\" -- the phenomenon in which a group of onlookers fails to help someone in distress -- and is often featured in psychology textbooks."
+sources:
+  - title: "What Really Happened The Night Kitty Genovese Was Murdered? (interview with Kevin Cook), 3 March 2014"
+    publisher: "NPR"
+    url: https://www.npr.org/2014/03/03/284002294/what-really-happened-the-night-kitty-genovese-was-murdered
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Winston Moseley, 81, killer of Kitty Genovese, dies in prison, 9 April 2016"
+    publisher: "The Boston Globe (New York Times obituary)"
+    url: https://www.bostonglobe.com/metro/obituaries/2016/04/09/winston-moseley-killer-kitty-genovese-dies-prison/FxsOVdAgiTaQhF2n702WCN/story.html
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "50 Years Later, Kitty Genovese Murder Case Still Grips NYC, Nation (with the Associated Press), March 2014"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/50-years-later-kitty-genovese-murder-still-grips-nyc-nation/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

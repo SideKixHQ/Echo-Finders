@@ -1,0 +1,65 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Morningside and Riverside cluster (more NYC batch).
+# Listening spot: The Amiable Child monument, a small stone urn behind a railing on the slope of Riverside Park, just north of Grant's Tomb at about West 123rd Street.
+# Position: Wikidata Q21497 (Amiable Child Monument) coordinate (high confidence). A small, easily missed monument, so the radius is tight.
+id: new-york-an-amiable-child
+title: "An Amiable Child"
+summary: "A stone urn on this slope marks the grave of a five year old who died here in 1797. His family sold the land, but not his grave."
+place: "Amiable Child monument, Riverside Drive near West 123rd Street, Morningside Heights, Manhattan"
+at: { lat: 40.81480, lng: -73.96310 }
+triggerRadiusKm: 0.03
+category: people
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [new-york, riverside-park, morningside-heights, grave, eighteenth-century]
+teaser: "The land was sold. One small grave was not."
+script: |
+  Look for a small stone urn behind an iron railing, on the slope just below the drive. Read the words on it. Erected to the memory of an amiable child.
+
+  It is a grave. And it is older than the park, older than the drive, older than almost anything you can see from here.
+
+  In seventeen ninety seven, this hillside was a country estate, high above the Hudson. A little boy named St. Claire Pollock lived here. He was five years old.
+
+  On the fifteenth of July that year, he fell from the rocks below the house, and died.
+
+  His family buried him here, on the slope above the river.
+
+  Some years later, his uncle, George Pollock, sold the land. He asked for one thing in return. That this grave be left alone, forever.
+
+  The city grew right up to the railing. The estate became a park. A road came through, and then a tomb for a president, a few steps away.
+
+  And still, nobody has moved him.
+
+pronunciations:
+  - written: St. Claire
+    say: saint CLAIR
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Erected to the memory of an amiable child."
+    source: 1
+    quote: "a stone urn \"Erected to the Memory of an Amiable Child\" and dated July 15, 1797, marks the GRAVE OF ST. CLAIRE POLLOCK"
+  - says: "A little boy named St. Claire Pollock lived here."
+    source: 1
+    quote: "marks the GRAVE OF ST. CLAIRE POLLOCK, aged five, who fell to his death on the rocks below the Claremont."
+  - says: "He was five years old."
+    source: 1
+    quote: "GRAVE OF ST. CLAIRE POLLOCK, aged five"
+  - says: "On the fifteenth of July that year, he fell from the rocks below the house, and died."
+    source: 1
+    quote: "dated July 15, 1797, marks the GRAVE OF ST. CLAIRE POLLOCK, aged five, who fell to his death on the rocks below the Claremont."
+  - says: "Some years later, his uncle, George Pollock, sold the land."
+    source: 1
+    quote: "When George Pollock, the child's uncle, sold the property he requested that this grave be kept inviolate."
+  - says: "That this grave be left alone, forever."
+    source: 1
+    quote: "he requested that this grave be kept inviolate."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Riverside Drive"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain

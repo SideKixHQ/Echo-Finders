@@ -1,0 +1,84 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Governors Island cluster (more NYC batch).
+# Listening spot: The Early Birds' "Flight on Governors Island" marker, south of Liggett Hall, on the edge of the open ground that was new landfill in 1909.
+# Position: the marker's published coordinate, 40 41.351 N, 74 1.171 W (medium confidence; the hangar's exact spot is not recorded).
+id: new-york-a-canoe-under-the-wings
+title: "A Canoe Under the Wings"
+summary: "In 1909 Wilbur Wright took off from this island with a canoe strapped under his plane, and flew around the Statue of Liberty."
+place: "Flight on Governors Island marker, south of Liggett Hall, Governors Island"
+at: { lat: 40.68918, lng: -74.01952 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 80
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, governors-island, aviation, wright-brothers, statue-of-liberty, harbor]
+teaser: "The first plane over New York Harbor carried a canoe. Just in case."
+script: |
+  Look out across the water to the Statue of Liberty. Now picture a plane made of wood and cloth, rattling up from the ground near where you are standing.
+
+  Under its wings, strapped to the bottom, a canoe.
+
+  In the autumn of nineteen oh nine, the city was throwing a party for Henry Hudson and for Robert Fulton's steamboat. The guest everyone wanted was Wilbur Wright. He had just come home from Europe, where crowds had watched him fly. Now New York wanted to see it.
+
+  It was the first time the Wrights had flown over water in America. So the canoe was there for one reason. If the engine stopped, he would come down on the harbor, and he wanted something that floated.
+
+  He took off from this island and flew out to the Statue, and around her. The ships in the harbor answered with their whistles, hundreds of them.
+
+  A few days later he flew again. Twenty miles, up the Hudson to Grant's Tomb and back. Hundreds of thousands of people watched from the shore.
+
+  Look at the statue again, and the open water all around her.
+
+  For that first flight, she was the turning point.
+
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Under its wings, strapped to the bottom, a canoe."
+    source: 1
+    quote: "Wilbur took off from Governor's Island with a canoe strapped underneath his machine and flew around the Statue of Liberty"
+  - says: "In the autumn of nineteen oh nine, the city was throwing a party for Henry Hudson and for Robert Fulton's steamboat."
+    source: 1
+    quote: "Wilbur was invited to fly at New York's Hudson-Fulton Celebration honoring the centennial of Robert Fulton's steamboat and the 300th anniversary of Henry Hudson's entry into New York Harbor."
+  - says: "He had just come home from Europe, where crowds had watched him fly."
+    source: 1
+    quote: "Following his celebrity tour of Europe, Wilbur was invited to fly at New York's Hudson-Fulton Celebration"
+  - says: "It was the first time the Wrights had flown over water in America."
+    source: 1
+    quote: "In the Wrights' first flight over American waters, Wilbur took off from Governor's Island"
+  - says: "If the engine stopped, he would come down on the harbor, and he wanted something that floated."
+    source: 2
+    quote: "The flyer has a canoe attached to the bottom in case of an emergency landing."
+  - says: "He took off from this island and flew out to the Statue, and around her."
+    source: 1
+    quote: "Wilbur took off from Governor's Island with a canoe strapped underneath his machine and flew around the Statue of Liberty as hundreds of ships tooted in the harbor."
+  - says: "The ships in the harbor answered with their whistles, hundreds of them."
+    source: 1
+    quote: "flew around the Statue of Liberty as hundreds of ships tooted in the harbor."
+  - says: "Twenty miles, up the Hudson to Grant's Tomb and back."
+    source: 2
+    quote: "Hundreds of thousands of New Yorkers cheered Wilbur’s 20-mile circuit from Governors Island up the Hudson to Grant’s Tomb and back"
+  - says: "Hundreds of thousands of people watched from the shore."
+    source: 2
+    quote: "Hundreds of thousands of New Yorkers cheered Wilbur’s 20-mile circuit from Governors Island up the Hudson to Grant’s Tomb and back"
+  - says: "He took off from this island and flew out to the Statue, and around her."
+    source: 3
+    quote: "Wilbur Wright in flight from Governor's Island"
+sources:
+  - title: "The Dream of Flight: The Achievement (exhibition text)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/exhibits/dreamofflight/dream-achieve.html
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Wright Brothers National Memorial, park brochure (audio described)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/wrbr/planyourvisit/park-brochure.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Wilbur Wright in flight from Governor's Island (photograph, 1909)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2001704181/
+    retrievedAt: "2026-11-10"
+    rights: public-domain

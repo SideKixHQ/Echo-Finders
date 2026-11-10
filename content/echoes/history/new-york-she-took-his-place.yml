@@ -1,0 +1,97 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Washington Heights and Fort Tryon (more NYC batch). About 13 km from the Midtown cluster.
+# Listening spot: Bennett Park, Fort Washington Avenue at West 183rd Street, on the site of Fort Washington itself, where the outline of the fort is marked in the paving.
+# Position: Wikidata Q2729185 (Bennett Park) coordinate, matching Q1438808 (Fort Washington) (high confidence for the fort; sources place her at the Battle of Fort Washington, not at a marked spot on it).
+id: new-york-she-took-his-place
+title: "She Took His Place"
+summary: "In the 1776 battle for these heights, John Corbin was killed at his cannon. His wife Margaret stepped in and kept it firing."
+place: "Bennett Park, site of Fort Washington, Fort Washington Avenue at 183rd Street, Manhattan"
+at: { lat: 40.85278, lng: -73.93806 }
+triggerRadiusKm: 0.1
+category: history
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [new-york, washington-heights, fort-washington, revolution, military, women, margaret-corbin]
+teaser: "Her husband fell beside the gun. She did not step back."
+script: |
+  Look around this small, high park. You are standing on the site of Fort Washington. In seventeen seventy six, the British were coming for it.
+
+  In that battle, one of the American cannons was worked by a man named John Corbin. Beside him was his wife, Margaret.
+
+  Wives often followed their husbands to that war. They washed and mended, and they nursed. Margaret had followed John into the Pennsylvania artillery.
+
+  Then, in the battle for Fort Washington, John was killed.
+
+  Margaret did not run, and she did not kneel beside him. She took his place at the gun, right away, on the firing line.
+
+  She kept fighting until she was wounded. When the fort fell, the British captured her with the rest.
+
+  They let her go. And then came something new. The Continental Congress gave Margaret Corbin a pension, as a soldier. She was the first woman it ever pensioned.
+
+  Today she lies at West Point, among the army she served.
+
+  Look down the slope again, the way the British came.
+
+  Somewhere on these heights, she held her ground.
+
+pronunciations:
+  - written: Corbin
+    say: KOR-bin
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "In that battle, one of the American cannons was worked by a man named John Corbin."
+    source: 1
+    quote: "At the Battle of Fort Washington, when John Corbin was killed, Margaret took his place immediately on the firing line"
+  - says: "Margaret had followed John into the Pennsylvania artillery."
+    source: 1
+    quote: "She and her husband, John, served under Capt. Francis Proctor in the First Company of the Pennsylvania Artillery."
+  - says: "Then, in the battle for Fort Washington, John was killed."
+    source: 2
+    quote: "Margaret Corbin took over her husband’s cannon after he was killed at Fort Washington, New York in 1776."
+  - says: "She took his place at the gun, right away, on the firing line."
+    source: 1
+    quote: "Margaret took his place immediately on the firing line and was wounded in the engagement with the British."
+  - says: "She kept fighting until she was wounded."
+    source: 1
+    quote: "Margaret took his place immediately on the firing line and was wounded in the engagement with the British."
+  - says: "When the fort fell, the British captured her with the rest."
+    source: 1
+    quote: "Captured by the British, she was subsequently released and reassigned to the corps of invalids at West Point performing guard duty."
+  - says: "They let her go."
+    source: 1
+    quote: "Captured by the British, she was subsequently released"
+  - says: "The Continental Congress gave Margaret Corbin a pension, as a soldier."
+    source: 3
+    quote: "Corbin was wounded and received a soldier's pension."
+  - says: "She was the first woman it ever pensioned."
+    source: 1
+    quote: "Margaret Corbin, the first woman pensioned by the Continental Congress"
+  - says: "Today she lies at West Point, among the army she served."
+    source: 1
+    quote: "holds the unique honor of being the only soldier of the Revolutionary War buried at the Military Academy at West Point, New York."
+  - says: "Wives often followed their husbands to that war."
+    source: 2
+    quote: "Women often followed their husbands to war."
+  - says: "They washed and mended, and they nursed."
+    source: 3
+    quote: "The usual work of women in the army was washing and mending the soldier's clothes (for every 50 or so soldiers at the fort, one woman would be assigned the work), and working as nurses in the hospitals."
+sources:
+  - title: "Will the Real Molly Pitcher Please Stand Up? (Prologue, Summer 1999)"
+    publisher: "National Archives"
+    url: https://www.archives.gov/publications/prologue/1999/summer/pitcher.html
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Women's History, Ninety Six National Historic Site"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/nisi/learn/historyculture/womens-history.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Women of the Continental Army"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/women-of-the-army.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

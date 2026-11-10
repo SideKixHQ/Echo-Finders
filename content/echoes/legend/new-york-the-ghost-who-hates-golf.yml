@@ -1,0 +1,60 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Staten Island (more NYC batch). A rare find: about 25 km from the Midtown cluster.
+# Listening spot: Outside the LaTourette House, the 1830s mansion with wide verandas that serves as the clubhouse of La Tourette Golf Course, Richmond Hill Road, Staten Island.
+# Position: Wikidata Q6460929 (LaTourette House) coordinate (high confidence).
+id: new-york-the-ghost-who-hates-golf
+title: "The Ghost Who Hates Golf"
+summary: "Old Staten Islanders said David La Tourette still walks his mansion, angry at what became of his home. It became a golf clubhouse."
+place: "LaTourette House, La Tourette Golf Course, Richmond Hill Road, Staten Island"
+at: { lat: 40.57611, lng: -74.14722 }
+triggerRadiusKm: 0.06
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 65
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A ghost story, not history. The Federal Writers' Project guide of 1939 reports only that "Old Staten Islanders believe" the ghost of David La Tourette roams the building, vexed at the profanation of his home. Nothing proves it. That the clubhouse was the La Tourette family home and dates from 1830 is reported as fact in the same guide. The script says out loud that it is a legend.
+minAge: 0
+quality: 0.75
+tags: [new-york, staten-island, latourette, ghosts, golf, mansion]
+teaser: "His home became a golf clubhouse. He is said to be taking it badly."
+script: |
+  Look at the big old house with the wide verandas, sitting on the hill above the golf course.
+
+  It was a family home once. Now it is the clubhouse. And somebody, they say, has never got over it.
+
+  This is a ghost story. Nobody has proved it.
+
+  The house dates from about eighteen thirty. It belonged to the La Tourette family. The land around it became a city park, and the park became a golf course, and the house became its clubhouse.
+
+  Back in the nineteen thirties, old Staten Islanders had a belief about this house. David La Tourette had never left. His troubled ghost, they said, was vexed at what had happened to his home. And now and then, he roams through the rooms.
+
+  Listen for a moment. Somewhere out on the course, a club hits a ball.
+
+  Somewhere in there, perhaps, a man is still very annoyed about it.
+
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at the big old house with the wide verandas, sitting on the hill above the golf course."
+    source: 1
+    quote: "The spacious mansion is surrounded by wide verandas."
+  - says: "Now it is the clubhouse."
+    source: 1
+    quote: "The clubhouse for the golf course, formerly the home of the La Tourette family, dates from 1830."
+  - says: "The house dates from about eighteen thirty."
+    source: 1
+    quote: "The clubhouse for the golf course, formerly the home of the La Tourette family, dates from 1830."
+  - says: "His troubled ghost, they said, was vexed at what had happened to his home."
+    source: 1
+    quote: "Old Staten Islanders believe that the troubled ghost of David La Tourette, vexed at the profanation of his home, occasionally roams through the building."
+  - says: "And now and then, he roams through the rooms."
+    source: 1
+    quote: "occasionally roams through the building."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Staten Island, La Tourette Park"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain

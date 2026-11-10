@@ -1,0 +1,66 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Jamaica Bay and Floyd Bennett Field (more NYC batch). A rare find: about 20 km from the Midtown cluster.
+# Listening spot: The shore path at Dead Horse Bay, reached by the trail from Flatbush Avenue opposite Floyd Bennett Field, on what was Barren Island.
+# Position: Wikidata Q5245221 (Dead Horse Bay) coordinate, set back onto the land at the trail's end (medium confidence).
+id: new-york-the-pirates-share
+title: "The Pirate's Share"
+summary: "Barren Island is not an island any more. The legend says a hanged pirate's treasure is still buried in it."
+place: "Dead Horse Bay, on old Barren Island, off Flatbush Avenue, Brooklyn"
+at: { lat: 40.58330, lng: -73.89560 }
+triggerRadiusKm: 0.12
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 75
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A treasure legend, not history. The Federal Writers' Project guide of 1939 reports that the pirate Gibbs "was said to have buried" part of his booty on Barren Island and that "legend has it" the treasure is still there. That Gibbs died on the gallows, and that Barren Island was by 1939 "an island in name only", are reported as fact in the same guide. The script says out loud that the treasure is a legend.
+minAge: 0
+quality: 0.75
+tags: [new-york, brooklyn, barren-island, dead-horse-bay, pirates, treasure, legend]
+teaser: "The island is gone. The treasure, they say, is still in it."
+script: |
+  Look down at the sand under your feet. Then look out at the water of the bay.
+
+  You are standing on an island. Or you would be, if it were still an island.
+
+  This was Barren Island. By the nineteen thirties, the guidebooks were calling it an island in name only. An airfield came right up next to it.
+
+  But the ground kept a secret. Or so they say.
+
+  This is a legend.
+
+  There was a pirate named Gibbs. He was a notorious man, and in the early eighteen hundreds he ended his life on the gallows.
+
+  But before they caught him, the story goes, he came ashore here. And he buried a share of his loot in the sand of Barren Island.
+
+  If anyone has dug it up, they never told.
+
+  So if your foot catches on something hard in the sand, look twice.
+
+  The legend says the treasure is still hidden here.
+
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "By the nineteen thirties, the guidebooks were calling it an island in name only."
+    source: 1
+    quote: "BARREN ISLAND, a small community immediately south of Floyd Bennett Field, and an island in name only"
+  - says: "An airfield came right up next to it."
+    source: 1
+    quote: "BARREN ISLAND, a small community immediately south of Floyd Bennett Field"
+  - says: "He was a notorious man, and in the early eighteen hundreds he ended his life on the gallows."
+    source: 1
+    quote: "The notorious pirate Gibbs, who met death on the gallows in the early nineteenth century"
+  - says: "And he buried a share of his loot in the sand of Barren Island."
+    source: 1
+    quote: "was said to have buried a portion of his booty on Barren Island"
+  - says: "The legend says the treasure is still hidden here."
+    source: 1
+    quote: "legend has it that the treasure is still hidden there."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: East Brooklyn, Barren Island"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain

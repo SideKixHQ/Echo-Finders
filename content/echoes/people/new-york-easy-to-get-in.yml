@@ -1,0 +1,104 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Roosevelt Island (more NYC batch).
+# Listening spot: The Octagon, 888 Main Street, Roosevelt Island: the domed eight sided tower, all that stands of the old New York City Lunatic Asylum.
+# Position: Wikidata Q2887672 (The Octagon) coordinate (high confidence; the tower is unmistakable on site).
+id: new-york-easy-to-get-in
+title: "Easy to Get In"
+summary: "In 1887 a young reporter faked madness to get inside the asylum behind this tower. Then she had to get out."
+place: "The Octagon, 888 Main Street, Roosevelt Island, Manhattan"
+at: { lat: 40.76901, lng: -73.94393 }
+triggerRadiusKm: 0.05
+category: people
+format: short
+durationS: 95
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [new-york, roosevelt-island, blackwells-island, nellie-bly, journalism, asylum]
+teaser: "She acted perfectly sane inside. That was the problem."
+script: |
+  Look up at the tower in front of you, the one with eight sides and a dome. It is all that is left of a building nobody wanted to be sent to.
+
+  This island was called Blackwell's Island then. The tower was the way in to the city's lunatic asylum.
+
+  In September, eighteen eighty seven, a young reporter came here on purpose. She worked for Joseph Pulitzer's paper, the World. She wrote under the name Nellie Bly. To get in, she pretended to have lost her memory, and gave her name as Nellie Brown. It worked.
+
+  Once she was inside, she stopped pretending.
+
+  She talked and acted as she always did. And here is what she wrote. The more sanely I talked and acted, the crazier I was thought to be.
+
+  She met women who were as sane as she was. Many could not speak English well enough to tell anyone so. She saw ice cold baths, filthy rooms, and spoiled food.
+
+  She spent ten days inside. Her reports became a book, and a grand jury came to the island to see for itself. The city found a million dollars more a year for the care of people like the women she left behind.
+
+  She had one line for this place, and it is still the best one.
+
+  It is easy to get in. But once there, it is impossible to get out.
+
+pronunciations:
+  - written: Pulitzer
+    say: PULL-it-ser
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "This island was called Blackwell's Island then."
+    source: 2
+    quote: "Blackwell’s Island, now known as Roosevelt Island, has a deep connection to disability and incarceration."
+  - says: "The tower was the way in to the city's lunatic asylum."
+    source: 2
+    quote: "The Octagon, built originally in 1834 as the main entrance to the New York City Lunatic Asylum which opened in 1841, remains standing."
+  - says: "She worked for Joseph Pulitzer's paper, the World."
+    source: 3
+    quote: "There, she worked with Joseph Pulitzer at the New York World . Her first assignment was an undercover investigation of the Women’s Lunatic Asylum on Blackwell’s Island ."
+  - says: "To get in, she pretended to have lost her memory, and gave her name as Nellie Brown."
+    source: 3
+    quote: "After pretending to have amnesia, Bly was committed to the asylum."
+  - says: "To get in, she pretended to have lost her memory, and gave her name as Nellie Brown."
+    source: 1
+    quote: "I WAS left to begin my career as Nellie Brown"
+  - says: "She talked and acted as she always did."
+    source: 1
+    quote: "From the moment I entered the insane ward on the Island, I made no attempt to keep up the assumed role of insanity. I talked and acted just as I do in ordinary life."
+  - says: "The more sanely I talked and acted, the crazier I was thought to be."
+    source: 1
+    quote: "Yet strange to say, the more sanely I talked and acted the crazier I was thought to be"
+  - says: "She met women who were as sane as she was."
+    source: 3
+    quote: "Inside the asylum, she found other patients who had been committed when they were also healthy."
+  - says: "Many could not speak English well enough to tell anyone so."
+    source: 3
+    quote: "Many of these patients could not speak fluent English, so they could not convince the nurses that they were actually sane."
+  - says: "She saw ice cold baths, filthy rooms, and spoiled food."
+    source: 2
+    quote: "Bly described cold baths, filthy living conditions, spoiled food, and physical abuse from caretakers."
+  - says: "In September, eighteen eighty seven, a young reporter came here on purpose."
+    source: 1
+    quote: "the 22d of September I was asked by the World if I could have myself committed to one of the asylums for the insane in New York"
+  - says: "She spent ten days inside."
+    source: 1
+    quote: "I succeeded in getting committed to the insane ward at Blackwell's Island, where I spent ten days"
+  - says: "Her reports became a book, and a grand jury came to the island to see for itself."
+    source: 1
+    quote: "while the Grand Jury were examining the insane pavilion"
+  - says: "The city found a million dollars more a year for the care of people like the women she left behind."
+    source: 1
+    quote: "the City of New York has appropriated $1,000,000 more per annum than ever before for the care of the insane."
+  - says: "It is easy to get in. But once there, it is impossible to get out."
+    source: 1
+    quote: "The insane asylum on Blackwell's Island is a human rat-trap. It is easy to get in, but once there it is impossible to get out."
+sources:
+  - title: "Ten Days in a Mad-House, by Nellie Bly (New York: Ian L. Munro, 1887), scan"
+    publisher: "Internet Archive (public domain scan, Yale Medical Library copy)"
+    url: https://archive.org/details/3304680.med.yale.edu
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Blackwell's Island (Roosevelt Island), New York City"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/blackwell-s-island-new-york-city.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Nellie Bly"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/nellie-bly.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

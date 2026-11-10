@@ -1,0 +1,117 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, the Bronx (more NYC batch). A rare find: about 12 km from the Midtown cluster.
+# Listening spot: The public sidewalk on Southern Boulevard at the site of the Happy Land social club, East Tremont, the Bronx. The building is now ordinary shops; the listener stands on the street, not at any door.
+# Position: Wikidata Q5652893 (Happy Land fire) coordinate (medium confidence; 1959 Southern Boulevard).
+id: new-york-one-staircase
+title: "One Staircase"
+summary: "In March 1990, 87 people died in an illegal dance club on this block, set alight by a man thrown out after an argument. It had one way out."
+place: "Southern Boulevard, site of the Happy Land social club, East Tremont, the Bronx"
+at: { lat: 40.84308, lng: -73.88578 }
+triggerRadiusKm: 0.05
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.85
+tags: [new-york, bronx, 1990, fire, arson, immigrants, honduras]
+teaser: "Eighty seven people. One staircase. A building the city had already ordered closed."
+script: |
+  Look along this stretch of Southern Boulevard. Small shops, a bus going by. There is nothing to tell you that this block was once the scene of the deadliest fire in New York in nearly eighty years.
+
+  On the night of the twenty fourth of March, nineteen ninety, a club here called Happy Land was packed. Young men and women, most of them recent immigrants from Honduras, Ecuador and other countries in Latin America. People came to dance.
+
+  The club should not have been open at all. The city had ordered it closed, for breaking the building and fire codes. And there was only one staircase out.
+
+  Earlier that night, a man named Julio Gonzalez argued with his former girlfriend, who worked at the club. A bouncer threw him out.
+
+  He came back just after three in the morning, with a container of gasoline. He poured it on the staircase, and set it alight.
+
+  Eighty seven people died. Sixty one men and twenty six women. Most of them were under twenty five.
+
+  In nineteen ninety one, Gonzalez was convicted of murder and arson, eighty seven counts of each. He was sentenced to twenty five years to life on every count.
+
+  It happened seventy nine years to the day after the Triangle factory fire in Greenwich Village.
+
+  Look along the block once more. Eighty seven people came here to dance.
+
+  There was one way out.
+
+editorial: draft
+factCheck: corroborated
+trueCrimeReview:
+  # Convicted. No survivor, witness or relative is named; the former girlfriend is
+  # described, not named. Gonzalez may or may not be alive (his death is not in the sources
+  # retrieved), and families of the victims are, so this is marked true and carries three
+  # independent sources (CBS News, NBC News, and the Associated Press via the Boston Globe).
+  involvesLivingPeople: true
+  convictionStatus: convicted
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-11-10"
+  contentWarning: This echo describes an arson fire that killed eighty seven people. No injuries are described.
+claims:
+  - says: "There is nothing to tell you that this block was once the scene of the deadliest fire in New York in nearly eighty years."
+    source: 1
+    quote: "Accounts at the time pointed out that the Happy Land fire was the deadliest blaze in New York City since the Triangle Shirtwaist fire 79 years earlier to the day."
+  - says: "On the night of the twenty fourth of March, nineteen ninety, a club here called Happy Land was packed."
+    source: 1
+    quote: "The fire broke out just after 3 a.m. on March 25, 1990 at the Happy Land nightclub."
+  - says: "Young men and women, most of them recent immigrants from Honduras, Ecuador and other countries in Latin America."
+    source: 1
+    quote: "The club was packed with young men and women - largely recent immigrants from Honduras, Ecuador and other Latin American countries, according to published reports."
+  - says: "The city had ordered it closed, for breaking the building and fire codes."
+    source: 1
+    quote: "Happy Land was operating illegally after having been ordered closed by the city for building and fire code violations, and a single staircase was the only point of egress."
+  - says: "And there was only one staircase out."
+    source: 1
+    quote: "a single staircase was the only point of egress."
+  - says: "Earlier that night, a man named Julio Gonzalez argued with his former girlfriend, who worked at the club."
+    source: 2
+    quote: "set the Happy Land social club in the Bronx ablaze after getting into an argument with his girlfriend, who worked there"
+  - says: "A bouncer threw him out."
+    source: 1
+    quote: "Earlier that evening, Julio Gonzalez had been kicked out of the club by the bouncer after getting into an argument with his ex-girlfriend"
+  - says: "A bouncer threw him out."
+    source: 3
+    quote: "a man set fire to the building after getting into an argument with his former girlfriend and being thrown out of the Bronx club."
+  - says: "He came back just after three in the morning, with a container of gasoline."
+    source: 2
+    quote: "He was kicked out of the club and returned after 3 a.m."
+  - says: "He poured it on the staircase, and set it alight."
+    source: 1
+    quote: "returned to the nightclub with a container full of gasoline, which he poured onto the staircase and ignited."
+  - says: "Eighty seven people died."
+    source: 3
+    quote: "a 1990 blaze at the Happy Land social club where 87 people were killed"
+  - says: "Sixty one men and twenty six women."
+    source: 1
+    quote: "87 people - 61 men and 26 women, did not."
+  - says: "Most of them were under twenty five."
+    source: 1
+    quote: "Most of them were reportedly under 25 years old."
+  - says: "In nineteen ninety one, Gonzalez was convicted of murder and arson, eighty seven counts of each."
+    source: 1
+    quote: "Gonzalez was convicted of 87 counts each of murder and arson in 1991, and was sentenced to 25 years to life for every count."
+  - says: "He was sentenced to twenty five years to life on every count."
+    source: 1
+    quote: "and was sentenced to 25 years to life for every count."
+  - says: "It happened seventy nine years to the day after the Triangle factory fire in Greenwich Village."
+    source: 1
+    quote: "the deadliest blaze in New York City since the Triangle Shirtwaist fire 79 years earlier to the day."
+sources:
+  - title: "25th anniversary of the Happy Land nightclub fire in the Bronx that killed 87 people, March 2015"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/25th-anniversary-of-happy-land-nightclub-fire-that-killed-87/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "'Ghost Ship' One of Country's Deadliest Building Fires in Half-Century, December 2016"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/news/us-news/ghost-ship-one-country-s-deadliest-building-fires-half-century-n691766
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Malfunctioning electric space heater caused fire that killed 19 people (Associated Press), January 2022"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/2022/01/09/nation/19-people-including-9-children-killed-apartment-fire-new-york-citys-bronx-borough-officials-say/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

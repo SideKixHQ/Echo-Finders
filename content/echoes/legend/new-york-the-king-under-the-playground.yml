@@ -1,0 +1,71 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, West Village cluster (more NYC batch).
+# Listening spot: James J. Walker Park (the old Hudson Park), Hudson Street at St. Luke's Place, a playground and ball field laid over an old graveyard.
+# Position: the park's Hudson Street gate at St. Luke's Place, from the street plan (medium confidence).
+id: new-york-the-king-under-the-playground
+title: "The King Under the Playground"
+summary: "This playground was a graveyard until the 1890s. The legend says a lost prince of France was buried here, under a stone that read Leroy."
+place: "James J. Walker Park, Hudson Street at St. Luke's Place, West Village, Manhattan"
+at: { lat: 40.72975, lng: -74.00660 }
+triggerRadiusKm: 0.06
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 75
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A legend, not history. The Federal Writers' Project guide of 1939 reports only that "it is claimed" the lost Dauphin of France was buried in the graveyard here, under a stone reading Leroy. No record proves it, and the guide itself calls him "the oft-found lost Dauphin". That the playground was converted from a graveyard in the 1890s is documented in the same guide. The script says out loud that it is a legend.
+minAge: 0
+quality: 0.8
+tags: [new-york, west-village, legend, graveyard, france, dauphin, playground]
+teaser: "Kids play ball where a king was said to be buried. One word on a stone started it."
+script: |
+  Look across the fence at the playground and the ball field. Swings. Benches. Somebody's lost glove.
+
+  Before the eighteen nineties, this was a graveyard. And people here will tell you that a king is still under it.
+
+  This is a legend. Nobody has proved a word of it.
+
+  It starts in France. The Dauphin was the title of the heir to the French throne. One of them was lost in the French Revolution, as a boy.
+
+  And then he kept being found. For years, men turned up claiming to be him. New York's own guidebook, in nineteen thirty nine, called him the oft found lost Dauphin of France.
+
+  And here is the New York version. Somewhere in this old graveyard, the story goes, they buried him. Over him, they put a stone with just one word on it.
+
+  Leroy.
+
+  Say it slowly. Le roi. The king.
+
+  The graves are gone now. So listen to the shouting from the ball field.
+
+  It might be the noisiest royal tomb in the world.
+
+pronunciations:
+  - written: Dauphin
+    say: DOH-fan
+  - written: Le roi
+    say: luh RWAH
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Before the eighteen nineties, this was a graveyard."
+    source: 1
+    quote: "The HUDSON PARK PLAYGROUND, south of St. Luke's Place, was converted from a graveyard in the 1890's."
+  - says: "New York's own guidebook in nineteen thirty nine called him the oft found lost Dauphin of France."
+    source: 1
+    quote: "Here, it is claimed, was buried the oft-found lost Dauphin of France"
+  - says: "Somewhere in this old graveyard, the story goes, they buried him."
+    source: 1
+    quote: "Here, it is claimed, was buried the oft-found lost Dauphin of France, above whose body was placed a stone bearing the simple description"
+  - says: "Over him, they put a stone with just one word on it."
+    source: 1
+    quote: "above whose body was placed a stone bearing the simple description"
+  - says: "Leroy."
+    source: 1
+    quote: "Leroy (The King)."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Greenwich Village"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
