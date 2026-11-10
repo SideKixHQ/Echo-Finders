@@ -1,11 +1,12 @@
 # Drafted by Claude Code (2026-11-09) for St. Augustine, Florida.
 # Listening spot: The riverbank by the Fort Matanzas visitor center and ferry dock on Anastasia Island, looking across the Matanzas River at the fort on Rattlesnake Island.
 # Position: Wikidata Q1438624 (Fort Matanzas National Monument, 29.715278, -81.239167, the fort itself) moved about 200 m east across the river to the visitor center bank; the visitor center's exact point was not checked (medium-low confidence).
+# Position corrected 2026-11-10: 200 m east of the fort left the pin 120 m out in the river (scripts/check-land.mjs). Now the east bank, 40 m west of Overture "Fort Matanzas Visitor Center" (29.714918, -81.234563), where the river's edge is in the map data (medium confidence).
 id: st-augustine-the-inlet-of-slaughters
 title: "The Inlet of Slaughters"
 summary: "In 1565 Spanish soldiers killed shipwrecked French Huguenots at this inlet, and it has been called Matanzas, slaughters, ever since."
 place: "Fort Matanzas National Monument, riverbank by the visitor center, St. Augustine, Florida"
-at: { lat: 29.715, lng: -81.237 }
+at: { lat: 29.715, lng: -81.235 }
 triggerRadiusKm: 0.1
 category: history
 format: short

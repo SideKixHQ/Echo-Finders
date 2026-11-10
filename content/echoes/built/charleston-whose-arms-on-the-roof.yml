@@ -1,11 +1,12 @@
 # Drafted by Claude Code (2026-10-15) for the Charleston core.
 # Listening spot: The High Battery sea-wall walk, across East Battery from number twenty-one, looking back at the house and its roof parapet.
 # Position: Opposite Overture "Edmondston-Alston House" (21 E Battery) on the sea-wall side of the street; about 155 m north of the Fort Sumter sea-wall echo (medium confidence).
+# Moved to the shore 2026-11-10: was 32.77170, -79.92772, in the water on the map's shoreline (scripts/check-land.mjs); moved 13 m to the nearest land, about 5 m in from the edge.
 id: charleston-whose-arms-on-the-roof
 title: "Whose Arms on the Roof"
 summary: "The coat of arms on this Battery house belongs to its second owner, not the man who built it."
 place: "Edmondston-Alston House, 21 East Battery, Charleston, South Carolina"
-at: { lat: 32.77170, lng: -79.92772 }
+at: { lat: 32.77177, lng: -79.92783 }
 triggerRadiusKm: 0.04
 category: built
 format: short

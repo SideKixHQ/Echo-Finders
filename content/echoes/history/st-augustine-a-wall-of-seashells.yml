@@ -1,11 +1,12 @@
 # Drafted by Claude Code (2026-11-09) for St. Augustine, Florida.
 # Listening spot: The public walk between the Castillo's east wall and the seawall on Matanzas Bay, inside the National Monument grounds.
 # Position: Wikidata Q101094405 (Castillo de San Marcos, 29.89778, -81.31139; LOC HABS FL-17 gives 29.897788, -81.311517), moved about 70 m east to the walk between the fort and the seawall (medium-high confidence).
+# Moved to the shore 2026-11-10: was 29.89775, -81.3107, in the water on the map's shoreline (scripts/check-land.mjs); moved 22 m to the nearest land, about 5 m in from the edge.
 id: st-augustine-a-wall-of-seashells
 title: "A Wall of Seashells"
 summary: "The Castillo is built of coquina, a stone made of tiny shells. In the 1702 siege, English cannonballs sank into it and the fort held."
 place: "Castillo de San Marcos, bayfront walk on the east side, St. Augustine, Florida"
-at: { lat: 29.89775, lng: -81.3107 }
+at: { lat: 29.89786, lng: -81.31089 }
 triggerRadiusKm: 0.06
 category: history
 format: short

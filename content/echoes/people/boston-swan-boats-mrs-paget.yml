@@ -1,11 +1,12 @@
 # Drafted by Claude Code (2026-10-14) for the Boston core.
 # Listening spot: The footbridge over the Lagoon in the Public Garden, where the swan boats pass underneath; public park.
 # Position: Estimated midpoint of the Lagoon footbridge from the Overture "The Lagoon" point and the Public Garden gate entries; the boat landing itself is not in the places data (low confidence).
+# Moved to the shore 2026-11-10: was 42.35410, -71.06985, in the water on the map's shoreline (scripts/check-land.mjs); moved 14 m to the nearest land, about 5 m in from the edge.
 id: boston-swan-boats-mrs-paget
 title: "Mrs. Paget's Swans"
 summary: "In 1893 newspapers across the country reported that Boston's swan boats were owned and run by a woman."
 place: "Swan Boats, the Lagoon, Boston Public Garden, Boston, Massachusetts"
-at: { lat: 42.35410, lng: -71.06985 }
+at: { lat: 42.35415, lng: -71.06970 }
 triggerRadiusKm: 0.06
 category: people
 format: short

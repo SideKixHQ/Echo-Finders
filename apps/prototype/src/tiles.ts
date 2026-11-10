@@ -175,6 +175,20 @@ export const VECTOR_TILES_URL: string | undefined =
 export const WORLD_TILES_URL: string | undefined =
   typeof location === "undefined" ? undefined : `${location.origin}/map/world.pmtiles`;
 
+/**
+ * The real shoreline around the echoes, zoom 8 to 12 (`scripts/build-map.py --world`).
+ * Natural Earth's land above has no barrier islands, so without this the beach echoes stood
+ * in the sea.
+ */
+export const COAST_TILES_URL: string | undefined =
+  typeof location === "undefined" ? undefined : `${location.origin}/map/coast.pmtiles`;
+
+/** The zoomed-out sources for `basemapStyle`, as the `pmtiles://` URLs it reads. */
+export const outlineSources = (): [world?: string, coast?: string] => [
+  WORLD_TILES_URL && `pmtiles://${WORLD_TILES_URL}`,
+  COAST_TILES_URL && `pmtiles://${COAST_TILES_URL}`,
+];
+
 /** The credit the map needs: OpenStreetMap's data is ODbL, which requires it. */
 export const VECTOR_ATTRIBUTION = "© OpenStreetMap · Overture Maps";
 

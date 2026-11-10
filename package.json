@@ -18,6 +18,7 @@
     "content:validate": "node scripts/validate-content.mjs",
     "content:status": "node scripts/content-status.mjs",
     "content:review": "node scripts/content-review.mjs",
+    "content:land": "node scripts/check-land.mjs",
     "library:build": "node scripts/build-library.mjs",
     "echo:render": "node scripts/render-echo.mjs",
     "audit:controls": "node scripts/audit-controls.mjs",

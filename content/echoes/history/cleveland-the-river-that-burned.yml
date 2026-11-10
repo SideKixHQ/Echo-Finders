@@ -1,11 +1,12 @@
 # Drafted by Claude Code (2026-11-09) for Cleveland, Ohio.
 # Listening spot: Public riverside path in the Flats, looking upstream.
 # Position: Approximate riverside spot in the Flats near Rivergate, from general knowledge; the 1969 fire was upstream near the Republic Steel railroad bridges, now on private industrial land (low-medium confidence).
+# Moved to the shore 2026-11-10: was 41.4895, -81.704, in the water on the map's shoreline (scripts/check-land.mjs); moved 45 m to the nearest land, about 5 m in from the edge.
 id: cleveland-the-river-that-burned
 title: "The River That Burned"
 summary: "On June 22, 1969, the Cuyahoga caught fire for less than half an hour. It became a world symbol of water pollution."
 place: "Cuyahoga River in the Flats, Cleveland, Ohio"
-at: { lat: 41.4895, lng: -81.704 }
+at: { lat: 41.48926, lng: -81.70443 }
 triggerRadiusKm: 0.1
 category: history
 format: short

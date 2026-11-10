@@ -1509,8 +1509,8 @@ export const LIBRARY: readonly Echo[] = [
     "summary": "In 1893 newspapers across the country reported that Boston's swan boats were owned and run by a woman.",
     "point": {
       "at": {
-        "lat": 42.3541,
-        "lng": -71.06985
+        "lat": 42.35415,
+        "lng": -71.0697
       },
       "triggerRadiusKm": 0.06,
       "place": "Swan Boats, the Lagoon, Boston Public Garden, Boston, Massachusetts"
@@ -1543,7 +1543,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "family-business"
     ],
-    "remoteness": 0.21
+    "remoteness": 0.2
   },
   {
     "id": "boston-the-church-inside-the-church",
@@ -3867,8 +3867,8 @@ export const LIBRARY: readonly Echo[] = [
     "summary": "When the guns opened on Fort Sumter in April 1861, Charleston came down to this wall to watch.",
     "point": {
       "at": {
-        "lat": 32.7703,
-        "lng": -79.9283
+        "lat": 32.77035,
+        "lng": -79.9284
       },
       "triggerRadiusKm": 0.06,
       "place": "The High Battery sea wall, East Battery, Charleston, South Carolina"
@@ -3909,8 +3909,8 @@ export const LIBRARY: readonly Echo[] = [
     "summary": "In May 1862 an enslaved pilot steamed a Confederate ship out of this harbour with sixteen people aboard.",
     "point": {
       "at": {
-        "lat": 32.7905,
-        "lng": -79.92465
+        "lat": 32.79055,
+        "lng": -79.92523
       },
       "triggerRadiusKm": 0.05,
       "place": "Liberty Square waterfront, Charleston, South Carolina"
@@ -3942,7 +3942,7 @@ export const LIBRARY: readonly Echo[] = [
       "freedom-seekers",
       "waterfront"
     ],
-    "remoteness": 0.63
+    "remoteness": 0.61
   },
   {
     "id": "charleston-the-castle-on-the-square",
@@ -4674,8 +4674,8 @@ export const LIBRARY: readonly Echo[] = [
     "summary": "The coat of arms on this Battery house belongs to its second owner, not the man who built it.",
     "point": {
       "at": {
-        "lat": 32.7717,
-        "lng": -79.92772
+        "lat": 32.77177,
+        "lng": -79.92783
       },
       "triggerRadiusKm": 0.04,
       "place": "Edmondston-Alston House, 21 East Battery, Charleston, South Carolina"
@@ -5775,8 +5775,8 @@ export const LIBRARY: readonly Echo[] = [
     "summary": "On June 22, 1969, the Cuyahoga caught fire for less than half an hour. It became a world symbol of water pollution.",
     "point": {
       "at": {
-        "lat": 41.4895,
-        "lng": -81.704
+        "lat": 41.48926,
+        "lng": -81.70443
       },
       "triggerRadiusKm": 0.1,
       "place": "Cuyahoga River in the Flats, Cleveland, Ohio"
@@ -16275,8 +16275,8 @@ export const LIBRARY: readonly Echo[] = [
     "summary": "Thunderbolt is said to be named for a bolt from the sky that struck here and left a spring behind.",
     "point": {
       "at": {
-        "lat": 32.0342,
-        "lng": -81.0468
+        "lat": 32.03448,
+        "lng": -81.04706
       },
       "triggerRadiusKm": 0.15,
       "place": "River Drive waterfront, Thunderbolt, Georgia"
@@ -16832,8 +16832,8 @@ export const LIBRARY: readonly Echo[] = [
     "summary": "The American Fish Company bar on the point played Ivan's Fish Shack in Safe Haven. Before it was a bar, it was a fish house.",
     "point": {
       "at": {
-        "lat": 33.91575,
-        "lng": -78.0228
+        "lat": 33.91585,
+        "lng": -78.02277
       },
       "triggerRadiusKm": 0.04,
       "place": "American Fish Company, Yacht Basin Drive, Southport, North Carolina"
@@ -17735,8 +17735,8 @@ export const LIBRARY: readonly Echo[] = [
     "summary": "The Castillo is built of coquina, a stone made of tiny shells. In the 1702 siege, English cannonballs sank into it and the fort held.",
     "point": {
       "at": {
-        "lat": 29.89775,
-        "lng": -81.3107
+        "lat": 29.89786,
+        "lng": -81.31089
       },
       "triggerRadiusKm": 0.06,
       "place": "Castillo de San Marcos, bayfront walk on the east side, St. Augustine, Florida"
@@ -17994,7 +17994,7 @@ export const LIBRARY: readonly Echo[] = [
     "point": {
       "at": {
         "lat": 29.715,
-        "lng": -81.237
+        "lng": -81.235
       },
       "triggerRadiusKm": 0.1,
       "place": "Fort Matanzas National Monument, riverbank by the visitor center, St. Augustine, Florida"
