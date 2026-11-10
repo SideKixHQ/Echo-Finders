@@ -258,7 +258,7 @@ export function Paywall({
             allAccessRunning
               ? "You have All-Access. Another year starts when this one ends."
               : city
-                ? `Visiting ${wins} cities or more this year? All-Access costs less.`
+                ? `Visiting ${wins} cities or more this year? All\u2011Access costs less.`
                 : echo
                   ? "City Passes cover a city. This echo is on the road, so it is part of All-Access."
                   : "City Passes cover one city; All-Access opens everything.",
