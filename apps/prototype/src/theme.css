@@ -2471,7 +2471,6 @@ body {
   font-family: "Space Grotesk", monospace; font-size: var(--fs-label); font-weight: 500;
   letter-spacing: 0.14em; text-transform: uppercase;
 }
-.pop-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 
 /* Room for the close button, so a long title does not run under it. */
 .pop h3 {
@@ -2506,20 +2505,6 @@ body {
 .pop-go svg { width: 14px; height: 14px; fill: currentColor; }
 .pop-go:hover { filter: brightness(1.1); }
 
-.pop-save {
-  margin-top: 8px; width: 100%; min-height: 34px;
-  display: flex; align-items: center; justify-content: center; gap: 6px;
-  border: 1px solid var(--line-2); border-radius: 99px; cursor: pointer;
-  font: inherit; font-size: var(--fs-label); color: var(--cool); background: transparent;
-}
-.pop-save svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
-.pop-save.on { color: var(--ember); border-color: rgba(255, 158, 18, 0.5); background: rgba(255, 158, 18, 0.1); }
-.pop-save.on svg { fill: currentColor; }
-/* Save for later and Add to route, side by side: the two ways of keeping one for later. */
-.pop-keep { display: flex; gap: 8px; margin-top: 8px; }
-.pop-keep .pop-save { margin-top: 0; flex: 1 1 0; min-width: 0; min-height: 44px; padding: 0 8px; white-space: nowrap; }
-.pop-route.on { color: var(--aqua); border-color: rgba(var(--rgb-accent), 0.5); background: rgba(var(--rgb-accent), 0.1); }
-.pop-route svg { fill: none !important; stroke-linecap: round; }
 
 /* The pin's real target. Invisible, and the only reason a pin tap lands: an SVG group
    has no geometry, so without this the hit area is the 13px body circle. */
@@ -4062,10 +4047,6 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   font-style: normal; margin-left: 2px; color: var(--ember-core);
   letter-spacing: 0.12em; text-transform: uppercase;
 }
-.pop-reach {
-  margin: 10px 0 0; text-align: center; font-size: var(--fs-secondary);
-  letter-spacing: 0.08em; color: var(--muted);
-}
 /* The card's mark, when there is a photograph of the place to put on it. Square rather
    than round, because a photograph in a circle is a photograph with its corners cut off,
    and the corners of a street scene are where the street is. */
@@ -5305,29 +5286,7 @@ div.maplibregl-map { font-size: var(--fs-label); }
   font-size: var(--fs-button); color: var(--muted); cursor: pointer;
 }
 .suggest-here input { width: 20px; height: 20px; accent-color: var(--aqua); flex: none; }
-/* The echo card's "Know more about this place?" (EchoPopup.tsx): small to look at, a 44px
-   thumb to hit, centred under the actions like a footnote. */
-.pop-suggest {
-  display: block; margin: 2px auto -8px; min-height: 44px; padding: 0 8px;
-  background: none; border: 0; cursor: pointer; font: inherit; font-size: var(--fs-label);
-  color: var(--muted); text-decoration: underline; text-underline-offset: 3px;
-  text-decoration-color: var(--line-2);
-}
-.pop-suggest:hover, .pop-suggest:focus-visible { color: var(--aqua-ink); }
 
-/* The echo card's "Not right?" (EchoPopup.tsx), at the end of the true-story line.
-   Small to look at, a 44px thumb to hit, like the chips. */
-.pop-truth { align-items: center; flex-wrap: wrap; column-gap: 12px; }
-.pop-report {
-  position: relative; margin-left: auto; padding: 0;
-  background: none; border: 0; cursor: pointer; font: inherit; white-space: nowrap;
-  font-size: var(--fs-label); color: var(--muted); text-decoration: underline;
-  text-decoration-color: var(--line-2); text-underline-offset: 3px;
-}
-.pop-report::before {
-  content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-  width: max(100%, 44px); height: max(100%, 44px);
-}
 .report-body { margin-top: 14px; }
 
 /* The journey sheet's routes, introduced as the alternative to just starting (Preflight). */
@@ -5396,3 +5355,144 @@ div.maplibregl-map { font-size: var(--fs-label); }
 :root[data-theme="light"] .fan-anchor { fill: rgba(11, 15, 43, 0.55); }
 :root[data-theme="light"] .map-vignette { display: none; }
 
+
+/* ── The echo card, as approved (2026-11) ───────────────────────────────────────
+   Photograph, kind, title, place, teaser; one primary (Walk there, or Play); four round
+   buttons with their names under them. Scoped to `.pop`, so it outranks the type floor
+   above without editing it, and built from the tokens so the light scheme follows. */
+.pop { padding: 14px 20px 14px; border-radius: 24px; }
+.pop .pop-plate { margin: 0 0 12px; border-radius: 16px; }
+.pop .pop-plate img { height: clamp(84px, calc(100dvh - 740px), 108px); }
+/* The credit gives the badge its corner rather than running under it. */
+.pop .pop-plate .pop-plate-credit { max-width: calc(100% - 180px); }
+.pop .pop-plate .pop-plate-cam {
+  right: 10px; top: 10px; padding: 7px 12px 7px 10px;
+  font-family: inherit; font-size: 14px; font-weight: 600; letter-spacing: 0; text-transform: none;
+}
+.pop .pop-plate .pop-plate-cam svg { width: 16px; height: 16px; stroke-width: 2; }
+.pop .pop-kicker { font-size: 14px; font-weight: 600; letter-spacing: 0.06em; }
+.pop .pop-rarity { font-size: 12px; margin-left: 6px; }
+/* The ✕ on the kicker's centre line at its new size (`audit:align`, popup). */
+.pop .pop-close { padding-top: 3.5px; }
+.pop h3 { margin: 4px 34px 0 0; font-size: 26px; font-weight: 700; line-height: 1.2; }
+/* Two lines at most: a place can be a whole address, and the card is about the echo. */
+.pop .pop-where {
+  margin: 4px 0 0; font-family: inherit; font-size: 15px; line-height: 1.4; color: var(--muted);
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
+}
+.pop .pop-truth { margin-top: 6px; align-items: center; gap: 12px; }
+.pop-len { font-size: 13px; color: var(--muted); }
+.pop .pop-teaser { margin: 10px 0 0; font-size: 17px; line-height: 1.45; color: var(--white); }
+
+.pop-primary { margin-top: 14px; display: flex; flex-direction: column; gap: 10px; }
+.pop .pop-go, .pop .pop-aim {
+  margin: 0; min-height: 56px; border-radius: 18px; gap: 10px;
+  font-size: 18px; font-weight: 600;
+}
+.pop .pop-go svg { width: 20px; height: 20px; }
+.pop .pop-aim svg { width: 20px; height: 20px; fill: currentColor; stroke: none; }
+.pop a.pop-aim svg { fill: none; stroke: currentColor; }
+.pop .pop-state { margin: 0; font-family: inherit; font-size: 16px; text-align: center; }
+.pop-lock {
+  margin: 0; display: flex; align-items: center; justify-content: center; gap: 6px;
+  font-size: 15px; color: var(--ember-core);
+}
+.pop-lock svg {
+  width: 15px; height: 15px; flex: none; fill: none; stroke: currentColor;
+  stroke-width: 2.2; stroke-linecap: round;
+}
+
+/* Four round buttons, each with its name under it, on one line. */
+.pop-acts {
+  position: relative; margin-top: 14px;
+  /* Columns as wide as their names, spread edge to edge: "Add to route" is wider than a
+     quarter of an SE's card, and it stays on one line rather than being cut. */
+  display: flex; justify-content: space-between; gap: 4px;
+}
+.pop-act {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  min-width: 56px; min-height: 44px; padding: 0; border: 0; background: none; cursor: pointer;
+  font: inherit; font-size: 14px; line-height: 1.2; color: var(--white); white-space: nowrap;
+}
+.pop-act-ring {
+  width: 56px; height: 56px; border-radius: 50%; flex: none;
+  display: grid; place-items: center; border: 1px solid var(--line-2);
+  transition: background 0.15s var(--ease), border-color 0.15s var(--ease);
+}
+.pop-act svg {
+  width: 22px; height: 22px; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.pop-act .pop-dots { fill: currentColor; stroke: none; }
+.pop-act:hover .pop-act-ring { background: rgba(var(--rgb-hair), 0.08); }
+/* The ring is on the button itself, which is what `audit:controls` and a keyboard see. */
+.pop-act:focus-visible { outline: 2px solid var(--aqua); outline-offset: 3px; border-radius: 12px; }
+.pop-act.on { color: var(--ember); }
+.pop-act.on .pop-act-ring { border-color: var(--ember); background: rgba(255, 158, 18, 0.1); }
+.pop-act.on:not(.pop-route):not(.pop-more) svg { fill: currentColor; }
+.pop-route.on { color: var(--aqua-ink); }
+.pop-route.on .pop-act-ring { border-color: var(--aqua); background: rgba(var(--rgb-accent), 0.1); }
+.pop-more.on { color: var(--white); }
+.pop-more.on .pop-act-ring { border-color: var(--white); background: rgba(var(--rgb-hair), 0.08); }
+
+/* More: a small menu, opening upwards from its button and over the card's own content,
+   so the card's scroll box never clips it. */
+.pop-menu {
+  position: absolute; right: 0; bottom: calc(100% + 8px); z-index: 3;
+  min-width: 240px; padding: 6px; border-radius: 16px;
+  display: flex; flex-direction: column;
+  background: rgb(var(--rgb-panel)); border: 1px solid var(--line-2);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+  animation: pop-in 0.14s var(--ease);
+}
+.pop-menu-item {
+  display: flex; align-items: center; gap: 12px; min-height: 48px; padding: 0 12px;
+  border: 0; border-radius: 10px; background: none; cursor: pointer; text-align: left;
+  font: inherit; font-size: 16px; color: var(--white); text-decoration: none; white-space: nowrap;
+}
+.pop-menu-item svg {
+  width: 20px; height: 20px; flex: none; fill: none; stroke: var(--muted);
+  stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round;
+}
+.pop-menu-item:hover { background: rgba(var(--rgb-hair), 0.08); }
+.pop-menu-item:focus-visible { outline: 2px solid var(--aqua); outline-offset: -2px; }
+@media (prefers-reduced-motion: reduce) {
+  .pop-menu { animation: none; }
+}
+/*
+ * A short phone (an iPhone in Safari leaves 664px, an SE 553px) holds the whole card
+ * without scrolling (`audit:align`, popup): the photograph becomes a strip, the teaser
+ * two lines, and the buttons step down to sizes that are still well over 44px.
+ */
+@media (max-height: 700px) {
+  .pop { padding: 12px 16px 12px; }
+  .pop .pop-plate { margin-bottom: 10px; }
+  .pop .pop-plate img { height: 64px; }
+  .pop h3 { font-size: 22px; }
+  .pop .pop-teaser {
+    margin-top: 8px; font-size: 16px;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
+  }
+  .pop-primary { margin-top: 12px; gap: 8px; }
+  .pop .pop-go, .pop .pop-aim { min-height: 50px; font-size: 17px; }
+  .pop-lock { font-size: 14px; }
+  .pop-acts { margin-top: 12px; }
+  .pop-act { gap: 5px; }
+  .pop-act-ring { width: 48px; height: 48px; }
+}
+@media (max-height: 600px) {
+  .pop .pop-plate img { height: 48px; }
+  /* The teaser goes, as it did before: the title, the place and the buttons are the card. */
+  .pop .pop-teaser { display: none; }
+  .pop h3 { font-size: 20px; }
+  /* Kind, rarity and mark on one line beside the ✕, even on an SE's 375px. */
+  .pop .pop-kicker { font-size: 12px; letter-spacing: 0.03em; }
+  .pop .pop-rarity { font-size: 12px; margin-left: 4px; letter-spacing: 0.03em; }
+  .pop .pop-truth { display: none; }
+  .pop .pop-truth-inline { display: inline-flex; margin-left: 4px; }
+  .pop .pop-truth-inline .truth { letter-spacing: 0.03em; }
+  .pop .pop-close { padding-top: 4.5px; }
+  .pop-primary, .pop-acts { margin-top: 8px; }
+  .pop .pop-go, .pop .pop-aim { min-height: 46px; }
+  .pop-act-ring { width: 44px; height: 44px; }
+}
