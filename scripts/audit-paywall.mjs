@@ -104,9 +104,10 @@ async function holdStill(p, ctx, until, tries = 20) {
  * when tapped; once that has been dismissed, it is the popup's Play.
  */
 async function playHere(p, ctx) {
-  const ready = async () => (await p.locator('.toast-synced .toast-play, .pop-go').count()) > 0;
+  // Whichever of them is on screen: the toast steps aside while an echo card is open.
+  const ready = async () => (await p.locator('.toast-synced .toast-play:visible, .pop-go:visible').count()) > 0;
   await holdStill(p, ctx, ready);
-  const synced = p.locator('.toast-synced .toast-play');
+  const synced = p.locator('.toast-synced .toast-play:visible');
   await ((await synced.count()) ? synced.first() : p.locator('.pop-go').first()).click();
   await p.waitForTimeout(700);
 }
