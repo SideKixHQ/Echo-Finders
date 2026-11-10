@@ -97,6 +97,15 @@ claims:
   - says: "Since the nineteen seventies, Juneteenth has come back here every June."
     source: 1
     quote: "Since the early 1970s, resurgence in interest has led to annual Juneteenth celebrations at Emancipation Park."
+  - says: "Richard Allen, a politician."
+    source: 1
+    quote: "led by politician Richard Allen"
+  - says: "The Reverend Jack Yates, of Antioch Baptist Church."
+    source: 1
+    quote: "Reverend Jack Yates of Antioch Baptist Church"
+  - says: "And the Reverend Elias Dibble."
+    source: 1
+    quote: "Reverend Elias Dibble of Trinity Methodist Episcopal"
 sources:
   - title: "Emancipation Park, HALS TX-7, Written Historical and Descriptive Data"
     publisher: "Historic American Landscapes Survey, National Park Service (Library of Congress)"

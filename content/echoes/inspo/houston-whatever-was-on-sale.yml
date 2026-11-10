@@ -1,0 +1,107 @@
+# Drafted by Claude Code (2026-11-10) for Houston, near Buffalo Bayou (Rice Military).
+# Listening spot: the sidewalk in front of the Beer Can House, 222 Malone Street, the house John Milkovisch covered in flattened beer cans (NPR, NBC News).
+# Position: Overture places "Beer Can House", 222 Malone St, 29.76376, -95.41914; Wikidata Q4879943 agrees (29.7637, -95.4192) (high confidence).
+id: houston-whatever-was-on-sale
+title: "Whatever Was on Sale"
+summary: "In 1968 a retired upholsterer wanted a patio to drink beer on. He ended up covering his whole house in more than 50,000 cans."
+place: "Beer Can House, 222 Malone Street, Houston, Texas"
+at: { lat: 29.76376, lng: -95.41914 }
+triggerRadiusKm: 0.03
+category: inspo
+inspo:
+  kind: creation
+  evidence: exact
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, beer-can-house, folk-art, orange-show, visionary-art, recycling]
+teaser: "Listen for the wind chime that never stops. It is made of beer can tops."
+script: |
+  Look at this house. The walls shine. Strings of metal hang from the roof and twitch in the wind.
+
+  It is covered, every bit of it, in beer cans. More than fifty thousand of them.
+
+  In nineteen sixty eight, all John Milkovisch wanted was a covered patio, somewhere to drink his beer at the end of the day. He worked as an upholsterer for the railroad. And for years he had been saving his empty cans.
+
+  While I was building the patio, he said later, I was drinking the beer. I knew I was going to do something with them aluminum cans, but I didn't know what.
+
+  He found out. He flattened them and put them on the house. Then he made fences out of them, and long garlands of can tops to hang from the roof. He kept going for close to twenty years.
+
+  It was a six pack a day, the house's restorer says, him and his wife and friends and anybody passing by.
+
+  And his favorite brand? Whatever was on sale.
+
+  He died in nineteen eighty eight. An arts group restored the house, and opened it to visitors.
+
+  Stand still for a moment and listen. Those strands of can tops dance when the wind blows. The restorer calls it a wind chime that never stops.
+
+  It started with a patio.
+
+pronunciations:
+  - written: Milkovisch
+    say: MIL-kuh-vitch
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "It is covered, every bit of it, in beer cans."
+    source: 1
+    quote: "he covered his entire home with beer cans"
+  - says: "More than fifty thousand of them."
+    source: 1
+    quote: "It's estimated that more than 50,000 cans were used."
+  - says: "In nineteen sixty eight, all John Milkovisch wanted was a covered patio, somewhere to drink his beer at the end of the day."
+    source: 1
+    quote: "At first, all John Milkovisch wanted in 1968 was a covered patio where he could drink his beer at the end of the day."
+  - says: "He worked as an upholsterer for the railroad."
+    source: 2
+    quote: "when the Southern Pacific upholsterer died in 1988 at age 75."
+  - says: "And for years he had been saving his empty cans."
+    source: 1
+    quote: "For years, he had been saving his empty beer cans."
+  - says: "While I was building the patio, he said later, I was drinking the beer."
+    source: 1
+    quote: "\"While I was building the patio I was drinking the beer,\" he said in an interview in 1983."
+  - says: "I knew I was going to do something with them aluminum cans, but I didn't know what."
+    source: 1
+    quote: "\"I knew I was going to do something with them aluminum cans because that was what I was looking for ... but I didn't know what I was going to do.\""
+  - says: "Then he made fences out of them, and long garlands of can tops to hang from the roof."
+    source: 2
+    quote: "He also made beer-can fences and garlands to hang from his roof."
+  - says: "He kept going for close to twenty years."
+    source: 2
+    quote: "Beer-lover John Milkovisch attached the cans to his house over a 20-year period"
+  - says: "It was a six pack a day, the house's restorer says, him and his wife and friends and anybody passing by."
+    source: 1
+    quote: "\"It was a six-pack a day, him and his wife and friends and anybody who was passing by, wanted to stop by and hang out,\" Guevara says."
+  - says: "Whatever was on sale."
+    source: 1
+    quote: "\"Whatever was on sale,\" Guevara says."
+  - says: "He died in nineteen eighty eight."
+    source: 1
+    quote: "(Milkovisch died in 1988.)"
+  - says: "An arts group restored the house, and opened it to visitors."
+    source: 2
+    quote: "Now, a $125,000 grant from the Houston Endowment to the Orange Show Center for Visionary Art will help restore the home."
+  - says: "An arts group restored the house, and opened it to visitors."
+    source: 1
+    quote: "The Houston home is now dubbed the Beer Can House and is run by a local arts organization."
+  - says: "Those strands of can tops dance when the wind blows."
+    source: 1
+    quote: "The aluminum \"just dances when the wind blows. And it makes this song, like this wind chime that never stops.\""
+  - says: "The restorer calls it a wind chime that never stops."
+    source: 1
+    quote: "like this wind chime that never stops."
+sources:
+  - title: "For The Love Of Beer: How Empty Cans Made A House A Home"
+    publisher: "NPR, The Salt, 31 July 2013"
+    url: https://www.npr.org/sections/thesalt/2013/07/31/207384768/for-the-love-of-beer-how-empty-cans-made-a-house-a-home
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Beer can house in Houston to be restored (Associated Press)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna7234314
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

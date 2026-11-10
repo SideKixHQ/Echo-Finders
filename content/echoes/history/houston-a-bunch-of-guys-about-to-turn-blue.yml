@@ -105,6 +105,15 @@ claims:
   - says: "We're breathing again."
     source: 3
     quote: "We’re breathing again. Thanks a lot."
+  - says: "You are at Building Thirty, Mission Control."
+    source: 1
+    quote: "The Apollo Mission Control Center, in Building 30 at the Lyndon B. Johnson Manned Space Flight Center in Houston, Texas"
+  - says: "Tranquility Base here."
+    source: 3
+    quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
+  - says: "The Eagle has landed."
+    source: 3
+    quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
 sources:
   - title: "Apollo Mission Control Center"
     publisher: "National Park Service, Aviation: From Sand Dunes to Sonic Booms"

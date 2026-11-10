@@ -1,0 +1,146 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Rice University.
+# Listening spot: in front of Lovett Hall, the arched front building of Rice University, which William Marsh Rice's fortune built (WPA Houston guide, 1942; Standard History of Houston, 1912). The murder itself happened in New York; this is where its consequence stands.
+# Position: Wikidata Q107317794 (Lovett Hall), 29.71677, -95.40098 (high confidence for the building).
+# True crime notes for the reviewer: conviction status is "convicted": Albert T. Patrick was convicted of murder; his death sentence was commuted to life, and Governor Dix pardoned him in 1912. A pardon is not an exoneration, and the script says both. Everyone named died long ago (Rice 1900; Patrick and Jones decades later). The valet's confession is attributed to him, and Patrick's denial is said aloud. Key facts: the death, the confession, the conviction and the pardon are each in the 1912 Standard History and in the 1912 newspaper reports.
+id: houston-one-letter-missing
+title: "One Letter Missing"
+summary: "In 1900, William Marsh Rice died in New York and a lawyer forged his will. A misspelled name on a check sent his fortune to Houston."
+place: "Lovett Hall, Rice University, 6100 Main Street, Houston, Texas"
+at: { lat: 29.71677, lng: -95.40098 }
+triggerRadiusKm: 0.06
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 104
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.85
+tags: [houston, rice-university, william-marsh-rice, true-crime, 1900, forgery, new-york]
+teaser: "This university exists because someone misspelled a name on a check."
+script: |
+  Look at the arches of Lovett Hall, the front door of Rice University.
+
+  This place exists because of a name, misspelled on a check.
+
+  William Marsh Rice was a rich man with deep roots in Houston. He owned the hotel on Main Street where the Capitol of Texas had stood. In his last years he lived in New York. In eighteen ninety six he wrote a will leaving the bulk of his money to found an institute here.
+
+  In September, nineteen hundred, he died in his bed in his New York apartment. He was eighty four.
+
+  His valet, Charles Jones, later confessed that he had killed him with chloroform while he slept. Jones swore he did it for a lawyer, Albert Patrick.
+
+  The prosecution's case was that Patrick had forged a newer will, leaving the fortune to himself, and a set of checks to empty Rice's bank accounts.
+
+  But on one of those checks, the name Albert Patrick was written with a letter missing. A bank clerk who had witnessed Rice's real will looked at it, and grew suspicious. When he telephoned, Jones admitted the old man was dead.
+
+  Patrick was convicted of murder and sentenced to death. He always said he was innocent, and that Jones could not be believed. His sentence was cut to life in prison, and in nineteen twelve the governor of New York pardoned him. He was freed. The conviction was never overturned. Jones, who confessed, was never punished.
+
+  The forged will was thrown out. The fortune came to Houston, and the Rice Institute opened here.
+
+  Look at the arches again.
+
+  One letter.
+
+pronunciations: []
+editorial: draft
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "TODO: James (owner), before this can leave draft"
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo describes a murder, the killing of an elderly man in his sleep. No violence is described in detail."
+claims:
+  - says: "William Marsh Rice was a rich man with deep roots in Houston."
+    source: 1
+    quote: "permitted Houston to inherit a school endowment whose assets are now nearly ten million dollars."
+  - says: "He owned the hotel on Main Street where the Capitol of Texas had stood."
+    source: 4
+    quote: "William Marsh Rice was the purchaser, and late in 1893 began building a five-story brick building at the rear of the hotel"
+  - says: "In his last years he lived in New York."
+    source: 1
+    quote: "murdered in his bed at the Berkshire apartments at 500 Madison Avenue, New York City"
+  - says: "In eighteen ninety six he wrote a will leaving the bulk of his money to found an institute here."
+    source: 1
+    quote: "he had by a will of 1896 donated the bulk of his property to the William M. Rice Institute of Houston, Texas."
+  - says: "In September, nineteen hundred, he died in his bed in his New York apartment."
+    source: 4
+    quote: "When Rice died on September 24, 1900, much litigation involved his estate, including the hotel."
+  - says: "In September, nineteen hundred, he died in his bed in his New York apartment."
+    source: 1
+    quote: "he was 84 years old when he was murdered in his bed at the Berkshire apartments at 500 Madison Avenue, New York City"
+  - says: "He was eighty four."
+    source: 1
+    quote: "he was 84 years old"
+  - says: "His valet, Charles Jones, later confessed that he had killed him with chloroform while he slept."
+    source: 2
+    quote: "It was principally upon the testimony of Jones, who con fesed to"
+  - says: "His valet, Charles Jones, later confessed that he had killed him with chloroform while he slept."
+    source: 1
+    quote: "The man who died under a chloroform soaked sponge, held in a towel cone over his sleeping face, was William M. Rice"
+  - says: "Jones swore he did it for a lawyer, Albert Patrick."
+    source: 1
+    quote: "the confession of Jones who swore ihe crime was instigated by Patrick."
+  - says: "The prosecution's case was that Patrick had forged a newer will, leaving the fortune to himself, and a set of checks to empty Rice's bank accounts."
+    source: 1
+    quote: "That Patrick conspired wdth Jones to forge a will of later date"
+  - says: "The prosecution's case was that Patrick had forged a newer will, leaving the fortune to himself, and a set of checks to empty Rice's bank accounts."
+    source: 1
+    quote: "bogus checks for sums in banks aggregating some $250,000"
+  - says: "But on one of those checks, the name Albert Patrick was written with a letter missing."
+    source: 1
+    quote: "The omission of a single letter in a proper name written on a check, cost the owner of that name a fortune of millions"
+  - says: "A bank clerk who had witnessed Rice's real will looked at it, and grew suspicious."
+    source: 1
+    quote: "this check was shown to Walter H. Wetherbee, a clerk in Swensen's private bank and the man who w^as one of the witnesses to the will of 1896."
+  - says: "When he telephoned, Jones admitted the old man was dead."
+    source: 1
+    quote: "admitted that INIr. Rice was dead and that he had notified the doctor and Mr. Patrick."
+  - says: "Patrick was convicted of murder and sentenced to death."
+    source: 1
+    quote: "was convicted of murder and is today a life prisoner at Sing-Sing, the death penalty having been commuted by executive clemency."
+  - says: "He always said he was innocent, and that Jones could not be believed."
+    source: 1
+    quote: "Patrick has constantly maintained his innocence and insists that a thrice perjured, self-confessed murderer such as valet Jones is unworthy of any credence."
+  - says: "His sentence was cut to life in prison, and in nineteen twelve the governor of New York pardoned him."
+    source: 2
+    quote: "LAWYER ALBERT T. PATRICK PARDONED BY GOVERNOR DIX"
+  - says: "His sentence was cut to life in prison, and in nineteen twelve the governor of New York pardoned him."
+    source: 3
+    quote: "Albert T. Patrick, who waij/ pardoned by G«v. Dlx"
+  - says: "He was freed."
+    source: 3
+    quote: "at a conference between the freed lawyer and his counsel"
+  - says: "Jones, who confessed, was never punished."
+    source: 1
+    quote: "The valet, Jones, who actually com- mitted the act of murder according to his own tale, was allowed to go free of justice"
+  - says: "The forged will was thrown out."
+    source: 1
+    quote: "the setting aside as forgeries of the alleged will of June 30, 1900 giving the estate to Patrick, left the Rice estate to the people of Houston."
+  - says: "The fortune came to Houston, and the Rice Institute opened here."
+    source: 4
+    quote: "Rice Institute, created from an endowment fund established by William Marsh Rice, opened its doors on September 23, 1912."
+  - says: "One letter."
+    source: 1
+    quote: "Because the letter *'!\" was left out of the given name of Albert T. Patrick"
+sources:
+  - title: "Standard History of Houston, Texas, from a Study of the Original Sources (B. H. Carroll, 1912), The Rice Institute"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/standardhistoryo00carr
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Daily Missoulian, 28 November 1912, page 1: Lawyer Albert T. Patrick Pardoned by Governor Dix"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83025316/1912-11-28/ed-1/?sp=1
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Daily Kennebec Journal, 30 November 1912, page 1: Rice Millions"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82014248/1912-11-30/ed-1/?sp=1
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), Chronology"
+    publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"
+    url: https://archive.org/details/houstonahistory00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

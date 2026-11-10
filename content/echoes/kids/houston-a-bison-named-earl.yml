@@ -1,0 +1,80 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Hermann Park and the Museum District: a children's echo.
+# Listening spot: Hermann Park by the Houston Zoo, which grew from one bison given to the city in 1920 and moved to a 34-acre site in the park (WPA Houston guide, 1942).
+# Position: Wikidata Q2753621 (Houston Zoo), 29.71613, -95.39057; the radius takes in the zoo's edge in the park (medium confidence for where a listener stands).
+id: houston-a-bison-named-earl
+title: "A Bison Named Earl"
+summary: "Houston's zoo began in 1920 with one bison from a national park herd. The city named him Earl, and found him a friend: a deer."
+place: "Houston Zoo, Hermann Park, Museum District, Houston, Texas"
+at: { lat: 29.71613, lng: -95.39057 }
+triggerRadiusKm: 0.15
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 66
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [houston, hermann-park, houston-zoo, animals, bison, family]
+teaser: "The whole zoo started with one big, shaggy animal called Earl."
+script: |
+  Somewhere past these trees is the Houston Zoo. Hundreds and hundreds of animals.
+
+  It started with just one.
+
+  In nineteen twenty, the United States government had too many bison in its national parks. So it gave some away. One of them came to Houston.
+
+  The city put him in a little park downtown, and gave him a name. Earl.
+
+  Earl needed company. The city bought him a girl bison from a herd in west Texas, but sadly she did not live long. So his next friend was a deer, given by a fishing club.
+
+  Then more animals came. Strange pets. Gifts. A lion, bought from a circus.
+
+  On the first of December, nineteen twenty four, the zoo officially opened. By the next year it had moved here, to Hermann Park, with more than four hundred animals, three hundred birds and a hundred reptiles.
+
+  And their dinner? Everything from meat to dried flies.
+
+  So when you walk past the animals today, say thank you to the very first one.
+
+  Thank you, Earl.
+
+pronunciations: []
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In nineteen twenty, the United States government had too many bison in its national parks."
+    source: 1
+    quote: "The Zoological Gardens originated in 1920, when the United States Govern- ment thinned out bison herds in national parks."
+  - says: "One of them came to Houston."
+    source: 1
+    quote: "One of the animals was given to"
+  - says: "The city put him in a little park downtown, and gave him a name."
+    source: 1
+    quote: "the city, placed in the zoo in Sam Houston Park and was promptly named “Earl.”"
+  - says: "The city bought him a girl bison from a herd in west Texas, but sadly she did not live long."
+    source: 1
+    quote: "The City Council purchased a female bison from the Goodnight herd in west Texas, but this animal lived only a short time."
+  - says: "So his next friend was a deer, given by a fishing club."
+    source: 1
+    quote: "“Earl’s” next companion was a deer donated by the Camp Street Fishing Club."
+  - says: "A lion, bought from a circus."
+    source: 1
+    quote: "a lion and several other animals were purchased from a circus."
+  - says: "On the first of December, nineteen twenty four, the zoo officially opened."
+    source: 1
+    quote: "On December 1, 1924, after a delay caused by a quarantine against a widespread epidemic of hoof and mouth disease, the zoo was officially opened."
+  - says: "By the next year it had moved here, to Hermann Park, with more than four hundred animals, three hundred birds and a hundred reptiles."
+    source: 1
+    quote: "[It} has more than 800 specimens, about 400 animals, 300 birds and 100 reptiles. .. . The zoo has moved to the new 34-acre site in Hermann Park"
+  - says: "Everything from meat to dried flies."
+    source: 1
+    quote: "The animal food bill for the inmates, which ranges in variety from meat to dried flies, totals about $10,000."
+  - says: "Somewhere past these trees is the Houston Zoo."
+    source: 1
+    quote: "z00- logical gardens containing more than 1,000 specimens"
+sources:
+  - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), Hermann Park"
+    publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"
+    url: https://archive.org/details/houstonahistory00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

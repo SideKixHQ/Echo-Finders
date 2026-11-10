@@ -1,0 +1,100 @@
+# Drafted by Claude Code (2026-11-10) for Houston, NASA and Clear Lake cluster.
+# Listening spot: outside Building 30, the Mission Control Center at the Johnson Space Center, the room Apollo 13's crew was talking to (NPS; HAER TX-109-C). Reached on the Space Center Houston tram tour.
+# Position: about 40 m from the Apollo 11 echo at the same building; Wikidata Q5112041 puts the building at 29.55828, -95.08885 (high confidence for the building).
+id: houston-weve-had-a-problem
+title: "We've Had a Problem"
+summary: "In April 1970 an oxygen tank exploded on Apollo 13, and a sentence the whole world now quotes was spoken to the room in this building."
+place: "Mission Control, Building 30, Johnson Space Center, Houston, Texas"
+at: { lat: 29.55860, lng: -95.08870 }
+triggerRadiusKm: 0.06
+inside: true
+category: inspo
+inspo:
+  kind: connection
+  evidence: building
+format: short
+durationS: 78
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, nasa, johnson-space-center, clear-lake, apollo-13, mission-control, quotes]
+teaser: "Everyone knows the line. It was said to a room in this building."
+script: |
+  You are outside Building Thirty, Mission Control. Somewhere inside is the room that heard a sentence people still quote, half a century later.
+
+  It was a calm sentence about a disaster.
+
+  In April nineteen seventy, Apollo Thirteen was three days out, on its way to the Moon. An electrical short set off an explosion in an oxygen tank.
+
+  Fred Haise began, Okay, Houston.
+
+  Then the commander, Jim Lovell. I believe we've had a problem here.
+
+  From this building, the capsule communicator asked him to say again.
+
+  Houston, we've had a problem.
+
+  Stand by, thirteen, came the answer. We're looking at it.
+
+  For days, the flight controllers in here worked out how to bring three men home in a crippled spacecraft. Gene Kranz was the flight director. Throughout the entire course of Apollo Thirteen, he said, there was never any doubt that we'd get the crew back.
+
+  They got them back.
+
+  And the words they spoke into this room live on.
+
+  And the first word of it was the name of this city.
+
+pronunciations:
+  - written: Haise
+    say: HAYZ
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "In April nineteen seventy, Apollo Thirteen was three days out, on its way to the Moon."
+    source: 1
+    quote: "Narrator: Three days out, barreling toward the Moon, an explosion."
+  - says: "An electrical short set off an explosion in an oxygen tank."
+    source: 2
+    quote: "After an electrical short caused an oxygen tank to explode on the spacecraft Odyssey, Apollo 13’s Command-Service Module"
+  - says: "Fred Haise began, Okay, Houston."
+    source: 1
+    quote: "Fred Haise: Okay, Houston—"
+  - says: "I believe we've had a problem here."
+    source: 1
+    quote: "Jim Lovell: I believe we've had a problem here."
+  - says: "From this building, the capsule communicator asked him to say again."
+    source: 1
+    quote: "CAPCOM: Houston. Say again, please."
+  - says: "Houston, we've had a problem."
+    source: 1
+    quote: "Jim Lovell: Houston, we've had a problem."
+  - says: "Stand by, thirteen, came the answer."
+    source: 1
+    quote: "CAPCOM: Stand by, 13. We're looking at it."
+  - says: "For days, the flight controllers in here worked out how to bring three men home in a crippled spacecraft."
+    source: 2
+    quote: "While the flight controllers and engineers at MCC tried to find a way to bring home the crew of the Odyssey."
+  - says: "Gene Kranz was the flight director."
+    source: 1
+    quote: "Eugene Kranz was the flight director when the problem developed."
+  - says: "Throughout the entire course of Apollo Thirteen, he said, there was never any doubt that we'd get the crew back."
+    source: 1
+    quote: "Throughout the entire course of Apollo 13 there was never any doubt that we’d get the crew back"
+  - says: "They got them back."
+    source: 1
+    quote: "linked themselves with their technology, and cheated tragedy."
+  - says: "And the words they spoke into this room live on."
+    source: 2
+    quote: "The words live on in the America’s collective memory, a reminder of the heroism of the Apollo Program’s astronauts and flight controllers."
+sources:
+  - title: "The Time of Apollo (video transcript, ARC 649447)"
+    publisher: "National Archives"
+    url: https://www.archives.gov/files/social-media/transcripts/transcript-time-of-apollo-649447.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Johnson Space Center, Apollo Mission Control, HAER TX-109-C, Written Historical and Descriptive Data"
+    publisher: "Historic American Engineering Record, National Park Service (Library of Congress)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx1100/tx1134/data/tx1134data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain

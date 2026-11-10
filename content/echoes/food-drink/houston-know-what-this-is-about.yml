@@ -1,0 +1,99 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Museum District.
+# Listening spot: the sidewalk in front of Lucille's, 5512 La Branch Street, a restaurant in a house built in 1923 (NPR).
+# Position: Overture places "Lucille's", 5512 La Branch St, 29.72377, -95.38505 (high confidence).
+id: houston-know-what-this-is-about
+title: "Know What This Is About"
+summary: "Lucille's is named for a great-grandmother who cooked for Dr. King. Its chef serves a red salad for Juneteenth, and asks one thing."
+place: "Lucille's, 5512 La Branch Street, Museum District, Houston, Texas"
+at: { lat: 29.72377, lng: -95.38505 }
+triggerRadiusKm: 0.04
+inside: true
+category: food-drink
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [houston, museum-district, juneteenth, southern-food, restaurants, lucille-b-smith]
+teaser: "A watermelon salad, a great-grandmother's name, and one request before you eat."
+script: |
+  Look at this old house, built in nineteen twenty three. It is a restaurant now, and it carries a woman's name. Lucille.
+
+  She never cooked here. She is the chef's great-grandmother.
+
+  Her name was Lucille Smith. She was a home economist and a teacher. She created a hot roll mix that was sold in grocery stores. She cooked for Dr. Martin Luther King Junior and for Eleanor Roosevelt. And when she sent Christmas fruitcakes to soldiers in Vietnam, President Lyndon Johnson wrote to thank her.
+
+  Her great-grandsons, Chris and Ben Williams, opened this restaurant. It was Ben's idea to name it after Great Grandma. Chris said that was perfect, because it gave them a story.
+
+  Since the day they opened, they have served a watermelon salad, with strawberry and jalapeño dressing. It is red on purpose. Red is the color most people link with Juneteenth, the day enslaved Texans learned they were free. It stands for the blood that was shed.
+
+  Chris has said he is not comfortable calling Juneteenth a celebration. To him, it is a day of acknowledgement.
+
+  So he asks one thing of anyone sitting down to eat that day.
+
+  Know what this is really about.
+
+pronunciations:
+  - written: jalapeño
+    say: hah-luh-PAYN-yoh
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at this old house, built in nineteen twenty three."
+    source: 1
+    quote: "Yes. The house was built in 1923."
+  - says: "She is the chef's great-grandmother."
+    source: 1
+    quote: "\"let's name it after Great-Grandma.\""
+  - says: "Her name was Lucille Smith."
+    source: 1
+    quote: "Lucille B. Smith created a hot roll mix that was sold in grocery stores"
+  - says: "She was a home economist and a teacher."
+    source: 1
+    quote: "In addition to being a home economist and educator, Lucille B. Smith created a hot roll mix"
+  - says: "She created a hot roll mix that was sold in grocery stores."
+    source: 1
+    quote: "created a hot roll mix that was sold in grocery stores, and ran a barbeque business and store in Fort Worth."
+  - says: "She cooked for Dr. Martin Luther King Junior and for Eleanor Roosevelt."
+    source: 1
+    quote: "She cooked for Dr. Martin Luther King, Jr. and Eleanor Roosevelt"
+  - says: "And when she sent Christmas fruitcakes to soldiers in Vietnam, President Lyndon Johnson wrote to thank her."
+    source: 1
+    quote: "received a thank-you note from then-President Lyndon B. Johnson for sending Christmas fruitcakes to servicemen during the Vietnam War."
+  - says: "Her great-grandsons, Chris and Ben Williams, opened this restaurant."
+    source: 1
+    quote: "I understand you and your brother Ben, who is also in the business, chose the name and place of your restaurant, Lucille's."
+  - says: "It was Ben's idea to name it after Great Grandma."
+    source: 1
+    quote: "And it was actually my older brother who suggested, \"let's name it after Great-Grandma.\""
+  - says: "Chris said that was perfect, because it gave them a story."
+    source: 1
+    quote: "And I said, \"that's perfect,\" because it gave us a story"
+  - says: "Since the day they opened, they have served a watermelon salad, with strawberry and jalapeño dressing."
+    source: 1
+    quote: "One of our dishes that we've been serving since we opened up is our watermelon salad."
+  - says: "Since the day they opened, they have served a watermelon salad, with strawberry and jalapeño dressing."
+    source: 1
+    quote: "a strawberry-jalapeño vinaigrette"
+  - says: "Red is the color most people link with Juneteenth, the day enslaved Texans learned they were free."
+    source: 1
+    quote: "It has that red component that most people have always associated with the holiday"
+  - says: "It stands for the blood that was shed."
+    source: 1
+    quote: "[representing the blood that was shed by enslaved Africans]"
+  - says: "To him, it is a day of acknowledgement."
+    source: 1
+    quote: "Yeah, I think that we could call it a day of acknowledgement. But I don't believe it's a day of celebration."
+  - says: "Know what this is really about."
+    source: 1
+    quote: "Know what this is really about."
+  - says: "Chris has said he is not comfortable calling Juneteenth a celebration."
+    source: 1
+    quote: "Personally, I'm not comfortable with celebrating it."
+sources:
+  - title: "Lucille's Chef Chris Williams Shares His Thoughts On Juneteenth"
+    publisher: "NPR, Code Switch, 18 June 2021"
+    url: https://www.npr.org/sections/codeswitch/2021/06/18/1007729393/know-the-history-a-texas-chefs-thoughts-on-food-and-juneteenth
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

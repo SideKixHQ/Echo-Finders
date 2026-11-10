@@ -1,0 +1,87 @@
+# Drafted by Claude Code (2026-11-10) for Houston, NRG Park.
+# Listening spot: outside the Astrodome's south side, 8400 Kirby Drive, NRG Park. The building is closed; the echo is heard from outside.
+# Position: about 130 m south of Wikidata Q1025406 (Astrodome, 29.685, -95.40778), on the south side of the building (medium confidence), away from the two other Astrodome echoes.
+id: houston-the-condition
+title: "The Condition"
+summary: "To build the Astrodome, its backers needed Black voters. Quentin Mease agreed to help on one condition: the stadium had to be integrated."
+place: "Astrodome, south side, 8400 Kirby Drive, NRG Park, Houston, Texas"
+at: { lat: 29.68380, lng: -95.40778 }
+triggerRadiusKm: 0.08
+category: people
+format: short
+durationS: 74
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, astrodome, nrg-park, civil-rights, quentin-mease, african-american-history, 1961]
+teaser: "The Eighth Wonder of the World needed votes. One man set the price."
+script: |
+  Look at the Astrodome, the first stadium in the world built to be air conditioned. Before it could be built, somebody had to vote for it.
+
+  And the men who wanted it could not win without Black voters.
+
+  It was nineteen sixty one. Roy Hofheinz and Bob Smith wanted a major league baseball team for Houston, and a stadium with a roof. For that, Harris County voters had to approve a public bond issue.
+
+  They needed the support of Black Houstonians. So they went to Quentin Mease. He was a veteran of the Air Force in the Second World War, and one of the most respected Black leaders in the city.
+
+  In Houston, it was only the year before that lunch counters had been integrated.
+
+  Mease and the other Black leaders listened. And they agreed to campaign for the bond on one condition.
+
+  The new stadium had to be open to everyone, together.
+
+  Hofheinz and Smith agreed. The bond issue, forty two million dollars, was passed.
+
+  Look up at the dome again. The Eighth Wonder of the World.
+
+  It had a condition written into it before a single beam went up.
+
+pronunciations:
+  - written: Mease
+    say: MEESE
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at the Astrodome, the first stadium in the world built to be air conditioned."
+    source: 1
+    quote: "In order the build the world's first air-conditioned stadium, the Houston Sports Association needed the Harris County voters to approve a public bond issue planned for February 1961."
+  - says: "It was nineteen sixty one."
+    source: 1
+    quote: "a public bond issue planned for February 1961."
+  - says: "Roy Hofheinz and Bob Smith wanted a major league baseball team for Houston, and a stadium with a roof."
+    source: 1
+    quote: "Hofheinz and his business partner, Robert (Bob) E. Smith created the Houston Sports Association with the goal of getting a major league franchise in Houston."
+  - says: "For that, Harris County voters had to approve a public bond issue."
+    source: 1
+    quote: "the Houston Sports Association needed the Harris County voters to approve a public bond issue planned for February 1961."
+  - says: "So they went to Quentin Mease."
+    source: 1
+    quote: "They decided to elicit help from Mr. Quentin R. Mease, a World War II Air Force veteran and one of Houston's most respected and influential African Americans."
+  - says: "He was a veteran of the Air Force in the Second World War, and one of the most respected Black leaders in the city."
+    source: 1
+    quote: "a World War II Air Force veteran and one of Houston's most respected and influential African Americans."
+  - says: "In Houston, it was only the year before that lunch counters had been integrated."
+    source: 1
+    quote: "This had become an important issue since it was only in 1960 that various lunch counters in Houston had become integrated."
+  - says: "And they agreed to campaign for the bond on one condition."
+    source: 1
+    quote: "Mr. Mease and the other African American leaders agreed to campaign for the bond issue on the condition that the new stadium be opened as an integrated facility."
+  - says: "The new stadium had to be open to everyone, together."
+    source: 1
+    quote: "on the condition that the new stadium be opened as an integrated facility."
+  - says: "Hofheinz and Smith agreed."
+    source: 1
+    quote: "Smith both agreed to Quentin Mease's condition, and the bond issue of $42,000,000 was passed to pay for the project."
+  - says: "The bond issue, forty two million dollars, was passed."
+    source: 1
+    quote: "the bond issue of $42,000,000 was passed to pay for the project."
+  - says: "The Eighth Wonder of the World."
+    source: 1
+    quote: "he branded the Astrodome the \"Eighth Wonder of the World.\""
+sources:
+  - title: "Houston Astrodome (Harris County Domed Stadium), HAER TX-108, Written Historical and Descriptive Data"
+    publisher: "Historic American Engineering Record, National Park Service (Library of Congress)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx1000/tx1045/data/tx1045data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain

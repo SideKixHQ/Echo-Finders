@@ -87,6 +87,12 @@ claims:
   - says: "No danger."
     source: 1
     quote: "No danger! Turn back!"
+  - says: "He was the President of Mexico."
+    source: 2
+    quote: "the Mexican president-general was found hiding in the weeds."
+  - says: "Santa Anna was not among the prisoners."
+    source: 1
+    quote: "Santa Anna was captured the next day and brought before Houston"
 sources:
   - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942)"
     publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"

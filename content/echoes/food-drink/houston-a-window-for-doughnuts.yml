@@ -1,0 +1,82 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Downtown and Market Square.
+# Listening spot: Preston Street beside Market Square Park. Stude's Bakery and Coffee Saloon stood at 810 Preston Avenue in the late 1890s (WPA Houston guide, 1942).
+# Position: Wikidata Q6770734 (Market Square Park), 29.7627, -95.3623; the spot is on the park's Preston Street side. The 800 block of Preston is inferred from 813 Congress (the Kennedy Bakery) on the park's opposite side, so the exact door is not fixed (medium confidence).
+id: houston-a-window-for-doughnuts
+title: "A Window for Doughnuts"
+summary: "In the 1890s an all night coffee saloon on Preston had a little window where men queued for doughnuts. Nearby, a cafe kept bullfrogs."
+place: "Preston Street at Market Square Park, Downtown Houston, Texas"
+at: { lat: 29.76240, lng: -95.36250 }
+triggerRadiusKm: 0.05
+category: food-drink
+format: short
+durationS: 82
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [houston, downtown, market-square, preston-street, coffee, doughnuts, 1890s, george-hermann]
+teaser: "The man who gave Houston Hermann Park stood in line on this street, at a little window, for a doughnut."
+script: |
+  Stand on Preston, by Market Square, and picture a small window at the front of a bakery. Open all night.
+
+  In the late eighteen nineties, some of the most important men in Houston lined up at it.
+
+  It was Stude's Bakery and Coffee Saloon, at eight ten Preston Avenue. It never closed. And at that little window, men queued up for doughnuts, or sweet rolls, to eat with their coffee.
+
+  One of them was George Hermann. He was the man who would give Houston the land for Hermann Park. He stood in line like everybody else.
+
+  Night life in Houston then had plenty of choice. A hotel dining hall served ten course dinners for fifty cents, with suckling pig and larded quail.
+
+  And near the courthouse was Colby's Cafe. Out front was a display of venison, ducks, geese, snipe and turtles. Inside, it served turtle soup and frog's legs, and it kept a tank of live bullfrogs.
+
+  In watermelon season, the story goes, the floor got so slick with melon juice that the waiters skated from table to table.
+
+  Look along the street. The bakery is long gone, and so is the frog tank.
+
+  But picture the line at that window, all night long, for a doughnut.
+
+pronunciations:
+  - written: Stude's
+    say: STOO-deez
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In the late eighteen nineties, some of the most important men in Houston lined up at it."
+    source: 1
+    quote: "there George Hermann, donor of Hermann Park, and other prominent men of the day used to line up before a small window for doughnuts or sweet rolls to eat with their coffee."
+  - says: "It was Stude's Bakery and Coffee Saloon, at eight ten Preston Avenue."
+    source: 1
+    quote: "Stude’s Coffee Saloon, at 810 Preston Avenue, remained open all night"
+  - says: "It never closed."
+    source: 1
+    quote: "remained open all night"
+  - says: "And at that little window, men queued up for doughnuts, or sweet rolls, to eat with their coffee."
+    source: 1
+    quote: "used to line up before a small window for doughnuts or sweet rolls to eat with their coffee."
+  - says: "One of them was George Hermann."
+    source: 1
+    quote: "there George Hermann, donor of Hermann Park, and other prominent men of the day used to line up"
+  - says: "A hotel dining hall served ten course dinners for fifty cents, with suckling pig and larded quail."
+    source: 1
+    quote: "Ten-course dinners costing fifty cents were offered at the Grand Central Hotel Dining Hall, 713 Washington Avenue, and entrees included suckling pig, larded quail, and green goose"
+  - says: "And near the courthouse was Colby's Cafe."
+    source: 1
+    quote: "Colby’s Cafe, near the courthouse, specialized in game dinners, turtle soup, and frog’s legs, and advertised widely."
+  - says: "Out front was a display of venison, ducks, geese, snipe and turtles."
+    source: 1
+    quote: "Before its entrance was a display of venison, ducks, geese, partridges, snipe, and turtles, and inside was a tank for bullfrogs."
+  - says: "Inside, it served turtle soup and frog's legs, and it kept a tank of live bullfrogs."
+    source: 1
+    quote: "and inside was a tank for bullfrogs."
+  - says: "In watermelon season, the story goes, the floor got so slick with melon juice that the waiters skated from table to table."
+    source: 1
+    quote: "the waiters are said to have skated from table to table in the"
+  - says: "He was the man who would give Houston the land for Hermann Park."
+    source: 1
+    quote: "George Hermann, donor of Hermann Park"
+sources:
+  - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), Chapter XII"
+    publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"
+    url: https://archive.org/details/houstonahistory00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
