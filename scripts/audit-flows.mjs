@@ -490,7 +490,11 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.waitForTimeout(300);
   await p.getByRole('button', { name: 'Close search' }).click();
   await p.waitForTimeout(300);
-  check('Map search: the ✕ puts the map back', !(await visible(results)) && await visible(p.locator('.mapbar-row')) && (await box.inputValue()) === '');
+  {
+    const after = { results: await visible(results), row: await visible(p.locator('.mapbar-row')), value: await box.inputValue(),
+      card: await visible(p.locator('.pop')), focused: await p.evaluate(() => document.activeElement?.className ?? '') };
+    check('Map search: the ✕ puts the map back', !after.results && after.row && after.value === '', JSON.stringify(after));
+  }
   await box.click();
   await p.keyboard.press('Escape');
   await p.waitForTimeout(300);
