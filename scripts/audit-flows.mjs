@@ -782,8 +782,8 @@ async function arrive() {
     await p.waitForTimeout(300);
     await p.locator('.jmenu-item', { hasText: 'Ocean Drive' }).first().click();
     await p.waitForTimeout(1500);
-    // Ocean Drive starts beside its own echoes, so a synced toast can land in that second and
-    // a half. Clear it, as the reload below does, before going to My Echoes.
+    // A guided walk follows the phone now, so Ocean Drive syncs nothing from New York; a toast
+    // left over from the fort is cleared, as the reload below does, before My Echoes.
     for (let i = 0; i < 4 && (await p.locator('.toast-synced').count()); i++) {
       await p.locator('.toast-synced .toast-close').click().catch(() => {});
       await p.waitForTimeout(400);
@@ -794,13 +794,13 @@ async function arrive() {
 
     // Come back another day to where the fort was found: it is history, not a new sync.
     await p.reload();
-    // The reload reopens the Lower Manhattan demo walk, which reaches the fort a few seconds
-    // in: a genuine new sync on that journey. Clear it, however late it lands, first.
+    // The reload reopens Ocean Drive, which follows the phone and syncs nothing here. Any
+    // toast that does land is cleared first, however late.
     for (let i = 0; i < 16; i++) {
       if (await p.locator('.toast-synced').count()) await p.locator('.toast-synced .toast-close').click().catch(() => {});
       await p.waitForTimeout(500);
     }
-    // A later demo toast must not block the taps; it is still counted below if it is the fort.
+    // A later toast must not block the taps; it is still counted below if it is the fort.
     await p.addStyleTag({ content: '.toast-dock .toast { pointer-events: none !important; }' });
     await p.getByLabel(/Change your journey/).click();
     await p.waitForTimeout(300);
@@ -900,6 +900,73 @@ async function nearby() {
     check('Nearby toast: and goes', !(await p.locator('.toast-near').count()));
     await ctx.close();
   } else check('Nearby toast: appears again on a fresh start', false);
+}
+
+// ── A guided walk follows you ───────────────────────────────────────────────────
+// Guided walks ran on a simulated GPS: starting "Old Wilmington" at St. James put you at
+// the river and synced its echo before a step was taken (found 2026-11-10). Starting one
+// now leaves you where you are, syncs nothing out of reach, and shows the way to the
+// first stop. Its own context, standing at St. James.
+{
+  const ST_JAMES = { latitude: 34.2357, longitude: -77.9452 };
+  const ctx = await browser.newContext({
+    viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
+    ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: ST_JAMES,
+  });
+  await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  const p = await ctx.newPage();
+  p.setDefaultTimeout(6000);
+  const loops = [];
+  p.on('pageerror', (e) => errors.push(e.message));
+  p.on('console', (m) => { if (/Maximum update depth/.test(m.text())) loops.push(m.text().slice(0, 120)); });
+  await p.goto(`http://127.0.0.1:${PORT}/`, { waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(800);
+  await p.getByRole('button', { name: 'Find echoes near me' }).click();
+  await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
+  await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
+  await p.waitForTimeout(2500);
+  // Whatever synced at St. James while exploring is real; clear its toast before starting.
+  for (let i = 0; i < 4 && (await p.locator('.toast-synced').count()); i++) {
+    await p.locator('.toast-synced .toast-close').click().catch(() => {});
+    await p.waitForTimeout(400);
+  }
+  const badge = async () => (await p.locator('.nav').getByRole('button', { name: /My Echoes/ }).innerText()).replace(/\D/g, '');
+  const foundBefore = await badge();
+  await p.getByLabel(/Change your journey/).click();
+  await p.waitForTimeout(400);
+  await p.locator('.jmenu-item', { hasText: 'Old Wilmington' }).first().click();
+  await p.waitForTimeout(2500);
+  const sheet = p.locator('.dir-sheet');
+  const lead = (await sheet.locator('.dir-sheet-big').innerText().catch(() => '')).trim();
+  check('Guided walk: shows the way to the first stop', /^Walk to the start · \d+ min$/.test(lead), lead);
+  check('Guided walk: says which stop, of how many',
+    /Stop 1 of \d+ · to /.test(await sheet.locator('.dir-sheet-to').innerText().catch(() => '')));
+  check('Guided walk: turn by turn at the top', await visible(p.locator('.dir-turn')));
+  // Numbered, one badge per stop, as the sheet counts them.
+  const of = Number(/of (\d+)/.exec(await sheet.locator('.dir-sheet-to').innerText().catch(() => ''))?.[1] ?? 0);
+  check('Guided walk: its stops are on the map, numbered', of > 0 && (await p.locator('g.pw-badge').count()) === of,
+    `${await p.locator('g.pw-badge').count()} badges, ${of} stops`);
+  const metres = async () => {
+    const t = (await sheet.locator('.dir-sheet-how').innerText().catch(() => '')).trim();
+    const m = /([\d.,]+)\s*(m|km)\b/.exec(t);
+    return m ? Number(m[1].replace(/,/g, '')) * (m[2] === 'km' ? 1000 : 1) : null;
+  };
+  const away = await metres();
+  // St. James is about 470 m from the river where the walk starts. Moved there, it would be 0.
+  check('Guided walk: does not move you to the start', away !== null && away > 200, String(away));
+  await p.waitForTimeout(8000);
+  const later = await metres();
+  check('Guided walk: standing still, you stay where you are', later !== null && away !== null && Math.abs(later - away) < 40,
+    `${away} then ${later}`);
+  const synced = await p.locator('.toast-synced').allInnerTexts();
+  check('Guided walk: syncs nothing you have not walked to',
+    synced.every((t) => !/Long Walk Beside the River/.test(t)) && (await badge()) === foundBefore,
+    `${synced.join(' / ')} · My Echoes ${foundBefore} then ${await badge()}`);
+  check('Guided walk: no render loop', loops.length === 0, loops[0] ?? '');
+  await sheet.getByRole('button', { name: 'End the walk' }).click().catch(() => {});
+  await p.waitForTimeout(600);
+  check('Guided walk: End the walk puts the directions away', !(await visible(p.locator('.dir-sheet'))));
+  await ctx.close();
 }
 
 await browser.close();

@@ -70,13 +70,16 @@ Worth knowing before you judge it, so you spend your attention on the right thin
 |---|---|
 | **Real** | The engine. Capture, ranking, the queue, proximity, privacy, the corridor query — the same code an iOS build would run. |
 | **Real** | The words. Every script is the real script. |
-| **Simulated** | Your position. A `RouteProfile` walks the route for you, so a fifty-minute walk fits in about three minutes. |
+| **Real** | Your position, on foot and driving: exploring, a planned walk and a guided walk all follow the phone (or `?at=`). A guided walk shows the way to its first stop and syncs nothing until you are there. |
+| **Simulated** | A flight's position, and a walk's with `?simulate`. A `RouteProfile` walks the route for you, so a fifty-minute walk fits in about three minutes. |
 | **Standing in** | The voice. Your browser reads the script aloud, which is flat and mistimed — the designed narrators are not rendered yet. |
 | **Standing in** | The archive photographs. Drawn, and labelled as such in their own credit line. |
 | **Real, near echoes** | The basemap: built from Overture's open data around every echo area (below). Between areas the map is the plain navy field. |
 
-## Four things in the URL
+## Five things in the URL
 
+- `?simulate` plays a walk or a road trip back on the simulation instead of the phone's
+  position: the demo. Never on by itself (ADR-0018, amended 2026-11-10).
 - `?speed=2` slows the simulation, so the twelve-second capture ring is watchable.
 - `?start=0.4` drops you four-tenths of the way along, to skip to a busier stretch.
 - `?at=<echo id>` or `?at=<lat>,<lng>` stands you there instead of where the phone is, to

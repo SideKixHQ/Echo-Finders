@@ -1080,15 +1080,28 @@ export function RouteMap({
 
   /** What is on screen, for `onInView`: read when the map rests, not every frame. */
   const reportInView = useRef(() => {});
+  /*
+   * Only when what is on screen has changed, not every time the map rests.
+   *
+   * MapLibre fires `moveend` synchronously when a new ease cuts a running one short, and
+   * the follow effect starts an ease on every fix. So an effect eased the camera, the old
+   * ease ended inside that effect, this handed App a brand new (identical) array, App
+   * rendered, and the next effect eased again: a chain of renders inside effects that React
+   * stopped with "Maximum update depth exceeded" (found 2026-11-10, starting a guided walk).
+   * The same set of echoes is the same answer, so it is not sent again.
+   */
+  const lastInView = useRef<string | null>(null);
   reportInView.current = () => {
     if (!onInView) return;
     const bottom = box.h - navH - reservedBottom;
-    onInView(
-      library.filter((e) => {
-        const { x, y } = projection(e.point.at);
-        return x >= 0 && x <= box.w && y >= barH && y <= bottom;
-      }),
-    );
+    const seen = library.filter((e) => {
+      const { x, y } = projection(e.point.at);
+      return x >= 0 && x <= box.w && y >= barH && y <= bottom;
+    });
+    const key = seen.map((e) => e.id).join(",");
+    if (key === lastInView.current) return;
+    lastInView.current = key;
+    onInView(seen);
   };
   useEffect(() => reportInView.current(), [librarySignature, gl, box.w, box.h]);
 
