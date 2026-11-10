@@ -1,0 +1,110 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core, following docs/writing-echoes.md.
+# Listening spot: In Lincoln Park, at the west end of the central plaza, in front of the Emancipation Memorial, looking east toward the Bethune memorial.
+# Position: Overture place 'Abraham Lincoln/Emancipation Monument' at 38.89064, -76.98986, at the west end of Lincoln Park (high confidence).
+id: dc-room-for-another-monument
+title: "Room for Another Monument"
+summary: "Freed people paid for Lincoln Park's Emancipation statue. Frederick Douglass asked for another. Ninety eight years later, it came."
+place: "Emancipation Memorial, Lincoln Park, East Capitol Street, Capitol Hill, Washington, D.C."
+at: { lat: 38.89064, lng: -76.98986 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 111
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.75
+tags: [washington, dc-core, capitol-hill, lincoln-park, emancipation, frederick-douglass, mary-mcleod-bethune, black-history]
+teaser: "There is room in Lincoln park for another monument, Douglass wrote."
+script: |
+  Look at the bronze Lincoln at this end of the park, one hand held out over a kneeling man. Now turn, and look all the way down the park. At the far end, another statue is looking straight back at this one. That is not an accident.
+
+  The morning after Lincoln was killed, a woman named Charlotte Scott gave five dollars toward a monument to him. She had been enslaved in Virginia. It was the first money she had ever earned as a free woman. Black Americans gave the rest, many of them as newly free as she was. But they did not choose the design. A committee of white abolitionists did.
+
+  In April, eighteen seventy six, Frederick Douglass stood here to dedicate it, before the President, the Cabinet and the justices of the Supreme Court. Five days later, he wrote to a newspaper. The man in the statue, he wrote, though rising, is still on his knees. What I want to see before I die is a monument representing the negro, not couchant on his knees like a four footed animal, but erect on his feet like a man. There is room in Lincoln park for another monument.
+
+  He did not live to see it.
+
+  In nineteen seventy four, the National Council of Negro Women put up the statue at the far end, of their founder, Mary McLeod Bethune, the daughter of enslaved parents. She was the first African American, and the first American woman, to be given a statue on public land in this city. And the old statue was turned around, to face her.
+
+  Look down the park at her.
+
+  She is on her feet.
+pronunciations:
+  - written: "Bethune"
+    say: "buh-THOON"
+  - written: "couchant"
+    say: "KOW-chunt"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the bronze Lincoln at this end of the park, one hand held out over a kneeling man."
+    source: 1
+    quote: "Sculptor Thomas Ball depicted a life-size figure of Abraham Lincoln, extending one hand over a kneeling African American man while holding a copy of the Emancipation Proclamation in the other hand."
+  - says: "At the far end, another statue is looking straight back at this one."
+    source: 2
+    quote: "The sunken plaza was meant to keep the taller Bethune memorial from overpowering the earlier Emancipation Monument, which was turned so it would face towards the Bethune memorial."
+  - says: "The morning after Lincoln was killed, a woman named Charlotte Scott gave five dollars toward a monument to him."
+    source: 1
+    quote: "On the morning after Lincoln's death in 1865, sixty-year old Charlotte Scott, a former Virginia slave living in Ohio, donated five dollars to her employer and asked that it be used toward a monument for the president."
+  - says: "She had been enslaved in Virginia."
+    source: 1
+    quote: "sixty-year old Charlotte Scott, a former Virginia slave living in Ohio"
+  - says: "It was the first money she had ever earned as a free woman."
+    source: 3
+    quote: "Recently emancipated from enslavement, this was her first money earned as a free Black woman."
+  - says: "Black Americans gave the rest, many of them as newly free as she was."
+    source: 3
+    quote: "From here, $20,000 was given by Black Americans, many of who shared Ms. Scott's status as recently freed persons."
+  - says: "But they did not choose the design. A committee of white abolitionists did."
+    source: 3
+    quote: "These white abolitionists searched for a design. There is no evidence anyone outside this group had a say in the design. Black folks paid for it; white folks chose it."
+  - says: "In April, eighteen seventy six, Frederick Douglass stood here to dedicate it, before the President, the Cabinet and the justices of the Supreme Court."
+    source: 3
+    quote: "The statue, called “The Emancipation Group” or “Freedman’s Memorial,” was dedicated April 14, 1876."
+  - says: "In April, eighteen seventy six, Frederick Douglass stood here to dedicate it, before the President, the Cabinet and the justices of the Supreme Court."
+    source: 3
+    quote: "In the crowd sat President Grant and many of his Cabinet. Joining them were Justices from the Supreme Court and members of both houses of Congress."
+  - says: "Five days later, he wrote to a newspaper."
+    source: 3
+    quote: "Five days later, in an April 19, 1876 letter to the National Republican , Douglass revealed more of his thoughts"
+  - says: "The man in the statue, he wrote, though rising, is still on his knees."
+    source: 3
+    quote: "The negro here, though rising, is still on his knees and nude."
+  - says: "What I want to see before I die is a monument representing the negro, not couchant on his knees like a four footed animal, but erect on his feet like a man."
+    source: 3
+    quote: "What I want to see before I die is a monument representing the negro, not couchant on his knees like a four-footed animal, but erect on his feet like a man."
+  - says: "There is room in Lincoln park for another monument."
+    source: 3
+    quote: "There is room in Lincoln park for another monument, and I throw out this suggestion to the end that it may be taken up and acted upon."
+  - says: "He did not live to see it."
+    source: 3
+    quote: "“There is room in Lincoln park for another monument,” Douglass wrote. He did not live to see it."
+  - says: "In nineteen seventy four, the National Council of Negro Women put up the statue at the far end, of their founder, Mary McLeod Bethune, the daughter of enslaved parents."
+    source: 3
+    quote: "In 1974, the National Council of Negro Women, Inc. (NCNW) dedicated “another monument” in the park, this one to Mary McLeod Bethune."
+  - says: "In nineteen seventy four, the National Council of Negro Women put up the statue at the far end, of their founder, Mary McLeod Bethune, the daughter of enslaved parents."
+    source: 2
+    quote: "Mary McLeod Bethune, the daughter of slaves, founded the National Council of Negro Women (NCNW) in 1935"
+  - says: "She was the first African American, and the first American woman, to be given a statue on public land in this city."
+    source: 2
+    quote: "The Mary McLeod Bethune memorial in Lincoln Park was the first memorial to an African American individual built on public land in Washington, D.C., and it was the first portrait statue of an American woman on a public site in the city."
+  - says: "And the old statue was turned around, to face her."
+    source: 2
+    quote: "the earlier Emancipation Monument, which was turned so it would face towards the Bethune memorial."
+sources:
+  - title: "Emancipation Memorial"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/emancipation-memorial.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Lincoln Park Cultural Landscape"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/600072.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Emancipation Statue"
+    publisher: "National Park Service, Capitol Hill Parks"
+    url: https://www.nps.gov/cahi/learn/historyculture/emancipation-statue.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

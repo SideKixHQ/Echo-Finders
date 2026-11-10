@@ -1,0 +1,122 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core, following docs/writing-echoes.md.
+# Listening spot: On the plaza around the base of the Washington Monument, looking up at the shaft.
+# Position: Overture place 'Washington Monument' (2 15th St NW) at 38.88947, -77.03525; set on the plaza just south east of the base (high confidence).
+id: dc-the-stone-from-concord
+title: "The Stone From the Temple of Concord"
+summary: "In 1854 men tied up the night watchman and stole the Pope's gift stone for the Washington Monument. It has never been found."
+place: "Washington Monument grounds, National Mall, Washington, D.C."
+at: { lat: 38.88935, lng: -77.03510 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, national-mall, washington-monument, know-nothings, mystery]
+teaser: "They tied the watchman's hut shut with a clothesline."
+script: |
+  Look up at the monument. Built into its walls, inside, are stones sent from all over the world, by tribes, societies, towns and foreign countries. One of them never made it in.
+
+  In the early eighteen fifties, Pope Pius the Ninth sent a block of marble. It came from the ruins of the Temple of Concord, in the Forum in Rome. Not everyone was pleased. Petitions came in, protesting against any stone from the Pope.
+
+  One night in March, eighteen fifty four, between one and two in the morning, a group of men came onto these grounds. They passed a clothesline around the night watchman's hut, and piled stones against his door. They told him that if he kept quiet, he would not be hurt. They pasted newspaper over his windows, so he could not see. Then they wheeled the Pope's stone away on a hand cart. The watchman had a loaded shotgun with him. He told nobody until four. He was suspended.
+
+  The thieves were believed to be Know Nothings, a party against Catholics and immigrants. The next year, they took over the society that was building the monument. Congress took back its money, and for more than twenty years the monument was a stump.
+
+  And the stone? Nobody ever found out for certain. It may have been smashed on the river bank. It may be at the bottom of the Potomac.
+
+  Look up at the monument again. The missing stone came from the Temple of Concord.
+
+  Concord means agreement.
+detail: >-
+  Accounts differ in detail. Harvey (1903) quotes a newspaper of the day placing the theft early on a Monday morning; the Society's reward notice dates it to the night of the 5th of March 1854. The National Park Service says the stone was supposedly thrown into the Potomac; Harvey says its fate was never known for certain.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Built into its walls, inside, are stones sent from all over the world, by tribes, societies, towns and foreign countries."
+    source: 1
+    quote: "American Indian tribes, professional organizations, societies, businesses, and foreign nations donated stones that were four feet long, two feet high, and 12 to 18 inches thick."
+  - says: "One of them never made it in."
+    source: 2
+    quote: "stole and destroyed a block of marble contributed to said Monument"
+  - says: "In the early eighteen fifties, Pope Pius the Ninth sent a block of marble."
+    source: 1
+    quote: "In the early 1850s, Pope Puis IX contributed a block of marble."
+  - says: "It came from the ruins of the Temple of Concord, in the Forum in Rome."
+    source: 3
+    quote: "Pope Pius IX sent a stone from the ruins of the Temple of Concord in the Forum in Rome,"
+  - says: "Not everyone was pleased. Petitions came in, protesting against any stone from the Pope."
+    source: 2
+    quote: "do therefore most earnestly protest against the placing of said stone within the Monument"
+  - says: "Not everyone was pleased. Petitions came in, protesting against any stone from the Pope."
+    source: 2
+    quote: "the Society had received many protesting letters and, in some instances, long petitions from various parts of the country"
+  - says: "One night in March, eighteen fifty four, between one and two in the morning, a group of men came onto these grounds."
+    source: 1
+    quote: "In March 1854, members of the anti-Catholic, anti-immigrant American Party"
+  - says: "One night in March, eighteen fifty four, between one and two in the morning, a group of men came onto these grounds."
+    source: 2
+    quote: "between one and two o'clock, by several persons (number not known, but supposed to be from four to ten)"
+  - says: "They passed a clothesline around the night watchman's hut, and piled stones against his door."
+    source: 2
+    quote: "passed a cord, such as is used for clothes lines, around the box, and piled stones against the door"
+  - says: "They told him that if he kept quiet, he would not be hurt."
+    source: 2
+    quote: "calling to the man within that if he kept quiet he would not be injured"
+  - says: "They pasted newspaper over his windows, so he could not see."
+    source: 2
+    quote: "they pasted pieces of newspapers on the two or three window openings that commanded the particular shed containing the fated block"
+  - says: "Then they wheeled the Pope's stone away on a hand cart."
+    source: 2
+    quote: "carried it off by placing it on a hand cart used about the premises"
+  - says: "The watchman had a loaded shotgun with him."
+    source: 2
+    quote: "barrel shot gun loaded with buck shot"
+  - says: "He told nobody until four."
+    source: 2
+    quote: "he gave no notice of it to the family residing at the Monument until four."
+  - says: "He was suspended."
+    source: 2
+    quote: "For these and other similar reasons he has been suspended."
+  - says: "The thieves were believed to be Know Nothings, a party against Catholics and immigrants."
+    source: 1
+    quote: "members of the anti-Catholic, anti-immigrant American Party--better known as the \"Know-Nothings\"--stole the Pope's stone as a protest"
+  - says: "The next year, they took over the society that was building the monument."
+    source: 3
+    quote: "then staged a coup, taking over the society charged with building the monument, in 1855."
+  - says: "Congress took back its money, and for more than twenty years the monument was a stump."
+    source: 1
+    quote: "Congress immediately rescinded its $200,000 contribution."
+  - says: "Congress took back its money, and for more than twenty years the monument was a stump."
+    source: 3
+    quote: "For more than twenty years the obelisk was a stump."
+  - says: "Nobody ever found out for certain."
+    source: 2
+    quote: "It has never been certainly known what the precise fate of the stone was"
+  - says: "It may have been smashed on the river bank. It may be at the bottom of the Potomac."
+    source: 2
+    quote: "where they enjoyed a favorable opportunity of breaking it up undiscovered or boating it off into the river"
+  - says: "It may have been smashed on the river bank. It may be at the bottom of the Potomac."
+    source: 1
+    quote: "stole the Pope's stone as a protest and supposedly threw it into the Potomac."
+  - says: "The missing stone came from the Temple of Concord."
+    source: 3
+    quote: "Pope Pius IX sent a stone from the ruins of the Temple of Concord in the Forum in Rome,"
+sources:
+  - title: "The Washington Monument: Tribute in Stone (Teaching with Historic Places)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/the-washington-monument-tribute-in-stone-teaching-with-historic-places.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "History of the Washington National Monument and of the Washington National Monument Society (Frederick L. Harvey, 1903)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historywashingt00harvgoog
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Washington Monument: Honoring \"an idea as much as a man\""
+    publisher: "CBS News, Sunday Morning"
+    url: https://www.cbsnews.com/news/the-washington-monument-honoring-an-idea-as-much-as-a-man/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

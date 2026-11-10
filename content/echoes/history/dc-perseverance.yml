@@ -1,0 +1,102 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core, following docs/writing-echoes.md.
+# Listening spot: On the Thomas Jefferson Street NW bridge over the C&O Canal in Georgetown, or the towpath beside it, looking down at the water.
+# Position: Estimated where Thomas Jefferson Street crosses the canal, between the Overture 'Chesapeake and Ohio Canal Historical Park' point (38.90417, -77.05954) and the Old Stone House (medium confidence).
+id: dc-perseverance
+title: "Perseverance"
+summary: "President John Quincy Adams struck a tree stump breaking ground for this canal. The railroad started the same day, and won."
+place: "Chesapeake and Ohio Canal at Thomas Jefferson Street NW, Georgetown, Washington, D.C."
+at: { lat: 38.90420, lng: -77.06010 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, georgetown, c-and-o-canal, john-quincy-adams, railroads]
+teaser: "The President hit a tree stump, and took off his coat."
+script: |
+  Look down into the canal, at the still water between its stone walls. This ditch was meant to reach all the way to the Ohio River. It never got there.
+
+  On the fourth of July, eighteen twenty eight, President John Quincy Adams went up the river to dig the first spadeful. Perhaps two thousand people were watching. He pushed in the spade, and it hit the stump of a tree. He tried three or four times. Nothing. So the President of the United States threw off his coat, and dug again, and the crowd roared. He wrote in his diary that the coat struck the crowd more than all the flowers of rhetoric in his speech. When they asked him for a toast, he gave one word. Perseverance.
+
+  But on that very same day, in Baltimore, work began on a railroad.
+
+  The canal took twenty two years to reach Cumberland, in the mountains of Maryland, and it stopped there. Families lived on the boats, and children drove the mules along the towpath. But bit by bit, the coal went to the railroad. After a flood in eighteen eighty nine, the railroad bought up most of the canal's debts. After another, in nineteen twenty four, the boats stopped for good. And in nineteen thirty eight, the railroad sold the whole canal to the government, for two million dollars.
+
+  Look at the water again. Perseverance, he said.
+
+  The water is still here.
+detail: >-
+  Adams broke ground at Little Falls, Maryland, a few miles upstream, not at this spot; the canal runs from here in Georgetown to Cumberland, Maryland, 184.5 miles.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "This ditch was meant to reach all the way to the Ohio River."
+    source: 1
+    quote: "The C&O was intended, as its name suggests, to connect the Chesapeake Bay to the Ohio River, but it never made it that far."
+  - says: "On the fourth of July, eighteen twenty eight, President John Quincy Adams went up the river to dig the first spadeful."
+    source: 1
+    quote: "On July 4, 1828, President John Quincy Adams turned over a spadeful of dirt during ceremonies at Little Falls, Maryland, and therefore began construction of the Chesapeake and Ohio Canal."
+  - says: "Perhaps two thousand people were watching."
+    source: 2
+    quote: "addressing the surrounding auditory, consisting perhaps of two thousand persons."
+  - says: "He pushed in the spade, and it hit the stump of a tree."
+    source: 2
+    quote: "at the first stroke of the spade it met immediately under the surface a large stump of a tree"
+  - says: "He tried three or four times. Nothing."
+    source: 2
+    quote: "after repeating the stroke three or four times without making any impression"
+  - says: "So the President of the United States threw off his coat, and dug again, and the crowd roared."
+    source: 2
+    quote: "I threw off my coat, and, resuming the spade, raised a shovelful of the earth, at which a general shout burst forth from the surrounding multitude"
+  - says: "He wrote in his diary that the coat struck the crowd more than all the flowers of rhetoric in his speech."
+    source: 2
+    quote: "It struck the eye and fancy of the spectators more than all the flowers of rhetoric in my speech"
+  - says: "When they asked him for a toast, he gave one word. Perseverance."
+    source: 2
+    quote: "I was asked for a toast, and gave, \"The Chesapeake and Ohio Canal: perseverance.\""
+  - says: "But on that very same day, in Baltimore, work began on a railroad."
+    source: 1
+    quote: "events that day would affect the C&O in another way, because it was also on the 4th that work began on the Baltimore and Ohio Railroad (B&O)."
+  - says: "The canal took twenty two years to reach Cumberland, in the mountains of Maryland, and it stopped there."
+    source: 1
+    quote: "The canal was finally completed in 1850 at a total cost of $11 million, the original plan to extend the waterway over the Allegheny Mountains having long since been abandoned."
+  - says: "The canal took twenty two years to reach Cumberland, in the mountains of Maryland, and it stopped there."
+    source: 1
+    quote: "and finally to Cumberland in 1850."
+  - says: "Families lived on the boats, and children drove the mules along the towpath."
+    source: 3
+    quote: "Traditionally, the father was the captain, the mother cooked and cleaned, and the children tended the mules"
+  - says: "But bit by bit, the coal went to the railroad."
+    source: 1
+    quote: "Coal traffic then began to decline, however, as mining companies shifted more of their business to the B&O Railroad."
+  - says: "After a flood in eighteen eighty nine, the railroad bought up most of the canal's debts."
+    source: 1
+    quote: "In 1889 another serious flood forced the canal company into receivership, at which point the B&O Railroad bought up the majority of C&O's bonds."
+  - says: "After another, in nineteen twenty four, the boats stopped for good."
+    source: 1
+    quote: "The railroad had captured almost all of the canal's trade by 1924 when another devastating flood struck. This time no repairs to the canal were made, and its operation as a trade route came to an end."
+  - says: "And in nineteen thirty eight, the railroad sold the whole canal to the government, for two million dollars."
+    source: 1
+    quote: "In 1938 the railroad sold the entire canal to the U.S. Government for $2 million"
+  - says: "Perseverance, he said."
+    source: 2
+    quote: "\"The Chesapeake and Ohio Canal: perseverance.\""
+sources:
+  - title: "Canal Construction"
+    publisher: "National Park Service, Chesapeake and Ohio Canal National Historical Park"
+    url: https://www.nps.gov/choh/learn/historyculture/canalconstruction.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Memoirs of John Quincy Adams, volume 8 (1876), diary for 4 July 1828"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/memoirsofjohnquis08adam
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Chesapeake and Ohio Canal National Historical Park (travel itinerary)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/cocanal.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

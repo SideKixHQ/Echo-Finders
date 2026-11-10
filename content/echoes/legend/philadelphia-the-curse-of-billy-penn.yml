@@ -1,0 +1,112 @@
+# Drafted by Claude Code (2026-11-10) for the Philadelphia core, following docs/writing-echoes.md.
+# Listening spot: On the north side of City Hall by JFK Boulevard, where you can see William Penn on the tower and the tall glass towers to the west.
+# Position: North apron of City Hall, from the Overture 'Philadelphia City Hall' point (39.95241, -75.16364) moved north toward JFK Boulevard (medium confidence).
+id: philadelphia-the-curse-of-billy-penn
+title: "The Curse of Billy Penn"
+summary: "The legend: build higher than William Penn's hat and the city's teams stop winning. In 2007 an ironworker put a tiny Penn back on top."
+place: "City Hall, north apron facing JFK Boulevard, Philadelphia, Pennsylvania"
+at: { lat: 39.95295, lng: -75.16360 }
+triggerRadiusKm: 0.06
+category: legend
+format: short
+durationS: 79
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The curse is a legend, told by fans and tour guides; nothing caused anything. What is on record: a long-observed gentleman's agreement on building height, One Liberty Place passing Penn's hat in 1987, the title drought, the figurine placed on the Comcast Center in 2007 by ironworkers including Dan Ginion, and the Phillies' 2008 World Series. The script says it is a legend.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, city-hall, william-penn, sports, legend, skyline]
+teaser: "Nobody built above his hat for nearly a century."
+script: |
+  Look up at William Penn on top of City Hall. Then look west, at the glass towers that stand higher than his hat. This is a legend. Plenty of people here believe it anyway.
+
+  For nearly a century, there was a gentleman's agreement. Nothing in Philadelphia would rise above Penn's hat. Then, in nineteen eighty seven, a tower called One Liberty Place went past him. And the city's teams stopped winning.
+
+  Year after year, no championships. Some people blamed bad managers and bad draft picks. Others blamed Billy Penn. Fans dressed the statue in team jerseys. It did not help.
+
+  In two thousand seven, a new tower was going up, taller than all the rest. Two ironworkers, Dan Ginion and John Joyce, were given a job. Fix a little William Penn to the highest beam. It was a tiny gift shop copy. The next year, the Phillies won the World Series.
+
+  When an even taller tower went up, in twenty seventeen, the builders raced to get another little Penn on top. Nobody was taking any chances.
+
+  Look up at him again. Dan Ginion, the ironworker, put it best.
+
+  If there was a curse, it's not there anymore.
+pronunciations:
+  - written: "Ginion"
+    say: "GIN-yun"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look up at William Penn on top of City Hall."
+    source: 1
+    quote: "The origins of the curse date to 1894, when a large statue of William Penn was erected atop City Hall."
+  - says: "Then look west, at the glass towers that stand higher than his hat."
+    source: 1
+    quote: "But then, in 1987, a 61-story downtown tower, One Liberty Place, easily eclipsed it."
+  - says: "This is a legend. Plenty of people here believe it anyway."
+    source: 1
+    quote: "Believers in Philly say it was responsible for a 25-year title drought."
+  - says: "For nearly a century, there was a gentleman's agreement. Nothing in Philadelphia would rise above Penn's hat."
+    source: 1
+    quote: "there was a gentleman’s agreement that no building would be erected taller than the top of Penn’s hat. For nearly a century, the agreement was honored."
+  - says: "Then, in nineteen eighty seven, a tower called One Liberty Place went past him."
+    source: 1
+    quote: "But then, in 1987, a 61-story downtown tower, One Liberty Place, easily eclipsed it."
+  - says: "And the city's teams stopped winning."
+    source: 1
+    quote: "But in the years after One Liberty Place opened its doors, the winning stopped."
+  - says: "Year after year, no championships."
+    source: 1
+    quote: "But the championships that had come so easy in previous decades? Those disappeared."
+  - says: "Some people blamed bad managers and bad draft picks."
+    source: 1
+    quote: "“Philadelphia sports teams lost because general managers made bad decisions, ownership led the team in bad ways, bad draft picks were acquired,”"
+  - says: "Others blamed Billy Penn."
+    source: 1
+    quote: "“And then you’d have people who just immediately attributed it to Billy Penn.”"
+  - says: "Fans dressed the statue in team jerseys. It did not help."
+    source: 1
+    quote: "including adorning the Penn statue in the jerseys or hats of the city’s championship-hopeful teams — but none was successful."
+  - says: "In two thousand seven, a new tower was going up, taller than all the rest."
+    source: 1
+    quote: "Local business giant Comcast was nearing completion on a new tower — one that, at 975 feet, would become the tallest building in the city."
+  - says: "Two ironworkers, Dan Ginion and John Joyce, were given a job."
+    source: 1
+    quote: "Ginion and another ironworker on the project, John Joyce, were conscripted to affix a replica of the City Hall statue to the building’s highest beam."
+  - says: "Fix a little William Penn to the highest beam."
+    source: 1
+    quote: "were conscripted to affix a replica of the City Hall statue to the building’s highest beam."
+  - says: "It was a tiny gift shop copy."
+    source: 1
+    quote: "the replica was a tiny gift-shop version of the original."
+  - says: "The next year, the Phillies won the World Series."
+    source: 2
+    quote: "In 2007, the situation was rectified with a statuette placed atop a taller skyscraper. The next year, the Phillies won the World Series."
+  - says: "When an even taller tower went up, in twenty seventeen, the builders raced to get another little Penn on top."
+    source: 2
+    quote: "Philly.com reports the William Penn figurine was affixed to the Comcast tower's highest beam Monday after builders decided waiting for a topping-off ceremony was too risky."
+  - says: "When an even taller tower went up, in twenty seventeen, the builders raced to get another little Penn on top."
+    source: 2
+    quote: "(© Copyright 2017 The Associated Press."
+  - says: "Nobody was taking any chances."
+    source: 2
+    quote: "after builders decided waiting for a topping-off ceremony was too risky."
+  - says: "Dan Ginion, the ironworker, put it best."
+    source: 1
+    quote: "said Ginion, sitting in his Northeast Philadelphia living room one recent evening"
+  - says: "If there was a curse, it's not there anymore."
+    source: 1
+    quote: "“If there was a curse,” said Ginion, sitting in his Northeast Philadelphia living room one recent evening, “it’s not there anymore.”"
+sources:
+  - title: "How an ironworker put Philly's 25-year sports curse to rest"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/metro/2018/01/30/how-ironworker-put-philly-year-sports-curse-rest/3W7qidLuOXB57EwxC6i5jK/story.html
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Builders Race To Save Football's Eagles From Billy Penn Jinx (Associated Press, 2017)"
+    publisher: "CBS Pittsburgh"
+    url: https://www.cbsnews.com/pittsburgh/news/philadelphia-billy-penn-jinx/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

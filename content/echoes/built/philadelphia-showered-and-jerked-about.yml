@@ -1,0 +1,125 @@
+# Drafted by Claude Code (2026-11-10) for the Philadelphia core, following docs/writing-echoes.md.
+# Listening spot: On the terrace of the Fairmount Water Works beside the Schuylkill River, looking at the temple fronts and the dam.
+# Position: Overture place 'Fairmount Water Works' (640 Waterworks Dr) at 39.96582, -75.18348 (high confidence).
+id: philadelphia-showered-and-jerked-about
+title: "Showered and Jerked About"
+summary: "The Greek temples by the Schuylkill dam were a waterworks Dickens admired in 1842. Later they were filled with fish."
+place: "Fairmount Water Works, 640 Waterworks Drive, below the Art Museum, Philadelphia, Pennsylvania"
+at: { lat: 39.96582, lng: -75.18348 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 104
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, fairmount, water-works, charles-dickens, aquarium]
+teaser: "Charles Dickens was impressed by Philadelphia's water."
+script: |
+  Look at the little white temples along the river, with their columns, below the hill. They look like they belong in ancient Greece. They were built to pump water.
+
+  The city's first water system pumped from a building where City Hall stands now, and it was hopeless. The reservoirs held half an hour's supply. So in eighteen fifteen they started again, out here, under the hill called Faire Mount.
+
+  In eighteen forty two, Charles Dickens came to Philadelphia, and saw it. He was delighted. Philadelphia, he wrote, is most bountifully provided with fresh water, which is showered and jerked about, and turned on, and poured off everywhere. He saw the river held back by the dam, and forced by its own power up into great tanks on the hill. From there, it ran to the top stories of the houses, for next to nothing. And the works were laid out as a public garden, he said, no less ornamental than useful.
+
+  But the water was not clean. Typhoid kept breaking out, until the city filtered its water, early in the nineteen hundreds. The old works by the river were abandoned.
+
+  And then, in nineteen eleven, the mayor had an idea. Fill them with fish. The old waterworks became an aquarium. More than forty thousand people came in its first full year. A guidebook of nineteen thirty seven described balloon fish floating belly up, and crabs trying to climb out of their tanks.
+
+  Look at the temples again. They were built to send water out.
+
+  For a while, they kept it in.
+pronunciations:
+  - written: "Schuylkill"
+    say: "SKOO-kul"
+  - written: "Reyburn"
+    say: "RAY-burn"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the little white temples along the river, with their columns, below the hill."
+    source: 1
+    quote: "The other buildings in the group follow classic Greek temple lines, with wooden Doric columns, and rise in majestic simplicity against tree-fringed Old Faire Mount"
+  - says: "They look like they belong in ancient Greece."
+    source: 1
+    quote: "The other buildings in the group follow classic Greek temple lines"
+  - says: "They were built to pump water."
+    source: 1
+    quote: "In 1818 the first pumps were installed in the section then known as \"Faire Mount\" along the Schuylkill, north of Market Street."
+  - says: "The city's first water system pumped from a building where City Hall stands now, and it was hopeless."
+    source: 1
+    quote: "a central enginehouse built on the spot where City Hall now stands."
+  - says: "The city's first water system pumped from a building where City Hall stands now, and it was hopeless."
+    source: 1
+    quote: "The system was woefully inadequate."
+  - says: "The reservoirs held half an hour's supply."
+    source: 1
+    quote: "The reservoirs at Broad and Market Streets stored only a half hour's supply, and repairs were needed continually."
+  - says: "So in eighteen fifteen they started again, out here, under the hill called Faire Mount."
+    source: 1
+    quote: "The service was abandoned in 1815 when a new waterworks was constructed at Fairmount."
+  - says: "In eighteen forty two, Charles Dickens came to Philadelphia, and saw it."
+    source: 2
+    quote: "After an 1842 visit to Eastern State, Charles Dickens"
+  - says: "In eighteen forty two, Charles Dickens came to Philadelphia, and saw it."
+    source: 3
+    quote: "The Water-works, which are on a height near the city, are no less ornamental than useful"
+  - says: "Philadelphia, he wrote, is most bountifully provided with fresh water, which is showered and jerked about, and turned on, and poured off everywhere."
+    source: 3
+    quote: "Philadelphia is most bountifully provided with fresh water, which is showered and jerked about, and turned on, and poured off everywhere."
+  - says: "He saw the river held back by the dam, and forced by its own power up into great tanks on the hill."
+    source: 3
+    quote: "The river is dammed at this point, and forced by its own power into certain high tanks or reservoirs"
+  - says: "From there, it ran to the top stories of the houses, for next to nothing."
+    source: 3
+    quote: "whence the whole city, to the top stories of the houses, is supplied at a very trifling expense."
+  - says: "And the works were laid out as a public garden, he said, no less ornamental than useful."
+    source: 3
+    quote: "are no less ornamental than useful, being tastefully laid out as a public garden"
+  - says: "But the water was not clean."
+    source: 1
+    quote: "Purification of the water was still inadequate, however."
+  - says: "Typhoid kept breaking out, until the city filtered its water, early in the nineteen hundreds."
+    source: 1
+    quote: "of typhoid fever broke out frequently."
+  - says: "Typhoid kept breaking out, until the city filtered its water, early in the nineteen hundreds."
+    source: 1
+    quote: "By 1909 the entire city was supplied with filtered water, and the ravages of disease were lessened greatly."
+  - says: "The old works by the river were abandoned."
+    source: 1
+    quote: "Proposed by the late Mayor Reyburn as a practical use for the abandoned water purifying and pumping station in the city"
+  - says: "And then, in nineteen eleven, the mayor had an idea."
+    source: 1
+    quote: "Proposed by the late Mayor Reyburn as a practical use for the abandoned water purifying and pumping station in the city"
+  - says: "And then, in nineteen eleven, the mayor had an idea."
+    source: 1
+    quote: "aquarium was founded in 1911."
+  - says: "Fill them with fish."
+    source: 1
+    quote: "aquarium was founded in 1911."
+  - says: "The old waterworks became an aquarium. More than forty thousand people came in its first full year."
+    source: 1
+    quote: "During 1912 the number of visitors to the new institution exceeded 40,000."
+  - says: "A guidebook of nineteen thirty seven described balloon fish floating belly up, and crabs trying to climb out of their tanks."
+    source: 1
+    quote: "Inflated balloon fish float belly upward, out of harm's way, on the water's surface"
+  - says: "A guidebook of nineteen thirty seven described balloon fish floating belly up, and crabs trying to climb out of their tanks."
+    source: 1
+    quote: "make futile efforts to scale the rocky sides of their tanks."
+sources:
+  - title: "Philadelphia: A Guide to the Nation's Birthplace (Federal Writers' Project, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/philadelphiaguid00federich
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "History of Eastern State Penitentiary"
+    publisher: "Eastern State Penitentiary Historic Site"
+    url: https://easternstate.org/about/history-of-eastern-state-penitentiary
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "American Notes for General Circulation (Charles Dickens, 1842; 1890 edition)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/americannotes00dickiala
+    retrievedAt: "2026-11-10"
+    rights: public-domain

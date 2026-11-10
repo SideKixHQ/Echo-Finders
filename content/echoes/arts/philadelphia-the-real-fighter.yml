@@ -1,0 +1,123 @@
+# Drafted by Claude Code (2026-11-10) for the Philadelphia core, following docs/writing-echoes.md.
+# Listening spot: At the top of the Art Museum's east steps, beside the Rocky statue, looking back down the steps toward the Parkway and City Hall.
+# Position: Overture places 'Rocky Statue' (39.96517, -75.18040) and 'Rocky Steps' (39.96486, -75.18008); the statue now stands at the top terrace (medium confidence).
+id: philadelphia-the-real-fighter
+title: "The Real Fighter Is at the Bottom"
+summary: "The Rocky statue was called kitsch, removed, and set at the foot of the steps. In 2026 the museum took him in, then put him on top."
+place: "Philadelphia Museum of Art steps, Benjamin Franklin Parkway, Fairmount, Philadelphia, Pennsylvania"
+at: { lat: 39.96515, lng: -75.18030 }
+triggerRadiusKm: 0.06
+category: arts
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, fairmount, art-museum, rocky, film, joe-frazier]
+teaser: "For decades the museum kept its distance from him."
+script: |
+  Look at the bronze boxer at the top of the steps, with his arms up in the air. He never lived. Rocky Balboa is a made up boxer from South Philadelphia. And about four million people a year come to see him.
+
+  For decades, the museum behind him kept its distance.
+
+  Sylvester Stallone had the statue made for a film, Rocky Three, and then gave it to the city. It was put up here, at the top of the steps. Then some of the city's art commissioners said it was not art. It was kitsch. And it was taken away. In two thousand six it came back, but only to the bottom of the steps. It stood down there for twenty years, while millions of people queued to take its picture.
+
+  Then, in the spring of twenty twenty six, the museum changed its mind. It invited Rocky inside, as art. A curator stood him among two thousand years of boxers in paintings and sculpture. When the show closed, a crane lifted him up here, to the top of the steps, where the sculptor had meant him to stand.
+
+  Now look down the steps, to the bottom. Where Rocky used to be, there is a different statue. Joe Frazier. A real boxer, from South Philadelphia.
+
+  The fighter who never lived is at the top.
+
+  The real one is at the bottom.
+detail: >-
+  The Rocky statue was moved to the top of the steps in 2026 after the exhibition 'Rising Up: Rocky and the Making of Monuments' (April to August 2026).
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the bronze boxer at the top of the steps, with his arms up in the air."
+    source: 1
+    quote: "The bronze figure of Rocky Balboa — arms raised in victory, clad in boxing trunks and boots"
+  - says: "Rocky Balboa is a made up boxer from South Philadelphia."
+    source: 1
+    quote: "for a statue of a fictional boxer from South Philadelphia."
+  - says: "And about four million people a year come to see him."
+    source: 2
+    quote: "Rocky attracts about 4 million visitors each year"
+  - says: "For decades, the museum behind him kept its distance."
+    source: 1
+    quote: "For decades, the museum kept an uncomfortable distance from this kind of devotion."
+  - says: "Sylvester Stallone had the statue made for a film, Rocky Three, and then gave it to the city."
+    source: 3
+    quote: "The Rocky statue made its debut on the silver screen, commissioned by Stallone, for \"Rocky III.\" He later donated it to the city."
+  - says: "It was put up here, at the top of the steps."
+    source: 4
+    quote: "The top of the steps is where the artist intended it to stand, where it was first unveiled and where the Rocky story lives for many people,"
+  - says: "Then some of the city's art commissioners said it was not art. It was kitsch."
+    source: 5
+    quote: "The statue was removed after some art commissioners complained it was kitsch, not art."
+  - says: "And it was taken away."
+    source: 5
+    quote: "The statue was removed after some art commissioners complained it was kitsch, not art."
+  - says: "In two thousand six it came back, but only to the bottom of the steps."
+    source: 4
+    quote: "The statue had been relocated to the bottom of the steps in 2006."
+  - says: "It stood down there for twenty years, while millions of people queued to take its picture."
+    source: 3
+    quote: "where it's welcomed about 4 million visitors per year for the past two decades."
+  - says: "Then, in the spring of twenty twenty six, the museum changed its mind."
+    source: 1
+    quote: "April 25, 2026"
+  - says: "Then, in the spring of twenty twenty six, the museum changed its mind."
+    source: 1
+    quote: "Now, it is embracing it"
+  - says: "It invited Rocky inside, as art."
+    source: 1
+    quote: "Now, it is embracing it — and inviting Rocky in."
+  - says: "A curator stood him among two thousand years of boxers in paintings and sculpture."
+    source: 1
+    quote: "The exhibition spans more than 2,000 years of boxing imagery"
+  - says: "When the show closed, a crane lifted him up here, to the top of the steps, where the sculptor had meant him to stand."
+    source: 2
+    quote: "A crane lifted the statue into place as visitors gathered to watch the reveal."
+  - says: "When the show closed, a crane lifted him up here, to the top of the steps, where the sculptor had meant him to stand."
+    source: 4
+    quote: "The top of the steps is where the artist intended it to stand"
+  - says: "Where Rocky used to be, there is a different statue."
+    source: 2
+    quote: "Rocky previously stood at the base of the Art Museum steps, but that spot now belongs to Philadelphia boxing legend Joe Frazier ."
+  - says: "Joe Frazier. A real boxer, from South Philadelphia."
+    source: 2
+    quote: "Frazier's statue stood outside Stateside Live in South Philadelphia for 11 years before being moved to the Art Museum to give it greater visibility."
+  - says: "The fighter who never lived is at the top."
+    source: 2
+    quote: "Philadelphia's iconic Rocky statue has a new home at the top of the Art Museum steps."
+  - says: "The real one is at the bottom."
+    source: 2
+    quote: "that spot now belongs to Philadelphia boxing legend Joe Frazier"
+sources:
+  - title: "Philadelphia museum brings Rocky statue inside after decades of tension (Associated Press, April 2026)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/news/us-news/philadelphia-museum-brings-rocky-statue-decades-tension-rcna342053
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Rocky statue makes final move to top of Philadelphia Museum of Art steps"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/rocky-statue-philadelphia-art-museum-steps-final-move/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Philadelphia to keep original Rocky statue outside Art Museum after Sylvester Stallone has a change of heart"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/philadelphia-rocky-statues-stallone-art-museum/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Iconic Rocky statue gets permanent new home atop Philadelphia Art Museum steps"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/rocky-statue-philadelphia-art-museum-steps/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Rocky Returns to Place of Honor"
+    publisher: "NPR, Morning Edition"
+    url: https://www.npr.org/2006/09/07/5780609/rocky-returns-to-place-of-honor
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

@@ -5954,7 +5954,89 @@ export const LIBRARY: readonly Echo[] = [
       "national-mall",
       "smithsonian"
     ],
-    "remoteness": 0.71
+    "remoteness": 0.42
+  },
+  {
+    "id": "dc-bring-him-in-here",
+    "title": "Bring Him In Here",
+    "summary": "Lincoln died in a borrowed bed in this boarding house because a lodger on the front steps called out four words.",
+    "point": {
+      "at": {
+        "lat": 38.89668,
+        "lng": -77.02636
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Petersen House, 516 10th Street NW, opposite Ford's Theatre, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 108,
+    "minAge": 8,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the narrow brick house across the street from Ford's Theatre, with the steps up to its front door. The President of the United States died in there, in a small back bedroom of a boarding house. Why here?\n\nOn the night of the fourteenth of April, eighteen sixty five, a young War Department clerk named Henry Safford was renting a room in this house. He was getting ready for bed when he heard a commotion in the street. He walked out onto those front steps, and saw a crowd. In the middle of it, soldiers were struggling to carry Abraham Lincoln. Safford waved, and called out. Bring him in here!\n\nThey carried him through that door, to a little bedroom at the back. The bed was too short for him. They had to lay him across it, corner to corner. The Navy Secretary, Gideon Welles, was in that room all night. He wrote, the giant sufferer lay extended diagonally across the bed, which was not long enough for him. The room was small and overcrowded.\n\nFor nine hours, the President clung to life. At twenty two minutes past seven in the morning, he died. A silence fell. The Secretary of War, Edwin Stanton, broke it. Now he belongs to the ages.\n\nLook at the house again. Afterwards, souvenir hunters stripped off its wallpaper and its carpets. The Petersen family's boarding house never recovered. In eighteen ninety six, the government bought it. It was the first time the country had ever bought a house to save it.\n\nAll because of four words from a lodger on those steps.\n",
+    "teaser": "A young clerk was getting ready for bed when he heard the crowd.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "penn-quarter",
+      "lincoln",
+      "civil-war",
+      "fords-theatre"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-bring-him-in-here",
+        "durationS": 108
+      }
+    ]
+  },
+  {
+    "id": "dc-my-home-nonetheless",
+    "title": "My Home, Nonetheless",
+    "summary": "Eastern Market had not shut its doors since 1873. Then one night in 2007 a neighbour watched it burn.",
+    "point": {
+      "at": {
+        "lat": 38.8866,
+        "lng": -76.99672
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Eastern Market, 225 7th Street SE, Capitol Hill, Washington, D.C."
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 92,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the long brick market hall, with its tall arched windows and the round ones high up. From the day it opened, in eighteen seventy three, it never shut its doors. Not once.\n\nUntil a Monday morning in the spring of two thousand seven. A fire started in a trash bin behind the building. It took a hundred and sixty firefighters two hours to put it out. The southern half of the hall was destroyed.\n\nBonny Wolf lived one block away. She stood out in the dark with her neighbours, and watched the flames come through the roof. Then she wrote this. Last night I watched my house burn. Not the house where I live, but my home, nonetheless.\n\nHer son had grown up working for the farmers who came to the market on weekends. He rang her from New York, his voice shaking. People at work think it's so strange that I care about this, he said. But Mom, I grew up at the market.\n\nIt was the last of this city's old public markets still working. Two years later, it opened again, and hundreds cheered when the mayor cut the ribbon. Bonny went back. At one counter she asked what she owed, and the man told her it was fine. We'll rip you off the next time you're in here.\n\nThere was going to be a next time.\n",
+    "teaser": "Last night I watched my house burn. Not the house where I live.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "capitol-hill",
+      "eastern-market",
+      "food",
+      "fire"
+    ],
+    "remoteness": 0.43,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-my-home-nonetheless",
+        "durationS": 92
+      }
+    ]
   },
   {
     "id": "dc-nineteen-in-the-stone",
@@ -5995,7 +6077,7 @@ export const LIBRARY: readonly Echo[] = [
       "memorials",
       "korea"
     ],
-    "remoteness": 0.74
+    "remoteness": 0
   },
   {
     "id": "dc-no-props-no-serpents",
@@ -6038,6 +6120,48 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "dc-perseverance",
+    "title": "Perseverance",
+    "summary": "President John Quincy Adams struck a tree stump breaking ground for this canal. The railroad started the same day, and won.",
+    "point": {
+      "at": {
+        "lat": 38.9042,
+        "lng": -77.0601
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Chesapeake and Ohio Canal at Thomas Jefferson Street NW, Georgetown, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down into the canal, at the still water between its stone walls. This ditch was meant to reach all the way to the Ohio River. It never got there.\n\nOn the fourth of July, eighteen twenty eight, President John Quincy Adams went up the river to dig the first spadeful. Perhaps two thousand people were watching. He pushed in the spade, and it hit the stump of a tree. He tried three or four times. Nothing. So the President of the United States threw off his coat, and dug again, and the crowd roared. He wrote in his diary that the coat struck the crowd more than all the flowers of rhetoric in his speech. When they asked him for a toast, he gave one word. Perseverance.\n\nBut on that very same day, in Baltimore, work began on a railroad.\n\nThe canal took twenty two years to reach Cumberland, in the mountains of Maryland, and it stopped there. Families lived on the boats, and children drove the mules along the towpath. But bit by bit, the coal went to the railroad. After a flood in eighteen eighty nine, the railroad bought up most of the canal's debts. After another, in nineteen twenty four, the boats stopped for good. And in nineteen thirty eight, the railroad sold the whole canal to the government, for two million dollars.\n\nLook at the water again. Perseverance, he said.\n\nThe water is still here.\n",
+    "teaser": "The President hit a tree stump, and took off his coat.",
+    "detail": "Adams broke ground at Little Falls, Maryland, a few miles upstream, not at this spot; the canal runs from here in Georgetown to Cumberland, Maryland, 184.5 miles.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "georgetown",
+      "c-and-o-canal",
+      "john-quincy-adams",
+      "railroads"
+    ],
+    "remoteness": 0.9,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-perseverance",
+        "durationS": 96
+      }
+    ]
+  },
+  {
     "id": "dc-priced-by-size",
     "title": "Priced by Size",
     "summary": "After the British burned Congress's library, it bought Thomas Jefferson's instead, and worked out the price from the size of the books.",
@@ -6077,6 +6201,110 @@ export const LIBRARY: readonly Echo[] = [
       "war-of-1812"
     ],
     "remoteness": 0.11
+  },
+  {
+    "id": "dc-room-for-another-monument",
+    "title": "Room for Another Monument",
+    "summary": "Freed people paid for Lincoln Park's Emancipation statue. Frederick Douglass asked for another. Ninety eight years later, it came.",
+    "point": {
+      "at": {
+        "lat": 38.89064,
+        "lng": -76.98986
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Emancipation Memorial, Lincoln Park, East Capitol Street, Capitol Hill, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 111,
+    "minAge": 8,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the bronze Lincoln at this end of the park, one hand held out over a kneeling man. Now turn, and look all the way down the park. At the far end, another statue is looking straight back at this one. That is not an accident.\n\nThe morning after Lincoln was killed, a woman named Charlotte Scott gave five dollars toward a monument to him. She had been enslaved in Virginia. It was the first money she had ever earned as a free woman. Black Americans gave the rest, many of them as newly free as she was. But they did not choose the design. A committee of white abolitionists did.\n\nIn April, eighteen seventy six, Frederick Douglass stood here to dedicate it, before the President, the Cabinet and the justices of the Supreme Court. Five days later, he wrote to a newspaper. The man in the statue, he wrote, though rising, is still on his knees. What I want to see before I die is a monument representing the negro, not couchant on his knees like a four footed animal, but erect on his feet like a man. There is room in Lincoln park for another monument.\n\nHe did not live to see it.\n\nIn nineteen seventy four, the National Council of Negro Women put up the statue at the far end, of their founder, Mary McLeod Bethune, the daughter of enslaved parents. She was the first African American, and the first American woman, to be given a statue on public land in this city. And the old statue was turned around, to face her.\n\nLook down the park at her.\n\nShe is on her feet.\n",
+    "teaser": "There is room in Lincoln park for another monument, Douglass wrote.",
+    "pronunciations": [
+      {
+        "written": "Bethune",
+        "say": "buh-THOON"
+      },
+      {
+        "written": "couchant",
+        "say": "KOW-chunt"
+      }
+    ],
+    "tags": [
+      "washington",
+      "dc-core",
+      "capitol-hill",
+      "lincoln-park",
+      "emancipation",
+      "frederick-douglass",
+      "mary-mcleod-bethune",
+      "black-history"
+    ],
+    "remoteness": 0.67,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-room-for-another-monument",
+        "durationS": 111
+      }
+    ]
+  },
+  {
+    "id": "dc-saved-by-a-mistake",
+    "title": "Saved by a Mistake",
+    "summary": "Georgetown's Old Stone House survived for two centuries as George Washington's headquarters. It never was.",
+    "point": {
+      "at": {
+        "lat": 38.9053,
+        "lng": -77.06034
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old Stone House, 3051 M Street NW, Georgetown, Washington, D.C."
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 104,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the little stone house on M Street, squeezed in among the shops. It is the oldest building in Washington still standing on its first foundation. And it survived because of a mistake.\n\nIt went up in seventeen sixty five, when this was a tobacco port in the colony of Maryland. Christopher Layman, who bought the lot, died that year, and his widow Rachael kept on building.\n\nDown by the river, a few blocks away, stood a tavern called the Fountain Inn, run by a man named John Suter. In seventeen ninety one, George Washington and the planner Pierre L'Enfant stayed there, while they worked out the new capital city. John Suter had a son, also called John. And the son rented the front room of this house, and made clocks in it.\n\nTwo Johns. Two buildings. As the years went by, people mixed them up. The real tavern grew dirty and run down. And signs went up on this house, calling it George Washington's headquarters. Nobody wanted to knock down the place where Washington had worked.\n\nIn nineteen fifty three, the government bought it, because local people believed it mattered. Then a Park Service historian named Cornelius Heine went through the records, and found the story was a myth. Archaeologists dug under the floor. It had never even been a tavern.\n\nLook at the house again. Inside, there is a tall clock made by John Suter Junior, which may have been built in that front room.\n\nWashington never worked here.\n\nThat is why it is still standing.\n",
+    "teaser": "Two men called John Suter, and a house nobody dared knock down.",
+    "pronunciations": [
+      {
+        "written": "L'Enfant",
+        "say": "lon-FONT"
+      },
+      {
+        "written": "Heine",
+        "say": "HY-nuh"
+      }
+    ],
+    "tags": [
+      "washington",
+      "dc-core",
+      "georgetown",
+      "old-stone-house",
+      "george-washington",
+      "myth-and-memory"
+    ],
+    "remoteness": 0.95,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-saved-by-a-mistake",
+        "durationS": 104
+      }
+    ]
   },
   {
     "id": "dc-seventy-six-years-round",
@@ -6129,6 +6357,58 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "dc-somebody-had-to-be-there",
+    "title": "Somebody Had to Be There",
+    "summary": "For decades a peace vigil stood across from the White House. The rule was simple: someone had to be in it, every minute.",
+    "point": {
+      "at": {
+        "lat": 38.89915,
+        "lng": -77.0364
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Lafayette Square, Pennsylvania Avenue NW, opposite the White House, Washington, D.C."
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 8,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand here, at the edge of the park, facing the White House across the avenue. For more than forty years, there was a small shelter on this side, covered in hand painted signs against nuclear weapons. Live by the bomb, one of them said. Die by the bomb.\n\nAnd there was a rule. To stay, it had to be occupied. Every minute. Day and night.\n\nA man named William Thomas started it, in nineteen eighty one. That August, a small woman from Spain named Concepcion Picciotto joined him. People called her Connie. She wore a helmet and a headscarf. From here, she watched presidents come and go. People called her the president's closest neighbour. She said she was here to stop the world from being destroyed. Fellow activists called her a heroine. Plenty of people walking past did not.\n\nOne night in September, two thousand thirteen, the volunteer on the overnight shift walked away, at about one in the morning. By a quarter to two, the Park Police were taking it all down. Connie was seventy seven. I was never going to give up, she said. I can't. By that afternoon, it was back.\n\nShe died in January, two thousand sixteen, at a shelter for homeless women. Volunteers kept the vigil going. In September, two thousand twenty five, after President Donald Trump ordered it removed, the Park Police took it down again.\n\nLook at this spot. Somebody had to be here, every minute.\n\nFor most of those minutes, it was her.\n",
+    "teaser": "The rule was that somebody had to be in it, every minute.",
+    "detail": "Whether anything of the vigil stands here now needs checking on the ground; it was removed in September 2025 and NBC/AP did not report its return. The script states the removal and the President's order neutrally, as reported.",
+    "pronunciations": [
+      {
+        "written": "Picciotto",
+        "say": "pih-CHOT-oh"
+      },
+      {
+        "written": "Concepcion",
+        "say": "kon-sep-see-OHN"
+      }
+    ],
+    "tags": [
+      "washington",
+      "dc-core",
+      "lafayette-square",
+      "white-house",
+      "protest",
+      "concepcion-picciotto"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-somebody-had-to-be-there",
+        "durationS": 100
+      }
+    ]
+  },
+  {
     "id": "dc-somewhere-to-hide",
     "title": "Somewhere to Hide",
     "summary": "The Declaration of Independence spent a century on show, until it was taken down for fading.",
@@ -6166,7 +6446,7 @@ export const LIBRARY: readonly Echo[] = [
       "national-archives",
       "declaration-of-independence"
     ],
-    "remoteness": 0.68
+    "remoteness": 0.27
   },
   {
     "id": "dc-the-ballroom-ward",
@@ -6208,7 +6488,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "whitman"
     ],
-    "remoteness": 0.59
+    "remoteness": 0
   },
   {
     "id": "dc-the-bow-in-the-corridor",
@@ -6331,7 +6611,7 @@ export const LIBRARY: readonly Echo[] = [
       "protest",
       "jefferson-memorial"
     ],
-    "remoteness": 0.94
+    "remoteness": 0.57
   },
   {
     "id": "dc-the-engine-under-the-floor",
@@ -6412,7 +6692,49 @@ export const LIBRARY: readonly Echo[] = [
       "memorials",
       "vietnam"
     ],
-    "remoteness": 0.59
+    "remoteness": 0
+  },
+  {
+    "id": "dc-the-floor-under-the-street",
+    "title": "The Floor Under the Street",
+    "summary": "The Lockkeeper's House was built beside a canal where Constitution Avenue runs. When it was moved, its bottom floor stayed behind.",
+    "point": {
+      "at": {
+        "lat": 38.89182,
+        "lng": -77.03989
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Lockkeeper's House, 17th Street and Constitution Avenue NW, National Mall, Washington, D.C."
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 89,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the little stone house on the corner of Seventeenth Street and Constitution Avenue. Now look at the paving in front of it. There are two outlines there. The house has stood in both of them.\n\nAnd one whole floor of it is still under the road.\n\nIt was built in the eighteen thirties, for the man who worked the lock on a canal. Where Constitution Avenue runs now, there was water. Canal boats came down hundreds of miles of canal, pulled by mules, and their journey ended here. History remembers two lockkeepers by name. John Hilton, and then Thomas Sampson. The lockkeeper collected the tolls, and kept the records of what came into the city. The whole family helped work the lock.\n\nThen the railroads came, and the canal failed. It turned into an open sewer, and was filled in. The house stayed. It became a public toilet, a police station, a holding cell, and a tool shed. When Seventeenth Street came through, the house was in the way. So in nineteen fifteen, they moved it, and left the bottom floor behind. Later it sat boarded up for more than forty years. In twenty seventeen, they jacked it up onto dollies, and rolled it back from the street.\n\nLook down at the outlines again. The house moved twice.\n\nIts cellar never left.\n",
+    "teaser": "The house moved twice. Its cellar never left.",
+    "detail": "Sources differ on dates: the Park Service gives 1837 (or 'finished in 1833') for the house and 1915 for the first move; NPR gives 1916. The script says the eighteen thirties and nineteen fifteen.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "national-mall",
+      "lockkeepers-house",
+      "canal",
+      "constitution-avenue"
+    ],
+    "remoteness": 0.35,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-floor-under-the-street",
+        "durationS": 89
+      }
+    ]
   },
   {
     "id": "dc-the-house-on-h-street",
@@ -6453,7 +6775,7 @@ export const LIBRARY: readonly Echo[] = [
       "lincoln",
       "civil-war"
     ],
-    "remoteness": 0.68
+    "remoteness": 0.17
   },
   {
     "id": "dc-the-house-that-fired-back",
@@ -6541,7 +6863,133 @@ export const LIBRARY: readonly Echo[] = [
       "presidents",
       "railways"
     ],
-    "remoteness": 0.64
+    "remoteness": 0.31
+  },
+  {
+    "id": "dc-the-letter-in-the-ceiling",
+    "title": "The Letter in the Ceiling",
+    "summary": "In 1996 a carpenter checking an empty building found a letter hanging from the ceiling, and Clara Barton's lost office above it.",
+    "point": {
+      "at": {
+        "lat": 38.89582,
+        "lng": -77.02165
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Clara Barton Missing Soldiers Office, 437 7th Street NW, Penn Quarter, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the third floor of this narrow building. For most of a century, nobody knew what was up there.\n\nIn nineteen ninety six, the building was empty, and due to be torn down. A carpenter named Richard Lyons was sent in to make sure nobody was living there. He said he kept hearing a noise in the front room. When he went to look, he felt something touch his shoulder. Then he saw a letter, hanging down through a crack in the ceiling. He found a ladder, and climbed into the attic. Up there were letters, newspapers from the Civil War, old clothes, and a sign. Missing Soldiers Office.\n\nThese had been the rooms of Clara Barton, after the Civil War. Families wrote to her, desperate to know what had become of their sons. There was no official system for finding the missing and the dead. So she made one, up there. Her office answered more than sixty three thousand letters, and found more than twenty two thousand missing men.\n\nWhen Lyons reported what he had found, a supervisor told him, get rid of it. Throw it away. He did not. He spent months researching it, and quietly got word to a historian at the National Park Service. In nineteen ninety seven, the Park Service announced the find, and the building was saved.\n\nLook up at the third floor again. She spent four years finding the missing.\n\nThen her own office went missing, for more than a century.\n",
+    "teaser": "He felt something touch his shoulder. Then he saw the letter.",
+    "detail": "The account of the noise and the touch on the shoulder is Richard Lyons's own, as told to the Associated Press in 2012. The Park Service's figures for Barton's office vary between pages (more than 60,000 letters and 20,000 soldiers found by 1867 on one; over 63,000 and 22,000 by December 1868 on another); the script uses the second.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "penn-quarter",
+      "clara-barton",
+      "civil-war",
+      "rediscovered"
+    ],
+    "remoteness": 0.1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-letter-in-the-ceiling",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "dc-the-letter-that-got-fixed",
+    "title": "The Letter That Got Fixed",
+    "summary": "A children's echo: someone carved a spelling mistake into the Lincoln Memorial, in the word future. Can you find it?",
+    "point": {
+      "at": {
+        "lat": 38.88932,
+        "lng": -77.0502
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Lincoln Memorial, north wall of the chamber, Washington, D.C."
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 74,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the big speech carved on the wall here, on Lincoln's left. It is his second speech as President, cut into the stone. Here is a game. Somewhere in all those words, someone made a spelling mistake.\n\nLook for the word future. It is in a line that says, with high hope for the future. Found it? Now look very closely at the first letter.\n\nAbout a hundred years ago, when these words were being carved, the carver made a mistake. He cut an E, where he meant to cut an F. So the word said euture. And you cannot rub out stone.\n\nSo they filled in part of the E, to turn it back into an F. A park ranger says it was sort of puttied in. People with very sharp eyes say they can still spot the patch. Can you?\n\nThe whole speech is about mending a country after a war. Lincoln said, let us strive on to finish the work we are in, to bind up the nation's wounds.\n\nEven a mistake in stone can be mended.\n\nEven the future got fixed.\n",
+    "teaser": "Somewhere in this wall of words, there is a spelling mistake.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "washington",
+      "dc-core",
+      "national-mall",
+      "lincoln-memorial",
+      "kids",
+      "spelling"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/dc-the-letter-that-got-fixed",
+        "durationS": 74
+      }
+    ]
+  },
+  {
+    "id": "dc-the-lights-stayed-on",
+    "title": "The Lights Stayed On",
+    "summary": "In April 1968, as U Street burned, Ben's Chili Bowl stayed open through the curfew and fed police, firemen and activists alike.",
+    "point": {
+      "at": {
+        "lat": 38.91708,
+        "lng": -77.02879
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Ben's Chili Bowl, 1213 U Street NW, Washington, D.C."
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the narrow storefront of Ben's Chili Bowl. Apart from Thanksgiving and Christmas, it has opened every single day since nineteen fifty eight. Even the week this street was on fire.\n\nBen Ali came here from Trinidad to become a doctor. Virginia worked at a bank at Eleventh and U. He kept coming in. On his third visit, three days in a row, he wrote her a little note. Please call me. They married in nineteen fifty eight, the same year they opened this place, in an old silent movie house. Duke Ellington and Sarah Vaughan came in after their shows.\n\nOn the fourth of April, nineteen sixty eight, someone ran in to say that Martin Luther King had been shot. Virginia remembered it. The tears were everywhere. Everybody's crying. Then the sadness turned to anger, and the uprising began.\n\nFor four days, the blocks around here burned. The city put on a curfew. But the activist Stokely Carmichael asked for the Chili Bowl to stay open past it, and keep feeding people. The city said yes. So the police came in to eat. And the firemen. And the activists. Everybody felt safe in here.\n\nMany businesses on this street never reopened after those four days. Ben's never closed.\n\nLook at the lights in the window.\n\nThey stayed on.\n",
+    "teaser": "Apart from Thanksgiving and Christmas, it has opened every day since 1958.",
+    "detail": "CBS News reported in 2026 that the original restaurant was closing temporarily for renovation; check on the ground whether it has reopened before relying on the opening line about every day.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "u-street",
+      "black-broadway",
+      "food",
+      "civil-rights"
+    ],
+    "remoteness": 0.99,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-lights-stayed-on",
+        "durationS": 88
+      }
+    ]
   },
   {
     "id": "dc-the-man-who-found-the-bolts",
@@ -6634,7 +7082,7 @@ export const LIBRARY: readonly Echo[] = [
       "pennsylvania-avenue",
       "lenfant"
     ],
-    "remoteness": 0.3
+    "remoteness": 0
   },
   {
     "id": "dc-the-other-half-of-the-circle",
@@ -6675,7 +7123,7 @@ export const LIBRARY: readonly Echo[] = [
       "preservation",
       "federal-triangle"
     ],
-    "remoteness": 0.45
+    "remoteness": 0.15
   },
   {
     "id": "dc-the-other-revere",
@@ -6762,7 +7210,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-rights",
       "lincoln-memorial"
     ],
-    "remoteness": 0.72
+    "remoteness": 0
   },
   {
     "id": "dc-the-plaque-on-the-fence",
@@ -6846,6 +7294,48 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.21
   },
   {
+    "id": "dc-the-stone-from-concord",
+    "title": "The Stone From the Temple of Concord",
+    "summary": "In 1854 men tied up the night watchman and stole the Pope's gift stone for the Washington Monument. It has never been found.",
+    "point": {
+      "at": {
+        "lat": 38.88935,
+        "lng": -77.0351
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Washington Monument grounds, National Mall, Washington, D.C."
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the monument. Built into its walls, inside, are stones sent from all over the world, by tribes, societies, towns and foreign countries. One of them never made it in.\n\nIn the early eighteen fifties, Pope Pius the Ninth sent a block of marble. It came from the ruins of the Temple of Concord, in the Forum in Rome. Not everyone was pleased. Petitions came in, protesting against any stone from the Pope.\n\nOne night in March, eighteen fifty four, between one and two in the morning, a group of men came onto these grounds. They passed a clothesline around the night watchman's hut, and piled stones against his door. They told him that if he kept quiet, he would not be hurt. They pasted newspaper over his windows, so he could not see. Then they wheeled the Pope's stone away on a hand cart. The watchman had a loaded shotgun with him. He told nobody until four. He was suspended.\n\nThe thieves were believed to be Know Nothings, a party against Catholics and immigrants. The next year, they took over the society that was building the monument. Congress took back its money, and for more than twenty years the monument was a stump.\n\nAnd the stone? Nobody ever found out for certain. It may have been smashed on the river bank. It may be at the bottom of the Potomac.\n\nLook up at the monument again. The missing stone came from the Temple of Concord.\n\nConcord means agreement.\n",
+    "teaser": "They tied the watchman's hut shut with a clothesline.",
+    "detail": "Accounts differ in detail. Harvey (1903) quotes a newspaper of the day placing the theft early on a Monday morning; the Society's reward notice dates it to the night of the 5th of March 1854. The National Park Service says the stone was supposedly thrown into the Potomac; Harvey says its fate was never known for certain.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "national-mall",
+      "washington-monument",
+      "know-nothings",
+      "mystery"
+    ],
+    "remoteness": 0.41,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-the-stone-from-concord",
+        "durationS": 100
+      }
+    ]
+  },
+  {
     "id": "dc-the-trees-that-came-second",
     "title": "The Trees That Came Second",
     "summary": "Tokyo's first gift of two thousand cherry trees was burned in 1910; the two trees by this plaque are from the second.",
@@ -6884,7 +7374,7 @@ export const LIBRARY: readonly Echo[] = [
       "cherry-blossoms",
       "japan"
     ],
-    "remoteness": 0.69
+    "remoteness": 0.28
   },
   {
     "id": "dc-the-word-was-waiting",
@@ -6926,7 +7416,7 @@ export const LIBRARY: readonly Echo[] = [
       "willard",
       "words"
     ],
-    "remoteness": 0.22
+    "remoteness": 0.08
   },
   {
     "id": "dc-three-names-for-one-wing",
@@ -7008,7 +7498,7 @@ export const LIBRARY: readonly Echo[] = [
       "music",
       "lincoln-memorial"
     ],
-    "remoteness": 0.7
+    "remoteness": 0
   },
   {
     "id": "dc-where-the-money-ran-out",
@@ -7048,7 +7538,7 @@ export const LIBRARY: readonly Echo[] = [
       "national-mall",
       "monuments"
     ],
-    "remoteness": 0.52
+    "remoteness": 0.39
   },
   {
     "id": "dc-where-the-war-ended",
@@ -7137,6 +7627,47 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "dc-why-february",
+    "title": "Why February",
+    "summary": "Black History Month began as one week in February, planned in this Shaw row house by a former coal miner, Carter G. Woodson.",
+    "point": {
+      "at": {
+        "lat": 38.91086,
+        "lng": -77.02405
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Carter G. Woodson Home National Historic Site, 1538 9th Street NW, Shaw, Washington, D.C."
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the narrow brick row house at fifteen thirty eight, Ninth Street. Every February, the whole country marks something that was dreamed up in there.\n\nThe man who bought it, in nineteen twenty two, was Carter G. Woodson. His parents had been enslaved. As a young man he dug coal in West Virginia, and he did not start high school until he was twenty. He finished in two years. In nineteen twelve, he earned a doctorate from Harvard. Only the second Black American ever to do it.\n\nAnd then he noticed what was missing. The schools taught almost nothing about Black Americans at all. So he set out to write them back in, from this house. For a while, a young poet named Langston Hughes worked for him here. Hughes remembered his job. To open the office in the mornings, wrap and mail books, and bank the furnace at night when Doctor Woodson was away.\n\nIn nineteen twenty six, Woodson started something called Negro History Week. He chose the second week of February, because it held two birthdays. Abraham Lincoln's, and Frederick Douglass's. It was a week.\n\nHe died in this house in nineteen fifty, in his bedroom on the third floor. Look up at the top windows. Later, the house stood empty and fell apart. In twenty eleven, an earthquake pulled its front wall loose. The Park Service put it back together.\n\nHe asked the country for one week.\n\nIt gave him a month, twenty six years after he died.\n",
+    "teaser": "Every February starts in this row house.",
+    "tags": [
+      "washington",
+      "dc-core",
+      "shaw",
+      "black-history",
+      "carter-g-woodson",
+      "langston-hughes"
+    ],
+    "remoteness": 0.76,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/dc-why-february",
+        "durationS": 100
+      }
+    ]
+  },
+  {
     "id": "dc-written-in-the-dark",
     "title": "Written in the Dark",
     "summary": "Julia Ward Howe wrote the Battle Hymn of the Republic on this corner, in the dark, half asleep.",
@@ -7174,7 +7705,7 @@ export const LIBRARY: readonly Echo[] = [
       "willard",
       "civil-war"
     ],
-    "remoteness": 0.22
+    "remoteness": 0.07
   },
   {
     "id": "deadwood-before-she-was-calamity",
@@ -12094,7 +12625,7 @@ export const LIBRARY: readonly Echo[] = [
       "firefighting",
       "head-house"
     ],
-    "remoteness": 0.21
+    "remoteness": 0.16
   },
   {
     "id": "philadelphia-a-steeple-paid-by-lottery",
@@ -12181,6 +12712,60 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "philadelphia-citizens-in-peace",
+    "title": "Citizens in Peace",
+    "summary": "Octavius Catto fought for the vote and for seats on the streetcars. On election day 1871 he was shot on his way to vote.",
+    "point": {
+      "at": {
+        "lat": 39.95175,
+        "lng": -75.16442
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Octavius V. Catto memorial, south side of City Hall, Philadelphia, Pennsylvania"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 108,
+    "minAge": 10,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the bronze statue of the young man, here on the south side of City Hall. His name was Octavius Catto. This city has about seventeen hundred public statues. When his went up, it was the first of an African American.\n\nCatto was born free, in Charleston, South Carolina, in eighteen thirty nine, and came to Philadelphia with his family. He finished top of his class at the Institute for Colored Youth, and the next year he was teaching there. He played shortstop, and started one of the city's earliest professional baseball clubs. In the Civil War, he recruited Black soldiers. He presented a regiment with its flag. The motto on it said, let soldiers in war, be citizens in peace.\n\nAfter the war, he set out to make that true. He fought for a law to let Black passengers ride the city's streetcars. In eighteen seventy, the Fifteenth Amendment gave Black men the vote.\n\nOn election day, the tenth of October, eighteen seventy one, Octavius Catto was on his way to vote. At Ninth and South Streets, he was shot three times. He was thirty two. The man accused of killing him was never convicted. A New York newspaper called him a pure minded patriot, who died as he had lived, without fear.\n\nIn the eighteen nineties, Black Philadelphians tried to raise money for a monument to him. It took more than a century. By then, even a mayor of Philadelphia, Jim Kenney, had to ask, how in God's name did I not know this man?\n\nLook at him again. Citizens in peace.\n\nHe was on his way to vote.\n",
+    "teaser": "He was on his way to vote.",
+    "detail": "The National Park Service names the man who shot Catto and records that he was not convicted; the script does not name him. The memorial is by the sculptor Branly Cadet.",
+    "pronunciations": [
+      {
+        "written": "Catto",
+        "say": "KAT-oh"
+      },
+      {
+        "written": "Octavius",
+        "say": "ok-TAY-vee-us"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "city-hall",
+      "octavius-catto",
+      "voting-rights",
+      "reconstruction",
+      "black-history",
+      "baseball"
+    ],
+    "remoteness": 0.08,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-citizens-in-peace",
+        "durationS": 108
+      }
+    ]
+  },
+  {
     "id": "philadelphia-congress-started-at-the-tavern",
     "title": "Congress Started at the Tavern",
     "summary": "Before the first Continental Congress had a president or a room, its delegates met at this tavern. The building is a 1975 copy.",
@@ -12221,6 +12806,55 @@ export const LIBRARY: readonly Echo[] = [
       "reconstruction"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "philadelphia-dear-julia",
+    "title": "Dear Julia",
+    "summary": "South Street was meant to become an expressway. Isaiah Zagar covered it in mosaics, while his wife Julia set her own art aside.",
+    "point": {
+      "at": {
+        "lat": 39.94272,
+        "lng": -75.15935
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Philadelphia's Magic Gardens, 1020 South Street, Philadelphia, Pennsylvania"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the walls here, covered in broken tile and mirror, glittering in every direction. The man who made them was Isaiah Zagar. His mosaics run up and down this street, on alleys and shop fronts and houses.\n\nAnd in the late nineteen sixties, this street was supposed to disappear. An expressway was coming. Buildings were almost worthless, so artists could afford to buy them.\n\nIn nineteen sixty eight, Isaiah and his wife Julia opened a gallery here, called Eyes. Julia was an artist too. She had studied sculpture, and shown her work in Mexico and New York. She ran the business, raised the children, and stopped making her own art. For nearly fifty years. Her steadiness, their friends said, is what let her husband transform this neighbourhood.\n\nThe expressway never came. And in two thousand sixteen, inside these gardens, there was a show called Dear Julia. It hung her own drawings, at last, beside portraits of her made by folk artists all over the world. Isaiah called it a visual love letter. Julia said it made her want to get her time back, and begin to work again.\n\nLook at the walls again. If you're lucky, he once said, you find that person.\n\nIf you're lucky, that person finds you.\n",
+    "teaser": "If you're lucky, that person finds you.",
+    "detail": "CBS headlines indicate Isaiah Zagar has since died at 86; the article itself could not be retrieved, so the script does not mention it. Check before approval.",
+    "pronunciations": [
+      {
+        "written": "Zagar",
+        "say": "ZAY-gar"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "south-street",
+      "magic-gardens",
+      "mosaic",
+      "isaiah-zagar",
+      "public-art"
+    ],
+    "remoteness": 0.37,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-dear-julia",
+        "durationS": 84
+      }
+    ]
   },
   {
     "id": "philadelphia-dorothy-todd-widow",
@@ -12323,6 +12957,58 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.19
   },
   {
+    "id": "philadelphia-harrys-sandwich",
+    "title": "Harry's Sandwich",
+    "summary": "Two brothers, tired of their own hot dogs, grilled some beef. A cab driver smelled it, and Harry sold him his lunch.",
+    "point": {
+      "at": {
+        "lat": 39.93312,
+        "lng": -75.15926
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Pat's King of Steaks, 1237 East Passyunk Avenue, at 9th and Wharton Streets, South Philadelphia, Pennsylvania"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 83,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the stand on this corner, with its name in lights, and the rival stand across the street. This is where people say the cheesesteak began.\n\nIn nineteen thirty, two brothers, Pat and Harry Olivieri, opened a hot dog stand near here, by the Italian Market. They sold hot dogs, mostly to cab drivers. They both had other jobs. Pat made sleds in the daytime. Harry worked at the Navy Yard. And every day, they ate hot dogs.\n\nOne day, tired of hot dogs, Pat sent Harry to a store for some beef. Harry sliced it, grilled it with onions, and piled it on a roll. They were about to eat, when a cab driver pulled up, smelled the meat and onions, and wanted one. So Harry sold the cabbie his own sandwich. The brothers always counted that as the moment it all began. By most accounts, that was in nineteen thirty three.\n\nNotice what was missing. There was no cheese. Cheese came later. The orange kind arrived in the nineteen sixties. Geno's opened across the street in nineteen sixty six. Its owner today says of Pat, he invented it. We just perfected it.\n\nThe first one had no cheese.\n\nAnd Harry never got to eat it.\n",
+    "teaser": "The first one had no cheese, and Harry never got to eat it.",
+    "detail": "The date is told both ways: Pat's says 1930; the Associated Press put the stand in 1930 and the first sandwich three years later. Who first added cheese is disputed between Pat's and later rivals.",
+    "pronunciations": [
+      {
+        "written": "Olivieri",
+        "say": "oh-liv-YAIR-ee"
+      },
+      {
+        "written": "Passyunk",
+        "say": "PASH-unk"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "south-philadelphia",
+      "italian-market",
+      "cheesesteak",
+      "food"
+    ],
+    "remoteness": 0.82,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-harrys-sandwich",
+        "durationS": 83
+      }
+    ]
+  },
+  {
     "id": "philadelphia-he-left-the-year-blank",
     "title": "He Left the Year Blank",
     "summary": "At twenty-two Franklin wrote himself a witty epitaph. Late in life he asked for a plain stone, and left the year unfinished.",
@@ -12369,6 +13055,59 @@ export const LIBRARY: readonly Echo[] = [
       "printing"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "philadelphia-if-you-can-keep-it",
+    "title": "If You Can Keep It",
+    "summary": "Everyone knows Franklin's answer, a republic if you can keep it. The one record of it names who asked: Mrs. Powel of this house.",
+    "point": {
+      "at": {
+        "lat": 39.94575,
+        "lng": -75.14662
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Powel House, 244 South 3rd Street, Society Hill, Philadelphia, Pennsylvania"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 79,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the tall brick house, with the wide doorway and the iron rail beside its steps. George Washington came here to dinner, and to tea, again and again.\n\nYou probably know the most famous line from that summer of the convention. A republic, if you can keep it. But who asked the question?\n\nWhen the convention closed, in seventeen eighty seven, one of the delegates, James McHenry, wrote down a little story among his notes. A lady asked Doctor Franklin, well Doctor, what have we got? A republic or a monarchy? A republic, replied the Doctor, if you can keep it.\n\nAnd at the bottom, McHenry added a note. The lady here alluded to was Mrs. Powel of Philadelphia.\n\nHer name was Elizabeth Powel, and this was her house. Her husband Samuel was the last mayor of Philadelphia under the king, and the first after him. And she, the guidebooks say, did as much as he did to make this house famous.\n\nNobody wrote down where she asked it. Perhaps it was in this house. Perhaps somewhere else. But the question was hers.\n\nLook at the door again. Everyone remembers the answer.\n\nShe asked the question.\n",
+    "teaser": "Everyone remembers the answer. She asked the question.",
+    "detail": "McHenry's anecdote is the only record of the exchange; it gives no place or date, and later printings of the story differ. The house is a museum of the Philadelphia Society for the Preservation of Landmarks.",
+    "pronunciations": [
+      {
+        "written": "Powel",
+        "say": "POW-ell"
+      },
+      {
+        "written": "McHenry",
+        "say": "mack-HEN-ree"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "society-hill",
+      "powel-house",
+      "elizabeth-powel",
+      "benjamin-franklin",
+      "constitution"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-if-you-can-keep-it",
+        "durationS": 79
+      }
+    ]
   },
   {
     "id": "philadelphia-no-hatch-wide-enough",
@@ -12564,7 +13303,56 @@ export const LIBRARY: readonly Echo[] = [
       "skyline",
       "sculpture"
     ],
-    "remoteness": 0.55
+    "remoteness": 0.05
+  },
+  {
+    "id": "philadelphia-prisoner-c2559",
+    "title": "Prisoner C2559",
+    "summary": "The legend says a governor sent his dog to Eastern State for life, for killing his wife's cat. The governor's wife said otherwise.",
+    "point": {
+      "at": {
+        "lat": 39.96752,
+        "lng": -75.17262
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Eastern State Penitentiary, front gate on Fairmount Avenue, Fairmount, Philadelphia, Pennsylvania"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 98,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the big gate of the prison, and picture a black Labrador being led through it. His name was Pep. And the story goes that he was a murderer.\n\nHere is the legend. Pep belonged to the governor of Pennsylvania, Gifford Pinchot. One day, the story goes, Pep killed the cat that belonged to the governor's wife. So the governor sentenced him to life, without parole. He arrived in August, nineteen twenty four, and got a prisoner number. C two five five nine. He even had a mug shot, with his number round his neck. In the photographs, his head is down and his ears are back. He looks a little guilty. The newspapers loved it.\n\nBut that is the legend. Here is what is on record. The governor's wife, Cornelia Pinchot, told a newspaper that Pep had never killed her cat. The family bred Labradors, and Pep was a present for the prisoners, to cheer them up. Years later, a researcher named Dick Fulmer found the letters. The governor had read that the governor of Maine gave a dog to his state's prison, and wanted to do the same. The warden wrote back that a dog would be a good addition to their community. So Pep was not a prisoner. He was a guest. He wandered the halls as he pleased, and the prisoners and the guards loved him.\n\nLook at the gate again. Prisoner C two five five nine.\n\nGood dog.\n",
+    "teaser": "He has a prisoner number, a mug shot, and a guilty look.",
+    "certaintyNote": "The cat murder and the life sentence are a legend: newspapers of the 1920s told it, and the prison museum tells it as folklore. Cornelia Pinchot told The New York Times that Pep never killed her cat, and letters of 1924 between Governor Pinchot and the warden show the dog was donated to the prison. Pep's admission, his inmate number and his mugshot are on record. The script says plainly which is which.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "pronunciations": [
+      {
+        "written": "Pinchot",
+        "say": "PIN-show"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "fairmount",
+      "eastern-state-penitentiary",
+      "dogs",
+      "legend"
+    ],
+    "remoteness": 0.9,
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "speech/philadelphia-prisoner-c2559",
+        "durationS": 98
+      }
+    ]
   },
   {
     "id": "philadelphia-read-aloud-in-the-yard",
@@ -12724,6 +13512,108 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "philadelphia-showered-and-jerked-about",
+    "title": "Showered and Jerked About",
+    "summary": "The Greek temples by the Schuylkill dam were a waterworks Dickens admired in 1842. Later they were filled with fish.",
+    "point": {
+      "at": {
+        "lat": 39.96582,
+        "lng": -75.18348
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Fairmount Water Works, 640 Waterworks Drive, below the Art Museum, Philadelphia, Pennsylvania"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 104,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the little white temples along the river, with their columns, below the hill. They look like they belong in ancient Greece. They were built to pump water.\n\nThe city's first water system pumped from a building where City Hall stands now, and it was hopeless. The reservoirs held half an hour's supply. So in eighteen fifteen they started again, out here, under the hill called Faire Mount.\n\nIn eighteen forty two, Charles Dickens came to Philadelphia, and saw it. He was delighted. Philadelphia, he wrote, is most bountifully provided with fresh water, which is showered and jerked about, and turned on, and poured off everywhere. He saw the river held back by the dam, and forced by its own power up into great tanks on the hill. From there, it ran to the top stories of the houses, for next to nothing. And the works were laid out as a public garden, he said, no less ornamental than useful.\n\nBut the water was not clean. Typhoid kept breaking out, until the city filtered its water, early in the nineteen hundreds. The old works by the river were abandoned.\n\nAnd then, in nineteen eleven, the mayor had an idea. Fill them with fish. The old waterworks became an aquarium. More than forty thousand people came in its first full year. A guidebook of nineteen thirty seven described balloon fish floating belly up, and crabs trying to climb out of their tanks.\n\nLook at the temples again. They were built to send water out.\n\nFor a while, they kept it in.\n",
+    "teaser": "Charles Dickens was impressed by Philadelphia's water.",
+    "pronunciations": [
+      {
+        "written": "Schuylkill",
+        "say": "SKOO-kul"
+      },
+      {
+        "written": "Reyburn",
+        "say": "RAY-burn"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "fairmount",
+      "water-works",
+      "charles-dickens",
+      "aquarium"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-showered-and-jerked-about",
+        "durationS": 104
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-somebody-lives-here",
+    "title": "Somebody Lives Here",
+    "summary": "Elfreth's Alley has been lived in for more than three hundred years. In 1933 one resident's plea saved its oldest houses.",
+    "point": {
+      "at": {
+        "lat": 39.95268,
+        "lng": -75.14255
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Elfreth's Alley, between Front and Second Streets, Old City, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along the alley, at the two rows of little brick houses facing each other, with their shutters and white doorways. People have been living on this lane for more than three hundred years, without a break. It is called the oldest street in America that has never stopped being lived in.\n\nAnd in the nineteen thirties, some of it was about to be knocked down.\n\nA woman who lived here, Dolly Ottey, would not let it go. She ran a restaurant on the alley, called the Hearthstone. In nineteen thirty three, a landmarks society answered her plea, and three of the oldest houses were saved. Her own house was number one fifteen, with a mantelpiece from seventeen twenty.\n\nPeople like to say Benjamin Franklin lived on this alley. A city guidebook of nineteen thirty seven put it gently. If he did, it was so briefly that history failed to record it. The people who really lived here were tradesmen. The alley takes its name from the family of a blacksmith. A Quaker cabinet maker lived here, and a pewterer, and a man who helped found the first synagogue in the city. Not famous people. Just people.\n\nAnd people still live behind these doors. More than three hundred and eighty thousand visitors a year walk down this lane, past their windows. There are plans for a small park at the corner, named after Dolly Ottey.\n\nKeep your voice down.\n\nSomebody lives here.\n",
+    "teaser": "Keep your voice down. Somebody lives here.",
+    "detail": "The park named for Dolly Ottey was planned to open in 2026; check on the ground whether it exists before the script is changed to say so.",
+    "pronunciations": [
+      {
+        "written": "Elfreth",
+        "say": "EL-freth"
+      },
+      {
+        "written": "Ottey",
+        "say": "OTT-ee"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "old-city",
+      "elfreths-alley",
+      "preservation"
+    ],
+    "remoteness": 0.09,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-somebody-lives-here",
+        "durationS": 97
+      }
+    ]
+  },
+  {
     "id": "philadelphia-the-baby-over-the-bank-door",
     "title": "The Baby Over the Bank Door",
     "summary": "A carved panel over the First Bank's door celebrates a young nation's money, and one word on its globe says where some of it came from.",
@@ -12816,6 +13706,47 @@ export const LIBRARY: readonly Echo[] = [
       "revolution"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "philadelphia-the-brightest-house",
+    "title": "The Brightest House",
+    "summary": "Poe chose this house for its light, to help his sick wife. In it he published The Black Cat, set in a cellar much like its own.",
+    "point": {
+      "at": {
+        "lat": 39.9619,
+        "lng": -75.14975
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Edgar Allan Poe National Historic Site, 532 North 7th Street, Spring Garden, Philadelphia, Pennsylvania"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 10,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the dark bird on the statue by the garden, and the plain brick house behind it. Edgar Allan Poe lived in Philadelphia for six years, in five different houses. This is the only one left.\n\nYou might expect it to be gloomy. It isn't.\n\nJust before they moved in, his young wife Virginia was found to have tuberculosis. They chose this house because it was bright and airy, to help heal her lungs. Her mother, Maria, kept everything spotless. They called her Muddy. There was a cat, called Catterina. Money was short. When Poe filed for bankruptcy around this time, he had hardly any furniture to list.\n\nBut in this bright house, he published The Black Cat. In that story, a man walls up a body in his cellar, behind a false chimney. The cellar of this house has a false chimney. And by the kitchen door, someone once carved a single word into the plaster. Death. Nobody knows who did it.\n\nLook at the windows. In Poe's day, the house stood alone on the corner, and the light came pouring in.\n\nHe came here for the light.\n\nHe wrote about the cellar.\n",
+    "teaser": "He came here for the light.",
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "spring-garden",
+      "edgar-allan-poe",
+      "literature",
+      "the-black-cat"
+    ],
+    "remoteness": 0.46,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-brightest-house",
+        "durationS": 78
+      }
+    ]
   },
   {
     "id": "philadelphia-the-church-that-came-on-a-cart",
@@ -13051,6 +13982,56 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "philadelphia-the-curse-of-billy-penn",
+    "title": "The Curse of Billy Penn",
+    "summary": "The legend: build higher than William Penn's hat and the city's teams stop winning. In 2007 an ironworker put a tiny Penn back on top.",
+    "point": {
+      "at": {
+        "lat": 39.95295,
+        "lng": -75.1636
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "City Hall, north apron facing JFK Boulevard, Philadelphia, Pennsylvania"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 79,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at William Penn on top of City Hall. Then look west, at the glass towers that stand higher than his hat. This is a legend. Plenty of people here believe it anyway.\n\nFor nearly a century, there was a gentleman's agreement. Nothing in Philadelphia would rise above Penn's hat. Then, in nineteen eighty seven, a tower called One Liberty Place went past him. And the city's teams stopped winning.\n\nYear after year, no championships. Some people blamed bad managers and bad draft picks. Others blamed Billy Penn. Fans dressed the statue in team jerseys. It did not help.\n\nIn two thousand seven, a new tower was going up, taller than all the rest. Two ironworkers, Dan Ginion and John Joyce, were given a job. Fix a little William Penn to the highest beam. It was a tiny gift shop copy. The next year, the Phillies won the World Series.\n\nWhen an even taller tower went up, in twenty seventeen, the builders raced to get another little Penn on top. Nobody was taking any chances.\n\nLook up at him again. Dan Ginion, the ironworker, put it best.\n\nIf there was a curse, it's not there anymore.\n",
+    "teaser": "Nobody built above his hat for nearly a century.",
+    "certaintyNote": "The curse is a legend, told by fans and tour guides; nothing caused anything. What is on record: a long-observed gentleman's agreement on building height, One Liberty Place passing Penn's hat in 1987, the title drought, the figurine placed on the Comcast Center in 2007 by ironworkers including Dan Ginion, and the Phillies' 2008 World Series. The script says it is a legend.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "pronunciations": [
+      {
+        "written": "Ginion",
+        "say": "GIN-yun"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "city-hall",
+      "william-penn",
+      "sports",
+      "legend",
+      "skyline"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "speech/philadelphia-the-curse-of-billy-penn",
+        "durationS": 79
+      }
+    ]
+  },
+  {
     "id": "philadelphia-the-first-vote-was-the-room",
     "title": "The First Vote Was the Room",
     "summary": "In 1774 the Speaker offered the Continental Congress the State House. The delegates walked here and chose a carpenters' guild hall instead.",
@@ -13200,7 +14181,50 @@ export const LIBRARY: readonly Echo[] = [
       "railroads",
       "reading-terminal"
     ],
-    "remoteness": 0.35
+    "remoteness": 0.15
+  },
+  {
+    "id": "philadelphia-the-real-fighter",
+    "title": "The Real Fighter Is at the Bottom",
+    "summary": "The Rocky statue was called kitsch, removed, and set at the foot of the steps. In 2026 the museum took him in, then put him on top.",
+    "point": {
+      "at": {
+        "lat": 39.96515,
+        "lng": -75.1803
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Philadelphia Museum of Art steps, Benjamin Franklin Parkway, Fairmount, Philadelphia, Pennsylvania"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 92,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the bronze boxer at the top of the steps, with his arms up in the air. He never lived. Rocky Balboa is a made up boxer from South Philadelphia. And about four million people a year come to see him.\n\nFor decades, the museum behind him kept its distance.\n\nSylvester Stallone had the statue made for a film, Rocky Three, and then gave it to the city. It was put up here, at the top of the steps. Then some of the city's art commissioners said it was not art. It was kitsch. And it was taken away. In two thousand six it came back, but only to the bottom of the steps. It stood down there for twenty years, while millions of people queued to take its picture.\n\nThen, in the spring of twenty twenty six, the museum changed its mind. It invited Rocky inside, as art. A curator stood him among two thousand years of boxers in paintings and sculpture. When the show closed, a crane lifted him up here, to the top of the steps, where the sculptor had meant him to stand.\n\nNow look down the steps, to the bottom. Where Rocky used to be, there is a different statue. Joe Frazier. A real boxer, from South Philadelphia.\n\nThe fighter who never lived is at the top.\n\nThe real one is at the bottom.\n",
+    "teaser": "For decades the museum kept its distance from him.",
+    "detail": "The Rocky statue was moved to the top of the steps in 2026 after the exhibition 'Rising Up: Rocky and the Making of Monuments' (April to August 2026).",
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "fairmount",
+      "art-museum",
+      "rocky",
+      "film",
+      "joe-frazier"
+    ],
+    "remoteness": 0.98,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-the-real-fighter",
+        "durationS": 92
+      }
+    ]
   },
   {
     "id": "philadelphia-the-room-upstairs",
@@ -13253,7 +14277,7 @@ export const LIBRARY: readonly Echo[] = [
       "jefferson",
       "national-park"
     ],
-    "remoteness": 0.17
+    "remoteness": 0.14
   },
   {
     "id": "philadelphia-the-street-that-was-a-creek",
@@ -13296,6 +14320,104 @@ export const LIBRARY: readonly Echo[] = [
       "waterways"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "philadelphia-the-tusks-were-upside-down",
+    "title": "The Tusks Were Upside Down",
+    "summary": "A children's echo: America's first assembled fossil skeleton, a mastodon, went on show here in 1801, with its tusks the wrong way up.",
+    "point": {
+      "at": {
+        "lat": 39.9486,
+        "lng": -75.14925
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Philosophical Hall, 104 South 5th Street, Independence Square, Philadelphia, Pennsylvania"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the small brick building here, beside Independence Square. A long time ago, there was a monster inside it. A skeleton eleven feet tall at the shoulder.\n\nIts bones came out of a muddy pit on a farm in New York, in eighteen oh one. A painter called Charles Willson Peale went to dig them up, with pumps, and ropes, and pulleys. Back here, his team had a giant puzzle. Put together an animal that nobody had ever seen alive. People called it the great American incognitum. That means the unknown.\n\nOne of the best puzzle solvers was Moses Williams, an enslaved man who was also a talented artist. Peale said Williams tried the pieces in the most unlikely positions, and did more good that way than anyone. Where bones were missing, they carved new ones out of wood.\n\nBut they made one big mistake. They put the tusks in upside down, curling downward, like a walrus. They thought the animal ate meat, and they wanted it to look fierce. On Christmas Eve, eighteen oh one, the monster was ready. To tell the city, Moses Williams rode through the streets on a white horse, in a feathered headdress, with a trumpeter beside him.\n\nSo where is the monster now? Not here. It was shipped across the ocean, and it stands in a museum in Darmstadt, in Germany, to this day.\n\nIf you ever go and see it, check the tusks.\n",
+    "teaser": "A monster nobody had ever seen, put together like a puzzle.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "pronunciations": [
+      {
+        "written": "Peale",
+        "say": "PEEL"
+      },
+      {
+        "written": "incognitum",
+        "say": "in-COG-nih-tum"
+      },
+      {
+        "written": "Darmstadt",
+        "say": "DARM-shtat"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "independence-square",
+      "mastodon",
+      "fossils",
+      "peale",
+      "kids"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/philadelphia-the-tusks-were-upside-down",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "philadelphia-time-is-very-long",
+    "title": "Time Is Very Long",
+    "summary": "Charles Dickens came to America wanting to see two things: Niagara Falls, and the prison behind this wall. What he found there.",
+    "point": {
+      "at": {
+        "lat": 39.96738,
+        "lng": -75.1733
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Eastern State Penitentiary, Fairmount Avenue at 22nd Street, Fairmount, Philadelphia, Pennsylvania"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 105,
+    "minAge": 10,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the great wall across the street, and the gate built to look like a castle. When Charles Dickens came to America, in eighteen forty two, there were two sights he most wanted to see. Niagara Falls. And this.\n\nBehind this wall was an experiment. Every prisoner alone in a cell, for years, to think about what he had done. A new prisoner was led in with a black hood over his head. After that, Dickens wrote, he never looks upon a human countenance, or hears a human voice.\n\nDickens spent a whole day going from cell to cell. In the first, a man sat at a loom. He had made himself a little clock out of odds and ends, with his vinegar bottle for a pendulum. On the wall over his door, he had painted a woman. He called her The Lady of the Lake. One of the visitors asked him whether time went quickly. Time is very long, gentlemen, he said, within these four walls.\n\nDickens believed the men who ran this place meant well. And that they did not know what they were doing. He called it a slow and daily tampering with the mysteries of the brain, immeasurably worse than any torture of the body. Each man inside, he wrote, was a man buried alive.\n\nThey kept it up for decades. The prison was copied more than three hundred times around the world before Eastern State gave up solitary confinement, in nineteen thirteen. Look at the wall again.\n\nTime is very long, gentlemen.\n\nWithin these four walls.\n",
+    "teaser": "Two sights in America Dickens most wanted to see. This was one.",
+    "tags": [
+      "philadelphia",
+      "philadelphia-core",
+      "fairmount",
+      "eastern-state-penitentiary",
+      "charles-dickens",
+      "prisons"
+    ],
+    "remoteness": 0.9,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/philadelphia-time-is-very-long",
+        "durationS": 105
+      }
+    ]
   },
   {
     "id": "philadelphia-two-rooms-one-roof",
@@ -13385,7 +14507,7 @@ export const LIBRARY: readonly Echo[] = [
       "organ",
       "worlds-fair"
     ],
-    "remoteness": 0.44
+    "remoteness": 0
   },
   {
     "id": "philadelphia-washington-left-last",
@@ -18318,7 +19440,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-11-08",
       "contentWarning": "This echo describes an assassination. No violence is described in detail."
     },
-    "remoteness": 0.47
+    "remoteness": 0
   },
   {
     "id": "the-empty-frames",
@@ -18789,7 +19911,7 @@ export const LIBRARY: readonly Echo[] = [
       "philadelphia",
       "ghosts"
     ],
-    "remoteness": 1
+    "remoteness": 0.9
   },
   {
     "id": "the-prisoner-who-never-reached-the-prison",

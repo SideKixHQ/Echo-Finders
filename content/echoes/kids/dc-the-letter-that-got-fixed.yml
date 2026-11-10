@@ -1,0 +1,88 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core, following docs/writing-echoes.md.
+# Listening spot: Inside the Lincoln Memorial chamber, facing the north wall, where the Second Inaugural Address is carved (on the statue's left).
+# Position: Overture place 'Lincoln Memorial' at 38.88927, -77.05014; set a few metres north toward the north chamber (high confidence).
+id: dc-the-letter-that-got-fixed
+title: "The Letter That Got Fixed"
+summary: "A children's echo: someone carved a spelling mistake into the Lincoln Memorial, in the word future. Can you find it?"
+place: "Lincoln Memorial, north wall of the chamber, Washington, D.C."
+at: { lat: 38.88932, lng: -77.05020 }
+triggerRadiusKm: 0.03
+category: kids
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, national-mall, lincoln-memorial, kids, spelling]
+teaser: "Somewhere in this wall of words, there is a spelling mistake."
+script: |
+  Find the big speech carved on the wall here, on Lincoln's left. It is his second speech as President, cut into the stone. Here is a game. Somewhere in all those words, someone made a spelling mistake.
+
+  Look for the word future. It is in a line that says, with high hope for the future. Found it? Now look very closely at the first letter.
+
+  About a hundred years ago, when these words were being carved, the carver made a mistake. He cut an E, where he meant to cut an F. So the word said euture. And you cannot rub out stone.
+
+  So they filled in part of the E, to turn it back into an F. A park ranger says it was sort of puttied in. People with very sharp eyes say they can still spot the patch. Can you?
+
+  The whole speech is about mending a country after a war. Lincoln said, let us strive on to finish the work we are in, to bind up the nation's wounds.
+
+  Even a mistake in stone can be mended.
+
+  Even the future got fixed.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "It is his second speech as President, cut into the stone."
+    source: 1
+    quote: "In Lincoln's Second Inaugural Address , depicted on the north wall of the memorial"
+  - says: "Somewhere in all those words, someone made a spelling mistake."
+    source: 1
+    quote: "Claim: A word is misspelled in the Lincoln Memorial."
+  - says: "It is in a line that says, with high hope for the future."
+    source: 2
+    quote: "With high hope for the future, no prediction with regard to it is ventured."
+  - says: "Found it? Now look very closely at the first letter."
+    source: 3
+    quote: "The word 'future' was mistakenly carved with an E to start"
+  - says: "About a hundred years ago, when these words were being carved, the carver made a mistake."
+    source: 3
+    quote: "The Lincoln Memorial at 100: How a monument to history became a part of history"
+  - says: "About a hundred years ago, when these words were being carved, the carver made a mistake."
+    source: 1
+    quote: "an engraver inadvertently carved a letter “E” where he meant to carve an “F.”"
+  - says: "He cut an E, where he meant to cut an F."
+    source: 1
+    quote: "an engraver inadvertently carved a letter “E” where he meant to carve an “F.”"
+  - says: "So the word said euture."
+    source: 3
+    quote: "The word 'future' was mistakenly carved with an E to start"
+  - says: "So they filled in part of the E, to turn it back into an F."
+    source: 1
+    quote: "This error was corrected by filling in a portion of the carving to revert it to an \"F.\""
+  - says: "A park ranger says it was sort of puttied in."
+    source: 3
+    quote: "had to be sort of puttied or filled in, to make the E back into an F"
+  - says: "People with very sharp eyes say they can still spot the patch."
+    source: 3
+    quote: "And those with an eagle eye can even spot a typo!"
+  - says: "Lincoln said, let us strive on to finish the work we are in, to bind up the nation's wounds."
+    source: 2
+    quote: "let us strive on to finish the work we are in; to bind up the nation’s wounds"
+sources:
+  - title: "Lincoln Memorial Myths"
+    publisher: "National Park Service, Lincoln Memorial"
+    url: https://www.nps.gov/linc/learn/historyculture/lincoln-memorial-myths.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Lincoln Memorial Inscriptions"
+    publisher: "National Park Service, Lincoln Memorial"
+    url: https://www.nps.gov/linc/learn/historyculture/inscriptions.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Lincoln Memorial at 100: How a monument to history became a part of history"
+    publisher: "CBS News, Sunday Morning"
+    url: https://www.cbsnews.com/news/the-lincoln-memorial-at-100-how-a-monument-to-history-became-a-part-of-history/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

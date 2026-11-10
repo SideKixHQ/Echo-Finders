@@ -1,0 +1,115 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on 10th Street NW in front of the Petersen House, across the street from Ford's Theatre.
+# Position: Overture place 'Petersen House' (516 10th St NW) at 38.89670, -77.02643; set a few metres east onto the 10th Street sidewalk (high confidence).
+id: dc-bring-him-in-here
+title: "Bring Him In Here"
+summary: "Lincoln died in a borrowed bed in this boarding house because a lodger on the front steps called out four words."
+place: "Petersen House, 516 10th Street NW, opposite Ford's Theatre, Washington, D.C."
+at: { lat: 38.89668, lng: -77.02636 }
+triggerRadiusKm: 0.03
+category: history
+format: short
+durationS: 108
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.75
+tags: [washington, dc-core, penn-quarter, lincoln, civil-war, fords-theatre]
+teaser: "A young clerk was getting ready for bed when he heard the crowd."
+script: |
+  Look at the narrow brick house across the street from Ford's Theatre, with the steps up to its front door. The President of the United States died in there, in a small back bedroom of a boarding house. Why here?
+
+  On the night of the fourteenth of April, eighteen sixty five, a young War Department clerk named Henry Safford was renting a room in this house. He was getting ready for bed when he heard a commotion in the street. He walked out onto those front steps, and saw a crowd. In the middle of it, soldiers were struggling to carry Abraham Lincoln. Safford waved, and called out. Bring him in here!
+
+  They carried him through that door, to a little bedroom at the back. The bed was too short for him. They had to lay him across it, corner to corner. The Navy Secretary, Gideon Welles, was in that room all night. He wrote, the giant sufferer lay extended diagonally across the bed, which was not long enough for him. The room was small and overcrowded.
+
+  For nine hours, the President clung to life. At twenty two minutes past seven in the morning, he died. A silence fell. The Secretary of War, Edwin Stanton, broke it. Now he belongs to the ages.
+
+  Look at the house again. Afterwards, souvenir hunters stripped off its wallpaper and its carpets. The Petersen family's boarding house never recovered. In eighteen ninety six, the government bought it. It was the first time the country had ever bought a house to save it.
+
+  All because of four words from a lodger on those steps.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the narrow brick house across the street from Ford's Theatre, with the steps up to its front door."
+    source: 1
+    quote: "On the night of April 14, 1865 President Abraham Lincoln was mortally wounded across the street at Ford's Theatre."
+  - says: "The President of the United States died in there, in a small back bedroom of a boarding house."
+    source: 1
+    quote: "Lincoln was carried to a back bedroom in this house, where he died the next morning."
+  - says: "The President of the United States died in there, in a small back bedroom of a boarding house."
+    source: 2
+    quote: "The upper stories were operated as a boarding house."
+  - says: "On the night of the fourteenth of April, eighteen sixty five, a young War Department clerk named Henry Safford was renting a room in this house."
+    source: 2
+    quote: "On the night of April 14, 1865, one renter at the Petersen House was Henry Safford, a young War Department clerk from Massachusetts."
+  - says: "He was getting ready for bed when he heard a commotion in the street."
+    source: 2
+    quote: "Safford was preparing for bed when he heard a commotion in the street outside."
+  - says: "He walked out onto those front steps, and saw a crowd."
+    source: 2
+    quote: "Walking out onto the front steps of the house to investigate, he saw a large crowd."
+  - says: "In the middle of it, soldiers were struggling to carry Abraham Lincoln."
+    source: 2
+    quote: "In the middle of it, he saw a group of soldiers struggling to carry the stricken figure of Abraham Lincoln."
+  - says: "Safford waved, and called out."
+    source: 2
+    quote: "He waved and called out “bring him in here!”"
+  - says: "Bring him in here!"
+    source: 2
+    quote: "He waved and called out “bring him in here!”"
+  - says: "They carried him through that door, to a little bedroom at the back."
+    source: 2
+    quote: "Abraham Lincoln was taken to a small bedroom at the back of the first floor."
+  - says: "The bed was too short for him. They had to lay him across it, corner to corner."
+    source: 2
+    quote: "The soldiers and doctors had to lay him diagonally across the bed there, as his 6-foot 4-inch frame was too tall for it."
+  - says: "The Navy Secretary, Gideon Welles, was in that room all night."
+    source: 3
+    quote: "I remained in the room until then without sitting or leaving it"
+  - says: "He wrote, the giant sufferer lay extended diagonally across the bed, which was not long enough for him."
+    source: 3
+    quote: "The giant sufferer lay extended diagonally across the bed, which was not long enough for him."
+  - says: "The room was small and overcrowded."
+    source: 3
+    quote: "The room was small and overcrowded."
+  - says: "For nine hours, the President clung to life."
+    source: 2
+    quote: "For the next nine hours, the president clung to life, unconscious but still breathing."
+  - says: "At twenty two minutes past seven in the morning, he died."
+    source: 2
+    quote: "At 7:22 am on April 15, 1865, Abraham Lincoln died at the age of 56."
+  - says: "A silence fell. The Secretary of War, Edwin Stanton, broke it."
+    source: 2
+    quote: "A silence fell over the room. Stanton finally broke it, saying “now he belongs to the ages.”"
+  - says: "Now he belongs to the ages."
+    source: 2
+    quote: "Stanton finally broke it, saying “now he belongs to the ages.”"
+  - says: "Afterwards, souvenir hunters stripped off its wallpaper and its carpets."
+    source: 2
+    quote: "Before long, the wallpaper and carpeting of the house had been stripped by curiosity seekers."
+  - says: "The Petersen family's boarding house never recovered."
+    source: 2
+    quote: "With their boarding house business ruined by the attention focused on the home, William and Anna Petersen both died in 1871."
+  - says: "In eighteen ninety six, the government bought it. It was the first time the country had ever bought a house to save it."
+    source: 2
+    quote: "The United States government purchased the house in 1896. This marked the first time the federal government bought a historic house for preservation purposes."
+  - says: "All because of four words from a lodger on those steps."
+    source: 2
+    quote: "He waved and called out “bring him in here!”"
+sources:
+  - title: "Petersen House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/petersen-house.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Petersen House"
+    publisher: "National Park Service, Ford's Theatre National Historic Site"
+    url: https://www.nps.gov/foth/the-petersen-house.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Diary of Gideon Welles, Secretary of the Navy under Lincoln and Johnson, volume 2 (1911)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/diaryofgideonwel02welluoft
+    retrievedAt: "2026-11-10"
+    rights: public-domain

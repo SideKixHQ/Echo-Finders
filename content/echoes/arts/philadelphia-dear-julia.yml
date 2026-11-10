@@ -1,0 +1,101 @@
+# Drafted by Claude Code (2026-11-10) for the Philadelphia core, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on the south side of South Street in front of number 1020, looking at the mosaic walls.
+# Position: Overture place 'Philadelphia's Magic Gardens' (1020 South St) at 39.94261, -75.15935; set north onto the South Street sidewalk (high confidence).
+id: philadelphia-dear-julia
+title: "Dear Julia"
+summary: "South Street was meant to become an expressway. Isaiah Zagar covered it in mosaics, while his wife Julia set her own art aside."
+place: "Philadelphia's Magic Gardens, 1020 South Street, Philadelphia, Pennsylvania"
+at: { lat: 39.94272, lng: -75.15935 }
+triggerRadiusKm: 0.03
+category: arts
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, south-street, magic-gardens, mosaic, isaiah-zagar, public-art]
+teaser: "If you're lucky, that person finds you."
+script: |
+  Look at the walls here, covered in broken tile and mirror, glittering in every direction. The man who made them was Isaiah Zagar. His mosaics run up and down this street, on alleys and shop fronts and houses.
+
+  And in the late nineteen sixties, this street was supposed to disappear. An expressway was coming. Buildings were almost worthless, so artists could afford to buy them.
+
+  In nineteen sixty eight, Isaiah and his wife Julia opened a gallery here, called Eyes. Julia was an artist too. She had studied sculpture, and shown her work in Mexico and New York. She ran the business, raised the children, and stopped making her own art. For nearly fifty years. Her steadiness, their friends said, is what let her husband transform this neighbourhood.
+
+  The expressway never came. And in two thousand sixteen, inside these gardens, there was a show called Dear Julia. It hung her own drawings, at last, beside portraits of her made by folk artists all over the world. Isaiah called it a visual love letter. Julia said it made her want to get her time back, and begin to work again.
+
+  Look at the walls again. If you're lucky, he once said, you find that person.
+
+  If you're lucky, that person finds you.
+detail: >-
+  CBS headlines indicate Isaiah Zagar has since died at 86; the article itself could not be retrieved, so the script does not mention it. Check before approval.
+pronunciations:
+  - written: "Zagar"
+    say: "ZAY-gar"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at the walls here, covered in broken tile and mirror, glittering in every direction."
+    source: 1
+    quote: "Philadelphia's Magic Gardens is a mirrored mosaic dreamscape"
+  - says: "The man who made them was Isaiah Zagar."
+    source: 1
+    quote: "the culmination of the art that Isaiah Zagar has tiled on alleyways, storefronts and townhomes along the city's funky South Street corridor."
+  - says: "His mosaics run up and down this street, on alleys and shop fronts and houses."
+    source: 1
+    quote: "the art that Isaiah Zagar has tiled on alleyways, storefronts and townhomes along the city's funky South Street corridor."
+  - says: "And in the late nineteen sixties, this street was supposed to disappear."
+    source: 1
+    quote: "When they moved to South Street in the late 1960s, the corridor was slated for demolition to make way for an expressway that never materialized."
+  - says: "An expressway was coming. Buildings were almost worthless, so artists could afford to buy them."
+    source: 1
+    quote: "The decimated property values enabled artists like them to buy buildings."
+  - says: "In nineteen sixty eight, Isaiah and his wife Julia opened a gallery here, called Eyes."
+    source: 1
+    quote: "In 1968, they opened the Eyes Gallery."
+  - says: "Julia was an artist too. She had studied sculpture, and shown her work in Mexico and New York."
+    source: 1
+    quote: "She studied sculpture at Cooper Union in New York"
+  - says: "Julia was an artist too. She had studied sculpture, and shown her work in Mexico and New York."
+    source: 1
+    quote: "She had exhibitions at galleries in Mexico and New York City before taking her nearly 50-year hiatus."
+  - says: "She ran the business, raised the children, and stopped making her own art."
+    source: 1
+    quote: "Julia Zagar established the business, had children and stopped creating her own art."
+  - says: "For nearly fifty years."
+    source: 1
+    quote: "before taking her nearly 50-year hiatus."
+  - says: "Her steadiness, their friends said, is what let her husband transform this neighbourhood."
+    source: 1
+    quote: "Her stability and encouragement enabled her husband to transform the neighborhood through his public art, Mazur said."
+  - says: "The expressway never came."
+    source: 1
+    quote: "to make way for an expressway that never materialized."
+  - says: "And in two thousand sixteen, inside these gardens, there was a show called Dear Julia."
+    source: 1
+    quote: "\"Dear Julia\" is an exhibit honoring Julia Zagar in two distinct ways."
+  - says: "And in two thousand sixteen, inside these gardens, there was a show called Dear Julia."
+    source: 1
+    quote: "(Copyright 2016 The Associated Press."
+  - says: "It hung her own drawings, at last, beside portraits of her made by folk artists all over the world."
+    source: 1
+    quote: "It highlights her own artwork and also reveals works by her 77-year-old husband and folk artists from around the world who have used Julia's image as their inspiration."
+  - says: "Isaiah called it a visual love letter."
+    source: 1
+    quote: "The show — which Isaiah Zagar calls a \"visual love letter\" — is on display through June 26."
+  - says: "Julia said it made her want to get her time back, and begin to work again."
+    source: 1
+    quote: "It makes me want to get my time back and begin to work again."
+  - says: "If you're lucky, he once said, you find that person."
+    source: 1
+    quote: "If you're lucky, you find that person. If you're lucky, that person finds you."
+  - says: "If you're lucky, that person finds you."
+    source: 1
+    quote: "If you're lucky, that person finds you."
+sources:
+  - title: "Philadelphia Mosaic Master Honors Wife's Art, Love In Show (Associated Press, 2016)"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/philadelphia-mosaic-master-honors-wifes-art-love-in-show/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
