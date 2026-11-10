@@ -15,9 +15,9 @@ certainty: documented
 minAge: 0
 quality: 0.8
 tags: [new-york, governors-island, aviation, wright-brothers, statue-of-liberty, harbor]
-teaser: "The first plane over New York Harbor carried a canoe. Just in case."
+teaser: "Wilbur Wright flew over New York Harbor with a canoe tied under his plane. Just in case."
 script: |
-  Look out across the water to the Statue of Liberty. Now picture a plane made of wood and cloth, rattling up from the ground near where you are standing.
+  Look out across the water to the Statue of Liberty. Now picture a plane made of wood and cloth, rattling up from this island.
 
   Under its wings, strapped to the bottom, a canoe.
 
