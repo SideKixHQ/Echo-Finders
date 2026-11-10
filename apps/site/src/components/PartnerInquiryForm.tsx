@@ -14,7 +14,7 @@ const interests = [
 
 const inputClass =
   'w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(var(--ring))]';
-const labelClass = 'mb-2 block font-mono text-xs uppercase tracking-[0.15em] text-muted-foreground';
+const labelClass = 'mb-2 block font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground';
 
 /**
  * Partner inquiry form. With no server behind the site, submitting opens the
@@ -65,7 +65,7 @@ export default function PartnerInquiryForm() {
         <button
           type="button"
           onClick={() => setSent(false)}
-          className="mt-lg font-mono text-[11px] uppercase tracking-[0.2em] text-primary hover:underline"
+          className="mt-lg font-mono text-sm uppercase tracking-[0.2em] text-primary hover:underline"
         >
           Back to the form
         </button>

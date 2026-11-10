@@ -130,7 +130,7 @@ export function Collection({
       <div className="screen-body">
         <header className="screen-head coll-head">
           <div className="coll-title">
-            <h1>My Echoes</h1>
+            <h1>My echoes</h1>
           </div>
           {switcher}
         </header>
@@ -146,7 +146,7 @@ export function Collection({
             show "nothing" is one more thing to wonder about. Settings is a tab. */}
         <header className="screen-head coll-head">
           <div className="coll-title">
-            <h1>My Echoes</h1>
+            <h1>My echoes</h1>
           </div>
           {switcher}
         </header>
@@ -190,7 +190,7 @@ export function Collection({
     <div className="screen-body">
       <header className="screen-head coll-head">
         <div className="coll-title">
-          <h1>My Echoes</h1>
+          <h1>My echoes</h1>
           <FilterButton
             open={filterOpen}
             active={filtering}

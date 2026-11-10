@@ -52,6 +52,8 @@ jobs:
       - run: npm run audit:controls
       - run: npm run audit:spec
       - run: npm run audit:layout
+      # Text, icons and placeholders cut off at 375 (scripts/audit-clip.mjs).
+      - run: npm run audit:clip
 
   # The checks that walk the app (a simulated walk to the fort, real timers) are slow, and
   # with alignment and flows added they took the audits job past its 40 minutes. They run

@@ -199,12 +199,12 @@ const CATS = {
 
 ## Tab bar
 
-Labels 14px (the type scale's floor, November 2026); 13px before that, up from the boards' 11px: James, 2026-10-13, "make the tab bar labels bigger too".
+Labels 14px (the type scale's floor, November 2026), sentence case Sora: "Map", "My echoes", "Settings", as the map board of 2026-11-10 draws them; 13px before that, up from the boards' 11px: James, 2026-10-13, "make the tab bar labels bigger too".
 
 ```css
 .nav { position:absolute; bottom:0; left:0; right:0; z-index:850; height:74px; display:flex; background:rgba(var(--rgb-panel),.96); border-top:1px solid var(--line); padding-bottom:14px }
-.nav button { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-size:14px; color:var(--muted); letter-spacing:.03em }
-.nav button svg { width:20px; height:20px; stroke:currentColor; fill:none; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round }
+.nav button { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-size:14px; font-weight:500; color:var(--muted) }
+.nav button svg { width:26px; height:26px; stroke:currentColor; fill:none; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round }
 .nav button.on { color:var(--aqua) }
 ```
 

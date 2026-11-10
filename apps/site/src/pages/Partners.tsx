@@ -6,7 +6,7 @@ import PartnerInquiryForm from '@/components/PartnerInquiryForm';
 import { usePageHead } from '@/lib/head';
 import { images, partner } from '@/content';
 
-const kicker = 'font-mono text-xs uppercase tracking-[0.25em] text-primary';
+const kicker = 'font-mono text-sm uppercase tracking-[0.25em] text-primary';
 const h2 = 'mt-base font-heading text-4xl leading-tight text-foreground sm:text-5xl';
 
 export default function PartnerPage() {
@@ -32,7 +32,7 @@ export default function PartnerPage() {
         <ContourLines className="pointer-events-none absolute inset-0 h-full w-full text-white/10" />
         <div className="pointer-events-none absolute right-[10%] top-[30%] hidden lg:block">
           <WaypointPin />
-          <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-white/80">{partner.hero.coordinates}</p>
+          <p className="mt-2 font-mono text-sm uppercase tracking-[0.2em] text-white/80">{partner.hero.coordinates}</p>
         </div>
 
         <div className="relative mx-auto w-full max-w-content px-4 sm:px-6 lg:px-8">
@@ -91,7 +91,7 @@ export default function PartnerPage() {
             {partner.offerings.items.map((offer, i) => (
               <Reveal key={offer.id} delay={(i % 2) * 0.08}>
                 <div className="relative h-full overflow-hidden rounded-xl border border-border bg-background p-xl">
-                  <span className="font-mono text-xs tracking-[0.2em] text-primary">{offer.detail}</span>
+                  <span className="font-mono text-sm tracking-[0.2em] text-primary">{offer.detail}</span>
                   <h3 className="mt-base font-heading text-2xl text-foreground">{offer.title}</h3>
                   <p className="mt-3 max-w-md leading-relaxed text-muted-foreground">{offer.body}</p>
                   <ContourLines className="pointer-events-none absolute inset-x-0 bottom-0 h-24 w-full text-border opacity-40" />
@@ -112,7 +112,7 @@ export default function PartnerPage() {
             {partner.process.steps.map((step, i) => (
               <Reveal key={step.id} delay={i * 0.08}>
                 <div className="relative h-full rounded-xl border border-border bg-card p-base">
-                  <span className="font-mono text-xs tracking-[0.2em] text-primary">{step.index}</span>
+                  <span className="font-mono text-sm tracking-[0.2em] text-primary">{step.index}</span>
                   <h3 className="mt-base font-heading text-2xl text-foreground">{step.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{step.body}</p>
                 </div>

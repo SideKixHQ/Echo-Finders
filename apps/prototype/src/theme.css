@@ -1043,16 +1043,19 @@ body {
 .upnext ul { display: flex; flex-direction: column; gap: 0; list-style: none; margin: 0; padding: 0; }
 .upnext button {
   display: flex; align-items: center; gap: 10px; width: 100%;
-  min-height: 40px; background: none; border: 0; padding: 4px 0; cursor: pointer;
+  min-height: 44px; background: none; border: 0; padding: 4px 0; cursor: pointer;
   font: inherit; color: inherit; text-align: left;
 }
+/* One line: "20 min" broke into "20" over "min" in its 46px column, so the column now
+   starts at 46 and grows to the time. The title wraps to two lines before it cuts, rather
+   than "It was invented to ..." (James, 2026-11-10). */
 .upnext-when {
-  flex: none; width: 46px; font-family: "Space Grotesk", monospace;
+  flex: none; min-width: 46px; white-space: nowrap; font-family: "Space Grotesk", monospace;
   font-size: var(--fs-secondary); color: var(--ember);
 }
 .upnext-title {
-  flex: 1; min-width: 0; font-size: var(--fs-button); color: var(--cool);
-  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  flex: 1; min-width: 0; font-size: var(--fs-button); line-height: 1.3; color: var(--cool);
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden;
 }
 .upnext button:hover .upnext-title { color: var(--white); }
 .upnext-play {
@@ -1364,11 +1367,13 @@ body {
      icon sat at the top of its 48px box, 6.5px under the bar's edge instead of 11.5. */
   flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
   background: none; border: 0; cursor: pointer; position: relative;
-  font-size: var(--fs-label); letter-spacing: 0.03em; color: var(--muted);
-  font-family: "Space Grotesk", monospace; text-transform: uppercase;
+  /* Sentence case Sora, as the map board draws the tab bar ("Map", "My echoes",
+     "Settings"); it was uppercase Space Grotesk until 2026-11-10. 14, not the board's 13,
+     because 14 is this app's floor. */
+  font-family: inherit; font-size: var(--fs-label); font-weight: 500; color: var(--muted);
 
 }
-.nav button svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.nav button svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .nav button.on { color: var(--aqua); }
 /* A count of echoes found, so it is ember. The tab label beside it stays aqua, because
    that is a control. */
@@ -2338,7 +2343,8 @@ body {
      The ceiling leaves the map bar and a strip of map showing, because the card is about
      a pin and covering the pin entirely would make it a modal rather than a callout.
   */
-  max-height: calc(100% - var(--nav-h) - var(--step-h, 0px) - 120px);
+  /* Up to 10px under the search box: the top gap, the 56px box and its 10px. */
+  max-height: calc(100% - var(--nav-h) - var(--step-h, 0px) - 10px - var(--top-gap) - 76px);
   overflow-y: auto; overscroll-behavior: contain;
   padding: 13px 16px 12px; border-radius: 16px;
   background: rgba(var(--rgb-panel), 0.96); border: 1px solid var(--line-2);
@@ -2919,10 +2925,37 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   top: calc(var(--top-gap) + var(--mapbar-h) + 2px);
   pointer-events: none;
 }
-/* With an echo's card open, the card climbs to just under the map bar, so a toast under
-   the whole bar would sit on the card's ✕. It rides over the bar's second row (the trip and
-   filter chips, which nobody needs while reading a card) and leaves the search box free. */
-.screen:has(.pop) .toast-dock { top: calc(var(--top-gap) + 66px); }
+/*
+ * With an echo's card open, the card is the screen: it climbs to just under the search box,
+ * and the chips' row and any toast step aside until it closes.
+ *
+ * Before 2026-11-10 the card's ceiling was a fixed 120px (76px on a short phone) from the
+ * top, set when the map bar was one chip tall. The search box made the bar 126px, so the
+ * card's top edge ran through the middle of "Walking nearby" / "All echoes", and a toast
+ * riding over the chips covered the card's kicker and title (found sweeping every screen
+ * at 375 and 390). A toast that arrives while a card is open is still there when it shuts.
+ */
+.screen:has(.pop) .mapbar-row { visibility: hidden; }
+.screen:has(.pop) .toast-dock { visibility: hidden; }
+/* The walk planner is a sheet from the bottom, and a toast covered its title and ✕. */
+.screen:has(.pw) .toast-dock { visibility: hidden; }
+/* On a flight, Coming up sits where the toast does; the toast is the news, and it goes
+   with one tap, so Coming up waits under it rather than showing through. */
+.screen:has(.toast-dock .toast) .upnext { visibility: hidden; }
+/* With directions on, the next turn has the place under the map bar; a toast covered it
+   on a planned walk at 390. The toast goes under the turn (76px, up to two lines). */
+.screen:has(.dir-turn) .toast-dock { top: calc(var(--top-gap) + var(--mapbar-h) + 8px + 104px); }
+/* Report a problem and Know more rise over the card they came from; its title showed half
+   cut along their top edge. The card waits under them and is there when they close. */
+.screen:has(.atr) .pop { visibility: hidden; }
+/*
+ * On My echoes and Settings there is no map bar to sit under, and a toast at the map's
+ * height lay across the membership panel and the first rows of the list (found sweeping
+ * every screen, 2026-11-10). There it sits just above the tab bar, and the list keeps room
+ * at its end to scroll every row clear of it.
+ */
+.screen:has(.screen-body) .toast-dock { top: auto; bottom: calc(var(--nav-h) + 10px); }
+.screen:has(.toast-dock .toast) .screen-body { padding-bottom: 170px; }
 .toast {
   pointer-events: auto;
   display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
@@ -3283,18 +3316,6 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .nowhere-widen svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; }
 
-/* Say where instead: the journey menu's ZIP-or-place box, the height of the buttons. */
-.nowhere-look { text-align: left; }
-.nowhere-look .jmenu-look { padding: 0; }
-.nowhere-look .jmenu-look-field { height: 50px; margin: 0; border-radius: 15px; border-color: var(--line-2); }
-.nowhere-look .jmenu-look-field:focus-within { border-color: var(--aqua); }
-.nowhere-look .jmenu-hit { min-height: 44px; }
-/* Typing, the keyboard takes half the screen: the picture goes so the answers show. */
-/* Compact while typing AND while results are listed. Tied to focus alone, tapping a result
-   blurred the box, the graphic came back mid tap, everything slid down, and the tap landed
-   on "Use my location" instead (James, 2026-11-10: "tapping one doesnt work"). */
-.nowhere:has(.nowhere-look input:focus) .nowhere-seek,
-.nowhere:has(.nowhere-look .jmenu-hit) .nowhere-seek { display: none; }
 @media (max-height: 700px) {
   .nowhere-seek { height: 150px; }
   .nowhere-say p { font-size: var(--fs-secondary); line-height: 1.5; }
@@ -3642,6 +3663,11 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  *   nav 74 + pad 6 + acts (12 + 44) + transport (6 + 72) + settings (6 + 34) + clock 18
  */
 .hear-read { bottom: calc(var(--nav-h) + 204px); }
+/* Reading, the ribbon and its clock sit down on the controls instead of in the middle of
+   the free space. Centred, the clock floated up into the transcript on a 390x844 phone
+   ("0:03" and "-1:14" printed under "the enemy."), where the stack below it is shorter
+   than the 204px the panel allows for. */
+.hear:has(.hear-read) .hear-track { margin: auto 0 0; }
 /* Above the transcript, so the way out of the screen does not disappear behind the words. */
 .hear-back { z-index: 3; }
 
@@ -4088,7 +4114,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
    arm's length, which argues for the high side of any guideline. */
 .echobar-kicker {
   display: flex; align-items: center; gap: 5px; min-width: 0;
-  font-size: var(--fs-label); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+  font-size: var(--fs-label); font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;
   color: var(--cat, var(--cool)); white-space: nowrap; overflow: hidden;
 }
 .echobar-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; flex: none; }
@@ -4098,6 +4124,14 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .echobar-kicker em {
   font-style: normal; color: var(--muted); margin-left: auto; padding-left: 8px; flex: none;
 }
+/* The rarity and the kind give way, with an ellipsis, before "1 of 30" does: on a guided
+   walk at 390 "RARE TRUE CRIME 1 OF 6" was cut to "1 OF", and at 375 "ARTS & MUSIC 1 OF 30"
+   lost its count (found sweeping every screen, 2026-11-10). */
+.echobar-kicker > span:not(.echobar-dot) {
+  flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis;
+}
+/* "RARE" is four letters and the point of the line; the kind gives way first. */
+.echobar-kicker > b { flex: none; }
 /*
  * ONE LINE, then an ellipsis, and that is the point rather than a saving. A title that
  * wraps changes the height of the card every time an arrow is pressed, and a control that
@@ -4195,8 +4229,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .mapbar-row { flex-wrap: nowrap; align-items: center; }
 .jchip-wrap { position: relative; flex: none; }
 .jchip {
-  position: relative; overflow: hidden; display: flex; align-items: center; gap: 7px;
-  min-height: 48px; padding: 0 10px 0 13px; border-radius: 99px; cursor: pointer;
+  position: relative; overflow: hidden; display: flex; align-items: center; gap: 8px;
+  min-height: 48px; padding: 0 14px; border-radius: 99px; cursor: pointer;
   font: inherit; color: var(--white); white-space: nowrap;
   background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line-2);
   backdrop-filter: blur(12px);
@@ -4214,13 +4248,19 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   position: relative; width: 18px; height: 18px; flex: none; fill: none; stroke: var(--aqua);
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
+/*
+ * The map board's chip: Sora at 16, white, with the mode icon carrying the aqua. The label
+ * gives way with an ellipsis before the ▾ does: the chip clips its own overflow (for the
+ * progress fill), and a label that would not shrink pushed the ▾ out past that edge and
+ * cut it in half at 375 (James, 2026-11-10).
+ */
 .jchip-label {
-  position: relative; font-family: "Space Grotesk", monospace; font-size: var(--fs-button);
-  font-weight: 500; color: var(--aqua);
+  position: relative; flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis;
+  font-size: 16px; font-weight: 500; color: var(--white); text-align: left;
 }
 /* The ▾: this opens something. */
 .jchip-caret {
-  position: relative; width: 13px; height: 13px; flex: none; fill: none; stroke: var(--muted);
+  position: relative; width: 16px; height: 16px; flex: none; fill: none; stroke: var(--muted);
   stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round;
 }
 .jchip[aria-expanded="true"] .jchip-caret { transform: rotate(180deg); }
@@ -4452,9 +4492,9 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* ── Kinds of echo: one button, all of them behind it (KindPicker) ──────────── */
 /* The journey chip's twin: same 48px pill, side by side in the map bar. */
 .kind-tap {
-  flex: none; display: flex; align-items: center; gap: 6px; cursor: pointer;
-  min-height: 48px; padding: 0 12px; border-radius: 99px; white-space: nowrap;
-  font: inherit; font-size: var(--fs-button); font-weight: 500; color: var(--cool);
+  flex: none; display: flex; align-items: center; gap: 8px; cursor: pointer;
+  min-height: 48px; padding: 0 14px; border-radius: 99px; white-space: nowrap;
+  font: inherit; font-size: 16px; font-weight: 500; color: var(--cool);
   background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
   backdrop-filter: blur(12px);
 }
@@ -4466,7 +4506,12 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
 }
 .kind-glyph { color: var(--cat); }
-.kind-chev { width: 14px; height: 14px; stroke-width: 2; color: var(--muted); }
+.kind-chev { width: 16px; height: 16px; stroke-width: 2; color: var(--muted); }
+/* At 375 the board's 14px padding and 8px gaps leave "Walking nearby" a few pixels short;
+   two pixels off each, on both chips (so after both rules), lets both chips say their whole name on an iPhone SE. */
+@media (max-width: 380px) {
+  .jchip, .kind-tap { padding: 0 12px; gap: 6px; }
+}
 
 /* The box: straight below the chips' row, its full width, every kind in view at once. The
    row is the positioned parent, so the box spans gutter to gutter under both pills. */
@@ -4516,26 +4561,6 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* In My Echoes it is part of a sentence-case line, so it reads as words, not a stamp. */
 .entry-meta .truth { font: inherit; letter-spacing: 0; text-transform: lowercase; }
 
-/*
- * Looking somewhere else (`place-search.ts`): the search in the journey menu, and the pill
- * that says where the map is looking and brings it back. Browsing only; syncing an echo
- * still means standing at it.
- */
-.jmenu-look { padding: 4px 0 2px; }
-.jmenu-look-field {
-  display: flex; align-items: center; gap: 8px; margin: 4px 0;
-  padding: 0 12px; height: 44px; border-radius: 12px;
-  background: rgba(var(--rgb-panel), 0.6); border: 1px solid var(--line);
-}
-.jmenu-look-field svg {
-  width: 16px; height: 16px; flex: none; fill: none; stroke: var(--muted);
-  stroke-width: 1.8; stroke-linecap: round;
-}
-.jmenu-look-field input {
-  flex: 1; min-width: 0; height: 100%; border: 0; outline: none; background: none;
-  color: var(--white); font: inherit; font-size: var(--fs-body);
-}
-.jmenu-look-field:focus-within { border-color: var(--aqua); }
 /* Under the top bar, when the place looked up (or where you are) has no echoes yet. The
    "Back to me" pill that sat between them is gone: the locate arrow on the column does it. */
 .look-empty {
@@ -4762,7 +4787,13 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .pw-kind {
   font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.1em; text-transform: uppercase;
 }
-.pw-title { font-size: var(--fs-button); line-height: 1.3; color: var(--white); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Two lines before an ellipsis: on one, most stops read "The street is named after ..."
+   at 390, which is a list of half sentences rather than a walk. The list scrolls, so a
+   taller row costs nothing. */
+.pw-title {
+  font-size: var(--fs-button); line-height: 1.3; color: var(--white);
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden;
+}
 .pw-x {
   width: 44px; height: 44px; flex: none; border-radius: 12px; cursor: pointer; display: grid; place-items: center;
   background: none; border: 0; color: var(--muted);
@@ -5012,8 +5043,6 @@ div.maplibregl-map { font-size: var(--fs-label); }
    keeps its size; the decoration gives way (the photograph's strip, the place's second
    line) and the card may reach closer to the map bar. It was cut off 35px short there. */
 @media (max-height: 700px) {
-  /* Up to just under the map bar (12px gap + 48px chip + 16px), not 120px under it. */
-  .pop { max-height: calc(100% - var(--nav-h) - var(--step-h, 0px) - 76px); }
   .pop-plate img { height: 64px; }
   .pop-where { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
@@ -5150,6 +5179,7 @@ div.maplibregl-map { font-size: var(--fs-label); }
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
 }
 .pop .pop-truth { margin-top: 6px; align-items: center; gap: 12px; }
+/* 14, the floor; it was 13 beside the 14px VERIFIED it sits with. */
 .pop-len { font-size: var(--fs-label); color: var(--muted); }
 .pop .pop-teaser { margin: 10px 0 0; font-size: 17px; line-height: 1.45; color: var(--white); }
 

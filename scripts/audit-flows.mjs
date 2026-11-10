@@ -78,7 +78,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
 {
   const { ctx, p } = await freshApp();
   const nav = p.locator('.nav');
-  await nav.getByRole('button', { name: /My Echoes/ }).click();
+  await nav.getByRole('button', { name: /My echoes/i }).click();
   await p.waitForTimeout(500);
   check('My Echoes: titled', await visible(title(p, 'My Echoes')));
   // The demo walk ran behind onboarding and saved Castle Clinton, so a new listener's
@@ -92,7 +92,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.waitForTimeout(500);
   check('Settings: a tab of its own', await visible(title(p, 'Settings')));
   check('Settings: its tab is lit', /Settings/i.test(await currentTab(p)));
-  await nav.getByRole('button', { name: /My Echoes/ }).click();
+  await nav.getByRole('button', { name: /My echoes/i }).click();
   await p.waitForTimeout(400);
   check('Settings: My Echoes tab leads out', await visible(title(p, 'My Echoes')));
   await nav.getByRole('button', { name: /Settings/ }).click();
@@ -773,7 +773,7 @@ async function arrive() {
     check('Player: back returns to the map', !(await visible(p.locator('.hear'))) && await visible(p.locator('.mapbar')));
 
     // My Echoes now holds the fort (History), so its filter has something to filter.
-    await p.locator('.nav').getByRole('button', { name: /My Echoes/ }).click();
+    await p.locator('.nav').getByRole('button', { name: /My echoes/i }).click();
     await p.waitForTimeout(500);
     const filter = p.getByRole('button', { name: /^Filter my echoes/ });
     const fort = p.locator('.entry', { hasText: 'Eight million' });
@@ -825,7 +825,7 @@ async function arrive() {
       await p.locator('.toast-synced .toast-close').click().catch(() => {});
       await p.waitForTimeout(400);
     }
-    await p.locator('.nav').getByRole('button', { name: /My Echoes/ }).click();
+    await p.locator('.nav').getByRole('button', { name: /My echoes/i }).click();
     await p.waitForTimeout(800);
     check('My Echoes: keeps what was found on other journeys', await visible(fort));
 

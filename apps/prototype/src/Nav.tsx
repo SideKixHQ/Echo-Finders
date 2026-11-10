@@ -68,7 +68,7 @@ function NavInner({ tab, onChange, foundCount }: Props) {
           <path d="M12 21.5s7-5.7 7-11.1A7 7 0 0 0 5 10.4c0 5.4 7 11.1 7 11.1z" />
           <path d="M9 10.2l2.2 2.2L15 8.6" />
         </svg>
-        My Echoes
+        My echoes
         {foundCount > 0 && <span className="badge">{foundCount}</span>}
       </button>
       <button

@@ -210,7 +210,7 @@ export function HowEchoesUnlock({ onDone }: { readonly onDone: () => void }) {
             </span>
             <span className="how-say">
               <b>Synced</b>
-              <span>Tap Play. It stays in My Echoes.</span>
+              <span>Tap Play. It stays in My echoes.</span>
             </span>
           </li>
         </ol>

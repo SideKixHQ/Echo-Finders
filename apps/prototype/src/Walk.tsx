@@ -177,7 +177,7 @@ export function Walk({
         <p className="walk-card-note mono">
           {playsItself
             ? "It will play by itself when you arrive"
-            : "It goes into My Echoes when you arrive, to play when you like"}
+            : "It goes into My echoes when you arrive, to play when you like"}
         </p>
       </article>
 
