@@ -1,62 +1,35 @@
 /**
- * Walking to an echo, inside the app: the turn at the top, the walk at the bottom.
+ * Walking to an echo, inside the app: the turn at the top, the echo at the bottom.
  *
  * James (2026-11-10): "Take me there should use in app map navigation and take the person
- * to the echo not open apple maps. You also do not need another step. take me there should
- * take you there not open another window you have to tap to open another app."
+ * to the echo not open apple maps." So one tap on the card starts this, and nothing in it
+ * leaves the app:
  *
- * So one tap on the card starts this, and nothing in it leaves the app:
- *
- * - **The turn banner**, under the top bar: how far to the next turn and what it is
- *   ("120 m, Turn right onto Chestnut Street"). Read at arm's length.
- * - **The sheet**, at the bottom: minutes, distance, arrival time, which echo, what happens
- *   when you get there, and the one way to stop.
+ * - **The turn card** (this), under the top bar: how far to the next turn and what it is
+ *   ("120 m, Turn right onto Chestnut Street"). Read at arm's length. With no street map it
+ *   points at the echo: "Head south".
+ * - **The echo bar** at the bottom, the one people already know (`EchoBar`, its directions
+ *   mode): the echo's orb and title, "18 min · arrive 9:58 pm" under it, and a round ✕ that
+ *   ends directions. Tapping it opens the echo's card. This is board DirC, approved by
+ *   James on 2026-11-10 in place of a directions sheet that took a third of the screen and
+ *   cut its own title through on his phone.
  * - **The line** on the map (`RouteMap`): along the streets where a street file was built,
- *   straight to the echo where none was. Where it is straight, the banner says "Head
- *   northeast" and the sheet says so, rather than handing you to another maps app, which is
- *   what this used to do there ("Directions in Maps").
+ *   straight to the echo where none was, framed between this card and the bar.
  *
  * Arriving is the sync's job, as it always was: within reach the echo syncs, the beacon is
- * let go and the sync card takes over (`App`).
+ * let go and the bar goes back to being the echo bar, with Play.
  */
 
-import { useLayoutEffect, useRef } from "react";
-import type { Echo, WalkGuidance, LatLng } from "@echofinders/core";
+import type { WalkGuidance, LatLng } from "@echofinders/core";
 import { arrivalClock, routeGuidance, straightGuidance } from "@echofinders/core";
 import { walkDistance, walkTime, type Directions } from "./directions";
-import { startLine } from "./guided-walk";
 import { WALKABLE_KM } from "./going";
 
-interface Props {
-  readonly echo: Echo;
-  readonly directions: Directions;
-  /** Where you are, for the straight line where there is no street route. */
-  readonly from: LatLng | null;
-  readonly onEnd: () => void;
-  /** On a planned walk: which stop this is, of how many. */
-  readonly step?: { readonly at: number; readonly of: number };
-  /** The first leg of a guided walk: "Walk to the start · 6 min". */
-  readonly toStart?: boolean;
-  /** The sheet's real height, each time it changes, for the map to keep clear of it. */
-  readonly onHeight?: (px: number) => void;
-}
-
 /**
- * How tall the sheet is before it has been measured: the first paint's guess.
- *
- * It used to BE the sheet's height, fixed, and the sheet's content outgrew it: "Stop 1 of
- * 8 · to <title>" on its own line, a two line title, and a note on two lines made it
- * taller than 196px, so on James's phone the title was cut through by the line under it
- * (2026-11-10). The sheet now fits its content and says how tall it came out (`onHeight`,
- * and `--step-h` on the screen for the control column), so nothing has to agree with it.
+ * Past this the walk is not offered at all (`going.ts`). Directions that somehow reach it
+ * end, and the echo's card says how far instead (`App`).
  */
-export const DIRSHEET_H = 196;
-
-/**
- * Past this, a walking time and an arrival clock stop meaning anything. The card asks the
- * same question (`going.ts`) and does not offer a walk past it.
- */
-const WALKABLE_M = WALKABLE_KM * 1000;
+export const WALKABLE_M = WALKABLE_KM * 1000;
 
 /** The guidance for what the router answered, or null while it is still working. */
 export function guidanceFor(directions: Directions, from: LatLng | null, to: LatLng): WalkGuidance | null {
@@ -90,72 +63,30 @@ function Arrow({ guidance }: { guidance: WalkGuidance | null }) {
   );
 }
 
-export function DirectionsBar({ echo, directions, from, onEnd, step, toStart = false, onHeight }: Props) {
-  const g = guidanceFor(directions, from, echo.point.at);
-  const walkable = g !== null && g.metres <= WALKABLE_M;
-  /*
-    Measured, not declared: the map keeps its pins, its credit and the way there above
-    this, and the control column reads `--step-h` to stay above it too.
-  */
-  const sheet = useRef<HTMLElement>(null);
-  const heightTo = useRef(onHeight);
-  heightTo.current = onHeight;
-  useLayoutEffect(() => {
-    const el = sheet.current;
-    const screen = el?.closest<HTMLElement>(".screen");
-    if (!el) return;
-    let last = -1;
-    const measure = () => {
-      const h = Math.ceil(el.getBoundingClientRect().height);
-      if (h < 1 || h === last) return;
-      last = h;
-      screen?.style.setProperty("--step-h", `${h}px`);
-      heightTo.current?.(h);
-    };
-    measure();
-    if (typeof ResizeObserver === "undefined") return () => screen?.style.removeProperty("--step-h");
-    const observer = new ResizeObserver(measure);
-    observer.observe(el);
-    return () => {
-      observer.disconnect();
-      screen?.style.removeProperty("--step-h");
-    };
-  }, []);
-  return (
-    <>
-      <div className="dir-turn" role="status" aria-live="polite">
-        <Arrow guidance={g} />
-        <div className="dir-turn-say">
-          {g?.inM != null && <strong className="dir-turn-in">{walkDistance(g.inM)}</strong>}
-          <span className="dir-turn-what">{g ? g.say : "Finding the way…"}</span>
-        </div>
-      </div>
+/**
+ * The bar's second line while walking: "18 min · arrive 9:58 pm", and on a planned or
+ * guided walk "Stop 1 of 6 · 3 min · arrive 9:28 pm". No distance: the turn card has it.
+ * Each part is its own string so the bar can keep them whole when the line wraps.
+ */
+export function directionsLine(
+  g: WalkGuidance | null,
+  step: { readonly at: number; readonly of: number } | undefined,
+  nowMs: number,
+): readonly string[] {
+  const where = step ? [`Stop ${step.at} of ${step.of}`] : [];
+  if (!g) return [...where, "Finding the way"];
+  return [...where, walkTime(g.seconds), `arrive ${arrivalClock(nowMs, g.seconds)}`];
+}
 
-      <section className="dir-sheet" ref={sheet} aria-label={`Directions to ${echo.title}`}>
-        {/* How long and when, on one row where it fits: the sheet is kept short. */}
-        <div className="dir-sheet-head">
-          <p className={toStart ? "dir-sheet-big dir-sheet-start" : "dir-sheet-big"}>
-            {g ? (walkable ? (toStart ? startLine(walkTime(g.seconds)) : walkTime(g.seconds)) : walkDistance(g.metres)) : "\u00a0"}
-          </p>
-          <p className="dir-sheet-how">
-            {g
-              ? walkable
-                ? `${walkDistance(g.metres)} · arrive ${arrivalClock(Date.now(), g.seconds)}`
-                : "Too far to walk"
-              : ""}
-          </p>
-        </div>
-        <p className="dir-sheet-to">
-          {step ? `Stop ${step.at} of ${step.of} · ` : ""}to {echo.title}
-        </p>
-        <p className="dir-sheet-note">
-          {/* With no street file the turn card already says which way ("Head south"). */}
-          {g && !g.streets ? "As the crow flies. When you arrive it unlocks. Tap Play." : "When you arrive it unlocks. Tap Play."}
-        </p>
-        <button className="dir-end" onClick={onEnd}>
-          {step ? "End the walk" : "End directions"}
-        </button>
-      </section>
-    </>
+/** The turn card, under the top bar. */
+export function DirectionsBar({ guidance: g }: { readonly guidance: WalkGuidance | null }) {
+  return (
+    <div className="dir-turn" role="status" aria-live="polite">
+      <Arrow guidance={g} />
+      <div className="dir-turn-say">
+        {g?.inM != null && <strong className="dir-turn-in">{walkDistance(g.inM)}</strong>}
+        <span className="dir-turn-what">{g ? g.say : "Finding the way…"}</span>
+      </div>
+    </div>
   );
 }

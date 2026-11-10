@@ -6,7 +6,6 @@ import {
   guideFrom,
   guidedStops,
   simulatesRoute,
-  startLine,
   stopWaypoints,
   walkedKm,
 } from "../../apps/prototype/src/guided-walk";
@@ -89,10 +88,6 @@ describe("the way to the start", () => {
     // 9.5 km north of the first stop: shown, not walked to.
     expect(guideFrom({ lat: RIVER.lat + 9.5 / 111.2, lng: RIVER.lng }, RIVER)).toBe(false);
     expect(guideFrom({ lat: RIVER.lat + 4 / 111.2, lng: RIVER.lng }, RIVER)).toBe(true);
-  });
-  it("says what to do first, with no dashes", () => {
-    expect(startLine("6 min")).toBe("Walk to the start · 6 min");
-    expect(startLine("6 min")).not.toMatch(/[-–—]/);
   });
 });
 

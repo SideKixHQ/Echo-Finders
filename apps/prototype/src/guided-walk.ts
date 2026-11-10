@@ -109,8 +109,3 @@ export function walkedKm(
   // Forward only: GPS wobble near a bend should not walk the chip backwards.
   return Math.max(previousKm, Math.min(geometry.totalKm, hit.alongTrackKm));
 }
-
-/** The first step of a guided walk, as the directions sheet says it. */
-export function startLine(minutes: string): string {
-  return `Walk to the start · ${minutes}`;
-}

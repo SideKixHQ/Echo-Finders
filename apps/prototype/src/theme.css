@@ -4740,14 +4740,6 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .dir-turn-in { font-size: 24px; font-weight: 700; line-height: 1.1; }
 .dir-turn-what { font-size: var(--fs-body); font-weight: 500; line-height: 1.25; }
 
-/*
- * The sheet, at the bottom over the tab bar's edge: how long, how far, when you get
- * there, where to, what happens then, and the one way to stop. It is as tall as what is
- * in it: a fixed 196px cut a two line "Stop 1 of 8 · to <title>" through (James,
- * 2026-11-10). `DirectionsBar` measures it and sets --step-h on the screen, so the control
- * column stays above it; this is only the guess before the first measure.
- */
-.screen:has(.dir-sheet) { --step-h: 196px; }
 /* And the column stays below the turn banner: on a 667px phone its top two buttons went
    under it. It wraps into a second column instead, as it does for the stepper. */
 .screen:has(.dir-turn) .rail {
@@ -4755,45 +4747,49 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
      standing up into the turn card and the chips. */
   max-height: max(44px, calc(100% - var(--mapbar-h) - var(--nav-h) - var(--step-h, 0px) - 24px - 108px));
 }
-.dir-sheet {
-  position: absolute; left: 0; right: 0; z-index: 25;
-  bottom: var(--nav-h); box-sizing: border-box; margin: 0;
-  padding: 14px var(--gutter) 12px;
-  display: flex; flex-direction: column; gap: 6px;
-  background: rgb(var(--rgb-panel)); border-top: 1px solid var(--line);
-  border-radius: 22px 22px 0 0; box-shadow: 0 -10px 28px rgba(var(--rgb-shadow), calc(0.35 * var(--shadow-k)));
-}
-.dir-sheet p { margin: 0; }
-.dir-sheet > * { flex: none; }
-.dir-sheet-head { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 12px; row-gap: 2px; }
-.dir-sheet-big { font-size: 28px; font-weight: 700; line-height: 1.1; color: var(--white); }
-/* A guided walk's first leg, "Walk to the start · 6 min": one line on the narrowest phone. */
-.dir-sheet-start { font-size: 22px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
-.dir-sheet-how { white-space: nowrap; font-size: var(--fs-secondary); line-height: 1.3; color: var(--muted); }
-/* Which stop and which echo, on its own line and in full: never cut with an ellipsis. */
-.dir-sheet-to {
-  min-width: 0; font-size: var(--fs-secondary); line-height: 1.3; color: var(--muted); text-wrap: pretty;
-}
-.dir-sheet-note { font-size: var(--fs-secondary); line-height: 1.35; color: var(--cool); text-wrap: pretty; }
-.dir-end {
-  margin-top: 4px; flex: none; min-height: 48px; width: 100%; border-radius: 14px; cursor: pointer;
-  background: none; border: 1.5px solid var(--magenta-ink); color: var(--magenta-ink);
-  font: inherit; font-size: 16px; font-weight: 600;
-}
-.dir-end:hover { background: rgba(255, 0, 122, 0.08); }
-/*
- * A short screen (an SE with Safari's bars, 553px): the chips, the turn card, the sheet and
- * the tab bar came to more than the phone, so there was no map between them. Tighter, and
- * the note goes: the gold line on the card has already said it unlocks when you get there.
- */
+/* A short screen (an SE with Safari's bars, 553px): the turn card gives the map room, and
+   the column, lying flat there, sits above the map's credit rather than on it. */
 @media (max-height: 620px) {
-  .dir-sheet { padding: 10px var(--gutter) 10px; gap: 4px; }
-  .dir-sheet-note { display: none; }
-  .dir-end { margin-top: 2px; min-height: 44px; }
+  .screen:has(.dir-turn) .rail {
+    bottom: calc(var(--nav-h) + var(--step-h, 0px) + 12px + 20px);
+    max-height: max(44px, calc(100% - var(--mapbar-h) - var(--nav-h) - var(--step-h, 0px) - 24px - 108px - 20px));
+  }
   .dir-turn { min-height: 0; padding: 8px 14px; gap: 12px; }
   .dir-turn-in { font-size: 20px; }
   .dir-turn-arrow { width: 26px; height: 26px; }
 }
+
+/*
+ * Walking to an echo, the echo bar is the directions (board DirC, James 2026-11-10): the
+ * orb, the title in full, "18 min · arrive 9:58 pm", and a round magenta ✕ that ends them.
+ * It replaced a directions sheet. The title wraps rather than being cut, so the bar is as
+ * tall as it is; `EchoBar` measures it and sets --step-h, and tells the map.
+ */
+.echobar-dir .echobar-row > .echobar-card { padding: 9px 4px 9px 8px; }
+.echobar-dir .echobar-face { gap: 10px; }
+.echobar-dir .echobar-orb, .echobar-dir .echobar-orb svg { width: 44px; height: 44px; }
+.echobar-dir .echobar-tap { gap: 3px; }
+.echobar-dir .echobar-tap strong {
+  white-space: normal; overflow: visible; text-overflow: clip; font-weight: 600;
+  font-size: 16px; line-height: 1.25;
+}
+/* The echo's card, opened from the bar, has the screen; the turn comes back when it shuts. */
+.screen:has(.pop) .dir-turn { visibility: hidden; }
+/* "Stop 1 of 6 ·", "3 min ·", "arrive 9:28 pm": each part whole if the line wraps. */
+.echobar-way {
+  display: flex; flex-wrap: wrap; column-gap: 4px;
+  font-size: var(--fs-secondary); line-height: 1.3; color: var(--muted);
+}
+.echobar-way > span { white-space: nowrap; }
+.echobar-end {
+  flex: none; align-self: center; width: 44px; height: 44px; margin: 0 8px 0 2px; padding: 0;
+  display: grid; place-items: center; border-radius: 50%; cursor: pointer;
+  background: none; border: 1.5px solid var(--magenta-ink); color: var(--magenta-ink);
+}
+.echobar-end svg {
+  width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round;
+}
+.echobar-end:hover { background: rgba(255, 0, 122, 0.08); }
 
 .dir-dest circle { fill: none; stroke: var(--aqua); stroke-width: 2; }
 .dir-dest-pulse { transform-origin: center; animation: destPulse 2.2s ease-out infinite; }

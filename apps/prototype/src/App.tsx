@@ -67,7 +67,7 @@ import { ReactionCard, faceOf } from "./ReactionCard";
 import { react, readReactions, type Reactions } from "./reaction-store";
 import { keepJourney, readJourney } from "./journey-store";
 import { useDirections, useWalkLine } from "./directions";
-import { DirectionsBar, DIRSHEET_H } from "./DirectionsBar";
+import { DirectionsBar, WALKABLE_M, directionsLine, guidanceFor } from "./DirectionsBar";
 import { PlanWalk } from "./PlanWalk";
 import { AddToRoute } from "./AddToRoute";
 import { Routes } from "./Routes";
@@ -1519,11 +1519,16 @@ export function App() {
    * agreeing: tap a pin and the arrows carry on from somewhere else. The selection IS
    * the position, so tapping a pin moves the stepper to it for free.
    */
+  /** The echo you last walked to and arrived at: the bar stays on it once directions end. */
+  const [arrivedAt, setArrivedAt] = useState<string | null>(null);
+  useEffect(() => {
+    if (beacon) setArrivedAt(null);
+  }, [beacon]);
   const stepIndex = useMemo(() => {
-    // Walking to one, the bar shows the one you are walking to.
-    const on = focusId ?? selectedId ?? beacon;
+    // Walking to one, the bar shows the one you are walking to; arrived, the one you are at.
+    const on = focusId ?? selectedId ?? beacon ?? arrivedAt;
     return on ? stepList.findIndex((i) => i.echo.id === on) : -1;
-  }, [stepList, focusId, selectedId, beacon]);
+  }, [stepList, focusId, selectedId, beacon, arrivedAt]);
 
   /** What the ears and the dial are both fed. One list, so they can never disagree. */
   const around = useMemo(
@@ -1631,8 +1636,11 @@ export function App() {
    * stands down until you arrive or end them (James, 2026-11-10, the directions board).
    */
   const directing = beacon !== null && selfDirected;
-  /** The directions sheet's measured height (`DirectionsBar`), for the map to keep clear of. */
-  const [dirSheetH, setDirSheetH] = useState(DIRSHEET_H);
+  /**
+   * The echo bar's measured height while it is the directions (`EchoBar`), with the gap it
+   * floats: a long title wraps to a second line, and the map keeps the walk above it.
+   */
+  const [dirBarH, setDirBarH] = useState(ECHOBAR_H);
   const showBar = !showingRose && !directing && !(nowhere && !overview) && stepList.length > 0;
 
   /** The map is on you and moving with you: what lights the locate button. */
@@ -1693,6 +1701,25 @@ export function App() {
       return [{ lat: fromLat, lng: fromLng }, aimed.point.at];
     return null;
   }, [directions, aimed, fromLat, fromLng]);
+
+  /** The turn, and how long and when, for the turn card and the bar. */
+  const dirGuidance = useMemo(
+    () => (aimed && selfDirected ? guidanceFor(directions, state.position?.at ?? null, aimed.point.at) : null),
+    [aimed, selfDirected, directions, state.position],
+  );
+  /*
+   * Directions past a walk cannot be started any more (`going.ts`: the card offers Save).
+   * If anything still gets here, a saved route started from a town away, they end, and the
+   * echo's card says how far instead of a bar saying "Too far to walk".
+   */
+  const tooFarNow = dirGuidance !== null && dirGuidance.metres > WALKABLE_M;
+  useEffect(() => {
+    if (!tooFarNow || !aimed) return;
+    setBeacon(null);
+    setPlan(null);
+    setPan({ x: 0, y: 0 });
+    setSelectedId(aimed.id);
+  }, [tooFarNow, aimed]);
 
   /**
    * A planned walk (ADR-0018): being planned, or under way.
@@ -1882,10 +1909,14 @@ export function App() {
         }
         setPlan(null);
       }
+      setArrivedAt(beacon);
       setBeacon(null);
-      // The map was opened to get you here. You are here, so it has done its job and the
-      // hunting screen comes back rather than leaving you on a street map of where you are.
-      setWalkingView("rose");
+      /*
+        The map stays, and the bar at its foot, which was the directions, is the echo bar
+        again for the echo you are standing on, with Play: the same bar in the same place
+        (board DirC, 2026-11-10). It used to switch to the compass here, so the screen you
+        had walked with vanished at the moment you arrived.
+      */
     }
   }, [beacon, stateOf, plan]);
   useEffect(() => {
@@ -2212,7 +2243,7 @@ export function App() {
                 focusId={focusId}
                 /* The stepper covers the bottom of the map, so the map has to know: it
                    keeps pins, edge markers and the Esri credit above it. */
-                reservedBottom={(showBar ? ECHOBAR_H : directing ? dirSheetH : 0) + (farOut && !directing ? AREACARD_H + (showBar ? AREACARD_OVER_BAR : 0) : 0)}
+                reservedBottom={(showBar ? ECHOBAR_H : directing ? dirBarH : 0) + (farOut && !directing ? AREACARD_H + (showBar ? AREACARD_OVER_BAR : 0) : 0)}
                 onInView={setInView}
                 overview={overview}
                 progress={along}
@@ -2276,22 +2307,7 @@ export function App() {
                   }}
                 />
               )}
-              {aimed && selfDirected && (
-                <DirectionsBar
-                  echo={aimed}
-                  directions={directions}
-                  from={state.position?.at ?? null}
-                  {...(plan?.active ? { step: { at: plan.at + 1, of: plan.stops.length } } : {})}
-                  // A guided walk's first leg is getting to it, and the sheet says so.
-                  toStart={plan?.guided !== undefined && plan.at === 0}
-                  onHeight={setDirSheetH}
-                  onEnd={() => {
-                    setBeacon(null);
-                    setPlan(null);
-                    setPan({ x: 0, y: 0 });
-                  }}
-                />
-              )}
+              {aimed && selfDirected && <DirectionsBar guidance={dirGuidance} />}
               {/* A place with nothing in it said nothing: an empty navy screen (90210, found
                   2026-10-13). */}
               {roaming && lookAt && onMap.length === 0 && (
@@ -2318,8 +2334,54 @@ export function App() {
                 twenty six pins, fifteen of them in one pile — and stepping nearest first
                 is the only answer on that screen that does not involve aiming at the pile.
               */}
-              {/* Not while directions are up: their sheet has the bottom of the screen. */}
+              {/* Not while directions are up: the bar is about the echo you are walking to. */}
               {farOut && !directing && <AreaCard echoes={inView} above={showBar ? ECHOBAR_H - ECHOBAR_FLOAT + AREACARD_OVER_BAR : 0} />}
+              {/*
+                Walking to an echo, the same bar is the directions (board DirC): its orb and
+                title, how long and when you arrive, and ✕ to end them. Tapping it opens the
+                echo's card; closing the card comes back to this. Arriving ends directions as
+                it always has, and this becomes the echo bar again, in the same place.
+              */}
+              {directing && aimed && (
+                <EchoBar
+                  items={[{ echo: aimed, distanceKm: state.position ? distanceKm(state.position.at, aimed.point.at) : null }]}
+                  index={0}
+                  stateOf={stateOf}
+                  onStep={() => {}}
+                  onOpen={(echo) => {
+                    setFocusId(null);
+                    setSelectedId(echo.id);
+                  }}
+                  nowPlaying={nowPlaying}
+                  playing={playing}
+                  progress={progress}
+                  onPlayPause={() => {
+                    if (playing) session.pause();
+                    else if (stopped && nowPlaying) playOrAsk(nowPlaying);
+                    else session.resume();
+                  }}
+                  onPlay={(echo) => {
+                    playOrAsk(echo);
+                    setListening(true);
+                  }}
+                  simple={simple}
+                  mode={roaming ? roamMode : route.mode}
+                  guidance={state.guidance}
+                  directions={{
+                    line: directionsLine(
+                      dirGuidance,
+                      plan?.active ? { at: plan.at + 1, of: plan.stops.length } : undefined,
+                      Date.now(),
+                    ),
+                    onHeight: setDirBarH,
+                    onEnd: () => {
+                      setBeacon(null);
+                      setPlan(null);
+                      setPan({ x: 0, y: 0 });
+                    },
+                  }}
+                />
+              )}
               {showBar && (
                 <EchoBar
                   items={stepList}
