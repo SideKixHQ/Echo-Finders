@@ -52,6 +52,7 @@ import { presetFor, rarityOf, type Echo, type Guidance, type TravelMode } from "
 import { CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, type EchoFace } from "@echofinders/echo";
 import type { PinState } from "./RouteMap";
+import { listenLength } from "./going";
 
 export interface EchoBarItem {
   readonly echo: Echo;
@@ -284,7 +285,7 @@ export function EchoBar({
             <span className="echobar-where">
               <span className="echobar-place">{shortPlace(echo.point.place)}</span>
               <span className="echobar-facts">
-                {reach(distanceKm, cue?.kind ?? null, presetFor(mode).speedKph)} · {clock(durationS)}
+                {reach(distanceKm, cue?.kind ?? null, presetFor(mode).speedKph)} · {listenLength(durationS)}
               </span>
             </span>
           </button>
@@ -365,6 +366,3 @@ function shortPlace(place: string): string {
   const cut = place.indexOf(",");
   return cut > 0 ? place.slice(0, cut) : place;
 }
-
-const clock = (seconds: number) =>
-  `${Math.floor(seconds / 60)}:${String(Math.round(seconds % 60)).padStart(2, "0")}`;

@@ -16,6 +16,7 @@
  * is worse than no button, so there is only ever one primary and it says what is true:
  *
  *   far off      "Walk there · 12 min", and a gold line: it unlocks when you get there
+ *   too far      "1,083 km away" and Save, because no walk goes there (`going.ts`)
  *   within reach "hold still": the sync is automatic and happens by standing there
  *   synced       Play, which is the only moment a play button appears at all
  *
@@ -38,6 +39,7 @@ import { driveThereUrl } from "./drive-there";
 import { MODE_ICON } from "./travel";
 import { walkTime } from "./directions";
 import { echoLink, shareText } from "./share";
+import { farAway, listenLength, tooFarToWalk } from "./going";
 
 export interface EchoPopupProps {
   readonly echo: Echo;
@@ -144,6 +146,12 @@ export function EchoPopup({
   const photo = echo.archive?.[0];
   const playable = synced || anywhere;
   const ground = mode === "walking" || mode === "cycling" || mode === "driving";
+  /*
+    Somewhere looked up, a city away: there is no walk to offer. Searching Boston from
+    Wilmington offered "Walk there", and the walk it started said "Too far to walk". So the
+    card says the distance plainly and the one useful thing is keeping it for later.
+  */
+  const tooFar = !playable && !withinReach && mode !== "driving" && onAim !== undefined && tooFarToWalk(distanceKm);
   const [more, setMore] = useState(false);
   const moreRef = useRef<HTMLDivElement>(null);
 
@@ -245,7 +253,7 @@ export function EchoPopup({
       {/* How long it is, beside the mark, so a long address cannot crop it off. */}
       <span className="pop-truth">
         <TruthMark echo={echo} />
-        <span className="pop-len">{Math.max(1, Math.round(echo.durationS / 60))} min listen</span>
+        <span className="pop-len">{listenLength(echo.durationS)}</span>
       </span>
 
       <p className="pop-teaser">{echo.teaser ?? echo.summary}</p>
@@ -279,6 +287,16 @@ export function EchoPopup({
             </svg>
             Drive there
           </a>
+        ) : tooFar ? (
+          <>
+            <p className="pop-state pop-far">{farAway(distanceKm ?? 0)}</p>
+            <button className={saved ? "pop-aim pop-keep on" : "pop-aim pop-keep"} onClick={() => onSave(echo)} aria-pressed={saved}>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+              </svg>
+              {saved ? "Saved" : "Save"}
+            </button>
+          </>
         ) : onAim ? (
           <button className={aimed ? "pop-aim on" : "pop-aim"} onClick={() => onAim(echo)} aria-pressed={aimed}>
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -296,7 +314,7 @@ export function EchoPopup({
               <rect x="5" y="11" width="14" height="10" rx="2" />
               <path d="M8 11V8a4 4 0 0 1 8 0v3" />
             </svg>
-            {tip ? `Echoes unlock where they happened. ${tip.line}.` : UNLOCKS[mode]}
+            {tip ? `Echoes unlock where they happened. ${tip.line}.` : tooFar ? "Unlocks when you're there" : UNLOCKS[mode]}
           </p>
         )}
         {tip && !playable && !withinReach && (
@@ -311,14 +329,17 @@ export function EchoPopup({
         names under them: an icon alone is a guess, and these are read at arm's length.
       */}
       <div className="pop-acts" ref={moreRef}>
-        <button className={saved ? "pop-act on" : "pop-act"} onClick={() => onSave(echo)} aria-pressed={saved}>
-          <span className="pop-act-ring" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-            </svg>
-          </span>
-          {saved ? "Saved" : "Save"}
-        </button>
+        {/* Too far, Save is the primary above, and a second Save here would be the card twice. */}
+        {!tooFar && (
+          <button className={saved ? "pop-act on" : "pop-act"} onClick={() => onSave(echo)} aria-pressed={saved}>
+            <span className="pop-act-ring" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+              </svg>
+            </span>
+            {saved ? "Saved" : "Save"}
+          </button>
+        )}
         {onAddToRoute && (
           <button
             className={inRoutes ? "pop-act pop-route on" : "pop-act pop-route"}

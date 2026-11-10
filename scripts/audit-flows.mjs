@@ -504,6 +504,43 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── The echo card, too far to walk ──────────────────────────────────────────────
+// Searching Boston from Wilmington offered "Walk there", and the walk it started said
+// "1,083 km · Head northeast · Too far to walk". Past a walk (`going.ts`), the card says how
+// far plainly, Save is the primary, and nothing offers directions. The bar beside it says
+// "1 min listen", not "0:59", which read as the time it takes to get there.
+{
+  const { ctx, p } = await freshApp();
+  const box = p.getByLabel('Search a city, place or ZIP code');
+  await box.click();
+  await box.fill('Boston');
+  await p.waitForTimeout(600);
+  await p.locator('#msearch-results .msearch-go').first().click().catch(() => {});
+  await p.waitForTimeout(1500);
+  const card = p.locator('.pop');
+  check('Far card: Go on a Boston echo opens its card', await visible(card));
+  await card.locator('.pop-tip-ok').click({ timeout: 1000 }).catch(() => {});
+  await p.waitForTimeout(300);
+  const far = (await card.locator('.pop-far').innerText().catch(() => '')).trim();
+  check('Far card: says how far, plainly', /^[\d,]+ km away$/.test(far), far);
+  check('Far card: no directions offered',
+    (await card.getByRole('button', { name: /Walk there|Ride there|Take me there|Following/ }).count()) === 0
+    && (await card.locator('.pop-aim:not(.pop-keep)').count()) === 0);
+  const keep = card.locator('.pop-primary').getByRole('button', { name: 'Save', exact: true });
+  check('Far card: Save is the primary', await visible(keep));
+  check('Far card: Save is not on the card twice', (await card.getByRole('button', { name: 'Save', exact: true }).count()) === 1);
+  check('Far card: the gold line says it unlocks when you are there', await visible(card.getByText("Unlocks when you're there")));
+  const keepBox = await keep.boundingBox();
+  check('Far card: Save is a 44px target', !!keepBox && keepBox.height >= 44, JSON.stringify(keepBox));
+  await keep.click().catch(() => {});
+  await p.waitForTimeout(300);
+  check('Far card: Save saves', await visible(card.locator('.pop-primary').getByRole('button', { name: 'Saved', exact: true })));
+  check('Far card: nothing walks you there', !(await p.locator('.dir-turn, .dir-sheet').count()));
+  const facts = (await p.locator('.echobar-facts').first().innerText().catch(() => '')).trim();
+  check('Echo bar: the length says it is a listen, not a clock', /min listen$/.test(facts) && !/\d:\d\d/.test(facts), facts);
+  await ctx.close();
+}
+
 // ── Search, on top of the map ──────────────────────────────────────────────────
 // James (2026-11-10): "When someone is searching you have to make that box stand out ...
 // it has to be really easy to search, then go or save an echo." The box is the map's first
