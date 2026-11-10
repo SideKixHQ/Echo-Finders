@@ -30,7 +30,9 @@ Two gaps closed later, both found by --indigo-btn sitting at 2.93:1 for months:
 import re, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-css = (ROOT / "apps/prototype/src/theme.css").read_text()
+# Comments out first: a comment that says "--btn: one hex" was being read as a declaration
+# that swallowed the real one after it, so --aqua-ink never resolved in the dark scheme.
+css = re.sub(r"/\*.*?\*/", "", (ROOT / "apps/prototype/src/theme.css").read_text(), flags=re.S)
 
 def vars_in(block):
     out = {}
@@ -42,6 +44,13 @@ root = re.search(r':root\s*\{(.*?)\n\}', css, re.S).group(1)
 light = re.search(r':root\[data-theme="light"\]\s*\{(.*?)\n\}', css, re.S)
 DARK = vars_in(root)
 LIGHT = dict(DARK); LIGHT.update(vars_in(light.group(1))) if light else None
+
+def _lit_chip(table):
+    """`rgba(var(--rgb-hair), 0.08)` over the panel, composed: what a lit chip is."""
+    hair = [int(x) for x in table["--rgb-hair"].split(",")]
+    panel = [int(x) for x in table["--rgb-panel"].split(",")]
+    return "#" + "".join(f"{round(h*0.08 + p*0.92):02x}" for h, p in zip(hair, panel))
+for _t in (DARK, LIGHT): _t["--x-chip-lit"] = _lit_chip(_t)
 
 def hexrgb(h):
     h = h.strip().lstrip("#")
@@ -98,6 +107,17 @@ CHECKS = [
     ("aqua on sheet",    "--aqua",   "--slate"),
     ("ember on sheet",   "--ember",  "--slate"),
     ("indigo-soft/sheet","--indigo-soft", "--slate"),
+    # Added when light mode was redone (2026-11-10): the warm inks and the paper ground,
+    # and the lit chip, which is a hair wash over a panel rather than either surface.
+    ("ember-core/space",  "--ember-core", "--space"),
+    ("ember-core/sheet",  "--ember-core", "--slate"),
+    ("aqua-ink/sheet",    "--aqua-ink", "--slate"),
+    ("aqua-ink/lit chip", "--aqua-ink", "--x-chip-lit"),
+    ("muted/lit chip",    "--muted",  "--x-chip-lit"),
+    ("muted/charcoal",    "--muted",  "--charcoal"),
+    ("muted-soft/sheet",  "--muted-soft", "--slate"),
+    ("magenta-ink/sheet", "--magenta-ink", "--slate"),
+    ("body on charcoal",  "--white",  "--charcoal"),
 ]
 CATS = [k for k in DARK if k.startswith("--cat-")]
 
@@ -120,6 +140,9 @@ CONTROLS = [
 # button stays one colour rather than becoming one colour with a black label on it.
 ON_FILL = [
     ("label on button", "--btn-ink", "--btn-flat"),
+    # A lit toggle (the locate button, a picked chip) is an --aqua fill with --on-aqua
+    # ink. It was a literal #042220, which on the light scheme's deep teal was 2.6:1.
+    ("label on aqua",   "--on-aqua", "--aqua"),
 ]
 
 def report(name, table):
@@ -151,15 +174,18 @@ def report(name, table):
         if r < 4.5: fails.append((label, round(r,2)))
         print(f"  {label:<20} {r:5.2f}  {ok}")
 
-    surf = flatten(resolve("var(--slate)", table), (0,0,0))
-    print(f"  -- category text on sheet ({'dark' if name=='DARK' else 'light'}) --")
-    for c in sorted(CATS):
-        f = resolve(f"var({c})", table)
-        if not f: continue
-        r = ratio(flatten(f, surf), surf)
-        ok = "OK " if r >= 4.5 else ("lg " if r >= 3 else "FAIL")
-        if r < 4.5: fails.append((c, round(r,2)))
-        print(f"  {c:<22} {r:5.2f}  {ok}")
+    # On the sheet, and on the page ground: in the light scheme those are two colours
+    # (white and paper), and a kicker on the page is as much text as one on a card.
+    for surfname in ("--slate", "--space"):
+        surf = flatten(resolve(f"var({surfname})", table), (0,0,0))
+        print(f"  -- category text on {surfname} ({'dark' if name=='DARK' else 'light'}) --")
+        for c in sorted(CATS):
+            f = resolve(f"var({c})", table)
+            if not f: continue
+            r = ratio(flatten(f, surf), surf)
+            ok = "OK " if r >= 4.5 else ("lg " if r >= 3 else "FAIL")
+            if r < 4.5: fails.append((f"{c} on {surfname}", round(r,2)))
+            print(f"  {c:<22} {r:5.2f}  {ok}")
     return fails
 
 f1 = report("DARK", DARK)
