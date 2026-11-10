@@ -50,7 +50,12 @@ interface Props {
   readonly faceOf?: (echoId: string) => string | null;
   /** Echoes bookmarked but not yet stood on. Intentions, as against the record. */
   readonly saved: readonly Echo[];
+  /** Save or unsave: on a saved row, it is Unsave. */
   readonly onSave: (echo: Echo) => void;
+  /** Go, on a saved row: the map, on that echo, its card open. */
+  readonly onGo?: (echo: Echo) => void;
+  /** The empty state's next step: back to the map, on you. */
+  readonly onFindNear?: () => void;
   /** How you are travelling, because it decides what "being there" means. */
   readonly mode: TravelMode;
   /** Echoes, or the listener's routes (`Routes.tsx`), drawn in place of the list. */
@@ -99,6 +104,9 @@ export function Collection({
   isPlaying,
   isHeard,
   saved,
+  onSave,
+  onGo,
+  onFindNear,
   mode,
   faceOf,
   view = "echoes",
@@ -158,6 +166,11 @@ export function Collection({
         <div className="empty">
           <b>Nothing synced yet</b>
           <span>{EMPTY_LINE[mode]}</span>
+          {onFindNear && (
+            <button className="coll-find" onClick={onFindNear}>
+              Find echoes near me
+            </button>
+          )}
         </div>
       </div>
     );
@@ -182,6 +195,23 @@ export function Collection({
   // shows only what was found that way.
   const wishlist = saved.filter((e) => shown(e) && !travel && !captured.some((c) => c.echo.id === e.id));
   const nothingMatches = filtering && filtered.length === 0 && wishlist.length === 0;
+
+  const group = ({ key, label, items }: (typeof groups)[number]) => (
+    <section key={key} className={`group group-${key}`}>
+      <h3 className="group-head">{label}</h3>
+      {items.map((capture) => (
+        <Entry
+          key={capture.echo.id}
+          capture={capture}
+          privacy={privacy}
+          onPlay={onPlay}
+          playing={isPlaying(capture.echo.id)}
+          heard={isHeard(capture.echo.id)}
+          face={faceOf?.(capture.echo.id) ?? null}
+        />
+      ))}
+    </section>
+  );
 
   const singularCount = captured.filter((c) => rarityOf(c.echo) === "singular").length;
   const minutes = Math.round(captured.reduce((t, c) => t + c.echo.durationS, 0) / 60);
@@ -257,43 +287,40 @@ export function Collection({
         </div>
       )}
 
-      {groups.map(({ key, label, items }) => (
-        <section key={key} className={`group group-${key}`}>
-          <h3 className="group-head">{label}</h3>
-          {items.map((capture) => (
-            <Entry
-              key={capture.echo.id}
-              capture={capture}
-              privacy={privacy}
-              onPlay={onPlay}
-              playing={isPlaying(capture.echo.id)}
-              heard={isHeard(capture.echo.id)}
-              face={faceOf?.(capture.echo.id) ?? null}
-            />
-          ))}
-        </section>
-      ))}
+      {groups.filter((g) => g.key === "unheard").map(group)}
 
-      {/* A footnote, set as one. It had the same border, padding and background as an
-          echo, so a sentence about settings carried the visual weight of a story somebody
-          walked to. The distinction it draws is worth keeping; the card around it was not. */}
+      {/*
+        Saved: places you want to go, as against places you stood. Save is on every card
+        and every search result, and this is where those land: each with Go, which opens
+        its card on the map, and Unsave. Between the backlog and the record, because it is
+        a list of things still to do.
+      */}
       {wishlist.length > 0 && (
-        <section className="group">
-          <h3 className="group-head">Saved to hear · {wishlist.length}</h3>
+        <section className="group group-saved" aria-label="Saved">
+          <h3 className="group-head">Saved · {wishlist.length}</h3>
           {wishlist.map((echo) => (
             <article key={echo.id} className="entry entry-wish">
-              <button className="entry-hit" onClick={() => onPlay(echo)}>
-                <Glyph echo={echo} playing={false} heard />
-                <div className="entry-text">
-                  <h4>{echo.title}</h4>
-                  <p>{echo.point.place}</p>
-                  <p className="entry-meta mono">Not stood on yet</p>
+              <Glyph echo={echo} playing={false} heard />
+              <div className="entry-text">
+                <h4>{echo.title}</h4>
+                <p>{echo.point.place}</p>
+                <div className="saved-acts">
+                  {onGo && (
+                    <button className="saved-go" onClick={() => onGo(echo)} aria-label={`Go to ${echo.title}`}>
+                      Go
+                    </button>
+                  )}
+                  <button className="saved-unsave" onClick={() => onSave(echo)} aria-label={`Unsave ${echo.title}`}>
+                    Unsave
+                  </button>
                 </div>
-              </button>
+              </div>
             </article>
           ))}
         </section>
       )}
+
+      {groups.filter((g) => g.key === "heard").map(group)}
 
       <footer className="collection-foot">
         {privacy.recordPrecisePlaces ? (

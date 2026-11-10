@@ -541,6 +541,90 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── Saved, in My Echoes ─────────────────────────────────────────────────────────
+// Save said "Saved" on the card and in the search, and My Echoes said "Nothing synced yet":
+// saved echoes were only on it when they were on the current journey. Now every saved echo
+// is under Saved, with Go (its card on the map) and Unsave, and saving says where it went.
+{
+  const { ctx, p } = await freshApp();
+  const nav = p.locator('.nav');
+  const big = (loc) => loc.evaluateAll((els) => els
+    .filter((e) => { const r = e.getBoundingClientRect(); return r.width < 44 || r.height < 44; })
+    .map((e) => e.textContent.trim() || e.getAttribute('aria-label')));
+
+  // Empty, it says what to do next, and the routes' empty state is a heading and a line.
+  await nav.getByRole('button', { name: /My echoes/i }).click();
+  await p.waitForTimeout(500);
+  const find = p.locator('.screen-body').getByRole('button', { name: 'Find echoes near me' });
+  check('My Echoes empty: a next step, Find echoes near me', await visible(find));
+  check('My Echoes empty: the next step is a 44px target', (await big(find)).length === 0);
+  await p.getByRole('tab', { name: 'Routes' }).click();
+  await p.waitForTimeout(400);
+  const gap = await p.locator('.routes-empty').evaluate((e) => {
+    const b = e.querySelector('b').getBoundingClientRect(), t = e.querySelector('span').getBoundingClientRect();
+    return t.top - b.bottom;
+  }).catch(() => -1);
+  check('Routes empty: "No routes yet" sits on its own line, apart from the words under it', gap >= 0, String(gap));
+  await p.getByRole('tab', { name: 'Echoes' }).click();
+  await p.waitForTimeout(300);
+  await find.click();
+  await p.waitForTimeout(800);
+  check('My Echoes empty: Find echoes near me goes to the map', await visible(p.locator('.mapbar')) && /Map/i.test(await currentTab(p)));
+
+  // Save on the card says where it went.
+  await p.locator('.echobar-tap').click().catch(() => {});
+  await p.waitForTimeout(600);
+  const card = p.locator('.pop');
+  await card.locator('.pop-tip-ok').click({ timeout: 1000 }).catch(() => {});
+  const near = (await card.locator('h3').innerText().catch(() => '')).trim();
+  await card.locator('.pop-acts').getByRole('button', { name: 'Save', exact: true }).click().catch(() => {});
+  await p.waitForTimeout(400);
+  check('Saved: the card says Saved to My echoes', await visible(p.locator('.toast-saved', { hasText: 'Saved to My echoes' })));
+  await p.locator('.pop-close').click().catch(() => {});
+  await p.waitForTimeout(300);
+
+  // So does Save in the search, on the row, because the results cover the toast.
+  const box = p.getByLabel('Search a city, place or ZIP code');
+  await box.click();
+  await box.fill('Boston');
+  await p.waitForTimeout(600);
+  const row = p.locator('#msearch-results .msearch-echo').first();
+  const far = (await row.locator('b').innerText().catch(() => '')).trim();
+  await row.locator('.msearch-save').click().catch(() => {});
+  await p.waitForTimeout(300);
+  check('Saved: the search row says Saved to My echoes', await visible(row.getByText('Saved to My echoes')));
+  await p.getByRole('button', { name: 'Close search' }).click().catch(() => {});
+  await p.waitForTimeout(300);
+
+  // My Echoes lists both, the one near and the one a city away.
+  await nav.getByRole('button', { name: /My echoes/i }).click();
+  await p.waitForTimeout(600);
+  const saved = p.locator('section[aria-label="Saved"]');
+  check('Saved: My Echoes has a Saved section', await visible(saved.getByRole('heading', { name: /^Saved · 2$/ })));
+  check('Saved: both are listed, the near one and the far one', !!near && !!far
+    && await visible(saved.locator('.entry-wish', { hasText: near })) && await visible(saved.locator('.entry-wish', { hasText: far })), `${near} / ${far}`);
+  check('Saved: no Nothing synced yet over a list that has something in it', (await p.getByText('Nothing synced yet').count()) === 0);
+  check('Saved: each has Go and Unsave', (await saved.locator('.entry-wish').evaluateAll((rs) => rs.every((r) => r.querySelector('.saved-go') && r.querySelector('.saved-unsave')))));
+  const smallSaved = await big(saved.locator('button'));
+  check('Saved: Go and Unsave are 44px targets', smallSaved.length === 0, smallSaved.join(', '));
+  // Saved keeps: a reload does not lose it (`saved-store.ts`).
+  await p.reload({ waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(2500);
+  await p.locator('.how-go').click({ timeout: 1500 }).catch(() => {});
+  await nav.getByRole('button', { name: /My echoes/i }).click().catch(() => {});
+  await p.waitForTimeout(600);
+  check('Saved: a reload keeps what was saved', await visible(saved.getByRole('heading', { name: /^Saved · 2$/ }))
+    && await visible(saved.locator('.entry-wish', { hasText: far })));
+  await saved.getByRole('button', { name: `Unsave ${far}` }).click().catch(() => {});
+  await p.waitForTimeout(300);
+  check('Saved: Unsave takes it off', (await saved.locator('.entry-wish').count()) === 1 && !(await visible(saved.locator('.entry-wish', { hasText: far }))));
+  await saved.getByRole('button', { name: `Go to ${near}` }).click().catch(() => {});
+  await p.waitForTimeout(1200);
+  check('Saved: Go opens its card on the map', /Map/i.test(await currentTab(p))
+    && await visible(p.locator('.pop')) && (await p.locator('.pop h3').innerText().catch(() => '')).includes(near), near);
+  await ctx.close();
+}
+
 // ── Search, on top of the map ──────────────────────────────────────────────────
 // James (2026-11-10): "When someone is searching you have to make that box stand out ...
 // it has to be really easy to search, then go or save an echo." The box is the map's first

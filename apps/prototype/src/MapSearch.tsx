@@ -33,6 +33,8 @@ export interface MapSearchProps {
 export function MapSearch({ library, saved, onLook, onGo, onSave }: MapSearchProps) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
+  /** The row just saved, which says where it went: the toast is under these results. */
+  const [justSaved, setJustSaved] = useState<string | null>(null);
   const [table, setTable] = useState<ReadonlyMap<string, { lat: number; lng: number }> | null>(null);
   const input = useRef<HTMLInputElement | null>(null);
 
@@ -44,6 +46,7 @@ export function MapSearch({ library, saved, onLook, onGo, onSave }: MapSearchPro
   const close = () => {
     setOpen(false);
     setQuery("");
+    setJustSaved(null);
     input.current?.blur();
   };
 
@@ -174,6 +177,11 @@ export function MapSearch({ library, saved, onLook, onGo, onSave }: MapSearchPro
                     <span className="msearch-words">
                       <b>{echo.title}</b>
                       <small>{town}</small>
+                      {isSaved && justSaved === echo.id && (
+                        <small className="msearch-note" role="status">
+                          Saved to My echoes
+                        </small>
+                      )}
                     </span>
                     <button
                       className="msearch-go"
@@ -189,7 +197,10 @@ export function MapSearch({ library, saved, onLook, onGo, onSave }: MapSearchPro
                       className={isSaved ? "msearch-save on" : "msearch-save"}
                       aria-label={isSaved ? `Saved: ${echo.title}` : `Save ${echo.title}`}
                       aria-pressed={isSaved}
-                      onClick={() => onSave(echo)}
+                      onClick={() => {
+                        setJustSaved(isSaved ? null : echo.id);
+                        onSave(echo);
+                      }}
                     >
                       <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M7 4h10v16l-5-4-5 4z" />

@@ -38,7 +38,9 @@ import { Rail, type WalkingView } from "./Rail";
 import { MODE_PHRASE } from "./travel";
 import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { holdLockScreen, primeLockScreen } from "./lock-screen";
-import { HowEchoesUnlock, NearToast, SyncedToast } from "./Toasts";
+import { savedList } from "./saved-list";
+import { readSaved, toggleSaved, writeSaved } from "./saved-store";
+import { HowEchoesUnlock, NearToast, SavedToast, SAVED_SHOW_MS, SyncedToast } from "./Toasts";
 import {
   HOW_KEY,
   LOCKED_KEY,
@@ -299,7 +301,14 @@ export function App() {
   // the screen off; this decides whether they then talk. Somebody can very reasonably want
   // a phone collecting in a pocket while still choosing what they hear.
   const [autoPlay, setAutoPlay] = useState(false);
+  /**
+   * The plan's picks: what autoplay may play on this journey (`Plan.tsx`). Not Save, which
+   * shared this set until saving a far echo limited autoplay to it, and switching journeys
+   * cleared everything saved. Saved is `saved`, kept on the device (`saved-store.ts`).
+   */
   const [chosen, setChosen] = useState<ReadonlySet<string>>(new Set());
+  const [saved, setSaved] = useState<ReadonlySet<string>>(readSaved);
+  useEffect(() => writeSaved(saved), [saved]);
   /**
    * Which categories are on. `null` means all of them.
    *
@@ -567,7 +576,7 @@ export function App() {
     setTab("map");
     // Look at where it happened, which is almost never where the link was opened: with no
     // location yet the map would otherwise be "Where are you?" with nothing to show.
-    setLookAt({ label: echo.point.place, detail: "", at: echo.point.at });
+    setLookAt({ label: echo.point.place.split(",")[0]!.trim(), detail: "", at: echo.point.at });
     setPan({ x: 0, y: 0 });
     setSelectedId(gift);
     // Once: deliberately not re-run when settings change, or closing the card would not stick.
@@ -845,7 +854,7 @@ export function App() {
     setCamera(null);
     setDeleted(new Set());
     setPaused(false);
-    // A choice belongs to the journey it was made for.
+    // The plan's picks belong to the journey they were made for. What is saved stays.
     setChosen(new Set());
     setCats(null);
     setOverview(false);
@@ -1223,7 +1232,7 @@ export function App() {
       (echo) => checkEligibility(echo, { profile: listener, playAtMs: Date.now() }).eligible,
     );
   }, [byRoute, route.id, kids]);
-  const savedEchoes = useMemo(() => onRoute.filter((e) => chosen.has(e.id)), [onRoute, chosen]);
+  const savedEchoes = useMemo(() => onRoute.filter((e) => saved.has(e.id)), [onRoute, saved]);
   /**
    * The saved list, in the order you will reach them.
    *
@@ -1234,13 +1243,8 @@ export function App() {
    * said it already lived. The ordering came with it rather than being dropped with the
    * sheet: "Saved to hear" in the order you added them is a list about last Tuesday.
    */
-  const savedNearby = useMemo(() => {
-    const from = state.position?.at;
-    return savedEchoes
-      .map((echo) => ({ echo, distanceKm: from ? distanceKm(from, echo.point.at) : 0 }))
-      .sort((a, b) => a.distanceKm - b.distanceKm)
-      .map((s) => s.echo);
-  }, [savedEchoes, state.position]);
+  // Every saved echo, not only the ones on this journey (`saved-list.ts`).
+  const savedNearby = useMemo(() => savedList(saved, LIBRARY_BY_ID, state.position?.at), [saved, state.position]);
   const suggestion = useMemo(
     () => ROUTES.find((r) => r.id !== route.id && (corridorCounts[r.id] ?? 0) > 1) ?? null,
     [route.id, corridorCounts],
@@ -1285,13 +1289,15 @@ export function App() {
    * map. "Just this one" is now a single tap on that chip, so All only ever means all.
    */
   const allCategories = useCallback(() => setCats(null), []);
+  /** "Saved to My echoes": which echo was just saved, for the toast that says where it went. */
+  const [savedToast, setSavedToast] = useState<string | null>(null);
+  // Leaving the map lets it go, so it does not come back on the way in again.
+  useEffect(() => setSavedToast(null), [tab]);
+  const savedRef = useRef(saved);
+  savedRef.current = saved;
   const toggleSave = useCallback((echo: Echo) => {
-    setChosen((current) => {
-      const next = new Set(current);
-      if (next.has(echo.id)) next.delete(echo.id);
-      else next.add(echo.id);
-      return next;
-    });
+    setSavedToast(savedRef.current.has(echo.id) ? null : echo.id);
+    setSaved((current) => toggleSaved(current, echo.id));
   }, []);
   const openPackage = useCallback(() => setPackageOpen(true), []);
   const setKidsMode = useCallback((on: boolean) => {
@@ -1722,6 +1728,14 @@ export function App() {
     setPan({ x: 0, y: 0 });
     setZoom(1);
   };
+  /** The map, on this echo, its card open: Go in the search, and Go on a saved echo. */
+  const goToEcho = (echo: Echo) => {
+    setTab("map");
+    setListening(false);
+    lookSomewhere({ label: echo.point.place.split(",")[0]!.trim(), detail: "", at: echo.point.at }, roamMode);
+    setFocusId(echo.id);
+    setSelectedId(echo.id);
+  };
   const openPlanner = () => {
     const start = state.position?.at;
     if (!start) return;
@@ -1995,13 +2009,9 @@ export function App() {
                 */}
                 <MapSearch
                   library={LIBRARY}
-                  saved={chosen}
+                  saved={saved}
                   onLook={(hit) => lookSomewhere(hit, roamMode)}
-                  onGo={(echo) => {
-                    lookSomewhere({ label: echo.point.place.split(",")[0]!.trim(), detail: "", at: echo.point.at }, roamMode);
-                    setFocusId(echo.id);
-                    setSelectedId(echo.id);
-                  }}
+                  onGo={goToEcho}
                   onSave={toggleSave}
                 />
                 <div className="mapbar-row">
@@ -2410,7 +2420,7 @@ export function App() {
                   distanceKm={selectedEcho.distanceKm}
                   state={stateOf(selectedEcho.echo.id)}
                   mode={roaming ? roamMode : route.mode}
-                  saved={chosen.has(selectedEcho.echo.id)}
+                  saved={saved.has(selectedEcho.echo.id)}
                   aimed={beacon === selectedEcho.echo.id}
                   {...(selfDirected
                     ? {
@@ -2540,6 +2550,13 @@ export function App() {
               isHeard={(id) => stateOf(id) === "heard" || found.heardBefore.has(id)}
               saved={savedNearby}
               onSave={toggleSave}
+              onGo={goToEcho}
+              onFindNear={() => {
+                // Back to the map, framed on you rather than on somewhere looked up.
+                setLookAt(null);
+                setWalkingView("map");
+                setTab("map");
+              }}
               mode={roaming ? roamMode : route.mode}
               view={echoesView}
               onView={setEchoesView}
@@ -2837,6 +2854,18 @@ export function App() {
                   />
                 );
               }
+              // On the map, where the card and the search that saved it are.
+              const justSaved = savedToast && tab === "map" && saved.has(savedToast) ? LIBRARY_BY_ID.get(savedToast) : undefined;
+              if (justSaved) {
+                return (
+                  <SavedToast
+                    key={`saved-${justSaved.id}`}
+                    title={justSaved.title}
+                    showMs={SAVED_SHOW_MS}
+                    onClose={() => setSavedToast(null)}
+                  />
+                );
+              }
               const near = nearToast ? around.find((a) => a.echo.id === nearToast) : undefined;
               if (near && tab === "map") {
                 return (
@@ -2915,7 +2944,7 @@ export function App() {
             progress={progress}
             playing={playing}
             durationS={(simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS}
-            saved={chosen.has(nowPlaying.id)}
+            saved={saved.has(nowPlaying.id)}
             onSave={() => toggleSave(nowPlaying)}
             onPlayPause={() => {
               /*
