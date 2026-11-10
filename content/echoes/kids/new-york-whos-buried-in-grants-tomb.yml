@@ -1,0 +1,80 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Morningside Heights and Riverside cluster (more NYC batch).
+# Listening spot: The front steps of Grant's Tomb (General Grant National Memorial), Riverside Drive at West 122nd Street, below the words "Let Us Have Peace".
+# Position: Wikidata Q1025105 (Grant's Tomb) coordinate (high confidence).
+id: new-york-whos-buried-in-grants-tomb
+title: "Who's Buried in Grant's Tomb?"
+summary: "It is the oldest trick question in New York. The answer is nobody, and the reason is inside, under the dome."
+place: "Grant's Tomb, Riverside Drive at West 122nd Street, Morningside Heights, Manhattan"
+at: { lat: 40.81344, lng: -73.96301 }
+triggerRadiusKm: 0.05
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, morningside-heights, grants-tomb, riddle, family, civil-war]
+teaser: "A riddle with a trick answer. Want to hear it?"
+script: |
+  Look up at the giant stone building in front of you, with the round roof and the big columns. Find the words carved above the door. Let us have peace.
+
+  Here is a riddle grown ups love. Who is buried in Grant's Tomb?
+
+  Easy, you say. Grant. Ulysses S. Grant, the general who won the Civil War, and then became President.
+
+  Wrong. Well, sort of.
+
+  Go inside, under the dome, and look over the railing into the room below. You will see two huge stone boxes. One is General Grant. The other is his wife, Julia.
+
+  Buried means put under the ground. And they are not under the ground. They are resting in the room, above it.
+
+  So who is buried in Grant's Tomb? Nobody.
+
+  Here is the other surprise. About ninety thousand people sent money to build this. It is the biggest tomb of its kind in North America. And when it opened, more than a million people came to the party.
+
+  Now you know the trick.
+
+  Go and try it on somebody.
+
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Find the words carved above the door. Let us have peace."
+    source: 1
+    quote: "Let Us Have Peace Epitaph on the front of Mausoleum"
+  - says: "Ulysses S. Grant, the general who won the Civil War, and then became President."
+    source: 2
+    quote: "commemorate the contributions of Grant as both commanding general of the Union Army who won the Civil War and as the 18th president of the United States."
+  - says: "One is General Grant. The other is his wife, Julia."
+    source: 3
+    quote: "The sunken crypt below the central viewing gallery contains the sarcophogai of Ulysses S Grant and his wife Julia D Grant."
+  - says: "Go inside, under the dome, and look over the railing into the room below."
+    source: 3
+    quote: "The soaring ceiling rises more than 100 feet in to the air to a dome that covers the decorated room. The sunken crypt below the central viewing gallery contains the sarcophogai"
+  - says: "About ninety thousand people sent money to build this."
+    source: 1
+    quote: "Approximately 90,000 people from around the world donated over $600,000 towards the construction of Grant's Tomb."
+  - says: "It is the biggest tomb of its kind in North America."
+    source: 1
+    quote: "the granite and marble structure was completed in 1897 and remains the largest mausoleum in North America."
+  - says: "And when it opened, more than a million people came to the party."
+    source: 1
+    quote: "Over one million people attended the parade and dedication ceremony of Grant's Tomb on April 27, 1897."
+sources:
+  - title: "History and Culture, General Grant National Memorial"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/gegr/learn/historyculture/index.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Fact Sheet: General Grant National Memorial"
+    publisher: "National Park Service, National Parks of New York Harbor"
+    url: https://www.nps.gov/npnh/learn/news/gegrfactsheet.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Rotunda of Grant's Tomb"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/the-rotunda-of-grant-s-tomb.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

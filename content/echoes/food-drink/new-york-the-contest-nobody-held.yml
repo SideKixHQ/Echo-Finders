@@ -1,0 +1,89 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Coney Island (more NYC batch). A rare find: about 17 km from the Midtown cluster.
+# Listening spot: The Surf Avenue sidewalk outside the original Nathan's Famous stand, Surf and Stillwell Avenues, Coney Island.
+# Position: Wikidata Q1319505 (Nathan's Famous) coordinate, the flagship on the lot of the first stand (high confidence).
+id: new-york-the-contest-nobody-held
+title: "The Contest Nobody Held"
+summary: "Nathan's hot dog stand opened on this corner in 1916, selling dogs for a nickel. Its famous 1916 eating contest is another matter."
+place: "Nathan's Famous, Surf Avenue at Stillwell Avenue, Coney Island, Brooklyn"
+at: { lat: 40.57528, lng: -73.98139 }
+triggerRadiusKm: 0.05
+category: food-drink
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [new-york, coney-island, brooklyn, hot-dogs, nathans, immigrants, legend-busting]
+teaser: "Every Fourth of July, they tell you the contest began in 1916. One of the men who started it says they made it up."
+script: |
+  Look at the long counter, the signs, the crowd. It has been selling hot dogs on this corner for more than a hundred years.
+
+  And for decades, it has been telling a story that is not true.
+
+  First, the true part. In nineteen sixteen, a Polish immigrant named Nathan Handwerker opened a hot dog stand here, with three hundred dollars borrowed from two friends. His family says he arrived with no English, and just enough money to get through Ellis Island.
+
+  He sold his hot dogs for five cents. When the Depression came, his family says, you could feed a family of four here for under fifty cents. The sidewalk was lined with people pushing in to the counter.
+
+  Now the other part. Every Fourth of July, the famous eating contest here is told as a tradition that began in nineteen sixteen. Immigrants on this boardwalk, the story goes, eating hot dogs to prove who was the most American.
+
+  It never happened.
+
+  The contest began in nineteen seventy two. Publicity men made up the old story to get Nathan's into the newspapers. One of them later admitted it. In Coney Island pitchman style, he said, we made it up.
+
+  In the early years, a former company president said, they would wait for a couple of big guys to walk by, and ask if they wanted to be in a contest.
+
+  So order a hot dog. That part is real.
+
+  The legend is just the mustard.
+
+pronunciations:
+  - written: Handwerker
+    say: HAND-wer-ker
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "In nineteen sixteen, a Polish immigrant named Nathan Handwerker opened a hot dog stand here, with three hundred dollars borrowed from two friends."
+    source: 2
+    quote: "the same year Polish immigrant Nathan Handwerker opened his Coney Island hot dog stand using a $300 loan from two friends."
+  - says: "His family says he arrived with no English, and just enough money to get through Ellis Island."
+    source: 1
+    quote: "\"He came with no English and just enough money to come to Ellis Island,\" Handwerker said."
+  - says: "He sold his hot dogs for five cents."
+    source: 1
+    quote: "Nathan gained customers when he decided to drop his prices to just 5 cents a dog."
+  - says: "When the Depression came, his family says, you could feed a family of four here for under fifty cents."
+    source: 1
+    quote: "\"Once the Depression rolled around, that's when the business started taking off because you could feed a family of four for under 50 cents,\" Handwerker said."
+  - says: "The sidewalk was lined with people pushing in to the counter."
+    source: 1
+    quote: "\"The sidewalk out here was lined with people pushing in to the counters. The boardwalk was packed,\" Handwerker said."
+  - says: "Every Fourth of July, the famous eating contest here is told as a tradition that began in nineteen sixteen."
+    source: 2
+    quote: "Showmen behind Nathan’s annual Fourth of July hot dog eating contest have long claimed the tradition began in 1916 as a showdown between patriotic immigrants on the Coney Island boardwalk."
+  - says: "Immigrants on this boardwalk, the story goes, eating hot dogs to prove who was the most American."
+    source: 2
+    quote: "As the story goes, an Irish immigrant named James Mullen had been walking in Coney Island when he challenged a group of recent immigrants to prove who was the most American."
+  - says: "The contest began in nineteen seventy two."
+    source: 2
+    quote: "He says the first contest actually happened in 1972"
+  - says: "Publicity men made up the old story to get Nathan's into the newspapers."
+    source: 2
+    quote: "The contest and its backstory were invented in the 1970s by PR men trying to get more attention for Nathan’s, which had just become a publicly traded company."
+  - says: "In Coney Island pitchman style, he said, we made it up."
+    source: 2
+    quote: "Mortimer Matz, one of the contest’s hype men, unapologetically admitted to The New York Times in 2010 that “in Coney Island pitchman style, we made it up.”"
+  - says: "In the early years, a former company president said, they would wait for a couple of big guys to walk by, and ask if they wanted to be in a contest."
+    source: 2
+    quote: "“We’d honestly wait for a couple of fat guys to walk by and ask them if they wanted to be in a hot dog contest,” he says."
+sources:
+  - title: "Hot Dog History: How Nathan's Famous Hot Dogs Made The Iconic Food An American Symbol"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/nathans-famous-hot-dogs-history/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Behind hot dog contest, a tale that's hard to swallow (Associated Press), 1 July 2016"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/business/2016/07/01/behind-hot-dog-contest-tale-that-hard-swallow/TxKUz4NzKeXurLJKk3lxuM/story.html
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

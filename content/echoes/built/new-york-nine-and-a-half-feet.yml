@@ -1,0 +1,62 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, West Village cluster (more NYC batch).
+# Listening spot: The sidewalk in front of 75 1/2 Bedford Street, between Commerce and Morton Streets, West Village: a very narrow brick house with a stepped gable.
+# Position: Bedford Street just south of Commerce Street, from the street plan (medium confidence). The house is the point of the echo, so the radius is tight.
+id: new-york-nine-and-a-half-feet
+title: "Nine and a Half Feet"
+summary: "Said to be the narrowest house in New York: nine and a half feet wide. A famous poet lived in it."
+place: "75 1/2 Bedford Street, West Village, Manhattan"
+at: { lat: 40.73140, lng: -74.00510 }
+triggerRadiusKm: 0.03
+category: built
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, west-village, architecture, narrow-house, edna-st-vincent-millay]
+teaser: "Stretch out your arms. Now imagine that is most of the width of your house."
+script: |
+  Find the little house squeezed in between its neighbours, with the stepped gable on top. If you are with someone, stand side by side and stretch your arms out wide.
+
+  Not even two people's arm spans. That is how wide this house is.
+
+  Nine and a half feet. Thirty feet deep. Three floors.
+
+  It is wedged in between its neighbours, and for a long time it has been called the narrowest house in New York.
+
+  The stepped gable on its roof is a shape the Dutch brought to this city.
+
+  And people did live here. Not just anybody. One of them was the actor John Barrymore. Another was the poet Edna St. Vincent Millay.
+
+  Picture her climbing the narrow stairs with an armful of books, trying not to touch both walls at once.
+
+  A poet's home, nine and a half feet wide.
+
+pronunciations:
+  - written: Millay
+    say: mil-LAY
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Nine and a half feet. Thirty feet deep. Three floors."
+    source: 1
+    quote: "751/2 Bedford Street is nine and one-half feet wide, thirty feet long, and three stories high."
+  - says: "It is wedged in between its neighbours, and for a long time it has been called the narrowest house in New York."
+    source: 1
+    quote: "Said to be the narrowest house in New York, 751/2 Bedford Street is nine and one-half feet wide"
+  - says: "The stepped gable on its roof is a shape the Dutch brought to this city."
+    source: 1
+    quote: "Its stepped gable recalls the old Dutch architectural detail."
+  - says: "One of them was the actor John Barrymore."
+    source: 1
+    quote: "Among the tenants of the building have been John Barrymore and Edna St. Vincent Millay."
+  - says: "Another was the poet Edna St. Vincent Millay."
+    source: 1
+    quote: "Among the tenants of the building have been John Barrymore and Edna St. Vincent Millay."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Greenwich Village"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain

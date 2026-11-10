@@ -1,0 +1,104 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Hudson Square and West Village cluster (more NYC batch).
+# Listening spot: The corner of Varick and Charlton Streets, Hudson Square, the site of Richmond Hill (Mortier House), Washington's headquarters in the summer of 1776.
+# Position: Varick Street at Charlton Street, from the street plan (medium confidence). The hanging itself took place on open ground between two brigade camps, not recorded precisely; this echo stands at the headquarters.
+id: new-york-the-generals-guard
+title: "The General's Guard"
+summary: "In June 1776 one of Washington's own guards was hanged for treachery. That same day, the British fleet arrived."
+place: "Varick Street at Charlton Street, site of the Mortier House, Hudson Square, Manhattan"
+at: { lat: 40.72703, lng: -74.00560 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 95
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [new-york, hudson-square, revolution, military, washington, conspiracy, richmond-hill]
+teaser: "The men sworn to protect Washington included one who was plotting against him."
+script: |
+  Look around this corner. Traffic, loft buildings, the roar of Varick Street. In the summer of seventeen seventy six, there was a country house here, the Mortier House. And George Washington was living in it.
+
+  He had a guard of picked soldiers to protect him. One of them was a man named Thomas Hickey.
+
+  That June, a plot was uncovered. Loyalists, working for the British governor of New York, had been recruiting men in the city. Some of them were in Washington's own guard. What exactly the plot was meant to do is still argued about. Kidnap him, or kill him.
+
+  Hickey was the only one of the guards to be put to death for it. A court martial found him guilty of sedition, mutiny, and treacherous correspondence with the enemy. Washington approved the sentence himself. He ordered four brigades to march out and watch.
+
+  Later tellers added a dish of poisoned peas, meant for the general's plate. The court records say nothing about peas.
+
+  On the twenty eighth of June, they hanged him, in front of a crowd. A soldier named Moses Sleeper wrote it down in his diary that night. This day Thomas Hickey was executed for treachery, at New York, in the midst of a thousand troops.
+
+  And then, in the same line, he wrote something else.
+
+  This day arrived at the Hook, twenty sail of transports.
+
+  The British fleet had come.
+
+pronunciations:
+  - written: Sleeper
+    say: SLEE-per
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "In the summer of seventeen seventy six, there was a country house here, the Mortier House."
+    source: 3
+    quote: "On Varick Street (continuation of Seventh Avenue) at the corner of Charlton Street, stood Mortier House, one of Washington's headquarters during the Revolution."
+  - says: "And George Washington was living in it."
+    source: 3
+    quote: "While Washington was living here Thomas Hickey, one of his bodyguards, was hanged for his participation in a Tory plot"
+  - says: "One of them was a man named Thomas Hickey."
+    source: 1
+    quote: "Thomas Hickey belonging to the Generals Guard having been convicted by a General Court Martial"
+  - says: "Loyalists, working for the British governor of New York, had been recruiting men in the city."
+    source: 2
+    quote: "Tryon hatched a plot to either kidnap or assassinate (the goal, Meltzer and Mensch acknowledge, was vague) Washington"
+  - says: "Some of them were in Washington's own guard."
+    source: 2
+    quote: "Despite recruiting some of Washington's \"Life Guards\" — soldiers who were responsible for personally protecting the general — it was foiled"
+  - says: "What exactly the plot was meant to do is still argued about. Kidnap him, or kill him."
+    source: 2
+    quote: "Tryon hatched a plot to either kidnap or assassinate (the goal, Meltzer and Mensch acknowledge, was vague) Washington"
+  - says: "Hickey was the only one of the guards to be put to death for it."
+    source: 1
+    quote: "The execution of Thomas Hickey, the only accused conspirator of the Life Guard to face capital punishment, served as an example of the consequences of treason."
+  - says: "A court martial found him guilty of sedition, mutiny, and treacherous correspondence with the enemy."
+    source: 1
+    quote: "of the crimes of “Sedition and mutiny, and also of holding a treach’rous correspondence with the enemy, for the most horrid and detestable purposes,” is sentenced to suffer death."
+  - says: "Washington approved the sentence himself."
+    source: 1
+    quote: "The General approves the sentence, and orders that he be hanged to morrow at Eleven oClock."
+  - says: "He ordered four brigades to march out and watch."
+    source: 1
+    quote: "All the officers and men off duty, belonging to Genl Heath’s, Spencer’s, Lord Stirling’s and Genl Scott’s Brigades, to be under arms"
+  - says: "Later tellers added a dish of poisoned peas, meant for the general's plate."
+    source: 3
+    quote: "a Tory plot that involved firing the city, inciting the troops to mutiny, and feeding the general a dish of poisoned peas."
+  - says: "On the twenty eighth of June, they hanged him, in front of a crowd."
+    source: 1
+    quote: "it is possible that Sleeper joined the crowd, estimated at twenty thousand spectators."
+  - says: "This day Thomas Hickey was executed for treachery, at New York, in the midst of a thousand troops."
+    source: 1
+    quote: "Friday June th 28 this Day Thomas Hickey Was Excuted for Tretchery at new York In the midst of 1000 Troops"
+  - says: "This day arrived at the Hook, twenty sail of transports."
+    source: 1
+    quote: "this Day Arivd at the Hook 20 Sail of Transports"
+  - says: "The British fleet had come."
+    source: 1
+    quote: "Sleeper’s closing mention of the arrival of 20 transport ships at Sandy Hook is the first indication of the arrival of the Royal Navy in New York."
+sources:
+  - title: "The Revolutionary War Diary of Moses Sleeper"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/revolutionary-war-diary-of-moses-sleeper.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "'The First Conspiracy' Details Foiled Hickey Plot To Assassinate George Washington (book review), 9 January 2019"
+    publisher: "NPR"
+    url: https://www.npr.org/2019/01/09/682924810/the-first-conspiracy-details-foiled-hickey-plot-to-assassinate-george-washington
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Greenwich Village"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain

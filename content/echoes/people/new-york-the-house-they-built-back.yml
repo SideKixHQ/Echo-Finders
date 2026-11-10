@@ -1,0 +1,84 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Gramercy and Flatiron cluster (more NYC batch).
+# Listening spot: The sidewalk outside 28 East 20th Street, between Broadway and Park Avenue South, in front of the brownstone of Theodore Roosevelt Birthplace National Historic Site.
+# Position: Wikidata Q904191 (Theodore Roosevelt Birthplace National Historic Site) coordinate (high confidence).
+id: new-york-the-house-they-built-back
+title: "The House They Built Back"
+summary: "Theodore Roosevelt was born on this spot. His house was torn down in 1916. The one you see was rebuilt by the women who loved him."
+place: "Theodore Roosevelt Birthplace, 28 East 20th Street, Flatiron, Manhattan"
+at: { lat: 40.73871, lng: -73.98902 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, flatiron, gramercy, theodore-roosevelt, president, replica]
+teaser: "A president was born here. Then somebody knocked the house down."
+script: |
+  Look at the brownstone in front of you, with its steps and its tall windows. It looks like it has stood here since before the Civil War.
+
+  It has not. It is about a hundred years old. And it is a copy.
+
+  A boy was born in a house on this spot. Theodore Roosevelt. He was sickly. He fought asthma for years. And he loved books and nature, and learning, more than almost anything.
+
+  His family moved uptown in eighteen seventy two. They sold the house. It became a shop, and changed hands again and again.
+
+  Roosevelt grew up and became the twenty sixth President of the United States.
+
+  And in nineteen sixteen, while he was still alive, the house he was born in was torn down. A commercial building went up in its place.
+
+  He died three years later, at sixty.
+
+  So his sisters and his widow did something remarkable. They bought the lot. And they built the house again, as it had been, a replica of his childhood home. It opened in nineteen twenty three.
+
+  Look at those steps again.
+
+  He never climbed these ones. They were built for him to be remembered by.
+
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "A boy was born in a house on this spot."
+    source: 1
+    quote: "The original structure where Theodore Roosevelt was born was torn down in 1916."
+  - says: "He was sickly. He fought asthma for years."
+    source: 1
+    quote: "He was very sickly while living in the brownstone and fought fiercely to overcome his illnesses."
+  - says: "He was sickly. He fought asthma for years."
+    source: 1
+    quote: "including his struggles with asthma and his early love of reading and nature."
+  - says: "And he loved books and nature, and learning, more than almost anything."
+    source: 1
+    quote: "The young Roosevelt was also considered very bright with a love of learning that he was famous for later in life."
+  - says: "His family moved uptown in eighteen seventy two."
+    source: 1
+    quote: "The family moved uptown to a mansion at 6 West 57th Street in 1872."
+  - says: "They sold the house. It became a shop, and changed hands again and again."
+    source: 1
+    quote: "They sold the brownstone at 28 East 20th Street as a commercial space. It changed hands numerous times over the next few decades."
+  - says: "Roosevelt grew up and became the twenty sixth President of the United States."
+    source: 1
+    quote: "The younger Theodore Roosevelt would later become the 26th president of the United States."
+  - says: "And in nineteen sixteen, while he was still alive, the house he was born in was torn down."
+    source: 1
+    quote: "The original structure where Theodore Roosevelt was born was torn down in 1916. Another commercial building was put in its place."
+  - says: "He died three years later, at sixty."
+    source: 1
+    quote: "Roosevelt soon passed away at the age of 60 in 1919."
+  - says: "So his sisters and his widow did something remarkable."
+    source: 1
+    quote: "Afterwards his sisters and his widow formed the Women’s Roosevelt Memorial Association (WRMA)."
+  - says: "And they built the house again, as it had been, a replica of his childhood home."
+    source: 1
+    quote: "A replica of the Roosevelt childhood home was designed in the 28 East 20th Street lot with an added museum space in the 26 East 20th Street lot."
+  - says: "It opened in nineteen twenty three."
+    source: 1
+    quote: "It opened to the public as “The Roosevelt House” in 1923."
+sources:
+  - title: "A Timeline of Theodore Roosevelt's Birthplace"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/timeline.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
