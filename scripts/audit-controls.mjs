@@ -347,6 +347,10 @@ const focusSweep = async (label) => {
     else if (key === first) break;
     stops.push({ ...at, screen: label });
   }
+  // Put focus down again, the way a person would before tapping: a sweep that ends inside
+  // the map's search box leaves its results open over the map's own controls.
+  await p.evaluate(() => document.activeElement instanceof HTMLElement && document.activeElement.blur());
+  await p.waitForTimeout(150);
   return stops;
 };
 const focus = [];
