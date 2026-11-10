@@ -178,11 +178,11 @@ const PROBE = () => {
   /*
    * Layers that are MEANT to cover the map.
    *
-   * The echo card, the sync moment, the player, onboarding, the package screen. A pin
+   * The echo card, the sync toasts, the player, onboarding, the package screen. A pin
    * under the card you opened by tapping that pin is the product working. Reporting it
    * every run is how a person learns to stop reading the report.
    */
-  const LAYER = ['pop', 'synced', 'hear', 'vf', 'onb', 'pf', 'plan', 'city', 'paywall', 'walk', 'rose', 'nowhere', 'kind-sheet', 'kind-scrim', 'fan-backdrop'];
+  const LAYER = ['pop', 'toast', 'hear', 'vf', 'onb', 'pf', 'plan', 'city', 'paywall', 'walk', 'rose', 'nowhere', 'kind-sheet', 'kind-scrim', 'fan-backdrop'];
   const inLayer = (el) => {
     for (let n = el; n && n !== document.body; n = n.parentElement) {
       const c = (n.className.baseVal ?? n.className ?? '').toString();
@@ -410,6 +410,9 @@ async function walk(width, height, theme) {
   // First run is one screen: Find echoes near me asks for the location and opens the map.
   await p.getByRole('button', { name: 'Find echoes near me' }).click();
   await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
+  if (await p.locator('.how').count()) await look('how-echoes-unlock');
+  // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
+  await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
   await p.waitForTimeout(4500);
 
   /*

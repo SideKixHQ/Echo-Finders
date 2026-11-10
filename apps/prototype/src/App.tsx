@@ -36,7 +36,20 @@ import { Rail, type WalkingView } from "./Rail";
 import { MODE_PHRASE } from "./travel";
 import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { holdLockScreen, primeLockScreen } from "./lock-screen";
-import { Synced } from "./Synced";
+import { HowEchoesUnlock, LockedToast, NearToast, SyncedToast } from "./Toasts";
+import {
+  HOW_KEY,
+  LOCKED_KEY,
+  NEAR_SHOW_MS,
+  nearToastFor,
+  readFlag,
+  readNearMemory,
+  rememberNear,
+  setFlag,
+  toastDistance,
+  unlockLine,
+  writeNearMemory,
+} from "./toast-rules";
 import { Walk } from "./Walk";
 import { Nowhere } from "./Nowhere";
 import { Ribbon } from "./Ribbon";
@@ -404,6 +417,13 @@ export function App() {
       return false;
     }
   });
+  /**
+   * "How echoes unlock", seen. It follows the welcome screens once (`Toasts.tsx`), and the
+   * first run is not over until it has been read: the demo walk waits for it as it waits
+   * for onboarding, or it would sync the fort behind it.
+   */
+  const [howSeen, setHowSeen] = useState(() => readFlag(HOW_KEY));
+  const firstRunDone = onboarded && howSeen;
   const { state, session, walk, store, speech, restored } = useJourney(roaming ? null : route, LIBRARY, {
     sound,
     narrate,
@@ -418,7 +438,7 @@ export function App() {
      * (now that My Echoes shows every journey) on their first look at it. It also
      * marked the fort as already celebrated, so walking there for real got no card.
      */
-    paused: paused || !onboarded,
+    paused: paused || !firstRunDone,
     rate,
     roamMode,
     voice,
@@ -865,7 +885,7 @@ export function App() {
    *
    * An echo opening was a pin changing colour and a row appearing in a list, which is a
    * report rather than an event, and it is the one thing this product does that nothing
-   * else does. It takes the screen now.
+   * else does. It is marked with a toast now (`Toasts.tsx`, B): it syncs, then you tap Play.
    *
    * Tracked by id rather than by list length, because captures can arrive together when
    * two echoes overlap and a length comparison would miss the second. The seen-set starts
@@ -890,7 +910,7 @@ export function App() {
      * ends, whatever the simulation collected in the meantime is already-seen history, and
      * only what happens after counts as a moment.
      */
-    if (!onboarded) return;
+    if (!firstRunDone) return;
     /*
      * EACH JOURNEY'S PAST FINDS ARE HISTORY TOO, not only the first one's.
      *
@@ -915,7 +935,11 @@ export function App() {
     for (const c of fresh) seenCaptures.current.add(c.echo.id);
     // The last one is the one you are standing on.
     setSyncedNow(fresh[fresh.length - 1]!);
-  }, [state.captured, onboarded, restored, journeyKey]);
+  }, [state.captured, firstRunDone, restored, journeyKey]);
+  // Played some other way (the bar, the card): the toast asking for that tap is answered.
+  useEffect(() => {
+    if (syncedNow && state.playback.kind !== "idle" && state.playback.item.echo.id === syncedNow.echo.id) setSyncedNow(null);
+  }, [syncedNow, state.playback]);
 
   const nowPlaying = state.playback.kind === "idle" ? null : state.playback.item.echo;
 
@@ -1476,6 +1500,43 @@ export function App() {
       })),
     [nearby, stateOf],
   );
+
+  /*
+   * Toast C, the first tap on a locked echo, once ever: echoes unlock where they happened,
+   * and how close that is for this one.
+   */
+  const [lockedToast, setLockedToast] = useState<string | null>(null);
+  const lockedTold = useRef(readFlag(LOCKED_KEY));
+  useEffect(() => {
+    if (!selectedId || lockedTold.current || !firstRunDone) return;
+    if (stateOf(selectedId) !== "sealed") return;
+    lockedTold.current = true;
+    setFlag(LOCKED_KEY);
+    setLockedToast(selectedId);
+  }, [selectedId, stateOf, firstRunDone]);
+
+  /*
+   * Toast A, "an echo is close": the rules are `nearToastFor`'s (within 150 m of one you
+   * have not heard, once per echo, never while one plays, one every five minutes). On foot
+   * only, because "walk over" is the whole sentence. The distance it shows stays live.
+   */
+  const [nearMemory, setNearMemory] = useState(() => readNearMemory());
+  const [nearToast, setNearToast] = useState<string | null>(null);
+  const heardSet = useMemo(() => new Set(heardIds), [heardIds]);
+  useEffect(() => {
+    if (!firstRunDone || journeyMode !== "walking" || nearToast || syncedNow || lockedToast) return;
+    const pick = nearToastFor(around, nearMemory, Date.now(), state.playback.kind !== "idle", (id) => heardSet.has(id));
+    if (!pick) return;
+    const next = rememberNear(nearMemory, pick.echo.id, Date.now());
+    setNearMemory(next);
+    writeNearMemory(next);
+    setNearToast(pick.echo.id);
+  }, [around, nearMemory, firstRunDone, journeyMode, nearToast, syncedNow, lockedToast, state.playback.kind, heardSet]);
+  // Something started playing, or it synced: the nearby toast has nothing left to say.
+  useEffect(() => {
+    if (!nearToast) return;
+    if (state.playback.kind !== "idle" || stateOf(nearToast) !== "sealed") setNearToast(null);
+  }, [nearToast, state.playback.kind, stateOf]);
 
   /**
    * The nearest echo anywhere, and whether looking further would turn anything up.
@@ -2505,6 +2566,16 @@ export function App() {
             />
           )}
 
+          {/* Once, straight after the welcome screens: what locked, close and synced mean. */}
+          {onboarded && !howSeen && (
+            <HowEchoesUnlock
+              onDone={() => {
+                setFlag(HOW_KEY);
+                setHowSeen(true);
+              }}
+            />
+          )}
+
           {onboarded && packageOpen && (
             <Preflight
               here={state.position?.at ?? null}
@@ -2653,57 +2724,64 @@ export function App() {
             onSkip={() => setAskFor(null)}
           />
         )}
-        {/* Held while the journey screen is open: a demo flight syncs as it passes over
-            Manhattan, and each card landed on top of the airport fields (found 2026-10-13),
-            and then on the list of what plays.
-            It shows when the screen closes. */}
-        {syncedNow && !(onboarded && packageOpen) && !planOpen && (
-          <Synced
-            event={syncedNow}
-            onListen={() => {
-              playOrAsk(syncedNow.echo);
-              setSyncedNow(null);
-              setListening(true);
-            }}
-            onLater={() => setSyncedNow(null)}
-            next={(() => {
-              if (!selfDirected) return undefined;
-              // On a planned walk the next stop is already chosen (and already the beacon).
-              if (plan?.active && beacon) {
-                const echo = LIBRARY_BY_ID.get(beacon);
-                if (!echo) return undefined;
-                return {
-                  title: echo.title,
-                  walk: `stop ${plan.at + 1} of ${plan.stops.length}`,
-                  onGo: () => {
-                    setSyncedNow(null);
-                    setWalkingView("map");
-                    setPan({ x: 0, y: 0 });
-                  },
-                };
+        {/*
+          The toasts: B (synced), C (the first locked tap) and A (an echo is close), one at a
+          time and in that order. `Toasts.tsx` has the design; `toast-rules.ts` the rules.
+
+          The region is always mounted so a screen reader hears what arrives in it. Held
+          while the journey screen or a plan is open, as the sync card was (a demo flight
+          syncs as it passes over Manhattan, and each card landed on the airport fields),
+          and while the player, the paywall or the camera has the phone: it shows when
+          they close.
+        */}
+        <div className="toast-dock" role="status" aria-live="polite">
+          {!(onboarded && packageOpen) && !planOpen && !listening && !paywallFor && !optionsOpen && !camera &&
+            (() => {
+              if (syncedNow) {
+                return (
+                  <SyncedToast
+                    key={`synced-${syncedNow.echo.id}`}
+                    title={syncedNow.echo.title}
+                    onPlay={() => {
+                      playOrAsk(syncedNow.echo);
+                      setSyncedNow(null);
+                      setListening(true);
+                    }}
+                    onClose={() => setSyncedNow(null)}
+                  />
+                );
               }
-              // The nearest still waiting, not the best ranked: this is about where to walk.
-              const n = around
-                .filter((a) => a.sealed && a.echo.id !== syncedNow.echo.id)
-                .reduce<(typeof around)[number] | null>((best, a) => (!best || a.distanceKm < best.distanceKm ? a : best), null);
-              if (!n) return undefined;
-              // A street walk is about a third longer than the crow flies; the real time
-              // shows on the directions bar the moment it is worked out.
-              const minutes = Math.max(1, Math.round((n.distanceKm * 1000 * 1.3) / 1.25 / 60));
-              return {
-                title: n.echo.title,
-                walk: `about ${minutes} min walk`,
-                onGo: () => {
-                  setSyncedNow(null);
-                  setBeacon(n.echo.id);
-                  setWalkingView("map");
-                  setSelectedId(null);
-                  setPan({ x: 0, y: 0 });
-                },
-              };
+              const locked = lockedToast ? LIBRARY_BY_ID.get(lockedToast) : undefined;
+              if (locked) {
+                return (
+                  <LockedToast
+                    key={`locked-${locked.id}`}
+                    line={unlockLine(locked, journeyMode)}
+                    onClose={() => setLockedToast(null)}
+                  />
+                );
+              }
+              const near = nearToast ? around.find((a) => a.echo.id === nearToast) : undefined;
+              if (near && tab === "map") {
+                return (
+                  <NearToast
+                    key={`near-${near.echo.id}`}
+                    distance={toastDistance(near.distanceKm)}
+                    title={near.echo.title}
+                    showMs={NEAR_SHOW_MS}
+                    onShow={() => {
+                      setNearToast(null);
+                      setWalkingView("map");
+                      setFocusId(near.echo.id);
+                      setSelectedId(near.echo.id);
+                    }}
+                    onClose={() => setNearToast(null)}
+                  />
+                );
+              }
+              return null;
             })()}
-          />
-        )}
+        </div>
 
         {/*
           The ask, over everything.

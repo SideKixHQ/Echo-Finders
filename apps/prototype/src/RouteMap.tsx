@@ -30,6 +30,7 @@ import type { GeoJSONSource, Map as MapLibre } from "maplibre-gl";
 import { MapCanvas } from "./MapCanvas";
 import { MODE_ICON } from "./travel";
 import { useSmoothedPoint } from "./use-smoothed";
+import { NEAR_KM } from "./toast-rules";
 import { buildRouteGeometry, distanceKm, effectiveRadiusKm, presetFor, rarityOf, type Arriving, type Echo, type LatLng, type Position, type Route, type TravelMode,
   clusterPoints,
   fanOut,
@@ -1527,13 +1528,15 @@ export function RouteMap({
       // The trigger radius, drawn to scale. Seeing how big "here" actually is explains
       // the whole mechanic faster than any label.
       const radiusPx = radiusToPixels(echo, projection);
+      // Close enough for the "an echo is close" toast (`toast-rules.ts`): the pin glows too.
+      const near = state === "sealed" && standingAt !== null && distanceKm(standingAt, echo.point.at) <= NEAR_KM;
 
       return (
         <g
           key={echo.id}
           className={`pin pin-${state} cat-${echo.category}${selected ? " pin-selected" : ""}${
             echo.id === focusId || echo.id === aimId ? " pin-focus" : ""
-          }`}
+          }${near ? " pin-near" : ""}`}
           transform={`translate(${x.toFixed(1)} ${y.toFixed(1)})`}
           data-echo={echo.id}
           onClick={() => onSelect(echo.id)}
@@ -1578,7 +1581,9 @@ export function RouteMap({
             a half, which is the same proximity model the haptic and the tone already
             run on — three channels saying one thing rather than three.
           */}
-          {state === "sealed" && calling.has(echo.id) && (
+          {near && <circle className="pin-near-glow" r="22" />}
+
+          {state === "sealed" && (calling.has(echo.id) || near) && (
             <g className="echo-ripples" style={{ animationDuration: `${ripplePeriod(standingAt, echo)}s` }}>
               <g className="ripple-ring">
                 <use href="#wave" />

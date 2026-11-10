@@ -1,0 +1,205 @@
+/**
+ * How people learn and see syncing: three toasts and a one time explainer.
+ *
+ * The design (approved 2026-11-10, the "Toasts", "Nearby" and "Sync" boards):
+ *
+ *   A  an echo is close    ember, an orb, the live distance, "Show me" on its own row
+ *   B  synced              aqua, a play orb, the echo's title; tapping it plays
+ *   C  locked, first tap   indigo, a lock, the real sync radius, "Got it" on its own row
+ *
+ * B replaced the full screen sync card (`Synced.tsx`, gone). That card took the phone for
+ * the one moment the product exists for, and it also took it from somebody who was walking:
+ * the approved behaviour is quieter, "it syncs, then you tap Play", and the echo stays in
+ * My Echoes and on the bar either way.
+ *
+ * Every toast sits at the top, under the top bar, clear of the tab bar; every one has an
+ * ✕; every control is at least 44px. They are announced through one `role="status"` region
+ * that App keeps mounted, because a live region that arrives with its content is often
+ * not read at all.
+ *
+ * The rules for when each shows are in `toast-rules.ts`.
+ */
+
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
+
+/** How long the slide away takes, ms. Matches `toast-out` in theme.css. */
+const LEAVE_MS = 220;
+
+/** Leave with a slide rather than vanishing, then tell the owner it has gone. */
+function useLeave(onGone: () => void): [boolean, () => void] {
+  const [leaving, setLeaving] = useState(false);
+  const gone = useRef(onGone);
+  gone.current = onGone;
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => {
+    if (timer.current) clearTimeout(timer.current);
+  }, []);
+  const leave = useCallback(() => {
+    if (timer.current) return;
+    setLeaving(true);
+    timer.current = setTimeout(() => gone.current(), LEAVE_MS);
+  }, []);
+  return [leaving, leave];
+}
+
+function Close({ onClick }: { readonly onClick: () => void }) {
+  return (
+    <button className="toast-close" onClick={onClick} aria-label="Dismiss">
+      <span aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </span>
+    </button>
+  );
+}
+
+function Shell({ kind, leaving, children }: { readonly kind: string; readonly leaving: boolean; readonly children: ReactNode }) {
+  return <div className={`toast toast-${kind}${leaving ? " toast-leaving" : ""}`}>{children}</div>;
+}
+
+/** A: an echo is close. Slides away after `showMs` by itself. */
+export function NearToast({
+  distance,
+  title,
+  showMs,
+  onShow,
+  onClose,
+}: {
+  /** Live, already worded: "80 m". */
+  readonly distance: string;
+  readonly title: string;
+  readonly showMs: number;
+  readonly onShow: () => void;
+  readonly onClose: () => void;
+}) {
+  const [leaving, leave] = useLeave(onClose);
+  useEffect(() => {
+    const t = setTimeout(leave, showMs);
+    return () => clearTimeout(t);
+  }, [leave, showMs]);
+  return (
+    <Shell kind="near" leaving={leaving}>
+      <span className="toast-orb" aria-hidden="true" />
+      <span className="toast-words">
+        <b>An echo is close · {distance}</b>
+        <span>Walk over to hear it</span>
+      </span>
+      <Close onClick={leave} />
+      <span className="toast-row">
+        <button className="toast-act toast-act-go" onClick={onShow} aria-label={`Show me: ${title}`}>
+          Show me
+        </button>
+      </span>
+    </Shell>
+  );
+}
+
+/** B: arrived, and it synced. Tapping it plays. */
+export function SyncedToast({
+  title,
+  onPlay,
+  onClose,
+}: {
+  readonly title: string;
+  readonly onPlay: () => void;
+  readonly onClose: () => void;
+}) {
+  const [leaving, leave] = useLeave(onClose);
+  return (
+    <Shell kind="synced" leaving={leaving}>
+      <button className="toast-play" onClick={onPlay} aria-label={`Synced. Play: ${title}`}>
+        <span className="toast-orb toast-orb-play" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </span>
+        <span className="toast-words">
+          <b>Synced · tap to play</b>
+          <span>{title}</span>
+        </span>
+      </button>
+      <Close onClick={leave} />
+    </Shell>
+  );
+}
+
+/** C: the first tap on a locked echo, once ever. */
+export function LockedToast({ line, onClose }: { readonly line: string; readonly onClose: () => void }) {
+  const [leaving, leave] = useLeave(onClose);
+  return (
+    <Shell kind="locked" leaving={leaving}>
+      <span className="toast-lock" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <rect x="5" y="11" width="14" height="10" rx="2" />
+          <path d="M8 11V8a4 4 0 018 0v3" />
+        </svg>
+      </span>
+      <span className="toast-words">
+        <b>Echoes unlock where they happened</b>
+        <span>{line}</span>
+      </span>
+      <Close onClick={leave} />
+      <span className="toast-row">
+        <button className="toast-act toast-act-ok" onClick={leave}>
+          Got it
+        </button>
+      </span>
+    </Shell>
+  );
+}
+
+/**
+ * "How echoes unlock": once, after first run.
+ *
+ * Its own full screen layer, over the map at the first run's height, with one button. The
+ * audits press its Got it right after the first run (`.how-go`).
+ */
+export function HowEchoesUnlock({ onDone }: { readonly onDone: () => void }) {
+  return (
+    <div className="how" role="dialog" aria-modal="true" aria-labelledby="how-title">
+      <div className="how-body">
+        <h1 id="how-title">How echoes unlock</h1>
+        <p className="how-lede">Every echo plays where it happened.</p>
+        <ol className="how-steps">
+          <li className="how-step how-step-far">
+            <span className="how-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="5" y="11" width="14" height="10" rx="2" />
+                <path d="M8 11V8a4 4 0 018 0v3" />
+              </svg>
+            </span>
+            <span className="how-say">
+              <b>Far away</b>
+              <span>Locked. Tap Walk there to go.</span>
+            </span>
+          </li>
+          <li className="how-step how-step-close">
+            <span className="how-mark" aria-hidden="true">
+              <i className="how-ring" />
+              <i className="how-orb" />
+            </span>
+            <span className="how-say">
+              <b>Getting close</b>
+              <span>The pin glows and buzzes.</span>
+            </span>
+          </li>
+          <li className="how-step how-step-synced">
+            <span className="how-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </span>
+            <span className="how-say">
+              <b>Synced</b>
+              <span>Tap Play. It stays in My Echoes.</span>
+            </span>
+          </li>
+        </ol>
+      </div>
+      <button className="how-go" onClick={onDone}>
+        Got it
+      </button>
+    </div>
+  );
+}
