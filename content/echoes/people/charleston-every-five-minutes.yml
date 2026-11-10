@@ -1,0 +1,87 @@
+# Drafted by Claude Code (2026-11-10) for the third Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The harbour shore at Patriots Point, Mount Pleasant, looking out toward Fort Sumter.
+# Position: A point on the Patriots Point shore checked against the land map (medium confidence). Fort Sumter is in the water and is reached only by the park's ferry.
+id: charleston-every-five-minutes
+title: "Every Five Minutes"
+summary: "In 1864 Jacob Stroyer, enslaved and about fifteen, was one of over three hundred men forced to repair Fort Sumter under fire."
+place: "Patriots Point harbour shore, Mount Pleasant, South Carolina, facing Fort Sumter"
+at: { lat: 32.79100, lng: -79.90550 }
+triggerRadiusKm: 0.06
+category: people
+format: short
+durationS: 90
+visibility: landmark-visible
+certainty: documented
+minAge: 12
+quality: 0.85
+tags: [charleston, mount-pleasant, fort-sumter, civil-war, slavery, jacob-stroyer]
+teaser: "The fort you can see was held together by people who had no choice."
+script: |
+  Look out to Fort Sumter, low on the water. In the summer of eighteen sixty four, it was being shelled day and night. And somebody had to keep putting it back together.
+
+  That somebody was enslaved.
+
+  Jacob Stroyer was born into slavery near Columbia. He was thirteen when he was sent to the harbour to carry water and messages for the men building the forts. He wrote later that it was easier than the plantation.
+
+  Then, in eighteen sixty four, he and more than three hundred other enslaved men were rowed out to Fort Sumter, to repair it under fire. One young man from his own plantation was killed by a shell before he even got inside.
+
+  The shells, Stroyer wrote, rained alternately upon Fort Sumter every five minutes. Records list more than twenty enslaved people who died there. Stroyer remembered an overseer who drove the men back to work with a piece of iron in his hand.
+
+  In July, a mortar shell came down on Stroyer's shelter, and wounded him in the head. He never went back.
+
+  He was freed the next year. He went to school, moved north, and became a minister in Salem, Massachusetts. In eighteen seventy nine he wrote it all down.
+
+  Look at the fort again. Its walls are partly his.
+detail: >-
+  From the National Park Service page on Jacob Stroyer: born into slavery on the Singleton plantation near Columbia in 1849, sent to Sullivan's Island and Fort Sumter, his description of boys of thirteen carrying water and messages, Sullivan's Island as easier than the plantation, over three hundred enslaved men taken to Fort Sumter by rowboat from Johns Island in 1864, the death of a young man from his plantation, his phrase about shells every five minutes, more than 20 enslaved deaths on the official casualty lists, the overseer Deburgh, his head wound in July 1864, freedom in 1865, schooling, and his ministry in Salem. His memoir, My Life in the South, was published in 1879. "Aged about fifteen" in the summary follows from his birth year.
+pronunciations:
+  - written: "Stroyer"
+    say: "STROY-er"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Jacob Stroyer was born into slavery near Columbia."
+    source: 1
+    quote: "Jacob Stroyer was born into slavery on the Singleton plantation near Columbia, South Carolina in 1849"
+  - says: "He was thirteen when he was sent to the harbour to carry water and messages for the men building the forts."
+    source: 1
+    quote: "the boys of my age, namely, thirteen, and some older, waited on officers and carried water for the men at work"
+  - says: "He wrote later that it was easier than the plantation."
+    source: 1
+    quote: "described his time at Sullivan’s Island in Confederate service as easier than being on the plantation."
+  - says: "Then, in eighteen sixty four, he and more than three hundred other enslaved men were rowed out to Fort Sumter, to repair it under fire."
+    source: 1
+    quote: "Stroyer, along with over three hundred other enslaved men, were assigned to Fort Sumter and conveyed there by rowboat from John’s Island."
+  - says: "One young man from his own plantation was killed by a shell before he even got inside."
+    source: 1
+    quote: "One young slave from Stroyer’s plantation died before even entering the fort, struck by a Parrott shell."
+  - says: "The shells, Stroyer wrote, rained alternately upon Fort Sumter every five minutes."
+    source: 1
+    quote: "mortar and Parrott shells rained alternately upon Fort Sumter every five minutes."
+  - says: "Records list more than twenty enslaved people who died there."
+    source: 1
+    quote: "Based on casualty lists compiled from the official records, more than 20 enslaved people died while forcibly working on the fort."
+  - says: "Stroyer remembered an overseer who drove the men back to work with a piece of iron in his hand."
+    source: 1
+    quote: "he would strike on the head with the piece of iron he carried in his hand"
+  - says: "In July, a mortar shell came down on Stroyer's shelter, and wounded him in the head."
+    source: 1
+    quote: "In July 1864, Stroyer suffered a wound to his head at Fort Sumter when a mortar shell came down on his shelter."
+  - says: "He never went back."
+    source: 1
+    quote: "he never returned to the fort"
+  - says: "He was freed the next year."
+    source: 1
+    quote: "In 1865, he was freed when Union General William T. Sherman captured Columbia, South Carolina."
+  - says: "He went to school, moved north, and became a minister in Salem, Massachusetts."
+    source: 1
+    quote: "He later settled in Salem, Massachusetts, and became minister of the African Methodist Episcopal Church there."
+  - says: "In eighteen seventy nine he wrote it all down."
+    source: 1
+    quote: "in his 1879 memoir My Life in the South"
+sources:
+  - title: "Jacob Stroyer"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/jacob-stroyer.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

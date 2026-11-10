@@ -1,0 +1,70 @@
+# Drafted by Claude Code (2026-11-10) for the third Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: Broad Street between State and Church Streets, the old business heart of the street.
+# Position: Broad Street between its State and Church Street intersections in the app's Charleston street file (high confidence for the street). Ravenel (1906) puts Eliza Lee's house on Broad Street, "now called the Mansion House", without a number; the building is not identified, so the radius is wide and the script names the street, not a door.
+id: charleston-silver-forks-and-iced-claret
+title: "Silver Forks and Iced Claret"
+summary: "Before Charleston had hotels, its best inns on and near Broad Street were kept by free Black innkeepers. Their wives did the cooking."
+place: "Broad Street between State and Church Streets, Charleston, South Carolina"
+at: { lat: 32.77673, lng: -79.92850 }
+triggerRadiusKm: 0.08
+category: food-drink
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.8
+tags: [charleston, charleston-core, broad-street, food, inns, free-people-of-colour, eliza-lee]
+teaser: "The finest table in town, kept by free Black innkeepers."
+script: |
+  Look along Broad Street, at the old fronts of the buildings. Before Charleston had a single hotel, a visitor with money looked for an inn. And the best two in town were kept by free Black families.
+
+  The first was Jones's. A traveller named Hamilton called it the best inn of the place. Silver forks, he wrote. Clean tablecloths and all the luxuries of the table. And iced claret, good enough to turn a philosopher into a gourmet.
+
+  The second was Eliza Lee's, here on Broad Street, in the house later called the Mansion House.
+
+  The men ran the front of the house. But it was their wives who were the excellent cooks. The kitchens belonged to the women.
+
+  And there is a harder fact in the same account. The attentive servants who waited at those tables were enslaved, and the innkeepers themselves owned them.
+
+  Look along the street again. Free people, in a slave city, keeping the best table in town.
+
+  It was never simple.
+detail: >-
+  Ravenel (1906), Social Topics chapter: inns admirably kept by free coloured people; Jones's described by the traveller Hamilton as the best inn of the place, with silver forks, clean tablecloths, all the luxuries of the table and iced claret "to convert Diogenes into a gourmet"; Eliza Lee's, later the Mansion House on Broad Street; both wives excellent cooks; and their well-managed servants "owned by themselves". Ravenel's account carries the prejudices of 1906, which the script does not repeat. Where Jones's stood is not given in this source, so the script places only Eliza Lee's on Broad Street.
+pronunciations:
+  - written: "claret"
+    say: "KLAR-et"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "And the best two in town were kept by free Black families."
+    source: 1
+    quote: "these houses were admirably kept by free coloured people,"
+  - says: "A traveller named Hamilton called it the best inn of the place."
+    source: 1
+    quote: "by the traveller Hamilton (already quoted) as being the"
+  - says: "Silver forks, he wrote."
+    source: 1
+    quote: "with silver forks, clean tablecloths and all the luxuries of the table;"
+  - says: "Clean tablecloths and all the luxuries of the table."
+    source: 1
+    quote: "with silver forks, clean tablecloths and all the luxuries of the table;"
+  - says: "And iced claret, good enough to turn a philosopher into a gourmet."
+    source: 1
+    quote: "iced claret to convert Diogenes into a gourmet."
+  - says: "The second was Eliza Lee's, here on Broad Street, in the house later called the Mansion House."
+    source: 1
+    quote: "the house now called the Mansion House in Broad"
+  - says: "But it was their wives who were the excellent cooks."
+    source: 1
+    quote: "their wives, who were excellent cooks"
+  - says: "The attentive servants who waited at those tables were enslaved, and the innkeepers themselves owned them."
+    source: 1
+    quote: "servants, owned by themselves."
+sources:
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), Social Topics"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-10"
+    rights: public-domain

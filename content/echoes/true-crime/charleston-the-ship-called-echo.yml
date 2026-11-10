@@ -1,11 +1,11 @@
 # Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2) and docs/14-true-crime.md.
-# Listening spot: The harbour shore at Patriots Point, Mount Pleasant, looking across the water toward Castle Pinckney and, beyond it, Fort Sumter, where the Echo's captives were held in 1858.
-# Position: A point on the Patriots Point shore checked against the land map (medium confidence). Both forts are in the water and cannot be stood on from here.
+# Listening spot: Memorial Waterfront Park, Mount Pleasant, at the water's edge by the bridge, looking across the Cooper River toward Castle Pinckney on its island, where the Echo's captives were first landed in 1858.
+# Position: A point in Mount Pleasant's Memorial Waterfront Park checked against the land map (medium confidence). Castle Pinckney and Fort Sumter are in the water and cannot be visited from here.
 id: charleston-the-ship-called-echo
 title: "The Ship Called Echo"
 summary: "In 1858 a captured slave ship was brought into this harbour. Its crew was tried in Charleston, and none was convicted."
-place: "Patriots Point harbour shore, Mount Pleasant, South Carolina, facing Castle Pinckney and Fort Sumter"
-at: { lat: 32.78870, lng: -79.90680 }
+place: "Memorial Waterfront Park, Mount Pleasant, South Carolina, facing Castle Pinckney"
+at: { lat: 32.80050, lng: -79.90400 }
 triggerRadiusKm: 0.08
 category: true-crime
 format: short
@@ -18,7 +18,7 @@ quality: 0.85
 tags: [charleston, mount-pleasant, slave-trade, fort-sumter, castle-pinckney, 1858, true-crime]
 teaser: "The trade had been illegal for fifty years. The ship came in anyway."
 script: |
-  Look across the harbour, past the little round fort, to Fort Sumter on the horizon. In the summer of eighteen fifty eight, the people held out there had been brought across the ocean in chains.
+  Look across the water to the little round fort on its island. Castle Pinckney. In the summer of eighteen fifty eight, the people landed there had been brought across the ocean in chains.
 
   Their ship was called the Echo. Bringing Africans to the Americas for sale had been illegal in the United States for fifty years. Under one of those laws, it was piracy, and the penalty was death.
 
@@ -32,7 +32,7 @@ script: |
 
   The marshal who guarded them at Fort Sumter had been for slavery. He wrote, it seems to me that I can never forget it.
 
-  Look at the fort again. No one was ever punished for that ship.
+  Look at the little fort again. No one was ever punished for that ship.
 
   The marshal, at least, never forgot it.
 detail: >-
