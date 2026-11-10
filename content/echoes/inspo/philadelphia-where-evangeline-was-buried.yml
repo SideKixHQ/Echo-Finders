@@ -1,0 +1,89 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Society Hill), following docs/writing-echoes.md (format v2).
+# Listening spot: South sidewalk of Walnut Street between Third and Fourth, the frontage of the old Friends' Almshouse.
+# Position: midway between the Overture street-map intersections of Third and Walnut (39.94713, -75.14635) and Fourth and Walnut (39.947343, -75.147922), on the south side; kept east of the Todd House echo at Fourth (medium confidence for the frontage).
+id: philadelphia-where-evangeline-was-buried
+title: "Where Evangeline Was Buried"
+summary: "Longfellow ended Evangeline in a Philadelphia almshouse. Readers chose the one on this block, and showed visitors the lovers' graves."
+place: "Site of the Friends' Almshouse, south side of Walnut Street between Third and Fourth, Society Hill, Philadelphia, Pennsylvania"
+at: { lat: 39.94708, lng: -75.14705 }
+triggerRadiusKm: 0.05
+category: inspo
+inspo:
+  kind: inspiration
+  evidence: area
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.75
+tags: [philadelphia, philadelphia-core, society-hill, longfellow, evangeline, poetry, quakers, almshouse]
+teaser: "People would show you where the lovers were buried. They were never alive."
+script: |
+  Look along the south side of Walnut Street, between Third and Fourth. For generations, the Quakers kept an almshouse on this block, a home for the old and the poor, with a garden behind it.
+
+  In eighteen forty seven, Henry Wadsworth Longfellow published a long poem called Evangeline. A young woman is torn from the man she loves, Gabriel, when their people are driven out of Acadia. She searches for him for years. And at the end she comes to Philadelphia, the city of Penn. A fever strikes. She nurses the sick in the almshouse, home of the homeless. And there, among the dying, she finds Gabriel.
+
+  Readers fell in love with it. And Philadelphians decided they knew exactly which almshouse it was. This one.
+
+  A local historian, Thompson Westcott, was not so sure. Longfellow may have remembered visiting the Quaker almshouse years before, he wrote. But it was a home for the old, not a hospital. A dying stranger would have been taken somewhere else.
+
+  It did not matter. Before long, there were people ready to show visitors exactly where, in this garden, Gabriel and Evangeline were buried.
+
+  Look at the block again. The almshouse came down. The poem stayed.
+
+  And somewhere back there, two people who never lived have a grave.
+pronunciations:
+  - written: "Acadia"
+    say: "uh-KAY-dee-uh"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "For generations, the Quakers kept an almshouse on this block, a home for the old and the poor, with a garden behind it."
+    source: 1
+    quote: "the Friends' Almshouses, on the south side of Walnut street between Third and Fourth streets, were erected"
+  - says: "For generations, the Quakers kept an almshouse on this block, a home for the old and the poor, with a garden behind it."
+    source: 1
+    quote: "The Friends' Almshouse was really a community for the support of the old and feeble."
+  - says: "She searches for him for years."
+    source: 1
+    quote: "According to the poet, Evangeline, after years of separation from Gabriel, devoted herself to assuaging the sufferings of the sick and poor."
+  - says: "A young woman is torn from the man she loves, Gabriel, when their people are driven out of Acadia."
+    source: 1
+    quote: "There from the troubled sea had Evangeline landed in exile"
+  - says: "In eighteen forty seven, Henry Wadsworth Longfellow published a long poem called Evangeline."
+    source: 1
+    quote: "Evangeline was published in 1847."
+  - says: "And at the end she comes to Philadelphia, the city of Penn."
+    source: 1
+    quote: "Stands on the banks of its beautiful stream the city he founded."
+  - says: "A fever strikes."
+    source: 1
+    quote: "Then it came to pass that a pestilence fell on the city"
+  - says: "She nurses the sick in the almshouse, home of the homeless."
+    source: 1
+    quote: "Crept away to die in the almshouse, home of the homeless."
+  - says: "And there, among the dying, she finds Gabriel."
+    source: 1
+    quote: "The almshouse was crowded with sufferers, and it was in this place that Gabriel was met."
+  - says: "And Philadelphians decided they knew exactly which almshouse it was. This one."
+    source: 1
+    quote: "the publication of Longfellow's poem of Evangeline has led persons whose imaginations are vivid to attempt to identify the Friends' Almshouse with the closing scene of that idyl."
+  - says: "Longfellow may have remembered visiting the Quaker almshouse years before, he wrote."
+    source: 1
+    quote: "although the poet may have had recollections of a visit years ago to the Friends' Almshouse upon which he based the description of the place where Evangeline met Gabriel"
+  - says: "But it was a home for the old, not a hospital. A dying stranger would have been taken somewhere else."
+    source: 1
+    quote: "It was not a hospital for the sick, so that if Gabriel the stranger had been found prostrate and dying in the streets of the city, he would have been taken to the City Hospital"
+  - says: "Before long, there were people ready to show visitors exactly where, in this garden, Gabriel and Evangeline were buried."
+    source: 1
+    quote: "there were persons ready to show exactly where in the garden the bodies of Gabriel and Evangeline were buried."
+  - says: "The almshouse came down."
+    source: 1
+    quote: "Quaker Almshouses, destroyed in 1876."
+sources:
+  - title: "The Historic Mansions and Buildings of Philadelphia (Thompson Westcott, 1877), chapter: The Quaker Almshouse"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicmansions00west
+    retrievedAt: "2026-11-10"
+    rights: public-domain

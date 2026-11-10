@@ -1,0 +1,88 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Old City and Society Hill), following docs/writing-echoes.md (format v2).
+# Listening spot: South sidewalk of Walnut Street just east of Sixth, across from Independence Square, where the Walnut Street prison stood.
+# Position: Sixth and Walnut intersection from the Overture street map (39.947722, -75.151098), moved onto the south side of Walnut, east of Sixth (medium confidence: the prison filled this corner, no plaque position checked).
+id: philadelphia-up-from-the-prison-yard
+title: "Up From the Prison Yard"
+summary: "In January 1793 a French balloonist took off from the Walnut Street prison yard, with President Washington watching. He lost money on it."
+place: "Site of the Walnut Street prison, Sixth and Walnut streets, across from Independence Square, Philadelphia, Pennsylvania"
+at: { lat: 39.94755, lng: -75.15080 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 89
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, society-hill, walnut-street-prison, ballooning, george-washington, flight]
+teaser: "The cannon were firing. Something was about to leave the prison."
+script: |
+  Look across Walnut Street, at the corner of Sixth. On a winter morning in seventeen ninety three, cannon were firing over there. Two guns, every fifteen minutes.
+
+  Behind that corner stood the Walnut Street prison. And something was about to leave its yard. Not a prisoner.
+
+  His name was Jean Pierre Blanchard, a French balloonist. He had once been locked in a fortress himself, for his love of freedom. Now he had hired a prison yard as his launch pad.
+
+  At nine o'clock, President Washington arrived. Fifteen guns saluted him. Blanchard wore a plain blue suit, and a cocked hat with white feathers. At five minutes past ten, Washington handed him a paper. Blanchard sprang into a little boat, spangled and painted blue, under a balloon of yellowish silk. He threw out some ballast, and rose, waving the flag of the United States and the flag of France.
+
+  He flew for forty six minutes, and came down across the river in New Jersey. That evening he was back, to pay his respects to the President.
+
+  Here is the catch. He had hoped to clear nearly three thousand dollars. A huge crowd watched, but most of it stood outside the walls. He took in four hundred and five.
+
+  Look up, above the street.
+
+  He flew out of a prison, and came home poorer.
+pronunciations:
+  - written: "Blanchard"
+    say: "blahn-SHAR"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Two guns, every fifteen minutes."
+    source: 1
+    quote: "Two guns were subsequently fired every fifteen minutes until the time of the ascension."
+  - says: "Behind that corner stood the Walnut Street prison."
+    source: 1
+    quote: "He secured the yard of Walnut Street prison as the place from which to make the ascent in his balloon, early in January"
+  - says: "His name was Jean Pierre Blanchard, a French balloonist."
+    source: 1
+    quote: "Blanchard, the famous French aeronaut."
+  - says: "He had once been locked in a fortress himself, for his love of freedom."
+    source: 1
+    quote: "his devotion to the principles of freedom had caused his imprisonment in the fortress of Kufstein"
+  - says: "At nine o'clock, President Washington arrived. Fifteen guns saluted him."
+    source: 1
+    quote: "on the arrival of President Washington, at nine o'clock, a salute of fifteen guns was fired."
+  - says: "Blanchard wore a plain blue suit, and a cocked hat with white feathers."
+    source: 1
+    quote: "was dressed in a plain blue suit, with a cocked hat and white feathers."
+  - says: "At five minutes past ten, Washington handed him a paper."
+    source: 1
+    quote: "At five minutes after ten o'clock, Blanchard, having received a paper from Gen. Washington, took leave of the spectators and sprang into his boat"
+  - says: "Blanchard sprang into a little boat, spangled and painted blue, under a balloon of yellowish silk."
+    source: 1
+    quote: "sprang into his boat, which was spangled and painted blue. The balloon, which was of yellowish silk highly varnished"
+  - says: "He threw out some ballast, and rose, waving the flag of the United States and the flag of France."
+    source: 1
+    quote: "he threw out a portion of the ballast and the balloon began to ascend, the aeronaut waving the United States flag and the tri-color of France."
+  - says: "He flew for forty six minutes, and came down across the river in New Jersey."
+    source: 1
+    quote: "Blanchard's voyage lasted forty-six minutes, during which he traveled fifteen miles, descending a little to the eastward of Cooper's Ferry, N. J."
+  - says: "That evening he was back, to pay his respects to the President."
+    source: 1
+    quote: "evening of the same day he reached Philadelphia and paid his respects to President Washington."
+  - says: "He had hoped to clear nearly three thousand dollars."
+    source: 1
+    quote: "He had calculated on gaining nearly three thousand dollars by the exhibition"
+  - says: "A huge crowd watched, but most of it stood outside the walls."
+    source: 1
+    quote: "an immense concourse assembled at the jail-yard and vicinity. Within the inclosure there were several hundred spectators."
+  - says: "He took in four hundred and five."
+    source: 1
+    quote: "and subscriptions was but four hundred and five dollars."
+sources:
+  - title: "History of Philadelphia, 1609 to 1884, volume 1 (J. Thomas Scharf and Thompson Westcott, 1884)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofphilade01scha
+    retrievedAt: "2026-11-10"
+    rights: public-domain

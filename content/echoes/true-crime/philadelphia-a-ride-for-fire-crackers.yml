@@ -1,0 +1,112 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Germantown), following docs/writing-echoes.md (format v2) and docs/14-true-crime.md. Male narrator per content/voices.yml.
+# Listening spot: Public sidewalk of East Washington Lane, a short way below the Washington Lane railroad station, the stretch where the Ross boys played. The listener stays on the lane, never at a private door.
+# Position: Christian Ross (1876) puts his house on the north side of East Washington Lane, eighth from Main Street and second from the Chestnut Hill railroad station; set on the lane just southwest of Wikidata's point for Washington Lane station (40.0511, -75.1716) (low confidence: the house is not identified on the modern map; widened radius).
+# Key facts and sources (docs/14-true-crime.md): the date, the two boys taken, Walter released, the ransom of twenty thousand dollars, the twenty three letters and that Charley was never found are in both the father's account (1876) and CBS Philadelphia (2014). The dying confession in Brooklyn rests on the father's account alone; told as what was reported, never as proven. No one named here is alive.
+id: philadelphia-a-ride-for-fire-crackers
+title: "A Ride for Fire Crackers"
+summary: "On 1 July 1874 two men in a buggy offered two little boys a ride on this lane, to buy fire crackers. One came home. One never did."
+place: "East Washington Lane near Washington Lane station, Germantown, Philadelphia, Pennsylvania"
+at: { lat: 40.05030, lng: -75.17270 }
+triggerRadiusKm: 0.1
+category: true-crime
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.8
+tags: [philadelphia, germantown, true-crime, charley-ross, kidnapping, ransom, unsolved]
+teaser: "The candy came first. For four days."
+script: |
+  Look along this lane. In the summer of eighteen seventy four, it was lined with handsome houses set back behind their lawns. Two little boys played on the sidewalk here. Walter Ross was six. His brother Charley was four.
+
+  For several days, two men in a buggy had been stopping to give them candy.
+
+  On the first of July, the boys asked their father for money for fire crackers, for the Fourth. He promised to bring them some. That evening, when he got home, they were gone. A neighbour had seen them ride off with two men.
+
+  The men had promised the boys fire crackers. They drove them miles across the city. They gave Walter twenty five cents and sent him into a cigar shop. When he came out with his fire crackers, the buggy was gone. And Charley with it.
+
+  Two days later, the first letter came. They wanted twenty thousand dollars. Over the months, there were twenty three letters. Charley never came home.
+
+  That December, two burglars were shot breaking into a house in Brooklyn. It was reported that one of them, before he died, said that they were the men who took Charley Ross. Nobody ever found Charley.
+
+  Almost two years later, his father was still searching, and wrote it all down, every letter and every false hope.
+
+  Look along the lane once more.
+
+  The candy came first.
+editorial: draft
+factCheck: single-source
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: alleged
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo describes the kidnapping of a four year old child who was never found. No violence is described."
+claims:
+  - says: "Two little boys played on the sidewalk here."
+    source: 1
+    quote: "they had been playing on the sidewalk in front of the house"
+  - says: "Walter Ross was six. His brother Charley was four."
+    source: 2
+    quote: "Keim says it was July 1, 1874 when little Charlie and his 6-year-old brother Walter were taken."
+  - says: "Walter Ross was six. His brother Charley was four."
+    source: 2
+    quote: "It tells the story of the abduction of a 4-year-old boy from his front yard in Germantown, 140 years ago."
+  - says: "For several days, two men in a buggy had been stopping to give them candy."
+    source: 1
+    quote: "two men driving on the Lane in a buggy had given him and his brother Charley candy on Saturday, June 27th; Monday, June 29th ; Tuesday, June 30th ; and Wednesday, July 1st"
+  - says: "For several days, two men in a buggy had been stopping to give them candy."
+    source: 2
+    quote: "A few days before the kidnapping, the abductors would give the boys candy and introduce themselves and clearly had developed a trust"
+  - says: "On the first of July, the boys asked their father for money for fire crackers, for the Fourth. He promised to bring them some."
+    source: 1
+    quote: "On the morning of that day the children asked me for money to buy fire-crackers for the Fourth of July. I told them I would get some for them"
+  - says: "That evening, when he got home, they were gone."
+    source: 1
+    quote: "I went to the gate, but could not see them"
+  - says: "A neighbour had seen them ride off with two men."
+    source: 1
+    quote: "next saw them pass her house in a wagon with two men."
+  - says: "The men had promised the boys fire crackers."
+    source: 1
+    quote: "Charley had asked them for a ride, and also whether they would not buy him firecrackers, which they promised to do."
+  - says: "They gave Walter twenty five cents and sent him into a cigar shop. When he came out with his fire crackers, the buggy was gone. And Charley with it."
+    source: 1
+    quote: "Walter was given twenty-five cents, and directed to a cigar store next to the comer"
+  - says: "They gave Walter twenty five cents and sent him into a cigar shop. When he came out with his fire crackers, the buggy was gone. And Charley with it."
+    source: 1
+    quote: "While Walter was in the store buying the crackers and torpedoes, the men drove off, taking Charley with them"
+  - says: "Two days later, the first letter came. They wanted twenty thousand dollars."
+    source: 2
+    quote: "Two days later, the Ross family began receiving letters demanding a ransom of $20,000 in exchange for the return of Charlie."
+  - says: "Over the months, there were twenty three letters. Charley never came home."
+    source: 2
+    quote: "The Ross family received a total of 23 ransom notes, but Charlie was never found."
+  - says: "That December, two burglars were shot breaking into a house in Brooklyn."
+    source: 1
+    quote: "two men, Mosher and Douglas, had been shot and killed in attempting a burglary"
+  - says: "It was reported that one of them, before he died, said that they were the men who took Charley Ross."
+    source: 1
+    quote: "one of them had confessed that they were the abductors of Charley Ross"
+  - says: "Nobody ever found Charley."
+    source: 2
+    quote: "but Charlie was never found."
+  - says: "Almost two years later, his father was still searching, and wrote it all down, every letter and every false hope."
+    source: 1
+    quote: "EARLY two years have passed away since my two children were taken from Germantown, Pa."
+  - says: "In the summer of eighteen seventy four, it was lined with handsome houses set back behind their lawns."
+    source: 1
+    quote: "On both sides of the Lane, between these two points, are a number of very handsome residences, all set back some distance from the roadway, and having well-kept lawns in front"
+sources:
+  - title: "The Father's Story of Charley Ross, the Kidnapped Child (Christian K. Ross, 1876)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/fathersstoryofch00rossrich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "New Exhibit In Germantown Tells Story Of Nation's First Kidnapping For Ransom (Cherri Gregg, 2014)"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/new-exhibit-in-germantown-tells-story-of-nations-first-kidnapping-for-ransom/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
