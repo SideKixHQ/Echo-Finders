@@ -36,7 +36,7 @@ script: |
 detail: >-
   The Park Service's Growlery page says Douglass "probably" took the name from Dickens; the script keeps that hedge. The 1889 reporter's words ("literally filled with books and paper") are quoted on the same page. The Catherine Impey quotation comes from her 1892 diary as cited by the Park Service.
 editorial: draft
-factCheck: corroborated
+factCheck: single-source
 claims:
   - says: "One room. A chimney. No windows."
     source: 2

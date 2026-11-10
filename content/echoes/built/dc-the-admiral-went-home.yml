@@ -35,7 +35,7 @@ script: |
 detail: >-
   The Park Service gives no reason for the family's embarrassment ("For whatever reason, the family felt the statue in its Washington location had become an embarrassment"); the script does not guess.
 editorial: draft
-factCheck: corroborated
+factCheck: single-source
 claims:
   - says: "A wide marble bowl, held up by three figures. The Sea. The Wind. The Stars."
     source: 1

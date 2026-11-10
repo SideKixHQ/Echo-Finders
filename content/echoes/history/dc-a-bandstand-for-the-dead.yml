@@ -33,7 +33,7 @@ script: |
 detail: >-
   The Park Service's two pages both give 499 names; one older page says 487 for the trees planted nearby, which is not used. The Park Service says concerts became rarer after the Second World War as bandstands went out of fashion.
 editorial: draft
-factCheck: corroborated
+factCheck: single-source
 claims:
   - says: "Twelve columns, a domed roof, white marble."
     source: 2

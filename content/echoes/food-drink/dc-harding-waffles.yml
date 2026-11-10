@@ -37,7 +37,7 @@ script: |
 detail: >-
   All from the Park Service's history of the mill, except the ambassador's walk, which the Park Service quotes from a 1915 newspaper on its Jusserand page. The script does not guess at the grounds of the complaints against Hattie L. Sewell; the Park Service says only that "park neighbors and Peirce-Shoemaker estate trustees complained". The mill was restored and grinding again by 1936.
 editorial: draft
-factCheck: corroborated
+factCheck: single-source
 claims:
   - says: "For most of the eighteen hundreds, it ground corn, wheat and rye for the farms around here."
     source: 1

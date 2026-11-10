@@ -37,7 +37,7 @@ script: |
 detail: >-
   Who set the Anacostia camp on fire has been disputed; the Park Service panel says the infantry did, and the script says only that the camp was set on fire. The Park Service article says Angelo was among those Patton's troops routed, but not where; the script says he was driven out of Washington.
 editorial: draft
-factCheck: corroborated
+factCheck: single-source
 claims:
   - says: "In the summer of nineteen thirty two, this flat ground on your side was a town of shacks, built by veterans of the First World War."
     source: 2

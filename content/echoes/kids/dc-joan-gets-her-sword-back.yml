@@ -34,7 +34,7 @@ script: |
 
   Now you are both ready.
 editorial: draft
-factCheck: corroborated
+factCheck: single-source
 claims:
   - says: "That is Joan of Arc. Hundreds of years ago, as a teenager, she led soldiers into battle in France."
     source: 1
