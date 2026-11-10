@@ -390,6 +390,16 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   check('Echo card: opens from the bar', await visible(card));
   const walk = card.getByRole('button', { name: /^Walk there · \d+ min$/ });
   check('Echo card: far off, the primary is Walk there with the minutes', await visible(walk));
+  // The first locked card ever carries the longer tip (how echoes unlock, how close this
+  // one needs you) with Got it; after that the gold line is the short one.
+  const tipOk = card.locator('.pop-tip-ok');
+  if (await tipOk.count()) {
+    check('Echo card: the first locked card says how echoes unlock, and how close',
+      await visible(card.getByText(/Echoes unlock where they happened\. Walk within \d+ m/)));
+    await tipOk.click();
+    await p.waitForTimeout(300);
+    check('Echo card: Got it leaves the short line', (await card.locator('.pop-tip-ok').count()) === 0);
+  }
   check('Echo card: far off, says why there is no Play', await visible(card.getByText('Unlocks when you get there')));
   check('Echo card: far off, no Play', (await card.locator('.pop-go').count()) === 0);
   for (const name of ['Save', 'Add to route', 'Share', 'More']) {

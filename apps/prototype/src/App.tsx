@@ -38,7 +38,7 @@ import { Rail, type WalkingView } from "./Rail";
 import { MODE_PHRASE } from "./travel";
 import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { holdLockScreen, primeLockScreen } from "./lock-screen";
-import { HowEchoesUnlock, LockedToast, NearToast, SyncedToast } from "./Toasts";
+import { HowEchoesUnlock, NearToast, SyncedToast } from "./Toasts";
 import {
   HOW_KEY,
   LOCKED_KEY,
@@ -2323,6 +2323,9 @@ export function App() {
               {selectedEcho && !routePicker && !reporting ? (
                 <EchoPopup
                   anywhere={owner || selectedEcho.echo.id === gift}
+                  {...(lockedToast === selectedEcho.echo.id
+                    ? { tip: { line: unlockLine(selectedEcho.echo, journeyMode), onDone: () => setLockedToast(null) } }
+                    : {})}
                   echo={selectedEcho.echo}
                   distanceKm={selectedEcho.distanceKm}
                   state={stateOf(selectedEcho.echo.id)}
@@ -2809,16 +2812,6 @@ export function App() {
                       setListening(true);
                     }}
                     onClose={() => setSyncedNow(null)}
-                  />
-                );
-              }
-              const locked = lockedToast ? LIBRARY_BY_ID.get(lockedToast) : undefined;
-              if (locked) {
-                return (
-                  <LockedToast
-                    key={`locked-${locked.id}`}
-                    line={unlockLine(locked, journeyMode)}
-                    onClose={() => setLockedToast(null)}
                   />
                 );
               }

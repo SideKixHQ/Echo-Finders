@@ -2956,9 +2956,10 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   top: calc(var(--top-gap) + var(--mapbar-h) + 2px);
   pointer-events: none;
 }
-/* With an echo's card open, the card climbs to just under the map bar, so a toast there
-   would sit on the card's ✕. It rides over the map bar instead, where nothing is being used. */
-.screen:has(.pop) .toast-dock { top: var(--top-gap); }
+/* With an echo's card open, the card climbs to just under the map bar, so a toast under
+   the whole bar would sit on the card's ✕. It rides over the bar's second row (the trip and
+   filter chips, which nobody needs while reading a card) and leaves the search box free. */
+.screen:has(.pop) .toast-dock { top: calc(var(--top-gap) + 66px); }
 .toast {
   pointer-events: auto;
   display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
@@ -5280,6 +5281,12 @@ div.maplibregl-map { font-size: var(--fs-label); }
 .pop-lock {
   margin: 0; display: flex; align-items: center; justify-content: center; gap: 6px;
   font-size: 15px; color: var(--ember-core);
+}
+.pop-lock { text-align: center; }
+.pop-tip-ok {
+  align-self: center; min-height: 44px; padding: 0 18px; border-radius: 999px; cursor: pointer;
+  font: inherit; font-size: var(--fs-label); font-weight: 600;
+  color: var(--white); background: rgba(155, 149, 255, 0.18); border: 1px solid var(--indigo-soft);
 }
 .pop-lock svg {
   width: 15px; height: 15px; flex: none; fill: none; stroke: currentColor;
