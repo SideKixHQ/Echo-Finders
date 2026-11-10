@@ -300,6 +300,52 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── Take me there: directions inside the app ────────────────────────────────────
+// James (2026-11-10): "take me there should take you there not open another window you
+// have to tap to open another app." One tap on the card starts the walk here: the turn at
+// the top, the walk at the bottom, a way to end it, and nothing that leaves the app.
+{
+  const { ctx, p } = await freshApp();
+  const opened = [];
+  ctx.on('page', (pg) => opened.push(pg.url()));
+  await p.addStyleTag({ content: '.synced { pointer-events: none !important; }' });
+  let take = null;
+  for (let i = 0; i < 10 && !take; i++) {
+    await p.locator('.synced-later').click({ timeout: 500 }).catch(() => {});
+    await p.locator('.echobar-tap').click().catch(() => {});
+    await p.waitForTimeout(500);
+    const b = p.locator('.pop').getByRole('button', { name: /Take me there|Walk there/ });
+    if (await b.count()) take = b;
+    else {
+      await p.keyboard.press('Escape');
+      await p.locator('.echobar-arrow').last().click().catch(() => {});
+      await p.waitForTimeout(300);
+    }
+  }
+  check('Directions: an echo card offers to take you there', !!take);
+  if (take) {
+    await take.click();
+    await p.waitForTimeout(2500);
+    check('Directions: one tap, and the turn is on screen', await visible(p.locator('.dir-turn')));
+    const turn = (await p.locator('.dir-turn').innerText().catch(() => '')).trim();
+    check('Directions: the turn says how far and what to do', /\d+(\.\d)? k?m/.test(turn) && /(Turn|Carry on|Continue|Straight|Head|Almost)/.test(turn), turn);
+    const sheet = p.locator('.dir-sheet');
+    check('Directions: the sheet says how long, when and where to', await visible(sheet)
+      && /min|km/.test(await sheet.innerText()) && /to /.test(await sheet.innerText()), await sheet.innerText().catch(() => ''));
+    check('Directions: says what happens on arrival', await visible(sheet.getByText('When you arrive it unlocks. Tap Play.', { exact: false })));
+    check('Directions: the way is drawn on the map', (await p.locator('.dir-line').count()) === 1);
+    check('Directions: nothing hands off to another maps app',
+      (await p.locator('a[href*="maps.apple.com"], a[href*="google.com/maps"]').count()) === 0 && opened.length === 0, opened.join(' '));
+    const end = sheet.getByRole('button', { name: 'End directions' });
+    const box = await end.boundingBox();
+    check('Directions: End directions is a 44px target', !!box && box.height >= 44, JSON.stringify(box));
+    await end.click();
+    await p.waitForTimeout(600);
+    check('Directions: End directions ends them', !(await p.locator('.dir-turn, .dir-sheet, .dir-line').count()));
+  }
+  await ctx.close();
+}
+
 // ── The trip sheet ──────────────────────────────────────────────────────────────
 {
   const { ctx, p } = await freshApp();

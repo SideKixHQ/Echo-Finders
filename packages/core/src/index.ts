@@ -4,6 +4,7 @@ export * from "./geo/great-circle.js";
 export * from "./geo/corridor.js";
 export * from "./geo/solar.js";
 export * from "./geo/streets.js";
+export * from "./geo/guidance.js";
 export * from "./geo/plan-walk.js";
 export * from "./entitlement/entitlement.js";
 export * from "./route/profile.js";

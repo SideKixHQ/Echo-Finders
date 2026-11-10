@@ -3,8 +3,9 @@
  * route from you to an echo along it (`packages/core/src/geo/streets.ts` does the routing).
  *
  * Files are fetched only for the area you are in and kept for the session. Outside every
- * area there is no route, and the caller falls back to the compass and distance it always
- * had, plus a hand-off to the phone's own maps app (`mapsLink`).
+ * area there is no route, and the caller guides you in a straight line, inside the app
+ * (`DirectionsBar`). There is no hand-off to another maps app any more: James, 2026-11-10,
+ * "take me there should take you there not open another window".
  */
 
 import { useEffect, useRef, useState } from "react";
@@ -94,19 +95,6 @@ export function useDirections(from: LatLng | null, to: LatLng | null): Direction
   }, [from?.lat, from?.lng, to?.lat, to?.lng]);
 
   return out;
-}
-
-/**
- * Walking directions in the phone's own maps app: Apple Maps on an iPhone or iPad, Google
- * Maps everywhere else. For when there is no street file here, or somebody simply prefers
- * the app they know.
- */
-export function mapsLink(to: LatLng, label: string): string {
-  const apple = typeof navigator !== "undefined" && /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
-  const ll = `${to.lat.toFixed(6)},${to.lng.toFixed(6)}`;
-  return apple
-    ? `https://maps.apple.com/?daddr=${ll}&dirflg=w&q=${encodeURIComponent(label)}`
-    : `https://www.google.com/maps/dir/?api=1&destination=${ll}&travelmode=walking`;
 }
 
 /** "4 min", "25 min", "1 hr 10 min": walking time as people say it. */

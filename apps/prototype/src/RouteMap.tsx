@@ -155,6 +155,11 @@ interface Props {
    * appears, so you see the whole way before following it.
    */
   readonly directions?: readonly LatLng[] | null;
+  /**
+   * The directions are a straight line to the echo, because there is no street file here.
+   * Drawn dashed, so it does not pretend to be a path along the streets.
+   */
+  readonly directionsStraight?: boolean;
   /** The echo the directions lead to: it stays lit while every other pin dims. */
   readonly aimId?: string | null;
   /**
@@ -346,6 +351,7 @@ export function RouteMap({
   locateTap = 0,
   lookAt = null,
   directions = null,
+  directionsStraight = false,
   aimId = null,
   plan = null,
   onBackgroundTap,
@@ -1291,7 +1297,9 @@ export function RouteMap({
      * one thing the walk is about.
      */
     if (directions && directions.length > 1) {
-      const pts = [at, directions[directions.length - 1]!];
+      // The whole line, not only its ends: a way round a block can bulge out of the box
+      // between you and the echo.
+      const pts = [at, ...directions];
       const lngs = pts.map((p) => p.lng);
       const lats = pts.map((p) => p.lat);
       const inset = insetFor(barH, reservedBottom, navH);
@@ -1994,7 +2002,7 @@ export function RouteMap({
       {planPath && <path d={planPath} className="pw-line-casing" />}
       {planPath && <path d={planPath} className="pw-line" />}
       {dirPath && <path d={dirPath} className="dir-casing" />}
-      {dirPath && <path d={dirPath} className="dir-line" />}
+      {dirPath && <path d={dirPath} className={directionsStraight ? "dir-line dir-line-straight" : "dir-line"} />}
       {dirPath && directions && (() => {
         // Where it ends: a ring round the echo you are walking to, so it stands out from
         // its neighbours without another colour.
