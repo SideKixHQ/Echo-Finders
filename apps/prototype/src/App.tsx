@@ -1727,11 +1727,10 @@ export function App() {
   return (
     <div className="stage">
       <div className={seat ? "phone seat" : "phone"}>
-        <div className={selfDirected ? "screen" : "screen stack-noguide"}>
+        <div className={`${selfDirected ? "screen" : "screen stack-noguide"}${TEST_POSITION ? " has-test-position" : ""}`}>
           {TEST_POSITION && (
             <div className="test-position" role="status">
-              Test position: {TEST_POSITION.label}. Take <span className="mono">?at=</span> off the
-              address to use your real location.
+              Test position {TEST_POSITION.label} · take <span className="mono">?at=</span> off for real GPS
             </div>
           )}
           <div className="statusbar">
