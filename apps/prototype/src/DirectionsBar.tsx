@@ -75,7 +75,11 @@ export function directionsLine(
 ): readonly string[] {
   const where = step ? [`Stop ${step.at} of ${step.of}`] : [];
   if (!g) return [...where, "Finding the way"];
-  return [...where, walkTime(g.seconds), `arrive ${arrivalClock(nowMs, g.seconds)}`];
+  // A stop on a planned walk is minutes away and the next one follows it, so its line is
+  // which stop and how long; the clock is for a walk to one echo (James, 2026-11-10: fewer
+  // words, and "Stop 1 of 6 · 3 min · arrive 9:28 pm" wrapped onto two lines at 375).
+  if (step) return [...where, walkTime(g.seconds)];
+  return [walkTime(g.seconds), `arrive ${arrivalClock(nowMs, g.seconds)}`];
 }
 
 /** The turn card, under the top bar. */

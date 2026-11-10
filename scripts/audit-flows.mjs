@@ -1172,7 +1172,7 @@ async function nearby() {
   const bar = p.locator('.echobar-dir');
   const way = async () => (await bar.locator('.echobar-way').innerText().catch(() => '')).replace(/\s+/g, ' ').trim();
   const lead = await way();
-  check('Guided walk: shows the way to the first stop, which stop of how many', /^Stop 1 of \d+ · \d+ min · arrive /.test(lead), lead);
+  check('Guided walk: shows the way to the first stop, which stop of how many', /^Stop 1 of \d+ · \d+ (min|hr)/.test(lead), lead);
   check('Guided walk: turn by turn at the top', await visible(p.locator('.dir-turn')));
   // Numbered, one badge per stop, as the bar counts them.
   const of = Number(/of (\d+)/.exec(lead)?.[1] ?? 0);

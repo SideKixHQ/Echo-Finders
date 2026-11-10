@@ -14,10 +14,8 @@ describe("the echo bar's line while walking (board DirC)", () => {
     expect(line.join(" · ")).not.toMatch(/km|\bm\b/);
   });
 
-  it("says which stop on a planned or guided walk", () => {
-    const line = directionsLine(g(3 * 60), { at: 1, of: 6 }, NOW);
-    expect(line.slice(0, 2)).toEqual(["Stop 1 of 6", "3 min"]);
-    expect(line[2]).toMatch(/^arrive /);
+  it("says which stop and how long on a planned or guided walk, with no clock", () => {
+    expect(directionsLine(g(3 * 60), { at: 1, of: 6 }, NOW)).toEqual(["Stop 1 of 6", "3 min"]);
   });
 
   it("while the way is being found, says so", () => {
