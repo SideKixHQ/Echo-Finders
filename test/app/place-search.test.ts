@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { searchCities, searchEchoes, searchPlaces } from "../../apps/prototype/src/place-search";
+import { searchCities, searchEchoes, searchPlaces, startsAWord } from "../../apps/prototype/src/place-search";
 import { LIBRARY } from "../../apps/prototype/src/library.generated";
 
 const find = (q: string) => searchPlaces(q, new Map(), LIBRARY, 6);
@@ -66,5 +66,34 @@ describe("the map's search", () => {
 
   it("leaves the first run's list as it was", () => {
     expect(searchPlaces("boston", new Map(), LIBRARY).map((h) => h.label)[0]).toBe("Boston");
+  });
+});
+
+// "ne" found St. Augustine, because "ne" is inside "Augustine" (2026-11-10). Word starts only.
+describe("matching on the start of a word", () => {
+  it("matches the start of any word, and across the words after it", () => {
+    expect(startsAWord("New York", "ne")).toBe(true);
+    expect(startsAWord("New York", "new yo")).toBe(true);
+    expect(startsAWord("St. Augustine", "aug")).toBe(true);
+    expect(startsAWord("St. Augustine", "st. aug")).toBe(true);
+  });
+
+  it("does not match inside a word", () => {
+    expect(startsAWord("St. Augustine", "ne")).toBe(false);
+    expect(startsAWord("St. Augustine", "gustine")).toBe(false);
+    expect(startsAWord("Money for nothing", "ney")).toBe(false);
+  });
+
+  it("does not offer St. Augustine for \"ne\"", () => {
+    const all = [
+      ...searchCities("ne", new Map(), LIBRARY, 50).map((h) => h.label),
+      ...searchPlaces("ne", new Map(), LIBRARY, 50).map((h) => h.label),
+    ];
+    expect(all).not.toContain("St. Augustine");
+    expect(all).toContain("New York");
+  });
+
+  it("offers no echo for letters from the middle of a word, however many", () => {
+    expect(searchEchoes("ugustine", LIBRARY)).toEqual([]);
   });
 });

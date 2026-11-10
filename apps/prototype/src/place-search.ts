@@ -51,8 +51,22 @@ export function loadZips(): Promise<Map<string, LatLng>> {
 const short = (place: string) => place.split(",")[0]!.trim();
 
 /**
+ * Whether what was typed starts one of the words of `text`, carrying on across the words
+ * after it: "ne" and "new yo" find New York, "st. aug" finds St. Augustine, and "ne" does
+ * not find St. Augustine, or every title with "money" in it, because "ne" is inside those
+ * words rather than at the start of one. `q` is already lower case.
+ */
+export function startsAWord(text: string, q: string): boolean {
+  const t = text.toLowerCase();
+  for (let i = t.indexOf(q); i >= 0; i = t.indexOf(q, i + 1)) {
+    if (i === 0 || !/[a-z0-9']/.test(t[i - 1]!)) return true;
+  }
+  return false;
+}
+
+/**
  * What a query finds: a ZIP code (all five digits, or the start of one), and places in the
- * library whose name or town contains the words typed. A handful, nearest-to-exact first.
+ * library whose name or town has a word starting with what was typed. A handful, nearest-to-exact first.
  * The first run and "Where are you?" list these; the map's search splits the same lookup
  * into cities (`searchCities`) and echoes (`searchEchoes`).
  */
@@ -72,7 +86,7 @@ export function searchPlaces(
     const place = echo.point.place;
     // The place's own name only: matching the whole address listed Boston buildings for
     // "Washington", because they stand on Washington Street.
-    if (!short(place).toLowerCase().includes(q) || seen.has(short(place))) continue;
+    if (!startsAWord(short(place), q) || seen.has(short(place))) continue;
     seen.add(short(place));
     const town = place.split(",").slice(-2).join(",").trim();
     hits.push({ label: short(place), detail: town === short(place) ? "" : town, at: echo.point.at });
@@ -83,7 +97,7 @@ export function searchPlaces(
 
 /**
  * The CITIES half of a search: a ZIP code (all five digits, or the start of one), or the
- * towns whose name, or a name people use for them, contains what was typed.
+ * towns whose name has a word starting with what was typed, or a name people use for them.
  */
 export function searchCities(
   query: string,
@@ -116,7 +130,7 @@ export function searchCities(
     towns.set(key, { ...t, lat: t.lat + echo.point.at.lat, lng: t.lng + echo.point.at.lng, n: t.n + 1 });
   }
   const matches = (t: { town: string }) =>
-    t.town.toLowerCase().includes(q) || (ALIASES[t.town] ?? []).some((a) => a.startsWith(q) || q.startsWith(a));
+    startsAWord(t.town, q) || (ALIASES[t.town] ?? []).some((a) => a.startsWith(q) || q.startsWith(a));
   const townHits = [...towns.values()]
     .filter(matches)
     .sort((a, b) => Number(b.town.toLowerCase().startsWith(q)) - Number(a.town.toLowerCase().startsWith(q)) || b.n - a.n)
@@ -133,17 +147,15 @@ export function searchCities(
 }
 
 /**
- * The ECHOES half of the map's search: echoes whose title or place name contains what was
- * typed, titles that start with it first. Each comes with its town, for the line under it.
+ * The ECHOES half of the map's search: echoes whose title or place name has a word starting
+ * with what was typed, titles that start with it first. Each comes with its town, for the line under it.
  */
 export function searchEchoes(query: string, library: readonly Echo[], limit = 6): EchoHit[] {
   const q = query.trim().toLowerCase();
   if (q.length < 2 || /^\d+$/.test(q)) return [];
   // By the start of a word, so "ne" finds New Market and not every title with "money" in
-  // it; anywhere in the words once four letters have been typed.
-  const words = (text: string) => text.toLowerCase().split(/[^a-z0-9']+/);
-  const found = (text: string) =>
-    words(text).some((w) => w.startsWith(q)) || (q.length >= 4 && text.toLowerCase().includes(q));
+  // it, however many letters have been typed (`startsAWord`).
+  const found = (text: string) => startsAWord(text, q);
   const rank = (e: Echo) => {
     if (e.title.toLowerCase().startsWith(q)) return 0;
     if (found(e.title)) return 1;

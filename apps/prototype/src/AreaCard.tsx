@@ -20,10 +20,10 @@ import type { Echo } from "@echofinders/core";
 /** The card's height and the gap above it, for what has to clear it. */
 export const AREACARD_H = 80;
 /**
- * Clear of the bar: its own 86 (`ECHOBAR_H`) and then some, because with the larger type
- * the bar measures 91 and an 8px gap left the card sitting on it.
+ * The gap between the top of the bar and the card. `ECHOBAR_H` (99) already
+ * holds the bar's own float gap, so this is only the air above it.
  */
-export const AREACARD_OVER_BAR = 10;
+export const AREACARD_OVER_BAR = 8;
 
 const parts = (e: Echo): string[] =>
   e.point.place

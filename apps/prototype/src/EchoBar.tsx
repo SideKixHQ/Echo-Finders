@@ -97,14 +97,19 @@ export interface EchoBarProps {
   readonly guidance: Guidance | null;
 }
 
+/** The gap the bar floats above the tab bar (`.echobar` in `theme.css`). */
+export const ECHOBAR_FLOAT = 8;
 /**
- * How much of the bottom this takes, so the map keeps its pins and its credit clear of it.
+ * How much of the bottom this takes, so the map keeps its pins and its credit clear of it:
+ * the bar and the gap it floats above the tab bar.
  *
- * It tracks `--step-h` in `theme.css`, exactly as `NAV_H` in `RouteMap` tracks the tab bar.
- * Change the bar and change both. It replaced 104 of stepper plus a 132 sheet peek plus a
- * 56 guidance strip.
+ * It tracks `--step-h` in `theme.css` (99px there too), exactly as `NAV_H` in `RouteMap`
+ * tracks the tab bar: change the bar and change both. It was 86 and went stale when the type
+ * scale made the bar 91px tall, so the control column and the zoomed-out card sat on it.
+ * A measured height was tried and dropped: the map framed itself on the first guess and then
+ * moved when the measurement arrived, so Locate put you 44px from where you had been.
  */
-export const ECHOBAR_H = 86;
+export const ECHOBAR_H = 99;
 
 const RARITY_LABEL: Record<string, string> = { rare: "Rare", singular: "Singular" };
 

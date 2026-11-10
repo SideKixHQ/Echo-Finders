@@ -49,7 +49,7 @@
  * stays and the fiction goes.
  */
 
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useLayoutEffect, useRef, useState } from "react";
 import { rarityOf, type Echo } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { EchoCharacter } from "@echofinders/echo";
@@ -173,6 +173,38 @@ export function Ribbon({
    * component and the same seek, so there is no second implementation to fall out of step.
    */
   const [reading, setReading] = useState(false);
+  const asking = at >= 0.92 || stopped;
+
+  /*
+   * WHERE THE WORDS STOP, measured rather than written down.
+   *
+   * The panel stopped at a constant (the tab bar plus 204px) that was right for one
+   * screen height. The column between the clock and the transport is flexible, so on a
+   * taller phone the clock sat higher than the constant assumed and the transcript ran
+   * over "0:05 / -1:14". This measures the clock's top on every resize, and when the
+   * rating row comes and goes, and stops the panel just above it. The CSS value stays as
+   * the first frame's fallback.
+   */
+  const root = useRef<HTMLDivElement | null>(null);
+  const clockRef = useRef<HTMLParagraphElement | null>(null);
+  const [readBottom, setReadBottom] = useState<number | null>(null);
+  useLayoutEffect(() => {
+    if (!reading) return;
+    const measure = () => {
+      const r = root.current?.getBoundingClientRect();
+      const c = clockRef.current?.getBoundingClientRect();
+      if (!r || !c || r.height < 1) return;
+      setReadBottom(Math.ceil(r.bottom - c.top) + 6);
+    };
+    measure();
+    const ro = typeof ResizeObserver === "undefined" ? null : new ResizeObserver(measure);
+    if (ro && root.current) ro.observe(root.current);
+    window.addEventListener("resize", measure);
+    return () => {
+      ro?.disconnect();
+      window.removeEventListener("resize", measure);
+    };
+  }, [reading, asking]);
 
   /*
    * Drag anywhere on the ribbon. Pointer capture rather than window listeners, so a finger
@@ -189,7 +221,7 @@ export function Ribbon({
   );
 
   return (
-    <div className="hear">
+    <div className="hear" ref={root}>
       {/*
         The plate, or an honest absence of one. Most echoes have no archive photograph
         cleared yet (ADR-0006), and inventing one is exactly the thing that later gets
@@ -350,7 +382,7 @@ export function Ribbon({
             <circle className="hear-head-dot" cx={W * at} cy={MID} r="5" />
           </svg>
         </div>
-        <p className="hear-clock mono">
+        <p className="hear-clock mono" ref={clockRef}>
           <span>{clock(elapsed)}</span>
           <span>-{clock(left)}</span>
         </p>
@@ -387,7 +419,7 @@ export function Ribbon({
         they are in the row under it now with the other things you do to a story, and
         this appears only when there is something to ask.
       */}
-      {(at >= 0.92 || stopped) && (
+      {asking && (
   <div className="hear-set hear-ask">
           <span>Worth stopping for?</span>
           <button
@@ -579,7 +611,7 @@ export function Ribbon({
         to want to pause or jump back a line.
       */}
       {reading && (
-        <div className="hear-read">
+        <div className="hear-read" style={readBottom === null ? undefined : { bottom: readBottom }}>
           <Transcript echo={echo} simple={simple} progress={at} onSeek={onSeek} />
         </div>
       )}

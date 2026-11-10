@@ -61,10 +61,15 @@ const HALO_R: Record<string, number | undefined> = {
  *
  * Rounded to fifty metres to agree with the echo card and the sheet, which round the same
  * way. Three places on one screen reporting the same distance differently is how somebody
- * stops believing any of them.
+ * stops believing any of them. Whole kilometres from ten up: "806.9 km" on a far pin is a
+ * decimal nobody can walk.
  */
 const coarse = (km: number): string =>
-  km * 1000 < 950 ? `${Math.round((km * 1000) / 50) * 50} m` : `${km.toFixed(1)} km`;
+  km * 1000 < 950
+    ? `${Math.round((km * 1000) / 50) * 50} m`
+    : km < 10
+      ? `${km.toFixed(1)} km`
+      : `${Math.round(km).toLocaleString("en-US")} km`;
 
 interface Props {
   /** The journey, or `null` when roaming: there is no line and no corridor, only here. */
@@ -1505,7 +1510,10 @@ export function RouteMap({
     const railBottom = box.h - (navH + reservedBottom + 12);
     const railTop = railTopPx ?? railBottom - RAIL_H;
     const floor = barH + 40;
-    const ceiling = box.h - navH - 80;
+    // The lowest a plate may sit: half its height and 8px clear of whatever covers the bottom
+    // of the map (the echo bar, the area card). It was a flat 80px above the tab bar, which
+    // put a plate under the 99px bar and the card over it, out of sight (found 2026-11-10).
+    const ceiling = box.h - navH - Math.max(80, reservedBottom + 17 + 8);
     /*
      * Each plate takes a 40px slot on its own side. A right-hand plate is never allowed
      * onto the column, and when its slot is taken it goes UP, away from the column.
@@ -2251,7 +2259,7 @@ export function RouteMap({
         const name = warm
           ? `${mark.rarity === "singular" ? "Singular" : "Rare"} ${CATEGORY_LABEL[mark.echo.category]}`
           : CATEGORY_LABEL[mark.echo.category];
-        hoverAt.current.set(`edge:${mark.echo.id}`, { x: right ? box.w - GUTTER - 62 : GUTTER + 62, y: mark.y - 4 });
+        hoverAt.current.set(`edge:${mark.echo.id}`, { x: right ? box.w - GUTTER - 72 : GUTTER + 72, y: mark.y - 4 });
         return (
           <g
             key={mark.echo.id}
@@ -2269,17 +2277,19 @@ export function RouteMap({
             <g transform={right ? undefined : "scale(-1 1)"}>
               {/* A whole pill on the gutter, its right edge on the rail's: hung off the
                   screen edge as a tab, it read as cut off beside everything else on 16px. */}
-              <rect className="map-edge-plate" x="-124" y="-17" width="124" height="34" rx="14" />
+              {/* 144 wide: at 124 the word "Singular" (76px in Space Grotesk at 14) ran under the
+                  arrow, which drew over its last letter on the right and its first on the left. */}
+              <rect className="map-edge-plate" x="-144" y="-17" width="144" height="34" rx="14" />
             </g>
             <g
               className="map-edge-glyph"
-              transform={`translate(${right ? -110 : 110} 0) scale(0.6) translate(-12 -12)`}
+              transform={`translate(${right ? -130 : 130} 0) scale(0.6) translate(-12 -12)`}
             >
               {CATEGORY_ICON[mark.echo.category]}
             </g>
             <text
               className="map-edge-text"
-              x={right ? -94 : 94}
+              x={right ? -114 : 114}
               y="4"
               textAnchor={right ? "start" : "end"}
             >

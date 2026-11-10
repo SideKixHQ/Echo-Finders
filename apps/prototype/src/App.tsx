@@ -58,7 +58,7 @@ import {
 import { Walk } from "./Walk";
 import { Nowhere } from "./Nowhere";
 import { Ribbon } from "./Ribbon";
-import { EchoBar, ECHOBAR_H } from "./EchoBar";
+import { EchoBar, ECHOBAR_FLOAT, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, buyWeekPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
@@ -2315,7 +2315,7 @@ export function App() {
                 is the only answer on that screen that does not involve aiming at the pile.
               */}
               {/* Not while directions are up: their sheet has the bottom of the screen. */}
-              {farOut && !directing && <AreaCard echoes={inView} above={showBar ? ECHOBAR_H + AREACARD_OVER_BAR : 0} />}
+              {farOut && !directing && <AreaCard echoes={inView} above={showBar ? ECHOBAR_H - ECHOBAR_FLOAT + AREACARD_OVER_BAR : 0} />}
               {showBar && (
                 <EchoBar
                   items={stepList}

@@ -1498,6 +1498,8 @@ body {
   min-height: 48px;
   width: 100%; display: flex; align-items: center; gap: 14px;
   background: none; border: 0; color: inherit; text-align: left; cursor: pointer; padding: 0;
+  /* A <button> does not inherit the page's font: every settings row was in Arial. */
+  font: inherit;
 }
 .setting-text { flex: 1; display: flex; flex-direction: column; gap: 3px; }
 .setting-text strong { font-size: var(--fs-button); font-weight: 500; }
@@ -1535,7 +1537,7 @@ body {
 .danger-row {
   width: 100%; display: flex; flex-direction: column; gap: 3px; align-items: flex-start;
   background: none; border: 0; color: inherit; text-align: left; cursor: pointer;
-  padding: 9px 0; border-bottom: 1px solid var(--line);
+  padding: 9px 0; border-bottom: 1px solid var(--line); font: inherit;
 }
 .danger-row:last-child { border-bottom: 0; }
 .danger-row span { font-size: var(--fs-button); color: var(--magenta-ink); }
@@ -4026,11 +4028,12 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  * `--sheet-h` plus `--step-h` plus `--guide-h`; those three are why the control column
  * had to learn to wrap. `ECHOBAR_H` in `EchoBar.tsx` tracks this — change both.
  */
-/* The bar (77px) and the 8px it floats above the tab bar, so what clears it really does. */
-.screen:has(.echobar) { --step-h: 86px; }
-/* The zoomed-out card (`AreaCard.tsx`, `AREACARD_H`) adds itself to the stack, so the control
-   column moves up above it rather than sitting on it. */
-.screen:has(.echobar):has(.area-card) { --step-h: 176px; }
+/* The bar (91px) and the 8px it floats above the tab bar, so what clears it really does.
+   `ECHOBAR_H` in `EchoBar.tsx` says the same 99: change both. */
+.screen:has(.echobar) { --step-h: 99px; }
+/* The zoomed-out card (`AreaCard.tsx`: `AREACARD_H` 80 and `AREACARD_OVER_BAR` 8) adds itself
+   to the stack, so the control column moves up above it rather than sitting on it. */
+.screen:has(.echobar):has(.area-card) { --step-h: 187px; }
 .screen:has(.area-card):not(:has(.echobar)) { --step-h: 80px; }
 .echobar {
   position: absolute; left: 0; right: 0; z-index: 24;
@@ -4634,7 +4637,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .react-emoji { font-size: 30px; line-height: 1; }
 .react-word { font-size: var(--fs-label); color: var(--muted); }
 .react-meh {
-  margin-top: 6px; min-height: 36px; padding: 0 12px; border: 0; background: none; cursor: pointer;
+  margin-top: 6px; min-height: 44px; padding: 0 12px; border: 0; background: none; cursor: pointer;
   font: inherit; font-size: var(--fs-secondary); color: var(--muted); text-decoration: underline; text-underline-offset: 3px;
 }
 /* My Echoes: the face you gave it, beside the title. */
@@ -4920,7 +4923,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .rt-undo span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .rt-undo button {
-  min-height: 36px; padding: 0 14px; border-radius: 999px; cursor: pointer; font: inherit; font-weight: 600;
+  min-height: 44px; padding: 0 14px; border-radius: 999px; cursor: pointer; font: inherit; font-weight: 600;
   color: var(--aqua); background: none; border: 0;
 }
 
@@ -5072,7 +5075,7 @@ div.maplibregl-map { font-size: var(--fs-label); }
 .feedback-form { display: flex; flex-direction: column; gap: 12px; }
 .feedback-kinds { border: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .feedback-kind {
-  position: relative; min-height: 36px; display: inline-flex; align-items: center;
+  position: relative; min-height: 44px; display: inline-flex; align-items: center;
   padding: 0 12px; border-radius: 99px; border: 1px solid var(--line-2);
   font-size: var(--fs-secondary); color: var(--muted); cursor: pointer;
 }
