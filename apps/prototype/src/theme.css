@@ -134,6 +134,17 @@
   --rgb-hair: 216, 220, 229;
   --rgb-panel: 11, 15, 43;
   --rgb-accent: 0, 255, 231;
+  /*
+   * Ink on an aqua fill, and the colour of a shadow, as tokens.
+   *
+   * Both were literals (#042220, rgba(0, 0, 0, 0.5)), and both are right only on a dark
+   * ground. In the light scheme the aqua fill is a deep teal, which a near-black label
+   * cannot sit on, and a half-black shadow under a white sheet reads as a smudge.
+   * `--shadow-k` scales every shadow's alpha, so dark keeps its exact values.
+   */
+  --on-aqua: #042220;
+  --rgb-shadow: 0, 0, 0;
+  --shadow-k: 1;
   --line: rgba(var(--rgb-hair), 0.12);
   --line-2: rgba(var(--rgb-hair), 0.22);
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
@@ -177,19 +188,30 @@
  * colours are darker and more saturated versions of the same hue rather than the same ink
  * on a different page.
  */
+/*
+ * Redone 2026-11-10 (James: "your light mode is not really light mode its a mix"). The
+ * first pass was a cool blue-grey that left every full-screen surface (the sync moment,
+ * the player, the paywall, walk mode) painting its own navy, with the light scheme's
+ * near-black ink on top of it. Now one warm paper ground, white cards, and every surface
+ * reads these tokens. Values from the approved Light board: #f4f1ea, white, #0b0f2b ink,
+ * #4a5468 secondary ink, aqua taken down to #00736c.
+ */
 :root[data-theme="light"] {
-  --stage: #e2e7ef;
-  --rgb-panel: 222, 229, 240;
+  --stage: #f4f1ea;
+  --rgb-panel: 255, 255, 255;
   --rgb-hair: 11, 15, 43;
   --rgb-accent: 0, 115, 108;
+  --on-aqua: #ffffff;
+  --rgb-shadow: 11, 15, 43;
+  --shadow-k: 0.36;
 
-  --space: #ffffff;
-  --charcoal: #edf0f6;
+  --space: #f4f1ea;
+  --charcoal: #ebe6db;
   --slate: #ffffff;
   --white: #0b0f2b;
-  --muted: #5d6779;
+  --muted: #4a5468;
   /* Full strength here, because the dark scheme's alpha trick composes to 1.73:1 on white. */
-  --muted-soft: #5d6779;
+  --muted-soft: #4a5468;
   /* Lifted magenta is a DARK-scheme fix. On white it goes the other way, or the three
      delete rows read at 3.32:1. */
   --magenta-ink: #b30055;
@@ -223,9 +245,13 @@
   --btn: linear-gradient(140deg, #00857c, #00635c);
   --btn-flat: #00635c;
   --btn-ink: #ffffff;
+  /* The screens that used to stay dark in both themes are light now, so their button is
+     the light scheme's button. Only the viewfinder still paints dark, and it has none. */
+  --btn-dark: linear-gradient(140deg, #00857c, #00635c);
+  --btn-dark-ink: #ffffff;
   --gold: #7a5a15;
-  --line: rgba(11, 15, 43, 0.14);
-  --line-2: rgba(11, 15, 43, 0.24);
+  --line: rgba(11, 15, 43, 0.12);
+  --line-2: rgba(11, 15, 43, 0.22);
 
   /*
    * The ember, darkened until it can carry small text on white.
@@ -296,7 +322,7 @@ body {
 .phone {
   width: 390px; height: 844px; flex: none;
   border-radius: 52px; background: #000; padding: 11px;
-  box-shadow: 0 0 0 2px #23262e, 0 40px 90px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 0 2px #23262e, 0 40px 90px rgba(var(--rgb-shadow), calc(0.7 * var(--shadow-k)));
 }
 .screen {
   position: relative; width: 100%; height: 100%;
@@ -652,7 +678,7 @@ body {
   border-radius: 99px 0 0 99px;
   /* Fades out at its leading edge rather than ending in a 1px line, like the journey
      chip's: drawn hard, that line read as a crack. */
-  background: linear-gradient(90deg, rgba(0, 255, 231, 0.17), rgba(0, 255, 231, 0.07) 70%, rgba(0, 255, 231, 0));
+  background: linear-gradient(90deg, rgba(var(--rgb-accent), 0.17), rgba(var(--rgb-accent), 0.07) 70%, rgba(var(--rgb-accent), 0));
 }
 :root[data-theme="light"] .ribbon-fill {
   background: linear-gradient(90deg, rgba(0, 115, 108, 0.16), rgba(0, 115, 108, 0.06) 70%, rgba(0, 115, 108, 0));
@@ -1101,7 +1127,7 @@ body {
   position: absolute; left: 0; right: 0; bottom: 72px; z-index: 32;
   background: var(--slate); border-radius: 24px 24px 0 0;
   border-top: 1px solid var(--line-2); padding: 22px 18px 20px;
-  box-shadow: 0 -14px 44px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -14px 44px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
 }
 .arr-head h2 { font-size: 21px; font-weight: 600; line-height: 1.22; }
 .arr-head p { font-size: 13px; line-height: 1.55; color: var(--muted); margin-top: 8px; }
@@ -1378,7 +1404,7 @@ body {
  */
 .map-focusing .pin:not(.pin-focus), .map-focusing .clus { opacity: 0.32; }
 .map-focusing .pin, .map-focusing .clus { transition: opacity 0.26s linear; }
-.pin-focus .pin-hit ~ * { filter: drop-shadow(0 0 10px rgba(0, 255, 231, 0.55)); }
+.pin-focus .pin-hit ~ * { filter: drop-shadow(0 0 10px rgba(var(--rgb-accent), 0.55)); }
 .pin-focus::after { content: none; }
 /* A ring that arrives with it, so the eye is told where to look rather than left to
    find the one thing that did not fade. */
@@ -1676,7 +1702,7 @@ body {
 .vf-blend input::-webkit-slider-thumb {
   -webkit-appearance: none; appearance: none; width: 22px; height: 22px; border-radius: 50%;
   background: var(--ember); border: 2px solid var(--space);
-  box-shadow: 0 0 0 1px var(--ember-deep), 0 2px 10px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 0 1px var(--ember-deep), 0 2px 10px rgba(var(--rgb-shadow), calc(0.45 * var(--shadow-k)));
 }
 .vf-blend input::-moz-range-thumb {
   width: 20px; height: 20px; border-radius: 50%; background: var(--ember);
@@ -1737,9 +1763,15 @@ body {
   --cat-land: #7fd4c1;
   --cat-inspo: #d7f75b;
   --muted: #aeb5c2;
+  /* Its glows and shadows are the dark scheme's too: they were literals until the light
+     scheme was redone, and the camera frame is the one place they should stay that way. */
+  --rgb-accent: 0, 255, 231;
+  --rgb-hair: 216, 220, 229;
+  --rgb-shadow: 0, 0, 0;
+  --shadow-k: 1;
 }
 /* The tray below it is a light surface again, so it takes the theme's own muted grey. */
-:root[data-theme="light"] .vf-bottom { --muted: #5d6779; }
+:root[data-theme="light"] .vf-bottom { --muted: #4a5468; --rgb-hair: 11, 15, 43; }
 
 /* The returning listener's front door. Same panel, different order. */
 .pf-kicker {
@@ -2016,7 +2048,7 @@ body {
   width: 44px; height: 44px; flex: none; cursor: pointer;
   border-radius: 14px; background: rgba(var(--rgb-panel), 0.94);
   border: 1px solid var(--line); display: grid; place-items: center;
-  color: var(--cool); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  color: var(--cool); box-shadow: 0 6px 18px rgba(var(--rgb-shadow), calc(0.45 * var(--shadow-k)));
   transition: height 0.26s cubic-bezier(0.32, 0.72, 0, 1),
     margin 0.26s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.18s linear;
 }
@@ -2024,7 +2056,7 @@ body {
   width: 18px; height: 18px; stroke: currentColor; fill: none;
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
-.fab.on { background: var(--aqua); color: #042220; border-color: var(--aqua); }
+.fab.on { background: var(--aqua); color: var(--on-aqua); border-color: var(--aqua); }
 
 /*
  * HOVER: what a button does, said beside it (James, 2026-10-12: "make sure the map icons
@@ -2042,12 +2074,12 @@ body {
     white-space: nowrap; padding: 6px 10px; border-radius: 9px;
     font: 500 12px/1.2 inherit; letter-spacing: 0; text-transform: none;
     color: var(--cool); background: rgba(var(--rgb-panel), 0.97);
-    border: 1px solid var(--line); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    border: 1px solid var(--line); box-shadow: 0 6px 18px rgba(var(--rgb-shadow), calc(0.45 * var(--shadow-k)));
     transition: opacity 0.12s linear, transform 0.12s ease-out;
   }
   .rail .fab:hover::after, .map-chrome-btn:hover::after { opacity: 1; transform: translate(0, -50%); }
   .rail .fab:hover { border-color: var(--aqua); color: var(--aqua); }
-  .rail .fab.on:hover { color: #042220; }
+  .rail .fab.on:hover { color: var(--on-aqua); }
 }
 
 /*
@@ -2066,8 +2098,8 @@ body {
    state rather than decoration, which is the rule the whole app follows for motion. */
 .fab-hum.on { animation: humPulse 2.8s ease-in-out infinite; }
 @keyframes humPulse {
-  0%, 100% { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45), 0 0 0 0 rgba(0, 255, 231, 0.34); }
-  50% { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45), 0 0 0 9px rgba(0, 255, 231, 0); }
+  0%, 100% { box-shadow: 0 6px 18px rgba(var(--rgb-shadow), calc(0.45 * var(--shadow-k))), 0 0 0 0 rgba(var(--rgb-accent), 0.34); }
+  50% { box-shadow: 0 6px 18px rgba(var(--rgb-shadow), calc(0.45 * var(--shadow-k))), 0 0 0 9px rgba(var(--rgb-accent), 0); }
 }
 @media (prefers-reduced-motion: reduce) { .fab-hum.on { animation: none; } }
 
@@ -2382,7 +2414,7 @@ body {
   overflow-y: auto; overscroll-behavior: contain;
   padding: 13px 16px 12px; border-radius: 16px;
   background: rgba(var(--rgb-panel), 0.96); border: 1px solid var(--line-2);
-  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 12px 34px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
   backdrop-filter: blur(14px);
   animation: pop-in 0.18s var(--ease);
 }
@@ -2789,7 +2821,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   margin: 4px 0 0; padding: 4px; list-style: none;
   max-height: 210px; overflow-y: auto; scrollbar-width: none;
   background: var(--slate); border: 1px solid var(--line-2); border-radius: 14px;
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 14px 34px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
 }
 .pf-air-list::-webkit-scrollbar { display: none; }
 .pf-air-list button {
@@ -2911,7 +2943,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   width: 20px; height: 20px; fill: none; stroke: currentColor;
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
-.coll-filter-btn[aria-expanded="true"], .coll-filter-btn.on { color: var(--aqua); border-color: rgba(0, 255, 231, 0.4); }
+.coll-filter-btn[aria-expanded="true"], .coll-filter-btn.on { color: var(--aqua); border-color: rgba(var(--rgb-accent), 0.4); }
 .coll-filter-dot {
   position: absolute; top: 7px; right: 7px; width: 7px; height: 7px; border-radius: 50%;
   background: var(--aqua);
@@ -2944,7 +2976,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .coll-showall {
   margin-top: 14px; min-height: 44px; padding: 0 20px; border-radius: 12px; cursor: pointer;
   font: inherit; font-size: 14px; color: var(--aqua);
-  background: none; border: 1px solid rgba(0, 255, 231, 0.4);
+  background: none; border: 1px solid rgba(var(--rgb-accent), 0.4);
 }
 
 .coll-stats { display: flex; gap: 8px; }
@@ -3122,7 +3154,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   min-height: 54px; border-radius: 16px; border: 0; cursor: pointer;
   font: inherit; font-size: 15px; font-weight: 600; color: var(--btn-dark-ink);
   background: var(--btn-dark);
-  box-shadow: 0 0 36px rgba(0, 255, 231, 0.28);
+  box-shadow: 0 0 36px rgba(var(--rgb-accent), 0.28);
 }
 .synced-listen svg { width: 16px; height: 16px; fill: currentColor; }
 .synced-later {
@@ -3135,7 +3167,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 3px;
   min-height: 58px; padding: 10px 48px 10px 16px; border-radius: 14px; cursor: pointer;
   font: inherit; text-align: left; color: var(--white);
-  background: rgba(0, 255, 231, 0.08); border: 1px solid rgba(0, 255, 231, 0.42);
+  background: rgba(var(--rgb-accent), 0.08); border: 1px solid rgba(var(--rgb-accent), 0.42);
 }
 .synced-next-kicker {
   font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.12em;
@@ -3237,8 +3269,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .walk-compass {
   margin-top: 12px; min-height: 44px; padding: 0 18px; border-radius: 12px;
   font: inherit; font-size: 13px; cursor: pointer;
-  color: var(--cool); background: rgba(0, 255, 231, 0.08);
-  border: 1px solid rgba(0, 255, 231, 0.34);
+  color: var(--cool); background: rgba(var(--rgb-accent), 0.08);
+  border: 1px solid rgba(var(--rgb-accent), 0.34);
 }
 
 .walk-card {
@@ -3281,7 +3313,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   width: 16px; height: 16px; flex: none;
   fill: none; stroke: currentColor; stroke-width: 1.8;
 }
-.walk-locked .walk-lock { border-style: solid; border-color: rgba(0, 255, 231, 0.3); color: var(--cool); }
+.walk-locked .walk-lock { border-style: solid; border-color: rgba(var(--rgb-accent), 0.3); color: var(--cool); }
 
 .walk-acts { margin-top: 10px; align-self: stretch; display: flex; gap: 10px; }
 .walk-map {
@@ -3293,7 +3325,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .walk-end {
   flex: none; min-height: 52px; padding: 0 22px; border-radius: 15px; cursor: pointer;
   font: inherit; font-size: 15px; font-weight: 500; color: var(--cool);
-  background: rgba(0, 255, 231, 0.1); border: 1px solid rgba(0, 255, 231, 0.4);
+  background: rgba(var(--rgb-accent), 0.1); border: 1px solid rgba(var(--rgb-accent), 0.4);
 }
 
 /* Swallows the tap. It covers the lock button too, because a target a thigh can
@@ -3338,9 +3370,9 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 
 .nowhere-main { margin: auto 0; }
 .nowhere-seek { width: 100%; max-width: 390px; height: 230px; flex: none; }
-.nowhere-grid { stroke: rgba(216, 220, 229, 0.05); stroke-width: 1; fill: none; }
+.nowhere-grid { stroke: rgba(var(--rgb-hair), 0.05); stroke-width: 1; fill: none; }
 .nowhere-ring {
-  fill: none; stroke: rgba(0, 255, 231, 0.42); stroke-width: 1.4;
+  fill: none; stroke: rgba(var(--rgb-accent), 0.42); stroke-width: 1.4;
   transform-origin: 195px 200px; animation: nowhere-seek 4.4s ease-out infinite;
 }
 .nowhere-ring-2 { animation-delay: -2.2s; }
@@ -3349,7 +3381,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   100% { transform: scale(1.15); opacity: 0; }
 }
 /* How far it is actually looking, drawn to scale against nothing. */
-.nowhere-reach { fill: rgba(0, 255, 231, 0.05); stroke: rgba(0, 255, 231, 0.22); stroke-width: 1; }
+.nowhere-reach { fill: rgba(var(--rgb-accent), 0.05); stroke: rgba(var(--rgb-accent), 0.22); stroke-width: 1; }
 .nowhere-me { fill: var(--aqua); }
 
 .nowhere-say { margin-top: 6px; }
@@ -3470,7 +3502,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
    can drag is a bar people drag by accident while reaching for the sheet. */
 
 
-.hear-stop.on { color: var(--aqua); border-color: rgba(0, 255, 231, 0.4); }
+.hear-stop.on { color: var(--aqua); border-color: rgba(var(--rgb-accent), 0.4); }
 
 .hear-back svg {
   width: 17px; height: 17px; fill: none; stroke: currentColor;
@@ -3559,7 +3591,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   width: 14px; height: 14px; fill: none; stroke: currentColor;
   stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
 }
-.hear-chip.on { color: var(--aqua); border-color: rgba(0, 255, 231, 0.4); }
+.hear-chip.on { color: var(--aqua); border-color: rgba(var(--rgb-accent), 0.4); }
 /* The same row asking the question instead of offering the settings, once the story has
    essentially landed. Same height, so nothing below it moves. */
 .hear-ask { gap: 10px; }
@@ -3858,7 +3890,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   0%   { transform: scale(0.7); opacity: 0.85; }
   100% { transform: scale(2.6); opacity: 0; }
 }
-.city-you-halo { fill: rgba(0, 255, 231, 0.1); }
+.city-you-halo { fill: rgba(var(--rgb-accent), 0.1); }
 .city-you { fill: var(--aqua); stroke: #05070f; stroke-width: 3; }
 
 /* Type on a plate, because type over a glow is type you cannot read. */
@@ -4013,8 +4045,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
    the third is a promise about the phone, which is why it is stated before the walk
    rather than discovered at forty percent battery. */
 .onb-asks { display: flex; flex-direction: column; gap: 10px; }
-.onb-perm-need { border-color: rgba(0, 255, 231, 0.32); }
-.onb-ic-aqua { color: var(--aqua); background: rgba(0, 255, 231, 0.12); }
+.onb-perm-need { border-color: rgba(var(--rgb-accent), 0.32); }
+.onb-ic-aqua { color: var(--aqua); background: rgba(var(--rgb-accent), 0.12); }
 .onb-ic-indigo { color: var(--indigo-soft); background: rgba(155, 149, 255, 0.12); }
 .onb-ic-ember { color: var(--ember-core); background: rgba(255, 158, 18, 0.12); }
 .onb-without {
@@ -4137,7 +4169,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 /* A filter that is ON must always say so somewhere. A map quietly missing two thirds of
    its pins with no visible cause is the worst thing this screen could do. */
-.catfilter-tap.is-filtered { color: var(--white); border-color: rgba(0, 255, 231, 0.45); }
+.catfilter-tap.is-filtered { color: var(--white); border-color: rgba(var(--rgb-accent), 0.45); }
 .catfilter-tap svg {
   width: 14px; height: 14px; fill: none; stroke: currentColor;
   stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
@@ -4157,7 +4189,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   width: min(330px, calc(100vw - 30px));
   border-radius: 15px; padding: 5px;
   background: rgba(var(--rgb-panel), 0.98); border: 1px solid var(--line);
-  backdrop-filter: blur(16px); box-shadow: 0 16px 44px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(16px); box-shadow: 0 16px 44px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
   animation: catpopIn 0.16s var(--ease);
 }
 @keyframes catpopIn { from { opacity: 0; transform: translateY(-6px); } }
@@ -4392,7 +4424,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   position: absolute; inset: 0 auto 0 0; pointer-events: none;
   /* Fades out at its leading edge rather than ending in a 1px line: drawn hard, that
      line ran through "42 min" and read as a crack in the chip on a real phone. */
-  background: linear-gradient(90deg, rgba(0, 255, 231, 0.17), rgba(0, 255, 231, 0.07) 70%, rgba(0, 255, 231, 0));
+  background: linear-gradient(90deg, rgba(var(--rgb-accent), 0.17), rgba(var(--rgb-accent), 0.07) 70%, rgba(var(--rgb-accent), 0));
 }
 :root[data-theme="light"] .jchip-fill {
   background: linear-gradient(90deg, rgba(0, 115, 108, 0.16), rgba(0, 115, 108, 0.06) 70%, rgba(0, 115, 108, 0));
@@ -4422,7 +4454,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   position: absolute; top: calc(100% + 8px); left: 0; z-index: 42;
   width: min(300px, calc(100vw - 30px)); padding: 6px; border-radius: 16px;
   background: rgba(var(--rgb-panel), 0.98); border: 1px solid var(--line-2);
-  backdrop-filter: blur(16px); box-shadow: 0 16px 44px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(16px); box-shadow: 0 16px 44px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
   animation: catpopIn 0.16s var(--ease);
   /* Never runs under the tab bar: the menu scrolls inside itself instead. */
   max-height: calc(100dvh - var(--nav-h) - 150px); overflow-y: auto; overscroll-behavior: contain;
@@ -4442,8 +4474,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
 .jmenu-mode.on {
-  color: var(--aqua); background: rgba(0, 255, 231, 0.12);
-  box-shadow: inset 0 0 0 1px rgba(0, 255, 231, 0.45);
+  color: var(--aqua); background: rgba(var(--rgb-accent), 0.12);
+  box-shadow: inset 0 0 0 1px rgba(var(--rgb-accent), 0.45);
 }
 .jmenu-empty { margin: 8px 10px; font-size: 13px; color: var(--muted); }
 .jmenu-item {
@@ -4457,7 +4489,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .jmenu-item span { display: flex; flex-direction: column; gap: 2px; flex: 1; }
 .jmenu-item small { font-size: 12px; color: var(--muted); }
-.jmenu-item.on { background: rgba(0, 255, 231, 0.09); }
+.jmenu-item.on { background: rgba(var(--rgb-accent), 0.09); }
 .jmenu-item.on > svg { stroke: var(--aqua); }
 .jmenu-item .jmenu-tick { width: 16px; height: 16px; stroke: var(--aqua); stroke-width: 2.2; }
 .jmenu-more {
@@ -4618,7 +4650,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   position: absolute; top: calc(100% + 8px); left: 0; right: 0; z-index: 40;
   padding: 6px; border-radius: 16px;
   background: rgba(var(--rgb-panel), 0.98); border: 1px solid var(--line-2);
-  backdrop-filter: blur(16px); box-shadow: 0 16px 44px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(16px); box-shadow: 0 16px 44px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
   animation: catpopIn 0.16s var(--ease);
 }
 @media (prefers-reduced-motion: reduce) { .kind-box { animation: none; } }
@@ -4701,8 +4733,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   top: calc(var(--top-gap, 12px) + var(--mapbar-h, 56px) + 8px);
   display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px 0 12px;
   border-radius: 999px; border: 0; cursor: pointer;
-  background: var(--aqua); color: #042220; font: inherit; font-size: 14px; font-weight: 500;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  background: var(--aqua); color: var(--on-aqua); font: inherit; font-size: 14px; font-weight: 500;
+  box-shadow: 0 6px 18px rgba(var(--rgb-shadow), calc(0.45 * var(--shadow-k)));
 }
 /* Under "Back to me", when the place looked up has no echoes yet. */
 .look-empty {
@@ -4727,7 +4759,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   bottom: calc(var(--nav-h) + 12px);
   padding: 16px 16px 10px; border-radius: 18px; text-align: center;
   background: rgba(var(--rgb-panel), 0.97); border: 1px solid var(--line);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5); animation: react-in 0.25s ease-out;
+  box-shadow: 0 12px 32px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k))); animation: react-in 0.25s ease-out;
 }
 @keyframes react-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 .react-skip {
@@ -4792,7 +4824,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .map-tip { pointer-events: none; }
 .map-tip rect {
   fill: rgba(var(--rgb-panel), 0.97); stroke: var(--line); stroke-width: 1;
-  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(0 6px 14px rgba(var(--rgb-shadow), calc(0.45 * var(--shadow-k))));
 }
 .map-tip-title { fill: var(--cool); font-size: 12px; font-weight: 600; }
 .map-tip-sub { fill: var(--muted); font-size: 11px; }
@@ -4819,7 +4851,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .dir-line {
   fill: none; stroke: var(--aqua); stroke-width: 4.5;
   stroke-linecap: round; stroke-linejoin: round;
-  filter: drop-shadow(0 0 6px rgba(0, 255, 231, 0.45));
+  filter: drop-shadow(0 0 6px rgba(var(--rgb-accent), 0.45));
 }
 :root[data-theme="light"] .dir-casing { stroke: #ffffff; opacity: 0.9; }
 
@@ -4830,8 +4862,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   top: calc(var(--top-gap, 12px) + var(--mapbar-h, 56px) + 8px);
   display: flex; align-items: center; gap: 12px;
   padding: 12px 8px 12px 14px; border-radius: 18px;
-  background: rgba(var(--rgb-panel), 0.96); border: 1px solid rgba(0, 255, 231, 0.35);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
+  background: rgba(var(--rgb-panel), 0.96); border: 1px solid rgba(var(--rgb-accent), 0.35);
+  box-shadow: 0 10px 28px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
 }
 .dirbar-arrow {
   width: 30px; height: 30px; flex: none; fill: none; stroke: var(--aqua); stroke-width: 2.2;
@@ -4873,7 +4905,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   max-height: 60%; overflow-y: auto; overscroll-behavior: contain;
   padding: 16px var(--gutter) 14px; border-radius: 22px 22px 0 0;
   background: rgba(var(--rgb-panel), 0.97); border-top: 1px solid var(--line-2);
-  box-shadow: 0 -14px 40px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 -14px 40px rgba(var(--rgb-shadow), calc(0.55 * var(--shadow-k)));
 }
 .pw-head { display: flex; align-items: center; justify-content: space-between; }
 .pw-head h2 { margin: 0; font-size: 19px; font-weight: 600; }
@@ -4889,7 +4921,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   min-height: 44px; padding: 0 14px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px;
   color: var(--cool); background: none; border: 1px solid var(--line-2);
 }
-.pw-chip.on { color: #042220; background: var(--aqua); border-color: var(--aqua); }
+.pw-chip.on { color: var(--on-aqua); background: var(--aqua); border-color: var(--aqua); }
 .pw-sum { margin: 14px 0 8px; font-size: 14px; line-height: 1.4; color: var(--cool); }
 .pw-stops { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
 .pw-stop {
@@ -4925,7 +4957,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .pw-go {
   width: 100%; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px;
   border-radius: 16px; cursor: pointer; font: inherit; font-size: 15px; font-weight: 600; border: 0;
-  color: #042b28; background: linear-gradient(140deg, #7dfff2, var(--aqua));
+  color: var(--btn-ink); background: var(--btn);
 }
 .pw-go svg { width: 16px; height: 16px; fill: currentColor; }
 .pw-go:disabled { opacity: 0.45; cursor: default; }
@@ -4938,7 +4970,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .pw-line-casing { fill: none; stroke: #04060f; stroke-width: 8; opacity: 0.4; stroke-linecap: round; stroke-linejoin: round; }
 .pw-badge circle { fill: var(--aqua); stroke: #04060f; stroke-width: 2; }
 .pw-badge text {
-  fill: #042220; font-family: "Space Grotesk", monospace; font-size: 12px; font-weight: 600;
+  fill: var(--on-aqua); font-family: "Space Grotesk", monospace; font-size: 12px; font-weight: 600;
   text-anchor: middle; dominant-baseline: central;
 }
 .pw-badge.done circle { fill: rgba(var(--rgb-panel), 0.9); stroke: var(--aqua); }
@@ -4996,7 +5028,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   color: var(--cool); background: none; border: 1px solid var(--line-2);
 }
 .rt-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.rt-primary { flex: 1; font-weight: 600; color: #042b28; border: 0; background: linear-gradient(140deg, #7dfff2, var(--aqua)); }
+.rt-primary { flex: 1; font-weight: 600; color: var(--btn-ink); border: 0; background: var(--btn); }
 .rt-primary svg { fill: currentColor; stroke: none; }
 .rt-primary:disabled { opacity: 0.45; cursor: default; }
 .rt-del { width: 44px; padding: 0; color: var(--muted); }
@@ -5010,7 +5042,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   position: sticky; bottom: 12px; align-self: center; z-index: 5;
   display: flex; align-items: center; gap: 14px; padding: 8px 8px 8px 16px; border-radius: 999px;
   max-width: calc(100% - 2 * var(--gutter)); font-size: 14px; color: var(--white);
-  background: rgba(var(--rgb-panel), 0.98); border: 1px solid var(--line-2); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background: rgba(var(--rgb-panel), 0.98); border: 1px solid var(--line-2); box-shadow: 0 10px 30px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
 }
 .rt-undo span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .rt-undo button {
@@ -5024,7 +5056,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   max-height: 70%; overflow-y: auto; overscroll-behavior: contain;
   padding: 16px var(--gutter) 16px; border-radius: 22px 22px 0 0;
   background: rgba(var(--rgb-panel), 0.98); border-top: 1px solid var(--line-2);
-  box-shadow: 0 -14px 40px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 -14px 40px rgba(var(--rgb-shadow), calc(0.55 * var(--shadow-k)));
 }
 .atr-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .atr-what { min-width: 0; }
@@ -5041,7 +5073,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   width: 22px; height: 22px; flex: none; border-radius: 6px; display: grid; place-items: center;
   border: 1.6px solid var(--line-2);
 }
-.atr-tick svg { width: 14px; height: 14px; fill: none; stroke: #042220; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; opacity: 0; }
+.atr-tick svg { width: 14px; height: 14px; fill: none; stroke: var(--on-aqua); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; opacity: 0; }
 .atr-route.on .atr-tick { background: var(--aqua); border-color: var(--aqua); }
 .atr-route.on .atr-tick svg { opacity: 1; }
 .atr-name { flex: 1; min-width: 0; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -5059,7 +5091,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .atr-create {
   min-height: 48px; padding: 0 18px; border-radius: 14px; cursor: pointer; font: inherit; font-size: 15px; font-weight: 600;
-  color: #042b28; border: 0; background: linear-gradient(140deg, #7dfff2, var(--aqua));
+  color: var(--btn-ink); border: 0; background: var(--btn);
 }
 .atr-done {
   width: 100%; margin-top: 12px; min-height: 48px; border-radius: 16px; cursor: pointer; font: inherit; font-size: 15px;
@@ -5105,7 +5137,7 @@ body.seat { padding: 0; display: block; }
 /* Land, when the map cannot run (`landPath` in `RouteMap.tsx`): the basemap's own earth
    colour and a coastline, so a flight is a line over somewhere. */
 .map-land { fill: #1a2354; stroke: #2f3d80; stroke-width: 1; stroke-linejoin: round; }
-:root[data-theme="light"] .map-land { fill: #eef0f3; stroke: #b9c3d6; }
+:root[data-theme="light"] .map-land { fill: #f4f1ea; stroke: #c9c0ad; }
 
 /* The route, small, at the top of the plan (`PlanMap.tsx`). */
 .plan-map { display: block; width: 100%; height: auto; max-height: 170px; margin: 12px 0 2px; }
@@ -5118,8 +5150,8 @@ body.seat { padding: 0; display: block; }
 .plan-map-stop.on circle:not(.plan-map-hit) { fill: var(--ember); stroke: var(--ember); }
 .plan-map-stop.on text { fill: #1a0f00; }
 .plan-map-hit { fill: transparent; }
-:root[data-theme="light"] .plan-map-sea { fill: #c6d3e0; }
-:root[data-theme="light"] .plan-map-land { fill: #eef0f3; stroke: #b9c3d6; }
+:root[data-theme="light"] .plan-map-sea { fill: #bfe0e8; }
+:root[data-theme="light"] .plan-map-land { fill: #f4f1ea; stroke: #c9c0ad; }
 :root[data-theme="light"] .plan-map-stop circle:not(.plan-map-hit) { fill: #fff; }
 :root[data-theme="light"] .plan-map-stop text { fill: #0b0f2b; }
 
@@ -5236,3 +5268,64 @@ body.seat { padding: 0; display: block; }
   margin: 14px 2px 6px; font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--muted);
 }
+
+/* ── Light mode, every surface ──────────────────────────────────────────────────
+   The screens below painted their own near-black ground in both themes, which was
+   defensible while the light scheme only lightened the map and its chrome, and was the
+   "mix" James saw once it did not: the sync moment, the player, the paywall and walk
+   mode went navy with the light scheme's navy ink on top, so their titles vanished.
+   In the light scheme they take the same paper ground and white cards as everything
+   else. The viewfinder is the one exception, and keeps its own block above: a camera
+   feed is an image, not a surface. Colours only; nothing here moves anything. */
+:root[data-theme="light"] .synced,
+:root[data-theme="light"] .walk,
+:root[data-theme="light"] .nowhere,
+:root[data-theme="light"] .paywall,
+:root[data-theme="light"] .city {
+  background: radial-gradient(120% 80% at 50% 12%, #fffdf8 0%, var(--space) 60%, #ece7dc 100%);
+}
+:root[data-theme="light"] .hear { background: var(--space); }
+:root[data-theme="light"] .hear-noplate {
+  background:
+    radial-gradient(70% 90% at 30% 20%, rgba(255, 158, 18, 0.28), transparent 62%),
+    radial-gradient(60% 80% at 78% 40%, rgba(123, 59, 255, 0.16), transparent 64%),
+    #efe9dd;
+}
+:root[data-theme="light"] .hear-fade { background: linear-gradient(rgba(244, 241, 234, 0) 48%, var(--space) 100%); }
+:root[data-theme="light"] .hear-read { background: var(--space); }
+/* Over the photograph, so a white disc rather than a navy one. */
+:root[data-theme="light"] .hear-back,
+:root[data-theme="light"] .hear-stop {
+  background: rgba(255, 255, 255, 0.86); border-color: var(--line-2);
+}
+:root[data-theme="light"] .hear-chip { background: var(--slate); border-color: var(--line-2); }
+:root[data-theme="light"] .hear-acts > button:hover,
+:root[data-theme="light"] .hear-acts > label:hover { background: rgba(var(--rgb-hair), 0.05); }
+/* The strands were drawn to add light to a dark ground; on paper they draw as ink. */
+:root[data-theme="light"] .hear-rib { mix-blend-mode: multiply; }
+:root[data-theme="light"] .hear-wave { filter: saturate(1.6) brightness(0.62); }
+
+:root[data-theme="light"] .walk-awake,
+:root[data-theme="light"] .walk-card { background: var(--slate); }
+:root[data-theme="light"] .walk-card { box-shadow: 0 10px 30px rgba(11, 15, 43, 0.08); }
+
+:root[data-theme="light"] .paywall-plan { background: var(--slate); }
+:root[data-theme="light"] .paywall-plan.on { background: #fff8ec; }
+
+:root[data-theme="light"] .city-tile { opacity: 0.85; }
+:root[data-theme="light"] .city-bloom { mix-blend-mode: multiply; }
+:root[data-theme="light"] .city-you { stroke: #ffffff; }
+:root[data-theme="light"] .city-plate,
+:root[data-theme="light"] .city-head,
+:root[data-theme="light"] .city-legend { background: rgba(255, 255, 255, 0.92); }
+:root[data-theme="light"] .city-card { background: rgba(255, 255, 255, 0.97); }
+
+/* The map's own furniture: the edge marker's plate, the words under a rare pin and the
+   spokes of a fanned cluster were all drawn for a navy map. */
+:root[data-theme="light"] .map-edge-plate { fill: rgba(255, 255, 255, 0.95); stroke: var(--line-2); }
+:root[data-theme="light"] .pin-tag { stroke: rgba(255, 255, 255, 0.9); }
+:root[data-theme="light"] .fan-backdrop { fill: rgba(244, 241, 234, 0.6); }
+:root[data-theme="light"] .fan-spoke { stroke: rgba(11, 15, 43, 0.4); }
+:root[data-theme="light"] .fan-anchor { fill: rgba(11, 15, 43, 0.55); }
+:root[data-theme="light"] .map-vignette { display: none; }
+
