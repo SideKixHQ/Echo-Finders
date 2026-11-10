@@ -1,105 +1,116 @@
 /**
- * Where to go next, while you are walking to an echo.
+ * Walking to an echo, inside the app: the turn at the top, the walk at the bottom.
  *
- * The line on the map is the real instruction; this says the one thing a glance needs:
- * the next turn and how far to it, then how long the whole walk is. Outside the areas with
- * street files it says the direction and the distance instead, and the hand-off to the
- * phone's own maps app is always there for anyone who would rather.
+ * James (2026-11-10): "Take me there should use in app map navigation and take the person
+ * to the echo not open apple maps. You also do not need another step. take me there should
+ * take you there not open another window you have to tap to open another app."
+ *
+ * So one tap on the card starts this, and nothing in it leaves the app:
+ *
+ * - **The turn banner**, under the top bar: how far to the next turn and what it is
+ *   ("120 m, Turn right onto Chestnut Street"). Read at arm's length.
+ * - **The sheet**, at the bottom: minutes, distance, arrival time, which echo, what happens
+ *   when you get there, and the one way to stop.
+ * - **The line** on the map (`RouteMap`): along the streets where a street file was built,
+ *   straight to the echo where none was. Where it is straight, the banner says "Head
+ *   northeast" and the sheet says so, rather than handing you to another maps app, which is
+ *   what this used to do there ("Directions in Maps").
+ *
+ * Arriving is the sync's job, as it always was: within reach the echo syncs, the beacon is
+ * let go and the sync card takes over (`App`).
  */
 
-import type { Echo, Turn } from "@echofinders/core";
-import { mapsLink, walkDistance, walkTime, type Directions } from "./directions";
+import type { Echo, WalkGuidance, LatLng } from "@echofinders/core";
+import { arrivalClock, routeGuidance, straightGuidance } from "@echofinders/core";
+import { walkDistance, walkTime, type Directions } from "./directions";
 
 interface Props {
   readonly echo: Echo;
   readonly directions: Directions;
-  /** Compass bearing from you to the echo, for the case with no street route. */
-  readonly bearingDeg: number | null;
+  /** Where you are, for the straight line where there is no street route. */
+  readonly from: LatLng | null;
   readonly onEnd: () => void;
   /** On a planned walk: which stop this is, of how many. */
   readonly step?: { readonly at: number; readonly of: number };
 }
 
-const COMPASS = ["north", "north-east", "east", "south-east", "south", "south-west", "west", "north-west"];
+/**
+ * How tall the sheet is, for the map to keep you and the line clear of it. Matches
+ * `.dir-sheet` in theme.css, which also hands it to the control column as `--step-h`.
+ */
+export const DIRSHEET_H = 196;
 
-type Glyph = Turn["direction"] | "arrive" | "compass";
+/** Past this, a walking time and an arrival clock stop meaning anything. */
+const WALKABLE_M = 20_000;
 
-function nextStep(turns: readonly Turn[], metres: number): { say: string; inM: number | null; glyph: Glyph } {
-  const turn = turns[0];
-  if (!turn) {
-    return metres < 40
-      ? { say: "Almost there", inM: null, glyph: "arrive" }
-      : { say: "Straight on to it", inM: metres, glyph: "straight" };
-  }
-  const how = turn.direction === "straight" ? "Carry on" : `Turn ${turn.direction}`;
-  return { say: turn.onto ? `${how} onto ${turn.onto}` : how, inM: turn.fromStartM, glyph: turn.direction };
+/** The guidance for what the router answered, or null while it is still working. */
+export function guidanceFor(directions: Directions, from: LatLng | null, to: LatLng): WalkGuidance | null {
+  if (directions.kind === "route") return routeGuidance(directions.route);
+  if (directions.kind === "unrouted" && from) return straightGuidance(from, to);
+  return null;
 }
 
-/** The turn as an arrow, so a glance is enough. */
-function Arrow({ glyph }: { glyph: Glyph }) {
-  const d: Record<Glyph, string> = {
+/** The turn as an arrow, so a glance is enough. With no streets, it points at the echo. */
+function Arrow({ guidance }: { guidance: WalkGuidance | null }) {
+  const glyph = guidance?.glyph ?? "bearing";
+  const d: Record<WalkGuidance["glyph"], string> = {
     straight: "M12 20V5M7 10l5-5 5 5",
     left: "M17 20v-7a3 3 0 0 0-3-3H6M10 6l-4 4 4 4",
     right: "M7 20v-7a3 3 0 0 1 3-3h8M14 6l4 4-4 4",
     "slight left": "M15 20v-6L8 7M8 13V7h6",
     "slight right": "M9 20v-6l7-7M16 13V7h-6",
     arrive: "M12 21s6-5.4 6-10a6 6 0 1 0-12 0c0 4.6 6 10 6 10zM12 9.5v.01",
-    compass: "M12 12l4-7-7 4z",
+    bearing: "M12 20V5M7 10l5-5 5 5",
   };
+  const turn = glyph === "bearing" && guidance?.bearingDeg != null ? guidance.bearingDeg : 0;
   return (
-    <svg className={`dirbar-arrow dirbar-arrow-${glyph.replace(" ", "-")}`} viewBox="0 0 24 24" aria-hidden="true">
-      {glyph === "compass" && <circle cx="12" cy="12" r="8.5" />}
+    <svg
+      className={`dir-turn-arrow dir-turn-arrow-${glyph.replace(" ", "-")}`}
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      style={turn ? { transform: `rotate(${turn.toFixed(0)}deg)` } : undefined}
+    >
       <path d={d[glyph]} />
     </svg>
   );
 }
 
-export function DirectionsBar({ echo, directions, bearingDeg, onEnd, step }: Props) {
-  let say: string;
-  let inM: number | null = null;
-  let glyph: Glyph = "compass";
-  let total: string;
-  if (directions.kind === "route") {
-    ({ say, inM, glyph } = nextStep(directions.route.turns, directions.route.metres));
-    total = walkTime(directions.route.seconds);
-  } else if (directions.kind === "unrouted") {
-    const heading = bearingDeg === null ? null : COMPASS[Math.round(((bearingDeg % 360) + 360) % 360 / 45) % 8];
-    say = heading ? `Head ${heading}` : "Head towards it";
-    total = walkDistance(directions.metres);
-  } else {
-    say = "Finding the way…";
-    total = "";
-  }
-
+export function DirectionsBar({ echo, directions, from, onEnd, step }: Props) {
+  const g = guidanceFor(directions, from, echo.point.at);
+  const walkable = g !== null && g.metres <= WALKABLE_M;
   return (
-    <div className="dirbar" role="status" aria-live="polite">
-      <Arrow glyph={glyph} />
-      <div className="dirbar-say">
-        <strong>
-          {say}
-          {inM !== null && <span className="dirbar-in"> · {walkDistance(inM)}</span>}
-        </strong>
-        <span className="dirbar-to">
-          {total ? `${total} · ` : ""}
-          {step ? `stop ${step.at} of ${step.of}: ` : ""}
-          {echo.title}
-        </span>
-        {/*
-          Only where there is no street route here: then the phone's own maps app is the
-          better guide, and saying so is the honest answer. Where there is a route, the
-          line on the map is the instruction and a second way to the same place is noise.
-        */}
-        {directions.kind === "unrouted" && (
-          <a className="dirbar-maps" href={mapsLink(echo.point.at, echo.point.place ?? echo.title)} target="_blank" rel="noreferrer">
-            Directions in Maps
-          </a>
-        )}
+    <>
+      <div className="dir-turn" role="status" aria-live="polite">
+        <Arrow guidance={g} />
+        <div className="dir-turn-say">
+          {g?.inM != null && <strong className="dir-turn-in">{walkDistance(g.inM)}</strong>}
+          <span className="dir-turn-what">{g ? g.say : "Finding the way…"}</span>
+        </div>
       </div>
-      <button className="dirbar-end" onClick={onEnd} aria-label={step ? "End the walk" : "Stop directions"}>
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6 6l12 12M18 6L6 18" />
-        </svg>
-      </button>
-    </div>
+
+      <section className="dir-sheet" aria-label={`Directions to ${echo.title}`}>
+        <p className="dir-sheet-big">{g ? (walkable ? walkTime(g.seconds) : walkDistance(g.metres)) : "\u00a0"}</p>
+        <p className="dir-sheet-meta">
+          <span className="dir-sheet-how">
+            {g
+              ? walkable
+                ? `${walkDistance(g.metres)} · arrive ${arrivalClock(Date.now(), g.seconds)}`
+                : "Too far to walk"
+              : ""}
+          </span>
+          <span className="dir-sheet-to">
+            {step ? `Stop ${step.at} of ${step.of} · ` : ""}to {echo.title}
+          </span>
+        </p>
+        <p className="dir-sheet-note">
+          {g && !g.streets
+            ? "No street map here yet, so the line is straight. When you arrive it unlocks. Tap Play."
+            : "When you arrive it unlocks. Tap Play."}
+        </p>
+        <button className="dir-end" onClick={onEnd}>
+          {step ? "End the walk" : "End directions"}
+        </button>
+      </section>
+    </>
   );
 }

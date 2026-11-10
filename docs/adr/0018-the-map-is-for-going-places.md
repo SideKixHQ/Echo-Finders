@@ -71,6 +71,13 @@ missing piece between them.
      the turns.
    - Outside a built area the compass and distance remain, and the card hands off to the
      phone's own maps app.
+   - Amended 2026-11-10. No hand-off any more. James: "Take me there should use in app map
+     navigation and take the person to the echo not open apple maps." Outside a built area
+     the app draws a straight dashed line to the echo and says the heading and distance,
+     and says the line is straight. "Take me there" starts directions in one tap: a turn
+     banner at the top, a sheet with time, distance, arrival and "End directions" at the
+     bottom (`DirectionsBar.tsx`, `packages/core/src/geo/guidance.ts`). Drive there, the
+     driving hand-off of 2026-10-15, is a separate decision and is unchanged.
 5. **The loop closes.** After a sync the card offers the next nearest unheard echo, with
    its walking time.
 6. **A walk can be planned.**

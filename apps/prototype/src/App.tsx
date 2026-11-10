@@ -49,7 +49,7 @@ import { ReactionCard, faceOf } from "./ReactionCard";
 import { react, readReactions, type Reactions } from "./reaction-store";
 import { keepJourney, readJourney } from "./journey-store";
 import { useDirections, useWalkLine } from "./directions";
-import { DirectionsBar } from "./DirectionsBar";
+import { DirectionsBar, DIRSHEET_H } from "./DirectionsBar";
 import { PlanWalk } from "./PlanWalk";
 import { AddToRoute } from "./AddToRoute";
 import { Routes } from "./Routes";
@@ -1511,7 +1511,8 @@ export function App() {
   const WIDEN_TO_KM = 16;
   // Not while looking somewhere else: that map has its own echoes. Not once somebody
   // has asked for the map at their own position either: that is the answer they wanted.
-  const nowhere = roaming && !lookAt && !showMe && state.nearby.length === 0;
+  // Not while walking to an echo either: the way there is the answer, however far it is.
+  const nowhere = roaming && !lookAt && !showMe && !(beacon !== null && selfDirected) && state.nearby.length === 0;
   const nearestAnywhere = useMemo(() => {
     if (!nowhere) return null;
     const from = state.position?.at ?? null;
@@ -1543,7 +1544,12 @@ export function App() {
    * echoes and two ways to walk one list, stacked, is worse than either. There is one way
    * now.
    */
-  const showBar = !showingRose && !(nowhere && !overview) && stepList.length > 0;
+  /**
+   * Walking to an echo: the directions sheet has the bottom of the map, so the stepper
+   * stands down until you arrive or end them (James, 2026-11-10, the directions board).
+   */
+  const directing = beacon !== null && selfDirected;
+  const showBar = !showingRose && !directing && !(nowhere && !overview) && stepList.length > 0;
 
   /** The map is on you and moving with you: what lights the locate button. */
   const located =
@@ -1594,6 +1600,15 @@ export function App() {
    */
   const aimed = useMemo(() => (beacon ? LIBRARY.find((e) => e.id === beacon) ?? null : null), [beacon]);
   const directions = useDirections(selfDirected && aimed ? state.position?.at ?? null : null, aimed?.point.at ?? null);
+  const fromLat = state.position?.at.lat;
+  const fromLng = state.position?.at.lng;
+  /** The line the map draws: the street route, or straight to the echo where there is none. */
+  const dirLine = useMemo((): readonly LatLng[] | null => {
+    if (directions.kind === "route") return directions.route.line;
+    if (directions.kind === "unrouted" && aimed && fromLat !== undefined && fromLng !== undefined)
+      return [{ lat: fromLat, lng: fromLng }, aimed.point.at];
+    return null;
+  }, [directions, aimed, fromLat, fromLng]);
 
   /**
    * A planned walk (ADR-0018): being planned, or under way.
@@ -2000,7 +2015,7 @@ export function App() {
                 focusId={focusId}
                 /* The stepper covers the bottom of the map, so the map has to know: it
                    keeps pins, edge markers and the Esri credit above it. */
-                reservedBottom={showBar ? ECHOBAR_H : 0}
+                reservedBottom={showBar ? ECHOBAR_H : directing ? DIRSHEET_H : 0}
                 overview={overview}
                 progress={along}
                 theme={theme}
@@ -2010,7 +2025,13 @@ export function App() {
                 onPan={setPan}
                 locateTap={locateTap}
                 lookAt={roaming ? lookAt?.at ?? null : null}
-                directions={directions.kind === "route" ? directions.route.line : null}
+                /*
+                  The way there: along the streets where there is a street file, and a
+                  straight line to the echo where there is not, so the map always shows
+                  where to go. It used to show nothing there and offer another maps app.
+                */
+                directions={dirLine}
+                directionsStraight={directions.kind === "unrouted"}
                 aimId={beacon}
                 onBackgroundTap={() => {
                   setSelectedId(null);
@@ -2061,7 +2082,7 @@ export function App() {
                 <DirectionsBar
                   echo={aimed}
                   directions={directions}
-                  bearingDeg={walkTarget?.bearingDeg ?? null}
+                  from={state.position?.at ?? null}
                   {...(plan?.active ? { step: { at: plan.at + 1, of: plan.stops.length } } : {})}
                   onEnd={() => {
                     setBeacon(null);
@@ -2258,6 +2279,9 @@ export function App() {
                           setWalkingView(already ? "rose" : "map");
                           // Close the card either way: going, the route is what to look at.
                           setSelectedId(null);
+                          // Going is from where you are: stop looking at the searched place,
+                          // so the map frames you, the way and the echo.
+                          if (!already) setLookAt(null);
                           // And follow again, so the map keeps you and the echo in view.
                           setPan({ x: 0, y: 0 });
                         },
