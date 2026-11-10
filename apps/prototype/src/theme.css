@@ -4125,8 +4125,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .screen:has(.echobar) { --step-h: 86px; }
 /* The zoomed-out card (`AreaCard.tsx`, `AREACARD_H`) adds itself to the stack, so the control
    column moves up above it rather than sitting on it. */
-.screen:has(.echobar):has(.area-card) { --step-h: 162px; }
-.screen:has(.area-card):not(:has(.echobar)) { --step-h: 76px; }
+.screen:has(.echobar):has(.area-card) { --step-h: 176px; }
+.screen:has(.area-card):not(:has(.echobar)) { --step-h: 80px; }
 .echobar {
   position: absolute; left: 0; right: 0; z-index: 24;
   bottom: calc(var(--nav-h) + 8px);

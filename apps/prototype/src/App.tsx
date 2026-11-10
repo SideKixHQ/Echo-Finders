@@ -9,7 +9,7 @@ import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { BASE_ZOOM, RouteMap, type PinState } from "./RouteMap";
-import { AreaCard, AREACARD_H } from "./AreaCard";
+import { AreaCard, AREACARD_H, AREACARD_OVER_BAR } from "./AreaCard";
 import { Collection } from "./Collection";
 import { IndexedDbCollection } from "./collection-store";
 import { Privacy } from "./Privacy";
@@ -2068,7 +2068,7 @@ export function App() {
                 focusId={focusId}
                 /* The stepper covers the bottom of the map, so the map has to know: it
                    keeps pins, edge markers and the Esri credit above it. */
-                reservedBottom={(showBar ? ECHOBAR_H : directing ? DIRSHEET_H : 0) + (farOut && !directing ? AREACARD_H : 0)}
+                reservedBottom={(showBar ? ECHOBAR_H : directing ? DIRSHEET_H : 0) + (farOut && !directing ? AREACARD_H + (showBar ? AREACARD_OVER_BAR : 0) : 0)}
                 onInView={setInView}
                 overview={overview}
                 progress={along}
@@ -2172,7 +2172,7 @@ export function App() {
                 is the only answer on that screen that does not involve aiming at the pile.
               */}
               {/* Not while directions are up: their sheet has the bottom of the screen. */}
-              {farOut && !directing && <AreaCard echoes={inView} above={showBar ? ECHOBAR_H : 0} />}
+              {farOut && !directing && <AreaCard echoes={inView} above={showBar ? ECHOBAR_H + AREACARD_OVER_BAR : 0} />}
               {showBar && (
                 <EchoBar
                   items={stepList}
