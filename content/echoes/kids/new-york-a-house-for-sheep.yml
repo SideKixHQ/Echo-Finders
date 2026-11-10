@@ -1,0 +1,59 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Central Park West cluster (more NYC batch).
+# Listening spot: In front of Tavern on the Green, on West Drive in Central Park near West 67th Street, beside the Sheep Meadow.
+# Position: Tavern on the Green, west side of Central Park at about West 67th Street, from the park plan (medium confidence).
+id: new-york-a-house-for-sheep
+title: "A House for Sheep"
+summary: "This famous restaurant in Central Park was built in 1870 as a house for a flock of sheep."
+place: "Tavern on the Green, West Drive at West 67th Street, Central Park, Manhattan"
+at: { lat: 40.77225, lng: -73.97770 }
+triggerRadiusKm: 0.05
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, central-park, sheep, animals, restaurant, family]
+teaser: "Guess who lived in this restaurant before the people came."
+script: |
+  Look at the building in front of you, with its windows full of lights. People come here for fancy dinners. Birthdays. Weddings.
+
+  But it was not built for people.
+
+  It was built for sheep.
+
+  Back in eighteen seventy, Central Park had its own flock. A kind called Southdown sheep. And they needed somewhere to sleep at night.
+
+  So the park built them a house. Right here.
+
+  Imagine it. Every evening, a whole flock of sheep trotting in from the grass, past the trees, into this building. The middle of New York City, and the sound of baa.
+
+  And then, in nineteen thirty four, the house for sheep became a restaurant.
+
+  Not far away is a big, wide lawn. It is called the Sheep Meadow.
+
+  Now you know why.
+
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Back in eighteen seventy, Central Park had its own flock."
+    source: 1
+    quote: "the Tavernon-the-Green, erected in 1870 to house a flock of Southdown sheep."
+  - says: "A kind called Southdown sheep."
+    source: 1
+    quote: "erected in 1870 to house a flock of Southdown sheep."
+  - says: "So the park built them a house."
+    source: 1
+    quote: "erected in 1870 to house a flock of Southdown sheep."
+  - says: "And then, in nineteen thirty four, the house for sheep became a restaurant."
+    source: 1
+    quote: "The building was converted into a restaurant in 1934."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Central Park"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain

@@ -1,0 +1,77 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Kips Bay and Murray Hill (more NYC batch).
+# Listening spot: Second Avenue at East 35th Street, Kips Bay, the site of Jacobus Kip's farm, a few blocks inland from the cove where the British landed in 1776.
+# Position: Second Avenue at East 35th Street, from the street plan (medium confidence). The bay itself has long been filled in.
+id: new-york-the-cane-whip
+title: "The Cane Whip"
+summary: "In September 1776 British warships anchored in Kip's Bay and the American army ran. Washington, by one account, beat his own officers."
+place: "Second Avenue at East 35th Street, Kips Bay, Manhattan"
+at: { lat: 40.74570, lng: -73.97570 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [new-york, kips-bay, revolution, military, washington, 1776, retreat]
+teaser: "The calm general of the statues. Not on this day."
+script: |
+  Look east, down the street toward the river. Before landfill and highways, the shore curved in near here to make a cove. Kip's Bay, named for the Dutch farmer whose land ran down to it.
+
+  On the fifteenth of September, seventeen seventy six, that cove filled with British warships.
+
+  The American army had just been beaten on Long Island. The men were worn out and frightened. And when the warships opened fire, they broke. They fled north.
+
+  George Washington went into the middle of it, trying to stop them.
+
+  What happened next was told very differently from the calm, marble Washington of the statues. One biographer, Rupert Hughes, put it this way. He used the cane whip he carried, and he beat his people over the shoulders. He flogged not only private soldiers but officers as well. He lashed colonels across the shoulder blades. He flailed a brigadier general.
+
+  But the next day, at Harlem Heights, Washington rallied them, and they beat the British back.
+
+  Look east again.
+
+  The marble general you know was made after. This is where he lost his temper.
+
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Kip's Bay, named for the Dutch farmer whose land ran down to it."
+    source: 1
+    quote: "The area near Second Avenue and East Thirty-fifth Street was the site of Jacobus Kip's farm"
+  - says: "Kip's Bay, named for the Dutch farmer whose land ran down to it."
+    source: 1
+    quote: "It extended eastward to a bay subsequently named for Kip."
+  - says: "On the fifteenth of September, seventeen seventy six, that cove filled with British warships."
+    source: 1
+    quote: "It was in Kip's Bay that British men-of-war anchored September 15, 1776, to take over Manhattan Island."
+  - says: "The American army had just been beaten on Long Island."
+    source: 1
+    quote: "The Revolutionary army, wearied and disheartened after the disastrous defeat on Long Island, broke before broadsides from these vessels and fled toward Harlem Heights."
+  - says: "And when the warships opened fire, they broke."
+    source: 1
+    quote: "broke before broadsides from these vessels and fled toward Harlem Heights."
+  - says: "George Washington went into the middle of it, trying to stop them."
+    source: 1
+    quote: "George Washington tried to stem the rout."
+  - says: "He used the cane whip he carried, and he beat his people over the shoulders."
+    source: 1
+    quote: "he used the cane whip he carried, and he beat his people over the shoulders in an insane hatred of their shameless cowardice."
+  - says: "He flogged not only private soldiers but officers as well."
+    source: 1
+    quote: "He flogged not only private soldiers but officers as well."
+  - says: "He lashed colonels across the shoulder blades."
+    source: 1
+    quote: "He lashed colonels across the shoulder blades"
+  - says: "He flailed a brigadier general."
+    source: 1
+    quote: "He flailed a brigadier general."
+  - says: "But the next day, at Harlem Heights, Washington rallied them, and they beat the British back."
+    source: 1
+    quote: "The next day Washington succeeded in rallying his troops and defeated the enemy at Harlem Heights."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Kip's Bay and Turtle Bay (quoting Rupert Hughes, George Washington)"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain

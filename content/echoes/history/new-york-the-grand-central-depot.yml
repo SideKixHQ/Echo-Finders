@@ -1,0 +1,86 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Brooklyn Heights cluster (more NYC batch).
+# Listening spot: Orange Street, Brooklyn Heights, in front of Plymouth Church and the garden with its statue of Henry Ward Beecher.
+# Position: Wikidata Q7205773 (Plymouth Church) coordinate (high confidence). About 1 km from the DUMBO echoes.
+id: new-york-the-grand-central-depot
+title: "The Grand Central Depot"
+summary: "Before the Civil War this church bought people out of slavery, and its minister staged mock slave auctions to show the horror of it."
+place: "Plymouth Church, Orange Street, Brooklyn Heights, Brooklyn"
+at: { lat: 40.69928, lng: -73.99356 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [new-york, brooklyn-heights, underground-railroad, abolition, beecher, church]
+teaser: "A minister held a slave auction in church. Every bid set someone free."
+script: |
+  Look at this plain brick church on a quiet Brooklyn street. No spire. No grand front. You could walk straight past it.
+
+  An early historian of the church gave it a name you would not expect. The Grand Central Depot of the Underground Railroad.
+
+  In eighteen forty seven, the people who gathered here called a minister named Henry Ward Beecher. Harriet Beecher Stowe, who would write Uncle Tom's Cabin, sat in this congregation in its early years.
+
+  The church gave money to the committee that brought people escaping slavery north, and some of them were delivered here. A guide who leads tours of the church says Beecher hid people in its basement.
+
+  And sometimes, the congregation did something stranger. They bought people their freedom.
+
+  When they did, Beecher would sometimes stage a mock slave auction. He made his congregation watch a human being offered for sale, in a church in Brooklyn.
+
+  He wanted them to feel the horror of it.
+
+  And then they paid. And the person they had bid for walked out free.
+
+  Look at the church again.
+
+  Inside it, people bid on a human being, so that nobody could ever own them again.
+
+pronunciations:
+  - written: Beecher
+    say: BEE-cher
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "An early historian of the church gave it a name you would not expect. The Grand Central Depot of the Underground Railroad."
+    source: 1
+    quote: "it was not an overstatement for an early historian of the church to assert that the church was \"\"the Grand Central Depot of the Underground Railroad.\"\""
+  - says: "In eighteen forty seven, the people who gathered here called a minister named Henry Ward Beecher."
+    source: 1
+    quote: "Laypersons gathered at Plymouth Church in 1847 and called as their first minister the Rev. Henry Ward Beecher."
+  - says: "Harriet Beecher Stowe, who would write Uncle Tom's Cabin, sat in this congregation in its early years."
+    source: 1
+    quote: "In early years, Henry C. Bowen, Harriet Beecher Stowe and Lewis Tappan were in the congregation."
+  - says: "Harriet Beecher Stowe, who would write Uncle Tom's Cabin, sat in this congregation in its early years."
+    source: 1
+    quote: "Through her novel Uncle Tom's Cabin, Harriet Beecher Stowe introduced Americans to stories of bondage"
+  - says: "The church gave money to the committee that brought people escaping slavery north, and some of them were delivered here."
+    source: 1
+    quote: "They helped fund the New York State Vigilance Committee which delivered fugitives from slavery to the church as an Underground Railroad station."
+  - says: "A guide who leads tours of the church says Beecher hid people in its basement."
+    source: 2
+    quote: "That is because the pastor of the church, Henry Ward Beecher, hid people in the basement of this church,\" Toussaint said."
+  - says: "They bought people their freedom."
+    source: 1
+    quote: "They purchased the freedom of persons who had been captured when fleeing slavery or who were seeking freedom."
+  - says: "When they did, Beecher would sometimes stage a mock slave auction."
+    source: 1
+    quote: "In some of these purchases of freedom, Rev Beecher performed mock slave auctions to communicate the horrors of the purchase and sale of human beings."
+  - says: "He wanted them to feel the horror of it."
+    source: 1
+    quote: "Rev Beecher performed mock slave auctions to communicate the horrors of the purchase and sale of human beings."
+  - says: "When they did, Beecher would sometimes stage a mock slave auction."
+    source: 2
+    quote: "Not just that, he hosted auctions."
+sources:
+  - title: "National Underground Railroad Network to Freedom listings (dataset): Plymouth Church of the Pilgrims, 75 Hicks Street, Brooklyn"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/common/uploads/sortable_dataset/undergroundrailroad/F0E29766-00A1-12E5-C3D062151C3F7E26/nri-NTFListings100926NOPIItestfortablessfixed.csv
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Black History Is Our History: Exploring New York City's Role In The Underground Railroad"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/underground-railroad-nyc/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
