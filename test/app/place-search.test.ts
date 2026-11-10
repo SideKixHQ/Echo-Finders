@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { searchPlaces } from "../../apps/prototype/src/place-search";
+import { searchCities, searchEchoes, searchPlaces } from "../../apps/prototype/src/place-search";
 import { LIBRARY } from "../../apps/prototype/src/library.generated";
 
 const find = (q: string) => searchPlaces(q, new Map(), LIBRARY, 6);
@@ -36,5 +36,35 @@ describe("searching for a city", () => {
     for (const name of ["Savannah", "Charleston", "New Orleans", "Philadelphia", "Boston"]) {
       expect(labels(name.toLowerCase())[0]).toBe(name);
     }
+  });
+});
+
+// The map's search (2026-11-10): cities above, echoes under them with Go and Save.
+describe("the map's search", () => {
+  it("lists cities and says which have a City Pass", () => {
+    const ny = searchCities("new york", new Map(), LIBRARY)[0];
+    expect(ny?.label).toBe("New York");
+    expect(ny?.pass).toBe(true);
+    expect(searchCities("wilmington", new Map(), LIBRARY)[0]?.pass).toBe(true);
+  });
+
+  it("finds echoes by title, with the town they are in", () => {
+    const echo = LIBRARY.find((e) => e.title.length > 8)!;
+    const hits = searchEchoes(echo.title.slice(0, 8), LIBRARY);
+    expect(hits.map((h) => h.echo.id)).toContain(echo.id);
+    expect(hits.every((h) => h.town.length > 0)).toBe(true);
+  });
+
+  it("puts titles that start with what was typed first", () => {
+    const hits = searchEchoes("the", LIBRARY);
+    expect(hits[0]?.echo.title.toLowerCase().startsWith("the")).toBe(true);
+  });
+
+  it("offers no echoes for a ZIP code", () => {
+    expect(searchEchoes("28401", LIBRARY)).toEqual([]);
+  });
+
+  it("leaves the first run's list as it was", () => {
+    expect(searchPlaces("boston", new Map(), LIBRARY).map((h) => h.label)[0]).toBe("Boston");
   });
 });

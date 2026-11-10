@@ -77,6 +77,12 @@ export interface EchoPopupProps {
   readonly onClose: () => void;
   /** Owner mode (`owner.ts`): Play on every card, wherever the listener is. */
   readonly anywhere?: boolean;
+  /**
+   * The first tap on a locked echo, once ever: the gold line says how echoes unlock and how
+   * close this one needs you, with Got it. It lives on the card it explains, not floating
+   * over the map bar where it covered the search and the chips.
+   */
+  readonly tip?: { readonly line: string; readonly onDone: () => void };
 }
 
 /**
@@ -128,6 +134,7 @@ export function EchoPopup({
   onSuggest,
   onClose,
   anywhere = false,
+  tip,
 }: EchoPopupProps) {
   const metres = distanceKm === null ? null : distanceKm * 1000;
   const synced = state === "captured" || state === "heard";
@@ -289,8 +296,13 @@ export function EchoPopup({
               <rect x="5" y="11" width="14" height="10" rx="2" />
               <path d="M8 11V8a4 4 0 0 1 8 0v3" />
             </svg>
-            {UNLOCKS[mode]}
+            {tip ? `Echoes unlock where they happened. ${tip.line}.` : UNLOCKS[mode]}
           </p>
+        )}
+        {tip && !playable && !withinReach && (
+          <button className="pop-tip-ok" onClick={tip.onDone}>
+            Got it
+          </button>
         )}
       </div>
 

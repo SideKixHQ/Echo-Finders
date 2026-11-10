@@ -105,7 +105,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
 
   // Kinds of echo: one button that says what is on, every kind behind it at once.
   const kinds = p.locator('.kind-tap');
-  check('Kinds: the button says everything is on', (await kinds.innerText()).trim() === "Echoes");
+  check('Kinds: the button says everything is on', (await kinds.innerText()).trim() === "All echoes");
   await kinds.click();
   await p.waitForTimeout(400);
   const sheet = p.locator('#kind-box');
@@ -124,7 +124,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.keyboard.press('Escape');
   await p.waitForTimeout(300);
   check('Kinds: Escape closes it, and All puts everything back',
-    !(await visible(sheet)) && (await kinds.innerText()).trim() === "Echoes");
+    !(await visible(sheet)) && (await kinds.innerText()).trim() === "All echoes");
   await ctx.close();
 }
 
@@ -319,11 +319,9 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   check('Locate: a tap puts you back where you were on screen',
     !!home && !!back && Math.hypot(home.x - back.x, home.y - back.y) < 40, `${JSON.stringify(home)} -> ${JSON.stringify(back)}`);
   // From somewhere looked up, a tap comes all the way home.
-  await p.getByLabel(/Change your journey/).click();
-  await p.waitForTimeout(300);
-  await p.getByLabel(/Look somewhere else/).fill('Wilmington');
+  await p.getByLabel('Search a city, place or ZIP code').fill('Wilmington');
   await p.waitForTimeout(600);
-  await p.locator('.jmenu-hit').first().click();
+  await p.locator('.msearch-city').first().click();
   await p.waitForTimeout(1500);
   check('Locate: plain while looking somewhere else', (await locate.getAttribute('aria-pressed')) === 'false');
   await locate.click();
@@ -392,6 +390,16 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   check('Echo card: opens from the bar', await visible(card));
   const walk = card.getByRole('button', { name: /^Walk there · \d+ min$/ });
   check('Echo card: far off, the primary is Walk there with the minutes', await visible(walk));
+  // The first locked card ever carries the longer tip (how echoes unlock, how close this
+  // one needs you) with Got it; after that the gold line is the short one.
+  const tipOk = card.locator('.pop-tip-ok');
+  if (await tipOk.count()) {
+    check('Echo card: the first locked card says how echoes unlock, and how close',
+      await visible(card.getByText(/Echoes unlock where they happened\. Walk within \d+ m/)));
+    await tipOk.click();
+    await p.waitForTimeout(300);
+    check('Echo card: Got it leaves the short line', (await card.locator('.pop-tip-ok').count()) === 0);
+  }
   check('Echo card: far off, says why there is no Play', await visible(card.getByText('Unlocks when you get there')));
   check('Echo card: far off, no Play', (await card.locator('.pop-go').count()) === 0);
   for (const name of ['Save', 'Add to route', 'Share', 'More']) {
@@ -417,6 +425,83 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.waitForTimeout(800);
   check('Echo card: Walk there starts the way there',
     !(await visible(card)) || (await walk.getAttribute('aria-pressed').catch(() => null)) === 'true');
+  await ctx.close();
+}
+
+// ── Search, on top of the map ──────────────────────────────────────────────────
+// James (2026-11-10): "When someone is searching you have to make that box stand out ...
+// it has to be really easy to search, then go or save an echo." The box is the map's first
+// row, the trip and the echoes filter on one line under it; typing lists CITIES, then
+// ECHOES with Go and Save on each.
+{
+  const { ctx, p } = await freshApp();
+  const box = p.getByLabel('Search a city, place or ZIP code');
+  check('Map search: the box is on the map, first', await visible(box)
+    && await p.locator('.mapbar > :first-child').evaluate((e) => e.classList.contains('msearch')));
+  check('Map search: says what to type', (await box.getAttribute('placeholder')) === 'Search a city or ZIP');
+  const fx = await p.locator('.msearch .fr-trace').evaluate((e) => getComputedStyle(e).animationName);
+  check('Map search: the box draws the eye (its border runs)', /fr-trace/.test(fx), fx);
+  const row = await p.locator('.mapbar-row').evaluate((r) => {
+    const kids = [...r.children].map((c) => c.getBoundingClientRect()).filter((b) => b.height > 0);
+    const labels = [...r.querySelectorAll('.jchip-label, .kind-label')].every((e) => e.scrollWidth <= e.clientWidth + 1);
+    return { oneLine: kids.every((b) => Math.abs(b.top - kids[0].top) < 2), labels, h: r.getBoundingClientRect().height };
+  });
+  check('Map search: the trip and the echoes filter sit on one line under it, words whole', row.oneLine && row.labels, JSON.stringify(row));
+  check('Map search: the journey chip says how you are going', /Walking nearby/.test(await p.locator('.jchip').innerText()));
+  check('Map search: the filter says All echoes', (await p.locator('.kind-tap').innerText()).trim() === 'All echoes');
+  const under = await p.locator('.mapbar').boundingBox();
+  const toastTop = await p.locator('.toast-dock').boundingBox().catch(() => null);
+  check('Map search: toasts sit under the map bar, not over it', !toastTop || toastTop.y >= under.y + under.height, JSON.stringify({ under, toastTop }));
+  await box.click();
+  await box.fill('new');
+  await p.waitForTimeout(500);
+  const results = p.locator('#msearch-results');
+  check('Map search: typing opens the results over the map', await visible(results));
+  check('Map search: the results cover the tab bar', await p.evaluate(() => {
+    const nav = document.querySelector('.nav').getBoundingClientRect();
+    const top = document.elementFromPoint(nav.left + nav.width / 2, nav.top + nav.height / 2);
+    return !!top && !!top.closest('.mapbar');
+  }));
+  check('Map search: CITIES, with New York', await visible(results.getByRole('heading', { name: 'Cities' }))
+    && await visible(results.locator('.msearch-city', { hasText: 'New York' })));
+  check('Map search: ECHOES, each with Go and Save', await visible(results.getByRole('heading', { name: 'Echoes' }))
+    && (await results.locator('.msearch-echo').count()) > 0
+    && (await results.locator('.msearch-echo').evaluateAll((rs) => rs.every((r) => r.querySelector('.msearch-go') && r.querySelector('.msearch-save')))));
+  const small = await results.locator('button').evaluateAll((els) => els
+    .filter((e) => { const r = e.getBoundingClientRect(); return r.width < 44 || r.height < 44; })
+    .map((e) => e.textContent.trim() || e.getAttribute('aria-label')));
+  check('Map search: every result control at least 44px', small.length === 0, small.join(', '));
+  const save = results.locator('.msearch-save').first();
+  await save.click();
+  await p.waitForTimeout(300);
+  check('Map search: Save saves', (await save.getAttribute('aria-pressed')) === 'true');
+  await save.click();
+  await p.waitForTimeout(300);
+  check('Map search: Save again unsaves', (await save.getAttribute('aria-pressed')) === 'false');
+  const title = (await results.locator('.msearch-echo b').first().innerText()).trim();
+  await results.locator('.msearch-go').first().click();
+  await p.waitForTimeout(1200);
+  check('Map search: Go closes the results', !(await visible(results)));
+  check('Map search: Go opens that echo\'s card', await visible(p.locator('.pop')) && (await p.locator('.pop').innerText()).includes(title), title);
+  await p.locator('.pop-close').click().catch(() => {});
+  await p.waitForTimeout(300);
+  await box.click();
+  await box.fill('ne');
+  await p.waitForTimeout(300);
+  await p.getByRole('button', { name: 'Close search' }).click();
+  await p.waitForTimeout(300);
+  {
+    const after = { results: await visible(results), row: await visible(p.locator('.mapbar-row')), value: await box.inputValue(),
+      card: await visible(p.locator('.pop')), focused: await p.evaluate(() => document.activeElement?.className ?? '') };
+    check('Map search: the ✕ puts the map back', !after.results && after.row && after.value === '', JSON.stringify(after));
+  }
+  await box.click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(300);
+  check('Map search: Escape puts the map back', !(await visible(results)));
+  await p.locator('.jchip').click();
+  await p.waitForTimeout(300);
+  check('Map search: no second search inside the trip sheet', (await p.locator('.jmenu input[type="search"]').count()) === 0);
   await ctx.close();
 }
 

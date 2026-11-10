@@ -22,6 +22,7 @@ import { Nav, type Tab } from "./Nav";
 import { Plan } from "./Plan";
 import { RouteRibbon, left } from "./RouteRibbon";
 import { KindPicker } from "./KindPicker";
+import { MapSearch } from "./MapSearch";
 import { JourneyChip, type Travel } from "./JourneyChip";
 import { Arrival } from "./Arrival";
 import { Preflight } from "./Preflight";
@@ -37,7 +38,7 @@ import { Rail, type WalkingView } from "./Rail";
 import { MODE_PHRASE } from "./travel";
 import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { holdLockScreen, primeLockScreen } from "./lock-screen";
-import { HowEchoesUnlock, LockedToast, NearToast, SyncedToast } from "./Toasts";
+import { HowEchoesUnlock, NearToast, SyncedToast } from "./Toasts";
 import {
   HOW_KEY,
   LOCKED_KEY,
@@ -1527,6 +1528,11 @@ export function App() {
     setFlag(LOCKED_KEY);
     setLockedToast(selectedId);
   }, [selectedId, stateOf, firstRunDone]);
+  // It explains the card it came with, so it goes when that card does: left up, it sat over
+  // the map bar's search and filter long after anyone was reading it.
+  useEffect(() => {
+    if (lockedToast && selectedId !== lockedToast) setLockedToast(null);
+  }, [selectedId, lockedToast]);
 
   /*
    * Toast A, "an echo is close": the rules are `nearToastFor`'s (within 150 m of one you
@@ -1928,6 +1934,22 @@ export function App() {
             <>
               <div className="mapbar">
                 {/*
+                  Search first: the box that draws the eye, then the trip and the echoes
+                  filter on one line under it (`MapSearch`, the map board of 2026-11-10).
+                */}
+                <MapSearch
+                  library={LIBRARY}
+                  saved={chosen}
+                  onLook={(hit) => lookSomewhere(hit, roamMode)}
+                  onGo={(echo) => {
+                    lookSomewhere({ label: echo.point.place.split(",")[0]!.trim(), detail: "", at: echo.point.at }, roamMode);
+                    setFocusId(echo.id);
+                    setSelectedId(echo.id);
+                  }}
+                  onSave={toggleSave}
+                />
+                <div className="mapbar-row">
+                {/*
                   The journey, and the way to change it.
 
                   It was a read-only header, and the only way to the journey screen was a
@@ -1952,10 +1974,8 @@ export function App() {
                   routes={ROUTES}
                   counts={corridorCounts}
                   kept={downloaded}
-                  label={roaming ? (lookAt ? lookAt.label : "Exploring") : leftLabel}
-                  library={LIBRARY}
+                  label={roaming ? (lookAt ? lookAt.label : roamMode === "driving" ? "Driving nearby" : "Walking nearby") : leftLabel}
                   here={state.position?.at ?? null}
-                  onLook={lookSomewhere}
                   {...(state.position
                     ? {
                         onPlan: () => {
@@ -2012,6 +2032,7 @@ export function App() {
                   onToggle={toggleCategory}
                   onAll={allCategories}
                 />
+                </div>
               </div>
               {/*
                 Nothing nearby, over the map.
@@ -2302,6 +2323,9 @@ export function App() {
               {selectedEcho && !routePicker && !reporting ? (
                 <EchoPopup
                   anywhere={owner || selectedEcho.echo.id === gift}
+                  {...(lockedToast === selectedEcho.echo.id
+                    ? { tip: { line: unlockLine(selectedEcho.echo, journeyMode), onDone: () => setLockedToast(null) } }
+                    : {})}
                   echo={selectedEcho.echo}
                   distanceKm={selectedEcho.distanceKm}
                   state={stateOf(selectedEcho.echo.id)}
@@ -2788,16 +2812,6 @@ export function App() {
                       setListening(true);
                     }}
                     onClose={() => setSyncedNow(null)}
-                  />
-                );
-              }
-              const locked = lockedToast ? LIBRARY_BY_ID.get(lockedToast) : undefined;
-              if (locked) {
-                return (
-                  <LockedToast
-                    key={`locked-${locked.id}`}
-                    line={unlockLine(locked, journeyMode)}
-                    onClose={() => setLockedToast(null)}
                   />
                 );
               }

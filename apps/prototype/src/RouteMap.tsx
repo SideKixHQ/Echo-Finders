@@ -721,7 +721,10 @@ export function RouteMap({
   useEffect(() => {
     const el = svg.current;
     if (!el || typeof ResizeObserver === "undefined") return;
-    const bar = el.closest(".screen")?.querySelector(".mapbar");
+    // The chips' row, whose bottom is the bar's: the bar itself grows to the whole screen
+    // while the search or the trip sheet is open, and the map must not refit under them.
+    // (The row is hidden while searching, and a zero height is skipped below.)
+    const bar = el.closest(".screen")?.querySelector(".mapbar-row") ?? el.closest(".screen")?.querySelector(".mapbar");
     if (!bar) return;
     const measure = () => {
       const b = bar.getBoundingClientRect();

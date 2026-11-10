@@ -18,6 +18,15 @@ export interface PlaceHit {
   readonly label: string;
   readonly detail: string;
   readonly at: LatLng;
+  /** A City Pass city (`CITIES` in the engine), which the map's search says so of. */
+  readonly pass?: boolean;
+}
+
+/** An echo found by its title or its place's name: the map's search offers Go and Save. */
+export interface EchoHit {
+  readonly echo: Echo;
+  /** The town it is in, as search names towns: "Philadelphia", "Wilmington". */
+  readonly town: string;
 }
 
 let zips: Promise<Map<string, LatLng>> | null = null;
@@ -44,8 +53,39 @@ const short = (place: string) => place.split(",")[0]!.trim();
 /**
  * What a query finds: a ZIP code (all five digits, or the start of one), and places in the
  * library whose name or town contains the words typed. A handful, nearest-to-exact first.
+ * The first run and "Where are you?" list these; the map's search splits the same lookup
+ * into cities (`searchCities`) and echoes (`searchEchoes`).
  */
 export function searchPlaces(
+  query: string,
+  zipTable: ReadonlyMap<string, LatLng>,
+  library: readonly Echo[],
+  limit = 6,
+): PlaceHit[] {
+  const q = query.trim().toLowerCase();
+  if (q.length < 2) return [];
+  const hits = searchCities(query, zipTable, library, limit);
+  if (/^\d{2,5}$/.test(q)) return hits;
+
+  const seen = new Set<string>(hits.map((t) => t.label));
+  for (const echo of library) {
+    const place = echo.point.place;
+    // The place's own name only: matching the whole address listed Boston buildings for
+    // "Washington", because they stand on Washington Street.
+    if (!short(place).toLowerCase().includes(q) || seen.has(short(place))) continue;
+    seen.add(short(place));
+    const town = place.split(",").slice(-2).join(",").trim();
+    hits.push({ label: short(place), detail: town === short(place) ? "" : town, at: echo.point.at });
+    if (hits.length >= limit) break;
+  }
+  return hits;
+}
+
+/**
+ * The CITIES half of a search: a ZIP code (all five digits, or the start of one), or the
+ * towns whose name, or a name people use for them, contains what was typed.
+ */
+export function searchCities(
   query: string,
   zipTable: ReadonlyMap<string, LatLng>,
   library: readonly Echo[],
@@ -67,7 +107,7 @@ export function searchPlaces(
 
   // Towns first: "Wilmington" should find Wilmington, not the first museum in it. Echo
   // places end "…, town, state"; a town hit sits at the middle of its echoes.
-  const towns = new Map<string, { town: string; state: string; lat: number; lng: number; n: number }>();
+  const towns = new Map<string, { town: string; state: string; pass: boolean; lat: number; lng: number; n: number }>();
   for (const echo of library) {
     const area = areaOf(echo);
     if (!area) continue;
@@ -86,21 +126,36 @@ export function searchPlaces(
       label: t.town,
       detail: `${t.state ? `${t.state} · ` : ""}${t.n} ${t.n === 1 ? "echo" : "echoes"}`,
       at: { lat: t.lat / t.n, lng: t.lng / t.n },
+      ...(t.pass ? { pass: true } : {}),
     });
   }
-
-  const seen = new Set<string>(townHits.map((t) => t.town));
-  for (const echo of library) {
-    const place = echo.point.place;
-    // The place's own name only: matching the whole address listed Boston buildings for
-    // "Washington", because they stand on Washington Street.
-    if (!short(place).toLowerCase().includes(q) || seen.has(short(place))) continue;
-    seen.add(short(place));
-    const town = place.split(",").slice(-2).join(",").trim();
-    hits.push({ label: short(place), detail: town === short(place) ? "" : town, at: echo.point.at });
-    if (hits.length >= limit) break;
-  }
   return hits;
+}
+
+/**
+ * The ECHOES half of the map's search: echoes whose title or place name contains what was
+ * typed, titles that start with it first. Each comes with its town, for the line under it.
+ */
+export function searchEchoes(query: string, library: readonly Echo[], limit = 6): EchoHit[] {
+  const q = query.trim().toLowerCase();
+  if (q.length < 2 || /^\d+$/.test(q)) return [];
+  // By the start of a word, so "ne" finds New Market and not every title with "money" in
+  // it; anywhere in the words once four letters have been typed.
+  const words = (text: string) => text.toLowerCase().split(/[^a-z0-9']+/);
+  const found = (text: string) =>
+    words(text).some((w) => w.startsWith(q)) || (q.length >= 4 && text.toLowerCase().includes(q));
+  const rank = (e: Echo) => {
+    if (e.title.toLowerCase().startsWith(q)) return 0;
+    if (found(e.title)) return 1;
+    if (found(short(e.point.place))) return 2;
+    return -1;
+  };
+  return library
+    .map((echo) => ({ echo, r: rank(echo) }))
+    .filter((x) => x.r >= 0)
+    .sort((a, b) => a.r - b.r)
+    .slice(0, limit)
+    .map(({ echo }) => ({ echo, town: areaOf(echo)?.town ?? short(echo.point.place) }));
 }
 
 /**
@@ -113,14 +168,16 @@ export function searchPlaces(
  * of real towns, and people search for Wilmington or Southport, not the region.
  * Elsewhere it is the town in the address, as before.
  */
-function areaOf(echo: Echo): { town: string; state: string } | null {
+function areaOf(echo: Echo): { town: string; state: string; pass: boolean } | null {
   for (const city of CITIES) {
     if (city.id === "cape-fear") continue;
-    if (roughKm(city.centre, echo.point.at) <= city.radiusKm) return { town: city.name, state: "" };
+    if (roughKm(city.centre, echo.point.at) <= city.radiusKm) return { town: city.name, state: "", pass: true };
   }
   const parts = echo.point.place.split(",").map((s) => s.trim());
   if (parts.length < 3) return null;
-  return { town: parts[parts.length - 2]!, state: parts[parts.length - 1]! };
+  // The Cape Fear towns are searched by their own names, and are in its pass all the same.
+  const pass = CITIES.some((city) => roughKm(city.centre, echo.point.at) <= city.radiusKm);
+  return { town: parts[parts.length - 2]!, state: parts[parts.length - 1]!, pass };
 }
 
 /** Other things people type for a pass city. */
