@@ -1984,7 +1984,7 @@ export function RouteMap({
         before. That matters more than it sounds — the build environment cannot reach a tile
         server at all, so this ships without ever having been seen working here.
       */}
-      {/* With vector tiles the field is painted under their canvas instead (`.vector-base`),
+      {/* With vector tiles the field is painted by their canvas instead (`.map-canvas`),
           because anything opaque here would cover them. */}
       {!gl && <rect className="map-field" x="0" y="0" width={box.w} height={box.h} />}
 

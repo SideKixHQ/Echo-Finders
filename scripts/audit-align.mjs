@@ -182,7 +182,6 @@ async function onboard(p) {
   // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
   await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
   await p.waitForTimeout(2500);
-  await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
   await p.waitForTimeout(1500);
 }
 

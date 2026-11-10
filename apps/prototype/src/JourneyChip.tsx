@@ -52,6 +52,19 @@ export interface JourneyChipProps {
   readonly onPlan?: () => void;
   /** Where the listener is, if known: tours near it are offered first. */
   readonly here?: LatLng | null;
+  /**
+   * The whole route on the map, start to end: what the framing button on the map did
+   * before the map came down to two controls (ADR-0018, amended 2026-11-10). Given on a
+   * route or a planned walk only; exploring, a pinch out does the same job. The locate
+   * arrow on the map is the way back.
+   */
+  readonly whole?: { readonly label: string; readonly on: boolean; readonly onShow: () => void };
+  /**
+   * On foot, the compass view: which way each echo is, and the street hum. Or, with a walk
+   * under way, back to the walk. It was a button on the map that read too much like
+   * "Echoes around me" to tell apart.
+   */
+  readonly compass?: { readonly label: string; readonly detail: string; readonly onOpen: () => void };
 }
 
 const MODES: readonly { readonly id: Travel; readonly label: string }[] = [
@@ -194,6 +207,20 @@ export function JourneyChip(props: JourneyChipProps) {
             ))}
           </div>
 
+          {props.whole && tab === travel && (
+            <button
+              className={props.whole.on ? "jmenu-card on" : "jmenu-card"}
+              aria-current={props.whole.on ? "true" : undefined}
+              onClick={done(props.whole.onShow)}
+            >
+              <span>
+                <b>{props.whole.label}</b>
+                <small>All of it on the map. The arrow on the map brings you back.</small>
+              </span>
+              {props.whole.on ? <Tick /> : <Chev />}
+            </button>
+          )}
+
           {/* Roaming exists on the ground only: a flight is somebody else's route. */}
           {tab !== "flight" && (
             <button
@@ -206,6 +233,15 @@ export function JourneyChip(props: JourneyChipProps) {
                 <small>No route. Echoes near you as you go.</small>
               </span>
               {roaming && travel === tab && <Tick />}
+            </button>
+          )}
+          {tab === "walking" && travel === "walking" && props.compass && (
+            <button className="jmenu-card" onClick={done(props.compass.onOpen)}>
+              <span>
+                <b>{props.compass.label}</b>
+                <small>{props.compass.detail}</small>
+              </span>
+              <Chev />
             </button>
           )}
           {tab === "walking" && props.onPlan && (

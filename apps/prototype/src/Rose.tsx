@@ -42,6 +42,11 @@ export interface RoseProps {
   /** Whether the hum is on, and the switch for it. */
   readonly humming: boolean;
   readonly onHum: (on: boolean) => void;
+  /**
+   * Back to the street map. The control column on the map used to carry this; the map is
+   * down to two controls now, so the compass carries its own way out, as walk mode does.
+   */
+  readonly onMap: () => void;
   /** What the screen is doing, in the listener's words. Empty when it is doing nothing. */
   readonly awakeNote?: string;
   /** Set when the screen could not be held, so the fallback can be stated honestly. */
@@ -75,6 +80,7 @@ export function Rose({
   onSelect,
   humming,
   onHum,
+  onMap,
   awakeNote,
   awakeWarning,
 }: RoseProps) {
@@ -187,6 +193,12 @@ export function Rose({
             </small>
           </button>
         )}
+        <button className="rose-map" onClick={onMap}>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3zM9 3v15M15 6v15" />
+          </svg>
+          Show the map
+        </button>
       </div>
     </div>
   );

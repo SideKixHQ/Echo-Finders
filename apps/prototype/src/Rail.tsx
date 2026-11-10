@@ -1,76 +1,41 @@
 /**
- * The control column, as the design has it.
+ * The map's controls: two round buttons down the right hand side, as the approved map
+ * board draws them. "Show where I am" and "Sound", and nothing else.
  *
- * A short stack of plain controls down the right-hand side, above the sheet. Every value
- * is from
- * `design/SPEC.md` — 42px, 14px radius, 8px gap, 18px glyphs, aqua when on — rather than
- * from my eye.
+ * WHY TWO. This column had grown to six: go to my location, the sonar, the street hum,
+ * the city heatmap, the compass view and the framing button. Two of them meant "around
+ * me" ("Echoes around me" and "Back to what is around you") and nobody could tell them
+ * apart, and the stack was tall enough to sit on the pins down the right of the map.
+ * Each of the four that left still has a home where somebody would look for it
+ * (ADR-0018, amended 2026-11-10):
  *
- * **There are no popovers, and that is the point of this rewrite.** The version this
- * replaces put a mode picker and a category filter behind two of these buttons, and
- * neither had a way out: not a tap on the map, not a tap on the sheet, not Escape, not
- * even the other rail buttons. The only target that dismissed a panel was the same
- * forty-pixel button that opened it, so in practice it sat over the map until you found
- * that button by accident. That is not a fiddly control, it is one that reads as broken —
- * and the design never had it, because it does not need it:
+ *   - **Listen for echoes**, the street hum, is on the compass view, which is where it was
+ *     built and the screen it belongs to: it places each echo by the way you are facing.
+ *   - **Back to what is around you**, the compass view itself, is a card in the trip sheet
+ *     on foot ("Compass view"), and the compass has its own "Show the map" to come back.
+ *     With a walk under way the same card goes back to the walk.
+ *   - **Echoes around me / Whole journey**, the framing button. Exploring, it is what a
+ *     pinch out does now: the map shows numbered clusters and the card that counts what
+ *     is on screen. On a route or a planned walk it is a card in the trip sheet ("Whole
+ *     journey", "Whole route"), and the locate arrow is the way back, as it always was.
+ *   - **Where the echoes are**, the city heatmap, is gone. The zoomed out map answers the
+ *     same question with real pins, and the heatmap's own numbers did not hold up ("10
+ *     places" over four labelled states, "2567.9km across"). The empty screen's "Show me
+ *     where they are" frames the echoes on the map instead.
  *
- *   - **Filtering** is the chip row at the top. Always visible, every category at once,
- *     nothing to open or close.
- *   - **The journey** — which route, and so which travel mode — is chosen on the package
- *     screen, where you are already deciding what to carry. The download button opens it.
- *
- * So the panels are gone rather than fixed. Adding a dismiss would have been the smaller
- * change and the worse one: two ways to filter, and a covered map whenever one was open.
- *
- * **Kids mode and the theme are no longer here.** Board 2's column carries three things,
- * all of them about the map in front of you: where am I, how close in, and is this
- * journey on the phone. Kids mode changes which echoes exist and the theme changes the
- * whole app, so they were two settings parked on the map, and they cost the column a
- * third of its height — the six objects that put a fab over the category chips and left
- * pins hiding behind the stack. They live on the settings tab now, which is where
- * somebody looks for them.
+ * There are no popovers here, and that is still the point: a control on the map does one
+ * thing when tapped and says so in its name.
  */
 
 import { memo } from "react";
 
 /**
  * The three screens a walker can be on: what is around you, the street map, and the walk
- * itself. Named here because the Rail and App both have to agree on it.
+ * itself. Named here because the trip sheet and App both have to agree on it.
  */
 export type WalkingView = "rose" | "map" | "walk";
 
 export interface RailProps {
-  /**
-   * The street humming, and the reason it is on this column at all.
-   *
-   * `hum.ts` is the most ambitious thing in the app: every echo in reach emits a quiet
-   * tone placed at its true bearing, one note per category, pentatonic so any combination
-   * of them is a chord rather than a cluster; sealed ones are heard through a low-pass
-   * with noise under them, and standing in the right place opens the filter. It is the
-   * one part of this product that is genuinely immersive rather than a picture of
-   * something immersive.
-   *
-   * It was switched off by default and reachable from exactly one place: a card on the
-   * rose. Then the app stopped opening on the rose, and the answer to "why isn't this
-   * immersive" became "because the immersion is behind a screen you no longer land on".
-   *
-   * So it is on the map, on the column, next to the zoom. Off by default still, because
-   * it is audio and audio that starts itself is a different kind of rude.
-   */
-  readonly humming?: boolean;
-  readonly onHum?: (on: boolean) => void;
-  /**
-   * The sonar: the ping that quickens as you close on a sealed echo.
-   *
-   * James (2026-10-11): "the sonar noise, you need a way to mute really easy. right on the
-   * map and it should be a pin and an echo like a submarine sonar." Its only switch was in
-   * the demo harness, which a phone never shows, so on a phone it could not be silenced at
-   * all. Present whenever the sonar can sound, which is the self-directed modes.
-   */
-  readonly sonar?: boolean;
-  readonly onSonar?: (on: boolean) => void;
-  /** Showing the whole journey rather than following the listener. */
-  readonly overview: boolean;
   /**
    * The map is centred on you and moving with you. Lights the locate arrow, the way every
    * maps app does: filled while it follows, an outline once you have dragged away.
@@ -79,71 +44,23 @@ export interface RailProps {
   /** "Go to my location": centre on you at street level, and follow. */
   readonly onLocate?: () => void;
   /**
-   * What the zoom-out is called here. "Whole journey" on a flight or a drive; exploring has
-   * no journey, so it is the route you are walking, or the echoes around you.
-   */
-  readonly overviewLabel?: string;
-  readonly onOverview: (overview: boolean) => void;
-  /**
-   * Walking only: swap between the rose and the street map.
+   * Sound: the sonar, the ping that quickens as you close on a sealed echo.
    *
-   * Absent on every other mode, because a driver wants the road and a passenger wants the
-   * route, and neither has a head they can usefully turn.
+   * James (2026-10-11): "the sonar noise, you need a way to mute really easy. right on the
+   * map". Present whenever the sonar can sound, which is the self-directed modes. Drawn as
+   * the board's speaker, crossed when muted, so it reads as sound without a word.
    */
-  readonly roseView?: WalkingView;
-  /**
-   * What leaving the map goes back to, in the listener's words.
-   *
-   * Passed in rather than decided here, because the answer depends on whether a walk is
-   * in progress and only App knows that. Hardcoded to "Back to your walk" it promised a
-   * walk to everyone who had never started one.
-   */
-  readonly roseBackLabel?: string;
-  /**
-   * Open the city: where the echoes are, at the scale where pins stop meaning anything.
-   *
-   * On the column rather than only on the empty screen, which is where the design puts its
-   * one link to it. Somebody standing in the middle of the library never sees the empty
-   * screen and would never find the city at all, and "where else is there" is a question
-   * you ask most when you are already somewhere good.
-   */
-  readonly onCity?: () => void;
-  readonly onRoseView?: () => void;
+  readonly sonar?: boolean;
+  readonly onSonar?: (on: boolean) => void;
 }
 
-function RailInner({
-  humming,
-  onHum,
-  sonar,
-  onSonar,
-  overview,
-  following,
-  onLocate,
-  overviewLabel = "Whole journey",
-  onOverview,
-  roseView,
-  roseBackLabel,
-  onCity,
-  onRoseView,
-}: RailProps) {
+function RailInner({ following, onLocate, sonar, onSonar }: RailProps) {
+  if (!onLocate && onSonar === undefined) return null;
   return (
     <div className="rail">
       {/*
-        The hum, at the top of the column, and lit when it is on.
-
-        Top because it is the only control here that changes what the app IS rather than
-        what the map shows, and because a listener who never finds it never meets the
-        product. The equaliser mark is the rose's own, so the two places agree.
-      */}
-      {/*
-        The sonar switch, first in the column so a thumb finds it without looking. A pin
-        sending out a ping when it is on; the same pin, silent and crossed, when it is not.
-      */}
-      {/*
         GO TO MY LOCATION, first in the column and drawn as the arrow every maps app uses,
-        so nobody has to read it. It replaces "Back to me", a pill over the top of the map
-        that only appeared after a search and, far from any echo, took you to a screen
-        with no map on it rather than to you.
+        so nobody has to read it.
       */}
       {onLocate && (
         <button
@@ -160,132 +77,28 @@ function RailInner({
 
       {onSonar !== undefined && (
         <button
-          className={sonar ? "fab fab-sonar on" : "fab fab-sonar"}
+          className={sonar ? "fab fab-sonar sounding" : "fab fab-sonar"}
           onClick={() => onSonar(!sonar)}
           aria-pressed={sonar ?? false}
           aria-label={sonar ? "Mute the sonar" : "Turn the sonar on"}
         >
-          <svg viewBox="0 0 24 24">
-            <path d="M8 20.5s-5-4.4-5-8.4a5 5 0 0 1 10 0c0 4-5 8.4-5 8.4z" />
-            <circle cx="8" cy="12" r="1.6" />
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 10v4h4l5 4V6L8 10z" />
             {sonar ? (
-              <>
-                <path className="sonar-ping sonar-ping-1" d="M15.5 9.2a4 4 0 0 1 0 5.6" />
-                <path className="sonar-ping sonar-ping-2" d="M18.4 6.6a7.6 7.6 0 0 1 0 10.8" />
-              </>
+              <path className="sonar-ping" d="M16 9a4 4 0 0 1 0 6" />
             ) : (
-              <path d="M16 9.5l5 5M21 9.5l-5 5" />
+              <path d="M16.5 9.5l5 5M21.5 9.5l-5 5" />
             )}
           </svg>
         </button>
       )}
-
-      {onHum !== undefined && (
-        <button
-          className={humming ? "fab fab-hum on" : "fab fab-hum"}
-          onClick={() => onHum(!humming)}
-          aria-pressed={humming ?? false}
-          aria-label={humming ? "Stop listening for echoes" : "Listen for echoes"}
-        >
-          <svg viewBox="0 0 24 24">
-            <path d="M4 12h2.5l2-6 3 12 2.5-8 1.5 4H20" />
-          </svg>
-        </button>
-      )}
-
-      {/*
-        No zoom buttons. They were here while the map did its own gestures and pinch was
-        unreliable; MapLibre's pinch, double tap and wheel now do it properly, and two more
-        buttons on this column covered the echoes on the right of the map (James,
-        2026-10-11: the map was "hard to navigate").
-      */}
-
-      {/*
-        Walking's view switch. The rose is the resting screen on foot and the street map is
-        a thing you go and get, which is the opposite of every other mode, so the control
-        only exists here.
-      */}
-      {onCity && (
-        <button className="fab rail-city" onClick={onCity} aria-label="Where the echoes are">
-          {/* A globe: meridians and a waist, which reads at 20px where continents do not. */}
-          <svg viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="8.5" />
-            <path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.3 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.3-3.6-8.5S9.6 5.9 12 3.5z" />
-          </svg>
-        </button>
-      )}
-
-      {roseView && onRoseView && (
-        <button
-          className="fab"
-          /*
-            A plain toggle, because the way BACK is not always the way you came. Walk mode
-            sends you to the street map with a destination on it, and the button that
-            leaves the map should hand you back the walk rather than the survey you were
-            doing before you picked one. Only App knows which, so App decides and this
-            only says which direction it is going.
-          */
-          onClick={onRoseView}
-          aria-pressed={roseView === "map"}
-          aria-label={
-            roseView === "map"
-              ? (roseBackLabel ?? "Back to what is around you")
-              : "Show the street map"
-          }
-        >
-          {roseView === "map" ? (
-            <svg viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="8.5" />
-              <path d="M12 12l4-7-7 4z" />
-            </svg>
-          ) : (
-            <svg viewBox="0 0 24 24">
-              <path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3-6-3zM9 3v15M15 6v15" />
-            </svg>
-          )}
-        </button>
-      )}
-
-      {/*
-        THE FRAMING BUTTON: the whole journey, or the echoes around you, and back.
-
-        It used to have three jobs and three glyphs, one of them "Back to where I am" after
-        a drag. That job is the locate arrow's now, so this does the one thing its corners
-        say: frame the lot. Tapping it again follows you, as the locate arrow does.
-      */}
-      <button
-        className={overview ? "fab on" : "fab"}
-        onClick={() => onOverview(!overview)}
-        aria-pressed={overview}
-        aria-label={overviewLabel}
-      >
-        <svg viewBox="0 0 24 24">
-          <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />
-        </svg>
-      </button>
-
-      {/*
-        THE DOWNLOAD FAB WAS A DUPLICATE, and that is why it is not here any more.
-
-        It called `onDownload`, which is `openPackage`. The journey chip across the top of
-        the map calls `openPackage` too, is always on screen, says what it is in words, and
-        carries a "CHANGE" affordance next to it. Two controls, one destination, and the
-        one people could actually read was not the one taking a 44px bite out of the map.
-
-        Carrying the journey still matters exactly as much as ADR-0003 says — an aircraft
-        has no signal and a foreign city has no data plan worth using. It is one tap away,
-        through the thing that names the journey.
-
-        This also buys the map back a fab's worth of column, which is the whole reason the
-        column had to learn to wrap into two on a short phone.
-      */}
     </div>
   );
 }
 
 /*
  * Memoised. Nothing here depends on where the listener is, and the app re-renders on every
- * position fix — four times a second, for the life of a journey. Its callbacks are stable
+ * position fix, four times a second, for the life of a journey. Its callbacks are stable
  * in `App`, which is what makes the comparison succeed.
  */
 export const Rail = memo(RailInner);

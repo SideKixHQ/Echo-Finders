@@ -71,7 +71,6 @@ async function standAtCastleClinton(heard, { handsFree = false } = {}) {
   // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
   await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
   await p.waitForTimeout(3000);
-  await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
   await p.waitForTimeout(600);
   if (handsFree) {
     // Hands-free lives on the journey plan: chip, Journey details, then the plan.
@@ -143,7 +142,6 @@ const spent = (n) => Array.from({ length: n }, (_, i) => `elsewhere-${i}`);
 
   await p.reload({ waitUntil: 'domcontentloaded' });
   await p.waitForTimeout(3500);
-  await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
   await p.getByRole('button', { name: /^Open: / }).click().catch(() => {});
   await holdStill(p, ctx, async () => (await p.locator('.toast-synced .toast-play, .pop-go').count()) > 0);
   const kept = await store(p, 'echo-finders:entitlement');

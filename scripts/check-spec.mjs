@@ -148,8 +148,7 @@ await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
 // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
 await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
 await p.waitForTimeout(4500);
-// Walking opens on the rose. The map, which is what these measure, is one tap behind it.
-await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
+// Walking opens on the map, which is what these measure.
 await p.waitForTimeout(800);
 
 const read = (sel, props) => p.evaluate(([sel, props]) => {

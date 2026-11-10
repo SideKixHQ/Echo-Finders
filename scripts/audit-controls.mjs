@@ -367,9 +367,12 @@ if (await p.locator('.how').count()) await capture('onboarding/how-echoes-unlock
 await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
 await p.waitForTimeout(4500);
 /*
- * Walking opens on the rose, which is its own screen and worth inventorying. The map is
- * one tap behind it.
+ * The compass view (the rose), its own screen and worth inventorying. Walking opens on the
+ * map now, and the compass is a card in the trip sheet since the map came down to two
+ * controls (ADR-0018, amended 2026-11-10). Its own "Show the map" comes back.
  */
+await p.getByLabel(/Change your journey/).click(); await p.waitForTimeout(400);
+await p.locator('.jmenu').getByRole('button', { name: /Compass view/ }).click(); await p.waitForTimeout(800);
 await capture('walk/rose');
 focus.push(...await focusSweep('walk/rose'));
 /*
@@ -380,7 +383,7 @@ focus.push(...await focusSweep('walk/rose'));
  * the transcript is on the player and saved is under My Echoes, so the walk is the walk a
  * person actually takes — step the arrows, open the card, play from it.
  */
-await p.getByLabel(/^Show me the map|the street map/).click().catch(()=>{});
+await p.locator('.rose').getByRole('button', { name: 'Show the map' }).click();
 await p.waitForTimeout(800);
 await capture('map');
 focus.push(...await focusSweep('map'));
