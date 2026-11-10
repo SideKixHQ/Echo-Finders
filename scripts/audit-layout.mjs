@@ -182,7 +182,7 @@ const PROBE = () => {
    * under the card you opened by tapping that pin is the product working. Reporting it
    * every run is how a person learns to stop reading the report.
    */
-  const LAYER = ['pop', 'toast', 'hear', 'vf', 'onb', 'pf', 'plan', 'city', 'paywall', 'walk', 'rose', 'nowhere', 'kind-sheet', 'kind-scrim', 'fan-backdrop'];
+  const LAYER = ['pop', 'toast', 'hear', 'vf', 'onb', 'pf', 'plan', 'paywall', 'walk', 'rose', 'nowhere', 'kind-sheet', 'kind-scrim', 'fan-backdrop'];
   const inLayer = (el) => {
     for (let n = el; n && n !== document.body; n = n.parentElement) {
       const c = (n.className.baseVal ?? n.className ?? '').toString();
@@ -440,8 +440,13 @@ async function walk(width, height, theme) {
     await p.locator('.nav button').first().click(); await p.waitForTimeout(700);
   }
 
+  // The compass view, from the trip sheet (ADR-0018, amended 2026-11-10), then back.
+  await p.getByLabel(/Change your journey/).click({ force: true }).catch(() => {});
+  await p.waitForTimeout(400);
+  await p.locator('.jmenu').getByRole('button', { name: /Compass view/ }).click({ force: true }).catch(() => {});
+  await p.waitForTimeout(800);
   await look('walk/rose');
-  await p.getByLabel(/^Show me the map|the street map/).click({ force: true }).catch(() => {});
+  await p.locator('.rose').getByRole('button', { name: 'Show the map' }).click({ force: true }).catch(() => {});
   await p.waitForTimeout(900);
   await look('map');
 

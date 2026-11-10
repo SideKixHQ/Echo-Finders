@@ -66,21 +66,6 @@ export function fromWorld(x: number, y: number, zoom: number) {
 }
 
 /**
- * Where a MapLibre camera has to be to draw exactly what this plan draws.
- *
- * The vector basemap is a separate canvas under the SVG, so it gets the projection as a
- * camera rather than as tile positions: the position at the middle of a `w` by `h` box,
- * and a zoom. MapLibre counts zoom in 512px tiles where this file counts in 256px ones,
- * which is the `- 1`; the fractional part this plan carries as `scale` goes back into the
- * zoom, since a vector map has no tile grid to snap to.
- */
-export function cameraFor(plan: TilePlan, w: number, h: number) {
-  const x = (w / 2 - plan.originX) / plan.scale;
-  const y = (h / 2 - plan.originY) / plan.scale;
-  return { ...fromWorld(x, y, plan.zoom), zoom: plan.zoom + Math.log2(plan.scale) - 1 };
-}
-
-/**
  * Which tiles cover a view, and where to put them.
  *
  * `spanKm` is measured across the view's width. Zoom is chosen to match it and then floored

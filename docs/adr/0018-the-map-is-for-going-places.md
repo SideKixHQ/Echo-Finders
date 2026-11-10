@@ -86,6 +86,21 @@ missing piece between them.
    - Then you go, stop to stop, with "2 of 5" as Walk mode draws it.
 7. **The sonar has a switch on the map:** a pin sending a ping, crossed when muted, and
    remembered.
+   - Amended 2026-11-10. It is the board's "Sound" now, a speaker, crossed when muted.
+     The map has two controls, as the approved map board draws them: the locate arrow and
+     Sound (`Rail.tsx`). The column had grown to six, two of them meant "around me", and
+     the stack covered pins. The other four:
+     - *Listen for echoes* (the street hum) stays on the compass view, where it was built.
+     - *Back to what is around you* (the compass view) is a card in the trip sheet on foot,
+       "Compass view", or "Back to your walk" with a walk under way. The compass has its own
+       "Show the map".
+     - *Echoes around me / Whole journey* (the framing button). Exploring, a pinch out does
+       it: clusters and the card that counts them. On a route or a planned walk it is a
+       card in the trip sheet, "Whole journey" or "Whole route". The locate arrow comes back.
+     - *Where the echoes are* (the city heatmap) is removed. Its numbers were wrong ("10
+       places" over four labelled states, "2567.9km across") and the zoomed out map shows
+       the same thing with real pins. The empty screen's "Show me where they are" frames
+       your nearest echoes on the map, or with no location the busiest place.
 
 ## Consequences
 - **One more thing to load.** MapLibre is about 290 KB gzipped. It is loaded after first

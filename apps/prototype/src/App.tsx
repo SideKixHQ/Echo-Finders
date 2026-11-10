@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
+import { clusterEchoes, holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
 import { accessRole, claimOwnerFromAddress, setOwnerMode, type AccessRole } from "./owner";
 import { testPositionFrom } from "./test-position";
 import { count } from "./analytics";
@@ -82,7 +82,6 @@ import {
   startCheckout,
 } from "./payments";
 import { addHeard, readHeard } from "./heard-store";
-import { City } from "./City";
 import type { CaptureEvent, CaptureRecord, Echo, EchoCategory, TravelMode } from "@echofinders/core";
 import {
   planWalk,
@@ -383,15 +382,6 @@ export function App() {
     () => (trueCrimeOn ? ["true-crime"] : []),
     [trueCrimeOn],
   );
-  /**
-   * The city view, which is the honest answer to "where are they then".
-   *
-   * It replaced the overview toggle as the destination for that question. The overview
-   * frames the whole library on the street map, which at national scale is a grey
-   * rectangle with eight specks on it — technically the answer and useless as one. This
-   * shows density instead, which is the shape of the question.
-   */
-  const [cityOpen, setCityOpen] = useState(false);
 
   const setPlayhead = useCallback((fraction: number) => {
     progressRef.current = fraction;
@@ -1876,10 +1866,9 @@ export function App() {
               }
               /*
                 And close the popup on the way. "Show the map" from a walk left the target's
-                own card open over the map, and that card covers the control column down the
-                right hand side — including the one fab that leads back to the walk. Running
-                it is what showed it: the only route out of the map was the one the map had
-                buried.
+                own card open over the map, and that card covers the map's controls down the
+                right hand side. The way back to the walk is the trip sheet's "Back to your
+                walk" now, but an open card over the map is still not what you went for.
               */
               onMap={() => {
                 setSelectedId(null);
@@ -1910,6 +1899,7 @@ export function App() {
               onSelect={setSelectedId}
               humming={humming}
               onHum={setHumming}
+              onMap={() => setWalkingView("map")}
               /*
                 The note reports what the SCREEN IS DOING, not what we asked it to do.
                 Those came apart the first time this was tested: the request is refused
@@ -1976,6 +1966,40 @@ export function App() {
                   kept={downloaded}
                   label={roaming ? (lookAt ? lookAt.label : roamMode === "driving" ? "Driving nearby" : "Walking nearby") : leftLabel}
                   here={state.position?.at ?? null}
+                  {...(!roaming || plan
+                    ? {
+                        whole: {
+                          label: roaming ? "Whole route" : "Whole journey",
+                          on: overview,
+                          onShow: () => {
+                            setPan({ x: 0, y: 0 });
+                            setWalkingView("map");
+                            setOverview(true);
+                          },
+                        },
+                      }
+                    : {})}
+                  {...(onFoot
+                    ? {
+                        compass: beacon
+                          ? {
+                              label: "Back to your walk",
+                              detail: "The arrow and the distance, with the screen kept simple.",
+                              onOpen: () => {
+                                setSelectedId(null);
+                                setWalkingView("walk");
+                              },
+                            }
+                          : {
+                              label: "Compass view",
+                              detail: "Which way each echo is. Turn on the street hum here.",
+                              onOpen: () => {
+                                setSelectedId(null);
+                                setWalkingView("rose");
+                              },
+                            },
+                      }
+                    : {})}
                   {...(state.position
                     ? {
                         onPlan: () => {
@@ -2055,7 +2079,29 @@ export function App() {
                 <Nowhere
                   nearest={nearestAnywhere}
                   reachKm={session.nearbyReachKm}
-                  onShowAll={() => setCityOpen(true)}
+                  onShowAll={() => {
+                    /*
+                      The echoes, on the map: clustered where they crowd, and the locate
+                      arrow to come back. The city heatmap this used to open is gone
+                      (ADR-0018, amended 2026-11-10). From where you are, the overview
+                      frames your nearest few. With no location there is no "nearest", and
+                      the whole library runs from San Francisco to Edinburgh, wider than a
+                      phone map can draw, so it opens on the busiest place instead, centred,
+                      the way a search for it would.
+                    */
+                    setPan({ x: 0, y: 0 });
+                    setWalkingView("map");
+                    if (state.position) {
+                      setOverview(true);
+                      return;
+                    }
+                    const place = clusterEchoes(LIBRARY, 1.2).reduce((a, b) => (b.echoes.length > a.echoes.length ? b : a));
+                    // Its busiest spot, not its middle: a place chained along a drive can
+                    // have its middle in a field.
+                    const near = (at: LatLng) => place.echoes.filter((o) => distanceKm(at, o.point.at) <= 5).length;
+                    const spot = place.echoes.reduce((best, e) => (near(e.point.at) > near(best.point.at) ? e : best));
+                    setLookAt({ label: place.label, detail: "", at: spot.point.at });
+                  }}
                   widenToKm={WIDEN_TO_KM}
                   library={LIBRARY}
                   onLook={(hit) => lookSomewhere(hit, roamMode)}
@@ -2262,55 +2308,23 @@ export function App() {
                 />
               )}
               {/*
-                No control column either. It carries the map toggle, recentre and download,
-                which all act on echoes in reach, and with none in reach it had nothing to
-                act on. It also sits centred in the band between the chips and the sheet,
-                and with no sheet that band grew until the top fab landed on the journey
-                chip's own Change button. Both gone at once: overview brings it back,
-                because turning overview on is what takes this screen down.
+                No map controls either while the empty screen is up: it has its own way to
+                find you, and there is no map under it to act on. "Show me where they are"
+                brings them back, because turning overview on is what takes this screen down.
               */}
               {(!nowhere || overview) && (
               <Rail
-                /* On foot only: the hum places echoes by bearing, and a bearing means
-                   nothing at 500 knots. Carried modes never had it and still do not. */
-                {...(onFoot ? { humming, onHum: setHumming } : {})}
                 {...(selfDirected ? { sonar: sound, onSonar: setSound } : {})}
-                overview={overview}
-                /*
-                  Recentre is the way back from a drag, and it has to work even when the
-                  overview is already where you want it: dragging the map and then tapping
-                  recentre should put you back in the middle, not toggle the framing and
-                  leave the offset in place.
-                */
-                onOverview={(next) => {
-                  setPan({ x: 0, y: 0 });
-                  setOverview(next);
-                }}
                 /*
                   "Go to my location", the arrow every maps app has. It replaces the
                   "Back to me" pill (James, 2026-11-10: "it seems to be in the way and
                   doesnt really work anyway") and the framing button's old third job,
                   "Back to where I am" after a drag. One tap: stop looking elsewhere,
-                  leave the overview, centre on you at street level, and follow.
+                  leave the overview, centre on you at street level, and follow. Not on the
+                  compass view, which has no map to centre: its own "Show the map" goes back.
                 */
                 following={located}
-                onLocate={locate}
-                overviewLabel={roaming ? (plan ? "Whole route" : "Echoes around me") : "Whole journey"}
-                /*
-                  Leaving the map hands back the WALK when there is one, and the survey
-                  when there is not. Returning everybody to the rose meant that tapping
-                  "Show the map" from a walk and then tapping back silently dropped you
-                  out of the walk you were in the middle of.
-                */
-                {...(onFoot
-                  ? {
-                      roseView: walkingView,
-                      roseBackLabel: beacon ? "Back to your walk" : "Back to what is around you",
-                      onRoseView: () =>
-                        setWalkingView((v) => (v === "map" ? (beacon ? "walk" : "rose") : "map")),
-                    }
-                  : {})}
-                onCity={() => setCityOpen(true)}
+                {...(showingRose ? {} : { onLocate: locate })}
               />
               )}
               {/*
@@ -2679,64 +2693,6 @@ export function App() {
             />
           )}
 
-          {/*
-            The city, over the map. Its own screen with its own way out, so nothing under
-            it has to stay reachable.
-          */}
-          {cityOpen && (
-            <City
-              library={LIBRARY}
-              at={state.position?.at ?? null}
-              theme={theme}
-              onClose={() => setCityOpen(false)}
-              onGo={(cluster) => {
-                /*
-                  Going somewhere is looking far enough to see it. Without this, tapping a
-                  cluster four hundred kilometres away closed the city and handed back the
-                  same empty street: the engine's reach had not moved, so neither had the
-                  map. The reach becomes whatever it takes to hold that cluster, with its
-                  own spread added so the far edge is in too.
-                */
-                const from = state.position?.at ?? null;
-                const need = from ? distanceKm(from, cluster.at) + cluster.spreadKm : 0;
-                setLookFurtherKm(Math.max(WIDEN_TO_KM, Math.ceil(need * 1.1)));
-                setCityOpen(false);
-                setTab("map");
-                /*
-                  Exploring, "Go" looks at the place, the way a ZIP or a place search does:
-                  centred on it, its nearest echoes in view, the locate arrow to return. It
-                  switched on the overview instead, which with no location framed the whole
-                  library, and off centre: North Carolina pinned to the left edge of the
-                  Atlantic (James, 2026-10-13: "shouldnt it be centered?").
-                */
-                if (roaming) {
-                  setOverview(false);
-                  setPan({ x: 0, y: 0 });
-                  // Its busiest spot, not its middle: North Carolina's middle is a field
-                  // between Wilmington, the Outer Banks and the Blue Ridge.
-                  const busiest = cluster.echoes.reduce(
-                    (best, e) => {
-                      const n = cluster.echoes.filter((o) => distanceKm(e.point.at, o.point.at) <= 5).length;
-                      return n > best.n ? { at: e.point.at, n } : best;
-                    },
-                    { at: cluster.at, n: 0 },
-                  );
-                  setLookAt({ label: cluster.label, detail: "", at: busiest.at });
-                } else {
-                  setOverview(true);
-                }
-                /*
-                  And the street map, not the rose. On foot the resting screen is the rose,
-                  which covers the map, so "Go" closed the city and handed back the same
-                  dial you were looking at before — the overview went on underneath where
-                  nobody could see it. Going somewhere means being shown it.
-                */
-                setWalkingView("map");
-                setBeacon(null);
-              }}
-            />
-          )}
-
         {/*
           Hearing it, over everything but the sync moment.
 
@@ -2960,11 +2916,6 @@ export function App() {
               if (next === "map" && tab === "map") setWalkingView("map");
               setTab(next);
               setListening(false);
-              // The same mistake again, in the city overview: it renders on `cityOpen`
-              // alone, so with no location (where "Show me where they are" opens it) the
-              // tabs changed underneath it and every one of them looked dead (James,
-              // 2026-11-09: "the bottom bar doesnt seem to work on this screen").
-              setCityOpen(false);
             }}
             foundCount={found.list.length}
           />

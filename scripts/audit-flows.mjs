@@ -66,7 +66,6 @@ async function freshApp() {
   // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
   await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
   await p.waitForTimeout(2000);
-  await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
   await p.waitForTimeout(600);
   return { ctx, p };
 }
@@ -169,10 +168,11 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
-// ── The city overview, with no location ─────────────────────────────────────────
-// Location refused: "Show me where they are" opens the overview, and the tab bar has to
-// leave it. It once changed the tab underneath and left the overview on top, so every tab
-// looked dead (James, 2026-11-09).
+// ── Show me where they are, with no location ────────────────────────────────────
+// Location refused: "Show me where they are" puts the echoes on the map (the city heatmap
+// it used to open is gone, ADR-0018 amended 2026-11-10), and the tab bar has to leave it.
+// The heatmap once changed the tab underneath and stayed on top, so every tab looked dead
+// (James, 2026-11-09).
 {
   const ctx = await browser.newContext({
     viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
@@ -190,13 +190,18 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
   await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
   await p.waitForTimeout(2500);
-  const city = p.locator('.city-card-kick');
-  if (!(await visible(city))) await p.getByRole('button', { name: /Show me where they are/ }).click().catch(() => {});
+  const showAll = p.getByRole('button', { name: /Show me where they are/ });
+  check('Show me where they are: offered with no location', await visible(showAll));
+  await showAll.click().catch(() => {});
   await p.waitForTimeout(1500);
-  check('City overview: opens with no location', await visible(city));
+  const pins = p.locator('.pin, .clus');
+  check('Show me where they are: the echoes, on the map', !(await visible(p.locator('.nowhere'))) && (await pins.count()) > 0
+    && await visible(p.locator('.rail').getByRole('button', { name: 'Go to my location' })));
+  check('Show me where they are: no heatmap screen', (await p.locator('.city').count()) === 0
+    && (await p.getByRole('button', { name: 'Where the echoes are' }).count()) === 0);
   await p.locator('.nav').getByRole('button', { name: /Settings/ }).click();
   await p.waitForTimeout(600);
-  check('City overview: Settings in the tab bar leaves it', !(await visible(city)) && await visible(p.locator('.panel.feedback').first()));
+  check('Show me where they are: Settings in the tab bar leaves it', /Settings/i.test(await currentTab(p)) && await visible(p.locator('.panel.feedback').first()));
   await ctx.close();
 }
 
@@ -329,6 +334,77 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   const fromAway = await here();
   check('Locate: from another city, back to you', (await locate.getAttribute('aria-pressed')) === 'true'
     && !!fromAway && !!home && Math.hypot(home.x - fromAway.x, home.y - fromAway.y) < 40, JSON.stringify(fromAway));
+  await ctx.close();
+}
+
+// ── The map's two controls, and where the other four went ───────────────────────
+// The approved map board draws two round controls: Show where I am and Sound. The column
+// had six, two of them meaning "around me", and it covered pins (ADR-0018, amended
+// 2026-11-10). Each of the four that left has to be reachable from where it went.
+{
+  const { ctx, p } = await freshApp();
+  for (let i = 0; i < 3; i++) await p.locator('.synced-later').click({ timeout: 800 }).catch(() => {});
+  const names = await p.locator('.rail button').evaluateAll((bs) => bs.map((b) => b.getAttribute('aria-label')));
+  check('Two controls: locate and sound, on foot', names.join(' | ') === 'Go to my location | Mute the sonar', names.join(' | '));
+  const sizes = await p.locator('.rail button').evaluateAll((bs) => bs.map((b) => { const r = b.getBoundingClientRect(); return [r.width, r.height]; }));
+  check('Two controls: each at least 44px', sizes.length === 2 && sizes.every(([w, h]) => w >= 44 && h >= 44), JSON.stringify(sizes));
+  for (const gone of ['Listen for echoes', 'Where the echoes are', 'Back to what is around you', 'Show the street map', 'Echoes around me']) {
+    check(`Two controls: "${gone}" is off the map`, (await p.locator('.rail').getByRole('button', { name: gone }).count()) === 0);
+  }
+  // Sound mutes and comes back, remembered as before.
+  const sound = p.locator('.rail').getByRole('button', { name: 'Mute the sonar' });
+  await sound.click();
+  await p.waitForTimeout(300);
+  const muted = p.locator('.rail').getByRole('button', { name: 'Turn the sonar on' });
+  check('Sound: a tap mutes it', await visible(muted) && (await muted.getAttribute('aria-pressed')) === 'false');
+  check('Sound: remembered', (await p.evaluate(() => localStorage.getItem('echo-finders:sonar'))) === 'off');
+  await muted.click();
+  await p.waitForTimeout(300);
+  check('Sound: a second tap turns it back on', (await p.locator('.rail').getByRole('button', { name: 'Mute the sonar' }).getAttribute('aria-pressed')) === 'true');
+  // The compass view, and the street hum on it, from the trip sheet; and its own way back.
+  const chip = p.getByLabel(/Change your journey/);
+  await chip.click();
+  await p.waitForTimeout(400);
+  const compass = p.locator('.jmenu').getByRole('button', { name: /Compass view/ });
+  check('Compass view: a card in the trip sheet on foot', await visible(compass));
+  await compass.click();
+  await p.waitForTimeout(900);
+  check('Compass view: opens the compass', await visible(p.locator('.rose')));
+  check('Compass view: Listen for echoes is on it',
+    await visible(p.locator('.rose').getByRole('button', { name: /Listen for echoes|Use the compass/ })));
+  check('Compass view: Sound is still to hand', await visible(p.locator('.rail').getByRole('button', { name: /sonar/ })));
+  await p.locator('.rose').getByRole('button', { name: 'Show the map' }).click();
+  await p.waitForTimeout(900);
+  check('Compass view: Show the map comes back', !(await visible(p.locator('.rose')))
+    && await visible(p.locator('.rail').getByRole('button', { name: 'Go to my location' })));
+  // Exploring, there is no framing card: a pinch out shows the clusters and the area card.
+  await chip.click();
+  await p.waitForTimeout(400);
+  check('Whole route: not offered while exploring', (await p.locator('.jmenu').getByRole('button', { name: /Whole (journey|route)/ }).count()) === 0);
+  // On a flight, the whole journey is a card in the trip sheet, and the arrow comes back.
+  await p.locator('.jmenu').getByRole('button', { name: 'Fly', exact: true }).click();
+  await p.waitForTimeout(300);
+  await p.locator('.jmenu .jmenu-routes .jmenu-item').first().click();
+  await p.waitForTimeout(1500);
+  const flying = await p.locator('.rail button').evaluateAll((bs) => bs.map((b) => b.getAttribute('aria-label')));
+  check('Two controls: on a flight, only the locate arrow', flying.join(' | ') === 'Go to my location', flying.join(' | '));
+  await p.locator('.journey-tap, .jchip').first().click();
+  await p.waitForTimeout(400);
+  const whole = p.locator('.jmenu').getByRole('button', { name: /Whole journey/ });
+  check('Whole journey: a card in the trip sheet on a route', await visible(whole));
+  await whole.click();
+  await p.waitForTimeout(1200);
+  const locate = p.locator('.rail').getByRole('button', { name: 'Go to my location' });
+  check('Whole journey: frames the route, and the arrow goes plain', (await locate.getAttribute('aria-pressed')) === 'false');
+  await p.locator('.journey-tap, .jchip').first().click();
+  await p.waitForTimeout(400);
+  check('Whole journey: ticked while it is showing',
+    (await p.locator('.jmenu').getByRole('button', { name: /Whole journey/ }).getAttribute('aria-current')) === 'true');
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(300);
+  await locate.click();
+  await p.waitForTimeout(1200);
+  check('Whole journey: the arrow comes back to you', (await locate.getAttribute('aria-pressed')) === 'true');
   await ctx.close();
 }
 
