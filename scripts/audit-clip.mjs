@@ -17,6 +17,14 @@
  *                it, which is how a word ends up half drawn at the edge of a card.
  *                Horizontal scrollers are exempt: their content is meant to run on.
  *   PLACEHOLDER  an empty input whose placeholder is wider than the room inside it.
+ *   COVERED      a line of text with something else drawn over it: the last line of a
+ *                paragraph run on behind a button, or a title cut through by the line
+ *                under it in a sheet too short for what it holds (James, 2026-11-10: the
+ *                directions sheet and "Nothing within 2.4km", neither of which was on
+ *                this audit's list, which is how both shipped). Text scrolled out of its
+ *                own scroller is not covered, it is scrolled.
+ *   SPILLS       a line or a button that runs out of the bottom (or top) of a panel that
+ *                is only as tall as it was told to be, into whatever is next to it.
  *
  *   node scripts/audit-clip.mjs
  *   CLIP_URL=http://127.0.0.1:5315 node scripts/audit-clip.mjs   (against a running server)
@@ -170,6 +178,79 @@ const PROBE = () => {
     el.value = '';
     if (need > room + 1) out.push({ kind: 'PLACEHOLDER', what: name(el), text: el.placeholder, by: need - room });
   }
+
+  /*
+   * 4. Text with something else on top of it.
+   *
+   * Each line of each run of text is sampled across its middle; whatever the browser would
+   * hit there has to be the text's own element, inside it, or around it. Anything else is
+   * drawn over the words. Lines outside the window, or scrolled out of a scroller, are not
+   * on screen to be covered.
+   *
+   * Only inside the panels listed in WHOLE, which are what is on top and must be read
+   * whole: elsewhere a sheet over the map is meant to cover what is under it.
+   */
+  const WHOLE = [
+    '.dir-sheet',   // the directions sheet, and the tab bar it sits on
+    '.dir-turn',    // the turn card, and the control column beside it
+    '.nowhere',     // "Nothing within", and its buttons
+  ];
+  /* A panel with a whole screen over it (first run over "Where are you?") is not on show. */
+  const underModal = (panel) => {
+    const r = panel.getBoundingClientRect();
+    const top = document.elementFromPoint(r.left + r.width / 2, Math.min(innerHeight - 1, r.top + r.height / 2));
+    return !!top && !panel.contains(top) && !top.contains(panel);
+  };
+  {
+    const scrollsY = (cs) => /auto|scroll|hidden|clip/.test(cs.overflowY);
+    const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    for (let t = w.nextNode(); t; t = w.nextNode()) {
+      const text = t.textContent.trim();
+      const host = t.parentElement;
+      if (!text || !host || !shown(host)) continue;
+      if (host.closest('svg, script, style, [aria-hidden="true"], .maplibregl-ctrl-attrib, .test-position')) continue;
+      const panel = WHOLE.map((sel) => host.closest(sel)).find(Boolean);
+      if (!panel || underModal(panel)) continue;
+      const range = document.createRange();
+      range.selectNodeContents(t);
+      const clips = [];
+      for (let a = host.parentElement; a && a !== document.body; a = a.parentElement) {
+        if (scrollsY(getComputedStyle(a))) clips.push(a.getBoundingClientRect());
+      }
+      let hit = null;
+      for (const r of range.getClientRects()) {
+        if (r.width < 2 || r.height < 2) continue;
+        const y = r.top + r.height / 2;
+        for (const fx of [0.15, 0.5, 0.85]) {
+          const x = r.left + r.width * fx;
+          if (x < 0 || y < 0 || x >= innerWidth || y >= innerHeight) continue;
+          if (clips.some((c) => x < c.left || x > c.right || y < c.top || y > c.bottom)) continue;
+          const top = document.elementFromPoint(x, y);
+          if (!top || top === host || host.contains(top) || top.contains(host)) continue;
+          hit = top;
+          break;
+        }
+        if (hit) break;
+      }
+      if (hit) out.push({ kind: 'COVERED', what: `${name(host)} under ${name(hit)}`, text: text.slice(0, 40), by: 0 });
+    }
+    // And out of the panel altogether, where it is under the next thing or off the phone.
+    for (const panel of document.querySelectorAll(WHOLE.join(','))) {
+      if (!shown(panel) || underModal(panel)) continue;
+      const box = panel.getBoundingClientRect();
+      for (const el of panel.querySelectorAll('p, h1, h2, h3, span, strong, b, button, a')) {
+        if (!shown(el) || !el.textContent.trim()) continue;
+        let scrolled = false;
+        for (let a = el.parentElement; a && a !== panel; a = a.parentElement) {
+          if (scrollsY(getComputedStyle(a))) { scrolled = true; break; }
+        }
+        if (scrolled) continue;
+        const r = el.getBoundingClientRect();
+        const by = Math.max(r.bottom - box.bottom, box.top - r.top, r.bottom - innerHeight);
+        if (by > 1) out.push({ kind: 'SPILLS', what: `${name(el)} out of ${name(panel)}`, text: el.textContent.trim().slice(0, 40), by: Math.round(by) });
+      }
+    }
+  }
   return out;
 };
 
@@ -228,6 +309,22 @@ const tap = (l) => l.first().click({ timeout: 3000 }).catch(() => {});
   await p.goto(`${BASE}/`, { waitUntil: 'domcontentloaded' });
   await p.waitForTimeout(3000);
   await look('where are you');
+  await ctx.close();
+}
+
+// Nothing nearby, "Nothing within 2.4 km": once with the nearest echo near enough to look
+// out to, once with nothing for 150 km. Its paragraph ran on behind its buttons (James,
+// 2026-11-10), and nothing here was on this list.
+for (const [at, screen] of [
+  [{ latitude: 34.278, longitude: -77.776 }, 'nothing nearby, look out to it'],
+  [{ latitude: 35.5, longitude: -79.2 }, 'nothing nearby, nothing near'],
+]) {
+  const { ctx, p, look } = await device(at, { onboarded: true });
+  await p.goto(`${BASE}/?at=${at.latitude},${at.longitude}`, { waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(3000);
+  for (let i = 0; i < 3; i++) await p.locator('.toast-close').first().click({ timeout: 500 }).catch(() => {});
+  if (!(await p.locator('.nowhere-say h1').count())) unreached.push(screen);
+  await look(screen);
   await ctx.close();
 }
 
