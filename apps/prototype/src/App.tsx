@@ -8,7 +8,8 @@ import { LIBRARY, ROUTES } from "./library.generated";
 import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
-import { RouteMap, type PinState } from "./RouteMap";
+import { BASE_ZOOM, RouteMap, type PinState } from "./RouteMap";
+import { AreaCard, AREACARD_H } from "./AreaCard";
 import { Collection } from "./Collection";
 import { IndexedDbCollection } from "./collection-store";
 import { Privacy } from "./Privacy";
@@ -132,6 +133,12 @@ const SHARED_ECHO = takeSharedEcho((id) => LIBRARY_BY_ID.has(id));
 const LOOK_RADIUS_KM = 25;
 /** Exploring, "everything around me" reaches this far: a city centre and its edges. */
 const OVERVIEW_RADIUS_KM = 6;
+/**
+ * Zoomed out past this (a MapLibre zoom, about a city across a phone), the map draws every
+ * echo, grouped into a numbered dot per town, rather than only the ones in reach: the
+ * zoomed-out design (James, 2026-11-10). Only once the listener has zoomed out themselves.
+ */
+const FAR_OUT_MAP_ZOOM = 12;
 /**
  * Seatback mode: a big landscape touch screen in the back of an aircraft seat (ADR-0001).
  *
@@ -1404,6 +1411,7 @@ export function App() {
    * decides what the hum sings and what the rose draws, and looking at a map of the world
    * should not put four hundred voices in somebody's ears.
    */
+  const farOut = roaming && !overview && !lookAt && !plan && zoom < 1 && BASE_ZOOM[roamMode] + Math.log2(zoom) <= FAR_OUT_MAP_ZOOM;
   const onMap = useMemo(
     () =>
       roaming
@@ -1411,11 +1419,15 @@ export function App() {
             ? overviewEchoes
             : lookAt
               ? LIBRARY.filter((e) => distanceKm(lookAt.at, e.point.at) <= LOOK_RADIUS_KM)
-              : state.nearby.map((n) => n.echo)
+              : farOut
+                ? LIBRARY
+                : state.nearby.map((n) => n.echo)
           ).filter((e) => activeCats.has(e.category))
         : onRoute.filter((e) => activeCats.has(e.category)),
-    [roaming, overview, overviewEchoes, lookAt, state.nearby, activeCats, onRoute],
+    [roaming, overview, overviewEchoes, lookAt, farOut, state.nearby, activeCats, onRoute],
   );
+  /** Zoomed out, the echoes on screen, for the card that counts them (`AreaCard`). */
+  const [inView, setInView] = useState<readonly Echo[]>([]);
 
   /**
    * The same list, nearest first, which is the order the stepper moves in.
@@ -2056,7 +2068,8 @@ export function App() {
                 focusId={focusId}
                 /* The stepper covers the bottom of the map, so the map has to know: it
                    keeps pins, edge markers and the Esri credit above it. */
-                reservedBottom={showBar ? ECHOBAR_H : directing ? DIRSHEET_H : 0}
+                reservedBottom={(showBar ? ECHOBAR_H : directing ? DIRSHEET_H : 0) + (farOut && !directing ? AREACARD_H : 0)}
+                onInView={setInView}
                 overview={overview}
                 progress={along}
                 theme={theme}
@@ -2158,6 +2171,8 @@ export function App() {
                 twenty six pins, fifteen of them in one pile — and stepping nearest first
                 is the only answer on that screen that does not involve aiming at the pile.
               */}
+              {/* Not while directions are up: their sheet has the bottom of the screen. */}
+              {farOut && !directing && <AreaCard echoes={inView} above={showBar ? ECHOBAR_H : 0} />}
               {showBar && (
                 <EchoBar
                   items={stepList}

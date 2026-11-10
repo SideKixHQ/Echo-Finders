@@ -4123,6 +4123,10 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  */
 /* The bar (77px) and the 8px it floats above the tab bar, so what clears it really does. */
 .screen:has(.echobar) { --step-h: 86px; }
+/* The zoomed-out card (`AreaCard.tsx`, `AREACARD_H`) adds itself to the stack, so the control
+   column moves up above it rather than sitting on it. */
+.screen:has(.echobar):has(.area-card) { --step-h: 162px; }
+.screen:has(.area-card):not(:has(.echobar)) { --step-h: 76px; }
 .echobar {
   position: absolute; left: 0; right: 0; z-index: 24;
   bottom: calc(var(--nav-h) + 8px);
@@ -4650,6 +4654,19 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   font-size: var(--fs-secondary); line-height: 1.4; color: var(--white);
   background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line-2);
 }
+/* Zoomed out: what is on the map and how much (`AreaCard.tsx`), just above the bar. */
+.area-card {
+  position: absolute; left: var(--gutter); right: var(--gutter); z-index: 24;
+  bottom: calc(var(--nav-h) + 8px + var(--above, 0px));
+  display: flex; flex-direction: column; gap: 2px;
+  padding: 10px 16px; border-radius: 18px;
+  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line-2);
+  box-shadow: 0 6px 18px rgba(var(--rgb-shadow), calc(0.45 * var(--shadow-k)));
+  backdrop-filter: blur(12px); pointer-events: none;
+}
+.area-card-title { font-size: var(--fs-button); font-weight: 600; line-height: 1.3; color: var(--white); }
+.area-card-hint { font-size: var(--fs-secondary); line-height: 1.35; color: var(--muted); }
+.seat .area-card { right: auto; width: calc(var(--panel-w) - 2 * var(--gutter)); }
 
 /*
  * "How did it land?" (`ReactionCard.tsx`). A card above the tab bar, not a screen: the

@@ -103,6 +103,12 @@ them like any other file, and adding a city adds only that city's file.
 Commit both outputs. `build-map.py` takes a few minutes; it reads Overture Maps
 (OpenStreetMap data, ODbL) from Overture's public bucket, only the parts around echoes.
 
+It also rebuilds the zoomed-out map: `map/world.pmtiles` (land, coastline, borders, main
+roads and towns everywhere, from Natural Earth, public domain, plus Overture's towns near
+the echoes) and `map/coast.pmtiles` (the real shoreline around the echoes, zoom 8 to 12,
+Overture's land, ODbL). `python3 scripts/build-map.py --world` rebuilds just those two.
+Then `npm run content:land` lists any approved echo that stands in the water.
+
 **Adding a drive.** A driving route's line follows the road it names
 (`follows:` in `content/routes/<id>.yml`), traced once from the same Overture roads:
 

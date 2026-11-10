@@ -152,7 +152,20 @@ export function rasterStyle(theme: MapTheme): StyleSpecification {
   };
 }
 
-export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme, world?: string): StyleSpecification {
+/**
+ * How solid the zoomed-out map is: land, sea and the shore, from the world and coast files.
+ * Fully drawn to zoom 11, so a coast and its towns read on the way in, gone by 13, where the
+ * streets have arrived and the land is the app's own field.
+ */
+const zoomedOut = (from = 1): ExpressionSpecification => ["interpolate", ["linear"], ["zoom"], 11, from, 13, 0];
+
+export function basemapStyle(
+  tiles: string,
+  glyphs: string,
+  theme: MapTheme,
+  world?: string,
+  coast?: string,
+): StyleSpecification {
   const p = PALETTE[theme];
   const roads: [id: string, filter: ExpressionSpecification, w: [number, number, number], colour: string][] = [
     ["service", ["all", kind("minor_road"), ["==", ["get", "kind_detail"], "service"]], [0.3, 1.6, 5], p.service],
@@ -161,8 +174,23 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme, wor
     ["highway", kind("highway"), [1.6, 6, 17], p.highway],
   ];
 
+  /*
+   * James (2026-11-10), on the map zoomed out: "No map details and some of these are in the
+   * water." The world file had land and borders only, the land was a shade off the field,
+   * and the sea was not drawn at all, so a pin sat on a blank dark screen. Now the sea is
+   * painted, the shore is a line, and main roads and town names come from the same file,
+   * at every zoom. Around the echoes the land and shore are the real ones (`coast`):
+   * Natural Earth's land has no barrier islands, which is how the beach echoes ended up in
+   * the sea.
+   */
   const outline: LayerSpecification[] = world
     ? [
+        {
+          // The sea: everything the land below does not cover.
+          id: "sea",
+          type: "background",
+          paint: { "background-color": p.water, "background-opacity": zoomedOut() },
+        },
         {
           // Land, zoomed out, so a coast and a continent read against the sea. It fades
           // as the streets arrive: up close the land is the app's own field, and the
@@ -171,8 +199,20 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme, wor
           type: "fill",
           source: "world",
           "source-layer": "earth",
-          paint: { "fill-color": p.earth, "fill-opacity": ["interpolate", ["linear"], ["zoom"], 9, 1, 12, 0] },
+          paint: { "fill-color": p.earth, "fill-opacity": zoomedOut() },
         },
+        ...(coast
+          ? [
+              {
+                // The real land around the echoes, barrier islands and all, over the coarse one.
+                id: "coast-earth",
+                type: "fill",
+                source: "coast",
+                "source-layer": "earth",
+                paint: { "fill-color": p.earth, "fill-opacity": zoomedOut() },
+              } satisfies LayerSpecification,
+            ]
+          : []),
         {
           id: "borders-state",
           type: "line",
@@ -200,11 +240,53 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme, wor
             "line-opacity": ["interpolate", ["linear"], ["zoom"], 9, 1, 12, 0],
           },
         },
+        {
+          // Main roads between towns: interstates and highways, quiet, under the streets.
+          id: "world-roads",
+          type: "line",
+          source: "world",
+          "source-layer": "roads",
+          minzoom: 4,
+          maxzoom: 13,
+          filter: [">=", ["zoom"], ["-", ["get", "min_zoom"], 1]],
+          layout: { "line-join": "round", "line-cap": "round" },
+          paint: {
+            "line-color": ["match", ["get", "kind"], "highway", p.highway, p.major],
+            "line-width": ["interpolate", ["linear"], ["zoom"], 4, 0.6, 8, 1.2, 11, 2],
+            "line-opacity": ["interpolate", ["linear"], ["zoom"], 4, 0.5, 7, 0.8, 11, 0.8, 12.5, 0],
+          },
+        },
+      ]
+    : [];
+  // The shore, over the water so the edge of the land reads as a line, as on a paper map.
+  const shore: LayerSpecification[] = world
+    ? [
+        {
+          id: "coastline",
+          type: "line",
+          source: "world",
+          "source-layer": "coastline",
+          // Natural Earth's shore until the real one takes over around the echoes.
+          maxzoom: coast ? 8.5 : 13,
+          paint: { "line-color": p.border, "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.6, 8, 1.2], "line-opacity": zoomedOut() },
+        },
+        ...(coast
+          ? [
+              {
+                id: "coast-line",
+                type: "line",
+                source: "coast",
+                "source-layer": "coastline",
+                minzoom: 8,
+                paint: { "line-color": p.border, "line-width": ["interpolate", ["linear"], ["zoom"], 8, 1.2, 12, 1.6], "line-opacity": zoomedOut() },
+              } satisfies LayerSpecification,
+            ]
+          : []),
       ]
     : [];
   const layers: LayerSpecification[] = [
     ...outline,
-    // No background: the land is the app's own field, painted underneath.
+    // Up close there is no background: the land is the app's own field, painted underneath.
     {
       id: "wild",
       type: "fill",
@@ -260,6 +342,7 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme, wor
       filter: ["all", ["==", ["geometry-type"], "LineString"], kind("river", "stream", "canal")],
       paint: { "line-color": p.water, "line-width": 1.5 },
     },
+    ...shore,
     {
       id: "buildings",
       type: "fill",
@@ -408,19 +491,23 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme, wor
       paint: text,
     },
     {
-      // Towns from the air and the road, where a street name means nothing.
+      // Towns from the air and the road, where a street name means nothing. From the world
+      // file: the street tiles never had a `places` layer, so no town was ever named. Each
+      // town arrives at its own zoom, the cities first.
       id: "places",
       type: "symbol",
-      source: "base",
+      source: world ? "world" : "base",
       "source-layer": "places",
-      minzoom: 5,
+      minzoom: 4,
       maxzoom: 13,
-      filter: kind("locality"),
+      filter: ["all", kind("locality"), [">=", ["zoom"], ["coalesce", ["get", "min_zoom"], 0]]],
       layout: {
         "text-field": ["get", "name"],
         "text-font": [FONT],
-        "text-size": ["interpolate", ["linear"], ["zoom"], 5, 10, 12, 13],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 4, 11, 8, 13, 12, 15],
         "text-letter-spacing": 0.04,
+        "text-max-width": 7,
+        "text-padding": 8,
         "symbol-sort-key": ["coalesce", ["get", "min_zoom"], 99],
       },
       paint: text,
@@ -438,6 +525,7 @@ export function basemapStyle(tiles: string, glyphs: string, theme: MapTheme, wor
         attribution: "© OpenStreetMap",
       },
       ...(world ? { world: { type: "vector" as const, url: world, attribution: "Natural Earth" } } : {}),
+      ...(world && coast ? { coast: { type: "vector" as const, url: coast, attribution: "© OpenStreetMap" } } : {}),
     },
     layers,
   };

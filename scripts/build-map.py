@@ -34,7 +34,8 @@ city adds that city's file. The app asks for each tile from its square's file
 Run: `pip install pyarrow pmtiles` then `python3 scripts/build-map.py`. A few minutes: it
 reads only the parquet row groups that overlap an area. A new place needs it run again,
 the same as `build-streets.py`. `--reshard` re-cuts an existing single `echoes.pmtiles`
-into squares without fetching anything.
+into squares without fetching anything. `--world` rebuilds only `world.pmtiles` and
+`coast.pmtiles`, the zoomed-out map (towns, main roads, land and the real coastline).
 """
 
 import concurrent.futures as cf
@@ -48,6 +49,7 @@ import struct
 import subprocess
 import sys
 import tempfile
+import urllib.request
 
 import pyarrow.parquet as pq
 from pmtiles.tile import Compression, TileType, zxy_to_tileid
@@ -316,11 +318,122 @@ def main():
         shutil.rmtree(work, ignore_errors=True)
 
 
+# Natural Earth's towns and roads, public domain, pinned to a release so a rebuild reads the
+# same data. Land, coastlines and borders come from the `world-atlas` and `us-atlas` packages.
+NATURAL_EARTH = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/"
+# Roads worth drawing from the air and the car: motorways and the main highways between towns.
+NE_ROADS = {"Major Highway": "highway", "Beltway": "highway", "Bypass": "highway", "Secondary Highway": "major_road"}
+# How far around the echoes the coast is drawn exactly, and the towns named: far enough
+# that the zoomed-out view of a stretch of coast (the Cape Fear coast is about 50 km) is all
+# the real shoreline, not Natural Earth's, which has no barrier islands at all.
+COAST_PAD_KM = 30.0
+COAST_MIN, COAST_MAX = 8, 12
+COAST = os.path.join(MAP_DIR, "coast.pmtiles")
+# Overture's settlements, by how far out their name is worth showing. Not hamlets: around a
+# city most of them are housing estates, and named they bury the towns.
+TOWN_ZOOM = {"city": 6, "town": 8, "village": 9}
+
+
+def natural_earth(name):
+    with urllib.request.urlopen(NATURAL_EARTH + name + ".geojson") as r:
+        return json.load(r)
+
+
+def world_inputs(work):
+    """Towns and roads for `world.pmtiles`, as GeoJSON in `work`."""
+    places = []
+    for f in natural_earth("ne_10m_populated_places_simple")["features"]:
+        p = f["properties"]
+        places.append({
+            "type": "Feature",
+            "geometry": f["geometry"],
+            "properties": {"kind": "locality", "name": p["name"], "min_zoom": round(p.get("min_zoom") or 7, 1), "population": p.get("pop_max") or 0},
+        })
+    roads = []
+    for f in natural_earth("ne_10m_roads")["features"]:
+        p = f["properties"]
+        kind = NE_ROADS.get(p.get("type"))
+        if not kind or not f["geometry"]:
+            continue
+        props = {"kind": kind, "min_zoom": round(p.get("min_zoom") or 7, 1)}
+        if p.get("label"):
+            props["ref"] = p["label"]
+        roads.append({"type": "Feature", "geometry": f["geometry"], "properties": props})
+    return places, roads
+
+
+def town(row):
+    if row.get("subtype") != "locality" or not name_of(row):
+        return None
+    c = row.get("class") or ""
+    if c not in TOWN_ZOOM:
+        return None
+    return {"kind": "locality", "name": name_of(row), "min_zoom": TOWN_ZOOM[c], "population": row.get("population") or 0}
+
+
+def coast_land(row):
+    """The land itself: Overture's coastline polygons (OpenStreetMap), islands included."""
+    return {"kind": "earth"} if row.get("subtype") == "land" and row.get("class") in ("land", "island", "islet") else None
+
+
+def coast_boxes():
+    boxes = []
+    for _name, (w, s, e, n) in streets.areas_from_library():
+        lat = (s + n) / 2
+        dlat = COAST_PAD_KM / 111.32
+        dlng = COAST_PAD_KM / (111.32 * math.cos(lat * math.pi / 180))
+        boxes.append([w - dlng, s - dlat, e + dlng, n + dlat])
+    return boxes
+
+
 def world(work):
-    """`world.pmtiles`: coastlines and borders everywhere (`map-tiles.mjs --world`)."""
+    """
+    `world.pmtiles`: land, coastlines, borders, main roads and towns everywhere
+    (`map-tiles.mjs --world`), and `coast.pmtiles`: the real shoreline around the echoes
+    (`map-tiles.mjs --coast`).
+
+    James (2026-11-10), on the zoomed-out map: "No map details and some of these are in the
+    water." The world file had only land and borders, and its land is Natural Earth's, which
+    leaves out barrier islands: every echo on Wrightsville Beach stood in the sea.
+    """
+    boxes = coast_boxes()
+    places, roads = world_inputs(work)
+    towns = fetch("divisions", "division", ["id", "bbox", "geometry", "subtype", "class", "names", "population"], town, boxes)
+    # Overture's towns where it knows them; Natural Earth's elsewhere, minus any it repeats.
+    near = lambda f: any(b[0] <= f["geometry"]["coordinates"][0] <= b[2] and b[1] <= f["geometry"]["coordinates"][1] <= b[3] for b in boxes)
+    places = [f for f in places if not near(f)] + [f for f in towns if f["geometry"]["type"] == "Point"]
+    for name, data in (("places", places), ("roads", roads)):
+        with open(os.path.join(work, f"world-{name}.geojson"), "w") as fh:
+            json.dump({"type": "FeatureCollection", "features": data}, fh, separators=(",", ":"))
+    print(f"world: {len(places)} towns, {len(roads)} roads", file=sys.stderr)
     tiles = os.path.join(work, "world")
-    subprocess.run(["node", os.path.join(HERE, "map-tiles.mjs"), "--world", tiles], check=True)
-    pack(read_dir(tiles), WORLD, 0, 7, (-180, -85, 180, 85), ["earth", "boundaries"], "Natural Earth (public domain)")
+    subprocess.run(["node", os.path.join(HERE, "map-tiles.mjs"), "--world", tiles, work], check=True)
+    pack(
+        read_dir(tiles), WORLD, 0, 7, (-180, -85, 180, 85), ["earth", "coastline", "boundaries", "roads", "places"],
+        "Natural Earth (public domain); towns near the echoes from Overture Maps",
+    )
+
+    land = fetch("base", "land", ["id", "bbox", "geometry", "subtype", "class"], coast_land, boxes)
+    land = [f for f in land if f["geometry"]["type"] in ("Polygon", "MultiPolygon")]
+    with open(os.path.join(work, "coast.geojson"), "w") as fh:
+        json.dump({"type": "FeatureCollection", "features": land}, fh, separators=(",", ":"))
+    with open(os.path.join(work, "coast-boxes.json"), "w") as fh:
+        json.dump({"boxes": boxes, "minZoom": COAST_MIN, "maxZoom": COAST_MAX}, fh)
+    print(f"coast: {len(land)} land polygons", file=sys.stderr)
+    tiles = os.path.join(work, "coast")
+    subprocess.run(["node", os.path.join(HERE, "map-tiles.mjs"), "--coast", work, tiles], check=True)
+    w, s = min(b[0] for b in boxes), min(b[1] for b in boxes)
+    e, n = max(b[2] for b in boxes), max(b[3] for b in boxes)
+    pack(read_dir(tiles), COAST, COAST_MIN, COAST_MAX, (w, s, e, n), ["earth", "coastline"], f"Overture Maps {streets.RELEASE}")
+
+
+def world_only():
+    """`--world`: the world and coast files alone, without rebuilding the streets."""
+    work = tempfile.mkdtemp(prefix="echo-world-")
+    try:
+        world(work)
+    finally:
+        shutil.rmtree(work, ignore_errors=True)
 
 
 def read_dir(tiles):
@@ -410,4 +523,9 @@ def pack(tiles, out, min_zoom, max_zoom, bounds, layers, source):
 
 
 if __name__ == "__main__":
-    reshard() if "--reshard" in sys.argv else main()
+    if "--reshard" in sys.argv:
+        reshard()
+    elif "--world" in sys.argv:
+        world_only()
+    else:
+        main()

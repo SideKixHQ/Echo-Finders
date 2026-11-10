@@ -17994,7 +17994,7 @@ export const LIBRARY: readonly Echo[] = [
     "point": {
       "at": {
         "lat": 29.715,
-        "lng": -81.237
+        "lng": -81.235
       },
       "triggerRadiusKm": 0.1,
       "place": "Fort Matanzas National Monument, riverbank by the visitor center, St. Augustine, Florida"

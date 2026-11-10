@@ -21,17 +21,29 @@ const write = (out, z, x, y, tile) => {
   fs.writeFileSync(path.join(out, String(z), String(x), `${y}.mvt`), vtpbf.fromGeojsonVt(tile, { version: 2 }));
 };
 
+const tileX = (lng, z) => Math.floor(((lng + 180) / 360) * 2 ** z);
+const tileY = (lat, z) => {
+  const r = (lat * Math.PI) / 180;
+  return Math.floor(((1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2) * 2 ** z);
+};
+const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8"));
+
 /*
- * `--world <out dir>`: the outline of everywhere, so the map is never an empty field.
+ * `--world <out dir> <work dir>`: the outline of everywhere, so the map is never an empty field.
  *
- * Coastlines, country borders and US state lines from Natural Earth (public domain, via
- * the `world-atlas` and `us-atlas` packages), at zoom 0 to 7. MapLibre draws zoom 7 larger
- * at every zoom past it, so between echo areas, and on the "where the echoes are" view of
- * the whole country, there is still land, sea and a border to read. It was Esri's grey
- * canvas that drew all of that before, and without this the zoomed-out map was blank.
+ * Land, coastlines, country borders and US state lines from Natural Earth (public domain, via
+ * the `world-atlas` and `us-atlas` packages), and from the work dir `build-map.py` fills,
+ * Natural Earth's main roads and towns, with Overture's towns around the echoes. Zoom 0 to 7:
+ * MapLibre draws zoom 7 larger at every zoom past it, so between echo areas, and on the
+ * "where the echoes are" view of the whole country, there is still land, sea, a road and a
+ * town name to read. It was Esri's grey canvas that drew all of that before.
+ *
+ * Roads and towns go into a tile only from the zoom Natural Earth gives them (`min_zoom`),
+ * less one: zoom 2 does not need every village in the world.
  */
 if (process.argv[2] === "--world") {
   const out = process.argv[3];
+  const work = process.argv[4];
   const require = createRequire(import.meta.url);
   const land = require("world-atlas/land-10m.json");
   const countries = require("world-atlas/countries-10m.json");
@@ -64,13 +76,28 @@ if (process.argv[2] === "--world") {
     if (g.type === "Polygon") g.coordinates = g.coordinates.map(unwrap);
     if (g.type === "MultiPolygon") g.coordinates = g.coordinates.map((p) => p.map(unwrap));
   }
+  // The shore as a line of its own, so it can be drawn: the edge of land that borders nothing.
+  const shore = mesh(land, land.objects.land, (a, b) => a === b);
+  shore.coordinates = shore.coordinates.map(unwrap);
+  const opts = { maxZoom: 7, indexMaxZoom: 7, buffer: 64, tolerance: 2 };
   const world = {
-    earth: geojsonvt(earth, { maxZoom: 7, indexMaxZoom: 7, buffer: 64, tolerance: 2 }),
+    earth: geojsonvt(earth, opts),
+    coastline: geojsonvt({ type: "Feature", properties: { kind: "coastline" }, geometry: shore }, opts),
     boundaries: geojsonvt(
       { type: "FeatureCollection", features: [borders(countries, "countries", "country"), borders(states, "states", "region")] },
-      { maxZoom: 7, indexMaxZoom: 7, buffer: 64, tolerance: 2 },
+      opts,
     ),
   };
+  // Roads and towns, one index per zoom, each holding what that zoom shows.
+  const byZoom = {};
+  for (const layer of ["roads", "places"]) {
+    const data = readJson(path.join(work, `world-${layer}.geojson`));
+    byZoom[layer] = [];
+    for (let z = 0; z <= 7; z++) {
+      const features = data.features.filter((f) => (f.properties.min_zoom ?? 0) < z + 1 || z === 7);
+      byZoom[layer][z] = geojsonvt({ type: "FeatureCollection", features }, { ...opts, maxZoom: z, indexMaxZoom: z });
+    }
+  }
   let n = 0;
   for (let z = 0; z <= 7; z++) {
     for (let x = 0; x < 2 ** z; x++) {
@@ -80,6 +107,10 @@ if (process.argv[2] === "--world") {
           const t = index.getTile(z, x, y);
           if (t && t.features.length) tile[layer] = t;
         }
+        for (const [layer, indexes] of Object.entries(byZoom)) {
+          const t = indexes[z].getTile(z, x, y);
+          if (t && t.features.length) tile[layer] = t;
+        }
         if (!Object.keys(tile).length) continue;
         write(out, z, x, y, tile);
         n++;
@@ -87,6 +118,71 @@ if (process.argv[2] === "--world") {
     }
   }
   console.error(`world tiles: ${n}`);
+  process.exit(0);
+}
+
+/*
+ * `--coast <work dir> <out dir>`: the real shoreline around the echoes, zoom 8 to 12.
+ *
+ * Natural Earth's land is drawn at about a kilometre, which is right for a continent and
+ * wrong for a beach: it has no barrier islands, so every echo on Wrightsville Beach stood in
+ * the sea (James, 2026-11-10: "some of these are in the water"). This is Overture's land
+ * (OpenStreetMap's coastline, islands included) around every echo area, drawn over Natural
+ * Earth's from zoom 8, where the difference starts to show.
+ *
+ * Overture cuts the land into one-degree squares, so the outline of a square is not a coast:
+ * an edge that runs straight along a whole degree is left out of `coastline`.
+ */
+if (process.argv[2] === "--coast") {
+  const [work, out] = process.argv.slice(3);
+  const { boxes, minZoom, maxZoom } = readJson(path.join(work, "coast-boxes.json"));
+  const land = readJson(path.join(work, "coast.geojson"));
+  const onGrid = (v) => Math.abs(v - Math.round(v)) < 0.002;
+  const cut = (a, b) => (a[0] === b[0] && onGrid(a[0])) || (a[1] === b[1] && onGrid(a[1]));
+  const lines = [];
+  for (const f of land.features) {
+    const polys = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates;
+    for (const ring of polys.flat()) {
+      let run = [ring[0]];
+      for (let i = 1; i < ring.length; i++) {
+        if (cut(ring[i - 1], ring[i])) {
+          if (run.length > 1) lines.push(run);
+          run = [ring[i]];
+        } else run.push(ring[i]);
+      }
+      if (run.length > 1) lines.push(run);
+    }
+  }
+  const opts = { maxZoom, indexMaxZoom: maxZoom, extent: 4096, buffer: 64, tolerance: 3 };
+  const index = {
+    earth: geojsonvt(land, opts),
+    coastline: geojsonvt(
+      { type: "Feature", properties: { kind: "coastline" }, geometry: { type: "MultiLineString", coordinates: lines } },
+      opts,
+    ),
+  };
+  let n = 0;
+  for (let z = minZoom; z <= maxZoom; z++) {
+    const seen = new Set();
+    for (const [w, s, e, nn] of boxes) {
+      for (let x = tileX(w, z); x <= tileX(e, z); x++) {
+        for (let y = tileY(nn, z); y <= tileY(s, z); y++) {
+          const key = `${x}/${y}`;
+          if (seen.has(key)) continue;
+          seen.add(key);
+          const tile = {};
+          for (const [layer, ix] of Object.entries(index)) {
+            const t = ix.getTile(z, x, y);
+            if (t && t.features.length) tile[layer] = t;
+          }
+          if (!Object.keys(tile).length) continue;
+          write(out, z, x, y, tile);
+          n++;
+        }
+      }
+    }
+  }
+  console.error(`coast tiles: ${n}`);
   process.exit(0);
 }
 
@@ -112,12 +208,6 @@ for (const layer of layers) {
     index.mainRoads = geojsonvt(data, opts);
   }
 }
-
-const tileX = (lng, z) => Math.floor(((lng + 180) / 360) * 2 ** z);
-const tileY = (lat, z) => {
-  const r = (lat * Math.PI) / 180;
-  return Math.floor(((1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2) * 2 ** z);
-};
 
 let written = 0;
 for (let z = minZoom; z <= maxZoom; z++) {

@@ -138,6 +138,11 @@ interface Props {
    * the first place, and putting a card over the bottom of the map put it straight back.
    */
   readonly reservedBottom?: number;
+  /**
+   * The echoes on screen, between the chips and the bottom chrome, each time the map comes
+   * to rest or what it draws changes. For the zoomed-out card that counts them (`AreaCard`).
+   */
+  readonly onInView?: (echoes: readonly Echo[]) => void;
   readonly onPan: (next: { x: number; y: number }) => void;
   /**
    * Counts taps on "Go to my location". Each new value puts you in the middle of the map
@@ -350,6 +355,7 @@ export function RouteMap({
   pan,
   onPan,
   locateTap = 0,
+  onInView,
   lookAt = null,
   directions = null,
   directionsStraight = false,
@@ -1069,6 +1075,20 @@ export function RouteMap({
   const librarySignature = useMemo(() => library.map((e) => e.id).join(","), [library]);
   useEffect(() => setOpenCluster(null), [librarySignature]);
 
+  /** What is on screen, for `onInView`: read when the map rests, not every frame. */
+  const reportInView = useRef(() => {});
+  reportInView.current = () => {
+    if (!onInView) return;
+    const bottom = box.h - navH - reservedBottom;
+    onInView(
+      library.filter((e) => {
+        const { x, y } = projection(e.point.at);
+        return x >= 0 && x <= box.w && y >= barH && y <= bottom;
+      }),
+    );
+  };
+  useEffect(() => reportInView.current(), [librarySignature, gl, box.w, box.h]);
+
   /**
    * The pins, grouped by what landed on top of what.
    *
@@ -1762,6 +1782,7 @@ export function RouteMap({
          */
         const rel = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, 2 ** (mapZoom - base)));
         if (Math.abs(rel - zoom) > 1e-3) onZoom(rel);
+        reportInView.current();
       }}
       onMapTap={() => {
         setOpenCluster(null);
