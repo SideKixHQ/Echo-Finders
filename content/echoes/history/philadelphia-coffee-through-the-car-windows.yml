@@ -1,0 +1,97 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Pennsport, South Philadelphia), following docs/writing-echoes.md (format v2). Military: the Civil War home front, 1861 to 1865.
+# Listening spot: Just south of Washington Avenue, east of Front Street, where Otsego Street ran and the Cooper Shop stood "some fifty yards south from Washington Avenue".
+# Position: Washington Avenue and Front Street from the Overture street map (39.933448, -75.145728), moved east and a little south toward the old line of Otsego Street, which is not on the modern map (low confidence for the building; the railroad line along Washington Avenue and the landing at its foot are certain).
+id: philadelphia-coffee-through-the-car-windows
+title: "Coffee Through the Car Windows"
+summary: "In May 1861 local women gave coffee to soldiers bound for the war. A cooper's shop near here became a kitchen that fed six hundred thousand."
+place: "Site of the Cooper Shop, Otsego Street below Washington Avenue, Pennsport, South Philadelphia, Pennsylvania"
+at: { lat: 39.93300, lng: -75.14490 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [philadelphia, south-philadelphia, pennsport, civil-war, military, cooper-shop, refreshment-saloon, women]
+teaser: "Wash kettles, bright and shining, full of coffee."
+script: |
+  Look along Washington Avenue toward the river. In the spring of eighteen sixty one, it was the road to the war.
+
+  Troops from the eastern states landed at the foot of this avenue. Then they waited here for the trains south, to Washington. They were tired, and they were hungry.
+
+  The women who lived around here saw it. Many of them did sewing work for the army arsenal. Early one morning, they started handing the soldiers coffee. Soon, a newspaper said, you could see a hundred women lined up along the railroad track at dawn, passing cups of home made coffee through the windows of the cars.
+
+  A man named William Cooper had a cooper's shop just here, on Otsego Street, where they made barrel staves for the sugar islands. He had a big fireplace. He offered it to the women. They brought out their wash kettles, bright and shining, and made coffee by the gallon. Butchers and grocers sent food. Farm women from the Neck came in with wagons of milk. Someone built a long table out of rough boards.
+
+  The Cooper Shop Volunteer Refreshment Saloon had begun. Cooper and his partner gave up nearly their whole shop for four years. By the end of the war, the kitchen had fed six hundred thousand soldiers.
+
+  Look along the avenue again, toward the water. Six hundred thousand.
+
+  It started with a few cups, handed up through a train window.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Troops from the eastern states landed at the foot of this avenue."
+    source: 1
+    quote: "Union troops, passing through the city to the Capitol of the nation, landed at the foot of Washington Avenue, on the Delaware"
+  - says: "Then they waited here for the trains south, to Washington."
+    source: 1
+    quote: "from whence it was usual to take passage on the cars of the Philadelphia, Wilmington & Baltimore Railroad Company."
+  - says: "They were tired, and they were hungry."
+    source: 1
+    quote: "hosts of soldiers, fatigued and hungry"
+  - says: "Many of them did sewing work for the army arsenal."
+    source: 1
+    quote: "The women, as a general thing, who inaugurated a movement that was soon reduced to a system, were those who did the \"Arsenal work.\""
+  - says: "Early one morning, they started handing the soldiers coffee."
+    source: 1
+    quote: "it was not long before the women furnished a limited amount of coffee to some of the troops."
+  - says: "Soon, a newspaper said, you could see a hundred women lined up along the railroad track at dawn, passing cups of home made coffee through the windows of the cars."
+    source: 1
+    quote: "dred women, — women who sew and work, hard at various pursuits to maintain an honest livelihood, — arranging themselves along the railroad track, and happy, indeed, in handing cups of home-made coffee through the windows of the cars to the soldiers"
+  - says: "A man named William Cooper had a cooper's shop just here, on Otsego Street, where they made barrel staves for the sugar islands."
+    source: 1
+    quote: "This building, for a number of years anterior to the war, was devoted to the manufacture of shooks for the sugar planters of the West Indies, by its proprietors, Messrs. Cooper & Pearce."
+  - says: "He had a big fireplace. He offered it to the women."
+    source: 1
+    quote: "Mr. William M. Cooper suggested to his partner, Mr. Pearce, and his friend, A. Simpson, that the large fire place in the Cooper Shop on Otsego Street, be tendered to the use of the women in the neighborhood"
+  - says: "They brought out their wash kettles, bright and shining, and made coffee by the gallon."
+    source: 1
+    quote: "large wash kettles, \"bright and shining,\" were brought into requisition."
+  - says: "Butchers and grocers sent food."
+    source: 1
+    quote: "Storekeepers, butchers, dealers in milk and provisions generally, cheerfully responded"
+  - says: "Farm women from the Neck came in with wagons of milk."
+    source: 1
+    quote: "came to the Avenue with wagons loaded with pure, rich milk"
+  - says: "Someone built a long table out of rough boards."
+    source: 1
+    quote: "a table of rough boards was constructed in the Cooper Shop"
+  - says: "Cooper and his partner gave up nearly their whole shop for four years."
+    source: 1
+    quote: "at last patriotically appropriated nearly their entire shop for four years"
+  - says: "By the end of the war, the kitchen had fed six hundred thousand soldiers."
+    source: 1
+    quote: "which distributed its supplies to six"
+  - says: "The Cooper Shop Volunteer Refreshment Saloon had begun."
+    source: 2
+    quote: "the Cooper Shop Refreshment Saloon on Otsego Street below Washington Avenue, under the control of William M. Cooper, were in constant operation."
+  - says: "By the end of the war, the kitchen had fed six hundred thousand soldiers."
+    source: 1
+    quote: "hundred thousand patriots and became a praise in the land"
+  - says: "Troops from the eastern states"
+    source: 1
+    quote: "a number of soldiers from the Eastern States, landed at the foot of Washington Avenue."
+sources:
+  - title: "History of the Cooper Shop Volunteer Refreshment Saloon (James Moore, 1866)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofcoopers00moor
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "History of Philadelphia, 1609 to 1884, volume 1 (J. Thomas Scharf and Thompson Westcott, 1884), the Civil War"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofphilade01scha
+    retrievedAt: "2026-11-10"
+    rights: public-domain
