@@ -3879,6 +3879,28 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .paywall-keep {
   margin: 10px 0 0; font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted);
 }
+/*
+ * Fitted to an iPhone in Safari (390x664), which the type scale overran by 114px. The
+ * words keep their sizes except the headline, which steps down to the echo title's 26px;
+ * the spacing tightens, the body takes the screen's whole width so a plan's name fits on
+ * one line, and the place name goes (the echo's title, beside it, already says where).
+ */
+@media (max-height: 760px) {
+  .paywall { padding: 12px 20px; }
+  .paywall-body { max-width: none; }
+  .paywall-count { margin-bottom: 8px; }
+  .paywall h2 { font-size: var(--fs-echo); line-height: 1.2; }
+  .paywall-next { margin-top: 8px; line-height: 1.4; }
+  .paywall-where { display: none; }
+  .paywall-plans { margin-top: 12px; }
+  .paywall-plan { padding: 9px 12px 9px 42px; }
+  .paywall-plan input { left: 14px; top: 14px; }
+  .paywall-plan-what { margin-top: 4px; line-height: 1.4; }
+  .paywall-sum { margin: 8px 0 10px; line-height: 1.4; }
+  .paywall-small { margin-top: 8px; line-height: 1.4; }
+  .paywall-later { margin-top: 10px; }
+  .paywall-keep { margin-top: 8px; line-height: 1.4; }
+}
 
 /* ── The city ───────────────────────────────────────────────────────────────────
    Density is indigo, not ember, and that is the one place the colour law bends on
@@ -4007,6 +4029,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   .pop-teaser { display: none; }
   /* One label in a 56px strip: the caption and "Then & now" overlapped at this height. */
   .pop-plate span:not(.pop-plate-cam) { display: none; }
+  /* The type scale's 26px title ran to three lines here and cut the card 24px short. */
+  .pop h3 { font-size: 22px; line-height: 1.25; }
 }
 /* The credit, on the photograph, top left: the "Then & now" badge holds the top right. */
 .pop-plate .pop-plate-credit {
