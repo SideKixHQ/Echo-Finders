@@ -57,7 +57,17 @@ export function MapSearch({ library, saved, onLook, onGo, onSave }: MapSearchPro
   }, [open]);
 
   return (
-    <div className={open ? "msearch open" : "msearch"}>
+    <div
+      className={open ? "msearch open" : "msearch"}
+      // Leaving the search with nothing typed puts the map back: an empty results layer
+      // would sit over the map's controls with nothing in it (found by audit:controls).
+      onBlur={(e) => {
+        if (query.trim()) return;
+        const to = e.relatedTarget as Node | null;
+        if (to && e.currentTarget.contains(to)) return;
+        setOpen(false);
+      }}
+    >
       <div className="fr-trace msearch-trace">
         <label className="fr-search msearch-field">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -82,14 +92,6 @@ export function MapSearch({ library, saved, onLook, onGo, onSave }: MapSearchPro
               if (!table) void loadZips().then(setTable);
             }}
             onChange={(e) => setQuery(e.target.value)}
-            // Leaving an empty box puts the map back: an empty results layer would sit over
-            // the map's controls with nothing in it (found by audit:controls tabbing past it).
-            onBlur={(e) => {
-              if (e.currentTarget.value.trim()) return;
-              const to = e.relatedTarget as Node | null;
-              if (to && e.currentTarget.closest(".msearch")?.contains(to)) return;
-              setOpen(false);
-            }}
             onKeyDown={(e) => {
               if (e.key !== "Enter") return;
               e.preventDefault();
