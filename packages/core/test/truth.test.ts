@@ -6,7 +6,7 @@ describe("the mark a listener sees", () => {
   it("is a true story only once a person has checked it", () => {
     expect(truthOf({ certainty: "documented" }, true)).toBe("true-story");
     expect(truthOf({ certainty: "documented" }, false)).toBe("unverified");
-    expect(TRUTH_LABEL.unverified.full).toBe("True story · not yet verified");
+    expect(TRUTH_LABEL.unverified.full).toBe("Not yet verified");
   });
 
   it("calls folklore a legend whatever its status", () => {

@@ -26,7 +26,7 @@ export type FeedbackKind = "broken" | "idea" | "fact";
 export const FEEDBACK_KINDS: Readonly<Record<FeedbackKind, string>> = {
   broken: "Something's not working",
   idea: "An idea",
-  fact: "A story got something wrong",
+  fact: "An echo got something wrong",
 };
 
 /**
@@ -38,7 +38,7 @@ export const FEEDBACK_KINDS: Readonly<Record<FeedbackKind, string>> = {
 export type SuggestKind = "story" | "place" | "mine";
 
 export const SUGGEST_KINDS: Readonly<Record<SuggestKind, string>> = {
-  story: "I know a story",
+  story: "I know an echo",
   place: "A place you should add",
   mine: "It happened to me here",
 };

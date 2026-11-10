@@ -30,7 +30,7 @@ export const home = {
     titleLine1: 'Stand where it happened.',
     titleAccent: 'Hear the Echo.',
     subtitle:
-      'Short, location-triggered stories, called Echoes, that reveal the people, mysteries, and moments that give a place its character, playing right where you stand.',
+      'Short, location-triggered echoes that reveal the people, mysteries, and moments that give a place its character, playing right where you stand.',
     primaryCta: 'Get the app',
     secondaryCta: 'Partner with us',
     scrollHint: 'Scroll to begin the walk',
@@ -38,7 +38,7 @@ export const home = {
   },
   how: {
     kicker: 'How it works',
-    title: 'Every corner keeps a story.',
+    title: 'Every corner keeps an echo.',
     intro: 'Echo Finders connects people with the places around them. Walk slowly, and the town starts talking.',
     steps: [
       {
@@ -53,13 +53,13 @@ export const home = {
         index: '02',
         timestamp: '0:47',
         title: 'An Echo awakens',
-        body: 'A glowing pin rises on your map as you arrive. Step inside its radius and the story surfaces, ready to play.',
+        body: 'A glowing pin rises on your map as you arrive. Step inside its radius and the echo surfaces, ready to play.',
       },
       {
         id: 'step-3',
         index: '03',
         timestamp: '1:07',
-        title: 'Hear the story',
+        title: 'Hear the echo',
         body: 'Most Echoes run about a minute. The people, events, and mysteries of this exact spot: researched, sourced, and told where they belong.',
       },
     ],
@@ -229,7 +229,7 @@ export const home = {
       { id: 'offer-collections', name: 'Destination collections', body: 'Curated Echoes that turn a stroll into an itinerary.' },
       { id: 'offer-passes', name: 'Paid destination passes', body: 'Premium collections that fund the work and keep the free map generous.' },
       { id: 'offer-distribution', name: 'Partner distribution', body: 'Your stories, delivered through the app, your channels, and your visitor centers.' },
-      { id: 'offer-sponsorships', name: 'Labeled sponsorships', body: 'Support that is always clearly labeled, and never woven into the story itself.' },
+      { id: 'offer-sponsorships', name: 'Labeled sponsorships', body: 'Support that is always clearly labeled, and never woven into the echo itself.' },
     ],
     integrity: 'The integrity promise: the stories stay honest. Sponsorship never rewrites history.',
     cta: 'Partner with us',
@@ -247,7 +247,7 @@ export const home = {
   closing: {
     title: 'Be where it happened.',
     accent: 'Hear the Echo.',
-    body: 'Echo Finders turns the places around you into stories you can hear.',
+    body: 'Echo Finders turns the places around you into echoes you can hear.',
     appCta: 'Get the app',
     partnerCta: 'Partner with us',
     coordinates: 'END OF TRAIL · 34.2257° N · 77.9447° W',
@@ -324,7 +324,7 @@ export const partner = {
         id: 'offer-sponsorships',
         detail: '04',
         title: 'Labeled sponsorships',
-        body: 'Support the map, get the credit. Sponsorships are always clearly labeled, and never woven into the story itself. The integrity promise below is non-negotiable.',
+        body: 'Support the map, get the credit. Sponsorships are always clearly labeled, and never woven into the echo itself. The integrity promise below is non-negotiable.',
       },
     ],
   },
@@ -341,7 +341,7 @@ export const partner = {
         id: 'process-2',
         index: '02',
         title: 'Record it',
-        body: 'We research each story from the record, check every fact against a source, and produce each Echo with you before it goes live.',
+        body: 'We research each echo from the record, check every fact against a source, and produce each Echo with you before it goes live.',
       },
       {
         id: 'process-3',
@@ -355,7 +355,7 @@ export const partner = {
     kicker: 'The integrity promise',
     title: 'Support that is always labeled.',
     body: [
-      'Every Echo stands on its own as honest storytelling. Sponsors make more of them possible, and get their name on the collection page, the launch materials, and the partner map. Never in the story.',
+      'Every Echo stands on its own as honest storytelling. Sponsors make more of them possible, and get their name on the collection page, the launch materials, and the partner map. Never in the echo.',
       'A sponsored collection reads exactly like an independent one: researched locally, written for the ear, and anchored to the place where it happened.',
     ],
     promise: 'The stories stay honest. Sponsorship never rewrites history.',
@@ -382,14 +382,14 @@ export const follow = {
   hero: {
     line1: 'Something happened right here.',
     line2: "It's still echoing.",
-    sub: 'Echo Finders plays the stories of a place when you stand where they happened.',
+    sub: 'Echo Finders plays the echoes of a place when you stand where they happened.',
     cta: 'Start listening free',
     hint: 'Scroll to find one',
   },
   notices: {
     kicker: 'Walk up to it',
     title: 'Get close, and the echo notices you.',
-    body: 'Every echo waits at the spot where its story happened. Come near and it turns to face you.',
+    body: 'Every echo waits at the spot where it happened. Come near and it turns to face you.',
   },
   sync: {
     kicker: 'Sync',

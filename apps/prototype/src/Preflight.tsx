@@ -214,7 +214,7 @@ export function Preflight({
             <p>
               {travel === "flight"
                 ? "Pick your airports before you board. The journey downloads, and Echo Finders runs in airplane mode the whole way."
-                : "Choose how you are getting around and press start. Stories play as you reach the places they happened."}
+                : "Choose how you are getting around and press start. Echoes play as you reach the places they happened."}
             </p>
           </>
         )}

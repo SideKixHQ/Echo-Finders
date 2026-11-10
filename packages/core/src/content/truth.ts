@@ -72,8 +72,8 @@ export function truthOf(echo: Pick<Echo, "certainty">, verified: boolean): Truth
 
 /** The words for each mark, shortest first where a screen has less room. */
 export const TRUTH_LABEL: Record<Truth, { readonly full: string; readonly short: string }> = {
-  "true-story": { full: "True story · verified", short: "True story" },
-  unverified: { full: "True story · not yet verified", short: "Not yet verified" },
+  "true-story": { full: "Verified", short: "Verified" },
+  unverified: { full: "Not yet verified", short: "Not yet verified" },
   disputed: { full: "Disputed · historians differ", short: "Disputed" },
   legend: { full: "Legend · not fact", short: "Legend" },
   memory: { full: "A memory · their account", short: "A memory" },
