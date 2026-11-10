@@ -1,0 +1,69 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Lower East Side cluster (more NYC batch).
+# Listening spot: Orchard Street at Delancey Street, Lower East Side, in the middle of what was the Orchard Street pushcart market.
+# Position: Orchard Street at Delancey Street, from the street plan (medium confidence).
+id: new-york-doughnut-shaped-rolls
+title: "Doughnut Shaped Rolls"
+summary: "In 1939 the pushcarts of Orchard Street sold hot knishes and something the guidebook called a doughnut shaped roll. The bagel."
+place: "Orchard Street at Delancey Street, Lower East Side, Manhattan"
+at: { lat: 40.71880, lng: -73.98960 }
+triggerRadiusKm: 0.08
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-york, lower-east-side, orchard-street, bagels, knishes, pushcarts, food, family]
+teaser: "What would you call a bagel, if you had never seen one?"
+script: |
+  Look up and down Orchard Street. Shops, cafes, people walking. Now fill the street with carts. Cart after cart, for blocks, above and below Delancey Street.
+
+  That was the Orchard Street pushcart market. People sold fruit and vegetables from the carts, and bread, and tools, and work clothes.
+
+  And food you could eat right there, hot.
+
+  In nineteen thirty nine, a guidebook to New York tried to describe it. It had to explain every word.
+
+  Hot knishes, it said. Mashed potatoes, or buckwheat, wrapped in dough and baked.
+
+  Hot arbes. Boiled chick peas.
+
+  And one more thing. A doughnut shaped roll.
+
+  Can you guess?
+
+  It was a bagel.
+
+  The guide also worried that the carts might not last. The city wanted to move every market indoors.
+
+  The carts are gone now. The bagels are everywhere.
+
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Cart after cart, for blocks, above and below Delancey Street."
+    source: 1
+    quote: "In the famous ORCHARD STREET PUSHCART MARKET, which stretches for several blocks above and below Delancey Street"
+  - says: "People sold fruit and vegetables from the carts, and bread, and tools, and work clothes."
+    source: 1
+    quote: "fruits, vegetables, bread, hot knishes (boiled buckwheat groats or mashed potatoes, wrapped in a skin of dough and baked), bagel (doughnut-shaped rolls), and hot arbes (boiled chick-peas) are offered for sale; also tools, hardware, work clothes"
+  - says: "Hot knishes, it said. Mashed potatoes, or buckwheat, wrapped in dough and baked."
+    source: 1
+    quote: "hot knishes (boiled buckwheat groats or mashed potatoes, wrapped in a skin of dough and baked)"
+  - says: "Hot arbes. Boiled chick peas."
+    source: 1
+    quote: "and hot arbes (boiled chick-peas)"
+  - says: "A doughnut shaped roll."
+    source: 1
+    quote: "bagel (doughnut-shaped rolls)"
+  - says: "The guide also worried that the carts might not last. The city wanted to move every market indoors."
+    source: 1
+    quote: "It may not be long before this and other open-air pushcart markets will disappear, for the Department of Markets, more interested in sanitation than in the picturesque, plans to house them all indoors."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Lower East Side"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain

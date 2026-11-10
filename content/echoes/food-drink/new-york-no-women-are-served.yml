@@ -1,0 +1,80 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, East Village cluster (more NYC batch).
+# Listening spot: Inside McSorley's Old Ale House, 15 East 7th Street, just east of Third Avenue: sawdust on the floor, wishbones on a string over the bar.
+# Position: Wikidata Q4276394 (McSorley's Old Ale House) coordinate (high confidence). Indoors; you have to go in to see the wishbones.
+id: new-york-no-women-are-served
+title: "No Women Are Served"
+summary: "McSorley's has poured ale on this block since 1854. For more than a century, half of New York was not allowed through the door."
+place: "McSorley's Old Ale House, 15 East 7th Street, East Village, Manhattan"
+at: { lat: 40.72881, lng: -73.98966 }
+triggerRadiusKm: 0.03
+inside: true
+category: food-drink
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 18
+quality: 0.8
+tags: [new-york, east-village, bar, ale, womens-history, mcsorleys]
+teaser: "Two kinds of beer. Sawdust on the floor. And for a hundred years, a rule."
+script: |
+  Look at the floor. Sawdust. Look up, over the bar. Old wishbones, hanging on a string, gathering dust for longer than anyone can tell you.
+
+  Now order. You can have light ale, or dark ale. That is the whole menu of beers.
+
+  This bar has been here since eighteen fifty four. And for most of that time, there was one more thing about it that did not change.
+
+  In nineteen thirty nine, the official guidebook to New York put it in five words. No women are served at McSorley's.
+
+  It was a men's bar. Women could not drink here. For decades, that was simply how it was.
+
+  Then, in the nineteen seventies, a city ordinance forced the bar to let women in. Marcia Kramer, who became a well known television reporter in this city, was one of the first women through the door. Her picture, in an old newspaper clipping, has hung in the window.
+
+  Look around the room now.
+
+  Half the people in here would not have been allowed to hear this.
+
+pronunciations:
+  - written: McSorley's
+    say: mik-SOR-leez
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the floor. Sawdust."
+    source: 2
+    quote: "from the wood-burning fire that is here in the winter to the sawdust on the floor"
+  - says: "Old wishbones, hanging on a string, gathering dust for longer than anyone can tell you."
+    source: 2
+    quote: "They had those wishbones on that string forever."
+  - says: "You can have light ale, or dark ale."
+    source: 2
+    quote: "\"They only serve two beers -- dark ale and light ale -- and that's all you can buy,\" said tourist Mags Hylands."
+  - says: "This bar has been here since eighteen fifty four."
+    source: 1
+    quote: "Just east of Third Avenue, at 15 East Seventh Street, is McSorley's Old Ale House, which was established in 1854."
+  - says: "No women are served at McSorley's."
+    source: 1
+    quote: "No women are served at McSorley's."
+  - says: "It was a men's bar."
+    source: 2
+    quote: "For decades, McSorley's Old Ale House was a male-only establishment, until an ordinance in the 1970s forced the bar to let women in."
+  - says: "Then, in the nineteen seventies, a city ordinance forced the bar to let women in."
+    source: 2
+    quote: "until an ordinance in the 1970s forced the bar to let women in."
+  - says: "Marcia Kramer, who became a well known television reporter in this city, was one of the first women through the door."
+    source: 2
+    quote: "In fact, CBS2 Political Reporter Marcia Kramer's picture is in a New York Daily News article posted in the window – she was one of the first women to be let in."
+  - says: "Her picture, in an old newspaper clipping, has hung in the window."
+    source: 2
+    quote: "Marcia Kramer's picture is in a New York Daily News article posted in the window"
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Astor Place"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "City Shuts Down Historic McSorley's Old Ale House Over Health Violations"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/mcsorleys-shut-down/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

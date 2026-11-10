@@ -1,0 +1,56 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Little Italy and Chinatown cluster (more NYC batch).
+# Listening spot: Mott Street at Grand Street, Little Italy, on the stretch between Canal and Broome Streets where the pushcarts stood in 1939.
+# Position: Mott Street at Grand Street, from the street plan (medium confidence).
+id: new-york-an-unsweetened-pastry
+title: "An Unsweetened Pastry"
+summary: "In 1939 the city's official guidebook had to explain pizza to its readers. It sent them to the pushcarts on this block of Mott Street."
+place: "Mott Street at Grand Street, Little Italy, Manhattan"
+at: { lat: 40.71900, lng: -73.99640 }
+triggerRadiusKm: 0.08
+category: food-drink
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-york, little-italy, mott-street, pizza, pushcarts, italian-american]
+teaser: "Imagine needing pizza explained to you."
+script: |
+  Look along Mott Street. Restaurants, bakeries, signs in red, white and green. Now try to imagine a New Yorker who had never heard of pizza.
+
+  In nineteen thirty nine, the city's official guidebook assumed you were one.
+
+  It sent its readers to the pushcarts on this street, between Canal and Broome. The last of a market that once filled the four streets west of the Bowery. The carts sold ripe and green olives, artichokes, goats' cheeses, and sweet fennel.
+
+  And something the guide had to stop and explain.
+
+  Ready to eat pizza, it said. An unsweetened pastry, filled with tomatoes and cheese, meat, or fish.
+
+  An unsweetened pastry.
+
+  Somewhere on this block, a slice is coming out of an oven right now.
+
+  Nobody here needs it explained any more.
+
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "It sent its readers to the pushcarts on this street, between Canal and Broome."
+    source: 1
+    quote: "The pushcarts on Mott Street from Canal to Broome, a block east of Mulberry Street, are relics of a thriving market that once embraced the four streets west of the Bowery."
+  - says: "The last of a market that once filled the four streets west of the Bowery."
+    source: 1
+    quote: "are relics of a thriving market that once embraced the four streets west of the Bowery."
+  - says: "The carts sold ripe and green olives, artichokes, goats' cheeses, and sweet fennel."
+    source: 1
+    quote: "They sell ripe and green olives, artichokes, goats' cheeses, finochio (sweet fennel), and ready-to-eat pizza"
+  - says: "Ready to eat pizza, it said. An unsweetened pastry, filled with tomatoes and cheese, meat, or fish."
+    source: 1
+    quote: "ready-to-eat pizza, an unsweetened pastry filled with tomatoes and cheese, meat, or fish."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Little Italy"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain

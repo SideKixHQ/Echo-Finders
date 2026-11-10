@@ -1,0 +1,87 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Chinatown and Five Points cluster (more NYC batch).
+# Listening spot: The Mulberry Street edge of Columbus Park, at the bend in Mulberry Street between Bayard and Worth Streets, Chinatown.
+# Position: Mulberry Street beside Columbus Park, from the street plan; Wikidata Q17299837 puts the park's centre 60 m west (medium confidence).
+id: new-york-where-mulberry-street-crooks
+title: "Where Mulberry Street Crooks"
+summary: "This park was once the Bend, one of the worst slums in New York. Jacob Riis wrote it down, and the city tore it down."
+place: "Columbus Park at the bend of Mulberry Street, Chinatown, Manhattan"
+at: { lat: 40.71540, lng: -73.99930 }
+triggerRadiusKm: 0.06
+category: people
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [new-york, chinatown, five-points, mulberry-bend, jacob-riis, tenements, reform]
+teaser: "The street here bends like an elbow. A writer once called it the foul core of New York's slums."
+script: |
+  Look at the way Mulberry Street bends here, beside the park. It crooks like an elbow. People play cards at the tables. Children run across the courts.
+
+  Before this park, this was the Bend.
+
+  A writer and reformer named Jacob Riis walked these alleys in the eighteen eighties. And in eighteen ninety, he put the Bend in a book called How the Other Half Lives.
+
+  Where Mulberry Street crooks like an elbow, he wrote, is the Bend, foul core of New York's slums.
+
+  He said cows had once walked home along this path. Now, he wrote, the only bells you heard announced the rag picker's cart.
+
+  He counted. On this block, in eighteen eighty eight, nearly one hundred and forty in every thousand children under five died. For the whole city, counting every age, the rate was about twenty six. In one house, there were five baby funerals in a single year.
+
+  And the city did something about it. In eighteen ninety two, the Bend was torn down. In its place they made this park.
+
+  Look at the children running across it.
+
+  This is the city answering a book.
+
+pronunciations:
+  - written: Riis
+    say: REESE
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Before this park, this was the Bend."
+    source: 2
+    quote: "The old Mulberry Bend — on Mulberry Street between Bayard and Park, two blocks west of the Bowery — one of the worst slums in the city, was torn down in 1892 and replaced by Columbus Park, after drawing the fiery criticism of the reformer, Jacob Riis."
+  - says: "And in eighteen ninety, he put the Bend in a book called How the Other Half Lives."
+    source: 1
+    quote: "is \"the Bend,\" fonl core of New York's slums."
+  - says: "Where Mulberry Street crooks like an elbow, he wrote, is the Bend, foul core of New York's slums."
+    source: 1
+    quote: "Mulberry Street crooks like an elbow within * * hail of the old depravity of the Five Points, is \"the Bend,\" fonl core of New York's slums."
+  - says: "He said cows had once walked home along this path."
+    source: 1
+    quote: "Long years ago the cows coining home from the pasture trod a path over this hill."
+  - says: "Now, he wrote, the only bells you heard announced the rag picker's cart."
+    source: 1
+    quote: "they proclaim the home-coming of the ragpicker's cart."
+  - says: "On this block, in eighteen eighty eight, nearly one hundred and forty in every thousand children under five died. For the whole city, counting every age, the rate was about twenty six."
+    source: 1
+    quote: "Deaths and Death-rates in 1888 in Baxter and Mulberry Streets, between Park and Bayard Streets."
+  - says: "On this block, in eighteen eighty eight, nearly one hundred and forty in every thousand children under five died."
+    source: 1
+    quote: "Total 4,700 944 5,650 70 132 202 14.87 139.83 35.75"
+  - says: "On this block, in eighteen eighty eight, nearly one hundred and forty in every thousand children under five died. For the whole city, counting every age, the rate was about twenty six."
+    source: 1
+    quote: "The general death-rate for the whole city that year was 26.27."
+  - says: "In one house, there were five baby funerals in a single year."
+    source: 1
+    quote: "There were five baby funerals in that house the same year."
+  - says: "In eighteen ninety two, the Bend was torn down."
+    source: 2
+    quote: "one of the worst slums in the city, was torn down in 1892 and replaced by Columbus Park"
+  - says: "In its place they made this park."
+    source: 2
+    quote: "was torn down in 1892 and replaced by Columbus Park, after drawing the fiery criticism of the reformer, Jacob Riis."
+sources:
+  - title: "How the Other Half Lives, by Jacob A. Riis (New York: Scribner, 1890)"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/howotherhalflive00riis_1
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Little Italy"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain

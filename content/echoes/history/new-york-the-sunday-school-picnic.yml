@@ -1,0 +1,104 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, East Village cluster (more NYC batch).
+# Listening spot: The General Slocum memorial in Tompkins Square Park, near the East 10th Street side: a small marble stele showing a boy and a girl looking out at a steamboat.
+# Position: Tompkins Square Park, north side near East 10th Street and Avenue A, from the park plan (medium confidence). A small monument, so the radius is tight.
+id: new-york-the-sunday-school-picnic
+title: "The Sunday School Picnic"
+summary: "On 15 June 1904 a church from this neighbourhood set off for its picnic on the General Slocum. More than a thousand never came home."
+place: "General Slocum memorial, Tompkins Square Park, near East 10th Street, East Village, Manhattan"
+at: { lat: 40.72745, lng: -73.98205 }
+triggerRadiusKm: 0.03
+category: history
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.9
+tags: [new-york, east-village, tompkins-square, general-slocum, german-american, 1904, disaster]
+teaser: "It was as fine a day for a picnic as ever was."
+script: |
+  Find the small stone monument near the Tenth Street side of the park. Carved on it, a boy and a girl stand together, looking out at a steamboat.
+
+  That steamboat never brought them back.
+
+  On the fifteenth of June, nineteen oh four, the Sunday School of St. Mark's Lutheran Church, on Sixth Street, set off on its yearly excursion. A boat ride up the East River, and a picnic on Long Island. The neighbourhood around this park was German then. Whole families came, with their lunches packed together. Nearly all of them were women and children.
+
+  It was, one writer said, as fine a day for a picnic as ever was. The band was playing on deck. The children lined up below for ice cream.
+
+  The steamboat was called the General Slocum.
+
+  Somewhere up near the bow, a fire had started. By the time the captain knew how bad it was, the flames were racing through the boat. He kept going, with a fierce tide running, for North Brother Island, a mile and a half on, before he ran her ashore. The life preservers, it was found afterwards, were rotten. Some came apart at the touch of a thumbnail.
+
+  More than a thousand people died, most of them from these few streets.
+
+  Afterwards, many of the German families could not bear to stay. They moved away, and the neighbourhood changed for ever.
+
+  Look at the two children on the stone again.
+
+  They are still watching for the boat.
+
+pronunciations:
+  - written: Slocum
+    say: SLOH-kum
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Carved on it, a boy and a girl stand together, looking out at a steamboat."
+    source: 2
+    quote: "a small MONUMENT depicting a boy and girl looking at a steamboat commemorates the tremendous loss sustained by this district"
+  - says: "On the fifteenth of June, nineteen oh four, the Sunday School of St. Mark's Lutheran Church, on Sixth Street, set off on its yearly excursion."
+    source: 2
+    quote: "in the sinking of the excursion steamer, General Slocum, on June 15, 1904."
+  - says: "On the fifteenth of June, nineteen oh four, the Sunday School of St. Mark's Lutheran Church, on Sixth Street, set off on its yearly excursion."
+    source: 1
+    quote: "members of the Sunday School of St. Mark's Lutheran Church, in Sixth street, who were on their annual excursion."
+  - says: "A boat ride up the East River, and a picnic on Long Island."
+    source: 1
+    quote: "to carry an excursion crowd of the Sunday School of St. Mark's Lutlieran Church of No. 323 Sixth street, near First avenue, to Locust Grove, Long Island"
+  - says: "The neighbourhood around this park was German then."
+    source: 2
+    quote: "came from this neighborhood, then predominantly German"
+  - says: "Whole families came, with their lunches packed together."
+    source: 1
+    quote: "Lutherans are great folk for going to family picnics in big family parties."
+  - says: "Nearly all of them were women and children."
+    source: 1
+    quote: "Nearly all of those who were burned and drowned were women and little children"
+  - says: "It was, one writer said, as fine a day for a picnic as ever was."
+    source: 1
+    quote: "It was as fine a day for a picnic as ever was."
+  - says: "The band was playing on deck."
+    source: 1
+    quote: "The band was playing, the children were frolicking, and we were all having a fine time."
+  - says: "The children lined up below for ice cream."
+    source: 1
+    quote: "children were called down to j the lower deck, where ice cream and soda water were served."
+  - says: "Somewhere up near the bow, a fire had started."
+    source: 1
+    quote: "Just back of the crew's quarters, up in the bow of the steamer under the main deck"
+  - says: "He kept going, with a fierce tide running, for North Brother Island, a mile and a half on, before he ran her ashore."
+    source: 1
+    quote: "did not drive it to the shore until he was beyond 138th street, a mile and a half from the place where the cry of \"Fire!\" first reached his ears."
+  - says: "He kept going, with a fierce tide running, for North Brother Island, a mile and a half on, before he ran her ashore."
+    source: 1
+    quote: "The tide was running up to the Sound with terrific velocity"
+  - says: "The life preservers, it was found afterwards, were rotten."
+    source: 1
+    quote: "These life preservers were covered with such flimsy, rotten stuff that they could be ripped open by a scratch with one's thumbnail."
+  - says: "More than a thousand people died, most of them from these few streets."
+    source: 2
+    quote: "Most of those who lost their lives, more than a thousand in number, came from this neighborhood"
+  - says: "Afterwards, many of the German families could not bear to stay."
+    source: 2
+    quote: "the disaster changed the character of the district. A large number of German families, overwhelmed by painful memories, moved to other parts of town."
+sources:
+  - title: "History of the General Slocum Disaster, by Charles Ogilvie (1904)"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/historyofgeneral00ogil
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Tompkins Square"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
