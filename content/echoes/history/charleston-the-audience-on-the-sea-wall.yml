@@ -1,11 +1,12 @@
 # Drafted by Claude Code (2026-10-15) for the Charleston core.
 # Listening spot: The raised High Battery promenade on East Battery, near its south end, looking out across the harbour towards Fort Sumter.
 # Position: East of the East Battery house fronts (Overture "High Battery Charleston SC", 10 E Battery) on the sea-wall walk, about 190 m east of the White Point Garden echo (medium confidence).
+# Moved to the shore 2026-11-10: was 32.77030, -79.92830, in the water on the map's shoreline (scripts/check-land.mjs); moved 11 m to the nearest land, about 5 m in from the edge.
 id: charleston-the-audience-on-the-sea-wall
 title: "The Audience on the Sea Wall"
 summary: "When the guns opened on Fort Sumter in April 1861, Charleston came down to this wall to watch."
 place: "The High Battery sea wall, East Battery, Charleston, South Carolina"
-at: { lat: 32.77030, lng: -79.92830 }
+at: { lat: 32.77035, lng: -79.92840 }
 triggerRadiusKm: 0.06
 category: history
 format: short

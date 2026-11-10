@@ -1,11 +1,12 @@
 # Drafted by Claude Code (2026-10-15) for the Charleston core.
 # Listening spot: Harbour edge of Liberty Square by the Fort Sumter ferry dock, looking out over the Cooper River toward the harbour mouth.
 # Position: Water side of Liberty Square, east of the visitor centre point in the Overture places file; NPS names the Planter's wharves but they cannot be located today, so this is the public waterfront nearest the route (low confidence).
+# Moved to the shore 2026-11-10: was 32.79050, -79.92465, in the water on the map's shoreline (scripts/check-land.mjs); moved 55 m to the nearest land, about 5 m in from the edge.
 id: charleston-the-bedsheet
 title: "The Bedsheet"
 summary: "In May 1862 an enslaved pilot steamed a Confederate ship out of this harbour with sixteen people aboard."
 place: "Liberty Square waterfront, Charleston, South Carolina"
-at: { lat: 32.79050, lng: -79.92465 }
+at: { lat: 32.79055, lng: -79.92523 }
 triggerRadiusKm: 0.05
 category: history
 format: short

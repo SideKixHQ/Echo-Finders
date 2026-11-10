@@ -1,11 +1,12 @@
 # Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
 # Listening spot: Southern end of Yacht Basin Drive by the American Fish Company, at the point where the waterway meets the river (public street).
 # Position: Overture address point for Yacht Basin Dr 150 (33.915722, -78.022873), the bar's address as commonly listed and the southern end of the basin; Our State places it on the point (medium confidence).
+# Moved to the shore 2026-11-10: was 33.91575, -78.0228, in the water on the map's shoreline (scripts/check-land.mjs); moved 11 m to the nearest land, about 5 m in from the edge.
 id: southport-a-fish-house-plays-a-fish-shack
 title: "A Fish House Plays a Fish Shack"
 summary: "The American Fish Company bar on the point played Ivan's Fish Shack in Safe Haven. Before it was a bar, it was a fish house."
 place: "American Fish Company, Yacht Basin Drive, Southport, North Carolina"
-at: { lat: 33.91575, lng: -78.0228 }
+at: { lat: 33.91585, lng: -78.02277 }
 triggerRadiusKm: 0.04
 category: inspo
 inspo:

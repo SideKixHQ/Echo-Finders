@@ -1,11 +1,12 @@
 # Drafted by Claude Code (2026-11-09) for the Savannah ghost legends.
 # Listening spot: Public waterfront along River Drive in the town of Thunderbolt, on the Wilmington River.
 # Position: Estimated from the town's riverfront on River Drive (low confidence; no address point was available for Georgia in the Overture extract, and Wikidata was rate-limited). Check on site and move to the public waterfront.
+# Moved to the shore 2026-11-10: was 32.03420, -81.04680, in the water on the map's shoreline (scripts/check-land.mjs); moved 40 m to the nearest land, about 5 m in from the edge.
 id: savannah-the-spring-that-smelled-of-the-bolt
 title: "The Spring That Smelled of the Bolt"
 summary: "Thunderbolt is said to be named for a bolt from the sky that struck here and left a spring behind."
 place: "River Drive waterfront, Thunderbolt, Georgia"
-at: { lat: 32.03420, lng: -81.04680 }
+at: { lat: 32.03448, lng: -81.04706 }
 triggerRadiusKm: 0.15
 category: legend
 format: short
