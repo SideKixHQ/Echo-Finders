@@ -2955,6 +2955,12 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  */
 .screen:has(.pop) .mapbar-row { visibility: hidden; }
 .screen:has(.pop) .toast-dock { visibility: hidden; }
+/* Except "Saved to My echoes" from the card's own Save, which says where the echo went: it
+   takes the search box's place over the card for the few seconds it shows. */
+.screen:has(.pop) .toast-dock:has(.toast-saved) { visibility: visible; top: var(--top-gap); }
+/* The card under it already names the echo, so the toast is one line, no taller than the
+   search box it covers, and clear of the card's top edge. */
+.screen:has(.pop) .toast-saved .toast-words span { display: none; }
 /* The walk planner is a sheet from the bottom, and a toast covered its title and ✕. */
 .screen:has(.pw) .toast-dock { visibility: hidden; }
 /* On a flight, Coming up sits where the toast does; the toast is the news, and it goes
