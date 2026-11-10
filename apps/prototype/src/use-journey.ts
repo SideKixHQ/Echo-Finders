@@ -33,6 +33,7 @@ import {
   type TravelMode,
 } from "@echofinders/core";
 import { SimulatedJourney } from "./simulated-journey";
+import { simulatesRoute } from "./guided-walk";
 import { EchoTone } from "./echo-tone";
 import { Narration } from "./narration";
 import { IndexedDbCollection } from "./collection-store";
@@ -158,7 +159,7 @@ export interface JourneyControls {
    * old profile would keep refusing the category that was just asked for.
    */
   readonly optIns?: readonly EchoCategory[];
-  /** Where the listener actually is. Used when there is no route to simulate. */
+  /** Where the listener actually is. Used whenever the route is not simulated (`simulatesRoute`). */
   readonly gps: LocationSource;
   /**
    * How you are travelling when there is no route.
@@ -183,8 +184,9 @@ export interface JourneyControls {
  * path to project onto. Roaming is the engine's own shape; a route is the special case
  * layered on top, and it took a UX review to notice we had built only the special case.
  *
- * @param gps  The real device location, used when roaming. A journey is simulated so it
- *             can be watched in three minutes; standing in a street cannot be.
+ * @param gps  The real device location: used when roaming and on any route you steer
+ *             yourself. A flight is simulated so it can be watched in three minutes;
+ *             standing in a street cannot be.
  */
 export function useJourney(
   route: Route | null,
@@ -207,14 +209,19 @@ export function useJourney(
   }: JourneyControls,
 ) {
   /**
-   * The simulated journey, or nothing when roaming.
+   * The simulated journey, or nothing when the phone's own position is in charge.
    *
    * Only a route can be simulated: the simulation exists to compress fifty minutes of
    * walking into three so a demo is watchable, and it does that by following a known
    * distance-time curve. Standing in a real street has no curve to follow.
+   *
+   * And only a route nobody on it steers (`simulatesRoute`). A guided walk ran on the
+   * simulation too, so starting one at St. James put you at the river and synced its echo
+   * before you had taken a step (found 2026-11-10). A walk or a road trip follows the phone
+   * now; a flight, which has no aircraft feed yet, and `?simulate` stay simulated.
    */
   const walk = useMemo(() => {
-    if (!route) return null;
+    if (!route || !simulatesRoute(route.mode, window.location.search)) return null;
     // `?speed=2` slows the journey so the dwell ring can be watched filling; `?start=0.4`
     // drops in partway along.
     const params = new URLSearchParams(window.location.search);

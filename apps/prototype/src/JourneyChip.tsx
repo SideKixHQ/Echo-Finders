@@ -23,6 +23,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { distanceKm, type LatLng, type Route } from "@echofinders/core";
 import { MODE_ICON } from "./travel";
+import { stopWaypoints } from "./guided-walk";
 
 export type Travel = "walking" | "driving" | "flight";
 
@@ -291,7 +292,8 @@ const Chev = () => (
  * an echo told there; every echo within reach of the line would be the fifty a downtown
  * walk passes, not what forty minutes plays.
  */
-const stopsOf = (r: Route) => r.waypoints.filter((w, i) => (w.dwellS ?? 0) > 0 || i === r.waypoints.length - 1).length;
+/** The same stops a guided walk walks you to (`guided-walk.ts`). */
+const stopsOf = (r: Route) => stopWaypoints(r).length;
 
 /**
  * The guided walks or road trips, as a person would want them listed.

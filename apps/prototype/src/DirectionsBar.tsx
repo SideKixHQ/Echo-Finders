@@ -23,6 +23,7 @@
 import type { Echo, WalkGuidance, LatLng } from "@echofinders/core";
 import { arrivalClock, routeGuidance, straightGuidance } from "@echofinders/core";
 import { walkDistance, walkTime, type Directions } from "./directions";
+import { startLine } from "./guided-walk";
 
 interface Props {
   readonly echo: Echo;
@@ -32,6 +33,8 @@ interface Props {
   readonly onEnd: () => void;
   /** On a planned walk: which stop this is, of how many. */
   readonly step?: { readonly at: number; readonly of: number };
+  /** The first leg of a guided walk: "Walk to the start · 6 min". */
+  readonly toStart?: boolean;
 }
 
 /**
@@ -75,7 +78,7 @@ function Arrow({ guidance }: { guidance: WalkGuidance | null }) {
   );
 }
 
-export function DirectionsBar({ echo, directions, from, onEnd, step }: Props) {
+export function DirectionsBar({ echo, directions, from, onEnd, step, toStart = false }: Props) {
   const g = guidanceFor(directions, from, echo.point.at);
   const walkable = g !== null && g.metres <= WALKABLE_M;
   return (
@@ -89,7 +92,9 @@ export function DirectionsBar({ echo, directions, from, onEnd, step }: Props) {
       </div>
 
       <section className="dir-sheet" aria-label={`Directions to ${echo.title}`}>
-        <p className="dir-sheet-big">{g ? (walkable ? walkTime(g.seconds) : walkDistance(g.metres)) : "\u00a0"}</p>
+        <p className={toStart ? "dir-sheet-big dir-sheet-start" : "dir-sheet-big"}>
+          {g ? (walkable ? (toStart ? startLine(walkTime(g.seconds)) : walkTime(g.seconds)) : walkDistance(g.metres)) : "\u00a0"}
+        </p>
         <p className="dir-sheet-meta">
           <span className="dir-sheet-how">
             {g

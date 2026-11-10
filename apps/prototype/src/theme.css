@@ -4856,6 +4856,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .dir-sheet p { margin: 0; }
 .dir-sheet-big { font-size: 28px; font-weight: 700; line-height: 1.1; color: var(--white); }
+/* A guided walk's first leg, "Walk to the start · 6 min": one line on the narrowest phone. */
+.dir-sheet-start { font-size: 22px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .dir-sheet-meta {
   display: flex; justify-content: space-between; gap: 12px;
   font-size: var(--fs-secondary); line-height: 1.3; color: var(--muted);

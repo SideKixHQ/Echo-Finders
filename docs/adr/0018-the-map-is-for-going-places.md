@@ -84,6 +84,16 @@ missing piece between them.
    - Pick several echoes, or let the app pick the best few within a time you set.
    - They are ordered into the shortest walk and drawn as one numbered route.
    - Then you go, stop to stop, with "2 of 5" as Walk mode draws it.
+   - Amended 2026-11-10. **A guided walk is walked, not simulated.** Guided walks ran on
+     `SimulatedJourney`, so starting "Old Wilmington" at St. James moved the dot to the
+     river and synced its echo before a step was taken. That breaks the rule the product
+     rests on: an echo unlocks only where it happened. Now a walk or a road trip follows the
+     phone (`guided-walk.ts`, `simulatesRoute`). Starting a guided walk draws its route and
+     numbered stops (the echo at each stop the menu counts) and starts these directions to
+     the first stop still to sync: "Walk to the start · 6 min", then stop to stop as above.
+     Nothing syncs until you are within reach. A flight stays simulated (no aircraft feed
+     yet, ADR-0002), and so does a walk with `?simulate` on the address, which is the demo.
+     More than 20 km from its first stop, the walk is shown but not walked to.
 7. **The sonar has a switch on the map:** a pin sending a ping, crossed when muted, and
    remembered.
 

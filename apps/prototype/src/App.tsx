@@ -102,10 +102,12 @@ import {
   distanceKm,
   effectiveRadiusKm,
   findEchoesAlongRoute,
+  buildRouteGeometry,
   presetFor,
   upcomingOnRoute,
   type Route,
 } from "@echofinders/core";
+import { guideFrom, guidedStops, walkedKm } from "./guided-walk";
 
 /** The walk is the richest route, so it is what the prototype opens on. */
 /**
@@ -664,10 +666,9 @@ export function App() {
    * The real GPS, asked for once, by a tap.
    *
    * Held for the life of the app rather than per session: a granted watch should survive
-   * switching journeys, and asking twice is how a permission gets refused. The walk is
-   * still driven by the simulation — see `useJourney` — so this currently proves the
-   * permission path end to end without replacing the demo's position. Swapping the source
-   * is one line in `useJourney` once there is a real route under somebody's feet.
+   * switching journeys, and asking twice is how a permission gets refused. It drives
+   * exploring and every route you walk or drive yourself; only a flight, or `?simulate`,
+   * is played back by the simulation instead (`useJourney`, `simulatesRoute`).
    */
   /**
    * Private ratings, for editorial rather than for display. See `ratings.ts`.
@@ -1135,8 +1136,41 @@ export function App() {
     return () => clearInterval(tick);
   }, [nowPlaying, simple, rate, playing, setPlayhead]);
 
-  /* Progress along a journey. Roaming has none: there is nowhere you are supposed to end up. */
-  const along = walk && walk.totalMetres > 0 ? walk.walkedMetres / walk.totalMetres : 0;
+  /**
+   * A planned walk (ADR-0018), or a guided walk being walked (`guided`, its route's id).
+   *
+   * A guided walk is the same machinery: the echo at each of its stops, in the order the
+   * route reaches them, and the beacon is the next one still to sync, so the directions take you there from
+   * wherever you really are. Its line is the route's own, which the map already draws.
+   */
+  const [plan, setPlan] = useState<{
+    readonly stops: readonly string[];
+    readonly budgetS: number;
+    readonly loop: boolean;
+    readonly active: boolean;
+    readonly at: number;
+    readonly start: LatLng;
+    readonly guided?: string;
+  } | null>(null);
+  /** The guided walk last set up, so ending it is not undone by setting it up again. */
+  const guidedFor = useRef<string | null>(null);
+  /*
+   * Progress along a journey. Roaming has none: there is nowhere you are supposed to end up.
+   *
+   * A simulated journey (a flight) knows how far it has gone. A route you walk or drive
+   * yourself is measured from where you really are (`walkedKm`): nothing until a guided
+   * walk has reached its first stop, then the nearest point on the route, never backwards.
+   */
+  const routeGeometry = useMemo(() => buildRouteGeometry(route), [route]);
+  const realWalked = useRef({ route: "", km: 0 });
+  if (realWalked.current.route !== route.id) realWalked.current = { route: route.id, km: 0 };
+  const walkBegun = route.mode !== "walking" || (plan?.guided === route.id ? plan.at > 0 : guidedFor.current === route.id);
+  if (!walk && !roaming) {
+    realWalked.current.km = walkedKm(routeGeometry, state.position?.at ?? null, route.mode, walkBegun, realWalked.current.km);
+  }
+  const walkedMetres = walk ? walk.walkedMetres : roaming ? 0 : realWalked.current.km * 1000;
+  const routeMetres = walk ? walk.totalMetres : routeGeometry.totalKm * 1000;
+  const along = routeMetres > 0 ? walkedMetres / routeMetres : 0;
   const arrived = walk !== null && along >= 0.99;
   const remainingS = route.durationS * (1 - Math.min(1, along));
   /*
@@ -1293,7 +1327,7 @@ export function App() {
    * the accuracy of the fix that drives it, so nothing on screen can be stale in a way a
    * listener could detect, and the query runs when they have actually gone somewhere.
    */
-  const walkedStep = Math.round((walk?.walkedMetres ?? 0) / 20);
+  const walkedStep = Math.round(walkedMetres / 20);
 
   const upcoming = useMemo(
     () =>
@@ -1304,11 +1338,11 @@ export function App() {
         // adding an exclusion list keeps one mechanism for "do not offer me this again" —
         // and without it the thing currently playing turns up under "coming up".
         { ...listenerFor(kids, optIns), heardEchoIds: kept.map((c) => c.echo.id) },
-        (walk?.walkedMetres ?? 0) / 1000,
+        walkedMetres / 1000,
         { limit: 2 },
       ),
-    // `walk.walkedMetres` is read off a mutable simulation, so the quantised step is what
-    // says it changed.
+    // `walkedMetres` is read off a mutable simulation (or a ref), so the quantised step is
+    // what says it changed.
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [route, onRoute, walkedStep, kept, kids],
   );
@@ -1371,14 +1405,6 @@ export function App() {
   /* The rose is drawn over the map and wants the whole screen for the dial. */
   const showingRose = onFoot && walkingView === "rose";
 
-  const [plan, setPlan] = useState<{
-    readonly stops: readonly string[];
-    readonly budgetS: number;
-    readonly loop: boolean;
-    readonly active: boolean;
-    readonly at: number;
-    readonly start: LatLng;
-  } | null>(null);
   /**
    * What "the whole thing" is while exploring, where there is no journey to fit.
    *
@@ -1760,8 +1786,48 @@ export function App() {
     setWalkingView("map");
     setPan({ x: 0, y: 0 });
   };
+  /*
+   * A guided walk starts from where you are, not from where it starts.
+   *
+   * Choosing one (from the trip menu, the journey screen, or reopening the app on one) used
+   * to hand the route to the simulation, which set off from the river whatever street you
+   * were on, and synced what it passed. Now the walk waits for your real position, makes
+   * its echoes the stops, and points you at the first one still to sync: "Walk to the
+   * start". Nothing syncs until you are really within reach of something (ADR-0018).
+   */
+  const guidedRoute = !roaming && !walk && route.mode === "walking" ? route.id : null;
+  useEffect(() => {
+    // Off the walk (another journey, exploring, a flight): its stops and beacon go with it.
+    if (plan?.guided && plan.guided !== guidedRoute) {
+      setPlan(null);
+      setBeacon(null);
+    }
+    if (guidedRoute === null) {
+      guidedFor.current = null;
+      return;
+    }
+    if (guidedFor.current === guidedRoute || !firstRunDone || restored === null) return;
+    const start = state.position?.at;
+    if (!start) return;
+    const stops = guidedStops(
+      route,
+      onRoute.map((e) => ({ id: e.id, at: e.point.at })),
+      (id) => stateOf(id) === "sealed",
+    );
+    const first = stops[0] ? LIBRARY_BY_ID.get(stops[0])?.point.at : undefined;
+    // In another city the walk is shown, not walked to; it starts once you are near it.
+    if (first && !guideFrom(start, first)) return;
+    guidedFor.current = guidedRoute;
+    if (stops.length === 0) return;
+    setPlan({ stops, budgetS: route.durationS, loop: false, active: true, at: 0, start, guided: guidedRoute });
+    setBeacon(stops[0]!);
+    setSelectedId(null);
+    setWalkingView("map");
+    setPan({ x: 0, y: 0 });
+  }, [guidedRoute, plan?.guided, firstRunDone, restored, state.position, onRoute, stateOf, route]);
   const walkLine = useWalkLine(
-    plan ? plan.start : null,
+    // A guided walk's line is its route, which the map already draws.
+    plan && !plan.guided ? plan.start : null,
     useMemo(() => (plan ? plan.stops.map((id) => LIBRARY_BY_ID.get(id)?.point.at).filter((p): p is LatLng => !!p) : []), [plan]),
     plan?.loop ?? false,
   );
@@ -2117,7 +2183,7 @@ export function App() {
                 plan={
                   plan
                     ? {
-                        line: walkLine?.line ?? null,
+                        line: plan.guided ? null : walkLine?.line ?? null,
                         stops: plan.stops.flatMap((id) => {
                           const echo = LIBRARY_BY_ID.get(id);
                           return echo ? [{ at: echo.point.at, done: stateOf(id) !== "sealed" }] : [];
@@ -2159,6 +2225,8 @@ export function App() {
                   directions={directions}
                   from={state.position?.at ?? null}
                   {...(plan?.active ? { step: { at: plan.at + 1, of: plan.stops.length } } : {})}
+                  // A guided walk's first leg is getting to it, and the sheet says so.
+                  toStart={plan?.guided !== undefined && plan.at === 0}
                   onEnd={() => {
                     setBeacon(null);
                     setPlan(null);
