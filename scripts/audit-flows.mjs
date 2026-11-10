@@ -967,7 +967,7 @@ async function nearby() {
     await p.locator('.toast-synced .toast-close').click().catch(() => {});
     await p.waitForTimeout(400);
   }
-  const badge = async () => (await p.locator('.nav').getByRole('button', { name: /My Echoes/ }).innerText()).replace(/\D/g, '');
+  const badge = async () => (await p.locator('.nav').getByRole('button', { name: /My echoes/i }).innerText()).replace(/\D/g, '');
   const foundBefore = await badge();
   await p.getByLabel(/Change your journey/).click();
   await p.waitForTimeout(400);
