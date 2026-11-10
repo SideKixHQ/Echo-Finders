@@ -1,0 +1,82 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Germantown, Market Square), following docs/writing-echoes.md (format v2).
+# Listening spot: Germantown Avenue sidewalk in front of the Deshler-Morris House (the Germantown White House), 5442 Germantown Avenue, across from Market Square.
+# Position: Wikidata's point for the Germantown White House (40.033778, -75.171778), kept on the avenue frontage; the app's street map does not reach Germantown (medium confidence).
+id: philadelphia-a-fine-airy-place
+title: "A Fine Airy Place"
+summary: "In November 1793 yellow fever emptied Philadelphia, and Washington's cabinet met in this house. A British general had lived here first."
+place: "Deshler-Morris House (Germantown White House), 5442 Germantown Avenue, Germantown, Philadelphia, Pennsylvania"
+at: { lat: 40.03370, lng: -75.17170 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.75
+tags: [philadelphia, germantown, george-washington, yellow-fever, 1793, william-howe, ona-judge, hercules]
+teaser: "The enemy general moved in first. Then the President."
+script: |
+  Look at the stone house facing the square. For two weeks in the autumn of seventeen ninety three, this was the seat of the government of the United States.
+
+  That summer, yellow fever had swept through Philadelphia, the capital. The city was under quarantine. So in November, President Washington rented this house, out here in Germantown, from a man named Isaac Franks.
+
+  The cabinet came to him. Four times they met here. Thomas Jefferson, Alexander Hamilton, Henry Knox and Edmund Randolph, around one table, while Britain and France were at war. Could a president declare the country neutral on his own? Hamilton said yes. Jefferson said that was a power for Congress. They argued it out in these rooms.
+
+  Here is the strange part. Sixteen years earlier, in the Revolution, another general had lived in this same house. Washington's enemy. The British commander, Sir William Howe.
+
+  The next summer, Washington came back, to escape the heat of the city. He called it a fine airy place. He brought Martha and the grandchildren. And he brought the people he held in slavery. Ona Judge, who sewed for Martha. Hercules, who cooked. Moll, and Austin. The family went to church across the square.
+
+  Look at the house again. Two generals on opposite sides, under one roof.
+
+  And under the same roof, a cook and a seamstress who would both escape to freedom.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "For two weeks in the autumn of seventeen ninety three, this was the seat of the government of the United States."
+    source: 1
+    quote: "From November 16 - 30, 1793, President George Washington lived in this rented home while Philadelphia remained under quarantine for yellow fever. Washington met with his cabinet here, and together, they conducted the nation's business"
+  - says: "That summer, yellow fever had swept through Philadelphia, the capital. The city was under quarantine."
+    source: 1
+    quote: "In 1793, he took refuge here from the deadly yellow fever epidemic in Philadelphia."
+  - says: "So in November, President Washington rented this house, out here in Germantown, from a man named Isaac Franks."
+    source: 1
+    quote: "Colonel Franks rented this home to President Washington in the fall of 1793 and the summer of 1794."
+  - says: "Four times they met here. Thomas Jefferson, Alexander Hamilton, Henry Knox and Edmund Randolph, around one table, while Britain and France were at war."
+    source: 1
+    quote: "Differences of opinion defined the four cabinet meetings here between November 16 and November 30, 1793. Attending were Thomas Jefferson (State), Alexander Hamilton (Treasury), Henry Knox (War) and Edmund Randolph (Attorney General). Much of the discussion centered on issues raised by the war between France and Britain."
+  - says: "Could a president declare the country neutral on his own? Hamilton said yes. Jefferson said that was a power for Congress."
+    source: 1
+    quote: "Hamilton maintained that the Constitution gave the President and the Senate the right to make treaties, including a treaty of neutrality, referring to Washington's \"Neutrality Proclamation\". Jefferson viewed the proclamation as an infringement on the Congress' power to declare war."
+  - says: "Here is the strange part. Sixteen years earlier, in the Revolution, another general had lived in this same house. Washington's enemy. The British commander, Sir William Howe."
+    source: 1
+    quote: "Ironically, Washington's nemesis, British General William Howe, occupied this home during the Revolutionary War in October 1777."
+  - says: "The next summer, Washington came back, to escape the heat of the city. He called it a fine airy place."
+    source: 1
+    quote: "The following summer, President Washington returned with his family to enjoy the expansive gardens and orchards in this"
+  - says: "He called it a fine airy place."
+    source: 1
+    quote: "\"fine airy place\""
+  - says: "He brought Martha and the grandchildren. And he brought the people he held in slavery. Ona Judge, who sewed for Martha. Hercules, who cooked. Moll, and Austin."
+    source: 1
+    quote: "The enslaved servants included Ona Judge, Austin, Moll, and Hercules. Moll attended to the grandchildren, Nelly and Young Wash. Ona Judge served as seamstress and personal servant to Martha Washington. Hercules prepared meals for the family."
+  - says: "The family went to church across the square."
+    source: 1
+    quote: "the family attended the German Reformed Church across the square from their house."
+  - says: "And under the same roof, a cook and a seamstress who would both escape to freedom."
+    source: 2
+    quote: "Hercules was famous in Philadelphia for his culinary skills. He escaped to freedom in 1797."
+  - says: "And under the same roof, a cook and a seamstress who would both escape to freedom."
+    source: 2
+    quote: "She ran away from the President’s House and escaped to freedom in 1796."
+sources:
+  - title: "Germantown White House"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-germantownwhitehouse.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Visiting the President's House Site: From Enslavement to Emancipation"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-presidentshousesite.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

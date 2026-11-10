@@ -1,0 +1,81 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Old City, the river end of Vine Street), following docs/writing-echoes.md (format v2). A children's echo; kids narrator per content/voices.yml.
+# Listening spot: Front Street at Vine, by the old Penny Pot landing at the east end of Vine Street, where Watson places the Key family's cave on the river bank.
+# Position: Front and Vine from the Overture street map (39.955457, -75.14009), set on the corner's west side, away from the expressway ramps (medium confidence: the river bank has been built over and moved east).
+id: philadelphia-the-baby-born-in-a-cave
+title: "The Baby Born in a Cave"
+summary: "A children's echo: the first Philadelphians lived in caves in the river bank, and the city's first baby was born in one near here."
+place: "Front Street at Vine Street, near the old Penny Pot landing, Old City, Philadelphia, Pennsylvania"
+at: { lat: 39.95550, lng: -75.14030 }
+triggerRadiusKm: 0.05
+category: kids
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [philadelphia, old-city, kids, caves, first-settlers, william-penn, john-key, front-street]
+teaser: "Before there were houses, there were holes in the hill."
+script: |
+  Look down toward the river. Long ago, before the highway and the buildings, there was a high, dry bank here, with pine trees, above the water.
+
+  When the first settlers came with William Penn, in sixteen eighty two, there were no houses waiting for them. So what did they do? They dug.
+
+  They dug holes into the bank, about three feet deep. They built up the walls with chunks of grass and earth. They made roofs from branches and bark and river rushes. They made chimneys out of stones and pebbles, stuck together with clay. And they moved in. Whole families, living in caves.
+
+  Down by this end of Vine Street, a family called Key dug their cave. And in it, a baby boy was born. His name was John Key. People called him the first born of Philadelphia. To mark it, William Penn gave the baby his very own piece of land on Race Street.
+
+  The grown ups in charge did not love the caves. They ordered every family living in a cave to come and see them. Not one family came. Later, the court ordered the empty caves in Front Street pulled down, and the holes filled in.
+
+  So the next time you see a hole in the ground, think about it.
+
+  It might be somebody's first home.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Long ago, before the highway and the buildings, there was a high, dry bank here, with pine trees, above the water."
+    source: 1
+    quote: "\"having a high and dry bank next to the water, with a shore ornamented with a fine view of pine trees growing upon it.\""
+  - says: "When the first settlers came with William Penn, in sixteen eighty two, there were no houses waiting for them."
+    source: 1
+    quote: "The town and borough of Philadelphia was located we know in the latter end of 1682"
+  - says: "When the first settlers came with William Penn, in sixteen eighty two, there were no houses waiting for them. So what did they do? They dug."
+    source: 1
+    quote: "they made caves in the bank of the Delaware, where the city is now laid out"
+  - says: "They dug holes into the bank, about three feet deep. They built up the walls with chunks of grass and earth."
+    source: 1
+    quote: "The caves v^^ere generally formed by digging into the ground, near the verge of the river-front bank, about three feet in depth; thus making half their chamber under ground; and the remaining half above ground was formed of sods of earth, or earth and brush combined."
+  - says: "They made roofs from branches and bark and river rushes."
+    source: 1
+    quote: "The roofs were formed of layers of limbs, or split pieces of trees, over-laid with sod or bark, river rushes"
+  - says: "They made chimneys out of stones and pebbles, stuck together with clay."
+    source: 1
+    quote: "The chimneys were of stones and river pebbles, mortared together with clay and grass, or river reeds."
+  - says: "Down by this end of Vine Street, a family called Key dug their cave."
+    source: 1
+    quote: "it was chosen, as the best location for a cave, for the parents of John Key, from which cause he came to have his birth there as the first born of Philadelphia."
+  - says: "His name was John Key. People called him the first born of Philadelphia."
+    source: 1
+    quote: "he came to have his birth there as the first born of Philadelphia."
+  - says: "To mark it, William Penn gave the baby his very own piece of land on Race Street."
+    source: 1
+    quote: "The founder, in consideration of that distinction in his colony, presented a patent in his name for a large lot in Race Street"
+  - says: "They ordered every family living in a cave to come and see them. Not one family came."
+    source: 1
+    quote: "it was ordered by the provincial executive Council, that all families living in caves should appear before the Council."
+  - says: "They ordered every family living in a cave to come and see them. Not one family came."
+    source: 1
+    quote: "No one, however, thought proper to obey the order."
+  - says: "Later, the court ordered the empty caves in Front Street pulled down, and the holes filled in."
+    source: 1
+    quote: "They also present all the empty caves that do stand in the Front Street"
+  - says: "Later, the court ordered the empty caves in Front Street pulled down, and the holes filled in."
+    source: 1
+    quote: "on v.ondition that they fill up the hole in the street."
+sources:
+  - title: "Annals of Philadelphia and Pennsylvania in the Olden Time, volume 1 (John F. Watson, 1856 edition), chapters: The Caves, and Penny Pot-house and Landing"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/annalsofphiladelphi01wats
+    retrievedAt: "2026-11-10"
+    rights: public-domain

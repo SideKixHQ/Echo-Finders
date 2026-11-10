@@ -1,0 +1,95 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Center City east), following docs/writing-echoes.md (format v2).
+# Listening spot: South side of Chestnut Street just west of Eighth, where CBS Philadelphia (2017) placed the remains of the original Horn and Hardart Automat at Eighth and Chestnut.
+# Position: Eighth and Chestnut from the Overture street map (39.949626, -75.153919), set a few metres west on the south side; the sources give the corner, not the door (medium confidence).
+id: philadelphia-the-house-that-nickels-built
+title: "The House That Nickels Built"
+summary: "In 1902 Philadelphians began feeding nickels into a wall of little glass doors near this corner. The coffee was the whole point."
+place: "Chestnut Street at Eighth Street, site of the first Horn and Hardart Automat, Center City, Philadelphia, Pennsylvania"
+at: { lat: 39.94955, lng: -75.15415 }
+triggerRadiusKm: 0.05
+category: food-drink
+format: short
+durationS: 86
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, center-city, chestnut-street, horn-and-hardart, automat, coffee, food]
+teaser: "A wall of little glass doors, and a nickel for each."
+script: |
+  Look along Chestnut Street, here near the corner of Eighth. Picture a wall of tiny glass doors, rows and rows of them, each with a plate of food behind it. A sandwich. A chicken pot pie.
+
+  You put a nickel in the slot. You turned a little knob. The door sprang open, and lunch was yours. No waiter. No menu. No tip.
+
+  It was called an Automat. Two men, Joe Horn and Frank Hardart, had seen the idea in Germany, and they opened their first one here, in nineteen hundred and two.
+
+  It caught on. At their peak, they had nearly two hundred restaurants, here and in New York, feeding hundreds of thousands of people a day. And the thing people loved most was the coffee. It cost one nickel. And if a pot had been sitting for twenty minutes, they threw it out and made a fresh one.
+
+  Then, after the Second World War, costs went up. In nineteen fifty, the company doubled the price of coffee. From five cents to ten.
+
+  People stopped coming. One New York newspaper called it a black day for coffee drinkers. The last Automat closed in nineteen ninety one.
+
+  Look along the street again. One nickel, one door, one cup.
+
+  Then two nickels, and it was over.
+pronunciations:
+  - written: "Hardart"
+    say: "HAR-dart"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look along Chestnut Street, here near the corner of Eighth."
+    source: 2
+    quote: "At 8th and Chestnut, all that remains of the Horn & Hardart Automat is the sign."
+  - says: "Picture a wall of tiny glass doors, rows and rows of them, each with a plate of food behind it."
+    source: 3
+    quote: "Customers would be presented with an array of dining choices, each visible behind a set of small, gridded glass doors."
+  - says: "You put a nickel in the slot. You turned a little knob. The door sprang open, and lunch was yours."
+    source: 3
+    quote: "Customers fed their coins into a slot next to the door, pulled a small knob, and took out their purchase."
+  - says: "You put a nickel in the slot."
+    source: 1
+    quote: "The nickel was the coin of the realm here."
+  - says: "It was called an Automat. Two men, Joe Horn and Frank Hardart, had seen the idea in Germany, and they opened their first one here, in nineteen hundred and two."
+    source: 1
+    quote: "Inspired by the Automats of Germany, Joseph Horn and Frank Hardart opened their first Automat in Philadelphia in 1902, soon expanding to New York."
+  - says: "At their peak, they had nearly two hundred restaurants, here and in New York, feeding hundreds of thousands of people a day."
+    source: 1
+    quote: "At their peak, there were nearly 200 locations serving 800,000 people a day."
+  - says: "And the thing people loved most was the coffee. It cost one nickel."
+    source: 1
+    quote: "Just one of them would buy what Horn & Hardart may have been most famous for: a steaming cup of coffee."
+  - says: "And if a pot had been sitting for twenty minutes, they threw it out and made a fresh one."
+    source: 2
+    quote: "After 20 minutes, if there was any coffee left, they dumped it and did a fresh pot,"
+  - says: "Then, after the Second World War, costs went up. In nineteen fifty, the company doubled the price of coffee. From five cents to ten."
+    source: 1
+    quote: "after World War II, rising costs forced the company to make a fateful decision: doubling the price of their coveted coffee."
+  - says: "People stopped coming."
+    source: 1
+    quote: "People stopped going to Horn & Hardart, and sales dropped enormously."
+  - says: "One New York newspaper called it a black day for coffee drinkers."
+    source: 1
+    quote: "\"It was a black day for coffee drinkers,\" said The New York Times on November 30, 1950."
+  - says: "The last Automat closed in nineteen ninety one."
+    source: 1
+    quote: "The last location shuttered in 1991."
+  - says: "A sandwich. A chicken pot pie."
+    source: 1
+    quote: "the memories are as warm as a chicken pot pie."
+sources:
+  - title: "The Automat: A look back at the future of dining"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/the-automat-a-look-back-at-the-future-of-dining/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Local Family Revives Philly Classic Horn & Hardart Coffee (2017)"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/horn-hardart-coffee/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "'The Automat': A tribute to 'the house that nickels built' (2022)"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/2022/05/12/arts/house-that-nickels-built/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

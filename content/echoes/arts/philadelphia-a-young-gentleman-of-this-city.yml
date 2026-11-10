@@ -1,0 +1,84 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Washington Square West), following docs/writing-echoes.md (format v2).
+# Listening spot: Northeast corner of Ninth and Walnut, outside the Walnut Street Theatre.
+# Position: the Overture place 'Walnut Street Theatre' (39.948386, -75.15536), on the Walnut Street frontage east of Ninth (high confidence).
+id: philadelphia-a-young-gentleman-of-this-city
+title: "A Young Gentleman of This City"
+summary: "This theatre began as a circus. In 1820 a fourteen year old made his debut here, billed only as a young gentleman of this city."
+place: "Walnut Street Theatre, Ninth and Walnut streets, Washington Square West, Philadelphia, Pennsylvania"
+at: { lat: 39.94839, lng: -75.15536 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [philadelphia, philadelphia-core, washington-square-west, walnut-street-theatre, edwin-forrest, theatre, circus]
+teaser: "The playbill did not give his name. It did not need to, for long."
+script: |
+  Look at the theatre on this corner of Ninth and Walnut. It did not start as a theatre. In eighteen oh nine, it opened as a circus, with a dome eighty feet over the ring, and a circus company that had come all the way from Spain.
+
+  A few years later they added a stage. And in November of eighteen twenty, the playbill for this house carried a curious line. Young Norval, the hero of the play, would be performed by a young gentleman of this city.
+
+  No name. Just a young gentleman. He was fourteen.
+
+  His name was Edwin Forrest. His father had been a runner for a bank. Edwin had worked in a newspaper office, and then in a cooper's shop, where, it was said, he would turn a barrel tub upside down, climb on top, and make speeches to the workmen. They thought it was hilarious.
+
+  The young gentleman was a success. He played the part again, and then a benefit night was given for him, and this time the bill used his name. Master Forrest.
+
+  He went on to become the great tragic actor of his day, the pride of Philadelphia. Six years later he was a star, playing Othello.
+
+  And in eighteen seventy one, for his very last performance in his home city, he came back to this same stage.
+
+  Look at the doors. The first real stage he ever stood on was the last one he played in his home town.
+
+  Fifty one years apart.
+pronunciations:
+  - written: "Norval"
+    say: "NOR-vul"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In eighteen oh nine, it opened as a circus, with a dome eighty feet over the ring, and a circus company that had come all the way from Spain."
+    source: 1
+    quote: "The \"New Circus,\" at the northeast corner of Walnut and Ninth Streets, was opened in 1809, by Pepin & Breschard."
+  - says: "In eighteen oh nine, it opened as a circus, with a dome eighty feet over the ring, and a circus company that had come all the way from Spain."
+    source: 1
+    quote: "The dome was estimated to be eighty feet in height over the ring. The circus company, which had come from Spain"
+  - says: "A few years later they added a stage."
+    source: 1
+    quote: "bought additional ground and enlarged the building in 1811, so as to combine stage and ring performances."
+  - says: "And in November of eighteen twenty, the playbill for this house carried a curious line. Young Norval, the hero of the play, would be performed by a young gentleman of this city."
+    source: 1
+    quote: "On the 27th of November it was announced that Young Norval would be performed \" by a young gentleman of this city.\""
+  - says: "He was fourteen."
+    source: 1
+    quote: "Edwin Forrest was then fourteen years of age."
+  - says: "His father had been a runner for a bank."
+    source: 1
+    quote: "His father, William Forrest, was runner for the old United States Bank."
+  - says: "Edwin had worked in a newspaper office, and then in a cooper's shop, where, it was said, he would turn a barrel tub upside down, climb on top, and make speeches to the workmen. They thought it was hilarious."
+    source: 1
+    quote: "office of the Aurora newspaper, which he left to go to a cooper-shop. There, it is said, he was in the habit of turning a tub upside down, mounting upon it, and making speeches to the great amusement of the workmen."
+  - says: "The young gentleman was a success. He played the part again, and then a benefit night was given for him, and this time the bill used his name. Master Forrest."
+    source: 1
+    quote: "performance met with such success that he repeated it on the 2d of December."
+  - says: "The young gentleman was a success. He played the part again, and then a benefit night was given for him, and this time the bill used his name. Master Forrest."
+    source: 1
+    quote: "a benefit was given to the debutant, which was announced to be \" for Master Forrest's benefit.\""
+  - says: "Six years later he was a star, playing Othello."
+    source: 1
+    quote: "His first appearance as a \"star\" was at the Chestnut Street Theatre July 5, 1826, as Othello."
+  - says: "And in eighteen seventy one, for his very last performance in his home city, he came back to this same stage."
+    source: 1
+    quote: "his firsf appearance on a regular stage was at the Walnut Street Theatre. In this theatre he also made his last appearance on the stage in Philadelphia in 1871."
+  - says: "He went on to become the great tragic actor of his day, the pride of Philadelphia."
+    source: 1
+    quote: "the great tragedian of whom America, and more especially Philadelphia, will ever be justly proud."
+sources:
+  - title: "History of Philadelphia, 1609 to 1884, volume 2 (J. Thomas Scharf and Thompson Westcott, 1884), chapter on the drama"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofphilade02scha
+    retrievedAt: "2026-11-10"
+    rights: public-domain
