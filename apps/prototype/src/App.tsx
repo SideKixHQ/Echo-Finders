@@ -576,7 +576,7 @@ export function App() {
     setTab("map");
     // Look at where it happened, which is almost never where the link was opened: with no
     // location yet the map would otherwise be "Where are you?" with nothing to show.
-    setLookAt({ label: echo.point.place, detail: "", at: echo.point.at });
+    setLookAt({ label: echo.point.place.split(",")[0]!.trim(), detail: "", at: echo.point.at });
     setPan({ x: 0, y: 0 });
     setSelectedId(gift);
     // Once: deliberately not re-run when settings change, or closing the card would not stick.
