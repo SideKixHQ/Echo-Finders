@@ -1,0 +1,117 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on King Street opposite number 27. It is a private home: look from the street, and do not stand in the gateway.
+# Position: King Street between Lamboll Street and South Battery from the Overture street segments in the app's Charleston street file, placed near the Lamboll end; the frontage of number 27 is not fixed (medium confidence).
+id: charleston-three-daughters-in-the-garret
+title: "Three Daughters in the Garret"
+summary: "The British made Rebecca Motte's house their headquarters and asked her to stay as hostess. Her three daughters stayed in the garret."
+place: "Miles Brewton House, 27 King Street, Charleston, South Carolina"
+at: { lat: 32.77105, lng: -79.93200 }
+triggerRadiusKm: 0.03
+category: people
+format: short
+durationS: 80
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  The house, the Brewtons' loss at sea and its use as British headquarters are in the HABS record. The garret, the apron and Rawdon's parting words come from Ravenel (1906), a family-tradition history, and are not in any record of the occupation.
+minAge: 0
+quality: 0.8
+tags: [charleston, charleston-core, south-of-broad, revolution, women, king-street]
+teaser: "He regretted that he never met her family. That was the point."
+script: |
+  Look across King Street at number twenty seven, the big brick house behind the iron fence. Two tiers of stone columns on the porch.
+
+  The man who built it hardly lived in it. Miles Brewton, his wife and their children were lost at sea in seventeen seventy five. The house went to his sister, Rebecca Motte.
+
+  Five years later, the British took Charleston, and their commanders took this house for headquarters. They did not throw her out. They asked her to stay, and to sit at the head of her own table, and they called themselves her guests. The requests of a conqueror, a Charleston historian wrote, are commands.
+
+  So she played the hostess, and they complimented her housekeeping. What the officers did not know about was upstairs. She kept her three daughters locked in the garret. Their mauma, the woman who cared for them, stood guard, and smuggled them sweets in her apron.
+
+  When Mrs. Motte was finally allowed to leave for her plantation, the British commander, Lord Rawdon, thanked her for her hospitality. His only regret, he said, was that he had never been allowed to meet her family.
+
+  Look up at the roofline. The garret is up there.
+
+  He never met them. That was the point.
+detail: >-
+  HABS (1930s) records the loss at sea of Miles Brewton and his family in 1775, the passing of the house to his sisters Mrs. Pinckney and Mrs. Motte, and its use as British headquarters under Clinton and Rawdon. The garret story is Ravenel's (1906). The house is a private residence.
+pronunciations:
+  - written: "Motte"
+    say: "MOT"
+  - written: "Rawdon"
+    say: "RAW-dun"
+  - written: "Brewton"
+    say: "BROO-ton"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look across King Street at number twenty seven, the big brick house behind the iron fence."
+    source: 1
+    quote: "Miles Brewton House"
+  - says: "Look across King Street at number twenty seven, the big brick house behind the iron fence."
+    source: 1
+    quote: "has fine iron fence, double gateway"
+  - says: "Two tiers of stone columns on the porch."
+    source: 1
+    quote: "two tiers of stone pillars are impressive"
+  - says: "The man who built it hardly lived in it."
+    source: 1
+    quote: "Mr. Brewton did not long enjoy his new home"
+  - says: "Miles Brewton, his wife and their children were lost at sea in seventeen seventy five."
+    source: 1
+    quote: "his wife and children were all lost at sea in 1775 on their way to Philadelphia"
+  - says: "The house went to his sister, Rebecca Motte."
+    source: 1
+    quote: "the property passed to his sisters, Mrs. Pinckney and Mrs. Motte."
+  - says: "The house went to his sister, Rebecca Motte."
+    source: 2
+    quote: "husband of Rebecca Motte, sister of Miles Brewton"
+  - says: "Five years later, the British took Charleston, and their commanders took this house for headquarters."
+    source: 1
+    quote: "After the capture of Charleston, this house was used as the :British headquarters and occupied by Sir Henry Clinton, afterwards Lord Rawdon."
+  - says: "They did not throw her out."
+    source: 2
+    quote: "did not eject Mrs. Motte"
+  - says: "They asked her to stay, and to sit at the head of her own table, and they called themselves her guests."
+    source: 2
+    quote: "on the contrary they “requested ” her to re-"
+  - says: "They asked her to stay, and to sit at the head of her own table, and they called themselves her guests."
+    source: 2
+    quote: "insisted upon her taking the head of the table"
+  - says: "They asked her to stay, and to sit at the head of her own table, and they called themselves her guests."
+    source: 2
+    quote: "always speaking of themselves as her “ guests.”"
+  - says: "The requests of a conqueror, a Charleston historian wrote, are commands."
+    source: 2
+    quote: "The requests of a conqueror are commands"
+  - says: "So she played the hostess, and they complimented her housekeeping."
+    source: 2
+    quote: "being often complimented on her admirable housekeep-"
+  - says: "She kept her three daughters locked in the garret."
+    source: 2
+    quote: "She, however, kept her three pretty daughters tight locked in the garret"
+  - says: "Their mauma, the woman who cared for them, stood guard, and smuggled them sweets in her apron."
+    source: 2
+    quote: "guarded by a faithful “ mauma,” who would smuggle them dainties and dessert in her apron."
+  - says: "When Mrs. Motte was finally allowed to leave for her plantation, the British commander, Lord Rawdon, thanked her for her hospitality."
+    source: 2
+    quote: "When at last Mrs. Motte obtained permission to retire to her plantation, Rawdon thanked her with scrupulous politeness for her “ hospitality,”"
+  - says: "His only regret, he said, was that he had never been allowed to meet her family."
+    source: 2
+    quote: "had not been permitted to make the acquaintance of her family!"
+  - says: "The garret is up there."
+    source: 2
+    quote: "kept her three pretty daughters tight locked in the garret"
+  - says: "He never met them."
+    source: 2
+    quote: "had not been permitted to make the acquaintance of her family!"
+sources:
+  - title: "Miles Brewton House, 27 King Street, HABS No. SC-78 (written data)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc0200/sc0262/data/sc0262data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906)"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-10"
+    rights: public-domain

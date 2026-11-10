@@ -1,0 +1,114 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: Franklin Square, at the Haitian Monument in the middle of the square.
+# Position: Franklin Square from the Montgomery, Bryan and Congress street segments in the app's Savannah street file, placed toward the centre of the square, about 50 metres from the existing First African Baptist echo (medium confidence).
+id: savannah-the-drummer-from-saint-domingue
+title: "The Drummer from Saint Domingue"
+summary: "An old Savannah legend told of a ship of Black soldiers from San Domingo coming up the river. In 1779, more than five hundred did."
+place: "Haitian Monument, Franklin Square, Savannah, Georgia"
+at: { lat: 32.08105, lng: -81.09570 }
+triggerRadiusKm: 0.03
+category: legend
+format: short
+durationS: 80
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The San Domingo ship is a legend recorded by the Black writers of the Federal Writers' Project in 1937. That a twelve year old Henri Christophe drummed at Savannah is widely told and is given here as the story told. The Chasseurs-Volontaires' part in the 1779 attack is documented.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 0
+quality: 0.8
+tags: [savannah, savannah-core, franklin-square, revolution, haiti, siege-of-savannah]
+teaser: "The legend had a ship of Black soldiers. The record has five hundred."
+script: |
+  Find the bronze soldiers of the Haitian Monument, here in Franklin Square. There is an old story in Savannah, written down in the nineteen thirties by the Black writers of a federal project. A ship of Black men from San Domingo, it said, came up this river and conquered the Spanish on the coast, long before Oglethorpe. It is a legend.
+
+  But men from Saint Domingue did come up this river. In seventeen seventy nine, the Americans set out to take Savannah back from the British, with French and Haitian allies. More than five hundred free Black men from Saint Domingue, the island we now call Haiti, joined the fight. They were one of the few Black regiments to fight on the American side in the whole Revolution. The attack failed. It was one of the bloodiest battles of the war.
+
+  And there is a story told about one of them. Among the soldiers, it is said, was a twelve year old drummer named Henri Christophe. Years later, he made himself king of Haiti. Whether the boy was really here is part of the legend.
+
+  Look at the bronze figures again.
+
+  The legend had one ship of Black soldiers coming up this river. The record has five hundred.
+detail: >-
+  The Library of Congress catalog record for Carol M. Highsmith's photograph identifies the monument and the Chasseurs-Volontaires de Saint-Domingue. The figure of 500 is the Boston Globe's; other accounts give larger numbers. Christophe's presence at Savannah is commonly told and not settled.
+pronunciations:
+  - written: "Saint Domingue"
+    say: "san doh-MANG"
+  - written: "Christophe"
+    say: "kree-STOFF"
+  - written: "San Domingo"
+    say: "san doh-MING-go"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Find the bronze soldiers of the Haitian Monument, here in Franklin Square."
+    source: 2
+    quote: "Savannah, Georgia's, Haitian Monument on Franklin Square"
+  - says: "There is an old story in Savannah, written down in the nineteen thirties by the Black writers of a federal project."
+    source: 1
+    quote: "Note: This Article was written by the Negro workers on the Writers' Project."
+  - says: "A ship of Black men from San Domingo, it said, came up this river and conquered the Spanish on the coast, long before Oglethorpe."
+    source: 1
+    quote: "there is an old legend among the early Negroes that a ship of black men from San Domingo came up the Savannah River and conquered the Spanish on the coast long before Oglethorpe planned a Colony on the new continent."
+  - says: "It is a legend."
+    source: 1
+    quote: "there is an old legend among the early Negroes"
+  - says: "But men from Saint Domingue did come up this river."
+    source: 2
+    quote: "the soldiers were recruited from present-day Haiti, then the French colony of Saint-Domingue."
+  - says: "In seventeen seventy nine, the Americans set out to take Savannah back from the British, with French and Haitian allies."
+    source: 4
+    quote: "Savannah had been under British occupation for about a year by the fall of 1779, when colonists planned an attack to retake the city with help from French and Haitian allies."
+  - says: "More than five hundred free Black men from Saint Domingue, the island we now call Haiti, joined the fight."
+    source: 3
+    quote: "the more than 500 free Black Haitians who joined American forces in Savannah, Ga., to push out the British during the Revolutionary War"
+  - says: "More than five hundred free Black men from Saint Domingue, the island we now call Haiti, joined the fight."
+    source: 2
+    quote: "recruited from present-day Haiti, then the French colony of Saint-Domingue."
+  - says: "They were one of the few Black regiments to fight on the American side in the whole Revolution."
+    source: 2
+    quote: "One of the few black regiments to fight for the American side in the Revolutionary War"
+  - says: "It was one of the bloodiest battles of the war."
+    source: 4
+    quote: "The land battle that followed was one of the bloodiest of the war."
+  - says: "And there is a story told about one of them."
+    source: 5
+    quote: "one of them was a 12-year-old drummer named Henri Christophe"
+  - says: "Among the soldiers, it is said, was a twelve year old drummer named Henri Christophe."
+    source: 5
+    quote: "one of them was a 12-year-old drummer named Henri Christophe"
+  - says: "Years later, he made himself king of Haiti."
+    source: 5
+    quote: "who went on to pronounce himself king of Haiti in the 19th century"
+  - says: "The legend had one ship of Black soldiers coming up this river."
+    source: 1
+    quote: "a ship of black men from San Domingo came up the Savannah River"
+  - says: "The record has five hundred."
+    source: 3
+    quote: "the more than 500 free Black Haitians who joined American forces in Savannah"
+sources:
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Savannah, Georgia's, Haitian Monument on Franklin Square (Carol M. Highsmith, catalog record)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/2017880481/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Every level of government must do more for Haitian migrants (2021)"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/2021/12/30/opinion/every-level-government-must-do-more-haitian-migrants/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "19 cannons believed from the Revolutionary War are found in the Savannah River (2022)"
+    publisher: "NPR"
+    url: https://www.npr.org/2022/04/29/1095643209/savannah-river-british-cannons-1779-discovery
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "How Haiti saved America (2018)"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/ideas/2018/01/12/how-haiti-saved-america/40R0xtGhR2dqD8FkFpsiJO/story.html
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

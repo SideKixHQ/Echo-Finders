@@ -1,0 +1,120 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk at Water Street and Church Street, looking along the curve of Water Street.
+# Position: Water Street and Church Street intersection from the Overture street segments in the app's Charleston street file (high confidence for the corner).
+id: charleston-the-seed-and-the-knowing
+title: "The Seed and the Knowing"
+summary: "Charleston told of seed rice from Madagascar planted by this creek. The knowledge that made rice its fortune came from West Africa."
+place: "Water Street at Church Street, Charleston, South Carolina"
+at: { lat: 32.77310, lng: -79.92905 }
+triggerRadiusKm: 0.04
+category: food-drink
+format: short
+durationS: 99
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  The Madagascar seed rice story is old Charleston tradition, told by Hewatt and doubted by later historians; McCrady (1897) concludes rice was received from Madagascar but had been planted before. The script tells it as a story.
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, rice, gullah-geechee, food]
+teaser: "Look at the bend in the street. It used to be water."
+script: |
+  Look along Water Street, at the way it bends. It bends because it used to be a creek.
+
+  Charleston has a story about where its fortune came from, and it begins in a garden on the bank of that creek. The story goes that a ship from Madagascar called here on its way to England, and a man named Landgrave Smith got a bag of seed rice from it. He shared the seed with his friends, and they planted it to see what would grow. His patch was here, in his garden by the creek.
+
+  Within about twenty five years, rice grew along every settled river in the province. In seventeen twenty four, more than seventeen thousand barrels were shipped away.
+
+  But even the old historians had doubts about the bag of seed. Rice had been planted here before. And one of the men who got seed, a doctor named Woodward, did not know for years how to clean it.
+
+  Seed is the easy part.
+
+  The people who knew how to grow rice, and harvest it, and husk it, came from West Africa, enslaved. Men and women from what was called the Rice Coast were prized by the planters, because they knew how. They brought a round, coiled basket for shaking the husks off the grain. That knowledge made Charleston one of the richest cities in the world.
+
+  Look at the bend in the street again. Under it is the creek where the seed went in.
+
+  The seed came with a story. The knowing came in chains.
+detail: >-
+  McCrady (1897) reports Hewatt's story of seed rice from a Madagascar brigantine in 1698, distributed by Landgrave Thomas Smith to Stephen Bull, Joseph Woodward and others; he notes a barrel of rice in a 1671 bill of lading and a 1691 reward for a rice husking machine. Ravenel (1906) places Smith's experimental patch in his garden on the creek that is now Water Street. Some of the 1897 and 1906 language about enslaved Africans is the racism of its day and is not repeated.
+pronunciations:
+  - written: "Landgrave"
+    say: "LAND-grave"
+  - written: "Madagascar"
+    say: "mad-uh-GAS-kar"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "It bends because it used to be a creek."
+    source: 1
+    quote: "the creek which is now Water Street"
+  - says: "Charleston has a story about where its fortune came from, and it begins in a garden on the bank of that creek."
+    source: 1
+    quote: "the former in his garden upon the creek which is now Water Street"
+  - says: "The story goes that a ship from Madagascar called here on its way to England, and a man named Landgrave Smith got a bag of seed rice from it."
+    source: 2
+    quote: "Hewatt and Ramsay credit Landgrave Smith with the introduction of rice culture."
+  - says: "The story goes that a ship from Madagascar called here on its way to England, and a man named Landgrave Smith got a bag of seed rice from it."
+    source: 2
+    quote: "a bag of seed rice, obtained by him from a brigantine from the Island of Madagascar"
+  - says: "He shared the seed with his friends, and they planted it to see what would grow."
+    source: 2
+    quote: "who agreed to make the experiment, and planted their several parcels in different soils."
+  - says: "His patch was here, in his garden by the creek."
+    source: 1
+    quote: "the former in his garden upon the creek which is now Water Street"
+  - says: "Within about twenty five years, rice grew along every settled river in the province."
+    source: 1
+    quote: "about twenty-five years before, it grew by 1720 upon every “seated” river, and formed the chief wealth of the Province."
+  - says: "In seventeen twenty four, more than seventeen thousand barrels were shipped away."
+    source: 1
+    quote: "Over seventeen thousand barrels were exported in 1724."
+  - says: "But even the old historians had doubts about the bag of seed."
+    source: 2
+    quote: "But Rivers very prop- erly declines to adopt this account"
+  - says: "Rice had been planted here before."
+    source: 2
+    quote: "but had been intro- duced and planted before."
+  - says: "And one of the men who got seed, a doctor named Woodward, did not know for years how to clean it."
+    source: 2
+    quote: "Dr. Woodward appears, however, to have been ignorant for some years how to clean it for use."
+  - says: "The people who knew how to grow rice, and harvest it, and husk it, came from West Africa, enslaved."
+    source: 4
+    quote: "West Africans enslaved and brought to the Lowcountry came equipped with deep knowledge and skills involved with rice planting, harvesting, and processing."
+  - says: "Men and women from what was called the Rice Coast were prized by the planters, because they knew how."
+    source: 3
+    quote: "Individuals from what was known as the “Rice Coast” were considered very valuable. They were skilled workers who possessed detailed knowledge of large-scale rice production."
+  - says: "They brought a round, coiled basket for shaking the husks off the grain."
+    source: 5
+    quote: "West Africans developed a special round, coiled basket that helps shake off the husks, making the rice ready for cooking and eating."
+  - says: "That knowledge made Charleston one of the richest cities in the world."
+    source: 4
+    quote: "This skilled labor provided food on Lowcountry tables and the income which made Charleston one of the richest cities in the world."
+  - says: "Under it is the creek where the seed went in."
+    source: 1
+    quote: "the creek which is now Water Street"
+sources:
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906)"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The History of South Carolina under the Proprietary Government, 1670-1719 (Edward McCrady, 1897)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofsouthca00mcc
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Gullah Geechee Culture"
+    publisher: "National Park Service, Fort Frederica National Monument"
+    url: https://home.nps.gov/fofr/learn/historyculture/gullah-geechee-culture.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "African Americans at Snee Farm"
+    publisher: "National Park Service, Charles Pinckney National Historic Site"
+    url: https://www.nps.gov/chpi/learn/historyculture/africanamericans.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Lesson 2: Gullah Geechee Foodways"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/common/uploads/teachers/lessonplans/Gullah%20Geechee%20Lesson%202.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain

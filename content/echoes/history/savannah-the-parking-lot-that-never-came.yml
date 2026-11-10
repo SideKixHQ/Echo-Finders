@@ -1,0 +1,108 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: Columbia Square, at its north east corner near State and Habersham streets, facing the Davenport House. It is a museum; the echo needs no entry.
+# Position: State and Habersham intersection from the street segments in the app's Savannah street file, nudged into Columbia Square (high confidence for the corner).
+id: savannah-the-parking-lot-that-never-came
+title: "The Parking Lot That Never Came"
+summary: "In 1955 the Davenport House was about to become a parking lot. Angry women bought it, and Savannah's preservation movement began."
+place: "Davenport House, State Street at Habersham Street, Columbia Square, Savannah, Georgia"
+at: { lat: 32.07705, lng: -81.08770 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, columbia-square, preservation, houses]
+teaser: "A plasterer signed his work in there. It is there because somebody got angry."
+script: |
+  Look at the brick house on the corner of State and Habersham, with the curved double stair up to its front door. In nineteen fifty five, it was about to be knocked down, for a parking lot.
+
+  It was built in eighteen twenty by a carpenter and builder named Davenport, and he built it for himself. He was so respected that when he died, the city gave him civic honours. Inside, a plasterer signed his work on top of an arch. George Smith, September eighteen twenty two.
+
+  A century later, the house was worn out. Federal surveyors in the nineteen thirties marked its condition, poor. A city guide a few years later did not even know who had designed it. It said, an unknown architect. The architect was the builder who lived in it.
+
+  Then, in nineteen fifty five, a group of Savannah women heard about the parking lot, and they were angry. They bought the house. That fight started Savannah's preservation movement. In time, it saved this house, and many others.
+
+  Look at the stair again, and the door at the top of it.
+
+  George Smith's name is still in there. Because somebody got angry.
+detail: >-
+  The sources disagree on the builder's first name: the 1934 HABS sheet gives "Isiah Davenport" and a date of 1800 to 1810, the 1937 guide "Isaiah Davenport" and before 1800, and the 1984 HABS addendum "Isaac Davenport" and 1820, citing deeds. The script avoids the first name. The house was bought in 1955 by the Historic Savannah Foundation and restored from 1956 to 1960. The George Smith inscription is recorded by HABS in 1984 and is inside the house; "still in there" relies on that record.
+pronunciations:
+  - written: "Davenport"
+    say: "DAV-en-port"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the brick house on the corner of State and Habersham, with the curved double stair up to its front door."
+    source: 1
+    quote: "State and Habersham Streets"
+  - says: "Look at the brick house on the corner of State and Habersham, with the curved double stair up to its front door."
+    source: 1
+    quote: "by a horshoe stair with stone steps"
+  - says: "In nineteen fifty five, it was about to be knocked down, for a parking lot."
+    source: 2
+    quote: "a group of women angry that the historic Isaiah Davenport House was about to be knocked down for a parking lot."
+  - says: "It was built in eighteen twenty by a carpenter and builder named Davenport, and he built it for himself."
+    source: 1
+    quote: "built in 1820 by its first owner"
+  - says: "It was built in eighteen twenty by a carpenter and builder named Davenport, and he built it for himself."
+    source: 1
+    quote: "carpenter and builder"
+  - says: "He was so respected that when he died, the city gave him civic honours."
+    source: 1
+    quote: "After his death, in 1827, the city accorded him civic honors."
+  - says: "Inside, a plasterer signed his work on top of an arch."
+    source: 1
+    quote: "The top of the projecting plaster molding of the arch in the east room is"
+  - says: "George Smith, September eighteen twenty two."
+    source: 1
+    quote: "inscribed \"George Smith, September 1822\""
+  - says: "Federal surveyors in the nineteen thirties marked its condition, poor."
+    source: 1
+    quote: "Present Condition: Poor"
+  - says: "A city guide a few years later did not even know who had designed it."
+    source: 3
+    quote: "Designed by an unknown architect this building of distinctive beauty"
+  - says: "It said, an unknown architect."
+    source: 3
+    quote: "Designed by an unknown architect"
+  - says: "The architect was the builder who lived in it."
+    source: 1
+    quote: "Architect: Isaac Davenport, carpenter and builder."
+  - says: "Then, in nineteen fifty five, a group of Savannah women heard about the parking lot, and they were angry."
+    source: 2
+    quote: "The city's preservation movement got a jumpstart in 1955 from a group of women angry that the historic Isaiah Davenport House was about to be knocked down for a parking lot."
+  - says: "They bought the house."
+    source: 1
+    quote: "descendants until 1955, when it was bought by the"
+  - says: "That fight started Savannah's preservation movement."
+    source: 2
+    quote: "The city's preservation movement got a jumpstart in 1955"
+  - says: "In time, it saved this house, and many others."
+    source: 2
+    quote: "Eventually that home and many others were saved."
+  - says: "George Smith's name is still in there."
+    source: 1
+    quote: "inscribed \"George Smith, September 1822\""
+  - says: "Because somebody got angry."
+    source: 2
+    quote: "a group of women angry"
+sources:
+  - title: "Davenport House, HABS No. GA-14-8 (written data 1934, and addendum 1984)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ga/ga0000/ga0031/data/ga0031data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Explore Savannah's squares, parks and homes"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna33492780
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

@@ -3220,6 +3220,103 @@ export const LIBRARY: readonly Echo[] = [
     ]
   },
   {
+    "id": "charleston-a-chest-of-medicine",
+    "title": "A Chest of Medicine",
+    "summary": "In 1718 Blackbeard trapped Charleston's harbour and took prisoners, a little boy among them. His price was a chest of medicine.",
+    "point": {
+      "at": {
+        "lat": 32.77885,
+        "lng": -79.9258
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Waterfront Park at the end of Vendue Range, Charleston, South Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 75,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out at the harbour, toward the sea. Now imagine nine ships out there, near the sandbar, and every one of them captured by the same pirate.\n\nHis name was Blackbeard. In seventeen eighteen, he sat outside this harbour, and no ship dared to sail out. Then his men rowed a boat right up to the town, with a message. It was a very strange message.\n\nBlackbeard did not ask the town for gold. He asked for medicine. A whole chest of it. And if the town said no, he said, the prisoners would lose their heads.\n\nOne of those prisoners was a little boy named William Wragg, on a ship bound for England with his father. While the grown ups in town argued, the pirates' boat got stuck on the way back, and the medicine was late. Blackbeard grew impatient, and the prisoners were terrified.\n\nAt last, the chest arrived. Blackbeard took everything the prisoners had, even most of their clothes, and sent them ashore almost naked. But he let them go.\n\nLook at the harbour again. Out there, a little boy and his father got to come home.\n\nEven pirates get sick.\n",
+    "teaser": "Nine ships, one pirate, and a very strange demand.",
+    "detail": "Ravenel (1906) gives the demand as medicines on pain of the heads of Samuel Wragg, his little son and other prisoners; Johnson's General History (1724) names the demand as a chest of medicines, valued at between 300 and 400 pounds, and says the prisoners and ships were released; Ravenel says they were sent on shore almost naked.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "pronunciations": [
+      {
+        "written": "Wragg",
+        "say": "RAG"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "waterfront",
+      "pirates",
+      "blackbeard",
+      "kids"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/charleston-a-chest-of-medicine",
+        "durationS": 75
+      }
+    ]
+  },
+  {
+    "id": "charleston-a-message-for-hell",
+    "title": "A Message for Hell",
+    "summary": "The legend says Lavinia Fisher was hanged for murder and cursed the crowd. The papers of February 1820 tell it differently.",
+    "point": {
+      "at": {
+        "lat": 32.77877,
+        "lng": -79.9363
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "The Old Jail, Magazine Street at Logan Street, Charleston, South Carolina"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 12,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along Magazine Street to the Old Jail. The story told about one woman who was held in there is among the darkest in Charleston. It is a legend, and it goes like this.\n\nLavinia Fisher and her husband John kept a tavern on the road out of town, the Six Mile House. Travellers who stopped there were robbed, or were never seen again. Skeletons, the story says, were found in the cellar. And on the gallows, she screamed at the crowd. If you have a message you want to send to hell, give it to me. I'll carry it.\n\nThat is the legend. Here is what the Charleston paper printed the next day.\n\nJohn and Lavinia Fisher were executed yesterday, at two o'clock, for highway robbery. Highway robbery. That morning, John wrote a last letter from the jail, still saying he was innocent. At the gallows, he asked the crowd to forgive him for any wrong he had done them. Lavinia, the paper said, was unwilling to die.\n\nA little past two o'clock, the husband and wife embraced each other on the platform, for the last time. He was twenty nine. She was twenty eight. The crowd, the paper said, was immense.\n\nLook at the jail again. They waited in there, through the winter of eighteen twenty.\n\nThe legend kept a curse. The paper kept an embrace.\n",
+    "teaser": "The legend kept a curse. The paper kept something else.",
+    "detail": "The Charleston report of 19 February 1820, reprinted in the New Hampshire Gazette (14 March) and the Alexandria Gazette (26 February), gives the crime as highway robbery and prints John Fisher's last letter, dated Charleston Gaol, 18 February 1820. The Six Mile House story, the skeletons and the gallows speech are as printed in the 1941 Federal Writers' Project guide, which says they were convicted of murder. Neither 1820 report contains the gallows speech.",
+    "certaintyNote": "The murders, the skeletons in the cellar and the words on the gallows are legend, as printed in the 1941 state guide. The execution itself, on 18 February 1820 for highway robbery, is reported in Charleston news reprinted by the Alexandria Gazette and the New Hampshire Gazette. The National Park Service page says the Fishers were convicted of robbery and murder; the 1820 reports name only highway robbery.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "pronunciations": [
+      {
+        "written": "Lavinia",
+        "say": "luh-VIN-ee-uh"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "legend",
+      "old-jail"
+    ],
+    "remoteness": 0.08,
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "speech/charleston-a-message-for-hell",
+        "durationS": 88
+      }
+    ]
+  },
+  {
     "id": "charleston-a-strangers-initials",
     "title": "A Stranger's Initials",
     "summary": "The first house on Rainbow Row to be rescued wears an iron balcony with someone else's initials in it.",
@@ -3719,6 +3816,63 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "charleston-old-joe-cole",
+    "title": "Old Joe Cole, Good Old Soul",
+    "summary": "In 1910 a writer set down Charleston's street cries. The star was a fish seller on lower King Street who made sure he was written down.",
+    "point": {
+      "at": {
+        "lat": 32.7752,
+        "lng": -79.93262
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Lower King Street, between Tradd and Broad, Charleston, South Carolina"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand still on King Street a moment, and listen. In nineteen ten, a Charleston writer named Harriette Leiding set out to write down the songs this city's streets were full of. The cries of the people selling fish and shrimp and vegetables, from door to door.\n\nOne voice, she wrote, outshone all the others.\n\nHis name was Joe Cole. He did a thriving business on lower King Street, under a sign that read Joe Cole and Wife. He walked with a limp, and he used his walking stick like a conductor's baton. And he sang out his fish.\n\nOld Joe Cole, good old soul. Porgy in the summertime, and whiting in the spring. Don't be late, I'm waiting at the gate. Don't be mad, here's your shad.\n\nWhen she asked him to sing it into her megaphone, so she could set it down properly, a crowd gathered round. Joe sent them all away. She had asked him to sing for her book, he told them, and nobody else. And sure enough, she wrote him down.\n\nUp the street came Little John, singing his peas for Hoppin' John, and his cabbage, and his yellow turnips. Even the chimney sweeps sang, from the tops of the chimneys. Thirty years later, a state guide was still hearing the shrimp man in the morning. Ro ro swimp, come and get your ro ro swimp.\n\nListen to King Street now.\n\nIn a book at the Library of Congress, Joe Cole is still waiting at the gate.\n",
+    "teaser": "Porgy in the summertime, and whiting in the spring.",
+    "detail": "Leiding's 1910 book renders the vendors' speech in dialect spelling and uses the demeaning language of its time, including slurs in the passage about Joe Cole; the script quotes only his cry and paraphrases the rest. The surviving copy, digitised by the Internet Archive, is the Library of Congress copy. The 1941 state guide records the shrimp cry \"Ro-ro swimp\".",
+    "pronunciations": [
+      {
+        "written": "Leiding",
+        "say": "LIE-ding"
+      },
+      {
+        "written": "porgy",
+        "say": "POR-gee"
+      },
+      {
+        "written": "swimp",
+        "say": "SWIMP"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "food",
+      "street-cries",
+      "gullah-geechee",
+      "king-street"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-old-joe-cole",
+        "durationS": 97
+      }
+    ]
+  },
+  {
     "id": "charleston-sermons-on-the-tide",
     "title": "Sermons on the Tide",
     "summary": "The French Huguenots came to church by boat, and in 1693 they won a promise that worship would not fight the tide.",
@@ -3901,7 +4055,7 @@ export const LIBRARY: readonly Echo[] = [
       "civil-war",
       "fort-sumter"
     ],
-    "remoteness": 0.14
+    "remoteness": 0
   },
   {
     "id": "charleston-the-bedsheet",
@@ -3943,6 +4097,62 @@ export const LIBRARY: readonly Echo[] = [
       "waterfront"
     ],
     "remoteness": 0.61
+  },
+  {
+    "id": "charleston-the-butlers-soup",
+    "title": "The Butler's Soup",
+    "summary": "A president slept here in 1909. The cook Charleston remembers is the mayor's butler, William Deas, and his she crab soup.",
+    "point": {
+      "at": {
+        "lat": 32.77648,
+        "lng": -79.93185
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "116 Broad Street, Charleston, South Carolina"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across Broad Street at number one hundred and sixteen. A president slept in that house. But the person Charleston remembers from it was working in the kitchen.\n\nIn November, nineteen oh nine, President Taft came to Charleston. Crowds cheered him from the station all the way to that door, the home of the mayor, Robert Goodwyn Rhett.\n\nThe Rhetts had a butler named William Deas. Mrs. Rhett's own cookbook called him one of the great cooks of the world. His soup was made with she crabs. The crab man in the street charged ten cents a dozen extra for the ones with eggs. The eggs were picked out and stirred in with the meat, and that is what made it different.\n\nWhen that cookbook was being written, they sat William down first, and a stenographer took down every word he said. The book prints the menu from the president's visit, too. The first course was crab soup. Just crab soup.\n\nYears later, the chef José Andrés put she crab soup on his menu in Washington, and gave the credit to one man. Not the president. William Deas.\n\nLook at the door again.\n\nThe president had crab soup. The rest of us got William's.\n",
+    "teaser": "A president upstairs, and the man Charleston remembers in the kitchen.",
+    "detail": "The popular story that she crab soup was invented for President Taft is not supported by the sources used here: the 1930 cookbook prints the menu of Taft's visit with plain \"Crab Soup\", and credits the she crab soup to William Deas. Taft spent the night of 5 November 1909 at Mayor Rhett's house; the mayor's address was 116 Broad Street in 1908.",
+    "pronunciations": [
+      {
+        "written": "Deas",
+        "say": "DEEZ"
+      },
+      {
+        "written": "Rhett",
+        "say": "RET"
+      },
+      {
+        "written": "Goodwyn",
+        "say": "GOOD-win"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "food",
+      "she-crab-soup",
+      "broad-street"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-butlers-soup",
+        "durationS": 78
+      }
+    ]
   },
   {
     "id": "charleston-the-castle-on-the-square",
@@ -4360,6 +4570,55 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "charleston-the-presidents-face-in-their-hair",
+    "title": "The President's Face in Their Hair",
+    "summary": "In 1791 Charleston rented a Church Street house for George Washington. The ladies at his ball wore ribbons painted with his face.",
+    "point": {
+      "at": {
+        "lat": 32.775,
+        "lng": -79.92905
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Heyward Washington House, Church Street at Tradd Street, Charleston, South Carolina"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 60,
+    "minAge": 0,
+    "quality": 0.7,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up Church Street for the Heyward Washington House, a few doors from this corner. In seventeen ninety one, the city rented that house for one very important guest, and filled it with furniture.\n\nThe guest was President George Washington. He went to breakfasts, and dinners, and balls, and wrote them all down in his diary. At one concert, he counted four hundred ladies. He wrote that he had never seen anything like it.\n\nAnd at the ball, the ladies had his face in their hair. White ribbons, painted with his picture, and the words, God bless our President. Imagine walking into a room and seeing your own face looking back at you, from all over the dance floor.\n\nLook at the house again. By nineteen oh six, it had become a bakery. Then, in nineteen thirty, it opened as the city's very first house museum.\n\nFor a while, you could buy bread where the President slept.\n",
+    "teaser": "Imagine walking into a ball and seeing your own face everywhere.",
+    "detail": "Ravenel (1906) quotes Washington's journal for the concert of 400 ladies and describes the painted bandeaux worn at the concert and ball given at the City Hall, and records that the house was then a bakery. The Charleston Museum acquired the house in 1929 and opened it in 1930.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "pronunciations": [
+      {
+        "written": "Heyward",
+        "say": "HAY-ward"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "washington",
+      "kids",
+      "church-street"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/charleston-the-presidents-face-in-their-hair",
+        "durationS": 60
+      }
+    ]
+  },
+  {
     "id": "charleston-the-sailor-on-the-steeple",
     "title": "The Sailor on the Steeple",
     "summary": "In the fire of 1796 an enslaved man climbed the burning steeple and saved St. Philip's. A poem later credited the wrong church.",
@@ -4400,6 +4659,59 @@ export const LIBRARY: readonly Echo[] = [
       "slavery"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "charleston-the-seed-and-the-knowing",
+    "title": "The Seed and the Knowing",
+    "summary": "Charleston told of seed rice from Madagascar planted by this creek. The knowledge that made rice its fortune came from West Africa.",
+    "point": {
+      "at": {
+        "lat": 32.7731,
+        "lng": -79.92905
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Water Street at Church Street, Charleston, South Carolina"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 99,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along Water Street, at the way it bends. It bends because it used to be a creek.\n\nCharleston has a story about where its fortune came from, and it begins in a garden on the bank of that creek. The story goes that a ship from Madagascar called here on its way to England, and a man named Landgrave Smith got a bag of seed rice from it. He shared the seed with his friends, and they planted it to see what would grow. His patch was here, in his garden by the creek.\n\nWithin about twenty five years, rice grew along every settled river in the province. In seventeen twenty four, more than seventeen thousand barrels were shipped away.\n\nBut even the old historians had doubts about the bag of seed. Rice had been planted here before. And one of the men who got seed, a doctor named Woodward, did not know for years how to clean it.\n\nSeed is the easy part.\n\nThe people who knew how to grow rice, and harvest it, and husk it, came from West Africa, enslaved. Men and women from what was called the Rice Coast were prized by the planters, because they knew how. They brought a round, coiled basket for shaking the husks off the grain. That knowledge made Charleston one of the richest cities in the world.\n\nLook at the bend in the street again. Under it is the creek where the seed went in.\n\nThe seed came with a story. The knowing came in chains.\n",
+    "teaser": "Look at the bend in the street. It used to be water.",
+    "detail": "McCrady (1897) reports Hewatt's story of seed rice from a Madagascar brigantine in 1698, distributed by Landgrave Thomas Smith to Stephen Bull, Joseph Woodward and others; he notes a barrel of rice in a 1671 bill of lading and a 1691 reward for a rice husking machine. Ravenel (1906) places Smith's experimental patch in his garden on the creek that is now Water Street. Some of the 1897 and 1906 language about enslaved Africans is the racism of its day and is not repeated.",
+    "certaintyNote": "The Madagascar seed rice story is old Charleston tradition, told by Hewatt and doubted by later historians; McCrady (1897) concludes rice was received from Madagascar but had been planted before. The script tells it as a story.",
+    "pronunciations": [
+      {
+        "written": "Landgrave",
+        "say": "LAND-grave"
+      },
+      {
+        "written": "Madagascar",
+        "say": "mad-uh-GAS-kar"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "rice",
+      "gullah-geechee",
+      "food"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-the-seed-and-the-knowing",
+        "durationS": 99
+      }
+    ]
   },
   {
     "id": "charleston-the-street-named-for-a-meeting-house",
@@ -4575,6 +4887,115 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.09
   },
   {
+    "id": "charleston-three-daughters-in-the-garret",
+    "title": "Three Daughters in the Garret",
+    "summary": "The British made Rebecca Motte's house their headquarters and asked her to stay as hostess. Her three daughters stayed in the garret.",
+    "point": {
+      "at": {
+        "lat": 32.77105,
+        "lng": -79.932
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Miles Brewton House, 27 King Street, Charleston, South Carolina"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 80,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across King Street at number twenty seven, the big brick house behind the iron fence. Two tiers of stone columns on the porch.\n\nThe man who built it hardly lived in it. Miles Brewton, his wife and their children were lost at sea in seventeen seventy five. The house went to his sister, Rebecca Motte.\n\nFive years later, the British took Charleston, and their commanders took this house for headquarters. They did not throw her out. They asked her to stay, and to sit at the head of her own table, and they called themselves her guests. The requests of a conqueror, a Charleston historian wrote, are commands.\n\nSo she played the hostess, and they complimented her housekeeping. What the officers did not know about was upstairs. She kept her three daughters locked in the garret. Their mauma, the woman who cared for them, stood guard, and smuggled them sweets in her apron.\n\nWhen Mrs. Motte was finally allowed to leave for her plantation, the British commander, Lord Rawdon, thanked her for her hospitality. His only regret, he said, was that he had never been allowed to meet her family.\n\nLook up at the roofline. The garret is up there.\n\nHe never met them. That was the point.\n",
+    "teaser": "He regretted that he never met her family. That was the point.",
+    "detail": "HABS (1930s) records the loss at sea of Miles Brewton and his family in 1775, the passing of the house to his sisters Mrs. Pinckney and Mrs. Motte, and its use as British headquarters under Clinton and Rawdon. The garret story is Ravenel's (1906). The house is a private residence.",
+    "certaintyNote": "The house, the Brewtons' loss at sea and its use as British headquarters are in the HABS record. The garret, the apron and Rawdon's parting words come from Ravenel (1906), a family-tradition history, and are not in any record of the occupation.",
+    "pronunciations": [
+      {
+        "written": "Motte",
+        "say": "MOT"
+      },
+      {
+        "written": "Rawdon",
+        "say": "RAW-dun"
+      },
+      {
+        "written": "Brewton",
+        "say": "BROO-ton"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "revolution",
+      "women",
+      "king-street"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-three-daughters-in-the-garret",
+        "durationS": 80
+      }
+    ]
+  },
+  {
+    "id": "charleston-two-balls-in-the-wall",
+    "title": "Two Balls in the Wall",
+    "summary": "In St. Michael's Alley, a doctor and a loyalist fought a duel across a table upstairs. The proof was dug out of the plaster.",
+    "point": {
+      "at": {
+        "lat": 32.77588,
+        "lng": -79.9303
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "St. Michael's Alley, off Meeting Street, Charleston, South Carolina"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 12,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Walk a few steps into St. Michael's Alley, the narrow lane beside the church. Before the Revolution, there was a fashionable tavern in this alley.\n\nOne August day, two men in there were arguing politics. Doctor John Haley, an Irishman on the side of the colonists. And a New Yorker named Delancey, loyal to the King. Delancey called the doctor a liar.\n\nHaley challenged him on the spot. Pistols, upstairs, just the two of them, no seconds. Delancey agreed, and took one of Haley's own pistols. They faced each other across a table, and fired at the same moment. Delancey was killed.\n\nWith no witnesses, the law called it murder, and Haley's friends hid him until the trial. One night, in the dark, a clothesline caught him by the throat, and he took it as a sign that he would hang.\n\nAt the trial, the best young lawyers in Charleston defended him, Thomas Heyward, the Pinckneys and the Rutledges. And the proof came out of the plaster. Delancey's pistol had been loaded with two balls. Both were dug out of the wall behind where Haley had stood, one on each side of his head. Haley was acquitted.\n\nLook up at the windows above the alley, and choose a window.\n\nTwo balls in the wall. And a head between them.\n",
+    "teaser": "Two shots, one on each side of a living man's head.",
+    "detail": "Joseph Johnson's Traditions and Reminiscences (1851) dates the quarrel to 16 August 1771 at a house of entertainment in St. Michael's Alley; Ravenel (1906) suggests it was probably the South Carolina Coffee House. Which building it was is not known.",
+    "pronunciations": [
+      {
+        "written": "Delancey",
+        "say": "deh-LAN-see"
+      },
+      {
+        "written": "Haley",
+        "say": "HAY-lee"
+      }
+    ],
+    "tags": [
+      "charleston",
+      "charleston-core",
+      "south-of-broad",
+      "revolution",
+      "duel",
+      "st-michaels-alley"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/charleston-two-balls-in-the-wall",
+        "durationS": 84
+      }
+    ]
+  },
+  {
     "id": "charleston-what-the-survey-wrote-down",
     "title": "What the Survey Wrote Down",
     "summary": "Behind a governor's town house, the whole working yard survived, and federal surveyors measured every part of it.",
@@ -4666,7 +5087,7 @@ export const LIBRARY: readonly Echo[] = [
       "pirates",
       "colonial"
     ],
-    "remoteness": 0.12
+    "remoteness": 0
   },
   {
     "id": "charleston-whose-arms-on-the-roof",
@@ -4717,7 +5138,7 @@ export const LIBRARY: readonly Echo[] = [
       "battery",
       "houses"
     ],
-    "remoteness": 0.13
+    "remoteness": 0
   },
   {
     "id": "charlotte-a-city-of-tents",
@@ -15498,7 +15919,55 @@ export const LIBRARY: readonly Echo[] = [
       "religion",
       "slavery"
     ],
-    "remoteness": 0.14
+    "remoteness": 0
+  },
+  {
+    "id": "savannah-morning-honey",
+    "title": "Morning, Honey",
+    "summary": "Ellis Square was the City Market until 1954, when it became a parking garage. The square came back in 2010, with the cars underneath.",
+    "point": {
+      "at": {
+        "lat": 32.0805,
+        "lng": -81.0934
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Ellis Square, Barnard Street side, Savannah, Georgia"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look around Ellis Square. For more than fifty years, there was no square here at all. There was a parking garage.\n\nBefore the garage, this was the City Market, where farmers sold their crops straight to the people. A city guide in the nineteen thirties remembered how it felt to come here as a child. The horse car did not just bring you to the market. It went right inside, so you could almost shop from the window.\n\nA woman named Pink sat beside her stall, shelling butterbeans into a big flat basket. She always had a Morning, Honey, and a wide smile for her favourites. There were benne seed and coconut patties, and paper thin wafers, cooked in old irons with long handles. Silver fish beside pink shrimp, and chickens and ducks and turkeys, squawking.\n\nThen, in nineteen fifty four, the market came down, for parking. The loss was what made Savannah start fighting for its old buildings. Half a century later, the city knocked the garage down, and gave the square back. The cars are still here. They are underneath you.\n\nStand still for a moment.\n\nSomewhere under your feet is a parking space where Pink used to say, Morning, Honey.\n",
+    "teaser": "There is a parking garage under your feet. It used to be the other way round.",
+    "detail": "The 1937 guide describes the City Market as still in use and remembers the horse car and the woman called Pink, in the language of its day. Where exactly her stall stood is not recorded; the closing line places it in the square, not at a spot.",
+    "pronunciations": [
+      {
+        "written": "benne",
+        "say": "BEN-ee"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "ellis-square",
+      "food",
+      "market",
+      "preservation"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-morning-honey",
+        "durationS": 78
+      }
+    ]
   },
   {
     "id": "savannah-old-harbor-light",
@@ -15539,7 +16008,7 @@ export const LIBRARY: readonly Echo[] = [
       "lighthouses",
       "shipping"
     ],
-    "remoteness": 0.23
+    "remoteness": 0.06
   },
   {
     "id": "savannah-pirates-house",
@@ -15588,7 +16057,7 @@ export const LIBRARY: readonly Echo[] = [
       "literature",
       "ghosts"
     ],
-    "remoteness": 0.27
+    "remoteness": 0
   },
   {
     "id": "savannah-raleigh-on-gas-works-hill",
@@ -15630,7 +16099,7 @@ export const LIBRARY: readonly Echo[] = [
       "colonial",
       "legend"
     ],
-    "remoteness": 0.28
+    "remoteness": 0.04
   },
   {
     "id": "savannah-steamship-savannah",
@@ -15731,6 +16200,107 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "savannah-the-artillerys-other-weapon",
+    "title": "The Artillery's Other Weapon",
+    "summary": "The Chatham Artillery's brass guns are said to be Washington's gift. Its punch was so feared the papers warned President Taft.",
+    "point": {
+      "at": {
+        "lat": 32.0807,
+        "lng": -81.0896
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "The Washington Guns, Bay Street, Savannah, Georgia"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 94,
+    "minAge": 12,
+    "quality": 0.7,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the two small brass cannon called the Washington Guns. They belong to the Chatham Artillery, and the company has always said George Washington gave them, soon after his visit to Savannah. By the company's account, they had been British guns, surrendered by Lord Cornwallis at Yorktown. When the Confederates left Savannah, the company buried them under its armory, and dug them up again afterwards.\n\nBut the Chatham Artillery is famous for another weapon. You drink it.\n\nIn November, nineteen oh nine, President Taft was on his way to Savannah, and the newspapers warned him. He would be urged to have a bout with the famous Chatham Artillery Punch. It took a week to brew. Presidents, statesmen, governors and naval officers had all attacked it, the paper said, and all of them had been beaten. Admiral Dewey had chased a salad with it, and blamed his troubles on the salad.\n\nThe recipe was a secret. There was always one man in the Chatham Artillery who carried it in his head. That year, the keeper of the secret was a lieutenant named Papy.\n\nThree years later, the governor of Georgia came back from a Savannah banquet and complained that the punch had not been served. He suspected, he said, that it had been put on the shelf with the other high explosives. Savannah took it as a slander.\n\nLook at the guns again.\n\nTwo of its weapons came from Yorktown. The third came by the glass.\n",
+    "teaser": "Two of its weapons came from Yorktown. The third came by the glass.",
+    "detail": "The 1898 Age-Herald gives the company's account of the guns (it misprints the year of Washington's visit as 1771); the 1885 Savannah Morning News also says they were presented by Washington; the 1937 guide calls it tradition. The 1909 report names the keeper of the recipe as Lieut. Mariana (probably Mariano) Papy. Where the guns are displayed today is not confirmed by these sources.",
+    "certaintyNote": "That Washington gave the guns is the company's tradition, called tradition by the 1937 guide and stated as fact by the 1885 and 1898 papers. The punch's victims are newspaper lore of 1909 and are told as what the paper said.",
+    "pronunciations": [
+      {
+        "written": "Papy",
+        "say": "PAP-ee"
+      },
+      {
+        "written": "Cornwallis",
+        "say": "korn-WALL-is"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "bay-street",
+      "food",
+      "drink",
+      "chatham-artillery",
+      "washington"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-artillerys-other-weapon",
+        "durationS": 94
+      }
+    ]
+  },
+  {
+    "id": "savannah-the-check-from-hollywood",
+    "title": "The Check from Hollywood",
+    "summary": "Johnny Mercer's father lost his business and spent his life repaying it. In 1954 the son sent a check and paid every creditor.",
+    "point": {
+      "at": {
+        "lat": 32.0806,
+        "lng": -81.09255
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Ellis Square, Savannah, Georgia"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look for Johnny Mercer, in bronze. Savannah put him up for his hundredth birthday. He was born here, and he wrote the words to more than a thousand songs. Moon River. Skylark. That Old Black Magic.\n\nAs a boy in Savannah, he learned to speak Geechee, and he would sit outside Black churches to listen to the singing.\n\nIn nineteen twenty seven, when he was about to go to college, his father's real estate business lost more than a million dollars. His father, George Mercer, could have declared bankruptcy. Instead he put his own savings into the debt, and spent the rest of his life paying people back. When he died in nineteen forty, he still owed more than a quarter of a million dollars.\n\nJohnny went to New York instead of college. Some weeks, he had nothing to eat but oatmeal.\n\nHe made it. He helped found Capitol Records. In nineteen fifty four, he sold his share for nearly two million dollars. The first thing he did was send a check to a Savannah bank, and pay back every one of his father's creditors.\n\nThat same year, nineteen fifty four, this square was torn down for a parking garage.\n\nSavannah lost a square that year. The Mercers got their name back.\n",
+    "teaser": "Savannah lost a square that year. The Mercers got their name back.",
+    "detail": "The Library of Congress essay is by Philip Furia, Mercer's biographer, for the National Recording Registry. NPR reported the statue's unveiling on 18 November 2009; its placement in Ellis Square is not confirmed by these sources.",
+    "pronunciations": [
+      {
+        "written": "Geechee",
+        "say": "GEE-chee"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "ellis-square",
+      "music",
+      "johnny-mercer"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-check-from-hollywood",
+        "durationS": 82
+      }
+    ]
+  },
+  {
     "id": "savannah-the-chimney-with-privies-in-its-base",
     "title": "The Chimney with Privies in Its Base",
     "summary": "A railroad smokestack that was also a water tank and a row of workers' privies.",
@@ -15768,7 +16338,7 @@ export const LIBRARY: readonly Echo[] = [
       "railroads",
       "engineering"
     ],
-    "remoteness": 0.35
+    "remoteness": 0.32
   },
   {
     "id": "savannah-the-church-copied-from-itself",
@@ -15810,6 +16380,64 @@ export const LIBRARY: readonly Echo[] = [
       "fire"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "savannah-the-drummer-from-saint-domingue",
+    "title": "The Drummer from Saint Domingue",
+    "summary": "An old Savannah legend told of a ship of Black soldiers from San Domingo coming up the river. In 1779, more than five hundred did.",
+    "point": {
+      "at": {
+        "lat": 32.08105,
+        "lng": -81.0957
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Haitian Monument, Franklin Square, Savannah, Georgia"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 80,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the bronze soldiers of the Haitian Monument, here in Franklin Square. There is an old story in Savannah, written down in the nineteen thirties by the Black writers of a federal project. A ship of Black men from San Domingo, it said, came up this river and conquered the Spanish on the coast, long before Oglethorpe. It is a legend.\n\nBut men from Saint Domingue did come up this river. In seventeen seventy nine, the Americans set out to take Savannah back from the British, with French and Haitian allies. More than five hundred free Black men from Saint Domingue, the island we now call Haiti, joined the fight. They were one of the few Black regiments to fight on the American side in the whole Revolution. The attack failed. It was one of the bloodiest battles of the war.\n\nAnd there is a story told about one of them. Among the soldiers, it is said, was a twelve year old drummer named Henri Christophe. Years later, he made himself king of Haiti. Whether the boy was really here is part of the legend.\n\nLook at the bronze figures again.\n\nThe legend had one ship of Black soldiers coming up this river. The record has five hundred.\n",
+    "teaser": "The legend had a ship of Black soldiers. The record has five hundred.",
+    "detail": "The Library of Congress catalog record for Carol M. Highsmith's photograph identifies the monument and the Chasseurs-Volontaires de Saint-Domingue. The figure of 500 is the Boston Globe's; other accounts give larger numbers. Christophe's presence at Savannah is commonly told and not settled.",
+    "certaintyNote": "The San Domingo ship is a legend recorded by the Black writers of the Federal Writers' Project in 1937. That a twelve year old Henri Christophe drummed at Savannah is widely told and is given here as the story told. The Chasseurs-Volontaires' part in the 1779 attack is documented.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "pronunciations": [
+      {
+        "written": "Saint Domingue",
+        "say": "san doh-MANG"
+      },
+      {
+        "written": "Christophe",
+        "say": "kree-STOFF"
+      },
+      {
+        "written": "San Domingo",
+        "say": "san doh-MING-go"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "franklin-square",
+      "revolution",
+      "haiti",
+      "siege-of-savannah"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "speech/savannah-the-drummer-from-saint-domingue",
+        "durationS": 80
+      }
+    ]
   },
   {
     "id": "savannah-the-fountain-that-kept-getting-more-parisian",
@@ -16223,6 +16851,53 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "savannah-the-parking-lot-that-never-came",
+    "title": "The Parking Lot That Never Came",
+    "summary": "In 1955 the Davenport House was about to become a parking lot. Angry women bought it, and Savannah's preservation movement began.",
+    "point": {
+      "at": {
+        "lat": 32.07705,
+        "lng": -81.0877
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Davenport House, State Street at Habersham Street, Columbia Square, Savannah, Georgia"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 75,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the brick house on the corner of State and Habersham, with the curved double stair up to its front door. In nineteen fifty five, it was about to be knocked down, for a parking lot.\n\nIt was built in eighteen twenty by a carpenter and builder named Davenport, and he built it for himself. He was so respected that when he died, the city gave him civic honours. Inside, a plasterer signed his work on top of an arch. George Smith, September eighteen twenty two.\n\nA century later, the house was worn out. Federal surveyors in the nineteen thirties marked its condition, poor. A city guide a few years later did not even know who had designed it. It said, an unknown architect. The architect was the builder who lived in it.\n\nThen, in nineteen fifty five, a group of Savannah women heard about the parking lot, and they were angry. They bought the house. That fight started Savannah's preservation movement. In time, it saved this house, and many others.\n\nLook at the stair again, and the door at the top of it.\n\nGeorge Smith's name is still in there. Because somebody got angry.\n",
+    "teaser": "A plasterer signed his work in there. It is there because somebody got angry.",
+    "detail": "The sources disagree on the builder's first name: the 1934 HABS sheet gives \"Isiah Davenport\" and a date of 1800 to 1810, the 1937 guide \"Isaiah Davenport\" and before 1800, and the 1984 HABS addendum \"Isaac Davenport\" and 1820, citing deeds. The script avoids the first name. The house was bought in 1955 by the Historic Savannah Foundation and restored from 1956 to 1960. The George Smith inscription is recorded by HABS in 1984 and is inside the house; \"still in there\" relies on that record.",
+    "pronunciations": [
+      {
+        "written": "Davenport",
+        "say": "DAV-en-port"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "columbia-square",
+      "preservation",
+      "houses"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-the-parking-lot-that-never-came",
+        "durationS": 75
+      }
+    ]
+  },
+  {
     "id": "savannah-the-sergeant-who-would-not-be-an-officer",
     "title": "The Sergeant Who Would Not Be an Officer",
     "summary": "William Jasper turned down a commission twice. Savannah made him fifteen feet tall in bronze.",
@@ -16268,6 +16943,55 @@ export const LIBRARY: readonly Echo[] = [
       "monuments"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "savannah-the-silkworm-house",
+    "title": "The Silkworm House",
+    "summary": "Georgia was meant to be a silk colony. The Filature on Reynolds Square was built for cocoons and ended up a ballroom for Washington.",
+    "point": {
+      "at": {
+        "lat": 32.07935,
+        "lng": -81.0886
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Reynolds Square, east side, Savannah, Georgia"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across Reynolds Square, to the buildings on its east side. Long ago, a plain wooden building stood over there, and upstairs it was full of silkworm cocoons.\n\nGeorgia was supposed to be a silk colony. Around the town grew acres and acres of mulberry trees, because mulberry leaves are what silkworms eat. There was even a law about it. To be elected, a man had to have one hundred mulberry trees planted and fenced on his land. Later, someone in his family had to know how to reel silk, too.\n\nEarly on, the colonists sent their silk to England. Queen Caroline had it woven into a dress, and wore it at court. A queen, in a dress made by Savannah worms.\n\nIn seventeen fifty one, the colony built the Filature right here, a building just for silk. One year, more than a thousand pounds of raw silk came through its doors. The next year it burned down, with more than seven thousand pounds of cocoons inside.\n\nThey built it again. But the silk never really worked. So the silk house became something else. A dance hall. When George Washington came to Savannah, they held a ball for him in the Filature, and he was introduced to ninety six ladies.\n\nLook at the east side of the square again.\n\nIt was built for silkworms. It ended up full of dancers.\n",
+    "teaser": "A house full of worms, and then a President on the dance floor.",
+    "detail": "Wilson (1889) places the Filature on the east side of Reynolds Square, where Cassell's Row later stood, describes the 1751 building and the 1758 fire, and prints the account of the 1791 ball for Washington. The 1937 Federal Writers' Project guide gives the 1735 silk for Queen Caroline's dress. Why silkworms need mulberry leaves is general knowledge, not from these sources.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "pronunciations": [
+      {
+        "written": "Filature",
+        "say": "FIL-uh-chur"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "reynolds-square",
+      "colonial",
+      "silk",
+      "kids"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/savannah-the-silkworm-house",
+        "durationS": 88
+      }
+    ]
   },
   {
     "id": "savannah-the-spring-that-smelled-of-the-bolt",
@@ -16494,6 +17218,58 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "savannah-to-have-land",
+    "title": "To Have Land",
+    "summary": "In January 1865 Sherman asked Savannah's Black ministers, upstairs in this house, what freedom needed. Garrison Frazier said: land.",
+    "point": {
+      "at": {
+        "lat": 32.0739,
+        "lng": -81.09505
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Green Meldrim House, Macon Street at Whitaker Street, Savannah, Georgia"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 10,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the second floor of the Green Meldrim House. In the winter of eighteen sixty five, it was General Sherman's headquarters. And in a high ceilinged room on a corner of that floor, he and the Secretary of War met with a group of Savannah's Black ministers and church leaders.\n\nThe ministers chose one man to speak for all of them. Garrison Frazier. A Baptist minister, sixty seven years old, and well over six feet tall. Eight years before, he had bought his own freedom and his wife's, for a thousand dollars in gold and silver.\n\nThe general and the secretary asked him questions, and his answers were written down word for word. They asked him what slavery was. Slavery, he said, is receiving by irresistible power the work of another man, and not by his consent.\n\nThey asked how his people could best take care of themselves. The way we can best take care of ourselves, he said, is to have land, and turn it and till it by our own labor. We want to be placed on land until we are able to buy it and make it our own.\n\nFour days later, Sherman signed Field Order Fifteen. Land for the freed people, up to forty acres for each family. It did not last. After Lincoln was killed, President Andrew Johnson reversed the order, and gave the land back to its Confederate owners.\n\nLook up at the corner windows again.\n\nThey asked him what freedom needed. He said, land.\n",
+    "teaser": "They asked him what freedom needed. He said, land.",
+    "detail": "The minutes of 12 January 1865, certified by Assistant Adjutant General E. D. Townsend, were printed widely; the Rutland Weekly Herald copy is used here. Its scan reads \"irresistible\" as \"-ttiittible\" and \"consent\" as \"content\"; the script corrects these two scanning errors, which a reviewer should confirm against the page image. Which corner room it was is not identified.",
+    "pronunciations": [
+      {
+        "written": "Meldrim",
+        "say": "MEL-drim"
+      },
+      {
+        "written": "Frazier",
+        "say": "FRAY-zhur"
+      }
+    ],
+    "tags": [
+      "savannah",
+      "savannah-core",
+      "madison-square",
+      "civil-war",
+      "emancipation",
+      "forty-acres"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/savannah-to-have-land",
+        "durationS": 97
+      }
+    ]
+  },
+  {
     "id": "savannah-twenty-two-squares",
     "title": "A city plan from 1733 that nobody has managed to undo",
     "summary": "Savannah's grid of squares was drawn before the city existed, and most of it is still there.",
@@ -16587,7 +17363,7 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "shipping"
     ],
-    "remoteness": 0.22
+    "remoteness": 0.1
   },
   {
     "id": "savannah-wesleys-empty-lot",
@@ -16669,7 +17445,7 @@ export const LIBRARY: readonly Echo[] = [
       "siege-of-savannah",
       "battlefields"
     ],
-    "remoteness": 0.26
+    "remoteness": 0.22
   },
   {
     "id": "savannah-who-lies-under-the-pulaski-monument",

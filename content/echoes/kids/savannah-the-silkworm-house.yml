@@ -1,0 +1,117 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: East side of Reynolds Square, on the square's public walk, facing the buildings along its east side.
+# Position: Reynolds Square from the Abercorn, Bryan and Congress street segments in the app's Savannah street file, placed on the east side of the square; the Filature's exact footprint is not fixed (medium confidence).
+id: savannah-the-silkworm-house
+title: "The Silkworm House"
+summary: "Georgia was meant to be a silk colony. The Filature on Reynolds Square was built for cocoons and ended up a ballroom for Washington."
+place: "Reynolds Square, east side, Savannah, Georgia"
+at: { lat: 32.07935, lng: -81.08860 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, reynolds-square, colonial, silk, kids]
+teaser: "A house full of worms, and then a President on the dance floor."
+script: |
+  Look across Reynolds Square, to the buildings on its east side. Long ago, a plain wooden building stood over there, and upstairs it was full of silkworm cocoons.
+
+  Georgia was supposed to be a silk colony. Around the town grew acres and acres of mulberry trees, because mulberry leaves are what silkworms eat. There was even a law about it. To be elected, a man had to have one hundred mulberry trees planted and fenced on his land. Later, someone in his family had to know how to reel silk, too.
+
+  Early on, the colonists sent their silk to England. Queen Caroline had it woven into a dress, and wore it at court. A queen, in a dress made by Savannah worms.
+
+  In seventeen fifty one, the colony built the Filature right here, a building just for silk. One year, more than a thousand pounds of raw silk came through its doors. The next year it burned down, with more than seven thousand pounds of cocoons inside.
+
+  They built it again. But the silk never really worked. So the silk house became something else. A dance hall. When George Washington came to Savannah, they held a ball for him in the Filature, and he was introduced to ninety six ladies.
+
+  Look at the east side of the square again.
+
+  It was built for silkworms. It ended up full of dancers.
+detail: >-
+  Wilson (1889) places the Filature on the east side of Reynolds Square, where Cassell's Row later stood, describes the 1751 building and the 1758 fire, and prints the account of the 1791 ball for Washington. The 1937 Federal Writers' Project guide gives the 1735 silk for Queen Caroline's dress. Why silkworms need mulberry leaves is general knowledge, not from these sources.
+pronunciations:
+  - written: "Filature"
+    say: "FIL-uh-chur"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Long ago, a plain wooden building stood over there, and upstairs it was full of silkworm cocoons."
+    source: 1
+    quote: "This building stood on the east side of Reynolds square"
+  - says: "Long ago, a plain wooden building stood over there, and upstairs it was full of silkworm cocoons."
+    source: 1
+    quote: "in a loft above the one floor the green"
+  - says: "Georgia was supposed to be a silk colony."
+    source: 2
+    quote: "Georgia at that time was intended for a silk Colony"
+  - says: "Around the town grew acres and acres of mulberry trees, because mulberry leaves are what silkworms eat."
+    source: 2
+    quote: "famous for the vast acres of mulberry trees all around Savannah."
+  - says: "To be elected, a man had to have one hundred mulberry trees planted and fenced on his land."
+    source: 1
+    quote: "no inhabitant could be elected a deputy who had not one hundred mulberry trees planted and properly fenced"
+  - says: "Later, someone in his family had to know how to reel silk, too."
+    source: 1
+    quote: "who had not in his family at least one female instructed in the art of reeling silk"
+  - says: "Early on, the colonists sent their silk to England."
+    source: 2
+    quote: "In 1735 the silk growers of the Colony sent to England"
+  - says: "Queen Caroline had it woven into a dress, and wore it at court."
+    source: 2
+    quote: "which Queen Caroline had woven into a dress to wear at a court levee."
+  - says: "A queen, in a dress made by Savannah worms."
+    source: 2
+    quote: "8 pounds of raw Savannah silk which Queen Caroline had"
+  - says: "In seventeen fifty one, the colony built the Filature right here, a building just for silk."
+    source: 2
+    quote: "An early public Filature, for the storage of silk, was built in Savannah in 1751."
+  - says: "In seventeen fifty one, the colony built the Filature right here, a building just for silk."
+    source: 1
+    quote: "This building stood on the east side of Reynolds square"
+  - says: "One year, more than a thousand pounds of raw silk came through its doors."
+    source: 1
+    quote: "In 1757 one thousand and fifty pounds of raw silk were received at the filature in Savannah."
+  - says: "The next year it burned down, with more than seven thousand pounds of cocoons inside."
+    source: 1
+    quote: "The next year the filature was burned with all its contents, consisting of a large quantity of silk, and seven thou- sand and forty pounds of cocoons."
+  - says: "They built it again."
+    source: 1
+    quote: "Phoenix-like, it rose from its ashes"
+  - says: "But the silk never really worked."
+    source: 3
+    quote: "when this enterprise failed"
+  - says: "A dance hall."
+    source: 3
+    quote: "the building was converted to a dance hall"
+  - says: "When George Washington came to Savannah, they held a ball for him in the Filature, and he was introduced to ninety six ladies."
+    source: 1
+    quote: "In the evening a Ball in honor of the President was given at the Long Room in the Filature."
+  - says: "When George Washington came to Savannah, they held a ball for him in the Filature, and he was introduced to ninety six ladies."
+    source: 1
+    quote: "personally introduced by one of the Managers to ninety six ladies"
+  - says: "It was built for silkworms."
+    source: 2
+    quote: "An early public Filature, for the storage of silk"
+  - says: "It ended up full of dancers."
+    source: 3
+    quote: "the building was converted to a dance hall"
+sources:
+  - title: "Historic and Picturesque Savannah (Adelaide Wilson, 1889)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicpictures00wils
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "American Treasures of the Library of Congress, Memory Gallery A (plan of Savannah, 1796)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/exhibits/treasures/tr11a.html
+    retrievedAt: "2026-11-10"
+    rights: public-domain

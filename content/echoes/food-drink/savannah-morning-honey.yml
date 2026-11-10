@@ -1,0 +1,106 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: Ellis Square, on the public square near its Barnard Street side.
+# Position: Ellis Square between Bryan and Congress on Barnard Street from the street segments in the app's Savannah street file, placed on the west side of the square (medium confidence).
+id: savannah-morning-honey
+title: "Morning, Honey"
+summary: "Ellis Square was the City Market until 1954, when it became a parking garage. The square came back in 2010, with the cars underneath."
+place: "Ellis Square, Barnard Street side, Savannah, Georgia"
+at: { lat: 32.08050, lng: -81.09340 }
+triggerRadiusKm: 0.03
+category: food-drink
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, ellis-square, food, market, preservation]
+teaser: "There is a parking garage under your feet. It used to be the other way round."
+script: |
+  Look around Ellis Square. For more than fifty years, there was no square here at all. There was a parking garage.
+
+  Before the garage, this was the City Market, where farmers sold their crops straight to the people. A city guide in the nineteen thirties remembered how it felt to come here as a child. The horse car did not just bring you to the market. It went right inside, so you could almost shop from the window.
+
+  A woman named Pink sat beside her stall, shelling butterbeans into a big flat basket. She always had a Morning, Honey, and a wide smile for her favourites. There were benne seed and coconut patties, and paper thin wafers, cooked in old irons with long handles. Silver fish beside pink shrimp, and chickens and ducks and turkeys, squawking.
+
+  Then, in nineteen fifty four, the market came down, for parking. The loss was what made Savannah start fighting for its old buildings. Half a century later, the city knocked the garage down, and gave the square back. The cars are still here. They are underneath you.
+
+  Stand still for a moment.
+
+  Somewhere under your feet is a parking space where Pink used to say, Morning, Honey.
+detail: >-
+  The 1937 guide describes the City Market as still in use and remembers the horse car and the woman called Pink, in the language of its day. Where exactly her stall stood is not recorded; the closing line places it in the square, not at a spot.
+pronunciations:
+  - written: "benne"
+    say: "BEN-ee"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "For more than fifty years, there was no square here at all."
+    source: 1
+    quote: "For more than 55 years, Savannah counted Ellis Square among its lost historic treasures."
+  - says: "There was a parking garage."
+    source: 1
+    quote: "Ellis Square and the market were demolished in 1954 to make way for a new four-story parking garage."
+  - says: "Before the garage, this was the City Market, where farmers sold their crops straight to the people."
+    source: 1
+    quote: "Since 1872, it was home to the City Market where farmers sold crops directly to shoppers."
+  - says: "A city guide in the nineteen thirties remembered how it felt to come here as a child."
+    source: 2
+    quote: "In the childhood days of the older generation the trip to market was an event."
+  - says: "The horse car did not just bring you to the market."
+    source: 2
+    quote: "It was made by horse car"
+  - says: "It went right inside, so you could almost shop from the window."
+    source: 2
+    quote: "it went into the market itself so that the buyer could almost shop from the car window."
+  - says: "A woman named Pink sat beside her stall, shelling butterbeans into a big flat basket."
+    source: 2
+    quote: "sat beside her stall, shelling butterbeans into a big flat reed-basket."
+  - says: "She always had a Morning, Honey, and a wide smile for her favourites."
+    source: 2
+    quote: "She always had a \"Morning, Honey\" and a wide smile for her favorites."
+  - says: "There were benne seed and coconut patties, and paper thin wafers, cooked in old irons with long handles."
+    source: 2
+    quote: "Benne-seed and cocoanut patties were for sale ; and a delectable treat was the rolled or paper thin wafers, which the Negroes cooked in old-fashioned long handled wafer irons."
+  - says: "Silver fish beside pink shrimp, and chickens and ducks and turkeys, squawking."
+    source: 2
+    quote: "Glittering silver fish mixed with the coral of shrimp"
+  - says: "Silver fish beside pink shrimp, and chickens and ducks and turkeys, squawking."
+    source: 2
+    quote: "fat chickens, ducks and turkeys added their squawking"
+  - says: "Then, in nineteen fifty four, the market came down, for parking."
+    source: 1
+    quote: "Ellis Square and the market were demolished in 1954 to make way for a new four-story parking garage."
+  - says: "The loss was what made Savannah start fighting for its old buildings."
+    source: 1
+    quote: "The loss was a flashpoint that galvanized citizens to organize Savannah's historic preservation movement."
+  - says: "Half a century later, the city knocked the garage down, and gave the square back."
+    source: 1
+    quote: "after razing the parking deck in 2005"
+  - says: "Half a century later, the city knocked the garage down, and gave the square back."
+    source: 1
+    quote: "Now, more than a half-century later, Ellis Square has been resurrected."
+  - says: "The cars are still here."
+    source: 1
+    quote: "building an underground garage in its place."
+  - says: "They are underneath you."
+    source: 1
+    quote: "building an underground garage in its place."
+  - says: "Somewhere under your feet is a parking space where Pink used to say, Morning, Honey."
+    source: 2
+    quote: "She always had a \"Morning, Honey\""
+  - says: "Somewhere under your feet is a parking space where Pink used to say, Morning, Honey."
+    source: 1
+    quote: "building an underground garage in its place."
+sources:
+  - title: "Historic treasure resurrected in Savannah, Ga. (Associated Press, 2010)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna35837819
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

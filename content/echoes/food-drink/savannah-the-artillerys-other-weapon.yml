@@ -1,0 +1,133 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on Bay Street at the display of the Washington Guns.
+# Position: Placed on Bay Street between Drayton and Abercorn from the street segments in the app's Savannah street file. The present display site of the Washington Guns is not confirmed by the sources; check on the ground and move the pin (low confidence).
+id: savannah-the-artillerys-other-weapon
+title: "The Artillery's Other Weapon"
+summary: "The Chatham Artillery's brass guns are said to be Washington's gift. Its punch was so feared the papers warned President Taft."
+place: "The Washington Guns, Bay Street, Savannah, Georgia"
+at: { lat: 32.08070, lng: -81.08960 }
+triggerRadiusKm: 0.03
+category: food-drink
+format: short
+durationS: 94
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  That Washington gave the guns is the company's tradition, called tradition by the 1937 guide and stated as fact by the 1885 and 1898 papers. The punch's victims are newspaper lore of 1909 and are told as what the paper said.
+minAge: 12
+quality: 0.7
+tags: [savannah, savannah-core, bay-street, food, drink, chatham-artillery, washington]
+teaser: "Two of its weapons came from Yorktown. The third came by the glass."
+script: |
+  Find the two small brass cannon called the Washington Guns. They belong to the Chatham Artillery, and the company has always said George Washington gave them, soon after his visit to Savannah. By the company's account, they had been British guns, surrendered by Lord Cornwallis at Yorktown. When the Confederates left Savannah, the company buried them under its armory, and dug them up again afterwards.
+
+  But the Chatham Artillery is famous for another weapon. You drink it.
+
+  In November, nineteen oh nine, President Taft was on his way to Savannah, and the newspapers warned him. He would be urged to have a bout with the famous Chatham Artillery Punch. It took a week to brew. Presidents, statesmen, governors and naval officers had all attacked it, the paper said, and all of them had been beaten. Admiral Dewey had chased a salad with it, and blamed his troubles on the salad.
+
+  The recipe was a secret. There was always one man in the Chatham Artillery who carried it in his head. That year, the keeper of the secret was a lieutenant named Papy.
+
+  Three years later, the governor of Georgia came back from a Savannah banquet and complained that the punch had not been served. He suspected, he said, that it had been put on the shelf with the other high explosives. Savannah took it as a slander.
+
+  Look at the guns again.
+
+  Two of its weapons came from Yorktown. The third came by the glass.
+detail: >-
+  The 1898 Age-Herald gives the company's account of the guns (it misprints the year of Washington's visit as 1771); the 1885 Savannah Morning News also says they were presented by Washington; the 1937 guide calls it tradition. The 1909 report names the keeper of the recipe as Lieut. Mariana (probably Mariano) Papy. Where the guns are displayed today is not confirmed by these sources.
+pronunciations:
+  - written: "Papy"
+    say: "PAP-ee"
+  - written: "Cornwallis"
+    say: "korn-WALL-is"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Find the two small brass cannon called the Washington Guns."
+    source: 1
+    quote: "In possession of the organization are the Washington guns (tw'o brass pieces)"
+  - says: "They belong to the Chatham Artillery, and the company has always said George Washington gave them, soon after his visit to Savannah."
+    source: 1
+    quote: "so called from their having been presented to the company by General Washington short ly after his visit to Savannah"
+  - says: "They belong to the Chatham Artillery, and the company has always said George Washington gave them, soon after his visit to Savannah."
+    source: 2
+    quote: "Tradition says the President soon after his visit sent two brass six pound cannon as a present to the Chatham Artillery"
+  - says: "They belong to the Chatham Artillery, and the company has always said George Washington gave them, soon after his visit to Savannah."
+    source: 3
+    quote: "These pieces were presented to the company by Gen. Washington"
+  - says: "By the company's account, they had been British guns, surrendered by Lord Cornwallis at Yorktown."
+    source: 1
+    quote: "They were used against the continental army during the revolution, and were surrendered by Lord Cornwallis at Yorktown."
+  - says: "When the Confederates left Savannah, the company buried them under its armory, and dug them up again afterwards."
+    source: 1
+    quote: "When the confed erates evacuted Savannah they were buried under the company armory to prevent them from falling into the hands of the enemy. Afterward they were recovered"
+  - says: "But the Chatham Artillery is famous for another weapon."
+    source: 4
+    quote: "to have a bout with the famous Chatham artillery punch"
+  - says: "In November, nineteen oh nine, President Taft was on his way to Savannah, and the newspapers warned him."
+    source: 4
+    quote: "President Taft will be \"up against\" the hardest proposition of his tour when he arrives here this evening."
+  - says: "He would be urged to have a bout with the famous Chatham Artillery Punch."
+    source: 4
+    quote: "to have a bout with the famous Chatham artillery punch"
+  - says: "It took a week to brew."
+    source: 4
+    quote: "The concoction, which requires a week to"
+  - says: "Presidents, statesmen, governors and naval officers had all attacked it, the paper said, and all of them had been beaten."
+    source: 4
+    quote: "Presidents, statesmen, governors and naval officers have attacked artil"
+  - says: "Presidents, statesmen, governors and naval officers had all attacked it, the paper said, and all of them had been beaten."
+    source: 4
+    quote: "lery punch and all have been worsted."
+  - says: "Admiral Dewey had chased a salad with it, and blamed his troubles on the salad."
+    source: 4
+    quote: "He took some salad and chased it With the punch. The Admiral laid his troublea to the salad."
+  - says: "The recipe was a secret."
+    source: 4
+    quote: "its formula has been cherished as 'a valuable token from one generation to another."
+  - says: "There was always one man in the Chatham Artillery who carried it in his head."
+    source: 4
+    quote: "There is always in the Chatham Artillery a man with the se"
+  - says: "That year, the keeper of the secret was a lieutenant named Papy."
+    source: 4
+    quote: "The present keeper of this great asset of the Chatham's is Lieut. Mariana Papy."
+  - says: "Three years later, the governor of Georgia came back from a Savannah banquet and complained that the punch had not been served."
+    source: 5
+    quote: "celebrated Chatham artillery punch was missing from the banquet board"
+  - says: "He suspected, he said, that it had been put on the shelf with the other high explosives."
+    source: 5
+    quote: "and that he suspected it had been put on the shelf with other hisrh explosives."
+  - says: "Savannah took it as a slander."
+    source: 5
+    quote: "Savan nah has be»n slandered"
+  - says: "Two of its weapons came from Yorktown."
+    source: 1
+    quote: "were surrendered by Lord Cornwallis at Yorktown."
+  - says: "The third came by the glass."
+    source: 4
+    quote: "He drank one or two glasses, and possibly a third."
+sources:
+  - title: "The Age-Herald (Birmingham, Ala.), 28 August 1898, page 4 (the Chatham Artillery)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86072192/1898-08-28/ed-1/?sp=4
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Savannah Morning News, 17 March 1885, page 4"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82015137/1885-03-17/ed-1/?sp=4
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Watchman and Southron (Sumter, S.C.), 6 November 1909, page 4, \"Georgia Welcomes Taft\""
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn93067846/1909-11-06/ed-1/?sp=4
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Atlanta Georgian, 10 May 1912, page 12, \"Savannah Peeved by Governor's Thrust at Artillery Punch\""
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn89053729/1912-05-10/ed-1/?sp=12
+    retrievedAt: "2026-11-10"
+    rights: public-domain

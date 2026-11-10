@@ -1,0 +1,124 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk at Magazine Street and Logan Street, looking west along Magazine Street to the Old Jail.
+# Position: Magazine and Logan intersection from the Overture street segments in the app's Charleston street file, nudged west along Magazine; about 90 metres east of the existing Old Jail echo (high confidence for the corner).
+id: charleston-a-message-for-hell
+title: "A Message for Hell"
+summary: "The legend says Lavinia Fisher was hanged for murder and cursed the crowd. The papers of February 1820 tell it differently."
+place: "The Old Jail, Magazine Street at Logan Street, Charleston, South Carolina"
+at: { lat: 32.77877, lng: -79.93630 }
+triggerRadiusKm: 0.03
+category: legend
+format: short
+durationS: 88
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The murders, the skeletons in the cellar and the words on the gallows are legend, as printed in the 1941 state guide. The execution itself, on 18 February 1820 for highway robbery, is reported in Charleston news reprinted by the Alexandria Gazette and the New Hampshire Gazette. The National Park Service page says the Fishers were convicted of robbery and murder; the 1820 reports name only highway robbery.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 12
+quality: 0.8
+tags: [charleston, charleston-core, legend, old-jail]
+teaser: "The legend kept a curse. The paper kept something else."
+script: |
+  Look along Magazine Street to the Old Jail. The story told about one woman who was held in there is among the darkest in Charleston. It is a legend, and it goes like this.
+
+  Lavinia Fisher and her husband John kept a tavern on the road out of town, the Six Mile House. Travellers who stopped there were robbed, or were never seen again. Skeletons, the story says, were found in the cellar. And on the gallows, she screamed at the crowd. If you have a message you want to send to hell, give it to me. I'll carry it.
+
+  That is the legend. Here is what the Charleston paper printed the next day.
+
+  John and Lavinia Fisher were executed yesterday, at two o'clock, for highway robbery. Highway robbery. That morning, John wrote a last letter from the jail, still saying he was innocent. At the gallows, he asked the crowd to forgive him for any wrong he had done them. Lavinia, the paper said, was unwilling to die.
+
+  A little past two o'clock, the husband and wife embraced each other on the platform, for the last time. He was twenty nine. She was twenty eight. The crowd, the paper said, was immense.
+
+  Look at the jail again. They waited in there, through the winter of eighteen twenty.
+
+  The legend kept a curse. The paper kept an embrace.
+detail: >-
+  The Charleston report of 19 February 1820, reprinted in the New Hampshire Gazette (14 March) and the Alexandria Gazette (26 February), gives the crime as highway robbery and prints John Fisher's last letter, dated Charleston Gaol, 18 February 1820. The Six Mile House story, the skeletons and the gallows speech are as printed in the 1941 Federal Writers' Project guide, which says they were convicted of murder. Neither 1820 report contains the gallows speech.
+pronunciations:
+  - written: "Lavinia"
+    say: "luh-VIN-ee-uh"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "The story told about one woman who was held in there is among the darkest in Charleston."
+    source: 4
+    quote: "John and Lavinia Fisher, and other members of their gang, were convicted of robbery and murder and were imprisoned here in 1819 to 1820."
+  - says: "Lavinia Fisher and her husband John kept a tavern on the road out of town, the Six Mile House."
+    source: 1
+    quote: "John Fisher the landlord, and his wife, Lavinia"
+  - says: "Lavinia Fisher and her husband John kept a tavern on the road out of town, the Six Mile House."
+    source: 1
+    quote: "The Old Six Mile House"
+  - says: "Travellers who stopped there were robbed, or were never seen again."
+    source: 1
+    quote: "Travelers stopping here were robbed or mysteriously disappeared."
+  - says: "Skeletons, the story says, were found in the cellar."
+    source: 1
+    quote: "after the discovery of skele- tons in the tavern cellar."
+  - says: "And on the gallows, she screamed at the crowd."
+    source: 1
+    quote: "She screamed, as she stood on the gallows"
+  - says: "If you have a message you want to send to hell, give it to me."
+    source: 1
+    quote: "you have a message you want to send to hell, give it to me"
+  - says: "I'll carry it."
+    source: 1
+    quote: "M carry it"
+  - says: "Here is what the Charleston paper printed the next day."
+    source: 2
+    quote: "CHARLESTON, FEB. 19, Execution !"
+  - says: "John and Lavinia Fisher were executed yesterday, at two o'clock, for highway robbery."
+    source: 2
+    quote: "were executed yesterday, precisely at 2 o’clock P. M. for highway robbery."
+  - says: "Highway robbery."
+    source: 2
+    quote: "for highway robbery."
+  - says: "That morning, John wrote a last letter from the jail, still saying he was innocent."
+    source: 2
+    quote: "Charlefion Gaol, Feb. 18, 1820."
+  - says: "That morning, John wrote a last letter from the jail, still saying he was innocent."
+    source: 3
+    quote: "protesting his inno cence"
+  - says: "At the gallows, he asked the crowd to forgive him for any wrong he had done them."
+    source: 3
+    quote: "He asked pardon of the spectators for any wrong or injury he might have done them"
+  - says: "Lavinia, the paper said, was unwilling to die."
+    source: 3
+    quote: "evidenced that she was unwilling to die."
+  - says: "A little past two o'clock, the husband and wife embraced each other on the platform, for the last time."
+    source: 2
+    quote: "A little past two o’clock, the husband and wife embraced each other upon the platform, for the last time in this world"
+  - says: "He was twenty nine. She was twenty eight."
+    source: 2
+    quote: "Fisher, we learn, was 29, and his wife 28 years of age."
+  - says: "The crowd, the paper said, was immense."
+    source: 2
+    quote: "The concourse that attended the execution was immense."
+  - says: "They waited in there, through the winter of eighteen twenty."
+    source: 4
+    quote: "were imprisoned here in 1819 to 1820."
+  - says: "The paper kept an embrace."
+    source: 2
+    quote: "the husband and wife embraced each other upon the platform"
+sources:
+  - title: "South Carolina: A Guide to the Palmetto State (Federal Writers' Project, 1941)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/in.ernet.dli.2015.180130
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "The New Hampshire Gazette, 14 March 1820, page 1 (from Charleston, 19 February)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83025588/1820-03-14/ed-1/?sp=1
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Alexandria Gazette and Daily Advertiser, 26 February 1820, page 2 (from Charleston, 19 February)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83026170/1820-02-26/ed-1/?sp=2
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Old Jail"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/places/old-jail.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
