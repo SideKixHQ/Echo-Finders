@@ -389,7 +389,7 @@ function GuidedRoutes({
       {near.map((r) => item(r, false))}
       {near.length > 0 && far.length > 0 && (
         <button className="jmenu-link jmenu-far" aria-expanded={showFar} onClick={() => setShowFar((v) => !v)}>
-          {showFar ? "Hide tours in other cities" : `Tours in other cities (${far.length})`}
+          {showFar ? `Hide ${heading.toLowerCase()} in other cities` : `${heading} in other cities (${far.length})`}
         </button>
       )}
       {showFar &&

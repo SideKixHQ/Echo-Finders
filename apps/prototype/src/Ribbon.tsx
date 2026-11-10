@@ -544,7 +544,7 @@ export function Ribbon({
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M18 21l-6-3.6L6 21V5.4A1.4 1.4 0 0 1 7.4 4h9.2A1.4 1.4 0 0 1 18 5.4z" />
           </svg>
-          {saved ? "Kept" : "Keep"}
+          {saved ? "Saved" : "Save"}
         </button>
         {/*
           Share, which the card has had all along and the screen you are actually on while

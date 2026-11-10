@@ -760,8 +760,8 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   const walks = await sheet.locator('.jmenu-routes .jmenu-item').allInnerTexts();
   check('Trip sheet: each walk by its full name, how far, how long, how many echoes',
     walks.length > 0 && walks.every((t) => /:/.test(t) && /\d+(\.\d)? km · about \d+ (min|hr) · \d+ echoe?s?/.test(t)), walks.join(' / '));
-  check('Trip sheet: tours in other cities, as a link with a count',
-    /^Tours in other cities \(\d+\)$/.test((await sheet.locator('.jmenu-far').innerText().catch(() => '')).trim()));
+  check('Trip sheet: guided walks in other cities, as a link with a count',
+    /^Guided walks in other cities \(\d+\)$/.test((await sheet.locator('.jmenu-far').innerText().catch(() => '')).trim()));
   const small = await sheet.locator('button').evaluateAll((els) => els
     .filter((e) => { const r = e.getBoundingClientRect(); return r.height > 0 && (r.width < 44 || r.height < 44); })
     .map((e) => e.textContent.trim() || e.getAttribute('aria-label')));
@@ -930,8 +930,8 @@ async function arrive() {
     await p.waitForTimeout(500);
     await p.getByLabel(/Change your journey/).click();
     // Miami Beach is another city from New York, so its walks sit behind the toggle.
-    const others = p.getByRole('button', { name: /Tours in other cities/ });
-    check('Trip sheet: tours in other cities are one tap away', await visible(others));
+    const others = p.getByRole('button', { name: /Guided walks in other cities/ });
+    check('Trip sheet: guided walks in other cities are one tap away', await visible(others));
     await others.click().catch(() => {});
     await p.waitForTimeout(300);
     await p.locator('.jmenu-item', { hasText: 'Ocean Drive' }).first().click();

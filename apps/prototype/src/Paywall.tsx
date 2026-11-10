@@ -29,7 +29,7 @@
  * here in the night" is the specific thing they are being kept from.
  */
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { CITIES, FREE_ECHO_LIMIT, PLANS, type City, type Echo } from "@echofinders/core";
 
 export type Plan = "week" | "city" | "allAccess";
@@ -61,6 +61,20 @@ export interface PaywallProps {
   /** The plan, and for a City or Week Pass the city it is for. */
   readonly onBuy: (plan: Plan, cityId?: string) => void;
   readonly onClose: () => void;
+}
+
+/**
+ * "All-Access" kept on one line. It broke at its own hyphen ("All-" at the end of one line,
+ * "Access" on the next), which reads as two words. A nowrap span rather than a
+ * non-breaking hyphen character, so the name stays the same text for search, screen
+ * readers and the audits that look for it.
+ */
+export function keepWhole(text: string): ReactNode {
+  const parts = text.split("All-Access");
+  if (parts.length === 1) return text;
+  return parts.flatMap((part, i) =>
+    i === 0 ? [part] : [<span key={i} className="nobreak">All-Access</span>, part],
+  );
 }
 
 /** How many City Passes cost more than a year of All-Access. Four, at $9.99 and $34.99. */
@@ -240,13 +254,15 @@ export function Paywall({
         )}
 
         <p className="paywall-sum">
-          {allAccessRunning
-            ? "You have All-Access. Another year starts when this one ends."
-            : city
-              ? `Visiting ${wins} cities or more this year? All-Access costs less.`
-              : echo
-                ? "City Passes cover a city. This echo is on the road, so it is part of All-Access."
-                : "City Passes cover one city; All-Access opens everything."}
+          {keepWhole(
+            allAccessRunning
+              ? "You have All-Access. Another year starts when this one ends."
+              : city
+                ? `Visiting ${wins} cities or more this year? All-Access costs less.`
+                : echo
+                  ? "City Passes cover a city. This echo is on the road, so it is part of All-Access."
+                  : "City Passes cover one city; All-Access opens everything.",
+          )}
           {!allAccessRunning && others.length > 0 && (
             <>
               {" "}
@@ -290,7 +306,7 @@ export function Paywall({
           Safari, and its last button was cut off (audit:align, 2026-11-08).
         */}
         <p className="paywall-small">
-          Kept on this device until accounts arrive.{" "}
+          What you buy is saved on this phone.{" "}
           {chosen === "allAccess" ? "Renews yearly until you cancel in Settings. " : ""}
           <a href="https://echofinders.com/terms" target="_blank" rel="noreferrer">Terms</a>
           {" · "}
@@ -308,7 +324,7 @@ export function Paywall({
         */}
         {echo && (
           <p className="paywall-keep">
-            Your {heardCount} echoes stay yours, and you can keep finding more for free.
+            Your {heardCount} echoes stay yours to replay.
           </p>
         )}
       </div>
