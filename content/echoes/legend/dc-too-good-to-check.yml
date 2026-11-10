@@ -1,0 +1,75 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Brightwood), following the six beats in docs/writing-echoes.md (echo-format-v2). Told as legend, male narrator.
+# Listening spot: Fort Stevens Park, on the rebuilt parapet at the stone marker set in 1911 where Lincoln stood under fire.
+# Position: Overture place 'Fort Stevens' (6001 13th St NW) at 38.96419, -77.02921; the marker's own position on the parapet is not in a reachable source (medium confidence). Shares the park with dc-you-shall-reap-a-great-reward, which tells a different subject.
+id: dc-too-good-to-check
+title: "Too Good to Check"
+summary: "Lincoln came under fire on this parapet in 1864. Somebody, the legend says, shouted get down, you fool. Nobody can say who."
+place: "Lincoln marker on the parapet, Fort Stevens Park, 13th and Quackenbos Streets NW, Brightwood, Washington, D.C."
+at: { lat: 38.96430, lng: -77.02915 }
+triggerRadiusKm: 0.03
+category: legend
+format: short
+durationS: 70
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A legend. That Lincoln came under fire at Fort Stevens is history (National Park Service). That someone shouted "Get down, you fool!" is called "unconfirmed accounts" by the Park Service, and a licensed guide told NPR that historians doubt the Oliver Wendell Holmes version. The script says so.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [washington, brightwood, fort-stevens, lincoln, civil-war, military, oliver-wendell-holmes]
+teaser: "Four words, shouted at a President. Everyone knows them. Nobody knows who said them."
+script: |
+  Find the stone marker on the grassy wall of the fort. It marks where President Lincoln stood, on the twelfth of July, eighteen sixty four.
+
+  The Confederate army was at the edge of Washington. Lincoln came out to watch. He climbed up on this parapet, a very tall man in a tall hat, in full view. Sharpshooters were firing from half a mile away. A man standing near him was hit.
+
+  That is history. It is the only time a sitting President has come under enemy fire.
+
+  Now the legend. Somebody, the story goes, shouted at the President. Get down, you fool.
+
+  The usual version says it was a lieutenant, Oliver Wendell Holmes, who later sat on the Supreme Court for decades. It is a wonderful story. The Park Service calls it unconfirmed. Historians doubt it. One Washington guide put it best. We tour guides, he said, call that kind of story too good to check.
+
+  Stand by the marker, and look out where the sharpshooters were.
+
+  Maybe somebody shouted. Either way, the President was soon taken away, under heavy guard.
+pronunciations:
+  - written: Quackenbos
+    say: KWACK-en-boss
+detail: >-
+  Told as legend. Lincoln's height and hat, the half mile and the wounded man beside him are from the guide Craig Howell's account to NPR; the "only time" and "unconfirmed accounts" are the Park Service's.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "It marks where President Lincoln stood"
+    source: 1
+    quote: "dedicated a stone marker where President Lincoln had once stood on the parapet."
+  - says: "He climbed up on this parapet, a very tall man in a tall hat, in full view. Sharpshooters were firing from half a mile away. A man standing near him was hit."
+    source: 2
+    quote: "So somebody took a shot, and as you can see from this monument here, the guy standing next to Lincoln was hit and he was wounded."
+  - says: "That is history. It is the only time a sitting President has come under enemy fire."
+    source: 1
+    quote: "The Battle of Fort Stevens is the only time that a sitting U.S. president has come under enemy military fire."
+  - says: "Now the legend. Somebody, the story goes, shouted at the President. Get down, you fool."
+    source: 1
+    quote: "Unconfirmed accounts claim that someone shouted “Get down, you fool!”"
+  - says: "The usual version says it was a lieutenant, Oliver Wendell Holmes, who later sat on the Supreme Court for decades."
+    source: 2
+    quote: "That Lieutenant was a guy named Oliver Wendell Holmes, Jr., who was the son of a very famous poet and he went on to become a very, very long serving Supreme Court Justice."
+  - says: "Historians doubt it. One Washington guide put it best. We tour guides, he said, call that kind of story too good to check."
+    source: 2
+    quote: "Historians doubt that story. We tour guides call that kind of story too good to check."
+  - says: "Either way, the President was soon taken away, under heavy guard."
+    source: 1
+    quote: "he was quickly escorted under heavy guard back to the White House."
+sources:
+  - title: "Anniversary of the Battle of Fort Stevens"
+    publisher: "National Park Service, Civil War Defenses of Washington"
+    url: https://www.nps.gov/cwdw/planyourvisit/anniversary-of-the-battle-of-fort-stevens.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "D.C. Fort Was The Site Of Lincoln's Close Call"
+    publisher: "NPR, Weekend Edition Saturday"
+    url: https://www.npr.org/2014/07/12/330889504/d-c-fort-was-the-site-of-lincolns-close-call
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

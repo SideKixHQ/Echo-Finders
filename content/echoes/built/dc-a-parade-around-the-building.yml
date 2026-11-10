@@ -1,0 +1,63 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC (Judiciary Square), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Public sidewalk on F Street NW outside the National Building Museum (the old Pension Building), 401 F Street, looking up at the frieze above the first floor.
+# Position: Overture place 'National Building Museum' (401 F St NW) at 38.89786, -77.01771; set on the F Street sidewalk (high confidence).
+id: dc-a-parade-around-the-building
+title: "A Parade Around the Building"
+summary: "Around the old Pension Building marches a frieze of Union soldiers, built for the veterans who came here for their pensions."
+place: "National Building Museum (Pension Building), 401 F Street NW, Washington, D.C."
+at: { lat: 38.89800, lng: -77.01771 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 69
+visibility: daylight-dependent
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, judiciary-square, pension-building, national-building-museum, civil-war, meigs]
+teaser: "Look above the windows. A whole army is marching around this building."
+script: |
+  Look up above the ground floor windows of this huge building. A band of sculpture runs along it. Look closer. Soldiers. A whole army, marching.
+
+  Follow it to the corner. It does not stop. The parade goes all the way around the building.
+
+  This was the Pension Building. After the Civil War, Congress kept widening the pensions it paid to Union veterans, to the wounded, and to widows and orphans. Somebody had to process all of it. This building was where they did.
+
+  Its designer was Montgomery Meigs, the Army's Quartermaster General, the engineer behind the Capitol's dome. He meant the whole building as a memorial to the Union soldiers, sailors and marines. So he wrapped it in a procession of them, sculpted by Caspar Buberl. People compared it to the frieze on the Parthenon.
+
+  He called this his greatest work.
+
+  Inside, today, is a museum of building. But everyone who worked here, sorting the claims of veterans and widows, came to work under a parade of the men they were paying.
+
+  Look up once more.
+
+  They are still marching.
+pronunciations:
+  - written: Buberl
+    say: BOO-burl
+detail: >-
+  All from the Park Service's page on the National Building Museum, which says Meigs "considered" it his greatest accomplishment. The source says the frieze depicts "a parade of military Civil War units"; the script does not list particular figures.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "After the Civil War, Congress kept widening the pensions it paid to Union veterans, to the wounded, and to widows and orphans."
+    source: 1
+    quote: "During and after the Civil War, Congress passed laws expanding the eligibility for pensions of the wounded, maimed, and the widowed and orphaned of the Civil War."
+  - says: "Its designer was Montgomery Meigs, the Army's Quartermaster General, the engineer behind the Capitol's dome."
+    source: 1
+    quote: "Meigs, an innovator in 19th-century building technology, was also the engineer for the Capitol Dome and Cabin John Bridge."
+  - says: "He meant the whole building as a memorial to the Union soldiers, sailors and marines. So he wrapped it in a procession of them, sculpted by Caspar Buberl. People compared it to the frieze on the Parthenon."
+    source: 1
+    quote: "This memorial theme is carried out by the exterior frieze extending completely around the building depicting a parade of military Civil War units. The frieze was designed and sculpted by Bohemian-born Caspar Buberl. Likened to the Parthenon frieze"
+  - says: "He called this his greatest work."
+    source: 1
+    quote: "The Pension Building was his last, and what he considered his greatest, accomplishment."
+  - says: "Follow it to the corner. It does not stop. The parade goes all the way around the building."
+    source: 1
+    quote: "the exterior frieze extending completely around the building"
+sources:
+  - title: "National Building Museum, Washington, DC"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/national-building-museum-washington-dc.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

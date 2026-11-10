@@ -1,0 +1,74 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC (Dupont Circle), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Public sidewalk on Q Street NW in front of the Cairo, 1615 Q Street, between 16th and 17th Streets.
+# Position: Overture address '1615 Q Street Northwest' at 38.91136, -77.03752 (high confidence).
+id: dc-the-building-that-set-the-limit
+title: "The Building That Set the Limit"
+summary: "The Cairo, finished in 1894, was Washington's first residential skyscraper. Its height helped give the city its low skyline."
+place: "The Cairo, 1615 Q Street NW, Dupont Circle, Washington, D.C."
+at: { lat: 38.91130, lng: -77.03752 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dupont-circle, the-cairo, height-act, skyline, architecture]
+teaser: "Why is Washington so low? Look up. Part of the answer is this building."
+script: |
+  Tip your head back and look up at this tall brick building on a residential street. It is called the Cairo.
+
+  When it was finished, in eighteen ninety four, it was the city's first residential skyscraper. One hundred and sixty four feet. The tallest private building in Washington.
+
+  Its architect was Thomas Franklin Schneider. And the reaction to what he built is still shaping the city you are walking through.
+
+  Height limits followed. By nineteen ten, Congress had passed a law tying the height of every building in Washington to the width of the street in front of it. Wide avenues, taller buildings. Narrow streets, shorter ones. And a cap of about eleven stories in commercial areas.
+
+  People like to say there is a rule that nothing can be taller than the Capitol, or the Washington Monument. A planner at the National Capital Planning Commission calls that a myth. The real rule is the street.
+
+  Look back up at the Cairo.
+
+  Washington stayed low. This is the building that made it write the rule down.
+pronunciations:
+  - written: Schneider
+    say: SHNY-der
+detail: >-
+  The Library of Congress gives 164 feet on one record and 165 on its Historic American Buildings Survey record, which says its height "led to the imposition of height restrictions in 1910". The script says only that height limits followed; earlier District limits (1894, 1899) are reported elsewhere but not in the fetched sources.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "When it was finished, in eighteen ninety four, it was the city's first residential skyscraper. One hundred and sixty four feet."
+    source: 1
+    quote: "The 164-feet-tall brick building was designed by architect Thomas Franklin Schneider and completed in 1894 as the city's first residential skyscraper."
+  - says: "The tallest private building in Washington."
+    source: 2
+    quote: "The tallest private building in the city, its 165' height led to the imposition of height restrictions in 1910."
+  - says: "Height limits followed. By nineteen ten, Congress had passed a law tying the height of every building in Washington to the width of the street in front of it."
+    source: 3
+    quote: "In Washington, D.C., the 1910 Height of Buildings Act actually takes height from the width of the street on which a building is situated."
+  - says: "And a cap of about eleven stories in commercial areas."
+    source: 3
+    quote: "We also have a maximum cap of 130 in commercial areas, which is roughly"
+  - says: "People like to say there is a rule that nothing can be taller than the Capitol, or the Washington Monument. A planner at the National Capital Planning Commission calls that a myth."
+    source: 3
+    quote: "Absolutely, that's actually a myth."
+  - says: "Washington stayed low. This is the building that made it write the rule down."
+    source: 2
+    quote: "its 165' height led to the imposition of height restrictions in 1910."
+sources:
+  - title: "The Cairo apartment building, 1615 Q St., NW (Carol M. Highsmith photograph and caption)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2010641273/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Cairo Hotel, 1615 Q Street Northwest (Historic American Buildings Survey DC-42)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/pictures/item/dc0042/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "How D.C.'s Height Limit Has Shaped The Capital"
+    publisher: "NPR, Here and Now"
+    url: https://www.npr.org/transcripts/317394811
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

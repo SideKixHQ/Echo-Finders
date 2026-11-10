@@ -1,0 +1,59 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core (U.S. Capitol), following the six beats in docs/writing-echoes.md (echo-format-v2). Told as legend, male narrator.
+# Listening spot: Inside the U.S. Capitol, House wing, by the staircase where, the legend says, the 1890 shooting left marks on the steps.
+# Position: the House wing of the Capitol, south of the Rotunda's centre (38.88990, -77.00906); which staircase is meant is not given in the source, so the radius covers the wing (low confidence on the exact stair).
+id: dc-the-spots-on-the-stairs
+title: "The Spots on the Stairs"
+summary: "In 1890 a reporter shot a congressman in the House wing. The legend says the stains on the stairs are his, and he trips reporters."
+place: "House wing staircase, U.S. Capitol, Washington, D.C."
+at: { lat: 38.88925, lng: -77.00905 }
+triggerRadiusKm: 0.06
+category: legend
+format: short
+durationS: 50
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A legend. The 1890 shooting is history, reported by CBS News (Associated Press) from Capitol ghost-tale collections; the stains and the tripping are folklore, and the script says so. Nothing supernatural is claimed. The court outcome for Kincaid is not in the fetched source and is not stated.
+minAge: 12
+quality: 0.75
+inside: true
+hours: { fromHour: 9, toHour: 16 }
+voice: wC1005J19tvhoqqC2hkf
+tags: [washington, dc-core, us-capitol, ghosts, taulbee, 1890]
+teaser: "Reporters, watch your step on these stairs. There is a story about why."
+script: |
+  If you are in the House wing, look down at the steps as you climb.
+
+  This is a legend. Hold on to that.
+
+  The history first. In eighteen ninety, a newspaper correspondent named Charles Kincaid had an argument with William Taulbee, a congressman from Kentucky. Here in the House wing, Kincaid shot him. Taulbee died.
+
+  Now the legend. Some people say that the dark spots on one of the staircases here are Taulbee's blood. And they say Taulbee has never forgiven the press. When a reporter takes these stairs, the story goes, something catches their foot.
+
+  There is no record of anyone being tripped by a ghost. Stone stairs in an old building trip people all by themselves.
+
+  So if you happen to be a reporter.
+
+  Hold the rail.
+pronunciations:
+  - written: Taulbee
+    say: TALL-bee
+  - written: Kincaid
+    say: kin-KADE
+detail: >-
+  Told as legend. CBS describes the place as "a House hallway" with "the stairway"; it does not say which staircase, and the script does not either. A reviewer should add a contemporary record of the 1890 shooting (the Evening Star's coverage is in Chronicling America) and of Kincaid's trial before approval.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In eighteen ninety, a newspaper correspondent named Charles Kincaid had an argument with William Taulbee, a congressman from Kentucky. Here in the House wing, Kincaid shot him."
+    source: 1
+    quote: "Disbelieving reporters might avoid a House hallway where in 1890 journalist Charles Kincaid shot and killed Kentucky congressman William Taulbee after an argument."
+  - says: "Some people say that the dark spots on one of the staircases here are Taulbee's blood."
+    source: 1
+    quote: "The legend is that black spots on the stairway are Taulbee's blood, and that Taulbee gets his revenge by tripping up reporters on the stairs."
+sources:
+  - title: "Haunted House On The Hill"
+    publisher: "CBS News (Associated Press)"
+    url: https://www.cbsnews.com/news/haunted-house-on-the-hill/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
