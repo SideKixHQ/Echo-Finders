@@ -190,6 +190,17 @@
    * Everything edge-anchored uses this, and `npm run audit:align` measures it.
    */
   --gutter: 16px;
+  /* The sync toasts and "How echoes unlock" (Toasts.tsx). The orb is the echo, lit the
+     same in both schemes, so the white play mark on it reads in both. */
+  --toast-bg: rgb(var(--rgb-panel));
+  --toast-synced-bg: #0f3a3a;
+  --toast-indigo-fill: rgba(155, 149, 255, 0.2);
+  --toast-far-fill: #1d2352;
+  --toast-far-edge: #6f7aa8;
+  --orb-core: #ffd77a;
+  --orb-mid: #ff9e12;
+  --orb-deep: #c96a00;
+  --orb-glow: rgba(255, 158, 18, 0.8);
 }
 
 /**
@@ -213,6 +224,10 @@
 :root[data-theme="light"] {
   --stage: #f4f1ea;
   --rgb-panel: 255, 255, 255;
+  --toast-synced-bg: #e3f6f3;
+  --toast-indigo-fill: rgba(91, 82, 214, 0.14);
+  --toast-far-fill: #ece8f6;
+  --toast-far-edge: #8a93b8;
   --rgb-hair: 11, 15, 43;
   --rgb-accent: 0, 115, 108;
   --on-aqua: #ffffff;
@@ -2926,198 +2941,160 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 
 /*
- * THE SYNC MOMENT, board 5.
+ * THE SYNC MOMENT, as toasts (`Toasts.tsx`, approved 2026-11-10).
  *
- * Near-black rather than warm. The whole screen goes dark and one object is lit, which is
- * the only place in the product where the warm channel gets to be the entire point.
+ * It was a full screen card that took the phone from somebody walking. Now it is one line
+ * at the top, under the top bar and clear of the tab bar, and the map stays theirs.
+ * Absolute, inside `.screen`, for the reason `audit:frame` exists.
+ *
+ * Colours are tokens only (`--toast-*` above, both schemes), so light mode follows.
  */
-.synced {
-  /*
-     ABSOLUTE, not fixed, and this is the whole bug.
-     
-     `fixed` positions against the VIEWPORT, so no amount of moving this in the DOM would
-     have contained it: on a laptop the sync moment covered the entire window while every
-     other screen sat inside a 390px phone frame, with "Keep it for later" as a button the
-     width of the desk. On a phone the viewport and the frame are the same rectangle, so
-     it looked perfect in every render I had ever taken — all of which were 390 wide.
-     
-     `.screen` is `position: relative`, so absolute now resolves against the phone.
-  */
-  position: absolute; inset: 0; z-index: 60;
-  background:
-    radial-gradient(86% 56% at 50% 40%, #16183a 0%, #0a0c1e 52%, #06070d 100%);
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  /* The same space above as below, so the stack is centred top to bottom: it had 24px
-     under it and none over it, which sat the whole card 12px high. */
-  padding: calc(24px + env(safe-area-inset-top)) 24px calc(24px + env(safe-area-inset-bottom));
-  text-align: center; animation: synced-in 0.3s ease-out;
+.toast-dock {
+  position: absolute; z-index: 41; left: var(--gutter); right: var(--gutter);
+  /* Under the journey chip's row: its 48px plus the 10px the rail keeps from things. */
+  top: calc(var(--top-gap) + 58px);
+  pointer-events: none;
 }
-@keyframes synced-in { from { opacity: 0; } to { opacity: 1; } }
+.toast {
+  pointer-events: auto;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+  padding: 10px 6px 10px 16px; border-radius: 18px;
+  background: var(--toast-bg); border: 1.5px solid var(--toast-edge, var(--line-2));
+  box-shadow: 0 10px 30px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
+  color: var(--white);
+  animation: toast-in 0.42s cubic-bezier(0.2, 0.9, 0.3, 1.15) both;
+}
+.toast-leaving { animation: toast-out 0.22s ease-in both; }
+@keyframes toast-in { from { transform: translateY(-24px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes toast-out { to { transform: translateY(-16px); opacity: 0; } }
+.toast-near { --toast-edge: var(--ember); }
+.toast-synced { --toast-edge: var(--aqua); background: var(--toast-synced-bg); }
+.toast-locked { --toast-edge: var(--indigo-soft); }
 
-/*
- * The rings, collapsing inward and landing. The map's ripple, run backwards.
- *
- * ONCE, not on a loop, and that is the whole fix. Looping was the instinct — the map's
- * ripple loops, so this looped too — but the map is waiting and this has arrived. A loop
- * means that at every frozen moment of the screen's life there is a ring somewhere, and
- * somewhere is regularly straight through the title: rendering it is what showed a hairline
- * ruled across "Nobody ever repaired this wall". Landing is a thing that happens and is
- * then over. They sweep in during the first second, gather on the echo, and go; what is
- * left is a lit object and some words, which is what the screen is actually for.
- *
- * Bounded to the echo, too. The outermost is 288px against a 94px orb, so the sweep stays
- * around the thing that arrived rather than lassoing the screen.
- */
-/* Two spacings in this stack: 24 between its blocks (orb, the words, the rarity box, the
-   button), and the tighter 13/11 inside the words. It was 26, 22 and 34 between blocks. */
-.synced-orb { position: relative; display: grid; place-items: center; margin-bottom: 24px; }
-.synced-rings { position: absolute; top: 50%; left: 50%; width: 0; height: 0; }
-.synced-ring {
-  position: absolute; left: 0; top: 0; width: 180px; height: 180px;
-  margin: -90px 0 0 -90px; border-radius: 50%;
-  border: 1.6px solid rgba(255, 158, 18, 0.42);
-  animation: synced-collapse 1.15s cubic-bezier(0.25, 0, 0.15, 1) both;
-}
-.synced-ring-2 { animation-delay: 0.14s; }
-.synced-ring-3 { animation-delay: 0.28s; }
-@keyframes synced-collapse {
-  0%   { transform: scale(1.6); opacity: 0; }
-  26%  { opacity: 0.85; }
-  100% { transform: scale(0.52); opacity: 0; }
+.toast-words { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; text-align: left; }
+.toast-words b { font-size: var(--fs-body); font-weight: 600; line-height: 1.3; color: var(--white); }
+.toast-words span { font-size: var(--fs-secondary); line-height: 1.35; color: var(--cool); }
+.toast-synced .toast-words b { color: var(--aqua-ink); }
+.toast-synced .toast-words span {
+  overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
 }
 
-/*
- * The creature, as the button that starts the story.
- *
- * It replaces both the old `.synced-echo` orb and the aqua "Listen now" beneath it: the
- * thing you press IS the echo now, so the screen lost a control rather than gaining one.
- * Sized to the orb it replaces so the landing animation and the ring collapse still line
- * up with it.
- */
-.synced-press {
-  position: relative; width: 118px; height: 118px; padding: 0;
-  border: 0; border-radius: 50%; background: none; cursor: pointer;
+.toast-orb {
+  width: 40px; height: 40px; flex: none; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, var(--orb-core), var(--orb-mid) 60%, var(--orb-deep));
   display: grid; place-items: center;
-  filter: drop-shadow(0 0 48px rgba(255, 158, 18, 0.55)) drop-shadow(0 0 120px rgba(255, 158, 18, 0.2));
-  animation: synced-land 0.42s cubic-bezier(0.2, 0.9, 0.3, 1) both;
 }
-.synced-press svg { width: 118px; height: 118px; display: block; overflow: visible; }
-/*
- * Armed: the aqua ring, and it fades in AFTER the shape has stopped moving.
- *
- * Arriving with the morph would read as part of the creature; arriving a beat later reads
- * as the app saying "now you can press this", which is what it means. It is the only aqua
- * on the object, because ember is the echo and aqua is everything you operate.
- */
-.synced-press::after {
-  content: ""; position: absolute; inset: -6px; border-radius: 50%;
-  border: 2px solid var(--aqua); opacity: 0;
-  transition: opacity 0.3s 0.34s linear;
-}
-.synced-press.armed::after { opacity: 0.8; animation: synced-armed 2.4s 0.7s ease-in-out infinite; }
-@keyframes synced-armed {
-  0%, 100% { opacity: 0.55; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.045); }
-}
-.synced-press:focus-visible { outline: 2px solid var(--aqua); outline-offset: 8px; }
-@media (prefers-reduced-motion: reduce) {
-  .synced-press, .synced-press.armed::after { animation: none; }
-  .synced-press.armed::after { opacity: 0.8; }
-}
-
-.synced-echo {
-  position: relative; width: 94px; height: 94px; border-radius: 50%;
-  display: grid; place-items: center;
-  background: radial-gradient(circle at 38% 32%, #ffe7b0, var(--ember) 58%, var(--ember-deep));
-  box-shadow: 0 0 64px rgba(255, 158, 18, 0.6), 0 0 150px rgba(255, 158, 18, 0.2);
-  animation: synced-land 0.42s cubic-bezier(0.2, 0.9, 0.3, 1) both;
-}
-@keyframes synced-land {
-  from { transform: scale(1.5); opacity: 0; }
-  to   { transform: none; opacity: 1; }
-}
-.synced-echo svg {
-  width: 36px; height: 36px; fill: none; stroke: #40210a;
-  stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
-}
-
-.synced-say { position: relative; animation: synced-lift 0.5s 0.1s ease-out both; }
-@keyframes synced-lift {
-  from { transform: translateY(10px); opacity: 0; }
-  to   { transform: none; opacity: 1; }
-}
-.synced-kicker {
-  margin: 0; font-family: "Space Grotesk", monospace; font-size: var(--fs-label); font-weight: 500;
-  letter-spacing: 0.2em; text-transform: uppercase; color: var(--ember-core);
-}
-.synced-say h2 {
-  margin: 13px 0 0; font-size: var(--fs-echo); font-weight: 500; line-height: 1.3; color: var(--white);
-}
-.synced-where {
-  margin: 11px 0 0; font-family: "Space Grotesk", monospace;
-  font-size: var(--fs-secondary); color: var(--muted);
-}
-
-.synced-rare {
-  position: relative; margin-top: 24px; padding: 13px 18px; border-radius: 16px;
-  background: rgba(255, 158, 18, 0.07); border: 1px solid rgba(255, 158, 18, 0.32);
-  animation: synced-lift 0.55s 0.2s ease-out both;
-}
-.synced-rare-why { margin: 0; font-size: var(--fs-secondary); line-height: 1.5; color: var(--ember-core); }
-.synced-rare-cat {
-  margin: 6px 0 0; font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
-  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
-}
-
-/* Capped like the paywall's, so nothing in here stretches to whatever it is given. */
-.synced-say, .synced-rare, .synced-acts { width: 100%; max-width: 330px; }
-.synced-acts {
-  /* Centred, not stretched: stretch with a max-width pins it to the left, which put
-     "Keep it for later" 12px off the line of everything above it. */
-  position: relative; align-self: center; margin-top: 24px;
-  display: flex; flex-direction: column; gap: 10px;
-  animation: synced-lift 0.6s 0.28s ease-out both;
-}
-.synced-listen {
-  display: flex; align-items: center; justify-content: center; gap: 9px;
-  min-height: 54px; border-radius: 16px; border: 0; cursor: pointer;
-  font: inherit; font-size: var(--fs-button); font-weight: 600; color: var(--btn-dark-ink);
-  background: var(--btn-dark);
-  box-shadow: 0 0 36px rgba(var(--rgb-accent), 0.28);
-}
-.synced-listen svg { width: 16px; height: 16px; fill: currentColor; }
-.synced-later {
-  min-height: 46px; border-radius: 14px; cursor: pointer; font: inherit; font-size: var(--fs-secondary);
-  color: var(--cool); background: none; border: 1px solid var(--line-2);
-}
-/* The next one, and the way to it. Aqua because it is a thing you press; the creature
-   keeps the only warm light on this screen. */
-.synced-next {
-  position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 3px;
-  min-height: 58px; padding: 10px 48px 10px 16px; border-radius: 14px; cursor: pointer;
-  font: inherit; text-align: left; color: var(--white);
-  background: rgba(var(--rgb-accent), 0.08); border: 1px solid rgba(var(--rgb-accent), 0.42);
-}
-.synced-next-kicker {
-  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--aqua);
-}
-.synced-next-title {
-  font-size: var(--fs-button); font-weight: 500; line-height: 1.3; max-width: 100%;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-}
-.synced-next svg {
-  position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
-  width: 18px; height: 18px; fill: none; stroke: var(--aqua); stroke-width: 1.8;
+.toast-orb-play { box-shadow: 0 0 16px var(--orb-glow); }
+.toast-orb-play svg { width: 18px; height: 18px; fill: #fff; margin-left: 2px; }
+.toast-lock { width: 28px; height: 28px; flex: none; display: grid; place-items: center; }
+.toast-lock svg {
+  width: 28px; height: 28px; fill: none; stroke: var(--indigo-soft); stroke-width: 2;
   stroke-linecap: round; stroke-linejoin: round;
 }
-@media (prefers-reduced-motion: reduce) {
-  .synced, .synced-ring, .synced-echo, .synced-say, .synced-rare, .synced-acts {
-    animation: none;
-  }
-  /* Still legible as a finished state rather than a half-played animation. */
-  .synced-ring { opacity: 0.3; transform: scale(0.8); }
+
+/* The whole of B but the ✕ is one button: tapping it plays. */
+.toast-play {
+  flex: 1; min-width: 0; min-height: 44px; display: flex; align-items: center; gap: 12px;
+  padding: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer;
+  border-radius: 12px;
 }
+
+/* 44px to hit, 32px to see: the design's circle, with the touch target round it. */
+.toast-close {
+  width: 44px; height: 44px; flex: none; align-self: flex-start;
+  display: grid; place-items: center; padding: 0; border: 0; background: none; cursor: pointer;
+  border-radius: 50%;
+}
+.toast-close > span {
+  width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center;
+  background: rgba(var(--rgb-hair), 0.12);
+}
+.toast-close svg {
+  width: 14px; height: 14px; fill: none; stroke: var(--white); stroke-width: 2.6; stroke-linecap: round;
+}
+.toast-synced .toast-close { align-self: center; }
+.toast-synced.toast-has-next .toast-close { align-self: flex-start; }
+/* Next: the quiet one beside a toast that is already a play button, so an outline in aqua
+   rather than a second filled button. */
+.toast .toast-act-next {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: none; color: var(--aqua-ink); border: 1.5px solid var(--aqua);
+}
+.toast-act-next svg {
+  width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* The button row: its own line, lined up with the words. */
+.toast-row { flex-basis: 100%; display: flex; padding-left: 52px; padding-bottom: 4px; }
+.toast-locked .toast-row { padding-left: 40px; }
+.toast-act {
+  min-height: 44px; padding: 0 16px; border: 0; border-radius: 999px; cursor: pointer;
+  font: inherit; font-size: var(--fs-button); font-weight: 600;
+}
+.toast-act-go { background: var(--btn); color: var(--btn-ink); }
+.toast-act-ok { background: var(--toast-indigo-fill); color: var(--white); }
+
+@media (prefers-reduced-motion: reduce) {
+  .toast, .toast-leaving { animation: none; }
+}
+
+/* The pin, when it is that close: it glows and its ripple keeps going. */
+.pin-near-glow {
+  fill: var(--ember); opacity: 0.3; pointer-events: none;
+  animation: pin-near 1.6s ease-in-out infinite;
+}
+@keyframes pin-near { 50% { opacity: 0.55; } }
+@media (prefers-reduced-motion: reduce) { .pin-near-glow { animation: none; opacity: 0.42; } }
+
+/*
+ * "How echoes unlock", once, after first run (the "Sync" board). Its own layer, at the
+ * first run's height, on the same ground.
+ */
+.how {
+  position: absolute; inset: 0; z-index: 1200; background: var(--space);
+  display: flex; flex-direction: column;
+  padding: calc(72px + env(safe-area-inset-top)) 24px calc(40px + env(safe-area-inset-bottom));
+}
+.how-body { margin: auto 0; display: flex; flex-direction: column; }
+.how h1 { margin: 0; font-size: var(--fs-title); line-height: 1.15; font-weight: 700; text-wrap: balance; color: var(--white); }
+.how-lede { margin: 12px 0 0; font-size: var(--fs-body); line-height: 1.45; color: var(--cool); }
+.how-steps { list-style: none; margin: 56px 0 0; padding: 0; display: flex; flex-direction: column; gap: 48px; }
+.how-step { position: relative; display: flex; gap: 18px; align-items: flex-start; }
+/* The line that joins them, from under one mark to the next. */
+.how-step:not(:last-child)::after {
+  content: ""; position: absolute; left: 25px; top: 56px; bottom: -48px; width: 2px;
+  background: rgba(var(--rgb-hair), 0.18);
+}
+.how-mark { position: relative; width: 52px; height: 52px; flex: none; display: grid; place-items: center; border-radius: 50%; }
+.how-step-far .how-mark {
+  background: var(--toast-far-fill); border: 2px dashed var(--toast-far-edge);
+}
+.how-step-far svg {
+  width: 22px; height: 22px; fill: none; stroke: var(--muted); stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.how-ring {
+  position: absolute; inset: 0; border-radius: 50%; border: 3px solid var(--ember);
+  animation: how-ring 2s ease-out infinite;
+}
+@keyframes how-ring { 0% { transform: scale(0.8); opacity: 0.9; } 100% { transform: scale(1.5); opacity: 0; } }
+.how-orb, .how-step-synced .how-mark {
+  background: radial-gradient(circle at 35% 30%, var(--orb-core), var(--orb-mid) 60%, var(--orb-deep));
+}
+.how-orb { position: absolute; inset: 6px; border-radius: 50%; }
+.how-step-synced .how-mark { box-shadow: 0 0 22px var(--orb-glow); }
+.how-step-synced svg { width: 22px; height: 22px; fill: #fff; margin-left: 2px; }
+.how-say { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; padding-top: 4px; }
+.how-say b { font-size: var(--fs-button); font-weight: 600; color: var(--white); }
+.how-step-synced .how-say b { color: var(--aqua-ink); }
+.how-say span { font-size: var(--fs-body); line-height: 1.45; color: var(--cool); }
+.how-go {
+  flex: none; width: 100%; min-height: 56px; border: 0; border-radius: 18px; cursor: pointer;
+  background: var(--btn); color: var(--btn-ink);
+  font: inherit; font-size: var(--fs-button); font-weight: 600;
+}
+@media (prefers-reduced-motion: reduce) { .how-ring { animation: none; opacity: 0.5; } }
 
 /* ── Walk mode ──────────────────────────────────────────────────────────────────
    Near black on purpose: this screen is held awake for the length of a walk, and on
@@ -5128,12 +5105,12 @@ body.seat { padding: 0; display: block; }
 .rose-hum small, .hear-acts button, .hear-clock span,
 .entry-text p, .setting-text small, .setting-cost,
 .feature-fallback, .feature-level, .screen-head p, .jmenu-item small,
-.synced-where, .chip, .hear-voice, .hear-speed { font-size: var(--fs-secondary); }
+.chip, .hear-voice, .hear-speed { font-size: var(--fs-secondary); }
 .pop-kicker, .pop-rarity, .truth,
 .echobar-kicker span, .echobar-kicker em,
 .hear-kicker span, .hear-rarity, .coll-stat small,
 .entry-glyph i, .entry-meta, .group-head, .panel h3,
-.synced-kicker, .synced-rare-cat, .synced-next-kicker, .city-card-kick { font-size: var(--fs-label); }
+.city-card-kick { font-size: var(--fs-label); }
 /* MapLibre's own stylesheet sets 12px on the map container, and it loads after this one,
    hence the element in the selector. */
 div.maplibregl-map { font-size: var(--fs-label); }
@@ -5210,7 +5187,6 @@ div.maplibregl-map { font-size: var(--fs-label); }
    In the light scheme they take the same paper ground and white cards as everything
    else. The viewfinder is the one exception, and keeps its own block above: a camera
    feed is an image, not a surface. Colours only; nothing here moves anything. */
-:root[data-theme="light"] .synced,
 :root[data-theme="light"] .walk,
 :root[data-theme="light"] .nowhere,
 :root[data-theme="light"] .paywall,

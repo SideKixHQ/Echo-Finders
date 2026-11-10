@@ -145,6 +145,8 @@ await p.evaluate(() => document.fonts.ready);
 // First run is one screen: Find echoes near me asks for the location and opens the map.
 await p.getByRole('button', { name: 'Find echoes near me' }).click();
 await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
+// "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
+await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
 await p.waitForTimeout(4500);
 // Walking opens on the rose. The map, which is what these measure, is one tap behind it.
 await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
@@ -183,13 +185,12 @@ await phase('map', async () => {});
 await phase('plan', async () => {
   /*
    * The listener stands at Battery Park, on Castle Clinton and near the Charging Bull.
-   * Once a walk is picked below, standing there syncs one, and its card covers the screen
-   * a second or several later: on a busy machine that landed on the button this phase
-   * presses next (seen in two full gates, 2026-10-12, and reproduced on main with the CPU
-   * slowed). It is the app working, and nothing measured here is under the card, so it
-   * is let through as audit-flows does.
+   * Once a walk is picked below, standing there syncs one, and its toast lands a second or
+   * several later: on a busy machine the old full screen card landed on the button this
+   * phase presses next (seen in two full gates, 2026-10-12). It is the app working, and
+   * nothing measured here is under the toast, so it is let through as audit-flows does.
    */
-  await p.addStyleTag({ content: '.synced { pointer-events: none !important; }' });
+  await p.addStyleTag({ content: '.toast-dock .toast { pointer-events: none !important; }' });
   // An open echo stands the rail down, which is deliberate. Close it first.
   if (await p.locator('.pop-close').count()) {
     await p.locator('.pop-close').click();

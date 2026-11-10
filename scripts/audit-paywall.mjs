@@ -68,6 +68,8 @@ async function standAtCastleClinton(heard, { handsFree = false } = {}) {
   // First run is one screen: Find echoes near me asks for the location and opens the map.
   await p.getByRole('button', { name: 'Find echoes near me' }).click();
   await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
+  // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
+  await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
   await p.waitForTimeout(3000);
   await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
   await p.waitForTimeout(600);
@@ -99,13 +101,13 @@ async function holdStill(p, ctx, until, tries = 20) {
 }
 
 /**
- * Press play the way a listener would. Arriving puts up the Synced card, whose creature
- * is the play button; once that has been dismissed, it is the popup's Play.
+ * Press play the way a listener would. Arriving puts up the synced toast, which plays
+ * when tapped; once that has been dismissed, it is the popup's Play.
  */
 async function playHere(p, ctx) {
-  const ready = async () => (await p.locator('.synced-press, .pop-go').count()) > 0;
+  const ready = async () => (await p.locator('.toast-synced .toast-play, .pop-go').count()) > 0;
   await holdStill(p, ctx, ready);
-  const synced = p.locator('.synced-press');
+  const synced = p.locator('.toast-synced .toast-play');
   await ((await synced.count()) ? synced.first() : p.locator('.pop-go').first()).click();
   await p.waitForTimeout(700);
 }
@@ -143,7 +145,7 @@ const spent = (n) => Array.from({ length: n }, (_, i) => `elsewhere-${i}`);
   await p.waitForTimeout(3500);
   await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
   await p.getByRole('button', { name: /^Open: / }).click().catch(() => {});
-  await holdStill(p, ctx, async () => (await p.locator('.synced-press, .pop-go').count()) > 0);
+  await holdStill(p, ctx, async () => (await p.locator('.toast-synced .toast-play, .pop-go').count()) > 0);
   const kept = await store(p, 'echo-finders:entitlement');
   check('the pass survives a reload', kept?.cities?.includes('new-york'), JSON.stringify(kept));
   await ctx.close();

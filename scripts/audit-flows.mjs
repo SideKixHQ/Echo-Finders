@@ -63,6 +63,8 @@ async function freshApp() {
   // First run is one screen: Find echoes near me asks for the location and opens the map.
   await p.getByRole('button', { name: 'Find echoes near me' }).click();
   await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
+  // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
+  await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
   await p.waitForTimeout(2000);
   await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
   await p.waitForTimeout(600);
@@ -185,6 +187,8 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   // First run is one screen: Find echoes near me asks for the location and opens the map.
   await p.getByRole('button', { name: 'Find echoes near me' }).click();
   await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
+  // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
+  await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
   await p.waitForTimeout(2500);
   const city = p.locator('.city-card-kick');
   if (!(await visible(city))) await p.getByRole('button', { name: /Show me where they are/ }).click().catch(() => {});
@@ -224,6 +228,8 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
       (await onb.getByRole('button').count()) === 1 && (await onb.getByText(/Get started|Skip|Continue/).count()) === 0);
     await onb.getByRole('button', { name: 'Find echoes near me' }).click();
     await onb.waitFor({ state: 'detached', timeout: 20000 }).catch(() => {});
+    // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
+    await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
     await p.waitForTimeout(1500);
     check('First run: Find echoes near me opens the map', !(await onb.count()) && await visible(p.locator('.nav')));
     check('First run: and uses the location it asked for', !(await visible(p.getByText('Where are you?'))));
@@ -241,6 +247,8 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
     check('First run: search finds a city', await visible(hit) && /Wilmington/.test(await hit.innerText()));
     await hit.click();
     await p.locator('.onb').waitFor({ state: 'detached', timeout: 10000 }).catch(() => {});
+    // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
+    await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
     await p.waitForTimeout(1500);
     check('First run: search opens the map there',
       !(await p.locator('.onb').count()) && /Wilmington/.test(await p.getByLabel(/Change your journey/).innerText().catch(() => '')));
@@ -266,6 +274,8 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   // First run is one screen: Find echoes near me asks for the location and opens the map.
   await p.getByRole('button', { name: 'Find echoes near me' }).click();
   await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
+  // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
+  await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
   await p.waitForTimeout(2000);
   const card = p.locator('.pop');
   check('Shared link: opens the story\'s card', await visible(card) && /The First Curtain/.test(await card.innerText()));
@@ -439,23 +449,42 @@ async function arrive() {
       await ctx.setGeolocation({ latitude: START.latitude + (CASTLE.latitude - START.latitude) * (i / 10), longitude: CASTLE.longitude });
       await p.waitForTimeout(500);
     }
-    for (let i = 0; i < 70 && !(await p.locator('.synced').count()); i++) {
+    for (let i = 0; i < 70 && !(await p.locator('.toast-synced').count()); i++) {
       await ctx.setGeolocation({ ...CASTLE, latitude: CASTLE.latitude + (i % 2) * 0.00001 });
       await p.waitForTimeout(700);
     }
-    if (await p.locator('.synced').count()) return { ctx, p };
+    if (await p.locator('.toast-synced').count()) return { ctx, p };
     await ctx.close();
   }
   return null;
 }
 {
   const arrived = await arrive();
-  check('Arriving: the sync card appears', arrived !== null);
+  // The sync moment is a toast (`Toasts.tsx`, B): it syncs, then you tap Play.
+  check('Arriving: the synced toast appears', arrived !== null);
   if (arrived) {
     const { ctx, p } = arrived;
-    await p.locator('.synced-later').click().catch(() => {});
+    const toast = p.locator('.toast-synced');
+    check('Synced toast: names the echo and says tap to play',
+      /Synced · tap to play/.test(await toast.innerText()) && /Eight million/.test(await toast.innerText()));
+    check('Synced toast: announced, inside a status region',
+      (await p.locator('.toast-dock[role="status"] .toast-synced').count()) === 1);
+    const box = await toast.boundingBox();
+    const nav = await p.locator('.nav').boundingBox();
+    check('Synced toast: clear of the tab bar', box !== null && nav !== null && box.y + box.height <= nav.y,
+      JSON.stringify({ box, nav }));
+    // Next, on its own row: the nearest echo still waiting, and how far a walk it is.
+    const next = p.locator('.toast-synced .toast-act-next');
+    check('Synced toast: offers Next with a walking time',
+      /^Next · \d+ min walk/.test((await next.innerText().catch(() => '')).trim()));
+    const nb = await next.boundingBox();
+    check('Synced toast: Next is a 44px target', nb !== null && nb.height >= 44, JSON.stringify(nb));
+    const close = p.locator('.toast-synced .toast-close');
+    const cb = await close.boundingBox();
+    check('Synced toast: the ✕ is a 44px target', cb !== null && cb.width >= 44 && cb.height >= 44, JSON.stringify(cb));
+    await close.click().catch(() => {});
     await p.waitForTimeout(500);
-    check('Sync card: "Keep it for later" closes it', !(await visible(p.locator('.synced'))));
+    check('Synced toast: ✕ closes it', !(await visible(p.locator('.toast-synced'))));
 
     await p.getByRole('button', { name: /^Open: Eight million/ }).click().catch(() => {});
     await p.waitForTimeout(600);
@@ -546,10 +575,10 @@ async function arrive() {
     await p.waitForTimeout(300);
     await p.locator('.jmenu-item', { hasText: 'Ocean Drive' }).first().click();
     await p.waitForTimeout(1500);
-    // Ocean Drive starts beside its own echoes, so a sync card can land in that second and a
-    // half and sit over the nav. Clear it, as the reload below does, before going to My Echoes.
-    for (let i = 0; i < 4 && (await p.locator('.synced').count()); i++) {
-      await p.locator('.synced-later').click().catch(() => {});
+    // Ocean Drive starts beside its own echoes, so a synced toast can land in that second and
+    // a half. Clear it, as the reload below does, before going to My Echoes.
+    for (let i = 0; i < 4 && (await p.locator('.toast-synced').count()); i++) {
+      await p.locator('.toast-synced .toast-close').click().catch(() => {});
       await p.waitForTimeout(400);
     }
     await p.locator('.nav').getByRole('button', { name: /My Echoes/ }).click();
@@ -561,20 +590,109 @@ async function arrive() {
     // The reload reopens the Lower Manhattan demo walk, which reaches the fort a few seconds
     // in: a genuine new sync on that journey. Clear it, however late it lands, first.
     for (let i = 0; i < 16; i++) {
-      if (await p.locator('.synced').count()) await p.locator('.synced-later').click().catch(() => {});
+      if (await p.locator('.toast-synced').count()) await p.locator('.toast-synced .toast-close').click().catch(() => {});
       await p.waitForTimeout(500);
     }
-    // A later demo card must not block the taps; it is still counted below if it is the fort.
-    await p.addStyleTag({ content: '.synced { pointer-events: none !important; }' });
+    // A later demo toast must not block the taps; it is still counted below if it is the fort.
+    await p.addStyleTag({ content: '.toast-dock .toast { pointer-events: none !important; }' });
     await p.getByLabel(/Change your journey/).click();
     await p.waitForTimeout(300);
     await p.locator('.jmenu-mode', { hasText: 'Walk' }).click();
     await p.locator('.jmenu-item', { hasText: 'Around here' }).first().click();
     await p.waitForTimeout(2500);
-    check('Sync card: going back to a journey does not replay an old find',
-      !(await p.locator('.synced', { hasText: 'Eight million' }).count()));
+    check('Synced toast: going back to a journey does not replay an old find',
+      !(await p.locator('.toast-synced', { hasText: 'Eight million' }).count()));
     await ctx.close();
   }
+}
+
+// ── Synced toast: Next opens the next echo's card, and starts no directions ──────
+{
+  const arrived = await arrive();
+  if (arrived) {
+    const { ctx, p } = arrived;
+    const next = p.locator('.toast-synced .toast-act-next');
+    const name = ((await next.getAttribute('aria-label')) ?? '').replace(/^Next[^:]*: /, '');
+    await next.click().catch(() => {});
+    await p.waitForTimeout(800);
+    check('Synced toast: Next opens that echo\'s card',
+      name.length > 0 && await visible(p.locator('.pop', { hasText: name.slice(0, 20) })), name);
+    check('Synced toast: Next closes the toast', !(await p.locator('.toast-synced').count()));
+    check('Synced toast: Next starts no directions', !(await visible(p.locator('.dirbar'))));
+    await ctx.close();
+  } else check('Synced toast: arrives again for Next', false);
+}
+
+// ── How echoes unlock, once, after first run ────────────────────────────────────
+{
+  const ctx = await browser.newContext({
+    viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
+    ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: START,
+  });
+  await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  const p = await ctx.newPage();
+  p.setDefaultTimeout(6000);
+  p.on('pageerror', (e) => errors.push(e.message));
+  await p.goto(`http://127.0.0.1:${PORT}/`, { waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(800);
+  await p.getByRole('button', { name: 'Find echoes near me' }).click();
+  await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 }).catch(() => {});
+  check('How echoes unlock: shown after the first run',
+    await visible(p.getByRole('dialog', { name: 'How echoes unlock' })));
+  check('How echoes unlock: three steps', (await p.locator('.how-step').count()) === 3);
+  await p.getByRole('button', { name: 'Got it' }).click().catch(() => {});
+  await p.waitForTimeout(500);
+  check('How echoes unlock: Got it closes it to the map',
+    !(await visible(p.locator('.how'))) && await visible(p.locator('.nav')));
+  await p.reload({ waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(2500);
+  check('How echoes unlock: only once', !(await p.locator('.how').count()));
+  await ctx.close();
+}
+
+// ── An echo is close: within 150 m, once, and Show me opens it ──────────────────
+// 120 m north of the fort: inside the toast's 150 m, outside the fort's own radius.
+const NEAR = { latitude: 40.70439, longitude: CASTLE.longitude };
+async function nearby() {
+  for (let tries = 0; tries < 3; tries++) {
+    const { ctx, p } = await freshApp();
+    for (let i = 0; i <= 6; i++) {
+      await ctx.setGeolocation({ latitude: START.latitude + (NEAR.latitude - START.latitude) * (i / 6), longitude: NEAR.longitude });
+      await p.waitForTimeout(500);
+    }
+    for (let i = 0; i < 20 && !(await p.locator('.toast-near').count()); i++) {
+      await ctx.setGeolocation({ ...NEAR, latitude: NEAR.latitude + (i % 2) * 0.00001 });
+      await p.waitForTimeout(500);
+    }
+    if (await p.locator('.toast-near').count()) return { ctx, p };
+    await ctx.close();
+  }
+  return null;
+}
+{
+  const first = await nearby();
+  check('Nearby toast: appears within 150 m', first !== null);
+  if (first) {
+    const { ctx, p } = first;
+    check('Nearby toast: says how close', /An echo is close · \d+ m/.test(await p.locator('.toast-near').innerText()));
+    check('Nearby toast: the pin glows', (await p.locator('g.pin-near').count()) > 0);
+    // Slides away by itself after six seconds.
+    await p.waitForTimeout(7000);
+    check('Nearby toast: slides away after six seconds', !(await p.locator('.toast-near').count()));
+    // Once per echo: still standing there, it does not come back.
+    await p.waitForTimeout(2000);
+    check('Nearby toast: once per echo', !(await p.locator('.toast-near').count()));
+    await ctx.close();
+  }
+  const second = await nearby();
+  if (second) {
+    const { ctx, p } = second;
+    await p.getByRole('button', { name: /^Show me/ }).click().catch(() => {});
+    await p.waitForTimeout(800);
+    check('Nearby toast: Show me opens the echo', await visible(p.locator('.pop', { hasText: 'Eight million' })));
+    check('Nearby toast: and goes', !(await p.locator('.toast-near').count()));
+    await ctx.close();
+  } else check('Nearby toast: appears again on a fresh start', false);
 }
 
 await browser.close();

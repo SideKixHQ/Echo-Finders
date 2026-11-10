@@ -35,6 +35,9 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 css = re.sub(r"/\*.*?\*/", "", (ROOT / "apps/prototype/src/theme.css").read_text(), flags=re.S)
 
 def vars_in(block):
+    # Comments out first: a comment that mentions "--btn:" was read as a declaration and
+    # swallowed the real one after it (--aqua-ink came back unresolved).
+    block = re.sub(r'/\*.*?\*/', '', block, flags=re.S)
     out = {}
     for k, v in re.findall(r'(--[\w-]+)\s*:\s*([^;]+);', block):
         out[k.strip()] = v.strip()
@@ -118,6 +121,11 @@ CHECKS = [
     ("muted-soft/sheet",  "--muted-soft", "--slate"),
     ("magenta-ink/sheet", "--magenta-ink", "--slate"),
     ("body on charcoal",  "--white",  "--charcoal"),
+    # The sync toasts (Toasts.tsx): their words, on their own surfaces.
+    ("white on toast",   "--white",  "--toast-bg"),
+    ("cool on toast",    "--cool",   "--toast-bg"),
+    ("aqua on synced",   "--aqua-ink", "--toast-synced-bg"),
+    ("cool on synced",   "--cool",   "--toast-synced-bg"),
 ]
 CATS = [k for k in DARK if k.startswith("--cat-")]
 
@@ -131,6 +139,11 @@ CONTROLS = [
     ("button fill",  "--btn-flat",   ["--space", "--slate", "--charcoal"]),
     ("found pin",    "--ember",      ["--space"]),
     ("you, on map",  "--aqua",       ["--space"]),
+    # Each toast's edge says which toast it is, and the lock is its only picture.
+    ("near toast",   "--ember",      ["--toast-bg"]),
+    ("locked toast", "--indigo-soft", ["--toast-bg"]),
+    ("synced toast", "--aqua",       ["--toast-synced-bg"]),
+    ("show me",      "--btn-flat",   ["--toast-bg"]),
 ]
 
 # Labels sitting on top of a filled control, which is a text check against the fill.

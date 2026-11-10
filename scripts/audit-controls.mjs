@@ -358,6 +358,9 @@ await capture('onboarding/welcome');
 // First run is one screen: Find echoes near me asks for the location and opens the map.
 await p.getByRole('button', { name: 'Find echoes near me' }).click();
 await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
+if (await p.locator('.how').count()) await capture('onboarding/how-echoes-unlock');
+// "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
+await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
 await p.waitForTimeout(4500);
 /*
  * Walking opens on the rose, which is its own screen and worth inventorying. The map is

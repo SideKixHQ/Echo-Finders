@@ -58,18 +58,17 @@ const SCREENS = {
     { sel: '.map-edge-plate', gapAbove: '.rail', gap: 10, clear: 24, optional: true },
     { sel: '.nav', whole: true },
   ],
+  /*
+   * The sync moment is a toast now (`Toasts.tsx`, B), not a full screen card: it sits on
+   * both gutters under the top bar, and the way to play it and the ✕ are wholly on screen
+   * at every size, an SE in Safari included.
+   */
   synced: [
-    { sel: '.synced-orb', centre: true, whole: true },
-    { sel: '.synced-kicker', centre: true, whole: true },
-    { sel: '.synced-say h2', centre: true, whole: true },
-    { sel: '.synced-where', centre: true, whole: true },
-    // Only on an echo with a reason to be hard (`rarityReasons`). Castle Clinton, which this
-    // audit syncs, is on the main walk and earns none since rarity stopped scoring the
-    // standard radius (docs/13-story-mix.md), so the panel is rightly absent there.
-    { sel: '.synced-rare', centre: true, whole: true, optional: true },
-    { sel: '.synced-later', centre: true, whole: true },
-    // The stack as a whole: as much room above the orb as below the button.
-    { sel: '.synced', stack: ['.synced-orb', '.synced-later'] },
+    { sel: '.toast-synced', left: true, right: true, whole: true },
+    { sel: '.toast-synced .toast-play', whole: true },
+    { sel: '.toast-synced .toast-close', whole: true },
+    // Clear of the tab bar: the toast never covers the way to another tab.
+    { sel: '.nav', whole: true },
   ],
   player: [
     { sel: '.hear-back', left: true, whole: true },
@@ -180,6 +179,8 @@ async function onboard(p) {
   // Captures made before first run closes are history, not a moment, and get no card
   // (App.tsx), so the walk only starts once the map is properly up.
   await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
+  // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
+  await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
   await p.waitForTimeout(2500);
   await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
   await p.waitForTimeout(1500);
@@ -206,25 +207,25 @@ async function holdStill(p, ctx, until) {
  */
 const SETUP = {
   map: { heard: 0, ready: '.mapbar', steps: async () => {} },
-  synced: { heard: 0, ready: '.synced', steps: async (p, ctx) => {
-    await holdStill(p, ctx, async () => (await p.locator('.synced').count()) > 0);
-    await p.waitForTimeout(1200); // the card animates in
+  synced: { heard: 0, ready: '.toast-synced', steps: async (p, ctx) => {
+    await holdStill(p, ctx, async () => (await p.locator('.toast-synced').count()) > 0);
+    await p.waitForTimeout(800); // the toast slides in
   } },
   player: { heard: 0, ready: '.hear', steps: async (p, ctx) => {
-    await holdStill(p, ctx, async () => (await p.locator('.synced').count()) > 0);
-    await p.locator('.synced-press').click({ force: true });
+    await holdStill(p, ctx, async () => (await p.locator('.toast-synced').count()) > 0);
+    await p.locator('.toast-synced .toast-play').click({ force: true });
     await p.waitForTimeout(1500);
   } },
   popup: { heard: 0, ready: '.pop', steps: async (p, ctx) => {
-    await holdStill(p, ctx, async () => (await p.locator('.synced').count()) > 0);
-    await p.locator('.synced-later').click();
+    await holdStill(p, ctx, async () => (await p.locator('.toast-synced').count()) > 0);
+    await p.locator('.toast-synced .toast-close').click();
     await p.waitForTimeout(500);
     await p.getByRole('button', { name: /^Open: Eight million/ }).click();
     await p.waitForTimeout(800);
   } },
   paywall: { heard: 10, ready: '.paywall', steps: async (p, ctx) => {
-    await holdStill(p, ctx, async () => (await p.locator('.synced').count()) > 0);
-    await p.locator('.synced-press').click({ force: true });
+    await holdStill(p, ctx, async () => (await p.locator('.toast-synced').count()) > 0);
+    await p.locator('.toast-synced .toast-play').click({ force: true });
     await p.waitForTimeout(800);
   } },
 };
