@@ -536,6 +536,18 @@ export function App() {
    * column has to be able to clear it, and only App can see both.
    */
   const [pan, setPan] = useState({ x: 0, y: 0 });
+  /**
+   * "Go to my location": how many times it has been tapped, so the map can tell a fresh
+   * tap from a re-render and put you in the middle at street level (`RouteMap`).
+   */
+  const [locateTap, setLocateTap] = useState(0);
+  /**
+   * The listener asked to see where they are, so the map stays up even with no echo
+   * near them. "Back to me", the pill this replaced, cleared the place being looked at
+   * and so dropped anybody far from an echo onto "Nothing within 2.4km", which has no map
+   * and no you on it: from home it never went back to you at all (found 2026-11-10).
+   */
+  const [showMe, setShowMe] = useState(false);
   const [tab, setTab] = useState<Tab>("map");
   /**
    * The echo somebody sent this phone a link to (`?echo=`, `share.ts`), or null.
@@ -1497,8 +1509,9 @@ export function App() {
    * Only computed when there is nothing in range, which is the only time anything asks.
    */
   const WIDEN_TO_KM = 16;
-  // Not while looking somewhere else: that map has its own echoes, and the pill says so.
-  const nowhere = roaming && !lookAt && state.nearby.length === 0;
+  // Not while looking somewhere else: that map has its own echoes. Not once somebody
+  // has asked for the map at their own position either: that is the answer they wanted.
+  const nowhere = roaming && !lookAt && !showMe && state.nearby.length === 0;
   const nearestAnywhere = useMemo(() => {
     if (!nowhere) return null;
     const from = state.position?.at ?? null;
@@ -1531,6 +1544,23 @@ export function App() {
    * now.
    */
   const showBar = !showingRose && !(nowhere && !overview) && stepList.length > 0;
+
+  /** The map is on you and moving with you: what lights the locate button. */
+  const located =
+    state.position !== null && !overview && !(roaming && lookAt) && pan.x === 0 && pan.y === 0;
+  const locate = () => {
+    setLookAt(null);
+    setFocusId(null);
+    if (!state.position) {
+      // No fix yet: ask for one. "Where are you?" takes it from there.
+      void gps.start();
+      return;
+    }
+    setOverview(false);
+    setPan({ x: 0, y: 0 });
+    setShowMe(true);
+    setLocateTap((n) => n + 1);
+  };
 
   /**
    * What walk mode is pointing at.
@@ -1978,6 +2008,7 @@ export function App() {
                 onZoom={setZoom}
                 pan={pan}
                 onPan={setPan}
+                locateTap={locateTap}
                 lookAt={roaming ? lookAt?.at ?? null : null}
                 directions={directions.kind === "route" ? directions.route.line : null}
                 aimId={beacon}
@@ -2039,47 +2070,16 @@ export function App() {
                   }}
                 />
               )}
-              {roaming && lookAt && (
-                <button
-                  className="look-back"
-                  aria-label={
-                    state.position
-                      ? `Looking at ${lookAt.label}. Back to where I am`
-                      : `Looking at ${lookAt.label}. Look somewhere else`
-                  }
-                  onClick={() => {
-                    setLookAt(null);
-                    setPan({ x: 0, y: 0 });
-                    setZoom(1);
-                  }}
-                >
-                  {/* Where it is looking is on the journey chip already; this says how back.
-                      With no fix there is no "me" to go back to: it goes back to "Where are
-                      you?", which is where another place is typed (found 2026-10-13). */}
-                  {state.position ? (
-                    <>
-                      <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <circle cx="12" cy="12" r="3" />
-                        <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
-                      </svg>
-                      Back to me
-                    </>
-                  ) : (
-                    <>
-                      <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <circle cx="11" cy="11" r="6.5" />
-                        <path d="M16 16l4.5 4.5" />
-                      </svg>
-                      Somewhere else
-                    </>
-                  )}
-                </button>
-              )}
               {/* A place with nothing in it said nothing: an empty navy screen (90210, found
                   2026-10-13). */}
               {roaming && lookAt && onMap.length === 0 && (
                 <p className="look-empty" role="status">
                   No echoes near {lookAt.label.replace(/^ZIP /, "")} yet. We are adding cities.
+                </p>
+              )}
+              {roaming && !lookAt && showMe && onMap.length === 0 && (
+                <p className="look-empty" role="status">
+                  No echoes near you yet. Search a city or ZIP to hear one somewhere else.
                 </p>
               )}
 
@@ -2185,14 +2185,18 @@ export function App() {
                   leave the offset in place.
                 */
                 onOverview={(next) => {
-                  const wasPanned = pan.x !== 0 || pan.y !== 0;
                   setPan({ x: 0, y: 0 });
-                  // Dragged away while following: the button says "Back to where I am",
-                  // so that is all it does. It used to switch to the whole journey too.
-                  if (wasPanned && !overview) return;
                   setOverview(next);
                 }}
-                panned={pan.x !== 0 || pan.y !== 0}
+                /*
+                  "Go to my location", the arrow every maps app has. It replaces the
+                  "Back to me" pill (James, 2026-11-10: "it seems to be in the way and
+                  doesnt really work anyway") and the framing button's old third job,
+                  "Back to where I am" after a drag. One tap: stop looking elsewhere,
+                  leave the overview, centre on you at street level, and follow.
+                */
+                following={located}
+                onLocate={locate}
                 overviewLabel={roaming ? (plan ? "Whole route" : "Echoes around me") : "Whole journey"}
                 /*
                   Leaving the map hands back the WALK when there is one, and the survey
@@ -2626,7 +2630,7 @@ export function App() {
                 setTab("map");
                 /*
                   Exploring, "Go" looks at the place, the way a ZIP or a place search does:
-                  centred on it, its nearest echoes in view, "Back to me" to return. It
+                  centred on it, its nearest echoes in view, the locate arrow to return. It
                   switched on the overview instead, which with no location framed the whole
                   library, and off centre: North Carolina pinned to the left edge of the
                   Atlantic (James, 2026-10-13: "shouldnt it be centered?").

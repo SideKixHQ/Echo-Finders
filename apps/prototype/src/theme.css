@@ -2072,6 +2072,14 @@ body {
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
 .fab.on { background: var(--aqua); color: var(--on-aqua); border-color: var(--aqua); }
+/*
+ * Go to my location (`Rail.tsx`). The arrow is filled aqua while the map is on you and
+ * following, and an outline once you have dragged away, which is how every maps app says
+ * "tap to come back". Not `.on`: a solid aqua tile reads as a switch, and this is not one.
+ */
+.fab-locate svg { width: 20px; height: 20px; stroke-width: 1.8; }
+.fab-locate.following { color: var(--aqua); }
+.fab-locate.following svg { fill: currentColor; }
 
 /*
  * HOVER: what a button does, said beside it (James, 2026-10-12: "make sure the map icons
@@ -4701,8 +4709,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* Open, the box sits over the control column; the map bar is its stacking context, and at
    18 it lost to the column's 26, which drew the pulse button over "Landmarks". */
 .mapbar:has(.kind-box) { z-index: 45; }
-/* The journey menu too. It is drawn inside the bar's layer, so "Back to me" (27) showed
-   through it, sitting on the Walk / Drive / Fly switch (found 2026-10-12). */
+/* The journey menu too. It is drawn inside the bar's layer, so the pill that used to sit
+   under it (27) showed through it, on the Walk / Drive / Fly switch (found 2026-10-12). */
 .mapbar:has(.jmenu) { z-index: 45; }
 
 /*
@@ -4767,25 +4775,14 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   50% { box-shadow: 0 0 0 4px rgba(0, 240, 220, 0.22), 0 0 18px rgba(0, 240, 220, 0.28); }
 }
 @media (prefers-reduced-motion: reduce) { .jmenu-look.featured .jmenu-look-field { animation: none; } }
-.look-back {
-  position: absolute; left: 50%; transform: translateX(-50%); z-index: 27;
-  top: calc(var(--top-gap, 12px) + var(--mapbar-h, 56px) + 8px);
-  display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px 0 12px;
-  border-radius: 999px; border: 0; cursor: pointer;
-  background: var(--aqua); color: var(--on-aqua); font: inherit; font-size: var(--fs-button); font-weight: 500;
-  box-shadow: 0 6px 18px rgba(var(--rgb-shadow), calc(0.45 * var(--shadow-k)));
-}
-/* Under "Back to me", when the place looked up has no echoes yet. */
+/* Under the top bar, when the place looked up (or where you are) has no echoes yet. The
+   "Back to me" pill that sat between them is gone: the locate arrow on the column does it. */
 .look-empty {
   position: absolute; left: var(--gutter); right: var(--gutter); z-index: 26; margin: 0;
-  top: calc(var(--top-gap, 12px) + var(--mapbar-h, 56px) + 60px);
+  top: calc(var(--top-gap, 12px) + var(--mapbar-h, 56px) + 8px);
   padding: 12px 14px; border-radius: 14px; text-align: center;
   font-size: var(--fs-secondary); line-height: 1.4; color: var(--white);
   background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line-2);
-}
-.look-back svg {
-  width: 18px; height: 18px; fill: none; stroke: currentColor;
-  stroke-width: 2; stroke-linecap: round;
 }
 
 /*
@@ -5165,7 +5162,6 @@ body.seat { padding: 0; display: block; }
 }
 .seat .pw, .seat .atr { left: 0; width: var(--panel-w); border-radius: 0 22px 0 0; }
 .seat .echobar { right: auto; width: var(--panel-w); }
-.seat .look-back { left: calc(var(--panel-w) / 2); }
 /* The tab bar: three tabs, not three tabs 640px apart. */
 .seat .nav { justify-content: center; }
 .seat .nav button { flex: 0 0 200px; }
