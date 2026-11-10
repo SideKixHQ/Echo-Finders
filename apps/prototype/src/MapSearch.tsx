@@ -179,7 +179,7 @@ export function MapSearch({ library, saved, onLook, onGo, onSave }: MapSearchPro
                       <small>{town}</small>
                       {isSaved && justSaved === echo.id && (
                         <small className="msearch-note" role="status">
-                          Saved to My Echoes
+                          Saved to My echoes
                         </small>
                       )}
                     </span>

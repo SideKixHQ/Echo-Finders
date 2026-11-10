@@ -1289,7 +1289,7 @@ export function App() {
    * map. "Just this one" is now a single tap on that chip, so All only ever means all.
    */
   const allCategories = useCallback(() => setCats(null), []);
-  /** "Saved to My Echoes": which echo was just saved, for the toast that says where it went. */
+  /** "Saved to My echoes": which echo was just saved, for the toast that says where it went. */
   const [savedToast, setSavedToast] = useState<string | null>(null);
   // Leaving the map lets it go, so it does not come back on the way in again.
   useEffect(() => setSavedToast(null), [tab]);

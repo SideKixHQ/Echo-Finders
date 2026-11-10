@@ -553,7 +553,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
     .map((e) => e.textContent.trim() || e.getAttribute('aria-label')));
 
   // Empty, it says what to do next, and the routes' empty state is a heading and a line.
-  await nav.getByRole('button', { name: /My Echoes/ }).click();
+  await nav.getByRole('button', { name: /My echoes/i }).click();
   await p.waitForTimeout(500);
   const find = p.locator('.screen-body').getByRole('button', { name: 'Find echoes near me' });
   check('My Echoes empty: a next step, Find echoes near me', await visible(find));
@@ -579,7 +579,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   const near = (await card.locator('h3').innerText().catch(() => '')).trim();
   await card.locator('.pop-acts').getByRole('button', { name: 'Save', exact: true }).click().catch(() => {});
   await p.waitForTimeout(400);
-  check('Saved: the card says Saved to My Echoes', await visible(p.locator('.toast-saved', { hasText: 'Saved to My Echoes' })));
+  check('Saved: the card says Saved to My echoes', await visible(p.locator('.toast-saved', { hasText: 'Saved to My echoes' })));
   await p.locator('.pop-close').click().catch(() => {});
   await p.waitForTimeout(300);
 
@@ -592,12 +592,12 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   const far = (await row.locator('b').innerText().catch(() => '')).trim();
   await row.locator('.msearch-save').click().catch(() => {});
   await p.waitForTimeout(300);
-  check('Saved: the search row says Saved to My Echoes', await visible(row.getByText('Saved to My Echoes')));
+  check('Saved: the search row says Saved to My echoes', await visible(row.getByText('Saved to My echoes')));
   await p.getByRole('button', { name: 'Close search' }).click().catch(() => {});
   await p.waitForTimeout(300);
 
   // My Echoes lists both, the one near and the one a city away.
-  await nav.getByRole('button', { name: /My Echoes/ }).click();
+  await nav.getByRole('button', { name: /My echoes/i }).click();
   await p.waitForTimeout(600);
   const saved = p.locator('section[aria-label="Saved"]');
   check('Saved: My Echoes has a Saved section', await visible(saved.getByRole('heading', { name: /^Saved · 2$/ })));
@@ -611,7 +611,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.reload({ waitUntil: 'domcontentloaded' });
   await p.waitForTimeout(2500);
   await p.locator('.how-go').click({ timeout: 1500 }).catch(() => {});
-  await nav.getByRole('button', { name: /My Echoes/ }).click().catch(() => {});
+  await nav.getByRole('button', { name: /My echoes/i }).click().catch(() => {});
   await p.waitForTimeout(600);
   check('Saved: a reload keeps what was saved', await visible(saved.getByRole('heading', { name: /^Saved · 2$/ }))
     && await visible(saved.locator('.entry-wish', { hasText: far })));

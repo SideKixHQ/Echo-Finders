@@ -142,7 +142,7 @@ export function SyncedToast({
   );
 }
 
-/** How long "Saved to My Echoes" stays, ms: long enough to read, gone before it is in the way. */
+/** How long "Saved to My echoes" stays, ms: long enough to read, gone before it is in the way. */
 export const SAVED_SHOW_MS = 3200;
 
 /**
@@ -171,7 +171,7 @@ export function SavedToast({
         </svg>
       </span>
       <span className="toast-words">
-        <b>Saved to My Echoes</b>
+        <b>Saved to My echoes</b>
         <span>{title}</span>
       </span>
       <Close onClick={leave} />
