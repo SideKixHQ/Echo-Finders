@@ -5522,6 +5522,25 @@ div.maplibregl-map { font-size: var(--fs-label); }
   flex: 0 1 120px; min-height: 0; height: 120px; margin: 0 0 14px;
 }
 .pop .pop-plate img { height: 100%; }
+.pop.pop-pinched .pop-plate { display: none; }
+/* A strip of a photograph holds one label, not three: under 90px the year caption goes,
+   so it never runs into the credit and the Then & now badge. */
+.pop .pop-plate { container-type: size; }
+@container (max-height: 90px) {
+  .pop-plate > span.mono { display: none; }
+}
+/*
+ * No text on the sheet is ever cut short (James's rule). The place and the teaser wrap
+ * in full; on a short screen the place keeps its first part ("St. James Episcopal
+ * Church") and the rest of the address goes, which is a whole name, not a cut one.
+ */
+.pop .pop-where {
+  display: block; -webkit-line-clamp: none; overflow: visible;
+  white-space: normal; text-overflow: clip;
+}
+.pop .pop-teaser {
+  display: block; -webkit-line-clamp: none; overflow: visible; text-overflow: clip;
+}
 
 /* Kind on the left, ✕ on the right, on one line; the title has the full width below. */
 .pop-head { display: flex; align-items: center; gap: 8px; min-height: 22px; }
@@ -5548,10 +5567,10 @@ div.maplibregl-map { font-size: var(--fs-label); }
 @media (max-height: 760px) {
   .pop .pop-plate { flex-basis: 88px; height: 88px; margin-bottom: 10px; }
   .pop h3 { font-size: 22px; margin-top: 4px; }
-  .pop .pop-where { -webkit-line-clamp: 1; }
+  .pop .pop-where-rest { display: none; }
   .pop .pop-truth { display: none; }
   .pop .pop-truth-inline { display: inline-flex; }
-  .pop .pop-teaser { margin-top: 6px; -webkit-line-clamp: 1; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
+  .pop .pop-teaser { margin-top: 6px; }
   .pop:has(.pop-tip-ok) .pop-teaser { display: none; }
   .pop-primary { margin-top: 12px; gap: 8px; }
   .pop .pop-acts { margin-top: 12px; }
@@ -5561,9 +5580,6 @@ div.maplibregl-map { font-size: var(--fs-label); }
   .pop { padding-bottom: 10px; }
   .pop-handle { height: 22px; }
   .pop .pop-plate { flex-basis: 64px; height: 64px; }
-  .pop .pop-teaser { display: none; }
-  .pop:has(.pop-tip-ok) .pop-plate { display: none; }
-  .pop:has(.pop-tip-ok) .pop-where { display: none; }
   .pop .pop-acts { bottom: -10px; margin-bottom: -10px; padding-bottom: 10px; }
   .pop .pop-kicker { font-size: var(--fs-label); letter-spacing: 0.04em; }
   .pop .pop-close { padding: 0; }

@@ -224,6 +224,31 @@ export function EchoPopup({
   }, []);
 
   /*
+    The photograph is the first thing to give way when the sheet runs out of room: it
+    shrinks (it is the one flexible thing in the column), and once it would be a sliver
+    it goes altogether. It stays gone until the room could change: another echo, the tip
+    dismissed, or the window resized; otherwise hiding it would make room and bring it back.
+  */
+  const [pinched, setPinched] = useState(false);
+  useEffect(() => setPinched(false), [echo.id, tip === undefined]);
+  useEffect(() => {
+    const again = () => setPinched(false);
+    window.addEventListener("resize", again);
+    return () => window.removeEventListener("resize", again);
+  }, []);
+  useLayoutEffect(() => {
+    const plate = sheetRef.current?.querySelector<HTMLElement>(".pop-plate");
+    if (!plate || pinched) return;
+    const check = () => {
+      if (plate.offsetHeight < 56) setPinched(true);
+    };
+    check();
+    const sizes = new ResizeObserver(check);
+    sizes.observe(plate);
+    return () => sizes.disconnect();
+  }, [pinched, echo.id, photo]);
+
+  /*
     The handle: drag the sheet down and let go past a short way (or flick it) and it
     closes; let go before that and it settles back. Pointer events, so a finger, a pen
     and a mouse all work, and the ✕ and Escape are still there for anyone who cannot drag.
@@ -259,6 +284,7 @@ export function EchoPopup({
     "Know more about this place?". Each one is still a tap away, under More.
   */
   const label = echo.point.place.split(",")[0] ?? echo.title;
+  const [placeHead, ...placeRest] = echo.point.place.split(",");
   // Walking stays in the app (James, 2026-11-10: no hand-off to Maps). Driving keeps its maps link.
   const mapsHref = ground && mode === "driving" ? driveThereUrl(echo.point.at, label) : null;
   const hasMore = mapsHref !== null || onReport !== undefined || onSuggest !== undefined;
@@ -266,7 +292,7 @@ export function EchoPopup({
   return (
     <div
       ref={sheetRef}
-      className={dragY ? "pop dragging" : "pop"}
+      className={`pop${pinched ? " pop-pinched" : ""}${dragY ? " dragging" : ""}`}
       role="dialog"
       aria-label={echo.title}
       style={dragY ? { transform: `translateY(${dragY}px)` } : undefined}
@@ -344,7 +370,11 @@ export function EchoPopup({
       </div>
 
       <h3>{echo.title}</h3>
-      <p className="pop-where">{echo.point.place}</p>
+      {/* The rest of the address after its first comma goes first on a short screen. */}
+      <p className="pop-where">
+        {placeHead}
+        {placeRest.length > 0 && <span className="pop-where-rest">,{placeRest.join(",")}</span>}
+      </p>
       {/* How long it is, beside the mark, so a long address cannot crop it off. */}
       <span className="pop-truth">
         <TruthMark echo={echo} />
