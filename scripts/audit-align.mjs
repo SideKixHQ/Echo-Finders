@@ -84,11 +84,11 @@ const SCREENS = {
   ],
   /*
    * The echo card is a bottom sheet (the Card board, 2026-11-10): edge to edge, never
-   * scrolling, its top clear of the map bar (search and chips), and the four round buttons
+   * scrolling, its top clear of the search box (the chips step aside), and the four round buttons
    * wholly inside it, on screen, at every size.
    */
   popup: [
-    { sel: '.pop', flush: true, fits: true, whole: true, clearOf: '.mapbar' },
+    { sel: '.pop', flush: true, fits: true, whole: true, clearOf: '.msearch' },
     { sel: '.pop-acts', inside: '.pop', whole: true },
     { sel: '.pop-primary', inside: '.pop', whole: true },
     // The ✕ belongs to the kicker line and sits on its centre line.

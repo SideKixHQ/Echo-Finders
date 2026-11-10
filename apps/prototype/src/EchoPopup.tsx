@@ -197,31 +197,7 @@ export function EchoPopup({
     return () => window.removeEventListener("keydown", esc);
   }, []);
 
-  /*
-    Never under a toast. With the card open a toast docks over the map bar, above the
-    sheet's ceiling; a taller one (a long title, a Next row) moves the ceiling down to its
-    own floor rather than lying over the card's top, and the photograph gives way for it.
-    Layout boxes, not painted ones, so the toast's slide in does not shake the sheet.
-  */
   const sheetRef = useRef<HTMLDivElement>(null);
-  useLayoutEffect(() => {
-    const sheet = sheetRef.current;
-    const dock = sheet?.closest(".screen")?.querySelector<HTMLElement>(".toast-dock");
-    if (!sheet || !dock) return;
-    const floor = () => {
-      const tall = dock.offsetHeight > 0 ? dock.offsetTop + dock.offsetHeight : 0;
-      sheet.style.setProperty("--toast-floor", `${tall}px`);
-    };
-    floor();
-    const sizes = new ResizeObserver(floor);
-    sizes.observe(dock);
-    const kids = new MutationObserver(floor);
-    kids.observe(dock, { childList: true, subtree: true });
-    return () => {
-      sizes.disconnect();
-      kids.disconnect();
-    };
-  }, []);
 
   /*
     The photograph is the first thing to give way when the sheet runs out of room: it
@@ -237,7 +213,7 @@ export function EchoPopup({
     return () => window.removeEventListener("resize", again);
   }, []);
   useLayoutEffect(() => {
-    const plate = sheetRef.current?.querySelector<HTMLElement>(".pop-plate");
+    const plate = sheetRef.current?.querySelector<HTMLElement>(".pop-plate-pic");
     if (!plate || pinched) return;
     const check = () => {
       if (plate.offsetHeight < 56) setPinched(true);

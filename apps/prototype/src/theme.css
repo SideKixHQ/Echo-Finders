@@ -5457,20 +5457,20 @@ div.maplibregl-map { font-size: var(--fs-label); }
  * content was 703px in 562px of room, so Save, Add to route, Share and More sat under the
  * fold with nothing saying they were there, and its top covered the map bar's chips.
  *
- * So the sheet never scrolls. Its ceiling is the map bar's floor (search box and chips
- * stay usable), and when the room runs out the PHOTOGRAPH gives way first, because it is
- * the one flexible thing in the column (`flex-shrink`), then the teaser is clamped, then
- * the secondary lines go on a short screen. The primary, the gold line and the four round
- * buttons are never what gives (`audit:align` and `audit:flows`, popup, at every size).
+ * So the sheet never scrolls. Its ceiling is 10px under the search box (the chips' row and
+ * any toast step aside while it is open, above), and when the room runs out the PHOTOGRAPH
+ * gives way first, because it is the one flexible thing in the column (`flex-shrink`), and
+ * goes altogether once it would be a sliver; then the place keeps only its first part on a
+ * short screen. No text is ever cut short. The primary, the gold line and the four round
+ * buttons are never what gives (`audit:align`, `audit:flows` and `audit:clip`).
  *
  * After everything else on `.pop`, so it is the last word on the container; the content
  * rules above still style what is inside it.
  */
 .pop {
   left: 0; right: 0; bottom: var(--nav-h);
-  max-height: calc(
-    100% - var(--nav-h) - max(var(--top-gap) + var(--mapbar-h), var(--toast-floor, 0px)) - 8px
-  );
+  /* The top gap, the 76px the search box takes, and 10px under it. */
+  max-height: calc(100% - var(--nav-h) - var(--top-gap) - 86px);
   display: flex; flex-direction: column;
   overflow: hidden auto;
   padding: 0 24px 16px;
@@ -5482,12 +5482,6 @@ div.maplibregl-map { font-size: var(--fs-label); }
   transition: transform 0.2s var(--ease);
 }
 .pop > * { flex: none; }
-/*
- * A toast with a card open docks at the top, over the map bar, so it lands above the
- * sheet's ceiling and never over its title (`--toast-floor` in `EchoPopup.tsx` covers a
- * toast taller than the bar). A toast is a moment; the search box is back when it goes.
- */
-.screen:has(.pop) .toast-dock { top: var(--top-gap); }
 /*
  * The last resort, if a screen is shorter than every rule below planned for: the content
  * scrolls and the four round buttons stay pinned to the sheet's floor, never under it.
@@ -5517,17 +5511,24 @@ div.maplibregl-map { font-size: var(--fs-label); }
 }
 .pop.dragging .pop-handle { cursor: grabbing; }
 
-/* The photograph is what gives way: 120px when there is room, less when there is not. */
+/*
+ * The photograph is what gives way: 120px when there is room, less when there is not. The
+ * plate is the picture over its credit (who took it, whole, as a caption); only the
+ * picture shrinks, and when it would be a sliver the plate goes, credit and all
+ * (`pop-pinched`, `EchoPopup.tsx`), so a name is never shown without its photograph.
+ */
 .pop .pop-plate {
-  flex: 0 1 120px; min-height: 0; height: 120px; margin: 0 0 14px;
+  flex: 0 1 auto; min-height: 0; height: auto; margin: 0 0 14px;
+  display: flex; flex-direction: column;
 }
+.pop .pop-plate .pop-plate-pic { flex: 0 1 120px; height: 120px; min-height: 0; container-type: size; }
+.pop .pop-plate .pop-plate-credit { flex: none; }
 .pop .pop-plate img { height: 100%; }
 .pop.pop-pinched .pop-plate { display: none; }
-/* A strip of a photograph holds one label, not three: under 90px the year caption goes,
-   so it never runs into the credit and the Then & now badge. */
-.pop .pop-plate { container-type: size; }
+/* A strip of a photograph holds one label, not two: under 90px the year caption goes,
+   so it never runs into the Then & now badge. */
 @container (max-height: 90px) {
-  .pop-plate > span.mono { display: none; }
+  .pop-plate-pic > span.mono { display: none; }
 }
 /*
  * No text on the sheet is ever cut short (James's rule). The place and the teaser wrap
@@ -5561,11 +5562,12 @@ div.maplibregl-map { font-size: var(--fs-label); }
 .pop .pop-acts { margin-top: 16px; }
 
 /*
- * A phone in Safari (390x664, 375x667): about 440px under the map bar. The photograph is a
- * strip, the place one line, the mark rides the kicker line and the teaser is one line.
+ * A phone in Safari (390x664, 375x667): about 500px under the search box. The photograph
+ * is a strip, the place its first part, the mark rides the kicker line; the teaser whole.
  */
 @media (max-height: 760px) {
-  .pop .pop-plate { flex-basis: 88px; height: 88px; margin-bottom: 10px; }
+  .pop .pop-plate { margin-bottom: 10px; }
+  .pop .pop-plate .pop-plate-pic { flex-basis: 88px; height: 88px; }
   .pop h3 { font-size: 22px; margin-top: 4px; }
   .pop .pop-where-rest { display: none; }
   .pop .pop-truth { display: none; }
@@ -5575,11 +5577,11 @@ div.maplibregl-map { font-size: var(--fs-label); }
   .pop-primary { margin-top: 12px; gap: 8px; }
   .pop .pop-acts { margin-top: 12px; }
 }
-/* An SE in Safari (375x553): the teaser goes, and with the tip showing, the photograph. */
+/* An SE in Safari (375x553): a shorter strip, and everything a little closer together. */
 @media (max-height: 600px) {
   .pop { padding-bottom: 10px; }
   .pop-handle { height: 22px; }
-  .pop .pop-plate { flex-basis: 64px; height: 64px; }
+  .pop .pop-plate .pop-plate-pic { flex-basis: 64px; height: 64px; }
   .pop .pop-acts { bottom: -10px; margin-bottom: -10px; padding-bottom: 10px; }
   .pop .pop-kicker { font-size: var(--fs-label); letter-spacing: 0.04em; }
   .pop .pop-close { padding: 0; }

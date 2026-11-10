@@ -464,19 +464,19 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.waitForTimeout(600);
   const card = p.locator('.pop');
   check('Echo card: opens from the bar', await visible(card));
-  // A bottom sheet (the Card board, 2026-11-10): on the tab bar, clear of the map bar, and
+  // A bottom sheet (the Card board, 2026-11-10): on the tab bar, clear of the search box, and
   // the whole card on screen at once, the four round buttons included, with no scrolling.
   const sheet = await card.evaluate((c) => {
     const box = (s) => document.querySelector(s)?.getBoundingClientRect() ?? null;
     const r = c.getBoundingClientRect();
     const acts = box('.pop-acts');
     return { top: r.top, bottom: r.bottom, scroll: c.scrollHeight - c.clientHeight,
-      mapbar: box('.mapbar')?.bottom ?? null, nav: box('.nav')?.top ?? null,
+      mapbar: box('.msearch')?.bottom ?? null, nav: box('.nav')?.top ?? null,
       acts: acts && { top: acts.top, bottom: acts.bottom }, handle: !!c.querySelector('.pop-handle') };
   });
   check('Echo card: a sheet on the tab bar, with a handle',
     sheet.nav !== null && Math.abs(sheet.bottom - sheet.nav) <= 1 && sheet.handle, JSON.stringify(sheet));
-  check('Echo card: clear of the map bar', sheet.mapbar !== null && sheet.top >= sheet.mapbar, JSON.stringify(sheet));
+  check('Echo card: clear of the search box', sheet.mapbar !== null && sheet.top >= sheet.mapbar, JSON.stringify(sheet));
   check('Echo card: the buttons are on screen without scrolling', sheet.scroll <= 1 && !!sheet.acts
     && sheet.acts.top >= sheet.top && sheet.acts.bottom <= sheet.bottom + 1, JSON.stringify(sheet));
   const walk = card.getByRole('button', { name: /^Walk there · \d+ min$/ });
