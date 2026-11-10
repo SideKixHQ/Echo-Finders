@@ -4124,8 +4124,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .echobar-place::after { content: " ·"; }
 /*
  * Never truncated, and now two numbers rather than one: how long until you are there, and
- * how long the story is. Different in kind and written differently — "5 min" against
- * "1:25" — so they cannot be read as the same measurement twice.
+ * how long the echo is. The length says what it is, "5 min · 1 min listen", because "0:59"
+ * beside "1,083 km" read as the time it takes to get there (`going.ts`).
  */
 .echobar-facts { flex: none; }
 .echobar-warm .echobar-where { color: var(--ember-core); }
@@ -5150,7 +5150,7 @@ div.maplibregl-map { font-size: var(--fs-label); }
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
 }
 .pop .pop-truth { margin-top: 6px; align-items: center; gap: 12px; }
-.pop-len { font-size: 13px; color: var(--muted); }
+.pop-len { font-size: var(--fs-label); color: var(--muted); }
 .pop .pop-teaser { margin: 10px 0 0; font-size: 17px; line-height: 1.45; color: var(--white); }
 
 .pop-primary { margin-top: 14px; display: flex; flex-direction: column; gap: 10px; }
@@ -5162,6 +5162,10 @@ div.maplibregl-map { font-size: var(--fs-label); }
 .pop .pop-aim svg { width: 20px; height: 20px; fill: currentColor; stroke: none; }
 .pop a.pop-aim svg { fill: none; stroke: currentColor; }
 .pop .pop-state { margin: 0; font-family: inherit; font-size: 16px; text-align: center; }
+/* Too far to walk: how far, plainly, over Save (`going.ts`). */
+.pop .pop-far { font-size: var(--fs-button); font-weight: 600; color: var(--white); }
+.pop .pop-keep svg { fill: none; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; }
+.pop .pop-keep.on svg { fill: currentColor; }
 .pop-lock {
   margin: 0; display: flex; align-items: center; justify-content: center; gap: 6px;
   font-size: 15px; color: var(--ember-core);

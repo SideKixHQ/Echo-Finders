@@ -24,6 +24,7 @@ import type { Echo, WalkGuidance, LatLng } from "@echofinders/core";
 import { arrivalClock, routeGuidance, straightGuidance } from "@echofinders/core";
 import { walkDistance, walkTime, type Directions } from "./directions";
 import { startLine } from "./guided-walk";
+import { WALKABLE_KM } from "./going";
 
 interface Props {
   readonly echo: Echo;
@@ -43,8 +44,11 @@ interface Props {
  */
 export const DIRSHEET_H = 196;
 
-/** Past this, a walking time and an arrival clock stop meaning anything. */
-const WALKABLE_M = 20_000;
+/**
+ * Past this, a walking time and an arrival clock stop meaning anything. The card asks the
+ * same question (`going.ts`) and does not offer a walk past it.
+ */
+const WALKABLE_M = WALKABLE_KM * 1000;
 
 /** The guidance for what the router answered, or null while it is still working. */
 export function guidanceFor(directions: Directions, from: LatLng | null, to: LatLng): WalkGuidance | null {
