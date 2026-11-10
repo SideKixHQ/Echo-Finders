@@ -56,7 +56,7 @@ import {
   writeNearMemory,
 } from "./toast-rules";
 import { Walk } from "./Walk";
-import { Nowhere } from "./Nowhere";
+import { Nowhere, widenTo } from "./Nowhere";
 import { Ribbon } from "./Ribbon";
 import { EchoBar, ECHOBAR_FLOAT, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
@@ -1589,7 +1589,8 @@ export function App() {
    *
    * Only computed when there is nothing in range, which is the only time anything asks.
    */
-  const WIDEN_TO_KM = 16;
+  /** The furthest "Look out to" goes; past it, the nearest echo is a trip, not a widen. */
+  const WIDEN_MAX_KM = 16;
   // Not while looking somewhere else: that map has its own echoes. Not once somebody
   // has asked for the map at their own position either: that is the answer they wanted.
   // Not while walking to an echo either: the way there is the answer, however far it is.
@@ -2178,7 +2179,7 @@ export function App() {
                     const spot = place.echoes.reduce((best, e) => (near(e.point.at) > near(best.point.at) ? e : best));
                     setLookAt({ label: place.label, detail: "", at: spot.point.at });
                   }}
-                  widenToKm={WIDEN_TO_KM}
+                  widenToKm={nearestAnywhere ? widenTo(nearestAnywhere.distanceKm) : WIDEN_MAX_KM}
                   {...(!state.position && locating.kind !== "live"
                     ? {
                         finding: {
@@ -2188,8 +2189,8 @@ export function App() {
                         },
                       }
                     : {})}
-                  {...(nearestAnywhere && nearestAnywhere.distanceKm <= WIDEN_TO_KM
-                    ? { onWiden: () => setLookFurtherKm(WIDEN_TO_KM) }
+                  {...(nearestAnywhere && nearestAnywhere.distanceKm <= WIDEN_MAX_KM
+                    ? { onWiden: () => setLookFurtherKm(widenTo(nearestAnywhere.distanceKm)) }
                     : {})}
                 />
               )}

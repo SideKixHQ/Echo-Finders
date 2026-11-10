@@ -35,6 +35,7 @@ export interface NowhereProps {
   readonly onShowAll: () => void;
   /** Widen the search. Given only when it would actually turn something up. */
   readonly onWiden?: (() => void) | undefined;
+  /** How far the widen looks: far enough to take in the nearest echo (`widenTo`). */
   readonly widenToKm: number;
   /**
    * Where the phone is in finding itself, while there is no fix yet.
@@ -90,21 +91,16 @@ export function Nowhere({ nearest, reachKm, onShowAll, onWiden, widenToKm, findi
         <>
         <h1>Nothing within {reach(reachKm)}</h1>
         {/*
-          The distance is the honest version of "we are only in lower Manhattan so far".
-          It is computed, it changes as the library grows, and it tells somebody in Lisbon
-          something they can act on rather than a fact about our roadmap.
+          One sentence, the town not the street address: the whole place string, "North end
+          of Wrightsville Beach, near public Beach Access 2, 2698 North Lumina Avenue, ...",
+          ran under the buttons on James's phone (2026-11-10).
         */}
         {nearest ? (
           <p>
-            The nearest one is <b>{coarse(nearest.distanceKm)}</b> away, at{" "}
-            {nearest.echo.point.place}. That is a real answer rather than a glitch, and it
-            will keep changing.
+            The nearest echo is <b>{coarse(nearest.distanceKm)}</b> away, in {townOf(nearest.echo.point.place)}.
           </p>
         ) : (
-          <p>
-            We are only in a few places so far. That is a real answer rather than a glitch,
-            and it will keep changing.
-          </p>
+          <p>Echoes are only in a few places so far.</p>
         )}
         </>
         )}
@@ -150,11 +146,49 @@ export function Nowhere({ nearest, reachKm, onShowAll, onWiden, widenToKm, findi
   );
 }
 
-/** A reach, as a person says it. Kilometres, rounded to something sayable. */
-function reach(km: number): string {
-  if (km < 1) return `${Math.round(km * 1000)}m`;
-  if (km < 10) return `${km.toFixed(1).replace(/\.0$/, "")}km`;
-  return `${Math.round(km)}km`;
+/**
+ * A reach, as a person says it, the way the rest of the app writes a distance: "2.4 km",
+ * "500 m". The space is one that does not break, so "km" never lands alone on a line.
+ */
+export function reach(km: number): string {
+  if (km < 1) return `${Math.round(km * 1000)}\u00a0m`;
+  if (km < 10) return `${km.toFixed(1).replace(/\.0$/, "")}\u00a0km`;
+  return `${Math.round(km)}\u00a0km`;
+}
+
+/**
+ * How far to look so the nearest echo is in: the next whole kilometre past it, "5 km" for
+ * one 4.8 km off. It was a fixed 16, so "Look out to 16km" was offered for an echo 4.8 km
+ * away, which answered a question nobody asked.
+ */
+export function widenTo(nearestKm: number): number {
+  if (nearestKm < 10) return Math.ceil(nearestKm + 0.05);
+  return Math.ceil((nearestKm + 0.05) / 5) * 5;
+}
+
+const US_STATES = new Set(
+  ("Alabama,Alaska,Arizona,Arkansas,California,Colorado,Connecticut,Delaware,District of Columbia,Florida,Georgia,Hawaii,Idaho,Illinois,Indiana,Iowa,Kansas,Kentucky,Louisiana,Maine,Maryland,Massachusetts,Michigan,Minnesota,Mississippi,Missouri,Montana,Nebraska,Nevada,New Hampshire,New Jersey,New Mexico,New York,North Carolina,North Dakota,Ohio,Oklahoma,Oregon,Pennsylvania,Rhode Island,South Carolina,South Dakota,Tennessee,Texas,Utah,Vermont,Virginia,Washington,West Virginia,Wisconsin,Wyoming,DC,D.C.")
+    .split(","),
+);
+
+/**
+ * The town in an echo's place string, which runs from the spot to the state: "Wrightsville
+ * Beach" out of "North end of Wrightsville Beach, near public Beach Access 2, 2698 North
+ * Lumina Avenue, Wrightsville Beach, North Carolina". The part before the state, or the last
+ * part where there is no state ("..., Manhattan").
+ */
+export function townOf(place: string): string {
+  const parts = place.split(",").map((p) => p.trim()).filter(Boolean);
+  if (parts.length === 0) return place.trim();
+  const last = parts[parts.length - 1]!;
+  const town = US_STATES.has(last) && parts.length > 1 ? parts[parts.length - 2]! : last;
+  // "about two miles southwest of Jerome" says Jerome; "downtown Memphis" stays as it is.
+  const of = /\b(?:of|near)\s+([A-Z][^,]*)$/.exec(town);
+  if (/^[a-z]/.test(town) && !town.startsWith("downtown ") && of) return of[1]!;
+  // "Carolina Beach oceanfront by the fishing pier" says Carolina Beach.
+  const words = town.split(" ");
+  const cut = words.findIndex((w, i) => i > 0 && /^[a-z]/.test(w) && !["of", "de", "del", "la", "the", "and"].includes(w));
+  return /^[A-Z]/.test(town) && cut > 0 ? words.slice(0, cut).join(" ") : town;
 }
 
 /**
@@ -164,9 +198,9 @@ function reach(km: number): string {
  * deciding whether to bother, and the precision would be false anyway once it is a journey
  * rather than a walk.
  */
-function coarse(km: number): string {
-  if (km < 1) return `${Math.round((km * 1000) / 50) * 50}m`;
-  if (km < 10) return `${km.toFixed(1)}km`;
-  if (km < 100) return `${Math.round(km)}km`;
-  return `${Math.round(km / 10) * 10}km`;
+export function coarse(km: number): string {
+  if (km < 1) return `${Math.round((km * 1000) / 50) * 50}\u00a0m`;
+  if (km < 10) return `${km.toFixed(1)}\u00a0km`;
+  if (km < 100) return `${Math.round(km)}\u00a0km`;
+  return `${(Math.round(km / 10) * 10).toLocaleString("en-US")}\u00a0km`;
 }
