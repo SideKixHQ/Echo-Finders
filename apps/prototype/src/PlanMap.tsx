@@ -120,8 +120,8 @@ export function PlanMap({ route, items, chosen, onPick }: Props) {
             >
               <title>{`${i + 1}. ${item.echo.title}`}</title>
               <circle r="14" className="plan-map-hit" />
-              <circle r="9" />
-              <text dy="3.5">{i + 1}</text>
+              <circle r="11" />
+              <text dy="5">{i + 1}</text>
             </g>
           );
         })}

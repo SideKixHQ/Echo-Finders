@@ -3,8 +3,9 @@
  *
  * "Match the design exactly" was asked for twice, and both times the only way to answer was
  * to look at two screens and have an opinion. This turns it into a number. Each row below is
- * NOTE, September 2026: the type sizes here no longer match the prototype HTML, on
- * purpose. The prototype set labels as small as 8.5px, which is below Apple's 11pt
+ * NOTE, September 2026, raised again November 2026: the type sizes here no longer match
+ * the prototype HTML, on purpose. They now follow the type scale on `:root` in theme.css
+ * (the approved Type board, 14px floor). The prototype set labels as small as 8.5px, which is below Apple's 11pt
  * floor, and on a 390pt phone one CSS pixel is one point. Everything under 11px was
  * raised, `design/SPEC.md` was raised with it, and `audit-controls.mjs` now fails on
  * anything under 11px so it cannot drift back. Do not "restore" these from the
@@ -64,10 +65,11 @@ const SPEC = [
    */
   { design: '.nav', ours: '.nav', where: 'map',
     want: { height: '74px', paddingBottom: '14px' } },
-  // 13px, up from the boards' 11px (James, 2026-10-13: "make the tab bar labels bigger
-  // too"); `design/SPEC.md` says the same. Letter spacing is .03em of it.
+  // 14px, the type scale's floor (November 2026, the approved Type board); 13px before
+  // that, up from the boards' 11px (James, 2026-10-13). `design/SPEC.md` says the same.
+  // Letter spacing is .03em of it.
   { design: '.nav button', ours: '.nav button', where: 'map',
-    want: { flexGrow: '1', flexDirection: 'column', rowGap: '4px', fontSize: '13px', letterSpacing: '0.39px' } },
+    want: { flexGrow: '1', flexDirection: 'column', rowGap: '4px', fontSize: '14px', letterSpacing: '0.42px' } },
   { design: '.nav button svg', ours: '.nav button svg', where: 'map',
     want: { width: '20px', height: '20px', strokeWidth: '1.7px' } },
 
@@ -79,36 +81,38 @@ const SPEC = [
    *
    * What carries over is measured. The orb is 48 rather than the design's 46, because it
    * is the creature rather than a glyph in a circle and a 46px sphere with two eyes in it
-   * is smaller than it reads on paper. The kicker keeps the design's 11px uppercase; the
-   * dot keeps its 6px.
+   * is smaller than it reads on paper. The kicker is uppercase at the type scale's 14px
+   * floor (the design's 11px, raised in November 2026); the dot keeps its 6px.
    */
   { design: '.tag', ours: '.echobar-kicker', where: 'map',
-    want: { fontSize: '11px', textTransform: 'uppercase', fontWeight: '500' } },
+    want: { fontSize: '14px', textTransform: 'uppercase', fontWeight: '500' } },
   { design: '.tag .dot', ours: '.echobar-dot', where: 'map',
     want: { width: '6px', height: '6px', borderTopLeftRadius: '50%' } },
   { design: '.nowtxt h5', ours: '.echobar-tap strong', where: 'map',
     want: { fontWeight: '500', whiteSpace: 'nowrap', textOverflow: 'ellipsis' } },
 
-  // The package screen, which is where the design's full card lives.
+  // The package screen, which is where the design's full card lives. Sizes are the type
+  // scale's (November 2026): list item 18px, secondary 15px, small label 14px.
+  // Line heights are the design's ratios at those sizes (1.35 and 1.5).
   { design: '.card', ours: '.card', where: 'plan',
     want: { borderTopLeftRadius: '14px', paddingTop: '12px', paddingRight: '13px',
             paddingBottom: '12px', paddingLeft: '13px' } },
   { design: '.card h4', ours: '.card h4', where: 'plan',
-    want: { fontSize: '13.5px', fontWeight: '500', lineHeight: '18.225px' } },
+    want: { fontSize: '18px', fontWeight: '500', lineHeight: '24.3px' } },
   { design: '.card p', ours: '.card p', where: 'plan',
-    want: { fontSize: '11px', lineHeight: '16.5px' } },
+    want: { fontSize: '15px', lineHeight: '22.5px' } },
   /* `margin-left: auto` is the design's and is ours everywhere but here: the package card
      carries an ordinal ("3 of 12") that takes the right edge, so the duration sits beside
      it rather than in it. The size is the design's. */
   { design: '.dur', ours: '.dur', where: 'plan',
-    want: { fontSize: '11.5px' } },
+    want: { fontSize: '15px' } },
   { design: '.place', ours: '.ecard-place', where: 'plan',
-    want: { marginTop: '8px', fontSize: '11.5px', columnGap: '5px' } },
+    want: { marginTop: '8px', fontSize: '15px', columnGap: '5px' } },
   { design: '.acts', ours: '.card-foot', where: 'plan',
     want: { columnGap: '6px', marginTop: '10px' } },
   { design: '.act', ours: '.act', where: 'plan',
     want: { paddingTop: '7px', paddingRight: '11px', paddingBottom: '7px', paddingLeft: '11px',
-            borderTopLeftRadius: '99px', fontSize: '11px', columnGap: '5px' } },
+            borderTopLeftRadius: '99px', fontSize: '14px', columnGap: '5px' } },
   { design: '.act svg', ours: '.act svg', where: 'plan',
     want: { width: '13px', height: '13px', strokeWidth: '1.8px' } },
 ];

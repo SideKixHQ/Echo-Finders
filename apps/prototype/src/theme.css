@@ -1,6 +1,20 @@
 /* Echo Finders — walking. Palette and type from the phone prototype in design/. */
 
 :root {
+  /*
+   * THE TYPE SCALE, six steps and nothing under the last one.
+   *
+   * James (2026-11): "fonts are really small, almost everything is hard to read". Most text
+   * was 13px and the labels 11 to 12px, read outdoors, at arm's length, while walking. The
+   * approved board (Type) sets Apple's sizes, and every font size in this file is one of
+   * these. 14px is the floor: a mark too small to hold 14px is an icon, not text.
+   */
+  --fs-title: 32px;      /* a screen's title */
+  --fs-echo: 26px;       /* an echo's title */
+  --fs-button: 18px;     /* buttons and list items */
+  --fs-body: 17px;       /* body text: the teaser, the read along */
+  --fs-secondary: 15px;  /* place names, times, distances, the line under a title */
+  --fs-label: 14px;      /* small capitals that label things; the floor */
   --space: #0b0f2b;
   --indigo: #6c63ff;
   --indigo-soft: #9b95ff;
@@ -303,6 +317,7 @@ body {
      neither.
   */
   font-family: Sora, system-ui, -apple-system, sans-serif;
+  font-size: var(--fs-body);
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   display: grid;
@@ -332,7 +347,7 @@ body {
 .statusbar {
   position: absolute; inset: 0 0 auto 0; height: 46px; z-index: 30;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 14px 26px 0; font-size: 12px; pointer-events: none;
+  padding: 14px 26px 0; font-size: var(--fs-label); pointer-events: none;
   background: linear-gradient(180deg, rgba(var(--rgb-panel), 0.95), transparent);
 }
 .homebar {
@@ -544,7 +559,7 @@ body {
 .entry-glyph i {
   position: absolute; right: 3px; bottom: 3px; padding: 1px 4px; border-radius: 4px;
   background: rgba(0, 0, 0, 0.72); font-style: normal; color: var(--cool);
-  font-family: "Space Grotesk", monospace; font-size: 11px;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
 }
 .entry-now { color: var(--ember); }
 
@@ -647,7 +662,7 @@ body {
  * it, so on a flight the cap does nothing and the bar keeps every pixel it is owed.
  */
 .ribbon-carried b {
-  font-family: "Space Grotesk", monospace; font-size: 12px; letter-spacing: 0.04em;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.04em;
   max-width: 34%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: none;
 }
 /*
@@ -658,7 +673,7 @@ body {
  * else needs". A percentage of a box that keeps shrinking is how this broke.
  */
 .ribbon-dest {
-  flex: 1; min-width: 0; font-size: 13px; font-weight: 500; color: var(--white);
+  flex: 1; min-width: 0; font-size: var(--fs-secondary); font-weight: 500; color: var(--white);
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 /*
@@ -698,10 +713,10 @@ body {
   margin: -3.5px 0 0 -3.5px; border-radius: 50%; background: var(--white);
 }
 .ribbon small {
-  font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--aqua); flex: none;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); color: var(--aqua); flex: none;
 }
 /* Nudged up a half step on the self-directed line, where it is one of only two facts. */
-.ribbon-ahead small { font-size: 12.5px; font-weight: 500; }
+.ribbon-ahead small { font-size: var(--fs-label); font-weight: 500; }
 
 /* The stack above the map: ribbon, then filters. */
 .mapbar {
@@ -808,10 +823,10 @@ body {
    * one, which the probe confirms.
    */
   min-height: 40px; padding: 0 12px;
-  border-radius: 11px; font: inherit; font-size: 12px; background: none; border: 0; white-space: nowrap;
+  border-radius: 11px; font: inherit; font-size: var(--fs-label); background: none; border: 0; white-space: nowrap;
 }
 .chip-all {
-  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.13em;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.13em;
   text-transform: uppercase; color: var(--cool);
   border-right: 1px solid var(--line); border-radius: 9px 0 0 9px;
   margin-right: 3px; padding-right: 11px;
@@ -855,7 +870,7 @@ body {
 /* One tap for the answer most people want, now that the step starts empty. */
 .onb-all {
   align-self: flex-start; margin-top: 10px; min-height: 44px; padding: 0 14px;
-  border-radius: 99px; cursor: pointer; font: inherit; font-size: 13px;
+  border-radius: 99px; cursor: pointer; font: inherit; font-size: var(--fs-button);
   color: var(--aqua); background: none; border: 1px solid rgba(var(--rgb-hair), 0.22);
 }
 .onb-all:disabled { opacity: 0.4; cursor: default; }
@@ -880,7 +895,7 @@ body {
 
 .ecard-tag {
   display: flex; align-items: center; gap: 6px;
-  font-family: "Space Grotesk", monospace; font-size: 11px;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.13em; text-transform: uppercase;
 }
 .ecard-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
@@ -888,14 +903,14 @@ body {
 
 .ecard-place {
   margin-top: 8px; display: flex; align-items: center; gap: 5px;
-  font-size: 11.5px; color: var(--muted); font-family: "Space Grotesk", monospace;
+  font-size: var(--fs-secondary); color: var(--muted); font-family: "Space Grotesk", monospace;
 }
 .ecard-place svg { width: 10px; height: 10px; fill: none; stroke: currentColor; stroke-width: 1.8; }
 
 
 .act {
   display: flex; align-items: center; gap: 5px; cursor: pointer;
-  padding: 7px 11px; border-radius: 99px; font: inherit; font-size: 11px;
+  padding: 7px 11px; border-radius: 99px; font: inherit; font-size: var(--fs-label);
   background: transparent; border: 1px solid var(--line-2); color: var(--cool);
 }
 .act svg {
@@ -923,20 +938,20 @@ body {
 /* The header carries the two numbers the screen is about, then gets out of the way. */
 .plan-head { flex: none; padding: 14px 16px 10px; border-bottom: 1px solid var(--line); }
 .plan-kicker {
-  display: block; font-family: "Space Grotesk", monospace; font-size: 11px;
+  display: block; font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--ember);
 }
 .plan-head h1 {
-  font-size: 17px; font-weight: 600; letter-spacing: -0.01em; margin: 5px 0 3px;
+  font-size: var(--fs-echo); font-weight: 600; letter-spacing: -0.01em; margin: 5px 0 3px;
   line-height: 1.25;
 }
 .plan-head p {
-  font-family: "Space Grotesk", monospace; font-size: 12px; color: var(--muted);
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-secondary); color: var(--muted);
 }
 .plan-chips { display: flex; gap: 5px; margin-top: 10px; }
 .plan-chips .chip {
   padding: 5px 12px; border-radius: 99px; border: 1px solid var(--line-2);
-  font-size: 11px; color: var(--muted); cursor: pointer; background: none;
+  font-size: var(--fs-label); color: var(--muted); cursor: pointer; background: none;
 }
 .plan-chips .chip.on { color: var(--ember); border-color: rgba(255, 158, 18, 0.55); }
 
@@ -967,7 +982,7 @@ body {
 /* Where it falls along the route, beside the duration but clearly subordinate to it —
    and with its own space, because pinned to the same corner the two collided. */
 .card-ord {
-  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 11px;
+  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   color: var(--muted); opacity: 0.7;
 }
 /* The duration, wherever a card shows one.
@@ -976,16 +991,16 @@ body {
    were showing "4 min" at the size of a heading. The design puts it at 10px in the mono
    face, quiet beside the title. */
 .dur {
-  margin-left: auto; font-size: 11.5px; color: var(--muted);
+  margin-left: auto; font-size: var(--fs-secondary); color: var(--muted);
   font-family: "Space Grotesk", monospace;
 }
 /* In the card header the ordinal takes the `auto`, so the duration sits beside it. */
 .card-top .dur { margin-left: 0; padding-left: 2px; }
 .card h4 {
-  margin: 0 0 4px; font-size: 13.5px; font-weight: 500; line-height: 1.35;
+  margin: 0 0 4px; font-size: var(--fs-button); font-weight: 500; line-height: 1.35;
   letter-spacing: -0.01em;
 }
-.card p { margin: 0; font-size: 11px; line-height: 1.5; color: var(--muted); }
+.card p { margin: 0; font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted); }
 .card .ecard-place { margin-top: 8px; }
 .card-foot { display: flex; gap: 6px; margin-top: 10px; }
 
@@ -1007,8 +1022,8 @@ body {
 .plan-auto-on .plan-switch { background: var(--ember); }
 .plan-auto-on .plan-switch span { transform: translateX(16px); background: var(--space); }
 .plan-auto-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.plan-auto-text strong { font-size: 13px; font-weight: 600; }
-.plan-auto-text small { font-size: 11px; color: var(--muted); }
+.plan-auto-text strong { font-size: var(--fs-button); font-weight: 600; }
+.plan-auto-text small { font-size: var(--fs-secondary); color: var(--muted); }
 .plan-auto-on .plan-auto-text small { color: var(--ember); }
 
 /* ── coming up ───────────────────────────────────────────── */
@@ -1023,7 +1038,7 @@ body {
 }
 .upnext-head {
   display: block; font-family: "Space Grotesk", monospace;
-  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  font-size: var(--fs-label); letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--muted); margin-bottom: 6px; margin: 4px 2px 0;}
 .upnext ul { display: flex; flex-direction: column; gap: 0; list-style: none; margin: 0; padding: 0; }
 .upnext button {
@@ -1033,10 +1048,10 @@ body {
 }
 .upnext-when {
   flex: none; width: 46px; font-family: "Space Grotesk", monospace;
-  font-size: 12px; color: var(--ember);
+  font-size: var(--fs-secondary); color: var(--ember);
 }
 .upnext-title {
-  flex: 1; min-width: 0; font-size: 12px; color: var(--cool);
+  flex: 1; min-width: 0; font-size: var(--fs-button); color: var(--cool);
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .upnext button:hover .upnext-title { color: var(--white); }
@@ -1090,25 +1105,25 @@ body {
 .tsearch input {
   min-height: 26px;
   flex: 1; background: none; border: 0;
-  font: inherit; font-size: 12.5px; color: var(--white);
+  font: inherit; font-size: var(--fs-body); color: var(--white);
 }
 .tsearch input::placeholder { color: var(--muted); }
 
 .tkeys { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
 .tkey {
-  padding: 6px 11px; border-radius: 99px; cursor: pointer; font: inherit; font-size: 11px;
+  padding: 6px 11px; border-radius: 99px; cursor: pointer; font: inherit; font-size: var(--fs-label);
   background: transparent; color: var(--cool); border: 1px solid var(--line-2);
 }
 .tkey.on { border-color: var(--aqua); color: var(--aqua); background: rgba(var(--rgb-accent), 0.1); }
 
 .tkicker {
-  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.12em;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--muted); margin-bottom: 9px;
 }
 .tlines { display: flex; flex-direction: column; gap: 3px; }
 .tline {
   text-align: left; background: none; border: 0; cursor: pointer; font: inherit;
-  font-size: 13.5px; line-height: 1.5; color: var(--muted);
+  font-size: var(--fs-body); line-height: 1.5; color: var(--muted);
   padding: 8px 11px; border-radius: 10px; border-left: 3px solid transparent;
 }
 .tline:hover { color: var(--white); }
@@ -1129,8 +1144,8 @@ body {
   border-top: 1px solid var(--line-2); padding: 22px 18px 20px;
   box-shadow: 0 -14px 44px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
 }
-.arr-head h2 { font-size: 21px; font-weight: 600; line-height: 1.22; }
-.arr-head p { font-size: 13px; line-height: 1.55; color: var(--muted); margin-top: 8px; }
+.arr-head h2 { font-size: var(--fs-echo); font-weight: 600; line-height: 1.22; }
+.arr-head p { font-size: var(--fs-body); line-height: 1.55; color: var(--muted); margin-top: 8px; }
 .arr-head b { color: var(--aqua); font-weight: 600; }
 
 .tiles { display: flex; gap: 8px; margin: 16px 0 12px; }
@@ -1141,14 +1156,14 @@ body {
 }
 .tile b { font-family: "Space Grotesk", monospace; font-size: 22px; color: var(--aqua); }
 .tile span {
-  font-family: "Space Grotesk", monospace; font-size: 11px;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
 }
 
 .arr-cats { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
 .arr-cat {
   display: flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 99px;
-  font-size: 12px; background: rgba(var(--rgb-hair), 0.06);
+  font-size: var(--fs-label); background: rgba(var(--rgb-hair), 0.06);
 }
 
 .arr-next {
@@ -1157,19 +1172,19 @@ body {
   background: rgba(81, 71, 219, 0.14); border: 1px solid rgba(81, 71, 219, 0.4);
   margin-bottom: 14px;
 }
-.arr-next strong { font-size: 13px; font-weight: 600; }
-.arr-next small { font-size: 11px; color: var(--muted); }
+.arr-next strong { font-size: var(--fs-button); font-weight: 600; }
+.arr-next small { font-size: var(--fs-secondary); color: var(--muted); }
 .arr-next:hover { border-color: var(--indigo-btn); }
 
 .arr-acts { display: flex; gap: 8px; }
 .arr-pri {
   flex: 1; padding: 14px; border-radius: 99px; cursor: pointer; font: inherit;
-  font-size: 13px; font-weight: 600;
+  font-size: var(--fs-button); font-weight: 600;
   background: var(--btn); border: 0; color: var(--btn-ink);
 }
 .arr-ghost {
   flex: none; padding: 14px 22px; border-radius: 99px; cursor: pointer; font: inherit;
-  font-size: 13px; background: transparent; color: var(--cool); border: 1px solid var(--line-2);
+  font-size: var(--fs-button); background: transparent; color: var(--cool); border: 1px solid var(--line-2);
 }
 
 /* ── preflight ───────────────────────────────────────────── */
@@ -1183,8 +1198,8 @@ body {
   background: var(--slate); border-radius: 24px 24px 0 0;
   border-top: 1px solid var(--line-2); padding: 24px 18px 22px;
 }
-.pf-body h2 { font-size: 22px; font-weight: 600; line-height: 1.2; }
-.pf-body > p { font-size: 13px; line-height: 1.55; color: var(--muted); margin: 10px 0 18px; }
+.pf-body h2 { font-size: var(--fs-title); font-weight: 600; line-height: 1.2; padding-right: 36px; } /* clear of the close button */
+.pf-body > p { font-size: var(--fs-body); line-height: 1.55; color: var(--muted); margin: 10px 0 18px; }
 
 .pf-field {
   display: flex; flex-direction: column; gap: 4px;
@@ -1192,17 +1207,17 @@ body {
   background: rgba(var(--rgb-accent), 0.06); border: 1px solid var(--line-2);
 }
 .pf-code { font-size: 19px; font-weight: 500; }
-.pf-sub { font-size: 11px; color: var(--muted); font-family: "Space Grotesk", monospace; }
+.pf-sub { font-size: var(--fs-secondary); color: var(--muted); font-family: "Space Grotesk", monospace; }
 
 .pf-picks { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
 .pf-pick {
-  padding: 8px 13px; border-radius: 99px; cursor: pointer; font: inherit; font-size: 11.5px;
+  padding: 8px 13px; border-radius: 99px; cursor: pointer; font: inherit; font-size: var(--fs-secondary);
   background: transparent; color: var(--muted); border: 1px solid var(--line-2);
 }
 .pf-pick.on { color: var(--white); border-color: var(--cool); }
 .pf-go {
   width: 100%; padding: 15px; border-radius: 99px; cursor: pointer; font: inherit;
-  font-size: 14px; font-weight: 600;
+  font-size: var(--fs-button); font-weight: 600;
   background: var(--btn); border: 0; color: var(--btn-ink);
 }
 .pf-go:hover { filter: brightness(1.1); }
@@ -1217,9 +1232,9 @@ body {
    the place, the length and the rarity line down and turns it into a paragraph. The full
    title is on the card below and in the player. */
 .now h2 {
-  font-size: 13.5px; font-weight: 500; line-height: 1.22; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  font-size: var(--fs-button); font-weight: 500; line-height: 1.22; margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
-.now p { font-size: 12px; color: var(--muted); margin: 2px 0 0;}
+.now p { font-size: var(--fs-secondary); color: var(--muted); margin: 2px 0 0;}
 /* One line, for the place-and-length line under a found echo. Not for the idle panel,
    whose paragraph is two sentences of explanation and was being cut off mid-word. */
 .now:not(.now-idle) .now-text p {
@@ -1229,8 +1244,8 @@ body {
    take more. It was a heading plus a two-line paragraph, and the list started a hundred
    pixels lower for it. */
 .now-idle { padding: 6px 16px 10px; }
-.now-idle h2 { font-size: 13.5px; font-weight: 500; color: var(--cool); }
-.now-idle p { font-size: 12px; }
+.now-idle h2 { font-size: var(--fs-button); font-weight: 500; color: var(--cool); }
+.now-idle p { font-size: var(--fs-secondary); }
 
 .play {
   width: 46px; height: 46px; flex: none; border: 0; border-radius: 50%;
@@ -1244,7 +1259,7 @@ body {
 }
 
 .tag {
-  display: inline-block; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  display: inline-block; font-size: var(--fs-label); letter-spacing: 0.14em; text-transform: uppercase;
   padding: 2px 7px; border-radius: 6px; font-family: "Space Grotesk", monospace; gap: 5px; font-weight: 500; margin-bottom: 3px;}
 .tag-common { background: rgba(var(--rgb-hair), 0.12); color: var(--cool); }
 .tag-uncommon { background: rgba(108, 99, 255, 0.22); color: var(--indigo-soft); }
@@ -1276,7 +1291,7 @@ body {
   padding: 12px 14px 16px; display: flex; flex-direction: column; gap: 9px;
 }
 .list::-webkit-scrollbar { display: none; }
-.list .empty { font-size: 12px; color: var(--muted); padding: 14px 8px; }
+.list .empty { font-size: var(--fs-body); color: var(--muted); padding: 14px 8px; }
 
 .row {
   width: 100%; display: flex; align-items: center; gap: 10px;
@@ -1290,21 +1305,21 @@ body {
 .bullet-captured { background: var(--ember); }
 .bullet-heard { background: var(--indigo-soft); }
 .row-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
-.row-text strong { font-size: 12.5px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row-text strong { font-size: var(--fs-button); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .row-sealed .row-text strong { color: var(--cool); font-style: italic; font-weight: 400; }
-.row-text small { font-size: 12px; color: var(--muted); }
-.row-distance { font-size: 11px; color: var(--muted); font-family: "Space Grotesk", monospace; flex: none; }
+.row-text small { font-size: var(--fs-secondary); color: var(--muted); }
+.row-distance { font-size: var(--fs-secondary); color: var(--muted); font-family: "Space Grotesk", monospace; flex: none; }
 
 /* ── notes ───────────────────────────────────────────────── */
-.notes { width: 280px; font-size: 12px; line-height: 1.7; color: var(--muted); }
-.notes b { display: block; font-family: "Space Grotesk", monospace; color: var(--white); font-size: 13px; letter-spacing: 0.14em; margin-bottom: 12px; }
+.notes { width: 280px; font-size: var(--fs-secondary); line-height: 1.7; color: var(--muted); }
+.notes b { display: block; font-family: "Space Grotesk", monospace; color: var(--white); font-size: var(--fs-secondary); letter-spacing: 0.14em; margin-bottom: 12px; }
 .notes p { margin-bottom: 12px; }
-.notes code { font-family: "Space Grotesk", monospace; font-size: 11px; color: var(--aqua); }
+.notes code { font-family: "Space Grotesk", monospace; font-size: var(--fs-label); color: var(--aqua); }
 /* ── mode picker ─────────────────────────────────────────── */
 .modepicker { margin: 0 0 16px; }
 .modes { display: flex; gap: 6px; }
 .modes .mode {
-  font: inherit; font-size: 12px; font-weight: 600; flex: 1; padding: 9px 4px; cursor: pointer;
+  font: inherit; font-size: var(--fs-secondary); font-weight: 600; flex: 1; padding: 9px 4px; cursor: pointer;
   background: var(--slate); color: var(--cool);
   border: 1px solid var(--line-2); border-radius: 9px;
 }
@@ -1314,21 +1329,21 @@ body {
 }
 .routes { display: flex; flex-direction: column; gap: 4px; margin-top: 6px; }
 .routes .route {
-  font: inherit; font-size: 11px; text-align: left; padding: 6px 9px; cursor: pointer;
+  font: inherit; font-size: var(--fs-secondary); text-align: left; padding: 6px 9px; cursor: pointer;
   background: transparent; color: var(--muted);
   border: 1px solid var(--line); border-radius: 7px;
 }
 .routes .route:hover { color: var(--aqua); border-color: var(--line-2); }
 .routes .route.on { color: var(--white); border-color: var(--aqua); }
-.routes .route .count { float: right; color: var(--muted); font-size: 11.5px; }
+.routes .route .count { float: right; color: var(--muted); font-size: var(--fs-label); }
 .routename {
   font-family: "Space Grotesk", monospace; color: var(--white);
-  font-size: 12px; margin-bottom: 14px;
+  font-size: var(--fs-secondary); margin-bottom: 14px;
 }
 
 .controls { display: flex; gap: 8px; margin: 16px 0 12px; }
 .controls button {
-  font: inherit; font-size: 12px; padding: 7px 12px; cursor: pointer;
+  font: inherit; font-size: var(--fs-secondary); padding: 7px 12px; cursor: pointer;
   background: var(--slate); color: var(--cool);
   border: 1px solid var(--line-2); border-radius: 9px;
 }
@@ -1349,7 +1364,7 @@ body {
      icon sat at the top of its 48px box, 6.5px under the bar's edge instead of 11.5. */
   flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
   background: none; border: 0; cursor: pointer; position: relative;
-  font-size: 13px; letter-spacing: 0.03em; color: var(--muted);
+  font-size: var(--fs-label); letter-spacing: 0.03em; color: var(--muted);
   font-family: "Space Grotesk", monospace; text-transform: uppercase;
 
 }
@@ -1364,7 +1379,7 @@ body {
   min-width: 15px; height: 15px; padding: 0 4px; border-radius: 99px;
   /* Figures in the page colour, which is the far side of ember in each theme: dark on the
      bright dark-theme ember (white there was 2.07:1), white on the deep light-theme one. */
-  background: var(--ember); color: var(--space); font-weight: 600; font-size: 11px; line-height: 15px;
+  background: var(--ember); color: var(--space); font-weight: 600; font-size: var(--fs-label); line-height: 15px;
 }
 
 
@@ -1436,11 +1451,11 @@ body {
 /* Every tab's title sits in the same 44px row, so "My Echoes" (beside its 44px filter
    button) and "Settings" (alone) land on the same line. Settings sat 9px higher. */
 .screen-head h1 {
-  font-size: 22px; font-weight: 600; letter-spacing: -0.01em;
+  font-size: var(--fs-title); font-weight: 600; letter-spacing: -0.01em;
   min-height: 44px; display: flex; align-items: center; margin: 0;
 }
 
-.screen-head p { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.screen-head p { font-size: var(--fs-secondary); color: var(--muted); margin-top: 4px; }
 
 
 /* ── collection ──────────────────────────────────────────── */
@@ -1454,22 +1469,22 @@ body {
 }
 .group { margin-bottom: 22px; }
 .group-head {
-  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.12em;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.12em;
   text-transform: uppercase; margin-bottom: 8px; color: var(--muted);
 }
 .group-singular { color: var(--magenta-ink); }
 .group-rare { color: var(--ember); }
 .group-uncommon { color: var(--indigo-soft); }
 
-.entry-text h4 { font-size: 13px; font-weight: 500; line-height: 1.35; }
-.entry-text p { font-size: 11px; color: var(--muted); margin-top: 2px; }
-.entry-meta { font-size: 11.5px; color: var(--muted-soft); }
+.entry-text h4 { font-size: var(--fs-button); font-weight: 500; line-height: 1.35; }
+.entry-text p { font-size: var(--fs-secondary); color: var(--muted); margin-top: 2px; }
+.entry-meta { font-size: var(--fs-secondary); color: var(--muted-soft); }
 
 .collection-foot {
   margin-top: 20px; padding: 14px 2px 0; border-top: 1px solid var(--line);
-  font-size: 12px; line-height: 1.6; color: var(--muted);
+  font-size: var(--fs-secondary); line-height: 1.6; color: var(--muted);
 }
-.collection-foot p { font-size: 11.5px; color: var(--muted); line-height: 1.6; }
+.collection-foot p { font-size: var(--fs-secondary); color: var(--muted); line-height: 1.6; }
 .collection-foot strong { color: var(--cool); }
 
 /* ── privacy ─────────────────────────────────────────────── */
@@ -1480,8 +1495,8 @@ body {
   background: none; border: 0; color: inherit; text-align: left; cursor: pointer; padding: 0;
 }
 .setting-text { flex: 1; display: flex; flex-direction: column; gap: 3px; }
-.setting-text strong { font-size: 13.5px; font-weight: 500; }
-.setting-text small { font-size: 11.5px; color: var(--muted); line-height: 1.5; }
+.setting-text strong { font-size: var(--fs-button); font-weight: 500; }
+.setting-text small { font-size: var(--fs-secondary); color: var(--muted); line-height: 1.5; }
 
 .switch {
   width: 42px; height: 25px; flex: none; border-radius: 99px;
@@ -1498,7 +1513,7 @@ body {
 
 /* The consequence of switching off, stated rather than implied. */
 .setting-cost {
-  font-size: 11px; color: var(--muted-soft); line-height: 1.55;
+  font-size: var(--fs-secondary); color: var(--muted-soft); line-height: 1.55;
   margin-top: 7px; padding-left: 2px; border-left: 2px solid var(--line-2); padding-left: 10px;
 }
 
@@ -1507,16 +1522,16 @@ body {
   background: var(--slate); border: 1px solid var(--line);
 }
 .panel h3 {
-  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.12em;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
 }
 .feature-list { list-style: none; }
 .feature {
   display: grid; grid-template-columns: 1fr auto; gap: 2px 10px;
-  padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 12px;
+  padding: 7px 0; border-bottom: 1px solid var(--line); font-size: var(--fs-secondary);
 }
 .feature:last-child { border-bottom: 0; }
-.feature-level { font-family: "Space Grotesk", monospace; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.1em; }
+.feature-level { font-family: "Space Grotesk", monospace; font-size: var(--fs-secondary); text-transform: uppercase; letter-spacing: 0.1em; }
 .feature-full .feature-level { color: var(--aqua); }
 .feature-degraded .feature-level { color: var(--gold); }
 .feature-unavailable .feature-level { color: var(--muted); }
@@ -1524,7 +1539,7 @@ body {
 /* --muted-soft, not a literal. At the old 0.7 this composed to 4.43:1 on the dark panel —
    seven hundredths under 1.4.3 — and to 1.73:1 on white, because the literal never learned
    about the light scheme. */
-.feature-fallback { grid-column: 1 / -1; font-size: 12px; color: var(--muted-soft); line-height: 1.5; }
+.feature-fallback { grid-column: 1 / -1; font-size: var(--fs-secondary); color: var(--muted-soft); line-height: 1.5; }
 
 .panel-danger { border-color: rgba(255, 0, 122, 0.24); }
 .danger-row {
@@ -1533,15 +1548,15 @@ body {
   padding: 9px 0; border-bottom: 1px solid var(--line);
 }
 .danger-row:last-child { border-bottom: 0; }
-.danger-row span { font-size: 13px; color: var(--magenta-ink); }
-.danger-row small { font-size: 11px; color: var(--muted); line-height: 1.5; }
+.danger-row span { font-size: var(--fs-button); color: var(--magenta-ink); }
+.danger-row small { font-size: var(--fs-secondary); color: var(--muted); line-height: 1.5; }
 /* `?at=`: a test position, said plainly so nobody mistakes it for GPS (test-position.ts). */
 /* One line across the very top, and the top bar moved down below it: it used to sit over
    the journey chip and the filter, so a tap on either went to the banner and nothing
    happened (James, 2026-11-10). It takes no taps itself. */
 .test-position {
   position: absolute; top: 0; left: 0; right: 0; z-index: 50; height: 24px;
-  padding: 0 12px; font-size: 11.5px; line-height: 24px; pointer-events: none;
+  padding: 0 12px; font-size: var(--fs-label); line-height: 24px; pointer-events: none;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   background: var(--amber, #f2a33a); color: #1a1205; text-align: center;
 }
@@ -1591,13 +1606,13 @@ body {
 .vf-x svg { width: 15px; height: 15px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; }
 .vf-tag {
   display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px;
-  border-radius: 99px; font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase;
+  border-radius: 99px; font-size: var(--fs-label); letter-spacing: 0.08em; text-transform: uppercase;
   background: rgba(5, 6, 10, 0.5); border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(6px);
 }
 .vf-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 .vf-year {
-  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 12px;
+  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.1em; color: #fff; padding: 4px 9px; border-radius: 99px;
   background: rgba(5, 6, 10, 0.5); border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(6px);
@@ -1611,7 +1626,7 @@ body {
   text-align: center; color: #fff; backdrop-filter: blur(10px);
   background: rgba(5, 6, 10, 0.58); border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.vf-guide strong { display: block; font-size: 14px; font-weight: 600; letter-spacing: -0.01em; }
+.vf-guide strong { display: block; font-size: var(--fs-button); font-weight: 600; letter-spacing: -0.01em; }
 .vf-meter {
   display: block; height: 3px; margin-top: 7px; border-radius: 99px;
   background: rgba(255, 255, 255, 0.2); overflow: hidden;
@@ -1623,11 +1638,11 @@ body {
 /* Arriving on the spot is the payoff, so it is the one state that changes colour. */
 .vf-guide-hold-up { border-color: rgba(255, 158, 18, 0.62); box-shadow: 0 0 22px rgba(255, 158, 18, 0.28); }
 .vf-guide-hold-up .vf-meter span { background: var(--ember-core); }
-.vf-guide-no-compass strong, .vf-guide-no-bearing strong { font-weight: 500; font-size: 13px; }
+.vf-guide-no-compass strong, .vf-guide-no-bearing strong { font-weight: 500; font-size: var(--fs-button); }
 
 .vf-note {
   position: absolute; left: 14px; right: 14px; bottom: 12px; z-index: 4;
-  font-size: 12px; line-height: 1.5; text-align: center; color: rgba(255, 255, 255, 0.78);
+  font-size: var(--fs-secondary); line-height: 1.5; text-align: center; color: rgba(255, 255, 255, 0.78);
   background: rgba(5, 6, 10, 0.52); border-radius: 10px; padding: 6px 10px;
   backdrop-filter: blur(6px);
 }
@@ -1660,12 +1675,12 @@ body {
 .vf-arc-label {
   position: absolute; transform: translateX(-50%); pointer-events: auto;
   width: max-content; max-width: 150px; padding: 5px 9px;
-  border-radius: 10px; font-size: 12px; line-height: 1.3; color: #fff; text-align: center;
+  border-radius: 10px; font-size: var(--fs-label); line-height: 1.3; color: #fff; text-align: center;
   background: rgba(5, 6, 10, 0.68); border: 1px solid rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(6px);
 }
 .vf-arc-on .vf-arc-label { border-color: rgba(255, 158, 18, 0.6); }
-.vf-arc-label em { display: block; font-style: normal; font-size: 11px; color: var(--muted); margin-top: 1px; }
+.vf-arc-label em { display: block; font-style: normal; font-size: var(--fs-label); color: var(--muted); margin-top: 1px; }
 
 /* Behind you is the common case on a street, and the most useful thing this screen
    can say. Dropping the marker would be the easy answer and the wrong one. */
@@ -1673,12 +1688,12 @@ body {
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 4;
   pointer-events: auto; cursor: pointer; max-width: 40%;
   display: flex; align-items: center; gap: 5px; padding: 7px 9px;
-  font-size: 12px; line-height: 1.3; color: #fff; text-align: left;
+  font-size: var(--fs-label); line-height: 1.3; color: #fff; text-align: left;
   background: rgba(5, 6, 10, 0.62); border: 1px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(6px);
 }
 .vf-edge svg { width: 13px; height: 13px; flex: none; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-.vf-edge em { display: block; font-style: normal; font-size: 11px; color: var(--muted); margin-top: 1px; }
+.vf-edge em { display: block; font-style: normal; font-size: var(--fs-label); color: var(--muted); margin-top: 1px; }
 .vf-edge-l { left: 0; border-left: 0; border-radius: 0 12px 12px 0; }
 .vf-edge-r { right: 0; border-right: 0; border-radius: 12px 0 0 12px; flex-direction: row-reverse; text-align: right; }
 
@@ -1686,12 +1701,12 @@ body {
   flex: none; padding: 12px 16px 16px; background: var(--space);
   border-top: 1px solid var(--line);
 }
-.vf-cap p { font-size: 12.5px; line-height: 1.4; color: var(--white); }
-.vf-cap small { display: block; margin-top: 3px; font-size: 11.5px; color: var(--muted); }
+.vf-cap p { font-size: var(--fs-secondary); line-height: 1.4; color: var(--white); }
+.vf-cap small { display: block; margin-top: 3px; font-size: var(--fs-label); color: var(--muted); }
 
 .vf-blend { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
 .vf-end {
-  font-family: "Space Grotesk", monospace; font-size: 11.5px; letter-spacing: 0.08em;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-secondary); letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--muted); flex: none; min-width: 34px;
 }
 .vf-end:last-child { text-align: right; }
@@ -1708,7 +1723,7 @@ body {
   width: 20px; height: 20px; border-radius: 50%; background: var(--ember);
   border: 2px solid var(--space); box-shadow: 0 0 0 1px var(--ember-deep);
 }
-.vf-hint { margin-top: 7px; text-align: center; font-size: 11.5px; color: var(--muted); }
+.vf-hint { margin-top: 7px; text-align: center; font-size: var(--fs-secondary); color: var(--muted); }
 
 .vf-plates { display: flex; gap: 8px; margin-top: 11px; overflow-x: auto; }
 .vf-plate {
@@ -1719,7 +1734,7 @@ body {
   width: 46px; height: 34px; object-fit: cover; border-radius: 7px;
   border: 1px solid var(--line); opacity: 0.6;
 }
-.vf-plate span { font-size: 11px; color: var(--muted); font-family: "Space Grotesk", monospace; }
+.vf-plate span { font-size: var(--fs-label); color: var(--muted); font-family: "Space Grotesk", monospace; }
 .vf-plate-on img { opacity: 1; border-color: var(--ember); }
 .vf-plate-on span { color: var(--ember); }
 
@@ -1738,7 +1753,7 @@ body {
 .vf-compass {
   position: absolute; top: 130px; left: 50%; transform: translateX(-50%); z-index: 5;
   display: flex; align-items: center; gap: 6px; padding: 7px 12px; cursor: pointer;
-  border-radius: 99px; font-size: 11.5px; color: #fff;
+  border-radius: 99px; font-size: var(--fs-label); color: #fff;
   background: rgba(5, 6, 10, 0.6); border: 1px solid rgba(255, 255, 255, 0.24);
   backdrop-filter: blur(8px);
 }
@@ -1776,11 +1791,11 @@ body {
 /* The returning listener's front door. Same panel, different order. */
 .pf-kicker {
   display: block; margin-bottom: 6px;
-  font-family: "Space Grotesk", monospace; font-size: 11.5px;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.12em; text-transform: uppercase; color: var(--ember);
 }
 .pf-recent {
-  font-size: 12px; line-height: 1.5; color: var(--muted); margin: 8px 0 18px;
+  font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted); margin: 8px 0 18px;
 }
 /* What the journey weighs, against what its mode is allowed to carry. A bar rather than
    a number alone, because "8.5 MB" means nothing and "a seventh of the budget" means
@@ -1796,14 +1811,14 @@ body {
   transition: width 0.3s var(--ease);
 }
 .pf-pkg-text {
-  font-size: 11.5px; color: var(--muted);
+  font-size: var(--fs-secondary); color: var(--muted);
   font-family: "Space Grotesk", monospace;
 }
-.pf-pkg-drop { font-size: 11px; color: var(--ember); }
+.pf-pkg-drop { font-size: var(--fs-label); color: var(--ember); }
 
 .pf-alt {
   width: 100%; margin-top: 10px; padding: 12px; cursor: pointer; font: inherit;
-  font-size: 12.5px; color: var(--muted);
+  font-size: var(--fs-button); color: var(--muted);
   background: none; border: 0;
 }
 .pf-alt:hover { color: var(--white); }
@@ -2072,7 +2087,7 @@ body {
     position: absolute; right: calc(100% + 10px); top: 50%;
     transform: translate(4px, -50%); opacity: 0; pointer-events: none;
     white-space: nowrap; padding: 6px 10px; border-radius: 9px;
-    font: 500 12px/1.2 inherit; letter-spacing: 0; text-transform: none;
+    font-weight: 500; font-size: var(--fs-label); line-height: 1.2; letter-spacing: 0; text-transform: none;
     color: var(--cool); background: rgba(var(--rgb-panel), 0.97);
     border: 1px solid var(--line); box-shadow: 0 6px 18px rgba(var(--rgb-shadow), calc(0.45 * var(--shadow-k)));
     transition: opacity 0.12s linear, transform 0.12s ease-out;
@@ -2167,7 +2182,7 @@ body {
    in light and near-black in dark, so the credit takes its contrast from the theme's own
    muted ink rather than a fixed colour that would disappear in one of them. */
 .map-credit {
-  fill: var(--muted); opacity: 0.75; font-size: 11px;
+  fill: var(--muted); opacity: 0.75; font-size: var(--fs-label);
   font-family: "Space Grotesk", monospace; pointer-events: none;
   /* A solid halo: over the brighter map's own street and landmark names the thin one
      let them run through the credit ("Farmers Market" across "OpenStreetMap"). */
@@ -2193,7 +2208,7 @@ body {
    in light and near-black in dark, so the credit takes its contrast from the theme's own
    muted ink rather than a fixed colour that would disappear in one of them. */
 .map-credit {
-  fill: var(--muted); opacity: 0.75; font-size: 11px;
+  fill: var(--muted); opacity: 0.75; font-size: var(--fs-label);
   font-family: "Space Grotesk", monospace; pointer-events: none;
   /* A solid halo: over the brighter map's own street and landmark names the thin one
      let them run through the credit ("Farmers Market" across "OpenStreetMap"). */
@@ -2218,7 +2233,7 @@ body {
 .onb-dots i.on { width: 18px; background: var(--aqua); }
 .onb-skip {
   background: none; border: 0; cursor: pointer; font: inherit;
-  font-size: 12px; color: var(--muted); padding: 6px 2px;
+  font-size: var(--fs-secondary); color: var(--muted); padding: 6px 2px;
 }
 /* Centred while it fits, scrolled from the top when it does not. It was justify-content:
    center, which on a step taller than the phone pushed the heading up under the dots and
@@ -2232,8 +2247,8 @@ body {
 .onb-body > :first-child { margin-top: auto; }
 .onb-body > :last-child { margin-bottom: auto; }
 .onb-body::-webkit-scrollbar { display: none; }
-.onb h2 { font-size: 24px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.2; }
-.onb-lead { font-size: 13px; line-height: 1.6; color: var(--muted); margin: 6px 0 14px; }
+.onb h2 { font-size: var(--fs-title); font-weight: 600; letter-spacing: -0.02em; line-height: 1.2; }
+.onb-lead { font-size: var(--fs-body); line-height: 1.6; color: var(--muted); margin: 6px 0 14px; }
 
 /* A choice, not a radio button. The consequence is the label. */
 .onb-card {
@@ -2244,8 +2259,8 @@ body {
 }
 /* White. It had no colour of its own, so the title of every choice card inherited the
    screen's muted ink and read as disabled text. */
-.onb-card b { display: block; font-size: 14px; font-weight: 500; margin-bottom: 4px; color: var(--white); }
-.onb-card small { display: block; font-size: 11.5px; line-height: 1.55; color: var(--muted); }
+.onb-card b { display: block; font-size: var(--fs-button); font-weight: 500; margin-bottom: 4px; color: var(--white); }
+.onb-card small { display: block; font-size: var(--fs-secondary); line-height: 1.55; color: var(--muted); }
 .onb-card.on { border-color: var(--aqua); background: rgba(var(--rgb-accent), 0.08); }
 
 /* The permission, stated in our words before the system says anything. */
@@ -2259,17 +2274,17 @@ body {
   width: 20px; height: 20px; fill: none; stroke: currentColor;
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
-.onb-perm b { display: block; font-size: 13px; font-weight: 500; margin-bottom: 3px; }
-.onb-perm small { display: block; font-size: 11.5px; line-height: 1.55; color: var(--muted); }
+.onb-perm b { display: block; font-size: var(--fs-button); font-weight: 500; margin-bottom: 3px; }
+.onb-perm small { display: block; font-size: var(--fs-secondary); line-height: 1.55; color: var(--muted); }
 
 .onb-go {
   width: 100%; padding: 14px; border-radius: 14px; border: 0; cursor: pointer; font: inherit;
-  background: var(--btn); color: var(--btn-ink); font-size: 13.5px; font-weight: 500;
+  background: var(--btn); color: var(--btn-ink); font-size: var(--fs-button); font-weight: 500;
 }
 .onb-go:disabled { opacity: 0.6; cursor: default; }
 .onb-alt {
-  width: 100%; padding: 11px; border-radius: 14px; border: 0; cursor: pointer; font: inherit;
-  background: none; color: var(--muted); font-size: 12px; margin-top: 4px;
+  width: 100%; min-height: 44px; padding: 11px; border-radius: 14px; border: 0; cursor: pointer; font: inherit;
+  background: none; color: var(--muted); font-size: var(--fs-secondary); margin-top: 4px;
 }
 
 /* A question, not a score. Two answers, and no number comes back. See `ratings.ts`. */
@@ -2283,9 +2298,9 @@ body {
   width: 20px; height: 20px; fill: none; stroke: currentColor;
   stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
 }
-.onb-skip { font-size: 12px; }
+.onb-skip { font-size: var(--fs-secondary); }
 .onb-wordmark {
-  font-family: "Space Grotesk", monospace; font-size: 13px; letter-spacing: 0.22em;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-secondary); letter-spacing: 0.22em;
   font-weight: 600; color: var(--aqua); margin-bottom: 8px;
 }
 /* A value card is a claim with a glyph, not a choice. It must not look pressable. */
@@ -2300,13 +2315,13 @@ body {
 
 .onb-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
 .onb-chip {
-  display: flex; align-items: center; gap: 7px; padding: 9px 13px; border-radius: 99px;
+  display: flex; align-items: center; gap: 7px; min-height: 44px; padding: 9px 13px; border-radius: 99px;
   border: 1px solid var(--line-2); background: none; cursor: pointer; font: inherit;
-  font-size: 12px; color: var(--muted);
+  font-size: var(--fs-secondary); color: var(--muted);
 }
 .onb-chip.on { background: rgba(var(--rgb-hair), 0.08); border-color: currentColor; }
 .onb-sum {
-  font-family: "Space Grotesk", monospace; font-size: 11px; color: var(--muted);
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); color: var(--muted);
   margin: 6px 0 14px;
 }
 
@@ -2319,7 +2334,7 @@ body {
 .onb-test {
   display: flex; align-items: center; justify-content: center; gap: 8px;
   width: 100%; padding: 13px; border-radius: 14px; cursor: pointer; font: inherit;
-  background: none; border: 1px solid var(--line-2); color: var(--white); font-size: 13px;
+  background: none; border: 1px solid var(--line-2); color: var(--white); font-size: var(--fs-secondary);
   margin-bottom: 14px;
 }
 .onb-test svg { width: 15px; height: 15px; fill: currentColor; }
@@ -2329,8 +2344,8 @@ body {
   border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
 }
 .onb-row div { flex: 1; }
-.onb-row b { display: block; font-size: 13px; font-weight: 500; margin-bottom: 3px; }
-.onb-row small { display: block; font-size: 11.5px; line-height: 1.5; color: var(--muted); }
+.onb-row b { display: block; font-size: var(--fs-button); font-weight: 500; margin-bottom: 3px; }
+.onb-row small { display: block; font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted); }
 .onb-sw {
   flex: none; width: 44px; height: 26px; border-radius: 99px; cursor: pointer; padding: 0;
   border: 1px solid var(--line-2); background: rgba(var(--rgb-hair), 0.1); position: relative;
@@ -2357,7 +2372,7 @@ body {
 
 /* Flight number, and what it resolved to. */
 .onb-field {
-  width: 100%; padding: 14px 15px; border-radius: 14px; font: inherit; font-size: 15px;
+  width: 100%; padding: 14px 15px; border-radius: 14px; font: inherit; font-size: var(--fs-body);
   background: rgba(var(--rgb-panel), 0.55); border: 1px solid var(--line-2);
   color: var(--white); margin-bottom: 4px;
   font-family: "Space Grotesk", monospace; letter-spacing: 0.06em;
@@ -2374,7 +2389,7 @@ body {
   padding: 14px 15px; border-radius: 14px; margin: 6px 0 16px;
   background: rgba(var(--rgb-accent), 0.07); border: 1px solid rgba(var(--rgb-accent), 0.28);
 }
-.onb-route b { display: block; font-size: 13.5px; font-weight: 500; }
+.onb-route b { display: block; font-size: var(--fs-button); font-weight: 500; }
 .onb-route-line {
   display: block; height: 2px; margin: 9px 0; border-radius: 2px;
   background: rgba(var(--rgb-hair), 0.16); position: relative;
@@ -2383,13 +2398,13 @@ body {
   position: absolute; inset: 0 auto 0 0; width: 38%; border-radius: 2px;
   background: var(--aqua); box-shadow: 0 0 8px var(--aqua);
 }
-.onb-route small { display: block; font-size: 11.5px; color: var(--muted); }
+.onb-route small { display: block; font-size: var(--fs-secondary); color: var(--muted); }
 
 /* Which build this is. Quiet, at the bottom of settings, where it is findable when
    somebody asks "is this the new one" and invisible the rest of the time. */
 .build-stamp {
   margin: 18px 4px 0; text-align: center;
-  font-family: "Space Grotesk", monospace; font-size: 11.5px; color: var(--muted);
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); color: var(--muted);
 }
 
 /* ── The echo you tapped ──────────────────────────────────────────────────────
@@ -2445,7 +2460,7 @@ body {
 
 .pop-kicker {
   display: inline-flex; align-items: center; gap: 5px;
-  font-family: "Space Grotesk", monospace; font-size: 11px; font-weight: 500;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); font-weight: 500;
   letter-spacing: 0.14em; text-transform: uppercase;
 }
 .pop-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
@@ -2454,21 +2469,21 @@ body {
 .pop h3 {
   /* Balanced, so a two-line title never leaves one word alone ("fort"). */
   text-wrap: balance;
-  margin: 5px 34px 0 0; font-size: 14px; font-weight: 500;
+  margin: 5px 34px 0 0; font-size: var(--fs-echo); font-weight: 500;
   line-height: 1.3; letter-spacing: -0.01em; color: var(--white);
 }
 .pop-where {
-  margin: 4px 0 0; font-size: 11.5px; color: var(--muted);
+  margin: 4px 0 0; font-size: var(--fs-secondary); color: var(--muted);
   font-family: "Space Grotesk", monospace;
 }
 .pop-teaser {
-  margin: 8px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--cool);
+  margin: 8px 0 0; font-size: var(--fs-body); line-height: 1.5; color: var(--cool);
 }
 
 /* Not a button. There is nothing to press until you are standing there, and a
    disabled play button is a small insult. */
 .pop-state {
-  margin: 11px 0 0; font-size: 11px; color: var(--muted);
+  margin: 11px 0 0; font-size: var(--fs-secondary); color: var(--muted);
   font-family: "Space Grotesk", monospace;
 }
 .pop-state-near { color: var(--aqua); }
@@ -2477,7 +2492,7 @@ body {
   margin-top: 11px; width: 100%; min-height: 40px;
   display: flex; align-items: center; justify-content: center; gap: 7px;
   border: 0; border-radius: 99px; cursor: pointer; font: inherit;
-  font-size: 12.5px; font-weight: 600; color: var(--btn-ink);
+  font-size: var(--fs-button); font-weight: 600; color: var(--btn-ink);
   background: var(--btn);
 }
 .pop-go svg { width: 14px; height: 14px; fill: currentColor; }
@@ -2487,14 +2502,14 @@ body {
   margin-top: 8px; width: 100%; min-height: 34px;
   display: flex; align-items: center; justify-content: center; gap: 6px;
   border: 1px solid var(--line-2); border-radius: 99px; cursor: pointer;
-  font: inherit; font-size: 11px; color: var(--cool); background: transparent;
+  font: inherit; font-size: var(--fs-label); color: var(--cool); background: transparent;
 }
 .pop-save svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
 .pop-save.on { color: var(--ember); border-color: rgba(255, 158, 18, 0.5); background: rgba(255, 158, 18, 0.1); }
 .pop-save.on svg { fill: currentColor; }
 /* Save for later and Add to route, side by side: the two ways of keeping one for later. */
 .pop-keep { display: flex; gap: 8px; margin-top: 8px; }
-.pop-keep .pop-save { margin-top: 0; flex: 1 1 0; min-width: 0; min-height: 38px; padding: 0 8px; white-space: nowrap; }
+.pop-keep .pop-save { margin-top: 0; flex: 1 1 0; min-width: 0; min-height: 44px; padding: 0 8px; white-space: nowrap; }
 .pop-route.on { color: var(--aqua); border-color: rgba(var(--rgb-accent), 0.5); background: rgba(var(--rgb-accent), 0.1); }
 .pop-route svg { fill: none !important; stroke-linecap: round; }
 
@@ -2595,11 +2610,11 @@ body {
 }
 .screen-body > .empty b {
   display: block; margin-bottom: 8px;
-  font-size: 15px; font-weight: 500; color: var(--white);
+  font-size: var(--fs-button); font-weight: 500; color: var(--white);
 }
 .screen-body > .empty span {
   display: block; max-width: 34ch; margin: 0 auto;
-  font-size: 12.5px; line-height: 1.6;
+  font-size: var(--fs-secondary); line-height: 1.6;
 }
 
 
@@ -2614,7 +2629,7 @@ body {
 /* The note about what is not built yet. Small, last, and not in the mono face, which made
    it look like debug output stuck to the screen. */
 .onb-note {
-  margin: 10px 2px 0; font-size: 11px; line-height: 1.5; color: var(--muted); opacity: 0.8;
+  margin: 10px 2px 0; font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted); opacity: 0.8;
 }
 
 /* Stopped, as a state rather than as a reading of 0:00.
@@ -2651,7 +2666,7 @@ body {
 
 .rose-north { stroke: rgba(var(--rgb-hair), 0.45); stroke-width: 1.4; stroke-linecap: round; }
 .rose-north-mark {
-  fill: var(--muted); font-family: "Space Grotesk", monospace; font-size: 11px;
+  fill: var(--muted); font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.14em;
 }
 
@@ -2690,11 +2705,11 @@ body {
 .rose-hum, .rose-ask {
   width: 100%; display: flex; flex-direction: column; align-items: center; gap: 3px;
   padding: 13px 16px; border-radius: 16px; cursor: pointer; font: inherit;
-  font-size: 13px; font-weight: 500; color: var(--cool);
+  font-size: var(--fs-secondary); font-weight: 500; color: var(--cool);
   background: rgba(var(--rgb-panel), 0.6); border: 1px solid var(--line-2);
 }
 .rose-hum svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
-.rose-hum small, .rose-ask small { font-size: 11px; font-weight: 400; color: var(--muted); text-align: center; }
+.rose-hum small, .rose-ask small { font-size: var(--fs-label); font-weight: 400; color: var(--muted); text-align: center; }
 .rose-hum.on {
   color: var(--aqua); border-color: rgba(var(--rgb-accent), 0.5);
   background: rgba(var(--rgb-accent), 0.1);
@@ -2707,7 +2722,7 @@ body {
   margin-top: 11px; width: 100%; min-height: 40px;
   display: flex; align-items: center; justify-content: center; gap: 7px;
   border: 0; border-radius: 99px; cursor: pointer; font: inherit;
-  font-size: 12.5px; font-weight: 600; color: var(--btn-ink);
+  font-size: var(--fs-secondary); font-weight: 600; color: var(--btn-ink);
   background: var(--btn);
 }
 .pop-aim svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
@@ -2741,7 +2756,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .pf-travel-pick {
   flex: 1; display: flex; flex-direction: column; align-items: center; gap: 5px;
   padding: 11px 6px; border-radius: 13px; cursor: pointer; font: inherit;
-  font-size: 11.5px; color: var(--muted);
+  font-size: var(--fs-secondary); color: var(--muted);
   background: rgba(var(--rgb-panel), 0.5); border: 1px solid var(--line);
 }
 .pf-travel-pick svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
@@ -2751,7 +2766,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 
 .pf-flight { margin-bottom: 10px; }
-.pf-note { margin: 6px 2px 0; font-size: 11px; line-height: 1.5; color: var(--muted); }
+.pf-note { margin: 6px 2px 0; font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted); }
 /* Its own line: it is an alternative to every route rather than one more of them. */
 .pf-roam { width: 100%; margin-bottom: 8px; }
 
@@ -2777,13 +2792,13 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
    buying back. Rendered and measured. */
 .journey-roam {
   display: flex; align-items: center; gap: 9px; white-space: nowrap; min-width: 0;
-  padding: 11px 14px; border-radius: 99px; font-size: 12.5px; color: var(--cool);
+  padding: 11px 14px; border-radius: 99px; font-size: var(--fs-secondary); color: var(--cool);
   background: rgba(var(--rgb-panel), 0.9); border: 1px solid var(--line-2);
   backdrop-filter: blur(12px);
 }
 .journey-roam svg { width: 17px; height: 17px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .journey-change {
-  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: 11px;
+  margin-left: auto; font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.14em; text-transform: uppercase; color: var(--aqua);
 }
 
@@ -2809,7 +2824,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .pf-air { position: relative; margin-bottom: 8px; }
 .pf-air-label {
   display: block; margin: 0 2px 4px;
-  font-family: "Space Grotesk", monospace; font-size: 11px;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
 }
 .pf-air-input { margin-bottom: 0; }
@@ -2827,16 +2842,16 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .pf-air-list button {
   width: 100%; min-height: 44px; display: flex; align-items: baseline; gap: 10px;
   padding: 9px 11px; border: 0; border-radius: 10px; cursor: pointer;
-  background: none; color: var(--cool); font: inherit; font-size: 12.5px; text-align: left;
+  background: none; color: var(--cool); font: inherit; font-size: var(--fs-button); text-align: left;
 }
 .pf-air-list button:hover { background: rgba(var(--rgb-accent), 0.1); color: var(--white); }
 .pf-air-list b {
   flex: none; min-width: 34px; color: var(--white);
-  font-family: "Space Grotesk", monospace; font-size: 12.5px; letter-spacing: 0.04em;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-button); letter-spacing: 0.04em;
 }
 .pf-air-list span {
   min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-  font-size: 11.5px; color: var(--muted);
+  font-size: var(--fs-secondary); color: var(--muted);
 }
 
 /*
@@ -2955,7 +2970,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* Three labelled groups: Kind, Place, Travel. Labels in the section-head style, 16 above
    each group's controls and 8 below the label, so the panel reads as one form. */
 .coll-filter-label {
-  margin: 16px 0 8px; font-family: "Space Grotesk", monospace; font-size: 11px;
+  margin: 16px 0 8px; font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
 }
 .coll-filter-label:first-child { margin-top: 0; }
@@ -2968,14 +2983,14 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .coll-opt {
   min-height: 40px; padding: 0 12px; border-radius: 11px; cursor: pointer; border: 0;
-  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.03em;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.03em;
   text-transform: uppercase; color: var(--muted); background: none;
 }
 .coll-opt.on { color: var(--aqua); background: rgba(var(--rgb-hair), 0.08); }
 .coll-nomatch { padding-top: 24px; }
 .coll-showall {
   margin-top: 14px; min-height: 44px; padding: 0 20px; border-radius: 12px; cursor: pointer;
-  font: inherit; font-size: 14px; color: var(--aqua);
+  font: inherit; font-size: var(--fs-secondary); color: var(--aqua);
   background: none; border: 1px solid rgba(var(--rgb-accent), 0.4);
 }
 
@@ -2992,7 +3007,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .coll-stat-ember { color: var(--ember); }
 .coll-stat-core { color: var(--ember-core); }
 .coll-stat small {
-  font-family: "Space Grotesk", monospace; font-size: 11px;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
 }
 
@@ -3118,15 +3133,15 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   to   { transform: none; opacity: 1; }
 }
 .synced-kicker {
-  margin: 0; font-family: "Space Grotesk", monospace; font-size: 11px; font-weight: 500;
+  margin: 0; font-family: "Space Grotesk", monospace; font-size: var(--fs-label); font-weight: 500;
   letter-spacing: 0.2em; text-transform: uppercase; color: var(--ember-core);
 }
 .synced-say h2 {
-  margin: 13px 0 0; font-size: 21px; font-weight: 500; line-height: 1.3; color: var(--white);
+  margin: 13px 0 0; font-size: var(--fs-echo); font-weight: 500; line-height: 1.3; color: var(--white);
 }
 .synced-where {
   margin: 11px 0 0; font-family: "Space Grotesk", monospace;
-  font-size: 12px; color: var(--muted);
+  font-size: var(--fs-secondary); color: var(--muted);
 }
 
 .synced-rare {
@@ -3134,9 +3149,9 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   background: rgba(255, 158, 18, 0.07); border: 1px solid rgba(255, 158, 18, 0.32);
   animation: synced-lift 0.55s 0.2s ease-out both;
 }
-.synced-rare-why { margin: 0; font-size: 14px; line-height: 1.5; color: var(--ember-core); }
+.synced-rare-why { margin: 0; font-size: var(--fs-secondary); line-height: 1.5; color: var(--ember-core); }
 .synced-rare-cat {
-  margin: 6px 0 0; font-family: "Space Grotesk", monospace; font-size: 11px;
+  margin: 6px 0 0; font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
 }
 
@@ -3152,13 +3167,13 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .synced-listen {
   display: flex; align-items: center; justify-content: center; gap: 9px;
   min-height: 54px; border-radius: 16px; border: 0; cursor: pointer;
-  font: inherit; font-size: 15px; font-weight: 600; color: var(--btn-dark-ink);
+  font: inherit; font-size: var(--fs-button); font-weight: 600; color: var(--btn-dark-ink);
   background: var(--btn-dark);
   box-shadow: 0 0 36px rgba(var(--rgb-accent), 0.28);
 }
 .synced-listen svg { width: 16px; height: 16px; fill: currentColor; }
 .synced-later {
-  min-height: 46px; border-radius: 14px; cursor: pointer; font: inherit; font-size: 13px;
+  min-height: 46px; border-radius: 14px; cursor: pointer; font: inherit; font-size: var(--fs-secondary);
   color: var(--cool); background: none; border: 1px solid var(--line-2);
 }
 /* The next one, and the way to it. Aqua because it is a thing you press; the creature
@@ -3170,11 +3185,11 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   background: rgba(var(--rgb-accent), 0.08); border: 1px solid rgba(var(--rgb-accent), 0.42);
 }
 .synced-next-kicker {
-  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.12em;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--aqua);
 }
 .synced-next-title {
-  font-size: 14px; font-weight: 500; line-height: 1.3; max-width: 100%;
+  font-size: var(--fs-button); font-weight: 500; line-height: 1.3; max-width: 100%;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .synced-next svg {
@@ -3212,7 +3227,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   display: flex; align-items: center; gap: 9px; margin: 0; align-self: stretch;
   padding: 10px 14px; border-radius: 99px;
   background: rgba(11, 15, 43, 0.6); border: 1px solid var(--line-2);
-  font-size: 12px; line-height: 1.35; color: var(--muted); text-align: left;
+  font-size: var(--fs-secondary); line-height: 1.35; color: var(--muted); text-align: left;
 }
 .walk-awake svg {
   width: 17px; height: 17px; flex: none;
@@ -3224,7 +3239,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .walk-awake-warn svg { stroke: var(--ember); }
 
 .walk-kicker {
-  margin: 0; font-size: 11px; letter-spacing: 0.2em;
+  margin: 0; font-size: var(--fs-label); letter-spacing: 0.2em;
   text-transform: uppercase; color: var(--muted);
 }
 
@@ -3262,13 +3277,13 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .walk-far i { font-size: 28px; font-style: normal; color: var(--ember); }
 
 .walk-turn {
-  margin: 13px 0 0; font-size: 12px; letter-spacing: 0.14em;
+  margin: 13px 0 0; font-size: var(--fs-secondary); letter-spacing: 0.14em;
   text-transform: uppercase; color: var(--ember);
 }
 .walk-turn-flat { color: var(--muted); }
 .walk-compass {
   margin-top: 12px; min-height: 44px; padding: 0 18px; border-radius: 12px;
-  font: inherit; font-size: 13px; cursor: pointer;
+  font: inherit; font-size: var(--fs-secondary); cursor: pointer;
   color: var(--cool); background: rgba(var(--rgb-accent), 0.08);
   border: 1px solid rgba(var(--rgb-accent), 0.34);
 }
@@ -3279,15 +3294,15 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .walk-card-kick {
   display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0;
-  font-size: 11px; font-weight: 500; letter-spacing: 0.14em;
+  font-size: var(--fs-label); font-weight: 500; letter-spacing: 0.14em;
   text-transform: uppercase; color: var(--ember-core);
 }
 .walk-card-glyph svg {
   display: block; width: 15px; height: 15px; fill: none; stroke: currentColor;
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
-.walk-card h2 { margin: 8px 0 0; font-size: 18px; font-weight: 500; line-height: 1.3; }
-.walk-card-note { margin: 9px 0 0; font-size: 12px; color: var(--muted); }
+.walk-card h2 { margin: 8px 0 0; font-size: var(--fs-echo); font-weight: 500; line-height: 1.3; }
+.walk-card-note { margin: 9px 0 0; font-size: var(--fs-secondary); color: var(--muted); }
 
 .walk-progress {
   margin-top: 16px; align-self: stretch; display: flex; align-items: center; gap: 12px;
@@ -3301,12 +3316,12 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   background: linear-gradient(90deg, var(--ember-deep), var(--ember-core));
   transition: width 0.4s ease-out;
 }
-.walk-count { flex: none; font-size: 12px; color: var(--muted); }
+.walk-count { flex: none; font-size: var(--fs-secondary); color: var(--muted); }
 
 .walk-lock {
   margin-top: 14px; align-self: stretch;
   display: flex; align-items: center; justify-content: center; gap: 9px;
-  min-height: 48px; border-radius: 14px; cursor: pointer; font: inherit; font-size: 12px;
+  min-height: 48px; border-radius: 14px; cursor: pointer; font: inherit; font-size: var(--fs-secondary);
   color: var(--muted); background: none; border: 1px dashed var(--line-2);
 }
 .walk-lock svg {
@@ -3318,13 +3333,13 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .walk-acts { margin-top: 10px; align-self: stretch; display: flex; gap: 10px; }
 .walk-map {
   flex-grow: 1; display: flex; align-items: center; justify-content: center; gap: 8px;
-  min-height: 52px; border-radius: 15px; cursor: pointer; font: inherit; font-size: 15px;
+  min-height: 52px; border-radius: 15px; cursor: pointer; font: inherit; font-size: var(--fs-button);
   color: var(--text); background: none; border: 1px solid var(--line-2);
 }
 .walk-map svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; }
 .walk-end {
   flex: none; min-height: 52px; padding: 0 22px; border-radius: 15px; cursor: pointer;
-  font: inherit; font-size: 15px; font-weight: 500; color: var(--cool);
+  font: inherit; font-size: var(--fs-button); font-weight: 500; color: var(--cool);
   background: rgba(var(--rgb-accent), 0.1); border: 1px solid rgba(var(--rgb-accent), 0.4);
 }
 
@@ -3386,9 +3401,9 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 
 .nowhere-say { margin-top: 6px; }
 .nowhere-say h1 {
-  margin: 0; font-size: 25px; font-weight: 600; line-height: 1.24; letter-spacing: -0.01em;
+  margin: 0; font-size: var(--fs-title); font-weight: 600; line-height: 1.24; letter-spacing: -0.01em;
 }
-.nowhere-say p { margin: 13px 0 0; font-size: 15px; line-height: 1.6; color: var(--muted); }
+.nowhere-say p { margin: 13px 0 0; font-size: var(--fs-body); line-height: 1.6; color: var(--muted); }
 .nowhere-say b { color: var(--text); font-weight: 600; }
 
 .nowhere-acts {
@@ -3397,14 +3412,14 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .nowhere-go {
   display: flex; align-items: center; justify-content: center; gap: 9px;
   min-height: 54px; border-radius: 16px; border: 0; cursor: pointer;
-  font: inherit; font-size: 16px; font-weight: 600; color: var(--btn-dark-ink);
+  font: inherit; font-size: var(--fs-button); font-weight: 600; color: var(--btn-dark-ink);
   background: var(--btn-dark);
 }
 .nowhere-go svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; }
 .nowhere-widen {
   display: flex; align-items: center; justify-content: center; gap: 9px;
   min-height: 50px; border-radius: 15px; cursor: pointer;
-  font: inherit; font-size: 15px; color: var(--text);
+  font: inherit; font-size: var(--fs-button); color: var(--text);
   background: none; border: 1px solid var(--line-2);
 }
 .nowhere-widen svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; }
@@ -3423,7 +3438,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .nowhere:has(.nowhere-look .jmenu-hit) .nowhere-seek { display: none; }
 @media (max-height: 700px) {
   .nowhere-seek { height: 150px; }
-  .nowhere-say p { font-size: 14px; line-height: 1.5; }
+  .nowhere-say p { font-size: var(--fs-secondary); line-height: 1.5; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3476,7 +3491,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .hear-credit {
   position: absolute; left: 18px; right: 18px; bottom: 12px; margin: 0;
-  font-size: 11px; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.72);
+  font-size: var(--fs-label); letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.72);
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 
@@ -3512,11 +3527,11 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .hear-say { position: relative; margin-top: calc(var(--plate-h) + 12px); padding: 0 var(--gutter); flex: none; }
 .hear-kicker {
   display: flex; align-items: center; gap: 10px; margin: 0;
-  font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
+  font-size: var(--fs-label); font-weight: 500; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--muted);
 }
 .hear-rarity { color: var(--ember-core); }
-.hear-say h1 { margin: 10px 0 0; font-size: 22px; font-weight: 500; line-height: 1.24; }
+.hear-say h1 { margin: 10px 0 0; font-size: var(--fs-echo); font-weight: 500; line-height: 1.24; }
 
 .hear-track { position: relative; margin: auto 0; flex: none; }
 /* The whole band takes the drag, not a thin line inside it. `touch-action: none` because
@@ -3570,7 +3585,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .hear-head-dot { fill: var(--ember-core); filter: drop-shadow(0 0 7px var(--ember)); }
 .hear-clock {
   display: flex; justify-content: space-between; margin: 2px 0 0; padding: 0 var(--gutter);
-  font-size: 12px; color: var(--muted);
+  font-size: var(--fs-secondary); color: var(--muted);
 }
 
 /*
@@ -3584,7 +3599,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .hear-chip {
   position: relative; display: inline-flex; align-items: center; gap: 6px;
   min-height: 34px; padding: 0 13px; border-radius: 99px; cursor: pointer;
-  font: inherit; font-size: 13px; color: var(--muted);
+  font: inherit; font-size: var(--fs-secondary); color: var(--muted);
   background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.13);
 }
 .hear-chip svg {
@@ -3596,7 +3611,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
    essentially landed. Same height, so nothing below it moves. */
 .hear-ask { gap: 10px; }
 .hear-ask > span {
-  align-self: center; font-size: 13px; color: var(--muted);
+  align-self: center; font-size: var(--fs-secondary); color: var(--muted);
 }
 /*
  * The narrator chip is a label wrapping a native select. The select is stretched over the
@@ -3699,7 +3714,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   position: relative; min-width: 0; min-height: 52px; padding: 5px 2px;
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px;
   border: 0; border-radius: 14px; background: none; cursor: pointer;
-  font: inherit; font-size: 12px; line-height: 1; white-space: nowrap; color: var(--cool);
+  font: inherit; font-size: var(--fs-label); line-height: 1; white-space: nowrap; color: var(--cool);
 }
 .hear-acts > button:hover, .hear-acts > label:hover { background: rgba(255, 255, 255, 0.05); }
 .hear-acts svg {
@@ -3795,12 +3810,12 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 @keyframes paywall-in { from { opacity: 0; } to { opacity: 1; } }
 .paywall-body { width: 100%; max-width: 340px; margin: auto; text-align: center; }
 .paywall-count {
-  margin: 0 0 12px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  margin: 0 0 12px; font-size: var(--fs-label); letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--muted);
 }
-.paywall h2 { margin: 0; font-size: 23px; font-weight: 600; line-height: 1.28; }
+.paywall h2 { margin: 0; font-size: var(--fs-title); font-weight: 600; line-height: 1.28; }
 .paywall-next {
-  margin: 10px 0 0; font-size: 14px; line-height: 1.55; color: var(--cool);
+  margin: 10px 0 0; font-size: var(--fs-body); line-height: 1.55; color: var(--cool);
 }
 .paywall-next strong { color: var(--white); font-weight: 500; }
 .paywall-where { color: var(--muted); }
@@ -3823,17 +3838,17 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .paywall-plan:has(input:focus-visible) { outline: 2px solid var(--cool); outline-offset: 2px; }
 .paywall-plan-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.paywall-plan-name { font-size: 15px; font-weight: 600; color: var(--white); }
+.paywall-plan-name { font-size: var(--fs-button); font-weight: 600; color: var(--white); }
 /* Ember, because what is behind the wall is echoes and ember is what an echo is. */
 .paywall-plan-price {
-  font-size: 18px; font-weight: 600; color: var(--ember-core); white-space: nowrap;
+  font-size: var(--fs-button); font-weight: 600; color: var(--ember-core); white-space: nowrap;
 }
-.paywall-plan-price small { font-size: 12px; font-weight: 500; color: var(--cool); }
+.paywall-plan-price small { font-size: var(--fs-secondary); font-weight: 500; color: var(--cool); }
 .paywall-plan-what {
-  display: block; margin-top: 6px; font-size: 12.5px; line-height: 1.5; color: var(--cool);
+  display: block; margin-top: 6px; font-size: var(--fs-secondary); line-height: 1.5; color: var(--cool);
 }
 /* The sum that decides between them, said as a fact rather than a "best value" badge. */
-.paywall-sum { text-wrap: balance; margin: 10px 0 12px; font-size: 12.5px; line-height: 1.5; color: var(--muted); }
+.paywall-sum { text-wrap: balance; margin: 10px 0 12px; font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted); }
 /* "Buying for another city?" (Paywall.tsx): a link in the sum's own line, so it costs the
    screen no height, with a 44px target drawn outside the text. */
 .paywall-other {
@@ -3842,27 +3857,49 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .paywall-other::after { content: ""; position: absolute; inset: -12px -6px; }
 .paywall-cities { display: flex; flex-direction: column; gap: 8px; }
-.paywall-cities-head { font-size: 13px; color: var(--muted); margin-bottom: 2px; }
+.paywall-cities-head { font-size: var(--fs-secondary); color: var(--muted); margin-bottom: 2px; }
 .paywall-city { width: 100%; text-align: left; padding-left: 16px; font: inherit; color: inherit; }
 .paywall-buy:disabled { opacity: 0.45; cursor: default; }
 .paywall-buy {
   width: 100%; min-height: 52px; border: 0; border-radius: 14px; cursor: pointer;
-  font: inherit; font-size: 15.5px; font-weight: 500;
+  font: inherit; font-size: var(--fs-button); font-weight: 500;
   background: var(--btn-dark); color: var(--btn-dark-ink);
 }
 /* Under the button, before the money moves. Not a disclaimer, a fact. */
 .paywall-small {
-  margin: 10px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--muted);
+  margin: 10px 0 0; font-size: var(--fs-label); line-height: 1.5; color: var(--muted);
 }
 .paywall-small a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .paywall-later {
   margin-top: 14px; min-height: 44px; width: 100%; cursor: pointer;
-  font: inherit; font-size: 14px; color: var(--cool);
+  font: inherit; font-size: var(--fs-button); color: var(--cool);
   background: none; border: 1px solid var(--line); border-radius: 13px;
 }
 /* What they keep either way, which is not nothing. */
 .paywall-keep {
-  margin: 10px 0 0; font-size: 11.5px; line-height: 1.5; color: var(--muted);
+  margin: 10px 0 0; font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted);
+}
+/*
+ * Fitted to an iPhone in Safari (390x664), which the type scale overran by 114px. The
+ * words keep their sizes except the headline, which steps down to the echo title's 26px;
+ * the spacing tightens, the body takes the screen's whole width so a plan's name fits on
+ * one line, and the place name goes (the echo's title, beside it, already says where).
+ */
+@media (max-height: 760px) {
+  .paywall { padding: 12px 20px; }
+  .paywall-body { max-width: none; }
+  .paywall-count { margin-bottom: 8px; }
+  .paywall h2 { font-size: var(--fs-echo); line-height: 1.2; }
+  .paywall-next { margin-top: 8px; line-height: 1.4; }
+  .paywall-where { display: none; }
+  .paywall-plans { margin-top: 12px; }
+  .paywall-plan { padding: 9px 12px 9px 42px; }
+  .paywall-plan input { left: 14px; top: 14px; }
+  .paywall-plan-what { margin-top: 4px; line-height: 1.4; }
+  .paywall-sum { margin: 8px 0 10px; line-height: 1.4; }
+  .paywall-small { margin-top: 8px; line-height: 1.4; }
+  .paywall-later { margin-top: 10px; }
+  .paywall-keep { margin-top: 8px; line-height: 1.4; }
 }
 
 /* ── The city ───────────────────────────────────────────────────────────────────
@@ -3897,7 +3934,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .city-plate {
   position: absolute; transform: translateX(-50%); cursor: pointer;
   min-height: 24px; padding: 4px 9px; border-radius: 7px; white-space: nowrap;
-  font-family: "Space Grotesk", monospace; font-size: 11px;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--cool); background: rgba(7, 8, 12, 0.78);
   border: 1px solid var(--line); backdrop-filter: blur(6px);
@@ -3920,9 +3957,9 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   width: 17px; height: 17px; fill: none; stroke: currentColor;
   stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
 }
-.city-where { font-size: 14px; color: var(--text); }
+.city-where { font-size: var(--fs-secondary); color: var(--text); }
 .city-count {
-  margin-left: auto; font-size: 11px; letter-spacing: 0.1em;
+  margin-left: auto; font-size: var(--fs-label); letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--ember);
 }
 
@@ -3932,7 +3969,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   padding: 9px 13px; border-radius: 12px;
   background: rgba(7, 8, 12, 0.72); border: 1px solid var(--line);
   backdrop-filter: blur(14px);
-  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+  font-size: var(--fs-label); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
 }
 .city-ramp {
   flex-grow: 1; height: 7px; border-radius: 99px;
@@ -3953,19 +3990,19 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .city-credit {
   position: absolute; right: 12px; bottom: calc(100% + 6px);
-  font-size: 11px; color: var(--muted); pointer-events: none; white-space: nowrap;
+  font-size: var(--fs-label); color: var(--muted); pointer-events: none; white-space: nowrap;
 }
 .city-card-kick {
-  margin: 0; padding-top: 16px; font-size: 11px; letter-spacing: 0.14em;
+  margin: 0; padding-top: 16px; font-size: var(--fs-label); letter-spacing: 0.14em;
   text-transform: uppercase; color: var(--muted);
 }
 .city-card-row { display: flex; align-items: center; gap: 11px; margin-top: 9px; }
 .city-card-text { flex-grow: 1; min-width: 0; }
-.city-card-text b { display: block; font-size: 17px; font-weight: 500; }
-.city-card-text span { display: block; margin-top: 3px; font-size: 12px; color: var(--muted); }
+.city-card-text b { display: block; font-size: var(--fs-button); font-weight: 500; }
+.city-card-text span { display: block; margin-top: 3px; font-size: var(--fs-secondary); color: var(--muted); }
 .city-go {
   flex: none; min-height: 46px; padding: 0 22px; border-radius: 14px; border: 0;
-  cursor: pointer; font: inherit; font-size: 15px; font-weight: 600; color: var(--btn-dark-ink);
+  cursor: pointer; font: inherit; font-size: var(--fs-button); font-weight: 600; color: var(--btn-dark-ink);
   background: var(--btn-dark);
 }
 
@@ -3992,16 +4029,18 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   .pop-teaser { display: none; }
   /* One label in a 56px strip: the caption and "Then & now" overlapped at this height. */
   .pop-plate span:not(.pop-plate-cam) { display: none; }
+  /* The type scale's 26px title ran to three lines here and cut the card 24px short. */
+  .pop h3 { font-size: 22px; line-height: 1.25; }
 }
 /* The credit, on the photograph, top left: the "Then & now" badge holds the top right. */
 .pop-plate .pop-plate-credit {
   position: absolute; left: 9px; top: 8px; max-width: 58%; line-height: 1.25;
-  padding: 3px 6px; border-radius: 5px; font-size: 9px; color: #fff;
+  padding: 3px 6px; border-radius: 5px; font-size: var(--fs-label); color: #fff;
   background: rgba(0, 0, 0, 0.6); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .pop-plate span {
   position: absolute; left: 9px; bottom: 8px; line-height: 1.2;
-  padding: 4px 8px; border-radius: 6px; font-size: 11px; letter-spacing: 0.1em;
+  padding: 4px 8px; border-radius: 6px; font-size: var(--fs-label); letter-spacing: 0.1em;
   text-transform: uppercase; background: rgba(0, 0, 0, 0.6);
   /*
      A literal #fff, not --white, and this is the same trap the contrast script warns
@@ -4016,7 +4055,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   letter-spacing: 0.12em; text-transform: uppercase;
 }
 .pop-reach {
-  margin: 10px 0 0; text-align: center; font-size: 12px;
+  margin: 10px 0 0; text-align: center; font-size: var(--fs-secondary);
   letter-spacing: 0.08em; color: var(--muted);
 }
 /* The card's mark, when there is a photograph of the place to put on it. Square rather
@@ -4038,7 +4077,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .play-plate i {
   position: absolute; left: 0; right: 0; bottom: 0; z-index: 1;
-  font-size: 11px; font-style: normal; letter-spacing: 0.1em; line-height: 1.45;
+  font-size: var(--fs-label); font-style: normal; letter-spacing: 0.1em; line-height: 1.45;
   text-align: center; color: #fff; background: rgba(0, 0, 0, 0.5);
 }
 /* First run: three asks, each with its reason. Only the first is a system permission;
@@ -4050,7 +4089,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .onb-ic-indigo { color: var(--indigo-soft); background: rgba(155, 149, 255, 0.12); }
 .onb-ic-ember { color: var(--ember-core); background: rgba(255, 158, 18, 0.12); }
 .onb-without {
-  margin: 14px 0 0; text-align: center; font-size: 11px;
+  margin: 14px 0 0; text-align: center; font-size: var(--fs-secondary);
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
 }
 /* A collection row carrying its archive plate. The glyph rides over it with a shade under
@@ -4085,7 +4124,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
    sealed: a label under every pin is a map of labels, and the point of this one is to
    make two pins out of nine pull you towards them. */
 .pin-tag {
-  font-family: "Space Grotesk", monospace; font-size: 11px; font-weight: 500;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); font-weight: 500;
   letter-spacing: 0.14em; text-transform: uppercase; pointer-events: none;
   /* Painted under the glyph rather than behind a plate, so it never boxes the map in.
      The stroke is the plate: it lifts the words off whatever tile is behind them. */
@@ -4117,7 +4156,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   stroke-linecap: round; stroke-linejoin: round;
 }
 .map-edge-text {
-  fill: var(--cool); font-family: "Space Grotesk", monospace; font-size: 11px;
+  fill: var(--cool); font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
   letter-spacing: 0.1em; text-transform: uppercase;
 }
 .map-edge-arrow {
@@ -4163,7 +4202,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   display: flex; align-items: center; gap: 7px; cursor: pointer;
   /* 40 inside a row that pads to 44, the same bargain the chips strike. */
   min-height: 40px; padding: 0 9px; white-space: nowrap;
-  border-radius: 13px; font: inherit; font-size: 12px; color: var(--cool);
+  border-radius: 13px; font: inherit; font-size: var(--fs-button); color: var(--cool);
   background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
   backdrop-filter: blur(12px);
 }
@@ -4307,7 +4346,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
    arm's length, which argues for the high side of any guideline. */
 .echobar-kicker {
   display: flex; align-items: center; gap: 5px; min-width: 0;
-  font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+  font-size: var(--fs-label); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--cat, var(--cool)); white-space: nowrap; overflow: hidden;
 }
 .echobar-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; flex: none; }
@@ -4324,7 +4363,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  * title is one tap away on the card.
  */
 .echobar-tap strong {
-  font-size: 14.5px; font-weight: 500; line-height: 1.25; color: var(--white);
+  font-size: var(--fs-button); font-weight: 500; line-height: 1.25; color: var(--white);
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 /*
@@ -4337,7 +4376,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  */
 .echobar-where {
   display: flex; gap: 4px; min-width: 0;
-  font-size: 11px; color: var(--muted); white-space: nowrap;
+  font-size: var(--fs-secondary); color: var(--muted); white-space: nowrap;
 }
 .echobar-place { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 .echobar-place::after { content: " ·"; }
@@ -4384,7 +4423,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   position: absolute; left: auto; bottom: auto; right: 8px; top: 8px;
   display: flex; align-items: center; gap: 6px;
   padding: 5px 9px 5px 7px; border-radius: 99px;
-  font-family: "Space Grotesk", monospace; font-size: 11px; letter-spacing: 0.04em;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.04em;
   background: rgba(8, 10, 24, 0.72); color: #fff;
   backdrop-filter: blur(8px);
 }
@@ -4434,7 +4473,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
 .jchip-label {
-  position: relative; font-family: "Space Grotesk", monospace; font-size: 13px;
+  position: relative; font-family: "Space Grotesk", monospace; font-size: var(--fs-button);
   font-weight: 500; color: var(--aqua);
 }
 /* The ▾: this opens something. */
@@ -4467,7 +4506,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .jmenu-mode {
   display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px;
   border: 0; border-radius: 10px; background: none; cursor: pointer;
-  font: inherit; font-size: 13px; color: var(--cool);
+  font: inherit; font-size: var(--fs-button); color: var(--cool);
 }
 .jmenu-mode svg {
   width: 17px; height: 17px; flex: none; fill: none; stroke: currentColor;
@@ -4477,31 +4516,31 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   color: var(--aqua); background: rgba(var(--rgb-accent), 0.12);
   box-shadow: inset 0 0 0 1px rgba(var(--rgb-accent), 0.45);
 }
-.jmenu-empty { margin: 8px 10px; font-size: 13px; color: var(--muted); }
+.jmenu-empty { margin: 8px 10px; font-size: var(--fs-secondary); color: var(--muted); }
 .jmenu-item {
   display: flex; align-items: center; gap: 11px; width: 100%; min-height: 48px;
   padding: 6px 10px; border: 0; border-radius: 11px; background: none; cursor: pointer;
-  font: inherit; font-size: 14px; color: var(--white); text-align: left;
+  font: inherit; font-size: var(--fs-button); color: var(--white); text-align: left;
 }
 .jmenu-item > svg:not(.jmenu-tick) {
   width: 19px; height: 19px; flex: none; fill: none; stroke: var(--cool);
   stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
 }
 .jmenu-item span { display: flex; flex-direction: column; gap: 2px; flex: 1; }
-.jmenu-item small { font-size: 12px; color: var(--muted); }
+.jmenu-item small { font-size: var(--fs-secondary); color: var(--muted); }
 .jmenu-item.on { background: rgba(var(--rgb-accent), 0.09); }
 .jmenu-item.on > svg { stroke: var(--aqua); }
 .jmenu-item .jmenu-tick { width: 16px; height: 16px; stroke: var(--aqua); stroke-width: 2.2; }
 .jmenu-more {
   margin-top: 4px; border-top: 1px solid var(--line); border-radius: 0 0 11px 11px;
-  font-size: 13px; color: var(--aqua);
+  font-size: var(--fs-button); color: var(--aqua);
 }
 @media (hover: hover) { .jmenu-item:hover { background: rgba(var(--rgb-hair), 0.07); } }
 /* Guided walks and road trips (JourneyChip.tsx, GuidedRoutes): a heading, the ones near you,
    then the rest by city. The "other cities" toggle is a quiet row, not the aqua footer link. */
 .jmenu-routes { margin-top: 6px; border-top: 1px solid var(--line); padding-top: 6px; }
-.jmenu-head { margin: 4px 10px 2px; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
-.jmenu-area-name { margin: 8px 10px 0; font-size: 12px; font-weight: 600; color: var(--cool); }
+.jmenu-head { margin: 4px 10px 2px; font-size: var(--fs-label); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.jmenu-area-name { margin: 8px 10px 0; font-size: var(--fs-secondary); font-weight: 600; color: var(--cool); }
 .jmenu-routes .jmenu-more { border-top: 0; border-radius: 11px; margin-top: 0; }
 @media (prefers-reduced-motion: reduce) { .jmenu { animation: none; } }
 
@@ -4579,7 +4618,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* ── Settings › Membership ─────────────────────────────────── */
 /* The plan line reports; it is not a control, so it does not look pressable. */
 .membership-plan { cursor: default; }
-.membership-plan strong { font-size: 15px; }
+.membership-plan strong { font-size: var(--fs-button); }
 /* Rows divided the way the data panel divides them, so the panel reads as one list. */
 .membership-row,
 .membership .danger-row,
@@ -4588,30 +4627,30 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .membership .danger-row { padding: 9px 0 0; border-bottom: 0; }
 /* Not a button: there is no card to add until payments are on. A word, not a fake control. */
 .membership-soon {
-  flex: none; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  flex: none; font-size: var(--fs-label); letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--muted); border: 1px solid var(--line-2); border-radius: 6px; padding: 3px 7px;
 }
-.membership-note { font-size: 11.5px; line-height: 1.5; color: var(--muted); }
+.membership-note { font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted); }
 .membership-note:empty { display: none; }
 .membership-note:not(:empty) { margin: -2px 0 8px; }
 /* Restore on another phone: two fields and a button, inside the Membership panel. */
 .membership-restore { display: grid; gap: 10px; margin: 2px 0 10px; }
-.membership-restore label { display: grid; gap: 4px; font-size: 11.5px; color: var(--muted); }
+.membership-restore label { display: grid; gap: 4px; font-size: var(--fs-secondary); color: var(--muted); }
 .membership-restore input {
-  font: inherit; font-size: 16px; color: var(--white); background: rgba(var(--rgb-panel), 0.55);
+  font: inherit; font-size: var(--fs-body); color: var(--white); background: rgba(var(--rgb-panel), 0.55);
   border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; min-height: 44px;
 }
 .membership-restore-go {
   min-height: 44px; border: 0; border-radius: 12px; cursor: pointer; font: inherit;
-  font-size: 13.5px; font-weight: 500; background: var(--btn); color: var(--btn-ink);
+  font-size: var(--fs-button); font-weight: 500; background: var(--btn); color: var(--btn-ink);
 }
 .membership-restore-go:disabled { opacity: 0.6; cursor: default; }
 .membership-confirm { padding: 10px 0 0; }
-.membership-confirm p { font-size: 13px; line-height: 1.5; margin-bottom: 10px; }
+.membership-confirm p { font-size: var(--fs-body); line-height: 1.5; margin-bottom: 10px; }
 .membership-confirm-actions { display: flex; gap: 8px; }
 .membership-confirm-actions button {
   flex: 1; min-height: 44px; border-radius: 12px; cursor: pointer;
-  font: inherit; font-size: 13px; font-weight: 500;
+  font: inherit; font-size: var(--fs-button); font-weight: 500;
 }
 /* Keeping it is the safe choice, so it is the filled one. */
 .membership-keep { border: 0; background: var(--btn-dark); color: var(--btn-dark-ink); }
@@ -4624,7 +4663,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .kind-tap {
   flex: none; display: flex; align-items: center; gap: 6px; cursor: pointer;
   min-height: 48px; padding: 0 12px; border-radius: 99px; white-space: nowrap;
-  font: inherit; font-size: 13px; font-weight: 500; color: var(--cool);
+  font: inherit; font-size: var(--fs-button); font-weight: 500; color: var(--cool);
   background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
   backdrop-filter: blur(12px);
 }
@@ -4673,7 +4712,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  */
 .truth {
   display: inline-flex; align-items: center; gap: 4px;
-  font-family: "Space Grotesk", monospace; font-size: 10.5px; font-weight: 500;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); font-weight: 500;
   letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap;
 }
 .truth svg {
@@ -4709,7 +4748,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .jmenu-look-field input {
   flex: 1; min-width: 0; height: 100%; border: 0; outline: none; background: none;
-  color: var(--white); font: inherit; font-size: 16px;
+  color: var(--white); font: inherit; font-size: var(--fs-body);
 }
 .jmenu-look-field:focus-within { border-color: var(--aqua); }
 /* The menu's search, first and lit. The glow breathes until the box is used, then stops:
@@ -4733,7 +4772,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   top: calc(var(--top-gap, 12px) + var(--mapbar-h, 56px) + 8px);
   display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px 0 12px;
   border-radius: 999px; border: 0; cursor: pointer;
-  background: var(--aqua); color: var(--on-aqua); font: inherit; font-size: 14px; font-weight: 500;
+  background: var(--aqua); color: var(--on-aqua); font: inherit; font-size: var(--fs-button); font-weight: 500;
   box-shadow: 0 6px 18px rgba(var(--rgb-shadow), calc(0.45 * var(--shadow-k)));
 }
 /* Under "Back to me", when the place looked up has no echoes yet. */
@@ -4741,7 +4780,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   position: absolute; left: var(--gutter); right: var(--gutter); z-index: 26; margin: 0;
   top: calc(var(--top-gap, 12px) + var(--mapbar-h, 56px) + 60px);
   padding: 12px 14px; border-radius: 14px; text-align: center;
-  font-size: 14px; line-height: 1.4; color: var(--white);
+  font-size: var(--fs-secondary); line-height: 1.4; color: var(--white);
   background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line-2);
 }
 .look-back svg {
@@ -4767,9 +4806,9 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   display: grid; place-items: center; border: 0; background: none; cursor: pointer; color: var(--muted);
 }
 .react-skip svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
-.react-ask { margin: 0; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.react-ask { margin: 0; font-size: var(--fs-label); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
 .react-title {
-  margin: 4px 36px 12px; font-size: 15px; font-weight: 500; color: var(--white);
+  margin: 4px 36px 12px; font-size: var(--fs-button); font-weight: 500; color: var(--white);
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .react-faces { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
@@ -4781,13 +4820,13 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .react-face:active { transform: scale(0.94); }
 .react-emoji { font-size: 30px; line-height: 1; }
-.react-word { font-size: 12px; color: var(--muted); }
+.react-word { font-size: var(--fs-label); color: var(--muted); }
 .react-meh {
   margin-top: 6px; min-height: 36px; padding: 0 12px; border: 0; background: none; cursor: pointer;
-  font: inherit; font-size: 12px; color: var(--muted); text-decoration: underline; text-underline-offset: 3px;
+  font: inherit; font-size: var(--fs-secondary); color: var(--muted); text-decoration: underline; text-underline-offset: 3px;
 }
 /* My Echoes: the face you gave it, beside the title. */
-.entry-face { margin-left: 6px; font-size: 14px; }
+.entry-face { margin-left: 6px; font-size: var(--fs-label); }
 
 /*
  * The vector basemap (`VectorBasemap.tsx`): a MapLibre canvas under the map's SVG.
@@ -4826,8 +4865,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   fill: rgba(var(--rgb-panel), 0.97); stroke: var(--line); stroke-width: 1;
   filter: drop-shadow(0 6px 14px rgba(var(--rgb-shadow), calc(0.45 * var(--shadow-k))));
 }
-.map-tip-title { fill: var(--cool); font-size: 12px; font-weight: 600; }
-.map-tip-sub { fill: var(--muted); font-size: 11px; }
+.map-tip-title { fill: var(--cool); font-size: var(--fs-secondary); font-weight: 600; }
+.map-tip-sub { fill: var(--muted); font-size: var(--fs-label); }
 @media (hover: hover) and (pointer: fine) {
   .map-live .pin, .map-live .clus, .map-live .map-edge { cursor: pointer; }
   .map-live .pin:hover .pin-body, .map-live .clus:hover .clus-body { stroke-width: 2.6; filter: brightness(1.25); }
@@ -4872,15 +4911,15 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .dirbar-arrow-compass { stroke-width: 1.7; }
 .dirbar-arrow-compass path { fill: var(--aqua); }
 .dirbar-say { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
-.dirbar-say strong { font-size: 17px; font-weight: 600; line-height: 1.25; color: var(--white); }
+.dirbar-say strong { font-size: var(--fs-body); font-weight: 600; line-height: 1.25; color: var(--white); }
 .dirbar-in { font-weight: 600; color: var(--aqua); white-space: nowrap; }
 .dirbar-to {
-  font-size: 13px; line-height: 1.3; color: var(--muted);
+  font-size: var(--fs-secondary); line-height: 1.3; color: var(--muted);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .dirbar-maps {
   display: inline-flex; align-items: center; min-height: 44px; align-self: flex-start;
-  font-size: 14px; font-weight: 500; color: var(--aqua); text-decoration: none;
+  font-size: var(--fs-label); font-weight: 500; color: var(--aqua); text-decoration: none;
 }
 .dirbar-end {
   width: 44px; height: 44px; flex: none; border-radius: 12px; cursor: pointer;
@@ -4908,7 +4947,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   box-shadow: 0 -14px 40px rgba(var(--rgb-shadow), calc(0.55 * var(--shadow-k)));
 }
 .pw-head { display: flex; align-items: center; justify-content: space-between; }
-.pw-head h2 { margin: 0; font-size: 19px; font-weight: 600; }
+.pw-head h2 { margin: 0; font-size: var(--fs-echo); font-weight: 600; }
 .pw-close {
   width: 44px; height: 44px; border-radius: 12px; cursor: pointer; display: grid; place-items: center;
   background: none; border: 1px solid var(--line); color: var(--cool);
@@ -4918,11 +4957,11 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .pw-time { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .pw-chip {
-  min-height: 44px; padding: 0 14px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px;
+  min-height: 44px; padding: 0 14px; border-radius: 999px; cursor: pointer; font: inherit; font-size: var(--fs-secondary);
   color: var(--cool); background: none; border: 1px solid var(--line-2);
 }
 .pw-chip.on { color: var(--on-aqua); background: var(--aqua); border-color: var(--aqua); }
-.pw-sum { margin: 14px 0 8px; font-size: 14px; line-height: 1.4; color: var(--cool); }
+.pw-sum { margin: 14px 0 8px; font-size: var(--fs-secondary); line-height: 1.4; color: var(--cool); }
 .pw-stops { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
 .pw-stop {
   display: flex; align-items: center; gap: 12px; padding: 6px 6px 6px 10px; border-radius: 14px;
@@ -4930,20 +4969,20 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .pw-n {
   width: 26px; height: 26px; flex: none; border-radius: 50%; display: grid; place-items: center;
-  font-family: "Space Grotesk", monospace; font-size: 13px; font-weight: 500;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); font-weight: 500;
   border: 1.6px solid currentColor;
 }
 .pw-what { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
 .pw-kind {
-  font-family: "Space Grotesk", monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.1em; text-transform: uppercase;
 }
-.pw-title { font-size: 15px; line-height: 1.3; color: var(--white); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pw-title { font-size: var(--fs-button); line-height: 1.3; color: var(--white); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .pw-x {
   width: 44px; height: 44px; flex: none; border-radius: 12px; cursor: pointer; display: grid; place-items: center;
   background: none; border: 0; color: var(--muted);
 }
 .pw-label {
-  margin: 16px 0 4px; font-family: "Space Grotesk", monospace; font-size: 12px; letter-spacing: 0.14em;
+  margin: 16px 0 4px; font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.14em;
   text-transform: uppercase; color: var(--muted);
 }
 .pw-others { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
@@ -4952,11 +4991,11 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   cursor: pointer; font: inherit; text-align: left; background: none; border: 0; color: var(--aqua);
 }
 .pw-add .pw-title { flex: 1; min-width: 0; color: var(--cool); }
-.pw-far { font-size: 13px; color: var(--muted); }
+.pw-far { font-size: var(--fs-secondary); color: var(--muted); }
 .pw-acts { position: sticky; bottom: -14px; padding: 12px 0 0; background: rgba(var(--rgb-panel), 0.97); }
 .pw-go {
   width: 100%; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px;
-  border-radius: 16px; cursor: pointer; font: inherit; font-size: 15px; font-weight: 600; border: 0;
+  border-radius: 16px; cursor: pointer; font: inherit; font-size: var(--fs-button); font-weight: 600; border: 0;
   color: var(--btn-ink); background: var(--btn);
 }
 .pw-go svg { width: 16px; height: 16px; fill: currentColor; }
@@ -4970,7 +5009,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .pw-line-casing { fill: none; stroke: #04060f; stroke-width: 8; opacity: 0.4; stroke-linecap: round; stroke-linejoin: round; }
 .pw-badge circle { fill: var(--aqua); stroke: #04060f; stroke-width: 2; }
 .pw-badge text {
-  fill: var(--on-aqua); font-family: "Space Grotesk", monospace; font-size: 12px; font-weight: 600;
+  fill: var(--on-aqua); font-family: "Space Grotesk", monospace; font-size: var(--fs-label); font-weight: 600;
   text-anchor: middle; dominant-baseline: central;
 }
 .pw-badge.done circle { fill: rgba(var(--rgb-panel), 0.9); stroke: var(--aqua); }
@@ -4998,7 +5037,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   background: rgba(var(--rgb-panel), 0.6); border: 1px solid var(--line);
 }
 .coll-view {
-  flex: 1; min-height: 40px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px;
+  flex: 1; min-height: 40px; border-radius: 999px; cursor: pointer; font: inherit; font-size: var(--fs-secondary);
   color: var(--cool); background: none; border: 0;
 }
 .coll-view.on { color: var(--btn-ink); background: var(--btn); font-weight: 600; }
@@ -5010,20 +5049,20 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   background: rgba(var(--rgb-panel), 0.6); border: 1px solid var(--line);
 }
 .rt.editing { border-color: rgba(var(--rgb-accent), 0.45); }
-.rt-name { margin: 0; font-size: 17px; font-weight: 600; color: var(--white); overflow-wrap: anywhere; }
+.rt-name { margin: 0; font-size: var(--fs-button); font-weight: 600; color: var(--white); overflow-wrap: anywhere; }
 .rt-name-input {
-  width: 100%; min-height: 44px; padding: 0 12px; border-radius: 12px; font: inherit; font-size: 17px;
+  width: 100%; min-height: 44px; padding: 0 12px; border-radius: 12px; font: inherit; font-size: var(--fs-body);
   font-weight: 600; color: var(--white); background: rgba(var(--rgb-panel), 0.9); border: 1px solid var(--line-2);
 }
-.rt-meta { margin: 4px 0 10px; font-size: 13.5px; color: var(--cool); }
+.rt-meta { margin: 4px 0 10px; font-size: var(--fs-secondary); color: var(--cool); }
 .rt-left { color: var(--muted); }
 .rt-stops { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
 .rt-stop { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 0 0 0 2px; }
 .rt-stop.done { opacity: 0.5; }
-.rt-hint { margin: 10px 0 0; font-size: 13px; line-height: 1.4; color: var(--muted); }
+.rt-hint { margin: 10px 0 0; font-size: var(--fs-secondary); line-height: 1.4; color: var(--muted); }
 .rt-acts { display: flex; gap: 8px; margin-top: 12px; }
 .rt-btn {
-  min-height: 44px; padding: 0 16px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px;
+  min-height: 44px; padding: 0 16px; border-radius: 999px; cursor: pointer; font: inherit; font-size: var(--fs-label);
   display: flex; align-items: center; justify-content: center; gap: 6px;
   color: var(--cool); background: none; border: 1px solid var(--line-2);
 }
@@ -5033,7 +5072,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .rt-primary:disabled { opacity: 0.45; cursor: default; }
 .rt-del { width: 44px; padding: 0; color: var(--muted); }
 .rt-new {
-  min-height: 48px; border-radius: 16px; cursor: pointer; font: inherit; font-size: 15px;
+  min-height: 48px; border-radius: 16px; cursor: pointer; font: inherit; font-size: var(--fs-button);
   display: flex; align-items: center; justify-content: center; gap: 8px;
   color: var(--aqua); background: none; border: 1px dashed rgba(var(--rgb-accent), 0.5);
 }
@@ -5041,7 +5080,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .rt-undo {
   position: sticky; bottom: 12px; align-self: center; z-index: 5;
   display: flex; align-items: center; gap: 14px; padding: 8px 8px 8px 16px; border-radius: 999px;
-  max-width: calc(100% - 2 * var(--gutter)); font-size: 14px; color: var(--white);
+  max-width: calc(100% - 2 * var(--gutter)); font-size: var(--fs-label); color: var(--white);
   background: rgba(var(--rgb-panel), 0.98); border: 1px solid var(--line-2); box-shadow: 0 10px 30px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
 }
 .rt-undo span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -5060,8 +5099,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .atr-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .atr-what { min-width: 0; }
-.atr-what h2 { margin: 0; font-size: 19px; font-weight: 600; }
-.atr-what p { margin: 4px 0 0; font-size: 14px; color: var(--cool); overflow-wrap: anywhere; }
+.atr-what h2 { margin: 0; font-size: var(--fs-echo); font-weight: 600; }
+.atr-what p { margin: 4px 0 0; font-size: var(--fs-body); color: var(--cool); overflow-wrap: anywhere; }
 .atr-list { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
 .atr-route {
   width: 100%; min-height: 48px; display: flex; align-items: center; gap: 12px; padding: 0 12px;
@@ -5076,34 +5115,34 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .atr-tick svg { width: 14px; height: 14px; fill: none; stroke: var(--on-aqua); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; opacity: 0; }
 .atr-route.on .atr-tick { background: var(--aqua); border-color: var(--aqua); }
 .atr-route.on .atr-tick svg { opacity: 1; }
-.atr-name { flex: 1; min-width: 0; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.atr-n { font-size: 13px; color: var(--muted); }
+.atr-name { flex: 1; min-width: 0; font-size: var(--fs-button); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.atr-n { font-size: var(--fs-secondary); color: var(--muted); }
 .atr-new {
-  width: 100%; margin-top: 10px; min-height: 48px; border-radius: 14px; cursor: pointer; font: inherit; font-size: 15px;
+  width: 100%; margin-top: 10px; min-height: 48px; border-radius: 14px; cursor: pointer; font: inherit; font-size: var(--fs-button);
   display: flex; align-items: center; justify-content: center; gap: 8px;
   color: var(--aqua); background: none; border: 1px dashed rgba(var(--rgb-accent), 0.5);
 }
 .atr-new svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
 .atr-new-form { display: flex; gap: 8px; margin-top: 12px; }
 .atr-input {
-  flex: 1; min-width: 0; min-height: 48px; padding: 0 14px; border-radius: 14px; font: inherit; font-size: 16px;
+  flex: 1; min-width: 0; min-height: 48px; padding: 0 14px; border-radius: 14px; font: inherit; font-size: var(--fs-body);
   color: var(--white); background: rgba(var(--rgb-panel), 0.9); border: 1px solid var(--line-2);
 }
 .atr-create {
-  min-height: 48px; padding: 0 18px; border-radius: 14px; cursor: pointer; font: inherit; font-size: 15px; font-weight: 600;
+  min-height: 48px; padding: 0 18px; border-radius: 14px; cursor: pointer; font: inherit; font-size: var(--fs-button); font-weight: 600;
   color: var(--btn-ink); border: 0; background: var(--btn);
 }
 .atr-done {
-  width: 100%; margin-top: 12px; min-height: 48px; border-radius: 16px; cursor: pointer; font: inherit; font-size: 15px;
+  width: 100%; margin-top: 12px; min-height: 48px; border-radius: 16px; cursor: pointer; font: inherit; font-size: var(--fs-button);
   font-weight: 600; color: var(--white); background: none; border: 1px solid var(--line-2);
 }
 
 /* True crime's disclaimer (`TruthMark.tsx`): small, but on every card and in the player. */
 .crime-note {
   margin: 8px 0 0; padding-left: 9px; border-left: 2px solid var(--cat-true-crime);
-  font-size: 11.5px; line-height: 1.45; color: var(--cool);
+  font-size: var(--fs-secondary); line-height: 1.45; color: var(--cool);
 }
-.hear-say .crime-note { margin-top: 10px; font-size: 12.5px; }
+.hear-say .crime-note { margin-top: 10px; font-size: var(--fs-secondary); }
 
 /*
  * Seatback mode (`useSeat` in `App.tsx`): the whole screen, not a phone drawn in the middle
@@ -5146,7 +5185,7 @@ body.seat { padding: 0; display: block; }
 .plan-map-route { fill: none; stroke: var(--aqua); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1 6; opacity: 0.9; }
 .plan-map-stop { cursor: pointer; }
 .plan-map-stop circle:not(.plan-map-hit) { fill: #0b0f2b; stroke: var(--cool); stroke-width: 1.6; }
-.plan-map-stop text { fill: var(--white); font: 600 10px "Space Grotesk", monospace; text-anchor: middle; pointer-events: none; }
+.plan-map-stop text { fill: var(--white); font: 600 var(--fs-label) "Space Grotesk", monospace; text-anchor: middle; pointer-events: none; }
 .plan-map-stop.on circle:not(.plan-map-hit) { fill: var(--ember); stroke: var(--ember); }
 .plan-map-stop.on text { fill: #1a0f00; }
 .plan-map-hit { fill: transparent; }
@@ -5163,25 +5202,30 @@ body.seat { padding: 0; display: block; }
  * on the bar 11px, the truth mark 10.5px, the tab labels 11px, and Settings and My Echoes
  * explained themselves at 11px. Read outdoors, at arm's length, often while walking.
  *
- * Three steps: 14px for what you read, 13px for what supports it, 12px for the small
- * capitals that label things. Map credits, badges and the figure inside the 15-second
- * skip icon stay small; they are marks, not reading. The tab bar is 13px, changed in
- * `design/SPEC.md` first (James, 2026-10-13), since `audit:spec` holds it to the design.
+ * Raised again in November onto the scale on `:root` (the Type board): 17px for what you
+ * read, 15px for what supports it, 14px for the small capitals that label things, and
+ * nothing smaller, map credits and badges included. The one exception is the figure
+ * inside the 15-second skip icon, which is drawn in the icon's own units and is part of
+ * the glyph. The tab bar is 14px, changed in `design/SPEC.md` too, since `audit:spec`
+ * holds it to the design.
  */
-.pop-teaser { font-size: 14px; line-height: 1.45; }
-.pop-aim, .feature-name { font-size: 14px; }
+.pop-teaser { font-size: var(--fs-body); line-height: 1.45; }
+.pop-aim, .feature-name { font-size: var(--fs-secondary); }
 .pop-where, .pop-state, .pop-reach, .pop-save,
 .echobar-place, .echobar-facts,
 .rose-hum small, .hear-acts button, .hear-clock span,
 .entry-text p, .onb-card small, .setting-text small, .setting-cost,
 .feature-fallback, .feature-level, .screen-head p, .jmenu-item small,
-.synced-where, .chip, .hear-voice, .hear-speed { font-size: 13px; }
+.synced-where, .chip, .hear-voice, .hear-speed { font-size: var(--fs-secondary); }
 .pop-kicker, .pop-rarity, .truth,
 .echobar-kicker span, .echobar-kicker em,
 .hear-kicker span, .hear-rarity, .coll-stat small,
 .entry-glyph i, .entry-meta, .group-head, .panel h3,
-.synced-kicker, .synced-rare-cat, .synced-next-kicker, .city-card-kick { font-size: 12px; }
-.onb-skip { font-size: 14px; }
+.synced-kicker, .synced-rare-cat, .synced-next-kicker, .city-card-kick { font-size: var(--fs-label); }
+.onb-skip { font-size: var(--fs-secondary); }
+/* MapLibre's own stylesheet sets 12px on the map container, and it loads after this one,
+   hence the element in the selector. */
+div.maplibregl-map { font-size: var(--fs-label); }
 /* A short phone (an SE in Safari) cannot hold the card at these sizes: the reading text
    keeps its size; the decoration gives way (the photograph's strip, the place's second
    line) and the card may reach closer to the map bar. It was cut off 35px short there. */
@@ -5200,16 +5244,16 @@ body.seat { padding: 0; display: block; }
 .feedback-kind {
   position: relative; min-height: 36px; display: inline-flex; align-items: center;
   padding: 0 12px; border-radius: 99px; border: 1px solid var(--line-2);
-  font-size: 12px; color: var(--muted); cursor: pointer;
+  font-size: var(--fs-secondary); color: var(--muted); cursor: pointer;
 }
 .feedback-kind input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
 .feedback-kind.on { color: var(--aqua-ink); border-color: var(--aqua); }
 .feedback-kind:has(input:focus-visible) { outline: 2px solid var(--aqua); outline-offset: 2px; }
 .feedback-field { display: flex; flex-direction: column; gap: 6px; }
-.feedback-field span { font-size: 11.5px; color: var(--muted); }
+.feedback-field span { font-size: var(--fs-label); color: var(--muted); }
 .feedback-field textarea,
 .feedback-field input {
-  width: 100%; font: inherit; font-size: 16px; /* 16px: iOS zooms into anything smaller */
+  width: 100%; font: inherit; font-size: var(--fs-body); /* 16px: iOS zooms into anything smaller */
   color: inherit; background: rgba(var(--rgb-hair), 0.06);
   border: 1px solid var(--line-2); border-radius: 10px; padding: 10px 12px;
 }
@@ -5219,30 +5263,30 @@ body.seat { padding: 0; display: block; }
 .feedback-actions { display: flex; justify-content: flex-end; align-items: center; gap: 16px; }
 .feedback-send {
   min-height: 44px; padding: 0 22px; border-radius: 99px; border: 0; cursor: pointer;
-  background: var(--aqua); color: var(--space); font: inherit; font-size: 14px; font-weight: 600;
+  background: var(--aqua); color: var(--space); font: inherit; font-size: var(--fs-button); font-weight: 600;
 }
 .feedback-send:disabled { opacity: 0.45; cursor: default; }
 .feedback-link {
   min-height: 44px; background: none; border: 0; padding: 0 4px; cursor: pointer;
-  font: inherit; font-size: 13px; color: var(--muted);
+  font: inherit; font-size: var(--fs-secondary); color: var(--muted);
 }
-.feedback-note { font-size: 11px; color: var(--muted-soft); line-height: 1.55; }
-.feedback-error { font-size: 12px; color: var(--magenta-ink); line-height: 1.5; }
+.feedback-note { font-size: var(--fs-secondary); color: var(--muted-soft); line-height: 1.55; }
+.feedback-error { font-size: var(--fs-secondary); color: var(--magenta-ink); line-height: 1.5; }
 .feedback-done { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; }
-.feedback-done strong { font-size: 13.5px; font-weight: 500; color: var(--aqua-ink); }
+.feedback-done strong { font-size: var(--fs-button); font-weight: 500; color: var(--aqua-ink); }
 
 /* Settings › Know a story? (Suggest.tsx): the feedback form's parts, plus the location tick. */
-.suggest-note { font-size: 12.5px; color: var(--aqua-ink); line-height: 1.5; }
+.suggest-note { font-size: var(--fs-secondary); color: var(--aqua-ink); line-height: 1.5; }
 .suggest-here {
   display: flex; align-items: center; gap: 10px; min-height: 44px;
-  font-size: 13px; color: var(--muted); cursor: pointer;
+  font-size: var(--fs-button); color: var(--muted); cursor: pointer;
 }
 .suggest-here input { width: 20px; height: 20px; accent-color: var(--aqua); flex: none; }
 /* The echo card's "Know more about this place?" (EchoPopup.tsx): small to look at, a 44px
    thumb to hit, centred under the actions like a footnote. */
 .pop-suggest {
   display: block; margin: 2px auto -8px; min-height: 44px; padding: 0 8px;
-  background: none; border: 0; cursor: pointer; font: inherit; font-size: 12.5px;
+  background: none; border: 0; cursor: pointer; font: inherit; font-size: var(--fs-label);
   color: var(--muted); text-decoration: underline; text-underline-offset: 3px;
   text-decoration-color: var(--line-2);
 }
@@ -5254,7 +5298,7 @@ body.seat { padding: 0; display: block; }
 .pop-report {
   position: relative; margin-left: auto; padding: 0;
   background: none; border: 0; cursor: pointer; font: inherit; white-space: nowrap;
-  font-size: 11.5px; color: var(--muted); text-decoration: underline;
+  font-size: var(--fs-label); color: var(--muted); text-decoration: underline;
   text-decoration-color: var(--line-2); text-underline-offset: 3px;
 }
 .pop-report::before {
@@ -5265,7 +5309,7 @@ body.seat { padding: 0; display: block; }
 
 /* The journey sheet's routes, introduced as the alternative to just starting (Preflight). */
 .pf-or {
-  margin: 14px 2px 6px; font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase;
+  margin: 14px 2px 6px; font-size: var(--fs-label); letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--muted);
 }
 

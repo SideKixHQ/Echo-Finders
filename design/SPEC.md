@@ -7,6 +7,13 @@
 > the low. `scripts/audit-controls.mjs` now fails on anything under 11px, so the old
 > values cannot come back by accident. Where a size below 11px appears in the prototype
 > HTML alongside this file, this file is the one that is current.
+>
+> **Raised again in November 2026, onto a type scale.** James: "fonts are really small,
+> almost everything is hard to read". The approved Type board sets six sizes, defined as
+> custom properties on `:root` in `apps/prototype/src/theme.css`: screen title 32px, echo
+> title 26px, buttons and list items 18px, body text 17px, secondary 15px, small labels
+> 14px, and nothing smaller. Where a size in the CSS below disagrees, the scale is current;
+> the measurements `audit:spec` holds are updated to it.
 
 
 *Extracted from `echo-finders-phone.prototype.html` — not transcribed by eye, and not
@@ -192,11 +199,11 @@ const CATS = {
 
 ## Tab bar
 
-Labels 13px, up from the boards' 11px: James, 2026-10-13, "make the tab bar labels bigger too".
+Labels 14px (the type scale's floor, November 2026); 13px before that, up from the boards' 11px: James, 2026-10-13, "make the tab bar labels bigger too".
 
 ```css
 .nav { position:absolute; bottom:0; left:0; right:0; z-index:850; height:74px; display:flex; background:rgba(var(--rgb-panel),.96); border-top:1px solid var(--line); padding-bottom:14px }
-.nav button { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-size:13px; color:var(--muted); letter-spacing:.03em }
+.nav button { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-size:14px; color:var(--muted); letter-spacing:.03em }
 .nav button svg { width:20px; height:20px; stroke:currentColor; fill:none; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round }
 .nav button.on { color:var(--aqua) }
 ```

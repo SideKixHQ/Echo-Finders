@@ -24,9 +24,10 @@
  *
  * Two more checks, added once the designs were measured properly:
  *
- *   - text below 11px. Apple's floor is 11pt, and on a 390pt phone one CSS pixel is one
- *     point, so 11px is the floor here too. This app is read outdoors, in motion, at
- *     arm's length, which argues for the high side of any guideline rather than the low.
+ *   - text below 14px. Apple's floor is 11pt, and on a 390pt phone one CSS pixel is one
+ *     point. This app is read outdoors, in motion, at arm's length, so the approved type
+ *     scale (November 2026, `:root` in theme.css) puts its floor at 14px. The figure
+ *     inside the 15-second skip icon is drawn in the icon's own units and is excepted.
  *   - a target a 44px thumb misses. 24x24 is the legal minimum and the app clears it
  *     everywhere; 44 is what Apple asks for. This one is REPORTED, NOT FAILED, because
  *     two families of control cannot reach 44 without wrecking what they are for: the
@@ -469,11 +470,11 @@ here clears the 24x24 legal floor. Listed so the decision stays visible:
 // Type, deduplicated by class and size so one offending rule is reported once.
 const tiny = new Map();
 for (const [screen, items] of Object.entries(type)) for (const t of items) {
-  if (t.size >= 11) continue;
+  if (t.size >= 14 || t.cls === 'hear-num') continue;
   const key = t.cls + '|' + t.size;
   if (!tiny.has(key)) tiny.set(key, { ...t, screen });
 }
-console.log(`UNDER 11px (Apple's floor, and this is read outdoors): ${tiny.size
+console.log(`UNDER 14px (the type scale's floor; this is read outdoors): ${tiny.size
   ? [...tiny.values()].sort((a, b) => a.size - b.size)
       .map(t => `${t.size}px  .${t.cls} "${t.text}" (${t.screen})`).join('\n    ')
   : 'none'}`);
