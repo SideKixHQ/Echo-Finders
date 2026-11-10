@@ -36,7 +36,7 @@ import type { PinState } from "./RouteMap";
 import { CrimeNote, TruthMark } from "./TruthMark";
 import { driveThereUrl } from "./drive-there";
 import { MODE_ICON } from "./travel";
-import { mapsLink, walkTime } from "./directions";
+import { walkTime } from "./directions";
 import { echoLink, shareText } from "./share";
 
 export interface EchoPopupProps {
@@ -170,7 +170,8 @@ export function EchoPopup({
     "Know more about this place?". Each one is still a tap away, under More.
   */
   const label = echo.point.place.split(",")[0] ?? echo.title;
-  const mapsHref = !ground ? null : mode === "driving" ? driveThereUrl(echo.point.at, label) : mapsLink(echo.point.at, label);
+  // Walking stays in the app (James, 2026-11-10: no hand-off to Maps). Driving keeps its maps link.
+  const mapsHref = ground && mode === "driving" ? driveThereUrl(echo.point.at, label) : null;
   const hasMore = mapsHref !== null || onReport !== undefined || onSuggest !== undefined;
 
   return (
@@ -367,7 +368,7 @@ export function EchoPopup({
                   <path d="M9 4L3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5z" />
                   <path d="M9 4v13.5M15 6.5V20" />
                 </svg>
-                {mode === "driving" ? "Directions in Maps" : "Open in Maps"}
+                Directions in Maps
               </a>
             )}
             {onReport && (
