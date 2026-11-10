@@ -1,0 +1,87 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Petworth), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Rock Creek Cemetery, inside the gates, at the hooded bronze figure (the Adams Memorial). Source 1 is the Park Service page for the recast at Cornish, New Hampshire, which describes the original's subject and history.
+# Position: Overture place 'Adams Memorial' at 38.94738, -77.01031, inside 'Rock Creek Cemetery' (201 Allison St NW, 38.94491, -77.01095) (medium confidence).
+id: dc-a-question-not-an-answer
+title: "A Question, Not an Answer"
+summary: "Henry Adams asked Augustus Saint-Gaudens for a grave marker with no name on it. The hooded bronze figure has kept the secret."
+place: "Adams Memorial, Rock Creek Cemetery, Rock Creek Church Road NW, Petworth, Washington, D.C."
+at: { lat: 38.94738, lng: -77.01031 }
+triggerRadiusKm: 0.03
+category: arts
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.75
+inside: true
+hours: { fromHour: 8, toHour: 17 }
+tags: [washington, petworth, rock-creek-cemetery, saint-gaudens, henry-adams, sculpture]
+teaser: "A grave with no name, guarded by a figure nobody can name either."
+script: |
+  Find the bronze figure sitting here, very still, wrapped in heavy drapery. One hand rises to the edge of its face. The hood throws a dark shadow over the eyes.
+
+  Look for a name. There is none.
+
+  This marks the grave of Marian Adams. Her friends called her Clover. She was witty and athletic, and a skilled photographer. In December eighteen eighty five, suffering from depression, she took her own life.
+
+  Her husband, the historian Henry Adams, could hardly bear to speak of her again. He went to Japan, and came back drawn to the Buddhist idea of a peace beyond suffering. Then he asked the sculptor Augustus Saint-Gaudens to make this.
+
+  In his sketchbook Saint-Gaudens wrote, mental repose, calm reflection.
+
+  The figure is not her likeness. It does not say who she was. Adams insisted that it stay nameless. The sculptor gave it a name of his own anyway. The Mystery of the Hereafter.
+
+  Adams said the sculptor meant it to ask a question, not to give an answer.
+
+  Look under the hood again.
+
+  It is still asking.
+pronunciations:
+  - written: Saint-Gaudens
+    say: saint GAW-dunz
+detail: >-
+  Clover Adams's death is mentioned once, plainly, and not described, in line with the Park Service's own page (which carries the 988 crisis line). minAge 12 because of that subject. Rock Creek Cemetery is gated; `hours` is an estimate of daylight opening and should be checked against the cemetery's posted hours.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "One hand rises to the edge of its face. The hood throws a dark shadow over the eyes."
+    source: 1
+    quote: "The right hand grazes the edge of a long face shrouded by flowing drapery. The hood casts a dark shadow."
+  - says: "This marks the grave of Marian Adams. Her friends called her Clover."
+    source: 1
+    quote: "This figure marks the grave of Marian “Clover” Hooper Adams (1843-1885) in Washington, DC."
+  - says: "She was witty and athletic, and a skilled photographer."
+    source: 1
+    quote: "This member of elite social circles was known for her wit, intelligence, and athleticism. She became a skilled photographer."
+  - says: "In December eighteen eighty five, suffering from depression, she took her own life."
+    source: 2
+    quote: "Clover’s suicide in December 1885 forced Henry to readjust his life."
+  - says: "Her husband, the historian Henry Adams, could hardly bear to speak of her again."
+    source: 1
+    quote: "He hardly spoke of his late wife again and only broke his silence by commissioning this piece of art."
+  - says: "He went to Japan, and came back drawn to the Buddhist idea of a peace beyond suffering."
+    source: 1
+    quote: "In the wake of her death, Henry Adams traveled to Japan. There, he was drawn to Buddhist philosophy and iconography relating to Nirvana, a transcendent state beyond suffering."
+  - says: "In his sketchbook Saint-Gaudens wrote, mental repose, calm reflection."
+    source: 1
+    quote: "“Adams – Buhda[sic] – Mental Repose – Calm reflection in contrast with the violence or force in nature.”"
+  - says: "The figure is not her likeness. It does not say who she was. Adams insisted that it stay nameless."
+    source: 1
+    quote: "The figure marked the grave of Marian Adams without depicting her likeness or stating her name."
+  - says: "The sculptor gave it a name of his own anyway. The Mystery of the Hereafter."
+    source: 1
+    quote: "Saint-Gaudens referred to his work as “The Mystery of the Hereafter and The Peace of God that Passeth Understanding.”"
+  - says: "Adams said the sculptor meant it to ask a question, not to give an answer."
+    source: 1
+    quote: "The artist “meant it to ask a question, not to give an answer,” Adams explained."
+sources:
+  - title: "Adams Memorial"
+    publisher: "National Park Service, Saint-Gaudens National Historical Park"
+    url: https://www.nps.gov/places/adams-memorial.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Henry Adams (1838 to 1918)"
+    publisher: "National Park Service, Adams National Historical Park"
+    url: https://www.nps.gov/adam/learn/historyculture/henry-adams-1838-1918.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

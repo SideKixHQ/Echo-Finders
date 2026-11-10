@@ -1,0 +1,88 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC (Capitol Hill East), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Congressional Cemetery, inside the gates, at Leonard Matlovich's black granite headstone, a short walk from J. Edgar Hoover's grave.
+# Position: Congressional Cemetery near the chapel (Overture 'Congressional Cemetery Chapel', 38.88126, -76.97902); the exact plot was not found in a reachable source, so the radius is wide (low confidence on the plot itself; a reviewer should set the grave's own coordinates from the cemetery's map).
+id: dc-a-gay-vietnam-veteran
+title: "A Gay Vietnam Veteran"
+summary: "Leonard Matlovich's headstone does not carry his name. It carries one sentence about a medal and a discharge."
+place: "Leonard Matlovich's grave, Congressional Cemetery, 1801 E Street SE, Washington, D.C."
+at: { lat: 38.88110, lng: -76.97860 }
+triggerRadiusKm: 0.06
+category: people
+format: short
+durationS: 73
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.75
+inside: true
+tags: [washington, capitol-hill, congressional-cemetery, lgbtq, military, vietnam, leonard-matlovich]
+teaser: "His name is not on his headstone. One sentence is."
+script: |
+  Find the dark headstone piled with small stones, with pink triangles on its face. Read it. You will not find a name.
+
+  It says, A Gay Vietnam Veteran.
+
+  He was Leonard Matlovich. He served three tours in Vietnam with the Air Force, and came home with a bronze medal and a Purple Heart. In nineteen seventy five, he set out to challenge the military's ban on gay service members, on purpose, with his own spotless record. His face went on the cover of Time magazine, above the words, I Am a Homosexual.
+
+  The Air Force discharged him. He fought it for years, and in the end took a settlement rather than his job back.
+
+  He died in nineteen eighty eight. He was forty four.
+
+  He chose this cemetery, close to his home, instead of Arlington. And he chose a plot near the grave of J. Edgar Hoover, the director of the FBI. Since then, dozens of people have chosen to be buried near him.
+
+  Now read the line underneath.
+
+  When I was in the military, they gave me a medal for killing two men.
+
+  And a discharge for loving one.
+detail: >-
+  Sources differ on his discharge: NPR says he was first given a general discharge and had it changed to honorable; the script says only that the Air Force discharged him. The script follows NPR in calling his decoration "a bronze medal".
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Find the dark headstone piled with small stones, with pink triangles on its face."
+    source: 2
+    quote: "the headstone is piled high with stones and features pink triangles."
+  - says: "You will not find a name."
+    source: 3
+    quote: "his headstone does not have his name on it."
+  - says: "It says, A Gay Vietnam Veteran."
+    source: 1
+    quote: "reads, “A Gay Vietnam Veteran:"
+  - says: "He served three tours in Vietnam with the Air Force, and came home with a bronze medal and a Purple Heart."
+    source: 2
+    quote: "Matlovich served in the Air Force and did three tours in Vietnam. He was awarded a bronze medal, received a Purple Heart"
+  - says: "His face went on the cover of Time magazine, above the words, I Am a Homosexual."
+    source: 3
+    quote: "When Leonard Matlovich showed up on"
+  - says: "The Air Force discharged him. He fought it for years, and in the end took a settlement rather than his job back."
+    source: 3
+    quote: "He then fought a court battle to try to get the Air Force to take him back — in the end, rather than reinstate him, they gave him a settlement in 1980."
+  - says: "He died in nineteen eighty eight. He was forty four."
+    source: 3
+    quote: "Matlovich died of AIDS in 1988. He was 44 years old."
+  - says: "He chose this cemetery, close to his home, instead of Arlington."
+    source: 2
+    quote: "chose Congressional Cemetery as his final resting place due to the proximity to his home and as a symbolic alternative to Arlington National Cemetery."
+  - says: "And he chose a plot near the grave of J. Edgar Hoover, the director of the FBI. Since then, dozens of people have chosen to be buried near him."
+    source: 2
+    quote: "And, in the five decades since, dozens of individuals have chosen to be buried near Matlovich."
+  - says: "When I was in the military, they gave me a medal for killing two men."
+    source: 1
+    quote: "When I was in the military, they gave me a medal for killing two men and a discharge for loving one."
+sources:
+  - title: "Congressional Cemetery"
+    publisher: "National Park Service, National Historic Landmarks"
+    url: https://www.nps.gov/places/congressional-cemetery.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "A D.C. cemetery's 'Gay Corner' is a final resting place for trailblazing LGBTQ+ icons"
+    publisher: "NPR"
+    url: https://www.npr.org/2025/06/18/nx-s1-5415634/a-d-c-cemetery-has-a-special-section-of-plots-for-lgbtq-people
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "'A Perfect Soldier': Remembering A Warrior In The Battle Against Homophobia"
+    publisher: "NPR, StoryCorps"
+    url: https://www.npr.org/2015/10/30/452849153/a-perfect-soldier-remembering-a-warrior-in-the-battle-against-homophobia
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

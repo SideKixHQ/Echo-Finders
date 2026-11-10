@@ -1,0 +1,64 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Columbia Heights), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Meridian Hill Park, upper terrace, beside the bronze Joan of Arc on horseback.
+# Position: Overture place 'Joan of Arc Equestrian Statue' at 38.92068, -77.03571 (high confidence).
+id: dc-joan-gets-her-sword-back
+title: "Joan Gets Her Sword Back"
+summary: "A children's echo: the only statue of a woman on a horse in Washington lost her sword to a thief, and got a new one."
+place: "Joan of Arc statue, Meridian Hill Park, 16th Street NW, Washington, D.C."
+at: { lat: 38.92068, lng: -77.03571 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 62
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [washington, columbia-heights, meridian-hill-park, joan-of-arc, statues, kids]
+teaser: "Look at her raised hand. For a while, it was empty."
+script: |
+  Here is a girl on a horse. Look at her raised hand, up high. What is she holding?
+
+  That is Joan of Arc. Hundreds of years ago, as a teenager, she led soldiers into battle in France. And this statue of her is special. In the whole of Washington, there are lots of statues of people riding horses. Only one of them is a woman. This one.
+
+  She came here as a present, from the women of France to the women of America. Her sword was always up in the air, ready to go.
+
+  Then, in September twenty sixteen, somebody stole it.
+
+  For a while, Joan rode into battle with an empty fist.
+
+  So people got to work. A brand new sword was made, and fixed into her hand. In March twenty eighteen, she was ready for battle again.
+
+  Look up at the sword now. Count to three, and raise your own arm, just like hers.
+
+  Now you are both ready.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "That is Joan of Arc. Hundreds of years ago, as a teenager, she led soldiers into battle in France."
+    source: 1
+    quote: "depicts the teenaged Joan of Arc seated on horseback, sword drawn, presumably leading her French troops into battle"
+  - says: "Only one of them is a woman. This one."
+    source: 2
+    quote: "The Joan of Arc Statue is the only equestrian statue of a woman in Washington, DC."
+  - says: "She came here as a present, from the women of France to the women of America."
+    source: 1
+    quote: "the statue was described as a gift from the women of France to the women of the United States."
+  - says: "Then, in September twenty sixteen, somebody stole it."
+    source: 1
+    quote: "In September 2016, a vandal stole the statue’s sword."
+  - says: "A brand new sword was made, and fixed into her hand. In March twenty eighteen, she was ready for battle again."
+    source: 1
+    quote: "In March 2018, the Joan of Arc statue was re-outfitted for battle and revealed to the public"
+sources:
+  - title: "Joan of Arc Has a New Sword!"
+    publisher: "National Park Service, Rock Creek Park"
+    url: https://www.nps.gov/articles/joan-of-arc-sword.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Joan of Arc Statue"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/joan-of-arc-statue.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

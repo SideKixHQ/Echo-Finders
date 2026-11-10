@@ -1,0 +1,82 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Anacostia), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Anacostia Park, on the open fields of the old Anacostia Flats, across the river from the Navy Yard, near the Park Service's Bonus Army panel.
+# Position: Overture place 'Anacostia park - Field 1' (1106 Marion Barry Ave SE) at 38.86879, -76.99091; the thirty acre camp covered this stretch of the flats (medium confidence).
+id: dc-the-man-who-saved-patton
+title: "The Man Who Saved Patton"
+summary: "In 1932 thousands of jobless veterans camped on these flats. The Army burned them out, with George Patton among the troops."
+place: "Anacostia Park, the old Anacostia Flats, across the river from the Navy Yard, Washington, D.C."
+at: { lat: 38.86879, lng: -76.99091 }
+triggerRadiusKm: 0.2
+category: history
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [washington, anacostia, anacostia-park, bonus-army, military, world-war-one, great-depression]
+teaser: "On these flats, a soldier met the man who had once saved his life."
+script: |
+  Look across the river at the Navy Yard. In the summer of nineteen thirty two, this flat ground on your side was a town of shacks, built by veterans of the First World War.
+
+  They had been promised a bonus for their service, payable in nineteen forty five. Then the Depression came. They could not wait. So they came to Washington to ask for it, and camped here, thousands of them, some with their families. The owner of the land let them stay.
+
+  The bonus failed in the Senate. And on the twenty eighth of July, President Hoover sent in the Army.
+
+  Cavalry, tanks, tear gas. And among the officers was George Patton.
+
+  One of the men the troops drove out that day was Joe Angelo. In the First World War, Angelo had dragged a wounded Patton into a shell hole, and stayed with him through the night. Patton said, undoubtedly this man saved my life. Then he added that Angelo's accounts of it varied from the true facts.
+
+  That night the camp here was set on fire.
+
+  The veterans got their bonus four years later.
+
+  Look at this open ground again. Nothing is left of the shacks.
+
+  Joe Angelo was driven out of Washington by the army he had served in.
+detail: >-
+  Who set the Anacostia camp on fire has been disputed; the Park Service panel says the infantry did, and the script says only that the camp was set on fire. The Park Service article says Angelo was among those Patton's troops routed, but not where; the script says he was driven out of Washington.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "In the summer of nineteen thirty two, this flat ground on your side was a town of shacks, built by veterans of the First World War."
+    source: 2
+    quote: "The largest camp was a shantytown here on the Anacostia Flats, across the river from Washington's Navy Yard."
+  - says: "They had been promised a bonus for their service, payable in nineteen forty five."
+    source: 1
+    quote: "the US government promised in 1924 that servicemen would receive a bonus for their service, in 1945."
+  - says: "So they came to Washington to ask for it, and camped here, thousands of them, some with their families. The owner of the land let them stay."
+    source: 1
+    quote: "The Anacostia site was given the name Camp Bartlett, after its owner John H. Bartlett, former Assistant Postmaster General and former Governor of New Hampshire who let the veterans camp there."
+  - says: "The bonus failed in the Senate."
+    source: 1
+    quote: "Two weeks later the US House of Representatives did in fact vote to provide the bonus, but the US Senate rejected it."
+  - says: "And on the twenty eighth of July, President Hoover sent in the Army."
+    source: 1
+    quote: "Then, on July 28, the Hoover administration sent in the army and police to expel the marchers from Washington."
+  - says: "Cavalry, tanks, tear gas."
+    source: 2
+    quote: "driven off by the cavalry with tanks and tear gas while infantry set fire to the shanties."
+  - says: "In the First World War, Angelo had dragged a wounded Patton into a shell hole, and stayed with him through the night."
+    source: 1
+    quote: "one of the people he routed was a Joe Angelo, who had saved Patton’s life in World War I, by dragging the wounded Patton into a nearby shell hole and staying with him through the night."
+  - says: "Patton said, undoubtedly this man saved my life. Then he added that Angelo's accounts of it varied from the true facts."
+    source: 1
+    quote: "“Undoubtedly this man saved my life, but his several accounts of the incident vary from the true facts.”"
+  - says: "That night the camp here was set on fire."
+    source: 2
+    quote: "infantry set fire to the shanties."
+  - says: "The veterans got their bonus four years later."
+    source: 1
+    quote: "Four years later, in 1936, the veterans did get their bonus"
+sources:
+  - title: "The 1932 Bonus Army"
+    publisher: "National Park Service, National Mall and Memorial Parks"
+    url: https://www.nps.gov/articles/the-1932-bonus-army.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Information Panel: Bonus Army"
+    publisher: "National Park Service, Anacostia Park"
+    url: https://www.nps.gov/places/000/information-panel-bonus-army.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

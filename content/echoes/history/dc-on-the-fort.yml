@@ -1,0 +1,88 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Tenleytown), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Fort Reno Park, at the 'Point Reno' highest natural elevation marker near the water towers, off Chesapeake Street NW.
+# Position: Overture places 'Fort Reno Park' (38.95117, -77.07722) and 'Historic Fort Reno' (38.95066, -77.07712); set on the hilltop between them (medium confidence: the marker itself is not in Overture).
+id: dc-on-the-fort
+title: "On the Fort"
+summary: "The highest natural point in Washington was a Black neighborhood called Reno. Its people were pushed out to make this park."
+place: "Point Reno marker, Fort Reno Park, Chesapeake Street NW, Tenleytown, Washington, D.C."
+at: { lat: 38.95100, lng: -77.07710 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 83
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, tenleytown, fort-reno, reno-city, african-american-history, civil-war, displacement]
+teaser: "The highest ground in the city. Somebody used to live on it."
+script: |
+  Look for the small marker on this hilltop. It says, Point Reno. Elevation four hundred and nine feet. This is the highest natural ground in Washington.
+
+  It is a quiet park now. Ball fields. Grass. Water towers.
+
+  It used to be a neighbourhood.
+
+  The Union Army took this hill for a fort in the Civil War. Afterwards the land was cut into lots, and sold. Black families began to rent and buy here. They called the place Reno, or just, on the fort. By the early nineteen hundreds it had churches, a school, a baseball team called the Fort Renos.
+
+  Then the white neighbourhoods around it wanted Reno gone, and turned into parkland and schools for white children. Officials and real estate men agreed.
+
+  In nineteen twenty seven, at a hearing in Congress, a Reno man named Samuel Hebron stood up to the grandson of President Grant. He said they ought not come on the fort and run us people off, who are trying to build respectable homes. He called it unjust, and un-American.
+
+  He bought his neighbours a few more years. Then the houses came down.
+
+  Their school, opened in nineteen oh three, still stands nearby.
+
+  Every year, into the nineteen eighties, the people of Reno came back here, to meet on the hill.
+pronunciations:
+  - written: Hebron
+    say: HEE-brun
+detail: >-
+  Hebron's words are given in the Park Service article as reported speech ("did not think they ought to come on the fort and run us people off who are trying to build respectable homes, and I feel that it is unjust and un-American"); the script keeps them as his. The Jesse Lee Reno School, opened in 1903, is described by the Park Service as "still standing".
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "It says, Point Reno. Elevation four hundred and nine feet."
+    source: 1
+    quote: "Elev. 409 Ft."
+  - says: "This is the highest natural ground in Washington."
+    source: 1
+    quote: "Highest Natural Elevation"
+  - says: "The Union Army took this hill for a fort in the Civil War. Afterwards the land was cut into lots, and sold."
+    source: 2
+    quote: "The Union Army had seized the land on which the Fort Reno neighborhood took shape during the early days of the Civil War, and once the war concluded the area was subdivided, christened “Reno City,” and sold."
+  - says: "They called the place Reno, or just, on the fort."
+    source: 2
+    quote: "which came to be known as Fort Reno or just Reno, the names its residents preferred."
+  - says: "By the early nineteen hundreds it had churches, a school, a baseball team called the Fort Renos."
+    source: 2
+    quote: "the neighborhood boasted multiple Black churches, civil-society organizations, a school – the still standing Jesse Lee Reno School, opened in 1903 – and a Black baseball team, the Fort Renos."
+  - says: "Then the white neighbourhoods around it wanted Reno gone, and turned into parkland and schools for white children."
+    source: 2
+    quote: "pushed for the federal government to acquire Reno and turn the neighborhood into parkland and schools for white children."
+  - says: "In nineteen twenty seven, at a hearing in Congress, a Reno man named Samuel Hebron stood up to the grandson of President Grant."
+    source: 2
+    quote: "In 1927, at a Congressional hearing, Samuel Hebron stood up to Ulysses S. Grant III"
+  - says: "He said they ought not come on the fort and run us people off, who are trying to build respectable homes. He called it unjust, and un-American."
+    source: 2
+    quote: "“did not think they ought to come on the fort and run us people off who are trying to build respectable homes, and I feel that it is unjust and un-American.”"
+  - says: "He bought his neighbours a few more years."
+    source: 2
+    quote: "The efforts of Hebron and his fellow Reno-dwellers staved off Reno’s destruction for several years"
+  - says: "Their school, opened in nineteen oh three, still stands nearby."
+    source: 2
+    quote: "the still standing Jesse Lee Reno School, opened in 1903"
+  - says: "Every year, into the nineteen eighties, the people of Reno came back here, to meet on the hill."
+    source: 2
+    quote: "Former residents met in Fort Reno Park for a “homecoming” every year into the 1980s"
+sources:
+  - title: "Fort Reno Park: highest point in District of Columbia"
+    publisher: "National Park Service, Rock Creek Park"
+    url: https://www.nps.gov/places/000/fort-reno-park-highest-point-in-district-of-columbia.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Fort Reno Park: A Brief History of Reno City"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/fort-reno-park-a-brief-history-of-reno-city.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

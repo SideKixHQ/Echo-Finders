@@ -1,0 +1,91 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC (Tidal Basin), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Martin Luther King Jr. Memorial, standing at the north face of the Stone of Hope, where the grooves cover the removed inscription.
+# Position: Overture place 'Martin Luther King, Jr. Memorial' (1964 Independence Ave SW) at 38.88631, -77.04417; set a few metres to the north side of the statue (medium confidence).
+id: dc-the-words-they-carved-away
+title: "The Words They Carved Away"
+summary: "One side of the Stone of Hope once carried a shortened King quotation. Critics said it changed his meaning, so the sculptor carved it away."
+place: "Stone of Hope, north face, Martin Luther King Jr. Memorial, West Potomac Park, Washington, D.C."
+at: { lat: 38.88640, lng: -77.04418 }
+triggerRadiusKm: 0.03
+category: arts
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, tidal-basin, mlk-memorial, martin-luther-king, maya-angelou, sculpture, inscriptions]
+teaser: "Look at the grooves on this side of the stone. Words used to be here."
+script: |
+  Walk around to the north side of the great stone. Look at the deep horizontal grooves cut into the granite. They look like the rest of the stone, torn from the mountain.
+
+  Some of them are hiding something.
+
+  When the memorial opened in twenty eleven, there were words here. I was a drum major for justice, peace and righteousness.
+
+  King did say something like it. In a sermon in nineteen sixty eight, he imagined his own funeral, and hoped nobody would talk too long. And he said, if you want to say that I was a drum major, say that I was a drum major for justice.
+
+  If. The carving had dropped that word. The architect said there simply was not room on this side for the full quote.
+
+  The poet Maya Angelou had advised on the memorial. She said the short version made Dr. King look like an arrogant twit. The if clause, she said, changes the meaning completely.
+
+  The government agreed. So in the summer of twenty thirteen, the sculptor, Master Lei Yixin, came back and carved grooves straight over the letters, to match the marks around them.
+
+  Look at those grooves again.
+
+  He asked for a short eulogy.
+
+  For two years, this stone gave him one that was too short.
+pronunciations:
+  - written: Lei Yixin
+    say: LAY yee-SHIN
+detail: >-
+  Angelou's words were said to the Washington Post and reported by NPR; the script attributes them. The full sermon passage is quoted from NPR. "The government agreed" summarises the Interior Secretary's December 2012 decision, endorsed by the King family, to remove rather than replace the inscription.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the deep horizontal grooves cut into the granite. They look like the rest of the stone, torn from the mountain."
+    source: 1
+    quote: "The quote will be removed by carving striations over the lettering to match the existing marks on the sculpture that represent the tearing of the “Stone of Hope” from the “Mountain of Despair.”"
+  - says: "I was a drum major for justice, peace and righteousness."
+    source: 2
+    quote: "\"I was a drum major for justice, peace and righteousness,\" the inscription reads."
+  - says: "In a sermon in nineteen sixty eight, he imagined his own funeral, and hoped nobody would talk too long. And he said, if you want to say that I was a drum major, say that I was a drum major for justice."
+    source: 2
+    quote: "Yes, if you want to say that I was a drum major, say that I was a drum major for justice."
+  - says: "The architect said there simply was not room on this side for the full quote."
+    source: 2
+    quote: "where the sculptor had already done some work adding striations that left little room for a lengthy engraving."
+  - says: "She said the short version made Dr. King look like an arrogant twit. The if clause, she said, changes the meaning completely."
+    source: 2
+    quote: "\"The quote makes Dr. Martin Luther King look like an arrogant twit,\" she said."
+  - says: "The if clause, she said, changes the meaning completely."
+    source: 2
+    quote: "The 'if' clause that is left out is salient. Leaving it out changes the meaning completely."
+  - says: "So in the summer of twenty thirteen, the sculptor, Master Lei Yixin, came back and carved grooves straight over the letters, to match the marks around them."
+    source: 1
+    quote: "Sculptor Master Lei Yixin is expected to arrive the week ofJuly 29 to begin the stone work."
+  - says: "The government agreed."
+    source: 3
+    quote: "Interior Secretary Ken Salazar endorsed a plan Tuesday to remove the disputed \"drum major\" inscription"
+sources:
+  - title: "National Park Service to Begin Work to Remove Drum Major Quote from Martin Luther King, Jr. Memorial (news release, 19 July 2013)"
+    publisher: "National Park Service, Martin Luther King, Jr. Memorial"
+    url: https://www.nps.gov/mlkm/learn/news/drum-major-quote-removal-from-mlk-jr-memorial.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "A Paraphrased Quote Stirs Criticism Of MLK Memorial"
+    publisher: "NPR, The Two-Way"
+    url: https://www.npr.org/sections/thetwo-way/2011/08/31/140093786/a-paraphrased-quote-stirs-criticism-of-mlk-memorial
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Inscription On Martin Luther King, Jr. Memorial To Be Removed"
+    publisher: "NPR, The Two-Way"
+    url: https://www.npr.org/sections/thetwo-way/2012/12/11/166993431/inscription-on-martin-luther-king-jr-memorial-to-be-removed
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Disputed Inscription Removed From MLK Memorial (Associated Press)"
+    publisher: "CBS Baltimore"
+    url: https://www.cbsnews.com/baltimore/news/disputed-inscription-removed-from-mlk-memorial/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

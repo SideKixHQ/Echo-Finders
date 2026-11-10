@@ -1,0 +1,75 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Anacostia), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Frederick Douglass National Historic Site, Cedar Hill, at the small stone Growlery behind the house.
+# Position: Overture place 'Cedar Hill House' (1411 W St SE) at 38.86334, -76.98516; set a few metres behind the house, where the Growlery stands (medium confidence).
+id: dc-a-place-to-growl
+title: "A Place to Growl"
+summary: "Behind his house on Cedar Hill, Frederick Douglass kept a tiny stone room with no windows, and called it the Growlery."
+place: "The Growlery, Frederick Douglass National Historic Site, 1411 W Street SE, Anacostia, Washington, D.C."
+at: { lat: 38.86322, lng: -76.98522 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+hours: { fromHour: 9, toHour: 17 }
+tags: [washington, anacostia, cedar-hill, frederick-douglass, writing]
+teaser: "A man who spent his life speaking kept a room with no windows."
+script: |
+  Find the little stone hut behind the big house. One room. A chimney. No windows.
+
+  The man who owned this hill was Frederick Douglass. He had spent his life speaking to crowds. Friends and visitors came up this hill to see him. And out here, he kept a room of his own.
+
+  He called it the Growlery. A place to growl. The word comes from Charles Dickens, from the novel Bleak House, and Douglass probably borrowed it from there.
+
+  Inside there was a desk, a stool and a couch, and a fireplace for winter. After breakfast and a morning walk, he would leave everyone behind and come out here, to read and write and think.
+
+  In eighteen eighty nine he let a reporter look inside. The reporter found a cosy fire burning, and the desk literally filled with books and paper.
+
+  The hut you see is a rebuilding, made by the Park Service from the old materials, on the same spot.
+
+  A British visitor once walked these woods with him. They sat down on a fallen tree. And he turned to her and said, let us be silent awhile, and listen to nature.
+
+  So, for a moment, do.
+detail: >-
+  The Park Service's Growlery page says Douglass "probably" took the name from Dickens; the script keeps that hedge. The 1889 reporter's words ("literally filled with books and paper") are quoted on the same page. The Catherine Impey quotation comes from her 1892 diary as cited by the Park Service.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "One room. A chimney. No windows."
+    source: 2
+    quote: "a cozy little windowless retreat"
+  - says: "He called it the Growlery. A place to growl."
+    source: 1
+    quote: "A growlery is a place to growl."
+  - says: "The word comes from Charles Dickens, from the novel Bleak House, and Douglass probably borrowed it from there."
+    source: 1
+    quote: "Probably inspired by Dickens,"
+  - says: "Inside there was a desk, a stool and a couch, and a fireplace for winter."
+    source: 1
+    quote: "Frederick Douglass's Growlery contained a single room with a fireplace. Douglass kept it simply furnished with a desk, stool, and couch."
+  - says: "After breakfast and a morning walk, he would leave everyone behind and come out here, to read and write and think."
+    source: 2
+    quote: "At times after breakfast and a morning walk he withdrew from everyone to his outdoor “little rustic,” human lair called"
+  - says: "In eighteen eighty nine he let a reporter look inside. The reporter found a cosy fire burning, and the desk literally filled with books and paper."
+    source: 1
+    quote: "One reporter whom Douglass allowed inside the \"peculiar little house\" in 1889 found a cozy fire burning in the fireplace and the desk \"literally filled with books and paper.\""
+  - says: "The hut you see is a rebuilding, made by the Park Service from the old materials, on the same spot."
+    source: 1
+    quote: "Built by the National Park Service in 1981, the reconstruction uses materials from the original structure and sits on its original location."
+  - says: "They sat down on a fallen tree. And he turned to her and said, let us be silent awhile, and listen to nature."
+    source: 2
+    quote: "As they both wandered through the woods, Douglass and she stopped along the way to rest on a fallen tree. He then turned to her and asked \"let us be silent awhile and listen to nature.”"
+sources:
+  - title: "The Growlery"
+    publisher: "National Park Service, Frederick Douglass National Historic Site"
+    url: https://www.nps.gov/frdo/learn/historyculture/the-growlery.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Cedar Hill: Frederick Douglass's Rustic Sanctuary"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/cedar-hill-frederick-douglass-rustic-sanctuary.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

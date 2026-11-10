@@ -1,0 +1,67 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC (Logan Circle), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Public sidewalk on Vermont Avenue NW in front of number 1318, the Mary McLeod Bethune Council House.
+# Position: Overture address '1318 Vermont Avenue Northwest' at 38.90817, -77.03087 and Overture place for the historic site at 38.90813, -77.03078 (high confidence).
+id: dc-a-room-for-the-night
+title: "A Room for the Night"
+summary: "Mary McLeod Bethune's townhouse was a headquarters, and a place for Black women to sleep in a city whose hotels would not have them."
+place: "Mary McLeod Bethune Council House, 1318 Vermont Avenue NW, Logan Circle, Washington, D.C."
+at: { lat: 38.90815, lng: -77.03085 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, logan-circle, mary-mcleod-bethune, ncnw, women, african-american-history, segregation]
+teaser: "Upstairs in this townhouse, there were beds for women the hotels turned away."
+script: |
+  Look at this tall Victorian townhouse. It looks like a family home. For years it was a headquarters, and something else as well.
+
+  Before nineteen forty three, the National Council of Negro Women had no headquarters of its own. Its work was done in Mary McLeod Bethune's living room, in a series of rented apartments. Her secretary, Arabella Denniston, would fall asleep there after the last volunteer went home.
+
+  Then Bethune heard this house was for sale. She sent her director to look at it, and moved fast. In December nineteen forty three, the Council bought it, for fifteen thousand five hundred dollars.
+
+  Here is the turn. Washington was segregated. A Black woman travelling to the capital could not count on a hotel room. So this house kept rooms for them. Bethune's headquarters was also a place to sleep.
+
+  Downstairs, in the front parlour, the Council received Eleanor Roosevelt, and Josephine Baker. Upstairs, a woman who had come a long way could close a door and rest.
+
+  Look up at the windows on the upper floors.
+
+  Somebody was safe behind them.
+pronunciations:
+  - written: Denniston
+    say: DEN-iss-tun
+detail: >-
+  The Park Service says the Council House served "as guest accommodations for transient women due to legal segregation in the nation's capital". The script does not say how many women stayed or for how long, because the source does not.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Before nineteen forty three, the National Council of Negro Women had no headquarters of its own."
+    source: 1
+    quote: "Since its inception, the NCNW's headquarters had been wherever Mrs. Bethune lived and worked"
+  - says: "Its work was done in Mary McLeod Bethune's living room, in a series of rented apartments."
+    source: 1
+    quote: "she lived in several apartment homes in the nation's capital. Council work was done in her living room."
+  - says: "Her secretary, Arabella Denniston, would fall asleep there after the last volunteer went home."
+    source: 1
+    quote: "There, her tired secretary Arabella Denniston would fall asleep, after the last volunteer had left."
+  - says: "She sent her director to look at it, and moved fast."
+    source: 1
+    quote: "she sent Executive Director Jeanetta Welch Brown to check it out, and after Mrs. Brown's approval, Mrs. Bethune moved quickly!"
+  - says: "In December nineteen forty three, the Council bought it, for fifteen thousand five hundred dollars."
+    source: 1
+    quote: "selling the home to Mary McLeod Bethune and the National Council of Negro Women, Inc. (NCNW) for $15,500 on December 18, 1943."
+  - says: "So this house kept rooms for them. Bethune's headquarters was also a place to sleep."
+    source: 1
+    quote: "and guest accommodations for transient women due to legal segregation in the nation's capital."
+  - says: "Downstairs, in the front parlour, the Council received Eleanor Roosevelt, and Josephine Baker."
+    source: 1
+    quote: "In the elegant front parlor, the NCNW received many prominent visitors including"
+sources:
+  - title: "The Council House"
+    publisher: "National Park Service, Mary McLeod Bethune Council House National Historic Site"
+    url: https://www.nps.gov/mamc/learn/historyculture/the-council-house.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

@@ -1,0 +1,74 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Theodore Roosevelt Island), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Theodore Roosevelt Island, on the trail through the northern half of the island, where the Park Service places Camp Greene, near the ruins of the Mason house.
+# Position: north of Overture's 'Roosevelt Island Monument' (38.89748, -77.06394), on the island's central trail; the camp's exact footprint is not marked (medium confidence).
+id: dc-the-pleasantest-camp
+title: "The Pleasantest Camp"
+summary: "In 1863 the 1st United States Colored Troops trained on this island. Walt Whitman came to watch them paid."
+place: "Theodore Roosevelt Island, northern trail near the Mason house ruins, Potomac River, Washington, D.C."
+at: { lat: 38.89880, lng: -77.06520 }
+triggerRadiusKm: 0.15
+category: history
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, theodore-roosevelt-island, civil-war, military, usct, walt-whitman, african-american-history]
+teaser: "Under these trees, a regiment learned to be soldiers, and a poet took notes."
+script: |
+  Look around you at the woods on this island. Quiet trees, a long way from any traffic. In the summer of eighteen sixty three, all this was full of tents.
+
+  Until that year, Black men could not legally enlist in the Union Army. The Emancipation Proclamation changed that. In May eighteen sixty three, Washington mustered its first Black regiment. They were sent here, to what was then called Analostan Island, and their camp was called Camp Greene.
+
+  They were paid seven dollars a month. A white soldier of the same rank got thirteen.
+
+  A poet came to see them. Walt Whitman rode out by ambulance, through Georgetown and across the river. He wrote down what he saw. The tents look clean and good, he said. Altogether, the pleasantest camp I have yet seen.
+
+  On the thirtieth of July, they marched out of here, south, toward Richmond and Petersburg. By the end of the war, one hundred and eighty five men of the regiment had died.
+
+  Listen to the woods. The tents left almost nothing behind. Archaeologists have found a few bullets, some buttons, a brass shoulder piece.
+
+  And a poet's sentence. The pleasantest camp.
+pronunciations:
+  - written: Analostan
+    say: an-uh-LOSS-tun
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In the summer of eighteen sixty three, all this was full of tents."
+    source: 1
+    quote: "Camp Greene was mainly concentrated on the northern end of the island and consisted of a series of tents used to house the new regiment."
+  - says: "The Emancipation Proclamation changed that."
+    source: 1
+    quote: "The Emancipation Proclamation of January 1863 finally cleared the way for African Americans to enlist in the Union military."
+  - says: "In May eighteen sixty three, Washington mustered its first Black regiment."
+    source: 1
+    quote: "The District of Columbia mustered their first regiment in May 1863"
+  - says: "They were sent here, to what was then called Analostan Island, and their camp was called Camp Greene."
+    source: 1
+    quote: "The newly mustered 1st USCT were soon placed in a newly constructed camp on Analostan Island that was eventually named Camp Greene"
+  - says: "They were paid seven dollars a month. A white soldier of the same rank got thirteen."
+    source: 1
+    quote: "their pay was established at seven dollars per month, compared to equally ranked White servicemen who were paid 13 dollars per month."
+  - says: "Walt Whitman rode out by ambulance, through Georgetown and across the river."
+    source: 1
+    quote: "I reach’d the spot from my Washington quarters by ambulance up Pennsylvania avenue, through Georgetown, across the Aqueduct bridge"
+  - says: "The tents look clean and good, he said. Altogether, the pleasantest camp I have yet seen."
+    source: 1
+    quote: "The tents look clean and good; indeed, altogether, in locality especially, the pleasantest camp I have yet seen"
+  - says: "On the thirtieth of July, they marched out of here, south, toward Richmond and Petersburg."
+    source: 1
+    quote: "On July 30, 1863, the 1st USCT left Analostan and made their way south to assist in the siege of Richmond and Petersburg in Virginia."
+  - says: "By the end of the war, one hundred and eighty five men of the regiment had died."
+    source: 1
+    quote: "with 185 enlisted members of the 1st USCT losing their lives fighting"
+  - says: "Archaeologists have found a few bullets, some buttons, a brass shoulder piece."
+    source: 1
+    quote: "Bullets have been found near where the camp is located as well as a brass epaulette"
+sources:
+  - title: "Camp Greene"
+    publisher: "National Park Service, Theodore Roosevelt Island"
+    url: https://www.nps.gov/this/learn/historyculture/camp-greene.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

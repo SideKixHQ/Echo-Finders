@@ -1,0 +1,69 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core, following docs/writing-echoes.md (six beats).
+# Listening spot: Kenilworth Aquatic Gardens, the concrete display pond behind the visitor center, where the Park Service says the Manchurian lotus grows.
+# Position: Overture place 'Kenilworth Park and Aquatic Gardens' (1550 Anacostia Ave NE) at 38.91260, -76.94183; set a few metres behind the visitor center (medium confidence).
+id: dc-the-seeds-from-the-dry-lake
+title: "The Seeds From the Dry Lake"
+summary: "The lotus in the pond behind the visitor center grew from seeds the Park Service says were up to a thousand years old."
+place: "Kenilworth Aquatic Gardens, display pond behind the visitor center, Anacostia Avenue NE, Washington, D.C."
+at: { lat: 38.91255, lng: -76.94195 }
+triggerRadiusKm: 0.05
+category: land
+format: short
+durationS: 68
+visibility: daylight-dependent
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, kenilworth, anacostia, lotus, plants, nature]
+teaser: "This flower waited centuries in the mud of a dried lake."
+script: |
+  Find the concrete pond just behind the visitor center. In early summer, it fills with pale pink lotus flowers, with bright yellow centres. They are among the first to bloom here.
+
+  They should not exist.
+
+  A lotus seed is small and dark, and it can lie in the mud for years, waiting. In nineteen nineteen, a Japanese botanist named Ichiro Ohga found some of these seeds in a dried lakebed in northeast China. He brought them to the United States.
+
+  Then, in March nineteen fifty two, a plant scientist here at Kenilworth, Horace Wester, got them to sprout, in the hot houses.
+
+  The Park Service says the seeds were up to a thousand years old. That is an estimate. Nobody can put an exact date on a seed. But the Park Service calls them the oldest seeds ever to germinate successfully.
+
+  But the plants in this pond come from those seeds.
+
+  So look at the flowers again. Each one lasts only a few days.
+
+  The family they come from waited a thousand years for its turn.
+detail: >-
+  The seeds' age is an estimate and is told as one ("up to 1,000 years old", Park Service). The claim that they are the oldest seeds ever to germinate is attributed to the Park Service in the script rather than stated as fact; a reviewer may prefer to cut it. The National Register nomination for the gardens would be a second source, but npgallery.nps.gov was unreachable from this session.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In early summer, it fills with pale pink lotus flowers, with bright yellow centres. They are among the first to bloom here."
+    source: 1
+    quote: "The flower has soft pink petals with a bright yellow center. The Manchurian lotus is one of the first to bloom at Kenilworth Aquatic Gardens."
+  - says: "Find the concrete pond just behind the visitor center."
+    source: 1
+    quote: "The Manchurian lotus can be found in the concrete display pond behind the visitors center."
+  - says: "A lotus seed is small and dark, and it can lie in the mud for years, waiting."
+    source: 1
+    quote: "A seed can remain ungerminated in this state for many years, until the conditions of the environment are suitable for it to begin sprouting."
+  - says: "In nineteen nineteen, a Japanese botanist named Ichiro Ohga found some of these seeds in a dried lakebed in northeast China. He brought them to the United States."
+    source: 1
+    quote: "Dr. Ichiro Ohga, a Japanese Botanist, discovered Manchurian lotus seeds in a dried lakebed in Leoning province, China in 1919. Dr. Ohga brought the seeds to the United States."
+  - says: "Then, in March nineteen fifty two, a plant scientist here at Kenilworth, Horace Wester, got them to sprout, in the hot houses."
+    source: 1
+    quote: "In March 1952, Kenilworth Aquatic Gardens’ Plant Pathologist Horace V Wester got the seeds to sprout in our hot houses."
+  - says: "The Park Service says the seeds were up to a thousand years old."
+    source: 1
+    quote: "The seeds were up to 1,000 years old."
+  - says: "But the Park Service calls them the oldest seeds ever to germinate successfully."
+    source: 1
+    quote: "The seeds were up to 1,000 years old. The Manchurian Lotus are the oldest seeds to ever germinate successfully and are grown here today."
+  - says: "Each one lasts only a few days."
+    source: 1
+    quote: "Lotus flowers last up to 5 days"
+sources:
+  - title: "Lotus"
+    publisher: "National Park Service, Kenilworth Park and Aquatic Gardens"
+    url: https://www.nps.gov/keaq/learn/nature/lotus.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
