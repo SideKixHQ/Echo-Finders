@@ -13,7 +13,7 @@ durationS: 70
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  The pirate headquarters is a tourist legend. The 1941 Federal Writers' Project guide says the house was believed built by French Huguenots and calls the pirate story "apparently a modern myth entirely unconfirmed by historical research"; it also says the doorways, roof and dormers were remodelled in the 1920s. The pirates hanged in Charleston in 1718 are real history; their link to this house is not.
+  The pirate headquarters is a tourist legend. The 1941 Federal Writers' Project guide says the house was believed built by French Huguenots and calls the pirate tale "apparently a modern myth entirely unconfirmed by historical research"; it also says the doorways, roof and dormers were remodelled in the 1920s. The pirates hanged in Charleston in 1718 are real history; their link to this house is not.
 voice: wC1005J19tvhoqqC2hkf
 minAge: 0
 quality: 0.75
@@ -26,7 +26,7 @@ script: |
 
   The pirates were real. In seventeen eighteen, many of them were captured off this coast, tried in Charleston and hanged.
 
-  But the state's own guidebook, in nineteen forty one, looked at this house and said plainly that the pirate story was apparently a modern myth, entirely unconfirmed by historical research.
+  But the state's own guidebook, in nineteen forty one, looked at this house and said plainly that the pirate tale was apparently a modern myth, entirely unconfirmed by historical research.
 
   What it believed instead is quieter. The house was probably built by French Huguenots, the Protestant refugees whose church still stands around the corner. One writer said it looked like a French village. Stucco walls, tinted and chipped, red tile roof and all.
 
@@ -49,7 +49,7 @@ claims:
   - says: "In seventeen eighteen, many of them were captured off this coast, tried in Charleston and hanged."
     source: 2
     quote: "the trials, and the executions of pirates captured"
-  - says: "But the state's own guidebook, in nineteen forty one, looked at this house and said plainly that the pirate story was apparently a modern myth, entirely unconfirmed by historical research."
+  - says: "But the state's own guidebook, in nineteen forty one, looked at this house and said plainly that the pirate tale was apparently a modern myth, entirely unconfirmed by historical research."
     source: 1
     quote: "is apparently a modern myth entirely unconfirmed by historical research."
   - says: "The house was probably built by French Huguenots, the Protestant refugees whose church still stands around the corner."
