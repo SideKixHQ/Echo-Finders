@@ -1528,6 +1528,11 @@ export function App() {
     setFlag(LOCKED_KEY);
     setLockedToast(selectedId);
   }, [selectedId, stateOf, firstRunDone]);
+  // It explains the card it came with, so it goes when that card does: left up, it sat over
+  // the map bar's search and filter long after anyone was reading it.
+  useEffect(() => {
+    if (lockedToast && selectedId !== lockedToast) setLockedToast(null);
+  }, [selectedId, lockedToast]);
 
   /*
    * Toast A, "an echo is close": the rules are `nearToastFor`'s (within 150 m of one you

@@ -2956,6 +2956,9 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   top: calc(var(--top-gap) + var(--mapbar-h) + 2px);
   pointer-events: none;
 }
+/* With an echo's card open, the card climbs to just under the map bar, so a toast there
+   would sit on the card's ✕. It rides over the map bar instead, where nothing is being used. */
+.screen:has(.pop) .toast-dock { top: var(--top-gap); }
 .toast {
   pointer-events: auto;
   display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
