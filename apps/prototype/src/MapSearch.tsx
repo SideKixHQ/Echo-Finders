@@ -82,6 +82,14 @@ export function MapSearch({ library, saved, onLook, onGo, onSave }: MapSearchPro
               if (!table) void loadZips().then(setTable);
             }}
             onChange={(e) => setQuery(e.target.value)}
+            // Leaving an empty box puts the map back: an empty results layer would sit over
+            // the map's controls with nothing in it (found by audit:controls tabbing past it).
+            onBlur={(e) => {
+              if (e.currentTarget.value.trim()) return;
+              const to = e.relatedTarget as Node | null;
+              if (to && e.currentTarget.closest(".msearch")?.contains(to)) return;
+              setOpen(false);
+            }}
             onKeyDown={(e) => {
               if (e.key !== "Enter") return;
               e.preventDefault();
