@@ -20,7 +20,7 @@ import type { Echo } from "@echofinders/core";
 /** The card's height and the gap above it, for what has to clear it. */
 export const AREACARD_H = 80;
 /**
- * The gap between the top of the bar and the card. `ECHOBAR_H` is measured now and already
+ * The gap between the top of the bar and the card. `ECHOBAR_H` (99) already
  * holds the bar's own float gap, so this is only the air above it.
  */
 export const AREACARD_OVER_BAR = 8;

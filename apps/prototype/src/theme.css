@@ -4026,15 +4026,14 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /*
  * Its height, and the one number the rest of the bottom stack is told. It replaced
  * `--sheet-h` plus `--step-h` plus `--guide-h`; those three are why the control column
- * had to learn to wrap. The bar measures itself (`ECHOBAR_H` in `EchoBar.tsx`).
+ * had to learn to wrap. `ECHOBAR_H` in `EchoBar.tsx` tracks this — change both.
  */
-/* The bar and the 8px it floats above the tab bar, so what clears it really does.
-   `--echobar-h` is measured by the bar itself (`EchoBar.tsx`); 99px (a 91px bar and its
-   gap) is only the first frame's fallback. */
-.screen:has(.echobar) { --step-h: var(--echobar-h, 99px); }
+/* The bar (91px) and the 8px it floats above the tab bar, so what clears it really does.
+   `ECHOBAR_H` in `EchoBar.tsx` says the same 99: change both. */
+.screen:has(.echobar) { --step-h: 99px; }
 /* The zoomed-out card (`AreaCard.tsx`: `AREACARD_H` 80 and `AREACARD_OVER_BAR` 8) adds itself
    to the stack, so the control column moves up above it rather than sitting on it. */
-.screen:has(.echobar):has(.area-card) { --step-h: calc(var(--echobar-h, 99px) + 88px); }
+.screen:has(.echobar):has(.area-card) { --step-h: 187px; }
 .screen:has(.area-card):not(:has(.echobar)) { --step-h: 80px; }
 .echobar {
   position: absolute; left: 0; right: 0; z-index: 24;
