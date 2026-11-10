@@ -14,18 +14,21 @@ export function LookSomewhere({
   library,
   onPick,
   limit,
+  featured = false,
 }: {
   readonly library: readonly Echo[];
   readonly onPick: (hit: PlaceHit) => void;
   /** How many results to list: fewer where the box shares a screen with other things. */
   readonly limit?: number;
+  /** The menu's first row: bigger, outlined in aqua, with a slow glow until it is used. */
+  readonly featured?: boolean;
 }) {
   const [query, setQuery] = useState("");
   const [table, setTable] = useState<ReadonlyMap<string, { lat: number; lng: number }> | null>(null);
   const hits = query.trim().length >= 2 ? searchPlaces(query, table ?? new Map(), library, limit) : [];
   const waiting = /^\d{2,5}$/.test(query.trim()) && table === null;
   return (
-    <div className="jmenu-look">
+    <div className={featured ? "jmenu-look featured" : "jmenu-look"}>
       <label className="jmenu-look-field">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <circle cx="11" cy="11" r="6.5" />
@@ -35,7 +38,7 @@ export function LookSomewhere({
           type="search"
           inputMode="search"
           autoComplete="off"
-          placeholder="ZIP code or place"
+          placeholder="Search a city, place or ZIP code"
           aria-label="Look somewhere else: a ZIP code or a place"
           value={query}
           onFocus={() => {

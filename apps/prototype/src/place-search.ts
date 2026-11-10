@@ -11,7 +11,7 @@
  * the search is used, so it costs an ordinary load nothing.
  */
 
-import type { Echo, LatLng } from "@echofinders/core";
+import { CITIES, type Echo, type LatLng } from "@echofinders/core";
 
 export interface PlaceHit {
   /** What the list shows, and what the map says it is looking at. */
@@ -69,31 +69,32 @@ export function searchPlaces(
   // places end "…, town, state"; a town hit sits at the middle of its echoes.
   const towns = new Map<string, { town: string; state: string; lat: number; lng: number; n: number }>();
   for (const echo of library) {
-    const parts = echo.point.place.split(",").map((s) => s.trim());
-    if (parts.length < 3) continue;
-    const town = parts[parts.length - 2]!;
-    const state = parts[parts.length - 1]!;
-    if (!town.toLowerCase().includes(q)) continue;
-    const key = `${town}, ${state}`;
-    const t = towns.get(key) ?? { town, state, lat: 0, lng: 0, n: 0 };
+    const area = areaOf(echo);
+    if (!area) continue;
+    const key = `${area.town}|${area.state}`;
+    const t = towns.get(key) ?? { ...area, lat: 0, lng: 0, n: 0 };
     towns.set(key, { ...t, lat: t.lat + echo.point.at.lat, lng: t.lng + echo.point.at.lng, n: t.n + 1 });
   }
+  const matches = (t: { town: string }) =>
+    t.town.toLowerCase().includes(q) || (ALIASES[t.town] ?? []).some((a) => a.startsWith(q) || q.startsWith(a));
   const townHits = [...towns.values()]
+    .filter(matches)
     .sort((a, b) => Number(b.town.toLowerCase().startsWith(q)) - Number(a.town.toLowerCase().startsWith(q)) || b.n - a.n)
     .slice(0, limit);
   for (const t of townHits) {
     hits.push({
       label: t.town,
-      detail: `${t.state} · ${t.n} ${t.n === 1 ? "echo" : "echoes"}`,
+      detail: `${t.state ? `${t.state} · ` : ""}${t.n} ${t.n === 1 ? "echo" : "echoes"}`,
       at: { lat: t.lat / t.n, lng: t.lng / t.n },
     });
   }
 
-  // Places: one hit per distinct place name, at its first echo.
   const seen = new Set<string>(townHits.map((t) => t.town));
   for (const echo of library) {
     const place = echo.point.place;
-    if (!place.toLowerCase().includes(q) || seen.has(short(place))) continue;
+    // The place's own name only: matching the whole address listed Boston buildings for
+    // "Washington", because they stand on Washington Street.
+    if (!short(place).toLowerCase().includes(q) || seen.has(short(place))) continue;
     seen.add(short(place));
     const town = place.split(",").slice(-2).join(",").trim();
     hits.push({ label: short(place), detail: town === short(place) ? "" : town, at: echo.point.at });
@@ -101,6 +102,34 @@ export function searchPlaces(
   }
   return hits;
 }
+
+/**
+ * The town an echo belongs to, as a listener would search for it.
+ *
+ * Inside a City Pass city it is that city, by the city's own name: the addresses were
+ * written by hand and their last parts were "Boston Harbor Islands", "D.C.", or a street
+ * in Manhattan, so search listed a second Boston, called Washington "DC" and never found
+ * New York at all (James, 2026-11-10). The Cape Fear Coast is the exception: it is a region
+ * of real towns, and people search for Wilmington or Southport, not the region.
+ * Elsewhere it is the town in the address, as before.
+ */
+function areaOf(echo: Echo): { town: string; state: string } | null {
+  for (const city of CITIES) {
+    if (city.id === "cape-fear") continue;
+    if (roughKm(city.centre, echo.point.at) <= city.radiusKm) return { town: city.name, state: "" };
+  }
+  const parts = echo.point.place.split(",").map((s) => s.trim());
+  if (parts.length < 3) return null;
+  return { town: parts[parts.length - 2]!, state: parts[parts.length - 1]! };
+}
+
+/** Other things people type for a pass city. */
+const ALIASES: Readonly<Record<string, readonly string[]>> = {
+  "New York": ["nyc", "manhattan", "new york city"],
+  "Washington, DC": ["dc", "d.c.", "washington"],
+  "New Orleans": ["nola"],
+  Philadelphia: ["philly"],
+};
 
 /** Near enough for "is anything within 25 km": flat-earth, which is fine at that range. */
 function roughKm(a: LatLng, b: LatLng): number {

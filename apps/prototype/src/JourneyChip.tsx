@@ -175,6 +175,16 @@ export function JourneyChip(props: JourneyChipProps) {
 
       {open && (
         <div className="jmenu" role="dialog" aria-label="Your trip">
+          {/* First, and lit: finding a place is the thing most people open this menu to do
+              (James, 2026-11-10: "the zip code box has to draw the eye and pop, move it up on
+              the menu to the top so its the first thing people see"). */}
+          {props.onLook && (
+            <LookSomewhere
+              featured
+              library={props.library ?? []}
+              onPick={(hit) => done(() => props.onLook!(hit, tab === "driving" ? "driving" : "walking"))()}
+            />
+          )}
           <div className="jmenu-modes" role="group" aria-label="How are you travelling?">
             {MODES.map((m) => (
               <button
@@ -213,12 +223,6 @@ export function JourneyChip(props: JourneyChipProps) {
                 <small>Pick echoes, or say how long you have. We map the way round them.</small>
               </span>
             </button>
-          )}
-          {tab !== "flight" && props.onLook && (
-            <LookSomewhere
-              library={props.library ?? []}
-              onPick={(hit) => done(() => props.onLook!(hit, tab as "walking" | "driving"))()}
-            />
           )}
           {tab !== "flight" && forTab.length > 0 && (
             <GuidedRoutes

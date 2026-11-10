@@ -3384,7 +3384,11 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .nowhere-look .jmenu-look-field:focus-within { border-color: var(--aqua); }
 .nowhere-look .jmenu-hit { min-height: 44px; }
 /* Typing, the keyboard takes half the screen: the picture goes so the answers show. */
-.nowhere:has(.nowhere-look input:focus) .nowhere-seek { display: none; }
+/* Compact while typing AND while results are listed. Tied to focus alone, tapping a result
+   blurred the box, the graphic came back mid tap, everything slid down, and the tap landed
+   on "Use my location" instead (James, 2026-11-10: "tapping one doesnt work"). */
+.nowhere:has(.nowhere-look input:focus) .nowhere-seek,
+.nowhere:has(.nowhere-look .jmenu-hit) .nowhere-seek { display: none; }
 @media (max-height: 700px) {
   .nowhere-seek { height: 150px; }
   .nowhere-say p { font-size: 14px; line-height: 1.5; }
@@ -4674,6 +4678,22 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   color: var(--white); font: inherit; font-size: 16px;
 }
 .jmenu-look-field:focus-within { border-color: var(--aqua); }
+/* The menu's search, first and lit. The glow breathes until the box is used, then stops:
+   it is there to be found, not to nag. Still under reduced motion. */
+.jmenu-look.featured { padding: 2px 0 8px; }
+.jmenu-look.featured .jmenu-look-field {
+  height: 52px; border-radius: 14px; border: 1.5px solid var(--aqua);
+  animation: look-glow 2.4s ease-in-out infinite;
+}
+.jmenu-look.featured .jmenu-look-field svg { width: 20px; height: 20px; stroke: var(--aqua); }
+.jmenu-look.featured .jmenu-look-field input { font-size: 17px; }
+.jmenu-look.featured .jmenu-look-field:focus-within,
+.jmenu-look.featured:has(input:not(:placeholder-shown)) .jmenu-look-field { animation: none; }
+@keyframes look-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 240, 220, 0); }
+  50% { box-shadow: 0 0 0 4px rgba(0, 240, 220, 0.22), 0 0 18px rgba(0, 240, 220, 0.28); }
+}
+@media (prefers-reduced-motion: reduce) { .jmenu-look.featured .jmenu-look-field { animation: none; } }
 .look-back {
   position: absolute; left: 50%; transform: translateX(-50%); z-index: 27;
   top: calc(var(--top-gap, 12px) + var(--mapbar-h, 56px) + 8px);
