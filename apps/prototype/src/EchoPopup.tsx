@@ -208,11 +208,16 @@ export function EchoPopup({
       {photo &&
         (onCamera ? (
           <button className="pop-plate pop-plate-tap" onClick={() => onCamera(echo)}>
-            <img src={platePng(photo.imageKey, "then")} alt="" draggable={false} />
-            <span className="mono">
-              {photo.year ? `Photographed here, ${photo.year}` : "Photographed here"}
+            <span className="pop-plate-pic">
+              <img src={platePng(photo.imageKey, "then")} alt="" draggable={false} />
+              <span className="mono">
+                {photo.year ? `Photographed here, ${photo.year}` : "Photographed here"}
+              </span>
             </span>
-            <small className="pop-plate-credit">{plateCredit(photo.credit)}</small>
+            <small className="pop-plate-credit">
+              <span className="pop-credit-full">{plateCredit(photo.credit)}</span>
+              <span className="pop-credit-short">{plateCreditShort(photo.credit)}</span>
+            </small>
             <span className="pop-plate-cam" aria-hidden="true">
               <svg viewBox="0 0 24 24">
                 <path d="M4 8h3l1.6-2.2h6.8L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
@@ -223,11 +228,16 @@ export function EchoPopup({
           </button>
         ) : (
           <div className="pop-plate">
-            <img src={platePng(photo.imageKey, "then")} alt="" draggable={false} />
-            <span className="mono">
-              {photo.year ? `Photographed here, ${photo.year}` : "Photographed here"}
+            <span className="pop-plate-pic">
+              <img src={platePng(photo.imageKey, "then")} alt="" draggable={false} />
+              <span className="mono">
+                {photo.year ? `Photographed here, ${photo.year}` : "Photographed here"}
+              </span>
             </span>
-            <small className="pop-plate-credit">{plateCredit(photo.credit)}</small>
+            <small className="pop-plate-credit">
+              <span className="pop-credit-full">{plateCredit(photo.credit)}</span>
+              <span className="pop-credit-short">{plateCreditShort(photo.credit)}</span>
+            </small>
           </div>
         ))}
 
@@ -480,6 +490,15 @@ function away(metres: number | null): string {
  * the Then & Now viewfinder. The link at the end of a credit is for a reviewer, not for a
  * phone screen, so it is dropped here; the viewfinder still shows the whole line.
  */
+/**
+ * Who took it, and nothing else: "Frances Benjamin Johnston" out of a four line archive
+ * credit. For the card, where the whole credit under the photograph pushed Play off it;
+ * the whole credit is one tap away, in the camera view. A name, not an ellipsis.
+ */
+export function plateCreditShort(credit: string): string {
+  return plateCredit(credit).split(",")[0]!.trim();
+}
+
 export function plateCredit(credit: string): string {
   return credit
     .replace(/,?\s*https?:\/\/\S+\s*$/, "")

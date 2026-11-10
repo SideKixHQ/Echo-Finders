@@ -3806,7 +3806,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   .pop-plate img { height: 56px; }
   .pop-teaser { display: none; }
   /* One label in a 56px strip: the caption and "Then & now" overlapped at this height. */
-  .pop-plate span:not(.pop-plate-cam) { display: none; }
+  .pop-plate > span:not(.pop-plate-cam):not(.pop-plate-pic), .pop-plate-pic > span { display: none; }
   /* The type scale's 26px title ran to three lines here and cut the card 24px short. */
   .pop h3 { font-size: 22px; line-height: 1.25; }
 }
@@ -5161,8 +5161,40 @@ div.maplibregl-map { font-size: var(--fs-label); }
 .pop { padding: 14px 20px 14px; border-radius: 24px; }
 .pop .pop-plate { margin: 0 0 12px; border-radius: 16px; }
 .pop .pop-plate img { height: clamp(84px, calc(100dvh - 740px), 108px); }
-/* The credit gives the badge its corner rather than running under it. */
-.pop .pop-plate .pop-plate-credit { max-width: calc(100% - 180px); }
+/*
+ * The credit, in full, under the photograph rather than over its corner.
+ *
+ * Over the corner it had to share a 390px plate with "Then & now" and was cut to
+ * "Frances Benja..." or "Haines Photo Co..." (2026-11-10). Whose picture it is is the one
+ * fact on the plate that is somebody else's, so it is written out: a caption, wrapping,
+ * in the card's quiet secondary colour.
+ */
+/* The credit's two cuts. On the card, who took it, whole: the full archive credit is four
+   lines at 390 and pushed Play below the card's fold even on an 844px phone, so it lives
+   in the camera view, one tap on the photograph, where it is already written out in full.
+   The full cut is kept for a tall screen. Spans inside the plate inherit its caption
+   rule, so both are reset here. */
+.pop-plate .pop-plate-credit > span {
+  position: static; padding: 0; border-radius: 0; background: none;
+  letter-spacing: normal; text-transform: none; font: inherit; color: inherit; line-height: inherit;
+}
+.pop-plate .pop-plate-credit > .pop-credit-full { display: none; }
+.pop-plate .pop-plate-credit > .pop-credit-short { display: inline; }
+@media (min-height: 1000px) {
+  .pop-plate .pop-plate-credit > .pop-credit-full { display: inline; }
+  .pop-plate .pop-plate-credit > .pop-credit-short { display: none; }
+}
+/* The photograph and its year, as one box, so the year stays on the picture now that the
+   credit runs underneath it. */
+.pop-plate .pop-plate-pic {
+  position: relative; display: block; left: auto; bottom: auto; padding: 0; border-radius: 0;
+  background: none; letter-spacing: normal; text-transform: none; line-height: 0;
+}
+.pop .pop-plate .pop-plate-credit {
+  position: static; display: block; max-width: none; margin: 0; border-radius: 0;
+  padding: 7px 10px 8px; line-height: 1.35; white-space: normal; overflow: visible;
+  color: var(--cool); background: rgba(var(--rgb-panel), 0.96);
+}
 .pop .pop-plate .pop-plate-cam {
   right: 10px; top: 10px; padding: 7px 12px 7px 10px;
   font-family: inherit; font-size: 14px; font-weight: 600; letter-spacing: 0; text-transform: none;
