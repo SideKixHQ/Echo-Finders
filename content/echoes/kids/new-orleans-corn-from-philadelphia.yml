@@ -1,0 +1,114 @@
+# Drafted by Claude Code (2026-11-10) for the New Orleans City Pass, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk at the corner of Fourth and Prytania streets, beside the cornstalk fence of 1448 Fourth Street. The house is a private home: look from the sidewalk.
+# Position: Overture place 'Colonel Short's Villa' (1448 Fourth St) and the fitted Fourth and Prytania intersection; set at the corner sidewalk (medium confidence).
+id: new-orleans-corn-from-philadelphia
+title: "Corn From Philadelphia"
+summary: "The famous cornstalk fence in the Garden District hid its maker's name at the bottom of its posts until the 1950s."
+place: "Colonel Short's Villa, Fourth and Prytania streets, Garden District, New Orleans, Louisiana"
+at: { lat: 29.93000, lng: -90.08430 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [new-orleans, garden-district, ironwork, kids, houses]
+teaser: "The maker hid his name where nobody would look."
+script: |
+  Look at the fence on this corner. Look closely. Those are not plain iron bars. They are cornstalks, made of iron.
+
+  Here is a puzzle. Who made it? For a long time, you could walk past this fence every day and never find out.
+
+  The house was built just before the Civil War for Colonel Robert Short. People called him the Blue Grass Colonel, because he came from Kentucky.
+
+  By nineteen fifty, the fence was falling apart. So the owner did something clever. He took part of the fence away from the Prytania Street side, and used the pieces to mend the front. Where the missing fence had been, he built a brick wall.
+
+  And when the workers uncovered the bottoms of the posts, there it was. A name. Wood and Miltenberger, who sold iron for a famous foundry in Philadelphia.
+
+  Now walk a few steps along the Prytania Street side, and look for the brick wall. That is where the borrowed pieces came from. There is only one other fence like this in the city, on Royal Street, in the French Quarter.
+
+  This corn grew in Philadelphia.
+detail: >-
+  The Historic American Buildings Survey record (1965) dates the house from 1859 to 1866 and names the architect as Henry Howard. The foundry name was found when the fence posts were exposed during repairs after 1950. The house is a private residence; the fence is seen from the public sidewalk.
+pronunciations:
+  - written: "Miltenberger"
+    say: "MILL-ten-ber-ger"
+  - written: "Prytania"
+    say: "pruh-TAY-nee-uh"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Those are not plain iron bars."
+    source: 1
+    quote: "is well known because of the cast-iron cornstalk fence."
+  - says: "They are cornstalks, made of iron."
+    source: 1
+    quote: "is well known because of the cast-iron cornstalk fence."
+  - says: "They are cornstalks, made of iron."
+    source: 2
+    quote: "is enclosed with a cast-iron fence of a cornstalk design."
+  - says: "For a long time, you could walk past this fence every day and never find out."
+    source: 1
+    quote: "the bases of the fence posts were exposed and the name of the foundry in which the fence was cast was revealed"
+  - says: "The house was built just before the Civil War for Colonel Robert Short."
+    source: 1
+    quote: "Started in the prosperous years just before the"
+  - says: "The house was built just before the Civil War for Colonel Robert Short."
+    source: 1
+    quote: "Civil War and finished immediately after"
+  - says: "The house was built just before the Civil War for Colonel Robert Short."
+    source: 2
+    quote: "Built in 1859 by Colonel Robert H. Short"
+  - says: "People called him the Blue Grass Colonel, because he came from Kentucky."
+    source: 2
+    quote: "Built in 1859 by Colonel Robert H. Short, a native of Kentucky known as the ‘Blue Grass Colonel,’"
+  - says: "People called him the Blue Grass Colonel, because he came from Kentucky."
+    source: 1
+    quote: "was said to have been originally from Kentucky, was known"
+  - says: "By nineteen fifty, the fence was falling apart."
+    source: 1
+    quote: "had fallen into disrepair by the time the present owner bought the property in 1950."
+  - says: "So the owner did something clever."
+    source: 1
+    quote: "The rear section of the Prytania Street fence was removed to repair the Fourth Street fence"
+  - says: "He took part of the fence away from the Prytania Street side, and used the pieces to mend the front."
+    source: 1
+    quote: "The rear section of the Prytania Street fence was removed to repair the Fourth Street fence"
+  - says: "Where the missing fence had been, he built a brick wall."
+    source: 1
+    quote: "A solid brick garden wall was substituted for the removed sec- tion."
+  - says: "And when the workers uncovered the bottoms of the posts, there it was."
+    source: 1
+    quote: "At the time these repairs were made, the bases of the fence posts were exposed"
+  - says: "A name."
+    source: 1
+    quote: "the name of the foundry in which the fence was cast was revealed"
+  - says: "Wood and Miltenberger, who sold iron for a famous foundry in Philadelphia."
+    source: 1
+    quote: "Wood and Miltenberger (the New Orleans agency for the noted Philadelphia foundry of Wood and Perot)."
+  - says: "That is where the borrowed pieces came from."
+    source: 1
+    quote: "The rear section of the Prytania Street fence was removed to repair the Fourth Street fence"
+  - says: "There is only one other fence like this in the city, on Royal Street, in the French Quarter."
+    source: 2
+    quote: "The only other fence in New Orleans built in this style is in the Garden District at Prytania and Fourth Sts."
+  - says: "There is only one other fence like this in the city, on Royal Street, in the French Quarter."
+    source: 2
+    quote: "Another fence similar to this is found at a residence in the French Quarter at 915 Royal Street."
+  - says: "This corn grew in Philadelphia."
+    source: 1
+    quote: "the noted Philadelphia foundry of Wood and Perot"
+sources:
+  - title: "Colonel Robert Henry Short House, 1448 Fourth Street, HABS No. LA-1112 (written data, 1965)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0057/data/la0057data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "New Orleans City Guide (Federal Writers' Project of the Works Progress Administration, 1938)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/neworleanscity00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

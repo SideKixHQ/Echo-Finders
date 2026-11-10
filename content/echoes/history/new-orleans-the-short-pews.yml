@@ -1,0 +1,108 @@
+# Drafted by Claude Code (2026-11-10) for the New Orleans City Pass, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on Governor Nicholls Street in front of St. Augustine Church, at the Henriette Delille Street corner.
+# Position: Overture place 'Tomb of the Unknown Slave' (1206 Governor Nicholls St) and the fitted Governor Nicholls and Henriette DeLille intersection; set on the church side sidewalk (medium confidence).
+id: new-orleans-the-short-pews
+title: "The Short Pews"
+summary: "Free people of color bought pews at St. Augustine's in the 1840s. The short ones, they gave to the enslaved."
+place: "St. Augustine Church, Governor Nicholls Street at Henriette Delille Street, Treme, New Orleans, Louisiana"
+at: { lat: 29.96538, lng: -90.06583 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, treme, st-augustine, free-people-of-color, slavery, faith]
+teaser: "They did not need the short pews. So they gave them away."
+script: |
+  Look at the church on this corner. St. Augustine, founded in eighteen forty one by enslaved people and free people of color.
+
+  While it was going up, people raised money all over the city to buy its pews. The point was to keep it from becoming a Black church.
+
+  It did not work. Free people of color bought many of the pews themselves, and Black and white families ended up sitting close together.
+
+  Much later, this parish had a priest named Father Jerome LeDoux, and anyone who met him got a history lesson. This is how he told it.
+
+  We had one whole aisle of free people of color. They had bought those pews for their families to worship in on Sundays. They had also bought the short pews. They didn't need those, so they gave those to the slaves.
+
+  It did not last. The old separation came back, and the way it was done was to stop renting out pews at all.
+
+  Look at the doors of St. Augustine.
+
+  And for the first time in their existence, the slaves had their own place of worship.
+detail: >-
+  The 1938 New Orleans City Guide records the pew buying and the end of pew renting, in the language of its day, without dates for either. Father Jerome LeDoux's account is his own telling, recorded by NPR; he died in 2019. The Tomb of the Unknown Slave stands on the church grounds beside you.
+pronunciations:
+  - written: "LeDoux"
+    say: "luh-DOO"
+  - written: "Henriette Delille"
+    say: "on-ree-ET duh-LEEL"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "St. Augustine, founded in eighteen forty one by enslaved people and free people of color."
+    source: 1
+    quote: "St. Augustine, founded in 1841 by slaves and free people of color"
+  - says: "St. Augustine, founded in eighteen forty one by enslaved people and free people of color."
+    source: 2
+    quote: "In the course of construc- tion of the church in 1841"
+  - says: "While it was going up, people raised money all over the city to buy its pews."
+    source: 2
+    quote: "To prevent this appropriation subscriptions were solicited all over the city."
+  - says: "The point was to keep it from becoming a Black church."
+    source: 2
+    quote: "were of the opinion that, since the school had been established for their benefit, the proposed church was likewise to be for the use of their race. To prevent this appropriation subscriptions were solicited all over the city."
+  - says: "It did not work."
+    source: 2
+    quote: "Free Negroes purchased many of the"
+  - says: "Free people of color bought many of the pews themselves, and Black and white families ended up sitting close together."
+    source: 2
+    quote: "Free Negroes purchased many of the"
+  - says: "Free people of color bought many of the pews themselves, and Black and white families ended up sitting close together."
+    source: 2
+    quote: "with the result that Negroes and whites sat rather close to each"
+  - says: "Much later, this parish had a priest named Father Jerome LeDoux, and anyone who met him got a history lesson."
+    source: 3
+    quote: "Anyone who met Father Jerome LeDoux was going to get a history lesson."
+  - says: "This is how he told it."
+    source: 3
+    quote: "He'd proudly explain that when it was founded, St. Augustine began as an integrated space."
+  - says: "We had one whole aisle of free people of color."
+    source: 3
+    quote: "We had one whole aisle of free people of color."
+  - says: "They had bought those pews for their families to worship in on Sundays."
+    source: 3
+    quote: "They had bought those pews for their families to worship in on Sundays."
+  - says: "They had also bought the short pews."
+    source: 3
+    quote: "They had also bought the short pews."
+  - says: "They didn't need those, so they gave those to the slaves."
+    source: 3
+    quote: "They didn't need those, so they gave those to the slaves."
+  - says: "It did not last."
+    source: 2
+    quote: "traditional separation of races was restored by the abolition of the pew-renting system."
+  - says: "The old separation came back, and the way it was done was to stop renting out pews at all."
+    source: 2
+    quote: "traditional separation of races was restored by the abolition of the pew-renting system."
+  - says: "And for the first time in their existence, the slaves had their own place of worship."
+    source: 3
+    quote: "And for the first time in their existence, the slaves had their own place of worship."
+sources:
+  - title: "New Orleans black parish faces uncertain future (Associated Press, 2006)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna11811002
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "New Orleans City Guide (Federal Writers' Project of the Works Progress Administration, 1938)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/neworleanscity00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Rev. Jerome LeDoux, Who Fought To Keep His Church Open After Katrina, Dies At 88"
+    publisher: "NPR"
+    url: https://www.npr.org/2019/01/10/684145480/rev-jerome-ledoux-who-fought-to-keep-his-church-open-after-katrina-dies-at-88
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

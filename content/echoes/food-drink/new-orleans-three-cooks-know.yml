@@ -1,0 +1,118 @@
+# Drafted by Claude Code (2026-11-10) for the New Orleans City Pass, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on St. Louis Street outside Antoine's, toward the Bourbon Street end of the block.
+# Position: Overture place 'Antoine's Restaurant' (713 St Louis St), moved along St. Louis Street toward Bourbon to keep clear of the Royal Street echoes (medium confidence).
+id: new-orleans-three-cooks-know
+title: "Three Cooks Know"
+summary: "Oysters Rockefeller was created at Antoine's in the late 1800s. Restaurants everywhere copy it. Only three cooks here know the recipe."
+place: "Antoine's Restaurant, 713 St. Louis Street, French Quarter, New Orleans, Louisiana"
+at: { lat: 29.95684, lng: -90.06668 }
+triggerRadiusKm: 0.03
+category: food-drink
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.7
+tags: [new-orleans, new-orleans-core, french-quarter, restaurants, oysters]
+teaser: "Five million orders. Not one recipe given away."
+script: |
+  Look at the long front of Antoine's, here on St. Louis Street. A young French immigrant named Antoine Alciatore opened it in eighteen forty, and his family still runs it.
+
+  There is a dish in there that restaurants all over the world have tried to copy. The kitchen here says none of them get it right.
+
+  Oysters Rockefeller. Oysters in the shell, under a rich, buttery sauce full of greens. It was created here, in the late eighteen hundreds. The sauce was so rich that they named it for the richest man in America, Rockefeller.
+
+  The head chef, Michael Regua, put it plainly. We don't give the recipe away. There are only three cooks here who know how to do it.
+
+  The restaurant reckons it has served around five million orders. So every recipe for Oysters Rockefeller you have ever seen is somebody's guess. One newspaper, printing its own version, admitted there is much dispute about the details of the original.
+
+  Look at the doors. Somewhere behind them are the three cooks.
+
+  Five million orders. Not one recipe.
+detail: >-
+  Antoine's was founded in 1840 by Antoine Alciatore. The National Register and other accounts date the creation of Oysters Rockefeller to 1899, during the time of his son Jules; the sources quoted here say the late 1800s.
+pronunciations:
+  - written: "Alciatore"
+    say: "al-see-uh-TOR-ee"
+  - written: "Regua"
+    say: "REG-wah"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the long front of Antoine's, here on St. Louis Street."
+    source: 2
+    quote: "opened Antoine’s Restaurant on New Orleans' Rue St. Louis in 1840"
+  - says: "A young French immigrant named Antoine Alciatore opened it in eighteen forty, and his family still runs it."
+    source: 1
+    quote: "in 1840, a young French immigrant named Antoine Alciatore first opened its doors."
+  - says: "A young French immigrant named Antoine Alciatore opened it in eighteen forty, and his family still runs it."
+    source: 1
+    quote: "The restaurant, opened in 1840, is a family-run institution"
+  - says: "There is a dish in there that restaurants all over the world have tried to copy."
+    source: 1
+    quote: "The dish is served in restaurants around the world"
+  - says: "The kitchen here says none of them get it right."
+    source: 1
+    quote: "Antoine’s head chef Michael Regua says none of them do it right"
+  - says: "Oysters Rockefeller."
+    source: 1
+    quote: "Their finest example of consistency is their most famous creation: Oysters Rockefeller"
+  - says: "Oysters in the shell, under a rich, buttery sauce full of greens."
+    source: 3
+    quote: "All must include oysters topped with a very rich, buttery sauce mixed with greens, herbs, an absinthe-like liquor, and bread crumbs."
+  - says: "It was created here, in the late eighteen hundreds."
+    source: 3
+    quote: "Originally created at Antoine’s in New Orleans in the late 1800s"
+  - says: "It was created here, in the late eighteen hundreds."
+    source: 2
+    quote: "It was at Antoine’s that dishes like oysters Rockefeller were created"
+  - says: "The sauce was so rich that they named it for the richest man in America, Rockefeller."
+    source: 3
+    quote: "The sauce is so rich, in fact, that it was named for the wealthiest man in America at the time, John D. Rockefeller."
+  - says: "The sauce was so rich that they named it for the richest man in America, Rockefeller."
+    source: 1
+    quote: "The decadent oyster recipe was so rich, they decided to name it after the famously wealthy John D. Rockefeller."
+  - says: "The head chef, Michael Regua, put it plainly."
+    source: 1
+    quote: "Antoine’s head chef Michael Regua says"
+  - says: "We don't give the recipe away."
+    source: 1
+    quote: "We don’t give the recipe away,"
+  - says: "There are only three cooks here who know how to do it."
+    source: 1
+    quote: "There are only three cooks here who know how to do it."
+  - says: "The restaurant reckons it has served around five million orders."
+    source: 1
+    quote: "They estimate they’ve served around 5 million orders"
+  - says: "So every recipe for Oysters Rockefeller you have ever seen is somebody's guess."
+    source: 3
+    quote: "There is much dispute about the details of the original recipe, and there are dozens, if not more, of unique versions."
+  - says: "One newspaper, printing its own version, admitted there is much dispute about the details of the original."
+    source: 3
+    quote: "There is much dispute about the details of the original recipe"
+  - says: "Somewhere behind them are the three cooks."
+    source: 1
+    quote: "There are only three cooks here who know how to do it."
+  - says: "Five million orders."
+    source: 1
+    quote: "They estimate they’ve served around 5 million orders"
+  - says: "Not one recipe."
+    source: 1
+    quote: "We don’t give the recipe away,"
+sources:
+  - title: "Antoine's: A French Quarter tradition"
+    publisher: "CBS News, Sunday Morning"
+    url: https://www.cbsnews.com/news/antoines-a-french-quarter-tradition/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Ten restaurants full of history"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna30115813
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Recipe for oysters Rockefeller"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/lifestyle/food-dining/2016/12/19/recipe-for-oysters-rockefeller/NmOnBbxgUHxVEKIvPYFNSO/story.html
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

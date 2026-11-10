@@ -1,0 +1,102 @@
+# Drafted by Claude Code (2026-11-10) for the New Orleans City Pass, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on South Rampart Street at number 427, between Perdido and Poydras streets.
+# Position: Interpolated between Overture places at 417 and 445 South Rampart St (the Little Gem Saloon), checked against the fitted Perdido and Poydras intersections (medium confidence).
+id: new-orleans-the-lullaby-on-rampart-street
+title: "The Lullaby on Rampart Street"
+summary: "A Jewish family on South Rampart gave young Louis Armstrong work, meals and his first cornet. Sixty years later, he heard their lullaby."
+place: "Site of the Karnofsky shop, 427 South Rampart Street, New Orleans, Louisiana"
+at: { lat: 29.95120, lng: -90.07490 }
+triggerRadiusKm: 0.03
+category: people
+format: short
+durationS: 77
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, cbd, south-rampart, louis-armstrong, jazz, jewish-history]
+teaser: "He had not heard that song since he was a kid."
+script: |
+  Look along this block of South Rampart Street, to number four twenty seven.
+
+  In twenty twenty one, Hurricane Ida brought down the old building there. It had been the shop and home of a Jewish family named Karnofsky. And for one boy from this part of town, it had been something like a second home. His name was Louis Armstrong.
+
+  The Karnofskys hired him when he was seven. By day he rode their junk wagon, tooting a small tin horn. In the evenings he delivered coal. In between, he ate with the family. When he spotted a cornet in a pawnshop window, the Karnofskys lent him the money to buy it.
+
+  In nineteen sixty nine, Louis Armstrong was sick in a hospital bed, and he heard his doctor hum a tune. It was the song Mrs. Karnofsky used to sing as she rocked her son to sleep. He picked up a pen and started writing about them.
+
+  He wrote, when I reached the age of eleven, I began to realize that it was the Jewish family who instilled in me singing from the heart.
+
+  Look at number four twenty seven again.
+
+  He had not heard that song since he was a kid. He knew it straight away.
+detail: >-
+  The National Park Service dates the Karnofsky store at 427 South Rampart from 1913; the family's earlier home was on Girod Street, and Armstrong may have eaten with them at either or both. The store was listed on the National Register of Historic Places. The building collapsed in Hurricane Ida in August 2021; what stands there now may differ.
+pronunciations:
+  - written: "Karnofsky"
+    say: "kar-NOFF-skee"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "In twenty twenty one, Hurricane Ida brought down the old building there."
+    source: 2
+    quote: "427 South Rampart St. in New Orleans is one of the many buildings that were destroyed by Hurricane Ida."
+  - says: "It had been the shop and home of a Jewish family named Karnofsky."
+    source: 1
+    quote: "the shop, with residence above, of the Jewish family that provided a second home to the young Louis Armstrong."
+  - says: "And for one boy from this part of town, it had been something like a second home."
+    source: 1
+    quote: "the Jewish family that provided a second home to the young Louis Armstrong."
+  - says: "His name was Louis Armstrong."
+    source: 1
+    quote: "the Jewish family that provided a second home to the young Louis Armstrong."
+  - says: "The Karnofskys hired him when he was seven."
+    source: 2
+    quote: "They hired him as a 7-year-old."
+  - says: "By day he rode their junk wagon, tooting a small tin horn."
+    source: 1
+    quote: "He worked for the Karnofskies on their coal and junk wagons, tooting “a small tin horn,”"
+  - says: "By day he rode their junk wagon, tooting a small tin horn."
+    source: 2
+    quote: "He would ride the junk wagon by day."
+  - says: "In the evenings he delivered coal."
+    source: 2
+    quote: "The evening shift would be delivering coal"
+  - says: "In between, he ate with the family."
+    source: 1
+    quote: "and ate meals with the family"
+  - says: "When he spotted a cornet in a pawnshop window, the Karnofskys lent him the money to buy it."
+    source: 2
+    quote: "He spotted a cornet in a pawn shop window and kind of drooled over it."
+  - says: "When he spotted a cornet in a pawnshop window, the Karnofskys lent him the money to buy it."
+    source: 1
+    quote: "The Karnofskys loaned Armstrong money for his first cornet."
+  - says: "In nineteen sixty nine, Louis Armstrong was sick in a hospital bed, and he heard his doctor hum a tune."
+    source: 2
+    quote: "In 1969, Louis Armstrong was sick in a hospital bed. And he heard his doctor hum a familiar tune."
+  - says: "It was the song Mrs. Karnofsky used to sing as she rocked her son to sleep."
+    source: 2
+    quote: "Armstrong wrote that the song the doctor sang reminded him of one Mrs. Karnofsky sang as she rocked her son to sleep."
+  - says: "He picked up a pen and started writing about them."
+    source: 2
+    quote: "And he grabbed the pen and started writing the story."
+  - says: "He wrote, when I reached the age of eleven, I began to realize that it was the Jewish family who instilled in me singing from the heart."
+    source: 2
+    quote: "He wrote, when I reached the age of 11, I began to realize that it was the Jewish family who instilled in me singing from the heart."
+  - says: "He had not heard that song since he was a kid."
+    source: 2
+    quote: "You know, I haven't heard that song since I was a kid."
+  - says: "He knew it straight away."
+    source: 2
+    quote: "And he said, oh, my goodness. You know, I haven't heard that song since I was a kid."
+sources:
+  - title: "Karnofsky Tailor Shop and Residence"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/karnofsky-tailor-shop-and-residence.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Historic Karnofsky Shop In New Orleans Collapses During Hurricane Ida"
+    publisher: "NPR, Morning Edition"
+    url: https://www.npr.org/2021/08/31/1032738381/historic-karnofsky-shop-in-new-orleans-collapses-during-hurricane-ida
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

@@ -9866,6 +9866,58 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "new-orleans-corn-from-philadelphia",
+    "title": "Corn From Philadelphia",
+    "summary": "The famous cornstalk fence in the Garden District hid its maker's name at the bottom of its posts until the 1950s.",
+    "point": {
+      "at": {
+        "lat": 29.93,
+        "lng": -90.0843
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Colonel Short's Villa, Fourth and Prytania streets, Garden District, New Orleans, Louisiana"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the fence on this corner. Look closely. Those are not plain iron bars. They are cornstalks, made of iron.\n\nHere is a puzzle. Who made it? For a long time, you could walk past this fence every day and never find out.\n\nThe house was built just before the Civil War for Colonel Robert Short. People called him the Blue Grass Colonel, because he came from Kentucky.\n\nBy nineteen fifty, the fence was falling apart. So the owner did something clever. He took part of the fence away from the Prytania Street side, and used the pieces to mend the front. Where the missing fence had been, he built a brick wall.\n\nAnd when the workers uncovered the bottoms of the posts, there it was. A name. Wood and Miltenberger, who sold iron for a famous foundry in Philadelphia.\n\nNow walk a few steps along the Prytania Street side, and look for the brick wall. That is where the borrowed pieces came from. There is only one other fence like this in the city, on Royal Street, in the French Quarter.\n\nThis corn grew in Philadelphia.\n",
+    "teaser": "The maker hid his name where nobody would look.",
+    "detail": "The Historic American Buildings Survey record (1965) dates the house from 1859 to 1866 and names the architect as Henry Howard. The foundry name was found when the fence posts were exposed during repairs after 1950. The house is a private residence; the fence is seen from the public sidewalk.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "pronunciations": [
+      {
+        "written": "Miltenberger",
+        "say": "MILL-ten-ber-ger"
+      },
+      {
+        "written": "Prytania",
+        "say": "pruh-TAY-nee-uh"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "garden-district",
+      "ironwork",
+      "kids",
+      "houses"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/new-orleans-corn-from-philadelphia",
+        "durationS": 70
+      }
+    ]
+  },
+  {
     "id": "new-orleans-ghosts-under-the-oaks",
     "title": "Ghosts Under the Oaks",
     "summary": "Under these oaks Creole gentlemen settled quarrels at sunrise. The old writers said the place must be crowded with ghosts.",
@@ -9967,6 +10019,54 @@ export const LIBRARY: readonly Echo[] = [
       "ironwork"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "new-orleans-just-margaret",
+    "title": "Just Margaret",
+    "summary": "An Irish baker who could not read gave her fortune to orphans. Her statue carries one word: Margaret.",
+    "point": {
+      "at": {
+        "lat": 29.9408,
+        "lng": -90.07222
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Margaret Haughery statue, Margaret Place, Camp, Prytania and Clio streets, New Orleans, Louisiana"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the statue. A woman sitting in a chair, her hand on the shoulder of a child.\n\nNow look at the base. One word. Margaret. No last name.\n\nHer name was Margaret Haughery, and she came from Ireland, and she could not read.\n\nThis city knew her driving a milk wagon through the streets, winter and summer, in a large black bonnet. Later she ran a bakery, famous all over the city for its bread. She never owned a silk dress or a pair of kid gloves. The money went to orphans.\n\nWhen she died, there was not an institution for the poor in New Orleans that was not an heir to her money. She was Catholic, but Protestant and Jew, Black and white, all had a share.\n\nIn the summer of eighteen eighty four, the city unveiled this statue in front of thousands of people. The cord was pulled by eight people, each one from an orphanage. Nine hundred and twenty six orphans, from ten institutions, were there to watch.\n\nLook at the name again.\n\nMargaret was all anyone here ever called her.\n",
+    "teaser": "One word on the base. No last name.",
+    "detail": "Margaret Haughery died in 1882; the statue by Alexander Doyle was unveiled in July 1884. The National Park Service calls it the first statue erected in honor of a woman in the United States; a Savannah paper the same year counted it among three statues to women raised that year, so this echo does not claim it was the first.",
+    "pronunciations": [
+      {
+        "written": "Haughery",
+        "say": "HAW-er-ee"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "lower-garden-district",
+      "margaret-haughery",
+      "irish",
+      "orphans",
+      "statues"
+    ],
+    "remoteness": 0.74,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-just-margaret",
+        "durationS": 69
+      }
+    ]
   },
   {
     "id": "new-orleans-love-street",
@@ -10134,6 +10234,113 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "new-orleans-nobody-left-by-the-back-door",
+    "title": "Nobody Left by the Back Door",
+    "summary": "In 1973 an arson fire killed 32 people at the Up Stairs Lounge. At their memorial, nobody took the way out they were offered.",
+    "point": {
+      "at": {
+        "lat": 29.95349,
+        "lng": -90.06745
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Site of the Up Stairs Lounge, Chartres and Iberville streets, New Orleans, Louisiana"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the plaque at this corner. The bar it remembers was upstairs, on the second floor of this building. You could not see it from the street. One staircase went up, and it was the only way in.\n\nOn a Sunday night, the twenty fourth of June, nineteen seventy three, someone set a fire in that stairwell. The windows had bars on them.\n\nA bartender named Buddy Rasmussen leaped over the bar and yelled, follow me, follow me. He led people out through a back door. It turned out to be the only way out.\n\nThirty two people died. No one was ever charged. Some churches would not bury the dead, and some families would not claim them.\n\nA pastor named Troy Perry called church after church, looking for somewhere to hold a service. He says they laughed in his face. At last, one Methodist pastor said yes. The church filled up, standing room only.\n\nAcross the street, the press and the television cameras were waiting. To be photographed coming out could cost someone a job, or a family. So Perry told them there was another way. Down a hallway, there was a door to the street.\n\nLook at the plaque again.\n\nThis time, nobody left by the back door.\n",
+    "teaser": "One staircase in. One back door out.",
+    "detail": "The Up Stairs Lounge fire of 24 June 1973 is officially unsolved; no one was charged. This echo does not name the man most often suspected, who died in 1974, because the story belongs to the thirty two people who died and to those who mourned them. The memorial service Troy Perry describes was held at a Methodist church; the National Park Service podcast notes the first memorial in the French Quarter was held at St. Mark's Church on 1 July 1973.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "pronunciations": [
+      {
+        "written": "Rasmussen",
+        "say": "RAZ-muss-en"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "up-stairs-lounge",
+      "lgbtq"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "unsolved",
+      "reviewedBy": "TODO: a named human, before this can leave draft (docs/14-true-crime.md).",
+      "reviewedAt": "2026-11-10",
+      "contentWarning": "This echo describes a fire in which thirty two people died. No injuries are described in detail."
+    },
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "speech/new-orleans-nobody-left-by-the-back-door",
+        "durationS": 78
+      }
+    ]
+  },
+  {
+    "id": "new-orleans-out-of-the-trash-can",
+    "title": "Out of the Trash Can",
+    "summary": "Mother in Law was thrown in a trash can before it became a number one hit. Ernie K Doe's lounge stands on this corner.",
+    "point": {
+      "at": {
+        "lat": 29.97096,
+        "lng": -90.06678
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Mother in Law Lounge, North Claiborne Avenue at Columbus Street, New Orleans, Louisiana"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the lounge on this corner. It is named for a song that was thrown in the garbage.\n\nIn nineteen sixty one, a young songwriter and producer named Allen Toussaint made a song called Mother in Law. After a few bad takes, he threw it in the trash. One of the backup singers fished it out. Toussaint remembers the singer walking over to Ernie K Doe and saying, look, try this again, man.\n\nIt went to number one in the country. K Doe always knew he was special. I'm cocky, he liked to say, but I'm good.\n\nThen the hits stopped. By the middle of the seventies he had pretty much dropped out. He drank, and people remember seeing him living on the streets.\n\nIn the early nineteen nineties, an old friend, Antoinette, took him in. They married. She dressed him in capes and feathered hats, and she opened this lounge, so he could sing again. It was wall to wall, one of his backup singers remembers.\n\nHe died in two thousand one. But he didn't exactly leave. Antoinette had a likeness of him made from a department store mannequin, and set it up in the lounge. Everybody wanted to take a picture with Ernie.\n\nLook at the lounge again.\n\nSomebody went back for the song. Somebody went back for him.\n",
+    "teaser": "Somebody went back for it.",
+    "detail": "Ernie K-Doe (Ernest Kador Jr.) died on 5 July 2001. The lounge was damaged by Hurricane Katrina and rebuilt at its original location; Antoinette K-Doe ran it after his death. The mannequin is no longer kept there.",
+    "pronunciations": [
+      {
+        "written": "K Doe",
+        "say": "kay DOE"
+      },
+      {
+        "written": "Toussaint",
+        "say": "too-SAHN"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "seventh-ward",
+      "claiborne-avenue",
+      "r-and-b",
+      "music",
+      "ernie-k-doe"
+    ],
+    "remoteness": 0.55,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-out-of-the-trash-can",
+        "durationS": 82
+      }
+    ]
+  },
+  {
     "id": "new-orleans-st-johns-eve-on-the-bayou",
     "title": "St. John's Eve on the Bayou",
     "summary": "The old guides said that on St. John's Eve the Voudous gathered on this bayou to dance. Even the old writers disagreed on where.",
@@ -10181,6 +10388,63 @@ export const LIBRARY: readonly Echo[] = [
       "marie-laveau"
     ],
     "remoteness": 1
+  },
+  {
+    "id": "new-orleans-the-apothecarys-egg-cup",
+    "title": "The Apothecary's Egg Cup",
+    "summary": "A story says the word cocktail was born in Antoine Peychaud's drugstore on Royal Street. A historian has one objection.",
+    "point": {
+      "at": {
+        "lat": 29.9563,
+        "lng": -90.0663
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Site of Peychaud's drugstore, 437 Royal Street, French Quarter, New Orleans, Louisiana"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 64,
+    "minAge": 10,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old building here on Royal Street, number four thirty seven. There is a story that the word cocktail was born in it.\n\nIt was a drugstore. The apothecary was Antoine Peychaud, who had come from Santo Domingo. He made bitters from a secret recipe. At night he mixed them with brandy and served them to gentlemen.\n\nThe story goes that he served it in an egg cup. In French, an egg cup is a coquetier. And when English speakers tried to say coquetier, the story says, it came out cocktail.\n\nIt is a lovely story. Ted Haigh, a curator at the Museum of the American Cocktail, had one objection. Peychaud would have been three years old when the first one was made.\n\nThe bitters, though, are real, and still carry his name. When Louisiana's legislature made the Sazerac the official cocktail of New Orleans, it was Peychaud's bitters that made it a Sazerac.\n\nLook at the doorway again.\n\nThe word was older than he was. The bitters were his.\n",
+    "teaser": "Say coquetier three times, fast.",
+    "detail": "The 1938 New Orleans City Guide places Peychaud's drugstore at 437 Royal Street and attributes the coquetier story to Stanley Arthur's Old New Orleans. Accounts of when Peychaud arrived and when he opened his pharmacy differ.",
+    "certaintyNote": "Peychaud's pharmacy, his bitters and the Sazerac's official status are documented. The story that cocktail comes from coquetier is a tradition the 1938 city guide itself reports as hearsay, and the cocktail historian Ted Haigh disputes the idea that Peychaud made the first cocktail. The script says both out loud.",
+    "pronunciations": [
+      {
+        "written": "Peychaud",
+        "say": "PAY-show"
+      },
+      {
+        "written": "coquetier",
+        "say": "coke-TYAY"
+      },
+      {
+        "written": "Sazerac",
+        "say": "SAZZ-er-ack"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "royal-street",
+      "cocktails",
+      "sazerac"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-apothecarys-egg-cup",
+        "durationS": 64
+      }
+    ]
   },
   {
     "id": "new-orleans-the-arrest-that-was-planned",
@@ -10236,6 +10500,55 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.45
   },
   {
+    "id": "new-orleans-the-basket-at-the-gate",
+    "title": "The Basket at the Gate",
+    "summary": "In 1961 a young couple opened Preservation Hall, where Black and white musicians played together. In Louisiana that was against the law.",
+    "point": {
+      "at": {
+        "lat": 29.95832,
+        "lng": -90.0653
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Preservation Hall, 726 St. Peter Street, French Quarter, New Orleans, Louisiana"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 86,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old building here on St. Peter Street, the one that is famous for music but not much to look at. Inside, there is no stage and no air conditioning. People sit on hard benches, or on the floor.\n\nIn nineteen sixty one, what happened in that room could get you hauled into court.\n\nThat year, Allan and Sandra Jaffe came to New Orleans on their honeymoon. They were in their twenties, and they loved jazz. They turned an art gallery here into a place to hear the old New Orleans players. Every night, Sandra sat by the gate with a little wicker basket, collecting the dollar bills.\n\nTheir son Ben says this was the only place in New Orleans where Black and white people were gathering openly, and where the bands were mixed. In Louisiana, that was illegal. A law passed in nineteen fifty six outlawed integrated entertainment. Allan broke it whenever he sat in with the band on tuba.\n\nSandra remembered night court, and a judge banging his gavel at them. We don't mix cream with our coffee in this here town.\n\nThey kept the gate open. After the Civil Rights Act of nineteen sixty four, the crowds came. The musicians still play close enough that you may have to duck a trombone slide.\n\nLook at the gate.\n\nTheir son runs the Hall now. He plays the tuba.\n",
+    "teaser": "Sandra sat by the gate with a wicker basket.",
+    "detail": "Allan Jaffe died in 1987; Sandra Jaffe kept the Hall and the touring band going. Some accounts credit an earlier society for traditional jazz with starting the music in this building before the Jaffes took it over in 1961.",
+    "pronunciations": [
+      {
+        "written": "Jaffe",
+        "say": "JAFF-ee"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "jazz",
+      "music",
+      "civil-rights",
+      "preservation-hall"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-basket-at-the-gate",
+        "durationS": 86
+      }
+    ]
+  },
+  {
     "id": "new-orleans-the-blacksmith-shop-with-no-blacksmiths",
     "title": "The Blacksmith Shop With No Blacksmiths",
     "summary": "Lafitte's Blacksmith Shop is an unproved legend. The documented Lafitte link is across the street, in Marie Louise Villard's house.",
@@ -10288,6 +10601,54 @@ export const LIBRARY: readonly Echo[] = [
       "bourbon-street"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "new-orleans-the-boat-that-came-through-the-earthquake",
+    "title": "The Boat That Came Through the Earthquake",
+    "summary": "The first steamboat on the Mississippi was named for this city. It came down the river in 1811, through the New Madrid earthquakes.",
+    "point": {
+      "at": {
+        "lat": 29.955,
+        "lng": -90.0625
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Riverfront at Woldenberg Park, foot of Toulouse Street, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 94,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out at the river.\n\nThe first steamboat ever to come down it was named for the place it was heading. The New Orleans. In the autumn of eighteen eleven she set out from Pittsburgh.\n\nPeople in Pittsburgh told the builder, Nicholas Roosevelt, that he had no right to risk his wife's life. Lydia Roosevelt went anyway, and she was expecting a baby. On board were the two of them, a small crew, and an immense Newfoundland dog named Tiger. At Louisville, waiting for the river to rise, she had the baby.\n\nThen, in December, the earth began to shake. The New Madrid earthquakes. So powerful, the story goes, that they made the Mississippi run backward.\n\nAt New Madrid, terrified people begged to be taken on board. There was no room and no food for them, and the boat went on. On board, people spoke in whispers. The dog prowled the deck, moaning and growling, and when he came and laid his head in Lydia's lap, they knew a bad shock was coming.\n\nOne night they tied up at the foot of an island. All night she heard things grinding and striking against the hull. In the morning, the island was gone.\n\nLydia said she lived in constant fright, unable to sleep or sew, or read.\n\nLook at the river again. This is where that voyage was going, all along.\n\nThe man who wrote the story down gave the last stretch one line. From there to New Orleans, there was no occurrence worthy of note.\n",
+    "teaser": "The dog knew before anyone else did.",
+    "detail": "The voyage is told by John H. B. Latrobe, Lydia Roosevelt's brother, in a paper read to the Maryland Historical Society in 1871 and drawn from her recollections; the quotations above are his and hers. The New Orleans left Pittsburgh in the autumn of 1811 and reached Natchez and then New Orleans in the winter of 1811 to 1812. Magnitude estimates for the New Madrid earthquakes differ between sources.",
+    "pronunciations": [
+      {
+        "written": "New Madrid",
+        "say": "new MAD-rid"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "riverfront",
+      "mississippi",
+      "steamboat",
+      "earthquake"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-boat-that-came-through-the-earthquake",
+        "durationS": 94
+      }
+    ]
   },
   {
     "id": "new-orleans-the-candle-on-good-friday",
@@ -10950,6 +11311,64 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "new-orleans-the-house-of-the-turk",
+    "title": "The House of the Turk",
+    "summary": "The legend says a Sultan's brother was murdered in this house in 1792. The house was built in 1836.",
+    "point": {
+      "at": {
+        "lat": 29.95962,
+        "lng": -90.06618
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Le Pretre Mansion, 716 Dauphine Street at Orleans Street, French Quarter, New Orleans, Louisiana"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 89,
+    "minAge": 10,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the tall house on this corner, with the iron balconies and the high basement. People call it the House of the Turk. And the story they tell about it ends in murder.\n\nThe story goes like this. A brother of the Sultan of Turkey sailed into New Orleans with jewels, and with young women taken from the Sultan's harem. He was given this house to live in, and one night he gave a great party. In the morning, the doors were broken in. He was dead, and so was everyone with him. And the ship that had brought him was gone from the river. The crew, people said, had sailed off to be pirates.\n\nThe story was written down in nineteen twenty two, in a book called Legends of Louisiana, by a New Orleans writer named Helen Pitkin Schertz. She set it in seventeen ninety two.\n\nIn nineteen fifty eight, a researcher named Georgia Drennan went through the property records for the Historic American Buildings Survey. The lot was bought in eighteen thirty six, and the house was built after that. That is forty four years after the murders were supposed to have happened inside it. She called the story amusing, but incredible. And she noticed something else. It was because of that book that people started calling this the House of the Turk.\n\nLook at the house again.\n\nThe Turk arrived in nineteen twenty two. In a book.\n",
+    "teaser": "A party, a ship that slipped away, and a house that did not exist yet.",
+    "detail": "The house was built for Joseph Coulon Gardette under a contract of 1 September 1836, and sold in 1839 to Jean Baptiste Lepretre, whose name it carries. The Historic American Buildings Survey record calls it, so far as was known, the first house in New Orleans built with a basement. It has long been divided into apartments; please look from the street.",
+    "certaintyNote": "The murders are a legend. The story was published by Helen Pitkin Schertz in Legends of Louisiana (1922) and set in 1792; the Historic American Buildings Survey (1958) found the lot was bought in 1836 and the house built afterwards, called the story amusing but incredible, and noted that the house took the name House of the Turk because of the story. No supernatural claim is made.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "pronunciations": [
+      {
+        "written": "Le Pretre",
+        "say": "luh PRET-ruh"
+      },
+      {
+        "written": "Schertz",
+        "say": "SHERTS"
+      },
+      {
+        "written": "Gardette",
+        "say": "gar-DET"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "legend",
+      "dauphine-street",
+      "houses"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "speech/new-orleans-the-house-of-the-turk",
+        "durationS": 89
+      }
+    ]
+  },
+  {
     "id": "new-orleans-the-inquisitor-who-came-back",
     "title": "The Inquisitor Who Came Back",
     "summary": "A Capuchin sent to set up the Inquisition was shipped out by the governor. He returned as Père Antoine, the city's beloved priest.",
@@ -11055,6 +11474,54 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "new-orleans-the-lullaby-on-rampart-street",
+    "title": "The Lullaby on Rampart Street",
+    "summary": "A Jewish family on South Rampart gave young Louis Armstrong work, meals and his first cornet. Sixty years later, he heard their lullaby.",
+    "point": {
+      "at": {
+        "lat": 29.9512,
+        "lng": -90.0749
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Site of the Karnofsky shop, 427 South Rampart Street, New Orleans, Louisiana"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 77,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along this block of South Rampart Street, to number four twenty seven.\n\nIn twenty twenty one, Hurricane Ida brought down the old building there. It had been the shop and home of a Jewish family named Karnofsky. And for one boy from this part of town, it had been something like a second home. His name was Louis Armstrong.\n\nThe Karnofskys hired him when he was seven. By day he rode their junk wagon, tooting a small tin horn. In the evenings he delivered coal. In between, he ate with the family. When he spotted a cornet in a pawnshop window, the Karnofskys lent him the money to buy it.\n\nIn nineteen sixty nine, Louis Armstrong was sick in a hospital bed, and he heard his doctor hum a tune. It was the song Mrs. Karnofsky used to sing as she rocked her son to sleep. He picked up a pen and started writing about them.\n\nHe wrote, when I reached the age of eleven, I began to realize that it was the Jewish family who instilled in me singing from the heart.\n\nLook at number four twenty seven again.\n\nHe had not heard that song since he was a kid. He knew it straight away.\n",
+    "teaser": "He had not heard that song since he was a kid.",
+    "detail": "The National Park Service dates the Karnofsky store at 427 South Rampart from 1913; the family's earlier home was on Girod Street, and Armstrong may have eaten with them at either or both. The store was listed on the National Register of Historic Places. The building collapsed in Hurricane Ida in August 2021; what stands there now may differ.",
+    "pronunciations": [
+      {
+        "written": "Karnofsky",
+        "say": "kar-NOFF-skee"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "cbd",
+      "south-rampart",
+      "louis-armstrong",
+      "jazz",
+      "jewish-history"
+    ],
+    "remoteness": 0.38,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-lullaby-on-rampart-street",
+        "durationS": 77
+      }
+    ]
+  },
+  {
     "id": "new-orleans-the-man-under-the-altar",
     "title": "The Man Under the Altar",
     "summary": "A rich Spaniard rebuilt the burned church at his own expense, asked for masses for his soul, and was buried in front of the altar.",
@@ -11148,7 +11615,7 @@ export const LIBRARY: readonly Echo[] = [
       "language",
       "streetcar"
     ],
-    "remoteness": 0.2
+    "remoteness": 0.07
   },
   {
     "id": "new-orleans-the-noise-on-the-common",
@@ -11202,6 +11669,62 @@ export const LIBRARY: readonly Echo[] = [
       "slavery"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "new-orleans-the-oaks-on-the-pillars",
+    "title": "The Oaks on the Pillars",
+    "summary": "North Claiborne Avenue was an oak lined boulevard, the main street of Black New Orleans, until the day after Mardi Gras in 1968.",
+    "point": {
+      "at": {
+        "lat": 29.96725,
+        "lng": -90.07058
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Under the Claiborne Expressway, North Claiborne Avenue at Ursulines Avenue, Treme, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 87,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the highway over your head, and at the concrete columns holding it up. Some of them have trees painted on them.\n\nThere used to be real ones, right here.\n\nBefore the highway, North Claiborne Avenue was a boulevard lined with oak trees and azaleas. People called it the Main Street of Black New Orleans. Drug stores, an insurance company, a theater, a toy store, restaurants. Black families could not shop on Canal Street then, so this was where you went. People played football and baseball under the trees, and Mardi Gras parades ended here, in celebration.\n\nAmy Stelly has lived in this neighborhood her whole life. She was a very young child, she says, when the interstate was rammed through. She has been fighting to take it down for as long as she can remember.\n\nThe work began on the day after Mardi Gras, nineteen sixty eight. The oaks were ripped out of the ground, and the pillars went up in their place. Hundreds of homes and dozens of businesses along the avenue were destroyed. The highway was finished that same year.\n\nYears later, a woman named Barbara Lacen Keller stood under here, leaning against one of the painted pillars, and told a reporter what she thought. Claiborne Avenue, no matter what you do, will always be ours.\n\nLook at the painted trees again.\n\nThey are standing where the oaks stood.\n",
+    "teaser": "There used to be real ones, right where you are standing.",
+    "detail": "Sources date the start of demolition to the day after Mardi Gras 1968 (NBC News, and Amy Stelly to WBUR); the Boston Globe gives 1968 for completion, while other accounts place the start of work in 1966. The painted columns are the work of local artists; this echo does not attribute any single painting.",
+    "pronunciations": [
+      {
+        "written": "Stelly",
+        "say": "STEL-ee"
+      },
+      {
+        "written": "Lacen Keller",
+        "say": "LAY-sun KELL-er"
+      },
+      {
+        "written": "Treme",
+        "say": "truh-MAY"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "treme",
+      "claiborne-avenue",
+      "civil-rights",
+      "mardi-gras"
+    ],
+    "remoteness": 0.35,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-oaks-on-the-pillars",
+        "durationS": 87
+      }
+    ]
   },
   {
     "id": "new-orleans-the-opera-house-that-isnt-here",
@@ -11349,6 +11872,59 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "new-orleans-the-short-pews",
+    "title": "The Short Pews",
+    "summary": "Free people of color bought pews at St. Augustine's in the 1840s. The short ones, they gave to the enslaved.",
+    "point": {
+      "at": {
+        "lat": 29.96538,
+        "lng": -90.06583
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "St. Augustine Church, Governor Nicholls Street at Henriette Delille Street, Treme, New Orleans, Louisiana"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the church on this corner. St. Augustine, founded in eighteen forty one by enslaved people and free people of color.\n\nWhile it was going up, people raised money all over the city to buy its pews. The point was to keep it from becoming a Black church.\n\nIt did not work. Free people of color bought many of the pews themselves, and Black and white families ended up sitting close together.\n\nMuch later, this parish had a priest named Father Jerome LeDoux, and anyone who met him got a history lesson. This is how he told it.\n\nWe had one whole aisle of free people of color. They had bought those pews for their families to worship in on Sundays. They had also bought the short pews. They didn't need those, so they gave those to the slaves.\n\nIt did not last. The old separation came back, and the way it was done was to stop renting out pews at all.\n\nLook at the doors of St. Augustine.\n\nAnd for the first time in their existence, the slaves had their own place of worship.\n",
+    "teaser": "They did not need the short pews. So they gave them away.",
+    "detail": "The 1938 New Orleans City Guide records the pew buying and the end of pew renting, in the language of its day, without dates for either. Father Jerome LeDoux's account is his own telling, recorded by NPR; he died in 2019. The Tomb of the Unknown Slave stands on the church grounds beside you.",
+    "pronunciations": [
+      {
+        "written": "LeDoux",
+        "say": "luh-DOO"
+      },
+      {
+        "written": "Henriette Delille",
+        "say": "on-ree-ET duh-LEEL"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "treme",
+      "st-augustine",
+      "free-people-of-color",
+      "slavery",
+      "faith"
+    ],
+    "remoteness": 0.27,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-the-short-pews",
+        "durationS": 69
+      }
+    ]
+  },
+  {
     "id": "new-orleans-the-singing-priest",
     "title": "The Singing Priest",
     "summary": "Old guidebooks said a beloved Capuchin, Father Dagobert, could still be heard singing at night in St. Louis Cemetery.",
@@ -11411,6 +11987,62 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "new-orleans-the-train-with-sails",
+    "title": "The Train With Sails",
+    "summary": "A railroad ran down the middle of Elysian Fields in 1831. Horses pulled the first train, and the rails jumped up through the floor.",
+    "point": {
+      "at": {
+        "lat": 29.96262,
+        "lng": -90.05637
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Elysian Fields Avenue at Decatur Street, Faubourg Marigny, New Orleans, Louisiana"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up Elysian Fields Avenue, away from the river. It runs wide and straight, as far as you can see.\n\nHere is why. A railroad used to run right up the middle of it.\n\nIt was called the Pontchartrain Railroad, and it was one of the first railroads in all of America. It ran four and a half miles, from the river out to a little town on Lake Pontchartrain called Milneburg.\n\nThe men in charge had hardly ever seen a railroad. They could not decide whether the rails should be made of iron or of cedar wood. And in eighteen thirty one, when the very first train ran, it was pulled by horses!\n\nThen a man named Thomas Shields shipped a little steam engine down the river from Cincinnati to try it out. It was not strong enough. Poor Shields had spent all his money on it, and he could not even pay his hotel bill. So the railroad's boss, Captain John Grant, bought it for a thousand dollars, and used it to turn a grindstone in the workshop.\n\nThe iron rails had a bad habit. Sometimes a strip of iron would spring loose and poke right up through the floor of a car. People called them snake heads.\n\nAnd there is a story, just a story, that when the little engine broke down, the crew would put up sails, and sail the train home.\n\nLook up the avenue again. Picture a little train out there in the middle, with its sails flapping in the breeze.\n\nNext stop, the lake.\n",
+    "teaser": "When the engine broke down, the story goes, they put up sails.",
+    "detail": "The 1938 New Orleans City Guide dates the first train to 1831; the 1885 Historical Sketch Book says the line opened in 1830 and calls it the first railroad for general transportation completed in the United States. The sails are reported only as hearsay. The line later became part of the Louisville and Nashville railroad, and its long time nickname was Smoky Mary.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "pronunciations": [
+      {
+        "written": "Pontchartrain",
+        "say": "PONT-chuh-train"
+      },
+      {
+        "written": "Milneburg",
+        "say": "MILL-en-burg"
+      },
+      {
+        "written": "Elysian",
+        "say": "ee-LEE-zhun"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "marigny",
+      "elysian-fields",
+      "railroads",
+      "kids"
+    ],
+    "remoteness": 0.08,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/new-orleans-the-train-with-sails",
+        "durationS": 97
+      }
+    ]
+  },
+  {
     "id": "new-orleans-the-woman-who-never-lived-here",
     "title": "The Woman Who Never Lived Here",
     "summary": "Madame John's Legacy is named for a character in a George Washington Cable story. The woman who really held this ground was Elizabeth Real.",
@@ -11463,6 +12095,57 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "new-orleans-three-cooks-know",
+    "title": "Three Cooks Know",
+    "summary": "Oysters Rockefeller was created at Antoine's in the late 1800s. Restaurants everywhere copy it. Only three cooks here know the recipe.",
+    "point": {
+      "at": {
+        "lat": 29.95684,
+        "lng": -90.06668
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Antoine's Restaurant, 713 St. Louis Street, French Quarter, New Orleans, Louisiana"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.7,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the long front of Antoine's, here on St. Louis Street. A young French immigrant named Antoine Alciatore opened it in eighteen forty, and his family still runs it.\n\nThere is a dish in there that restaurants all over the world have tried to copy. The kitchen here says none of them get it right.\n\nOysters Rockefeller. Oysters in the shell, under a rich, buttery sauce full of greens. It was created here, in the late eighteen hundreds. The sauce was so rich that they named it for the richest man in America, Rockefeller.\n\nThe head chef, Michael Regua, put it plainly. We don't give the recipe away. There are only three cooks here who know how to do it.\n\nThe restaurant reckons it has served around five million orders. So every recipe for Oysters Rockefeller you have ever seen is somebody's guess. One newspaper, printing its own version, admitted there is much dispute about the details of the original.\n\nLook at the doors. Somewhere behind them are the three cooks.\n\nFive million orders. Not one recipe.\n",
+    "teaser": "Five million orders. Not one recipe given away.",
+    "detail": "Antoine's was founded in 1840 by Antoine Alciatore. The National Register and other accounts date the creation of Oysters Rockefeller to 1899, during the time of his son Jules; the sources quoted here say the late 1800s.",
+    "pronunciations": [
+      {
+        "written": "Alciatore",
+        "say": "al-see-uh-TOR-ee"
+      },
+      {
+        "written": "Regua",
+        "say": "REG-wah"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-quarter",
+      "restaurants",
+      "oysters"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-three-cooks-know",
+        "durationS": 66
+      }
+    ]
+  },
+  {
     "id": "new-orleans-twenty-days-of-france",
     "title": "Twenty Days of France",
     "summary": "In 1803 Louisiana passed from Spain to France in the Cabildo, and twenty days later from France to the United States.",
@@ -11512,6 +12195,59 @@ export const LIBRARY: readonly Echo[] = [
       "louisiana-purchase"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "new-orleans-two-weeks-from-water",
+    "title": "Two Weeks From Water",
+    "summary": "Benjamin Latrobe came to finish the waterworks his son died building. He fell ill the day he laid the pipe to the river.",
+    "point": {
+      "at": {
+        "lat": 29.9599,
+        "lng": -90.05997
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Decatur Street at Ursulines Avenue, French Market, New Orleans, Louisiana"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand at this corner, where Ursulines meets Decatur, and look toward the river.\n\nA steam pump once stood here, on what was then the levee. It was meant to push river water through pipes, out into the streets of the city.\n\nThe man behind it was Benjamin Latrobe, who had helped design the Capitol in Washington. He sent his eldest son, Henry, down here to build it. Henry died here before it was done.\n\nSo Latrobe came himself, to finish his son's work. In eighteen twenty he brought his family to live here. His health was good. He thought, at last, the hard years were over.\n\nThe engine was finished. In two weeks, water would have been flowing through the streets.\n\nOn the very day he was laying the pipe that joined the engine to the river, he fell ill.\n\nHis other son wrote it down years later, in one sentence. The fatal disease of the climate had seized him, and in a few hours he was laid beside his son.\n\nLook toward the river again.\n\nTwo weeks from water.\n",
+    "teaser": "In two weeks, water would have been flowing through the streets.",
+    "detail": "Benjamin Henry Latrobe died in New Orleans in 1820, soon after moving his family there, and was buried beside his son Henry, who had died while building the same works. The account quoted is by another son, John H. B. Latrobe, in his 1876 introduction to his father's journal; it calls the illness the fatal disease of the climate. Latrobe also appears in this library's Congo Square and Hermann-Grima House echoes, and his daughter Lydia in the steamboat echo on the riverfront.",
+    "certaintyNote": "Latrobe's death while finishing the waterworks begun by his son is told by his son John H. B. Latrobe (1876). The 1885 Historical Sketch Book places the steam pump at Decatur and Ursulines but gives a contract date of 1813 and says the pump was soon at work, which does not fit Latrobe's own family's account of an unfinished works in 1820. The script follows the family account and says whose words they are.",
+    "pronunciations": [
+      {
+        "written": "Latrobe",
+        "say": "luh-TROBE"
+      },
+      {
+        "written": "Ursulines",
+        "say": "UR-suh-leens"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "new-orleans-core",
+      "french-market",
+      "latrobe",
+      "yellow-fever",
+      "riverfront"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-orleans-two-weeks-from-water",
+        "durationS": 67
+      }
+    ]
   },
   {
     "id": "new-orleans-words-on-the-base",

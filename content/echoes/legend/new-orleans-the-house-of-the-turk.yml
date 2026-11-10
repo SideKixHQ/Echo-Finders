@@ -1,0 +1,127 @@
+# Drafted by Claude Code (2026-11-10) for the New Orleans City Pass, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk at the corner of Dauphine and Orleans streets, facing the tall house on the corner. It is a private residence: look from the street.
+# Position: Fitted Dauphine and Orleans intersection from Overture street segments; HABS places the house on the south west corner (medium confidence).
+id: new-orleans-the-house-of-the-turk
+title: "The House of the Turk"
+summary: "The legend says a Sultan's brother was murdered in this house in 1792. The house was built in 1836."
+place: "Le Pretre Mansion, 716 Dauphine Street at Orleans Street, French Quarter, New Orleans, Louisiana"
+at: { lat: 29.95962, lng: -90.06618 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 89
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The murders are a legend. The story was published by Helen Pitkin Schertz in Legends of Louisiana (1922) and set in 1792; the Historic American Buildings Survey (1958) found the lot was bought in 1836 and the house built afterwards, called the story amusing but incredible, and noted that the house took the name House of the Turk because of the story. No supernatural claim is made.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 10
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, legend, dauphine-street, houses]
+teaser: "A party, a ship that slipped away, and a house that did not exist yet."
+script: |
+  Look at the tall house on this corner, with the iron balconies and the high basement. People call it the House of the Turk. And the story they tell about it ends in murder.
+
+  The story goes like this. A brother of the Sultan of Turkey sailed into New Orleans with jewels, and with young women taken from the Sultan's harem. He was given this house to live in, and one night he gave a great party. In the morning, the doors were broken in. He was dead, and so was everyone with him. And the ship that had brought him was gone from the river. The crew, people said, had sailed off to be pirates.
+
+  The story was written down in nineteen twenty two, in a book called Legends of Louisiana, by a New Orleans writer named Helen Pitkin Schertz. She set it in seventeen ninety two.
+
+  In nineteen fifty eight, a researcher named Georgia Drennan went through the property records for the Historic American Buildings Survey. The lot was bought in eighteen thirty six, and the house was built after that. That is forty four years after the murders were supposed to have happened inside it. She called the story amusing, but incredible. And she noticed something else. It was because of that book that people started calling this the House of the Turk.
+
+  Look at the house again.
+
+  The Turk arrived in nineteen twenty two. In a book.
+detail: >-
+  The house was built for Joseph Coulon Gardette under a contract of 1 September 1836, and sold in 1839 to Jean Baptiste Lepretre, whose name it carries. The Historic American Buildings Survey record calls it, so far as was known, the first house in New Orleans built with a basement. It has long been divided into apartments; please look from the street.
+pronunciations:
+  - written: "Le Pretre"
+    say: "luh PRET-ruh"
+  - written: "Schertz"
+    say: "SHERTS"
+  - written: "Gardette"
+    say: "gar-DET"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the tall house on this corner, with the iron balconies and the high basement."
+    source: 1
+    quote: "The century-old building with its high basement and exquisite cast-irdil balconies"
+  - says: "People call it the House of the Turk."
+    source: 3
+    quote: "this house~ which was unmistakably described, becam(9 known as Le Prete Man- sion, and also as the House of the Turk."
+  - says: "And the story they tell about it ends in murder."
+    source: 1
+    quote: "found murdered"
+  - says: "A brother of the Sultan of Turkey sailed into New Orleans with jewels, and with young women taken from the Sultan's harem."
+    source: 3
+    quote: "a brother of the Sultan of Turkey, with the connivance of the Captain of an ocean going vessel, absconded 1rl.th an assortment of crown jewels and beauties from the Sultan's harem."
+  - says: "He was given this house to live in, and one night he gave a great party."
+    source: 3
+    quote: "He was assigned residence in \"the boast-place of the tpwn."
+  - says: "He was given this house to live in, and one night he gave a great party."
+    source: 3
+    quote: "Here the grateful Turk celebrated by giving an elaborate entertainment"
+  - says: "In the morning, the doors were broken in."
+    source: 2
+    quote: "The  door  finally  gave  way  with  a  crash"
+  - says: "He was dead, and so was everyone with him."
+    source: 1
+    quote: "were found murdered"
+  - says: "And the ship that had brought him was gone from the river."
+    source: 2
+    quote: "the dabahieh  no  longer  swung  by  its  hawsers  at  anchor  before  the  town"
+  - says: "The crew, people said, had sailed off to be pirates."
+    source: 1
+    quote: "were said to have"
+  - says: "The story was written down in nineteen twenty two, in a book called Legends of Louisiana, by a New Orleans writer named Helen Pitkin Schertz."
+    source: 3
+    quote: "In the book Legends of Louisiana, by Helen Pitkin Schertz,"
+  - says: "The story was written down in nineteen twenty two, in a book called Legends of Louisiana, by a New Orleans writer named Helen Pitkin Schertz."
+    source: 1
+    quote: "Helen Pitkin Schertz, in Legends of Louisiana, tells an interesting story"
+  - says: "She set it in seventeen ninety two."
+    source: 3
+    quote: "in the year \"Seventeen Ninety-Two\""
+  - says: "In nineteen fifty eight, a researcher named Georgia Drennan went through the property records for the Historic American Buildings Survey."
+    source: 3
+    quote: "Prepared by Georgia Bertha Drennan"
+  - says: "In nineteen fifty eight, a researcher named Georgia Drennan went through the property records for the Historic American Buildings Survey."
+    source: 3
+    quote: "August, 1958"
+  - says: "The lot was bought in eighteen thirty six, and the house was built after that."
+    source: 3
+    quote: "the house was built by Joseph Coulon Gardette upon his acqusition~ of the lot of ground July 25, 1836, from Celestin Jung"
+  - says: "That is forty four years after the murders were supposed to have happened inside it."
+    source: 3
+    quote: "in the year \"Seventeen Ninety-Two\""
+  - says: "That is forty four years after the murders were supposed to have happened inside it."
+    source: 3
+    quote: "of the lot of ground July 25, 1836"
+  - says: "She called the story amusing, but incredible."
+    source: 3
+    quote: "an amusing, but incredible, story"
+  - says: "It was because of that book that people started calling this the House of the Turk."
+    source: 3
+    quote: "As a result of the publication of this story, this house~ which was unmistakably described, becam(9 known as Le Prete Man- sion, and also as the House of the Turk."
+  - says: "The Turk arrived in nineteen twenty two."
+    source: 3
+    quote: "published by the New Orleans Journal, New Orleans, La~, U.S.A., 1922"
+  - says: "In a book."
+    source: 3
+    quote: "In the book Legends of Louisiana, by Helen Pitkin Schertz,"
+sources:
+  - title: "New Orleans City Guide (Federal Writers' Project of the Works Progress Administration, 1938)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/neworleanscity00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Legends of Louisiana: The Romance of the Royal Oak; The Brother of the Sultan (Helen Pitkin Schertz, New Orleans Journal, 1922)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/legendsoflouisia00scheiala
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Le Pretre Mansion, 716 Dauphine Street, HABS No. La-53 (written data by Georgia Bertha Drennan, 1958)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0024/data/la0024data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain

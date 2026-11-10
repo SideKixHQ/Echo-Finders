@@ -1,0 +1,150 @@
+# Drafted by Claude Code (2026-11-10) for the New Orleans City Pass, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk at the corner of Chartres and Iberville streets, at the memorial plaque for the Up Stairs Lounge, outside 141 Chartres Street.
+# Position: Overture place 'Upstairs Lounge Memorial' (141 Chartres St) checked against the Chartres and Iberville street lines; set at the corner sidewalk (medium confidence).
+id: new-orleans-nobody-left-by-the-back-door
+title: "Nobody Left by the Back Door"
+summary: "In 1973 an arson fire killed 32 people at the Up Stairs Lounge. At their memorial, nobody took the way out they were offered."
+place: "Site of the Up Stairs Lounge, Chartres and Iberville streets, New Orleans, Louisiana"
+at: { lat: 29.95349, lng: -90.06745 }
+triggerRadiusKm: 0.03
+category: true-crime
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, up-stairs-lounge, lgbtq, 1973]
+teaser: "One staircase in. One back door out."
+script: |
+  Find the plaque at this corner. The bar it remembers was upstairs, on the second floor of this building. You could not see it from the street. One staircase went up, and it was the only way in.
+
+  On a Sunday night, the twenty fourth of June, nineteen seventy three, someone set a fire in that stairwell. The windows had bars on them.
+
+  A bartender named Buddy Rasmussen leaped over the bar and yelled, follow me, follow me. He led people out through a back door. It turned out to be the only way out.
+
+  Thirty two people died. No one was ever charged. Some churches would not bury the dead, and some families would not claim them.
+
+  A pastor named Troy Perry called church after church, looking for somewhere to hold a service. He says they laughed in his face. At last, one Methodist pastor said yes. The church filled up, standing room only.
+
+  Across the street, the press and the television cameras were waiting. To be photographed coming out could cost someone a job, or a family. So Perry told them there was another way. Down a hallway, there was a door to the street.
+
+  Look at the plaque again.
+
+  This time, nobody left by the back door.
+detail: >-
+  The Up Stairs Lounge fire of 24 June 1973 is officially unsolved; no one was charged. This echo does not name the man most often suspected, who died in 1974, because the story belongs to the thirty two people who died and to those who mourned them. The memorial service Troy Perry describes was held at a Methodist church; the National Park Service podcast notes the first memorial in the French Quarter was held at St. Mark's Church on 1 July 1973.
+pronunciations:
+  - written: "Rasmussen"
+    say: "RAZ-muss-en"
+editorial: draft
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: true
+  # Survivors and the families of the thirty two victims are alive. The man most often
+  # named as the suspect died in 1974 and is deliberately not named in the script.
+  convictionStatus: unsolved
+  reviewedBy: "TODO: a named human, before this can leave draft (docs/14-true-crime.md)."
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo describes a fire in which thirty two people died. No injuries are described in detail."
+claims:
+  - says: "The bar it remembers was upstairs, on the second floor of this building."
+    source: 3
+    quote: "It was called the Up Stairs Lounge because it was on the second story of a building, and it was hidden from street view."
+  - says: "You could not see it from the street."
+    source: 3
+    quote: "it was hidden from street view"
+  - says: "One staircase went up, and it was the only way in."
+    source: 3
+    quote: "You had to access it via a single staircase that was the lone entrance and exit"
+  - says: "On a Sunday night, the twenty fourth of June, nineteen seventy three, someone set a fire in that stairwell."
+    source: 3
+    quote: "It was the Sunday night of June 24, 1973."
+  - says: "On a Sunday night, the twenty fourth of June, nineteen seventy three, someone set a fire in that stairwell."
+    source: 1
+    quote: "The fire started in the stairwell, trapping people on the building's second floor, where the bar was located."
+  - says: "On a Sunday night, the twenty fourth of June, nineteen seventy three, someone set a fire in that stairwell."
+    source: 1
+    quote: "The cause was arson."
+  - says: "The windows had bars on them."
+    source: 1
+    quote: "Patrons who tried to get out through the windows couldn't — the windows had bars on them."
+  - says: "A bartender named Buddy Rasmussen leaped over the bar and yelled, follow me, follow me."
+    source: 1
+    quote: "He actually leaped over the bar and yelled, 'Follow me, follow me!'"
+  - says: "A bartender named Buddy Rasmussen leaped over the bar and yelled, follow me, follow me."
+    source: 1
+    quote: "Everett got out by following Buddy Rasmussen, a bartender and manager"
+  - says: "He led people out through a back door."
+    source: 1
+    quote: "Everett got out by following Buddy Rasmussen, a bartender and manager, out of a back door, which turned out to be the only escape route."
+  - says: "It turned out to be the only way out."
+    source: 1
+    quote: "out of a back door, which turned out to be the only escape route."
+  - says: "Thirty two people died."
+    source: 1
+    quote: "one of the worst attacks on the LGBTQ community left 32 people dead."
+  - says: "Thirty two people died."
+    source: 3
+    quote: "the arson claimed 32 lives"
+  - says: "No one was ever charged."
+    source: 1
+    quote: "No one was ever charged or convicted of the crime."
+  - says: "No one was ever charged."
+    source: 3
+    quote: "The Up Stairs Lounge Fire is still officially an unsolved crime"
+  - says: "Some churches would not bury the dead, and some families would not claim them."
+    source: 1
+    quote: "Some churches didn't want to bury the victims and some families wouldn't claim them."
+  - says: "Some churches would not bury the dead, and some families would not claim them."
+    source: 4
+    quote: "many families didn't come forward to claim the bodies of the dead and churches refused to hold funerals for some of the victims."
+  - says: "A pastor named Troy Perry called church after church, looking for somewhere to hold a service."
+    source: 2
+    quote: "Perry decided he wouldn't be leaving the city until there was a service for those who had died. He called local denominations."
+  - says: "He says they laughed in his face."
+    source: 2
+    quote: "He says they laughed in his face, they hung up on his calls."
+  - says: "At last, one Methodist pastor said yes."
+    source: 2
+    quote: "Eventually, though, one Methodist pastor gave his permission to use his church."
+  - says: "The church filled up, standing room only."
+    source: 2
+    quote: "They completely filled that Methodist church — standing room only."
+  - says: "Across the street, the press and the television cameras were waiting."
+    source: 2
+    quote: "members of the press and TV cameras were set up across the street, prepared to record the mourners"
+  - says: "To be photographed coming out could cost someone a job, or a family."
+    source: 2
+    quote: "For many, to be photographed at the ceremony would mean being publicly outed — which might also mean losing a job, a family, perhaps worse."
+  - says: "So Perry told them there was another way."
+    source: 2
+    quote: "But there's a way you can get out of here,"
+  - says: "Down a hallway, there was a door to the street."
+    source: 2
+    quote: "and that's to walk down this hallway, and there's a door that'll take you to the street."
+  - says: "This time, nobody left by the back door."
+    source: 2
+    quote: "But nobody left by the backdoor,"
+sources:
+  - title: "In 1973, An Arson Killed 32 People At A Gay Bar. For Years, It Was Forgotten"
+    publisher: "NPR"
+    url: https://www.npr.org/2018/06/24/622972320/in-1973-an-arson-killed-32-people-at-a-gay-bar-for-years-it-was-forgotten
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Out Of Ashes, An Unwavering Resolve: 'That's The Legacy. We Never Ran Away' (StoryCorps, the Rev. Troy Perry)"
+    publisher: "NPR"
+    url: https://www.npr.org/2016/06/24/483134445/out-of-ashes-an-unwavering-resolve-thats-the-legacy-we-never-ran-away
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Podcast 129: 50 Years of Remembering the Up Stairs Lounge Fire"
+    publisher: "National Park Service, National Center for Preservation Technology and Training"
+    url: https://www.nps.gov/articles/000/podcast-129-50-years-of-remembering-the-up-stairs-lounge-fire.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "He Died In An Infamous Arson At A Gay Bar. Now, His Family Is Trying To Find His Remains"
+    publisher: "WBUR, Here & Now"
+    url: https://www.wbur.org/hereandnow/2018/07/24/upstairs-lounge-arson-ferris-leblanc
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

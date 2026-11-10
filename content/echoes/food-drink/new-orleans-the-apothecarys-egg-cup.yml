@@ -1,0 +1,119 @@
+# Drafted by Claude Code (2026-11-10) for the New Orleans City Pass, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk in front of 437 Royal Street, just uptown of the St. Louis Street corner.
+# Position: Overture places at 437 Royal St, checked against the fitted Royal and St. Louis intersection (medium confidence). Note: 417 Royal (new-orleans-the-champion-who-stopped) is about thirty metres away.
+id: new-orleans-the-apothecarys-egg-cup
+title: "The Apothecary's Egg Cup"
+summary: "A story says the word cocktail was born in Antoine Peychaud's drugstore on Royal Street. A historian has one objection."
+place: "Site of Peychaud's drugstore, 437 Royal Street, French Quarter, New Orleans, Louisiana"
+at: { lat: 29.95630, lng: -90.06630 }
+triggerRadiusKm: 0.03
+category: food-drink
+format: short
+durationS: 64
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  Peychaud's pharmacy, his bitters and the Sazerac's official status are documented. The story that cocktail comes from coquetier is a tradition the 1938 city guide itself reports as hearsay, and the cocktail historian Ted Haigh disputes the idea that Peychaud made the first cocktail. The script says both out loud.
+minAge: 10
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, royal-street, cocktails, sazerac]
+teaser: "Say coquetier three times, fast."
+script: |
+  Look at the old building here on Royal Street, number four thirty seven. There is a story that the word cocktail was born in it.
+
+  It was a drugstore. The apothecary was Antoine Peychaud, who had come from Santo Domingo. He made bitters from a secret recipe. At night he mixed them with brandy and served them to gentlemen.
+
+  The story goes that he served it in an egg cup. In French, an egg cup is a coquetier. And when English speakers tried to say coquetier, the story says, it came out cocktail.
+
+  It is a lovely story. Ted Haigh, a curator at the Museum of the American Cocktail, had one objection. Peychaud would have been three years old when the first one was made.
+
+  The bitters, though, are real, and still carry his name. When Louisiana's legislature made the Sazerac the official cocktail of New Orleans, it was Peychaud's bitters that made it a Sazerac.
+
+  Look at the doorway again.
+
+  The word was older than he was. The bitters were his.
+detail: >-
+  The 1938 New Orleans City Guide places Peychaud's drugstore at 437 Royal Street and attributes the coquetier story to Stanley Arthur's Old New Orleans. Accounts of when Peychaud arrived and when he opened his pharmacy differ.
+pronunciations:
+  - written: "Peychaud"
+    say: "PAY-show"
+  - written: "coquetier"
+    say: "coke-TYAY"
+  - written: "Sazerac"
+    say: "SAZZ-er-ack"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the old building here on Royal Street, number four thirty seven."
+    source: 1
+    quote: "16. Peychaud’s Drugstore, 437 Royal Street."
+  - says: "There is a story that the word cocktail was born in it."
+    source: 1
+    quote: "a native of Santo Domingo served what is said to have been the first"
+  - says: "It was a drugstore."
+    source: 1
+    quote: "16. Peychaud’s Drugstore, 437 Royal Street."
+  - says: "The apothecary was Antoine Peychaud, who had come from Santo Domingo."
+    source: 1
+    quote: "Peychaud, the apothecary, brought with him from Santo Do- mingo a secret formula"
+  - says: "The apothecary was Antoine Peychaud, who had come from Santo Domingo."
+    source: 2
+    quote: "He was a pharmacist and he ran an apothecary on Royal Street."
+  - says: "He made bitters from a secret recipe."
+    source: 2
+    quote: "he would blend brandy and his secret recipe for his bitters together"
+  - says: "He made bitters from a secret recipe."
+    source: 1
+    quote: "a secret formula for compounding his bitters with cognac."
+  - says: "At night he mixed them with brandy and served them to gentlemen."
+    source: 2
+    quote: "And at night, he would blend brandy and his secret recipe for his bitters together and he would serve this to gentlemen."
+  - says: "The story goes that he served it in an egg cup."
+    source: 1
+    quote: "The potion was mixed in an egg-shaped cup, the French name for which was coquetier."
+  - says: "In French, an egg cup is a coquetier."
+    source: 1
+    quote: "the French name for which was coquetier."
+  - says: "And when English speakers tried to say coquetier, the story says, it came out cocktail."
+    source: 1
+    quote: "It is said that the incorrect pronunciation frequently given this term by the English resulted in the name ‘cocktail’ being applied to the highly flavored drink."
+  - says: "Ted Haigh, a curator at the Museum of the American Cocktail, had one objection."
+    source: 3
+    quote: "Haigh disputes the theory."
+  - says: "Ted Haigh, a curator at the Museum of the American Cocktail, had one objection."
+    source: 3
+    quote: "curator Ted Haigh said."
+  - says: "Peychaud would have been three years old when the first one was made."
+    source: 3
+    quote: "\"Peychaud would have been 3 years old when the first one was made,\" he said."
+  - says: "The bitters, though, are real, and still carry his name."
+    source: 2
+    quote: "the bitters are Peychaud's Bitters."
+  - says: "When Louisiana's legislature made the Sazerac the official cocktail of New Orleans, it was Peychaud's bitters that made it a Sazerac."
+    source: 2
+    quote: "the Louisiana Legislature voted the Sazerac cocktail the official cocktail of the city of New Orleans."
+  - says: "When Louisiana's legislature made the Sazerac the official cocktail of New Orleans, it was Peychaud's bitters that made it a Sazerac."
+    source: 2
+    quote: "To me the most interesting thing about the Sazerac cocktail are the bitters, and the bitters are Peychaud's Bitters."
+  - says: "The word was older than he was."
+    source: 3
+    quote: "\"Peychaud would have been 3 years old when the first one was made,\" he said."
+  - says: "The bitters were his."
+    source: 2
+    quote: "the bitters are Peychaud's Bitters."
+sources:
+  - title: "New Orleans City Guide (Federal Writers' Project of the Works Progress Administration, 1938)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/neworleanscity00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "New Orleans Declares Sazerac Its Cocktail of Choice"
+    publisher: "NPR, All Things Considered"
+    url: https://www.npr.org/transcripts/91912549
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Cocktail Museum Offers A Taste Of History (Associated Press)"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/cocktail-museum-offers-a-taste-of-history/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
