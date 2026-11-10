@@ -76,7 +76,7 @@ export function KindPicker({ on, onToggle, onAll }: KindProps) {
   const chosen = picked(on);
   const all = chosen.length === 0;
   const first = chosen[0];
-  const label = all ? "Echoes" : chosen.length === 1 ? first!.label : `${first!.label} +${chosen.length - 1}`;
+  const label = all ? "All echoes" : chosen.length === 1 ? first!.label : `${first!.label} +${chosen.length - 1}`;
 
   /*
    * A tap anywhere else closes it, on the way down, so the tap that closes it does not also
@@ -114,13 +114,8 @@ export function KindPicker({ on, onToggle, onAll }: KindProps) {
         aria-controls="kind-box"
         aria-label={all ? "Echoes showing: all" : `Echoes showing: ${chosen.map((g) => g.label).join(", ")}`}
       >
-        {all ? (
-          <span className="kind-key" aria-hidden="true">
-            <i className="cat-history" />
-            <i className="cat-legend" />
-            <i className="cat-food-drink" />
-          </span>
-        ) : (
+        {/* Everything on says so in words, "All echoes", as the map board draws it. */}
+        {!all && (
           <svg className={`kind-glyph cat-${first!.face}`} viewBox="0 0 24 24" aria-hidden="true">
             {CATEGORY_ICON[first!.face]}
           </svg>

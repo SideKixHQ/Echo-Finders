@@ -1995,8 +1995,9 @@ body {
    chip plus the category chips come to 151, and the column wants to clear them. */
 /* One row now: the journey chip and the folded category filter, side by side. It was 157
    with the nine-chip row under it. Measured on a real render at 375x667, where the chip is
-   the taller of the two. */
-.screen { --mapbar-h: 64px; }
+   the taller of the two. Then the search box went on top (`MapSearch`, 2026-11-10): its
+   62, a 10 gap and the 48 row make 120, plus the 8 the old figure kept below the row. */
+.screen { --mapbar-h: 128px; }
 .rail {
   position: absolute; right: var(--gutter); z-index: 26;
   /*
@@ -2951,8 +2952,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  */
 .toast-dock {
   position: absolute; z-index: 41; left: var(--gutter); right: var(--gutter);
-  /* Under the journey chip's row: its 48px plus the 10px the rail keeps from things. */
-  top: calc(var(--top-gap) + 58px);
+  /* Under the map bar (search, then the journey chip's row) and the gap the rail keeps. */
+  top: calc(var(--top-gap) + var(--mapbar-h) + 2px);
   pointer-events: none;
 }
 .toast {
@@ -4065,11 +4066,13 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  * bottom chrome 366 -> ~152, and the map goes from 22 percent of the screen to 66.
  */
 
-/* One line, not two. The filter used to be a whole row under this. */
-.mapbar {
+/* One line, not two. The filter used to be a whole row under this. Since the map's search
+   took the first row (`MapSearch`), the journey and the filter are its second. */
+.mapbar-row {
+  position: relative; display: flex;
   flex-direction: row; align-items: flex-start; gap: 8px; flex-wrap: wrap;
 }
-.mapbar > .journey-tap { flex: 1 1 190px; min-width: 0; }
+.mapbar-row > .journey-tap { flex: 1 1 190px; min-width: 0; }
 
 /* ── the category filter, folded ────────────────────────────────────────────── */
 .catfilter { position: relative; flex: none; }
@@ -4329,7 +4332,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  * keeps the full ribbon and the folded filter (`.mapbar` above).
  */
 /* One row in every mode: the journey (chip or ribbon) and the echoes button. */
-.mapbar { flex-wrap: nowrap; align-items: center; }
+.mapbar-row { flex-wrap: nowrap; align-items: center; }
 .jchip-wrap { position: relative; flex: none; }
 .jchip {
   position: relative; overflow: hidden; display: flex; align-items: center; gap: 7px;
@@ -4364,7 +4367,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* On a flight the ribbon keeps the width it was drawn with. */
 .jchip-wrap-wide { flex: 1 1 190px; min-width: 0; }
 /* The journey side always fills the row up to the echoes button, chip or ribbon alike. */
-.mapbar > .jchip-wrap { flex: 1 1 auto; min-width: 0; }
+.mapbar-row > .jchip-wrap { flex: 1 1 auto; min-width: 0; }
 .mapbar .jchip { width: 100%; }
 .mapbar .jchip-caret { margin-left: auto; }
 
@@ -4554,15 +4557,9 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 .kind-glyph { color: var(--cat); }
 .kind-chev { width: 14px; height: 14px; stroke-width: 2; color: var(--muted); }
-.kind-key { display: flex; align-items: center; }
-.kind-key i {
-  width: 8px; height: 8px; border-radius: 50%; background: var(--cat);
-  margin-right: -3px; box-shadow: 0 0 0 1.5px var(--panel);
-}
-.kind-key i:last-child { margin-right: 0; }
 
-/* The box: straight below the map bar, its full width, every kind in view at once. The
-   map bar is the positioned parent, so the box spans gutter to gutter under both pills. */
+/* The box: straight below the chips' row, its full width, every kind in view at once. The
+   row is the positioned parent, so the box spans gutter to gutter under both pills. */
 .kind-box {
   position: absolute; top: calc(100% + 8px); left: 0; right: 0; z-index: 40;
   padding: 6px; border-radius: 16px;
@@ -4629,22 +4626,6 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   color: var(--white); font: inherit; font-size: var(--fs-body);
 }
 .jmenu-look-field:focus-within { border-color: var(--aqua); }
-/* The menu's search, first and lit. The glow breathes until the box is used, then stops:
-   it is there to be found, not to nag. Still under reduced motion. */
-.jmenu-look.featured { padding: 2px 0 8px; }
-.jmenu-look.featured .jmenu-look-field {
-  height: 52px; border-radius: 14px; border: 1.5px solid var(--aqua);
-  animation: look-glow 2.4s ease-in-out infinite;
-}
-.jmenu-look.featured .jmenu-look-field svg { width: 20px; height: 20px; stroke: var(--aqua); }
-.jmenu-look.featured .jmenu-look-field input { font-size: 17px; }
-.jmenu-look.featured .jmenu-look-field:focus-within,
-.jmenu-look.featured:has(input:not(:placeholder-shown)) .jmenu-look-field { animation: none; }
-@keyframes look-glow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 240, 220, 0); }
-  50% { box-shadow: 0 0 0 4px rgba(0, 240, 220, 0.22), 0 0 18px rgba(0, 240, 220, 0.28); }
-}
-@media (prefers-reduced-motion: reduce) { .jmenu-look.featured .jmenu-look-field { animation: none; } }
 /* Under the top bar, when the place looked up (or where you are) has no echoes yet. The
    "Back to me" pill that sat between them is gone: the locate arrow on the column does it. */
 .look-empty {
@@ -5396,3 +5377,82 @@ div.maplibregl-map { font-size: var(--fs-label); }
   .pop .pop-go, .pop .pop-aim { min-height: 46px; }
   .pop-act-ring { width: 44px; height: 44px; }
 }
+
+/*
+ * Search, at the top of the map (`MapSearch.tsx`, the map board of 2026-11-10).
+ *
+ * The box is the first run's (`.fr-trace` / `.fr-search`): a running border, a slow pulse
+ * and a blinking caret, so it is the thing the eye lands on. Opened, the map bar becomes the
+ * whole screen: the box stays where it was, the chips' row steps aside, and the results fill
+ * the rest, over the tab bar, as the search board draws it. The ✕ puts the map back.
+ */
+.mapbar { gap: 10px; }
+.msearch-field { min-height: 56px; }
+.msearch-field input { font-size: var(--fs-body); }
+.msearch-close {
+  flex: none; width: 44px; height: 44px; margin-right: -8px; border: 0; border-radius: 50%;
+  display: grid; place-items: center; cursor: pointer;
+  background: rgba(var(--rgb-hair), 0.12); color: var(--white);
+}
+.msearch-close svg {
+  width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round;
+}
+.mapbar:has(.msearch.open) {
+  z-index: 60; inset: 0; padding: var(--top-gap) var(--gutter) 0; background: var(--space);
+}
+.mapbar:has(.msearch.open) .mapbar-row { display: none; }
+.msearch.open { display: flex; flex-direction: column; gap: 10px; height: 100%; min-height: 0; }
+.msearch.open .fr-trace { flex: none; }
+/* Open, the running border and the ✕ already say where the keyboard is; the first run's
+   extra ring around the box only doubled the edge. */
+.msearch.open .fr-trace:has(input:focus-visible) { outline: none; }
+.msearch-results {
+  flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain;
+  padding: 4px 0 24px; margin: 0 calc(-1 * var(--gutter)); padding-inline: var(--gutter);
+}
+.msearch-empty { margin: 12px 2px; font-size: var(--fs-secondary); color: var(--muted); }
+.msearch-group { display: flex; flex-direction: column; gap: 4px; margin-bottom: 18px; }
+.msearch-head {
+  margin: 4px 0 4px; font-size: var(--fs-label); font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--cool);
+}
+.msearch-city, .msearch-echo {
+  display: flex; align-items: center; gap: 14px; width: 100%; min-height: 64px;
+  padding: 4px 4px; border: 0; border-radius: 14px; background: none;
+  font: inherit; color: var(--white); text-align: left;
+}
+.msearch-city { cursor: pointer; }
+@media (hover: hover) { .msearch-city:hover { background: rgba(var(--rgb-hair), 0.07); } }
+.msearch-tile {
+  width: 44px; height: 44px; flex: none; border-radius: 12px; display: grid; place-items: center;
+  background: rgba(var(--rgb-accent), 0.14);
+}
+.msearch-tile svg {
+  width: 22px; height: 22px; fill: none; stroke: var(--aqua); stroke-width: 1.8;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.msearch-orb {
+  width: 44px; height: 44px; flex: none; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, var(--orb-core), var(--orb-mid) 60%, var(--orb-deep));
+}
+.msearch-words { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.msearch-words b { font-size: var(--fs-button); font-weight: 600; line-height: 1.25; }
+.msearch-words small { font-size: var(--fs-secondary); color: var(--muted); }
+.msearch-chev {
+  width: 18px; height: 18px; flex: none; fill: none; stroke: var(--muted); stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.msearch-go {
+  flex: none; min-width: 56px; height: 44px; padding: 0 16px; border: 0; border-radius: 99px;
+  cursor: pointer; background: var(--btn); color: var(--btn-ink);
+  font: inherit; font-size: var(--fs-button); font-weight: 600;
+}
+.msearch-save {
+  flex: none; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
+  cursor: pointer; background: none; border: 1px solid var(--line-2); color: var(--white);
+}
+.msearch-save svg {
+  width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linejoin: round;
+}
+.msearch-save.on { color: var(--aqua); border-color: var(--aqua); }
+.msearch-save.on svg { fill: currentColor; }

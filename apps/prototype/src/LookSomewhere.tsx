@@ -5,30 +5,26 @@ import { loadZips, searchPlaces, type PlaceHit } from "./place-search";
 /**
  * A ZIP code or a place, typed: the map goes and looks there.
  *
- * Under "Around here" in the journey menu because it is the same kind of choice: where the
- * map is looking, with no route. And on "Where are you?" (`Nowhere.tsx`), which asked the
- * question with only a location button to answer it. The ZIP list is fetched the first
+ * On "Where are you?" (`Nowhere.tsx`), which asked the question with only a location button
+ * to answer it. (The map's own search is `MapSearch`.) The ZIP list is fetched the first
  * time this box is used, not before.
  */
 export function LookSomewhere({
   library,
   onPick,
   limit,
-  featured = false,
 }: {
   readonly library: readonly Echo[];
   readonly onPick: (hit: PlaceHit) => void;
   /** How many results to list: fewer where the box shares a screen with other things. */
   readonly limit?: number;
-  /** The menu's first row: bigger, outlined in aqua, with a slow glow until it is used. */
-  readonly featured?: boolean;
 }) {
   const [query, setQuery] = useState("");
   const [table, setTable] = useState<ReadonlyMap<string, { lat: number; lng: number }> | null>(null);
   const hits = query.trim().length >= 2 ? searchPlaces(query, table ?? new Map(), library, limit) : [];
   const waiting = /^\d{2,5}$/.test(query.trim()) && table === null;
   return (
-    <div className={featured ? "jmenu-look featured" : "jmenu-look"}>
+    <div className="jmenu-look">
       <label className="jmenu-look-field">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <circle cx="11" cy="11" r="6.5" />

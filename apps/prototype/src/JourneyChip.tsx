@@ -21,10 +21,8 @@
  */
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { distanceKm, type Echo, type LatLng, type Route } from "@echofinders/core";
+import { distanceKm, type LatLng, type Route } from "@echofinders/core";
 import { MODE_ICON } from "./travel";
-import type { PlaceHit } from "./place-search";
-import { LookSomewhere } from "./LookSomewhere";
 
 export type Travel = "walking" | "driving" | "flight";
 
@@ -50,10 +48,6 @@ export interface JourneyChipProps {
   readonly onRoute: (route: Route) => void;
   /** The full journey screen, opened on the mode the sheet was showing. */
   readonly onDetails: (mode: Travel) => void;
-  /** Everything there is, for finding a place by name. */
-  readonly library?: readonly Echo[];
-  /** Look at somewhere else: a ZIP code or a place (`place-search.ts`). */
-  readonly onLook?: (hit: PlaceHit, mode: "walking" | "driving") => void;
   /** Plan a walk from here: pick echoes, or a time, and get the way round them mapped. */
   readonly onPlan?: () => void;
   /** Where the listener is, if known: tours near it are offered first. */
@@ -175,16 +169,8 @@ export function JourneyChip(props: JourneyChipProps) {
 
       {open && (
         <div className="jmenu" role="dialog" aria-label="Your trip">
-          {/* First, and lit: finding a place is the thing most people open this menu to do
-              (James, 2026-11-10: "the zip code box has to draw the eye and pop, move it up on
-              the menu to the top so its the first thing people see"). */}
-          {props.onLook && (
-            <LookSomewhere
-              featured
-              library={props.library ?? []}
-              onPick={(hit) => done(() => props.onLook!(hit, tab === "driving" ? "driving" : "walking"))()}
-            />
-          )}
+          {/* Search was this menu's first row; it is the map's own first row now
+              (`MapSearch`), where nobody has to open anything to find it. */}
           <div className="jmenu-modes" role="group" aria-label="How are you travelling?">
             {MODES.map((m) => (
               <button
