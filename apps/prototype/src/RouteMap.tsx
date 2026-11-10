@@ -338,6 +338,38 @@ const insetFor = (barH: number, reservedBottom: number, navH: number) => ({
   side: 30,
 });
 
+/**
+ * Where the way to an echo is framed: below the turn card (or the bar, before the card is
+ * measured), above the directions sheet, clear of the control column on the right.
+ *
+ * Never more padding than the map has: MapLibre does nothing at all when the paddings meet,
+ * which on a short phone left the map where it was with a stub of the line on it. Short of
+ * room, the paddings give way in proportion and the walk is framed in what is left.
+ */
+export function walkPadding(
+  box: { readonly w: number; readonly h: number },
+  barTop: number,
+  turnBottom: number | null,
+  bottom: number,
+): { top: number; bottom: number; left: number; right: number } {
+  let top = turnBottom !== null ? turnBottom + 12 + PIN_R : barTop + 96;
+  let bot = bottom + 16;
+  const minRoom = 72;
+  const over = top + bot + minRoom - box.h;
+  if (over > 0) {
+    const k = Math.max(0, (top + bot - over) / (top + bot));
+    top = Math.round(top * k);
+    bot = Math.round(bot * k);
+  }
+  let left = 40;
+  let right = 112;
+  if (left + right + minRoom > box.w) {
+    left = 24;
+    right = 24;
+  }
+  return { top, bottom: bot, left, right };
+}
+
 /** Echoes closer than this stay one dot however far in you go: tapping it fans them out. */
 const SAME_SPOT_M = 25;
 /** How far in a tap on a numbered dot will take the map: a building or two across. */
@@ -766,6 +798,36 @@ export function RouteMap({
     observer.observe(el);
     return () => observer.disconnect();
   }, [svgEl]);
+
+  /**
+   * The bottom of the turn card while walking to an echo, in map pixels, or null.
+   *
+   * The way there is framed between this and the directions sheet. A guess of "the bar
+   * plus 96" put you under a turn card that had wrapped to two lines, and on a short phone
+   * the guessed paddings came to more than the map, so MapLibre framed nothing and the
+   * walk showed as a stub from your dot (James, 2026-11-10).
+   */
+  const walking = !!directions && directions.length > 1;
+  const [turnBottom, setTurnBottom] = useState<number | null>(null);
+  useEffect(() => {
+    const el = svg.current;
+    const turn = walking ? el?.closest(".screen")?.querySelector(".dir-turn") : null;
+    if (!el || !turn || typeof ResizeObserver === "undefined") {
+      setTurnBottom(null);
+      return;
+    }
+    const measure = () => {
+      const t = turn.getBoundingClientRect();
+      if (t.height < 1) return;
+      const next = Math.round(t.bottom - el.getBoundingClientRect().top);
+      setTurnBottom((cur) => (cur !== null && Math.abs(cur - next) < 1 ? cur : next));
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(turn);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [svgEl, walking]);
 
   /**
    * The control column's real top, in map pixels, or null before it has been measured.
@@ -1351,7 +1413,7 @@ export function RouteMap({
           [Math.max(...lngs), Math.max(...lats)],
         ],
         {
-          padding: { top: inset.top + 96, bottom: inset.bottom + 32, left: 40, right: 112 },
+          padding: walkPadding(box, inset.top, turnBottom, inset.bottom),
           maxZoom: base + 0.5,
           duration: 400,
         },
@@ -1395,7 +1457,10 @@ export function RouteMap({
     });
     // `zoom` is applied here only when following; the next effect handles it otherwise.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [gl, at?.lat, at?.lng, overview, lookAt, following, base, bandOffset, directions]);
+    // While walking, the room the way is framed in too: the sheet and the turn card are
+    // measured after the first frame, and a two line title makes the sheet taller.
+  }, [gl, at?.lat, at?.lng, overview, lookAt, following, base, bandOffset, directions,
+    walking ? `${reservedBottom}|${turnBottom}|${box.h}` : ""]);
 
   /*
    * GO TO MY LOCATION. Runs after the follow effect above, so on the tap that also starts

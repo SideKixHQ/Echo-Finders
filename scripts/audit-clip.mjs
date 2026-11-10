@@ -388,6 +388,43 @@ for (const [at, screen] of [
   await ctx.close();
 }
 
+// Walking to an echo: the turn card and the directions sheet, with a title long enough to
+// wrap, and a planned walk's "Stop 1 of 6 · to <title>". The sheet was a fixed 196px and
+// on James's phone its title was cut through by the line under it (2026-11-10). The first
+// is walked with no street map, as his was: the straight line, and the sheet's longest note.
+for (const [at, how] of [
+  [{ latitude: 34.2357, longitude: -77.929 }, 'search'],
+  [{ latitude: 34.2357, longitude: -77.9452 }, 'plan'],
+]) {
+  const { ctx, p, look } = await device(at, { onboarded: true });
+  if (how === 'search') await ctx.route('**/streets/**', (r) => r.fulfill({ status: 404, body: '' }));
+  await p.goto(`${BASE}/?at=${at.latitude},${at.longitude}`, { waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(3000);
+  for (let i = 0; i < 3; i++) await p.locator('.toast-close').first().click({ timeout: 500 }).catch(() => {});
+  if (how === 'search') {
+    const box = p.getByLabel('Search a city, place or ZIP code');
+    await box.click().catch(() => {});
+    await box.fill('An Ordinary Intersection').catch(() => {});
+    await p.waitForTimeout(900);
+    await tap(p.locator('.msearch-go'));
+    await p.waitForTimeout(1500);
+    await p.locator('.pop-tip-ok').click({ timeout: 800 }).catch(() => {});
+    await tap(p.locator('.pop-aim:not(.pop-keep)'));
+  } else {
+    await tap(p.getByLabel(/Change your journey/));
+    await p.waitForTimeout(500);
+    await tap(p.getByText('Plan a walk'));
+    await p.waitForTimeout(1200);
+    await tap(p.locator('.pw-go'));
+  }
+  await p.waitForTimeout(3000);
+  for (let i = 0; i < 3; i++) await p.locator('.toast-close').first().click({ timeout: 500 }).catch(() => {});
+  const screen = how === 'search' ? 'directions, a long title' : 'directions, a planned walk';
+  if (!(await p.locator('.dir-sheet').count())) unreached.push(screen);
+  await look(screen);
+  await ctx.close();
+}
+
 const rows = [...failures.values()];
 console.log(`\n=== text and icons cut off at 375x667 (${rows.length}) ===`);
 for (const f of rows) console.log(`  ${f.kind}  ${f.what} "${f.text}" by ${f.by}px (${f.screen})`);

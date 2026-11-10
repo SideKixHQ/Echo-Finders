@@ -1631,6 +1631,8 @@ export function App() {
    * stands down until you arrive or end them (James, 2026-11-10, the directions board).
    */
   const directing = beacon !== null && selfDirected;
+  /** The directions sheet's measured height (`DirectionsBar`), for the map to keep clear of. */
+  const [dirSheetH, setDirSheetH] = useState(DIRSHEET_H);
   const showBar = !showingRose && !directing && !(nowhere && !overview) && stepList.length > 0;
 
   /** The map is on you and moving with you: what lights the locate button. */
@@ -2210,7 +2212,7 @@ export function App() {
                 focusId={focusId}
                 /* The stepper covers the bottom of the map, so the map has to know: it
                    keeps pins, edge markers and the Esri credit above it. */
-                reservedBottom={(showBar ? ECHOBAR_H : directing ? DIRSHEET_H : 0) + (farOut && !directing ? AREACARD_H + (showBar ? AREACARD_OVER_BAR : 0) : 0)}
+                reservedBottom={(showBar ? ECHOBAR_H : directing ? dirSheetH : 0) + (farOut && !directing ? AREACARD_H + (showBar ? AREACARD_OVER_BAR : 0) : 0)}
                 onInView={setInView}
                 overview={overview}
                 progress={along}
@@ -2282,6 +2284,7 @@ export function App() {
                   {...(plan?.active ? { step: { at: plan.at + 1, of: plan.stops.length } } : {})}
                   // A guided walk's first leg is getting to it, and the sheet says so.
                   toStart={plan?.guided !== undefined && plan.at === 0}
+                  onHeight={setDirSheetH}
                   onEnd={() => {
                     setBeacon(null);
                     setPlan(null);

@@ -13,6 +13,7 @@
  * draws them and App decides which one has the screen.
  */
 
+import { tooFarToWalk } from "./going";
 import type { Echo, TravelMode } from "@echofinders/core";
 
 /** How close counts as close, for toast A. */
@@ -87,7 +88,8 @@ export interface NextEcho {
  *
  * On a planned walk it is the walk's own next stop (already the route target), however far.
  * Otherwise the nearest echo still waiting, not the best ranked: this is about where to
- * walk. Never the one that just synced. Null when there is nothing left.
+ * walk, so only one within a walk (`going.ts`): "Next · 127 min walk" is not a next. Never
+ * the one that just synced. Null when there is nothing left.
  */
 export function nextAfterSync(
   syncedId: string,
@@ -100,7 +102,7 @@ export function nextAfterSync(
   }
   let best: NearCandidate | null = null;
   for (const a of around) {
-    if (!a.sealed || a.echo.id === syncedId) continue;
+    if (!a.sealed || a.echo.id === syncedId || tooFarToWalk(a.distanceKm)) continue;
     if (!best || a.distanceKm < best.distanceKm) best = a;
   }
   return best ? { echo: best.echo, label: `Next · ${walkMinutes(best.distanceKm)} min walk` } : null;

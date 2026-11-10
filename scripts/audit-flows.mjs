@@ -41,10 +41,10 @@ const check = (name, ok, detail = '') => {
   if (!ok) failures.push(name);
 };
 
-async function freshApp() {
+async function freshApp(geolocation = START) {
   const ctx = await browser.newContext({
     viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
-    ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: START,
+    ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation,
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
   // The lock screen's buttons, recorded as the app registers them, so they can be pressed.
@@ -571,6 +571,32 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   check('Far card: nothing walks you there', !(await p.locator('.dir-turn, .dir-sheet').count()));
   const facts = (await p.locator('.echobar-facts').first().innerText().catch(() => '')).trim();
   check('Echo bar: the length says it is a listen, not a clock', /min listen$/.test(facts) && !/\d:\d\d/.test(facts), facts);
+  await ctx.close();
+}
+
+// ── The echo card, past an hour on foot ─────────────────────────────────────────
+// At Wrightsville Beach the card offered "Walk there · 2 hr 7 min" to an echo 9.5 km off,
+// and the walk it started said so (James, 2026-11-10). Past about an hour on foot
+// (`going.ts`, 5 km) it is the far card: how far, and Save, and no directions.
+{
+  const { ctx, p } = await freshApp({ latitude: 34.2722, longitude: -77.811 });
+  const box = p.getByLabel('Search a city, place or ZIP code');
+  await box.click();
+  await box.fill('The Sand Is Already Occupied');
+  await p.waitForTimeout(600);
+  await p.locator('#msearch-results .msearch-go').first().click().catch(() => {});
+  await p.waitForTimeout(1500);
+  const card = p.locator('.pop');
+  check('9.5 km card: Go opens its card', await visible(card));
+  await card.locator('.pop-tip-ok').click({ timeout: 1000 }).catch(() => {});
+  await p.waitForTimeout(300);
+  const far = (await card.locator('.pop-far').innerText().catch(() => '')).trim();
+  check('9.5 km card: says how far, plainly', /^9\.\d km away$/.test(far), far);
+  check('9.5 km card: no walking directions offered',
+    (await card.getByRole('button', { name: /Walk there|Ride there|Take me there|Following/ }).count()) === 0
+    && (await card.locator('.pop-aim:not(.pop-keep)').count()) === 0);
+  check('9.5 km card: Save is the primary', await visible(card.locator('.pop-primary').getByRole('button', { name: 'Save', exact: true })));
+  check('9.5 km card: nothing walks you there', !(await p.locator('.dir-turn, .dir-sheet').count()));
   await ctx.close();
 }
 

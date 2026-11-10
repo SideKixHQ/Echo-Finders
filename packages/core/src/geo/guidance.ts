@@ -66,18 +66,24 @@ export function straightGuidance(from: LatLng, to: LatLng): WalkGuidance {
 }
 
 /**
- * When you will get there, on the phone's clock: "7:12". Hours and minutes only, the way a
- * maps app says it; the time zone is the phone's unless one is given (for tests).
+ * When you will get there, on the phone's clock, the way the phone says time: "7:12 pm" on
+ * a twelve hour phone, "19:12" on a twenty four hour one. "arrive 5:43" on its own read as
+ * either (James, 2026-11-10). The time zone and locale are the phone's unless given (tests).
  */
-export function arrivalClock(nowMs: number, seconds: number, timeZone?: string): string {
+export function arrivalClock(nowMs: number, seconds: number, timeZone?: string, locale?: string): string {
   const at = new Date(nowMs + Math.max(0, seconds) * 1000);
-  const parts = new Intl.DateTimeFormat("en-US", {
-    hour: "numeric",
+  const zone = timeZone ? { timeZone } : {};
+  // A twenty four hour clock is said "09:05", a twelve hour one "9:05 am".
+  const cycle = new Intl.DateTimeFormat(locale, { hour: "numeric", ...zone }).resolvedOptions().hourCycle;
+  const twentyFour = cycle === "h23" || cycle === "h24";
+  const parts = new Intl.DateTimeFormat(locale, {
+    hour: twentyFour ? "2-digit" : "numeric",
     minute: "2-digit",
-    hour12: true,
-    ...(timeZone ? { timeZone } : {}),
+    ...zone,
   }).formatToParts(at);
-  const hour = parts.find((p) => p.type === "hour")?.value ?? "";
-  const minute = parts.find((p) => p.type === "minute")?.value ?? "";
-  return `${hour}:${minute}`;
+  // "7:12 PM" as "7:12 pm", with a space that will not break between the two.
+  return parts
+    .map((p) => (p.type === "dayPeriod" ? p.value.toLowerCase().replace(/\./g, "") : p.type === "literal" ? p.value.replace(/\s/g, "\u00a0") : p.value))
+    .join("")
+    .trim();
 }

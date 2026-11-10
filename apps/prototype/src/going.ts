@@ -11,8 +11,14 @@
  * what it is: "1 min listen".
  */
 
-/** Past this, on foot or by bike, the app's own directions stop meaning anything. */
-export const WALKABLE_KM = 20;
+/**
+ * Past this, the app does not walk you there: about an hour on foot.
+ *
+ * It was twenty, and at Wrightsville Beach the card offered "Walk there · 2 hr 7 min" to an
+ * echo 9.5 km off, and the directions it started said so (James, 2026-11-10). Past an
+ * hour the card says how far and offers Save instead, the same as for a city away.
+ */
+export const WALKABLE_KM = 5;
 
 /** Too far to be taken there by the app's in-app directions. Unknown distance is not. */
 export function tooFarToWalk(distanceKm: number | null): boolean {
@@ -24,7 +30,8 @@ export function listenLength(seconds: number): string {
   return `${Math.max(1, Math.round(seconds / 60))} min listen`;
 }
 
-/** "25 km away", "1,083 km away": plainly, for an echo too far to walk to. */
+/** "9.5 km away", "25 km away", "1,083 km away": plainly, for an echo too far to walk to. */
 export function farAway(distanceKm: number): string {
+  if (distanceKm < 9.95) return `${distanceKm.toFixed(1)} km away`;
   return `${Math.round(distanceKm).toLocaleString("en-US")} km away`;
 }

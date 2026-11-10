@@ -12,6 +12,7 @@
  * it can be tested without a browser.
  */
 
+import { WALKABLE_KM } from "./going";
 import {
   distanceKm,
   presetFor,
@@ -77,10 +78,10 @@ export function guidedStops(
 /**
  * How far from its first stop a walk still offers to take you there, km.
  *
- * The directions sheet stops giving walking times past twenty kilometres, and a walk in
- * another city is something you look at, not "Walk to the start · 14000 min".
+ * The same hour on foot as everywhere else that offers a walk (`going.ts`): a walk in
+ * another town is something you look at, not "Walk to the start · 2 hr 7 min".
  */
-export const GUIDE_FROM_KM = 20;
+export const GUIDE_FROM_KM = WALKABLE_KM;
 
 /** Whether to point somebody standing at `from` towards a walk's first stop. */
 export function guideFrom(from: LatLng, firstStop: LatLng): boolean {

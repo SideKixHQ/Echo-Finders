@@ -10,6 +10,7 @@ import {
   stopWaypoints,
   walkedKm,
 } from "../../apps/prototype/src/guided-walk";
+import { WALKABLE_KM } from "../../apps/prototype/src/going";
 
 /* A walk due east along a street in Wilmington: the river, two stops, then the end. */
 const RIVER = { lat: 34.2355, lng: -77.95 };
@@ -82,7 +83,12 @@ describe("the way to the start", () => {
   });
   it("is not offered from another city", () => {
     expect(guideFrom({ lat: 40.7033, lng: -74.017 }, RIVER)).toBe(false);
-    expect(GUIDE_FROM_KM).toBeLessThan(50);
+    expect(GUIDE_FROM_KM).toBe(WALKABLE_KM);
+  });
+  it("is not offered past an hour on foot", () => {
+    // 9.5 km north of the first stop: shown, not walked to.
+    expect(guideFrom({ lat: RIVER.lat + 9.5 / 111.2, lng: RIVER.lng }, RIVER)).toBe(false);
+    expect(guideFrom({ lat: RIVER.lat + 4 / 111.2, lng: RIVER.lng }, RIVER)).toBe(true);
   });
   it("says what to do first, with no dashes", () => {
     expect(startLine("6 min")).toBe("Walk to the start · 6 min");

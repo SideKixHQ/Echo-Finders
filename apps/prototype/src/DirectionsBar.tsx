@@ -20,6 +20,7 @@
  * let go and the sync card takes over (`App`).
  */
 
+import { useLayoutEffect, useRef } from "react";
 import type { Echo, WalkGuidance, LatLng } from "@echofinders/core";
 import { arrivalClock, routeGuidance, straightGuidance } from "@echofinders/core";
 import { walkDistance, walkTime, type Directions } from "./directions";
@@ -36,11 +37,18 @@ interface Props {
   readonly step?: { readonly at: number; readonly of: number };
   /** The first leg of a guided walk: "Walk to the start · 6 min". */
   readonly toStart?: boolean;
+  /** The sheet's real height, each time it changes, for the map to keep clear of it. */
+  readonly onHeight?: (px: number) => void;
 }
 
 /**
- * How tall the sheet is, for the map to keep you and the line clear of it. Matches
- * `.dir-sheet` in theme.css, which also hands it to the control column as `--step-h`.
+ * How tall the sheet is before it has been measured: the first paint's guess.
+ *
+ * It used to BE the sheet's height, fixed, and the sheet's content outgrew it: "Stop 1 of
+ * 8 · to <title>" on its own line, a two line title, and a note on two lines made it
+ * taller than 196px, so on James's phone the title was cut through by the line under it
+ * (2026-11-10). The sheet now fits its content and says how tall it came out (`onHeight`,
+ * and `--step-h` on the screen for the control column), so nothing has to agree with it.
  */
 export const DIRSHEET_H = 196;
 
@@ -82,9 +90,37 @@ function Arrow({ guidance }: { guidance: WalkGuidance | null }) {
   );
 }
 
-export function DirectionsBar({ echo, directions, from, onEnd, step, toStart = false }: Props) {
+export function DirectionsBar({ echo, directions, from, onEnd, step, toStart = false, onHeight }: Props) {
   const g = guidanceFor(directions, from, echo.point.at);
   const walkable = g !== null && g.metres <= WALKABLE_M;
+  /*
+    Measured, not declared: the map keeps its pins, its credit and the way there above
+    this, and the control column reads `--step-h` to stay above it too.
+  */
+  const sheet = useRef<HTMLElement>(null);
+  const heightTo = useRef(onHeight);
+  heightTo.current = onHeight;
+  useLayoutEffect(() => {
+    const el = sheet.current;
+    const screen = el?.closest<HTMLElement>(".screen");
+    if (!el) return;
+    let last = -1;
+    const measure = () => {
+      const h = Math.ceil(el.getBoundingClientRect().height);
+      if (h < 1 || h === last) return;
+      last = h;
+      screen?.style.setProperty("--step-h", `${h}px`);
+      heightTo.current?.(h);
+    };
+    measure();
+    if (typeof ResizeObserver === "undefined") return () => screen?.style.removeProperty("--step-h");
+    const observer = new ResizeObserver(measure);
+    observer.observe(el);
+    return () => {
+      observer.disconnect();
+      screen?.style.removeProperty("--step-h");
+    };
+  }, []);
   return (
     <>
       <div className="dir-turn" role="status" aria-live="polite">
@@ -95,26 +131,26 @@ export function DirectionsBar({ echo, directions, from, onEnd, step, toStart = f
         </div>
       </div>
 
-      <section className="dir-sheet" aria-label={`Directions to ${echo.title}`}>
-        <p className={toStart ? "dir-sheet-big dir-sheet-start" : "dir-sheet-big"}>
-          {g ? (walkable ? (toStart ? startLine(walkTime(g.seconds)) : walkTime(g.seconds)) : walkDistance(g.metres)) : "\u00a0"}
-        </p>
-        <p className="dir-sheet-meta">
-          <span className="dir-sheet-how">
+      <section className="dir-sheet" ref={sheet} aria-label={`Directions to ${echo.title}`}>
+        {/* How long and when, on one row where it fits: the sheet is kept short. */}
+        <div className="dir-sheet-head">
+          <p className={toStart ? "dir-sheet-big dir-sheet-start" : "dir-sheet-big"}>
+            {g ? (walkable ? (toStart ? startLine(walkTime(g.seconds)) : walkTime(g.seconds)) : walkDistance(g.metres)) : "\u00a0"}
+          </p>
+          <p className="dir-sheet-how">
             {g
               ? walkable
                 ? `${walkDistance(g.metres)} · arrive ${arrivalClock(Date.now(), g.seconds)}`
                 : "Too far to walk"
               : ""}
-          </span>
-          <span className="dir-sheet-to">
-            {step ? `Stop ${step.at} of ${step.of} · ` : ""}to {echo.title}
-          </span>
+          </p>
+        </div>
+        <p className="dir-sheet-to">
+          {step ? `Stop ${step.at} of ${step.of} · ` : ""}to {echo.title}
         </p>
         <p className="dir-sheet-note">
-          {g && !g.streets
-            ? "Head this way, as the crow flies. When you arrive it unlocks. Tap Play."
-            : "When you arrive it unlocks. Tap Play."}
+          {/* With no street file the turn card already says which way ("Head south"). */}
+          {g && !g.streets ? "As the crow flies. When you arrive it unlocks. Tap Play." : "When you arrive it unlocks. Tap Play."}
         </p>
         <button className="dir-end" onClick={onEnd}>
           {step ? "End the walk" : "End directions"}

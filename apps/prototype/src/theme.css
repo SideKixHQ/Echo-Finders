@@ -4742,41 +4742,58 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 
 /*
  * The sheet, at the bottom over the tab bar's edge: how long, how far, when you get
- * there, where to, what happens then, and the one way to stop. Its height is DIRSHEET_H,
- * which the control column reads as --step-h so it stays above it.
+ * there, where to, what happens then, and the one way to stop. It is as tall as what is
+ * in it: a fixed 196px cut a two line "Stop 1 of 8 · to <title>" through (James,
+ * 2026-11-10). `DirectionsBar` measures it and sets --step-h on the screen, so the control
+ * column stays above it; this is only the guess before the first measure.
  */
 .screen:has(.dir-sheet) { --step-h: 196px; }
 /* And the column stays below the turn banner: on a 667px phone its top two buttons went
    under it. It wraps into a second column instead, as it does for the stepper. */
 .screen:has(.dir-turn) .rail {
-  max-height: max(114px, calc(100% - var(--mapbar-h) - var(--nav-h) - var(--step-h, 0px) - 24px - 108px));
+  /* Down to one button high: on a 553px phone the two lie side by side rather than
+     standing up into the turn card and the chips. */
+  max-height: max(44px, calc(100% - var(--mapbar-h) - var(--nav-h) - var(--step-h, 0px) - 24px - 108px));
 }
 .dir-sheet {
   position: absolute; left: 0; right: 0; z-index: 25;
-  bottom: var(--nav-h); height: 196px; box-sizing: border-box; margin: 0;
-  padding: 16px var(--gutter) 14px;
+  bottom: var(--nav-h); box-sizing: border-box; margin: 0;
+  padding: 14px var(--gutter) 12px;
   display: flex; flex-direction: column; gap: 6px;
   background: rgb(var(--rgb-panel)); border-top: 1px solid var(--line);
   border-radius: 22px 22px 0 0; box-shadow: 0 -10px 28px rgba(var(--rgb-shadow), calc(0.35 * var(--shadow-k)));
 }
 .dir-sheet p { margin: 0; }
+.dir-sheet > * { flex: none; }
+.dir-sheet-head { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 12px; row-gap: 2px; }
 .dir-sheet-big { font-size: 28px; font-weight: 700; line-height: 1.1; color: var(--white); }
 /* A guided walk's first leg, "Walk to the start · 6 min": one line on the narrowest phone. */
-.dir-sheet-start { font-size: 22px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.dir-sheet-meta {
-  display: flex; flex-direction: column; gap: 2px;
-  font-size: var(--fs-secondary); line-height: 1.3; color: var(--muted);
-}
-.dir-sheet-how { white-space: nowrap; }
+.dir-sheet-start { font-size: 22px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.dir-sheet-how { white-space: nowrap; font-size: var(--fs-secondary); line-height: 1.3; color: var(--muted); }
 /* Which stop and which echo, on its own line and in full: never cut with an ellipsis. */
-.dir-sheet-to { min-width: 0; }
-.dir-sheet-note { font-size: var(--fs-secondary); line-height: 1.35; color: var(--cool); }
+.dir-sheet-to {
+  min-width: 0; font-size: var(--fs-secondary); line-height: 1.3; color: var(--muted); text-wrap: pretty;
+}
+.dir-sheet-note { font-size: var(--fs-secondary); line-height: 1.35; color: var(--cool); text-wrap: pretty; }
 .dir-end {
-  margin-top: auto; min-height: 48px; width: 100%; border-radius: 14px; cursor: pointer;
+  margin-top: 4px; flex: none; min-height: 48px; width: 100%; border-radius: 14px; cursor: pointer;
   background: none; border: 1.5px solid var(--magenta-ink); color: var(--magenta-ink);
   font: inherit; font-size: 16px; font-weight: 600;
 }
 .dir-end:hover { background: rgba(255, 0, 122, 0.08); }
+/*
+ * A short screen (an SE with Safari's bars, 553px): the chips, the turn card, the sheet and
+ * the tab bar came to more than the phone, so there was no map between them. Tighter, and
+ * the note goes: the gold line on the card has already said it unlocks when you get there.
+ */
+@media (max-height: 620px) {
+  .dir-sheet { padding: 10px var(--gutter) 10px; gap: 4px; }
+  .dir-sheet-note { display: none; }
+  .dir-end { margin-top: 2px; min-height: 44px; }
+  .dir-turn { min-height: 0; padding: 8px 14px; gap: 12px; }
+  .dir-turn-in { font-size: 20px; }
+  .dir-turn-arrow { width: 26px; height: 26px; }
+}
 
 .dir-dest circle { fill: none; stroke: var(--aqua); stroke-width: 2; }
 .dir-dest-pulse { transform-origin: center; animation: destPulse 2.2s ease-out infinite; }
