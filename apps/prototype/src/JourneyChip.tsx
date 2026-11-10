@@ -168,9 +168,18 @@ export function JourneyChip(props: JourneyChipProps) {
       </button>
 
       {open && (
-        <div className="jmenu" role="dialog" aria-label="Your trip">
-          {/* Search was this menu's first row; it is the map's own first row now
-              (`MapSearch`), where nobody has to open anything to find it. */}
+        <div className="jmenu" role="dialog" aria-labelledby="jmenu-title">
+          {/* The trip board of 2026-11-10: a sheet with its name and a ✕, Walk / Drive / Fly,
+              then the choices as cards and the tours as a list. Search was this menu's first
+              row; it is the map's own first row now (`MapSearch`). */}
+          <div className="jmenu-top">
+            <h2 id="jmenu-title">Your trip</h2>
+            <button className="jmenu-close" onClick={() => close(true)} aria-label="Close">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 6l12 12M18 6L6 18" />
+              </svg>
+            </button>
+          </div>
           <div className="jmenu-modes" role="group" aria-label="How are you travelling?">
             {MODES.map((m) => (
               <button
@@ -180,9 +189,6 @@ export function JourneyChip(props: JourneyChipProps) {
                 aria-pressed={tab === m.id}
                 onClick={() => setTab(m.id)}
               >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  {MODE_ICON[m.id]}
-                </svg>
                 {m.label}
               </button>
             ))}
@@ -191,23 +197,24 @@ export function JourneyChip(props: JourneyChipProps) {
           {/* Roaming exists on the ground only: a flight is somebody else's route. */}
           {tab !== "flight" && (
             <button
-              className={roaming && travel === tab ? "jmenu-item on" : "jmenu-item"}
+              className={roaming && travel === tab ? "jmenu-card on" : "jmenu-card"}
               aria-current={roaming && travel === tab ? "true" : undefined}
               onClick={done(() => props.onRoam(tab as "walking" | "driving"))}
             >
               <span>
-                Around here
-                <small>No route. Finds what is near you as you go.</small>
+                <b>Around here</b>
+                <small>No route. Echoes near you as you go.</small>
               </span>
               {roaming && travel === tab && <Tick />}
             </button>
           )}
           {tab === "walking" && props.onPlan && (
-            <button className="jmenu-item" onClick={done(props.onPlan)}>
+            <button className="jmenu-card" onClick={done(props.onPlan)}>
               <span>
-                Plan a walk
-                <small>Pick echoes, or say how long you have. We map the way round them.</small>
+                <b>Plan a walk</b>
+                <small>Say how long you have. We map the walk.</small>
               </span>
+              <Chev />
             </button>
           )}
           {tab !== "flight" && forTab.length > 0 && (
@@ -219,38 +226,43 @@ export function JourneyChip(props: JourneyChipProps) {
               onPick={(r) => done(() => props.onRoute(r))()}
             />
           )}
-          {tab === "flight" && forTab.map((r) => {
-            const on = !roaming && r.id === route.id;
-            return (
-              <button
-                key={r.id}
-                className={on ? "jmenu-item on" : "jmenu-item"}
-                aria-current={on ? "true" : undefined}
-                onClick={done(() => props.onRoute(r))}
-              >
-                <span>
-                  {routeName(r)}
-                  <small>
-                    {counts[r.id] ?? 0} {(counts[r.id] ?? 0) === 1 ? "echo" : "echoes"}
-                    {r.mode === "flight" && r.origin.code && r.destination.code
-                      ? ` · ${r.origin.code} to ${r.destination.code}`
-                      : ""}
-                  </small>
-                </span>
-                {on && <Tick />}
-              </button>
-            );
-          })}
+          {tab === "flight" && forTab.length > 0 && (
+            <div className="jmenu-routes">
+              <p className="jmenu-head mono">Flights</p>
+              {forTab.map((r) => {
+                const on = !roaming && r.id === route.id;
+                return (
+                  <button
+                    key={r.id}
+                    className={on ? "jmenu-item on" : "jmenu-item"}
+                    aria-current={on ? "true" : undefined}
+                    onClick={done(() => props.onRoute(r))}
+                  >
+                    <span>
+                      <b>{routeName(r)}</b>
+                      <small>
+                        {counts[r.id] ?? 0} {(counts[r.id] ?? 0) === 1 ? "echo" : "echoes"}
+                        {r.mode === "flight" && r.origin.code && r.destination.code
+                          ? ` · ${r.origin.code} to ${r.destination.code}`
+                          : ""}
+                      </small>
+                    </span>
+                    {on ? <Tick /> : <Chev />}
+                  </button>
+                );
+              })}
+            </div>
+          )}
           {tab === "flight" && forTab.length === 0 && (
             <p className="jmenu-empty">No flights with echoes yet.</p>
           )}
 
-          <button className="jmenu-item jmenu-more" onClick={done(() => props.onDetails(tab))}>
+          <button className="jmenu-link" onClick={done(() => props.onDetails(tab))}>
             {tab === "flight" ? (
-              "Find a flight by airport…"
+              "Find a flight by airport"
             ) : (
               <span>
-                Journey details…
+                Journey details
                 {props.kept && <small>On this device, plays with no signal</small>}
               </span>
             )}
@@ -266,6 +278,20 @@ const Tick = () => (
     <path d="M5 12.5 L10 17.5 L19 7" />
   </svg>
 );
+
+/** The ›: this goes somewhere. */
+const Chev = () => (
+  <svg className="jmenu-chev" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M9 6l6 6-6 6" />
+  </svg>
+);
+
+/**
+ * The stops a tour makes: the places it stands still (`dwellS`), and where it ends. Each is
+ * an echo told there; every echo within reach of the line would be the fifty a downtown
+ * walk passes, not what forty minutes plays.
+ */
+const stopsOf = (r: Route) => r.waypoints.filter((w, i) => (w.dwellS ?? 0) > 0 || i === r.waypoints.length - 1).length;
 
 /**
  * The guided walks or road trips, as a person would want them listed.
@@ -309,22 +335,22 @@ function GuidedRoutes({
         onClick={() => onPick(r)}
       >
         <span>
-          {r.name ?? r.destination.name}
+          <b>{r.name ?? r.destination.name}</b>
           <small>
             {withArea && r.area ? `${r.area} · ` : ""}
-            {lengthAndTime(r)}
+            {lengthAndTime(r)} · {stopsOf(r)} {stopsOf(r) === 1 ? "echo" : "echoes"}
           </small>
         </span>
-        {on && <Tick />}
+        {on ? <Tick /> : <Chev />}
       </button>
     );
   };
   return (
     <div className="jmenu-routes">
       <p className="jmenu-head mono">{near.length > 0 ? `${heading} near you` : heading}</p>
-      {near.map((r) => item(r, true))}
+      {near.map((r) => item(r, false))}
       {near.length > 0 && far.length > 0 && (
-        <button className="jmenu-item jmenu-more" aria-expanded={showFar} onClick={() => setShowFar((v) => !v)}>
+        <button className="jmenu-link jmenu-far" aria-expanded={showFar} onClick={() => setShowFar((v) => !v)}>
           {showFar ? "Hide tours in other cities" : `Tours in other cities (${far.length})`}
         </button>
       )}

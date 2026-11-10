@@ -506,20 +506,66 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
 }
 
 // ── The trip sheet ──────────────────────────────────────────────────────────────
+// The trip board (2026-11-10): "Your trip" with a ✕, Walk / Drive / Fly, Around here
+// (picked, ticked) and Plan a walk as cards, the guided walks near you by full name with
+// how far, how long and how many echoes, and the other cities behind a link. It scrolls
+// inside itself and never sits under the tab bar.
 {
   const { ctx, p } = await freshApp();
   const chip = p.getByLabel(/Change your journey/);
   await chip.click();
   await p.waitForTimeout(400);
-  check('Trip sheet: opens from the journey chip', await visible(p.getByRole('dialog')));
+  const sheet = p.locator('.jmenu');
+  check('Trip sheet: opens from the journey chip', await visible(p.getByRole('dialog', { name: 'Your trip' })));
+  check('Trip sheet: titled Your trip', await visible(sheet.getByRole('heading', { name: 'Your trip' })));
+  const modes = sheet.getByRole('group', { name: 'How are you travelling?' });
+  check('Trip sheet: Walk / Drive / Fly', (await modes.getByRole('button').allInnerTexts()).map((t) => t.trim()).join(' ') === 'Walk Drive Fly');
+  check('Trip sheet: on foot, Walk is picked', (await modes.getByRole('button', { name: 'Walk' }).getAttribute('aria-pressed')) === 'true');
+  const around = sheet.locator('.jmenu-card', { hasText: 'Around here' });
+  check('Trip sheet: Around here, picked and ticked', await visible(around)
+    && (await around.getAttribute('aria-current')) === 'true' && (await around.locator('.jmenu-tick').count()) === 1);
+  check('Trip sheet: Around here says what it does', /No route\. Echoes near you as you go\./.test(await around.innerText()));
+  check('Trip sheet: Plan a walk, with a way in', await visible(sheet.locator('.jmenu-card', { hasText: 'Plan a walk' }).locator('.jmenu-chev')));
+  check('Trip sheet: guided walks near you', await visible(sheet.getByText('Guided walks near you')));
+  const walks = await sheet.locator('.jmenu-routes .jmenu-item').allInnerTexts();
+  check('Trip sheet: each walk by its full name, how far, how long, how many echoes',
+    walks.length > 0 && walks.every((t) => /:/.test(t) && /\d+(\.\d)? km · about \d+ (min|hr) · \d+ echoe?s?/.test(t)), walks.join(' / '));
+  check('Trip sheet: tours in other cities, as a link with a count',
+    /^Tours in other cities \(\d+\)$/.test((await sheet.locator('.jmenu-far').innerText().catch(() => '')).trim()));
+  const small = await sheet.locator('button').evaluateAll((els) => els
+    .filter((e) => { const r = e.getBoundingClientRect(); return r.height > 0 && (r.width < 44 || r.height < 44); })
+    .map((e) => e.textContent.trim() || e.getAttribute('aria-label')));
+  check('Trip sheet: every control at least 44px', small.length === 0, small.join(', '));
+  const tiny = await sheet.evaluate((s) => [...s.querySelectorAll('*')]
+    .filter((e) => e.childNodes.length && [...e.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim()))
+    .filter((e) => parseFloat(getComputedStyle(e).fontSize) < 14).map((e) => e.textContent.trim()));
+  check('Trip sheet: no text under 14px', tiny.length === 0, tiny.join(', '));
+  // Every tour open, so there is more than fits: it scrolls inside itself, above the tabs.
+  await sheet.locator('.jmenu-far').click().catch(() => {});
+  await p.waitForTimeout(300);
+  const fit = await p.evaluate(() => {
+    const m = document.querySelector('.jmenu');
+    const nav = document.querySelector('.nav').getBoundingClientRect();
+    const r = m.getBoundingClientRect();
+    return { bottom: r.bottom, navTop: nav.top, scrolls: getComputedStyle(m).overflowY === 'auto' && m.scrollHeight > m.clientHeight };
+  });
+  check('Trip sheet: never under the tab bar', fit.bottom <= fit.navTop, JSON.stringify(fit));
+  check('Trip sheet: scrolls inside itself', fit.scrolls, JSON.stringify(fit));
+  await sheet.getByRole('button', { name: 'Close' }).click();
+  await p.waitForTimeout(400);
+  check('Trip sheet: the ✕ closes it', !(await visible(sheet)));
+  await chip.click();
+  await p.waitForTimeout(400);
   await p.keyboard.press('Escape');
   await p.waitForTimeout(400);
   check('Trip sheet: Escape closes it', !(await visible(p.locator('.jmenu'))));
-  await chip.click();
-  await p.waitForTimeout(300);
+  check('Trip sheet: Escape hands focus back to the chip', await chip.evaluate((e) => e === document.activeElement));
   await chip.click();
   await p.waitForTimeout(400);
-  check('Trip sheet: the chip closes it again', !(await visible(p.locator('.jmenu'))));
+  const nav = await p.locator('.nav').boundingBox();
+  await p.mouse.click(8, nav.y - 6);
+  await p.waitForTimeout(400);
+  check('Trip sheet: a tap on the dimmed map closes it', !(await visible(p.locator('.jmenu'))));
   await ctx.close();
 }
 
@@ -683,7 +729,7 @@ async function arrive() {
     await p.getByLabel(/Change your journey/).click();
     await p.waitForTimeout(300);
     await p.locator('.jmenu-mode', { hasText: 'Walk' }).click();
-    await p.locator('.jmenu-item', { hasText: 'Around here' }).first().click();
+    await p.locator('.jmenu-card', { hasText: 'Around here' }).first().click();
     await p.waitForTimeout(2500);
     check('Synced toast: going back to a journey does not replay an old find',
       !(await p.locator('.toast-synced', { hasText: 'Eight million' }).count()));
