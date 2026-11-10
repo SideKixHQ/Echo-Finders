@@ -105,7 +105,16 @@ export function MapSearch({ library, saved, onLook, onGo, onSave }: MapSearchPro
             }}
           />
           {open && (
-            <button className="msearch-close" onClick={close} aria-label="Close search">
+            <button
+              className="msearch-close"
+              // The ✕ sits inside the field's <label>: without this, the label's own click
+              // focused the box again after close(), and the results came straight back.
+              onClick={(e) => {
+                e.preventDefault();
+                close();
+              }}
+              aria-label="Close search"
+            >
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7 7l10 10M17 7L7 17" />
               </svg>
