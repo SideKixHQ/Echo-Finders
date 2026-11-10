@@ -410,7 +410,9 @@ await p.getByRole('button', { name: /^Hide$/ }).click().catch(()=>{}); await p.w
 await p.getByLabel('Back to the map').click().catch(()=>{}); await p.waitForTimeout(600);
 await capture('map/playing');
 focus.push(...await focusSweep('map/playing'));
-/* The kinds of echo: one button on the map bar, every kind in a panel behind it. */
+/* The kinds of echo: one button on the map bar, every kind in a panel behind it. The map
+   bar's chips step aside while an echo card is open, so the card is closed first. */
+if (await p.locator('.pop').count()) { await p.locator('.pop-close').click().catch(()=>{}); await p.waitForTimeout(400); }
 if (await p.locator('.kind-tap').count()) {
   await p.locator('.kind-tap').click(); await p.waitForTimeout(400);
   await capture('map/filter');

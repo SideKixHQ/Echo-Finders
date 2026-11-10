@@ -67,11 +67,13 @@ const SPEC = [
     want: { height: '74px', paddingBottom: '14px' } },
   // 14px, the type scale's floor (November 2026, the approved Type board); 13px before
   // that, up from the boards' 11px (James, 2026-10-13). `design/SPEC.md` says the same.
-  // Letter spacing is .03em of it.
+  // Sentence case Sora at 500 with a 26px icon, as the map board of 2026-11-10 draws the
+  // tab bar; it was uppercase Space Grotesk with .03em spacing and a 20px icon before.
   { design: '.nav button', ours: '.nav button', where: 'map',
-    want: { flexGrow: '1', flexDirection: 'column', rowGap: '4px', fontSize: '14px', letterSpacing: '0.42px' } },
+    want: { flexGrow: '1', flexDirection: 'column', rowGap: '4px', fontSize: '14px', fontWeight: '500',
+            letterSpacing: 'normal', textTransform: 'none' } },
   { design: '.nav button svg', ours: '.nav button svg', where: 'map',
-    want: { width: '20px', height: '20px', strokeWidth: '1.7px' } },
+    want: { width: '26px', height: '26px', strokeWidth: '1.7px' } },
 
   /*
    * The design's now-playing row (`.now`) is the bar now, and the bar is a different

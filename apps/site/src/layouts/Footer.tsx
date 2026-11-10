@@ -52,12 +52,12 @@ export default function Footer() {
               Short, location-triggered audio echoes that reveal the people, events, and mysteries that give a place
               its character.
             </p>
-            <p className="mt-lg font-mono text-[11px] uppercase tracking-[0.18em] text-primary">34.2257° N · 77.9447° W</p>
+            <p className="mt-lg font-mono text-sm uppercase tracking-[0.18em] text-primary">34.2257° N · 77.9447° W</p>
           </div>
 
           {columns.map((col) => (
             <nav key={col.title} className={col.span} aria-label={`Footer ${col.title.toLowerCase()} links`}>
-              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-foreground">{col.title}</h3>
+              <h3 className="font-mono text-sm uppercase tracking-[0.18em] text-foreground">{col.title}</h3>
               <ul className="mt-2">
                 {col.links.map((link) => (
                   <li key={link.label}>
@@ -71,7 +71,7 @@ export default function Footer() {
                 ))}
               </ul>
               {col.title === 'Company' && (
-                <p className="mt-lg text-xs leading-relaxed text-muted-foreground">
+                <p className="mt-lg text-sm leading-relaxed text-muted-foreground">
                   Starting in the Cape Fear region:
                   <br />
                   Wilmington, North Carolina.
@@ -82,8 +82,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-xxl flex flex-col items-start justify-between gap-4 border-t border-border pt-lg sm:flex-row sm:items-center">
-          <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} Echo Finders. All rights reserved.</p>
-          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Echo Finders. All rights reserved.</p>
+          <p className="font-mono text-sm uppercase tracking-[0.18em] text-muted-foreground">
             Stand where it happened · Hear the Echo
           </p>
         </div>

@@ -250,8 +250,9 @@ export function Privacy({
         <button className="danger-row" onClick={() => onDelete("everything")}>
           <span>Delete everything</span>
           <small>
-            Removes all {collectionSize} synced echo{collectionSize === 1 ? "" : "es"}. Immediate
-            and permanent.
+            {collectionSize === 0
+              ? "Removes everything this phone keeps for the app. Immediate and permanent."
+              : `Removes all ${collectionSize} synced echo${collectionSize === 1 ? "" : "es"}. Immediate and permanent.`}
           </small>
         </button>
         <button className="danger-row" onClick={startOver}>

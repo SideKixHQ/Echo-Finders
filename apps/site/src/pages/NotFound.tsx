@@ -11,7 +11,7 @@ export default function NotFoundPage() {
       <ContourLines className="pointer-events-none absolute inset-0 h-full w-full text-border opacity-40" />
       <div className="relative max-w-xl">
         <WaypointPin className="mx-auto" />
-        <p className="mt-lg font-mono text-xs uppercase tracking-[0.25em] text-primary">404 · Off the map</p>
+        <p className="mt-lg font-mono text-sm uppercase tracking-[0.25em] text-primary">404 · Off the map</p>
         <h1 className="mt-base font-heading text-4xl text-foreground sm:text-5xl">No Echo here.</h1>
         <p className="mt-base leading-relaxed text-muted-foreground">
           The page you're looking for doesn't exist or has moved.

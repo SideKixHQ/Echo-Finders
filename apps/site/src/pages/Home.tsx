@@ -64,7 +64,7 @@ function Section({ id, children, className = '' }: { id?: string; children: Reac
   );
 }
 
-const kicker = 'font-mono text-xs uppercase tracking-[0.25em] text-primary';
+const kicker = 'font-mono text-sm uppercase tracking-[0.25em] text-primary';
 const h2 = 'mt-base font-heading text-4xl leading-tight text-foreground sm:text-5xl';
 
 /* ── 1. Paused, at a place ─────────────────────────────────────────────────── */
@@ -86,7 +86,7 @@ function Hero() {
             <Button asChild size="lg" className="rounded-full px-8">
               <a href={APP_URL}>{follow.hero.cta}</a>
             </Button>
-            <a href="#how-it-works" className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground">
+            <a href="#how-it-works" className="font-mono text-sm uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground">
               {follow.hero.hint} ↓
             </a>
           </div>
@@ -168,7 +168,7 @@ function Sync() {
         >
           <Echo face={face} size={180} uid="sync" />
         </button>
-        <p className="mt-base font-mono text-xs uppercase tracking-[0.2em] text-primary">{label}</p>
+        <p className="mt-base font-mono text-sm uppercase tracking-[0.2em] text-primary">{label}</p>
         <p className="mt-2 text-center text-lg text-foreground">{sample.title}</p>
         <p className="text-center text-sm text-muted-foreground">{sample.place}</p>
         {state !== 'armed' && (
@@ -215,7 +215,7 @@ function Kinds() {
         <p className="mt-base text-2xl leading-snug text-foreground">{follow.kinds.line}</p>
         <div className="mt-lg flex flex-wrap gap-2">
           {follow.kinds.chips.map((c) => (
-            <span key={c} className="rounded-full border border-border px-3 py-1 font-mono text-xs uppercase tracking-[0.12em] text-muted-foreground">
+            <span key={c} className="rounded-full border border-border px-3 py-1 font-mono text-sm uppercase tracking-[0.12em] text-muted-foreground">
               {c}
             </span>
           ))}
@@ -243,7 +243,7 @@ function Pricing() {
             <h3 className="font-heading text-2xl text-foreground">{plan.name}</h3>
             <p className="mt-base">
               <span className="font-heading text-4xl text-foreground">{plan.price}</span>{' '}
-              <span className="font-mono text-xs uppercase tracking-[0.15em] text-muted-foreground">{plan.per}</span>
+              <span className="font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">{plan.per}</span>
             </p>
             <p className="mt-base text-sm leading-relaxed text-muted-foreground">{plan.body}</p>
           </div>

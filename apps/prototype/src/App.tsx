@@ -2169,8 +2169,6 @@ export function App() {
                     setLookAt({ label: place.label, detail: "", at: spot.point.at });
                   }}
                   widenToKm={WIDEN_TO_KM}
-                  library={LIBRARY}
-                  onLook={(hit) => lookSomewhere(hit, roamMode)}
                   {...(!state.position && locating.kind !== "live"
                     ? {
                         finding: {

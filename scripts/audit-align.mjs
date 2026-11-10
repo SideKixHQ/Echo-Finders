@@ -107,7 +107,10 @@ for (let i = 0; i < 60; i++) {
 if (SHOTS) mkdirSync('align-shots', { recursive: true });
 
 const SANDBOX_CHROMIUM = '/opt/pw-browsers/chromium';
-const browser = await chromium.launch(existsSync(SANDBOX_CHROMIUM) ? { executablePath: SANDBOX_CHROMIUM } : {});
+const launch = () => chromium.launch(existsSync(SANDBOX_CHROMIUM) ? { executablePath: SANDBOX_CHROMIUM } : {});
+let browser = await launch();
+/* Why the last try at a pairing failed, so "never reached" says what actually happened. */
+let lastError = '';
 
 /** Measure one screen against its promises. */
 async function measure(p, size, screen) {
@@ -230,6 +233,9 @@ const SETUP = {
 };
 
 async function attempt(size, screen) {
+  // A browser that died part way through used to fail every pairing after it as "never
+  // reached": start a new one rather than measure nothing.
+  if (!browser.isConnected()) { lastError = 'the browser had disconnected; relaunched'; browser = await launch(); }
   const ctx = await browser.newContext({
     viewport: { width: size.width, height: size.height }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: START,
@@ -247,13 +253,15 @@ async function attempt(size, screen) {
     await SETUP[screen].steps(p, ctx);
     if (!(await p.locator(SETUP[screen].ready).count())) {
       if (SHOTS) await p.screenshot({ path: `align-shots/MISSED-${screen}-${size.name}.png` });
+      lastError = `${SETUP[screen].ready} was not on the page after the steps`;
       return null;
     }
     return await measure(p, size, screen);
-  } catch {
+  } catch (e) {
+    lastError = String(e?.message ?? e).split('\n')[0];
     return null;
   } finally {
-    await ctx.close();
+    await ctx.close().catch(() => {});
   }
 }
 
@@ -263,8 +271,9 @@ const report = [];
 for (const size of SIZES.filter((s) => !ONLY || s.name === ONLY[0])) {
   for (const screen of Object.keys(SCREENS).filter((s) => !ONLY?.[1] || s === ONLY[1])) {
     let problems = null;
+    lastError = '';
     for (let tries = 0; tries < 6 && problems === null; tries++) problems = await attempt(size, screen);
-    report.push([size.name, screen, problems ?? [`never reached ${SETUP[screen].ready} in 6 tries`]]);
+    report.push([size.name, screen, problems ?? [`never reached ${SETUP[screen].ready} in 6 tries (last: ${lastError || 'no error'})`]]);
     console.log(`  ${size.name}: ${screen} done`);
   }
 }
