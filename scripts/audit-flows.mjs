@@ -250,6 +250,56 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── Go to my location ───────────────────────────────────────────────────────────
+// "Back to me" was a pill that showed only after a search and, far from any echo, went to a
+// screen with no map on it (James, 2026-11-10: "doesnt really work anyway"). Its job is the
+// locate arrow's now: it must exist on the map, light up while following, go plain after a
+// drag, and on a tap put you back in the middle of the map, including from another city.
+{
+  const { ctx, p } = await freshApp();
+  for (let i = 0; i < 3; i++) await p.locator('.synced-later').click({ timeout: 800 }).catch(() => {});
+  check('Locate: no "Back to me" pill on the map', (await p.getByText('Back to me').count()) === 0);
+  const locate = p.getByRole('button', { name: 'Go to my location' });
+  check('Locate: the arrow is on the map controls', await visible(p.locator('.rail').getByRole('button', { name: 'Go to my location' })));
+  const size = await locate.boundingBox();
+  check('Locate: a 44px target', !!size && size.width >= 44 && size.height >= 44, JSON.stringify(size));
+  check('Locate: lit while the map follows you', (await locate.getAttribute('aria-pressed')) === 'true');
+  // Where "you" sits on screen while following, to compare with after the tap.
+  const here = async () => {
+    const b = await p.locator('.here').first().boundingBox().catch(() => null);
+    return b ? { x: b.x + b.width / 2, y: b.y + b.height / 2 } : null;
+  };
+  const home = await here();
+  const map = await p.locator('.map-canvas').boundingBox();
+  const cx = map.x + map.width / 2, cy = map.y + map.height / 2;
+  await p.mouse.move(cx, cy);
+  await p.mouse.down();
+  await p.mouse.move(cx - 140, cy - 160, { steps: 8 });
+  await p.mouse.up();
+  await p.waitForTimeout(900);
+  check('Locate: plain once the map is dragged away', (await locate.getAttribute('aria-pressed')) === 'false');
+  await locate.click();
+  await p.waitForTimeout(1200);
+  const back = await here();
+  check('Locate: a tap follows you again', (await locate.getAttribute('aria-pressed')) === 'true');
+  check('Locate: a tap puts you back where you were on screen',
+    !!home && !!back && Math.hypot(home.x - back.x, home.y - back.y) < 40, `${JSON.stringify(home)} -> ${JSON.stringify(back)}`);
+  // From somewhere looked up, a tap comes all the way home.
+  await p.getByLabel(/Change your journey/).click();
+  await p.waitForTimeout(300);
+  await p.getByLabel(/Look somewhere else/).fill('Wilmington');
+  await p.waitForTimeout(600);
+  await p.locator('.jmenu-hit').first().click();
+  await p.waitForTimeout(1500);
+  check('Locate: plain while looking somewhere else', (await locate.getAttribute('aria-pressed')) === 'false');
+  await locate.click();
+  await p.waitForTimeout(1500);
+  const fromAway = await here();
+  check('Locate: from another city, back to you', (await locate.getAttribute('aria-pressed')) === 'true'
+    && !!fromAway && !!home && Math.hypot(home.x - fromAway.x, home.y - fromAway.y) < 40, JSON.stringify(fromAway));
+  await ctx.close();
+}
+
 // ── The trip sheet ──────────────────────────────────────────────────────────────
 {
   const { ctx, p } = await freshApp();

@@ -49,6 +49,10 @@ missing piece between them.
    - The map follows you until you move it: a drag, a pinch, a double tap or a tap on a
      numbered dot.
    - "Back to where I am" picks the following back up.
+   - Amended 2026-11-10. That is the locate arrow now, first on the control column, "Go to
+     my location": filled while following, an outline once you drag away, and a tap
+     centres on you at street level from anywhere, including far from any echo. The "Back
+     to me" pill is gone (James: "it seems to be in the way and doesnt really work").
    - Amended 2026-10-12. This said a pinch only changes the scale and does not stop
      following. On a phone that made the map fight you: pinch in on echoes down the street,
      and the next GPS fix, about a second later, pulled the map back to your dot (James:

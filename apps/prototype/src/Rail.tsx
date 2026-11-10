@@ -72,13 +72,12 @@ export interface RailProps {
   /** Showing the whole journey rather than following the listener. */
   readonly overview: boolean;
   /**
-   * Whether the map has been dragged off centre.
-   *
-   * Only used to label the recentre button honestly. With a drag in play the button's job
-   * is "put me back", whatever the overview is set to, and saying "whole journey" there
-   * describes something it is not about to do.
+   * The map is centred on you and moving with you. Lights the locate arrow, the way every
+   * maps app does: filled while it follows, an outline once you have dragged away.
    */
-  readonly panned?: boolean;
+  readonly following?: boolean;
+  /** "Go to my location": centre on you at street level, and follow. */
+  readonly onLocate?: () => void;
   /**
    * What the zoom-out is called here. "Whole journey" on a flight or a drive; exploring has
    * no journey, so it is the route you are walking, or the echoes around you.
@@ -118,7 +117,8 @@ function RailInner({
   sonar,
   onSonar,
   overview,
-  panned,
+  following,
+  onLocate,
   overviewLabel = "Whole journey",
   onOverview,
   roseView,
@@ -139,6 +139,25 @@ function RailInner({
         The sonar switch, first in the column so a thumb finds it without looking. A pin
         sending out a ping when it is on; the same pin, silent and crossed, when it is not.
       */}
+      {/*
+        GO TO MY LOCATION, first in the column and drawn as the arrow every maps app uses,
+        so nobody has to read it. It replaces "Back to me", a pill over the top of the map
+        that only appeared after a search and, far from any echo, took you to a screen
+        with no map on it rather than to you.
+      */}
+      {onLocate && (
+        <button
+          className={following ? "fab fab-locate following" : "fab fab-locate"}
+          onClick={onLocate}
+          aria-pressed={following ?? false}
+          aria-label="Go to my location"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 3.5 3.5 10.6l7.2 2.7 2.7 7.2z" />
+          </svg>
+        </button>
+      )}
+
       {onSonar !== undefined && (
         <button
           className={sonar ? "fab fab-sonar on" : "fab fab-sonar"}
@@ -228,41 +247,21 @@ function RailInner({
       )}
 
       {/*
-        THE FRAMING BUTTON, and its glyph now says which of its three jobs it is doing.
+        THE FRAMING BUTTON: the whole journey, or the echoes around you, and back.
 
-        It is one control with three labels — "Back to where I am" when the map has been
-        dragged, "Follow me" when the whole journey is framed, "Whole journey" otherwise —
-        and it drew the same crosshair for all three. A crosshair means "put me in the
-        middle", so two thirds of the time the picture was arguing with the words, and the
-        one people actually reach for after dragging the map looked identical to the one
-        that zooms out to the county.
-
-        Same button, same tap, three glyphs:
-          panned      a crosshair. Put me back in the middle.
-          overview    a person in a circle. Follow me again.
-          otherwise   four corners. Frame the lot.
+        It used to have three jobs and three glyphs, one of them "Back to where I am" after
+        a drag. That job is the locate arrow's now, so this does the one thing its corners
+        say: frame the lot. Tapping it again follows you, as the locate arrow does.
       */}
       <button
         className={overview ? "fab on" : "fab"}
         onClick={() => onOverview(!overview)}
         aria-pressed={overview}
-        aria-label={panned ? "Back to where I am" : overview ? "Follow me" : overviewLabel}
+        aria-label={overviewLabel}
       >
-        {panned ? (
-          <svg viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="7" />
-            <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
-          </svg>
-        ) : overview ? (
-          <svg viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="8.5" />
-            <circle cx="12" cy="12" r="3" />
-          </svg>
-        ) : (
-          <svg viewBox="0 0 24 24">
-            <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />
-          </svg>
-        )}
+        <svg viewBox="0 0 24 24">
+          <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />
+        </svg>
       </button>
 
       {/*

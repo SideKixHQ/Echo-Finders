@@ -139,6 +139,12 @@ interface Props {
   readonly reservedBottom?: number;
   readonly onPan: (next: { x: number; y: number }) => void;
   /**
+   * Counts taps on "Go to my location". Each new value puts you in the middle of the map
+   * at street level at least, rather than the framing that fits you and your nearest
+   * echoes, because the arrow promises your exact location.
+   */
+  readonly locateTap?: number;
+  /**
    * Somewhere the listener has asked to look at instead of where they are: a ZIP code or a
    * place (`place-search.ts`). The map centres there; where they stand is unchanged.
    */
@@ -337,6 +343,7 @@ export function RouteMap({
   onZoom,
   pan,
   onPan,
+  locateTap = 0,
   lookAt = null,
   directions = null,
   aimId = null,
@@ -1339,6 +1346,27 @@ export function RouteMap({
     // `zoom` is applied here only when following; the next effect handles it otherwise.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gl, at?.lat, at?.lng, overview, lookAt, following, base, bandOffset, directions]);
+
+  /*
+   * GO TO MY LOCATION. Runs after the follow effect above, so on the tap that also starts
+   * following, this ease is the one that lands. Street level at least, centred on you in
+   * the band the chrome leaves, and the reveal is marked done so the next fix keeps it.
+   * On a walk with directions the follow effect frames you and the echo; that stays.
+   */
+  const lastLocate = useRef(locateTap);
+  useEffect(() => {
+    if (locateTap === lastLocate.current) return;
+    lastLocate.current = locateTap;
+    if (!gl || !at || (directions && directions.length > 1)) return;
+    const z = Math.max(base, Math.min(gl.getZoom(), base + 2));
+    revealed.current = true;
+    onZoom(Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, 2 ** (z - base))));
+    // From another city, go there; do not glide across the country.
+    const seen = gl.project([at.lng, at.lat]);
+    const far = seen.x < -box.w || seen.x > box.w * 2 || seen.y < -box.h || seen.y > box.h * 2;
+    gl.easeTo({ center: [at.lng, at.lat], zoom: z, offset: bandOffset, duration: far ? 0 : 500 });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [locateTap, gl]);
 
   /*
    * NOTHING PUSHES A ZOOM INTO THE MAP FROM OUTSIDE ANY MORE.
