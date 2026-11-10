@@ -1,0 +1,93 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: Inside Fort Moultrie, by the flagstaff on the parade ground.
+# Position: Centre of the present Fort Moultrie from its published position (medium confidence). The 1776 fort was a different, wooden fort on roughly this ground.
+id: charleston-the-flag-on-a-sponge-stick
+title: "The Flag on a Sponge Stick"
+summary: "A children's telling: in 1776 a cannonball knocked down the fort's flag, and a sergeant climbed out under fire to put it back."
+place: "Fort Moultrie, parade ground by the flagstaff, Sullivan's Island, South Carolina"
+at: { lat: 32.75935, lng: -79.85760 }
+triggerRadiusKm: 0.04
+inside: true
+category: kids
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [charleston, sullivans-island, fort-moultrie, revolution, flag, kids]
+teaser: "The flag fell down. Somebody had to go and get it."
+script: |
+  Find the flagpole and look up at the flag. Now imagine it falling down, right in the middle of a battle.
+
+  That is what happened here, in seventeen seventy six. British ships were firing at the fort, and one shot broke the flagstaff. Down came the flag, over the wall, onto the sand outside.
+
+  On the ships, the sailors cheered. They thought the fort had given up.
+
+  But a soldier named Sergeant William Jasper did not think so. He jumped down from the wall, with cannonballs flying, and grabbed the flag.
+
+  He had no flagpole. So he used what he had. A sponge rod, the long stick the gunners used to clean out their cannon. He tied the flag to it, climbed back up, and stuck it on the wall where everybody could see it.
+
+  The flag was up again. And the fort did not give up.
+
+  Afterwards, the leader of South Carolina gave Jasper his own sword. He offered to make him an officer too. Jasper said no thank you.
+
+  Look up at the flag again. Nobody needed a proper pole.
+
+  Just a sergeant, and a stick.
+detail: >-
+  Ravenel (1906) says Jasper leapt down from the wall, tore the flag from the broken staff and fastened it to a sponge rod. The National Park Service says President John Rutledge gave him his own sword and offered him a commission, which he declined.
+pronunciations:
+  - written: "Moultrie"
+    say: "MOOL-tree"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "That is what happened here, in seventeen seventy six."
+    source: 1
+    quote: "On June 28, 1776 Sergeant Jasper won lasting fame during the Battle of Sullivan’s Island."
+  - says: "British ships were firing at the fort, and one shot broke the flagstaff."
+    source: 2
+    quote: "When the flagstaff was shot away and the flag fell over"
+  - says: "Down came the flag, over the wall, onto the sand outside."
+    source: 2
+    quote: "When the flagstaff was shot away and the flag fell over"
+  - says: "On the ships, the sailors cheered."
+    source: 2
+    quote: "the ramparts, the British raised another cheer, for they"
+  - says: "They thought the fort had given up."
+    source: 2
+    quote: "thought it meant surrender;"
+  - says: "But a soldier named Sergeant William Jasper did not think so."
+    source: 1
+    quote: "When an enemy shot brought down the fort’s flag, Jasper restored the banner while under the fire of the Royal Navy"
+  - says: "He jumped down from the wall, with cannonballs flying, and grabbed the flag."
+    source: 2
+    quote: "but Sergeant Jasper leapt down"
+  - says: "A sponge rod, the long stick the gunners used to clean out their cannon."
+    source: 1
+    quote: "reattaching it to an artillery sponge staff."
+  - says: "He tied the flag to it, climbed back up, and stuck it on the wall where everybody could see it."
+    source: 2
+    quote: "ing back fastened it to a sponge rod"
+  - says: "Afterwards, the leader of South Carolina gave Jasper his own sword."
+    source: 1
+    quote: "President John Rutledge presented him with his personal sword for his bravery"
+  - says: "He offered to make him an officer too."
+    source: 1
+    quote: "and offered him an officer’s commission, which Jasper declined."
+  - says: "Jasper said no thank you."
+    source: 1
+    quote: "which Jasper declined."
+sources:
+  - title: "William Jasper"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/william-jasper.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), Battle of Fort Moultrie"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-10"
+    rights: public-domain

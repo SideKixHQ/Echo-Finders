@@ -1,0 +1,94 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The grounds of Charles Pinckney National Historic Site (Snee Farm), Long Point Road, Mount Pleasant, by the house and the trail to the enslaved village site.
+# Position: Charles Pinckney National Historic Site, from its widely published position (medium confidence). The park is open on set days; the trail is on park grounds.
+id: charleston-the-village-that-would-not-line-up
+title: "The Village That Would Not Line Up"
+summary: "The maps of Snee Farm drew its slave quarters in neat rows. The archaeologists found clusters, kept by the people who lived there."
+place: "Snee Farm, Charles Pinckney National Historic Site, Long Point Road, Mount Pleasant, South Carolina"
+at: { lat: 32.84660, lng: -79.82530 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [charleston, mount-pleasant, snee-farm, pinckney, slavery, archaeology]
+teaser: "The map said rows. The ground said otherwise."
+script: |
+  Look past the house, toward the trees where the trail goes. Out there, the maps of this farm drew the homes of the enslaved people in neat, straight rows.
+
+  The ground tells a different story.
+
+  This was Snee Farm, a plantation of Charles Pinckney. More than twenty five clauses in the Constitution of the United States came from him. In seventeen ninety, the census listed him as owning a hundred and eleven people. About forty of them lived here. By eighteen ten, he held fifty eight people on this farm alone.
+
+  Archaeologists have dug where they lived. They found handmade pottery called colonoware. Pipe fragments. Marbles. A brass thimble. A brass finger ring with a heart on it. A toy cannon, played with by a child.
+
+  And they found the houses. Not in rows at all. In loose clusters, built in many ways, some of them in the African style of posts and woven walls.
+
+  The archaeologists think the clusters may have been families, choosing where to live beside each other, against the order their enslavers drew.
+
+  Look out at the trees again. People lived out there for more than seventy years.
+
+  The rows were only on paper.
+detail: >-
+  From the National Park Service article on the enslaved community of Snee Farm: the census figures for 1790 and 1810, the colonoware and small finds, the clustered rather than linear arrangement of dwellings, and the archaeologists' suggestion that clusters represented family units, which the script hedges as a suggestion. The finds summary rests on Keel and Koval (2014), cited by the NPS. "The ground tells a different story" uses "story" in its ordinary sense, not as app copy.
+pronunciations:
+  - written: "Snee"
+    say: "SNEE"
+  - written: "Pinckney"
+    say: "PINK-nee"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Out there, the maps of this farm drew the homes of the enslaved people in neat, straight rows."
+    source: 1
+    quote: "Maps of Snee Farm dating to this period portray the slave quarters in a neat, linear fashion"
+  - says: "This was Snee Farm, a plantation of Charles Pinckney."
+    source: 1
+    quote: "leaving both Snee Farm and the family home in Charleston to Charles."
+  - says: "More than twenty five clauses in the Constitution of the United States came from him."
+    source: 2
+    quote: "His most famous accomplishment was the inclusion of more than 25 clauses in the final draft of the U.S. Constitution."
+  - says: "In seventeen ninety, the census listed him as owning a hundred and eleven people."
+    source: 1
+    quote: "The 1790 census lists him owning 111 enslaved people, around 40 of which lived at Snee Farm."
+  - says: "About forty of them lived here."
+    source: 1
+    quote: "around 40 of which lived at Snee Farm."
+  - says: "By eighteen ten, he held fifty eight people on this farm alone."
+    source: 1
+    quote: "By 1810, Gov. Pinckney enslaved 58 people at Snee Farm alone."
+  - says: "They found handmade pottery called colonoware."
+    source: 1
+    quote: "archeologists discovered an abundance of colonoware, a type of handmade earthenware ceramic."
+  - says: "A brass finger ring with a heart on it."
+    source: 1
+    quote: "A button, buckle, and brass finger ring with a heart-shaped motif found at the village site."
+  - says: "A toy cannon, played with by a child."
+    source: 1
+    quote: "A toy cannon and a marble, evidence of enslaved children's play only known through archeology."
+  - says: "In loose clusters, built in many ways, some of them in the African style of posts and woven walls."
+    source: 1
+    quote: "grouped together in a cluster of loosely spaced units."
+  - says: "In loose clusters, built in many ways, some of them in the African style of posts and woven walls."
+    source: 1
+    quote: "post-in-ground, wattle and daub structures reminiscent of African styles of construction"
+  - says: "The archaeologists think the clusters may have been families, choosing where to live beside each other, against the order their enslavers drew."
+    source: 1
+    quote: "Perhaps the clusters of houses represented family units"
+  - says: "People lived out there for more than seventy years."
+    source: 1
+    quote: "Archeologists conclude that the enslaved occupied the residences of Snee Farm for more than seventy years."
+sources:
+  - title: "The Enslaved Community of Snee Farm"
+    publisher: "National Park Service, Charles Pinckney National Historic Site"
+    url: https://home.nps.gov/articles/000/enslaved-community-of-snee-farm.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Charles Pinckney National Historic Site"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/charles-pinckney-national-historic-site.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

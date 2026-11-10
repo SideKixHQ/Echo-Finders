@@ -1,0 +1,71 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The public side of the Charleston Light on Middle Street, Sullivan's Island, inside the Coast Guard historic district.
+# Position: Charleston Light, Sullivan's Island, from its widely published position (medium confidence).
+id: charleston-the-lighthouse-with-a-lift
+title: "The Lighthouse With a Lift"
+summary: "A children's telling: Sullivan's Island's lighthouse is a triangle, has an elevator, and got repainted because the neighbours complained."
+place: "Charleston Light, Middle Street, Sullivan's Island, South Carolina"
+at: { lat: 32.75830, lng: -79.84310 }
+triggerRadiusKm: 0.05
+category: kids
+format: short
+durationS: 66
+visibility: landmark-visible
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [charleston, sullivans-island, lighthouse, kids, coast-guard]
+teaser: "Count its sides. Most lighthouses are round."
+script: |
+  Look up at the lighthouse and count its sides. One, two, three. Most lighthouses are round. This one is a triangle.
+
+  It was built that way on purpose. A triangle of steel and aluminium can stand up to winds of a hundred and twenty five miles an hour. In nineteen eighty nine, a huge hurricane called Hugo hit this coast. The lighthouse stayed standing.
+
+  And here is a secret. It has an elevator inside. A lift, to carry people up. After that, there is still a ladder to climb at the top.
+
+  When it was new, the lighthouse was painted red orange and white. The people who lived on the island did not like it. They complained. So it was painted black and white instead.
+
+  It flashes twice every thirty seconds, so ships can tell it from every other light on the coast.
+
+  Look up one more time. It was the last big lighthouse ever built in the whole United States.
+
+  The last one got a lift.
+detail: >-
+  All facts are from the National Park Service page on the Charleston Light: dedicated 15 June 1962, triangular steel and aluminium alloy, rated for 125 mile an hour winds, survived Hurricane Hugo in 1989, a service elevator and a 35 foot ladder to the lantern room, repainted from red orange and white after residents complained, two flashes each 30 seconds, and the last major lighthouse built in the United States.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "This one is a triangle."
+    source: 1
+    quote: "Not a typical circular shape, the lighthouse is triangular"
+  - says: "A triangle of steel and aluminium can stand up to winds of a hundred and twenty five miles an hour."
+    source: 1
+    quote: "The unusual design was chosen for of its ability to withstand winds up to 125 miles per hour."
+  - says: "In nineteen eighty nine, a huge hurricane called Hugo hit this coast."
+    source: 1
+    quote: "Its strength was demonstrated when it withstood Hurricane Hugo in 1989."
+  - says: "It has an elevator inside."
+    source: 1
+    quote: "the lighthouse has a service elevator."
+  - says: "After that, there is still a ladder to climb at the top."
+    source: 1
+    quote: "To access the lantern room, a 35-foot vertical climb on a metal ladder is required."
+  - says: "When it was new, the lighthouse was painted red orange and white."
+    source: 1
+    quote: "Originally painted red-orange and white"
+  - says: "So it was painted black and white instead."
+    source: 1
+    quote: "the siding was repainted in its current black and white daymark pattern in response to complaints from island residents."
+  - says: "It flashes twice every thirty seconds, so ships can tell it from every other light on the coast."
+    source: 1
+    quote: "The Charleston Light produces two flashes each 30 seconds in a distinctive pattern."
+  - says: "It was the last big lighthouse ever built in the whole United States."
+    source: 1
+    quote: "it is the last major lighthouse built in the United States."
+sources:
+  - title: "Charleston Light, Sullivan's Island"
+    publisher: "National Park Service, Fort Sumter and Fort Moultrie National Historical Park"
+    url: https://www.nps.gov/fosu/learn/historyculture/charleston-light.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

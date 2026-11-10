@@ -1,0 +1,66 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The beach at the northeast end of Folly Beach, in the Lighthouse Inlet Heritage Preserve, looking across the inlet to the Morris Island Light standing in the water.
+# Position: Northeast tip of Folly Island, from general knowledge of the island (low to medium confidence); moved onto land at the preserve tip after the land check put the first guess in the sea.
+id: charleston-the-lighthouse-the-sea-walked-to
+title: "The Lighthouse the Sea Walked To"
+summary: "The Morris Island Light was built on land in 1876. Jetties moved the sand, and the lighthouse now stands far out in the water."
+place: "Lighthouse Inlet Heritage Preserve, northeast end of Folly Beach, South Carolina"
+at: { lat: 32.69880, lng: -79.88820 }
+triggerRadiusKm: 0.1
+category: land
+format: short
+durationS: 76
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [charleston, folly-beach, morris-island, lighthouse, erosion, coast]
+teaser: "Nobody moved the lighthouse. They moved the sea."
+script: |
+  Look across the inlet at the lighthouse standing in the water, with waves breaking around its base. Nobody builds a lighthouse in the sea like that.
+
+  They did not. When it was built in eighteen seventy six, it stood on land, on Morris Island.
+
+  It was not the first light there. A lighthouse stood on Morris Island from seventeen sixty seven, at the main entrance to the ship channel. In eighteen sixty one, Confederate forces destroyed it, to hide the harbour entrance from the Union fleet.
+
+  After the war, this tower went up in its place. Then the engineers built jetties, long walls of stone, to steer the ship channel into the harbour.
+
+  The jetties moved the water. And the water moved the sand. Morris Island began to wash away around the lighthouse.
+
+  Today the tower is a hundred and fifty eight feet tall, and it stands about seventeen hundred feet out to sea. The light was put out when a new lighthouse was built on Sullivan's Island, closer to the new channel.
+
+  Look at it again. It has not moved an inch.
+
+  The island left.
+detail: >-
+  From the National Park Service page on the Charleston Light: the 1767 Morris Island lighthouse, its destruction by Confederate forces in 1861, the new lighthouse of 1876, the jetties that redirected the ship channel and caused erosion, its height of 158 feet and its position 1700 feet out to sea, and its decommissioning when the Sullivan's Island light was built. The state of South Carolina owns it.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "When it was built in eighteen seventy six, it stood on land, on Morris Island."
+    source: 1
+    quote: "After the Civil War a new lighthouse was built on Morris Island in 1876."
+  - says: "A lighthouse stood on Morris Island from seventeen sixty seven, at the main entrance to the ship channel."
+    source: 1
+    quote: "In 1767 a permanent lighthouse was built on the south end of Morris Island at the main entrance to the ship channel."
+  - says: "In eighteen sixty one, Confederate forces destroyed it, to hide the harbour entrance from the Union fleet."
+    source: 1
+    quote: "Confederate forces destroyed the lighthouse in 1861 to conceal the harbor entrance from U.S. forces."
+  - says: "Then the engineers built jetties, long walls of stone, to steer the ship channel into the harbour."
+    source: 1
+    quote: "The construction of jetties to redirect the ship channel caused significant erosion on Morris Island."
+  - says: "Morris Island began to wash away around the lighthouse."
+    source: 1
+    quote: "caused significant erosion on Morris Island."
+  - says: "Today the tower is a hundred and fifty eight feet tall, and it stands about seventeen hundred feet out to sea."
+    source: 1
+    quote: "Today, the 158-foot tall Morris Island Light sits 1700 feet out to sea."
+  - says: "The light was put out when a new lighthouse was built on Sullivan's Island, closer to the new channel."
+    source: 1
+    quote: "When the lighthouse on Sullivan’s Island was built closer to the new main channel, the Morris Island light was decommissioned."
+sources:
+  - title: "Charleston Light, Sullivan's Island"
+    publisher: "National Park Service, Fort Sumter and Fort Moultrie National Historical Park"
+    url: https://www.nps.gov/fosu/learn/historyculture/charleston-light.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

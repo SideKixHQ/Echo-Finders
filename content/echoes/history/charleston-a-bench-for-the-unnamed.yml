@@ -1,0 +1,54 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The Bench by the Road, near the Intracoastal Waterway behind the Fort Moultrie Visitor Center, Sullivan's Island.
+# Position: Behind the Fort Moultrie Visitor Center toward the waterway, from the NPS description and the centre's published position (medium confidence). The bench is small; a reviewer should pin it on site.
+id: charleston-a-bench-for-the-unnamed
+title: "A Bench for the Unnamed"
+summary: "Nearly half the captive Africans shipped to North America came through Charleston. Some were quarantined on this island."
+place: "The Bench by the Road, behind the Fort Moultrie Visitor Center, Sullivan's Island, South Carolina"
+at: { lat: 32.76080, lng: -79.85920 }
+triggerRadiusKm: 0.03
+category: history
+format: look-below
+durationS: 48
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.8
+tags: [charleston, sullivans-island, fort-moultrie, slavery, middle-passage, memorial]
+teaser: "A bench, because there was nothing else to sit on and remember."
+script: |
+  Find the small bench by the water and, if you can, sit on it. It was put here so that someone would.
+
+  Charleston was the entry point for nearly half of all the captive Africans shipped to North America. Ships with sickness aboard were held at this island.
+
+  Between seventeen o seven and seventeen ninety nine, four pest houses were built on Sullivan's Island to quarantine the people in their holds. They stood somewhere between the fort and the western end of the island.
+
+  Nobody knows exactly where.
+
+  So the bench stands in for all of them.
+detail: >-
+  From the National Park Service page on the Bench by the Road: Charleston as the entry point for nearly half of the captive Africans shipped to North America, four pest houses built between 1707 and 1799 to quarantine enslaved passengers, never more than one at a time, with locations unknown between Fort Moultrie and the western end of the island. The bench was placed by the Toni Morrison Society; that history is not in the source fetched here, so the script does not tell it.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Charleston was the entry point for nearly half of all the captive Africans shipped to North America."
+    source: 1
+    quote: "which served as the entry point for nearly half of the captive Africans shipped to North America."
+  - says: "Ships with sickness aboard were held at this island."
+    source: 1
+    quote: "These \"pest houses\" were used to quarantine enslaved passengers who arrived to the New World carrying infectious diseases."
+  - says: "Between seventeen o seven and seventeen ninety nine, four pest houses were built on Sullivan's Island to quarantine the people in their holds."
+    source: 1
+    quote: "Between 1707 and 1799, four \"pest houses\" were constructed on Sullivan's Island, though never more than one existed at the same time."
+  - says: "They stood somewhere between the fort and the western end of the island."
+    source: 1
+    quote: "all were built between Fort Moultrie and the western end of the island."
+  - says: "Nobody knows exactly where."
+    source: 1
+    quote: "Although the exact locations are unknown"
+sources:
+  - title: "The Bench By the Road"
+    publisher: "National Park Service, Fort Sumter and Fort Moultrie National Historical Park"
+    url: https://www.nps.gov/places/the-bench-by-the-road.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain

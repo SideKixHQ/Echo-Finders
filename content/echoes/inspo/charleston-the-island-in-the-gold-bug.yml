@@ -1,0 +1,92 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: A public beach access near the east end of Sullivan's Island, toward Breach Inlet, where the tale puts Legrand's hut.
+# Position: East end of Sullivan's Island near Breach Inlet, from general knowledge of the island's shape (low to medium confidence; checked against the land map). The tale gives only "not far from the eastern or more remote end of the island".
+id: charleston-the-island-in-the-gold-bug
+title: "The Island in The Gold Bug"
+summary: "Edgar Allan Poe served at Fort Moultrie as a young private. Fifteen years later he set The Gold Bug on this end of the island."
+place: "East end of Sullivan's Island, near Breach Inlet, South Carolina"
+at: { lat: 32.77530, lng: -79.81370 }
+triggerRadiusKm: 0.15
+category: inspo
+inspo:
+  kind: inspiration
+  evidence: area
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.8
+tags: [charleston, sullivans-island, poe, gold-bug, books, fort-moultrie]
+teaser: "A private in the artillery, a beetle made of gold, and a treasure map."
+script: |
+  Look at the thick, low scrub between the houses and the beach. In a tale everyone once read, this end of the island hid a hut, a madman, and a map to buried treasure.
+
+  The writer had been a soldier here. In eighteen twenty seven, a young man enlisted in the army under an assumed name, and lied about his age. He said he was twenty two. He was eighteen.
+
+  His battery was sent to Fort Moultrie, at the other end of this island. He arrived in November, and stayed for more than a year. He was promoted to artificer, a soldier with a trade.
+
+  The soldier was Edgar Allan Poe.
+
+  Fifteen years later, in eighteen forty three, he published The Gold Bug. And he put it here.
+
+  This island is a very singular one, he wrote. It is covered with a dense undergrowth of the sweet myrtle. And his hero builds a hut not far from the eastern, or more remote, end of the island.
+
+  The houses came later. Look at the scrub again.
+
+  The private remembered every bush.
+detail: >-
+  The National Park Service gives Poe's enlistment under an assumed name on 26 May 1827, the battery's orders to Fort Moultrie on 31 October 1827, arrival on 18 November, promotion to artificer, and departure on 11 December 1828; it names The Gold Bug (1843) as his most popular tale inspired by Sullivan's Island. The quotations are from the tale. Poe's assumed name is not given in these sources, so it is not used.
+pronunciations:
+  - written: "Moultrie"
+    say: "MOOL-tree"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "The writer had been a soldier here."
+    source: 1
+    quote: "On October 31, 1827 Battery H was ordered to Fort Moultrie to protect Charleston Harbor."
+  - says: "In eighteen twenty seven, a young man enlisted in the army under an assumed name, and lied about his age."
+    source: 1
+    quote: "He entered under an assumed name and lied about his age, claiming to be 22 years old when he was only 18."
+  - says: "He said he was twenty two."
+    source: 1
+    quote: "claiming to be 22 years old when he was only 18."
+  - says: "He was eighteen."
+    source: 1
+    quote: "claiming to be 22 years old when he was only 18."
+  - says: "He arrived in November, and stayed for more than a year."
+    source: 1
+    quote: "arriving for duty in Charleston on November 18."
+  - says: "He arrived in November, and stayed for more than a year."
+    source: 1
+    quote: "On December 11, 1828, Poe’s battery sailed for duty at Fortress Monroe, Virginia"
+  - says: "He was promoted to artificer, a soldier with a trade."
+    source: 1
+    quote: "At Fort Moultrie, Poe was promoted to artificer, the rank of a noncommissioned officer or enlisted man who had a mechanical specialty."
+  - says: "The soldier was Edgar Allan Poe."
+    source: 1
+    quote: "At Fort Moultrie, Poe was promoted to artificer"
+  - says: "Fifteen years later, in eighteen forty three, he published The Gold Bug."
+    source: 1
+    quote: "By far his most popular story inspired by Sullivan’s Island was “The Gold Bug,” originally published in 1843."
+  - says: "This island is a very singular one, he wrote."
+    source: 2
+    quote: "This island is a very singular one."
+  - says: "It is covered with a dense undergrowth of the sweet myrtle."
+    source: 2
+    quote: "with a dense undergrowth of the sweet myrtle"
+  - says: "And his hero builds a hut not far from the eastern, or more remote, end of the island."
+    source: 2
+    quote: "from the eastern or more remote end of the island,"
+sources:
+  - title: "Edgar Allan Poe"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/edgarallanpoe.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Gold Bug (Edgar Allan Poe, 1843; school edition 1898)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/goldbug00poee
+    retrievedAt: "2026-11-10"
+    rights: public-domain

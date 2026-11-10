@@ -1,0 +1,72 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: Mosquito Beach Road on Sol Legare Island, James Island, along the strip of buildings facing the creek and marsh.
+# Position: The Mosquito Beach Historic District's published reference point (medium confidence).
+id: charleston-the-last-of-six-beaches
+title: "The Last of Six Beaches"
+summary: "Under segregation, Black families around Charleston had six beaches. Mosquito Beach, on Sol Legare Island, is the one still standing."
+place: "Mosquito Beach Historic District, Mosquito Beach Road, Sol Legare Island, James Island, South Carolina"
+at: { lat: 32.67411, lng: -79.98186 }
+triggerRadiusKm: 0.1
+category: history
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [charleston, james-island, sol-legare, mosquito-beach, segregation, civil-rights, gullah]
+teaser: "No sand to speak of. And for years, the only place to go."
+script: |
+  Look along this little strip of buildings, out over the marsh. It does not look much like a beach. But for years, this was one of the only beaches a Black family near Charleston could go to.
+
+  By nineteen sixty, there were six of them in Charleston County. Six so called black beaches, while the rest of the coast filled up with visitors who could go anywhere.
+
+  The families of Sol Legare Island owned their own land here. They lived on seafood and on the vegetables they grew and sold. On the island, they ran their own lives. The moment they left it, their rights shrank.
+
+  So they built a place to gather, with businesses of their own. Workers came here at the end of the day. Under segregation, it became something more. A beacon for the whole coastal community.
+
+  The other five beaches are gone. Storms took some. Neglect and development took the rest.
+
+  In twenty nineteen, this strip went on the National Register of Historic Places.
+
+  Look along it again.
+
+  Of six, this is the one that stayed.
+detail: >-
+  From the National Park Service listing of the Mosquito Beach Historic District (National Register, 2019, reference 100004409): Sol Legare families' land ownership and economy of seafood and truck farming, the six black beaches in Charleston County in 1960, and Mosquito Beach as the last surviving example. The full nomination could not be opened from this session (npgallery.nps.gov is not reachable here).
+pronunciations:
+  - written: "Sol Legare"
+    say: "sol luh-GREE"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "By nineteen sixty, there were six of them in Charleston County."
+    source: 1
+    quote: "In Charleston County, Mosquito Beach was one of six “black beaches” accessible to the African American community in 1960."
+  - says: "The families of Sol Legare Island owned their own land here."
+    source: 1
+    quote: "The families of Sol Legare Island owned their land and maintained a self-sustaining economy based on seafood and truck farming"
+  - says: "They lived on seafood and on the vegetables they grew and sold."
+    source: 1
+    quote: "a self-sustaining economy based on seafood and truck farming"
+  - says: "The moment they left it, their rights shrank."
+    source: 1
+    quote: "their social, political and recreational rights significantly diminished once leaving the island."
+  - says: "Workers came here at the end of the day."
+    source: 1
+    quote: "Mosquito Beach became less a convenient gathering place for local workers and more a community beacon during segregation."
+  - says: "A beacon for the whole coastal community."
+    source: 1
+    quote: "a historic commercial and recreational epicenter for the coastal black community in the Charleston area during Jim Crow segregation."
+  - says: "The other five beaches are gone."
+    source: 1
+    quote: "The other five historically black beaches have either lost contributing buildings due to natural disasters, neglect, or turned to development properties"
+  - says: "In twenty nineteen, this strip went on the National Register of Historic Places."
+    source: 1
+    quote: "Listed in the National Register of Historic Places in 2019"
+sources:
+  - title: "Mosquito Beach Historic District"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/mosquito-beach-historic-district.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
