@@ -607,6 +607,14 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   check('Saved: each has Go and Unsave', (await saved.locator('.entry-wish').evaluateAll((rs) => rs.every((r) => r.querySelector('.saved-go') && r.querySelector('.saved-unsave')))));
   const smallSaved = await big(saved.locator('button'));
   check('Saved: Go and Unsave are 44px targets', smallSaved.length === 0, smallSaved.join(', '));
+  // Saved keeps: a reload does not lose it (`saved-store.ts`).
+  await p.reload({ waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(2500);
+  await p.locator('.how-go').click({ timeout: 1500 }).catch(() => {});
+  await nav.getByRole('button', { name: /My Echoes/ }).click().catch(() => {});
+  await p.waitForTimeout(600);
+  check('Saved: a reload keeps what was saved', await visible(saved.getByRole('heading', { name: /^Saved · 2$/ }))
+    && await visible(saved.locator('.entry-wish', { hasText: far })));
   await saved.getByRole('button', { name: `Unsave ${far}` }).click().catch(() => {});
   await p.waitForTimeout(300);
   check('Saved: Unsave takes it off', (await saved.locator('.entry-wish').count()) === 1 && !(await visible(saved.locator('.entry-wish', { hasText: far }))));

@@ -39,6 +39,7 @@ import { MODE_PHRASE } from "./travel";
 import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { holdLockScreen, primeLockScreen } from "./lock-screen";
 import { savedList } from "./saved-list";
+import { readSaved, toggleSaved, writeSaved } from "./saved-store";
 import { HowEchoesUnlock, NearToast, SavedToast, SAVED_SHOW_MS, SyncedToast } from "./Toasts";
 import {
   HOW_KEY,
@@ -300,7 +301,14 @@ export function App() {
   // the screen off; this decides whether they then talk. Somebody can very reasonably want
   // a phone collecting in a pocket while still choosing what they hear.
   const [autoPlay, setAutoPlay] = useState(false);
+  /**
+   * The plan's picks: what autoplay may play on this journey (`Plan.tsx`). Not Save, which
+   * shared this set until saving a far echo limited autoplay to it, and switching journeys
+   * cleared everything saved. Saved is `saved`, kept on the device (`saved-store.ts`).
+   */
   const [chosen, setChosen] = useState<ReadonlySet<string>>(new Set());
+  const [saved, setSaved] = useState<ReadonlySet<string>>(readSaved);
+  useEffect(() => writeSaved(saved), [saved]);
   /**
    * Which categories are on. `null` means all of them.
    *
@@ -846,7 +854,7 @@ export function App() {
     setCamera(null);
     setDeleted(new Set());
     setPaused(false);
-    // A choice belongs to the journey it was made for.
+    // The plan's picks belong to the journey they were made for. What is saved stays.
     setChosen(new Set());
     setCats(null);
     setOverview(false);
@@ -1224,7 +1232,7 @@ export function App() {
       (echo) => checkEligibility(echo, { profile: listener, playAtMs: Date.now() }).eligible,
     );
   }, [byRoute, route.id, kids]);
-  const savedEchoes = useMemo(() => onRoute.filter((e) => chosen.has(e.id)), [onRoute, chosen]);
+  const savedEchoes = useMemo(() => onRoute.filter((e) => saved.has(e.id)), [onRoute, saved]);
   /**
    * The saved list, in the order you will reach them.
    *
@@ -1236,7 +1244,7 @@ export function App() {
    * sheet: "Saved to hear" in the order you added them is a list about last Tuesday.
    */
   // Every saved echo, not only the ones on this journey (`saved-list.ts`).
-  const savedNearby = useMemo(() => savedList(chosen, LIBRARY_BY_ID, state.position?.at), [chosen, state.position]);
+  const savedNearby = useMemo(() => savedList(saved, LIBRARY_BY_ID, state.position?.at), [saved, state.position]);
   const suggestion = useMemo(
     () => ROUTES.find((r) => r.id !== route.id && (corridorCounts[r.id] ?? 0) > 1) ?? null,
     [route.id, corridorCounts],
@@ -1285,16 +1293,11 @@ export function App() {
   const [savedToast, setSavedToast] = useState<string | null>(null);
   // Leaving the map lets it go, so it does not come back on the way in again.
   useEffect(() => setSavedToast(null), [tab]);
-  const chosenRef = useRef(chosen);
-  chosenRef.current = chosen;
+  const savedRef = useRef(saved);
+  savedRef.current = saved;
   const toggleSave = useCallback((echo: Echo) => {
-    setSavedToast(chosenRef.current.has(echo.id) ? null : echo.id);
-    setChosen((current) => {
-      const next = new Set(current);
-      if (next.has(echo.id)) next.delete(echo.id);
-      else next.add(echo.id);
-      return next;
-    });
+    setSavedToast(savedRef.current.has(echo.id) ? null : echo.id);
+    setSaved((current) => toggleSaved(current, echo.id));
   }, []);
   const openPackage = useCallback(() => setPackageOpen(true), []);
   const setKidsMode = useCallback((on: boolean) => {
@@ -2006,7 +2009,7 @@ export function App() {
                 */}
                 <MapSearch
                   library={LIBRARY}
-                  saved={chosen}
+                  saved={saved}
                   onLook={(hit) => lookSomewhere(hit, roamMode)}
                   onGo={goToEcho}
                   onSave={toggleSave}
@@ -2417,7 +2420,7 @@ export function App() {
                   distanceKm={selectedEcho.distanceKm}
                   state={stateOf(selectedEcho.echo.id)}
                   mode={roaming ? roamMode : route.mode}
-                  saved={chosen.has(selectedEcho.echo.id)}
+                  saved={saved.has(selectedEcho.echo.id)}
                   aimed={beacon === selectedEcho.echo.id}
                   {...(selfDirected
                     ? {
@@ -2852,7 +2855,7 @@ export function App() {
                 );
               }
               // On the map, where the card and the search that saved it are.
-              const justSaved = savedToast && tab === "map" && chosen.has(savedToast) ? LIBRARY_BY_ID.get(savedToast) : undefined;
+              const justSaved = savedToast && tab === "map" && saved.has(savedToast) ? LIBRARY_BY_ID.get(savedToast) : undefined;
               if (justSaved) {
                 return (
                   <SavedToast
@@ -2941,7 +2944,7 @@ export function App() {
             progress={progress}
             playing={playing}
             durationS={(simple ? nowPlaying.simple?.durationS : null) ?? nowPlaying.durationS}
-            saved={chosen.has(nowPlaying.id)}
+            saved={saved.has(nowPlaying.id)}
             onSave={() => toggleSave(nowPlaying)}
             onPlayPause={() => {
               /*
