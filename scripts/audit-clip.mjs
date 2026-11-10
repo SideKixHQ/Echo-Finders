@@ -93,7 +93,6 @@ const PROBE = () => {
     '.test-position',        // the developer banner for ?at=
     '.jchip-ribbon *',       // a route's name in the journey chip
     '.echobar-kicker *',     // the bar's kind and rarity, before its "1 of 30"
-    '.pop-where',            // on a short phone the card's place gives up its second line
   ];
   for (const el of document.querySelectorAll('*')) {
     if (el.children.length > 0 && !el.textContent.trim()) continue;

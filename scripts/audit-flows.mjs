@@ -464,6 +464,21 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.waitForTimeout(600);
   const card = p.locator('.pop');
   check('Echo card: opens from the bar', await visible(card));
+  // A bottom sheet (the Card board, 2026-11-10): on the tab bar, clear of the search box, and
+  // the whole card on screen at once, the four round buttons included, with no scrolling.
+  const sheet = await card.evaluate((c) => {
+    const box = (s) => document.querySelector(s)?.getBoundingClientRect() ?? null;
+    const r = c.getBoundingClientRect();
+    const acts = box('.pop-acts');
+    return { top: r.top, bottom: r.bottom, scroll: c.scrollHeight - c.clientHeight,
+      mapbar: box('.msearch')?.bottom ?? null, nav: box('.nav')?.top ?? null,
+      acts: acts && { top: acts.top, bottom: acts.bottom }, handle: !!c.querySelector('.pop-handle') };
+  });
+  check('Echo card: a sheet on the tab bar, with a handle',
+    sheet.nav !== null && Math.abs(sheet.bottom - sheet.nav) <= 1 && sheet.handle, JSON.stringify(sheet));
+  check('Echo card: clear of the search box', sheet.mapbar !== null && sheet.top >= sheet.mapbar, JSON.stringify(sheet));
+  check('Echo card: the buttons are on screen without scrolling', sheet.scroll <= 1 && !!sheet.acts
+    && sheet.acts.top >= sheet.top && sheet.acts.bottom <= sheet.bottom + 1, JSON.stringify(sheet));
   const walk = card.getByRole('button', { name: /^Walk there · \d+ min$/ });
   check('Echo card: far off, the primary is Walk there with the minutes', await visible(walk));
   // The first locked card ever carries the longer tip (how echoes unlock, how close this
@@ -497,6 +512,24 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.keyboard.press('Escape');
   await p.waitForTimeout(300);
   check('Echo card: Escape shuts the menu and leaves the card', !(await visible(menu)) && await visible(card));
+  // The ways out of the sheet besides the ✕ (checked with the synced story below): Escape,
+  // and dragging the handle down. Each reopens the card from the bar for the next.
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(400);
+  check('Echo card: Escape closes it', !(await visible(card)));
+  await p.locator('.echobar-tap').click().catch(() => {});
+  await p.waitForTimeout(600);
+  const grip = await card.locator('.pop-handle').boundingBox().catch(() => null);
+  if (grip) {
+    await p.mouse.move(grip.x + grip.width / 2, grip.y + grip.height / 2);
+    await p.mouse.down();
+    await p.mouse.move(grip.x + grip.width / 2, grip.y + grip.height / 2 + 160, { steps: 8 });
+    await p.mouse.up();
+    await p.waitForTimeout(500);
+  }
+  check('Echo card: dragging the handle down closes it', !!grip && !(await visible(card)), JSON.stringify(grip));
+  await p.locator('.echobar-tap').click().catch(() => {});
+  await p.waitForTimeout(600);
   await walk.click().catch(() => {});
   await p.waitForTimeout(800);
   check('Echo card: Walk there starts the way there',

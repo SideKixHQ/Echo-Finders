@@ -29,7 +29,7 @@
  * place, and standing there is what unlocks it.
  */
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { presetFor, rarityOf, type Echo, type TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { platePng } from "./archive-plate";
@@ -181,16 +181,102 @@ export function EchoPopup({
   useEffect(() => setMore(false), [echo.id]);
 
   /*
+    Escape closes the card. The More menu takes Escape first (above, in the capture phase,
+    and stops it), and a key typed into a box somewhere else, the map search, is that box's.
+  */
+  const closeRef = useRef(onClose);
+  closeRef.current = onClose;
+  useEffect(() => {
+    const esc = (e: KeyboardEvent) => {
+      if (e.key !== "Escape" || e.defaultPrevented) return;
+      const t = e.target as HTMLElement | null;
+      if (t?.closest?.("input, textarea, select") && !t.closest(".pop")) return;
+      closeRef.current();
+    };
+    window.addEventListener("keydown", esc);
+    return () => window.removeEventListener("keydown", esc);
+  }, []);
+
+  const sheetRef = useRef<HTMLDivElement>(null);
+
+  /*
+    The photograph is the first thing to give way when the sheet runs out of room: it
+    shrinks (it is the one flexible thing in the column), and once it would be a sliver
+    it goes altogether. It stays gone until the room could change: another echo, the tip
+    dismissed, or the window resized; otherwise hiding it would make room and bring it back.
+  */
+  const [pinched, setPinched] = useState(false);
+  useEffect(() => setPinched(false), [echo.id, tip === undefined]);
+  useEffect(() => {
+    const again = () => setPinched(false);
+    window.addEventListener("resize", again);
+    return () => window.removeEventListener("resize", again);
+  }, []);
+  useLayoutEffect(() => {
+    const plate = sheetRef.current?.querySelector<HTMLElement>(".pop-plate-pic");
+    if (!plate || pinched) return;
+    const check = () => {
+      if (plate.offsetHeight < 56) setPinched(true);
+    };
+    check();
+    const sizes = new ResizeObserver(check);
+    sizes.observe(plate);
+    return () => sizes.disconnect();
+  }, [pinched, echo.id, photo]);
+
+  /*
+    The handle: drag the sheet down and let go past a short way (or flick it) and it
+    closes; let go before that and it settles back. Pointer events, so a finger, a pen
+    and a mouse all work, and the ✕ and Escape are still there for anyone who cannot drag.
+  */
+  const [dragY, setDragY] = useState(0);
+  const drag = useRef<{ id: number; y0: number; t0: number } | null>(null);
+  const grab = {
+    onPointerDown: (e: React.PointerEvent<HTMLDivElement>) => {
+      drag.current = { id: e.pointerId, y0: e.clientY, t0: e.timeStamp };
+      e.currentTarget.setPointerCapture?.(e.pointerId);
+    },
+    onPointerMove: (e: React.PointerEvent<HTMLDivElement>) => {
+      const d = drag.current;
+      if (d && d.id === e.pointerId) setDragY(Math.max(0, e.clientY - d.y0));
+    },
+    onPointerUp: (e: React.PointerEvent<HTMLDivElement>) => {
+      const d = drag.current;
+      drag.current = null;
+      if (!d || d.id !== e.pointerId) return;
+      const dy = e.clientY - d.y0;
+      const speed = dy / Math.max(1, e.timeStamp - d.t0);
+      if (dy > 72 || (dy > 24 && speed > 0.5)) onClose();
+      else setDragY(0);
+    },
+    onPointerCancel: () => {
+      drag.current = null;
+      setDragY(0);
+    },
+  };
+
+  /*
     What did not earn a place on the card itself: the other maps app, "Not right?" and
     "Know more about this place?". Each one is still a tap away, under More.
   */
   const label = echo.point.place.split(",")[0] ?? echo.title;
+  const [placeHead, ...placeRest] = echo.point.place.split(",");
   // Walking stays in the app (James, 2026-11-10: no hand-off to Maps). Driving keeps its maps link.
   const mapsHref = ground && mode === "driving" ? driveThereUrl(echo.point.at, label) : null;
   const hasMore = mapsHref !== null || onReport !== undefined || onSuggest !== undefined;
 
   return (
-    <div className="pop" role="dialog" aria-label={echo.title}>
+    <div
+      ref={sheetRef}
+      className={`pop${pinched ? " pop-pinched" : ""}${dragY ? " dragging" : ""}`}
+      role="dialog"
+      aria-label={echo.title}
+      style={dragY ? { transform: `translateY(${dragY}px)` } : undefined}
+    >
+      {/* A bottom sheet (the Card board): the handle drags it down to close. */}
+      <div className="pop-handle" aria-hidden="true" {...grab}>
+        <span />
+      </div>
       {/*
         The photograph, and it is the best idea in the whole design. The card does not
         describe the place it sends you to, it SHOWS you the place — and because ours have
@@ -241,25 +327,30 @@ export function EchoPopup({
           </div>
         ))}
 
-      {/* Floated, so the kicker line is the ✕'s line and a long title wraps clear of it. */}
-      <button className="pop-close" onClick={onClose} aria-label="Close">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6 6l12 12M18 6L6 18" />
-        </svg>
-      </button>
-
-      <span className={`pop-kicker cat-${echo.category}`}>
-        {CATEGORY_LABEL[echo.category]}
-        {/* The rarity decides whether the walk is worth taking, so it is here, before it. */}
-        {rarity !== "common" && <em className="pop-rarity">{rarity}</em>}
-        {/* On a short screen the mark rides this line instead of taking its own. */}
-        <span className="pop-truth-inline">
-          <TruthMark echo={echo} short />
+      {/* The kicker line is the ✕'s line, and the title has the full width under it. */}
+      <div className="pop-head">
+        <span className={`pop-kicker cat-${echo.category}`}>
+          {CATEGORY_LABEL[echo.category]}
+          {/* The rarity decides whether the walk is worth taking, so it is here, before it. */}
+          {rarity !== "common" && <em className="pop-rarity">{rarity}</em>}
+          {/* On a short screen the mark rides this line instead of taking its own. */}
+          <span className="pop-truth-inline">
+            <TruthMark echo={echo} short />
+          </span>
         </span>
-      </span>
+        <button className="pop-close" onClick={onClose} aria-label="Close">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
 
       <h3>{echo.title}</h3>
-      <p className="pop-where">{echo.point.place}</p>
+      {/* The rest of the address after its first comma goes first on a short screen. */}
+      <p className="pop-where">
+        {placeHead}
+        {placeRest.length > 0 && <span className="pop-where-rest">,{placeRest.join(",")}</span>}
+      </p>
       {/* How long it is, beside the mark, so a long address cannot crop it off. */}
       <span className="pop-truth">
         <TruthMark echo={echo} />
