@@ -1,0 +1,54 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, a kids telling, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the northeast corner of Charlton and Drayton streets, outside 330 Drayton, the Girl Scout First Headquarters. A museum with opening hours; the echo plays outside.
+# Position: Charlton and Drayton intersection from the street segments in the app's Savannah street file, set onto the northeast corner as the 1937 guide gives it (high confidence). About 50 m from the Andrew Low House echo, which is about Thackeray; this is the carriage house behind it.
+# Not a duplicate: savannah-the-gate-she-made is about Juliette Gordon Low's ironwork at her birthplace on Oglethorpe Avenue.
+id: savannah-a-clubhouse-in-the-carriage-house
+title: "A Clubhouse in the Carriage House"
+summary: "Behind Juliette Low's house was a carriage house. She left it to the Girl Scouts, and it became their headquarters in Savannah."
+place: "Girl Scout First Headquarters, 330 Drayton Street at Charlton Street, Savannah, Georgia"
+at: { lat: 32.07306, lng: -81.09286 }
+triggerRadiusKm: 0.035
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 65
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, lafayette-square, girl-scouts, juliette-gordon-low, kids]
+teaser: "Horses used to live in here. Then the Girl Scouts moved in."
+script: |
+  Find the two storey building on this corner of Charlton and Drayton. Look at its doors. It was not built for people.
+
+  It was built for horses and carriages.
+
+  It belonged to the big house next door, the home of a woman named Juliette Low. In March, nineteen twelve, in the drawing room of that house, she started the very first troop of Girl Scouts.
+
+  The girls needed somewhere to meet. And Juliette Low had a carriage house.
+
+  When she died, she left it to the Girl Scouts. By the nineteen thirties it was their headquarters in Savannah, a clubhouse where the carriages used to be.
+
+  Look at the building again.
+
+  The first Girl Scout clubhouse started out as a garage for horses.
+detail: >-
+  The 1937 guide: "In March 1912 Mrs. Low, in the drawing room of this house, founded the first troop of Girl Scouts" (the Low House, 329 Abercorn), and "SAVANNAH HEADQUARTERS OF THE GIRL SCOUTS OF AMERICA, 330 Drayton St., on the NE. corner of Charlton and Drayton Sts., is a two-story building which was formerly the carriage house of the Low residence. This was bequeathed by Mrs. Low to the Girl Scouts, and has since been used as their local headquarters." "The girls needed somewhere to meet" is the narrator's bridge, not a claim.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Find the two storey building on this corner of Charlton and Drayton."
+    source: 1
+    quote: "330 Drayton St., on the NE. corner of Charlton and Drayton Sts., is a two-story building which was formerly the carriage house of the Low residence."
+  - says: "In March, nineteen twelve, in the drawing room of that house, she started the very first troop of Girl Scouts."
+    source: 1
+    quote: "In March 1912 Mrs. Low, in the drawing room of this house, founded the first troop of Girl Scouts."
+  - says: "When she died, she left it to the Girl Scouts. By the nineteen thirties it was their headquarters in Savannah, a clubhouse where the carriages used to be."
+    source: 1
+    quote: "This was bequeathed by Mrs. Low to the Girl Scouts, and has since been used as their local headquarters."
+sources:
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

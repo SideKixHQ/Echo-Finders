@@ -5,7 +5,7 @@ id: savannah-the-bomb-in-wassaw-sound
 title: "The Bomb in Wassaw Sound"
 summary: "In 1958 an Air Force bomber dropped a 7,000 pound nuclear bomb into the water off Tybee after a midair collision. It has never been found."
 place: "South end of Tybee Island, facing Wassaw Sound, Georgia"
-at: { lat: 31.99480, lng: -80.84850 }
+at: { lat: 31.98900, lng: -80.84950 }
 triggerRadiusKm: 0.15
 category: history
 format: short

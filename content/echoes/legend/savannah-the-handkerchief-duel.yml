@@ -1,0 +1,84 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2). A legend, told as one, in the male narrator.
+# Listening spot: the south sidewalk of Bay Street just west of Bull, outside the old City Hotel building (the 1937 guide gives 23 West Bay; Gamble, "on the Bay near Whitaker"). Now a brewery and restaurant; the echo needs no entry.
+# Position: Bay at Whitaker and Bay at Bull from the street segments in the app's Savannah street file, set on the south side between them (medium confidence for the door). About 37 m from the Oglethorpe bench echo (savannah-yamacraw-bluff) on the north side of Bay; different side of the street, different subject.
+id: savannah-the-handkerchief-duel
+title: "The Handkerchief Duel"
+summary: "Duels were hatched in the bar of the old City Hotel. One tale, perhaps apocryphal, has a short-sighted man propose to fight across a table."
+place: "Old City Hotel, West Bay Street near Whitaker Street, Savannah, Georgia"
+at: { lat: 32.08108, lng: -81.09195 }
+triggerRadiusKm: 0.03
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 85
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  Gamble (1923) calls this "another ante-bellum story, and perhaps apocryphal" and tells it "as the tale goes". No names, no date, no record. That duels began in quarrels at the City Hotel, and that one man was shot dead there, is documented by Gamble from the newspapers; the handkerchief duel is not.
+minAge: 0
+quality: 0.8
+tags: [savannah, savannah-core, bay-street, duels, legend, taverns, hotels]
+teaser: "Twelve paces was not fair to a man who could not see. So he offered a table."
+script: |
+  Look at the old brick front of this building on Bay Street. For years it was the City Hotel, the best hotel in town, with a bar where the planters drank the best liquor in Savannah.
+
+  More than one duel was hatched behind these walls.
+
+  This one may never have happened. An old history of Savannah's duels tells it as a tale, and calls it perhaps apocryphal. No names survive.
+
+  As the tale goes, a bully in the bar picked a quarrel with a man who had very poor eyesight. The short-sighted man answered back, and was challenged. He accepted at once, and named his terms.
+
+  I am entitled, he said, to be placed on an equal footing with you as regards ability to see. At twenty paces I could not see you. So here is a table. I will sit on one side, you on the other. You will hold one end of a handkerchief, I the other. At the signal, we raise our pistols and fire.
+
+  That is not a duel, said the bully, that is murder.
+
+  With my eyesight, came the calm reply, it would be murder for me to meet you any other way. I am ready. Are you?
+
+  Friends stepped in. The bully apologised.
+
+  Look at the old walls again.
+
+  The best answer to a bully, if the tale is true, was a handkerchief and a table.
+detail: >-
+  Gamble (1923), chapter on the 1850s and 1860s: the City Hotel "on the Bay near Whitaker, for many years Savannah's leading hotel", its bar, "More than one duel that ended without bloodshed, as well as one in which a man was winged, was hatched behind the brick walls", and the handkerchief tale with its dialogue, which the script tightens; the wording "At twenty paces I could not see you" condenses "At ten or twenty paces I would be at a serious and unfair disadvantage". The 1937 guide: "The story goes that on many a misty morning coffee and pistols for two were ordered behind these hospitable old walls."
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "For years it was the City Hotel, the best hotel in town, with a bar where the planters drank the best liquor in Savannah."
+    source: 1
+    quote: "the old City Hotel, on the Bay near Whitaker, for many years Savannah's leading hotel for the planters and other visitors. Its bar was the gathering place for the convivially inclined, and there the best of liquors, do- mestic and imported, satisfied the palates of the most critical of connoisseurs."
+  - says: "More than one duel was hatched behind these walls."
+    source: 1
+    quote: "More than one duel that ended without bloodshed, as well as one in which a man was winged, was hatched behind the brick walls of the famous old hostelry"
+  - says: "More than one duel was hatched behind these walls."
+    source: 2
+    quote: "The story goes that on many a misty morning coffee and pistols for two were ordered behind these hospitable old walls."
+  - says: "An old history of Savannah's duels tells it as a tale, and calls it perhaps apocryphal."
+    source: 1
+    quote: "Another ante-bellum story, and perhaps apocryphal, is that of the young man with poor eyesight who became in- volved in a dispute at the old City Hotel"
+  - says: "I am entitled, he said, to be placed on an equal footing with you as regards ability to see."
+    source: 1
+    quote: "\"T am entitled to be placed upon an equal footing with you as regards ability to see,\" said he."
+  - says: "So here is a table. I will sit on one side, you on the other. You will hold one end of a handkerchief, I the other. At the signal, we raise our pistols and fire."
+    source: 1
+    quote: "Here is a table convenient. I will sit on one side, you on the other. Each will have his pistol in readiness for use. You will hold one end of a handkerchief with the left hand, I the other end. At the signal from the second pistols will be raised and fired."
+  - says: "That is not a duel, said the bully, that is murder."
+    source: 1
+    quote: "\"That is not a duel, that is murder,\" declared his op- ponent."
+  - says: "With my eyesight, came the calm reply, it would be murder for me to meet you any other way. I am ready. Are you?"
+    source: 1
+    quote: "\"With my eyesight it would be murder on your part for me to meet you otherwise,\" was the calm reply. \"I am ready; are you?\""
+  - says: "Friends stepped in. The bully apologised."
+    source: 1
+    quote: "Friends interposed, proper apology came from the of- fender"
+sources:
+  - title: "Savannah Duels and Duellists, 1733 to 1877 (Thomas Gamble, 1923)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannahduelsdue0000thom
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

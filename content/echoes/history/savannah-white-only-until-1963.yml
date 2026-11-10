@@ -1,0 +1,68 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the beach at the foot of the Tybee pier, on the ocean side of Tybee Island.
+# Position: the ocean beach at the pier's latitude from the coast data in the app's map, set on the sand inland of the waterline (medium confidence; the app's street file has no tiles on Tybee). No fetched source names the stretch of beach the teenagers waded into, so this is the island's main beach, not a measured spot.
+id: savannah-white-only-until-1963
+title: "White Only Until 1963"
+summary: "Until 1963 only white people could use this beach. A Savannah teenager who helped desegregate a beach later became an alderman."
+place: "Tybee Island beach at the pier, Tybee Island, Georgia"
+at: { lat: 31.99300, lng: -80.84560 }
+triggerRadiusKm: 0.1
+category: history
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.8
+tags: [savannah, tybee, civil-rights, segregation, beaches, african-american-history]
+teaser: "Look at who is in the water. In 1962, the law decided that."
+script: |
+  Look at the people in the water, and on the sand, all the way down the beach.
+
+  Within living memory, most of them would not have been allowed here.
+
+  Until nineteen sixty three, this was a beach that only white people could use. Black families from Savannah could look at the ocean on the drive out. They could not come down to this sand and walk into it.
+
+  It did not open by itself. In the nineteen sixties, a Black teenager from Savannah named Robert Robinson helped desegregate a beach near the city. NPR reported it in a single line, years later, and did not say which beach. This was the beach Savannah drove to.
+
+  Robinson grew up to be a civil rights attorney, and an alderman on Savannah's city council, one of the city's rising stars. In December nineteen eighty nine, a bomb mailed to his law office killed him. The man who sent it was convicted.
+
+  Look at the water again, and at everyone in it.
+
+  Somebody's courage made this ordinary.
+detail: >-
+  The Associated Press report carried by NBC News and CBS News (2024) says Tybee was "a Southern beach that only white people could use until 1963"; the two pages are one wire story and count as one source. NPR (2018) says Robinson "had helped desegregate a beach near Savannah as a teenager in the 1960s" and later became a city alderman, and that a bomb killed him "at his office in Savannah". NPR does not name the beach as Tybee; the script attributes the claim to NPR and says "a beach near Savannah". The conviction is Walter Leroy Moody's, federal, 1991 (CBS News, 2018). "This was the beach Savannah drove to" is the narrator's framing, not a claim that Robinson waded in here.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Until nineteen sixty three, this was a beach that only white people could use."
+    source: 1
+    quote: "appear to be singling out Black visitors to a Southern beach that only white people could use until 1963."
+  - says: "In the nineteen sixties, a Black teenager from Savannah named Robert Robinson helped desegregate a beach near the city."
+    source: 2
+    quote: "Robinson had helped desegregate a beach near Savannah as a teenager in the 1960s. He later became a city alderman and \"was considered one of Savannah's rising stars,\" as local TV WSAV has reported ."
+  - says: "Robinson grew up to be a civil rights attorney, and an alderman on Savannah's city council, one of the city's rising stars."
+    source: 2
+    quote: "another bomb killed civil rights attorney Robert E. Robinson at his office in Savannah, Ga."
+  - says: "In December nineteen eighty nine, a bomb mailed to his law office killed him."
+    source: 3
+    quote: "Authorities said Moody sent out four mail bombs in December of 1989, killing Judge Robert S. Vance, a member of the Atlanta-based 11th U.S. Circuit Court of Appeals, in Alabama and Robert E. Robinson, a black civil rights attorney from Savannah, Georgia."
+  - says: "The man who sent it was convicted."
+    source: 3
+    quote: "Moody was first convicted in 1991 in federal court and sentenced to seven life terms plus 400 years."
+sources:
+  - title: "A Georgia beach aims to disrupt Black students' spring bash (Associated Press, 2024)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/news/us-news/georgia-beach-aims-disrupt-black-students-spring-bash-big-crowds-broug-rcna148374
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Alabama Executes Serial Bomber Walter Leroy Moody, 83 (2018)"
+    publisher: "NPR"
+    url: https://www.npr.org/sections/thetwo-way/2018/04/19/603883731/alabama-serial-bomber-walter-leroy-moody-83-to-be-executed-thursday
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Alabama executes oldest inmate in modern history (2018)"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/walter-leroy-moody-jr-dead-executed-alabama-oldest-inmate-in-modern-history/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
