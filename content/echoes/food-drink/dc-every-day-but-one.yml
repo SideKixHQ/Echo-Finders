@@ -1,0 +1,67 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core (U.S. Capitol), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: The restaurant in the Capitol Visitor Center, under the East Front plaza, which serves Senate bean soup to visitors.
+# Position: Overture place 'The Capitol Cafe' (U.S. Capitol Visitor Center) at 38.88953, -77.00909 (medium confidence).
+id: dc-every-day-but-one
+title: "Every Day but One"
+summary: "Senate bean soup has been on the Senate menu since about 1904, every day but one. Visitors can order it downstairs here."
+place: "Capitol Visitor Center restaurant, U.S. Capitol, Washington, D.C."
+at: { lat: 38.88953, lng: -77.00909 }
+triggerRadiusKm: 0.05
+category: food-drink
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+inside: true
+hours: { fromHour: 9, toHour: 16 }
+tags: [washington, dc-core, us-capitol, senate, bean-soup, food]
+teaser: "A soup so traditional the Senate has served it every day for more than a century. Almost."
+script: |
+  Look at the menu on the counter here. Somewhere on it, you should find a plain looking soup. Senate bean soup.
+
+  It is about the simplest thing the government makes. Navy beans, ham hocks, onions, butter and water. A little salt and pepper.
+
+  And it has been on the Senate menu since around nineteen oh four.
+
+  Nobody agrees who started it. There are two stories, and they split down party lines. One says a Democratic senator from Idaho demanded bean soup every day. The other says it was a Republican from Minnesota, a year later.
+
+  Either way, the Senate kept serving it. Every single day. With one exception. During the Second World War, there was rationing, and one day the Senate ran out of beans.
+
+  That was it. One day, in more than a hundred years.
+
+  A reporter once stood in a Senate cafeteria for twenty minutes, asking the diners if they ate it. Nobody did. One said it is for tourists.
+
+  Which, today, is you.
+
+  Order a bowl. You are keeping a tradition alive.
+detail: >-
+  All from NPR's 2014 report with the Senate's associate historian, Betty Koed. The count of "every day but one" was given in 2014; the script says "in more than a hundred years" without updating it. The senators are not named because their stories are traditions, not records.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Navy beans, ham hocks, onions, butter and water. A little salt and pepper."
+    source: 1
+    quote: "The soup's original recipe only has about five ingredients - navy beans, ham hocks, onions, butter and water with some salt and pepper to taste."
+  - says: "And it has been on the Senate menu since around nineteen oh four."
+    source: 1
+    quote: "What we know is, around 1904, Senate bean soup shows up. And it's been on the Senate menu ever since that time."
+  - says: "There are two stories, and they split down party lines. One says a Democratic senator from Idaho demanded bean soup every day. The other says it was a Republican from Minnesota, a year later."
+    source: 1
+    quote: "That's because there are two tales split down party lines. The first suggest that in 1903, Idaho Democratic Senator Frank Dubois demanded that bean soup be available every day. Koed says another story pins it to Republican Senator Newt Nelson of Minnesota, who supposedly made a similar request a year later."
+  - says: "During the Second World War, there was rationing, and one day the Senate ran out of beans."
+    source: 1
+    quote: "There was one time in the 1940s during World War II when they actually went a day without bean soup because there was food rationing going on and they ran out of their ration of beans."
+  - says: "A reporter once stood in a Senate cafeteria for twenty minutes, asking the diners if they ate it. Nobody did. One said it is for tourists."
+    source: 1
+    quote: "I think it's for tourists. Employees don't want to have that one."
+  - says: "Look at the menu on the counter here."
+    source: 1
+    quote: "the restaurant in the Capitol visitors center, which also serves Senate bean soup."
+sources:
+  - title: "In The Nation's Capital, A Signature Soup Stays On The Menu"
+    publisher: "NPR, All Things Considered (WAMU)"
+    url: https://www.npr.org/2014/12/26/373303775/in-the-nations-capital-a-signature-soup-stays-on-the-menu
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

@@ -1,0 +1,79 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core (National Mall), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: The Smithsonian carousel on the National Mall, on the south side of the Mall in front of the Arts and Industries Building.
+# Position: south side of the Mall opposite the Smithsonian Castle and Arts and Industries Building, about 38.88815, -77.02420, from the carousel's long-standing site; not matched to an Overture place (medium confidence).
+id: dc-the-horse-called-freedom-rider
+title: "The Horse Called Freedom Rider"
+summary: "A children's echo: this carousel once let only white children ride. On the day of the March on Washington, a baby girl changed that."
+place: "Smithsonian carousel, National Mall, Washington, D.C."
+at: { lat: 38.88815, lng: -77.02420 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 71
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+hours: { fromHour: 10, toHour: 17 }
+tags: [washington, national-mall, carousel, civil-rights, gwynn-oak, kids]
+teaser: "This carousel used to be somewhere else, and not every child could ride it."
+script: |
+  Look at the painted horses going round and round. Bright colours, music, children waving. It looks like it has always been here.
+
+  But it has not. This carousel used to stand in an amusement park outside Baltimore, called Gwynn Oak. And for years, only white children were allowed to ride it.
+
+  People thought that was wrong. Black and white grown ups protested at the park, again and again, for years. Some were arrested.
+
+  At last, the park opened to everyone. The day it happened was the twenty eighth of August, nineteen sixty three. On the very same day, here in Washington, Dr. Martin Luther King gave his I Have a Dream speech.
+
+  And at Gwynn Oak, the first Black child to ride this carousel climbed on. Her name was Sharon Langley. She was eleven months old.
+
+  Many years later, she wrote a children's book about it. And in twenty twenty six, when the carousel opened again here after being fixed up, Sharon rode it again. Her horse has a name. Freedom Rider.
+
+  So pick a horse. Hold on tight.
+
+  Every child gets a turn now.
+detail: >-
+  Told for children. Sharon Langley is living and public in this story (she co-wrote a children's book about it and spoke to NPR at the 2026 reopening). The protests and arrests at Gwynn Oak are from NPR's report and its 1963 photograph caption.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "This carousel used to stand in an amusement park outside Baltimore, called Gwynn Oak."
+    source: 1
+    quote: "they were among the first to desegregate the carousel when it was located at Gwynn Oak Amusement Park outside of Baltimore."
+  - says: "Black and white grown ups protested at the park, again and again, for years. Some were arrested."
+    source: 1
+    quote: "Desegregating Gwynn Oak Amusement Park took several years of protests by Black and white activists"
+  - says: "The day it happened was the twenty eighth of August, nineteen sixty three. On the very same day, here in Washington, Dr. Martin Luther King gave his I Have a Dream speech."
+    source: 1
+    quote: "It was finally integrated on Aug. 28, 1963, the same day that Dr. Martin Luther King, Jr"
+  - says: "And at Gwynn Oak, the first Black child to ride this carousel climbed on. Her name was Sharon Langley. She was eleven months old."
+    source: 1
+    quote: "said Sharon Langley, who was the"
+  - says: "She was eleven months old."
+    source: 1
+    quote: "She was just 11 months old."
+  - says: "Many years later, she wrote a children's book about it."
+    source: 1
+    quote: "Years later, Langley co-wrote a children's"
+  - says: "Sharon rode it again. Her horse has a name. Freedom Rider."
+    source: 1
+    quote: "This week, she rode again, on a horse called Freedom Rider"
+  - says: "And in twenty twenty six, when the carousel opened again here after being fixed up"
+    source: 1
+    quote: "The Smithsonian Institution's carousel is back open for business Friday after being closed for nearly three years for restoration and refurbishments."
+  - says: "Some were arrested."
+    source: 1
+    quote: "The man was arrested after he and some 400 other demonstrators protested the whites-only policy of Gwynn Oak Amusement Park"
+sources:
+  - title: "Decades-old, newly restored Smithsonian carousel reopens, to children's delight"
+    publisher: "NPR, All Things Considered"
+    url: https://www.npr.org/2026/04/24/nx-s1-5770103/smithsonian-carousel-reopens-national-mall-dc
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "57 Years After Maryland's First Amusement Park Desegregates, Discussion Looks Back On Milestone"
+    publisher: "CBS Baltimore"
+    url: https://www.cbsnews.com/baltimore/news/57-years-after-marylands-first-amusement-park-desegregates-discussion-looks-back-on-milestone/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

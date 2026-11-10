@@ -1,0 +1,85 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Georgetown), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Georgetown University main campus, inside the front gates at 37th and O Streets NW, on the lawn before Healy Hall, near Isaac Hawkins Hall.
+# Position: Overture place 'Healy Hall' at 38.90728, -77.07275; set between the front gates and Healy Hall. Isaac Hawkins Hall's own coordinates were not found in a reachable source, so the radius covers the front lawn (medium confidence).
+id: dc-the-first-name-on-the-bill-of-sale
+title: "The First Name on the Bill of Sale"
+summary: "In 1838 the Jesuits who ran Georgetown sold 272 enslaved people to pay its debts. In 2017 a hall was renamed for the first name on the list."
+place: "Isaac Hawkins Hall, Georgetown University, 37th and O Streets NW, Washington, D.C."
+at: { lat: 38.90730, lng: -77.07230 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [washington, georgetown, georgetown-university, slavery, the-272, african-american-history]
+teaser: "One building on this campus carries the name of a man the college sold."
+script: |
+  Look up at the grey stone towers of the university. In eighteen thirty eight, the college here was deep in debt. It might not have survived.
+
+  The Jesuit priests who ran it found the money in people. They sold two hundred and seventy two enslaved men, women and children from their plantations in Maryland, to plantations in Louisiana. The sale brought in one hundred and fifteen thousand dollars. It saved the school.
+
+  The priest responsible for the sale was Father Thomas Mulledy, a president of the college. And his orders said families were not to be split up. He broke up families anyway.
+
+  For a long time, one of the buildings here carried his name. Mulledy Hall.
+
+  In twenty seventeen, the university changed it. They chose the first name on the bill of sale. Isaac Hawkins. He was sixty five years old, and he was sold with his family.
+
+  The university said it chose the name Isaac on purpose. In the Bible, God told Abraham to sacrifice his son Isaac, and spared him at the last moment.
+
+  Look at the hall that carries his name.
+
+  In eighteen thirty eight, Isaac was not spared.
+pronunciations:
+  - written: Mulledy
+    say: MULL-uh-dee
+detail: >-
+  The figure of $115,000 is from an alumnus researcher quoted by CBS; NPR gives "more than $3 million today". That Mulledy broke up families "in violation of his orders" is Georgetown president John DeGioia's statement to NPR. The renaming and Hawkins's age and family are from NBC's report of the 2017 dedication.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "In eighteen thirty eight, the college here was deep in debt."
+    source: 3
+    quote: "It was also massively in debt."
+  - says: "They sold two hundred and seventy two enslaved men, women and children from their plantations in Maryland, to plantations in Louisiana."
+    source: 2
+    quote: "The school benefited from the sale of 272 slaves in 1838. They were shipped from Jesuit plantations in Maryland to Louisiana."
+  - says: "The sale brought in one hundred and fifteen thousand dollars. It saved the school."
+    source: 3
+    quote: "\"They were sold for $115,000 in 1838 money, which would be about $3.3 million today,\" he told Miller. \"And that money was literally used to help Georgetown avoid bankruptcy.\""
+  - says: "And his orders said families were not to be split up. He broke up families anyway."
+    source: 2
+    quote: "The second - in violation of his orders, the person responsible for that sale, Father Thomas Mulledy - he broke up families."
+  - says: "For a long time, one of the buildings here carried his name. Mulledy Hall."
+    source: 1
+    quote: "Originally named Mulledy Hall and McSherry Hall — after the Jesuit school presidents who brokered the sale"
+  - says: "They chose the first name on the bill of sale. Isaac Hawkins."
+    source: 2
+    quote: "renaming one of the buildings on campus for Isaac, whose name is the first name in the bill of sale."
+  - says: "He was sixty five years old, and he was sold with his family."
+    source: 1
+    quote: "Hawkins, a 65-year-old enslaved man, was sold to the plantation along with his family."
+  - says: "In the Bible, God told Abraham to sacrifice his son Isaac, and spared him at the last moment."
+    source: 2
+    quote: "God commanded Abraham to sacrifice Isaac, his son, as a test of faith. At the last minute, God spared Isaac."
+  - says: "In eighteen thirty eight, Isaac was not spared."
+    source: 2
+    quote: "But in 1838, Isaac was not spared. He was sold."
+sources:
+  - title: "Georgetown Apologizes, Renames Halls After Slaves"
+    publisher: "NBC News, NBCBLK"
+    url: https://www.nbcnews.com/news/nbcblk/georgetown-apologizes-renames-halls-after-slaves-n747976
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Georgetown University Works To Amend Involvement In Slavery"
+    publisher: "NPR, All Things Considered"
+    url: https://www.npr.org/2016/09/02/492443229/georgetown-university-works-to-amend-involvement-in-slavery
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Georgetown University confronts its history with slavery"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/georgetown-university-confronts-its-history-with-slavery/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

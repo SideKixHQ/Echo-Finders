@@ -1,0 +1,60 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core (U.S. Capitol), following the six beats in docs/writing-echoes.md (echo-format-v2). Told as legend, male narrator.
+# Listening spot: Inside the U.S. Capitol on a tour, National Statuary Hall, the old chamber of the House of Representatives, south of the Rotunda.
+# Position: the House side of the Capitol just south of the Rotunda's centre (38.88990, -77.00906); the hall's exact centre was not found in a reachable source (medium confidence).
+id: dc-the-old-man-finishing-his-speech
+title: "The Old Man Finishing His Speech"
+summary: "John Quincy Adams collapsed at his desk in the old House chamber, now Statuary Hall. Workers have told of hearing him since. A legend."
+place: "National Statuary Hall, U.S. Capitol, Washington, D.C."
+at: { lat: 38.88960, lng: -77.00905 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 65
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A legend. The collapse and death of John Quincy Adams in 1848 are history; the footsteps and the voice are folklore, reported by Capitol workers and collected by Jim Berard and John Alexander, as CBS News described. Nothing supernatural is claimed as fact, and the script says so.
+minAge: 0
+quality: 0.75
+inside: true
+hours: { fromHour: 9, toHour: 16 }
+voice: wC1005J19tvhoqqC2hkf
+tags: [washington, dc-core, us-capitol, statuary-hall, john-quincy-adams, ghosts]
+teaser: "A former President collapsed in this room. Some say he is still trying to finish."
+script: |
+  Stand in this half round hall full of statues, under the great curved ceiling. Before it was Statuary Hall, it was the chamber of the House of Representatives.
+
+  One of its members was a former President. After he left the White House, John Quincy Adams got himself elected to the House, and took a seat in this room.
+
+  In eighteen forty eight, he was on his feet in this chamber, speaking against the war with Mexico. And he collapsed. A stroke. They carried him to a room just off the floor. He died there two days later. That much is history.
+
+  What comes next is a legend. There is no proof of any of it.
+
+  Capitol workers have told of hearing footsteps in here, when the hall is empty. Some say it is Adams. Some say they have heard an old man's voice, still trying to finish his speech.
+
+  Stand still for a moment, and listen.
+
+  If you hear footsteps behind you, nobody has ever proved whose they are.
+detail: >-
+  The collapse, the speech against the Mexican War and his death two days later are from the CBS News report; a reviewer should add a public record (the House's own history office was unreachable).
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Before it was Statuary Hall, it was the chamber of the House of Representatives."
+    source: 1
+    quote: "had a stroke on the House floor, now Statuary Hall, while giving a speech against the Mexican War."
+  - says: "In eighteen forty eight, he was on his feet in this chamber, speaking against the war with Mexico. And he collapsed. A stroke."
+    source: 1
+    quote: "Tragedy struck again in 1848 when John Quincy Adams, who was elected to the House after serving as president, had a stroke on the House floor, now Statuary Hall, while giving a speech against the Mexican War."
+  - says: "They carried him to a room just off the floor. He died there two days later."
+    source: 1
+    quote: "He died two days later in a room off the floor"
+  - says: "Capitol workers have told of hearing footsteps in here, when the hall is empty. Some say it is Adams. Some say they have heard an old man's voice, still trying to finish his speech."
+    source: 1
+    quote: "Capitol workers have since reported hearing Adams' footsteps, or the specter of the old man trying to finish his speech."
+sources:
+  - title: "Haunted House On The Hill"
+    publisher: "CBS News (Associated Press)"
+    url: https://www.cbsnews.com/news/haunted-house-on-the-hill/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
