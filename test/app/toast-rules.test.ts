@@ -5,6 +5,8 @@ import {
   NEAR_SPACING_MS,
   NO_NEAR_MEMORY,
   nearToastFor,
+  nextAfterSync,
+  walkMinutes,
   rememberNear,
   toastDistance,
   unlockLine,
@@ -69,5 +71,28 @@ describe("what the toasts say", () => {
     expect(unlockLine(echo("a", 0.04), "walking")).toBe("Walk within 40 m to unlock it");
     expect(unlockLine(echo("a", 0.09), "walking")).toBe("Walk within 90 m to unlock it");
     expect(unlockLine(echo("a", 3), "driving")).toBe("Get within 3 km to unlock it");
+  });
+});
+
+describe("toast B: Next", () => {
+  it("the nearest echo still waiting, never the one that just synced", () => {
+    const around = [near("synced", 0.01), near("heard", 0.1, false), near("far", 0.6), near("close", 0.46)];
+    expect(nextAfterSync("synced", around, null)).toEqual({ echo: around[3]!.echo, label: "Next · 8 min walk" });
+  });
+
+  it("the planned walk's own next stop, when there is one", () => {
+    const stop = { echo: echo("stop"), distanceKm: 0.35 };
+    expect(nextAfterSync("synced", [near("close", 0.05)], stop)?.label).toBe("Next stop · 6 min");
+    expect(nextAfterSync("synced", [near("close", 0.05)], stop)?.echo.id).toBe("stop");
+  });
+
+  it("nothing when nothing is left", () => {
+    expect(nextAfterSync("synced", [near("synced", 0.01), near("done", 0.2, false)], null)).toBeNull();
+    expect(nextAfterSync("stop", [], { echo: echo("stop"), distanceKm: 0 })).toBeNull();
+  });
+
+  it("minutes on foot, at least one", () => {
+    expect(walkMinutes(0)).toBe(1);
+    expect(walkMinutes(0.35)).toBe(6);
   });
 });

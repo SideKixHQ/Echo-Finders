@@ -95,19 +95,27 @@ export function NearToast({
   );
 }
 
-/** B: arrived, and it synced. Tapping it plays. */
+/**
+ * B: arrived, and it synced. Tapping it plays.
+ *
+ * And, when there is one, where to go next on its own row (James, 2026-11-10, bringing
+ * back the old card's Next): it opens that echo's card and centres the map on it. It
+ * does not start directions; the card's own button does that.
+ */
 export function SyncedToast({
   title,
+  next,
   onPlay,
   onClose,
 }: {
   readonly title: string;
+  readonly next?: { readonly label: string; readonly title: string; readonly onGo: () => void } | null;
   readonly onPlay: () => void;
   readonly onClose: () => void;
 }) {
   const [leaving, leave] = useLeave(onClose);
   return (
-    <Shell kind="synced" leaving={leaving}>
+    <Shell kind={next ? "synced toast-has-next" : "synced"} leaving={leaving}>
       <button className="toast-play" onClick={onPlay} aria-label={`Synced. Play: ${title}`}>
         <span className="toast-orb toast-orb-play" aria-hidden="true">
           <svg viewBox="0 0 24 24">
@@ -120,6 +128,16 @@ export function SyncedToast({
         </span>
       </button>
       <Close onClick={leave} />
+      {next && (
+        <span className="toast-row">
+          <button className="toast-act toast-act-next" onClick={next.onGo} aria-label={`${next.label}: ${next.title}`}>
+            {next.label}
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+        </span>
+      )}
     </Shell>
   );
 }

@@ -42,6 +42,7 @@ import {
   LOCKED_KEY,
   NEAR_SHOW_MS,
   nearToastFor,
+  nextAfterSync,
   readFlag,
   readNearMemory,
   rememberNear,
@@ -2742,6 +2743,30 @@ export function App() {
                   <SyncedToast
                     key={`synced-${syncedNow.echo.id}`}
                     title={syncedNow.echo.title}
+                    next={(() => {
+                      // Where to walk next, as the old sync card offered: only when you
+                      // choose where to go (not on somebody else's route, a flight).
+                      if (!selfDirected) return null;
+                      const stopEcho = plan?.active && beacon ? LIBRARY_BY_ID.get(beacon) : undefined;
+                      const from = state.position?.at ?? null;
+                      const n = nextAfterSync(
+                        syncedNow.echo.id,
+                        around,
+                        stopEcho ? { echo: stopEcho, distanceKm: from ? distanceKm(from, stopEcho.point.at) : 0 } : null,
+                      );
+                      if (!n) return null;
+                      return {
+                        label: n.label,
+                        title: n.echo.title,
+                        onGo: () => {
+                          setSyncedNow(null);
+                          setTab("map");
+                          setWalkingView("map");
+                          setFocusId(n.echo.id);
+                          setSelectedId(n.echo.id);
+                        },
+                      };
+                    })()}
                     onPlay={() => {
                       playOrAsk(syncedNow.echo);
                       setSyncedNow(null);

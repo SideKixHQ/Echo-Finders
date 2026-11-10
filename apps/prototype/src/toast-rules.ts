@@ -68,6 +68,44 @@ export function rememberNear(memory: NearMemory, echoId: string, now: number): N
   return { shown: memory.shown.includes(echoId) ? memory.shown : [...memory.shown, echoId], lastAt: now };
 }
 
+/**
+ * Minutes on foot, as the old sync card worked it out: a street walk is about a third
+ * longer than the crow flies, at 1.25 m/s. The directions bar has the real time once asked.
+ */
+export function walkMinutes(km: number): number {
+  return Math.max(1, Math.round((km * 1000 * 1.3) / 1.25 / 60));
+}
+
+export interface NextEcho {
+  readonly echo: Echo;
+  /** The button's words: "Next · 6 min walk", or "Next stop · 6 min" on a planned walk. */
+  readonly label: string;
+}
+
+/**
+ * Toast B's Next: where to walk after this one.
+ *
+ * On a planned walk it is the walk's own next stop (already the route target), however far.
+ * Otherwise the nearest echo still waiting, not the best ranked: this is about where to
+ * walk. Never the one that just synced. Null when there is nothing left.
+ */
+export function nextAfterSync(
+  syncedId: string,
+  around: readonly NearCandidate[],
+  plannedStop: { readonly echo: Echo; readonly distanceKm: number } | null,
+): NextEcho | null {
+  if (plannedStop) {
+    if (plannedStop.echo.id === syncedId) return null;
+    return { echo: plannedStop.echo, label: `Next stop · ${walkMinutes(plannedStop.distanceKm)} min` };
+  }
+  let best: NearCandidate | null = null;
+  for (const a of around) {
+    if (!a.sealed || a.echo.id === syncedId) continue;
+    if (!best || a.distanceKm < best.distanceKm) best = a;
+  }
+  return best ? { echo: best.echo, label: `Next · ${walkMinutes(best.distanceKm)} min walk` } : null;
+}
+
 /** A distance as the toasts say it: "80 m", "1.2 km", "12 km". */
 export function toastDistance(km: number): string {
   if (km < 1) return `${Math.max(5, Math.round((km * 1000) / 5) * 5)} m`;

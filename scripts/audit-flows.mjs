@@ -473,6 +473,12 @@ async function arrive() {
     const nav = await p.locator('.nav').boundingBox();
     check('Synced toast: clear of the tab bar', box !== null && nav !== null && box.y + box.height <= nav.y,
       JSON.stringify({ box, nav }));
+    // Next, on its own row: the nearest echo still waiting, and how far a walk it is.
+    const next = p.locator('.toast-synced .toast-act-next');
+    check('Synced toast: offers Next with a walking time',
+      /^Next · \d+ min walk/.test((await next.innerText().catch(() => '')).trim()));
+    const nb = await next.boundingBox();
+    check('Synced toast: Next is a 44px target', nb !== null && nb.height >= 44, JSON.stringify(nb));
     const close = p.locator('.toast-synced .toast-close');
     const cb = await close.boundingBox();
     check('Synced toast: the ✕ is a 44px target', cb !== null && cb.width >= 44 && cb.height >= 44, JSON.stringify(cb));
@@ -598,6 +604,23 @@ async function arrive() {
       !(await p.locator('.toast-synced', { hasText: 'Eight million' }).count()));
     await ctx.close();
   }
+}
+
+// ── Synced toast: Next opens the next echo's card, and starts no directions ──────
+{
+  const arrived = await arrive();
+  if (arrived) {
+    const { ctx, p } = arrived;
+    const next = p.locator('.toast-synced .toast-act-next');
+    const name = ((await next.getAttribute('aria-label')) ?? '').replace(/^Next[^:]*: /, '');
+    await next.click().catch(() => {});
+    await p.waitForTimeout(800);
+    check('Synced toast: Next opens that echo\'s card',
+      name.length > 0 && await visible(p.locator('.pop', { hasText: name.slice(0, 20) })), name);
+    check('Synced toast: Next closes the toast', !(await p.locator('.toast-synced').count()));
+    check('Synced toast: Next starts no directions', !(await visible(p.locator('.dirbar'))));
+    await ctx.close();
+  } else check('Synced toast: arrives again for Next', false);
 }
 
 // ── How echoes unlock, once, after first run ────────────────────────────────────

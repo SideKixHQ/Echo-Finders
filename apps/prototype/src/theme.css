@@ -3013,6 +3013,17 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   width: 14px; height: 14px; fill: none; stroke: var(--white); stroke-width: 2.6; stroke-linecap: round;
 }
 .toast-synced .toast-close { align-self: center; }
+.toast-synced.toast-has-next .toast-close { align-self: flex-start; }
+/* Next: the quiet one beside a toast that is already a play button, so an outline in aqua
+   rather than a second filled button. */
+.toast .toast-act-next {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: none; color: var(--aqua-ink); border: 1.5px solid var(--aqua);
+}
+.toast-act-next svg {
+  width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+}
 
 /* The button row: its own line, lined up with the words. */
 .toast-row { flex-basis: 100%; display: flex; padding-left: 52px; padding-bottom: 4px; }
