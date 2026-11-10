@@ -6,9 +6,9 @@
  * not necessarily going where today's is. Until that exists this matches the handful of
  * flights the library covers.
  *
- * It lives in its own file because two screens need it. Onboarding asks for a flight number
- * on the way in, and the journey screen asks again every time after that, and a lookup that
- * behaved differently on the two doors would be the sort of bug nobody thinks to look for.
+ * It lives in its own file so any screen that asks for a flight number asks the same way.
+ * The journey screen is the one that does now; first run used to as well, and a lookup that
+ * behaved differently on two doors would be the sort of bug nobody thinks to look for.
  *
  * Deliberately forgiving about spacing and case, because somebody is typing a code off a
  * boarding pass, on a phone, probably in a queue.

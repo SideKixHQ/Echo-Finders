@@ -60,19 +60,9 @@ async function freshApp() {
   p.on('pageerror', (e) => errors.push(e.message));
   await p.goto(`http://127.0.0.1:${PORT}/`, { waitUntil: 'domcontentloaded' });
   await p.waitForTimeout(800);
-  for (let i = 0; i < 9 && await p.locator('.onb').count(); i++) {
-    const start = p.getByRole('button', { name: /Start looking/ });
-    const allow = p.getByRole('button', { name: /Allow location/ });
-    if (await start.count()) await start.click();
-    else if (await allow.count()) { await allow.click(); await p.waitForTimeout(1500); }
-    else {
-      const all = p.locator('.onb-all');
-      if (await all.count() && await all.isEnabled()) await all.click();
-      await p.locator('.onb-go').first().click();
-    }
-    await p.waitForTimeout(400);
-  }
-  await p.locator('.onb').waitFor({ state: 'detached', timeout: 10000 }).catch(() => {});
+  // First run is one screen: Find echoes near me asks for the location and opens the map.
+  await p.getByRole('button', { name: 'Find echoes near me' }).click();
+  await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
   await p.waitForTimeout(2000);
   await p.getByLabel(/^Show me the map|the street map/).click().catch(() => {});
   await p.waitForTimeout(600);
@@ -192,18 +182,9 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   p.on('pageerror', (e) => errors.push(e.message));
   await p.goto(`http://127.0.0.1:${PORT}/`, { waitUntil: 'domcontentloaded' });
   await p.waitForTimeout(800);
-  for (let i = 0; i < 9 && await p.locator('.onb').count(); i++) {
-    const start = p.getByRole('button', { name: /Start looking/ });
-    const allow = p.getByRole('button', { name: /Allow location/ });
-    if (await start.count()) await start.click();
-    else if (await allow.count()) { await allow.click(); await p.waitForTimeout(1500); }
-    else {
-      const all = p.locator('.onb-all');
-      if (await all.count() && await all.isEnabled()) await all.click();
-      await p.locator('.onb-go').first().click();
-    }
-    await p.waitForTimeout(400);
-  }
+  // First run is one screen: Find echoes near me asks for the location and opens the map.
+  await p.getByRole('button', { name: 'Find echoes near me' }).click();
+  await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
   await p.waitForTimeout(2500);
   const city = p.locator('.city-card-kick');
   if (!(await visible(city))) await p.getByRole('button', { name: /Show me where they are/ }).click().catch(() => {});
@@ -213,6 +194,58 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.waitForTimeout(600);
   check('City overview: Settings in the tab bar leaves it', !(await visible(city)) && await visible(p.locator('.panel.feedback').first()));
   await ctx.close();
+}
+
+// ── First run ───────────────────────────────────────────────────────────────────
+// One screen (James, 2026-11-10): the echo, one line, Find echoes near me, a search box
+// and the free line. Both ways in have to land on the map, and the search one has to land
+// on the place searched for.
+{
+  const fresh = async (geo) => {
+    const ctx = await browser.newContext({
+      viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
+      ignoreHTTPSErrors: true, ...(geo ? { permissions: ['geolocation'], geolocation: START } : { permissions: [] }),
+    });
+    await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+    const p = await ctx.newPage();
+    p.setDefaultTimeout(6000);
+    p.on('pageerror', (e) => errors.push(e.message));
+    await p.goto(`http://127.0.0.1:${PORT}/`, { waitUntil: 'domcontentloaded' });
+    await p.waitForTimeout(800);
+    return { ctx, p };
+  };
+  {
+    const { ctx, p } = await fresh(true);
+    const onb = p.locator('.onb');
+    check('First run: says what it is', await visible(onb.getByRole('heading', { name: 'Hear what happened here.' })));
+    check('First run: the free line is shown', await visible(onb.getByText('Your first ten echoes are free.')));
+    check('First run: a search box', await visible(onb.getByLabel('Search a city or ZIP code')));
+    check('First run: one screen, nothing to step through',
+      (await onb.getByRole('button').count()) === 1 && (await onb.getByText(/Get started|Skip|Continue/).count()) === 0);
+    await onb.getByRole('button', { name: 'Find echoes near me' }).click();
+    await onb.waitFor({ state: 'detached', timeout: 20000 }).catch(() => {});
+    await p.waitForTimeout(1500);
+    check('First run: Find echoes near me opens the map', !(await onb.count()) && await visible(p.locator('.nav')));
+    check('First run: and uses the location it asked for', !(await visible(p.getByText('Where are you?'))));
+    await p.reload({ waitUntil: 'domcontentloaded' });
+    await p.waitForTimeout(1200);
+    check('First run: only once', !(await p.locator('.onb').count()));
+    await ctx.close();
+  }
+  {
+    const { ctx, p } = await fresh(false);
+    const box = p.getByLabel('Search a city or ZIP code');
+    await box.fill('Wilmington');
+    await p.waitForTimeout(400);
+    const hit = p.locator('.fr-hit').first();
+    check('First run: search finds a city', await visible(hit) && /Wilmington/.test(await hit.innerText()));
+    await hit.click();
+    await p.locator('.onb').waitFor({ state: 'detached', timeout: 10000 }).catch(() => {});
+    await p.waitForTimeout(1500);
+    check('First run: search opens the map there',
+      !(await p.locator('.onb').count()) && /Wilmington/.test(await p.getByLabel(/Change your journey/).innerText().catch(() => '')));
+    await ctx.close();
+  }
 }
 
 // ── A shared link ───────────────────────────────────────────────────────────────
@@ -230,18 +263,9 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   p.on('pageerror', (e) => errors.push(e.message));
   await p.goto(`http://127.0.0.1:${PORT}/?echo=wilmington-the-first-curtain`, { waitUntil: 'domcontentloaded' });
   await p.waitForTimeout(800);
-  for (let i = 0; i < 9 && await p.locator('.onb').count(); i++) {
-    const start = p.getByRole('button', { name: /Start looking/ });
-    const allow = p.getByRole('button', { name: /Allow location/ });
-    if (await start.count()) await start.click();
-    else if (await allow.count()) { await allow.click(); await p.waitForTimeout(1500); }
-    else {
-      const all = p.locator('.onb-all');
-      if (await all.count() && await all.isEnabled()) await all.click();
-      await p.locator('.onb-go').first().click();
-    }
-    await p.waitForTimeout(400);
-  }
+  // First run is one screen: Find echoes near me asks for the location and opens the map.
+  await p.getByRole('button', { name: 'Find echoes near me' }).click();
+  await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
   await p.waitForTimeout(2000);
   const card = p.locator('.pop');
   check('Shared link: opens the story\'s card', await visible(card) && /The First Curtain/.test(await card.innerText()));

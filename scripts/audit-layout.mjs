@@ -401,19 +401,15 @@ async function walk(width, height, theme) {
   const look = async (name) => record(`${name} (${tag})`, await p.evaluate(PROBE));
 
   /* Onboarding is a screen too, and the one every single person sees. */
-  for (let i = 0; i < 9 && (await p.locator('.onb').count()); i++) {
-    await look(`onboarding${i + 1}`);
-    const start = p.getByRole('button', { name: /Start looking/ });
-    const allow = p.getByRole('button', { name: /Allow location/ });
-    if (await start.count()) await start.click();
-    else if (await allow.count()) { await allow.click(); await p.waitForTimeout(1500); }
-    else {
-      const all = p.locator('.onb-all');
-      if (await all.count() && await all.isEnabled()) { await all.click(); await p.waitForTimeout(200); }
-      await p.locator('.onb-go').first().click();
-    }
-    await p.waitForTimeout(400);
-  }
+  await look('onboarding');
+  // And with the search open, where the places list takes the echo's room.
+  await p.getByLabel('Search a city or ZIP code').fill('Wilm');
+  await p.waitForTimeout(300);
+  await look('onboarding-search');
+  await p.getByLabel('Search a city or ZIP code').fill('');
+  // First run is one screen: Find echoes near me asks for the location and opens the map.
+  await p.getByRole('button', { name: 'Find echoes near me' }).click();
+  await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
   await p.waitForTimeout(4500);
 
   /*

@@ -1,640 +1,130 @@
 /**
- * First run, rebuilt against the design's own onboarding.
+ * First run: one screen.
  *
- * The version this replaces was three steps written from a *list of step names* rather than
- * from the prototype, which is the same mistake that produced an aeroplane sharing nothing
- * with the design's aeroplane but the word. The design's flow is six steps with a back
- * button, and each one earns its place; mine had no welcome, no interests, no headphone
- * check, no way back, and a first step with no way forward at all.
+ * It was six. A welcome with three value cards, how are you travelling, which flight or
+ * which drive, nine category chips, who is listening, a headphones check, and three
+ * permission cards before the map. James cut it to this on purpose (2026-11-10): the old
+ * one had "so many words", and every one of those questions has a good default or a
+ * home in Settings.
  *
- * What is taken verbatim: the shape (welcome, then one decision per screen, dots and a
- * back arrow in a fixed header), the three value cards on the welcome, interests as the
- * same chips the map uses, audience as two cards rather than a switch, and a headphone
- * check that plays something.
+ * What is left is the two ways in. Find echoes near me asks for the location and opens the
+ * map where you are; the search box opens the map somewhere else, so a refusal or a
+ * listener at home still lands on echoes. Everything the old flow asked now starts at its
+ * default: walking, around here, every category on, kids mode off (Settings), no test line.
  *
- * What is ours, and why: the design is a flight product, so its second step asks for a
- * flight number. Ours has to ask something prior to that, because a walker has no flight
- * and no route at all — and that question turns out to be the most important screen in the
- * app. See `docs/04-shape-of-the-app.md`: the whole product had exactly one front door and
- * it was the wrong one for the commonest case.
+ * The location prompt still comes from a tap, never cold: on iOS a refusal cannot be asked
+ * again, only fixed in Settings, so the words on the button are the reason.
  *
- * Location is asked for on the step whose reason makes it obvious, and only on the path
- * that needs it now. A permission requested cold is a permission lost — on iOS a refusal
- * cannot be re-prompted, only fixed in Settings, which nobody does — so the words come from
- * `CAPABILITY_NEEDS` and arrive after the listener has said they want to walk around here.
+ * Search is `place-search.ts`'s, the same ZIP and place lookup the journey menu and
+ * "Where are you?" use, with this screen's own box around it.
  */
 
-import { useEffect, useRef, useState } from "react";
-import { MODE_ICON } from "./travel";
-import { lookupFlight } from "./flights";
-import { CAPABILITY_NEEDS, type EchoCategory, type TravelMode } from "@echofinders/core";
-import { CATEGORY_ICON, CHIP_GROUPS } from "./categories";
-import type { LocationState } from "./browser-location";
-
+import { useState } from "react";
+import { FREE_ECHO_LIMIT, type Echo } from "@echofinders/core";
+import { loadZips, searchPlaces, type PlaceHit } from "./place-search";
 
 export interface OnboardingProps {
-  readonly onAskLocation: () => Promise<LocationState>;
-  readonly kids: boolean;
-  readonly onKids: (on: boolean) => void;
-  /** Which categories are on. Same set the map's chip row drives. */
-  readonly cats: ReadonlySet<EchoCategory>;
-  readonly onToggleCats: (categories: readonly EchoCategory[]) => void;
-  /** Turn every category on at once. */
-  readonly onAllCats: () => void;
-  /** Hear the narrator, so a volume can be set before anybody is out in the street. */
-  readonly onTestLine: () => void;
-  /** Stop the test line. Called when the listener leaves the headphones step, however. */
-  readonly onStopTest: () => void;
-  /**
-   * Done. `roaming` true means free roam from here; false means they picked a journey.
-   * `mode` is how they are travelling, which decides what syncing an echo even means.
-   */
-  readonly onDone: (choice: {
-    readonly roaming: boolean;
-    readonly mode: "walking" | "driving" | "flight";
-  }) => void;
-  /** Routes we have content for, so a flight number can resolve to one. */
-  readonly routes: readonly {
-    readonly id: string;
-    readonly name?: string;
-    readonly mode: TravelMode;
-  }[];
-  /**
-   * A journey resolved to one of ours, by flight number or by picking a drive. Null clears
-   * it. Named for the flight case it started as; it now carries either.
-   */
-  readonly onFlight: (routeId: string | null) => void;
+  /** Ask the browser for the location. Resolves once it has answered, either way. */
+  readonly onAskLocation: () => Promise<unknown>;
+  /** Done, from Find echoes near me: the map, where you are (or asking, if refused). */
+  readonly onNearMe: () => void;
+  /** Done, from the search box: the map, looking at the place picked. */
+  readonly onLook: (hit: PlaceHit) => void;
+  /** The library, for searching by place name. */
+  readonly library: readonly Echo[];
 }
 
-const LOCATION = CAPABILITY_NEEDS.find((n) => n.capability === "location-foreground")!;
+const WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+const FREE = WORDS[FREE_ECHO_LIMIT] ?? String(FREE_ECHO_LIMIT);
 
-const ICON = {
-  /* The same car the map and the mode picker draw, so one vehicle means one thing. */
-  car: MODE_ICON.driving,
-  walk: (
-    <>
-      <circle cx="13" cy="4" r="2" />
-      <path d="M12.5 22l-1-6-3-3 1.5-5 3 1.5 2.5 2.5M9.5 8L7 10.5M11.5 16l-3 6" />
-    </>
-  ),
-  plane: <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V18l-2 1.5V21l3.5-1 3.5 1v-1.5L13 18v-4.5L21 16z" />,
-  ear: (
-    <>
-      <path d="M4 14v-2a8 8 0 0 1 16 0v2" />
-      <path d="M4 14a2 2 0 0 1 2-2h1v6H6a2 2 0 0 1-2-2zM20 14a2 2 0 0 0-2-2h-1v6h1a2 2 0 0 0 2-2z" />
-    </>
-  ),
-  kid: (
-    <>
-      <circle cx="12" cy="12" r="8" />
-      <path d="M9 10h.01M15 10h.01M8.5 14a5 5 0 0 0 7 0" />
-    </>
-  ),
-  pin: (
-    <>
-      <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z" />
-      <circle cx="12" cy="10" r="2.4" />
-    </>
-  ),
-};
-
-/** Bars for the headphone check. Deterministic, so it does not flicker on every render. */
-const BARS = Array.from({ length: 40 }, (_, i) => 18 + Math.abs(Math.sin(i * 0.8)) * 70);
-
-/*
- * Walking has nothing to look up, so it is one screen shorter. Driving and flying both ask
- * what the journey is, in their own words.
- */
-const lastStep = (roaming: boolean) => (roaming ? 5 : 6);
-
-export function Onboarding({
-  onAskLocation,
-  kids,
-  onKids,
-  cats,
-  onToggleCats,
-  onAllCats,
-  onTestLine,
-  onStopTest,
-  onDone,
-  routes,
-  onFlight,
-}: OnboardingProps) {
-  const [step, setStep] = useState(0);
-  /*
-   * Three products, not two.
-   *
-   * This was a boolean: roam, or have a journey. Driving fell into "roam" with walking,
-   * which is how a driver ended up being told to stand on the spot, and how the one mode
-   * that most wants a route was the one mode that could not have one.
-   */
-  const [travel, setTravel] = useState<"walking" | "driving" | "flight">("walking");
-  const roaming = travel === "walking";
+export function Onboarding({ onAskLocation, onNearMe, onLook, library }: OnboardingProps) {
   const [asking, setAsking] = useState(false);
-  const [located, setLocated] = useState<LocationState["kind"] | null>(null);
-  const [flight, setFlight] = useState("");
-  /** The drive they chose, if any. Null means they are hunting rather than following. */
-  const [picked, setPicked] = useState<string | null>(null);
-  /** The drives we have content for. */
-  const drives = routes.filter((route) => route.mode === "driving");
-  const matched = lookupFlight(flight);
-  const matchedRoute = matched ? routes.find((r) => r.id === matched) : undefined;
+  const [query, setQuery] = useState("");
+  const [table, setTable] = useState<ReadonlyMap<string, { lat: number; lng: number }> | null>(null);
+  const typed = query.trim();
+  const hits = typed.length >= 2 ? searchPlaces(query, table ?? new Map(), library, 4) : [];
+  const waiting = /^\d{2,5}$/.test(typed) && table === null;
 
-  /*
-   * The test line is a real echo through the real player, so it kept talking after the
-   * listener moved on, into the map and on (James, 2026-11-08: "it doesnt stop playing
-   * even when i leave the screen"). Leaving the headphones step any way at all, Continue,
-   * Back, Skip, stops it.
-   */
-  const onHeadphones = (roaming && step === 4) || (!roaming && step === 5);
-  const stopTest = useRef(onStopTest);
-  stopTest.current = onStopTest;
-  useEffect(() => {
-    if (!onHeadphones) return;
-    return () => stopTest.current();
-  }, [onHeadphones]);
-
-  const next = () => setStep((s) => Math.min(lastStep(roaming), s + 1));
-  const back = () => setStep((s) => Math.max(0, s - 1));
-  const finish = () => onDone({ roaming, mode: travel });
-
-  const chosenCount = CHIP_GROUPS.filter((g) => g.categories.some((c) => cats.has(c))).length;
-
-  const askThenNext = async () => {
+  const nearMe = async () => {
+    if (asking) return;
     setAsking(true);
-    setLocated((await onAskLocation()).kind);
-    setAsking(false);
-    next();
+    // Whatever the answer: a refusal still opens the map, which offers the way back in.
+    await onAskLocation();
+    onNearMe();
   };
 
   return (
-    <div className="onb" role="dialog" aria-modal="true" aria-label="Welcome to Echo Finders">
-      {/* The design keeps back, dots and skip in a fixed header on every step but the
-          first, which is what makes a six step flow feel like three. */}
-      {step > 0 && (
-        <div className="onb-top">
-          <button className="onb-back" onClick={back} aria-label="Back">
-            <svg viewBox="0 0 24 24">
-              <path d="M15 5l-7 7 7 7" />
-            </svg>
-          </button>
-          <span className="onb-dots" aria-hidden="true">
-            {Array.from({ length: lastStep(roaming) }, (_, i) => (
-              <i key={i} className={i < step ? "on" : ""} />
-            ))}
-          </span>
-          <button className="onb-skip" onClick={finish}>
-            Skip
-          </button>
+    <div
+      className={typed ? "onb fr fr-searching" : "onb fr"}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Welcome to Echo Finders"
+    >
+      <div className="fr-hero">
+        <span className="fr-orb" aria-hidden="true" />
+        <div className="fr-words">
+          <h1>Hear what happened here.</h1>
+          <p>Headphones in. Start walking.</p>
         </div>
-      )}
+      </div>
 
-      <div className="onb-body">
-        {step === 0 && (
-          <>
-            <p className="onb-wordmark">ECHO FINDERS</p>
-            <h2>The ground beneath you, narrated.</h2>
-            <p className="onb-lead">
-              Headphones in. Echo Finders tells you what happened where you are standing: the
-              history, the crimes, the local legends, and the places worth going to.
-            </p>
-            <Value icon={ICON.pin} title="Stories fixed to real places">
-              You have to be there. On foot you stand on the spot; driving, you go through
-              it. Either way, being there is what syncs it.
-            </Value>
-            {/*
-              NOT "listen with the screen off", which is what this said and which the wake
-              lock exists because it is not true: on iOS both the audio and the position fix
-              stop the moment the screen locks (ADR-0001). The first screen in the app was
-              making a promise the fourth screen has to walk back.
-            */}
-            <Value icon={ICON.ear} title="Audio first">
-              Two minute stories, in your ears while you look at the street. Read along if
-              you would rather.
-            </Value>
-            <Value icon={ICON.plane} title="Walking, driving or flying">
-              On foot it finds what is around you. In the air it follows your flight.
-            </Value>
-            <button className="onb-go" onClick={next}>
-              Get started
-            </button>
-          </>
-        )}
+      <div className="fr-actions">
+        <button className="fr-go" onClick={() => void nearMe()} aria-busy={asking}>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 3L3 10.5l7.5 3L13.5 21z" />
+          </svg>
+          Find echoes near me
+        </button>
 
-        {step === 1 && (
-          <>
-            {/*
-              The screen the app did not have. Everything before this asked which prepared
-              route you were on, which is a real question in the air and a fiction on foot.
-            */}
-            <h2>How are you travelling?</h2>
-            <p className="onb-lead">
-              This changes what the app does, not just what it shows. You can switch later.
-            </p>
-            <button
-              className={travel === "walking" ? "onb-card on" : "onb-card"}
-              onClick={() => setTravel("walking")}
-              aria-pressed={travel === "walking"}
-            >
-              <span className="onb-ic" aria-hidden="true">
-                <svg viewBox="0 0 24 24">{ICON.walk}</svg>
-              </span>
-              <div>
-                <b>On foot, around here</b>
-                <small>
-                  No route. It finds what is near you as you go, and standing on one is what
-                  syncs it.
-                </small>
-              </div>
-            </button>
-            <button
-              className={travel === "driving" ? "onb-card on" : "onb-card"}
-              onClick={() => setTravel("driving")}
-              aria-pressed={travel === "driving"}
-            >
-              <span className="onb-ic" aria-hidden="true">
-                <svg viewBox="0 0 24 24">{ICON.car}</svg>
-              </span>
-              <div>
-                <b>Driving</b>
-                <small>
-                  Follow a drive, or just go and see what you pass. No stopping: echoes sync
-                  as you drive through them.
-                </small>
-              </div>
-            </button>
-            <button
-              className={travel === "flight" ? "onb-card on" : "onb-card"}
-              onClick={() => setTravel("flight")}
-              aria-pressed={travel === "flight"}
-            >
-              <span className="onb-ic" aria-hidden="true">
-                <svg viewBox="0 0 24 24">{ICON.plane}</svg>
-              </span>
-              <div>
-                <b>Flying</b>
-                <small>
-                  Your flight number builds the route. It comes down before you leave and
-                  plays itself as you go over.
-                </small>
-              </div>
-            </button>
-            <button className="onb-go" onClick={next}>
-              Continue
-            </button>
-          </>
-        )}
-
-        {/*
-          Driving's own journey screen.
-
-          A drive is not a flight and it is not a walk. There is no flight number to look up
-          and no standing to do: you pick where you are going, or you pick nothing and just
-          drive, and echoes sync as you pass through them. Both are hunting.
-        */}
-        {step === 2 && travel === "driving" && (
-          <>
-            <h2>Where are you driving?</h2>
-            <p className="onb-lead">
-              Pick a drive and it comes down with you, timed to the road. Or take nothing and
-              we will find what you pass.
-            </p>
-            {drives.length > 0 ? (
-              drives.map((drive) => (
-                <button
-                  key={drive.id}
-                  className={picked === drive.id ? "onb-card on" : "onb-card"}
-                  onClick={() => {
-                    setPicked(drive.id);
-                    onFlight(drive.id);
-                  }}
-                  aria-pressed={picked === drive.id}
-                >
-                  <span className="onb-ic" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">{ICON.car}</svg>
-                  </span>
-                  <div>
-                    <b>{drive.name ?? drive.id}</b>
-                    <small>Downloaded before you set off, so tunnels and dead spots
-                    do not matter.</small>
-                  </div>
-                </button>
-              ))
-            ) : (
-              <p className="onb-sum">No drives in the library yet.</p>
-            )}
-            <button
-              className="onb-alt onb-alt-left"
-              onClick={() => {
-                setPicked(null);
-                onFlight(null);
-                next();
-              }}
-            >
-              No route. Just drive and find what I pass.
-            </button>
-            <button className="onb-go" onClick={next} disabled={!picked}>
-              Take this drive
-            </button>
-            {/*
-              Said plainly rather than mocked up, and last. Pulling a route out of Google
-              Maps needs a Directions key and an account, and a button that looks like it
-              does that and does not is worse than a sentence saying what is coming.
-            */}
-            <p className="onb-note">
-              Bringing in a route from Google Maps is next, and needs a Directions key on our
-              side. Until then these are the drives we have written.
-            </p>
-          </>
-        )}
-
-        {step === 2 && travel === "flight" && (
-          <>
-            <h2>Which flight are you on?</h2>
-            <p className="onb-lead">
-              We build the route, the pins and the running order from your flight number.
-            </p>
+        <div className="fr-trace">
+          <label className="fr-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M16.5 16.5L21 21" />
+            </svg>
+            {!query && <span className="fr-caret" aria-hidden="true" />}
             <input
-              className="onb-field"
-              value={flight}
-              onChange={(e) => {
-                setFlight(e.target.value);
-                onFlight(lookupFlight(e.target.value));
-              }}
-              placeholder="Flight number, e.g. DL 411"
+              type="search"
+              inputMode="search"
+              enterKeyHint="search"
               autoComplete="off"
               spellCheck={false}
-              aria-label="Flight number"
+              placeholder="Or search a city or ZIP"
+              aria-label="Search a city or ZIP code"
+              value={query}
+              onFocus={() => {
+                if (!table) void loadZips().then(setTable);
+              }}
+              onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key !== "Enter" || !hits[0]) return;
+                e.preventDefault();
+                onLook(hits[0]);
+              }}
             />
-            <button className="onb-alt onb-alt-left" onClick={next}>
-              I do not have one. Pick from a list instead.
-            </button>
-            {matchedRoute ? (
-              <div className="onb-route">
-                <b>{matchedRoute.name ?? matchedRoute.id}</b>
-                <span className="onb-route-line" aria-hidden="true">
-                  <i />
-                </span>
-                <small>Found. The next screens set up what you hear on it.</small>
-              </div>
-            ) : (
-              flight.trim().length > 2 && (
-                <p className="onb-sum">
-                  No route for that one yet. We only have content for a few flights while the
-                  library is being written.
-                </p>
-              )
+          </label>
+        </div>
+
+        {typed.length >= 2 && (
+          <div className="fr-hits">
+            {waiting && <p className="fr-empty">Finding ZIP codes…</p>}
+            {!waiting && hits.length === 0 && (
+              <p className="fr-empty">Nothing by that name or ZIP code yet.</p>
             )}
-            <button className="onb-go" onClick={next} disabled={!matchedRoute}>
-              Find my route
-            </button>
-          </>
-        )}
-
-        {((roaming && step === 2) || (!roaming && step === 3)) && (
-          <>
-            <h2>What do you want to hear?</h2>
-            <p className="onb-lead">
-              Pick as many as you like. You can change this any time from the map.
-            </p>
-            <div className="onb-chips">
-              {/*
-                Each chip carries its category's mark and its colour, on or off, exactly as
-                the map's filter row does. These were bare labels that only took a colour
-                once lit, so the step that is supposed to TEACH the palette was the one
-                place it was missing, and a listener met the nine hues for the first time
-                on a map with no key to them.
-              */}
-              {CHIP_GROUPS.map((group) => {
-                const lit = group.categories.some((c) => cats.has(c));
-                return (
-                  <button
-                    key={group.id}
-                    className={`onb-chip cat-${group.face}${lit ? " on" : ""}`}
-                    onClick={() => onToggleCats(group.categories)}
-                    aria-pressed={lit}
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      {CATEGORY_ICON[group.face]}
-                    </svg>
-                    {group.label}
-                  </button>
-                );
-              })}
-            </div>
-            {/*
-              "All of them" is a real answer to this question and used to be the only one
-              you could give, silently, by leaving every chip alone. Now that the step
-              starts empty it needs saying out loud, and it is one tap rather than nine.
-            */}
-            <button
-              className="onb-all"
-              onClick={() => onAllCats()}
-              disabled={chosenCount === CHIP_GROUPS.length}
-            >
-              All of them
-            </button>
-            <p className="onb-sum">
-              {chosenCount === 0
-                ? "Nothing picked yet"
-                : `${chosenCount} of ${CHIP_GROUPS.length} on`}
-            </p>
-            {/*
-              Disabled on nothing, because continuing with an empty set lands you on a map
-              with no pins on it and no clue why. The count above says what is missing.
-            */}
-            <button className="onb-go" onClick={next} disabled={chosenCount === 0}>
-              Continue
-            </button>
-          </>
-        )}
-
-        {((roaming && step === 3) || (!roaming && step === 4)) && (
-          <>
-            <h2>Who is listening?</h2>
-            <p className="onb-lead">
-              Kids mode hides true crime and hauntings, and leads with the shorter stories.
-            </p>
-            <button
-              className={!kids ? "onb-card on" : "onb-card"}
-              onClick={() => onKids(false)}
-              aria-pressed={!kids}
-            >
-              <span className="onb-ic" aria-hidden="true">
-                <svg viewBox="0 0 24 24">{ICON.ear}</svg>
-              </span>
-              <div>
-                <b>Just me</b>
-                <small>Everything on the map. True crime stays off until you ask for it.</small>
-              </div>
-            </button>
-            <button
-              className={kids ? "onb-card on" : "onb-card"}
-              onClick={() => onKids(true)}
-              aria-pressed={kids}
-            >
-              <span className="onb-ic" aria-hidden="true">
-                <svg viewBox="0 0 24 24">{ICON.kid}</svg>
-              </span>
-              <div>
-                <b>Kids with me</b>
-                <small>
-                  Crime and ghost stories hidden, and the shorter telling comes on with it.
-                </small>
-              </div>
-            </button>
-            <button className="onb-go" onClick={next}>
-              Continue
-            </button>
-          </>
-        )}
-
-        {onHeadphones && (
-          <>
-            <h2>Check your headphones</h2>
-            <p className="onb-lead">
-              Play the test line and set your volume now. Out in the street it is louder than
-              it is here.
-            </p>
-            <div className="onb-wave" aria-hidden="true">
-              {BARS.map((h, i) => (
-                <i key={i} style={{ height: `${h}%` }} />
-              ))}
-            </div>
-            <button className="onb-test" onClick={onTestLine}>
-              <svg viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-              Play the test line
-            </button>
-            <button className="onb-go" onClick={next}>
-              Continue
-            </button>
-          </>
-        )}
-
-        {step === 5 && roaming && (
-          <>
-            {/*
-              "One permission" over three cards was the screen contradicting itself, and it
-              only became wrong when the other two asks arrived. The lead also restated the
-              first card word for word, which is what happens when a heading written for one
-              thing is left above three.
-            */}
-            <h2>{located === "denied" ? "No location yet" : "Three things before you set off"}</h2>
-            <p className="onb-lead">
-              {located === "denied"
-                ? `${LOCATION.ifRefused} You can grant it later from your browser's settings.`
-                : "One permission, one suggestion, and one thing the phone will do that you should hear about now rather than later."}
-            </p>
-            {/*
-              THREE asks, not one, each with its reason attached, because a permission
-              prompt with no explanation is the single most common place a location app
-              loses people.
-
-              Only the first is a system permission. The second is advice and the third is a
-              PROMISE ABOUT THE PHONE, and it is here because of the platform limit rather
-              than because it is tidy: the screen has to stay awake for the walk to keep
-              tracking, and somebody who finds that out by looking at their battery at forty
-              percent has been misled. Saying it now costs a paragraph.
-            */}
-            {located !== "denied" && (
-              <div className="onb-asks">
-                <div className="onb-perm onb-perm-need">
-                  <span className="onb-perm-ic onb-ic-aqua" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">{ICON.pin}</svg>
-                  </span>
-                  <div>
-                    <b>Your location, only while you are using it</b>
-                    <small>
-                      The whole thing is where you are standing. Nothing is sent to us, and
-                      where you stood stays on your phone unless you turn that on in Settings.
-                    </small>
-                  </div>
-                </div>
-                <div className="onb-perm">
-                  <span className="onb-perm-ic onb-ic-indigo" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">{ICON.ear}</svg>
-                  </span>
-                  <div>
-                    <b>Headphones, ideally</b>
-                    <small>
-                      Echoes are placed in the street around you. On a speaker you lose the
-                      direction, which is most of how you find them.
-                    </small>
-                  </div>
-                </div>
-                <div className="onb-perm">
-                  <span className="onb-perm-ic onb-ic-ember" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">
-                      <rect x="6" y="2.5" width="12" height="19" rx="3" />
-                      <path d="M10 18.5h4" />
-                    </svg>
-                  </span>
-                  <div>
-                    <b>The screen stays on while you walk</b>
-                    <small>
-                      It has to, or the phone stops listening for where you are. Walk mode
-                      goes nearly black to spend as little battery on it as possible.
-                    </small>
-                  </div>
-                </div>
-              </div>
-            )}
-            {located === null ? (
-              <>
-                <button className="onb-go" onClick={() => void askThenNext()} disabled={asking}>
-                  {asking ? "Waiting for your answer…" : "Allow and start"}
-                </button>
-                <p className="onb-without mono">You can browse the map without any of this</p>
-                {/* Never disabled, even while asking. It is the way out of a prompt that
-                    does not come back, and a screen with no way out is a trap. */}
-                <button className="onb-alt" onClick={finish}>
-                  Not yet
-                </button>
-              </>
-            ) : (
-              <button className="onb-go" onClick={finish}>
-                Start looking
+            {hits.map((hit) => (
+              <button
+                key={hit.label + hit.at.lat}
+                className="fr-hit"
+                onClick={() => onLook(hit)}
+              >
+                <b>{hit.label}</b>
+                {hit.detail && <small>{hit.detail}</small>}
               </button>
-            )}
-          </>
+            ))}
+          </div>
         )}
 
-        {step === 6 && !roaming && (
-          <>
-            <h2>Pick your journey</h2>
-            <p className="onb-lead">
-              Choose the flight or the walk, and carry it with you. The next screen shows what
-              it weighs and downloads it.
-            </p>
-            <button className="onb-go" onClick={finish}>
-              Choose a journey
-            </button>
-          </>
-        )}
-      </div>
-    </div>
-  );
-}
-
-function Value({
-  icon,
-  title,
-  children,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="onb-card onb-value">
-      <span className="onb-ic" aria-hidden="true">
-        <svg viewBox="0 0 24 24">{icon}</svg>
-      </span>
-      <div>
-        <b>{title}</b>
-        <small>{children}</small>
+        <p className="fr-free">Your first {FREE} echoes are free.</p>
       </div>
     </div>
   );
