@@ -346,6 +346,46 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── The echo card, before you are there ─────────────────────────────────────────
+// The approved card (2026-11): one primary that says what is true, a gold line saying why
+// there is no Play yet, and four round buttons with their names under them. The smaller
+// things (other maps app, report, suggest) are under More.
+{
+  const { ctx, p } = await freshApp();
+  await p.locator('.echobar-tap').click().catch(() => {});
+  await p.waitForTimeout(600);
+  const card = p.locator('.pop');
+  check('Echo card: opens from the bar', await visible(card));
+  const walk = card.getByRole('button', { name: /^Walk there · \d+ min$/ });
+  check('Echo card: far off, the primary is Walk there with the minutes', await visible(walk));
+  check('Echo card: far off, says why there is no Play', await visible(card.getByText('Unlocks when you get there')));
+  check('Echo card: far off, no Play', (await card.locator('.pop-go').count()) === 0);
+  for (const name of ['Save', 'Add to route', 'Share', 'More']) {
+    check(`Echo card: ${name}, with its name under it`, await visible(card.getByRole('button', { name, exact: true })));
+  }
+  const small = await card.locator('.pop-act, .pop-aim, .pop-close').evaluateAll((els) => els
+    .filter((e) => { const r = e.getBoundingClientRect(); return r.width < 44 || r.height < 44; })
+    .map((e) => e.textContent.trim() || e.getAttribute('aria-label')));
+  check('Echo card: every control at least 44px', small.length === 0, small.join(', '));
+  const oneLine = await card.locator('.pop-act').evaluateAll((els) => els.every((e) => e.scrollWidth <= e.clientWidth + 1));
+  check('Echo card: the labels stay on one line', oneLine);
+  await card.getByRole('button', { name: 'Save', exact: true }).click().catch(() => {});
+  await p.waitForTimeout(300);
+  check('Echo card: Save saves', await visible(card.getByRole('button', { name: 'Saved', exact: true })));
+  await card.getByRole('button', { name: 'More', exact: true }).click().catch(() => {});
+  await p.waitForTimeout(300);
+  const menu = card.getByRole('menu');
+  check('Echo card: More opens a menu', await visible(menu) && (await menu.getByRole('menuitem').count()) > 0);
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(300);
+  check('Echo card: Escape shuts the menu and leaves the card', !(await visible(menu)) && await visible(card));
+  await walk.click().catch(() => {});
+  await p.waitForTimeout(800);
+  check('Echo card: Walk there starts the way there',
+    !(await visible(card)) || (await walk.getAttribute('aria-pressed').catch(() => null)) === 'true');
+  await ctx.close();
+}
+
 // ── The trip sheet ──────────────────────────────────────────────────────────────
 {
   const { ctx, p } = await freshApp();

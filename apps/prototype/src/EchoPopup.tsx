@@ -13,23 +13,31 @@
  *
  * The action line is the interesting part, because this product's rule is that you cannot
  * simply press play on something you are not standing at. A button that is there and refuses
- * is worse than no button, so there is only ever one control and it says what is true:
+ * is worse than no button, so there is only ever one primary and it says what is true:
  *
- *   far off      how far, and which way. Nothing to press.
- *   within reach "hold still" — the sync is automatic and happens by standing there
+ *   far off      "Walk there · 12 min", and a gold line: it unlocks when you get there
+ *   within reach "hold still": the sync is automatic and happens by standing there
  *   synced       Play, which is the only moment a play button appears at all
+ *
+ * Under it, four round buttons with their names: Save, Add to route, Share, More. The
+ * smaller things a card used to carry as lines of their own (the other maps app, "Not
+ * right?", "Know more about this place?") are under More, so the card is the echo and
+ * one decision (James, 2026-11: "there has to be a cleaner way to display all that").
  *
  * That is the Assassin's Creed idea in one card: the memory is at the place, you go to the
  * place, and standing there is what unlocks it.
  */
 
-import { rarityOf, type Echo, type TravelMode } from "@echofinders/core";
+import { useEffect, useRef, useState } from "react";
+import { presetFor, rarityOf, type Echo, type TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { platePng } from "./archive-plate";
 import type { PinState } from "./RouteMap";
 import { CrimeNote, TruthMark } from "./TruthMark";
 import { driveThereUrl } from "./drive-there";
 import { MODE_ICON } from "./travel";
+import { mapsLink, walkTime } from "./directions";
+import { echoLink, shareText } from "./share";
 
 export interface EchoPopupProps {
   readonly echo: Echo;
@@ -60,7 +68,7 @@ export interface EchoPopupProps {
    */
   readonly onCamera?: (echo: Echo) => void;
   /**
-   * "Something wrong with this story?" Opens the feedback form set to a wrong fact and
+   * "Report a problem", under More. Opens the feedback form set to a wrong fact and
    * tagged with this echo (`Feedback.tsx`). Absent when the build has nowhere to send it.
    */
   readonly onReport?: (echo: Echo) => void;
@@ -94,13 +102,13 @@ const ARRIVED: Record<TravelMode, string> = {
   rail: "You are passing it now.",
 };
 
-/** And how you get there. */
-const APPROACH: Record<TravelMode, string> = {
-  walking: "walk to it to sync",
-  cycling: "ride to it to sync",
-  driving: "it syncs when you drive through",
-  flight: "it opens as you fly over",
-  rail: "it opens as you pass",
+/** Why there is no Play yet, in the gold line under the way there. */
+const UNLOCKS: Record<TravelMode, string> = {
+  walking: "Unlocks when you get there",
+  cycling: "Unlocks when you get there",
+  driving: "Unlocks as you drive through",
+  flight: "Unlocks as you fly over",
+  rail: "Unlocks as you pass",
 };
 
 export function EchoPopup({
@@ -127,27 +135,46 @@ export function EchoPopup({
   const withinReach = metres !== null && metres <= reach;
   const rarity = rarityOf(echo);
   const photo = echo.archive?.[0];
+  const playable = synced || anywhere;
+  const ground = mode === "walking" || mode === "cycling" || mode === "driving";
+  const [more, setMore] = useState(false);
+  const moreRef = useRef<HTMLDivElement>(null);
+
+  /*
+    The menu shuts on a tap anywhere else, and on Escape without taking the card with it.
+  */
+  useEffect(() => {
+    if (!more) return;
+    const away = (e: PointerEvent) => {
+      if (!moreRef.current?.contains(e.target as Node)) setMore(false);
+    };
+    const esc = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      e.stopPropagation();
+      setMore(false);
+      moreRef.current?.querySelector<HTMLButtonElement>(".pop-more")?.focus();
+    };
+    document.addEventListener("pointerdown", away);
+    window.addEventListener("keydown", esc, true);
+    return () => {
+      document.removeEventListener("pointerdown", away);
+      window.removeEventListener("keydown", esc, true);
+    };
+  }, [more]);
+
+  // Closing one card and opening another starts with the menu shut.
+  useEffect(() => setMore(false), [echo.id]);
+
+  /*
+    What did not earn a place on the card itself: the other maps app, "Not right?" and
+    "Know more about this place?". Each one is still a tap away, under More.
+  */
+  const label = echo.point.place.split(",")[0] ?? echo.title;
+  const mapsHref = !ground ? null : mode === "driving" ? driveThereUrl(echo.point.at, label) : mapsLink(echo.point.at, label);
+  const hasMore = mapsHref !== null || onReport !== undefined || onSuggest !== undefined;
 
   return (
     <div className="pop" role="dialog" aria-label={echo.title}>
-      <button className="pop-close" onClick={onClose} aria-label="Close">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6 6l12 12M18 6L6 18" />
-        </svg>
-      </button>
-
-      <span className={`pop-kicker cat-${echo.category}`}>
-        <span className="pop-dot" />
-        {CATEGORY_LABEL[echo.category]}
-        {/* The rarity, where the design has it. It is the thing that decides whether the
-            walk is worth taking, and it was only visible once you had already taken it. */}
-        {rarity !== "common" && <em className="pop-rarity">{rarity}</em>}
-        {/* On a short screen the mark rides this line instead of taking its own. */}
-        <span className="pop-truth-inline">
-          <TruthMark echo={echo} short />
-        </span>
-      </span>
-
       {/*
         The photograph, and it is the best idea in the whole design. The card does not
         describe the place it sends you to, it SHOWS you the place — and because ours have
@@ -157,21 +184,12 @@ export function EchoPopup({
         Absent when no plate has been cleared for this echo (ADR-0006), which is most of
         them today. A card with a grey rectangle saying "no image" is a worse card than one
         that never mentioned a picture.
+
+        THE PLATE IS THE CAMERA BUTTON, when there is a camera to open, and a plain picture
+        where there is not: a thing that looks pressable and is not is worse than a thing
+        that never claimed to be.
       */}
       {photo &&
-        /*
-          THE PLATE IS THE CAMERA BUTTON, when there is a camera to open.
-
-          This used to be a picture, and the way to the viewfinder was a separate strip
-          inside the bottom sheet — a sepia thumbnail with "Then & now" next to it, which
-          said the same thing twice a screen apart. With the sheet gone the strip had
-          nowhere to live, and the honest place for it was always here: the card is already
-          showing the photograph, so the offer to go and stand where it was taken belongs
-          on the photograph rather than in a fifth grey button underneath.
-
-          Still a plain picture where there is no camera. A thing that looks pressable and
-          is not is worse than a thing that never claimed to be.
-        */
         (onCamera ? (
           <button className="pop-plate pop-plate-tap" onClick={() => onCamera(echo)}>
             <img src={platePng(photo.imageKey, "then")} alt="" draggable={false} />
@@ -197,155 +215,212 @@ export function EchoPopup({
           </div>
         ))}
 
-      <h3>{echo.title}</h3>
-      <span className="pop-truth">
-        <TruthMark echo={echo} />
-        {/*
-          Beside the claim it answers. A library that promises it is verified owes the
-          listener a way to say when it is not, at the moment they notice, without leaving
-          the story. On this line rather than its own: it costs the card no height, which on
-          an SE it does not have (audit-align, popup). "Not right?" rather than "Something
-          wrong?" because it fits beside the longest mark ("True story · not yet verified",
-          210px of a 309px line on an SE) without wrapping; screen readers hear the whole
-          question from aria-label.
-        */}
-        {onReport && (
-          <button
-            className="pop-report"
-            onClick={() => onReport(echo)}
-            aria-haspopup="dialog"
-            aria-label="Something wrong with this story?"
-          >
-            Not right?
-          </button>
-        )}
+      {/* Floated, so the kicker line is the ✕'s line and a long title wraps clear of it. */}
+      <button className="pop-close" onClick={onClose} aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+
+      <span className={`pop-kicker cat-${echo.category}`}>
+        {CATEGORY_LABEL[echo.category]}
+        {/* The rarity decides whether the walk is worth taking, so it is here, before it. */}
+        {rarity !== "common" && <em className="pop-rarity">{rarity}</em>}
+        {/* On a short screen the mark rides this line instead of taking its own. */}
+        <span className="pop-truth-inline">
+          <TruthMark echo={echo} short />
+        </span>
       </span>
 
-      <p className="pop-where">
-        {echo.point.place} · {Math.max(1, Math.round(echo.durationS / 60))} min
-      </p>
+      <h3>{echo.title}</h3>
+      <p className="pop-where">{echo.point.place}</p>
+      {/* How long it is, beside the mark, so a long address cannot crop it off. */}
+      <span className="pop-truth">
+        <TruthMark echo={echo} />
+        <span className="pop-len">{Math.max(1, Math.round(echo.durationS / 60))} min listen</span>
+      </span>
 
       <p className="pop-teaser">{echo.teaser ?? echo.summary}</p>
       <CrimeNote echo={echo} />
 
       {/*
-        One control, and only when there is something to press. The rest of the time this
-        is a sentence, because "you are 300 metres away" is information and a greyed-out
-        play button is a small insult.
+        ONE primary, and it says what is true. Synced (or a gift, or the owner): Play. Not
+        yet: the way there, with how long it takes, and a line saying why Play is not here.
+        Standing on it: no button at all, because the sync is automatic and happens by
+        standing there; a "walk there" offered to somebody already there is the screen
+        disagreeing with itself.
       */}
-      {synced || anywhere ? (
-        <button className="pop-go" onClick={() => onPlay(echo)}>
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-          {state === "heard" ? "Play it again" : "Play"}
-        </button>
-      ) : (
-        /*
-          Three sentences, because getting there is three different things. A driver is
-          never going to stand anywhere, and telling them to walk to something fifteen
-          kilometres up the road is the app not knowing what they are doing.
-        */
-        <p className={withinReach ? "pop-state pop-state-near" : "pop-state"}>
-          {withinReach ? ARRIVED[mode] : `${away(metres)} · ${APPROACH[mode]}`}
-        </p>
-      )}
-
-      {/*
-        Take me there.
-        This is the moment the street map earns its place: until you have picked something,
-        a map answers a question nobody asked, and the second you have, it is the right
-        object. Absent once the echo is yours, because there is nowhere left to walk.
-      */}
-      {/*
-        The rule, in a number, and only while it is still a rule you can act on. A person
-        deciding whether to cross a road wants to know how close is close enough, and "walk
-        to it" does not say.
-      */}
-      {!synced && !withinReach && (
-        <p className="pop-reach mono">Syncs when you are within {reach} m</p>
-      )}
-
-      {/*
-        Not while you are standing on it. The card said "You are here. Hold still and it
-        syncs" and then offered to take you there, which is the screen disagreeing with
-        itself in two adjacent sentences. There is nowhere to walk from here.
-      */}
-      {/*
-        Drive there. A driver is not walked anywhere by the beacon: the drive goes to their
-        own maps app (`drive-there.ts`), and the story keeps playing here.
-      */}
-      {mode === "driving" && !synced && !withinReach && (
-        <a
-          className="pop-aim"
-          href={driveThereUrl(echo.point.at, echo.point.place.split(",")[0])}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            {MODE_ICON.driving}
-          </svg>
-          Drive there
-        </a>
-      )}
-
-      {onAim && mode !== "driving" && !synced && !withinReach && (
-        <button
-          className={aimed ? "pop-aim on" : "pop-aim"}
-          onClick={() => onAim(echo)}
-          aria-pressed={aimed}
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="8.5" />
-            <path d="M12 12l4-7-7 4z" />
-          </svg>
-          {aimed ? "Following this one" : "Take me there"}
-        </button>
-      )}
-
-      {/*
-        Keep it for later, two ways: on the saved list, or on one of your routes. Side by
-        side, because they are the same kind of decision and neither is the main act.
-      */}
-      <div className="pop-keep">
-        <button
-          className={saved ? "pop-save on" : "pop-save"}
-          onClick={() => onSave(echo)}
-          aria-pressed={saved}
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-          </svg>
-          {saved ? "Saved" : "Save for later"}
-        </button>
-        {onAddToRoute && (
-          <button
-            className={inRoutes ? "pop-save pop-route on" : "pop-save pop-route"}
-            onClick={() => onAddToRoute(echo)}
-            aria-haspopup="dialog"
-          >
+      <div className="pop-primary">
+        {playable ? (
+          <button className="pop-go" onClick={() => onPlay(echo)}>
             <svg viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="6" cy="18" r="2.2" />
-              <circle cx="18" cy="6" r="2.2" />
-              <path d="M8 18h6.5a3.5 3.5 0 0 0 0-7h-5a3.5 3.5 0 0 1 0-7H16" />
+              <path d="M8 5v14l11-7z" />
             </svg>
-            {inRoutes ? (inRoutes === 1 ? "On a route" : `On ${inRoutes} routes`) : "Add to route"}
+            {state === "heard" ? "Play it again" : "Play"}
           </button>
+        ) : withinReach ? (
+          <p className="pop-state pop-state-near">{ARRIVED[mode]}</p>
+        ) : mode === "driving" ? (
+          /*
+            A driver is not walked anywhere by the beacon: the drive goes to their own maps
+            app (`drive-there.ts`), and the echo keeps playing here.
+          */
+          <a className="pop-aim" href={driveThereUrl(echo.point.at, label)} target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              {MODE_ICON.driving}
+            </svg>
+            Drive there
+          </a>
+        ) : onAim ? (
+          <button className={aimed ? "pop-aim on" : "pop-aim"} onClick={() => onAim(echo)} aria-pressed={aimed}>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 3L3 10.5l7.5 3L13.5 21z" />
+            </svg>
+            {aimed ? "Following this one" : goThere(mode, distanceKm)}
+          </button>
+        ) : (
+          // Carried (a flight, a train): nothing to press, only how far it is.
+          <p className="pop-state">{away(metres)}</p>
+        )}
+        {!playable && !withinReach && (
+          <p className="pop-lock">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="11" width="14" height="10" rx="2" />
+              <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+            </svg>
+            {UNLOCKS[mode]}
+          </p>
         )}
       </div>
 
       {/*
-        The other half of "Not right?": not that the story is wrong, but that there is more
-        to tell. Last and small, under the actions, because it is an invitation, not a
-        choice the card is asking for.
+        The four things you can do with an echo besides hear it, as round buttons with their
+        names under them: an icon alone is a guess, and these are read at arm's length.
       */}
-      {onSuggest && (
-        <button className="pop-suggest" onClick={() => onSuggest(echo)} aria-haspopup="dialog">
-          Know more about this place?
+      <div className="pop-acts" ref={moreRef}>
+        <button className={saved ? "pop-act on" : "pop-act"} onClick={() => onSave(echo)} aria-pressed={saved}>
+          <span className="pop-act-ring" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+            </svg>
+          </span>
+          {saved ? "Saved" : "Save"}
         </button>
-      )}
+        {onAddToRoute && (
+          <button
+            className={inRoutes ? "pop-act pop-route on" : "pop-act pop-route"}
+            onClick={() => onAddToRoute(echo)}
+            aria-haspopup="dialog"
+          >
+            <span className="pop-act-ring" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="6" cy="18" r="2.2" />
+                <circle cx="18" cy="6" r="2.2" />
+                <path d="M8 18h6.5a3.5 3.5 0 0 0 0-7h-5a3.5 3.5 0 0 1 0-7H16" />
+              </svg>
+            </span>
+            {inRoutes ? (inRoutes === 1 ? "On a route" : `On ${inRoutes} routes`) : "Add to route"}
+          </button>
+        )}
+        <button
+          className="pop-act pop-share"
+          onClick={() => void shareText(echo.title, echo.teaser ?? echo.summary, echoLink(echo.id))}
+        >
+          <span className="pop-act-ring" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 15V3M8.5 6.5L12 3l3.5 3.5" />
+              <path d="M7 10H5v11h14V10h-2" />
+            </svg>
+          </span>
+          Share
+        </button>
+        {hasMore && (
+          <button
+            className={more ? "pop-act pop-more on" : "pop-act pop-more"}
+            onClick={() => setMore((m) => !m)}
+            aria-haspopup="menu"
+            aria-expanded={more}
+            aria-controls="pop-menu"
+          >
+            <span className="pop-act-ring" aria-hidden="true">
+              <svg viewBox="0 0 24 24" className="pop-dots">
+                <circle cx="5" cy="12" r="2" />
+                <circle cx="12" cy="12" r="2" />
+                <circle cx="19" cy="12" r="2" />
+              </svg>
+            </span>
+            More
+          </button>
+        )}
+        {more && (
+          <div className="pop-menu" id="pop-menu" role="menu" aria-label="More for this echo">
+            {mapsHref && (
+              <a
+                className="pop-menu-item"
+                role="menuitem"
+                href={mapsHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMore(false)}
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 4L3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5z" />
+                  <path d="M9 4v13.5M15 6.5V20" />
+                </svg>
+                {mode === "driving" ? "Directions in Maps" : "Open in Maps"}
+              </a>
+            )}
+            {onReport && (
+              <button
+                className="pop-menu-item"
+                role="menuitem"
+                onClick={() => {
+                  setMore(false);
+                  onReport(echo);
+                }}
+                aria-haspopup="dialog"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 21V4h11l-1.5 4L16 12H5" />
+                </svg>
+                Report a problem
+              </button>
+            )}
+            {onSuggest && (
+              <button
+                className="pop-menu-item"
+                role="menuitem"
+                onClick={() => {
+                  setMore(false);
+                  onSuggest(echo);
+                }}
+                aria-haspopup="dialog"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 8v8M8 12h8" />
+                </svg>
+                Know more about this place?
+              </button>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
+}
+
+/**
+ * "Walk there · 12 min": how long, at the pace the engine reckons with
+ * (`presetFor(mode).speedKph`), which is the sum the bar under the card does too, so the
+ * two never disagree about the same echo. Past ten hours on foot the time is not an
+ * answer, so it is left off.
+ */
+function goThere(mode: TravelMode, distanceKm: number | null): string {
+  const verb = mode === "cycling" ? "Ride there" : "Walk there";
+  if (distanceKm === null) return verb;
+  const seconds = (distanceKm / presetFor(mode).speedKph) * 3600;
+  return seconds >= 36000 ? verb : `${verb} · ${walkTime(seconds)}`;
 }
 
 /**
