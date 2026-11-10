@@ -1,0 +1,100 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (West Philadelphia), following docs/writing-echoes.md (format v2).
+# Listening spot: Sidewalk at 46th and Market streets, outside the old WFIL studio building where Bandstand was broadcast.
+# Position: Wikidata's point for WFIL (39.957933, -75.213078), which sits at 46th and Market; outside the app's street map, so the corner itself was not checked (medium confidence).
+id: philadelphia-just-kids-dancing
+title: "Just Kids Dancing"
+summary: "A network boss doubted a show of teenagers dancing in a studio here. In August 1957 it went national as American Bandstand."
+place: "Former WFIL studio, 46th and Market streets, West Philadelphia, Pennsylvania"
+at: { lat: 39.95800, lng: -75.21300 }
+triggerRadiusKm: 0.06
+category: inspo
+inspo:
+  kind: first
+  evidence: building
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [philadelphia, west-philadelphia, american-bandstand, dick-clark, wfil, television, rock-and-roll, music]
+teaser: "I hesitate to put on this show, the executive said."
+script: |
+  Look at the building at the corner of Forty Sixth and Market. In the nineteen fifties, there was a television studio in it, full of Philadelphia teenagers, dancing.
+
+  The show was called Bandstand. It was a local afternoon dance party on WFIL. Kids danced, singers mimed their latest records, and between songs the host asked the kids in the studio what they thought of the music.
+
+  In nineteen fifty six, a young man named Dick Clark took over as host. He admitted later that at first he had only a foggy notion of what the kids and the music were all about. He caught on fast.
+
+  Clark pushed the network, ABC, to take the show national. One executive was not convinced. I hesitate to put on this show, he said, because it's just kids dancing.
+
+  On the fifth of August, nineteen fifty seven, they put it on anyway. American Bandstand, from West Philadelphia, beamed to a hundred and five stations and some forty million mostly teenage viewers. Chuck Berry even put it in a song. They'll be rocking on Bandstand, in Philadelphia, P.A.
+
+  In nineteen sixty four the show moved to Los Angeles. This building stayed. In nineteen eighty six, the old studio went on the National Register of Historic Places.
+
+  Look at it once more.
+
+  Just kids dancing.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the building at the corner of Forty Sixth and Market."
+    source: 3
+    quote: "Della Clark now runs a business development company at 46th and Market Streets where the first American Bandstand shows where broadcast from."
+  - says: "The show was called Bandstand. It was a local afternoon dance party on WFIL."
+    source: 1
+    quote: "Dick Clark’s “Bandstand,” a teenage dance party emanating out of West Philadelphia on WFIL"
+  - says: "Kids danced, singers mimed their latest records, and between songs the host asked the kids in the studio what they thought of the music."
+    source: 2
+    quote: "Teenagers danced while singers lip-synched their latest release. Between songs, Mr. Clark interviewed members of the studio audience, who rated the records."
+  - says: "In nineteen fifty six, a young man named Dick Clark took over as host."
+    source: 2
+    quote: "Mr. Clark hosted the show from 1956 to 1989."
+  - says: "He admitted later that at first he had only a foggy notion of what the kids and the music were all about. He caught on fast."
+    source: 2
+    quote: "“only a foggy notion of what the kids, music, and show were really about’’ when he became the host of “Bandstand.’’ Mr. Clark caught on soon enough"
+  - says: "Clark pushed the network, ABC, to take the show national."
+    source: 4
+    quote: "ABC picked it up as a network show thanks in large part to prodding by its young host Dick Clark."
+  - says: "One executive was not convinced. I hesitate to put on this show, he said, because it's just kids dancing."
+    source: 2
+    quote: "When the show was first proposed to ABC, an executive said, “I hesitate to put on this show because it’s just kids dancing !’’"
+  - says: "On the fifth of August, nineteen fifty seven, they put it on anyway."
+    source: 1
+    quote: "on August 5, 1957, Dick Clark’s “Bandstand,” a teenage dance party emanating out of West Philadelphia on WFIL, had gone national on ABC-TV under the name “American Bandstand,”"
+  - says: "On the fifth of August, nineteen fifty seven, they put it on anyway."
+    source: 4
+    quote: "August 5th, 1957, 61 years ago today … the day \"American Bandstand\" went national."
+  - says: "American Bandstand, from West Philadelphia, beamed to a hundred and five stations and some forty million mostly teenage viewers."
+    source: 1
+    quote: "beaming to 105 network affiliates and some 40 million mostly teenage viewers."
+  - says: "Chuck Berry even put it in a song. They'll be rocking on Bandstand, in Philadelphia, P.A."
+    source: 2
+    quote: "Chuck Berry paid tribute to the show in “Sweet Little Sixteen’’: “Cause they’ll be rockin’ on ‘Bandstand’/In Philadelphia, P.A.’’"
+  - says: "In nineteen sixty four the show moved to Los Angeles."
+    source: 2
+    quote: "In 1964, Mr. Clark moved “Bandstand’’ to Los Angeles"
+  - says: "In nineteen eighty six, the old studio went on the National Register of Historic Places."
+    source: 2
+    quote: "The original “Bandstand’’ studio, in Philadelphia, had been placed on the National Register of Historic Places in 1986."
+sources:
+  - title: "\"The Twist\", Chubby Checker (1960), essay for the National Recording Registry (Jim Dawson)"
+    publisher: "Library of Congress, National Recording Preservation Board"
+    url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/TheTwist.pdf
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Dick Clark, legendary TV host, dies at 82 (Mark Feeney, 2012)"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/arts/television/2012/04/18/dick-clark-dies/pcWTNvY39AtY3aw931SPIJ/story.html
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Remembering Philadelphia Television And Music Icon Dick Clark (2012)"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/philadelphia-music-icon-dick-clark-dies-at-82/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Almanac: American Bandstand (2018)"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/almanac-american-bandstand-dick-clark/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

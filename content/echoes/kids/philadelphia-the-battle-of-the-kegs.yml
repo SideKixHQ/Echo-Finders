@@ -1,0 +1,74 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Penn's Landing), following docs/writing-echoes.md (format v2). A children's echo; kids narrator per content/voices.yml.
+# Listening spot: The riverside promenade at Penn's Landing near the foot of Market Street, looking out at the Delaware where the British ships lay in the winter of 1777 to 1778.
+# Position: on land beside the Overture place "Penn's Landing Dog Park" (39.949614, -75.139634), set back from the water's edge (medium confidence; the event was on the river itself, so the listening spot is the shore).
+id: philadelphia-the-battle-of-the-kegs
+title: "The Battle of the Kegs"
+summary: "A children's echo: in January 1778 some barrels came floating down this river, and the whole British fleet opened fire on them."
+place: "Penn's Landing, the Delaware riverfront at the foot of Market Street, Philadelphia, Pennsylvania"
+at: { lat: 39.94930, lng: -75.13990 }
+triggerRadiusKm: 0.08
+category: kids
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [philadelphia, penns-landing, delaware-river, kids, revolution, military, battle-of-the-kegs, francis-hopkinson]
+teaser: "The barrels never fired back."
+script: |
+  Look out at the river. In the winter of seventeen seventy eight, the British army was living in Philadelphia, and their big warships were anchored out there on the Delaware, in a long line.
+
+  Up the river in New Jersey, the Americans had an idea. They took some wooden kegs, like little barrels, and filled them with gunpowder. They fitted each one with a spring trigger, so it would go off if it bumped into something hard. Then they let the kegs float down the river toward the ships.
+
+  It did not quite work. But when the British sailors spotted the kegs bobbing along, they got very nervous. Every barrel might be a bomb!
+
+  So they started shooting at them. And shooting. And shooting. They fired at every floating keg they could see, until every single one had its top knocked in.
+
+  The whole city laughed. A Philadelphia writer named Francis Hopkinson wrote a funny song about it, and called it The Battle of the Kegs. People said it was the best joke of the whole war.
+
+  Look at the water again. A whole navy, with its cannons blazing.
+
+  And not one of those barrels ever fired back.
+pronunciations:
+  - written: "Hopkinson"
+    say: "HOP-kin-sun"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In the winter of seventeen seventy eight, the British army was living in Philadelphia, and their big warships were anchored out there on the Delaware, in a long line."
+    source: 2
+    quote: "passed by the British ships of war and transports, which were moored in a long line stretching from Kensington and the Northern Liberties to Southwark and Moyamensing."
+  - says: "Up the river in New Jersey, the Americans had an idea. They took some wooden kegs, like little barrels, and filled them with gunpowder."
+    source: 1
+    quote: "A collection of kegs for infernal machines was made at Burlington. They were to be charged with powder"
+  - says: "They fitted each one with a spring trigger, so it would go off if it bumped into something hard."
+    source: 1
+    quote: "fitted with spring triggers, which would explode them upon contact with a hard substance."
+  - says: "But when the British sailors spotted the kegs bobbing along, they got very nervous."
+    source: 1
+    quote: "This put the British on the gui vive"
+  - says: "They fired at every floating keg they could see, until every single one had its top knocked in."
+    source: 1
+    quote: "upon the appearance of other kegs a few days afterwards they were mercilessly bombarded until every head of every keg was beaten in."
+  - says: "The whole city laughed."
+    source: 1
+    quote: "This caused a huge laugh"
+  - says: "A Philadelphia writer named Francis Hopkinson wrote a funny song about it, and called it The Battle of the Kegs. People said it was the best joke of the whole war."
+    source: 1
+    quote: "became the theme of Francis Hopkinson's ballad, \"The Battle of the Kegs,\" probably the best satire of the war."
+  - says: "A Philadelphia writer named Francis Hopkinson"
+    source: 1
+    quote: "Francis Hopkinson was the literary wit, the chief of the squib and pasquinade artillery in Philadelphia during the war."
+sources:
+  - title: "History of Philadelphia, 1609 to 1884, volume 1 (J. Thomas Scharf and Thompson Westcott, 1884)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofphilade01scha
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Historic Mansions and Buildings of Philadelphia (Thompson Westcott, 1877), chapter: Walnut Grove"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicmansions00west
+    retrievedAt: "2026-11-10"
+    rights: public-domain

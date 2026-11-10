@@ -1,0 +1,102 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Society Hill), following docs/writing-echoes.md (format v2).
+# Listening spot: West side of South Fifth Street just below Walnut, where Scharf and Westcott place St. Thomas' African Church, Absalom Jones's church.
+# Position: Fifth and Walnut from the Overture street map (39.947537, -75.149515), moved south along the west side of Fifth; kept clear of the haunted house echo on the northeast corner (medium confidence: the church is long gone, the source gives "Fifth Street, below Walnut, west side").
+# The quotations keep the 1794 printing's long s, which the scan reads as an f ("fought" for "sought"). The script says the words as they were meant.
+id: philadelphia-we-sought-not-fee-nor-reward
+title: "We Sought Not Fee Nor Reward"
+summary: "In the 1793 fever, Absalom Jones and Richard Allen nursed the sick and buried the dead. When they were slandered, they answered in print."
+place: "Site of St. Thomas' African Church, Fifth Street below Walnut, Society Hill, Philadelphia, Pennsylvania"
+at: { lat: 39.94690, lng: -75.14975 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 103
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [philadelphia, philadelphia-core, society-hill, absalom-jones, richard-allen, yellow-fever, 1793, black-history, st-thomas]
+teaser: "The newspapers said they could not catch it. That was not true."
+script: |
+  Look along this side of Fifth Street, just below Walnut. Here once stood St. Thomas' African Church. Its first minister was a man named Absalom Jones.
+
+  In the summer before, seventeen ninety three, yellow fever tore through Philadelphia. In early September, an appeal ran in the newspapers. It asked the city's Black people to come forward and help the sick. It said, more or less, that people of their colour could not catch the fever.
+
+  That was not true. Jones and his friend Richard Allen went anyway.
+
+  The first house they went into was in a little alley. A man was dying. His wife lay dead in the house. Two small children were there, and nobody else. That day they visited more than twenty families. Then they went to the mayor, and asked how they could be most useful.
+
+  For weeks they found nurses for the sick, and carried away the dead. Allen's own brothers worked with them. They buried several hundred poor people and strangers, they wrote, and never received or asked anything for it.
+
+  When it was over, a printer named Mathew Carey published an account of the fever. It sold well enough to run to a third edition. In it, he singled out the Black nurses, as if they had cheated the dying.
+
+  So Jones and Allen wrote a book of their own, and put their initials on it, to set down the facts as they really were.
+
+  Look along the street again. Their words, in seventeen ninety four.
+
+  We sought not fee nor reward.
+pronunciations:
+  - written: "Absalom"
+    say: "AB-sa-lum"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Here once stood St. Thomas' African Church."
+    source: 2
+    quote: "St. Thomas' African Church, on Fifth Street, below Walnut, west side"
+  - says: "Its first minister was a man named Absalom Jones."
+    source: 2
+    quote: "Rev. Absalom Jones died in 1818, after a ministry of twenty-two years."
+  - says: "In early September, an appeal ran in the newspapers. It asked the city's Black people to come forward and help the sick."
+    source: 1
+    quote: "Early ki September, a Solicitation appeared in the public papers, to the people of colour to come forward and aflift the diftrefled, periihing, and neglected fick"
+  - says: "It said, more or less, that people of their colour could not catch the fever."
+    source: 1
+    quote: "with a kind of afiurance, that people of our colour were not liable to take the infection."
+  - says: "The first house they went into was in a little alley. A man was dying. His wife lay dead in the house. Two small children were there, and nobody else."
+    source: 1
+    quote: "The firft we vifited was a man in Emlley's alley, who was dying, and his wife lay dead at the time in the houfe, there were none to aflift but two poor helplefs children."
+  - says: "That day they visited more than twenty families. Then they went to the mayor, and asked how they could be most useful."
+    source: 1
+    quote: "We vifited upwards of twenty families"
+  - says: "That day they visited more than twenty families. Then they went to the mayor, and asked how they could be most useful."
+    source: 1
+    quote: "led on the mayor next day, to confult with him how to proceed"
+  - says: "For weeks they found nurses for the sick, and carried away the dead."
+    source: 1
+    quote: "by advertifing that we would remove the dead and procure rmrfes."
+  - says: "Allen's own brothers worked with them."
+    source: 1
+    quote: "Two of whom were Richard Allen's brothers."
+  - says: "They buried several hundred poor people and strangers, they wrote, and never received or asked anything for it."
+    source: 1
+    quote: "We have buried fever al hundreds of poor perfons and ftrangers, for which fervice we have never received, nor never alked any compenfation."
+  - says: "When it was over, a printer named Mathew Carey published an account of the fever. It sold well enough to run to a third edition. In it, he singled out the Black nurses, as if they had cheated the dying."
+    source: 1
+    quote: "Mr. Carey's fecond edition, of his account of the ficknefs, &c in Philadelphia ; pages 76 and jj, where he afperies the blacks alone, for having taken the advantage of the diftrefled fituation of the people."
+  - says: "So Jones and Allen wrote a book of their own, and put their initials on it."
+    source: 1
+    quote: "BY A. J. AND R. A"
+  - says: "So Jones and Allen wrote a book of their own"
+    source: 1
+    quote: "Abfalom Jones and Richard Allen, both of the faid Diftrift, have depofited in this office, the title of a book"
+  - says: "We sought not fee nor reward."
+    source: 1
+    quote: "we fought not fee nor reward"
+  - says: "It sold well enough to run to a third edition."
+    source: 1
+    quote: "Mr. Carey, in page 106 of his third edition"
+  - says: "to set down the facts as they really were."
+    source: 1
+    quote: "to ftep forward and declare facts as they really were"
+sources:
+  - title: "A Narrative of the Proceedings of the Black People, during the late Awful Calamity in Philadelphia, in the year 1793 (Absalom Jones and Richard Allen, 1794)"
+    publisher: "Internet Archive (National Library of Medicine copy)"
+    url: https://archive.org/details/2559020R.nlm.nih.gov
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "History of Philadelphia, 1609 to 1884, volume 2 (J. Thomas Scharf and Thompson Westcott, 1884), St. Thomas' Church"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofphilade02scha
+    retrievedAt: "2026-11-10"
+    rights: public-domain
