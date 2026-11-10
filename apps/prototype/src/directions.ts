@@ -106,9 +106,10 @@ export function walkTime(seconds: number): string {
   return m ? `${h} hr ${m} min` : `${h} hr`;
 }
 
-/** "80 m", "1.2 km". */
+/** "80 m", "1.2 km", "2,033 km". */
 export function walkDistance(metres: number): string {
   if (metres < 950) return `${Math.max(10, Math.round(metres / 10) * 10)} m`;
+  if (metres >= 10_000) return `${Math.round(metres / 1000).toLocaleString('en-US')} km`;
   return `${(metres / 1000).toFixed(1)} km`;
 }
 
