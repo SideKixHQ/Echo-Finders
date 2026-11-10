@@ -1,0 +1,79 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the east end of Cockspur Island, on the path toward the lighthouse overlook, looking across the water to Tybee. Inside Fort Pulaski National Monument, which charges entry and keeps daytime hours.
+# Position: the east end of Cockspur from the coast data in the app's map (low to medium confidence: Wesley's "rising ground" cannot be located, and the app's street file has no tiles here). The 1937 guide identifies the island as Cockspur; Wesley calls it "a small uninhabited island, over against Tybee".
+# Not a duplicate: savannah-wesleys-empty-lot is about Christ Church in Johnson Square. This is his landing, a month before he reached the town.
+id: savannah-a-rising-ground
+title: "A Rising Ground"
+summary: "John Wesley first set foot in America on Cockspur Island in February 1736. Oglethorpe led the passengers up a rise, and they knelt."
+place: "East end of Cockspur Island, facing Tybee, Fort Pulaski National Monument, Georgia"
+at: { lat: 32.02360, lng: -80.88230 }
+triggerRadiusKm: 0.1
+category: people
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+inside: true
+hours: { fromHour: 9, toHour: 17 }
+tags: [savannah, cockspur-island, colonial, john-wesley, methodism, religion, oglethorpe]
+teaser: "His first step in America was onto an island nobody lived on."
+script: |
+  Look across the water to the trees of Tybee. Now look for the highest ground around you. It will not be very high.
+
+  A young clergyman from England first touched America on this island, and the first thing he did was kneel.
+
+  His name was John Wesley. He had sailed from England with General Oglethorpe and a ship full of colonists, and in the afternoon of the fifth of February, seventeen thirty six, they anchored off Tybee. Wesley wrote that the pine groves on the shore looked like the bloom of spring in the depth of winter.
+
+  The next morning, at about eight, they came ashore. He wrote it down that day.
+
+  We first set foot on American ground. It was a small uninhabited island, over against Tybee. Mr. Oglethorpe led us to a rising ground, where we all kneeled down to give thanks.
+
+  Then Oglethorpe took a boat up to Savannah. Wesley gathered the rest of the passengers and read them prayers.
+
+  A month later he was preaching in Savannah. But it started here.
+
+  Look for the rise again.
+
+  His first step in America was onto an island with no one on it. His second was onto his knees.
+detail: >-
+  Wesley's journal, February 5 and 6, 1736. The 1937 guide places Wesley's first sermon on Cockspur ("delivered here his first sermon on American soil"); Wesley's own entry records prayers and a lesson read to the passengers, so the script says "read them prayers". "A month later he was preaching in Savannah": his journal for March 7, 1736.
+pronunciations:
+  - written: "Cockspur"
+    say: "COCK-spur"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "in the afternoon of the fifth of February, seventeen thirty six, they anchored off Tybee."
+    source: 1
+    quote: "Thur. Feb. 5. Between two and three in the afternoon, God brought us all safe into the Savannah river. We cast anchor near Tybee-island"
+  - says: "Wesley wrote that the pine groves on the shore looked like the bloom of spring in the depth of winter."
+    source: 1
+    quote: "where the groves of pines, running along the shore, made an agreeable prospect, showing, as it were, the bloom of spring in the depth of winter."
+  - says: "The next morning, at about eight, they came ashore."
+    source: 1
+    quote: "Fri. 6. About eight in the morning, we first set foot on American ground."
+  - says: "We first set foot on American ground. It was a small uninhabited island, over against Tybee. Mr. Oglethorpe led us to a rising ground, where we all kneeled down to give thanks."
+    source: 1
+    quote: "we first set foot on American ground. It was a small uninhabited island, over against Tybee. Mr. Oglethorpe led us to a rising ground, where we all kneeled down to give thanks."
+  - says: "Then Oglethorpe took a boat up to Savannah. Wesley gathered the rest of the passengers and read them prayers."
+    source: 1
+    quote: "He then took boat for Savannah. When the rest of the people were come on shore, we called our little flock together to prayers."
+  - says: "A month later he was preaching in Savannah."
+    source: 1
+    quote: "Sun. March 7. I entered upon my ministry at Savan- nah, by preaching on the epistle for the day"
+  - says: "A young clergyman from England first touched America on this island"
+    source: 2
+    quote: "this island was hallowed by the prayers of John Wesley."
+sources:
+  - title: "The Journal of the Rev. John Wesley (1906 edition)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/journalofrevjohnwesl
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

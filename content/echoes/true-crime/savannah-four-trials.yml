@@ -1,0 +1,87 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following docs/14-true-crime.md and the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the public sidewalk of West Wayne Street at Bull Street, beside the Mercer House on the west side of Monterey Square. Private house museum; the listener stays on the street.
+# Position: Bull and Wayne intersection from the street segments in the app's Savannah street file, set onto the Wayne Street sidewalk west of Bull, about 55 m from the Pulaski monument echo (medium confidence for which side the study windows face; NPR's guide says "on this side of the house").
+#
+# True crime, per docs/14-true-crime.md:
+# - Conviction status: Jim Williams was tried four times and acquitted in 1989. Earlier verdicts did not stand; the script says aloud that he was acquitted and does not say he was convicted, because no reachable source in this session gave the earlier verdicts (Wikipedia does, and is not a source). Filed as `exonerated`, the status whose rule requires the acquittal said aloud.
+# - Living people: none named. Williams died in 1990, Danny Hansford in 1981. The author of the book is alive and is not named; nothing here concerns him.
+# - Two independent sources: NPR (2024, Georgia Public Broadcasting) and NBC News (2009). Key facts: the shooting in this house (NPR; NBC "a fatal shooting there"), 1981 and Hansford's age (NPR only), four trials and not guilty in 1989 (NPR), tried and not convicted (NBC). The 1981 date and four-trial count rest on NPR alone; a second source for them is the open item before review.
+# - What is not said: anything about the relationship beyond NPR's words, any description of the wounds, any claim about what happened in the room beyond Williams's own account as NPR reports it.
+id: savannah-four-trials
+title: "Four Trials"
+summary: "In 1981 Danny Hansford was shot dead in this house. Jim Williams said it was self-defence. After four trials, a jury acquitted him."
+place: "Mercer House, Bull Street at Wayne Street, Monterey Square, Savannah, Georgia"
+at: { lat: 32.07128, lng: -81.09545 }
+triggerRadiusKm: 0.04
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.8
+tags: [savannah, savannah-core, monterey-square, mercer-house, 1981, midnight-in-the-garden]
+teaser: "Two windows on the side of a red brick house. A young man died behind them."
+script: |
+  Look at the red brick mansion on the west side of Monterey Square. On the side of the house, a local guide points out the first two windows. Behind them is the study.
+
+  A young man named Danny Hansford died in that room.
+
+  It was about two in the morning, on the second of May, nineteen eighty one. Hansford was twenty one. He worked for the man who owned this house, Jim Williams, a wealthy antiques dealer. NPR has described Hansford as Williams's employee and occasional lover.
+
+  Williams shot him. He said it was self defence, that Hansford had tried to shoot him first. He was charged with murder.
+
+  What followed took eight years. Four trials. In nineteen eighty nine, a jury found him not guilty. Williams was acquitted.
+
+  The case became a book, and the book became a film, and the town that had tried him four times became a place people visit with that book in their hands.
+
+  Look at the two windows again.
+
+  The verdict was not guilty. The room still holds a death.
+detail: >-
+  NPR (2024) gives the time, date, Hansford's age, the self-defence claim, the murder charge, the four trials and the 1989 verdict. NBC News (2009) says Williams "was tried but never convicted in a fatal shooting there". NBC calls Williams the "late art dealer"; his death date is not in either fetched page, so the script does not give it.
+editorial: draft
+factCheck: single-source
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: exonerated
+  reviewedBy: "TODO: James, before this can leave draft."
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo is about a fatal shooting. No violence is described in detail."
+claims:
+  - says: "On the side of the house, a local guide points out the first two windows. Behind them is the study."
+    source: 1
+    quote: "On this side of the house, the first two windows - that is the library or study, and that is where the shooting of Danny Hansford took place."
+  - says: "It was about two in the morning, on the second of May, nineteen eighty one. Hansford was twenty one."
+    source: 1
+    quote: "Around 2 in the morning on May 2, 1981, 21-year-old Danny Hansford was shot and killed by his employer and occasional lover, Jim Williams."
+  - says: "He worked for the man who owned this house, Jim Williams, a wealthy antiques dealer"
+    source: 1
+    quote: "He was a wealthy antiques dealer."
+  - says: "He said it was self defence, that Hansford had tried to shoot him first. He was charged with murder."
+    source: 1
+    quote: "Williams claimed self-defense, saying Hansford had tried to shoot him first. Nevertheless, Williams was charged with murder."
+  - says: "Four trials. In nineteen eighty nine, a jury found him not guilty."
+    source: 1
+    quote: "What ensued were four trials, ultimately ending with a jury finding him not guilty in 1989."
+  - says: "Williams was acquitted"
+    source: 2
+    quote: "home to the late art dealer Jim Williams, who was tried but never convicted in a fatal shooting there."
+  - says: "The case became a book, and the book became a film"
+    source: 2
+    quote: "The case inspired the book and movie \"Midnight in the Garden of Good and Evil.\""
+  - says: "a place people visit with that book in their hands"
+    source: 1
+    quote: "We continue, to this day, to see people on the street corner holding the book, looking at certain buildings."
+sources:
+  - title: "The impact of 'Midnight in the Garden of Good and Evil' on Savannah over 30 years (2024)"
+    publisher: "NPR"
+    url: https://www.npr.org/2024/01/12/1224508474/the-impact-of-midnight-in-the-garden-of-good-and-evil-on-savannah-over-30-years
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Explore Savannah's squares, parks and homes (2009)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna33492780
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

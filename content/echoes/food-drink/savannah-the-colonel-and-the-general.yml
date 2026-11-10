@@ -1,0 +1,71 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the sidewalk of West Jones Street outside Mrs. Wilkes' Dining Room, 107 West Jones, between Whitaker and Barnard streets, where the line forms.
+# Position: Jones at Whitaker and Jones at Barnard from the street segments in the app's Savannah street file; 107 is near the Whitaker end of the block (medium confidence for the door, high for the block).
+id: savannah-the-colonel-and-the-general
+title: "The Colonel and the General"
+summary: "Mrs. Wilkes' Dining Room, a former boarding house on Jones Street, still seats strangers together at family tables for fried chicken."
+place: "Mrs. Wilkes' Dining Room, 107 West Jones Street, Savannah, Georgia"
+at: { lat: 32.07283, lng: -81.09590 }
+triggerRadiusKm: 0.035
+category: food-drink
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [savannah, savannah-core, jones-street, food, southern-cooking, boarding-house]
+teaser: "You will be sitting with strangers. That is the point."
+script: |
+  Look along this block of Jones Street for a line of people waiting at a door. At mealtimes, you cannot miss it.
+
+  They are waiting to sit down with strangers.
+
+  This was a boarding house. Today it is Mrs. Wilkes' Dining Room, and it still runs like one. Breakfast and lunch only. Big tables, and you sit wherever there is a chair, next to whoever is already there. Then the dishes come, ten or a dozen of them, passed hand to hand along the table, family style.
+
+  The fried chicken is the reason for the line. In two thousand one, when Mrs. Wilkes was ninety four, CBS asked her about it. She said,
+
+  If the Colonel made it as good as mine, he'd be a general.
+
+  The recipes went into a cookbook. One edition was sold only here, at the door.
+
+  Look at the line again.
+
+  Half of them will leave knowing the name of somebody they did not come with.
+detail: >-
+  CBS News (2001): former boarding house, two meals a day, family-style tables, the fried chicken, Mrs. Wilkes at 94 and her quotation, and the two cookbooks. The Boston Globe (2023): "three-generational mainstay", "(10? 12?) dishes served family style at communal tables". The line at the door is not in either source and should be checked on site. The last line is the narrator's, not a claim.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "This was a boarding house."
+    source: 1
+    quote: "The former boarding house serves just two meals a day - breakfast and lunch"
+  - says: "Breakfast and lunch only."
+    source: 1
+    quote: "serves just two meals a day - breakfast and lunch"
+  - says: "Big tables, and you sit wherever there is a chair, next to whoever is already there."
+    source: 1
+    quote: "if you don't mind waiting for a seat at one of the family-style tables"
+  - says: "Then the dishes come, ten or a dozen of them, passed hand to hand along the table, family style."
+    source: 2
+    quote: "was just one of the many (10? 12?) dishes served family style at communal tables."
+  - says: "In two thousand one, when Mrs. Wilkes was ninety four, CBS asked her about it."
+    source: 1
+    quote: "Even at age 94, she still has the Southern charm"
+  - says: "If the Colonel made it as good as mine, he'd be a general."
+    source: 1
+    quote: "As she says: \"If the Colonel made it as good as mine, he'd be a general!\""
+  - says: "The recipes went into a cookbook. One edition was sold only here, at the door."
+    source: 1
+    quote: "her recipes are collected in two cookbooks - one for sale only at the restaurant, the other available nationwide and on the Internet."
+sources:
+  - title: "Osgood File: Comfort Food (2001)"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/osgood-file-comfort-food/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "We took a girlfriend getaway to Savannah (2023)"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/2023/12/21/lifestyle/a-girlfriend-getaway-to-savannah/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

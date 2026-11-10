@@ -1,0 +1,77 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, a kids telling, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the parade ground, the grassy middle of Fort Pulaski, Cockspur Island. Inside the national monument, which charges entry and keeps daytime hours.
+# Position: the centre of the fort from its known position on Cockspur Island (medium confidence; the app's street file has no tiles here). About 140 m from the southeast angle echo (savannah-they-cannot-breach-your-walls), which is outside the walls; this one is inside them.
+id: savannah-baseball-inside-the-fort
+title: "Baseball Inside the Fort"
+summary: "Inside Fort Pulaski's walls is a big square of grass. Soldiers trained on it, and to pass the time, they played baseball."
+place: "Parade ground, Fort Pulaski, Cockspur Island, Georgia"
+at: { lat: 32.02722, lng: -80.89028 }
+triggerRadiusKm: 0.05
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+inside: true
+hours: { fromHour: 9, toHour: 17 }
+tags: [savannah, cockspur-island, fort-pulaski, civil-war, kids, baseball]
+teaser: "A fort with walls taller than a house, a moat with alligators, and a ball game in the middle."
+script: |
+  Stand on the grass in the middle of the fort. Turn all the way around. Brick walls on every side, and arched rooms all along the bottom.
+
+  This grass has a name. It is called the parade ground. And soldiers played ball on it.
+
+  To get in here, you crossed the moat. It is eight feet deep, deeper than a grown up is tall. It was dug by enslaved workers when the fort was built, and the fort took eighteen years to finish. Rangers say you might see an alligator in it, so give it plenty of room.
+
+  In here, soldiers lined up for inspections and practised with their weapons. The arched rooms were for cannons, and for sleeping.
+
+  And when the drilling was done, and the days were long, the soldiers played baseball, right on this grass, inside the walls.
+
+  In the nineteen thirties a visitor saw a giant fig tree growing here, nearly as tall as the walls.
+
+  Look around at the walls again. Then look at the grass.
+
+  The strongest fort on the river, and inside it, a ball game.
+detail: >-
+  The junior ranger handbook gives the moat's depth, who dug it, the eighteen years, the parade ground's use, the casemates, the alligators and the baseball. The fig tree is from the 1937 guide; whether a fig still grows on the parade ground should be checked before review. The handbook does not say which soldiers played baseball or when; the script does not say either.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "This grass has a name. It is called the parade ground."
+    source: 1
+    quote: "Stand in the grassy area in the middle of the fort. This is called the parade ground."
+  - says: "It is eight feet deep, deeper than a grown up is tall."
+    source: 1
+    quote: "The water is 8 feet deep, so be careful around the moat, the water is over your head!"
+  - says: "It was dug by enslaved workers when the fort was built, and the fort took eighteen years to finish."
+    source: 1
+    quote: "The moat was dug by enslaved workers building the fort."
+  - says: "It was dug by enslaved workers when the fort was built, and the fort took eighteen years to finish."
+    source: 1
+    quote: "One of the many reasons the fort took 18 years to build."
+  - says: "Rangers say you might see an alligator in it, so give it plenty of room."
+    source: 1
+    quote: "You might see an alligator around the moat. Alligators are wild and dangerous animals. If you see one, give it plenty of room."
+  - says: "In here, soldiers lined up for inspections and practised with their weapons. The arched rooms were for cannons, and for sleeping."
+    source: 1
+    quote: "It is where soldiers conducted inspections and practiced with their weapons. The arched rooms all around the bottom of the fort are called casemates. Some of the casemates at Fort Pulaski were used for cannon and some were used as sleeping quarters."
+  - says: "the soldiers played baseball, right on this grass, inside the walls."
+    source: 1
+    quote: "Soldiers played baseball on the parade ground to help pass the time."
+  - says: "In the nineteen thirties a visitor saw a giant fig tree growing here, nearly as tall as the walls."
+    source: 2
+    quote: "by a giant fig tree whose towering branches nearly equal in height the wall itself."
+sources:
+  - title: "Fort Pulaski Junior Ranger Handbook"
+    publisher: "National Park Service, Fort Pulaski National Monument"
+    url: https://www.nps.gov/fopu/learn/kidsyouth/upload/508_Fort_Pulaski_Junior_Ranger_Handbook.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
