@@ -54,10 +54,14 @@ const SCREENS = {
     { sel: '.rail', right: true },
     { sel: '.echobar-row', left: true, right: true },
     { sel: '.map-credit', left: true },
-    // The off-screen marker, when there is one: a whole pill, its right edge on the gutter.
-    { sel: '.map-edge-plate', right: true, optional: true },
-    // ...and sits the rail's own 10px above it when near it; from 24px up it is clear of it.
-    { sel: '.map-edge-plate', gapAbove: '.rail', gap: 10, clear: 24, optional: true },
+    // The off-screen marker, when there is one: a whole pill on the gutter of the edge it
+    // points off. Judged by its side: a marker off the left edge was once measured against
+    // the right gutter, because only right-hand markers had ever been on the test screen.
+    { sel: '[aria-label*="off the right edge"] .map-edge-plate', right: true, optional: true },
+    { sel: '[aria-label*="off the left edge"] .map-edge-plate', left: true, optional: true },
+    // ...and a right-hand one sits the rail's own 10px above it when near it; from 24px up it
+    // is clear of it.
+    { sel: '[aria-label*="off the right edge"] .map-edge-plate', gapAbove: '.rail', gap: 10, clear: 24, optional: true },
     { sel: '.nav', whole: true },
   ],
   /*
