@@ -72,7 +72,7 @@ export function FeedbackForm({ dsn, release, initialKind, echo, onCancel }: Form
     kind === "fact"
       ? echo
         ? "What's wrong, and how do you know?"
-        : "Which story, and what's wrong?"
+        : "Which echo, and what's wrong?"
       : "What happened, or what would help?";
 
   return (
@@ -114,7 +114,7 @@ export function FeedbackForm({ dsn, release, initialKind, echo, onCancel }: Form
         </button>
       </div>
       <p className="feedback-note">
-        Sent with the app's version{echo ? " and which story this is" : ""}. Not your location, and
+        Sent with the app's version{echo ? " and which echo this is" : ""}. Not your location, and
         nothing else about you unless you add your email.
       </p>
     </form>
@@ -133,7 +133,7 @@ export function Feedback({ dsn, release }: { readonly dsn: string | undefined; r
         <button className="setting-row setting-link" onClick={() => setOpen(true)}>
           <span className="setting-text">
             <strong>Send feedback</strong>
-            <small>Something broken, an idea, or a story that got a fact wrong. We read every one.</small>
+            <small>Something broken, an idea, or an echo that got a fact wrong. We read every one.</small>
           </span>
           <svg viewBox="0 0 24 24" aria-hidden="true" className="setting-chev">
             <path d="M9 5l7 7-7 7" />

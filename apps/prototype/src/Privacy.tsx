@@ -184,7 +184,7 @@ export function Privacy({
 
       <Toggle
         label="Anonymous usage statistics"
-        detail="How many people visit and play stories. Never who, and never where you are."
+        detail="How many people visit and play echoes. Never who, and never where you are."
         cost="On unless you turn it off. No cookies, nothing that identifies you."
         on={settings.analytics}
         onToggle={() => onChange({ ...settings, analytics: !settings.analytics })}

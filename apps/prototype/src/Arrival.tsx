@@ -65,7 +65,7 @@ export function Arrival({
       </header>
 
       <div className="tiles">
-        <Tile n={heard.length} label={heard.length === 1 ? "Story" : "Stories"} />
+        <Tile n={heard.length} label={heard.length === 1 ? "Echo" : "Echoes"} />
         <Tile n={minutes} label={minutes === 1 ? "Minute" : "Minutes"} />
         <Tile n={saved.length} label="Saved" />
       </div>
@@ -103,7 +103,7 @@ export function Arrival({
             void shareText(
               `${heard.length} echoes on ${route.name ?? route.id}`,
               `I walked ${route.name ?? route.id} and heard ${heard.length} ${
-                heard.length === 1 ? "story" : "stories"
+                heard.length === 1 ? "echo" : "echoes"
               } along the way, on Echo Finders.`,
               window.location.origin,
             )

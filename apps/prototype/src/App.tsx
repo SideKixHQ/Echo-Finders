@@ -3035,7 +3035,7 @@ export function App() {
           <p>
             No guidance bar and no sound here, which is the point. Guidance answers{" "}
             <i>which way should I go</i>, and a passenger cannot divert an aircraft towards a
-            good story. The engine still computes proximity, because the map wants it; it simply
+            good echo. The engine still computes proximity, because the map wants it; it simply
             stops telling your body about it. A car gets the full cue, because a navigator
             can say "turn left here".
           </p>

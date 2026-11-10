@@ -49,7 +49,7 @@ export default function Footer() {
               <img src="/logo.webp" alt="Echo Finders" width={367} height={96} loading="lazy" className="block h-10 w-auto object-contain" />
             </Link>
             <p className="mt-base max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Short, location-triggered audio stories that reveal the people, events, and mysteries that give a place
+              Short, location-triggered audio echoes that reveal the people, events, and mysteries that give a place
               its character.
             </p>
             <p className="mt-lg font-mono text-[11px] uppercase tracking-[0.18em] text-primary">34.2257° N · 77.9447° W</p>

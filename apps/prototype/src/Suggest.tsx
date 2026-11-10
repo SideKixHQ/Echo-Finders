@@ -181,7 +181,7 @@ export function SuggestForm({ dsn, release, onCancel, initialKind, echo }: FormP
       </div>
       <p className="feedback-note">
         Sent with what you wrote and the app's version. Your location only if you ticked the box,
-        your email only if you typed it. We check every story before anyone hears it.
+        your email only if you typed it. We check every echo before anyone hears it.
       </p>
     </form>
   );
@@ -192,14 +192,14 @@ export function Suggest({ dsn, release }: { readonly dsn: string | undefined; re
   const [open, setOpen] = useState(false);
   return (
     <section className="panel feedback suggest">
-      <h3>Know a story?</h3>
+      <h3>Know an echo?</h3>
       {open ? (
         <SuggestForm dsn={dsn} release={release} onCancel={() => setOpen(false)} />
       ) : (
         <button className="setting-row setting-link" onClick={() => setOpen(true)}>
           <span className="setting-text">
-            <strong>Suggest a story or a place</strong>
-            <small>A story you know, a place we should add, or something that happened to you there.</small>
+            <strong>Suggest an echo or a place</strong>
+            <small>An echo you know, a place we should add, or something that happened to you there.</small>
           </span>
           <svg viewBox="0 0 24 24" aria-hidden="true" className="setting-chev">
             <path d="M9 5l7 7-7 7" />

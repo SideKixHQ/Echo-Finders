@@ -7,7 +7,7 @@ const payload = (body: string) => JSON.parse(body.split("\n")[2]!);
 describe("suggestions", () => {
   it("leads with the kind and the place, and tags the kind", () => {
     const p = payload(feedbackEnvelope({ kind: "story", message: "A ghost in the lane.", place: "Cottage Lane", source: "suggest" }, "abc", "/", at, "1"));
-    expect(p.contexts.feedback.message).toBe("[I know a story] Place: Cottage Lane. A ghost in the lane.");
+    expect(p.contexts.feedback.message).toBe("[I know an echo] Place: Cottage Lane. A ghost in the lane.");
     expect(p.tags.kind).toBe("story");
     expect(p.contexts.feedback.source).toBe("suggest");
     expect(p.contexts.feedback.at).toBeUndefined();
