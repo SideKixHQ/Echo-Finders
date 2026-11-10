@@ -1,0 +1,48 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The sidewalk outside 7 State Street, looking up at the gable above the second storey.
+# Position: State Street just north of Chalmers Street, from the street file's State and Chalmers intersection and the house number (medium confidence). About 50 metres from the Old Slave Mart echo on Chalmers Street.
+# Note: whether the mark is still on the building has not been checked since 1941; a reviewer should look before approval.
+id: charleston-the-badge-that-paid-the-firemen
+title: "The Badge That Paid the Firemen"
+summary: "A children's telling: a metal fire mark high on a State Street house told firefighters which company would pay them to save it."
+place: "7 State Street, Charleston, South Carolina"
+at: { lat: 32.77790, lng: -79.92795 }
+triggerRadiusKm: 0.03
+category: kids
+format: look-below
+durationS: 42
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.7
+tags: [charleston, charleston-core, state-street, fire, insurance, kids]
+teaser: "Look high up. There is a little sign that meant: save this house."
+script: |
+  Look high up on this house, in the pointed gable above the second floor windows. There used to be a little metal badge up there. It is called a fire mark.
+
+  Long ago, when a house caught fire, the firefighters looked up for a badge like this. It told them the house was insured, and which company had insured it.
+
+  And that company had promised a reward to whoever put the fire out.
+
+  So the badge said: save this one, and you will get paid.
+detail: >-
+  The 1941 Federal Writers' Project guide, Charleston point of interest 45, describes the fire mark at 7 State Street, fastened in the gabled pediment above the second story, one of few remaining from hundreds first used in the early eighteenth century after a London custom, showing that the building was insured and by which company, and guaranteeing a reward to any brigade or individuals who put out a fire. The script says "used to be" because the mark has not been checked on site since then.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "There used to be a little metal badge up there."
+    source: 1
+    quote: "fastened on the wall in the gabled pediment above the second story"
+  - says: "It told them the house was insured, and which company had insured it."
+    source: 1
+    quote: "These marks showed that the building was insured and by what company"
+  - says: "And that company had promised a reward to whoever put the fire out."
+    source: 1
+    quote: "would reward any brigade or individuals extinguishing a blaze."
+sources:
+  - title: "South Carolina: A Guide to the Palmetto State (Federal Writers' Project, 1941)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/in.ernet.dli.2015.180130
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

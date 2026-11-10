@@ -1,0 +1,77 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The cobbled middle of Chalmers Street, between Church Street and Meeting Street.
+# Position: Midpoint of Chalmers Street between its Church and Meeting intersections in the app's Charleston street file (high confidence for the street; the legend names no house).
+id: charleston-the-painter-on-chalmers-street
+title: "The Painter on Chalmers Street"
+summary: "Charleston said Samuel Morse perfected the telegraph in a house on Chalmers Street. When he lived here, he was a portrait painter."
+place: "Chalmers Street between Church and Meeting Streets, Charleston, South Carolina"
+at: { lat: 32.77750, lng: -79.93020 }
+triggerRadiusKm: 0.05
+category: legend
+format: short
+durationS: 72
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  Ravenel (1906) reports that "it is said that he perfected his great invention, the telegraph, in a house in Chalmers Street." No house is named, and the 1941 state guide places Morse in Charleston from 1818 as a painter, before he invented the telegraph. The claim is a local tradition, not a documented fact.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, legend, morse, telegraph, painting, chalmers-street]
+teaser: "Dot, dot, dash, on the cobbles of Chalmers Street. Or not."
+script: |
+  Look down at the cobbles of Chalmers Street, and along the old houses on either side. Charleston used to say that one of these houses holds a secret.
+
+  This is a legend. It is said that Samuel Morse perfected his great invention, the telegraph, in a house on Chalmers Street.
+
+  Morse really was here. He came to Charleston in eighteen eighteen. But not as an inventor. He was a painter.
+
+  He had studied abroad, and he looked down on portraits. But portraits paid, so he painted them, and Charleston sat for him. When a history of the city was written in nineteen oh six, it described him as then known only as an artist.
+
+  One of his Charleston portraits is of President James Monroe. Morse himself thought it was among his best. It hangs in City Hall, a few steps from here.
+
+  The telegraph came later.
+
+  Look at the houses again. No one has ever said which one.
+
+  Which is what a legend does best.
+detail: >-
+  Ravenel (1906) records the Chalmers Street tradition with "it is said", and describes Morse in Charleston as "then known only as an artist", painting many portraits. The 1941 Federal Writers' Project guide says Morse won fame as an artist before he invented the telegraph, joined Charleston's artists in 1818, scorned portraits but was compelled to paint them for a living, and preferred his portrait of James Monroe, which hangs in City Hall.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "It is said that Samuel Morse perfected his great invention, the telegraph, in a house on Chalmers Street."
+    source: 1
+    quote: "and it is said that he perfected his great invention, the telegraph, in a house in Chalmers Street."
+  - says: "He came to Charleston in eighteen eighteen."
+    source: 2
+    quote: "joined the coterie of Charleston artists in 1818."
+  - says: "He was a painter."
+    source: 2
+    quote: "who won fame as an artist before he invented the telegraph"
+  - says: "He had studied abroad, and he looked down on portraits."
+    source: 2
+    quote: "Morse scorned portraits but was com- pelled to paint them for a living."
+  - says: "But portraits paid, so he painted them, and Charleston sat for him."
+    source: 1
+    quote: "painting many portraits there"
+  - says: "When a history of the city was written in nineteen oh six, it described him as then known only as an artist."
+    source: 1
+    quote: "Morse, who was then known only as an artist, was for"
+  - says: "One of his Charleston portraits is of President James Monroe."
+    source: 2
+    quote: "Portrait of James Monroe , which hangs in the city hall at Charleston."
+  - says: "Morse himself thought it was among his best."
+    source: 2
+    quote: "though Morse himself preferred his"
+sources:
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906)"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "South Carolina: A Guide to the Palmetto State (Federal Writers' Project, 1941)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/in.ernet.dli.2015.180130
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

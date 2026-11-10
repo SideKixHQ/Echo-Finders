@@ -1,0 +1,89 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The sidewalk where East Bay Street becomes East Battery, at the head of East Battery.
+# Position: East Bay Street and East Battery junction in the app's Charleston street file (high confidence for the junction). Ravenel (1906) puts the Teasdale house "at the head of East Battery" on the old Granville bastion; which present building that is has not been confirmed, so the script does not point at one.
+id: charleston-blue-and-buff-rosettes
+title: "Blue and Buff Rosettes"
+summary: "An enemy officer was quartered on a rebel family in occupied Charleston. The legend of her slippers says how she won the war at home."
+place: "Head of East Battery at East Bay Street, Charleston, South Carolina"
+at: { lat: 32.77262, lng: -79.92770 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 84
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The marriage of the officer John Teasdale to a daughter of the Verree family, and his house at the head of East Battery built about 1779, are given by Ravenel (1906) as recorded. The slippers, the rosettes and the dialogue are family legend; Ravenel marks them with "the legend says". The secret chamber behind the tiles is Ravenel's report of a discovery shortly before 1906. Which present building is the Teasdale house is not confirmed.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 0
+quality: 0.8
+tags: [charleston, south-of-broad, legend, revolution, occupation, east-battery, love]
+teaser: "She fought the occupation with her shoes."
+script: |
+  Stand where East Bay Street turns into East Battery, and look along the old sea wall. Under your feet, somewhere, are the foundations of a bastion from the town's old walls.
+
+  During the British occupation of Charleston, there was only one marriage recorded between an officer of the King and a rebel lady. This is its legend.
+
+  He was John Teasdale, an officer quartered on a Huguenot family with rebellious principles. The daughter of the house was pretty and clever. He fell in love. She teased him.
+
+  Her little slippers, the legend says, were always trimmed with rosettes of blue and buff. The colours of the American army. Always in full view of the red coated lover.
+
+  He hated them. He begged her to pull off those ugly bows. So she stuck her feet out further. But always, the legend says, in a ladylike way, not showing more of the ankle than was proper.
+
+  He could not tear himself away. By great perseverance, he won her.
+
+  He stayed, and built a house here, at the head of East Battery, on the old bastion. Long after, someone lifted the tiles of a fireplace in it, and found a secret chamber. It was empty.
+
+  He became a prosperous Charleston merchant.
+
+  She kept her colours. He kept her.
+detail: >-
+  Ravenel (1906), Deliverance chapter: the single recorded marriage between an officer and a rebel lady, John Teasdale quartered on the Verrees, the rosettes of blue and buff with "the legend says", his words "pull off those ugly bows", "by great perseverance won her", the house built about 1779 at the head of East Battery on the Granville bastion, the secret chamber found behind the chimney tiles, and his career as a merchant. That blue and buff were the American colours is general knowledge, not stated by Ravenel.
+pronunciations:
+  - written: "Teasdale"
+    say: "TEEZ-dayl"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "During the British occupation of Charleston, there was only one marriage recorded between an officer of the King and a rebel lady."
+    source: 1
+    quote: "Only one marriage is recorded, however, between an officer and a rebel lady"
+  - says: "He was John Teasdale, an officer quartered on a Huguenot family with rebellious principles."
+    source: 1
+    quote: "a Huguenot family of distinctly “rebellious principles.”"
+  - says: "The daughter of the house was pretty and clever."
+    source: 1
+    quote: "pretty and clever, the stranger susceptible."
+  - says: "Her little slippers, the legend says, were always trimmed with rosettes of blue and buff."
+    source: 1
+    quote: "her pretty little slippers were always decorated with rosettes of blue and buff"
+  - says: "He begged her to pull off those ugly bows."
+    source: 1
+    quote: "He hated the rosettes, and would beg her to “pull off those ugly bows.”"
+  - says: "But always, the legend says, in a ladylike way, not showing more of the ankle than was proper."
+    source: 1
+    quote: "“but always,” the legend says, “in a ladylike way, not showing more of the ankle than was proper.”"
+  - says: "By great perseverance, he won her."
+    source: 1
+    quote: "“by great perseverance won her.”"
+  - says: "He stayed, and built a house here, at the head of East Battery, on the old bastion."
+    source: 1
+    quote: "He built the house at the head of East Battery."
+  - says: "He stayed, and built a house here, at the head of East Battery, on the old bastion."
+    source: 1
+    quote: "Its foundations are a part of the old Granville bastion"
+  - says: "Long after, someone lifted the tiles of a fireplace in it, and found a secret chamber."
+    source: 1
+    quote: "a secret chamber was discovered running"
+  - says: "It was empty."
+    source: 1
+    quote: "There was nothing in it when it was discovered"
+  - says: "He became a prosperous Charleston merchant."
+    source: 1
+    quote: "a prosperous Charles Town merchant."
+sources:
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), Deliverance"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-10"
+    rights: public-domain

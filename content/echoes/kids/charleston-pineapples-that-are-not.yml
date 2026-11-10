@@ -1,0 +1,53 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The sidewalk at the wood and iron gates of 14 Legare Street. Private house; listen from the street.
+# Position: Legare Street between Broad and Tradd Streets, from the street file's Legare Street segment and the house number (medium confidence).
+id: charleston-pineapples-that-are-not
+title: "Pineapples That Are Not"
+summary: "A children's telling: the white stone fruit on the Legare Street gateposts look like pineapples. They are pine cones."
+place: "Wood and iron gates, 14 Legare Street, Charleston, South Carolina"
+at: { lat: 32.77530, lng: -79.93440 }
+triggerRadiusKm: 0.03
+category: kids
+format: look-below
+durationS: 40
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [charleston, south-of-broad, legare-street, gates, ironwork, kids]
+teaser: "Look at the top of the gateposts. What fruit is that?"
+script: |
+  Look up at the very top of the tall gateposts. Sitting up there are two white stone fruits. What do they look like? Pineapples?
+
+  Everyone thinks so. But an old guidebook to South Carolina says they are not.
+
+  They are pine cones. The fruit of an Italian pine tree, carved in white marble and brought from Italy. In Italy, it said, they stand for peace, good will, and a warm welcome.
+
+  So when you see them, the house is saying hello.
+detail: >-
+  The 1941 Federal Writers' Project guide describes the wood and iron gates of 14 Legare Street, their cypress and iron scrollwork, and the white marble ornaments from Italy that resemble pineapples but are believed to represent the edible fruit of an Italian pine tree, Yuletide symbols of peace, good will and hospitality. The guide says "believed", so the script attributes it to the guidebook.
+pronunciations:
+  - written: "Legare"
+    say: "luh-GREE"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Sitting up there are two white stone fruits."
+    source: 1
+    quote: "Topping the gateposts are white marble ornaments from Italy"
+  - says: "But an old guidebook to South Carolina says they are not."
+    source: 1
+    quote: "but believed to represent the edible fruit of an Italian pine tree"
+  - says: "The fruit of an Italian pine tree, carved in white marble and brought from Italy."
+    source: 1
+    quote: "Topping the gateposts are white marble ornaments from Italy"
+  - says: "In Italy, it said, they stand for peace, good will, and a warm welcome."
+    source: 1
+    quote: "Yuletide symbols of peace, good will, and"
+sources:
+  - title: "South Carolina: A Guide to the Palmetto State (Federal Writers' Project, 1941)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/in.ernet.dli.2015.180130
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

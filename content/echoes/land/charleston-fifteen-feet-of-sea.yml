@@ -1,0 +1,64 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The Isle of Palms side of Breach Inlet, by the bridge from Sullivan's Island, looking at the houses and the inlet.
+# Position: Southwest tip of Isle of Palms at Breach Inlet, checked against the land map (medium confidence).
+id: charleston-fifteen-feet-of-sea
+title: "Fifteen Feet of Sea"
+summary: "Hurricane Hugo came ashore at Sullivan's Island at midnight on 22 September 1989. Here on the Isle of Palms the sea rose fifteen feet."
+place: "Breach Inlet, Isle of Palms side, South Carolina"
+at: { lat: 32.78100, lng: -79.80500 }
+triggerRadiusKm: 0.1
+category: land
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.8
+tags: [charleston, isle-of-palms, sullivans-island, hurricane-hugo, storm-surge, 1989]
+teaser: "The night the sea did not stop at the sand."
+script: |
+  Look at the houses near the inlet, and the beach in front of them. Now imagine the sea rising, and not stopping at the sand.
+
+  Around midnight on the twenty second of September, nineteen eighty nine, Hurricane Hugo came ashore at Sullivan's Island, just across this inlet. It was a category four storm, with winds of up to a hundred and forty miles an hour.
+
+  The ocean came with it. Here on the Isle of Palms, the storm tide reached fifteen feet above sea level. Hugo raised the highest storm tides ever recorded on the East Coast of the United States.
+
+  On these islands, most homes could not be lived in afterwards.
+
+  Downtown Charleston was hit hard too. But it was spared the worst. If Hugo had tracked a little further south, the city would have flooded far more.
+
+  Look at the houses again.
+
+  The sea did not stop at the sand.
+detail: >-
+  From the National Weather Service Charleston office's Hurricane Hugo page: landfall at Sullivan's Island around midnight on 22 September 1989 as a Category 4 with estimated maximum sustained winds of 135 to 140 mph, a storm tide of 15.0 feet above mean sea level at Isle of Palms, the highest storm tide heights ever recorded on the US East Coast, the majority of homes on Sullivan's Island and Isle of Palms rendered uninhabitable, and the observation that a track slightly further south would have flooded downtown far more. The script says "above sea level", not above the ground.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Around midnight on the twenty second of September, nineteen eighty nine, Hurricane Hugo came ashore at Sullivan's Island, just across this inlet."
+    source: 1
+    quote: "Hugo made landfall just north of Charleston, SC at Sullivan's Island around midnight September 22, 1989"
+  - says: "It was a category four storm, with winds of up to a hundred and forty miles an hour."
+    source: 1
+    quote: "as a Category 4 storm with estimated maximum sustained winds of 135-140 mph"
+  - says: "Here on the Isle of Palms, the storm tide reached fifteen feet above sea level."
+    source: 1
+    quote: "Isle of Palms, SC: 15.0 feet above MSL"
+  - says: "Hugo raised the highest storm tides ever recorded on the East Coast of the United States."
+    source: 1
+    quote: "Hugo produced the highest storm tide heights ever recorded along the U.S. East Coast."
+  - says: "On these islands, most homes could not be lived in afterwards."
+    source: 1
+    quote: "such as Sullivan's Island and the Isle of Palms where the majority of homes were rendered uninhabitable."
+  - says: "But it was spared the worst."
+    source: 1
+    quote: "it spared the city the worst of the impacts"
+  - says: "If Hugo had tracked a little further south, the city would have flooded far more."
+    source: 1
+    quote: "a track slightly farther south would have produced much more flooding in Downtown Charleston."
+sources:
+  - title: "Hurricane Hugo, September 21 to 22, 1989"
+    publisher: "National Weather Service, Charleston SC office"
+    url: https://www.weather.gov/chs/HurricaneHugo-Sep1989
+    retrievedAt: "2026-11-10"
+    rights: public-domain

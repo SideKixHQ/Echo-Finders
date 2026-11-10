@@ -1,0 +1,74 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The sidewalk outside the Pirate House, 145 Church Street, just north of Queen Street. Private building; the listener stays on the street.
+# Position: 25 metres north of the Church and Queen Street intersection in the app's Charleston street file, on the west side (medium confidence). Close to the Dock Street Theatre and French Huguenot Church echoes; a different building and subject.
+id: charleston-no-pirates-lived-here
+title: "No Pirates Lived Here"
+summary: "Tourists were told pirates used the old house at 145 Church Street as their headquarters. The 1941 state guide called it a modern myth."
+place: "The Pirate House, 145 Church Street, Charleston, South Carolina"
+at: { lat: 32.77855, lng: -79.92938 }
+triggerRadiusKm: 0.03
+category: legend
+format: short
+durationS: 70
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The pirate headquarters is a tourist legend. The 1941 Federal Writers' Project guide says the house was believed built by French Huguenots and calls the pirate story "apparently a modern myth entirely unconfirmed by historical research"; it also says the doorways, roof and dormers were remodelled in the 1920s. The pirates hanged in Charleston in 1718 are real history; their link to this house is not.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, legend, pirates, church-street, french-quarter]
+teaser: "The pirates are real. The pirate house is not."
+script: |
+  Look at the little stucco house with the red tile roof and the curving eaves. It has a name on the tourist maps. The Pirate House.
+
+  This is a legend, and here is how it goes. In the early seventeen hundreds, when pirates raided the Carolina coast, this was where they met. Their headquarters, right on Church Street.
+
+  The pirates were real. In seventeen eighteen, many of them were captured off this coast, tried in Charleston and hanged.
+
+  But the state's own guidebook, in nineteen forty one, looked at this house and said plainly that the pirate story was apparently a modern myth, entirely unconfirmed by historical research.
+
+  What it believed instead is quieter. The house was probably built by French Huguenots, the Protestant refugees whose church still stands around the corner. One writer said it looked like a French village. Stucco walls, tinted and chipped, red tile roof and all.
+
+  And some of what makes it look so old is not old at all. The doorways, the roof and the dormers were remodelled in the nineteen twenties.
+
+  Look at the roof again.
+
+  The pirates were real. Their house was not.
+detail: >-
+  The 1941 Federal Writers' Project guide, Charleston point of interest 40: the Pirate House at 145 Church Street, an antique shop and tea room, Julian Street's description, the 1920s remodelling, the belief that Huguenots built it, and its judgement that the pirate story is a modern myth. The 1718 pirate trials and hangings are from Smith and Smith (1917), who mention the pirates captured by Governor Johnson and Colonel Rhett in 1718 and 1719. The listener is pointed to the French Huguenot Church nearby, which has its own echo.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at the little stucco house with the red tile roof and the curving eaves."
+    source: 1
+    quote: "The entrance door frames, the roof with its outward curving eaves, and the dormers were remodeled in the decade 1920-30."
+  - says: "In the early seventeen hundreds, when pirates raided the Carolina coast, this was where they met."
+    source: 1
+    quote: "that it was used as headquarters by early-eighteenth-century pirates who harassed the Carolina coast"
+  - says: "In seventeen eighteen, many of them were captured off this coast, tried in Charleston and hanged."
+    source: 2
+    quote: "the trials, and the executions of pirates captured"
+  - says: "But the state's own guidebook, in nineteen forty one, looked at this house and said plainly that the pirate story was apparently a modern myth, entirely unconfirmed by historical research."
+    source: 1
+    quote: "is apparently a modern myth entirely unconfirmed by historical research."
+  - says: "The house was probably built by French Huguenots, the Protestant refugees whose church still stands around the corner."
+    source: 1
+    quote: "The house is believed to have been erected by French Huguenots"
+  - says: "Stucco walls, tinted and chipped, red tile roof and all."
+    source: 1
+    quote: "stucco walls, tinted and chipped, red tile roof and all."
+  - says: "The doorways, the roof and the dormers were remodelled in the nineteen twenties."
+    source: 1
+    quote: "The entrance door frames, the roof with its outward curving eaves, and the dormers were remodeled in the decade 1920-30."
+sources:
+  - title: "South Carolina: A Guide to the Palmetto State (Federal Writers' Project, 1941)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/in.ernet.dli.2015.180130
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "The Dwelling Houses of Charleston, South Carolina (Alice R. Huger Smith and D. E. Huger Smith, 1917)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/dwellinghousesof00smit
+    retrievedAt: "2026-11-10"
+    rights: public-domain

@@ -1,0 +1,81 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The sidewalk in front of Old Bethel United Methodist Church, 222 Calhoun Street.
+# Position: "Old Bethel United Methodist Church" point in the app's Charleston street file (high confidence).
+id: charleston-the-church-that-crossed-the-street
+title: "The Church That Crossed the Street"
+summary: "Old Bethel was built for Black and white Methodists together. After they split, the building was moved twice."
+place: "Old Bethel United Methodist Church, 222 Calhoun Street, Charleston, South Carolina"
+at: { lat: 32.78449, lng: -79.94208 }
+triggerRadiusKm: 0.03
+category: built
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [charleston, old-bethel, methodist, african-american, calhoun-street, architecture]
+teaser: "This church is not where it was built. It is not even on the same side of the road."
+script: |
+  Look at this white church with its tall columns. It was not built here. It was not even built on this side of the street.
+
+  It went up between seventeen ninety seven and eighteen o seven, at the corner of Pitt and Calhoun, then the far edge of town. It was a plain white meeting house, after a design by Francis Asbury, the first Methodist bishop in the United States.
+
+  It was founded and paid for by Black and white Charlestonians together. Free Black people and enslaved people were both members.
+
+  Then, in eighteen thirty four, the congregation split over a single question. Should Black members be made to sit in the galleries? By eighteen forty, the Black members had left to form their own congregation.
+
+  In eighteen fifty two, the old church was moved to the back of its lot, for the Black congregation, and a new church went up on the corner for the white one.
+
+  In eighteen eighty, it was given to the Black congregation, and moved again. Right across Calhoun Street, to where it stands now. The columns came later.
+
+  Look at it again. Its congregation today includes descendants of that eighteen eighty congregation.
+
+  The building moved twice. They stayed.
+detail: >-
+  From the National Park Service Travel Charleston page: built 1797 to 1807 at Pitt and Calhoun to a design by Francis Asbury, founded and paid for by Black and white citizens, the 1834 schism over gallery seating, the Black members' secession by 1840, the moves of 1852 and 1880, the later portico with four fluted Corinthian columns, and descendants of the 1880 congregation among its members today. The NPS calls it the third oldest church building surviving in Charleston.
+pronunciations:
+  - written: "Asbury"
+    say: "AZ-bur-ee"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "It went up between seventeen ninety seven and eighteen o seven, at the corner of Pitt and Calhoun, then the far edge of town."
+    source: 1
+    quote: "Construction began in 1797 and was completed in 1807."
+  - says: "It went up between seventeen ninety seven and eighteen o seven, at the corner of Pitt and Calhoun, then the far edge of town."
+    source: 1
+    quote: "It stood at the corner of Pitt and Calhoun Streets, then the extreme northwestern part of the city."
+  - says: "It was a plain white meeting house, after a design by Francis Asbury, the first Methodist bishop in the United States."
+    source: 1
+    quote: "The church was originally constructed in the gabled meetinghouse style with white clapboards after a design by Francis Asbury, the first Methodist bishop in the United States."
+  - says: "It was founded and paid for by Black and white Charlestonians together."
+    source: 1
+    quote: "Old Bethel was founded and paid for by both black and white citizens."
+  - says: "Free Black people and enslaved people were both members."
+    source: 1
+    quote: "Membership in the congregation of Old Bethel was open to both free blacks and slaves."
+  - says: "Then, in eighteen thirty four, the congregation split over a single question."
+    source: 1
+    quote: "However, in 1834 a schism developed over whether blacks were to be restricted to sitting in the galleries."
+  - says: "By eighteen forty, the Black members had left to form their own congregation."
+    source: 1
+    quote: "By 1840 the black members seceded to form their own congregation."
+  - says: "In eighteen fifty two, the old church was moved to the back of its lot, for the Black congregation, and a new church went up on the corner for the white one."
+    source: 1
+    quote: "In 1852 the church was moved to the western portion of the lot on which it stood, to be used by the black congregation. A new church, Bethel Methodist, was built on the original site, to serve the white congregation."
+  - says: "In eighteen eighty, it was given to the Black congregation, and moved again."
+    source: 1
+    quote: "After the church was given to the black population, in 1880, it was moved across Calhoun Street to its present location."
+  - says: "The columns came later."
+    source: 1
+    quote: "The addition of a gabled portico supported by four fluted Corinthian columns documents changing styles in ecclesiastical architecture."
+  - says: "Its congregation today includes descendants of that eighteen eighty congregation."
+    source: 1
+    quote: "The church currently serves a black congregation, which includes descendants of the 1880 congregation."
+sources:
+  - title: "Old Bethel United Methodist Church"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/places/old-bethel-united-methodist-church.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
