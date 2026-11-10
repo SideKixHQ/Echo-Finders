@@ -61,10 +61,15 @@ const HALO_R: Record<string, number | undefined> = {
  *
  * Rounded to fifty metres to agree with the echo card and the sheet, which round the same
  * way. Three places on one screen reporting the same distance differently is how somebody
- * stops believing any of them.
+ * stops believing any of them. Whole kilometres from ten up: "806.9 km" on a far pin is a
+ * decimal nobody can walk.
  */
 const coarse = (km: number): string =>
-  km * 1000 < 950 ? `${Math.round((km * 1000) / 50) * 50} m` : `${km.toFixed(1)} km`;
+  km * 1000 < 950
+    ? `${Math.round((km * 1000) / 50) * 50} m`
+    : km < 10
+      ? `${km.toFixed(1)} km`
+      : `${Math.round(km).toLocaleString("en-US")} km`;
 
 interface Props {
   /** The journey, or `null` when roaming: there is no line and no corridor, only here. */

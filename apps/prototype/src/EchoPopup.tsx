@@ -570,6 +570,8 @@ function away(metres: number | null): string {
   // while the list two inches below said 350m, which is the kind of disagreement that
   // makes somebody stop believing either number.
   if (metres < 950) return `About ${Math.round(metres / 50) * 50}m away`;
+  // Whole kilometres from ten up, as the map's labels round (`coarse`, RouteMap.tsx).
+  if (metres >= 10_000) return `${Math.round(metres / 1000).toLocaleString("en-US")}km away`;
   return `${(metres / 1000).toFixed(1)}km away`;
 }
 

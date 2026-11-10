@@ -47,7 +47,7 @@
  * of twenty six. Nearest first, so the next item is always the cheapest one to go and get.
  */
 
-import { useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { presetFor, rarityOf, type Echo, type Guidance, type TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, type EchoFace } from "@echofinders/echo";
@@ -95,16 +95,24 @@ export interface EchoBarProps {
    * exact failure the old proximity strip had when a pin was tapped.
    */
   readonly guidance: Guidance | null;
+  /** What the bar takes from the bottom, measured (`ECHOBAR_H`), whenever it changes. */
+  readonly onHeight?: (px: number) => void;
 }
 
+/** The gap the bar floats above the tab bar (`.echobar` in `theme.css`). */
+export const ECHOBAR_FLOAT = 8;
 /**
- * How much of the bottom this takes, so the map keeps its pins and its credit clear of it.
+ * How much of the bottom this takes, so the map keeps its pins and its credit clear of it:
+ * the bar and the gap it floats above the tab bar.
  *
- * It tracks `--step-h` in `theme.css`, exactly as `NAV_H` in `RouteMap` tracks the tab bar.
- * Change the bar and change both. It replaced 104 of stepper plus a 132 sheet peek plus a
- * 56 guidance strip.
+ * MEASURED, NOT WRITTEN DOWN. This was a constant, 86, kept in step by hand with
+ * `--step-h` in `theme.css`, and both went stale when the type scale made the bar 91px
+ * tall: the control column and the zoomed-out card sat on it. The bar now measures itself
+ * and writes the result to `--echobar-h` on the screen, which the stylesheet reads, and
+ * hands the same number to `onHeight` for the map. This is only the first frame's guess,
+ * the 91px bar plus its gap, and the stylesheet's fallback says the same.
  */
-export const ECHOBAR_H = 86;
+export const ECHOBAR_H = 99;
 
 const RARITY_LABEL: Record<string, string> = { rare: "Rare", singular: "Singular" };
 
@@ -122,6 +130,7 @@ export function EchoBar({
   simple,
   mode,
   guidance,
+  onHeight,
 }: EchoBarProps) {
   /*
    * Nothing chosen yet shows the nearest, which is what the right arrow would give you
@@ -132,6 +141,29 @@ export function EchoBar({
   const current = items[at];
   // Before the early return: hooks run on every render or not at all.
   const swipe = useRef<{ x: number; y: number } | null>(null);
+  const root = useRef<HTMLDivElement | null>(null);
+  const report = useRef(onHeight);
+  report.current = onHeight;
+  const shown = current !== undefined;
+  useLayoutEffect(() => {
+    const el = root.current;
+    if (!el) return;
+    const screen = el.closest<HTMLElement>(".screen");
+    const measure = () => {
+      const h = el.getBoundingClientRect().height;
+      if (h < 1) return;
+      const px = Math.ceil(h) + ECHOBAR_FLOAT;
+      screen?.style.setProperty("--echobar-h", `${px}px`);
+      report.current?.(px);
+    };
+    measure();
+    const ro = typeof ResizeObserver === "undefined" ? null : new ResizeObserver(measure);
+    ro?.observe(el);
+    return () => {
+      ro?.disconnect();
+      screen?.style.removeProperty("--echobar-h");
+    };
+  }, [shown]);
   if (!current) return null;
 
   const { echo, distanceKm } = current;
@@ -185,6 +217,7 @@ export function EchoBar({
 
   return (
     <div
+      ref={root}
       className={warm ? "echobar echobar-warm" : "echobar"}
       data-cue={cue ? cue.kind : "none"}
     >

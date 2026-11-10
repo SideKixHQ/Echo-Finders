@@ -58,7 +58,7 @@ import {
 import { Walk } from "./Walk";
 import { Nowhere } from "./Nowhere";
 import { Ribbon } from "./Ribbon";
-import { EchoBar, ECHOBAR_H } from "./EchoBar";
+import { EchoBar, ECHOBAR_FLOAT, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, buyWeekPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
@@ -524,6 +524,8 @@ export function App() {
 
 
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  /* What the echo bar takes from the bottom, as it measures itself (`EchoBar`, `onHeight`). */
+  const [barH, setBarH] = useState(ECHOBAR_H);
 
   /**
    * How far the listener has zoomed the map in, as a multiple of the mode's own framing.
@@ -2209,7 +2211,7 @@ export function App() {
                 focusId={focusId}
                 /* The stepper covers the bottom of the map, so the map has to know: it
                    keeps pins, edge markers and the Esri credit above it. */
-                reservedBottom={(showBar ? ECHOBAR_H : directing ? DIRSHEET_H : 0) + (farOut && !directing ? AREACARD_H + (showBar ? AREACARD_OVER_BAR : 0) : 0)}
+                reservedBottom={(showBar ? barH : directing ? DIRSHEET_H : 0) + (farOut && !directing ? AREACARD_H + (showBar ? AREACARD_OVER_BAR : 0) : 0)}
                 onInView={setInView}
                 overview={overview}
                 progress={along}
@@ -2315,9 +2317,10 @@ export function App() {
                 is the only answer on that screen that does not involve aiming at the pile.
               */}
               {/* Not while directions are up: their sheet has the bottom of the screen. */}
-              {farOut && !directing && <AreaCard echoes={inView} above={showBar ? ECHOBAR_H + AREACARD_OVER_BAR : 0} />}
+              {farOut && !directing && <AreaCard echoes={inView} above={showBar ? barH - ECHOBAR_FLOAT + AREACARD_OVER_BAR : 0} />}
               {showBar && (
                 <EchoBar
+                  onHeight={setBarH}
                   items={stepList}
                   index={stepIndex}
                   stateOf={stateOf}
