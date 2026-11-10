@@ -5332,15 +5332,6 @@ div.maplibregl-map { font-size: var(--fs-label); }
   .pop { padding: 12px 16px 12px; }
   .pop .pop-plate { margin-bottom: 10px; }
   .pop .pop-plate img { height: 64px; }
-  /*
-   * A 64px strip holds one row of chips, not three. At 375x667 the credit, "Then & now"
-   * and "Photographed here, 1938" sat on top of each other. The year caption goes; the
-   * credit stays, because an archive image is shown with its credit or not at all
-   * (ADR-0006), and the badge is the camera button.
-   */
-  .pop .pop-plate span:not(.pop-plate-cam) { display: none; }
-  .pop .pop-plate .pop-plate-credit { top: 50%; transform: translateY(-50%); }
-  .pop .pop-plate .pop-plate-cam { top: 50%; transform: translateY(-50%); }
   .pop h3 { font-size: 22px; }
   .pop .pop-teaser {
     margin-top: 8px; font-size: 16px;
