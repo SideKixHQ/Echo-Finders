@@ -1,0 +1,114 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Midtown cluster.
+# Listening spot: Fifth Avenue sidewalk at the foot of the main steps of the New York Public Library (Stephen A. Schwarzman Building), between the two marble lions, at 42nd Street.
+# Position: Overture places "Patience And Fortitude" at 40.75318, -73.98224 (476 5th Ave); the spot is the Fifth Avenue sidewalk just east of the steps (high confidence).
+id: new-york-patience-and-fortitude
+title: "Two Lions, Two Words"
+summary: "The library's marble lions were named in the Great Depression for the two things a mayor said New Yorkers needed most."
+place: "New York Public Library steps, Fifth Avenue at 42nd Street, Manhattan"
+at: { lat: 40.75305, lng: -73.98205 }
+triggerRadiusKm: 0.04
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 70
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-york, midtown, fifth-avenue, library, lions, family]
+teaser: "Two marble lions, and a message the city keeps needing."
+script: |
+  Look at the two marble lions guarding the steps of this library. They have names.
+
+  One is called Patience. The other is called Fortitude. Fortitude means the kind of courage that keeps going when things are hard.
+
+  So why would anyone name a lion Patience?
+
+  The lions were carved for this library when it opened, by a sculptor named Edward Clark Potter.
+
+  Then came the Great Depression, and hard times for New Yorkers. The mayor, Fiorello La Guardia, gave the lions their names. Patience and fortitude. That was what he wanted everyone in the city to hold on to.
+
+  And the lions have kept doing that job ever since. Every December they wear wreaths. When the Mets played the Yankees in the World Series, they wore baseball caps. And in twenty twenty, in the pandemic, they wore face masks three feet long. The head of the library said it again. We must have patience and fortitude.
+
+  Can you guess which lion is which?
+
+  Two lions. Two words. For whenever the city needs them.
+
+pronunciations:
+  - written: Fiorello La Guardia
+    say: fee-oh-REL-oh la GWAR-dee-ah
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the two marble lions guarding the steps of this library."
+    source: 1
+    quote: "It's also 100 years of Patience and Fortitude: the names of the lion statues that stand guard on the steps of the building on Fifth Avenue in Manhattan."
+  - says: "One is called Patience."
+    source: 1
+    quote: "It's also 100 years of Patience and Fortitude: the names of the lion statues that stand guard on the steps of the building on Fifth Avenue in Manhattan."
+  - says: "The other is called Fortitude."
+    source: 2
+    quote: "So has their message. The lions were named by Mayor Fiorello LaGuardia during the Great Depression to inspire New Yorkers to have patience and fortitude through tough times."
+  - says: "So why would anyone name a lion Patience?"
+    source: 1
+    quote: "the names of the lion statues that stand guard on the steps of the building"
+  - says: "The lions were carved for this library when it opened, by a sculptor named Edward Clark Potter."
+    source: 1
+    quote: "The marble lion \"Fortitude,\" one of a pair created by Edward Clark Potter in 1911, is seen at the main entrance to the New York Public Library on May 20."
+  - says: "The lions were carved for this library when it opened, by a sculptor named Edward Clark Potter."
+    source: 3
+    quote: "The flagship is the Stephen A. Schwarzman Building at Fifth Avenue and 42nd Street, which opened on May 23, 1911."
+  - says: "Then came the Great Depression, and hard times for New Yorkers."
+    source: 2
+    quote: "The lions were named by Mayor Fiorello LaGuardia during the Great Depression to inspire New Yorkers to have patience and fortitude through tough times."
+  - says: "The mayor, Fiorello La Guardia, gave the lions their names."
+    source: 2
+    quote: "The lions were named by Mayor Fiorello LaGuardia during the Great Depression to inspire New Yorkers to have patience and fortitude through tough times."
+  - says: "That was what he wanted everyone in the city to hold on to."
+    source: 2
+    quote: "The lions were named by Mayor Fiorello LaGuardia during the Great Depression to inspire New Yorkers to have patience and fortitude through tough times."
+  - says: "Every December they wear wreaths."
+    source: 4
+    quote: "Every December they wear wreaths, and during the 2000 Subway Series, they wore Mets and Yankees caps."
+  - says: "When the Mets played the Yankees in the World Series, they wore baseball caps."
+    source: 4
+    quote: "Every December they wear wreaths, and during the 2000 Subway Series, they wore Mets and Yankees caps."
+  - says: "And in twenty twenty, in the pandemic, they wore face masks three feet long."
+    source: 4
+    quote: "Their masks, which arrived on Tuesday, are 3 feet long."
+  - says: "And in twenty twenty, in the pandemic, they wore face masks three feet long."
+    source: 4
+    quote: "We will get to the other side of this public health crisis together."
+  - says: "The head of the library said it again."
+    source: 4
+    quote: "NYPL president Anthony W. Marx said in a press release."
+  - says: "We must have patience and fortitude."
+    source: 4
+    quote: "we must have patience and fortitude, and we must follow what experts tell us"
+  - says: "Two lions."
+    source: 3
+    quote: "Guarded by lions Patience and Fortitude, it is one of the city's most recognizable structures."
+  - says: "Two words."
+    source: 2
+    quote: "Though they can't roar, Patience and Fortitude's presence echoes through the streets of Midtown, as it has for over a century."
+sources:
+  - title: "New York Public Library: 100 Years Of Open Doors"
+    publisher: "NPR, 23 May 2011"
+    url: https://www.npr.org/2011/05/23/136582351/ny-public-library-celebrates-100-years-of-open-doors
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Patience And Fortitude, New York Public Library's Iconic Lions, Getting A Cleanup"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/patience-and-fortitude-new-york-public-librarys-iconic-lions-getting-a-cleanup/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "NY Public Library turns 100, not just with books"
+    publisher: "NBC News (Associated Press)"
+    url: https://www.nbcnews.com/id/wbna43127605
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Iconic lion statues outside New York Public Library wear giant face masks"
+    publisher: "CBS News, June 2020"
+    url: https://www.cbsnews.com/news/lion-wear-face-masks-statues-outside-nyc-public-library/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

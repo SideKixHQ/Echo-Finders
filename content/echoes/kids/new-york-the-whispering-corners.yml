@@ -1,0 +1,94 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Midtown cluster.
+# Listening spot: The Whispering Gallery on Grand Central Terminal's dining concourse level, the tiled vaulted space in front of the Oyster Bar.
+# Position: Overture places "Whispering Gallery in Grand Central Terminal" at 40.75252, -73.97731 (high confidence; indoors, below the Main Concourse echo, about 40 m south of it).
+id: new-york-the-whispering-corners
+title: "The Whispering Corners"
+summary: "Whisper into one corner of this tiled archway and a friend in the far corner hears you. Nobody knows if the builder meant it."
+place: "Whispering Gallery, outside the Oyster Bar, Grand Central Terminal, Manhattan"
+at: { lat: 40.75252, lng: -73.97731 }
+triggerRadiusKm: 0.04
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-york, midtown, grand-central, sound, guastavino, family]
+teaser: "Stand in a corner and whisper. Someone forty feet away will hear you."
+script: |
+  Look up at the low, curved ceiling over your head, covered in pale tiles. Find the corners, where the arches come down to the floor.
+
+  Here is something to try. Stand in one corner, with your face close to the wall. Ask a friend to stand in the corner across from you, on the diagonal. Now whisper.
+
+  They can hear you. Through all these people walking past. From about forty feet away.
+
+  Your whisper climbs up the curve of the ceiling, and comes down on the other side.
+
+  The man who built ceilings like this was Rafael Guastavino. He came to New York from Spain in eighteen eighty one. He made his arches out of thin tiles, layer on layer, and they are all over America now.
+
+  But here is the funny part. Nobody knows for sure whether he meant this ceiling to carry whispers at all.
+
+  So go on. Try it again.
+
+  Some of the best secrets in New York were made by accident.
+
+pronunciations:
+  - written: Guastavino
+    say: gwas-tah-VEE-no
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Stand in one corner, with your face close to the wall."
+    source: 1
+    quote: "If you stand in the corner and someone stands in the opposite corner, despite the ambient noise, you can hear each other simply by whispering."
+  - says: "Ask a friend to stand in the corner across from you, on the diagonal."
+    source: 1
+    quote: "If you stand in the corner and someone stands in the opposite corner, despite the ambient noise, you can hear each other simply by whispering."
+  - says: "They can hear you."
+    source: 1
+    quote: "If you stand in the corner and someone stands in the opposite corner, despite the ambient noise, you can hear each other simply by whispering."
+  - says: "From about forty feet away."
+    source: 2
+    quote: "and whisper into the wall just like this, about 40 feet on the other side of the gallery, the sound travels up a parabolic curve, and you can hear it just perfectly."
+  - says: "Your whisper climbs up the curve of the ceiling, and comes down on the other side."
+    source: 2
+    quote: "the sound travels up a parabolic curve, and you can hear it just perfectly."
+  - says: "The man who built ceilings like this was Rafael Guastavino."
+    source: 2
+    quote: "No one knows for sure whether Rafael Guastavino, when he built that interlocking tile ceiling, intended to do this."
+  - says: "He came to New York from Spain in eighteen eighty one."
+    source: 3
+    quote: "“No one could predict when [Guastavino] arrived to New York in 1881 that by the time of his death 27 years later he would be responsible for all of these incredible buildings,” Ochsendorf said."
+  - says: "He came to New York from Spain in eighteen eighty one."
+    source: 3
+    quote: "It was a Spanish immigrant father and his son who built these feats of engineering"
+  - says: "He made his arches out of thin tiles, layer on layer, and they are all over America now."
+    source: 3
+    quote: "an engineering marvel that could be built quickly and cheaply with layers of interlocking tiles and mortar."
+  - says: "He made his arches out of thin tiles, layer on layer, and they are all over America now."
+    source: 3
+    quote: "The father-son team built over 1,000 projects nationwide"
+  - says: "Nobody knows for sure whether he meant this ceiling to carry whispers at all."
+    source: 2
+    quote: "No one knows for sure whether Rafael Guastavino, when he built that interlocking tile ceiling, intended to do this."
+  - says: "Some of the best secrets in New York were made by accident."
+    source: 2
+    quote: "No one knows for sure whether Rafael Guastavino, when he built that interlocking tile ceiling, intended to do this."
+sources:
+  - title: "Inaccessible New York: Behind The Scenes At Grand Central Terminal"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/inaccessible-new-york-behind-the-scenes-at-grand-central-terminal/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Grand Central: An Engine Of Scientific Innovation"
+    publisher: "NPR, Science Friday, 22 March 2013"
+    url: https://www.npr.org/2013/03/22/175054273/grand-central-an-engine-of-scientific-innovation
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "In National Landmarks, a Spanish Immigrant's Success Story"
+    publisher: "NBC News, NBC Latino"
+    url: https://www.nbcnews.com/news/latino/national-landmarks-spanish-immigrants-success-story-n106291
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

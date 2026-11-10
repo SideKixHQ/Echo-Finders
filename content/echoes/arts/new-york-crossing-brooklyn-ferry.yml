@@ -1,0 +1,102 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Brooklyn Bridge and DUMBO cluster.
+# Listening spot: The pier at Fulton Ferry Landing, at the foot of Old Fulton Street, by the railing stamped with lines from Whitman's "Crossing Brooklyn Ferry".
+# Position: Overture places Fulton Ferry Landing (pier) at 40.70332, -73.99521 (1 Water St) (high confidence).
+id: new-york-crossing-brooklyn-ferry
+title: "Others Will Enter the Gates of the Ferry"
+summary: "Walt Whitman crossed the river from this landing many times, and wrote a poem to the people who would stand here after him."
+place: "Fulton Ferry Landing, foot of Old Fulton Street, DUMBO, Brooklyn"
+at: { lat: 40.70335, lng: -73.99530 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [new-york, dumbo, whitman, poetry, east-river, ferries]
+teaser: "He wrote it about the people who would stand here after him. That means you."
+script: |
+  Look at the railing around this pier. There are words stamped into the metal.
+
+  They were written for you. Not for anyone in particular. For whoever happened to be standing here, years after the man who wrote them was gone.
+
+  Before there were bridges, ferries crossed to Manhattan from this landing. The first one, back in sixteen forty two, was just a man rowing a boat.
+
+  In the eighteen forties, Walt Whitman worked near here, as the editor of the Brooklyn Eagle. He crossed this river many, many times. And in one poem, he stopped looking at the water, and started thinking about the people who would cross it after him.
+
+  Others will enter the gates of the ferry and cross from shore to shore.
+
+  A hundred years hence, or ever so many hundred years hence, others will see them.
+
+  And then he spoke to them. To you.
+
+  It avails not, time nor place. Distance avails not. I am with you, you men and women of a generation, or ever so many generations hence.
+
+  Just as you feel when you look on the river and sky, so I felt.
+
+  Just as you stand and lean on the rail, I stood.
+
+  Rest your hand on the rail, and look across the water.
+
+  Consider, he wrote, whether I may not in unknown ways be looking upon you.
+
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Look at the railing around this pier."
+    source: 2
+    quote: "Notice the railing around the pier. Words stamped into the metal offer an excerpt from a Whitman poem, \"Crossing Brooklyn Ferry.\""
+  - says: "There are words stamped into the metal."
+    source: 2
+    quote: "Notice the railing around the pier. Words stamped into the metal offer an excerpt from a Whitman poem, \"Crossing Brooklyn Ferry.\""
+  - says: "Before there were bridges, ferries crossed to Manhattan from this landing."
+    source: 2
+    quote: "At the foot of Water Street lies Fulton Ferry Landing. Ferry service between Brooklyn and Manhattan started here in 1642, when the area was a Dutch farming settlement."
+  - says: "The first one, back in sixteen forty two, was just a man rowing a boat."
+    source: 2
+    quote: "\"It was just a man rowing a boat,\" said Reiss."
+  - says: "The first one, back in sixteen forty two, was just a man rowing a boat."
+    source: 2
+    quote: "Ferry service between Brooklyn and Manhattan started here in 1642, when the area was a Dutch farming settlement."
+  - says: "In the eighteen forties, Walt Whitman worked near here, as the editor of the Brooklyn Eagle."
+    source: 2
+    quote: "Walt Whitman was the editor of the Brooklyn Eagle in the 1840's, working out of this building that once was home to the newspaper in the DUMBO section of the Brooklyn borough of New York"
+  - says: "He crossed this river many, many times."
+    source: 1
+    quote: "I too many and many a time cross'd the river of old,"
+  - says: "And in one poem, he stopped looking at the water, and started thinking about the people who would cross it after him."
+    source: 1
+    quote: "And you that shall cross from shore to shore years hence are more to me, and more in my meditations, than you might suppose."
+  - says: "Others will enter the gates of the ferry and cross from shore to shore."
+    source: 1
+    quote: "Others will enter the gates of the ferry and cross from shore to shore,"
+  - says: "A hundred years hence, or ever so many hundred years hence, others will see them."
+    source: 1
+    quote: "A hundred years hence, or ever so many hundred years hence, others will see them,"
+  - says: "It avails not, time nor place."
+    source: 1
+    quote: "It avails not, time nor place — distance avails not,"
+  - says: "I am with you, you men and women of a generation, or ever so many generations hence."
+    source: 1
+    quote: "I am with you, you men and women of a generation, or ever so many generations hence,"
+  - says: "Just as you feel when you look on the river and sky, so I felt."
+    source: 1
+    quote: "Just as you feel when you look on the river and sky, so I felt,"
+  - says: "Just as you stand and lean on the rail, I stood."
+    source: 1
+    quote: "Just as you stand and lean on the rail, yet hurry with the swift current, I stood yet was hurried,"
+  - says: "Consider, he wrote, whether I may not in unknown ways be looking upon you."
+    source: 1
+    quote: "Consider, you who peruse me, whether I may not in unknown ways be looking upon you ;"
+sources:
+  - title: "Crossing Brooklyn Ferry, in Leaves of Grass (Walt Whitman, Boston: James R. Osgood, 1882)"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/leavesofgrasswalt00whitrich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Offbeat Brooklyn neighborhood worth a visit (DUMBO and Fulton Ferry Landing)"
+    publisher: "NBC News (Associated Press), July 2010"
+    url: https://www.nbcnews.com/id/wbna38453301
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts

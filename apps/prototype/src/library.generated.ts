@@ -56,7 +56,7 @@ export const LIBRARY: readonly Echo[] = [
       "archaeology",
       "memorial"
     ],
-    "remoteness": 0.38
+    "remoteness": 0.19
   },
   {
     "id": "annapolis-a-port-called-napolis",
@@ -5682,7 +5682,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "washington"
     ],
-    "remoteness": 0.26
+    "remoteness": 0.08
   },
   {
     "id": "cleveland-no-more-protection",
@@ -11554,6 +11554,869 @@ export const LIBRARY: readonly Echo[] = [
       "statues"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "new-york-a-monument-to-small-things",
+    "title": "A Monument to Small Things",
+    "summary": "For seventeen years the tallest building in the world, paid for in cash from shops where nothing cost more than a dime.",
+    "point": {
+      "at": {
+        "lat": 40.71245,
+        "lng": -74.00795
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Woolworth Building, 233 Broadway, across from City Hall Park, Manhattan"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 80,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across Broadway at the tall, pale tower, all the way up to its pointed crown.\n\nFor seventeen years, it was the tallest building in the world. And it was paid for by shops where nothing cost more than a dime.\n\nThe man who built it was Frank Woolworth. He started with one small store in eighteen seventy nine, selling only things that cost five or ten cents.\n\nThe stores kept multiplying. And when it came time to put up the tallest building on earth, he did not borrow. He paid for it himself. Thirteen and a half million dollars, in cash. Not a mortgage. Not a dollar of debt.\n\nOn the night of the twenty fourth of April, nineteen thirteen, President Woodrow Wilson pressed a tiny button in the White House.\n\nAnd here, all at once, eighty thousand lights came on, all over this tower.\n\nThe people who wrote about it called it a cathedral of commerce. And a monument to small things.\n\nLook up at the top again. Seven hundred and ninety two feet.\n\nFive and ten cents at a time.\n",
+    "teaser": "The tallest building on earth, and not a dollar of it borrowed.",
+    "tags": [
+      "new-york",
+      "lower-manhattan",
+      "skyscrapers",
+      "woolworth",
+      "broadway"
+    ],
+    "remoteness": 0,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-a-monument-to-small-things",
+        "durationS": 80
+      }
+    ]
+  },
+  {
+    "id": "new-york-balto-and-togo",
+    "title": "The Dog Who Got the Statue",
+    "summary": "Balto led the last team into Nome with the diphtheria serum in 1925. Another dog ran the hardest miles.",
+    "point": {
+      "at": {
+        "lat": 40.76997,
+        "lng": -73.97103
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Balto statue, Central Park near East 67th Street, Manhattan"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the bronze dog standing on the rock. See how shiny he is, where people have patted him.\n\nHis name is Balto. He was a real sled dog. In December, nineteen twenty five, Balto himself was photographed with his brand new statue.\n\nWhy would a dog from Alaska get a statue in New York?\n\nIn the winter of nineteen twenty five, children in the town of Nome, Alaska, were getting sick with diphtheria. The medicine that could save them was far away. The sea was frozen, so no ship could get there, and no plane could either.\n\nSo teams of sled dogs carried the medicine, passing it from team to team, through blinding blizzards and freezing cold. On the second of February, a team with Balto in the lead ran into Nome with it. The whole journey was six hundred and seventy four miles.\n\nBalto became famous. Here is the secret.\n\nBalto's team ran about fifty five miles. Another dog, called Togo, led his team for two hundred and sixty one miles, over the longest and most dangerous part. Togo was twelve years old.\n\nSo when you say hello to Balto, say thank you to Togo too.\n\nBalto got the statue. Togo got the hardest miles.\n",
+    "teaser": "He came to New York to see his own statue. But he had a secret.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "tags": [
+      "new-york",
+      "central-park",
+      "dogs",
+      "alaska",
+      "statues",
+      "family"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/new-york-balto-and-togo",
+        "durationS": 82
+      }
+    ]
+  },
+  {
+    "id": "new-york-crossing-brooklyn-ferry",
+    "title": "Others Will Enter the Gates of the Ferry",
+    "summary": "Walt Whitman crossed the river from this landing many times, and wrote a poem to the people who would stand here after him.",
+    "point": {
+      "at": {
+        "lat": 40.70335,
+        "lng": -73.9953
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Fulton Ferry Landing, foot of Old Fulton Street, DUMBO, Brooklyn"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the railing around this pier. There are words stamped into the metal.\n\nThey were written for you. Not for anyone in particular. For whoever happened to be standing here, years after the man who wrote them was gone.\n\nBefore there were bridges, ferries crossed to Manhattan from this landing. The first one, back in sixteen forty two, was just a man rowing a boat.\n\nIn the eighteen forties, Walt Whitman worked near here, as the editor of the Brooklyn Eagle. He crossed this river many, many times. And in one poem, he stopped looking at the water, and started thinking about the people who would cross it after him.\n\nOthers will enter the gates of the ferry and cross from shore to shore.\n\nA hundred years hence, or ever so many hundred years hence, others will see them.\n\nAnd then he spoke to them. To you.\n\nIt avails not, time nor place. Distance avails not. I am with you, you men and women of a generation, or ever so many generations hence.\n\nJust as you feel when you look on the river and sky, so I felt.\n\nJust as you stand and lean on the rail, I stood.\n\nRest your hand on the rail, and look across the water.\n\nConsider, he wrote, whether I may not in unknown ways be looking upon you.\n",
+    "teaser": "He wrote it about the people who would stand here after him. That means you.",
+    "tags": [
+      "new-york",
+      "dumbo",
+      "whitman",
+      "poetry",
+      "east-river",
+      "ferries"
+    ],
+    "remoteness": 0.66,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-crossing-brooklyn-ferry",
+        "durationS": 88
+      }
+    ]
+  },
+  {
+    "id": "new-york-for-what-a-kick-line",
+    "title": "For What? A Kick Line",
+    "summary": "The night the Stonewall Inn was raided in 1969, the street kids of this little park faced the police with a kick line.",
+    "point": {
+      "at": {
+        "lat": 40.73358,
+        "lng": -74.0024
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Christopher Park, Stonewall National Monument, Greenwich Village, Manhattan"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 12,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look around this small park. The benches. The iron fence. The white figures of the sculpture.\n\nIn the summer of nineteen sixty nine, this park was a refuge for street kids. Most were runaways. Most had left home, or been thrown out, because they were gay and could not hide it.\n\nIn the early hours of the twenty eighth of June, the police raided the bar across the street, the Stonewall Inn. Raids were nothing new. This time, people fought back.\n\nThat first night, for some reason, the police did not chase anyone into this park.\n\nA man named Danny Garvin was watching from a friend's window on Grove Street. He saw about ten police on one side, holding their clubs straight out. And on the other side, about twenty young men. They rolled up their trouser legs. They put their arms around one another.\n\nAnd they formed a kick line.\n\nThe police charged, and hit them. Garvin said he could never get that sight out of his mind. And he asked, for what? A kick line.\n\nThe clubs did not work. There were more kick lines before the night was over. One year later, to the day, the first pride march in the country went through New York.\n\nLook at the park again. The benches. The fence.\n\nOne of the kids from here, Thomas Lanigan Schmidt, said most of the people he knew back then were dead within four years.\n\nFor one night, here, they were not the ones running.\n",
+    "teaser": "Ten police with their clubs out. Twenty kids with their arms around each other.",
+    "pronunciations": [
+      {
+        "written": "Lanigan Schmidt",
+        "say": "LAN-ih-gun SHMIT"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "greenwich-village",
+      "stonewall",
+      "civil-rights",
+      "lgbtq",
+      "national-monument"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-for-what-a-kick-line",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "new-york-nobody-told-the-ninth",
+    "title": "Nobody Told the Ninth Floor",
+    "summary": "In March 1911 a fire broke out in the factory on these top floors. Someone warned the tenth floor. Nobody told the ninth.",
+    "point": {
+      "at": {
+        "lat": 40.73012,
+        "lng": -73.99525
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Brown Building, Washington Place and Greene Street, Greenwich Village, Manhattan"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 12,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at this building, to the top three floors.\n\nOn a Saturday afternoon in March, nineteen eleven, those floors were a clothing factory. About five hundred people worked there. Most of them were young immigrant women and girls.\n\nNear quitting time, a fire started in a scrap bin on the eighth floor. Someone telephoned a warning up to the offices on the tenth.\n\nNobody told the ninth.\n\nBy the time the ninth floor knew, the fire was there. One set of stairway doors was locked. The fire escape collapsed. The firemen's nets were useless. People jumped or fell from those windows, a hundred feet, to the street.\n\nOne hundred and forty six people died.\n\nA young woman named Frances Perkins was there. She saw it.\n\nShe spent the rest of her life on what she saw. The next year, she took a job fighting for safer factories. New York passed thirty eight new laws. And in nineteen thirty three, she became Secretary of Labor. The first woman in any American cabinet.\n\nLook at the memorial plaques on the corner of the building.\n\nThe man who keeps the archive of the fire remembers what one survivor said. The immigrant parents all told their children the same thing. In America, they don't let you burn.\n\nAfter this corner, that came a little closer to true.\n",
+    "teaser": "Someone phoned a warning to the tenth floor. Nobody told the ninth.",
+    "tags": [
+      "new-york",
+      "greenwich-village",
+      "triangle-fire",
+      "labor",
+      "immigration",
+      "frances-perkins"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-nobody-told-the-ninth",
+        "durationS": 88
+      }
+    ]
+  },
+  {
+    "id": "new-york-one-name-not-in-the-records",
+    "title": "One Name Not in the Records",
+    "summary": "The chief engineer of the Brooklyn Bridge could only watch it from a distance. His wife carried it to the finish.",
+    "point": {
+      "at": {
+        "lat": 40.70405,
+        "lng": -73.9941
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Emily Warren Roebling Plaza, under the Brooklyn tower of the Brooklyn Bridge, DUMBO, Brooklyn"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the stone tower above you, and the cables running down from it.\n\nOn the day this bridge opened, the man in charge of building it had never seen it up close.\n\nThe first chief engineer, John Roebling, was hurt while surveying the site, and died. His son, Washington Roebling, took over. He went down into the caissons, the chambers under the river where the towers' foundations were dug. And he caught the disease that came up out of them. For years after that, he could not leave his house. He watched the work through a telescope.\n\nSo his wife, Emily, carried his ideas to the bridge. She was the one who talked to the engineers and the contractors. In the end, the contractors came to her, and her alone.\n\nOn the opening day, the twenty fourth of May, eighteen eighty three, one of the speakers stopped to say her name.\n\nOne name, he said, which may find no place in the official records, cannot be passed over here in silence.\n\nHe called this bridge a lasting monument to the devotion of a woman, and to her capacity for the higher education she had been shut out of for too long.\n\nHer family says that when it opened, she was the first to cross. In a carriage, with a rooster, for victory.\n\nLook up at the tower again.\n\nHe saw it from a distance. She was the one who crossed.\n",
+    "teaser": "On opening day, one speaker stopped to say the name nobody had written down.",
+    "pronunciations": [
+      {
+        "written": "Roebling",
+        "say": "ROBE-ling"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "dumbo",
+      "brooklyn-bridge",
+      "engineering",
+      "roebling",
+      "women"
+    ],
+    "remoteness": 0.69,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-one-name-not-in-the-records",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "new-york-one-patch-of-the-dark",
+    "title": "One Patch of the Dark",
+    "summary": "High on Grand Central's starry ceiling is one dark patch nobody cleaned, left from the years the building nearly disappeared.",
+    "point": {
+      "at": {
+        "lat": 40.75285,
+        "lng": -73.97715
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Main Concourse, Grand Central Terminal, 42nd Street and Park Avenue, Manhattan"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the ceiling. The green sky. The gold stars.\n\nNow look for the dark patch, high up, near the western windows. Everything else up there is clean. That one patch is not.\n\nAt one time, this whole night sky was black. Decades of cigarette and cigar smoke. In the nineteen nineties, workers spent a year cleaning the tar off it, by hand. And they left that patch, on purpose, to show how dirty it had been.\n\nBut there very nearly was no ceiling to clean.\n\nIn nineteen sixty four, the old Penn Station, across town, was torn down. Grand Central was in trouble too. Its owners wanted to build a tower, fifty five stories high, on top of it.\n\nIn nineteen seventy five, a woman who had once lived in the White House led the fight against that plan. Jacqueline Kennedy Onassis.\n\nIt went all the way to the United States Supreme Court. Three years later, the court upheld the city's landmark law. The tower was never built.\n\nLook at the dark patch again.\n\nThey kept one piece of the dark, so you would know.\n",
+    "teaser": "Find the one dark patch in the stars. That is what the whole sky used to look like.",
+    "tags": [
+      "new-york",
+      "midtown",
+      "grand-central",
+      "preservation",
+      "jacqueline-kennedy-onassis"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-one-patch-of-the-dark",
+        "durationS": 84
+      }
+    ]
+  },
+  {
+    "id": "new-york-out-the-back-door",
+    "title": "Out the Back Door",
+    "summary": "In July 1863 a mob burned the Colored Orphan Asylum on this block of Fifth Avenue. More than two hundred children got out the back.",
+    "point": {
+      "at": {
+        "lat": 40.75458,
+        "lng": -73.98012
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Fifth Avenue between 43rd and 44th Streets, Midtown Manhattan"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 92,
+    "minAge": 10,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along this block of Fifth Avenue, from Forty Third Street to Forty Fourth. Shop fronts. Office windows. People hurrying past.\n\nIn the summer of eighteen sixty three, this whole block was an orphanage. Four stories high, with room for five hundred children. It was the Colored Orphan Asylum. A home for Black children.\n\nOn the afternoon of the thirteenth of July, a mob of about three thousand people attacked it. The city was rioting against the draft for the Civil War. And the mob had decided that Black people were to blame for the war. Even orphans.\n\nInside were more than two hundred children, from babies to twelve year olds.\n\nThe superintendent, William Davis, fastened the doors. While the mob broke them in, the staff gathered the children, carried some in their arms, and led them out at the back.\n\nJust as the mob came in at the front.\n\nThe rioters took everything, even the children's dresses and trinkets. Then they set the building on fire. The fire chief tried to talk them down, and was knocked to the ground twice. In an hour and a half, only a little of the walls was left.\n\nThat evening, Davis led two hundred and sixteen children into a police station. Not one of them was over twelve. Except the clothes they wore, nothing had been saved for them.\n\nLook along the block again.\n\nThe building burned. The children walked out.\n",
+    "teaser": "The mob broke in at the front just as the children went out at the back.",
+    "tags": [
+      "new-york",
+      "midtown",
+      "fifth-avenue",
+      "civil-war",
+      "draft-riots",
+      "black-history"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-out-the-back-door",
+        "durationS": 92
+      }
+    ]
+  },
+  {
+    "id": "new-york-patience-and-fortitude",
+    "title": "Two Lions, Two Words",
+    "summary": "The library's marble lions were named in the Great Depression for the two things a mayor said New Yorkers needed most.",
+    "point": {
+      "at": {
+        "lat": 40.75305,
+        "lng": -73.98205
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "New York Public Library steps, Fifth Avenue at 42nd Street, Manhattan"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the two marble lions guarding the steps of this library. They have names.\n\nOne is called Patience. The other is called Fortitude. Fortitude means the kind of courage that keeps going when things are hard.\n\nSo why would anyone name a lion Patience?\n\nThe lions were carved for this library when it opened, by a sculptor named Edward Clark Potter.\n\nThen came the Great Depression, and hard times for New Yorkers. The mayor, Fiorello La Guardia, gave the lions their names. Patience and fortitude. That was what he wanted everyone in the city to hold on to.\n\nAnd the lions have kept doing that job ever since. Every December they wear wreaths. When the Mets played the Yankees in the World Series, they wore baseball caps. And in twenty twenty, in the pandemic, they wore face masks three feet long. The head of the library said it again. We must have patience and fortitude.\n\nCan you guess which lion is which?\n\nTwo lions. Two words. For whenever the city needs them.\n",
+    "teaser": "Two marble lions, and a message the city keeps needing.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "pronunciations": [
+      {
+        "written": "Fiorello La Guardia",
+        "say": "fee-oh-REL-oh la GWAR-dee-ah"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "midtown",
+      "fifth-avenue",
+      "library",
+      "lions",
+      "family"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/new-york-patience-and-fortitude",
+        "durationS": 70
+      }
+    ]
+  },
+  {
+    "id": "new-york-she-came-to-dance",
+    "title": "She Came to Dance",
+    "summary": "In November 1934 a homeless seventeen year old walked onto the Apollo stage for Amateur Night, meaning to dance. She froze, and sang.",
+    "point": {
+      "at": {
+        "lat": 40.80985,
+        "lng": -73.95015
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Apollo Theater, 125th Street, Harlem, Manhattan"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 90,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the tall sign over these doors, the one that spells out Apollo.\n\nSince nineteen thirty four, strangers have walked out onto the stage in there for Amateur Night. There are no judges. The audience decides, and the audience is not forgiving.\n\nOn a Wednesday night in November, nineteen thirty four, a seventeen year old girl walked out onto that stage. Her name was Ella Fitzgerald.\n\nHer mother had died. She had been sent to a reform school, where she was beaten, and she ran away. She was living on the streets, with no money, sleeping wherever she could.\n\nShe had come to dance.\n\nBut the act before her was a pair of dancing sisters, and they had stopped the show. And when she got out under the lights and saw all those people, she froze.\n\nThe man said, well, you're out here. Do something.\n\nSo she sang.\n\nShe won. The prize was twenty five dollars and a week's work. Soon after, the bandleader Chick Webb asked her to join his orchestra. She became the First Lady of Song.\n\nLook at those doors again. A girl with nowhere to sleep walked through them, to dance.\n\nI never thought I was a singer, she said.\n",
+    "teaser": "She had planned to dance. Then the lights came up.",
+    "tags": [
+      "new-york",
+      "harlem",
+      "apollo",
+      "music",
+      "jazz",
+      "ella-fitzgerald"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-she-came-to-dance",
+        "durationS": 90
+      }
+    ]
+  },
+  {
+    "id": "new-york-someone-knew-we-were-there",
+    "title": "Someone Knew We Were There",
+    "summary": "In July 1945 a bomber flew into the Empire State Building in fog. Trapped above the fire, a young woman threw her rings out of the window.",
+    "point": {
+      "at": {
+        "lat": 40.7487,
+        "lng": -73.9852
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Empire State Building, Fifth Avenue at 34th Street, Manhattan"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 10,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on the street and look up this building, high up, toward the top.\n\nOn a foggy Saturday morning in July, nineteen forty five, an army bomber came down out of the clouds over Midtown. The pilot found himself flying among skyscrapers. He flew into this one, at the seventy eighth and seventy ninth floors.\n\nFourteen people died.\n\nThe crash cut the cables of two elevators. In one of them was a nineteen year old operator, Betty Lou Oliver. She fell seventy five stories, all the way to the bottom of the shaft. She broke her pelvis, her back and her neck. And she lived.\n\nUp on the seventy ninth floor, Therese Fortier Willig was twenty years old. Six of them got into one office and shut the door against the fire. Somebody opened the window.\n\nShe thought about her rings. She thought she would not be around to have them. So she took them off, she said, and threw them out of the window. Someone else might as well have use out of them.\n\nThen a man down on the street saw them, and signalled up. Stay where you are.\n\nShe remembered how that felt. We all felt a little better, she said, to know that someone knew we were there.\n\nFiremen came. She climbed out through the broken glass.\n\nLook up again, from down here.\n\nSomebody on this street once looked up, and let them know they were not alone.\n",
+    "teaser": "Trapped on the seventy ninth floor, she threw her rings out of the window.",
+    "tags": [
+      "new-york",
+      "midtown",
+      "empire-state-building",
+      "world-war-two"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-someone-knew-we-were-there",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "new-york-ten-thousand-answers",
+    "title": "Ten Thousand Answers",
+    "summary": "A teacher told young Arturo Schomburg his people had no history. He collected the proof. A poet's ashes now lie in its floor.",
+    "point": {
+      "at": {
+        "lat": 40.8145,
+        "lng": -73.9407
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Schomburg Center for Research in Black Culture, Malcolm X Boulevard at 135th Street, Harlem, Manhattan"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the library on this corner. Inside, just past the front desk, a map of rivers is set into the floor, in brass.\n\nSome of a poet is buried under it.\n\nStart with a boy in Puerto Rico, named Arturo Schomburg. The story the library tells goes like this. In school, he asked his teacher when they would learn the history of people who looked like him. The teacher said there was no such thing. That people who looked like him had never done anything worthwhile.\n\nAt seventeen, he came to New York. And he started collecting. Books. Letters. Pictures. Anything that told the story his teacher said did not exist. By the nineteen twenties, the story goes, there were books on the staircase of his home.\n\nHe called them his vindicating evidences. Ten thousand of them.\n\nIn nineteen twenty six, the library bought his collection. Today the center holds more than eleven million items. In its visitor log you can still see the names of the writers who came to use it. Zora Neale Hurston. Langston Hughes.\n\nAnd when Langston Hughes died, some of his ashes were laid in the floor of this building. Under that brass map of rivers.\n\nIt is named for his first famous poem. He wrote it at eighteen, watching the sun go down over the Mississippi from a train.\n\nA teacher once told a boy there was no such history.\n\nMy soul has grown deep like the rivers.\n",
+    "teaser": "A teacher told him there was no such thing as his history. He spent his life collecting the answer.",
+    "pronunciations": [
+      {
+        "written": "Schomburg",
+        "say": "SHOM-burg"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "harlem",
+      "library",
+      "black-history",
+      "langston-hughes",
+      "schomburg"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-ten-thousand-answers",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "new-york-the-crabs-under-the-needle",
+    "title": "The Crabs Under the Needle",
+    "summary": "The obelisk behind the Met stands on four bronze crabs. The Roman originals carried the only record of its move, and it was not Cleopatra's.",
+    "point": {
+      "at": {
+        "lat": 40.77963,
+        "lng": -73.9654
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Obelisk (Cleopatra's Needle), Central Park behind the Metropolitan Museum of Art, Manhattan"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the bottom corners of the obelisk, where the stone meets its base. In each corner there is a bronze crab, holding it up.\n\nCrabs. Under a stone that was carved three and a half thousand years ago. Why crabs?\n\nIn eighteen eighty, a United States Navy officer named Henry Gorringe took this obelisk down in Alexandria, in Egypt, to bring it to New York. When his men dug around its base, they found what it had been standing on.\n\nBronze crabs, put there by the Romans. Plunderers had carried two of them off long before. The two that were left had lost nearly every leg and claw, broken off for the value of the metal.\n\nOn the one claw that remained, there was writing. Greek on one side, Latin on the other.\n\nIt was the only record of the day the Romans moved this obelisk to Alexandria. It named the emperor Augustus, and the architect, Pontius.\n\nAnd it settled something. Everybody called this Cleopatra's Needle. The claw did not mention her. The stone is older than Cleopatra by more than a thousand years.\n\nThe crabs you can see now are copies, cast at the Brooklyn Navy Yard from plaster casts of the Roman ones. Look closely at their claws. They are inscribed too, in English. One says this obelisk was erected in New York City on the twenty second of January, eighteen eighty one.\n\nTwo thousand years apart, two crews left the same kind of note, in the same strange place.\n",
+    "teaser": "Look at the corners. It is standing on crabs.",
+    "pronunciations": [
+      {
+        "written": "Gorringe",
+        "say": "GORE-inj"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "central-park",
+      "egypt",
+      "obelisk",
+      "archaeology",
+      "monuments"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-the-crabs-under-the-needle",
+        "durationS": 100
+      }
+    ]
+  },
+  {
+    "id": "new-york-the-horse-at-the-ferry",
+    "title": "The Horse at the Ferry",
+    "summary": "In August 1776 Washington's beaten army slipped across the river from this landing in one night. Then the fog came down.",
+    "point": {
+      "at": {
+        "lat": 40.7029,
+        "lng": -73.99465
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Fulton Ferry Landing, Old Fulton Street, DUMBO, Brooklyn"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 108,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down this street to the water, where the old ferry landing is.\n\nIn August, seventeen seventy six, George Washington's army was trapped on this side of the river. They had just lost the Battle of Brooklyn. In front of them was a British army nearly three times their size. Behind them, a mile of fast water, and a British fleet that could close it.\n\nOn the night of the twenty ninth, they started to leave. Quietly, one regiment at a time, so no gap would show in the lines. Washington stood here, at the ferry, watching them go. Fishermen from Marblehead, Massachusetts, rowed them over, all night, against the tide, without being seen or heard by the British warships.\n\nBy dawn, there were still men in the trenches. Then a fog came down.\n\nA young officer named Benjamin Tallmadge was in that last guard. The fog was so dense, he wrote, that I could scarcely discern a man at six yards' distance.\n\nWhen his regiment reached the ferry, he stepped into one of the last boats. He thought he saw Washington on the ferry stairs. And he left his horse tied to a post, right here.\n\nSafe on the other side, he could not stop thinking about that horse. So he asked permission, found a crew of volunteers, and rowed back through the fog. He got his horse, and pushed off just as the British reached the landing. They fired at him with muskets, and then with cannon.\n\nHe made it.\n\nLook at the water again. Nine thousand men crossed it in one night, with their horses and their guns.\n\nEven the horse.\n",
+    "teaser": "The whole army got away in the night. One officer went back for his horse.",
+    "pronunciations": [
+      {
+        "written": "Tallmadge",
+        "say": "TAL-mij"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "dumbo",
+      "revolution",
+      "washington",
+      "battle-of-brooklyn",
+      "east-river"
+    ],
+    "remoteness": 0.69,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-the-horse-at-the-ferry",
+        "durationS": 108
+      }
+    ]
+  },
+  {
+    "id": "new-york-the-house-that-moved-twice",
+    "title": "The House That Moved Twice",
+    "summary": "Hamilton's house has moved twice. The second time, it was lifted thirty eight feet in the air and rolled over a church porch.",
+    "point": {
+      "at": {
+        "lat": 40.8213,
+        "lng": -73.94725
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Hamilton Grange National Memorial, St. Nicholas Park, West 141st Street, Harlem, Manhattan"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the yellow and white house in front of you, with its porches and tall windows.\n\nIt is not where it was built. It has moved twice.\n\nAlexander Hamilton built it in eighteen oh two, as a country home on his estate up here. It was the only home he ever owned. Lower Manhattan was two hours away by carriage. He named it The Grange, after his family's old home in Scotland.\n\nHe lived in it for two years. On the eleventh of July, eighteen oh four, he was fatally wounded in a duel with Aaron Burr.\n\nThen the city grew up the island toward his house. In eighteen eighty nine, a new street was coming through. So the house was lifted off its foundation and drawn by horses to a new spot, squeezed between a church and an apartment building.\n\nIn two thousand eight, the Park Service moved it again. But a stone porch on the church was in the way. So the movers jacked the whole house, nearly two hundred tons, thirty eight feet into the air. And rolled it out over the top.\n\nOn the seventh of June, hundreds of people watched it roll down the street, turn the corner, and come here.\n\nLook at the trees around it. Thirteen sweet gums, for the thirteen original states, like the grove on the first site.\n\nThis little piece of park was part of Hamilton's own estate.\n\nThe house came home.\n",
+    "teaser": "Two hundred tons of house, thirty eight feet up in the air.",
+    "tags": [
+      "new-york",
+      "harlem",
+      "hamilton",
+      "national-park",
+      "houses",
+      "preservation"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-the-house-that-moved-twice",
+        "durationS": 96
+      }
+    ]
+  },
+  {
+    "id": "new-york-the-last-living-thing",
+    "title": "The Last Living Thing",
+    "summary": "A month after the towers fell, workers found a burned pear tree in the rubble with one living branch. It is standing here again.",
+    "point": {
+      "at": {
+        "lat": 40.71116,
+        "lng": -74.01355
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Survivor Tree, 9/11 Memorial plaza, Lower Manhattan"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the pear tree on this plaza that people call the Survivor Tree.\n\nIt was planted here in the nineteen seventies, at the foot of the Twin Towers. And it is here again. Which should not be possible.\n\nIn October, two thousand one, about a month after the towers fell, a worker clearing the rubble found it. It was crushed between two blocks of concrete. Its roots were snapped. Half its trunk was gone, and the rest was burned black.\n\nThere was one living branch.\n\nRonaldo Vega was there. The tree was upended, he said, thought to be dead, left for dead. Then a search team saw new growth. And they decided.\n\nWe have to try and save this tree. It's the last living thing that's going to come out of this site.\n\nIt was about eight feet tall when it went to a city nursery in the Bronx. Nursing it back was touch and go. In December, two thousand ten, it came home to this plaza. It stood about thirty feet tall.\n\nSince then, its seedlings have been sent to fire stations that lost firefighters that day. To Newtown, Connecticut. To Boston.\n\nLook up into its branches.\n\nEvery spring, they are covered in blossom.\n",
+    "teaser": "Crushed, burned, roots snapped, and one branch still alive.",
+    "tags": [
+      "new-york",
+      "lower-manhattan",
+      "september-11",
+      "memorial",
+      "trees"
+    ],
+    "remoteness": 0.14,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-the-last-living-thing",
+        "durationS": 84
+      }
+    ]
+  },
+  {
+    "id": "new-york-the-whispering-corners",
+    "title": "The Whispering Corners",
+    "summary": "Whisper into one corner of this tiled archway and a friend in the far corner hears you. Nobody knows if the builder meant it.",
+    "point": {
+      "at": {
+        "lat": 40.75252,
+        "lng": -73.97731
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Whispering Gallery, outside the Oyster Bar, Grand Central Terminal, Manhattan"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the low, curved ceiling over your head, covered in pale tiles. Find the corners, where the arches come down to the floor.\n\nHere is something to try. Stand in one corner, with your face close to the wall. Ask a friend to stand in the corner across from you, on the diagonal. Now whisper.\n\nThey can hear you. Through all these people walking past. From about forty feet away.\n\nYour whisper climbs up the curve of the ceiling, and comes down on the other side.\n\nThe man who built ceilings like this was Rafael Guastavino. He came to New York from Spain in eighteen eighty one. He made his arches out of thin tiles, layer on layer, and they are all over America now.\n\nBut here is the funny part. Nobody knows for sure whether he meant this ceiling to carry whispers at all.\n\nSo go on. Try it again.\n\nSome of the best secrets in New York were made by accident.\n",
+    "teaser": "Stand in a corner and whisper. Someone forty feet away will hear you.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "pronunciations": [
+      {
+        "written": "Guastavino",
+        "say": "gwas-tah-VEE-no"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "midtown",
+      "grand-central",
+      "sound",
+      "guastavino",
+      "family"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "speech/new-york-the-whispering-corners",
+        "durationS": 66
+      }
+    ]
+  },
+  {
+    "id": "new-york-the-years-without-the-ball",
+    "title": "The Years Without the Ball",
+    "summary": "Since 1907 a lit ball has come down the pole on this roof every New Year's Eve. Twice, in the war, the crowd counted down to silence.",
+    "point": {
+      "at": {
+        "lat": 40.75675,
+        "lng": -73.98625
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "One Times Square, Broadway and Seventh Avenue at 43rd Street, Manhattan"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the narrow building at the bottom of the square, and the pole on its roof.\n\nEvery New Year's Eve since nineteen oh seven, a lit ball has come down that pole at midnight. Every year but two.\n\nIt began with fireworks. When the newspaper moved into this building, its owner, Adolph Ochs, threw a party here with fireworks. Two years later, the city banned them.\n\nSo Ochs asked his chief electrician, Walter Palmer, for something else. A ball of iron and wood, seven hundred pounds, with a hundred light bulbs. A young immigrant metalworker named Jacob Starr built it. It was lowered by hand, with rope.\n\nAt ten minutes to midnight, the paper reported, every boiler whistle in the city began to screech. Tens of thousands stood watching the ball. And then it fell.\n\nThen came the Second World War, and a dimout. The lights of the city had to be dimmed.\n\nIn nineteen forty two, and again in nineteen forty three, there was no ball.\n\nThe crowds came anyway. And at midnight, in the middle of all these people, there was a minute of silence. Then chimes.\n\nLook up at the pole again.\n\nTwice, this square welcomed the new year by saying nothing at all.\n",
+    "teaser": "Twice, the biggest party in the world welcomed the new year in silence.",
+    "pronunciations": [
+      {
+        "written": "Ochs",
+        "say": "OCKS"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "midtown",
+      "times-square",
+      "new-years-eve",
+      "world-war-two"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-the-years-without-the-ball",
+        "durationS": 82
+      }
+    ]
+  },
+  {
+    "id": "new-york-under-the-grass",
+    "title": "Under the Grass",
+    "summary": "Before Central Park, a village of Black landowners stood here. In 1857 the city forced them out and knocked it down.",
+    "point": {
+      "at": {
+        "lat": 40.7842,
+        "lng": -73.96895
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Seneca Village site, Central Park near West 85th Street, Manhattan"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 98,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look around you. The paths. The trees. The playground nearby.\n\nBefore there was a Central Park, there was a village here.\n\nIn September, eighteen twenty five, a shoe shiner named Andrew Williams bought three lots of land, right around here. He was twenty five, and a free Black man. Slavery had not even ended yet in New York.\n\nOthers followed him. Free Black families, and later Irish and German immigrants. They built houses, three churches, a school. They called it Seneca Village.\n\nOwning land mattered. In those days, a Black man in New York who owned property could vote. Seneca Village had the largest number of Black property owners in the city before the Civil War.\n\nThen the city decided it wanted a park.\n\nThe newspapers started calling the villagers squatters and vagabonds. In eighteen fifty seven, the city used eminent domain to force them out. Police removed the ones who resisted. Then the village was knocked down, and the park was built over it.\n\nHistorians still know very little about where the people went.\n\nIn two thousand eleven, archaeologists dug here. They found bottles, dishes, buttons, a toothbrush. And the sole of a child's shoe.\n\nOne of the students on the dig started to cry.\n\nLook down at the grass.\n\nThe village is still here. Just underneath.\n",
+    "teaser": "They found the sole of a child's shoe. One of the students started to cry.",
+    "tags": [
+      "new-york",
+      "central-park",
+      "seneca-village",
+      "black-history",
+      "archaeology"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-under-the-grass",
+        "durationS": 98
+      }
+    ]
+  },
+  {
+    "id": "new-york-you-eat-too-fast",
+    "title": "You Eat Too Fast",
+    "summary": "Sylvia Woods opened her soul food restaurant here in 1962. Half a century later, it was a meeting place for a whole community.",
+    "point": {
+      "at": {
+        "lat": 40.80865,
+        "lng": -73.9445
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Sylvia's Restaurant, Malcolm X Boulevard at 127th Street, Harlem, Manhattan"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.7,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the name over this restaurant. Sylvia's.\n\nSylvia Woods opened it on the first of August, nineteen sixty two, with her husband, Herbert. They were both from South Carolina. They had known each other since they were children.\n\nFried chicken. Collard greens. Cornbread. Ribs. The cooking of the South, on Lenox Avenue.\n\nIt became more than a restaurant. One minister called it a meeting place for Black America. Politicians kept coming, especially when they were running for something.\n\nBut mostly, people remember her, at the tables. A congressman said everyone she met was the most important guest in her dining room. She kept coming back to your table, smiling, bringing extra food.\n\nA neighbor remembered how she would scold the customers. You eat too fast, she'd say. You got to slow down.\n\nIn July, two thousand twelve, the mayor was due to celebrate her legacy. She died that same day. She was eighty six.\n\nHer granddaughter said the restaurant was where Sylvia could show her hospitality. And there was a saying that went with it.\n\nLook in through the window.\n\nIf you come alone, you're never going to dine alone.\n",
+    "teaser": "She came back to your table, again and again, with extra food.",
+    "tags": [
+      "new-york",
+      "harlem",
+      "soul-food",
+      "restaurants",
+      "sylvia-woods"
+    ],
+    "remoteness": 1,
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "speech/new-york-you-eat-too-fast",
+        "durationS": 78
+      }
+    ]
   },
   {
     "id": "newport-a-door-in-the-floor",
@@ -18132,7 +18995,7 @@ export const LIBRARY: readonly Echo[] = [
       "washington",
       "september-11"
     ],
-    "remoteness": 0.1,
+    "remoteness": 0,
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",

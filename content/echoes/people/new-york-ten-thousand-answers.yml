@@ -1,0 +1,155 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Harlem cluster.
+# Listening spot: Sidewalk outside the Schomburg Center for Research in Black Culture (New York Public Library), Malcolm X Boulevard at West 135th Street.
+# Position: Overture places the Schomburg Center at 40.81458, -73.94085 (515 Malcolm X Blvd); the spot is the Malcolm X Boulevard sidewalk in front (high confidence).
+id: new-york-ten-thousand-answers
+title: "Ten Thousand Answers"
+summary: "A teacher told young Arturo Schomburg his people had no history. He collected the proof. A poet's ashes now lie in its floor."
+place: "Schomburg Center for Research in Black Culture, Malcolm X Boulevard at 135th Street, Harlem, Manhattan"
+at: { lat: 40.81450, lng: -73.94070 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [new-york, harlem, library, black-history, langston-hughes, schomburg]
+teaser: "A teacher told him there was no such thing as his history. He spent his life collecting the answer."
+script: |
+  Look at the library on this corner. Inside, just past the front desk, a map of rivers is set into the floor, in brass.
+
+  Some of a poet is buried under it.
+
+  Start with a boy in Puerto Rico, named Arturo Schomburg. The story the library tells goes like this. In school, he asked his teacher when they would learn the history of people who looked like him. The teacher said there was no such thing. That people who looked like him had never done anything worthwhile.
+
+  At seventeen, he came to New York. And he started collecting. Books. Letters. Pictures. Anything that told the story his teacher said did not exist. By the nineteen twenties, the story goes, there were books on the staircase of his home.
+
+  He called them his vindicating evidences. Ten thousand of them.
+
+  In nineteen twenty six, the library bought his collection. Today the center holds more than eleven million items. In its visitor log you can still see the names of the writers who came to use it. Zora Neale Hurston. Langston Hughes.
+
+  And when Langston Hughes died, some of his ashes were laid in the floor of this building. Under that brass map of rivers.
+
+  It is named for his first famous poem. He wrote it at eighteen, watching the sun go down over the Mississippi from a train.
+
+  A teacher once told a boy there was no such history.
+
+  My soul has grown deep like the rivers.
+
+pronunciations:
+  - written: Schomburg
+    say: SHOM-burg
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Inside, just past the front desk, a map of rivers is set into the floor, in brass."
+    source: 1
+    quote: "When you walk past the front desk, look down and you'll see public art display called a cosmogram, a sort-of map that traces and represents a person or group's culture, history, and greater place within the world."
+  - says: "Inside, just past the front desk, a map of rivers is set into the floor, in brass."
+    source: 1
+    quote: "Curator Barrye Brown shows \"Rivers,\" a 1,150-square-foot, site-specific public art installation and brass cosmogram embedded in the floor of the Langston Hughes Lobby"
+  - says: "Some of a poet is buried under it."
+    source: 2
+    quote: "And Langston Hughes, some of his ashes are actually interred in the floor of the Schomburg's lobby, beneath a round, brass cosmogram inscribed with verses from his poem The Negro Speaks of Rivers."
+  - says: "Start with a boy in Puerto Rico, named Arturo Schomburg."
+    source: 2
+    quote: "It all began in the late 19th century, in a small town on the island of Puerto Rico, with words from a white teacher to a little Black boy named Arturo Schomburg."
+  - says: "The story the library tells goes like this."
+    source: 1
+    quote: "Brown recounts an origin story the Schomburg Center frequently reminds its visitors of."
+  - says: "In school, he asked his teacher when they would learn the history of people who looked like him."
+    source: 1
+    quote: "\"He asked [his] teacher when would [students] learn about the history of people who looked like him,\" Brown recounts"
+  - says: "The teacher said there was no such thing."
+    source: 1
+    quote: "\"The teacher told him that there was no such thing and that people who looked like him had never done anything worthwhile."
+  - says: "The teacher said there was no such thing."
+    source: 2
+    quote: "As the story goes, his teacher said none existed."
+  - says: "That people who looked like him had never done anything worthwhile."
+    source: 1
+    quote: "\"The teacher told him that there was no such thing and that people who looked like him had never done anything worthwhile."
+  - says: "At seventeen, he came to New York."
+    source: 2
+    quote: "At 17, Arturo Schomburg left Puerto Rico and came to New York."
+  - says: "Anything that told the story his teacher said did not exist."
+    source: 2
+    quote: "Fast forward a couple of decades and Arturo Schomburg has amassed a collection of items that do in fact document our history."
+  - says: "By the nineteen twenties, the story goes, there were books on the staircase of his home."
+    source: 2
+    quote: "In the mid-1920s he was being approached about his collection, because it had gotten to a point where I've read that there were books, like, on the staircase."
+  - says: "He called them his vindicating evidences."
+    source: 2
+    quote: "And in that essay, he describes this collection, and he names these 10,000 items \"vindicating evidences\"."
+  - says: "Ten thousand of them."
+    source: 2
+    quote: "And in that essay, he describes this collection, and he names these 10,000 items \"vindicating evidences\"."
+  - says: "In nineteen twenty six, the library bought his collection."
+    source: 2
+    quote: "So in 1926, they offered to buy Arturo's personal collection."
+  - says: "In nineteen twenty six, the library bought his collection."
+    source: 1
+    quote: "This year makes 100 years since the library became owner of its namesake's personal collection, making it a full-fledged research center."
+  - says: "Today the center holds more than eleven million items."
+    source: 2
+    quote: "Those 10,000 vindicating evidences eventually became the Schomburg Center, which now houses more than 11 million items."
+  - says: "In its visitor log you can still see the names of the writers who came to use it."
+    source: 1
+    quote: "in the visitors log, you can still see sign-ins from the likes of Zora Neale Hurston and Langston Hughes."
+  - says: "Zora Neale Hurston."
+    source: 1
+    quote: "in the visitors log, you can still see sign-ins from the likes of Zora Neale Hurston and Langston Hughes."
+  - says: "Langston Hughes."
+    source: 1
+    quote: "in the visitors log, you can still see sign-ins from the likes of Zora Neale Hurston and Langston Hughes."
+  - says: "And when Langston Hughes died, some of his ashes were laid in the floor of this building."
+    source: 2
+    quote: "And Langston Hughes, some of his ashes are actually interred in the floor of the Schomburg's lobby, beneath a round, brass cosmogram inscribed with verses from his poem The Negro Speaks of Rivers."
+  - says: "And when Langston Hughes died, some of his ashes were laid in the floor of this building."
+    source: 1
+    quote: "Hughes' ashes are buried underneath."
+  - says: "And when Langston Hughes died, some of his ashes were laid in the floor of this building."
+    source: 3
+    quote: "Schomburg Center for Research in Black Culture"
+  - says: "Under that brass map of rivers."
+    source: 1
+    quote: "the gorgeous brass and terrazzo installation is called \"Rivers\" by Houston Conwill."
+  - says: "It is named for his first famous poem."
+    source: 1
+    quote: "Named after Langston Hughes's 1921 poem \"The Negro Speaks of Rivers,\""
+  - says: "He wrote it at eighteen, watching the sun go down over the Mississippi from a train."
+    source: 4
+    quote: "Eighteen years old and just out of high school, he saw sunset on the muddy Mississippi from a train and wrote the poem that introduced the world to Langston Hughes, \"The Negro Speaks of Rivers.\""
+  - says: "My soul has grown deep like the rivers."
+    source: 5
+    quote: "My soul has grown deep like the rivers."
+  - says: "My soul has grown deep like the rivers."
+    source: 4
+    quote: "My soul has grown deep like the rivers."
+sources:
+  - title: "Schomburg Center in Harlem continues its centennial in 2026 with renewed purpose"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/harlem-nypl-schomburg-center-centennial-2026/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Transcript: Harlem On My Mind: Arturo Schomburg"
+    publisher: "NBC News, Into America podcast"
+    url: https://www.nbcnews.com/podcast/transcript-harlem-my-mind-arturo-schomburg-n1258152
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Langston Hughes"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/langston-hughes.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Celebrating The Legacy Of Langston Hughes"
+    publisher: "NPR, Talk of the Nation, 2 February 2012"
+    url: https://www.npr.org/2012/02/02/146297228/celebrating-the-legacy-of-langston-hughes
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "The Crisis, Vol. 22 No. 2, June 1921 (\"The Negro Speaks of Rivers\", Langston Hughes)"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/sim_crisis_the-crisis_1921-06_22_2
+    retrievedAt: "2026-11-10"
+    rights: public-domain

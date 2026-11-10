@@ -1,0 +1,114 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Central Park cluster.
+# Listening spot: Beside the bronze statue of Balto on its rock, off East Drive near East 67th Street in Central Park.
+# Position: Overture places "Balto Statue" at 40.76997, -73.97103 (East Dr) (high confidence).
+id: new-york-balto-and-togo
+title: "The Dog Who Got the Statue"
+summary: "Balto led the last team into Nome with the diphtheria serum in 1925. Another dog ran the hardest miles."
+place: "Balto statue, Central Park near East 67th Street, Manhattan"
+at: { lat: 40.76997, lng: -73.97103 }
+triggerRadiusKm: 0.04
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, central-park, dogs, alaska, statues, family]
+teaser: "He came to New York to see his own statue. But he had a secret."
+script: |
+  Look at the bronze dog standing on the rock. See how shiny he is, where people have patted him.
+
+  His name is Balto. He was a real sled dog. In December, nineteen twenty five, Balto himself was photographed with his brand new statue.
+
+  Why would a dog from Alaska get a statue in New York?
+
+  In the winter of nineteen twenty five, children in the town of Nome, Alaska, were getting sick with diphtheria. The medicine that could save them was far away. The sea was frozen, so no ship could get there, and no plane could either.
+
+  So teams of sled dogs carried the medicine, passing it from team to team, through blinding blizzards and freezing cold. On the second of February, a team with Balto in the lead ran into Nome with it. The whole journey was six hundred and seventy four miles.
+
+  Balto became famous. Here is the secret.
+
+  Balto's team ran about fifty five miles. Another dog, called Togo, led his team for two hundred and sixty one miles, over the longest and most dangerous part. Togo was twelve years old.
+
+  So when you say hello to Balto, say thank you to Togo too.
+
+  Balto got the statue. Togo got the hardest miles.
+
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "His name is Balto."
+    source: 1
+    quote: "New York's Central Park has a statue dedicated to him, and there's even been a movie about him: a sled dog named Balto ."
+  - says: "He was a real sled dog."
+    source: 1
+    quote: "In 1925, this Siberian husky was part of an expedition in Alaska called the serum run"
+  - says: "In December, nineteen twenty five, Balto himself was photographed with his brand new statue."
+    source: 1
+    quote: "This Dec. 15, 1925 photo shows a closeup of Gunnar Kasson and Balto, with the statue which was unveiled in honor of Balto is in the rear."
+  - says: "Why would a dog from Alaska get a statue in New York?"
+    source: 2
+    quote: "And hundreds of miles to the East, a statue of Balto continues to welcome visitors to New York's Central Park , snow or shine."
+  - says: "In the winter of nineteen twenty five, children in the town of Nome, Alaska, were getting sick with diphtheria."
+    source: 1
+    quote: "the goal of which was to bring life-saving medicine to young people in the remote town of Nome that were threatened by diphtheria."
+  - says: "In the winter of nineteen twenty five, children in the town of Nome, Alaska, were getting sick with diphtheria."
+    source: 3
+    quote: "In 1925, diphtheria swept through the small Alaskan town of Nome."
+  - says: "The sea was frozen, so no ship could get there, and no plane could either."
+    source: 3
+    quote: "Since no plane or ship could reach the isolated town, a unanimous decision was made to use multiple dogsled teams to transport the medicine across the dangerous land."
+  - says: "The sea was frozen, so no ship could get there, and no plane could either."
+    source: 3
+    quote: "Between November and July, the port into Nome on the southern shore of Seward Peninsula in the Bering sea was icebound and inaccessible by steamship."
+  - says: "So teams of sled dogs carried the medicine, passing it from team to team, through blinding blizzards and freezing cold."
+    source: 2
+    quote: "For six long days, a series of dog teams battled blinding blizzards and bitter sub-zero cold to get the serum through."
+  - says: "On the second of February, a team with Balto in the lead ran into Nome with it."
+    source: 2
+    quote: "February 2, 1925 was a day of life-saving (and, dare we say, dogged) determination, for that was the day a dog sled team with Balto in the lead entered Nome, Alaska with an emergency supply of diphtheria serum."
+  - says: "The whole journey was six hundred and seventy four miles."
+    source: 1
+    quote: "On February 2, 1925, the Siberian Husky Balto led his relay team of sled dogs to the end of a 674-mile journey, delivering desperately-needed diphtheria serum to the children of Nome, Alaska."
+  - says: "Balto became famous."
+    source: 3
+    quote: "Though Balto received the credit for saving the town, to those who know more than the Disney story, Balto is considered the backup dog."
+  - says: "Balto's team ran about fifty five miles."
+    source: 3
+    quote: "Balto ran 55 miles, while Togo's leg of the journey was the longest and most dangerous."
+  - says: "Another dog, called Togo, led his team for two hundred and sixty one miles, over the longest and most dangerous part."
+    source: 3
+    quote: "By the time Togo led his team over 261 miles during the Great Race of Mercy to deliver diphtheria anti-toxin, he was 12 years old."
+  - says: "Another dog, called Togo, led his team for two hundred and sixty one miles, over the longest and most dangerous part."
+    source: 3
+    quote: "Though Balto often gets the credit for saving the town of Nome, it was Togo, a Siberian Husky, who led his team across the most dangerous leg of the journey."
+  - says: "Togo was twelve years old."
+    source: 3
+    quote: "By the time Togo led his team over 261 miles during the Great Race of Mercy to deliver diphtheria anti-toxin, he was 12 years old."
+  - says: "Balto got the statue."
+    source: 1
+    quote: "New York's Central Park has a statue dedicated to him"
+  - says: "Togo got the hardest miles."
+    source: 3
+    quote: "Balto ran 55 miles, while Togo's leg of the journey was the longest and most dangerous."
+  - says: "So when you say hello to Balto, say thank you to Togo too."
+    source: 3
+    quote: "Though Balto often gets the credit for saving the town of Nome, it was Togo, a Siberian Husky, who led his team across the most dangerous leg of the journey."
+sources:
+  - title: "In 1925, a sled dog named Balto helped carry life-saving medicine through blizzards. A new DNA study reveals what made him so tough."
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/sled-dog-balto-new-dna-study-zoonomia-project/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Almanac: Balto the Siberian husky's life-saving race"
+    publisher: "CBS News Sunday Morning"
+    url: https://www.cbsnews.com/news/almanac-balto-the-siberian-huskys-life-saving-race/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Togo"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/togo.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
