@@ -17,6 +17,7 @@ import { SENTRY_DSN, errorReportsAllowed, setErrorReportsAllowed } from "./error
 import { Feedback } from "./Feedback";
 import { Suggest } from "./Suggest";
 import { feedbackAvailable } from "./feedback";
+import { forgetOnServer } from "./owner";
 
 interface Props {
   readonly settings: PrivacySettings;
@@ -268,6 +269,8 @@ export function Privacy({
  * throws halfway is worse than no reset.
  */
 function startOver(): void {
+  // Owner and tester mode live in a server cookie too (`owner.ts`): start over forgets that.
+  forgetOnServer();
   try {
     localStorage.clear();
   } catch {

@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { POST as owner } from "../../api/owner.js";
+import { DELETE as forget, GET as who, POST as owner } from "../../api/owner.js";
 
 const post = (body: unknown) =>
   new Request("https://echo-finders.vercel.app/api/owner", { method: "POST", body: JSON.stringify(body) });
@@ -40,5 +40,55 @@ describe("tester mode", () => {
     vi.stubEnv("TESTER_CODE", "tester-code-12");
     expect((await owner(post({ code: "tester-code-12" }))).status).toBe(200);
     expect((await owner(post({ code: "" }))).status).toBe(403);
+  });
+});
+
+describe("remembered by a cookie, for a phone whose storage was wiped", () => {
+  afterEach(() => vi.unstubAllEnvs());
+  const get = (cookie?: string) =>
+    new Request("https://echo-finders.vercel.app/api/owner", cookie ? { headers: { cookie } } : {});
+  const setCookie = (res: Response) => res.headers.get("set-cookie") ?? "";
+  const value = (res: Response) => /ef_access=([^;]*)/.exec(setCookie(res))?.[1] ?? "";
+
+  it("sets a long-lived, private cookie that never holds the code", async () => {
+    vi.stubEnv("OWNER_CODE", "right-code-123");
+    const res = await owner(post({ code: "right-code-123" }));
+    const c = setCookie(res);
+    expect(c).toMatch(/HttpOnly/);
+    expect(c).toMatch(/Secure/);
+    expect(c).toMatch(/SameSite=Strict/);
+    expect(c).toMatch(/Path=\/api\/owner/);
+    expect(c).toMatch(/Max-Age=34560000/);
+    expect(c).not.toContain("right-code-123");
+    expect(setCookie(await owner(post({ code: "wrong-code-123" })))).toBe("");
+  });
+
+  it("reads the phone back as owner or tester", async () => {
+    vi.stubEnv("OWNER_CODE", "owner-code-123");
+    vi.stubEnv("TESTER_CODE", "tester-code-12");
+    const o = value(await owner(post({ code: "owner-code-123" })));
+    const t = value(await owner(post({ code: "tester-code-12" })));
+    expect(await (await who(get(`ef_access=${o}`))).json()).toEqual({ role: "owner" });
+    expect(await (await who(get(`other=1; ef_access=${t}`))).json()).toEqual({ role: "tester" });
+    expect(await (await who(get())).json()).toEqual({ role: null });
+  });
+
+  it("is void once the code is changed, and is cleared", async () => {
+    vi.stubEnv("TESTER_CODE", "tester-code-12");
+    const t = value(await owner(post({ code: "tester-code-12" })));
+    vi.stubEnv("TESTER_CODE", "a-new-code-345");
+    const res = await who(get(`ef_access=${t}`));
+    expect(await res.json()).toEqual({ role: null });
+    expect(setCookie(res)).toMatch(/Max-Age=0/);
+  });
+
+  it("cannot be forged by naming a role", async () => {
+    vi.stubEnv("OWNER_CODE", "owner-code-123");
+    expect(await (await who(get("ef_access=owner"))).json()).toEqual({ role: null });
+    expect(await (await who(get("ef_access=owner.abc"))).json()).toEqual({ role: null });
+  });
+
+  it("is forgotten on DELETE", async () => {
+    expect(setCookie(await forget())).toMatch(/ef_access=; .*Max-Age=0/);
   });
 });
