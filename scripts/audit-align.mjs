@@ -39,6 +39,8 @@ const SIZES = [
   { name: 'iphone-safari', width: 390, height: 664 },
   { name: 'iphone-full', width: 390, height: 844 },
   { name: 'se-safari', width: 375, height: 553 },
+  // An SE with its bars scrolled away, for the echo card only: the bottom sheet's middle size.
+  { name: 'se-full', width: 375, height: 667, only: ['popup'] },
 ];
 
 /*
@@ -80,8 +82,15 @@ const SCREENS = {
     { sel: '.hear-go', centre: true },
     { sel: '.hear-acts', left: true, right: true, inner: true, whole: true },
   ],
+  /*
+   * The echo card is a bottom sheet (the Card board, 2026-11-10): edge to edge, never
+   * scrolling, its top clear of the map bar (search and chips), and the four round buttons
+   * wholly inside it, on screen, at every size.
+   */
   popup: [
-    { sel: '.pop', left: true, right: true, fits: true, whole: true },
+    { sel: '.pop', flush: true, fits: true, whole: true, clearOf: '.mapbar' },
+    { sel: '.pop-acts', inside: '.pop', whole: true },
+    { sel: '.pop-primary', inside: '.pop', whole: true },
     // The ✕ belongs to the kicker line and sits on its centre line.
     { sel: '.pop-close svg', middleOf: '.pop-kicker' },
   ],
@@ -141,6 +150,13 @@ async function measure(p, size, screen) {
       const dbg = `svg ${r.top.toFixed(1)}+${r.height}, kicker ${other.top.toFixed(1)}+${other.height.toFixed(1)}, button ${btn?.top.toFixed(1)}, card ${card?.top.toFixed(1)}`;
       return { ...c, dbg, dy: (r.top + r.height / 2) - (other.top + other.height / 2) };
     }
+    if (c.clearOf || c.inside) {
+      const other = document.querySelector(c.clearOf || c.inside)?.getBoundingClientRect();
+      if (!other) return { ...c, missing: true };
+      const base = { ...c, x: r.left, rx: width - r.right, top: r.top, under: height - r.bottom, off: 0 };
+      if (c.clearOf) return { ...base, clearBy: r.top - other.bottom, hidden: el.scrollHeight > el.clientHeight + 1 ? el.scrollHeight - el.clientHeight : 0 };
+      return { ...base, outside: Math.max(other.top - r.top, r.bottom - other.bottom, 0) };
+    }
     if (c.stack) {
       const first = document.querySelector(c.stack[0])?.getBoundingClientRect();
       const last = document.querySelector(c.stack[1])?.getBoundingClientRect();
@@ -165,6 +181,9 @@ async function measure(p, size, screen) {
     if (r.middleOf && Math.abs(r.dy) > TOLERANCE) problems.push(`${r.sel}: ${r.dy.toFixed(1)}px off the centre line of ${r.middleOf}${process.env.DEBUG ? ` (${r.dbg})` : ''}`);
     if (r.hidden) problems.push(`${r.sel}: ${r.hidden}px of its content cut off inside it`);
     if (r.stack && Math.abs(r.above - r.below) > TOLERANCE * 2) problems.push(`${r.sel}: ${r.above.toFixed(0)}px above the content, ${r.below.toFixed(0)}px below`);
+    if (r.clearOf && r.clearBy < -TOLERANCE) problems.push(`${r.sel}: covers ${r.clearOf} by ${(-r.clearBy).toFixed(0)}px`);
+    if (r.inside && r.outside > TOLERANCE) problems.push(`${r.sel}: ${r.outside.toFixed(0)}px outside ${r.inside}`);
+    if (r.flush && (Math.abs(r.x) > TOLERANCE || Math.abs(r.rx) > TOLERANCE)) problems.push(`${r.sel}: not edge to edge (${r.x.toFixed(1)}px left, ${r.rx.toFixed(1)}px right)`);
     if (r.left && Math.abs(r.x - GUTTER) > TOLERANCE) problems.push(`${r.sel}: left edge ${r.x.toFixed(1)}px, gutter is ${GUTTER}`);
     if (r.right && Math.abs(r.rx - GUTTER) > TOLERANCE) problems.push(`${r.sel}: right edge ${r.rx.toFixed(1)}px, gutter is ${GUTTER}`);
     if (r.centre && Math.abs(r.off) > TOLERANCE) problems.push(`${r.sel}: ${r.off.toFixed(1)}px off centre`);
@@ -269,7 +288,7 @@ async function attempt(size, screen) {
 const ONLY = process.env.ONLY?.split(':');
 const report = [];
 for (const size of SIZES.filter((s) => !ONLY || s.name === ONLY[0])) {
-  for (const screen of Object.keys(SCREENS).filter((s) => !ONLY?.[1] || s === ONLY[1])) {
+  for (const screen of Object.keys(SCREENS).filter((s) => (!ONLY?.[1] || s === ONLY[1]) && (!size.only || size.only.includes(s)))) {
     let problems = null;
     lastError = '';
     for (let tries = 0; tries < 6 && problems === null; tries++) problems = await attempt(size, screen);
