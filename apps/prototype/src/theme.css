@@ -4859,11 +4859,12 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* A guided walk's first leg, "Walk to the start · 6 min": one line on the narrowest phone. */
 .dir-sheet-start { font-size: 22px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .dir-sheet-meta {
-  display: flex; justify-content: space-between; gap: 12px;
+  display: flex; flex-direction: column; gap: 2px;
   font-size: var(--fs-secondary); line-height: 1.3; color: var(--muted);
 }
 .dir-sheet-how { white-space: nowrap; }
-.dir-sheet-to { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Which stop and which echo, on its own line and in full: never cut with an ellipsis. */
+.dir-sheet-to { min-width: 0; }
 .dir-sheet-note { font-size: var(--fs-secondary); line-height: 1.35; color: var(--cool); }
 .dir-end {
   margin-top: auto; min-height: 48px; width: 100%; border-radius: 14px; cursor: pointer;
