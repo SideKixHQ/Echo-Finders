@@ -1,0 +1,69 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (Fairmount, Eastern State Penitentiary), second pass, following docs/writing-echoes.md (format v2). A children's echo; kids narrator per content/voices.yml.
+# Listening spot: The Fairmount Avenue sidewalk along the front wall of Eastern State Penitentiary, east of the main gate.
+# Position: east of the main gate along Fairmount Avenue, about 130 m from the existing Eastern State echo (the-prison-corridor, at the gate) and kept apart from the new Sutton echo to the west. Outside the app's street map; the line of Fairmount Avenue is taken from the existing echo's pin (medium confidence).
+id: philadelphia-prisoner-c-2559
+title: "Prisoner C 2559"
+summary: "A children's echo: in 1924 a black Labrador called Pep was admitted to this prison. The story said he killed the governor's wife's cat."
+place: "Fairmount Avenue in front of Eastern State Penitentiary, Fairmount, Philadelphia, Pennsylvania"
+at: { lat: 39.96770, lng: -75.17110 }
+triggerRadiusKm: 0.06
+category: kids
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+certaintyNote: >-
+  The prison's own audio tour gives both versions: the folklore that Governor Pinchot sentenced Pep for killing his wife's cat, and the 1924 letters, found later by the counsellor who researched him, showing the governor donated the dog. The script tells it as a story that was wrong.
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.8
+tags: [philadelphia, fairmount, eastern-state-penitentiary, kids, pep-the-dog, gifford-pinchot, animals]
+teaser: "His prison photo makes him look guilty."
+script: |
+  Look up at this enormous stone wall. It looks like a castle. But it was a prison. And on the twelfth of August, nineteen twenty four, a new prisoner came through the gate.
+
+  He was a black Labrador. His name was Pep.
+
+  For years, people told a story about Pep. They said he had done something terrible. He had killed a cat. And not just any cat. The cat belonged to the wife of the Governor of Pennsylvania! So the governor sentenced Pep to life in prison, with no chance of getting out.
+
+  And there is something odd in the prison's records. Pep is in there. And the prisoner number next to his, C 2559, is skipped in the book where new prisoners were written down. Did Pep get a number, like everyone else?
+
+  In his prison photo, Pep has his head down and his ears back. He looks a little bit guilty.
+
+  But then a man who used to work at the prison went looking. He found old letters, from nineteen twenty four. The governor had read that another state had given its prison a dog. He wanted to do the same. And the warden wrote back that a dog would be a good addition.
+
+  So Pep was not a cat murderer at all. He was a present.
+
+  Look at the wall again. All kinds of prisoners came through that gate.
+
+  Only one of them was a good boy.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "And on the twelfth of August, nineteen twenty four, a new prisoner came through the gate. He was a black Labrador. His name was Pep."
+    source: 1
+    quote: "Pep was a black Labrador Retriever who was admitted to Eastern State Penitentiary on August 12th, 1924."
+  - says: "For years, people told a story about Pep. They said he had done something terrible. He had killed a cat. And not just any cat. The cat belonged to the wife of the Governor of Pennsylvania! So the governor sentenced Pep to life in prison, with no chance of getting out."
+    source: 1
+    quote: "Prison folklore and records tell us that Pennsylvania Governor Gifford Pinchot sentenced Pep to life without parole for killing his wife's cherished cat."
+  - says: "And the prisoner number next to his, C 2559, is skipped in the book where new prisoners were written down."
+    source: 1
+    quote: "Prison records support the story and his inmate number, C-2559, is skipped in the prison intake log."
+  - says: "In his prison photo, Pep has his head down and his ears back. He looks a little bit guilty."
+    source: 1
+    quote: "in photographs Pep, with his head down and ears back, certainly looks a little guilty."
+  - says: "But then a man who used to work at the prison went looking. He found old letters, from nineteen twenty four. The governor had read that another state had given its prison a dog. He wanted to do the same."
+    source: 1
+    quote: "I have found correspondence between Governor Gifford Pinchot and Warden John Groome of Eastern State Penitentiary in 1924 where the governor says that he recently read that the governor of Maine had donated a dog to that state’s prison"
+  - says: "And the warden wrote back that a dog would be a good addition."
+    source: 1
+    quote: "he will be a good addition to our community"
+  - says: "So Pep was not a cat murderer at all. He was a present."
+    source: 1
+    quote: "absolves Pep of murdering anybody’s cat and makes him, not a prisoner, but a guest."
+sources:
+  - title: "Eastern State Penitentiary audio tour transcript, stops 14 and 64 (Notable inmate: Pep the dog)"
+    publisher: "Eastern State Penitentiary Historic Site"
+    url: https://easternstate.org/uploads/media/ESP_English_Audio_Tour_Transcript.pdf
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

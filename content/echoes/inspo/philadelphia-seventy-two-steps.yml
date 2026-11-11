@@ -1,0 +1,97 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (Benjamin Franklin Parkway, Fairmount), second pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The foot of the east steps of the Philadelphia Museum of Art, facing the Parkway, by the Rocky statue just north of the base of the steps.
+# Position: the base of the Art Museum's east steps at Eakins Oval (about 39.9652, -75.1797). Outside the app's street map, so the position is from memory of the map and was not checked against a map file here (medium confidence). About 280 m from the new Water Works echo.
+# Inspo evidence: "exact". The encyclopedia puts the training montage on these steps, and the statue "just north of the base of the Rocky Steps".
+id: philadelphia-seventy-two-steps
+title: "Seventy Two Steps"
+summary: "In 1976 a boxer who could not catch a break ran up these steps in a film. The museum did not want his statue. The city did."
+place: "East steps of the Philadelphia Museum of Art, Benjamin Franklin Parkway, Philadelphia, Pennsylvania"
+at: { lat: 39.96520, lng: -75.17970 }
+triggerRadiusKm: 0.06
+category: inspo
+inspo:
+  kind: creation
+  evidence: exact
+format: short
+durationS: 95
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [philadelphia, benjamin-franklin-parkway, art-museum, rocky, sylvester-stallone, film, rocky-steps]
+teaser: "Fourteen high schools threw him out."
+script: |
+  Look up the steps, to the columns at the top. Seventy two steps. Count them, if you are climbing.
+
+  They were built in nineteen twenty three, for an art museum. For fifty years they were just steps.
+
+  Then came a young man named Sylvester Stallone. He had lived in Philadelphia as a teenager. Fourteen different high schools had expelled him. In the winter of nineteen seventy five, with his acting going nowhere, he wrote a film about a boxer from Philadelphia whom everyone expected to lose. Rocky.
+
+  It was made cheaply, and shot in Philadelphia in twenty eight days. And it won Best Picture.
+
+  Twice in the film, Rocky comes to these steps. The first time, on his first day of training, he jogs up them slowly, beaten. The second time, at the end of his training, he runs all the way to the top, and turns, and looks out over the whole city.
+
+  After that, everyone wanted to do it.
+
+  In nineteen eighty, Stallone had a bronze statue of Rocky made for a sequel. Then he gave it to the city, and it was set up in front of the museum. Critics said it was not worthy of an art museum. It was moved away for years. In two thousand and six, it came back for good, to the foot of the steps, just to the north. Look for it.
+
+  The museum was built for art.
+
+  The steps belong to Rocky.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Seventy two steps."
+    source: 1
+    quote: "the seventy-two steps that lead from the Benjamin Franklin Parkway to the neoclassical façade of the Museum of Art."
+  - says: "They were built in nineteen twenty three, for an art museum. For fifty years they were just steps."
+    source: 1
+    quote: "The steps that Rocky (and so many others since) struggled to climb were originally built in 1923, when the foundation for the Museum of Art building was still under construction. After the building's completion in 1928, the steps were just another complementing feature of the building's classical Greek design."
+  - says: "He had lived in Philadelphia as a teenager. Fourteen different high schools had expelled him."
+    source: 1
+    quote: "Sylvester Stallone lived in Philadelphia during his teenage years in the late 1950s."
+  - says: "Fourteen different high schools had expelled him."
+    source: 1
+    quote: "Fourteen different high schools, including Notre Dame Academy and Lincoln High School, expelled Stallone due to his behavior."
+  - says: "In the winter of nineteen seventy five, with his acting going nowhere, he wrote a film about a boxer from Philadelphia whom everyone expected to lose. Rocky."
+    source: 1
+    quote: "Since his acting career was not going as planned, Stallone began to start writing movie scripts. He wrote Rocky during the winter of 1975, and he sold it to the film production company United Artists in January 1976."
+  - says: "he wrote a film about a boxer from Philadelphia whom everyone expected to lose."
+    source: 1
+    quote: "Although nearly everyone in Rocky’s world recognized that he was outmatched and expected him to lose badly"
+  - says: "It was made cheaply, and shot in Philadelphia in twenty eight days. And it won Best Picture."
+    source: 1
+    quote: "Rocky, a low-budget production, won Academy Awards for Best Picture, Directing, and Film Editing."
+  - says: "shot in Philadelphia in twenty eight days."
+    source: 1
+    quote: "Stallone and Kirkwood spoke about filming Rocky in Philadelphia over a twenty-eight day production period earlier in 1976."
+  - says: "The first time, on his first day of training, he jogs up them slowly, beaten."
+    source: 1
+    quote: "The first time the audience sees the Philadelphia Museum of Art steps in Rocky, the lead character is slowly jogging up the seventy-two steps in defeat during his first day of training."
+  - says: "The second time, at the end of his training, he runs all the way to the top, and turns, and looks out over the whole city."
+    source: 1
+    quote: "When he arrived at the top, he gazed out at the Philadelphia skyline"
+  - says: "After that, everyone wanted to do it."
+    source: 1
+    quote: "Running up the steps of the Museum of Art became a popular tourist activity"
+  - says: "In nineteen eighty, Stallone had a bronze statue of Rocky made for a sequel. Then he gave it to the city, and it was set up in front of the museum. Critics said it was not worthy of an art museum. It was moved away for years."
+    source: 1
+    quote: "Stallone donated the sculpture to the actual City of Philadelphia and proposed installing it in the same location where it appeared in the film. While critics rejected the sculpture on the ground that it was not worthy of display at the museum"
+  - says: "It was moved away for years."
+    source: 1
+    quote: "The sculpture was moved several times over the next twenty-five years, but it spent much of that period on view outside the Spectrum arena in South Philadelphia."
+  - says: "In two thousand and six, it came back for good, to the foot of the steps, just to the north."
+    source: 1
+    quote: "In 2006, the statue was permanently installed just north of the base of the Rocky Steps."
+  - says: "In nineteen eighty, Stallone had a bronze statue of Rocky made for a sequel."
+    source: 1
+    quote: "In 1980, Stallone commissioned sculptor A. Thomas Schomberg (b. 1943) to create a bronze statue of Rocky. The 8-foot, six-inch piece appeared in Rocky III"
+  - says: "Then he gave it to the city, and it was set up in front of the museum."
+    source: 1
+    quote: "the placement of the statue in front of the Philadelphia Museum of Art, as shown here in 1982, caused controversy."
+sources:
+  - title: "Rocky (Laura Holzman)"
+    publisher: "The Encyclopedia of Greater Philadelphia, Rutgers University"
+    url: https://philadelphiaencyclopedia.org/essays/rocky/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

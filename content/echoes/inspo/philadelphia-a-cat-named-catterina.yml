@@ -1,0 +1,83 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (Spring Garden, Northern Liberties edge), second pass, following docs/writing-echoes.md (format v2).
+# Listening spot: North Seventh Street at Spring Garden Street, outside the Edgar Allan Poe National Historic Site, the brick house Poe rented and the only one of his Philadelphia homes that survives.
+# Position: the Overture street-map intersection of North Seventh and Spring Garden (39.96149, -75.149741), moved a few metres north on the Seventh Street side where the house stands (high confidence for the corner).
+# Inspo evidence: "building". The NPS says Poe published, and probably wrote, The Black Cat while he lived in this house, and asks whether the cellar's false chimney could be the story's "tomb". The script says the house, never a room, and keeps the cellar a question.
+id: philadelphia-a-cat-named-catterina
+title: "A Cat Named Catterina"
+summary: "Poe lived in this brick house with his sick young wife, her mother, and a cat. While he lived here, he published The Black Cat."
+place: "Edgar Allan Poe National Historic Site, North Seventh Street at Spring Garden Street, Philadelphia, Pennsylvania"
+at: { lat: 39.96165, lng: -75.14970 }
+triggerRadiusKm: 0.04
+category: inspo
+inspo:
+  kind: creation
+  evidence: building
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [philadelphia, spring-garden, edgar-allan-poe, the-black-cat, the-tell-tale-heart, literature, national-park-service]
+teaser: "There is a word scratched into the plaster by the kitchen door."
+script: |
+  Look at the plain brick house. In Poe's day it stood open on the corner, with a lawn out front toward Seventh Street. It was bright and airy. That was the point.
+
+  Edgar Allan Poe lived in five houses in Philadelphia. This is the only one left. He moved his family here because his young wife, Virginia, had just been told she had tuberculosis. They hoped the light and the air would heal her lungs.
+
+  It was a small household. Edgar. Virginia. Her mother, Maria, whom everyone called Muddy. And a cat named Catterina.
+
+  Muddy did everything. The cooking, the cleaning, the nursing. One neighbour remembered her whitewashing the fence. Another neighbour claimed Poe left the house only a dozen times. Money was so short that he filed for bankruptcy. He owned almost no furniture.
+
+  Inside, by the kitchen door, someone carved a word into the plaster. Death. Nobody knows who.
+
+  While he lived in this house, Poe published a story about a man, his cat, and a wall in a cellar. The Black Cat. And in the cellar of this house, there is a false chimney. The park rangers ask the question for you. Could that be where the story's tomb came from?
+
+  Look at the house again. A sick wife. A tired mother. Not enough money.
+
+  And a cat named Catterina.
+pronunciations:
+  - written: "Catterina"
+    say: "kat-er-EE-nah"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In Poe's day it stood open on the corner, with a lawn out front toward Seventh Street. It was bright and airy. That was the point."
+    source: 1
+    quote: "In Poe’s time, the house stood on the corner, which allowed more light to enter the home through its many east-facing windows. The house was quite open while Poe lived there, though it was later boxed in by surrounding properties."
+  - says: "with a lawn out front toward Seventh Street."
+    source: 1
+    quote: "There was a spacious lawn facing Seventh Street"
+  - says: "Edgar Allan Poe lived in five houses in Philadelphia. This is the only one left. He moved his family here because his young wife, Virginia, had just been told she had tuberculosis. They hoped the light and the air would heal her lungs."
+    source: 1
+    quote: "During his six years in Philadelphia, Poe lived in five different houses. Only this house survives. Just before moving here, Virginia, Edgar Allan Poe’s young wife, was diagnosed with tuberculosis. The family moved into this bright, airy house to help heal Virginia’s lungs."
+  - says: "It was a small household. Edgar. Virginia. Her mother, Maria, whom everyone called Muddy. And a cat named Catterina."
+    source: 1
+    quote: "In addition to Edgar and Virginia, the household also included Virginia’s mother Maria Clemm, or “Muddy,” and a cat named Catterina."
+  - says: "Muddy did everything. The cooking, the cleaning, the nursing."
+    source: 1
+    quote: "The Poe family could not afford a housekeeper or cook, so Muddy carried out most of the family’s domestic affairs—cooking, cleaning, and caring for her ailing daughter."
+  - says: "One neighbour remembered her whitewashing the fence."
+    source: 1
+    quote: "and even white-washing the palings [a fence made from pointed wooden stakes]."
+  - says: "Another neighbour claimed Poe left the house only a dozen times."
+    source: 1
+    quote: "One neighbor claimed to have only seen Poe leave the house a dozen times"
+  - says: "Money was so short that he filed for bankruptcy. He owned almost no furniture."
+    source: 1
+    quote: "Around the time he lived here, his failed literary endeavors and his ailing wife’s costly medical care finally forced him to file for bankruptcy. His bankruptcy petition lists hardly any furniture or valuable material possessions."
+  - says: "Inside, by the kitchen door, someone carved a word into the plaster. Death. Nobody knows who."
+    source: 1
+    quote: "One of the most notable details in the room is the word “death” carved into the plaster near the doorway to the kitchen. It is unknown whether Poe made this carving"
+  - says: "While he lived in this house, Poe published a story about a man, his cat, and a wall in a cellar. The Black Cat."
+    source: 1
+    quote: "In Poe’s horror story, “The Black Cat,” the murderer confesses, “I had walled the monster inside the tomb” in the cellar. Poe published (and probably wrote) the story while he lived in this house."
+  - says: "And in the cellar of this house, there is a false chimney. The park rangers ask the question for you. Could that be where the story's tomb came from?"
+    source: 1
+    quote: "Take a close look at the false chimney. Could it be the inspiration for the \"tomb\" mentioned in \"The Black Cat\"?"
+sources:
+  - title: "The Layout of the House"
+    publisher: "National Park Service, Edgar Allan Poe National Historic Site"
+    url: https://www.nps.gov/edal/learn/historyculture/roomlayout.htm
+    retrievedAt: "2026-11-11"
+    rights: public-domain
