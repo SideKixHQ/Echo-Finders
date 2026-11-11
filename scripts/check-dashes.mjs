@@ -30,7 +30,7 @@ const walk = (d) => readdirSync(d).flatMap((f) => {
 const where = (file, line) => `${relative(ROOT, file)}:${line}`;
 
 // 1. Source text the user sees.
-for (const dir of ["apps/prototype/src", "apps/site/src", "packages/echo/src"]) {
+for (const dir of ["apps/prototype/src", "apps/site/src", "packages/echo/src", "apps/ios/src"]) {
   for (const file of walk(join(ROOT, dir)).filter((f) => /\.(tsx?|jsx?)$/.test(f) && !f.endsWith(".generated.ts") && !/\.test\./.test(f))) {
     const src = ts.createSourceFile(file, readFileSync(file, "utf8"), ts.ScriptTarget.Latest, true, file.endsWith("x") ? ts.ScriptKind.TSX : ts.ScriptKind.TS);
     const visit = (node) => {
@@ -63,6 +63,13 @@ for (const f of ["apps/site/index.html", "apps/prototype/index.html", ...readdir
   html.split("\n").forEach((l, i) => {
     if (DASH.test(l)) hits.push(`${f}:${i + 1}  ${JSON.stringify(l.trim().slice(0, 90))}`);
   });
+}
+
+// 2c. The iPhone app's purpose strings, which iOS reads out in its permission prompts.
+{
+  const f = "apps/ios/app.json";
+  const plist = JSON.parse(readFileSync(join(ROOT, f), "utf8")).expo?.ios?.infoPlist ?? {};
+  for (const [k, v] of Object.entries(plist)) if (typeof v === "string" && DASH.test(v)) hits.push(`${f} ${k}  ${JSON.stringify(v.slice(0, 90))}`);
 }
 
 // 3. What every echo says and shows.
