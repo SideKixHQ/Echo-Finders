@@ -49,6 +49,34 @@ function write(value: string | null): void {
 /** On is owner mode (only ever turned on by a checked link); off clears either mode. */
 export function setOwnerMode(on: boolean): void {
   write(on ? "on" : null);
+  if (!on) forgetOnServer();
+}
+
+/** Clears the server's cookie (`api/owner.ts`), so turning owner mode off sticks. */
+export function forgetOnServer(): void {
+  try {
+    void fetch("/api/owner", { method: "DELETE", keepalive: true }).catch(() => {});
+  } catch {
+    /* No fetch: nothing to clear. */
+  }
+}
+
+/**
+ * The phone's own mark is gone (iPhone Safari wipes a site's storage after about a week
+ * away, and a home-screen icon has storage of its own), so ask the server's cookie.
+ */
+async function restoreFromServer(): Promise<AccessRole | null> {
+  try {
+    const res = await fetch("/api/owner", { method: "GET", credentials: "same-origin" });
+    if (!res.ok) return null;
+    const { role } = (await res.json()) as { role?: AccessRole | null };
+    if (role === "owner") write("on");
+    // A restored tester keeps no code: its cookie is what gets checked from now on.
+    else if (role === "tester") write(TESTER);
+  } catch {
+    /* Offline: try again next time. */
+  }
+  return accessRole();
 }
 
 async function check(code: string): Promise<Response> {
@@ -68,7 +96,7 @@ async function check(code: string): Promise<Response> {
 export async function claimOwnerFromAddress(): Promise<AccessRole | null> {
   const params = new URLSearchParams(window.location.search);
   const code = params.get("owner");
-  if (code === null) return recheckTester();
+  if (code === null) return read() === null ? restoreFromServer() : recheckTester();
   params.delete("owner");
   const rest = params.toString();
   window.history.replaceState(null, "", window.location.pathname + (rest ? `?${rest}` : "") + window.location.hash);
@@ -88,6 +116,11 @@ export async function claimOwnerFromAddress(): Promise<AccessRole | null> {
 async function recheckTester(): Promise<AccessRole | null> {
   const value = read();
   if (!value?.startsWith(TESTER)) return accessRole();
+  // Restored from the cookie, so no code to send: the cookie is the check.
+  if (value === TESTER) {
+    write(null);
+    return restoreFromServer();
+  }
   try {
     const res = await check(value.slice(TESTER.length));
     // Only a definite no turns it off: offline, or the server having a bad minute, does not.
