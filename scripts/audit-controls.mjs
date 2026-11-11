@@ -79,7 +79,7 @@ const b = await chromium.launch(existsSync(SANDBOX_CHROMIUM) ? { executablePath:
 
    Only the test harness trusts it. Nothing about the app changes.
 */
-const ctx = await b.newContext({ viewport:{width:390,height:844}, deviceScaleFactor:2, isMobile:true, ignoreHTTPSErrors:true,
+const ctx = await b.newContext({ colorScheme: "dark", viewport:{width:390,height:844}, deviceScaleFactor:2, isMobile:true, ignoreHTTPSErrors:true,
   hasTouch:true, permissions:['geolocation'], geolocation:{latitude:40.7033,longitude:-74.0170} });
 const p = await ctx.newPage();
 const errors = [];

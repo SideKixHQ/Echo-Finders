@@ -262,7 +262,7 @@ const unreached = [];
 const errors = [];
 
 async function device(geo, seed = {}) {
-  const ctx = await browser.newContext({
+  const ctx = await browser.newContext({ colorScheme: "dark",
     viewport: { width: 375, height: 667 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, ignoreHTTPSErrors: true,
     ...(geo ? { permissions: ['geolocation'], geolocation: geo } : {}),
   });

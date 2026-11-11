@@ -117,7 +117,7 @@ export function Privacy({
         />
         <Toggle
           label="Dark map"
-          detail="A night map, which is what the app is drawn for."
+          detail="A night map, which is what the app is drawn for. Follows your phone until you switch it here."
           cost="Turn off for the daylight map, which is easier in bright sun."
           on={theme === "dark"}
           onToggle={() => onTheme(theme === "dark" ? "light" : "dark")}

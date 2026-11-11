@@ -280,7 +280,7 @@ async function attempt(size, screen) {
   // A browser that died part way through used to fail every pairing after it as "never
   // reached": start a new one rather than measure nothing.
   if (!browser.isConnected()) { lastError = 'the browser had disconnected; relaunched'; browser = await launch(); }
-  const ctx = await browser.newContext({
+  const ctx = await browser.newContext({ colorScheme: "dark",
     viewport: { width: size.width, height: size.height }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: START,
   });
