@@ -2,8 +2,8 @@
 # Listening spot: The foot of Vendue Range at Waterfront Park, where the old town met its wharves, looking out over the harbour toward the bar.
 # Position: Vendue Range and Concord Street from the app's Charleston street file, nudged east to the park edge and checked against the land map (high confidence for the spot; the 1718 wharf's exact place is not known and the script does not claim it).
 # Conviction status: alleged. Blackbeard was never tried; he was killed at Ocracoke in November 1718. The blockade, the hostages and the ransom are in the colonial record as reported by both sources. No living person is involved.
-id: charleston-a-chest-of-medicine
-title: "A Chest of Medicine"
+id: charleston-blackbeards-ransom
+title: "Blackbeard's Ransom"
 summary: "In May 1718 Blackbeard blockaded Charleston for a week and held its people hostage. The ransom he asked for was a chest of medicine."
 place: "Vendue Range at Waterfront Park, Charleston, South Carolina"
 at: { lat: 32.77890, lng: -79.92580 }
@@ -17,6 +17,7 @@ voice: wC1005J19tvhoqqC2hkf
 minAge: 16
 quality: 0.8
 tags: [charleston, true-crime, pirates, blackbeard, 1718, colonial]
+relatedIds: [charleston-a-chest-of-medicine]
 teaser: "The pirate wanted medicine. Or he would send back heads."
 script: |
   Look out at the harbour, toward the open sea. In May of seventeen eighteen, four ships sat off the bar out there, with at least sixty guns between them.
@@ -120,7 +121,7 @@ sources:
     rights: public-domain
 renders:
   - voiceId: wC1005J19tvhoqqC2hkf
-    audioKey: audio/charleston-a-chest-of-medicine/wC1005J19tvhoqqC2hkf.mp3
+    audioKey: audio/charleston-blackbeards-ransom/wC1005J19tvhoqqC2hkf.mp3
     durationS: 64.1
     audioBytes: 1027386
     transcript:

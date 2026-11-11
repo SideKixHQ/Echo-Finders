@@ -16,6 +16,7 @@ voice: UrTldiIxfedDl9tlesyS
 minAge: 0
 quality: 0.75
 tags: [charleston, charleston-core, waterfront, pirates, blackbeard, kids]
+relatedIds: [charleston-blackbeards-ransom]
 teaser: "Nine ships, one pirate, and a very strange demand."
 script: |
   Look out at the harbour, toward the sea. Now imagine nine ships out there, near the sandbar, and every one of them captured by the same pirate.
