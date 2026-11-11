@@ -1,0 +1,87 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (Society Hill), second pass, following docs/writing-echoes.md (format v2). Legend, told as legend; male narrator per content/voices.yml.
+# Listening spot: South Third Street between Walnut and Spruce, on the sidewalk outside the Powel House, 244 South Third Street.
+# Position: on the west side of Third Street between the Overture street-map intersections at Willings Alley (39.946322, -75.146529) and Spruce (39.944747, -75.146877), toward the middle of the block (medium confidence: the house's place on the block was not checked). About 70 m from the Old St. Joseph's echo, which is down Willings Alley.
+id: philadelphia-a-purple-and-cream-gown
+title: "A Purple and Cream Gown"
+summary: "The Powel House was nearly torn down for a parking lot, and one of its rooms went to New York. The stories say its guests never left."
+place: "Powel House, 244 South Third Street, Society Hill, Philadelphia, Pennsylvania"
+at: { lat: 39.94570, lng: -75.14700 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 92
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The hauntings are the house's own lore, as told to CBS Philadelphia by the caretaker who lives there and in a CBS Philadelphia guide to haunted places. The guide says the sightings go back to the 1960s and that the woman in the gown is only speculated to be Peggy Shippen. What is documented: Samuel Powel's house, saved from demolition in 1931 by the Philadelphia Society for the Preservation of Landmarks, and the room taken to the Metropolitan Museum of Art in 1918. The script says the ghosts are a legend.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 10
+quality: 0.8
+tags: [philadelphia, society-hill, third-street, powel-house, samuel-powel, peggy-shippen, ghost, legend]
+teaser: "One of its rooms is in New York. Some say its guests stayed."
+script: |
+  Look at the tall brick house, here on Third Street. Its owner, Samuel Powel, was the last mayor of Philadelphia under the British, and the first mayor after the Revolution.
+
+  Last century, this house was nearly pulled down, to make room for a parking lot. A society of Philadelphians, founded in nineteen thirty one, saved it.
+
+  But not all of it. Back in nineteen eighteen, one of its rooms had been taken out and carried off to New York. It is in the Metropolitan Museum of Art.
+
+  Now, this next part is a legend.
+
+  People have been telling ghost stories about this house since the nineteen sixties. They say soldiers of the Continental Army have been seen on the main staircase. General Lafayette among them.
+
+  And in the drawing room, they say, a young woman, in a purple and cream gown. Some people think they know who she is. Peggy Shippen. The wife of Benedict Arnold. They say she wore a gown just like it to the last party she went to in this house.
+
+  The caretaker, who lives in the house, told a reporter it is supposedly the most haunted house in Philadelphia. She has felt cold spots. Her husband, down in the basement, has heard footsteps on the floor above, when he knew she was nowhere near. Visitors tell her, very matter of fact, you know you're not alone here.
+
+  Nobody can prove any of it.
+
+  Look up at the windows. One room went to New York.
+
+  The guests, the story goes, stayed.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Its owner, Samuel Powel, was the last mayor of Philadelphia under the British, and the first mayor after the Revolution."
+    source: 2
+    quote: "The Powel House is named for Samuel Powel, the last mayor of Philadelphia under British rule and the city's first mayor after the Revolution."
+  - says: "Last century, this house was nearly pulled down, to make room for a parking lot. A society of Philadelphians, founded in nineteen thirty one, saved it."
+    source: 1
+    quote: "the historic Powel House at 244 South 3rd Street in Society Hill -- the house that was almost demolished to make way for a parking lot."
+  - says: "A society of Philadelphians, founded in nineteen thirty one, saved it."
+    source: 3
+    quote: "The Philadelphia Society for the Preservation of Landmarks, founded under the leadership of Frances Wister (1874-1956) in 1931, saved the colonial-era Powel House at 244 S. Third Street from demolition."
+  - says: "Back in nineteen eighteen, one of its rooms had been taken out and carried off to New York. It is in the Metropolitan Museum of Art."
+    source: 3
+    quote: "Thus, in 1918 the interior of a room from the Philadelphia home of Mayor Samuel Powel (1738-93, home built 1765) came to be preserved in New York, at the Metropolitan Museum of Art."
+  - says: "People have been telling ghost stories about this house since the nineteen sixties. They say soldiers of the Continental Army have been seen on the main staircase. General Lafayette among them."
+    source: 2
+    quote: "Sightings of ghosts in the house go back to the 1960s. Reportedly, people have seen General Lafayette and other ghosts of the Continental Army on the house's main staircase."
+  - says: "And in the drawing room, they say, a young woman, in a purple and cream gown. Some people think they know who she is. Peggy Shippen. The wife of Benedict Arnold. They say she wore a gown just like it to the last party she went to in this house."
+    source: 2
+    quote: "Moreover, a ghost of a young woman in a purple and cream gown has been seen in the drawing room, and some have speculated she is the ghost of Peggy Shippen, wife of Benedict Arnold, because Shippen wore a gown similar to the one seen to the last party she attended at the house."
+  - says: "The caretaker, who lives in the house, told a reporter it is supposedly the most haunted house in Philadelphia. She has felt cold spots."
+    source: 1
+    quote: "\"It's supposedly the most haunted house in Philadelphia,\" says caretaker Jennifer Davidson, who lives at the Powel House. \"I have felt cold spots."
+  - says: "Visitors tell her, very matter of fact, you know you're not alone here."
+    source: 1
+    quote: "I have a lot of people that come to events here at the house and tell me quite frankly and very matter-of-factly, 'you know you're not alone here'.\""
+  - says: "Her husband, down in the basement, has heard footsteps on the floor above, when he knew she was nowhere near."
+    source: 1
+    quote: "\"He says sometimes when he's in the basement, he has said that he has heard footsteps on the floor above, and he knows I'm not in that part of the house.\""
+sources:
+  - title: "Positively Philadelphia: A Historically Haunted Philadelphia House?"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/historically-haunted-philadelphia-house/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Philadelphia's Most Haunted Places (Katherine Ernst)"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/philadelphias-most-haunted-places/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Historic Preservation (Encyclopedia of Greater Philadelphia)"
+    publisher: "The Encyclopedia of Greater Philadelphia, Rutgers University"
+    url: https://philadelphiaencyclopedia.org/essays/historic-preservation/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

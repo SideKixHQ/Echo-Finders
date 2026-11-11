@@ -1,0 +1,106 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (Fairmount, Eastern State Penitentiary), second pass, following docs/writing-echoes.md (format v2) and docs/14-true-crime.md. Male narrator per content/voices.yml.
+# Listening spot: The Fairmount Avenue sidewalk in front of Eastern State Penitentiary, toward Twenty Second Street, where the 1945 tunnel came up. The site's tour says a painted line now traces the tunnel's path.
+# Position: west of the main gate along Fairmount Avenue, about 100 m from the existing Eastern State echo (the-prison-corridor, at the gate). Eastern State is outside the app's street map, so the line of Fairmount Avenue is taken from that echo's pin (medium confidence; widened radius).
+# Key facts and their sources (docs/14-true-crime.md): the April 1945 escape of twelve men, Sutton among them, through a tunnel under the wall to Fairmount Avenue, and that all were caught, are in both Eastern State Penitentiary's audio tour transcript (the institution's own account) and the Encyclopedia of Greater Philadelphia. Klinedinst's cell, the dimensions, the muddy footprints and James Grace's return are in the Eastern State transcript only, and are attributed to it in the script. Sutton was convicted (Corn Exchange Bank robbery). No one named is alive.
+id: philadelphia-muddy-footprints
+title: "Muddy Footprints"
+summary: "In April 1945 twelve men came up out of a tunnel under Fairmount Avenue. One was the bank robber Willie Sutton. He got two blocks."
+place: "Fairmount Avenue in front of Eastern State Penitentiary, toward Twenty Second Street, Fairmount, Philadelphia, Pennsylvania"
+at: { lat: 39.96755, lng: -75.17380 }
+triggerRadiusKm: 0.06
+category: true-crime
+format: short
+durationS: 102
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.85
+tags: [philadelphia, fairmount, eastern-state-penitentiary, true-crime, willie-sutton, clarence-klinedinst, escape, tunnel]
+teaser: "He looked back and saw his own footprints."
+script: |
+  Look at the pavement here, in front of the great stone wall. Somewhere under your feet, in the spring of nineteen forty five, there was a tunnel.
+
+  It started inside, in Cellblock Seven, cell sixty eight. The man in that cell was a burglar named Clarence Klinedinst. Everyone called him Kliney. He was a mason, and the prison trusted him to repair its plaster and stone. So when he asked if he could re plaster his own cell, the warden said yes.
+
+  Behind a wooden panel, Kliney started digging.
+
+  It took about a year. Fifteen feet down. Ninety seven feet out, under the wall, toward this street. Then fifteen feet up. He shored it with wood. He even put in lights.
+
+  On the third of April, nineteen forty five, Kliney and his cellmate broke through the ground out here. Ten more men followed them up. One of them was the most famous bank robber in America. Willie Sutton. Slick Willie. Sentenced for the machine gun robbery of a Philadelphia bank.
+
+  Sutton was caught within minutes, two blocks away. He later explained why, the prison says. When he came out on the street, he was wet through, and covered in mud. He looked back, and saw his own muddy footprints, leading down the street.
+
+  Every man was caught. One of them came back on his own, a week later. He rang the doorbell, and asked to be let in. He was hungry.
+
+  Look down at the pavement again. The guards filled the tunnel with ash.
+
+  A year of digging, undone by a trail of mud.
+editorial: draft
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-11-11"
+  contentWarning: "This echo is about a prison escape in 1945. No violence is described."
+claims:
+  - says: "Somewhere under your feet, in the spring of nineteen forty five, there was a tunnel."
+    source: 2
+    quote: "Their tunnel led to an exit at Twenty-Second Street and Fairmount Avenue"
+  - says: "It started inside, in Cellblock Seven, cell sixty eight. The man in that cell was a burglar named Clarence Klinedinst. Everyone called him Kliney."
+    source: 1
+    quote: "Inmate Clarence Klinedinst lived in the last cell on the left, number 68."
+  - says: "The man in that cell was a burglar named Clarence Klinedinst. Everyone called him Kliney."
+    source: 1
+    quote: "His name was Clarence Klinedinst, and he was serving a five and a half to 11 year sentence for burglary, larceny and forgery"
+  - says: "Everyone called him Kliney."
+    source: 1
+    quote: "Everybody called him Kliney."
+  - says: "He was a mason, and the prison trusted him to repair its plaster and stone. So when he asked if he could re plaster his own cell, the warden said yes."
+    source: 1
+    quote: "Kliney, as he was known, was a good worker and trusted by the administration. He had the job of fixing the plaster and stone walls around the prison. Klinedinst asked the warden if he could re-plaster his own cell. The warden agreed."
+  - says: "Behind a wooden panel, Kliney started digging."
+    source: 1
+    quote: "While working in the cell, Klinedinst began digging a tunnel in the wall, concealing the hole behind the wooden panel."
+  - says: "It took about a year. Fifteen feet down. Ninety seven feet out, under the wall, toward this street. Then fifteen feet up. He shored it with wood. He even put in lights."
+    source: 1
+    quote: "After about a year of digging, the tunnel was nearly complete. It extended 15 feet down, 97 feet out to Fairmount Avenue, and 15 feet up. It was equipped with lights, and reinforced with wood bracing."
+  - says: "On the third of April, nineteen forty five, Kliney and his cellmate broke through the ground out here. Ten more men followed them up."
+    source: 1
+    quote: "Imagine when, on April 3rd, 1945, Kliney and his cellmate, William Russell, broke through ground in front of Eastern State. Ten inmates joined the escape."
+  - says: "Ten more men followed them up. One of them was the most famous bank robber in America. Willie Sutton."
+    source: 2
+    quote: "In 1945, Eastern experienced perhaps the most sensational escape in its history when notorious bank robber “Slick Willie Sutton” (1901-80) escaped with eleven other men through a tunnel under the wall."
+  - says: "Slick Willie. Sentenced for the machine gun robbery of a Philadelphia bank."
+    source: 1
+    quote: "He was arrested for the machine gun robbery of the Corn Exchange Bank in Philadelphia in 1934 and was sentenced to 25 to 50 years at Eastern State Penitentiary."
+  - says: "One of them was the most famous bank robber in America."
+    source: 1
+    quote: "By the 1930s, 40s and 50s, “Slick Willie” had become one of America's most notorious criminals."
+  - says: "Sutton was caught within minutes, two blocks away."
+    source: 1
+    quote: "He was caught within minutes, only two blocks from the penitentiary."
+  - says: "He later explained why, the prison says. When he came out on the street, he was wet through, and covered in mud. He looked back, and saw his own muddy footprints, leading down the street."
+    source: 1
+    quote: "In his official statement after the escape, he told prison officials that when he got out on the street he was all wet and muddy. He looked back, saw his own muddy footprints down the street and knew he was in trouble."
+  - says: "Every man was caught."
+    source: 2
+    quote: "Though all were eventually captured"
+  - says: "One of them came back on his own, a week later. He rang the doorbell, and asked to be let in. He was hungry."
+    source: 1
+    quote: "James Grace surprised the guards when he returned to the penitentiary early on the morning of April 11th. He rang the doorbell and asked to be let back in. He was hungry."
+  - says: "The guards filled the tunnel with ash."
+    source: 1
+    quote: "The staff filled in the tunnel with ash from the prison incinerator."
+sources:
+  - title: "Eastern State Penitentiary audio tour transcript, stops 15, 16 and 23 (Slick Willie Sutton, Clarence Klinedinst, the 1945 tunnel escape)"
+    publisher: "Eastern State Penitentiary Historic Site"
+    url: https://easternstate.org/uploads/media/ESP_English_Audio_Tour_Transcript.pdf
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Eastern State Penitentiary (Encyclopedia of Greater Philadelphia)"
+    publisher: "The Encyclopedia of Greater Philadelphia, Rutgers University"
+    url: https://philadelphiaencyclopedia.org/essays/eastern-state-penitentiary/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

@@ -1,0 +1,85 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (North Philadelphia, North Broad Street), second pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The east side of North Broad Street at Glenwood Avenue, outside 2917 North Broad, the old brick building that was Joe Frazier's Gym, across Broad from North Philadelphia Station.
+# Position: placed across Broad Street from North Philadelphia Station, which the Inquirer puts directly opposite the gym at Broad and Glenwood. Outside the app's street map; the station's position (about 39.997, -75.1556) is from memory of the map and was not checked against a map file here (medium confidence; widened radius). A reviewer should confirm the pin on a map before approval.
+# Not verified: whether the building still stands as described. In 2013 it was a furniture store; later news (2024) reported the City Council stepping in over possible demolition. The script describes the 2013 state and says when.
+id: philadelphia-knockout-prices
+title: "Knockout Prices"
+summary: "Joe Frazier trained in this brick building on North Broad for the 1971 Fight of the Century, and handed Muhammad Ali his first loss."
+place: "Former Joe Frazier's Gym, 2917 North Broad Street, North Philadelphia, Pennsylvania"
+at: { lat: 39.99700, lng: -75.15490 }
+triggerRadiusKm: 0.08
+category: people
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [philadelphia, north-philadelphia, north-broad-street, joe-frazier, boxing, muhammad-ali, sport]
+teaser: "The spirit is still here, the manager said. Knockout prices."
+script: |
+  Look at the old brick building on this side of Broad Street, across from the train station. Look over the main door. When a reporter came by in twenty thirteen, a pair of boxing gloves was still etched up there, and faded grey letters still said, Joe Frazier's Gym.
+
+  For forty two years, this was his gym. Joe Frazier. A heavyweight from Philadelphia, hard working, the opposite of his great rival, Muhammad Ali.
+
+  In nineteen seventy one, the two of them met in what was billed as the Fight of the Century. Frazier got ready for it here. He won. It was the first time Ali had ever lost.
+
+  People on this block remember him. A man from the neighbourhood said Frazier would invite them in, to watch the street tough fighters this city turned out like soft pretzels. He might have been heavyweight champion of the world, the man said, but he never forgot about us.
+
+  Frazier closed the gym in twenty ten, already ill. He died the next year. The building became a discount furniture store.
+
+  The store's manager still felt the champion around. The spirit is still here, he said. And he pointed to the sign in the window.
+
+  Knockout prices.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "When a reporter came by in twenty thirteen, a pair of boxing gloves was still etched up there"
+    source: 2
+    quote: "It's now occupied by a discount furniture store where an etched pair of boxing gloves are visible over the main entrance."
+  - says: "and faded grey letters still said, Joe Frazier's Gym."
+    source: 1
+    quote: "But look closer, and you’ll see the last remnants of what once was: faded gray lettering saying, “Joe Frazier’s Gym.”"
+  - says: "Look at the old brick building on this side of Broad Street, across from the train station."
+    source: 2
+    quote: "Located directly across Broad Street from North Philadelphia Station"
+  - says: "For forty two years, this was his gym."
+    source: 2
+    quote: "Standing in defiant isolation, the structure, which for 42 years housed the famed Philadelphia fighter's training facility"
+  - says: "A heavyweight from Philadelphia, hard working, the opposite of his great rival, Muhammad Ali."
+    source: 3
+    quote: "Philadelphia-based heavyweight champion Joe Frazier (1944-2011) was hailed as a hardworking blue-collar counterpart to his great rival Ali in the early 1970s."
+  - says: "In nineteen seventy one, the two of them met in what was billed as the Fight of the Century. Frazier got ready for it here. He won. It was the first time Ali had ever lost."
+    source: 1
+    quote: "It was here that the heavyweight trained for 1971’s so-called “fight of the century” — a bout in which Frazier became world champ by handing Muhammad Ali his first-ever loss."
+  - says: "A man from the neighbourhood said Frazier would invite them in, to watch the street tough fighters this city turned out like soft pretzels."
+    source: 2
+    quote: "Both Hughes and Simmons said they had met Frazier often, that he'd occasionally invite them into his gym to watch the street-tough fighters Philadelphia once produced like soft pretzels."
+  - says: "He might have been heavyweight champion of the world, the man said, but he never forgot about us."
+    source: 2
+    quote: "\"He might have been heavyweight champion of the world, but he never forgot about us,\" said Hughes."
+  - says: "Frazier closed the gym in twenty ten, already ill. He died the next year."
+    source: 2
+    quote: "When Frazier, ailing with the liver cancer that would kill him a year later, shuttered the place in 2010"
+  - says: "The building became a discount furniture store."
+    source: 1
+    quote: "Essentially, you’d be looking at the multi-colored flags and window advertisements of a neighborhood furniture store."
+  - says: "The store's manager still felt the champion around. The spirit is still here, he said. And he pointed to the sign in the window. Knockout prices."
+    source: 1
+    quote: "“The spirit is still here of Joe Frazier. We’ve got, like, the knockout prices,” Iluv said, pointing toward the street. “You see we’ve got it on the window, the knockout prices?”"
+sources:
+  - title: "As historic site, Frazier gym has fighting chance of preservation"
+    publisher: "WHYY"
+    url: https://whyy.org/articles/as-historic-site-frazier-gym-has-fighting-chance-of-preservation/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "At Joe Frazier's former gym, memories linger (Frank Fitzpatrick, 2 May 2013)"
+    publisher: "The Philadelphia Inquirer"
+    url: https://www.inquirer.com/philly/sports/boxing/20130502_At_Joe_Frazier_s_former_gym__memories_linger.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Rocky (Laura Holzman)"
+    publisher: "The Encyclopedia of Greater Philadelphia, Rutgers University"
+    url: https://philadelphiaencyclopedia.org/essays/rocky/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

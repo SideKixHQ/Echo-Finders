@@ -1,0 +1,72 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (Avenue of the Arts), second pass, following docs/writing-echoes.md (format v2). Legend, told as legend; male narrator per content/voices.yml.
+# Listening spot: The Broad Street sidewalk outside the Academy of Music, on the southwest corner of Broad and Locust.
+# Position: the Overture street-map intersection of Broad and Locust (39.948199, -75.164441), moved onto the southwest corner where the Academy stands (high confidence). About 85 m from the Twist echo on the 1400 block of Locust and 260 m from the Broad and Pine echo.
+id: philadelphia-the-empty-seat
+title: "The Empty Seat"
+summary: "The Academy of Music has staged opera since 1857. The story goes that a man in black haunts its upper balconies."
+place: "Academy of Music, Broad and Locust streets, Avenue of the Arts, Philadelphia, Pennsylvania"
+at: { lat: 39.94795, lng: -75.16470 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 84
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The haunting is lore, reported in a CBS Philadelphia guide to haunted places: a "man in black" in the upper balconies, and women who feel someone sit down in the empty seat beside them. What is documented: the Academy opened in 1857 with Verdi's Il Trovatore, was designed after La Scala, and is the oldest opera house in the country still used for its first purpose. The script says the ghost is a legend.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 10
+quality: 0.75
+tags: [philadelphia, avenue-of-the-arts, broad-street, academy-of-music, opera, ghost, legend]
+teaser: "You feel someone sit down beside you. The seat stays empty."
+script: |
+  Look at the old opera house on the corner of Broad and Locust. It was built to look like La Scala, in Milan. It opened in eighteen fifty seven, with an opera by Verdi, Il Trovatore. It has been an opera house ever since. No opera house in the country has been one for longer.
+
+  It has seen a lot. In eighteen seventy two, Ulysses Grant was nominated in its hall for his second term as president. In eighteen eighty six, President Grover Cleveland threw an extravagant party here for his new bride.
+
+  Now, this next part is a legend.
+
+  The story goes that up in the high balconies, people have seen a man dressed in black. Nobody knows who he is.
+
+  And there is something else. Women sitting up there, next to an empty seat, have felt somebody sit down beside them. Some say they have been pinched. Some say their hair has been pulled.
+
+  Nobody can prove any of it. But a theatre is a place full of people sitting in the dark, close together, not looking at each other.
+
+  Next time you are up in the balcony, and the lights go down, look at the empty seat beside you.
+
+  Then look again.
+pronunciations:
+  - written: "Il Trovatore"
+    say: "eel troh-vah-TOR-ay"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "It was built to look like La Scala, in Milan."
+    source: 2
+    quote: "the Academy of Music, designed by Napoleon Le Brun (1821–1901) after the pattern of Milan’s La Scala."
+  - says: "It opened in eighteen fifty seven, with an opera by Verdi, Il Trovatore. It has been an opera house ever since. No opera house in the country has been one for longer."
+    source: 2
+    quote: "The Academy of Music opened in 1857 with a performance of Verdi’s Il Trovatore. In the early twenty-first century, it was the oldest opera house in the United States that still was used for its original purpose."
+  - says: "No opera house in the country has been one for longer."
+    source: 1
+    quote: "Built in 1857, the Academy of Music is the United States' oldest still-operating grand opera house."
+  - says: "In eighteen seventy two, Ulysses Grant was nominated in its hall for his second term as president. In eighteen eighty six, President Grover Cleveland threw an extravagant party here for his new bride."
+    source: 1
+    quote: "Ulysses S. Grant was nominated for his second term in its hall in 1872, and Grover Cleveland held an extravagant party there in 1886 for his new bride."
+  - says: "The story goes that up in the high balconies, people have seen a man dressed in black."
+    source: 1
+    quote: "In the upper balconies, visitors have reported strange events, including a \"man in black\" who is said to haunt this area of the hall."
+  - says: "Women sitting up there, next to an empty seat, have felt somebody sit down beside them. Some say they have been pinched. Some say their hair has been pulled."
+    source: 1
+    quote: "Moreover, female visitors who sit next to an empty seat have reported feeling the presence of a person sitting down next to them. Some have even reported being pinched or feeling their hair being pulled."
+sources:
+  - title: "Philadelphia's Most Haunted Places (Katherine Ernst)"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/philadelphias-most-haunted-places/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Classical Music (Encyclopedia of Greater Philadelphia)"
+    publisher: "The Encyclopedia of Greater Philadelphia, Rutgers University"
+    url: https://philadelphiaencyclopedia.org/essays/classical-music/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
