@@ -172,7 +172,8 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
 // Location refused: "Show me where they are" puts the echoes on the map (the city heatmap
 // it used to open is gone, ADR-0018 amended 2026-11-10), and the tab bar has to leave it.
 // The heatmap once changed the tab underneath and stayed on top, so every tab looked dead
-// (James, 2026-11-09).
+// (James, 2026-11-09). It opens the country view, a numbered dot per town across the US,
+// not Wilmington, where the busiest place put everybody (James, 2026-11-11).
 {
   const ctx = await browser.newContext({ colorScheme: "dark",
     viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
@@ -199,6 +200,30 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
     && await visible(p.locator('.rail').getByRole('button', { name: 'Go to my location' })));
   check('Show me where they are: no heatmap screen', (await p.locator('.city').count()) === 0
     && (await p.getByRole('button', { name: 'Where the echoes are' }).count()) === 0);
+  {
+    const dots = p.locator('.clus');
+    const n = await dots.count();
+    const chip = await p.getByLabel(/Change your journey/).innerText().catch(() => '');
+    const card = await p.locator('.area-card').innerText().catch(() => '');
+    // Coast to coast: a dot out west and a dot out east, and none of it one city.
+    const xs = [];
+    for (let i = 0; i < n; i++) { const b = await dots.nth(i).boundingBox(); if (b) xs.push(b.x + b.width / 2); }
+    check('Show me where they are: the country view, a numbered dot per town', n >= 6 && await visible(p.locator('.area-card'))
+      && Math.min(...xs) < 120 && Math.max(...xs) > 270 && !/Wilmington|North Carolina/.test(`${chip} ${card}`),
+      `${n} dots, x ${Math.round(Math.min(...xs))} to ${Math.round(Math.max(...xs))}, "${chip}", "${card}"`);
+    // A town's dot goes in, and the empty screen does not come back over it.
+    let big = 0, at = null;
+    for (let i = 0; i < n; i++) {
+      const b = await dots.nth(i).boundingBox();
+      const k = Number(await dots.nth(i).locator('.clus-n').textContent().catch(() => '0'));
+      if (b && k > big) { big = k; at = b; }
+    }
+    if (at) await p.touchscreen.tap(at.x + at.width / 2, at.y + at.height / 2);
+    await p.waitForTimeout(1500);
+    const after = await p.locator('.clus-n').allTextContents();
+    check('Show me where they are: a town dot goes in', at !== null && !(await visible(p.locator('.nowhere')))
+      && !after.includes(String(big)) && (await p.locator('.pin, .clus').count()) > 0, `tapped ${big}, now ${after.join(' ')}`);
+  }
   await p.locator('.nav').getByRole('button', { name: /Settings/ }).click();
   await p.waitForTimeout(600);
   check('Show me where they are: Settings in the tab bar leaves it', /Settings/i.test(await currentTab(p)) && await visible(p.locator('.panel.feedback').first()));

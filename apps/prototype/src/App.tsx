@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { clusterEchoes, holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
+import { holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
 import { accessRole, claimOwnerFromAddress, setOwnerMode, type AccessRole } from "./owner";
 import { testPositionFrom } from "./test-position";
 import { count } from "./analytics";
@@ -8,7 +8,7 @@ import { LIBRARY, ROUTES } from "./library.generated";
 import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
-import { BASE_ZOOM, RouteMap, type PinState } from "./RouteMap";
+import { BASE_ZOOM, MIN_ZOOM, RouteMap, type PinState } from "./RouteMap";
 import { AreaCard, AREACARD_H, AREACARD_OVER_BAR } from "./AreaCard";
 import { Collection } from "./Collection";
 import { IndexedDbCollection } from "./collection-store";
@@ -57,6 +57,7 @@ import {
 } from "./toast-rules";
 import { Walk } from "./Walk";
 import { Nowhere, widenTo } from "./Nowhere";
+import { countryFrame } from "./country-view";
 import { Ribbon } from "./Ribbon";
 import { EchoBar, ECHOBAR_FLOAT, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
@@ -143,6 +144,8 @@ const OVERVIEW_RADIUS_KM = 6;
  * zoomed-out design (James, 2026-11-10). Only once the listener has zoomed out themselves.
  */
 const FAR_OUT_MAP_ZOOM = 12;
+/** What the country view fits: the library's echoes in the continental US (`country-view.ts`). */
+const US_FRAME = countryFrame(LIBRARY.map((e) => e.point.at));
 /**
  * Seatback mode: a big landscape touch screen in the back of an aircraft seat (ADR-0001).
  *
@@ -571,6 +574,12 @@ export function App() {
    * and no you on it: from home it never went back to you at all (found 2026-11-10).
    */
   const [showMe, setShowMe] = useState(false);
+  /**
+   * The country view: "Show me where they are" with no location, the continental US with
+   * a numbered dot per town (`country-view.ts`). Held until the locate arrow brings the map
+   * back to you, so the "Nothing within" screen does not come straight back over it.
+   */
+  const [country, setCountry] = useState(false);
   const [tab, setTab] = useState<Tab>("map");
   /**
    * The echo somebody sent this phone a link to (`?echo=`, `share.ts`), or null.
@@ -1449,6 +1458,11 @@ export function App() {
    * should not put four hundred voices in somebody's ears.
    */
   const farOut = roaming && !overview && !lookAt && !plan && zoom < 1 && BASE_ZOOM[roamMode] + Math.log2(zoom) <= FAR_OUT_MAP_ZOOM;
+  /*
+   * The country view draws every echo at any zoom, not only zoomed out: a tap on a town's
+   * dot goes in on that town, and with no location the engine's nearby list is empty.
+   */
+  const everything = farOut || (roaming && country && !overview && !lookAt && !plan);
   const onMap = useMemo(
     () =>
       roaming
@@ -1456,12 +1470,12 @@ export function App() {
             ? overviewEchoes
             : lookAt
               ? LIBRARY.filter((e) => distanceKm(lookAt.at, e.point.at) <= LOOK_RADIUS_KM)
-              : farOut
+              : everything
                 ? LIBRARY
                 : state.nearby.map((n) => n.echo)
           ).filter((e) => activeCats.has(e.category))
         : onRoute.filter((e) => activeCats.has(e.category)),
-    [roaming, overview, overviewEchoes, lookAt, farOut, state.nearby, activeCats, onRoute],
+    [roaming, overview, overviewEchoes, lookAt, everything, state.nearby, activeCats, onRoute],
   );
   /** Zoomed out, the echoes on screen, for the card that counts them (`AreaCard`). */
   const [inView, setInView] = useState<readonly Echo[]>([]);
@@ -1613,7 +1627,8 @@ export function App() {
   // Not while looking somewhere else: that map has its own echoes. Not once somebody
   // has asked for the map at their own position either: that is the answer they wanted.
   // Not while walking to an echo either: the way there is the answer, however far it is.
-  const nowhere = roaming && !lookAt && !showMe && !(beacon !== null && selfDirected) && state.nearby.length === 0;
+  // Nor on the country view, which is what its own "Show me where they are" opened.
+  const nowhere = roaming && !lookAt && !showMe && !country && !(beacon !== null && selfDirected) && state.nearby.length === 0;
   const nearestAnywhere = useMemo(() => {
     if (!nowhere) return null;
     const from = state.position?.at ?? null;
@@ -1669,6 +1684,7 @@ export function App() {
       return;
     }
     setOverview(false);
+    setCountry(false);
     setPan({ x: 0, y: 0 });
     setShowMe(true);
     setLocateTap((n) => n + 1);
@@ -2142,10 +2158,12 @@ export function App() {
                   }
                   onRoam={(mode) => {
                     setLookAt(null);
+                    setCountry(false);
                     switchTravel(mode);
                   }}
                   onRoute={(next) => {
                     setLookAt(null);
+                    setCountry(false);
                     setTravel(next.mode === "flight" ? "flight" : next.mode === "driving" ? "driving" : "walking");
                     setRoaming(false);
                     setWalkingView("map");
@@ -2208,10 +2226,11 @@ export function App() {
                       The echoes, on the map: clustered where they crowd, and the locate
                       arrow to come back. The city heatmap this used to open is gone
                       (ADR-0018, amended 2026-11-10). From where you are, the overview
-                      frames your nearest few. With no location there is no "nearest", and
-                      the whole library runs from San Francisco to Edinburgh, wider than a
-                      phone map can draw, so it opens on the busiest place instead, centred,
-                      the way a search for it would.
+                      frames your nearest few. With no location there is no "nearest", so
+                      it opens the country view: the continental US, a numbered dot per
+                      town, and a tap on one goes in (`country-view.ts`). It used to open
+                      on the busiest place, which put everybody in Wilmington (James,
+                      2026-11-11).
                     */
                     setPan({ x: 0, y: 0 });
                     setWalkingView("map");
@@ -2219,12 +2238,10 @@ export function App() {
                       setOverview(true);
                       return;
                     }
-                    const place = clusterEchoes(LIBRARY, 1.2).reduce((a, b) => (b.echoes.length > a.echoes.length ? b : a));
-                    // Its busiest spot, not its middle: a place chained along a drive can
-                    // have its middle in a field.
-                    const near = (at: LatLng) => place.echoes.filter((o) => distanceKm(at, o.point.at) <= 5).length;
-                    const spot = place.echoes.reduce((best, e) => (near(e.point.at) > near(best.point.at) ? e : best));
-                    setLookAt({ label: place.label, detail: "", at: spot.point.at });
+                    // Zoomed out from the start, so the town dots and the area card are up
+                    // before the map has come to rest and reported its own zoom.
+                    setZoom(MIN_ZOOM);
+                    setCountry(true);
                   }}
                   widenToKm={nearestAnywhere ? widenTo(nearestAnywhere.distanceKm) : WIDEN_MAX_KM}
                   {...(!state.position && locating.kind !== "live"
@@ -2268,6 +2285,7 @@ export function App() {
                 onPan={setPan}
                 locateTap={locateTap}
                 lookAt={roaming ? lookAt?.at ?? null : null}
+                countryBox={roaming && country ? US_FRAME : null}
                 /*
                   The way there: along the streets where there is a street file, and a
                   straight line to the echo where there is not, so the map always shows
