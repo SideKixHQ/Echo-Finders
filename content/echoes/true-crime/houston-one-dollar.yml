@@ -1,0 +1,154 @@
+# Drafted by Claude Code (2026-11-11) for Houston, Downtown on Buffalo Bayou: true crime. Second pass.
+# Listening spot: the public trail by Buffalo Bayou east of downtown, near the Austin Street trailhead, where the city named a plaza and trail for Joe Campos Torres in 2022 "right near the hole where he drowned" (Houston Chronicle, 2026). A public trail, not a home; no rarity.
+# Position: on the East Downtown Trail between Commerce Street at Austin Street and the bayou, from Overture road segments, 29.76285, -95.35740 (medium confidence: the trail is mapped; the exact edge of the plaza and the bayou bank were not checked on the ground). About 290 m from the Allen's Landing echo.
+# True crime notes for the reviewer: conviction status "convicted": two officers were convicted in state court of negligent homicide, and three of violating his civil rights in federal court (Handbook of Texas; Houston Chronicle). No officer is named in the script; some may be alive, so involvesLivingPeople is true. Each key fact (the arrest, the beatings at "the hole", the drowning, the body found on 8 May, the verdicts and sentences, the 2021 apology) is in both the Handbook of Texas and the Houston Chronicle, which are independent. The victim's family is not named or quoted.
+id: houston-one-dollar
+title: "One Dollar"
+summary: "In May 1977 Houston police beat Joe Campos Torres, a 23 year old veteran, and forced him into this bayou. Two officers were fined $1."
+place: "Buffalo Bayou trail near Austin Street, Joe Campos Torres Plaza and Trail, Downtown Houston, Texas"
+at: { lat: 29.76285, lng: -95.35740 }
+triggerRadiusKm: 0.08
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 105
+visibility: position-only
+certainty: documented
+minAge: 16
+quality: 0.9
+tags: [houston, downtown, buffalo-bayou, joe-campos-torres, police, civil-rights, moody-park, true-crime, 1977]
+teaser: "Two officers were convicted over his death. The fine was one dollar."
+script: |
+  Look toward the bayou, and the slow water.
+
+  It was deep enough.
+
+  On the fifth of May, nineteen seventy seven, Joe Campos Torres was twenty three. He was an army veteran, home the year before. He grew up in the East End, one of seven children.
+
+  That night police were called to a fight at a bar, and he was arrested. Officers took him to a spot on this bayou that police called the hole, and beat him.
+
+  When they brought him to the city jail, he was so badly hurt that they were told to take him to the hospital. Instead, they took him back to the hole. They beat him again, and forced him into the water.
+
+  He was too hurt to swim. Three days later, his body came up in the bayou.
+
+  A rookie officer who had been there broke the silence, and told his father.
+
+  Two officers were tried for murder. A jury convicted them of negligent homicide, a misdemeanor. Their sentence was probation, and a fine of one dollar. A federal jury later found three officers guilty of violating his civil rights. Each got a year and a day.
+
+  A year after his death, a crowd at Moody Park, on the north side, clashed with police, and the night ended in a riot.
+
+  In twenty twenty one, Houston's police chief apologized to his family. He called it a straight up murder. The city has since put his name on a plaza and a trail beside this water.
+
+  Look at the bayou again.
+
+  One dollar.
+
+pronunciations:
+  - written: Campos Torres
+    say: KAHM-pohs TOR-es
+editorial: draft
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: true
+  convictionStatus: convicted
+  reviewedBy: "TODO: James (owner), before this can leave draft"
+  reviewedAt: "2026-11-11"
+  contentWarning: "This echo describes a young man beaten by police officers and drowned. No injuries are described in detail."
+claims:
+  - says: "On the fifth of May, nineteen seventy seven, Joe Campos Torres was twenty three."
+    source: 1
+    quote: "On May 5, 1977, Torres was arrested after an altercation with the bar manager at the 21 Club"
+  - says: "On the fifth of May, nineteen seventy seven, Joe Campos Torres was twenty three."
+    source: 2
+    quote: "On the night of May 5, 1977, less than a year after being discharged from the Army, Torres was arrested for disorderly conduct at an East End bar"
+  - says: "On the fifth of May, nineteen seventy seven, Joe Campos Torres was twenty three."
+    source: 1
+    quote: "He was twenty-three years old at the time of his death."
+  - says: "He was an army veteran, home the year before."
+    source: 1
+    quote: "he enlisted as a private in the U. S. Army on November 1, 1974, and was discharged on November 3, 1976."
+  - says: "He grew up in the East End, one of seven children."
+    source: 2
+    quote: "Born in Houston in 1953, Torres was a 23-year-old veteran from the East End"
+  - says: "He grew up in the East End, one of seven children."
+    source: 1
+    quote: "Joe Torres, one of seven children, grew up in the Denver Harbor and Second Ward sections of Houston."
+  - says: "That night police were called to a fight at a bar, and he was arrested."
+    source: 1
+    quote: "Torres was arrested after an altercation with the bar manager at the 21 Club, a popular drinking establishment in Southeast Houston."
+  - says: "Officers took him to a spot on this bayou that police called the hole, and beat him."
+    source: 1
+    quote: "transported him to the “hole,” a secret spot along Buffalo Bayou where cops often took those they arrested to beat on them."
+  - says: "Officers took him to a spot on this bayou that police called the hole, and beat him."
+    source: 2
+    quote: "was taken by HPD officers to a spot along Buffalo Bayou east of downtown known as “the Hole.”"
+  - says: "When they brought him to the city jail, he was so badly hurt that they were told to take him to the hospital."
+    source: 1
+    quote: "After severely beating Torres, they took him to the city jail but were ordered to take him to Ben Taub Hospital instead."
+  - says: "When they brought him to the city jail, he was so badly hurt that they were told to take him to the hospital."
+    source: 2
+    quote: "The jailer urged the officers to take Torres to the hospital for treatment, but they instead uncuffed him at the Hole and threw the 23-year-old into the water."
+  - says: "Instead, they took him back to the hole."
+    source: 1
+    quote: "instead, they returned him to the “hole” to commence with a second round of beating. Afterward, they forced Torres into Buffalo Bayou"
+  - says: "He was too hurt to swim."
+    source: 1
+    quote: "they forced Torres into Buffalo Bayou where he drowned as he was too injured to swim or stay afloat."
+  - says: "Three days later, his body came up in the bayou."
+    source: 1
+    quote: "On May 8, 1977, precisely three days after his arrest and beating, Joe Torres’s body was found floating in the bayou."
+  - says: "Three days later, his body came up in the bayou."
+    source: 3
+    quote: "His family filed a missing persons report the next day, and his body surfaced on May 8."
+  - says: "A rookie officer who had been there broke the silence, and told his father."
+    source: 1
+    quote: "But rookie officer Eugene Elliott broke his code of silence and eventually told his father, a former police officer, what had happened."
+  - says: "Two officers were tried for murder."
+    source: 1
+    quote: "Orlando and Denson were charged with murder"
+  - says: "A jury convicted them of negligent homicide, a misdemeanor."
+    source: 1
+    quote: "They convicted Denson and Orlando of negligent homicide and sentenced them to probation with a fine of one dollar. It amounted to no more than a misdemeanor."
+  - says: "A jury convicted them of negligent homicide, a misdemeanor."
+    source: 2
+    quote: "Denson and Orlando were charged with murder but were later found guilty by an all-white jury of negligent homicide, also a misdemeanor."
+  - says: "Their sentence was probation, and a fine of one dollar."
+    source: 2
+    quote: "Orlando and Denson were sentenced to probation and fined $1."
+  - says: "A federal jury later found three officers guilty of violating his civil rights."
+    source: 1
+    quote: "Denson, Orlando, and Janish were found guilty of violating Torres’s rights."
+  - says: "Each got a year and a day."
+    source: 2
+    quote: "the three were sentenced to a year and a day in prison after being found guilty in a January 1978 federal trial."
+  - says: "A year after his death, a crowd at Moody Park, on the north side, clashed with police, and the night ended in a riot."
+    source: 1
+    quote: "On May 7, 1978, a year after the arrest, beating, and murder of Joe Torres, hundreds of people"
+  - says: "A year after his death, a crowd at Moody Park, on the north side, clashed with police, and the night ended in a riot."
+    source: 2
+    quote: "But they turned violent in May 1978 when residents celebrated Cinco de Mayo and protested against police brutality at Moody Park in the Near Northside."
+  - says: "In twenty twenty one, Houston's police chief apologized to his family."
+    source: 1
+    quote: "On June 27, 2021, the new Houston police chief, Troy Finner, apologized to the Torres family for Joe Torres’s murder"
+  - says: "He called it a straight up murder."
+    source: 2
+    quote: "In 2021, then-Police Chief Troy Finner publicly apologized to Torres’ relatives and called the veteran’s killing “a straight-up murder.”"
+  - says: "The city has since put his name on a plaza and a trail beside this water."
+    source: 3
+    quote: "In 2022, the city dedicated a plaza, a mural and a trail along Buffalo Bayou in his honor, right near the hole where he drowned."
+sources:
+  - title: "Torres, Joe Campos (Jesús Jesse Esparza)"
+    publisher: "Handbook of Texas Online, Texas State Historical Association"
+    url: https://www.tshaonline.org/handbook/entries/torres-joe-campos
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Joe Campos Torres walk retraces Houston veteran's fatal beating by HPD (Jhair Romero, 25 May 2024)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/news/houston-texas/article/joe-campos-torres-walk-retraces-houston-19457588.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Remembering Houston's Joe Campos Torres and the 1978 Moody Park riot (Jhair Romero, 5 May 2026)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/explained/article/remembering-houston-s-joe-campos-torres-1978-22242028.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

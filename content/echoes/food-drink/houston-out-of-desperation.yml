@@ -1,0 +1,120 @@
+# Drafted by Claude Code (2026-11-11) for Houston, East End (Second Ward): food and drink. Second pass.
+# Listening spot: outside the Original Ninfa's on Navigation, 2704 Navigation Boulevard, in the building where Ninfa and Tommy Laurenzo ran their tortilla company from 1949 and where she opened her restaurant in 1973 (Handbook of Texas; Houston Chronicle, 2014).
+# Position: Overture place "The Original Ninfa's on Navigation", 2704 Navigation Blvd, 29.75702, -95.34252 (high confidence for the building). No other echo within 300 m.
+id: houston-out-of-desperation
+title: "Out of Desperation"
+summary: "In 1973 a widow turned the front of her failing tortilla factory into a ten table restaurant. Its tacos al carbon made the fajita famous."
+place: "Original Ninfa's on Navigation, 2704 Navigation Boulevard, East End, Houston, Texas"
+at: { lat: 29.75702, lng: -95.34252 }
+triggerRadiusKm: 0.05
+category: food-drink
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, east-end, navigation-boulevard, ninfas, mama-ninfa, tex-mex, fajitas, food]
+teaser: "The banks said no. So she borrowed from a friend in Mexico and opened ten tables."
+script: |
+  Look at the building on Navigation Boulevard. Before it was a famous restaurant, it was a tortilla factory. And it was failing.
+
+  The restaurant was a last resort.
+
+  Ninfa Rodriguez grew up in the Rio Grande Valley. She married Tommy Laurenzo, a Rhode Island man of Italian descent, and in nineteen forty nine they started a company in this building. Tortillas, and pizza dough. Her heritage, and his.
+
+  In nineteen sixty nine, Tommy died suddenly. She was a widow with five children, and the business was losing money.
+
+  The banks in Houston turned her down for a loan. She borrowed from a friend in Mexico instead. In the summer of nineteen seventy three, she turned the front of the factory into a little restaurant. Ten tables. Her daughter waited on them the first day.
+
+  On the menu was beef, char grilled and folded into soft flour tortillas. Tacos al carbon. The world would come to call them fajitas.
+
+  When we opened this restaurant, her daughter said, it was out of desperation. We were in survival mode.
+
+  Within a few years there were a dozen Ninfa's, and more. Movie stars came, and a future president. Then the chain grew too fast, and the family lost it.
+
+  Look at the front of the building again.
+
+  She didn't invent it, her daughter said. But nobody had it on the menu until the restaurant.
+
+pronunciations:
+  - written: Ninfa
+    say: NEEN-fah
+  - written: Laurenzo
+    say: lor-EN-zo
+  - written: tacos al carbon
+    say: TAH-kohs ahl kar-BOHN
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Before it was a famous restaurant, it was a tortilla factory."
+    source: 1
+    quote: "In 1973 she converted the front of the factory into a ten-table restaurant—Ninfa’s—serving high quality Mexican food."
+  - says: "And it was failing."
+    source: 2
+    quote: "The building is where their mother, hoping to rescue a failing tortilla business, decided to turn part of the tortilla factory into a restaurant."
+  - says: "Ninfa Rodriguez grew up in the Rio Grande Valley."
+    source: 2
+    quote: "Hard work came naturally to Maria Ninfa Rodriguez, born May 11, 1924, in Harlingen and raised in the farmlands of the Rio Grande Valley."
+  - says: "She married Tommy Laurenzo, a Rhode Island man of Italian descent, and in nineteen forty nine they started a company in this building."
+    source: 2
+    quote: "It was there she met Domenic Thomas Laurenzo, a dashing Rhode Island native of Italian descent. They married in September 1946 and moved to Houston, where Ninfa had relatives; in 1949 they opened the Rio Grande Tortilla Co. in the building that would become Ninfa's."
+  - says: "Tortillas, and pizza dough."
+    source: 1
+    quote: "Combining Ninfa’s and Tommy’s heritage, the company supplied tortillas and pizza dough to restaurants."
+  - says: "In nineteen sixty nine, Tommy died suddenly."
+    source: 2
+    quote: "until Domenic Laurenzo died suddenly in 1969 of a cerebral hemorrhage."
+  - says: "She was a widow with five children, and the business was losing money."
+    source: 2
+    quote: "At age 42, Ninfa Laurenzo was a widow with five children."
+  - says: "She was a widow with five children, and the business was losing money."
+    source: 2
+    quote: "When the tortilla business began losing money, Mama Ninfa got creative."
+  - says: "The banks in Houston turned her down for a loan."
+    source: 2
+    quote: "Using money she borrowed from a friend in Mexico (after local banks turned her down for a loan), she opened the restaurant in the summer of 1973."
+  - says: "In the summer of nineteen seventy three, she turned the front of the factory into a little restaurant."
+    source: 1
+    quote: "In 1973 she converted the front of the factory into a ten-table restaurant"
+  - says: "Ten tables."
+    source: 2
+    quote: "From a little 10-table neighborhood restaurant opened on a dime sprung a global culinary phenomenon"
+  - says: "Her daughter waited on them the first day."
+    source: 2
+    quote: "Phyllis, a sophomore at the University of St. Thomas at the time, worked as a waitress that first day."
+  - says: "On the menu was beef, char grilled and folded into soft flour tortillas."
+    source: 2
+    quote: "initially presented as tacos al carbon - char-grilled beef folded into soft, handmade flour tortillas."
+  - says: "The world would come to call them fajitas."
+    source: 1
+    quote: "Laurenzo has been credited with popularizing her menu item tacos al carbón (chargrilled beef in a soft tortilla), also known as fajitas ."
+  - says: "When we opened this restaurant, her daughter said, it was out of desperation."
+    source: 2
+    quote: "\"When we opened this restaurant it was out of desperation,\" Phyllis said. \"We didn't think it was revolutionary. We were in survival mode.\""
+  - says: "Within a few years there were a dozen Ninfa's, and more."
+    source: 1
+    quote: "By 1980 Laurenzo and her family owned thirteen Ninfa’s"
+  - says: "Movie stars came, and a future president."
+    source: 2
+    quote: "Next, celebrities poured in: John Travolta, Rock Hudson, Michael Douglas, George H.W. and Barbara Bush"
+  - says: "Then the chain grew too fast, and the family lost it."
+    source: 2
+    quote: "\"There was too much expansion and too much debt,\" Phyllis explained. \"It was too fast; that's the bottom line.\""
+  - says: "Then the chain grew too fast, and the family lost it."
+    source: 1
+    quote: "In 1998 the restaurants moved out of Laurenzo ownership."
+  - says: "But nobody had it on the menu until the restaurant."
+    source: 2
+    quote: "\"What she did was introduce it,\" Phyllis said. \"She didn't invent it. But nobody had it on the menu until the restaurant.\""
+sources:
+  - title: "Laurenzo, María Ninfa Rodríguez (Meredith May)"
+    publisher: "Handbook of Texas Online, Texas State Historical Association"
+    url: https://www.tshaonline.org/handbook/entries/laurenzo-maria-ninfa-rodriguez
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Remembering Ninfa, the mother Houston called 'Mama' (Greg Morago, 9 May 2014)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/entertainment/restaurants-bars/article/remembering-ninfa-the-mother-houston-called-5466650.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

@@ -1,0 +1,132 @@
+# Drafted by Claude Code (2026-11-11) for Houston, Hermann Park and the Houston Zoo: legend over documented history. Second pass.
+# Listening spot: by the lion enclosure inside the Houston Zoo, 6200 Hermann Park Drive. Hans Nagel, the zoo's first keeper and a lion tamer, was shot in Hermann Park in November 1941 (United Press, 1941; Houston Chronicle, 2017). The legend puts his ghost near the zoo's commissary, which no source locates; the lions are chosen because he tamed them. Heard inside the zoo, which charges admission.
+# Position: Overture place "Lion Enclosure", 6200 Hermann Park Dr, 29.71288, -95.39159 (medium confidence for the enclosure). About 370 m from the kids' echo about Earl the bison at the zoo's edge.
+id: houston-the-lion-tamer
+title: "The Lion Tamer"
+summary: "Hans Nagel tamed lions, rode a zebra and survived a leopard at Houston's zoo. In 1941 a quarrel in the park killed him. Staff say he stayed."
+place: "Lion enclosure, Houston Zoo, 6200 Hermann Park Drive, Hermann Park, Houston, Texas"
+at: { lat: 29.71288, lng: -95.39159 }
+triggerRadiusKm: 0.05
+inside: true
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 95
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  Nagel's career, injuries and death are history: the Houston Chronicle (2017, drawing on the zoo's own account) and a United Press report printed in the McAllen Daily Press on 18 November 1941. The ghost is legend: the Chronicle reports staff accounts of shadows, a whisper and a figure in a doorway near the commissary, and nobody has proved them. The killing is told from the watchman's own account as the UP reported it, and the grand jury's finding is stated. The script says which part is legend.
+minAge: 12
+quality: 0.85
+tags: [houston, hermann-park, houston-zoo, hans-nagel, lions, ghosts, legend, 1941]
+teaser: "No animal in this zoo ever finished off its first keeper. A man did."
+script: |
+  Find the lions.
+
+  The first man to work lions in this zoo was a German named Hans Nagel. And the zoo, the legend goes, has never quite let him leave.
+
+  This is a legend. Here is the part that is not.
+
+  The city hired Nagel in nineteen twenty two, to run the zoo and to be its face. He put on lion taming shows every week. He rode a zebra, to win a bet. He once drove a bear all the way from Port Arthur, in the back seat of his car.
+
+  The animals fought back. An alligator bite put him in hospital for three weeks. An elephant stepped on him. A leopard opened him up. A lion called Caesar, four hundred and fifty pounds, would have killed him if his assistants had not got to him first.
+
+  He carried a pistol at his side, always.
+
+  In November, nineteen forty one, a park watchman came on Nagel by a side road in the park. By the watchman's account, Nagel had been hiding behind a bush, watching young people in a parked car. The two men argued over whose job it was to police the park. The watchman said Nagel reached for his pistol. The watchman fired six times.
+
+  Hans Nagel was forty nine. A grand jury cleared the watchman, on grounds of self defense.
+
+  Since then, staff have reported strange shadows by the zoo's commissary, said to be near where he died. A voice late at night, no louder than a whisper. A man standing in a doorway, and then not.
+
+  Look at the lions.
+
+  No animal here ever managed it.
+
+pronunciations: []
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "The first man to work lions in this zoo was a German named Hans Nagel."
+    source: 1
+    quote: "the Houston Zoo could still be haunted by its former first zookeeper and lion tamer, Hans Nagel"
+  - says: "The first man to work lions in this zoo was a German named Hans Nagel."
+    source: 1
+    quote: "Hans Nagel was a German who was employed by the city of Houston in 1922 to work at the zoo and act as the face of the park"
+  - says: "The city hired Nagel in nineteen twenty two, to run the zoo and to be its face."
+    source: 1
+    quote: "employed by the city of Houston in 1922 to work at the zoo and act as the face of the park"
+  - says: "He put on lion taming shows every week."
+    source: 1
+    quote: "His weekly lion taming shows were recommended entertainment."
+  - says: "He rode a zebra, to win a bet."
+    source: 1
+    quote: "Nagel also saddled and rode a zebra , winning a bet among friends that he could do it."
+  - says: "He once drove a bear all the way from Port Arthur, in the back seat of his car."
+    source: 1
+    quote: "He once transported a bear of undetermined size in the backseat of his car to Houston all the way from Port Arthur."
+  - says: "An alligator bite put him in hospital for three weeks."
+    source: 1
+    quote: "In 1924, he was hospitalized for three weeks from an alligator bite."
+  - says: "An elephant stepped on him."
+    source: 1
+    quote: "In 1928, he was stepped on by a 5-ton elephant."
+  - says: "A leopard opened him up."
+    source: 1
+    quote: "In 1931, he was opened by a leopard."
+  - says: "A lion called Caesar, four hundred and fifty pounds, would have killed him if his assistants had not got to him first."
+    source: 1
+    quote: "Later, Caesar, a 450-pound lion, would have killed Nagel but for the quick rescue efforts of his assistants."
+  - says: "He carried a pistol at his side, always."
+    source: 1
+    quote: "Nagel carried a pistol at his side at all times"
+  - says: "In November, nineteen forty one, a park watchman came on Nagel by a side road in the park."
+    source: 2
+    quote: "HOUBTON, Nov. 18 —(UP)— Harold M. Warren, 34, park watch man, faced a murder cherge today after he shot and killed Hans Nagel, 49, city zookeeper"
+  - says: "In November, nineteen forty one, a park watchman came on Nagel by a side road in the park."
+    source: 2
+    quote: "during a scuffle with the zcokeever on a side road in Hermarn Park."
+  - says: "By the watchman's account, Nagel had been hiding behind a bush, watching young people in a parked car."
+    source: 2
+    quote: "Warren said they had argued over Nagel's watching the two youths and the girl who were sit ting in a parked car. Nagel hsd been hiding behind a bush, he said."
+  - says: "The two men argued over whose job it was to police the park."
+    source: 2
+    quote: "The watchman szid it was his duty and not Nagel's to patrol the park"
+  - says: "The two men argued over whose job it was to police the park."
+    source: 1
+    quote: "the officer directed Nagel to his patrol car for a trip downtown to discuss \"whose business it was policing the park.\""
+  - says: "The watchman said Nagel reached for his pistol."
+    source: 2
+    quote: "Warren, Satterwhite and William said that Nagel had tried to draw his pistol from his holster"
+  - says: "The watchman fired six times."
+    source: 2
+    quote: "Warren shol him eix times in the head and body."
+  - says: "The watchman fired six times."
+    source: 1
+    quote: "But the officer drew first and Nagel was felled by six shots."
+  - says: "Hans Nagel was forty nine."
+    source: 2
+    quote: "Hans Nagel, 49, city zookeeper"
+  - says: "A grand jury cleared the watchman, on grounds of self defense."
+    source: 1
+    quote: "A grand jury later acquitted the officer, citing self defense."
+  - says: "Since then, staff have reported strange shadows by the zoo's commissary, said to be near where he died."
+    source: 1
+    quote: "Some say that at night the ghost of Nagel haunts the Houston Zoo's commissary -- which wasn't there when he died -- where employees have reported eerie happenings and strange shadows. Word is that the commissary is not too far from where Nagel was killed."
+  - says: "A voice late at night, no louder than a whisper."
+    source: 1
+    quote: "A few reports have his voice heard late at night, no louder than a whisper."
+  - says: "A man standing in a doorway, and then not."
+    source: 1
+    quote: "He's been seen by zoo staff standing against doorways only to quickly disappear."
+sources:
+  - title: "Is the Houston Zoo haunted by the ghost of a former daredevil zookeeper? (Craig Hlavaty, 11 October 2017)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/news/houston-texas/houston/article/Is-Houston-Zoo-haunted-by-ghost-of-a-zookeeper-5853053.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "McAllen Daily Press, 18 November 1941, page 1: Hans Nagel Killed During Argument Over Watching Parked Cars (United Press)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86089716/1941-11-18/ed-1/?sp=1
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

@@ -1,0 +1,122 @@
+# Drafted by Claude Code (2026-11-11) for Houston, First Ward: legend over documented history. Second pass.
+# Listening spot: the public sidewalk on Elder Street outside the old Jefferson Davis Hospital, now the Elder Street Artist Lofts, 1101 Elder Street, built in 1924 over the 1840 Houston City Cemetery (Texas Historical Commission marker, Atlas 5507015523; Handbook of Texas). It is now homes: the echo is heard from the street.
+# Position: Overture place "Elder Street Artist Lofts", 1101 Elder St, 29.76872, -95.36794 (high confidence for the building). No other echo within 250 m.
+id: houston-the-basement-above-ground
+title: "The Basement Above Ground"
+summary: "Houston's old charity hospital was built in 1924 over a city cemetery whose graves were never moved. So its basement sits above the ground."
+place: "Old Jefferson Davis Hospital (Elder Street Artist Lofts), 1101 Elder Street, First Ward, Houston, Texas"
+at: { lat: 29.76872, lng: -95.36794 }
+triggerRadiusKm: 0.06
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 92
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The cemetery, the graves left in place, the raised basement and the hospital's history are documented by the Texas Historical Commission marker and the Handbook of Texas, and the Houston Chronicle (2013) reports thousands of graves on the site. The haunting is legend: the Chronicle reports the building's reputation and the claim that soldiers, doctors, nurses and patients walk it, and nobody has proved it. The script says which part is which.
+minAge: 0
+quality: 0.85
+tags: [houston, first-ward, jefferson-davis-hospital, elder-street-lofts, cemetery, ghosts, legend]
+teaser: "The basement of this hospital is above the ground. The ground was already taken."
+script: |
+  Look at the old brick hospital on its rise, with the columns at its front door. Now look at the bottom floor.
+
+  It is not below ground. The basement was built above it.
+
+  Because the ground was already full.
+
+  The building is history. The ghosts are legend. Here is the history first.
+
+  From eighteen forty, this hill was the Houston City Cemetery. It took the dead until the eighteen eighties. Confederate soldiers lie here, and victims of yellow fever. Thousands of graves.
+
+  In nineteen twenty four, the city and the county built a charity hospital on top of it. There was no widespread removal of the graves. So the builders went up, instead of down.
+
+  At the request of Confederate veterans and their families, it was named for Jefferson Davis, for the men in the ground beneath it.
+
+  It was a hospital for only thirteen years. Then a psychiatric hospital. A juvenile detention ward. A food stamp office. A records store. Then nothing. For years it stood empty and fenced off, rotting in plain view of the freeway.
+
+  That is when the talk began. Soldiers in the wards, people say. Doctors, nurses and patients. Nobody has proved any of it.
+
+  In two thousand five, the old hospital became homes for artists. A spokeswoman said the ghosts had been replaced by muses.
+
+  Look at the bottom floor again.
+
+  The basement is above ground. The cemetery is not.
+
+pronunciations: []
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "The basement was built above it."
+    source: 1
+    quote: "As there was no widespread removal of graves from the site, the building’s basement was erected above ground."
+  - says: "From eighteen forty, this hill was the Houston City Cemetery."
+    source: 1
+    quote: "was built atop the 1840 Houston City Cemetery, which was active until the 1880s."
+  - says: "It took the dead until the eighteen eighties."
+    source: 1
+    quote: "the 1840 Houston City Cemetery, which was active until the 1880s."
+  - says: "Confederate soldiers lie here, and victims of yellow fever."
+    source: 4
+    quote: "Elder Street Artist Lofts was once Jefferson Davis Hospital, which was built on top of a cemetery where Confederate soldiers and yellow fever victims were buried."
+  - says: "Thousands of graves."
+    source: 3
+    quote: "it had to be surveyed to ensure that none of the thousands of graves there would be disturbed."
+  - says: "In nineteen twenty four, the city and the county built a charity hospital on top of it."
+    source: 2
+    quote: "The Jefferson Davis Memorial Hospital was built in 1924 on the grounds of the 1840 Houston City Cemetery and without any extensive or systematic removal of the graves."
+  - says: "In nineteen twenty four, the city and the county built a charity hospital on top of it."
+    source: 2
+    quote: "Financed by both the city and county, the new hospital opened on April 6, 1925"
+  - says: "There was no widespread removal of the graves."
+    source: 1
+    quote: "As there was no widespread removal of graves from the site"
+  - says: "At the request of Confederate veterans and their families, it was named for Jefferson Davis, for the men in the ground beneath it."
+    source: 1
+    quote: "At the request of Confederate veterans and their families, the hospital was named for the former President of the Confederate States of America, in honor of the many Confederate veterans buried here."
+  - says: "It was a hospital for only thirteen years."
+    source: 1
+    quote: "The hospital served its intended purpose for only thirteen years"
+  - says: "A juvenile detention ward."
+    source: 1
+    quote: "served multiple purposes including a psychiatric hospital, juvenile detention ward, food stamp distribution center and records storage facility."
+  - says: "For years it stood empty and fenced off, rotting in plain view of the freeway."
+    source: 3
+    quote: "For years it stood rotting, a hulking shell of its former self, clearly visible from the freeway near downtown"
+  - says: "For years it stood empty and fenced off, rotting in plain view of the freeway."
+    source: 3
+    quote: "All the county did was fence it off and walk away."
+  - says: "That is when the talk began."
+    source: 3
+    quote: "It gained a reputation for being haunted, inhabited by the spirts of those buried beneath it"
+  - says: "Doctors, nurses and patients."
+    source: 4
+    quote: "It is said to be haunted by soldiers, doctors, nurses and patients."
+  - says: "In two thousand five, the old hospital became homes for artists."
+    source: 1
+    quote: "After several years standing vacant, the historic building was rehabilitated into residential lofts in 2005."
+  - says: "A spokeswoman said the ghosts had been replaced by muses."
+    source: 4
+    quote: "A spokeswoman says the ghosts have been replaced by muses."
+sources:
+  - title: "Jefferson Davis Hospital, historical marker, Atlas Number 5507015523 (Recorded Texas Historic Landmark, 2008)"
+    publisher: "Texas Historical Commission, Atlas"
+    url: https://atlas.thc.texas.gov/Details/5507015523
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Jefferson Davis Hospital (Allison Taffet)"
+    publisher: "Handbook of Texas Online, Texas State Historical Association"
+    url: https://www.tshaonline.org/handbook/entries/jefferson-davis-hospital
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Old Jeff Davis Hospital gets long-term protection (Tony Freemantle, 24 November 2013)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/news/columnists/chronicles/article/Old-Jeff-Davis-Hospital-gets-long-term-protection-5008444.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Skip the fake haunted houses and visit some of Houston's really 'haunted' places (Heather Leighton, 16 October 2017)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/news/houston-texas/houston/article/Houston-s-most-haunted-places-12282510.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

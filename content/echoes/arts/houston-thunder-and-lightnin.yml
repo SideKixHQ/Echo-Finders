@@ -1,0 +1,110 @@
+# Drafted by Claude Code (2026-11-11) for Houston, Third Ward: arts (music). Second pass.
+# Listening spot: at the Texas Historical Commission marker "Sam (Lightnin') Hopkins", 3405 Dowling Street (Atlas 5507016469, 2010), on the street, renamed Emancipation Avenue in 2017 (Houston Chronicle), where Hopkins played the Third Ward clubs.
+# Position: the marker's UTM (15 271176 3291571) converts to 29.73324, -95.36587 (high confidence for the marker). No other echo within 250 m; the Emancipation Park echoes are farther north.
+id: houston-thunder-and-lightnin
+title: "Thunder and Lightnin'"
+summary: "Lightnin' Hopkins played Carnegie Hall and for the Queen. For more than thirty years he kept coming back to this Third Ward street."
+place: "Sam (Lightnin') Hopkins marker, 3405 Emancipation Avenue (formerly Dowling Street), Third Ward, Houston, Texas"
+at: { lat: 29.73324, lng: -95.36587 }
+triggerRadiusKm: 0.05
+category: arts
+format: short
+durationS: 86
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, third-ward, dowling-street, emancipation-avenue, lightnin-hopkins, blues, music]
+teaser: "He played Carnegie Hall. He kept coming back to the corner."
+script: |
+  Read the street sign. Emancipation Avenue. Until twenty seventeen, this was Dowling Street.
+
+  A bluesman who played Carnegie Hall kept coming back to the corners of this street.
+
+  Sam Hopkins was born in Centerville, Texas. At eight he made his first guitar, out of a cigar box, with chicken wire for strings. As a boy he played with Blind Lemon Jefferson, who told him to keep at it.
+
+  In the nineteen forties he settled in Houston, and became a fixture of the Third Ward clubs, on this street and around it. In nineteen forty six a record company sent him to Los Angeles. The piano player at the session was called Thunder Smith. Thunder, and Lightnin'. The name stuck.
+
+  He made hits. He recorded for nearly twenty labels, sometimes for one while under contract to another. In the sixties he played Carnegie Hall. Later he played for Queen Elizabeth.
+
+  And all along, he kept playing here. Dance parties. Street corners. The bars of Dowling Street.
+
+  After a car crash in nineteen seventy, many of his shows were on his own front porch, or at a bar near his house.
+
+  He died in Houston in nineteen eighty two. More than four thousand people came to his funeral.
+
+  Look along the avenue.
+
+  Carnegie Hall had him for a night. This street had him for thirty years.
+
+pronunciations: []
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Until twenty seventeen, this was Dowling Street."
+    source: 3
+    quote: "City Council unanimously approved changing the name from Dowling Street"
+  - says: "Until twenty seventeen, this was Dowling Street."
+    source: 3
+    quote: "Updated Jan 11, 2017"
+  - says: "Sam Hopkins was born in Centerville, Texas."
+    source: 1
+    quote: "Sam (Lightnin’) Hopkins, blues singer and guitarist, was born in Centerville, Texas"
+  - says: "Sam Hopkins was born in Centerville, Texas."
+    source: 2
+    quote: "African American blues singer and guitarist Sam Hopkins was born in Centerville, Leon County, Texas in 1912"
+  - says: "At eight he made his first guitar, out of a cigar box, with chicken wire for strings."
+    source: 1
+    quote: "At age eight he made his first instrument, a cigar-box guitar with chicken-wire strings."
+  - says: "As a boy he played with Blind Lemon Jefferson, who told him to keep at it."
+    source: 1
+    quote: "By ten he was playing music with his cousin, Texas Alexander, and Blind Lemon Jefferson , who encouraged him to continue."
+  - says: "In the nineteen forties he settled in Houston, and became a fixture of the Third Ward clubs, on this street and around it."
+    source: 2
+    quote: "Hopkins traveled throughout the south for many years but ultimately settled in Houston in the mid-1940s. He became a mainstay of Houston’s Third Ward music clubs, especially those located on and around Dowling Street."
+  - says: "In nineteen forty six a record company sent him to Los Angeles."
+    source: 2
+    quote: "Hopkins was “discovered” by an Aladdin Records talent scout in 1946 and was sent to Los Angeles for his first recording sessions."
+  - says: "The piano player at the session was called Thunder Smith."
+    source: 1
+    quote: "On the record was a piano player named Wilson (Thunder) Smith; by chance he combined well with Sam to give him his nickname, Lightnin’."
+  - says: "He recorded for nearly twenty labels, sometimes for one while under contract to another."
+    source: 1
+    quote: "Over his career Hopkins recorded for nearly twenty different labels, including Gold Star Records in Houston. On occasion he would record for one label while under contract to another."
+  - says: "In the sixties he played Carnegie Hall."
+    source: 1
+    quote: "During the early 1960s he played at Carnegie Hall with Pete Seeger and Joan Baez"
+  - says: "Later he played for Queen Elizabeth."
+    source: 1
+    quote: "During a tour of Europe in the 1970s, he played for Queen Elizabeth II at a command performance."
+  - says: "And all along, he kept playing here."
+    source: 2
+    quote: "Despite recording success, Hopkins continued to play and sing at Houston dance parties, street corners, and Dowling Street establishments."
+  - says: "After a car crash in nineteen seventy, many of his shows were on his own front porch, or at a bar near his house."
+    source: 1
+    quote: "But after a 1970 car crash, many of the concerts he performed were on his front porch or at a bar near his house."
+  - says: "He died in Houston in nineteen eighty two."
+    source: 1
+    quote: "Hopkins died of cancer of the esophagus on January 30, 1982, in Houston."
+  - says: "More than four thousand people came to his funeral."
+    source: 1
+    quote: "His funeral was attended by more than 4,000, including fans and musicians."
+  - says: "This street had him for thirty years."
+    source: 1
+    quote: "In 1950 he settled in Houston, but he continued to tour the country periodically."
+sources:
+  - title: "Hopkins, Sam [Lightnin'] (Alan Lee Haworth)"
+    publisher: "Handbook of Texas Online, Texas State Historical Association"
+    url: https://www.tshaonline.org/handbook/entries/hopkins-sam-lightnin
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Sam (Lightnin') Hopkins, historical marker, Atlas Number 5507016469 (2010)"
+    publisher: "Texas Historical Commission, Atlas"
+    url: https://atlas.thc.texas.gov/Details/5507016469
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Council changes Dowling Street to Emancipation Avenue (Mike Morris, 11 January 2017)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/news/politics/houston/article/Council-changes-Dowling-Street-to-Emancipation-10851447.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

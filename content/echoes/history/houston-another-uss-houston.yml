@@ -1,0 +1,121 @@
+# Drafted by Claude Code (2026-11-11) for Houston, Downtown: history (military, World War II). Second pass.
+# Listening spot: the 900 block of Main Street, where the Houston Volunteers lined up to be sworn into the Navy on Memorial Day, 30 May 1942, to replace the crew of the sunken cruiser USS Houston (Houston Chronicle, 2017 editorial and photo caption).
+# Position: Overture places at 901 to 917 Main St cluster at 29.7573, -95.3643 (high confidence for the block; the swearing-in filled the street, so no closer point exists). About 250 m from the Capitol echo at Main and Texas.
+id: houston-another-uss-houston
+title: "Another USS Houston"
+summary: "When the cruiser USS Houston sank in 1942, the city asked for a thousand men to replace her crew. More than three thousand answered."
+place: "900 block of Main Street, Downtown Houston, Texas"
+at: { lat: 29.75730, lng: -95.36430 }
+triggerRadiusKm: 0.07
+category: history
+format: short
+durationS: 100
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.9
+tags: [houston, downtown, main-street, uss-houston, navy, world-war-ii, military, houston-volunteers, 1942]
+teaser: "The city asked for a thousand men. More than three thousand answered."
+script: |
+  Stand on Main Street, in the nine hundred block, and look along it.
+
+  One Saturday afternoon in nineteen forty two, a photographer climbed out onto the sign of a movie theater on this block, just to get it all into his picture.
+
+  A few months before, at the turn of February into March, the cruiser USS Houston had gone down in a night battle in the Sunda Strait, off Java. Back home, people knew only that their city's ship was lost. Nobody knew what had become of her crew.
+
+  The Navy said it would give the name to a new cruiser. So the city set itself a goal. A thousand men, to take the place of the crew they had lost.
+
+  On Memorial Day, the volunteers lined up along this block to be sworn in. The crowd downtown was put at a hundred and fifty thousand. By the Chronicle's count, more than three thousand men answered.
+
+  A fifty three year old logger, William Harrison Watson, tried to sign up. He was turned away for his age and his eyesight. His four sons took the oath instead.
+
+  The mayor read the crowd a letter from President Roosevelt. Our enemies have given us the chance to prove, he wrote, that there will be another USS Houston.
+
+  Then the city raised the money to build her. Enough for the new Houston, and for an aircraft carrier besides, the San Jacinto.
+
+  What nobody on this street knew was that nearly three hundred of the first crew had lived. They were prisoners, forced to build a railway through the jungle between Burma and Thailand.
+
+  Look along the block.
+
+  They were replacing men who were still alive.
+
+pronunciations: []
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "One Saturday afternoon in nineteen forty two, a photographer climbed out onto the sign of a movie theater on this block, just to get it all into his picture."
+    source: 1
+    quote: "The Houston men lined the 900 block of Main Street to be sworn in. Houston photographer Edward Bourdon climbed out on the Kirby Movie Theatre sign to get the photo, which ran in Life Magazine."
+  - says: "One Saturday afternoon in nineteen forty two, a photographer climbed out onto the sign of a movie theater on this block, just to get it all into his picture."
+    source: 1
+    quote: "And on a Saturday afternoon, an estimated 150,000 people packed downtown Houston's streets to see them off."
+  - says: "A few months before, at the turn of February into March, the cruiser USS Houston had gone down in a night battle in the Sunda Strait, off Java."
+    source: 1
+    quote: "On the night of March 1, 1942, the USS Houston and Australia's HMAS Perth sank during a ferocious fight with Japanese naval forces. The Battle of Sunda Strait claimed the lives of 700 of the Houston's 1,068 crewmen."
+  - says: "A few months before, at the turn of February into March, the cruiser USS Houston had gone down in a night battle in the Sunda Strait, off Java."
+    source: 2
+    quote: "It was Feb. 28, 1942, shortly before midnight. The Houston and the Australian light cruiser HMAS Perth were steaming through Sunda Strait"
+  - says: "A few months before, at the turn of February into March, the cruiser USS Houston had gone down in a night battle in the Sunda Strait, off Java."
+    source: 3
+    quote: "was renamed Houston after the heavy cruiser USS Houston had been sunk in the western Pacific in February 1942."
+  - says: "Back home, people knew only that their city's ship was lost."
+    source: 1
+    quote: "At the time, Houstonians knew only that their city's namesake ship had been lost at sea; the fate of her crew was a mystery."
+  - says: "The Navy said it would give the name to a new cruiser."
+    source: 2
+    quote: "Navy Secretary Frank Knox announced that a sleek new light cruiser under construction at Newport News, Va., would be christened the Houston."
+  - says: "A thousand men, to take the place of the crew they had lost."
+    source: 1
+    quote: "Ask for 1,000 volunteers to replace the lost ship's crew by joining the Navy at an outdoor ceremony in downtown Houston."
+  - says: "A thousand men, to take the place of the crew they had lost."
+    source: 3
+    quote: "The city also enlisted 1,000 Houston volunteers who served in a variety of naval assignments."
+  - says: "On Memorial Day, the volunteers lined up along this block to be sworn in."
+    source: 1
+    quote: "In a stirring display of patriotism in May 30, 1942, 1,000 Houston men volunteered for World War II naval duty after the Japanese sank the USS Houston. The Houston men lined the 900 block of Main Street to be sworn in."
+  - says: "The crowd downtown was put at a hundred and fifty thousand."
+    source: 2
+    quote: "On Memorial Day 1942, more than 150,000 gathered downtown on Main; more than 3,000 volunteered."
+  - says: "By the Chronicle's count, more than three thousand men answered."
+    source: 1
+    quote: "They asked for 1,000 men, but more than 3,000 answered the call."
+  - says: "A fifty three year old logger, William Harrison Watson, tried to sign up."
+    source: 2
+    quote: "a 53-year-old logger named William Harrison Watson who tried to sign up but was turned away because of his age and poor eyesight. His four sons took the oath instead."
+  - says: "His four sons took the oath instead."
+    source: 2
+    quote: "His four sons took the oath instead."
+  - says: "The mayor read the crowd a letter from President Roosevelt."
+    source: 2
+    quote: "Houston Mayor Neal Pickett read a letter to the crowd from President Roosevelt."
+  - says: "Our enemies have given us the chance to prove, he wrote, that there will be another USS Houston."
+    source: 2
+    quote: "\"Our enemies have given us the chance to prove that there will be another USS Houston,\" he wrote"
+  - says: "Enough for the new Houston, and for an aircraft carrier besides, the San Jacinto."
+    source: 3
+    quote: "The citizens of Houston, through the purchase of war bonds, subscribed sufficient funds for the construction of the new Houston as well as for a light aircraft carrier, the USS San Jacinto ."
+  - says: "Enough for the new Houston, and for an aircraft carrier besides, the San Jacinto."
+    source: 1
+    quote: "They ended up with enough money not only to build the new Houston, but also to build an aircraft carrier christened the USS San Jacinto."
+  - says: "What nobody on this street knew was that nearly three hundred of the first crew had lived."
+    source: 2
+    quote: "What no one back home realized in 1942 is that nearly 300 of the men aboard the Houston survived"
+  - says: "They were prisoners, forced to build a railway through the jungle between Burma and Thailand."
+    source: 2
+    quote: "they became slaves forced to build by hand a railway linking Burma and Thailand through impossible jungle terrain."
+sources:
+  - title: "Duty called (editorial, 28 May 2017)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/opinion/editorials/article/Duty-called-11179580.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Dwindling USS Houston survivors owed a debt of gratitude (Joe Holley, Native Texan, 5 September 2014)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/news/columnists/native-texan/article/Dwindling-USS-Houston-survivors-owed-a-debt-of-5737066.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Houston (the light cruiser USS Houston, launched 1943) (Art Leatherwood)"
+    publisher: "Handbook of Texas Online, Texas State Historical Association"
+    url: https://www.tshaonline.org/handbook/entries/houston-QTH03
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

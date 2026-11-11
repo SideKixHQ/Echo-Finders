@@ -1,0 +1,101 @@
+# Drafted by Claude Code (2026-11-11) for Houston, Downtown and Market Square: legend. Second pass.
+# Listening spot: outside La Carafe, in the Kennedy Bakery building, 813 Congress Street (Texas Historical Commission marker, Atlas 5201010712). The Chronicle gives 815 Congress; the THC marker and Overture give 813.
+# Position: Overture place "La Carafe", 813 Congress St, 29.76306, -95.36189; the THC marker's UTM (15 271621 3294873) converts to 29.76310, -95.36197 (high confidence). About 93 m from the doughnut window echo on Preston.
+id: houston-hold-the-rail
+title: "Hold the Rail"
+summary: "La Carafe, in an 1860 bakery, is called Houston's oldest bar. Its regulars give it a ghost for every floor, including one on the stairs."
+place: "La Carafe, Kennedy Bakery building, 813 Congress Street, Market Square, Houston, Texas"
+at: { lat: 29.76306, lng: -95.36189 }
+triggerRadiusKm: 0.05
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 80
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The ghosts are legend. The building, the baker and his dates come from the Texas Historical Commission's marker; the cast of ghosts, the claim that John Kennedy was shot outside the door and the manager's words come from the Houston Chronicle (2017). The marker gives Kennedy's years and says nothing of how he died, and this session found no record that he was shot. The script says so out loud.
+minAge: 0
+quality: 0.8
+tags: [houston, downtown, market-square, la-carafe, kennedy-bakery, bars, ghosts, legend]
+teaser: "Houston's oldest bar comes with a ghost for every floor. Mind the one on the stairs."
+script: |
+  Find the two storey brick building at eight thirteen Congress. Inside is a bar called La Carafe.
+
+  It is one of the oldest buildings in Houston still standing where it was built. And by the telling of the people who work in it, it is not empty when it should be.
+
+  This is a legend. Take it as one.
+
+  An Irish baker named John Kennedy came to Houston in eighteen forty two. Around eighteen sixty he had this building put up, for a steam bakery. It stayed in his family until nineteen seventy.
+
+  Now it is called the oldest bar in Houston.
+
+  Its regulars have given it a whole cast of ghosts. John Kennedy himself, they say, shot and killed outside this door. A bartender called Carl. A boy who plays upstairs. And a woman on the stairs, who pushes beautiful women down them.
+
+  The state historical marker for this building gives Kennedy's years, eighteen nineteen to eighteen seventy eight. It says nothing about how he died.
+
+  A manager once told a reporter what he had seen. Doors open by themselves. You think you see people walk by. There are noises. Things fly off the walls.
+
+  Look at the door, and the stairs behind it.
+
+  If you go up, hold the rail.
+
+pronunciations:
+  - written: La Carafe
+    say: lah kuh-RAFF
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Find the two storey brick building at eight thirteen Congress."
+    source: 1
+    quote: "One of the oldest structures in the city on its original site, the two-story brick building remained in the Kennedy family until 1970."
+  - says: "Find the two storey brick building at eight thirteen Congress."
+    source: 1
+    quote: "Address 813 Congress"
+  - says: "It is one of the oldest buildings in Houston still standing where it was built."
+    source: 1
+    quote: "One of the oldest structures in the city on its original site"
+  - says: "An Irish baker named John Kennedy came to Houston in eighteen forty two."
+    source: 1
+    quote: "Irish native John Kennedy (1819-78) came to Houston in 1842. A baker"
+  - says: "Around eighteen sixty he had this building put up, for a steam bakery."
+    source: 1
+    quote: "commissioning the construction of this building about 1860 for a steam bakery."
+  - says: "It stayed in his family until nineteen seventy."
+    source: 1
+    quote: "the two-story brick building remained in the Kennedy family until 1970."
+  - says: "Now it is called the oldest bar in Houston."
+    source: 2
+    quote: "La Carafe, 815 Congress, is the oldest bar in Houston and one of the oldest commercial buildings."
+  - says: "John Kennedy himself, they say, shot and killed outside this door."
+    source: 2
+    quote: "Watch out for ghosts of John Kennedy (not related to the president), a former owner who was shot and killed outside the door"
+  - says: "A bartender called Carl."
+    source: 2
+    quote: "Carl, a former bartender"
+  - says: "A boy who plays upstairs."
+    source: 2
+    quote: "a playful boy upstairs"
+  - says: "And a woman on the stairs, who pushes beautiful women down them."
+    source: 2
+    quote: "and a woman, who pushes beautiful women down stairs."
+  - says: "The state historical marker for this building gives Kennedy's years, eighteen nineteen to eighteen seventy eight."
+    source: 1
+    quote: "Irish native John Kennedy (1819-78)"
+  - says: "A manager once told a reporter what he had seen."
+    source: 2
+    quote: "Gavin Connor, the manager, says: \"We've seen numerous things here at La Carafe. Doors open by themselves. You think you see people walk by. There are noises. Things fly off the walls.''"
+  - says: "Doors open by themselves."
+    source: 2
+    quote: "Doors open by themselves. You think you see people walk by. There are noises. Things fly off the walls."
+sources:
+  - title: "The Kennedy Bakery, historical marker, Atlas Number 5201010712 (Recorded Texas Historic Landmark, 1980)"
+    publisher: "Texas Historical Commission, Atlas"
+    url: https://atlas.thc.texas.gov/Details/5201010712
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Skip the fake haunted houses and visit some of Houston's really 'haunted' places (Heather Leighton, 16 October 2017)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/news/houston-texas/houston/article/Houston-s-most-haunted-places-12282510.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

@@ -1,0 +1,109 @@
+# Drafted by Claude Code (2026-11-11) for Houston, south of the University of Houston: inspo (creation). Second pass.
+# Listening spot: outside SugarHill Recording Studios, 5626 Brock Street, founded by Bill Quinn in 1941 and called Gold Star Studios from 1950 (Handbook of Texas; Houston Chronicle, 2015). The studio is a working business behind a fence: heard from the street.
+# Place evidence is "building": the Chronicle puts the gold star in the floor of Studio B, in this building, and names Hopkins, the Big Bopper, Freddy Fender and Beyonce as having recorded there. The Handbook does not say whether every Gold Star session it lists happened at this address, so the script names the studio, not the room, for those.
+# Position: Overture place "Sugar Hill Recording Studios", 5626 Brock St, 29.70797, -95.32496 (high confidence for the building). About 1.1 km from the Orange Show echo.
+id: houston-the-star-under-the-rug
+title: "The Star Under the Rug"
+summary: "Behind a fence on Brock Street is a studio where Lightnin' Hopkins, the Big Bopper and Beyonce recorded over a gold star in the floor."
+place: "SugarHill Recording Studios (formerly Gold Star Studios), 5626 Brock Street, Houston, Texas"
+at: { lat: 29.70797, lng: -95.32496 }
+triggerRadiusKm: 0.05
+category: inspo
+inspo:
+  kind: creation
+  evidence: building
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, sugarhill-studios, gold-star-studios, music, recording, big-bopper, lightnin-hopkins, willie-nelson]
+teaser: "The Big Bopper recorded behind this fence. So did Destiny's Child."
+script: |
+  Look past the chain link fence, at the low buildings behind it. Five of them, fused together over the years into one.
+
+  It looks like nothing much. It is said to be the oldest recording studio in the country still running.
+
+  In nineteen forty one, a man named Bill Quinn opened a recording studio in Houston. By nineteen fifty he called it Gold Star.
+
+  Lightnin' Hopkins cut dozens of songs for him. George Jones recorded Why Baby Why. J. P. Richardson, the Big Bopper, had a huge hit with Chantilly Lace. And in nineteen fifty nine, a young Willie Nelson made some of his earliest recordings at Gold Star, among them the first version of Night Life.
+
+  Then came Clifton Chenier, the king of zydeco. The Sir Douglas Quintet, with She's About a Mover. The Thirteenth Floor Elevators. In the seventies the studio was renamed SugarHill, and Freddy Fender recorded Wasted Days and Wasted Nights.
+
+  Later still, Destiny's Child.
+
+  Inside this building, in Studio B, a large gold star is set into the linoleum floor. Lightnin' Hopkins, the Big Bopper, Freddy Fender and Beyonce all recorded there.
+
+  Most days, a rug covers it.
+
+  Look at the fence again.
+
+  The star is still on the floor. They just keep it under a rug.
+
+pronunciations: []
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Five of them, fused together over the years into one."
+    source: 2
+    quote: "Surrounded by a chain-link fence, five disparate buildings have been fused into a functional space that perfectly captures sound."
+  - says: "It is said to be the oldest recording studio in the country still running."
+    source: 2
+    quote: "all have recorded at the studio, which is the oldest continuously running recording studio in the country."
+  - says: "In nineteen forty one, a man named Bill Quinn opened a recording studio in Houston."
+    source: 1
+    quote: "SugarHill Recording Studios was established by producer Bill Quinn in October 1941 in Houston."
+  - says: "By nineteen fifty he called it Gold Star."
+    source: 1
+    quote: "Originally Quinn called the facility Quinn Recording, but by 1950 he had rechristened it Gold Star Studios"
+  - says: "Lightnin' Hopkins cut dozens of songs for him."
+    source: 1
+    quote: "Between 1947 and 1950, Hopkins recorded at least thirty-six songs for Quinn"
+  - says: "George Jones recorded Why Baby Why."
+    source: 1
+    quote: "George Jones recorded “Why Baby Why,”"
+  - says: "J. P. Richardson, the Big Bopper, had a huge hit with Chantilly Lace."
+    source: 1
+    quote: "J. P. “The Big Bopper” Richardson had a huge hit with “Chantilly Lace.”"
+  - says: "And in nineteen fifty nine, a young Willie Nelson made some of his earliest recordings at Gold Star, among them the first version of Night Life."
+    source: 1
+    quote: "Future country superstar Willie Nelson made some of his earliest recordings at the Gold Star Studios in 1959, including his original version of “Night Life,”"
+  - says: "Then came Clifton Chenier, the king of zydeco."
+    source: 1
+    quote: "made the key recordings (such as “Louisiana Blues” and “Zydeco Sont Pas Salé”) that established Chenier as “The King of Zydeco.”"
+  - says: "The Sir Douglas Quintet, with She's About a Mover."
+    source: 1
+    quote: "In 1965 at Gold Star Studios, legendary producer Huey P. Meaux produced the hit “She’s About a Mover” and other early tracks by Sir Douglas Quintet ."
+  - says: "The Thirteenth Floor Elevators."
+    source: 1
+    quote: "songs of the psychedelic rock genre by such bands as the 13th Floor Elevators"
+  - says: "In the seventies the studio was renamed SugarHill, and Freddy Fender recorded Wasted Days and Wasted Nights."
+    source: 1
+    quote: "In late 1971 Meaux purchased Gold Star Studios and renamed it SugarHill Recording Studios."
+  - says: "In the seventies the studio was renamed SugarHill, and Freddy Fender recorded Wasted Days and Wasted Nights."
+    source: 1
+    quote: "Freddy Fender , another of Meaux’s more successful artists, recorded such hits as “Before The Next Teardrop Falls,” “Wasted Days and Wasted Nights,”"
+  - says: "Later still, Destiny's Child."
+    source: 2
+    quote: "Destiny's Child recorded early hits at SugarHill."
+  - says: "Inside this building, in Studio B, a large gold star is set into the linoleum floor."
+    source: 2
+    quote: "Inside, a rug usually covers the large gold star inlaid in the linoleum of Studio B, where such musical luminaries as Lightnin' Hopkins, the Big Bopper, Freddy Fender and Beyonce recorded numerous hits."
+  - says: "Lightnin' Hopkins, the Big Bopper, Freddy Fender and Beyonce all recorded there."
+    source: 2
+    quote: "where such musical luminaries as Lightnin' Hopkins, the Big Bopper, Freddy Fender and Beyonce recorded numerous hits."
+  - says: "Most days, a rug covers it."
+    source: 2
+    quote: "Inside, a rug usually covers the large gold star"
+sources:
+  - title: "SugarHill Recording Studios (Roger Wood and Ray Cano, Jr.)"
+    publisher: "Handbook of Texas Online, Texas State Historical Association"
+    url: https://www.tshaonline.org/handbook/entries/sugarhill-recording-studios
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Legendary SugarHill studio opens doors for rare glimpse at music business (Andrew Dansby, 27 February 2015)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/entertainment/music/article/Legendary-SugarHill-studio-opens-doors-for-rare-6106367.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
