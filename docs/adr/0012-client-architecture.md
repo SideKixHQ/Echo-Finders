@@ -8,6 +8,19 @@
 - **Both sit on `@echofinders/core`**, which is where everything that is not pixels lives.
 - **Android later**, reusing the iOS app almost entirely.
 
+## Amended 2026-11-11: a WebView test shell, alongside the native app
+
+James chose both: a thin Expo shell that wraps the live web app
+(https://echo-finders.vercel.app/) in a WebView, so the app can be tested on a phone through
+TestFlight now, and the native React Native app above, built in parallel.
+
+- **The shell is a TestFlight test build only. It is never the App Store app.** Everything
+  in "Why not Capacitor" below still holds for what ships.
+- It lives in one component, `apps/ios/src/WebShell.tsx`, which `App.tsx` renders. The
+  native screens replace it there, and it is deleted when they have.
+- It asks for When In Use location only (no Always), the camera for the web app's camera
+  view, and the `audio` background mode so narration carries on with the screen locked.
+
 ## Why not one React Native codebase for both
 
 `react-native-web` is the obvious suggestion and it is wrong here, for three reasons that

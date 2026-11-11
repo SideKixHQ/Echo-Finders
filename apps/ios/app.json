@@ -12,7 +12,11 @@
       "buildNumber": "1",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
-        "NSLocationWhenInUseUsageDescription": "Echo Finders plays the stories of the place you are standing in, so it needs to know where you are."
+        "NSLocationWhenInUseUsageDescription": "Echo Finders plays the echoes of the place you are standing in, so it needs to know where you are.",
+        "NSCameraUsageDescription": "Echo Finders uses the camera so you can hold up your phone and see which echoes are around you.",
+        "UIBackgroundModes": [
+          "audio"
+        ]
       }
     },
     "owner": "echofinders",
@@ -22,10 +26,24 @@
         "projectId": "d1a83f71-a44c-4e52-ad76-446041fb41ae"
       }
     },
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#010A52"
-    }
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "enableBackgroundPlayback": true
+        }
+      ],
+      "expo-asset",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#010A52",
+          "imageWidth": 200
+        }
+      ]
+    ]
   }
 }
