@@ -1,0 +1,275 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Callowhill), following docs/writing-echoes.md (format v2) and docs/14-true-crime.md. Male narrator per content/voices.yml.
+# Listening spot: Public sidewalk on Callowhill Street between Thirteenth and Broad, the block where No. 1316 stood, opposite the old Reading station. Not a doorstep: the 1894 row is gone.
+# Position: midpoint of Callowhill between the Overture street-map intersections at Thirteenth (39.959322, -75.159893) and Broad (39.959612, -75.1621), on the south side where the even numbers are (medium confidence: 1890s numbering, building demolished).
+# Key facts and their sources (docs/14-true-crime.md): the killing of Benjamin Pitezel in Philadelphia, the conviction of H. H. Holmes for it, and his hanging at Moyamensing in 1896 are in both Geyer (1896) and the AP report (2017). The address, the date, the coroner's verdict, the insurance and the arrest in Boston are also in the Portland Daily Press (29 October 1895); the train robber's letter is also in the New-York Tribune (31 October 1895); the hanging also in the Birmingham State Herald (8 May 1896). The sign and the carpenter rest on Geyer alone, the detective on the case.
+id: philadelphia-patents-bought-and-sold
+title: "Patents Bought and Sold"
+summary: "In 1894 a carpenter found the patent dealer on this block dead upstairs. Neither he nor his visitor was who he said he was."
+place: "Callowhill Street between Thirteenth and Broad streets, site of No. 1316, Philadelphia, Pennsylvania"
+at: { lat: 39.95935, lng: -75.16100 }
+triggerRadiusKm: 0.05
+category: true-crime
+format: short
+durationS: 97
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.75
+tags: [philadelphia, callowhill, true-crime, hh-holmes, benjamin-pitezel, insurance-fraud, frank-geyer, moyamensing]
+teaser: "A muslin sign in the window. A new counter. And nobody answering upstairs."
+script: |
+  Look along this block of Callowhill Street, between Thirteenth and Broad. In the summer of eighteen ninety four, there was a row of red brick houses here. In the window of number thirteen sixteen hung a muslin sign. B. F. Perry. Patents bought and sold.
+
+  A carpenter named Eugene Smith had invented a saw tool, and stopped in to sell it. Perry hired him to build a counter. While he worked, Smith saw another man come in, give Perry a sign, and go upstairs.
+
+  On the third of September, Smith came back. The shop was open, and empty. Perry's hat still hung on its nail. The next morning, it was all the same. Smith climbed the stairs. In the back room, Perry lay dead.
+
+  The coroner called it an accident. But Perry was really Benjamin Pitezel, a married man, and his life was insured for ten thousand dollars. And the man who had gone upstairs was his business partner, who called himself H. H. Holmes.
+
+  What gave him away was a letter. In a jail in St. Louis, Holmes had boasted of his insurance plan to a train robber named Marion Hedgepeth, and promised him a cut. He never paid. So Hedgepeth wrote to the police.
+
+  Holmes was arrested in Boston. In Philadelphia, a jury found him guilty of the murder of Benjamin Pitezel. He was hanged at Moyamensing Prison, in May of eighteen ninety six.
+
+  Look along the block again. A patent dealer's sign. A man who trusted his partner.
+
+  And the train robber who wanted his money.
+pronunciations:
+  - written: "Pitezel"
+    say: "PIT-zel"
+  - written: "Hedgepeth"
+    say: "HEDGE-peth"
+  - written: "Moyamensing"
+    say: "moy-uh-MEN-sing"
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo describes a murder for insurance money and an execution. No violence is described in detail."
+claims:
+  - says: "In the summer of eighteen ninety four, there was a row of red brick houses here."
+    source: 1
+    quote: "The house was one of a row of red brick, two and a half stories high, and immediately opposite the old abandoned station of the Philadelphia & Reading Railroad."
+  - says: "In the window of number thirteen sixteen hung a muslin sign. B. F. Perry. Patents bought and sold."
+    source: 1
+    quote: "The sign was made out of a sheet of muslin stretched across the window, and on it was printed in black and red letters, \" B. F. Perry, Patents Bought and Sold.\""
+  - says: "A carpenter named Eugene Smith had invented a saw tool, and stopped in to sell it."
+    source: 1
+    quote: "Eugene Smith, a house carpenter, was passing along Callowhill Street, between Thirteenth and Broad Streets"
+  - says: "A carpenter named Eugene Smith had invented a saw tool, and stopped in to sell it."
+    source: 1
+    quote: "Smith was an inventor and had recently patented an ingenious device for a saw sett which he was very desirous of turning into money."
+  - says: "Perry hired him to build a counter."
+    source: 1
+    quote: "Perry employed him to construct a rough counter required for business purposes"
+  - says: "While he worked, Smith saw another man come in, give Perry a sign, and go upstairs."
+    source: 1
+    quote: "Smith saw a man enter, give a sign to Perry, and pass up the stairway in the rear of the front room"
+  - says: "On the third of September, Smith came back. The shop was open, and empty."
+    source: 1
+    quote: "In the afternoon of Monday, September 3d, Smith called at No. 1316 to see Perry again"
+  - says: "Perry's hat still hung on its nail."
+    source: 1
+    quote: "The hat and cuffs still hung upon the nail."
+  - says: "Smith climbed the stairs. In the back room, Perry lay dead."
+    source: 1
+    quote: "He then walked up the stairs leading to the second floor"
+  - says: "The coroner called it an accident."
+    source: 1
+    quote: "a verdict of death from congestion of the lungs, caused by the inhalation of flame, or of chloroform or other poisonous drug was rendered"
+  - says: "But Perry was really Benjamin Pitezel, a married man, and his life was insured for ten thousand dollars."
+    source: 1
+    quote: "That the man who was found dead at No. 1316 Callowhill Street, and who was known as B. F. Perry, was Benjamin F. Pitezel"
+  - says: "But Perry was really Benjamin Pitezel, a married man, and his life was insured for ten thousand dollars."
+    source: 1
+    quote: "That Pitezel was insured in the Fidelity Company (22) 84 CASHIER CASS CALLS OX MRS. HOLMES. for Ten Thousand Dollars and that his wife was the beneficiary named in the policy."
+  - says: "And the man who had gone upstairs was his business partner, who called himself H. H. Holmes."
+    source: 1
+    quote: "he afterwards identified him as H. H. Holmes."
+  - says: "And the man who had gone upstairs was his business partner, who called himself H. H. Holmes."
+    source: 2
+    quote: "But it was the murder of his business partner in Philadelphia that led to his conviction and hanging in 1896."
+  - says: "In a jail in St. Louis, Holmes had boasted of his insurance plan to a train robber named Marion Hedgepeth, and promised him a cut."
+    source: 1
+    quote: "During his imprisonment in the St. Louis jail, he meets Marion C. Hedgepeth."
+  - says: "In a jail in St. Louis, Holmes had boasted of his insurance plan to a train robber named Marion Hedgepeth, and promised him a cut."
+    source: 1
+    quote: "he told me he had a scheme by which he could make $10,000, and he needed some lawyer who could be trusted, and said if I could, he would see that I got $500 for it."
+  - says: "He never paid. So Hedgepeth wrote to the police."
+    source: 1
+    quote: "He has just as much deplored the other mistake he made, in omitting to pay Hedgepeth his promised reward"
+  - says: "He never paid. So Hedgepeth wrote to the police."
+    source: 1
+    quote: "Please send an agent of the company to see me if you please. Yours Resp., etc., Marion C. Hedgepeth."
+  - says: "Holmes was arrested in Boston."
+    source: 1
+    quote: "Holmes Arrested in Boston"
+  - says: "In Philadelphia, a jury found him guilty of the murder of Benjamin Pitezel."
+    source: 1
+    quote: "when the jury returned a verdict of murder in the first degree"
+  - says: "In Philadelphia, a jury found him guilty of the murder of Benjamin Pitezel."
+    source: 2
+    quote: "But it was the murder of his business partner in Philadelphia that led to his conviction and hanging in 1896."
+  - says: "He was hanged at Moyamensing Prison, in May of eighteen ninety six."
+    source: 2
+    quote: "Holmes was executed in a public event at Philadelphia's Moyamensing Prison on May 7, 1896."
+  - says: "In the window of number thirteen sixteen hung a muslin sign. B. F. Perry. Patents bought and sold."
+    source: 3
+    quote: "Benjamin V. bietzel's body was found in a house at 1316 Callowhill street, September 3, 1894."
+  - says: "On the third of September, Smith came back. The shop was open, and empty."
+    source: 3
+    quote: "Benjamin V. bietzel's body was found in a house at 1316 Callowhill street, September 3, 1894."
+  - says: "The coroner called it an accident."
+    source: 3
+    quote: "the coroner’s jury concluded that the oil lamp had explodod and that Pietzei had been burned to death, and accordingly rendered a vordiet of accidental death."
+  - says: "But Perry was really Benjamin Pitezel, a married man, and his life was insured for ten thousand dollars."
+    source: 3
+    quote: "a claim was made on the Fidelity and the Mutual Life Association of Phil adelphia for $10,000 which that company carried on Pietzei’s life"
+  - says: "In a jail in St. Louis, Holmes had boasted of his insurance plan to a train robber named Marion Hedgepeth, and promised him a cut."
+    source: 4
+    quote: "He told of the letter of Hedgepeth, the Missouri train-rgbber, revealing the swindle on the company"
+  - says: "He never paid. So Hedgepeth wrote to the police."
+    source: 4
+    quote: "He told of the letter of Hedgepeth, the Missouri train-rgbber, revealing the swindle on the company and of the tracing and arrest of Holmes and Mrs. Pietzel in Boston"
+  - says: "Holmes was arrested in Boston."
+    source: 3
+    quote: "This resulted in the arrest in Boston of Mudgett, alias Holmes."
+  - says: "He was hanged at Moyamensing Prison, in May of eighteen ninety six."
+    source: 5
+    quote: "Philadelphia, May 7.—Murderer Her man W. Mudgett, alias H. H. Holmes, was hanged this morning in the county prison for the killing of Benjamin F. Pletzel."
+sources:
+  - title: "The Holmes-Pitezel Case: a history of the greatest crime of the century (Frank P. Geyer, the Philadelphia detective on the case, 1896)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/holmespitezelcas00geye
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Serial Killer's Body Exhumed To Prove He Didn't Escape Execution (Associated Press, 2017)"
+    publisher: "CBS Sacramento"
+    url: https://www.cbsnews.com/sacramento/news/serial-killers-body-exhumed-to-prove-he-didnt-escape-execution/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "The Portland Daily Press, 29 October 1895, page 2, report on the opening of the Holmes trial in Philadelphia (Chronicling America)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/sn83016025/1895-10-29/ed-1/?sp=2
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "New-York Tribune, 31 October 1895, page 2, report of testimony at the Holmes trial (Chronicling America)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/sn83030214/1895-10-31/ed-1/?sp=2
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Birmingham State Herald, 8 May 1896, page 1, report of the execution of H. H. Holmes (Chronicling America)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/sn85044812/1896-05-08/ed-1/?sp=1
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/philadelphia-patents-bought-and-sold/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 96.7
+    audioBytes: 1548163
+    transcript:
+      totalS: 96.7
+      lines:
+        - text: Look along this block of Callowhill Street, between Thirteenth and Broad.
+          atS: 0
+          durationS: 4.17
+        - text: In the summer of eighteen ninety four, there was a row of red brick houses here.
+          atS: 4.87
+          durationS: 4.4
+        - text: In the window of number thirteen sixteen hung a muslin sign.
+          atS: 9.65
+          durationS: 3.58
+        - text: B.
+          atS: 13.73
+          durationS: 0.38
+        - text: F.
+          atS: 14.2
+          durationS: 0.21
+        - text: Perry.
+          atS: 14.44
+          durationS: 0.62
+        - text: Patents bought and sold.
+          atS: 15.5
+          durationS: 1.66
+        - text: A carpenter named Eugene Smith had invented a saw tool, and stopped in to sell it.
+          atS: 17.76
+          durationS: 4.9
+        - text: Perry hired him to build a counter.
+          atS: 23.27
+          durationS: 1.82
+        - text: While he worked, Smith saw another man come in, give Perry a sign, and go upstairs.
+          atS: 25.6
+          durationS: 5.22
+        - text: On the third of September, Smith came back.
+          atS: 32.13
+          durationS: 2.61
+        - text: The shop was open, and empty.
+          atS: 34.95
+          durationS: 1.96
+        - text: Perry's hat still hung on its nail.
+          atS: 37.02
+          durationS: 2.11
+        - text: The next morning, it was all the same.
+          atS: 39.46
+          durationS: 2.29
+        - text: Smith climbed the stairs.
+          atS: 42.35
+          durationS: 1.52
+        - text: In the back room, Perry lay dead.
+          atS: 44.26
+          durationS: 2.47
+        - text: The coroner called it an accident.
+          atS: 47.06
+          durationS: 1.81
+        - text: But Perry was really Benjamin Pitezel, a married man, and his life was insured for ten thousand dollars.
+          atS: 49.25
+          durationS: 6.59
+        - text: And the man who had gone upstairs was his business partner, who called himself H.
+          atS: 56.29
+          durationS: 4.23
+        - text: H.
+          atS: 60.53
+          durationS: 0.26
+        - text: Holmes.
+          atS: 60.81
+          durationS: 0.63
+        - text: What gave him away was a letter.
+          atS: 61.77
+          durationS: 2.17
+        - text: In a jail in St.
+          atS: 64.54
+          durationS: 1.03
+        - text: Louis, Holmes had boasted of his insurance plan to a train robber named Marion Hedgepeth, and promised him a cut.
+          atS: 65.6
+          durationS: 7.09
+        - text: He never paid.
+          atS: 72.94
+          durationS: 1
+        - text: So Hedgepeth wrote to the police.
+          atS: 74.26
+          durationS: 1.94
+        - text: Holmes was arrested in Boston.
+          atS: 76.52
+          durationS: 1.94
+        - text: In Philadelphia, a jury found him guilty of the murder of Benjamin Pitezel.
+          atS: 78.74
+          durationS: 4.5
+        - text: He was hanged at Moyamensing Prison, in May of eighteen ninety six.
+          atS: 83.75
+          durationS: 4.27
+        - text: Look along the block again.
+          atS: 88.84
+          durationS: 1.47
+        - text: A patent dealer's sign.
+          atS: 90.64
+          durationS: 1.45
+        - text: A man who trusted his partner.
+          atS: 92.33
+          durationS: 1.73
+        - text: And the train robber who wanted his money.
+          atS: 94.39
+          durationS: 2.3

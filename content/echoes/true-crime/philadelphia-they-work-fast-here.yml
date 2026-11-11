@@ -1,0 +1,210 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Center City, City Hall), following docs/writing-echoes.md (format v2) and docs/14-true-crime.md. Male narrator per content/voices.yml.
+# Listening spot: The east side of City Hall, on East Penn Square facing Juniper Street and Market Street East; the 1929 central police station and courts were inside City Hall.
+# Position: near the Overture place "Philadelphia City Hall's East Facade" (39.952361, -75.162843), moved onto the East Penn Square sidewalk; kept apart from the existing City Hall echoes on the north, south and west sides (medium confidence: the sources say City Hall, not which room).
+# Key facts and their sources (docs/14-true-crime.md): the arrest leaving a motion picture house, the pistols, City Hall, the guilty pleas and the one year sentence are in both the Evening Star (Associated Press, 17 May 1929) and the Washington Daily News (18 May 1929). Eastern State and the secret release rest on the Eastern State Penitentiary audio tour, which is the institution's own account. No one named is alive.
+id: philadelphia-they-work-fast-here
+title: "They Work Fast Here"
+summary: "In May 1929 Al Capone was picked up leaving a Philadelphia movie house, brought to City Hall, and sentenced to a year before a day was out."
+place: "City Hall, East Penn Square, Center City, Philadelphia, Pennsylvania"
+at: { lat: 39.95236, lng: -75.16262 }
+triggerRadiusKm: 0.05
+category: true-crime
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.8
+tags: [philadelphia, philadelphia-core, center-city, city-hall, true-crime, al-capone, prohibition, eastern-state-penitentiary]
+teaser: "He was wiping the sweat off his brow."
+script: |
+  Look up at the great stone face of City Hall. In nineteen twenty nine, the city's central police station was inside. And on the night of the sixteenth of May, they brought in the man who ran Chicago's beer runners.
+
+  Al Capone had come up from a meeting in Atlantic City, with his bodyguard, Frank Cline. That evening, two Philadelphia detectives were watching the crowds coming out of the movie theaters, looking for anyone suspicious. They spotted two men leaving a picture house. Capone and Cline did not resist. Each was carrying a thirty eight calibre pistol.
+
+  They were brought here. At a midnight hearing, bail was set at thirty five thousand dollars each. As he was led away, Capone wiped the sweat off his brow. This is some city, he said. They work fast here. But I'll beat this rap yet.
+
+  He did not. In less than twelve hours, a grand jury had indicted him for carrying a concealed weapon. That same day, both men pleaded guilty. The judge gave them the most the law allowed. One year.
+
+  Some people in Philadelphia whispered that Capone had wanted to be arrested, to hide from his enemies. The mayor said he believed Capone was really glad to go to jail. Capone denied it.
+
+  He served his time in Eastern State Penitentiary. On the day of his release, hundreds of people waited outside the gate. But the warden had moved him out in secret.
+
+  Look at City Hall again. This is some city, he had said.
+
+  They work fast here.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo is about a gangster's arrest for carrying a gun. No violence is described."
+claims:
+  - says: "Al Capone had come up from a meeting in Atlantic City, with his bodyguard, Frank Cline."
+    source: 1
+    quote: "terday from Atlantic City."
+  - says: "Al Capone had come up from a meeting in Atlantic City, with his bodyguard, Frank Cline."
+    source: 1
+    quote: "With him was indicted Flank Cline, j also of Chicago, Capone's alleged bodyguard."
+  - says: "That evening, two Philadelphia detectives were watching the crowds coming out of the movie theaters, looking for anyone suspicious. They spotted two men leaving a picture house. Capone and Cline did not resist."
+    source: 1
+    quote: "they were picked up leaving a motion j picture house by two Philadelphia detectives who were looking over theater j crowds for suspicious persons. They I did not resist arrest"
+  - says: "They spotted two men leaving a picture house."
+    source: 2
+    quote: "Capone sub mitted so easily to arrest as he was leaving a motion picture theater"
+  - says: "Each was carrying a thirty eight calibre pistol."
+    source: 1
+    quote: "after a 38-caliber pistol was found on each."
+  - says: "They were brought here."
+    source: 1
+    quote: "were taken to tlie central police station in city hall"
+  - says: "At a midnight hearing, bail was set at thirty five thousand dollars each."
+    source: 1
+    quote: "Capone and Cline were given a midnight hearing"
+  - says: "At a midnight hearing, bail was set at thirty five thousand dollars each."
+    source: 1
+    quote: "held in $35,000 bail"
+  - says: "As he was led away, Capone wiped the sweat off his brow. This is some city, he said. They work fast here. But I'll beat this rap yet."
+    source: 1
+    quote: "\"This is some city; they work fast here,” said Al as he was led away from the hearing, wiping perspiration from his brow. “But I'll beat this rap yet.”"
+  - says: "In less than twelve hours, a grand jury had indicted him for carrying a concealed weapon."
+    source: 1
+    quote: "Less than 12 hours after his arrest, Alphonse (Scarface Al) Capone, Chi cago gangster, was indicted by the county grand jury today on a charge of earning a concealed deadly weapon."
+  - says: "That same day, both men pleaded guilty. The judge gave them the most the law allowed. One year."
+    source: 1
+    quote: "the two prisoners entered pleas of guilty, j Tlie sentence of the court was the i maximum prison term under the law."
+  - says: "That same day, both men pleaded guilty. The judge gave them the most the law allowed. One year."
+    source: 2
+    quote: "that the gangster pleaded guilty when facing trial on a charge of carrying concealed weapons"
+  - says: "That same day, both men pleaded guilty. The judge gave them the most the law allowed. One year."
+    source: 2
+    quote: "hurried off to jail for one carrying the pi-tol he year for"
+  - says: "Some people in Philadelphia whispered that Capone had wanted to be arrested, to hide from his enemies."
+    source: 2
+    quote: "ready to accept as fact the report that Capone was driven to jail, not by the phiwet of the police, but by fear of death at the hands of rival gangsters."
+  - says: "The mayor said he believed Capone was really glad to go to jail. Capone denied it."
+    source: 2
+    quote: "a statement issued by Mayor Harry A. Mackey who said he be lieved Capont was \"really glad” to1 go to jail."
+  - says: "Capone denied it."
+    source: 2
+    quote: "Officially (apone denied all that"
+  - says: "He served his time in Eastern State Penitentiary. On the day of his release, hundreds of people waited outside the gate. But the warden had moved him out in secret."
+    source: 3
+    quote: "Newspapers reported that on the day of Capone's release, 500 people lined the streets. They were to be disappointed. Warden Herbert Smith had transferred Capone in secret to the State Correctional Institution at Graterford"
+  - says: "they brought in the man who ran Chicago's beer runners."
+    source: 2
+    quote: "his dom ination of the Chicago beer runners"
+  - says: "In nineteen twenty nine, the city's central police station was inside."
+    source: 1
+    quote: "were taken to tlie central police station in city hall, where they were charged with carrying concealed weapons"
+sources:
+  - title: "Capone and Aide Get Year in Jail for Gun-Toting, Evening Star (Washington, D.C.), 17 May 1929, page 4"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1929-05-17/ed-1/?sp=4
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Al Capone is Happy for Jail Shelter; Feared for Life, Washington Daily News, 18 May 1929, page 9"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82016181/1929-05-18/ed-1/?sp=9
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Eastern State Penitentiary audio tour transcript, stop 21: Al Capone's Release"
+    publisher: "Eastern State Penitentiary Historic Site"
+    url: https://easternstate.org/uploads/media/ESP_English_Audio_Tour_Transcript.pdf
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/philadelphia-they-work-fast-here/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 88.3
+    audioBytes: 1413581
+    transcript:
+      totalS: 88.3
+      lines:
+        - text: Look up at the great stone face of City Hall.
+          atS: 0
+          durationS: 2.66
+        - text: In nineteen twenty nine, the city's central police station was inside.
+          atS: 2.87
+          durationS: 3.84
+        - text: And on the night of the sixteenth of May, they brought in the man who ran Chicago's beer runners.
+          atS: 7.04
+          durationS: 4.85
+        - text: Al Capone had come up from a meeting in Atlantic City, with his bodyguard, Frank Cline.
+          atS: 12.27
+          durationS: 4.84
+        - text: That evening, two Philadelphia detectives were watching the crowds coming out of the movie theaters, looking for anyone suspicious.
+          atS: 17.72
+          durationS: 6.73
+        - text: They spotted two men leaving a picture house.
+          atS: 24.89
+          durationS: 2.43
+        - text: Capone and Cline did not resist.
+          atS: 27.64
+          durationS: 2.18
+        - text: Each was carrying a thirty eight calibre pistol.
+          atS: 30.07
+          durationS: 2.51
+        - text: They were brought here.
+          atS: 32.75
+          durationS: 1.04
+        - text: At a midnight hearing, bail was set at thirty five thousand dollars each.
+          atS: 34.18
+          durationS: 4.12
+        - text: As he was led away, Capone wiped the sweat off his brow.
+          atS: 38.81
+          durationS: 3.2
+        - text: This is some city, he said.
+          atS: 42.4
+          durationS: 1.91
+        - text: They work fast here.
+          atS: 44.43
+          durationS: 1.34
+        - text: But I'll beat this rap yet.
+          atS: 46.09
+          durationS: 1.59
+        - text: He did not.
+          atS: 48.01
+          durationS: 0.85
+        - text: In less than twelve hours, a grand jury had indicted him for carrying a concealed weapon.
+          atS: 49.18
+          durationS: 5.24
+        - text: That same day, both men pleaded guilty.
+          atS: 54.86
+          durationS: 2.66
+        - text: The judge gave them the most the law allowed.
+          atS: 57.73
+          durationS: 2.62
+        - text: One year.
+          atS: 60.79
+          durationS: 0.73
+        - text: Some people in Philadelphia whispered that Capone had wanted to be arrested, to hide from his enemies.
+          atS: 61.96
+          durationS: 5.68
+        - text: The mayor said he believed Capone was really glad to go to jail.
+          atS: 67.97
+          durationS: 3.41
+        - text: Capone denied it.
+          atS: 71.7
+          durationS: 1.21
+        - text: He served his time in Eastern State Penitentiary.
+          atS: 73.24
+          durationS: 2.73
+        - text: On the day of his release, hundreds of people waited outside the gate.
+          atS: 76.24
+          durationS: 3.85
+        - text: But the warden had moved him out in secret.
+          atS: 80.27
+          durationS: 2.37
+        - text: Look at City Hall again.
+          atS: 82.97
+          durationS: 1.5
+        - text: This is some city, he had said.
+          atS: 84.64
+          durationS: 1.9
+        - text: They work fast here.
+          atS: 86.87
+          durationS: 1.42

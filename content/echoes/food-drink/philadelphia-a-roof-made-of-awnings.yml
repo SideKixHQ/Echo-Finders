@@ -1,0 +1,157 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (South Philadelphia, Bella Vista), second pass, following docs/writing-echoes.md (format v2).
+# Listening spot: Ninth Street at Washington Avenue, in the middle of the Italian Market, under the awnings.
+# Position: the Ninth Street and Washington Avenue intersection from the Overture street map (39.93626, -75.158524), on the Ninth Street side (high confidence: the source names this corner, Giordano's, in a 1954 photograph, and the market runs from Fitzwater to Wharton).
+id: philadelphia-a-roof-made-of-awnings
+title: "A Roof Made of Awnings"
+summary: "In 1915 the shopkeepers of Ninth Street made a deal: keep the street clean and lit, and sell from the curb. It became the Italian Market."
+place: "Ninth Street at Washington Avenue, the Italian Market, Bella Vista, South Philadelphia, Pennsylvania"
+at: { lat: 39.93635, lng: -75.15855 }
+triggerRadiusKm: 0.06
+category: food-drink
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, south-philadelphia, bella-vista, italian-market, ninth-street, curb-market, food, immigration]
+teaser: "Nobody built a roof. The shops built one together."
+script: |
+  Look up, along Ninth Street, at the awnings. Some plain, some in bold stripes and colours. One after another, shop after shop, they make a roof over the sidewalk. Nobody built that roof. It grew.
+
+  At the end of the eighteen hundreds, Italian families began arriving in South Philadelphia in large numbers. The row houses on this street had been home to Irish, German and Jewish families. The newcomers made them shops. The store went downstairs. The family, and the boarders, went up.
+
+  In nineteen fifteen, the street's businessmen made a deal with the state of Pennsylvania. They would keep Ninth Street clean. They would light it, pave it, and pay for police. In return, they could sell from the curb. Pushcarts, wagons and stands, all along the gutter.
+
+  It was a market built for hard times. During the First World War, people were afraid of food running short and prices running high. This street was the answer. Fresh food, cheap, and close.
+
+  By the nineteen forties, everyone called it the Italian Market. Then the families moved out to the suburbs, and new people moved in. In nineteen eighty three, the first Korean owned shop opened on Ninth Street. Then came Vietnamese, Chinese and Mexican families.
+
+  Look at the awnings again. Every shop hung its own.
+
+  The roof is still being built.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "One after another, shop after shop, they make a roof over the sidewalk."
+    source: 1
+    quote: "The linear arrangement of contiguous businesses with awnings appended to store fronts offers the public amenity of an uninterrupted covered sidewalk."
+  - says: "At the end of the eighteen hundreds, Italian families began arriving in South Philadelphia in large numbers."
+    source: 1
+    quote: "The market evolved as the principal food shopping hub for the Italian immigrants who began to settle South Philadelphia in large numbers at the end of the nineteenth century."
+  - says: "The row houses on this street had been home to Irish, German and Jewish families. The newcomers made them shops. The store went downstairs. The family, and the boarders, went up."
+    source: 1
+    quote: "Existing row houses on Ninth Street, formerly occupied by Irish, German, and Jewish residents, provided building stock of contiguous structures that were easily modified for family businesses, with stores at ground level and living spaces for relatives and boarders on the upper floors."
+  - says: "In nineteen fifteen, the street's businessmen made a deal with the state of Pennsylvania. They would keep Ninth Street clean. They would light it, pave it, and pay for police."
+    source: 1
+    quote: "The commercial character of Ninth Street was secured in 1915, when the community’s leading businessmen"
+  - says: "They would keep Ninth Street clean. They would light it, pave it, and pay for police."
+    source: 1
+    quote: "The association received the privilege of incorporation from the Commonwealth of Pennsylvania in exchange for ensuring cleanliness, illumination, paving, and police protection within the boundaries specified in its charter."
+  - says: "In return, they could sell from the curb. Pushcarts, wagons and stands, all along the gutter."
+    source: 1
+    quote: "Curb markets were characterized by vendors selling from pushcarts, wagons, trucks, or sidewalk stands arranged in a linear fashion along a designated street."
+  - says: "During the First World War, people were afraid of food running short and prices running high. This street was the answer."
+    source: 1
+    quote: "in recognition of its mission to counter high food prices and shortages during World War I"
+  - says: "By the nineteen forties, everyone called it the Italian Market."
+    source: 1
+    quote: "By the 1940s commerce on Ninth Street was commonly known as the Italian Market"
+  - says: "Then the families moved out to the suburbs, and new people moved in."
+    source: 1
+    quote: "as subsequent generations dispersed and settled in other parts of the city, the suburbs, or in southern New Jersey."
+  - says: "In nineteen eighty three, the first Korean owned shop opened on Ninth Street. Then came Vietnamese, Chinese and Mexican families."
+    source: 1
+    quote: "In 1983 the Italian Market introduced its first Korean-owned establishment at 1000 South Ninth Street, and since then a significant number of Vietnamese, Korean, Chinese, and Mexican-run businesses have joined the traditional Italian shops."
+sources:
+  - title: "Italian Market (Encyclopedia of Greater Philadelphia)"
+    publisher: "The Encyclopedia of Greater Philadelphia, Rutgers University"
+    url: https://philadelphiaencyclopedia.org/essays/italian-market/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-a-roof-made-of-awnings/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 91.8
+    audioBytes: 1469169
+    transcript:
+      totalS: 91.8
+      lines:
+        - text: Look up, along Ninth Street, at the awnings.
+          atS: 0
+          durationS: 3.42
+        - text: Some plain, some in bold stripes and colours.
+          atS: 3.87
+          durationS: 3.12
+        - text: One after another, shop after shop, they make a roof over the sidewalk.
+          atS: 7.2
+          durationS: 4.82
+        - text: Nobody built that roof.
+          atS: 12.34
+          durationS: 1.67
+        - text: It grew.
+          atS: 14.4
+          durationS: 0.75
+        - text: At the end of the eighteen hundreds, Italian families began arriving in South Philadelphia in large numbers.
+          atS: 15.85
+          durationS: 6.65
+        - text: The row houses on this street had been home to Irish, German and Jewish families.
+          atS: 23.01
+          durationS: 5.11
+        - text: The newcomers made them shops.
+          atS: 28.56
+          durationS: 1.77
+        - text: The store went downstairs.
+          atS: 30.6
+          durationS: 1.63
+        - text: The family, and the boarders, went up.
+          atS: 32.47
+          durationS: 2.36
+        - text: In nineteen fifteen, the street's businessmen made a deal with the state of Pennsylvania.
+          atS: 35.43
+          durationS: 4.88
+        - text: They would keep Ninth Street clean.
+          atS: 40.63
+          durationS: 1.82
+        - text: They would light it, pave it, and pay for police.
+          atS: 42.67
+          durationS: 3.01
+        - text: In return, they could sell from the curb.
+          atS: 46.18
+          durationS: 2.45
+        - text: Pushcarts, wagons and stands, all along the gutter.
+          atS: 49.15
+          durationS: 3.52
+        - text: It was a market built for hard times.
+          atS: 53.1
+          durationS: 2.32
+        - text: During the First World War, people were afraid of food running short and prices running high.
+          atS: 56.03
+          durationS: 5.54
+        - text: This street was the answer.
+          atS: 61.95
+          durationS: 1.57
+        - text: Fresh food, cheap, and close.
+          atS: 63.84
+          durationS: 2.6
+        - text: By the nineteen forties, everyone called it the Italian Market.
+          atS: 66.77
+          durationS: 3.8
+        - text: Then the families moved out to the suburbs, and new people moved in.
+          atS: 70.95
+          durationS: 3.97
+        - text: In nineteen eighty three, the first Korean owned shop opened on Ninth Street.
+          atS: 75.2
+          durationS: 4.99
+        - text: Then came Vietnamese, Chinese and Mexican families.
+          atS: 80.47
+          durationS: 3.6
+        - text: Look at the awnings again.
+          atS: 84.77
+          durationS: 1.54
+        - text: Every shop hung its own.
+          atS: 86.75
+          durationS: 1.64
+        - text: The roof is still being built.
+          atS: 88.99
+          durationS: 2.78

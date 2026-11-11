@@ -1,0 +1,147 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (South Philadelphia, East Passyunk), second pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The corner where Ninth Street, Wharton Street and Passyunk Avenue meet, by Pat's King of Steaks.
+# Position: the Ninth, Wharton and Passyunk intersection from the Overture street map (39.9335, -75.159046), kept at the corner (high confidence for the intersection; the 1930 hot dog stand is only "in South Philadelphia" in the source, so the script does not put it at this corner).
+id: philadelphia-a-nickel-from-a-cab-driver
+title: "A Nickel From a Cab Driver"
+summary: "In 1930 two brothers with a hot dog stand grilled some beef for their own lunch. A cab driver bought it before they could take a bite."
+place: "Ninth Street, Wharton Street and Passyunk Avenue, Pat's King of Steaks, South Philadelphia, Pennsylvania"
+at: { lat: 39.93345, lng: -75.15898 }
+triggerRadiusKm: 0.04
+category: food-drink
+format: short
+durationS: 81
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [philadelphia, south-philadelphia, passyunk, cheesesteak, pats-king-of-steaks, olivieri, food]
+teaser: "They never got to eat their own lunch."
+script: |
+  Look at the three streets meeting here, at an odd angle, and the steak shop on the corner. It never closes. Day and night, people argue on this corner about which sandwich is better.
+
+  And yet the sandwich started as a lunch nobody got to eat.
+
+  In nineteen thirty, two brothers, Pat and Harry Olivieri, ran a hot dog stand in South Philadelphia. One day, they were sick of eating their own hot dogs for lunch. So they grilled some sliced beef with onions instead.
+
+  Before either of them could take a bite, a cab driver came past. He offered five cents for it. And he told them it was better than their hot dogs.
+
+  Ten years later, the brothers opened Pat's King of Steaks, on this corner. For years, though, there was no cheese. Many of their neighbours were Jewish, and kept kosher, and did not eat meat and cheese together.
+
+  Then, in nineteen fifty two, Kraft brought out Cheez Whiz. Pat had an idea. He took the lid off the giant can, and set the whole can on the grill to heat. Cheese for anyone who wanted it, and a clean grill for anyone who did not.
+
+  Look at the window. Whiz, provolone, or American. Wit, or widout.
+
+  All of it, because a cab driver was hungry.
+pronunciations:
+  - written: "Olivieri"
+    say: "oh-liv-ee-AIR-ee"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In nineteen thirty, two brothers, Pat and Harry Olivieri, ran a hot dog stand in South Philadelphia."
+    source: 1
+    quote: "Cheesesteaks originated in 1930 as simply steak sandwiches, the cheese part coming later. The undisputed creators, Harry Olivieri and his brother Pat, ran a hot dog stand in South Philadelphia."
+  - says: "One day, they were sick of eating their own hot dogs for lunch. So they grilled some sliced beef with onions instead."
+    source: 1
+    quote: "One day, weary of eating their own dogs for lunch, they grilled some sliced beef with onions instead."
+  - says: "Before either of them could take a bite, a cab driver came past. He offered five cents for it. And he told them it was better than their hot dogs."
+    source: 1
+    quote: "Before either could take a bite, a passing cab driver offered five cents for the sandwich and declared it better than their hot dogs."
+  - says: "Ten years later, the brothers opened Pat's King of Steaks, on this corner."
+    source: 1
+    quote: "The brothers Olivieri did not make the steak sandwich their main attraction until 1940 when they opened Pat’s King of Steaks on Passyunk Avenue, where it intersects with Ninth and Wharton Streets."
+  - says: "For years, though, there was no cheese. Many of their neighbours were Jewish, and kept kosher, and did not eat meat and cheese together."
+    source: 1
+    quote: "They did not initially add cheese because many of their customers in the neighborhood were Jewish and dietary laws barred them from eating meat and cheese together."
+  - says: "Then, in nineteen fifty two, Kraft brought out Cheez Whiz. Pat had an idea. He took the lid off the giant can, and set the whole can on the grill to heat. Cheese for anyone who wanted it, and a clean grill for anyone who did not."
+    source: 1
+    quote: "But after Kraft introduced Cheez Wiz in 1952, Pat Olivieri realized he could simply take the lid off the industrial-size can, put the whole can on the grill to cook, and add cheese to some steaks without tainting the grill for his kosher customers."
+  - says: "It never closes. Day and night, people argue on this corner about which sandwich is better."
+    source: 1
+    quote: "Both Pat’s and Geno’s are open twenty-four hours a day, and customers thrive on debating which shop makes the better cheesesteak."
+  - says: "Whiz, provolone, or American. Wit, or widout."
+    source: 1
+    quote: "A cheesesteak “wit” has onions, while one with no onions is ordered “widout.”"
+  - says: "Whiz, provolone, or American."
+    source: 1
+    quote: "The only acceptable cheeses are American, provolone, and the Kraft sauce known as Whiz. Both Pat’s and Geno’s have instructions posted."
+  - says: "Look at the three streets meeting here, at an odd angle, and the steak shop on the corner."
+    source: 1
+    quote: "when they opened Pat’s King of Steaks on Passyunk Avenue, where it intersects with Ninth and Wharton Streets."
+sources:
+  - title: "Cheesesteaks (Dianna Marder, 2012)"
+    publisher: "The Encyclopedia of Greater Philadelphia, Rutgers University"
+    url: https://philadelphiaencyclopedia.org/essays/cheesesteaks/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-a-nickel-from-a-cab-driver/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.2
+    audioBytes: 1300732
+    transcript:
+      totalS: 81.2
+      lines:
+        - text: Look at the three streets meeting here, at an odd angle, and the steak shop on the corner.
+          atS: 0
+          durationS: 5
+        - text: It never closes.
+          atS: 5.18
+          durationS: 1.25
+        - text: Day and night, people argue on this corner about which sandwich is better.
+          atS: 6.82
+          durationS: 4.11
+        - text: And yet the sandwich started as a lunch nobody got to eat.
+          atS: 11.17
+          durationS: 3.48
+        - text: In nineteen thirty, two brothers, Pat and Harry Olivieri, ran a hot dog stand in South Philadelphia.
+          atS: 15.04
+          durationS: 8.17
+        - text: One day, they were sick of eating their own hot dogs for lunch.
+          atS: 23.81
+          durationS: 3.15
+        - text: So they grilled some sliced beef with onions instead.
+          atS: 27.4
+          durationS: 3.31
+        - text: Before either of them could take a bite, a cab driver came past.
+          atS: 31.52
+          durationS: 3.92
+        - text: He offered five cents for it.
+          atS: 35.83
+          durationS: 1.91
+        - text: And he told them it was better than their hot dogs.
+          atS: 38.13
+          durationS: 2.67
+        - text: Ten years later, the brothers opened Pat's King of Steaks, on this corner.
+          atS: 41.49
+          durationS: 5.23
+        - text: For years, though, there was no cheese.
+          atS: 47.16
+          durationS: 2.54
+        - text: Many of their neighbours were Jewish, and kept kosher, and did not eat meat and cheese together.
+          atS: 50.09
+          durationS: 5.27
+        - text: Then, in nineteen fifty two, Kraft brought out Cheez Whiz.
+          atS: 55.63
+          durationS: 4.71
+        - text: Pat had an idea.
+          atS: 60.79
+          durationS: 1.34
+        - text: He took the lid off the giant can, and set the whole can on the grill to heat.
+          atS: 62.45
+          durationS: 4.62
+        - text: Cheese for anyone who wanted it, and a clean grill for anyone who did not.
+          atS: 67.45
+          durationS: 4.38
+        - text: Look at the window.
+          atS: 72.27
+          durationS: 1.07
+        - text: Whiz, provolone, or American.
+          atS: 73.58
+          durationS: 2.36
+        - text: Wit, or widout.
+          atS: 76.27
+          durationS: 1.43
+        - text: All of it, because a cab driver was hungry.
+          atS: 77.9
+          durationS: 3.32

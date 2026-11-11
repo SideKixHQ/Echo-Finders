@@ -1,0 +1,207 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Center City, Midtown Village), following docs/writing-echoes.md (format v2). Legend, told as legend; male narrator per content/voices.yml.
+# Listening spot: Drury Street, the little alley between Thirteenth and Juniper, outside McGillin's Olde Ale House at 1310 Drury Street.
+# Position: midpoint of Drury Street between the Overture street-map intersections at Thirteenth (39.950208, -75.16188) and Juniper (39.950333, -75.162889) (high confidence: the tavern fills this short block).
+id: philadelphia-tea-upstairs
+title: "Tea Upstairs"
+summary: "The tavern on this alley has poured since 1860. In Prohibition, Ma McGillin served tea upstairs. The staff say she has never really left."
+place: "McGillin's Olde Ale House, 1310 Drury Street, Center City, Philadelphia, Pennsylvania"
+at: { lat: 39.95027, lng: -75.16238 }
+triggerRadiusKm: 0.03
+category: legend
+format: short
+durationS: 77
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The haunting is the tavern's own lore, reported by CBS Philadelphia in 2017 from its general manager and a paranormal team's photograph. The Prohibition "tea" comes from the tavern's own 2020 post, quoted by CBS. What is documented: the tavern opened in 1860 as the Bell in Hand, Catherine "Ma" McGillin and her husband were the first owners, and it closed in March 2020 for the first time since Prohibition. The script says the ghost is a legend.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 12
+quality: 0.75
+tags: [philadelphia, philadelphia-core, center-city, mcgillins, tavern, prohibition, ghost, legend, drury-street]
+teaser: "She locked the front door, and opened the side one."
+script: |
+  Look down this narrow alley, Drury Street, at the old tavern halfway along it. It has been pouring drinks since eighteen sixty. When it opened, it was called the Bell in Hand. Today it carries the name of the couple who first ran it. Ma and Pa McGillin.
+
+  Then came Prohibition, and beer became a crime. Every bar was supposed to shut.
+
+  Here is how the tavern tells it. Ma McGillin locked the front door. Then she opened the side door, and served tea. Upstairs.
+
+  It survived. In fact, it kept going for a hundred years without closing. Until March of twenty twenty, when the pandemic finally locked the front door again. The first time, they said, since Prohibition. And this time, no tea.
+
+  Now, this next part is a legend. The people who work here will tell you the place is haunted. Pots flying in the kitchen. Lights that flicker. Things that move by themselves. One manager said, we just hope it's never knives. Ghost hunters say they caught a lady in white, reflected in a mirror.
+
+  And who would she be? Plenty of people say it is Catherine McGillin. Ma.
+
+  Nobody can prove a word of it. But if you had kept a bar open through Prohibition, would you leave?
+
+  Look at the side of the building.
+
+  Maybe she is still pouring the tea.
+pronunciations:
+  - written: "McGillin"
+    say: "mick-GILL-in"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It has been pouring drinks since eighteen sixty. When it opened, it was called the Bell in Hand."
+    source: 1
+    quote: "McGillin's first opened its doors in 1860."
+  - says: "When it opened, it was called the Bell in Hand."
+    source: 1
+    quote: "the tavern was originally named \"The Bell in Hand.\""
+  - says: "Ma and Pa McGillin."
+    source: 2
+    quote: "\"Ma\" and \"Pa\" McGillin were the original owners of the ale house which opened in 1860."
+  - says: "Here is how the tavern tells it. Ma McGillin locked the front door. Then she opened the side door, and served tea. Upstairs."
+    source: 3
+    quote: "when Ma McGillin locked the front door, opened the side door & served \"tea\" upstairs"
+  - says: "Until March of twenty twenty, when the pandemic finally locked the front door again. The first time, they said, since Prohibition. And this time, no tea."
+    source: 3
+    quote: "For the first time since Prohibition -- 100-years ago -- McGillin's Old Ale House in Center City has shut its doors due to COVID-19."
+  - says: "And this time, no tea."
+    source: 3
+    quote: "There won't be any \"tea\" this time"
+  - says: "The people who work here will tell you the place is haunted. Pots flying in the kitchen. Lights that flicker. Things that move by themselves."
+    source: 2
+    quote: "\"There will be mysterious pots flying or lights flickering or just random weird little things objects moving... We just hope it's never knives. It happens all the time.\""
+  - says: "One manager said, we just hope it's never knives."
+    source: 2
+    quote: "We just hope it's never knives."
+  - says: "Ghost hunters say they caught a lady in white, reflected in a mirror."
+    source: 2
+    quote: "A paranormal investigation team claims to have captured the reflection of a lady in white in a mirror by taking a picture."
+  - says: "Plenty of people say it is Catherine McGillin. Ma."
+    source: 2
+    quote: "Many believe it's the spirit of Catherine \"Ma\" McGillin."
+  - says: "Today it carries the name of the couple who first ran it."
+    source: 2
+    quote: "\"Ma\" and \"Pa\" McGillin were the original owners of the ale house which opened in 1860."
+  - says: "Then came Prohibition, and beer became a crime."
+    source: 1
+    quote: "It has been a feature of the city through good times and bad, and even managed to survive Prohibition."
+  - says: "Then came Prohibition, and beer became a crime."
+    source: 3
+    quote: "It's been serving beer since 1860, making it the oldest continuously operating tavern in Philadelphia. We haven't had to do this since Prohibition"
+  - says: "In fact, it kept going for a hundred years without closing."
+    source: 3
+    quote: "For the first time since Prohibition -- 100-years ago -- McGillin's Old Ale House in Center City has shut its doors due to COVID-19."
+  - says: "But if you had kept a bar open through Prohibition, would you leave?"
+    source: 3
+    quote: "when Ma McGillin locked the front door, opened the side door & served \"tea\" upstairs"
+  - says: "But if you had kept a bar open through Prohibition, would you leave?"
+    source: 2
+    quote: "Many believe it's the spirit of Catherine \"Ma\" McGillin."
+sources:
+  - title: "Top Bars With History In Philadelphia"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/top-bars-with-history-in-philadelphia/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Oldest Operated Tavern In Philly May Be Haunted (2017)"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/mcgillins-old-ale-house-haunted/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "McGillin's Old Ale House In Center City Closes For First Time Since Prohibition (2020)"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/coronavirus-in-philadelphia-mcgillins-old-ale-house-in-center-city-closes-for-first-time-since-prohibition/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/philadelphia-tea-upstairs/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 76.9
+    audioBytes: 1230932
+    transcript:
+      totalS: 76.9
+      lines:
+        - text: Look down this narrow alley, Drury Street, at the old tavern halfway along it.
+          atS: 0
+          durationS: 4.24
+        - text: It has been pouring drinks since eighteen sixty.
+          atS: 4.62
+          durationS: 2.54
+        - text: When it opened, it was called the Bell in Hand.
+          atS: 7.37
+          durationS: 2.33
+        - text: Today it carries the name of the couple who first ran it.
+          atS: 9.91
+          durationS: 3.12
+        - text: Ma and Pa McGillin.
+          atS: 13.48
+          durationS: 1.72
+        - text: Then came Prohibition, and beer became a crime.
+          atS: 15.71
+          durationS: 2.67
+        - text: Every bar was supposed to shut.
+          atS: 18.47
+          durationS: 1.71
+        - text: Here is how the tavern tells it.
+          atS: 20.62
+          durationS: 1.67
+        - text: Ma McGillin locked the front door.
+          atS: 22.89
+          durationS: 2.04
+        - text: Then she opened the side door, and served tea.
+          atS: 25.45
+          durationS: 2.62
+        - text: Upstairs.
+          atS: 28.68
+          durationS: 0.87
+        - text: It survived.
+          atS: 29.99
+          durationS: 0.94
+        - text: In fact, it kept going for a hundred years without closing.
+          atS: 31.21
+          durationS: 3.4
+        - text: Until March of twenty twenty, when the pandemic finally locked the front door again.
+          atS: 34.85
+          durationS: 4.59
+        - text: The first time, they said, since Prohibition.
+          atS: 39.72
+          durationS: 2.46
+        - text: And this time, no tea.
+          atS: 42.39
+          durationS: 1.94
+        - text: Now, this next part is a legend.
+          atS: 44.71
+          durationS: 2.19
+        - text: The people who work here will tell you the place is haunted.
+          atS: 47.05
+          durationS: 2.94
+        - text: Pots flying in the kitchen.
+          atS: 50.2
+          durationS: 1.56
+        - text: Lights that flicker.
+          atS: 51.97
+          durationS: 1.14
+        - text: Things that move by themselves.
+          atS: 53.35
+          durationS: 1.9
+        - text: One manager said, we just hope it's never knives.
+          atS: 55.46
+          durationS: 2.97
+        - text: Ghost hunters say they caught a lady in white, reflected in a mirror.
+          atS: 58.61
+          durationS: 3.82
+        - text: And who would she be?
+          atS: 62.54
+          durationS: 1.34
+        - text: Plenty of people say it is Catherine McGillin.
+          atS: 63.99
+          durationS: 2.6
+        - text: Ma.
+          atS: 66.8
+          durationS: 0.49
+        - text: Nobody can prove a word of it.
+          atS: 67.53
+          durationS: 1.45
+        - text: But if you had kept a bar open through Prohibition, would you leave?
+          atS: 69.08
+          durationS: 3.74
+        - text: Look at the side of the building.
+          atS: 73.2
+          durationS: 1.39
+        - text: Maybe she is still pouring the tea.
+          atS: 74.92
+          durationS: 1.94

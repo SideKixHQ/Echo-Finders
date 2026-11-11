@@ -1,0 +1,237 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (South Philadelphia), following docs/writing-echoes.md (format v2). Military: the British occupation, 1778.
+# Listening spot: West sidewalk of South Fifth Street between Washington Avenue and Federal Street, on the square where the Wharton house, Walnut Grove, stood.
+# Position: between the Overture street-map intersections of Fifth and Washington (39.934725, -75.152348) and Fifth and Federal (39.93344, -75.152632); Westcott gives the lot as the whole square from Washington to Federal and Fifth to Arabella streets (medium confidence for the square, the house's place in it unknown).
+id: philadelphia-the-knights-of-the-burning-mountain
+title: "The Knights of the Burning Mountain"
+summary: "In May 1778 British officers held a mock tournament on this square. That night the Americans set fire to their lines."
+place: "Site of Walnut Grove, the Wharton house, South Fifth Street between Washington Avenue and Federal Street, South Philadelphia, Pennsylvania"
+at: { lat: 39.93410, lng: -75.15258 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 108
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.8
+tags: [philadelphia, south-philadelphia, revolution, military, british-occupation, mischianza, john-andre, peggy-shippen, benedict-arnold]
+teaser: "Knights on horseback, ladies in turbans, and a war going badly."
+script: |
+  Look at this square block, between Washington Avenue and Federal Street. In May of seventeen seventy eight, there were knights on horseback here.
+
+  The British army held Philadelphia. And they were losing the war. Their general, Sir William Howe, was going home. So his officers threw him a party.
+
+  It was called the Mischianza. They rowed down the river in a parade of boats, with bands playing. They marched up here to a country house called Walnut Grove, through two triumphal arches. Then came a tournament. Two teams of knights, in silk. The Knights of the Blended Rose. And the Knights of the Burning Mountain, whose motto was, I burn for ever. Each knight fought for a young Philadelphia lady, dressed in a Turkish gown and a turban. One of the knights was a captain named John Andre.
+
+  They broke their lances. They fired pistols at each other, and missed. They feasted, and danced until four in the morning.
+
+  But at about ten that night, an American captain named Allen McLane crept up to the British lines north of the city, and set them on fire. Guns boomed across Philadelphia. The ladies asked what it was. Their knights told them, it was all part of the party.
+
+  One of the ladies on the list was Peggy Shippen. The next spring, she married Benedict Arnold. Two years later, Andre was caught with papers in his boot, for Arnold's plot to hand West Point to the British. He was hanged as a spy.
+
+  Look across this block again. A tournament, while the lines burned.
+
+  I burn for ever.
+pronunciations:
+  - written: "Mischianza"
+    say: "mis-kee-AHN-za"
+  - written: "Andre"
+    say: "AHN-dray"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Look at this square block, between Washington Avenue and Federal Street."
+    source: 1
+    quote: "The lot then took up the whole square from Prime or Washington to Federal street, and from Fifth street on the east to Arabella street on the west."
+  - says: "The British army held Philadelphia."
+    source: 1
+    quote: "When the royal army took possession of Philadelphia in September"
+  - says: "And they were losing the war."
+    source: 1
+    quote: "after thirteen provinces wretchedly lost and a three years' series of ruinous disgraces and defeats"
+  - says: "Their general, Sir William Howe, was going home. So his officers threw him a party."
+    source: 1
+    quote: "This was the last public appearance of Sir William Howe as a commander. In less than a week afterward he left the Delaware"
+  - says: "Their general, Sir William Howe, was going home. So his officers threw him a party."
+    source: 1
+    quote: "Twenty-two field officers subscribed the necessary funds."
+  - says: "It was called the Mischianza."
+    source: 1
+    quote: "They called the frolic the Mischianza"
+  - says: "They rowed down the river in a parade of boats, with bands playing."
+    source: 1
+    quote: "At the head of each division was a flatboat upon which was a band of music"
+  - says: "They marched up here to a country house called Walnut Grove, through two triumphal arches."
+    source: 1
+    quote: "up to the lists at Walnut Grove, all the bands in the army preceding them and playing triumphal music."
+  - says: "They marched up here to a country house called Walnut Grove, through two triumphal arches."
+    source: 1
+    quote: "marched through the two arches"
+  - says: "The Knights of the Blended Rose. And the Knights of the Burning Mountain, whose motto was, I burn for ever."
+    source: 1
+    quote: "The Knights of the Burning Mountain were distinguished by the emblem of a volcano in full blaze, with the motto, \" I burn for ever.\""
+  - says: "Each knight fought for a young Philadelphia lady, dressed in a Turkish gown and a turban."
+    source: 1
+    quote: "The ladies belonging to the respective sides were attired in Turkish habits, and bore in their turbans the favors"
+  - says: "Each knight fought for a young Philadelphia lady, dressed in a Turkish gown and a turban."
+    source: 1
+    quote: "Except Miss Auchmuty, who was an English girl, they were all Philadelphians."
+  - says: "One of the knights was a captain named John Andre."
+    source: 1
+    quote: "Third Knight, Captain Andre, in honor of Miss P. Chew"
+  - says: "They broke their lances. They fired pistols at each other, and missed."
+    source: 1
+    quote: "shivered their lances on each other's shields without particular damage to anybody."
+  - says: "They broke their lances. They fired pistols at each other, and missed."
+    source: 1
+    quote: "fired off their pistols without hurting each other"
+  - says: "They feasted, and danced until four in the morning."
+    source: 1
+    quote: "continued to dance until four o'clock in the morning."
+  - says: "But at about ten that night, an American captain named Allen McLane crept up to the British lines north of the city, and set them on fire."
+    source: 1
+    quote: "About ten o'clock WALNUT GROVE. 477 at night, whilst the ladies and their gallant knights were enjoying themselves, Captain Allen McLane"
+  - says: "But at about ten that night, an American captain named Allen McLane crept up to the British lines north of the city, and set them on fire."
+    source: 1
+    quote: "In a few moments the timber of the abattis was in a blaze."
+  - says: "Guns boomed across Philadelphia."
+    source: 1
+    quote: "fired the guns in their redoubts, the echoes from which were taken up by the ships in the river."
+  - says: "The ladies asked what it was. Their knights told them, it was all part of the party."
+    source: 1
+    quote: "occasioned some remark among the ladies, who were assured by their cavaliers, however, that it was all in honor of the Mischianza"
+  - says: "One of the ladies on the list was Peggy Shippen. The next spring, she married Benedict Arnold."
+    source: 1
+    quote: "Miss P. (Peggy or Margaret) Shippen, daughter of Chief-Justice Shippen, married April 8, 1779, General Benedict Arnold, the traitor."
+  - says: "Two years later, Andre was caught with papers in his boot, for Arnold's plot to hand West Point to the British."
+    source: 2
+    quote: "Major André was found to have papers hidden in his boot concerning Continental army Brigadier General Benedict Arnold ‘s negotiation for the surrender of West Point"
+  - says: "He was hanged as a spy."
+    source: 2
+    quote: "On October 2 , 1780, British intelligence officer Major John André was hanged as a spy in Tappan, New York."
+  - says: "In May of seventeen seventy eight, there were knights on horseback here."
+    source: 3
+    quote: "The fUe took place on Monday, the 18th of May; the place selected for the picnic was the Wharton Mansion and grounds at Walnut Grove"
+  - says: "In May of seventeen seventy eight, there were knights on horseback here."
+    source: 3
+    quote: "published in the Gentleman^s Magazine for August, 1778."
+  - says: "In May of seventeen seventy eight, there were knights on horseback here."
+    source: 3
+    quote: "a band of knights, dressed in ancient habits of white and red silk, and mounted on gray liorses"
+  - says: "Two teams of knights, in silk."
+    source: 1
+    quote: "One company of them, they of the Blended Rose, were apparelled in habits of white and red silk, and their horses were caparisoned in trappings of the same colors. The Knights of the Burning Mountain represented the adverse host."
+  - says: "Two teams of knights, in silk."
+    source: 3
+    quote: "dressed in a magnificent suit ' of black and orange silk"
+sources:
+  - title: "The Historic Mansions and Buildings of Philadelphia (Thompson Westcott, 1877), chapter: Walnut Grove"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicmansions00west
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Today in History, October 2: Major John Andre and Brigadier General Benedict Arnold"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/today-in-history/october-02/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "History of Philadelphia, 1609 to 1884, volume 1 (J. Thomas Scharf and Thompson Westcott, 1884), Philadelphia during the Revolution"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofphilade01scha
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-knights-of-the-burning-mountain/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 107.6
+    audioBytes: 1723288
+    transcript:
+      totalS: 107.6
+      lines:
+        - text: Look at this square block, between Washington Avenue and Federal Street.
+          atS: 0
+          durationS: 4.28
+        - text: In May of seventeen seventy eight, there were knights on horseback here.
+          atS: 4.89
+          durationS: 3.81
+        - text: The British army held Philadelphia.
+          atS: 9.3
+          durationS: 2.19
+        - text: And they were losing the war.
+          atS: 11.88
+          durationS: 1.59
+        - text: Their general, Sir William Howe, was going home.
+          atS: 14.16
+          durationS: 3.33
+        - text: So his officers threw him a party.
+          atS: 18.19
+          durationS: 2.09
+        - text: It was called the Mischianza.
+          atS: 20.56
+          durationS: 2.5
+        - text: They rowed down the river in a parade of boats, with bands playing.
+          atS: 23.66
+          durationS: 3.76
+        - text: They marched up here to a country house called Walnut Grove, through two triumphal arches.
+          atS: 27.86
+          durationS: 6.12
+        - text: Then came a tournament.
+          atS: 34.37
+          durationS: 1.41
+        - text: Two teams of knights, in silk.
+          atS: 36.15
+          durationS: 2.17
+        - text: The Knights of the Blended Rose.
+          atS: 38.53
+          durationS: 1.75
+        - text: And the Knights of the Burning Mountain, whose motto was, I burn for ever.
+          atS: 40.61
+          durationS: 5
+        - text: Each knight fought for a young Philadelphia lady, dressed in a Turkish gown and a turban.
+          atS: 46.57
+          durationS: 5.43
+        - text: One of the knights was a captain named John Andre.
+          atS: 52.6
+          durationS: 3.46
+        - text: They broke their lances.
+          atS: 56.58
+          durationS: 1.49
+        - text: They fired pistols at each other, and missed.
+          atS: 58.24
+          durationS: 2.68
+        - text: They feasted, and danced until four in the morning.
+          atS: 61.2
+          durationS: 3.47
+        - text: But at about ten that night, an American captain named Allen McLane crept up to the British lines north of the city, and set them on fire.
+          atS: 65.05
+          durationS: 9.18
+        - text: Guns boomed across Philadelphia.
+          atS: 74.84
+          durationS: 2.64
+        - text: The ladies asked what it was.
+          atS: 78.08
+          durationS: 1.8
+        - text: Their knights told them, it was all part of the party.
+          atS: 80.32
+          durationS: 3.17
+        - text: One of the ladies on the list was Peggy Shippen.
+          atS: 84.44
+          durationS: 2.67
+        - text: The next spring, she married Benedict Arnold.
+          atS: 87.62
+          durationS: 2.97
+        - text: Two years later, Andre was caught with papers in his boot, for Arnold's plot to hand West Point to the British.
+          atS: 91.41
+          durationS: 7.49
+        - text: He was hanged as a spy.
+          atS: 99.22
+          durationS: 1.88
+        - text: Look across this block again.
+          atS: 101.91
+          durationS: 1.59
+        - text: A tournament, while the lines burned.
+          atS: 103.71
+          durationS: 2.23
+        - text: I burn for ever.
+          atS: 106.32
+          durationS: 1.32

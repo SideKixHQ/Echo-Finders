@@ -1,0 +1,179 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (East Falls), following docs/writing-echoes.md (format v2).
+# Listening spot: The east bank of the Schuylkill by the Falls Bridge, on Kelly Drive at the foot of East Falls, near where the Falls of Schuylkill ran before the river was dammed.
+# Position: east end of the Falls Bridge (Wikidata 40.0083, -75.1983), set on the east bank by Kelly Drive; checked as land against the coast map (medium confidence: the sources place the fishing at "the Falls", not at a point).
+id: philadelphia-forty-dozen-catfish
+title: "Forty Dozen Catfish"
+summary: "The Schuylkill once ran noisy over falls here, so thick with catfish that one man netted three thousand a night."
+place: "The Falls of Schuylkill, Kelly Drive at the Falls Bridge, East Falls, Philadelphia, Pennsylvania"
+at: { lat: 40.00880, lng: -75.19580 }
+triggerRadiusKm: 0.1
+category: food-drink
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, east-falls, schuylkill, catfish, fishing, taverns, food, wissahickon]
+teaser: "Two shillings for a hundred catfish."
+script: |
+  Look at the river here, by the bridge. This was the Falls of Schuylkill. The Lenape name for the river meant the noisy stream, because of its falls and ripples. And it was full of catfish.
+
+  An old fisherman named Godfrey Shrunk told the writer John Watson that with a dip net, here by the Falls, he could catch three thousand catfish in a single night. He sold them for two shillings a hundred.
+
+  Before the Revolution, a club of Welshmen built a clubhouse on a high rock on this bank. They called it Fort St. David's. They went to war, they said, on the Schuylkill's blue catfish. Shrunk caught fish for them, and the club would cook forty dozen catfish at a time. In seventeen seventy four, John Adams rode out here with friends to see it.
+
+  Then came the war. Hessian soldiers carried off the clubhouse walls to build their huts. It was never used again.
+
+  The catfish kept on. Taverns grew up along the river road, and families drove out from the city to eat catfish and drink coffee by the water. One, Mendenhall's, was famous for it.
+
+  But the river was changing, with dams and works across it. The great fishing at the Falls, Watson wrote, was ruined.
+
+  Look at the water again. Even the creek that runs in just upstream got its name from them. Wissahickon.
+
+  Catfish creek.
+pronunciations:
+  - written: "Schuylkill"
+    say: "SKOO-kul"
+  - written: "Wissahickon"
+    say: "wiss-uh-HICK-un"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "An old fisherman named Godfrey Shrunk told the writer John Watson that with a dip net, here by the Falls, he could catch three thousand catfish in a single night. He sold them for two shillings a hundred."
+    source: 1
+    quote: "Old Godfrey Shrunk, when about 74 years of age, a well known fisherman near the Falls in his younger days, has told me he could often catch with his dip-net 300U catfish in one night! Often he has sold them at two shillings a hundred."
+  - says: "he could catch three thousand catfish in a single night"
+    source: 3
+    quote: "Old Shrunk assured me he had caught as many as 3000 catfish of a night with a dip-net, near the Falls."
+  - says: "Before the Revolution, a club of Welshmen built a clubhouse on a high rock on this bank. They called it Fort St. David's. They went to war, they said, on the Schuylkill's blue catfish."
+    source: 2
+    quote: "The Society of Fort St. David's was a rival fishing company, founded about the same time as that of the Colony in Schuylkill, its members being Welshmen, of the order of Ancient Britons. Their \" fort\" was on a broad, high rock at the Falls of the Schuylkill, on the east bank, a rude timber shanty, but roomy and convenient. The Schuylkill was famous for its blue catfish, upon which the St. Davidians made war."
+  - says: "Shrunk caught fish for them, and the club would cook forty dozen catfish at a time."
+    source: 1
+    quote: "He used to catch fish for the Fishing Company of St. David, which used to cook 40 dozen of catfish at a time."
+  - says: "In seventeen seventy four, John Adams rode out here with friends to see it."
+    source: 4
+    quote: "Went with my colleagues and Messrs. Thomson and Mifflin to the Falls of Schuylkill, and viewed the museum at Fort St. David's"
+  - says: "Hessian soldiers carried off the clubhouse walls to build their huts. It was never used again."
+    source: 1
+    quote: "were borne oif by the Hessians for their huts 1777-8, and so changed and injured the place, that it was never used for its former purposes after the llevoluLion."
+  - says: "Taverns grew up along the river road, and families drove out from the city to eat catfish and drink coffee by the water. One, Mendenhall's, was famous for it."
+    source: 4
+    quote: "Mendenhall's was a famous catfish-and-coffee tavern upon the river-road drive, and was popular."
+  - says: "The great fishing at the Falls, Watson wrote, was ruined."
+    source: 1
+    quote: "the former attractions at the Falls, as a celebrated fishing place, having been ruined by the river obstructions"
+  - says: "Even the creek that runs in just upstream got its name from them. Wissahickon. Catfish creek."
+    source: 3
+    quote: "Wissahickon, (Wisamekhan,) catfish creek."
+  - says: "The Lenape name for the river meant the noisy stream, because of its falls and ripples."
+    source: 3
+    quote: "SchuylVill, (Ganshow^hanne,) the noisy stream, because of its falls and rrpples."
+  - says: "This was the Falls of Schuylkill."
+    source: 4
+    quote: "Went with my colleagues and Messrs. Thomson and Mifflin to the Falls of Schuylkill, and viewed the museum at Fort St. David's"
+  - says: "This was the Falls of Schuylkill."
+    source: 1
+    quote: "a well known fisherman near the Falls in his younger days"
+sources:
+  - title: "Annals of Philadelphia and Pennsylvania in the Olden Time, volume 1 (John F. Watson, 1856 edition)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/annalsofphiladelphi01wats
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "History of Philadelphia, 1609 to 1884, volume 1 (J. Thomas Scharf and Thompson Westcott, 1884)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofphilade01scha
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Annals of Philadelphia and Pennsylvania in the Olden Time, volume 2 (John F. Watson, 1887 edition)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/annalsofphiladelp02wats
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "History of Philadelphia, 1609 to 1884, volume 2 (J. Thomas Scharf and Thompson Westcott, 1884)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofphilade02scha
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-forty-dozen-catfish/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 92.2
+    audioBytes: 1475856
+    transcript:
+      totalS: 92.2
+      lines:
+        - text: Look at the river here, by the bridge.
+          atS: 0
+          durationS: 2.29
+        - text: This was the Falls of Schuylkill.
+          atS: 3.24
+          durationS: 1.96
+        - text: The Lenape name for the river meant the noisy stream, because of its falls and ripples.
+          atS: 6.15
+          durationS: 5.1
+        - text: And it was full of catfish.
+          atS: 11.69
+          durationS: 1.73
+        - text: An old fisherman named Godfrey Shrunk told the writer John Watson that with a dip net, here by the Falls, he could catch three thousand catfish in a single night.
+          atS: 14.54
+          durationS: 9.75
+        - text: He sold them for two shillings a hundred.
+          atS: 24.61
+          durationS: 2.29
+        - text: Before the Revolution, a club of Welshmen built a clubhouse on a high rock on this bank.
+          atS: 27.71
+          durationS: 4.97
+        - text: They called it Fort St.
+          atS: 33.19
+          durationS: 1.46
+        - text: David's.
+          atS: 34.68
+          durationS: 0.81
+        - text: They went to war, they said, on the Schuylkill's blue catfish.
+          atS: 35.93
+          durationS: 4.05
+        - text: Shrunk caught fish for them, and the club would cook forty dozen catfish at a time.
+          atS: 40.68
+          durationS: 5.02
+        - text: In seventeen seventy four, John Adams rode out here with friends to see it.
+          atS: 46.51
+          durationS: 4.86
+        - text: Then came the war.
+          atS: 51.81
+          durationS: 1.23
+        - text: Hessian soldiers carried off the clubhouse walls to build their huts.
+          atS: 53.43
+          durationS: 3.88
+        - text: It was never used again.
+          atS: 57.82
+          durationS: 1.57
+        - text: The catfish kept on.
+          atS: 59.71
+          durationS: 1.51
+        - text: Taverns grew up along the river road, and families drove out from the city to eat catfish and drink coffee by the water.
+          atS: 61.82
+          durationS: 7.13
+        - text: One, Mendenhall's, was famous for it.
+          atS: 69.56
+          durationS: 2.9
+        - text: But the river was changing, with dams and works across it.
+          atS: 73.06
+          durationS: 3.74
+        - text: The great fishing at the Falls, Watson wrote, was ruined.
+          atS: 77.24
+          durationS: 3.7
+        - text: Look at the water again.
+          atS: 81.9
+          durationS: 1.38
+        - text: Even the creek that runs in just upstream got its name from them.
+          atS: 83.97
+          durationS: 4
+        - text: Wissahickon.
+          atS: 88.42
+          durationS: 1.2
+        - text: Catfish creek.
+          atS: 90
+          durationS: 2.18

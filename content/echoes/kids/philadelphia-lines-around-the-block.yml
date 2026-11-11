@@ -1,0 +1,163 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Logan Square), following docs/writing-echoes.md (format v2). A children's echo; kids narrator per content/voices.yml.
+# Listening spot: The sidewalk in front of the Academy of Natural Sciences on the Benjamin Franklin Parkway at Logan Square.
+# Position: the Overture place "The Academy of Natural Sciences" (39.956855, -75.171185), on the Parkway frontage (high confidence for the building).
+# Note for the reviewer: NPR reported on 3 October 2026 that the museum had closed. The script says so; if it reopens, the ending changes. The 1868 display was the Academy's, not necessarily in this building; the script does not say which building.
+id: philadelphia-lines-around-the-block
+title: "Lines Around the Block"
+summary: "A children's echo: in 1868 this museum showed the world's first mounted dinosaur skeleton, and people queued around the block to see it."
+place: "Academy of Natural Sciences, Benjamin Franklin Parkway at Logan Square, Philadelphia, Pennsylvania"
+at: { lat: 39.95680, lng: -75.17110 }
+triggerRadiusKm: 0.05
+category: kids
+format: short
+durationS: 86
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [philadelphia, logan-square, kids, dinosaurs, hadrosaurus, academy-of-natural-sciences, museums]
+teaser: "Nobody anywhere had ever seen a dinosaur standing up."
+script: |
+  Look at the big museum in front of you. Its name is the Academy of Natural Sciences. And it is famous for one thing above all. Dinosaurs.
+
+  Long ago, in eighteen fifty eight, some enormous bones were dug up on a farm in Haddonfield, New Jersey, just across the river. They belonged to a dinosaur with a very long name. Hadrosaurus foulkii. It was the first nearly complete dinosaur skeleton ever found, anywhere in the world.
+
+  The bones came to the Academy. And in eighteen sixty eight, the Academy did something nobody had ever done. It put the dinosaur's skeleton together and stood it up, so people could see how big it really was.
+
+  It was the first mounted dinosaur skeleton anyone had ever seen. There were lines outside the door, going all the way around the block. So many people came, the museum had to start charging money to get in.
+
+  For more than a hundred and fifty years after that, children came to this museum to stand under dinosaurs. This October, after nearly two hundred years, the museum closed its doors. Lots of people are trying to save it.
+
+  Look at the doors. The very first dinosaur anyone ever saw standing up was shown by this museum.
+
+  Maybe one day, the lines will come back.
+pronunciations:
+  - written: "Hadrosaurus foulkii"
+    say: "had-ro-SOR-us FOLK-ee-eye"
+  - written: "Haddonfield"
+    say: "HAD-un-field"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Long ago, in eighteen fifty eight, some enormous bones were dug up on a farm in Haddonfield, New Jersey, just across the river."
+    source: 1
+    quote: "The significance of the dinosaur dates back to 1858, when Rauschenberger says bones were unearthed from a farm in Haddonfield."
+  - says: "It was the first nearly complete dinosaur skeleton ever found, anywhere in the world."
+    source: 1
+    quote: "\"This was the first nearly complete dinosaur skeleton that was ever found in the world,\" Rauschenberger said."
+  - says: "The bones came to the Academy."
+    source: 1
+    quote: "After excavation, the bones were taken to the Academy of Natural Sciences of Drexel University in Philadelphia."
+  - says: "And in eighteen sixty eight, the Academy did something nobody had ever done. It put the dinosaur's skeleton together and stood it up, so people could see how big it really was."
+    source: 1
+    quote: "In 1868, the academy became the first place in the world where people could see a mounted dinosaur on display."
+  - says: "It was the first mounted dinosaur skeleton anyone had ever seen."
+    source: 2
+    quote: "the Academy of Natural Sciences was the first place in the world to display a dinosaur skeleton, back in 1868."
+  - says: "There were lines outside the door, going all the way around the block. So many people came, the museum had to start charging money to get in."
+    source: 1
+    quote: "\"There were lines outside the door going around the block, and we actually had to start charging admission,\""
+  - says: "For more than a hundred and fifty years after that, children came to this museum to stand under dinosaurs."
+    source: 2
+    quote: "The Academy of Natural Sciences Museum's dinosaur skeleton exhibits have been popular with generations of children, since they first were exhibited in 1868."
+  - says: "This October, after nearly two hundred years, the museum closed its doors. Lots of people are trying to save it."
+    source: 2
+    quote: "Philadelphia's storied Academy of Natural Sciences closed down this week, amid an intense fight by local residents, politicians and scientists to save it."
+  - says: "Its name is the Academy of Natural Sciences."
+    source: 1
+    quote: "After excavation, the bones were taken to the Academy of Natural Sciences of Drexel University in Philadelphia."
+  - says: "And it is famous for one thing above all."
+    source: 2
+    quote: "The Academy of Natural Sciences Museum's dinosaur skeleton exhibits have been popular with generations of children, since they first were exhibited in 1868."
+  - says: "The very first dinosaur anyone ever saw standing up was shown by this museum."
+    source: 1
+    quote: "In 1868, the academy became the first place in the world where people could see a mounted dinosaur on display."
+  - says: "The very first dinosaur anyone ever saw standing up was shown by this museum."
+    source: 1
+    quote: "It was the first time a dinosaur skeleton was mounted"
+  - says: "Maybe one day, the lines will come back."
+    source: 1
+    quote: "There were lines outside the door going around the block, and we actually had to start charging admission,"
+  - says: "Maybe one day, the lines will come back."
+    source: 2
+    quote: "Philadelphia's storied Academy of Natural Sciences closed down this week, amid an intense fight by local residents, politicians and scientists to save it."
+sources:
+  - title: "The history behind Haddonfield's central landmark, a dinosaur nicknamed Haddy (2025)"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/hadrosaurus-foulkii-bronze-sculpture-new-jersey/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Philadelphia's Academy of Natural Sciences closes after nearly 200 years (Andrew Stelzer, 3 October 2026)"
+    publisher: "NPR"
+    url: https://www.npr.org/2026/10/03/nx-s1-5989716/philadelphia-academy-natural-sciences-museum-closure
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/philadelphia-lines-around-the-block/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 85.5
+    audioBytes: 1369695
+    transcript:
+      totalS: 85.5
+      lines:
+        - text: Look at the big museum in front of you.
+          atS: 0
+          durationS: 1.94
+        - text: Its name is the Academy of Natural Sciences.
+          atS: 2.26
+          durationS: 2.9
+        - text: And it is famous for one thing above all.
+          atS: 5.49
+          durationS: 2.23
+        - text: Dinosaurs.
+          atS: 8.42
+          durationS: 0.93
+        - text: Long ago, in eighteen fifty eight, some enormous bones were dug up on a farm in Haddonfield, New Jersey, just across the river.
+          atS: 10.3
+          durationS: 8.07
+        - text: They belonged to a dinosaur with a very long name.
+          atS: 19.06
+          durationS: 2.98
+        - text: Hadrosaurus foulkii.
+          atS: 22.49
+          durationS: 2.14
+        - text: It was the first nearly complete dinosaur skeleton ever found, anywhere in the world.
+          atS: 25.14
+          durationS: 5.1
+        - text: The bones came to the Academy.
+          atS: 30.74
+          durationS: 2.02
+        - text: And in eighteen sixty eight, the Academy did something nobody had ever done.
+          atS: 33.2
+          durationS: 5.06
+        - text: It put the dinosaur's skeleton together and stood it up, so people could see how big it really was.
+          atS: 38.78
+          durationS: 6.21
+        - text: It was the first mounted dinosaur skeleton anyone had ever seen.
+          atS: 45.69
+          durationS: 4.03
+        - text: There were lines outside the door, going all the way around the block.
+          atS: 50.23
+          durationS: 4.3
+        - text: So many people came, the museum had to start charging money to get in.
+          atS: 54.9
+          durationS: 4.2
+        - text: For more than a hundred and fifty years after that, children came to this museum to stand under dinosaurs.
+          atS: 59.49
+          durationS: 6.49
+        - text: This October, after nearly two hundred years, the museum closed its doors.
+          atS: 66.49
+          durationS: 5.52
+        - text: Lots of people are trying to save it.
+          atS: 72.52
+          durationS: 2.07
+        - text: Look at the doors.
+          atS: 74.97
+          durationS: 1.2
+        - text: The very first dinosaur anyone ever saw standing up was shown by this museum.
+          atS: 76.34
+          durationS: 5.77
+        - text: Maybe one day, the lines will come back.
+          atS: 82.92
+          durationS: 2.62

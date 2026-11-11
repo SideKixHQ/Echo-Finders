@@ -1,0 +1,183 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Society Hill), following docs/writing-echoes.md (format v2). Legend, told as legend; male narrator per content/voices.yml.
+# Listening spot: East sidewalk of South Second Street just below Spruce, opposite the house the 1827 account gives as Howe's headquarters (fourth door below Spruce), near where the Loxley House stood at the corner of Little Dock Street.
+# Position: Second and Spruce from the Overture street map (39.944502, -75.144929), moved a few doors south onto the east side (medium confidence: the house was demolished before 1877 and Little Dock Street's corner was not matched on the modern map).
+id: philadelphia-unless-the-walls-could-speak
+title: "Unless the Walls Could Speak"
+summary: "The legend: a Quaker named Lydia Darragh listened at a keyhole here and warned Washington of a British attack. The dates do not quite fit."
+place: "Site of the Loxley House, South Second Street at Spruce Street, Society Hill, Philadelphia, Pennsylvania"
+at: { lat: 39.94428, lng: -75.14480 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 83
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The Lydia Darragh account first appeared in print in the American Quarterly Review in 1827, fifty years after the event. Thompson Westcott (1877) found that the British marched on 3 December 1777, not the 4th, that Washington's camp already expected the move from 28 November, and that his own officers' letters put the warning days before hers. He calls the account doubtful. The script tells it as a legend and gives his objections.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 8
+quality: 0.8
+tags: [philadelphia, society-hill, revolution, military, british-occupation, lydia-darragh, spy, legend, quakers]
+teaser: "She took off her shoes, and put her ear to the keyhole."
+script: |
+  Look across Second Street, just below the corner of Spruce. This is a legend, and a good one. Whether it happened is another matter.
+
+  In the winter of seventeen seventy seven, the British held Philadelphia. Over there, the story goes, stood the house of the British commander. And on this side, in an old house with a balcony, lived a Quaker woman named Lydia Darragh.
+
+  One night, a British officer asked to use her back room for a meeting. He told her to send the family to bed early. So she did. Then she took off her shoes, put her ear to the keyhole, and heard an order read out. The whole army would march out and attack General Washington at Whitemarsh.
+
+  The next morning, she said she needed flour from the mill at Frankford. She got a pass through the British lines, left her bag at the mill, and kept walking. She met an American officer she knew, and told him everything.
+
+  When the British got to Whitemarsh, the Americans were waiting. Back in Philadelphia, the officer called her upstairs and locked the door. I am entirely at a loss, he said, to imagine who gave General Washington information. Unless the walls of the house could speak.
+
+  Here is the trouble. Nobody printed this until fifty years later. One careful historian checked the dates, and found that Washington's camp knew the British were coming days before Lydia's walk. By his reckoning, her secret was stale.
+
+  So maybe she walked to Frankford for nothing.
+
+  Or maybe the walls really did speak.
+pronunciations:
+  - written: "Darragh"
+    say: "DAR-uh"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In the winter of seventeen seventy seven, the British held Philadelphia. Over there, the story goes, stood the house of the British commander."
+    source: 1
+    quote: "When the British army had possession of Philadelphia, General Howe's head-quarters were in Second street, the fourth door below Spruce"
+  - says: "And on this side, in an old house with a balcony, lived a Quaker woman named Lydia Darragh."
+    source: 1
+    quote: "Directly opposite resided William and Lydia Darrach, members of the Society of Friends."
+  - says: "And on this side, in an old house with a balcony, lived a Quaker woman named Lydia Darragh."
+    source: 1
+    quote: "The Loxley House is associated in tradition with a story of Lydia Darrach (or Darragh)"
+  - says: "One night, a British officer asked to use her back room for a meeting. He told her to send the family to bed early."
+    source: 1
+    quote: "fixed upon one of their back chambers for private conference"
+  - says: "One night, a British officer asked to use her back room for a meeting. He told her to send the family to bed early."
+    source: 1
+    quote: "they wished the family to retire early to bed"
+  - says: "Then she took off her shoes, put her ear to the keyhole, and heard an order read out."
+    source: 1
+    quote: "She took off her shoes, put her ear to the keyhole of the conclave, and overheard an order read"
+  - says: "The whole army would march out and attack General Washington at Whitemarsh."
+    source: 1
+    quote: "for all the British troops to march out late on the evening of the 4th and attack General Washington's army, then encamped at Whitemarsh."
+  - says: "The next morning, she said she needed flour from the mill at Frankford."
+    source: 1
+    quote: "She informed her family that, as she was in want of flour, she would go to Frankford for some."
+  - says: "She got a pass through the British lines, left her bag at the mill, and kept walking."
+    source: 1
+    quote: "a pass through the British troops on the lines. Leaving her bag at the mill, she hastened through the lines"
+  - says: "She met an American officer she knew, and told him everything."
+    source: 1
+    quote: "encountered on her way an American lieutenant-colonel (Craig of the Light Horse)"
+  - says: "When the British got to Whitemarsh, the Americans were waiting."
+    source: 1
+    quote: "When we arrived near Whitemarsh we found all their cannon mounted and the troops prepared to receive us"
+  - says: "Back in Philadelphia, the officer called her upstairs and locked the door."
+    source: 1
+    quote: "requested her to walk up to his room, as he wished to put some questions ; and when he locked the door"
+  - says: "I am entirely at a loss, he said, to imagine who gave General Washington information."
+    source: 1
+    quote: "I am entirely at a loss to imagine who gave General Washington information of our intended attack, unless the walls of 13 194 HISTORIC MANSIONS OF PHILADELPHIA. the house could speak."
+  - says: "Nobody printed this until fifty years later."
+    source: 1
+    quote: "which first made its appearance in the American Quarterly Review of 1827"
+  - says: "One careful historian checked the dates, and found that Washington's camp knew the British were coming days before Lydia's walk."
+    source: 1
+    quote: "shows that THE LOXLEY HOUSE. 195 Washington had knowledge of the intended movement on that day, if not before."
+  - says: "By his reckoning, her secret was stale."
+    source: 1
+    quote: "the news which she brought was stale."
+  - says: "So maybe she walked to Frankford for nothing."
+    source: 1
+    quote: "These references are sufficient to throw great doubt over the whole story of Lydia Darrach"
+  - says: "This is a legend, and a good one."
+    source: 1
+    quote: "The Loxley House is associated in tradition with a story of Lydia Darrach (or Darragh)"
+sources:
+  - title: "The Historic Mansions and Buildings of Philadelphia (Thompson Westcott, 1877), chapter: The Loxley House"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicmansions00west
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/philadelphia-unless-the-walls-could-speak/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 82.9
+    audioBytes: 1328317
+    transcript:
+      totalS: 82.9
+      lines:
+        - text: Look across Second Street, just below the corner of Spruce.
+          atS: 0
+          durationS: 3.2
+        - text: This is a legend, and a good one.
+          atS: 3.38
+          durationS: 2.25
+        - text: Whether it happened is another matter.
+          atS: 5.96
+          durationS: 2.08
+        - text: In the winter of seventeen seventy seven, the British held Philadelphia.
+          atS: 8.64
+          durationS: 4.21
+        - text: Over there, the story goes, stood the house of the British commander.
+          atS: 13.23
+          durationS: 3.7
+        - text: And on this side, in an old house with a balcony, lived a Quaker woman named Lydia Darragh.
+          atS: 17.15
+          durationS: 5.14
+        - text: One night, a British officer asked to use her back room for a meeting.
+          atS: 22.67
+          durationS: 3.52
+        - text: He told her to send the family to bed early.
+          atS: 26.44
+          durationS: 1.96
+        - text: So she did.
+          atS: 28.57
+          durationS: 0.79
+        - text: Then she took off her shoes, put her ear to the keyhole, and heard an order read out.
+          atS: 29.8
+          durationS: 4.6
+        - text: The whole army would march out and attack General Washington at Whitemarsh.
+          atS: 34.78
+          durationS: 4.03
+        - text: The next morning, she said she needed flour from the mill at Frankford.
+          atS: 39.2
+          durationS: 3.4
+        - text: She got a pass through the British lines, left her bag at the mill, and kept walking.
+          atS: 42.98
+          durationS: 4.23
+        - text: She met an American officer she knew, and told him everything.
+          atS: 47.65
+          durationS: 3.29
+        - text: When the British got to Whitemarsh, the Americans were waiting.
+          atS: 51.38
+          durationS: 3.03
+        - text: Back in Philadelphia, the officer called her upstairs and locked the door.
+          atS: 54.52
+          durationS: 3.77
+        - text: I am entirely at a loss, he said, to imagine who gave General Washington information.
+          atS: 58.54
+          durationS: 4.89
+        - text: Unless the walls of the house could speak.
+          atS: 63.6
+          durationS: 2.15
+        - text: Here is the trouble.
+          atS: 65.82
+          durationS: 0.88
+        - text: Nobody printed this until fifty years later.
+          atS: 66.82
+          durationS: 2.29
+        - text: One careful historian checked the dates, and found that Washington's camp knew the British were coming days before Lydia's walk.
+          atS: 69.28
+          durationS: 6.84
+        - text: By his reckoning, her secret was stale.
+          atS: 76.44
+          durationS: 2.11
+        - text: So maybe she walked to Frankford for nothing.
+          atS: 78.7
+          durationS: 2.07
+        - text: Or maybe the walls really did speak.
+          atS: 80.95
+          durationS: 2
