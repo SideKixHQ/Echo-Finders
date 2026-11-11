@@ -1,0 +1,185 @@
+# Drafted by Claude Code (2026-11-10) for the New Orleans City Pass, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk at the river end of Elysian Fields Avenue, at Decatur Street, looking up the avenue toward the lake.
+# Position: Fitted Elysian Fields Avenue and Decatur Street intersection from Overture street segments (medium confidence).
+id: new-orleans-the-train-with-sails
+title: "The Train With Sails"
+summary: "A railroad ran down the middle of Elysian Fields in 1831. Horses pulled the first train, and the rails jumped up through the floor."
+place: "Elysian Fields Avenue at Decatur Street, Faubourg Marigny, New Orleans, Louisiana"
+at: { lat: 29.96262, lng: -90.05637 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [new-orleans, marigny, elysian-fields, railroads, kids]
+teaser: "When the engine broke down, the story goes, they put up sails."
+script: |
+  Look up Elysian Fields Avenue, away from the river. It runs wide and straight, as far as you can see.
+
+  Here is why. A railroad used to run right up the middle of it.
+
+  It was called the Pontchartrain Railroad, and it was one of the first railroads in all of America. It ran four and a half miles, from the river out to a little town on Lake Pontchartrain called Milneburg.
+
+  The men in charge had hardly ever seen a railroad. They could not decide whether the rails should be made of iron or of cedar wood. And in eighteen thirty one, when the very first train ran, it was pulled by horses!
+
+  Then a man named Thomas Shields shipped a little steam engine down the river from Cincinnati to try it out. It was not strong enough. Poor Shields had spent all his money on it, and he could not even pay his hotel bill. So the railroad's boss, Captain John Grant, bought it for a thousand dollars, and used it to turn a grindstone in the workshop.
+
+  The iron rails had a bad habit. Sometimes a strip of iron would spring loose and poke right up through the floor of a car. People called them snake heads.
+
+  And there is a story, just a story, that when the little engine broke down, the crew would put up sails, and sail the train home.
+
+  Look up the avenue again. Picture a little train out there in the middle, with its sails flapping in the breeze.
+
+  Next stop, the lake.
+detail: >-
+  The 1938 New Orleans City Guide dates the first train to 1831; the 1885 Historical Sketch Book says the line opened in 1830 and calls it the first railroad for general transportation completed in the United States. The sails are reported only as hearsay. The line later became part of the Louisville and Nashville railroad, and its long time nickname was Smoky Mary.
+pronunciations:
+  - written: "Pontchartrain"
+    say: "PONT-chuh-train"
+  - written: "Milneburg"
+    say: "MILL-en-burg"
+  - written: "Elysian"
+    say: "ee-LEE-zhun"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It runs wide and straight, as far as you can see."
+    source: 2
+    quote: "The road runs along the levee and thence out Elysian Fields street, due north in a straight line"
+  - says: "A railroad used to run right up the middle of it."
+    source: 1
+    quote: "Elysian Fields Avenue marks the site of the old Marigny Canal and the Pontchartrain Railroad"
+  - says: "It was called the Pontchartrain Railroad, and it was one of the first railroads in all of America."
+    source: 1
+    quote: "One of the first railroads to be completed in America and the first built west of the Alleghenies was established in New Orleans."
+  - says: "It ran four and a half miles, from the river out to a little town on Lake Pontchartrain called Milneburg."
+    source: 1
+    quote: "In 1831 the Pontchartrain Railroad was put into operation between New Orleans and Milneburg, a distance of four and a half miles."
+  - says: "The men in charge had hardly ever seen a railroad."
+    source: 1
+    quote: "few of whom had ever seen a railroad"
+  - says: "They could not decide whether the rails should be made of iron or of cedar wood."
+    source: 1
+    quote: "whether the rails used should be of iron or cedar"
+  - says: "And in eighteen thirty one, when the very first train ran, it was pulled by horses!"
+    source: 1
+    quote: "In 1831, after a year of construction, the first train, drawn by horses, was run over the imperfect tracks."
+  - says: "Then a man named Thomas Shields shipped a little steam engine down the river from Cincinnati to try it out."
+    source: 2
+    quote: "It  was  built  in  Cincinnati,  Ohio,  by  a  man  named  Thomas  Shields"
+  - says: "Then a man named Thomas Shields shipped a little steam engine down the river from Cincinnati to try it out."
+    source: 2
+    quote: "he  shipped  it  on  a  steamboat,  and  in  1832  arrived  in  New Orleans."
+  - says: "It was not strong enough."
+    source: 2
+    quote: "The  engine  did  not  possess  power  enough  to  make  the  apparatus  a  success"
+  - says: "Poor Shields had spent all his money on it, and he could not even pay his hotel bill."
+    source: 2
+    quote: "The  latter  had  expended  all  his  money  on  the  perfection  of  his engine"
+  - says: "Poor Shields had spent all his money on it, and he could not even pay his hotel bill."
+    source: 2
+    quote: "could  not liquidate  his  board  bill  at  the  hotel."
+  - says: "So the railroad's boss, Captain John Grant, bought it for a thousand dollars, and used it to turn a grindstone in the workshop."
+    source: 2
+    quote: "He  therefore  made  Shields  an  offer  of  $1,000  for  the  locomotive,  which  was  accepted"
+  - says: "So the railroad's boss, Captain John Grant, bought it for a thousand dollars, and used it to turn a grindstone in the workshop."
+    source: 2
+    quote: "use  it  as  a  motor  to  turn  a  lathe  and  grindstone  in  the  repair  shops  of  the  company."
+  - says: "The iron rails had a bad habit."
+    source: 1
+    quote: "These rails became known as ‘snake-heads,’ and constituted a great peril to passengers and crew."
+  - says: "Sometimes a strip of iron would spring loose and poke right up through the floor of a car."
+    source: 1
+    quote: "The iron strips were wont to free themselves as the train passed over, and turn suddenly upward with sufficient force to pierce the floors of the cars"
+  - says: "People called them snake heads."
+    source: 1
+    quote: "These rails became known as ‘snake-heads,’"
+  - says: "And there is a story, just a story, that when the little engine broke down, the crew would put up sails, and sail the train home."
+    source: 1
+    quote: "It is said that whenever the feeble locomotive broke down, the crew would hoist sails and bring the little train gliding into ‘port,’ its sails flapping in the breeze."
+  - says: "Next stop, the lake."
+    source: 1
+    quote: "between New Orleans and Milneburg"
+sources:
+  - title: "New Orleans City Guide (Federal Writers' Project of the Works Progress Administration, 1938)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/neworleanscity00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Historical Sketch Book and Guide to New Orleans and Environs (Will H. Coleman, 1885)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicalsketch00hear
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/new-orleans-the-train-with-sails/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 92.3
+    audioBytes: 1477528
+    transcript:
+      totalS: 92.3
+      lines:
+        - text: Look up Elysian Fields Avenue, away from the river.
+          atS: 0
+          durationS: 3.84
+        - text: It runs wide and straight, as far as you can see.
+          atS: 4.12
+          durationS: 3.4
+        - text: Here is why.
+          atS: 7.96
+          durationS: 1.2
+        - text: A railroad used to run right up the middle of it.
+          atS: 9.48
+          durationS: 2.74
+        - text: It was called the Pontchartrain Railroad, and it was one of the first railroads in all of America.
+          atS: 12.47
+          durationS: 6.66
+        - text: It ran four and a half miles, from the river out to a little town on Lake Pontchartrain called Milneburg.
+          atS: 19.46
+          durationS: 7.35
+        - text: The men in charge had hardly ever seen a railroad.
+          atS: 27.25
+          durationS: 3.11
+        - text: They could not decide whether the rails should be made of iron or of cedar wood.
+          atS: 30.68
+          durationS: 4.41
+        - text: And in eighteen thirty one, when the very first train ran, it was pulled by horses!
+          atS: 35.42
+          durationS: 5.92
+        - text: Then a man named Thomas Shields shipped a little steam engine down the river from Cincinnati to try it out.
+          atS: 41.73
+          durationS: 6.44
+        - text: It was not strong enough.
+          atS: 48.55
+          durationS: 1.45
+        - text: Poor Shields had spent all his money on it, and he could not even pay his hotel bill.
+          atS: 50.39
+          durationS: 5.07
+        - text: So the railroad's boss, Captain John Grant, bought it for a thousand dollars, and used it to turn a grindstone in the workshop.
+          atS: 55.79
+          durationS: 7.98
+        - text: The iron rails had a bad habit.
+          atS: 64.46
+          durationS: 2.08
+        - text: Sometimes a strip of iron would spring loose and poke right up through the floor of a car.
+          atS: 66.98
+          durationS: 5.25
+        - text: People called them snake heads.
+          atS: 72.55
+          durationS: 1.93
+        - text: And there is a story, just a story, that when the little engine broke down, the crew would put up sails, and sail the train home.
+          atS: 74.72
+          durationS: 7.8
+        - text: Look up the avenue again.
+          atS: 83.13
+          durationS: 1.48
+        - text: Picture a little train out there in the middle, with its sails flapping in the breeze.
+          atS: 84.85
+          durationS: 5.15
+        - text: Next stop, the lake.
+          atS: 90.33
+          durationS: 1.95

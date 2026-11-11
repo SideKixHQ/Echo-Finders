@@ -1,0 +1,189 @@
+# Drafted by Claude Code (2026-11-10) for the New Orleans City Pass, following docs/writing-echoes.md.
+# Listening spot: The old neutral ground of North Claiborne Avenue under the I-10 Claiborne Expressway at Ursulines Avenue, among the painted support columns; public ground.
+# Position: Fitted North Claiborne Avenue and Ursulines Avenue intersection from Overture street segments; set on the median under the expressway (medium confidence).
+id: new-orleans-the-oaks-on-the-pillars
+title: "The Oaks on the Pillars"
+summary: "North Claiborne Avenue was an oak lined boulevard, the main street of Black New Orleans, until the day after Mardi Gras in 1968."
+place: "Under the Claiborne Expressway, North Claiborne Avenue at Ursulines Avenue, Treme, New Orleans, Louisiana"
+at: { lat: 29.96725, lng: -90.07058 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 91
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, treme, claiborne-avenue, civil-rights, mardi-gras]
+teaser: "There used to be real ones, right where you are standing."
+script: |
+  Look up at the highway over your head, and at the concrete columns holding it up. Some of them have trees painted on them.
+
+  There used to be real ones, right here.
+
+  Before the highway, North Claiborne Avenue was a boulevard lined with oak trees and azaleas. People called it the Main Street of Black New Orleans. Drug stores, an insurance company, a theater, a toy store, restaurants. Black families could not shop on Canal Street then, so this was where you went. People played football and baseball under the trees, and Mardi Gras parades ended here, in celebration.
+
+  Amy Stelly has lived in this neighborhood her whole life. She was a very young child, she says, when the interstate was rammed through. She has been fighting to take it down for as long as she can remember.
+
+  The work began on the day after Mardi Gras, nineteen sixty eight. The oaks were ripped out of the ground, and the pillars went up in their place. Hundreds of homes and dozens of businesses along the avenue were destroyed. The highway was finished that same year.
+
+  Years later, a woman named Barbara Lacen Keller stood under here, leaning against one of the painted pillars, and told a reporter what she thought. Claiborne Avenue, no matter what you do, will always be ours.
+
+  Look at the painted trees again.
+
+  They are standing where the oaks stood.
+detail: >-
+  Sources date the start of demolition to the day after Mardi Gras 1968 (NBC News, and Amy Stelly to WBUR); the Boston Globe gives 1968 for completion, while other accounts place the start of work in 1966. The painted columns are the work of local artists; this echo does not attribute any single painting.
+pronunciations:
+  - written: "Stelly"
+    say: "STEL-ee"
+  - written: "Lacen Keller"
+    say: "LAY-sun KELL-er"
+  - written: "Treme"
+    say: "truh-MAY"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Some of them have trees painted on them."
+    source: 2
+    quote: "Barbara Lacen-Keller under the Claiborne Corridor leaning against one of the pillars with a painted tree."
+  - says: "Some of them have trees painted on them."
+    source: 2
+    quote: "Pillars that replaced white oaks are now splashed with local artists’ renderings of New Orleans heroes and traditions."
+  - says: "There used to be real ones, right here."
+    source: 2
+    quote: "North Claiborne Avenue, from the early 20th century until the 1960s, was lined with white oak trees"
+  - says: "Before the highway, North Claiborne Avenue was a boulevard lined with oak trees and azaleas."
+    source: 1
+    quote: "Before it was bulldozed to make way for the expressway, North Claiborne Avenue was a boulevard lined with live oak trees and azalea bushes."
+  - says: "People called it the Main Street of Black New Orleans."
+    source: 2
+    quote: "Once called “the Main Street of Black New Orleans,”"
+  - says: "Drug stores, an insurance company, a theater, a toy store, restaurants."
+    source: 2
+    quote: "multiple drug stores, an insurance company, a theater, a toy store, numerous restaurants and a college for Black students."
+  - says: "Black families could not shop on Canal Street then, so this was where you went."
+    source: 1
+    quote: "it was our commercial center at a time when Black people could not shop on Canal Street because New Orleans, like the rest of the South, was segregated. So Claiborne was the place to go."
+  - says: "People played football and baseball under the trees, and Mardi Gras parades ended here, in celebration."
+    source: 1
+    quote: "People played football and baseball in the open spaces along the boulevard, and Mardis Gras parades ended with celebrations on Claiborne ."
+  - says: "Amy Stelly has lived in this neighborhood her whole life."
+    source: 3
+    quote: "She's lived in the neighborhood her entire life"
+  - says: "She was a very young child, she says, when the interstate was rammed through."
+    source: 1
+    quote: "I was a very young child when the interstate was rammed through the neighborhood,"
+  - says: "She has been fighting to take it down for as long as she can remember."
+    source: 3
+    quote: "For as long as she can remember, Stelly has been fighting to dismantle the Claiborne Expressway."
+  - says: "The work began on the day after Mardi Gras, nineteen sixty eight."
+    source: 2
+    quote: "But that all changed the day after Mardi Gras in 1968"
+  - says: "The work began on the day after Mardi Gras, nineteen sixty eight."
+    source: 1
+    quote: "The day after Mardi Gras in 1968, however, Stelly says demolition began."
+  - says: "The oaks were ripped out of the ground, and the pillars went up in their place."
+    source: 2
+    quote: "those landmark white oaks were ripped from the ground and replaced with sterile cement pillars that supported the I-10 expressway."
+  - says: "Hundreds of homes and dozens of businesses along the avenue were destroyed."
+    source: 2
+    quote: "Hundreds of residences and dozens of businesses along this vibrant economic corridor were destroyed."
+  - says: "The highway was finished that same year."
+    source: 4
+    quote: "The elevated Claiborne Expressway was built atop Claiborne Avenue and completed in 1968."
+  - says: "Years later, a woman named Barbara Lacen Keller stood under here, leaning against one of the painted pillars, and told a reporter what she thought."
+    source: 2
+    quote: "Barbara Lacen-Keller under the Claiborne Corridor leaning against one of the pillars with a painted tree."
+  - says: "Claiborne Avenue, no matter what you do, will always be ours."
+    source: 2
+    quote: "Claiborne Avenue, no matter what you do, will always be ours,"
+  - says: "They are standing where the oaks stood."
+    source: 2
+    quote: "Pillars that replaced white oaks are now splashed with local artists’ renderings"
+sources:
+  - title: "How A Black Neighborhood In New Orleans Fits Into Biden's Plan To Fix Urban Design Inequities"
+    publisher: "WBUR, Here & Now"
+    url: https://www.wbur.org/hereandnow/2021/04/02/highway-new-orleans-treme
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Bulldozed and bisected: Highway construction built a legacy of inequality"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/specials/america-highways-inequality/index.html
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "A New Orleans neighborhood confronts the racist legacy of a toxic stretch of highway"
+    publisher: "NPR"
+    url: https://www.npr.org/sections/health-shots/2023/12/17/1218584283/a-new-orleans-neighborhood-confronts-the-racist-legacy-of-a-toxic-stretch-of-hig
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Addressing a 'racist highway' in New Orleans is part of Biden's infrastructure plan"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/2021/04/01/nation/addressing-racist-highway-new-orleans-is-part-bidens-infrastructure-plan/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-oaks-on-the-pillars/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 90.6
+    audioBytes: 1449943
+    transcript:
+      totalS: 90.6
+      lines:
+        - text: Look up at the highway over your head, and at the concrete columns holding it up.
+          atS: 0
+          durationS: 4.04
+        - text: Some of them have trees painted on them.
+          atS: 4.64
+          durationS: 2.11
+        - text: There used to be real ones, right here.
+          atS: 7.2
+          durationS: 2.71
+        - text: Before the highway, North Claiborne Avenue was a boulevard lined with oak trees and azaleas.
+          atS: 11.02
+          durationS: 6.08
+        - text: People called it the Main Street of Black New Orleans.
+          atS: 17.7
+          durationS: 2.9
+        - text: Drug stores, an insurance company, a theater, a toy store, restaurants.
+          atS: 20.99
+          durationS: 4.54
+        - text: Black families could not shop on Canal Street then, so this was where you went.
+          atS: 26.23
+          durationS: 4.64
+        - text: People played football and baseball under the trees, and Mardi Gras parades ended here, in celebration.
+          atS: 31.47
+          durationS: 6.3
+        - text: Amy Stelly has lived in this neighborhood her whole life.
+          atS: 38.73
+          durationS: 3.34
+        - text: She was a very young child, she says, when the interstate was rammed through.
+          atS: 42.32
+          durationS: 4.9
+        - text: She has been fighting to take it down for as long as she can remember.
+          atS: 47.66
+          durationS: 3.45
+        - text: The work began on the day after Mardi Gras, nineteen sixty eight.
+          atS: 51.92
+          durationS: 4
+        - text: The oaks were ripped out of the ground, and the pillars went up in their place.
+          atS: 56.31
+          durationS: 4.09
+        - text: Hundreds of homes and dozens of businesses along the avenue were destroyed.
+          atS: 60.78
+          durationS: 4.67
+        - text: The highway was finished that same year.
+          atS: 65.96
+          durationS: 2.41
+        - text: Years later, a woman named Barbara Lacen Keller stood under here, leaning against one of the painted pillars, and told a reporter what she thought.
+          atS: 69.07
+          durationS: 10.76
+        - text: Claiborne Avenue, no matter what you do, will always be ours.
+          atS: 80.78
+          durationS: 4.56
+        - text: Look at the painted trees again.
+          atS: 85.95
+          durationS: 1.94
+        - text: They are standing where the oaks stood.
+          atS: 88.33
+          durationS: 2.23
