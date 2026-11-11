@@ -3,17 +3,17 @@
 # Position: the House wing of the Capitol, south of the Rotunda's centre (38.88990, -77.00906); which staircase is meant is not given in the source, so the radius covers the wing (low confidence on the exact stair).
 id: dc-the-spots-on-the-stairs
 title: "The Spots on the Stairs"
-summary: "In 1890 a reporter shot a congressman in the House wing. The legend says the stains on the stairs are his, and he trips reporters."
+summary: "In 1890 a reporter shot a former congressman in the House wing. The legend says the stains on the stairs are his, and he trips reporters."
 place: "House wing staircase, U.S. Capitol, Washington, D.C."
 at: { lat: 38.88925, lng: -77.00905 }
 triggerRadiusKm: 0.06
 category: legend
 format: short
-durationS: 50
+durationS: 54
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A legend. The 1890 shooting is history, reported by CBS News (Associated Press) from Capitol ghost-tale collections; the stains and the tripping are folklore, and the script says so. Nothing supernatural is claimed. The court outcome for Kincaid is not in the fetched source and is not stated.
+  A legend. The 1890 shooting is history, reported by CBS News (Associated Press) from Capitol ghost-tale collections; the stains and the tripping are folklore, and the script says so. Nothing supernatural is claimed. The acquittal is from the Alexandria Gazette of 9 April 1891; Taulbee's death eleven days later is from the Architect of the Capitol.
 minAge: 12
 quality: 0.75
 inside: true
@@ -26,7 +26,7 @@ script: |
 
   This is a legend. Hold on to that.
 
-  The history first. In eighteen ninety, a newspaper correspondent named Charles Kincaid had an argument with William Taulbee, a congressman from Kentucky. Here in the House wing, Kincaid shot him. Taulbee died.
+  The history first. In eighteen ninety, a newspaper correspondent named Charles Kincaid had an argument with William Taulbee, a former congressman from Kentucky. Here in the House wing, Kincaid shot him. Taulbee died eleven days later. Kincaid was tried, and acquitted.
 
   Now the legend. Some people say that the dark spots on one of the staircases here are Taulbee's blood. And they say Taulbee has never forgiven the press. When a reporter takes these stairs, the story goes, something catches their foot.
 
@@ -41,19 +41,46 @@ pronunciations:
   - written: Kincaid
     say: kin-KADE
 detail: >-
-  Told as legend. CBS describes the place as "a House hallway" with "the stairway"; it does not say which staircase, and the script does not either. A reviewer should add a contemporary record of the 1890 shooting (the Evening Star's coverage is in Chronicling America) and of Kincaid's trial before approval.
+  Told as legend. CBS describes the place as "a House hallway" with "the stairway"; it does not say which staircase, and the script does not either. Second pass (2026-11-11): the Architect of the Capitol, the Evening Star's year in review for 1890 and the Alexandria Gazette (1891) now back the shooting, the death and the acquittal. Taulbee had left Congress by 1890 (the AOC calls him "the former member", the Star "ex-Congressman"), so the script now says former congressman. The AOC says he was shot "on the stairs" and died 11 days later; the Star's year review misprints the date as the 2d of February.
 editorial: draft
-factCheck: single-source
+factCheck: corroborated
 claims:
-  - says: "In eighteen ninety, a newspaper correspondent named Charles Kincaid had an argument with William Taulbee, a congressman from Kentucky. Here in the House wing, Kincaid shot him."
+  - says: "In eighteen ninety, a newspaper correspondent named Charles Kincaid had an argument with William Taulbee, a former congressman from Kentucky. Here in the House wing, Kincaid shot him."
     source: 1
     quote: "Disbelieving reporters might avoid a House hallway where in 1890 journalist Charles Kincaid shot and killed Kentucky congressman William Taulbee after an argument."
   - says: "Some people say that the dark spots on one of the staircases here are Taulbee's blood."
     source: 1
     quote: "The legend is that black spots on the stairway are Taulbee's blood, and that Taulbee gets his revenge by tripping up reporters on the stairs."
+  - says: "a former congressman from Kentucky. Here in the House wing, Kincaid shot him. Taulbee died eleven days later."
+    source: 2
+    quote: "By 1890, the reporter had enough of the harassment and shot Taulbee on the stairs. He died 11 days later."
+  - says: "a former congressman from Kentucky. Here in the House wing, Kincaid shot him."
+    source: 3
+    quote: "Charles Kincaid, a young newspaper man, shot ex-Congressman Taulbee of Kentucky. The shooting took place in the Capitol at Washington."
+  - says: "Kincaid was tried, and acquitted."
+    source: 4
+    quote: "ACQUITTAL of Kincaid was inacoord ace- with law, jas'.ice ard the rights of man."
+  - says: "Some people say that the dark spots on one of the staircases here are Taulbee's blood."
+    source: 2
+    quote: "A stain on the stairs in the Capitol building is often attributed to the former congressman's blood."
 sources:
   - title: "Haunted House On The Hill"
     publisher: "CBS News (Associated Press)"
     url: https://www.cbsnews.com/news/haunted-house-on-the-hill/
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+  - title: "Haunted Halls of Congress: 5 Creepy Capitol Legends"
+    publisher: "Architect of the Capitol"
+    url: https://www.aoc.gov/blog/haunted-halls-congress-5-creepy-capitol-legends
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 31 December 1890, page 6: A Year's Record"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1890-12-31/ed-1/?sp=6
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Alexandria Gazette, 9 April 1891, page 2: the acquittal of Kincaid"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn85025007/1891-04-09/ed-1/?sp=2
+    retrievedAt: "2026-11-11"
+    rights: public-domain

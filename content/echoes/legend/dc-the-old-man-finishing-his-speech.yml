@@ -26,24 +26,24 @@ script: |
 
   One of its members was a former President. After he left the White House, John Quincy Adams got himself elected to the House, and took a seat in this room.
 
-  In eighteen forty eight, he was on his feet in this chamber, speaking against the war with Mexico. And he collapsed. A stroke. They carried him to a room just off the floor. He died there two days later. That much is history.
+  In eighteen forty eight, during a debate in this chamber, he collapsed at his desk. A stroke. They carried him to a room just off the floor. He died there two days later. That much is history.
 
   What comes next is a legend. There is no proof of any of it.
 
-  Capitol workers have told of hearing footsteps in here, when the hall is empty. Some say it is Adams. Some say they have heard an old man's voice, still trying to finish his speech.
+  Capitol workers have told of hearing footsteps in here, when the hall is empty. Some say it is Adams. Some say they have heard an old man's voice, still trying to finish his speech. Others say it shouts one word. No.
 
   Stand still for a moment, and listen.
 
   If you hear footsteps behind you, nobody has ever proved whose they are.
 detail: >-
-  The collapse, the speech against the Mexican War and his death two days later are from the CBS News report; a reviewer should add a public record (the House's own history office was unreachable).
+  Second pass (2026-11-11): sources disagree on the moment of collapse. CBS says he was giving a speech against the Mexican War; the Architect of the Capitol says he had just voted "no" on a resolution and collapsed at his desk. The script now says only that he collapsed at his desk during a debate. The AOC places his death in the Speaker's Lobby and a 1919 newspaper feature in "one of the rooms adjoining the chamber". The shouted "no" is the AOC's version of the legend; the footsteps that seem to follow you are the 1919 feature's.
 editorial: draft
-factCheck: single-source
+factCheck: corroborated
 claims:
   - says: "Before it was Statuary Hall, it was the chamber of the House of Representatives."
     source: 1
     quote: "had a stroke on the House floor, now Statuary Hall, while giving a speech against the Mexican War."
-  - says: "In eighteen forty eight, he was on his feet in this chamber, speaking against the war with Mexico. And he collapsed. A stroke."
+  - says: "In eighteen forty eight, during a debate in this chamber, he collapsed at his desk. A stroke."
     source: 1
     quote: "Tragedy struck again in 1848 when John Quincy Adams, who was elected to the House after serving as president, had a stroke on the House floor, now Statuary Hall, while giving a speech against the Mexican War."
   - says: "They carried him to a room just off the floor. He died there two days later."
@@ -52,9 +52,31 @@ claims:
   - says: "Capitol workers have told of hearing footsteps in here, when the hall is empty. Some say it is Adams. Some say they have heard an old man's voice, still trying to finish his speech."
     source: 1
     quote: "Capitol workers have since reported hearing Adams' footsteps, or the specter of the old man trying to finish his speech."
+  - says: "during a debate in this chamber, he collapsed at his desk."
+    source: 2
+    quote: "During a debate on the floor of the House of Representatives, Adams loudly voted \"no\" on a resolution then promptly collapsed at his desk."
+  - says: "They carried him to a room just off the floor. He died there two days later."
+    source: 2
+    quote: "He was moved to the Speakers' Lobby where he fell into a coma and died two days later."
+  - says: "Others say it shouts one word. No."
+    source: 2
+    quote: "Some Capitol employees claim to hear someone shouting \"no\" late at night."
+  - says: "If you hear footsteps behind you, nobody has ever proved whose they are."
+    source: 3
+    quote: "The footsteps of a person walking across the hall at night, when all about is silence, seem to be closely followed by other footfalls"
 sources:
   - title: "Haunted House On The Hill"
     publisher: "CBS News (Associated Press)"
     url: https://www.cbsnews.com/news/haunted-house-on-the-hill/
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+  - title: "Haunted Halls of Congress: 5 Creepy Capitol Legends"
+    publisher: "Architect of the Capitol"
+    url: https://www.aoc.gov/blog/haunted-halls-congress-5-creepy-capitol-legends
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "The Bridgeport Times and Evening Farmer, 16 October 1919, page 12: haunted places of Washington, Statuary Hall"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn92051227/1919-10-16/ed-1/?sp=12
+    retrievedAt: "2026-11-11"
+    rights: public-domain
