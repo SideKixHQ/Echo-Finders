@@ -52,7 +52,8 @@
           "locationWhenInUsePermission": "Echo Finders plays the echoes of the place you are standing in, so it needs to know where you are.",
           "locationAlwaysAndWhenInUsePermission": "So echoes can open with your phone in your pocket and the screen off, while you walk and listen. Echo Finders works without this: you would keep the app on screen instead."
         }
-      ]
+      ],
+      "@maplibre/maplibre-react-native"
     ]
   }
 }

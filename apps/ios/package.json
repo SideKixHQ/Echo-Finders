@@ -6,6 +6,7 @@
     "@echofinders/core": "file:../../packages/core",
     "@expo-google-fonts/sora": "^0.4.2",
     "@expo-google-fonts/space-grotesk": "^0.4.1",
+    "@maplibre/maplibre-react-native": "^11.5.1",
     "expo": "~58.0.24",
     "expo-asset": "~58.0.21",
     "expo-audio": "~58.0.11",
@@ -26,6 +27,8 @@
   },
   "devDependencies": {
     "@types/react": "~19.3.0",
+    "eslint": "^9.0.0",
+    "eslint-config-expo": "~58.0.4",
     "typescript": "~6.0.3"
   },
   "scripts": {
@@ -33,7 +36,8 @@
     "ios": "expo start --ios",
     "typecheck": "tsc --noEmit",
     "bundle": "expo export --platform ios --output-dir dist",
-    "eas-build-post-install": "npm --prefix ../../packages/core install --no-audit --no-fund && npm --prefix ../../packages/core run build"
+    "eas-build-post-install": "npm --prefix ../../packages/core install --no-audit --no-fund && npm --prefix ../../packages/core run build",
+    "lint": "expo lint"
   },
   "private": true
 }
