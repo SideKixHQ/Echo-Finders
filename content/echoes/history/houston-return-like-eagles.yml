@@ -1,6 +1,7 @@
 # Drafted by Claude Code (2026-11-10) for Houston, San Jacinto battleground.
 # Listening spot: the foot of the San Jacinto Monument, which stands between the Texan and Mexican camp sites (WPA Houston guide, 1942).
 # Position: Monument Circle in Overture road data rings 29.7489 to 29.7492, -95.0807 to -95.0816; the spot is on its west side (high confidence for the monument).
+# Second pass (2026-11-11): the Handbook of Texas added as an independent source for the date, the bridge, the siesta, the charge and the eighteen minutes. It differs on two details a reviewer should settle: it says Cos brought about 540 troops (the script says some four hundred) and that Houston formed his line about 3:30 (the script says about four o'clock).
 id: houston-return-like-eagles
 title: "Return Like Eagles"
 summary: "On 21 April 1836 Sam Houston let the afternoon pass in silence. At four o'clock he attacked. It took about eighteen minutes."
@@ -53,6 +54,9 @@ claims:
   - says: "It was the twenty first of April, eighteen thirty six."
     source: 1
     quote: "Here, on April 21, 1836, Gen. Sam Houston’s inferior force of Texans engaged an army under the personal command of Gen. Antonio Lopez de Santa Anna"
+  - says: "It was the twenty first of April, eighteen thirty six."
+    source: 3
+    quote: "On Thursday morning, April 21, the Texans were eager to attack."
   - says: "For forty days, Sam Houston had retreated across Texas, ahead of General Santa Anna."
     source: 1
     quote: "For 40 days, after the tragedy of the Alamo and the defeat and massacre of Fannin’s men at the Coleto and Goliad, Houston had conducted a Fabian retreat eastward across Texas"
@@ -69,6 +73,9 @@ claims:
     source: 2
     quote: "He sent Deaf Smith and a detachment with axes to destroy Vince s Bayou bridge"
   - says: "Quietly, he sent a scout, Deaf Smith, with a few men and axes, to destroy Vince's Bridge, so no more Mexican troops could reach the field."
+    source: 3
+    quote: "Houston ordered Erastus (Deaf) Smith to destroy the bridge and prevent further enemy reinforcements."
+  - says: "Quietly, he sent a scout, Deaf Smith, with a few men and axes, to destroy Vince's Bridge, so no more Mexican troops could reach the field."
     source: 1
     quote: "had sent “Deaf” Smith with a detail to destroy Vince’s Bridge and thus prevent further reinforcement of the Mexicans"
   - says: "Return like eagles, he told him, or you will be too late for the day."
@@ -80,6 +87,9 @@ claims:
   - says: "They took their afternoon siesta."
     source: 1
     quote: "Santa Anna and his officers took their usual siesta, and most of the Mexican troops, their muskets stacked, either slept or were detailed to watering the horses and other camp duties."
+  - says: "They took their afternoon siesta."
+    source: 3
+    quote: "Houston disposed his forces in battle order about 3:30 in the afternoon while all was quiet on the Mexican side during the afternoon siesta."
   - says: "At about four o'clock, Houston formed his men, and they walked forward through the tall grass, silently, holding their fire."
     source: 1
     quote: "About four o'clock Houston suddenly formed his forces and launched an attack."
@@ -92,9 +102,15 @@ claims:
   - says: "The Texans charged, shouting Remember the Alamo."
     source: 1
     quote: "Houston and his men charged through, shouting the battle cry that he had given them two nights before, “Remember the Alamo!”"
+  - says: "The Texans charged, shouting Remember the Alamo."
+    source: 3
+    quote: "The Twin Sisters were wheeled into position, and the whole line, led by Sherman's men, sprang forward on the run with the cry, \"Remember the Alamo!\""
   - says: "The battle took about eighteen minutes."
     source: 1
     quote: "The battle was won in about 18 minutes"
+  - says: "The battle took about eighteen minutes."
+    source: 3
+    quote: "The battle lasted but eighteen minutes."
   - says: "The battle took about eighteen minutes."
     source: 2
     quote: "The actual battle was over in less than 30 minutes some said 18."
@@ -120,4 +136,9 @@ sources:
     publisher: "Internet Archive (scan); copyright 1940 Texas State Highway Commission"
     url: https://archive.org/details/texasaguidetothe00writmiss
     retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "San Jacinto, Battle of (L. W. Kemp)"
+    publisher: "Handbook of Texas Online, Texas State Historical Association"
+    url: https://www.tshaonline.org/handbook/entries/san-jacinto-battle-of
+    retrievedAt: "2026-11-11"
     rights: fair-use-facts

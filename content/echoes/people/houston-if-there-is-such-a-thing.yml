@@ -1,6 +1,7 @@
 # Drafted by Claude Code (2026-11-10) for Houston, Buffalo Bayou (River Oaks).
 # Listening spot: the grounds of Bayou Bend, 6003 Memorial Drive, Ima Hogg's house and gardens inside a loop of Buffalo Bayou, now part of the Museum of Fine Arts, Houston (HALS TX-11). Entry is through the museum.
 # Position: Wikidata Q2892295 (Bayou Bend Collection and Gardens), 29.75766, -95.42026 (high confidence for the house).
+# Second pass (2026-11-11): the year of the gift was dropped from the script. HALS TX-11 says Ima Hogg gave Bayou Bend to the museum in 1957; the Handbook of Texas says she presented it, with her collection, in 1966. Both are cited; a reviewer can restore a year once settled.
 id: houston-if-there-is-such-a-thing
 title: "If There Is Such a Thing"
 summary: "Ima Hogg moved into her pink house on Buffalo Bayou in 1928. Months later the bayou flooded her garden. She replanted, then gave it away."
@@ -32,7 +33,7 @@ script: |
 
   So she spent the next year replanting. Hundreds of trees, shrubs and flowers. Old roses. A white garden in the woods.
 
-  Then, in nineteen fifty seven, she gave the whole place away, to the Museum of Fine Arts, so anyone could walk through it.
+  Then she gave the whole place away, to the Museum of Fine Arts, so anyone could walk through it.
 
   Look down toward the water, through the trees she planted after the flood.
 
@@ -83,18 +84,29 @@ claims:
   - says: "A white garden in the woods."
     source: 1
     quote: "the third significant element, now known as the White Garden, was well established."
-  - says: "Then, in nineteen fifty seven, she gave the whole place away, to the Museum of Fine Arts, so anyone could walk through it."
+  - says: "Then she gave the whole place away, to the Museum of Fine Arts, so anyone could walk through it."
     source: 1
     quote: "In 1957, Ima Hogg gifted Bayou Bend to the Museum of Fine Arts Houston"
+  - says: "Then she gave the whole place away, to the Museum of Fine Arts, so anyone could walk through it."
+    source: 2
+    quote: "in 1966 she presented her collection and Bayou Bend, the River Oaks mansion she and her brothers had built in 1927, to the Museum of Fine Arts in Houston."
   - says: "Below it, the land drops away through the trees to Buffalo Bayou, which loops right around this place."
     source: 1
     quote: "Bayou Bend is named for its situation inside the loop of a meander along Buffalo Bayou"
   - says: "Her name was Ima Hogg."
     source: 1
     quote: "Bayou Bend Collection and Gardens maintains the generous legacy of a remarkable woman, Miss Ima Hogg."
+  - says: "Her name was Ima Hogg."
+    source: 2
+    quote: "Ima Hogg, philanthropist and patron of the arts, daughter of Sarah Ann (Stinson) and Governor James Stephen Hogg"
 sources:
   - title: "Bayou Bend (Bayou Bend Collection and Gardens), HALS TX-11, Written Historical and Descriptive Data"
     publisher: "Historic American Landscapes Survey, National Park Service (Library of Congress)"
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx1300/tx1348/data/tx1348data.pdf
     retrievedAt: "2026-11-10"
     rights: public-domain
+  - title: "Hogg, Ima (Virginia Bernhard)"
+    publisher: "Handbook of Texas Online, Texas State Historical Association"
+    url: https://www.tshaonline.org/handbook/entries/hogg-ima
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
