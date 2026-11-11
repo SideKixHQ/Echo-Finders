@@ -1,0 +1,193 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Central Park cluster.
+# Listening spot: The fenced plaza around the obelisk (Cleopatra's Needle) on Greywacke Knoll, Central Park, just behind the Metropolitan Museum of Art near East 81st Street.
+# Position: Overture places "The Obelisk" at 40.77963, -73.96540 (high confidence).
+id: new-york-the-crabs-under-the-needle
+title: "The Crabs Under the Needle"
+summary: "The obelisk behind the Met stands on four bronze crabs. The Roman originals carried the only record of its move, and it was not Cleopatra's."
+place: "The Obelisk (Cleopatra's Needle), Central Park behind the Metropolitan Museum of Art, Manhattan"
+at: { lat: 40.77963, lng: -73.96540 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 98
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, central-park, egypt, obelisk, archaeology, monuments]
+teaser: "Look at the corners. It is standing on crabs."
+script: |
+  Look at the bottom corners of the obelisk, where the stone meets its base. In each corner there is a bronze crab, holding it up.
+
+  Crabs. Under a stone that was carved three and a half thousand years ago. Why crabs?
+
+  In eighteen eighty, a United States Navy officer named Henry Gorringe took this obelisk down in Alexandria, in Egypt, to bring it to New York. When his men dug around its base, they found what it had been standing on.
+
+  Bronze crabs, put there by the Romans. Plunderers had carried two of them off long before. The two that were left had lost nearly every leg and claw, broken off for the value of the metal.
+
+  On the one claw that remained, there was writing. Greek on one side, Latin on the other.
+
+  It was the only record of the day the Romans moved this obelisk to Alexandria. It named the emperor Augustus, and the architect, Pontius.
+
+  And it settled something. Everybody called this Cleopatra's Needle. The claw did not mention her. The stone is older than Cleopatra by more than a thousand years.
+
+  The crabs you can see now are copies, cast at the Brooklyn Navy Yard from plaster casts of the Roman ones. Look closely at their claws. They are inscribed too, in English. One says this obelisk was erected in New York City on the twenty second of January, eighteen eighty one.
+
+  Two thousand years apart, two crews left the same kind of note, in the same strange place.
+
+pronunciations:
+  - written: Gorringe
+    say: GORE-inj
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In each corner there is a bronze crab, holding it up."
+    source: 1
+    quote: "The bronze crabs placed at each corner of the obelisk are the substitutes of the original ones placed there by the Romans"
+  - says: "Under a stone that was carved three and a half thousand years ago."
+    source: 2
+    quote: "The 3,500-year-old structure is now undergoing a much-needed facelift."
+  - says: "In eighteen eighty, a United States Navy officer named Henry Gorringe took this obelisk down in Alexandria, in Egypt, to bring it to New York."
+    source: 3
+    quote: "U.S. Navy Lieutenant-Commander Henry H. Gorringe was charged with the task of transporting the 71-foot (21 meter), 224-ton obelisk from Alexandria to New York City."
+  - says: "In eighteen eighty, a United States Navy officer named Henry Gorringe took this obelisk down in Alexandria, in Egypt, to bring it to New York."
+    source: 1
+    quote: "Removed to the United States of America A. D. 1880, and erected in New York City January 22, 1881."
+  - says: "When his men dug around its base, they found what it had been standing on."
+    source: 1
+    quote: "Two of the crabs only, both broken, were found by the author of this volume ; the other two had at some previous time been carried off by plunderers."
+  - says: "Bronze crabs, put there by the Romans."
+    source: 1
+    quote: "Pontius had mounted it on bronze supports, one under each angle"
+  - says: "Plunderers had carried two of them off long before."
+    source: 1
+    quote: "Two of the crabs only, both broken, were found by the author of this volume ; the other two had at some previous time been carried off by plunderers."
+  - says: "The two that were left had lost nearly every leg and claw, broken off for the value of the metal."
+    source: 1
+    quote: "They had been cast in the form of sea-crabs, but when we uncovered them all the legs but one, and all the claws but a part of one, had been broken off and removed, doubtless for the value of the metal."
+  - says: "On the one claw that remained, there was writing."
+    source: 1
+    quote: "Upon the only remaining claw of the two crabs that were found by the author there are two inscriptions, on one side in Greek, on the other in Latin, which fix the date of the re-erection in Alexandria."
+  - says: "Greek on one side, Latin on the other."
+    source: 1
+    quote: "Upon the only remaining claw of the two crabs that were found by the author there are two inscriptions, on one side in Greek, on the other in Latin"
+  - says: "It was the only record of the day the Romans moved this obelisk to Alexandria."
+    source: 1
+    quote: "The inscription on one of the bronze crabs that supported the New York obelisk while it was in Alexandria (see Plate v) is the only record that exists of its removal."
+  - says: "It named the emperor Augustus, and the architect, Pontius."
+    source: 1
+    quote: "This simply states that it was erected at Alexandria in the eighth year of Augustus Caesar, corresponding to 22 B. C, by Pontius the architect, while Barbarus was Prefect."
+  - says: "Everybody called this Cleopatra's Needle."
+    source: 3
+    quote: "Since 1881, the obelisk known as Cleopatra's Needle has stood in New York's Central Park"
+  - says: "The claw did not mention her."
+    source: 1
+    quote: "does away with the legend which brought the name of Cleopatra in relation with their erection at Alexandria"
+  - says: "The stone is older than Cleopatra by more than a thousand years."
+    source: 3
+    quote: "Often called \"Cleopatra's Needle,\" the structure actually predates Cleopatra by more than a millennium, according to the Central Park Conservancy."
+  - says: "The crabs you can see now are copies, cast at the Brooklyn Navy Yard from plaster casts of the Roman ones."
+    source: 1
+    quote: "These had been reproduced from plaster casts of the originals, perfected by Mr. Theodore Baur, sculptor, with great skill and feeling. The new crabs were cast at my expense in the Brooklyn Navy Yard"
+  - says: "They are inscribed too, in English."
+    source: 1
+    quote: "The bronze crabs placed at each corner of the obelisk are the substitutes of the original ones placed there by the Romans ; they bear the following legends"
+  - says: "One says this obelisk was erected in New York City on the twenty second of January, eighteen eighty one."
+    source: 1
+    quote: "Removed to the United States of America A. D. 1880, and erected in New York City January 22, 1881."
+  - says: "Two thousand years apart, two crews left the same kind of note, in the same strange place."
+    source: 1
+    quote: "metal is a bronze as nearly as possible the same as that of the crabs cast by the Romans nineteen centuries ago."
+sources:
+  - title: "Egyptian Obelisks (Henry H. Gorringe, 1882)"
+    publisher: "Internet Archive (public domain scan, University of Toronto)"
+    url: https://archive.org/details/egyptianobelisks00gorruoft
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Stories From Main Street: Cleaning The Central Park Obelisk"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/stories-from-main-street-cleaning-the-central-park-obelisk/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Egypt threatens to remove Central Park obelisk"
+    publisher: "NBC News (LiveScience)"
+    url: https://www.nbcnews.com/id/wbna40966318
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-crabs-under-the-needle/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 97.5
+    audioBytes: 1560702
+    transcript:
+      totalS: 97.5
+      lines:
+        - text: Look at the bottom corners of the obelisk, where the stone meets its base.
+          atS: 0
+          durationS: 4.02
+        - text: In each corner there is a bronze crab, holding it up.
+          atS: 4.34
+          durationS: 3.22
+        - text: Crabs.
+          atS: 8.07
+          durationS: 0.79
+        - text: Under a stone that was carved three and a half thousand years ago.
+          atS: 9.37
+          durationS: 3.95
+        - text: Why crabs?
+          atS: 13.92
+          durationS: 1.07
+        - text: In eighteen eighty, a United States Navy officer named Henry Gorringe took this obelisk down in Alexandria, in Egypt, to bring it to New York.
+          atS: 15.43
+          durationS: 9.31
+        - text: When his men dug around its base, they found what it had been standing on.
+          atS: 25.25
+          durationS: 4.05
+        - text: Bronze crabs, put there by the Romans.
+          atS: 29.75
+          durationS: 2.78
+        - text: Plunderers had carried two of them off long before.
+          atS: 32.96
+          durationS: 2.76
+        - text: The two that were left had lost nearly every leg and claw, broken off for the value of the metal.
+          atS: 36
+          durationS: 5.77
+        - text: On the one claw that remained, there was writing.
+          atS: 42.38
+          durationS: 3.05
+        - text: Greek on one side, Latin on the other.
+          atS: 45.81
+          durationS: 3.15
+        - text: It was the only record of the day the Romans moved this obelisk to Alexandria.
+          atS: 49.47
+          durationS: 5.28
+        - text: It named the emperor Augustus, and the architect, Pontius.
+          atS: 55.26
+          durationS: 4.48
+        - text: And it settled something.
+          atS: 60.35
+          durationS: 1.51
+        - text: Everybody called this Cleopatra's Needle.
+          atS: 62.46
+          durationS: 2.94
+        - text: The claw did not mention her.
+          atS: 66
+          durationS: 1.71
+        - text: The stone is older than Cleopatra by more than a thousand years.
+          atS: 67.92
+          durationS: 3.91
+        - text: The crabs you can see now are copies, cast at the Brooklyn Navy Yard from plaster casts of the Roman ones.
+          atS: 72.16
+          durationS: 6.85
+        - text: Look closely at their claws.
+          atS: 79.39
+          durationS: 1.77
+        - text: They are inscribed too, in English.
+          atS: 81.4
+          durationS: 2.63
+        - text: One says this obelisk was erected in New York City on the twenty second of January, eighteen eighty one.
+          atS: 84.47
+          durationS: 6.45
+        - text: Two thousand years apart, two crews left the same kind of note, in the same strange place.
+          atS: 91.31
+          durationS: 6.16

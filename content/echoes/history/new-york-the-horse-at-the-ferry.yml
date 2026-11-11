@@ -1,0 +1,218 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Brooklyn Bridge and DUMBO cluster.
+# Listening spot: The foot of Old Fulton Street at Water Street, looking down to the water at Fulton Ferry Landing, the old Brooklyn ferry from which the army embarked in 1776.
+# Position: Overture places "The Landing at Fulton Ferry" at 40.70245, -73.99417 and the pier at 40.70332, -73.99521; the spot is between them on Old Fulton Street, about 80 m from the Whitman echo on the pier (medium confidence).
+id: new-york-the-horse-at-the-ferry
+title: "The Horse at the Ferry"
+summary: "In August 1776 Washington's beaten army slipped across the river from this landing in one night. Then the fog came down."
+place: "Fulton Ferry Landing, Old Fulton Street, DUMBO, Brooklyn"
+at: { lat: 40.70290, lng: -73.99465 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 103
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [new-york, dumbo, revolution, washington, battle-of-brooklyn, east-river]
+teaser: "The whole army got away in the night. One officer went back for his horse."
+script: |
+  Look down this street to the water, where the old ferry landing is.
+
+  In August, seventeen seventy six, George Washington's army was trapped on this side of the river. They had just lost the Battle of Brooklyn. In front of them was a British army nearly three times their size. Behind them, a mile of fast water, and a British fleet that could close it.
+
+  On the night of the twenty ninth, they started to leave. Quietly, one regiment at a time, so no gap would show in the lines. Washington stood here, at the ferry, watching them go. Fishermen from Marblehead, Massachusetts, rowed them over, all night, against the tide, without being seen or heard by the British warships.
+
+  By dawn, there were still men in the trenches. Then a fog came down.
+
+  A young officer named Benjamin Tallmadge was in that last guard. The fog was so dense, he wrote, that I could scarcely discern a man at six yards' distance.
+
+  When his regiment reached the ferry, he stepped into one of the last boats. He thought he saw Washington on the ferry stairs. And he left his horse tied to a post, right here.
+
+  Safe on the other side, he could not stop thinking about that horse. So he asked permission, found a crew of volunteers, and rowed back through the fog. He got his horse, and pushed off just as the British reached the landing. They fired at him with muskets, and then with cannon.
+
+  He made it.
+
+  Look at the water again. Nine thousand men crossed it in one night, with their horses and their guns.
+
+  Even the horse.
+
+pronunciations:
+  - written: Tallmadge
+    say: TAL-mij
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In August, seventeen seventy six, George Washington's army was trapped on this side of the river."
+    source: 2
+    quote: "The ferry landing also played a role in the American Revolution. In 1776, George Washington and 9,000 of his troops rowed across the water in retreat after a terrible defeat to the British"
+  - says: "They had just lost the Battle of Brooklyn."
+    source: 3
+    quote: "The first shots of the Battle of Brooklyn were fired on August 26, 1776"
+  - says: "They had just lost the Battle of Brooklyn."
+    source: 2
+    quote: "rowed across the water in retreat after a terrible defeat to the British"
+  - says: "In front of them was a British army nearly three times their size."
+    source: 1
+    quote: "in face of a victorious, well disciplined army, nearly three times as numerous as his own, and a fleet capable of stopping the navigation, so that not one boat could have passed over"
+  - says: "Behind them, a mile of fast water, and a British fleet that could close it."
+    source: 1
+    quote: "across a river full a mile wide, with a rapid current, in face of a victorious, well disciplined army, nearly three times as numerous as his own, and a fleet capable of stopping the navigation"
+  - says: "On the night of the twenty ninth, they started to leave."
+    source: 1
+    quote: "so arranged his business, that on the evening of the 29th, by 10 o'clock, the troops began to retire from the lines"
+  - says: "Quietly, one regiment at a time, so no gap would show in the lines."
+    source: 1
+    quote: "in such a manner that no chasm was made in the lines, but as one regiment left their station on guard, the remaining troops moved to the right and left and filled up the vacancies"
+  - says: "Washington stood here, at the ferry, watching them go."
+    source: 1
+    quote: "Gen. Washington took his station at the ferry, and superintended the embarkation of the troops."
+  - says: "Fishermen from Marblehead, Massachusetts, rowed them over, all night, against the tide, without being seen or heard by the British warships."
+    source: 4
+    quote: "he and his “Marbleheaders” provided valuable assistance in the evacuation of Washington’s 9,000 men, horses, and artillery from Brooklyn to Manhattan on August 29, in one night against the tide, all without being seen or heard by the nearby British warships"
+  - says: "By dawn, there were still men in the trenches."
+    source: 1
+    quote: "when the dawn appeared there were several regiments still on duty."
+  - says: "Then a fog came down."
+    source: 1
+    quote: "At this time a very dense fog began to rise, and it seemed to settle in a peculiar manner over both encampments."
+  - says: "A young officer named Benjamin Tallmadge was in that last guard."
+    source: 1
+    quote: "the providential appearance of the fog saved a part of our army from being captured, and certainly myself, among others who formed the rear guard."
+  - says: "The fog was so dense, he wrote, that I could scarcely discern a man at six yards' distance."
+    source: 1
+    quote: "so very dense was the atmosphere that I could scarcely discern a man at six yards' distance."
+  - says: "When his regiment reached the ferry, he stepped into one of the last boats."
+    source: 1
+    quote: "and I think I saw Gen. Washington on the ferry stairs when I stepped into one of the last boats that received the troops."
+  - says: "He thought he saw Washington on the ferry stairs."
+    source: 1
+    quote: "and I think I saw Gen. Washington on the ferry stairs when I stepped into one of the last boats that received the troops."
+  - says: "And he left his horse tied to a post, right here."
+    source: 1
+    quote: "I left my horse tied to a post at the ferry."
+  - says: "Safe on the other side, he could not stop thinking about that horse."
+    source: 1
+    quote: "The troops having now all safely reached New York, and the fog continuing as thick as ever, I began to think of my favorite horse, and requested leave to return and bring him"
+  - says: "So he asked permission, found a crew of volunteers, and rowed back through the fog."
+    source: 1
+    quote: "Having obtained permission, I called for a crew of volunteers to go with me, and guiding the boat myself, I obtained my horse and got off some distance into the river before the enemy appeared in Brooklyn."
+  - says: "He got his horse, and pushed off just as the British reached the landing."
+    source: 1
+    quote: "I obtained my horse and got off some distance into the river before the enemy appeared in Brooklyn."
+  - says: "They fired at him with muskets, and then with cannon."
+    source: 1
+    quote: "As soon as they reached the ferry we were saluted merrily from their musketry, and finally by their field pieces ; but we returned in safety."
+  - says: "He made it."
+    source: 1
+    quote: "but we returned in safety."
+  - says: "Nine thousand men crossed it in one night, with their horses and their guns."
+    source: 4
+    quote: "the evacuation of Washington’s 9,000 men, horses, and artillery from Brooklyn to Manhattan on August 29, in one night against the tide"
+  - says: "Nine thousand men crossed it in one night, with their horses and their guns."
+    source: 2
+    quote: "In 1776, George Washington and 9,000 of his troops rowed across the water in retreat after a terrible defeat to the British, \"narrowly preserving the Continental Army,\" Reiss wrote in her book."
+  - says: "Even the horse."
+    source: 1
+    quote: "I obtained my horse and got off some distance into the river before the enemy appeared in Brooklyn."
+sources:
+  - title: "Memoir of Col. Benjamin Tallmadge (1858)"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/memoircolbenjam00taligoog
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Offbeat Brooklyn neighborhood worth a visit (DUMBO and Fulton Ferry Landing)"
+    publisher: "NBC News (Associated Press), July 2010"
+    url: https://www.nbcnews.com/id/wbna38453301
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "The Battle of Brooklyn, Governors Island National Monument"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/gois/learn/historyculture/battle-of-brooklyn.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "John Glover: Sailor, Soldier, Patriot"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/john-glover-sailor-soldier-patriot.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-horse-at-the-ferry/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 103.3
+    audioBytes: 1654325
+    transcript:
+      totalS: 103.3
+      lines:
+        - text: Look down this street to the water, where the old ferry landing is.
+          atS: 0
+          durationS: 3.88
+        - text: In August, seventeen seventy six, George Washington's army was trapped on this side of the river.
+          atS: 4.99
+          durationS: 6.14
+        - text: They had just lost the Battle of Brooklyn.
+          atS: 11.74
+          durationS: 2.02
+        - text: In front of them was a British army nearly three times their size.
+          atS: 14.57
+          durationS: 4.13
+        - text: Behind them, a mile of fast water, and a British fleet that could close it.
+          atS: 19.4
+          durationS: 4.98
+        - text: On the night of the twenty ninth, they started to leave.
+          atS: 25.33
+          durationS: 3.07
+        - text: Quietly, one regiment at a time, so no gap would show in the lines.
+          atS: 29.35
+          durationS: 5.07
+        - text: Washington stood here, at the ferry, watching them go.
+          atS: 35.38
+          durationS: 3.36
+        - text: Fishermen from Marblehead, Massachusetts, rowed them over, all night, against the tide, without being seen or heard by the British warships.
+          atS: 39.34
+          durationS: 8.91
+        - text: By dawn, there were still men in the trenches.
+          atS: 48.94
+          durationS: 2.91
+        - text: Then a fog came down.
+          atS: 52.97
+          durationS: 1.65
+        - text: A young officer named Benjamin Tallmadge was in that last guard.
+          atS: 55.13
+          durationS: 4.32
+        - text: The fog was so dense, he wrote, that I could scarcely discern a man at six yards' distance.
+          atS: 59.88
+          durationS: 6.1
+        - text: When his regiment reached the ferry, he stepped into one of the last boats.
+          atS: 66.79
+          durationS: 3.91
+        - text: He thought he saw Washington on the ferry stairs.
+          atS: 70.88
+          durationS: 2.65
+        - text: And he left his horse tied to a post, right here.
+          atS: 73.97
+          durationS: 3.08
+        - text: Safe on the other side, he could not stop thinking about that horse.
+          atS: 77.86
+          durationS: 3.69
+        - text: So he asked permission, found a crew of volunteers, and rowed back through the fog.
+          atS: 81.99
+          durationS: 4.67
+        - text: He got his horse, and pushed off just as the British reached the landing.
+          atS: 87.04
+          durationS: 4.03
+        - text: They fired at him with muskets, and then with cannon.
+          atS: 91.35
+          durationS: 3.06
+        - text: He made it.
+          atS: 94.69
+          durationS: 0.85
+        - text: Look at the water again.
+          atS: 95.86
+          durationS: 1.32
+        - text: Nine thousand men crossed it in one night, with their horses and their guns.
+          atS: 97.43
+          durationS: 4.23
+        - text: Even the horse.
+          atS: 101.98
+          durationS: 1.35

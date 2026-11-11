@@ -1,0 +1,222 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Midtown cluster.
+# Listening spot: Fifth Avenue sidewalk between East 43rd and East 44th streets, the block the Colored Orphan Asylum occupied in 1863. Today it is shops and office buildings.
+# Position: Midpoint of Fifth Avenue between 43rd and 44th streets, interpolated between the two intersections (medium confidence). The 1863 sources give the block, not which side of the avenue.
+id: new-york-out-the-back-door
+title: "Out the Back Door"
+summary: "In July 1863 a mob burned the Colored Orphan Asylum on this block of Fifth Avenue. More than two hundred children got out the back."
+place: "Fifth Avenue between 43rd and 44th Streets, Midtown Manhattan"
+at: { lat: 40.75458, lng: -73.98012 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.8
+tags: [new-york, midtown, fifth-avenue, civil-war, draft-riots, black-history]
+teaser: "The mob broke in at the front just as the children went out at the back."
+script: |
+  Look along this block of Fifth Avenue, from Forty Third Street to Forty Fourth. Shop fronts. Office windows. People hurrying past.
+
+  In the summer of eighteen sixty three, this whole block was an orphanage. Four stories high, with room for five hundred children. It was the Colored Orphan Asylum. A home for Black children.
+
+  On the afternoon of the thirteenth of July, a mob of about three thousand people attacked it. The city was rioting against the draft for the Civil War. And the mob had decided that Black people were to blame for the war. Even orphans.
+
+  Inside were more than two hundred children, from babies to twelve year olds.
+
+  The superintendent, William Davis, fastened the doors. While the mob broke them in, the staff gathered the children, carried some in their arms, and led them out at the back.
+
+  Just as the mob came in at the front.
+
+  The rioters took everything, even the children's dresses and trinkets. Then they set the building on fire. The fire chief tried to talk them down, and was knocked to the ground twice. In an hour and a half, only a little of the walls was left.
+
+  That evening, Davis led two hundred and sixteen children into a police station. Not one of them was over twelve. Except the clothes they wore, nothing had been saved for them.
+
+  Look along the block again.
+
+  The building burned. The children walked out.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look along this block of Fifth Avenue, from Forty Third Street to Forty Fourth."
+    source: 1
+    quote: "With the grounds, it extended from Forty-third to Forty-fourth Street."
+  - says: "In the summer of eighteen sixty three, this whole block was an orphanage."
+    source: 1
+    quote: "About 4 o'clock on the afternoon of Monday, July 13th, a mob of some three thousand attacked the Asylum for Colored Orphans on Fifth Avenue."
+  - says: "In the summer of eighteen sixty three, this whole block was an orphanage."
+    source: 2
+    quote: "sought to destroy the Colored Orphan Asylum on Fifth Avenue, extending from Forty-third to Forty-fourth Street."
+  - says: "Four stories high, with room for five hundred children."
+    source: 1
+    quote: "The main building was four stories, with wings of three stories, and was capable of accommodating five hundred children."
+  - says: "It was the Colored Orphan Asylum."
+    source: 2
+    quote: "sought to destroy the Colored Orphan Asylum on Fifth Avenue, extending from Forty-third to Forty-fourth Street."
+  - says: "A home for Black children."
+    source: 3
+    quote: "lynching blacks from street-corner lamp poles, murdering others in their homes, and burning down an African American orphanage."
+  - says: "On the afternoon of the thirteenth of July, a mob of about three thousand people attacked it."
+    source: 1
+    quote: "About 4 o'clock on the afternoon of Monday, July 13th, a mob of some three thousand attacked the Asylum for Colored Orphans on Fifth Avenue."
+  - says: "The city was rioting against the draft for the Civil War."
+    source: 3
+    quote: "Mobs of angry whites (many of them Irish immigrants who resented that blacks were exempt from the draft and feared black workplace competition), tore through the city"
+  - says: "The city was rioting against the draft for the Civil War."
+    source: 3
+    quote: "The New York City draft riot of 1863 was the grimmest of the northern race upheavals."
+  - says: "And the mob had decided that Black people were to blame for the war."
+    source: 2
+    quote: "But the slaves were black, ergo, all blacks are responsible for the war. This seemed to be the logic of the mob"
+  - says: "Even orphans."
+    source: 2
+    quote: "they did not stop to consider how poor helpless orphans could be held responsible"
+  - says: "Inside were more than two hundred children, from babies to twelve year olds."
+    source: 1
+    quote: "there were, besides the officers and matrons, over two hundred children in it, from infancy to twelve years of age."
+  - says: "Inside were more than two hundred children, from babies to twelve year olds."
+    source: 2
+    quote: "contained over two hundred children, from mere infants up to twelve years of age."
+  - says: "The superintendent, William Davis, fastened the doors."
+    source: 1
+    quote: "Superintendent Wm. E. Davis hurriedly fastened the doors"
+  - says: "The superintendent, William Davis, fastened the doors."
+    source: 2
+    quote: "Superintendent William E. Davis hurriedly fastened the doors"
+  - says: "While the mob broke them in, the staff gathered the children, carried some in their arms, and led them out at the back."
+    source: 2
+    quote: "he, * with others, collected hastily the terrified children, and carrying some in their arms, and leading others, hurried them in a confused crowd out at the rear of the building, just as the ruffians effected an entrance in front."
+  - says: "Just as the mob came in at the front."
+    source: 1
+    quote: "the children were collected, and then escaped by the rear just as the ruffians had effected their entrance in front."
+  - says: "The rioters took everything, even the children's dresses and trinkets."
+    source: 1
+    quote: "Everything that could be was stolen, even to the dresses and trinkets of the orphans."
+  - says: "Then they set the building on fire."
+    source: 1
+    quote: "fires had been kindled on the first and second floors."
+  - says: "The fire chief tried to talk them down, and was knocked to the ground twice."
+    source: 1
+    quote: "In attempting to address the mob, he was twice knocked down and finally forced into Fifth Avenue."
+  - says: "In an hour and a half, only a little of the walls was left."
+    source: 1
+    quote: "In an hour and a half only a small portion of the walls remained."
+  - says: "That evening, Davis led two hundred and sixteen children into a police station."
+    source: 1
+    quote: "Superintendent Davis, of the Colored Orphan Asylum, led into the station two hundred and sixteen of the children, none over twelve years of age"
+  - says: "Not one of them was over twelve."
+    source: 1
+    quote: "two hundred and sixteen of the children, none over twelve years of age"
+  - says: "Except the clothes they wore, nothing had been saved for them."
+    source: 1
+    quote: "Except the clothes they wore, not an article was saved for them."
+  - says: "The building burned."
+    source: 1
+    quote: "soon saw the Asylum wrapped in flames."
+  - says: "The children walked out."
+    source: 1
+    quote: "the children were collected, and then escaped by the rear just as the ruffians had effected their entrance in front."
+sources:
+  - title: "The draft riots in New York, July, 1863: the Metropolitan Police, their services during riot week (David M. Barnes, 1863)"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/draftriotsny00barnrich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The great riots of New York, 1712 to 1873 (Joel Tyler Headley, 1873)"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/greatriotsofnewy00head_1
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Chapter 1: Race, Slavery, and Freedom, Northern \"Unfreedom\""
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/chapter-1-race-slavery-and-freedom-northern-unfreedom.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-out-the-back-door/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 88
+    audioBytes: 1408565
+    transcript:
+      totalS: 88
+      lines:
+        - text: Look along this block of Fifth Avenue, from Forty Third Street to Forty Fourth.
+          atS: 0
+          durationS: 4.43
+        - text: Shop fronts.
+          atS: 4.71
+          durationS: 0.88
+        - text: Office windows.
+          atS: 5.84
+          durationS: 1.21
+        - text: People hurrying past.
+          atS: 7.29
+          durationS: 1.53
+        - text: In the summer of eighteen sixty three, this whole block was an orphanage.
+          atS: 9.94
+          durationS: 3.63
+        - text: Four stories high, with room for five hundred children.
+          atS: 13.9
+          durationS: 3.06
+        - text: It was the Colored Orphan Asylum.
+          atS: 17.29
+          durationS: 1.9
+        - text: A home for Black children.
+          atS: 19.63
+          durationS: 1.97
+        - text: On the afternoon of the thirteenth of July, a mob of about three thousand people attacked it.
+          atS: 22.56
+          durationS: 5.19
+        - text: The city was rioting against the draft for the Civil War.
+          atS: 27.99
+          durationS: 3.29
+        - text: And the mob had decided that Black people were to blame for the war.
+          atS: 31.66
+          durationS: 3.77
+        - text: Even orphans.
+          atS: 35.88
+          durationS: 1.06
+        - text: Inside were more than two hundred children, from babies to twelve year olds.
+          atS: 37.44
+          durationS: 4.88
+        - text: The superintendent, William Davis, fastened the doors.
+          atS: 43.43
+          durationS: 3.74
+        - text: While the mob broke them in, the staff gathered the children, carried some in their arms, and led them out at the back.
+          atS: 47.61
+          durationS: 6.48
+        - text: Just as the mob came in at the front.
+          atS: 54.53
+          durationS: 2.24
+        - text: The rioters took everything, even the children's dresses and trinkets.
+          atS: 57.28
+          durationS: 4.47
+        - text: Then they set the building on fire.
+          atS: 62.2
+          durationS: 1.83
+        - text: The fire chief tried to talk them down, and was knocked to the ground twice.
+          atS: 64.18
+          durationS: 3.77
+        - text: In an hour and a half, only a little of the walls was left.
+          atS: 68.13
+          durationS: 3.45
+        - text: That evening, Davis led two hundred and sixteen children into a police station.
+          atS: 72.02
+          durationS: 4.74
+        - text: Not one of them was over twelve.
+          atS: 76.93
+          durationS: 1.75
+        - text: Except the clothes they wore, nothing had been saved for them.
+          atS: 79.06
+          durationS: 3.31
+        - text: Look along the block again.
+          atS: 83.07
+          durationS: 1.37
+        - text: The building burned.
+          atS: 84.59
+          durationS: 1.16
+        - text: The children walked out.
+          atS: 86.08
+          durationS: 1.88

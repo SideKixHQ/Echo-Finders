@@ -1,0 +1,209 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Lower Manhattan cluster.
+# Listening spot: The 9/11 Memorial plaza, beside the Survivor Tree, between the north and south pools.
+# Position: Overture places "Survivor Tree" at 40.71116, -74.01355, between the two memorial pools (high confidence). The plaza is public and open daily.
+id: new-york-the-last-living-thing
+title: "The Last Living Thing"
+summary: "A month after the towers fell, workers found a burned pear tree in the rubble with one living branch. It is standing here again."
+place: "The Survivor Tree, 9/11 Memorial plaza, Lower Manhattan"
+at: { lat: 40.71116, lng: -74.01355 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 77
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, lower-manhattan, september-11, memorial, trees]
+teaser: "Crushed, burned, roots snapped, and one branch still alive."
+script: |
+  Find the pear tree on this plaza that people call the Survivor Tree.
+
+  It was planted here in the nineteen seventies, at the foot of the Twin Towers. And it is here again. Which should not be possible.
+
+  In October, two thousand one, about a month after the towers fell, a worker clearing the rubble found it. It was crushed between two blocks of concrete. Its roots were snapped. Half its trunk was gone, and the rest was burned black.
+
+  There was one living branch.
+
+  Ronaldo Vega was there. The tree was upended, he said, thought to be dead, left for dead. Then a search team saw new growth. And they decided.
+
+  We have to try and save this tree. It's the last living thing that's going to come out of this site.
+
+  It was about eight feet tall when it went to a city nursery in the Bronx. Nursing it back was touch and go. In December, two thousand ten, it came home to this plaza. It stood about thirty feet tall.
+
+  Since then, its seedlings have been sent to fire stations that lost firefighters that day. To Newtown, Connecticut. To Boston.
+
+  Look up into its branches.
+
+  Every spring, they are covered in blossom.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Find the pear tree on this plaza that people call the Survivor Tree."
+    source: 1
+    quote: "The Survivor Tree, at the World Trade Center site on Wednesday."
+  - says: "It was planted here in the nineteen seventies, at the foot of the Twin Towers."
+    source: 2
+    quote: "That's a pear tree that was planted at the base of the Twin Towers in the 1970s that stands tall in New York City's Freedom Plaza once again."
+  - says: "In October, two thousand one, about a month after the towers fell, a worker clearing the rubble found it."
+    source: 1
+    quote: "It was discovered in the rubble in October 2001 with snapped roots and a blackened trunk."
+  - says: "In October, two thousand one, about a month after the towers fell, a worker clearing the rubble found it."
+    source: 3
+    quote: "who had been discovered by a cleanup worker a month after the collapse of the towers, crushed between two blocks of cement."
+  - says: "It was crushed between two blocks of concrete."
+    source: 3
+    quote: "who had been discovered by a cleanup worker a month after the collapse of the towers, crushed between two blocks of cement."
+  - says: "Its roots were snapped."
+    source: 1
+    quote: "It was discovered in the rubble in October 2001 with snapped roots and a blackened trunk."
+  - says: "Half its trunk was gone, and the rest was burned black."
+    source: 3
+    quote: "All that was left was half a trunk that had been charred black with roots that were broken; and there was only one living branch."
+  - says: "There was one living branch."
+    source: 3
+    quote: "All that was left was half a trunk that had been charred black with roots that were broken; and there was only one living branch."
+  - says: "Ronaldo Vega was there."
+    source: 4
+    quote: "Ronaldo Vega told CBS2's Vanessa Murdock he will never forget seeing the tree's green leaves amongst the ashes on that tragic day."
+  - says: "The tree was upended, he said, thought to be dead, left for dead."
+    source: 4
+    quote: "\"The tree was absolutely upended, thought to be dead, left for dead,\" Vega said."
+  - says: "Then a search team saw new growth."
+    source: 4
+    quote: "Then, a search team saw new growth."
+  - says: "It's the last living thing that's going to come out of this site."
+    source: 4
+    quote: "\"We said we have to try and save this tree. It's the last living thing that's going to come out of this site,\" said Vega."
+  - says: "It was about eight feet tall when it went to a city nursery in the Bronx."
+    source: 1
+    quote: "The (pear) tree measured about eight feet high when it was taken to a Parks Department nursery in the Bronx to be nursed back to health."
+  - says: "Nursing it back was touch and go."
+    source: 3
+    quote: "Bringing that seriously damaged tree back to health was not an easy task, and it was touch-and-go for a while."
+  - says: "In December, two thousand ten, it came home to this plaza."
+    source: 1
+    quote: "December 23, 2010 11:25 AM ET"
+  - says: "In December, two thousand ten, it came home to this plaza."
+    source: 1
+    quote: "A modest-looking tree that survived the collapse of the twin towers during the 9/11 attacks was replanted at the Sept. 11 Memorial plaza Wednesday"
+  - says: "It stood about thirty feet tall."
+    source: 1
+    quote: "It now stands about 30 feet high."
+  - says: "Since then, its seedlings have been sent to fire stations that lost firefighters that day."
+    source: 4
+    quote: "\"These trees are now going to sites where firemen were involved in this day,\" Perry told 1010 WINS."
+  - says: "Since then, its seedlings have been sent to fire stations that lost firefighters that day."
+    source: 4
+    quote: "The Lakeland Fire Department -- which lost five of their members in the attacks -- received seven of the trees."
+  - says: "To Newtown, Connecticut."
+    source: 4
+    quote: "Seedlings have previously been sent to the Department of Justice; Newton, Connecticut after the 2012 Sandy Hook Elementary School shooting; and Boston, Massachusetts following the marathon bombing."
+  - says: "To Boston."
+    source: 4
+    quote: "Seedlings have previously been sent to the Department of Justice; Newton, Connecticut after the 2012 Sandy Hook Elementary School shooting; and Boston, Massachusetts following the marathon bombing."
+  - says: "Every spring, they are covered in blossom."
+    source: 3
+    quote: "In the spring her branches are bright with blossoms."
+sources:
+  - title: "Tree That Survived 9/11 Attack Is Replanted At Ground Zero"
+    publisher: "NPR, The Two-Way, 23 December 2010"
+    url: https://www.npr.org/sections/thetwo-way/2010/12/23/132283239/tree-that-survived-9-11-attack-is-replanted-at-ground-zero
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "'This Very Tree' looks at how one tree survived 9/11, and shows kids resilience"
+    publisher: "NPR, 11 September 2022"
+    url: https://www.npr.org/2022/09/11/1122286863/this-very-tree-looks-at-how-one-tree-survived-9-11-and-shows-kids-resilience
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Book excerpt: Jane Goodall's \"The Book of Hope: A Survival Guide for Trying Times\""
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/book-excerpt-jane-goodall-the-book-of-hope-a-survival-guide-for-trying-times/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Long Island Fire Districts To Receive 9/11 'Survivor Tree' Seedlings"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/survivor-tree-fire-houses/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-last-living-thing/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77
+    audioBytes: 1233858
+    transcript:
+      totalS: 77
+      lines:
+        - text: Find the pear tree on this plaza that people call the Survivor Tree.
+          atS: 0
+          durationS: 4.11
+        - text: It was planted here in the nineteen seventies, at the foot of the Twin Towers.
+          atS: 4.35
+          durationS: 4.2
+        - text: And it is here again.
+          atS: 8.8
+          durationS: 1.35
+        - text: Which should not be possible.
+          atS: 10.53
+          durationS: 1.77
+        - text: In October, two thousand one, about a month after the towers fell, a worker clearing the rubble found it.
+          atS: 12.9
+          durationS: 6.98
+        - text: It was crushed between two blocks of concrete.
+          atS: 20.39
+          durationS: 2.68
+        - text: Its roots were snapped.
+          atS: 23.18
+          durationS: 1.39
+        - text: Half its trunk was gone, and the rest was burned black.
+          atS: 24.9
+          durationS: 3.29
+        - text: There was one living branch.
+          atS: 28.47
+          durationS: 1.59
+        - text: Ronaldo Vega was there.
+          atS: 30.3
+          durationS: 1.58
+        - text: The tree was upended, he said, thought to be dead, left for dead.
+          atS: 32.16
+          durationS: 4.33
+        - text: Then a search team saw new growth.
+          atS: 37.19
+          durationS: 2.16
+        - text: And they decided.
+          atS: 39.95
+          durationS: 1.11
+        - text: We have to try and save this tree.
+          atS: 41.51
+          durationS: 2.03
+        - text: It's the last living thing that's going to come out of this site.
+          atS: 44.14
+          durationS: 3.16
+        - text: It was about eight feet tall when it went to a city nursery in the Bronx.
+          atS: 47.74
+          durationS: 4.18
+        - text: Nursing it back was touch and go.
+          atS: 52.73
+          durationS: 2.18
+        - text: In December, two thousand ten, it came home to this plaza.
+          atS: 55.73
+          durationS: 4.68
+        - text: It stood about thirty feet tall.
+          atS: 61.1
+          durationS: 1.94
+        - text: Since then, its seedlings have been sent to fire stations that lost firefighters that day.
+          atS: 63.65
+          durationS: 5.4
+        - text: To Newtown, Connecticut.
+          atS: 69.48
+          durationS: 1.51
+        - text: To Boston.
+          atS: 71.17
+          durationS: 0.88
+        - text: Look up into its branches.
+          atS: 72.56
+          durationS: 1.58
+        - text: Every spring, they are covered in blossom.
+          atS: 74.58
+          durationS: 2.46

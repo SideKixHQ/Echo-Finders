@@ -1,0 +1,241 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Greenwich Village cluster.
+# Listening spot: Public sidewalk at the corner of Washington Place and Greene Street, beside the Brown Building (NYU), where the Triangle fire memorial and plaques are.
+# Position: Overture places "Triangle Shirtwaist Factory Memorial" at 40.73011, -73.99537 (23 Washington Pl); the spot is the corner sidewalk a few metres east (high confidence).
+id: new-york-nobody-told-the-ninth
+title: "Nobody Told the Ninth Floor"
+summary: "In March 1911 a fire broke out in the factory on these top floors. Someone warned the tenth floor. Nobody told the ninth."
+place: "Brown Building, Washington Place and Greene Street, Greenwich Village, Manhattan"
+at: { lat: 40.73012, lng: -73.99525 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 87
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.8
+tags: [new-york, greenwich-village, triangle-fire, labor, immigration, frances-perkins]
+teaser: "Someone phoned a warning to the tenth floor. Nobody told the ninth."
+script: |
+  Look up at this building, to the top three floors.
+
+  On a Saturday afternoon in March, nineteen eleven, those floors were a clothing factory. About five hundred people worked there. Most of them were young immigrant women and girls.
+
+  Near quitting time, a fire started in a scrap bin on the eighth floor. Someone telephoned a warning up to the offices on the tenth.
+
+  Nobody told the ninth.
+
+  By the time the ninth floor knew, the fire was there. One set of stairway doors was locked. The fire escape collapsed. The firemen's nets were useless. People jumped or fell from those windows, a hundred feet, to the street.
+
+  One hundred and forty six people died.
+
+  A young woman named Frances Perkins was there. She saw it.
+
+  She spent the rest of her life on what she saw. The next year, she took a job fighting for safer factories. New York passed thirty eight new laws. And in nineteen thirty three, she became Secretary of Labor. The first woman in any American cabinet.
+
+  Look at the memorial plaques on the corner of the building.
+
+  The man who keeps the archive of the fire remembers what one survivor said. The immigrant parents all told their children the same thing. In America, they don't let you burn.
+
+  After this corner, that came a little closer to true.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look up at this building, to the top three floors."
+    source: 1
+    quote: "The Triangle Waist Company factory was located on the eighth, ninth, and tenth floors of the Asch Building."
+  - says: "Look up at this building, to the top three floors."
+    source: 1
+    quote: "Originally the building housed retail shops on the ground level and factory space on levels 2-10."
+  - says: "On a Saturday afternoon in March, nineteen eleven, those floors were a clothing factory."
+    source: 3
+    quote: "They were putting on their hats and coats at quitting time on Saturday, March the 25th, 1911"
+  - says: "On a Saturday afternoon in March, nineteen eleven, those floors were a clothing factory."
+    source: 1
+    quote: "The Triangle Waist Company factory was located on the eighth, ninth, and tenth floors of the Asch Building."
+  - says: "About five hundred people worked there."
+    source: 1
+    quote: "About five hundred people worked there."
+  - says: "Most of them were young immigrant women and girls."
+    source: 1
+    quote: "Most of them were young immigrant women and girls with roots in Southern and Eastern Europe."
+  - says: "Near quitting time, a fire started in a scrap bin on the eighth floor."
+    source: 1
+    quote: "a fire started on the eighth floor of the Asch Building when sparks from a discarded match or cigarette ignited a scrap bin filled with fabric cuttings."
+  - says: "Near quitting time, a fire started in a scrap bin on the eighth floor."
+    source: 3
+    quote: "someone noticed smoke curling from the long rag bin under the cutting tables on the eighth floor."
+  - says: "Someone telephoned a warning up to the offices on the tenth."
+    source: 3
+    quote: "Someone telephoned warning to the executive offices on the 10th floor, but nobody told the ninth floor."
+  - says: "Nobody told the ninth."
+    source: 3
+    quote: "Someone telephoned warning to the executive offices on the 10th floor, but nobody told the ninth floor."
+  - says: "Nobody told the ninth."
+    source: 1
+    quote: "Workers managed to warn employees on the tenth floor. But they had no way to reach the ninth"
+  - says: "By the time the ninth floor knew, the fire was there."
+    source: 1
+    quote: "But their colleagues on the ninth floor did not know the fire had started until it arrived."
+  - says: "One set of stairway doors was locked."
+    source: 3
+    quote: "One set of doors was locked."
+  - says: "One set of stairway doors was locked."
+    source: 1
+    quote: "Workers on the ninth floor had tried to use one of the staircases—only to find that the door was locked"
+  - says: "The fire escape collapsed."
+    source: 3
+    quote: "The building's fire escape filled up and collapsed."
+  - says: "The firemen's nets were useless."
+    source: 1
+    quote: "The firefighters’ life nets proved useless."
+  - says: "People jumped or fell from those windows, a hundred feet, to the street."
+    source: 1
+    quote: "jumped or fell from the windows to the street, a hundred feet below."
+  - says: "One hundred and forty six people died."
+    source: 1
+    quote: "One hundred and forty-six garment workers died in the blaze."
+  - says: "One hundred and forty six people died."
+    source: 3
+    quote: "The final count was 146 dead."
+  - says: "A young woman named Frances Perkins was there."
+    source: 2
+    quote: "In 1911, she was witness to the deaths of 146 people, mostly women, in the Triangle Shirtwaist Factory fire in New York City."
+  - says: "She saw it."
+    source: 4
+    quote: "Working in New York in 1911, Perkins happened to witness the Triangle Shirtwaist Fire"
+  - says: "She spent the rest of her life on what she saw."
+    source: 4
+    quote: "witnessing that tragedy transformed Perkins into a practical crusader who felt called to commit her life to making workplaces safer."
+  - says: "The next year, she took a job fighting for safer factories."
+    source: 2
+    quote: "Spurred by what she saw at the Triangle Fire, in 1912, she left the Consumers League and took the job."
+  - says: "The next year, she took a job fighting for safer factories."
+    source: 2
+    quote: "to advocate for legislation to make factories safer for workers"
+  - says: "New York passed thirty eight new laws."
+    source: 1
+    quote: "they passed thirty-eight new laws."
+  - says: "And in nineteen thirty three, she became Secretary of Labor."
+    source: 2
+    quote: "In 1933, President Franklin Roosevelt appointed Perkins as Secretary of the Department of Labor."
+  - says: "The first woman in any American cabinet."
+    source: 2
+    quote: "Perkins became the first woman to hold a cabinet position."
+  - says: "Look at the memorial plaques on the corner of the building."
+    source: 1
+    quote: "Memorial plaques commemorate the victims."
+  - says: "The man who keeps the archive of the fire remembers what one survivor said."
+    source: 3
+    quote: "Mr. LYONS: You know, there was one quote from a survivor."
+  - says: "The immigrant parents all told their children the same thing."
+    source: 3
+    quote: "all the greenhorn parents told their children that in America they don't let you burn."
+  - says: "In America, they don't let you burn."
+    source: 3
+    quote: "all the greenhorn parents told their children that in America they don't let you burn."
+sources:
+  - title: "Triangle Shirtwaist Factory (Brown Building)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/triangle-shirtwaist-factory-brown-building.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Frances Perkins"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/frances-perkins.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Remembering New York's Deadliest Factory Fire (interview with Curtis Lyons, Kheel Center, Cornell University)"
+    publisher: "NPR, Tell Me More, 25 March 2011"
+    url: https://www.npr.org/2011/03/25/134854566/Remembering-New-Yorks-Deadliest-Factory-Fire
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Frances Perkins, 'The Woman Behind the New Deal'"
+    publisher: "NPR, 16 April 2009"
+    url: https://www.npr.org/2009/04/16/102959041/frances-perkins-the-woman-behind-the-new-deal
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-nobody-told-the-ninth/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 87.1
+    audioBytes: 1395190
+    transcript:
+      totalS: 87.1
+      lines:
+        - text: Look up at this building, to the top three floors.
+          atS: 0
+          durationS: 3.08
+        - text: On a Saturday afternoon in March, nineteen eleven, those floors were a clothing factory.
+          atS: 3.52
+          durationS: 5.74
+        - text: About five hundred people worked there.
+          atS: 9.58
+          durationS: 2.47
+        - text: Most of them were young immigrant women and girls.
+          atS: 12.56
+          durationS: 2.86
+        - text: Near quitting time, a fire started in a scrap bin on the eighth floor.
+          atS: 15.86
+          durationS: 4.6
+        - text: Someone telephoned a warning up to the offices on the tenth.
+          atS: 20.84
+          durationS: 3.46
+        - text: Nobody told the ninth.
+          atS: 24.51
+          durationS: 1.6
+        - text: By the time the ninth floor knew, the fire was there.
+          atS: 26.36
+          durationS: 3.39
+        - text: One set of stairway doors was locked.
+          atS: 30.56
+          durationS: 2.22
+        - text: The fire escape collapsed.
+          atS: 33.22
+          durationS: 1.82
+        - text: The firemen's nets were useless.
+          atS: 35.55
+          durationS: 2.36
+        - text: People jumped or fell from those windows, a hundred feet, to the street.
+          atS: 38.72
+          durationS: 4.51
+        - text: One hundred and forty six people died.
+          atS: 44.04
+          durationS: 2.51
+        - text: A young woman named Frances Perkins was there.
+          atS: 47.24
+          durationS: 2.75
+        - text: She saw it.
+          atS: 50.51
+          durationS: 0.93
+        - text: She spent the rest of her life on what she saw.
+          atS: 51.94
+          durationS: 2.73
+        - text: The next year, she took a job fighting for safer factories.
+          atS: 55.18
+          durationS: 3.47
+        - text: New York passed thirty eight new laws.
+          atS: 59.17
+          durationS: 2.58
+        - text: And in nineteen thirty three, she became Secretary of Labor.
+          atS: 61.92
+          durationS: 3.42
+        - text: The first woman in any American cabinet.
+          atS: 65.72
+          durationS: 2.6
+        - text: Look at the memorial plaques on the corner of the building.
+          atS: 68.93
+          durationS: 2.91
+        - text: The man who keeps the archive of the fire remembers what one survivor said.
+          atS: 72.66
+          durationS: 4.35
+        - text: The immigrant parents all told their children the same thing.
+          atS: 77.71
+          durationS: 3.32
+        - text: In America, they don't let you burn.
+          atS: 81.54
+          durationS: 2.11
+        - text: After this corner, that came a little closer to true.
+          atS: 84.16
+          durationS: 2.96

@@ -1,0 +1,246 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Greenwich Village cluster.
+# Listening spot: Inside Christopher Park (Stonewall National Monument), on the public plaza by George Segal's "Gay Liberation" sculpture, across Christopher Street from the Stonewall Inn.
+# Position: Overture places Christopher Park at 40.73360, -74.00217 and the Gay Liberation Monument at 40.73355, -74.00254; the spot sits between them on the open western plaza (high confidence).
+id: new-york-for-what-a-kick-line
+title: "For What? A Kick Line"
+summary: "The night the Stonewall Inn was raided in 1969, the street kids of this little park faced the police with a kick line."
+place: "Christopher Park, Stonewall National Monument, Greenwich Village, Manhattan"
+at: { lat: 40.73358, lng: -74.00240 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.8
+tags: [new-york, greenwich-village, stonewall, civil-rights, lgbtq, national-monument]
+teaser: "Ten police with their clubs out. Twenty kids with their arms around each other."
+script: |
+  Look around this small park. The benches. The iron fence. The white figures of the sculpture.
+
+  In the summer of nineteen sixty nine, this park was a refuge for street kids. Most were runaways. Most had left home, or been thrown out, because they were gay and could not hide it.
+
+  In the early hours of the twenty eighth of June, the police raided the bar across the street, the Stonewall Inn. Raids were nothing new. This time, people fought back.
+
+  That first night, for some reason, the police did not chase anyone into this park.
+
+  A man named Danny Garvin was watching from a friend's window on Grove Street. He saw about ten police on one side, holding their clubs straight out. And on the other side, about twenty young men. They rolled up their trouser legs. They put their arms around one another.
+
+  And they formed a kick line.
+
+  The police charged, and hit them. Garvin said he could never get that sight out of his mind. And he asked, for what? A kick line.
+
+  The clubs did not work. There were more kick lines before the night was over. One year later, to the day, the first pride march in the country went through New York.
+
+  Look at the park again. The benches. The fence.
+
+  One of the kids from here, Thomas Lanigan Schmidt, said most of the people he knew back then were dead within four years.
+
+  For one night, here, they were not the ones running.
+
+pronunciations:
+  - written: Lanigan Schmidt
+    say: LAN-ih-gun SHMIT
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look around this small park."
+    source: 3
+    quote: "Christopher Park is surrounded by brick sidewalks and a nineteenth century wrought-iron fence."
+  - says: "The white figures of the sculpture."
+    source: 3
+    quote: "George Segal’s sculpture, “Gay Liberation,” stands as a focal point of the plaza."
+  - says: "In the summer of nineteen sixty nine, this park was a refuge for street kids."
+    source: 2
+    quote: "During the first night of the Stonewall Rebellion, a small city park across the street from the Stonewall Inn provided refuge for street youths."
+  - says: "Most were runaways."
+    source: 2
+    quote: "Most were runaways."
+  - says: "Most had left home, or been thrown out, because they were gay and could not hide it."
+    source: 2
+    quote: "Most of the youths had left home, or been kicked out, because they were gay and could not hide it."
+  - says: "In the early hours of the twenty eighth of June, the police raided the bar across the street, the Stonewall Inn."
+    source: 1
+    quote: "In the early hours of June 28, 1969, a police raid on the Stonewall Inn provoked a spontaneous act of resistance"
+  - says: "In the early hours of the twenty eighth of June, the police raided the bar across the street, the Stonewall Inn."
+    source: 4
+    quote: "The police raid in the wee hours of June 28, 1969, stirred a sudden resistance, as patrons and others outside the bar hurled objects at officers."
+  - says: "Raids were nothing new."
+    source: 5
+    quote: "Unlike the many previous raids that had taken place at the Christopher Street establishment, this one inspired the bar's patrons to fight back."
+  - says: "This time, people fought back."
+    source: 1
+    quote: "In the early hours of June 28, 1969, people fought back."
+  - says: "That first night, for some reason, the police did not chase anyone into this park."
+    source: 2
+    quote: "For some reason, police during the first night of the uprising did not pursue people into Christopher Park."
+  - says: "A man named Danny Garvin was watching from a friend's window on Grove Street."
+    source: 2
+    quote: "Danny Garvin observed from 98 Grove Street, where a friend lived."
+  - says: "He saw about ten police on one side, holding their clubs straight out."
+    source: 2
+    quote: "There must have been about ten cops one way and about twenty queens on the other side."
+  - says: "He saw about ten police on one side, holding their clubs straight out."
+    source: 2
+    quote: "the cops … with their feet spread apart and holding their billy clubs straight out."
+  - says: "And on the other side, about twenty young men."
+    source: 2
+    quote: "There must have been about ten cops one way and about twenty queens on the other side."
+  - says: "They rolled up their trouser legs."
+    source: 2
+    quote: "these queens all of a sudden rolled up their pants legs into knickers, and they stood in front of the cops."
+  - says: "They put their arms around one another."
+    source: 2
+    quote: "They all put their arms around one another and started forming a kick line"
+  - says: "And they formed a kick line."
+    source: 2
+    quote: "They all put their arms around one another and started forming a kick line"
+  - says: "The police charged, and hit them."
+    source: 2
+    quote: "the cops just charged with the [nightsticks] and started smacking them in the heads"
+  - says: "Garvin said he could never get that sight out of his mind."
+    source: 2
+    quote: "I just can’t ever get that one sight out of my mind… that kick line"
+  - says: "And he asked, for what? A kick line."
+    source: 2
+    quote: "Because… people were getting smashed with bats. And for what? A kick line."
+  - says: "The clubs did not work."
+    source: 2
+    quote: "The bats did not work."
+  - says: "There were more kick lines before the night was over."
+    source: 2
+    quote: "There would be more kick lines before the crowd dissipated that first night."
+  - says: "One year later, to the day, the first pride march in the country went through New York."
+    source: 5
+    quote: "The first gay pride march took place in New York City on June 28, 1970 — the one-year anniversary of the Stonewall Riots."
+  - says: "One of the kids from here, Thomas Lanigan Schmidt, said most of the people he knew back then were dead within four years."
+    source: 2
+    quote: "Thomas Lanigan-Schmidt, who was one of them, said, “Most of the people I knew from back then were already dead within four years after I met them.”"
+  - says: "For one night, here, they were not the ones running."
+    source: 2
+    quote: "The street youths turned out to be some of the shock troops for a new gay identity, eluding and then taunting the NYC Tactical Police Force."
+  - says: "For one night, here, they were not the ones running."
+    source: 2
+    quote: "The small city park turned into a refuge, a place to witness kick lines being formed to make fun of the police"
+sources:
+  - title: "History & Culture, Stonewall National Monument"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/ston/learn/historyculture.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Christopher Park: In 1969, a Refuge for LGB Street Youth"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/christopher-park.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Stonewall National Monument: Rising for Equality"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/stonewall-national-monument-rising-for-equality.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Stonewall Inn's march from illicit dive to national monument"
+    publisher: "CBS News (Associated Press), June 2019"
+    url: https://www.cbsnews.com/news/stonewall-inns-march-from-illicit-dive-bar-to-national-monument/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "LGBTQ History Month: The road to America's first gay pride march"
+    publisher: "NBC News, NBC Out"
+    url: https://www.nbcnews.com/feature/nbc-out/lgbtq-history-month-road-america-s-first-gay-pride-march-n917096
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-for-what-a-kick-line/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 95.9
+    audioBytes: 1534789
+    transcript:
+      totalS: 95.9
+      lines:
+        - text: Look around this small park.
+          atS: 0
+          durationS: 1.59
+        - text: The benches.
+          atS: 1.97
+          durationS: 0.89
+        - text: The iron fence.
+          atS: 3.04
+          durationS: 1.27
+        - text: The white figures of the sculpture.
+          atS: 4.63
+          durationS: 1.85
+        - text: In the summer of nineteen sixty nine, this park was a refuge for street kids.
+          atS: 7.29
+          durationS: 4.96
+        - text: Most were runaways.
+          atS: 12.53
+          durationS: 1.31
+        - text: Most had left home, or been thrown out, because they were gay and could not hide it.
+          atS: 14.28
+          durationS: 5.03
+        - text: In the early hours of the twenty eighth of June, the police raided the bar across the street, the Stonewall Inn.
+          atS: 20.26
+          durationS: 7.16
+        - text: Raids were nothing new.
+          atS: 28.03
+          durationS: 1.57
+        - text: This time, people fought back.
+          atS: 30.04
+          durationS: 2.21
+        - text: That first night, for some reason, the police did not chase anyone into this park.
+          atS: 32.75
+          durationS: 5.5
+        - text: A man named Danny Garvin was watching from a friend's window on Grove Street.
+          atS: 38.95
+          durationS: 4.99
+        - text: He saw about ten police on one side, holding their clubs straight out.
+          atS: 44.45
+          durationS: 4.46
+        - text: And on the other side, about twenty young men.
+          atS: 49.24
+          durationS: 2.95
+        - text: They rolled up their trouser legs.
+          atS: 52.88
+          durationS: 1.96
+        - text: They put their arms around one another.
+          atS: 55.17
+          durationS: 2.05
+        - text: And they formed a kick line.
+          atS: 57.5
+          durationS: 1.65
+        - text: The police charged, and hit them.
+          atS: 59.48
+          durationS: 2.33
+        - text: Garvin said he could never get that sight out of his mind.
+          atS: 62.32
+          durationS: 3.13
+        - text: And he asked, for what?
+          atS: 65.74
+          durationS: 2.19
+        - text: A kick line.
+          atS: 68.25
+          durationS: 0.99
+        - text: The clubs did not work.
+          atS: 69.85
+          durationS: 1.56
+        - text: There were more kick lines before the night was over.
+          atS: 71.84
+          durationS: 2.7
+        - text: One year later, to the day, the first pride march in the country went through New York.
+          atS: 75.36
+          durationS: 5.84
+        - text: Look at the park again.
+          atS: 81.64
+          durationS: 1.21
+        - text: The benches.
+          atS: 83.02
+          durationS: 0.93
+        - text: The fence.
+          atS: 84.07
+          durationS: 0.85
+        - text: One of the kids from here, Thomas Lanigan Schmidt, said most of the people he knew back then were dead within four years.
+          atS: 85.36
+          durationS: 6.61
+        - text: For one night, here, they were not the ones running.
+          atS: 92.66
+          durationS: 3.19
