@@ -80,6 +80,11 @@ describe("toast B: Next", () => {
     expect(nextAfterSync("synced", around, null)).toEqual({ echo: around[3]!.echo, label: "Next · 8 min walk" });
   });
 
+  it("nothing past a walk: an echo 9.5 km off is not a next", () => {
+    expect(nextAfterSync("synced", [near("synced", 0.01), near("far", 9.5)], null)).toBeNull();
+    expect(nextAfterSync("synced", [near("far", 9.5), near("walkable", 4.9)], null)?.echo.id).toBe("walkable");
+  });
+
   it("the planned walk's own next stop, when there is one", () => {
     const stop = { echo: echo("stop"), distanceKm: 0.35 };
     expect(nextAfterSync("synced", [near("close", 0.05)], stop)?.label).toBe("Next stop · 6 min");

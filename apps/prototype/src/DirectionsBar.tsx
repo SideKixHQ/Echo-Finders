@@ -1,54 +1,35 @@
 /**
- * Walking to an echo, inside the app: the turn at the top, the walk at the bottom.
+ * Walking to an echo, inside the app: the turn at the top, the echo at the bottom.
  *
  * James (2026-11-10): "Take me there should use in app map navigation and take the person
- * to the echo not open apple maps. You also do not need another step. take me there should
- * take you there not open another window you have to tap to open another app."
+ * to the echo not open apple maps." So one tap on the card starts this, and nothing in it
+ * leaves the app:
  *
- * So one tap on the card starts this, and nothing in it leaves the app:
- *
- * - **The turn banner**, under the top bar: how far to the next turn and what it is
- *   ("120 m, Turn right onto Chestnut Street"). Read at arm's length.
- * - **The sheet**, at the bottom: minutes, distance, arrival time, which echo, what happens
- *   when you get there, and the one way to stop.
+ * - **The turn card** (this), under the top bar: how far to the next turn and what it is
+ *   ("120 m, Turn right onto Chestnut Street"). Read at arm's length. With no street map it
+ *   points at the echo: "Head south".
+ * - **The echo bar** at the bottom, the one people already know (`EchoBar`, its directions
+ *   mode): the echo's orb and title, "18 min · arrive 9:58 pm" under it, and a round ✕ that
+ *   ends directions. Tapping it opens the echo's card. This is board DirC, approved by
+ *   James on 2026-11-10 in place of a directions sheet that took a third of the screen and
+ *   cut its own title through on his phone.
  * - **The line** on the map (`RouteMap`): along the streets where a street file was built,
- *   straight to the echo where none was. Where it is straight, the banner says "Head
- *   northeast" and the sheet says so, rather than handing you to another maps app, which is
- *   what this used to do there ("Directions in Maps").
+ *   straight to the echo where none was, framed between this card and the bar.
  *
  * Arriving is the sync's job, as it always was: within reach the echo syncs, the beacon is
- * let go and the sync card takes over (`App`).
+ * let go and the bar goes back to being the echo bar, with Play.
  */
 
-import type { Echo, WalkGuidance, LatLng } from "@echofinders/core";
+import type { WalkGuidance, LatLng } from "@echofinders/core";
 import { arrivalClock, routeGuidance, straightGuidance } from "@echofinders/core";
 import { walkDistance, walkTime, type Directions } from "./directions";
-import { startLine } from "./guided-walk";
 import { WALKABLE_KM } from "./going";
 
-interface Props {
-  readonly echo: Echo;
-  readonly directions: Directions;
-  /** Where you are, for the straight line where there is no street route. */
-  readonly from: LatLng | null;
-  readonly onEnd: () => void;
-  /** On a planned walk: which stop this is, of how many. */
-  readonly step?: { readonly at: number; readonly of: number };
-  /** The first leg of a guided walk: "Walk to the start · 6 min". */
-  readonly toStart?: boolean;
-}
-
 /**
- * How tall the sheet is, for the map to keep you and the line clear of it. Matches
- * `.dir-sheet` in theme.css, which also hands it to the control column as `--step-h`.
+ * Past this the walk is not offered at all (`going.ts`). Directions that somehow reach it
+ * end, and the echo's card says how far instead (`App`).
  */
-export const DIRSHEET_H = 196;
-
-/**
- * Past this, a walking time and an arrival clock stop meaning anything. The card asks the
- * same question (`going.ts`) and does not offer a walk past it.
- */
-const WALKABLE_M = WALKABLE_KM * 1000;
+export const WALKABLE_M = WALKABLE_KM * 1000;
 
 /** The guidance for what the router answered, or null while it is still working. */
 export function guidanceFor(directions: Directions, from: LatLng | null, to: LatLng): WalkGuidance | null {
@@ -82,44 +63,34 @@ function Arrow({ guidance }: { guidance: WalkGuidance | null }) {
   );
 }
 
-export function DirectionsBar({ echo, directions, from, onEnd, step, toStart = false }: Props) {
-  const g = guidanceFor(directions, from, echo.point.at);
-  const walkable = g !== null && g.metres <= WALKABLE_M;
-  return (
-    <>
-      <div className="dir-turn" role="status" aria-live="polite">
-        <Arrow guidance={g} />
-        <div className="dir-turn-say">
-          {g?.inM != null && <strong className="dir-turn-in">{walkDistance(g.inM)}</strong>}
-          <span className="dir-turn-what">{g ? g.say : "Finding the way…"}</span>
-        </div>
-      </div>
+/**
+ * The bar's second line while walking: "18 min · arrive 9:58 pm", and on a planned or
+ * guided walk "Stop 1 of 6 · 3 min · arrive 9:28 pm". No distance: the turn card has it.
+ * Each part is its own string so the bar can keep them whole when the line wraps.
+ */
+export function directionsLine(
+  g: WalkGuidance | null,
+  step: { readonly at: number; readonly of: number } | undefined,
+  nowMs: number,
+): readonly string[] {
+  const where = step ? [`Stop ${step.at} of ${step.of}`] : [];
+  if (!g) return [...where, "Finding the way"];
+  // A stop on a planned walk is minutes away and the next one follows it, so its line is
+  // which stop and how long; the clock is for a walk to one echo (James, 2026-11-10: fewer
+  // words, and "Stop 1 of 6 · 3 min · arrive 9:28 pm" wrapped onto two lines at 375).
+  if (step) return [...where, walkTime(g.seconds)];
+  return [walkTime(g.seconds), `arrive ${arrivalClock(nowMs, g.seconds)}`];
+}
 
-      <section className="dir-sheet" aria-label={`Directions to ${echo.title}`}>
-        <p className={toStart ? "dir-sheet-big dir-sheet-start" : "dir-sheet-big"}>
-          {g ? (walkable ? (toStart ? startLine(walkTime(g.seconds)) : walkTime(g.seconds)) : walkDistance(g.metres)) : "\u00a0"}
-        </p>
-        <p className="dir-sheet-meta">
-          <span className="dir-sheet-how">
-            {g
-              ? walkable
-                ? `${walkDistance(g.metres)} · arrive ${arrivalClock(Date.now(), g.seconds)}`
-                : "Too far to walk"
-              : ""}
-          </span>
-          <span className="dir-sheet-to">
-            {step ? `Stop ${step.at} of ${step.of} · ` : ""}to {echo.title}
-          </span>
-        </p>
-        <p className="dir-sheet-note">
-          {g && !g.streets
-            ? "Head this way, as the crow flies. When you arrive it unlocks. Tap Play."
-            : "When you arrive it unlocks. Tap Play."}
-        </p>
-        <button className="dir-end" onClick={onEnd}>
-          {step ? "End the walk" : "End directions"}
-        </button>
-      </section>
-    </>
+/** The turn card, under the top bar. */
+export function DirectionsBar({ guidance: g }: { readonly guidance: WalkGuidance | null }) {
+  return (
+    <div className="dir-turn" role="status" aria-live="polite">
+      <Arrow guidance={g} />
+      <div className="dir-turn-say">
+        {g?.inM != null && <strong className="dir-turn-in">{walkDistance(g.inM)}</strong>}
+        <span className="dir-turn-what">{g ? g.say : "Finding the way…"}</span>
+      </div>
+    </div>
   );
 }

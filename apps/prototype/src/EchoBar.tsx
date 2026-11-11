@@ -47,7 +47,7 @@
  * of twenty six. Nearest first, so the next item is always the cheapest one to go and get.
  */
 
-import { useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { presetFor, rarityOf, type Echo, type Guidance, type TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, type EchoFace } from "@echofinders/echo";
@@ -95,6 +95,19 @@ export interface EchoBarProps {
    * exact failure the old proximity strip had when a pin was tapped.
    */
   readonly guidance: Guidance | null;
+  /**
+   * Walking to this echo (board DirC, 2026-11-10): the bar IS the directions. No arrows and
+   * no kicker; the title in full, wrapping rather than cut; how long and when you arrive
+   * under it ("Stop 1 of 6 · 3 min · arrive 9:28 pm"); and a round ✕ that ends them.
+   * Tapping the rest of the bar opens the echo's card, as it always does.
+   */
+  readonly directions?: {
+    /** The second line, in parts that are kept whole when it wraps. */
+    readonly line: readonly string[];
+    readonly onEnd: () => void;
+    /** The bar's height plus the gap it floats, each time it changes: a long title wraps. */
+    readonly onHeight?: (px: number) => void;
+  };
 }
 
 /** The gap the bar floats above the tab bar (`.echobar` in `theme.css`). */
@@ -127,6 +140,7 @@ export function EchoBar({
   simple,
   mode,
   guidance,
+  directions,
 }: EchoBarProps) {
   /*
    * Nothing chosen yet shows the nearest, which is what the right arrow would give you
@@ -137,6 +151,34 @@ export function EchoBar({
   const current = items[at];
   // Before the early return: hooks run on every render or not at all.
   const swipe = useRef<{ x: number; y: number } | null>(null);
+  /*
+    Walking, the bar is as tall as its title, so it is measured: the map keeps the walk and
+    its credit above it, and the control column (`--step-h`) stays clear of it.
+  */
+  const bar = useRef<HTMLDivElement>(null);
+  const heightTo = useRef(directions?.onHeight);
+  heightTo.current = directions?.onHeight;
+  const measuring = directions !== undefined;
+  useLayoutEffect(() => {
+    const el = bar.current;
+    if (!measuring || !el) return;
+    const screen = el.closest<HTMLElement>(".screen");
+    let last = -1;
+    const measure = () => {
+      const h = Math.ceil(el.getBoundingClientRect().height) + ECHOBAR_FLOAT;
+      if (h <= ECHOBAR_FLOAT || h === last) return;
+      last = h;
+      screen?.style.setProperty("--step-h", `${h}px`);
+      heightTo.current?.(h);
+    };
+    measure();
+    const observer = typeof ResizeObserver === "undefined" ? null : new ResizeObserver(measure);
+    observer?.observe(el);
+    return () => {
+      observer?.disconnect();
+      screen?.style.removeProperty("--step-h");
+    };
+  }, [measuring]);
   if (!current) return null;
 
   const { echo, distanceKm } = current;
@@ -190,7 +232,8 @@ export function EchoBar({
 
   return (
     <div
-      className={warm ? "echobar echobar-warm" : "echobar"}
+      ref={bar}
+      className={`echobar${warm ? " echobar-warm" : ""}${directions ? " echobar-dir" : ""}`}
       data-cue={cue ? cue.kind : "none"}
     >
       {/*
@@ -214,7 +257,7 @@ export function EchoBar({
         }}
       >
         {/* Two arrows that never move. The whole argument for this over aiming at a pin. */}
-        {items.length > 1 && (
+        {items.length > 1 && !directions && (
           <button
             className="echobar-arrow"
             onClick={() => step(-1)}
@@ -263,6 +306,7 @@ export function EchoBar({
             onClick={() => onOpen(echo)}
             aria-label={isLoaded ? `Open the player: ${echo.title}` : `Open: ${echo.title}`}
           >
+            {!directions && (
             <span className="echobar-kicker mono">
               <span className="echobar-dot" />
               {rarity && <b>{rarity}</b>}
@@ -278,6 +322,7 @@ export function EchoBar({
                 </em>
               )}
             </span>
+            )}
             <strong>{simple ? (echo.simple?.title ?? echo.title) : echo.title}</strong>
             {/*
               The place stretches and truncates; the two facts never do.
@@ -287,12 +332,20 @@ export function EchoBar({
               the two things on this line somebody acts on. Rendered and measured, not
               reasoned about.
             */}
+            {directions ? (
+              <span className="echobar-way">
+                {directions.line.map((part, i) => (
+                  <span key={i}>{i < directions.line.length - 1 ? `${part} ·` : part}</span>
+                ))}
+              </span>
+            ) : (
             <span className="echobar-where">
               <span className="echobar-place">{shortPlace(echo.point.place)}</span>
               <span className="echobar-facts">
                 {reach(distanceKm, cue?.kind ?? null, presetFor(mode).speedKph)} · {listenLength(durationS)}
               </span>
             </span>
+            )}
           </button>
           </div>
 
@@ -305,14 +358,23 @@ export function EchoBar({
             keeps its height either way, so the bar is exactly one height and the map's
             reserved band never moves under it.
           */}
+          {!directions && (
           <div className="echobar-progress" aria-hidden="true">
             {isLoaded && (
               <span style={{ width: `${Math.max(0, Math.min(1, progress)) * 100}%` }} />
             )}
           </div>
+          )}
         </div>
 
-        {items.length > 1 && (
+        {directions && (
+          <button className="echobar-end" onClick={directions.onEnd} aria-label="End directions">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 7l10 10M17 7L7 17" />
+            </svg>
+          </button>
+        )}
+        {items.length > 1 && !directions && (
           <button className="echobar-arrow" onClick={() => step(1)} aria-label="The next one">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M9.5 5L16 12l-6.5 7" />

@@ -41,10 +41,10 @@ const check = (name, ok, detail = '') => {
   if (!ok) failures.push(name);
 };
 
-async function freshApp() {
+async function freshApp(geolocation = START) {
   const ctx = await browser.newContext({
     viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
-    ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: START,
+    ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation,
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
   // The lock screen's buttons, recorded as the app registers them, so they can be pressed.
@@ -437,21 +437,74 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
     check('Directions: one tap, and the turn is on screen', await visible(p.locator('.dir-turn')));
     const turn = (await p.locator('.dir-turn').innerText().catch(() => '')).trim();
     check('Directions: the turn says how far and what to do', /\d+(\.\d)? k?m/.test(turn) && /(Turn|Carry on|Continue|Straight|Head|Almost)/.test(turn), turn);
-    const sheet = p.locator('.dir-sheet');
-    check('Directions: the sheet says how long, when and where to', await visible(sheet)
-      && /min|km/.test(await sheet.innerText()) && /to /.test(await sheet.innerText()), await sheet.innerText().catch(() => ''));
-    check('Directions: says what happens on arrival', await visible(sheet.getByText('When you arrive it unlocks. Tap Play.', { exact: false })));
+    // Board DirC (2026-11-10): no sheet. The echo bar at the foot is the directions.
+    const bar = p.locator('.echobar-dir');
+    const words = (await bar.innerText().catch(() => '')).replace(/\n/g, ' | ');
+    check('Directions: the echo bar is the directions, saying how long and when',
+      await visible(bar) && /\d+ min · \| ?arrive \d{1,2}:\d\d( ?[ap]m)?/.test(words.replace(/\u00a0/g, ' ')), words);
+    check('Directions: no directions sheet', (await p.locator('.dir-sheet').count()) === 0);
     check('Directions: the way is drawn on the map', (await p.locator('.dir-line').count()) === 1);
     check('Directions: nothing hands off to another maps app',
       (await p.locator('a[href*="maps.apple.com"], a[href*="google.com/maps"]').count()) === 0 && opened.length === 0, opened.join(' '));
-    const end = sheet.getByRole('button', { name: 'End directions' });
+    // Tapping the bar opens the echo's card; closing it comes back to the directions.
+    await bar.locator('.echobar-tap').click().catch(() => {});
+    await p.waitForTimeout(700);
+    check('Directions: tapping the bar opens the echo\'s card', await visible(p.locator('.pop')));
+    await p.locator('.pop-close').click().catch(() => {});
+    await p.waitForTimeout(600);
+    check('Directions: closing the card comes back to the directions',
+      !(await visible(p.locator('.pop'))) && await visible(p.locator('.dir-turn')) && await visible(bar));
+    const end = bar.getByRole('button', { name: 'End directions' });
     const box = await end.boundingBox();
-    check('Directions: End directions is a 44px target', !!box && box.height >= 44, JSON.stringify(box));
+    check('Directions: ✕ End directions is a 44px target', !!box && box.height >= 44 && box.width >= 44, JSON.stringify(box));
     await end.click();
     await p.waitForTimeout(600);
-    check('Directions: End directions ends them', !(await p.locator('.dir-turn, .dir-sheet, .dir-line').count()));
+    check('Directions: ✕ ends them', !(await p.locator('.dir-turn, .echobar-dir, .dir-line').count()));
+    check('Directions: and the echo bar is back', await visible(p.locator('.echobar')));
   }
   await ctx.close();
+}
+
+// ── Arriving at the end of the directions ───────────────────────────────────────
+// The bar that was the directions becomes the echo bar again, in the same place, on the
+// echo you walked to, with Play (board DirC, 2026-11-10).
+{
+  let ok = false;
+  for (let tries = 0; tries < 3 && !ok; tries++) {
+    const { ctx, p } = await freshApp(START);
+    await p.addStyleTag({ content: '.synced { pointer-events: none !important; }' });
+    const box = p.getByLabel('Search a city, place or ZIP code');
+    await box.click();
+    await box.fill('Eight million people');
+    await p.waitForTimeout(600);
+    await p.locator('#msearch-results .msearch-go').first().click().catch(() => {});
+    await p.waitForTimeout(1500);
+    await p.locator('.pop-tip-ok').click({ timeout: 1000 }).catch(() => {});
+    await p.locator('.pop .pop-aim:not(.pop-keep)').click().catch(() => {});
+    await p.waitForTimeout(2000);
+    if (!(await visible(p.locator('.echobar-dir')))) { await ctx.close(); continue; }
+    const before = await p.locator('.echobar').boundingBox();
+    for (let i = 0; i <= 10; i++) {
+      await ctx.setGeolocation({ latitude: START.latitude + (CASTLE.latitude - START.latitude) * (i / 10), longitude: CASTLE.longitude });
+      await p.waitForTimeout(500);
+    }
+    for (let i = 0; i < 70 && (await p.locator('.dir-turn').count()); i++) {
+      await ctx.setGeolocation({ ...CASTLE, latitude: CASTLE.latitude + (i % 2) * 0.00001 });
+      await p.waitForTimeout(700);
+    }
+    if (await p.locator('.dir-turn').count()) { await ctx.close(); continue; }
+    ok = true;
+    await p.waitForTimeout(800);
+    const after = await p.locator('.echobar').boundingBox();
+    check('Arriving: directions end', !(await p.locator('.dir-turn, .echobar-dir, .dir-line').count()));
+    check('Arriving: the map stays', await visible(p.locator('.echobar')));
+    check('Arriving: the bar is the echo bar, on the echo you walked to, with Play',
+      await visible(p.locator('.echobar .echobar-orb[aria-label="Play: Eight million people walked through this fort"]')));
+    check('Arriving: the bar stays where it was', !!before && !!after && Math.abs(before.y + before.height - after.y - after.height) <= 2,
+      `${JSON.stringify(before)} then ${JSON.stringify(after)}`);
+    await ctx.close();
+  }
+  check('Arriving: reached', ok);
 }
 
 // ── The echo card, before you are there ─────────────────────────────────────────
@@ -568,9 +621,35 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await keep.click().catch(() => {});
   await p.waitForTimeout(300);
   check('Far card: Save saves', await visible(card.locator('.pop-primary').getByRole('button', { name: 'Saved', exact: true })));
-  check('Far card: nothing walks you there', !(await p.locator('.dir-turn, .dir-sheet').count()));
+  check('Far card: nothing walks you there', !(await p.locator('.dir-turn, .echobar-dir').count()));
   const facts = (await p.locator('.echobar-facts').first().innerText().catch(() => '')).trim();
   check('Echo bar: the length says it is a listen, not a clock', /min listen$/.test(facts) && !/\d:\d\d/.test(facts), facts);
+  await ctx.close();
+}
+
+// ── The echo card, past an hour on foot ─────────────────────────────────────────
+// At Wrightsville Beach the card offered "Walk there · 2 hr 7 min" to an echo 9.5 km off,
+// and the walk it started said so (James, 2026-11-10). Past about an hour on foot
+// (`going.ts`, 5 km) it is the far card: how far, and Save, and no directions.
+{
+  const { ctx, p } = await freshApp({ latitude: 34.2722, longitude: -77.811 });
+  const box = p.getByLabel('Search a city, place or ZIP code');
+  await box.click();
+  await box.fill('The Sand Is Already Occupied');
+  await p.waitForTimeout(600);
+  await p.locator('#msearch-results .msearch-go').first().click().catch(() => {});
+  await p.waitForTimeout(1500);
+  const card = p.locator('.pop');
+  check('9.5 km card: Go opens its card', await visible(card));
+  await card.locator('.pop-tip-ok').click({ timeout: 1000 }).catch(() => {});
+  await p.waitForTimeout(300);
+  const far = (await card.locator('.pop-far').innerText().catch(() => '')).trim();
+  check('9.5 km card: says how far, plainly', /^9\.\d km away$/.test(far), far);
+  check('9.5 km card: no walking directions offered',
+    (await card.getByRole('button', { name: /Walk there|Ride there|Take me there|Following/ }).count()) === 0
+    && (await card.locator('.pop-aim:not(.pop-keep)').count()) === 0);
+  check('9.5 km card: Save is the primary', await visible(card.locator('.pop-primary').getByRole('button', { name: 'Save', exact: true })));
+  check('9.5 km card: nothing walks you there', !(await p.locator('.dir-turn, .echobar-dir').count()));
   await ctx.close();
 }
 
@@ -1090,36 +1169,35 @@ async function nearby() {
   await p.waitForTimeout(400);
   await p.locator('.jmenu-item', { hasText: 'Old Wilmington' }).first().click();
   await p.waitForTimeout(2500);
-  const sheet = p.locator('.dir-sheet');
-  const lead = (await sheet.locator('.dir-sheet-big').innerText().catch(() => '')).trim();
-  check('Guided walk: shows the way to the first stop', /^Walk to the start · \d+ min$/.test(lead), lead);
-  check('Guided walk: says which stop, of how many',
-    /Stop 1 of \d+ · to /.test(await sheet.locator('.dir-sheet-to').innerText().catch(() => '')));
+  const bar = p.locator('.echobar-dir');
+  const way = async () => (await bar.locator('.echobar-way').innerText().catch(() => '')).replace(/\s+/g, ' ').trim();
+  const lead = await way();
+  check('Guided walk: shows the way to the first stop, which stop of how many', /^Stop 1 of \d+ · \d+ (min|hr)/.test(lead), lead);
   check('Guided walk: turn by turn at the top', await visible(p.locator('.dir-turn')));
-  // Numbered, one badge per stop, as the sheet counts them.
-  const of = Number(/of (\d+)/.exec(await sheet.locator('.dir-sheet-to').innerText().catch(() => ''))?.[1] ?? 0);
+  // Numbered, one badge per stop, as the bar counts them.
+  const of = Number(/of (\d+)/.exec(lead)?.[1] ?? 0);
   check('Guided walk: its stops are on the map, numbered', of > 0 && (await p.locator('g.pw-badge').count()) === of,
     `${await p.locator('g.pw-badge').count()} badges, ${of} stops`);
+  // How far, in minutes now: the bar gives no distance, the turn card has the next turn's.
   const metres = async () => {
-    const t = (await sheet.locator('.dir-sheet-how').innerText().catch(() => '')).trim();
-    const m = /([\d.,]+)\s*(m|km)\b/.exec(t);
-    return m ? Number(m[1].replace(/,/g, '')) * (m[2] === 'km' ? 1000 : 1) : null;
+    const m = /· (\d+) min(?: ·|$)/.exec(await way());
+    return m ? Number(m[1]) * 75 : null;
   };
   const away = await metres();
   // St. James is about 470 m from the river where the walk starts. Moved there, it would be 0.
   check('Guided walk: does not move you to the start', away !== null && away > 200, String(away));
   await p.waitForTimeout(8000);
   const later = await metres();
-  check('Guided walk: standing still, you stay where you are', later !== null && away !== null && Math.abs(later - away) < 40,
+  check('Guided walk: standing still, you stay where you are', later !== null && away !== null && Math.abs(later - away) <= 75,
     `${away} then ${later}`);
   const synced = await p.locator('.toast-synced').allInnerTexts();
   check('Guided walk: syncs nothing you have not walked to',
     synced.every((t) => !/Long Walk Beside the River/.test(t)) && (await badge()) === foundBefore,
     `${synced.join(' / ')} · My Echoes ${foundBefore} then ${await badge()}`);
   check('Guided walk: no render loop', loops.length === 0, loops[0] ?? '');
-  await sheet.getByRole('button', { name: 'End the walk' }).click().catch(() => {});
+  await bar.getByRole('button', { name: 'End directions' }).click().catch(() => {});
   await p.waitForTimeout(600);
-  check('Guided walk: End the walk puts the directions away', !(await visible(p.locator('.dir-sheet'))));
+  check('Guided walk: ✕ puts the directions away', !(await visible(p.locator('.echobar-dir, .dir-turn'))));
   await ctx.close();
 }
 

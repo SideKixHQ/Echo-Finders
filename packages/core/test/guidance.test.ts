@@ -78,10 +78,14 @@ describe("with no street map: as the crow flies", () => {
 });
 
 describe("arrival time", () => {
-  it("is the clock now plus the walk, hours and minutes", () => {
-    const now = Date.UTC(2026, 10, 10, 0, 6, 0); // 7:06 pm in New York
-    expect(arrivalClock(now, 6 * 60, "America/New_York")).toBe("7:12");
-    expect(arrivalClock(now, 60 * 60, "America/New_York")).toBe("8:06");
+  const now = Date.UTC(2026, 10, 10, 0, 6, 0); // 7:06 pm in New York
+  it("is the clock now plus the walk, with am or pm on a twelve hour phone", () => {
+    expect(arrivalClock(now, 6 * 60, "America/New_York", "en-US")).toBe("7:12\u00a0pm");
+    expect(arrivalClock(now, 60 * 60, "America/New_York", "en-US")).toBe("8:06\u00a0pm");
+    expect(arrivalClock(now, 6 * 3600, "America/New_York", "en-US")).toBe("1:06\u00a0am");
+  });
+  it("is the twenty four hour clock where the phone uses one", () => {
+    expect(arrivalClock(now, 6 * 60, "Europe/London", "en-GB")).toBe("00:12");
   });
 });
 

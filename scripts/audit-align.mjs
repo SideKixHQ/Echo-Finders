@@ -98,6 +98,16 @@ const SCREENS = {
     // The ✕ belongs to the kicker line and sits on its centre line.
     { sel: '.pop-close svg', middleOf: '.pop-kicker' },
   ],
+  /*
+   * Walking to an echo (board DirC, 2026-11-10): the turn card under the top bar and the echo
+   * bar, which is the directions, on both gutters, the ✕ that ends them wholly on screen.
+   */
+  directions: [
+    { sel: '.dir-turn', left: true, right: true, whole: true },
+    { sel: '.echobar-dir .echobar-row', left: true, right: true, whole: true },
+    { sel: '.echobar-dir .echobar-end', whole: true },
+    { sel: '.nav', whole: true },
+  ],
   paywall: [
     // Fitted to an iPhone in Safari without scrolling; an SE scrolls, by design.
     { sel: '.paywall', fits: 'iphone' },
@@ -247,6 +257,17 @@ const SETUP = {
     await p.waitForTimeout(500);
     await p.getByRole('button', { name: /^Open: Eight million/ }).click();
     await p.waitForTimeout(800);
+  } },
+  directions: { heard: 0, ready: '.echobar-dir', steps: async (p) => {
+    const box = p.getByLabel('Search a city, place or ZIP code');
+    await box.click();
+    await box.fill('Eight million people');
+    await p.waitForTimeout(600);
+    await p.locator('#msearch-results .msearch-go').first().click();
+    await p.waitForTimeout(1500);
+    await p.locator('.pop-tip-ok').click({ timeout: 1000 }).catch(() => {});
+    await p.locator('.pop .pop-aim:not(.pop-keep)').click();
+    await p.waitForTimeout(2500);
   } },
   paywall: { heard: 10, ready: '.paywall', steps: async (p, ctx) => {
     await holdStill(p, ctx, async () => (await p.locator('.toast-synced').count()) > 0);
