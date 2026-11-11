@@ -1,0 +1,149 @@
+# Drafted by Claude Code (2026-11-11) for the second Savannah pass, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the south edge of Lafayette Square on East Charlton Street, a few metres east of Abercorn, facing No. 207, the Flannery O'Connor Childhood Home. A house museum; the listener stays on the square.
+# Position: Charlton at Abercorn and Charlton at Lincoln from the street segments in the app's Savannah street file, a point about 25 m east of Abercorn set onto the square side of Charlton (medium confidence for which door is 207). About 75 m from the cathedral echo and 110 m from the Andrew Low House echo.
+# Inspo: before the fame. Place evidence is `building`: sources put her childhood in this house (Southern Cross 1997, Flagpole 1998); none puts the chicken in a particular spot, so the script never says "right here" and tells the chicken as her friends remembered it.
+id: savannah-the-chicken-that-walked-backwards
+title: "The Chicken That Walked Backwards"
+summary: "Flannery O'Connor grew up at 207 East Charlton. Before the novels, friends said, Pathé photographed her chicken that walked backwards."
+place: "Flannery O'Connor Childhood Home, 207 East Charlton Street, Lafayette Square, Savannah, Georgia"
+at: { lat: 32.07259, lng: -81.09119 }
+triggerRadiusKm: 0.035
+category: inspo
+inspo:
+  kind: before-fame
+  evidence: building
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [savannah, savannah-core, lafayette-square, charlton-street, flannery-oconnor, books, before-the-fame]
+teaser: "A terrible speller with a famous chicken. Then the books."
+script: |
+  Find number two oh seven on Charlton Street, one of the tall houses facing the square.
+
+  A girl who grew up in that house was in the newsreels as a child. Not for anything she wrote. For a chicken.
+
+  Her name was Mary Flannery O'Connor. She was born in Savannah in nineteen twenty five, and lived in this house until nineteen thirty eight. Her childhood friends, gathered in nineteen eighty nine to remember her, recalled a child devoted to birds. In the nineteen thirties, they said, Pathé News photographed a chicken she had trained to walk backwards. One of them swore that she turned up at a Girl Scout meeting leading a chicken on a string.
+
+  They remembered something else. She was a terrible speller. She rarely got high marks in composition.
+
+  She grew up to write Wise Blood, and A Good Man Is Hard to Find. She won the O. Henry award twice. By the time her friends met to remember her, she was being named in the same breath as William Faulkner.
+
+  Look at the house again.
+
+  Low marks in composition. Faulkner's name beside hers.
+detail: >-
+  Southern Cross (Diocese of Savannah), 6 July 1989, "Flannery O'Connor's Girlhood Remembered" by Hugh Brown: a May 1989 panel of childhood friends at Armstrong State College; "the now-famous episode of the chicken she trained to walk backwards (a marvel photographed by Pathe News in the 1930's)", the Girl Scout meeting "leading a chicken on a string", "a terrible speller", "rarely got high grades in composition", born in Savannah in 1925, the novels and story collections, two O. Henry awards, "mentioned in the same breath with William Faulkner". The chicken rests on this one report of friends' memories, hence single-source; the script attributes it to them. The script says only "as a child": the source dates the film to "the 1930's", and her exact age (six or seven by most accounts) is in no fetched source. The house: Southern Cross, 20 February 1997, "the Flannery O'Connor Childhood Home at 207 East Charlton Street, on Lafayette Square"; Flagpole (Athens), 22 April 1998, the house "where O'Connor lived from the time of her birth in 1925 until 1938 ... at 207 E Charlton St on Lafayette Square". Her own later words about the chicken (an essay of 1961) were not reachable and are not quoted.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "She was born in Savannah in nineteen twenty five, and lived in this house until nineteen thirty eight."
+    source: 3
+    quote: "the historic house in Savannah where O’Connor lived from the time of her birth in 1925 until 1938. is now seeking tax-deductible donations tor renova tions and upkeep of this house, which is locat ed at 207 E Charlton St on Lafayette Square"
+  - says: "Find number two oh seven on Charlton Street, one of the tall houses facing the square."
+    source: 2
+    quote: "the Flannery O’Connor Childhood Home at 207 East Charlton Street, on Lafayette Square in Savannah"
+  - says: "Her childhood friends, gathered in nineteen eighty nine to remember her, recalled a child devoted to birds."
+    source: 1
+    quote: "Mary Flannery’s devotion to birds was also remembered"
+  - says: "In the nineteen thirties, they said, Pathé News photographed a chicken she had trained to walk backwards."
+    source: 1
+    quote: "famous episode of the chicken she trained to walk backwards (a marvel photograph ed by Pathe News in the 1930’s)"
+  - says: "One of them swore that she turned up at a Girl Scout meeting leading a chicken on a string."
+    source: 1
+    quote: "one panelist swore she showed up at a Girl Scout meeting leading a chicken on a string."
+  - says: "She was a terrible speller. She rarely got high marks in composition."
+    source: 1
+    quote: "Somebody recalled that Mary Flannery was a terrible speller (not news to readers of her letters), and that she rarely got high grades in composition or in reading aloud in class."
+  - says: "She grew up to write Wise Blood, and A Good Man Is Hard to Find. She won the O. Henry award twice."
+    source: 1
+    quote: "Two of her short stories won the O. Henry award in the 1950s."
+  - says: "she was being named in the same breath as William Faulkner"
+    source: 1
+    quote: "a writer mention ed in the same breath with William Faulkner"
+  - says: "Her name was Mary Flannery O'Connor."
+    source: 1
+    quote: "In May of this year, for example, 125 people turned out at Armstrong State College in Savannah to hear childhood friends reminisce about Mary Flannery, as she was known when she was growing up."
+sources:
+  - title: "Flannery O'Connor's Girlhood Remembered, by Hugh Brown (The Southern Cross, 6 July 1989, page 9)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn22185748/1989-07-06/ed-1/seq-9/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Readings at the Flannery O'Connor Childhood Home (The Southern Cross, 20 February 1997, page 3)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn22185748/1997-02-20/ed-1/seq-3/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Flagpole (Athens, Georgia), 22 April 1998, page 24"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn94029049/1998-04-22/ed-1/seq-24/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-chicken-that-walked-backwards/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.9
+    audioBytes: 1071690
+    transcript:
+      totalS: 66.9
+      lines:
+        - text: Find number two oh seven on Charlton Street, one of the tall houses facing the square.
+          atS: 0
+          durationS: 6.37
+        - text: A girl who grew up in that house was in the newsreels as a child.
+          atS: 6.98
+          durationS: 3.87
+        - text: Not for anything she wrote.
+          atS: 11.17
+          durationS: 1.5
+        - text: For a chicken.
+          atS: 12.91
+          durationS: 0.94
+        - text: Her name was Mary Flannery O'Connor.
+          atS: 14.23
+          durationS: 2.35
+        - text: She was born in Savannah in nineteen twenty five, and lived in this house until nineteen thirty eight.
+          atS: 16.96
+          durationS: 5.64
+        - text: Her childhood friends, gathered in nineteen eighty nine to remember her, recalled a child devoted to birds.
+          atS: 23.05
+          durationS: 6.07
+        - text: In the nineteen thirties, they said, Pathé News photographed a chicken she had trained to walk backwards.
+          atS: 29.81
+          durationS: 6.42
+        - text: One of them swore that she turned up at a Girl Scout meeting leading a chicken on a string.
+          atS: 36.56
+          durationS: 4.77
+        - text: They remembered something else.
+          atS: 41.72
+          durationS: 1.61
+        - text: She was a terrible speller.
+          atS: 43.61
+          durationS: 1.45
+        - text: She rarely got high marks in composition.
+          atS: 45.38
+          durationS: 2.38
+        - text: She grew up to write Wise Blood, and A Good Man Is Hard to Find.
+          atS: 48.15
+          durationS: 4.26
+        - text: She won the O.
+          atS: 52.73
+          durationS: 0.86
+        - text: Henry award twice.
+          atS: 53.64
+          durationS: 1.59
+        - text: By the time her friends met to remember her, she was being named in the same breath as William Faulkner.
+          atS: 55.74
+          durationS: 5.57
+        - text: Look at the house again.
+          atS: 61.56
+          durationS: 1.13
+        - text: Low marks in composition.
+          atS: 62.86
+          durationS: 1.64
+        - text: Faulkner's name beside hers.
+          atS: 64.67
+          durationS: 2.25

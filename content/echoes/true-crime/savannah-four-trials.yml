@@ -1,0 +1,179 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following docs/14-true-crime.md and the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the public sidewalk of West Wayne Street at Bull Street, beside the Mercer House on the west side of Monterey Square. Private house museum; the listener stays on the street.
+# Position: Bull and Wayne intersection from the street segments in the app's Savannah street file, set onto the Wayne Street sidewalk west of Bull, about 55 m from the Pulaski monument echo (medium confidence for which side the study windows face; NPR's guide says "on this side of the house").
+#
+# True crime, per docs/14-true-crime.md:
+# - Conviction status: Jim Williams was tried four times. Two of the first three trials ended in murder convictions, both overturned by the Georgia Supreme Court; the third ended in a hung jury; the fourth jury acquitted him in 1989 (AP, 1987, and NPR). Filed as `exonerated`: the script says the convictions were thrown out in the same breath as it says they happened.
+# - Second pass (2026-11-11): AP's 1987 report (via The Red and Black, Georgia Historic Newspapers) added as the independent second source for the date, the earlier verdicts and the trial count. AP gives Hansford's age as 22, NPR as 21, so the script no longer gives an age.
+# - Living people: none named. Williams died in 1990, Danny Hansford in 1981. The author of the book is alive and is not named; nothing here concerns him.
+# - Independent sources: NPR (2024, Georgia Public Broadcasting), NBC News (2009) and AP (1987). Key facts: the shooting in this house (NPR; NBC "a fatal shooting there"; AP "killed at Williams' home"), 2 May 1981 (NPR; AP), the trials and earlier verdicts (AP; NPR for the fourth trial and the 1989 verdict), tried and not finally convicted (NBC).
+# - What is not said: anything about the relationship beyond NPR's words, any description of the wounds, any claim about what happened in the room beyond Williams's own account as NPR reports it.
+id: savannah-four-trials
+title: "Four Trials"
+summary: "In 1981 Danny Hansford was shot dead in this house. Jim Williams said it was self-defence. After four trials, a jury acquitted him."
+place: "Mercer House, Bull Street at Wayne Street, Monterey Square, Savannah, Georgia"
+at: { lat: 32.07128, lng: -81.09545 }
+triggerRadiusKm: 0.04
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.8
+tags: [savannah, savannah-core, monterey-square, mercer-house, 1981, midnight-in-the-garden]
+teaser: "Two windows on the side of a red brick house. A young man died behind them."
+script: |
+  Look at the red brick mansion on the west side of Monterey Square. On the side of the house, a local guide points out the first two windows. Behind them is the study.
+
+  A young man named Danny Hansford died in that room.
+
+  It was about two in the morning, on the second of May, nineteen eighty one. Hansford was in his early twenties. He worked for the man who owned this house, Jim Williams, a wealthy antiques dealer. NPR has described Hansford as Williams's employee and occasional lover.
+
+  Williams shot him. He said it was self defence, that Hansford had tried to shoot him first. He was charged with murder.
+
+  What followed took eight years and four trials. Twice a jury convicted him of murder, and twice the Georgia Supreme Court threw the verdict out. A third jury could not agree. In nineteen eighty nine, a fourth jury found him not guilty. Williams was acquitted.
+
+  The case became a book, and the book became a film, and the town that had tried him four times became a place people visit with that book in their hands.
+
+  Look at the two windows again.
+
+  The verdict was not guilty. The room still holds a death.
+detail: >-
+  NPR (2024) gives the time, date, Hansford's age, the self-defence claim, the murder charge, the four trials and the 1989 verdict. NBC News (2009) says Williams "was tried but never convicted in a fatal shooting there". NBC calls Williams the "late art dealer"; his death date is not in either fetched page, so the script does not give it. AP (1987, second pass): the 2 May 1981 date, Hansford's age as 22 (NPR says 21, so the script gives no age), "Two of the first three trials ended in murder convictions, but both were thrown out on appeal to the state Supreme Court", and the third trial's 11 to 1 deadlock. NBC's "never convicted" is read as the final outcome; the script says the earlier convictions did not stand.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: exonerated
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo is about a fatal shooting. No violence is described in detail."
+claims:
+  - says: "What followed took eight years and four trials."
+    source: 3
+    quote: "Williams, 59, faces a fourth trial on a murder charge in the May 2, 1981, slaying"
+  - says: "On the side of the house, a local guide points out the first two windows. Behind them is the study."
+    source: 1
+    quote: "On this side of the house, the first two windows - that is the library or study, and that is where the shooting of Danny Hansford took place."
+  - says: "It was about two in the morning, on the second of May, nineteen eighty one. Hansford was in his early twenties."
+    source: 1
+    quote: "Around 2 in the morning on May 2, 1981, 21-year-old Danny Hansford was shot and killed by his employer and occasional lover, Jim Williams."
+  - says: "He worked for the man who owned this house, Jim Williams, a wealthy antiques dealer"
+    source: 1
+    quote: "He was a wealthy antiques dealer."
+  - says: "He said it was self defence, that Hansford had tried to shoot him first. He was charged with murder."
+    source: 1
+    quote: "Williams claimed self-defense, saying Hansford had tried to shoot him first. Nevertheless, Williams was charged with murder."
+  - says: "In nineteen eighty nine, a fourth jury found him not guilty."
+    source: 1
+    quote: "What ensued were four trials, ultimately ending with a jury finding him not guilty in 1989."
+  - says: "Twice a jury convicted him of murder, and twice the Georgia Supreme Court threw the verdict out. A third jury could not agree."
+    source: 3
+    quote: "Two of the first three trials ended in murder convictions, but both were thrown out on appeal to the state Supreme Court. In June, a jury was unable to break an 11-1 deadlock for conviction and a mis trial was declared."
+  - says: "on the second of May, nineteen eighty one"
+    source: 3
+    quote: "Williams, 59, faces a fourth trial on a murder charge in the May 2, 1981, slaying of Danny Lewis Hans ford, 22, who was shot three times and killed at Williams' home."
+  - says: "Williams was acquitted"
+    source: 2
+    quote: "home to the late art dealer Jim Williams, who was tried but never convicted in a fatal shooting there."
+  - says: "The case became a book, and the book became a film"
+    source: 2
+    quote: "The case inspired the book and movie \"Midnight in the Garden of Good and Evil.\""
+  - says: "a place people visit with that book in their hands"
+    source: 1
+    quote: "We continue, to this day, to see people on the street corner holding the book, looking at certain buildings."
+  - says: "A young man named Danny Hansford died in that room."
+    source: 1
+    quote: "On this side of the house, the first two windows - that is the library or study, and that is where the shooting of Danny Hansford took place."
+  - says: "NPR has described Hansford as Williams's employee and occasional lover."
+    source: 1
+    quote: "Around 2 in the morning on May 2, 1981, 21-year-old Danny Hansford was shot and killed by his employer and occasional lover, Jim Williams."
+  - says: "Look at the two windows again."
+    source: 1
+    quote: "On this side of the house, the first two windows - that is the library or study"
+sources:
+  - title: "The impact of 'Midnight in the Garden of Good and Evil' on Savannah over 30 years (2024)"
+    publisher: "NPR"
+    url: https://www.npr.org/2024/01/12/1224508474/the-impact-of-midnight-in-the-garden-of-good-and-evil-on-savannah-over-30-years
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Explore Savannah's squares, parks and homes (2009)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna33492780
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Retrial to use same lawyers (AP, The Red and Black, 3 November 1987, page 1)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/gua1179162/1987-11-03/ed-1/seq-1/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-four-trials/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 73.7
+    audioBytes: 1181195
+    transcript:
+      totalS: 73.7
+      lines:
+        - text: Look at the red brick mansion on the west side of Monterey Square.
+          atS: 0
+          durationS: 3.69
+        - text: On the side of the house, a local guide points out the first two windows.
+          atS: 4.3
+          durationS: 3.84
+        - text: Behind them is the study.
+          atS: 8.52
+          durationS: 1.4
+        - text: A young man named Danny Hansford died in that room.
+          atS: 10.37
+          durationS: 3.12
+        - text: It was about two in the morning, on the second of May, nineteen eighty one.
+          atS: 14.19
+          durationS: 4.13
+        - text: Hansford was in his early twenties.
+          atS: 18.76
+          durationS: 1.97
+        - text: He worked for the man who owned this house, Jim Williams, a wealthy antiques dealer.
+          atS: 20.91
+          durationS: 5.12
+        - text: NPR has described Hansford as Williams's employee and occasional lover.
+          atS: 26.27
+          durationS: 4.97
+        - text: Williams shot him.
+          atS: 31.94
+          durationS: 1.14
+        - text: He said it was self defence, that Hansford had tried to shoot him first.
+          atS: 33.68
+          durationS: 4.13
+        - text: He was charged with murder.
+          atS: 38.33
+          durationS: 1.6
+        - text: What followed took eight years and four trials.
+          atS: 40.62
+          durationS: 2.98
+        - text: Twice a jury convicted him of murder, and twice the Georgia Supreme Court threw the verdict out.
+          atS: 44.12
+          durationS: 5.52
+        - text: A third jury could not agree.
+          atS: 50.02
+          durationS: 1.73
+        - text: In nineteen eighty nine, a fourth jury found him not guilty.
+          atS: 52.13
+          durationS: 3.58
+        - text: Williams was acquitted.
+          atS: 56.09
+          durationS: 1.34
+        - text: The case became a book, and the book became a film, and the town that had tried him four times became a place people visit with that book in their hands.
+          atS: 57.7
+          durationS: 8.71
+        - text: Look at the two windows again.
+          atS: 67.52
+          durationS: 1.75
+        - text: The verdict was not guilty.
+          atS: 69.79
+          durationS: 1.6
+        - text: The room still holds a death.
+          atS: 71.77
+          durationS: 1.97

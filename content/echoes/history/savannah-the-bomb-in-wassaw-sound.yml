@@ -1,0 +1,168 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the south end of Tybee Island, on the beach where the Back River meets the ocean, looking south toward Little Tybee and Wassaw Sound.
+# Position: the south tip of Tybee from the coast data in the app's map, set on the sand above the tide line (medium confidence; the app's street file has no tiles on Tybee). The bomb itself is in the water, in Wassaw Sound, and nobody knows exactly where; this is the nearest public shore that faces the sound.
+id: savannah-the-bomb-in-wassaw-sound
+title: "The Bomb in Wassaw Sound"
+summary: "In 1958 an Air Force bomber dropped a 7,000 pound nuclear bomb into the water off Tybee after a midair collision. It has never been found."
+place: "South end of Tybee Island, facing Wassaw Sound, Georgia"
+at: { lat: 31.98900, lng: -80.84950 }
+triggerRadiusKm: 0.15
+category: history
+format: short
+durationS: 83
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [savannah, tybee, cold-war, military, 1958, wassaw-sound, mysteries]
+teaser: "Somewhere out there, under the mud, is a bomb the Air Force decided to leave alone."
+script: |
+  Look south, past the end of the island, to the water beyond. That is Wassaw Sound.
+
+  Somewhere under it, in the mud, is a bomb that weighs seven thousand pounds. The Air Force knows it is there. It has decided to leave it alone.
+
+  On the fifth of February, nineteen fifty eight, a B forty seven bomber was flying a training mission off the Georgia coast with a nuclear bomb aboard. A fighter jet came down on top of it. The fighter's pilot never saw him on his radar. The collision tore the fighter's wing off, and badly damaged the bomber.
+
+  The bomber's pilot, Colonel Howard Richardson, was afraid the bomb would break loose when he tried to land. So, over the water off Tybee, he let it go. Then he brought his crippled plane down safely. The fighter pilot ejected and landed in a swamp.
+
+  The Navy searched for more than two months. They never found it.
+
+  The Air Force says the bomb had no nuclear capsule. A Defense Department memo from nineteen sixty six called it a complete weapon. The Air Force says that if no one disturbs it, it poses no hazard. If someone tries to raise it, it could.
+
+  Look out at the sound again.
+
+  Sometimes the safest thing to do with a bomb is nothing.
+detail: >-
+  NPR (2008) and CBS News (2001, with AP) agree on the date, the collision with an F-86, the weight and the failed search. NPR says the Navy searched "more than two months"; NBC (2004) says "nearly 10 weeks". The disagreement over the nuclear capsule is told as a disagreement, with both sides named. The bomb's exact position is unknown, so the echo is placed on the nearest shore facing Wassaw Sound.
+pronunciations:
+  - written: "Wassaw"
+    say: "WAH-saw"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Somewhere under it, in the mud, is a bomb that weighs seven thousand pounds."
+    source: 1
+    quote: "a B-47 bomber dropped a 7,000-pound nuclear bomb into the waters off Tybee Island, Ga., after it collided with another Air Force jet."
+  - says: "Somewhere under it, in the mud, is a bomb that weighs seven thousand pounds."
+    source: 1
+    quote: "Government officials believe the missing nuclear bomb is somewhere in the Wassaw Sound, just off Tybee Island."
+  - says: "The Air Force knows it is there. It has decided to leave it alone."
+    source: 2
+    quote: "For safety's sake, they say the weapon should be left at the bottom of the sea."
+  - says: "On the fifth of February, nineteen fifty eight, a B forty seven bomber was flying a training mission off the Georgia coast with a nuclear bomb aboard."
+    source: 1
+    quote: "On Feb. 5, 1958, a B-47 bomber dropped a 7,000-pound nuclear bomb into the waters off Tybee Island"
+  - says: "A fighter jet came down on top of it. The fighter's pilot never saw him on his radar."
+    source: 1
+    quote: "The fighter jet's pilot, Lt. Clarence Stewart, didn't see Richardson's plane on his radar; Stewart descended directly onto Richardson's aircraft."
+  - says: "The collision tore the fighter's wing off, and badly damaged the bomber."
+    source: 1
+    quote: "The impact ripped the left wing off the F-86 and heavily damaged the fuel tanks of the B-47."
+  - says: "The bomber's pilot, Colonel Howard Richardson, was afraid the bomb would break loose when he tried to land."
+    source: 1
+    quote: "Richardson, carrying a two-man crew, was afraid the bomb would break loose from his damaged plane when he landed, so he ditched the bomb in the water before landing the plane at Hunter Air Force Base outside Savannah."
+  - says: "The fighter pilot ejected and landed in a swamp."
+    source: 1
+    quote: "Stewart ejected and eventually landed safely in a swamp."
+  - says: "The Navy searched for more than two months. They never found it."
+    source: 1
+    quote: "The Navy searched for the bomb for more than two months, but never found it"
+  - says: "The Air Force says the bomb had no nuclear capsule. A Defense Department memo from nineteen sixty six called it a complete weapon."
+    source: 2
+    quote: "Air Force officials have always maintained that the bomb had no nuclear capsule and some of the declassified papers supported that position. But a 1966 memo from a then-assistant secretary of Defense described the bomb as a \"complete weapon, a bomb with a nuclear capsule.\""
+  - says: "The Air Force says that if no one disturbs it, it poses no hazard. If someone tries to raise it, it could."
+    source: 2
+    quote: "the explosives in the bomb are not hazardous if left undisturbed, but would pose a serious threat to anyone trying to recover the bomb."
+  - says: "That is Wassaw Sound."
+    source: 1
+    quote: "Government officials believe the missing nuclear bomb is somewhere in the Wassaw Sound, just off Tybee Island."
+  - says: "So, over the water off Tybee, he let it go."
+    source: 1
+    quote: "Fifty years ago, a B-47 bomber dropped a 7,000-pound nuclear bomb into the waters off Tybee Island, Ga., after a mid-air collision."
+sources:
+  - title: "For 50 Years, Nuclear Bomb Lost in Watery Grave (2008)"
+    publisher: "NPR"
+    url: https://www.npr.org/2008/02/03/18587608/for-50-years-nuclear-bomb-lost-in-watery-grave
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Air Force: Leave Buried Bomb Alone (2001)"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/air-force-leave-buried-bomb-alone/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Scientists seek lost H-bomb off Georgia (2004)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna6133468
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-bomb-in-wassaw-sound/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 83.1
+    audioBytes: 1330407
+    transcript:
+      totalS: 83.1
+      lines:
+        - text: Look south, past the end of the island, to the water beyond.
+          atS: 0
+          durationS: 4.16
+        - text: That is Wassaw Sound.
+          atS: 4.76
+          durationS: 2.02
+        - text: Somewhere under it, in the mud, is a bomb that weighs seven thousand pounds.
+          atS: 7.38
+          durationS: 4.83
+        - text: The Air Force knows it is there.
+          atS: 12.82
+          durationS: 2.04
+        - text: It has decided to leave it alone.
+          atS: 15.46
+          durationS: 2.16
+        - text: On the fifth of February, nineteen fifty eight, a B forty seven bomber was flying a training mission off the Georgia coast with a nuclear bomb aboard.
+          atS: 18.44
+          durationS: 9.21
+        - text: A fighter jet came down on top of it.
+          atS: 28.34
+          durationS: 2.32
+        - text: The fighter's pilot never saw him on his radar.
+          atS: 30.99
+          durationS: 2.88
+        - text: The collision tore the fighter's wing off, and badly damaged the bomber.
+          atS: 34.31
+          durationS: 4.45
+        - text: The bomber's pilot, Colonel Howard Richardson, was afraid the bomb would break loose when he tried to land.
+          atS: 39.14
+          durationS: 6.03
+        - text: So, over the water off Tybee, he let it go.
+          atS: 45.6
+          durationS: 3.43
+        - text: Then he brought his crippled plane down safely.
+          atS: 49.47
+          durationS: 2.8
+        - text: The fighter pilot ejected and landed in a swamp.
+          atS: 52.97
+          durationS: 3.25
+        - text: The Navy searched for more than two months.
+          atS: 56.66
+          durationS: 2.31
+        - text: They never found it.
+          atS: 59.35
+          durationS: 1.28
+        - text: The Air Force says the bomb had no nuclear capsule.
+          atS: 61.01
+          durationS: 3.19
+        - text: A Defense Department memo from nineteen sixty six called it a complete weapon.
+          atS: 64.64
+          durationS: 4.68
+        - text: The Air Force says that if no one disturbs it, it poses no hazard.
+          atS: 69.93
+          durationS: 4.37
+        - text: If someone tries to raise it, it could.
+          atS: 74.68
+          durationS: 2.48
+        - text: Look out at the sound again.
+          atS: 77.6
+          durationS: 1.76
+        - text: Sometimes the safest thing to do with a bomb is nothing.
+          atS: 79.69
+          durationS: 3.39

@@ -1,0 +1,177 @@
+# Drafted by Claude Code (2026-11-11) for the second Savannah pass, following docs/14-true-crime.md and the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the East Bay Street sidewalk in front of the U.S. Custom House (1852), 1 to 3 East Bay Street at Bull, whose courtroom held the federal trials over the slave ship Wanderer.
+# Position: Bay at Bull and Bay at Drayton from the street segments in the app's Savannah street file, a point about a third of the block east of Bull set onto the south sidewalk (medium confidence; the nomination gives a 110 foot front on Bay). About 45 m from the City Hall dome echo and 80 m from the Cotton Exchange echo, which tell other stories; a reviewer should check the triggers do not crowd each other at this corner.
+#
+# True crime, per docs/14-true-crime.md:
+# - Conviction status: alleged. The men named were indicted; the script reports the first crew trial, which ended in a hung jury, and two crew members discharged. No conviction is claimed, and none was found in a fetched source.
+# - Living people: none (1858 to 1860).
+# - Independent sources: the National Register nomination for the Custom House (NPS, 1974) for the building, its courtroom and the 1860 Wanderer case; the National Archives at Atlanta finding aid for the landing (407 Africans, Jekyll Island, 28 November 1858), Lamar's role and the indictments; the Savannah Daily Morning News of November and December 1859 for the trial testimony, the 8 to 4 jury and the discharges. Three publishers, none drawing on another.
+# - What is not said: how anyone on the ship died, beyond the pilot's sworn words that he saw one body thrown overboard.
+id: savannah-eight-to-four
+title: "Eight to Four"
+summary: "The slave ship Wanderer landed 407 Africans in 1858. Its crew were tried in this custom house. The first jury split eight to four."
+place: "U.S. Custom House, East Bay Street at Bull Street, Savannah, Georgia"
+at: { lat: 32.08066, lng: -81.09083 }
+triggerRadiusKm: 0.035
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 73
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.8
+tags: [savannah, savannah-core, bay-street, custom-house, slave-trade, wanderer, 1859, courts]
+teaser: "Six granite columns. Behind them, a jury that could not agree."
+script: |
+  Look at the granite building on this corner, and its six tall columns. It was built as the custom house, and inside it was a courtroom for the federal courts.
+
+  In that courtroom, the United States tried to punish the men behind one of the last slave ships ever to reach this country.
+
+  The ship was a racing yacht called the Wanderer. Bringing enslaved people into the United States was against federal law. In November eighteen fifty eight, the Wanderer landed four hundred and seven Africans on Jekyll Island, down the coast. The National Archives names a Savannah man, Charles Lamar, as the central figure, who stayed behind the scenes.
+
+  A year later, men from the crew went on trial here. A pilot named James Chubbs swore that he had brought the Wanderer in. He was told there were four hundred and thirteen people on board. About daylight, he said, he saw one dead body thrown overboard.
+
+  The jury could not agree. The Morning News reported eight for acquittal and four for conviction. The judge declared a mistrial. Days later, two of those prisoners were discharged.
+
+  Look up at the columns again.
+
+  Four hundred and seven people were landed on that beach. Inside these walls, twelve men could not agree on anyone's guilt.
+detail: >-
+  National Register nomination (NPS, 1974): the Custom House at East Bay and Bull, "a splendid court room for the Circuit and District Courts" in the 1852 description, "six fluted solid granite columns", and "In 1860, the case of the yacht 'Wanderer' was tried before the court as the last violation of the law against the importation of slaves." The script says "one of the last slave ships", not the last. National Archives at Atlanta finding aid: "landing 407 Africans on Jekyll Island, GA on November 28, 1858", Lamar "appears to be the central figure" and "stayed behind the scenes", the circuit court minutes listing indictments for "importing Africans, holding Africans, Piracy". Daily Morning News, 18 November 1859: the pilot "James C. Chubbs" testified he piloted the Wanderer in, "Was in formed by Capt. Cole that there were 413 negroes on board. Saw one dead body thrown overboard about daylight". 28 November 1859: "the jury were discharged ... Judge Wayne announcing it as a miss-trial. We understand that the jury stood eight lor acquittal and four for conviction"; the prisoner Brown was held for retrial. The nomination dates the case to 1860; the first trial reported here was in November 1859, and the paper also reports trials in April and May 1860. 2 December 1859: "Two of the Wanderer prisoners, Rajesta and Aguirra ... were discharged." The outcome of the later trials, including any against Lamar, is not in a fetched source and is not told. The script uses the sources' figure of 407 landed and the pilot's 413 on board as each source gives it.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: alleged
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-11"
+  contentWarning: "This echo is about the slave trade and a death at sea, told from court testimony. No violence is described in detail."
+claims:
+  - says: "Bringing enslaved people into the United States was against federal law."
+    source: 1
+    quote: "the last violation of the law against the importation of slaves."
+  - says: "Four hundred and seven people were landed on that beach."
+    source: 2
+    quote: "The voyage was successful landing 407 Africans on Jekyll Island, GA on November 28, 1858."
+  - says: "Inside these walls, twelve men could not agree on anyone's guilt."
+    source: 4
+    quote: "the jury were discharged Irotn further consideration oi the case, Judge Wayne announcing it as * miss-trial."
+  - says: "It was built as the custom house, and inside it was a courtroom for the federal courts."
+    source: 1
+    quote: "and a splendid court room for the Circuit and District Courts of the United States"
+  - says: "its six tall columns"
+    source: 1
+    quote: "The entablature is supported by six fluted solid granite columns, thirty feet high and three feet in diameter."
+  - says: "In that courtroom, the United States tried to punish the men behind one of the last slave ships ever to reach this country."
+    source: 1
+    quote: "In 1860, the case of the yacht \"Wanderer\" was tried before the court as the last violation of the law against the importation of slaves."
+  - says: "The ship was a racing yacht called the Wanderer."
+    source: 2
+    quote: "Built in 1856, the Wanderer was designed to be a luxury racing yacht."
+  - says: "In November eighteen fifty eight, the Wanderer landed four hundred and seven Africans on Jekyll Island, down the coast."
+    source: 2
+    quote: "The voyage was successful landing 407 Africans on Jekyll Island, GA on November 28, 1858."
+  - says: "The National Archives names a Savannah man, Charles Lamar, as the central figure, who stayed behind the scenes."
+    source: 2
+    quote: "Charles Lamar appears to be the central figure regarding the Wanderer."
+  - says: "who stayed behind the scenes"
+    source: 2
+    quote: "Lamar stayed behind the scenes as his name was already a red flag amongst customs officials"
+  - says: "A pilot named James Chubbs swore that he had brought the Wanderer in. He was told there were four hundred and thirteen people on board. About daylight, he said, he saw one dead body thrown overboard."
+    source: 3
+    quote: "Was in formed by Capt. Cole that there were 413 negroes on board. Saw one dead body thrown overboard about daylight in the morning."
+  - says: "The jury could not agree. The Morning News reported eight for acquittal and four for conviction. The judge declared a mistrial."
+    source: 4
+    quote: "We understand that the jury stood eight lor ocqaitnl and lour lor conviction."
+  - says: "Days later, two of those prisoners were discharged."
+    source: 5
+    quote: "Two of the Wanderer prisoners, Rajebta and Aouira, Blown Being still held for trial were discharged."
+sources:
+  - title: "U.S. Custom House, Savannah, National Register of Historic Places nomination (1974)"
+    publisher: "National Park Service, NPGallery"
+    url: https://npgallery.nps.gov/GetAsset/96bdf4e0-39dd-4971-92e5-d1633d1bdba5
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "The Wanderer: a finding aid"
+    publisher: "National Archives at Atlanta"
+    url: https://www.archives.gov/files/atlanta/finding-aids/the-wanderer.pdf
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Daily Morning News (Savannah), 18 November 1859, page 2: the Wanderer trial testimony"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn82015886/1859-11-18/ed-1/seq-2/
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Daily Morning News (Savannah), 28 November 1859, page 1: mistrial"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn82015886/1859-11-28/ed-1/seq-1/
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Daily Morning News (Savannah), 2 December 1859, page 1: United States Circuit Court"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn82015886/1859-12-02/ed-1/seq-1/
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-eight-to-four/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 72.5
+    audioBytes: 1161551
+    transcript:
+      totalS: 72.5
+      lines:
+        - text: Look at the granite building on this corner, and its six tall columns.
+          atS: 0
+          durationS: 3.9
+        - text: It was built as the custom house, and inside it was a courtroom for the federal courts.
+          atS: 4.14
+          durationS: 4.81
+        - text: In that courtroom, the United States tried to punish the men behind one of the last slave ships ever to reach this country.
+          atS: 9.13
+          durationS: 6.63
+        - text: The ship was a racing yacht called the Wanderer.
+          atS: 16.2
+          durationS: 2.63
+        - text: Bringing enslaved people into the United States was against federal law.
+          atS: 18.95
+          durationS: 3.9
+        - text: In November eighteen fifty eight, the Wanderer landed four hundred and seven Africans on Jekyll Island, down the coast.
+          atS: 23.23
+          durationS: 6.58
+        - text: The National Archives names a Savannah man, Charles Lamar, as the central figure, who stayed behind the scenes.
+          atS: 29.93
+          durationS: 6.46
+        - text: A year later, men from the crew went on trial here.
+          atS: 36.77
+          durationS: 2.83
+        - text: A pilot named James Chubbs swore that he had brought the Wanderer in.
+          atS: 39.78
+          durationS: 4.03
+        - text: He was told there were four hundred and thirteen people on board.
+          atS: 44.19
+          durationS: 3.37
+        - text: About daylight, he said, he saw one dead body thrown overboard.
+          atS: 47.88
+          durationS: 3.92
+        - text: The jury could not agree.
+          atS: 52.24
+          durationS: 1.5
+        - text: The Morning News reported eight for acquittal and four for conviction.
+          atS: 54.07
+          durationS: 4.05
+        - text: The judge declared a mistrial.
+          atS: 58.29
+          durationS: 1.8
+        - text: Days later, two of those prisoners were discharged.
+          atS: 60.37
+          durationS: 3.06
+        - text: Look up at the columns again.
+          atS: 63.68
+          durationS: 1.51
+        - text: Four hundred and seven people were landed on that beach.
+          atS: 65.43
+          durationS: 2.96
+        - text: Inside these walls, twelve men could not agree on anyone's guilt.
+          atS: 68.72
+          durationS: 3.82

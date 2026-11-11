@@ -1,0 +1,131 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2). A legend, told as one, in the male narrator.
+# Listening spot: the sidewalk of East Saint Julian Street outside 507, the Hampton Lillibridge House, between Price and Houston streets near Washington Square. Private house; the listener stays on the street.
+# Position: Saint Julian at Price and at Houston from the street segments in the app's Savannah street file; 507 set mid-block (medium confidence for the door, high for the block).
+id: savannah-the-house-that-moved
+title: "The House That Moved"
+summary: "The Hampton Lillibridge House was moved here. Workers restoring it reported noises and a presence, and found a crypt on the lot."
+place: "Hampton Lillibridge House, 507 East Saint Julian Street, Savannah, Georgia"
+at: { lat: 32.07846, lng: -81.08597 }
+triggerRadiusKm: 0.035
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 55
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The noises and the presence are workers' reports, retold by NBC News in a list of haunted houses; they are legend. That the house was moved here, and that a crypt was found and covered over during the work, is also NBC's account and wants a public record (the moving permit, a newspaper of the time) before review.
+minAge: 0
+quality: 0.7
+tags: [savannah, savannah-core, saint-julian-street, washington-square, ghosts, legend, houses]
+teaser: "It was not built here. Something, they say, came with it."
+script: |
+  Look at the house at five hundred and seven Saint Julian Street, its windows and its door.
+
+  It was not built here. It was moved.
+
+  A Savannah restoration expert had it brought to this lot and set about bringing it back to life. That is the part that is on record. What follows is a legend, as it was reported.
+
+  As the work began, the workers said they heard odd noises in the house. Some of them said there was someone in there with them. A man, they said, when no man was there.
+
+  Then, while they were working the site, they found a crypt. It was half full of water. They covered it over, and went on.
+
+  The house was finished. In two thousand eleven it was on the market for more than two million dollars. Nobody has proved that anyone but its owners lives in it.
+
+  Look at the windows again.
+
+  A house can be moved across a city. The story is whether it came alone.
+detail: >-
+  NBC News, "10 most haunted houses in the US": "This historic home was moved to its current location in Savannah by a local restoration expert. As work began on the house, workers reported odd noises and a male presence. Early on, they discovered a crypt on the building site half filled with water and covered it." and "was last on the market for $2.2 million in 2011". The script says "the part that is on record" of the move; that rests on NBC alone and wants a record before review.
+pronunciations:
+  - written: "Lillibridge"
+    say: "LIL-ee-bridge"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It was not built here. It was moved."
+    source: 1
+    quote: "This historic home was moved to its current location in Savannah by a local restoration expert."
+  - says: "As the work began, the workers said they heard odd noises in the house. Some of them said there was someone in there with them."
+    source: 1
+    quote: "As work began on the house, workers reported odd noises and a male presence."
+  - says: "Then, while they were working the site, they found a crypt. It was half full of water. They covered it over, and went on."
+    source: 1
+    quote: "Early on, they discovered a crypt on the building site half filled with water and covered it."
+  - says: "In two thousand eleven it was on the market for more than two million dollars."
+    source: 1
+    quote: "the home was finished and was last on the market for $2.2 million in 2011."
+  - says: "Look at the house at five hundred and seven Saint Julian Street, its windows and its door."
+    source: 1
+    quote: "Hampton Lillibridge 507 E Saint Julian St, Savannah, Ga."
+  - says: "A Savannah restoration expert had it brought to this lot and set about bringing it back to life."
+    source: 1
+    quote: "This historic home was moved to its current location in Savannah by a local restoration expert."
+sources:
+  - title: "10 most haunted houses in the US"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/business/markets/10-most-haunted-houses-us-flna1c6589514
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-the-house-that-moved/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 54.5
+    audioBytes: 873577
+    transcript:
+      totalS: 54.5
+      lines:
+        - text: Look at the house at five hundred and seven Saint Julian Street, its windows and its door.
+          atS: 0
+          durationS: 5.45
+        - text: It was not built here.
+          atS: 5.77
+          durationS: 1.2
+        - text: It was moved.
+          atS: 7.25
+          durationS: 0.89
+        - text: A Savannah restoration expert had it brought to this lot and set about bringing it back to life.
+          atS: 8.52
+          durationS: 5.49
+        - text: That is the part that is on record.
+          atS: 14.4
+          durationS: 2.38
+        - text: What follows is a legend, as it was reported.
+          atS: 17.22
+          durationS: 2.9
+        - text: As the work began, the workers said they heard odd noises in the house.
+          atS: 20.56
+          durationS: 3.97
+        - text: Some of them said there was someone in there with them.
+          atS: 24.78
+          durationS: 2.48
+        - text: A man, they said, when no man was there.
+          atS: 27.47
+          durationS: 2.43
+        - text: Then, while they were working the site, they found a crypt.
+          atS: 30.22
+          durationS: 3.33
+        - text: It was half full of water.
+          atS: 33.88
+          durationS: 1.5
+        - text: They covered it over, and went on.
+          atS: 35.82
+          durationS: 2.24
+        - text: The house was finished.
+          atS: 38.57
+          durationS: 1.31
+        - text: In two thousand eleven it was on the market for more than two million dollars.
+          atS: 40.21
+          durationS: 4.25
+        - text: Nobody has proved that anyone but its owners lives in it.
+          atS: 44.9
+          durationS: 2.9
+        - text: Look at the windows again.
+          atS: 48.12
+          durationS: 1.24
+        - text: A house can be moved across a city.
+          atS: 49.81
+          durationS: 1.97
+        - text: The story is whether it came alone.
+          atS: 52.16
+          durationS: 2.36

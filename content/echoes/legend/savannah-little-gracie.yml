@@ -1,0 +1,116 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2). A legend, told as one, in the male narrator.
+# Listening spot: inside Bonaventure Cemetery near the main gate, at the grave known as Little Gracie (Gracie Watson in local accounts; the surname is not in the fetched source). The cemetery has gates and daytime hours.
+# Position: LOW confidence. No fetched source gives the plot. Set just inside the main gate from the cemetery polygons in the app's Savannah street file, about 110 m from the gate echo. Must be moved to the grave on site before review; the radius is tight on purpose once it is.
+id: savannah-little-gracie
+title: "Little Gracie"
+summary: "Gracie died at six, in 1889. Her statue stands in Bonaventure, and the legend says that on cold full-moon nights its cheeks are warm."
+place: "Grave of Little Gracie, Bonaventure Cemetery, Savannah, Georgia"
+at: { lat: 32.04585, lng: -81.04945 }
+triggerRadiusKm: 0.03
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 43
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The warm cheeks are a legend, reported by CBS News as "legend has it". Gracie's death at six in 1889 is the only fact here, and it rests on the same CBS report; a public record (a death record or the cemetery's own register) should back it before review.
+minAge: 0
+quality: 0.75
+inside: true
+hours: { fromHour: 8, toHour: 17 }
+tags: [savannah, bonaventure, ghosts, legend, children, statues]
+teaser: "Touch nothing. Just know what they say about her cheeks."
+script: |
+  Find the grave of a little girl named Gracie, and the stone figure of her. Look at her face.
+
+  People say that her face is not always cold.
+
+  She died in eighteen eighty nine. She was six years old. She has been here, among the oaks, ever since.
+
+  And this is what is told about her. It is a legend, and nothing more. In the cold of winter, they say, when the moon is full, Gracie's cheeks are warm.
+
+  Nobody has proved it. The cemetery closes at five in the afternoon, so on a full moon night there is no one here to try. Which may be how she likes it.
+
+  Look at her face again.
+
+  Some legends are about fear. This one is about a child nobody wanted to be cold.
+detail: >-
+  CBS News: "Little Gracie, who died at the age of six in 1889. Legend has it that in the cold of winter, when the moon is full, her cheeks are warm," and "the place closes at 5 p.m." The stone figure is implied by the legend (her cheeks) but not described in the fetched source; confirm on site. The script hedges the legend aloud.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "She died in eighteen eighty nine. She was six years old."
+    source: 1
+    quote: "Little Gracie, who died at the age of six in 1889."
+  - says: "In the cold of winter, they say, when the moon is full, Gracie's cheeks are warm."
+    source: 1
+    quote: "Legend has it that in the cold of winter, when the moon is full, her cheeks are warm."
+  - says: "The cemetery closes at five in the afternoon, so on a full moon night there is no one here to try."
+    source: 1
+    quote: "the place closes at 5 p.m., so no one will be here in the dark of Halloween night to see whether the dead walk."
+  - says: "Which may be how she likes it."
+    source: 1
+    quote: "the place closes at 5 p.m., so no one will be here in the dark of Halloween night to see whether the dead walk."
+  - says: "This one is about a child nobody wanted to be cold."
+    source: 1
+    quote: "Legend has it that in the cold of winter, when the moon is full, her cheeks are warm."
+sources:
+  - title: "The ghostly beauty of Savannah's Bonaventure Cemetery"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/the-ghostly-beauty-of-savannahs-bonaventure-cemetery/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-little-gracie/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 43.1
+    audioBytes: 691347
+    transcript:
+      totalS: 43.1
+      lines:
+        - text: Find the grave of a little girl named Gracie, and the stone figure of her.
+          atS: 0
+          durationS: 4.54
+        - text: Look at her face.
+          atS: 5.24
+          durationS: 1.15
+        - text: People say that her face is not always cold.
+          atS: 6.77
+          durationS: 2.73
+        - text: She died in eighteen eighty nine.
+          atS: 10.01
+          durationS: 1.85
+        - text: She was six years old.
+          atS: 12.1
+          durationS: 1.37
+        - text: She has been here, among the oaks, ever since.
+          atS: 13.85
+          durationS: 3.2
+        - text: And this is what is told about her.
+          atS: 17.66
+          durationS: 1.87
+        - text: It is a legend, and nothing more.
+          atS: 19.97
+          durationS: 2.1
+        - text: In the cold of winter, they say, when the moon is full, Gracie's cheeks are warm.
+          atS: 22.39
+          durationS: 4.73
+        - text: Nobody has proved it.
+          atS: 27.45
+          durationS: 1.19
+        - text: The cemetery closes at five in the afternoon, so on a full moon night there is no one here to try.
+          atS: 29.34
+          durationS: 5.64
+        - text: Which may be how she likes it.
+          atS: 35.16
+          durationS: 1.51
+        - text: Look at her face again.
+          atS: 36.99
+          durationS: 1.16
+        - text: Some legends are about fear.
+          atS: 38.28
+          durationS: 1.61
+        - text: This one is about a child nobody wanted to be cold.
+          atS: 40.07
+          durationS: 3.08

@@ -1,0 +1,101 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Old Fort Jackson, on the south bank of the Savannah River east of the city, at the end of Fort Jackson Road. A ticketed historic site with daytime hours.
+# Position: MEDIUM to LOW confidence. The app's street file has no tiles here; the point is the fort's position on the river bank, checked against the coast data as land. Confirm on site. More than 1.5 km from the historic district, so a rare find.
+id: savannah-a-fort-for-jefferson
+title: "A Fort for Jefferson"
+summary: "Old Fort Jackson was built from 1808 to 1812 for Jefferson's coastal defences. In 1861 Savannah's own soldiers seized it."
+place: "Old Fort Jackson, Fort Jackson Road, on the Savannah River, Savannah, Georgia"
+at: { lat: 32.08190, lng: -81.03620 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 57
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.7
+inside: true
+hours: { fromHour: 9, toHour: 17 }
+tags: [savannah, fort-jackson, military, forts, war-of-1812, civil-war, rare]
+teaser: "Built to keep a foreign navy out. Seized, in the end, by its own city."
+script: |
+  Look at the brick walls of the fort, low against the river.
+
+  This fort was built to stop an enemy fleet. In the end it was taken from the other direction.
+
+  In the early eighteen hundreds, President Thomas Jefferson ordered a chain of forts to defend the young nation's coast. This was one of them, built between eighteen oh eight and eighteen twelve, on top of an earthen battery left from the Revolution. Savannah named it for James Jackson, born in England, who had fought on the American side and later governed Georgia.
+
+  Then, in eighteen sixty one, as Georgia left the Union, Savannah's own soldiers marched in and took the fort, along with Fort Pulaski, for the state.
+
+  Look at the walls again.
+
+  Built to keep a foreign navy out. Taken, in the end, by the city it was built to protect.
+detail: >-
+  Carol M. Highsmith's catalog records: Jefferson's defense system, "constructed between 1808 and 1812 over an old earthen battery from the American Revolution", and Jackson "a British native who fought for the American cause". Lee (1869): "Another fort was erected about two and a half miles below the city and named Fort Jackson, after Governor James Jackson", during the War of 1812 period, and the seizure of "Fort Pulaski, Fort Jackson, and Oglethorpe Barracks" by Savannah's soldiers under General Lawton. Lee places the Fort Pulaski seizure before the ordinance of secession and Fort Jackson's after it; the script says only "in eighteen sixty one, as Georgia left the Union".
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In the early eighteen hundreds, President Thomas Jefferson ordered a chain of forts to defend the young nation's coast. This was one of them, built between eighteen oh eight and eighteen twelve, on top of an earthen battery left from the Revolution."
+    source: 1
+    quote: "President Thomas Jefferson authorized the construction of a national defense system of fortifications to defend his new nation. Jefferson's system included Fort Jackson, constructed between 1808 and 1812 over an old earthen battery from the American Revolution."
+  - says: "Savannah named it for James Jackson, born in England, who had fought on the American side and later governed Georgia."
+    source: 1
+    quote: "James Jackson, the namesake of the fort, was a British native who fought for the American cause and rose to the rank of colonel."
+  - says: "Savannah named it for James Jackson, born in England, who had fought on the American side and later governed Georgia."
+    source: 2
+    quote: "Another fort was erected about two and a half miles below the city and named Fort Jackson, after Governor James Jackson."
+  - says: "Then, in eighteen sixty one, as Georgia left the Union, Savannah's own soldiers marched in and took the fort, along with Fort Pulaski, for the state."
+    source: 2
+    quote: "Trnder his orders Fort Jackson and the Oglatliorpe barcaete were seized aixd occupied Tjy Savitonah's soldiers."
+  - says: "Then, in eighteen sixty one, as Georgia left the Union, Savannah's own soldiers marched in and took the fort, along with Fort Pulaski, for the state."
+    source: 2
+    quote: "proceeded to tlo fort and took formBl possession of it m the name of the State of Geor^va"
+sources:
+  - title: "Fort James Jackson, usually called Old Fort Jackson (Carol M. Highsmith, catalog record)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/2017880355/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Historical Record of the City of Savannah (F. D. Lee and J. L. Agnew, 1869)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicalrecor01leegoog
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-a-fort-for-jefferson/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57.4
+    audioBytes: 919553
+    transcript:
+      totalS: 57.4
+      lines:
+        - text: Look at the brick walls of the fort, low against the river.
+          atS: 0
+          durationS: 3.68
+        - text: This fort was built to stop an enemy fleet.
+          atS: 4.38
+          durationS: 2.78
+        - text: In the end it was taken from the other direction.
+          atS: 7.85
+          durationS: 2.89
+        - text: In the early eighteen hundreds, President Thomas Jefferson ordered a chain of forts to defend the young nation's coast.
+          atS: 11.85
+          durationS: 6.88
+        - text: This was one of them, built between eighteen oh eight and eighteen twelve, on top of an earthen battery left from the Revolution.
+          atS: 19.55
+          durationS: 7.99
+        - text: Savannah named it for James Jackson, born in England, who had fought on the American side and later governed Georgia.
+          atS: 28.65
+          durationS: 7.44
+        - text: Then, in eighteen sixty one, as Georgia left the Union, Savannah's own soldiers marched in and took the fort, along with Fort Pulaski, for the state.
+          atS: 36.91
+          durationS: 10.59
+        - text: Look at the walls again.
+          atS: 48.8
+          durationS: 1.36
+        - text: Built to keep a foreign navy out.
+          atS: 50.6
+          durationS: 2.11
+        - text: Taken, in the end, by the city it was built to protect.
+          atS: 53.15
+          durationS: 4.25

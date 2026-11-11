@@ -1,0 +1,199 @@
+# Drafted by Claude Code (2026-11-11) for the second Savannah pass, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the north sidewalk of East Oglethorpe Avenue between Abercorn and Lincoln streets, the block of No. 228 where the Aiken family lived in 1901, facing Colonial Park Cemetery and, diagonally across the avenue at Habersham Street, the police barracks.
+# Position: Oglethorpe at Abercorn and Oglethorpe at Lincoln from the street segments in the app's Savannah street file, midpoint set onto the north sidewalk; about 60 m from the Colonial Park vaults echo and 150 m from the police barracks echo (medium confidence for the house, high for the block). The script does not say the 1901 house still stands.
+# Category: arts. The echo is about the poet and the morning his writing kept returning to; the 1901 deaths are told only as the boy reported them, with no detail. No living person is named.
+id: savannah-a-hundred-yards-barefoot
+title: "A Hundred Yards, Barefoot"
+summary: "In 1901 an eleven year old ran barefoot from this block to report his parents' deaths. He became the Pulitzer Prize poet Conrad Aiken."
+place: "East Oglethorpe Avenue between Abercorn and Lincoln streets, Savannah, Georgia"
+at: { lat: 32.07634, lng: -81.08982 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.8
+tags: [savannah, savannah-core, oglethorpe-avenue, colonial-park, poetry, conrad-aiken, 1901]
+teaser: "A boy ran a hundred yards with news no child should carry. He spent his life writing."
+script: |
+  Stand on this side of the avenue and look east, across to the corner of Habersham Street, at the old police barracks.
+
+  One winter morning a boy ran there from this block, with no shoes on.
+
+  His name was Conrad Aiken. He was eleven. His father was a doctor, and the family lived in a house on this block, at number two twenty eight. Early on the twenty seventh of February, nineteen hundred and one, a patrolman at the barracks heard behind him the patter of bare and boyish feet. That is how the Morning News put it. The boy told him that his father had shot his mother, and then himself.
+
+  The paper measured the distance. A hundred yards, diagonally across the avenue.
+
+  The children were sent north to relatives. Conrad went to Harvard, where he became friends with T. S. Eliot. In nineteen thirty he won the Pulitzer Prize for poetry. His writing, a Georgia columnist noted, mentions that morning.
+
+  In his last years he came home to Savannah. When he died in nineteen seventy three, he was buried in Bonaventure, on the lot where his parents lie. No flowers, no clergy. A friend read lines from one of his poems at the grave.
+
+  Should I not hear, as I lie down in dust, the horns of glory blowing above my burial?
+
+  Look across at the barracks again.
+
+  He ran a hundred yards that morning. He spent the rest of his life writing.
+detail: >-
+  Savannah Morning News, 28 February 1901: the family "at No. 228 Oglethorpe avenue, east, between Abercorn and Lincoln streets; a hundred yards away, diagonally across Oglethorpe avenue, on the corner of Habersham street, is the police station house"; the patrolman "heard behind him the patter of bare and boyish feet. He turned to face Conrad Aiken". The paper calls him "12-year-old"; UPI (1973) says he "left Savannah at the age of 11" and that he had turned 84 on 5 August, which makes him eleven in February 1901, so the script says eleven. The 1901 report's graphic description of the room is not used. Savannah Morning News, 2 March 1901: buried in Bonaventure. UPI obituary and burial reports (Griffin Daily News, 18 and 21 August 1973): Pulitzer, Harvard and Eliot, returned to Savannah, buried "on the lot where his parents are buried", "There were no flowers and no clergy", and the lines of "Tetelestai" read at the grave (the poem was published before 1929). UPI says he returned "two years ago"; the script says only "in his last years". The column by Bernice McCullar (Griffin Daily News, 12 September 1973) is the second, independent source for the Pulitzer and for his writing mentioning the deaths. Whether the 1901 house survives is not checked and not claimed.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "the family lived in a house on this block, at number two twenty eight"
+    source: 1
+    quote: "Dr. Aiken lived with his family, his Wife and four children, at No. 228 Ogle thorpe avenue, east, between Abercorn and Lincoln streets"
+  - says: "a patrolman at the barracks heard behind him the patter of bare and boyish feet"
+    source: 1
+    quote: "when he heard behind him the patter of bare and boyish feet. He turned to face Conrad Aiken."
+  - says: "The paper measured the distance. A hundred yards, diagonally across the avenue."
+    source: 1
+    quote: "a hundred yards away, diagonally across Oglethorpe avenue, on the corner of Habersham street. Is the police station house."
+  - says: "He was eleven."
+    source: 3
+    quote: "He left Savannah at the age of 11 when his father, a physi cian, killed his mother and committed suicide."
+  - says: "Conrad went to Harvard, where he became friends with T. S. Eliot. In nineteen thirty he won the Pulitzer Prize for poetry."
+    source: 3
+    quote: "attended Harvard where he met and became a friend of T. S. Eliot."
+  - says: "In nineteen thirty he won the Pulitzer Prize for poetry."
+    source: 4
+    quote: "He won the Pilitz er Prize for his “Select ed Poems” in 1930"
+  - says: "His writing, a Georgia columnist noted, mentions that morning."
+    source: 5
+    quote: "In his writing, there is much about Georgia. There is also mention of his life’s great tragedy"
+  - says: "In his last years he came home to Savannah."
+    source: 3
+    quote: "Aiken returned to his native Savannah two years ago"
+  - says: "he was buried in Bonaventure, on the lot where his parents lie. No flowers, no clergy."
+    source: 4
+    quote: "on the lot where his parents are buried. About 25 persons attended the simple graveside ceremony in Bonaventure Cemetery. There were no flowers and no clergy."
+  - says: "Should I not hear, as I lie down in dust, the horns of glory blowing above my burial?"
+    source: 4
+    quote: "Should I not hear, as I lie down in dust, The horns of glory blowing above my burial?"
+  - says: "on the lot where his parents lie"
+    source: 2
+    quote: "A mass of flowers covers the single grave in Honavcnture to which the remains were committed."
+  - says: "One winter morning a boy ran there from this block, with no shoes on."
+    source: 1
+    quote: "A few minutes before 7 o'clock Patrol man Harry Lange, on duty In the sally port, was walking from the sergeant's of lice to the station house, when he heard behind him the patter of bare and boyish feet."
+  - says: "His name was Conrad Aiken."
+    source: 1
+    quote: "He turned to face Conrad Aiken. Dr. Aiken's 12-year-old son."
+  - says: "That is how the Morning News put it."
+    source: 1
+    quote: "when he heard behind him the patter of bare and boyish feet."
+  - says: "A friend read lines from one of his poems at the grave."
+    source: 4
+    quote: "Dr. Joseph Killorn of Savan nah, who is editing Aiken’s let ters, read of portion of his poem “Tetelestai,” a meditation on death."
+  - says: "He ran a hundred yards that morning."
+    source: 1
+    quote: "a hundred yards away, diagonally across Oglethorpe avenue, on the corner of Habersham street. Is the police station house."
+  - says: "He spent the rest of his life writing."
+    source: 3
+    quote: "Aiken worked in obscurity, sometimes extreme poverty, for much of his career but made his living at writing."
+sources:
+  - title: "Wife, Then Himself: Dr. William F. Aiken's Double Deed of Crime (The Savannah Morning News, 28 February 1901, page 10)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn89053684/1901-02-28/ed-1/seq-10/
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "'Neath Bonaventure's Oaks (The Savannah Morning News, 2 March 1901, page 10)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn89053684/1901-03-02/ed-1/seq-10/
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Georgia Pulitzer Prize poet Conrad Potter Aiken dead (UPI, Griffin Daily News, 18 August 1973, page 1)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn83009936/1973-08-18/ed-1/seq-1/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Poet Aiken is buried (UPI, Griffin Daily News, 21 August 1973, page 12)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn83009936/1973-08-21/ed-1/seq-12/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Capitol Story, by Bernice McCullar (Griffin Daily News, 12 September 1973, page 3)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn83009936/1973-09-12/ed-1/seq-3/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-a-hundred-yards-barefoot/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 88
+    audioBytes: 1408565
+    transcript:
+      totalS: 88
+      lines:
+        - text: Stand on this side of the avenue and look east, across to the corner of Habersham Street, at the old police barracks.
+          atS: 0
+          durationS: 6.86
+        - text: One winter morning a boy ran there from this block, with no shoes on.
+          atS: 7.3
+          durationS: 3.95
+        - text: His name was Conrad Aiken.
+          atS: 11.69
+          durationS: 2.02
+        - text: He was eleven.
+          atS: 13.99
+          durationS: 1
+        - text: His father was a doctor, and the family lived in a house on this block, at number two twenty eight.
+          atS: 15.27
+          durationS: 5.78
+        - text: Early on the twenty seventh of February, nineteen hundred and one, a patrolman at the barracks heard behind him the patter of bare and boyish feet.
+          atS: 21.43
+          durationS: 8.99
+        - text: That is how the Morning News put it.
+          atS: 31.02
+          durationS: 1.95
+        - text: The boy told him that his father had shot his mother, and then himself.
+          atS: 33.48
+          durationS: 3.87
+        - text: The paper measured the distance.
+          atS: 37.86
+          durationS: 1.88
+        - text: A hundred yards, diagonally across the avenue.
+          atS: 39.98
+          durationS: 3.27
+        - text: The children were sent north to relatives.
+          atS: 43.86
+          durationS: 2.3
+        - text: Conrad went to Harvard, where he became friends with T.
+          atS: 46.77
+          durationS: 2.7
+        - text: S.
+          atS: 49.49
+          durationS: 0.2
+        - text: Eliot.
+          atS: 49.73
+          durationS: 0.69
+        - text: In nineteen thirty he won the Pulitzer Prize for poetry.
+          atS: 50.92
+          durationS: 3.62
+        - text: His writing, a Georgia columnist noted, mentions that morning.
+          atS: 55.36
+          durationS: 4.09
+        - text: In his last years he came home to Savannah.
+          atS: 60.05
+          durationS: 2.6
+        - text: When he died in nineteen seventy three, he was buried in Bonaventure, on the lot where his parents lie.
+          atS: 63.03
+          durationS: 5.54
+        - text: No flowers, no clergy.
+          atS: 69.08
+          durationS: 2.24
+        - text: A friend read lines from one of his poems at the grave.
+          atS: 71.7
+          durationS: 2.94
+        - text: Should I not hear, as I lie down in dust, the horns of glory blowing above my burial?
+          atS: 75.24
+          durationS: 5.34
+        - text: Look across at the barracks again.
+          atS: 81.28
+          durationS: 1.82
+        - text: He ran a hundred yards that morning.
+          atS: 83.49
+          durationS: 1.94
+        - text: He spent the rest of his life writing.
+          atS: 85.64
+          durationS: 2.32

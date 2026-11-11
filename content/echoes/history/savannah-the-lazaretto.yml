@@ -1,0 +1,158 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the west end of Tybee Island by Lazaretto Creek, beside US 80, where the colonial quarantine station stood.
+# Position: the west end of Tybee at Lazaretto Creek from the coast data in the app's map (low to medium confidence: the app's street file has no tiles on Tybee and no source fetched in this session gives the station's exact footprint). Wants a check against the state historical marker before review.
+id: savannah-the-lazaretto
+title: "The Lazaretto"
+summary: "At the west end of Tybee, colonial Georgia quarantined enslaved Africans arriving by ship. Many who died lie here in unmarked graves."
+place: "Lazaretto Creek, west end of Tybee Island, Georgia"
+at: { lat: 32.01520, lng: -80.88000 }
+triggerRadiusKm: 0.15
+category: history
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [savannah, tybee, slavery, quarantine, african-american-history, lazaretto]
+teaser: "The creek's name is an Italian word. It means a hospital for the contagious."
+script: |
+  Look at the creek and the marsh at this end of the island. The creek is called Lazaretto.
+
+  It is not a family name. It is an Italian word, for a hospital for the contagious.
+
+  In colonial days, ships coming up to Savannah stopped here first. Passengers who might be carrying disease were kept on this end of the island until they were judged safe. Most of the people held here had not chosen to come. They were Africans, brought across the ocean in the holds of slave ships.
+
+  A guidebook written in the nineteen thirties put it plainly. Traders left the ones who had fallen sick on the voyage here, at a hospital for the enslaved. Those who recovered were sent on to the slave market in Savannah. Those who died were buried nearby, in graves that were never marked.
+
+  The Park Service puts it in one line. Mass burial on Tybee was the final port of call for many of those quarantined here.
+
+  In eighteen sixty two, Union soldiers built gun batteries on this end of the island to fire on Fort Pulaski. Four of them stood on the old quarantine ground.
+
+  Look at the marsh again.
+
+  Under it are people whose names nobody wrote down.
+detail: >-
+  The NPS Tybee page places the lazaretto on the western end of the island and names its purpose; the NPS rifled cannon page dates the quarantine land to the 1770s and says four Union batteries were built on it; the 1937 guide describes the slave hospital and the unmarked graves. No fetched source gives the number buried. The exact site of the burial ground is not marked in any fetched source.
+pronunciations:
+  - written: "Lazaretto"
+    say: "laz-uh-RET-oh"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It is not a family name. It is an Italian word, for a hospital for the contagious."
+    source: 1
+    quote: "an area known as a \"lazaretto\", a variation of an Italian word meaning 'hospital for the contagious', was established to quarantine slaves and other passengers who might be carrying diseases."
+  - says: "Passengers who might be carrying disease were kept on this end of the island until they were judged safe."
+    source: 1
+    quote: "On the western end of the island, an area known as a \"lazaretto\""
+  - says: "In colonial days, ships coming up to Savannah stopped here first."
+    source: 3
+    quote: "was established in Colonial days as a quarantine station."
+  - says: "Traders left the ones who had fallen sick on the voyage here, at a hospital for the enslaved."
+    source: 3
+    quote: "Among its other facilities was a slave hospital where inr,oming traders left the slaves who had become ill during the voyage."
+  - says: "Those who recovered were sent on to the slave market in Savannah. Those who died were buried nearby, in graves that were never marked."
+    source: 3
+    quote: "Those who recovered were sent to the slave market in Savan- nah, while those who died were buried in unmarked graves nearby."
+  - says: "Mass burial on Tybee was the final port of call for many of those quarantined here."
+    source: 1
+    quote: "Mass burial on Tybee would be the final port of call for many of those quarantined there."
+  - says: "In eighteen sixty two, Union soldiers built gun batteries on this end of the island to fire on Fort Pulaski. Four of them stood on the old quarantine ground."
+    source: 2
+    quote: "Four of the batteries were built on land used in the 1770's to quarantine newly arrived enslaved Africans."
+  - says: "The creek is called Lazaretto."
+    source: 4
+    quote: "the Savannah Bar Pilots moved their operational base from Lazaretto Creek to Cockspur's northern shore"
+  - says: "They were Africans, brought across the ocean in the holds of slave ships."
+    source: 2
+    quote: "Four of the batteries were built on land used in the 1770's to quarantine newly arrived enslaved Africans."
+  - says: "A guidebook written in the nineteen thirties put it plainly."
+    source: 3
+    quote: "LAZARETTO, 17 m. (U Vicinity Map), a small community, was established in Colonial days as a quarantine station."
+  - says: "The Park Service puts it in one line."
+    source: 1
+    quote: "Mass burial on Tybee would be the final port of call for many of those quarantined there."
+sources:
+  - title: "Tybee Island"
+    publisher: "National Park Service, Fort Pulaski National Monument"
+    url: https://www.nps.gov/fopu/learn/historyculture/tybee-island.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Rifled Cannon"
+    publisher: "National Park Service, Fort Pulaski National Monument"
+    url: https://www.nps.gov/articles/000/rifled-cannon.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Fort Pulaski, HABS No. GA-2158 (written data)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ga/ga0100/ga0120/data/ga0120data.pdf
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-lazaretto/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.8
+    audioBytes: 1214632
+    transcript:
+      totalS: 75.8
+      lines:
+        - text: Look at the creek and the marsh at this end of the island.
+          atS: 0
+          durationS: 3.15
+        - text: The creek is called Lazaretto.
+          atS: 3.35
+          durationS: 2.6
+        - text: It is not a family name.
+          atS: 6.17
+          durationS: 1.75
+        - text: It is an Italian word, for a hospital for the contagious.
+          atS: 8.09
+          durationS: 3.98
+        - text: In colonial days, ships coming up to Savannah stopped here first.
+          atS: 12.52
+          durationS: 4.64
+        - text: Passengers who might be carrying disease were kept on this end of the island until they were judged safe.
+          atS: 17.6
+          durationS: 5.6
+        - text: Most of the people held here had not chosen to come.
+          atS: 23.71
+          durationS: 3.29
+        - text: They were Africans, brought across the ocean in the holds of slave ships.
+          atS: 27.5
+          durationS: 4.52
+        - text: A guidebook written in the nineteen thirties put it plainly.
+          atS: 32.46
+          durationS: 3.41
+        - text: Traders left the ones who had fallen sick on the voyage here, at a hospital for the enslaved.
+          atS: 36.39
+          durationS: 5.64
+        - text: Those who recovered were sent on to the slave market in Savannah.
+          atS: 42.54
+          durationS: 3.76
+        - text: Those who died were buried nearby, in graves that were never marked.
+          atS: 46.74
+          durationS: 4.15
+        - text: The Park Service puts it in one line.
+          atS: 51.4
+          durationS: 2.41
+        - text: Mass burial on Tybee was the final port of call for many of those quarantined here.
+          atS: 54.51
+          durationS: 5.43
+        - text: In eighteen sixty two, Union soldiers built gun batteries on this end of the island to fire on Fort Pulaski.
+          atS: 60.45
+          durationS: 7.14
+        - text: Four of them stood on the old quarantine ground.
+          atS: 68.11
+          durationS: 2.68
+        - text: Look at the marsh again.
+          atS: 71.3
+          durationS: 1.3
+        - text: Under it are people whose names nobody wrote down.
+          atS: 72.92
+          durationS: 2.91
