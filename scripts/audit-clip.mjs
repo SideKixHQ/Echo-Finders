@@ -473,7 +473,7 @@ for (const [at, how] of [
   if (how === 'search') {
     const box = p.getByLabel('Search a city, place or ZIP code');
     await box.click().catch(() => {});
-    await box.fill('An Ordinary Intersection').catch(() => {});
+    await box.fill('An Ordinary Corner').catch(() => {});
     await p.waitForTimeout(900);
     await tap(p.locator('.msearch-go'));
     await p.waitForTimeout(1500);
