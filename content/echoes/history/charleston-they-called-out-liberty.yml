@@ -1,0 +1,124 @@
+# Drafted by Claude Code (2026-11-11) for the second Charleston pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The roadside of US 17 (Savannah Highway) at Rantowles, by the Stono River rebellion site. The National Register nomination puts the starting point about 200 yards north of the highway, on the west bank of the Wallace River; that ground is private, so the listener stays at the road.
+# Position: The "The Stono Rebellion" historic site point in the Overture data, 20 m from the highway; the nomination's centre point is 32°47'14" N, which matches (high confidence). About 20 km from the peninsula.
+id: charleston-they-called-out-liberty
+title: "They Called Out Liberty"
+summary: "In September 1739 enslaved men rose at the Stono River, seized guns and marched for Spanish Florida, drums beating. They got ten miles."
+place: "Stono River Slave Rebellion Site, US 17, Rantowles, South Carolina"
+at: { lat: 32.78716, lng: -80.14548 }
+triggerRadiusKm: 0.1
+category: history
+format: short
+durationS: 100
+visibility: position-only
+certainty: documented
+minAge: 12
+quality: 0.85
+tags: [charleston, rantowles, stono, slavery, rebellion, colonial, 1739]
+teaser: "They marched with colours flying and two drums beating."
+script: |
+  Look past the highway, toward the river. Before dawn on a Sunday in September, seventeen thirty nine, a rebellion began just north of this road.
+
+  The man at its head was named Jemmy. He was from Angola.
+
+  The rebels met at the river. They broke into a store by the bridge, took guns and powder, and killed the two men guarding it. Then they turned south, toward Spanish Florida, where they hoped to be free.
+
+  Witnesses said they marched like a disciplined company. They called out Liberty, and marched on with colours displayed, and two drums beating.
+
+  People joined them as they went. By the afternoon there were as many as a hundred.
+
+  They had covered ten miles. In an open field near the Edisto River, they stopped. They rested, and tried to draw more people to them.
+
+  That is where the planters and the militia found them.
+
+  The rebels fought with courage, even in the eyes of their enemies. But the militia had the guns. Some of the rebels were shot. Some were beheaded, and their heads were set on posts. Others escaped, and were hunted down for months. One of the leaders was not caught for three years.
+
+  The next year, the colony passed a law to tighten its grip on every enslaved person in it.
+
+  Look back toward the river.
+
+  They got ten miles.
+detail: >-
+  The South Carolina Encyclopedia entry (Mark M. Smith) gives the date and the Sunday start, the store at Stono Bridge, the guns and powder and the two men killed, the march toward St. Augustine and freedom in Spanish Florida, the growth to as many as one hundred, the ten miles covered by late afternoon, the halt in an open field near the Edisto to rest and draw others, the militia's attack, the rebels' courage "even in the eyes of their enemies", the killings and heads on posts, the pursuit, the leader not taken until 1742, and the 1740 Negro Act. The National Register nomination (1974) gives the starting point about 200 yards north of US 17, the leader Jemmy, an Angolan, the guards killed at Hutchinson's warehouse, and two contemporary phrases: that they marched "like a disciplined company", and that "they called out Liberty, (and) marched on with colours displayed, and two drums beating". The encyclopedia reports the cry of Liberty only as something some sources suggest; the script attributes the march to witnesses, as the nomination does. The two sources give different early numbers (about fifty one in the nomination, sixty rising to a hundred in the encyclopedia); the script gives only the top figure. "Before dawn" rests on the encyclopedia's "early on Sunday" and the tavern reached "before sunup".
+pronunciations:
+  - written: "Stono"
+    say: "STOH-noh"
+  - written: "Jemmy"
+    say: "JEM-ee"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Before dawn on a Sunday in September, seventeen thirty nine, a rebellion began just north of this road."
+    source: 1
+    quote: "The revolt began on Sunday, September 9, 1739, on a branch of the Stono River in St. Paul’s Parish, near Charleston."
+  - says: "Before dawn on a Sunday in September, seventeen thirty nine, a rebellion began just north of this road."
+    source: 2
+    quote: "approximately 200 yards noi th"
+  - says: "The man at its head was named Jemmy. He was from Angola."
+    source: 2
+    quote: "The rebellion was led by a"
+  - says: "The man at its head was named Jemmy. He was from Angola."
+    source: 2
+    quote: "man named Jemmy who was an Angolan slave"
+  - says: "They broke into a store by the bridge, took guns and powder, and killed the two men guarding it."
+    source: 1
+    quote: "moved to Stono Bridge, broke into a store, equipped themselves with guns and powder, and killed two men."
+  - says: "They broke into a store by the bridge, took guns and powder, and killed the two men guarding it."
+    source: 2
+    quote: "killed the guards"
+  - says: "Then they turned south, toward Spanish Florida, where they hoped to be free."
+    source: 1
+    quote: "to reach St. Augustine and claim freedom in Spanish-controlled Florida"
+  - says: "Witnesses said they marched like a disciplined company."
+    source: 2
+    quote: "remarked that the slaves marched \"like a disciplined company.\""
+  - says: "They called out Liberty, and marched on with colours displayed, and two drums beating."
+    source: 2
+    quote: "\"they called out Liberty,"
+  - says: "They called out Liberty, and marched on with colours displayed, and two drums beating."
+    source: 2
+    quote: "(and) marched on with colours displayed, and two drums beating,\""
+  - says: "By the afternoon there were as many as a hundred."
+    source: 1
+    quote: "their ranks increased from sixty to as many as one hundred participants"
+  - says: "They had covered ten miles."
+    source: 1
+    quote: "By late afternoon the original insurgents had covered ten miles."
+  - says: "In an open field near the Edisto River, they stopped. They rested, and tried to draw more people to them."
+    source: 1
+    quote: "To rest and also to draw more slaves to their ranks, they decided to delay crossing the Edisto River."
+  - says: "That is where the planters and the militia found them."
+    source: 1
+    quote: "armed planters and militiamen"
+  - says: "The rebels fought with courage, even in the eyes of their enemies."
+    source: 1
+    quote: "The rebels distinguished themselves as courageous, even in the eyes of their enemies"
+  - says: "But the militia had the guns."
+    source: 1
+    quote: "but white firepower won the day"
+  - says: "Some were beheaded, and their heads were set on posts."
+    source: 1
+    quote: "some were decapitated and their heads set on posts"
+  - says: "Others escaped, and were hunted down for months."
+    source: 1
+    quote: "Some of the rebels were rounded up in the spring of 1740"
+  - says: "One of the leaders was not caught for three years."
+    source: 1
+    quote: "one leader was not captured until 1742"
+  - says: "The next year, the colony passed a law to tighten its grip on every enslaved person in it."
+    source: 1
+    quote: "The 1740 Negro Act made the manumission of slaves dependent on a special act of the assembly and mandated patrol service for every militiaman."
+  - says: "They got ten miles."
+    source: 1
+    quote: "By late afternoon the original insurgents had covered ten miles."
+sources:
+  - title: "Stono Rebellion (Mark M. Smith)"
+    publisher: "South Carolina Encyclopedia, University of South Carolina"
+    url: https://www.scencyclopedia.org/sce/entries/stono-rebellion/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "The Stono River Slave Rebellion Site, National Register of Historic Places nomination (1974)"
+    publisher: "National Park Service, NPGallery"
+    url: https://npgallery.nps.gov/NRHP/GetAsset/NRHP/74001840_text
+    retrievedAt: "2026-11-11"
+    rights: public-domain

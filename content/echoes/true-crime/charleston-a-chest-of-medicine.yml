@@ -1,0 +1,120 @@
+# Drafted by Claude Code (2026-11-11) for the second Charleston pass, following docs/writing-echoes.md (format v2) and docs/14-true-crime.md.
+# Listening spot: The foot of Vendue Range at Waterfront Park, where the old town met its wharves, looking out over the harbour toward the bar.
+# Position: Vendue Range and Concord Street from the app's Charleston street file, nudged east to the park edge and checked against the land map (high confidence for the spot; the 1718 wharf's exact place is not known and the script does not claim it).
+# Conviction status: alleged. Blackbeard was never tried; he was killed at Ocracoke in November 1718. The blockade, the hostages and the ransom are in the colonial record as reported by both sources. No living person is involved.
+id: charleston-a-chest-of-medicine
+title: "A Chest of Medicine"
+summary: "In May 1718 Blackbeard blockaded Charleston for a week and held its people hostage. The ransom he asked for was a chest of medicine."
+place: "Vendue Range at Waterfront Park, Charleston, South Carolina"
+at: { lat: 32.77890, lng: -79.92580 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 82
+visibility: landmark-visible
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.8
+tags: [charleston, true-crime, pirates, blackbeard, 1718, colonial]
+teaser: "The pirate wanted medicine. Or he would send back heads."
+script: |
+  Look out at the harbour, toward the open sea. In May of seventeen eighteen, four ships sat off the bar out there, with at least sixty guns between them.
+
+  They belonged to the pirate called Blackbeard.
+
+  For a week, he blockaded the port. He took eight or nine ships as they came and went. And he took hostages.
+
+  One of them was Samuel Wragg, a member of the governor's council. An old history of the city says Wragg's little son was taken too.
+
+  Then a small boat rowed up to the town's wharf, with a message for the governor.
+
+  The message was a list. Blackbeard wanted medicines. If they were not sent, it said, the heads of the prisoners would be presented to the council instead.
+
+  Governor Robert Johnson was furious. He paid anyway. A chest of medicine went out to the pirate ships.
+
+  The same history says the hostages were stripped of everything they had, and put ashore almost naked.
+
+  Blackbeard was never tried for any of it. Six months later, he was cornered at Ocracoke, in North Carolina, and killed.
+
+  Look out at the harbour again.
+
+  The ransom for a town was a box of medicine.
+detail: >-
+  The South Carolina Encyclopedia entry on Blackbeard (Lindley S. Butler) gives the four ship flotilla with at least sixty guns, the blockade of Charleston for a week in mid May 1718, the eight or nine ships plundered, the hostages including the councilman Samuel Wragg, the threat to the hostages, Governor Robert Johnson's reluctant ransom of a chest of medicine, and Blackbeard's death at Ocracoke on 22 November 1718. Harriott Horry Ravenel's history of Charleston (1906) independently gives the boat at the Charles Town wharf, the list of drugs and the threat to send the heads of Wragg, his little son and others to the council, the governor's fury, and the hostages robbed and sent ashore almost naked. The son and the stripping rest on Ravenel alone, so the script attributes them to "an old history of the city". Blackbeard was never tried, so the status is alleged; the script says plainly that he was never tried.
+pronunciations:
+  - written: "Wragg"
+    say: "RAG"
+  - written: "Ocracoke"
+    say: "OH-kruh-cohk"
+editorial: draft
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: alleged
+  reviewedBy: "TODO: James (owner) has not reviewed this draft."
+  reviewedAt: "2026-11-11"
+  contentWarning: "This echo describes a hostage taking and threats of killing in 1718. No one is described being hurt."
+claims:
+  - says: "In May of seventeen eighteen, four ships sat off the bar out there, with at least sixty guns between them."
+    source: 1
+    quote: "Blackbeard now sailed north to the Carolinas with a four-ship flotilla, mounting at least sixty guns"
+  - says: "For a week, he blockaded the port."
+    source: 1
+    quote: "Arriving off Charleston, South Carolina, in mid-May, he blockaded the port for a week, seizing prizes and hostages for ransom."
+  - says: "He took eight or nine ships as they came and went."
+    source: 1
+    quote: "Plundering eight or nine ships for supplies and specie"
+  - says: "He took eight or nine ships as they came and went."
+    source: 2
+    quote: "their ship was one of nine vessels which had been taken"
+  - says: "One of them was Samuel Wragg, a member of the governor's council."
+    source: 1
+    quote: "Blackbeard held hostages, including Samuel Wragg, a councilman."
+  - says: "An old history of the city says Wragg's little son was taken too."
+    source: 2
+    quote: "the heads of Mr. Samuel Wragg,"
+  - says: "An old history of the city says Wragg's little son was taken too."
+    source: 2
+    quote: "of his little son, and of some other citizens should be pre-"
+  - says: "Then a small boat rowed up to the town's wharf, with a message for the governor."
+    source: 2
+    quote: "long-boat pulled audaciously up to the Charles Town"
+  - says: "The message was a list. Blackbeard wanted medicines."
+    source: 2
+    quote: "Governor Johnson that his crew was in want of medicines,"
+  - says: "If they were not sent, it said, the heads of the prisoners would be presented to the council instead."
+    source: 2
+    quote: "and that unless the list of drugs forwarded was immedi-"
+  - says: "If they were not sent, it said, the heads of the prisoners would be presented to the council instead."
+    source: 1
+    quote: "Under the threat of the hostages being murdered"
+  - says: "Governor Robert Johnson was furious."
+    source: 2
+    quote: "was furious at the insult"
+  - says: "He paid anyway. A chest of medicine went out to the pirate ships."
+    source: 1
+    quote: "a reluctant Governor Robert Johnson agreed to a ransom of a valuable chest of medicine."
+  - says: "The same history says the hostages were stripped of everything they had, and put ashore almost naked."
+    source: 2
+    quote: "which they possessed, securing, it is said, $6000 in specie"
+  - says: "The same history says the hostages were stripped of everything they had, and put ashore almost naked."
+    source: 2
+    quote: "naked."
+  - says: "Six months later, he was cornered at Ocracoke, in North Carolina, and killed."
+    source: 1
+    quote: "Blackbeard was cornered at Ocracoke on November 22, 1718, by Lieutenant Robert Maynard’s flotilla and killed."
+  - says: "They belonged to the pirate called Blackbeard."
+    source: 1
+    quote: "Blackbeard now sailed north to the Carolinas with a four-ship flotilla"
+sources:
+  - title: "Blackbeard (Lindley S. Butler)"
+    publisher: "South Carolina Encyclopedia, University of South Carolina"
+    url: https://www.scencyclopedia.org/sce/entries/blackbeard/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906), The Conquest of the Pirates"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-11"
+    rights: public-domain

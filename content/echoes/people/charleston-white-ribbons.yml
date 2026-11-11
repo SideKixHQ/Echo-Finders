@@ -1,0 +1,110 @@
+# Drafted by Claude Code (2026-11-11) for the second Charleston pass, following docs/writing-echoes.md (format v2).
+# Listening spot: Blake Street on Charleston's East Side, outside 30 1/2 Blake Street, the blacksmith Philip Simmons's house and forge, now a museum run by his foundation.
+# Position: Blake Street between Drake and America streets in the app's Charleston street file (medium confidence; placed by block from the address, not by a surveyed point). About 180 m from the Cigar Factory echo.
+id: charleston-white-ribbons
+title: "White Ribbons"
+summary: "Philip Simmons shod horses here, then made over 200 of Charleston's iron gates. When he died, the city tied white ribbons on its ironwork."
+place: "Philip Simmons House and forge, 30 1/2 Blake Street, Charleston, South Carolina"
+at: { lat: 32.79820, lng: -79.93630 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [charleston, east-side, blacksmith, ironwork, philip-simmons, gullah, crafts]
+teaser: "He made the city's iron gates. He did not much like them painted black."
+script: |
+  Find the small wooden house on Blake Street, number thirty and a half. It has eight hundred and forty square feet. A blacksmith lived in it for half a century, with his forge out back.
+
+  Philip Simmons was born on Daniel Island, in a Gullah speaking community, in nineteen twelve. At thirteen he went to work for an old wheelwright named Peter Simmons, no relation, who had been born in slavery.
+
+  He learned to shoe horses, mend wagons and make tools. Then the trucks came, the horses went, and the work went with them.
+
+  So he tried making gates. He found, he said, that he could mash out a leaf the same as a horseshoe.
+
+  Over fifty years he made more than two hundred gates, fences, railings and balconies for this city. On East Bay Street, one of his gates holds a pair of rattlesnakes.
+
+  He wasted nothing. Inside the house is a bed he made from scrap iron he found in the street. A friend said he never bought an umbrella. He picked up broken ones, and put them back together.
+
+  He died in two thousand nine, at ninety seven. And there was one thing about his work that few people knew. He was not keen on it being painted black. Most of it was.
+
+  So the mayor asked Charleston to tie white ribbons on its iron gates and railings.
+
+  Look at the house again.
+
+  For once, the iron wore white.
+detail: >-
+  The South Carolina Encyclopedia entry (John Michael Vlach) gives his birth on Daniel Island in a Gullah speaking community in 1912, his apprenticeship at thirteen to the wheelwright Peter Simmons, born in slavery and no relation, the work as a "general blacksmith", the trucks replacing horses and wagons, his words about mashing out a leaf the same as a horseshoe, more than two hundred commissions between 1938 and 1990, and the rattlesnake gates for the Gadsden House on East Bay Street. The Post and Courier (2010) gives the house at 30 1/2 Blake Street, its 840 square feet, his purchase of it in 1959, the forge, the scrap iron bed and the umbrellas (the friend is Rossie Coulter of the Philip Simmons Foundation). The Post and Courier (2009) gives his death at 97, his dislike of his work painted black, and Mayor Joe Riley's invitation to tie white ribbons on iron gates and railings. "Half a century" covers 1959 to about 2008, when illness moved him to assisted living. Two independent sources for the life; the ribbons and the umbrella rest on the Post and Courier.
+pronunciations:
+  - written: "Gullah"
+    say: "GULL-uh"
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Find the small wooden house on Blake Street, number thirty and a half."
+    source: 2
+    quote: "the property at 30 1/2 Blake St."
+  - says: "It has eight hundred and forty square feet."
+    source: 2
+    quote: "The wooden house, built around 1890, has only 840 square feet."
+  - says: "A blacksmith lived in it for half a century, with his forge out back."
+    source: 2
+    quote: "Simmons bought it in 1959 and lived there until illness forced him into an assisted living home two years ago."
+  - says: "Philip Simmons was born on Daniel Island, in a Gullah speaking community, in nineteen twelve."
+    source: 1
+    quote: "Born on June 9, 1912, on Daniel Island in a Gullah-speaking community"
+  - says: "At thirteen he went to work for an old wheelwright named Peter Simmons, no relation, who had been born in slavery."
+    source: 1
+    quote: "He soon apprenticed himself to an elderly African American wheelwright named Peter Simmons (no relation), a man who was born in slavery"
+  - says: "He learned to shoe horses, mend wagons and make tools."
+    source: 1
+    quote: "he could shoe horses, repair wagons, fashion iron fittings for boats, make and mend tools"
+  - says: "Then the trucks came, the horses went, and the work went with them."
+    source: 1
+    quote: "When motorized trucks began to replace the horses and wagons that were mainstays of his business"
+  - says: "He found, he said, that he could mash out a leaf the same as a horseshoe."
+    source: 1
+    quote: "“could mash out a leaf the same as a horseshoe.”"
+  - says: "Over fifty years he made more than two hundred gates, fences, railings and balconies for this city."
+    source: 1
+    quote: "Between 1938 and 1990 he produced more than two hundred commissions, which included gates, fences, railings, and balconies."
+  - says: "On East Bay Street, one of his gates holds a pair of rattlesnakes."
+    source: 1
+    quote: "the gates made for the Christopher Gadsden House on East Bay Street, which feature a pair of threatening rattlesnakes"
+  - says: "Inside the house is a bed he made from scrap iron he found in the street."
+    source: 2
+    quote: "The museum also includes the bed frame that Simmons put together out of scrap iron he found abandoned on the street"
+  - says: "A friend said he never bought an umbrella. He picked up broken ones, and put them back together."
+    source: 2
+    quote: "\"He never bought an umbrella. He always picked them up (broken) and put them back together.\""
+  - says: "He died in two thousand nine, at ninety seven."
+    source: 3
+    quote: "in tribute of his passing Monday at age 97"
+  - says: "He was not keen on it being painted black. Most of it was."
+    source: 3
+    quote: "he wasn't crazy about his work being painted black, although much of it was."
+  - says: "So the mayor asked Charleston to tie white ribbons on its iron gates and railings."
+    source: 3
+    quote: "Riley invited others to honor Simmons by tying white ribbons on their wrought iron gates or railings, regardless of who forged them."
+  - says: "And there was one thing about his work that few people knew."
+    source: 3
+    quote: "One little known fact about legendary blacksmith Philip Simmons is that he wasn't crazy about his work being painted black"
+sources:
+  - title: "Simmons, Philip (John Michael Vlach)"
+    publisher: "South Carolina Encyclopedia, University of South Carolina"
+    url: https://www.scencyclopedia.org/sce/entries/simmons-philip/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Once-endangered home, shop of legendary blacksmith now a museum"
+    publisher: "The Post and Courier"
+    url: https://www.postandcourier.com/columnists/once-endangered-home-shop-of-legendary-blacksmith-now-a-museum/article_885b4f91-f9e7-5020-8cc0-effe1ac48746.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Forging forward: Philip Simmons remembered"
+    publisher: "The Post and Courier"
+    url: https://www.postandcourier.com/news/forging-forward---philip-simmons-remembered/article_0d9fb11c-643e-5be9-b16c-6a47e41d2520.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
