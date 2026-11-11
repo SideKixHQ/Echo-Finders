@@ -41,7 +41,7 @@ script: |
 pronunciations:
   - written: Roebling
     say: ROBE-ling
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "On the day this bridge opened, the man in charge of building it had never seen it up close."

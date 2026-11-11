@@ -42,7 +42,7 @@ script: |
 pronunciations:
   - written: Lanigan Schmidt
     say: LAN-ih-gun SHMIT
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look around this small park."

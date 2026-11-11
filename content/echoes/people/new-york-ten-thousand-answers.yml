@@ -40,7 +40,7 @@ script: |
 pronunciations:
   - written: Schomburg
     say: SHOM-burg
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Inside, just past the front desk, a map of rivers is set into the floor, in brass."

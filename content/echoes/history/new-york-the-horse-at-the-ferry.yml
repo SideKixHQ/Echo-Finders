@@ -40,7 +40,7 @@ script: |
 pronunciations:
   - written: Tallmadge
     say: TAL-mij
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In August, seventeen seventy six, George Washington's army was trapped on this side of the river."

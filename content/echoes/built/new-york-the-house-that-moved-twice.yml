@@ -37,7 +37,7 @@ script: |
 
   The house came home.
 
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the yellow and white house in front of you, with its porches and tall windows."

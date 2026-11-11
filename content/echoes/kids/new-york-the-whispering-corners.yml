@@ -37,7 +37,7 @@ script: |
 pronunciations:
   - written: Guastavino
     say: gwas-tah-VEE-no
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Stand in one corner, with your face close to the wall."

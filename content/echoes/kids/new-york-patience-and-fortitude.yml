@@ -37,7 +37,7 @@ script: |
 pronunciations:
   - written: Fiorello La Guardia
     say: fee-oh-REL-oh la GWAR-dee-ah
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look at the two marble lions guarding the steps of this library."

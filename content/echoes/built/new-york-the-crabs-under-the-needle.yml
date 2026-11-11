@@ -38,7 +38,7 @@ script: |
 pronunciations:
   - written: Gorringe
     say: GORE-inj
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In each corner there is a bronze crab, holding it up."

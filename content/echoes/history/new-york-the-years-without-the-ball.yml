@@ -40,7 +40,7 @@ script: |
 pronunciations:
   - written: Ochs
     say: OCKS
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Every New Year's Eve since nineteen oh seven, a lit ball has come down that pole at midnight."
