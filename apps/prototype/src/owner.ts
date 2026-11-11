@@ -112,6 +112,32 @@ export async function claimOwnerFromAddress(): Promise<AccessRole | null> {
   return accessRole();
 }
 
+/** What a code typed into Settings › Skeleton key came to. */
+export type KeyResult = "owner" | "tester" | "wrong" | "offline";
+
+/**
+ * The same check as the link, from a code typed into Settings › Skeleton key.
+ *
+ * James (2026-11-11): the home-screen icon on an iPhone has its own storage and its own
+ * cookies, apart from Safari, and no address bar, so the owner link can never reach it. A
+ * code typed inside the app can. The server sets the same lasting cookie either way.
+ */
+export async function claimWithCode(code: string): Promise<KeyResult> {
+  const trimmed = code.trim();
+  if (!trimmed) return "wrong";
+  try {
+    const res = await check(trimmed);
+    if (res.ok) {
+      const { role } = (await res.json()) as { role?: AccessRole };
+      write(role === "tester" ? TESTER + trimmed : "on");
+      return role === "tester" ? "tester" : "owner";
+    }
+    return res.status === 403 || res.status === 400 ? "wrong" : "offline";
+  } catch {
+    return "offline";
+  }
+}
+
 /** A tester phone whose code has been changed in Vercel goes back to normal. */
 async function recheckTester(): Promise<AccessRole | null> {
   const value = read();

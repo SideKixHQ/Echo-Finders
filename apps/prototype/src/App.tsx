@@ -2704,6 +2704,7 @@ export function App() {
                 setOwnerMode(false);
                 setRole(null);
               }}
+              onUnlocked={setRole}
               membership={
                 <MembershipPanel
                   membership={membershipOf(entitlement, Date.now())}

@@ -17,7 +17,8 @@ import { SENTRY_DSN, errorReportsAllowed, setErrorReportsAllowed } from "./error
 import { Feedback } from "./Feedback";
 import { Suggest } from "./Suggest";
 import { feedbackAvailable } from "./feedback";
-import { forgetOnServer } from "./owner";
+import { forgetOnServer, type AccessRole } from "./owner";
+import { SkeletonKey } from "./SkeletonKey";
 
 interface Props {
   readonly settings: PrivacySettings;
@@ -46,6 +47,8 @@ interface Props {
   /** It is tester mode rather than the owner's own phone: the same, named for what it is. */
   readonly tester?: boolean;
   readonly onOwnerOff?: () => void;
+  /** A key typed into Settings › Skeleton key was right (`SkeletonKey.tsx`). */
+  readonly onUnlocked?: (role: AccessRole) => void;
   readonly onTheme: (theme: "dark" | "light") => void;
   /** Settings › Membership, first: what you have is the first thing anybody looks for here. */
   readonly membership?: ReactNode;
@@ -66,6 +69,7 @@ export function Privacy({
   owner = false,
   tester = false,
   onOwnerOff,
+  onUnlocked,
   membership,
 }: Props) {
   // Kept by error-report.ts itself, not in PrivacySettings: it has to be readable before
@@ -190,8 +194,8 @@ export function Privacy({
           <button className="danger-row policy-row" onClick={onOwnerOff}>
             <span>On: every echo unlocked, and playable from anywhere</span>
             <small>
-              Only on this phone. Tap to turn it off; your {tester ? "tester" : "owner"} link turns it
-              back on.
+              Only on this phone. Tap to turn it off; your key turns it back on, here under
+              Skeleton key or from your link.
             </small>
           </button>
         </section>
@@ -242,6 +246,13 @@ export function Privacy({
           <Feedback dsn={SENTRY_DSN} release={__BUILD_COMMIT__} />
         </>
       )}
+
+      {/*
+        Skeleton key: an owner or tester code typed in the app, for the home-screen icon that
+        the owner link cannot reach. Gone once a key has worked; the mode's own panel above
+        takes its place.
+      */}
+      {!owner && onUnlocked && <SkeletonKey onUnlocked={onUnlocked} />}
 
       {/*
         Which build this is.
