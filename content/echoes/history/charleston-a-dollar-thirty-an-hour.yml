@@ -1,0 +1,193 @@
+# Drafted by Claude Code (2026-11-11) for the second Charleston pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The sidewalk of Ashley Avenue just north of the Medical University hospital's horseshoe, by the 2013 historical marker for the 1969 hospital strike.
+# Position: Ashley Avenue between Doughty and Bee streets from the app's Charleston street file, beside the "MUSC Main Hospital" point at 171 Ashley Avenue (medium confidence; the Post and Courier places the marker "just north of the horseshoe" but the exact post was not located).
+id: charleston-a-dollar-thirty-an-hour
+title: "A Dollar Thirty an Hour"
+summary: "In 1969 Black hospital workers, most of them women, struck the Medical College Hospital here for over three months, led by Mary Moultrie."
+place: "Ashley Avenue by the Medical University hospital, Charleston, South Carolina"
+at: { lat: 32.78635, lng: -79.94700 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 94
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [charleston, civil-rights, labor, hospital-strike, 1969, mary-moultrie, musc]
+teaser: "Thirty cents below the minimum wage, and a hospital president who would not budge."
+script: |
+  Find the historical marker on Ashley Avenue, just north of the hospital's horseshoe drive. It is the city's main memorial to what happened here in nineteen sixty nine.
+
+  That year, Black workers at the Medical College Hospital were paid a dollar thirty an hour. It was thirty cents below the minimum wage. Most of them were women.
+
+  One of them was Mary Moultrie. She was a licensed nurse, but the hospital did not fully recognise her qualifications. She began meeting other workers quietly, in churches. In March, twelve of them were fired.
+
+  On the twentieth of March, they walked out.
+
+  The hospital's president said he would not turn a twenty five million dollar complex over to a bunch of people who don't have a grammar school education.
+
+  We were all black, predominately women, and many of us were heads of households, Moultrie remembered. The majority of us were out there for the cause.
+
+  Coretta Scott King came, and marched down this avenue with them. The governor sent the National Guard into the streets with fixed bayonets, and put the city under a curfew.
+
+  After more than three months, the hospital gave way. The fired workers were taken back, and pay went up to the federal minimum. The union was never recognised.
+
+  Look at the marker again. When it went up, in twenty thirteen, someone had to pull the cover off.
+
+  It was Mary Moultrie.
+detail: >-
+  The South Carolina Encyclopedia entry on the strike (George W. Hopkins) gives the pay of $1.30 an hour, 30 cents below the minimum wage, the mostly female workforce, Moultrie's role, the meetings in churches, the twelve fired workers, the strike beginning on 20 March, the hospital president's words, the National Guard with fixed bayonets, the curfew, and the settlement: the fired workers rehired and pay raised to the federal level, without recognition of the union. The Post and Courier's reports (Moultrie's obituary, 2015, and its 2019 guide to the strike's sites) give her as a licensed nurse whose credentials were not fully recognised, her own words, Coretta Scott King marching down Ashley Avenue, the strike lasting more than three months, and the 2013 marker on Ashley Avenue just north of the horseshoe, unveiled by Moultrie. The encyclopedia calls Moultrie a nurse's aide and gives the strike against the Medical College Hospital as one hundred days; the Post and Courier calls her a licensed nurse and the whole strike 113 days. The script follows the Post and Courier on her title and says only "more than three months". The president is named in the sources but not in the script.
+pronunciations:
+  - written: "Moultrie"
+    say: "MOOL-tree"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Find the historical marker on Ashley Avenue, just north of the hospital's horseshoe drive."
+    source: 2
+    quote: "This marker, placed in 2013 on Ashley Avenue, just north of the Medical University of South Carolina's horseshoe, is Charleston's main memorial to its 1969 Hospital Strike."
+  - says: "That year, Black workers at the Medical College Hospital were paid a dollar thirty an hour. It was thirty cents below the minimum wage."
+    source: 1
+    quote: "being paid (along with licensed practical nurses, orderlies, kitchen and laundry staff, and other “nonprofessional” workers) $1.30 an hour, 30¢ below the minimum wage"
+  - says: "Most of them were women."
+    source: 1
+    quote: "a strike of more than four hundred African American hospital workers, mostly female"
+  - says: "She was a licensed nurse, but the hospital did not fully recognise her qualifications."
+    source: 3
+    quote: "Moultrie, a licensed nurse whose credentials were not fully recognized by the Medical College"
+  - says: "She began meeting other workers quietly, in churches."
+    source: 1
+    quote: "Small groups of workers began meeting weekly at local churches without publicity in fear of reprisals"
+  - says: "In March, twelve of them were fired."
+    source: 1
+    quote: "After the workers returned to their jobs, twelve of them were fired."
+  - says: "On the twentieth of March, they walked out."
+    source: 1
+    quote: "On March 20 the strike began and picket lines formed at MCH"
+  - says: "The hospital's president said he would not turn a twenty five million dollar complex over to a bunch of people who don't have a grammar school education."
+    source: 1
+    quote: "“turn a 25 million dollar complex over to a bunch of people who don’t have a grammar school education.”"
+  - says: "We were all black, predominately women, and many of us were heads of households, Moultrie remembered. The majority of us were out there for the cause."
+    source: 3
+    quote: "“We were all black, predominately women, and many of us were heads of households,” Moultrie recalled"
+  - says: "We were all black, predominately women, and many of us were heads of households, Moultrie remembered. The majority of us were out there for the cause."
+    source: 3
+    quote: "“The majority of us were out there for the cause.”"
+  - says: "Coretta Scott King came, and marched down this avenue with them."
+    source: 3
+    quote: "came to march down Ashley Avenue"
+  - says: "The governor sent the National Guard into the streets with fixed bayonets, and put the city under a curfew."
+    source: 1
+    quote: "Governor McNair ordered 500 National Guardsmen with fixed bayonets to patrol city streets"
+  - says: "The governor sent the National Guard into the streets with fixed bayonets, and put the city under a curfew."
+    source: 1
+    quote: "Governor McNair ordered a curfew in Charleston"
+  - says: "After more than three months, the hospital gave way."
+    source: 3
+    quote: "Thousands took to the streets for more than three months that spring"
+  - says: "The fired workers were taken back, and pay went up to the federal minimum. The union was never recognised."
+    source: 1
+    quote: "The twelve fired workers would be rehired, pay would be raised to the federal level"
+  - says: "The fired workers were taken back, and pay went up to the federal minimum. The union was never recognised."
+    source: 1
+    quote: "but no union recognition or official collective bargaining would be permitted"
+  - says: "It was Mary Moultrie."
+    source: 2
+    quote: "Mary Moultrie unveils a historic marker commemorating the 113-day strike"
+  - says: "It is the city's main memorial to what happened here in nineteen sixty nine."
+    source: 2
+    quote: "is Charleston's main memorial to its 1969 Hospital Strike."
+  - says: "One of them was Mary Moultrie."
+    source: 3
+    quote: "Mary Moultrie, helped lead the 1969 Charleston Hospital strike."
+  - says: "When it went up, in twenty thirteen, someone had to pull the cover off."
+    source: 2
+    quote: "This marker, placed in 2013 on Ashley Avenue"
+sources:
+  - title: "Charleston hospital workers' strike (George W. Hopkins)"
+    publisher: "South Carolina Encyclopedia, University of South Carolina"
+    url: https://www.scencyclopedia.org/sce/entries/charleston-hospital-workers-strike/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Some key sites of the 1969 Hospital Workers Strike in Charleston still stand"
+    publisher: "The Post and Courier"
+    url: https://www.postandcourier.com/news/some-key-sites-of-the-1969-hospital-workers-strike-in-charleston-still-stand/article_651c3900-7b34-11e9-9ee2-b7f8452f949c.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "1969 hospital strike leader Moultrie dies"
+    publisher: "The Post and Courier"
+    url: https://www.postandcourier.com/archives/1969-hospital-strike-leader-moultrie-dies/article_9b28fd09-fd67-5ae7-a2f3-98400946b7c7.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-a-dollar-thirty-an-hour/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 93.5
+    audioBytes: 1496754
+    transcript:
+      totalS: 93.5
+      lines:
+        - text: Find the historical marker on Ashley Avenue, just north of the hospital's horseshoe drive.
+          atS: 0
+          durationS: 5.68
+        - text: It is the city's main memorial to what happened here in nineteen sixty nine.
+          atS: 6.37
+          durationS: 4.48
+        - text: That year, Black workers at the Medical College Hospital were paid a dollar thirty an hour.
+          atS: 11.67
+          durationS: 5.24
+        - text: It was thirty cents below the minimum wage.
+          atS: 17.23
+          durationS: 2.66
+        - text: Most of them were women.
+          atS: 20.49
+          durationS: 1.28
+        - text: One of them was Mary Moultrie.
+          atS: 22.47
+          durationS: 2.54
+        - text: She was a licensed nurse, but the hospital did not fully recognise her qualifications.
+          atS: 25.61
+          durationS: 4.84
+        - text: She began meeting other workers quietly, in churches.
+          atS: 30.96
+          durationS: 3.62
+        - text: In March, twelve of them were fired.
+          atS: 35.4
+          durationS: 2.47
+        - text: On the twentieth of March, they walked out.
+          atS: 38.69
+          durationS: 2.74
+        - text: The hospital's president said he would not turn a twenty five million dollar complex over to a bunch of people who don't have a grammar school education.
+          atS: 42.12
+          durationS: 7.82
+        - text: We were all black, predominately women, and many of us were heads of households, Moultrie remembered.
+          atS: 50.76
+          durationS: 7.04
+        - text: The majority of us were out there for the cause.
+          atS: 58.4
+          durationS: 2.55
+        - text: Coretta Scott King came, and marched down this avenue with them.
+          atS: 61.65
+          durationS: 4.01
+        - text: The governor sent the National Guard into the streets with fixed bayonets, and put the city under a curfew.
+          atS: 66.35
+          durationS: 6.21
+        - text: After more than three months, the hospital gave way.
+          atS: 73.26
+          durationS: 3.17
+        - text: The fired workers were taken back, and pay went up to the federal minimum.
+          atS: 76.87
+          durationS: 4.39
+        - text: The union was never recognised.
+          atS: 81.77
+          durationS: 2.24
+        - text: Look at the marker again.
+          atS: 84.61
+          durationS: 1.46
+        - text: When it went up, in twenty thirteen, someone had to pull the cover off.
+          atS: 86.59
+          durationS: 4.61
+        - text: It was Mary Moultrie.
+          atS: 91.64
+          durationS: 1.85

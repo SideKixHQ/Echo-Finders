@@ -1,0 +1,149 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The sidewalk at the Sword Gates, 32 Legare Street. Private house; the listener stays on the street.
+# Position: "Sword Gate House" point in the app's Charleston street file (high confidence).
+id: charleston-the-wall-built-for-one-elopement
+title: "The Wall Built for One Elopement"
+summary: "Behind the Sword Gates on Legare Street was a famous girls' school. Tradition says its high wall went up after one pupil eloped."
+place: "The Sword Gates, 32 Legare Street, Charleston, South Carolina"
+at: { lat: 32.77397, lng: -79.93399 }
+triggerRadiusKm: 0.03
+category: legend
+format: short
+durationS: 55
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The elopement is tradition. Smith and Smith (1917) say an elopement "is believed to have led to the building of the wall" and that "tradition tells of but one elopement"; no name or date is given there. The school of Madame Talvande, a refugee from the massacres in Saint Domingue, and the gates' date and design are documented in the 1917 and 1941 sources.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 0
+quality: 0.8
+tags: [charleston, south-of-broad, legend, legare-street, sword-gates, school, ironwork]
+teaser: "A wall to keep the girls in. Or one girl, anyway."
+script: |
+  Look at the iron gates. In the middle, two spears meet at the centre of a broadsword, and make a cross. Now look at the high brick wall the gates are set in.
+
+  This is a legend, and it is about that wall.
+
+  Behind it, long ago, there was a famous school for girls. Its mistress was Madame Talvande. She had escaped the massacres in Saint Domingue, and in Charleston she kept a school.
+
+  And one of her pupils, the story goes, eloped.
+
+  So up went the wall.
+
+  A Charleston history of nineteen seventeen told the tale, and could not resist a joke. It seems strange, it said, that she thought brick and mortar could keep apart ardent young Carolinians. Nevertheless, it said, tradition tells of only one elopement.
+
+  So maybe the wall worked.
+
+  Look through the gates at the garden, and the path behind them. The wall still keeps most of it hidden.
+
+  Exactly as it was meant to.
+detail: >-
+  Smith and Smith (1917) describe the wall and gate around the ground of a famous girls' school kept by Madame Talvande, who escaped the massacre in Saint Domingue, and the elopement that tradition says led to the wall. The 1941 Federal Writers' Project guide dates the Sword Gates to 1815 to 1820 and describes the spears meeting at a broadsword to form a cross.
+pronunciations:
+  - written: "Talvande"
+    say: "tal-VAHND"
+  - written: "Legare"
+    say: "luh-GREE"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In the middle, two spears meet at the centre of a broadsword, and make a cross."
+    source: 2
+    quote: "a central motif designed with two spears, the points of which join at the center of a broadsword to form a cross."
+  - says: "Behind it, long ago, there was a famous school for girls."
+    source: 1
+    quote: "it surrounds the ground of what was once a famous girls' school."
+  - says: "Its mistress was Madame Talvande."
+    source: 1
+    quote: "Talvande, one of those who escaped massacre in St. Domingo."
+  - says: "She had escaped the massacres in Saint Domingue, and in Charleston she kept a school."
+    source: 1
+    quote: "Talvande, one of those who escaped massacre in St. Domingo."
+  - says: "So up went the wall."
+    source: 1
+    quote: "An elopement is believed to have led to the building of the wall"
+  - says: "It seems strange, it said, that she thought brick and mortar could keep apart ardent young Carolinians."
+    source: 1
+    quote: "brick and mortar could keep apart ardent young Carolinians."
+  - says: "Nevertheless, it said, tradition tells of only one elopement."
+    source: 1
+    quote: "tradition tells of but one elopement!"
+  - says: "The wall still keeps most of it hidden."
+    source: 1
+    quote: "giving to the shaded garden an air of seclusion."
+  - says: "And one of her pupils, the story goes, eloped."
+    source: 1
+    quote: "An elopement is believed to have led to the building of the wall"
+  - says: "A Charleston history of nineteen seventeen told the tale, and could not resist a joke."
+    source: 1
+    quote: "PUBLISHED SEPTEMBER. 1917"
+  - says: "A Charleston history of nineteen seventeen told the tale, and could not resist a joke."
+    source: 1
+    quote: "yet it seems strange that the dame d* ecole should have thought that brick and mortar could keep apart ardent young Carolinians."
+sources:
+  - title: "The Dwelling Houses of Charleston, South Carolina (Alice R. Huger Smith and D. E. Huger Smith, 1917)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/dwellinghousesof00smit
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "South Carolina: A Guide to the Palmetto State (Federal Writers' Project, 1941)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/in.ernet.dli.2015.180130
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/charleston-the-wall-built-for-one-elopement/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 54.7
+    audioBytes: 876503
+    transcript:
+      totalS: 54.7
+      lines:
+        - text: Look at the iron gates.
+          atS: 0
+          durationS: 1.36
+        - text: In the middle, two spears meet at the centre of a broadsword, and make a cross.
+          atS: 1.64
+          durationS: 4.59
+        - text: Now look at the high brick wall the gates are set in.
+          atS: 6.66
+          durationS: 2.93
+        - text: This is a legend, and it is about that wall.
+          atS: 9.91
+          durationS: 2.82
+        - text: Behind it, long ago, there was a famous school for girls.
+          atS: 13.12
+          durationS: 3.61
+        - text: Its mistress was Madame Talvande.
+          atS: 16.85
+          durationS: 2.12
+        - text: She had escaped the massacres in Saint Domingue, and in Charleston she kept a school.
+          atS: 19.14
+          durationS: 4.74
+        - text: And one of her pupils, the story goes, eloped.
+          atS: 24.13
+          durationS: 3.12
+        - text: So up went the wall.
+          atS: 27.69
+          durationS: 1.28
+        - text: A Charleston history of nineteen seventeen told the tale, and could not resist a joke.
+          atS: 29.66
+          durationS: 4.89
+        - text: It seems strange, it said, that she thought brick and mortar could keep apart ardent young Carolinians.
+          atS: 34.99
+          durationS: 5.61
+        - text: Nevertheless, it said, tradition tells of only one elopement.
+          atS: 41.3
+          durationS: 3.87
+        - text: So maybe the wall worked.
+          atS: 45.44
+          durationS: 1.46
+        - text: Look through the gates at the garden, and the path behind them.
+          atS: 47.18
+          durationS: 3.09
+        - text: The wall still keeps most of it hidden.
+          atS: 50.48
+          durationS: 2.15
+        - text: Exactly as it was meant to.
+          atS: 52.84
+          durationS: 1.87

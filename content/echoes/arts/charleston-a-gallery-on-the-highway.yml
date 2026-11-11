@@ -1,0 +1,180 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The roadside of US Highway 17 north of Mount Pleasant, where sweetgrass basket stands line the shoulder.
+# Position: US 17 near Long Point Road, Mount Pleasant, from general knowledge of the road (low confidence: the stands move and the road is long). A reviewer should set this on a specific, safely walkable stand.
+id: charleston-a-gallery-on-the-highway
+title: "A Gallery on the Highway"
+summary: "Along Highway 17 north of Mount Pleasant, Gullah weavers sell sweetgrass baskets from roadside stands. The shapes began as rice tools."
+place: "Sweetgrass basket stands, US Highway 17, Mount Pleasant, South Carolina"
+at: { lat: 32.84160, lng: -79.83680 }
+triggerRadiusKm: 0.2
+category: arts
+format: short
+durationS: 81
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [charleston, mount-pleasant, sweetgrass, gullah, baskets, craft]
+teaser: "Ten hours of work in your hands. And a shape older than the road."
+script: |
+  Look at the baskets on the stands along the road. Coiled, tight, the colour of straw. It looks like a country road. It is really a working art gallery.
+
+  The grass grows wild. A weaver named Lynette Youson showed a reporter how she gathers it. She grabs a handful of green sweetgrass, puts her foot on the root, and pulls. Then it dries in the sun for three to five days, and turns a pale beige.
+
+  You tie a knot, she said, and then you work around that knot. It's like crocheting. A basket can take her about ten hours.
+
+  The weavers are Gullah, descendants of West Africans enslaved on this coast. Their baskets were tools before they were art. One flat shape was for rice. You threw the grain up in the air, and let the breeze carry the husks away.
+
+  Back in nineteen forty one, the state guide already noticed baskets for sale at wayside stands near Charleston. Woven, it said, by a process handed down from generation to generation.
+
+  Henrietta Snype, who has woven since she was seven, put it this way. When I do these baskets, it reflects my entire community.
+
+  Pick one up. Turn it over.
+
+  It was made to hold rice.
+detail: >-
+  CBS News (2015) reports Highway 17 as a working gallery, Lynette Youson's description of gathering, drying and weaving sweetgrass, about ten hours for one basket, the Gullah heritage and the rice fanner basket as described by Henrietta Snype, and her words on community. The 1941 Federal Writers' Project guide records baskets offered at wayside stands near Charleston. Both weavers named are public in that report.
+pronunciations:
+  - written: "Gullah"
+    say: "GULL-uh"
+  - written: "Snype"
+    say: "SNIPE"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It is really a working art gallery."
+    source: 1
+    quote: "It's actually a working art gallery of sweetgrass baskets."
+  - says: "The grass grows wild."
+    source: 1
+    quote: "The grasses for the baskets grow wild."
+  - says: "A weaver named Lynette Youson showed a reporter how she gathers it."
+    source: 1
+    quote: "Lynette Youson took Strassmann to one field."
+  - says: "She grabs a handful of green sweetgrass, puts her foot on the root, and pulls."
+    source: 1
+    quote: "She grabbed the green sweetgrass by the handful and -- with her foot on the root -- pulled it out of the ground."
+  - says: "Then it dries in the sun for three to five days, and turns a pale beige."
+    source: 1
+    quote: "go spread it out in the sun for about three to five days."
+  - says: "Then it dries in the sun for three to five days, and turns a pale beige."
+    source: 1
+    quote: "When it dries, it shrinks and it'll be a beige tone."
+  - says: "It's like crocheting."
+    source: 1
+    quote: "You tie a knot and then you work around that knot -- it's like crocheting,"
+  - says: "A basket can take her about ten hours."
+    source: 1
+    quote: "I can do a basket like this, maybe, roughly in about ten hours."
+  - says: "The weavers are Gullah, descendants of West Africans enslaved on this coast."
+    source: 1
+    quote: "That community is the Gullah, descendants of West African slaves first brought to coastal South Carolina and Georgia in the early 1700s."
+  - says: "Their baskets were tools before they were art."
+    source: 1
+    quote: "Before these baskets became art, they were tools."
+  - says: "One flat shape was for rice."
+    source: 1
+    quote: "When the slaves would go out and gather the rice, they would put it in this particular style of basket."
+  - says: "You threw the grain up in the air, and let the breeze carry the husks away."
+    source: 1
+    quote: "and then they would throw it up in the air -- and you feel the breeze."
+  - says: "Back in nineteen forty one, the state guide already noticed baskets for sale at wayside stands near Charleston."
+    source: 2
+    quote: "At houses and wayside stands near Charleston, baskets are offered for sale."
+  - says: "Woven, it said, by a process handed down from generation to generation."
+    source: 2
+    quote: "These are substantially woven of grass by a process handed down from generation to generation"
+  - says: "Henrietta Snype, who has woven since she was seven, put it this way."
+    source: 1
+    quote: "Snype, now 63, has woven baskets since she was seven."
+  - says: "When I do these baskets, it reflects my entire community."
+    source: 1
+    quote: "when I do these baskets it reflects my entire community,"
+  - says: "Pick one up."
+    source: 2
+    quote: "At houses and wayside stands near Charleston, baskets are offered for sale."
+sources:
+  - title: "Basket weavers keep an age-old tradition alive (CBS News, 31 May 2015)"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/basket-weavers-keep-an-age-old-tradition-alive/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "South Carolina: A Guide to the Palmetto State (Federal Writers' Project, 1941)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/in.ernet.dli.2015.180130
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-a-gallery-on-the-highway/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81
+    audioBytes: 1296970
+    transcript:
+      totalS: 81
+      lines:
+        - text: Look at the baskets on the stands along the road.
+          atS: 0
+          durationS: 2.53
+        - text: Coiled, tight, the colour of straw.
+          atS: 2.65
+          durationS: 2.44
+        - text: It looks like a country road.
+          atS: 5.21
+          durationS: 1.73
+        - text: It is really a working art gallery.
+          atS: 7.19
+          durationS: 2.24
+        - text: The grass grows wild.
+          atS: 9.71
+          durationS: 1.58
+        - text: A weaver named Lynette Youson showed a reporter how she gathers it.
+          atS: 11.61
+          durationS: 4.16
+        - text: She grabs a handful of green sweetgrass, puts her foot on the root, and pulls.
+          atS: 16.21
+          durationS: 5.25
+        - text: Then it dries in the sun for three to five days, and turns a pale beige.
+          atS: 22.06
+          durationS: 4.84
+        - text: You tie a knot, she said, and then you work around that knot.
+          atS: 27.41
+          durationS: 4.18
+        - text: It's like crocheting.
+          atS: 32.03
+          durationS: 1.3
+        - text: A basket can take her about ten hours.
+          atS: 33.77
+          durationS: 2.66
+        - text: The weavers are Gullah, descendants of West Africans enslaved on this coast.
+          atS: 36.76
+          durationS: 5.55
+        - text: Their baskets were tools before they were art.
+          atS: 42.75
+          durationS: 2.83
+        - text: One flat shape was for rice.
+          atS: 46.02
+          durationS: 2.07
+        - text: You threw the grain up in the air, and let the breeze carry the husks away.
+          atS: 48.41
+          durationS: 4.55
+        - text: Back in nineteen forty one, the state guide already noticed baskets for sale at wayside stands near Charleston.
+          atS: 54.08
+          durationS: 7.05
+        - text: Woven, it said, by a process handed down from generation to generation.
+          atS: 61.64
+          durationS: 4.83
+        - text: Henrietta Snype, who has woven since she was seven, put it this way.
+          atS: 66.85
+          durationS: 4.52
+        - text: When I do these baskets, it reflects my entire community.
+          atS: 71.97
+          durationS: 4.16
+        - text: Pick one up.
+          atS: 76.64
+          durationS: 0.92
+        - text: Turn it over.
+          atS: 77.73
+          durationS: 1.09
+        - text: It was made to hold rice.
+          atS: 79.2
+          durationS: 1.79

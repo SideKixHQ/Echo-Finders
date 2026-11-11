@@ -1,0 +1,173 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The roadside in front of the Progressive Club, River Road, Johns Island.
+# Position: The Progressive Club, 3377 River Road, from a published waymark (N 32 40.622, W 80 02.417) (medium confidence).
+id: charleston-the-school-behind-the-store
+title: "The School Behind the Store"
+summary: "In 1957 a citizenship school opened here to teach Johns Island adults to read and register to vote. It spread across the South."
+place: "The Progressive Club, River Road, Johns Island, South Carolina"
+at: { lat: 32.67703, lng: -80.04028 }
+triggerRadiusKm: 0.05
+category: people
+format: short
+durationS: 86
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.85
+tags: [charleston, johns-island, civil-rights, esau-jenkins, septima-clark, citizenship-school]
+teaser: "A grocery store with fuel pumps, a gym, and a classroom that changed the vote."
+script: |
+  Look at the long, low building by the road. It had fuel pumps out front once, and a grocery store inside. It also had a classroom that changed the South.
+
+  It starts with a dog. In nineteen forty eight, a man on this island, Sammy Grant, was attacked by a white man's dog. He defended himself, and the man shot him. A magistrate dismissed the case.
+
+  Esau Jenkins would not leave it there. He and Joe Williams raised money from the islanders, appealed, and won. The dog's owner was convicted. Then they started a club to keep helping. They called it the Progressive Club.
+
+  Jenkins saw the next problem. Many adults on the island could not read, so they could not register to vote. He needed a teacher.
+
+  Septima Clark was a teacher from Johns Island who had been fired by the state for belonging to the NAACP. Together with Bernice Robinson, they began a citizenship school here, in nineteen fifty seven, in an old schoolhouse the club had bought.
+
+  It worked. Citizenship schools spread to Edisto, to St. Helena, and beyond. Doctor Martin Luther King Junior came to this island twice.
+
+  Look at the building again. Hurricane Hugo tore its roof in nineteen eighty nine.
+
+  The lesson it taught is still standing.
+detail: >-
+  From the National Park Service listing of the Progressive Club (African American Civil Rights Network, 2021): the Sammy Grant case of 1948, the appeal and conviction, Jenkins's meeting with Highlander in 1954, Septima Clark's dismissal for NAACP membership, the citizenship school of 1957 in the former Mount Zion Elementary School, the present building of 1962 to 1963 with its grocery store and fuel pumps, the spread to Edisto and St. Helena, Dr. King's two visits, and the Hugo damage of 1989.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It had fuel pumps out front once, and a grocery store inside."
+    source: 1
+    quote: "The new structure also included a grocery store with fuel pumps in the front of the building"
+  - says: "In nineteen forty eight, a man on this island, Sammy Grant, was attacked by a white man's dog."
+    source: 1
+    quote: "In 1948, Jenkins formed the club with Joe Williams after an island local, Sammy Grant, was shot by a white man while defending himself from an attack by the man’s dog."
+  - says: "He defended himself, and the man shot him."
+    source: 1
+    quote: "was shot by a white man while defending himself from an attack by the man’s dog."
+  - says: "A magistrate dismissed the case."
+    source: 1
+    quote: "The case against the dog owner was dismissed by a magistrate judge"
+  - says: "He and Joe Williams raised money from the islanders, appealed, and won."
+    source: 1
+    quote: "Jenkins and Williams raised money from other islanders to appeal the judge’s decision."
+  - says: "The dog's owner was convicted."
+    source: 1
+    quote: "the dog owner was convicted of aggravated assault."
+  - says: "They called it the Progressive Club."
+    source: 1
+    quote: "They called their organization the Progressive Club"
+  - says: "Many adults on the island could not read, so they could not register to vote."
+    source: 1
+    quote: "to teach adult African-American Island residents how to read and write."
+  - says: "Septima Clark was a teacher from Johns Island who had been fired by the state for belonging to the NAACP."
+    source: 1
+    quote: "She had been fired as an elementary school teacher by the State of South Carolina because of her membership in the NAACP."
+  - says: "Together with Bernice Robinson, they began a citizenship school here, in nineteen fifty seven, in an old schoolhouse the club had bought."
+    source: 1
+    quote: "The Citizenship School within the Progressive Club – inspired by the Highlander Folk Center – opened in the former school building in 1957."
+  - says: "Citizenship schools spread to Edisto, to St. Helena, and beyond."
+    source: 1
+    quote: "The success of the Citizenship School led to the development of other Citizenship Schools on other rural islands in South Carolina, such as Edisto and St. Helena."
+  - says: "Doctor Martin Luther King Junior came to this island twice."
+    source: 1
+    quote: "Rev. Dr. Martin Luther King, Jr. came to Johns Island twice"
+  - says: "Hurricane Hugo tore its roof in nineteen eighty nine."
+    source: 1
+    quote: "The grocery store remained until Hurricane Hugo damaged the roof of the building in 1989."
+  - says: "It also had a classroom that changed the South."
+    source: 1
+    quote: "The Progressive Club Sea Island Center on Johns Island, South Carolina is significant for its role as a Citizenship School and for its association with events and persons important in the African American Civil Rights movement."
+  - says: "Esau Jenkins would not leave it there."
+    source: 1
+    quote: "The case against the dog owner was dismissed by a magistrate judge, and Jenkins and Williams raised money from other islanders to appeal the judge’s decision."
+  - says: "Esau Jenkins would not leave it there."
+    source: 1
+    quote: "until the death of the Club’s founder Esau Jenkins in 1972."
+sources:
+  - title: "South Carolina: The Progressive Club of Johns Island"
+    publisher: "National Park Service, African American Civil Rights Network"
+    url: https://www.nps.gov/places/south-carolina-the-progressive-club-of-johns-island.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-school-behind-the-store/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85.7
+    audioBytes: 1372621
+    transcript:
+      totalS: 85.7
+      lines:
+        - text: Look at the long, low building by the road.
+          atS: 0
+          durationS: 2.29
+        - text: It had fuel pumps out front once, and a grocery store inside.
+          atS: 2.44
+          durationS: 3.96
+        - text: It also had a classroom that changed the South.
+          atS: 6.68
+          durationS: 2.6
+        - text: It starts with a dog.
+          atS: 9.55
+          durationS: 1.34
+        - text: In nineteen forty eight, a man on this island, Sammy Grant, was attacked by a white man's dog.
+          atS: 11.7
+          durationS: 5.7
+        - text: He defended himself, and the man shot him.
+          atS: 17.84
+          durationS: 2.95
+        - text: A magistrate dismissed the case.
+          atS: 21.23
+          durationS: 2.08
+        - text: Esau Jenkins would not leave it there.
+          atS: 23.64
+          durationS: 2.33
+        - text: He and Joe Williams raised money from the islanders, appealed, and won.
+          atS: 26.48
+          durationS: 4.85
+        - text: The dog's owner was convicted.
+          atS: 31.85
+          durationS: 1.9
+        - text: Then they started a club to keep helping.
+          atS: 34.13
+          durationS: 2.47
+        - text: They called it the Progressive Club.
+          atS: 36.99
+          durationS: 1.94
+        - text: Jenkins saw the next problem.
+          atS: 39.37
+          durationS: 1.89
+        - text: Many adults on the island could not read, so they could not register to vote.
+          atS: 41.7
+          durationS: 4.66
+        - text: He needed a teacher.
+          atS: 46.96
+          durationS: 1.35
+        - text: Septima Clark was a teacher from Johns Island who had been fired by the state for belonging to the NAACP.
+          atS: 48.91
+          durationS: 6.99
+        - text: Together with Bernice Robinson, they began a citizenship school here, in nineteen fifty seven, in an old schoolhouse the club had bought.
+          atS: 56.72
+          durationS: 8.72
+        - text: It worked.
+          atS: 65.88
+          durationS: 0.82
+        - text: Citizenship schools spread to Edisto, to St.
+          atS: 67.21
+          durationS: 2.78
+        - text: Helena, and beyond.
+          atS: 70.01
+          durationS: 1.47
+        - text: Doctor Martin Luther King Junior came to this island twice.
+          atS: 72.6
+          durationS: 3.77
+        - text: Look at the building again.
+          atS: 76.75
+          durationS: 1.34
+        - text: Hurricane Hugo tore its roof in nineteen eighty nine.
+          atS: 78.47
+          durationS: 3.51
+        - text: The lesson it taught is still standing.
+          atS: 82.49
+          durationS: 3.24
