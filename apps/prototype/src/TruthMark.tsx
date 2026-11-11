@@ -40,10 +40,24 @@ export function TruthMark({ echo, short = false }: { readonly echo: Echo; readon
  * (`content:review`); this is the disclaimer, on the card and in the player, so it is seen
  * before and while the story plays.
  */
-export const CRIME_NOTE =
-  "Told from public records and published reporting. Anyone accused but not convicted is presumed innocent.";
+export const CRIME_NOTE = "From public records.";
+/** Where the whole of it is said: the Terms' true crime section (`docs/terms-of-service.md`). */
+export const CRIME_POLICY_URL = "https://echofinders.com/terms";
 
+/*
+ * James (2026-11-11): "keep the disclaimers very short and define them in the policies."
+ * The card says where the echo comes from and links to the rest: sources, conviction status
+ * said aloud, "alleged", presumed innocence and how to report a mistake are all defined in
+ * the Terms, in full, once.
+ */
 export function CrimeNote({ echo }: { readonly echo: Echo }) {
   if (echo.category !== "true-crime") return null;
-  return <p className="crime-note">{CRIME_NOTE}</p>;
+  return (
+    <p className="crime-note">
+      {CRIME_NOTE}{" "}
+      <a className="crime-note-link" href={CRIME_POLICY_URL} target="_blank" rel="noreferrer">
+        How we tell true crime
+      </a>
+    </p>
+  );
 }
