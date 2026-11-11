@@ -1,0 +1,196 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on Broad Street, opposite number 116. It is now an inn: look from the street.
+# Position: Broad Street between Meeting and King from the Overture street segments in the app's Charleston street file, placed about two thirds of the way toward King; the exact frontage of number 116 is not fixed (medium confidence).
+id: charleston-the-butlers-soup
+title: "The Butler's Soup"
+summary: "A president slept here in 1909. The cook Charleston remembers is the mayor's butler, William Deas, and his she crab soup."
+place: "116 Broad Street, Charleston, South Carolina"
+at: { lat: 32.77648, lng: -79.93185 }
+triggerRadiusKm: 0.03
+category: food-drink
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, food, she-crab-soup, broad-street]
+teaser: "A president upstairs, and the man Charleston remembers in the kitchen."
+script: |
+  Look across Broad Street at number one hundred and sixteen. A president slept in that house. But the person Charleston remembers from it was working in the kitchen.
+
+  In November, nineteen oh nine, President Taft came to Charleston. Crowds cheered him from the station all the way to that door, the home of the mayor, Robert Goodwyn Rhett.
+
+  The Rhetts had a butler named William Deas. Mrs. Rhett's own cookbook called him one of the great cooks of the world. His soup was made with she crabs. The crab man in the street charged ten cents a dozen extra for the ones with eggs. The eggs were picked out and stirred in with the meat, and that is what made it different.
+
+  When that cookbook was being written, they sat William down first, and a stenographer took down every word he said. The book prints the menu from the president's visit, too. The first course was crab soup. Just crab soup.
+
+  Years later, the chef José Andrés put she crab soup on his menu in Washington, and gave the credit to one man. Not the president. William Deas.
+
+  Look at the door again.
+
+  The president had crab soup. The rest of us got William's.
+detail: >-
+  The popular story that she crab soup was invented for President Taft is not supported by the sources used here: the 1930 cookbook prints the menu of Taft's visit with plain "Crab Soup", and credits the she crab soup to William Deas. Taft spent the night of 5 November 1909 at Mayor Rhett's house; the mayor's address was 116 Broad Street in 1908.
+pronunciations:
+  - written: "Deas"
+    say: "DEEZ"
+  - written: "Rhett"
+    say: "RET"
+  - written: "Goodwyn"
+    say: "GOOD-win"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look across Broad Street at number one hundred and sixteen."
+    source: 1
+    quote: "His address is No. 116 Broad street, Charleston"
+  - says: "A president slept in that house."
+    source: 2
+    quote: "the home of Mayor Rliett, where he is spending the night"
+  - says: "But the person Charleston remembers from it was working in the kitchen."
+    source: 3
+    quote: "It is prepared always now by Mrs. Rhett’s able butler, William Deas,"
+  - says: "In November, nineteen oh nine, President Taft came to Charleston."
+    source: 2
+    quote: "Nov. 5.—Arriving here at dusk this evening. President Taft"
+  - says: "Crowds cheered him from the station all the way to that door, the home of the mayor, Robert Goodwyn Rhett."
+    source: 2
+    quote: "the president’s progress from the Union Station to the home of Mayor Rliett, where he is spending the night, was marked by cheers."
+  - says: "Crowds cheered him from the station all the way to that door, the home of the mayor, Robert Goodwyn Rhett."
+    source: 1
+    quote: "His address is No. 116 Broad street, Charleston"
+  - says: "The Rhetts had a butler named William Deas."
+    source: 3
+    quote: "It is prepared always now by Mrs. Rhett’s able butler, William Deas,"
+  - says: "Mrs. Rhett's own cookbook called him one of the great cooks of the world."
+    source: 3
+    quote: "who is one of the great cooks of the world."
+  - says: "Mrs. Rhett's own cookbook called him one of the great cooks of the world."
+    source: 3
+    quote: "RECIPES GATHERED BY BLANCHE S. RHETT"
+  - says: "His soup was made with she crabs."
+    source: 3
+    quote: "the real “she” crab soup as William makes it is worth the extra trouble"
+  - says: "The crab man in the street charged ten cents a dozen extra for the ones with eggs."
+    source: 3
+    quote: "The Crabman charges ten cents a dozen extra for “ she ” crabs with the eggs in."
+  - says: "The eggs were picked out and stirred in with the meat, and that is what made it different."
+    source: 3
+    quote: "The crab eggs are picked and put with the crab meat and give a delicious, glutinous quality to the soup which makes it very different from regular crab soup."
+  - says: "When that cookbook was being written, they sat William down first, and a stenographer took down every word he said."
+    source: 3
+    quote: "When we started this book of Charleston cooking we first had a talk with William. A stenographer took down his instructions."
+  - says: "The book prints the menu from the president's visit, too."
+    source: 3
+    quote: "dent Taft visited the Rhett house. The menu"
+  - says: "The first course was crab soup."
+    source: 3
+    quote: "Crab Soup Terrapin Calapash"
+  - says: "Years later, the chef José Andrés put she crab soup on his menu in Washington, and gave the credit to one man."
+    source: 4
+    quote: "I'm kind of giving this recipe credit to William Deas"
+  - says: "Years later, the chef José Andrés put she crab soup on his menu in Washington, and gave the credit to one man."
+    source: 4
+    quote: "America Eats opened this week here in Washington, D.C."
+  - says: "William Deas."
+    source: 4
+    quote: "I'm kind of giving this recipe credit to William Deas"
+  - says: "The president had crab soup."
+    source: 3
+    quote: "Crab Soup Terrapin Calapash"
+  - says: "The rest of us got William's."
+    source: 4
+    quote: "I'm kind of giving this recipe credit to William Deas"
+sources:
+  - title: "Yorkville Enquirer, 16 June 1908, page 4 (sketch of Mayor R. Goodwyn Rhett)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84026925/1908-06-16/ed-1/?sp=4
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Sentinel-Record (Hot Springs, Ark.), 6 November 1909, page 1, \"President in Charleston\""
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn89051285/1909-11-06/ed-1/?sp=1
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "200 Years of Charleston Cooking (recipes gathered by Blanche S. Rhett, edited by Lettie Gay, 1930; revised edition 1934)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/200yearsofcharle0000lett
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Star Chef Jose Andres Cooks Up Americana Cuisine (Talk of the Nation, 2011)"
+    publisher: "NPR"
+    url: https://www.npr.org/2011/07/06/137651885/star-chef-jose-andres-cooks-up-americana-cuisine
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-butlers-soup/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77.8
+    audioBytes: 1245561
+    transcript:
+      totalS: 77.8
+      lines:
+        - text: Look across Broad Street at number one hundred and sixteen.
+          atS: 0
+          durationS: 3.22
+        - text: A president slept in that house.
+          atS: 3.54
+          durationS: 2.02
+        - text: But the person Charleston remembers from it was working in the kitchen.
+          atS: 6.17
+          durationS: 3.83
+        - text: In November, nineteen oh nine, President Taft came to Charleston.
+          atS: 11.3
+          durationS: 4.68
+        - text: Crowds cheered him from the station all the way to that door, the home of the mayor, Robert Goodwyn Rhett.
+          atS: 16.79
+          durationS: 6.94
+        - text: The Rhetts had a butler named William Deas.
+          atS: 24.43
+          durationS: 2.6
+        - text: Mrs.
+          atS: 27.84
+          durationS: 0.34
+        - text: Rhett's own cookbook called him one of the great cooks of the world.
+          atS: 28.21
+          durationS: 3.65
+        - text: His soup was made with she crabs.
+          atS: 32.55
+          durationS: 2.16
+        - text: The crab man in the street charged ten cents a dozen extra for the ones with eggs.
+          atS: 35.32
+          durationS: 4.71
+        - text: The eggs were picked out and stirred in with the meat, and that is what made it different.
+          atS: 40.54
+          durationS: 4.81
+        - text: When that cookbook was being written, they sat William down first, and a stenographer took down every word he said.
+          atS: 46.05
+          durationS: 6.62
+        - text: The book prints the menu from the president's visit, too.
+          atS: 53.36
+          durationS: 3.16
+        - text: The first course was crab soup.
+          atS: 57.21
+          durationS: 2.04
+        - text: Just crab soup.
+          atS: 59.54
+          durationS: 1.57
+        - text: Years later, the chef José Andrés put she crab soup on his menu in Washington, and gave the credit to one man.
+          atS: 62.05
+          durationS: 6.93
+        - text: Not the president.
+          atS: 69.16
+          durationS: 1.25
+        - text: William Deas.
+          atS: 70.74
+          durationS: 1.47
+        - text: Look at the door again.
+          atS: 72.66
+          durationS: 1.14
+        - text: The president had crab soup.
+          atS: 73.97
+          durationS: 1.77
+        - text: The rest of us got William's.
+          atS: 75.98
+          durationS: 1.81

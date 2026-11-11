@@ -1,0 +1,128 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk at the corner of Church Street and Tradd Street, looking north up Church Street to the Heyward-Washington House. It is a museum; the echo needs no entry.
+# Position: Church and Tradd intersection from the Overture street segments in the app's Charleston street file. About 45 metres south of the existing Cabbage Row echo, so the two may overlap (medium confidence).
+id: charleston-the-presidents-face-in-their-hair
+title: "The President's Face in Their Hair"
+summary: "In 1791 Charleston rented a Church Street house for George Washington. The ladies at his ball wore ribbons painted with his face."
+place: "Heyward Washington House, Church Street at Tradd Street, Charleston, South Carolina"
+at: { lat: 32.77500, lng: -79.92905 }
+triggerRadiusKm: 0.03
+category: kids
+format: short
+durationS: 58
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.7
+tags: [charleston, charleston-core, south-of-broad, washington, kids, church-street]
+teaser: "Imagine walking into a ball and seeing your own face everywhere."
+script: |
+  Look up Church Street for the Heyward Washington House, a few doors from this corner. In seventeen ninety one, the city rented that house for one very important guest, and filled it with furniture.
+
+  The guest was President George Washington. He went to breakfasts, and dinners, and balls, and wrote them all down in his diary. At one concert, he counted four hundred ladies. He wrote that he had never seen anything like it.
+
+  And at the ball, the ladies had his face in their hair. White ribbons, painted with his picture, and the words, God bless our President. Imagine walking into a room and seeing your own face looking back at you, from all over the dance floor.
+
+  Look at the house again. By nineteen oh six, it had become a bakery. Then, in nineteen thirty, it opened as the city's very first house museum.
+
+  For a while, you could buy bread where the President slept.
+detail: >-
+  Ravenel (1906) quotes Washington's journal for the concert of 400 ladies and describes the painted bandeaux worn at the concert and ball given at the City Hall, and records that the house was then a bakery. The Charleston Museum acquired the house in 1929 and opened it in 1930.
+pronunciations:
+  - written: "Heyward"
+    say: "HAY-ward"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In seventeen ninety one, the city rented that house for one very important guest, and filled it with furniture."
+    source: 1
+    quote: "Heyward also hosted President George Washington during his tour of the country in 1791."
+  - says: "In seventeen ninety one, the city rented that house for one very important guest, and filled it with furniture."
+    source: 2
+    quote: "It then belonged to Thomas Heyward, and was rented and handsomely furnished by the city for the occasion."
+  - says: "The guest was President George Washington."
+    source: 1
+    quote: "Heyward also hosted President George Washington during his tour of the country in 1791."
+  - says: "He went to breakfasts, and dinners, and balls, and wrote them all down in his diary."
+    source: 2
+    quote: "He went to breakfasts, dinners, and balls, all of which he recorded in his journal."
+  - says: "At one concert, he counted four hundred ladies."
+    source: 2
+    quote: "Went to a concert where were 400 ladies"
+  - says: "He wrote that he had never seen anything like it."
+    source: 2
+    quote: "the number and appearance of wch. exceeded anything I had ever seen."
+  - says: "And at the ball, the ladies had his face in their hair."
+    source: 2
+    quote: "The ladies wore scarfs and bandeaux or “fillets” in their hair."
+  - says: "White ribbons, painted with his picture, and the words, God bless our President."
+    source: 2
+    quote: "White ribbon painted with the President’s likeness, and the words “ God bless our Presi- dent” like a wreath around it."
+  - says: "By nineteen oh six, it had become a bakery."
+    source: 2
+    quote: "now alas, abakery"
+  - says: "Then, in nineteen thirty, it opened as the city's very first house museum."
+    source: 1
+    quote: "The following year, the Heyward-Washington house opened to the public as the city’s first historic house museum."
+  - says: "For a while, you could buy bread where the President slept."
+    source: 2
+    quote: "now alas, abakery"
+sources:
+  - title: "Heyward-Washington House"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/places/heyward-washington-house.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906)"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/charleston-the-presidents-face-in-their-hair/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 58
+    audioBytes: 928330
+    transcript:
+      totalS: 58
+      lines:
+        - text: Look up Church Street for the Heyward Washington House, a few doors from this corner.
+          atS: 0
+          durationS: 5.13
+        - text: In seventeen ninety one, the city rented that house for one very important guest, and filled it with furniture.
+          atS: 5.57
+          durationS: 6.81
+        - text: The guest was President George Washington.
+          atS: 12.71
+          durationS: 2.57
+        - text: He went to breakfasts, and dinners, and balls, and wrote them all down in his diary.
+          atS: 15.6
+          durationS: 4.75
+        - text: At one concert, he counted four hundred ladies.
+          atS: 20.73
+          durationS: 2.81
+        - text: He wrote that he had never seen anything like it.
+          atS: 23.87
+          durationS: 2.53
+        - text: And at the ball, the ladies had his face in their hair.
+          atS: 26.64
+          durationS: 3.23
+        - text: White ribbons, painted with his picture, and the words, God bless our President.
+          atS: 30.31
+          durationS: 5.29
+        - text: Imagine walking into a room and seeing your own face looking back at you, from all over the dance floor.
+          atS: 36.3
+          durationS: 6.33
+        - text: Look at the house again.
+          atS: 43.07
+          durationS: 1.14
+        - text: By nineteen oh six, it had become a bakery.
+          atS: 44.91
+          durationS: 2.97
+        - text: Then, in nineteen thirty, it opened as the city's very first house museum.
+          atS: 48.48
+          durationS: 5.33
+        - text: For a while, you could buy bread where the President slept.
+          atS: 54.51
+          durationS: 3.45
