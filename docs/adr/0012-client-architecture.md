@@ -20,6 +20,11 @@ TestFlight now, and the native React Native app above, built in parallel.
   native screens replace it there, and it is deleted when they have.
 - It asks for When In Use location only (no Always), the camera for the web app's camera
   view, and the `audio` background mode so narration carries on with the screen locked.
+- The native app is built beside it in the same Expo project, and a build time switch
+  picks one: `EXPO_PUBLIC_SHELL=web` (set by the eas `production` profile, so TestFlight)
+  starts the shell from `App.tsx`; anything else (the `development` and `preview`
+  profiles) starts the native app, Expo Router in `apps/ios/src/app/`. The switch is
+  decided in `apps/ios/index.ts` and goes when the shell does.
 
 ## Why not one React Native codebase for both
 
