@@ -3,9 +3,10 @@
 # Position: Bull and Wayne intersection from the street segments in the app's Savannah street file, set onto the Wayne Street sidewalk west of Bull, about 55 m from the Pulaski monument echo (medium confidence for which side the study windows face; NPR's guide says "on this side of the house").
 #
 # True crime, per docs/14-true-crime.md:
-# - Conviction status: Jim Williams was tried four times and acquitted in 1989. Earlier verdicts did not stand; the script says aloud that he was acquitted and does not say he was convicted, because no reachable source in this session gave the earlier verdicts (Wikipedia does, and is not a source). Filed as `exonerated`, the status whose rule requires the acquittal said aloud.
+# - Conviction status: Jim Williams was tried four times. Two of the first three trials ended in murder convictions, both overturned by the Georgia Supreme Court; the third ended in a hung jury; the fourth jury acquitted him in 1989 (AP, 1987, and NPR). Filed as `exonerated`: the script says the convictions were thrown out in the same breath as it says they happened.
+# - Second pass (2026-11-11): AP's 1987 report (via The Red and Black, Georgia Historic Newspapers) added as the independent second source for the date, the earlier verdicts and the trial count. AP gives Hansford's age as 22, NPR as 21, so the script no longer gives an age.
 # - Living people: none named. Williams died in 1990, Danny Hansford in 1981. The author of the book is alive and is not named; nothing here concerns him.
-# - Two independent sources: NPR (2024, Georgia Public Broadcasting) and NBC News (2009). Key facts: the shooting in this house (NPR; NBC "a fatal shooting there"), 1981 and Hansford's age (NPR only), four trials and not guilty in 1989 (NPR), tried and not convicted (NBC). The 1981 date and four-trial count rest on NPR alone; a second source for them is the open item before review.
+# - Independent sources: NPR (2024, Georgia Public Broadcasting), NBC News (2009) and AP (1987). Key facts: the shooting in this house (NPR; NBC "a fatal shooting there"; AP "killed at Williams' home"), 2 May 1981 (NPR; AP), the trials and earlier verdicts (AP; NPR for the fourth trial and the 1989 verdict), tried and not finally convicted (NBC).
 # - What is not said: anything about the relationship beyond NPR's words, any description of the wounds, any claim about what happened in the room beyond Williams's own account as NPR reports it.
 id: savannah-four-trials
 title: "Four Trials"
@@ -28,11 +29,11 @@ script: |
 
   A young man named Danny Hansford died in that room.
 
-  It was about two in the morning, on the second of May, nineteen eighty one. Hansford was twenty one. He worked for the man who owned this house, Jim Williams, a wealthy antiques dealer. NPR has described Hansford as Williams's employee and occasional lover.
+  It was about two in the morning, on the second of May, nineteen eighty one. Hansford was in his early twenties. He worked for the man who owned this house, Jim Williams, a wealthy antiques dealer. NPR has described Hansford as Williams's employee and occasional lover.
 
   Williams shot him. He said it was self defence, that Hansford had tried to shoot him first. He was charged with murder.
 
-  What followed took eight years. Four trials. In nineteen eighty nine, a jury found him not guilty. Williams was acquitted.
+  What followed took eight years and four trials. Twice a jury convicted him of murder, and twice the Georgia Supreme Court threw the verdict out. A third jury could not agree. In nineteen eighty nine, a fourth jury found him not guilty. Williams was acquitted.
 
   The case became a book, and the book became a film, and the town that had tried him four times became a place people visit with that book in their hands.
 
@@ -40,9 +41,9 @@ script: |
 
   The verdict was not guilty. The room still holds a death.
 detail: >-
-  NPR (2024) gives the time, date, Hansford's age, the self-defence claim, the murder charge, the four trials and the 1989 verdict. NBC News (2009) says Williams "was tried but never convicted in a fatal shooting there". NBC calls Williams the "late art dealer"; his death date is not in either fetched page, so the script does not give it.
+  NPR (2024) gives the time, date, Hansford's age, the self-defence claim, the murder charge, the four trials and the 1989 verdict. NBC News (2009) says Williams "was tried but never convicted in a fatal shooting there". NBC calls Williams the "late art dealer"; his death date is not in either fetched page, so the script does not give it. AP (1987, second pass): the 2 May 1981 date, Hansford's age as 22 (NPR says 21, so the script gives no age), "Two of the first three trials ended in murder convictions, but both were thrown out on appeal to the state Supreme Court", and the third trial's 11 to 1 deadlock. NBC's "never convicted" is read as the final outcome; the script says the earlier convictions did not stand.
 editorial: draft
-factCheck: single-source
+factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: exonerated
@@ -50,10 +51,13 @@ trueCrimeReview:
   reviewedAt: "2026-11-10"
   contentWarning: "This echo is about a fatal shooting. No violence is described in detail."
 claims:
+  - says: "What followed took eight years and four trials."
+    source: 3
+    quote: "Williams, 59, faces a fourth trial on a murder charge in the May 2, 1981, slaying"
   - says: "On the side of the house, a local guide points out the first two windows. Behind them is the study."
     source: 1
     quote: "On this side of the house, the first two windows - that is the library or study, and that is where the shooting of Danny Hansford took place."
-  - says: "It was about two in the morning, on the second of May, nineteen eighty one. Hansford was twenty one."
+  - says: "It was about two in the morning, on the second of May, nineteen eighty one. Hansford was in his early twenties."
     source: 1
     quote: "Around 2 in the morning on May 2, 1981, 21-year-old Danny Hansford was shot and killed by his employer and occasional lover, Jim Williams."
   - says: "He worked for the man who owned this house, Jim Williams, a wealthy antiques dealer"
@@ -62,9 +66,15 @@ claims:
   - says: "He said it was self defence, that Hansford had tried to shoot him first. He was charged with murder."
     source: 1
     quote: "Williams claimed self-defense, saying Hansford had tried to shoot him first. Nevertheless, Williams was charged with murder."
-  - says: "Four trials. In nineteen eighty nine, a jury found him not guilty."
+  - says: "In nineteen eighty nine, a fourth jury found him not guilty."
     source: 1
     quote: "What ensued were four trials, ultimately ending with a jury finding him not guilty in 1989."
+  - says: "Twice a jury convicted him of murder, and twice the Georgia Supreme Court threw the verdict out. A third jury could not agree."
+    source: 3
+    quote: "Two of the first three trials ended in murder convictions, but both were thrown out on appeal to the state Supreme Court. In June, a jury was unable to break an 11-1 deadlock for conviction and a mis trial was declared."
+  - says: "on the second of May, nineteen eighty one"
+    source: 3
+    quote: "Williams, 59, faces a fourth trial on a murder charge in the May 2, 1981, slaying of Danny Lewis Hans ford, 22, who was shot three times and killed at Williams' home."
   - says: "Williams was acquitted"
     source: 2
     quote: "home to the late art dealer Jim Williams, who was tried but never convicted in a fatal shooting there."
@@ -84,4 +94,9 @@ sources:
     publisher: "NBC News"
     url: https://www.nbcnews.com/id/wbna33492780
     retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Retrial to use same lawyers (AP, The Red and Black, 3 November 1987, page 1)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/gua1179162/1987-11-03/ed-1/seq-1/
+    retrievedAt: "2026-11-11"
     rights: fair-use-facts
