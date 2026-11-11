@@ -28,6 +28,7 @@ import { ClusterDot, FAN_GAP, GROUP_PX } from "./PinCluster";
 import { TILE_ATTRIBUTION, TILE_URL, VECTOR_ATTRIBUTION, VECTOR_TILES_URL, planTiles, toWorld, type TilePlan } from "./tiles";
 import type { GeoJSONSource, Map as MapLibre } from "maplibre-gl";
 import { MapCanvas } from "./MapCanvas";
+import type { Bounds } from "./country-view";
 import { MODE_ICON } from "./travel";
 import { useSmoothedPoint } from "./use-smoothed";
 import { NEAR_KM } from "./toast-rules";
@@ -160,6 +161,13 @@ interface Props {
    * place (`place-search.ts`). The map centres there; where they stand is unchanged.
    */
   readonly lookAt?: LatLng | null;
+  /**
+   * A box to fit, looking at nowhere in particular: the country view, opened by "Show me
+   * where they are" with no location (`country-view.ts`). Framed once when it is set; after
+   * that the listener's own drags and taps on a town decide where the map looks.
+   * `overview` and `lookAt` come first.
+   */
+  readonly countryBox?: Bounds | null;
   /**
    * The walk to the echo you asked to be taken to, along the streets, from where you are
    * (`directions.ts`). Drawn over everything but the pins; framed once when it first
@@ -394,6 +402,7 @@ export function RouteMap({
   locateTap = 0,
   onInView,
   lookAt = null,
+  countryBox = null,
   directions = null,
   directionsStraight = false,
   aimId = null,
@@ -1313,12 +1322,30 @@ export function RouteMap({
   }, [barH, reservedBottom, navH, box.h]);
   const framed = useRef(false);
   const hasFix = at !== null;
+  const frameKey = countryBox ? `${countryBox.south},${countryBox.west},${countryBox.north},${countryBox.east}` : null;
+  /** The country box last fitted, so a fix arriving later does not throw the listener back. */
+  const framedBox = useRef<string | null>(null);
   useEffect(() => {
     if (!gl) return;
     const inset = insetFor(barH, reservedBottom, navH);
     const duration = framed.current ? 600 : 0;
     framed.current = true;
-    if (overview || (!hasFix && !lookAt)) {
+    if (!frameKey) framedBox.current = null;
+    if (countryBox && !overview && !lookAt) {
+      // Once per box: after that, a drag or a tap on a town is where the listener is looking.
+      if (framedBox.current === frameKey) return;
+      framedBox.current = frameKey;
+      gl.fitBounds(
+        [
+          [countryBox.west, countryBox.south],
+          [countryBox.east, countryBox.north],
+        ],
+        // Tight at the sides: coast to coast on a phone is about as far out as the map goes
+        // (`MapCanvas`, minZoom 2), and wider padding than this cannot be met there, so
+        // San Francisco went off the left edge. The button column is below the country.
+        { padding: { top: inset.top + 30, bottom: inset.bottom + 30, left: inset.side + 4, right: inset.side + 10 }, duration },
+      );
+    } else if (overview || (!hasFix && !lookAt)) {
       // You as well: "the whole route" with the walker cut off at the edge is not the whole of it.
       const points = [...(geometry?.points ?? []), ...library.map((e) => e.point.at), ...(at && !lookAt ? [at] : [])];
       if (points.length === 0) return;
@@ -1362,7 +1389,7 @@ export function RouteMap({
     // Following is the next effect's job.
     // Only a change of framing reframes; a new fix or a new library does not.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [gl, overview, lookAt?.lat, lookAt?.lng, hasFix, geometry]);
+  }, [gl, overview, lookAt?.lat, lookAt?.lng, hasFix, geometry, frameKey]);
 
   /*
    * SHOW SOMETHING. Whenever following starts (the first fix, or "Back to where I am"),
