@@ -27,14 +27,30 @@ interface Narrator {
   readonly toggle: () => void;
   readonly skip: (seconds: number) => void;
   readonly stop: () => void;
+  /**
+   * The map's Sound control: everything the app says, on or off. It mutes rather than
+   * pauses, so an echo carries on in silence and is where you left it in time. On the web
+   * the same control mutes the sonar; the phone has no sonar yet, so it covers narration,
+   * and will cover the sonar too when it comes.
+   */
+  readonly soundOn: boolean;
+  readonly setSoundOn: (on: boolean) => void;
 }
 
 const NarratorContext = createContext<Narrator | null>(null);
+
+/** The player is a native object the app owns; muting it is a command, not React state. */
+function setMuted(player: AudioPlayer, muted: boolean) {
+  player.muted = muted;
+}
 
 export function NarratorProvider({ children }: { children: ReactNode }) {
   const player = useAudioPlayer(null, { updateInterval: 500 });
   const status = useAudioPlayerStatus(player);
   const [current, setCurrent] = useState<Echo | null>(null);
+  const [soundOn, setSoundOn] = useState(true);
+
+  useEffect(() => setMuted(player, !soundOn), [player, soundOn, current]);
 
   useEffect(() => {
     setAudioModeAsync({
@@ -87,8 +103,8 @@ export function NarratorProvider({ children }: { children: ReactNode }) {
   }, [player]);
 
   const value = useMemo(
-    () => ({ player, status, current, play, toggle, skip, stop }),
-    [player, status, current, play, toggle, skip, stop],
+    () => ({ player, status, current, play, toggle, skip, stop, soundOn, setSoundOn }),
+    [player, status, current, play, toggle, skip, stop, soundOn],
   );
   return <NarratorContext.Provider value={value}>{children}</NarratorContext.Provider>;
 }

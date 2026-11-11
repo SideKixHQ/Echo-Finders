@@ -78,3 +78,34 @@ export function CloseIcon({ color, size = 16 }: IconProps) {
     </Svg>
   );
 }
+
+/**
+ * The map's two controls, as the web app's `Rail.tsx` draws them. The locate arrow is
+ * filled while the map follows you and an outline once you have moved it away.
+ */
+export function LocateIcon({ color, size = 24, filled = false }: IconProps & { filled?: boolean }) {
+  return (
+    <Svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill={filled ? color : "none"}
+      stroke={color}
+      strokeWidth={1.8}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <Path d="M20.5 3.5 3.5 10.6l7.2 2.7 2.7 7.2z" />
+    </Svg>
+  );
+}
+
+/** The speaker: sounding, or crossed when the sound is off. */
+export function SoundIcon({ color, size = 24, on }: IconProps & { on: boolean }) {
+  return (
+    <Svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+      <Path d="M4 10v4h4l5 4V6L8 10z" />
+      <Path d={on ? "M16 9a4 4 0 0 1 0 6" : "M16.5 9.5l5 5M21.5 9.5l-5 5"} />
+    </Svg>
+  );
+}

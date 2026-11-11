@@ -2,8 +2,8 @@
  * The echoes nearest to where you stand, by the engine's own distance.
  *
  * Plain nearest first, not the engine's blended `findEchoesNearby` score: that one looks
- * only a walk's distance out, and the Map tab here stands in for the map, which shows
- * every echo however far it is. `distanceKm` is the engine's great circle distance, and
+ * only a walk's distance out, and the map shows every echo however far it is. The map
+ * uses it to tell VoiceOver which echo is nearest (`EchoMap.tsx`). `distanceKm` is the engine's great circle distance, and
  * "in range" is the echo's own trigger radius, the same test a walk uses.
  */
 import { distanceKm, type Echo, type LatLng } from "@echofinders/core";

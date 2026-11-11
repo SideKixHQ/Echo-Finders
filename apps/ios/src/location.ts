@@ -6,7 +6,7 @@
  * and never at launch. Phase 1 has no hands free walk, so it never asks for Always.
  *
  * It asks when the Map tab first needs a position, not at launch, and a refusal leaves the
- * list working: it shows the library without distances.
+ * map working: every echo is still on it, with a note offering to turn location on.
  */
 import { useCallback, useEffect, useState } from "react";
 import * as Location from "expo-location";
