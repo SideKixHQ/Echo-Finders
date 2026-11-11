@@ -16,7 +16,7 @@ import type { ReactNode } from "react";
 
 export const CATEGORY_LABEL: Record<EchoCategory, string> = {
   history: "History",
-  "true-crime": "True Crime",
+  "true-crime": "True crime",
   // "Culture" said nothing: it is the word you reach for when you have not decided what
   // the category is. This one is music, art and performance, so it says that. The design's
   // note stays with it.
@@ -59,7 +59,7 @@ export interface ChipGroup {
 
 export const CHIP_GROUPS: readonly ChipGroup[] = [
   { id: "history", label: "History", face: "history", categories: ["history"] },
-  { id: "true-crime", label: "True Crime", face: "true-crime", categories: ["true-crime"] },
+  { id: "true-crime", label: "True crime", face: "true-crime", categories: ["true-crime"] },
   { id: "ghosts", label: "Ghosts", face: "legend", categories: ["legend"] },
   { id: "kids", label: "Kids", face: "kids", categories: ["kids"] },
   { id: "inspo", label: "Inspo", face: "inspo", categories: ["inspo"] },

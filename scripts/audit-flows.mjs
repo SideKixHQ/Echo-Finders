@@ -716,9 +716,14 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   check('Saved: both are listed, the near one and the far one', !!near && !!far
     && await visible(saved.locator('.entry-wish', { hasText: near })) && await visible(saved.locator('.entry-wish', { hasText: far })), `${near} / ${far}`);
   check('Saved: no Nothing synced yet over a list that has something in it', (await p.getByText('Nothing synced yet').count()) === 0);
-  check('Saved: each has Go and Unsave', (await saved.locator('.entry-wish').evaluateAll((rs) => rs.every((r) => r.querySelector('.saved-go') && r.querySelector('.saved-unsave')))));
+  // Go on the right, as in Search; Unsave is on the card (board MyEchoes, 2026-11-11).
+  check('Saved: each has Go, and Unsave stays on the card', (await saved.locator('.entry-wish').evaluateAll((rs) => rs.every((r) => {
+    const go = r.querySelector('.saved-go');
+    const text = r.querySelector('.entry-text');
+    return go && text && go.getBoundingClientRect().left >= text.getBoundingClientRect().right - 1 && !/Unsave/.test(r.textContent);
+  }))));
   const smallSaved = await big(saved.locator('button'));
-  check('Saved: Go and Unsave are 44px targets', smallSaved.length === 0, smallSaved.join(', '));
+  check('Saved: Go is a 44px target', smallSaved.length === 0, smallSaved.join(', '));
   // Saved keeps: a reload does not lose it (`saved-store.ts`).
   await p.reload({ waitUntil: 'domcontentloaded' });
   await p.waitForTimeout(2500);
@@ -727,13 +732,120 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.waitForTimeout(600);
   check('Saved: a reload keeps what was saved', await visible(saved.getByRole('heading', { name: /^Saved · 2$/ }))
     && await visible(saved.locator('.entry-wish', { hasText: far })));
-  await saved.getByRole('button', { name: `Unsave ${far}` }).click().catch(() => {});
-  await p.waitForTimeout(300);
-  check('Saved: Unsave takes it off', (await saved.locator('.entry-wish').count()) === 1 && !(await visible(saved.locator('.entry-wish', { hasText: far }))));
   await saved.getByRole('button', { name: `Go to ${near}` }).click().catch(() => {});
   await p.waitForTimeout(1200);
   check('Saved: Go opens its card on the map', /Map/i.test(await currentTab(p))
     && await visible(p.locator('.pop')) && (await p.locator('.pop h3').innerText().catch(() => '')).includes(near), near);
+  // Unsave, on the card: pressing Saved again takes it off My echoes.
+  await p.locator('.pop').getByRole('button', { name: 'Saved', exact: true }).first().click().catch(() => {});
+  await p.waitForTimeout(300);
+  await p.locator('.pop-close').click().catch(() => {});
+  await nav.getByRole('button', { name: /My echoes/i }).click().catch(() => {});
+  await p.waitForTimeout(600);
+  check('Saved: Unsave on the card takes it off', (await saved.locator('.entry-wish').count()) === 1
+    && !(await visible(saved.locator('.entry-wish', { hasText: near }))) && await visible(saved.locator('.entry-wish', { hasText: far })));
+  await ctx.close();
+}
+
+// ── My echoes rows, and Rare finds ──────────────────────────────────────────────
+// A collection seeded as the screenshots seed it: a rare walk, true crime, a legend, one
+// heard. Each row says kind, length and a US date ("Nov 3", "Today"), a short place rather
+// than a street address, "Legend" or "Disputed" where it is not fact and never "verified"
+// (James, 2026-11-11), and "Rare find" on rare and singular echoes, true crime included.
+{
+  const { ctx, p } = await freshApp();
+  const ago = (d) => new Date(Date.now() - d * 86400000).toISOString();
+  const seed = [
+    ['the-prison-corridor', 0, false],
+    ['dakota-three-minutes', 1, false],
+    ['wilmington-meg-at-the-old-waterfront', 8, false],
+    ['wilmington-the-government-taken-by-force', 8, false],
+    ['bald-head-the-swim-to-southport', 6, false],
+    ['wilmington-the-first-curtain', 8, true],
+  ].map(([echoId, d, heard]) => ({ echoId, capturedAt: ago(d), mode: 'walking', ...(heard ? { heardAt: ago(d) } : {}) }));
+  await p.evaluate(async (recs) => {
+    localStorage.setItem('echo-finders:heard', JSON.stringify(recs.filter((r) => r.heardAt).map((r) => r.echoId)));
+    await new Promise((res, rej) => {
+      const o = indexedDB.open('echo-finders', 1);
+      o.onupgradeneeded = () => { if (!o.result.objectStoreNames.contains('collection')) o.result.createObjectStore('collection', { keyPath: 'key' }); };
+      o.onsuccess = () => { const tx = o.result.transaction('collection', 'readwrite'); tx.objectStore('collection').put({ key: 'seed-elsewhere', records: recs }); tx.oncomplete = () => { o.result.close(); res(); }; tx.onerror = () => rej(tx.error); };
+      o.onerror = () => rej(o.error);
+    });
+  }, seed);
+  await p.reload({ waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(2000);
+  for (let i = 0; i < 4; i++) await p.locator('.toast-close').first().click({ timeout: 400 }).catch(() => {});
+  await p.locator('.nav').getByRole('button', { name: /My echoes/i }).click();
+  await p.waitForTimeout(700);
+  const rows = p.locator('.entry');
+  check('Rows: the seeded collection is listed', (await rows.count()) === seed.length, String(await rows.count()));
+  const texts = await rows.allInnerTexts();
+  check('Rows: no "verified" on a row', texts.every((t) => !/verified/i.test(t)) && !(await p.locator('.entry .truth-true-story').count()));
+  check('Rows: a legend says Legend', texts.some((t) => /Old Waterfront/.test(t) && /\bLegend\b/.test(t)));
+  const metas = await p.locator('.entry .entry-meta').allInnerTexts();
+  check('Rows: US dates, Today and Yesterday where true',
+    metas.some((m) => /\bToday\b/.test(m)) && metas.some((m) => /\bYesterday\b/.test(m))
+    && metas.some((m) => /\b[A-Z][a-z]{2} \d{1,2}\b/.test(m)) && metas.every((m) => !/\b\d{1,2} [A-Z][a-z]{2}\b/.test(m)), metas.join(' | '));
+  check('Rows: the length is in words on the line, not on the picture', metas.every((m) => /\b\d+ min\b/.test(m)) && !(await p.locator('.entry i').count()));
+  const places = await p.locator('.entry .entry-text p').allInnerTexts();
+  check('Rows: a short place, never the street address',
+    places.includes('City Hall and Thalian Hall, Wilmington') && places.every((pl) => !/\d+ \w+ Street|North Carolina|Pennsylvania/.test(pl)), places.join(' | '));
+  check('Rows: a 60px picture with the echo character', await rows.first().locator('.me-thumb').evaluate((t) => {
+    const r = t.getBoundingClientRect();
+    return Math.round(r.width) === 60 && Math.round(r.height) === 60 && !!t.querySelector('.echo-char-body, svg');
+  }));
+  const rareRows = texts.filter((t) => /Rare find/.test(t)).length;
+  check('Rows: true crime earns Rare find like any other echo', texts.some((t) => /True crime/.test(t) && /Rare find/.test(t)));
+  const tile = p.locator('.me-tile-rare');
+  const n = Number((await tile.locator('.me-tile-n').innerText()).trim());
+  check('Rare finds: the tile counts rare and singular', n >= 2 && n === rareRows, `${n} vs ${rareRows} rows`);
+  check('Rare finds: sentence case, not spaced capitals', await tile.evaluate((t) => {
+    const label = t.querySelector('span');
+    return label.innerText.trim() === 'Rare finds' && getComputedStyle(label).textTransform === 'none';
+  }));
+  await tile.click();
+  await p.waitForTimeout(400);
+  const callout = p.locator('#me-rare');
+  check('Rare finds: a tap explains them', await visible(callout.getByText('Rare finds are hard to reach'))
+    && await visible(callout.getByText('Far off the usual walk, open only some hours, or inside somewhere.')));
+  await callout.getByRole('button', { name: 'Got it' }).click();
+  await p.waitForTimeout(300);
+  check('Rare finds: Got it closes it', !(await callout.count()));
+  await tile.click();
+  await p.waitForTimeout(300);
+  await callout.getByRole('button', { name: `Show my ${n}` }).click().catch(() => {});
+  await p.waitForTimeout(400);
+  const shownRare = await rows.allInnerTexts();
+  check(`Rare finds: Show my N lists just those`, shownRare.length === n && shownRare.every((t) => /Rare find/.test(t)), String(shownRare.length));
+  await tile.click();
+  await p.waitForTimeout(300);
+  await callout.getByRole('button', { name: 'Show all' }).click().catch(() => {});
+  await p.waitForTimeout(300);
+  check('Rare finds: Show all brings the rest back', (await rows.count()) === seed.length);
+  await tile.click();
+  await p.waitForTimeout(300);
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(300);
+  check('Rare finds: Escape closes the callout', !(await callout.count()));
+  // Light mode: nothing on a row is drawn for the dark scheme only.
+  await p.evaluate(() => { document.documentElement.dataset.theme = 'light'; });
+  await p.waitForTimeout(200);
+  const faint = await p.locator('.entry').evaluateAll((rs) => {
+    const lum = (c) => {
+      const m = c.match(/[\d.]+/g).map(Number);
+      const f = (v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; };
+      return 0.2126 * f(m[0]) + 0.7152 * f(m[1]) + 0.0722 * f(m[2]);
+    };
+    const bg = lum(getComputedStyle(document.querySelector('.screen-body')).backgroundColor);
+    const out = [];
+    for (const r of rs) for (const el of r.querySelectorAll('h4, p, .me-part, .me-kind, .me-rare, .truth')) {
+      const l = lum(getComputedStyle(el).color);
+      const ratio = (Math.max(l, bg) + 0.05) / (Math.min(l, bg) + 0.05);
+      if (ratio < 4.5) out.push(`${el.innerText.trim().slice(0, 20)} ${ratio.toFixed(2)}`);
+    }
+    return out;
+  });
+  check('Rows: every word on a row reads in light mode', faint.length === 0, faint.join(', '));
   await ctx.close();
 }
 
@@ -969,40 +1081,78 @@ async function arrive() {
     check('Player: back returns to the map', !(await visible(p.locator('.hear'))) && await visible(p.locator('.mapbar')));
 
     // My Echoes now holds the fort (History), so its filter has something to filter.
+    // Two pills, as on the map (board MyEchoesFilter, 2026-11-11), and every tap applies at
+    // once: there is no "Show N echoes" button (James's call), so the count is on the pill.
     await p.locator('.nav').getByRole('button', { name: /My echoes/i }).click();
     await p.waitForTimeout(500);
-    const filter = p.getByRole('button', { name: /^Filter my echoes/ });
     const fort = p.locator('.entry', { hasText: 'Eight million' });
-    check('Filter: a filter button on My Echoes', await visible(filter));
-    await filter.click();
+    const kindPill = p.locator('.me-pills .kind-tap').first();
+    const placePill = p.locator('.me-place-tap');
+    check('Filter: two pills, All echoes and Everywhere', await visible(kindPill) && await visible(placePill)
+      && (await kindPill.innerText()).includes('All echoes') && (await placePill.innerText()).includes('Everywhere'));
+    check('Filter: no sliders button, no Show N echoes button',
+      !(await p.getByRole('button', { name: /^Filter my echoes/ }).count()) && !(await p.getByRole('button', { name: /^Show \d+ echoes?$/ }).count()));
+    await kindPill.click();
     await p.waitForTimeout(400);
-    // All, and nine kinds, Inspo included (`categories.tsx`, CHIP_GROUPS).
-    check('Filter: shows every kind at once', (await p.locator('#coll-filter .chip').count()) === 10);
-    await p.locator('#coll-filter').getByRole('button', { name: /Ghosts/ }).click();
+    // All, and nine kinds, Inspo included (`categories.tsx`, CHIP_GROUPS): the map's own box.
+    check("Filter: the map's own kind box, every kind at once", (await p.locator('#kind-box .chip').count()) === 10);
+    const caseOf = await p.locator('#kind-box').evaluate((box) => ({
+      all: box.querySelector('.chip-all').innerText.trim(),
+      transform: getComputedStyle(box.querySelector('.chip-all')).textTransform,
+      divider: getComputedStyle(box.querySelector('.chip-all')).borderRightWidth,
+      crime: [...box.querySelectorAll('.chip')].some((c) => c.innerText.trim() === 'True crime'),
+    }));
+    check('Filter: "All" and "True crime" in sentence case, no divider by All',
+      caseOf.all === 'All' && caseOf.transform === 'none' && caseOf.crime && caseOf.divider === '0px', JSON.stringify(caseOf));
+    await p.locator('#kind-box').getByRole('button', { name: /Ghosts/ }).click();
     await p.waitForTimeout(400);
-    check('Filter: a kind you have none of hides the rest and says so',
-      !(await visible(fort)) && await visible(p.locator('.coll-nomatch')));
-    check('Filter: the button shows a filter is on', /filtered/.test(await filter.getAttribute('aria-label') ?? ''));
+    check('Filter: a tap applies at once, the box still open', await visible(p.locator('#kind-box'))
+      && !(await fort.count()) && (await p.locator('.coll-nomatch').count()) === 1);
+    check('Filter: the pill says how many it shows', /Ghosts\s*·\s*0/.test(await kindPill.innerText()), await kindPill.innerText());
+    await p.keyboard.press('Escape');
+    await p.waitForTimeout(300);
+    check('Filter: Escape closes the box', !(await p.locator('#kind-box').count()));
     await p.getByRole('button', { name: 'Show all' }).click();
     await p.waitForTimeout(400);
     check('Filter: Show all brings everything back', await visible(fort));
-    await p.locator('#coll-filter').getByRole('button', { name: /History/ }).click();
-    await p.waitForTimeout(400);
-    check("Filter: the fort's own kind shows it", await visible(fort));
+    await kindPill.click();
+    await p.waitForTimeout(300);
+    await p.locator('#kind-box').getByRole('button', { name: /History/ }).click();
+    await p.waitForTimeout(300);
+    check("Filter: the fort's own kind shows it", (await fort.count()) === 1 && /History\s*·\s*1/.test(await kindPill.innerText()));
+    await p.mouse.click(195, 520);
+    await p.waitForTimeout(500);
+    check('Filter: a tap outside closes the box and plays nothing', !(await p.locator('#kind-box').count()) && !(await visible(p.locator('.hear'))));
+    await p.locator('.nav').getByRole('button', { name: /My echoes/i }).click().catch(() => {});
+    await p.waitForTimeout(300);
 
-    // Place and Travel: only what the collection holds, and each narrows to the fort.
+    // Everywhere: the place and travel box. Only what the collection holds, each narrows to the fort.
+    await placePill.click();
+    await p.waitForTimeout(300);
     const placeGroup = p.getByRole('group', { name: 'Place' });
-    const travelGroup = p.getByRole('group', { name: 'Travel' });
+    const travelGroup = p.getByRole('group', { name: 'How you got there' });
     check('Filter: Place offers New York', await visible(placeGroup.getByRole('button', { name: 'New York' })));
     await placeGroup.getByRole('button', { name: 'New York' }).click();
     await p.waitForTimeout(300);
-    check('Filter: New York shows the fort', await visible(fort));
-    check('Filter: Travel offers Walking', await visible(travelGroup.getByRole('button', { name: 'Walking' })));
-    check('Filter: Travel offers no way you have not travelled',
-      (await travelGroup.getByRole('button', { name: 'Flying' }).count()) === 0);
-    await travelGroup.getByRole('button', { name: 'Walking' }).click();
+    check('Filter: New York shows the fort, at once', (await fort.count()) === 1 && await visible(p.locator('#place-box')));
+    check('Filter: the place pill and the section head both count it',
+      /New York\s*·\s*1/.test(await placePill.innerText())
+      && (await p.locator('.group-head').allInnerTexts()).some((t) => /·\s*1$/.test(t.trim())), await placePill.innerText());
+    check('Filter: How you got there offers Walk', await visible(travelGroup.getByRole('button', { name: 'Walk' })));
+    check('Filter: How you got there offers no way you have not travelled',
+      (await travelGroup.getByRole('button', { name: 'Fly' }).count()) === 0);
+    await travelGroup.getByRole('button', { name: 'Walk' }).click();
     await p.waitForTimeout(300);
-    check('Filter: Walking shows the fort', await visible(fort));
+    check('Filter: Walk shows the fort', (await fort.count()) === 1);
+    await p.keyboard.press('Escape');
+    await p.waitForTimeout(300);
+    check('Filter: Escape closes the place box', !(await p.locator('#place-box').count()) && await visible(fort));
+    await placePill.click();
+    await p.waitForTimeout(300);
+    await placeGroup.getByRole('button', { name: 'Everywhere' }).click();
+    await travelGroup.getByRole('button', { name: 'Any' }).click();
+    await p.keyboard.press('Escape');
+    await p.waitForTimeout(300);
 
     // Another journey: what was found on the first stays in My Echoes.
     await p.locator('.nav').getByRole('button', { name: /Map/ }).click();

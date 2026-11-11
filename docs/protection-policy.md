@@ -240,6 +240,11 @@ reputational damage.
   frequently not ours to point tourists at, and "it is in the public record" is not consent.
 - **Disaster and atrocity sites.** No capture mechanic, no rarity, no collection prompts.
   Where it would be wrong to gamify, the mechanics are switched off, not merely muted.
+- **True crime is not exempt from rarity.** *(James, 2026-11-11.)* True crime is a main
+  category and earns rarity like any other echo: a Rare find when its place earns it. The
+  care lives in its sourcing rules (Risk 2, `14-true-crime.md`) and the short content
+  warning read before it begins (`trueCrimeReview.contentWarning`), defined in full there,
+  not in switching the mechanics off. Every other true-crime rule stands.
 - **Living communities.** A neighbourhood's difficult history is told by people who live
   there wherever possible — this is what `partner` provenance is for.
 

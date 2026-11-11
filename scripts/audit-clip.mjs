@@ -390,6 +390,73 @@ for (const [at, screen] of [
   await ctx.close();
 }
 
+// My echoes, filled: the list, both filter boxes open with a pick made, the Rare finds
+// callout, and the saved and heard rows (boards MyEchoes, MyEchoesFilter, MyEchoesRare,
+// 2026-11-11). Seeded as the screenshots are, with a rare find, true crime and a legend.
+{
+  const { ctx, p, look } = await device({ latitude: 34.2357, longitude: -77.9452 }, { onboarded: true });
+  await p.goto(`${BASE}/`, { waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(1500);
+  const ago = (d) => new Date(Date.now() - d * 86400000).toISOString();
+  const seed = ['the-prison-corridor', 'dakota-three-minutes', 'wilmington-the-government-taken-by-force',
+    'wilmington-meg-at-the-old-waterfront', 'bald-head-the-swim-to-southport', 'carolina-beach-one-of-the-last-boardwalks',
+    'wilmington-the-first-curtain', 'boston-granary-five-in-one-grave']
+    .map((echoId, i) => ({ echoId, capturedAt: ago(i), mode: i % 3 ? 'walking' : 'driving', ...(i > 5 ? { heardAt: ago(i) } : {}) }));
+  await p.evaluate(async (recs) => {
+    localStorage.setItem('echo-finders:heard', JSON.stringify(recs.filter((r) => r.heardAt).map((r) => r.echoId)));
+    localStorage.setItem('echo-finders:saved', JSON.stringify(['charleston-built-to-fall-inward', 'charleston-five-times-across']));
+    await new Promise((res, rej) => {
+      const o = indexedDB.open('echo-finders', 1);
+      o.onupgradeneeded = () => { if (!o.result.objectStoreNames.contains('collection')) o.result.createObjectStore('collection', { keyPath: 'key' }); };
+      o.onsuccess = () => { const tx = o.result.transaction('collection', 'readwrite'); tx.objectStore('collection').put({ key: 'seed-elsewhere', records: recs }); tx.oncomplete = () => { o.result.close(); res(); }; tx.onerror = () => rej(tx.error); };
+      o.onerror = () => rej(o.error);
+    });
+  }, seed);
+  await p.reload({ waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(2000);
+  for (let i = 0; i < 4; i++) await p.locator('.toast-close').first().click({ timeout: 400 }).catch(() => {});
+  await tap(p.locator('.nav button').nth(1));
+  await p.waitForTimeout(700);
+  if (!(await p.locator('.entry').count())) unreached.push('my echoes, filled');
+  await look('my echoes, filled');
+  await tap(p.locator('.me-pills .kind-tap'));
+  await p.waitForTimeout(500);
+  await tap(p.locator('#kind-box .chip', { hasText: 'True crime' }));
+  await p.waitForTimeout(300);
+  if (!(await p.locator('#kind-box').count())) unreached.push('my echoes, kind box open');
+  await look('my echoes, kind box open');
+  await tap(p.locator('#kind-box .chip-all'));
+  await p.keyboard.press('Escape');
+  await p.locator('.screen-body').evaluate((b) => { b.scrollTop = 0; });
+  await tap(p.locator('.me-place-tap'));
+  await p.waitForTimeout(500);
+  await look('my echoes, place box open');
+  await tap(p.locator('.me-place', { hasText: 'Cape Fear Coast' }));
+  await tap(p.locator('.me-way', { hasText: 'Walk' }));
+  await p.waitForTimeout(300);
+  if (!(await p.locator('#place-box').count())) unreached.push('my echoes, place box, a pick made');
+  await look('my echoes, place box, a pick made');
+  await p.keyboard.press('Escape');
+  await p.locator('.screen-body').evaluate((b) => { b.scrollTop = 0; });
+  await look('my echoes, filtered');
+  await tap(p.locator('.me-place-tap'));
+  await tap(p.locator('.me-place', { hasText: 'Everywhere' }));
+  await tap(p.locator('.me-way', { hasText: 'Any' }));
+  await p.keyboard.press('Escape');
+  await p.locator('.screen-body').evaluate((b) => { b.scrollTop = 0; });
+  await tap(p.locator('.me-tile-rare'));
+  await p.waitForTimeout(400);
+  if (!(await p.locator('#me-rare').count())) unreached.push('my echoes, rare finds');
+  await look('my echoes, rare finds');
+  await p.keyboard.press('Escape');
+  for (const g of ['saved', 'heard']) {
+    await p.locator(`.group-${g}`).first().evaluate((el) => el.scrollIntoView({ block: 'start' })).catch(() => unreached.push(`my echoes, ${g}`));
+    await p.waitForTimeout(300);
+    await look(`my echoes, ${g}`);
+  }
+  await ctx.close();
+}
+
 // Walking to an echo: the turn card and the echo bar as the directions (board DirC), with a
 // title long enough to wrap, and a planned walk's stop. The directions sheet before it was a
 // fixed 196px and on James's phone its title was cut through by the line under it

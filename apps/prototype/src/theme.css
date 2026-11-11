@@ -536,46 +536,7 @@ body {
    glowed in cyan paints in orange — a flat fill reads as a brown slab, not as warmth. */
 
 
-/* ── collection entry ────────────────────────────────────── */
-/* The design's saved row (`.srow` / `.sthumb` / `.sg`): a 76x52 plate in the category's
-   own colour, the title, and the length on the plate. Declared once — these rules used to
-   exist twice, eight hundred lines apart, and the later copy's `stroke: var(--ember)` is
-   why every plate had an orange glyph whatever the category was. */
-.entry { display: flex; gap: 11px; padding: 9px 0; }
-.entry-glyph {
-  position: relative; width: 76px; height: 52px; flex: none; border-radius: 9px;
-  background: color-mix(in srgb, currentColor 16%, transparent);
-  border: 1px solid color-mix(in srgb, currentColor 34%, transparent);
-  display: grid; place-items: center; overflow: hidden;
-}
-.entry-text { flex: 1; min-width: 0; }
-/* The whole entry is the target: one tap, possibly while walking. */
-.entry-hit {
-  display: flex; gap: 11px; align-items: center; width: 100%;
-  background: none; border: 0; padding: 0; cursor: pointer;
-  font: inherit; color: inherit; text-align: left;
-}
-.entry-playing .entry-glyph { background: var(--ember); border-color: var(--ember); color: var(--space); }
-.entry-playing .entry-glyph svg { stroke: var(--space); fill: var(--space); }
-.entry-glyph svg {
-  width: 19px; height: 19px; fill: none; stroke: currentColor;
-  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
-}
-/*
-   `.entry-glyph svg` above sets `fill: none` and is one point more specific than this was,
-   so the fill never applied — and this rule kills the stroke. Fill none plus stroke none is
-   an invisible triangle, which is what every unheard row in the collection has been
-   showing: a plate with nothing on it. Rendering the plate behind it is what made the
-   absence obvious, because an empty grey square reads as a placeholder and an empty
-   photograph reads as a mistake.
-*/
-.entry-glyph .entry-glyph-play { fill: currentColor; stroke: none; }
-/* The length, on the plate, as the design puts it. */
-.entry-glyph i {
-  position: absolute; right: 3px; bottom: 3px; padding: 1px 4px; border-radius: 4px;
-  background: rgba(0, 0, 0, 0.72); font-style: normal; color: var(--cool);
-  font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
-}
+/* ── collection entry: see "My echoes" at the end of this file ── */
 .entry-now { color: var(--ember); }
 
 /* ── category colour carriers ────────────────────────────── */
@@ -840,12 +801,10 @@ body {
   min-height: 40px; padding: 0 12px;
   border-radius: 11px; font: inherit; font-size: var(--fs-label); background: none; border: 0; white-space: nowrap;
 }
-.chip-all {
-  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.13em;
-  text-transform: uppercase; color: var(--cool);
-  border-right: 1px solid var(--line); border-radius: 9px 0 0 9px;
-  margin-right: 3px; padding-right: 11px;
-}
+/* "All", in the same words and case as every kind beside it. It was spaced capitals with a
+   rule down its right edge, a divider from the old one-line strip that, once the chips
+   wrapped into a box, stood alone in the middle of a row (2026-11-11). */
+.chip-all { color: var(--cool); }
 .chip-all.on { color: var(--aqua-ink); background: none; }
 .chip-dot {
   width: 7px; height: 7px; border-radius: 50%; flex: none;
@@ -2286,21 +2245,6 @@ body {
   width: 20px; height: 20px; fill: none; stroke: currentColor;
   stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
 }
-/* Saved but never stood on. Quieter than a capture, because it is an intention. */
-.entry-wish .entry-glyph { opacity: 0.75; }
-.entry-wish .entry-text h4 { color: var(--cool); }
-/* A saved row: Go to its card on the map, or Unsave. Under the words, so the title keeps
-   the width of the row on a small phone. */
-.saved-acts { display: flex; gap: 8px; margin-top: 8px; }
-/* "Saved to My Echoes", on the search row just saved: the toast is under the results. */
-.msearch-words .msearch-note { color: var(--ember-core); font-weight: 600; }
-.saved-go, .saved-unsave {
-  min-height: 44px; padding: 0 18px; border-radius: 999px; cursor: pointer;
-  font: inherit; font-size: var(--fs-secondary); font-weight: 600;
-}
-.saved-go { border: 0; color: var(--btn-ink); background: var(--btn); }
-.saved-unsave { color: var(--cool); background: none; border: 1px solid var(--line-2); }
-.saved-go:focus-visible, .saved-unsave:focus-visible { outline: 2px solid var(--aqua); outline-offset: 2px; }
 /* The empty My Echoes' next step: back to the map. */
 .coll-find {
   margin-top: 20px; min-height: 48px; padding: 0 24px; border-radius: 999px; cursor: pointer;
@@ -2851,46 +2795,6 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  */
 .coll-head { display: flex; flex-direction: column; gap: 16px; }
 .coll-title { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-/* The filter button: the old settings button's box, aqua with a dot while filtering. */
-.coll-filter-btn {
-  position: relative;
-  width: 44px; height: 44px; flex: none; border-radius: 12px; cursor: pointer;
-  border: 1px solid var(--line); background: none; color: var(--muted);
-  display: grid; place-items: center;
-}
-.coll-filter-btn svg {
-  width: 20px; height: 20px; fill: none; stroke: currentColor;
-  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
-}
-.coll-filter-btn[aria-expanded="true"], .coll-filter-btn.on { color: var(--aqua); border-color: rgba(var(--rgb-accent), 0.4); }
-.coll-filter-dot {
-  position: absolute; top: 7px; right: 7px; width: 7px; height: 7px; border-radius: 50%;
-  background: var(--aqua);
-}
-/* The chips sit between the title and the list, in the map bar's own panel and layout
-   (`mapbar-chips`), so the arrows sit beside the chips and the cut edge fades. Drawn as
-   a plain `.chips` row, the arrows covered "ALL" and "Ghosts". */
-.coll-filter { margin: 0 0 16px; }
-/* Three labelled groups: Kind, Place, Travel. Labels in the section-head style, 16 above
-   each group's controls and 8 below the label, so the panel reads as one form. */
-.coll-filter-label {
-  margin: 16px 0 8px; font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
-  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
-}
-.coll-filter-label:first-child { margin-top: 0; }
-/* Place and Travel: one pick from a short list, drawn exactly as the Kind row is: one
-   panel (the chips' own), borderless options inside it, the chosen one filled. They wrap
-   rather than scroll, because there are few of them and every one should be visible. */
-.coll-opts {
-  display: flex; flex-wrap: wrap; gap: 3px; padding: 4px; border-radius: 15px;
-  background: rgba(var(--rgb-panel), 0.94); border: 1px solid var(--line);
-}
-.coll-opt {
-  min-height: 40px; padding: 0 12px; border-radius: 11px; cursor: pointer; border: 0;
-  font-family: "Space Grotesk", monospace; font-size: var(--fs-label); letter-spacing: 0.03em;
-  text-transform: uppercase; color: var(--muted); background: none;
-}
-.coll-opt.on { color: var(--aqua); background: rgba(var(--rgb-hair), 0.08); }
 .coll-nomatch { padding-top: 24px; }
 .coll-showall {
   margin-top: 14px; min-height: 44px; padding: 0 20px; border-radius: 12px; cursor: pointer;
@@ -2898,22 +2802,6 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   background: none; border: 1px solid rgba(var(--rgb-accent), 0.4);
 }
 
-.coll-stats { display: flex; gap: 8px; }
-.coll-stat {
-  flex: 1 1 0; min-width: 0; text-align: center; padding: 13px 10px;
-  border-radius: 14px; background: var(--slate); border: 1px solid var(--line);
-}
-.coll-stat-rare { border-color: rgba(255, 158, 18, 0.3); }
-.coll-stat-n {
-  display: block; font-family: "Space Grotesk", monospace;
-  font-size: 21px; font-weight: 500; color: var(--cool);
-}
-.coll-stat-ember { color: var(--ember); }
-.coll-stat-core { color: var(--ember-core); }
-.coll-stat small {
-  font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
-  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
-}
 
 /*
  * THE SYNC MOMENT, as toasts (`Toasts.tsx`, approved 2026-11-10).
@@ -3893,15 +3781,6 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   font-size: var(--fs-label); font-style: normal; letter-spacing: 0.1em; line-height: 1.45;
   text-align: center; color: #fff; background: rgba(0, 0, 0, 0.5);
 }
-/* A collection row carrying its archive plate. The glyph rides over it with a shade under
-   it, exactly as on the map card, so one echo looks like one echo wherever it appears. */
-.entry-plate { position: relative; overflow: hidden; border: 1px solid rgba(255, 158, 18, 0.28); }
-.entry-plate img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.entry-plate svg {
-  position: relative; z-index: 1;
-  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.85)) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.9));
-}
-.entry-plate i { z-index: 1; }
 
 /* The mark inside a filter chip. The row is the key to the map, and the map names a
    category with a glyph, so the key does too: a key in words beside a map in marks is a
@@ -5090,13 +4969,13 @@ body.seat { padding: 0; display: block; }
 .pop-where, .pop-state, .pop-reach, .pop-save,
 .echobar-place, .echobar-facts,
 .rose-hum small, .hear-acts button, .hear-clock span,
-.entry-text p, .setting-text small, .setting-cost,
+.setting-text small, .setting-cost,
 .feature-fallback, .feature-level, .screen-head p, .jmenu-item small,
 .chip, .hear-voice, .hear-speed { font-size: var(--fs-secondary); }
 .pop-kicker, .pop-rarity, .truth,
 .echobar-kicker span, .echobar-kicker em,
-.hear-kicker span, .hear-rarity, .coll-stat small,
-.entry-glyph i, .entry-meta, .group-head, .panel h3 { font-size: var(--fs-label); }
+.hear-kicker span, .hear-rarity,
+.panel h3 { font-size: var(--fs-label); }
 /* MapLibre's own stylesheet sets 12px on the map container, and it loads after this one,
    hence the element in the selector. */
 div.maplibregl-map { font-size: var(--fs-label); }
@@ -5616,4 +5495,204 @@ div.maplibregl-map { font-size: var(--fs-label); }
   .pop .pop-close { padding: 0; }
   .pop h3 { font-size: 20px; }
   .pop-primary, .pop .pop-acts { margin-top: 8px; }
+}
+
+/* ── My echoes (`Collection.tsx`), as the boards of 2026-11-11 draw it ─────────────
+   MyEchoes, MyEchoesFilter, MyEchoesRare and MyEchoesEmpty. Three tiles in Sora, the
+   map's two pills, rows with the echo character, and heads in small spaced capitals.
+   Last in the file on purpose: the type-scale lists above set every row's meta at 14px. */
+.coll-head { position: relative; z-index: 20; gap: 12px; }
+/* The trip sheet's segmented control (`.jmenu-modes`), not a pill toggle. */
+.coll-views {
+  display: flex; gap: 4px; padding: 4px; border-radius: 16px;
+  background: rgba(var(--rgb-hair), 0.08); border: 0;
+}
+.coll-view {
+  flex: 1; min-height: 44px; border-radius: 12px; cursor: pointer; border: 0; background: none;
+  font: inherit; font-size: var(--fs-body); font-weight: 500; color: var(--white);
+}
+.coll-view.on { color: var(--btn-ink); background: var(--btn-flat); font-weight: 600; }
+.coll-view.on:focus-visible, .me-way.on:focus-visible { outline-offset: 2px; }
+
+/* The tiles: Sora numerals, sentence-case words. Rare finds is the one you can press. */
+.me-tiles { position: relative; display: flex; gap: 8px; }
+.me-tile {
+  flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center;
+  padding: 8px 6px; border-radius: 16px; font: inherit; color: var(--white);
+  background: rgba(var(--rgb-hair), 0.06); border: 1px solid var(--line);
+}
+.me-tile-n { font-size: 24px; font-weight: 700; line-height: 1.2; color: var(--white); }
+.me-tile-ember { color: var(--ember); }
+.me-tile-core { color: var(--ember-core); }
+.me-tile > span {
+  display: flex; align-items: center; gap: 5px; white-space: nowrap;
+  font-size: var(--fs-label); color: var(--muted);
+}
+.me-tile-rare { cursor: pointer; border-color: rgba(255, 158, 18, 0.4); }
+.me-tile-rare[aria-expanded="true"], .me-tile-rare.on {
+  border-color: var(--ember); background: rgba(255, 158, 18, 0.14);
+}
+.me-tile-rare[aria-expanded="true"] { position: relative; z-index: 2; }
+.me-tile-rare:focus-visible { outline-offset: 2px; }
+.me-info {
+  width: 16px; height: 16px; flex: none; fill: none; stroke: var(--ember-core);
+  stroke-width: 2; stroke-linecap: round;
+}
+
+/* The Rare finds callout: under the tiles, pointing at the one pressed, the rest dimmed.
+   The dim is the scrim: a tap on it closes the callout and plays nothing. */
+.me-dim {
+  position: absolute; top: -100vh; left: -100vw; width: 300vw; height: 300vh; z-index: 1;
+  background: rgba(4, 6, 20, 0.55);
+}
+:root[data-theme="light"] .me-dim { background: rgba(11, 15, 43, 0.2); }
+.me-rare-box {
+  position: absolute; top: calc(100% + 12px); left: 0; right: 0; z-index: 3;
+  display: flex; gap: 14px; padding: 16px; border-radius: 20px;
+  background: rgb(var(--rgb-panel)); border: 1px solid var(--ember);
+  box-shadow: 0 16px 44px rgba(var(--rgb-shadow), calc(0.5 * var(--shadow-k)));
+  animation: catpopIn 0.16s var(--ease);
+}
+.me-rare-box::before {
+  content: ""; position: absolute; top: -8px; left: calc(50% - 7px); width: 14px; height: 14px;
+  background: rgb(var(--rgb-panel)); border: 1px solid var(--ember); border-width: 1px 0 0 1px;
+  transform: rotate(45deg);
+}
+@media (prefers-reduced-motion: reduce) { .me-rare-box { animation: none; } }
+.me-rare-echo { width: 48px; height: 48px; flex: none; overflow: visible; }
+.me-rare-words { flex: 1; min-width: 0; }
+.me-rare-words b { display: block; font-size: var(--fs-button); font-weight: 600; line-height: 1.3; color: var(--white); }
+.me-rare-words p { margin: 4px 0 12px; font-size: var(--fs-secondary); line-height: 1.4; color: var(--cool); }
+.me-rare-acts { display: flex; flex-wrap: wrap; gap: 8px; }
+.me-rare-show, .me-rare-ok, .saved-go {
+  flex: none; min-height: 44px; padding: 0 18px; border-radius: 999px; cursor: pointer; border: 0;
+  font: inherit; font-size: var(--fs-secondary); font-weight: 600;
+}
+.me-rare-show, .saved-go { color: var(--btn-ink); background: var(--btn); }
+.me-rare-ok { color: var(--white); background: rgba(var(--rgb-hair), 0.1); }
+.me-rare-show:focus-visible, .saved-go:focus-visible { outline-offset: 2px; }
+
+/* The pills: the map's own, side by side. The place pill takes the rest of the row. */
+/* They wrap rather than cut: with a kind and a place both named, the place pill takes a
+   row of its own instead of ending in "Everyw...". */
+.me-pills { position: relative; display: flex; flex-wrap: wrap; gap: 8px; }
+.me-pills .kind-tap { min-height: 44px; color: var(--white); border-color: var(--line-2); }
+.me-pills .kind-tap.is-filtered { border-color: rgba(var(--rgb-accent), 0.6); }
+.me-place-tap { flex: 1 0 auto; max-width: 100%; }
+.me-place-label { flex: 1; min-width: 0; text-align: left; overflow: hidden; text-overflow: ellipsis; }
+.me-pin {
+  width: 18px; height: 18px; flex: none; fill: none; stroke: var(--aqua);
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+/* How many a filter leaves, beside its name: there is no "Show N echoes" button. */
+.kind-count { flex: none; font-weight: 600; color: var(--aqua); }
+/* Open, the list behind holds still, and the scrim covers it. */
+.screen-body:has(.me-dim, .coll-head .menu-scrim) { overflow: hidden; }
+
+/* Place and How you got there, in the kind box's own panel. */
+.me-box-head {
+  margin: 6px 8px 8px; font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
+  font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted);
+}
+.me-box-head ~ .me-box-head { margin-top: 12px; }
+.me-places { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 2px 2px; }
+.me-place {
+  display: flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 14px; cursor: pointer;
+  border-radius: 999px; border: 1px solid var(--line-2); background: none;
+  font: inherit; font-size: var(--fs-secondary); color: var(--white);
+}
+.me-place.on {
+  color: var(--aqua); font-weight: 600;
+  border-color: rgba(var(--rgb-accent), 0.6); background: rgba(var(--rgb-accent), 0.12);
+}
+.me-place svg {
+  width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor;
+  stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round;
+}
+.me-ways {
+  display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 4px;
+  margin: 0 2px 2px; padding: 4px; border-radius: 14px; background: rgba(var(--rgb-hair), 0.08);
+}
+.me-way {
+  min-height: 44px; border: 0; border-radius: 10px; background: none; cursor: pointer;
+  font: inherit; font-size: var(--fs-secondary); color: var(--white);
+}
+.me-way.on { color: var(--btn-ink); background: var(--btn-flat); font-weight: 600; }
+
+/* Section heads: small spaced capitals, as the boards set them. */
+.group { margin: 14px 0 0; }
+.group-head {
+  margin: 0 0 2px; font-family: "Space Grotesk", monospace; font-size: var(--fs-label);
+  font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted);
+}
+
+/* A row: the character (or the photograph and its face), three lines, and Go when saved. */
+.entry { display: flex; align-items: center; gap: 14px; padding: 8px 0; }
+.entry-hit, .entry-row {
+  flex: 1; min-width: 0; display: flex; align-items: center; gap: 14px;
+}
+.entry-hit {
+  width: 100%; padding: 0; border: 0; background: none; cursor: pointer;
+  font: inherit; color: inherit; text-align: left;
+}
+.entry-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.entry-text h4 { font-size: var(--fs-button); font-weight: 600; line-height: 1.25; color: var(--white); }
+.entry-heard .entry-text h4 { color: var(--cool); }
+.entry-text p { margin: 0; font-size: var(--fs-secondary); line-height: 1.35; color: var(--muted); }
+.entry-meta {
+  display: flex; flex-wrap: wrap; align-items: center; column-gap: 5px;
+  font-size: var(--fs-secondary); line-height: 1.35; color: var(--muted);
+}
+.me-part { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.me-kind { display: inline-flex; align-items: center; gap: 5px; color: var(--cat); }
+.me-kind svg {
+  width: 15px; height: 15px; flex: none; fill: none; stroke: currentColor;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.entry-meta .truth { font: inherit; letter-spacing: 0; text-transform: none; }
+.me-rare { color: var(--ember-core); }
+
+.me-thumb { position: relative; flex: none; display: block; width: 60px; height: 60px; }
+.me-thumb-echo {
+  display: grid; place-items: center; border-radius: 14px;
+  background: rgba(var(--rgb-hair), 0.07); border: 1px solid var(--line);
+}
+.me-thumb-echo svg { display: block; width: 46px; height: 46px; }
+.me-photo {
+  position: absolute; inset: 0; overflow: hidden; border-radius: 14px;
+  background: #3d3226; border: 1px solid rgba(255, 158, 18, 0.28);
+}
+.me-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.me-badge {
+  position: absolute; right: -6px; bottom: -6px; width: 28px; height: 28px;
+  display: grid; place-items: center; border-radius: 50%; background: var(--space);
+}
+.me-badge svg { display: block; width: 26px; height: 26px; }
+.entry-playing .me-thumb-echo, .entry-playing .me-photo { border-color: var(--ember); }
+
+/* Nothing yet: the character, one line, and the way to the map. */
+.screen-body > .me-empty {
+  display: flex; flex-direction: column; align-items: center; padding: 44px 8px 24px;
+}
+.me-empty-echo { width: 112px; height: 112px; margin-bottom: 20px; overflow: visible; }
+.screen-body > .me-empty b { margin-bottom: 8px; font-size: var(--fs-echo); font-weight: 700; color: var(--white); }
+.screen-body > .me-empty span { max-width: 30ch; font-size: var(--fs-body); line-height: 1.5; color: var(--cool); }
+.me-empty .coll-find { align-self: stretch; margin: 28px 0 0; min-height: 56px; border-radius: 18px; }
+/* No routes yet, in the same centred style. */
+.routes-empty { padding: 24px 8px 8px; text-align: center; }
+.routes-empty b { margin-bottom: 6px; font-size: var(--fs-button); font-weight: 600; }
+.routes-empty span { max-width: 30ch; margin: 0 auto; font-size: var(--fs-body); color: var(--cool); }
+
+/* A short phone: the header gives way so the rows below it stay in view. */
+@media (max-height: 700px) {
+  .screen-head.coll-head { padding: 0 0 6px; gap: 8px; }
+  .coll-head h1 { font-size: 28px; min-height: 38px; }
+  .me-tile { padding: 4px 6px; }
+  .me-tile-n { font-size: 21px; line-height: 1.15; }
+  .group { margin-top: 8px; }
+  .coll-head + .group { margin-top: 4px; }
+  .entry { padding: 6px 0; }
+  .entry-text { gap: 2px; }
+  .screen-body > .me-empty { padding-top: 20px; }
+  .me-empty-echo { width: 88px; height: 88px; margin-bottom: 14px; }
 }
