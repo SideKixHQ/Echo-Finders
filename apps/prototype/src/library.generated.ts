@@ -19320,7 +19320,7 @@ export const LIBRARY: readonly Echo[] = [
   },
   {
     "id": "wilmington-a-fountain-in-sleepy-hollow",
-    "title": "An Ordinary Intersection Enters a Supernatural Story",
+    "title": "An Ordinary Corner Turns Supernatural",
     "summary": "At the Kenan Memorial Fountain, Ichabod and Abbie meet the lost boy in Sleepy Hollow's episode John Doe.",
     "point": {
       "at": {
@@ -19922,7 +19922,7 @@ export const LIBRARY: readonly Echo[] = [
   },
   {
     "id": "wilmington-a-restaurant-at-the-end-of-the-story",
-    "title": "A Restaurant at the End of the Story",
+    "title": "The Last Icehouse",
     "summary": "Elijah's at 2 Ann Street was Pacey's Icehouse in the Dawson's Creek finale.",
     "point": {
       "at": {
@@ -21897,7 +21897,7 @@ export const LIBRARY: readonly Echo[] = [
   },
   {
     "id": "wilmington-the-bridge-before-the-story",
-    "title": "The Bridge Before the Story",
+    "title": "The Bridge Before Tree Hill",
     "summary": "The Harry Forden Bridge is the one-lane truss bridge from the opening of One Tree Hill.",
     "point": {
       "at": {
