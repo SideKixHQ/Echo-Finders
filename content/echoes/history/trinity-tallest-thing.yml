@@ -32,6 +32,10 @@ script: |
   Alexander Hamilton is buried in the yard on your right. He was killed in 1804, so he
   never saw this building. He is lying beside the third church on this spot, in a
   graveyard that outlasted two of them.
+# Held as draft (2026-11-11, claims pass): 281 feet has no reachable source, and the sources
+# that are reachable disagree (Library of Congress caption 285 ft, Skyscraper Museum 284 ft).
+# "Buried in the yard on your right": Hamilton's grave is in the south churchyard, which is
+# on your left facing the church from Broadway. Check before approving.
 editorial: draft
 factCheck: single-source
 sources:

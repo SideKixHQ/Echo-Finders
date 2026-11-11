@@ -9,12 +9,11 @@ at: { lat: 40.38288, lng: -105.51921 }
 triggerRadiusKm: 0.08
 category: legend
 format: short
-durationS: 112
+durationS: 68
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
-  A published legend. The script says out loud that the haunting is reported, not proven;
-  no supernatural claim is established.
+  A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.
 minAge: 0
 quality: 0.75
 voice: wC1005J19tvhoqqC2hkf
@@ -57,16 +56,91 @@ script: |
   The music is reported.
 
   The musician remains a matter of belief.
-editorial: draft
+editorial: approved
 factCheck: corroborated
+claims:
+  - says: "The Stanley’s ghost folklore includes children laughing in supposedly deserted hallways and piano music coming from an empty ballroom."
+    source: 1
+    quote: "where children’s laughter is often heard in deserted hallways and ghostly strains of piano music emanate from the empty ballroom."
+  - says: "Those stories appear in Colorado’s official tourism account."
+    source: 1
+    quote: "where children’s laughter is often heard in deserted hallways and ghostly strains of piano music emanate from the empty ballroom."
+  - says: "The hotel is also associated with Stephen King, whose stay helped inspire The Shining."
+    source: 1
+    quote: "Stephen King got the idea for “The Shining” while staying at this sprawling, more-than-a-century-old hotel in"
+  - says: "Keep the two stories separate."
+    source: 1
+    quote: "Stephen King got the idea for “The Shining” while staying at this sprawling, more-than-a-century-old hotel in"
+  - says: "At the Stanley, that gap between a sound and its visible source has become part of the hotel’s identity."
+    source: 1
+    quote: "the hotel is so haunted, they offer nighttime spirit tours that take you to some of the creepiest areas of the hotel, including an underground tunnel."
 sources:
   - title: "Haunted colorado hot spots ghost hunters"
     publisher: "Colorado Tourism Office"
     url: https://www.colorado.com/articles/haunted-colorado-hot-spots-ghost-hunters
-    retrievedAt: "2026-10-09"
+    retrievedAt: "2026-11-11"
     rights: fair-use-facts
   - title: "Tours"
     publisher: "The Stanley Hotel"
     url: https://www.stanleyhotel.com/tours/
     retrievedAt: "2026-10-09"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-music-in-the-empty-room/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 67.8
+    audioBytes: 1085065
+    transcript:
+      totalS: 67.8
+      lines:
+        - text: Pause somewhere the hotel allows visitors to stand.
+          atS: 0
+          durationS: 2.83
+        - text: Listen.
+          atS: 3.44
+          durationS: 0.57
+        - text: The Stanley’s ghost folklore includes children laughing in supposedly deserted hallways and piano music coming from an empty ballroom.
+          atS: 4.61
+          durationS: 7.87
+        - text: Those stories appear in Colorado’s official tourism account.
+          atS: 13.08
+          durationS: 3.61
+        - text: They are reported experiences, not proof that the dead are making music.
+          atS: 17.51
+          durationS: 4.39
+        - text: The hotel is also associated with Stephen King, whose stay helped inspire The Shining.
+          atS: 22.34
+          durationS: 5.32
+        - text: But the fictional hotel in that novel is not a documentary account of this building.
+          atS: 27.98
+          durationS: 4.63
+        - text: Keep the two stories separate.
+          atS: 33.22
+          durationS: 1.68
+        - text: Now consider the sound at the center of the legend.
+          atS: 35.5
+          durationS: 2.67
+        - text: "Music normally means somebody is nearby: a player at a piano, a guest rehearsing, a recording in another room."
+          atS: 38.87
+          durationS: 7.46
+        - text: The story becomes unsettling when that expected person is missing.
+          atS: 47.03
+          durationS: 3.74
+        - text: You hear the notes.
+          atS: 51.38
+          durationS: 1
+        - text: You look for the musician.
+          atS: 52.81
+          durationS: 1.32
+        - text: The room appears empty.
+          atS: 54.84
+          durationS: 1.73
+        - text: At the Stanley, that gap between a sound and its visible source has become part of the hotel’s identity.
+          atS: 57.26
+          durationS: 6.27
+        - text: The music is reported.
+          atS: 63.81
+          durationS: 1.36
+        - text: The musician remains a matter of belief.
+          atS: 65.38
+          durationS: 2.38

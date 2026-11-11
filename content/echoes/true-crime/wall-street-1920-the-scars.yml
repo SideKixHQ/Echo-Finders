@@ -66,6 +66,11 @@ script: |
 pronunciations:
   - written: stenographers
     say: steh-NOG-ruh-fers
+# Held as draft (2026-11-11, claims pass): the New-York Tribune's list of the dead on
+# 17 September 1920 includes two sixteen-year-old messengers, so "the youngest was a messenger
+# boy of seventeen" is contradicted. The death toll differs by source (CBS 38, Lower Manhattan
+# Historical Association 33). "A hundred pounds of dynamite", the Bureau's three years and
+# Morgan refusing to repair the facade have no reachable source (fbi.gov refuses a session).
 editorial: draft
 factCheck: corroborated
 trueCrimeReview:

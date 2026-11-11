@@ -16,7 +16,7 @@ triggerRadiusKm: 0.03
 voice: wC1005J19tvhoqqC2hkf
 category: true-crime
 format: short
-durationS: 100
+durationS: 55
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -26,14 +26,14 @@ teaser: Look at the steps in front of the gate. Not the house.
 script: |
   Look at the steps in front of the gate. Not the house. The steps.
 
-  At about a quarter to nine on the morning of the fifteenth of July, nineteen ninety-seven,
+  On the morning of the fifteenth of July, nineteen ninety-seven,
   Gianni Versace came back up Ocean Drive carrying his magazines and stopped here to open
   his own front door.
 
   A man walked up behind him and fired twice. Versace was fifty. He did not get through the
   door.
 
-  Police identified the man who shot him as Andrew Cunanan, already on the FBI's Ten Most
+  Police said the man who shot him was Andrew Cunanan, already on the FBI's Ten Most
   Wanted list. Eight days later Cunanan was found dead on a houseboat two miles north of
   where you are standing. He was never tried. He left nothing behind explaining any of it,
   and no motive has ever been established.
@@ -51,7 +51,7 @@ pronunciations:
     say: kazh-oo-a-REE-na
   - written: Cunanan
     say: koo-NAN-an
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
@@ -60,9 +60,58 @@ trueCrimeReview:
   # who chased the gunman is a private individual who is probably alive — which is why the
   # script does not name him. He adds nothing and naming him costs him something.
   convictionStatus: alleged
-  reviewedBy: "TODO: a named human, before this can leave draft. See the note below."
+  reviewedBy: "James (owner), approved 2026-11-11"
   reviewedAt: "2026-09-22"
   contentWarning: This echo describes a murder. No violence is described in detail.
+claims:
+  - says: "On the morning of the fifteenth of July, nineteen ninety-seven, Gianni Versace came back up Ocean Drive carrying his magazines and stopped here to open his own front door."
+    source: 6
+    quote: "Gianni Versace was murdered on the steps of his Miami Beach mansion, Casa Casuarina , on July 15, 1997. The fashion designer was returning home from his morning walk to the News Café, where he went to purchase magazines,"
+  - says: "On the morning of the fifteenth of July, nineteen ninety-seven, Gianni Versace came back up Ocean Drive carrying his magazines and stopped here to open his own front door."
+    source: 8
+    quote: "Versace was returning home from his morning walk from the News Cafe in 1997 when Andrew Cunanan fatally shot him in the back of the head."
+  - says: "Versace was fifty."
+    source: 7
+    quote: "The designer, 50, had just unlocked the gate of his home after having breakfast at News Café on Ocean Drive"
+  - says: "Police said the man who shot him was Andrew Cunanan, already on the FBI's Ten Most Wanted list."
+    source: 4
+    quote: "\"The good thing was we knew within a matter of a couple of hours we were looking for Andrew Cunanan,\" said Carlos Noriega, the former Miami Beach police chief who in 1997 was the lieutenant overseeing the department's homicide unit."
+  - says: "Police said the man who shot him was Andrew Cunanan, already on the FBI's Ten Most Wanted list."
+    source: 6
+    quote: "On June 12, 1997, Andrew Cunanan became the 449th addition to the FBI's Ten Most Wanted list."
+  - says: "Police said the man who shot him was Andrew Cunanan, already on the FBI's Ten Most Wanted list."
+    source: 8
+    quote: "Versace was returning home from his morning walk from the News Cafe in 1997 when Andrew Cunanan fatally shot him in the back of the head."
+  - says: "Eight days later Cunanan was found dead on a houseboat two miles north of where you are standing."
+    source: 5
+    quote: "Eight days later, on July 23, police corned Cunanan inside a houseboat. Rather than surrender, Cunanan shot himself in the head."
+  - says: "Eight days later Cunanan was found dead on a houseboat two miles north of where you are standing."
+    source: 7
+    quote: "Cunanan killed himself on a shuttered houseboat about 40 blocks north of the mansion as police closed in."
+  - says: "Eight days later Cunanan was found dead on a houseboat two miles north of where you are standing."
+    source: 8
+    quote: "Eight days later, Cunanan, suspected of killing four other people in three states, killed himself on a houseboat in North Miami Beach."
+  - says: "By the time he reached Miami Beach, four other people were already dead."
+    source: 4
+    quote: "Before killing Versace, Cunanan – a failing male gigolo – had gone on a cross-country killing spree, taking the lives of four men: Jeffrey Trail, David Madsen, Lee Miglin and William Reese."
+  - says: "By the time he reached Miami Beach, four other people were already dead."
+    source: 9
+    quote: "The man who murdered him had killed four other men in the previous months."
+  - says: "Jeffrey Trail."
+    source: 4
+    quote: "taking the lives of four men: Jeffrey Trail, David Madsen, Lee Miglin and William Reese."
+  - says: "David Madson."
+    source: 6
+    quote: "On April 29, 1997, when David Madson didn't show up at work, police went to his apartment and discovered the body of Jeff Trail rolled up in a carpet."
+  - says: "Lee Miglin."
+    source: 4
+    quote: "taking the lives of four men: Jeffrey Trail, David Madsen, Lee Miglin and William Reese."
+  - says: "William Reese."
+    source: 4
+    quote: "taking the lives of four men: Jeffrey Trail, David Madsen, Lee Miglin and William Reese."
+  - says: "Nobody stands outside the other four."
+    source: 9
+    quote: "The man who murdered him had killed four other men in the previous months."
 sources:
   - title: Andrew Phillip Cunanan — Ten Most Wanted Fugitives case record
     publisher: Federal Bureau of Investigation
@@ -76,3 +125,95 @@ sources:
     publisher: Miami-Dade County Medical Examiner
     retrievedAt: "2026-09-22"
     rights: public-domain
+  - title: "The Versace Murder: A South Beach Story Pt. 1"
+    publisher: CBS News Miami
+    url: https://www.cbsnews.com/miami/news/versace-murder-south-beach/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Almanac: The Gianni Versace murder"
+    publisher: CBS News
+    url: https://www.cbsnews.com/news/almanac-the-gianni-versace-murder/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Andrew Cunanan's trail of terror"
+    publisher: CBS News
+    url: https://www.cbsnews.com/pictures/andrew-cunanan-gianni-versace-killers-reign-of-terror/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Death Of Fashion Designer Gianni Versace 18 Years Later"
+    publisher: CBS News Miami
+    url: https://www.cbsnews.com/miami/news/death-of-fashion-designer-gianni-versace-18-years-later
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "2 found dead at former Versace Mansion apparently died by suicide, police say"
+    publisher: NBC News
+    url: https://www.nbcnews.com/news/us-news/2-found-dead-former-versace-mansion-day-anniversary-designer-s-n1274012
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "'The Assassination Of Gianni Versace' Traces Investigation Into Fashion Designer's 1997 Murder"
+    publisher: WBUR Here & Now
+    url: https://www.wbur.org/hereandnow/2018/01/31/assassination-gianni-versace
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/casa-casuarina-the-steps/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 55.1
+    audioBytes: 882354
+    transcript:
+      totalS: 55.1
+      lines:
+        - text: Look at the steps in front of the gate.
+          atS: 0
+          durationS: 2.03
+        - text: Not the house.
+          atS: 2.24
+          durationS: 0.95
+        - text: The steps.
+          atS: 3.44
+          durationS: 0.89
+        - text: On the morning of the fifteenth of July, nineteen ninety-seven, Gianni Versace came back up Ocean Drive carrying his magazines and stopped here to open his own front door.
+          atS: 4.66
+          durationS: 10.5
+        - text: A man walked up behind him and fired twice.
+          atS: 15.48
+          durationS: 2.91
+        - text: Versace was fifty.
+          atS: 18.83
+          durationS: 1.78
+        - text: He did not get through the door.
+          atS: 20.89
+          durationS: 1.7
+        - text: Police said the man who shot him was Andrew Cunanan, already on the FBI's Ten Most Wanted list.
+          atS: 22.91
+          durationS: 6.26
+        - text: Eight days later Cunanan was found dead on a houseboat two miles north of where you are standing.
+          atS: 29.55
+          durationS: 5.53
+        - text: He was never tried.
+          atS: 35.46
+          durationS: 1.21
+        - text: He left nothing behind explaining any of it, and no motive has ever been established.
+          atS: 36.94
+          durationS: 4.65
+        - text: By the time he reached Miami Beach, four other people were already dead.
+          atS: 41.92
+          durationS: 3.98
+        - text: Jeffrey Trail.
+          atS: 46.12
+          durationS: 0.91
+        - text: David Madson.
+          atS: 47.14
+          durationS: 0.87
+        - text: Lee Miglin.
+          atS: 48.12
+          durationS: 0.74
+        - text: William Reese.
+          atS: 48.98
+          durationS: 0.92
+        - text: This address is famous because of who died at it.
+          atS: 50.02
+          durationS: 2.69
+        - text: Nobody stands outside the other four.
+          atS: 52.86
+          durationS: 2.22

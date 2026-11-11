@@ -53,6 +53,9 @@ script: |
   this place.
 
   Standing here, you can see how close those two settings are.
+# Held as draft (2026-11-11, claims pass): the script quotes "the version published by Historic
+# Royal Palaces", and hrp.org.uk answers a session with a Cloudflare challenge, so no quote
+# could be taken from it.
 editorial: draft
 factCheck: corroborated
 sources:

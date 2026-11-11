@@ -9,7 +9,7 @@ at: { lat: 38.88990, lng: -77.00906 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 85
+durationS: 84
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -46,12 +46,45 @@ pronunciations:
     say: broo-MEE-dee
   - written: Costaggini
     say: koss-tah-JEE-nee
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It was designed by Constantino Brumidi, an Italian-born painter who spent twenty-five years decorating this building."
     source: 3
     quote: "Italian-born fresco painter Constantino Brumidi (1805-1880) spent twenty-five years decorating walls and ceilings of committee rooms, offices, and corridors, as well as the rotunda's frieze and canopy painting."
+  - says: "It is one long procession through American history, a little over eight feet high and about three hundred feet around."
+    source: 4
+    quote: "It measures 8 feet 4 inches in height and approximately 300 feet in circumference."
+  - says: "He began the band in 1877."
+    source: 2
+    quote: "The first was Constantino Brumidi, who designed the first 15 panels and actually executed six and a part of the seventh from 1877 until his death in 1880."
+  - says: "In the autumn of 1879 he very nearly fell from it."
+    source: 1
+    quote: "Last autumo Mr. Brumidi narrowly escaped lidiin^r from a .-oafhdd on which he was at work in tIk: roiui d* of the Capitol."
+  - says: "He died the following February."
+    source: 4
+    quote: "He returned to the scaffold once more but then worked on enlarging his remaining sketches until his death a few months later in February 1880."
+  - says: "He had painted six scenes and part of a seventh."
+    source: 2
+    quote: "actually executed six and a part of the seventh from 1877 until his death in 1880."
+  - says: "Another Italian, Filippo Costaggini, carried on with Brumidi's designs for eight more years."
+    source: 2
+    quote: "The seventh was completed and the other eight done on the Brumidi design by Filippo Cos- taggini from 1880 to 1888."
+  - says: "About thirty feet of the circle was empty."
+    source: 4
+    quote: "When he finished in 1889 there was a gap of over 31 feet because of early miscalculations about the height of the frieze."
+  - says: "It stayed empty for more than sixty years."
+    source: 2
+    quote: "Filippo Cos- taggini from 1880 to 1888. The final 30 feet of the frieze, cov- ering the Civil War, the Spanish- American war and the birth of aviation in the United States, were designed and executed by New York artist Allyn Cox in 1952-1953."
+  - says: "In 1952 and 1953 a New York artist, Allyn Cox, filled it with the Civil War, the Spanish American War and the birth of aviation."
+    source: 2
+    quote: "The final 30 feet of the frieze, cov- ering the Civil War, the Spanish- American war and the birth of aviation in the United States, were designed and executed by New York artist Allyn Cox in 1952-1953."
+  - says: "It had taken seventy-six years to go once around the room."
+    source: 2
+    quote: "Frieze in Capitol's Rotunda Is Completed After 76 Years"
+  - says: "The man who started it saw six scenes of it."
+    source: 2
+    quote: "actually executed six and a part of the seventh from 1877 until his death in 1880."
 sources:
   - title: "Death of a Fresco Artist, Alexandria Gazette, February 21, 1880, page 4"
     publisher: "Alexandria Gazette, via Library of Congress Chronicling America"
@@ -68,3 +101,67 @@ sources:
     url: https://www.loc.gov/exhibits/uscapitol/s5.html
     retrievedAt: "2026-11-07"
     rights: public-domain
+  - title: "Frieze of American History"
+    publisher: "Architect of the Capitol"
+    url: https://www.aoc.gov/explore-capitol-campus/art/frieze-american-history
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-seventy-six-years-round/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84.4
+    audioBytes: 1351305
+    transcript:
+      totalS: 84.4
+      lines:
+        - text: Look up, to the band of painted figures that runs right round the rotunda, below the dome.
+          atS: 0
+          durationS: 5.45
+        - text: It is one long procession through American history, a little over eight feet high and about three hundred feet around.
+          atS: 6.05
+          durationS: 7.17
+        - text: It was designed by Constantino Brumidi, an Italian-born painter who spent twenty-five years decorating this building.
+          atS: 13.83
+          durationS: 8.06
+        - text: He began the band in 1877.
+          atS: 22.49
+          durationS: 2.58
+        - text: He was in his seventies, working on a scaffold high above this floor.
+          atS: 25.51
+          durationS: 4.47
+        - text: In the autumn of 1879 he very nearly fell from it.
+          atS: 30.67
+          durationS: 3.82
+        - text: A newspaper reported that he never completely recovered from the shock.
+          atS: 34.93
+          durationS: 3.98
+        - text: He died the following February.
+          atS: 39.24
+          durationS: 1.9
+        - text: He had painted six scenes and part of a seventh.
+          atS: 41.42
+          durationS: 2.93
+        - text: Another Italian, Filippo Costaggini, carried on with Brumidi's designs for eight more years.
+          atS: 44.63
+          durationS: 7.01
+        - text: When he finished, there was still a gap.
+          atS: 52.76
+          durationS: 2.36
+        - text: About thirty feet of the circle was empty.
+          atS: 55.62
+          durationS: 2.45
+        - text: It stayed empty for more than sixty years.
+          atS: 58.68
+          durationS: 2.95
+        - text: In 1952 and 1953 a New York artist, Allyn Cox, filled it with the Civil War, the Spanish American War and the birth of aviation.
+          atS: 62.23
+          durationS: 10.96
+        - text: The papers announced that the frieze was complete.
+          atS: 73.7
+          durationS: 2.69
+        - text: It had taken seventy-six years to go once around the room.
+          atS: 76.78
+          durationS: 3.56
+        - text: The man who started it saw six scenes of it.
+          atS: 80.85
+          durationS: 3.53

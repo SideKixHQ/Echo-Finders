@@ -33,6 +33,10 @@ script: |
 pronunciations:
   - written: sycamore
     say: SIK-a-more
+# Held as draft (2026-11-11, claims pass): CBS News ("St. Paul's Chapel: witness to history")
+# says the 1776 fire destroyed one third of the city, not a quarter, that a bucket brigade saved
+# the chapel, and that it survived 9/11 "with only a broken window" (the script says every
+# window survived). "Eight months" and "oldest public building" have no reachable source.
 editorial: draft
 factCheck: single-source
 sources:

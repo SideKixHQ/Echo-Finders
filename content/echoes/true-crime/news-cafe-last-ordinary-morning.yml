@@ -13,7 +13,7 @@ triggerRadiusKm: 0.03
 voice: wC1005J19tvhoqqC2hkf
 category: true-crime
 format: short
-durationS: 65
+durationS: 34
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -31,25 +31,51 @@ script: |
 
   His name was Gianni Versace, and this was the last ordinary hour of his life.
 
-  It is four blocks north along the beach side. About six minutes.
+  It is three blocks north along the beach side. About six minutes.
 
   Take it slowly. He did.
 pronunciations:
   - written: Versace
     say: ver-SAH-chay
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
-  involvesLivingPeople: true
+  # False since 2026-11-11: the only person this echo names is Versace, and it accuses
+  # nobody (Cunanan is not named and the killing is not described). By the rule in
+  # docs/14-true-crime.md ("true when anyone named may be alive") that is false. The
+  # companion echo, casa-casuarina-the-steps, names the other victims and stays true.
+  involvesLivingPeople: false
   convictionStatus: alleged
   # Deliberately "alleged", not "convicted". Cunanan died before he could be tried, so
   # there is no conviction to point at, and writing one down would be the exact defamation
   # this field exists to prevent. What protects the account is not a verdict — it is that
   # the dead cannot be defamed, and that fair report privilege covers an accurate summary
   # of an official record. That is why the FBI source is load-bearing rather than decorative.
-  reviewedBy: "TODO: a named human, before this can leave draft. See the note below."
+  reviewedBy: "James (owner), approved 2026-11-11"
   reviewedAt: "2026-09-22"
   contentWarning: This echo describes a murder. No violence is described in detail.
+claims:
+  - says: "In the summer of nineteen ninety-seven a man came down here most mornings from a house three blocks north."
+    source: 4
+    quote: "Versace was shot to death by serial killer Andrew Cunanan, after the Italian designer returned home from eating breakfast three blocks away at the News Café."
+  - says: "In the summer of nineteen ninety-seven a man came down here most mornings from a house three blocks north."
+    source: 5
+    quote: "The fashion designer was returning home from his morning walk to the News Café, where he went to purchase magazines,"
+  - says: "On the fifteenth of July he did exactly that, and then he walked home."
+    source: 5
+    quote: "Gianni Versace was murdered on the steps of his Miami Beach mansion, Casa Casuarina , on July 15, 1997. The fashion designer was returning home from his morning walk to the News Café, where he went to purchase magazines,"
+  - says: "On the fifteenth of July he did exactly that, and then he walked home."
+    source: 6
+    quote: "Versace was returning home from his morning walk from the News Cafe in 1997 when Andrew Cunanan fatally shot him in the back of the head."
+  - says: "His name was Gianni Versace, and this was the last ordinary hour of his life."
+    source: 6
+    quote: "Versace was returning home from his morning walk from the News Cafe in 1997 when Andrew Cunanan fatally shot him in the back of the head."
+  - says: "It is three blocks north along the beach side."
+    source: 4
+    quote: "after the Italian designer returned home from eating breakfast three blocks away at the News Café."
+  - says: "About six minutes."
+    source: 4
+    quote: "after the Italian designer returned home from eating breakfast three blocks away at the News Café."
 sources:
   # No URLs yet: these are sources *identified*, not sources retrieved. Fact-check has to
   # pull each one and replace retrievedAt with the day it was actually read.
@@ -65,3 +91,59 @@ sources:
     publisher: Miami-Dade County Medical Examiner
     retrievedAt: "2026-09-22"
     rights: public-domain
+  - title: "The Death Of Gianni Versace 17 Years Later"
+    publisher: CBS News Miami
+    url: https://www.cbsnews.com/miami/news/the-death-of-gianni-versace-17-years-later/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Andrew Cunanan's trail of terror"
+    publisher: CBS News
+    url: https://www.cbsnews.com/pictures/andrew-cunanan-gianni-versace-killers-reign-of-terror/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "2 found dead at former Versace Mansion apparently died by suicide, police say"
+    publisher: NBC News
+    url: https://www.nbcnews.com/news/us-news/2-found-dead-former-versace-mansion-day-anniversary-designer-s-n1274012
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/news-cafe-last-ordinary-morning/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 33.6
+    audioBytes: 539210
+    transcript:
+      totalS: 33.6
+      lines:
+        - text: You are outside a café that has been on this corner since the middle of the eighties.
+          atS: 0
+          durationS: 4.16
+        - text: In the summer of nineteen ninety-seven a man came down here most mornings from a house three blocks north.
+          atS: 4.4
+          durationS: 5.5
+        - text: He sat outside.
+          atS: 10.11
+          durationS: 1.17
+        - text: He bought a stack of magazines.
+          atS: 11.56
+          durationS: 1.74
+        - text: The staff knew him by sight, the way staff know a regular.
+          atS: 13.63
+          durationS: 3.6
+        - text: On the fifteenth of July he did exactly that, and then he walked home.
+          atS: 18.04
+          durationS: 4.04
+        - text: His name was Gianni Versace, and this was the last ordinary hour of his life.
+          atS: 22.47
+          durationS: 5.28
+        - text: It is three blocks north along the beach side.
+          atS: 28.07
+          durationS: 2.5
+        - text: About six minutes.
+          atS: 30.72
+          durationS: 1.06
+        - text: Take it slowly.
+          atS: 31.93
+          durationS: 0.85
+        - text: He did.
+          atS: 32.95
+          durationS: 0.67
