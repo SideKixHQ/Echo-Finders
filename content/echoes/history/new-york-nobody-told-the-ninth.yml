@@ -9,7 +9,7 @@ at: { lat: 40.73012, lng: -73.99525 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 88
+durationS: 87
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -156,3 +156,86 @@ sources:
     url: https://www.npr.org/2009/04/16/102959041/frances-perkins-the-woman-behind-the-new-deal
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-nobody-told-the-ninth/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 87.1
+    audioBytes: 1395190
+    transcript:
+      totalS: 87.1
+      lines:
+        - text: Look up at this building, to the top three floors.
+          atS: 0
+          durationS: 3.08
+        - text: On a Saturday afternoon in March, nineteen eleven, those floors were a clothing factory.
+          atS: 3.52
+          durationS: 5.74
+        - text: About five hundred people worked there.
+          atS: 9.58
+          durationS: 2.47
+        - text: Most of them were young immigrant women and girls.
+          atS: 12.56
+          durationS: 2.86
+        - text: Near quitting time, a fire started in a scrap bin on the eighth floor.
+          atS: 15.86
+          durationS: 4.6
+        - text: Someone telephoned a warning up to the offices on the tenth.
+          atS: 20.84
+          durationS: 3.46
+        - text: Nobody told the ninth.
+          atS: 24.51
+          durationS: 1.6
+        - text: By the time the ninth floor knew, the fire was there.
+          atS: 26.36
+          durationS: 3.39
+        - text: One set of stairway doors was locked.
+          atS: 30.56
+          durationS: 2.22
+        - text: The fire escape collapsed.
+          atS: 33.22
+          durationS: 1.82
+        - text: The firemen's nets were useless.
+          atS: 35.55
+          durationS: 2.36
+        - text: People jumped or fell from those windows, a hundred feet, to the street.
+          atS: 38.72
+          durationS: 4.51
+        - text: One hundred and forty six people died.
+          atS: 44.04
+          durationS: 2.51
+        - text: A young woman named Frances Perkins was there.
+          atS: 47.24
+          durationS: 2.75
+        - text: She saw it.
+          atS: 50.51
+          durationS: 0.93
+        - text: She spent the rest of her life on what she saw.
+          atS: 51.94
+          durationS: 2.73
+        - text: The next year, she took a job fighting for safer factories.
+          atS: 55.18
+          durationS: 3.47
+        - text: New York passed thirty eight new laws.
+          atS: 59.17
+          durationS: 2.58
+        - text: And in nineteen thirty three, she became Secretary of Labor.
+          atS: 61.92
+          durationS: 3.42
+        - text: The first woman in any American cabinet.
+          atS: 65.72
+          durationS: 2.6
+        - text: Look at the memorial plaques on the corner of the building.
+          atS: 68.93
+          durationS: 2.91
+        - text: The man who keeps the archive of the fire remembers what one survivor said.
+          atS: 72.66
+          durationS: 4.35
+        - text: The immigrant parents all told their children the same thing.
+          atS: 77.71
+          durationS: 3.32
+        - text: In America, they don't let you burn.
+          atS: 81.54
+          durationS: 2.11
+        - text: After this corner, that came a little closer to true.
+          atS: 84.16
+          durationS: 2.96

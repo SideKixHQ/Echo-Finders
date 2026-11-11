@@ -9,7 +9,7 @@ at: { lat: 40.75458, lng: -73.98012 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 92
+durationS: 88
 visibility: at-hand
 certainty: documented
 minAge: 10
@@ -134,3 +134,89 @@ sources:
     url: https://www.nps.gov/articles/000/chapter-1-race-slavery-and-freedom-northern-unfreedom.htm
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-out-the-back-door/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 88
+    audioBytes: 1408565
+    transcript:
+      totalS: 88
+      lines:
+        - text: Look along this block of Fifth Avenue, from Forty Third Street to Forty Fourth.
+          atS: 0
+          durationS: 4.43
+        - text: Shop fronts.
+          atS: 4.71
+          durationS: 0.88
+        - text: Office windows.
+          atS: 5.84
+          durationS: 1.21
+        - text: People hurrying past.
+          atS: 7.29
+          durationS: 1.53
+        - text: In the summer of eighteen sixty three, this whole block was an orphanage.
+          atS: 9.94
+          durationS: 3.63
+        - text: Four stories high, with room for five hundred children.
+          atS: 13.9
+          durationS: 3.06
+        - text: It was the Colored Orphan Asylum.
+          atS: 17.29
+          durationS: 1.9
+        - text: A home for Black children.
+          atS: 19.63
+          durationS: 1.97
+        - text: On the afternoon of the thirteenth of July, a mob of about three thousand people attacked it.
+          atS: 22.56
+          durationS: 5.19
+        - text: The city was rioting against the draft for the Civil War.
+          atS: 27.99
+          durationS: 3.29
+        - text: And the mob had decided that Black people were to blame for the war.
+          atS: 31.66
+          durationS: 3.77
+        - text: Even orphans.
+          atS: 35.88
+          durationS: 1.06
+        - text: Inside were more than two hundred children, from babies to twelve year olds.
+          atS: 37.44
+          durationS: 4.88
+        - text: The superintendent, William Davis, fastened the doors.
+          atS: 43.43
+          durationS: 3.74
+        - text: While the mob broke them in, the staff gathered the children, carried some in their arms, and led them out at the back.
+          atS: 47.61
+          durationS: 6.48
+        - text: Just as the mob came in at the front.
+          atS: 54.53
+          durationS: 2.24
+        - text: The rioters took everything, even the children's dresses and trinkets.
+          atS: 57.28
+          durationS: 4.47
+        - text: Then they set the building on fire.
+          atS: 62.2
+          durationS: 1.83
+        - text: The fire chief tried to talk them down, and was knocked to the ground twice.
+          atS: 64.18
+          durationS: 3.77
+        - text: In an hour and a half, only a little of the walls was left.
+          atS: 68.13
+          durationS: 3.45
+        - text: That evening, Davis led two hundred and sixteen children into a police station.
+          atS: 72.02
+          durationS: 4.74
+        - text: Not one of them was over twelve.
+          atS: 76.93
+          durationS: 1.75
+        - text: Except the clothes they wore, nothing had been saved for them.
+          atS: 79.06
+          durationS: 3.31
+        - text: Look along the block again.
+          atS: 83.07
+          durationS: 1.37
+        - text: The building burned.
+          atS: 84.59
+          durationS: 1.16
+        - text: The children walked out.
+          atS: 86.08
+          durationS: 1.88

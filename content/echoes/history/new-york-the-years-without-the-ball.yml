@@ -9,7 +9,7 @@ at: { lat: 40.75675, lng: -73.98625 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 82
+durationS: 84
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -130,3 +130,74 @@ sources:
     url: https://www.cbsnews.com/minnesota/news/good-question-whats-the-origin-of-the-times-square-new-years-eve-ball/
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-years-without-the-ball/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 83.9
+    audioBytes: 1343781
+    transcript:
+      totalS: 83.9
+      lines:
+        - text: Look up at the narrow building at the bottom of the square, and the pole on its roof.
+          atS: 0
+          durationS: 4.67
+        - text: Every New Year's Eve since nineteen oh seven, a lit ball has come down that pole at midnight.
+          atS: 5.36
+          durationS: 5.79
+        - text: Every year but two.
+          atS: 11.76
+          durationS: 1.51
+        - text: It began with fireworks.
+          atS: 13.78
+          durationS: 1.89
+        - text: When the newspaper moved into this building, its owner, Adolph Ochs, threw a party here with fireworks.
+          atS: 16.11
+          durationS: 6.99
+        - text: Two years later, the city banned them.
+          atS: 23.38
+          durationS: 2.35
+        - text: So Ochs asked his chief electrician, Walter Palmer, for something else.
+          atS: 26.11
+          durationS: 4.47
+        - text: A ball of iron and wood, seven hundred pounds, with a hundred light bulbs.
+          atS: 30.96
+          durationS: 5.12
+        - text: A young immigrant metalworker named Jacob Starr built it.
+          atS: 37.04
+          durationS: 3.74
+        - text: It was lowered by hand, with rope.
+          atS: 41.29
+          durationS: 2.33
+        - text: At ten minutes to midnight, the paper reported, every boiler whistle in the city began to screech.
+          atS: 44.22
+          durationS: 6.55
+        - text: Tens of thousands stood watching the ball.
+          atS: 51.47
+          durationS: 2.75
+        - text: And then it fell.
+          atS: 54.89
+          durationS: 1.23
+        - text: Then came the Second World War, and a dimout.
+          atS: 56.91
+          durationS: 3.07
+        - text: The lights of the city had to be dimmed.
+          atS: 60.91
+          durationS: 2.19
+        - text: In nineteen forty two, and again in nineteen forty three, there was no ball.
+          atS: 63.69
+          durationS: 5.25
+        - text: The crowds came anyway.
+          atS: 69.37
+          durationS: 1.5
+        - text: And at midnight, in the middle of all these people, there was a minute of silence.
+          atS: 71.08
+          durationS: 4.16
+        - text: Then chimes.
+          atS: 75.74
+          durationS: 1.11
+        - text: Look up at the pole again.
+          atS: 77.18
+          durationS: 1.5
+        - text: Twice, this square welcomed the new year by saying nothing at all.
+          atS: 79.28
+          durationS: 4.63

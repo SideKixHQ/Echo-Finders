@@ -9,7 +9,7 @@ at: { lat: 40.82130, lng: -73.94725 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 96
+durationS: 90
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -124,3 +124,74 @@ sources:
     url: https://www.cbsnews.com/newyork/news/stories-from-main-street-alexander-hamiltons-home-moves-in-harlem/
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-house-that-moved-twice/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 90.3
+    audioBytes: 1445345
+    transcript:
+      totalS: 90.3
+      lines:
+        - text: Look at the yellow and white house in front of you, with its porches and tall windows.
+          atS: 0
+          durationS: 4.67
+        - text: It is not where it was built.
+          atS: 4.99
+          durationS: 1.71
+        - text: It has moved twice.
+          atS: 6.98
+          durationS: 1.65
+        - text: Alexander Hamilton built it in eighteen oh two, as a country home on his estate up here.
+          atS: 9.44
+          durationS: 5.45
+        - text: It was the only home he ever owned.
+          atS: 15.32
+          durationS: 2.22
+        - text: Lower Manhattan was two hours away by carriage.
+          atS: 18.24
+          durationS: 3.02
+        - text: He named it The Grange, after his family's old home in Scotland.
+          atS: 21.58
+          durationS: 3.78
+        - text: He lived in it for two years.
+          atS: 25.88
+          durationS: 1.86
+        - text: On the eleventh of July, eighteen oh four, he was fatally wounded in a duel with Aaron Burr.
+          atS: 28.34
+          durationS: 6.12
+        - text: Then the city grew up the island toward his house.
+          atS: 35.16
+          durationS: 2.86
+        - text: In eighteen eighty nine, a new street was coming through.
+          atS: 38.45
+          durationS: 3.17
+        - text: So the house was lifted off its foundation and drawn by horses to a new spot, squeezed between a church and an apartment building.
+          atS: 42.23
+          durationS: 7.89
+        - text: In two thousand eight, the Park Service moved it again.
+          atS: 51.42
+          durationS: 3.19
+        - text: But a stone porch on the church was in the way.
+          atS: 55.22
+          durationS: 2.97
+        - text: So the movers jacked the whole house, nearly two hundred tons, thirty eight feet into the air.
+          atS: 58.79
+          durationS: 6.02
+        - text: And rolled it out over the top.
+          atS: 65.42
+          durationS: 2.28
+        - text: On the seventh of June, hundreds of people watched it roll down the street, turn the corner, and come here.
+          atS: 68.51
+          durationS: 6.65
+        - text: Look at the trees around it.
+          atS: 75.86
+          durationS: 1.61
+        - text: Thirteen sweet gums, for the thirteen original states, like the grove on the first site.
+          atS: 77.8
+          durationS: 6.2
+        - text: This little piece of park was part of Hamilton's own estate.
+          atS: 84.69
+          durationS: 3.67
+        - text: The house came home.
+          atS: 88.8
+          durationS: 1.48

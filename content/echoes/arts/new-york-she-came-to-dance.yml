@@ -10,7 +10,7 @@ at: { lat: 40.80985, lng: -73.95015 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 90
+durationS: 80
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -137,3 +137,77 @@ sources:
     url: https://www.npr.org/2007/06/13/10208984/ella-fitzgerald-first-lady-of-song
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-she-came-to-dance/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.2
+    audioBytes: 1283595
+    transcript:
+      totalS: 80.2
+      lines:
+        - text: Look up at the tall sign over these doors, the one that spells out Apollo.
+          atS: 0
+          durationS: 4.89
+        - text: Since nineteen thirty four, strangers have walked out onto the stage in there for Amateur Night.
+          atS: 5.7
+          durationS: 5.32
+        - text: There are no judges.
+          atS: 11.53
+          durationS: 1.32
+        - text: The audience decides, and the audience is not forgiving.
+          atS: 13.23
+          durationS: 4.03
+        - text: On a Wednesday night in November, nineteen thirty four, a seventeen year old girl walked out onto that stage.
+          atS: 18.56
+          durationS: 6.66
+        - text: Her name was Ella Fitzgerald.
+          atS: 25.55
+          durationS: 1.85
+        - text: Her mother had died.
+          atS: 27.84
+          durationS: 1.32
+        - text: She had been sent to a reform school, where she was beaten, and she ran away.
+          atS: 29.61
+          durationS: 3.96
+        - text: She was living on the streets, with no money, sleeping wherever she could.
+          atS: 33.95
+          durationS: 4.56
+        - text: She had come to dance.
+          atS: 38.89
+          durationS: 1.42
+        - text: But the act before her was a pair of dancing sisters, and they had stopped the show.
+          atS: 40.69
+          durationS: 5.54
+        - text: And when she got out under the lights and saw all those people, she froze.
+          atS: 46.67
+          durationS: 4.25
+        - text: The man said, well, you're out here.
+          atS: 51.36
+          durationS: 2.64
+        - text: Do something.
+          atS: 54.38
+          durationS: 0.93
+        - text: So she sang.
+          atS: 56.01
+          durationS: 1.1
+        - text: She won.
+          atS: 57.43
+          durationS: 0.78
+        - text: The prize was twenty five dollars and a week's work.
+          atS: 58.49
+          durationS: 3.08
+        - text: Soon after, the bandleader Chick Webb asked her to join his orchestra.
+          atS: 62.38
+          durationS: 4.11
+        - text: She became the First Lady of Song.
+          atS: 67.09
+          durationS: 1.99
+        - text: Look at those doors again.
+          atS: 69.68
+          durationS: 1.36
+        - text: A girl with nowhere to sleep walked through them, to dance.
+          atS: 72.16
+          durationS: 3.97
+        - text: I never thought I was a singer, she said.
+          atS: 77.24
+          durationS: 2.91

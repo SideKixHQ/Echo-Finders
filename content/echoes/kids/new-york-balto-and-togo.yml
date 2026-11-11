@@ -10,7 +10,7 @@ triggerRadiusKm: 0.04
 voice: UrTldiIxfedDl9tlesyS
 category: kids
 format: short
-durationS: 82
+durationS: 78
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -112,3 +112,71 @@ sources:
     url: https://www.nps.gov/people/togo.htm
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/new-york-balto-and-togo/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 78.1
+    audioBytes: 1250994
+    transcript:
+      totalS: 78.1
+      lines:
+        - text: Look at the bronze dog standing on the rock.
+          atS: 0
+          durationS: 2.32
+        - text: See how shiny he is, where people have patted him.
+          atS: 2.57
+          durationS: 3.01
+        - text: His name is Balto.
+          atS: 6.01
+          durationS: 1.25
+        - text: He was a real sled dog.
+          atS: 7.65
+          durationS: 1.72
+        - text: In December, nineteen twenty five, Balto himself was photographed with his brand new statue.
+          atS: 9.81
+          durationS: 5.49
+        - text: Why would a dog from Alaska get a statue in New York?
+          atS: 15.63
+          durationS: 3.05
+        - text: In the winter of nineteen twenty five, children in the town of Nome, Alaska, were getting sick with diphtheria.
+          atS: 19.06
+          durationS: 6.87
+        - text: The medicine that could save them was far away.
+          atS: 26.26
+          durationS: 2.93
+        - text: The sea was frozen, so no ship could get there, and no plane could either.
+          atS: 29.43
+          durationS: 5.02
+        - text: So teams of sled dogs carried the medicine, passing it from team to team, through blinding blizzards and freezing cold.
+          atS: 34.77
+          durationS: 7.7
+        - text: On the second of February, a team with Balto in the lead ran into Nome with it.
+          atS: 43.28
+          durationS: 4.95
+        - text: The whole journey was six hundred and seventy four miles.
+          atS: 48.61
+          durationS: 3.43
+        - text: Balto became famous.
+          atS: 52.42
+          durationS: 1.74
+        - text: Here is the secret.
+          atS: 54.49
+          durationS: 1.29
+        - text: Balto's team ran about fifty five miles.
+          atS: 56.28
+          durationS: 2.86
+        - text: Another dog, called Togo, led his team for two hundred and sixty one miles, over the longest and most dangerous part.
+          atS: 59.47
+          durationS: 7.94
+        - text: Togo was twelve years old.
+          atS: 67.92
+          durationS: 1.68
+        - text: So when you say hello to Balto, say thank you to Togo too.
+          atS: 69.98
+          durationS: 3.86
+        - text: Balto got the statue.
+          atS: 74.28
+          durationS: 1.51
+        - text: Togo got the hardest miles.
+          atS: 76.11
+          durationS: 2

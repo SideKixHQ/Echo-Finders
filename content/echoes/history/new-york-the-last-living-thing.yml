@@ -9,7 +9,7 @@ at: { lat: 40.71116, lng: -74.01355 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 84
+durationS: 77
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -127,3 +127,83 @@ sources:
     url: https://www.cbsnews.com/newyork/news/survivor-tree-fire-houses/
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-last-living-thing/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77
+    audioBytes: 1233858
+    transcript:
+      totalS: 77
+      lines:
+        - text: Find the pear tree on this plaza that people call the Survivor Tree.
+          atS: 0
+          durationS: 4.11
+        - text: It was planted here in the nineteen seventies, at the foot of the Twin Towers.
+          atS: 4.35
+          durationS: 4.2
+        - text: And it is here again.
+          atS: 8.8
+          durationS: 1.35
+        - text: Which should not be possible.
+          atS: 10.53
+          durationS: 1.77
+        - text: In October, two thousand one, about a month after the towers fell, a worker clearing the rubble found it.
+          atS: 12.9
+          durationS: 6.98
+        - text: It was crushed between two blocks of concrete.
+          atS: 20.39
+          durationS: 2.68
+        - text: Its roots were snapped.
+          atS: 23.18
+          durationS: 1.39
+        - text: Half its trunk was gone, and the rest was burned black.
+          atS: 24.9
+          durationS: 3.29
+        - text: There was one living branch.
+          atS: 28.47
+          durationS: 1.59
+        - text: Ronaldo Vega was there.
+          atS: 30.3
+          durationS: 1.58
+        - text: The tree was upended, he said, thought to be dead, left for dead.
+          atS: 32.16
+          durationS: 4.33
+        - text: Then a search team saw new growth.
+          atS: 37.19
+          durationS: 2.16
+        - text: And they decided.
+          atS: 39.95
+          durationS: 1.11
+        - text: We have to try and save this tree.
+          atS: 41.51
+          durationS: 2.03
+        - text: It's the last living thing that's going to come out of this site.
+          atS: 44.14
+          durationS: 3.16
+        - text: It was about eight feet tall when it went to a city nursery in the Bronx.
+          atS: 47.74
+          durationS: 4.18
+        - text: Nursing it back was touch and go.
+          atS: 52.73
+          durationS: 2.18
+        - text: In December, two thousand ten, it came home to this plaza.
+          atS: 55.73
+          durationS: 4.68
+        - text: It stood about thirty feet tall.
+          atS: 61.1
+          durationS: 1.94
+        - text: Since then, its seedlings have been sent to fire stations that lost firefighters that day.
+          atS: 63.65
+          durationS: 5.4
+        - text: To Newtown, Connecticut.
+          atS: 69.48
+          durationS: 1.51
+        - text: To Boston.
+          atS: 71.17
+          durationS: 0.88
+        - text: Look up into its branches.
+          atS: 72.56
+          durationS: 1.58
+        - text: Every spring, they are covered in blossom.
+          atS: 74.58
+          durationS: 2.46

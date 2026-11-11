@@ -10,7 +10,7 @@ triggerRadiusKm: 0.04
 voice: UrTldiIxfedDl9tlesyS
 category: kids
 format: short
-durationS: 66
+durationS: 61
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -92,3 +92,65 @@ sources:
     url: https://www.nbcnews.com/news/latino/national-landmarks-spanish-immigrants-success-story-n106291
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/new-york-the-whispering-corners/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 61.1
+    audioBytes: 978067
+    transcript:
+      totalS: 61.1
+      lines:
+        - text: Look up at the low, curved ceiling over your head, covered in pale tiles.
+          atS: 0
+          durationS: 4.85
+        - text: Find the corners, where the arches come down to the floor.
+          atS: 5.29
+          durationS: 3.31
+        - text: Here is something to try.
+          atS: 9.11
+          durationS: 1.4
+        - text: Stand in one corner, with your face close to the wall.
+          atS: 10.84
+          durationS: 3.37
+        - text: Ask a friend to stand in the corner across from you, on the diagonal.
+          atS: 14.91
+          durationS: 4.05
+        - text: Now whisper.
+          atS: 19.28
+          durationS: 1.59
+        - text: They can hear you.
+          atS: 21.39
+          durationS: 1.23
+        - text: Through all these people walking past.
+          atS: 22.86
+          durationS: 2.25
+        - text: From about forty feet away.
+          atS: 25.44
+          durationS: 1.83
+        - text: Your whisper climbs up the curve of the ceiling, and comes down on the other side.
+          atS: 27.66
+          durationS: 4.84
+        - text: The man who built ceilings like this was Rafael Guastavino.
+          atS: 32.94
+          durationS: 5.02
+        - text: He came to New York from Spain in eighteen eighty one.
+          atS: 38.56
+          durationS: 3.08
+        - text: He made his arches out of thin tiles, layer on layer, and they are all over America now.
+          atS: 42.07
+          durationS: 5.98
+        - text: But here is the funny part.
+          atS: 48.56
+          durationS: 1.47
+        - text: Nobody knows for sure whether he meant this ceiling to carry whispers at all.
+          atS: 50.64
+          durationS: 4.06
+        - text: So go on.
+          atS: 54.91
+          durationS: 0.91
+        - text: Try it again.
+          atS: 56.15
+          durationS: 0.92
+        - text: Some of the best secrets in New York were made by accident.
+          atS: 57.67
+          durationS: 3.4

@@ -9,7 +9,7 @@ at: { lat: 40.74870, lng: -73.98520 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 100
+durationS: 93
 visibility: at-hand
 certainty: documented
 minAge: 10
@@ -130,3 +130,86 @@ sources:
     url: https://www.nbcnews.com/id/wbna44124714
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-someone-knew-we-were-there/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 92.6
+    audioBytes: 1482544
+    transcript:
+      totalS: 92.6
+      lines:
+        - text: Stand on the street and look up this building, high up, toward the top.
+          atS: 0
+          durationS: 4.03
+        - text: On a foggy Saturday morning in July, nineteen forty five, an army bomber came down out of the clouds over Midtown.
+          atS: 4.63
+          durationS: 7.59
+        - text: The pilot found himself flying among skyscrapers.
+          atS: 12.61
+          durationS: 3.16
+        - text: He flew into this one, at the seventy eighth and seventy ninth floors.
+          atS: 16.05
+          durationS: 4.09
+        - text: Fourteen people died.
+          atS: 20.52
+          durationS: 1.97
+        - text: The crash cut the cables of two elevators.
+          atS: 23.79
+          durationS: 2.67
+        - text: In one of them was a nineteen year old operator, Betty Lou Oliver.
+          atS: 26.9
+          durationS: 4.12
+        - text: She fell seventy five stories, all the way to the bottom of the shaft.
+          atS: 31.53
+          durationS: 4.07
+        - text: She broke her pelvis, her back and her neck.
+          atS: 36.42
+          durationS: 3.01
+        - text: And she lived.
+          atS: 39.87
+          durationS: 1.15
+        - text: Up on the seventy ninth floor, Therese Fortier Willig was twenty years old.
+          atS: 41.83
+          durationS: 5.2
+        - text: Six of them got into one office and shut the door against the fire.
+          atS: 47.54
+          durationS: 3.72
+        - text: Somebody opened the window.
+          atS: 51.77
+          durationS: 1.4
+        - text: She thought about her rings.
+          atS: 53.69
+          durationS: 1.58
+        - text: She thought she would not be around to have them.
+          atS: 55.47
+          durationS: 2.34
+        - text: So she took them off, she said, and threw them out of the window.
+          atS: 58.26
+          durationS: 4.08
+        - text: Someone else might as well have use out of them.
+          atS: 62.94
+          durationS: 2.64
+        - text: Then a man down on the street saw them, and signalled up.
+          atS: 66.69
+          durationS: 3.37
+        - text: Stay where you are.
+          atS: 71.17
+          durationS: 1.18
+        - text: She remembered how that felt.
+          atS: 73.17
+          durationS: 1.78
+        - text: We all felt a little better, she said, to know that someone knew we were there.
+          atS: 75.76
+          durationS: 4.77
+        - text: Firemen came.
+          atS: 81.34
+          durationS: 1.31
+        - text: She climbed out through the broken glass.
+          atS: 83.16
+          durationS: 2.26
+        - text: Look up again, from down here.
+          atS: 85.75
+          durationS: 2.08
+        - text: Somebody on this street once looked up, and let them know they were not alone.
+          atS: 88.43
+          durationS: 4.17

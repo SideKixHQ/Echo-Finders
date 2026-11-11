@@ -9,7 +9,7 @@ at: { lat: 40.70290, lng: -73.99465 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 108
+durationS: 103
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -136,3 +136,83 @@ sources:
     url: https://www.nps.gov/articles/000/john-glover-sailor-soldier-patriot.htm
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-horse-at-the-ferry/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 103.3
+    audioBytes: 1654325
+    transcript:
+      totalS: 103.3
+      lines:
+        - text: Look down this street to the water, where the old ferry landing is.
+          atS: 0
+          durationS: 3.88
+        - text: In August, seventeen seventy six, George Washington's army was trapped on this side of the river.
+          atS: 4.99
+          durationS: 6.14
+        - text: They had just lost the Battle of Brooklyn.
+          atS: 11.74
+          durationS: 2.02
+        - text: In front of them was a British army nearly three times their size.
+          atS: 14.57
+          durationS: 4.13
+        - text: Behind them, a mile of fast water, and a British fleet that could close it.
+          atS: 19.4
+          durationS: 4.98
+        - text: On the night of the twenty ninth, they started to leave.
+          atS: 25.33
+          durationS: 3.07
+        - text: Quietly, one regiment at a time, so no gap would show in the lines.
+          atS: 29.35
+          durationS: 5.07
+        - text: Washington stood here, at the ferry, watching them go.
+          atS: 35.38
+          durationS: 3.36
+        - text: Fishermen from Marblehead, Massachusetts, rowed them over, all night, against the tide, without being seen or heard by the British warships.
+          atS: 39.34
+          durationS: 8.91
+        - text: By dawn, there were still men in the trenches.
+          atS: 48.94
+          durationS: 2.91
+        - text: Then a fog came down.
+          atS: 52.97
+          durationS: 1.65
+        - text: A young officer named Benjamin Tallmadge was in that last guard.
+          atS: 55.13
+          durationS: 4.32
+        - text: The fog was so dense, he wrote, that I could scarcely discern a man at six yards' distance.
+          atS: 59.88
+          durationS: 6.1
+        - text: When his regiment reached the ferry, he stepped into one of the last boats.
+          atS: 66.79
+          durationS: 3.91
+        - text: He thought he saw Washington on the ferry stairs.
+          atS: 70.88
+          durationS: 2.65
+        - text: And he left his horse tied to a post, right here.
+          atS: 73.97
+          durationS: 3.08
+        - text: Safe on the other side, he could not stop thinking about that horse.
+          atS: 77.86
+          durationS: 3.69
+        - text: So he asked permission, found a crew of volunteers, and rowed back through the fog.
+          atS: 81.99
+          durationS: 4.67
+        - text: He got his horse, and pushed off just as the British reached the landing.
+          atS: 87.04
+          durationS: 4.03
+        - text: They fired at him with muskets, and then with cannon.
+          atS: 91.35
+          durationS: 3.06
+        - text: He made it.
+          atS: 94.69
+          durationS: 0.85
+        - text: Look at the water again.
+          atS: 95.86
+          durationS: 1.32
+        - text: Nine thousand men crossed it in one night, with their horses and their guns.
+          atS: 97.43
+          durationS: 4.23
+        - text: Even the horse.
+          atS: 101.98
+          durationS: 1.35

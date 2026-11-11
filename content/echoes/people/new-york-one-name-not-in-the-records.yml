@@ -10,7 +10,7 @@ at: { lat: 40.70405, lng: -73.99410 }
 triggerRadiusKm: 0.05
 category: people
 format: short
-durationS: 100
+durationS: 89
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -125,3 +125,68 @@ sources:
     url: https://www.cbsnews.com/newyork/news/honoring-the-legacy-of-emily-warren-roebling-who-helped-build-the-brooklyn-bridge/
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-one-name-not-in-the-records/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 89.4
+    audioBytes: 1430717
+    transcript:
+      totalS: 89.4
+      lines:
+        - text: Look up at the stone tower above you, and the cables running down from it.
+          atS: 0
+          durationS: 4.08
+        - text: On the day this bridge opened, the man in charge of building it had never seen it up close.
+          atS: 4.68
+          durationS: 5.29
+        - text: The first chief engineer, John Roebling, was hurt while surveying the site, and died.
+          atS: 10.48
+          durationS: 5.62
+        - text: His son, Washington Roebling, took over.
+          atS: 16.92
+          durationS: 3.59
+        - text: He went down into the caissons, the chambers under the river where the towers' foundations were dug.
+          atS: 21.11
+          durationS: 5.62
+        - text: And he caught the disease that came up out of them.
+          atS: 27.42
+          durationS: 2.73
+        - text: For years after that, he could not leave his house.
+          atS: 31.1
+          durationS: 3.16
+        - text: He watched the work through a telescope.
+          atS: 34.7
+          durationS: 2.24
+        - text: So his wife, Emily, carried his ideas to the bridge.
+          atS: 37.38
+          durationS: 3.37
+        - text: She was the one who talked to the engineers and the contractors.
+          atS: 41.26
+          durationS: 3.64
+        - text: In the end, the contractors came to her, and her alone.
+          atS: 45.35
+          durationS: 4.4
+        - text: On the opening day, the twenty fourth of May, eighteen eighty three, one of the speakers stopped to say her name.
+          atS: 50.45
+          durationS: 7.49
+        - text: One name, he said, which may find no place in the official records, cannot be passed over here in silence.
+          atS: 58.63
+          durationS: 7.29
+        - text: He called this bridge a lasting monument to the devotion of a woman, and to her capacity for the higher education she had been shut out of for too long.
+          atS: 66.36
+          durationS: 9.15
+        - text: Her family says that when it opened, she was the first to cross.
+          atS: 76.11
+          durationS: 4.15
+        - text: In a carriage, with a rooster, for victory.
+          atS: 80.58
+          durationS: 2.55
+        - text: Look up at the tower again.
+          atS: 83.65
+          durationS: 1.57
+        - text: He saw it from a distance.
+          atS: 85.73
+          durationS: 1.6
+        - text: She was the one who crossed.
+          atS: 87.66
+          durationS: 1.69

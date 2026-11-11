@@ -9,7 +9,7 @@ at: { lat: 40.73358, lng: -74.00240 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 100
+durationS: 96
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -149,3 +149,98 @@ sources:
     url: https://www.nbcnews.com/feature/nbc-out/lgbtq-history-month-road-america-s-first-gay-pride-march-n917096
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-for-what-a-kick-line/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 95.9
+    audioBytes: 1534789
+    transcript:
+      totalS: 95.9
+      lines:
+        - text: Look around this small park.
+          atS: 0
+          durationS: 1.59
+        - text: The benches.
+          atS: 1.97
+          durationS: 0.89
+        - text: The iron fence.
+          atS: 3.04
+          durationS: 1.27
+        - text: The white figures of the sculpture.
+          atS: 4.63
+          durationS: 1.85
+        - text: In the summer of nineteen sixty nine, this park was a refuge for street kids.
+          atS: 7.29
+          durationS: 4.96
+        - text: Most were runaways.
+          atS: 12.53
+          durationS: 1.31
+        - text: Most had left home, or been thrown out, because they were gay and could not hide it.
+          atS: 14.28
+          durationS: 5.03
+        - text: In the early hours of the twenty eighth of June, the police raided the bar across the street, the Stonewall Inn.
+          atS: 20.26
+          durationS: 7.16
+        - text: Raids were nothing new.
+          atS: 28.03
+          durationS: 1.57
+        - text: This time, people fought back.
+          atS: 30.04
+          durationS: 2.21
+        - text: That first night, for some reason, the police did not chase anyone into this park.
+          atS: 32.75
+          durationS: 5.5
+        - text: A man named Danny Garvin was watching from a friend's window on Grove Street.
+          atS: 38.95
+          durationS: 4.99
+        - text: He saw about ten police on one side, holding their clubs straight out.
+          atS: 44.45
+          durationS: 4.46
+        - text: And on the other side, about twenty young men.
+          atS: 49.24
+          durationS: 2.95
+        - text: They rolled up their trouser legs.
+          atS: 52.88
+          durationS: 1.96
+        - text: They put their arms around one another.
+          atS: 55.17
+          durationS: 2.05
+        - text: And they formed a kick line.
+          atS: 57.5
+          durationS: 1.65
+        - text: The police charged, and hit them.
+          atS: 59.48
+          durationS: 2.33
+        - text: Garvin said he could never get that sight out of his mind.
+          atS: 62.32
+          durationS: 3.13
+        - text: And he asked, for what?
+          atS: 65.74
+          durationS: 2.19
+        - text: A kick line.
+          atS: 68.25
+          durationS: 0.99
+        - text: The clubs did not work.
+          atS: 69.85
+          durationS: 1.56
+        - text: There were more kick lines before the night was over.
+          atS: 71.84
+          durationS: 2.7
+        - text: One year later, to the day, the first pride march in the country went through New York.
+          atS: 75.36
+          durationS: 5.84
+        - text: Look at the park again.
+          atS: 81.64
+          durationS: 1.21
+        - text: The benches.
+          atS: 83.02
+          durationS: 0.93
+        - text: The fence.
+          atS: 84.07
+          durationS: 0.85
+        - text: One of the kids from here, Thomas Lanigan Schmidt, said most of the people he knew back then were dead within four years.
+          atS: 85.36
+          durationS: 6.61
+        - text: For one night, here, they were not the ones running.
+          atS: 92.66
+          durationS: 3.19

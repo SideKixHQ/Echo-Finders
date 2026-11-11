@@ -9,7 +9,7 @@ at: { lat: 40.81450, lng: -73.94070 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 100
+durationS: 95
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -153,3 +153,95 @@ sources:
     url: https://archive.org/details/sim_crisis_the-crisis_1921-06_22_2
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-ten-thousand-answers/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 95
+    audioBytes: 1521414
+    transcript:
+      totalS: 95
+      lines:
+        - text: Look at the library on this corner.
+          atS: 0
+          durationS: 1.83
+        - text: Inside, just past the front desk, a map of rivers is set into the floor, in brass.
+          atS: 2.28
+          durationS: 6.14
+        - text: Some of a poet is buried under it.
+          atS: 8.86
+          durationS: 2.04
+        - text: Start with a boy in Puerto Rico, named Arturo Schomburg.
+          atS: 11.34
+          durationS: 4.21
+        - text: The story the library tells goes like this.
+          atS: 16.37
+          durationS: 2.8
+        - text: In school, he asked his teacher when they would learn the history of people who looked like him.
+          atS: 19.68
+          durationS: 4.47
+        - text: The teacher said there was no such thing.
+          atS: 24.84
+          durationS: 2.36
+        - text: That people who looked like him had never done anything worthwhile.
+          atS: 27.81
+          durationS: 3.73
+        - text: At seventeen, he came to New York.
+          atS: 32.23
+          durationS: 2.43
+        - text: And he started collecting.
+          atS: 34.98
+          durationS: 1.42
+        - text: Books.
+          atS: 36.68
+          durationS: 0.48
+        - text: Letters.
+          atS: 37.2
+          durationS: 0.49
+        - text: Pictures.
+          atS: 37.72
+          durationS: 0.74
+        - text: Anything that told the story his teacher said did not exist.
+          atS: 38.71
+          durationS: 3.48
+        - text: By the nineteen twenties, the story goes, there were books on the staircase of his home.
+          atS: 42.89
+          durationS: 5.31
+        - text: He called them his vindicating evidences.
+          atS: 48.58
+          durationS: 2.37
+        - text: Ten thousand of them.
+          atS: 51.39
+          durationS: 1.51
+        - text: In nineteen twenty six, the library bought his collection.
+          atS: 53.59
+          durationS: 3.26
+        - text: Today the center holds more than eleven million items.
+          atS: 57.24
+          durationS: 3.17
+        - text: In its visitor log you can still see the names of the writers who came to use it.
+          atS: 61.01
+          durationS: 4.57
+        - text: Zora Neale Hurston.
+          atS: 66.54
+          durationS: 1.66
+        - text: Langston Hughes.
+          atS: 69.01
+          durationS: 1.31
+        - text: And when Langston Hughes died, some of his ashes were laid in the floor of this building.
+          atS: 71.02
+          durationS: 4.96
+        - text: Under that brass map of rivers.
+          atS: 76.58
+          durationS: 2.11
+        - text: It is named for his first famous poem.
+          atS: 79.39
+          durationS: 2.54
+        - text: He wrote it at eighteen, watching the sun go down over the Mississippi from a train.
+          atS: 82.53
+          durationS: 4.83
+        - text: A teacher once told a boy there was no such history.
+          atS: 87.88
+          durationS: 3.42
+        - text: My soul has grown deep like the rivers.
+          atS: 91.91
+          durationS: 3.11

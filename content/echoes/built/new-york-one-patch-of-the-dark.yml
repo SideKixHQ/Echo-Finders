@@ -9,7 +9,7 @@ at: { lat: 40.75285, lng: -73.97715 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 84
+durationS: 71
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -102,3 +102,74 @@ sources:
     url: https://www.cbsnews.com/newyork/news/grand-central-entrance-to-be-named-for-jacqueline-kennedy-onassis/
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-one-patch-of-the-dark/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.4
+    audioBytes: 1143161
+    transcript:
+      totalS: 71.4
+      lines:
+        - text: Look up at the ceiling.
+          atS: 0
+          durationS: 1.36
+        - text: The green sky.
+          atS: 1.74
+          durationS: 1.09
+        - text: The gold stars.
+          atS: 3.01
+          durationS: 1.36
+        - text: Now look for the dark patch, high up, near the western windows.
+          atS: 4.81
+          durationS: 4.27
+        - text: Everything else up there is clean.
+          atS: 9.4
+          durationS: 1.96
+        - text: That one patch is not.
+          atS: 11.64
+          durationS: 1.95
+        - text: At one time, this whole night sky was black.
+          atS: 14.9
+          durationS: 3.01
+        - text: Decades of cigarette and cigar smoke.
+          atS: 18.23
+          durationS: 2.37
+        - text: In the nineteen nineties, workers spent a year cleaning the tar off it, by hand.
+          atS: 21.11
+          durationS: 4.55
+        - text: And they left that patch, on purpose, to show how dirty it had been.
+          atS: 25.87
+          durationS: 4.1
+        - text: But there very nearly was no ceiling to clean.
+          atS: 30.35
+          durationS: 2.55
+        - text: In nineteen sixty four, the old Penn Station, across town, was torn down.
+          atS: 33.6
+          durationS: 5.12
+        - text: Grand Central was in trouble too.
+          atS: 39.32
+          durationS: 1.88
+        - text: Its owners wanted to build a tower, fifty five stories high, on top of it.
+          atS: 41.65
+          durationS: 4.43
+        - text: In nineteen seventy five, a woman who had once lived in the White House led the fight against that plan.
+          atS: 47.03
+          durationS: 6.08
+        - text: Jacqueline Kennedy Onassis.
+          atS: 53.63
+          durationS: 2.03
+        - text: It went all the way to the United States Supreme Court.
+          atS: 55.94
+          durationS: 3.39
+        - text: Three years later, the court upheld the city's landmark law.
+          atS: 60.02
+          durationS: 4.1
+        - text: The tower was never built.
+          atS: 64.56
+          durationS: 1.58
+        - text: Look at the dark patch again.
+          atS: 66.47
+          durationS: 1.61
+        - text: They kept one piece of the dark, so you would know.
+          atS: 68.41
+          durationS: 2.97

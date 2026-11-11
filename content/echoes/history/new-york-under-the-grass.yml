@@ -9,7 +9,7 @@ at: { lat: 40.78420, lng: -73.96895 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 98
+durationS: 91
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -134,3 +134,95 @@ sources:
     url: https://www.cbsnews.com/news/uncovering-the-history-of-seneca-village-in-new-york-city/
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-under-the-grass/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 90.7
+    audioBytes: 1451615
+    transcript:
+      totalS: 90.7
+      lines:
+        - text: Look around you.
+          atS: 0
+          durationS: 0.89
+        - text: The paths.
+          atS: 1.17
+          durationS: 0.96
+        - text: The trees.
+          atS: 2.31
+          durationS: 0.91
+        - text: The playground nearby.
+          atS: 3.54
+          durationS: 1.54
+        - text: Before there was a Central Park, there was a village here.
+          atS: 5.47
+          durationS: 2.88
+        - text: In September, eighteen twenty five, a shoe shiner named Andrew Williams bought three lots of land, right around here.
+          atS: 8.67
+          durationS: 7.3
+        - text: He was twenty five, and a free Black man.
+          atS: 16.42
+          durationS: 2.89
+        - text: Slavery had not even ended yet in New York.
+          atS: 20
+          durationS: 2.69
+        - text: Others followed him.
+          atS: 23.02
+          durationS: 1.1
+        - text: Free Black families, and later Irish and German immigrants.
+          atS: 24.51
+          durationS: 4.05
+        - text: They built houses, three churches, a school.
+          atS: 29
+          durationS: 3.45
+        - text: They called it Seneca Village.
+          atS: 32.96
+          durationS: 1.88
+        - text: Owning land mattered.
+          atS: 35.23
+          durationS: 1.51
+        - text: In those days, a Black man in New York who owned property could vote.
+          atS: 37.17
+          durationS: 4.42
+        - text: Seneca Village had the largest number of Black property owners in the city before the Civil War.
+          atS: 42.11
+          durationS: 5.26
+        - text: Then the city decided it wanted a park.
+          atS: 47.81
+          durationS: 2.6
+        - text: The newspapers started calling the villagers squatters and vagabonds.
+          atS: 51.11
+          durationS: 4.33
+        - text: In eighteen fifty seven, the city used eminent domain to force them out.
+          atS: 55.82
+          durationS: 4.87
+        - text: Police removed the ones who resisted.
+          atS: 61.38
+          durationS: 2.47
+        - text: Then the village was knocked down, and the park was built over it.
+          atS: 64.24
+          durationS: 3.61
+        - text: Historians still know very little about where the people went.
+          atS: 68.29
+          durationS: 3.49
+        - text: In two thousand eleven, archaeologists dug here.
+          atS: 72.23
+          durationS: 3.44
+        - text: They found bottles, dishes, buttons, a toothbrush.
+          atS: 75.94
+          durationS: 4.35
+        - text: And the sole of a child's shoe.
+          atS: 80.62
+          durationS: 2.14
+        - text: One of the students on the dig started to cry.
+          atS: 83.36
+          durationS: 2.6
+        - text: Look down at the grass.
+          atS: 86.24
+          durationS: 1.39
+        - text: The village is still here.
+          atS: 87.96
+          durationS: 1.38
+        - text: Just underneath.
+          atS: 89.46
+          durationS: 1.19

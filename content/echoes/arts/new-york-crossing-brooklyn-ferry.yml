@@ -9,7 +9,7 @@ at: { lat: 40.70335, lng: -73.99530 }
 triggerRadiusKm: 0.04
 category: arts
 format: short
-durationS: 88
+durationS: 83
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -100,3 +100,74 @@ sources:
     url: https://www.nbcnews.com/id/wbna38453301
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-crossing-brooklyn-ferry/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 82.9
+    audioBytes: 1328317
+    transcript:
+      totalS: 82.9
+      lines:
+        - text: Look at the railing around this pier.
+          atS: 0
+          durationS: 1.88
+        - text: There are words stamped into the metal.
+          atS: 2.13
+          durationS: 2.1
+        - text: They were written for you.
+          atS: 4.38
+          durationS: 1.32
+        - text: Not for anyone in particular.
+          atS: 5.98
+          durationS: 1.66
+        - text: For whoever happened to be standing here, years after the man who wrote them was gone.
+          atS: 7.96
+          durationS: 4.68
+        - text: Before there were bridges, ferries crossed to Manhattan from this landing.
+          atS: 12.92
+          durationS: 3.89
+        - text: The first one, back in sixteen forty two, was just a man rowing a boat.
+          atS: 17.76
+          durationS: 4.45
+        - text: In the eighteen forties, Walt Whitman worked near here, as the editor of the Brooklyn Eagle.
+          atS: 23.16
+          durationS: 5.35
+        - text: He crossed this river many, many times.
+          atS: 29.33
+          durationS: 2.31
+        - text: And in one poem, he stopped looking at the water, and started thinking about the people who would cross it after him.
+          atS: 32.24
+          durationS: 6.3
+        - text: Others will enter the gates of the ferry and cross from shore to shore.
+          atS: 39.36
+          durationS: 3.65
+        - text: A hundred years hence, or ever so many hundred years hence, others will see them.
+          atS: 43.82
+          durationS: 5.54
+        - text: And then he spoke to them.
+          atS: 49.84
+          durationS: 1.35
+        - text: To you.
+          atS: 51.95
+          durationS: 0.77
+        - text: It avails not, time nor place.
+          atS: 53.37
+          durationS: 2.37
+        - text: Distance avails not.
+          atS: 56.15
+          durationS: 1.52
+        - text: I am with you, you men and women of a generation, or ever so many generations hence.
+          atS: 58.04
+          durationS: 5.34
+        - text: Just as you feel when you look on the river and sky, so I felt.
+          atS: 64.68
+          durationS: 3.88
+        - text: Just as you stand and lean on the rail, I stood.
+          atS: 69.51
+          durationS: 3.33
+        - text: Rest your hand on the rail, and look across the water.
+          atS: 73.79
+          durationS: 3.25
+        - text: Consider, he wrote, whether I may not in unknown ways be looking upon you.
+          atS: 77.74
+          durationS: 5.2
