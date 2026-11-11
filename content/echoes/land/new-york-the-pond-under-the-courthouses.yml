@@ -1,0 +1,167 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Civic Center and Five Points cluster (more NYC batch).
+# Listening spot: Collect Pond Park, Centre Street at Leonard Street, among the courthouses of Foley Square: a small park with a shallow pool on the site of the old Collect Pond.
+# Position: Wikidata Q34819127 (Collect Pond Park) coordinate (high confidence). About 300 m from the African Burial Ground echo on main; a different subject.
+id: new-york-the-pond-under-the-courthouses
+title: "The Pond Under the Courthouses"
+summary: "A pond once filled this hollow among the courthouses. A steamboat was tested on it. Then it was drained, and the ground sank."
+place: "Collect Pond Park, Centre Street at Leonard Street, Civic Center, Manhattan"
+at: { lat: 40.71639, lng: -74.00167 }
+triggerRadiusKm: 0.06
+category: land
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [new-york, civic-center, foley-square, collect-pond, five-points, steamboat, landfill]
+teaser: "Under the courthouses there was a pond. Filling it in made a slum."
+script: |
+  Look around you. Courthouses, granite steps, lawyers hurrying. And in the middle, a little park with a shallow pool.
+
+  That pool is a reminder. In the seventeen hundreds, there was a real pond here, called the Collect, in a hollow of marshland. A stream ran out of it, west, all the way to the Hudson.
+
+  And in seventeen ninety six, a man named John Fitch was out on that pond, testing a steamboat. More than ten years before Robert Fulton's.
+
+  Then the city grew up around the water. In the hard times of eighteen oh eight, the city put men to work, as relief, draining it. For a while the new ground was a place for holidays, for sailors and oystermen.
+
+  But the pond did not go quietly. The filled land began to sink into the half drained swamp. Houses settled. Taverns emptied. The people who could leave, left. Those who could not, freed slaves and new immigrants, were left behind.
+
+  Out of that sinking ground grew Five Points, the most infamous neighbourhood in New York history.
+
+  And the stream? It became a street. Canal Street, named for the stream, and following its course.
+
+  Look down at the pool.
+
+  The water was here first. The city is still standing on its bed.
+
+pronunciations:
+  - written: Collect
+    say: KOL-ect
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In the seventeen hundreds, there was a real pond here, called the Collect, in a hollow of marshland."
+    source: 1
+    quote: "This entire area in the eighteenth century comprised marshland and a pond known as the Collect."
+  - says: "A stream ran out of it, west, all the way to the Hudson."
+    source: 1
+    quote: "Canal Street, named for and following the course of a stream that ran from Collect Pond (the site of the present Foley Square district) to | the Hudson"
+  - says: "And in seventeen ninety six, a man named John Fitch was out on that pond, testing a steamboat."
+    source: 1
+    quote: "It was on this pond that John Fitch, in 1796, conducted experiments with a steamboat."
+  - says: "More than ten years before Robert Fulton's."
+    source: 2
+    quote: "New York's Hudson-Fulton Celebration honoring the centennial of Robert Fulton's steamboat"
+  - says: "In the hard times of eighteen oh eight, the city put men to work, as relief, draining it."
+    source: 1
+    quote: "In the depression of 1808, municipal authorities established a work relief project to drain the section."
+  - says: "For a while the new ground was a place for holidays, for sailors and oystermen."
+    source: 1
+    quote: "It became a recreational center for holiday-making laborers, sailors, and oystermen."
+  - says: "The filled land began to sink into the half drained swamp."
+    source: 1
+    quote: "But when the land began to sink into the imperfectly drained swamp, the houses and taverns of the region were abandoned to freed slaves and hapless immigrants."
+  - says: "Those who could not, freed slaves and new immigrants, were left behind."
+    source: 1
+    quote: "the houses and taverns of the region were abandoned to freed slaves and hapless immigrants."
+  - says: "Out of that sinking ground grew Five Points, the most infamous neighbourhood in New York history."
+    source: 1
+    quote: "Such was the origin of the historically infamous Five Points section."
+  - says: "Canal Street, named for the stream, and following its course."
+    source: 1
+    quote: "Canal Street, named for and following the course of a stream that ran from Collect Pond"
+  - says: "The water was here first. The city is still standing on its bed."
+    source: 1
+    quote: "This entire area in the eighteenth century comprised marshland and a pond known as the Collect."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: City Hall District and Lower West Side"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Dream of Flight: The Achievement (exhibition text, on the Hudson-Fulton Celebration of 1909)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/exhibits/dreamofflight/dream-achieve.html
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-pond-under-the-courthouses/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 88.4
+    audioBytes: 1415252
+    transcript:
+      totalS: 88.4
+      lines:
+        - text: Look around you.
+          atS: 0
+          durationS: 1.01
+        - text: Courthouses, granite steps, lawyers hurrying.
+          atS: 1.25
+          durationS: 3.35
+        - text: And in the middle, a little park with a shallow pool.
+          atS: 4.93
+          durationS: 3.15
+        - text: That pool is a reminder.
+          atS: 8.78
+          durationS: 1.64
+        - text: In the seventeen hundreds, there was a real pond here, called the Collect, in a hollow of marshland.
+          atS: 10.86
+          durationS: 7.62
+        - text: A stream ran out of it, west, all the way to the Hudson.
+          atS: 19.17
+          durationS: 4.06
+        - text: And in seventeen ninety six, a man named John Fitch was out on that pond, testing a steamboat.
+          atS: 23.84
+          durationS: 6.16
+        - text: More than ten years before Robert Fulton's.
+          atS: 30.51
+          durationS: 2.53
+        - text: Then the city grew up around the water.
+          atS: 33.99
+          durationS: 2.08
+        - text: In the hard times of eighteen oh eight, the city put men to work, as relief, draining it.
+          atS: 36.67
+          durationS: 5.97
+        - text: For a while the new ground was a place for holidays, for sailors and oystermen.
+          atS: 43.45
+          durationS: 5.07
+        - text: But the pond did not go quietly.
+          atS: 49.04
+          durationS: 2.08
+        - text: The filled land began to sink into the half drained swamp.
+          atS: 51.81
+          durationS: 3.67
+        - text: Houses settled.
+          atS: 56.09
+          durationS: 1.18
+        - text: Taverns emptied.
+          atS: 57.45
+          durationS: 1.32
+        - text: The people who could leave, left.
+          atS: 59.21
+          durationS: 2.19
+        - text: Those who could not, freed slaves and new immigrants, were left behind.
+          atS: 61.91
+          durationS: 5.11
+        - text: Out of that sinking ground grew Five Points, the most infamous neighbourhood in New York history.
+          atS: 67.72
+          durationS: 6.12
+        - text: And the stream?
+          atS: 74.53
+          durationS: 1.03
+        - text: It became a street.
+          atS: 76.17
+          durationS: 1.37
+        - text: Canal Street, named for the stream, and following its course.
+          atS: 77.92
+          durationS: 3.84
+        - text: Look down at the pool.
+          atS: 82.28
+          durationS: 1.25
+        - text: The water was here first.
+          atS: 83.81
+          durationS: 1.68
+        - text: The city is still standing on its bed.
+          atS: 85.7
+          durationS: 2.67

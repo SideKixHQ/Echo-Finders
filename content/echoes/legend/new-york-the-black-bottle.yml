@@ -1,0 +1,149 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Kips Bay (more NYC batch).
+# Listening spot: The First Avenue side of Bellevue Hospital at East 27th Street, by the old brick and iron gateway of the original hospital building.
+# Position: First Avenue at East 27th Street, from the street plan (medium confidence). Kips Bay, about 1.5 km from the Midtown cluster.
+id: new-york-the-black-bottle
+title: "The Black Bottle"
+summary: "The city's poor once whispered that Bellevue kept a black bottle for troublesome patients. A rumor. The fear behind it was real."
+place: "Bellevue Hospital, First Avenue at East 27th Street, Kips Bay, Manhattan"
+at: { lat: 40.73930, lng: -73.97560 }
+triggerRadiusKm: 0.08
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 71
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A rumor told among the poor, not history. The Federal Writers' Project guide of 1939 calls the "Black Bottle", said to be used to do away with troublesome patients, one of the "once popular superstitions" about Bellevue. Nothing supports it. The same guide reports as fact that very few cholera patients who entered Bellevue in 1832 recovered, and that untrained female prisoners once served as nurses there. The script says out loud that the bottle is a rumor.
+minAge: 10
+quality: 0.8
+tags: [new-york, kips-bay, bellevue, hospital, rumor, folklore, cholera]
+teaser: "If you were poor and went into Bellevue, people said, you might meet the black bottle."
+script: |
+  Look at the hospital in front of you. Bellevue. Its story goes back to seventeen thirty six, and the city's guide called it the oldest general hospital on the continent.
+
+  For a long time, the poor of this city were afraid of it. And they had a name for what they feared.
+
+  The Black Bottle.
+
+  This is a rumor. Nobody ever proved it. Here is what people said.
+
+  If you were poor, and you ended up in Bellevue, and you were trouble, the hospital kept a black bottle. A dose from it, and you would not be trouble any more.
+
+  It was not true. By nineteen thirty nine, the city's guidebook was calling it a superstition, and nearly gone.
+
+  But the fear did not come from nowhere. In the cholera summer of eighteen thirty two, the guide said, very few who entered Bellevue came out alive. There were times when the nurses were women prisoners, untrained, sent in from the jails. And a hospital that took in the poorest people in the city had, the guide said, a high death rate.
+
+  So a story grew to hold the fear.
+
+  Look at the doors.
+
+  The bottle was never real. The thing it stood for was.
+
+pronunciations:
+  - written: Bellevue
+    say: BELL-vyoo
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Its story goes back to seventeen thirty six, and the city's guide called it the oldest general hospital on the continent."
+    source: 1
+    quote: "Bellevue's history goes back to British New York in 1736"
+  - says: "Its story goes back to seventeen thirty six, and the city's guide called it the oldest general hospital on the continent."
+    source: 1
+    quote: "Bellevue is the oldest general hospital on the North American continent."
+  - says: "The Black Bottle."
+    source: 1
+    quote: "Almost vanished, however, are such once popular superstitions among the poor as that of the \"Black Bottle,\" used to do away with troublesome patients."
+  - says: "By nineteen thirty nine, the city's guidebook was calling it a superstition, and nearly gone."
+    source: 1
+    quote: "Almost vanished, however, are such once popular superstitions among the poor as that of the \"Black Bottle,\""
+  - says: "In the cholera summer of eighteen thirty two, the guide said, very few who entered Bellevue came out alive."
+    source: 1
+    quote: "a frightful mortality during the cholera plague of 1832, when more than thirty-five hundred New Yorkers died of the disease and a very few who entered Bellevue recovered."
+  - says: "There were times when the nurses were women prisoners, untrained, sent in from the jails."
+    source: 1
+    quote: "untrained female prisoners acting as nurses"
+  - says: "And a hospital that took in the poorest people in the city had, the guide said, a high death rate."
+    source: 1
+    quote: "in handling vast numbers of humanity's underprivileged it naturally has a high death rate."
+  - says: "If you were poor, and you ended up in Bellevue, and you were trouble, the hospital kept a black bottle."
+    source: 1
+    quote: "Almost vanished, however, are such once popular superstitions among the poor as that of the \"Black Bottle,\" used to do away with troublesome patients."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Bellevue Hospital"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-the-black-bottle/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 70.8
+    audioBytes: 1133548
+    transcript:
+      totalS: 70.8
+      lines:
+        - text: Look at the hospital in front of you.
+          atS: 0
+          durationS: 1.75
+        - text: Bellevue.
+          atS: 1.96
+          durationS: 0.73
+        - text: Its story goes back to seventeen thirty six, and the city's guide called it the oldest general hospital on the continent.
+          atS: 3.02
+          durationS: 6.76
+        - text: For a long time, the poor of this city were afraid of it.
+          atS: 10.1
+          durationS: 3.2
+        - text: And they had a name for what they feared.
+          atS: 13.55
+          durationS: 2.04
+        - text: The Black Bottle.
+          atS: 16.03
+          durationS: 0.99
+        - text: This is a rumor.
+          atS: 17.62
+          durationS: 1.02
+        - text: Nobody ever proved it.
+          atS: 18.92
+          durationS: 1.22
+        - text: Here is what people said.
+          atS: 20.84
+          durationS: 1.31
+        - text: If you were poor, and you ended up in Bellevue, and you were trouble, the hospital kept a black bottle.
+          atS: 22.85
+          durationS: 6.33
+        - text: A dose from it, and you would not be trouble any more.
+          atS: 29.62
+          durationS: 3.09
+        - text: It was not true.
+          atS: 33.31
+          durationS: 1.2
+        - text: By nineteen thirty nine, the city's guidebook was calling it a superstition, and nearly gone.
+          atS: 35.11
+          durationS: 5.35
+        - text: But the fear did not come from nowhere.
+          atS: 40.97
+          durationS: 2.07
+        - text: In the cholera summer of eighteen thirty two, the guide said, very few who entered Bellevue came out alive.
+          atS: 43.64
+          durationS: 6.83
+        - text: There were times when the nurses were women prisoners, untrained, sent in from the jails.
+          atS: 51.07
+          durationS: 5.46
+        - text: And a hospital that took in the poorest people in the city had, the guide said, a high death rate.
+          atS: 57.04
+          durationS: 5.47
+        - text: So a story grew to hold the fear.
+          atS: 63.11
+          durationS: 2.28
+        - text: Look at the doors.
+          atS: 65.71
+          durationS: 1.05
+        - text: The bottle was never real.
+          atS: 67.08
+          durationS: 1.59
+        - text: The thing it stood for was.
+          atS: 69
+          durationS: 1.78

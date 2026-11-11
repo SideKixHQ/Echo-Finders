@@ -1,0 +1,192 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Fort Greene and downtown Brooklyn cluster (more NYC batch).
+# Listening spot: The foot of the Prison Ship Martyrs' Monument, the tall Doric column on the hilltop in Fort Greene Park; the crypt is beneath it.
+# Position: Wikidata Q7245761 (Prison Ship Martyrs' Monument) coordinate (high confidence).
+id: new-york-under-the-surface-of-that-hill
+title: "Under the Surface of That Hill"
+summary: "More than 11,500 American prisoners died on British ships in the bay below. A crypt under this column holds what was found of them."
+place: "Prison Ship Martyrs' Monument, Fort Greene Park, Brooklyn"
+at: { lat: 40.69180, lng: -73.97560 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 81
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [new-york, brooklyn, fort-greene, revolution, military, prison-ships, wallabout-bay]
+teaser: "They could have walked free. All they had to do was change sides."
+script: |
+  Look up at the column, rising out of the hilltop. Then look down at the steps under your feet.
+
+  Underneath you is a crypt. It holds the bones of prisoners from a war fought two hundred and fifty years ago.
+
+  During the Revolution, the British kept American prisoners in old ships, moored in the bay just north of this hill. The worst was called the Jersey. It was built for four hundred sailors. They crammed twelve hundred Americans into it.
+
+  A boy named John Blatchford went to sea at fifteen, on a privateer. He was captured. He was sent to prison in Nova Scotia, put on trial in Britain, put to hard labor in Sumatra. And then he was put on the Jersey. Twice.
+
+  The second time he came aboard, he looked for the men he had left three months before. Very few were there. Some had escaped. Some had been exchanged.
+
+  But the greater part, he wrote, had taken up their abode under the surface of that hill.
+
+  More than eleven thousand five hundred people died on those ships.
+
+  And here is the turn. Almost every one of them could have walked free. The British offered them freedom, if they would fight for the King. Almost none of them took it.
+
+  Look up at the column again.
+
+  It is standing on their answer.
+
+pronunciations:
+  - written: Blatchford
+    say: BLATCH-ferd
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Underneath you is a crypt."
+    source: 2
+    quote: "as well as a crypt for the remains of the 11,500 prison ship martyrs"
+  - says: "It holds the bones of prisoners from a war fought two hundred and fifty years ago."
+    source: 2
+    quote: "a crypt for the remains of the 11,500 prison ship martyrs; brave men and women who died while imprisoned"
+  - says: "During the Revolution, the British kept American prisoners in old ships, moored in the bay just north of this hill."
+    source: 3
+    quote: "commemorates the 11,000 patriots who died aboard British prison ships in Wallabout Bay on the site of the Navy Yard during the Revolutionary War."
+  - says: "The worst was called the Jersey."
+    source: 1
+    quote: "The deadliest of the floating British prisons was the infamous HMS Jersey."
+  - says: "It was built for four hundred sailors."
+    source: 1
+    quote: "The Jersey was built for 400 sailors, but 1,200 Americans were kept there, crammed into it."
+  - says: "They crammed twelve hundred Americans into it."
+    source: 1
+    quote: "The Jersey was built for 400 sailors, but 1,200 Americans were kept there, crammed into it."
+  - says: "A boy named John Blatchford went to sea at fifteen, on a privateer."
+    source: 1
+    quote: "After shipping onto a privateer at the age of 15, John Blatchford was captured and sent around the world in British captivity"
+  - says: "He was sent to prison in Nova Scotia, put on trial in Britain, put to hard labor in Sumatra."
+    source: 1
+    quote: "to prison in Halifax, Nova Scotia; a trial in Britain; hard labor in Sumatra; and eventually, to the prison ship Jersey in New York"
+  - says: "And then he was put on the Jersey. Twice."
+    source: 1
+    quote: "and eventually, to the prison ship Jersey in New York"
+  - says: "The second time he came aboard, he looked for the men he had left three months before."
+    source: 1
+    quote: "I was just three months from my leaving the old Jersey, and my being again a prisoner on board of her; and on my return I found but very few of those whom I had left three months before"
+  - says: "Some had escaped. Some had been exchanged."
+    source: 1
+    quote: "some had made their escape; some had been exchanged"
+  - says: "But the greater part, he wrote, had taken up their abode under the surface of that hill."
+    source: 1
+    quote: "but the greater part had taken up their abode under the surface of that hill which you can see from your windows"
+  - says: "More than eleven thousand five hundred people died on those ships."
+    source: 1
+    quote: "Nearly every man and boy of the more than 11,500 who died on the prison ships remained there of their own free will."
+  - says: "Almost every one of them could have walked free."
+    source: 1
+    quote: "Nearly every man and boy of the more than 11,500 who died on the prison ships remained there of their own free will."
+  - says: "The British offered them freedom, if they would fight for the King."
+    source: 1
+    quote: "Captives were generally offered their freedom should they take up arms for the British side."
+  - says: "Almost none of them took it."
+    source: 1
+    quote: "However, exceedingly few chose to abandon the Patriot cause."
+sources:
+  - title: "The Prison Ship Martyrs"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/prison-ship-martyrs.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Fort Greene Park"
+    publisher: "National Park Service"
+    url: https://home.nps.gov/places/fort-greene-park.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Fort Greene Park"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-under-the-surface-of-that-hill/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.4
+    audioBytes: 1302821
+    transcript:
+      totalS: 81.4
+      lines:
+        - text: Look up at the column, rising out of the hilltop.
+          atS: 0
+          durationS: 3.25
+        - text: Then look down at the steps under your feet.
+          atS: 3.58
+          durationS: 2.75
+        - text: Underneath you is a crypt.
+          atS: 6.84
+          durationS: 1.94
+        - text: It holds the bones of prisoners from a war fought two hundred and fifty years ago.
+          atS: 9.22
+          durationS: 5.05
+        - text: During the Revolution, the British kept American prisoners in old ships, moored in the bay just north of this hill.
+          atS: 14.96
+          durationS: 6.82
+        - text: The worst was called the Jersey.
+          atS: 21.99
+          durationS: 2.11
+        - text: It was built for four hundred sailors.
+          atS: 24.25
+          durationS: 2.37
+        - text: They crammed twelve hundred Americans into it.
+          atS: 26.74
+          durationS: 2.69
+        - text: A boy named John Blatchford went to sea at fifteen, on a privateer.
+          atS: 29.76
+          durationS: 4.45
+        - text: He was captured.
+          atS: 34.53
+          durationS: 1.02
+        - text: He was sent to prison in Nova Scotia, put on trial in Britain, put to hard labor in Sumatra.
+          atS: 35.87
+          durationS: 5.9
+        - text: And then he was put on the Jersey.
+          atS: 41.89
+          durationS: 1.92
+        - text: Twice.
+          atS: 44.19
+          durationS: 0.77
+        - text: The second time he came aboard, he looked for the men he had left three months before.
+          atS: 45.46
+          durationS: 4.7
+        - text: Very few were there.
+          atS: 50.55
+          durationS: 1.28
+        - text: Some had escaped.
+          atS: 52.15
+          durationS: 1.22
+        - text: Some had been exchanged.
+          atS: 53.55
+          durationS: 1.54
+        - text: But the greater part, he wrote, had taken up their abode under the surface of that hill.
+          atS: 55.41
+          durationS: 5.32
+        - text: More than eleven thousand five hundred people died on those ships.
+          atS: 61.11
+          durationS: 3.99
+        - text: And here is the turn.
+          atS: 65.32
+          durationS: 1.49
+        - text: Almost every one of them could have walked free.
+          atS: 67.13
+          durationS: 3.03
+        - text: The British offered them freedom, if they would fight for the King.
+          atS: 70.86
+          durationS: 3.42
+        - text: Almost none of them took it.
+          atS: 74.66
+          durationS: 1.8
+        - text: Look up at the column again.
+          atS: 77.16
+          durationS: 1.65
+        - text: It is standing on their answer.
+          atS: 79.19
+          durationS: 2.17

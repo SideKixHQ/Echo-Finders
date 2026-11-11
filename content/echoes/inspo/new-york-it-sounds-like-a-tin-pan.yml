@@ -1,0 +1,154 @@
+# Drafted by Claude Code (2026-11-11) for the New York City Pass, NoMad (more NYC, second pass).
+# Listening spot: The West 28th Street sidewalk between Broadway and Sixth Avenue, in front of the row of five old houses at numbers 47 to 55.
+# Position: Overture Maps address point for 51 W 28 St, 10001, the middle of the row (high confidence).
+id: new-york-it-sounds-like-a-tin-pan
+title: "It Sounds Like a Tin Pan"
+summary: "Around 1900 this block was loud with sheet music publishers' pianos. Its nickname, an insult, became the name for American popular music."
+place: "Tin Pan Alley, 47 to 55 West 28th Street, between Broadway and Sixth Avenue, NoMad, Manhattan"
+at: { lat: 40.74592, lng: -73.98995 }
+triggerRadiusKm: 0.06
+category: inspo
+inspo:
+  kind: connection
+  evidence: site
+format: short
+durationS: 83
+visibility: at-hand
+certainty: documented
+certaintyNote: >-
+  The block, the publishers and the 1903 coinage are in the Landmarks Preservation Commission's 2019 designation report for 55 West 28th Street. Who coined the name is unknown; the report lists four candidates and calls the newspaper and piano story folklore. The script says so.
+minAge: 8
+quality: 0.85
+tags: [new-york, nomad, tin-pan-alley, sheet-music, popular-music, piano, landmark]
+teaser: "Every window open, a piano in every one. The neighbors had a name for it."
+script: |
+  Look at the row of old houses along this side of West Twenty Eighth Street. Five of them, numbers forty seven to fifty five.
+
+  Now open every window in your mind, and put a piano behind each one.
+
+  Around nineteen hundred, this block held more sheet music publishers than anywhere else in New York. Records were still too dear for most families. If you wanted a song, you bought the sheet music, and played it at home on the piano.
+
+  So the publishers played their new songs all day, to sell them. One writer described a great room with four or five pianos in it, and a composer at every piano, all playing and singing at the tops of their voices. With the windows wide open, so the music floated down to the street.
+
+  The noise needed a name.
+
+  Nobody knows who said it first. There is a story, and it is only a story, about a publisher who stuffed strips of newspaper behind his piano strings to quiet it down. A journalist heard it and said, it sounds like a tin pan.
+
+  By January, nineteen oh three, the name was in print. West Twenty Eighth Street, more commonly known as Tin Pan Alley.
+
+  It was meant as an insult.
+
+  Look along the block.
+
+  The insult became the name for American popular music.
+
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Five of them, numbers forty seven to fifty five."
+    source: 1
+    quote: "highlighted in the iconic row at 47-55 West 28th Street"
+  - says: "Around nineteen hundred, this block held more sheet music publishers than anywhere else in New York."
+    source: 1
+    quote: "Between 1893 and about 1910, West 28th Street between Broadway and Sixth Avenue became home to the most significant concentration of sheet music publishers then known in New York City."
+  - says: "Records were still too dear for most families. If you wanted a song, you bought the sheet music, and played it at home on the piano."
+    source: 1
+    quote: "Tin Pan Alley arose at a unique technological moment before phonographs and records were affordable for most American families and when sheet music was the principal form of music distribution"
+  - says: "So the publishers played their new songs all day, to sell them."
+    source: 1
+    quote: "the aim of publishers was to expose their music to masses of prospective purchasers to increase the likelihood of sheet music sales"
+  - says: "One writer described a great room with four or five pianos in it, and a composer at every piano, all playing and singing at the tops of their voices. With the windows wide open, so the music floated down to the street."
+    source: 1
+    quote: "Imagine a great room, with four or five pianos in it, and a composer at each piano, composing."
+  - says: "With the windows wide open, so the music floated down to the street."
+    source: 1
+    quote: "the windows of which are wide open, so that the melody floats down to the street"
+  - says: "Nobody knows who said it first."
+    source: 1
+    quote: "has been variously—and inconclusively— attributed to four individuals"
+  - says: "There is a story, and it is only a story, about a publisher who stuffed strips of newspaper behind his piano strings to quiet it down. A journalist heard it and said, it sounds like a tin pan."
+    source: 1
+    quote: "putting strips of newspaper behind the piano strings. According to folklore, Rosenfeld remarked, \"It sounds like a tin pan,\""
+  - says: "By January, nineteen oh three, the name was in print. West Twenty Eighth Street, more commonly known as Tin Pan Alley."
+    source: 1
+    quote: "a January 16, 1903 article in The Morning Telegraph that referred to \"...West Twenty-eighth street, more commonly known as 'Tin Pan Alley,' from the multiplicity of song publishers' pianos.\""
+  - says: "It was meant as an insult."
+    source: 1
+    quote: "In its original usage, \"Tin Pan Alley\" was a term meant to disparage music publishers for their cacophonous and discordant work."
+  - says: "The insult became the name for American popular music."
+    source: 1
+    quote: "Tin Pan Alley became synonymous with the world of popular music."
+  - says: "Look at the row of old houses along this side of West Twenty Eighth Street."
+    source: 1
+    quote: "highlighted in the iconic row at 47-55 West 28th Street"
+  - says: "Now open every window in your mind, and put a piano behind each one."
+    source: 1
+    quote: "with piano music audible on the street from the multiple offices in each modest structure"
+sources:
+  - title: "55 West 28th Street Building, Tin Pan Alley, designation report LP-2630, 10 December 2019"
+    publisher: "New York City Landmarks Preservation Commission"
+    url: https://s-media.nyc.gov/agencies/lpc/lp/2630.pdf
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-it-sounds-like-a-tin-pan/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 83
+    audioBytes: 1329571
+    transcript:
+      totalS: 83
+      lines:
+        - text: Look at the row of old houses along this side of West Twenty Eighth Street.
+          atS: 0
+          durationS: 4.14
+        - text: Five of them, numbers forty seven to fifty five.
+          atS: 4.3
+          durationS: 3.42
+        - text: Now open every window in your mind, and put a piano behind each one.
+          atS: 8
+          durationS: 4.74
+        - text: Around nineteen hundred, this block held more sheet music publishers than anywhere else in New York.
+          atS: 13.18
+          durationS: 6.11
+        - text: Records were still too dear for most families.
+          atS: 19.98
+          durationS: 2.98
+        - text: If you wanted a song, you bought the sheet music, and played it at home on the piano.
+          atS: 23.66
+          durationS: 5.07
+        - text: So the publishers played their new songs all day, to sell them.
+          atS: 29.34
+          durationS: 4.08
+        - text: One writer described a great room with four or five pianos in it, and a composer at every piano, all playing and singing at the tops of their voices.
+          atS: 34.37
+          durationS: 9.01
+        - text: With the windows wide open, so the music floated down to the street.
+          atS: 43.76
+          durationS: 4.03
+        - text: The noise needed a name.
+          atS: 48.39
+          durationS: 1.68
+        - text: Nobody knows who said it first.
+          atS: 50.59
+          durationS: 2.1
+        - text: There is a story, and it is only a story, about a publisher who stuffed strips of newspaper behind his piano strings to quiet it down.
+          atS: 53.13
+          durationS: 8.51
+        - text: A journalist heard it and said, it sounds like a tin pan.
+          atS: 62.15
+          durationS: 3.9
+        - text: By January, nineteen oh three, the name was in print.
+          atS: 66.75
+          durationS: 3.5
+        - text: West Twenty Eighth Street, more commonly known as Tin Pan Alley.
+          atS: 70.84
+          durationS: 4.75
+        - text: It was meant as an insult.
+          atS: 76.03
+          durationS: 1.56
+        - text: Look along the block.
+          atS: 78.1
+          durationS: 1.1
+        - text: The insult became the name for American popular music.
+          atS: 79.59
+          durationS: 3.45

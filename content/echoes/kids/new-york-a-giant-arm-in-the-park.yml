@@ -1,0 +1,165 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Madison Square and Flatiron cluster (more NYC batch).
+# Listening spot: Inside Madison Square Park, between Fifth and Madison Avenues at 23rd to 26th Streets, where the arm and torch of the Statue of Liberty stood on show.
+# Position: Wikidata Q49520655 (Madison Square Park) coordinate, the park's centre (medium confidence; sources say the arm was in Madison Square, not where in it). Radius covers the park.
+id: new-york-a-giant-arm-in-the-park
+title: "A Giant Arm in the Park"
+summary: "For six years, the Statue of Liberty's arm and torch stood in this park, all on their own. The rest of her had not arrived yet."
+place: "Madison Square Park, Fifth Avenue at 23rd to 26th Streets, Manhattan"
+at: { lat: 40.74250, lng: -73.98833 }
+triggerRadiusKm: 0.12
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, madison-square, statue-of-liberty, family, sculpture]
+teaser: "Imagine walking through the park and finding a giant copper arm, holding a torch, with no lady attached."
+script: |
+  Look around this park. Trees, paths, dogs, a burger stand. Now imagine walking through here, a long time ago, and finding a giant arm.
+
+  Just an arm, made of copper, holding up a torch. And no body.
+
+  This really happened.
+
+  The arm belonged to the Statue of Liberty. The artist who made her, Bartholdi, worked in France, and he built her in pieces. The hand with the torch was finished first. So they sent it across the ocean, all by itself.
+
+  First it went to a big fair in Philadelphia. Then it came here, to Madison Square. And it stayed. From eighteen seventy six, all the way to eighteen eighty two.
+
+  Why so long? Money. France was paying for the statue. Americans had to pay for the giant stone base she stands on. While the arm stood here, Americans were raising that money, slowly.
+
+  In eighteen eighty five, the rest of her finally sailed across the ocean, in pieces, on a French navy ship.
+
+  Today she stands out in the harbor, holding that same torch up high.
+
+  Once upon a time, it stood right here in the park.
+
+pronunciations:
+  - written: Bartholdi
+    say: bar-TOL-dee
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "The arm belonged to the Statue of Liberty."
+    source: 2
+    quote: "The arm was also displayed in Madison Square Park in New York City from 1876 to 1882."
+  - says: "The hand with the torch was finished first."
+    source: 1
+    quote: "Bartholdi completes the Statue's hand holding the torch. This section of the Statue is sent to the United States and displayed at the Centennial Exposition in Philadelphia on May 18th."
+  - says: "So they sent it across the ocean, all by itself."
+    source: 1
+    quote: "This section of the Statue is sent to the United States and displayed at the Centennial Exposition in Philadelphia on May 18th."
+  - says: "First it went to a big fair in Philadelphia."
+    source: 2
+    quote: "The Statue of Liberty’s hand holding the torch on display at the 1876 Centennial Exhibition in Philadelphia."
+  - says: "Then it came here, to Madison Square."
+    source: 1
+    quote: "After being part of the Centennial Exposition in Philadelphia, the Statue's torch is displayed at Madison Square in New York City. It remains there until 1882."
+  - says: "From eighteen seventy six, all the way to eighteen eighty two."
+    source: 2
+    quote: "The arm was also displayed in Madison Square Park in New York City from 1876 to 1882."
+  - says: "France was paying for the statue."
+    source: 1
+    quote: "the French agree to fund the Statue if the people of the United States fund the pedestal."
+  - says: "Americans had to pay for the giant stone base she stands on."
+    source: 1
+    quote: "the French agree to fund the Statue if the people of the United States fund the pedestal."
+  - says: "While the arm stood here, Americans were raising that money, slowly."
+    source: 1
+    quote: "The committee raises $125,000 between 1877 and 1884."
+  - says: "In eighteen eighty five, the rest of her finally sailed across the ocean, in pieces, on a French navy ship."
+    source: 1
+    quote: "The Statue is disassembled in Paris and shipped to the United States aboard the French navy ship the Isère. It arrives in New York Harbor on June 17th."
+  - says: "The artist who made her, Bartholdi, worked in France, and he built her in pieces."
+    source: 1
+    quote: "Bartholdi begins constructing the Statue. Bartholdi completes the Statue's hand holding the torch. This section of the Statue is sent to the United States and displayed at the Centennial Exposition in Philadelphia"
+  - says: "The artist who made her, Bartholdi, worked in France, and he built her in pieces."
+    source: 1
+    quote: "The Statue is disassembled in Paris and shipped to the United States aboard the French navy ship the Isère."
+sources:
+  - title: "Liberty Island Chronology"
+    publisher: "National Park Service, Statue of Liberty National Monument"
+    url: https://www.nps.gov/stli/learn/historyculture/liberty-island-a-chronology.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Statue of Liberty celebrates 130 years (photo essay)"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/pictures/statue-of-liberty-celebrates-130-years-in-new-york/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/new-york-a-giant-arm-in-the-park/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 74.7
+    audioBytes: 1195824
+    transcript:
+      totalS: 74.7
+      lines:
+        - text: Look around this park.
+          atS: 0
+          durationS: 1.35
+        - text: Trees, paths, dogs, a burger stand.
+          atS: 1.63
+          durationS: 3.47
+        - text: Now imagine walking through here, a long time ago, and finding a giant arm.
+          atS: 5.42
+          durationS: 4.77
+        - text: Just an arm, made of copper, holding up a torch.
+          atS: 10.63
+          durationS: 3.43
+        - text: And no body.
+          atS: 14.44
+          durationS: 1.07
+        - text: This really happened.
+          atS: 15.95
+          durationS: 1.28
+        - text: The arm belonged to the Statue of Liberty.
+          atS: 17.67
+          durationS: 2.55
+        - text: The artist who made her, Bartholdi, worked in France, and he built her in pieces.
+          atS: 20.67
+          durationS: 5.1
+        - text: The hand with the torch was finished first.
+          atS: 26.27
+          durationS: 2.3
+        - text: So they sent it across the ocean, all by itself.
+          atS: 28.82
+          durationS: 3.01
+        - text: First it went to a big fair in Philadelphia.
+          atS: 32.33
+          durationS: 2.55
+        - text: Then it came here, to Madison Square.
+          atS: 35.21
+          durationS: 2.54
+        - text: And it stayed.
+          atS: 38.14
+          durationS: 1
+        - text: From eighteen seventy six, all the way to eighteen eighty two.
+          atS: 39.58
+          durationS: 4.18
+        - text: Why so long?
+          atS: 44.14
+          durationS: 0.92
+        - text: Money.
+          atS: 45.66
+          durationS: 0.62
+        - text: France was paying for the statue.
+          atS: 47.09
+          durationS: 2.02
+        - text: Americans had to pay for the giant stone base she stands on.
+          atS: 49.44
+          durationS: 3.69
+        - text: While the arm stood here, Americans were raising that money, slowly.
+          atS: 53.45
+          durationS: 4.24
+        - text: In eighteen eighty five, the rest of her finally sailed across the ocean, in pieces, on a French navy ship.
+          atS: 57.97
+          durationS: 7.27
+        - text: Today she stands out in the harbor, holding that same torch up high.
+          atS: 65.48
+          durationS: 4.75
+        - text: Once upon a time, it stood right here in the park.
+          atS: 70.61
+          durationS: 4.06

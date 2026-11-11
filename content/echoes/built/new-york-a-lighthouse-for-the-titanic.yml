@@ -1,0 +1,120 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, South Street Seaport cluster (more NYC batch).
+# Listening spot: The Titanic Memorial Lighthouse, the small white lighthouse tower in its little plaza at Fulton and Pearl Streets, at the entrance to the South Street Seaport.
+# Position: Wikidata Q6147476 (Titanic Memorial) coordinate (high confidence).
+id: new-york-a-lighthouse-for-the-titanic
+title: "A Lighthouse for the Titanic"
+summary: "A year after the Titanic sank, New Yorkers paid for a lighthouse in memory of all aboard. It stood on a sailors' rooftop."
+place: "Titanic Memorial Lighthouse, Fulton Street at Pearl Street, South Street Seaport, Manhattan"
+at: { lat: 40.70740, lng: -74.00386 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-york, seaport, titanic, lighthouse, memorial, sailors]
+teaser: "The Titanic never reached New York. New York built her a lighthouse anyway."
+script: |
+  Look at the small white lighthouse standing at the top of Fulton Street. It is a long way from the sea, at the end of a street of shops.
+
+  It was built for a ship that never arrived.
+
+  The Titanic sank on the fifteenth of April, nineteen twelve. She hit an iceberg on her first voyage, on her way to America.
+
+  The next year, New Yorkers paid for a memorial. Not a statue. A lighthouse. It was raised by public subscription, in memory of the passengers, the officers and the crew.
+
+  They put it on the roof of the Seamen's Church Institute, a thirteen storey building on South Street where sailors could sleep and eat and find a church. A lighthouse on a rooftop, looking out over the harbor, for the people who never sailed into it.
+
+  Years later, the lighthouse came down from the roof and was brought here, to the entrance of the Seaport.
+
+  Look up at the lantern on top.
+
+  It is still keeping watch for a ship that never came in.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "The Titanic sank on the fifteenth of April, nineteen twelve."
+    source: 1
+    quote: "S.S. Titanic, luxury liner that sank April 15, 1912, after striking an iceberg on her maiden voyage to America."
+  - says: "She hit an iceberg on her first voyage, on her way to America."
+    source: 1
+    quote: "after striking an iceberg on her maiden voyage to America."
+  - says: "The next year, New Yorkers paid for a memorial."
+    source: 1
+    quote: "Surmounting the roof is a small lighthouse tower erected in 1913, by public subscription, as a memorial to the passengers, officers, and crew of the S.S. Titanic"
+  - says: "It was raised by public subscription, in memory of the passengers, the officers and the crew."
+    source: 1
+    quote: "erected in 1913, by public subscription, as a memorial to the passengers, officers, and crew of the S.S. Titanic"
+  - says: "They put it on the roof of the Seamen's Church Institute, a thirteen storey building on South Street where sailors could sleep and eat and find a church."
+    source: 1
+    quote: "The SEAMEN'S CHURCH INSTITUTE OF NEW YORK occupies a thirteenstory brick and stone-trimmed structure at 25 South Street"
+  - says: "They put it on the roof of the Seamen's Church Institute, a thirteen storey building on South Street where sailors could sleep and eat and find a church."
+    source: 1
+    quote: "In 1854 activities were expanded to include provision for sailors' lodging and entertainment."
+  - says: "Years later, the lighthouse came down from the roof and was brought here, to the entrance of the Seaport."
+    source: 2
+    quote: "A memorial to the tragedy is a lighthouse that once stood on the East River.Now it can be visited at the entrance to the South Street Seaport."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: South Street"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Getaway Guide To A St. Patrick's Celebration"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/getaway-guide-to-a-st-patricks-celebration/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-a-lighthouse-for-the-titanic/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.1
+    audioBytes: 1058315
+    transcript:
+      totalS: 66.1
+      lines:
+        - text: Look at the small white lighthouse standing at the top of Fulton Street.
+          atS: 0
+          durationS: 4.32
+        - text: It is a long way from the sea, at the end of a street of shops.
+          atS: 4.83
+          durationS: 4.33
+        - text: It was built for a ship that never arrived.
+          atS: 9.76
+          durationS: 2.72
+        - text: The Titanic sank on the fifteenth of April, nineteen twelve.
+          atS: 13.18
+          durationS: 4.13
+        - text: She hit an iceberg on her first voyage, on her way to America.
+          atS: 17.82
+          durationS: 4.39
+        - text: The next year, New Yorkers paid for a memorial.
+          atS: 22.91
+          durationS: 3.01
+        - text: Not a statue.
+          atS: 26.42
+          durationS: 1.07
+        - text: A lighthouse.
+          atS: 27.82
+          durationS: 1.1
+        - text: It was raised by public subscription, in memory of the passengers, the officers and the crew.
+          atS: 29.62
+          durationS: 5.73
+        - text: They put it on the roof of the Seamen's Church Institute, a thirteen storey building on South Street where sailors could sleep and eat and find a church.
+          atS: 36.05
+          durationS: 9.18
+        - text: A lighthouse on a rooftop, looking out over the harbor, for the people who never sailed into it.
+          atS: 45.93
+          durationS: 5.8
+        - text: Years later, the lighthouse came down from the roof and was brought here, to the entrance of the Seaport.
+          atS: 53.03
+          durationS: 6.34
+        - text: Look up at the lantern on top.
+          atS: 60.19
+          durationS: 1.88
+        - text: It is still keeping watch for a ship that never came in.
+          atS: 62.58
+          durationS: 3.51

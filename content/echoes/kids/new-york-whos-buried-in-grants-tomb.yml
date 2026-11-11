@@ -1,0 +1,172 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Morningside Heights and Riverside cluster (more NYC batch).
+# Listening spot: The front steps of Grant's Tomb (General Grant National Memorial), Riverside Drive at West 122nd Street, below the words "Let Us Have Peace".
+# Position: Wikidata Q1025105 (Grant's Tomb) coordinate (high confidence).
+id: new-york-whos-buried-in-grants-tomb
+title: "Who's Buried in Grant's Tomb?"
+summary: "It is the oldest trick question in New York. The answer is nobody, and the reason is inside, under the dome."
+place: "Grant's Tomb, Riverside Drive at West 122nd Street, Morningside Heights, Manhattan"
+at: { lat: 40.81344, lng: -73.96301 }
+triggerRadiusKm: 0.05
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 63
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, morningside-heights, grants-tomb, riddle, family, civil-war]
+teaser: "A riddle with a trick answer. Want to hear it?"
+script: |
+  Look up at the giant stone building in front of you, with the round roof and the big columns. Find the words carved above the door. Let us have peace.
+
+  Here is a riddle grown ups love. Who is buried in Grant's Tomb?
+
+  Easy, you say. Grant. Ulysses S. Grant, the general who won the Civil War, and then became President.
+
+  Wrong. Well, sort of.
+
+  Go inside, under the dome, and look over the railing into the room below. You will see two huge stone boxes. One is General Grant. The other is his wife, Julia.
+
+  Buried means put under the ground. And they are not under the ground. They are resting in the room, above it.
+
+  So who is buried in Grant's Tomb? Nobody.
+
+  Here is the other surprise. About ninety thousand people sent money to build this. It is the biggest tomb of its kind in North America. And when it opened, more than a million people came to the party.
+
+  Now you know the trick.
+
+  Go and try it on somebody.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Find the words carved above the door. Let us have peace."
+    source: 1
+    quote: "Let Us Have Peace Epitaph on the front of Mausoleum"
+  - says: "Ulysses S. Grant, the general who won the Civil War, and then became President."
+    source: 2
+    quote: "commemorate the contributions of Grant as both commanding general of the Union Army who won the Civil War and as the 18th president of the United States."
+  - says: "One is General Grant. The other is his wife, Julia."
+    source: 3
+    quote: "The sunken crypt below the central viewing gallery contains the sarcophogai of Ulysses S Grant and his wife Julia D Grant."
+  - says: "Go inside, under the dome, and look over the railing into the room below."
+    source: 3
+    quote: "The soaring ceiling rises more than 100 feet in to the air to a dome that covers the decorated room. The sunken crypt below the central viewing gallery contains the sarcophogai"
+  - says: "About ninety thousand people sent money to build this."
+    source: 1
+    quote: "Approximately 90,000 people from around the world donated over $600,000 towards the construction of Grant's Tomb."
+  - says: "It is the biggest tomb of its kind in North America."
+    source: 1
+    quote: "the granite and marble structure was completed in 1897 and remains the largest mausoleum in North America."
+  - says: "And when it opened, more than a million people came to the party."
+    source: 1
+    quote: "Over one million people attended the parade and dedication ceremony of Grant's Tomb on April 27, 1897."
+  - says: "Who is buried in Grant's Tomb?"
+    source: 3
+    quote: "The sunken crypt below the central viewing gallery contains the sarcophogai of Ulysses S Grant and his wife Julia D Grant."
+  - says: "You will see two huge stone boxes."
+    source: 3
+    quote: "The sunken crypt below the central viewing gallery contains the sarcophogai of Ulysses S Grant and his wife Julia D Grant."
+sources:
+  - title: "History and Culture, General Grant National Memorial"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/gegr/learn/historyculture/index.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Fact Sheet: General Grant National Memorial"
+    publisher: "National Park Service, National Parks of New York Harbor"
+    url: https://www.nps.gov/npnh/learn/news/gegrfactsheet.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Rotunda of Grant's Tomb"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/the-rotunda-of-grant-s-tomb.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/new-york-whos-buried-in-grants-tomb/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 62.9
+    audioBytes: 1007324
+    transcript:
+      totalS: 62.9
+      lines:
+        - text: Look up at the giant stone building in front of you, with the round roof and the big columns.
+          atS: 0
+          durationS: 5.07
+        - text: Find the words carved above the door.
+          atS: 5.4
+          durationS: 2.65
+        - text: Let us have peace.
+          atS: 8.32
+          durationS: 1.28
+        - text: Here is a riddle grown ups love.
+          atS: 9.93
+          durationS: 2.22
+        - text: Who is buried in Grant's Tomb?
+          atS: 12.32
+          durationS: 1.88
+        - text: Easy, you say.
+          atS: 14.52
+          durationS: 1.1
+        - text: Grant.
+          atS: 16.01
+          durationS: 0.64
+        - text: Ulysses S.
+          atS: 16.97
+          durationS: 1.3
+        - text: Grant, the general who won the Civil War, and then became President.
+          atS: 18.48
+          durationS: 4.05
+        - text: Wrong.
+          atS: 22.86
+          durationS: 0.62
+        - text: Well, sort of.
+          atS: 23.79
+          durationS: 1.13
+        - text: Go inside, under the dome, and look over the railing into the room below.
+          atS: 25.23
+          durationS: 4.47
+        - text: You will see two huge stone boxes.
+          atS: 30.01
+          durationS: 2.64
+        - text: One is General Grant.
+          atS: 32.96
+          durationS: 1.42
+        - text: The other is his wife, Julia.
+          atS: 34.55
+          durationS: 2.02
+        - text: Buried means put under the ground.
+          atS: 36.81
+          durationS: 2.17
+        - text: And they are not under the ground.
+          atS: 39.1
+          durationS: 1.7
+        - text: They are resting in the room, above it.
+          atS: 40.95
+          durationS: 2.58
+        - text: So who is buried in Grant's Tomb?
+          atS: 43.85
+          durationS: 2.09
+        - text: Nobody.
+          atS: 46.27
+          durationS: 0.64
+        - text: Here is the other surprise.
+          atS: 47.18
+          durationS: 1.5
+        - text: About ninety thousand people sent money to build this.
+          atS: 49.01
+          durationS: 3.02
+        - text: It is the biggest tomb of its kind in North America.
+          atS: 52.3
+          durationS: 2.78
+        - text: And when it opened, more than a million people came to the party.
+          atS: 55.25
+          durationS: 3.75
+        - text: Now you know the trick.
+          atS: 59.44
+          durationS: 1.24
+        - text: Go and try it on somebody.
+          atS: 60.93
+          durationS: 1.95

@@ -1,0 +1,136 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Morningside and Riverside cluster (more NYC batch).
+# Listening spot: The Amiable Child monument, a small stone urn behind a railing on the slope of Riverside Park, just north of Grant's Tomb at about West 123rd Street.
+# Position: Wikidata Q21497 (Amiable Child Monument) coordinate (high confidence). A small, easily missed monument, so the radius is tight.
+id: new-york-an-amiable-child
+title: "An Amiable Child"
+summary: "A stone urn on this slope marks the grave of a five year old who died here in 1797. His family sold the land, but not his grave."
+place: "Amiable Child monument, Riverside Drive near West 123rd Street, Morningside Heights, Manhattan"
+at: { lat: 40.81480, lng: -73.96310 }
+triggerRadiusKm: 0.03
+category: people
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [new-york, riverside-park, morningside-heights, grave, eighteenth-century]
+teaser: "The land was sold. One small grave was not."
+script: |
+  Look for a small stone urn behind an iron railing, on the slope just below the drive. Read the words on it. Erected to the memory of an amiable child.
+
+  It is a grave. And it is older than the park, older than the drive, older than almost anything you can see from here.
+
+  In seventeen ninety seven, this hillside was a country estate, high above the Hudson. A little boy named St. Claire Pollock lived here. He was five years old.
+
+  On the fifteenth of July that year, he fell from the rocks below the house, and died.
+
+  His family buried him here, on the slope above the river.
+
+  Some years later, his uncle, George Pollock, sold the land. He asked for one thing in return. That this grave be left alone, forever.
+
+  The city grew right up to the railing. The estate became a park. A road came through, and then a tomb for a president, a few steps away.
+
+  And still, nobody has moved him.
+
+pronunciations:
+  - written: St. Claire
+    say: saint CLAIR
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Erected to the memory of an amiable child."
+    source: 1
+    quote: "a stone urn \"Erected to the Memory of an Amiable Child\" and dated July 15, 1797, marks the GRAVE OF ST. CLAIRE POLLOCK"
+  - says: "A little boy named St. Claire Pollock lived here."
+    source: 1
+    quote: "marks the GRAVE OF ST. CLAIRE POLLOCK, aged five, who fell to his death on the rocks below the Claremont."
+  - says: "He was five years old."
+    source: 1
+    quote: "GRAVE OF ST. CLAIRE POLLOCK, aged five"
+  - says: "On the fifteenth of July that year, he fell from the rocks below the house, and died."
+    source: 1
+    quote: "dated July 15, 1797, marks the GRAVE OF ST. CLAIRE POLLOCK, aged five, who fell to his death on the rocks below the Claremont."
+  - says: "Some years later, his uncle, George Pollock, sold the land."
+    source: 1
+    quote: "When George Pollock, the child's uncle, sold the property he requested that this grave be kept inviolate."
+  - says: "That this grave be left alone, forever."
+    source: 1
+    quote: "he requested that this grave be kept inviolate."
+  - says: "In seventeen ninety seven, this hillside was a country estate, high above the Hudson."
+    source: 1
+    quote: "Down the slope toward the river, and a few steps south of the Inn, a stone urn \"Erected to the Memory of an Amiable Child\" and dated July 15, 1797, marks the GRAVE OF ST. CLAIRE POLLOCK"
+  - says: "In seventeen ninety seven, this hillside was a country estate, high above the Hudson."
+    source: 1
+    quote: "When George Pollock, the child's uncle, sold the property he requested that this grave be kept inviolate."
+  - says: "He asked for one thing in return."
+    source: 1
+    quote: "When George Pollock, the child's uncle, sold the property he requested that this grave be kept inviolate."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Riverside Drive"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-an-amiable-child/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66
+    audioBytes: 1057479
+    transcript:
+      totalS: 66
+      lines:
+        - text: Look for a small stone urn behind an iron railing, on the slope just below the drive.
+          atS: 0
+          durationS: 5.24
+        - text: Read the words on it.
+          atS: 5.51
+          durationS: 1.29
+        - text: Erected to the memory of an amiable child.
+          atS: 7.19
+          durationS: 2.84
+        - text: It is a grave.
+          atS: 10.41
+          durationS: 1.08
+        - text: And it is older than the park, older than the drive, older than almost anything you can see from here.
+          atS: 11.82
+          durationS: 6.15
+        - text: In seventeen ninety seven, this hillside was a country estate, high above the Hudson.
+          atS: 18.67
+          durationS: 5.62
+        - text: A little boy named St.
+          atS: 24.89
+          durationS: 1.37
+        - text: Claire Pollock lived here.
+          atS: 26.29
+          durationS: 1.73
+        - text: He was five years old.
+          atS: 28.62
+          durationS: 1.5
+        - text: On the fifteenth of July that year, he fell from the rocks below the house, and died.
+          atS: 30.93
+          durationS: 5.41
+        - text: His family buried him here, on the slope above the river.
+          atS: 37.04
+          durationS: 3.48
+        - text: Some years later, his uncle, George Pollock, sold the land.
+          atS: 41.22
+          durationS: 4.27
+        - text: He asked for one thing in return.
+          atS: 46.09
+          durationS: 1.97
+        - text: That this grave be left alone, forever.
+          atS: 48.76
+          durationS: 2.74
+        - text: The city grew right up to the railing.
+          atS: 52.1
+          durationS: 2.39
+        - text: The estate became a park.
+          atS: 54.88
+          durationS: 1.74
+        - text: A road came through, and then a tomb for a president, a few steps away.
+          atS: 56.95
+          durationS: 5.5
+        - text: And still, nobody has moved him.
+          atS: 62.96
+          durationS: 3.08

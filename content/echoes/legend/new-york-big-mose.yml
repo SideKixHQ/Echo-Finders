@@ -1,0 +1,157 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Bowery and Chinatown cluster (more NYC batch).
+# Listening spot: The Bowery sidewalk at No. 104, between Hester and Grand Streets, the site of the old National Theatre where Big Mose was played on stage.
+# Position: 104 Bowery from the street numbering, west side between Hester and Grand (medium confidence).
+id: new-york-big-mose
+title: "Big Mose of the Bowery"
+summary: "The Bowery had its own giant: eight feet tall, a cleaver in his belt, and a streetcar in one hand. A legend born on a stage here."
+place: "104 Bowery, between Hester and Grand Streets, Manhattan"
+at: { lat: 40.71810, lng: -73.99415 }
+triggerRadiusKm: 0.05
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 61
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A tall tale, not history. Big Mose was a stage character and a figure of Bowery folklore; the Federal Writers' Project guide of 1939 calls him "the legendary Big Mose" and records the feats told of him. The National Theatre at 104 Bowery and the actor Frank Chanfrau are documented in the same guide. The script says out loud that Mose is a legend.
+minAge: 0
+quality: 0.8
+tags: [new-york, bowery, folklore, tall-tale, theater, nineteenth-century]
+teaser: "He could lift a streetcar like a tray. Or so the Bowery said."
+script: |
+  Look up and down the Bowery. Wide, loud, and very old. Now make room on the sidewalk, because somebody very big is coming.
+
+  This is a legend. Nobody this big ever lived. But for a while, the whole Bowery talked as if he did.
+
+  His name was Mose. Big Mose. The story says he stood eight feet tall, with hands as big as hams. He kept a butcher's cleaver in his belt. In summer, he hung a keg of beer there too.
+
+  When he was bored, he would lift a horse drawn streetcar off its track and carry it on one hand, the way a waiter carries a tray. The horses dangled from their harness. And Mose laughed.
+
+  On a hot day, they said, he stood in the East River and blew the ships back out to sea.
+
+  Here is where he came to life. On this block stood the National Theatre. An actor named Frank Chanfrau played Mose on its stage, in play after play, with his brother beside him.
+
+  The crowds who came out of that theater walked straight back onto the Bowery.
+
+  And for years, the Bowery told his tales as if it had seen him.
+
+pronunciations:
+  - written: Chanfrau
+    say: SHAN-fraw
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The story says he stood eight feet tall, with hands as big as hams."
+    source: 1
+    quote: "The legendary Big Mose was eight feet tall, with hands as big as hams."
+  - says: "He kept a butcher's cleaver in his belt."
+    source: 1
+    quote: "In his belt was thrust a butcher's cleaver, and in summer a keg of beer hung there for his refreshment."
+  - says: "In summer, he hung a keg of beer there too."
+    source: 1
+    quote: "In his belt was thrust a butcher's cleaver, and in summer a keg of beer hung there for his refreshment."
+  - says: "When he was bored, he would lift a horse drawn streetcar off its track and carry it on one hand, the way a waiter carries a tray."
+    source: 1
+    quote: "He loved to lift a streetcar off its track and carry it on one hand as a waiter carries a tray, the horses dangling from their harnesses"
+  - says: "The horses dangled from their harness."
+    source: 1
+    quote: "the horses dangling from their harnesses; and Big Mose laughing thunderously at the terrified passengers."
+  - says: "On a hot day, they said, he stood in the East River and blew the ships back out to sea."
+    source: 1
+    quote: "Another of his favorite jests was to stand in the East River, and blow back approaching vessels with a few puffs from his mighty lungs."
+  - says: "On this block stood the National Theatre."
+    source: 1
+    quote: "At the National Theatre (104 Bowery) Frank S. Chanfrau, actor-manager, appeared with his brother in a long series of plays about Mose, the Bowery Paul Bunyan"
+  - says: "An actor named Frank Chanfrau played Mose on its stage, in play after play, with his brother beside him."
+    source: 1
+    quote: "Frank S. Chanfrau, actor-manager, appeared with his brother in a long series of plays about Mose, the Bowery Paul Bunyan, an epic slugger, eye-gouger, and hobnail-stamper in New York's rowdy history."
+  - says: "But for a while, the whole Bowery talked as if he did."
+    source: 1
+    quote: "appeared with his brother in a long series of plays about Mose, the Bowery Paul Bunyan, an epic slugger, eye-gouger"
+  - says: "His name was Mose. Big Mose."
+    source: 1
+    quote: "The legendary Big Mose was eight feet tall, with hands as big as hams."
+  - says: "And Mose laughed."
+    source: 1
+    quote: "the horses dangling from their harnesses; and Big Mose laughing thunderously at the terrified passengers."
+  - says: "The crowds who came out of that theater walked straight back onto the Bowery."
+    source: 1
+    quote: "At the National Theatre (104 Bowery) Frank S. Chanfrau, actor-manager, appeared with his brother in a long series of plays about Mose"
+  - says: "And for years, the Bowery told his tales as if it had seen him."
+    source: 1
+    quote: "The legendary Big Mose was eight feet tall, with hands as big as hams. In his belt was thrust a butcher's cleaver, and in summer a keg of beer hung there for his refreshment."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: The Bowery"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-big-mose/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 60.9
+    audioBytes: 975977
+    transcript:
+      totalS: 60.9
+      lines:
+        - text: Look up and down the Bowery.
+          atS: 0
+          durationS: 1.75
+        - text: Wide, loud, and very old.
+          atS: 1.87
+          durationS: 1.84
+        - text: Now make room on the sidewalk, because somebody very big is coming.
+          atS: 3.82
+          durationS: 3.6
+        - text: This is a legend.
+          atS: 7.54
+          durationS: 1.06
+        - text: Nobody this big ever lived.
+          atS: 8.92
+          durationS: 2
+        - text: But for a while, the whole Bowery talked as if he did.
+          atS: 11.24
+          durationS: 3.33
+        - text: His name was Mose.
+          atS: 14.9
+          durationS: 1.35
+        - text: Big Mose.
+          atS: 16.52
+          durationS: 0.94
+        - text: The story says he stood eight feet tall, with hands as big as hams.
+          atS: 17.84
+          durationS: 3.76
+        - text: He kept a butcher's cleaver in his belt.
+          atS: 21.93
+          durationS: 2.02
+        - text: In summer, he hung a keg of beer there too.
+          atS: 24.28
+          durationS: 2.51
+        - text: When he was bored, he would lift a horse drawn streetcar off its track and carry it on one hand, the way a waiter carries a tray.
+          atS: 27.17
+          durationS: 6.71
+        - text: The horses dangled from their harness.
+          atS: 33.97
+          durationS: 1.97
+        - text: And Mose laughed.
+          atS: 35.97
+          durationS: 1.18
+        - text: On a hot day, they said, he stood in the East River and blew the ships back out to sea.
+          atS: 37.27
+          durationS: 4.77
+        - text: Here is where he came to life.
+          atS: 42.25
+          durationS: 1.49
+        - text: On this block stood the National Theatre.
+          atS: 43.85
+          durationS: 2.15
+        - text: An actor named Frank Chanfrau played Mose on its stage, in play after play, with his brother beside him.
+          atS: 46.17
+          durationS: 6.32
+        - text: The crowds who came out of that theater walked straight back onto the Bowery.
+          atS: 52.64
+          durationS: 3.95
+        - text: And for years, the Bowery told his tales as if it had seen him.
+          atS: 56.66
+          durationS: 4.27

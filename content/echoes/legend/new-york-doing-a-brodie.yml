@@ -1,0 +1,170 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, City Hall and Brooklyn Bridge cluster (more NYC batch).
+# Listening spot: The Manhattan entrance to the Brooklyn Bridge promenade, by the ramp off Park Row and Centre Street opposite City Hall Park.
+# Position: the promenade entrance at Park Row, from the street plan (medium confidence). On land at the foot of the bridge, not on the span. About 1.2 km across the river from the DUMBO bridge echoes; a different subject.
+id: new-york-doing-a-brodie
+title: "Doing a Brodie"
+summary: "In 1886 Steve Brodie said he jumped off the Brooklyn Bridge and lived. Old barkeepers winked. His name became slang anyway."
+place: "Brooklyn Bridge promenade entrance, Park Row at Centre Street, Manhattan"
+at: { lat: 40.71210, lng: -74.00450 }
+triggerRadiusKm: 0.06
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 68
+visibility: landmark-visible
+certainty: legend
+certaintyNote: >-
+  A legend, not established fact. The Federal Writers' Project guide of 1939 files Steve Brodie's leap of July 1886 among the bridge's "apocrypha" and "distinctive legends": some men claimed to have seen it, while old barkeepers "put their tongues in their cheeks". That "do a Brodie" became slang, and that a fake Brodie jumped nightly at the 1939 World's Fair, are reported in the same guide. The script says out loud that nobody can prove the jump.
+minAge: 0
+quality: 0.8
+tags: [new-york, brooklyn-bridge, city-hall, legend, slang, stunt]
+teaser: "He said he jumped. Half of New York believed him. The other half bought him a drink anyway."
+script: |
+  Look up the ramp at the bridge, the stone towers and the long curving cables. Now picture a man standing up there, in July, eighteen eighty six, looking down at the East River.
+
+  His name was Steve Brodie. And he said he jumped.
+
+  This is a legend. Nobody has ever proved it.
+
+  Here is how the story goes. Brodie dropped from the bridge into the river. A rowing boat was waiting below. It pulled him out, alive. And crowds of admirers cheered as he climbed up onto the dock.
+
+  For years afterwards, there were men in New York who swore they had seen it. The leap. The little boat bobbing in the water. The cheering.
+
+  And there were others. Mention Brodie's name to an old time barkeeper, said the city guide in nineteen thirty nine, and he would put his tongue in his cheek.
+
+  Did he really jump? Nobody knows.
+
+  But it did not matter. His name became a word. To do a Brodie meant to take a high dive. On the stock market. In love. In the boxing ring.
+
+  And at the World's Fair in nineteen thirty nine, a man playing Steve Brodie leaped off a hundred foot copy of this bridge.
+
+  Six times a night.
+
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Now picture a man standing up there, in July, eighteen eighty six, looking down at the East River."
+    source: 1
+    quote: "There are men living who claim they saw Brodie's leap from the bridge in July, 1886"
+  - says: "His name was Steve Brodie."
+    source: 1
+    quote: "The apocrypha of Steve Brodie belong among the bridge's more distinctive legends."
+  - says: "A rowing boat was waiting below."
+    source: 1
+    quote: "the rescue skiff tossing on the East River"
+  - says: "And crowds of admirers cheered as he climbed up onto the dock."
+    source: 1
+    quote: "the hero-worshipers who cheered as he climbed to the dock"
+  - says: "For years afterwards, there were men in New York who swore they had seen it."
+    source: 1
+    quote: "There are men living who claim they saw Brodie's leap from the bridge in July, 1886"
+  - says: "Mention Brodie's name to an old time barkeeper, said the city guide in nineteen thirty nine, and he would put his tongue in his cheek."
+    source: 1
+    quote: "on the other hand, mention of his name causes many old-time barkeepers to put their tongues in their cheeks."
+  - says: "To do a Brodie meant to take a high dive."
+    source: 1
+    quote: "to \"pull\" or \"do a Brodie\" has come to serve as a synonym for taking a high dive, whether on the stock market, in a love affair, or in the prize ring."
+  - says: "On the stock market. In love. In the boxing ring."
+    source: 1
+    quote: "whether on the stock market, in a love affair, or in the prize ring."
+  - says: "And at the World's Fair in nineteen thirty nine, a man playing Steve Brodie leaped off a hundred foot copy of this bridge."
+    source: 1
+    quote: "From a reproduction of Brooklyn Bridge, 100 feet high, \"Steve Brodie\" jumps six times nightly."
+  - says: "Six times a night."
+    source: 1
+    quote: "\"Steve Brodie\" jumps six times nightly."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Brooklyn Bridge, and the New York World's Fair"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-doing-a-brodie/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 67.7
+    audioBytes: 1083811
+    transcript:
+      totalS: 67.7
+      lines:
+        - text: Look up the ramp at the bridge, the stone towers and the long curving cables.
+          atS: 0
+          durationS: 4.55
+        - text: Now picture a man standing up there, in July, eighteen eighty six, looking down at the East River.
+          atS: 4.72
+          durationS: 5.71
+        - text: His name was Steve Brodie.
+          atS: 10.72
+          durationS: 1.6
+        - text: And he said he jumped.
+          atS: 12.49
+          durationS: 1.15
+        - text: This is a legend.
+          atS: 13.97
+          durationS: 1.09
+        - text: Nobody has ever proved it.
+          atS: 15.23
+          durationS: 1.56
+        - text: Here is how the story goes.
+          atS: 17.03
+          durationS: 1.54
+        - text: Brodie dropped from the bridge into the river.
+          atS: 19.18
+          durationS: 2.65
+        - text: A rowing boat was waiting below.
+          atS: 22.15
+          durationS: 1.93
+        - text: It pulled him out, alive.
+          atS: 24.29
+          durationS: 2.02
+        - text: And crowds of admirers cheered as he climbed up onto the dock.
+          atS: 26.59
+          durationS: 3.96
+        - text: For years afterwards, there were men in New York who swore they had seen it.
+          atS: 30.87
+          durationS: 3.62
+        - text: The leap.
+          atS: 34.65
+          durationS: 0.58
+        - text: The little boat bobbing in the water.
+          atS: 35.32
+          durationS: 1.93
+        - text: The cheering.
+          atS: 37.33
+          durationS: 0.8
+        - text: And there were others.
+          atS: 38.26
+          durationS: 1.13
+        - text: Mention Brodie's name to an old time barkeeper, said the city guide in nineteen thirty nine, and he would put his tongue in his cheek.
+          atS: 39.77
+          durationS: 7.26
+        - text: Did he really jump?
+          atS: 47.23
+          durationS: 1.2
+        - text: Nobody knows.
+          atS: 48.6
+          durationS: 0.93
+        - text: But it did not matter.
+          atS: 49.68
+          durationS: 1.17
+        - text: His name became a word.
+          atS: 50.97
+          durationS: 1.58
+        - text: To do a Brodie meant to take a high dive.
+          atS: 52.64
+          durationS: 2.66
+        - text: On the stock market.
+          atS: 55.37
+          durationS: 1.22
+        - text: In love.
+          atS: 56.66
+          durationS: 0.73
+        - text: In the boxing ring.
+          atS: 57.41
+          durationS: 1.24
+        - text: And at the World's Fair in nineteen thirty nine, a man playing Steve Brodie leaped off a hundred foot copy of this bridge.
+          atS: 58.86
+          durationS: 7.3
+        - text: Six times a night.
+          atS: 66.34
+          durationS: 1.32

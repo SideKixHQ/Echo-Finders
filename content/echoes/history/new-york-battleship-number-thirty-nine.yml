@@ -1,0 +1,174 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Brooklyn Navy Yard (more NYC batch).
+# Listening spot: Outside Building 92, the Brooklyn Navy Yard's visitor center, at Flushing Avenue and Carlton Avenue, at the yard's public entrance.
+# Position: Flushing Avenue at Carlton Avenue from the street plan; Wikidata Q524435 puts the yard's centre 400 m north (medium confidence). The ship was built inside the yard, which is mostly not open to walkers.
+id: new-york-battleship-number-thirty-nine
+title: "Battleship Number Thirty Nine"
+summary: "In 1914 a young navy official watched the keel of Battleship No. 39 go down in this yard. He would be president the morning it sank."
+place: "Brooklyn Navy Yard, Building 92, Flushing Avenue at Carlton Avenue, Brooklyn"
+at: { lat: 40.69900, lng: -73.97330 }
+triggerRadiusKm: 0.1
+category: history
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [new-york, brooklyn, navy-yard, military, uss-arizona, pearl-harbor, franklin-roosevelt]
+teaser: "He was there when they started building her. He was president when she went down."
+script: |
+  Look through the gates, into the Navy Yard. Long sheds, cranes, the river beyond. Somewhere behind those walls, in nineteen fourteen, they started building a battleship. She did not have a name yet. On the plans she was just Battleship Number Thirty Nine.
+
+  There is a photograph from that year. A young man is striding through the yard, inspecting the work. He is the Assistant Secretary of the Navy.
+
+  His name is Franklin Roosevelt.
+
+  They laid her keel here in March, nineteen fourteen. She was finished in June, nineteen fifteen. And she was given a name.
+
+  Arizona.
+
+  Twenty seven years went by. The young man from the photograph became President of the United States.
+
+  And on a quiet Sunday morning in December, nineteen forty one, at Pearl Harbor, a heavy armor piercing shell, dropped from the air, went through the Arizona's deck and into her ammunition. She sank in less than nine minutes, with one thousand one hundred and seventy seven of her crew.
+
+  The President called it a date which will live in infamy.
+
+  She is still on the bottom of Pearl Harbor. Oil still rises from her, a drop at a time.
+
+  It started here, with a keel, and a young man walking past it.
+
+pronunciations:
+  - written: Arizona
+    say: air-ih-ZOH-nuh
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "On the plans she was just Battleship Number Thirty Nine."
+    source: 1
+    quote: "inspecting progress on USS Battleship No. 39. This vessel eventually became the USS Arizona, now at the bottom of Pearl Harbor, Hawaii."
+  - says: "There is a photograph from that year."
+    source: 1
+    quote: "This photograph, taken in 1914 at the Brooklyn Navy Yard, shows Assistant Secretary of the Navy Franklin D. Roosevelt (see inset) in full stride inspecting progress on USS Battleship No. 39."
+  - says: "He is the Assistant Secretary of the Navy."
+    source: 1
+    quote: "shows Assistant Secretary of the Navy Franklin D. Roosevelt (see inset) in full stride inspecting progress on USS Battleship No. 39."
+  - says: "They laid her keel here in March, nineteen fourteen."
+    source: 3
+    quote: "Began March 16,1914 and Completed June 19,1915"
+  - says: "They laid her keel here in March, nineteen fourteen."
+    source: 1
+    quote: "the rare photograph of Roosevelt in 1914 at the laying of the keel of battleship No. 39, which later became the USS Arizona"
+  - says: "She was finished in June, nineteen fifteen."
+    source: 3
+    quote: "Began March 16,1914 and Completed June 19,1915"
+  - says: "And on a quiet Sunday morning in December, nineteen forty one, at Pearl Harbor, a heavy armor piercing shell, dropped from the air, went through the Arizona's deck and into her ammunition."
+    source: 2
+    quote: "At approximately 8:10, the USS Arizona exploded, hit by a 1,760-pound armor-piercing shell that slammed through her deck and ignited her forward ammunition magazine."
+  - says: "She sank in less than nine minutes, with one thousand one hundred and seventy seven of her crew."
+    source: 2
+    quote: "In less than nine minutes, she sank with 1,177 of her crew."
+  - says: "The President called it a date which will live in infamy."
+    source: 2
+    quote: "from the deadly attack by the Japanese on a quiet Sunday that President Franklin Roosevelt called \"a date which will live in infamy.\""
+  - says: "She is still on the bottom of Pearl Harbor. Oil still rises from her, a drop at a time."
+    source: 2
+    quote: "They watch the iridescent slick of oil that still leaks, a drop at a time, from ruptured bunkers"
+  - says: "Somewhere behind those walls, in nineteen fourteen, they started building a battleship."
+    source: 1
+    quote: "This photograph, taken in 1914 at the Brooklyn Navy Yard, shows Assistant Secretary of the Navy Franklin D. Roosevelt (see inset) in full stride inspecting progress on USS Battleship No. 39."
+  - says: "His name is Franklin Roosevelt."
+    source: 1
+    quote: "shows Assistant Secretary of the Navy Franklin D. Roosevelt (see inset) in full stride inspecting progress on USS Battleship No. 39."
+  - says: "Twenty seven years went by."
+    source: 2
+    quote: "Today the battle-scarred, submerged remains of the battleship USS Arizona rest on the silt of Pearl Harbor, just as they settled on December 7, 1941."
+  - says: "The young man from the photograph became President of the United States."
+    source: 2
+    quote: "The ship was one of many casualties from the deadly attack by the Japanese on a quiet Sunday that President Franklin Roosevelt called \"a date which will live in infamy.\""
+sources:
+  - title: "Where Our WWII Leaders Spent WWI (Prologue, Summer 2017)"
+    publisher: "National Archives"
+    url: https://www.archives.gov/publications/prologue/2017/summer/wwi-leaders
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Remembering Pearl Harbor: The USS Arizona Memorial (Teaching with Historic Places lesson)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/teachers/classrooms/upload/TwHP-Lessons_18arizona.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "USS Arizona (BB-39), Historic American Engineering Record HI-13, written data"
+    publisher: "National Park Service, via Library of Congress"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/hi/hi0000/hi0096/data/hi0096data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-battleship-number-thirty-nine/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 82.3
+    audioBytes: 1318286
+    transcript:
+      totalS: 82.3
+      lines:
+        - text: Look through the gates, into the Navy Yard.
+          atS: 0
+          durationS: 2.6
+        - text: Long sheds, cranes, the river beyond.
+          atS: 2.93
+          durationS: 3
+        - text: Somewhere behind those walls, in nineteen fourteen, they started building a battleship.
+          atS: 6.62
+          durationS: 5.36
+        - text: She did not have a name yet.
+          atS: 12.37
+          durationS: 1.65
+        - text: On the plans she was just Battleship Number Thirty Nine.
+          atS: 14.4
+          durationS: 3.37
+        - text: There is a photograph from that year.
+          atS: 18.27
+          durationS: 2
+        - text: A young man is striding through the yard, inspecting the work.
+          atS: 20.65
+          durationS: 3.73
+        - text: He is the Assistant Secretary of the Navy.
+          atS: 24.71
+          durationS: 2.44
+        - text: His name is Franklin Roosevelt.
+          atS: 27.32
+          durationS: 1.88
+        - text: They laid her keel here in March, nineteen fourteen.
+          atS: 29.41
+          durationS: 3.23
+        - text: She was finished in June, nineteen fifteen.
+          atS: 32.96
+          durationS: 2.81
+        - text: And she was given a name.
+          atS: 36.21
+          durationS: 1.5
+        - text: Arizona.
+          atS: 38.03
+          durationS: 1.36
+        - text: Twenty seven years went by.
+          atS: 40.34
+          durationS: 1.89
+        - text: The young man from the photograph became President of the United States.
+          atS: 42.41
+          durationS: 4.2
+        - text: And on a quiet Sunday morning in December, nineteen forty one, at Pearl Harbor, a heavy armor piercing shell, dropped from the air, went through the Arizona's deck and into her ammunition.
+          atS: 47.13
+          durationS: 12.74
+        - text: She sank in less than nine minutes, with one thousand one hundred and seventy seven of her crew.
+          atS: 60.3
+          durationS: 5.98
+        - text: The President called it a date which will live in infamy.
+          atS: 66.98
+          durationS: 3.24
+        - text: She is still on the bottom of Pearl Harbor.
+          atS: 70.91
+          durationS: 2.44
+        - text: Oil still rises from her, a drop at a time.
+          atS: 73.86
+          durationS: 3.33
+        - text: It started here, with a keel, and a young man walking past it.
+          atS: 77.8
+          durationS: 4.54

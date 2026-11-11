@@ -1,0 +1,121 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Central Park (more NYC batch).
+# Listening spot: The terrace of Belvedere Castle on Vista Rock, Central Park, mid park at about 79th Street, looking north over Turtle Pond.
+# Position: Wikidata Q816268 (Belvedere Castle) coordinate (high confidence).
+id: new-york-the-red-ball-on-the-castle
+title: "The Red Ball on the Castle"
+summary: "This little castle has been home to the city's weather station. It once flew a red ball to say the ice below was safe to skate on."
+place: "Belvedere Castle, Vista Rock, Central Park, Manhattan"
+at: { lat: 40.77940, lng: -73.96910 }
+triggerRadiusKm: 0.05
+category: land
+format: short
+durationS: 64
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, central-park, weather, belvedere-castle, skating, climate]
+teaser: "When the red ball went up, the whole city could go skating."
+script: |
+  Look up at the tower of this little stone castle, perched on its rock. It looks like a toy from a fairy tale. But it has been doing serious work.
+
+  In the nineteen thirties, the United States Weather Bureau kept its instruments in this tower. And in winter, the castle did one more job. When the ice on the lake below was thick enough to skate on, it flew a banner with a red ball.
+
+  Picture New Yorkers looking up at this tower, waiting for the red ball to go up.
+
+  Central Park's weather record goes back to eighteen sixty nine. It has seen a lot.
+
+  The coldest it has ever been here was fifteen below zero, on the ninth of February, nineteen thirty four. The hottest, one hundred and six degrees, on the ninth of July, nineteen thirty six. The biggest snowstorm, twenty seven and a half inches, came in January, twenty sixteen.
+
+  Look down at the water below the rock. Is it frozen?
+
+  If it were, you would want a castle to tell you so.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In the nineteen thirties, the United States Weather Bureau kept its instruments in this tower."
+    source: 1
+    quote: "lead to the Belvedere, where a U.S. Government Weather Bureau is maintained. The building resembles a miniature old castle, but its tower contains the modern scientific instruments used in predicting the weather"
+  - says: "When the ice on the lake below was thick enough to skate on, it flew a banner with a red ball."
+    source: 1
+    quote: "in winter it extends its field of applied science, flying a banner with a red ball when the ice on New Lake, just to the north, is safe for skating."
+  - says: "Central Park's weather record goes back to eighteen sixty nine."
+    source: 2
+    quote: "All-Time Extremes Central Park, NY (1869 to Present)"
+  - says: "The coldest it has ever been here was fifteen below zero, on the ninth of February, nineteen thirty four."
+    source: 2
+    quote: "Lowest -15 February 9, 1934"
+  - says: "The hottest, one hundred and six degrees, on the ninth of July, nineteen thirty six."
+    source: 2
+    quote: "Highest 106 July 9, 1936"
+  - says: "The biggest snowstorm, twenty seven and a half inches, came in January, twenty sixteen."
+    source: 2
+    quote: "Greatest Storm 27.5 January 22-24, 2016"
+  - says: "And in winter, the castle did one more job."
+    source: 1
+    quote: "in winter it extends its field of applied science, flying a banner with a red ball when the ice on New Lake, just to the north, is safe for skating."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Central Park"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "All-Time Extremes, Central Park, NY (1869 to Present), last updated 1 January 2026"
+    publisher: "National Weather Service, New York office"
+    url: https://www.weather.gov/media/okx/Climate/CentralPark/extremes.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-red-ball-on-the-castle/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 63.8
+    audioBytes: 1021117
+    transcript:
+      totalS: 63.8
+      lines:
+        - text: Look up at the tower of this little stone castle, perched on its rock.
+          atS: 0
+          durationS: 4.17
+        - text: It looks like a toy from a fairy tale.
+          atS: 4.55
+          durationS: 2.32
+        - text: But it has been doing serious work.
+          atS: 7.26
+          durationS: 2.46
+        - text: In the nineteen thirties, the United States Weather Bureau kept its instruments in this tower.
+          atS: 10.32
+          durationS: 5.18
+        - text: And in winter, the castle did one more job.
+          atS: 15.88
+          durationS: 2.94
+        - text: When the ice on the lake below was thick enough to skate on, it flew a banner with a red ball.
+          atS: 19.1
+          durationS: 5.53
+        - text: Picture New Yorkers looking up at this tower, waiting for the red ball to go up.
+          atS: 25.23
+          durationS: 4.91
+        - text: Central Park's weather record goes back to eighteen sixty nine.
+          atS: 30.74
+          durationS: 3.97
+        - text: It has seen a lot.
+          atS: 34.83
+          durationS: 1.25
+        - text: The coldest it has ever been here was fifteen below zero, on the ninth of February, nineteen thirty four.
+          atS: 36.41
+          durationS: 7.18
+        - text: The hottest, one hundred and six degrees, on the ninth of July, nineteen thirty six.
+          atS: 43.91
+          durationS: 5.68
+        - text: The biggest snowstorm, twenty seven and a half inches, came in January, twenty sixteen.
+          atS: 50.03
+          durationS: 6.21
+        - text: Look down at the water below the rock.
+          atS: 56.75
+          durationS: 2.13
+        - text: Is it frozen?
+          atS: 59.12
+          durationS: 1.1
+        - text: If it were, you would want a castle to tell you so.
+          atS: 60.66
+          durationS: 3.1

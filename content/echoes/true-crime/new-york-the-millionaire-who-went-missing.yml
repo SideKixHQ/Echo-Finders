@@ -1,0 +1,224 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, East Village cluster (more NYC batch).
+# Listening spot: The iron fence of St. Mark's Church in-the-Bowery churchyard, Second Avenue at East 10th Street, East Village. The churchyard, as the 1878 papers noted, can be seen plainly from the street.
+# Position: Wikidata Q7589922 (St. Mark's Church in-the-Bowery) coordinate (high confidence).
+id: new-york-the-millionaire-who-went-missing
+title: "The Millionaire Who Went Missing"
+summary: "In November 1878 thieves dug into this churchyard on a rainy night and stole the body of the millionaire merchant A. T. Stewart, for ransom."
+place: "St. Mark's Church in-the-Bowery churchyard, Second Avenue at East 10th Street, East Village, Manhattan"
+at: { lat: 40.73028, lng: -73.98750 }
+triggerRadiusKm: 0.05
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 91
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.85
+tags: [new-york, east-village, st-marks, grave-robbery, ransom, 1878, unsolved]
+teaser: "They left behind a lantern, a shovel and a rope. They took the millionaire."
+script: |
+  Look through the iron fence into the old churchyard, with its trees and its flat stones. Not much to see. But one November morning in eighteen seventy eight, the assistant sexton opened this gate, and saw a heap of fresh earth beyond the trees.
+
+  Someone had dug into one of the vaults.
+
+  It was the vault of Alexander T. Stewart. A merchant, and a millionaire. A store of his would one day become part of Wanamaker's.
+
+  The thieves had come on a cold, rainy night. They lifted the stone off the vault. They pried open the cedar box, cut through the lead lining, unscrewed the coffin lid. And they took him. Clothes and all. They even took the silver plate with his name on it.
+
+  They left behind a new lantern, a small iron shovel, and a piece of rope.
+
+  The papers could not believe it. The churchyard could be seen plainly from the avenue, by people passing at all hours of the night. And the family had been warned. A month earlier, someone had dug here and missed. A letter had threatened to take the body unless money was sent. A night watchman had been hired, and let go only days before.
+
+  The police could find no clue to the robbers.
+
+  The ransom demand was twenty thousand dollars. And according to the city guide of nineteen thirty nine, the remains were not returned for two years.
+
+  Look at the flat stones again.
+
+  For two years, a millionaire was missing from under them.
+
+pronunciations:
+  - written: Stewart
+    say: STOO-ert
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  # Unsolved: nobody was convicted, and the script names no suspect. Two men held at the time
+  # are deliberately left out. Everyone involved died long ago. Sources: the New-York Tribune
+  # and the New York Herald of 8 November 1878 (Chronicling America), and the Federal Writers'
+  # Project guide of 1939 for the ransom and the return two years later.
+  # Open question for the reviewer: the retrieved sources show no conviction but do not state
+  # in so many words that nobody was ever convicted. Confirm "unsolved" from a later account
+  # (a library newspaper database would do) before approval.
+  involvesLivingPeople: false
+  convictionStatus: unsolved
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-10"
+  contentWarning: This echo describes the theft of a body from a grave. Nothing is described in graphic detail.
+claims:
+  - says: "But one November morning in eighteen seventy eight, the assistant sexton opened this gate, and saw a heap of fresh earth beyond the trees."
+    source: 1
+    quote: "Frances Parker, the assistant-sexton of St. Mark’s Church, unlocked the gate of the churchyard"
+  - says: "But one November morning in eighteen seventy eight, the assistant sexton opened this gate, and saw a heap of fresh earth beyond the trees."
+    source: 1
+    quote: "he saw a heap of newly-upturned earth."
+  - says: "It was the vault of Alexander T. Stewart."
+    source: 1
+    quote: "the vault was that in which had been placed the body of Alexander T. Stewart."
+  - says: "A merchant, and a millionaire."
+    source: 1
+    quote: "That the tomb of a millionaire, in a central part of the city, had been rifled, seemed too astonishing to be believed."
+  - says: "A store of his would one day become part of Wanamaker's."
+    source: 3
+    quote: "the remains of A. T. Stewart, well-known merchant and owner of a store which is now part of Wanamaker's, were stolen and held for $20,000 ransom."
+  - says: "The thieves had come on a cold, rainy night."
+    source: 1
+    quote: "cold and rain which prevailed on Weduesday | night were of great service to the robbers in preventing their being discovered."
+  - says: "They lifted the stone off the vault."
+    source: 1
+    quote: "a stone which had covered the entrance had been thrown on one side."
+  - says: "They pried open the cedar box, cut through the lead lining, unscrewed the coffin lid."
+    source: 1
+    quote: "The top of the strong cedar box containing the coffin had been pried oft, and the lid of an hermetically sealed leaden case had been cut away."
+  - says: "Clothes and all."
+    source: 1
+    quote: "The body of Mr. Stewart with the clothing had been taken away."
+  - says: "They even took the silver plate with his name on it."
+    source: 1
+    quote: "The thieves had also carried off the solid silver plate of the coffin, on which the name, age and date of death had been engraved."
+  - says: "They left behind a new lantern, a small iron shovel, and a piece of rope."
+    source: 1
+    quote: "They bad left behind them a dark-lantern, a small iron shovel and a piece of rope tied about one of the stones"
+  - says: "The churchyard could be seen plainly from the avenue, by people passing at all hours of the night."
+    source: 1
+    quote: "The churchyard can be viewed plainly"
+  - says: "A month earlier, someone had dug here and missed."
+    source: 1
+    quote: "It was learned that the robbery of Mr. Stewart's tomb bad been attempted a month before"
+  - says: "A letter had threatened to take the body unless money was sent."
+    source: 1
+    quote: "A letter was received some time ago threatening the removal of the body if money were not sent the writer."
+  - says: "A night watchman had been hired, and let go only days before."
+    source: 1
+    quote: "A watchman was employed to guard the vault, but was dismissed only a day or two ago."
+  - says: "The police could find no clue to the robbers."
+    source: 1
+    quote: "the police have failed to find any clew to the robbers."
+  - says: "The ransom demand was twenty thousand dollars."
+    source: 3
+    quote: "were stolen and held for $20,000 ransom."
+  - says: "And according to the city guide of nineteen thirty nine, the remains were not returned for two years."
+    source: 3
+    quote: "They were not returned till two years later."
+  - says: "Someone had dug into one of the vaults."
+    source: 1
+    quote: "vault was that in which had been placed the body of Alexander T. Stewart."
+  - says: "Someone had dug into one of the vaults."
+    source: 2
+    quote: "discovered fresh earth lying in ths stunted grass immediately in the vicinity of the Stewart family vault."
+  - says: "For two years, a millionaire was missing from under them."
+    source: 3
+    quote: "In 1878 the graveyard was the scene of a sensational body snatching when the remains of A. T. Stewart, well-known merchant and owner of a store which is now part of Wanamaker's, were stolen and held for $20,000 ransom. They were not returned till two years later."
+sources:
+  - title: "New-York Tribune, 8 November 1878, page 1: A. T. Stewart's Body Stolen"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030214/1878-11-08/ed-1/?sp=1
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "New York Herald, 8 November 1878, page 3: Ghouls at Work"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030313/1878-11-08/ed-1/?sp=3
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: St. Mark's In-the-Bouwerie"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-the-millionaire-who-went-missing/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 91.3
+    audioBytes: 1462064
+    transcript:
+      totalS: 91.3
+      lines:
+        - text: Look through the iron fence into the old churchyard, with its trees and its flat stones.
+          atS: 0
+          durationS: 4.9
+        - text: Not much to see.
+          atS: 5.28
+          durationS: 1.13
+        - text: But one November morning in eighteen seventy eight, the assistant sexton opened this gate, and saw a heap of fresh earth beyond the trees.
+          atS: 7.22
+          durationS: 8.63
+        - text: Someone had dug into one of the vaults.
+          atS: 16.45
+          durationS: 2.23
+        - text: It was the vault of Alexander T.
+          atS: 19.19
+          durationS: 2.3
+        - text: Stewart.
+          atS: 21.52
+          durationS: 0.83
+        - text: A merchant, and a millionaire.
+          atS: 22.95
+          durationS: 1.92
+        - text: A store of his would one day become part of Wanamaker's.
+          atS: 25.31
+          durationS: 3.48
+        - text: The thieves had come on a cold, rainy night.
+          atS: 29.4
+          durationS: 2.72
+        - text: They lifted the stone off the vault.
+          atS: 32.62
+          durationS: 1.94
+        - text: They pried open the cedar box, cut through the lead lining, unscrewed the coffin lid.
+          atS: 34.89
+          durationS: 5.39
+        - text: And they took him.
+          atS: 40.52
+          durationS: 0.95
+        - text: Clothes and all.
+          atS: 41.75
+          durationS: 1.23
+        - text: They even took the silver plate with his name on it.
+          atS: 43.22
+          durationS: 2.67
+        - text: They left behind a new lantern, a small iron shovel, and a piece of rope.
+          atS: 46.34
+          durationS: 4.78
+        - text: The papers could not believe it.
+          atS: 51.72
+          durationS: 1.73
+        - text: The churchyard could be seen plainly from the avenue, by people passing at all hours of the night.
+          atS: 53.96
+          durationS: 5.48
+        - text: And the family had been warned.
+          atS: 59.83
+          durationS: 1.71
+        - text: A month earlier, someone had dug here and missed.
+          atS: 62.04
+          durationS: 3.05
+        - text: A letter had threatened to take the body unless money was sent.
+          atS: 65.61
+          durationS: 3.42
+        - text: A night watchman had been hired, and let go only days before.
+          atS: 69.64
+          durationS: 4.12
+        - text: The police could find no clue to the robbers.
+          atS: 74.27
+          durationS: 2.68
+        - text: The ransom demand was twenty thousand dollars.
+          atS: 77.19
+          durationS: 2.78
+        - text: And according to the city guide of nineteen thirty nine, the remains were not returned for two years.
+          atS: 80.05
+          durationS: 5.57
+        - text: Look at the flat stones again.
+          atS: 85.95
+          durationS: 1.73
+        - text: For two years, a millionaire was missing from under them.
+          atS: 87.96
+          durationS: 3.34

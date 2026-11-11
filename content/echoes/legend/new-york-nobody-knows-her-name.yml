@@ -1,0 +1,172 @@
+# Drafted by Claude Code (2026-11-11) for the New York City Pass, Tottenville, Staten Island (more NYC, second pass). A far find: about 40 km from the Midtown cluster, at the southern tip of the city.
+# Listening spot: The lawn of Conference House Park in front of the Conference House, the stone manor house at the foot of Hylan Boulevard.
+# Position: Overture Maps address point for 7455 Hylan Blvd, 10307 (high confidence for the site; the house stands a short way in from the street).
+id: new-york-nobody-knows-her-name
+title: "Nobody Knows Her Name"
+summary: "Franklin and Adams talked peace here in 1776. The owner was a Tory, and the legend of what he did to a servant girl has outlived him."
+place: "Conference House, Conference House Park, foot of Hylan Boulevard, Tottenville, Staten Island"
+at: { lat: 40.50309, lng: -74.25320 }
+triggerRadiusKm: 0.08
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 72
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The house, its date, the 1776 peace conference and Colonel Billopp as the island's Tory leader are in the Landmarks Preservation Commission's 1967 designation report. The kidnapping, the lantern, the death on the stairs and the sounds neighbors report are told by the NYC Municipal Archives (2017) as "it is said". No record of the servant's death is cited anywhere we could reach, and the script says so.
+minAge: 12
+quality: 0.85
+tags: [new-york, staten-island, tottenville, conference-house, billopp, revolution, ghost, 1776]
+teaser: "A light in a window. A man who thought it was a signal."
+script: |
+  Look at the old stone house near the water. It was built in the sixteen eighties, when this was a manor in the country.
+
+  In September, seventeen seventy six, Benjamin Franklin and John Adams came here, to talk peace with the British admiral, Lord Howe. It came to nothing. The Americans would not give up their independence.
+
+  The man who owned this house was Colonel Christopher Billopp. He was the leader of the Tories on Staten Island. Loyal to the king.
+
+  Now, the legend. There is no record of any of this. People have simply told it, for a very long time.
+
+  During the war, the story goes, Billopp was kidnapped by Patriot soldiers. Two months later, he came home. And he was certain that someone in his own house had helped them. A servant girl. He believed she had signalled the soldiers, with a lantern in the window.
+
+  Then one night, he saw her light a lantern, and set it in the window.
+
+  And the story says he went mad, and pushed her down the stairs. And she died.
+
+  For years, neighbors have said they hear it. A man shouting. A woman screaming. And something falling, down the stairs.
+
+  Look at the windows that face the water.
+
+  Nobody knows her name.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It was built in the sixteen eighties"
+    source: 2
+    quote: "constructed between the years 1680 and 1688"
+  - says: "In September, seventeen seventy six, Benjamin Franklin and John Adams came here, to talk peace with the British admiral, Lord Howe."
+    source: 2
+    quote: "the scene of the abortive peace confer ence held there on September 11, 1776 between Benjamin Frahklin, John ',dams and Edward Rutledge, r epresenting the American Side, and for the British, Lord Richard Howe, Admiral of the British Fleet"
+  - says: "It came to nothing. The Americans would not give up their independence."
+    source: 2
+    quote: "these efforts proved futile since the Americans r efused t o r enounce their demands f or independence"
+  - says: "He was the leader of the Tories on Staten Island."
+    source: 2
+    quote: "The Colonel was the leader of the Tory element on Staten Island"
+  - says: "During the war, the story goes, Billopp was kidnapped by Patriot soldiers. Two months later, he came home. And he was certain that someone in his own house had helped them. A servant girl."
+    source: 1
+    quote: "When he was returned after two months of captivity, it is said that he was convinced that one of his servant girls aided in the kidnapping."
+  - says: "He believed she had signalled the soldiers, with a lantern in the window."
+    source: 1
+    quote: "He believed that she used a lantern to signal the Patriot soldiers."
+  - says: "Then one night, he saw her light a lantern, and set it in the window."
+    source: 1
+    quote: "he witnessed the same servant light a lantern and place it in the window."
+  - says: "And the story says he went mad, and pushed her down the stairs. And she died."
+    source: 1
+    quote: "Billop then went mad, pushing her down the stairs, which resulted in her death."
+  - says: "For years, neighbors have said they hear it. A man shouting. A woman screaming. And something falling, down the stairs."
+    source: 1
+    quote: "Neighbors have reported hearing the murder, a man yelling, a woman screaming, and the thudding of someone falling down the stairs for years."
+  - says: "The man who owned this house was Colonel Christopher Billopp."
+    source: 2
+    quote: "During the Revolutionary War, the manor house was owned and inhabited by Captain Christopher Billopp's grandson, Colonel Christopher Billopp."
+  - says: "It was built in the sixteen eighties, when this was a manor in the country."
+    source: 2
+    quote: "The manor house was built by Captain Christopher Billopp as the sBat of the Manor of Bentley"
+sources:
+  - title: "Haunted Buildings of New York (For the Record blog, 12 October 2017)"
+    publisher: "NYC Department of Records and Information Services, Municipal Archives"
+    url: https://www.archives.nyc/blog/2017/10/12/haunted-buildings-of-new-york
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Conference House, designation report LP-0393, 28 February 1967"
+    publisher: "New York City Landmarks Preservation Commission"
+    url: https://s-media.nyc.gov/agencies/lpc/lp/0393.pdf
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-nobody-knows-her-name/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 72.4
+    audioBytes: 1160297
+    transcript:
+      totalS: 72.4
+      lines:
+        - text: Look at the old stone house near the water.
+          atS: 0
+          durationS: 2.21
+        - text: It was built in the sixteen eighties, when this was a manor in the country.
+          atS: 2.29
+          durationS: 3.59
+        - text: In September, seventeen seventy six, Benjamin Franklin and John Adams came here, to talk peace with the British admiral, Lord Howe.
+          atS: 5.97
+          durationS: 7.8
+        - text: It came to nothing.
+          atS: 13.9
+          durationS: 1.04
+        - text: The Americans would not give up their independence.
+          atS: 15.15
+          durationS: 2.34
+        - text: The man who owned this house was Colonel Christopher Billopp.
+          atS: 17.62
+          durationS: 3.1
+        - text: He was the leader of the Tories on Staten Island.
+          atS: 20.87
+          durationS: 2.64
+        - text: Loyal to the king.
+          atS: 23.72
+          durationS: 1.2
+        - text: Now, the legend.
+          atS: 25.36
+          durationS: 1.44
+        - text: There is no record of any of this.
+          atS: 26.97
+          durationS: 1.75
+        - text: People have simply told it, for a very long time.
+          atS: 28.87
+          durationS: 3.26
+        - text: During the war, the story goes, Billopp was kidnapped by Patriot soldiers.
+          atS: 32.52
+          durationS: 4.9
+        - text: Two months later, he came home.
+          atS: 37.59
+          durationS: 1.82
+        - text: And he was certain that someone in his own house had helped them.
+          atS: 39.66
+          durationS: 3.12
+        - text: A servant girl.
+          atS: 43.39
+          durationS: 1.11
+        - text: He believed she had signalled the soldiers, with a lantern in the window.
+          atS: 45.01
+          durationS: 4.18
+        - text: Then one night, he saw her light a lantern, and set it in the window.
+          atS: 49.8
+          durationS: 4.27
+        - text: And the story says he went mad, and pushed her down the stairs.
+          atS: 54.51
+          durationS: 3.74
+        - text: And she died.
+          atS: 58.69
+          durationS: 0.95
+        - text: For years, neighbors have said they hear it.
+          atS: 60.34
+          durationS: 2.14
+        - text: A man shouting.
+          atS: 62.86
+          durationS: 1.03
+        - text: A woman screaming.
+          atS: 63.96
+          durationS: 1.22
+        - text: And something falling, down the stairs.
+          atS: 65.5
+          durationS: 2.52
+        - text: Look at the windows that face the water.
+          atS: 68.53
+          durationS: 2.09
+        - text: Nobody knows her name.
+          atS: 71.06
+          durationS: 1.38
