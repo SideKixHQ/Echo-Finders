@@ -1,0 +1,96 @@
+# Drafted by Claude Code (2026-11-11) for the New York City Pass, Washington Heights (more NYC, second pass). About 13 km from the Midtown cluster.
+# Listening spot: Jumel Terrace at West 160th Street, at the gate of Roger Morris Park, looking up at the Morris-Jumel Mansion.
+# Position: Overture Maps address point for 65 Jumel Ter, 10032 (high confidence for the house).
+id: new-york-the-others-are-still-awake
+title: "The Others Are Still Awake"
+summary: "Washington made this house his headquarters in 1776. Then the British and the Hessians moved in. The legend says some of them stayed."
+place: "Morris-Jumel Mansion, Jumel Terrace at West 160th Street, Washington Heights, Manhattan"
+at: { lat: 40.83458, lng: -73.93858 }
+triggerRadiusKm: 0.06
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 95
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  Washington's headquarters, the British and Hessian occupation, the Jumels and Burr are in the Landmarks Preservation Commission's designation reports (1967 and 1975). The ghosts, and the story that the Jumels got $2,000 off the price because the house was haunted, are told by the NYC Municipal Archives (2017) as rumor. The archive repeats a further rumor that Eliza Jumel killed her first husband; the script leaves it out as unsupported and unkind. The script says the price story has no record.
+minAge: 10
+quality: 0.85
+tags: [new-york, washington-heights, morris-jumel, washington, hessians, burr, ghost, revolution]
+teaser: "Washington slept here. The legend says the others never did."
+script: |
+  Look up the slope at the white house with the tall columns. It is the only house in Manhattan older than the Revolution.
+
+  In the autumn of seventeen seventy six, after the disaster on Long Island, George Washington pulled his army back to these heights. And he made this house his headquarters.
+
+  Then the Americans were gone, and the British moved in. For seven years, while they held New York, it was theirs. A general and his officers. And at times, the Hessians.
+
+  In eighteen ten, the house was bought by a rich French merchant, Stephen Jumel.
+
+  And this is where the legend starts.
+
+  The story goes that the Jumels got the house two thousand dollars cheaper. Because everybody knew it was haunted. By Hessian soldiers, still walking the rooms.
+
+  There is no record of that. It is a rumor, and it is two hundred years old.
+
+  Stephen died. The next year, his widow, Eliza, married Aaron Burr, the former Vice President. She lived on in this house until eighteen sixty five.
+
+  And people say she never left either. That she walks the house she bought with her first husband, and cannot find peace.
+
+  Look at the windows on the upper floor.
+
+  Washington slept here. The others, the story goes, are still awake.
+
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "It is the only house in Manhattan older than the Revolution."
+    source: 3
+    quote: "is the only pre-Revolutionary house surviving in r1anhattan"
+  - says: "In the autumn of seventeen seventy six, after the disaster on Long Island, George Washington pulled his army back to these heights. And he made this house his headquarters."
+    source: 2
+    quote: "After the disastrous Battle of Long Island, General Washington r etreated to Harlem Heights and made the t1orris home his headquarters. (September 14-0ctober 18, 1776)."
+  - says: "For seven years, while they held New York, it was theirs. A general and his officers. And at times, the Hessians."
+    source: 2
+    quote: "the British moved in, an.d the Morris Mansion housed General Sir Henry Clinton and his officers and at inter·r vals the Hessians, during the sev en years the British occupied New York City."
+  - says: "In eighteen ten, the house was bought by a rich French merchant, Stephen Jumel."
+    source: 1
+    quote: "when the Jumel family purchased the home in 1810"
+  - says: "In eighteen ten, the house was bought by a rich French merchant, Stephen Jumel."
+    source: 2
+    quote: "Jumel, a wealthy French merchant, purchased it."
+  - says: "The story goes that the Jumels got the house two thousand dollars cheaper. Because everybody knew it was haunted. By Hessian soldiers, still walking the rooms."
+    source: 1
+    quote: "Rumor has it when the Jumel family purchased the home in 1810 they were able to get a $2,000 price reduction because the hauntings were so well-known."
+  - says: "By Hessian soldiers, still walking the rooms."
+    source: 1
+    quote: "is said to have had spirits of Hessian soldiers roaming around the house since 1810."
+  - says: "Stephen died. The next year, his widow, Eliza, married Aaron Burr, the former Vice President. She lived on in this house until eighteen sixty five."
+    source: 2
+    quote: "The year after the death of Stephen Jumel, in 1832, Madame Jumel marri ed Aaron Burr, former Vice-President of the United Sta t es. She lived on in t he house until 1865 ."
+  - says: "That she walks the house she bought with her first husband, and cannot find peace."
+    source: 1
+    quote: "She reportedly cannot find peace in her afterlife and haunts the home she purchased with her first husband."
+  - says: "Then the Americans were gone, and the British moved in."
+    source: 2
+    quote: "Upon evacuation by the American forces, the British moved in"
+  - says: "It is a rumor, and it is two hundred years old."
+    source: 1
+    quote: "Rumor has it when the Jumel family purchased the home in 1810"
+sources:
+  - title: "Haunted Buildings of New York (For the Record blog, 12 October 2017)"
+    publisher: "NYC Department of Records and Information Services, Municipal Archives"
+    url: https://www.archives.nyc/blog/2017/10/12/haunted-buildings-of-new-york
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Morris-Jumel Mansion, designation report LP-0308, 12 July 1967"
+    publisher: "New York City Landmarks Preservation Commission"
+    url: https://s-media.nyc.gov/agencies/lpc/lp/0308.pdf
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Morris-Jumel Mansion interiors, designation report LP-0888, 27 May 1975"
+    publisher: "New York City Landmarks Preservation Commission"
+    url: https://s-media.nyc.gov/agencies/lpc/lp/0888.pdf
+    retrievedAt: "2026-11-11"
+    rights: public-domain

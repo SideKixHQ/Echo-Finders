@@ -1,0 +1,123 @@
+# Drafted by Claude Code (2026-11-11) for the New York City Pass, Flushing Meadows Corona Park, Queens (more NYC, second pass). A far find: about 11 km from the Midtown cluster.
+# Listening spot: On the Avenue of the States path just west of the Unisphere, the big steel globe at the centre of Flushing Meadows Corona Park, the grounds of the 1939 and 1940 World's Fair.
+# Position: on the Avenue of the States path from Overture Maps segments, about 130 m west of the Unisphere and out of its fountain pool (high confidence for the path; the 1940 blast was somewhere on these grounds, behind the Polish Pavilion, and no source we reached fixes that spot today, so the script does not claim it).
+id: new-york-in-their-good-suits
+title: "In Their Good Suits"
+summary: "On the Fourth of July, 1940, a ticking bag was found at the World's Fair. Two detectives knelt to open it. The case was never solved."
+place: "Avenue of the States by the Unisphere, Flushing Meadows Corona Park, Queens"
+at: { lat: 40.74600, lng: -73.84620 }
+triggerRadiusKm: 0.15
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 110
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.85
+tags: [new-york, queens, flushing-meadows, worlds-fair, 1940, bomb-squad, nypd, unsolved]
+teaser: "He told his wife he would be back for dinner."
+script: |
+  Look out across this park, past the big steel globe, to the paths and lawns all around it. In nineteen thirty nine and nineteen forty, this was a World's Fair.
+
+  On the Fourth of July, nineteen forty, an electrician at the British Pavilion noticed a bag in a ventilation room. He had seen it the day before. This time he picked it up. And from inside it, people heard ticking.
+
+  Police officers carried it out, to an empty spot behind the Polish Pavilion.
+
+  Detective Joseph Lynch of the bomb squad was at home in the Bronx with his family, on call, when the phone rang. He told his wife he would be back for dinner. He picked up his partner, Ferdinand Socha, on the way.
+
+  There was no protective clothing. It had not been invented yet. They walked up to the bag in their business suits.
+
+  Socha knelt down, and cut a small opening in the case with a pen knife, so Lynch could see inside. Lynch said, It's the business.
+
+  Then it went off.
+
+  Both detectives were killed. Other officers were badly hurt.
+
+  The mayor put fifteen hundred officers on the case. The city offered twenty five thousand dollars for the bomber. Nobody was ever convicted. The police still list it as an open case.
+
+  Afterwards, the city built a truck to carry bombs away safely. Its chamber was woven from steel cable, like a basket.
+
+  Look out across the park again.
+
+  Somewhere out here, two men knelt down in their good suits.
+
+pronunciations:
+  - written: Socha
+    say: SO-ha
+editorial: draft
+factCheck: corroborated
+trueCrimeReview:
+  # Unsolved: no one was ever charged with the bombing or convicted of it. One man was
+  # arrested on suspicion and police could not tie him to it (Municipal Archives); he is not
+  # named. Everyone named died decades ago. Sources: the NYC Municipal Archives' account
+  # from the NYPD and Mayor LaGuardia collections, and NPR (All Things Considered, 2010,
+  # commentary by the author of a history of the 1939 fair). Two independent sources.
+  involvesLivingPeople: false
+  convictionStatus: unsolved
+  reviewedBy: "TODO: a named human, before this can leave draft."
+  reviewedAt: "2026-11-11"
+  contentWarning: This echo describes a bombing in which two police detectives were killed. No injuries are described.
+claims:
+  - says: "In nineteen thirty nine and nineteen forty, this was a World's Fair."
+    source: 2
+    quote: "a time bomb planted in the British Pavilion at the New York World's Fair of 1939-40"
+  - says: "On the Fourth of July, nineteen forty, an electrician at the British Pavilion noticed a bag in a ventilation room. He had seen it the day before. This time he picked it up."
+    source: 1
+    quote: "An electrician noticed it the previous day in a ventilation room of the British Pavilion and assumed it belonged to another worker. When he saw it again on the 4th he picked it up"
+  - says: "And from inside it, people heard ticking."
+    source: 1
+    quote: "Hearing a ticking noise coming from it they alerted police officers assigned to the Fair."
+  - says: "Police officers carried it out, to an empty spot behind the Polish Pavilion."
+    source: 1
+    quote: "The officers picked up the bag and brought it to an empty area behind the Polish Pavillion."
+  - says: "Detective Joseph Lynch of the bomb squad was at home in the Bronx with his family, on call, when the phone rang."
+    source: 1
+    quote: "Detective Joseph J. Lynch of the NYPD Bomb & Forgery Squad was at his Bronx home with his family, but on call, when the phone rang."
+  - says: "He told his wife he would be back for dinner. He picked up his partner, Ferdinand Socha, on the way."
+    source: 1
+    quote: "Det. Lynch told his wife he would be back for dinner, borrowed his sister's car and picked up his partner Det. Ferdinand A. Socha in Greenpoint on the way to Queens."
+  - says: "There was no protective clothing. It had not been invented yet. They walked up to the bag in their business suits."
+    source: 1
+    quote: "Detectives Lynch and Socha approached the bag wearing nothing but their business suits, as protective clothing had not yet been invented."
+  - says: "Socha knelt down, and cut a small opening in the case with a pen knife, so Lynch could see inside. Lynch said, It's the business."
+    source: 1
+    quote: "Kneeling on the ground Det. Socha cut a small opening into the case with a pen knife so Lynch could peer inside."
+  - says: "Lynch said, It's the business."
+    source: 1
+    quote: "Lynch was heard to say, \"It's the business\" and then the bomb detonated."
+  - says: "Both detectives were killed."
+    source: 2
+    quote: "two bomb squad detectives, Joe Lynch and Freddy Socha, tried to defuse it. The bomb went off in their faces, killing them instantly."
+  - says: "Other officers were badly hurt."
+    source: 1
+    quote: "Another eight officers were injured in the explosion."
+  - says: "The mayor put fifteen hundred officers on the case. The city offered twenty five thousand dollars for the bomber."
+    source: 1
+    quote: "He put 1,500 officers on the case"
+  - says: "The city offered twenty five thousand dollars for the bomber."
+    source: 1
+    quote: "the City offered a $25,000 reward for information leading to the arrest of a suspect"
+  - says: "Nobody was ever convicted. The police still list it as an open case."
+    source: 1
+    quote: "The 1940 bombing that inspired its creation was never solved and the NYPD still considers it an open case."
+  - says: "Nobody was ever convicted."
+    source: 2
+    quote: "This Fourth of July marks the 70th anniversary of a little-known and unsolved terrorist attack on American soil."
+  - says: "Afterwards, the city built a truck to carry bombs away safely. Its chamber was woven from steel cable, like a basket."
+    source: 1
+    quote: "It was like a wicker basket made of steel and an inner envelope of steel mats held the bombs."
+  - says: "Somewhere out here, two men knelt down in their good suits."
+    source: 1
+    quote: "Detectives Lynch and Socha approached the bag wearing nothing but their business suits"
+sources:
+  - title: "The LaGuardia-Pyke Bomb Carrier and the 1940 World's Fair Bombing That Inspired It (For the Record blog, 6 February 2026)"
+    publisher: "NYC Department of Records and Information Services, Municipal Archives"
+    url: https://www.archives.nyc/blog/2026/2/6/the-laguardia-pyke-bomb-carrier-and-the-1940-worlds-fair-bombing
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "A Forgotten July 4 Bombing At The World's Fair (All Things Considered, 1 July 2010)"
+    publisher: "NPR"
+    url: https://www.npr.org/2010/07/01/128216755/a-forgotten-july-4-bombing-at-the-worlds-fair
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

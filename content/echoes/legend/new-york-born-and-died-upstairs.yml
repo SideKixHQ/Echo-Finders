@@ -1,0 +1,92 @@
+# Drafted by Claude Code (2026-11-11) for the New York City Pass, NoHo (more NYC, second pass).
+# Listening spot: The East Fourth Street sidewalk outside number 29, between Lafayette Street and the Bowery: the Merchant's House Museum.
+# Position: Overture Maps address point for 29 E 4 St, 10003 (high confidence for the building).
+id: new-york-born-and-died-upstairs
+title: "Born and Died Upstairs"
+summary: "Gertrude Tredwell was born in this house in 1840 and died in it in 1933. It became a museum, and people began to say she had stayed."
+place: "Merchant's House Museum, 29 East Fourth Street, NoHo, Manhattan"
+at: { lat: 40.72761, lng: -73.99240 }
+triggerRadiusKm: 0.04
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 85
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The house, the Tredwells and Gertrude's birth and death in the house are documented in the Landmarks Preservation Commission's 1965 designation report. The sightings are told by the NYC Municipal Archives (2017) as "it is said", and the archive attributes the "most haunted house" label to the New York Times. The script says plainly that nothing proves the haunting.
+minAge: 10
+quality: 0.85
+tags: [new-york, noho, merchants-house, tredwell, ghost, greek-revival, museum]
+teaser: "She lived her whole life in one house. Some people think she is still at home."
+script: |
+  Find the brick house at number twenty nine East Fourth Street.
+
+  Look at it closely. This is not a copy of an old house. It is the old house, inside and out.
+
+  In eighteen thirty five, a merchant named Seabury Tredwell bought it. Five years later, his daughter Gertrude was born here.
+
+  She grew up here. She grew old here. And in nineteen thirty three, she died here. More than ninety years, in one house. The city's archivists say she was born, and died, in the same upstairs bedroom.
+
+  After she died, the house was bought and kept exactly as it was, as a museum. And soon, people began to say they had seen her.
+
+  An old woman, most of the time. Sometimes a young one. Keeping watch over the family home.
+
+  The New York Times, the archivists say, once called it Manhattan's most haunted house. There is no proof of any of it. It is a ghost story, and it is told by the people who look after this house.
+
+  When the city made it a landmark in nineteen sixty five, it said the house had stood for a hundred and thirty years in its original state.
+
+  Look up at the windows.
+
+  She never moved out. Some people think she still hasn't.
+
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "This is not a copy of an old house. It is the old house, inside and out."
+    source: 2
+    quote: "The building has existed f or 130 years in its original state, inside and out."
+  - says: "In eighteen thirty five, a merchant named Seabury Tredwell bought it. Five years later, his daughter Gertrude was born here."
+    source: 2
+    quote: "His daughter, Miss Gertrude Tredwell, was born in the house in 1840 and died there in 1933."
+  - says: "The city's archivists say she was born, and died, in the same upstairs bedroom."
+    source: 1
+    quote: "Daughter Gertrude Tredwell was born and died in the same upstairs bedroom."
+  - says: "After she died, the house was bought and kept exactly as it was, as a museum."
+    source: 2
+    quote: "The house was then purchased and preserved intact as a museum."
+  - says: "And soon, people began to say they had seen her."
+    source: 1
+    quote: "Shortly after her death, the home was turned into the museum and sightings of the spirit began."
+  - says: "An old woman, most of the time. Sometimes a young one. Keeping watch over the family home."
+    source: 1
+    quote: "It is said that Gertrude keeps watch over the family home, usually as an older woman but sometimes her spirit is seen as a younger woman."
+  - says: "The New York Times, the archivists say, once called it Manhattan's most haunted house."
+    source: 1
+    quote: "The Merchant's House and Museum was labeled \"Manhattan's Most Haunted House\" by the New York Times."
+  - says: "When the city made it a landmark in nineteen sixty five, it said the house had stood for a hundred and thirty years in its original state."
+    source: 2
+    quote: "Landmarks Preservation Commission October 14, 1965"
+  - says: "Find the brick house at number twenty nine East Fourth Street."
+    source: 2
+    quote: "The Old Merchant 's House is a brick town house with three stories, a basement and an attic."
+  - says: "In eighteen thirty five, a merchant named Seabury Tredwell bought it."
+    source: 2
+    quote: "until it was sold to Seabury"
+  - says: "And in nineteen thirty three, she died here."
+    source: 2
+    quote: "was born in the house in 1840 and died there in 1933."
+  - says: "More than ninety years, in one house."
+    source: 2
+    quote: "was born in the house in 1840 and died there in 1933."
+sources:
+  - title: "Haunted Buildings of New York (For the Record blog, 12 October 2017)"
+    publisher: "NYC Department of Records and Information Services, Municipal Archives"
+    url: https://www.archives.nyc/blog/2017/10/12/haunted-buildings-of-new-york
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Old Merchant's House (Seabury Tredwell House), designation report LP-0006, 14 October 1965"
+    publisher: "New York City Landmarks Preservation Commission"
+    url: https://s-media.nyc.gov/agencies/lpc/lp/0006.pdf
+    retrievedAt: "2026-11-11"
+    rights: public-domain
