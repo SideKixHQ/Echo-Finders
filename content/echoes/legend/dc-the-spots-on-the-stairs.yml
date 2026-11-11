@@ -1,0 +1,151 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core (U.S. Capitol), following the six beats in docs/writing-echoes.md (echo-format-v2). Told as legend, male narrator.
+# Listening spot: Inside the U.S. Capitol, House wing, by the staircase where, the legend says, the 1890 shooting left marks on the steps.
+# Position: the House wing of the Capitol, south of the Rotunda's centre (38.88990, -77.00906); which staircase is meant is not given in the source, so the radius covers the wing (low confidence on the exact stair).
+id: dc-the-spots-on-the-stairs
+title: "The Spots on the Stairs"
+summary: "In 1890 a reporter shot a former congressman in the House wing. The legend says the stains on the stairs are his, and he trips reporters."
+place: "House wing staircase, U.S. Capitol, Washington, D.C."
+at: { lat: 38.88925, lng: -77.00905 }
+triggerRadiusKm: 0.06
+category: legend
+format: short
+durationS: 46
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A legend. The 1890 shooting is history, reported by CBS News (Associated Press) from Capitol ghost-tale collections; the stains and the tripping are folklore, and the script says so. Nothing supernatural is claimed. The acquittal is from the Alexandria Gazette of 9 April 1891; Taulbee's death eleven days later is from the Architect of the Capitol.
+minAge: 12
+quality: 0.75
+inside: true
+hours: { fromHour: 9, toHour: 16 }
+voice: wC1005J19tvhoqqC2hkf
+tags: [washington, dc-core, us-capitol, ghosts, taulbee, 1890]
+teaser: "Reporters, watch your step on these stairs. There is a story about why."
+script: |
+  If you are in the House wing, look down at the steps as you climb.
+
+  This is a legend. Hold on to that.
+
+  The history first. In eighteen ninety, a newspaper correspondent named Charles Kincaid had an argument with William Taulbee, a former congressman from Kentucky. Here in the House wing, Kincaid shot him. Taulbee died eleven days later. Kincaid was tried, and acquitted.
+
+  Now the legend. Some people say that the dark spots on one of the staircases here are Taulbee's blood. And they say Taulbee has never forgiven the press. When a reporter takes these stairs, the story goes, something catches their foot.
+
+  There is no record of anyone being tripped by a ghost. Stone stairs in an old building trip people all by themselves.
+
+  So if you happen to be a reporter.
+
+  Hold the rail.
+pronunciations:
+  - written: Taulbee
+    say: TALL-bee
+  - written: Kincaid
+    say: kin-KADE
+detail: >-
+  Told as legend. CBS describes the place as "a House hallway" with "the stairway"; it does not say which staircase, and the script does not either. Second pass (2026-11-11): the Architect of the Capitol, the Evening Star's year in review for 1890 and the Alexandria Gazette (1891) now back the shooting, the death and the acquittal. Taulbee had left Congress by 1890 (the AOC calls him "the former member", the Star "ex-Congressman"), so the script now says former congressman. The AOC says he was shot "on the stairs" and died 11 days later; the Star's year review misprints the date as the 2d of February.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In eighteen ninety, a newspaper correspondent named Charles Kincaid had an argument with William Taulbee, a former congressman from Kentucky. Here in the House wing, Kincaid shot him."
+    source: 1
+    quote: "Disbelieving reporters might avoid a House hallway where in 1890 journalist Charles Kincaid shot and killed Kentucky congressman William Taulbee after an argument."
+  - says: "Some people say that the dark spots on one of the staircases here are Taulbee's blood."
+    source: 1
+    quote: "The legend is that black spots on the stairway are Taulbee's blood, and that Taulbee gets his revenge by tripping up reporters on the stairs."
+  - says: "a former congressman from Kentucky. Here in the House wing, Kincaid shot him. Taulbee died eleven days later."
+    source: 2
+    quote: "By 1890, the reporter had enough of the harassment and shot Taulbee on the stairs. He died 11 days later."
+  - says: "a former congressman from Kentucky. Here in the House wing, Kincaid shot him."
+    source: 3
+    quote: "Charles Kincaid, a young newspaper man, shot ex-Congressman Taulbee of Kentucky. The shooting took place in the Capitol at Washington."
+  - says: "Kincaid was tried, and acquitted."
+    source: 4
+    quote: "ACQUITTAL of Kincaid was inacoord ace- with law, jas'.ice ard the rights of man."
+  - says: "Some people say that the dark spots on one of the staircases here are Taulbee's blood."
+    source: 2
+    quote: "A stain on the stairs in the Capitol building is often attributed to the former congressman's blood."
+  - says: "If you are in the House wing, look down at the steps as you climb."
+    source: 1
+    quote: "The legend is that black spots on the stairway are Taulbee's blood, and that Taulbee gets his revenge by tripping up reporters on the stairs."
+  - says: "The history first."
+    source: 1
+    quote: "Disbelieving reporters might avoid a House hallway where in 1890 journalist Charles Kincaid shot and killed Kentucky congressman William Taulbee after an argument."
+  - says: "And they say Taulbee has never forgiven the press."
+    source: 1
+    quote: "The legend is that black spots on the stairway are Taulbee's blood, and that Taulbee gets his revenge by tripping up reporters on the stairs."
+sources:
+  - title: "Haunted House On The Hill"
+    publisher: "CBS News (Associated Press)"
+    url: https://www.cbsnews.com/news/haunted-house-on-the-hill/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Haunted Halls of Congress: 5 Creepy Capitol Legends"
+    publisher: "Architect of the Capitol"
+    url: https://www.aoc.gov/blog/haunted-halls-congress-5-creepy-capitol-legends
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 31 December 1890, page 6: A Year's Record"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1890-12-31/ed-1/?sp=6
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Alexandria Gazette, 9 April 1891, page 2: the acquittal of Kincaid"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn85025007/1891-04-09/ed-1/?sp=2
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-the-spots-on-the-stairs/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 46.4
+    audioBytes: 743174
+    transcript:
+      totalS: 46.4
+      lines:
+        - text: If you are in the House wing, look down at the steps as you climb.
+          atS: 0
+          durationS: 3.45
+        - text: This is a legend.
+          atS: 3.6
+          durationS: 1.04
+        - text: Hold on to that.
+          atS: 4.69
+          durationS: 0.91
+        - text: The history first.
+          atS: 5.71
+          durationS: 1.16
+        - text: In eighteen ninety, a newspaper correspondent named Charles Kincaid had an argument with William Taulbee, a former congressman from Kentucky.
+          atS: 7.2
+          durationS: 8.02
+        - text: Here in the House wing, Kincaid shot him.
+          atS: 15.55
+          durationS: 2.29
+        - text: Taulbee died eleven days later.
+          atS: 18.04
+          durationS: 1.87
+        - text: Kincaid was tried, and acquitted.
+          atS: 20.09
+          durationS: 2.04
+        - text: Now the legend.
+          atS: 22.51
+          durationS: 0.93
+        - text: Some people say that the dark spots on one of the staircases here are Taulbee's blood.
+          atS: 23.72
+          durationS: 4.53
+        - text: And they say Taulbee has never forgiven the press.
+          atS: 28.57
+          durationS: 2.79
+        - text: When a reporter takes these stairs, the story goes, something catches their foot.
+          atS: 31.74
+          durationS: 4.72
+        - text: There is no record of anyone being tripped by a ghost.
+          atS: 36.75
+          durationS: 3.03
+        - text: Stone stairs in an old building trip people all by themselves.
+          atS: 40.05
+          durationS: 3.49
+        - text: So if you happen to be a reporter.
+          atS: 43.7
+          durationS: 1.65
+        - text: Hold the rail.
+          atS: 45.42
+          durationS: 0.98

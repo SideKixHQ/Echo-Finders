@@ -1,0 +1,155 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core (U.S. Capitol), following the six beats in docs/writing-echoes.md (echo-format-v2). Told as legend, male narrator.
+# Listening spot: Inside the U.S. Capitol on a tour, the small Senate rotunda on the Senate side of the crypt level, where tour groups are shown the marks in the floor said to be cat prints.
+# Position: the Senate side of the Capitol, a short way north of the Rotunda's centre (38.88990, -77.00906, as used by dc-seventy-six-years-round); the room's exact position inside the building was not found in a reachable source (medium confidence).
+id: dc-the-cat-in-the-crypt
+title: "The Cat in the Crypt"
+summary: "The most famous ghost in the Capitol is a cat. A legend, told by guards and tour guides, of a cat that grows."
+place: "Small Senate rotunda, U.S. Capitol, Washington, D.C."
+at: { lat: 38.89020, lng: -77.00910 }
+triggerRadiusKm: 0.05
+category: legend
+format: short
+durationS: 61
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A legend. Nothing in it is proven, and the script says so. The account of the Demon Cat comes from Jim Berard, a House committee spokesman who collected Capitol ghost tales, as reported by CBS News; NPR reported interns showing tour groups the floor marks as cat prints, and the Capitol's own staff treating the tale as a story. No guard's shot or death is documented.
+minAge: 0
+quality: 0.75
+inside: true
+hours: { fromHour: 9, toHour: 16 }
+voice: wC1005J19tvhoqqC2hkf
+tags: [washington, dc-core, us-capitol, ghosts, demon-cat]
+teaser: "Look down at the floor. Some people say those marks were made by a cat."
+script: |
+  Look at the floor in this small round room, ringed with columns. Tour guides like to point at a set of marks pressed into it. Cat prints, they say.
+
+  This is a legend. Nobody has ever proved a word of it. But it is the most famous ghost in the Capitol, and it is a cat.
+
+  The story goes back to the early days of the building, when cats were let loose down here to keep the rats down. One of them, they say, never left.
+
+  It is called the Demon Cat. It is said to appear when the country is in trouble. It starts out as an ordinary cat. Then it grows. Bigger, and bigger, to an enormous size. And then, suddenly, it is gone.
+
+  The legend says one guard fired his gun at it. Another, they say, was so frightened his heart gave out.
+
+  None of that is in any record. When a reporter followed the student interns who give tours here, one told his group about the ghost cat, and the Senate's head curator, standing beside them, started laughing.
+
+  Look at the marks on the floor again.
+
+  Whatever made them is still not saying.
+detail: >-
+  Told as legend, with no claim that anything happened. Berard's tales were published in his history "The Capitol Inside & Out", as described by CBS. NBC's 2007 piece on pet ghosts names the Demon Cat as the one unfriendly feline ghost in the country, quoting a ghost-tour writer.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Tour guides like to point at a set of marks pressed into it. Cat prints, they say."
+    source: 2
+    quote: "They're cat prints, these two. They used to release cats in here to catch the mice."
+  - says: "But it is the most famous ghost in the Capitol, and it is a cat."
+    source: 1
+    quote: "Berard says the most famous Capitol apparition is the \"Demon Cat,\""
+  - says: "The story goes back to the early days of the building, when cats were let loose down here to keep the rats down."
+    source: 1
+    quote: "thought to date back to the early days when cats roamed the building to keep the rat population down."
+  - says: "Then it grows. Bigger, and bigger, to an enormous size. And then, suddenly, it is gone."
+    source: 1
+    quote: "grows to enormous size before suddenly vanishing."
+  - says: "It is said to appear when the country is in trouble."
+    source: 1
+    quote: "The cat, said to appear at times of national crisis, grows to enormous size before suddenly vanishing."
+  - says: "The legend says one guard fired his gun at it. Another, they say, was so frightened his heart gave out."
+    source: 1
+    quote: "Legend has it that one guard fired his gun at it, and another was so frightened he suffered a fatal heart attack."
+  - says: "When a reporter followed the student interns who give tours here, one told his group about the ghost cat, and the Senate's head curator, standing beside them, started laughing."
+    source: 2
+    quote: "Intern Zac Santos tells his group that these markings may be from the ghost cat of the crypt. Smith starts laughing."
+  - says: "One of them, they say, never left."
+    source: 1
+    quote: "Berard says the most famous Capitol apparition is the \"Demon Cat,\" thought to date back to the early days when cats roamed the building to keep the rat population down."
+  - says: "It is called the Demon Cat."
+    source: 1
+    quote: "Berard says the most famous Capitol apparition is the \"Demon Cat,\""
+sources:
+  - title: "Haunted House On The Hill"
+    publisher: "CBS News (Associated Press)"
+    url: https://www.cbsnews.com/news/haunted-house-on-the-hill/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Ghost Cats And Musket Balls: Stories Told By Capitol Interns"
+    publisher: "NPR, Morning Edition"
+    url: https://www.npr.org/transcripts/331050132
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Howling haunts: Where ghost pets play"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna21422767
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-the-cat-in-the-crypt/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 61.3
+    audioBytes: 981829
+    transcript:
+      totalS: 61.3
+      lines:
+        - text: Look at the floor in this small round room, ringed with columns.
+          atS: 0
+          durationS: 3.61
+        - text: Tour guides like to point at a set of marks pressed into it.
+          atS: 3.85
+          durationS: 3.41
+        - text: Cat prints, they say.
+          atS: 7.59
+          durationS: 1.53
+        - text: This is a legend.
+          atS: 9.25
+          durationS: 1.08
+        - text: Nobody has ever proved a word of it.
+          atS: 10.51
+          durationS: 1.87
+        - text: But it is the most famous ghost in the Capitol, and it is a cat.
+          atS: 12.49
+          durationS: 3.91
+        - text: The story goes back to the early days of the building, when cats were let loose down here to keep the rats down.
+          atS: 16.58
+          durationS: 5.77
+        - text: One of them, they say, never left.
+          atS: 22.42
+          durationS: 2.33
+        - text: It is called the Demon Cat.
+          atS: 24.81
+          durationS: 1.61
+        - text: It is said to appear when the country is in trouble.
+          atS: 26.46
+          durationS: 2.53
+        - text: It starts out as an ordinary cat.
+          atS: 29.11
+          durationS: 2.24
+        - text: Then it grows.
+          atS: 31.59
+          durationS: 1.08
+        - text: Bigger, and bigger, to an enormous size.
+          atS: 32.84
+          durationS: 2.54
+        - text: And then, suddenly, it is gone.
+          atS: 35.52
+          durationS: 2.38
+        - text: The legend says one guard fired his gun at it.
+          atS: 38.14
+          durationS: 2.87
+        - text: Another, they say, was so frightened his heart gave out.
+          atS: 41.22
+          durationS: 3.12
+        - text: None of that is in any record.
+          atS: 44.78
+          durationS: 1.65
+        - text: When a reporter followed the student interns who give tours here, one told his group about the ghost cat, and the Senate's head curator, standing beside them, started laughing.
+          atS: 46.75
+          durationS: 9.74
+        - text: Look at the marks on the floor again.
+          atS: 56.94
+          durationS: 1.81
+        - text: Whatever made them is still not saying.
+          atS: 58.96
+          durationS: 2.34

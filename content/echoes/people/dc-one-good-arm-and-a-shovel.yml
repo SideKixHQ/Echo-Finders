@@ -1,0 +1,155 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Kenilworth), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Kenilworth Aquatic Gardens, on the dykes between the lily ponds west of the visitor center.
+# Position: west of Overture's 'Kenilworth Park and Aquatic Gardens' (38.91260, -76.94183), among the ponds; the original ice pond is not marked (medium confidence).
+id: dc-one-good-arm-and-a-shovel
+title: "One Good Arm and a Shovel"
+summary: "A Civil War veteran who lost the use of his right arm planted twelve water lilies here. They became the Kenilworth gardens."
+place: "Lily ponds, Kenilworth Aquatic Gardens, Anacostia Avenue NE, Washington, D.C."
+at: { lat: 38.91180, lng: -76.94380 }
+triggerRadiusKm: 0.08
+category: people
+format: short
+durationS: 75
+visibility: daylight-dependent
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, kenilworth, anacostia, water-lilies, civil-war, veterans, gardens]
+teaser: "Every pond around you was dug by a man with one working arm."
+script: |
+  Look around at the ponds, one after another, full of water lilies. Every one of them had to be dug.
+
+  The man who started it was Walter Shaw. He was born on an island in Maine. In the Civil War he was drafted, and in May eighteen sixty four, at Spotsylvania, a bullet struck his right arm. Part of it was amputated. In a Washington hospital, he taught himself to write with his left hand.
+
+  His neat left handed writing got him a job as a clerk at the Treasury. He and his wife bought land out here, east of the Anacostia.
+
+  Around eighteen eighty eight, he started what he called playing in the water. He planted twelve white water lilies, brought from Maine, in an old ice pond. They grew so fast they crowded it out. So, with his one good arm and a shovel, he dug another pond. And another. Mornings and evenings, around his job.
+
+  Soon he had more flowers than he could give away. He started selling them. By nineteen oh two, the hobby paid better than the Treasury, and he quit.
+
+  He named one of his lilies after his wife, and one after his daughter.
+
+  Look at the ponds again.
+
+  He dug them one arm at a time.
+detail: >-
+  All from the Park Service's biography of Walter Shaw. "Played in the water" is Shaw's own phrase as the Park Service quotes it. The lilies were named Luciana, for his wife, and Helen Fowler, for his daughter.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "He was born on an island in Maine."
+    source: 1
+    quote: "Walter Shaw was born on the island of Vinalhaven, Maine on July 20, 1838."
+  - says: "In the Civil War he was drafted, and in May eighteen sixty four, at Spotsylvania, a bullet struck his right arm. Part of it was amputated."
+    source: 1
+    quote: "His unit was fighting at Spotsylvania Court House on May 12, 1864, when Walter was hit with a Minnie ball in his lower right arm which resulted in partial amputation of that arm."
+  - says: "In a Washington hospital, he taught himself to write with his left hand."
+    source: 1
+    quote: "He was sent to Columbian Hospital in Washington DC to recover and had to learn to write with his left arm."
+  - says: "His neat left handed writing got him a job as a clerk at the Treasury."
+    source: 1
+    quote: "Walter’s neat, self-taught writing with his left hand helped get him a job as a clerk and copy writer with the US Treasury Department in DC."
+  - says: "Around eighteen eighty eight, he started what he called playing in the water. He planted twelve white water lilies, brought from Maine, in an old ice pond."
+    source: 1
+    quote: "Walter began “playing in the water” as he phrased it around 1888. He planted 12 hardy American white water lilies from Maine in an old ice pond on the property."
+  - says: "They grew so fast they crowded it out. So, with his one good arm and a shovel, he dug another pond."
+    source: 1
+    quote: "The lilies grew so rapidly that they crowded the little pond, so he used his one good arm and a shovel to excavate additional ponds."
+  - says: "Soon he had more flowers than he could give away. He started selling them. By nineteen oh two, the hobby paid better than the Treasury, and he quit."
+    source: 1
+    quote: "He found that his hobby became more profitable than his job at the US Treasury, so in 1902 he became a full-time aquatic gardener."
+  - says: "He named one of his lilies after his wife, and one after his daughter."
+    source: 1
+    quote: "He cultivated a rosy-pink lily “Luciana” in honor of his wife and a deep rose-colored lily “Helen Fowler” for his daughter."
+  - says: "Look around at the ponds, one after another, full of water lilies."
+    source: 1
+    quote: "The lilies grew so rapidly that they crowded the little pond, so he used his one good arm and a shovel to excavate additional ponds."
+  - says: "Every one of them had to be dug."
+    source: 1
+    quote: "The lilies grew so rapidly that they crowded the little pond, so he used his one good arm and a shovel to excavate additional ponds."
+  - says: "The man who started it was Walter Shaw."
+    source: 1
+    quote: "As the founder of Kenilworth Aquatic Gardens, Walter Shaw lived a very distinct life."
+  - says: "He and his wife bought land out here, east of the Anacostia."
+    source: 1
+    quote: "On May 26, 1879, Walter and his wife Luciana purchased 33 acres of land from Luciana’s parents for $2,500 in the growing Benning and Deanwood area East of the Anacostia River."
+  - says: "He dug them one arm at a time."
+    source: 1
+    quote: "so he used his one good arm and a shovel to excavate additional ponds."
+sources:
+  - title: "Walter Shaw"
+    publisher: "National Park Service, Kenilworth Park and Aquatic Gardens"
+    url: https://www.nps.gov/people/walter-shaw.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-one-good-arm-and-a-shovel/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.3
+    audioBytes: 1206273
+    transcript:
+      totalS: 75.3
+      lines:
+        - text: Look around at the ponds, one after another, full of water lilies.
+          atS: 0
+          durationS: 3.88
+        - text: Every one of them had to be dug.
+          atS: 4.26
+          durationS: 1.72
+        - text: The man who started it was Walter Shaw.
+          atS: 6.42
+          durationS: 2.26
+        - text: He was born on an island in Maine.
+          atS: 8.96
+          durationS: 2.03
+        - text: In the Civil War he was drafted, and in May eighteen sixty four, at Spotsylvania, a bullet struck his right arm.
+          atS: 11.44
+          durationS: 6.99
+        - text: Part of it was amputated.
+          atS: 18.87
+          durationS: 1.87
+        - text: In a Washington hospital, he taught himself to write with his left hand.
+          atS: 21.18
+          durationS: 4.12
+        - text: His neat left handed writing got him a job as a clerk at the Treasury.
+          atS: 25.81
+          durationS: 4.31
+        - text: He and his wife bought land out here, east of the Anacostia.
+          atS: 30.63
+          durationS: 4.04
+        - text: Around eighteen eighty eight, he started what he called playing in the water.
+          atS: 35.27
+          durationS: 4.18
+        - text: He planted twelve white water lilies, brought from Maine, in an old ice pond.
+          atS: 39.96
+          durationS: 5.32
+        - text: They grew so fast they crowded it out.
+          atS: 45.79
+          durationS: 2.52
+        - text: So, with his one good arm and a shovel, he dug another pond.
+          atS: 48.52
+          durationS: 3.49
+        - text: And another.
+          atS: 52.29
+          durationS: 0.88
+        - text: Mornings and evenings, around his job.
+          atS: 53.35
+          durationS: 2.72
+        - text: Soon he had more flowers than he could give away.
+          atS: 56.51
+          durationS: 2.73
+        - text: He started selling them.
+          atS: 59.51
+          durationS: 1.46
+        - text: By nineteen oh two, the hobby paid better than the Treasury, and he quit.
+          atS: 61.3
+          durationS: 4.62
+        - text: He named one of his lilies after his wife, and one after his daughter.
+          atS: 66.36
+          durationS: 4.24
+        - text: Look at the ponds again.
+          atS: 71.3
+          durationS: 1.4
+        - text: He dug them one arm at a time.
+          atS: 73.21
+          durationS: 2.11

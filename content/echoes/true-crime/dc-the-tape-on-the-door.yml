@@ -1,0 +1,177 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC (Foggy Bottom), following the six beats in docs/writing-echoes.md (echo-format-v2) and docs/14-true-crime.md.
+# Listening spot: Public sidewalk on Virginia Avenue NW outside the Watergate office building, 2600 Virginia Avenue, near the garage entrance below the building.
+# Position: Overture places 'Watergate Office Garage' and 'Watergate' (2600 Virginia Ave NW) at 38.89962, -77.05547; set on the Virginia Avenue sidewalk in front (high confidence).
+id: dc-the-tape-on-the-door
+title: "The Tape on the Door"
+summary: "In June 1972 a night guard found tape over a lock at the Watergate. The burglars put it back, and went in anyway."
+place: "Watergate office building, 2600 Virginia Avenue NW, Foggy Bottom, Washington, D.C."
+at: { lat: 38.89940, lng: -77.05560 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.75
+tags: [washington, foggy-bottom, watergate, nixon, 1972, burglary]
+teaser: "A strip of tape, found, removed, and put back. That was the mistake."
+script: |
+  Look at the curved office building in front of you, the Watergate. Down below it is a garage, and a back door to a stairwell. In June nineteen seventy two, someone put a strip of tape across the lock of that door, so it would not catch.
+
+  The man who did it was James McCord. He later described that night himself. He taped the doors from the sixth floor down, he said, and taped the outside door too.
+
+  Then a security guard on his rounds, Frank Wills, found the tape.
+
+  When the burglars came back, the door was locked again. They knew the tape had been found. And they went in anyway. One of them picked the lock and taped the door again, the same way as before.
+
+  The police were called. Plain clothes officers went up through the building with the guard, room by room, turning on the lights. Five men were arrested inside the Democratic National Committee's offices. They had crouched behind a glass partition, hoping not to be seen.
+
+  In January nineteen seventy three, five of the men pleaded guilty, and two more, McCord and Gordon Liddy, were convicted by a jury. And the questions about who sent them did not stop until a President resigned.
+
+  Look at that door again.
+
+  McCord said it plainly. We should not have gone in after the first tape had been found.
+pronunciations:
+  - written: Liddy
+    say: LID-ee
+detail: >-
+  Conviction status: convicted. Seven men were indicted; Hunt and the four men arrested with McCord pleaded guilty and Liddy and McCord were convicted on all counts (National Archives chronology). Everyone named is dead (McCord 2017, Liddy 2021, Wills 2000), and the four arrested with McCord are not named. Wills's role is from McCord's 1974 account and NPR's summary; CBS's 1972 report quotes an unnamed guard saying the tape was over a lock.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo concerns a burglary and the political scandal that followed. No violence is described."
+claims:
+  - says: "In June nineteen seventy two, someone put a strip of tape across the lock of that door, so it would not catch."
+    source: 3
+    quote: "He said a tape had been placed over a lock to keep a door accessible to the stairwell that leads directly to the headquarters."
+  - says: "He taped the doors from the sixth floor down, he said, and taped the outside door too."
+    source: 2
+    quote: "went up to the sixth floor and proceeded to come down inside the stairwell and to tape the necessary doors."
+  - says: "Then a security guard on his rounds, Frank Wills, found the tape."
+    source: 2
+    quote: "the guard had made his rounds and doing the job very thoroughly, he had checked that back door, found that it could be opened and found the tape"
+  - says: "One of them picked the lock and taped the door again, the same way as before."
+    source: 2
+    quote: "Gonzalez had retaped the door vertically just as I had before."
+  - says: "When the burglars came back, the door was locked again. They knew the tape had been found."
+    source: 2
+    quote: "he said, the door is locked. Someone has found the tape."
+  - says: "The police were called."
+    source: 4
+    quote: "a security guard had noted that the doors' locks were taped. The police were called, and the burglars were arrested."
+  - says: "Plain clothes officers went up through the building with the guard, room by room, turning on the lights."
+    source: 2
+    quote: "three men plus the guard were on the floors above us, going room by room, turning on the lights"
+  - says: "Five men were arrested inside the Democratic National Committee's offices."
+    source: 1
+    quote: "Five men are arrested while attempting to repair the surveillance equipment at Democratic National Committee headquarters."
+  - says: "They had crouched behind a glass partition, hoping not to be seen."
+    source: 2
+    quote: "crouched behind a cubicle - a glass cubicle"
+  - says: "In January nineteen seventy three, five of the men pleaded guilty, and two more, McCord and Gordon Liddy, were convicted by a jury."
+    source: 1
+    quote: "Hunt pleads guilty (January 11); Barker, Sturgis, Martinez, and Gonzalez plead guilty (January 15); Liddy and McCord are convicted on all counts of break-in indictment (January 30)."
+  - says: "And the questions about who sent them did not stop until a President resigned."
+    source: 3
+    quote: "The burglary and resulting cover-up ultimately led to Nixon's resignation on August 9, 1974, under threat of impeachment."
+  - says: "We should not have gone in after the first tape had been found."
+    source: 2
+    quote: "We shouldn't have gone in after the first tape had been found."
+  - says: "The man who did it was James McCord."
+    source: 2
+    quote: "On the second anniversary of the Watergate burglary, one of the conspirators, James McCord, describes the break-in."
+sources:
+  - title: "Watergate and the Constitution: A Chronology"
+    publisher: "National Archives"
+    url: https://www.archives.gov/education/lessons/watergate-constitution/chronology.html
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "James McCord, Jr. On Watergate Burglary (17 June 1974)"
+    publisher: "NPR"
+    url: https://www.npr.org/transcripts/820459764
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Today In History: Watergate Break-In"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/today-in-history-watergate-break-in/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "A Band Of Burglars: NPR's Best Watergate Stories"
+    publisher: "NPR"
+    url: https://www.npr.org/2021/06/17/1006657405/a-band-of-burglars-nprs-best-watergate-stories
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-the-tape-on-the-door/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 81.9
+    audioBytes: 1311181
+    transcript:
+      totalS: 81.9
+      lines:
+        - text: Look at the curved office building in front of you, the Watergate.
+          atS: 0
+          durationS: 3.46
+        - text: Down below it is a garage, and a back door to a stairwell.
+          atS: 3.97
+          durationS: 3.52
+        - text: In June nineteen seventy two, someone put a strip of tape across the lock of that door, so it would not catch.
+          atS: 8.19
+          durationS: 6.11
+        - text: The man who did it was James McCord.
+          atS: 14.99
+          durationS: 2.23
+        - text: He later described that night himself.
+          atS: 17.6
+          durationS: 2.16
+        - text: He taped the doors from the sixth floor down, he said, and taped the outside door too.
+          atS: 20.46
+          durationS: 5.21
+        - text: Then a security guard on his rounds, Frank Wills, found the tape.
+          atS: 26.05
+          durationS: 4.19
+        - text: When the burglars came back, the door was locked again.
+          atS: 30.68
+          durationS: 3.18
+        - text: They knew the tape had been found.
+          atS: 34.25
+          durationS: 1.68
+        - text: And they went in anyway.
+          atS: 36.54
+          durationS: 1.35
+        - text: One of them picked the lock and taped the door again, the same way as before.
+          atS: 38.7
+          durationS: 4.2
+        - text: The police were called.
+          atS: 43.59
+          durationS: 1.39
+        - text: Plain clothes officers went up through the building with the guard, room by room, turning on the lights.
+          atS: 45.5
+          durationS: 5.56
+        - text: Five men were arrested inside the Democratic National Committee's offices.
+          atS: 51.66
+          durationS: 4.3
+        - text: They had crouched behind a glass partition, hoping not to be seen.
+          atS: 56.47
+          durationS: 3.89
+        - text: In January nineteen seventy three, five of the men pleaded guilty, and two more, McCord and Gordon Liddy, were convicted by a jury.
+          atS: 61.17
+          durationS: 8.53
+        - text: And the questions about who sent them did not stop until a President resigned.
+          atS: 69.98
+          durationS: 4.68
+        - text: Look at that door again.
+          atS: 75.27
+          durationS: 1.38
+        - text: McCord said it plainly.
+          atS: 77.03
+          durationS: 1.49
+        - text: We should not have gone in after the first tape had been found.
+          atS: 78.8
+          durationS: 3.08

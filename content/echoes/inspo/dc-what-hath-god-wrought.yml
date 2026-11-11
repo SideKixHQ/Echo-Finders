@@ -1,0 +1,173 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core (U.S. Capitol), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Inside the U.S. Capitol, the Old Supreme Court Chamber on the Senate side of the ground floor, shown on public tours.
+# Position: the Senate side of the Capitol, north of the Rotunda's centre (38.88990, -77.00906); the chamber's exact position inside the building was not found in a reachable source (medium confidence).
+id: dc-what-hath-god-wrought
+title: "What Hath God Wrought"
+summary: "In May 1844 Samuel Morse sent the first telegraph message from the Supreme Court's room in the Capitol to Baltimore. A girl chose the words."
+place: "Old Supreme Court Chamber, U.S. Capitol, Washington, D.C."
+at: { lat: 38.89025, lng: -77.00905 }
+triggerRadiusKm: 0.05
+category: inspo
+inspo:
+  kind: first
+  evidence: exact
+format: short
+durationS: 83
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+inside: true
+hours: { fromHour: 9, toHour: 16 }
+tags: [washington, dc-core, us-capitol, samuel-morse, telegraph, firsts]
+teaser: "The first telegraph message left from this room. A young girl picked the words."
+script: |
+  Look up at the vaulted ceiling of this room. Before the Supreme Court had its own building, this was its chamber. And on the twenty fourth of May, eighteen forty four, it held something new. A wire.
+
+  Samuel Morse was an artist, who had spent some twelve years teaching himself enough science to make a machine send words down a wire. Now a line ran from here to a railroad depot in Baltimore. Waiting at the other end was his assistant, Alfred Vail.
+
+  Morse needed a first message. He let a young girl choose it. Annie Ellsworth, the daughter of his friend, the commissioner of patents. She picked a line from the Bible.
+
+  What hath God wrought.
+
+  Morse tapped it out from this room, as dots and dashes on a paper tape. In Baltimore, Vail received it, and sent it straight back. It worked.
+
+  Morse gave the tape to Annie. Seventy eight years later, her daughter gave it to the Library of Congress, across the street.
+
+  A few months after that day, Morse wrote to Vail with a warning about this new power. Be especially careful, he said, not to give a partisan character to any information you may transmit.
+
+  Vail got that letter in Washington.
+detail: >-
+  Evidence is `exact`: the Library of Congress says the message was sent "from the Supreme Court chamber in the United States Capitol". The script does not say the room's furnishings are original.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "And on the twenty fourth of May, eighteen forty four, it held something new."
+    source: 1
+    quote: "an apparatus he formally demonstrated on 24 May 1844."
+  - says: "Samuel Morse was an artist, who had spent some twelve years teaching himself enough science to make a machine send words down a wire."
+    source: 2
+    quote: "the scientifically-ignorant Morse would need some twelve years of sporadic work before he had gathered enough knowledge, advice, and experience to attempt his historic demonstration of May 24, 1844."
+  - says: "Waiting at the other end was his assistant, Alfred Vail."
+    source: 1
+    quote: "to his assistant, Alfred Vail (1807-1859), who was stationed at the Mount Clare railroad depot in Baltimore, Maryland."
+  - says: "He let a young girl choose it. Annie Ellsworth, the daughter of his friend, the commissioner of patents. She picked a line from the Bible."
+    source: 1
+    quote: "the young daughter of his friend Henry Leavitt Ellsworth (1791-1858), commissioner of patents. It was Annie who selected the text from the Bible (Numbers XXIII, 23)"
+  - says: "Morse tapped it out from this room, as dots and dashes on a paper tape."
+    source: 1
+    quote: "which was sent by Morse on the wire from the Supreme Court chamber in the United States Capitol in Washington, D.C."
+  - says: "In Baltimore, Vail received it, and sent it straight back."
+    source: 1
+    quote: "an outgoing repeat-back tape sent from Baltimore by Vail"
+  - says: "Morse gave the tape to Annie. Seventy eight years later, her daughter gave it to the Library of Congress, across the street."
+    source: 1
+    quote: "Seventy-eight years later, in 1922, Annie Ellsworth's daughter, Mrs. George Inness, gave the tape to the Library of Congress."
+  - says: "Be especially careful, he said, not to give a partisan character to any information you may transmit."
+    source: 2
+    quote: "Morse warns Vail to \"be especially careful not to give a partisan character to any information you may transmit."
+  - says: "A few months after that day, Morse wrote to Vail with a warning about this new power."
+    source: 2
+    quote: "Memorandum from Morse to his assistant, Alfred Vail, 11 October 1844 With remarkable foresight, Morse, already keenly aware of the potential for misuse of the new communication medium, writes to his assistant in Washington."
+  - says: "Look up at the vaulted ceiling of this room."
+    source: 3
+    quote: "disagreed with architect B. Henry Latrobe over the vaulting in the room now known as the Old Supreme Court Chamber."
+  - says: "Before the Supreme Court had its own building, this was its chamber."
+    source: 1
+    quote: "which was sent by Morse on the wire from the Supreme Court chamber in the United States Capitol in Washington, D.C."
+  - says: "Now a line ran from here to a railroad depot in Baltimore."
+    source: 1
+    quote: "to his assistant, Alfred Vail (1807-1859), who was stationed at the Mount Clare railroad depot in Baltimore, Maryland."
+  - says: "Morse needed a first message."
+    source: 2
+    quote: "Morse has given credit to Annie Ellsworth, the young daughter of a good friend, for suggesting the message he sent."
+  - says: "What hath God wrought."
+    source: 2
+    quote: "this paper tape recording of the historic message transmitted by Samuel F. B. Morse reads, \"What hath God wrought?\""
+  - says: "Vail got that letter in Washington."
+    source: 2
+    quote: "Morse, already keenly aware of the potential for misuse of the new communication medium, writes to his assistant in Washington."
+sources:
+  - title: "First telegraph message, 24 May 1844"
+    publisher: "Library of Congress, Manuscript Division"
+    url: https://www.loc.gov/item/mcc.019/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Invention of the Telegraph (Samuel F. B. Morse Papers)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/collections/samuel-morse-papers/articles-and-essays/collection-highlights/invention-of-the-telegraph/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Haunted House On The Hill"
+    publisher: "CBS News (Associated Press)"
+    url: https://www.cbsnews.com/news/haunted-house-on-the-hill/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-what-hath-god-wrought/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 82.8
+    audioBytes: 1325809
+    transcript:
+      totalS: 82.8
+      lines:
+        - text: Look up at the vaulted ceiling of this room.
+          atS: 0
+          durationS: 2.3
+        - text: Before the Supreme Court had its own building, this was its chamber.
+          atS: 2.9
+          durationS: 4.35
+        - text: And on the twenty fourth of May, eighteen forty four, it held something new.
+          atS: 7.77
+          durationS: 5.08
+        - text: A wire.
+          atS: 13.8
+          durationS: 0.85
+        - text: Samuel Morse was an artist, who had spent some twelve years teaching himself enough science to make a machine send words down a wire.
+          atS: 15.26
+          durationS: 7.51
+        - text: Now a line ran from here to a railroad depot in Baltimore.
+          atS: 23.58
+          durationS: 4.08
+        - text: Waiting at the other end was his assistant, Alfred Vail.
+          atS: 28.35
+          durationS: 3.58
+        - text: Morse needed a first message.
+          atS: 32.88
+          durationS: 1.91
+        - text: He let a young girl choose it.
+          atS: 35.31
+          durationS: 1.72
+        - text: Annie Ellsworth, the daughter of his friend, the commissioner of patents.
+          atS: 37.47
+          durationS: 4.32
+        - text: She picked a line from the Bible.
+          atS: 42.39
+          durationS: 1.77
+        - text: What hath God wrought.
+          atS: 44.85
+          durationS: 1.53
+        - text: Morse tapped it out from this room, as dots and dashes on a paper tape.
+          atS: 47.5
+          durationS: 4.3
+        - text: In Baltimore, Vail received it, and sent it straight back.
+          atS: 52.6
+          durationS: 3.96
+        - text: It worked.
+          atS: 57.52
+          durationS: 0.85
+        - text: Morse gave the tape to Annie.
+          atS: 59.32
+          durationS: 1.57
+        - text: Seventy eight years later, her daughter gave it to the Library of Congress, across the street.
+          atS: 61.84
+          durationS: 4.87
+        - text: A few months after that day, Morse wrote to Vail with a warning about this new power.
+          atS: 68
+          durationS: 4.84
+        - text: Be especially careful, he said, not to give a partisan character to any information you may transmit.
+          atS: 73.65
+          durationS: 6.2
+        - text: Vail got that letter in Washington.
+          atS: 80.81
+          durationS: 2

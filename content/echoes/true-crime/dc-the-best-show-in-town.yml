@@ -1,0 +1,180 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core (Judiciary Square), following the six beats in docs/writing-echoes.md (echo-format-v2) and docs/14-true-crime.md.
+# Listening spot: The plaza on Indiana Avenue NW in front of Old City Hall, 451 Indiana Avenue, now the District of Columbia Court of Appeals.
+# Position: Overture place 'Old City Hall' (451 Indiana Ave NW) at 38.89537, -77.01747; set on the plaza in front (high confidence).
+id: dc-the-best-show-in-town
+title: "The Best Show in Town"
+summary: "In the winter of 1881, the man who shot President Garfield was tried in this old courthouse. People queued to watch."
+place: "Old City Hall, 451 Indiana Avenue NW, Judiciary Square, Washington, D.C."
+at: { lat: 38.89525, lng: -77.01747 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 69
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.75
+tags: [washington, judiciary-square, old-city-hall, garfield, guiteau, 1882, trials]
+teaser: "The first trial of a President's assassin was held here. The accused would not stop talking."
+script: |
+  Look at the pale old building with its columns, set back from Indiana Avenue. It was Washington's City Hall, and then its courthouse. A long list of famous trials happened inside.
+
+  The strangest was in the winter of eighteen eighty one.
+
+  That summer, a man named Charles Guiteau had shot President James Garfield, who later died of his wounds. Guiteau never denied it. He said God had told him to do it. His lawyers argued he was insane. It was the first time an American court had tried a President's killer.
+
+  And Guiteau would not keep quiet. He shouted at the judge, the jury and the audience. Every time he started, the trial simply stopped, and waited, and then went on as if nothing had happened. In the end, the judge gave up asking for order.
+
+  People queued for seats in the public gallery. One spectator said, never have I passed five hours in a theatre so filled with thrills.
+
+  In January eighteen eighty two, the jury took about an hour. Guilty. The courtroom broke into applause. He was hanged that June.
+
+  Look at the building again.
+
+  For a few months, it was the best show in town.
+pronunciations:
+  - written: Guiteau
+    say: gee-TOH
+detail: >-
+  Conviction status: convicted; hanged 30 June 1882. Everyone named is long dead. The Federal Judicial Center's history is the trial record source; the National Park Service corroborates the trial, Guiteau's admissions and the hanging; a 1937 Evening Star article places the Guiteau trial in this building. The phrase "the best show in town" is the Federal Judicial Center's own; the spectator's quotation is from a later recollection that the FJC quotes. Garfield's shooting is not described.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo concerns the assassination of a President and the trial of his killer. No violence is described."
+claims:
+  - says: "It was Washington's City Hall, and then its courthouse. A long list of famous trials happened inside."
+    source: 3
+    quote: "the trial of Guiteau, the assassin of Gar field; the Bonlne, Schneider, Pollard Breckenridge, Star Route and Teapot Dome cases and many other famous trials have occurred here"
+  - says: "Guiteau never denied it. He said God had told him to do it."
+    source: 2
+    quote: "Guiteau consistently admitted to his actions against the President, claiming that it was God’s will for him to kill the President"
+  - says: "His lawyers argued he was insane."
+    source: 2
+    quote: "Guiteau's lawyers attempted to plead his case on the defense of insanity, to little avail."
+  - says: "It was the first time an American court had tried a President's killer."
+    source: 4
+    quote: "The first judicial trial of a presidential assassin forces the courts to defend their independence and define the bounds of criminal insanity."
+  - says: "He shouted at the judge, the jury and the audience. Every time he started, the trial simply stopped, and waited, and then went on as if nothing had happened."
+    source: 1
+    quote: "came in shouting like a madman, and began at once railing at the judge, the jury and the audience. A very necessary rule had been established that when he interposed whatever was being said or done automatically stopped. Then when he ceased, the case went on again as if nothing had happened."
+  - says: "In the end, the judge gave up asking for order."
+    source: 1
+    quote: "He paid so little attention to Justice Cox’s calls for order that the judge eventually gave up asking for it."
+  - says: "People queued for seats in the public gallery. One spectator said, never have I passed five hours in a theatre so filled with thrills."
+    source: 1
+    quote: "quickly became the best show in town, with long waits for public seating in the gallery."
+  - says: "One spectator said, never have I passed five hours in a theatre so filled with thrills."
+    source: 1
+    quote: "Never have I passed five hours in a theatre so filled with thrills."
+  - says: "In January eighteen eighty two, the jury took about an hour. Guilty. The courtroom broke into applause."
+    source: 1
+    quote: "The verdict was met with wild applause in the courtroom"
+  - says: "He was hanged that June."
+    source: 2
+    quote: "Guiteau was eventually hanged on June 30, 1882"
+  - says: "The strangest was in the winter of eighteen eighty one."
+    source: 1
+    quote: "the trial began unceremoniously on November 14, 1881"
+  - says: "That summer, a man named Charles Guiteau had shot President James Garfield, who later died of his wounds."
+    source: 1
+    quote: "July 2, 1881, an obscure, itinerant office seeker named Charles Guiteau shot President James Garfield twice at close range in a Washington, D.C., train station."
+  - says: "And Guiteau would not keep quiet."
+    source: 1
+    quote: "the defendant’s repeated outbursts threatened to derail the trial and led many observers to criticize the judge."
+sources:
+  - title: "United States v. Guiteau: Assassination and Insanity in Gilded Age America (Federal Trials and Great Debates)"
+    publisher: "Federal Judicial Center"
+    url: https://www.fjc.gov/sites/default/files/trials/U.S.%20v.%20Guiteau%20final_0.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Trial of the Assassin Guiteau"
+    publisher: "National Park Service, James A. Garfield National Historic Site"
+    url: https://www.nps.gov/articles/000/the-trial-of-the-assassin-guiteau.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Court Site in Famous Area (Evening Star, 29 August 1937)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://tile.loc.gov/storage-services/service/ndnp/dlc/batch_dlc_1kahlo_ver01/data/sn83045462/00280602000/1937082901/0379.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "United States v. Guiteau (Famous Federal Trials)"
+    publisher: "Federal Judicial Center"
+    url: https://www.fjc.gov/history/cases/famous-federal-trials/united-states-v-guiteau-assassination-and-insanity-gilded-age
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-the-best-show-in-town/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 69.2
+    audioBytes: 1108888
+    transcript:
+      totalS: 69.2
+      lines:
+        - text: Look at the pale old building with its columns, set back from Indiana Avenue.
+          atS: 0
+          durationS: 4.33
+        - text: It was Washington's City Hall, and then its courthouse.
+          atS: 4.71
+          durationS: 2.92
+        - text: A long list of famous trials happened inside.
+          atS: 8.02
+          durationS: 2.86
+        - text: The strangest was in the winter of eighteen eighty one.
+          atS: 11.32
+          durationS: 2.97
+        - text: That summer, a man named Charles Guiteau had shot President James Garfield, who later died of his wounds.
+          atS: 14.73
+          durationS: 6.37
+        - text: Guiteau never denied it.
+          atS: 21.39
+          durationS: 1.6
+        - text: He said God had told him to do it.
+          atS: 23.31
+          durationS: 1.96
+        - text: His lawyers argued he was insane.
+          atS: 25.43
+          durationS: 2.15
+        - text: It was the first time an American court had tried a President's killer.
+          atS: 27.9
+          durationS: 3.45
+        - text: And Guiteau would not keep quiet.
+          atS: 31.79
+          durationS: 2.08
+        - text: He shouted at the judge, the jury and the audience.
+          atS: 34.38
+          durationS: 3.08
+        - text: Every time he started, the trial simply stopped, and waited, and then went on as if nothing had happened.
+          atS: 37.97
+          durationS: 6.52
+        - text: In the end, the judge gave up asking for order.
+          atS: 45.09
+          durationS: 2.72
+        - text: People queued for seats in the public gallery.
+          atS: 48.05
+          durationS: 2.44
+        - text: One spectator said, never have I passed five hours in a theatre so filled with thrills.
+          atS: 50.74
+          durationS: 5.75
+        - text: In January eighteen eighty two, the jury took about an hour.
+          atS: 57.18
+          durationS: 3.6
+        - text: Guilty.
+          atS: 60.95
+          durationS: 0.56
+        - text: The courtroom broke into applause.
+          atS: 61.63
+          durationS: 1.78
+        - text: He was hanged that June.
+          atS: 63.44
+          durationS: 1.35
+        - text: Look at the building again.
+          atS: 64.99
+          durationS: 1.28
+        - text: For a few months, it was the best show in town.
+          atS: 66.48
+          durationS: 2.76

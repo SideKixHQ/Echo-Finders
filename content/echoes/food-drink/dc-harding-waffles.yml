@@ -1,0 +1,144 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Rock Creek Park), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Peirce Mill, 2401 Tilden Street NW, on the creek side of the stone mill where the water wheel turns and the tea house porch once stood.
+# Position: Overture place 'Peirce Mill' (2401 Tilden St NW) at 38.94054, -77.05222 (high confidence).
+id: dc-harding-waffles
+title: "Harding Waffles"
+summary: "For nearly thirty years Peirce Mill was a tea house. One manager was a Black businesswoman whose success her neighbours would not allow."
+place: "Peirce Mill, 2401 Tilden Street NW, Rock Creek Park, Washington, D.C."
+at: { lat: 38.94054, lng: -77.05222 }
+triggerRadiusKm: 0.04
+category: food-drink
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, rock-creek-park, peirce-mill, tea-house, food, african-american-history]
+teaser: "Where the water wheel turns, people once sat on a porch and ordered waffles."
+script: |
+  Look at the water wheel on the side of this stone mill. For most of the eighteen hundreds, it ground corn, wheat and rye for the farms around here.
+
+  Then in eighteen ninety seven, the main shaft broke. The government decided the mill was not worth fixing. And the old mill found a new trade.
+
+  In nineteen oh five, a porch was built out where the water wheel had been, and the mill became a tea house. A road crossed the creek just here, and the park was new.
+
+  The French ambassador walked here from town. His wife drove out to meet him.
+
+  In nineteen twenty, the concession went to a woman named Hattie Sewell. The Park Service records her as a woman of colour, and says her business was a success. Neighbours of the park complained anyway, and so did the trustees of the old Peirce estate. Her contract was not renewed.
+
+  The Girl Scouts took over. Their speciality was Harding waffles, named for the new President.
+
+  The tea house closed in the nineteen thirties, and the wheel came back.
+
+  Listen for the water. Hattie Sewell made this place pay.
+
+  Nobody let her keep it.
+detail: >-
+  All from the Park Service's history of the mill, except the ambassador's walk, which the Park Service quotes from a 1915 newspaper on its Jusserand page. The script does not guess at the grounds of the complaints against Hattie L. Sewell; the Park Service says only that "park neighbors and Peirce-Shoemaker estate trustees complained". The mill was restored and grinding again by 1936.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "For most of the eighteen hundreds, it ground corn, wheat and rye for the farms around here."
+    source: 1
+    quote: "It had three sets of mill stones and ground corn, wheat and rye."
+  - says: "Then in eighteen ninety seven, the main shaft broke. The government decided the mill was not worth fixing."
+    source: 1
+    quote: "until 1897 when the main shaft broke. The government assessed the damage and determined that it would cost more to repair the mill and keep it operating than was being generated from the lease."
+  - says: "In nineteen oh five, a porch was built out where the water wheel had been, and the mill became a tea house."
+    source: 1
+    quote: "In 1905 an enclosed porch was added where the water wheel had once turned and the Tea House opened it's doors"
+  - says: "A road crossed the creek just here, and the park was new."
+    source: 1
+    quote: "The Mill was located along Peirce Mill Road just below where the Peirce Mill Bridge crossed the creek."
+  - says: "The French ambassador walked here from town. His wife drove out to meet him."
+    source: 2
+    quote: "Before the weather became too warm, the Ambassador walked to the mill and Mme. Jusserand drove out and met him there."
+  - says: "In nineteen twenty, the concession went to a woman named Hattie Sewell. The Park Service records her as a woman of colour, and says her business was a success. Neighbours of the park complained anyway, and so did the trustees of the old Peirce estate. Her contract was not renewed."
+    source: 1
+    quote: "A woman of color who obtained the concession for $45-month. Though her business was successful, park neighbors and Peirce-Shoemaker estate trustees complained to park management and her contract was not renewed."
+  - says: "The Girl Scouts took over. Their speciality was Harding waffles, named for the new President."
+    source: 1
+    quote: "Among the specialties offered were \"Harding waffles,\" honoring the incumbent president."
+  - says: "The tea house closed in the nineteen thirties, and the wheel came back."
+    source: 1
+    quote: "The enclosed porch was removed and a new water wheel was put on the exterior of the building."
+  - says: "Hattie Sewell made this place pay."
+    source: 1
+    quote: "A woman of color who obtained the concession for $45-month. Though her business was successful"
+sources:
+  - title: "History of Peirce Mill"
+    publisher: "National Park Service, Rock Creek Park"
+    url: https://www.nps.gov/rocr/learn/historyculture/peirce-mill-history.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Jean Jules Jusserand"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/jean-jules-jusserand.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-harding-waffles/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.4
+    audioBytes: 1207945
+    transcript:
+      totalS: 75.4
+      lines:
+        - text: Look at the water wheel on the side of this stone mill.
+          atS: 0
+          durationS: 2.83
+        - text: For most of the eighteen hundreds, it ground corn, wheat and rye for the farms around here.
+          atS: 3.34
+          durationS: 6.21
+        - text: Then in eighteen ninety seven, the main shaft broke.
+          atS: 10.37
+          durationS: 3.75
+        - text: The government decided the mill was not worth fixing.
+          atS: 14.93
+          durationS: 3.02
+        - text: And the old mill found a new trade.
+          atS: 18.39
+          durationS: 2.21
+        - text: In nineteen oh five, a porch was built out where the water wheel had been, and the mill became a tea house.
+          atS: 21.41
+          durationS: 6.8
+        - text: A road crossed the creek just here, and the park was new.
+          atS: 28.91
+          durationS: 3.91
+        - text: The French ambassador walked here from town.
+          atS: 33.94
+          durationS: 2.36
+        - text: His wife drove out to meet him.
+          atS: 36.35
+          durationS: 1.75
+        - text: In nineteen twenty, the concession went to a woman named Hattie Sewell.
+          atS: 38.8
+          durationS: 4.31
+        - text: The Park Service records her as a woman of colour, and says her business was a success.
+          atS: 43.62
+          durationS: 5.13
+        - text: Neighbours of the park complained anyway, and so did the trustees of the old Peirce estate.
+          atS: 49.26
+          durationS: 5.54
+        - text: Her contract was not renewed.
+          atS: 55.4
+          durationS: 1.98
+        - text: The Girl Scouts took over.
+          atS: 57.71
+          durationS: 1.75
+        - text: Their speciality was Harding waffles, named for the new President.
+          atS: 59.71
+          durationS: 4.38
+        - text: The tea house closed in the nineteen thirties, and the wheel came back.
+          atS: 64.69
+          durationS: 4.09
+        - text: Listen for the water.
+          atS: 69.29
+          durationS: 1.25
+        - text: Hattie Sewell made this place pay.
+          atS: 70.98
+          durationS: 2.43
+        - text: Nobody let her keep it.
+          atS: 73.73
+          durationS: 1.68

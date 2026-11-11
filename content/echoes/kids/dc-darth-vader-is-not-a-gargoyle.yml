@@ -1,0 +1,172 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Cathedral Heights), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Washington National Cathedral grounds, on the north side of the west front, looking up at the northwest tower, where the Darth Vader carving sits high up.
+# Position: Overture place 'Washington National Cathedral' (3101 Wisconsin Ave NW) at 38.93059, -77.07079; set toward the northwest tower at the west end (medium confidence: the carving's exact position on the tower is not in a reachable source).
+id: dc-darth-vader-is-not-a-gargoyle
+title: "Darth Vader Is Not a Gargoyle"
+summary: "A children's echo: high on the cathedral's northwest tower sits Darth Vader. He is not a gargoyle, and here is why."
+place: "Northwest tower, Washington National Cathedral, Wisconsin Avenue NW, Washington, D.C."
+at: { lat: 38.93080, lng: -77.07160 }
+triggerRadiusKm: 0.06
+category: kids
+format: short
+durationS: 72
+visibility: daylight-dependent
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [washington, cathedral-heights, national-cathedral, gargoyles, darth-vader, kids]
+teaser: "Way up on the tower, someone from a galaxy far, far away is looking down."
+script: |
+  Look way up the tall stone tower, at the northwest corner of the cathedral. Up near the top, among all the carved stone creatures, there is one you might know. A shiny helmet. A mask.
+
+  It is Darth Vader.
+
+  He has lots of neighbours up there. A dragon, a wild boar, a turtle, Medusa with her snaky hair. About twelve hundred creatures live on this roof.
+
+  Most people call them all gargoyles. But here is a secret. A real gargoyle has a job. It is a drain pipe. Rain runs through it and spits out of its mouth, away from the walls. The word gargoyle even comes from an old French word, for gargle.
+
+  Can Darth Vader spit water? No. So he is not a gargoyle. A creature that looks scary but cannot spit is called a grotesque.
+
+  In twenty eleven, an earthquake shook this cathedral, and carved stone fell from the central tower. So many people called to ask about Darth Vader that the head stonemason had to tell them. Do not worry. Darth is just fine.
+
+  Look up and find him again.
+
+  Can you make your best Darth Vader breathing?
+detail: >-
+  Told for children. The CBS piece and NPR's 2007 centennial report both place Vader high on the cathedral, NPR on the northwest tower. The script does not say who designed him, because no reachable source did.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look way up the tall stone tower, at the northwest corner of the cathedral."
+    source: 2
+    quote: "a sculpture of Darth Vader on the northwest tower, are main attractions for visitors."
+  - says: "It is Darth Vader."
+    source: 1
+    quote: "It is Darth Vader up there!"
+  - says: "He has lots of neighbours up there. A dragon, a wild boar, a turtle, Medusa with her snaky hair. About twelve hundred creatures live on this roof."
+    source: 1
+    quote: "you might also see a wild boar, a turtle, a dragon, or one of the roughly 1,200 other roof dwellers."
+  - says: "A real gargoyle has a job. It is a drain pipe. Rain runs through it and spits out of its mouth, away from the walls."
+    source: 1
+    quote: "\"A gargoyle officially must spew water or be able to do so,\""
+  - says: "The word gargoyle even comes from an old French word, for gargle."
+    source: 1
+    quote: "The word gargoyle comes from the French"
+  - says: "A creature that looks scary but cannot spit is called a grotesque."
+    source: 1
+    quote: "If you look like a gargoyle in some sort of a monstrous or fantastic way but you cannot spew water, you are officially a 'grotesque.'"
+  - says: "In twenty eleven, an earthquake shook this cathedral, and carved stone fell from the central tower."
+    source: 3
+    quote: "lost handcrafted cherubs and pinnacles on its central tower."
+  - says: "So many people called to ask about Darth Vader that the head stonemason had to tell them. Do not worry. Darth is just fine."
+    source: 3
+    quote: "Not to worry, he says. Darth is just fine."
+  - says: "Up near the top, among all the carved stone creatures, there is one you might know."
+    source: 1
+    quote: "A Medusa and Darth Vader peer down from the upper heights of the National Cathedral."
+  - says: "Can Darth Vader spit water?"
+    source: 1
+    quote: "\"A gargoyle officially must spew water or be able to do so,\""
+  - says: "No. So he is not a gargoyle."
+    source: 1
+    quote: "But many of the Medusa's neighbors, like Darth Vader, aren't really gargoyles"
+  - says: "Can you make your best Darth Vader breathing?"
+    source: 1
+    quote: "It is Darth Vader up there!"
+sources:
+  - title: "Gargoyles and grotesques get their closeup"
+    publisher: "CBS News, Sunday Morning"
+    url: https://www.cbsnews.com/news/gargoyles-and-grotesques-get-their-closeup/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "National Cathedral Celebrates Centennial Year"
+    publisher: "NPR, Weekend Edition Sunday"
+    url: https://www.npr.org/2007/09/23/14620987/national-cathedral-celebrates-centennial-year
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Faith Community Helps Steady National Cathedral After Quake"
+    publisher: "NPR"
+    url: https://www.npr.org/2011/09/07/140211424/faith-community-helps-steady-cathedral-after-quake
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/dc-darth-vader-is-not-a-gargoyle/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 71.8
+    audioBytes: 1149848
+    transcript:
+      totalS: 71.8
+      lines:
+        - text: Look way up the tall stone tower, at the northwest corner of the cathedral.
+          atS: 0
+          durationS: 4.26
+        - text: Up near the top, among all the carved stone creatures, there is one you might know.
+          atS: 4.59
+          durationS: 4.53
+        - text: A shiny helmet.
+          atS: 9.29
+          durationS: 1.23
+        - text: A mask.
+          atS: 10.69
+          durationS: 0.78
+        - text: It is Darth Vader.
+          atS: 11.64
+          durationS: 1.18
+        - text: He has lots of neighbours up there.
+          atS: 13.11
+          durationS: 1.68
+        - text: A dragon, a wild boar, a turtle, Medusa with her snaky hair.
+          atS: 14.94
+          durationS: 5.24
+        - text: About twelve hundred creatures live on this roof.
+          atS: 20.56
+          durationS: 2.61
+        - text: Most people call them all gargoyles.
+          atS: 23.5
+          durationS: 2.18
+        - text: But here is a secret.
+          atS: 25.86
+          durationS: 1.17
+        - text: A real gargoyle has a job.
+          atS: 27.24
+          durationS: 2.21
+        - text: It is a drain pipe.
+          atS: 29.83
+          durationS: 1.32
+        - text: Rain runs through it and spits out of its mouth, away from the walls.
+          atS: 31.48
+          durationS: 4.17
+        - text: The word gargoyle even comes from an old French word, for gargle.
+          atS: 36.15
+          durationS: 4.25
+        - text: Can Darth Vader spit water?
+          atS: 41.52
+          durationS: 1.95
+        - text: No.
+          atS: 44.07
+          durationS: 0.53
+        - text: So he is not a gargoyle.
+          atS: 45.21
+          durationS: 1.68
+        - text: A creature that looks scary but cannot spit is called a grotesque.
+          atS: 47.22
+          durationS: 3.81
+        - text: In twenty eleven, an earthquake shook this cathedral, and carved stone fell from the central tower.
+          atS: 51.72
+          durationS: 6.49
+        - text: So many people called to ask about Darth Vader that the head stonemason had to tell them.
+          atS: 58.82
+          durationS: 4.88
+        - text: Do not worry.
+          atS: 64.2
+          durationS: 0.96
+        - text: Darth is just fine.
+          atS: 65.68
+          durationS: 1.42
+        - text: Look up and find him again.
+          atS: 67.48
+          durationS: 1.43
+        - text: Can you make your best Darth Vader breathing?
+          atS: 69.23
+          durationS: 2.57

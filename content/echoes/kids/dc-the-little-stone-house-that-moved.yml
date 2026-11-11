@@ -1,0 +1,124 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core (President's Park South), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: The small sandstone Bulfinch gatehouse at the corner of 15th Street and Constitution Avenue NW, on the Ellipse side; the flood markers are on its southeast side.
+# Position: the northwest corner of 15th Street and Constitution Avenue NW, where the Park Service places this gatehouse (approx. 38.89215, -77.03335); not matched to an Overture place (medium confidence).
+id: dc-the-little-stone-house-that-moved
+title: "The Little Stone House That Moved"
+summary: "A children's echo: this tiny stone gatehouse used to guard the Capitol. Look on its side for marks showing how high floods came."
+place: "Bulfinch gatehouse, 15th Street and Constitution Avenue NW, Washington, D.C."
+at: { lat: 38.89215, lng: -77.03335 }
+triggerRadiusKm: 0.03
+category: kids
+format: short
+durationS: 61
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [washington, ellipse, constitution-avenue, bulfinch, floods, kids]
+teaser: "This little stone house walked all the way here from the Capitol. Sort of."
+script: |
+  Find the little stone house on the corner. It is not much bigger than a garden shed. Who do you think lived in it?
+
+  Nobody lived in it. It was a gatehouse, a guard post. About two hundred years ago, it stood by the gates of the United States Capitol, up the hill at the other end of the Mall. Guards kept watch from little houses like this one.
+
+  In eighteen seventy four, it was taken away from the Capitol. Years later, somebody took this one apart, stone by stone, and put it back together, right here. There is a twin, just like it, two blocks along at Seventeenth Street.
+
+  Now, a puzzle. Walk around to the side that faces the river. Look for marks on the stone.
+
+  Those marks show how high the water came, when floods poured over this part of the city. Higher than your head? Higher than a grown up's?
+
+  This little house has been a guard post, and a pile of stones, and a measuring stick for floods.
+
+  Not bad for a shed.
+detail: >-
+  The Park Service says the gatehouse was built about 1828, stood at the Capitol until 1874, and was reconstructed here with its twin in 1889, and that "on the southeast side are markers indicating the high-water marks during floods". The script asks children to look, without saying how high the marks are, because the source does not say. "Up the hill" and "two blocks along" are the narrator's description of the Mall and the twin at 17th Street.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It was a gatehouse, a guard post. About two hundred years ago, it stood by the gates of the United States Capitol"
+    source: 1
+    quote: "Built in 1828, these sandstone guardians silently watched over the U.S. Capitol grounds until 1874."
+  - says: "Years later, somebody took this one apart, stone by stone, and put it back together, right here. There is a twin, just like it, two blocks along at Seventeenth Street."
+    source: 1
+    quote: "In 1889, this gatehouse and its twin, located on Seventeenth Street and Constitution Avenue, were reconstructed in their present locations."
+  - says: "Look for marks on the stone."
+    source: 1
+    quote: "On the southeast side are markers indicating the high-water marks during floods."
+  - says: "About two hundred years ago, it stood by the gates of the United States Capitol, up the hill at the other end of the Mall."
+    source: 1
+    quote: "Built in 1828, these sandstone guardians silently watched over the U.S. Capitol grounds until 1874."
+  - says: "Guards kept watch from little houses like this one."
+    source: 1
+    quote: "Built in 1828, these sandstone guardians silently watched over the U.S. Capitol grounds until 1874."
+  - says: "In eighteen seventy four, it was taken away from the Capitol."
+    source: 1
+    quote: "this gate house stood until 1874 with another now at 15th and Constitution Avenue at the west entrance to the Capitol grounds."
+sources:
+  - title: "Bulfinch Gatehouse"
+    publisher: "National Park Service, The White House and President's Park"
+    url: https://www.nps.gov/places/000/bulfinch-gatehouse-west.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/dc-the-little-stone-house-that-moved/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 61.3
+    audioBytes: 980993
+    transcript:
+      totalS: 61.3
+      lines:
+        - text: Find the little stone house on the corner.
+          atS: 0
+          durationS: 2.43
+        - text: It is not much bigger than a garden shed.
+          atS: 2.63
+          durationS: 2.18
+        - text: Who do you think lived in it?
+          atS: 5.06
+          durationS: 1.36
+        - text: Nobody lived in it.
+          atS: 7.02
+          durationS: 1.22
+        - text: It was a gatehouse, a guard post.
+          atS: 8.49
+          durationS: 2.31
+        - text: About two hundred years ago, it stood by the gates of the United States Capitol, up the hill at the other end of the Mall.
+          atS: 11.12
+          durationS: 6.93
+        - text: Guards kept watch from little houses like this one.
+          atS: 18.56
+          durationS: 2.77
+        - text: In eighteen seventy four, it was taken away from the Capitol.
+          atS: 21.94
+          durationS: 3.48
+        - text: Years later, somebody took this one apart, stone by stone, and put it back together, right here.
+          atS: 25.94
+          durationS: 6.77
+        - text: There is a twin, just like it, two blocks along at Seventeenth Street.
+          atS: 33.09
+          durationS: 4.88
+        - text: Now, a puzzle.
+          atS: 38.41
+          durationS: 1.44
+        - text: Walk around to the side that faces the river.
+          atS: 40.45
+          durationS: 2.44
+        - text: Look for marks on the stone.
+          atS: 43.27
+          durationS: 1.66
+        - text: Those marks show how high the water came, when floods poured over this part of the city.
+          atS: 45.31
+          durationS: 5.05
+        - text: Higher than your head?
+          atS: 50.69
+          durationS: 1.13
+        - text: Higher than a grown up's?
+          atS: 52.02
+          durationS: 1.34
+        - text: This little house has been a guard post, and a pile of stones, and a measuring stick for floods.
+          atS: 53.69
+          durationS: 5.76
+        - text: Not bad for a shed.
+          atS: 59.83
+          durationS: 1.43

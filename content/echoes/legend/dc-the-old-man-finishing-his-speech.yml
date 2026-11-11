@@ -1,0 +1,156 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core (U.S. Capitol), following the six beats in docs/writing-echoes.md (echo-format-v2). Told as legend, male narrator.
+# Listening spot: Inside the U.S. Capitol on a tour, National Statuary Hall, the old chamber of the House of Representatives, south of the Rotunda.
+# Position: the House side of the Capitol just south of the Rotunda's centre (38.88990, -77.00906); the hall's exact centre was not found in a reachable source (medium confidence).
+id: dc-the-old-man-finishing-his-speech
+title: "The Old Man Finishing His Speech"
+summary: "John Quincy Adams collapsed at his desk in the old House chamber, now Statuary Hall. Workers have told of hearing him since. A legend."
+place: "National Statuary Hall, U.S. Capitol, Washington, D.C."
+at: { lat: 38.88960, lng: -77.00905 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 53
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A legend. The collapse and death of John Quincy Adams in 1848 are history; the footsteps and the voice are folklore, reported by Capitol workers and collected by Jim Berard and John Alexander, as CBS News described. Nothing supernatural is claimed as fact, and the script says so.
+minAge: 0
+quality: 0.75
+inside: true
+hours: { fromHour: 9, toHour: 16 }
+voice: wC1005J19tvhoqqC2hkf
+tags: [washington, dc-core, us-capitol, statuary-hall, john-quincy-adams, ghosts]
+teaser: "A former President collapsed in this room. Some say he is still trying to finish."
+script: |
+  Stand in this half round hall full of statues, under the great curved ceiling. Before it was Statuary Hall, it was the chamber of the House of Representatives.
+
+  One of its members was a former President. After he left the White House, John Quincy Adams got himself elected to the House, and took a seat in this room.
+
+  In eighteen forty eight, during a debate in this chamber, he collapsed at his desk. A stroke. They carried him to a room just off the floor. He died there two days later. That much is history.
+
+  What comes next is a legend. There is no proof of any of it.
+
+  Capitol workers have told of hearing footsteps in here, when the hall is empty. Some say it is Adams. Some say they have heard an old man's voice, still trying to finish his speech. Others say it shouts one word. No.
+
+  Stand still for a moment, and listen.
+
+  If you hear footsteps behind you, nobody has ever proved whose they are.
+detail: >-
+  Second pass (2026-11-11): sources disagree on the moment of collapse. CBS says he was giving a speech against the Mexican War; the Architect of the Capitol says he had just voted "no" on a resolution and collapsed at his desk. The script now says only that he collapsed at his desk during a debate. The AOC places his death in the Speaker's Lobby and a 1919 newspaper feature in "one of the rooms adjoining the chamber". The shouted "no" is the AOC's version of the legend; the footsteps that seem to follow you are the 1919 feature's.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Before it was Statuary Hall, it was the chamber of the House of Representatives."
+    source: 1
+    quote: "had a stroke on the House floor, now Statuary Hall, while giving a speech against the Mexican War."
+  - says: "In eighteen forty eight, during a debate in this chamber, he collapsed at his desk. A stroke."
+    source: 1
+    quote: "Tragedy struck again in 1848 when John Quincy Adams, who was elected to the House after serving as president, had a stroke on the House floor, now Statuary Hall, while giving a speech against the Mexican War."
+  - says: "They carried him to a room just off the floor. He died there two days later."
+    source: 1
+    quote: "He died two days later in a room off the floor"
+  - says: "Capitol workers have told of hearing footsteps in here, when the hall is empty. Some say it is Adams. Some say they have heard an old man's voice, still trying to finish his speech."
+    source: 1
+    quote: "Capitol workers have since reported hearing Adams' footsteps, or the specter of the old man trying to finish his speech."
+  - says: "during a debate in this chamber, he collapsed at his desk."
+    source: 2
+    quote: "During a debate on the floor of the House of Representatives, Adams loudly voted \"no\" on a resolution then promptly collapsed at his desk."
+  - says: "They carried him to a room just off the floor. He died there two days later."
+    source: 2
+    quote: "He was moved to the Speakers' Lobby where he fell into a coma and died two days later."
+  - says: "Others say it shouts one word. No."
+    source: 2
+    quote: "Some Capitol employees claim to hear someone shouting \"no\" late at night."
+  - says: "If you hear footsteps behind you, nobody has ever proved whose they are."
+    source: 3
+    quote: "The footsteps of a person walking across the hall at night, when all about is silence, seem to be closely followed by other footfalls"
+  - says: "Stand in this half round hall full of statues, under the great curved ceiling."
+    source: 1
+    quote: "had a stroke on the House floor, now Statuary Hall, while giving a speech against the Mexican War."
+  - says: "One of its members was a former President."
+    source: 1
+    quote: "Tragedy struck again in 1848 when John Quincy Adams, who was elected to the House after serving as president, had a stroke on the House floor, now Statuary Hall"
+  - says: "After he left the White House, John Quincy Adams got himself elected to the House, and took a seat in this room."
+    source: 1
+    quote: "Tragedy struck again in 1848 when John Quincy Adams, who was elected to the House after serving as president, had a stroke on the House floor, now Statuary Hall"
+  - says: "No. Stand still for a moment, and listen."
+    source: 2
+    quote: "The voice of John Quincy Adams can be heard shouting \"No!\" near the Speakers Lobby."
+sources:
+  - title: "Haunted House On The Hill"
+    publisher: "CBS News (Associated Press)"
+    url: https://www.cbsnews.com/news/haunted-house-on-the-hill/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Haunted Halls of Congress: 5 Creepy Capitol Legends"
+    publisher: "Architect of the Capitol"
+    url: https://www.aoc.gov/blog/haunted-halls-congress-5-creepy-capitol-legends
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "The Bridgeport Times and Evening Farmer, 16 October 1919, page 12: haunted places of Washington, Statuary Hall"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn92051227/1919-10-16/ed-1/?sp=12
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-the-old-man-finishing-his-speech/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 53.4
+    audioBytes: 855605
+    transcript:
+      totalS: 53.4
+      lines:
+        - text: Stand in this half round hall full of statues, under the great curved ceiling.
+          atS: 0
+          durationS: 4.66
+        - text: Before it was Statuary Hall, it was the chamber of the House of Representatives.
+          atS: 4.93
+          durationS: 4.48
+        - text: One of its members was a former President.
+          atS: 9.74
+          durationS: 2.25
+        - text: After he left the White House, John Quincy Adams got himself elected to the House, and took a seat in this room.
+          atS: 12.38
+          durationS: 5.67
+        - text: In eighteen forty eight, during a debate in this chamber, he collapsed at his desk.
+          atS: 18.48
+          durationS: 4.4
+        - text: A stroke.
+          atS: 23.21
+          durationS: 0.76
+        - text: They carried him to a room just off the floor.
+          atS: 24.4
+          durationS: 2.15
+        - text: He died there two days later.
+          atS: 26.88
+          durationS: 1.52
+        - text: That much is history.
+          atS: 28.78
+          durationS: 1.28
+        - text: What comes next is a legend.
+          atS: 30.38
+          durationS: 2.04
+        - text: There is no proof of any of it.
+          atS: 32.87
+          durationS: 1.63
+        - text: Capitol workers have told of hearing footsteps in here, when the hall is empty.
+          atS: 34.94
+          durationS: 4.16
+        - text: Some say it is Adams.
+          atS: 39.37
+          durationS: 1.31
+        - text: Some say they have heard an old man's voice, still trying to finish his speech.
+          atS: 41.06
+          durationS: 3.84
+        - text: Others say it shouts one word.
+          atS: 45
+          durationS: 1.77
+        - text: No.
+          atS: 46.88
+          durationS: 0.33
+        - text: Stand still for a moment, and listen.
+          atS: 47.3
+          durationS: 2.09
+        - text: If you hear footsteps behind you, nobody has ever proved whose they are.
+          atS: 49.44
+          durationS: 3.97

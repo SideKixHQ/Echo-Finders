@@ -1,0 +1,180 @@
+# Drafted by Claude Code (2026-11-11) for the Washington DC core (President's Park South, the Ellipse), second pass, following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Beside the Butt-Millet Memorial Fountain, in the trees at the northwest edge of the Ellipse, by Ellipse Road and E Street NW.
+# Position: the Evening Star (22 October 1913) puts it "in a small grove of trees, almost directly south of the President's office building, and just outside the driveway around the ellipse"; the pin is at the northwest Ellipse by E Street (38.89530, -77.03850), about 170 m from the Zero Milestone echo (medium confidence: a reviewer should set the fountain's own coordinates from a map).
+id: dc-erected-by-their-friends
+title: "Erected by Their Friends"
+summary: "Archie Butt served two presidents, and Frank Millet painted. They sailed home together on the Titanic. This fountain carries both names."
+place: "Butt-Millet Memorial Fountain, the Ellipse, President's Park, Washington, D.C."
+at: { lat: 38.89530, lng: -77.03850 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, ellipse, presidents-park, titanic, archibald-butt, francis-millet, taft]
+teaser: "Two friends, two names on one small fountain, and one ship."
+script: |
+  Find the small marble fountain in the trees at the edge of the Ellipse. Walk around it. On one side, a figure with a sword and a shield. On the other, a figure in flowing drapery.
+
+  Now read the words around the rim. Two names. Francis Davis Millet. Archibald Butt. This monument has been erected by their friends.
+
+  Archie Butt was a soldier. He was military aide to President Theodore Roosevelt, and then to President Taft. In nineteen twelve, the two Presidents he had served became rivals, and he found it hard to stay impartial. So he took leave, and went to Europe, to join his close friend, Frank Millet, a painter.
+
+  In Rome, Butt carried a personal message from Taft to the Pope. Then the two friends boarded a ship to come home. It was the Titanic.
+
+  Neither of them came back. At least one account says they were last seen helping women into the lifeboats.
+
+  Taft spoke at Butt's memorial service. He said it was as if he had lost a younger brother. And Taft headed the committee of friends that paid for this fountain.
+
+  Look at the figures again. In nineteen thirteen, the Evening Star said the one with the sword was Chivalry, for Butt and the women and children on the ship. The other was Art, for Millet.
+
+  They left together, and they did not come home.
+
+  Their friends put them side by side, a few hundred yards from Butt's old office.
+detail: >-
+  The Park Service describes the reliefs as "a military figure with sword and shield" for Butt and "the artist with palette and brush" for Millet; the Evening Star of 22 October 1913 describes them as female figures of Chivalry and Art. The script gives the 1913 reading, attributed, and describes the figures by what they hold. The lifeboats are hedged as the Park Service hedges them ("at least one account"). "A few hundred yards from Butt's old office": the Star puts the fountain "almost directly south of the President's office building". Taft's words are paraphrased; the Park Service quotes him saying Butt's loss was "as if he had been a younger brother."
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Two names. Francis Davis Millet. Archibald Butt. This monument has been erected by their friends."
+    source: 1
+    quote: "In memory of Francis Davis Millet 1846–1912 and Archibald Willingham Butt 1865–1912. This monument has been erected by their friends with the sanction of Congress."
+  - says: "This monument has been erected by their friends."
+    source: 2
+    quote: "this monument lias been erected by their friends, with the 1 sanction of Congress."
+  - says: "He was military aide to President Theodore Roosevelt, and then to President Taft."
+    source: 1
+    quote: "who appointed Butt his military aide in 1908, a position Butt held into William H. Taft’s presidency as well."
+  - says: "In nineteen twelve, the two Presidents he had served became rivals, and he found it hard to stay impartial. So he took leave, and went to Europe, to join his close friend, Frank Millet, a painter."
+    source: 1
+    quote: "Due to the political rivalry that emerged between Theodore Roosevelt and Taft surrounding the 1912 presidential election, Butt found it difficult to remain impartial between the two presidents he had served and took leave from his position. He traveled to Europe in March 1912 where joined his close friend Francis D. Millet."
+  - says: "In Rome, Butt carried a personal message from Taft to the Pope. Then the two friends boarded a ship to come home. It was the Titanic."
+    source: 1
+    quote: "While in Rome, Butt delivered a personal message from President Taft to Pope Pius X, before boarding the RMS Titanic in April 1912 to return to the U.S."
+  - says: "Neither of them came back."
+    source: 2
+    quote: "who lost their lives when the Titanic foundered off the coast of Newfoundland"
+  - says: "At least one account says they were last seen helping women into the lifeboats."
+    source: 1
+    quote: "At least one account states Butt and Millet were last seen assisting female passengers into lifeboats before the ship submerged."
+  - says: "Taft spoke at Butt's memorial service. He said it was as if he had lost a younger brother."
+    source: 1
+    quote: "a devastated President Taft delivered a eulogy at the major’s memorial service. The president described Butt’s loss “as if he had been a younger brother.”"
+  - says: "And Taft headed the committee of friends that paid for this fountain."
+    source: 2
+    quote: "Tiio committee in obvf* 1 of the erection of the memorial ia headed by former President Taft."
+  - says: "In nineteen thirteen, the Evening Star said the one with the sword was Chivalry, for Butt and the women and children on the ship. The other was Art, for Millet."
+    source: 2
+    quote: "On one side ot t!ie shaft is an armed female tigure. in bas-relief, representing Chivalry having special reference to M*.1. Ltu t's aid to women ^n.l chil- dren"
+  - says: "The other was Art, for Millet."
+    source: 2
+    quote: "renting Art person.tied by a woman"
+  - says: "a figure with a sword and a shield"
+    source: 1
+    quote: "A relief panel on the south side of the fountain of a military figure with sword and shield represents Major Butt"
+  - says: "Their friends put them side by side, a few hundred yards from Butt's old office."
+    source: 2
+    quote: "almost direetl> vou11; of tht President a office building."
+  - says: "Archie Butt was a soldier."
+    source: 1
+    quote: "A relief panel on the south side of the fountain of a military figure with sword and shield represents Major Butt"
+sources:
+  - title: "Butt-Millet Memorial Fountain"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/butt-millet-memorial-fountain.htm
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 22 October 1913, page 20: Fountain in Memory of Titanic Victims"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1913-10-22/ed-1/?sp=20
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-erected-by-their-friends/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 92.1
+    audioBytes: 1474603
+    transcript:
+      totalS: 92.1
+      lines:
+        - text: Find the small marble fountain in the trees at the edge of the Ellipse.
+          atS: 0
+          durationS: 3.73
+        - text: Walk around it.
+          atS: 3.9
+          durationS: 1
+        - text: On one side, a figure with a sword and a shield.
+          atS: 5.05
+          durationS: 3.08
+        - text: On the other, a figure in flowing drapery.
+          atS: 8.37
+          durationS: 2.86
+        - text: Now read the words around the rim.
+          atS: 11.55
+          durationS: 2.15
+        - text: Two names.
+          atS: 14.03
+          durationS: 1.01
+        - text: Francis Davis Millet.
+          atS: 15.31
+          durationS: 1.59
+        - text: Archibald Butt.
+          atS: 17.11
+          durationS: 1.21
+        - text: This monument has been erected by their friends.
+          atS: 18.76
+          durationS: 2.79
+        - text: Archie Butt was a soldier.
+          atS: 21.93
+          durationS: 1.86
+        - text: He was military aide to President Theodore Roosevelt, and then to President Taft.
+          atS: 24.07
+          durationS: 5.07
+        - text: In nineteen twelve, the two Presidents he had served became rivals, and he found it hard to stay impartial.
+          atS: 29.84
+          durationS: 6.3
+        - text: So he took leave, and went to Europe, to join his close friend, Frank Millet, a painter.
+          atS: 36.58
+          durationS: 5.31
+        - text: In Rome, Butt carried a personal message from Taft to the Pope.
+          atS: 42.59
+          durationS: 4.11
+        - text: Then the two friends boarded a ship to come home.
+          atS: 47.21
+          durationS: 2.61
+        - text: It was the Titanic.
+          atS: 50.2
+          durationS: 1.36
+        - text: Neither of them came back.
+          atS: 51.89
+          durationS: 1.51
+        - text: At least one account says they were last seen helping women into the lifeboats.
+          atS: 53.84
+          durationS: 4.11
+        - text: Taft spoke at Butt's memorial service.
+          atS: 58.9
+          durationS: 2.5
+        - text: He said it was as if he had lost a younger brother.
+          atS: 61.78
+          durationS: 2.5
+        - text: And Taft headed the committee of friends that paid for this fountain.
+          atS: 64.72
+          durationS: 3.76
+        - text: Look at the figures again.
+          atS: 69.29
+          durationS: 1.46
+        - text: In nineteen thirteen, the Evening Star said the one with the sword was Chivalry, for Butt and the women and children on the ship.
+          atS: 72.05
+          durationS: 7.5
+        - text: The other was Art, for Millet.
+          atS: 80.5
+          durationS: 2
+        - text: They left together, and they did not come home.
+          atS: 83.31
+          durationS: 2.87
+        - text: Their friends put them side by side, a few hundred yards from Butt's old office.
+          atS: 86.99
+          durationS: 5.1
