@@ -5015,6 +5015,11 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   font-size: var(--fs-secondary); line-height: 1.45; color: var(--cool);
 }
 .hear-say .crime-note { margin-top: 10px; font-size: var(--fs-secondary); }
+/* A link a thumb can hit: 44px tall without making the line any taller to look at. */
+.crime-note-link {
+  display: inline-flex; align-items: center; min-height: 44px; margin: -12px 0;
+  color: var(--aqua); text-decoration: underline; text-underline-offset: 3px;
+}
 
 /*
  * Seatback mode (`useSeat` in `App.tsx`): the whole screen, not a phone drawn in the middle

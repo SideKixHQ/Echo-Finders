@@ -112,8 +112,25 @@ Stories marked **"Legend"** are told as legends: we say so out loud, and we do n
 are true. Stories marked **"not yet verified"** have not yet been checked.
 
 ### True crime
-True crime stories are off unless you turn them on. They are told from public records and
-published reporting, and anyone accused but not convicted is presumed innocent.
+True crime is one of our main kinds of echo, and it is held to stricter rules than the rest.
+In the app each one carries a short note, "From public records", that links here. This is
+what that note means.
+
+- **Sources.** Every true crime echo is told from public records (court records, police and
+  government reports) and published reporting from reputable outlets. Each one rests on at
+  least two independent, credible sources, and three when it names a living person who was
+  not convicted.
+- **What happened in court, said out loud.** The narration says how the case ended: convicted,
+  acquitted, exonerated, unsolved or never tried. A conviction later overturned is told as
+  overturned.
+- **Alleged means alleged.** Anyone accused but not convicted is presumed innocent, and the
+  echo says "alleged", "accused" or "suspected", and whose claim it is.
+- **A warning before it starts.** Each true crime echo begins with a short spoken note on what
+  it is about. Nothing violent is described in detail.
+- **Yours to switch off.** Untick True crime under All echoes on the map and none will play.
+  Kids mode never plays it.
+- **Mistakes.** Tap **"Not right?"** on the echo and tell us. We correct or withdraw an echo
+  shown to be wrong.
 
 ### Sponsored stories
 Some stories may be sponsored. A sponsored story says so out loud before it plays, is never
