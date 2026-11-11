@@ -1,0 +1,93 @@
+# Drafted by Claude Code (2026-11-11) for the second Savannah pass, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: East Broughton Street between Drayton and Abercorn, outside the Marshall House hotel (123 East Broughton), which A. B. Luce kept in the 1860s and whom a punch maker in 1900 credited with the first Chatham Artillery punch.
+# Position: Broughton at Drayton and Broughton at Abercorn from the street segments in the app's Savannah street file, a point a little east of the block's middle (medium confidence for the door; the block is certain from the address). No other echo within 150 m.
+# The Dewey episode happened on a trip down the river, not in this building; the script says so. What ties the place to the drink is Luce, and that rests on one anonymous informant, which the script says aloud.
+id: savannah-the-punch-that-sank-an-admiral
+title: "The Punch That Sank an Admiral"
+summary: "In 1900 Admiral Dewey was laid low by Chatham Artillery punch, first mixed, its maker said, by the keeper of the Marshall House."
+place: "Marshall House, 123 East Broughton Street, Savannah, Georgia"
+at: { lat: 32.07848, lng: -81.09010 }
+triggerRadiusKm: 0.04
+category: food-drink
+format: short
+durationS: 95
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.8
+tags: [savannah, savannah-core, broughton-street, marshall-house, chatham-artillery, punch, drink, 1900]
+teaser: "He won a battle at sea. Savannah's punch was another matter."
+script: |
+  Find the Marshall House on this block of Broughton Street. It opened in eighteen fifty one, a splendid new hotel of ninety rooms, its first advertisement said.
+
+  In the spring of nineteen hundred, a war hero came to Savannah and was knocked flat. Not by an enemy. By a drink.
+
+  He was Admiral George Dewey, the victor of Manila Bay. On a trip down the river, the Morning News reported, he was put out of action by salad and punch. Chatham Artillery punch, the drink of the city's old militia battery.
+
+  The man who had mixed it was indignant. Strong? he asked the paper. Why, certainly not. A lady might drink four or five and never feel it. But he asked not to be named. He had family in Savannah, he said, who would be shocked to know he had anything to do with such a drink.
+
+  Then he gave its history. It was first made, he said, by a member of the battery called A. B. Luce, who kept the Marshall House. A quart of whisky, a quart of rum, a quart of brandy, a gallon of light wine. Then champagne, as much as you liked, and lemons, and fruit.
+
+  Days later, Dewey announced he would run for President. Papers across Georgia had their fun. Dewey's first mistake, one wrote, was tackling artillery punch. His second was running for President.
+
+  Look at the hotel again. In eighteen sixty nine a visiting editor stayed here, and called Luce the prince of hotel keepers.
+
+  He had won a battle at sea. The papers agreed he had lost one on the Savannah River.
+detail: >-
+  Savannah Morning News, 1 April 1900, "Punch Has Lost Potency": an unnamed maker of "the concoction that was served on the trip down the river when Admiral Dewey was placed hors du combat by indulgence in salad and punch"; "Why, certainly not. A lady might have drunk four or five of it and never felt the effect" (OCR damaged; the script tells it as reported speech); "I have folks in Savannah who would raise their hands in holy astonishment did they know that I had anything to do with such a wicked drink"; first made "in the late forties" on a trip to Nashville by "A. B. Luce, a member of the battery ... the proprietor of the Marshall House in those days"; the recipe of whisky, Santa Cruz rum, brandy, a gallon of light wine, champagne "ad libitum", lemons and fruit. The late 1840s date predates the hotel's 1851 opening, so the script gives no date for the first punch; Luce is named as proprietor in The Southern Sun, 16 December 1869 ("Col. A. B. Luce, Proprietor of the Marshal House"). Daily Morning News, 1 October 1851: "MARSHALL HOUSE FOR RENT. The above splendid new Hotel on Broughton street, comprising 90 rooms". The Savannah Tribune, 30 November 2016: "the Marshall House at 123 E. Broughton Street". Thomasville Daily Times-Enterprise, 6 April 1900: "Dewey's first mistake was tackling artillery punch; his second mistake is in announcing himself a candidate for the presidency." That the 1851 building is the one standing now is from the hotel's continuity of name and address and a 2015 travel piece ("This 1851 hotel"); a reviewer may want the National Register record before approval. Age set to 16 because the echo is about drink.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "It opened in eighteen fifty one, a splendid new hotel of ninety rooms, its first advertisement said."
+    source: 3
+    quote: "MARSHALL HOUSE FOR RENT. The above splendid new Hotel on Broughton street, comprising 90 rooms, is offered for rent"
+  - says: "Find the Marshall House on this block of Broughton Street."
+    source: 5
+    quote: "will be held at the Marshall House at 123 E. Broughton Street"
+  - says: "On a trip down the river, the Morning News reported, he was put out of action by salad and punch."
+    source: 1
+    quote: "trip down the river when Admiral ,v- was placed hors du combat by in nee in salad and punch."
+  - says: "Strong? he asked the paper. Why, certainly not."
+    source: 1
+    quote: "Why, certainly not. A lady might have drunk four or five it and! never felt the effect."
+  - says: "He had family in Savannah, he said, who would be shocked to know he had anything to do with such a drink."
+    source: 1
+    quote: "I have ♦oiks in Savannah who would raise their .inds in holy astonishment did they know that I had anything to do with such a w ked drink"
+  - says: "It was first made, he said, by a member of the battery called A. B. Luce, who kept the Marshall House."
+    source: 1
+    quote: "A. B. Luce, a member of the battery, was responsible. He was the proprietor of the Marshall ’vise in those days"
+  - says: "A quart of whisky, a quart of rum, a quart of brandy, a gallon of light wine. Then champagne, as much as you liked, and lemons, and fruit."
+    source: 1
+    quote: "a quart bottle of Santa Cruz rum 1 a quart bottle of brandy, backed up a gallon of some light wine. Then me champagne ad libitum and lemons 1 fruit."
+  - says: "Dewey's first mistake, one wrote, was tackling artillery punch. His second was running for President."
+    source: 2
+    quote: "Dewey’s first mistake was tack- liug artillery punch; his second mistake is in announcing himself a candidate for the presidency."
+  - says: "In eighteen sixty nine a visiting editor stayed here, and called Luce the prince of hotel keepers."
+    source: 4
+    quote: "We stopped with that prince of hotel keepers, Col. A. B. Luce, Proprietor of the Marshal House"
+sources:
+  - title: "Punch Has Lost Potency (Savannah Morning News, 1 April 1900, page 9)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn86063034/1900-04-01/ed-1/seq-9/
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "The Daily Times-Enterprise (Thomasville, Georgia), 6 April 1900, page 2"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn88054087/1900-04-06/ed-1/seq-2/
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Daily Morning News (Savannah), 1 October 1851, page 3: Marshall House for rent"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn82015886/1851-10-01/ed-1/seq-3/
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "The Southern Sun, 16 December 1869, page 2"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn88054067/1869-12-16/ed-1/seq-2/
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "The Savannah Tribune, 30 November 2016, page 9"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn95003657/2016-11-30/ed-1/seq-9/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

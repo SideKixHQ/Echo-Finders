@@ -1,0 +1,79 @@
+# Drafted by Claude Code (2026-11-11) for the second Savannah pass, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Ellis Square, at the life size bronze of Johnny Mercer dedicated there on 18 November 2009.
+# Position: Barnard at Bryan and Barnard at Congress from the street segments in the app's Savannah street file, the square's centre between them. No fetched source fixes the statue's corner, so the spot is the middle of the square with a 50 m radius; move it to the statue on site (LOW confidence for the statue, high for the square). No other echo within 150 m.
+id: savannah-leaning-on-a-fire-hydrant
+title: "Leaning on a Fire Hydrant"
+summary: "Johnny Mercer, born in Savannah, wrote Moon River. His bronze here was posed from a photograph of him leaning on a fire hydrant."
+place: "Johnny Mercer statue, Ellis Square, Savannah, Georgia"
+at: { lat: 32.08050, lng: -81.09370 }
+triggerRadiusKm: 0.05
+category: arts
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, ellis-square, music, songwriters, johnny-mercer, moon-river]
+teaser: "A bronze man at ease in the square. Look at what he is leaning on."
+script: |
+  Find the bronze man in this square, life size, standing at his ease. Look at how he leans.
+
+  He was posed from a photograph. In it, he is leaning on a fire hydrant.
+
+  His name was Johnny Mercer, and he was born in Savannah. He wrote his first song at fifteen. It was called Sister Suzy Struts Her Stuff. In nineteen twenty nine he went to New York and worked on Wall Street, until he broke into show business.
+
+  Then the songs came. Jeepers Creepers. Goody Goody. That Old Black Magic. About fifteen hundred songs in all. He won four Academy Awards. One of them was for Moon River.
+
+  When he died in nineteen seventy six, the obituary began with Jeepers Creepers and ended with Autumn Leaves. Back home, people remembered the words to a southern lullaby.
+
+  The statue was unveiled here on the eighteenth of November, two thousand nine. It was the day he would have turned a hundred.
+
+  Look at him leaning again.
+
+  Fifteen hundred songs, and the city put him in the square, at his ease, as if he had just stepped out for a minute.
+detail: >-
+  UPI obituary (Griffin Daily News, 26 June 1976): "Mercer's lyrics moved Americans from the days of 'Jeepers, Creepers' to 'Autumn Leaves.' He won four Academy Awards, for 'Moon River,' ...", "Born in Savannah, Ga., he wrote his first song at 15, 'Sister Suzy Struts Her Stuff.' He went to New York in 1929, and worked on Wall Street until he broke into show business", "He wrote 1,500 songs and some 75 hits, including 'Goodie, Goodie,' 'That Old Black Magic'". The Savannah Tribune, 25 November 2009: dedicated in Ellis Square on 18 November 2009, "the date that would have been Johnny Mercer's 100th birthday", "the man who wrote the words of the southern lullaby, Moon River", "life-size bronze statue which was designed by sculptor Susie Chisholm. The stable [statue] was a concept from a photo Mercer leaning against a fire hydrant." The Savannah Tribune, 22 April 2009, on the council vote placing it in Ellis Square. Whether the statue leans on anything, and on which corner it stands, should be checked on site; the script says only how he leans and that the pose came from the photograph. The landing "as if he had just stepped out" is the narrator's image, not a claim.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Find the bronze man in this square, life size"
+    source: 2
+    quote: "The life-size bronze statue of Johnny Mercer has been granted a home. Mayor Otis Johnson and City Council voted unanimously to approve the statue’s placement in Ellis Square."
+  - says: "He was posed from a photograph. In it, he is leaning on a fire hydrant."
+    source: 1
+    quote: "The stable was a concept from a photo Mercer leaning against a fire hydrant."
+  - says: "He wrote his first song at fifteen. It was called Sister Suzy Struts Her Stuff. In nineteen twenty nine he went to New York and worked on Wall Street, until he broke into show business."
+    source: 3
+    quote: "Born in Savannah, Ga., he wrote his first song at 15, “Sister Suzy Struts Her Stuff.” He went to New York in 1929, and worked on Wall Street until he broke into show business"
+  - says: "About fifteen hundred songs in all. He won four Academy Awards. One of them was for Moon River."
+    source: 3
+    quote: "He won four Academy Awards, for “Moon River,” “The Atchison, Topeka and Santa Fe,” “In the Cool, Cool, Cool of the Evening,” and “Days of Wine and Roses.”"
+  - says: "About fifteen hundred songs in all."
+    source: 3
+    quote: "He wrote 1,500 songs and some 75 hits"
+  - says: "the obituary began with Jeepers Creepers and ended with Autumn Leaves"
+    source: 3
+    quote: "Mercer’s lyrics moved Ameri cans from the days of “Jeepers, Creepers” to “Au tumn Leaves.”"
+  - says: "Back home, people remembered the words to a southern lullaby."
+    source: 1
+    quote: "Mercer, perhaps most famous as the man who wrote the words of the southern lullaby, Moon River"
+  - says: "The statue was unveiled here on the eighteenth of November, two thousand nine. It was the day he would have turned a hundred."
+    source: 1
+    quote: "On November 18, 2009 - the date that would have been Johnny Mercer’s 100th birthday — his statue was dedicated in Ellis Square."
+sources:
+  - title: "Johnny Mercer Life Size Statue Unveiled in Ellis Square (The Savannah Tribune, 25 November 2009, page 7)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn95003657/2009-11-25/ed-1/seq-7/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Mercer Statue to be Placed in Ellis Square (The Savannah Tribune, 22 April 2009, page 1)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn95003657/2009-04-22/ed-1/seq-1/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Johnny Mercer dies at 66 (UPI, Griffin Daily News, 26 June 1976, page 14)"
+    publisher: "Georgia Historic Newspapers, Digital Library of Georgia"
+    url: https://gahistoricnewspapers.galileo.usg.edu/lccn/sn83009936/1976-06-26/ed-1/seq-14/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
