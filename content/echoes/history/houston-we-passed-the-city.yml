@@ -9,7 +9,7 @@ at: { lat: 29.76390, lng: -95.35889 }
 triggerRadiusKm: 0.05
 category: history
 format: short
-durationS: 96
+durationS: 98
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -109,3 +109,71 @@ sources:
     url: https://www.nps.gov/articles/000/houston-a-case-study-in-urban-cultural-landscapes.htm
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-we-passed-the-city/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 98.2
+    audioBytes: 1572405
+    transcript:
+      totalS: 98.2
+      lines:
+        - text: Look down at the water from the top of this bank.
+          atS: 0
+          durationS: 2.54
+        - text: Just upstream, a smaller bayou, White Oak, runs into this one.
+          atS: 2.93
+          durationS: 4.76
+        - text: The first people who came looking for Houston went straight past it.
+          atS: 8.2
+          durationS: 3.88
+        - text: In the summer of eighteen thirty six, two brothers, Augustus and John Allen, bought the land beside these two bayous.
+          atS: 12.89
+          durationS: 8.03
+        - text: They named it the town of Houston, and their advertisements called it the great commercial emporium of Texas.
+          atS: 21.36
+          durationS: 6.46
+        - text: John Allen told the Texas Congress it was one of the most healthy places in the lower country.
+          atS: 28.77
+          durationS: 5.38
+        - text: The bayou, he promised, is navigable at all times.
+          atS: 34.75
+          durationS: 3.84
+        - text: At the end of that year, a young merchant named Francis Lubbock sailed for Houston on a steamer called the Laura, with his groceries below deck.
+          atS: 39.41
+          durationS: 8.73
+        - text: No steamboat had ever come this far.
+          atS: 49.09
+          durationS: 2.3
+        - text: Fallen trees blocked the bayou.
+          atS: 52.08
+          durationS: 2.1
+        - text: The passengers went ashore, made winches out of tree trunks, and hauled the snags out of the way.
+          atS: 54.7
+          durationS: 5.9
+        - text: Twelve miles of bayou took them three days.
+          atS: 61.1
+          durationS: 2.96
+        - text: Near the end, Lubbock and a few others got tired of the steamer and rowed ahead in a small boat to find the city.
+          atS: 64.67
+          durationS: 6.75
+        - text: So little evidence could we see of a landing, he wrote, that we passed by the site and run into White Oak Bayou.
+          atS: 71.92
+          durationS: 6.9
+        - text: They backed down, and found a road laid off from the water's edge.
+          atS: 79.15
+          durationS: 3.7
+        - text: On shore were stakes and footprints.
+          atS: 83.23
+          durationS: 2.33
+        - text: This, about the first of January, eighteen thirty seven, was Houston.
+          atS: 85.95
+          durationS: 5.09
+        - text: Look at the bank again.
+          atS: 91.48
+          durationS: 1.21
+        - text: Stakes, footprints, and an advertisement.
+          atS: 93.01
+          durationS: 3.14
+        - text: It was enough.
+          atS: 96.47
+          durationS: 1.75

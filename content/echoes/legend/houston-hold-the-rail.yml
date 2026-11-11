@@ -10,7 +10,7 @@ triggerRadiusKm: 0.05
 voice: wC1005J19tvhoqqC2hkf
 category: legend
 format: short
-durationS: 80
+durationS: 69
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -105,3 +105,83 @@ sources:
     url: https://www.houstonchronicle.com/news/houston-texas/houston/article/Houston-s-most-haunted-places-12282510.php
     retrievedAt: "2026-11-11"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/houston-hold-the-rail/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 68.9
+    audioBytes: 1103037
+    transcript:
+      totalS: 68.9
+      lines:
+        - text: Find the two storey brick building at eight thirteen Congress.
+          atS: 0
+          durationS: 2.9
+        - text: Inside is a bar called La Carafe.
+          atS: 3.15
+          durationS: 2.52
+        - text: It is one of the oldest buildings in Houston still standing where it was built.
+          atS: 5.88
+          durationS: 3.76
+        - text: And by the telling of the people who work in it, it is not empty when it should be.
+          atS: 10.02
+          durationS: 3.62
+        - text: This is a legend.
+          atS: 14.08
+          durationS: 1.07
+        - text: Take it as one.
+          atS: 15.53
+          durationS: 0.86
+        - text: An Irish baker named John Kennedy came to Houston in eighteen forty two.
+          atS: 16.83
+          durationS: 4.09
+        - text: Around eighteen sixty he had this building put up, for a steam bakery.
+          atS: 21.36
+          durationS: 4.11
+        - text: It stayed in his family until nineteen seventy.
+          atS: 25.86
+          durationS: 2.65
+        - text: Now it is called the oldest bar in Houston.
+          atS: 28.62
+          durationS: 2.21
+        - text: Its regulars have given it a whole cast of ghosts.
+          atS: 30.95
+          durationS: 2.84
+        - text: John Kennedy himself, they say, shot and killed outside this door.
+          atS: 33.95
+          durationS: 3.71
+        - text: A bartender called Carl.
+          atS: 37.74
+          durationS: 1.6
+        - text: A boy who plays upstairs.
+          atS: 39.42
+          durationS: 1.57
+        - text: And a woman on the stairs, who pushes beautiful women down them.
+          atS: 41.08
+          durationS: 3.53
+        - text: The state historical marker for this building gives Kennedy's years, eighteen nineteen to eighteen seventy eight.
+          atS: 45.12
+          durationS: 6.3
+        - text: It says nothing about how he died.
+          atS: 51.57
+          durationS: 2.11
+        - text: A manager once told a reporter what he had seen.
+          atS: 54.07
+          durationS: 2.63
+        - text: Doors open by themselves.
+          atS: 57.03
+          durationS: 1.65
+        - text: You think you see people walk by.
+          atS: 58.95
+          durationS: 1.9
+        - text: There are noises.
+          atS: 61.18
+          durationS: 1.09
+        - text: Things fly off the walls.
+          atS: 62.45
+          durationS: 1.63
+        - text: Look at the door, and the stairs behind it.
+          atS: 64.4
+          durationS: 2.19
+        - text: If you go up, hold the rail.
+          atS: 66.92
+          durationS: 1.95

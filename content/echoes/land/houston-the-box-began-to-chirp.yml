@@ -9,7 +9,7 @@ at: { lat: 29.76325, lng: -95.39880 }
 triggerRadiusKm: 0.06
 category: land
 format: short
-durationS: 92
+durationS: 81
 visibility: daylight-dependent
 certainty: documented
 minAge: 0
@@ -104,3 +104,74 @@ sources:
     url: https://www.npr.org/2022/12/28/1145923340/1-600-bats-fell-to-the-ground-during-houstons-cold-snap-heres-how-they-were-save
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-the-box-began-to-chirp/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.3
+    audioBytes: 1301567
+    transcript:
+      totalS: 81.3
+      lines:
+        - text: Look at the underside of the Waugh Bridge, at the dark seams between the beams.
+          atS: 0
+          durationS: 4.61
+        - text: They are full.
+          atS: 4.7
+          durationS: 0.92
+        - text: Something like two hundred and fifty thousand bats live in there.
+          atS: 5.77
+          durationS: 3.69
+        - text: They are Mexican free tailed bats.
+          atS: 9.74
+          durationS: 2.37
+        - text: Every night at sunset, people gather here to watch them pour out.
+          atS: 12.28
+          durationS: 4.1
+        - text: In a night, the colony eats almost two and a half tons of insects.
+          atS: 16.77
+          durationS: 4.03
+        - text: In December twenty twenty two, an Arctic blast reached Houston.
+          atS: 21.49
+          durationS: 4.12
+        - text: Mary Warwick, the wildlife director of the Houston Humane Society, was out doing her holiday shopping.
+          atS: 26.05
+          durationS: 5.9
+        - text: The freezing wind reminded her of the bats.
+          atS: 32.55
+          durationS: 2.31
+        - text: So she drove here.
+          atS: 35.56
+          durationS: 1.28
+        - text: More than a hundred lay on the ground, looking dead.
+          atS: 37.53
+          durationS: 3.03
+        - text: The cold had sent them into shock, and they had lost their grip and fallen.
+          atS: 41.38
+          durationS: 4.2
+        - text: She gathered them into a box and set it on her heated passenger seat.
+          atS: 46.39
+          durationS: 4.12
+        - text: On the forty minute drive home, the box began to chirp.
+          atS: 51.63
+          durationS: 3.58
+        - text: She came back twice a day.
+          atS: 55.81
+          durationS: 1.79
+        - text: Other people joined in.
+          atS: 57.92
+          durationS: 1.51
+        - text: In the end, some sixteen hundred bats from this bridge and one in Pearland spent the freeze in her attic, in dog kennels, asleep.
+          atS: 60.03
+          durationS: 9.11
+        - text: When the weather warmed, about seven hundred were due to be set free again, here, at this bridge.
+          atS: 69.59
+          durationS: 5.95
+        - text: Look up at the seams.
+          atS: 75.92
+          durationS: 1.27
+        - text: Stay until dusk.
+          atS: 77.43
+          durationS: 1.38
+        - text: Some of them have been to her attic.
+          atS: 79.25
+          durationS: 2.02

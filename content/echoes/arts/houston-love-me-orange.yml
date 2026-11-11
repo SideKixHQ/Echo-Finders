@@ -9,7 +9,7 @@ at: { lat: 29.71763, lng: -95.32433 }
 triggerRadiusKm: 0.05
 category: arts
 format: short
-durationS: 92
+durationS: 101
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -131,3 +131,95 @@ sources:
     url: https://www.houstonchronicle.com/lifestyle/article/Exclusive-Orange-Show-Center-for-Visionary-Art-17452536.php
     retrievedAt: "2026-11-11"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-love-me-orange/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 101.1
+    audioBytes: 1617963
+    transcript:
+      totalS: 101.1
+      lines:
+        - text: Look at the walls in front of you, all tile and steel and bright paint.
+          atS: 0
+          durationS: 4.12
+        - text: Somewhere in them are words, set in tile.
+          atS: 4.63
+          durationS: 2.8
+        - text: Eat oranges and live.
+          atS: 8.03
+          durationS: 1.82
+        - text: A mail carrier built all of this, by himself, to tell the world about one fruit.
+          atS: 10.24
+          durationS: 5.28
+        - text: His name was Jeff McKissack.
+          atS: 15.96
+          durationS: 2.54
+        - text: In the Depression he trucked oranges around the Southeast, and he came to believe the orange was a pure source of energy.
+          atS: 18.89
+          durationS: 6.49
+        - text: In the war years he learned to weld in a navy shipyard.
+          atS: 25.76
+          durationS: 2.96
+        - text: Then he moved to Houston and carried the mail.
+          atS: 28.93
+          durationS: 2.38
+        - text: He bought two lots across the street from his house.
+          atS: 31.7
+          durationS: 2.82
+        - text: He got a permit to build a beauty parlor.
+          atS: 34.8
+          durationS: 2.3
+        - text: Then he typed onto the permit, Beauty parlors are going out of style.
+          atS: 37.48
+          durationS: 4.9
+        - text: Have a better idea.
+          atS: 42.76
+          durationS: 1.31
+        - text: The Orange Show.
+          atS: 44.51
+          durationS: 1.08
+        - text: For about twenty years, he hauled in what the city threw away.
+          atS: 46.41
+          durationS: 4.17
+        - text: Roof tiles, fire escapes, steel wheels, turnstiles, tractor seats, from Houston buildings being torn down.
+          atS: 50.99
+          durationS: 8.57
+        - text: He worked without plans.
+          atS: 60.05
+          durationS: 1.71
+        - text: Stairs and catwalks, two little amphitheaters, a wishing well, a steamboat floating in a tank.
+          atS: 61.98
+          durationS: 6.91
+        - text: He called it the most beautiful show on earth.
+          atS: 69.5
+          durationS: 2.62
+        - text: He expected ninety percent of the country to want to see it.
+          atS: 72.72
+          durationS: 3.27
+        - text: It opened on the ninth of May, nineteen seventy nine.
+          atS: 76.38
+          durationS: 3.75
+        - text: The crowds did not come.
+          atS: 80.73
+          durationS: 1.66
+        - text: Seven months later, he died of a stroke.
+          atS: 82.84
+          durationS: 2.68
+        - text: But some of the few who had come were artists.
+          atS: 85.8
+          durationS: 2.76
+        - text: They raised the money to buy it and save it.
+          atS: 88.8
+          durationS: 2.68
+        - text: Dominique de Menil gave.
+          atS: 92
+          durationS: 1.73
+        - text: So did ZZ Top.
+          atS: 94.11
+          durationS: 1.45
+        - text: Find the words in the tile again.
+          atS: 95.94
+          durationS: 2.01
+        - text: Love me, orange, please love me.
+          atS: 98.56
+          durationS: 2.5

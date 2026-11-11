@@ -9,7 +9,7 @@ at: { lat: 29.75702, lng: -95.34252 }
 triggerRadiusKm: 0.05
 category: food-drink
 format: short
-durationS: 88
+durationS: 91
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -124,3 +124,89 @@ sources:
     url: https://www.houstonchronicle.com/entertainment/restaurants-bars/article/remembering-ninfa-the-mother-houston-called-5466650.php
     retrievedAt: "2026-11-11"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-out-of-desperation/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 91
+    audioBytes: 1457466
+    transcript:
+      totalS: 91
+      lines:
+        - text: Look at the building on Navigation Boulevard.
+          atS: 0
+          durationS: 2.35
+        - text: Before it was a famous restaurant, it was a tortilla factory.
+          atS: 2.86
+          durationS: 3.62
+        - text: And it was failing.
+          atS: 6.99
+          durationS: 1.21
+        - text: The restaurant was a last resort.
+          atS: 8.58
+          durationS: 1.95
+        - text: Ninfa Rodriguez grew up in the Rio Grande Valley.
+          atS: 11.64
+          durationS: 3.22
+        - text: She married Tommy Laurenzo, a Rhode Island man of Italian descent, and in nineteen forty nine they started a company in this building.
+          atS: 15.56
+          durationS: 7.69
+        - text: Tortillas, and pizza dough.
+          atS: 23.52
+          durationS: 1.88
+        - text: Her heritage, and his.
+          atS: 25.58
+          durationS: 1.73
+        - text: In nineteen sixty nine, Tommy died suddenly.
+          atS: 27.82
+          durationS: 3.16
+        - text: She was a widow with five children, and the business was losing money.
+          atS: 31.18
+          durationS: 3.6
+        - text: The banks in Houston turned her down for a loan.
+          atS: 35.39
+          durationS: 2.87
+        - text: She borrowed from a friend in Mexico instead.
+          atS: 39.07
+          durationS: 2.9
+        - text: In the summer of nineteen seventy three, she turned the front of the factory into a little restaurant.
+          atS: 42.92
+          durationS: 5.43
+        - text: Ten tables.
+          atS: 49.05
+          durationS: 1.2
+        - text: Her daughter waited on them the first day.
+          atS: 50.69
+          durationS: 2.37
+        - text: On the menu was beef, char grilled and folded into soft flour tortillas.
+          atS: 53.87
+          durationS: 5.04
+        - text: Tacos al carbon.
+          atS: 59.61
+          durationS: 1.74
+        - text: The world would come to call them fajitas.
+          atS: 62.16
+          durationS: 2.53
+        - text: When we opened this restaurant, her daughter said, it was out of desperation.
+          atS: 65.64
+          durationS: 4.42
+        - text: We were in survival mode.
+          atS: 70.45
+          durationS: 1.67
+        - text: Within a few years there were a dozen Ninfa's, and more.
+          atS: 72.73
+          durationS: 3.49
+        - text: Movie stars came, and a future president.
+          atS: 76.66
+          durationS: 2.46
+        - text: Then the chain grew too fast, and the family lost it.
+          atS: 79.37
+          durationS: 3.43
+        - text: Look at the front of the building again.
+          atS: 83.12
+          durationS: 1.79
+        - text: She didn't invent it, her daughter said.
+          atS: 85.18
+          durationS: 2.52
+        - text: But nobody had it on the menu until the restaurant.
+          atS: 88.03
+          durationS: 2.99

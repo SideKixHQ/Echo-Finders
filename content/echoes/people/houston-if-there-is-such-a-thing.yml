@@ -11,7 +11,7 @@ triggerRadiusKm: 0.08
 inside: true
 category: people
 format: short
-durationS: 92
+durationS: 99
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -110,3 +110,80 @@ sources:
     url: https://www.tshaonline.org/handbook/entries/hogg-ima
     retrievedAt: "2026-11-11"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-if-there-is-such-a-thing/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 98.8
+    audioBytes: 1582436
+    transcript:
+      totalS: 98.8
+      lines:
+        - text: Look at the house.
+          atS: 0
+          durationS: 1.16
+        - text: Pink stucco, black iron balconies.
+          atS: 1.49
+          durationS: 2.74
+        - text: Below it, the land drops away through the trees to Buffalo Bayou, which loops right around this place.
+          atS: 4.67
+          durationS: 6.63
+        - text: That loop is why it is called Bayou Bend.
+          atS: 11.9
+          durationS: 3.16
+        - text: The woman who built it asked for a style that she was not sure existed.
+          atS: 16.36
+          durationS: 4.19
+        - text: Her name was Ima Hogg.
+          atS: 21.5
+          durationS: 2.3
+        - text: Her father, Jim Hogg, was the first governor of Texas born in Texas.
+          atS: 24.75
+          durationS: 4.59
+        - text: Before he died, he told his children not to sell the family plantation, because he believed there was oil under it.
+          atS: 30.04
+          durationS: 7.12
+        - text: In nineteen eighteen they drilled.
+          atS: 38.27
+          durationS: 1.9
+        - text: He was right.
+          atS: 40.41
+          durationS: 1.01
+        - text: In the nineteen twenties, Ima and her brothers laid out a new neighborhood along this bayou, River Oaks.
+          atS: 42.03
+          durationS: 7.14
+        - text: For her own house, she told the architects what she wanted.
+          atS: 49.87
+          durationS: 3.7
+        - text: Southern colonial, she asked for, with a Latin flavor, if there is such a thing.
+          atS: 54.17
+          durationS: 5.1
+        - text: She moved in on the fifth of November, nineteen twenty eight.
+          atS: 60.57
+          durationS: 3.56
+        - text: On the thirty first of May, nineteen twenty nine, the bayou flooded.
+          atS: 64.64
+          durationS: 4.68
+        - text: The new garden and the lawn below the house were wrecked, and trees the family loved were lost.
+          atS: 69.93
+          durationS: 5.76
+        - text: So she spent the next year replanting.
+          atS: 76.01
+          durationS: 2.58
+        - text: Hundreds of trees, shrubs and flowers.
+          atS: 79.28
+          durationS: 2.74
+        - text: Old roses.
+          atS: 82.2
+          durationS: 1.09
+        - text: A white garden in the woods.
+          atS: 83.41
+          durationS: 1.81
+        - text: Then she gave the whole place away, to the Museum of Fine Arts, so anyone could walk through it.
+          atS: 85.73
+          durationS: 5.84
+        - text: Look down toward the water, through the trees she planted after the flood.
+          atS: 92.01
+          durationS: 4.24
+        - text: It turned out there was such a thing.
+          atS: 96.69
+          durationS: 2.14

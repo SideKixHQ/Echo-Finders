@@ -9,7 +9,7 @@ at: { lat: 29.77150, lng: -95.42740 }
 triggerRadiusKm: 0.15
 category: history
 format: short
-durationS: 105
+durationS: 100
 visibility: position-only
 certainty: documented
 minAge: 12
@@ -136,3 +136,86 @@ sources:
     url: https://www.cbsnews.com/news/us-army-110-black-buffalo-soldiers-arrested-1917-houston-riots/
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-the-letter-got-home/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 100.2
+    audioBytes: 1604588
+    transcript:
+      totalS: 100.2
+      lines:
+        - text: Look around at these trees.
+          atS: 0
+          durationS: 1.65
+        - text: In the summer of nineteen seventeen, this was not a park.
+          atS: 2.03
+          durationS: 3.29
+        - text: It was Camp Logan, an army camp being built to train men for the war in Europe.
+          atS: 5.56
+          durationS: 4.97
+        - text: The soldiers sent to guard it while it was built were Black.
+          atS: 11.04
+          durationS: 2.97
+        - text: They were the Third Battalion of the Twenty Fourth Infantry, the Buffalo Soldiers.
+          atS: 14.45
+          durationS: 4.26
+        - text: They had served in Mexico and the Philippines.
+          atS: 19.04
+          durationS: 2.6
+        - text: In Houston, they met Jim Crow.
+          atS: 21.97
+          durationS: 2.16
+        - text: Again and again, there were run ins with white police.
+          atS: 24.45
+          durationS: 3.18
+        - text: On the twenty third of August, a false rumor went round that a mob was coming.
+          atS: 28.75
+          durationS: 4.3
+        - text: Someone shouted, get your guns, boys.
+          atS: 33.37
+          durationS: 2.54
+        - text: More than a hundred soldiers took their rifles and marched into the city.
+          atS: 36.72
+          durationS: 4.13
+        - text: By the end of the night, nineteen people were dead.
+          atS: 41.3
+          durationS: 3.1
+        - text: Fifteen were white.
+          atS: 44.72
+          durationS: 1.34
+        - text: Four were Black.
+          atS: 46.27
+          durationS: 1.1
+        - text: The Army tried a hundred and ten men.
+          atS: 47.81
+          durationS: 2.07
+        - text: Sixty three of them stood trial together, defended by one officer who was not a lawyer.
+          atS: 50.2
+          durationS: 5.19
+        - text: Thirteen were sentenced to death, and were not told until twelve hours before.
+          atS: 55.83
+          durationS: 4.61
+        - text: One of them was Private First Class Thomas Coleman Hawkins.
+          atS: 61.14
+          durationS: 3.84
+        - text: That night, he wrote to his family.
+          atS: 65.68
+          durationS: 2.5
+        - text: I was sentenced to be hanged for the trouble that took place in Houston, Texas, he wrote, although I am not guilty of the crime that I am accused.
+          atS: 68.87
+          durationS: 8.13
+        - text: The thirteen were hanged together, just before sunrise.
+          atS: 77.81
+          durationS: 3.42
+        - text: Six more hangings followed.
+          atS: 81.68
+          durationS: 1.87
+        - text: In November twenty twenty three, the Army set aside all one hundred and ten convictions.
+          atS: 84.36
+          durationS: 5.93
+        - text: The soldiers, it said, were wrongly treated because of their race, and were not given fair trials.
+          atS: 90.8
+          durationS: 6.14
+        - text: His family had kept his letter the whole time.
+          atS: 97.38
+          durationS: 2.83

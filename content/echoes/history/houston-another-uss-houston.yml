@@ -122,3 +122,77 @@ sources:
     url: https://www.tshaonline.org/handbook/entries/houston-QTH03
     retrievedAt: "2026-11-11"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-another-uss-houston/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 100
+    audioBytes: 1600826
+    transcript:
+      totalS: 100
+      lines:
+        - text: Stand on Main Street, in the nine hundred block, and look along it.
+          atS: 0
+          durationS: 3.91
+        - text: One Saturday afternoon in nineteen forty two, a photographer climbed out onto the sign of a movie theater on this block, just to get it all into his picture.
+          atS: 4.35
+          durationS: 9.52
+        - text: A few months before, at the turn of February into March, the cruiser USS Houston had gone down in a night battle in the Sunda Strait, off Java.
+          atS: 14.38
+          durationS: 9.47
+        - text: Back home, people knew only that their city's ship was lost.
+          atS: 24.55
+          durationS: 4.03
+        - text: Nobody knew what had become of her crew.
+          atS: 29.02
+          durationS: 2.33
+        - text: The Navy said it would give the name to a new cruiser.
+          atS: 31.87
+          durationS: 2.64
+        - text: So the city set itself a goal.
+          atS: 34.89
+          durationS: 1.95
+        - text: A thousand men, to take the place of the crew they had lost.
+          atS: 37.28
+          durationS: 3.71
+        - text: On Memorial Day, the volunteers lined up along this block to be sworn in.
+          atS: 41.95
+          durationS: 4.43
+        - text: The crowd downtown was put at a hundred and fifty thousand.
+          atS: 46.77
+          durationS: 3.24
+        - text: By the Chronicle's count, more than three thousand men answered.
+          atS: 50.33
+          durationS: 3.92
+        - text: A fifty three year old logger, William Harrison Watson, tried to sign up.
+          atS: 54.58
+          durationS: 4.17
+        - text: He was turned away for his age and his eyesight.
+          atS: 59.07
+          durationS: 2.97
+        - text: His four sons took the oath instead.
+          atS: 62.48
+          durationS: 2.37
+        - text: The mayor read the crowd a letter from President Roosevelt.
+          atS: 65.36
+          durationS: 3.13
+        - text: Our enemies have given us the chance to prove, he wrote, that there will be another USS Houston.
+          atS: 68.94
+          durationS: 5.7
+        - text: Then the city raised the money to build her.
+          atS: 75.08
+          durationS: 2.38
+        - text: Enough for the new Houston, and for an aircraft carrier besides, the San Jacinto.
+          atS: 77.97
+          durationS: 5.07
+        - text: What nobody on this street knew was that nearly three hundred of the first crew had lived.
+          atS: 84
+          durationS: 5.05
+        - text: They were prisoners, forced to build a railway through the jungle between Burma and Thailand.
+          atS: 89.86
+          durationS: 5.17
+        - text: Look along the block.
+          atS: 95.63
+          durationS: 1.13
+        - text: They were replacing men who were still alive.
+          atS: 97.27
+          durationS: 2.72

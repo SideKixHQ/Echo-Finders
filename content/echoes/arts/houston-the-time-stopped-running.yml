@@ -10,7 +10,7 @@ triggerRadiusKm: 0.05
 inside: true
 category: arts
 format: short
-durationS: 90
+durationS: 76
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -103,3 +103,77 @@ sources:
     url: https://www.npr.org/2011/03/01/134160717/meditation-and-modern-art-meet-in-rothko-chapel
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-the-time-stopped-running/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76
+    audioBytes: 1216722
+    transcript:
+      totalS: 76
+      lines:
+        - text: In front of you is a pool, and in it a steel obelisk, standing on its point.
+          atS: 0
+          durationS: 4.61
+        - text: Behind it, a brick building with eight sides and no windows.
+          atS: 4.82
+          durationS: 3.7
+        - text: Inside are fourteen enormous paintings that, at first, look almost black.
+          atS: 8.77
+          durationS: 4.92
+        - text: John and Dominique de Menil commissioned the chapel from the painter Mark Rothko.
+          atS: 14.07
+          durationS: 5.7
+        - text: It opened in February nineteen seventy one.
+          atS: 20.21
+          durationS: 2.79
+        - text: Rothko did not live to see it.
+          atS: 23.6
+          durationS: 1.9
+        - text: He had died the year before.
+          atS: 25.89
+          durationS: 1.82
+        - text: His son, Christopher, was a child when it opened.
+          atS: 28.15
+          durationS: 3.07
+        - text: He did not come to see it until he was thirty three.
+          atS: 31.6
+          durationS: 2.87
+        - text: He grew up with his father's paintings.
+          atS: 35.17
+          durationS: 2.07
+        - text: He talked with them every day.
+          atS: 37.62
+          durationS: 1.84
+        - text: But on that first visit, in here, nothing happened.
+          atS: 39.89
+          durationS: 3.19
+        - text: I almost left with nothing, he said.
+          atS: 43.9
+          durationS: 2.53
+        - text: He stayed a little longer.
+          atS: 46.71
+          durationS: 1.44
+        - text: He stayed an hour and fifteen minutes.
+          atS: 48.47
+          durationS: 2.19
+        - text: The time, he said, just sort of stopped running.
+          atS: 51.11
+          durationS: 3.06
+        - text: The chapel's historian said Rothko chose the dark on purpose.
+          atS: 54.55
+          durationS: 3.96
+        - text: Bright colors stop your vision at the canvas, she said.
+          atS: 58.79
+          durationS: 3.23
+        - text: Dark colors go beyond.
+          atS: 62.34
+          durationS: 1.63
+        - text: Look at the door.
+          atS: 64.35
+          durationS: 0.93
+        - text: Inside, a skylight lets the Houston sun in, softly, and as clouds pass outside, the paintings change.
+          atS: 65.72
+          durationS: 7.85
+        - text: Give them longer than you think.
+          atS: 74.08
+          durationS: 1.89

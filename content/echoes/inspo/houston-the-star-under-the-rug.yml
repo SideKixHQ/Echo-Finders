@@ -13,7 +13,7 @@ inspo:
   kind: creation
   evidence: building
 format: short
-durationS: 84
+durationS: 81
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -107,3 +107,80 @@ sources:
     url: https://www.houstonchronicle.com/entertainment/music/article/Legendary-SugarHill-studio-opens-doors-for-rare-6106367.php
     retrievedAt: "2026-11-11"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-the-star-under-the-rug/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.9
+    audioBytes: 1294880
+    transcript:
+      totalS: 80.9
+      lines:
+        - text: Look past the chain link fence, at the low buildings behind it.
+          atS: 0
+          durationS: 3.59
+        - text: Five of them, fused together over the years into one.
+          atS: 3.97
+          durationS: 3.51
+        - text: It looks like nothing much.
+          atS: 7.86
+          durationS: 1.57
+        - text: It is said to be the oldest recording studio in the country still running.
+          atS: 9.81
+          durationS: 4.06
+        - text: In nineteen forty one, a man named Bill Quinn opened a recording studio in Houston.
+          atS: 14.83
+          durationS: 5.65
+        - text: By nineteen fifty he called it Gold Star.
+          atS: 20.92
+          durationS: 2.94
+        - text: Lightnin' Hopkins cut dozens of songs for him.
+          atS: 24.37
+          durationS: 2.96
+        - text: George Jones recorded Why Baby Why.
+          atS: 27.84
+          durationS: 3.05
+        - text: J.
+          atS: 31.28
+          durationS: 0.28
+        - text: P.
+          atS: 31.59
+          durationS: 0.3
+        - text: Richardson, the Big Bopper, had a huge hit with Chantilly Lace.
+          atS: 31.93
+          durationS: 4.26
+        - text: And in nineteen fifty nine, a young Willie Nelson made some of his earliest recordings at Gold Star, among them the first version of Night Life.
+          atS: 36.36
+          durationS: 8.49
+        - text: Then came Clifton Chenier, the king of zydeco.
+          atS: 45.45
+          durationS: 2.83
+        - text: The Sir Douglas Quintet, with She's About a Mover.
+          atS: 48.61
+          durationS: 2.81
+        - text: The Thirteenth Floor Elevators.
+          atS: 51.54
+          durationS: 1.98
+        - text: In the seventies the studio was renamed SugarHill, and Freddy Fender recorded Wasted Days and Wasted Nights.
+          atS: 53.91
+          durationS: 6.14
+        - text: Later still, Destiny's Child.
+          atS: 60.29
+          durationS: 2.25
+        - text: Inside this building, in Studio B, a large gold star is set into the linoleum floor.
+          atS: 62.87
+          durationS: 5.47
+        - text: Lightnin' Hopkins, the Big Bopper, Freddy Fender and Beyonce all recorded there.
+          atS: 68.66
+          durationS: 4.38
+        - text: Most days, a rug covers it.
+          atS: 73.36
+          durationS: 1.93
+        - text: Look at the fence again.
+          atS: 75.47
+          durationS: 1.17
+        - text: The star is still on the floor.
+          atS: 76.92
+          durationS: 1.86
+        - text: They just keep it under a rug.
+          atS: 78.95
+          durationS: 1.9

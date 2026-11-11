@@ -12,7 +12,7 @@ inspo:
   kind: first
   evidence: building
 format: short
-durationS: 86
+durationS: 74
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -122,3 +122,71 @@ sources:
     url: https://www.cbsnews.com/texas/news/astrodome-fades-as-houston-decides-its-fate/
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-the-grass-that-gave-up/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74
+    audioBytes: 1184539
+    transcript:
+      totalS: 74
+      lines:
+        - text: Look up at the Astrodome.
+          atS: 0
+          durationS: 1.53
+        - text: A roof six hundred and forty two feet across, with no columns holding it up in the middle.
+          atS: 1.86
+          durationS: 5.12
+        - text: Under it, plastic grass got its name.
+          atS: 7.36
+          durationS: 2.68
+        - text: The man behind it was Roy Hofheinz, a former county judge and mayor.
+          atS: 10.65
+          durationS: 4.76
+        - text: Houston summers had heat, humidity and mosquitoes.
+          atS: 16.01
+          durationS: 3.83
+        - text: Nobody wanted to play baseball in that, or watch it.
+          atS: 20.35
+          durationS: 3.04
+        - text: So he dreamed of a stadium with a roof and air conditioning.
+          atS: 24
+          durationS: 3.42
+        - text: It had never been done.
+          atS: 27.81
+          durationS: 1.33
+        - text: It opened in nineteen sixty five, the first fully air conditioned, domed stadium.
+          atS: 29.95
+          durationS: 5.99
+        - text: Hofheinz called it the Eighth Wonder of the World.
+          atS: 36.55
+          durationS: 3.48
+        - text: The roof had plastic skylights, and the plan was real grass.
+          atS: 40.54
+          durationS: 3.99
+        - text: But out in the field, the players had trouble with the glare.
+          atS: 45.23
+          durationS: 3.11
+        - text: So the skylights were painted over.
+          atS: 48.67
+          durationS: 2.1
+        - text: Under the dome, the grass dried out.
+          atS: 51.38
+          durationS: 2.47
+        - text: In nineteen sixty six, it was pulled up, and replaced with a new artificial grass.
+          atS: 54.36
+          durationS: 5.4
+        - text: It came to be named after the building that needed it.
+          atS: 60.36
+          durationS: 2.96
+        - text: AstroTurf.
+          atS: 64.13
+          durationS: 1.23
+        - text: Look at the dome again.
+          atS: 65.75
+          durationS: 1.32
+        - text: Plastic grass all over the world still carries a little of its name.
+          atS: 67.4
+          durationS: 4.3
+        - text: The grass gave up first.
+          atS: 72.08
+          durationS: 1.9

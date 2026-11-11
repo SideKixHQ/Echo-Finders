@@ -9,7 +9,7 @@ at: { lat: 29.76240, lng: -95.36250 }
 triggerRadiusKm: 0.05
 category: food-drink
 format: short
-durationS: 82
+durationS: 78
 visibility: position-only
 certainty: documented
 minAge: 0
@@ -83,3 +83,65 @@ sources:
     url: https://archive.org/details/houstonahistory00writmiss
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-a-window-for-doughnuts/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 78.3
+    audioBytes: 1253084
+    transcript:
+      totalS: 78.3
+      lines:
+        - text: Stand on Preston, by Market Square, and picture a small window at the front of a bakery.
+          atS: 0
+          durationS: 5.55
+        - text: Open all night.
+          atS: 6.06
+          durationS: 1.41
+        - text: In the late eighteen nineties, some of the most important men in Houston lined up at it.
+          atS: 8.77
+          durationS: 4.93
+        - text: It was Stude's Bakery and Coffee Saloon, at eight ten Preston Avenue.
+          atS: 14.3
+          durationS: 4.67
+        - text: It never closed.
+          atS: 19.3
+          durationS: 1.13
+        - text: And at that little window, men queued up for doughnuts, or sweet rolls, to eat with their coffee.
+          atS: 20.7
+          durationS: 5.8
+        - text: One of them was George Hermann.
+          atS: 26.95
+          durationS: 1.68
+        - text: He was the man who would give Houston the land for Hermann Park.
+          atS: 28.95
+          durationS: 3.44
+        - text: He stood in line like everybody else.
+          atS: 32.77
+          durationS: 2.31
+        - text: Night life in Houston then had plenty of choice.
+          atS: 35.6
+          durationS: 2.85
+        - text: A hotel dining hall served ten course dinners for fifty cents, with suckling pig and larded quail.
+          atS: 38.77
+          durationS: 6.11
+        - text: And near the courthouse was Colby's Cafe.
+          atS: 45.48
+          durationS: 2.6
+        - text: Out front was a display of venison, ducks, geese, snipe and turtles.
+          atS: 48.68
+          durationS: 5.18
+        - text: Inside, it served turtle soup and frog's legs, and it kept a tank of live bullfrogs.
+          atS: 54.55
+          durationS: 5.82
+        - text: In watermelon season, the story goes, the floor got so slick with melon juice that the waiters skated from table to table.
+          atS: 60.98
+          durationS: 7.65
+        - text: Look along the street.
+          atS: 69.07
+          durationS: 1.16
+        - text: The bakery is long gone, and so is the frog tank.
+          atS: 70.61
+          durationS: 2.9
+        - text: But picture the line at that window, all night long, for a doughnut.
+          atS: 73.96
+          durationS: 4.3

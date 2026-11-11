@@ -11,7 +11,7 @@ inside: true
 voice: wC1005J19tvhoqqC2hkf
 category: legend
 format: short
-durationS: 95
+durationS: 89
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -130,3 +130,92 @@ sources:
     url: https://www.loc.gov/resource/sn86089716/1941-11-18/ed-1/?sp=1
     retrievedAt: "2026-11-11"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/houston-the-lion-tamer/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 89.1
+    audioBytes: 1426119
+    transcript:
+      totalS: 89.1
+      lines:
+        - text: Find the lions.
+          atS: 0
+          durationS: 1.15
+        - text: The first man to work lions in this zoo was a German named Hans Nagel.
+          atS: 1.53
+          durationS: 4.33
+        - text: And the zoo, the legend goes, has never quite let him leave.
+          atS: 6.11
+          durationS: 3.32
+        - text: This is a legend.
+          atS: 9.64
+          durationS: 1.03
+        - text: Here is the part that is not.
+          atS: 11.11
+          durationS: 1.5
+        - text: The city hired Nagel in nineteen twenty two, to run the zoo and to be its face.
+          atS: 13.05
+          durationS: 4.61
+        - text: He put on lion taming shows every week.
+          atS: 18.17
+          durationS: 2.44
+        - text: He rode a zebra, to win a bet.
+          atS: 21.05
+          durationS: 2.23
+        - text: He once drove a bear all the way from Port Arthur, in the back seat of his car.
+          atS: 23.6
+          durationS: 4.21
+        - text: The animals fought back.
+          atS: 28.2
+          durationS: 1.45
+        - text: An alligator bite put him in hospital for three weeks.
+          atS: 29.98
+          durationS: 3.16
+        - text: An elephant stepped on him.
+          atS: 33.29
+          durationS: 1.46
+        - text: A leopard opened him up.
+          atS: 34.84
+          durationS: 1.34
+        - text: A lion called Caesar, four hundred and fifty pounds, would have killed him if his assistants had not got to him first.
+          atS: 36.42
+          durationS: 6.45
+        - text: He carried a pistol at his side, always.
+          atS: 43.15
+          durationS: 2.61
+        - text: In November, nineteen forty one, a park watchman came on Nagel by a side road in the park.
+          atS: 46.72
+          durationS: 5.58
+        - text: By the watchman's account, Nagel had been hiding behind a bush, watching young people in a parked car.
+          atS: 52.55
+          durationS: 5.49
+        - text: The two men argued over whose job it was to police the park.
+          atS: 58.28
+          durationS: 3.27
+        - text: The watchman said Nagel reached for his pistol.
+          atS: 62.07
+          durationS: 2.31
+        - text: The watchman fired six times.
+          atS: 64.62
+          durationS: 1.93
+        - text: Hans Nagel was forty nine.
+          atS: 66.79
+          durationS: 1.79
+        - text: A grand jury cleared the watchman, on grounds of self defense.
+          atS: 68.96
+          durationS: 3.62
+        - text: Since then, staff have reported strange shadows by the zoo's commissary, said to be near where he died.
+          atS: 72.91
+          durationS: 6.32
+        - text: A voice late at night, no louder than a whisper.
+          atS: 79.5
+          durationS: 2.83
+        - text: A man standing in a doorway, and then not.
+          atS: 82.62
+          durationS: 2.72
+        - text: Look at the lions.
+          atS: 85.72
+          durationS: 1.08
+        - text: No animal here ever managed it.
+          atS: 87.12
+          durationS: 1.95

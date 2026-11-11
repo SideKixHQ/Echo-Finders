@@ -10,7 +10,7 @@ triggerRadiusKm: 0.06
 voice: wC1005J19tvhoqqC2hkf
 category: legend
 format: short
-durationS: 92
+durationS: 87
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -123,3 +123,107 @@ sources:
     url: https://www.houstonchronicle.com/news/houston-texas/houston/article/Houston-s-most-haunted-places-12282510.php
     retrievedAt: "2026-11-11"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/houston-the-basement-above-ground/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 86.9
+    audioBytes: 1391847
+    transcript:
+      totalS: 86.9
+      lines:
+        - text: Look at the old brick hospital on its rise, with the columns at its front door.
+          atS: 0
+          durationS: 4.69
+        - text: Now look at the bottom floor.
+          atS: 5.02
+          durationS: 1.64
+        - text: It is not below ground.
+          atS: 6.9
+          durationS: 1.52
+        - text: The basement was built above it.
+          atS: 8.66
+          durationS: 1.83
+        - text: Because the ground was already full.
+          atS: 10.74
+          durationS: 2.23
+        - text: The building is history.
+          atS: 13.29
+          durationS: 1.64
+        - text: The ghosts are legend.
+          atS: 15.26
+          durationS: 1.69
+        - text: Here is the history first.
+          atS: 17.33
+          durationS: 1.52
+        - text: From eighteen forty, this hill was the Houston City Cemetery.
+          atS: 19.03
+          durationS: 3.68
+        - text: It took the dead until the eighteen eighties.
+          atS: 22.84
+          durationS: 2.2
+        - text: Confederate soldiers lie here, and victims of yellow fever.
+          atS: 25.11
+          durationS: 3.46
+        - text: Thousands of graves.
+          atS: 28.69
+          durationS: 1.34
+        - text: In nineteen twenty four, the city and the county built a charity hospital on top of it.
+          atS: 30.35
+          durationS: 4.7
+        - text: There was no widespread removal of the graves.
+          atS: 35.29
+          durationS: 2.71
+        - text: So the builders went up, instead of down.
+          atS: 38.38
+          durationS: 2.66
+        - text: At the request of Confederate veterans and their families, it was named for Jefferson Davis, for the men in the ground beneath it.
+          atS: 41.55
+          durationS: 7.19
+        - text: It was a hospital for only thirteen years.
+          atS: 49.06
+          durationS: 2.39
+        - text: Then a psychiatric hospital.
+          atS: 51.78
+          durationS: 1.6
+        - text: A juvenile detention ward.
+          atS: 53.53
+          durationS: 1.61
+        - text: A food stamp office.
+          atS: 55.47
+          durationS: 1.38
+        - text: A records store.
+          atS: 57.06
+          durationS: 1.1
+        - text: Then nothing.
+          atS: 58.41
+          durationS: 0.79
+        - text: For years it stood empty and fenced off, rotting in plain view of the freeway.
+          atS: 59.58
+          durationS: 5.02
+        - text: That is when the talk began.
+          atS: 65.29
+          durationS: 1.52
+        - text: Soldiers in the wards, people say.
+          atS: 67.2
+          durationS: 2.06
+        - text: Doctors, nurses and patients.
+          atS: 69.58
+          durationS: 2.28
+        - text: Nobody has proved any of it.
+          atS: 72.24
+          durationS: 1.67
+        - text: In two thousand five, the old hospital became homes for artists.
+          atS: 74.42
+          durationS: 3.82
+        - text: A spokeswoman said the ghosts had been replaced by muses.
+          atS: 78.52
+          durationS: 3.31
+        - text: Look at the bottom floor again.
+          atS: 82.21
+          durationS: 1.53
+        - text: The basement is above ground.
+          atS: 83.82
+          durationS: 1.57
+        - text: The cemetery is not.
+          atS: 85.44
+          durationS: 1.5

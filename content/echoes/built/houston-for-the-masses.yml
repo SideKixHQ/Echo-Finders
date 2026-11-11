@@ -9,7 +9,7 @@ at: { lat: 29.75995, lng: -95.36875 }
 triggerRadiusKm: 0.06
 category: built
 format: short
-durationS: 88
+durationS: 94
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -103,3 +103,80 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx0500/tx0563/data/tx0563data.pdf
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-for-the-masses/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 93.9
+    audioBytes: 1502606
+    transcript:
+      totalS: 93.9
+      lines:
+        - text: Look across the water at City Hall.
+          atS: 0
+          durationS: 2.25
+        - text: Pale stone, straight lines, carved panels running up its face.
+          atS: 2.63
+          durationS: 4.89
+        - text: The mayor did not want it to look like this.
+          atS: 8.34
+          durationS: 2.33
+        - text: For fifteen years, Houston argued about a new city hall.
+          atS: 11.18
+          durationS: 4.12
+        - text: One plan was a copy of the Capitol in Washington, with a dome.
+          atS: 15.91
+          durationS: 4.03
+        - text: Another was a twenty storey skyscraper.
+          atS: 20.63
+          durationS: 2.67
+        - text: Then the Depression stopped everything.
+          atS: 23.9
+          durationS: 2.29
+        - text: In nineteen thirty seven, federal money came through, and the council picked a new architect, Joseph Finger.
+          atS: 27
+          durationS: 7.21
+        - text: He had come to America from Austria at eighteen.
+          atS: 34.82
+          durationS: 3.12
+        - text: He brought the council a plan described as ultra modernistic.
+          atS: 38.38
+          durationS: 3.59
+        - text: Mayor Fonville objected, loudly.
+          atS: 42.35
+          durationS: 2.75
+        - text: The buildings around this square were Spanish style, he argued, and the new one should match.
+          atS: 45.38
+          durationS: 5.78
+        - text: Finger answered.
+          atS: 51.55
+          durationS: 1.12
+        - text: We're building for the masses, he said, and not the classes.
+          atS: 53.17
+          durationS: 3.44
+        - text: The council took his plan, without a single change.
+          atS: 57.72
+          durationS: 3.03
+        - text: Look closer.
+          atS: 60.96
+          durationS: 0.98
+        - text: Above the first floor, the panels show crops from around Houston.
+          atS: 62.26
+          durationS: 4.05
+        - text: Higher up, its industries.
+          atS: 66.52
+          durationS: 2.08
+        - text: Near the top, the work of city government.
+          atS: 68.85
+          durationS: 2.44
+        - text: On the roof line, carved bobcat heads.
+          atS: 71.4
+          durationS: 2.61
+        - text: And on the aluminum doors, the faces of lawgivers, from Moses and Caesar to Thomas Jefferson.
+          atS: 74.26
+          durationS: 5.87
+        - text: Behind the cornerstone, sealed in a box, they left a Bible, the city charter, three newspapers, and an essay with a title like a letter.
+          atS: 81.43
+          durationS: 8.67
+        - text: To the Houston democracy of the future.
+          atS: 91.22
+          durationS: 2.64

@@ -13,7 +13,7 @@ inspo:
   kind: connection
   evidence: building
 format: short
-durationS: 78
+durationS: 71
 visibility: position-only
 certainty: documented
 minAge: 0
@@ -113,3 +113,65 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx1100/tx1134/data/tx1134data.pdf
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-weve-had-a-problem/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.1
+    audioBytes: 1137727
+    transcript:
+      totalS: 71.1
+      lines:
+        - text: You are outside Building Thirty, Mission Control.
+          atS: 0
+          durationS: 3.06
+        - text: Somewhere inside is the room that heard a sentence people still quote, half a century later.
+          atS: 3.88
+          durationS: 5.6
+        - text: It was a calm sentence about a disaster.
+          atS: 9.86
+          durationS: 2.84
+        - text: In April nineteen seventy, Apollo Thirteen was three days out, on its way to the Moon.
+          atS: 13.51
+          durationS: 6.3
+        - text: An electrical short set off an explosion in an oxygen tank.
+          atS: 20.63
+          durationS: 4.24
+        - text: Fred Haise began, Okay, Houston.
+          atS: 25.68
+          durationS: 2.98
+        - text: Then the commander, Jim Lovell.
+          atS: 28.84
+          durationS: 2.07
+        - text: I believe we've had a problem here.
+          atS: 31.72
+          durationS: 1.61
+        - text: From this building, the capsule communicator asked him to say again.
+          atS: 34.15
+          durationS: 4.07
+        - text: Houston, we've had a problem.
+          atS: 38.92
+          durationS: 2.18
+        - text: Stand by, thirteen, came the answer.
+          atS: 41.54
+          durationS: 2.93
+        - text: We're looking at it.
+          atS: 44.98
+          durationS: 1.23
+        - text: For days, the flight controllers in here worked out how to bring three men home in a crippled spacecraft.
+          atS: 46.81
+          durationS: 6.06
+        - text: Gene Kranz was the flight director.
+          atS: 53.38
+          durationS: 2.17
+        - text: Throughout the entire course of Apollo Thirteen, he said, there was never any doubt that we'd get the crew back.
+          atS: 56.16
+          durationS: 6.55
+        - text: They got them back.
+          atS: 63.22
+          durationS: 1.15
+        - text: And the words they spoke into this room live on.
+          atS: 64.81
+          durationS: 2.76
+        - text: And the first word of it was the name of this city.
+          atS: 68.08
+          durationS: 2.97

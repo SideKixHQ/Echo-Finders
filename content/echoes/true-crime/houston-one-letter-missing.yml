@@ -11,7 +11,7 @@ triggerRadiusKm: 0.06
 voice: wC1005J19tvhoqqC2hkf
 category: true-crime
 format: short
-durationS: 104
+durationS: 101
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -144,3 +144,83 @@ sources:
     url: https://archive.org/details/houstonahistory00writmiss
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/houston-one-letter-missing/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 100.5
+    audioBytes: 1609603
+    transcript:
+      totalS: 100.5
+      lines:
+        - text: Look at the arches of Lovett Hall, the front door of Rice University.
+          atS: 0
+          durationS: 4.23
+        - text: This place exists because of a name, misspelled on a check.
+          atS: 4.74
+          durationS: 4.05
+        - text: William Marsh Rice was a rich man with deep roots in Houston.
+          atS: 9.3
+          durationS: 3.83
+        - text: He owned the hotel on Main Street where the Capitol of Texas had stood.
+          atS: 13.64
+          durationS: 3.95
+        - text: In his last years he lived in New York.
+          atS: 18.1
+          durationS: 2.34
+        - text: In eighteen ninety six he wrote a will leaving the bulk of his money to found an institute here.
+          atS: 20.96
+          durationS: 5.3
+        - text: In September, nineteen hundred, he died in his bed in his New York apartment.
+          atS: 27.07
+          durationS: 4.84
+        - text: He was eighty four.
+          atS: 32.52
+          durationS: 1.14
+        - text: His valet, Charles Jones, later confessed that he had killed him with chloroform while he slept.
+          atS: 34.26
+          durationS: 5.99
+        - text: Jones swore he did it for a lawyer, Albert Patrick.
+          atS: 40.85
+          durationS: 3.57
+        - text: The prosecution's case was that Patrick had forged a newer will, leaving the fortune to himself, and a set of checks to empty Rice's bank accounts.
+          atS: 45.53
+          durationS: 8.7
+        - text: But on one of those checks, the name Albert Patrick was written with a letter missing.
+          atS: 54.74
+          durationS: 4.4
+        - text: A bank clerk who had witnessed Rice's real will looked at it, and grew suspicious.
+          atS: 59.65
+          durationS: 5.32
+        - text: When he telephoned, Jones admitted the old man was dead.
+          atS: 65.78
+          durationS: 3.46
+        - text: Patrick was convicted of murder and sentenced to death.
+          atS: 69.75
+          durationS: 2.97
+        - text: He always said he was innocent, and that Jones could not be believed.
+          atS: 73.23
+          durationS: 3.9
+        - text: His sentence was cut to life in prison, and in nineteen twelve the governor of New York pardoned him.
+          atS: 77.83
+          durationS: 5.59
+        - text: He was freed.
+          atS: 83.86
+          durationS: 0.96
+        - text: The conviction was never overturned.
+          atS: 85.33
+          durationS: 1.97
+        - text: Jones, who confessed, was never punished.
+          atS: 88
+          durationS: 2.82
+        - text: The forged will was thrown out.
+          atS: 91.33
+          durationS: 1.93
+        - text: The fortune came to Houston, and the Rice Institute opened here.
+          atS: 93.87
+          durationS: 3.63
+        - text: Look at the arches again.
+          atS: 97.94
+          durationS: 1.31
+        - text: One letter.
+          atS: 99.64
+          durationS: 0.91

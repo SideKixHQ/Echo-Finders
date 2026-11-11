@@ -10,7 +10,7 @@ triggerRadiusKm: 0.1
 voice: UrTldiIxfedDl9tlesyS
 category: kids
 format: short
-durationS: 70
+durationS: 66
 visibility: position-only
 certainty: documented
 minAge: 0
@@ -89,3 +89,71 @@ sources:
     url: https://www.archives.gov/files/social-media/transcripts/transcript-eagle-has-landed-1969-45017.pdf
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/houston-the-cows-moved-out/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 66
+    audioBytes: 1057061
+    transcript:
+      totalS: 66
+      lines:
+        - text: Look around at the big flat land out here, by Clear Lake.
+          atS: 0
+          durationS: 3.27
+        - text: Rockets, spacecraft, astronauts.
+          atS: 3.48
+          durationS: 2.67
+        - text: Now imagine cows.
+          atS: 6.48
+          durationS: 1.68
+        - text: Lots of cows.
+          atS: 8.49
+          durationS: 1.15
+        - text: Not very long ago, this was a ranch.
+          atS: 10.02
+          durationS: 2.16
+        - text: Texas cattle grazed right across it.
+          atS: 12.39
+          durationS: 2.29
+        - text: There were rice fields nearby, and oil derricks, ducks, a few alligators, and lots of mosquitoes.
+          atS: 14.95
+          durationS: 6.85
+        - text: Then, in nineteen sixty one, the country decided to go to the Moon.
+          atS: 22.25
+          durationS: 4.4
+        - text: And it needed a place to plan the trip.
+          atS: 26.97
+          durationS: 2.04
+        - text: An oil company had given a big piece of ranch land to Rice University.
+          atS: 29.4
+          durationS: 4.37
+        - text: Rice offered it to the space program.
+          atS: 34.27
+          durationS: 2.24
+        - text: A thousand acres.
+          atS: 36.79
+          durationS: 1.59
+        - text: On the nineteenth of September, nineteen sixty one, it was announced.
+          atS: 38.71
+          durationS: 4.23
+        - text: This would be the command center for landing people on the Moon.
+          atS: 43.38
+          durationS: 3.34
+        - text: So the cows were herded out, to make room for spacecraft, astronauts and engineers.
+          atS: 47.04
+          durationS: 4.98
+        - text: Thousands of people and their families moved in.
+          atS: 52.27
+          durationS: 2.7
+        - text: Eight years later, people walked on the Moon, and talked to Houston the whole way.
+          atS: 55.3
+          durationS: 4.67
+        - text: Look out at the open grass.
+          atS: 60.48
+          durationS: 1.77
+        - text: Can you picture the cows?
+          atS: 62.52
+          durationS: 1.53
+        - text: They were here first.
+          atS: 64.44
+          durationS: 1.56

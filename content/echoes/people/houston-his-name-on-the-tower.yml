@@ -9,7 +9,7 @@ at: { lat: 29.75885, lng: -95.36500 }
 triggerRadiusKm: 0.05
 category: people
 format: short
-durationS: 88
+durationS: 90
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -117,3 +117,80 @@ sources:
     url: https://www.houstonchronicle.com/news/houston-texas/bayou-city-history/article/Birth-of-a-skyline-Niels-Esperson-Building-10966126.php
     retrievedAt: "2026-11-11"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-his-name-on-the-tower/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 89.5
+    audioBytes: 1432807
+    transcript:
+      totalS: 89.5
+      lines:
+        - text: Look up, all the way up, at the top of the tower on this corner.
+          atS: 0
+          durationS: 3.97
+        - text: A ring of columns, gold leaf, a little temple in the sky.
+          atS: 4.41
+          durationS: 4.16
+        - text: It was built for a man who never saw it.
+          atS: 9.01
+          durationS: 2.28
+        - text: Niels Esperson came from Denmark.
+          atS: 12.4
+          durationS: 3.57
+        - text: He and his wife, Mellie, moved to Houston in nineteen oh three.
+          atS: 16.48
+          durationS: 3.78
+        - text: He made his fortune in the Humble oilfield and in real estate.
+          atS: 20.5
+          durationS: 3.7
+        - text: He owned this corner, and he meant to build on it.
+          atS: 24.45
+          durationS: 2.62
+        - text: In the early nineteen twenties he died, and left her a fortune.
+          atS: 27.4
+          durationS: 3.97
+        - text: He had left no plans for the building.
+          atS: 31.61
+          durationS: 1.97
+        - text: So Mellie went to Europe herself, for ideas on stone and materials, and hired the architect John Eberson to design what she meant as a memorial to her husband.
+          atS: 33.91
+          durationS: 10.17
+        - text: Thirty two storeys, Italian Renaissance.
+          atS: 44.59
+          durationS: 2.97
+        - text: When it opened in nineteen twenty seven, it was the tallest building in Texas.
+          atS: 48.08
+          durationS: 4.34
+        - text: She gave it his name.
+          atS: 52.74
+          durationS: 1.25
+        - text: Then she went to work in it.
+          atS: 54.32
+          durationS: 1.52
+        - text: From a suite on the twenty fifth floor, for some twenty years, she ran her oil business, her rice farms and her real estate.
+          atS: 56.23
+          durationS: 8.03
+        - text: She kept at it after she lost her sight.
+          atS: 64.59
+          durationS: 2.59
+        - text: Fourteen years after his tower, she built a second one, joined to it, on Walker.
+          atS: 68.48
+          durationS: 5.38
+        - text: Nineteen storeys.
+          atS: 74.36
+          durationS: 1.48
+        - text: The first skyscraper in Houston built with central air conditioning.
+          atS: 76.35
+          durationS: 4.16
+        - text: That one carries her name.
+          atS: 80.83
+          durationS: 1.65
+        - text: Look up at the gold again.
+          atS: 83.08
+          durationS: 1.49
+        - text: His name is on the tower.
+          atS: 84.95
+          durationS: 1.44
+        - text: Hers is on the one beside it, holding on.
+          atS: 86.83
+          durationS: 2.66

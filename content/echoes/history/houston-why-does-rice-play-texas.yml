@@ -9,7 +9,7 @@ at: { lat: 29.71639, lng: -95.40917 }
 triggerRadiusKm: 0.12
 category: history
 format: short
-durationS: 88
+durationS: 67
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -112,3 +112,65 @@ sources:
     url: https://www.archives.gov/files/social-media/transcripts/transcript-eagle-has-landed-1969-45017.pdf
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-why-does-rice-play-texas/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 67.2
+    audioBytes: 1075452
+    transcript:
+      totalS: 67.2
+      lines:
+        - text: Look at the stands of this stadium.
+          atS: 0
+          durationS: 1.89
+        - text: Plain concrete, row on row.
+          atS: 2.1
+          durationS: 2.6
+        - text: The most famous sentence ever spoken about the moon was spoken here.
+          atS: 5.14
+          durationS: 4.09
+        - text: And it was set up with a joke about football.
+          atS: 9.67
+          durationS: 2.68
+        - text: The stadium was designed and built in nine months, by engineers who reused forms from the Gulf Freeway to pour the concrete.
+          atS: 12.86
+          durationS: 7.85
+        - text: On the twelfth of September, nineteen sixty two, President John Kennedy came here to speak.
+          atS: 21.66
+          durationS: 5.77
+        - text: Just seven months earlier, John Glenn had circled the Earth.
+          atS: 28.13
+          durationS: 3.76
+        - text: Now Kennedy wanted more.
+          atS: 32.22
+          durationS: 1.61
+        - text: But why, some say, the moon, he asked.
+          atS: 34.08
+          durationS: 2.51
+        - text: Why choose this as our goal?
+          atS: 36.7
+          durationS: 1.94
+        - text: And they may well ask, why climb the highest mountain?
+          atS: 38.96
+          durationS: 3.42
+        - text: Then, standing in Rice's own stadium, he asked one more.
+          atS: 43.09
+          durationS: 4.2
+        - text: Why does Rice play Texas?
+          atS: 47.8
+          durationS: 1.95
+        - text: We choose to go to the moon, he said.
+          atS: 49.92
+          durationS: 2.23
+        - text: We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard.
+          atS: 52.36
+          durationS: 6.37
+        - text: Look at the stands again.
+          atS: 58.94
+          durationS: 1.36
+        - text: Seven years later, men walked on the moon, and talked to a room in this city.
+          atS: 60.58
+          durationS: 4.6
+        - text: It started as a football joke.
+          atS: 65.24
+          durationS: 1.92

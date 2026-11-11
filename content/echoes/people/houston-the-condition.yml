@@ -9,7 +9,7 @@ at: { lat: 29.68380, lng: -95.40778 }
 triggerRadiusKm: 0.08
 category: people
 format: short
-durationS: 74
+durationS: 69
 visibility: position-only
 certainty: documented
 minAge: 0
@@ -94,3 +94,65 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx1000/tx1045/data/tx1045data.pdf
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-the-condition/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.5
+    audioBytes: 1097185
+    transcript:
+      totalS: 68.5
+      lines:
+        - text: Look at the Astrodome, the first stadium in the world built to be air conditioned.
+          atS: 0
+          durationS: 4.72
+        - text: Before it could be built, somebody had to vote for it.
+          atS: 5.05
+          durationS: 3.11
+        - text: And the men who wanted it could not win without Black voters.
+          atS: 8.6
+          durationS: 3.55
+        - text: It was nineteen sixty one.
+          atS: 12.67
+          durationS: 1.9
+        - text: Roy Hofheinz and Bob Smith wanted a major league baseball team for Houston, and a stadium with a roof.
+          atS: 15.27
+          durationS: 6.43
+        - text: For that, Harris County voters had to approve a public bond issue.
+          atS: 21.87
+          durationS: 4.41
+        - text: They needed the support of Black Houstonians.
+          atS: 26.56
+          durationS: 2.9
+        - text: So they went to Quentin Mease.
+          atS: 30.07
+          durationS: 1.89
+        - text: He was a veteran of the Air Force in the Second World War, and one of the most respected Black leaders in the city.
+          atS: 32.34
+          durationS: 5.83
+        - text: In Houston, it was only the year before that lunch counters had been integrated.
+          atS: 38.62
+          durationS: 4.36
+        - text: Mease and the other Black leaders listened.
+          atS: 43.42
+          durationS: 2.38
+        - text: And they agreed to campaign for the bond on one condition.
+          atS: 46.08
+          durationS: 3.38
+        - text: The new stadium had to be open to everyone, together.
+          atS: 49.9
+          durationS: 3.47
+        - text: Hofheinz and Smith agreed.
+          atS: 54.32
+          durationS: 2.18
+        - text: The bond issue, forty two million dollars, was passed.
+          atS: 56.75
+          durationS: 4.02
+        - text: Look up at the dome again.
+          atS: 61.01
+          durationS: 1.35
+        - text: The Eighth Wonder of the World.
+          atS: 62.56
+          durationS: 1.82
+        - text: It had a condition written into it before a single beam went up.
+          atS: 64.63
+          durationS: 3.87

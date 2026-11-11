@@ -11,7 +11,7 @@ triggerRadiusKm: 0.05
 voice: wC1005J19tvhoqqC2hkf
 category: true-crime
 format: short
-durationS: 100
+durationS: 98
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -157,3 +157,77 @@ sources:
     url: https://www.justice.gov/archive/opa/pr/2006/October/06_crm_723.html
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/houston-the-verdict-that-was-erased/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 97.6
+    audioBytes: 1562374
+    transcript:
+      totalS: 97.6
+      lines:
+        - text: Look at the federal courthouse here on Rusk Street.
+          atS: 0
+          durationS: 2.47
+        - text: In two thousand six, a jury in this building found the founder of Enron guilty of fraud.
+          atS: 2.65
+          durationS: 5.04
+        - text: Five months later, his conviction no longer existed.
+          atS: 8.13
+          durationS: 3.15
+        - text: Enron was a Texas energy giant, based in Houston.
+          atS: 11.45
+          durationS: 3.38
+        - text: Its collapse at the end of two thousand one wiped out more than sixty billion dollars in market value, about two billion dollars in retirement savings, and some fifty six hundred jobs.
+          atS: 15
+          durationS: 11.1
+        - text: The trial of its two former chief executives, Kenneth Lay and Jeffrey Skilling, ran for nearly four months.
+          atS: 26.19
+          durationS: 6.28
+        - text: Twelve jurors, eight women and four men, deliberated for six days.
+          atS: 32.86
+          durationS: 4.61
+        - text: On the twenty fifth of May, two thousand six, they came back.
+          atS: 37.91
+          durationS: 4.25
+        - text: Lay was convicted on every count he faced.
+          atS: 42.85
+          durationS: 2.8
+        - text: Skilling was convicted on nineteen counts, and acquitted on nine.
+          atS: 46.16
+          durationS: 3.92
+        - text: In the courtroom, Lay's family gathered round him and prayed.
+          atS: 50.53
+          durationS: 3.69
+        - text: God's got another plan right now, he said.
+          atS: 55.03
+          durationS: 2.9
+        - text: I firmly believe I am innocent.
+          atS: 58.38
+          durationS: 2.46
+        - text: On the fifth of July, before he could be sentenced, Kenneth Lay died of a heart attack.
+          atS: 61.65
+          durationS: 5.15
+        - text: He was sixty four.
+          atS: 66.95
+          durationS: 1.32
+        - text: In October, Judge Sim Lake vacated his conviction.
+          atS: 68.79
+          durationS: 3.55
+        - text: Under the law of this federal circuit, when a defendant dies before his appeal is heard, his whole case is extinguished.
+          atS: 72.67
+          durationS: 7.33
+        - text: The Justice Department answered that the ruling did not change the fact that Lay was found guilty.
+          atS: 80.59
+          durationS: 5.6
+        - text: Days later, in this courthouse, Skilling was sentenced to twenty four years and four months in prison.
+          atS: 86.7
+          durationS: 6.26
+        - text: Look at the doors again.
+          atS: 93.28
+          durationS: 1.22
+        - text: One verdict stood.
+          atS: 94.78
+          durationS: 1.16
+        - text: The other was erased.
+          atS: 96.04
+          durationS: 1.53

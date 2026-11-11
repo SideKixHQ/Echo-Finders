@@ -10,7 +10,7 @@ triggerRadiusKm: 0.15
 voice: UrTldiIxfedDl9tlesyS
 category: kids
 format: short
-durationS: 66
+durationS: 67
 visibility: position-only
 certainty: documented
 minAge: 0
@@ -90,3 +90,74 @@ sources:
     url: https://archive.org/details/houstonahistory00writmiss
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/houston-a-bison-named-earl/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 66.8
+    audioBytes: 1070436
+    transcript:
+      totalS: 66.8
+      lines:
+        - text: Somewhere past these trees is the Houston Zoo.
+          atS: 0
+          durationS: 2.97
+        - text: Hundreds and hundreds of animals.
+          atS: 3.22
+          durationS: 2.05
+        - text: It started with just one.
+          atS: 5.65
+          durationS: 1.53
+        - text: In nineteen twenty, the United States government had too many bison in its national parks.
+          atS: 7.63
+          durationS: 5.19
+        - text: So it gave some away.
+          atS: 13.26
+          durationS: 1.45
+        - text: One of them came to Houston.
+          atS: 15.31
+          durationS: 1.57
+        - text: The city put him in a little park downtown, and gave him a name.
+          atS: 17.32
+          durationS: 3.47
+        - text: Earl.
+          atS: 21.3
+          durationS: 0.55
+        - text: Earl needed company.
+          atS: 22.45
+          durationS: 1.32
+        - text: The city bought him a girl bison from a herd in west Texas, but sadly she did not live long.
+          atS: 24.22
+          durationS: 5.41
+        - text: So his next friend was a deer, given by a fishing club.
+          atS: 30.14
+          durationS: 3.09
+        - text: Then more animals came.
+          atS: 33.55
+          durationS: 1.45
+        - text: Strange pets.
+          atS: 35.52
+          durationS: 1.3
+        - text: Gifts.
+          atS: 37.26
+          durationS: 0.71
+        - text: A lion, bought from a circus.
+          atS: 38.35
+          durationS: 2.55
+        - text: On the first of December, nineteen twenty four, the zoo officially opened.
+          atS: 41.41
+          durationS: 5.22
+        - text: By the next year it had moved here, to Hermann Park, with more than four hundred animals, three hundred birds and a hundred reptiles.
+          atS: 47.08
+          durationS: 7.81
+        - text: And their dinner?
+          atS: 55.17
+          durationS: 0.86
+        - text: Everything from meat to dried flies.
+          atS: 56.35
+          durationS: 2.81
+        - text: So when you walk past the animals today, say thank you to the very first one.
+          atS: 59.68
+          durationS: 4.77
+        - text: Thank you, Earl.
+          atS: 64.96
+          durationS: 1.87

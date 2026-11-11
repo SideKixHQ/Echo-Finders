@@ -109,3 +109,74 @@ sources:
     url: https://archive.org/details/houstonahistory00writmiss
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-a-capitol-without-a-roof/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 89.7
+    audioBytes: 1436568
+    transcript:
+      totalS: 89.7
+      lines:
+        - text: Look at the old hotel on this corner.
+          atS: 0
+          durationS: 2.19
+        - text: Before it was a hotel, this was the capitol of a country.
+          atS: 2.71
+          durationS: 4.05
+        - text: The Republic of Texas.
+          atS: 7.08
+          durationS: 1.6
+        - text: And for its first weeks, the capitol had no roof.
+          atS: 9.13
+          durationS: 3.52
+        - text: In the spring of eighteen thirty seven, Houston was a few months old.
+          atS: 13.34
+          durationS: 4.05
+        - text: The Allen brothers had promised Congress a building if it made their town the capital, and Congress said yes.
+          atS: 17.83
+          durationS: 6
+        - text: Then the lumber, ordered from Maine, failed to arrive.
+          atS: 24.79
+          durationS: 3.36
+        - text: So a contractor, Thomas Ward, talked carpenters out of the town's saloons and started a one storey building on Main Street.
+          atS: 28.65
+          durationS: 7.53
+        - text: By the first of May, when Congress met, it still had no roof.
+          atS: 36.79
+          durationS: 4.24
+        - text: Branches were cut and fastened along the ridgepole.
+          atS: 41.47
+          durationS: 3.22
+        - text: On the fifteenth of May, a visitor came to look around.
+          atS: 45.29
+          durationS: 3.43
+        - text: John James Audubon, the painter of birds.
+          atS: 49.32
+          durationS: 4.2
+        - text: The capitol, he wrote, was yet without a roof.
+          atS: 53.96
+          durationS: 3.19
+        - text: The floor, the benches and the tables of both houses of Congress were as wet as his own clothes had been that morning.
+          atS: 57.48
+          durationS: 7.54
+        - text: The hammering went on during sessions.
+          atS: 65.29
+          durationS: 2.46
+        - text: A member asked that Major Ward be told to stop work that disturbed Congress.
+          atS: 68.2
+          durationS: 4.86
+        - text: The motion was rejected.
+          atS: 73.39
+          durationS: 1.92
+        - text: Two years later, the government moved to Austin, and this corner became a hotel site.
+          atS: 76.42
+          durationS: 5.19
+        - text: Look up at the hotel.
+          atS: 82.21
+          durationS: 1.37
+        - text: A country's laws were once made here, under branches.
+          atS: 83.71
+          durationS: 3.44
+        - text: And the work went on through the debates.
+          atS: 87.32
+          durationS: 2.4

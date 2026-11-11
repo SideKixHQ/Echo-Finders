@@ -10,7 +10,7 @@ triggerRadiusKm: 0.04
 inside: true
 category: food-drink
 format: short
-durationS: 84
+durationS: 80
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -100,3 +100,77 @@ sources:
     url: https://www.npr.org/sections/codeswitch/2021/06/18/1007729393/know-the-history-a-texas-chefs-thoughts-on-food-and-juneteenth
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-know-what-this-is-about/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.2
+    audioBytes: 1284431
+    transcript:
+      totalS: 80.2
+      lines:
+        - text: Look at this old house, built in nineteen twenty three.
+          atS: 0
+          durationS: 3.5
+        - text: It is a restaurant now, and it carries a woman's name.
+          atS: 4
+          durationS: 3.5
+        - text: Lucille.
+          atS: 8.01
+          durationS: 0.86
+        - text: She never cooked here.
+          atS: 9.57
+          durationS: 1.4
+        - text: She is the chef's great-grandmother.
+          atS: 11.36
+          durationS: 2.14
+        - text: Her name was Lucille Smith.
+          atS: 13.87
+          durationS: 1.87
+        - text: She was a home economist and a teacher.
+          atS: 16.18
+          durationS: 2.34
+        - text: She created a hot roll mix that was sold in grocery stores.
+          atS: 19.04
+          durationS: 3.68
+        - text: She cooked for Dr.
+          atS: 23.1
+          durationS: 1.02
+        - text: Martin Luther King Junior and for Eleanor Roosevelt.
+          atS: 24.16
+          durationS: 3.32
+        - text: And when she sent Christmas fruitcakes to soldiers in Vietnam, President Lyndon Johnson wrote to thank her.
+          atS: 27.92
+          durationS: 6.32
+        - text: Her great-grandsons, Chris and Ben Williams, opened this restaurant.
+          atS: 34.84
+          durationS: 4.49
+        - text: It was Ben's idea to name it after Great Grandma.
+          atS: 39.85
+          durationS: 3.39
+        - text: Chris said that was perfect, because it gave them a story.
+          atS: 43.75
+          durationS: 3.4
+        - text: Since the day they opened, they have served a watermelon salad, with strawberry and jalapeño dressing.
+          atS: 47.84
+          durationS: 6.14
+        - text: It is red on purpose.
+          atS: 54.12
+          durationS: 1.67
+        - text: Red is the color most people link with Juneteenth, the day enslaved Texans learned they were free.
+          atS: 56.23
+          durationS: 5.71
+        - text: It stands for the blood that was shed.
+          atS: 62.18
+          durationS: 2.31
+        - text: Chris has said he is not comfortable calling Juneteenth a celebration.
+          atS: 65.45
+          durationS: 4.49
+        - text: To him, it is a day of acknowledgement.
+          atS: 70.75
+          durationS: 2.6
+        - text: So he asks one thing of anyone sitting down to eat that day.
+          atS: 73.86
+          durationS: 3.96
+        - text: Know what this is really about.
+          atS: 78.33
+          durationS: 1.87

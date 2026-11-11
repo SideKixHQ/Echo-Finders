@@ -10,7 +10,7 @@ triggerRadiusKm: 0.08
 voice: wC1005J19tvhoqqC2hkf
 category: legend
 format: short
-durationS: 78
+durationS: 73
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -86,3 +86,68 @@ sources:
     url: https://www.bostonglobe.com/sports/2017/02/05/memories-are-all-that-left-houston-astrodome/9bLKJjXajRgOuc0awXe92M/story.html
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/houston-the-man-in-the-brown-suit/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 73.4
+    audioBytes: 1174926
+    transcript:
+      totalS: 73.4
+      lines:
+        - text: Look at the great curve of the Astrodome.
+          atS: 0
+          durationS: 2.44
+        - text: It has been closed to the public for years.
+          atS: 3.13
+          durationS: 2.6
+        - text: Inside, it is dark.
+          atS: 6.18
+          durationS: 1.9
+        - text: This is a legend.
+          atS: 8.89
+          durationS: 1.13
+        - text: Nobody has proved a word of it.
+          atS: 10.72
+          durationS: 1.92
+        - text: In February twenty seventeen, Houston hosted the Super Bowl next door, and a small crew from New York was brought in to work on the empty floor of the old dome.
+          atS: 13.93
+          durationS: 9.53
+        - text: The AstroTurf lay rolled up in cylinders.
+          atS: 23.71
+          durationS: 2.67
+        - text: Old peanut shells were still on the floor.
+          atS: 26.59
+          durationS: 2.27
+        - text: The people who hired them gave the crew a warning.
+          atS: 29.14
+          durationS: 2.54
+        - text: There's a man in a brown suit who you'll see sometimes, they said.
+          atS: 32.01
+          durationS: 3.48
+        - text: Up there, on the upper deck, where the light peeks through.
+          atS: 35.77
+          durationS: 3.58
+        - text: The dome, they told them, is haunted by that man.
+          atS: 39.73
+          durationS: 2.89
+        - text: One of the crew told a reporter that at six o'clock it gets a little creepy.
+          atS: 43.06
+          durationS: 4.05
+        - text: The sunlight goes, the lights go out, and only the small lights stay on.
+          atS: 47.5
+          durationS: 4.46
+        - text: He felt a cold breeze once, and wondered what it was.
+          atS: 52.65
+          durationS: 3.35
+        - text: But neither he nor anyone else on the crew ever saw the man in the brown suit.
+          atS: 56.33
+          durationS: 4.7
+        - text: What they did see, the week before, was a raccoon, or maybe a possum, walking right up the ramp.
+          atS: 61.73
+          durationS: 5.55
+        - text: Look up at the roof line, where the light gets in.
+          atS: 67.61
+          durationS: 2.39
+        - text: If he is there, he has the whole place to himself.
+          atS: 70.17
+          durationS: 3.2

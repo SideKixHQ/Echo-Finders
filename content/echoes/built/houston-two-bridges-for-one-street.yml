@@ -9,7 +9,7 @@ at: { lat: 29.77405, lng: -95.39712 }
 triggerRadiusKm: 0.05
 category: built
 format: short
-durationS: 84
+durationS: 85
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -102,3 +102,65 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx0700/tx0766/data/tx0766data.pdf
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-two-bridges-for-one-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84.6
+    audioBytes: 1354230
+    transcript:
+      totalS: 84.6
+      lines:
+        - text: Look at the bridges where Heights Boulevard crosses the bayou.
+          atS: 0
+          durationS: 3.42
+        - text: Not one bridge.
+          atS: 3.67
+          durationS: 1.18
+        - text: Two, side by side, with rows of little urn shapes along their railings.
+          atS: 5.1
+          durationS: 5.31
+        - text: Most streets make do with one.
+          atS: 10.91
+          durationS: 2.13
+        - text: In eighteen ninety one, the Omaha and South Texas Land Company began to lay out more than seventeen hundred acres north of Houston.
+          atS: 13.85
+          durationS: 9.03
+        - text: It was seventy five feet above sea level, the highest ground around.
+          atS: 23.21
+          durationS: 4.52
+        - text: So they called it the Heights.
+          atS: 28.11
+          durationS: 1.59
+        - text: The man sent to plan it was the company's treasurer, Daniel Denton Cooley.
+          atS: 30.08
+          durationS: 4.82
+        - text: He gave it a boulevard with a wide grassy strip down the middle, and a streetcar track on each side.
+          atS: 35.5
+          durationS: 6.04
+        - text: It was the first divided boulevard in the Houston area.
+          atS: 42.15
+          durationS: 3.25
+        - text: And when it came to the bayou, he would not narrow it.
+          atS: 45.78
+          durationS: 3.28
+        - text: His grandson remembered him insisting on two bridges, to do justice to Heights Boulevard.
+          atS: 50.02
+          durationS: 5.29
+        - text: So in eighteen ninety three, two wooden bridges went up here, sixty feet apart, built of more than sixty five thousand feet of lumber.
+          atS: 56.01
+          durationS: 8.9
+        - text: In nineteen twenty two, the city replaced them with these, two concrete bridges, each two hundred and forty feet long.
+          atS: 65.52
+          durationS: 7.5
+        - text: Look at the inside railings.
+          atS: 73.71
+          durationS: 1.69
+        - text: They wrap around, from one bridge to the other, and join them.
+          atS: 75.85
+          durationS: 3.39
+        - text: It is the only railing like it left in Houston.
+          atS: 79.94
+          durationS: 2.41
+        - text: Two bridges, holding hands.
+          atS: 82.67
+          durationS: 1.89

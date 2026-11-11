@@ -10,7 +10,7 @@ triggerRadiusKm: 0.05
 voice: UrTldiIxfedDl9tlesyS
 category: kids
 format: short
-durationS: 66
+durationS: 70
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -90,3 +90,89 @@ sources:
     url: https://www.cbsnews.com/news/volunteers-save-thousands-of-bats-from-drowning-in-houston-floods/
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/houston-umbrellas-and-tennis-rackets/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 70.3
+    audioBytes: 1125189
+    transcript:
+      totalS: 70.3
+      lines:
+        - text: Look up at the bridge.
+          atS: 0
+          durationS: 1.21
+        - text: Bats live underneath it.
+          atS: 1.45
+          durationS: 1.52
+        - text: Lots of them.
+          atS: 3.15
+          durationS: 0.84
+        - text: Something like two hundred and fifty thousand.
+          atS: 4.26
+          durationS: 2.3
+        - text: Here is a question.
+          atS: 6.84
+          durationS: 1.17
+        - text: Can a bat swim?
+          atS: 8.34
+          durationS: 1.43
+        - text: In August twenty seventeen, a huge storm called Hurricane Harvey flooded Houston.
+          atS: 11.06
+          durationS: 5.64
+        - text: The bayou under this bridge rose higher and higher, right up toward the bats.
+          atS: 16.99
+          durationS: 5.11
+        - text: People walking over the bridge could hear them squeaking.
+          atS: 22.7
+          durationS: 2.6
+        - text: Some bats were trying to swim away.
+          atS: 25.74
+          durationS: 1.99
+        - text: Once a bat is wet, it is very hard for it to fly.
+          atS: 28.42
+          durationS: 3.68
+        - text: So people helped.
+          atS: 32.54
+          durationS: 1.22
+        - text: They had no special nets at first.
+          atS: 34.2
+          durationS: 2.01
+        - text: They used what they had.
+          atS: 36.54
+          durationS: 1.25
+        - text: Umbrellas.
+          atS: 38.12
+          durationS: 0.8
+        - text: Tennis rackets.
+          atS: 39.13
+          durationS: 1.08
+        - text: Broken tree branches.
+          atS: 40.45
+          durationS: 1.44
+        - text: They leaned over the side and held them out, and the bats grabbed on.
+          atS: 42.4
+          durationS: 3.84
+        - text: Then more helpers came, with gloves and nets and boxes, and carried the bats to dry land.
+          atS: 46.68
+          durationS: 6.11
+        - text: A rescue team came to look after them until they were well enough to go home.
+          atS: 53.17
+          durationS: 3.67
+        - text: And one more thing.
+          atS: 57.28
+          durationS: 1.36
+        - text: If you ever find a bat, do not touch it.
+          atS: 58.97
+          durationS: 3.04
+        - text: Tell a grown up.
+          atS: 62.34
+          durationS: 1
+        - text: Look up at the bridge again.
+          atS: 63.54
+          durationS: 1.38
+        - text: At sunset, the bats fly out.
+          atS: 65.25
+          durationS: 2.22
+        - text: Some of them got a ride on a tennis racket.
+          atS: 67.85
+          durationS: 2.41

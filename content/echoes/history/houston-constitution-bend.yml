@@ -9,7 +9,7 @@ at: { lat: 29.73220, lng: -95.26717 }
 triggerRadiusKm: 0.2
 category: history
 format: short
-durationS: 92
+durationS: 89
 visibility: position-only
 certainty: documented
 minAge: 0
@@ -99,3 +99,59 @@ sources:
     url: https://www.loc.gov/resource/sn83045462/1914-11-11/ed-1/?sp=1
     retrievedAt: "2026-11-10"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-constitution-bend/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 88.6
+    audioBytes: 1418596
+    transcript:
+      totalS: 88.6
+      lines:
+        - text: Somewhere beyond these port buildings is the Turning Basin, a wide bend in the water where the biggest cargo ships in the world are swung round to head back to sea.
+          atS: 0
+          durationS: 9.87
+        - text: It is named after a ship that almost could not do it.
+          atS: 10.38
+          durationS: 3.04
+        - text: On the first of June, eighteen thirty seven, a big sailing ship called the Constitution came up Buffalo Bayou to the new town of Houston.
+          atS: 13.93
+          durationS: 9.59
+        - text: The Allen brothers had paid her captain a thousand dollars to try it.
+          atS: 24.13
+          durationS: 4.3
+        - text: The local paper could hardly trust its eyes.
+          atS: 28.86
+          durationS: 2.59
+        - text: The ship was moored at the landing, towering in pride above the bayou.
+          atS: 31.89
+          durationS: 4.42
+        - text: Then the captain, with his fee in his pocket, found that he could not turn his ship around.
+          atS: 36.83
+          durationS: 5.28
+        - text: He worked her back down the bayou.
+          atS: 42.55
+          durationS: 2.07
+        - text: And at a bend, finally, the Constitution turned without running aground.
+          atS: 45
+          durationS: 5
+        - text: People called the place Constitution Bend.
+          atS: 50.33
+          durationS: 3.08
+        - text: Seventy seven years later, a channel fifty one miles long and twenty five feet deep was dug from the Gulf to this bend.
+          atS: 53.92
+          durationS: 7.8
+        - text: On the tenth of November, nineteen fourteen, at eleven in the morning, President Woodrow Wilson pressed a button in Washington, and a cannon fired here.
+          atS: 63.02
+          durationS: 9.42
+        - text: Miss Sue Campbell dropped a wreath of flowers into the water, and Port Houston was christened.
+          atS: 73.13
+          durationS: 5.46
+        - text: Look toward the water.
+          atS: 79.19
+          durationS: 1.44
+        - text: The ships that turn here now are bigger than anything the Allens could have pictured.
+          atS: 81.07
+          durationS: 4.2
+        - text: It began with one that barely made it round.
+          atS: 85.88
+          durationS: 2.73

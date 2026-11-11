@@ -10,7 +10,7 @@ at: { lat: 29.74905, lng: -95.08130 }
 triggerRadiusKm: 0.1
 category: history
 format: short
-durationS: 104
+durationS: 97
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -148,3 +148,80 @@ sources:
     url: https://www.tshaonline.org/handbook/entries/san-jacinto-battle-of
     retrievedAt: "2026-11-11"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-return-like-eagles/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 97.4
+    audioBytes: 1559030
+    transcript:
+      totalS: 97.4
+      lines:
+        - text: Stand at the foot of the monument and look out over the flat ground around it.
+          atS: 0
+          durationS: 4.78
+        - text: The Texans camped on one side of where it stands.
+          atS: 5.22
+          durationS: 3.42
+        - text: The Mexican army camped on the other.
+          atS: 9.25
+          durationS: 2.4
+        - text: On the afternoon of the battle, the Texans did nothing at all.
+          atS: 12.47
+          durationS: 3.98
+        - text: It was the twenty first of April, eighteen thirty six.
+          atS: 16.89
+          durationS: 3.34
+        - text: For forty days, Sam Houston had retreated across Texas, ahead of General Santa Anna.
+          atS: 20.62
+          durationS: 6.21
+        - text: Some of his own officers had talked of mutiny.
+          atS: 27.53
+          durationS: 2.67
+        - text: Now the two armies were camped on this plain, and that morning, some four hundred Mexican reinforcements had marched in.
+          atS: 30.64
+          durationS: 6.99
+        - text: Houston told his officers nothing.
+          atS: 38.14
+          durationS: 2.04
+        - text: Quietly, he sent a scout, Deaf Smith, with a few men and axes, to destroy Vince's Bridge, so no more Mexican troops could reach the field.
+          atS: 40.69
+          durationS: 10.07
+        - text: Return like eagles, he told him, or you will be too late for the day.
+          atS: 50.97
+          durationS: 4.26
+        - text: Then he waited.
+          atS: 55.83
+          durationS: 1.27
+        - text: Hour after hour, the Texan camp sat still.
+          atS: 57.79
+          durationS: 3.6
+        - text: Across the field, the Mexican officers decided no attack was coming.
+          atS: 62
+          durationS: 4.02
+        - text: They took their afternoon siesta.
+          atS: 66.45
+          durationS: 1.96
+        - text: Muskets were stacked.
+          atS: 68.66
+          durationS: 1.33
+        - text: At about four o'clock, Houston formed his men, and they walked forward through the tall grass, silently, holding their fire.
+          atS: 70.51
+          durationS: 7.07
+        - text: When they were close, two small cannon, the Twin Sisters, fired point blank into the barricade.
+          atS: 77.96
+          durationS: 5.9
+        - text: The Texans charged, shouting Remember the Alamo.
+          atS: 84.24
+          durationS: 3.83
+        - text: The battle took about eighteen minutes.
+          atS: 88.51
+          durationS: 2.26
+        - text: Look at the plain again.
+          atS: 90.89
+          durationS: 1.29
+        - text: All that waiting, for eighteen minutes.
+          atS: 92.3
+          durationS: 2.68
+        - text: And Texas was a country.
+          atS: 95.22
+          durationS: 2.16

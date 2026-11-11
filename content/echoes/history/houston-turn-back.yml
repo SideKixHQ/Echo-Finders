@@ -9,7 +9,7 @@ at: { lat: 29.74975, lng: -95.08500 }
 triggerRadiusKm: 0.1
 category: history
 format: short
-durationS: 92
+durationS: 85
 visibility: position-only
 certainty: documented
 minAge: 0
@@ -107,3 +107,77 @@ sources:
     url: https://archive.org/details/texasaguidetothe00writmiss
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-turn-back/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85.1
+    audioBytes: 1362172
+    transcript:
+      totalS: 85.1
+      lines:
+        - text: Look west, toward the trees by the bayou.
+          atS: 0
+          durationS: 3.03
+        - text: The Texans camped there, in the curve of the water.
+          atS: 3.84
+          durationS: 3.13
+        - text: The day after the battle, a prisoner was walked into that camp in a private soldier's clothes.
+          atS: 8.09
+          durationS: 5.64
+        - text: He was the President of Mexico.
+          atS: 14.34
+          durationS: 2.3
+        - text: The battle had ended on the evening of the twenty first of April, eighteen thirty six.
+          atS: 17.94
+          durationS: 5.27
+        - text: Santa Anna was not among the prisoners.
+          atS: 23.72
+          durationS: 3.31
+        - text: The next day, a man was found hiding in the weeds.
+          atS: 27.41
+          durationS: 3.03
+        - text: He wore a tattered, mud stained private's uniform.
+          atS: 30.88
+          durationS: 3.08
+        - text: Dressed like that, he was taken to General Houston.
+          atS: 34.34
+          durationS: 2.96
+        - text: Sam Houston had been badly wounded in the battle.
+          atS: 38
+          durationS: 3.09
+        - text: He was lying under an oak tree.
+          atS: 41.41
+          durationS: 1.95
+        - text: So the president of a nation stood in front of a wounded man on the ground.
+          atS: 43.75
+          durationS: 4.24
+        - text: And lying there, Houston dictated the terms.
+          atS: 48.59
+          durationS: 3.22
+        - text: Every Mexican army in Texas would withdraw, below the Rio Grande.
+          atS: 52.5
+          durationS: 4.56
+        - text: Far to the east, families who had run from the war were still out on the prairie, in the rain.
+          atS: 57.57
+          durationS: 5.29
+        - text: One of them, Dilue Harris, later remembered a man on horseback, waving his hat.
+          atS: 63.25
+          durationS: 6.13
+        - text: Turn back, he was shouting.
+          atS: 70.08
+          durationS: 2.22
+        - text: The Texas army has whipped the Mexican army.
+          atS: 72.81
+          durationS: 2.62
+        - text: No danger.
+          atS: 75.6
+          durationS: 0.72
+        - text: Turn back.
+          atS: 76.41
+          durationS: 0.94
+        - text: Look at the trees again, where the prisoner was brought in.
+          atS: 77.67
+          durationS: 3.22
+        - text: And all over Texas, people turned around.
+          atS: 81.84
+          durationS: 3.24

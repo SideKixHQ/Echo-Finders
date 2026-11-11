@@ -10,7 +10,7 @@ triggerRadiusKm: 0.15
 voice: wC1005J19tvhoqqC2hkf
 category: legend
 format: short
-durationS: 86
+durationS: 73
 visibility: position-only
 certainty: legend
 certaintyNote: >-
@@ -99,3 +99,68 @@ sources:
     url: https://archive.org/details/houstonahistory00writmiss
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/houston-the-thing-in-freedmantown/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 72.5
+    audioBytes: 1161551
+    transcript:
+      totalS: 72.5
+      lines:
+        - text: Look along these streets.
+          atS: 0
+          durationS: 1.6
+        - text: In the eighteen eighties, this was Freedmantown, built by people who had been freed from slavery.
+          atS: 2.04
+          durationS: 5.42
+        - text: This is a legend.
+          atS: 7.79
+          durationS: 1.13
+        - text: Nobody ever proved there was anything here at all.
+          atS: 9.16
+          durationS: 2.71
+        - text: On the twenty third of September, eighteen eighty four, the Evening Journal reported that Freedmantown was in a ferment.
+          atS: 12.47
+          durationS: 6.68
+        - text: Something had been seen at night.
+          atS: 19.66
+          durationS: 1.59
+        - text: The paper called it the Thing.
+          atS: 21.45
+          durationS: 1.97
+        - text: It looked, the paper said, like a skeleton dressed in a mother hubbard, a long loose house dress, with the bones shining through.
+          atS: 23.75
+          durationS: 8.23
+        - text: The next day, the paper said the Thing had come again.
+          atS: 32.59
+          durationS: 3.23
+        - text: It was an election autumn, and the paper wrote that someone had told a newspaper in Saint Louis the whole ghost was a political trick, to scare voters.
+          atS: 36.33
+          durationS: 8.53
+        - text: Then the shooting started.
+          atS: 45.67
+          durationS: 1.57
+        - text: The paper reported that several hundred shots were fired by something called the Anti Ghost Club.
+          atS: 47.68
+          durationS: 5.26
+        - text: A deputy named Glass posted his men around the gullies and the alleys.
+          atS: 53.55
+          durationS: 4.04
+        - text: A militia company held the bridge.
+          atS: 58.1
+          durationS: 1.94
+        - text: And the paper's last word on it was this.
+          atS: 60.42
+          durationS: 2.34
+        - text: The Thing remains a mystery.
+          atS: 63.88
+          durationS: 1.78
+        - text: Look down the street, after dark.
+          atS: 66.17
+          durationS: 2.28
+        - text: It has never been explained.
+          atS: 68.95
+          durationS: 1.48
+        - text: It has also never been caught.
+          atS: 70.81
+          durationS: 1.73

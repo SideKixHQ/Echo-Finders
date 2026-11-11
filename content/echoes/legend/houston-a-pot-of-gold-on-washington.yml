@@ -10,7 +10,7 @@ triggerRadiusKm: 0.04
 voice: wC1005J19tvhoqqC2hkf
 category: legend
 format: short
-durationS: 80
+durationS: 77
 visibility: position-only
 certainty: legend
 certaintyNote: >-
@@ -87,3 +87,71 @@ sources:
     url: https://archive.org/details/houstonahistory00writmiss
     retrievedAt: "2026-11-10"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/houston-a-pot-of-gold-on-washington/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 76.6
+    audioBytes: 1226335
+    transcript:
+      totalS: 76.6
+      lines:
+        - text: Stand on this corner, where Houston Avenue meets Washington Avenue.
+          atS: 0
+          durationS: 4
+        - text: Ordinary pavement.
+          atS: 4.33
+          durationS: 1.26
+        - text: Traffic.
+          atS: 5.77
+          durationS: 0.7
+        - text: Most of what you are about to hear is legend, and nobody has proved it.
+          atS: 6.91
+          durationS: 3.73
+        - text: Except for one thing that happened here.
+          atS: 10.96
+          durationS: 2
+        - text: For generations, the country around Houston was full of treasure tales.
+          atS: 13.2
+          durationS: 4.25
+        - text: The pirate Jean Lafitte had sailed these waters, and people believed his men had hidden chests of coins.
+          atS: 18.15
+          durationS: 6.55
+        - text: Others said there was Spanish gold, and Mexican gold.
+          atS: 25.2
+          durationS: 3.74
+        - text: One story said the gold of General Santa Anna himself lay buried somewhere in the salt marshes along the San Bernard River.
+          atS: 29.76
+          durationS: 7.01
+        - text: That story sent many people out digging.
+          atS: 37.72
+          durationS: 2.26
+        - text: None of them found it.
+          atS: 40.26
+          durationS: 1.2
+        - text: One lake was drained and dug out twice, looking for gold.
+          atS: 42.27
+          durationS: 3.74
+        - text: Along the shore of San Jacinto Bay, where pirate ships once anchored, great holes were left in the ground by treasure hunters.
+          atS: 47.12
+          durationS: 7.27
+        - text: And then, in nineteen twenty nine, workmen were putting up a filling station, at this corner.
+          atS: 54.83
+          durationS: 5.63
+        - text: They dug up a pot of gold.
+          atS: 61.07
+          durationS: 1.57
+        - text: It was estimated at two thousand dollars.
+          atS: 63.02
+          durationS: 2.39
+        - text: The record does not say who buried it, or when.
+          atS: 65.79
+          durationS: 2.84
+        - text: The find brought all the old stories back.
+          atS: 69.24
+          durationS: 2.59
+        - text: Look down at the pavement.
+          atS: 72.53
+          durationS: 1.43
+        - text: For once, the ground paid out.
+          atS: 74.28
+          durationS: 2.3
