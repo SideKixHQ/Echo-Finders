@@ -1,0 +1,53 @@
+# A suggested drive (proposed 2026-11-11, for James's approval).
+#
+# Home ground, and the densest stretch of road in the library: a slow loop of downtown
+# Wilmington (Water Street, Market Street, Orange Street, Third Street from Ann to Davis),
+# then out Oleander Drive past Independence Mall and Airlie Gardens, over the causeway to
+# Wrightsville Beach, down Lumina Avenue to the south end and up to Shell Island, and home
+# by Eastwood Road and Market Street. Every echo it passes is approved.
+#
+# Downtown it is a crawl on purpose: Market Street between the river and Fifth carries more
+# echoes than any road we have. The beach is the stop.
+#
+# Waypoint positions are road nodes from Overture Maps 2026-09-23.0 (transportation/segment,
+# OpenStreetMap contributors, ODbL), picked at the corner or entrance nearest the landmark or
+# echo each is named for; the landmarks are the echoes' own positions in content/echoes.
+id: wilmington-wrightsville-beach-loop
+mode: driving
+name: "Wilmington to Wrightsville Beach and back"
+area: Cape Fear Coast
+# The road the line on the map follows between waypoints (`scripts/build-route-paths.py`).
+follows: Oleander Drive
+
+origin:
+  name: Wilmington, North Carolina
+  at: { lat: 34.23979, lng: -77.94958 }
+  timeZone: America/New_York
+
+destination:
+  name: Wilmington, North Carolina
+  at: { lat: 34.23979, lng: -77.94958 }
+  timeZone: America/New_York
+
+# About 51 km of town and beach road, much of it at 25 to 35 mph, plus half an hour on the
+# sand at Lumina and a stop at Airlie Gardens. An estimate.
+durationS: 9000
+
+waypoints:
+  - { name: Cotton Exchange, at: { lat: 34.23979, lng: -77.94958 } }
+  - { name: Water and Market, at: { lat: 34.23535, lng: -77.94985 } }
+  - { name: Market and Fifth, at: { lat: 34.2360, lng: -77.9430 } }
+  - { name: Fifth and Orange, at: { lat: 34.2338, lng: -77.9425 } }
+  - { name: Water and Orange, at: { lat: 34.2326, lng: -77.9492 } }
+  - { name: Water and Ann, at: { lat: 34.2313, lng: -77.9494 } }
+  - { name: Third and Ann, at: { lat: 34.2316, lng: -77.9460 } }
+  - { name: Third and Davis, at: { lat: 34.2480, lng: -77.9472 } }
+  - { name: Oleander Drive, at: { lat: 34.2204, lng: -77.9100 } }
+  - { name: Independence Mall, at: { lat: 34.2074, lng: -77.8631 } }
+  - { name: Airlie Gardens, at: { lat: 34.2105, lng: -77.8355 }, dwellS: 900 }
+  - { name: Wrightsville Beach, at: { lat: 34.1944, lng: -77.8053 }, dwellS: 1800 }
+  - { name: South End, at: { lat: 34.1870, lng: -77.8110 } }
+  - { name: Shell Island, at: { lat: 34.2347, lng: -77.7758 } }
+  - { name: Eastwood Road, at: { lat: 34.2318, lng: -77.8380 } }
+  - { name: Market Street, at: { lat: 34.2411, lng: -77.8930 } }
+  - { name: Cotton Exchange, at: { lat: 34.23979, lng: -77.94958 } }

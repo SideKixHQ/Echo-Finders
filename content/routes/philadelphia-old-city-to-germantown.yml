@@ -1,0 +1,48 @@
+# A suggested drive (proposed 2026-11-11, for James's approval).
+#
+# Philadelphia from the Revolution to the Battle of Germantown. Old City first: Walnut,
+# Chestnut past Independence Hall, Sixth, Arch to Christ Church, then Market Street to City
+# Hall. Out the Benjamin Franklin Parkway to Eastern State Penitentiary and the Art Museum,
+# up Kelly Drive along the Schuylkill to East Falls, and by Germantown Avenue to Cliveden,
+# where the battle was fought round a stone house.
+#
+# Waypoint positions are road nodes from Overture Maps 2026-09-23.0 (transportation/segment,
+# OpenStreetMap contributors, ODbL), picked at the corner or entrance nearest the landmark or
+# echo each is named for; the landmarks are the echoes' own positions in content/echoes.
+id: philadelphia-old-city-to-germantown
+mode: driving
+name: "Philadelphia: Old City to Germantown, by the Parkway and Kelly Drive"
+area: Philadelphia
+# The road the line on the map follows between waypoints (`scripts/build-route-paths.py`).
+follows: Kelly Drive
+
+origin:
+  name: Washington Square, Philadelphia
+  at: { lat: 39.9479, lng: -75.1532 }
+  timeZone: America/New_York
+
+destination:
+  name: Cliveden, Germantown
+  at: { lat: 40.04610, lng: -75.18199 }
+  timeZone: America/New_York
+
+# About 20 km: slow through Old City, quick along the river, and stops at Eastern State and
+# the Art Museum steps. An estimate.
+durationS: 7200
+
+waypoints:
+  - { name: Washington Square, at: { lat: 39.9479, lng: -75.1532 } }
+  - { name: Walnut and Second, at: { lat: 39.94687, lng: -75.14441 } }
+  - { name: Chestnut and Second, at: { lat: 39.94839, lng: -75.14408 } }
+  - { name: Independence Hall, at: { lat: 39.94924, lng: -75.15076 } }
+  - { name: Arch and Sixth, at: { lat: 39.95277, lng: -75.14994 } }
+  - { name: Christ Church, at: { lat: 39.95194, lng: -75.14330 } }
+  - { name: Market and Second, at: { lat: 39.94995, lng: -75.14374 } }
+  - { name: Market and Eleventh, at: { lat: 39.95173, lng: -75.15832 } }
+  - { name: City Hall, at: { lat: 39.95334, lng: -75.16324 } }
+  - { name: Eastern State Penitentiary, at: { lat: 39.96729, lng: -75.17212 }, dwellS: 1200 }
+  - { name: Art Museum, at: { lat: 39.96469, lng: -75.17922 }, dwellS: 600 }
+  - { name: East Falls, at: { lat: 40.00943, lng: -75.19527 } }
+  - { name: Grumblethorpe, at: { lat: 40.03196, lng: -75.16854 } }
+  - { name: Germantown White House, at: { lat: 40.03374, lng: -75.17163 } }
+  - { name: Cliveden, at: { lat: 40.04610, lng: -75.18199 } }

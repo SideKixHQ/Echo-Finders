@@ -1,0 +1,57 @@
+# A suggested drive (proposed 2026-11-11, for James's approval).
+#
+# Manhattan top to bottom, with the traffic: from the Schomburg Center down Lenox Avenue,
+# along 125th Street past the Apollo, to Grant's Tomb, down Riverside Drive and Central Park
+# West to the Dakota, by Columbus Circle and Seventh Avenue to Times Square, along 42nd
+# Street to Fifth Avenue and the Library, down Fifth to Madison Square, then Broadway by
+# Union Square and SoHo to City Hall, Bowling Green and Fraunces Tavern, ending at the
+# Seaport.
+#
+# Run north to south because Seventh Avenue, Fifth Avenue and Broadway below Columbus Circle
+# only go that way.
+#
+# Waypoint positions are road nodes from Overture Maps 2026-09-23.0 (transportation/segment,
+# OpenStreetMap contributors, ODbL), picked at the corner or entrance nearest the landmark or
+# echo each is named for; the landmarks are the echoes' own positions in content/echoes.
+id: manhattan-harlem-to-the-seaport
+mode: driving
+name: "Manhattan: Harlem to the Seaport, by Broadway"
+area: New York
+# The road the line on the map follows between waypoints (`scripts/build-route-paths.py`).
+follows: Central Park West
+
+origin:
+  name: Harlem, New York
+  at: { lat: 40.81424, lng: -73.94086 }
+  timeZone: America/New_York
+
+destination:
+  name: South Street Seaport, New York
+  at: { lat: 40.70744, lng: -74.00407 }
+  timeZone: America/New_York
+
+# About 19 km of Manhattan, which at midday is well over an hour, and a stop at Grant's
+# Tomb. An estimate.
+durationS: 7200
+
+waypoints:
+  - { name: Schomburg Center, at: { lat: 40.81424, lng: -73.94086 } }
+  - { name: Lenox Avenue and 126th Street, at: { lat: 40.80898, lng: -73.94451 } }
+  - { name: Apollo Theater, at: { lat: 40.80959, lng: -73.94979 } }
+  - { name: Grant's Tomb, at: { lat: 40.81343, lng: -73.96244 }, dwellS: 600 }
+  - { name: Riverside Drive and 93rd Street, at: { lat: 40.79400, lng: -73.97630 } }
+  - { name: Central Park West and 86th Street, at: { lat: 40.78540, lng: -73.96927 } }
+  - { name: The Dakota, at: { lat: 40.77623, lng: -73.97596 } }
+  - { name: Columbus Circle, at: { lat: 40.76781, lng: -73.98227 } }
+  - { name: Seventh Avenue and 55th Street, at: { lat: 40.76490, lng: -73.98048 } }
+  - { name: Times Square, at: { lat: 40.75671, lng: -73.98646 } }
+  - { name: Fifth Avenue and 42nd Street, at: { lat: 40.75282, lng: -73.98138 } }
+  - { name: Madison Square, at: { lat: 40.74136, lng: -73.98914 } }
+  - { name: Union Square, at: { lat: 40.73479, lng: -73.99074 } }
+  - { name: Broadway and Houston Street, at: { lat: 40.72538, lng: -73.99681 } }
+  - { name: Broadway and Canal Street, at: { lat: 40.71940, lng: -74.00188 } }
+  - { name: Foley Square, at: { lat: 40.71637, lng: -74.00122 } }
+  - { name: City Hall, at: { lat: 40.71308, lng: -74.00719 } }
+  - { name: Bowling Green, at: { lat: 40.70458, lng: -74.01329 } }
+  - { name: Fraunces Tavern, at: { lat: 40.70347, lng: -74.01159 } }
+  - { name: South Street Seaport, at: { lat: 40.70744, lng: -74.00407 } }

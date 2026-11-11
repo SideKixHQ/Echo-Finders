@@ -1,0 +1,43 @@
+# A suggested drive (proposed 2026-11-11, for James's approval).
+#
+# Where the MVP drive ends, another begins: Southport's waterfront (Bay Street, Rhett Street,
+# Nash Street), then out NC 211 and NC 133 to Oak Island, east along Caswell Beach Road to
+# the Oak Island Lighthouse and the gate of Fort Caswell, and west the length of the island to
+# the Hurricane Hazel marker, the waterway shore and Ocean Crest Pier.
+#
+# It pairs with wilmington-to-southport: take the ferry over, then this.
+#
+# Waypoint positions are road nodes from Overture Maps 2026-09-23.0 (transportation/segment,
+# OpenStreetMap contributors, ODbL), picked at the corner or entrance nearest the landmark or
+# echo each is named for; the landmarks are the echoes' own positions in content/echoes.
+id: southport-to-oak-island
+mode: driving
+name: "Southport to Oak Island, by Caswell Beach and the lighthouse"
+area: Cape Fear Coast
+# The road the line on the map follows between waypoints (`scripts/build-route-paths.py`).
+follows: Caswell Beach Road
+
+origin:
+  name: Southport, North Carolina
+  at: { lat: 33.91650, lng: -78.02295 }
+  timeZone: America/New_York
+
+destination:
+  name: Oak Island, North Carolina
+  at: { lat: 33.91382, lng: -78.14696 }
+  timeZone: America/New_York
+
+# About 34 km of coast road and a stop at the lighthouse. An estimate.
+durationS: 5400
+
+waypoints:
+  - { name: Southport Yacht Basin, at: { lat: 33.91650, lng: -78.02295 } }
+  - { name: Bay and Howe, at: { lat: 33.91704, lng: -78.01902 } }
+  - { name: Bay and Rhett, at: { lat: 33.91895, lng: -78.01444 } }
+  - { name: Nash and Rhett, at: { lat: 33.92091, lng: -78.01593 } }
+  - { name: West Nash Street, at: { lat: 33.91910, lng: -78.02089 } }
+  - { name: Oak Island Lighthouse, at: { lat: 33.89271, lng: -78.03550 }, dwellS: 1200 }
+  - { name: Fort Caswell, at: { lat: 33.89121, lng: -78.02849 } }
+  - { name: Hurricane Hazel marker, at: { lat: 33.91187, lng: -78.07340 } }
+  - { name: East Yacht Drive, at: { lat: 33.92458, lng: -78.13974 } }
+  - { name: Ocean Crest Pier, at: { lat: 33.91382, lng: -78.14696 } }

@@ -1,0 +1,55 @@
+# A suggested drive (proposed 2026-11-11, for James's approval).
+#
+# The Charleston peninsula at a crawl, then out across the harbour. From the Aiken Rhett
+# House down Meeting Street past Mother Emanuel and Marion Square, through the College and
+# the Old Jail, down Church Street to the Battery and White Point Garden, back up by Broad
+# Street and East Bay, then over the Ravenel Bridge to Patriots Point and along Ben Sawyer
+# Boulevard to Sullivan's Island: Fort Moultrie, the lighthouse and Breach Inlet.
+#
+# The peninsula carries nearly all of its echoes; the bridge and the island are the
+# breathing space, and Fort Moultrie is the stop.
+#
+# Waypoint positions are road nodes from Overture Maps 2026-09-23.0 (transportation/segment,
+# OpenStreetMap contributors, ODbL), picked at the corner or entrance nearest the landmark or
+# echo each is named for; the landmarks are the echoes' own positions in content/echoes.
+id: charleston-to-sullivans-island
+mode: driving
+name: "Charleston to Sullivan's Island, by the Battery and Fort Moultrie"
+area: Charleston
+# The road the line on the map follows between waypoints (`scripts/build-route-paths.py`).
+follows: Ben Sawyer Boulevard
+
+origin:
+  name: Charleston, South Carolina
+  at: { lat: 32.7916, lng: -79.9351 }
+  timeZone: America/New_York
+
+destination:
+  name: Isle of Palms, South Carolina
+  at: { lat: 32.7810, lng: -79.8050 }
+  timeZone: America/New_York
+
+# About 33 km: forty minutes on the peninsula's narrow one way streets, the bridge, and
+# half an hour at Fort Moultrie. An estimate.
+durationS: 7200
+
+waypoints:
+  - { name: Aiken Rhett House, at: { lat: 32.7916, lng: -79.9351 } }
+  - { name: Calhoun and Meeting, at: { lat: 32.78684, lng: -79.93396 } }
+  - { name: George Street, at: { lat: 32.7834, lng: -79.9362 } }
+  - { name: Old Jail, at: { lat: 32.7786, lng: -79.9374 } }
+  - { name: Queen and Meeting, at: { lat: 32.7785, lng: -79.9311 } }
+  - { name: Meeting and Market, at: { lat: 32.7807, lng: -79.9314 } }
+  - { name: Church and Cumberland, at: { lat: 32.7796, lng: -79.9301 } }
+  - { name: Church and Tradd, at: { lat: 32.7746, lng: -79.9293 } }
+  - { name: Church and Water, at: { lat: 32.7731, lng: -79.9291 } }
+  - { name: East Battery, at: { lat: 32.7712, lng: -79.9280 } }
+  - { name: White Point Garden, at: { lat: 32.7699, lng: -79.9304 }, dwellS: 600 }
+  - { name: Meeting and Broad, at: { lat: 32.7767, lng: -79.9309 } }
+  - { name: Broad and East Bay, at: { lat: 32.7769, lng: -79.9273 } }
+  - { name: East Bay and Queen, at: { lat: 32.7786, lng: -79.9277 } }
+  - { name: Patriots Point, at: { lat: 32.79059, lng: -79.90444 } }
+  - { name: Fort Moultrie, at: { lat: 32.7593, lng: -79.8576 }, dwellS: 1800 }
+  - { name: Sullivan's Island Lighthouse, at: { lat: 32.7583, lng: -79.8431 } }
+  - { name: Breach Inlet, at: { lat: 32.7753, lng: -79.8137 } }
+  - { name: Isle of Palms, at: { lat: 32.7810, lng: -79.8050 } }

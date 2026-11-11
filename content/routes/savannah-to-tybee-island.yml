@@ -1,0 +1,51 @@
+# A suggested drive (proposed 2026-11-11, for James's approval).
+#
+# Savannah's squares, its river and its road to the sea. From Franklin Square along Bay
+# Street to City Hall, down Bull Street through Wright, Chippewa, Madison and Monterey
+# squares to Forsyth Park, back up Abercorn, down onto River Street to the Waving Girl and
+# the Pirates' House, then out the Islands Expressway by Bonaventure Cemetery and U.S. 80 to
+# Fort Pulaski, the Tybee light and the pier.
+#
+# Bull Street is the reason to take it: a square every block, and an echo in most of them.
+#
+# Waypoint positions are road nodes from Overture Maps 2026-09-23.0 (transportation/segment,
+# OpenStreetMap contributors, ODbL), picked at the corner or entrance nearest the landmark or
+# echo each is named for; the landmarks are the echoes' own positions in content/echoes.
+id: savannah-to-tybee-island
+mode: driving
+name: "Savannah to Tybee Island, by Bonaventure and Fort Pulaski"
+area: Savannah
+# The road the line on the map follows between waypoints (`scripts/build-route-paths.py`).
+follows: Islands Expressway
+
+origin:
+  name: Savannah, Georgia
+  at: { lat: 32.0811, lng: -81.0965 }
+  timeZone: America/New_York
+
+destination:
+  name: Tybee Island, Georgia
+  at: { lat: 31.9932, lng: -80.8467 }
+  timeZone: America/New_York
+
+# About 42 km: half an hour round the squares, forty minutes to the beach, and stops at
+# Bonaventure, Fort Pulaski and the lighthouse. An estimate.
+durationS: 10800
+
+waypoints:
+  - { name: Franklin Square, at: { lat: 32.0811, lng: -81.0965 } }
+  - { name: City Hall, at: { lat: 32.0809, lng: -81.0912 } }
+  - { name: Wright Square, at: { lat: 32.07816, lng: -81.09182 } }
+  - { name: Chippewa Square, at: { lat: 32.07674, lng: -81.09277 } }
+  - { name: Madison Square, at: { lat: 32.07374, lng: -81.09346 } }
+  - { name: Monterey Square, at: { lat: 32.07151, lng: -81.09430 } }
+  - { name: Forsyth Park, at: { lat: 32.0703, lng: -81.0952 } }
+  - { name: Abercorn and Oglethorpe, at: { lat: 32.07586, lng: -81.09065 } }
+  - { name: Abercorn and Bay, at: { lat: 32.0809, lng: -81.0889 } }
+  - { name: River Street, at: { lat: 32.08129, lng: -81.08969 } }
+  - { name: Waving Girl, at: { lat: 32.07998, lng: -81.08463 } }
+  - { name: Pirates House, at: { lat: 32.0782, lng: -81.0841 } }
+  - { name: Bonaventure Cemetery, at: { lat: 32.0478, lng: -81.0425 }, dwellS: 1800 }
+  - { name: Fort Pulaski, at: { lat: 32.0274, lng: -80.8928 }, dwellS: 1800 }
+  - { name: Tybee Island Light Station, at: { lat: 32.0225, lng: -80.8440 }, dwellS: 900 }
+  - { name: Tybee Pier, at: { lat: 31.9932, lng: -80.8467 } }

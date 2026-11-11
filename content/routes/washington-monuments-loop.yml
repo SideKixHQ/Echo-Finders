@@ -1,0 +1,52 @@
+# A suggested drive (proposed 2026-11-11, for James's approval).
+#
+# The monumental core by car, from Union Station: round the Capitol, along Independence
+# Avenue and Jefferson Drive past the Smithsonian, to the Lincoln Memorial, back by
+# Constitution Avenue and 18th Street to the White House and Lafayette Square, then
+# Pennsylvania Avenue and Penn Quarter (Freedom Plaza, Ford's Theatre, the Patent Office) and
+# home by Constitution Avenue.
+#
+# The memorials themselves stand out on the Mall, out of a car's reach; what this drive
+# passes is the city around them.
+#
+# Waypoint positions are road nodes from Overture Maps 2026-09-23.0 (transportation/segment,
+# OpenStreetMap contributors, ODbL), picked at the corner or entrance nearest the landmark or
+# echo each is named for; the landmarks are the echoes' own positions in content/echoes.
+id: washington-monuments-loop
+mode: driving
+name: "Washington: the Capitol, the Mall and the White House"
+area: Washington, DC
+# The road the line on the map follows between waypoints (`scripts/build-route-paths.py`).
+follows: Constitution Avenue
+
+origin:
+  name: Union Station, Washington, DC
+  at: { lat: 38.8977, lng: -77.0063 }
+  timeZone: America/New_York
+
+destination:
+  name: Union Station, Washington, DC
+  at: { lat: 38.8977, lng: -77.0063 }
+  timeZone: America/New_York
+
+# About 15 km of city driving and a stop at the Lincoln Memorial. An estimate.
+durationS: 5400
+
+waypoints:
+  - { name: Union Station, at: { lat: 38.8977, lng: -77.0063 } }
+  - { name: Capitol, at: { lat: 38.8922, lng: -77.0037 } }
+  - { name: Independence and First, at: { lat: 38.8875, lng: -77.0058 } }
+  - { name: Jefferson Drive, at: { lat: 38.8891, lng: -77.0260 } }
+  - { name: Independence and Seventeenth, at: { lat: 38.8875, lng: -77.0395 } }
+  - { name: Lincoln Memorial, at: { lat: 38.8893, lng: -77.0505 }, dwellS: 1200 }
+  - { name: Constitution and Eighteenth, at: { lat: 38.8923, lng: -77.0420 } }
+  - { name: Eighteenth and E, at: { lat: 38.8962, lng: -77.0417 } }
+  - { name: Lafayette Square, at: { lat: 38.8998, lng: -77.0370 } }
+  - { name: Fifteenth and Pennsylvania, at: { lat: 38.8960, lng: -77.0330 } }
+  - { name: Freedom Plaza, at: { lat: 38.8959, lng: -77.0309 } }
+  - { name: Ford's Theatre, at: { lat: 38.8967, lng: -77.0258 } }
+  - { name: Eighth and F, at: { lat: 38.8973, lng: -77.0230 } }
+  - { name: Sixth and H, at: { lat: 38.8996, lng: -77.0204 } }
+  - { name: Pennsylvania and Seventh, at: { lat: 38.8935, lng: -77.0220 } }
+  - { name: Constitution and Sixth, at: { lat: 38.8922, lng: -77.0199 } }
+  - { name: Union Station, at: { lat: 38.8977, lng: -77.0063 } }
