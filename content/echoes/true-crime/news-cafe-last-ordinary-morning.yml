@@ -56,41 +56,27 @@ trueCrimeReview:
   contentWarning: This echo describes a murder. No violence is described in detail.
 claims:
   - says: "In the summer of nineteen ninety-seven a man came down here most mornings from a house three blocks north."
-    source: 4
+    source: 1
     quote: "Versace was shot to death by serial killer Andrew Cunanan, after the Italian designer returned home from eating breakfast three blocks away at the News Café."
   - says: "In the summer of nineteen ninety-seven a man came down here most mornings from a house three blocks north."
-    source: 5
+    source: 2
     quote: "The fashion designer was returning home from his morning walk to the News Café, where he went to purchase magazines,"
   - says: "On the fifteenth of July he did exactly that, and then he walked home."
-    source: 5
+    source: 2
     quote: "Gianni Versace was murdered on the steps of his Miami Beach mansion, Casa Casuarina , on July 15, 1997. The fashion designer was returning home from his morning walk to the News Café, where he went to purchase magazines,"
   - says: "On the fifteenth of July he did exactly that, and then he walked home."
-    source: 6
+    source: 3
     quote: "Versace was returning home from his morning walk from the News Cafe in 1997 when Andrew Cunanan fatally shot him in the back of the head."
   - says: "His name was Gianni Versace, and this was the last ordinary hour of his life."
-    source: 6
+    source: 3
     quote: "Versace was returning home from his morning walk from the News Cafe in 1997 when Andrew Cunanan fatally shot him in the back of the head."
   - says: "It is three blocks north along the beach side."
-    source: 4
+    source: 1
     quote: "after the Italian designer returned home from eating breakfast three blocks away at the News Café."
   - says: "About six minutes."
-    source: 4
+    source: 1
     quote: "after the Italian designer returned home from eating breakfast three blocks away at the News Café."
 sources:
-  # No URLs yet: these are sources *identified*, not sources retrieved. Fact-check has to
-  # pull each one and replace retrievedAt with the day it was actually read.
-  - title: Andrew Phillip Cunanan — Ten Most Wanted Fugitives case record
-    publisher: Federal Bureau of Investigation
-    retrievedAt: "2026-09-22"
-    rights: public-domain
-  - title: Incident and investigative record, 1116 Ocean Drive, 15 July 1997
-    publisher: Miami Beach Police Department
-    retrievedAt: "2026-09-22"
-    rights: public-domain
-  - title: Medical examiner's report, Gianni Versace
-    publisher: Miami-Dade County Medical Examiner
-    retrievedAt: "2026-09-22"
-    rights: public-domain
   - title: "The Death Of Gianni Versace 17 Years Later"
     publisher: CBS News Miami
     url: https://www.cbsnews.com/miami/news/the-death-of-gianni-versace-17-years-later/

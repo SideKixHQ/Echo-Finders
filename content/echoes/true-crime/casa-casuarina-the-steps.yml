@@ -65,66 +65,54 @@ trueCrimeReview:
   contentWarning: This echo describes a murder. No violence is described in detail.
 claims:
   - says: "On the morning of the fifteenth of July, nineteen ninety-seven, Gianni Versace came back up Ocean Drive carrying his magazines and stopped here to open his own front door."
-    source: 6
+    source: 3
     quote: "Gianni Versace was murdered on the steps of his Miami Beach mansion, Casa Casuarina , on July 15, 1997. The fashion designer was returning home from his morning walk to the News Café, where he went to purchase magazines,"
   - says: "On the morning of the fifteenth of July, nineteen ninety-seven, Gianni Versace came back up Ocean Drive carrying his magazines and stopped here to open his own front door."
-    source: 8
+    source: 5
     quote: "Versace was returning home from his morning walk from the News Cafe in 1997 when Andrew Cunanan fatally shot him in the back of the head."
   - says: "Versace was fifty."
-    source: 7
+    source: 4
     quote: "The designer, 50, had just unlocked the gate of his home after having breakfast at News Café on Ocean Drive"
   - says: "Police said the man who shot him was Andrew Cunanan, already on the FBI's Ten Most Wanted list."
-    source: 4
+    source: 1
     quote: "\"The good thing was we knew within a matter of a couple of hours we were looking for Andrew Cunanan,\" said Carlos Noriega, the former Miami Beach police chief who in 1997 was the lieutenant overseeing the department's homicide unit."
   - says: "Police said the man who shot him was Andrew Cunanan, already on the FBI's Ten Most Wanted list."
-    source: 6
+    source: 3
     quote: "On June 12, 1997, Andrew Cunanan became the 449th addition to the FBI's Ten Most Wanted list."
   - says: "Police said the man who shot him was Andrew Cunanan, already on the FBI's Ten Most Wanted list."
-    source: 8
+    source: 5
     quote: "Versace was returning home from his morning walk from the News Cafe in 1997 when Andrew Cunanan fatally shot him in the back of the head."
   - says: "Eight days later Cunanan was found dead on a houseboat two miles north of where you are standing."
-    source: 5
+    source: 2
     quote: "Eight days later, on July 23, police corned Cunanan inside a houseboat. Rather than surrender, Cunanan shot himself in the head."
   - says: "Eight days later Cunanan was found dead on a houseboat two miles north of where you are standing."
-    source: 7
+    source: 4
     quote: "Cunanan killed himself on a shuttered houseboat about 40 blocks north of the mansion as police closed in."
   - says: "Eight days later Cunanan was found dead on a houseboat two miles north of where you are standing."
-    source: 8
+    source: 5
     quote: "Eight days later, Cunanan, suspected of killing four other people in three states, killed himself on a houseboat in North Miami Beach."
   - says: "By the time he reached Miami Beach, four other people were already dead."
-    source: 4
+    source: 1
     quote: "Before killing Versace, Cunanan – a failing male gigolo – had gone on a cross-country killing spree, taking the lives of four men: Jeffrey Trail, David Madsen, Lee Miglin and William Reese."
   - says: "By the time he reached Miami Beach, four other people were already dead."
-    source: 9
+    source: 6
     quote: "The man who murdered him had killed four other men in the previous months."
   - says: "Jeffrey Trail."
-    source: 4
+    source: 1
     quote: "taking the lives of four men: Jeffrey Trail, David Madsen, Lee Miglin and William Reese."
   - says: "David Madson."
-    source: 6
+    source: 3
     quote: "On April 29, 1997, when David Madson didn't show up at work, police went to his apartment and discovered the body of Jeff Trail rolled up in a carpet."
   - says: "Lee Miglin."
-    source: 4
+    source: 1
     quote: "taking the lives of four men: Jeffrey Trail, David Madsen, Lee Miglin and William Reese."
   - says: "William Reese."
-    source: 4
+    source: 1
     quote: "taking the lives of four men: Jeffrey Trail, David Madsen, Lee Miglin and William Reese."
   - says: "Nobody stands outside the other four."
-    source: 9
+    source: 6
     quote: "The man who murdered him had killed four other men in the previous months."
 sources:
-  - title: Andrew Phillip Cunanan — Ten Most Wanted Fugitives case record
-    publisher: Federal Bureau of Investigation
-    retrievedAt: "2026-09-22"
-    rights: public-domain
-  - title: Incident and investigative record, 1116 Ocean Drive, 15 July 1997
-    publisher: Miami Beach Police Department
-    retrievedAt: "2026-09-22"
-    rights: public-domain
-  - title: Medical examiner's report, Gianni Versace
-    publisher: Miami-Dade County Medical Examiner
-    retrievedAt: "2026-09-22"
-    rights: public-domain
   - title: "The Versace Murder: A South Beach Story Pt. 1"
     publisher: CBS News Miami
     url: https://www.cbsnews.com/miami/news/versace-murder-south-beach/
