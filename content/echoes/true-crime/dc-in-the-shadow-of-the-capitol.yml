@@ -1,0 +1,116 @@
+# Drafted by Claude Code (2026-11-11) for the Washington DC core (Southwest, south of the Mall), second pass, following the six beats in docs/writing-echoes.md (echo-format-v2) and docs/14-true-crime.md.
+# Listening spot: Public sidewalk on the south side of Independence Avenue SW between 7th and 8th Streets, outside the FAA's Orville Wright Federal Building, with the Capitol dome in view to the east.
+# Position: the White House Historical Association puts the Yellow House on the block bounded by 7th and 8th Streets, B Street (now Independence Avenue) and Maryland Avenue, where the Orville Wright Federal Building stands; the pin is on that block's Independence Avenue sidewalk (high confidence on the block; the house's exact footprint is not known).
+id: dc-in-the-shadow-of-the-capitol
+title: "In the Shadow of the Capitol"
+summary: "In 1841 Solomon Northup, a free New Yorker, woke in chains in a slave jail on this block. The dealer he later accused was acquitted."
+place: "Site of the Yellow House slave pen, Independence Avenue SW between 7th and 8th Streets, Washington, D.C."
+at: { lat: 38.88745, lng: -77.02290 }
+triggerRadiusKm: 0.05
+category: true-crime
+format: short
+durationS: 98
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.75
+tags: [washington, dc-core, southwest, slavery, solomon-northup, yellow-house, kidnapping, 1841]
+teaser: "From the yard of this jail, you could see the Capitol."
+script: |
+  Look at the long federal office building on this block, between Seventh and Eighth Streets. Then turn east, and find the Capitol dome.
+
+  In eighteen forty one, on this block, stood a house that looked like a quiet private residence. Painted yellow, set back behind poplar trees. It was a jail.
+
+  Solomon Northup was a free man from New York. He played the violin. Two men offered him work with a circus, and brought him to Washington. They arrived the evening before President Harrison's funeral. The next day, they walked with him around the Capitol grounds, and bought him drinks.
+
+  By evening, he was very ill. In the night, someone led him out into the street, towards a light in a window. That is the last thing he remembered.
+
+  He woke alone, in the dark, in chains. His money and his free papers were gone. He was in a cellar here, in a slave pen run by William Williams. A slave dealer named James Burch told him he was his slave, and would be sent to New Orleans.
+
+  He was. Northup spent twelve years enslaved in Louisiana before he was freed, in eighteen fifty three.
+
+  On his way home, he came back through Washington, and had Burch arrested for kidnapping. Burch was acquitted. Northup wrote that a human tribunal had permitted him to escape.
+
+  Turn east again, to the dome. Northup described this view himself.
+
+  A slave pen, he wrote, within the very shadow of the Capitol.
+pronunciations:
+  - written: Northup
+    say: NOR-thup
+detail: >-
+  Conviction status: alleged. Burch was charged with kidnapping in Washington in January 1853 and discharged; Northup's own book records the hearing and calls it an acquittal. The two men who brought him to Washington are not named in the script. Nobody named is alive. The house's appearance, the poplar trees and the site are from the White House Historical Association (Jeff Forret); the drink, the night, the waking, the dealer, the view of the Capitol and the hearing are from Northup's narrative of 1853. The Association says he was drugged and kidnapped from the National Hotel; Northup calls it Gadsby's Hotel, so the script names neither. Told without the beatings in the pen.
+editorial: draft
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: alleged
+  reviewedBy: "TODO: a named human, before this can leave draft (docs/14-true-crime.md)."
+  reviewedAt: "2026-11-11"
+  contentWarning: "This echo concerns the kidnapping of a free man into slavery in 1841. Violence is not described."
+claims:
+  - says: "Look at the long federal office building on this block, between Seventh and Eighth Streets."
+    source: 1
+    quote: "sat where today’s passersby find the Federal Aviation Administration’s Orville Wright Federal Building, across the street from the Smithsonian’s Hirshhorn Museum."
+  - says: "In eighteen forty one, on this block, stood a house that looked like a quiet private residence."
+    source: 1
+    quote: "Looking like “a quiet private residence” from the outside, its innocuous façade disguised the trauma experienced by those imprisoned within its walls."
+  - says: "Painted yellow, set back behind poplar trees. It was a jail."
+    source: 1
+    quote: "From the street, the Yellow House sat back from the road and was partially obscured by poplar trees."
+  - says: "He played the violin."
+    source: 2
+    quote: "playing on the violin"
+  - says: "Two men offered him work with a circus, and brought him to Washington. They arrived the evening before President Harrison's funeral."
+    source: 2
+    quote: "arrived just at nightfall, the evening previous to the funeral of General Harrison"
+  - says: "The next day, they walked with him around the Capitol grounds, and bought him drinks."
+    source: 2
+    quote: "Capitol, and walked a long time about the grounds."
+  - says: "and bought him drinks"
+    source: 2
+    quote: "drinking saloons, and called for licpior."
+  - says: "He woke alone, in the dark, in chains. His money and his free papers were gone."
+    source: 2
+    quote: "that my nutney and free pai)ers were also gone !"
+  - says: "By evening, he was very ill."
+    source: 2
+    quote: "I felt extn-mely ill."
+  - says: "In the night, someone led him out into the street, towards a light in a window. That is the last thing he remembered."
+    source: 2
+    quote: "Going towards the light, which I imagined proceed- ed from a physician's office, and which seemed tore- cede as I advanced, is the last glimmering recollec- tion I can now recall."
+  - says: "a slave pen run by William Williams"
+    source: 1
+    quote: "William H. Williams’ infamous private slave jail, dubbed the Yellow House"
+  - says: "Northup spent twelve years enslaved in Louisiana before he was freed, in eighteen fifty three."
+    source: 2
+    quote: "rescued in 1853"
+  - says: "He was in a cellar here, in a slave pen run by William Williams."
+    source: 1
+    quote: "After being drugged and kidnapped from the National Hotel on Pennsylvania Avenue, Northup regained consciousness enchained in the Yellow House’s basement dungeon."
+  - says: "A slave dealer named James Burch told him he was his slave, and would be sent to New Orleans."
+    source: 2
+    quote: "He answered that I was his slave — that he had bought me, and that he was about to send me to Xew-Orleans."
+  - says: "He came back through Washington, and had Burch arrested for kidnapping."
+    source: 2
+    quote: "against James II. Ihircli, for kidnapping and selling me into slavery. He was arrested upon a warrant"
+  - says: "Burch was acquitted. Northup wrote that a human tribunal had permitted him to escape."
+    source: 2
+    quote: "He was acquitted, in the manner, and by such ineans as have been described. A human tribunal has per- mitted him to escape"
+  - says: "A slave pen, he wrote, within the very shadow of the Capitol."
+    source: 2
+    quote: "A slave pen within the very sliadow of the Capitol!"
+  - says: "Northup described this view himself."
+    source: 2
+    quote: "within jtlain sight of this same house, looking down iVom its com- mandlng height u})ou it, M'as the Ca])itol."
+sources:
+  - title: "Presidents, Vice Presidents, and Washington's Most Notorious Slave Pen"
+    publisher: "White House Historical Association (Jeff Forret)"
+    url: https://www.whitehousehistory.org/presidents-vice-presidents-and-washingtons-most-notorious-slave-pen
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Twelve Years a Slave: Narrative of Solomon Northup (Auburn: Derby and Miller, 1853)"
+    publisher: "Internet Archive"
+    url: https://archive.org/stream/twelveyearslave00nort/twelveyearslave00nort_djvu.txt
+    retrievedAt: "2026-11-11"
+    rights: public-domain

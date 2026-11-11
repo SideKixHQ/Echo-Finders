@@ -1,0 +1,97 @@
+# Drafted by Claude Code (2026-11-11) for the Washington DC core (President's Park South), second pass, following the six beats in docs/writing-echoes.md (echo-format-v2). Told as legend, male narrator.
+# Listening spot: Public sidewalk on E Street NW at the south fence of the White House grounds, looking north across the South Lawn to the house.
+# Position: the south fence line on E Street, centred on the house (38.89590, -77.03650); about 85 m north of the Zero Milestone echo and 300 m from the north fence echo, each on a different subject (medium confidence; the sidewalk is sometimes closed for security).
+id: dc-the-knight-of-the-feather-duster
+title: "The Knight of the Feather Duster"
+summary: "Lincoln is the most famous ghost in the White House. The legend may have started with a footman who dusted the place for thirty years."
+place: "White House, from the south fence on E Street NW, Washington, D.C."
+at: { lat: 38.89590, lng: -77.03650 }
+triggerRadiusKm: 0.06
+category: legend
+format: short
+durationS: 99
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A legend, labelled as one in the script. Jerry Smith, his work and his stories are history (White House Historical Association; Washington Times obituary, 1904). That the Lincoln ghost story began with him is the Association's suggestion and is told as "possibly". The sightings are claims, and the script says so.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [washington, dc-core, white-house, ghosts, lincoln, jerry-smith]
+teaser: "The most famous ghost in America may owe everything to a man with a duster."
+script: |
+  Look across the lawn at the White House, at the windows of the upper floor. Somewhere up there, people say, Abraham Lincoln still walks.
+
+  He is the most famous ghost in the most famous house in America. So where did the story come from?
+
+  Possibly, from a man with a feather duster.
+
+  Jerry Smith came to work here in the time of President Grant. He stayed for about thirty five years. Footman, butler, cook, doorman, and official duster. Reporters called him the Knight of the Feather Duster.
+
+  On a slow news day, they knew where to find him. Jerry had a fund of ghost stories. He believed this house was haunted by the spirits of all the departed Presidents, and that the devil lived in the attic. He had to pass through that attic to raise the flag, and he was afraid of it.
+
+  The noises up there turned out to be rats. The devil was a tale to keep Grant's daughter Nellie and her friends from playing in the attic.
+
+  But Jerry said he had seen the ghosts of Lincoln, Grant and McKinley. They tried to speak to him, he said. All they could manage was a buzzing sound.
+
+  This is a legend. Nobody has ever proved a word of it. But it outlived him. In the years after, a First Lady and a Queen of the Netherlands both said they had seen Lincoln too.
+
+  Look up at the windows again.
+
+  If Lincoln is up there, he may owe it to the man with the duster.
+detail: >-
+  Told as legend. The Association says the Lincoln legend "may have emanated" from Smith's stories; the script keeps that hedge. The Washington Times obituary (26 July 1904) says he first came to the White House in 1873 and that he feared the old attic, which he "stoutly affirmed was inhabited by the ghosts of departed statesmen". The Association says Grace Coolidge and Queen Wilhelmina "claimed" to have seen Lincoln; the script does not name them.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "He is the most famous ghost in the most famous house in America."
+    source: 1
+    quote: "When it comes to White House spirits, Abraham Lincoln’s ghost is the most famous of them all."
+  - says: "Possibly, from a man with a feather duster."
+    source: 1
+    quote: "The legend of Lincoln’s ghost may have emanated from stories that Jeremiah “Jerry” Smith would spin for reporters."
+  - says: "Jerry Smith came to work here in the time of President Grant. He stayed for about thirty five years. Footman, butler, cook, doorman, and official duster."
+    source: 1
+    quote: "Smith started working at the White House during the Ulysses S. Grant administration in the late 1860s as a footman, and also served as a butler, cook, doorman, and “official duster” until his retirement approximately 35 years later."
+  - says: "Reporters called him the Knight of the Feather Duster."
+    source: 1
+    quote: "Newspapermen dubbed him the “Knight of the Feather Duster,”"
+  - says: "Jerry had a fund of ghost stories. He believed this house was haunted by the spirits of all the departed Presidents, and that the devil lived in the attic."
+    source: 1
+    quote: "He firmly believes that the White House is haunted by the spirits of all the departed Presidents, and, furthermore, that his Satanic majesty, the devil, has his abode in the attic."
+  - says: "He had to pass through that attic to raise the flag, and he was afraid of it."
+    source: 2
+    quote: "always had an abiding fear of the ol White House attic, through which h had to pass on this duty"
+  - says: "The noises up there turned out to be rats. The devil was a tale to keep Grant's daughter Nellie and her friends from playing in the attic."
+    source: 1
+    quote: "The noises in the attic proved to be rats scurrying about and the story of the devil was a ruse devised to keep young Nellie Grant and her girlfriends from playing in the attic."
+  - says: "But Jerry said he had seen the ghosts of Lincoln, Grant and McKinley. They tried to speak to him, he said. All they could manage was a buzzing sound."
+    source: 1
+    quote: "Smith did claim to have seen the ghosts of Lincoln, Grant, and McKinley, who tried to speak to him but could produce only a buzzing sound."
+  - says: "In the years after, a First Lady and a Queen of the Netherlands both said they had seen Lincoln too."
+    source: 3
+    quote: "First Lady Grace Coolidge and Queen Wilhelmina of the Netherlands claimed to have seen Lincoln."
+  - says: "Somewhere up there, people say, Abraham Lincoln still walks."
+    source: 4
+    quote: "Many witnesses have claimed to have spotted Abraham Lincoln on his way up the stairs at night."
+sources:
+  - title: "The Origin of the Abraham Lincoln Ghost Story"
+    publisher: "White House Historical Association"
+    url: https://www.whitehousehistory.org/the-origin-of-the-abraham-lincoln-ghost-story
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "The Washington Times, 26 July 1904, page 10: Uncle Jerry Lays Down Duster"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84026749/1904-07-26/ed-1/?sp=10
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "White House Ghost Stories (press backgrounder)"
+    publisher: "White House Historical Association"
+    url: https://www.whitehousehistory.org/press-room/press-backgrounders/white-house-ghost-stories
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "The Haunted Houses of Washington"
+    publisher: "Library of Congress, Headlines and Heroes blog"
+    url: https://blogs.loc.gov/headlinesandheroes/2020/10/the-haunted-houses-of-washington/
+    retrievedAt: "2026-11-11"
+    rights: public-domain

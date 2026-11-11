@@ -1,0 +1,86 @@
+# Drafted by Claude Code (2026-11-11) for Washington DC beyond the core (Woodley Park), second pass, following the six beats in docs/writing-echoes.md (echo-format-v2). Kids voice.
+# Listening spot: Public sidewalk at the Smithsonian's National Zoo main entrance, Connecticut Avenue NW, looking in through the gates.
+# Position: Overture places businesses at 3000 Connecticut Avenue opposite the entrance (38.93007, -77.05536) and the zoo police post inside it (38.93108, -77.05284); the pin is set at the entrance plaza between them, on the zoo side of the avenue (medium confidence: a reviewer should check the gate position on a map). Smokey's old enclosure is not located in any reachable source, so the echo is told from the gate.
+id: dc-a-bear-with-his-own-zip-code
+title: "A Bear With His Own Zip Code"
+summary: "A children's echo: a bear cub saved from a forest fire lived in this zoo for 26 years, and got so much mail he had his own zip code."
+place: "Smithsonian's National Zoo, main entrance, 3001 Connecticut Avenue NW, Washington, D.C."
+at: { lat: 38.93020, lng: -77.05440 }
+triggerRadiusKm: 0.08
+category: kids
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [washington, woodley-park, national-zoo, smokey-bear, animals, forests, kids]
+teaser: "Somewhere in this zoo lived a bear who got more letters than you ever will."
+script: |
+  Look through the gates of the zoo. Somewhere in there, for twenty six years, lived a bear who got so many letters that he was given his very own zip code.
+
+  Who sends letters to a bear?
+
+  It started with a fire. In the spring of nineteen fifty, a forest was burning in the Capitan Mountains of New Mexico. Firefighters found a tiny black bear cub who had survived it. His paws and legs were badly burned. So they called him Hotfoot Teddy.
+
+  He got better. Then he was flown all the way here, to the National Zoo in Washington, and given a new name. Smokey.
+
+  You might know that name. Smokey Bear was already a cartoon, telling everyone to be careful with fire. Now there was a real Smokey too. And people wrote to him. Lots and lots of letters.
+
+  He grew up big. About four hundred pounds. When he died, he was taken home, and buried in Capitan, New Mexico, near where he was found.
+
+  So, as you walk in, remember the little cub with the burned paws.
+
+  Not bad for a bear who started out as Hotfoot Teddy.
+pronunciations:
+  - written: Capitan
+    say: cap-ih-TAN
+detail: >-
+  Told for children. The fire, the rescue, Hotfoot Teddy, the zoo, the zip code, his size, twenty six years and his burial in Capitan are from the Forest Service's Lincoln National Forest history page; the Library of Congress Law Library blog independently gives the May 1950 fires, the name Hotfoot Teddy, the flight to Washington, the zip code and the twenty six years. Not stated: where in the zoo he lived, because no reachable source says.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "Somewhere in there, for twenty six years, lived a bear who got so many letters that he was given his very own zip code."
+    source: 2
+    quote: "the bear was so popular and received so many letters when he lived at the z oo, that he was issued his own zip code . Smokey lived at the zoo for 26 years until he died in 1976."
+  - says: "In the spring of nineteen fifty, a forest was burning in the Capitan Mountains of New Mexico."
+    source: 2
+    quote: "There were two back-to-back forest fires in early May 1950 in the Capitan Mountains , which are part of the Lincoln National Forest ."
+  - says: "Firefighters found a tiny black bear cub who had survived it."
+    source: 1
+    quote: "However, in 1950 a real-life Black Bear cub was rescued from a wildfire by firefighters in the Capitan Mountains of Lincoln National Forest."
+  - says: "His paws and legs were badly burned. So they called him Hotfoot Teddy."
+    source: 1
+    quote: "Due to bad burns on his legs and feet, he was initially named “Hotfoot Teddy” by his rescuers."
+  - says: "Then he was flown all the way here, to the National Zoo in Washington, and given a new name. Smokey."
+    source: 2
+    quote: "the bear was flown to Washington and met by a company of dignitaries, including Senator Chavez of New Mexico."
+  - says: "given a new name. Smokey."
+    source: 1
+    quote: "he was moved to the National Zoo in Washington D.C, renamed Smokey, and became the living embodiment of the iconic Smokey Bear cartoon."
+  - says: "Smokey Bear was already a cartoon, telling everyone to be careful with fire."
+    source: 3
+    quote: "Smokey Bear (there's no \"the\" in his official name) has warned us about the dangers of wildfires since 1944, when the Smokey Bear Wildfire Prevention Campaign was launched."
+  - says: "He grew up big. About four hundred pounds."
+    source: 1
+    quote: "He grew to be a 400 pound bear and lived 26 years."
+  - says: "When he died, he was taken home, and buried in Capitan, New Mexico, near where he was found."
+    source: 1
+    quote: "Smokey died in 1976 and was buried in Capitan, NM near his original home."
+sources:
+  - title: "Discover History, Lincoln National Forest"
+    publisher: "USDA Forest Service"
+    url: https://www.fs.usda.gov/r03/lincoln/recreation/discover-history
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Smokey Bear: A Short History of the New Mexico Bear Cub"
+    publisher: "Library of Congress, In Custodia Legis (Law Library blog)"
+    url: https://blogs.loc.gov/law/2021/10/smokey-bear-a-short-history-of-the-new-mexico-bear-cub/
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Smokey Bear"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/stories/smokeybear.htm
+    retrievedAt: "2026-11-11"
+    rights: public-domain
