@@ -1,0 +1,221 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Buffalo Bayou and Memorial Park.
+# Listening spot: inside Memorial Park, which occupies the main acreage of the former Camp Logan (WPA Houston guide, 1942).
+# Position: Wikidata Q5027362 (Camp Logan), 29.7715, -95.4274, inside the park (medium confidence: the camp covered most of the park, and no source fixes the battalion's own camp closer).
+id: houston-the-letter-got-home
+title: "The Letter Got Home"
+summary: "In 1917, Black soldiers guarding Camp Logan marched into Houston. Nineteen were hanged. In 2023 the Army set aside every conviction."
+place: "Memorial Park, site of Camp Logan, Houston, Texas"
+at: { lat: 29.77150, lng: -95.42740 }
+triggerRadiusKm: 0.15
+category: history
+format: short
+durationS: 100
+visibility: position-only
+certainty: documented
+minAge: 12
+quality: 0.85
+tags: [houston, memorial-park, camp-logan, military, world-war-one, buffalo-soldiers, african-american-history, 1917]
+teaser: "The night before he was hanged, a private wrote home. His family kept the letter for a century."
+script: |
+  Look around at these trees. In the summer of nineteen seventeen, this was not a park. It was Camp Logan, an army camp being built to train men for the war in Europe.
+
+  The soldiers sent to guard it while it was built were Black.
+
+  They were the Third Battalion of the Twenty Fourth Infantry, the Buffalo Soldiers. They had served in Mexico and the Philippines. In Houston, they met Jim Crow. Again and again, there were run ins with white police.
+
+  On the twenty third of August, a false rumor went round that a mob was coming. Someone shouted, get your guns, boys. More than a hundred soldiers took their rifles and marched into the city. By the end of the night, nineteen people were dead. Fifteen were white. Four were Black.
+
+  The Army tried a hundred and ten men. Sixty three of them stood trial together, defended by one officer who was not a lawyer. Thirteen were sentenced to death, and were not told until twelve hours before.
+
+  One of them was Private First Class Thomas Coleman Hawkins. That night, he wrote to his family.
+
+  I was sentenced to be hanged for the trouble that took place in Houston, Texas, he wrote, although I am not guilty of the crime that I am accused.
+
+  The thirteen were hanged together, just before sunrise. Six more hangings followed.
+
+  In November twenty twenty three, the Army set aside all one hundred and ten convictions. The soldiers, it said, were wrongly treated because of their race, and were not given fair trials.
+
+  His family had kept his letter the whole time.
+
+pronunciations:
+  - written: Hawkins
+    say: HAW-kinz
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It was Camp Logan, an army camp being built to train men for the war in Europe."
+    source: 3
+    quote: "Memorial Park occupies the main acreage of former Camp Logan, where 25,000 men were trained for World War duty."
+  - says: "The soldiers sent to guard it while it was built were Black."
+    source: 3
+    quote: "They had been stationed near the camp to guard construction while the training post was being prepared for its white occupants."
+  - says: "They were the Third Battalion of the Twenty Fourth Infantry, the Buffalo Soldiers."
+    source: 2
+    quote: "Black soldiers of the 3rd Battalion, 24th Infantry Regiment. They were also known as the Buffalo Soldiers"
+  - says: "They had served in Mexico and the Philippines."
+    source: 1
+    quote: "They were members of the all-Black 24th Infantry Regiment, which had served in Mexico and the Philippines."
+  - says: "Again and again, there were run ins with white police."
+    source: 1
+    quote: "A series of run-ins with white police, and a false rumor that the Black soldiers were about to be attacked, set off a race riot."
+  - says: "On the twenty third of August, a false rumor went round that a mob was coming."
+    source: 4
+    quote: "more than 100 Black soldiers seized weapons and marched into Houston on Aug. 23, 1917, after rumors spread that a white mob was descending upon Camp Logan to attack Black troops"
+  - says: "Someone shouted, get your guns, boys."
+    source: 1
+    quote: "\"All of a sudden, someone shouted, 'Get your guns, boys. There's a mob coming.' And instantly pandemonium breaks out,\" Haymond said."
+  - says: "More than a hundred soldiers took their rifles and marched into the city."
+    source: 4
+    quote: "more than 100 Black soldiers seized weapons and marched into Houston on Aug. 23, 1917"
+  - says: "By the end of the night, nineteen people were dead."
+    source: 4
+    quote: "The ensuing violent clashes left 19 people dead — 15 of them were white and four were Black, according to the administration."
+  - says: "Fifteen were white."
+    source: 4
+    quote: "15 of them were white and four were Black"
+  - says: "The Army tried a hundred and ten men."
+    source: 2
+    quote: "Army courts-martial eventually convicted 110 Black soldiers, including 19 who received the death penalty"
+  - says: "Sixty three of them stood trial together, defended by one officer who was not a lawyer."
+    source: 1
+    quote: "In the first of three courts-martial, 63 Black soldiers were charged with mutiny and murder. They shared one defense counsel, who wasn't even an attorney."
+  - says: "Thirteen were sentenced to death, and were not told until twelve hours before."
+    source: 1
+    quote: "Thirteen were condemned to death, but the commanding Gen. John Ruckman kept that verdict secret from them until 12 hours before their execution."
+  - says: "One of them was Private First Class Thomas Coleman Hawkins."
+    source: 1
+    quote: "Jason Holt showed Martin a photo of his great-uncle, PFC Thomas Coleman Hawkins"
+  - says: "That night, he wrote to his family."
+    source: 1
+    quote: "That night T.C. Hawkins wrote his family a final letter, which has been passed down through the generations."
+  - says: "I was sentenced to be hanged for the trouble that took place in Houston, Texas, he wrote, although I am not guilty of the crime that I am accused."
+    source: 1
+    quote: "I was sentenced to be hanged for the trouble that took place in Houston, Texas, although I am not guilty of the crime that I am accused."
+  - says: "The thirteen were hanged together, just before sunrise."
+    source: 1
+    quote: "it was a one large, single trap door for a simultaneous hanging. Just before sunrise they were hanged."
+  - says: "Six more hangings followed."
+    source: 1
+    quote: "Six more hangings would follow."
+  - says: "In November twenty twenty three, the Army set aside all one hundred and ten convictions."
+    source: 4
+    quote: "The U.S. Army has set aside the convictions of 110 Black soldiers who were arrested following the 1917 Houston Riots."
+  - says: "The soldiers, it said, were wrongly treated because of their race, and were not given fair trials."
+    source: 2
+    quote: "the Board found that these soldiers were wrongly treated because of their race and were not given fair trials."
+  - says: "His family had kept his letter the whole time."
+    source: 1
+    quote: "That night T.C. Hawkins wrote his family a final letter, which has been passed down through the generations."
+  - says: "In Houston, they met Jim Crow."
+    source: 1
+    quote: "\"Jim Crow and racism,\" Anderson replied."
+  - says: "In the summer of nineteen seventeen, this was not a park."
+    source: 3
+    quote: "Memorial Park occupies the main acreage of former Camp Logan"
+  - says: "Four were Black."
+    source: 4
+    quote: "15 of them were white and four were Black"
+sources:
+  - title: "U.S. Army restores honor to Black soldiers hanged in Jim Crow-era South"
+    publisher: "CBS News, Sunday Morning"
+    url: https://www.cbsnews.com/news/u-s-army-restores-honor-to-black-soldiers-hanged-in-jim-crow-era-south/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "A century later, Army overturns convictions of 110 Black soldiers"
+    publisher: "NBC News, November 2023"
+    url: https://www.nbcnews.com/news/us-news/century-later-us-army-overturns-convictions-110-black-soldiers-rcna125048
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942)"
+    publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"
+    url: https://archive.org/details/houstonahistory00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "U.S. Army sets aside convictions of 110 Black soldiers arrested over 1917 Houston riots"
+    publisher: "CBS News, 13 November 2023"
+    url: https://www.cbsnews.com/news/us-army-110-black-buffalo-soldiers-arrested-1917-houston-riots/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-the-letter-got-home/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 100.2
+    audioBytes: 1604588
+    transcript:
+      totalS: 100.2
+      lines:
+        - text: Look around at these trees.
+          atS: 0
+          durationS: 1.65
+        - text: In the summer of nineteen seventeen, this was not a park.
+          atS: 2.03
+          durationS: 3.29
+        - text: It was Camp Logan, an army camp being built to train men for the war in Europe.
+          atS: 5.56
+          durationS: 4.97
+        - text: The soldiers sent to guard it while it was built were Black.
+          atS: 11.04
+          durationS: 2.97
+        - text: They were the Third Battalion of the Twenty Fourth Infantry, the Buffalo Soldiers.
+          atS: 14.45
+          durationS: 4.26
+        - text: They had served in Mexico and the Philippines.
+          atS: 19.04
+          durationS: 2.6
+        - text: In Houston, they met Jim Crow.
+          atS: 21.97
+          durationS: 2.16
+        - text: Again and again, there were run ins with white police.
+          atS: 24.45
+          durationS: 3.18
+        - text: On the twenty third of August, a false rumor went round that a mob was coming.
+          atS: 28.75
+          durationS: 4.3
+        - text: Someone shouted, get your guns, boys.
+          atS: 33.37
+          durationS: 2.54
+        - text: More than a hundred soldiers took their rifles and marched into the city.
+          atS: 36.72
+          durationS: 4.13
+        - text: By the end of the night, nineteen people were dead.
+          atS: 41.3
+          durationS: 3.1
+        - text: Fifteen were white.
+          atS: 44.72
+          durationS: 1.34
+        - text: Four were Black.
+          atS: 46.27
+          durationS: 1.1
+        - text: The Army tried a hundred and ten men.
+          atS: 47.81
+          durationS: 2.07
+        - text: Sixty three of them stood trial together, defended by one officer who was not a lawyer.
+          atS: 50.2
+          durationS: 5.19
+        - text: Thirteen were sentenced to death, and were not told until twelve hours before.
+          atS: 55.83
+          durationS: 4.61
+        - text: One of them was Private First Class Thomas Coleman Hawkins.
+          atS: 61.14
+          durationS: 3.84
+        - text: That night, he wrote to his family.
+          atS: 65.68
+          durationS: 2.5
+        - text: I was sentenced to be hanged for the trouble that took place in Houston, Texas, he wrote, although I am not guilty of the crime that I am accused.
+          atS: 68.87
+          durationS: 8.13
+        - text: The thirteen were hanged together, just before sunrise.
+          atS: 77.81
+          durationS: 3.42
+        - text: Six more hangings followed.
+          atS: 81.68
+          durationS: 1.87
+        - text: In November twenty twenty three, the Army set aside all one hundred and ten convictions.
+          atS: 84.36
+          durationS: 5.93
+        - text: The soldiers, it said, were wrongly treated because of their race, and were not given fair trials.
+          atS: 90.8
+          durationS: 6.14
+        - text: His family had kept his letter the whole time.
+          atS: 97.38
+          durationS: 2.83

@@ -1,0 +1,207 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Third Ward cluster.
+# Listening spot: The park's Dowling Street side, at the recreation center, which sits on the park's centerline facing Dowling Street (HALS TX-7).
+# Position: midpoint of the park's Dowling Street edge, between the east corner (29.736264, -95.363654) and south corner (29.73455, -95.365011) given in HALS TX-7 (high confidence).
+id: houston-ground-to-be-free-on
+title: "Ground to Be Free On"
+summary: "In 1872, men who had been enslaved bought ten acres here for Juneteenth. For years it was Houston's only park open to Black residents."
+place: "Emancipation Park, 3018 Dowling Street, Third Ward, Houston, Texas"
+at: { lat: 29.73541, lng: -95.36433 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 97
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, third-ward, juneteenth, emancipation, african-american-history, parks]
+teaser: "This park was bought, not given, by people who had been bought and sold."
+script: |
+  Look across this park. Ten acres of grass and old oaks, one whole city block.
+
+  Nobody gave it away. It was bought, by people who had once been bought and sold themselves.
+
+  On the nineteenth of June, eighteen sixty five, a Union general landed at Galveston and read an order. All slaves are free. In Texas, slavery had held on for two and a half years after Lincoln's Emancipation Proclamation.
+
+  The next year, Black Texans began to celebrate the day. They called it Juneteenth. In Houston, the celebration moved from place to place.
+
+  So the churches raised the money. Three men led them. Richard Allen, a politician. The Reverend Jack Yates, of Antioch Baptist Church. And the Reverend Elias Dibble. All three had been enslaved.
+
+  On the tenth of July, eighteen seventy two, these ten acres were sold for eight hundred dollars. The deed names nine trustees, for the Colored People of Harris County, known as the Festival Association.
+
+  They still had to pay for it, year by year. So they rented the ground to carnivals and circuses to make the payments.
+
+  Fifty years later, Houston segregated its parks. Until nineteen forty, this was the only public park in the city open to Black Houstonians.
+
+  Look at the oaks again. Since the nineteen seventies, Juneteenth has come back here every June.
+
+  They bought the ground to be free on.
+
+pronunciations:
+  - written: Dibble
+    say: DIB-ul
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look across this park."
+    source: 1
+    quote: "Emancipation Park occupies one full 10-acre city block and today retains many of its mid-century structures and natural features."
+  - says: "Ten acres of grass and old oaks, one whole city block."
+    source: 1
+    quote: "Emancipation Park occupies one full 10-acre city block"
+  - says: "On the nineteenth of June, eighteen sixty five, a Union general landed at Galveston and read an order."
+    source: 1
+    quote: "That help came in the form of General Gordon Granger, who landed at Galveston on June 19, 1865, with a group of Union soldiers. To the citizens of Galveston, Granger read General Order #3, which stated:"
+  - says: "All slaves are free."
+    source: 1
+    quote: "all slaves are free."
+  - says: "In Texas, slavery had held on for two and a half years after Lincoln's Emancipation Proclamation."
+    source: 1
+    quote: "Although President Abraham Lincoln had issued the Emancipation Proclamation on January 1, 1863, the freeing of slaves was neither encouraged nor enforced in Texas until June 19, 1865."
+  - says: "The next year, Black Texans began to celebrate the day."
+    source: 1
+    quote: "The black population throughout Texas began to celebrate the anniversary of Emancipation in Texas in 1866."
+  - says: "They called it Juneteenth."
+    source: 1
+    quote: "The holiday, known as “Juneteenth,” became a festive occasion marked by picnics, games, and public speeches."
+  - says: "In Houston, the celebration moved from place to place."
+    source: 1
+    quote: "In Houston, events were organized in different locations until 1872"
+  - says: "Three men led them."
+    source: 1
+    quote: "led by politician Richard Allen, Reverend Jack Yates of Antioch Baptist Church, and Reverend Elias Dibble of Trinity Methodist Episcopal, all former slaves"
+  - says: "All three had been enslaved."
+    source: 1
+    quote: "all former slaves"
+  - says: "On the tenth of July, eighteen seventy two, these ten acres were sold for eight hundred dollars."
+    source: 1
+    quote: "A 10-acre lot upon which Emancipation Park would be established was purchased for $800 from Sarah J. Wellborn and Marshall C. Wellborn, the heirs of William Wellborn, on July 10, 1872."
+  - says: "On the tenth of July, eighteen seventy two, these ten acres were sold for eight hundred dollars."
+    source: 2
+    quote: "In 1872 a group of black community leaders in Texas, all former slaves, pooled together $800 (a seemingly impossible feat at the time) to purchase 10 acres of open land as home for their Juneteenth celebration."
+  - says: "The deed names nine trustees, for the Colored People of Harris County, known as the Festival Association."
+    source: 1
+    quote: "in their capacity as trustees of the Colored People of Harris County known as the Festival Association and their successors in office."
+  - says: "So they rented the ground to carnivals and circuses to make the payments."
+    source: 1
+    quote: "In order to raise the funds needed to make the annual payments on the land, the park trustees solicited contributions from the community. They also sold concessions rights to operators of refreshment stands during the Juneteenth celebrations, and rented the land to carnival and circus operators."
+  - says: "Fifty years later, Houston segregated its parks."
+    source: 1
+    quote: "The City of Houston officially segregated parks in 1922"
+  - says: "Until nineteen forty, this was the only public park in the city open to Black Houstonians."
+    source: 1
+    quote: "until 1940, Emancipation Park was the only public park in Houston open to African-Americans."
+  - says: "Until nineteen forty, this was the only public park in the city open to Black Houstonians."
+    source: 3
+    quote: "For years, Emancipation Park was the only park in Houston where black folks could go."
+  - says: "Since the nineteen seventies, Juneteenth has come back here every June."
+    source: 1
+    quote: "Since the early 1970s, resurgence in interest has led to annual Juneteenth celebrations at Emancipation Park."
+  - says: "Richard Allen, a politician."
+    source: 1
+    quote: "led by politician Richard Allen"
+  - says: "The Reverend Jack Yates, of Antioch Baptist Church."
+    source: 1
+    quote: "Reverend Jack Yates of Antioch Baptist Church"
+  - says: "And the Reverend Elias Dibble."
+    source: 1
+    quote: "Reverend Elias Dibble of Trinity Methodist Episcopal"
+sources:
+  - title: "Emancipation Park, HALS TX-7, Written Historical and Descriptive Data"
+    publisher: "Historic American Landscapes Survey, National Park Service (Library of Congress)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx1100/tx1147/data/tx1147data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Juneteenth at Heart of $33 Million Houston Park Renovation"
+    publisher: "NBC News, NBCBLK"
+    url: https://www.nbcnews.com/news/nbcblk/juneteenth-heart-33-million-houston-park-renovation-n593921
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Headlines: Restoring Emancipation Park"
+    publisher: "NPR, News & Notes, 19 June 2007"
+    url: https://www.npr.org/2007/06/19/11186929/headlines-restoring-emancipation-park
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-ground-to-be-free-on/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 96.6
+    audioBytes: 1546492
+    transcript:
+      totalS: 96.6
+      lines:
+        - text: Look across this park.
+          atS: 0
+          durationS: 1.56
+        - text: Ten acres of grass and old oaks, one whole city block.
+          atS: 1.8
+          durationS: 4.09
+        - text: Nobody gave it away.
+          atS: 6.27
+          durationS: 1.43
+        - text: It was bought, by people who had once been bought and sold themselves.
+          atS: 7.98
+          durationS: 4.05
+        - text: On the nineteenth of June, eighteen sixty five, a Union general landed at Galveston and read an order.
+          atS: 12.41
+          durationS: 6.8
+        - text: All slaves are free.
+          atS: 19.82
+          durationS: 1.51
+        - text: In Texas, slavery had held on for two and a half years after Lincoln's Emancipation Proclamation.
+          atS: 22.02
+          durationS: 6.36
+        - text: The next year, Black Texans began to celebrate the day.
+          atS: 29.08
+          durationS: 3.75
+        - text: They called it Juneteenth.
+          atS: 33.53
+          durationS: 1.96
+        - text: In Houston, the celebration moved from place to place.
+          atS: 36
+          durationS: 3.62
+        - text: So the churches raised the money.
+          atS: 39.83
+          durationS: 1.7
+        - text: Three men led them.
+          atS: 41.77
+          durationS: 1.32
+        - text: Richard Allen, a politician.
+          atS: 43.42
+          durationS: 1.71
+        - text: The Reverend Jack Yates, of Antioch Baptist Church.
+          atS: 45.45
+          durationS: 3.69
+        - text: And the Reverend Elias Dibble.
+          atS: 49.35
+          durationS: 2.34
+        - text: All three had been enslaved.
+          atS: 52.14
+          durationS: 2.05
+        - text: On the tenth of July, eighteen seventy two, these ten acres were sold for eight hundred dollars.
+          atS: 55.27
+          durationS: 6.4
+        - text: The deed names nine trustees, for the Colored People of Harris County, known as the Festival Association.
+          atS: 62.25
+          durationS: 6.75
+        - text: They still had to pay for it, year by year.
+          atS: 69.48
+          durationS: 2.79
+        - text: So they rented the ground to carnivals and circuses to make the payments.
+          atS: 72.78
+          durationS: 4.05
+        - text: Fifty years later, Houston segregated its parks.
+          atS: 77.34
+          durationS: 3.62
+        - text: Until nineteen forty, this was the only public park in the city open to Black Houstonians.
+          atS: 81.41
+          durationS: 6
+        - text: Look at the oaks again.
+          atS: 87.85
+          durationS: 1.39
+        - text: Since the nineteen seventies, Juneteenth has come back here every June.
+          atS: 89.69
+          durationS: 4.38
+        - text: They bought the ground to be free on.
+          atS: 94.58
+          durationS: 2.02

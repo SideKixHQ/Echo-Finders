@@ -1,0 +1,233 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Downtown.
+# Listening spot: the public sidewalk outside the Bob Casey United States Courthouse, where the Enron trial of Kenneth Lay and Jeffrey Skilling was held (NBC News photo caption, 2006).
+# Position: Overture places "Federal Courthouse", 515 Rusk St, 29.76103, -95.36758 (high confidence for the building; the address is Overture's, the courthouse name is NBC's).
+# True crime notes for the reviewer: conviction status "convicted". Jeffrey Skilling (alive) was convicted by the jury, and that is the only living person named. Kenneth Lay was convicted; after his death the judge vacated the conviction under Fifth Circuit abatement law, and the script says so in the same breath, with the Justice Department's own response. No fraud victim is named. Key facts each have two independent sources: the verdict (Justice Department; NBC/AP), Lay's death (NPR), the vacatur (NBC/AP; CBS/AP is the same wire story, so NPR's report is the second), Skilling's sentence (Justice Department).
+id: houston-the-verdict-that-was-erased
+title: "The Verdict That Was Erased"
+summary: "In 2006 a jury here convicted Enron's founder of fraud. He died six weeks later, and a judge wiped his conviction away."
+place: "Bob Casey United States Courthouse, 515 Rusk Street, Downtown Houston, Texas"
+at: { lat: 29.76103, lng: -95.36758 }
+triggerRadiusKm: 0.05
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 98
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.8
+tags: [houston, downtown, enron, fraud, courts, 2006, true-crime]
+teaser: "Guilty on every count. Then, because he died, it was as if the trial never happened."
+script: |
+  Look at the federal courthouse here on Rusk Street.
+
+  In two thousand six, a jury in this building found the founder of Enron guilty of fraud. Five months later, his conviction no longer existed.
+
+  Enron was a Texas energy giant, based in Houston. Its collapse at the end of two thousand one wiped out more than sixty billion dollars in market value, about two billion dollars in retirement savings, and some fifty six hundred jobs.
+
+  The trial of its two former chief executives, Kenneth Lay and Jeffrey Skilling, ran for nearly four months. Twelve jurors, eight women and four men, deliberated for six days.
+
+  On the twenty fifth of May, two thousand six, they came back. Lay was convicted on every count he faced. Skilling was convicted on nineteen counts, and acquitted on nine.
+
+  In the courtroom, Lay's family gathered round him and prayed. God's got another plan right now, he said. I firmly believe I am innocent.
+
+  On the fifth of July, before he could be sentenced, Kenneth Lay died of a heart attack. He was sixty four.
+
+  In October, Judge Sim Lake vacated his conviction. Under the law of this federal circuit, when a defendant dies before his appeal is heard, his whole case is extinguished. The Justice Department answered that the ruling did not change the fact that Lay was found guilty.
+
+  Days later, in this courthouse, Skilling was sentenced to twenty four years and four months in prison.
+
+  Look at the doors again.
+
+  One verdict stood. The other was erased.
+
+pronunciations: []
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: true
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo is about a corporate fraud case and the death of a defendant. No violence is described."
+claims:
+  - says: "Look at the federal courthouse here on Rusk Street."
+    source: 2
+    quote: "Kenneth Lay and his wife Linda leave the Bob Casey U.S. Courthouse after the Enron founder's fraud and conspiracy trial."
+  - says: "In two thousand six, a jury in this building found the founder of Enron guilty of fraud."
+    source: 1
+    quote: "A federal jury in Houston has convicted former Enron Chief Executive Officers Kenneth L. Lay and Jeffrey K. Skilling on charges including conspiracy, securities fraud, wire fraud, and making false statements"
+  - says: "Five months later, his conviction no longer existed."
+    source: 3
+    quote: "A federal judge Tuesday vacated the conviction of Enron’s late founder Kenneth Lay"
+  - says: "Enron was a Texas energy giant, based in Houston."
+    source: 4
+    quote: "who faced life in prison for his role in the Texas energy giant's collapse"
+  - says: "Its collapse at the end of two thousand one wiped out more than sixty billion dollars in market value, about two billion dollars in retirement savings, and some fifty six hundred jobs."
+    source: 2
+    quote: "The collapse wiped out more than $60 billion in market value, almost $2.1 billion in retirement savings and 5,600 jobs."
+  - says: "The trial of its two former chief executives, Kenneth Lay and Jeffrey Skilling, ran for nearly four months."
+    source: 2
+    quote: "The trial lasted nearly four months. The jury deliberated six days."
+  - says: "Twelve jurors, eight women and four men, deliberated for six days."
+    source: 1
+    quote: "The eight-woman, four-man jury returned its verdict today on its sixth day of deliberations"
+  - says: "On the twenty fifth of May, two thousand six, they came back."
+    source: 1
+    quote: "THURSDAY, MAY 25, 2006"
+  - says: "Lay was convicted on every count he faced."
+    source: 1
+    quote: "Lay, 64, was convicted on all of the six counts with which he was charged"
+  - says: "Lay was convicted on every count he faced."
+    source: 2
+    quote: "Lay was convicted on all six counts of conspiracy, securities and wire fraud against him in the corporate trial and all four in the separate personal banking trial."
+  - says: "Skilling was convicted on nineteen counts, and acquitted on nine."
+    source: 1
+    quote: "Skilling, 52, was convicted on 19 of the 28 counts pending against him"
+  - says: "Skilling was convicted on nineteen counts, and acquitted on nine."
+    source: 1
+    quote: "Skilling was acquitted of nine insider trading counts."
+  - says: "In the courtroom, Lay's family gathered round him and prayed."
+    source: 2
+    quote: "Afterward, still in the courtroom, Lay and his weeping family members gathered in a circle, clasped hands and prayed."
+  - says: "God's got another plan right now, he said."
+    source: 2
+    quote: "“God’s got another plan right now,” Lay, the son of a preacher, said without tears."
+  - says: "I firmly believe I am innocent."
+    source: 2
+    quote: "“I firmly believe I am innocent of the charges against me, as I have said from Day One.”"
+  - says: "On the fifth of July, before he could be sentenced, Kenneth Lay died of a heart attack."
+    source: 4
+    quote: "Ken Lay, the founder of Enron Corp. who faced life in prison for his role in the Texas energy giant's collapse, is dead at 64 of a heart attack."
+  - says: "He was sixty four."
+    source: 4
+    quote: "is dead at 64 of a heart attack."
+  - says: "In October, Judge Sim Lake vacated his conviction."
+    source: 3
+    quote: "U.S. District Judge Sim Lake, in a ruling Tuesday, agreed with Lay’s lawyers that his death required that his conviction be erased and his indictment dismissed."
+  - says: "In October, Judge Sim Lake vacated his conviction."
+    source: 5
+    quote: "Lay's Enron Conviction 'Abated' Due to Death"
+  - says: "Under the law of this federal circuit, when a defendant dies before his appeal is heard, his whole case is extinguished."
+    source: 3
+    quote: "They cited a 2004 ruling from the 5th U.S. Circuit Court of Appeals that found that a defendant’s death pending appeal extinguished his entire case"
+  - says: "The Justice Department answered that the ruling did not change the fact that Lay was found guilty."
+    source: 3
+    quote: "“Today’s ruling does not change the fact that Mr. Lay was found guilty after a four-month jury trial and a separate bench trial,” said Bryan Sierra, a Department of Justice spokesman."
+  - says: "Days later, in this courthouse, Skilling was sentenced to twenty four years and four months in prison."
+    source: 6
+    quote: "Former Enron Chief Executive Officer Jeffrey K. Skilling has been sentenced to 24 years and four months in prison on conspiracy, securities fraud and other charges related to the collapse of the Enron Corporation"
+  - says: "Days later, in this courthouse, Skilling was sentenced to twenty four years and four months in prison."
+    source: 6
+    quote: "Skilling was sentenced today before U.S. District Judge Sim Lake, at the U.S. District Court in Houston."
+  - says: "One verdict stood."
+    source: 6
+    quote: "Former Enron Chief Executive Officer Jeffrey K. Skilling has been sentenced to 24 years and four months in prison on conspiracy, securities fraud and other charges related to the collapse of the Enron Corporation"
+  - says: "One verdict stood."
+    source: 3
+    quote: "A federal judge Tuesday vacated the conviction of Enron’s late founder Kenneth Lay"
+sources:
+  - title: "Federal Jury Convicts Former Enron Chief Executives Ken Lay, Jeff Skilling On Fraud, Conspiracy And Related Charges (press release 06-328, 25 May 2006)"
+    publisher: "United States Department of Justice"
+    url: https://www.justice.gov/archive/opa/pr/2006/May/06_crm_328.html
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Lay, Skilling guilty on nearly all counts (Associated Press)"
+    publisher: "NBC News, May 2006"
+    url: https://www.nbcnews.com/id/wbna12968481
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Judge throws out convictions of Enron's Lay (Associated Press)"
+    publisher: "NBC News, October 2006"
+    url: https://www.nbcnews.com/id/wbna15306994
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Timeline: Ken Lay and the Arc of Enron"
+    publisher: "NPR, 5 July 2006"
+    url: https://www.npr.org/2006/07/05/5535821/timeline-ken-lay-and-the-arc-of-enron
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Lay's Enron Conviction 'Abated' Due to Death"
+    publisher: "NPR, 18 October 2006"
+    url: https://www.npr.org/2006/10/18/6288956/lays-enron-conviction-abated-due-to-death
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Former Enron Chief Executive Officer Jeffrey Skilling Sentenced to More Than 24 Years in Prison on Fraud, Conspiracy Charges (press release 06-723, 23 October 2006)"
+    publisher: "United States Department of Justice"
+    url: https://www.justice.gov/archive/opa/pr/2006/October/06_crm_723.html
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/houston-the-verdict-that-was-erased/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 97.6
+    audioBytes: 1562374
+    transcript:
+      totalS: 97.6
+      lines:
+        - text: Look at the federal courthouse here on Rusk Street.
+          atS: 0
+          durationS: 2.47
+        - text: In two thousand six, a jury in this building found the founder of Enron guilty of fraud.
+          atS: 2.65
+          durationS: 5.04
+        - text: Five months later, his conviction no longer existed.
+          atS: 8.13
+          durationS: 3.15
+        - text: Enron was a Texas energy giant, based in Houston.
+          atS: 11.45
+          durationS: 3.38
+        - text: Its collapse at the end of two thousand one wiped out more than sixty billion dollars in market value, about two billion dollars in retirement savings, and some fifty six hundred jobs.
+          atS: 15
+          durationS: 11.1
+        - text: The trial of its two former chief executives, Kenneth Lay and Jeffrey Skilling, ran for nearly four months.
+          atS: 26.19
+          durationS: 6.28
+        - text: Twelve jurors, eight women and four men, deliberated for six days.
+          atS: 32.86
+          durationS: 4.61
+        - text: On the twenty fifth of May, two thousand six, they came back.
+          atS: 37.91
+          durationS: 4.25
+        - text: Lay was convicted on every count he faced.
+          atS: 42.85
+          durationS: 2.8
+        - text: Skilling was convicted on nineteen counts, and acquitted on nine.
+          atS: 46.16
+          durationS: 3.92
+        - text: In the courtroom, Lay's family gathered round him and prayed.
+          atS: 50.53
+          durationS: 3.69
+        - text: God's got another plan right now, he said.
+          atS: 55.03
+          durationS: 2.9
+        - text: I firmly believe I am innocent.
+          atS: 58.38
+          durationS: 2.46
+        - text: On the fifth of July, before he could be sentenced, Kenneth Lay died of a heart attack.
+          atS: 61.65
+          durationS: 5.15
+        - text: He was sixty four.
+          atS: 66.95
+          durationS: 1.32
+        - text: In October, Judge Sim Lake vacated his conviction.
+          atS: 68.79
+          durationS: 3.55
+        - text: Under the law of this federal circuit, when a defendant dies before his appeal is heard, his whole case is extinguished.
+          atS: 72.67
+          durationS: 7.33
+        - text: The Justice Department answered that the ruling did not change the fact that Lay was found guilty.
+          atS: 80.59
+          durationS: 5.6
+        - text: Days later, in this courthouse, Skilling was sentenced to twenty four years and four months in prison.
+          atS: 86.7
+          durationS: 6.26
+        - text: Look at the doors again.
+          atS: 93.28
+          durationS: 1.22
+        - text: One verdict stood.
+          atS: 94.78
+          durationS: 1.16
+        - text: The other was erased.
+          atS: 96.04
+          durationS: 1.53

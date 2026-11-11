@@ -1,0 +1,183 @@
+# Drafted by Claude Code (2026-11-10) for Houston, San Jacinto battleground.
+# Listening spot: on the path west of the monument, toward the wooded curve of Buffalo Bayou where the Texans camped (Texas guide, 1940).
+# Position: Overture shows a path from 29.74929, -95.08685 to 29.75022, -95.08317, west of Monument Circle; the spot is on it (medium confidence: no source fixes the oak itself).
+id: houston-turn-back
+title: "Turn Back"
+summary: "The day after San Jacinto, a man in a private's muddy uniform was found hiding in the weeds. He was the President of Mexico."
+place: "San Jacinto Battleground State Historic Site, west of the monument, La Porte, Texas"
+at: { lat: 29.74975, lng: -95.08500 }
+triggerRadiusKm: 0.1
+category: history
+format: short
+durationS: 85
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, san-jacinto, battleground, military, texas-revolution, santa-anna, runaway-scrape, 1836]
+teaser: "The most powerful man in Mexico was found hiding in the grass, dressed as a private."
+script: |
+  Look west, toward the trees by the bayou. The Texans camped there, in the curve of the water.
+
+  The day after the battle, a prisoner was walked into that camp in a private soldier's clothes. He was the President of Mexico.
+
+  The battle had ended on the evening of the twenty first of April, eighteen thirty six. Santa Anna was not among the prisoners.
+
+  The next day, a man was found hiding in the weeds. He wore a tattered, mud stained private's uniform. Dressed like that, he was taken to General Houston.
+
+  Sam Houston had been badly wounded in the battle. He was lying under an oak tree.
+
+  So the president of a nation stood in front of a wounded man on the ground. And lying there, Houston dictated the terms. Every Mexican army in Texas would withdraw, below the Rio Grande.
+
+  Far to the east, families who had run from the war were still out on the prairie, in the rain. One of them, Dilue Harris, later remembered a man on horseback, waving his hat.
+
+  Turn back, he was shouting. The Texas army has whipped the Mexican army. No danger. Turn back.
+
+  Look at the trees again, where the prisoner was brought in.
+
+  And all over Texas, people turned around.
+
+pronunciations:
+  - written: Dilue
+    say: DIL-oo
+  - written: Santa Anna
+    say: SAN-tuh AN-uh
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The Texans camped there, in the curve of the water."
+    source: 2
+    quote: "made camp in the curve of the"
+  - says: "The day after the battle, a prisoner was walked into that camp in a private soldier's clothes."
+    source: 2
+    quote: "Here, on the day following the Battle of San Jacinto, the Mexican president-general was found hiding in the weeds."
+  - says: "The battle had ended on the evening of the twenty first of April, eighteen thirty six."
+    source: 1
+    quote: "The battle was won in about 18 minutes, but the vengeful pursuit of fleeing Mexicans did not cease until twilight."
+  - says: "The next day, a man was found hiding in the weeds."
+    source: 2
+    quote: "the Mexican president-general was found hiding in the weeds."
+  - says: "He wore a tattered, mud stained private's uniform."
+    source: 2
+    quote: "He wore the tattered, mud-stained uniform of a private soldier, and thus attired, was taken before General Houston."
+  - says: "Dressed like that, he was taken to General Houston."
+    source: 2
+    quote: "and thus attired, was taken before General Houston."
+  - says: "Sam Houston had been badly wounded in the battle."
+    source: 1
+    quote: "Santa Anna was captured the next day and brought before Houston, who had been dangerously wounded and was lying under an oak tree"
+  - says: "He was lying under an oak tree."
+    source: 1
+    quote: "who had been dangerously wounded and was lying under an oak tree"
+  - says: "And lying there, Houston dictated the terms."
+    source: 1
+    quote: "where Houston dictated to him the terms of settlement by which all Mexican armies were to be immediately withdrawn below the Rio Grande."
+  - says: "Every Mexican army in Texas would withdraw, below the Rio Grande."
+    source: 1
+    quote: "all Mexican armies were to be immediately withdrawn below the Rio Grande."
+  - says: "One of them, Dilue Harris, later remembered a man on horseback, waving his hat."
+    source: 1
+    quote: "We could see a man on horseback waving his hat"
+  - says: "Turn back, he was shouting."
+    source: 1
+    quote: "“Turn back! The Texas army has whipped the Mexi-"
+  - says: "The Texas army has whipped the Mexican army."
+    source: 1
+    quote: "The Texas army has whipped the Mexi- can army"
+  - says: "No danger."
+    source: 1
+    quote: "No danger! Turn back!"
+  - says: "He was the President of Mexico."
+    source: 2
+    quote: "the Mexican president-general was found hiding in the weeds."
+  - says: "Santa Anna was not among the prisoners."
+    source: 1
+    quote: "Santa Anna was captured the next day and brought before Houston"
+  - says: "And all over Texas, people turned around."
+    source: 1
+    quote: "And the Anglo-American civilization of Texas turned back to reclaim its home sites"
+sources:
+  - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942)"
+    publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"
+    url: https://archive.org/details/houstonahistory00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Texas: A Guide to the Lone Star State (Writers' Program of the Work Projects Administration, 1940), Tour 6A"
+    publisher: "Internet Archive (scan); copyright 1940 Texas State Highway Commission"
+    url: https://archive.org/details/texasaguidetothe00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-turn-back/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85.1
+    audioBytes: 1362172
+    transcript:
+      totalS: 85.1
+      lines:
+        - text: Look west, toward the trees by the bayou.
+          atS: 0
+          durationS: 3.03
+        - text: The Texans camped there, in the curve of the water.
+          atS: 3.84
+          durationS: 3.13
+        - text: The day after the battle, a prisoner was walked into that camp in a private soldier's clothes.
+          atS: 8.09
+          durationS: 5.64
+        - text: He was the President of Mexico.
+          atS: 14.34
+          durationS: 2.3
+        - text: The battle had ended on the evening of the twenty first of April, eighteen thirty six.
+          atS: 17.94
+          durationS: 5.27
+        - text: Santa Anna was not among the prisoners.
+          atS: 23.72
+          durationS: 3.31
+        - text: The next day, a man was found hiding in the weeds.
+          atS: 27.41
+          durationS: 3.03
+        - text: He wore a tattered, mud stained private's uniform.
+          atS: 30.88
+          durationS: 3.08
+        - text: Dressed like that, he was taken to General Houston.
+          atS: 34.34
+          durationS: 2.96
+        - text: Sam Houston had been badly wounded in the battle.
+          atS: 38
+          durationS: 3.09
+        - text: He was lying under an oak tree.
+          atS: 41.41
+          durationS: 1.95
+        - text: So the president of a nation stood in front of a wounded man on the ground.
+          atS: 43.75
+          durationS: 4.24
+        - text: And lying there, Houston dictated the terms.
+          atS: 48.59
+          durationS: 3.22
+        - text: Every Mexican army in Texas would withdraw, below the Rio Grande.
+          atS: 52.5
+          durationS: 4.56
+        - text: Far to the east, families who had run from the war were still out on the prairie, in the rain.
+          atS: 57.57
+          durationS: 5.29
+        - text: One of them, Dilue Harris, later remembered a man on horseback, waving his hat.
+          atS: 63.25
+          durationS: 6.13
+        - text: Turn back, he was shouting.
+          atS: 70.08
+          durationS: 2.22
+        - text: The Texas army has whipped the Mexican army.
+          atS: 72.81
+          durationS: 2.62
+        - text: No danger.
+          atS: 75.6
+          durationS: 0.72
+        - text: Turn back.
+          atS: 76.41
+          durationS: 0.94
+        - text: Look at the trees again, where the prisoner was brought in.
+          atS: 77.67
+          durationS: 3.22
+        - text: And all over Texas, people turned around.
+          atS: 81.84
+          durationS: 3.24

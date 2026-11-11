@@ -1,0 +1,157 @@
+# Drafted by Claude Code (2026-11-10) for Houston, the Ship Channel.
+# Listening spot: beside the Port Houston Authority building at 111 East Loop North, by the Houston Turning Basin, the bend in Buffalo Bayou where ocean ships are turned (WPA Houston guide, 1942). The basin itself is a working port; the listener stays outside the gates.
+# Position: Overture places "Port of Houston Authority" (historic_site), 111 E Loop Fwy N, 29.73220, -95.26717 (medium confidence that this is the nearest public point to the basin).
+id: houston-constitution-bend
+title: "Constitution Bend"
+summary: "In 1837 a ship called the Constitution came up the bayou to Houston and could not turn round. Where it finally did became the Turning Basin."
+place: "Houston Turning Basin, Port Houston, East Loop North, Houston, Texas"
+at: { lat: 29.73220, lng: -95.26717 }
+triggerRadiusKm: 0.2
+category: history
+format: short
+durationS: 89
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [houston, ship-channel, turning-basin, port-houston, buffalo-bayou, 1837, 1914, woodrow-wilson]
+teaser: "The port began with one ship that could not turn around."
+script: |
+  Somewhere beyond these port buildings is the Turning Basin, a wide bend in the water where the biggest cargo ships in the world are swung round to head back to sea.
+
+  It is named after a ship that almost could not do it.
+
+  On the first of June, eighteen thirty seven, a big sailing ship called the Constitution came up Buffalo Bayou to the new town of Houston. The Allen brothers had paid her captain a thousand dollars to try it. The local paper could hardly trust its eyes. The ship was moored at the landing, towering in pride above the bayou.
+
+  Then the captain, with his fee in his pocket, found that he could not turn his ship around.
+
+  He worked her back down the bayou. And at a bend, finally, the Constitution turned without running aground. People called the place Constitution Bend.
+
+  Seventy seven years later, a channel fifty one miles long and twenty five feet deep was dug from the Gulf to this bend. On the tenth of November, nineteen fourteen, at eleven in the morning, President Woodrow Wilson pressed a button in Washington, and a cannon fired here. Miss Sue Campbell dropped a wreath of flowers into the water, and Port Houston was christened.
+
+  Look toward the water. The ships that turn here now are bigger than anything the Allens could have pictured.
+
+  It began with one that barely made it round.
+
+pronunciations: []
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Somewhere beyond these port buildings is the Turning Basin, a wide bend in the water where the biggest cargo ships in the world are swung round to head back to sea."
+    source: 1
+    quote: "Today at this bend the world’s greatest cargo ships are turned downstream, for this became the Houston Turning Basin."
+  - says: "On the first of June, eighteen thirty seven, a big sailing ship called the Constitution came up Buffalo Bayou to the new town of Houston."
+    source: 1
+    quote: "On June 1 of that year, the old one-time warship Constitution, then in the merchant service"
+  - says: "On the first of June, eighteen thirty seven, a big sailing ship called the Constitution came up Buffalo Bayou to the new town of Houston."
+    source: 1
+    quote: "sailed up the bayou to the boat landing in Houston; her captain had been engaged by the Allens to attempt the hazardous voyage."
+  - says: "The Allen brothers had paid her captain a thousand dollars to try it."
+    source: 1
+    quote: "When the master of the Constitution had pocketed his $1,000 fee from the Allens"
+  - says: "The local paper could hardly trust its eyes."
+    source: 1
+    quote: "The editor of the Telegraph and Texas Register could “hardly trust the testimony of his eyes”"
+  - says: "The ship was moored at the landing, towering in pride above the bayou."
+    source: 1
+    quote: "“safely moored at the landing in this city, and towering in pride above the peaceful waters of the bayou.”"
+  - says: "Then the captain, with his fee in his pocket, found that he could not turn his ship around."
+    source: 1
+    quote: "he found that he could not put his ship about."
+  - says: "And at a bend, finally, the Constitution turned without running aground."
+    source: 1
+    quote: "the ship was turned without beaching, and the spot was promptly named Constitution Bend."
+  - says: "People called the place Constitution Bend."
+    source: 1
+    quote: "the spot was promptly named Constitution Bend."
+  - says: "Seventy seven years later, a channel fifty one miles long and twenty five feet deep was dug from the Gulf to this bend."
+    source: 1
+    quote: "a twenty-five-foot channel from Bolivar Roads to the Turning Basin"
+  - says: "Seventy seven years later, a channel fifty one miles long and twenty five feet deep was dug from the Gulf to this bend."
+    source: 1
+    quote: "Completed in the summer of 1914, the new channel was fifty-one miles long and twenty-five feet deep, with a bottom width of 100 feet."
+  - says: "Seventy seven years later, a channel fifty one miles long and twenty five feet deep was dug from the Gulf to this bend."
+    source: 2
+    quote: "has a minimum depth of twenty-five feet from the business section of the city to the sea"
+  - says: "On the tenth of November, nineteen fourteen, at eleven in the morning, President Woodrow Wilson pressed a button in Washington, and a cannon fired here."
+    source: 1
+    quote: "At eleven o'clock on the morning of November 10, President Woodrow Wilson, using remote control, fired the cannon that signaled the official opening of the new world port."
+  - says: "On the tenth of November, nineteen fourteen, at eleven in the morning, President Woodrow Wilson pressed a button in Washington, and a cannon fired here."
+    source: 2
+    quote: "President Wilson, by pressing a button at the White House"
+  - says: "Miss Sue Campbell dropped a wreath of flowers into the water, and Port Houston was christened."
+    source: 1
+    quote: "A few seconds later Miss Sue Campbell dropped a wreath of flowers into the waters of the Turning Basin, and Port Houston was christened."
+  - says: "The ships that turn here now are bigger than anything the Allens could have pictured."
+    source: 1
+    quote: "Today at this bend the world’s greatest cargo ships are turned downstream, for this became the Houston Turning Basin."
+  - says: "It began with one that barely made it round."
+    source: 1
+    quote: "the ship was turned without beaching, and the spot was promptly named Constitution Bend."
+sources:
+  - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), quoting the Telegraph and Texas Register, 1837"
+    publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"
+    url: https://archive.org/details/houstonahistory00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Evening Star (Washington, D.C.), 11 November 1914, page 1: Houston Now a Seaport"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1914-11-11/ed-1/?sp=1
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-constitution-bend/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 88.6
+    audioBytes: 1418596
+    transcript:
+      totalS: 88.6
+      lines:
+        - text: Somewhere beyond these port buildings is the Turning Basin, a wide bend in the water where the biggest cargo ships in the world are swung round to head back to sea.
+          atS: 0
+          durationS: 9.87
+        - text: It is named after a ship that almost could not do it.
+          atS: 10.38
+          durationS: 3.04
+        - text: On the first of June, eighteen thirty seven, a big sailing ship called the Constitution came up Buffalo Bayou to the new town of Houston.
+          atS: 13.93
+          durationS: 9.59
+        - text: The Allen brothers had paid her captain a thousand dollars to try it.
+          atS: 24.13
+          durationS: 4.3
+        - text: The local paper could hardly trust its eyes.
+          atS: 28.86
+          durationS: 2.59
+        - text: The ship was moored at the landing, towering in pride above the bayou.
+          atS: 31.89
+          durationS: 4.42
+        - text: Then the captain, with his fee in his pocket, found that he could not turn his ship around.
+          atS: 36.83
+          durationS: 5.28
+        - text: He worked her back down the bayou.
+          atS: 42.55
+          durationS: 2.07
+        - text: And at a bend, finally, the Constitution turned without running aground.
+          atS: 45
+          durationS: 5
+        - text: People called the place Constitution Bend.
+          atS: 50.33
+          durationS: 3.08
+        - text: Seventy seven years later, a channel fifty one miles long and twenty five feet deep was dug from the Gulf to this bend.
+          atS: 53.92
+          durationS: 7.8
+        - text: On the tenth of November, nineteen fourteen, at eleven in the morning, President Woodrow Wilson pressed a button in Washington, and a cannon fired here.
+          atS: 63.02
+          durationS: 9.42
+        - text: Miss Sue Campbell dropped a wreath of flowers into the water, and Port Houston was christened.
+          atS: 73.13
+          durationS: 5.46
+        - text: Look toward the water.
+          atS: 79.19
+          durationS: 1.44
+        - text: The ships that turn here now are bigger than anything the Allens could have pictured.
+          atS: 81.07
+          durationS: 4.2
+        - text: It began with one that barely made it round.
+          atS: 85.88
+          durationS: 2.73

@@ -1,0 +1,179 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Montrose and the Museum District.
+# Listening spot: south of the Rothko Chapel, 1409 Sul Ross, by the reflecting pool with Barnett Newman's Broken Obelisk, which visitors approaching from the south see first (NPR).
+# Position: Wikidata Q2956755 (Rothko Chapel) puts the chapel at 29.73764, -95.39617; the spot is about 25 m south, at the pool (medium confidence).
+id: houston-the-time-stopped-running
+title: "The Time Stopped Running"
+summary: "Fourteen dark Rothko paintings in a windowless chapel, opened in 1971. The painter never saw it. His son nearly walked out."
+place: "Rothko Chapel, 1409 Sul Ross Street, Montrose, Houston, Texas"
+at: { lat: 29.73742, lng: -95.39617 }
+triggerRadiusKm: 0.05
+inside: true
+category: arts
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, montrose, menil, rothko-chapel, painting, art]
+teaser: "Fourteen paintings that look almost black. The painter's son nearly walked out."
+script: |
+  In front of you is a pool, and in it a steel obelisk, standing on its point. Behind it, a brick building with eight sides and no windows.
+
+  Inside are fourteen enormous paintings that, at first, look almost black.
+
+  John and Dominique de Menil commissioned the chapel from the painter Mark Rothko. It opened in February nineteen seventy one. Rothko did not live to see it. He had died the year before.
+
+  His son, Christopher, was a child when it opened. He did not come to see it until he was thirty three.
+
+  He grew up with his father's paintings. He talked with them every day. But on that first visit, in here, nothing happened. I almost left with nothing, he said.
+
+  He stayed a little longer.
+
+  He stayed an hour and fifteen minutes. The time, he said, just sort of stopped running.
+
+  The chapel's historian said Rothko chose the dark on purpose. Bright colors stop your vision at the canvas, she said. Dark colors go beyond.
+
+  Look at the door. Inside, a skylight lets the Houston sun in, softly, and as clouds pass outside, the paintings change.
+
+  Give them longer than you think.
+
+pronunciations:
+  - written: Rothko
+    say: ROTH-koh
+  - written: de Menil
+    say: duh men-EEL
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In front of you is a pool, and in it a steel obelisk, standing on its point."
+    source: 1
+    quote: "Approaching the chapel from the south, visitors first see a steel sculpture called Broken Obelisk by Barnett Newman in the middle of a pool"
+  - says: "Behind it, a brick building with eight sides and no windows."
+    source: 1
+    quote: "The chapel itself is a windowless, octagonal brick building."
+  - says: "Inside are fourteen enormous paintings that, at first, look almost black."
+    source: 1
+    quote: "a one-man art museum devoted to 14 monumental paintings by abstract expressionist Mark Rothko."
+  - says: "Inside are fourteen enormous paintings that, at first, look almost black."
+    source: 1
+    quote: "The paintings in the chapel are dark, in purplish or black hues."
+  - says: "John and Dominique de Menil commissioned the chapel from the painter Mark Rothko."
+    source: 1
+    quote: "The Houston landmark, commissioned by John and Dominique de Menil, opened its doors 40 years ago, in February 1971."
+  - says: "It opened in February nineteen seventy one."
+    source: 1
+    quote: "opened its doors 40 years ago, in February 1971."
+  - says: "He had died the year before."
+    source: 1
+    quote: "Rothko committed suicide in 1970."
+  - says: "His son, Christopher, was a child when it opened."
+    source: 1
+    quote: "says Christopher Rothko, the painter's son. He was a child when the Rothko Chapel opened."
+  - says: "He did not come to see it until he was thirty three."
+    source: 1
+    quote: "He didn't come to see it until he was 33 years old"
+  - says: "He talked with them every day."
+    source: 1
+    quote: "he's used to conversing with Rothkos on a daily basis."
+  - says: "I almost left with nothing, he said."
+    source: 1
+    quote: "\"I almost left with nothing,\" Rothko says"
+  - says: "He stayed an hour and fifteen minutes."
+    source: 1
+    quote: "and ended up spending an hour and 15 minutes there."
+  - says: "The time, he said, just sort of stopped running."
+    source: 1
+    quote: "The time just sort of stopped running."
+  - says: "Bright colors stop your vision at the canvas, she said."
+    source: 1
+    quote: "He said the bright colors sort of stop your vision at the canvas, where dark colors go beyond."
+  - says: "Inside, a skylight lets the Houston sun in, softly, and as clouds pass outside, the paintings change."
+    source: 1
+    quote: "A baffled skylight subdues the bright Houston sun, and the surfaces of the paintings change dramatically as unseen clouds pass outside."
+  - says: "The chapel's historian said Rothko chose the dark on purpose."
+    source: 1
+    quote: "And there's a reason for that, says Umari."
+  - says: "But on that first visit, in here, nothing happened."
+    source: 1
+    quote: "he was surprised that at first, the paintings didn't really communicate with him."
+sources:
+  - title: "Meditation And Modern Art Meet In Rothko Chapel"
+    publisher: "NPR, 1 March 2011"
+    url: https://www.npr.org/2011/03/01/134160717/meditation-and-modern-art-meet-in-rothko-chapel
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-the-time-stopped-running/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76
+    audioBytes: 1216722
+    transcript:
+      totalS: 76
+      lines:
+        - text: In front of you is a pool, and in it a steel obelisk, standing on its point.
+          atS: 0
+          durationS: 4.61
+        - text: Behind it, a brick building with eight sides and no windows.
+          atS: 4.82
+          durationS: 3.7
+        - text: Inside are fourteen enormous paintings that, at first, look almost black.
+          atS: 8.77
+          durationS: 4.92
+        - text: John and Dominique de Menil commissioned the chapel from the painter Mark Rothko.
+          atS: 14.07
+          durationS: 5.7
+        - text: It opened in February nineteen seventy one.
+          atS: 20.21
+          durationS: 2.79
+        - text: Rothko did not live to see it.
+          atS: 23.6
+          durationS: 1.9
+        - text: He had died the year before.
+          atS: 25.89
+          durationS: 1.82
+        - text: His son, Christopher, was a child when it opened.
+          atS: 28.15
+          durationS: 3.07
+        - text: He did not come to see it until he was thirty three.
+          atS: 31.6
+          durationS: 2.87
+        - text: He grew up with his father's paintings.
+          atS: 35.17
+          durationS: 2.07
+        - text: He talked with them every day.
+          atS: 37.62
+          durationS: 1.84
+        - text: But on that first visit, in here, nothing happened.
+          atS: 39.89
+          durationS: 3.19
+        - text: I almost left with nothing, he said.
+          atS: 43.9
+          durationS: 2.53
+        - text: He stayed a little longer.
+          atS: 46.71
+          durationS: 1.44
+        - text: He stayed an hour and fifteen minutes.
+          atS: 48.47
+          durationS: 2.19
+        - text: The time, he said, just sort of stopped running.
+          atS: 51.11
+          durationS: 3.06
+        - text: The chapel's historian said Rothko chose the dark on purpose.
+          atS: 54.55
+          durationS: 3.96
+        - text: Bright colors stop your vision at the canvas, she said.
+          atS: 58.79
+          durationS: 3.23
+        - text: Dark colors go beyond.
+          atS: 62.34
+          durationS: 1.63
+        - text: Look at the door.
+          atS: 64.35
+          durationS: 0.93
+        - text: Inside, a skylight lets the Houston sun in, softly, and as clouds pass outside, the paintings change.
+          atS: 65.72
+          durationS: 7.85
+        - text: Give them longer than you think.
+          atS: 74.08
+          durationS: 1.89

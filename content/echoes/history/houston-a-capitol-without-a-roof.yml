@@ -1,0 +1,182 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Downtown.
+# Listening spot: the corner of Main Street and Texas Avenue, beside the Rice Hotel building at 917 Texas Avenue, which occupies the site of the Capitol of the Republic of Texas, 1837 to 1839 (WPA Houston guide, 1942).
+# Position: Overture road segments put Main at Texas Avenue at 29.75996, -95.36255 and Travis at Texas at 29.76050, -95.36343; the spot is on Texas Avenue between them, on the hotel side (medium confidence for which side of the street).
+id: houston-a-capitol-without-a-roof
+title: "A Capitol Without a Roof"
+summary: "In May 1837 the Congress of the Republic of Texas met on this corner, in a capitol with no roof. Audubon found the benches soaked."
+place: "Site of the Capitol of the Republic of Texas, Rice Hotel, Main Street at Texas Avenue, Downtown Houston"
+at: { lat: 29.76015, lng: -95.36290 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 90
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, downtown, republic-of-texas, capitol, rice-hotel, audubon, sam-houston, 1837]
+teaser: "Houston was a national capital before it had roofs. The Congress met here in the rain."
+script: |
+  Look at the old hotel on this corner. Before it was a hotel, this was the capitol of a country. The Republic of Texas.
+
+  And for its first weeks, the capitol had no roof.
+
+  In the spring of eighteen thirty seven, Houston was a few months old. The Allen brothers had promised Congress a building if it made their town the capital, and Congress said yes. Then the lumber, ordered from Maine, failed to arrive.
+
+  So a contractor, Thomas Ward, talked carpenters out of the town's saloons and started a one storey building on Main Street.
+
+  By the first of May, when Congress met, it still had no roof. Branches were cut and fastened along the ridgepole.
+
+  On the fifteenth of May, a visitor came to look around. John James Audubon, the painter of birds. The capitol, he wrote, was yet without a roof. The floor, the benches and the tables of both houses of Congress were as wet as his own clothes had been that morning.
+
+  The hammering went on during sessions. A member asked that Major Ward be told to stop work that disturbed Congress. The motion was rejected.
+
+  Two years later, the government moved to Austin, and this corner became a hotel site.
+
+  Look up at the hotel. A country's laws were once made here, under branches.
+
+  And the work went on through the debates.
+
+pronunciations:
+  - written: Audubon
+    say: AW-duh-bon
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Before it was a hotel, this was the capitol of a country."
+    source: 1
+    quote: "ing that was the Capitol of the Republic of Texas during 1837-39."
+  - says: "In the spring of eighteen thirty seven, Houston was a few months old."
+    source: 1
+    quote: "This was about the first of Janu- ary, 1837, when I discovered Houston."
+  - says: "The Allen brothers had promised Congress a building if it made their town the capital, and Congress said yes."
+    source: 1
+    quote: "I also offer to build a State house and the necessary offices for the various depart- ments of the government"
+  - says: "The Allen brothers had promised Congress a building if it made their town the capital, and Congress said yes."
+    source: 1
+    quote: "so attractive were the promises of the Allen brothers that when the final vote was cast, Houston was declared to have received the majority."
+  - says: "Then the lumber, ordered from Maine, failed to arrive."
+    source: 1
+    quote: "Because lumber ordered from Maine for the capital had not arrived"
+  - says: "So a contractor, Thomas Ward, talked carpenters out of the town's saloons and started a one storey building on Main Street."
+    source: 1
+    quote: "Col. Thomas W. Ward, construction contractor, persuaded enough carpenters to leave other jobs and the bars of the Round Top and the Last Chance, to begin work on a makeshift capitol on April 16"
+  - says: "So a contractor, Thomas Ward, talked carpenters out of the town's saloons and started a one storey building on Main Street."
+    source: 1
+    quote: "erected on Main Street a one-story building covering the front of an entire block."
+  - says: "By the first of May, when Congress met, it still had no roof."
+    source: 1
+    quote: "By May 1 the Capitol still was unfinished, lacking even a roof."
+  - says: "Branches were cut and fastened along the ridgepole."
+    source: 1
+    quote: "Branches were cut and fastened to the ridgepole, and the two houses of Congress met in separate chambers."
+  - says: "On the fifteenth of May, a visitor came to look around."
+    source: 1
+    quote: "John J. Audubon, in his diary on May 15, 1837, related how he and his party visited the Capitol and amused themselves by walking about it."
+  - says: "The capitol, he wrote, was yet without a roof."
+    source: 1
+    quote: "“was yet without a roof, and the floor, benches and tables of both houses of Congress were as well saturated with water as our clothes had been in the morning.”"
+  - says: "The floor, the benches and the tables of both houses of Congress were as wet as his own clothes had been that morning."
+    source: 1
+    quote: "the floor, benches and tables of both houses of Congress were as well saturated with water as our clothes had been in the morning."
+  - says: "A member asked that Major Ward be told to stop work that disturbed Congress."
+    source: 1
+    quote: "a resolution was pre- sented asking that “Major Ward be required to discontinue such labor on this house as disturbs the deliberations of congress during the hours of its session.”"
+  - says: "The motion was rejected."
+    source: 1
+    quote: "This was rejected."
+  - says: "Two years later, the government moved to Austin, and this corner became a hotel site."
+    source: 1
+    quote: "Since the day the building ceased to serve as the Capitol of the Republic, on September 10, 1839, this corner has been used almost exclusively as a hotel site."
+  - says: "Two years later, the government moved to Austin, and this corner became a hotel site."
+    source: 1
+    quote: "capital had chosen Waterloo, modern Austin."
+  - says: "The Republic of Texas."
+    source: 1
+    quote: "ing that was the Capitol of the Republic of Texas during 1837-39."
+  - says: "And for its first weeks, the capitol had no roof."
+    source: 1
+    quote: "By May 1 the Capitol still was unfinished, lacking even a roof."
+  - says: "And for its first weeks, the capitol had no roof."
+    source: 1
+    quote: "John J. Audubon, in his diary on May 15, 1837, related how he and his party visited the Capitol and amused themselves by walking about it. He also remarked that it “was yet without a roof"
+  - says: "John James Audubon, the painter of birds."
+    source: 1
+    quote: "John J. Audubon, the naturalist, visited President Houston in the spring of 1837"
+sources:
+  - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), quoting the diary of John James Audubon and the House Journal"
+    publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"
+    url: https://archive.org/details/houstonahistory00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-a-capitol-without-a-roof/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 89.7
+    audioBytes: 1436568
+    transcript:
+      totalS: 89.7
+      lines:
+        - text: Look at the old hotel on this corner.
+          atS: 0
+          durationS: 2.19
+        - text: Before it was a hotel, this was the capitol of a country.
+          atS: 2.71
+          durationS: 4.05
+        - text: The Republic of Texas.
+          atS: 7.08
+          durationS: 1.6
+        - text: And for its first weeks, the capitol had no roof.
+          atS: 9.13
+          durationS: 3.52
+        - text: In the spring of eighteen thirty seven, Houston was a few months old.
+          atS: 13.34
+          durationS: 4.05
+        - text: The Allen brothers had promised Congress a building if it made their town the capital, and Congress said yes.
+          atS: 17.83
+          durationS: 6
+        - text: Then the lumber, ordered from Maine, failed to arrive.
+          atS: 24.79
+          durationS: 3.36
+        - text: So a contractor, Thomas Ward, talked carpenters out of the town's saloons and started a one storey building on Main Street.
+          atS: 28.65
+          durationS: 7.53
+        - text: By the first of May, when Congress met, it still had no roof.
+          atS: 36.79
+          durationS: 4.24
+        - text: Branches were cut and fastened along the ridgepole.
+          atS: 41.47
+          durationS: 3.22
+        - text: On the fifteenth of May, a visitor came to look around.
+          atS: 45.29
+          durationS: 3.43
+        - text: John James Audubon, the painter of birds.
+          atS: 49.32
+          durationS: 4.2
+        - text: The capitol, he wrote, was yet without a roof.
+          atS: 53.96
+          durationS: 3.19
+        - text: The floor, the benches and the tables of both houses of Congress were as wet as his own clothes had been that morning.
+          atS: 57.48
+          durationS: 7.54
+        - text: The hammering went on during sessions.
+          atS: 65.29
+          durationS: 2.46
+        - text: A member asked that Major Ward be told to stop work that disturbed Congress.
+          atS: 68.2
+          durationS: 4.86
+        - text: The motion was rejected.
+          atS: 73.39
+          durationS: 1.92
+        - text: Two years later, the government moved to Austin, and this corner became a hotel site.
+          atS: 76.42
+          durationS: 5.19
+        - text: Look up at the hotel.
+          atS: 82.21
+          durationS: 1.37
+        - text: A country's laws were once made here, under branches.
+          atS: 83.71
+          durationS: 3.44
+        - text: And the work went on through the debates.
+          atS: 87.32
+          durationS: 2.4

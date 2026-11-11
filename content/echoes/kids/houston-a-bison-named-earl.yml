@@ -1,0 +1,163 @@
+# Drafted by Claude Code (2026-11-10) for Houston, Hermann Park and the Museum District: a children's echo.
+# Listening spot: Hermann Park by the Houston Zoo, which grew from one bison given to the city in 1920 and moved to a 34-acre site in the park (WPA Houston guide, 1942).
+# Position: Wikidata Q2753621 (Houston Zoo), 29.71613, -95.39057; the radius takes in the zoo's edge in the park (medium confidence for where a listener stands).
+id: houston-a-bison-named-earl
+title: "A Bison Named Earl"
+summary: "Houston's zoo began in 1920 with one bison from a national park herd. The city named him Earl, and found him a friend: a deer."
+place: "Houston Zoo, Hermann Park, Museum District, Houston, Texas"
+at: { lat: 29.71613, lng: -95.39057 }
+triggerRadiusKm: 0.15
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 67
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [houston, hermann-park, houston-zoo, animals, bison, family]
+teaser: "The whole zoo started with one big, shaggy animal called Earl."
+script: |
+  Somewhere past these trees is the Houston Zoo. Hundreds and hundreds of animals.
+
+  It started with just one.
+
+  In nineteen twenty, the United States government had too many bison in its national parks. So it gave some away. One of them came to Houston.
+
+  The city put him in a little park downtown, and gave him a name. Earl.
+
+  Earl needed company. The city bought him a girl bison from a herd in west Texas, but sadly she did not live long. So his next friend was a deer, given by a fishing club.
+
+  Then more animals came. Strange pets. Gifts. A lion, bought from a circus.
+
+  On the first of December, nineteen twenty four, the zoo officially opened. By the next year it had moved here, to Hermann Park, with more than four hundred animals, three hundred birds and a hundred reptiles.
+
+  And their dinner? Everything from meat to dried flies.
+
+  So when you walk past the animals today, say thank you to the very first one.
+
+  Thank you, Earl.
+
+pronunciations: []
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In nineteen twenty, the United States government had too many bison in its national parks."
+    source: 1
+    quote: "The Zoological Gardens originated in 1920, when the United States Govern- ment thinned out bison herds in national parks."
+  - says: "One of them came to Houston."
+    source: 1
+    quote: "One of the animals was given to"
+  - says: "The city put him in a little park downtown, and gave him a name."
+    source: 1
+    quote: "the city, placed in the zoo in Sam Houston Park and was promptly named “Earl.”"
+  - says: "The city bought him a girl bison from a herd in west Texas, but sadly she did not live long."
+    source: 1
+    quote: "The City Council purchased a female bison from the Goodnight herd in west Texas, but this animal lived only a short time."
+  - says: "So his next friend was a deer, given by a fishing club."
+    source: 1
+    quote: "“Earl’s” next companion was a deer donated by the Camp Street Fishing Club."
+  - says: "A lion, bought from a circus."
+    source: 1
+    quote: "a lion and several other animals were purchased from a circus."
+  - says: "On the first of December, nineteen twenty four, the zoo officially opened."
+    source: 1
+    quote: "On December 1, 1924, after a delay caused by a quarantine against a widespread epidemic of hoof and mouth disease, the zoo was officially opened."
+  - says: "By the next year it had moved here, to Hermann Park, with more than four hundred animals, three hundred birds and a hundred reptiles."
+    source: 1
+    quote: "[It} has more than 800 specimens, about 400 animals, 300 birds and 100 reptiles. .. . The zoo has moved to the new 34-acre site in Hermann Park"
+  - says: "Everything from meat to dried flies."
+    source: 1
+    quote: "The animal food bill for the inmates, which ranges in variety from meat to dried flies, totals about $10,000."
+  - says: "Somewhere past these trees is the Houston Zoo."
+    source: 1
+    quote: "z00- logical gardens containing more than 1,000 specimens"
+  - says: "Hundreds and hundreds of animals."
+    source: 1
+    quote: "z00- logical gardens containing more than 1,000 specimens"
+  - says: "It started with just one."
+    source: 1
+    quote: "The Zoological Gardens originated in 1920, when the United States Govern- ment thinned out bison herds in national parks. One of the animals was given to"
+  - says: "So when you walk past the animals today, say thank you to the very first one."
+    source: 1
+    quote: "The Zoological Gardens originated in 1920, when the United States Govern- ment thinned out bison herds in national parks. One of the animals was given to"
+  - says: "Thank you, Earl."
+    source: 1
+    quote: "placed in the zoo in Sam Houston Park and was promptly named “Earl.”"
+sources:
+  - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), Hermann Park"
+    publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"
+    url: https://archive.org/details/houstonahistory00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/houston-a-bison-named-earl/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 66.8
+    audioBytes: 1070436
+    transcript:
+      totalS: 66.8
+      lines:
+        - text: Somewhere past these trees is the Houston Zoo.
+          atS: 0
+          durationS: 2.97
+        - text: Hundreds and hundreds of animals.
+          atS: 3.22
+          durationS: 2.05
+        - text: It started with just one.
+          atS: 5.65
+          durationS: 1.53
+        - text: In nineteen twenty, the United States government had too many bison in its national parks.
+          atS: 7.63
+          durationS: 5.19
+        - text: So it gave some away.
+          atS: 13.26
+          durationS: 1.45
+        - text: One of them came to Houston.
+          atS: 15.31
+          durationS: 1.57
+        - text: The city put him in a little park downtown, and gave him a name.
+          atS: 17.32
+          durationS: 3.47
+        - text: Earl.
+          atS: 21.3
+          durationS: 0.55
+        - text: Earl needed company.
+          atS: 22.45
+          durationS: 1.32
+        - text: The city bought him a girl bison from a herd in west Texas, but sadly she did not live long.
+          atS: 24.22
+          durationS: 5.41
+        - text: So his next friend was a deer, given by a fishing club.
+          atS: 30.14
+          durationS: 3.09
+        - text: Then more animals came.
+          atS: 33.55
+          durationS: 1.45
+        - text: Strange pets.
+          atS: 35.52
+          durationS: 1.3
+        - text: Gifts.
+          atS: 37.26
+          durationS: 0.71
+        - text: A lion, bought from a circus.
+          atS: 38.35
+          durationS: 2.55
+        - text: On the first of December, nineteen twenty four, the zoo officially opened.
+          atS: 41.41
+          durationS: 5.22
+        - text: By the next year it had moved here, to Hermann Park, with more than four hundred animals, three hundred birds and a hundred reptiles.
+          atS: 47.08
+          durationS: 7.81
+        - text: And their dinner?
+          atS: 55.17
+          durationS: 0.86
+        - text: Everything from meat to dried flies.
+          atS: 56.35
+          durationS: 2.81
+        - text: So when you walk past the animals today, say thank you to the very first one.
+          atS: 59.68
+          durationS: 4.77
+        - text: Thank you, Earl.
+          atS: 64.96
+          durationS: 1.87

@@ -1,0 +1,177 @@
+# Drafted by Claude Code (2026-11-10) for Houston, NASA and Clear Lake cluster.
+# Listening spot: outside Building 30, the Mission Control Center at the Johnson Space Center, the room Apollo 13's crew was talking to (NPS; HAER TX-109-C). Reached on the Space Center Houston tram tour.
+# Position: about 40 m from the Apollo 11 echo at the same building; Wikidata Q5112041 puts the building at 29.55828, -95.08885 (high confidence for the building).
+id: houston-weve-had-a-problem
+title: "We've Had a Problem"
+summary: "In April 1970 an oxygen tank exploded on Apollo 13, and a sentence the whole world now quotes was spoken to the room in this building."
+place: "Mission Control, Building 30, Johnson Space Center, Houston, Texas"
+at: { lat: 29.55860, lng: -95.08870 }
+triggerRadiusKm: 0.06
+inside: true
+category: inspo
+inspo:
+  kind: connection
+  evidence: building
+format: short
+durationS: 71
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, nasa, johnson-space-center, clear-lake, apollo-13, mission-control, quotes]
+teaser: "Everyone knows the line. It was said to a room in this building."
+script: |
+  You are outside Building Thirty, Mission Control. Somewhere inside is the room that heard a sentence people still quote, half a century later.
+
+  It was a calm sentence about a disaster.
+
+  In April nineteen seventy, Apollo Thirteen was three days out, on its way to the Moon. An electrical short set off an explosion in an oxygen tank.
+
+  Fred Haise began, Okay, Houston.
+
+  Then the commander, Jim Lovell. I believe we've had a problem here.
+
+  From this building, the capsule communicator asked him to say again.
+
+  Houston, we've had a problem.
+
+  Stand by, thirteen, came the answer. We're looking at it.
+
+  For days, the flight controllers in here worked out how to bring three men home in a crippled spacecraft. Gene Kranz was the flight director. Throughout the entire course of Apollo Thirteen, he said, there was never any doubt that we'd get the crew back.
+
+  They got them back.
+
+  And the words they spoke into this room live on.
+
+  And the first word of it was the name of this city.
+
+pronunciations:
+  - written: Haise
+    say: HAYZ
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In April nineteen seventy, Apollo Thirteen was three days out, on its way to the Moon."
+    source: 1
+    quote: "Narrator: Three days out, barreling toward the Moon, an explosion."
+  - says: "An electrical short set off an explosion in an oxygen tank."
+    source: 2
+    quote: "After an electrical short caused an oxygen tank to explode on the spacecraft Odyssey, Apollo 13’s Command-Service Module"
+  - says: "Fred Haise began, Okay, Houston."
+    source: 1
+    quote: "Fred Haise: Okay, Houston—"
+  - says: "I believe we've had a problem here."
+    source: 1
+    quote: "Jim Lovell: I believe we've had a problem here."
+  - says: "From this building, the capsule communicator asked him to say again."
+    source: 1
+    quote: "CAPCOM: Houston. Say again, please."
+  - says: "Houston, we've had a problem."
+    source: 1
+    quote: "Jim Lovell: Houston, we've had a problem."
+  - says: "Stand by, thirteen, came the answer."
+    source: 1
+    quote: "CAPCOM: Stand by, 13. We're looking at it."
+  - says: "For days, the flight controllers in here worked out how to bring three men home in a crippled spacecraft."
+    source: 2
+    quote: "While the flight controllers and engineers at MCC tried to find a way to bring home the crew of the Odyssey."
+  - says: "Gene Kranz was the flight director."
+    source: 1
+    quote: "Eugene Kranz was the flight director when the problem developed."
+  - says: "Throughout the entire course of Apollo Thirteen, he said, there was never any doubt that we'd get the crew back."
+    source: 1
+    quote: "Throughout the entire course of Apollo 13 there was never any doubt that we’d get the crew back"
+  - says: "They got them back."
+    source: 1
+    quote: "linked themselves with their technology, and cheated tragedy."
+  - says: "And the words they spoke into this room live on."
+    source: 2
+    quote: "The words live on in the America’s collective memory, a reminder of the heroism of the Apollo Program’s astronauts and flight controllers."
+  - says: "You are outside Building Thirty, Mission Control."
+    source: 2
+    quote: "The Control Center itself would be located in two interconnected three- story structures, called MSC Building 30"
+  - says: "Somewhere inside is the room that heard a sentence people still quote, half a century later."
+    source: 2
+    quote: "Commander James A. Lovell called down to the Mission Control Center to say, “Houston … we’ve got a problem..” The words live on in the America’s collective memory"
+  - says: "Then the commander, Jim Lovell."
+    source: 1
+    quote: "Jim Lovell: I believe we've had a problem here."
+  - says: "Then the commander, Jim Lovell."
+    source: 2
+    quote: "the flight crew of commander James A. Lovell, command module pilot Swigert, and lunar module pilot Fred W. Haise."
+  - says: "And the first word of it was the name of this city."
+    source: 1
+    quote: "Jim Lovell: Houston, we've had a problem."
+sources:
+  - title: "The Time of Apollo (video transcript, ARC 649447)"
+    publisher: "National Archives"
+    url: https://www.archives.gov/files/social-media/transcripts/transcript-time-of-apollo-649447.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Johnson Space Center, Apollo Mission Control, HAER TX-109-C, Written Historical and Descriptive Data"
+    publisher: "Historic American Engineering Record, National Park Service (Library of Congress)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx1100/tx1134/data/tx1134data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-weve-had-a-problem/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.1
+    audioBytes: 1137727
+    transcript:
+      totalS: 71.1
+      lines:
+        - text: You are outside Building Thirty, Mission Control.
+          atS: 0
+          durationS: 3.06
+        - text: Somewhere inside is the room that heard a sentence people still quote, half a century later.
+          atS: 3.88
+          durationS: 5.6
+        - text: It was a calm sentence about a disaster.
+          atS: 9.86
+          durationS: 2.84
+        - text: In April nineteen seventy, Apollo Thirteen was three days out, on its way to the Moon.
+          atS: 13.51
+          durationS: 6.3
+        - text: An electrical short set off an explosion in an oxygen tank.
+          atS: 20.63
+          durationS: 4.24
+        - text: Fred Haise began, Okay, Houston.
+          atS: 25.68
+          durationS: 2.98
+        - text: Then the commander, Jim Lovell.
+          atS: 28.84
+          durationS: 2.07
+        - text: I believe we've had a problem here.
+          atS: 31.72
+          durationS: 1.61
+        - text: From this building, the capsule communicator asked him to say again.
+          atS: 34.15
+          durationS: 4.07
+        - text: Houston, we've had a problem.
+          atS: 38.92
+          durationS: 2.18
+        - text: Stand by, thirteen, came the answer.
+          atS: 41.54
+          durationS: 2.93
+        - text: We're looking at it.
+          atS: 44.98
+          durationS: 1.23
+        - text: For days, the flight controllers in here worked out how to bring three men home in a crippled spacecraft.
+          atS: 46.81
+          durationS: 6.06
+        - text: Gene Kranz was the flight director.
+          atS: 53.38
+          durationS: 2.17
+        - text: Throughout the entire course of Apollo Thirteen, he said, there was never any doubt that we'd get the crew back.
+          atS: 56.16
+          durationS: 6.55
+        - text: They got them back.
+          atS: 63.22
+          durationS: 1.15
+        - text: And the words they spoke into this room live on.
+          atS: 64.81
+          durationS: 2.76
+        - text: And the first word of it was the name of this city.
+          atS: 68.08
+          durationS: 2.97

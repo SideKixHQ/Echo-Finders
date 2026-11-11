@@ -1,0 +1,245 @@
+# Drafted by Claude Code (2026-11-10) for Houston, NASA and Clear Lake cluster.
+# Listening spot: Building 30, the Christopher C. Kraft Jr. Mission Control Center at the Johnson Space Center, where the Apollo Mission Control room is (NPS, HAER TX-109-C). Visitors reach it on the Space Center Houston tram tour.
+# Position: Wikidata Q5112041 (Christopher C. Kraft Jr. Mission Control Center), 29.55828, -95.08885 (high confidence for the building).
+id: houston-a-bunch-of-guys-about-to-turn-blue
+title: "A Bunch of Guys About to Turn Blue"
+summary: "Sixteen days before Apollo 11 landed, a young controller here called a wrong abort in practice. On the day, the alarm came back."
+place: "Apollo Mission Control, Building 30, Johnson Space Center, Houston, Texas"
+at: { lat: 29.55828, lng: -95.08885 }
+triggerRadiusKm: 0.08
+inside: true
+category: history
+format: short
+durationS: 94
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.9
+tags: [houston, nasa, johnson-space-center, clear-lake, apollo-11, mission-control, moon]
+teaser: "Neil Armstrong's first call from the Moon began with the word Houston. It came to this building."
+script: |
+  You are at Building Thirty, Mission Control. Every Apollo flight was run from a room in here, including the one that first landed men on the Moon.
+
+  Sixteen days before that landing, the controllers here failed a test.
+
+  On the fifth of July, nineteen sixty nine, they ran a practice landing. Steve Bales, the twenty six year old guidance officer, saw a computer alarm he had never seen before. He did not know what it meant. He called an abort.
+
+  The abort was wrong. The alarm was harmless. The flight director, Gene Kranz, told him to go and write rules for every alarm the computer could throw.
+
+  On the twentieth of July, the real Eagle was falling toward the Moon. Then, on its computer, an alarm. Twelve oh two.
+
+  From the Moon, Neil Armstrong asked for a reading on it.
+
+  Bales had his answer. Flight, he said, we're go on the alarm. Twenty seconds, maybe longer. It was an eternity in the control room, he said later.
+
+  More alarms came. The room kept saying go.
+
+  Then Buzz Aldrin's voice. Contact light. Engine stop.
+
+  And Armstrong. Houston. Tranquility Base here. The Eagle has landed.
+
+  His first call to Earth from the Moon began with the name of this city.
+
+  The answer came back from this building. Roger, Tranquility. You got a bunch of guys about to turn blue.
+
+  We're breathing again.
+
+pronunciations: []
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Every Apollo flight was run from a room in here, including the one that first landed men on the Moon."
+    source: 1
+    quote: "This facility was used to monitor nine Gemini and all Apollo flights, including the flight of Apollo 11 that first landed men on the moon."
+  - says: "Sixteen days before that landing, the controllers here failed a test."
+    source: 2
+    quote: "Bales and Garman immediately thought of the July 5 landing simulation."
+  - says: "On the fifth of July, nineteen sixty nine, they ran a practice landing."
+    source: 2
+    quote: "Bales and Garman immediately thought of the July 5 landing simulation."
+  - says: "Steve Bales, the twenty six year old guidance officer, saw a computer alarm he had never seen before."
+    source: 2
+    quote: "26-year-old Steve Bales, the guidance officer in mission control, suddenly saw a computer alarm code — 1201 — flash on his monitor. He had never seen a code like that during earlier training runs and he had no idea what it meant."
+  - says: "He called an abort."
+    source: 2
+    quote: "\"Flight, Guidance,\" he called over his headset to Kranz. \"I've got a bunch of computer alarms. Abort the landing ... ABORT!\""
+  - says: "The alarm was harmless."
+    source: 2
+    quote: "Richard Koos, the simulation supervisor who added the computer alarms to the final test run, said the alarms in question were not mission critical."
+  - says: "The flight director, Gene Kranz, told him to go and write rules for every alarm the computer could throw."
+    source: 2
+    quote: "\"He said, I want you to go and add these (computer alarms) to your rules. We didn't have any rules about them."
+  - says: "On the twentieth of July, the real Eagle was falling toward the Moon."
+    source: 3
+    quote: "Narrator: Sunday, July 20, 1969."
+  - says: "Twelve oh two."
+    source: 2
+    quote: "Aldrin entered the command \"and wham, he says we just got an alarm, 1202,\" Bales said."
+  - says: "From the Moon, Neil Armstrong asked for a reading on it."
+    source: 3
+    quote: "Neil Armstrong: Give us a reading on the 1202 program alarm."
+  - says: "Flight, he said, we're go on the alarm."
+    source: 2
+    quote: "And I say, Flight, we're GO on the alarm."
+  - says: "Twenty seconds, maybe longer."
+    source: 2
+    quote: "Now, it had been 20 seconds, maybe? Maybe longer."
+  - says: "It was an eternity in the control room, he said later."
+    source: 2
+    quote: "It was an eternity in the control room."
+  - says: "Contact light."
+    source: 3
+    quote: "Ed Aldrin: Contact light. Okay. Engine stop."
+  - says: "Houston."
+    source: 3
+    quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
+  - says: "His first call to Earth from the Moon began with the name of this city."
+    source: 3
+    quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
+  - says: "Roger, Tranquility."
+    source: 3
+    quote: "CAPCOM: Roger Tranquility. We copy you on the ground. You got a bunch of guys about to turn"
+  - says: "You got a bunch of guys about to turn blue."
+    source: 3
+    quote: "You got a bunch of guys about to turn"
+  - says: "We're breathing again."
+    source: 3
+    quote: "We’re breathing again. Thanks a lot."
+  - says: "You are at Building Thirty, Mission Control."
+    source: 1
+    quote: "The Apollo Mission Control Center, in Building 30 at the Lyndon B. Johnson Manned Space Flight Center in Houston, Texas"
+  - says: "Tranquility Base here."
+    source: 3
+    quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
+  - says: "The Eagle has landed."
+    source: 3
+    quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
+  - says: "Then Buzz Aldrin's voice."
+    source: 3
+    quote: "Ed Aldrin: Contact light. Okay. Engine stop."
+  - says: "Then Buzz Aldrin's voice."
+    source: 2
+    quote: "mission commander Neil Armstrong, lunar module pilot Buzz Aldrin and command module pilot Mike Collins shot smoothly into Earth orbit."
+  - says: "And Armstrong."
+    source: 3
+    quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
+sources:
+  - title: "Apollo Mission Control Center"
+    publisher: "National Park Service, Aviation: From Sand Dunes to Sonic Booms"
+    url: https://www.nps.gov/articles/apollo-mission-control-center.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The inside story of Apollo 11's nail-biting descent to land on the moon"
+    publisher: "CBS News, July 2019"
+    url: https://www.cbsnews.com/news/apollo-11-moon-landing-anniversary-nail-biting-descent-to-the-surface-of-the-moon/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "The Eagle Has Landed, 1969 (video transcript, ARC 45017)"
+    publisher: "National Archives"
+    url: https://www.archives.gov/files/social-media/transcripts/transcript-eagle-has-landed-1969-45017.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-a-bunch-of-guys-about-to-turn-blue/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 94.4
+    audioBytes: 1511801
+    transcript:
+      totalS: 94.4
+      lines:
+        - text: You are at Building Thirty, Mission Control.
+          atS: 0
+          durationS: 2.9
+        - text: Every Apollo flight was run from a room in here, including the one that first landed men on the Moon.
+          atS: 4.02
+          durationS: 5.69
+        - text: Sixteen days before that landing, the controllers here failed a test.
+          atS: 10.4
+          durationS: 4.5
+        - text: On the fifth of July, nineteen sixty nine, they ran a practice landing.
+          atS: 15.51
+          durationS: 4.13
+        - text: Steve Bales, the twenty six year old guidance officer, saw a computer alarm he had never seen before.
+          atS: 20.6
+          durationS: 6.02
+        - text: He did not know what it meant.
+          atS: 27.32
+          durationS: 1.66
+        - text: He called an abort.
+          atS: 29.68
+          durationS: 1.28
+        - text: The abort was wrong.
+          atS: 31.77
+          durationS: 1.37
+        - text: The alarm was harmless.
+          atS: 33.65
+          durationS: 1.63
+        - text: The flight director, Gene Kranz, told him to go and write rules for every alarm the computer could throw.
+          atS: 35.6
+          durationS: 6.59
+        - text: On the twentieth of July, the real Eagle was falling toward the Moon.
+          atS: 42.7
+          durationS: 4.32
+        - text: Then, on its computer, an alarm.
+          atS: 47.46
+          durationS: 2.66
+        - text: Twelve oh two.
+          atS: 50.63
+          durationS: 1.39
+        - text: From the Moon, Neil Armstrong asked for a reading on it.
+          atS: 52.81
+          durationS: 2.93
+        - text: Bales had his answer.
+          atS: 56.24
+          durationS: 1.36
+        - text: Flight, he said, we're go on the alarm.
+          atS: 58.03
+          durationS: 2.92
+        - text: Twenty seconds, maybe longer.
+          atS: 61.23
+          durationS: 2.05
+        - text: It was an eternity in the control room, he said later.
+          atS: 63.88
+          durationS: 3.05
+        - text: More alarms came.
+          atS: 67.72
+          durationS: 1.22
+        - text: The room kept saying go.
+          atS: 69.25
+          durationS: 1.51
+        - text: Then Buzz Aldrin's voice.
+          atS: 71.04
+          durationS: 1.61
+        - text: Contact light.
+          atS: 72.83
+          durationS: 1.05
+        - text: Engine stop.
+          atS: 74.05
+          durationS: 0.94
+        - text: And Armstrong.
+          atS: 75.2
+          durationS: 0.95
+        - text: Houston.
+          atS: 76.47
+          durationS: 0.67
+        - text: Tranquility Base here.
+          atS: 77.47
+          durationS: 1.59
+        - text: The Eagle has landed.
+          atS: 79.67
+          durationS: 1.43
+        - text: His first call to Earth from the Moon began with the name of this city.
+          atS: 81.54
+          durationS: 3.88
+        - text: The answer came back from this building.
+          atS: 85.62
+          durationS: 2.22
+        - text: Roger, Tranquility.
+          atS: 88.44
+          durationS: 1.57
+        - text: You got a bunch of guys about to turn blue.
+          atS: 90.26
+          durationS: 2.29
+        - text: We're breathing again.
+          atS: 93.05
+          durationS: 1.36

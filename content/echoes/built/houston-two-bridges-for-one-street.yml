@@ -1,0 +1,166 @@
+# Drafted by Claude Code (2026-11-10) for Houston, the Heights.
+# Listening spot: the Heights Boulevard esplanade at the north end of the twin White Oak Bayou bridges, the southern gateway to Houston Heights (HAER TX-40).
+# Position: HAER TX-40 gives UTM 15/268260/3296070 and 15/268230/3296080 for the two bridges (29.77327, -95.39697 and 29.77335, -95.39728); the spot is about 80 m north, off the bridges, on the boulevard (medium confidence).
+id: houston-two-bridges-for-one-street
+title: "Two Bridges for One Street"
+summary: "Houston Heights crosses White Oak Bayou on twin bridges, because its planner insisted one bridge would not do the boulevard justice."
+place: "White Oak Bayou Bridge, Heights Boulevard, Houston Heights, Texas"
+at: { lat: 29.77405, lng: -95.39712 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [houston, the-heights, heights-boulevard, white-oak-bayou, bridges, streetcars]
+teaser: "One street, two bridges, and a railing that reaches across to hold them together."
+script: |
+  Look at the bridges where Heights Boulevard crosses the bayou. Not one bridge. Two, side by side, with rows of little urn shapes along their railings.
+
+  Most streets make do with one.
+
+  In eighteen ninety one, the Omaha and South Texas Land Company began to lay out more than seventeen hundred acres north of Houston. It was seventy five feet above sea level, the highest ground around. So they called it the Heights.
+
+  The man sent to plan it was the company's treasurer, Daniel Denton Cooley. He gave it a boulevard with a wide grassy strip down the middle, and a streetcar track on each side. It was the first divided boulevard in the Houston area.
+
+  And when it came to the bayou, he would not narrow it. His grandson remembered him insisting on two bridges, to do justice to Heights Boulevard.
+
+  So in eighteen ninety three, two wooden bridges went up here, sixty feet apart, built of more than sixty five thousand feet of lumber.
+
+  In nineteen twenty two, the city replaced them with these, two concrete bridges, each two hundred and forty feet long.
+
+  Look at the inside railings. They wrap around, from one bridge to the other, and join them. It is the only railing like it left in Houston.
+
+  Two bridges, holding hands.
+
+pronunciations: []
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Two, side by side, with rows of little urn shapes along their railings."
+    source: 1
+    quote: "These twin 240'-0\"-long concrete bridges provide a distinctive gateway at the southern end of the Houston Heights neighborhood in the city of Houston. They feature decorative urn-shaped balustrade railings with newels."
+  - says: "In eighteen ninety one, the Omaha and South Texas Land Company began to lay out more than seventeen hundred acres north of Houston."
+    source: 1
+    quote: "developers originally surveyed the Heights in 1891"
+  - says: "In eighteen ninety one, the Omaha and South Texas Land Company began to lay out more than seventeen hundred acres north of Houston."
+    source: 1
+    quote: "He sent company treasurer Daniel Denton Cooley to Houston in 1891 to plan and manage the new 1,765- acre tract."
+  - says: "It was seventy five feet above sea level, the highest ground around."
+    source: 1
+    quote: "Named for its location 75'-0\" above sea level (the highest parcel of land in the area)"
+  - says: "The man sent to plan it was the company's treasurer, Daniel Denton Cooley."
+    source: 1
+    quote: "He sent company treasurer Daniel Denton Cooley to Houston in 1891 to plan and manage the new 1,765- acre tract."
+  - says: "He gave it a boulevard with a wide grassy strip down the middle, and a streetcar track on each side."
+    source: 1
+    quote: "Surveyors laid out the boulevard with two roads, each with streetcar tracks, and a wide grassy esplanade in the center."
+  - says: "It was the first divided boulevard in the Houston area."
+    source: 1
+    quote: "It was the first divided boulevard in the Houston area."
+  - says: "His grandson remembered him insisting on two bridges, to do justice to Heights Boulevard."
+    source: 1
+    quote: "Johnston quotes Cooley's grandson, who said that his grandfather, the town's master planner, insisted on two bridges across the bayou to \"do justice to Heights Boulevard.\""
+  - says: "So in eighteen ninety three, two wooden bridges went up here, sixty feet apart, built of more than sixty five thousand feet of lumber."
+    source: 1
+    quote: "The concrete bridges replaced twin wooden structures built to span White Oak Bayou in 1893"
+  - says: "So in eighteen ninety three, two wooden bridges went up here, sixty feet apart, built of more than sixty five thousand feet of lumber."
+    source: 1
+    quote: "contained over 65,000 feet of lumber"
+  - says: "So in eighteen ninety three, two wooden bridges went up here, sixty feet apart, built of more than sixty five thousand feet of lumber."
+    source: 1
+    quote: "Those bridges were 60'-0\" apart"
+  - says: "In nineteen twenty two, the city replaced them with these, two concrete bridges, each two hundred and forty feet long."
+    source: 1
+    quote: "Date of Construction: 1922."
+  - says: "In nineteen twenty two, the city replaced them with these, two concrete bridges, each two hundred and forty feet long."
+    source: 1
+    quote: "two one-way, 240'-0\"-long reinforced concrete spans."
+  - says: "It is the only railing like it left in Houston."
+    source: 1
+    quote: "The inside railing, which wraps around to connect the two bridges, is the only wrap-around railing left in Houston."
+  - says: "So they called it the Heights."
+    source: 1
+    quote: "Named for its location 75'-0\" above sea level (the highest parcel of land in the area)"
+  - says: "They wrap around, from one bridge to the other, and join them."
+    source: 1
+    quote: "The inside railing, which wraps around to connect the two bridges, is the only wrap-around railing left in Houston."
+  - says: "Not one bridge."
+    source: 1
+    quote: "These twin 240'-0\"-long concrete bridges provide a distinctive gateway at the southern end of the Houston Heights neighborhood in the city of Houston."
+  - says: "Two bridges, holding hands."
+    source: 1
+    quote: "Thus, Washburn physically linked the two bridges and created something rather unique."
+  - says: "Most streets make do with one."
+    source: 1
+    quote: "Johnston quotes Cooley's grandson, who said that his grandfather, the town's master planner, insisted on two bridges across the bayou to \"do justice to Heights Boulevard.\""
+sources:
+  - title: "White Oak Bayou Bridge, HAER TX-40, Written Historical and Descriptive Data"
+    publisher: "Historic American Engineering Record, National Park Service (Library of Congress)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx0700/tx0766/data/tx0766data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-two-bridges-for-one-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84.6
+    audioBytes: 1354230
+    transcript:
+      totalS: 84.6
+      lines:
+        - text: Look at the bridges where Heights Boulevard crosses the bayou.
+          atS: 0
+          durationS: 3.42
+        - text: Not one bridge.
+          atS: 3.67
+          durationS: 1.18
+        - text: Two, side by side, with rows of little urn shapes along their railings.
+          atS: 5.1
+          durationS: 5.31
+        - text: Most streets make do with one.
+          atS: 10.91
+          durationS: 2.13
+        - text: In eighteen ninety one, the Omaha and South Texas Land Company began to lay out more than seventeen hundred acres north of Houston.
+          atS: 13.85
+          durationS: 9.03
+        - text: It was seventy five feet above sea level, the highest ground around.
+          atS: 23.21
+          durationS: 4.52
+        - text: So they called it the Heights.
+          atS: 28.11
+          durationS: 1.59
+        - text: The man sent to plan it was the company's treasurer, Daniel Denton Cooley.
+          atS: 30.08
+          durationS: 4.82
+        - text: He gave it a boulevard with a wide grassy strip down the middle, and a streetcar track on each side.
+          atS: 35.5
+          durationS: 6.04
+        - text: It was the first divided boulevard in the Houston area.
+          atS: 42.15
+          durationS: 3.25
+        - text: And when it came to the bayou, he would not narrow it.
+          atS: 45.78
+          durationS: 3.28
+        - text: His grandson remembered him insisting on two bridges, to do justice to Heights Boulevard.
+          atS: 50.02
+          durationS: 5.29
+        - text: So in eighteen ninety three, two wooden bridges went up here, sixty feet apart, built of more than sixty five thousand feet of lumber.
+          atS: 56.01
+          durationS: 8.9
+        - text: In nineteen twenty two, the city replaced them with these, two concrete bridges, each two hundred and forty feet long.
+          atS: 65.52
+          durationS: 7.5
+        - text: Look at the inside railings.
+          atS: 73.71
+          durationS: 1.69
+        - text: They wrap around, from one bridge to the other, and join them.
+          atS: 75.85
+          durationS: 3.39
+        - text: It is the only railing like it left in Houston.
+          atS: 79.94
+          durationS: 2.41
+        - text: Two bridges, holding hands.
+          atS: 82.67
+          durationS: 1.89

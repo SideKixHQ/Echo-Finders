@@ -1,0 +1,183 @@
+# Drafted by Claude Code (2026-11-11) for Houston, Downtown: legend. Second pass.
+# Listening spot: outside the Julia Ideson Building, 550 McKinney Street, the old central library, where the legend of the caretaker's violin is set (Houston Chronicle, 2015 and 2017).
+# Position: Overture place "Julia Ideson Building", 550 McKinney St, 29.7589, -95.36912 (high confidence for the building). About 120 m from the City Hall echo.
+id: houston-the-caretakers-violin
+title: "The Caretaker's Violin"
+summary: "A caretaker lived in the old library's basement and played his violin upstairs at night. The legend says he still does."
+place: "Julia Ideson Building, 550 McKinney Street, Downtown Houston, Texas"
+at: { lat: 29.75890, lng: -95.36912 }
+triggerRadiusKm: 0.06
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 72
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A ghost story, not history. The caretaker, his dog, his evening violin and his death in November 1936 are as the Houston Chronicle reported them in 2015 and 2017; the music, the scattered sheets and the clicking claws heard since are the legend, and nobody has proved them. The building and the librarian come from the Handbook of Texas. The script says out loud that it is a legend.
+minAge: 0
+quality: 0.8
+tags: [houston, downtown, julia-ideson-building, library, ghosts, legend]
+teaser: "Some nights, after closing, people say the old library plays the violin."
+script: |
+  Look up at the old library, built in the Spanish Renaissance style, and find the top row of windows. Three floors up.
+
+  Some nights, people say, there is music up there after closing. A violin. And the click of a dog's claws on the tile.
+
+  This is a legend. Nobody has proved a note of it.
+
+  The building went up in the nineteen twenties as Houston's central library. Its librarian, Julia Ideson, ran the library for more than forty years. The building carries her name now.
+
+  But the man in this echo lived in the basement. Jacob Frank Cramer. An elderly man, the caretaker. He walked the night rounds with his German shepherd, Petey, at his heels.
+
+  In the evenings, the story goes, he climbed to the third floor, with Petey beside him, and played his violin.
+
+  In November, nineteen thirty six, the librarians found him dead.
+
+  And then the reports began. A violin, somewhere in the building, late at night. Sheets of music found scattered. The tick of a dog's nails, crossing a floor where no dog was.
+
+  Look at the top windows again.
+
+  Julia Ideson got her name on the building.
+
+  The caretaker kept the night shift.
+
+pronunciations: []
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Look up at the old library, built in the Spanish Renaissance style, and find the top row of windows."
+    source: 2
+    quote: "a new Central Library built in Spanish Renaissance style"
+  - says: "Three floors up."
+    source: 1
+    quote: "The 66,000 square foot, three-story Spanish-Renaissance style building located on McKinney Street"
+  - says: "The building went up in the nineteen twenties as Houston's central library."
+    source: 2
+    quote: "The Central Library building, erected in 1926 and later named in her honor in 1951"
+  - says: "Its librarian, Julia Ideson, ran the library for more than forty years."
+    source: 2
+    quote: "She held this position for more than forty years"
+  - says: "The building carries her name now."
+    source: 2
+    quote: "These efforts have made the Julia Ideson Building the architectural centerpiece of the Houston Public Library system"
+  - says: "Jacob Frank Cramer."
+    source: 1
+    quote: "Jacob Frank Cramer, an elderly man who lived in the basement"
+  - says: "An elderly man, the caretaker."
+    source: 3
+    quote: "watch out for the spirit of caretaker Jacob Frank Cramer and Petey"
+  - says: "He walked the night rounds with his German shepherd, Petey, at his heels."
+    source: 1
+    quote: "Petey, a German shepherd dog who would follow Cramer during his night rounds."
+  - says: "In the evenings, the story goes, he climbed to the third floor, with Petey beside him, and played his violin."
+    source: 1
+    quote: "In the evenings, Jacob Frank Cramer, an elderly man who lived in the basement, would go up to the third floor of what is now the Tudor Gallery accompanied by his German Shepherd Petey and play his violin."
+  - says: "In November, nineteen thirty six, the librarians found him dead."
+    source: 1
+    quote: "In November of 1936, 79-year-old Cramer was found dead by the librarians."
+  - says: "A violin, somewhere in the building, late at night."
+    source: 1
+    quote: "the sounds of a violin echoing throughout the library, and a clicking, reminiscent to that of a dog' nails, can be heard walking across the floor."
+  - says: "Sheets of music found scattered."
+    source: 1
+    quote: "Also, sheets of music have been found scattered in various places."
+  - says: "The tick of a dog's nails, crossing a floor where no dog was."
+    source: 3
+    quote: "Listen for clicking sounds made by Petey's toenails on the tile floor."
+  - says: "Julia Ideson got her name on the building."
+    source: 2
+    quote: "The Central Library building, erected in 1926 and later named in her honor in 1951"
+sources:
+  - title: "Is the Julia Ideson building haunted? (This Forgotten Day in Houston, Carolina Gonzales, 16 October 2015)"
+    publisher: "Houston Chronicle (Chron.com)"
+    url: https://www.houstonchronicle.com/this-forgotten-day-in-houston/article/Is-the-Julia-Ideson-building-haunted-6573950.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Ideson, Julia Bedford (Sharon Bice Endelman, revised by R. Matt Abigail)"
+    publisher: "Handbook of Texas Online, Texas State Historical Association"
+    url: https://www.tshaonline.org/handbook/entries/ideson-julia-bedford
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Skip the fake haunted houses and visit some of Houston's really 'haunted' places (Heather Leighton, 16 October 2017)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/news/houston-texas/houston/article/Houston-s-most-haunted-places-12282510.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/houston-the-caretakers-violin/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 71.7
+    audioBytes: 1149012
+    transcript:
+      totalS: 71.7
+      lines:
+        - text: Look up at the old library, built in the Spanish Renaissance style, and find the top row of windows.
+          atS: 0
+          durationS: 5.75
+        - text: Three floors up.
+          atS: 6.13
+          durationS: 1.07
+        - text: Some nights, people say, there is music up there after closing.
+          atS: 7.64
+          durationS: 3.4
+        - text: A violin.
+          atS: 11.29
+          durationS: 0.89
+        - text: And the click of a dog's claws on the tile.
+          atS: 12.5
+          durationS: 2.51
+        - text: This is a legend.
+          atS: 15.45
+          durationS: 1.29
+        - text: Nobody has proved a note of it.
+          atS: 17.34
+          durationS: 1.7
+        - text: The building went up in the nineteen twenties as Houston's central library.
+          atS: 19.74
+          durationS: 3.9
+        - text: Its librarian, Julia Ideson, ran the library for more than forty years.
+          atS: 24.08
+          durationS: 5
+        - text: The building carries her name now.
+          atS: 29.41
+          durationS: 2.02
+        - text: But the man in this echo lived in the basement.
+          atS: 31.87
+          durationS: 2.51
+        - text: Jacob Frank Cramer.
+          atS: 34.82
+          durationS: 1.72
+        - text: An elderly man, the caretaker.
+          atS: 36.86
+          durationS: 2.19
+        - text: He walked the night rounds with his German shepherd, Petey, at his heels.
+          atS: 39.5
+          durationS: 3.99
+        - text: In the evenings, the story goes, he climbed to the third floor, with Petey beside him, and played his violin.
+          atS: 43.87
+          durationS: 6.49
+        - text: In November, nineteen thirty six, the librarians found him dead.
+          atS: 50.45
+          durationS: 3.99
+        - text: And then the reports began.
+          atS: 54.51
+          durationS: 1.63
+        - text: A violin, somewhere in the building, late at night.
+          atS: 56.17
+          durationS: 3.04
+        - text: Sheets of music found scattered.
+          atS: 59.33
+          durationS: 1.88
+        - text: The tick of a dog's nails, crossing a floor where no dog was.
+          atS: 61.28
+          durationS: 3.82
+        - text: Look at the top windows again.
+          atS: 65.42
+          durationS: 1.64
+        - text: Julia Ideson got her name on the building.
+          atS: 67.23
+          durationS: 2.37
+        - text: The caretaker kept the night shift.
+          atS: 69.72
+          durationS: 2.03
