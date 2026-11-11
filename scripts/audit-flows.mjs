@@ -1180,7 +1180,7 @@ async function nearby() {
     `${await p.locator('g.pw-badge').count()} badges, ${of} stops`);
   // How far, in minutes now: the bar gives no distance, the turn card has the next turn's.
   const metres = async () => {
-    const m = /· (\d+) min ·/.exec(await way());
+    const m = /· (\d+) min(?: ·|$)/.exec(await way());
     return m ? Number(m[1]) * 75 : null;
   };
   const away = await metres();
