@@ -42,12 +42,12 @@ script: |
   One verdict stood. The other was erased.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: convicted
-  reviewedBy: "TODO: James (owner), before this can leave draft"
+  reviewedBy: "James (owner), approved 2026-11-11"
   reviewedAt: "2026-11-10"
   contentWarning: "This echo is about a corporate fraud case and the death of a defendant. No violence is described."
 claims:
@@ -120,6 +120,12 @@ claims:
   - says: "Days later, in this courthouse, Skilling was sentenced to twenty four years and four months in prison."
     source: 6
     quote: "Skilling was sentenced today before U.S. District Judge Sim Lake, at the U.S. District Court in Houston."
+  - says: "One verdict stood."
+    source: 6
+    quote: "Former Enron Chief Executive Officer Jeffrey K. Skilling has been sentenced to 24 years and four months in prison on conspiracy, securities fraud and other charges related to the collapse of the Enron Corporation"
+  - says: "One verdict stood."
+    source: 3
+    quote: "A federal judge Tuesday vacated the conviction of Enron’s late founder Kenneth Lay"
 sources:
   - title: "Federal Jury Convicts Former Enron Chief Executives Ken Lay, Jeff Skilling On Fraud, Conspiracy And Related Charges (press release 06-328, 25 May 2006)"
     publisher: "United States Department of Justice"

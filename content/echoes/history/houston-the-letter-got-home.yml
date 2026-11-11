@@ -40,7 +40,7 @@ script: |
 pronunciations:
   - written: Hawkins
     say: HAW-kinz
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It was Camp Logan, an army camp being built to train men for the war in Europe."

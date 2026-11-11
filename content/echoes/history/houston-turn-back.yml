@@ -42,7 +42,7 @@ pronunciations:
     say: DIL-oo
   - written: Santa Anna
     say: SAN-tuh AN-uh
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The Texans camped there, in the curve of the water."
@@ -93,6 +93,9 @@ claims:
   - says: "Santa Anna was not among the prisoners."
     source: 1
     quote: "Santa Anna was captured the next day and brought before Houston"
+  - says: "And all over Texas, people turned around."
+    source: 1
+    quote: "And the Anglo-American civilization of Texas turned back to reclaim its home sites"
 sources:
   - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942)"
     publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"

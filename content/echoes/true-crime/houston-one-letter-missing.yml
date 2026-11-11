@@ -42,12 +42,12 @@ script: |
   One letter.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: convicted
-  reviewedBy: "TODO: James (owner), before this can leave draft"
+  reviewedBy: "James (owner), approved 2026-11-11"
   reviewedAt: "2026-11-10"
   contentWarning: "This echo describes a murder, the killing of an elderly man in his sleep. No violence is described in detail."
 claims:

@@ -45,7 +45,7 @@ script: |
 pronunciations:
   - written: Lafitte
     say: luh-FEET
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "For generations, the country around Houston was full of treasure tales."
@@ -78,6 +78,9 @@ claims:
   - says: "The find brought all the old stories back."
     source: 1
     quote: "That discovery brought forth almost forgotten tales."
+  - says: "Except for one thing that happened here."
+    source: 1
+    quote: "yet in 1929 a pot of gold estimated to contain $2,000 was dug up at the corner of Houston and Washington Avenues where a filling station was being erected."
 sources:
   - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), Folklore and Folkways"
     publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"

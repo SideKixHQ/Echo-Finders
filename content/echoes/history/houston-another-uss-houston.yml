@@ -40,7 +40,7 @@ script: |
   They were replacing men who were still alive.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "One Saturday afternoon in nineteen forty two, a photographer climbed out onto the sign of a movie theater on this block, just to get it all into his picture."
@@ -103,6 +103,9 @@ claims:
   - says: "They were prisoners, forced to build a railway through the jungle between Burma and Thailand."
     source: 2
     quote: "they became slaves forced to build by hand a railway linking Burma and Thailand through impossible jungle terrain."
+  - says: "Stand on Main Street, in the nine hundred block, and look along it."
+    source: 1
+    quote: "The Houston men lined the 900 block of Main Street to be sworn in."
 sources:
   - title: "Duty called (editorial, 28 May 2017)"
     publisher: "Houston Chronicle"

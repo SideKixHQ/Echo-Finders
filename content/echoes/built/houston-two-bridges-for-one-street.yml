@@ -36,7 +36,7 @@ script: |
   Two bridges, holding hands.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Two, side by side, with rows of little urn shapes along their railings."
@@ -87,6 +87,15 @@ claims:
   - says: "They wrap around, from one bridge to the other, and join them."
     source: 1
     quote: "The inside railing, which wraps around to connect the two bridges, is the only wrap-around railing left in Houston."
+  - says: "Not one bridge."
+    source: 1
+    quote: "These twin 240'-0\"-long concrete bridges provide a distinctive gateway at the southern end of the Houston Heights neighborhood in the city of Houston."
+  - says: "Two bridges, holding hands."
+    source: 1
+    quote: "Thus, Washburn physically linked the two bridges and created something rather unique."
+  - says: "Most streets make do with one."
+    source: 1
+    quote: "Johnston quotes Cooley's grandson, who said that his grandfather, the town's master planner, insisted on two bridges across the bayou to \"do justice to Heights Boulevard.\""
 sources:
   - title: "White Oak Bayou Bridge, HAER TX-40, Written Historical and Descriptive Data"
     publisher: "Historic American Engineering Record, National Park Service (Library of Congress)"

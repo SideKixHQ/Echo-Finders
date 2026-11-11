@@ -45,7 +45,7 @@ script: |
   We're breathing again.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Every Apollo flight was run from a room in here, including the one that first landed men on the Moon."
@@ -112,6 +112,15 @@ claims:
     source: 3
     quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
   - says: "The Eagle has landed."
+    source: 3
+    quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
+  - says: "Then Buzz Aldrin's voice."
+    source: 3
+    quote: "Ed Aldrin: Contact light. Okay. Engine stop."
+  - says: "Then Buzz Aldrin's voice."
+    source: 2
+    quote: "mission commander Neil Armstrong, lunar module pilot Buzz Aldrin and command module pilot Mike Collins shot smoothly into Earth orbit."
+  - says: "And Armstrong."
     source: 3
     quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
 sources:

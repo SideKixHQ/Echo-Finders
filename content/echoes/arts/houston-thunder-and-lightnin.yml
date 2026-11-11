@@ -38,7 +38,7 @@ script: |
   Carnegie Hall had him for a night. This street had him for thirty years.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Until twenty seventeen, this was Dowling Street."
@@ -92,6 +92,24 @@ claims:
   - says: "This street had him for thirty years."
     source: 1
     quote: "In 1950 he settled in Houston, but he continued to tour the country periodically."
+  - says: "Emancipation Avenue."
+    source: 3
+    quote: "The city county voted to change Dowling Street, named after a Confederate commander, to Emancipation Avenue in honor of Emancipation Park."
+  - says: "A bluesman who played Carnegie Hall kept coming back to the corners of this street."
+    source: 1
+    quote: "During the early 1960s he played at Carnegie Hall with Pete Seeger and Joan Baez"
+  - says: "A bluesman who played Carnegie Hall kept coming back to the corners of this street."
+    source: 2
+    quote: "Despite recording success, Hopkins continued to play and sing at Houston dance parties, street corners, and Dowling Street establishments."
+  - says: "Thunder, and Lightnin'."
+    source: 1
+    quote: "On the record was a piano player named Wilson (Thunder) Smith; by chance he combined well with Sam to give him his nickname, Lightnin’."
+  - says: "The bars of Dowling Street."
+    source: 2
+    quote: "Despite recording success, Hopkins continued to play and sing at Houston dance parties, street corners, and Dowling Street establishments."
+  - says: "Carnegie Hall had him for a night."
+    source: 1
+    quote: "During the early 1960s he played at Carnegie Hall with Pete Seeger and Joan Baez"
 sources:
   - title: "Hopkins, Sam [Lightnin'] (Alan Lee Haworth)"
     publisher: "Handbook of Texas Online, Texas State Historical Association"

@@ -40,7 +40,7 @@ script: |
 pronunciations:
   - written: Audubon
     say: AW-duh-bon
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Before it was a hotel, this was the capitol of a country."
@@ -91,6 +91,18 @@ claims:
   - says: "Two years later, the government moved to Austin, and this corner became a hotel site."
     source: 1
     quote: "capital had chosen Waterloo, modern Austin."
+  - says: "The Republic of Texas."
+    source: 1
+    quote: "ing that was the Capitol of the Republic of Texas during 1837-39."
+  - says: "And for its first weeks, the capitol had no roof."
+    source: 1
+    quote: "By May 1 the Capitol still was unfinished, lacking even a roof."
+  - says: "And for its first weeks, the capitol had no roof."
+    source: 1
+    quote: "John J. Audubon, in his diary on May 15, 1837, related how he and his party visited the Capitol and amused themselves by walking about it. He also remarked that it “was yet without a roof"
+  - says: "John James Audubon, the painter of birds."
+    source: 1
+    quote: "John J. Audubon, the naturalist, visited President Houston in the spring of 1837"
 sources:
   - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), quoting the diary of John James Audubon and the House Journal"
     publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"

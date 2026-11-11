@@ -45,7 +45,7 @@ script: |
 pronunciations:
   - written: Hofheinz
     say: HOFF-hines
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "A roof six hundred and forty two feet across, with no columns holding it up in the middle."
@@ -93,6 +93,9 @@ claims:
   - says: "Plastic grass all over the world still carries a little of its name."
     source: 5
     quote: "gave synthetic grass its name"
+  - says: "The grass gave up first."
+    source: 2
+    quote: "The grass that was originally used dried out under the dome."
 sources:
   - title: "Houston Astrodome (Harris County Domed Stadium), HAER TX-108, Written Historical and Descriptive Data"
     publisher: "Historic American Engineering Record, National Park Service (Library of Congress)"

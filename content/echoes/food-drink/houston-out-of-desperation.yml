@@ -44,7 +44,7 @@ pronunciations:
     say: lor-EN-zo
   - written: tacos al carbon
     say: TAH-kohs ahl kar-BOHN
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Before it was a famous restaurant, it was a tortilla factory."
@@ -107,6 +107,12 @@ claims:
   - says: "But nobody had it on the menu until the restaurant."
     source: 2
     quote: "\"What she did was introduce it,\" Phyllis said. \"She didn't invent it. But nobody had it on the menu until the restaurant.\""
+  - says: "The restaurant was a last resort."
+    source: 2
+    quote: "\"When we opened this restaurant it was out of desperation,\" Phyllis said. \"We didn't think it was revolutionary. We were in survival mode.\""
+  - says: "She borrowed from a friend in Mexico instead."
+    source: 2
+    quote: "Using money she borrowed from a friend in Mexico (after local banks turned her down for a loan), she opened the restaurant in the summer of 1973."
 sources:
   - title: "Laurenzo, María Ninfa Rodríguez (Meredith May)"
     publisher: "Handbook of Texas Online, Texas State Historical Association"

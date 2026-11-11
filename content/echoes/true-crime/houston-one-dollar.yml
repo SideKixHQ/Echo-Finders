@@ -46,12 +46,12 @@ script: |
 pronunciations:
   - written: Campos Torres
     say: KAHM-pohs TOR-es
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: true
   convictionStatus: convicted
-  reviewedBy: "TODO: James (owner), before this can leave draft"
+  reviewedBy: "James (owner), approved 2026-11-11"
   reviewedAt: "2026-11-11"
   contentWarning: "This echo describes a young man beaten by police officers and drowned. No injuries are described in detail."
 claims:

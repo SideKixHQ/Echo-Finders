@@ -48,7 +48,7 @@ script: |
 pronunciations:
   - written: Haise
     say: HAYZ
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In April nineteen seventy, Apollo Thirteen was three days out, on its way to the Moon."
@@ -87,6 +87,21 @@ claims:
   - says: "And the words they spoke into this room live on."
     source: 2
     quote: "The words live on in the America’s collective memory, a reminder of the heroism of the Apollo Program’s astronauts and flight controllers."
+  - says: "You are outside Building Thirty, Mission Control."
+    source: 2
+    quote: "The Control Center itself would be located in two interconnected three- story structures, called MSC Building 30"
+  - says: "Somewhere inside is the room that heard a sentence people still quote, half a century later."
+    source: 2
+    quote: "Commander James A. Lovell called down to the Mission Control Center to say, “Houston … we’ve got a problem..” The words live on in the America’s collective memory"
+  - says: "Then the commander, Jim Lovell."
+    source: 1
+    quote: "Jim Lovell: I believe we've had a problem here."
+  - says: "Then the commander, Jim Lovell."
+    source: 2
+    quote: "the flight crew of commander James A. Lovell, command module pilot Swigert, and lunar module pilot Fred W. Haise."
+  - says: "And the first word of it was the name of this city."
+    source: 1
+    quote: "Jim Lovell: Houston, we've had a problem."
 sources:
   - title: "The Time of Apollo (video transcript, ARC 649447)"
     publisher: "National Archives"

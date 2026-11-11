@@ -39,7 +39,7 @@ script: |
   Thank you, Earl.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In nineteen twenty, the United States government had too many bison in its national parks."
@@ -72,6 +72,18 @@ claims:
   - says: "Somewhere past these trees is the Houston Zoo."
     source: 1
     quote: "z00- logical gardens containing more than 1,000 specimens"
+  - says: "Hundreds and hundreds of animals."
+    source: 1
+    quote: "z00- logical gardens containing more than 1,000 specimens"
+  - says: "It started with just one."
+    source: 1
+    quote: "The Zoological Gardens originated in 1920, when the United States Govern- ment thinned out bison herds in national parks. One of the animals was given to"
+  - says: "So when you walk past the animals today, say thank you to the very first one."
+    source: 1
+    quote: "The Zoological Gardens originated in 1920, when the United States Govern- ment thinned out bison herds in national parks. One of the animals was given to"
+  - says: "Thank you, Earl."
+    source: 1
+    quote: "placed in the zoo in Sam Houston Park and was promptly named “Earl.”"
 sources:
   - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), Hermann Park"
     publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"

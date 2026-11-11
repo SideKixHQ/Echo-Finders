@@ -42,7 +42,7 @@ script: |
 pronunciations:
   - written: Waugh
     say: WAW
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "They are full."

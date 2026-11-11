@@ -39,7 +39,7 @@ script: |
 pronunciations:
   - written: Waugh
     say: WAW
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Something like two hundred and fifty thousand."
@@ -78,6 +78,12 @@ claims:
   - says: "At sunset, the bats fly out."
     source: 1
     quote: "\"People gather every night at sunset, that's when they all fly out,\""
+  - says: "They had no special nets at first."
+    source: 1
+    quote: "Equipped with nothing but umbrellas, tennis rackets and broken tree branches, several people gathered along the bridge Sunday to help rescue the drowning bats."
+  - says: "And one more thing."
+    source: 1
+    quote: "Make sure you don't have direct contact and use bleach afterward."
 sources:
   - title: "Volunteers try to save colony of 250,000 bats from Houston floods"
     publisher: "CBS News, August 2017"

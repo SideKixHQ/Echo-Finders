@@ -38,7 +38,7 @@ script: |
   It started as a football joke.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The most famous sentence ever spoken about the moon was spoken here."
@@ -77,6 +77,15 @@ claims:
   - says: "Seven years later, men walked on the moon, and talked to a room in this city."
     source: 5
     quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
+  - says: "Now Kennedy wanted more."
+    source: 2
+    quote: "In the flood of enthusiasm after Glenn’s flight, President John F. Kennedy proposed a new challenge on September 12, 1962"
+  - says: "Then, standing in Rice's own stadium, he asked one more."
+    source: 1
+    quote: "And then when John F. Kennedy spoke at Rice University to announce the Space Program, he spoke in Rice Stadium, from the 1950s."
+  - says: "Then, standing in Rice's own stadium, he asked one more."
+    source: 2
+    quote: "Why does Rice play Texas?"
 sources:
   - title: "Houston: A Case Study in Urban Cultural Landscapes (Texas Cultural Landscape Symposium)"
     publisher: "National Park Service"

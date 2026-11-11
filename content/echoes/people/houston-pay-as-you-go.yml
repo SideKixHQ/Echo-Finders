@@ -41,7 +41,7 @@ script: |
   Look at it again. Not one board of it was borrowed.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Among the old houses in this park is a two storey house in the Greek Revival style."
@@ -110,6 +110,9 @@ claims:
   - says: "The family came to Houston."
     source: 1
     quote: "Unable to find work, the Yates family relocated to Houston"
+  - says: "Not one board of it was borrowed."
+    source: 1
+    quote: "He would buy materials as he was able, and complete portions of the house as his funds allowed."
 sources:
   - title: "Sam Houston Park, Yates House, HABS TX-3542-C, Written Historical and Descriptive Data"
     publisher: "Historic American Buildings Survey, National Park Service (Library of Congress)"

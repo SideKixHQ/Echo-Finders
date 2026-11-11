@@ -42,7 +42,7 @@ script: |
 pronunciations:
   - written: Ima Hogg
     say: EYE-muh HOG
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Pink stucco, black iron balconies."

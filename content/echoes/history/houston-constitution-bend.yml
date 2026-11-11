@@ -34,7 +34,7 @@ script: |
   It began with one that barely made it round.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Somewhere beyond these port buildings is the Turning Basin, a wide bend in the water where the biggest cargo ships in the world are swung round to head back to sea."
@@ -82,6 +82,12 @@ claims:
   - says: "Miss Sue Campbell dropped a wreath of flowers into the water, and Port Houston was christened."
     source: 1
     quote: "A few seconds later Miss Sue Campbell dropped a wreath of flowers into the waters of the Turning Basin, and Port Houston was christened."
+  - says: "The ships that turn here now are bigger than anything the Allens could have pictured."
+    source: 1
+    quote: "Today at this bend the world’s greatest cargo ships are turned downstream, for this became the Houston Turning Basin."
+  - says: "It began with one that barely made it round."
+    source: 1
+    quote: "the ship was turned without beaching, and the spot was promptly named Constitution Bend."
 sources:
   - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), quoting the Telegraph and Texas Register, 1837"
     publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"

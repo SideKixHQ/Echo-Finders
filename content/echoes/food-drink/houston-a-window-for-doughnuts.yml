@@ -38,7 +38,7 @@ script: |
 pronunciations:
   - written: Stude's
     say: STOO-deez
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In the late eighteen nineties, some of the most important men in Houston lined up at it."
@@ -74,6 +74,9 @@ claims:
   - says: "He was the man who would give Houston the land for Hermann Park."
     source: 1
     quote: "George Hermann, donor of Hermann Park"
+  - says: "Night life in Houston then had plenty of choice."
+    source: 1
+    quote: "Night life now offered great variety."
 sources:
   - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), Chapter XII"
     publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"

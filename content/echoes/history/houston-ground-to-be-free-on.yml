@@ -40,7 +40,7 @@ script: |
 pronunciations:
   - written: Dibble
     say: DIB-ul
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look across this park."

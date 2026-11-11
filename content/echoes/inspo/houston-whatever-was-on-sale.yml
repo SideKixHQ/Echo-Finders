@@ -43,7 +43,7 @@ script: |
 pronunciations:
   - written: Milkovisch
     say: MIL-kuh-vitch
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It is covered, every bit of it, in beer cans."

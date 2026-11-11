@@ -42,7 +42,7 @@ script: |
 pronunciations:
   - written: Lubbock
     say: LUB-uk
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Just upstream, a smaller bayou, White Oak, runs into this one."

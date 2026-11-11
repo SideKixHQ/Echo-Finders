@@ -43,7 +43,7 @@ script: |
 pronunciations:
   - written: La Carafe
     say: lah kuh-RAFF
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Find the two storey brick building at eight thirteen Congress."
@@ -88,6 +88,12 @@ claims:
   - says: "Doors open by themselves."
     source: 2
     quote: "Doors open by themselves. You think you see people walk by. There are noises. Things fly off the walls."
+  - says: "Inside is a bar called La Carafe."
+    source: 2
+    quote: "La Carafe, 815 Congress, is the oldest bar in Houston and one of the oldest commercial buildings."
+  - says: "Take it as one."
+    source: 2
+    quote: "Considering some of Houston's oldest buildings date back centuries, it's understandable for legends of haunts and horrors to arise."
 sources:
   - title: "The Kennedy Bakery, historical marker, Atlas Number 5201010712 (Recorded Texas Historic Landmark, 1980)"
     publisher: "Texas Historical Commission, Atlas"

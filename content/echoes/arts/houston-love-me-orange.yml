@@ -40,7 +40,7 @@ script: |
 pronunciations:
   - written: McKissack
     say: muh-KISS-uk
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Eat oranges and live."
@@ -106,6 +106,15 @@ claims:
   - says: "Love me, orange, please love me."
     source: 2
     quote: "\"LOVE ME, ORANGE, PLEASE LOVE ME.\""
+  - says: "The Orange Show."
+    source: 1
+    quote: "Shortly thereafter he typed on the permit, \"Beauty parlors are going out of style. Have a better idea-The Orange Show.\""
+  - says: "Roof tiles, fire escapes, steel wheels, turnstiles, tractor seats, from Houston buildings being torn down."
+    source: 1
+    quote: "Over the next twenty years McKissack collected roof tiles, fire escapes, decorations, and other architectural refuse from the sites of Houston buildings that were being demolished or remodeled, as well as steel wheels, turnstiles, and tractor seats."
+  - says: "Dominique de Menil gave."
+    source: 1
+    quote: "ranging from Dominique de Menil to the rock group ZZ Top , donated money to purchase McKissack's Orange Show from his heir."
 sources:
   - title: "McKissack, Jefferson Davis (Kendall Curlee)"
     publisher: "Handbook of Texas Online, Texas State Historical Association"

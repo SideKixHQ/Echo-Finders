@@ -43,7 +43,7 @@ script: |
   It has never been explained. It has also never been caught.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In the eighteen eighties, this was Freedmantown, built by people who had been freed from slavery."
@@ -85,6 +85,9 @@ claims:
   - says: "It was an election autumn, and the paper wrote that someone had told a newspaper in Saint Louis the whole ghost was a political trick, to scare voters."
     source: 2
     quote: "When bolting Republican ““Mugwumps” helped elect Grover Cleveland"
+  - says: "And the paper's last word on it was this."
+    source: 2
+    quote: "The ‘Thing’ remains a mystery."
 sources:
   - title: "Emancipation Park, HALS TX-7, Written Historical and Descriptive Data"
     publisher: "Historic American Landscapes Survey, National Park Service (Library of Congress)"

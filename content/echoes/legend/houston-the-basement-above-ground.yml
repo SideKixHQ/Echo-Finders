@@ -45,7 +45,7 @@ script: |
   The basement is above ground. The cemetery is not.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The basement was built above it."
@@ -99,6 +99,9 @@ claims:
   - says: "A spokeswoman said the ghosts had been replaced by muses."
     source: 4
     quote: "A spokeswoman says the ghosts have been replaced by muses."
+  - says: "Here is the history first."
+    source: 1
+    quote: "was built atop the 1840 Houston City Cemetery, which was active until the 1880s."
 sources:
   - title: "Jefferson Davis Hospital, historical marker, Atlas Number 5507015523 (Recorded Texas Historic Landmark, 2008)"
     publisher: "Texas Historical Commission, Atlas"

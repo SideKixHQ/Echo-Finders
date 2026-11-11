@@ -45,7 +45,7 @@ pronunciations:
     say: san juh-SIN-toh
   - written: Santa Anna
     say: SAN-tuh AN-uh
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "The Texans camped on one side of where it stands."
@@ -126,6 +126,12 @@ claims:
   - says: "Across the field, the Mexican officers decided no attack was coming."
     source: 1
     quote: "Believing by afternoon that the Texans dared not attack and that he could choose his own time for battle"
+  - says: "All that waiting, for eighteen minutes."
+    source: 3
+    quote: "The battle lasted but eighteen minutes."
+  - says: "All that waiting, for eighteen minutes."
+    source: 2
+    quote: "The complete inactivity in the Texans camp, as the afternoon advanced, lulled Santa Anna into the belief that Houston would not attack."
 sources:
   - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), Tour to San Jacinto State Park"
     publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"

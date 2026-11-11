@@ -40,7 +40,7 @@ script: |
 pronunciations:
   - written: Esperson
     say: ESS-per-son
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Look up, all the way up, at the top of the tower on this corner."
@@ -98,6 +98,12 @@ claims:
     source: 1
     quote: "the first skyscraper in Houston to be built with central air-conditioning ."
   - says: "That one carries her name."
+    source: 2
+    quote: "A building bearing her name went up adjacent to the Niels Esperson Building in 1941."
+  - says: "So Mellie went to Europe herself, for ideas on stone and materials, and hired the architect John Eberson to design what she meant as a memorial to her husband."
+    source: 1
+    quote: "He had left no specific instructions for the building, so she traveled to Europe to gather ideas on materials and then again turned to architect Eberson to design what she intended as a memorial to her husband."
+  - says: "Hers is on the one beside it, holding on."
     source: 2
     quote: "A building bearing her name went up adjacent to the Niels Esperson Building in 1941."
 sources:

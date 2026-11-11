@@ -43,7 +43,7 @@ script: |
 pronunciations:
   - written: Santa Anna
     say: SAN-tuh AN-uh
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "This was Harrisburg, a port town that was here ten years before Houston."
@@ -85,6 +85,15 @@ claims:
   - says: "It created, as one account put it, something of a stir."
     source: 1
     quote: "created “something of a stir” in Harrisburg in April, 1899"
+  - says: "First, the history."
+    source: 1
+    quote: "I entered Harrisburg the night of the 15th, lighted by the glare of sev- eral houses that were burning"
+  - says: "He was hunting the government of Texas."
+    source: 1
+    quote: "General Santa Anna, in a rage at finding his quarry gone, ordered all of the town’s buildings burned."
+  - says: "He was hunting the government of Texas."
+    source: 1
+    quote: "the so-called president, vice-president, and other important personages had left at noon for the island of Galveston in a small steamboat"
 sources:
   - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942)"
     publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"

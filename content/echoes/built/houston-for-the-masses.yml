@@ -40,7 +40,7 @@ script: |
 pronunciations:
   - written: Fonville
     say: FON-vil
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "For fifteen years, Houston argued about a new city hall."

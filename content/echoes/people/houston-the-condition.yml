@@ -40,7 +40,7 @@ script: |
 pronunciations:
   - written: Mease
     say: MEESE
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at the Astrodome, the first stadium in the world built to be air conditioned."
@@ -79,6 +79,15 @@ claims:
   - says: "The Eighth Wonder of the World."
     source: 1
     quote: "he branded the Astrodome the \"Eighth Wonder of the World.\""
+  - says: "And the men who wanted it could not win without Black voters."
+    source: 1
+    quote: "This was a daunting task considering that Judge Roy Hofheinz and Bob Smith needed the support of African American voters."
+  - says: "They needed the support of Black Houstonians."
+    source: 1
+    quote: "This was a daunting task considering that Judge Roy Hofheinz and Bob Smith needed the support of African American voters."
+  - says: "Mease and the other Black leaders listened."
+    source: 1
+    quote: "Mr. Mease and the other African American leaders agreed to campaign for the bond issue on the condition that the new stadium be opened as an integrated facility."
 sources:
   - title: "Houston Astrodome (Harris County Domed Stadium), HAER TX-108, Written Historical and Descriptive Data"
     publisher: "Historic American Engineering Record, National Park Service (Library of Congress)"

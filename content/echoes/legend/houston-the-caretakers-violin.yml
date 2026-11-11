@@ -43,7 +43,7 @@ script: |
   The caretaker kept the night shift.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look up at the old library, built in the Spanish Renaissance style, and find the top row of windows."
@@ -85,6 +85,9 @@ claims:
   - says: "The tick of a dog's nails, crossing a floor where no dog was."
     source: 3
     quote: "Listen for clicking sounds made by Petey's toenails on the tile floor."
+  - says: "Julia Ideson got her name on the building."
+    source: 2
+    quote: "The Central Library building, erected in 1926 and later named in her honor in 1951"
 sources:
   - title: "Is the Julia Ideson building haunted? (This Forgotten Day in Houston, Carolina Gonzales, 16 October 2015)"
     publisher: "Houston Chronicle (Chron.com)"

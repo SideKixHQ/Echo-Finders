@@ -39,7 +39,7 @@ script: |
   They were here first.
 
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Texas cattle grazed right across it."
@@ -75,6 +75,9 @@ claims:
   - says: "Eight years later, people walked on the Moon, and talked to Houston the whole way."
     source: 2
     quote: "Neil Armstrong: Houston. Tranquility Base here. The Eagle has landed."
+  - says: "They were here first."
+    source: 1
+    quote: "until then the exclusive habitat of Texas cattle, oil derricks, rice fields, fish, ducks, some alligators, lots of mosquitoes"
 sources:
   - title: "Suddenly, Tomorrow Came: A History of the Johnson Space Center (NASA SP-4307, 1993)"
     publisher: "NASA (Internet Archive scan)"

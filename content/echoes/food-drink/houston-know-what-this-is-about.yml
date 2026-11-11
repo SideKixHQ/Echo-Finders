@@ -37,7 +37,7 @@ script: |
 pronunciations:
   - written: jalapeño
     say: hah-luh-PAYN-yoh
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at this old house, built in nineteen twenty three."
@@ -91,6 +91,9 @@ claims:
   - says: "Chris has said he is not comfortable calling Juneteenth a celebration."
     source: 1
     quote: "Personally, I'm not comfortable with celebrating it."
+  - says: "So he asks one thing of anyone sitting down to eat that day."
+    source: 1
+    quote: "should first and foremost acknowledge what the day represents, \"before you throw that hot dog on the grill or whatever you're going to do. Know what this is really about.\""
 sources:
   - title: "Lucille's Chef Chris Williams Shares His Thoughts On Juneteenth"
     publisher: "NPR, Code Switch, 18 June 2021"
