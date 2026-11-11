@@ -1,0 +1,183 @@
+# Drafted by Claude Code (2026-11-10) for the Philadelphia core, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on the west side of South 5th Street in front of Philosophical Hall, on the edge of Independence Square.
+# Position: Overture place 'American Philosophical Society Philosophical Hall' (104 S 5th St) at 39.94860, -75.14945; set east onto the 5th Street sidewalk (high confidence).
+id: philadelphia-the-tusks-were-upside-down
+title: "The Tusks Were Upside Down"
+summary: "A children's echo: America's first assembled fossil skeleton, a mastodon, went on show here in 1801, with its tusks the wrong way up."
+place: "Philosophical Hall, 104 South 5th Street, Independence Square, Philadelphia, Pennsylvania"
+at: { lat: 39.94860, lng: -75.14925 }
+triggerRadiusKm: 0.03
+category: kids
+format: short
+durationS: 91
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, independence-square, mastodon, fossils, peale, kids]
+teaser: "A monster nobody had ever seen, put together like a puzzle."
+script: |
+  Look at the small brick building here, beside Independence Square. A long time ago, there was a monster inside it. A skeleton eleven feet tall at the shoulder.
+
+  Its bones came out of a muddy pit on a farm in New York, in eighteen oh one. A painter called Charles Willson Peale went to dig them up, with pumps, and ropes, and pulleys. Back here, his team had a giant puzzle. Put together an animal that nobody had ever seen alive. People called it the great American incognitum. That means the unknown.
+
+  One of the best puzzle solvers was Moses Williams, an enslaved man who was also a talented artist. Peale said Williams tried the pieces in the most unlikely positions, and did more good that way than anyone. Where bones were missing, they carved new ones out of wood.
+
+  But they made one big mistake. They put the tusks in upside down, curling downward, like a walrus. They thought the animal ate meat, and they wanted it to look fierce. On Christmas Eve, eighteen oh one, the monster was ready. To tell the city, Moses Williams rode through the streets on a white horse, in a feathered headdress, with a trumpeter beside him.
+
+  So where is the monster now? Not here. It was shipped across the ocean, and it stands in a museum in Darmstadt, in Germany, to this day.
+
+  If you ever go and see it, check the tusks.
+pronunciations:
+  - written: "Peale"
+    say: "PEEL"
+  - written: "incognitum"
+    say: "in-COG-nih-tum"
+  - written: "Darmstadt"
+    say: "DARM-shtat"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the small brick building here, beside Independence Square."
+    source: 1
+    quote: "Philosophical Hall, the headquarters of the American Philosophical Society (APS)"
+  - says: "A long time ago, there was a monster inside it."
+    source: 1
+    quote: "Peale moved his museum into a bigger venue in Philosophical Hall"
+  - says: "A skeleton eleven feet tall at the shoulder."
+    source: 1
+    quote: "Peale’s 11-foot tall mastodon skeleton"
+  - says: "Its bones came out of a muddy pit on a farm in New York, in eighteen oh one."
+    source: 1
+    quote: "In early 1801, news came to Philadelphia of mastodon remains found at the farm of John Masten in the Hudson River Valley"
+  - says: "Its bones came out of a muddy pit on a farm in New York, in eighteen oh one."
+    source: 1
+    quote: "marl pit excavation site"
+  - says: "A painter called Charles Willson Peale went to dig them up, with pumps, and ropes, and pulleys."
+    source: 1
+    quote: "He provided a detailed report of his field notes to Jefferson and returned with two partial skeletons"
+  - says: "A painter called Charles Willson Peale went to dig them up, with pumps, and ropes, and pulleys."
+    source: 1
+    quote: "including pumps, ropes, pulleys, and augers."
+  - says: "Back here, his team had a giant puzzle. Put together an animal that nobody had ever seen alive."
+    source: 1
+    quote: "Peale and his team faced the task of reassembling a monster they had never physically seen."
+  - says: "People called it the great American incognitum. That means the unknown."
+    source: 1
+    quote: "Many Americans at the time were riveted by stories of the \"American incognitum\", the mysterious name given to the unidentified beasts we know as mastodons."
+  - says: "People called it the great American incognitum. That means the unknown."
+    source: 2
+    quote: "great American Incognitum"
+  - says: "One of the best puzzle solvers was Moses Williams, an enslaved man who was also a talented artist."
+    source: 1
+    quote: "the enslaved man Moses Williams, a talented silhouette artist and the first black museum professional in US history."
+  - says: "Peale said Williams tried the pieces in the most unlikely positions, and did more good that way than anyone."
+    source: 1
+    quote: "fitted pieces together by trying, [not] the most probable, but the most improbable position, as the lookers-on believed... Yet he did more good in that way than any one among those employed in the work."
+  - says: "Where bones were missing, they carved new ones out of wood."
+    source: 1
+    quote: "Peale used bilateral symmetry and other collected bones to carve scientifically accurate replacements out of wood"
+  - says: "But they made one big mistake."
+    source: 1
+    quote: "They incorrectly placed the tusks inverted like that of a walrus"
+  - says: "They put the tusks in upside down, curling downward, like a walrus."
+    source: 1
+    quote: "They incorrectly placed the tusks inverted like that of a walrus"
+  - says: "They thought the animal ate meat, and they wanted it to look fierce."
+    source: 1
+    quote: "the tusks and shape of the teeth led the team to believe the mastodon was carnivorous."
+  - says: "They thought the animal ate meat, and they wanted it to look fierce."
+    source: 1
+    quote: "Note the downturned tusks, which were intended to emphasize the animal’s ferocity as a carnivore."
+  - says: "On Christmas Eve, eighteen oh one, the monster was ready."
+    source: 1
+    quote: "The display was unveiled on Christmas Eve day in 1801."
+  - says: "To tell the city, Moses Williams rode through the streets on a white horse, in a feathered headdress, with a trumpeter beside him."
+    source: 1
+    quote: "Peale sent out Williams in feathered headdress on a white horse to parade through the streets accompanied by a trumpeter."
+  - says: "It was shipped across the ocean, and it stands in a museum in Darmstadt, in Germany, to this day."
+    source: 1
+    quote: "The mastodon skeleton displayed in Peale’s museum was shipped to Europe, where it was eventually purchased for the Hessisches Landesmuseum Darmstadt, Germany, in 1854. There, Peale’s mastodon remains on display to this day."
+sources:
+  - title: "The Peale Museum: America's First Natural History Museum Features a Mastodon"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/the-peale-museum-america-s-first-natural-history-museum-features-a-mastodon.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "An Historical Disquisition on the Mammoth, or Great American Incognitum (Rembrandt Peale, 1803)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicaldisqui00peal
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/philadelphia-the-tusks-were-upside-down/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 90.5
+    audioBytes: 1449107
+    transcript:
+      totalS: 90.5
+      lines:
+        - text: Look at the small brick building here, beside Independence Square.
+          atS: 0
+          durationS: 3.79
+        - text: A long time ago, there was a monster inside it.
+          atS: 4.48
+          durationS: 2.92
+        - text: A skeleton eleven feet tall at the shoulder.
+          atS: 7.72
+          durationS: 2.62
+        - text: Its bones came out of a muddy pit on a farm in New York, in eighteen oh one.
+          atS: 10.73
+          durationS: 4.76
+        - text: A painter called Charles Willson Peale went to dig them up, with pumps, and ropes, and pulleys.
+          atS: 16.09
+          durationS: 6.21
+        - text: Back here, his team had a giant puzzle.
+          atS: 23
+          durationS: 2.75
+        - text: Put together an animal that nobody had ever seen alive.
+          atS: 26.13
+          durationS: 3.38
+        - text: People called it the great American incognitum.
+          atS: 29.84
+          durationS: 3.2
+        - text: That means the unknown.
+          atS: 33.65
+          durationS: 1.84
+        - text: One of the best puzzle solvers was Moses Williams, an enslaved man who was also a talented artist.
+          atS: 36.29
+          durationS: 6.37
+        - text: Peale said Williams tried the pieces in the most unlikely positions, and did more good that way than anyone.
+          atS: 43.48
+          durationS: 6.2
+        - text: Where bones were missing, they carved new ones out of wood.
+          atS: 50.12
+          durationS: 3.53
+        - text: But they made one big mistake.
+          atS: 54.09
+          durationS: 2.1
+        - text: They put the tusks in upside down, curling downward, like a walrus.
+          atS: 56.52
+          durationS: 5.02
+        - text: They thought the animal ate meat, and they wanted it to look fierce.
+          atS: 61.92
+          durationS: 3.89
+        - text: On Christmas Eve, eighteen oh one, the monster was ready.
+          atS: 66.92
+          durationS: 4.03
+        - text: To tell the city, Moses Williams rode through the streets on a white horse, in a feathered headdress, with a trumpeter beside him.
+          atS: 71.27
+          durationS: 7.44
+        - text: So where is the monster now?
+          atS: 79.1
+          durationS: 1.63
+        - text: Not here.
+          atS: 81.11
+          durationS: 0.75
+        - text: It was shipped across the ocean, and it stands in a museum in Darmstadt, in Germany, to this day.
+          atS: 82.07
+          durationS: 5.64
+        - text: If you ever go and see it, check the tusks.
+          atS: 87.96
+          durationS: 2.56

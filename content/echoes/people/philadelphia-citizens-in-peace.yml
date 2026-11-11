@@ -1,0 +1,198 @@
+# Drafted by Claude Code (2026-11-10) for the Philadelphia core, following docs/writing-echoes.md.
+# Listening spot: On the south apron of City Hall, beside the Octavius Catto memorial, facing South Penn Square.
+# Position: Overture place 'Octavius V. Catto Monument' (S Penn Square) at 39.95175, -75.16442 (high confidence).
+id: philadelphia-citizens-in-peace
+title: "Citizens in Peace"
+summary: "Octavius Catto fought for the vote and for seats on the streetcars. On election day 1871 he was shot on his way to vote."
+place: "Octavius V. Catto memorial, south side of City Hall, Philadelphia, Pennsylvania"
+at: { lat: 39.95175, lng: -75.16442 }
+triggerRadiusKm: 0.03
+category: people
+format: short
+durationS: 105
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [philadelphia, philadelphia-core, city-hall, octavius-catto, voting-rights, reconstruction, black-history, baseball]
+teaser: "He was on his way to vote."
+script: |
+  Find the bronze statue of the young man, here on the south side of City Hall. His name was Octavius Catto. This city has about seventeen hundred public statues. When his went up, it was the first of an African American.
+
+  Catto was born free, in Charleston, South Carolina, in eighteen thirty nine, and came to Philadelphia with his family. He finished top of his class at the Institute for Colored Youth, and the next year he was teaching there. He played shortstop, and started one of the city's earliest professional baseball clubs. In the Civil War, he recruited Black soldiers. He presented a regiment with its flag. The motto on it said, let soldiers in war, be citizens in peace.
+
+  After the war, he set out to make that true. He fought for a law to let Black passengers ride the city's streetcars. In eighteen seventy, the Fifteenth Amendment gave Black men the vote.
+
+  On election day, the tenth of October, eighteen seventy one, Octavius Catto was on his way to vote. At Ninth and South Streets, he was shot three times. He was thirty two. The man accused of killing him was never convicted. A New York newspaper called him a pure minded patriot, who died as he had lived, without fear.
+
+  In the eighteen nineties, Black Philadelphians tried to raise money for a monument to him. It took more than a century. By then, even a mayor of Philadelphia, Jim Kenney, had to ask, how in God's name did I not know this man?
+
+  Look at him again. Citizens in peace.
+
+  He was on his way to vote.
+detail: >-
+  The National Park Service names the man who shot Catto and records that he was not convicted; the script does not name him. The memorial is by the sculptor Branly Cadet.
+pronunciations:
+  - written: "Catto"
+    say: "KAT-oh"
+  - written: "Octavius"
+    say: "ok-TAY-vee-us"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "His name was Octavius Catto."
+    source: 1
+    quote: "Octavius Valentine Catto's lost narrative began in Philadelphia in the 1850s."
+  - says: "This city has about seventeen hundred public statues. When his went up, it was the first of an African American."
+    source: 1
+    quote: "There are 1,700 public space statues in Philadelphia, the most of any U.S. city. Tuesday's unveiling makes Catto's the first for an African-American."
+  - says: "Catto was born free, in Charleston, South Carolina, in eighteen thirty nine, and came to Philadelphia with his family."
+    source: 2
+    quote: "Born free in Charleston, SC in 1839, Octavius moved with his family to Philadelphia"
+  - says: "He finished top of his class at the Institute for Colored Youth, and the next year he was teaching there."
+    source: 2
+    quote: "He attended the Institute for Colored Youth (ICY), where he graduated as valedictorian in 1858. The next year, Octavius became a professor at ICY, teaching English and mathematics."
+  - says: "He played shortstop, and started one of the city's earliest professional baseball clubs."
+    source: 3
+    quote: "gifted short stop"
+  - says: "He played shortstop, and started one of the city's earliest professional baseball clubs."
+    source: 2
+    quote: "Catto played professional baseball and even founded one of Philadelphia’s earliest professional baseball clubs."
+  - says: "In the Civil War, he recruited Black soldiers."
+    source: 2
+    quote: "During the Civil War, Octavius Catto helped recruit Black soldiers for the US Army"
+  - says: "He presented a regiment with its flag. The motto on it said, let soldiers in war, be citizens in peace."
+    source: 2
+    quote: "presented the regimental flag of the 24th United States Colored Troops, whose motto read “Let Soldiers In War, Be Citizens In Peace.”"
+  - says: "After the war, he set out to make that true."
+    source: 2
+    quote: "When the Civil War was over, Octavius dedicated himself ensuring that Black people could be “citizens in peace”."
+  - says: "He fought for a law to let Black passengers ride the city's streetcars."
+    source: 2
+    quote: "He worked with Congressman Thaddeus Stevens to promote the passage of a state law desegregating the city’s streetcars."
+  - says: "In eighteen seventy, the Fifteenth Amendment gave Black men the vote."
+    source: 2
+    quote: "In 1870, the 15th Amendment was ratified, and Black men flocked to the polls"
+  - says: "On election day, the tenth of October, eighteen seventy one, Octavius Catto was on his way to vote."
+    source: 2
+    quote: "On October 10, 1871, Election Day in the United States, Octavius Catto was on his way to vote"
+  - says: "At Ninth and South Streets, he was shot three times."
+    source: 2
+    quote: "At the intersection of 9th and South Streets , Kelly shot Catto three times, killing him."
+  - says: "He was thirty two."
+    source: 1
+    quote: "an assassin gunned down the 32-year-old in October, 1871."
+  - says: "The man accused of killing him was never convicted."
+    source: 2
+    quote: "Kelly was not convicted."
+  - says: "A New York newspaper called him a pure minded patriot, who died as he had lived, without fear."
+    source: 1
+    quote: "The New York Herald called him \"a pure-minded patriot … who died as he had lived, without fear.\""
+  - says: "In the eighteen nineties, Black Philadelphians tried to raise money for a monument to him."
+    source: 2
+    quote: "in the 1890s they sought raise funds to erect a monument to the martyred professor, voter, and athlete."
+  - says: "By then, even a mayor of Philadelphia, Jim Kenney, had to ask, how in God's name did I not know this man?"
+    source: 1
+    quote: "\"And I'm like how in God's name did I not know this man?\""
+  - says: "Citizens in peace."
+    source: 2
+    quote: "“Let Soldiers In War, Be Citizens In Peace.”"
+  - says: "He was on his way to vote."
+    source: 2
+    quote: "Octavius Catto was on his way to vote"
+sources:
+  - title: "Octavius Valentine Catto honored in Philadelphia"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/octavius-valentine-catto-receives-special-honor-in-philadelphia/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Octavius V. Catto"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/octavius-catto.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Murdered On Election Day, But Not Before Octavius Catto Made His Mark On Philadelphia"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/murdered-on-election-day-but-not-before-octavius-catto-made-his-mark-on-philadelphia/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-citizens-in-peace/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 104.5
+    audioBytes: 1673551
+    transcript:
+      totalS: 104.5
+      lines:
+        - text: Find the bronze statue of the young man, here on the south side of City Hall.
+          atS: 0
+          durationS: 4.37
+        - text: His name was Octavius Catto.
+          atS: 4.69
+          durationS: 4.09
+        - text: This city has about seventeen hundred public statues.
+          atS: 9.38
+          durationS: 3.24
+        - text: When his went up, it was the first of an African American.
+          atS: 12.9
+          durationS: 3.39
+        - text: Catto was born free, in Charleston, South Carolina, in eighteen thirty nine, and came to Philadelphia with his family.
+          atS: 16.67
+          durationS: 7.38
+        - text: He finished top of his class at the Institute for Colored Youth, and the next year he was teaching there.
+          atS: 24.38
+          durationS: 5.43
+        - text: He played shortstop, and started one of the city's earliest professional baseball clubs.
+          atS: 30.09
+          durationS: 4.9
+        - text: In the Civil War, he recruited Black soldiers.
+          atS: 35.43
+          durationS: 2.98
+        - text: He presented a regiment with its flag.
+          atS: 38.74
+          durationS: 2.34
+        - text: The motto on it said, let soldiers in war, be citizens in peace.
+          atS: 41.41
+          durationS: 4.82
+        - text: After the war, he set out to make that true.
+          atS: 46.84
+          durationS: 2.73
+        - text: He fought for a law to let Black passengers ride the city's streetcars.
+          atS: 50
+          durationS: 4.25
+        - text: In eighteen seventy, the Fifteenth Amendment gave Black men the vote.
+          atS: 54.95
+          durationS: 4.14
+        - text: On election day, the tenth of October, eighteen seventy one, Octavius Catto was on his way to vote.
+          atS: 59.54
+          durationS: 7.5
+        - text: At Ninth and South Streets, he was shot three times.
+          atS: 67.85
+          durationS: 3.52
+        - text: He was thirty two.
+          atS: 71.81
+          durationS: 1.36
+        - text: The man accused of killing him was never convicted.
+          atS: 74.12
+          durationS: 3.09
+        - text: A New York newspaper called him a pure minded patriot, who died as he had lived, without fear.
+          atS: 77.72
+          durationS: 6.15
+        - text: In the eighteen nineties, Black Philadelphians tried to raise money for a monument to him.
+          atS: 84.57
+          durationS: 4.84
+        - text: It took more than a century.
+          atS: 89.79
+          durationS: 1.73
+        - text: By then, even a mayor of Philadelphia, Jim Kenney, had to ask, how in God's name did I not know this man?
+          atS: 92.03
+          durationS: 6.86
+        - text: Look at him again.
+          atS: 99.59
+          durationS: 0.93
+        - text: Citizens in peace.
+          atS: 100.9
+          durationS: 1.45
+        - text: He was on his way to vote.
+          atS: 102.68
+          durationS: 1.86

@@ -1,0 +1,192 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on the north side of M Street NW in front of the Old Stone House, between 30th and 31st Streets.
+# Position: Overture place 'Old Stone House' (3051 M St NW) at 38.90543, -77.06035; moved a few metres south to the M Street sidewalk (high confidence).
+id: dc-saved-by-a-mistake
+title: "Saved by a Mistake"
+summary: "Georgetown's Old Stone House survived for two centuries as George Washington's headquarters. It never was."
+place: "Old Stone House, 3051 M Street NW, Georgetown, Washington, D.C."
+at: { lat: 38.90530, lng: -77.06034 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 99
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, georgetown, old-stone-house, george-washington, myth-and-memory]
+teaser: "Two men called John Suter, and a house nobody dared knock down."
+script: |
+  Look at the little stone house on M Street, squeezed in among the shops. It is the oldest building in Washington still standing on its first foundation. And it survived because of a mistake.
+
+  It went up in seventeen sixty five, when this was a tobacco port in the colony of Maryland. Christopher Layman, who bought the lot, died that year, and his widow Rachael kept on building.
+
+  Down by the river, a few blocks away, stood a tavern called the Fountain Inn, run by a man named John Suter. In seventeen ninety one, George Washington and the planner Pierre L'Enfant stayed there, while they worked out the new capital city. John Suter had a son, also called John. And the son rented the front room of this house, and made clocks in it.
+
+  Two Johns. Two buildings. As the years went by, people mixed them up. The real tavern grew dirty and run down. And signs went up on this house, calling it George Washington's headquarters. Nobody wanted to knock down the place where Washington had worked.
+
+  In nineteen fifty three, the government bought it, because local people believed it mattered. Then a Park Service historian named Cornelius Heine went through the records, and found the story was a myth. Archaeologists dug under the floor. It had never even been a tavern.
+
+  Look at the house again. Inside, there is a tall clock made by John Suter Junior, which may have been built in that front room.
+
+  Washington never worked here.
+
+  That is why it is still standing.
+pronunciations:
+  - written: "L'Enfant"
+    say: "lon-FONT"
+  - written: "Heine"
+    say: "HY-nuh"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the little stone house on M Street, squeezed in among the shops."
+    source: 1
+    quote: "Original Georgetown Lot #3 (now located at 3051 M Street NW)"
+  - says: "It is the oldest building in Washington still standing on its first foundation."
+    source: 2
+    quote: "The Old Stone House is the oldest structure on its original foundation in Washington, D.C."
+  - says: "It went up in seventeen sixty five, when this was a tobacco port in the colony of Maryland."
+    source: 2
+    quote: "Built in 1765 in the British colony of Maryland"
+  - says: "It went up in seventeen sixty five, when this was a tobacco port in the colony of Maryland."
+    source: 3
+    quote: "Many of these ships sailed up the Potomac River mostly empty and were loaded with large quantities of tobacco to be taken overseas."
+  - says: "Christopher Layman, who bought the lot, died that year, and his widow Rachael kept on building."
+    source: 3
+    quote: "Unfortunately Christopher died in 1765, leaving the widowed Rachael to continue with construction on Lot #3."
+  - says: "Down by the river, a few blocks away, stood a tavern called the Fountain Inn, run by a man named John Suter."
+    source: 3
+    quote: "a man named John Suter operated a successful tavern close to the waterfront called \"The Fountain Inn.\""
+  - says: "In seventeen ninety one, George Washington and the planner Pierre L'Enfant stayed there, while they worked out the new capital city."
+    source: 2
+    quote: "In 1791, George Washington and city planner Pierre L'Enfant were surveying the newly established District of Columbia."
+  - says: "In seventeen ninety one, George Washington and the planner Pierre L'Enfant stayed there, while they worked out the new capital city."
+    source: 2
+    quote: "Washington and L'Enfant stayed in Georgetown's Fountain Inn at 31st and K Streets."
+  - says: "John Suter had a son, also called John."
+    source: 2
+    quote: "John Suter's son, John, Jr., ran a clock shop in today's Old Stone House."
+  - says: "And the son rented the front room of this house, and made clocks in it."
+    source: 3
+    quote: "he rented the front room of Old Stone House from his grandmother-in-law and mother-in-law and operated a Clock and Watch-making shop there for a time."
+  - says: "Two Johns. Two buildings."
+    source: 2
+    quote: "local memory conflated the two buildings associated with the two John Suters."
+  - says: "The real tavern grew dirty and run down."
+    source: 3
+    quote: "Dirty, smelly, and run down, the once proud Fountain Inn looked nothing like the sort of place George Washington would have dined in."
+  - says: "And signs went up on this house, calling it George Washington's headquarters."
+    source: 3
+    quote: "Though signs and commemorative plaques appeared on the house labeling it as Washington's Headquarters, there was always doubt."
+  - says: "Nobody wanted to knock down the place where Washington had worked."
+    source: 2
+    quote: "the desire to honor and remember George Washington's 1791 visit combined with a fuzzy memory led to the Old Stone House's preservation while so much changed around it."
+  - says: "In nineteen fifty three, the government bought it, because local people believed it mattered."
+    source: 3
+    quote: "Old Stone House continued to be privately owned until 1953, when the federal government purchased the property for $90,000 in response to local residents who had come to regard the house as one of historical significance."
+  - says: "Then a Park Service historian named Cornelius Heine went through the records, and found the story was a myth."
+    source: 3
+    quote: "Detailed research by National Park Service historian Cornelius Heine helped shed light on the actual story and debunked the mythology that had helped save the house for almost 200 years."
+  - says: "Archaeologists dug under the floor. It had never even been a tavern."
+    source: 3
+    quote: "From the archeological evidence, it was clear that the house had never been a tavern or inn."
+  - says: "Inside, there is a tall clock made by John Suter Junior, which may have been built in that front room."
+    source: 3
+    quote: "One of John Suter, Jr.’s tall case clocks, which may have been built in the house over two hundred years ago, was purchased by the NPS and brought back to the house."
+  - says: "Washington never worked here."
+    source: 3
+    quote: "debunked the mythology that had helped save the house for almost 200 years."
+sources:
+  - title: "Barbara Smith Suter"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/barbara-smith-suter.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Old Stone House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/old-stone-house.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Old Stone House"
+    publisher: "National Park Service, Rock Creek Park"
+    url: https://www.nps.gov/rocr/learn/historyculture/old-stone-house-history.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-saved-by-a-mistake/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 98.9
+    audioBytes: 1583690
+    transcript:
+      totalS: 98.9
+      lines:
+        - text: Look at the little stone house on M Street, squeezed in among the shops.
+          atS: 0
+          durationS: 4.43
+        - text: It is the oldest building in Washington still standing on its first foundation.
+          atS: 5.04
+          durationS: 4.56
+        - text: And it survived because of a mistake.
+          atS: 9.98
+          durationS: 2.38
+        - text: It went up in seventeen sixty five, when this was a tobacco port in the colony of Maryland.
+          atS: 12.97
+          durationS: 5.6
+        - text: Christopher Layman, who bought the lot, died that year, and his widow Rachael kept on building.
+          atS: 19.52
+          durationS: 5.83
+        - text: Down by the river, a few blocks away, stood a tavern called the Fountain Inn, run by a man named John Suter.
+          atS: 26.3
+          durationS: 6.51
+        - text: In seventeen ninety one, George Washington and the planner Pierre L'Enfant stayed there, while they worked out the new capital city.
+          atS: 33.13
+          durationS: 7.95
+        - text: John Suter had a son, also called John.
+          atS: 41.6
+          durationS: 2.91
+        - text: And the son rented the front room of this house, and made clocks in it.
+          atS: 44.84
+          durationS: 3.88
+        - text: Two Johns.
+          atS: 49.1
+          durationS: 1.05
+        - text: Two buildings.
+          atS: 50.26
+          durationS: 1.31
+        - text: As the years went by, people mixed them up.
+          atS: 51.95
+          durationS: 2.81
+        - text: The real tavern grew dirty and run down.
+          atS: 55.37
+          durationS: 2.43
+        - text: And signs went up on this house, calling it George Washington's headquarters.
+          atS: 57.97
+          durationS: 4.88
+        - text: Nobody wanted to knock down the place where Washington had worked.
+          atS: 63.36
+          durationS: 3.54
+        - text: In nineteen fifty three, the government bought it, because local people believed it mattered.
+          atS: 67.28
+          durationS: 5.03
+        - text: Then a Park Service historian named Cornelius Heine went through the records, and found the story was a myth.
+          atS: 72.82
+          durationS: 6.98
+        - text: Archaeologists dug under the floor.
+          atS: 80.31
+          durationS: 2.27
+        - text: It had never even been a tavern.
+          atS: 83.02
+          durationS: 1.77
+        - text: Look at the house again.
+          atS: 85.39
+          durationS: 1.28
+        - text: Inside, there is a tall clock made by John Suter Junior, which may have been built in that front room.
+          atS: 87.48
+          durationS: 6.39
+        - text: Washington never worked here.
+          atS: 94.47
+          durationS: 1.61
+        - text: That is why it is still standing.
+          atS: 96.69
+          durationS: 2.23

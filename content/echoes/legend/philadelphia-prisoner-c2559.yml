@@ -1,0 +1,191 @@
+# Drafted by Claude Code (2026-11-10) for the Philadelphia core, following docs/writing-echoes.md.
+# Listening spot: North sidewalk of Fairmount Avenue in front of the penitentiary's main gate, at about 22nd Street.
+# Position: Overture place 'Eastern State Penitentiary' (2027 Fairmount Ave) at 39.96833, -75.17267; set south to the front gate on Fairmount Avenue (medium confidence).
+id: philadelphia-prisoner-c2559
+title: "Prisoner C2559"
+summary: "The legend says a governor sent his dog to Eastern State for life, for killing his wife's cat. The governor's wife said otherwise."
+place: "Eastern State Penitentiary, front gate on Fairmount Avenue, Fairmount, Philadelphia, Pennsylvania"
+at: { lat: 39.96752, lng: -75.17262 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 80
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The cat murder and the life sentence are a legend: newspapers of the 1920s told it, and the prison museum tells it as folklore. Cornelia Pinchot told The New York Times that Pep never killed her cat, and letters of 1924 between Governor Pinchot and the warden show the dog was donated to the prison. Pep's admission, his inmate number and his mugshot are on record. The script says plainly which is which.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, fairmount, eastern-state-penitentiary, dogs, legend]
+teaser: "He has a prisoner number, a mug shot, and a guilty look."
+script: |
+  Look at the big gate of the prison, and picture a black Labrador being led through it. His name was Pep. And the story goes that he was a murderer.
+
+  Here is the legend. Pep belonged to the governor of Pennsylvania, Gifford Pinchot. One day, the story goes, Pep killed the cat that belonged to the governor's wife. So the governor sentenced him to life, without parole. He arrived in August, nineteen twenty four, and got a prisoner number. C two five five nine. He even had a mug shot, with his number round his neck. In the photographs, his head is down and his ears are back. He looks a little guilty. The newspapers loved it.
+
+  But that is the legend. Here is what is on record. The governor's wife, Cornelia Pinchot, told a newspaper that Pep had never killed her cat. The family bred Labradors, and Pep was a present for the prisoners, to cheer them up. Years later, a researcher named Dick Fulmer found the letters. The governor had read that the governor of Maine gave a dog to his state's prison, and wanted to do the same. The warden wrote back that a dog would be a good addition to their community. So Pep was not a prisoner. He was a guest. He wandered the halls as he pleased, and the prisoners and the guards loved him.
+
+  Look at the gate again. Prisoner C two five five nine.
+
+  Good dog.
+pronunciations:
+  - written: "Pinchot"
+    say: "PIN-show"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the big gate of the prison, and picture a black Labrador being led through it."
+    source: 1
+    quote: "Pep was a black Labrador Retriever who was admitted to Eastern State Penitentiary on August 12th, 1924."
+  - says: "His name was Pep."
+    source: 1
+    quote: "Perhaps Eastern State's most unusual prisoner was Pep"
+  - says: "And the story goes that he was a murderer."
+    source: 2
+    quote: "There was this sort of production of sentencing Pep, the cat-murdering dog, to the prison,"
+  - says: "Pep belonged to the governor of Pennsylvania, Gifford Pinchot."
+    source: 1
+    quote: "Prison folklore and records tell us that Pennsylvania Governor Gifford Pinchot sentenced Pep to life without parole for killing his wife's cherished cat."
+  - says: "One day, the story goes, Pep killed the cat that belonged to the governor's wife."
+    source: 2
+    quote: "\"He had killed the Governor's wife's cat,\" or so the story went"
+  - says: "So the governor sentenced him to life, without parole."
+    source: 1
+    quote: "Pennsylvania Governor Gifford Pinchot sentenced Pep to life without parole for killing his wife's cherished cat."
+  - says: "He arrived in August, nineteen twenty four, and got a prisoner number. C two five five nine."
+    source: 1
+    quote: "admitted to Eastern State Penitentiary on August 12th, 1924."
+  - says: "He arrived in August, nineteen twenty four, and got a prisoner number. C two five five nine."
+    source: 1
+    quote: "his inmate number, C-2559, is skipped in the prison intake log."
+  - says: "He even had a mug shot, with his number round his neck."
+    source: 2
+    quote: "Pep got his own inmate number and there's even a mugshot taken where he wears it around his neck."
+  - says: "In the photographs, his head is down and his ears are back. He looks a little guilty."
+    source: 1
+    quote: "in photographs Pep, with his head down and ears back, certainly looks a little guilty."
+  - says: "The newspapers loved it."
+    source: 2
+    quote: "the pet dog Gov. Pinchot of Pennsylvania sentenced to Eastern State Penitentiary for life."
+  - says: "The governor's wife, Cornelia Pinchot, told a newspaper that Pep had never killed her cat."
+    source: 2
+    quote: "Cornelia \"said that he had never killed her cat and that the family bred Labradors and he was just a gift to the prisoners to boost morale,\" Annie Anderson says."
+  - says: "The family bred Labradors, and Pep was a present for the prisoners, to cheer them up."
+    source: 2
+    quote: "the family bred Labradors and he was just a gift to the prisoners to boost morale,"
+  - says: "Years later, a researcher named Dick Fulmer found the letters."
+    source: 1
+    quote: "I have found correspondence between Governor Gifford Pinchot and Warden John Groome of Eastern State Penitentiary in 1924"
+  - says: "The governor had read that the governor of Maine gave a dog to his state's prison, and wanted to do the same."
+    source: 1
+    quote: "the governor says that he recently read that the governor of Maine had donated a dog to that state’s prison"
+  - says: "The warden wrote back that a dog would be a good addition to their community."
+    source: 1
+    quote: "he will be a good addition to our community"
+  - says: "So Pep was not a prisoner. He was a guest."
+    source: 1
+    quote: "makes him, not a prisoner, but a guest."
+  - says: "He wandered the halls as he pleased, and the prisoners and the guards loved him."
+    source: 2
+    quote: "Pep, who actually wandered around the prison halls freely and became beloved by inmates and guards alike"
+  - says: "Prisoner C two five five nine."
+    source: 1
+    quote: "his inmate number, C-2559, is skipped in the prison intake log."
+sources:
+  - title: "Eastern State Penitentiary audio tour transcript"
+    publisher: "Eastern State Penitentiary Historic Site"
+    url: https://easternstate.org/uploads/media/ESP_English_Audio_Tour_Transcript.pdf
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Why 'Pep' The Prison Dog Got Such A Bum Rap"
+    publisher: "NPR"
+    url: https://www.npr.org/2015/08/04/424963629/why-pep-the-prison-dog-got-such-a-bum-rap
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/philadelphia-prisoner-c2559/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 80.3
+    audioBytes: 1286521
+    transcript:
+      totalS: 80.3
+      lines:
+        - text: Look at the big gate of the prison, and picture a black Labrador being led through it.
+          atS: 0
+          durationS: 4.6
+        - text: His name was Pep.
+          atS: 5.41
+          durationS: 1.36
+        - text: And the story goes that he was a murderer.
+          atS: 7.09
+          durationS: 2.36
+        - text: Here is the legend.
+          atS: 9.83
+          durationS: 1.27
+        - text: Pep belonged to the governor of Pennsylvania, Gifford Pinchot.
+          atS: 11.54
+          durationS: 4.06
+        - text: One day, the story goes, Pep killed the cat that belonged to the governor's wife.
+          atS: 16.21
+          durationS: 4.66
+        - text: So the governor sentenced him to life, without parole.
+          atS: 21.11
+          durationS: 3.05
+        - text: He arrived in August, nineteen twenty four, and got a prisoner number.
+          atS: 24.6
+          durationS: 3.61
+        - text: C two five five nine.
+          atS: 28.72
+          durationS: 1.73
+        - text: He even had a mug shot, with his number round his neck.
+          atS: 30.66
+          durationS: 2.95
+        - text: In the photographs, his head is down and his ears are back.
+          atS: 33.85
+          durationS: 3.02
+        - text: He looks a little guilty.
+          atS: 37.05
+          durationS: 1.27
+        - text: The newspapers loved it.
+          atS: 38.46
+          durationS: 1.3
+        - text: But that is the legend.
+          atS: 39.94
+          durationS: 1.35
+        - text: Here is what is on record.
+          atS: 41.53
+          durationS: 1.59
+        - text: The governor's wife, Cornelia Pinchot, told a newspaper that Pep had never killed her cat.
+          atS: 43.29
+          durationS: 5.46
+        - text: The family bred Labradors, and Pep was a present for the prisoners, to cheer them up.
+          atS: 49.13
+          durationS: 4.76
+        - text: Years later, a researcher named Dick Fulmer found the letters.
+          atS: 54.71
+          durationS: 3.7
+        - text: The governor had read that the governor of Maine gave a dog to his state's prison, and wanted to do the same.
+          atS: 58.85
+          durationS: 5.36
+        - text: The warden wrote back that a dog would be a good addition to their community.
+          atS: 64.6
+          durationS: 3.62
+        - text: So Pep was not a prisoner.
+          atS: 68.37
+          durationS: 1.53
+        - text: He was a guest.
+          atS: 70.08
+          durationS: 0.95
+        - text: He wandered the halls as he pleased, and the prisoners and the guards loved him.
+          atS: 71.31
+          durationS: 3.76
+        - text: Look at the gate again.
+          atS: 75.51
+          durationS: 1.13
+        - text: Prisoner C two five five nine.
+          atS: 76.75
+          durationS: 2.19
+        - text: Good dog.
+          atS: 79.12
+          durationS: 1.22
