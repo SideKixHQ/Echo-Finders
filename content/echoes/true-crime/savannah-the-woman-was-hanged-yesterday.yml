@@ -17,7 +17,7 @@ triggerRadiusKm: 0.04
 voice: wC1005J19tvhoqqC2hkf
 category: true-crime
 format: short
-durationS: 100
+durationS: 88
 visibility: at-hand
 certainty: documented
 minAge: 16
@@ -44,12 +44,12 @@ script: |
   Georgia was not yet two years old. It already had a gallows.
 detail: >-
   Christie to Oglethorpe, 14 December 1734: the effects of "The Unfortunate Mr Wise", "that Villian that Murdered him", the account of the killing ("Alice Riley by ye Direction & Influence of White", "White came in also pretending to Assist him in Combing his hairs"), "being very weak it Soon Dispatched him". Editor's note 82: Wise, a farmer, arrived 16 December 1733, "murdered March 1, 1733/4, by Alice Riley and Richard White, two Irish transport servants, who were hanged for the murder". Jenkins to Oglethorpe, 20 January 1734/5: White "Brook out of Prison", taken by Jenkins and the two Parkers with "two hooks & an ax", "He said he woud Joyfull to perish in ye woods rather then dye on the Gallows", "He was had immadiately to ye Gallows & Declared to ye last he was not Guilty", "The woman was Hanged yesterday, & denyed ye Murder of wise". Christie to the Trustees, 19 March 1734/5: "Alice Riley was hang'd ... within Six weeks after her being brought to Bed pursuant to her Sentence of the 11th day of May Last and the Child is Since dead"; the volume's index names the child "Riley, James, son to Alice, dead". Jenkins's letter dates her hanging to 19 January 1735 (new style); the script gives no day. The script reads Jenkins's line in modern spelling as reported speech, not as a quotation. The 1937 guide places the public store, mill and bake oven around Johnson Square, "the first square of the town". The square's present church is Christ Church; the script says only "the church". The 1937 guide mentions a sundial; whether it is still there is not checked, so the script does not point to it. White begging for his life: Jenkins, "He fell on his nees & with many Blows on his Breast baged his Life". The ghost story told about Alice Riley in Wright Square is not used.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: convicted
-  reviewedBy: "TODO: James (owner), before this can leave draft"
+  reviewedBy: "James (owner), approved 2026-11-11: the Christie and Jenkins letters count as two independent witnesses"
   reviewedAt: "2026-11-11"
   contentWarning: "This echo is about a murder and two executions in 1734 and 1735. No violence is described in detail."
 claims:
@@ -123,3 +123,86 @@ sources:
     url: https://archive.org/details/savannah1937fede
     retrievedAt: "2026-11-11"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-the-woman-was-hanged-yesterday/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 87.9
+    audioBytes: 1407729
+    transcript:
+      totalS: 87.9
+      lines:
+        - text: Look around this square, at the monument in the middle, and the church across the way.
+          atS: 0
+          durationS: 4.79
+        - text: In seventeen thirty five, this was the middle of the town.
+          atS: 5.04
+          durationS: 3.19
+        - text: The public store stood around it, and the mill, and the bake oven.
+          atS: 8.41
+          durationS: 3.55
+        - text: Within two years of the first settlers landing, this little town hanged two of its own.
+          atS: 12.28
+          durationS: 5.17
+        - text: A farmer named William Wise had come out with the colonists.
+          atS: 17.77
+          durationS: 3.38
+        - text: He fell ill, and kept to his bed.
+          atS: 21.2
+          durationS: 2.15
+        - text: Two Irish servants looked after him, Richard White and Alice Riley.
+          atS: 23.52
+          durationS: 4.03
+        - text: The town's recorder, Thomas Christie, wrote to Oglethorpe that one morning, while White pretended to comb Wise's hair, the two of them killed him.
+          atS: 27.7
+          durationS: 7.85
+        - text: Wise was too weak to fight.
+          atS: 35.93
+          durationS: 1.74
+        - text: They were tried and sentenced to hang.
+          atS: 37.79
+          durationS: 2.13
+        - text: Alice Riley was pregnant, so her hanging waited for the birth.
+          atS: 40.3
+          durationS: 3.63
+        - text: White broke out of prison.
+          atS: 44.31
+          durationS: 1.44
+        - text: A settler named Edward Jenkins saw a man walking fast outside town, and with two neighbours, armed with two hooks and an axe, he took him.
+          atS: 45.85
+          durationS: 8.59
+        - text: White begged for his life.
+          atS: 54.76
+          durationS: 1.42
+        - text: He said he would rather perish in the woods than die on the gallows.
+          atS: 56.42
+          durationS: 3.23
+        - text: They took him straight to the gallows.
+          atS: 60.03
+          durationS: 1.78
+        - text: He said to the last that he was not guilty.
+          atS: 62.09
+          durationS: 2.33
+        - text: Then Jenkins added a line to his letter.
+          atS: 64.75
+          durationS: 2.18
+        - text: The woman was hanged yesterday, and she too denied the murder of Wise.
+          atS: 67.21
+          durationS: 4.23
+        - text: Her baby, a boy named James, died soon after.
+          atS: 71.68
+          durationS: 3.45
+        - text: Look around the square again.
+          atS: 75.51
+          durationS: 1.61
+        - text: The letters never say where the gallows stood.
+          atS: 77.51
+          durationS: 2.33
+        - text: Only that White was carried into town, and taken straight to it.
+          atS: 80.17
+          durationS: 3.42
+        - text: Georgia was not yet two years old.
+          atS: 83.97
+          durationS: 2.07
+        - text: It already had a gallows.
+          atS: 86.25
+          durationS: 1.66
