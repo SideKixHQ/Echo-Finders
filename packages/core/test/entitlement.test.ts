@@ -128,6 +128,13 @@ describe("the two plans", () => {
     expect(cityAt({ lat: 32.2163, lng: -80.7526 })).toBeNull(); // Hilton Head
   });
 
+  it("sells passes in Houston, out to San Jacinto and Space Center Houston", () => {
+    expect(cityAt({ lat: 29.7604, lng: -95.3698 })?.id).toBe("houston"); // City Hall
+    expect(cityAt({ lat: 29.7499, lng: -95.085 })?.id).toBe("houston"); // San Jacinto
+    expect(cityAt({ lat: 29.5519, lng: -95.0983 })?.id).toBe("houston"); // Space Center Houston
+    expect(cityAt({ lat: 29.3013, lng: -94.7977 })).toBeNull(); // Galveston
+  });
+
   it("opens every echo in the city a City Pass was bought for, and only there", () => {
     expect(mayHearAnother(NEW_YORK, spent, "new", BATTERY, NOW)).toBe(true);
     expect(mayHearAnother(NEW_YORK, spent, "new", BLUE_RIDGE, NOW)).toBe(false);

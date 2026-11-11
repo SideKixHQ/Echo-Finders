@@ -103,6 +103,14 @@ export const CITIES: readonly City[] = [
   { id: "charleston", name: "Charleston", centre: { lat: 32.7765, lng: -79.9311 }, radiusKm: 25 },
   { id: "new-orleans", name: "New Orleans", centre: { lat: 29.9511, lng: -90.0715 }, radiusKm: 25 },
   { id: "boston", name: "Boston", centre: { lat: 42.3601, lng: -71.0589 }, radiusKm: 16 },
+  /*
+   * Houston (2026-11-11), ready for its first 30 echoes. 40km, wider than the other cities,
+   * because Houston is: downtown, Midtown, Montrose, the Heights, Rice and Hermann Park are
+   * all within 10km of City Hall, but San Jacinto and the Battleship Texas are 28km east and
+   * Space Center Houston, where three of the echoes are, is 35km south east. 40 takes those
+   * in and stops short of Galveston (about 75km).
+   */
+  { id: "houston", name: "Houston", centre: { lat: 29.7604, lng: -95.3698 }, radiusKm: 40 },
 ];
 
 /** The city this point is in, or null on the road and in the air. */

@@ -353,6 +353,116 @@
    "file": "hatteras-moved-the-lighthouse.json"
   },
   {
+   "area": "houston-a-bison-named-earl",
+   "bbox": [
+    -95.42158,
+    29.70535,
+    -95.37264,
+    29.73455
+   ],
+   "file": "houston-a-bison-named-earl.json"
+  },
+  {
+   "area": "houston-a-bunch-of-guys-about-to-turn-blue",
+   "bbox": [
+    -95.11069,
+    29.54112,
+    -95.07631,
+    29.56938
+   ],
+   "file": "houston-a-bunch-of-guys-about-to-turn-blue.json"
+  },
+  {
+   "area": "houston-a-capitol-without-a-roof",
+   "bbox": [
+    -95.39214,
+    29.74533,
+    -95.34647,
+    29.77813
+   ],
+   "file": "houston-a-capitol-without-a-roof.json"
+  },
+  {
+   "area": "houston-constitution-bend",
+   "bbox": [
+    -95.27958,
+    29.72142,
+    -95.25476,
+    29.74298
+   ],
+   "file": "houston-constitution-bend.json"
+  },
+  {
+   "area": "houston-ground-to-be-free-on",
+   "bbox": [
+    -95.37674,
+    29.72463,
+    -95.35192,
+    29.74619
+   ],
+   "file": "houston-ground-to-be-free-on.json"
+  },
+  {
+   "area": "houston-if-there-is-such-a-thing",
+   "bbox": [
+    -95.43982,
+    29.74688,
+    -95.40672,
+    29.78228
+   ],
+   "file": "houston-if-there-is-such-a-thing.json"
+  },
+  {
+   "area": "houston-return-like-eagles",
+   "bbox": [
+    -95.09742,
+    29.73827,
+    -95.06888,
+    29.76053
+   ],
+   "file": "houston-return-like-eagles.json"
+  },
+  {
+   "area": "houston-the-bodyguards-treasure",
+   "bbox": [
+    -95.28681,
+    29.70862,
+    -95.26199,
+    29.73018
+   ],
+   "file": "houston-the-bodyguards-treasure.json"
+  },
+  {
+   "area": "houston-the-box-began-to-chirp",
+   "bbox": [
+    -95.41122,
+    29.75222,
+    -95.3847,
+    29.78483
+   ],
+   "file": "houston-the-box-began-to-chirp.json"
+  },
+  {
+   "area": "houston-the-condition",
+   "bbox": [
+    -95.42019,
+    29.67302,
+    -95.39537,
+    29.69688
+   ],
+   "file": "houston-the-condition.json"
+  },
+  {
+   "area": "houston-the-time-stopped-running",
+   "bbox": [
+    -95.40858,
+    29.72664,
+    -95.38376,
+    29.7482
+   ],
+   "file": "houston-the-time-stopped-running.json"
+  },
+  {
    "area": "jerome-a-ghost-town-on-purpose",
    "bbox": [
     -112.12879,
