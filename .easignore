@@ -16,11 +16,10 @@ coverage/
 /design/
 /scripts/
 /test/
-# The web app, except the one file the iPhone app imports: the generated echo library
-# (apps/ios/src/library.ts). Its public/ holds the rendered audio, which the phone streams.
-/apps/prototype/*
-!/apps/prototype/src/
-/apps/prototype/src/*
-!/apps/prototype/src/library.generated.ts
+# The web app's source stays in: the iPhone app imports its generated echo library
+# (apps/ios/src/library.ts), and Metro watches apps/prototype/src. Its public/ holds the
+# rendered audio, which the phone streams from the site, so that stays out. (EAS ignored a
+# `!` re-include here, so this excludes by name rather than excluding all and re-including.)
+/apps/prototype/public/
 /apps/site/
 /packages/echo/
