@@ -17,7 +17,7 @@ import { ReportEcho } from "./Feedback";
 import { SuggestSheet } from "./Suggest";
 import { feedbackAvailable } from "./feedback";
 import { SENTRY_DSN } from "./error-report";
-import { readSettings, saveSettings } from "./settings-store";
+import { phoneTheme, readSettings, saveSettings } from "./settings-store";
 import { Nav, type Tab } from "./Nav";
 import { Plan } from "./Plan";
 import { RouteRibbon, left } from "./RouteRibbon";
@@ -281,7 +281,21 @@ export function App() {
   // (`settings-store.ts`). Saved below whenever any of the three changes.
   const [savedSettings] = useState(readSettings);
   const [privacy, setPrivacy] = useState<PrivacySettings>(savedSettings.privacy);
-  const [theme, setTheme] = useState<"dark" | "light">(savedSettings.theme);
+  const [theme, setThemeState] = useState<"dark" | "light">(savedSettings.theme);
+  /** Picked by the listener; until then the phone's light or dark setting decides. */
+  const [themeChosen, setThemeChosen] = useState(savedSettings.themeChosen);
+  const setTheme = (next: "dark" | "light") => {
+    setThemeState(next);
+    setThemeChosen(true);
+  };
+  useEffect(() => {
+    if (themeChosen || typeof matchMedia === "undefined") return;
+    setThemeState(phoneTheme());
+    const q = matchMedia("(prefers-color-scheme: light)");
+    const follow = () => setThemeState(phoneTheme());
+    q.addEventListener?.("change", follow);
+    return () => q.removeEventListener?.("change", follow);
+  }, [themeChosen]);
   /**
    * Owner or tester mode, from a private link (`owner.ts`): everything open, on this phone
    * only. Both open the same things; the role only changes what Settings calls it.
@@ -345,8 +359,8 @@ export function App() {
    */
   const [kids, setKids] = useState(savedSettings.kids);
   useEffect(() => {
-    saveSettings({ privacy, kids, theme });
-  }, [privacy, kids, theme]);
+    saveSettings({ privacy, kids, theme, themeChosen });
+  }, [privacy, kids, theme, themeChosen]);
   const [rate, setRate] = useState(1);
 
   /**

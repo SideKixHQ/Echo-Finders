@@ -42,7 +42,7 @@ const check = (name, ok, detail = '') => {
 };
 
 async function freshApp(geolocation = START) {
-  const ctx = await browser.newContext({
+  const ctx = await browser.newContext({ colorScheme: "dark",
     viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation,
   });
@@ -174,7 +174,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
 // The heatmap once changed the tab underneath and stayed on top, so every tab looked dead
 // (James, 2026-11-09).
 {
-  const ctx = await browser.newContext({
+  const ctx = await browser.newContext({ colorScheme: "dark",
     viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
     ignoreHTTPSErrors: true, permissions: [],
   });
@@ -211,7 +211,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
 // on the place searched for.
 {
   const fresh = async (geo) => {
-    const ctx = await browser.newContext({
+    const ctx = await browser.newContext({ colorScheme: "dark",
       viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
       ignoreHTTPSErrors: true, ...(geo ? { permissions: ['geolocation'], geolocation: START } : { permissions: [] }),
     });
@@ -266,7 +266,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
 // come out of onboarding looking at that story's place with its card open and a Play
 // button on it (James, 2026-11-09).
 {
-  const ctx = await browser.newContext({
+  const ctx = await browser.newContext({ colorScheme: "dark",
     viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
     ignoreHTTPSErrors: true, permissions: [],
   });
@@ -1215,7 +1215,7 @@ async function arrive() {
 
 // ── How echoes unlock, once, after first run ────────────────────────────────────
 {
-  const ctx = await browser.newContext({
+  const ctx = await browser.newContext({ colorScheme: "dark",
     viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: START,
   });
@@ -1292,7 +1292,7 @@ async function nearby() {
 // first stop. Its own context, standing at St. James.
 {
   const ST_JAMES = { latitude: 34.2357, longitude: -77.9452 };
-  const ctx = await browser.newContext({
+  const ctx = await browser.newContext({ colorScheme: "dark",
     viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: ST_JAMES,
   });

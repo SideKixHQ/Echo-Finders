@@ -384,7 +384,7 @@ const record = (screenName, result) => {
 
 /** Walk the product once, at one size, in one theme. */
 async function walk(width, height, theme) {
-  const ctx = await b.newContext({
+  const ctx = await b.newContext({ colorScheme: "dark",
     viewport: { width, height }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
     ignoreHTTPSErrors: true, permissions: ['geolocation'],
     geolocation: { latitude: 40.7033, longitude: -74.0170 },

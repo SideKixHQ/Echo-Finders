@@ -50,7 +50,7 @@ const check = (name, ok, detail = '') => {
 
 /** A fresh device that has already heard these, standing at Castle Clinton. */
 async function standAtCastleClinton(heard, { handsFree = false } = {}) {
-  const ctx = await browser.newContext({
+  const ctx = await browser.newContext({ colorScheme: "dark",
     viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, ignoreHTTPSErrors: true,
     permissions: ['geolocation'], geolocation: HERE,
   });
