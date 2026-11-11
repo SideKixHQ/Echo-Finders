@@ -8149,6 +8149,1991 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "houston-a-bison-named-earl",
+    "title": "A Bison Named Earl",
+    "summary": "Houston's zoo began in 1920 with one bison from a national park herd. The city named him Earl, and found him a friend: a deer.",
+    "point": {
+      "at": {
+        "lat": 29.71613,
+        "lng": -95.39057
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Houston Zoo, Hermann Park, Museum District, Houston, Texas"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Somewhere past these trees is the Houston Zoo. Hundreds and hundreds of animals.\n\nIt started with just one.\n\nIn nineteen twenty, the United States government had too many bison in its national parks. So it gave some away. One of them came to Houston.\n\nThe city put him in a little park downtown, and gave him a name. Earl.\n\nEarl needed company. The city bought him a girl bison from a herd in west Texas, but sadly she did not live long. So his next friend was a deer, given by a fishing club.\n\nThen more animals came. Strange pets. Gifts. A lion, bought from a circus.\n\nOn the first of December, nineteen twenty four, the zoo officially opened. By the next year it had moved here, to Hermann Park, with more than four hundred animals, three hundred birds and a hundred reptiles.\n\nAnd their dinner? Everything from meat to dried flies.\n\nSo when you walk past the animals today, say thank you to the very first one.\n\nThank you, Earl.\n",
+    "teaser": "The whole zoo started with one big, shaggy animal called Earl.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/houston-a-bison-named-earl/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 66.8,
+        "audioBytes": 1070436
+      }
+    ],
+    "tags": [
+      "houston",
+      "hermann-park",
+      "houston-zoo",
+      "animals",
+      "bison",
+      "family"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-a-bunch-of-guys-about-to-turn-blue",
+    "title": "A Bunch of Guys About to Turn Blue",
+    "summary": "Sixteen days before Apollo 11 landed, a young controller here called a wrong abort in practice. On the day, the alarm came back.",
+    "point": {
+      "at": {
+        "lat": 29.55828,
+        "lng": -95.08885
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Apollo Mission Control, Building 30, Johnson Space Center, Houston, Texas"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 94,
+    "minAge": 0,
+    "quality": 0.9,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are at Building Thirty, Mission Control. Every Apollo flight was run from a room in here, including the one that first landed men on the Moon.\n\nSixteen days before that landing, the controllers here failed a test.\n\nOn the fifth of July, nineteen sixty nine, they ran a practice landing. Steve Bales, the twenty six year old guidance officer, saw a computer alarm he had never seen before. He did not know what it meant. He called an abort.\n\nThe abort was wrong. The alarm was harmless. The flight director, Gene Kranz, told him to go and write rules for every alarm the computer could throw.\n\nOn the twentieth of July, the real Eagle was falling toward the Moon. Then, on its computer, an alarm. Twelve oh two.\n\nFrom the Moon, Neil Armstrong asked for a reading on it.\n\nBales had his answer. Flight, he said, we're go on the alarm. Twenty seconds, maybe longer. It was an eternity in the control room, he said later.\n\nMore alarms came. The room kept saying go.\n\nThen Buzz Aldrin's voice. Contact light. Engine stop.\n\nAnd Armstrong. Houston. Tranquility Base here. The Eagle has landed.\n\nHis first call to Earth from the Moon began with the name of this city.\n\nThe answer came back from this building. Roger, Tranquility. You got a bunch of guys about to turn blue.\n\nWe're breathing again.\n",
+    "teaser": "Neil Armstrong's first call from the Moon began with the word Houston. It came to this building.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-a-bunch-of-guys-about-to-turn-blue/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 94.4,
+        "audioBytes": 1511801
+      }
+    ],
+    "inside": true,
+    "tags": [
+      "houston",
+      "nasa",
+      "johnson-space-center",
+      "clear-lake",
+      "apollo-11",
+      "mission-control",
+      "moon"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-a-capitol-without-a-roof",
+    "title": "A Capitol Without a Roof",
+    "summary": "In May 1837 the Congress of the Republic of Texas met on this corner, in a capitol with no roof. Audubon found the benches soaked.",
+    "point": {
+      "at": {
+        "lat": 29.76015,
+        "lng": -95.3629
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Site of the Capitol of the Republic of Texas, Rice Hotel, Main Street at Texas Avenue, Downtown Houston"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 90,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old hotel on this corner. Before it was a hotel, this was the capitol of a country. The Republic of Texas.\n\nAnd for its first weeks, the capitol had no roof.\n\nIn the spring of eighteen thirty seven, Houston was a few months old. The Allen brothers had promised Congress a building if it made their town the capital, and Congress said yes. Then the lumber, ordered from Maine, failed to arrive.\n\nSo a contractor, Thomas Ward, talked carpenters out of the town's saloons and started a one storey building on Main Street.\n\nBy the first of May, when Congress met, it still had no roof. Branches were cut and fastened along the ridgepole.\n\nOn the fifteenth of May, a visitor came to look around. John James Audubon, the painter of birds. The capitol, he wrote, was yet without a roof. The floor, the benches and the tables of both houses of Congress were as wet as his own clothes had been that morning.\n\nThe hammering went on during sessions. A member asked that Major Ward be told to stop work that disturbed Congress. The motion was rejected.\n\nTwo years later, the government moved to Austin, and this corner became a hotel site.\n\nLook up at the hotel. A country's laws were once made here, under branches.\n\nAnd the work went on through the debates.\n",
+    "teaser": "Houston was a national capital before it had roofs. The Congress met here in the rain.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-a-capitol-without-a-roof/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 89.7,
+        "audioBytes": 1436568
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Audubon",
+        "say": "AW-duh-bon"
+      }
+    ],
+    "tags": [
+      "houston",
+      "downtown",
+      "republic-of-texas",
+      "capitol",
+      "rice-hotel",
+      "audubon",
+      "sam-houston"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "houston-a-pot-of-gold-on-washington",
+    "title": "A Pot of Gold on Washington",
+    "summary": "Houston grew up on tales of pirate and Spanish gold that nobody found. Then, in 1929, workmen on this corner dug up a pot of it.",
+    "point": {
+      "at": {
+        "lat": 29.76735,
+        "lng": -95.37245
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Houston Avenue at Washington Avenue, Houston, Texas"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 77,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "position-only",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on this corner, where Houston Avenue meets Washington Avenue. Ordinary pavement. Traffic.\n\nMost of what you are about to hear is legend, and nobody has proved it. Except for one thing that happened here.\n\nFor generations, the country around Houston was full of treasure tales. The pirate Jean Lafitte had sailed these waters, and people believed his men had hidden chests of coins. Others said there was Spanish gold, and Mexican gold.\n\nOne story said the gold of General Santa Anna himself lay buried somewhere in the salt marshes along the San Bernard River. That story sent many people out digging. None of them found it.\n\nOne lake was drained and dug out twice, looking for gold.\n\nAlong the shore of San Jacinto Bay, where pirate ships once anchored, great holes were left in the ground by treasure hunters.\n\nAnd then, in nineteen twenty nine, workmen were putting up a filling station, at this corner.\n\nThey dug up a pot of gold. It was estimated at two thousand dollars.\n\nThe record does not say who buried it, or when. The find brought all the old stories back.\n\nLook down at the pavement.\n\nFor once, the ground paid out.\n",
+    "teaser": "Everyone hunted for buried treasure in the marshes. It turned up under a gas station.",
+    "certaintyNote": "The treasure tales are folklore, not history: the WPA's Houston guide of 1942 calls them legends and lore, and says the searches were mostly futile. The one documented find in this echo, a pot of gold worth an estimated two thousand dollars dug up at this corner in 1929, is reported by the same guide; no source says who buried it. The script says out loud which part is legend.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/houston-a-pot-of-gold-on-washington/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 76.6,
+        "audioBytes": 1226335
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Lafitte",
+        "say": "luh-FEET"
+      }
+    ],
+    "tags": [
+      "houston",
+      "washington-avenue",
+      "treasure",
+      "pirates",
+      "jean-lafitte",
+      "santa-anna",
+      "legend"
+    ],
+    "remoteness": 0.45
+  },
+  {
+    "id": "houston-a-window-for-doughnuts",
+    "title": "A Window for Doughnuts",
+    "summary": "In the 1890s an all night coffee saloon on Preston had a little window where men queued for doughnuts. Nearby, a cafe kept bullfrogs.",
+    "point": {
+      "at": {
+        "lat": 29.7624,
+        "lng": -95.3625
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Preston Street at Market Square Park, Downtown Houston, Texas"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on Preston, by Market Square, and picture a small window at the front of a bakery. Open all night.\n\nIn the late eighteen nineties, some of the most important men in Houston lined up at it.\n\nIt was Stude's Bakery and Coffee Saloon, at eight ten Preston Avenue. It never closed. And at that little window, men queued up for doughnuts, or sweet rolls, to eat with their coffee.\n\nOne of them was George Hermann. He was the man who would give Houston the land for Hermann Park. He stood in line like everybody else.\n\nNight life in Houston then had plenty of choice. A hotel dining hall served ten course dinners for fifty cents, with suckling pig and larded quail.\n\nAnd near the courthouse was Colby's Cafe. Out front was a display of venison, ducks, geese, snipe and turtles. Inside, it served turtle soup and frog's legs, and it kept a tank of live bullfrogs.\n\nIn watermelon season, the story goes, the floor got so slick with melon juice that the waiters skated from table to table.\n\nLook along the street. The bakery is long gone, and so is the frog tank.\n\nBut picture the line at that window, all night long, for a doughnut.\n",
+    "teaser": "The man who gave Houston Hermann Park stood in line on this street, at a little window, for a doughnut.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-a-window-for-doughnuts/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 78.3,
+        "audioBytes": 1253084
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Stude's",
+        "say": "STOO-deez"
+      }
+    ],
+    "tags": [
+      "houston",
+      "downtown",
+      "market-square",
+      "preston-street",
+      "coffee",
+      "doughnuts",
+      "1890s",
+      "george-hermann"
+    ],
+    "remoteness": 0.13
+  },
+  {
+    "id": "houston-another-uss-houston",
+    "title": "Another USS Houston",
+    "summary": "When the cruiser USS Houston sank in 1942, the city asked for a thousand men to replace her crew. More than three thousand answered.",
+    "point": {
+      "at": {
+        "lat": 29.7573,
+        "lng": -95.3643
+      },
+      "triggerRadiusKm": 0.07,
+      "place": "900 block of Main Street, Downtown Houston, Texas"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 0,
+    "quality": 0.9,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on Main Street, in the nine hundred block, and look along it.\n\nOne Saturday afternoon in nineteen forty two, a photographer climbed out onto the sign of a movie theater on this block, just to get it all into his picture.\n\nA few months before, at the turn of February into March, the cruiser USS Houston had gone down in a night battle in the Sunda Strait, off Java. Back home, people knew only that their city's ship was lost. Nobody knew what had become of her crew.\n\nThe Navy said it would give the name to a new cruiser. So the city set itself a goal. A thousand men, to take the place of the crew they had lost.\n\nOn Memorial Day, the volunteers lined up along this block to be sworn in. The crowd downtown was put at a hundred and fifty thousand. By the Chronicle's count, more than three thousand men answered.\n\nA fifty three year old logger, William Harrison Watson, tried to sign up. He was turned away for his age and his eyesight. His four sons took the oath instead.\n\nThe mayor read the crowd a letter from President Roosevelt. Our enemies have given us the chance to prove, he wrote, that there will be another USS Houston.\n\nThen the city raised the money to build her. Enough for the new Houston, and for an aircraft carrier besides, the San Jacinto.\n\nWhat nobody on this street knew was that nearly three hundred of the first crew had lived. They were prisoners, forced to build a railway through the jungle between Burma and Thailand.\n\nLook along the block.\n\nThey were replacing men who were still alive.\n",
+    "teaser": "The city asked for a thousand men. More than three thousand answered.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-another-uss-houston/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 100,
+        "audioBytes": 1600826
+      }
+    ],
+    "tags": [
+      "houston",
+      "downtown",
+      "main-street",
+      "uss-houston",
+      "navy",
+      "world-war-ii",
+      "military",
+      "houston-volunteers"
+    ],
+    "remoteness": 0.09
+  },
+  {
+    "id": "houston-constitution-bend",
+    "title": "Constitution Bend",
+    "summary": "In 1837 a ship called the Constitution came up the bayou to Houston and could not turn round. Where it finally did became the Turning Basin.",
+    "point": {
+      "at": {
+        "lat": 29.7322,
+        "lng": -95.26717
+      },
+      "triggerRadiusKm": 0.2,
+      "place": "Houston Turning Basin, Port Houston, East Loop North, Houston, Texas"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 89,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Somewhere beyond these port buildings is the Turning Basin, a wide bend in the water where the biggest cargo ships in the world are swung round to head back to sea.\n\nIt is named after a ship that almost could not do it.\n\nOn the first of June, eighteen thirty seven, a big sailing ship called the Constitution came up Buffalo Bayou to the new town of Houston. The Allen brothers had paid her captain a thousand dollars to try it. The local paper could hardly trust its eyes. The ship was moored at the landing, towering in pride above the bayou.\n\nThen the captain, with his fee in his pocket, found that he could not turn his ship around.\n\nHe worked her back down the bayou. And at a bend, finally, the Constitution turned without running aground. People called the place Constitution Bend.\n\nSeventy seven years later, a channel fifty one miles long and twenty five feet deep was dug from the Gulf to this bend. On the tenth of November, nineteen fourteen, at eleven in the morning, President Woodrow Wilson pressed a button in Washington, and a cannon fired here. Miss Sue Campbell dropped a wreath of flowers into the water, and Port Houston was christened.\n\nLook toward the water. The ships that turn here now are bigger than anything the Allens could have pictured.\n\nIt began with one that barely made it round.\n",
+    "teaser": "The port began with one ship that could not turn around.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-constitution-bend/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 88.6,
+        "audioBytes": 1418596
+      }
+    ],
+    "tags": [
+      "houston",
+      "ship-channel",
+      "turning-basin",
+      "port-houston",
+      "buffalo-bayou",
+      "woodrow-wilson"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "houston-for-the-masses",
+    "title": "For the Masses",
+    "summary": "Houston's 1939 City Hall was nearly built in the Spanish style. Its architect won with one line, and sealed a letter to the future inside.",
+    "point": {
+      "at": {
+        "lat": 29.75995,
+        "lng": -95.36875
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Houston City Hall and Hermann Square, 901 Bagby Street, Downtown Houston, Texas"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 94,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across the water at City Hall. Pale stone, straight lines, carved panels running up its face.\n\nThe mayor did not want it to look like this.\n\nFor fifteen years, Houston argued about a new city hall. One plan was a copy of the Capitol in Washington, with a dome. Another was a twenty storey skyscraper. Then the Depression stopped everything.\n\nIn nineteen thirty seven, federal money came through, and the council picked a new architect, Joseph Finger. He had come to America from Austria at eighteen. He brought the council a plan described as ultra modernistic.\n\nMayor Fonville objected, loudly. The buildings around this square were Spanish style, he argued, and the new one should match.\n\nFinger answered. We're building for the masses, he said, and not the classes.\n\nThe council took his plan, without a single change.\n\nLook closer. Above the first floor, the panels show crops from around Houston. Higher up, its industries. Near the top, the work of city government. On the roof line, carved bobcat heads. And on the aluminum doors, the faces of lawgivers, from Moses and Caesar to Thomas Jefferson.\n\nBehind the cornerstone, sealed in a box, they left a Bible, the city charter, three newspapers, and an essay with a title like a letter.\n\nTo the Houston democracy of the future.\n",
+    "teaser": "The mayor wanted it Spanish style. The architect said one sentence, and won.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-for-the-masses/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 93.9,
+        "audioBytes": 1502606
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Fonville",
+        "say": "FON-vil"
+      }
+    ],
+    "tags": [
+      "houston",
+      "downtown",
+      "city-hall",
+      "hermann-square",
+      "architecture",
+      "art-deco",
+      "public-works"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "houston-ground-to-be-free-on",
+    "title": "Ground to Be Free On",
+    "summary": "In 1872, men who had been enslaved bought ten acres here for Juneteenth. For years it was Houston's only park open to Black residents.",
+    "point": {
+      "at": {
+        "lat": 29.73541,
+        "lng": -95.36433
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Emancipation Park, 3018 Dowling Street, Third Ward, Houston, Texas"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across this park. Ten acres of grass and old oaks, one whole city block.\n\nNobody gave it away. It was bought, by people who had once been bought and sold themselves.\n\nOn the nineteenth of June, eighteen sixty five, a Union general landed at Galveston and read an order. All slaves are free. In Texas, slavery had held on for two and a half years after Lincoln's Emancipation Proclamation.\n\nThe next year, Black Texans began to celebrate the day. They called it Juneteenth. In Houston, the celebration moved from place to place.\n\nSo the churches raised the money. Three men led them. Richard Allen, a politician. The Reverend Jack Yates, of Antioch Baptist Church. And the Reverend Elias Dibble. All three had been enslaved.\n\nOn the tenth of July, eighteen seventy two, these ten acres were sold for eight hundred dollars. The deed names nine trustees, for the Colored People of Harris County, known as the Festival Association.\n\nThey still had to pay for it, year by year. So they rented the ground to carnivals and circuses to make the payments.\n\nFifty years later, Houston segregated its parks. Until nineteen forty, this was the only public park in the city open to Black Houstonians.\n\nLook at the oaks again. Since the nineteen seventies, Juneteenth has come back here every June.\n\nThey bought the ground to be free on.\n",
+    "teaser": "This park was bought, not given, by people who had been bought and sold.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-ground-to-be-free-on/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 96.6,
+        "audioBytes": 1546492
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Dibble",
+        "say": "DIB-ul"
+      }
+    ],
+    "tags": [
+      "houston",
+      "third-ward",
+      "juneteenth",
+      "emancipation",
+      "african-american-history",
+      "parks"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-his-name-on-the-tower",
+    "title": "His Name on the Tower",
+    "summary": "Mellie Esperson built Texas's tallest tower as a memorial to her husband, and ran her business from it. The one beside it has her name.",
+    "point": {
+      "at": {
+        "lat": 29.75885,
+        "lng": -95.365
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Niels Esperson Building, 808 Travis Street at Rusk, Downtown Houston, Texas"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 90,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up, all the way up, at the top of the tower on this corner. A ring of columns, gold leaf, a little temple in the sky.\n\nIt was built for a man who never saw it.\n\nNiels Esperson came from Denmark. He and his wife, Mellie, moved to Houston in nineteen oh three. He made his fortune in the Humble oilfield and in real estate. He owned this corner, and he meant to build on it.\n\nIn the early nineteen twenties he died, and left her a fortune.\n\nHe had left no plans for the building. So Mellie went to Europe herself, for ideas on stone and materials, and hired the architect John Eberson to design what she meant as a memorial to her husband. Thirty two storeys, Italian Renaissance. When it opened in nineteen twenty seven, it was the tallest building in Texas. She gave it his name.\n\nThen she went to work in it. From a suite on the twenty fifth floor, for some twenty years, she ran her oil business, her rice farms and her real estate. She kept at it after she lost her sight.\n\nFourteen years after his tower, she built a second one, joined to it, on Walker. Nineteen storeys. The first skyscraper in Houston built with central air conditioning.\n\nThat one carries her name.\n\nLook up at the gold again.\n\nHis name is on the tower. Hers is on the one beside it, holding on.\n",
+    "teaser": "It was built for a man who never saw it. His widow worked in it for twenty years.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-his-name-on-the-tower/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 89.5,
+        "audioBytes": 1432807
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Esperson",
+        "say": "ESS-per-son"
+      }
+    ],
+    "tags": [
+      "houston",
+      "downtown",
+      "esperson-building",
+      "mellie-esperson",
+      "skyscrapers",
+      "women-in-business",
+      "oil"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "houston-hold-the-rail",
+    "title": "Hold the Rail",
+    "summary": "La Carafe, in an 1860 bakery, is called Houston's oldest bar. Its regulars give it a ghost for every floor, including one on the stairs.",
+    "point": {
+      "at": {
+        "lat": 29.76306,
+        "lng": -95.36189
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "La Carafe, Kennedy Bakery building, 813 Congress Street, Market Square, Houston, Texas"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the two storey brick building at eight thirteen Congress. Inside is a bar called La Carafe.\n\nIt is one of the oldest buildings in Houston still standing where it was built. And by the telling of the people who work in it, it is not empty when it should be.\n\nThis is a legend. Take it as one.\n\nAn Irish baker named John Kennedy came to Houston in eighteen forty two. Around eighteen sixty he had this building put up, for a steam bakery. It stayed in his family until nineteen seventy.\n\nNow it is called the oldest bar in Houston.\n\nIts regulars have given it a whole cast of ghosts. John Kennedy himself, they say, shot and killed outside this door. A bartender called Carl. A boy who plays upstairs. And a woman on the stairs, who pushes beautiful women down them.\n\nThe state historical marker for this building gives Kennedy's years, eighteen nineteen to eighteen seventy eight. It says nothing about how he died.\n\nA manager once told a reporter what he had seen. Doors open by themselves. You think you see people walk by. There are noises. Things fly off the walls.\n\nLook at the door, and the stairs behind it.\n\nIf you go up, hold the rail.\n",
+    "teaser": "Houston's oldest bar comes with a ghost for every floor. Mind the one on the stairs.",
+    "certaintyNote": "The ghosts are legend. The building, the baker and his dates come from the Texas Historical Commission's marker; the cast of ghosts, the claim that John Kennedy was shot outside the door and the manager's words come from the Houston Chronicle (2017). The marker gives Kennedy's years and says nothing of how he died, and this session found no record that he was shot. The script says so out loud.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/houston-hold-the-rail/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 68.9,
+        "audioBytes": 1103037
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "La Carafe",
+        "say": "lah kuh-RAFF"
+      }
+    ],
+    "tags": [
+      "houston",
+      "downtown",
+      "market-square",
+      "la-carafe",
+      "kennedy-bakery",
+      "bars",
+      "ghosts",
+      "legend"
+    ],
+    "remoteness": 0.17
+  },
+  {
+    "id": "houston-if-there-is-such-a-thing",
+    "title": "If There Is Such a Thing",
+    "summary": "Ima Hogg moved into her pink house on Buffalo Bayou in 1928. Months later the bayou flooded her garden. She replanted, then gave it away.",
+    "point": {
+      "at": {
+        "lat": 29.75766,
+        "lng": -95.42026
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Bayou Bend, 6003 Memorial Drive, River Oaks, Houston, Texas"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 99,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the house. Pink stucco, black iron balconies. Below it, the land drops away through the trees to Buffalo Bayou, which loops right around this place. That loop is why it is called Bayou Bend.\n\nThe woman who built it asked for a style that she was not sure existed.\n\nHer name was Ima Hogg. Her father, Jim Hogg, was the first governor of Texas born in Texas. Before he died, he told his children not to sell the family plantation, because he believed there was oil under it. In nineteen eighteen they drilled. He was right.\n\nIn the nineteen twenties, Ima and her brothers laid out a new neighborhood along this bayou, River Oaks. For her own house, she told the architects what she wanted. Southern colonial, she asked for, with a Latin flavor, if there is such a thing.\n\nShe moved in on the fifth of November, nineteen twenty eight.\n\nOn the thirty first of May, nineteen twenty nine, the bayou flooded. The new garden and the lawn below the house were wrecked, and trees the family loved were lost.\n\nSo she spent the next year replanting. Hundreds of trees, shrubs and flowers. Old roses. A white garden in the woods.\n\nThen she gave the whole place away, to the Museum of Fine Arts, so anyone could walk through it.\n\nLook down toward the water, through the trees she planted after the flood.\n\nIt turned out there was such a thing.\n",
+    "teaser": "She asked her architects for a style that might not exist. Then the bayou came up the lawn.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-if-there-is-such-a-thing/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 98.8,
+        "audioBytes": 1582436
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Ima Hogg",
+        "say": "EYE-muh HOG"
+      }
+    ],
+    "inside": true,
+    "tags": [
+      "houston",
+      "buffalo-bayou",
+      "river-oaks",
+      "bayou-bend",
+      "ima-hogg",
+      "gardens",
+      "museum-of-fine-arts"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-know-what-this-is-about",
+    "title": "Know What This Is About",
+    "summary": "Lucille's is named for a great-grandmother who cooked for Dr. King. Its chef serves a red salad for Juneteenth, and asks one thing.",
+    "point": {
+      "at": {
+        "lat": 29.72377,
+        "lng": -95.38505
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Lucille's, 5512 La Branch Street, Museum District, Houston, Texas"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 80,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at this old house, built in nineteen twenty three. It is a restaurant now, and it carries a woman's name. Lucille.\n\nShe never cooked here. She is the chef's great-grandmother.\n\nHer name was Lucille Smith. She was a home economist and a teacher. She created a hot roll mix that was sold in grocery stores. She cooked for Dr. Martin Luther King Junior and for Eleanor Roosevelt. And when she sent Christmas fruitcakes to soldiers in Vietnam, President Lyndon Johnson wrote to thank her.\n\nHer great-grandsons, Chris and Ben Williams, opened this restaurant. It was Ben's idea to name it after Great Grandma. Chris said that was perfect, because it gave them a story.\n\nSince the day they opened, they have served a watermelon salad, with strawberry and jalapeño dressing. It is red on purpose. Red is the color most people link with Juneteenth, the day enslaved Texans learned they were free. It stands for the blood that was shed.\n\nChris has said he is not comfortable calling Juneteenth a celebration. To him, it is a day of acknowledgement.\n\nSo he asks one thing of anyone sitting down to eat that day.\n\nKnow what this is really about.\n",
+    "teaser": "A watermelon salad, a great-grandmother's name, and one request before you eat.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-know-what-this-is-about/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 80.2,
+        "audioBytes": 1284431
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "jalapeño",
+        "say": "hah-luh-PAYN-yoh"
+      }
+    ],
+    "inside": true,
+    "tags": [
+      "houston",
+      "museum-district",
+      "juneteenth",
+      "southern-food",
+      "restaurants",
+      "lucille-b-smith"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-love-me-orange",
+    "title": "Love Me, Orange",
+    "summary": "A Houston mail carrier spent some twenty years building a monument to the orange from the city's scrap. It opened in 1979. Few came.",
+    "point": {
+      "at": {
+        "lat": 29.71763,
+        "lng": -95.32433
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "The Orange Show, 2401 Munger Street, East End, Houston, Texas"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 101,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the walls in front of you, all tile and steel and bright paint. Somewhere in them are words, set in tile. Eat oranges and live.\n\nA mail carrier built all of this, by himself, to tell the world about one fruit.\n\nHis name was Jeff McKissack. In the Depression he trucked oranges around the Southeast, and he came to believe the orange was a pure source of energy. In the war years he learned to weld in a navy shipyard. Then he moved to Houston and carried the mail.\n\nHe bought two lots across the street from his house. He got a permit to build a beauty parlor. Then he typed onto the permit, Beauty parlors are going out of style. Have a better idea. The Orange Show.\n\nFor about twenty years, he hauled in what the city threw away. Roof tiles, fire escapes, steel wheels, turnstiles, tractor seats, from Houston buildings being torn down. He worked without plans. Stairs and catwalks, two little amphitheaters, a wishing well, a steamboat floating in a tank.\n\nHe called it the most beautiful show on earth. He expected ninety percent of the country to want to see it. It opened on the ninth of May, nineteen seventy nine.\n\nThe crowds did not come. Seven months later, he died of a stroke.\n\nBut some of the few who had come were artists. They raised the money to buy it and save it. Dominique de Menil gave. So did ZZ Top.\n\nFind the words in the tile again.\n\nLove me, orange, please love me.\n",
+    "teaser": "He expected ninety percent of America to come and see it. Hardly anyone did.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-love-me-orange/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 101.1,
+        "audioBytes": 1617963
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "McKissack",
+        "say": "muh-KISS-uk"
+      }
+    ],
+    "tags": [
+      "houston",
+      "east-end",
+      "orange-show",
+      "folk-art",
+      "jeff-mckissack",
+      "visionary-art"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-one-dollar",
+    "title": "One Dollar",
+    "summary": "In May 1977 Houston police beat Joe Campos Torres, a 23 year old veteran, and forced him into this bayou. Two officers were fined $1.",
+    "point": {
+      "at": {
+        "lat": 29.76285,
+        "lng": -95.3574
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Buffalo Bayou trail near Austin Street, Joe Campos Torres Plaza and Trail, Downtown Houston, Texas"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 16,
+    "quality": 0.9,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look toward the bayou, and the slow water.\n\nIt was deep enough.\n\nOn the fifth of May, nineteen seventy seven, Joe Campos Torres was twenty three. He was an army veteran, home the year before. He grew up in the East End, one of seven children.\n\nThat night police were called to a fight at a bar, and he was arrested. Officers took him to a spot on this bayou that police called the hole, and beat him.\n\nWhen they brought him to the city jail, he was so badly hurt that they were told to take him to the hospital. Instead, they took him back to the hole. They beat him again, and forced him into the water.\n\nHe was too hurt to swim. Three days later, his body came up in the bayou.\n\nA rookie officer who had been there broke the silence, and told his father.\n\nTwo officers were tried for murder. A jury convicted them of negligent homicide, a misdemeanor. Their sentence was probation, and a fine of one dollar. A federal jury later found three officers guilty of violating his civil rights. Each got a year and a day.\n\nA year after his death, a crowd at Moody Park, on the north side, clashed with police, and the night ended in a riot.\n\nIn twenty twenty one, Houston's police chief apologized to his family. He called it a straight up murder. The city has since put his name on a plaza and a trail beside this water.\n\nLook at the bayou again.\n\nOne dollar.\n",
+    "teaser": "Two officers were convicted over his death. The fine was one dollar.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/houston-one-dollar/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 84.7,
+        "audioBytes": 1356320
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Campos Torres",
+        "say": "KAHM-pohs TOR-es"
+      }
+    ],
+    "tags": [
+      "houston",
+      "downtown",
+      "buffalo-bayou",
+      "joe-campos-torres",
+      "police",
+      "civil-rights",
+      "moody-park",
+      "true-crime"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "convicted",
+      "reviewedBy": "James (owner), approved 2026-11-11",
+      "reviewedAt": "2026-11-11",
+      "contentWarning": "This echo describes a young man beaten by police officers and drowned. No injuries are described in detail."
+    },
+    "remoteness": 0.3
+  },
+  {
+    "id": "houston-one-letter-missing",
+    "title": "One Letter Missing",
+    "summary": "In 1900, William Marsh Rice died in New York and a lawyer forged his will. A misspelled name on a check sent his fortune to Houston.",
+    "point": {
+      "at": {
+        "lat": 29.71677,
+        "lng": -95.40098
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Lovett Hall, Rice University, 6100 Main Street, Houston, Texas"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 101,
+    "minAge": 16,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the arches of Lovett Hall, the front door of Rice University.\n\nThis place exists because of a name, misspelled on a check.\n\nWilliam Marsh Rice was a rich man with deep roots in Houston. He owned the hotel on Main Street where the Capitol of Texas had stood. In his last years he lived in New York. In eighteen ninety six he wrote a will leaving the bulk of his money to found an institute here.\n\nIn September, nineteen hundred, he died in his bed in his New York apartment. He was eighty four.\n\nHis valet, Charles Jones, later confessed that he had killed him with chloroform while he slept. Jones swore he did it for a lawyer, Albert Patrick.\n\nThe prosecution's case was that Patrick had forged a newer will, leaving the fortune to himself, and a set of checks to empty Rice's bank accounts.\n\nBut on one of those checks, the name Albert Patrick was written with a letter missing. A bank clerk who had witnessed Rice's real will looked at it, and grew suspicious. When he telephoned, Jones admitted the old man was dead.\n\nPatrick was convicted of murder and sentenced to death. He always said he was innocent, and that Jones could not be believed. His sentence was cut to life in prison, and in nineteen twelve the governor of New York pardoned him. He was freed. The conviction was never overturned. Jones, who confessed, was never punished.\n\nThe forged will was thrown out. The fortune came to Houston, and the Rice Institute opened here.\n\nLook at the arches again.\n\nOne letter.\n",
+    "teaser": "This university exists because someone misspelled a name on a check.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/houston-one-letter-missing/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 100.5,
+        "audioBytes": 1609603
+      }
+    ],
+    "tags": [
+      "houston",
+      "rice-university",
+      "william-marsh-rice",
+      "true-crime",
+      "forgery",
+      "new-york"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "convicted",
+      "reviewedBy": "James (owner), approved 2026-11-11",
+      "reviewedAt": "2026-11-10",
+      "contentWarning": "This echo describes a murder, the killing of an elderly man in his sleep. No violence is described in detail."
+    },
+    "remoteness": 1
+  },
+  {
+    "id": "houston-out-of-desperation",
+    "title": "Out of Desperation",
+    "summary": "In 1973 a widow turned the front of her failing tortilla factory into a ten table restaurant. Its tacos al carbon made the fajita famous.",
+    "point": {
+      "at": {
+        "lat": 29.75702,
+        "lng": -95.34252
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Original Ninfa's on Navigation, 2704 Navigation Boulevard, East End, Houston, Texas"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 91,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the building on Navigation Boulevard. Before it was a famous restaurant, it was a tortilla factory. And it was failing.\n\nThe restaurant was a last resort.\n\nNinfa Rodriguez grew up in the Rio Grande Valley. She married Tommy Laurenzo, a Rhode Island man of Italian descent, and in nineteen forty nine they started a company in this building. Tortillas, and pizza dough. Her heritage, and his.\n\nIn nineteen sixty nine, Tommy died suddenly. She was a widow with five children, and the business was losing money.\n\nThe banks in Houston turned her down for a loan. She borrowed from a friend in Mexico instead. In the summer of nineteen seventy three, she turned the front of the factory into a little restaurant. Ten tables. Her daughter waited on them the first day.\n\nOn the menu was beef, char grilled and folded into soft flour tortillas. Tacos al carbon. The world would come to call them fajitas.\n\nWhen we opened this restaurant, her daughter said, it was out of desperation. We were in survival mode.\n\nWithin a few years there were a dozen Ninfa's, and more. Movie stars came, and a future president. Then the chain grew too fast, and the family lost it.\n\nLook at the front of the building again.\n\nShe didn't invent it, her daughter said. But nobody had it on the menu until the restaurant.\n",
+    "teaser": "The banks said no. So she borrowed from a friend in Mexico and opened ten tables.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-out-of-desperation/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 91,
+        "audioBytes": 1457466
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Ninfa",
+        "say": "NEEN-fah"
+      },
+      {
+        "written": "Laurenzo",
+        "say": "lor-EN-zo"
+      },
+      {
+        "written": "tacos al carbon",
+        "say": "TAH-kohs ahl kar-BOHN"
+      }
+    ],
+    "tags": [
+      "houston",
+      "east-end",
+      "navigation-boulevard",
+      "ninfas",
+      "mama-ninfa",
+      "tex-mex",
+      "fajitas",
+      "food"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-pay-as-you-go",
+    "title": "Pay as You Go",
+    "summary": "Jack Yates, born enslaved, built his Freedmen's Town house a piece at a time, only as he could pay. It was sold for one dollar.",
+    "point": {
+      "at": {
+        "lat": 29.76,
+        "lng": -95.372
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Yates House, Sam Houston Park, 1100 Bagby Street, Downtown Houston, Texas"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 98,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Among the old houses in this park is a two storey house in the Greek Revival style. It belonged to a man who had been born enslaved, and it took him years to finish.\n\nHe would not borrow a cent to build it.\n\nHis name was Jack Yates. He was born in Virginia in eighteen twenty eight. As a boy, he learned to read alongside his master's son.\n\nIn eighteen sixty three, his wife and children were sold to a plantation in Texas. His master freed him so he could go with them, and in Matagorda County he lived as a slave again, until emancipation came in eighteen sixty five.\n\nThe family came to Houston. Yates hauled goods with a dray. The next year he became the minister of Antioch Baptist Church.\n\nHe had a saying. Do well whatever is to be done, then be ready to do whatever else may follow.\n\nDebt, he taught, would put freed people under another kind of bondage. So when his church was built, nothing was borrowed. The members traded their labor for food.\n\nAnd when he built his own house, in Freedmen's Town, with his brother and his brother in law, he bought materials only when he could pay. A room when there was money. Then another.\n\nHe died at home in eighteen ninety seven. His last words were, the angels in glory welcome me home.\n\nA century later, his granddaughter sold the house, for one dollar, so it could be saved. It was moved here.\n\nLook at it again. Not one board of it was borrowed.\n",
+    "teaser": "He would not borrow a cent. So the house went up one board at a time.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-pay-as-you-go/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 98.2,
+        "audioBytes": 1572405
+      }
+    ],
+    "tags": [
+      "houston",
+      "downtown",
+      "sam-houston-park",
+      "freedmens-town",
+      "jack-yates",
+      "african-american-history",
+      "emancipation"
+    ],
+    "perspectiveIds": [
+      "houston-ground-to-be-free-on"
+    ],
+    "remoteness": 0.15
+  },
+  {
+    "id": "houston-return-like-eagles",
+    "title": "Return Like Eagles",
+    "summary": "On 21 April 1836 Sam Houston let the afternoon pass in silence. At four o'clock he attacked. It took about eighteen minutes.",
+    "point": {
+      "at": {
+        "lat": 29.74905,
+        "lng": -95.0813
+      },
+      "triggerRadiusKm": 0.1,
+      "place": "San Jacinto Monument, San Jacinto Battleground State Historic Site, La Porte, Texas"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 0,
+    "quality": 0.9,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand at the foot of the monument and look out over the flat ground around it. The Texans camped on one side of where it stands. The Mexican army camped on the other.\n\nOn the afternoon of the battle, the Texans did nothing at all.\n\nIt was the twenty first of April, eighteen thirty six. For forty days, Sam Houston had retreated across Texas, ahead of General Santa Anna. Some of his own officers had talked of mutiny. Now the two armies were camped on this plain, and that morning, some four hundred Mexican reinforcements had marched in.\n\nHouston told his officers nothing. Quietly, he sent a scout, Deaf Smith, with a few men and axes, to destroy Vince's Bridge, so no more Mexican troops could reach the field. Return like eagles, he told him, or you will be too late for the day.\n\nThen he waited. Hour after hour, the Texan camp sat still.\n\nAcross the field, the Mexican officers decided no attack was coming. They took their afternoon siesta. Muskets were stacked.\n\nAt about four o'clock, Houston formed his men, and they walked forward through the tall grass, silently, holding their fire.\n\nWhen they were close, two small cannon, the Twin Sisters, fired point blank into the barricade. The Texans charged, shouting Remember the Alamo.\n\nThe battle took about eighteen minutes.\n\nLook at the plain again. All that waiting, for eighteen minutes.\n\nAnd Texas was a country.\n",
+    "teaser": "Sam Houston did nothing all afternoon. That was the plan.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-return-like-eagles/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 97.4,
+        "audioBytes": 1559030
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "San Jacinto",
+        "say": "san juh-SIN-toh"
+      },
+      {
+        "written": "Santa Anna",
+        "say": "SAN-tuh AN-uh"
+      }
+    ],
+    "tags": [
+      "houston",
+      "san-jacinto",
+      "battleground",
+      "military",
+      "texas-revolution",
+      "sam-houston",
+      "santa-anna"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-the-basement-above-ground",
+    "title": "The Basement Above Ground",
+    "summary": "Houston's old charity hospital was built in 1924 over a city cemetery whose graves were never moved. So its basement sits above the ground.",
+    "point": {
+      "at": {
+        "lat": 29.76872,
+        "lng": -95.36794
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Old Jefferson Davis Hospital (Elder Street Artist Lofts), 1101 Elder Street, First Ward, Houston, Texas"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 87,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old brick hospital on its rise, with the columns at its front door. Now look at the bottom floor.\n\nIt is not below ground. The basement was built above it.\n\nBecause the ground was already full.\n\nThe building is history. The ghosts are legend. Here is the history first.\n\nFrom eighteen forty, this hill was the Houston City Cemetery. It took the dead until the eighteen eighties. Confederate soldiers lie here, and victims of yellow fever. Thousands of graves.\n\nIn nineteen twenty four, the city and the county built a charity hospital on top of it. There was no widespread removal of the graves. So the builders went up, instead of down.\n\nAt the request of Confederate veterans and their families, it was named for Jefferson Davis, for the men in the ground beneath it.\n\nIt was a hospital for only thirteen years. Then a psychiatric hospital. A juvenile detention ward. A food stamp office. A records store. Then nothing. For years it stood empty and fenced off, rotting in plain view of the freeway.\n\nThat is when the talk began. Soldiers in the wards, people say. Doctors, nurses and patients. Nobody has proved any of it.\n\nIn two thousand five, the old hospital became homes for artists. A spokeswoman said the ghosts had been replaced by muses.\n\nLook at the bottom floor again.\n\nThe basement is above ground. The cemetery is not.\n",
+    "teaser": "The basement of this hospital is above the ground. The ground was already taken.",
+    "certaintyNote": "The cemetery, the graves left in place, the raised basement and the hospital's history are documented by the Texas Historical Commission marker and the Handbook of Texas, and the Houston Chronicle (2013) reports thousands of graves on the site. The haunting is legend: the Chronicle reports the building's reputation and the claim that soldiers, doctors, nurses and patients walk it, and nobody has proved it. The script says which part is which.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/houston-the-basement-above-ground/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 86.9,
+        "audioBytes": 1391847
+      }
+    ],
+    "tags": [
+      "houston",
+      "first-ward",
+      "jefferson-davis-hospital",
+      "elder-street-lofts",
+      "cemetery",
+      "ghosts",
+      "legend"
+    ],
+    "remoteness": 0.49
+  },
+  {
+    "id": "houston-the-bodyguards-treasure",
+    "title": "The Bodyguard's Treasure",
+    "summary": "Santa Anna burned Harrisburg in 1836. In 1899 a man claiming to be his bodyguard said treasure lay buried in the bayou bank here.",
+    "point": {
+      "at": {
+        "lat": 29.7194,
+        "lng": -95.2744
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Glendale Cemetery and old Harrisburg, Broadway at Magnolia, East End, Houston, Texas"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 77,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "position-only",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look toward Buffalo Bayou. This was Harrisburg, a port town that was here ten years before Houston.\n\nPart of what you are about to hear is history. Part of it is a legend, and nobody has ever proved it.\n\nFirst, the history. On the night of the fifteenth of April, eighteen thirty six, General Santa Anna entered Harrisburg, lit by the glare of burning houses. He was hunting the government of Texas. It had left that noon for Galveston. He found only three men, working in a printing shop.\n\nIn a rage, he ordered the whole town burned. The newspaper, when it printed again, said its office was consumed in the fire.\n\nNow the legend.\n\nIn April, eighteen ninety nine, a Mexican man came to Harrisburg. He said he had been one of Santa Anna's bodyguards in the war. And he said he knew where treasure was buried. Two caches. One, he said, was in the bank of Buffalo Bayou, near Sam Allen's house, here in Harrisburg.\n\nHe offered to share it with anyone who would pay for the digging. It created, as one account put it, something of a stir.\n\nNothing in the record says he was who he claimed. Nothing says anyone found anything.\n\nLook at the bayou bank.\n\nIf it is there, it has waited a long time.\n",
+    "teaser": "A stranger came to Harrisburg with a treasure map in his head. He said he had guarded Santa Anna.",
+    "certaintyNote": "A treasure tale, not history. The WPA's Houston guide of 1942 reports that in April 1899 a man claiming to have been one of Santa Anna's bodyguards offered to share two buried caches, one in the bank of Buffalo Bayou near Sam Allen's house in Harrisburg. Nothing in the record says he was who he claimed, or that anything was found. The burning of Harrisburg in 1836 is history, from the same guide quoting Santa Anna. The script says out loud which part is legend.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/houston-the-bodyguards-treasure/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 76.7,
+        "audioBytes": 1228425
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Santa Anna",
+        "say": "SAN-tuh AN-uh"
+      }
+    ],
+    "tags": [
+      "houston",
+      "harrisburg",
+      "east-end",
+      "buffalo-bayou",
+      "santa-anna",
+      "treasure",
+      "legend"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-the-box-began-to-chirp",
+    "title": "The Box Began to Chirp",
+    "summary": "A quarter of a million bats live under the Waugh Bridge. When a freeze knocked them down, one woman drove them home in a box.",
+    "point": {
+      "at": {
+        "lat": 29.76325,
+        "lng": -95.3988
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Waugh Bridge bat colony, Buffalo Bayou, Houston, Texas"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 81,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "daylight-dependent",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the underside of the Waugh Bridge, at the dark seams between the beams.\n\nThey are full. Something like two hundred and fifty thousand bats live in there.\n\nThey are Mexican free tailed bats. Every night at sunset, people gather here to watch them pour out. In a night, the colony eats almost two and a half tons of insects.\n\nIn December twenty twenty two, an Arctic blast reached Houston. Mary Warwick, the wildlife director of the Houston Humane Society, was out doing her holiday shopping. The freezing wind reminded her of the bats. So she drove here.\n\nMore than a hundred lay on the ground, looking dead. The cold had sent them into shock, and they had lost their grip and fallen.\n\nShe gathered them into a box and set it on her heated passenger seat.\n\nOn the forty minute drive home, the box began to chirp.\n\nShe came back twice a day. Other people joined in. In the end, some sixteen hundred bats from this bridge and one in Pearland spent the freeze in her attic, in dog kennels, asleep.\n\nWhen the weather warmed, about seven hundred were due to be set free again, here, at this bridge.\n\nLook up at the seams. Stay until dusk.\n\nSome of them have been to her attic.\n",
+    "teaser": "A quarter of a million bats live under this bridge. Some of them have spent a week in an attic.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-the-box-began-to-chirp/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81.3,
+        "audioBytes": 1301567
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Waugh",
+        "say": "WAW"
+      }
+    ],
+    "tags": [
+      "houston",
+      "buffalo-bayou",
+      "bats",
+      "wildlife",
+      "nature",
+      "waugh-bridge"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-the-caretakers-violin",
+    "title": "The Caretaker's Violin",
+    "summary": "A caretaker lived in the old library's basement and played his violin upstairs at night. The legend says he still does.",
+    "point": {
+      "at": {
+        "lat": 29.7589,
+        "lng": -95.36912
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Julia Ideson Building, 550 McKinney Street, Downtown Houston, Texas"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the old library, built in the Spanish Renaissance style, and find the top row of windows. Three floors up.\n\nSome nights, people say, there is music up there after closing. A violin. And the click of a dog's claws on the tile.\n\nThis is a legend. Nobody has proved a note of it.\n\nThe building went up in the nineteen twenties as Houston's central library. Its librarian, Julia Ideson, ran the library for more than forty years. The building carries her name now.\n\nBut the man in this echo lived in the basement. Jacob Frank Cramer. An elderly man, the caretaker. He walked the night rounds with his German shepherd, Petey, at his heels.\n\nIn the evenings, the story goes, he climbed to the third floor, with Petey beside him, and played his violin.\n\nIn November, nineteen thirty six, the librarians found him dead.\n\nAnd then the reports began. A violin, somewhere in the building, late at night. Sheets of music found scattered. The tick of a dog's nails, crossing a floor where no dog was.\n\nLook at the top windows again.\n\nJulia Ideson got her name on the building.\n\nThe caretaker kept the night shift.\n",
+    "teaser": "Some nights, after closing, people say the old library plays the violin.",
+    "certaintyNote": "A ghost story, not history. The caretaker, his dog, his evening violin and his death in November 1936 are as the Houston Chronicle reported them in 2015 and 2017; the music, the scattered sheets and the clicking claws heard since are the legend, and nobody has proved them. The building and the librarian come from the Handbook of Texas. The script says out loud that it is a legend.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/houston-the-caretakers-violin/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 71.7,
+        "audioBytes": 1149012
+      }
+    ],
+    "tags": [
+      "houston",
+      "downtown",
+      "julia-ideson-building",
+      "library",
+      "ghosts",
+      "legend"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "houston-the-condition",
+    "title": "The Condition",
+    "summary": "To build the Astrodome, its backers needed Black voters. Quentin Mease agreed to help on one condition: the stadium had to be integrated.",
+    "point": {
+      "at": {
+        "lat": 29.6838,
+        "lng": -95.40778
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Astrodome, south side, 8400 Kirby Drive, NRG Park, Houston, Texas"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the Astrodome, the first stadium in the world built to be air conditioned. Before it could be built, somebody had to vote for it.\n\nAnd the men who wanted it could not win without Black voters.\n\nIt was nineteen sixty one. Roy Hofheinz and Bob Smith wanted a major league baseball team for Houston, and a stadium with a roof. For that, Harris County voters had to approve a public bond issue.\n\nThey needed the support of Black Houstonians. So they went to Quentin Mease. He was a veteran of the Air Force in the Second World War, and one of the most respected Black leaders in the city.\n\nIn Houston, it was only the year before that lunch counters had been integrated.\n\nMease and the other Black leaders listened. And they agreed to campaign for the bond on one condition.\n\nThe new stadium had to be open to everyone, together.\n\nHofheinz and Smith agreed. The bond issue, forty two million dollars, was passed.\n\nLook up at the dome again. The Eighth Wonder of the World.\n\nIt had a condition written into it before a single beam went up.\n",
+    "teaser": "The Eighth Wonder of the World needed votes. One man set the price.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-the-condition/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 68.5,
+        "audioBytes": 1097185
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Mease",
+        "say": "MEESE"
+      }
+    ],
+    "tags": [
+      "houston",
+      "astrodome",
+      "nrg-park",
+      "civil-rights",
+      "quentin-mease",
+      "african-american-history"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-the-cows-moved-out",
+    "title": "The Cows Moved Out",
+    "summary": "Before astronauts trained here, this was a cattle ranch. In 1961 the cows were herded out to make room for spacecraft.",
+    "point": {
+      "at": {
+        "lat": 29.5519,
+        "lng": -95.0983
+      },
+      "triggerRadiusKm": 0.1,
+      "place": "Space Center Houston, 1601 NASA Parkway, Clear Lake, Houston, Texas"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look around at the big flat land out here, by Clear Lake. Rockets, spacecraft, astronauts.\n\nNow imagine cows. Lots of cows.\n\nNot very long ago, this was a ranch. Texas cattle grazed right across it. There were rice fields nearby, and oil derricks, ducks, a few alligators, and lots of mosquitoes.\n\nThen, in nineteen sixty one, the country decided to go to the Moon. And it needed a place to plan the trip.\n\nAn oil company had given a big piece of ranch land to Rice University. Rice offered it to the space program. A thousand acres.\n\nOn the nineteenth of September, nineteen sixty one, it was announced. This would be the command center for landing people on the Moon.\n\nSo the cows were herded out, to make room for spacecraft, astronauts and engineers. Thousands of people and their families moved in.\n\nEight years later, people walked on the Moon, and talked to Houston the whole way.\n\nLook out at the open grass. Can you picture the cows?\n\nThey were here first.\n",
+    "teaser": "Before the astronauts came, the neighbors here said moo.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/houston-the-cows-moved-out/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 66,
+        "audioBytes": 1057061
+      }
+    ],
+    "tags": [
+      "houston",
+      "nasa",
+      "johnson-space-center",
+      "clear-lake",
+      "space",
+      "family",
+      "cattle"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-the-grass-that-gave-up",
+    "title": "The Grass That Gave Up",
+    "summary": "The first air conditioned domed stadium. Its real grass dried out, and the fake grass that replaced it took the building's name.",
+    "point": {
+      "at": {
+        "lat": 29.685,
+        "lng": -95.40778
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Astrodome, 8400 Kirby Drive, NRG Park, Houston, Texas"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 74,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the Astrodome. A roof six hundred and forty two feet across, with no columns holding it up in the middle.\n\nUnder it, plastic grass got its name.\n\nThe man behind it was Roy Hofheinz, a former county judge and mayor. Houston summers had heat, humidity and mosquitoes. Nobody wanted to play baseball in that, or watch it. So he dreamed of a stadium with a roof and air conditioning. It had never been done.\n\nIt opened in nineteen sixty five, the first fully air conditioned, domed stadium. Hofheinz called it the Eighth Wonder of the World.\n\nThe roof had plastic skylights, and the plan was real grass. But out in the field, the players had trouble with the glare.\n\nSo the skylights were painted over.\n\nUnder the dome, the grass dried out.\n\nIn nineteen sixty six, it was pulled up, and replaced with a new artificial grass. It came to be named after the building that needed it.\n\nAstroTurf.\n\nLook at the dome again. Plastic grass all over the world still carries a little of its name.\n\nThe grass gave up first.\n",
+    "teaser": "Fake grass got its name from this building, because the real grass gave up.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-the-grass-that-gave-up/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74,
+        "audioBytes": 1184539
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Hofheinz",
+        "say": "HOFF-hines"
+      }
+    ],
+    "inspo": {
+      "kind": "first",
+      "evidence": "building"
+    },
+    "tags": [
+      "houston",
+      "astrodome",
+      "nrg-park",
+      "baseball",
+      "astroturf",
+      "firsts",
+      "sports"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-the-letter-got-home",
+    "title": "The Letter Got Home",
+    "summary": "In 1917, Black soldiers guarding Camp Logan marched into Houston. Nineteen were hanged. In 2023 the Army set aside every conviction.",
+    "point": {
+      "at": {
+        "lat": 29.7715,
+        "lng": -95.4274
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Memorial Park, site of Camp Logan, Houston, Texas"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 100,
+    "minAge": 12,
+    "quality": 0.85,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look around at these trees. In the summer of nineteen seventeen, this was not a park. It was Camp Logan, an army camp being built to train men for the war in Europe.\n\nThe soldiers sent to guard it while it was built were Black.\n\nThey were the Third Battalion of the Twenty Fourth Infantry, the Buffalo Soldiers. They had served in Mexico and the Philippines. In Houston, they met Jim Crow. Again and again, there were run ins with white police.\n\nOn the twenty third of August, a false rumor went round that a mob was coming. Someone shouted, get your guns, boys. More than a hundred soldiers took their rifles and marched into the city. By the end of the night, nineteen people were dead. Fifteen were white. Four were Black.\n\nThe Army tried a hundred and ten men. Sixty three of them stood trial together, defended by one officer who was not a lawyer. Thirteen were sentenced to death, and were not told until twelve hours before.\n\nOne of them was Private First Class Thomas Coleman Hawkins. That night, he wrote to his family.\n\nI was sentenced to be hanged for the trouble that took place in Houston, Texas, he wrote, although I am not guilty of the crime that I am accused.\n\nThe thirteen were hanged together, just before sunrise. Six more hangings followed.\n\nIn November twenty twenty three, the Army set aside all one hundred and ten convictions. The soldiers, it said, were wrongly treated because of their race, and were not given fair trials.\n\nHis family had kept his letter the whole time.\n",
+    "teaser": "The night before he was hanged, a private wrote home. His family kept the letter for a century.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-the-letter-got-home/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 100.2,
+        "audioBytes": 1604588
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Hawkins",
+        "say": "HAW-kinz"
+      }
+    ],
+    "tags": [
+      "houston",
+      "memorial-park",
+      "camp-logan",
+      "military",
+      "world-war-one",
+      "buffalo-soldiers",
+      "african-american-history"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-the-lion-tamer",
+    "title": "The Lion Tamer",
+    "summary": "Hans Nagel tamed lions, rode a zebra and survived a leopard at Houston's zoo. In 1941 a quarrel in the park killed him. Staff say he stayed.",
+    "point": {
+      "at": {
+        "lat": 29.71288,
+        "lng": -95.39159
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Lion enclosure, Houston Zoo, 6200 Hermann Park Drive, Hermann Park, Houston, Texas"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 89,
+    "minAge": 12,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the lions.\n\nThe first man to work lions in this zoo was a German named Hans Nagel. And the zoo, the legend goes, has never quite let him leave.\n\nThis is a legend. Here is the part that is not.\n\nThe city hired Nagel in nineteen twenty two, to run the zoo and to be its face. He put on lion taming shows every week. He rode a zebra, to win a bet. He once drove a bear all the way from Port Arthur, in the back seat of his car.\n\nThe animals fought back. An alligator bite put him in hospital for three weeks. An elephant stepped on him. A leopard opened him up. A lion called Caesar, four hundred and fifty pounds, would have killed him if his assistants had not got to him first.\n\nHe carried a pistol at his side, always.\n\nIn November, nineteen forty one, a park watchman came on Nagel by a side road in the park. By the watchman's account, Nagel had been hiding behind a bush, watching young people in a parked car. The two men argued over whose job it was to police the park. The watchman said Nagel reached for his pistol. The watchman fired six times.\n\nHans Nagel was forty nine. A grand jury cleared the watchman, on grounds of self defense.\n\nSince then, staff have reported strange shadows by the zoo's commissary, said to be near where he died. A voice late at night, no louder than a whisper. A man standing in a doorway, and then not.\n\nLook at the lions.\n\nNo animal here ever managed it.\n",
+    "teaser": "No animal in this zoo ever finished off its first keeper. A man did.",
+    "certaintyNote": "Nagel's career, injuries and death are history: the Houston Chronicle (2017, drawing on the zoo's own account) and a United Press report printed in the McAllen Daily Press on 18 November 1941. The ghost is legend: the Chronicle reports staff accounts of shadows, a whisper and a figure in a doorway near the commissary, and nobody has proved them. The killing is told from the watchman's own account as the UP reported it, and the grand jury's finding is stated. The script says which part is legend.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/houston-the-lion-tamer/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 89.1,
+        "audioBytes": 1426119
+      }
+    ],
+    "inside": true,
+    "tags": [
+      "houston",
+      "hermann-park",
+      "houston-zoo",
+      "hans-nagel",
+      "lions",
+      "ghosts",
+      "legend"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-the-man-in-the-brown-suit",
+    "title": "The Man in the Brown Suit",
+    "summary": "The workers who emptied the closed Astrodome in 2017 were warned about a man in a brown suit on the upper deck. None of them saw him.",
+    "point": {
+      "at": {
+        "lat": 29.6861,
+        "lng": -95.40778
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Astrodome, north side, 8400 Kirby Drive, NRG Park, Houston, Texas"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 73,
+    "minAge": 0,
+    "quality": 0.7,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the great curve of the Astrodome. It has been closed to the public for years. Inside, it is dark.\n\nThis is a legend. Nobody has proved a word of it.\n\nIn February twenty seventeen, Houston hosted the Super Bowl next door, and a small crew from New York was brought in to work on the empty floor of the old dome. The AstroTurf lay rolled up in cylinders. Old peanut shells were still on the floor.\n\nThe people who hired them gave the crew a warning.\n\nThere's a man in a brown suit who you'll see sometimes, they said. Up there, on the upper deck, where the light peeks through. The dome, they told them, is haunted by that man.\n\nOne of the crew told a reporter that at six o'clock it gets a little creepy. The sunlight goes, the lights go out, and only the small lights stay on.\n\nHe felt a cold breeze once, and wondered what it was. But neither he nor anyone else on the crew ever saw the man in the brown suit.\n\nWhat they did see, the week before, was a raccoon, or maybe a possum, walking right up the ramp.\n\nLook up at the roof line, where the light gets in.\n\nIf he is there, he has the whole place to himself.\n",
+    "teaser": "Nobody on the crew ever saw him. They were told to look for him anyway.",
+    "certaintyNote": "A ghost story, not history. Its only source is a 2017 Boston Globe report quoting a worker inside the closed Astrodome, who said the people who hired his crew told them about a man in a brown suit on an upper deck. Nobody quoted had seen him. The script says out loud that it is a legend and that no one has seen him.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/houston-the-man-in-the-brown-suit/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 73.4,
+        "audioBytes": 1174926
+      }
+    ],
+    "tags": [
+      "houston",
+      "astrodome",
+      "nrg-park",
+      "ghosts",
+      "legend"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-the-star-under-the-rug",
+    "title": "The Star Under the Rug",
+    "summary": "Behind a fence on Brock Street is a studio where Lightnin' Hopkins, the Big Bopper and Beyonce recorded over a gold star in the floor.",
+    "point": {
+      "at": {
+        "lat": 29.70797,
+        "lng": -95.32496
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "SugarHill Recording Studios (formerly Gold Star Studios), 5626 Brock Street, Houston, Texas"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 81,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look past the chain link fence, at the low buildings behind it. Five of them, fused together over the years into one.\n\nIt looks like nothing much. It is said to be the oldest recording studio in the country still running.\n\nIn nineteen forty one, a man named Bill Quinn opened a recording studio in Houston. By nineteen fifty he called it Gold Star.\n\nLightnin' Hopkins cut dozens of songs for him. George Jones recorded Why Baby Why. J. P. Richardson, the Big Bopper, had a huge hit with Chantilly Lace. And in nineteen fifty nine, a young Willie Nelson made some of his earliest recordings at Gold Star, among them the first version of Night Life.\n\nThen came Clifton Chenier, the king of zydeco. The Sir Douglas Quintet, with She's About a Mover. The Thirteenth Floor Elevators. In the seventies the studio was renamed SugarHill, and Freddy Fender recorded Wasted Days and Wasted Nights.\n\nLater still, Destiny's Child.\n\nInside this building, in Studio B, a large gold star is set into the linoleum floor. Lightnin' Hopkins, the Big Bopper, Freddy Fender and Beyonce all recorded there.\n\nMost days, a rug covers it.\n\nLook at the fence again.\n\nThe star is still on the floor. They just keep it under a rug.\n",
+    "teaser": "The Big Bopper recorded behind this fence. So did Destiny's Child.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-the-star-under-the-rug/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 80.9,
+        "audioBytes": 1294880
+      }
+    ],
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "houston",
+      "sugarhill-studios",
+      "gold-star-studios",
+      "music",
+      "recording",
+      "big-bopper",
+      "lightnin-hopkins",
+      "willie-nelson"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-the-thing-in-freedmantown",
+    "title": "The Thing in Freedmantown",
+    "summary": "In September 1884 a newspaper reported a skeleton in a dress walking Freedmantown at night. Hundreds of shots were fired. Nobody caught it.",
+    "point": {
+      "at": {
+        "lat": 29.75611,
+        "lng": -95.37972
+      },
+      "triggerRadiusKm": 0.15,
+      "place": "Freedmen's Town Historic District, Fourth Ward, Houston, Texas"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 73,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "position-only",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along these streets. In the eighteen eighties, this was Freedmantown, built by people who had been freed from slavery.\n\nThis is a legend. Nobody ever proved there was anything here at all.\n\nOn the twenty third of September, eighteen eighty four, the Evening Journal reported that Freedmantown was in a ferment. Something had been seen at night. The paper called it the Thing. It looked, the paper said, like a skeleton dressed in a mother hubbard, a long loose house dress, with the bones shining through.\n\nThe next day, the paper said the Thing had come again.\n\nIt was an election autumn, and the paper wrote that someone had told a newspaper in Saint Louis the whole ghost was a political trick, to scare voters.\n\nThen the shooting started.\n\nThe paper reported that several hundred shots were fired by something called the Anti Ghost Club. A deputy named Glass posted his men around the gullies and the alleys. A militia company held the bridge.\n\nAnd the paper's last word on it was this.\n\nThe Thing remains a mystery.\n\nLook down the street, after dark.\n\nIt has never been explained. It has also never been caught.\n",
+    "teaser": "A skeleton in a dress, a club formed to shoot it, and a soldier company holding the bridge.",
+    "certaintyNote": "A ghost scare, not a proven event. The account is the Houston Evening Journal's, from September 1884, quoted in the WPA's Houston guide of 1942; the paper itself mocked the neighborhood and floated a political explanation. Nothing in the record says what, if anything, was seen. The script says out loud that it is a legend.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/houston-the-thing-in-freedmantown/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 72.5,
+        "audioBytes": 1161551
+      }
+    ],
+    "tags": [
+      "houston",
+      "freedmens-town",
+      "fourth-ward",
+      "ghosts",
+      "legend",
+      "african-american-history"
+    ],
+    "remoteness": 0.53
+  },
+  {
+    "id": "houston-the-time-stopped-running",
+    "title": "The Time Stopped Running",
+    "summary": "Fourteen dark Rothko paintings in a windowless chapel, opened in 1971. The painter never saw it. His son nearly walked out.",
+    "point": {
+      "at": {
+        "lat": 29.73742,
+        "lng": -95.39617
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Rothko Chapel, 1409 Sul Ross Street, Montrose, Houston, Texas"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 76,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "In front of you is a pool, and in it a steel obelisk, standing on its point. Behind it, a brick building with eight sides and no windows.\n\nInside are fourteen enormous paintings that, at first, look almost black.\n\nJohn and Dominique de Menil commissioned the chapel from the painter Mark Rothko. It opened in February nineteen seventy one. Rothko did not live to see it. He had died the year before.\n\nHis son, Christopher, was a child when it opened. He did not come to see it until he was thirty three.\n\nHe grew up with his father's paintings. He talked with them every day. But on that first visit, in here, nothing happened. I almost left with nothing, he said.\n\nHe stayed a little longer.\n\nHe stayed an hour and fifteen minutes. The time, he said, just sort of stopped running.\n\nThe chapel's historian said Rothko chose the dark on purpose. Bright colors stop your vision at the canvas, she said. Dark colors go beyond.\n\nLook at the door. Inside, a skylight lets the Houston sun in, softly, and as clouds pass outside, the paintings change.\n\nGive them longer than you think.\n",
+    "teaser": "Fourteen paintings that look almost black. The painter's son nearly walked out.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-the-time-stopped-running/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 76,
+        "audioBytes": 1216722
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Rothko",
+        "say": "ROTH-koh"
+      },
+      {
+        "written": "de Menil",
+        "say": "duh men-EEL"
+      }
+    ],
+    "inside": true,
+    "tags": [
+      "houston",
+      "montrose",
+      "menil",
+      "rothko-chapel",
+      "painting",
+      "art"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-the-verdict-that-was-erased",
+    "title": "The Verdict That Was Erased",
+    "summary": "In 2006 a jury here convicted Enron's founder of fraud. He died six weeks later, and a judge wiped his conviction away.",
+    "point": {
+      "at": {
+        "lat": 29.76103,
+        "lng": -95.36758
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Bob Casey United States Courthouse, 515 Rusk Street, Downtown Houston, Texas"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 98,
+    "minAge": 16,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the federal courthouse here on Rusk Street.\n\nIn two thousand six, a jury in this building found the founder of Enron guilty of fraud. Five months later, his conviction no longer existed.\n\nEnron was a Texas energy giant, based in Houston. Its collapse at the end of two thousand one wiped out more than sixty billion dollars in market value, about two billion dollars in retirement savings, and some fifty six hundred jobs.\n\nThe trial of its two former chief executives, Kenneth Lay and Jeffrey Skilling, ran for nearly four months. Twelve jurors, eight women and four men, deliberated for six days.\n\nOn the twenty fifth of May, two thousand six, they came back. Lay was convicted on every count he faced. Skilling was convicted on nineteen counts, and acquitted on nine.\n\nIn the courtroom, Lay's family gathered round him and prayed. God's got another plan right now, he said. I firmly believe I am innocent.\n\nOn the fifth of July, before he could be sentenced, Kenneth Lay died of a heart attack. He was sixty four.\n\nIn October, Judge Sim Lake vacated his conviction. Under the law of this federal circuit, when a defendant dies before his appeal is heard, his whole case is extinguished. The Justice Department answered that the ruling did not change the fact that Lay was found guilty.\n\nDays later, in this courthouse, Skilling was sentenced to twenty four years and four months in prison.\n\nLook at the doors again.\n\nOne verdict stood. The other was erased.\n",
+    "teaser": "Guilty on every count. Then, because he died, it was as if the trial never happened.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/houston-the-verdict-that-was-erased/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 97.6,
+        "audioBytes": 1562374
+      }
+    ],
+    "tags": [
+      "houston",
+      "downtown",
+      "enron",
+      "fraud",
+      "courts",
+      "true-crime"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "convicted",
+      "reviewedBy": "James (owner), approved 2026-11-11",
+      "reviewedAt": "2026-11-10",
+      "contentWarning": "This echo is about a corporate fraud case and the death of a defendant. No violence is described."
+    },
+    "remoteness": 0.08
+  },
+  {
+    "id": "houston-thunder-and-lightnin",
+    "title": "Thunder and Lightnin'",
+    "summary": "Lightnin' Hopkins played Carnegie Hall and for the Queen. For more than thirty years he kept coming back to this Third Ward street.",
+    "point": {
+      "at": {
+        "lat": 29.73324,
+        "lng": -95.36587
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Sam (Lightnin') Hopkins marker, 3405 Emancipation Avenue (formerly Dowling Street), Third Ward, Houston, Texas"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 88,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Read the street sign. Emancipation Avenue. Until twenty seventeen, this was Dowling Street.\n\nA bluesman who played Carnegie Hall kept coming back to the corners of this street.\n\nSam Hopkins was born in Centerville, Texas. At eight he made his first guitar, out of a cigar box, with chicken wire for strings. As a boy he played with Blind Lemon Jefferson, who told him to keep at it.\n\nIn the nineteen forties he settled in Houston, and became a fixture of the Third Ward clubs, on this street and around it. In nineteen forty six a record company sent him to Los Angeles. The piano player at the session was called Thunder Smith. Thunder, and Lightnin'. The name stuck.\n\nHe made hits. He recorded for nearly twenty labels, sometimes for one while under contract to another. In the sixties he played Carnegie Hall. Later he played for Queen Elizabeth.\n\nAnd all along, he kept playing here. Dance parties. Street corners. The bars of Dowling Street.\n\nAfter a car crash in nineteen seventy, many of his shows were on his own front porch, or at a bar near his house.\n\nHe died in Houston in nineteen eighty two. More than four thousand people came to his funeral.\n\nLook along the avenue.\n\nCarnegie Hall had him for a night. This street had him for thirty years.\n",
+    "teaser": "He played Carnegie Hall. He kept coming back to the corner.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-thunder-and-lightnin/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 88.3,
+        "audioBytes": 1413581
+      }
+    ],
+    "tags": [
+      "houston",
+      "third-ward",
+      "dowling-street",
+      "emancipation-avenue",
+      "lightnin-hopkins",
+      "blues",
+      "music"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-turn-back",
+    "title": "Turn Back",
+    "summary": "The day after San Jacinto, a man in a private's muddy uniform was found hiding in the weeds. He was the President of Mexico.",
+    "point": {
+      "at": {
+        "lat": 29.74975,
+        "lng": -95.085
+      },
+      "triggerRadiusKm": 0.1,
+      "place": "San Jacinto Battleground State Historic Site, west of the monument, La Porte, Texas"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look west, toward the trees by the bayou. The Texans camped there, in the curve of the water.\n\nThe day after the battle, a prisoner was walked into that camp in a private soldier's clothes. He was the President of Mexico.\n\nThe battle had ended on the evening of the twenty first of April, eighteen thirty six. Santa Anna was not among the prisoners.\n\nThe next day, a man was found hiding in the weeds. He wore a tattered, mud stained private's uniform. Dressed like that, he was taken to General Houston.\n\nSam Houston had been badly wounded in the battle. He was lying under an oak tree.\n\nSo the president of a nation stood in front of a wounded man on the ground. And lying there, Houston dictated the terms. Every Mexican army in Texas would withdraw, below the Rio Grande.\n\nFar to the east, families who had run from the war were still out on the prairie, in the rain. One of them, Dilue Harris, later remembered a man on horseback, waving his hat.\n\nTurn back, he was shouting. The Texas army has whipped the Mexican army. No danger. Turn back.\n\nLook at the trees again, where the prisoner was brought in.\n\nAnd all over Texas, people turned around.\n",
+    "teaser": "The most powerful man in Mexico was found hiding in the grass, dressed as a private.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-turn-back/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 85.1,
+        "audioBytes": 1362172
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Dilue",
+        "say": "DIL-oo"
+      },
+      {
+        "written": "Santa Anna",
+        "say": "SAN-tuh AN-uh"
+      }
+    ],
+    "tags": [
+      "houston",
+      "san-jacinto",
+      "battleground",
+      "military",
+      "texas-revolution",
+      "santa-anna",
+      "runaway-scrape"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-two-bridges-for-one-street",
+    "title": "Two Bridges for One Street",
+    "summary": "Houston Heights crosses White Oak Bayou on twin bridges, because its planner insisted one bridge would not do the boulevard justice.",
+    "point": {
+      "at": {
+        "lat": 29.77405,
+        "lng": -95.39712
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "White Oak Bayou Bridge, Heights Boulevard, Houston Heights, Texas"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the bridges where Heights Boulevard crosses the bayou. Not one bridge. Two, side by side, with rows of little urn shapes along their railings.\n\nMost streets make do with one.\n\nIn eighteen ninety one, the Omaha and South Texas Land Company began to lay out more than seventeen hundred acres north of Houston. It was seventy five feet above sea level, the highest ground around. So they called it the Heights.\n\nThe man sent to plan it was the company's treasurer, Daniel Denton Cooley. He gave it a boulevard with a wide grassy strip down the middle, and a streetcar track on each side. It was the first divided boulevard in the Houston area.\n\nAnd when it came to the bayou, he would not narrow it. His grandson remembered him insisting on two bridges, to do justice to Heights Boulevard.\n\nSo in eighteen ninety three, two wooden bridges went up here, sixty feet apart, built of more than sixty five thousand feet of lumber.\n\nIn nineteen twenty two, the city replaced them with these, two concrete bridges, each two hundred and forty feet long.\n\nLook at the inside railings. They wrap around, from one bridge to the other, and join them. It is the only railing like it left in Houston.\n\nTwo bridges, holding hands.\n",
+    "teaser": "One street, two bridges, and a railing that reaches across to hold them together.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-two-bridges-for-one-street/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 84.6,
+        "audioBytes": 1354230
+      }
+    ],
+    "tags": [
+      "houston",
+      "the-heights",
+      "heights-boulevard",
+      "white-oak-bayou",
+      "bridges",
+      "streetcars"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-umbrellas-and-tennis-rackets",
+    "title": "Umbrellas and Tennis Rackets",
+    "summary": "When Hurricane Harvey's flood rose under the Waugh Bridge, Houstonians rescued drowning bats with umbrellas, tennis rackets and sticks.",
+    "point": {
+      "at": {
+        "lat": 29.763,
+        "lng": -95.3987
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Waugh Bridge bat colony, Buffalo Bayou, Houston, Texas"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the bridge. Bats live underneath it. Lots of them. Something like two hundred and fifty thousand.\n\nHere is a question. Can a bat swim?\n\nIn August twenty seventeen, a huge storm called Hurricane Harvey flooded Houston. The bayou under this bridge rose higher and higher, right up toward the bats.\n\nPeople walking over the bridge could hear them squeaking. Some bats were trying to swim away. Once a bat is wet, it is very hard for it to fly.\n\nSo people helped. They had no special nets at first. They used what they had. Umbrellas. Tennis rackets. Broken tree branches. They leaned over the side and held them out, and the bats grabbed on.\n\nThen more helpers came, with gloves and nets and boxes, and carried the bats to dry land. A rescue team came to look after them until they were well enough to go home.\n\nAnd one more thing. If you ever find a bat, do not touch it. Tell a grown up.\n\nLook up at the bridge again. At sunset, the bats fly out.\n\nSome of them got a ride on a tennis racket.\n",
+    "teaser": "Bats cannot swim. So the people of Houston fished them out.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/houston-umbrellas-and-tennis-rackets/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 70.3,
+        "audioBytes": 1125189
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Waugh",
+        "say": "WAW"
+      }
+    ],
+    "tags": [
+      "houston",
+      "buffalo-bayou",
+      "bats",
+      "hurricane-harvey",
+      "family",
+      "wildlife",
+      "waugh-bridge"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-we-passed-the-city",
+    "title": "We Passed the City",
+    "summary": "In January 1837 the first steamer reached the new town of Houston. A party rowing ahead to find it went straight past.",
+    "point": {
+      "at": {
+        "lat": 29.7639,
+        "lng": -95.35889
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Allen's Landing, Main Street at Buffalo Bayou, Downtown Houston, Texas"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 98,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down at the water from the top of this bank. Just upstream, a smaller bayou, White Oak, runs into this one.\n\nThe first people who came looking for Houston went straight past it.\n\nIn the summer of eighteen thirty six, two brothers, Augustus and John Allen, bought the land beside these two bayous. They named it the town of Houston, and their advertisements called it the great commercial emporium of Texas. John Allen told the Texas Congress it was one of the most healthy places in the lower country. The bayou, he promised, is navigable at all times.\n\nAt the end of that year, a young merchant named Francis Lubbock sailed for Houston on a steamer called the Laura, with his groceries below deck.\n\nNo steamboat had ever come this far. Fallen trees blocked the bayou. The passengers went ashore, made winches out of tree trunks, and hauled the snags out of the way. Twelve miles of bayou took them three days.\n\nNear the end, Lubbock and a few others got tired of the steamer and rowed ahead in a small boat to find the city.\n\nSo little evidence could we see of a landing, he wrote, that we passed by the site and run into White Oak Bayou.\n\nThey backed down, and found a road laid off from the water's edge. On shore were stakes and footprints.\n\nThis, about the first of January, eighteen thirty seven, was Houston.\n\nLook at the bank again. Stakes, footprints, and an advertisement.\n\nIt was enough.\n",
+    "teaser": "The first boatload of people looking for Houston rowed right past it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-we-passed-the-city/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 98.2,
+        "audioBytes": 1572405
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Lubbock",
+        "say": "LUB-uk"
+      }
+    ],
+    "tags": [
+      "houston",
+      "downtown",
+      "allens-landing",
+      "buffalo-bayou",
+      "founding",
+      "allen-brothers",
+      "republic-of-texas"
+    ],
+    "remoteness": 0.28
+  },
+  {
+    "id": "houston-weve-had-a-problem",
+    "title": "We've Had a Problem",
+    "summary": "In April 1970 an oxygen tank exploded on Apollo 13, and a sentence the whole world now quotes was spoken to the room in this building.",
+    "point": {
+      "at": {
+        "lat": 29.5586,
+        "lng": -95.0887
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Mission Control, Building 30, Johnson Space Center, Houston, Texas"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 71,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are outside Building Thirty, Mission Control. Somewhere inside is the room that heard a sentence people still quote, half a century later.\n\nIt was a calm sentence about a disaster.\n\nIn April nineteen seventy, Apollo Thirteen was three days out, on its way to the Moon. An electrical short set off an explosion in an oxygen tank.\n\nFred Haise began, Okay, Houston.\n\nThen the commander, Jim Lovell. I believe we've had a problem here.\n\nFrom this building, the capsule communicator asked him to say again.\n\nHouston, we've had a problem.\n\nStand by, thirteen, came the answer. We're looking at it.\n\nFor days, the flight controllers in here worked out how to bring three men home in a crippled spacecraft. Gene Kranz was the flight director. Throughout the entire course of Apollo Thirteen, he said, there was never any doubt that we'd get the crew back.\n\nThey got them back.\n\nAnd the words they spoke into this room live on.\n\nAnd the first word of it was the name of this city.\n",
+    "teaser": "Everyone knows the line. It was said to a room in this building.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-weve-had-a-problem/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.1,
+        "audioBytes": 1137727
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Haise",
+        "say": "HAYZ"
+      }
+    ],
+    "inside": true,
+    "inspo": {
+      "kind": "connection",
+      "evidence": "building"
+    },
+    "tags": [
+      "houston",
+      "nasa",
+      "johnson-space-center",
+      "clear-lake",
+      "apollo-13",
+      "mission-control",
+      "quotes"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-whatever-was-on-sale",
+    "title": "Whatever Was on Sale",
+    "summary": "In 1968 a retired upholsterer wanted a patio to drink beer on. He ended up covering his whole house in more than 50,000 cans.",
+    "point": {
+      "at": {
+        "lat": 29.76376,
+        "lng": -95.41914
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Beer Can House, 222 Malone Street, Houston, Texas"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 81,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at this house. The walls shine. Strings of metal hang from the roof and twitch in the wind.\n\nIt is covered, every bit of it, in beer cans. More than fifty thousand of them.\n\nIn nineteen sixty eight, all John Milkovisch wanted was a covered patio, somewhere to drink his beer at the end of the day. He worked as an upholsterer for the railroad. And for years he had been saving his empty cans.\n\nWhile I was building the patio, he said later, I was drinking the beer. I knew I was going to do something with them aluminum cans, but I didn't know what.\n\nHe found out. He flattened them and put them on the house. Then he made fences out of them, and long garlands of can tops to hang from the roof. He kept going for close to twenty years.\n\nIt was a six pack a day, the house's restorer says, him and his wife and friends and anybody passing by.\n\nAnd his favorite brand? Whatever was on sale.\n\nHe died in nineteen eighty eight. An arts group restored the house, and opened it to visitors.\n\nStand still for a moment and listen. Those strands of can tops dance when the wind blows. The restorer calls it a wind chime that never stops.\n\nIt started with a patio.\n",
+    "teaser": "Listen for the wind chime that never stops. It is made of beer can tops.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-whatever-was-on-sale/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81.4,
+        "audioBytes": 1302821
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Milkovisch",
+        "say": "MIL-kuh-vitch"
+      }
+    ],
+    "inspo": {
+      "kind": "creation",
+      "evidence": "exact"
+    },
+    "tags": [
+      "houston",
+      "beer-can-house",
+      "folk-art",
+      "orange-show",
+      "visionary-art",
+      "recycling"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "houston-why-does-rice-play-texas",
+    "title": "Why Does Rice Play Texas?",
+    "summary": "On 12 September 1962, in this stadium, President Kennedy set the moon as the goal, and explained it with a football joke.",
+    "point": {
+      "at": {
+        "lat": 29.71639,
+        "lng": -95.40917
+      },
+      "triggerRadiusKm": 0.12,
+      "place": "Rice Stadium, Rice University, Houston, Texas"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 67,
+    "minAge": 0,
+    "quality": 0.9,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the stands of this stadium. Plain concrete, row on row.\n\nThe most famous sentence ever spoken about the moon was spoken here. And it was set up with a joke about football.\n\nThe stadium was designed and built in nine months, by engineers who reused forms from the Gulf Freeway to pour the concrete.\n\nOn the twelfth of September, nineteen sixty two, President John Kennedy came here to speak. Just seven months earlier, John Glenn had circled the Earth. Now Kennedy wanted more.\n\nBut why, some say, the moon, he asked. Why choose this as our goal? And they may well ask, why climb the highest mountain?\n\nThen, standing in Rice's own stadium, he asked one more.\n\nWhy does Rice play Texas?\n\nWe choose to go to the moon, he said. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard.\n\nLook at the stands again. Seven years later, men walked on the moon, and talked to a room in this city.\n\nIt started as a football joke.\n",
+    "teaser": "The most famous line about the moon was set up by a joke about college football.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/houston-why-does-rice-play-texas/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 67.2,
+        "audioBytes": 1075452
+      }
+    ],
+    "tags": [
+      "houston",
+      "rice-university",
+      "kennedy",
+      "space",
+      "moon",
+      "apollo",
+      "speeches"
+    ],
+    "remoteness": 1
+  },
+  {
     "id": "jerome-a-ghost-town-on-purpose",
     "title": "A Ghost Town on Purpose",
     "summary": "Jerome peaked at 10,000 to 15,000 people in the 1920s. After the mine closed in 1953, the few who stayed sold it as a historic ghost town.",
@@ -26537,4 +28522,4 @@ export const ROUTES: readonly Route[] = [
 
 // What a person has really checked, as authored, before the demo override above. The
 // "true story" mark reads this, never the overridden status (`truth.ts` in the engine).
-export const VERIFIED_IDS: ReadonlySet<string> = new Set(["african-burial-ground","annapolis-a-port-called-napolis","annapolis-a-private-citizen-by-christmas","annapolis-married-in-that-house","annapolis-the-dome-was-a-lookout","asheville-a-dome-made-of-tile","asheville-a-government-at-the-inn","asheville-a-leg-in-a-boot","asheville-a-yodel-on-the-top-floor","asheville-the-boardinghouse-called-dixieland","asheville-the-fire-at-highland-hospital","asheville-the-man-who-walked-a-wheel","asheville-the-ymi","atlantic-city-first-boardwalk","bald-head-captain-charlie-lit-both","bald-head-the-builder-who-lost-money","bald-head-the-prisms-coming-home","bald-head-the-swim-to-southport","bald-head-the-woman-on-the-shore","boston-abiel-smith-school-goodbye","boston-african-meeting-house-built-by-its-people","boston-beacon-hill-the-beacon","boston-brimstone-corner","boston-common-cows","boston-franklins-other-corner","boston-granary-five-in-one-grave","boston-hayden-house-keg","boston-in-short-i-lost-most-all","boston-mother-goose","boston-say-no-more","boston-shaw-memorial-forty-faces","boston-sides-made-of-iron","boston-state-house-dome-copper","boston-swan-boats-mrs-paget","boston-the-church-inside-the-church","boston-the-house-that-stayed-useful","boston-the-lady-in-black","boston-the-letter-on-the-slate","boston-the-lion-and-the-unicorn","boston-the-poem-that-built-a-statue","boston-the-school-that-lost-its-ground","boston-the-sextons-lodgers","boston-the-spire-that-fell","boston-the-spy-question","boston-the-stone-they-shot-at","boston-the-street-that-ran-into-the-sea","boston-the-whites-of-their-eyes","boston-the-wrong-hill","boston-waiting-for-mister-rotch","boston-what-the-auditor-found","boston-where-the-water-was","boston-who-said-fire","bowling-green-king-george","canyon-of-heroes","carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","castle-clinton-eight-million","caswell-beach-a-hat-from-a-helicopter","caswell-beach-a-lighthouse-poured-in-a-week","caswell-beach-the-long-day-of-dunbar-davis","caswell-beach-the-night-caswell-blew-up","caswell-beach-the-second-brightest-light","caswell-beach-yachts-on-submarine-watch","charleston-a-strangers-initials","charleston-a-wharf-he-was-willing-to-lose","charleston-bolted-together","charleston-built-for-a-capital","charleston-built-to-fall-inward","charleston-calhoun-moved-by-night","charleston-five-times-across","charleston-gothic-over-brick","charleston-hey-charleston","charleston-madame-margots-bargain","charleston-not-called-catfish","charleston-sermons-on-the-tide","charleston-skulls-over-the-market","charleston-steps-that-only-go-up","charleston-the-audience-on-the-sea-wall","charleston-the-bedsheet","charleston-the-castle-on-the-square","charleston-the-congregation-that-rebuilt","charleston-the-fire-and-the-brick-law","charleston-the-museums-front-door","charleston-the-night-the-wall-opened","charleston-the-petition-of-forty-seven","charleston-the-piece-somebody-kept","charleston-the-playhouse-on-dock-street","charleston-the-powder-behind-the-wall","charleston-the-sailor-on-the-steeple","charleston-the-street-named-for-a-meeting-house","charleston-the-tables-in-the-shed","charleston-the-window-marion-missed","charleston-the-yard-named-for-a-water-tank","charleston-what-the-survey-wrote-down","charleston-where-the-tide-came-in","charleston-whose-arms-on-the-roof","charlotte-a-city-of-tents","charlotte-a-navy-yard-far-from-the-sea","charlotte-a-vein-under-south-end","charlotte-brought-to-you-by-a-laxative","charlotte-fred-in-the-arcade","charlotte-roots-in-north-carolina","charlotte-strictly-stock","charlotte-the-declaration-nobody-can-find","charlotte-the-mint-that-moved","charlotte-the-sandwich-from-crescent-avenue","charlotte-the-wall-in-front-of-the-courthouse","charlotte-twenty-beds-under-the-stadium","chicago-allowed-to-carry-twenty-five-hundred","chicago-sixty-five-degrees-then-twenty-three-inches","chicago-the-architect-went-to-the-seaside","chicago-the-case-that-outlived-the-pipe","chicago-the-cow-that-took-the-blame","chicago-the-garbage-inspector","chicago-the-porters-contract","chicago-the-sign-says-end","chicago-the-strike-that-stopped-the-trains","chicago-under-the-bleachers","city-hall-declaration","cleveland-no-more-protection","cleveland-the-missing-letter","cleveland-the-river-that-burned","craggy-gardens-balds","dc-a-country-he-never-saw","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-priced-by-size","dc-somewhere-to-hide","dc-the-ballroom-ward","dc-the-caretaker-heard-nothing","dc-the-cherry-tree-rebellion","dc-the-first-are-with-the-last","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-ladies-waiting-room","dc-the-man-who-found-the-bolts","dc-the-map-underfoot","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-plaque-on-the-fence","dc-the-starting-line-came-later","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-three-names-for-one-wing","dc-to-thee-we-sing","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-white-before-the-fire","dc-written-in-the-dark","deadwood-before-she-was-calamity","deadwood-his-back-to-the-door","deadwood-the-champions-of-america","fairfax-she-married-the-man-who-arrested-her","fairfax-thirty-killed-said-the-picture","fall-river-a-description-without-a-photograph","fall-river-the-granite-mill-fire","federal-hall-two-firsts","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","fraunces-tavern-farewell","hatteras-moved-the-lighthouse","jerome-a-ghost-town-on-purpose","jerome-sixty-seven-men-in-cattle-cars","jerome-the-day-the-stone-melted","jerome-water-from-seven-miles-away","key-west-a-house-named-for-mercedes","key-west-ice-from-the-north","key-west-the-fort-that-lost-the-sea","key-west-the-guest-who-was-not-there","key-west-the-key-west-uniform","key-west-the-sailor-with-the-oar","key-west-the-studio-across-the-catwalk","kitty-hawk-shorter-than-this-plane","kure-beach-five-shells-in-the-dark","linn-cove-viaduct-last-piece","linville-gorge-too-steep","memphis-before-breakfast","memphis-it-worked-when-they-stopped","memphis-kid-douglas","memphis-the-amp-on-the-roof","memphis-the-b-side","memphis-the-mountaintop","memphis-the-ride-home","memphis-the-song-that-mocked-mr-crump","memphis-they-smashed-the-press","mount-mitchell-buried-on-top","nashville-a-hall-built-by-song","nashville-she-bit-the-conductor","nashville-six-encores","nashville-the-architect-in-the-wall","nashville-the-colored-lights","nashville-the-fort-nobody-attacked","nashville-the-harmonica-wizard","nashville-the-saloon-keepers-tabernacle","nashville-the-united-hilton","nashville-tile-thirteen","nashville-when-the-cumberland-came-up","nashville-yellow-roses-and-red","new-orleans-a-district-with-his-name","new-orleans-a-tomb-used-again","new-orleans-an-american-house","new-orleans-ghosts-under-the-oaks","new-orleans-her-initials-in-the-iron","new-orleans-love-street","new-orleans-named-for-empty-ground","new-orleans-no-funerals-at-the-cathedral","new-orleans-st-johns-eve-on-the-bayou","new-orleans-the-arrest-that-was-planned","new-orleans-the-blacksmith-shop-with-no-blacksmiths","new-orleans-the-candle-on-good-friday","new-orleans-the-casket-girls","new-orleans-the-champion-who-stopped","new-orleans-the-crosses-on-the-tomb","new-orleans-the-duke-on-the-street-sign","new-orleans-the-emperor-never-came","new-orleans-the-file-sellers","new-orleans-the-fire-in-the-kitchen","new-orleans-the-flag-on-the-mint","new-orleans-the-girl-on-the-belvedere","new-orleans-the-grand-zombis-square","new-orleans-the-harbor-behind-the-cemetery","new-orleans-the-inquisitor-who-came-back","new-orleans-the-legislature-in-the-convent","new-orleans-the-man-under-the-altar","new-orleans-the-neutral-ground","new-orleans-the-noise-on-the-common","new-orleans-the-opera-house-that-isnt-here","new-orleans-the-priests-house","new-orleans-the-river-above-the-street","new-orleans-the-singing-priest","new-orleans-the-woman-who-never-lived-here","new-orleans-twenty-days-of-france","new-orleans-words-on-the-base","newport-a-door-in-the-floor","newport-a-year-of-waiting","newport-the-line-washington-borrowed","newport-the-tower-nobody-agrees-on","oak-island-five-left-standing","oak-island-how-oak-island-became-an-island","oak-island-the-fence-on-the-dune","pawhuska-guardian-of-his-own-children","pawhuska-the-missing-panel","pearl-street-oysters","philadelphia-a-firehouse-on-a-market","philadelphia-a-steeple-paid-by-lottery","philadelphia-as-much-as-anyone-knows","philadelphia-congress-started-at-the-tavern","philadelphia-dorothy-todd-widow","philadelphia-hamlet-paid-for-the-hospital","philadelphia-he-left-the-year-blank","philadelphia-no-hatch-wide-enough","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-penn-on-the-tower","philadelphia-read-aloud-in-the-yard","philadelphia-rising-or-setting","philadelphia-shoes-for-bob","philadelphia-the-baby-over-the-bank-door","philadelphia-the-bell-went-to-allentown","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-first-vote-was-the-room","philadelphia-the-good-china","philadelphia-the-market-under-the-trains","philadelphia-the-room-upstairs","philadelphia-the-street-that-was-a-creek","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-washington-left-last","philadelphia-what-her-grandson-said","saint-paul-almost-pigs-eye","saint-paul-half-a-mile-of-cellar","saint-paul-the-end-of-the-river-road","saint-paul-the-spirit-house","salem-a-life-in-one-house","salem-a-wharf-built-on-mud","salem-the-judges-house","salem-the-ship-that-missed-the-war","salem-the-surveyor-who-lost-his-job","san-antonio-a-day-at-the-mission","san-antonio-a-window-for-rosa","san-antonio-one-governor-was-enough","san-antonio-spirits-with-flaming-swords","san-antonio-the-army-gave-it-the-hump","san-antonio-the-chili-queens-plaza","san-antonio-the-eye-with-a-mustache","san-antonio-the-mission-that-kept-moving","san-antonio-twelve-thousand-pecan-shellers","san-antonio-water-over-the-creek","san-antonio-wooden-cannons-on-the-long-barrack","san-francisco-a-message-on-the-water-tower","san-francisco-a-toast-to-the-wrong-president","san-francisco-filled-by-the-tide","san-francisco-forty-two-tons-of-powder","san-francisco-hits-eight-and-nine","san-francisco-studying-in-the-bathroom","san-francisco-the-arch-over-the-fort","san-francisco-the-first-rangers-on-this-hill","san-francisco-the-lighthouse-with-a-flat-top","san-francisco-the-unfinished-mosaic","san-francisco-two-sisters-on-the-same-rocks","santa-fe-a-tank-called-the-mud-puppy","santa-fe-ben-hur-after-dark","santa-fe-the-carpenter-who-vanished","santa-fe-the-door-to-the-hill","santa-fe-the-end-of-the-trail","santa-fe-the-mother-ditch","santa-fe-what-the-tree-rings-say","santa-fe-when-the-plaza-was-a-pueblo","savannah-a-city-for-christmas","savannah-ballast-stones","savannah-city-hall-dome","savannah-cotton-exchange","savannah-dinner-under-the-trees","savannah-factors-walk","savannah-first-african-baptist","savannah-old-harbor-light","savannah-pirates-house","savannah-raleigh-on-gas-works-hill","savannah-steamship-savannah","savannah-thackerays-comfortable-quarters","savannah-the-chimney-with-privies-in-its-base","savannah-the-church-copied-from-itself","savannah-the-fountain-that-kept-getting-more-parisian","savannah-the-gate-in-the-bull-street-wall","savannah-the-gate-she-made","savannah-the-general-facing-south","savannah-the-general-who-went-missing","savannah-the-library-on-loan","savannah-the-lion-on-the-bed","savannah-the-m-and-t-oaks","savannah-the-night-the-cathedral-burned","savannah-the-sergeant-who-would-not-be-an-officer","savannah-the-spring-that-smelled-of-the-bolt","savannah-the-stone-beside-the-grave","savannah-the-synagogue-with-the-onion-dome","savannah-the-vaults-on-south-broad","savannah-the-word-in-the-basement","savannah-twenty-two-squares","savannah-waving-girl","savannah-wesleys-empty-lot","savannah-white-paper-in-their-hats","savannah-who-lies-under-the-pulaski-monument","savannah-yamacraw-bluff","savannah-you-are-my-prisoner","southport-a-fish-house-plays-a-fish-shack","southport-a-wretched-little-place","southport-carved-in-imperishable-stone","southport-croaker-queen","southport-one-floor-below-the-cells","southport-pay-on-your-way-out","southport-red-over-white","southport-the-bent-oak","southport-the-city-of-the-south-atlantic","southport-the-festival-of-free-men","southport-the-gentleman-giant","southport-the-harp-that-kept-playing","southport-the-last-cupola","southport-the-old-man-and-the-boy","southport-the-reporter-who-could-not-hear","southport-the-reverends-church","southport-the-station-in-the-river","southport-the-watch-on-the-river","southport-the-woman-who-raised-the-flags","southport-worse-than-hazel","st-augustine-a-hotel-poured-from-shells","st-augustine-a-wall-of-seashells","st-augustine-acid-in-the-pool","st-augustine-drawings-on-ledger-paper","st-augustine-the-first-thanksgiving-menu","st-augustine-the-free-town-in-the-marsh","st-augustine-the-inlet-of-slaughters","st-augustine-wild-cats-window","the-balcony","the-children-at-the-lighthouse","the-distance-across-the-street","the-empty-frames","the-footsteps-above-the-gallows","the-garage-that-vanished","the-girl-who-wanted-her-doll","the-lady-in-grey","the-last-movie","the-lights-beyond-the-ridge","the-men-who-left-their-faces-behind","the-other-history-of-fraunces-tavern","the-prison-corridor","the-prisoner-who-never-reached-the-prison","the-room-that-knocks-back","the-turn-onto-elm-street","wall-street-the-wall","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);
+export const VERIFIED_IDS: ReadonlySet<string> = new Set(["african-burial-ground","annapolis-a-port-called-napolis","annapolis-a-private-citizen-by-christmas","annapolis-married-in-that-house","annapolis-the-dome-was-a-lookout","asheville-a-dome-made-of-tile","asheville-a-government-at-the-inn","asheville-a-leg-in-a-boot","asheville-a-yodel-on-the-top-floor","asheville-the-boardinghouse-called-dixieland","asheville-the-fire-at-highland-hospital","asheville-the-man-who-walked-a-wheel","asheville-the-ymi","atlantic-city-first-boardwalk","bald-head-captain-charlie-lit-both","bald-head-the-builder-who-lost-money","bald-head-the-prisms-coming-home","bald-head-the-swim-to-southport","bald-head-the-woman-on-the-shore","boston-abiel-smith-school-goodbye","boston-african-meeting-house-built-by-its-people","boston-beacon-hill-the-beacon","boston-brimstone-corner","boston-common-cows","boston-franklins-other-corner","boston-granary-five-in-one-grave","boston-hayden-house-keg","boston-in-short-i-lost-most-all","boston-mother-goose","boston-say-no-more","boston-shaw-memorial-forty-faces","boston-sides-made-of-iron","boston-state-house-dome-copper","boston-swan-boats-mrs-paget","boston-the-church-inside-the-church","boston-the-house-that-stayed-useful","boston-the-lady-in-black","boston-the-letter-on-the-slate","boston-the-lion-and-the-unicorn","boston-the-poem-that-built-a-statue","boston-the-school-that-lost-its-ground","boston-the-sextons-lodgers","boston-the-spire-that-fell","boston-the-spy-question","boston-the-stone-they-shot-at","boston-the-street-that-ran-into-the-sea","boston-the-whites-of-their-eyes","boston-the-wrong-hill","boston-waiting-for-mister-rotch","boston-what-the-auditor-found","boston-where-the-water-was","boston-who-said-fire","bowling-green-king-george","canyon-of-heroes","carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","castle-clinton-eight-million","caswell-beach-a-hat-from-a-helicopter","caswell-beach-a-lighthouse-poured-in-a-week","caswell-beach-the-long-day-of-dunbar-davis","caswell-beach-the-night-caswell-blew-up","caswell-beach-the-second-brightest-light","caswell-beach-yachts-on-submarine-watch","charleston-a-strangers-initials","charleston-a-wharf-he-was-willing-to-lose","charleston-bolted-together","charleston-built-for-a-capital","charleston-built-to-fall-inward","charleston-calhoun-moved-by-night","charleston-five-times-across","charleston-gothic-over-brick","charleston-hey-charleston","charleston-madame-margots-bargain","charleston-not-called-catfish","charleston-sermons-on-the-tide","charleston-skulls-over-the-market","charleston-steps-that-only-go-up","charleston-the-audience-on-the-sea-wall","charleston-the-bedsheet","charleston-the-castle-on-the-square","charleston-the-congregation-that-rebuilt","charleston-the-fire-and-the-brick-law","charleston-the-museums-front-door","charleston-the-night-the-wall-opened","charleston-the-petition-of-forty-seven","charleston-the-piece-somebody-kept","charleston-the-playhouse-on-dock-street","charleston-the-powder-behind-the-wall","charleston-the-sailor-on-the-steeple","charleston-the-street-named-for-a-meeting-house","charleston-the-tables-in-the-shed","charleston-the-window-marion-missed","charleston-the-yard-named-for-a-water-tank","charleston-what-the-survey-wrote-down","charleston-where-the-tide-came-in","charleston-whose-arms-on-the-roof","charlotte-a-city-of-tents","charlotte-a-navy-yard-far-from-the-sea","charlotte-a-vein-under-south-end","charlotte-brought-to-you-by-a-laxative","charlotte-fred-in-the-arcade","charlotte-roots-in-north-carolina","charlotte-strictly-stock","charlotte-the-declaration-nobody-can-find","charlotte-the-mint-that-moved","charlotte-the-sandwich-from-crescent-avenue","charlotte-the-wall-in-front-of-the-courthouse","charlotte-twenty-beds-under-the-stadium","chicago-allowed-to-carry-twenty-five-hundred","chicago-sixty-five-degrees-then-twenty-three-inches","chicago-the-architect-went-to-the-seaside","chicago-the-case-that-outlived-the-pipe","chicago-the-cow-that-took-the-blame","chicago-the-garbage-inspector","chicago-the-porters-contract","chicago-the-sign-says-end","chicago-the-strike-that-stopped-the-trains","chicago-under-the-bleachers","city-hall-declaration","cleveland-no-more-protection","cleveland-the-missing-letter","cleveland-the-river-that-burned","craggy-gardens-balds","dc-a-country-he-never-saw","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-priced-by-size","dc-somewhere-to-hide","dc-the-ballroom-ward","dc-the-caretaker-heard-nothing","dc-the-cherry-tree-rebellion","dc-the-first-are-with-the-last","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-ladies-waiting-room","dc-the-man-who-found-the-bolts","dc-the-map-underfoot","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-plaque-on-the-fence","dc-the-starting-line-came-later","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-three-names-for-one-wing","dc-to-thee-we-sing","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-white-before-the-fire","dc-written-in-the-dark","deadwood-before-she-was-calamity","deadwood-his-back-to-the-door","deadwood-the-champions-of-america","fairfax-she-married-the-man-who-arrested-her","fairfax-thirty-killed-said-the-picture","fall-river-a-description-without-a-photograph","fall-river-the-granite-mill-fire","federal-hall-two-firsts","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","fraunces-tavern-farewell","hatteras-moved-the-lighthouse","houston-a-bison-named-earl","houston-a-bunch-of-guys-about-to-turn-blue","houston-a-capitol-without-a-roof","houston-a-pot-of-gold-on-washington","houston-a-window-for-doughnuts","houston-another-uss-houston","houston-constitution-bend","houston-for-the-masses","houston-ground-to-be-free-on","houston-his-name-on-the-tower","houston-hold-the-rail","houston-if-there-is-such-a-thing","houston-know-what-this-is-about","houston-love-me-orange","houston-one-dollar","houston-one-letter-missing","houston-out-of-desperation","houston-pay-as-you-go","houston-return-like-eagles","houston-the-basement-above-ground","houston-the-bodyguards-treasure","houston-the-box-began-to-chirp","houston-the-caretakers-violin","houston-the-condition","houston-the-cows-moved-out","houston-the-grass-that-gave-up","houston-the-letter-got-home","houston-the-lion-tamer","houston-the-man-in-the-brown-suit","houston-the-star-under-the-rug","houston-the-thing-in-freedmantown","houston-the-time-stopped-running","houston-the-verdict-that-was-erased","houston-thunder-and-lightnin","houston-turn-back","houston-two-bridges-for-one-street","houston-umbrellas-and-tennis-rackets","houston-we-passed-the-city","houston-weve-had-a-problem","houston-whatever-was-on-sale","houston-why-does-rice-play-texas","jerome-a-ghost-town-on-purpose","jerome-sixty-seven-men-in-cattle-cars","jerome-the-day-the-stone-melted","jerome-water-from-seven-miles-away","key-west-a-house-named-for-mercedes","key-west-ice-from-the-north","key-west-the-fort-that-lost-the-sea","key-west-the-guest-who-was-not-there","key-west-the-key-west-uniform","key-west-the-sailor-with-the-oar","key-west-the-studio-across-the-catwalk","kitty-hawk-shorter-than-this-plane","kure-beach-five-shells-in-the-dark","linn-cove-viaduct-last-piece","linville-gorge-too-steep","memphis-before-breakfast","memphis-it-worked-when-they-stopped","memphis-kid-douglas","memphis-the-amp-on-the-roof","memphis-the-b-side","memphis-the-mountaintop","memphis-the-ride-home","memphis-the-song-that-mocked-mr-crump","memphis-they-smashed-the-press","mount-mitchell-buried-on-top","nashville-a-hall-built-by-song","nashville-she-bit-the-conductor","nashville-six-encores","nashville-the-architect-in-the-wall","nashville-the-colored-lights","nashville-the-fort-nobody-attacked","nashville-the-harmonica-wizard","nashville-the-saloon-keepers-tabernacle","nashville-the-united-hilton","nashville-tile-thirteen","nashville-when-the-cumberland-came-up","nashville-yellow-roses-and-red","new-orleans-a-district-with-his-name","new-orleans-a-tomb-used-again","new-orleans-an-american-house","new-orleans-ghosts-under-the-oaks","new-orleans-her-initials-in-the-iron","new-orleans-love-street","new-orleans-named-for-empty-ground","new-orleans-no-funerals-at-the-cathedral","new-orleans-st-johns-eve-on-the-bayou","new-orleans-the-arrest-that-was-planned","new-orleans-the-blacksmith-shop-with-no-blacksmiths","new-orleans-the-candle-on-good-friday","new-orleans-the-casket-girls","new-orleans-the-champion-who-stopped","new-orleans-the-crosses-on-the-tomb","new-orleans-the-duke-on-the-street-sign","new-orleans-the-emperor-never-came","new-orleans-the-file-sellers","new-orleans-the-fire-in-the-kitchen","new-orleans-the-flag-on-the-mint","new-orleans-the-girl-on-the-belvedere","new-orleans-the-grand-zombis-square","new-orleans-the-harbor-behind-the-cemetery","new-orleans-the-inquisitor-who-came-back","new-orleans-the-legislature-in-the-convent","new-orleans-the-man-under-the-altar","new-orleans-the-neutral-ground","new-orleans-the-noise-on-the-common","new-orleans-the-opera-house-that-isnt-here","new-orleans-the-priests-house","new-orleans-the-river-above-the-street","new-orleans-the-singing-priest","new-orleans-the-woman-who-never-lived-here","new-orleans-twenty-days-of-france","new-orleans-words-on-the-base","newport-a-door-in-the-floor","newport-a-year-of-waiting","newport-the-line-washington-borrowed","newport-the-tower-nobody-agrees-on","oak-island-five-left-standing","oak-island-how-oak-island-became-an-island","oak-island-the-fence-on-the-dune","pawhuska-guardian-of-his-own-children","pawhuska-the-missing-panel","pearl-street-oysters","philadelphia-a-firehouse-on-a-market","philadelphia-a-steeple-paid-by-lottery","philadelphia-as-much-as-anyone-knows","philadelphia-congress-started-at-the-tavern","philadelphia-dorothy-todd-widow","philadelphia-hamlet-paid-for-the-hospital","philadelphia-he-left-the-year-blank","philadelphia-no-hatch-wide-enough","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-penn-on-the-tower","philadelphia-read-aloud-in-the-yard","philadelphia-rising-or-setting","philadelphia-shoes-for-bob","philadelphia-the-baby-over-the-bank-door","philadelphia-the-bell-went-to-allentown","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-first-vote-was-the-room","philadelphia-the-good-china","philadelphia-the-market-under-the-trains","philadelphia-the-room-upstairs","philadelphia-the-street-that-was-a-creek","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-washington-left-last","philadelphia-what-her-grandson-said","saint-paul-almost-pigs-eye","saint-paul-half-a-mile-of-cellar","saint-paul-the-end-of-the-river-road","saint-paul-the-spirit-house","salem-a-life-in-one-house","salem-a-wharf-built-on-mud","salem-the-judges-house","salem-the-ship-that-missed-the-war","salem-the-surveyor-who-lost-his-job","san-antonio-a-day-at-the-mission","san-antonio-a-window-for-rosa","san-antonio-one-governor-was-enough","san-antonio-spirits-with-flaming-swords","san-antonio-the-army-gave-it-the-hump","san-antonio-the-chili-queens-plaza","san-antonio-the-eye-with-a-mustache","san-antonio-the-mission-that-kept-moving","san-antonio-twelve-thousand-pecan-shellers","san-antonio-water-over-the-creek","san-antonio-wooden-cannons-on-the-long-barrack","san-francisco-a-message-on-the-water-tower","san-francisco-a-toast-to-the-wrong-president","san-francisco-filled-by-the-tide","san-francisco-forty-two-tons-of-powder","san-francisco-hits-eight-and-nine","san-francisco-studying-in-the-bathroom","san-francisco-the-arch-over-the-fort","san-francisco-the-first-rangers-on-this-hill","san-francisco-the-lighthouse-with-a-flat-top","san-francisco-the-unfinished-mosaic","san-francisco-two-sisters-on-the-same-rocks","santa-fe-a-tank-called-the-mud-puppy","santa-fe-ben-hur-after-dark","santa-fe-the-carpenter-who-vanished","santa-fe-the-door-to-the-hill","santa-fe-the-end-of-the-trail","santa-fe-the-mother-ditch","santa-fe-what-the-tree-rings-say","santa-fe-when-the-plaza-was-a-pueblo","savannah-a-city-for-christmas","savannah-ballast-stones","savannah-city-hall-dome","savannah-cotton-exchange","savannah-dinner-under-the-trees","savannah-factors-walk","savannah-first-african-baptist","savannah-old-harbor-light","savannah-pirates-house","savannah-raleigh-on-gas-works-hill","savannah-steamship-savannah","savannah-thackerays-comfortable-quarters","savannah-the-chimney-with-privies-in-its-base","savannah-the-church-copied-from-itself","savannah-the-fountain-that-kept-getting-more-parisian","savannah-the-gate-in-the-bull-street-wall","savannah-the-gate-she-made","savannah-the-general-facing-south","savannah-the-general-who-went-missing","savannah-the-library-on-loan","savannah-the-lion-on-the-bed","savannah-the-m-and-t-oaks","savannah-the-night-the-cathedral-burned","savannah-the-sergeant-who-would-not-be-an-officer","savannah-the-spring-that-smelled-of-the-bolt","savannah-the-stone-beside-the-grave","savannah-the-synagogue-with-the-onion-dome","savannah-the-vaults-on-south-broad","savannah-the-word-in-the-basement","savannah-twenty-two-squares","savannah-waving-girl","savannah-wesleys-empty-lot","savannah-white-paper-in-their-hats","savannah-who-lies-under-the-pulaski-monument","savannah-yamacraw-bluff","savannah-you-are-my-prisoner","southport-a-fish-house-plays-a-fish-shack","southport-a-wretched-little-place","southport-carved-in-imperishable-stone","southport-croaker-queen","southport-one-floor-below-the-cells","southport-pay-on-your-way-out","southport-red-over-white","southport-the-bent-oak","southport-the-city-of-the-south-atlantic","southport-the-festival-of-free-men","southport-the-gentleman-giant","southport-the-harp-that-kept-playing","southport-the-last-cupola","southport-the-old-man-and-the-boy","southport-the-reporter-who-could-not-hear","southport-the-reverends-church","southport-the-station-in-the-river","southport-the-watch-on-the-river","southport-the-woman-who-raised-the-flags","southport-worse-than-hazel","st-augustine-a-hotel-poured-from-shells","st-augustine-a-wall-of-seashells","st-augustine-acid-in-the-pool","st-augustine-drawings-on-ledger-paper","st-augustine-the-first-thanksgiving-menu","st-augustine-the-free-town-in-the-marsh","st-augustine-the-inlet-of-slaughters","st-augustine-wild-cats-window","the-balcony","the-children-at-the-lighthouse","the-distance-across-the-street","the-empty-frames","the-footsteps-above-the-gallows","the-garage-that-vanished","the-girl-who-wanted-her-doll","the-lady-in-grey","the-last-movie","the-lights-beyond-the-ridge","the-men-who-left-their-faces-behind","the-other-history-of-fraunces-tavern","the-prison-corridor","the-prisoner-who-never-reached-the-prison","the-room-that-knocks-back","the-turn-onto-elm-street","wall-street-the-wall","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);
