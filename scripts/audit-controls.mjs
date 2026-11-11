@@ -427,6 +427,42 @@ focus.push(...await focusSweep('map/trip'));
 await p.keyboard.press('Escape'); await p.waitForTimeout(300);
 await p.locator('.nav button').nth(1).click(); await p.waitForTimeout(700); await capture('my-echoes');
 focus.push(...await focusSweep('my-echoes'));
+/* My echoes' two pills and the Rare finds callout (boards of 2026-11-11), each open: every
+   chip, place, way of travelling and button in them is a control like any other. Only
+   there once something is synced; if the walk above synced nothing, a few are seeded the
+   way the screenshots seed them, with a rare find among them. */
+if (!(await p.locator('.me-pills').count())) {
+  await p.evaluate(async () => {
+    const recs = ['the-prison-corridor', 'dakota-three-minutes', 'wilmington-meg-at-the-old-waterfront', 'castle-clinton-eight-million']
+      .map((echoId, i) => ({ echoId, capturedAt: new Date(Date.now() - i * 864e5).toISOString(), mode: i ? 'walking' : 'driving' }));
+    await new Promise((res, rej) => {
+      const o = indexedDB.open('echo-finders', 1);
+      o.onupgradeneeded = () => { if (!o.result.objectStoreNames.contains('collection')) o.result.createObjectStore('collection', { keyPath: 'key' }); };
+      o.onsuccess = () => { const tx = o.result.transaction('collection', 'readwrite'); tx.objectStore('collection').put({ key: 'seed-elsewhere', records: recs }); tx.oncomplete = () => { o.result.close(); res(); }; tx.onerror = () => rej(tx.error); };
+      o.onerror = () => rej(o.error);
+    });
+  });
+  await p.reload({ waitUntil: 'domcontentloaded' }); await p.waitForTimeout(2500);
+  for (let i = 0; i < 4; i++) await p.locator('.toast-close').first().click({ timeout: 400 }).catch(() => {});
+  await p.locator('.nav button').nth(1).click(); await p.waitForTimeout(700);
+  await capture('my-echoes/filled');
+}
+if (await p.locator('.me-pills').count()) {
+  await p.locator('.me-pills .kind-tap').first().click(); await p.waitForTimeout(400);
+  await capture('my-echoes/kinds');
+  focus.push(...await focusSweep('my-echoes/kinds'));
+  await p.keyboard.press('Escape'); await p.waitForTimeout(300);
+  await p.locator('.screen-body').evaluate((b) => { b.scrollTop = 0; });
+  await p.locator('.me-place-tap').click(); await p.waitForTimeout(400);
+  await capture('my-echoes/place');
+  focus.push(...await focusSweep('my-echoes/place'));
+  await p.keyboard.press('Escape'); await p.waitForTimeout(300);
+  await p.locator('.screen-body').evaluate((b) => { b.scrollTop = 0; });
+  await p.locator('.me-tile-rare').click(); await p.waitForTimeout(400);
+  await capture('my-echoes/rare-finds');
+  focus.push(...await focusSweep('my-echoes/rare-finds'));
+  await p.keyboard.press('Escape'); await p.waitForTimeout(300);
+} else console.log('NOTE: My echoes had nothing synced, so its filter boxes were not inventoried');
 /* Settings is the third tab again (James's call): the icon on My Echoes filters echoes. */
 await p.locator('.nav button').nth(2).click(); await p.waitForTimeout(700); await capture('settings');
 focus.push(...await focusSweep('settings'));

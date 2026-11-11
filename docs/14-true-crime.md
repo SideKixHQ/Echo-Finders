@@ -98,9 +98,14 @@ And always:
   alive; that triggers the three-source rule and the attribution rule for alleged cases.
 - **Victims are people, not set dressing.** No graphic detail of injuries, no "gruesome",
   no music cue on the violence. The echo is about the place and what it meant.
-- **Where it happened is somebody's grief** (`protection-policy.md`, Risk 6). No rarity, no
+- **Where it happened is somebody's grief** (`protection-policy.md`, Risk 6). No
   collection prompt, and the listener stands on the public sidewalk, never on the doorstep
   of a private home.
+- **True crime earns rarity like any other echo.** *(James, 2026-11-11: true crime is a main
+  category and a reason people open the app, so it is not exempt.)* A true-crime echo is a
+  Rare find when its place earns it, by the same rules as every echo (`rarityOf`). The care
+  lives in the sourcing rules above and the short content warning read before it begins,
+  not in switching the mechanics off. This used to say "no rarity".
 - **Contributions are never true crime** (ADR-0013).
 
 ## The workflow

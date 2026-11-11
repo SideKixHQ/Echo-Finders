@@ -64,10 +64,7 @@ export function Routes(p: Props) {
       {p.routes.length === 0 ? (
         <div className="empty routes-empty">
           <b>No routes yet</b>
-          <span>
-            Tap an echo on the map and choose Add to route, or make one here and add your saved echoes to
-            it.
-          </span>
+          <span>Add echoes from their cards, or start one here.</span>
         </div>
       ) : (
         p.routes.map((r) => {

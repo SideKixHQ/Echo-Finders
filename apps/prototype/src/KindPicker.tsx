@@ -13,7 +13,9 @@
  * map. It is the box flight mode always had, now everywhere. (A bottom sheet was tried
  * first; James preferred this: it opens where you tapped and leaves the map in view.)
  * Pick as many as you like; the map changes as you tap; a tap outside, the button again,
- * or Escape closes it. My Echoes' filter uses the same chips (`KindGrid`).
+ * or Escape closes it. My Echoes uses this same button and box, with the count of what
+ * it shows beside the name ("Ghosts · 2"), since there a tap changes a list you cannot see
+ * behind the box.
  */
 
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -68,8 +70,24 @@ export function KindGrid({ on, onToggle, onAll }: KindProps) {
   );
 }
 
-export function KindPicker({ on, onToggle, onAll }: KindProps) {
-  const [open, setOpen] = useState(false);
+interface PickerProps extends KindProps {
+  /** How many echoes the pick shows, said on the button while a kind is picked (My echoes). */
+  readonly count?: number;
+  /** Open and close from outside, so a screen with two boxes keeps one open at a time. */
+  readonly open?: boolean;
+  readonly onOpenChange?: (open: boolean) => void;
+}
+
+export function KindPicker({ on, onToggle, onAll, count, open: openIn, onOpenChange }: PickerProps) {
+  const [openOwn, setOpenOwn] = useState(false);
+  const open = openIn ?? openOwn;
+  const setOpen = useCallback(
+    (o: boolean) => {
+      setOpenOwn(o);
+      onOpenChange?.(o);
+    },
+    [onOpenChange],
+  );
   const tap = useRef<HTMLButtonElement | null>(null);
   const box = useRef<HTMLDivElement | null>(null);
 
@@ -82,7 +100,7 @@ export function KindPicker({ on, onToggle, onAll }: KindProps) {
    * A tap anywhere else closes it, on the way down, so the tap that closes it does not also
    * select a pin underneath. Escape closes it and hands focus back (WCAG 2.1.2, 2.4.3).
    */
-  const close = useCallback(() => setOpen(false), []);
+  const close = useCallback(() => setOpen(false), [setOpen]);
   useEffect(() => {
     if (!open) return;
     const down = (e: PointerEvent) => {
@@ -112,7 +130,11 @@ export function KindPicker({ on, onToggle, onAll }: KindProps) {
         onClick={() => setOpen(!open)}
         aria-expanded={open}
         aria-controls="kind-box"
-        aria-label={all ? "Echoes showing: all" : `Echoes showing: ${chosen.map((g) => g.label).join(", ")}`}
+        aria-label={
+          all
+            ? "Echoes showing: all"
+            : `Echoes showing: ${chosen.map((g) => g.label).join(", ")}${count === undefined ? "" : `, ${count}`}`
+        }
       >
         {/* Everything on says so in words, "All echoes", as the map board draws it. */}
         {!all && (
@@ -121,6 +143,7 @@ export function KindPicker({ on, onToggle, onAll }: KindProps) {
           </svg>
         )}
         <span className="kind-label">{label}</span>
+        {!all && count !== undefined && <span className="kind-count">· {count}</span>}
         <svg className="kind-chev" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M6 9.5l6 6 6-6" />
         </svg>
