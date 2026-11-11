@@ -38,7 +38,7 @@ export const FEEDBACK_KINDS: Readonly<Record<FeedbackKind, string>> = {
 export type SuggestKind = "story" | "place" | "mine";
 
 export const SUGGEST_KINDS: Readonly<Record<SuggestKind, string>> = {
-  story: "I know an echo",
+  story: "A missing echo",
   place: "A place you should add",
   mine: "It happened to me here",
 };

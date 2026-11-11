@@ -82,7 +82,7 @@ and the page you were on. Your email address only if you type it in, so that we 
 the same service as error reports, Sentry, and is read by us to fix and improve the app.
 
 ### Stories and places you suggest
-**Only when you press Send**, in **Settings → Know a story? → Suggest a story or a place**.
+**Only when you press Send**, in **Settings → Missing an echo? → Suggest an echo or a place**.
 **What is sent:** what you wrote, the place you named, which kind of suggestion it is and the
 version of the app. **Where you are standing only if you tick "add my location"**, read from
 your phone at that moment. Your email address only if you type it in, so that we can credit

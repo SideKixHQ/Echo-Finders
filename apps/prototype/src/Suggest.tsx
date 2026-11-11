@@ -1,5 +1,6 @@
 /**
- * Settings › Know a story? Suggestions from anyone, free.
+ * Settings › Missing an echo? Suggestions from anyone, free. (Headed "Know an echo?"
+ * until James renamed it, 2026-11-11: shorter, and nobody "knows" an echo.)
  *
  * James, 2026-11-09: "Should we have a fun way for users to suggest a place to add echoes or
  * to suggest an echo? Like they know a story or they created one", then "start with
@@ -187,12 +188,12 @@ export function SuggestForm({ dsn, release, onCancel, initialKind, echo }: FormP
   );
 }
 
-/** Settings › Know a story? */
+/** Settings › Missing an echo? */
 export function Suggest({ dsn, release }: { readonly dsn: string | undefined; readonly release: string }) {
   const [open, setOpen] = useState(false);
   return (
     <section className="panel feedback suggest">
-      <h3>Know an echo?</h3>
+      <h3>Missing an echo?</h3>
       {open ? (
         <SuggestForm dsn={dsn} release={release} onCancel={() => setOpen(false)} />
       ) : (

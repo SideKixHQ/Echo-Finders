@@ -5026,7 +5026,7 @@ div.maplibregl-map { font-size: var(--fs-label); }
 .feedback-done { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; }
 .feedback-done strong { font-size: var(--fs-button); font-weight: 500; color: var(--aqua-ink); }
 
-/* Settings › Know a story? (Suggest.tsx): the feedback form's parts, plus the location tick. */
+/* Settings › Missing an echo? (Suggest.tsx): the feedback form's parts, plus the location tick. */
 .suggest-note { font-size: var(--fs-secondary); color: var(--aqua-ink); line-height: 1.5; }
 .suggest-here {
   display: flex; align-items: center; gap: 10px; min-height: 44px;
