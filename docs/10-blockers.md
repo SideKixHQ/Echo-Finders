@@ -61,7 +61,7 @@ decision that settled them.
 | 11 | **Nothing can be checked on a real *device* from a session.** ~~Sessions cannot reach `*.vercel.app`~~: they can, through the Vercel MCP server, which fetches the live site through the account rather than through the container (corrected 2026-10-24, `DEPLOY.md`), and as of 2026-11-05 plain `curl` reaches it too. So a deploy is confirmable: read `/version.json` and compare the commit. What remains open is the phone itself: camera, compass and sound need James's eyes. | Half settled. Confirm every merge against `/version.json`; screenshots plus a phone check for anything visual. |
 | 12 | **Weak safety nets.** CI skipped the audits; branch protection is off; the CODEOWNERS editorial team does not exist. | Audits move into CI with Playwright as a real dependency. Branch protection and the team are GitHub settings for James. |
 | 13 | **Stale docs.** Build plan said Phase 0; ADR-0005 vs 01-services on Postgres timing; ADR-0012 says `apps/*` does not exist. | Build plan marker updated with this doc; the ADR contradictions remain. |
-| 14 | **Driving safety.** Nothing stops a driver using the screen while moving. | Open; deliberately deferred 2026-10-06. |
+| 14 | **Driving safety.** ~~Nothing stops a driver using the screen while moving.~~ On the iPhone app it is settled (approved by James 2026-11-11, built 2026-11-12): above walking pace, about 25 km/h held for 15 seconds, the screen locks behind a notice while echoes keep playing hands free, and "I'm a passenger" unlocks it until the trip ends (`apps/ios/src/drive/lock.ts`). The web app still has no lock. | Half settled: iPhone done, web open. |
 
 ## Settled
 - ~~The layout audit hung~~: it clicked controls that no longer exist; fixed and green (#28).

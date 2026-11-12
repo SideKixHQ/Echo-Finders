@@ -25,6 +25,7 @@ import { NarratorProvider } from "../player";
 import { PacksProvider } from "../packs/PacksProvider";
 import { PurchasesProvider } from "../purchases/PurchasesProvider";
 import { WalkProvider } from "../walk/WalkProvider";
+import { DriveLock } from "../drive/DriveLock";
 // The map's planner: packs save the map's files too, so it draws with no signal.
 import "../mapPacks";
 import { color } from "../theme";
@@ -65,6 +66,8 @@ export default function RootLayout() {
                 options={{ presentation: "transparentModal", animation: "fade", contentStyle: { backgroundColor: "transparent" } }}
               />
             </Stack>
+            {/* Over everything while the phone travels faster than walking pace (`drive/`). */}
+            <DriveLock />
           </PacksProvider>
         </WalkProvider>
       </PurchasesProvider>
