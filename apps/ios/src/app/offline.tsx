@@ -10,6 +10,7 @@ import { Screen } from "../ui";
 import { color, font, gutter, size } from "../theme";
 import { usePacks } from "../packs/PacksProvider";
 import { paidCities } from "../packs/passes";
+import { usePurchases } from "../purchases/PurchasesProvider";
 import { echoCount, formatBytes, formatMbPair, packIdOf, savedLine, type PackManifest } from "../packs/plan";
 import {
   BackIcon,
@@ -27,6 +28,7 @@ import {
 export default function OfflineEchoes() {
   const router = useRouter();
   const packs = usePacks();
+  const { entitlement } = usePurchases();
   const { usedBytes, freeBytes } = packs.storage;
   // "saved today" is worked out against when the screen opened.
   const [now] = useState(() => Date.now());
@@ -36,11 +38,11 @@ export default function OfflineEchoes() {
   const { packs: saved, plan } = packs;
   const passes = useMemo(() => {
     const onPhone = new Set(saved.map((p) => p.id));
-    return paidCities()
+    return paidCities(entitlement, now)
       .filter((city) => !onPhone.has(packIdOf({ kind: "city", city })))
       .map((city) => ({ city, plan: plan({ kind: "city", city }) }))
       .filter((pass) => pass.plan.echoIds.length > 0);
-  }, [saved, plan]);
+  }, [saved, plan, entitlement, now]);
 
   return (
     <Screen>
