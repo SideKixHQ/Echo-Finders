@@ -868,6 +868,197 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1
   },
   {
+    "id": "boston-a-door-like-a-tomb",
+    "title": "A Door Like a Tomb",
+    "summary": "America's first subway opened here in 1897. Its kiosks were mocked as mausoleums, and digging it moved 910 bodies.",
+    "point": {
+      "at": {
+        "lat": 42.3529,
+        "lng": -71.0646
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Boylston station entrance, Tremont Street subway, corner of Boylston and Tremont streets, Boston, Massachusetts"
+    },
+    "category": "hidden",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 10,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the small granite entrance to Boylston station, at the corner of the Common. When it was new, critics said it resembled a mausoleum.\n\nThey had more of a point than they knew.\n\nBelow Tremont Street is the first subway in America. Ground was broken in eighteen ninety five. On the first of September, eighteen ninety seven, the first stretch opened, from the Public Garden to Park Street. Only four cities in the world had a subway before it.\n\nBut the digging ran along the old Central Burying Ground, a short walk west of here, on the Boylston Street side of the Common.\n\nAnd the crews found people. Ninety in their tombs, undisturbed. About eight hundred and twenty more, crushed, or piled, or scattered in pieces through the ground.\n\nCrowds came to watch. An undertaker was hired to bury them again.\n\nThe kiosk in front of you is essentially as it was built, and still in use, on what is now the Green Line.\n\nAmerica's first subway goes down past a graveyard, through a door that looks like a tomb.\n",
+    "teaser": "When it opened, people said the subway entrance looked like a mausoleum. They did not know the half of it.",
+    "detail": "The National Historic Landmark nomination for the Tremont Street Subway (National Park Service) gives ground broken on 28 March 1895, the Public Garden incline to Park Street segment opening on 1 September 1897, the first underground public transportation system in the United States and only the fifth in the world, the Classical Revival kiosks at Boylston and Park streets described as \"resembling mausoleums\", the Boylston kiosks \"essentially unaltered\", and the reinterment of 910 bodies exhumed from colonial burial grounds. WBUR (2024) independently gives the Central Burying Ground dug in 1756 along Boylston and Tremont streets, 90 bodies in undisturbed tombs and another 820 found crushed, piled or scattered, the crowds and the undertaker. The Boston Globe (2022) gives the MBTA's statement that the 1897 tunnel still connects the Green Line's Boylston and Park Street stations. \"Only four cities had a subway before it\" restates \"fifth in the world\"; the nomination names London, Glasgow and Paris among them.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-a-door-like-a-tomb/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 68.5,
+        "audioBytes": 1097185
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "boston-common",
+      "subway",
+      "mbta",
+      "green-line",
+      "firsts",
+      "burying-ground"
+    ],
+    "remoteness": 0.14
+  },
+  {
+    "id": "boston-a-fort-you-could-carry",
+    "title": "A Fort You Could Carry",
+    "summary": "In March 1776 the army took this hill in one night with a fort built elsewhere and carried up, an idea an officer found in a book.",
+    "point": {
+      "at": {
+        "lat": 42.33285,
+        "lng": -71.0455
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Dorchester Heights Monument, Thomas Park, South Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 86,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the white marble tower. It stands on the last of the hills that once looked down on Boston and its harbour.\n\nIn the winter of seventeen seventy six, the British held Boston, and the Americans had them trapped. Whoever fortified this hill could fire down on the town. But the ground was rocky and frozen. Nobody could dig a fort into it fast enough.\n\nThen one of Washington's officers, Rufus Putnam, came across a word in a military engineering book. Chandeliers. He did not know what it meant.\n\nIt meant wooden frames, built somewhere else and carried in, then filled with bundles of sticks and bales of hay to stop the shot. A fort you could bring with you.\n\nThe army spent February nailing them together. Then, in one night in March, more than twelve hundred men and three hundred oxcarts hauled everything up this hill as quietly as they could.\n\nAt dawn on the fifth of March, Boston woke up to cannon above it. The British general, William Howe, is reported to have said: My God, these fellows have done more work in one night than I could make my army do in three months.\n\nTwelve days later, the British left Boston.\n\nIt began with an officer who did not know what a word meant, and looked it up.\n",
+    "teaser": "The ground was frozen too hard to dig a fort. So they brought one with them.",
+    "detail": "The Library of Congress Bibliomania blog (25 February 2026) gives the frozen, rocky ground, Lieutenant Colonel Rufus Putnam not knowing the term \"chandeliers\" from John Muller's The Attack and Defense of Fortified Places, Muller's definition, the army building frames and tying fascines and hay bales in February 1776, and Howe's reported words. The National Park Service page for Dorchester Heights gives the last surviving hill, the night of 4 March, more than 1,200 soldiers and volunteers and 300 oxcarts, the dawn of 5 March revealing the fort, the same Howe quotation, and the evacuation on 17 March. The two sources disagree on the night: the blog says \"the night of March 5th\", the park service says 4 March with the works revealed at dawn on 5 March; the script follows the park service and does not name the night. Howe's words are told as reported, because both sources hedge or quote them second hand. Knox's guns from Ticonderoga, which also made the position work, are left out to keep one idea.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-a-fort-you-could-carry/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 85.9,
+        "audioBytes": 1375546
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Rufus Putnam",
+        "say": "ROO-fus PUT-num"
+      }
+    ],
+    "tags": [
+      "boston",
+      "south-boston",
+      "dorchester-heights",
+      "siege-of-boston",
+      "revolution",
+      "military",
+      "washington"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "boston-a-ride-on-the-top-stone",
+    "title": "A Ride on the Top Stone",
+    "summary": "A children's telling: the Bunker Hill Monument's three ton capstone was hoisted up by steam, with a volunteer riding on top.",
+    "point": {
+      "at": {
+        "lat": 42.37562,
+        "lng": -71.06138
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Bunker Hill Monument, from Monument Square by the Bunker Hill Museum, Charlestown, Boston, Massachusetts"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 54,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up, all the way to the very top of the tall stone tower. Right at the tip is a stone shaped like a pyramid. It is called the capstone, and it weighs about three tons.\n\nHow do you get a stone that heavy all the way up there?\n\nThe builders had a steam engine and a clever lifting machine. It pulled the capstone up from the ground, a bit like reeling a fish out of the sea with a fishing rod.\n\nAnd one of the workmen volunteered to ride on top of it. All the way up, to the top of the monument, two hundred and twenty one feet in the air. Someone at the time called it that frightful height between heaven and earth.\n\nWhen the capstone was in place, cannons fired twenty six times. One for every state in the country back then.\n\nThe whole tower is made of about three thousand granite blocks. Lots of them weigh five tons each, more than the capstone.\n\nLook up at the top again. Would you have ridden it?\n",
+    "teaser": "Somebody rode the very top stone all the way up. On purpose.",
+    "detail": "Everything comes from the National Park Service article Building the Bunker Hill Monument: the capstone, a pyramid shaped granite block of about three tons, lifted by a hoist powered by the steam engine \"similar to lifting a fish from the sea with a rod and reel\", the workman who volunteered to ride atop it as it rose \"that frightful height between heaven and earth\" (the article quotes a period account), the 26 gun salute, one for every state, the finished height of 221 feet in July 1842, about 3,000 blocks, and large blocks averaging five tons. Single source. The volunteer's name is not given. Kids voice per casting.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/boston-a-ride-on-the-top-stone/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 54.1,
+        "audioBytes": 867308
+      }
+    ],
+    "tags": [
+      "boston",
+      "charlestown",
+      "bunker-hill-monument",
+      "kids",
+      "revolution",
+      "monuments",
+      "granite"
+    ],
+    "remoteness": 0.47
+  },
+  {
+    "id": "boston-a-smell-of-oranges",
+    "title": "A Smell of Oranges",
+    "summary": "In 1846, under this dome, a dentist put a patient under for surgery in public. His gas, Letheon, was ether scented with orange.",
+    "point": {
+      "at": {
+        "lat": 42.36262,
+        "lng": -71.0683
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Bulfinch Building and the Ether Dome, Massachusetts General Hospital, Fruit Street, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 8,
+    "quality": 0.8,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the granite building with the small dome on top. Under that dome is an old operating theatre. More than eight thousand operations were done in it in front of spectators.\n\nOn the sixteenth of October, eighteen forty six, one of them changed medicine.\n\nA Boston dentist, William Morton, stood beside a patient who was about to have a tumour cut out. The doctors in the seats were sceptical. Morton had the man breathe from a sponge.\n\nMorton called his gas Letheon, after the river of forgetting in the old myths. It was really ether, with oil of orange added to disguise the smell.\n\nThe operation went ahead. The patient felt no pain. And the chief surgeon, John Collins Warren, turned to the room and said: Gentlemen, this is no humbug.\n\nMorton had a reason for the orange. He planned to patent his gas, and he made Warren sign a licence to use it.\n\nThe room was renamed for what happened in it. The Ether Dome.\n\nThe discovery was the ether. The orange was there so nobody would know.\n",
+    "teaser": "The gas had a secret ingredient. It was there so nobody could tell what it was.",
+    "detail": "All three sources are The Boston Globe, so this is single-source by publisher. The Globe (2014, on the play Ether Dome) gives the first demonstration at Massachusetts General Hospital on 16 October 1846, the surgical amphitheater atop the Bulfinch Building, Morton's name Letheon \"after the mythological river of forgetting\", that it was \"really sulfuric ether with oil of orange added to disguise its odor\", the patient \"having a tumor removed from his neck\", Morton's demand that Warren sign a license and his plan to patent it, and the renaming of the amphitheater \"The Ether Dome\". The Globe (2012, on the Russell Museum) gives the sponge soaked in ether, the skepticism, the patient feeling no pain and Warren's \"Gentlemen, this is no humbug!\"; it calls the tumour a jaw tumour, the 2014 piece a neck tumour, so the script says only \"a tumour\". The Globe (2024) gives more than 8,000 surgeries in front of spectators and Morton as a Boston dentist. The patient is often named as Gilbert Abbott; no fetched source names him, so the script does not. Rival claims to the discovery are in the Ether Monument echo.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-a-smell-of-oranges/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 70.1,
+        "audioBytes": 1123099
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Letheon",
+        "say": "LEE-thee-on"
+      }
+    ],
+    "tags": [
+      "boston",
+      "west-end",
+      "mgh",
+      "ether-dome",
+      "anaesthesia",
+      "medicine",
+      "inventions",
+      "firsts"
+    ],
+    "remoteness": 0
+  },
+  {
     "id": "boston-abiel-smith-school-goodbye",
     "title": "Goodbye Forever",
     "summary": "Black families boycotted this segregated school until Massachusetts outlawed school segregation in 1855.",
@@ -1224,7 +1415,59 @@ export const LIBRARY: readonly Echo[] = [
       "underground-railroad",
       "abolition"
     ],
-    "remoteness": 0.15
+    "remoteness": 0
+  },
+  {
+    "id": "boston-her-book-on-the-tea-ship",
+    "title": "Her Book on the Tea Ship",
+    "summary": "Phillis Wheatley had to convince a panel of Boston men she wrote her own poems. Then copies of her book came home on a Tea Party ship.",
+    "point": {
+      "at": {
+        "lat": 42.35048,
+        "lng": -71.08341
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Phillis Wheatley statue, Boston Women's Memorial, Commonwealth Avenue Mall, Back Bay, Boston, Massachusetts"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 74,
+    "minAge": 8,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find Phillis Wheatley in the Boston Women's Memorial. The city put her here in two thousand three.\n\nShe arrived in Boston in seventeen sixty one, a child, on a ship from West Africa. John and Susanna Wheatley bought her. They taught her to read and write. By about fourteen, she had a poem in a newspaper.\n\nThen came the doubters. Critics refused to believe that an enslaved Black woman could write poetry that good.\n\nSo in seventeen seventy two, she had to defend her own poems, in front of a panel of prominent Boston men. John Hancock was one of them. So was the governor, Thomas Hutchinson.\n\nShe convinced them. They signed a statement saying so.\n\nEven then, no printer in the colonies would publish her book. It came out in London, in seventeen seventy three. The first book of poetry by an African American.\n\nAnd when copies were shipped home to Boston that winter, some of them were in the cargo of a ship carrying tea. The ship the patriots boarded in disguise.\n\nFirst she had to prove she wrote her book. Then she had to get it off a tea ship.\n",
+    "teaser": "First she had to prove she wrote her poems. Then she had to get them off a tea ship.",
+    "detail": "The National Park Service page on Phillis Wheatley gives her purchase by John and Susanna Wheatley on arrival in 1761, the Wheatleys teaching her to read and write, the critics who refused to believe an enslaved Black woman could write such poetry, her defence before a panel of prominent Boston citizens in 1772 and their attestation, the failure to publish in the colonies, and the London book of 1773 as the first book of poetry by an enslaved Black woman. The Library of Congress (2018) independently gives the first volume of poetry by an African American, her first published poem at about 14, and John Hancock and Governor Thomas Hutchinson among her examiners; it places the examination after her return from London, while the park service puts it in 1772, before; the script follows the park service. The Boston Globe (2026) gives her arrival on a ship from Africa and the 2003 statue on the Commonwealth Avenue Mall. WBUR (2023) is the only fetched source for her book among the cargo of a Tea Party ship; it states it as fact in introducing a play about her efforts to get the copies off the ship. A reviewer should look hardest at that line; \"that winter\" rests on the Tea Party date, December 1773. The ship is not named.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-her-book-on-the-tea-ship/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 73.7,
+        "audioBytes": 1179523
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Phillis Wheatley",
+        "say": "FIL-is WHEET-lee"
+      }
+    ],
+    "tags": [
+      "boston",
+      "back-bay",
+      "commonwealth-avenue",
+      "phillis-wheatley",
+      "poets",
+      "women",
+      "black-history",
+      "books",
+      "tea-party"
+    ],
+    "remoteness": 0.63
   },
   {
     "id": "boston-in-short-i-lost-most-all",
@@ -1321,6 +1564,59 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "boston-poe-walks-away",
+    "title": "Poe Walks Away",
+    "summary": "Boston finally gave its sour native son a statue in 2014. The sculptor made him stride away from the Frog Pond, toward his birthplace.",
+    "point": {
+      "at": {
+        "lat": 42.35223,
+        "lng": -71.06709
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Poe Returning to Boston statue, Edgar Allan Poe Square, Boylston and Charles streets, Boston, Massachusetts"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the bronze man striding along the corner, like a commuter rushing to catch the train. Edgar Allan Poe, born in Boston in eighteen o nine.\n\nHe did not much care for the place. As a critic, he insulted a whole row of the city's writers, Longfellow among them. They returned the favour.\n\nSo it took Boston more than a hundred and sixty years after his death to put up a statue. It was unveiled here in twenty fourteen.\n\nLook which way he is walking. The sculptor, Stefanie Rocknak, turned his back on the Frog Pond, on the Common, to show his disdain for Bostonians. He is striding toward his birthplace, on Carver Street.\n\nNow look at the briefcase. It is overflowing. A raven, larger than life. And a human heart. The Tell Tale Heart was first published here in Boston.\n\nBefore the unveiling, the statue stood in the ground for more than a week, hidden in a wooden box. The man who led the campaign said that made perfect sense. Poe was emerging from a coffin.\n\nBoston took its time to welcome him home. He still will not look at it.\n",
+    "teaser": "Boston gave him a statue at last. He is walking away from it.",
+    "detail": "The Boston Globe (5 October 2014) gives the unveiling at Boylston and Charles streets near Boston Common, Poe as the city's \"sour native son\", the statue facing away from the Frog Pond \"to represent his disdain for Bostonians\" as he walks toward his birthplace on Carver Street, and the briefcase with a larger than life raven and a human heart. WBUR (4 October 2014) gives his birth in Boston in 1809, the coffin like wooden box and Paul Lewis's words, The Tell Tale Heart first published in Boston, and his insults to local writers including Longfellow; WBUR (April 2014) adds that the city's writers \"reciprocated in earnest\" and the sculptor's name. CBS Boston (AP) gives \"more than 160 years after his death\". Inspo kind is before-fame and evidence area: Poe was born nearby, on Carver Street, not at this corner.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-poe-walks-away/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.9,
+        "audioBytes": 1151102
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Rocknak",
+        "say": "ROCK-nak"
+      }
+    ],
+    "inspo": {
+      "kind": "before-fame",
+      "evidence": "area"
+    },
+    "tags": [
+      "boston",
+      "boston-common",
+      "poe",
+      "statues",
+      "books",
+      "poetry"
+    ],
+    "remoteness": 0.19
+  },
+  {
     "id": "boston-say-no-more",
     "title": "Say No More",
     "summary": "A woman was banished for what she taught on this corner. Two centuries later it was where America's writers brought their manuscripts.",
@@ -1361,6 +1657,63 @@ export const LIBRARY: readonly Echo[] = [
       "anne-hutchinson"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "boston-sealed-in-the-fort",
+    "title": "Sealed in the Fort",
+    "summary": "Poe served at Fort Independence as a private in 1827. The soldiers told of a killer walled up alive. He later wrote The Cask of Amontillado.",
+    "point": {
+      "at": {
+        "lat": 42.3377,
+        "lng": -71.0118
+      },
+      "triggerRadiusKm": 0.1,
+      "place": "Fort Independence, Castle Island, South Boston, Massachusetts"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 10,
+    "quality": 0.85,
+    "visibility": "landmark-visible",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Walk along the granite walls of Fort Independence. In eighteen twenty seven, a private was posted here under a false name. Edgar A. Perry. He had lied about his age as well.\n\nHe was really Edgar Allan Poe. Eighteen, broke, and five months from sailing south with his battery.\n\nThis is a legend, and here is how it goes.\n\nThe soldiers at the fort told a story from ten years before. On Christmas Day, eighteen seventeen, two lieutenants quarrelled over a game of cards. They fought a duel. The less popular one killed the other.\n\nThe dead man's friends wanted revenge. So, the story goes, they got the killer drunk, led him into a chamber, and sealed him inside. And left him there to die.\n\nNearly twenty years later, Poe published his own version of the tale, set in Italy. The Cask of Amontillado.\n\nWas any of it true? The man said to have been walled up, Gustavus Drane, was real. He did not die that way.\n\nThe walls in front of you were rebuilt after Poe left. The story was not. He took it with him.\n",
+    "teaser": "The soldiers told a story about a man sealed into the walls. One private wrote it down, years later.",
+    "detail": "The National Park Service page on Castle Island gives Poe enlisting as \"Edgar A. Perry\", his five months on the island, the 1817 duel over a Christmas Day card game, the less popular lieutenant killing the other, the friends sealing the killer in a vault, the 1846 story it is believed to have inspired, and the rebuilding of the fort from 1833. The park service page on Poe gives his enlistment on 26 May 1827 under an assumed name, his lie about his age (he claimed 22 and was 18), Battery H at Fort Independence, its orders south on 31 October 1827, and that he was unable to support himself. WBUR (2024) gives Drane and Massie, the drink and the chamber, the story set in Italy, and that Drane did not die this way. CBS Boston gives the five months and \"not entirely true\". Male narrator per casting for legend.",
+    "certaintyNote": "The walling up is a legend. The National Park Service tells it as \"the story\" Poe heard at the fort and says it is \"believed to have inspired\" The Cask of Amontillado. WBUR (2024) names the duellists as Gustavus Drane and Robert F. Massie and says Drane \"was a real person\" but \"didn't actually meet his end this way\". CBS Boston calls the tale \"not entirely true\". Poe's service at the fort under an assumed name is documented by the park service. Its two pages disagree on the year he enlisted (1826 on the Castle Island page, 26 May 1827 on the Poe page); the script follows the Poe page.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/boston-sealed-in-the-fort/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 66.1,
+        "audioBytes": 1058315
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Amontillado",
+        "say": "ah-mon-tee-YAH-doh"
+      },
+      {
+        "written": "Gustavus Drane",
+        "say": "gus-TAY-vus DRAYN"
+      }
+    ],
+    "tags": [
+      "boston",
+      "south-boston",
+      "castle-island",
+      "fort-independence",
+      "poe",
+      "legend",
+      "military",
+      "books"
+    ],
+    "remoteness": 1
   },
   {
     "id": "boston-shaw-memorial-forty-faces",
@@ -1462,6 +1815,57 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.24
   },
   {
+    "id": "boston-six-weeks-and-a-fair",
+    "title": "Six Weeks and a Fair",
+    "summary": "The Bunker Hill Monument stood half built for years. In 1840 Sarah Josepha Hale's circle held a fair here and raised the money in five days.",
+    "point": {
+      "at": {
+        "lat": 42.36015,
+        "lng": -71.0545
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Quincy Market rotunda, Faneuil Hall Marketplace, Boston, Massachusetts"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 86,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up into the dome of Quincy Market. In September eighteen forty, the floor up there was a fair. It finished the Bunker Hill Monument.\n\nThe monument's cornerstone was laid in eighteen twenty five. Then the money ran out. Then it ran out again. By eighteen thirty nine it stood on its hill in Charlestown at eighty five feet, not much more than a third of its planned height. Its backers were talking about making it shorter.\n\nMen had been raising money for it for years, and falling short. A magazine editor, Sarah Josepha Hale, had asked women to give a dollar each. Newspapers attacked her for it.\n\nSo in the summer of eighteen forty, a sewing circle Hale led tried something else. A women's fair. They wrote to women's groups across New England and down the coast, asking for crafts, art and things from their kitchens. Six weeks later, the fair opened up there.\n\nVisitors climbed a temporary staircase from the street. In five days, about thirty five thousand people came. Nearly forty percent of Boston. The goal was thirty thousand dollars. They made more than thirty three thousand.\n\nThe top stone went on the monument less than two years later.\n\nThe men had fifteen years. The women took six weeks.\n",
+    "teaser": "The men had fifteen years to pay for the monument. The women took six weeks.",
+    "detail": "The National Park Service article on the Bunker Hill Monument Fair gives the 1825 cornerstone, the failed subscription drives since 1825, Hale's campaign for women to give $1 and the newspaper criticism, the Ladies' Fund of only $2,937.90 by 1840, the sewing circle of Seaman's Aid Society members, the appeal to women's networks for crafts, art and kitchen specialties, \"Six weeks later\", the fair on the second floor of the Faneuil Hall Market (today Quincy Market) from 10 to 15 September 1840, the temporary stairway from the street, 35,600 visitors, nearly 40 percent of Boston's 1840 population, $33,067 against a $30,000 goal, and the top stone laid on 23 July 1842. The NPS article on building the monument gives the two stoppages for lack of money, the 85 feet reached by November 1835, 135 feet short of the 220 foot goal, and the proposal to cut it to about 160 feet. The NPS page on Hale says the sewing circle was \"led by Sarah Josepha Hale\". All three are NPS, so this is single-source by publisher. Hale also wrote Mary Had a Little Lamb (NPS Hale page); it is left out to keep one idea, and would make a good kids echo. \"Fifteen years\" counts from the 1825 cornerstone to the 1840 fair.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-six-weeks-and-a-fair/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 86.3,
+        "audioBytes": 1381816
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Sarah Josepha Hale",
+        "say": "SAIR-uh jo-SEE-fuh HAYL"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "quincy-market",
+      "bunker-hill-monument",
+      "sarah-josepha-hale",
+      "women",
+      "revolution",
+      "monuments"
+    ],
+    "remoteness": 0
+  },
+  {
     "id": "boston-state-house-dome-copper",
     "title": "What Is Under the Gold",
     "summary": "Before it was gold, the State House dome was copper, rolled at Paul Revere's mill.",
@@ -1543,7 +1947,57 @@ export const LIBRARY: readonly Echo[] = [
       "women",
       "family-business"
     ],
-    "remoteness": 0.2
+    "remoteness": 0.08
+  },
+  {
+    "id": "boston-the-boy-who-would-not-sing",
+    "title": "The Boy Who Would Not Sing",
+    "summary": "In 1863 a Black teenager in Boston refused to sing My Country, 'Tis of Thee at school, walked out, and joined the 54th Massachusetts.",
+    "point": {
+      "at": {
+        "lat": 42.3613,
+        "lng": -71.0663
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Corner of Cambridge and North Russell streets, West End, Boston, Massachusetts"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 84,
+    "minAge": 8,
+    "quality": 0.85,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "The National Park Service begins one soldier's story at this corner, on the fourteenth of February, eighteen sixty three.\n\nHis name was Eli George Biddle. He was about seventeen, a young Black man who worked as a painter. That day, at school, the class stood to sing My Country, 'Tis of Thee. Sweet land of liberty.\n\nEvery voice joined in but his. To him, the words did not ring true.\n\nAfter a confrontation with his teacher, he walked out, and kept walking, until he reached a recruiting office for a new regiment, the Fifty fourth Massachusetts. He signed up for three years. Only nine men had signed before him.\n\nThat summer, at Fort Wagner in South Carolina, his company was at the head of the column. His gun was blown out of his hands. He crawled back through a ditch under fire, and reached his comrades with a severe wound in his shoulder.\n\nSeventy five years later, at Gettysburg, he was one of ten old soldiers, Union and Confederate, chosen to shake hands across a stone wall. The Confederate across from him said: Many years ago you were shooting at me and I was shooting at you. Thank God we both missed.\n\nHe would not sing that it was a land of liberty. So he went and fought for it.\n",
+    "teaser": "Every voice in the class joined the song but one. He went and enlisted instead.",
+    "detail": "Everything here comes from one National Park Service story map, Eli George Biddle: Faithful until the End, so the echo is single-source. It gives his birth around 1846, his work as a painter in Boston, the stop dated 14 February 1863 at the corner of Cambridge and North Russell streets, the refusal to sing \"My Country Tis of Thee\", the confrontation with his teacher, the walk to a recruiting location and enlistment for three years with only nine before him, Company A at the head of the column at Fort Wagner on 18 July 1863, his gun blown from his hands, the crawl back through the ditch and the shoulder wound (from a later newspaper interview the map quotes), and the 1938 Gettysburg reunion where Franklin Roosevelt chose ten Union and Confederate veterans to shake hands across the wall, with the Confederate's words as Biddle recalled them. A reviewer should note the map does not say whether this corner was his school or the recruiting office; the script says only that the park service begins his story here. \"About seventeen\" follows from the birth year, which the map gives as approximate. The last line is the script's reading.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-boy-who-would-not-sing/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 84.4,
+        "audioBytes": 1351723
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Biddle",
+        "say": "BID-ul"
+      }
+    ],
+    "tags": [
+      "boston",
+      "west-end",
+      "beacon-hill",
+      "54th-massachusetts",
+      "civil-war",
+      "military",
+      "black-heritage-trail"
+    ],
+    "remoteness": 0
   },
   {
     "id": "boston-the-church-inside-the-church",
@@ -1585,6 +2039,161 @@ export const LIBRARY: readonly Echo[] = [
       "architecture"
     ],
     "remoteness": 0
+  },
+  {
+    "id": "boston-the-cloak-she-forgot",
+    "title": "The Cloak She Forgot",
+    "summary": "Louisa May Alcott took a house on Louisburg Square for her family. She died in 1888, two days after her father, never knowing he had gone.",
+    "point": {
+      "at": {
+        "lat": 42.35842,
+        "lng": -71.06876
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Louisburg Square, Beacon Hill, Boston, Massachusetts"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 78,
+    "minAge": 10,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look around Louisburg Square, at the tall brick houses facing the little fenced garden.\n\nIn the autumn of eighteen eighty five, Louisa May Alcott, the author of Little Women, took a large furnished house on this square for her family. Sunny, she wrote in her journal. Trees in front, good air, and friends near by.\n\nHer father, Bronson, was old and failing, and she nursed him here. But she was ill herself. In December eighteen eighty six, worn out, she went to a doctor's home in Roxbury to rest. She never lived here again.\n\nEarly in March eighteen eighty eight, her father was dying. She drove in to see him, and knew it was the last time. It was a warm day, almost like spring. When she got back into the carriage, she forgot to put on her fur cloak.\n\nThe next morning she woke with a terrible pain in her head.\n\nHer father died on the fourth of March. When his friends came to pay their respects, they were met at the door with the news. Louisa Alcott is dead.\n\nShe never knew that he had gone first.\n\nHer funeral was held in his rooms, here on the square.\n",
+    "teaser": "She went to say goodbye to her father on a warm day, and left her fur cloak behind.",
+    "detail": "Ednah D. Cheney's Louisa May Alcott: Her Life, Letters, and Journals (1889, Internet Archive) gives the decision in autumn 1885 to take a furnished house in Louisburg Square, Alcott's journal entry for September (\"a large house, furnished ... sunny, trees in front, good air, and friends near by\"), her winter there in the care of her father, her move to Dr. Lawrence's home at Dunreath Place, Roxbury, in December 1886 for \"the remainder of her life\", the last drive to see her father, the warm spring like day and the forgotten fur cloak, the pain in her head the next morning, her death at 3.30 p.m. on 6 March 1888 not knowing her father had died, the friends who came for her father met at the threshold with \"Louisa Alcott is dead\", and her funeral \"in her father's rooms at Louisburg Square\". The National Park Service page on Bronson Alcott independently gives his death in Boston on 4 March 1888. \"She never lived here again\" restates Cheney's \"for the remainder of her life\"; she still drove in to visit. The script does not say the cloak caused her illness; Cheney implies it. The house number (10) is widely given but not in either source, so the script does not use it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-cloak-she-forgot/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 78.3,
+        "audioBytes": 1253920
+      }
+    ],
+    "tags": [
+      "boston",
+      "beacon-hill",
+      "louisa-may-alcott",
+      "little-women",
+      "bronson-alcott",
+      "books",
+      "women"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "boston-the-ducklings-twins",
+    "title": "The Ducklings' Twins",
+    "summary": "A children's telling: the sculptor of Boston's bronze ducklings promised never to make copies. She made one exception, for Moscow.",
+    "point": {
+      "at": {
+        "lat": 42.35559,
+        "lng": -71.0697
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Make Way for Ducklings sculpture, Boston Public Garden, Boston, Massachusetts"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 83,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find Mrs. Mallard and her ducklings, marching in a line. Can you count them? There are eight. Jack, Kack, Lack, Mack, Nack, Ouack, Pack and Quack.\n\nThey come from a book called Make Way for Ducklings, by Robert McCloskey, from nineteen forty one. To draw the ducks, he bought a whole crate of real ones, and took them home to his apartment.\n\nThis sculpture was made by an artist named Nancy Schön, in nineteen eighty seven. And she made Mr. McCloskey a promise. No copies. Lots of people asked her for ducks of their own. She said no.\n\nExcept once.\n\nIn nineteen ninety, the wife of the American president, Barbara Bush, brought a special guest here with a group of children. Raisa Gorbachev, the wife of the leader of the Soviet Union. For a very long time, those two countries had not been friends.\n\nThe story goes that Mrs. Gorbachev loved the ducklings.\n\nSo in nineteen ninety one, a second family of bronze ducks was made, and set up in a park in Moscow, as a present to the children there. Mr. McCloskey said yes, as long as it was for children.\n\nPat Mrs. Mallard on the head. Her head is shiny from all the patting. Far away in Moscow, her twin is getting patted too.\n",
+    "teaser": "These ducklings have twins. They live in Moscow.",
+    "detail": "WBUR (31 March 2017) gives the nine bronze ducks and the eight ducklings' names, McCloskey's 1941 book, Nancy Schön's 1987 sculpture, the 1991 Moscow copy given by Barbara Bush to Raisa Gorbachev, their 1990 visit to the sculpture with a group of children after the Wellesley commencement, \"The story goes that Gorbachev admired the ducklings\", McCloskey's condition that it be \"for children and it's not political\", the plaque giving it to the children of the Soviet Union, and the Moscow park (Novodevichy). WBUR (27 November 2017) gives Schön's promise not to make copies, the one exception for Moscow, and her saying no to requests. NPR (2016) gives the crate of ducks McCloskey brought back to his studio apartment in New York to draw from, and his daughter's line that Mrs. Mallard's head is \"so shiny\". The two WBUR pieces are one publisher; NPR is independent for the book. \"Not been friends\" softens WBUR's \"decades-long divisions\" for children. Kids voice per casting.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/boston-the-ducklings-twins/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 82.6,
+        "audioBytes": 1322047
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Schön",
+        "say": "SHURN"
+      },
+      {
+        "written": "Raisa Gorbachev",
+        "say": "rah-EE-sah GOR-buh-chof"
+      }
+    ],
+    "tags": [
+      "boston",
+      "public-garden",
+      "make-way-for-ducklings",
+      "mccloskey",
+      "kids",
+      "books",
+      "statues"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "boston-the-harpies-of-the-shore",
+    "title": "The Harpies of the Shore",
+    "summary": "Around 1830 the navy was letting old sailing ships rot. A law student's poem, Old Ironsides, made this one the people's ship.",
+    "point": {
+      "at": {
+        "lat": 42.373,
+        "lng": -71.0559
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "USS Constitution, Charlestown Navy Yard, Charlestown, Boston, Massachusetts"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 64,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the ship. In eighteen thirty, she was nearly lost without a shot being fired.\n\nThe age of sail was ending, and steam was coming in. The navy was simply letting its old sailing ships fall apart. And there was a rumour that this one was going to be scrapped.\n\nAn unknown twenty two year old law student, Oliver Wendell Holmes, wrote a poem about her, and a Boston newspaper printed it. He called it Old Ironsides.\n\nIts second verse ends: The harpies of the shore shall pluck the eagle of the sea.\n\nNewspapers around the country picked it up. People in Boston, and then across the nation, rallied to save her.\n\nAs one historian puts it, from then on she stopped being the navy's ship, and started being the people's ship.\n\nShe is still the oldest commissioned warship afloat in the world.\n\nThe navy had cannon. The people had a poem. The poem won.\n",
+    "teaser": "The navy was finished with her. A twenty two year old with a poem was not.",
+    "detail": "Prologue magazine (National Archives, spring 2005), interviewing the historian David Fitz-Enz, gives 1830, the waning age of sail, the navy letting old sailing ships deteriorate, the unknown 22 year old law student Holmes publishing the poem in a Boston newspaper, the closing lines of its second stanza, newspapers around the country picking it up, and \"Old Ironsides stopped being the Navy's ship and started being the people's ship\". WBUR (2012), quoting Matthew Brenckle of the USS Constitution Museum, independently gives the 1830s rumour that the navy would scrap the ship and the poem rallying Boston and then the nation, and calls her the oldest commissioned warship afloat in the world. Inspo evidence is \"site\": the poem is about this ship, which is in view; Holmes wrote it elsewhere. The poem itself (1830) is in the public domain. \"The navy had cannon\" is the script's own turn of phrase.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-harpies-of-the-shore/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 64.4,
+        "audioBytes": 1030730
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Oliver Wendell Holmes",
+        "say": "OL-iv-er WEN-dul HOHMZ"
+      }
+    ],
+    "inspo": {
+      "kind": "inspiration",
+      "evidence": "site"
+    },
+    "tags": [
+      "boston",
+      "charlestown",
+      "navy-yard",
+      "uss-constitution",
+      "old-ironsides",
+      "holmes",
+      "poems",
+      "military",
+      "books"
+    ],
+    "remoteness": 0.26
   },
   {
     "id": "boston-the-house-that-stayed-useful",
@@ -1759,6 +2368,49 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "boston-the-monument-that-names-nobody",
+    "title": "The Monument That Names Nobody",
+    "summary": "The Public Garden's oldest monument celebrates ether anaesthesia. Its inscription names no one, because three men claimed it.",
+    "point": {
+      "at": {
+        "lat": 42.3545,
+        "lng": -71.0711
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Ether Monument, Boston Public Garden, Boston, Massachusetts"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 65,
+    "minAge": 8,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the tall stone monument, the oldest in the Public Garden. It went up in eighteen sixty eight, about forty feet of it, to celebrate ether. Twenty two years earlier, at Massachusetts General Hospital, ether had been used in public to put a patient under for surgery.\n\nRead the inscription. It praises the discovery for the relief of human suffering.\n\nNow look for a name.\n\nThere isn't one.\n\nBy then, three men had claimed the discovery. William Morton, the dentist who gave the ether that day. Charles Jackson, a doctor. And Horace Wells, a Connecticut dentist, who had tried laughing gas in the same operating theatre, and failed.\n\nTheir claims were never sorted out. The fight ravaged all of their lives.\n\nIn Hartford, Connecticut, there is a statue of Horace Wells. Its inscription calls him the discoverer of anaesthesia.\n\nBoston decided not to decide.\n\nForty feet of stone, and not one name on it.\n",
+    "teaser": "Forty feet of stone in honour of a discovery. Look for the discoverer's name.",
+    "detail": "The Boston Globe (2014) gives the Ether Monument commemorating the discovery, Wells as a Connecticut dentist who tried nitrous oxide until a disastrous demonstration in the same amphitheater, Morton's later demonstration, Wells and Dr. Charles Jackson making claims \"that were never sorted out\", the aftermath that \"ravaged all of their lives\", the Hartford statue inscribed \"Horace Wells, discoverer of anesthesia\", and that the Boston monument's inscription \"praises the discovery for its relief of human suffering, but mentions no names at all\". The Globe (2024) gives 1868 as the date, the oldest monument in the Public Garden, about 40 feet tall, and the 1846 demonstration. One flag: the 2024 piece also says the monument \"honors the Boston dentist\" credited with the first public use; the 2014 piece and the script follow the inscription, which names no one. Both are Globe articles, so this is single-source by publisher. \"Boston decided not to decide\" is the script's reading, not a sourced claim. The position needs checking on site.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-monument-that-names-nobody/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 65.4,
+        "audioBytes": 1047448
+      }
+    ],
+    "tags": [
+      "boston",
+      "public-garden",
+      "ether-monument",
+      "anaesthesia",
+      "medicine",
+      "monuments"
+    ],
+    "remoteness": 0.08
+  },
+  {
     "id": "boston-the-poem-that-built-a-statue",
     "title": "The Poem That Built a Statue",
     "summary": "Cyrus Dallin won the commission for this Paul Revere statue in 1884, at twenty-three. It went up in 1940, after he wrote a poem.",
@@ -1804,6 +2456,57 @@ export const LIBRARY: readonly Echo[] = [
       "paul-revere",
       "statues",
       "sculpture"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "boston-the-reed-that-stuck",
+    "title": "The Reed That Stuck",
+    "summary": "On 2 June 1875, in an attic on Court Street, a stuck reed and a cross assistant gave Alexander Graham Bell the telephone's first sound.",
+    "point": {
+      "at": {
+        "lat": 42.36,
+        "lng": -71.0596
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Site of 109 Court Street, City Hall Plaza, Government Center, Boston, Massachusetts"
+    },
+    "category": "firsts",
+    "format": "short",
+    "durationS": 74,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look for the marker near City Hall. The building it remembers is gone. So is that end of Court Street.\n\nThe telephone made its first sound here. Not a word. A twang.\n\nIn eighteen seventy five, Alexander Graham Bell was using two attic rooms at one hundred and nine Court Street, above Charles Williams's workshop. Freezing in winter, his assistant remembered, and unbearably hot in summer.\n\nBell did not set out to invent the telephone. He set out to build a better telegraph.\n\nOn the afternoon of the second of June, his assistant, Thomas Watson, was in the other room with a steel reed that would not start. So he plucked it. Then he gave it several more hard plucks, and by his own account he said what he thought of it, in vivid shop language.\n\nIn the next room, Bell had a receiver pressed to his ear. He heard the reed.\n\nHe came running out in great excitement. The plucked reed had made its own current, and sent its sound down the wire. In Watson's words, it was the first real sound that had ever been transmitted electrically.\n\nThe telephone began with a stuck reed, and a man losing his temper with it.\n",
+    "teaser": "The telephone's first sound was not a word. It was a twang.",
+    "detail": "Thomas A. Watson's own account, in his 1915 speech now in the Library of Congress Bell papers, gives the attic of 109 Court Street where Williams's shop was, the two rooms Bell used as his laboratory, freezing in winter and unbearably hot in summer, the afternoon of 2 June 1875, the reed that was not vibrating and the several vigorous plucks \"in vivid shop language\", Bell rushing out in great excitement, and the snapped reed acting as a generator. Bell's 1911 speech, in the same collection, independently gives \"the plucking of reeds that went on, on that celebrated June 2, 1875\" and the building as Charles Williams, Jr.'s at 109 Court Street. Both are first person accounts from the two men involved, so they are not fully independent of each other; WBUR (2026, MIT Museum curator) supplies the better telegraph line and the marker near City Hall. \"Swearing\" is avoided: Watson's phrase is \"vivid shop language\", and the script keeps it. The exact position of the marker was not checked on site.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-reed-that-stuck/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.4,
+        "audioBytes": 1192062
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Watson",
+        "say": "WOT-sun"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "government-center",
+      "telephone",
+      "bell",
+      "watson",
+      "inventions",
+      "firsts"
     ],
     "remoteness": 0
   },
@@ -2096,7 +2799,7 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "long-wharf"
     ],
-    "remoteness": 0.24
+    "remoteness": 0.19
   },
   {
     "id": "boston-the-whites-of-their-eyes",
@@ -2141,6 +2844,57 @@ export const LIBRARY: readonly Echo[] = [
       "quotations"
     ],
     "remoteness": 0.47
+  },
+  {
+    "id": "boston-the-wire-watson-kept",
+    "title": "The Wire Watson Kept",
+    "summary": "The first sentence ever spoken by telephone went down a wire in a Boston boarding house. The man who heard it took the wire home.",
+    "point": {
+      "at": {
+        "lat": 42.35355,
+        "lng": -71.0615
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Avenue de Lafayette, site of 5 Exeter Place, Downtown Crossing, Boston, Massachusetts"
+    },
+    "category": "firsts",
+    "format": "short",
+    "durationS": 75,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the plaque on Avenue de Lafayette. The address it remembers no longer exists.\n\nIn March eighteen seventy six, Alexander Graham Bell had his laboratory in a boarding house here, at number five, Exeter Place. His assistant, Thomas Watson, was in the next room.\n\nOn the tenth of March, Bell spoke into the instrument, and Watson heard him through the wire. Mister Watson, come here. I want to see you.\n\nThe first complete sentence ever sent by telephone was an errand.\n\nWatson went at once.\n\nLater that day, Bell wrote to his father. The day is coming, he said, when wires will be laid on to houses just like water and gas, and friends will talk to each other without leaving home.\n\nWatson kept the wire. When the laboratory was cleared out in eighteen seventy seven, he took it down, wrote on it which two rooms it had joined, and locked it in a safe. It stayed there for more than thirty five years.\n\nLook at the people walking past you, talking into their phones.\n\nWatson kept the first piece of the wire. They are all on the rest of it.\n",
+    "teaser": "The first sentence on the telephone was an errand. The wire it travelled on went into a safe.",
+    "detail": "The Library of Congress Information Bulletin (April 1999) describes Bell's notebook entry of 10 March 1876, his assistant Watson in the next room, the words \"Mr. Watson, come here, I want to see you\" as Bell recorded them, and his letter to \"Papa\" later that day predicting wires laid on to houses like water and gas. Watson's 1915 speech, in the Library of Congress Bell papers, gives the boarding house at number 5 Exeter Place, the sentence sent from Bell's laboratory to his bedroom, \"I am sure that I went at once\", and the wire he took down on 8 June 1877, inscribed and kept in a safe until \"a year or two ago\", that is about 1913, hence \"more than thirty five years\". Watson remembered the words as \"Watson, come here, I want you\"; the script uses Bell's notebook wording, and a reviewer should know the two differ. WBUR (2026) gives the Avenue de Lafayette plaque and that the address no longer exists. The final line is the script's own reading of the scene, not a sourced claim.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-the-wire-watson-kept/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 75.4,
+        "audioBytes": 1207109
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Watson",
+        "say": "WOT-sun"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "downtown-crossing",
+      "telephone",
+      "bell",
+      "watson",
+      "inventions",
+      "firsts"
+    ],
+    "remoteness": 0.18
   },
   {
     "id": "boston-the-wrong-hill",
@@ -15828,7 +16582,157 @@ export const LIBRARY: readonly Echo[] = [
       "cuban",
       "gato"
     ],
-    "remoteness": 1
+    "remoteness": 0.63
+  },
+  {
+    "id": "key-west-brought-by-a-wreck",
+    "title": "Brought by a Wreck",
+    "summary": "William Wall reached Key West in 1824 because his ship was wrecked. He got rich on salvaged cargo. Wall Street is named for him.",
+    "point": {
+      "at": {
+        "lat": 24.55999,
+        "lng": -81.80666
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Wall and Company warehouse, Wall Street and Exchange Street, Key West, Florida"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 60,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the brick warehouse at the corner of Wall Street and Exchange Street. It was one of the earliest brick buildings on the island.\n\nWall Street is named for the man who founded the company, William Wall.\n\nHe was an Englishman. And in eighteen twenty four he came to Key West for a very Key West reason. He was shipwrecked.\n\nHe stayed. And he made his fortune dealing in salvaged goods.\n\nHe pioneered cigar making here too, owned an early printing office, and held shares in the local salt company. He was the first man on the island to make a substantial fortune.\n\nHe left before the Civil War, and died in New York in eighteen sixty six. This warehouse went up after him, in eighteen seventy nine. And it carried on the trade. It stored cargoes auctioned off by order of the federal admiralty court.\n\nA shipwreck brought him here. Other people's shipwrecks made him rich.\n",
+    "teaser": "He arrived the way a lot of cargo did. By shipwreck.",
+    "detail": "From the Historic American Buildings Survey record of the Wall and Company Warehouse (HABS FL-175): one of the earliest brick buildings on the island, built 1879 with work in 1886; Wall Street named for the company's founder, William H. Wall, an Englishman who came to Key West in 1824 after being shipwrecked and made a fortune dealing in salvaged goods; his cigar making, printing office, salt company shares and real estate; the first to make a substantial fortune; left before the Civil War, died in New York in 1866; the building used as a storehouse for cargoes auctioned by order of the federal admiralty. \"Court\" is added to \"federal admiralty\" for the ear. \"Other people's shipwrecks\" is the inference that salvaged goods came from wrecked ships.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-brought-by-a-wreck/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 60.1,
+        "audioBytes": 962603
+      }
+    ],
+    "tags": [
+      "key-west",
+      "wreckers",
+      "salvage",
+      "mallory-square",
+      "wall-street"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "key-west-built-for-the-pirate-hunters",
+    "title": "Built for the Pirate Hunters?",
+    "summary": "Legend says the government built the Oldest House for Commodore Porter's pirate hunters. A carpenter's 1829 advertisement says otherwise.",
+    "point": {
+      "at": {
+        "lat": 24.5578,
+        "lng": -81.8043
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Oldest House (Captain Francis Watlington House), 322 Duval Street, Key West, Florida"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 54,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the three dormer windows in the roof of the house at three twenty two Duval Street. They are not the same size.\n\nPeople have long called this the oldest house in Key West. And there is a legend about who built it.\n\nThe story goes that the United States government put it up, as quarters for the naval officers of Commodore David Porter's Anti-Pirate Squadron.\n\nIt is a good story. But in eighteen twenty nine, a man named Richard Cussans placed an advertisement in the Key West Advertiser. He was a carpenter and joiner. The county records show he owned land on Whitehead Street.\n\nAnd the house is said to have been moved here from Whitehead Street, by Cussans, in eighteen thirty two.\n\nLater it became the home of Captain Francis Watlington. He was a fine pilot. He commanded merchant ships, and wrecking vessels as well.\n\nSo the pirate hunters may never have slept here. But a wrecker did.\n",
+    "teaser": "The pirate hunters may never have slept here. A wrecker did.",
+    "detail": "From the Historic American Buildings Survey record (HABS FL-192, 1966 and 1967): \"traditionally called the oldest house in Key West\", said to have been built as early as 1825 and moved by Richard Cussans from Whitehead Street in 1832; the legend of the Anti-Pirate Squadron quarters; Cussans's 1829 advertisement in the Key West Advertiser as a carpenter and joiner, and his Whitehead Street property; the dormers, now unequal in size; Captain Watlington as a pilot in command of merchant ships and wrecking vessels. The record does not say outright that Cussans built the house; the script says only what the advertisement and the deeds show and lets the listener draw the line.",
+    "certaintyNote": "The Historic American Buildings Survey (1967) records the story that the house was built by the government for officers of Commodore Porter's Anti-Pirate Squadron as \"one legend\", and sets against it an 1829 advertisement by Richard Cussans as a carpenter and joiner and his ownership of land on Whitehead Street. The script tells it as a legend and gives the evidence; the Watlington facts are documented.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/key-west-built-for-the-pirate-hunters/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 54.3,
+        "audioBytes": 870234
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Cussans",
+        "say": "KUSS-ens"
+      }
+    ],
+    "tags": [
+      "key-west",
+      "old-town",
+      "duval-street",
+      "pirates",
+      "wreckers",
+      "folklore"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "key-west-every-factory-a-club",
+    "title": "Every Factory a Club",
+    "summary": "In 1892 a Key West organiser said every Cuban on the island belonged to a revolutionary club, and every cigar factory was one.",
+    "point": {
+      "at": {
+        "lat": 24.55528,
+        "lng": -81.8028
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Duval Street by the San Carlos Institute, Key West, Florida"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on Duval Street, and picture this island in the days of the cigar factories.\n\nThat summer, in Chicago, a man named Socorro told a reporter how a revolution was being organised. Until recently, he had been secretary of the council of Cuban club presidents here, in Key West.\n\nKey West, he said, was so well organised that every Cuban here belonged to one club or more. And every cigar factory was a club.\n\nEven the women had formed clubs.\n\nThe clubs spread the word, bought arms, and enlisted men, ready to move at a moment's notice.\n\nAt their head, he said, was José Martí. As a schoolboy, the paper said, Martí took the blame alone for an essay he and a friend had written for Cuban independence, and was put to work in irons in the streets of Havana.\n\nMartí, he said, would not waste lives. He was waiting for the word.\n\nThree years later, Martí was killed on the field of battle in Cuba.\n\nBut picture it. A revolution organised not in barracks, but in the rooms where people rolled cigars.\n",
+    "teaser": "A revolution organised in the rooms where people rolled cigars.",
+    "detail": "From the Pittsburg Dispatch of 28 July 1892 (a Chicago interview with K. G. Socorro, until recently secretary of the Council of Presidents of Cuban clubs at Key West): every Cuban in Key West in one or more clubs and every cigar factory a club; women's clubs in Key West; the clubs' objects (propaganda, arms, enlistment, readiness); Martí at the head of the revolutionary party, unwilling to make a useless sacrifice of life, waiting for the word; and the paper's account of Martí's arrest as a boy over an essay for independence, the chain gang and the streets of Havana. The paper gives his age then as 12; other accounts put the arrest later, so the script says \"as a schoolboy\" and attributes it to the paper. Martí's death on the field of battle is from the New-York Tribune of 3 November 1895. Nothing in either source names a building in Key West; San Carlos is only the listening spot.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-every-factory-a-club/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 72,
+        "audioBytes": 1152774
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "José Martí",
+        "say": "ho-SAY mar-TEE"
+      },
+      {
+        "written": "Socorro",
+        "say": "so-KOR-oh"
+      }
+    ],
+    "inspo": {
+      "kind": "connection",
+      "evidence": "area"
+    },
+    "tags": [
+      "key-west",
+      "jose-marti",
+      "cuba",
+      "cigar-makers",
+      "duval-street",
+      "1890s"
+    ],
+    "remoteness": 0
   },
   {
     "id": "key-west-ice-from-the-north",
@@ -15868,7 +16772,184 @@ export const LIBRARY: readonly Echo[] = [
       "ice",
       "food"
     ],
+    "remoteness": 0
+  },
+  {
+    "id": "key-west-limes-by-air",
+    "title": "Limes by Air",
+    "summary": "In 1949 Key limes were flown to Cincinnati for one birthday pie. By 1955 visitors were writing to the paper to beg for the recipe.",
+    "point": {
+      "at": {
+        "lat": 24.55806,
+        "lng": -81.80447
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Duval Street at Caroline Street, Key West, Florida"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 72,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Hold a slice of Key lime pie in your hand, if you have it. Listen to this while you eat it.\n\nIn August nineteen forty nine, the Key West Citizen ran a small item on its front page. An order had come in that morning for three dozen Key limes, to be sent by air express to Cincinnati, Ohio.\n\nThe woman who ordered them had visited Key West, and fallen in love with the lime pie. Now she wanted to bake one for her mother's seventy second birthday.\n\nThe paper said Key lime pie might some day replace the birthday cake.\n\nSix years later, a letter came to the paper from Oklahoma City. A couple had been introduced to Key lime pie on holiday here. Back home, she wrote, they could not find it in a restaurant, or even a recipe close to it. Could the paper send one, as it is baked in Key West? She had enclosed a stamped envelope.\n\nThe columnist passed the plea on, to a chef, or to any housewife who turned out a really good one.\n\nSome recipes travel in cookbooks. This one travelled by air mail, and by pleading letter.\n",
+    "teaser": "Three dozen limes, by air, for one birthday.",
+    "detail": "From the Key West Citizen: 18 August 1949, page 1 (\"Lime Pie Will Replace Birthday Cake\": three dozen Key limes air expressed to a former visitor in Cincinnati for her mother's 72nd birthday pie) and 14 September 1955, page 3 (a column printing a letter from Oklahoma City asking for the recipe \"as it is baked in Key West\", with a self addressed stamped envelope, and the columnist's appeal to a chef or \"any housewife\"). The private people named in the papers are not named in the script. Neither article says where the pie came from or how it was made; the echo is about how far its reputation travelled, not its origin, which is disputed.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-limes-by-air/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 71.5,
+        "audioBytes": 1144415
+      }
+    ],
+    "tags": [
+      "key-west",
+      "key-lime-pie",
+      "food",
+      "duval-street",
+      "1940s",
+      "1950s"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "key-west-never-armed",
+    "title": "Never Armed",
+    "summary": "East Martello was begun in 1862 to guard Key West in the Civil War. It was never finished, and no gun was ever mounted on it.",
+    "point": {
+      "at": {
+        "lat": 24.55194,
+        "lng": -81.755
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "East Martello Tower, South Roosevelt Boulevard, Key West, Florida"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 56,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the square brick tower in the middle, behind the low walls. On the side facing the sea, its walls are more than eight feet thick.\n\nWork began in eighteen sixty two, in the Civil War, because the Union feared Confederate forces would attack the island.\n\nIts job was to guard the land side of Fort Taylor, against an enemy landing. Four towers were planned. Only two were begun.\n\nThen, in eighteen sixty six, the orders came to stop. It was never finished. No gun was ever mounted on it.\n\nThe reason was the war itself. New rifled artillery had come into use, and towers like this one were obsolete.\n\nIt stood empty and unarmed for a long time. In nineteen fifty, it opened as a museum.\n\nSo the fort was out of date before it was finished. And what it guards now is a collection.\n",
+    "teaser": "A fort, built against a war, that the same war made useless.",
+    "detail": "From the National Register of Historic Places nomination for East Martello Tower (1972): begun in 1862 out of fear of a Confederate attack, to secure the island and the land side of Fort Taylor against landing forces; four towers planned and two begun; work suspended in 1866, never completed and never armed, the type proven obsolete by rifled artillery in the Civil War; a square central tower 56 feet on a side with seaward walls 8 feet 4 inches thick; used for defence purposes in later wars, declared surplus in 1944, and opened as the Key West Art and Historical Society's museum in 1950. \"Stood empty\" compresses the later wartime uses; the script says only that it stood unarmed. Robert the Doll is kept in this museum; that legend is not in this echo because no source reachable from this session covered it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-never-armed/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55.8,
+        "audioBytes": 894057
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Martello",
+        "say": "mar-TELL-oh"
+      }
+    ],
+    "tags": [
+      "key-west",
+      "civil-war",
+      "military",
+      "fort",
+      "martello",
+      "museum"
+    ],
     "remoteness": 1
+  },
+  {
+    "id": "key-west-not-once",
+    "title": "Not Once",
+    "summary": "Key West has kept weather records since 1871. In all that time there is no record of frost, ice, sleet or snow here.",
+    "point": {
+      "at": {
+        "lat": 24.5468,
+        "lng": -81.7972
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Southernmost Point buoy, Whitehead and South Streets, Key West, Florida"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 49,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand by the buoy and look at the sea. Feel the air on your skin.\n\nWeather records here go back to eighteen seventy one. Key West is one of the longest running climate record sites in the United States.\n\nIn all that time, there is no record of frost here. No ice. No sleet. No snow.\n\nThe coldest it has ever been is forty one degrees Fahrenheit. That has happened twice. In January eighteen eighty six, and in January nineteen eighty one.\n\nIn January twenty ten, a cold wave came close. Forty two degrees. Seven nights in a row below fifty, the longest such streak the weather office had ever recorded here.\n\nUp the Keys, ice has been reported. Here, not once.\n",
+    "teaser": "The coldest it has ever been here is forty one degrees.",
+    "detail": "From the National Weather Service Key West office: its climate page (continuous records back to 1871; no record of frost, ice, sleet or snow in Key West, though ice has been reported in the Upper Keys) and its statement on the January 2010 cold wave (all time record low of 41 degrees on 12 January 1886 and 13 January 1981; 42 degrees on 11 January 2010, the second coldest on record; seven consecutive days with lows below 50, the longest such streak recorded to that date). The statement dates temperature records from 1873; the climate page dates the record from 1871, which is what the script uses. Whether the 2010 streak has been matched since was not checked, so the script says \"had ever recorded\" as of then.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-not-once/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 49.3,
+        "audioBytes": 789985
+      }
+    ],
+    "tags": [
+      "key-west",
+      "southernmost-point",
+      "weather",
+      "climate",
+      "sea"
+    ],
+    "remoteness": 0.55
+  },
+  {
+    "id": "key-west-the-chickens-world",
+    "title": "The Chickens' World",
+    "summary": "Key West's chickens were once backyard birds. When families let them go, an island with no predators let them multiply.",
+    "point": {
+      "at": {
+        "lat": 24.55699,
+        "lng": -81.78878
+      },
+      "triggerRadiusKm": 0.1,
+      "place": "Bayview Park, Truman Avenue, Key West, Florida"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 44,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look around. Can you see a chicken? Can you hear a rooster?\n\nIn Key West, whole chicken families cross the road together. They are everywhere.\n\nLong ago, lots of families here kept chickens at home. From the early nineteen hundreds until around World War Two.\n\nThen it got easy to buy eggs and chicken at the supermarket. So people let their chickens loose.\n\nAnd on a small island, two miles by four, with no wild animals to hunt them, the chickens did very well.\n\nIn nineteen ninety eight, a big hurricane blew them all over the island. They have been multiplying ever since.\n\nThe city once had a chicken catcher. He quit.\n\nSo now it is the chickens' world. We are just living in it.\n",
+    "teaser": "Can you hear a rooster? You probably can.",
+    "detail": "From CBS News (Cristian Benavides, 27 July 2024), quoting Corey Malcolm, lead historian of the Florida Keys History Center: chicken raising from the early 1900s to around the Second World War, with Cuban cockfighting traditions behind it; supermarkets made home flocks unnecessary and birds were let loose on a two by four mile island with no natural predators; Florida banned cockfighting in 1986 and roosters were set free; Hurricane Georges (spelled \"George\" in the article) scattered them in 1998; a city employed chicken catcher quit in the 2000s after a backlash. Cockfighting is left out of a children's script. The closing line is the article's own.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/key-west-the-chickens-world/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 43.6,
+        "audioBytes": 698034
+      }
+    ],
+    "tags": [
+      "key-west",
+      "chickens",
+      "animals",
+      "roosters",
+      "family"
+    ],
+    "remoteness": 0.72
   },
   {
     "id": "key-west-the-fort-that-lost-the-sea",
@@ -15909,7 +16990,110 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "hurricane"
     ],
-    "remoteness": 1
+    "remoteness": 0.47
+  },
+  {
+    "id": "key-west-the-gold-telegram",
+    "title": "The Gold Telegram",
+    "summary": "When the first train reached Key West in 1912, children threw flowers and Henry Flagler was handed a telegram made of gold.",
+    "point": {
+      "at": {
+        "lat": 24.5611,
+        "lng": -81.8
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Historic Seaport, Key West Bight, Key West, Florida"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 49,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Imagine this. Cannons booming. Whistles blowing. Bells ringing. Thousands of people cheering.\n\nIt all happened here, in January nineteen twelve, on the morning the first passenger train arrived in Key West.\n\nBefore that, this island was cut off from the mainland. Then Henry Flagler built a railroad that leaped from island to island, all the way to Key West.\n\nWhen the trains came in, children sang songs, and threw flowers in front of the parade.\n\nAnd the railroad workers gave Mister Flagler a present. A telegram. But not on paper. It was made of gold, exactly the size of a telegraph form, and a sixteenth of an inch thick. It came in a box of solid gold.\n\nImagine getting a letter you could never fold.\n",
+    "teaser": "A telegram you could never fold.",
+    "detail": "From the New York Sun of 23 January 1912 (Key West dispatch of the 22nd): cannon, whistles and bells, thousands cheering, the island city bound to the mainland by Flagler's oversea railroad, the first passenger train arriving that morning, children singing patriotic songs and throwing flowers in the path of the parade, and the gold telegram, the exact size of a telegraph blank and a sixteenth of an inch thick. The OCR gives a number of children that cannot be read (\"tine thousand\"), so the script gives none. The Daytona Daily News of 23 January 1912 independently describes the testimonial from the Florida East Coast railroad's employees as engraved on a plate of gold in a casket of solid 18 karat gold. \"Leaped from island to island\" is from the HALS record of the Overseas Highway, which carried trains until 1935. Where the trains stopped (Trumbo Point) is in the header only.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/key-west-the-gold-telegram/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 48.5,
+        "audioBytes": 776611
+      }
+    ],
+    "tags": [
+      "key-west",
+      "overseas-railroad",
+      "flagler",
+      "trains",
+      "family"
+    ],
+    "remoteness": 0.27
+  },
+  {
+    "id": "key-west-the-grave-nobody-was-shown",
+    "title": "The Grave Nobody Was Shown",
+    "summary": "In 1940 a Key West X-ray technician was found to have kept a young woman's body for years. He was never tried. She was reburied in secret.",
+    "point": {
+      "at": {
+        "lat": 24.55725,
+        "lng": -81.79371
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Key West Cemetery, Frances Street side, Key West, Florida"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 16,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on the sidewalk and look in at the cemetery's vaults.\n\nIn nineteen thirty one, a young woman named Elena Hoyos died. She had been treated for tuberculosis at the Marine Hospital in Key West. An X-ray technician there, a man named Karl Tanzler von Cosel, had fallen in love with her.\n\nAfter she died, with her family's permission, he paid for a vault for her in this cemetery. He visited it regularly.\n\nIn October nineteen forty, her family grew suspicious. A search warrant was issued. And her body was found in his house, where, police said, it had been for seven years.\n\nHe did not deny taking her. He told reporters he had promised to take care of her, and that he had wanted to see whether life could be restored.\n\nHe was charged with maliciously disturbing the vault. But a grand jury did not indict him. The statute of limitations, it said, barred prosecution. He was never tried.\n\nThat December, before dawn, her sister buried her again. The new grave was not revealed.\n\nIt was kept secret so that he could not find her.\n",
+    "teaser": "Her sister buried her again, before dawn, and told no one where.",
+    "detail": "Told from the record and the 1940 reporting only. He was charged (a warrant for malicious and wanton disfigurement of a burial vault, reported by the Associated Press as maliciously disturbing the contents of a tomb and by the United Press as mutilating a vault), admitted taking the body, and was not indicted because the time limit had passed; so the conviction status is \"alleged\", and the script says what he was charged with, what he said, and how it ended. The reports' details about the state of the body, its reconstruction and the public viewing at a funeral home are left out on purpose: the echo is about her, the town and the ending, not about the remains. Everyone named died long ago; her relatives are not named. The search warrant and the family's suspicion rest on the United Press report quoting the sheriff's office; the Key West Citizen says county officials had been investigating reports of grave robbing.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/key-west-the-grave-nobody-was-shown/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 67.7,
+        "audioBytes": 1084229
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Hoyos",
+        "say": "OY-ohs"
+      },
+      {
+        "written": "Tanzler von Cosel",
+        "say": "TANTS-ler fon KO-zel"
+      }
+    ],
+    "tags": [
+      "key-west",
+      "true-crime",
+      "cemetery",
+      "von-cosel",
+      "elena-hoyos"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "alleged",
+      "reviewedBy": "James (owner), approved 2026-11-12",
+      "reviewedAt": "2026-11-12",
+      "contentWarning": "This echo is about a man who took a young woman's body from her grave in Key West. Nothing is described in detail."
+    },
+    "remoteness": 0.47
   },
   {
     "id": "key-west-the-guest-who-was-not-there",
@@ -15961,7 +17145,92 @@ export const LIBRARY: readonly Echo[] = [
       "legend",
       "wreckers"
     ],
-    "remoteness": 1
+    "remoteness": 0
+  },
+  {
+    "id": "key-west-the-house-that-came-by-boat",
+    "title": "The House That Came by Boat",
+    "summary": "A two storey house on Eaton Street was built in the Bahamas, taken apart and put back together in Key West in 1847.",
+    "point": {
+      "at": {
+        "lat": 24.5588,
+        "lng": -81.8006
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Captain John Bartlum House, 730 Eaton Street, Key West, Florida"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 54,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the house at seven thirty Eaton Street. Two storeys, with long porches on two sides.\n\nIt was not built here.\n\nIt was built on Green Turtle Key, in the Bahamas. Then it was taken apart, brought across the water, and put back together in Key West, in eighteen forty seven.\n\nThe man who moved it was Captain John Bartlum. His family were Loyalists, who had settled in the Bahamas at the time of the American Revolution.\n\nWhen it went up, the house had no stairs inside. To reach the floor above, you went out onto the porch and climbed.\n\nBartlum had, the survey says, the barest rudiments of an education. He became a shipbuilder anyway, and built the only clipper ship ever built in Florida.\n\nWhich seems fair. He had already moved a house by sea.\n",
+    "teaser": "This house had already been somewhere else.",
+    "detail": "From the Historic American Buildings Survey record of the house (HABS FL-185, 1967): built on Green Turtle Key in the Bahamas before 1847, dismantled, brought to Key West and reconstructed in 1847 and 1848; one of two houses known to have come this way (HABS records the other, at 408 William Street, as local tradition). Two storeys, verandas on two sides, no interior stairways at first: the stairs were on the porches. Bartlum's Loyalist family and the only clipper ship built in Florida, the Stephen R. Mallory, are from the same record. \"By sea\" is inferred from a house moved from the Bahamas to an island; the record says \"brought\". The survey describes the house as it was in 1967; whether it is still a private home today was not checked.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-the-house-that-came-by-boat/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.6,
+        "audioBytes": 859367
+      }
+    ],
+    "tags": [
+      "key-west",
+      "conch-house",
+      "bahamas",
+      "old-town",
+      "eaton-street"
+    ],
+    "remoteness": 0.2
+  },
+  {
+    "id": "key-west-the-judge-and-the-wreckers",
+    "title": "The Judge and the Wreckers",
+    "summary": "Judge James Webb, believed to have built this house, made wrecking a legitimate business with salvage law. A Texas county bears his name.",
+    "point": {
+      "at": {
+        "lat": 24.5576,
+        "lng": -81.805
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Webb-Porter House, 429 Caroline Street, Key West, Florida"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 54,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the house at four twenty nine Caroline Street. It is believed to date from eighteen thirty eight, and to have been built by a judge.\n\nJames Webb was the first federal judge of the Southern District of the Florida Territory. He sat here, in Key West, from eighteen twenty nine to eighteen thirty nine.\n\nThis was a town that lived on salvage, on what could be saved from ships in trouble. And Webb brought in important laws to regulate it. That, says the government's survey of his house, is what made wrecking a legitimate business in Florida.\n\nThen he left for Texas. He served the Republic of Texas, and then the State.\n\nLater this house became the birthplace of Dr. Joseph Yates Porter, Florida's first public health officer, who fought yellow fever.\n\nBut the judge is the one with a county. Webb County, Texas, is named for him.\n",
+    "teaser": "A county in Texas is named for a Key West judge.",
+    "detail": "From the Historic American Buildings Survey record of the Webb-Porter House (HABS FL-188): believed to date to 1838 and to have been built by Judge James Webb, first federal judge of the Southern District of the Florida Territory, judge from 1829 to 1839, who introduced laws regulating salvage, \"thereby making wrecking a legitimate business in Florida\"; his later service in the Republic and State of Texas, and Webb County named for him; the house better known as the birthplace of Dr. Joseph Yates Porter, Florida's first public health officer (1889 to 1917), known for controlling yellow fever. \"A town that lived on salvage\" is an inference from the record's account of salvage law and wrecking; the HABS records of Wall and Company and Captain Watlington support it, but this record alone does not say it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-the-judge-and-the-wreckers/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 53.9,
+        "audioBytes": 863128
+      }
+    ],
+    "tags": [
+      "key-west",
+      "wreckers",
+      "salvage-law",
+      "caroline-street",
+      "judge-webb",
+      "texas"
+    ],
+    "remoteness": 0
   },
   {
     "id": "key-west-the-key-west-uniform",
@@ -16001,7 +17270,99 @@ export const LIBRARY: readonly Echo[] = [
       "little-white-house",
       "presidents"
     ],
-    "remoteness": 1
+    "remoteness": 0
+  },
+  {
+    "id": "key-west-the-light-was-sharp-and-crisp",
+    "title": "The Light Was Sharp and Crisp",
+    "summary": "In 1954 Hollywood came to Key West to film Tennessee Williams's The Rose Tattoo. The local paper watched the stars arrive.",
+    "point": {
+      "at": {
+        "lat": 24.55605,
+        "lng": -81.7859
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Duncan Street near Tennessee Williams's house, Key West, Florida"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are on Duncan Street. In the nineteen fifties, Tennessee Williams had a house on this street. It is a private home, so enjoy it from the sidewalk.\n\nIn the autumn of nineteen fifty four, Hollywood came to Key West to film his play, The Rose Tattoo.\n\nThe star was Anna Magnani, Italy's most celebrated actress. She flew from Hollywood to Miami, and came down the Overseas Highway. Fewer than twenty fans were waiting when she pulled up at her hotel, in a canary yellow convertible. She signed one autograph. The next day, the hotel said, she slept until noon.\n\nA few days later Williams drove down from Miami too, with his secretary, Frank Merlo. The Key West Citizen called him a regular winter visitor, and photographed him at his Duncan Street home.\n\nBehind the camera was James Wong Howe, who had won his share of Academy Awards. The lighting here, he said, was sharp and crisp. And the Key West settings? They could not be duplicated anywhere.\n\nSo for a few weeks, the town played itself.\n",
+    "teaser": "Fewer than twenty fans were waiting for the greatest actress in Italy.",
+    "detail": "From the Key West Citizen: 28 October 1954 (Magnani's arrival via the Overseas Highway after flying from Hollywood to Miami, fewer than a score of fans, the canary yellow convertible at the Casa Marina, one autograph, asleep until noon), 2 November 1954 (Williams, \"a regular winter visitor\", arriving to be present for the filming, photographed at his Duncan Street home, accompanied by his secretary Frank Merlo; James Wong Howe on the light and the settings) and 9 April 1952 (Williams's home at 1431 Duncan Street). \"Italy's most celebrated actress\" paraphrases the paper's \"hailed as Italy's foremost actress\". \"For a few weeks\" is from the filming being reported as starting in early November; the end date was not checked. The papers call Merlo his secretary; the Library of Congress's Headlines and Heroes blog (2022) describes their fifteen year relationship, which the script does not go into.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-the-light-was-sharp-and-crisp/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 70,
+        "audioBytes": 1121009
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Magnani",
+        "say": "mahn-YAH-nee"
+      }
+    ],
+    "tags": [
+      "key-west",
+      "tennessee-williams",
+      "film",
+      "the-rose-tattoo",
+      "anna-magnani",
+      "1950s"
+    ],
+    "remoteness": 0.86
+  },
+  {
+    "id": "key-west-the-monument-architects-hospital",
+    "title": "The Monument Architect's Hospital",
+    "summary": "The old Marine Hospital in the Truman Annex was designed by Robert Mills, architect of the Washington Monument, for the breeze.",
+    "point": {
+      "at": {
+        "lat": 24.5533,
+        "lng": -81.8058
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Former U.S. Marine Hospital, Emma Street, Truman Annex, Key West, Florida"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 55,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look west from Emma Street at the plain masonry building with porches on the front and the back. When it was last surveyed, it had been made into apartments.\n\nIt began as a hospital for sailors, built in eighteen forty five. And it was designed by Robert Mills, the architect of the Washington Monument.\n\nHe designed eight of these marine hospitals. This one was built for the heat. Windows everywhere, and two storey verandas at the front and the rear, for as much air and light as possible.\n\nAnd in the basement, two cisterns, each eighteen feet long. In Key West, a hospital kept its own water.\n\nDoctors here were pioneers against yellow fever. They helped bring in the quarantine laws that Florida, and then the United States, adopted.\n\nIn Washington, Mills built up. Here, he built for the breeze.\n",
+    "teaser": "The man who drew the Washington Monument also drew this.",
+    "detail": "From the Historic American Buildings Survey record (HABS FL-194): one of eight Marine Hospitals designed by Robert Mills, whose Washington work included the Washington Monument; built 1844 to 1845 on land sold by John Simonton; two and a half storeys of stone and brick with two storey verandas front and rear; two 18 foot cisterns in the basement; Dr. Robert Murray and Dr. J. W. Porter among the pioneers in treating yellow fever and in the quarantine laws later adopted by Florida and the United States; closed as a Marine Hospital in 1943 and later remodelled for multi family housing. The survey's own wording on the date is OCR damaged; the 1845 date is from the record's structure dates. Access inside the Truman Annex was not checked.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-the-monument-architects-hospital/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 55,
+        "audioBytes": 881518
+      }
+    ],
+    "tags": [
+      "key-west",
+      "truman-annex",
+      "robert-mills",
+      "hospital",
+      "yellow-fever",
+      "architecture"
+    ],
+    "remoteness": 0.17
   },
   {
     "id": "key-west-the-sailor-with-the-oar",
@@ -16042,7 +17403,7 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "cemetery"
     ],
-    "remoteness": 1
+    "remoteness": 0.3
   },
   {
     "id": "key-west-the-studio-across-the-catwalk",
@@ -16085,7 +17446,98 @@ export const LIBRARY: readonly Echo[] = [
       "hemingway",
       "writers"
     ],
-    "remoteness": 1
+    "remoteness": 0.25
+  },
+  {
+    "id": "key-west-the-weaker-cup",
+    "title": "The Weaker Cup",
+    "summary": "Visitors kept asking which was stronger, Cuban coffee or American. In 1947 a Greene Street roaster gave a surprising answer.",
+    "point": {
+      "at": {
+        "lat": 24.5592,
+        "lng": -81.805
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Star Coffee Mills site, 512 Greene Street, Key West, Florida"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 56,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are on Greene Street. In nineteen forty seven, at number five twelve, the Star Coffee Mills was roasting coffee.\n\nVisitors kept asking the same question. Cuban coffee or American coffee. Which is stronger?\n\nThat January, the roaster, J. T. Sanchez, answered it for the Key West Citizen, turning over a batch of Cuban coffee as he talked.\n\nAmerican coffee, he said. American is stronger.\n\nHis reason was the oven. Cuban coffee, he said, roasts for twenty to twenty five minutes. American coffee, for a little over fifteen. Roast it longer, he said, and nearly all the caffeine burns out.\n\nHe was roasting fourteen to sixteen hundred pounds of Cuban coffee a day.\n\nKeep it in mind, the next time a tiny cup of Cuban coffee makes your heart race. The man who roasted it said that was the weak one.\n",
+    "teaser": "Which is stronger? The roaster said the answer was not the one you think.",
+    "detail": "From the Key West Citizen, 3 January 1947, page 1 (\"Cuban Coffee Not So Strong As American, Roaster Says\"): J. T. Sanchez of the Star Coffee Mills, 512 Greene Street, on roasting times (20 to 25 minutes against a little over 15) and caffeine burning out of the longer roast, and his output of 1,400 to 1,600 pounds of Cuban coffee a day. The caffeine claim is his, and the script attributes it to him; how much caffeine a darker roast loses is more modest than \"nearly all\", and a reviewer may want the script to say so. The final line is attributed to him for that reason.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-the-weaker-cup/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 56.4,
+        "audioBytes": 903252
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Sanchez",
+        "say": "SAN-chez"
+      }
+    ],
+    "tags": [
+      "key-west",
+      "cuban-coffee",
+      "coffee",
+      "greene-street",
+      "1940s"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "key-west-walls-waiting-for-a-roof",
+    "title": "Walls Waiting for a Roof",
+    "summary": "Key West's oldest brick building stood with walls up and no roof for years, until the Civil War finished it.",
+    "point": {
+      "at": {
+        "lat": 24.5587,
+        "lng": -81.807
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "U.S. Navy Coal Depot and Storehouse (Building 1), Front and Whitehead Streets, Key West, Florida"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 46,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old brick building here by Front Street. It is the oldest brick building on Key West, and the first permanent Navy building on the island.\n\nIn eighteen fifty two, Congress set up a depot for naval supplies here. By eighteen fifty six, the walls were built, ready to receive the roof.\n\nThen the money ran out.\n\nFor years it stood unfinished. What finished it was a war. When the Civil War came, Key West became the headquarters of the East Gulf Blockade Squadron, and the building was completed.\n\nThe Navy called it Number One Building. Later, the lighthouse service made it its headquarters, and then the Coast Guard.\n\nThe oldest brick building on the island began as four walls, waiting for a roof.\n",
+    "teaser": "The walls were ready in 1856. The money was not.",
+    "detail": "From the Historic American Buildings Survey record (HABS FL-190): the oldest brick building and the first permanent navy building on Key West; a depot for naval supplies established by an Act of Congress of 21 July 1852 on ground used by the Anti-Pirate Squadron from 1823 to 1826; walls ready for the roof by 1856, then unfinished for lack of appropriations until the outbreak of the Civil War, when Key West became headquarters of the East Gulf Blockade Squadron; known as Number 1 Building and the Naval Administration Building until 1932; then headquarters of the 7th Lighthouse District, and of the Coast Guard station after the Lighthouse Service joined the Coast Guard in 1939. \"Four walls\" is the script's image for walls without a roof. Present use was not checked.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/key-west-walls-waiting-for-a-roof/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 46.4,
+        "audioBytes": 744010
+      }
+    ],
+    "tags": [
+      "key-west",
+      "navy",
+      "civil-war",
+      "brick",
+      "waterfront",
+      "coast-guard"
+    ],
+    "remoteness": 0
   },
   {
     "id": "kitty-hawk-shorter-than-this-plane",
@@ -29172,6 +30624,232 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1
   },
   {
+    "id": "san-francisco-a-coffin-for-the-hippie",
+    "title": "A Coffin for the Hippie",
+    "summary": "In October 1967 the Diggers, who had helped make the Haight, held a mock funeral for the hippie and ended the Summer of Love.",
+    "point": {
+      "at": {
+        "lat": 37.77009,
+        "lng": -122.44685
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Corner of Haight Street and Ashbury Street, Haight-Ashbury, San Francisco, California"
+    },
+    "category": "history",
+    "format": "short",
+    "durationS": 66,
+    "minAge": 10,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the street signs on this corner. Haight, and Ashbury. In nineteen sixty seven, thousands of young people came to this neighbourhood, for what was called the Summer of Love.\n\nA group called the Diggers was here first. They were actors, artists and anarchists, and they saw this place as somewhere they could transform society.\n\nThe Diggers ran a free store. They gave away free food. On Haight Street there was a free clinic.\n\nBy midsummer it was falling apart. Grass and acid had given way to heroin and speed. Most of the bands, and the original hippies, moved out to the country.\n\nSo on the sixth of October, nineteen sixty seven, the Diggers held a funeral. A mock funeral, with a coffin. On the coffin it said: Hippie, Son of Media.\n\nThe Summer of Love was over. The people who had started it were the ones who buried it.\n\nLook around the corner now. The tourists still come, looking for the hippies.\n",
+    "teaser": "The people who started it were the ones who buried it.",
+    "detail": "NPR (2017) gives the date, 6 October 1967, the Diggers as counterculture purists, the mock funeral and the coffin labelled \"Hippie, Son of Media\", and the collapse by midsummer, with heroin and speed, and the bands and original hippies leaving for more pastoral settings. CBS News gives the Diggers as actors, artists and anarchists, their free store, free food and the free clinic on Haight Street, and the October 1967 mock funeral. NBC News (2009) gives the \"death of the hippie\" funeral that fall and the thousands of hippies in the 1960s, and describes tourists at Haight and Ashbury. NBC says \"residents\" held the funeral; NPR and CBS name the Diggers, and the script follows them. \"The people who started it\" is a reading of CBS's account of the Diggers at the heart of the Haight; a reviewer may prefer softer wording.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-a-coffin-for-the-hippie/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 65.9,
+        "audioBytes": 1056225
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "haight-ashbury",
+      "summer-of-love",
+      "diggers",
+      "counterculture"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-a-cookie-from-the-tea-garden",
+    "title": "A Cookie from the Tea Garden",
+    "summary": "The fortune cookie is not Chinese. Many credit Makoto Hagiwara, who ran this Japanese Tea Garden, though nobody has settled it.",
+    "point": {
+      "at": {
+        "lat": 37.7701,
+        "lng": -122.4704
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Japanese Tea Garden, Hagiwara Tea Garden Drive, Golden Gate Park, San Francisco, California"
+    },
+    "category": "food-drink",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "contested",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand at the gate of the Japanese Tea Garden. Somewhere in here, the story goes, the fortune cookie began.\n\nNot in China. A reporter who wrote a whole book about Chinese food in America found out at thirteen that fortune cookies were not Chinese. People think of them as Chinese, she says, but they are fundamentally American.\n\nThis garden began as a Japanese village, built for a world's fair in this park in eighteen ninety four. When the fair was over, the park hired a Japanese gardener named Makoto Hagiwara to run it.\n\nHe and his family devoted themselves to it. They even brought over plants from his ancestral home in Osaka.\n\nSeveral sources credit Hagiwara with introducing the fortune cookie, around the turn of the century. Others trace the idea back to Japan. Nobody has settled it.\n\nHis family looked after this garden from eighteen ninety four until nineteen forty two.\n\nNext time you crack one open, think of this gate.\n",
+    "teaser": "Crack one open. It probably did not come from China.",
+    "detail": "The National Register nomination for the de Sabla Teahouse and Garden (San Mateo) gives the Japanese village at the 1894 California Midwinter Fair in Golden Gate Park, small portions of which survive as the Japanese Tea Garden, Makoto Hagiwara (spelled Makota) hired after the fair by John McLaren and the park commissioners to run the concession, and the family's dedication to the garden from 1894 to 1942, including plants from his ancestral home in Osaka. CBS San Francisco credits Hagiwara with introducing the fortune cookie in the late 1890s to early 1900s, citing \"multiple sources\". NPR (2008) carries Jennifer 8. Lee's account of learning at 13 that fortune cookies were not Chinese, and her line that they are fundamentally American; an NPR blog the same year reports a New York Times article tracing the cookie to Japan. The script does not say why the family's tenure ended in 1942; the reason (the wartime removal of Japanese Americans) is widely known but is not stated in the fetched sources, and a reviewer may want a source before saying it aloud. \"A world's fair\" stands for the California Midwinter International Exposition; a reviewer may prefer \"a fair\".",
+    "certaintyNote": "Who made the first fortune cookie is disputed. CBS San Francisco says \"multiple sources\" credit Makoto Hagiwara of this garden, in the late 1890s to early 1900s. NPR reports a New York Times account that traces the cookie to Japan, and the reporter Jennifer 8. Lee on fortune cookies being American rather than Chinese. Other claimants, including a Los Angeles baker, are not in the fetched sources and are not named. The script says the question is open.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-a-cookie-from-the-tea-garden/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 70,
+        "audioBytes": 1121009
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Hagiwara",
+        "say": "hah-gee-WAH-rah"
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "golden-gate-park",
+      "japanese-tea-garden",
+      "fortune-cookie",
+      "hagiwara",
+      "japanese-american"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-a-fence-against-the-sun",
+    "title": "A Fence Against the Sun",
+    "summary": "Charles Crocker wanted this whole block. A Mr. Yung would not sell, so Crocker walled his house in with a fence that shut out the sun.",
+    "point": {
+      "at": {
+        "lat": 37.79222,
+        "lng": -122.41335
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Sacramento Street beside Grace Cathedral, Nob Hill, San Francisco, California"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 62,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on Sacramento Street, beside the cathedral, and look along its wall. Before the cathedral, there was a mansion on this block. It belonged to Charles Crocker.\n\nIn eighteen seventy seven, Crocker set out to own the whole block. One man would not sell. A Mr. Yung, whose house stood on a strip of land twenty five feet wide, here on Sacramento Street.\n\nSo Crocker had Yung's house hemmed in by a fence. A fence that shut out the sunlight.\n\nIt became a sight. Gripmen stopped their cable cars at the spot so passengers could look. Cab drivers brought tourists to stare. Souvenir hunters pulled pickets off it to take home. People called it the spite fence.\n\nNeither man gave in. The Crocker family got the land only after both of them had died.\n\nThe mansion stood until nineteen oh six. Crocker's heirs gave the land to the church.\n\nThe cathedral stands on the block Mr. Yung would not sell.\n",
+    "teaser": "The richest man on the hill against the one neighbour who would not sell.",
+    "detail": "From the 1940 Federal Writers' Project guide to San Francisco, Grace Cathedral entry: the property deeded to the diocese by Crocker's heirs, his mansion standing until 1906, his attempt in 1877 to acquire the whole block, Yung's home on a 25 foot strip on Sacramento Street, the fence that shut out the sunlight, gripmen stopping their cable cars, hackmen bringing tourists, souvenir seekers removing pickets from the \"spite\" fence, and the Crocker family obtaining the property only after the death of the principals. The guide gives only \"a Mr. Yung\"; his full name is not in the source. \"Both of them\" reads \"the principals\" as Crocker and Yung.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-a-fence-against-the-sun/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 62.3,
+        "audioBytes": 997293
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "nob-hill",
+      "grace-cathedral",
+      "crocker",
+      "spite-fence",
+      "cable-cars"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-a-gi-pet",
+    "title": "A GI Pet",
+    "summary": "A children's telling: under the road bridge in the Presidio is a cemetery for soldiers' pets, with gravestones like a military cemetery.",
+    "point": {
+      "at": {
+        "lat": 37.8029,
+        "lng": -122.4614
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Presidio Pet Cemetery, McDowell Avenue, Presidio of San Francisco, California"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 56,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look for the little white picket fence under the big road bridge. Behind it is a cemetery. But it is not for people. It is for pets!\n\nLots of army families used to live here at the Presidio. When their dogs and cats died, this is where they buried them. Hundreds of them.\n\nLook at the gravestones. Lots of them look just like the ones in a soldiers' cemetery. Some say where the pet was born: China, England, Australia, Germany. Some give the owner's rank, like major, colonel or even general.\n\nOne just says: A GI pet. He did his time.\n\nThere are even graves for unknown pets, just like in a real military cemetery.\n\nNobody knows for sure how it all began. People tell stories that it was once a graveyard for cavalry horses, or for guard dogs. Nobody has proved it.\n\nSo which gravestone is your favourite?\n",
+    "teaser": "A cemetery with a picket fence, and not one person buried in it.",
+    "detail": "All from the National Park Service page on the Presidio Pet Cemetery: the white picket fence, hundreds of animals owned by families stationed at the Presidio, markers that mimic military cemetery markers, birthplaces including China, England, Australia and Germany, owners' ranks including majors, colonels and generals, the epitaph \"A GI pet. He did his time.\", markers to \"unknowns\", no official records of its origin, and the legends of cavalry horses or guard dogs. The page notes the cemetery was closed during construction of the viaduct that towers over it; a reviewer should confirm access now. \"Dogs and cats\" is a child-friendly gloss of \"loyal animals\".",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/san-francisco-a-gi-pet/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 56,
+        "audioBytes": 896565
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "presidio",
+      "pet-cemetery",
+      "pets",
+      "military",
+      "kids"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-a-grave-for-carlotta",
+    "title": "A Grave for Carlotta",
+    "summary": "In Vertigo, Carlotta Valdes is buried in the Mission Dolores cemetery. She never existed, and people still come to find her.",
+    "point": {
+      "at": {
+        "lat": 37.76442,
+        "lng": -122.42708
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Mission Dolores, Dolores Street at 16th Street, the Mission, San Francisco, California"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 57,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Beside the old mission church on Dolores Street is a small cemetery. There is a grave in it that people come a long way to find. The woman in it never existed.\n\nIn the nineteen fifty eight film Vertigo, James Stewart plays Scotty, a police detective turned private eye. An old college friend asks him to follow his wife, Madeleine, played by Kim Novak.\n\nHe follows her through San Francisco. And Madeleine seems obsessed, perhaps possessed, by a figure from the city's past. A woman named Carlotta Valdes.\n\nIn the film, Carlotta Valdes is buried in this cemetery, at Mission Dolores.\n\nShe was invented. But the film made this city mysterious for a lot of people, and they still come looking for her.\n\nA reporter who came here met a visitor from Vancouver. He said he had wanted to make sure he stopped here.\n",
+    "teaser": "There is a grave in this cemetery for a woman who never lived.",
+    "detail": "From NPR's 2011 On Location piece on Vertigo: the 1958 film, Stewart as Scotty, the police detective turned private detective asked by an old college friend to follow his wife Madeline (Kim Novak), her apparent obsession or possession by Carlotta Valdes, \"a figure from San Francisco's history\", and the cemetery at Mission Dolores \"where the fictional Carlotta Valdes was buried in the film\", with the visitor from Vancouver. NPR spells the character Madeline and Scotty; the film's credits use Madeleine, which the script follows.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-a-grave-for-carlotta/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 56.5,
+        "audioBytes": 904506
+      }
+    ],
+    "inspo": {
+      "kind": "creation",
+      "evidence": "site"
+    },
+    "tags": [
+      "san-francisco",
+      "mission",
+      "mission-dolores",
+      "vertigo",
+      "hitchcock",
+      "film"
+    ],
+    "remoteness": 1
+  },
+  {
     "id": "san-francisco-a-message-on-the-water-tower",
     "title": "A Message on the Water Tower",
     "summary": "During the 1969 to 1971 occupation of Alcatraz, American Indians painted a message on its water tower. It was repainted in 2012.",
@@ -29210,6 +30888,108 @@ export const LIBRARY: readonly Echo[] = [
       "red-power",
       "civil-rights"
     ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-a-ship-under-clay-street",
+    "title": "A Ship Under Clay Street",
+    "summary": "The Gold Rush ship Niantic was abandoned in the cove, hauled ashore, made into a hotel, burned, and buried. She is still under this corner.",
+    "point": {
+      "at": {
+        "lat": 37.79515,
+        "lng": -122.40118
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Corner of Clay Street and Sansome Street, Financial District, San Francisco, California"
+    },
+    "category": "hidden",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand at the corner of Clay and Sansome, and look down at the pavement. There is a ship under it.\n\nHer name was the Niantic. In July, eighteen forty nine, she sailed into the cove that was here, packed with men on their way to the gold fields.\n\nMost of her crew deserted too. The captain let the last five men go, and with no crew, the Niantic was stuck.\n\nSo she was hauled ashore and put to use. A store. A warehouse. A hotel.\n\nThe town filled in the water around her with mud, sand and debris. By eighteen fifty, the Niantic was more than three blocks from the sea.\n\nIn eighteen fifty one, a great fire burned her down to the waterline. What was left made good foundations, and the buildings put up on top of her carried her name.\n\nIn nineteen seventy eight, builders dug here and uncovered a large part of the ship. Her stern and rudder went to the Maritime Museum.\n\nThe rest of her is still down there.\n\nNobody moved the ship. They moved the sea.\n",
+    "teaser": "There is a ship under this corner. She never sank.",
+    "detail": "All from the National Park Service page on the Niantic (San Francisco Maritime National Historical Park): arrival in Yerba Buena Cove on 5 July 1849 with gold seekers, the crew deserting and the last five men discharged on 11 July, the ship hauled ashore as building material, warehouse and hotel, the water lots filled with mud, sand and debris, more than three blocks from the sea by 1850, burned to the waterline in the fire of May 1851, the Niantic Hotel, Block and Building on the site, the 1978 excavation, the stern and rudder in the Maritime Museum, and the remains beneath the corner of Clay and Sansome. The last line is a turn, not a claim: the shoreline moved as the cove was filled.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-a-ship-under-clay-street/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 69.8,
+        "audioBytes": 1117665
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Niantic",
+        "say": "nye-AN-tick"
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "financial-district",
+      "waterfront",
+      "gold-rush",
+      "shipwreck",
+      "niantic",
+      "landfill"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-a-suitcase-on-steuart-street",
+    "title": "A Suitcase on Steuart Street",
+    "summary": "In 1916 a bomb in a suitcase killed ten people at a parade here. Two labour men were convicted. The bomber was never found.",
+    "point": {
+      "at": {
+        "lat": 37.79385,
+        "lng": -122.39478
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Steuart Street at Market Street, near the Ferry Building, San Francisco, California"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 16,
+    "quality": 0.85,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Stand on Steuart Street, just south of Market, and look toward the Ferry Building.\n\nOn Saturday the twenty second of July, nineteen sixteen, the city held a parade here to argue for getting ready for war. It was perhaps the largest parade San Francisco had ever seen. More than fifty thousand marchers.\n\nAt six minutes past two, half an hour in, a bomb went off on the west side of this street. It had been hidden in a cheap suitcase, left beside the marchers. Ten bystanders were killed, and forty wounded.\n\nThe city wanted someone. Police arrested two radical labour men, Thomas Mooney and his assistant, Warren Billings.\n\nThe trial was hasty, and it included several false witnesses. Both men were convicted. Mooney was sentenced to death.\n\nA commission set up by President Wilson found no clear evidence of his guilt, and his sentence was changed to life in prison.\n\nHe served twenty two years. In January, nineteen thirty nine, a new governor gave Mooney a full pardon.\n\nNobody else was ever convicted. Whoever left the suitcase on this street has never been named.\n",
+    "teaser": "The jury convicted a man. The pardon said they had the wrong one.",
+    "detail": "Key facts and their sources. The parade on Saturday 22 July 1916, its size (51,329 marchers), the bomb at 2.06 pm about half an hour in, on the west side of Steuart Street just south of Market, concealed in a suitcase, ten bystanders killed and forty wounded, the arrest of Mooney and Billings, the hasty trial with several false witnesses, the convictions, the death sentence, the Mediation Commission finding no clear evidence of guilt, the 1918 commutation to life, and the 1939 pardon: Library of Congress film record \"San Francisco's future\" (1916). The corner of Steuart and Market, the cheap suit case by the side of the marchers, and no trace of the bombers at the time: The Brandon News, 27 July 1916, a wire report (it gives seven dead, the early count). Ten killed and forty wounded, twenty two years in San Quentin, Olson's full pardon absolving Mooney, and the bomber likely never to be known: The Washington Times, 10 January 1939. Status exonerated: the script says \"pardon\" aloud. Victims are not named and no injuries are described. \"To argue for getting ready for war\" glosses \"Preparedness Day\"; a reviewer may prefer the name itself.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/san-francisco-a-suitcase-on-steuart-street/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 68,
+        "audioBytes": 1089662
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "embarcadero",
+      "ferry-building",
+      "preparedness-day",
+      "mooney",
+      "bombing",
+      "unsolved"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "exonerated",
+      "reviewedBy": "James (owner), approved 2026-11-12",
+      "reviewedAt": "2026-11-12",
+      "contentWarning": "This echo describes a bombing at a parade in 1916 in which ten people were killed. No injuries are described in detail."
+    },
     "remoteness": 1
   },
   {
@@ -29254,6 +31034,48 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1
   },
   {
+    "id": "san-francisco-an-emperor-on-dupont-street",
+    "title": "An Emperor on Dupont Street",
+    "summary": "Norton the First, self-proclaimed Emperor of North America, inspected the city for twenty years. He died on this street in 1880.",
+    "point": {
+      "at": {
+        "lat": 37.7908,
+        "lng": -122.40568
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Chinatown Gate, Grant Avenue and Bush Street, San Francisco, California"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 69,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "position-only",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "You are on Grant Avenue. In eighteen eighty, it had another name. Dupont Street.\n\nPicture a man walking along it in a blue army uniform, with brass buttons and gold braid, and a plumed beaver hat. Everybody knew him. He called himself Norton the First, Emperor of North America and Protector of Mexico.\n\nHe was an Englishman who had lost a fortune. For two decades after that, he went from one part of the city to another, seeing to it that policemen were on duty and sidewalks were clear. He inspected every building going up. The newspapers solemnly printed his proclamations.\n\nWhen he needed money, he issued bonds for fifty cents. Banks, restaurants and stores honoured them.\n\nIn January, eighteen eighty, he was walking along Dupont Street when he fell to the pavement. People helped him to his feet and leaned him against a building to rest.\n\nHe died there, without a struggle.\n\nMore than thirty thousand people came to his funeral. Not bad, for an emperor with no empire.\n",
+    "teaser": "The city's only emperor printed his own money, and the banks took it.",
+    "detail": "The Silver State (Unionville, Nevada), 10 January 1880, via Chronicling America: Emperor Norton died suddenly the day before, walking along Dupont Street, fell to the pavement, was helped up and placed against a building, and died without a struggle. The 1940 Federal Writers' Project guide to San Francisco gives the blue army uniform, brass buttons, gold braid and plumed beaver hat, \"Norton I, Emperor of North America and Protector of Mexico\", the mildly insane Englishman after heavy financial reverses, two decades of seeing that policemen were on duty and sidewalks unobstructed, inspecting buildings under construction, newspapers solemnly publishing his proclamations, 50 cent bonds honoured by banks, restaurants and stores, and a funeral in 1880 attended by more than 30,000. The same guide glosses Dupont Street as Grant Avenue. Two independent sources.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-an-emperor-on-dupont-street/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 68.5,
+        "audioBytes": 1097603
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "chinatown",
+      "grant-avenue",
+      "emperor-norton",
+      "eccentrics"
+    ],
+    "remoteness": 1
+  },
+  {
     "id": "san-francisco-filled-by-the-tide",
     "title": "Filled by the Tide",
     "summary": "Sutro Baths held seven pools under glass for 10,000 swimmers. At high tide the Pacific could fill them all in an hour.",
@@ -29290,6 +31112,52 @@ export const LIBRARY: readonly Echo[] = [
       "lands-end",
       "sutro-baths",
       "swimming"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-flowers-at-the-doubtfire-house",
+    "title": "Flowers at the Doubtfire House",
+    "summary": "The family home in Mrs. Doubtfire is a real house on this corner. When Robin Williams died in 2014, hundreds of people brought flowers here.",
+    "point": {
+      "at": {
+        "lat": 37.79445,
+        "lng": -122.43695
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Corner of Steiner Street and Broadway, Pacific Heights, San Francisco, California"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 50,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the house on the corner of Steiner and Broadway. You may know it. In nineteen ninety three, it was the family home in the film Mrs. Doubtfire.\n\nIn the film, Sally Field's character lives here with her children. Her ex husband, played by Robin Williams, will do anything to stay close to them. So he comes back in disguise, as the perfect elderly British nanny.\n\nIn twenty fourteen, Robin Williams died. As soon as the news broke, people began to come to this corner. Hundreds of them. They left notes and flowers, for a man who had never lived here.\n\nFor a while, the house was a shrine.\n\nThe doctor who owned it then kept the tributes up. He told a reporter he had seen much of the film, but had never sat down and watched it from start to finish.\n",
+    "teaser": "Hundreds of people left flowers here, for a man who never lived in it.",
+    "detail": "CBS San Francisco (KPIX, 2014): fans paying respects at the home on Broadway and Steiner where the film was set, hundreds dropping off notes and flowers since news broke, the owner (a plastic surgeon) keeping the tributes up and saying he had seen much of the film but never watched it from start to finish. CBS News (2016, the same publisher, so this counts as one source): the 1993 film, Sally Field's character living with her children in the home, the ex-husband in disguise as the perfect elderly British nanny, the home briefly an impromptu shrine after Williams's death in 2014. The owner is not named in the script. Robin Williams's death was a suicide; the script does not say so, which suits a general audience.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-flowers-at-the-doubtfire-house/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 50.2,
+        "audioBytes": 804196
+      }
+    ],
+    "inspo": {
+      "kind": "creation",
+      "evidence": "building"
+    },
+    "tags": [
+      "san-francisco",
+      "pacific-heights",
+      "mrs-doubtfire",
+      "robin-williams",
+      "film"
     ],
     "remoteness": 1
   },
@@ -29331,6 +31199,49 @@ export const LIBRARY: readonly Echo[] = [
       "cliff-house",
       "sutro-baths",
       "shipwreck"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-four-posts-for-a-blade-of-grass",
+    "title": "Four Posts for a Blade of Grass",
+    "summary": "Golden Gate Park was planted on shifting dunes. Its gardener held them with a European beach grass and fed the trees street sweepings.",
+    "point": {
+      "at": {
+        "lat": 37.7696,
+        "lng": -122.5096
+      },
+      "triggerRadiusKm": 0.08,
+      "place": "Western end of Golden Gate Park, near the Great Highway, San Francisco, California"
+    },
+    "category": "land",
+    "format": "short",
+    "durationS": 74,
+    "minAge": 0,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the trees around you, and then down at the ground between them. Under the leaves, it is sand.\n\nIn eighteen seventy three, a newspaper laughed at the city's new park. A dreary waste of shifting sand hills, it said, where a blade of grass cannot be raised without four posts to support it, and keep it from blowing away.\n\nThe park had two great problems: fresh water, and dunes that would not stay put.\n\nThe man who solved the dunes was the gardener, John McLaren. He tried native lupine and barley. They could not hold the sand.\n\nSo he used a beach grass from the coasts of Northern Europe. When the wind buries it, it keeps growing, until the dune is too high for the wind to carry more sand to the top.\n\nThe first years were hard. Time after time, he woke to find thousands of young trees covered with sand. He dug them out, and nursed them back to life.\n\nFor fertiliser, he asked the city for the sweepings from its streets. In those days, the streets were full of horses.\n\nLook at the trees again. Every one of them is growing on that.\n",
+    "teaser": "A newspaper said a blade of grass here would need four posts to hold it down.",
+    "detail": "From the 1940 Federal Writers' Project guide to San Francisco, Golden Gate Park chapter: the Santa Rosa Democrat's 1873 jibe about shifting sand hills and four posts, the two chief problems of fresh water and moving dunes, native lupine and barley failing to hold the sand, Ammophila arenaria from the coast of Northern Europe growing as fast as the wind covers it until the wind no longer carries sand to the top, McLaren waking to find thousands of young trees covered with sand and digging them out, and his request for the sweepings from the city streets. The guide's aside that McLaren was annoyed \"when the automobile drove the horses from the streets\" supports the horses. \"Every one of them\" is a turn, not a census: the guide says the whole landscape is man's handiwork on the former dunes.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-four-posts-for-a-blade-of-grass/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 74.2,
+        "audioBytes": 1188301
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "golden-gate-park",
+      "ocean-beach",
+      "sand-dunes",
+      "john-mclaren",
+      "trees"
     ],
     "remoteness": 1
   },
@@ -29377,6 +31288,230 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1
   },
   {
+    "id": "san-francisco-in-the-event-of-my-death",
+    "title": "In the Event of My Death",
+    "summary": "Harvey Milk ran his campaigns from a camera shop here, and some of his ashes lie outside it. He left a tape, to be played if he was killed.",
+    "point": {
+      "at": {
+        "lat": 37.76094,
+        "lng": -122.43504
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Former Castro Camera, 575 Castro Street, the Castro, San Francisco, California"
+    },
+    "category": "people",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 12,
+    "quality": 0.9,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the shopfront at five seventy five Castro Street. In the nineteen seventies it was a camera shop. Castro Camera. It belonged to Harvey Milk.\n\nNow look down. A monument outside the shop covers some of his ashes. In a city that bans burials, it is one of the exceptions.\n\nIt was his campaign headquarters, all four times he ran for office. From nineteen seventy five, he lived in the apartment upstairs.\n\nOn the fourth try, he won. He became the first openly gay man ever voted into office in the United States, as a San Francisco supervisor.\n\nHe knew what that might cost. Not long before he was killed, he recorded a kind of political will on a cassette tape. It begins:\n\nThis is to be played only in the event of my death by assassination.\n\nOn the twenty seventh of November, nineteen seventy eight, he and Mayor George Moscone were shot and killed. He had been on the board for eleven months.\n\nOn the tape, he talks about a phone call from a frightened teenager in Altoona, Pennsylvania, who had read about him in the news.\n\nYou got to give them hope, he says.\n\nLook at the shop window again. That is where he started. And where part of him still is.\n",
+    "teaser": "He recorded a tape, to be played only if he was killed.",
+    "detail": "NBC News (2023) gives Castro Camera as the shop Milk owned from 1972 until his murder in 1978, his headquarters in four runs for office, the apartment above from 1975, and the 2000 city landmark designation. NPR (2008) gives the first openly gay man ever voted into office in the United States, the cassette tape and its opening words, the announcement by Dianne Feinstein on 27 November 1978 that Moscone and Milk had been shot and killed, eleven months on the board, and the Altoona caller and \"You got to give them hope\"; NPR adds that Milk's friends think the Altoona caller may have been a rhetorical device. NBC News (2018) dates his election to one year before his death. CBS San Francisco gives 575 Castro Street, and the monument outside the former Castro Camera covering some of Milk's ashes, an exception to the city's ban on burials. The convicted killer, Dan White, is not named; he is dead and the echo is about Milk. \"On the fourth try\" follows from four runs and the win; a reviewer may want that checked.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-in-the-event-of-my-death/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 82.1,
+        "audioBytes": 1314106
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "castro",
+      "harvey-milk",
+      "lgbtq",
+      "civil-rights"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-not-a-fire-hose",
+    "title": "Not a Fire Hose",
+    "summary": "A legend of San Francisco: Coit Tower was built to look like a fire hose, for a woman who loved firemen. The record says it was not.",
+    "point": {
+      "at": {
+        "lat": 37.80078,
+        "lng": -122.41004
+      },
+      "triggerRadiusKm": 0.07,
+      "place": "Volunteer firemen statue, Washington Square, North Beach, San Francisco, California"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 68,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "landmark-visible",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the statue in this square: three volunteer firemen at work. One of them is carrying a frightened young girl to safety.\n\nNow look up the hill, at the white tower on top. The same woman paid for both. Her name was Lillie Hitchcock Coit.\n\nWhen she was a small girl, new to San Francisco, she watched two of her friends die in a fire. She was rescued herself by a volunteer from Knickerbocker Engine Company Number Five. He chopped a hole in the roof, let himself down on a rope, and climbed out with her on his back.\n\nShe never forgot it. The engine company made her an honorary member, with a helmet of her own. Ever after, she signed her name: Lillie Hitchcock Coit, five.\n\nWhen she died, in nineteen twenty nine, she left a third of her estate to the city, to add to its beauty. It paid for the statue, and the tower.\n\nAnd so the legend. That the tower was built to look like a fire hose.\n\nIt is a wonderful story. The official record of the tower says, flatly, that it was not designed to resemble a fire hose.\n\nLook at it anyway.\n",
+    "teaser": "Look up at the tower and tell me it does not look like a fire hose.",
+    "detail": "From the National Register additional documentation for Coit Memorial Tower: Lillie Hitchcock Coit's arrival in 1851 at seven, watching two friends burn to death, her rescue by John Boynton of Knickerbocker Engine Company Number 5 through a hole in the roof, honorary membership and a helmet in October 1863, signing \"Lillie Hitchcock Coit 5\", her death in 1929 and the bequest of a third of her estate \"for the purpose of adding to the beauty of the city\", which paid for both the tower and the Patigian statue in Washington Square showing three volunteer firemen, one carrying a young girl. The same document says the tower \"was not designed to resemble a fire hose\". The legend's existence rests on that denial; no fetched source records who first told it. Male narrator, as for every legend.",
+    "certaintyNote": "The fire hose story is popular lore with no source behind it, and the National Register documentation for Coit Tower says plainly that the tower was not designed to resemble a fire hose. The account of Lillie Coit's childhood rescue comes from the same documentation, which cites a 1967 biography; it is told here as she is remembered, and is not independently confirmed.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/san-francisco-not-a-fire-hose/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 68.3,
+        "audioBytes": 1093424
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "north-beach",
+      "washington-square",
+      "coit-tower",
+      "lillie-coit",
+      "firefighters"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-nothing-above-the-windows",
+    "title": "Nothing Above the Windows",
+    "summary": "In 1934 the city locked Coit Tower over a painted hammer and sickle. When it opened, the art above the windows was gone.",
+    "point": {
+      "at": {
+        "lat": 37.80239,
+        "lng": -122.40582
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Coit Tower, Telegraph Hill Boulevard, Telegraph Hill, San Francisco, California"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 65,
+    "minAge": 10,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "If the doors are open, step inside the base of this tower. The walls are covered in murals, painted in nineteen thirty four by artists on a federal relief program.\n\nNow look above the windows.\n\nThe artists painted in fresco, into wet plaster. Near the end, one of them, Clifford Wight, added small paintings above the windows. A dollar sign. The blue eagle of the New Deal. And a hammer and sickle.\n\nThat summer, the dockworkers went on strike, and then the whole city. On the fifth of July, two waterfront workers were killed by police. The same day, a newspaper printed a doctored photograph that laid Wight's hammer and sickle over another artist's mural, and said the murals were part of a communist plot.\n\nThe city locked the tower and cancelled the opening.\n\nWhen it finally opened, in October, the artwork over the windows had been removed. All of it, not only the hammer and sickle.\n\nThe murals that stayed are the ones you can see. Above the windows is what they took away.\n",
+    "teaser": "The murals that stayed are on the walls. Look for the ones that did not.",
+    "detail": "From the National Register additional documentation for Coit Memorial Tower: the Public Works of Art Project murals, the dockworkers strike from 9 May 1934 and the general strike of 16 to 19 July, Wight's late additions of a dollar sign, the NRA blue eagle and a hammer and sickle, the deaths of two waterfront workers killed by police on 5 July, the San Francisco Examiner's photograph superimposing the hammer and sickle on Zakheim's mural and alleging a communist plot, the Park and Art Commissions locking the doors and cancelling the opening, and the removal of all the artwork over the east, south and west windows before the October 1934 opening. CBS San Francisco (2018) gives the Public Works of Art Project. The NR gives the opening as 12 October in one place and 20 October in another, so the script says only October. \"The blue eagle of the New Deal\" stands for the NRA's blue eagle; a reviewer may prefer \"the eagle of the National Recovery Administration\".",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-nothing-above-the-windows/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 65.2,
+        "audioBytes": 1043687
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "telegraph-hill",
+      "coit-tower",
+      "murals",
+      "new-deal",
+      "censorship"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-pagodas-for-the-tourists",
+    "title": "Pagodas for the Tourists",
+    "summary": "After 1906 the city wanted Chinatown moved to the mud flats. Merchants rebuilt it instead, with pagoda roofs designed to bring tourists.",
+    "point": {
+      "at": {
+        "lat": 37.7924,
+        "lng": -122.40578
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Corner of Grant Avenue and California Street, Chinatown, San Francisco, California"
+    },
+    "category": "built",
+    "format": "short",
+    "durationS": 70,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the rooftops on this corner. The pagoda towers, the curled eaves, the dragons. They look very old, and very Chinese.\n\nThey are neither, quite.\n\nIn nineteen oh six, the earthquake and fire destroyed Chinatown, along with much of the city. Even before the quake, the local newspapers had argued for moving the Chinese out. Now city leaders presented a plan to move Chinatown to the mud flats on the southern edge of town.\n\nThe Chinese consul general refused. The Empress, he said, was not happy about it. The consulate would be rebuilt in the heart of Chinatown, where it was.\n\nThen a businessman named Look Tin Eli had an idea. He persuaded the other merchants to hire American architects, and to make their buildings look like China, to attract tourists.\n\nSo the architects drew American style buildings, and put pagodas on top.\n\nThe tourists came. Chinatown stayed.\n\nLook up at the roofs again. They are how it stayed.\n",
+    "teaser": "Those curled roofs were an argument, and they won it.",
+    "detail": "From NPR's 2006 report on rebuilding Chinatown, with the historian Judy Yung: the newspapers editorialising before 1906 for moving the Chinese, the relocation plan for the mud flats on the southern outskirts, the consul general's words about the Empress and rebuilding the consulate in the heart of Chinatown, Look Tin Eli persuading merchants to hire American architects to make buildings look like China to attract tourists, and American style buildings topped with pagodas, curled eaves and dragon motifs. \"The tourists came. Chinatown stayed.\" is a summary of the outcome the report describes; Chinatown was rebuilt where it stood. The Sing Chong Bazaar, Look Tin Eli's own building, is named in NPR's captions but not located; it is not named in the script for that reason.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-pagodas-for-the-tourists/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 70.3,
+        "audioBytes": 1125189
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Look Tin Eli",
+        "say": "LOOK tin EE-lie"
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "chinatown",
+      "grant-avenue",
+      "1906-earthquake",
+      "architecture",
+      "chinese-american"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-red-wine-on-the-fire",
+    "title": "Red Wine on the Fire",
+    "summary": "A legend of Telegraph Hill: in 1906 Italian families held back the fire with blankets soaked in red wine from their cellars.",
+    "point": {
+      "at": {
+        "lat": 37.80187,
+        "lng": -122.40415
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Filbert Steps at Napier Lane, Telegraph Hill, San Francisco, California"
+    },
+    "category": "legend",
+    "format": "short",
+    "durationS": 49,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "legend",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the little cottages along these steps. In April, nineteen oh six, after the earthquake, the city burned for almost four days.\n\nThese cottages did not. The fire stopped a few hundred feet from where you are.\n\nBack then, the hill was working class. Irish and Italian immigrants. And this is where the legend begins.\n\nMany of the Italian families made their own wine, and kept the barrels in their basements. When the fire crept up the hill, the story goes, they rolled the barrels out of their cellars, formed a bucket brigade, and fought the flames with blankets soaked in red wine.\n\nA guidebook written in nineteen forty tells it as plain fact. A historian, a century later, called it one of the stories the old timers told. Nobody can prove it either way.\n\nWhatever saved them, the cottages are still here.\n",
+    "teaser": "When the water ran out, the story goes, they used the wine.",
+    "detail": "NPR's 2006 Morning Edition piece on the 1906 earthquake: fire for almost four days, Aaron Peskin on the Filbert Steps saying the fire stopped a few hundred feet away, the working class Irish and Italian neighbourhood whose simple cottages were among the few spared, and Philip Fradkin on buckets of saved water, barrels of wine fermenting in basements and \"stories of the old-timers\". The 1940 Federal Writers' Project guide: the Italians rolled barrels of red wine from their cellars and, forming a bucket brigade, protected their houses with blankets soaked in the wine. Told as a legend because the two sources differ on how sure it is.",
+    "certaintyNote": "The 1940 Federal Writers' Project guide states as fact that Italians saved Telegraph Hill with wine-soaked blankets; the historian Philip Fradkin, on NPR in 2006, calls it stories of the old-timers. Nobody has shown how much wine was used or whether it made the difference, so the script tells it as a legend.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/san-francisco-red-wine-on-the-fire/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 49.4,
+        "audioBytes": 790821
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "telegraph-hill",
+      "filbert-steps",
+      "1906-earthquake",
+      "italian-american",
+      "wine"
+    ],
+    "remoteness": 1
+  },
+  {
     "id": "san-francisco-studying-in-the-bathroom",
     "title": "Studying in the Bathroom",
     "summary": "In a Crissy Field hangar, the Army trained Japanese American linguists in secret, even as their families were removed from the coast.",
@@ -29416,6 +31551,54 @@ export const LIBRARY: readonly Echo[] = [
       "military",
       "japanese-american",
       "nisei"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-the-alley-where-miles-archer-fell",
+    "title": "The Alley Where Miles Archer Fell",
+    "summary": "In The Maltese Falcon, Sam Spade's partner is shot in Burritt Alley, off Bush Street. Dashiell Hammett lived and wrote a few blocks away.",
+    "point": {
+      "at": {
+        "lat": 37.79025,
+        "lng": -122.4079
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "Burritt Street at Bush Street, near Union Square, San Francisco, California"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 64,
+    "minAge": 10,
+    "quality": 0.8,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look into the short, narrow alley off Bush Street. Its name is Burritt.\n\nIn The Maltese Falcon, this is where Miles Archer dies. He was the partner of a private detective named Sam Spade, and in the alley, he is shot by a woman he should not have trusted.\n\nDashiell Hammett, who wrote it, knew these streets. His stories are full of real San Francisco streets and landmarks. In The Maltese Falcon, he even names his own apartment building, on Post Street, a few blocks from here.\n\nIn nineteen forty one, John Huston made the book into a film, starring Humphrey Bogart. One critic calls it the best film ever made with San Francisco as its backdrop.\n\nMiles Archer never existed. People come to see where he died anyway. One guide brings walking tours here, recites the scene from memory, and at the climax pulls a rubber dart gun from his coat and shoots one of his guests.\n",
+    "teaser": "A man who never lived was shot in this alley, and people still come to see where.",
+    "detail": "CBS San Francisco's walking tours piece: Don Herron's Dashiell Hammett tour, Burritt Alley as where Miles Archer, Spade's partner in The Maltese Falcon, \"was plugged by a femme fatale\", and the rubber dart gun. CBS San Francisco on Hammett's papers: his stories peppered with allusions to San Francisco streets and landmarks, including a scene in The Maltese Falcon citing his own apartment building at 891 Post Street. CBS San Francisco's \"Best Movies Set in San Francisco\": John Huston's 1941 film with Bogart, called the best movie filmed with a San Francisco backdrop, and Spade's office near the Stockton Street tunnel. One publisher. A bronze plaque in the alley marks the spot; no fetched source describes it, so the script does not mention it.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-the-alley-where-miles-archer-fell/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 64.2,
+        "audioBytes": 1027804
+      }
+    ],
+    "inspo": {
+      "kind": "inspiration",
+      "evidence": "site"
+    },
+    "tags": [
+      "san-francisco",
+      "union-square",
+      "maltese-falcon",
+      "dashiell-hammett",
+      "sam-spade",
+      "noir",
+      "film"
     ],
     "remoteness": 1
   },
@@ -29545,6 +31728,50 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1
   },
   {
+    "id": "san-francisco-the-sea-lions-who-moved-in",
+    "title": "The Sea Lions Who Moved In",
+    "summary": "A children's telling: the docks at Pier 39 were built for boats. In 1990 the sea lions moved in, and the city gave them their own day.",
+    "point": {
+      "at": {
+        "lat": 37.80965,
+        "lng": -122.4104
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Sea lion docks, Pier 39, Fisherman's Wharf, San Francisco, California"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 60,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Listen. Can you hear barking? Look down at the floating docks beside the pier. Those big brown heaps are sea lions!\n\nThese docks were built for boats. Then, in nineteen ninety, a few dozen sea lions climbed on. Nobody invited them.\n\nMore and more came. The harbourmaster, who looks after the docks, remembers when there were fourteen hundred of them. A seething mass, she said, of sea lion noise, and smell.\n\nBut people loved them. Millions have come to watch. The city even gave them a holiday: Sea Lion Day, on the sixteenth of January.\n\nIn spring, they feast on anchovies and herring, to get ready for the mating season. Then many of them head south, to islands off Southern California.\n\nMostly, though, they just lie in the sun. One visitor said: I want some entertainment from them, and they've got nothing.\n\nWatch for a minute. Which one is the laziest?\n",
+    "teaser": "Nobody invited them. They came anyway, and stayed.",
+    "detail": "CBS News (2004): Pier 39 home to some 1,500 sea lions, up from the few dozen that moved in in 1990. CBS News (2020): thirty years since sea lions invaded the boat docks of Pier 39, harbormaster Sheila Chandor and her 1,400 animals, \"millions\" of visitors, Sea Lion Day on 16 January, and the tourist's line about entertainment. NPR (2024): anchovies and herring, fuelling up for the mating season, the Channel Islands. CBS 2004 and 2020 are one publisher; NPR is independent. Other accounts date the first arrivals to late 1989, after the Loma Prieta earthquake; the CBS figure of 1990 is used.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/san-francisco-the-sea-lions-who-moved-in/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 60,
+        "audioBytes": 961767
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "fishermans-wharf",
+      "pier-39",
+      "sea-lions",
+      "wildlife",
+      "kids"
+    ],
+    "remoteness": 1
+  },
+  {
     "id": "san-francisco-the-unfinished-mosaic",
     "title": "The Unfinished Mosaic",
     "summary": "When the city leased the new Aquatic Park Bathhouse to a private nightclub in 1939, its artists walked out and left work unfinished.",
@@ -29586,6 +31813,98 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1
   },
   {
+    "id": "san-francisco-to-brisbane-in-two-minutes",
+    "title": "To Brisbane in Two Minutes",
+    "summary": "Bullitt's 1968 car chase was shot at real speed on real San Francisco streets, Russian Hill among them. The city closed sixty blocks for it.",
+    "point": {
+      "at": {
+        "lat": 37.79935,
+        "lng": -122.4189
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Hyde Street and Union Street, Russian Hill, San Francisco, California"
+    },
+    "category": "inspo",
+    "format": "short",
+    "durationS": 52,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down the hill. Steep, isn't it? In nineteen sixty eight, Steve McQueen came down slopes like these in a green Ford Mustang, for the film Bullitt.\n\nIt was Hollywood's first major car chase shot not on a studio lot, but out on real streets, at real speeds. The director closed off sixty square blocks of the city.\n\nMcQueen was a racing driver, and he did some of the driving himself. According to one biography, the Mustang and the black Dodge Charger chasing it hit a hundred and fifteen miles an hour on the city's hilly streets.\n\nThere is no music in the chase. Only tyres squealing, and engines.\n\nOne local critic points out that the film cheats. In under two minutes, McQueen gets from Russian Hill to Brisbane, south of the city.\n\nIn traffic, that drive takes forty.\n",
+    "teaser": "No music. Just tyres, engines, and these hills.",
+    "detail": "CBS News (2018): Hollywood's first major car chase shot on the streets at real speeds, Peter Yates closing off 60 square blocks, McQueen an accomplished race car driver. CNN via CBS San Francisco (2020): the green 1968 Mustang GT and the black Dodge Charger R/T, McQueen doing some of the driving, up to 115 miles an hour on hilly streets according to Marc Eliot's biography, and no music, only squealing tyres and roaring engines. CBS San Francisco's \"Best Movies Set in San Francisco\": McQueen careening down Russian Hill's precipitous inclines and ending up in Brisbane in less than two minutes, a ride that takes 40 minutes. All three are carried by CBS, so this counts as one publisher; the 115 miles an hour figure is attributed in the script. The Mustang's later history (bought for 3,500 dollars in 1974, sold for 3.7 million) is in the sources and left out to keep one idea.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-to-brisbane-in-two-minutes/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 51.7,
+        "audioBytes": 828020
+      }
+    ],
+    "inspo": {
+      "kind": "creation",
+      "evidence": "area"
+    },
+    "tags": [
+      "san-francisco",
+      "russian-hill",
+      "bullitt",
+      "steve-mcqueen",
+      "film",
+      "car-chase",
+      "mustang"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-turn-the-cable-car-around",
+    "title": "Turn the Cable Car Around",
+    "summary": "A children's telling: at Powell and Market, workers turn each cable car around by hand. The cars are pulled by a cable under the street.",
+    "point": {
+      "at": {
+        "lat": 37.78482,
+        "lng": -122.4076
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Cable car turntable, Powell Street and Market Street, San Francisco, California"
+    },
+    "category": "kids",
+    "format": "short",
+    "durationS": 58,
+    "minAge": 0,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Find the round turntable at the end of the cable car tracks. Now wait for a cable car to arrive, and watch.\n\nThe car has to face the other way to go back up the hill. So the workers push it around on the turntable, by hand!\n\nHow does a cable car climb these hills? Under the street, a steel cable is always moving. The car holds on to it with a grip, and the cable pulls it along.\n\nA San Francisco man, Andrew Hallidie, came up with the idea, because the hills here were too steep for horses.\n\nThe very first cable car ran on Clay Street, in eighteen seventy three. It was meant to hold fourteen people. On its first public trip, lots more people climbed in, and on top. It made it up the hill anyway.\n\nUp on Mason Street, there is a cable car museum where you can see the giant wheels that pull the cables under the streets.\n\nSo, which way is this one going?\n",
+    "teaser": "How do you turn a cable car around? Watch.",
+    "detail": "NBC News (Associated Press, 2008): the Powell and Market turnaround, where workers manually swivel the cars around, and the Cable Car Museum at 1201 Mason Street with the underground pulleys that operate the cables. The 1940 Federal Writers' Project guide: Andrew S. Hallidie, a local manufacturer, invented the cable car for hills too steep for horses; the first line on Clay Street; the trial trip of 2 August 1873 in a car intended to hold only 14 that was overloaded and made the grade; the moving cable and the grip. \"The giant wheels\" glosses the museum's pulleys for children.",
+    "voice": "UrTldiIxfedDl9tlesyS",
+    "renders": [
+      {
+        "voiceId": "UrTldiIxfedDl9tlesyS",
+        "audioKey": "audio/san-francisco-turn-the-cable-car-around/UrTldiIxfedDl9tlesyS.mp3",
+        "durationS": 58.2,
+        "audioBytes": 932927
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "union-square",
+      "powell-street",
+      "cable-cars",
+      "hallidie",
+      "kids"
+    ],
+    "remoteness": 1
+  },
+  {
     "id": "san-francisco-two-sisters-on-the-same-rocks",
     "title": "Two Sisters on the Same Rocks",
     "summary": "Two sister tankers were wrecked in fog at Lands End fifteen years apart. Their engines still show at low tide, side by side.",
@@ -29623,6 +31942,57 @@ export const LIBRARY: readonly Echo[] = [
       "shipwreck",
       "fog",
       "golden-gate"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "san-francisco-when-do-we-get-the-manuscript",
+    "title": "When Do We Get the Manuscript?",
+    "summary": "City Lights published Allen Ginsberg's Howl in 1956. Police arrested a bookseller here, and the trial that followed made the poem.",
+    "point": {
+      "at": {
+        "lat": 37.79763,
+        "lng": -122.40652
+      },
+      "triggerRadiusKm": 0.03,
+      "place": "City Lights Booksellers, 261 Columbus Avenue, North Beach, San Francisco, California"
+    },
+    "category": "arts",
+    "format": "short",
+    "durationS": 65,
+    "minAge": 12,
+    "quality": 0.85,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the bookshop on the corner. City Lights. A poet named Lawrence Ferlinghetti opened it in nineteen fifty three.\n\nIn nineteen fifty five, he heard a young poet, Allen Ginsberg, read a new poem called Howl. Ferlinghetti sent him a telegram.\n\nI greet you at the beginning of a great career, it said.\n\nThen he added a second line. When do we get the manuscript?\n\nIn the fall of nineteen fifty six, he published it, as a little paperback that cost seventy five cents.\n\nHowl described sex, between men and women, and between men. Not long after it came out, police arrested a bookseller here, and Ferlinghetti was charged with obscenity.\n\nGinsberg was delighted. He knew a trial would only make the poem more famous.\n\nAt the end of it, the judge found that Howl had redeeming social importance. It was not obscene.\n\nFerlinghetti lived to a hundred and one. His shop is still on the corner.\n",
+    "teaser": "A telegram, a little paperback, an arrest, and a poem nobody could stop.",
+    "detail": "NPR (2006) gives the 1955 telegram, \"I greet you at the beginning of a great career\" and the coda \"When do we get the manuscript?\", police arresting a bookseller at City Lights and charging Ferlinghetti with obscenity, Ginsberg's delight at a trial he knew would enhance the poem's reputation, and Judge Clayton Horn's ruling. NPR (2021, obituary) gives the 75 cent paperback in the fall of 1956, the passages about sex between men and women and between two men, the 1957 arrest, the finding of redeeming social importance, and his death at 101. CBS San Francisco (2021) gives the founding in 1953. Two independent publishers. NPR calls the trial \"a long federal trial\"; it was in San Francisco municipal court before Judge Horn, so the script does not call it federal.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/san-francisco-when-do-we-get-the-manuscript/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 65.4,
+        "audioBytes": 1047448
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Ferlinghetti",
+        "say": "fer-lin-GET-ee"
+      }
+    ],
+    "tags": [
+      "san-francisco",
+      "north-beach",
+      "city-lights",
+      "howl",
+      "beat-generation",
+      "ginsberg",
+      "ferlinghetti",
+      "censorship"
     ],
     "remoteness": 1
   },
@@ -43466,4 +45836,4 @@ export const ROUTES: readonly Route[] = [
 
 // What a person has really checked, as authored, before the demo override above. The
 // "true story" mark reads this, never the overridden status (`truth.ts` in the engine).
-export const VERIFIED_IDS: ReadonlySet<string> = new Set(["african-burial-ground","annapolis-a-port-called-napolis","annapolis-a-private-citizen-by-christmas","annapolis-married-in-that-house","annapolis-the-dome-was-a-lookout","asheville-a-dome-made-of-tile","asheville-a-government-at-the-inn","asheville-a-leg-in-a-boot","asheville-a-yodel-on-the-top-floor","asheville-the-boardinghouse-called-dixieland","asheville-the-fire-at-highland-hospital","asheville-the-man-who-walked-a-wheel","asheville-the-ymi","atlantic-city-first-boardwalk","bald-head-captain-charlie-lit-both","bald-head-the-builder-who-lost-money","bald-head-the-prisms-coming-home","bald-head-the-swim-to-southport","bald-head-the-woman-on-the-shore","boston-abiel-smith-school-goodbye","boston-african-meeting-house-built-by-its-people","boston-beacon-hill-the-beacon","boston-brimstone-corner","boston-common-cows","boston-franklins-other-corner","boston-granary-five-in-one-grave","boston-hayden-house-keg","boston-in-short-i-lost-most-all","boston-mother-goose","boston-say-no-more","boston-shaw-memorial-forty-faces","boston-sides-made-of-iron","boston-state-house-dome-copper","boston-swan-boats-mrs-paget","boston-the-church-inside-the-church","boston-the-house-that-stayed-useful","boston-the-lady-in-black","boston-the-letter-on-the-slate","boston-the-lion-and-the-unicorn","boston-the-poem-that-built-a-statue","boston-the-school-that-lost-its-ground","boston-the-sextons-lodgers","boston-the-spire-that-fell","boston-the-spy-question","boston-the-stone-they-shot-at","boston-the-street-that-ran-into-the-sea","boston-the-whites-of-their-eyes","boston-the-wrong-hill","boston-waiting-for-mister-rotch","boston-what-the-auditor-found","boston-where-the-water-was","boston-who-said-fire","bowling-green-king-george","canyon-of-heroes","carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","casa-casuarina-the-steps","castle-clinton-eight-million","caswell-beach-a-hat-from-a-helicopter","caswell-beach-a-lighthouse-poured-in-a-week","caswell-beach-the-long-day-of-dunbar-davis","caswell-beach-the-night-caswell-blew-up","caswell-beach-the-second-brightest-light","caswell-beach-yachts-on-submarine-watch","charging-bull-illegal","charleston-a-bench-for-the-unnamed","charleston-a-broken-taillight","charleston-a-cake-and-a-shark","charleston-a-candle-for-air","charleston-a-chest-of-medicine","charleston-a-dollar-thirty-an-hour","charleston-a-gallery-on-the-highway","charleston-a-message-for-hell","charleston-a-strangers-initials","charleston-a-wharf-he-was-willing-to-lose","charleston-an-opera-at-the-beach","charleston-blackbeards-ransom","charleston-blown-up-to-stop-a-fire","charleston-blue-and-buff-rosettes","charleston-blue-to-keep-the-spirits-out","charleston-bolted-together","charleston-built-for-a-capital","charleston-built-to-fall-inward","charleston-buried-at-the-gate","charleston-calhoun-moved-by-night","charleston-every-five-minutes","charleston-exiled-by-the-sound-of-the-lash","charleston-fifteen-feet-of-sea","charleston-five-times-across","charleston-four-years-to-the-day","charleston-gothic-over-brick","charleston-hey-charleston","charleston-madame-margots-bargain","charleston-martyrs-of-the-race-course","charleston-no-pirates-lived-here","charleston-not-called-catfish","charleston-old-joe-cole","charleston-pineapples-that-are-not","charleston-rice-peas-and-the-new-year","charleston-sermons-on-the-tide","charleston-silver-forks-and-iced-claret","charleston-skulls-over-the-market","charleston-steps-that-only-go-up","charleston-the-angels-oak","charleston-the-audience-on-the-sea-wall","charleston-the-badge-that-paid-the-firemen","charleston-the-bedsheet","charleston-the-building-that-could-not-burn","charleston-the-butlers-soup","charleston-the-castle-on-the-square","charleston-the-church-that-crossed-the-street","charleston-the-congregation-that-rebuilt","charleston-the-editor-who-got-off-the-streetcar","charleston-the-fire-and-the-brick-law","charleston-the-flag-on-a-sponge-stick","charleston-the-island-in-the-gold-bug","charleston-the-last-of-six-beaches","charleston-the-lighthouse-the-sea-walked-to","charleston-the-lighthouse-with-a-lift","charleston-the-man-who-would-not-fire","charleston-the-museums-front-door","charleston-the-narrow-strip-of-sand","charleston-the-night-the-wall-opened","charleston-the-painter-on-chalmers-street","charleston-the-petition-of-forty-seven","charleston-the-piece-somebody-kept","charleston-the-playhouse-on-dock-street","charleston-the-powder-behind-the-wall","charleston-the-presidents-face-in-their-hair","charleston-the-sailor-on-the-steeple","charleston-the-school-behind-the-store","charleston-the-seed-and-the-knowing","charleston-the-ship-called-echo","charleston-the-street-named-for-a-meeting-house","charleston-the-swamp-angel","charleston-the-tables-in-the-shed","charleston-the-village-that-would-not-line-up","charleston-the-wall-built-for-one-elopement","charleston-the-window-marion-missed","charleston-the-wood-that-would-not-break","charleston-the-yard-named-for-a-water-tank","charleston-they-called-out-liberty","charleston-three-daughters-in-the-garret","charleston-two-balls-in-the-wall","charleston-we-will-overcome","charleston-what-the-survey-wrote-down","charleston-where-the-horses-grazed","charleston-where-the-tide-came-in","charleston-white-ribbons","charleston-whose-arms-on-the-roof","charlotte-a-city-of-tents","charlotte-a-navy-yard-far-from-the-sea","charlotte-a-vein-under-south-end","charlotte-brought-to-you-by-a-laxative","charlotte-fred-in-the-arcade","charlotte-roots-in-north-carolina","charlotte-strictly-stock","charlotte-the-declaration-nobody-can-find","charlotte-the-mint-that-moved","charlotte-the-sandwich-from-crescent-avenue","charlotte-the-wall-in-front-of-the-courthouse","charlotte-twenty-beds-under-the-stadium","chicago-allowed-to-carry-twenty-five-hundred","chicago-sixty-five-degrees-then-twenty-three-inches","chicago-the-architect-went-to-the-seaside","chicago-the-case-that-outlived-the-pipe","chicago-the-cow-that-took-the-blame","chicago-the-garbage-inspector","chicago-the-porters-contract","chicago-the-sign-says-end","chicago-the-strike-that-stopped-the-trains","chicago-under-the-bleachers","city-hall-declaration","cleveland-no-more-protection","cleveland-the-missing-letter","cleveland-the-river-that-burned","craggy-gardens-balds","dc-a-bandstand-for-the-dead","dc-a-bear-with-his-own-zip-code","dc-a-country-he-never-saw","dc-a-gay-vietnam-veteran","dc-a-parade-around-the-building","dc-a-place-to-growl","dc-a-question-not-an-answer","dc-a-room-for-the-night","dc-a-voice-on-a-sunbeam","dc-an-unearthly-pause","dc-bring-him-in-here","dc-darth-vader-is-not-a-gargoyle","dc-erected-by-their-friends","dc-every-day-but-one","dc-farewell-sisters","dc-five-dollars-to-watch","dc-harding-waffles","dc-in-the-shadow-of-the-capitol","dc-in-twos-and-threes","dc-joan-gets-her-sword-back","dc-my-home-nonetheless","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-on-the-fort","dc-one-good-arm-and-a-shovel","dc-perseverance","dc-priced-by-size","dc-room-for-another-monument","dc-saved-by-a-mistake","dc-seventy-six-years-round","dc-shots-from-the-gallery","dc-six-white-horses","dc-somebody-had-to-be-there","dc-somewhere-to-hide","dc-the-admiral-went-home","dc-the-ballroom-ward","dc-the-best-show-in-town","dc-the-bow-in-the-corridor","dc-the-building-that-set-the-limit","dc-the-caretaker-heard-nothing","dc-the-cat-in-the-crypt","dc-the-cherry-tree-rebellion","dc-the-engine-under-the-floor","dc-the-epicurean-eating-house","dc-the-first-are-with-the-last","dc-the-first-name-on-the-bill-of-sale","dc-the-floor-under-the-street","dc-the-horse-called-freedom-rider","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-knight-of-the-feather-duster","dc-the-ladies-waiting-room","dc-the-letter-in-the-ceiling","dc-the-letter-that-got-fixed","dc-the-lights-stayed-on","dc-the-little-stone-house-that-moved","dc-the-man-who-found-the-bolts","dc-the-man-who-kept-up","dc-the-man-who-saved-patton","dc-the-map-underfoot","dc-the-old-man-finishing-his-speech","dc-the-opera-glass","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-password-at-the-bridge","dc-the-pilot-who-flew-the-wrong-way","dc-the-plaque-on-the-fence","dc-the-pleasantest-camp","dc-the-room-built-for-music","dc-the-seeds-from-the-dry-lake","dc-the-spots-on-the-stairs","dc-the-starting-line-came-later","dc-the-stone-from-concord","dc-the-tape-on-the-door","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-the-words-they-carved-away","dc-three-names-for-one-wing","dc-three-poems-in-a-satchel","dc-to-thee-we-sing","dc-too-good-to-check","dc-what-hath-god-wrought","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-white-before-the-fire","dc-why-february","dc-written-in-the-dark","dc-you-shall-reap-a-great-reward","deadwood-before-she-was-calamity","deadwood-his-back-to-the-door","deadwood-the-champions-of-america","fairfax-she-married-the-man-who-arrested-her","fairfax-thirty-killed-said-the-picture","fall-river-a-description-without-a-photograph","fall-river-the-granite-mill-fire","federal-hall-two-firsts","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","fraunces-tavern-farewell","hatteras-moved-the-lighthouse","houston-a-bison-named-earl","houston-a-bunch-of-guys-about-to-turn-blue","houston-a-capitol-without-a-roof","houston-a-pot-of-gold-on-washington","houston-a-window-for-doughnuts","houston-another-uss-houston","houston-constitution-bend","houston-for-the-masses","houston-ground-to-be-free-on","houston-his-name-on-the-tower","houston-hold-the-rail","houston-if-there-is-such-a-thing","houston-know-what-this-is-about","houston-love-me-orange","houston-one-dollar","houston-one-letter-missing","houston-out-of-desperation","houston-pay-as-you-go","houston-return-like-eagles","houston-the-basement-above-ground","houston-the-bodyguards-treasure","houston-the-box-began-to-chirp","houston-the-caretakers-violin","houston-the-condition","houston-the-cows-moved-out","houston-the-grass-that-gave-up","houston-the-letter-got-home","houston-the-lion-tamer","houston-the-man-in-the-brown-suit","houston-the-star-under-the-rug","houston-the-thing-in-freedmantown","houston-the-time-stopped-running","houston-the-verdict-that-was-erased","houston-thunder-and-lightnin","houston-turn-back","houston-two-bridges-for-one-street","houston-umbrellas-and-tennis-rackets","houston-we-passed-the-city","houston-weve-had-a-problem","houston-whatever-was-on-sale","houston-why-does-rice-play-texas","jerome-a-ghost-town-on-purpose","jerome-sixty-seven-men-in-cattle-cars","jerome-the-day-the-stone-melted","jerome-water-from-seven-miles-away","key-west-a-house-named-for-mercedes","key-west-ice-from-the-north","key-west-the-fort-that-lost-the-sea","key-west-the-guest-who-was-not-there","key-west-the-key-west-uniform","key-west-the-sailor-with-the-oar","key-west-the-studio-across-the-catwalk","kitty-hawk-shorter-than-this-plane","kure-beach-five-shells-in-the-dark","linn-cove-viaduct-last-piece","linville-gorge-too-steep","memphis-before-breakfast","memphis-it-worked-when-they-stopped","memphis-kid-douglas","memphis-the-amp-on-the-roof","memphis-the-b-side","memphis-the-mountaintop","memphis-the-ride-home","memphis-the-song-that-mocked-mr-crump","memphis-they-smashed-the-press","mount-mitchell-buried-on-top","nashville-a-hall-built-by-song","nashville-she-bit-the-conductor","nashville-six-encores","nashville-the-architect-in-the-wall","nashville-the-colored-lights","nashville-the-fort-nobody-attacked","nashville-the-harmonica-wizard","nashville-the-saloon-keepers-tabernacle","nashville-the-united-hilton","nashville-tile-thirteen","nashville-when-the-cumberland-came-up","nashville-yellow-roses-and-red","new-orleans-a-district-with-his-name","new-orleans-a-tomb-used-again","new-orleans-an-american-house","new-orleans-corn-from-philadelphia","new-orleans-ghosts-under-the-oaks","new-orleans-her-initials-in-the-iron","new-orleans-just-margaret","new-orleans-love-street","new-orleans-named-for-empty-ground","new-orleans-no-funerals-at-the-cathedral","new-orleans-nobody-left-by-the-back-door","new-orleans-out-of-the-trash-can","new-orleans-st-johns-eve-on-the-bayou","new-orleans-the-apothecarys-egg-cup","new-orleans-the-arrest-that-was-planned","new-orleans-the-basket-at-the-gate","new-orleans-the-blacksmith-shop-with-no-blacksmiths","new-orleans-the-boat-that-came-through-the-earthquake","new-orleans-the-candle-on-good-friday","new-orleans-the-casket-girls","new-orleans-the-champion-who-stopped","new-orleans-the-crosses-on-the-tomb","new-orleans-the-duke-on-the-street-sign","new-orleans-the-emperor-never-came","new-orleans-the-file-sellers","new-orleans-the-fire-in-the-kitchen","new-orleans-the-flag-on-the-mint","new-orleans-the-girl-on-the-belvedere","new-orleans-the-grand-zombis-square","new-orleans-the-harbor-behind-the-cemetery","new-orleans-the-house-of-the-turk","new-orleans-the-inquisitor-who-came-back","new-orleans-the-legislature-in-the-convent","new-orleans-the-lullaby-on-rampart-street","new-orleans-the-man-under-the-altar","new-orleans-the-neutral-ground","new-orleans-the-noise-on-the-common","new-orleans-the-oaks-on-the-pillars","new-orleans-the-opera-house-that-isnt-here","new-orleans-the-priests-house","new-orleans-the-river-above-the-street","new-orleans-the-short-pews","new-orleans-the-singing-priest","new-orleans-the-train-with-sails","new-orleans-the-woman-who-never-lived-here","new-orleans-three-cooks-know","new-orleans-twenty-days-of-france","new-orleans-two-weeks-from-water","new-orleans-words-on-the-base","new-york-a-canoe-under-the-wings","new-york-a-diamond-in-the-rough","new-york-a-giant-arm-in-the-park","new-york-a-hole-in-the-ground","new-york-a-house-for-sheep","new-york-a-lighthouse-for-the-titanic","new-york-a-monument-to-small-things","new-york-an-amiable-child","new-york-an-unsweetened-pastry","new-york-balto-and-togo","new-york-battleship-number-thirty-nine","new-york-big-mose","new-york-born-and-died-upstairs","new-york-crossing-brooklyn-ferry","new-york-doing-a-brodie","new-york-doughnut-shaped-rolls","new-york-easy-to-get-in","new-york-fifty-six-years-late","new-york-for-what-a-kick-line","new-york-hey-doctor","new-york-in-their-good-suits","new-york-it-sounds-like-a-tin-pan","new-york-its-magic-time","new-york-launched-in-greenpoint","new-york-more-than-paris","new-york-nine-and-a-half-feet","new-york-no-women-are-served","new-york-nobody-knows-her-name","new-york-nobody-told-the-ninth","new-york-one-name-not-in-the-records","new-york-one-of-several-places","new-york-one-patch-of-the-dark","new-york-one-staircase","new-york-out-the-back-door","new-york-patience-and-fortitude","new-york-she-came-to-dance","new-york-she-took-his-place","new-york-six-hours-before","new-york-someone-knew-we-were-there","new-york-ten-thousand-answers","new-york-the-basement-of-pupin-hall","new-york-the-black-bottle","new-york-the-candlemaker-of-staten-island","new-york-the-cane-whip","new-york-the-contest-nobody-held","new-york-the-cottage-at-fordham","new-york-the-crabs-under-the-needle","new-york-the-generals-guard","new-york-the-ghost-who-hates-golf","new-york-the-grand-central-depot","new-york-the-horse-at-the-ferry","new-york-the-house-that-moved-twice","new-york-the-house-they-built-back","new-york-the-king-under-the-playground","new-york-the-last-living-thing","new-york-the-last-tulip-tree","new-york-the-little-church-around-the-corner","new-york-the-manhattan","new-york-the-millionaire-who-went-missing","new-york-the-others-are-still-awake","new-york-the-pirates-share","new-york-the-pond-under-the-courthouses","new-york-the-prodigal-son-has-returned","new-york-the-red-ball-on-the-castle","new-york-the-sunday-school-picnic","new-york-the-well-under-the-shop","new-york-the-whispering-corners","new-york-the-years-without-the-ball","new-york-then-they-did-it-again","new-york-thirty-eight-was-wrong","new-york-twenty-five-cents-for-girls","new-york-twenty-three-skidoo","new-york-under-the-grass","new-york-under-the-surface-of-that-hill","new-york-water-over-the-harlem","new-york-where-mulberry-street-crooks","new-york-whos-buried-in-grants-tomb","new-york-you-eat-too-fast","newport-a-door-in-the-floor","newport-a-year-of-waiting","newport-the-line-washington-borrowed","newport-the-tower-nobody-agrees-on","news-cafe-last-ordinary-morning","oak-island-five-left-standing","oak-island-how-oak-island-became-an-island","oak-island-the-fence-on-the-dune","pawhuska-guardian-of-his-own-children","pawhuska-the-missing-panel","pearl-street-oysters","philadelphia-a-block-from-home","philadelphia-a-castle-in-our-rear","philadelphia-a-cat-named-catterina","philadelphia-a-fine-airy-place","philadelphia-a-firehouse-on-a-market","philadelphia-a-nickel-from-a-cab-driver","philadelphia-a-purple-and-cream-gown","philadelphia-a-ride-for-fire-crackers","philadelphia-a-roof-made-of-awnings","philadelphia-a-steeple-paid-by-lottery","philadelphia-a-street-through-the-folly","philadelphia-a-young-gentleman-of-this-city","philadelphia-as-much-as-anyone-knows","philadelphia-carpet-on-the-floor","philadelphia-citizens-in-peace","philadelphia-coffee-through-the-car-windows","philadelphia-congress-started-at-the-tavern","philadelphia-dear-julia","philadelphia-dorothy-todd-widow","philadelphia-forty-dozen-catfish","philadelphia-hamlet-paid-for-the-hospital","philadelphia-harrys-sandwich","philadelphia-he-left-the-year-blank","philadelphia-home-to-martin-street","philadelphia-if-you-can-keep-it","philadelphia-just-kids-dancing","philadelphia-knockout-prices","philadelphia-lines-around-the-block","philadelphia-muddy-footprints","philadelphia-no-hatch-wide-enough","philadelphia-no-letter-by-the-date","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-patents-bought-and-sold","philadelphia-penn-on-the-tower","philadelphia-prisoner-c-2559","philadelphia-prisoner-c2559","philadelphia-read-aloud-in-the-yard","philadelphia-recruited-at-the-bar","philadelphia-rising-or-setting","philadelphia-sea-lions-in-the-forebay","philadelphia-seventy-two-steps","philadelphia-shaken-in-a-hat","philadelphia-shoes-for-bob","philadelphia-showered-and-jerked-about","philadelphia-somebody-lives-here","philadelphia-tea-upstairs","philadelphia-the-baby-born-in-a-cave","philadelphia-the-baby-over-the-bank-door","philadelphia-the-battle-of-the-kegs","philadelphia-the-bell-went-to-allentown","philadelphia-the-brightest-house","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-creek-under-willow-street","philadelphia-the-curse-of-billy-penn","philadelphia-the-elm-nobody-wrote-down","philadelphia-the-empty-seat","philadelphia-the-first-vote-was-the-room","philadelphia-the-good-china","philadelphia-the-hall-that-lasted-three-days","philadelphia-the-house-nobody-would-live-in","philadelphia-the-house-that-nickels-built","philadelphia-the-knights-of-the-burning-mountain","philadelphia-the-lord-seeth","philadelphia-the-major-who-volunteered","philadelphia-the-market-under-the-trains","philadelphia-the-pageant-on-broad-street","philadelphia-the-ploughman-and-the-daisy","philadelphia-the-real-fighter","philadelphia-the-room-upstairs","philadelphia-the-stain-on-the-parlour-floor","philadelphia-the-street-that-was-a-creek","philadelphia-the-tusks-were-upside-down","philadelphia-they-work-fast-here","philadelphia-this-side-up-with-care","philadelphia-three-hundred-on-the-alley","philadelphia-time-is-very-long","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-unless-the-walls-could-speak","philadelphia-up-from-the-prison-yard","philadelphia-washington-left-last","philadelphia-we-sought-not-fee-nor-reward","philadelphia-what-her-grandson-said","philadelphia-where-evangeline-was-buried","saint-paul-almost-pigs-eye","saint-paul-half-a-mile-of-cellar","saint-paul-the-end-of-the-river-road","saint-paul-the-spirit-house","salem-a-life-in-one-house","salem-a-wharf-built-on-mud","salem-the-judges-house","salem-the-ship-that-missed-the-war","salem-the-surveyor-who-lost-his-job","san-antonio-a-day-at-the-mission","san-antonio-a-window-for-rosa","san-antonio-one-governor-was-enough","san-antonio-spirits-with-flaming-swords","san-antonio-the-army-gave-it-the-hump","san-antonio-the-chili-queens-plaza","san-antonio-the-eye-with-a-mustache","san-antonio-the-mission-that-kept-moving","san-antonio-twelve-thousand-pecan-shellers","san-antonio-water-over-the-creek","san-antonio-wooden-cannons-on-the-long-barrack","san-francisco-a-message-on-the-water-tower","san-francisco-a-toast-to-the-wrong-president","san-francisco-filled-by-the-tide","san-francisco-forty-two-tons-of-powder","san-francisco-hits-eight-and-nine","san-francisco-studying-in-the-bathroom","san-francisco-the-arch-over-the-fort","san-francisco-the-first-rangers-on-this-hill","san-francisco-the-lighthouse-with-a-flat-top","san-francisco-the-unfinished-mosaic","san-francisco-two-sisters-on-the-same-rocks","santa-fe-a-tank-called-the-mud-puppy","santa-fe-ben-hur-after-dark","santa-fe-the-carpenter-who-vanished","santa-fe-the-door-to-the-hill","santa-fe-the-end-of-the-trail","santa-fe-the-mother-ditch","santa-fe-what-the-tree-rings-say","santa-fe-when-the-plaza-was-a-pueblo","savannah-a-city-for-christmas","savannah-a-clubhouse-in-the-carriage-house","savannah-a-fort-for-jefferson","savannah-a-fort-made-of-oysters","savannah-a-house-for-a-president","savannah-a-hundred-yards-barefoot","savannah-a-pillow-in-bonaventure","savannah-a-rising-ground","savannah-a-tower-made-of-pine","savannah-ballast-stones","savannah-baseball-inside-the-fort","savannah-brick-pretending-to-be-stone","savannah-city-hall-dome","savannah-cotton-exchange","savannah-dinner-under-the-trees","savannah-eight-to-four","savannah-factors-walk","savannah-first-african-baptist","savannah-four-paces-apart","savannah-four-trials","savannah-friendless-but-for-him","savannah-he-prayed-for-them","savannah-house-of-mercy","savannah-leaning-on-a-fire-hydrant","savannah-little-gracie","savannah-morning-honey","savannah-names-over-the-gate","savannah-none-others-admitted","savannah-not-afraid-to-die","savannah-old-harbor-light","savannah-pirates-house","savannah-raleigh-on-gas-works-hill","savannah-six-hundred-pound-shells","savannah-steamship-savannah","savannah-thackerays-comfortable-quarters","savannah-the-artillerys-other-weapon","savannah-the-bomb-in-wassaw-sound","savannah-the-bus-that-never-came","savannah-the-check-from-hollywood","savannah-the-chicken-that-walked-backwards","savannah-the-chimney-with-privies-in-its-base","savannah-the-church-copied-from-itself","savannah-the-colonel-and-the-general","savannah-the-drummer-from-saint-domingue","savannah-the-fountain-that-kept-getting-more-parisian","savannah-the-gate-in-the-bull-street-wall","savannah-the-gate-she-made","savannah-the-general-facing-south","savannah-the-general-who-went-missing","savannah-the-ghosts-of-old-greenwich","savannah-the-girl-who-left-the-cemetery","savannah-the-handkerchief-duel","savannah-the-house-that-moved","savannah-the-lazaretto","savannah-the-library-on-loan","savannah-the-lion-on-the-bed","savannah-the-m-and-t-oaks","savannah-the-night-the-cathedral-burned","savannah-the-parking-lot-that-never-came","savannah-the-punch-that-sank-an-admiral","savannah-the-sergeant-who-would-not-be-an-officer","savannah-the-silkworm-house","savannah-the-spring-that-smelled-of-the-bolt","savannah-the-stone-beside-the-grave","savannah-the-synagogue-with-the-onion-dome","savannah-the-vaults-on-south-broad","savannah-the-woman-was-hanged-yesterday","savannah-the-word-in-the-basement","savannah-they-cannot-breach-your-walls","savannah-to-have-land","savannah-twenty-two-squares","savannah-waving-girl","savannah-wesleys-empty-lot","savannah-white-only-until-1963","savannah-white-paper-in-their-hats","savannah-who-lies-under-the-pulaski-monument","savannah-who-slew-odrey-miller","savannah-yamacraw-bluff","savannah-you-are-my-prisoner","southport-a-fish-house-plays-a-fish-shack","southport-a-wretched-little-place","southport-carved-in-imperishable-stone","southport-croaker-queen","southport-one-floor-below-the-cells","southport-pay-on-your-way-out","southport-red-over-white","southport-the-bent-oak","southport-the-city-of-the-south-atlantic","southport-the-festival-of-free-men","southport-the-gentleman-giant","southport-the-harp-that-kept-playing","southport-the-last-cupola","southport-the-old-man-and-the-boy","southport-the-reporter-who-could-not-hear","southport-the-reverends-church","southport-the-station-in-the-river","southport-the-watch-on-the-river","southport-the-woman-who-raised-the-flags","southport-worse-than-hazel","st-augustine-a-hotel-poured-from-shells","st-augustine-a-wall-of-seashells","st-augustine-acid-in-the-pool","st-augustine-drawings-on-ledger-paper","st-augustine-the-first-thanksgiving-menu","st-augustine-the-free-town-in-the-marsh","st-augustine-the-inlet-of-slaughters","st-augustine-wild-cats-window","the-balcony","the-children-at-the-lighthouse","the-distance-across-the-street","the-empty-frames","the-footsteps-above-the-gallows","the-garage-that-vanished","the-girl-who-wanted-her-doll","the-lady-in-grey","the-last-movie","the-lights-beyond-the-ridge","the-men-who-left-their-faces-behind","the-music-in-the-empty-room","the-other-history-of-fraunces-tavern","the-prison-corridor","the-prisoner-who-never-reached-the-prison","the-room-that-knocks-back","the-turn-onto-elm-street","wall-street-the-wall","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);
+export const VERIFIED_IDS: ReadonlySet<string> = new Set(["african-burial-ground","annapolis-a-port-called-napolis","annapolis-a-private-citizen-by-christmas","annapolis-married-in-that-house","annapolis-the-dome-was-a-lookout","asheville-a-dome-made-of-tile","asheville-a-government-at-the-inn","asheville-a-leg-in-a-boot","asheville-a-yodel-on-the-top-floor","asheville-the-boardinghouse-called-dixieland","asheville-the-fire-at-highland-hospital","asheville-the-man-who-walked-a-wheel","asheville-the-ymi","atlantic-city-first-boardwalk","bald-head-captain-charlie-lit-both","bald-head-the-builder-who-lost-money","bald-head-the-prisms-coming-home","bald-head-the-swim-to-southport","bald-head-the-woman-on-the-shore","boston-a-door-like-a-tomb","boston-a-fort-you-could-carry","boston-a-ride-on-the-top-stone","boston-a-smell-of-oranges","boston-abiel-smith-school-goodbye","boston-african-meeting-house-built-by-its-people","boston-beacon-hill-the-beacon","boston-brimstone-corner","boston-common-cows","boston-franklins-other-corner","boston-granary-five-in-one-grave","boston-hayden-house-keg","boston-her-book-on-the-tea-ship","boston-in-short-i-lost-most-all","boston-mother-goose","boston-poe-walks-away","boston-say-no-more","boston-sealed-in-the-fort","boston-shaw-memorial-forty-faces","boston-sides-made-of-iron","boston-six-weeks-and-a-fair","boston-state-house-dome-copper","boston-swan-boats-mrs-paget","boston-the-boy-who-would-not-sing","boston-the-church-inside-the-church","boston-the-cloak-she-forgot","boston-the-ducklings-twins","boston-the-harpies-of-the-shore","boston-the-house-that-stayed-useful","boston-the-lady-in-black","boston-the-letter-on-the-slate","boston-the-lion-and-the-unicorn","boston-the-monument-that-names-nobody","boston-the-poem-that-built-a-statue","boston-the-reed-that-stuck","boston-the-school-that-lost-its-ground","boston-the-sextons-lodgers","boston-the-spire-that-fell","boston-the-spy-question","boston-the-stone-they-shot-at","boston-the-street-that-ran-into-the-sea","boston-the-whites-of-their-eyes","boston-the-wire-watson-kept","boston-the-wrong-hill","boston-waiting-for-mister-rotch","boston-what-the-auditor-found","boston-where-the-water-was","boston-who-said-fire","bowling-green-king-george","canyon-of-heroes","carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","casa-casuarina-the-steps","castle-clinton-eight-million","caswell-beach-a-hat-from-a-helicopter","caswell-beach-a-lighthouse-poured-in-a-week","caswell-beach-the-long-day-of-dunbar-davis","caswell-beach-the-night-caswell-blew-up","caswell-beach-the-second-brightest-light","caswell-beach-yachts-on-submarine-watch","charging-bull-illegal","charleston-a-bench-for-the-unnamed","charleston-a-broken-taillight","charleston-a-cake-and-a-shark","charleston-a-candle-for-air","charleston-a-chest-of-medicine","charleston-a-dollar-thirty-an-hour","charleston-a-gallery-on-the-highway","charleston-a-message-for-hell","charleston-a-strangers-initials","charleston-a-wharf-he-was-willing-to-lose","charleston-an-opera-at-the-beach","charleston-blackbeards-ransom","charleston-blown-up-to-stop-a-fire","charleston-blue-and-buff-rosettes","charleston-blue-to-keep-the-spirits-out","charleston-bolted-together","charleston-built-for-a-capital","charleston-built-to-fall-inward","charleston-buried-at-the-gate","charleston-calhoun-moved-by-night","charleston-every-five-minutes","charleston-exiled-by-the-sound-of-the-lash","charleston-fifteen-feet-of-sea","charleston-five-times-across","charleston-four-years-to-the-day","charleston-gothic-over-brick","charleston-hey-charleston","charleston-madame-margots-bargain","charleston-martyrs-of-the-race-course","charleston-no-pirates-lived-here","charleston-not-called-catfish","charleston-old-joe-cole","charleston-pineapples-that-are-not","charleston-rice-peas-and-the-new-year","charleston-sermons-on-the-tide","charleston-silver-forks-and-iced-claret","charleston-skulls-over-the-market","charleston-steps-that-only-go-up","charleston-the-angels-oak","charleston-the-audience-on-the-sea-wall","charleston-the-badge-that-paid-the-firemen","charleston-the-bedsheet","charleston-the-building-that-could-not-burn","charleston-the-butlers-soup","charleston-the-castle-on-the-square","charleston-the-church-that-crossed-the-street","charleston-the-congregation-that-rebuilt","charleston-the-editor-who-got-off-the-streetcar","charleston-the-fire-and-the-brick-law","charleston-the-flag-on-a-sponge-stick","charleston-the-island-in-the-gold-bug","charleston-the-last-of-six-beaches","charleston-the-lighthouse-the-sea-walked-to","charleston-the-lighthouse-with-a-lift","charleston-the-man-who-would-not-fire","charleston-the-museums-front-door","charleston-the-narrow-strip-of-sand","charleston-the-night-the-wall-opened","charleston-the-painter-on-chalmers-street","charleston-the-petition-of-forty-seven","charleston-the-piece-somebody-kept","charleston-the-playhouse-on-dock-street","charleston-the-powder-behind-the-wall","charleston-the-presidents-face-in-their-hair","charleston-the-sailor-on-the-steeple","charleston-the-school-behind-the-store","charleston-the-seed-and-the-knowing","charleston-the-ship-called-echo","charleston-the-street-named-for-a-meeting-house","charleston-the-swamp-angel","charleston-the-tables-in-the-shed","charleston-the-village-that-would-not-line-up","charleston-the-wall-built-for-one-elopement","charleston-the-window-marion-missed","charleston-the-wood-that-would-not-break","charleston-the-yard-named-for-a-water-tank","charleston-they-called-out-liberty","charleston-three-daughters-in-the-garret","charleston-two-balls-in-the-wall","charleston-we-will-overcome","charleston-what-the-survey-wrote-down","charleston-where-the-horses-grazed","charleston-where-the-tide-came-in","charleston-white-ribbons","charleston-whose-arms-on-the-roof","charlotte-a-city-of-tents","charlotte-a-navy-yard-far-from-the-sea","charlotte-a-vein-under-south-end","charlotte-brought-to-you-by-a-laxative","charlotte-fred-in-the-arcade","charlotte-roots-in-north-carolina","charlotte-strictly-stock","charlotte-the-declaration-nobody-can-find","charlotte-the-mint-that-moved","charlotte-the-sandwich-from-crescent-avenue","charlotte-the-wall-in-front-of-the-courthouse","charlotte-twenty-beds-under-the-stadium","chicago-allowed-to-carry-twenty-five-hundred","chicago-sixty-five-degrees-then-twenty-three-inches","chicago-the-architect-went-to-the-seaside","chicago-the-case-that-outlived-the-pipe","chicago-the-cow-that-took-the-blame","chicago-the-garbage-inspector","chicago-the-porters-contract","chicago-the-sign-says-end","chicago-the-strike-that-stopped-the-trains","chicago-under-the-bleachers","city-hall-declaration","cleveland-no-more-protection","cleveland-the-missing-letter","cleveland-the-river-that-burned","craggy-gardens-balds","dc-a-bandstand-for-the-dead","dc-a-bear-with-his-own-zip-code","dc-a-country-he-never-saw","dc-a-gay-vietnam-veteran","dc-a-parade-around-the-building","dc-a-place-to-growl","dc-a-question-not-an-answer","dc-a-room-for-the-night","dc-a-voice-on-a-sunbeam","dc-an-unearthly-pause","dc-bring-him-in-here","dc-darth-vader-is-not-a-gargoyle","dc-erected-by-their-friends","dc-every-day-but-one","dc-farewell-sisters","dc-five-dollars-to-watch","dc-harding-waffles","dc-in-the-shadow-of-the-capitol","dc-in-twos-and-threes","dc-joan-gets-her-sword-back","dc-my-home-nonetheless","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-on-the-fort","dc-one-good-arm-and-a-shovel","dc-perseverance","dc-priced-by-size","dc-room-for-another-monument","dc-saved-by-a-mistake","dc-seventy-six-years-round","dc-shots-from-the-gallery","dc-six-white-horses","dc-somebody-had-to-be-there","dc-somewhere-to-hide","dc-the-admiral-went-home","dc-the-ballroom-ward","dc-the-best-show-in-town","dc-the-bow-in-the-corridor","dc-the-building-that-set-the-limit","dc-the-caretaker-heard-nothing","dc-the-cat-in-the-crypt","dc-the-cherry-tree-rebellion","dc-the-engine-under-the-floor","dc-the-epicurean-eating-house","dc-the-first-are-with-the-last","dc-the-first-name-on-the-bill-of-sale","dc-the-floor-under-the-street","dc-the-horse-called-freedom-rider","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-knight-of-the-feather-duster","dc-the-ladies-waiting-room","dc-the-letter-in-the-ceiling","dc-the-letter-that-got-fixed","dc-the-lights-stayed-on","dc-the-little-stone-house-that-moved","dc-the-man-who-found-the-bolts","dc-the-man-who-kept-up","dc-the-man-who-saved-patton","dc-the-map-underfoot","dc-the-old-man-finishing-his-speech","dc-the-opera-glass","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-password-at-the-bridge","dc-the-pilot-who-flew-the-wrong-way","dc-the-plaque-on-the-fence","dc-the-pleasantest-camp","dc-the-room-built-for-music","dc-the-seeds-from-the-dry-lake","dc-the-spots-on-the-stairs","dc-the-starting-line-came-later","dc-the-stone-from-concord","dc-the-tape-on-the-door","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-the-words-they-carved-away","dc-three-names-for-one-wing","dc-three-poems-in-a-satchel","dc-to-thee-we-sing","dc-too-good-to-check","dc-what-hath-god-wrought","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-white-before-the-fire","dc-why-february","dc-written-in-the-dark","dc-you-shall-reap-a-great-reward","deadwood-before-she-was-calamity","deadwood-his-back-to-the-door","deadwood-the-champions-of-america","fairfax-she-married-the-man-who-arrested-her","fairfax-thirty-killed-said-the-picture","fall-river-a-description-without-a-photograph","fall-river-the-granite-mill-fire","federal-hall-two-firsts","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","fraunces-tavern-farewell","hatteras-moved-the-lighthouse","houston-a-bison-named-earl","houston-a-bunch-of-guys-about-to-turn-blue","houston-a-capitol-without-a-roof","houston-a-pot-of-gold-on-washington","houston-a-window-for-doughnuts","houston-another-uss-houston","houston-constitution-bend","houston-for-the-masses","houston-ground-to-be-free-on","houston-his-name-on-the-tower","houston-hold-the-rail","houston-if-there-is-such-a-thing","houston-know-what-this-is-about","houston-love-me-orange","houston-one-dollar","houston-one-letter-missing","houston-out-of-desperation","houston-pay-as-you-go","houston-return-like-eagles","houston-the-basement-above-ground","houston-the-bodyguards-treasure","houston-the-box-began-to-chirp","houston-the-caretakers-violin","houston-the-condition","houston-the-cows-moved-out","houston-the-grass-that-gave-up","houston-the-letter-got-home","houston-the-lion-tamer","houston-the-man-in-the-brown-suit","houston-the-star-under-the-rug","houston-the-thing-in-freedmantown","houston-the-time-stopped-running","houston-the-verdict-that-was-erased","houston-thunder-and-lightnin","houston-turn-back","houston-two-bridges-for-one-street","houston-umbrellas-and-tennis-rackets","houston-we-passed-the-city","houston-weve-had-a-problem","houston-whatever-was-on-sale","houston-why-does-rice-play-texas","jerome-a-ghost-town-on-purpose","jerome-sixty-seven-men-in-cattle-cars","jerome-the-day-the-stone-melted","jerome-water-from-seven-miles-away","key-west-a-house-named-for-mercedes","key-west-brought-by-a-wreck","key-west-built-for-the-pirate-hunters","key-west-every-factory-a-club","key-west-ice-from-the-north","key-west-limes-by-air","key-west-never-armed","key-west-not-once","key-west-the-chickens-world","key-west-the-fort-that-lost-the-sea","key-west-the-gold-telegram","key-west-the-grave-nobody-was-shown","key-west-the-guest-who-was-not-there","key-west-the-house-that-came-by-boat","key-west-the-judge-and-the-wreckers","key-west-the-key-west-uniform","key-west-the-light-was-sharp-and-crisp","key-west-the-monument-architects-hospital","key-west-the-sailor-with-the-oar","key-west-the-studio-across-the-catwalk","key-west-the-weaker-cup","key-west-walls-waiting-for-a-roof","kitty-hawk-shorter-than-this-plane","kure-beach-five-shells-in-the-dark","linn-cove-viaduct-last-piece","linville-gorge-too-steep","memphis-before-breakfast","memphis-it-worked-when-they-stopped","memphis-kid-douglas","memphis-the-amp-on-the-roof","memphis-the-b-side","memphis-the-mountaintop","memphis-the-ride-home","memphis-the-song-that-mocked-mr-crump","memphis-they-smashed-the-press","mount-mitchell-buried-on-top","nashville-a-hall-built-by-song","nashville-she-bit-the-conductor","nashville-six-encores","nashville-the-architect-in-the-wall","nashville-the-colored-lights","nashville-the-fort-nobody-attacked","nashville-the-harmonica-wizard","nashville-the-saloon-keepers-tabernacle","nashville-the-united-hilton","nashville-tile-thirteen","nashville-when-the-cumberland-came-up","nashville-yellow-roses-and-red","new-orleans-a-district-with-his-name","new-orleans-a-tomb-used-again","new-orleans-an-american-house","new-orleans-corn-from-philadelphia","new-orleans-ghosts-under-the-oaks","new-orleans-her-initials-in-the-iron","new-orleans-just-margaret","new-orleans-love-street","new-orleans-named-for-empty-ground","new-orleans-no-funerals-at-the-cathedral","new-orleans-nobody-left-by-the-back-door","new-orleans-out-of-the-trash-can","new-orleans-st-johns-eve-on-the-bayou","new-orleans-the-apothecarys-egg-cup","new-orleans-the-arrest-that-was-planned","new-orleans-the-basket-at-the-gate","new-orleans-the-blacksmith-shop-with-no-blacksmiths","new-orleans-the-boat-that-came-through-the-earthquake","new-orleans-the-candle-on-good-friday","new-orleans-the-casket-girls","new-orleans-the-champion-who-stopped","new-orleans-the-crosses-on-the-tomb","new-orleans-the-duke-on-the-street-sign","new-orleans-the-emperor-never-came","new-orleans-the-file-sellers","new-orleans-the-fire-in-the-kitchen","new-orleans-the-flag-on-the-mint","new-orleans-the-girl-on-the-belvedere","new-orleans-the-grand-zombis-square","new-orleans-the-harbor-behind-the-cemetery","new-orleans-the-house-of-the-turk","new-orleans-the-inquisitor-who-came-back","new-orleans-the-legislature-in-the-convent","new-orleans-the-lullaby-on-rampart-street","new-orleans-the-man-under-the-altar","new-orleans-the-neutral-ground","new-orleans-the-noise-on-the-common","new-orleans-the-oaks-on-the-pillars","new-orleans-the-opera-house-that-isnt-here","new-orleans-the-priests-house","new-orleans-the-river-above-the-street","new-orleans-the-short-pews","new-orleans-the-singing-priest","new-orleans-the-train-with-sails","new-orleans-the-woman-who-never-lived-here","new-orleans-three-cooks-know","new-orleans-twenty-days-of-france","new-orleans-two-weeks-from-water","new-orleans-words-on-the-base","new-york-a-canoe-under-the-wings","new-york-a-diamond-in-the-rough","new-york-a-giant-arm-in-the-park","new-york-a-hole-in-the-ground","new-york-a-house-for-sheep","new-york-a-lighthouse-for-the-titanic","new-york-a-monument-to-small-things","new-york-an-amiable-child","new-york-an-unsweetened-pastry","new-york-balto-and-togo","new-york-battleship-number-thirty-nine","new-york-big-mose","new-york-born-and-died-upstairs","new-york-crossing-brooklyn-ferry","new-york-doing-a-brodie","new-york-doughnut-shaped-rolls","new-york-easy-to-get-in","new-york-fifty-six-years-late","new-york-for-what-a-kick-line","new-york-hey-doctor","new-york-in-their-good-suits","new-york-it-sounds-like-a-tin-pan","new-york-its-magic-time","new-york-launched-in-greenpoint","new-york-more-than-paris","new-york-nine-and-a-half-feet","new-york-no-women-are-served","new-york-nobody-knows-her-name","new-york-nobody-told-the-ninth","new-york-one-name-not-in-the-records","new-york-one-of-several-places","new-york-one-patch-of-the-dark","new-york-one-staircase","new-york-out-the-back-door","new-york-patience-and-fortitude","new-york-she-came-to-dance","new-york-she-took-his-place","new-york-six-hours-before","new-york-someone-knew-we-were-there","new-york-ten-thousand-answers","new-york-the-basement-of-pupin-hall","new-york-the-black-bottle","new-york-the-candlemaker-of-staten-island","new-york-the-cane-whip","new-york-the-contest-nobody-held","new-york-the-cottage-at-fordham","new-york-the-crabs-under-the-needle","new-york-the-generals-guard","new-york-the-ghost-who-hates-golf","new-york-the-grand-central-depot","new-york-the-horse-at-the-ferry","new-york-the-house-that-moved-twice","new-york-the-house-they-built-back","new-york-the-king-under-the-playground","new-york-the-last-living-thing","new-york-the-last-tulip-tree","new-york-the-little-church-around-the-corner","new-york-the-manhattan","new-york-the-millionaire-who-went-missing","new-york-the-others-are-still-awake","new-york-the-pirates-share","new-york-the-pond-under-the-courthouses","new-york-the-prodigal-son-has-returned","new-york-the-red-ball-on-the-castle","new-york-the-sunday-school-picnic","new-york-the-well-under-the-shop","new-york-the-whispering-corners","new-york-the-years-without-the-ball","new-york-then-they-did-it-again","new-york-thirty-eight-was-wrong","new-york-twenty-five-cents-for-girls","new-york-twenty-three-skidoo","new-york-under-the-grass","new-york-under-the-surface-of-that-hill","new-york-water-over-the-harlem","new-york-where-mulberry-street-crooks","new-york-whos-buried-in-grants-tomb","new-york-you-eat-too-fast","newport-a-door-in-the-floor","newport-a-year-of-waiting","newport-the-line-washington-borrowed","newport-the-tower-nobody-agrees-on","news-cafe-last-ordinary-morning","oak-island-five-left-standing","oak-island-how-oak-island-became-an-island","oak-island-the-fence-on-the-dune","pawhuska-guardian-of-his-own-children","pawhuska-the-missing-panel","pearl-street-oysters","philadelphia-a-block-from-home","philadelphia-a-castle-in-our-rear","philadelphia-a-cat-named-catterina","philadelphia-a-fine-airy-place","philadelphia-a-firehouse-on-a-market","philadelphia-a-nickel-from-a-cab-driver","philadelphia-a-purple-and-cream-gown","philadelphia-a-ride-for-fire-crackers","philadelphia-a-roof-made-of-awnings","philadelphia-a-steeple-paid-by-lottery","philadelphia-a-street-through-the-folly","philadelphia-a-young-gentleman-of-this-city","philadelphia-as-much-as-anyone-knows","philadelphia-carpet-on-the-floor","philadelphia-citizens-in-peace","philadelphia-coffee-through-the-car-windows","philadelphia-congress-started-at-the-tavern","philadelphia-dear-julia","philadelphia-dorothy-todd-widow","philadelphia-forty-dozen-catfish","philadelphia-hamlet-paid-for-the-hospital","philadelphia-harrys-sandwich","philadelphia-he-left-the-year-blank","philadelphia-home-to-martin-street","philadelphia-if-you-can-keep-it","philadelphia-just-kids-dancing","philadelphia-knockout-prices","philadelphia-lines-around-the-block","philadelphia-muddy-footprints","philadelphia-no-hatch-wide-enough","philadelphia-no-letter-by-the-date","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-patents-bought-and-sold","philadelphia-penn-on-the-tower","philadelphia-prisoner-c-2559","philadelphia-prisoner-c2559","philadelphia-read-aloud-in-the-yard","philadelphia-recruited-at-the-bar","philadelphia-rising-or-setting","philadelphia-sea-lions-in-the-forebay","philadelphia-seventy-two-steps","philadelphia-shaken-in-a-hat","philadelphia-shoes-for-bob","philadelphia-showered-and-jerked-about","philadelphia-somebody-lives-here","philadelphia-tea-upstairs","philadelphia-the-baby-born-in-a-cave","philadelphia-the-baby-over-the-bank-door","philadelphia-the-battle-of-the-kegs","philadelphia-the-bell-went-to-allentown","philadelphia-the-brightest-house","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-creek-under-willow-street","philadelphia-the-curse-of-billy-penn","philadelphia-the-elm-nobody-wrote-down","philadelphia-the-empty-seat","philadelphia-the-first-vote-was-the-room","philadelphia-the-good-china","philadelphia-the-hall-that-lasted-three-days","philadelphia-the-house-nobody-would-live-in","philadelphia-the-house-that-nickels-built","philadelphia-the-knights-of-the-burning-mountain","philadelphia-the-lord-seeth","philadelphia-the-major-who-volunteered","philadelphia-the-market-under-the-trains","philadelphia-the-pageant-on-broad-street","philadelphia-the-ploughman-and-the-daisy","philadelphia-the-real-fighter","philadelphia-the-room-upstairs","philadelphia-the-stain-on-the-parlour-floor","philadelphia-the-street-that-was-a-creek","philadelphia-the-tusks-were-upside-down","philadelphia-they-work-fast-here","philadelphia-this-side-up-with-care","philadelphia-three-hundred-on-the-alley","philadelphia-time-is-very-long","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-unless-the-walls-could-speak","philadelphia-up-from-the-prison-yard","philadelphia-washington-left-last","philadelphia-we-sought-not-fee-nor-reward","philadelphia-what-her-grandson-said","philadelphia-where-evangeline-was-buried","saint-paul-almost-pigs-eye","saint-paul-half-a-mile-of-cellar","saint-paul-the-end-of-the-river-road","saint-paul-the-spirit-house","salem-a-life-in-one-house","salem-a-wharf-built-on-mud","salem-the-judges-house","salem-the-ship-that-missed-the-war","salem-the-surveyor-who-lost-his-job","san-antonio-a-day-at-the-mission","san-antonio-a-window-for-rosa","san-antonio-one-governor-was-enough","san-antonio-spirits-with-flaming-swords","san-antonio-the-army-gave-it-the-hump","san-antonio-the-chili-queens-plaza","san-antonio-the-eye-with-a-mustache","san-antonio-the-mission-that-kept-moving","san-antonio-twelve-thousand-pecan-shellers","san-antonio-water-over-the-creek","san-antonio-wooden-cannons-on-the-long-barrack","san-francisco-a-coffin-for-the-hippie","san-francisco-a-cookie-from-the-tea-garden","san-francisco-a-fence-against-the-sun","san-francisco-a-gi-pet","san-francisco-a-grave-for-carlotta","san-francisco-a-message-on-the-water-tower","san-francisco-a-ship-under-clay-street","san-francisco-a-suitcase-on-steuart-street","san-francisco-a-toast-to-the-wrong-president","san-francisco-an-emperor-on-dupont-street","san-francisco-filled-by-the-tide","san-francisco-flowers-at-the-doubtfire-house","san-francisco-forty-two-tons-of-powder","san-francisco-four-posts-for-a-blade-of-grass","san-francisco-hits-eight-and-nine","san-francisco-in-the-event-of-my-death","san-francisco-not-a-fire-hose","san-francisco-nothing-above-the-windows","san-francisco-pagodas-for-the-tourists","san-francisco-red-wine-on-the-fire","san-francisco-studying-in-the-bathroom","san-francisco-the-alley-where-miles-archer-fell","san-francisco-the-arch-over-the-fort","san-francisco-the-first-rangers-on-this-hill","san-francisco-the-lighthouse-with-a-flat-top","san-francisco-the-sea-lions-who-moved-in","san-francisco-the-unfinished-mosaic","san-francisco-to-brisbane-in-two-minutes","san-francisco-turn-the-cable-car-around","san-francisco-two-sisters-on-the-same-rocks","san-francisco-when-do-we-get-the-manuscript","santa-fe-a-tank-called-the-mud-puppy","santa-fe-ben-hur-after-dark","santa-fe-the-carpenter-who-vanished","santa-fe-the-door-to-the-hill","santa-fe-the-end-of-the-trail","santa-fe-the-mother-ditch","santa-fe-what-the-tree-rings-say","santa-fe-when-the-plaza-was-a-pueblo","savannah-a-city-for-christmas","savannah-a-clubhouse-in-the-carriage-house","savannah-a-fort-for-jefferson","savannah-a-fort-made-of-oysters","savannah-a-house-for-a-president","savannah-a-hundred-yards-barefoot","savannah-a-pillow-in-bonaventure","savannah-a-rising-ground","savannah-a-tower-made-of-pine","savannah-ballast-stones","savannah-baseball-inside-the-fort","savannah-brick-pretending-to-be-stone","savannah-city-hall-dome","savannah-cotton-exchange","savannah-dinner-under-the-trees","savannah-eight-to-four","savannah-factors-walk","savannah-first-african-baptist","savannah-four-paces-apart","savannah-four-trials","savannah-friendless-but-for-him","savannah-he-prayed-for-them","savannah-house-of-mercy","savannah-leaning-on-a-fire-hydrant","savannah-little-gracie","savannah-morning-honey","savannah-names-over-the-gate","savannah-none-others-admitted","savannah-not-afraid-to-die","savannah-old-harbor-light","savannah-pirates-house","savannah-raleigh-on-gas-works-hill","savannah-six-hundred-pound-shells","savannah-steamship-savannah","savannah-thackerays-comfortable-quarters","savannah-the-artillerys-other-weapon","savannah-the-bomb-in-wassaw-sound","savannah-the-bus-that-never-came","savannah-the-check-from-hollywood","savannah-the-chicken-that-walked-backwards","savannah-the-chimney-with-privies-in-its-base","savannah-the-church-copied-from-itself","savannah-the-colonel-and-the-general","savannah-the-drummer-from-saint-domingue","savannah-the-fountain-that-kept-getting-more-parisian","savannah-the-gate-in-the-bull-street-wall","savannah-the-gate-she-made","savannah-the-general-facing-south","savannah-the-general-who-went-missing","savannah-the-ghosts-of-old-greenwich","savannah-the-girl-who-left-the-cemetery","savannah-the-handkerchief-duel","savannah-the-house-that-moved","savannah-the-lazaretto","savannah-the-library-on-loan","savannah-the-lion-on-the-bed","savannah-the-m-and-t-oaks","savannah-the-night-the-cathedral-burned","savannah-the-parking-lot-that-never-came","savannah-the-punch-that-sank-an-admiral","savannah-the-sergeant-who-would-not-be-an-officer","savannah-the-silkworm-house","savannah-the-spring-that-smelled-of-the-bolt","savannah-the-stone-beside-the-grave","savannah-the-synagogue-with-the-onion-dome","savannah-the-vaults-on-south-broad","savannah-the-woman-was-hanged-yesterday","savannah-the-word-in-the-basement","savannah-they-cannot-breach-your-walls","savannah-to-have-land","savannah-twenty-two-squares","savannah-waving-girl","savannah-wesleys-empty-lot","savannah-white-only-until-1963","savannah-white-paper-in-their-hats","savannah-who-lies-under-the-pulaski-monument","savannah-who-slew-odrey-miller","savannah-yamacraw-bluff","savannah-you-are-my-prisoner","southport-a-fish-house-plays-a-fish-shack","southport-a-wretched-little-place","southport-carved-in-imperishable-stone","southport-croaker-queen","southport-one-floor-below-the-cells","southport-pay-on-your-way-out","southport-red-over-white","southport-the-bent-oak","southport-the-city-of-the-south-atlantic","southport-the-festival-of-free-men","southport-the-gentleman-giant","southport-the-harp-that-kept-playing","southport-the-last-cupola","southport-the-old-man-and-the-boy","southport-the-reporter-who-could-not-hear","southport-the-reverends-church","southport-the-station-in-the-river","southport-the-watch-on-the-river","southport-the-woman-who-raised-the-flags","southport-worse-than-hazel","st-augustine-a-hotel-poured-from-shells","st-augustine-a-wall-of-seashells","st-augustine-acid-in-the-pool","st-augustine-drawings-on-ledger-paper","st-augustine-the-first-thanksgiving-menu","st-augustine-the-free-town-in-the-marsh","st-augustine-the-inlet-of-slaughters","st-augustine-wild-cats-window","the-balcony","the-children-at-the-lighthouse","the-distance-across-the-street","the-empty-frames","the-footsteps-above-the-gallows","the-garage-that-vanished","the-girl-who-wanted-her-doll","the-lady-in-grey","the-last-movie","the-lights-beyond-the-ridge","the-men-who-left-their-faces-behind","the-music-in-the-empty-room","the-other-history-of-fraunces-tavern","the-prison-corridor","the-prisoner-who-never-reached-the-prison","the-room-that-knocks-back","the-turn-onto-elm-street","wall-street-the-wall","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);
