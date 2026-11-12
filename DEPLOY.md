@@ -281,7 +281,13 @@ The marketing site is `apps/site` (`@echofinders/site`): React 18, Vite, Tailwin
 `PLANS` in `packages/core/src/entitlement/entitlement.ts`.
 
 It is its own Vercel project, `echo-finders-site`, with root directory `apps/site`. Merging to
-`main` deploys both the app and the site. The domain `echofinders.com` is registered at
+`main` deploys both the app and the site.
+
+**Which pushes build (2026-11-12).** To save Vercel builds, `scripts/vercel-ignore.sh` is each
+project's `ignoreCommand`: a push to any branch other than `main` builds nothing (no preview
+URLs; CI runs the checks), and a merge to `main` builds a project only when a file it is built
+from changed. A merge that only touches `apps/ios` builds neither. The script lists those files
+for each project; add to the list when a build starts reading something new. The domain `echofinders.com` is registered at
 GoDaddy; its DNS points at Vercel (an `A` record for the apex and a `CNAME` for `www`, values
 as shown in the Vercel project's Domains page).
 
