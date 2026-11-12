@@ -8,6 +8,8 @@ place: "T. M. Thompson House, north side of West Bay Street between Caswell Aven
 at: { lat: 33.917, lng: -78.02125 }
 triggerRadiusKm: 0.05
 category: history
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 49
 visibility: at-hand

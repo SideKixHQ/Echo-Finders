@@ -9,6 +9,8 @@ place: "Burgwin-Wright House, 224 Market Street, Wilmington, North Carolina"
 at: { lat: 34.23545, lng: -77.94647 }
 triggerRadiusKm: 0.04
 category: history
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 54
 visibility: at-hand

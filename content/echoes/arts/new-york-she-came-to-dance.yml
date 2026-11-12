@@ -1,0 +1,213 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Harlem cluster.
+# Listening spot: The 125th Street sidewalk under the Apollo Theater's marquee and vertical sign, 253 West 125th Street.
+# Reviewer note: NPR (2008, 2007) gives her age as 16; NPR (2017) and CBS give 17 on 21 November 1934. Born 25 April 1917, she was 17; the script says seventeen.
+# Position: Overture places the Apollo Theater (performing arts venue) at 40.80990, -73.95017; the spot is the sidewalk in front (high confidence).
+id: new-york-she-came-to-dance
+title: "She Came to Dance"
+summary: "In November 1934 a homeless seventeen year old walked onto the Apollo stage for Amateur Night, meaning to dance. She froze, and sang."
+place: "Apollo Theater, 125th Street, Harlem, Manhattan"
+at: { lat: 40.80985, lng: -73.95015 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, harlem, apollo, music, jazz, ella-fitzgerald]
+teaser: "She had planned to dance. Then the lights came up."
+script: |
+  Look up at the tall sign over these doors, the one that spells out Apollo.
+
+  Since nineteen thirty four, strangers have walked out onto the stage in there for Amateur Night. There are no judges. The audience decides, and the audience is not forgiving.
+
+  On a Wednesday night in November, nineteen thirty four, a seventeen year old girl walked out onto that stage. Her name was Ella Fitzgerald.
+
+  Her mother had died. She had been sent to a reform school, where she was beaten, and she ran away. She was living on the streets, with no money, sleeping wherever she could.
+
+  She had come to dance.
+
+  But the act before her was a pair of dancing sisters, and they had stopped the show. And when she got out under the lights and saw all those people, she froze.
+
+  The man said, well, you're out here. Do something.
+
+  So she sang.
+
+  She won. The prize was twenty five dollars and a week's work. Soon after, the bandleader Chick Webb asked her to join his orchestra. She became the First Lady of Song.
+
+  Look at those doors again. A girl with nowhere to sleep walked through them, to dance.
+
+  I never thought I was a singer, she said.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look up at the tall sign over these doors, the one that spells out Apollo."
+    source: 5
+    quote: "The 1,500-seat theatre on 125th Street opened as an entertainment mecca for Harlem's black community in 1934"
+  - says: "Since nineteen thirty four, strangers have walked out onto the stage in there for Amateur Night."
+    source: 3
+    quote: "The first Amateur Night was in 1934."
+  - says: "There are no judges."
+    source: 3
+    quote: "There's no panel of judges here; the audience decides, and they are not forgiving."
+  - says: "The audience decides, and the audience is not forgiving."
+    source: 3
+    quote: "There's no panel of judges here; the audience decides, and they are not forgiving."
+  - says: "On a Wednesday night in November, nineteen thirty four, a seventeen year old girl walked out onto that stage."
+    source: 1
+    quote: "What she did talk about was an Amateur Night contest at Harlem's legendary Apollo Theater on Wednesday, Nov. 21, 1934. She was 17 years old."
+  - says: "On a Wednesday night in November, nineteen thirty four, a seventeen year old girl walked out onto that stage."
+    source: 3
+    quote: "That night a 17-year-old named Ella Fitzgerald was discovered."
+  - says: "Her name was Ella Fitzgerald."
+    source: 1
+    quote: "Music was always her refuge, but Ella Fitzgerald never thought she would be a singer until she won an Amateur Night contest at the Apollo Theater in 1934."
+  - says: "Her mother had died."
+    source: 1
+    quote: "But everything changed when her beloved mother died."
+  - says: "She had been sent to a reform school, where she was beaten, and she ran away."
+    source: 1
+    quote: "At one point, she was arrested for truancy and sent to a reform school, where she was regularly beaten. So she ran away"
+  - says: "She was living on the streets, with no money, sleeping wherever she could."
+    source: 1
+    quote: "with no money, living on the streets and sleeping where she could."
+  - says: "She had come to dance."
+    source: 2
+    quote: "At age 16, she was planning to perform a dance at Harlem's famed Apollo Theatre Amateur Night, which always took place after a headlining performance."
+  - says: "But the act before her was a pair of dancing sisters, and they had stopped the show."
+    source: 4
+    quote: "Ella Fitzgerald was nervous that she could not dance as well as the previous act, The Edward Sisters, who in her words, were “the dancingnest sisters, they stopped the show!”"
+  - says: "And when she got out under the lights and saw all those people, she froze."
+    source: 1
+    quote: "But I'd never been in front of the lights and I saw all of those people out there, I just got stage fright."
+  - says: "The man said, well, you're out here."
+    source: 1
+    quote: "And the man said, 'Well, you're out here. Do something!'"
+  - says: "So she sang."
+    source: 2
+    quote: "Instead, Fitzgerald decided to sing. She captivated the crowd and won the contest."
+  - says: "So she sang."
+    source: 4
+    quote: "So when she made her debut at the age of 17, she decided to sing."
+  - says: "She won."
+    source: 2
+    quote: "She captivated the crowd and won the contest."
+  - says: "The prize was twenty five dollars and a week's work."
+    source: 5
+    quote: "Ella Fitzgerald was one of the first winners of \"Amateur Night\" in 1934. Her prize: $25 and a week's work."
+  - says: "Soon after, the bandleader Chick Webb asked her to join his orchestra."
+    source: 6
+    quote: "Soon after her Apollo Theater stint, drummer and bandleader Chick Webb asked the shy 16 year-old Ella to join his orchestra."
+  - says: "She became the First Lady of Song."
+    source: 2
+    quote: "From then on, she would win countless fans throughout her career, in the process becoming the First Lady of Song."
+  - says: "I never thought I was a singer, she said."
+    source: 1
+    quote: "\"I never thought I was a singer,\" Fitzgerald once told Brian Linehan of the CBC."
+sources:
+  - title: "Ella Fitzgerald At 100: Early Hardship Couldn't Muffle Her Joy"
+    publisher: "NPR, 25 April 2017"
+    url: https://www.npr.org/2017/04/25/524726767/early-hardship-couldnt-muffle-ella-fitzgeralds-joy
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Ella Fitzgerald: First Lady Of Song"
+    publisher: "NPR, 23 April 2008"
+    url: https://www.npr.org/2008/04/23/89845452/ella-fitzgerald-first-lady-of-song
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Black History Month: In World's Longest-Running Talent Show Some Shine, Others Wither At Apollo Theater"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/black-history-month-in-worlds-longest-running-talent-show-some-shine-others-wither-at-apollo-theater/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "The Apollo: A national stage for a generation of black entertainers"
+    publisher: "NBC News, NBCBLK"
+    url: https://www.nbcnews.com/news/nbcblk/apollo-national-stage-generation-black-entertainers-n1086086
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "\"Amateur Night\" at the Apollo, now 80 years young"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/amateur-night-at-the-apollo-now-80-years-young/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Ella Fitzgerald, 'First Lady Of Song'"
+    publisher: "NPR, 13 June 2007"
+    url: https://www.npr.org/2007/06/13/10208984/ella-fitzgerald-first-lady-of-song
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-she-came-to-dance/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.2
+    audioBytes: 1283595
+    transcript:
+      totalS: 80.2
+      lines:
+        - text: Look up at the tall sign over these doors, the one that spells out Apollo.
+          atS: 0
+          durationS: 4.89
+        - text: Since nineteen thirty four, strangers have walked out onto the stage in there for Amateur Night.
+          atS: 5.7
+          durationS: 5.32
+        - text: There are no judges.
+          atS: 11.53
+          durationS: 1.32
+        - text: The audience decides, and the audience is not forgiving.
+          atS: 13.23
+          durationS: 4.03
+        - text: On a Wednesday night in November, nineteen thirty four, a seventeen year old girl walked out onto that stage.
+          atS: 18.56
+          durationS: 6.66
+        - text: Her name was Ella Fitzgerald.
+          atS: 25.55
+          durationS: 1.85
+        - text: Her mother had died.
+          atS: 27.84
+          durationS: 1.32
+        - text: She had been sent to a reform school, where she was beaten, and she ran away.
+          atS: 29.61
+          durationS: 3.96
+        - text: She was living on the streets, with no money, sleeping wherever she could.
+          atS: 33.95
+          durationS: 4.56
+        - text: She had come to dance.
+          atS: 38.89
+          durationS: 1.42
+        - text: But the act before her was a pair of dancing sisters, and they had stopped the show.
+          atS: 40.69
+          durationS: 5.54
+        - text: And when she got out under the lights and saw all those people, she froze.
+          atS: 46.67
+          durationS: 4.25
+        - text: The man said, well, you're out here.
+          atS: 51.36
+          durationS: 2.64
+        - text: Do something.
+          atS: 54.38
+          durationS: 0.93
+        - text: So she sang.
+          atS: 56.01
+          durationS: 1.1
+        - text: She won.
+          atS: 57.43
+          durationS: 0.78
+        - text: The prize was twenty five dollars and a week's work.
+          atS: 58.49
+          durationS: 3.08
+        - text: Soon after, the bandleader Chick Webb asked her to join his orchestra.
+          atS: 62.38
+          durationS: 4.11
+        - text: She became the First Lady of Song.
+          atS: 67.09
+          durationS: 1.99
+        - text: Look at those doors again.
+          atS: 69.68
+          durationS: 1.36
+        - text: A girl with nowhere to sleep walked through them, to dance.
+          atS: 72.16
+          durationS: 3.97
+        - text: I never thought I was a singer, she said.
+          atS: 77.24
+          durationS: 2.91

@@ -1,0 +1,130 @@
+# Drafted by Claude Code (2026-11-09) for Chicago, Illinois.
+# Listening spot: The public sidewalk on Ellis Avenue by the University of Chicago, at the marked site of Chicago Pile-1.
+# Position: Wikidata Q284681 (Chicago Pile-1, 41.792222, -87.600833) and Q4355111 (the marker sculpture at the site, 41.7925, -87.6011); listener on the Ellis Avenue side (medium-high confidence).
+id: chicago-under-the-bleachers
+title: "Under the Bleachers"
+summary: "In 1942, under the stands of Stagg Field, Manhattan Project scientists built the first reactor to sustain a nuclear chain reaction."
+place: "Site of Chicago Pile-1, Ellis Avenue, University of Chicago, Chicago, Illinois"
+at: { lat: 41.7925, lng: -87.6011 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 77
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [chicago, hyde-park, university-of-chicago, world-war-ii, military, manhattan-project, science]
+teaser: "The nuclear age began on a squash court, with no way to switch it off in a hurry."
+script: |
+  Right about here, there used to be a football field, Stagg Field, with stands that nobody was using.
+
+  On a squash court underneath those unused stands, the scientists of the Manhattan Project built a stack of graphite and uranium blocks, twenty feet tall, over two weeks.
+
+  It had no safety features. No shielding from radiation, and no way to cool it down.
+
+  Enrico Fermi assured Arthur Compton that the likelihood of a catastrophic failure was slim. On the campus of one of the most populous cities in the country, the outcome was never certain.
+
+  On the second of December, 1942, at three fifty-three in the afternoon, with the control rods carefully removed, the Chicago Pile reached criticality. It was the first time in history that a self-sustaining nuclear reaction had been achieved.
+
+  The youngest member of the team, and the only woman, was Leona Woods. The scientists celebrated with a bottle of Chianti.
+
+  The pile was taken apart shortly afterwards. The stands are gone too. What is left is the spot, a National Historic Landmark since 1967, where the nuclear age began under the bleachers.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Right about here, there used to be a football field, Stagg Field, with stands that nobody was using."
+    source: 1
+    quote: "On a squash court underneath the university’s unused Stagg Field football stands"
+  - says: "On a squash court underneath those unused stands, the scientists of the Manhattan Project built a stack of graphite and uranium blocks, twenty feet tall, over two weeks."
+    source: 1
+    quote: "On a squash court underneath the university’s unused Stagg Field football stands, the scientists and workers built a 20-foot-tall (6 meter) stack of graphite and uranium blocks over a two-week period"
+  - says: "Manhattan Project"
+    source: 1
+    quote: "Manhattan Project administrators selected the University of Chicago as the site of the Metallurgical Laboratory"
+  - says: "It had no safety features."
+    source: 1
+    quote: "the Met Lab’s experiment had no safety features- no shielding from radiation and no way to cool the reactor."
+  - says: "No shielding from radiation, and no way to cool it down."
+    source: 1
+    quote: "no shielding from radiation and no way to cool the reactor."
+  - says: "Enrico Fermi assured Arthur Compton that the likelihood of a catastrophic failure was slim."
+    source: 1
+    quote: "Fermi assured Compton that the likelihood of a catastrophic failure (on the campus of one of the country’s most populous cities no less) was slim, but the outcome was never certain."
+  - says: "Enrico Fermi assured Arthur Compton"
+    source: 1
+    quote: "Led by Arthur Compton, the Met Lab assembled a team of scientists that included Enrico Fermi"
+  - says: "On the campus of one of the most populous cities in the country, the outcome was never certain."
+    source: 1
+    quote: "on the campus of one of the country’s most populous cities no less) was slim, but the outcome was never certain."
+  - says: "On the second of December, 1942, at three fifty-three in the afternoon, with the control rods carefully removed, the Chicago Pile reached criticality."
+    source: 1
+    quote: "On December 2, 1942 at 3:53 pm CST, with the control rods carefully removed, their creation, dubbed the Chicago Pile (CP-1), reached criticality."
+  - says: "It was the first time in history that a self-sustaining nuclear reaction had been achieved."
+    source: 1
+    quote: "It was the first time in history that a self-sustaining nuclear reaction had been achieved."
+  - says: "The youngest member of the team, and the only woman, was Leona Woods."
+    source: 1
+    quote: "Leona Woods Marshall Libby, the youngest member and only female member of the team."
+  - says: "The scientists celebrated with a bottle of Chianti."
+    source: 1
+    quote: "The scientists celebrated with a bottle of Chianti"
+  - says: "The pile was taken apart shortly afterwards."
+    source: 1
+    quote: "Though CP-1 was disassembled shortly after the experiment"
+  - says: "What is left is the spot, a National Historic Landmark since 1967, where the nuclear age began under the bleachers."
+    source: 1
+    quote: "the site of its construction was dedicated a National Historic Landmark in 1967."
+sources:
+  - title: "Chicago, IL (Chicago during the Manhattan Project)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/chicago-during-the-manhattan-project.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/chicago-under-the-bleachers/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77
+    audioBytes: 1233858
+    transcript:
+      totalS: 77
+      lines:
+        - text: Right about here, there used to be a football field, Stagg Field, with stands that nobody was using.
+          atS: 0
+          durationS: 6.06
+        - text: On a squash court underneath those unused stands, the scientists of the Manhattan Project built a stack of graphite and uranium blocks, twenty feet tall, over two weeks.
+          atS: 6.76
+          durationS: 10.96
+        - text: It had no safety features.
+          atS: 18.16
+          durationS: 1.74
+        - text: No shielding from radiation, and no way to cool it down.
+          atS: 20.34
+          durationS: 3.99
+        - text: Enrico Fermi assured Arthur Compton that the likelihood of a catastrophic failure was slim.
+          atS: 25.15
+          durationS: 5.34
+        - text: On the campus of one of the most populous cities in the country, the outcome was never certain.
+          atS: 31.18
+          durationS: 5.62
+        - text: On the second of December, 1942, at three fifty-three in the afternoon, with the control rods carefully removed, the Chicago Pile reached criticality.
+          atS: 37.76
+          durationS: 10.54
+        - text: It was the first time in history that a self-sustaining nuclear reaction had been achieved.
+          atS: 48.81
+          durationS: 5.4
+        - text: The youngest member of the team, and the only woman, was Leona Woods.
+          atS: 54.9
+          durationS: 4.48
+        - text: The scientists celebrated with a bottle of Chianti.
+          atS: 59.9
+          durationS: 3.38
+        - text: The pile was taken apart shortly afterwards.
+          atS: 63.66
+          durationS: 2.76
+        - text: The stands are gone too.
+          atS: 66.8
+          durationS: 1.5
+        - text: What is left is the spot, a National Historic Landmark since 1967, where the nuclear age began under the bleachers.
+          atS: 68.74
+          durationS: 8.3

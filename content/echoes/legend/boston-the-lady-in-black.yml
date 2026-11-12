@@ -8,6 +8,8 @@ place: "Fort Warren, Georges Island, Boston Harbor Islands, Massachusetts"
 at: { lat: 42.32028, lng: -70.92778 }
 triggerRadiusKm: 0.15
 category: legend
+rare: extra-rare
+rareReason: "Hard to reach"
 format: short
 durationS: 77
 visibility: at-hand

@@ -9,6 +9,8 @@ at: { lat: 31.97600, lng: -81.09500 }
 triggerRadiusKm: 0.1
 voice: UrTldiIxfedDl9tlesyS
 category: kids
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 61
 visibility: at-hand

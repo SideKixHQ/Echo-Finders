@@ -1,0 +1,197 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Grand Central and Midtown cluster (more NYC batch).
+# Listening spot: The plaque to Nathan Hale on the Yale Club building, at the corner of East 44th Street and Vanderbilt Avenue, beside Grand Central Terminal.
+# Position: East 44th Street at Vanderbilt Avenue, from the street plan (medium confidence). About 150 m from the Grand Central echoes on the drafts branch; a different subject. A plaque, so the radius is tight.
+id: new-york-one-of-several-places
+title: "One of Several Places"
+summary: "A plaque here says Nathan Hale was hanged near this spot, and gives his famous last words. Neither the spot nor the words are certain."
+place: "Nathan Hale plaque, East 44th Street at Vanderbilt Avenue, Midtown Manhattan"
+at: { lat: 40.75395, lng: -73.97760 }
+triggerRadiusKm: 0.03
+category: scandals
+format: short
+durationS: 90
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  Hale's capture and hanging on 22 September 1776 are documented. Where he was hanged is disputed: this 1954 plaque says near here, the Federal Writers' Project guide of 1939 points to First Avenue at 46th Street, and CBS New York lists further plaques at 51st and First and at 66th and Third. His famous last words are also disputed: the Library of Congress Information Bulletin (2003) says there is no contemporary evidence he spoke them. The script says out loud that both are uncertain.
+minAge: 10
+quality: 0.9
+tags: [new-york, midtown, grand-central, revolution, military, nathan-hale, spies, plaques]
+teaser: "Read the plaque. Then ask how many other plaques say the same thing."
+script: |
+  Find the bronze plaque on the corner of this building, at Forty Fourth Street and Vanderbilt Avenue. Read it.
+
+  At the British Artillery Park near this site, it says, Nathan Hale was executed on the morning of September twenty second, seventeen seventy six. And it gives his last words. I only regret that I have but one life to lose for my country.
+
+  It is a fine plaque. It may be in the wrong place.
+
+  Hale was twenty one, a captain in the Continental Army. He volunteered to slip behind British lines and spy. He was caught.
+
+  What we know for certain comes from the British side. An orderly book says he was taken the night of the twenty first, confessed, and was hanged the next day at eleven in the morning.
+
+  Where? Nobody knows. New York's city guide of nineteen thirty nine pointed to a tablet on a meat packing plant, at First Avenue and Forty Sixth Street. There is another plaque at Fifty First and First, and another at Sixty Sixth and Third. Each one says, near here.
+
+  And the words? A historian at the Library of Congress put it plainly. There is no contemporary evidence that Hale uttered these exact words. Nineteenth century writers gave them to him, and made him a martyr.
+
+  So stand by the plaque, and read the words again.
+
+  They may not have been his. They have been ours ever since.
+
+pronunciations:
+  - written: Vanderbilt
+    say: VAN-der-bilt
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "At the British Artillery Park near this site, it says, Nathan Hale was executed on the morning of September twenty second, seventeen seventy six."
+    source: 2
+    quote: "Photograph shows a plaque, located on a building at East 44th Street and Vanderbilt Avenue, which reads, \"At the British Artillery Park near this site, Nathan Hale, captain in the U.S. Army, Yale Graduate of 1773, apprehended within enemy lines while seeking information, was executed on the morning of September 22, 1776."
+  - says: "I only regret that I have but one life to lose for my country."
+    source: 2
+    quote: "His last words were, 'I only regret that I have but one life to lose for my country'"
+  - says: "Hale was twenty one, a captain in the Continental Army."
+    source: 1
+    quote: "As a 21-year-old captain in the Continental Army whose spotless moral character was universally admired, Hale courageously volunteered in September 1776 for the dangerous mission of reconnoitering British army positions"
+  - says: "He volunteered to slip behind British lines and spy."
+    source: 1
+    quote: "Hale courageously volunteered in September 1776 for the dangerous mission of reconnoitering British army positions in the New York City area"
+  - says: "An orderly book says he was taken the night of the twenty first, confessed, and was hanged the next day at eleven in the morning."
+    source: 1
+    quote: "An orderly book reported that Hale was \"apprehended last night,\" i.e., Sept. 21, confessed and was hanged on the 22nd at 11 a.m."
+  - says: "New York's city guide of nineteen thirty nine pointed to a tablet on a meat packing plant, at First Avenue and Forty Sixth Street."
+    source: 4
+    quote: "On the wall of the Wilson meat-packing plant, on the southeast corner of First Avenue and Forty-sixth Street, is a TABLET commemorating the execution of Nathan Hale (September 22, 1776), which is supposed to have occurred near here."
+  - says: "There is another plaque at Fifty First and First, and another at Sixty Sixth and Third."
+    source: 3
+    quote: "A plaque on a Duane Reade on 51st and First claims Hale was hung in an orchard nearby. There's another plaque at 66th and Third, and another near Grand Central."
+  - says: "There is no contemporary evidence that Hale uttered these exact words."
+    source: 1
+    quote: "There is no contemporary evidence that Hale uttered these exact words"
+  - says: "Nineteenth century writers gave them to him, and made him a martyr."
+    source: 1
+    quote: "Ardent patriot writers of the 19th century depicted Hale's death in theological tones"
+  - says: "Find the bronze plaque on the corner of this building, at Forty Fourth Street and Vanderbilt Avenue."
+    source: 2
+    quote: "Photograph shows a plaque, located on a building at East 44th Street and Vanderbilt Avenue"
+  - says: "And it gives his last words."
+    source: 2
+    quote: "His last words were, 'I only regret that I have but one life to lose for my country'"
+  - says: "It may be in the wrong place."
+    source: 2
+    quote: "On verso: \"Note - disputed locations\"."
+  - says: "What we know for certain comes from the British side."
+    source: 1
+    quote: "The \"hard intelligence\" whose paucity Thompson lamented consists of three statements by British soldiers on the fateful 22nd of September."
+  - says: "Each one says, near here."
+    source: 4
+    quote: "is a TABLET commemorating the execution of Nathan Hale (September 22, 1776), which is supposed to have occurred near here."
+  - says: "Each one says, near here."
+    source: 3
+    quote: "A plaque on a Duane Reade on 51st and First claims Hale was hung in an orchard nearby."
+  - says: "A historian at the Library of Congress put it plainly."
+    source: 1
+    quote: "James Hutson is chief of the Manuscript Division."
+  - says: "They may not have been his."
+    source: 1
+    quote: "There is no contemporary evidence that Hale uttered these exact words; in fact, much of what has been written about his fateful mission is based on inference, guesswork and flights of imagination."
+sources:
+  - title: "Nathan Hale Revisited, Library of Congress Information Bulletin, July/August 2003"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/loc/lcib/0307-8/hale.html
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "[Plaque marking the execution of Nathan Hale], photograph, May 1954 (record notes \"disputed locations\")"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2020636111/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "6 Places To Find The Revolutionary War In NYC"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/6-places-to-find-the-revolutionary-war-in-nyc/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Kip's Bay and Turtle Bay"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-one-of-several-places/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 90.2
+    audioBytes: 1444092
+    transcript:
+      totalS: 90.2
+      lines:
+        - text: Find the bronze plaque on the corner of this building, at Forty Fourth Street and Vanderbilt Avenue.
+          atS: 0
+          durationS: 5.76
+        - text: Read it.
+          atS: 6.14
+          durationS: 0.7
+        - text: At the British Artillery Park near this site, it says, Nathan Hale was executed on the morning of September twenty second, seventeen seventy six.
+          atS: 7.79
+          durationS: 10.07
+        - text: And it gives his last words.
+          atS: 18.3
+          durationS: 2.04
+        - text: I only regret that I have but one life to lose for my country.
+          atS: 20.78
+          durationS: 3.48
+        - text: It is a fine plaque.
+          atS: 24.44
+          durationS: 1.31
+        - text: It may be in the wrong place.
+          atS: 26
+          durationS: 1.65
+        - text: Hale was twenty one, a captain in the Continental Army.
+          atS: 28.46
+          durationS: 3.55
+        - text: He volunteered to slip behind British lines and spy.
+          atS: 32.52
+          durationS: 3.59
+        - text: He was caught.
+          atS: 36.55
+          durationS: 0.93
+        - text: What we know for certain comes from the British side.
+          atS: 38.08
+          durationS: 2.73
+        - text: An orderly book says he was taken the night of the twenty first, confessed, and was hanged the next day at eleven in the morning.
+          atS: 41.32
+          durationS: 7.58
+        - text: Where?
+          atS: 49.51
+          durationS: 0.58
+        - text: Nobody knows.
+          atS: 50.78
+          durationS: 1.16
+        - text: New York's city guide of nineteen thirty nine pointed to a tablet on a meat packing plant, at First Avenue and Forty Sixth Street.
+          atS: 53.06
+          durationS: 7.81
+        - text: There is another plaque at Fifty First and First, and another at Sixty Sixth and Third.
+          atS: 61.47
+          durationS: 5.04
+        - text: Each one says, near here.
+          atS: 66.9
+          durationS: 2.11
+        - text: And the words?
+          atS: 69.45
+          durationS: 0.98
+        - text: A historian at the Library of Congress put it plainly.
+          atS: 70.87
+          durationS: 3.1
+        - text: There is no contemporary evidence that Hale uttered these exact words.
+          atS: 74.35
+          durationS: 4.03
+        - text: Nineteenth century writers gave them to him, and made him a martyr.
+          atS: 78.82
+          durationS: 3.58
+        - text: So stand by the plaque, and read the words again.
+          atS: 82.78
+          durationS: 2.79
+        - text: They may not have been his.
+          atS: 86.08
+          durationS: 1.57
+        - text: They have been ours ever since.
+          atS: 87.89
+          durationS: 2.3

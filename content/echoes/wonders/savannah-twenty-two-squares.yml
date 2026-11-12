@@ -1,0 +1,104 @@
+id: savannah-twenty-two-squares
+title: A city plan from 1733 that nobody has managed to undo
+summary: Savannah's grid of squares was drawn before the city existed, and most of it is still there.
+place: Savannah, Georgia
+at: { lat: 32.0809, lng: -81.0912 }
+triggerRadiusKm: 45
+voice: IMlxLW3qgn0MWgfz7Vnh
+category: wonders
+format: short
+durationS: 53
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.87
+tags: [georgia, urban-planning, colonial]
+teaser: If the cloud is thin, look for the pattern. You will know it when you see it.
+script: |
+  If you can see the ground on the left, look for a pattern: a grid, interrupted at regular
+  intervals by small green squares.
+
+  That layout was drawn in seventeen thirty-three, before there was a city to put it in.
+  James Oglethorpe laid out a repeating unit, a square with house lots and civic lots
+  around it, and the plan was simply to keep repeating it as the place grew.
+
+  Twenty-four were eventually built. Twenty-two are still there.
+
+  Cities almost never survive this. Street plans get widened for carts, then for trams, then
+  for cars, and the awkward bits get straightened out. Savannah's squares are exactly the
+  awkward bits. They force traffic to slow down and go around.
+
+  A few have been lost along the way. The plan has not.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "That layout was drawn in seventeen thirty-three, before there was a city to put it in."
+    source: 1
+    quote: "visitors and residents come to appreciate the original plan which has existed intact since Savannah's founding in 1733."
+  - says: "James Oglethorpe laid out a repeating unit, a square with house lots and civic lots"
+    source: 1
+    quote: "His basic module of design was a square-shaped unit called a \"Ward.\" At the center of each ward was a large, open space called a \"Square.\""
+  - says: "the plan was simply to keep repeating it as the place grew"
+    source: 1
+    quote: "As the city grew, the plan was repeated."
+  - says: "That layout was drawn in seventeen thirty-three"
+    source: 2
+    quote: "General James Oglethorpe laid the city out in 1733 with a series of grids"
+  - says: "Twenty-four were eventually built."
+    source: 2
+    quote: "Savannah had 24 original squares with 22 still in existence."
+  - says: "Twenty-two are still there."
+    source: 2
+    quote: "Savannah had 24 original squares with 22 still in existence."
+sources:
+  - title: "Savannah, Georgia: The Lasting Legacy of Colonial City Planning (Teaching with Historic Places)"
+    publisher: National Park Service
+    url: https://www.nps.gov/articles/savannah-georgia-the-lasting-legacy-of-colonial-city-planning-teaching-with-historic-places.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Savannah"
+    publisher: "National Park Service, Fort Pulaski National Monument"
+    url: https://www.nps.gov/fopu/learn/historyculture/savannah.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-twenty-two-squares/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.9
+    audioBytes: 847246
+    transcript:
+      totalS: 52.9
+      lines:
+        - text: "If you can see the ground on the left, look for a pattern: a grid, interrupted at regular intervals by small green squares."
+          atS: 0
+          durationS: 7.85
+        - text: That layout was drawn in seventeen thirty-three, before there was a city to put it in.
+          atS: 8.66
+          durationS: 4.81
+        - text: James Oglethorpe laid out a repeating unit, a square with house lots and civic lots around it, and the plan was simply to keep repeating it as the place grew.
+          atS: 14.16
+          durationS: 9.72
+        - text: Twenty-four were eventually built.
+          atS: 24.39
+          durationS: 1.97
+        - text: Twenty-two are still there.
+          atS: 26.75
+          durationS: 1.99
+        - text: Cities almost never survive this.
+          atS: 29.55
+          durationS: 2.5
+        - text: Street plans get widened for carts, then for trams, then for cars, and the awkward bits get straightened out.
+          atS: 32.55
+          durationS: 7.89
+        - text: Savannah's squares are exactly the awkward bits.
+          atS: 41.15
+          durationS: 3.28
+        - text: They force traffic to slow down and go around.
+          atS: 44.87
+          durationS: 3.1
+        - text: A few have been lost along the way.
+          atS: 48.48
+          durationS: 2.1
+        - text: The plan has not.
+          atS: 51.09
+          durationS: 1.8

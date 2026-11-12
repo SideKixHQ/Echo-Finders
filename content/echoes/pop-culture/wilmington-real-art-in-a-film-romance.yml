@@ -1,0 +1,82 @@
+# Inspo, film and television (from James's document, second set) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture 2026-09-23.0 address point for 3201 South 17th Street (Wikidata Q5026170 agrees).
+id: wilmington-real-art-in-a-film-romance
+title: "Real Art Inside a Fictional Romance"
+summary: "The Longest Ride filmed its museum scene at the Cameron Art Museum, under a James Grashow installation of cardboard monkeys."
+place: "Cameron Art Museum, 3201 South 17th Street, Wilmington, North Carolina"
+at: { lat: 34.184181, lng: -77.915726 }
+triggerRadiusKm: 0.08
+category: pop-culture
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 37
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, the-longest-ride, nicholas-sparks, museum]
+teaser: "The Longest Ride's museum date, under a room of cardboard monkeys."
+script: |
+  Look at the museum. For a Nicholas Sparks film, it played itself: a place to fall for
+  somebody in front of art.
+
+  The Longest Ride shot its museum scene here over three days. Britt Robertson, Scott Eastwood and
+  Gloria Reuben mingled under an exhibit by James Grashow made of dozens of cardboard monkeys.
+
+  The romance was invented. The art was real, and it was already here. Film crews borrow museums
+  for the same reason people go on dates in them: something interesting to look at while you decide
+  how you feel.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "For a Nicholas Sparks film, it played itself"
+    source: 1
+    quote: "are featured in Nicholas Sparks' film."
+  - says: "The Longest Ride shot its museum scene here over three days."
+    source: 2
+    quote: "This was a three day shoot at the Cameron Art Museum for the museum scene"
+  - says: "Britt Robertson, Scott Eastwood and Gloria Reuben mingled under an exhibit by James Grashow made of dozens of cardboard monkeys."
+    source: 1
+    quote: "Actors Britt Robertson, Scott Eastwood and Gloria Reuben mingled under a James Grashow exhibit consisting of dozens of cardboard monkeys."
+sources:
+  - title: "Top Wilmington & Beaches Film and TV Locations"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/wilmingtonnc/Wilmington_Film_and_TV_Location_Guide_1b6bc72d-2881-4fd5-b656-0344de2b7a24.pdf
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "The Longest Ride (2015)"
+    publisher: "Wilmington NC Movies (wilmtv.com)"
+    url: https://wilmtv.com/production/the-longest-ride-2015
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-real-art-in-a-film-romance/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 37.1
+    audioBytes: 594798
+    transcript:
+      totalS: 37.1
+      lines:
+        - text: Look at the museum.
+          atS: 0
+          durationS: 1.31
+        - text: "For a Nicholas Sparks film, it played itself: a place to fall for somebody in front of art."
+          atS: 1.49
+          durationS: 5.67
+        - text: The Longest Ride shot its museum scene here over three days.
+          atS: 8.45
+          durationS: 4.24
+        - text: Britt Robertson, Scott Eastwood and Gloria Reuben mingled under an exhibit by James Grashow made of dozens of cardboard monkeys.
+          atS: 12.97
+          durationS: 8.29
+        - text: The romance was invented.
+          atS: 22.37
+          durationS: 1.67
+        - text: The art was real, and it was already here.
+          atS: 24.65
+          durationS: 2.82
+        - text: "Film crews borrow museums for the same reason people go on dates in them: something interesting to look at while you decide how you feel."
+          atS: 28.28
+          durationS: 8.82

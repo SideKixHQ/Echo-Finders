@@ -8,6 +8,8 @@ place: "Old St. Joseph's Church, Willings Alley, Philadelphia, Pennsylvania"
 at: { lat: 39.94643, lng: -75.14745 }
 triggerRadiusKm: 0.04
 category: hidden
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 87
 visibility: at-hand

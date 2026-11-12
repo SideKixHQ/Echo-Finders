@@ -1,0 +1,154 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Georgetown), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Dumbarton Oaks museum, 1703 32nd Street NW, inside the Music Room, open to visitors during museum hours.
+# Position: Overture place 'Dumbarton Oaks' (museum, 1703 32nd St NW) at 38.91387, -77.06348 (high confidence for the house; the room is inside it).
+id: dc-the-room-built-for-music
+title: "The Room Built for Music"
+summary: "Stravinsky's Dumbarton Oaks concerto had its premiere in this Georgetown music room. Six years later, the United Nations was planned in it."
+place: "Music Room, Dumbarton Oaks, 1703 32nd Street NW, Georgetown, Washington, D.C."
+at: { lat: 38.91387, lng: -77.06348 }
+triggerRadiusKm: 0.04
+category: arts
+rare: rare
+rareReason: "Inside, with opening hours"
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+inside: true
+hours: { fromHour: 11, toHour: 17 }
+tags: [washington, georgetown, dumbarton-oaks, united-nations, world-war-two, stravinsky]
+teaser: "First a concerto. Then, in the middle of a world war, the plan for the United Nations."
+script: |
+  Look around the music room of this Georgetown mansion. It was made for concerts. In nineteen thirty eight, the lady of the house, Mrs. Bliss, commissioned a concerto from Igor Stravinsky. Its world premiere was played right here, conducted by Nadia Boulanger. It carries the name of the house. The Dumbarton Oaks Concerto.
+
+  Six years later, the world was at war. And this room was taken over for something else.
+
+  On Monday morning, the twenty first of August, nineteen forty four, diplomats from the United States, Britain and the Soviet Union sat down here. Their job was to sketch an organisation that could keep the peace once the war was over.
+
+  They argued in detail. The Soviet side, with Ambassador Gromyko, argued that the new body should stick to security. The Americans wanted it to take on economic and social questions too. The talks ran for seven weeks. Then the Chinese delegation came, for a second round.
+
+  What they drafted in this room became the starting point for the United Nations.
+
+  Look at the room again. It was built for music.
+
+  For seven weeks, it held the plan for a peace.
+pronunciations:
+  - written: Gromyko
+    say: gruh-MEE-koh
+  - written: Boulanger
+    say: boo-lahn-ZHAY
+detail: >-
+  The Library of Congress's Historic American Buildings Survey record places both the 1938 premiere and the 1944 planning sessions in the Music Room. The phases and the Soviet argument are from the State Department's Foreign Relations of the United States volume (a progress report of 25 August 1944). Hours are an estimate; check the museum's posted hours.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In nineteen thirty eight, the lady of the house, Mrs. Bliss, commissioned a concerto from Igor Stravinsky. Its world premiere was played right here, conducted by Nadia Boulanger."
+    source: 1
+    quote: "In 1938, Nadia Boulanger conducted, in the music room, the world premier of Igor Stravinsky's Dumbarton Oaks Concerto, commissioned by Mrs. Bliss"
+  - says: "On Monday morning, the twenty first of August, nineteen forty four, diplomats from the United States, Britain and the Soviet Union sat down here."
+    source: 2
+    quote: "on Monday morning, August 21, 1944, the Dumbarton Oaks Conversations lasted a total of 7 weeks"
+  - says: "The Soviet side, with Ambassador Gromyko, argued that the new body should stick to security. The Americans wanted it to take on economic and social questions too."
+    source: 3
+    quote: "The Russians earnestly and exhaustively argued that the League’s experience demonstrates that an intermingling in the same organization of responsibilities for both the maintenance of peace and for economic and social matters will work out to the detriment of security."
+  - says: "The talks ran for seven weeks. Then the Chinese delegation came, for a second round."
+    source: 2
+    quote: "the second, (B), beginning September 29 and ending October 7, between representatives of the United States, the United Kingdom, and China."
+  - says: "What they drafted in this room became the starting point for the United Nations."
+    source: 1
+    quote: "In 1944, the planning sessions that led to the creation of the United Nations were held in the Dumbarton Oaks music room."
+  - says: "The Dumbarton Oaks Concerto."
+    source: 1
+    quote: "In 1938, Nadia Boulanger conducted, in the music room, the world premier of Igor Stravinsky's Dumbarton Oaks Concerto, commissioned by Mrs. Bliss"
+  - says: "Six years later, the world was at war."
+    source: 1
+    quote: "In 1944, the planning sessions that led to the creation of the United Nations were held in the Dumbarton Oaks music room."
+  - says: "For seven weeks, it held the plan for a peace."
+    source: 2
+    quote: "Commencing on Monday morning, August 21, 1944, the Dumbarton Oaks Conversations lasted a total of 7 weeks"
+sources:
+  - title: "Dumbarton Oaks, 3101 R Street Northwest (Historic American Buildings Survey DC-970)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: http://www.loc.gov/pictures/item/dc0970/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Foreign Relations of the United States, 1944, General, Volume I: Dumbarton Oaks Conversations"
+    publisher: "U.S. Department of State, Office of the Historian"
+    url: https://history.state.gov/historicaldocuments/frus1944v01/ch8
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Progress Report on Dumbarton Oaks Conversations, Fifth Day (25 August 1944)"
+    publisher: "U.S. Department of State, Office of the Historian"
+    url: https://history.state.gov/historicaldocuments/frus1944v01/d425
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-room-built-for-music/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 83.5
+    audioBytes: 1337930
+    transcript:
+      totalS: 83.5
+      lines:
+        - text: Look around the music room of this Georgetown mansion.
+          atS: 0
+          durationS: 3.13
+        - text: It was made for concerts.
+          atS: 3.41
+          durationS: 1.66
+        - text: In nineteen thirty eight, the lady of the house, Mrs.
+          atS: 5.58
+          durationS: 3.43
+        - text: Bliss, commissioned a concerto from Igor Stravinsky.
+          atS: 9.03
+          durationS: 3.61
+        - text: Its world premiere was played right here, conducted by Nadia Boulanger.
+          atS: 13.15
+          durationS: 5.27
+        - text: It carries the name of the house.
+          atS: 19.12
+          durationS: 1.91
+        - text: The Dumbarton Oaks Concerto.
+          atS: 21.55
+          durationS: 2.26
+        - text: Six years later, the world was at war.
+          atS: 24.5
+          durationS: 2.88
+        - text: And this room was taken over for something else.
+          atS: 27.76
+          durationS: 2.86
+        - text: On Monday morning, the twenty first of August, nineteen forty four, diplomats from the United States, Britain and the Soviet Union sat down here.
+          atS: 31.9
+          durationS: 9.85
+        - text: Their job was to sketch an organisation that could keep the peace once the war was over.
+          atS: 42.56
+          durationS: 5.5
+        - text: They argued in detail.
+          atS: 48.58
+          durationS: 1.65
+        - text: The Soviet side, with Ambassador Gromyko, argued that the new body should stick to security.
+          atS: 50.83
+          durationS: 6.27
+        - text: The Americans wanted it to take on economic and social questions too.
+          atS: 57.79
+          durationS: 4.35
+        - text: The talks ran for seven weeks.
+          atS: 62.84
+          durationS: 2.26
+        - text: Then the Chinese delegation came, for a second round.
+          atS: 65.62
+          durationS: 3.56
+        - text: What they drafted in this room became the starting point for the United Nations.
+          atS: 70
+          durationS: 4.62
+        - text: Look at the room again.
+          atS: 75.43
+          durationS: 1.32
+        - text: It was built for music.
+          atS: 77.45
+          durationS: 1.58
+        - text: For seven weeks, it held the plan for a peace.
+          atS: 79.63
+          durationS: 3.91

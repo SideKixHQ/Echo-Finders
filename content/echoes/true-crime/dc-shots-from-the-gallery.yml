@@ -8,6 +8,8 @@ place: "House chamber public gallery, U.S. Capitol, Washington, D.C."
 at: { lat: 38.88935, lng: -77.00905 }
 triggerRadiusKm: 0.05
 category: true-crime
+rare: extra-rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 71
 visibility: at-hand

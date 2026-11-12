@@ -8,6 +8,8 @@ place: "Wanamaker Building, Thirteenth and Market streets, Philadelphia, Pennsyl
 at: { lat: 39.95190, lng: -75.16235 }
 triggerRadiusKm: 0.05
 category: arts
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 79
 visibility: at-hand

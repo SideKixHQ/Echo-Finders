@@ -9,6 +9,8 @@ at: { lat: 32.75935, lng: -79.85760 }
 triggerRadiusKm: 0.04
 inside: true
 category: kids
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 66
 visibility: at-hand

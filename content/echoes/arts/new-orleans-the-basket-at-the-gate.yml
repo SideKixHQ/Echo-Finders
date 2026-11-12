@@ -1,0 +1,189 @@
+# Drafted by Claude Code (2026-11-10) for the New Orleans City Pass, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on St. Peter Street outside Preservation Hall, between Royal and Bourbon streets.
+# Position: Overture place 'Preservation Hall' (726 St Peter), checked against the fitted Royal and St. Peter intersection (medium confidence).
+id: new-orleans-the-basket-at-the-gate
+title: "The Basket at the Gate"
+summary: "In 1961 a young couple opened Preservation Hall, where Black and white musicians played together. In Louisiana that was against the law."
+place: "Preservation Hall, 726 St. Peter Street, French Quarter, New Orleans, Louisiana"
+at: { lat: 29.95832, lng: -90.06530 }
+triggerRadiusKm: 0.03
+category: arts
+rare: rare
+rareReason: "Only at certain times"
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, jazz, music, civil-rights, preservation-hall]
+teaser: "Sandra sat by the gate with a wicker basket."
+script: |
+  Look at the old building here on St. Peter Street, the one that is famous for music but not much to look at. Inside, there is no stage and no air conditioning. People sit on hard benches, or on the floor.
+
+  In nineteen sixty one, what happened in that room could get you hauled into court.
+
+  That year, Allan and Sandra Jaffe came to New Orleans on their honeymoon. They were in their twenties, and they loved jazz. They turned an art gallery here into a place to hear the old New Orleans players. Every night, Sandra sat by the gate with a little wicker basket, collecting the dollar bills.
+
+  Their son Ben says this was the only place in New Orleans where Black and white people were gathering openly, and where the bands were mixed. In Louisiana, that was illegal. A law passed in nineteen fifty six outlawed integrated entertainment. Allan broke it whenever he sat in with the band on tuba.
+
+  Sandra remembered night court, and a judge banging his gavel at them. We don't mix cream with our coffee in this here town.
+
+  They kept the gate open. After the Civil Rights Act of nineteen sixty four, the crowds came. The musicians still play close enough that you may have to duck a trombone slide.
+
+  Look at the gate.
+
+  Their son runs the Hall now. He plays the tuba.
+detail: >-
+  Allan Jaffe died in 1987; Sandra Jaffe kept the Hall and the touring band going. Some accounts credit an earlier society for traditional jazz with starting the music in this building before the Jaffes took it over in 1961.
+pronunciations:
+  - written: "Jaffe"
+    say: "JAFF-ee"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the old building here on St. Peter Street, the one that is famous for music but not much to look at."
+    source: 2
+    quote: "Preservation Hall, which is famous for music but not much to look at."
+  - says: "Inside, there is no stage and no air conditioning."
+    source: 1
+    quote: "There's no air conditioning. No stage."
+  - says: "People sit on hard benches, or on the floor."
+    source: 1
+    quote: "Audiences sit on hard benches, or on the floor."
+  - says: "In nineteen sixty one, what happened in that room could get you hauled into court."
+    source: 1
+    quote: "Allan and I would be at night court many times because of it,"
+  - says: "That year, Allan and Sandra Jaffe came to New Orleans on their honeymoon."
+    source: 1
+    quote: "while in New Orleans on their honeymoon in 1961"
+  - says: "They were in their twenties, and they loved jazz."
+    source: 1
+    quote: "They were only in their twenties when they took over the Hall."
+  - says: "They were in their twenties, and they loved jazz."
+    source: 1
+    quote: "It was Ben Jaffe's jazz-loving parents, Allan and Sandra Jaffe"
+  - says: "They turned an art gallery here into a place to hear the old New Orleans players."
+    source: 1
+    quote: "turned what had been an art gallery into the American institution known as the Preservation Hall."
+  - says: "They turned an art gallery here into a place to hear the old New Orleans players."
+    source: 2
+    quote: "His father Allan founded it in 1961 as a way to keep New Orleans' signature sound alive."
+  - says: "Every night, Sandra sat by the gate with a little wicker basket, collecting the dollar bills."
+    source: 1
+    quote: "was the one who sat by the gate every night with a little wicker basket collecting the dollar bills as people would come in,"
+  - says: "Their son Ben says this was the only place in New Orleans where Black and white people were gathering openly, and where the bands were mixed."
+    source: 1
+    quote: "This was the only place in New Orleans where blacks and whites were congregating openly, and where there were mixed bands."
+  - says: "In Louisiana, that was illegal."
+    source: 1
+    quote: "and illegal in Louisiana, which passed a law in 1956 outlawing integrated entertainment."
+  - says: "A law passed in nineteen fifty six outlawed integrated entertainment."
+    source: 1
+    quote: "and illegal in Louisiana, which passed a law in 1956 outlawing integrated entertainment."
+  - says: "Allan broke it whenever he sat in with the band on tuba."
+    source: 1
+    quote: "Alan Jaffe broke that law when he joined the band on tuba."
+  - says: "Sandra remembered night court, and a judge banging his gavel at them."
+    source: 1
+    quote: "With Judge Babylon banging on his gavel, saying,"
+  - says: "We don't mix cream with our coffee in this here town."
+    source: 1
+    quote: "we don't mix cream with our coffee in this here town."
+  - says: "They kept the gate open."
+    source: 1
+    quote: "After the federal Civil Rights Act was passed in 1964, the Hall became a popular tourist spot."
+  - says: "After the Civil Rights Act of nineteen sixty four, the crowds came."
+    source: 1
+    quote: "After the federal Civil Rights Act was passed in 1964, the Hall became a popular tourist spot."
+  - says: "The musicians still play close enough that you may have to duck a trombone slide."
+    source: 2
+    quote: "People have to duck sliding trombones"
+  - says: "Their son runs the Hall now."
+    source: 1
+    quote: "Now he runs the Hall and the band, and he's the guy on tuba."
+  - says: "He plays the tuba."
+    source: 1
+    quote: "Now he runs the Hall and the band, and he's the guy on tuba."
+sources:
+  - title: "The Preservation Hall Jazz Band: A family business"
+    publisher: "CBS News, 60 Minutes"
+    url: https://www.cbsnews.com/news/the-preservation-hall-jazz-band-a-family-business/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Preservation Hall Recordings Survive the Waterline"
+    publisher: "NPR"
+    url: https://www.npr.org/templates/story/story.php?storyId=17204817
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-basket-at-the-gate/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84.4
+    audioBytes: 1351723
+    transcript:
+      totalS: 84.4
+      lines:
+        - text: Look at the old building here on St.
+          atS: 0
+          durationS: 1.78
+        - text: Peter Street, the one that is famous for music but not much to look at.
+          atS: 1.8
+          durationS: 4.35
+        - text: Inside, there is no stage and no air conditioning.
+          atS: 6.66
+          durationS: 3.43
+        - text: People sit on hard benches, or on the floor.
+          atS: 10.41
+          durationS: 2.96
+        - text: In nineteen sixty one, what happened in that room could get you hauled into court.
+          atS: 14.33
+          durationS: 4.16
+        - text: That year, Allan and Sandra Jaffe came to New Orleans on their honeymoon.
+          atS: 19.18
+          durationS: 4.32
+        - text: They were in their twenties, and they loved jazz.
+          atS: 24.01
+          durationS: 2.86
+        - text: They turned an art gallery here into a place to hear the old New Orleans players.
+          atS: 27.31
+          durationS: 4.42
+        - text: Every night, Sandra sat by the gate with a little wicker basket, collecting the dollar bills.
+          atS: 32.33
+          durationS: 5.74
+        - text: Their son Ben says this was the only place in New Orleans where Black and white people were gathering openly, and where the bands were mixed.
+          atS: 38.58
+          durationS: 7.83
+        - text: In Louisiana, that was illegal.
+          atS: 46.92
+          durationS: 2.57
+        - text: A law passed in nineteen fifty six outlawed integrated entertainment.
+          atS: 49.87
+          durationS: 5.24
+        - text: Allan broke it whenever he sat in with the band on tuba.
+          atS: 55.48
+          durationS: 3.52
+        - text: Sandra remembered night court, and a judge banging his gavel at them.
+          atS: 59.61
+          durationS: 4.52
+        - text: We don't mix cream with our coffee in this here town.
+          atS: 64.63
+          durationS: 2.94
+        - text: They kept the gate open.
+          atS: 68.17
+          durationS: 1.52
+        - text: After the Civil Rights Act of nineteen sixty four, the crowds came.
+          atS: 70.21
+          durationS: 4.17
+        - text: The musicians still play close enough that you may have to duck a trombone slide.
+          atS: 75.07
+          durationS: 4.37
+        - text: Look at the gate.
+          atS: 79.88
+          durationS: 0.96
+        - text: Their son runs the Hall now.
+          atS: 81.02
+          durationS: 1.74
+        - text: He plays the tuba.
+          atS: 82.87
+          durationS: 1.56

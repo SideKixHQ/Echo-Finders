@@ -8,6 +8,8 @@ place: "Magnolia Bridge, Bayou St. John, New Orleans, Louisiana"
 at: { lat: 29.98096, lng: -90.08876 }
 triggerRadiusKm: 0.06
 category: legend
+rare: extra-rare
+rareReason: "Only at certain times"
 format: short
 durationS: 68
 visibility: at-hand

@@ -8,6 +8,8 @@ place: "Isabella Stewart Gardner Museum, Boston"
 at: { lat: 42.33822, lng: -71.09921 }
 triggerRadiusKm: 0.06
 category: true-crime
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 67
 visibility: at-hand

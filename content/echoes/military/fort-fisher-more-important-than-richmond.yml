@@ -1,0 +1,100 @@
+# Batch 2 for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Wikidata Q141896353 (Fort Fisher Visitor Center) (high confidence).
+id: fort-fisher-more-important-than-richmond
+title: "More Important Than Richmond"
+summary: "After Mobile fell in 1864, Wilmington was the Confederacy's last major seaport, and Fort Fisher guarded it."
+place: "Fort Fisher Visitor Center, Kure Beach, North Carolina"
+at: { lat: 33.97205, lng: -77.9174 }
+triggerRadiusKm: 0.06
+category: military
+format: short
+durationS: 48
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [fort-fisher, kure-beach, civil-war, military, blockade-runners]
+teaser: "In 1864 the Navy said closing this port mattered more than taking the Confederate capital."
+script: |
+  Look toward the river. Everything this fort did was about what came up it.
+
+  In August 1864, Union warships sealed the port of Mobile, Alabama. That left Wilmington as the
+  last major Southern seaport open to the outside world, and this fort was its front door.
+
+  The Secretary of the Navy, Gideon Welles, said it plainly. Closing Wilmington, he wrote, was
+  more important, practically, than the capture of Richmond.
+
+  By 1865, the supply line through Wilmington was the last one still feeding Robert E. Lee's
+  army in Virginia.
+
+  In the Navy's eyes, the war's most famous city was not its most important target. This sand was.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In the Navy's eyes, the war's most famous city was not its most important target."
+    source: 1
+    quote: "more important, practically, than the capture of Richmond"
+  - says: "In August 1864, Union warships sealed the port of Mobile, Alabama."
+    source: 1
+    quote: "On August 5, 1864, Adm. David G. Farragut entered Mobile Bay with a squadron of warships, and within a few weeks served a crushing blow to Confederate commerce by sealing the port of Mobile, Alabama."
+  - says: "That left Wilmington as the last major Southern seaport open to the outside world, and this fort was its front door."
+    source: 1
+    quote: "The fall of Mobile, the sole remaining key port of entry in the Gulf of Mexico, left Wilmington the last major Southern seaport open to the outside world."
+  - says: "The Secretary of the Navy, Gideon Welles, said it plainly."
+    source: 1
+    quote: "Gideon Welles, United States Secretary of the Navy, September 15, 1864"
+  - says: "Closing Wilmington, he wrote, was more important, practically, than the capture of Richmond."
+    source: 1
+    quote: "\"The importance of closing Wilmington and cutting off Rebel communication is paramount to all other questions — more important, practically, than the capture of Richmond [Va.].\""
+  - says: "By 1865, the supply line through Wilmington was the last one still feeding Robert E. Lee's army in Virginia."
+    source: 2
+    quote: "By 1865, the supply line through Wilmington was the last remaining supply route open to Robert E. Lee's Army of Northern Virginia."
+sources:
+  - title: "The Civil War at Ft. Fisher"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history/civil-war-ft-fisher
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+  - title: "History"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-more-important-than-richmond/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 48.3
+    audioBytes: 773267
+    transcript:
+      totalS: 48.3
+      lines:
+        - text: Look toward the river.
+          atS: 0
+          durationS: 1.64
+        - text: Everything this fort did was about what came up it.
+          atS: 2.44
+          durationS: 3.22
+        - text: In August 1864, Union warships sealed the port of Mobile, Alabama.
+          atS: 6.35
+          durationS: 5.78
+        - text: That left Wilmington as the last major Southern seaport open to the outside world, and this fort was its front door.
+          atS: 12.46
+          durationS: 7.65
+        - text: The Secretary of the Navy, Gideon Welles, said it plainly.
+          atS: 21.22
+          durationS: 3.84
+        - text: Closing Wilmington, he wrote, was more important, practically, than the capture of Richmond.
+          atS: 25.74
+          durationS: 5.93
+        - text: By 1865, the supply line through Wilmington was the last one still feeding Robert E.
+          atS: 32.93
+          durationS: 5.43
+        - text: Lee's army in Virginia.
+          atS: 38.38
+          durationS: 1.6
+        - text: In the Navy's eyes, the war's most famous city was not its most important target.
+          atS: 40.5
+          durationS: 5.72
+        - text: This sand was.
+          atS: 46.82
+          durationS: 1.43

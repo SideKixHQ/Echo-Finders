@@ -1,0 +1,103 @@
+# Drafted by Claude Code (2026-11-09) for Salem, Massachusetts.
+# Listening spot: Derby Wharf, the public trail along the wharf, by the replica ship's berth.
+# Position: Mid-wharf on Derby Wharf, between the Derby Street end and Wikidata Q5261523 (Derby Wharf Light, 42.516556, -70.883583); berth location from the NPS place page (medium confidence).
+id: salem-the-ship-that-missed-the-war
+title: "The Ship That Missed the War"
+summary: "Salem's Friendship left Russia in 1812 unaware war had begun, and was captured by a British warship on the way home."
+place: "Derby Wharf, Salem Maritime National Historical Park, Salem, Massachusetts"
+at: { lat: 42.5185, lng: -70.8853 }
+triggerRadiusKm: 0.08
+category: military
+format: short
+durationS: 54
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [salem, salem-maritime, derby-wharf, war-of-1812, military, ships]
+teaser: "The crew sailed home from Russia without knowing their country was at war."
+script: |
+  If a tall ship is tied up at this wharf, it is a copy, built to look like a Salem ship from 1797.
+
+  The original Friendship made fifteen voyages, to China, India, Russia and beyond, and came home with pepper, silk, sugar and coffee.
+
+  In the summer of 1812 she was in Archangel, in Russia, when war began between Britain and the United States.
+
+  Nobody on board knew. The captain and crew set off for Salem.
+
+  On the fifth of September a British warship, HMS Rosamond, stopped them in the Atlantic, and took them as a prize of war.
+
+  The crew made it home to Salem. The ship did not. She was sold at auction in London in March 1813.
+
+  The war was months old before the news reached them. It came as a warship.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "If a tall ship is tied up at this wharf, it is a copy, built to look like a Salem ship from 1797."
+    source: 1
+    quote: "The replica tall ship, Friendship of Salem , is docked at Derby Wharf and was designed to present the appearance an original 1797 Salem-built vessel."
+  - says: "The original Friendship made fifteen voyages, to China, India, Russia and beyond, and came home with pepper, silk, sugar and coffee."
+    source: 1
+    quote: "made 15 voyages to countries including China, Indonesia, India, Venezuela, Spain, and Russia."
+  - says: "In the summer of 1812 she was in Archangel, in Russia, when war began between Britain and the United States."
+    source: 1
+    quote: "The War of 1812 between the British and the United States began while Friendship was in Archangel, Russia."
+  - says: "The captain and crew set off for Salem."
+    source: 1
+    quote: "the captain and crew were unaware of that fact and set off for Salem"
+  - says: "On the fifth of September a British warship, HMS Rosamond, stopped them in the Atlantic, and took them as a prize of war."
+    source: 1
+    quote: "On September 5, 1812, Friendship was returning from Archangel, Russia, when the ship was captured by the British sloop of war HMS Rosamond."
+  - says: "The crew made it home to Salem."
+    source: 1
+    quote: "The captain and crew were able to return to Salem, but Friendship was sold at auction in London, England on March 17, 1813."
+  - says: "She was sold at auction in London in March 1813."
+    source: 1
+    quote: "Friendship was sold at auction in London, England on March 17, 1813."
+sources:
+  - title: "FRIENDSHIP OF SALEM"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/friendship-of-salem.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/salem-the-ship-that-missed-the-war/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.6
+    audioBytes: 858531
+    transcript:
+      totalS: 53.6
+      lines:
+        - text: If a tall ship is tied up at this wharf, it is a copy, built to look like a Salem ship from 1797.
+          atS: 0
+          durationS: 6.65
+        - text: The original Friendship made fifteen voyages, to China, India, Russia and beyond, and came home with pepper, silk, sugar and coffee.
+          atS: 7.35
+          durationS: 10.09
+        - text: In the summer of 1812 she was in Archangel, in Russia, when war began between Britain and the United States.
+          atS: 18.39
+          durationS: 7.37
+        - text: Nobody on board knew.
+          atS: 26.09
+          durationS: 1.43
+        - text: The captain and crew set off for Salem.
+          atS: 27.9
+          durationS: 2.61
+        - text: On the fifth of September a British warship, HMS Rosamond, stopped them in the Atlantic, and took them as a prize of war.
+          atS: 31.11
+          durationS: 7.88
+        - text: The crew made it home to Salem.
+          atS: 39.95
+          durationS: 1.91
+        - text: The ship did not.
+          atS: 42.19
+          durationS: 1.2
+        - text: She was sold at auction in London in March 1813.
+          atS: 43.77
+          durationS: 3.96
+        - text: The war was months old before the news reached them.
+          atS: 48.54
+          durationS: 2.79
+        - text: It came as a warship.
+          atS: 51.65
+          durationS: 1.94

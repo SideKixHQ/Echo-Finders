@@ -1,0 +1,137 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: Outside the keepers' cottage museum next to Old Baldy.
+# Position: Keepers' cottage stands alongside Old Baldy (DNCR); placed about 40 m southeast of the Old Baldy echo point among the Lighthouse Wynd address points (medium-low confidence; check against a site map).
+id: bald-head-the-prisms-coming-home
+title: "The Prisms Coming Home"
+summary: "The Cape Fear Lighthouse lens was sold off prism by prism in 1958. The Old Baldy Foundation is gathering the pieces back."
+place: "Smith Island Museum of History, keepers' cottage beside Old Baldy, Bald Head Island, North Carolina"
+at: { lat: 33.8731, lng: -78.0002 }
+triggerRadiusKm: 0.04
+category: wonders
+rare: extra-rare
+rareReason: "Hard to reach"
+format: short
+durationS: 62
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [bald-head-island, old-baldy, lighthouse, cape-fear-lighthouse, museum]
+teaser: "Some of these lighthouse prisms spent decades as paperweights."
+script: |
+  Inside this cottage beside Old Baldy is a replica of a great lighthouse lens. The real one is still being collected, one piece at a time.
+
+  It crowned the Cape Fear Lighthouse, a steel tower that stood on this island for more than half a century. Then in 1958 the Oak Island Lighthouse was built, and the Cape Fear tower was demolished.
+
+  The contractor had the sense to save the lens. It ended up in a Wilmington antiques shop, and the hundreds of glass prisms were sold off, one by one.
+
+  They scattered. Some became paperweights. Others were found beneath a bed. One person used a big bull's eye panel as a coffee table, until the sun came through it and burned a hole in the carpet.
+
+  The Old Baldy Foundation is putting the lens back together, and asking people to bring the pieces home. It still needs about two thirds of them.
+
+  If someone you know has a heavy wedge of old glass on a desk, it might be part of a lighthouse.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Inside this cottage beside Old Baldy is a replica of a great lighthouse lens."
+    source: 1
+    quote: "The former keepers' cottage at Old Baldy Lighthouse is now home to the Smith Island Museum of History, which displays artifacts as well as a replica of the Cape Fear Lighthouse lens."
+  - says: "It crowned the Cape Fear Lighthouse, a steel tower that stood on this island for more than half a century."
+    source: 1
+    quote: "The Cape Fear Lighthouse stood on Bald Head Island for more than half a century."
+  - says: "Then in 1958 the Oak Island Lighthouse was built, and the Cape Fear tower was demolished."
+    source: 1
+    quote: "Then in 1958, the Oak Island Lighthouse was built, making the Cape Fear Lighthouse redundant"
+  - says: "Then in 1958 the Oak Island Lighthouse was built, and the Cape Fear tower was demolished."
+    source: 3
+    quote: "The lighthouse was demolished in 1958."
+  - says: "The contractor had the sense to save the lens."
+    source: 1
+    quote: "When the federal government had the Cape Fear Lighthouse demolished, the contractor had the sense to preserve the Fresnel lens, which ended up at a Wilmington antiques shop."
+  - says: "It ended up in a Wilmington antiques shop, and the hundreds of glass prisms were sold off, one by one."
+    source: 2
+    quote: "wound up in a Wilmington antiques shop, where the individual prisms were sold as paperweights and knickknacks."
+  - says: "The real one is still being collected, one piece at a time."
+    source: 1
+    quote: "The Old Baldy Foundation, which is restoring the lens, still needs to find about two-thirds of them."
+  - says: "Some became paperweights."
+    source: 1
+    quote: "Some prisms have been used as paperweights."
+  - says: "Others were found beneath a bed."
+    source: 1
+    quote: "Others were found beneath a bed."
+  - says: "One person used a big bull's eye panel as a coffee table, until the sun came through it and burned a hole in the carpet."
+    source: 1
+    quote: "One person had used a bull's-eye panel as a coffee table; when the sunlight hit it, it burned a hole in the carpet."
+  - says: "The Old Baldy Foundation is putting the lens back together, and asking people to bring the pieces home."
+    source: 2
+    quote: "as the Old Baldy Foundation seeks to contact folks who once purchased the Fresnel lens prisms and are willing to donate them for the sake of history."
+  - says: "It still needs about two thirds of them."
+    source: 1
+    quote: "The Old Baldy Foundation, which is restoring the lens, still needs to find about two-thirds of them."
+  - says: "hundreds of glass prisms"
+    source: 1
+    quote: "All that remain are its foundation and hundreds of prisms from its massive lens."
+sources:
+  - title: "Restoring the Cape Fear Lighthouse's Prism"
+    publisher: "Our State"
+    url: https://www.ourstate.com/the-cape-fear-lighthouses-prism-project/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "A Brief History of North Carolina's 7 Lighthouses"
+    publisher: "Our State"
+    url: https://www.ourstate.com/north-carolina-lighthouses/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Cape Fear Lighthouse Complex, National Register of Historic Places Inventory Nomination Form"
+    publisher: "North Carolina State Historic Preservation Office (National Register of Historic Places nomination)"
+    url: https://files.nc.gov/ncdcr/nr/BW0003.pdf
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/bald-head-the-prisms-coming-home/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 62.1
+    audioBytes: 994367
+    transcript:
+      totalS: 62.1
+      lines:
+        - text: Inside this cottage beside Old Baldy is a replica of a great lighthouse lens.
+          atS: 0
+          durationS: 4.79
+        - text: The real one is still being collected, one piece at a time.
+          atS: 5.4
+          durationS: 3.35
+        - text: It crowned the Cape Fear Lighthouse, a steel tower that stood on this island for more than half a century.
+          atS: 9.45
+          durationS: 6.11
+        - text: Then in 1958 the Oak Island Lighthouse was built, and the Cape Fear tower was demolished.
+          atS: 16.07
+          durationS: 5.73
+        - text: The contractor had the sense to save the lens.
+          atS: 22.25
+          durationS: 2.57
+        - text: It ended up in a Wilmington antiques shop, and the hundreds of glass prisms were sold off, one by one.
+          atS: 25.25
+          durationS: 6.03
+        - text: They scattered.
+          atS: 31.6
+          durationS: 1.07
+        - text: Some became paperweights.
+          atS: 32.99
+          durationS: 1.7
+        - text: Others were found beneath a bed.
+          atS: 35.02
+          durationS: 1.93
+        - text: One person used a big bull's eye panel as a coffee table, until the sun came through it and burned a hole in the carpet.
+          atS: 37.38
+          durationS: 8.08
+        - text: The Old Baldy Foundation is putting the lens back together, and asking people to bring the pieces home.
+          atS: 46.28
+          durationS: 6.08
+        - text: It still needs about two thirds of them.
+          atS: 52.69
+          durationS: 2.4
+        - text: If someone you know has a heavy wedge of old glass on a desk, it might be part of a lighthouse.
+          atS: 55.79
+          durationS: 6.3

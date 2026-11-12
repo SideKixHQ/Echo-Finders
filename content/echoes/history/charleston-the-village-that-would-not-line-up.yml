@@ -8,6 +8,8 @@ place: "Snee Farm, Charles Pinckney National Historic Site, Long Point Road, Mou
 at: { lat: 32.84660, lng: -79.82530 }
 triggerRadiusKm: 0.08
 category: history
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 81
 visibility: at-hand

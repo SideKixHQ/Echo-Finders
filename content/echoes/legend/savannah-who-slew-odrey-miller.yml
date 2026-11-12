@@ -9,6 +9,8 @@ at: { lat: 32.07530, lng: -81.08990 }
 triggerRadiusKm: 0.03
 voice: wC1005J19tvhoqqC2hkf
 category: legend
+rare: extra-rare
+rareReason: "Easy to miss"
 format: short
 durationS: 68
 visibility: at-hand

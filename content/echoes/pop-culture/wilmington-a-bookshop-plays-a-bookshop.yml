@@ -1,0 +1,73 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Overture 2026-09-23.0 address point for 200 Market Street, the address in James's document.
+id: wilmington-a-bookshop-plays-a-bookshop
+title: "A Bookshop Plays a Bookshop"
+summary: "Papercut Books stood in for the Whale of a Tale Bookshop in The Summer I Turned Pretty."
+place: "Papercut Books, downtown Wilmington, North Carolina"
+at: { lat: 34.235283, lng: -77.94722 }
+triggerRadiusKm: 0.05
+category: pop-culture
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 30
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, the-summer-i-turned-pretty, downtown]
+teaser: "A story that began as a book came back to a bookshop."
+script: |
+  Look at the bookshop window. In The Summer I Turned Pretty, this shop played the Whale of a
+  Tale Bookshop.
+
+  There is a neat loop in that. The series began as a novel, and when it needed a bookshop in its
+  fictional beach town, it found a real independent one here.
+
+  Inside, you can buy a copy of The Summer I Turned Pretty. The book became a show, the show
+  borrowed a bookshop, and the bookshop now sells the book.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In The Summer I Turned Pretty, this shop played the Whale of a Tale Bookshop."
+    source: 1
+    quote: "Papercut Books served as the stand-in for Whale of a Tale Bookshop."
+  - says: "it found a real independent one here."
+    source: 1
+    quote: "This indie bookstore in the heart of downtown is worth a browse."
+  - says: "Inside, you can buy a copy of The Summer I Turned Pretty."
+    source: 1
+    quote: "you can buy a copy of The Summer I Turned Pretty as well as find some fun Cousins Beach merch!"
+sources:
+  - title: "The Summer I Turned Pretty: A Wilmington Guide to Cousins Beach"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/the-summer-i-turned-pretty-a-wilmington-guide-to-cousins-beach/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-bookshop-plays-a-bookshop/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 30.3
+    audioBytes: 485711
+    transcript:
+      totalS: 30.3
+      lines:
+        - text: Look at the bookshop window.
+          atS: 0
+          durationS: 1.79
+        - text: In The Summer I Turned Pretty, this shop played the Whale of a Tale Bookshop.
+          atS: 3.09
+          durationS: 4.7
+        - text: There is a neat loop in that.
+          atS: 8.23
+          durationS: 1.74
+        - text: The series began as a novel, and when it needed a bookshop in its fictional beach town, it found a real independent one here.
+          atS: 10.67
+          durationS: 7.95
+        - text: Inside, you can buy a copy of The Summer I Turned Pretty.
+          atS: 19.32
+          durationS: 4.19
+        - text: The book became a show, the show borrowed a bookshop, and the bookshop now sells the book.
+          atS: 24.46
+          durationS: 5.82

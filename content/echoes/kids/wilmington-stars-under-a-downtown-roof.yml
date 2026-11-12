@@ -8,6 +8,8 @@ place: "Cape Fear Museum planetarium, 230 Grace Street, Wilmington, North Caroli
 at: { lat: 34.23882, lng: -77.94690 }
 triggerRadiusKm: 0.04
 category: kids
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 50
 visibility: at-hand

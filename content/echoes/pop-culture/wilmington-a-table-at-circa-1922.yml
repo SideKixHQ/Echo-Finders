@@ -1,0 +1,70 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Overture 2026-09-23.0 address point for 8 North Front Street, the address in James's document.
+id: wilmington-a-table-at-circa-1922
+title: "A Table With Things Left Unsaid"
+summary: "Circa 1922 is where Conrad and Jeremiah meet their father in The Summer I Turned Pretty."
+place: "Circa 1922, North Front Street, Wilmington, North Carolina"
+at: { lat: 34.235664, lng: -77.948624 }
+triggerRadiusKm: 0.05
+category: pop-culture
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 28
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, the-summer-i-turned-pretty, downtown]
+teaser: "Two brothers meet their father for a meal."
+script: |
+  Look at the restaurant. In The Summer I Turned Pretty, Conrad and Jeremiah meet their dad here
+  for a meal.
+
+  A restaurant scene is a writer's favorite pressure: nobody can leave before the food arrives, and
+  everybody has to be polite in public. Whatever the brothers left unsaid, they left it at a table here.
+
+  The restaurant is known for its seasonal American cooking. On screen, it served a family
+  something harder to swallow.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In The Summer I Turned Pretty, Conrad and Jeremiah meet their dad here for a meal."
+    source: 1
+    quote: "it is where Conrad and Jeremiah meet their dad for a meal."
+  - says: "The restaurant is known for its seasonal American cooking."
+    source: 1
+    quote: "Circa 1922 is a downtown restaurant known for its elevated seasonal American fare"
+sources:
+  - title: "The Summer I Turned Pretty: A Wilmington Guide to Cousins Beach"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/the-summer-i-turned-pretty-a-wilmington-guide-to-cousins-beach/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-table-at-circa-1922/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 28.2
+    audioBytes: 452692
+    transcript:
+      totalS: 28.2
+      lines:
+        - text: Look at the restaurant.
+          atS: 0
+          durationS: 1.36
+        - text: In The Summer I Turned Pretty, Conrad and Jeremiah meet their dad here for a meal.
+          atS: 2.47
+          durationS: 4.91
+        - text: "A restaurant scene is a writer's favorite pressure: nobody can leave before the food arrives, and everybody has to be polite in public."
+          atS: 7.77
+          durationS: 8.25
+        - text: Whatever the brothers left unsaid, they left it at a table here.
+          atS: 16.63
+          durationS: 3.65
+        - text: The restaurant is known for its seasonal American cooking.
+          atS: 20.97
+          durationS: 3.04
+        - text: On screen, it served a family something harder to swallow.
+          atS: 24.45
+          durationS: 3.79

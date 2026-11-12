@@ -1,0 +1,166 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Pedestrian Chartres Street in front of the cathedral steps, facing the facade.
+# Position: Grid offset from the Overture Jackson Square centre, checked against the Overture cathedral, Cabildo and Presbytère points (cathedral faces the square from the northwest) (medium confidence).
+id: new-orleans-the-man-under-the-altar
+title: "The Man Under the Altar"
+summary: "A rich Spaniard rebuilt the burned church at his own expense, asked for masses for his soul, and was buried in front of the altar."
+place: "St. Louis Cathedral, Jackson Square, New Orleans, Louisiana"
+at: { lat: 29.95777, lng: -90.06345 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, jackson-square, french-quarter, churches, spanish-colonial]
+teaser: "Look up at the three spires. They are younger than they look."
+script: |
+  Look up at the three spires on the front of the cathedral.
+
+  They are younger than they look. The front you are facing was remodelled around eighteen fifty, when steeples were raised on the old towers and the portico was added.
+
+  The church before that was paid for by one man.
+
+  In seventeen eighty-eight, fire took the old parish church along with most of the town. Don Andrés Almonester y Roxas, a Spaniard who had grown very rich in this colony, offered to build a new one at his own expense.
+
+  He asked for something in return. Masses for his soul, said for ever.
+
+  A guidebook from eighteen forty-five says the bargain was being kept. Every Saturday evening, it says, at sunset, the bell tolled for the founder.
+
+  He died in seventeen ninety-eight and was buried in front of the altar. A writer in the eighteen nineties described his name, his coat of arms and his motto, cut into the stone over him.
+
+  The building has been remade around him since. The steeples are new. The portico is new.
+
+  He is still inside, under the floor, at the front.
+
+  And by his own arrangement, someone is meant to be praying for him.
+pronunciations:
+  - written: Andrés Almonester y Roxas
+    say: ahn-DRESS al-mo-NESS-ter ee ROH-hahs
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look up at the three spires on the front of the cathedral."
+    source: 3
+    quote: "The design was the agual Spanish: style, with three round towers in front. In 1851 the building svas_remodelled, and steeples were raised on the towers."
+  - says: "The front you are facing was remodelled around eighteen fifty, when steeples were raised on the old towers and the portico was added."
+    source: 3
+    quote: "In 1851 the building svas_remodelled, and steeples were raised on the towers. The present portico, with its columns and pilasters, dates from that period."
+  - says: "The church before that was paid for by one man."
+    source: 3
+    quote: "Don Andres Almon- aster y Roxas, a wealthy Spanish nobleman, erected at his own expense this Cathedral Chureh"
+  - says: "In seventeen eighty-eight, fire took the old parish church along with most of the town."
+    source: 3
+    quote: "This, too, was burnt to the ground in the memorable conflagration of Good Friday, 1788S. As the entire city almost was consumed"
+  - says: "Don Andrés Almonester y Roxas, a Spaniard who had grown very rich in this colony, offered to build a new one at his own expense."
+    source: 3
+    quote: "Don Andres Almon- aster y Roxas, a wealthy Spanish nobleman, erected at his own expense this Cathedral Chureh at a.cost:of $50,000, on condition that a mass would be said in-perpetuity every Sunday for the repose of his soul."
+  - says: "Don Andrés Almonester y Roxas, a Spaniard who had grown very rich in this colony, offered to build a new one at his own expense."
+    source: 2
+    quote: "coming to Louisiana at the begin- ning of the Spanish domination"
+  - says: "A guidebook from eighteen forty-five says the bargain was being kept."
+    source: 1
+    quote: "The re- quirement is faithfully observed"
+  - says: "A guidebook from eighteen forty-five says the bargain was being kept."
+    source: 1
+    quote: "New Orteans, October, 1845."
+  - says: "Every Saturday evening, it says, at sunset, the bell tolled for the founder."
+    source: 1
+    quote: "every Saturday evening offering masses for the soul of its founder, Don Andre."
+  - says: "Every Saturday evening, it says, at sunset, the bell tolled for the founder."
+    source: 1
+    quote: "at set of sun, the mournful sound of the tolling bell recalls the memory of the departed."
+  - says: "He died in seventeen ninety-eight and was buried in front of the altar."
+    source: 4
+    quote: "He died 1798, and was buried in the cathedral"
+  - says: "He died in seventeen ninety-eight and was buried in front of the altar."
+    source: 2
+    quote: "Don Andres died and was buried in front of the altar of his Cathedral"
+  - says: "A writer in the eighteen nineties described his name, his coat of arms and his motto, cut into the stone over him."
+    source: 2
+    quote: "where his name and lineage, and good deeds, coat of arms and motto, “A pesar de todos, venceremos los Godos,” are cut as ineffaceably into the stone over his resting place"
+  - says: "A writer in the eighteen nineties described his name, his coat of arms and his motto, cut into the stone over him."
+    source: 2
+    quote: "Copyricut, 1895, By MACMILLAN AND CO."
+sources:
+  - title: "Norman's New Orleans and environs (1845)"
+    publisher: "B. M. Norman, New Orleans, 1845; digitised by the Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/normansneworlean00norm/normansneworlean00norm.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "New Orleans, the place and the people (1895)"
+    publisher: "Grace King, Macmillan, 1895; digitised by the Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/neworleansplacep00kin/neworleansplacep00kin.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (1904)"
+    publisher: "The Picayune, New Orleans, 1904; digitised by the Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "A history of Louisiana (1905)"
+    publisher: "Grace King and John R. Ficklen, 1905; digitised by the Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/historyoflouisia00king/historyoflouisia00king.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-man-under-the-altar/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 79
+    audioBytes: 1265623
+    transcript:
+      totalS: 79
+      lines:
+        - text: Look up at the three spires on the front of the cathedral.
+          atS: 0
+          durationS: 3.01
+        - text: They are younger than they look.
+          atS: 3.45
+          durationS: 1.66
+        - text: The front you are facing was remodelled around eighteen fifty, when steeples were raised on the old towers and the portico was added.
+          atS: 5.71
+          durationS: 7.98
+        - text: The church before that was paid for by one man.
+          atS: 14.38
+          durationS: 3.42
+        - text: In seventeen eighty-eight, fire took the old parish church along with most of the town.
+          atS: 19.11
+          durationS: 5.86
+        - text: Don Andrés Almonester y Roxas, a Spaniard who had grown very rich in this colony, offered to build a new one at his own expense.
+          atS: 25.67
+          durationS: 9.79
+        - text: He asked for something in return.
+          atS: 35.84
+          durationS: 1.99
+        - text: Masses for his soul, said for ever.
+          atS: 38.15
+          durationS: 3.15
+        - text: A guidebook from eighteen forty-five says the bargain was being kept.
+          atS: 42.41
+          durationS: 3.96
+        - text: Every Saturday evening, it says, at sunset, the bell tolled for the founder.
+          atS: 46.97
+          durationS: 4.8
+        - text: He died in seventeen ninety-eight and was buried in front of the altar.
+          atS: 52.37
+          durationS: 3.95
+        - text: A writer in the eighteen nineties described his name, his coat of arms and his motto, cut into the stone over him.
+          atS: 56.83
+          durationS: 7.48
+        - text: The building has been remade around him since.
+          atS: 64.91
+          durationS: 2.72
+        - text: The steeples are new.
+          atS: 68.01
+          durationS: 1.25
+        - text: The portico is new.
+          atS: 69.42
+          durationS: 1.42
+        - text: He is still inside, under the floor, at the front.
+          atS: 71.04
+          durationS: 3.38
+        - text: And by his own arrangement, someone is meant to be praying for him.
+          atS: 74.8
+          durationS: 4.24

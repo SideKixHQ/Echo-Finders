@@ -8,6 +8,8 @@ place: "Free Quaker Meeting House, Fifth and Arch streets, Philadelphia, Pennsyl
 at: { lat: 39.95262, lng: -75.14868 }
 triggerRadiusKm: 0.04
 category: history
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 103
 visibility: at-hand

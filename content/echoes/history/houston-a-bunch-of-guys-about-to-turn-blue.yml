@@ -9,6 +9,8 @@ at: { lat: 29.55828, lng: -95.08885 }
 triggerRadiusKm: 0.08
 inside: true
 category: history
+rare: extra-rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 94
 visibility: position-only

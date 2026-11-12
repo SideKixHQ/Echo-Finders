@@ -1,0 +1,104 @@
+# From W079 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk; lodge interior is not open without authorization.
+# Position: West sidewalk of N 8th St just south of Princess, beside lodge (19 N 8th / 720 Princess; address point + footprint at SW corner of 8th & Princess) (high confidence).
+id: wilmington-giblem-lodge-holds-a-community
+title: "Giblem Lodge Holds a Community"
+summary: "Giblem Lodge's cornerstone was laid in 1871, and it survives as a place of Black community organization in Wilmington."
+place: "Giblem Lodge, 19 North Eighth Street, Wilmington, North Carolina"
+at: { lat: 34.23697, lng: -77.93956 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Giblem Lodge's cornerstone was laid in 1871, and it survives as a place of Black community organization in Wilmington."
+script: |
+  Giblem Lodge's cornerstone was laid in 1871, and it survives as a place of Black community
+  organization in Wilmington. The Historic Wilmington Foundation describes it as a
+  community hub and meeting hall. Wilmington's City Council has given it local landmark status.
+
+  A lodge building can be easy to overlook beside more famous mansions. Yet institutions
+  like this helped people assemble, maintain networks, and exercise independence.
+
+  Stay on the public sidewalk. You can recognize that history without entering an active
+  organization's space.
+
+  The important architectural fact is survival in place. A building associated with
+  collective activity remains here to counter the idea that Wilmington's past belonged
+  solely to prominent individual owners. This landmark preserves evidence of people
+  organizing for each other. Its walls held a community, and its continued presence gives
+  that community's history a downtown address.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Giblem Lodge's cornerstone was laid in 1871, and it survives as a place of Black community organization in Wilmington."
+    source: 1
+    quote: "The cornerstone of Giblem Lodge was laid in 1871."
+  - says: "Giblem Lodge's cornerstone was laid in 1871"
+    source: 2
+    quote: "19 1871 Giblem Lodge, No. 2 Simple, three-story, Italianate building."
+  - says: "The Historic Wilmington Foundation describes it as a community hub and meeting hall."
+    source: 1
+    quote: "Giblem has always served as a community hub and meeting hall, fostering Black economic, civic, and educational advancement."
+  - says: "Wilmington's City Council has given it local landmark status."
+    source: 1
+    quote: "WECT: Wilmington City Council approves landmark status for Giblem Lodge, Juneteenth city holiday"
+  - says: "A building associated with collective activity remains here to counter the idea that Wilmington's past belonged solely to prominent individual owners."
+    source: 1
+    quote: "Giblem has always served as a community hub and meeting hall, fostering Black economic, civic, and educational advancement."
+sources:
+  - title: "Giblem Lodge"
+    publisher: "Historic Wilmington Foundation"
+    url: https://historicwilmington.org/giblem-lodge/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Wilmington Historic District Boundary Expansion and Additional Documentation (National Register of Historic Places nomination)"
+    publisher: "North Carolina State Historic Preservation Office"
+    url: https://files.nc.gov/ncdcr/nr/NH2548.pdf
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-giblem-lodge-holds-a-community/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66
+    audioBytes: 1057061
+    transcript:
+      totalS: 66
+      lines:
+        - text: Giblem Lodge's cornerstone was laid in 1871, and it survives as a place of Black community organization in Wilmington.
+          atS: 0
+          durationS: 8.17
+        - text: The Historic Wilmington Foundation describes it as a community hub and meeting hall.
+          atS: 8.68
+          durationS: 5.24
+        - text: Wilmington's City Council has given it local landmark status.
+          atS: 14.36
+          durationS: 3.91
+        - text: A lodge building can be easy to overlook beside more famous mansions.
+          atS: 18.52
+          durationS: 4.45
+        - text: Yet institutions like this helped people assemble, maintain networks, and exercise independence.
+          atS: 23.21
+          durationS: 7.24
+        - text: Stay on the public sidewalk.
+          atS: 31.41
+          durationS: 1.85
+        - text: You can recognize that history without entering an active organization's space.
+          atS: 33.53
+          durationS: 4.9
+        - text: The important architectural fact is survival in place.
+          atS: 38.75
+          durationS: 3.86
+        - text: A building associated with collective activity remains here to counter the idea that Wilmington's past belonged solely to prominent individual owners.
+          atS: 42.93
+          durationS: 10.04
+        - text: This landmark preserves evidence of people organizing for each other.
+          atS: 53.93
+          durationS: 4.2
+        - text: Its walls held a community, and its continued presence gives that community's history a downtown address.
+          atS: 58.83
+          durationS: 7.16

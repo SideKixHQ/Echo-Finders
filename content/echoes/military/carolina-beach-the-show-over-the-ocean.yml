@@ -1,0 +1,102 @@
+# Batch 1 for the MVP (docs/12-cities.md), written 2026-11-05.
+# Position: Wikidata Q115857736 (Carolina Beach Pier). The soldier gives no exact spot; any of the oceanfront fits (medium confidence).
+id: carolina-beach-the-show-over-the-ocean
+title: "The Show Over the Ocean"
+summary: "A Second World War soldier remembered watching tracer fire from Carolina Beach while his wife lived here before he shipped out."
+place: "Carolina Beach oceanfront by the fishing pier, North Carolina"
+at: { lat: 34.058387, lng: -77.878467 }
+triggerRadiusKm: 0.08
+category: military
+format: short
+durationS: 47
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [carolina-beach, world-war-ii, military]
+teaser: "During the war, people sat on this beach to watch the guns fire at night."
+script: |
+  Face the ocean. During the war, this beach had a view worth sitting down for.
+
+  Down at Fort Fisher, anti-aircraft gunners trained six days a week. At night, searchlights
+  picked out the towed targets, and tracers arched out over the ocean.
+
+  One soldier remembered marrying while he was home on furlough. His wife came down and lived
+  at Carolina Beach for several months, just before his unit shipped overseas.
+
+  People could sit down on Carolina Beach, he said, and watch the forties and fifties being shot
+  out over the ocean. He meant the forty-millimeter cannon and the fifty-caliber machine guns.
+
+  He called it a really beautiful sight. A few months later, he was on his way to the real
+  thing.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Down at Fort Fisher, anti-aircraft gunners trained six days a week."
+    source: 1
+    quote: "The training schedule was vigorous — six days a week — and the air over coastal North Carolina was loud with military activity."
+  - says: "At night, searchlights picked out the towed targets, and tracers arched out over the ocean."
+    source: 1
+    quote: "You have searchlight aided night firing, so you could pick out the sleeves, and tracers arch out over the ocean."
+  - says: "One soldier remembered marrying while he was home on furlough."
+    source: 1
+    quote: "In fact, I got married while I was home on furlough."
+  - says: "His wife came down and lived at Carolina Beach for several months, just before his unit shipped overseas."
+    source: 1
+    quote: "My wife came down and lived at Carolina Beach for several months, just before we were alerted for shipment overseas"
+  - says: "People could sit down on Carolina Beach, he said, and watch the forties and fifties being shot out over the ocean."
+    source: 1
+    quote: "Now they could sit down on Carolina Beach and watch the 40s and 50s being shot out over the ocean."
+  - says: "He meant the forty-millimeter cannon and the fifty-caliber machine guns."
+    source: 1
+    quote: "These included, among others, batteries of 40-millimeter automatic cannons and 50-caliber machine guns."
+  - says: "He called it a really beautiful sight."
+    source: 1
+    quote: "It was a really beautiful sight."
+  - says: "A few months later, he was on his way to the real thing."
+    source: 1
+    quote: "just before we were alerted for shipment overseas"
+sources:
+  - title: "WWII at Fort Fisher"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history/wwii-fort-fisher
+    retrievedAt: "2026-11-05"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/carolina-beach-the-show-over-the-ocean/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 47.3
+    audioBytes: 758221
+    transcript:
+      totalS: 47.3
+      lines:
+        - text: Face the ocean.
+          atS: 0
+          durationS: 1.14
+        - text: During the war, this beach had a view worth sitting down for.
+          atS: 1.95
+          durationS: 3.74
+        - text: Down at Fort Fisher, anti-aircraft gunners trained six days a week.
+          atS: 6.38
+          durationS: 4.47
+        - text: At night, searchlights picked out the towed targets, and tracers arched out over the ocean.
+          atS: 11.37
+          durationS: 5.9
+        - text: One soldier remembered marrying while he was home on furlough.
+          atS: 17.96
+          durationS: 3.65
+        - text: His wife came down and lived at Carolina Beach for several months, just before his unit shipped overseas.
+          atS: 22.21
+          durationS: 6.41
+        - text: People could sit down on Carolina Beach, he said, and watch the forties and fifties being shot out over the ocean.
+          atS: 29.22
+          durationS: 6.57
+        - text: He meant the forty-millimeter cannon and the fifty-caliber machine guns.
+          atS: 36.3
+          durationS: 4.03
+        - text: He called it a really beautiful sight.
+          atS: 40.77
+          durationS: 2.24
+        - text: A few months later, he was on his way to the real thing.
+          atS: 43.71
+          durationS: 3.61

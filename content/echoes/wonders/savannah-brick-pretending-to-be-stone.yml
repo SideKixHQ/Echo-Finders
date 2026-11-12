@@ -1,0 +1,147 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the sidewalk of Abercorn Street at Saint Julian Street, in front of the Pink House, northwest of Reynolds Square. It is a restaurant; the echo needs no entry.
+# Position: Abercorn and Saint Julian intersection from the street segments in the app's Savannah street file, set onto the west side of Abercorn north of the square; about 120 m from the Filature echo on the east side of the square (high confidence for the corner; the 1937 guide gives 23 Abercorn, northwest of Reynolds Square).
+id: savannah-brick-pretending-to-be-stone
+title: "Brick Pretending to Be Stone"
+summary: "The Pink House was built about 1771 and became Georgia's first state bank, then a tearoom. Its pink skin is stucco over brick."
+place: "The Pink House, 23 Abercorn Street, Reynolds Square, Savannah, Georgia"
+at: { lat: 32.07958, lng: -81.08985 }
+triggerRadiusKm: 0.035
+category: wonders
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, reynolds-square, banks, restaurants, architecture]
+teaser: "Look at the corners. Those blocks are not stone."
+script: |
+  Look at the pink house on the corner, and at its corners especially. Big squared blocks run up the edges, like the stones of a castle.
+
+  They are not stone. The whole house is brick, wearing a skin.
+
+  It was built around seventeen seventy one, for a member of the Habersham family. The brick was covered with stucco and tooled to look like cut stone. The corner blocks are stucco too. The stucco came out pinkish.
+
+  In eighteen twelve the house changed jobs. A wing was added, fancy lintels went over the windows, and it became the Planters Bank. Federal surveyors in the nineteen thirties called it the first state bank in Georgia. It stayed a bank until eighteen sixty five.
+
+  The woman running a tearoom inside in the nineteen thirties told the surveyors one more thing. When Sherman took the city, she said, one of his generals made his headquarters here.
+
+  Today it is a restaurant, and there is a tavern down in the cellar.
+
+  Look at the corners again.
+
+  A bank that pretended to be stone. Savannah has trusted it ever since.
+detail: >-
+  HABS (1934 to 1936) gives "approximately 1771", James Habersham as builder, the 1812 wing and lintels, the Planters Bank as "first State Bank in Ga" until 1865, the stucco tooled to look like stone and the quoins, and the tearoom proprietress's account of "Gen. York's headquarters when Sherman came", which the script attributes to her. The 1937 guide says it was built for James Habersham, Jr.; HABS says "Hon. James Habersham"; the script says only "a member of the Habersham family". The Boston Globe (2025) places Planters Tavern in the cellar of the Olde Pink House.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It was built around seventeen seventy one, for a member of the Habersham family"
+    source: 1
+    quote: "Date of Erect ion: Approximately 1771."
+  - says: "It was built around seventeen seventy one, for a member of the Habersham family"
+    source: 2
+    quote: "was built in 1771 for James Habersham, jr."
+  - says: "The brick was covered with stucco and tooled to look like cut stone. The corner blocks are stucco too."
+    source: 1
+    quote: "This Georgian-type mansion is built of brick, covered with stucco, tooled to look like stone. Prominent stucco quoins have been placed at the corners."
+  - says: "The stucco came out pinkish."
+    source: 2
+    quote: "It is built of brick covered with a pinkish stucco"
+  - says: "In eighteen twelve the house changed jobs. A wing was added, fancy lintels went over the windows, and it became the Planters Bank."
+    source: 1
+    quote: "Wing added and orna- mental window lintels applied in 1812 and used by Planters Bank, first State Bank in Ga,, until 1865"
+  - says: "When Sherman took the city, she said, one of his generals made his headquarters here."
+    source: 1
+    quote: "Gen. York^s head- quarters when Sherman came, according to Slecta Harper,Pro- prietress of tea-room now in building."
+  - says: "Today it is a restaurant, and there is a tavern down in the cellar."
+    source: 3
+    quote: "We were dining at Planters Tavern in the cellar of The Olde Pink House"
+  - says: "Federal surveyors in the nineteen thirties called it the first state bank in Georgia."
+    source: 1
+    quote: "used by Planters Bank, first State Bank in Ga,, until 1865"
+  - says: "It stayed a bank until eighteen sixty five."
+    source: 1
+    quote: "used by Planters Bank, first State Bank in Ga,, until 1865"
+  - says: "The woman running a tearoom inside in the nineteen thirties told the surveyors one more thing."
+    source: 1
+    quote: "according to Slecta Harper,Pro- prietress of tea-room now in building."
+sources:
+  - title: "Habersham Mansion (The Pink House), HABS No. GA-14-38 (written data, 1934 to 1936)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ga/ga0000/ga0023/data/ga0023data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Walking through history and Savannah's stories of slavery (2025)"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/2025/02/14/lifestyle/savannah-slavery-walking-tour-black-history-month/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-brick-pretending-to-be-stone/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66
+    audioBytes: 1057061
+    transcript:
+      totalS: 66
+      lines:
+        - text: Look at the pink house on the corner, and at its corners especially.
+          atS: 0
+          durationS: 3.73
+        - text: Big squared blocks run up the edges, like the stones of a castle.
+          atS: 4.24
+          durationS: 3.97
+        - text: They are not stone.
+          atS: 8.53
+          durationS: 1.25
+        - text: The whole house is brick, wearing a skin.
+          atS: 10.17
+          durationS: 2.98
+        - text: It was built around seventeen seventy one, for a member of the Habersham family.
+          atS: 13.6
+          durationS: 4.38
+        - text: The brick was covered with stucco and tooled to look like cut stone.
+          atS: 18.41
+          durationS: 4.04
+        - text: The corner blocks are stucco too.
+          atS: 22.73
+          durationS: 2.01
+        - text: The stucco came out pinkish.
+          atS: 24.91
+          durationS: 1.96
+        - text: In eighteen twelve the house changed jobs.
+          atS: 27.39
+          durationS: 2.6
+        - text: A wing was added, fancy lintels went over the windows, and it became the Planters Bank.
+          atS: 30.31
+          durationS: 5.36
+        - text: Federal surveyors in the nineteen thirties called it the first state bank in Georgia.
+          atS: 36.37
+          durationS: 4.73
+        - text: It stayed a bank until eighteen sixty five.
+          atS: 41.61
+          durationS: 2.88
+        - text: The woman running a tearoom inside in the nineteen thirties told the surveyors one more thing.
+          atS: 45.09
+          durationS: 5.03
+        - text: When Sherman took the city, she said, one of his generals made his headquarters here.
+          atS: 50.5
+          durationS: 4.77
+        - text: Today it is a restaurant, and there is a tavern down in the cellar.
+          atS: 55.52
+          durationS: 3.7
+        - text: Look at the corners again.
+          atS: 59.66
+          durationS: 1.36
+        - text: A bank that pretended to be stone.
+          atS: 61.35
+          durationS: 1.94
+        - text: Savannah has trusted it ever since.
+          atS: 63.73
+          durationS: 2.26

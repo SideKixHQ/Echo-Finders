@@ -1,0 +1,128 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: The Cistern Yard at the College of Charleston, under the oaks, looking toward the columned front of Randolph Hall. Campus grounds, open to walkers.
+# Position: Estimated between the George St frontage (Overture points for 66 George St) and the main building, south of George St; the yard itself is not in the places file (low confidence).
+id: charleston-the-yard-named-for-a-water-tank
+title: "The Yard Named for a Water Tank"
+summary: "The college's buildings were named for people. Its central green was named for the plumbing."
+place: "The Cistern Yard, College of Charleston, Charleston, South Carolina"
+at: { lat: 32.78290, lng: -79.93730 }
+triggerRadiusKm: 0.05
+category: wonders
+format: short
+durationS: 57
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, college-of-charleston, architecture]
+teaser: "Randolph Hall, Towell Library, and the Cistern."
+script: |
+  Stand under the oaks and look toward the building with the columns at the end of the green. That is the college's main building, and it has a person's name. Randolph Hall. The old library on the green has a person's name too. Towell.
+
+  The green itself is called the Cistern.
+
+  In the nineteenth century, an oval cistern was built here to hold the campus water supply. The name stuck to the whole yard, oaks and all.
+
+  The college is old. It was founded in seventeen seventy, and its founders included three signers of the Declaration of Independence. Its first classes met in former Revolutionary War barracks. The main building went up in eighteen twenty nine. The columns came twenty five years later.
+
+  It is the oldest municipal college in the United States, and a National Historic Landmark.
+
+  And the heart of it is named after a water tank.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "That is the college's main building, and it has a person's name."
+    source: 1
+    quote: "the Main Building (now known as Randolph Hall)"
+  - says: "Randolph Hall."
+    source: 1
+    quote: "the Main Building (now known as Randolph Hall)"
+  - says: "The old library on the green has a person's name too."
+    source: 1
+    quote: "The Towell Library, constructed from 1854 to 56 by George E. Walker"
+  - says: "Towell."
+    source: 1
+    quote: "The Towell Library"
+  - says: "The green itself is called the Cistern."
+    source: 1
+    quote: "are situated around a square college green with evergreen oaks, known as The Cistern."
+  - says: "In the nineteenth century, an oval cistern was built here to hold the campus water supply."
+    source: 1
+    quote: "This name is derived from a 19th-century oval cistern constructed there to hold the campus's water supply."
+  - says: "It was founded in seventeen seventy, and its founders included three signers of the Declaration of Independence."
+    source: 1
+    quote: "Founded in 1770, and chartered in 1785"
+  - says: "It was founded in seventeen seventy, and its founders included three signers of the Declaration of Independence."
+    source: 1
+    quote: "The founders of the college include three signers of the Declaration of Independence"
+  - says: "Its first classes met in former Revolutionary War barracks."
+    source: 1
+    quote: "Classes were held in former Revolutionary War barracks until the first new building was constructed."
+  - says: "The main building went up in eighteen twenty nine."
+    source: 1
+    quote: "the simple rectangular brick Main Building was completed in 1829."
+  - says: "The columns came twenty five years later."
+    source: 1
+    quote: "In 1854 prominent local architect Edward Brickell White extensively remodeled the Main Building (now known as Randolph Hall), adding an Ionic portico and wings."
+  - says: "It is the oldest municipal college in the United States, and a National Historic Landmark."
+    source: 1
+    quote: "The College of Charleston is the oldest municipal college in the United States, and a National Historic Landmark."
+sources:
+  - title: "College of Charleston"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/college-of-charleston.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-yard-named-for-a-water-tank/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57.2
+    audioBytes: 915791
+    transcript:
+      totalS: 57.2
+      lines:
+        - text: Stand under the oaks and look toward the building with the columns at the end of the green.
+          atS: 0
+          durationS: 4.53
+        - text: That is the college's main building, and it has a person's name.
+          atS: 4.91
+          durationS: 3.52
+        - text: Randolph Hall.
+          atS: 8.75
+          durationS: 1.13
+        - text: The old library on the green has a person's name too.
+          atS: 10.32
+          durationS: 3.13
+        - text: Towell.
+          atS: 13.84
+          durationS: 0.66
+        - text: The green itself is called the Cistern.
+          atS: 15.11
+          durationS: 2.29
+        - text: In the nineteenth century, an oval cistern was built here to hold the campus water supply.
+          atS: 17.72
+          durationS: 5.6
+        - text: The name stuck to the whole yard, oaks and all.
+          atS: 23.64
+          durationS: 3.53
+        - text: The college is old.
+          atS: 27.55
+          durationS: 1.3
+        - text: It was founded in seventeen seventy, and its founders included three signers of the Declaration of Independence.
+          atS: 29.18
+          durationS: 6.78
+        - text: Its first classes met in former Revolutionary War barracks.
+          atS: 36.77
+          durationS: 3.8
+        - text: The main building went up in eighteen twenty nine.
+          atS: 41.17
+          durationS: 3.03
+        - text: The columns came twenty five years later.
+          atS: 44.9
+          durationS: 2.47
+        - text: It is the oldest municipal college in the United States, and a National Historic Landmark.
+          atS: 47.97
+          durationS: 5.64
+        - text: And the heart of it is named after a water tank.
+          atS: 53.86
+          durationS: 3.31

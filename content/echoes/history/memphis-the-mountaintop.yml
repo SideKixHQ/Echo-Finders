@@ -8,6 +8,8 @@ place: "Mason Temple, Church of God in Christ, Mason Street, Memphis, Tennessee"
 at: { lat: 35.1215, lng: -90.0493 }
 triggerRadiusKm: 0.06
 category: history
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 71
 visibility: at-hand

@@ -8,6 +8,8 @@ place: "Faneuil Hall grasshopper weathervane, Dock Square, Boston, Massachusetts
 at: { lat: 42.36010, lng: -71.05575 }
 triggerRadiusKm: 0.05
 category: legend
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 70
 visibility: at-hand

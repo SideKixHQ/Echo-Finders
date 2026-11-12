@@ -1,0 +1,86 @@
+# From W059 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk beside the state marker; commemorative stop associated with his Wilmington ministry.
+# Position: HMDB marker D-122 coords 34 14.482N 77 56.812W, west side of N 3rd at Red Cross (high confidence).
+id: wilmington-j-allen-kirk-kept-a-record
+title: "J. Allen Kirk Kept a Record"
+summary: "J. Allen Kirk came to Wilmington as a Baptist pastor in 1897."
+place: "J. Allen Kirk marker, Third and Red Cross streets, Wilmington, North Carolina"
+at: { lat: 34.24137, lng: -77.94687 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 56
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "J. Allen Kirk came to Wilmington as a Baptist pastor in 1897."
+script: |
+  J. Allen Kirk came to Wilmington as a Baptist pastor in 1897. The following year, the
+  coup forced him to seek safety.
+
+  He later published an account of the violence and his escape. That record preserves the
+  perspective of a Black community leader who experienced the danger directly.
+
+  Historians disagree on some details of his route and timing. His account should be read
+  as testimony, with its particular viewpoint, rather than treated as an all-seeing
+  description of every event.
+
+  Listen beside the marker. Kirk survived the attempt to silence and drive out people like
+  him, then made a written record. His story demonstrates another form of resistance:
+  preserving an experience so later generations would have evidence beyond the version
+  offered by those who seized power.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "That record preserves the perspective of a Black community leader who experienced the danger directly."
+    source: 1
+    quote: "As Pastor of the prominent Central Baptist Church in Wilmington, North Carolina, J. Allen Kirk was a leader in the African American community in the port city."
+  - says: "Allen Kirk came to Wilmington as a Baptist pastor in 1897."
+    source: 1
+    quote: "(The church is now called Central Baptist Missionary Church and is the oldest African American church in Wilmington.) He arrived in 1897 to be Central’s pastor."
+sources:
+  - title: "J allen kirk d 122"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/12/j-allen-kirk-d-122
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-j-allen-kirk-kept-a-record/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.8
+    audioBytes: 894057
+    transcript:
+      totalS: 55.8
+      lines:
+        - text: J.
+          atS: 0
+          durationS: 0.42
+        - text: Allen Kirk came to Wilmington as a Baptist pastor in 1897.
+          atS: 0.46
+          durationS: 4.84
+        - text: The following year, the coup forced him to seek safety.
+          atS: 6
+          durationS: 3.38
+        - text: He later published an account of the violence and his escape.
+          atS: 9.98
+          durationS: 3.52
+        - text: That record preserves the perspective of a Black community leader who experienced the danger directly.
+          atS: 14.2
+          durationS: 6.57
+        - text: Historians disagree on some details of his route and timing.
+          atS: 21.09
+          durationS: 4.16
+        - text: His account should be read as testimony, with its particular viewpoint, rather than treated as an all-seeing description of every event.
+          atS: 25.64
+          durationS: 8.75
+        - text: Listen beside the marker.
+          atS: 34.99
+          durationS: 1.79
+        - text: Kirk survived the attempt to silence and drive out people like him, then made a written record.
+          atS: 37.38
+          durationS: 6.48
+        - text: "His story demonstrates another form of resistance: preserving an experience so later generations would have evidence beyond the version offered by those who seized power."
+          atS: 44.56
+          durationS: 11.26

@@ -1,0 +1,125 @@
+# Drafted by Claude Code (2026-11-09) for Nashville.
+# Listening spot: The public paths of Fort Negley Park, by the stone walls on the hilltop.
+# Position: Wikidata Q5471744 (Fort Negley), a public park (high confidence).
+id: nashville-the-fort-nobody-attacked
+title: "The Fort Nobody Attacked"
+summary: "Fort Negley was built by about 2,500 Black craftsmen in Union-occupied Nashville. It was too strong to attack in 1864."
+place: "Fort Negley Park, Nashville, Tennessee"
+at: { lat: 36.1451, lng: -86.77466 }
+triggerRadiusKm: 0.1
+category: military
+format: short
+durationS: 50
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [nashville, civil-war, military, fort-negley, african-american-history]
+teaser: "The stone on this hill was laid by people who had escaped slavery, and it was never put to the test."
+script: |
+  Look at the stone walls on this hilltop. They went up during the Civil War, laid by people who had escaped slavery.
+
+  The Union army called them contraband. It was a legal word for an enslaved person who had made it to Union lines.
+
+  It protected them from being sent back to the Confederates. It also let the army use their labor for its own purposes.
+
+  About twenty-five hundred Black masons, carpenters and laborers built Fort Negley.
+
+  They used sixty-two thousand five hundred cubic feet of stone.
+
+  In December 1864, the Battle of Nashville was fought around this city.
+
+  Nobody attacked this fort. It was too strong to try.
+
+  And nearly thirteen thousand men of the United States Colored Troops helped defend Nashville.
+
+  The best compliment a fort can get is to be left alone.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "They went up during the Civil War, laid by people who had escaped slavery."
+    source: 1
+    quote: "Fort Negley in Nashville, Tennessee is a Civil War fort built by Black masons, carpenters and laborers who were known as “contraband” and under the protection of the Union Army."
+  - says: "The Union army called them contraband."
+    source: 1
+    quote: "who were known as “contraband” and under the protection of the Union Army."
+  - says: "It was a legal word for an enslaved person who had made it to Union lines."
+    source: 1
+    quote: "“Contraband” was a legal term used by the Army to refer to any self-emancipated enslaved person who made it to Union lines."
+  - says: "It protected them from being sent back to the Confederates."
+    source: 1
+    quote: "This terminology was employed in the Confiscation Act to protect enslaved people from being returned to the Confederates during the war."
+  - says: "It also let the army use their labor for its own purposes."
+    source: 1
+    quote: "However, it also allowed Union forces to use the labor of these individuals for their own purposes."
+  - says: "About twenty-five hundred Black masons, carpenters and laborers built Fort Negley."
+    source: 1
+    quote: "the story of 2,500 Black craftsmen who built Fort Negley"
+  - says: "They used sixty-two thousand five hundred cubic feet of stone."
+    source: 1
+    quote: "these skilled Black laborers used 62,500 cubic feet of stone to create a formidable fortification."
+  - says: "In December 1864, the Battle of Nashville was fought around this city."
+    source: 1
+    quote: "So formidable, that the Fort was not attacked during the Battle of Nashville in December of 1864."
+  - says: "Nobody attacked this fort."
+    source: 1
+    quote: "So formidable, that the Fort was not attacked during the Battle of Nashville in December of 1864."
+  - says: "It was too strong to try."
+    source: 1
+    quote: "So formidable, that the Fort was not attacked"
+  - says: "And nearly thirteen thousand men of the United States Colored Troops helped defend Nashville."
+    source: 1
+    quote: "the nearly 13,000 United States Colored Troops (USCT) who defended Nashville during the war."
+sources:
+  - title: "Fort Negley Civil War Database"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/fort-negley-civil-war-database.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-the-fort-nobody-attacked/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.3
+    audioBytes: 805868
+    transcript:
+      totalS: 50.3
+      lines:
+        - text: Look at the stone walls on this hilltop.
+          atS: 0
+          durationS: 2.37
+        - text: They went up during the Civil War, laid by people who had escaped slavery.
+          atS: 2.69
+          durationS: 4.25
+        - text: The Union army called them contraband.
+          atS: 7.19
+          durationS: 2.2
+        - text: It was a legal word for an enslaved person who had made it to Union lines.
+          atS: 9.6
+          durationS: 4.06
+        - text: It protected them from being sent back to the Confederates.
+          atS: 13.91
+          durationS: 2.94
+        - text: It also let the army use their labor for its own purposes.
+          atS: 17.02
+          durationS: 3.6
+        - text: About twenty-five hundred Black masons, carpenters and laborers built Fort Negley.
+          atS: 20.86
+          durationS: 5.35
+        - text: They used sixty-two thousand five hundred cubic feet of stone.
+          atS: 26.46
+          durationS: 4.38
+        - text: In December 1864, the Battle of Nashville was fought around this city.
+          atS: 31.44
+          durationS: 4.87
+        - text: Nobody attacked this fort.
+          atS: 36.81
+          durationS: 1.75
+        - text: It was too strong to try.
+          atS: 38.81
+          durationS: 1.68
+        - text: And nearly thirteen thousand men of the United States Colored Troops helped defend Nashville.
+          atS: 40.65
+          durationS: 5.43
+        - text: The best compliment a fort can get is to be left alone.
+          atS: 46.68
+          durationS: 3.61

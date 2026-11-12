@@ -1,0 +1,182 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Center City east, Jewelers' Row), following docs/writing-echoes.md (format v2).
+# Listening spot: Sansom Street between Seventh and Eighth, Jewelers' Row, the street cut through Robert Morris's lot after the sheriff's sale.
+# Position: midpoint of Sansom Street between the Overture street-map intersections at Seventh (39.948594, -75.152519) and Eighth (39.948789, -75.154107) (high confidence for the lot, which ran from Seventh to Eighth and Chestnut to Walnut).
+id: philadelphia-a-street-through-the-folly
+title: "A Street Through the Folly"
+summary: "Robert Morris began a palace on this block, by the man who planned Washington. It ruined him. The street through it bears the buyer's name."
+place: "Sansom Street between Seventh and Eighth streets (Jewelers' Row), Center City, Philadelphia, Pennsylvania"
+at: { lat: 39.94869, lng: -75.15331 }
+triggerRadiusKm: 0.05
+category: wonders
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [philadelphia, philadelphia-core, jewelers-row, robert-morris, lenfant, sansom-street, architecture, debt]
+teaser: "This little street runs straight through a palace that was never finished."
+script: |
+  Look along this narrow street, Sansom Street, between Seventh and Eighth. It runs straight through the middle of a palace.
+
+  You cannot see it, because it was never finished. In seventeen ninety one, the whole block from here to Walnut Street belonged to Robert Morris. He was the man they called the purse of the Revolution. He signed the Declaration. When the country's credit was worthless, he borrowed on his own.
+
+  And on this block, he set out to build a house like nothing else in America. His architect was a French officer named Pierre L'Enfant, the same man who laid out the streets of Washington. By one old account, it went down two and sometimes three floors underground, with arches and vaults. Above ground, it rose in red brick and pale blue marble. People came to stare. They called it Morris's Folly.
+
+  Here is the twist. It was not the house that ruined him. It was land. Millions of acres, bought on borrowed money, all across the country. The buyers never came. His notes piled up like autumn leaves. By seventeen ninety seven, afraid of prison for debt, he fled his own home across the street.
+
+  The sheriff sold this whole block. One of the buyers, William Sansom, cut two streets through it. He named the small one after Morris.
+
+  The big one, the one you are standing on, he named after himself.
+pronunciations:
+  - written: "L'Enfant"
+    say: "lahn-FAHN"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In seventeen ninety one, the whole block from here to Walnut Street belonged to Robert Morris."
+    source: 1
+    quote: "He acquired title to it by deed from John Dickinson and wife, late Mary Norris, on March 7, 1791. The property included the whole lot from Chestnut to Walnut and from Seventh to Eighth streets"
+  - says: "He was the man they called the purse of the Revolution."
+    source: 1
+    quote: "as it has been said that Washington was the Sword of the Revolution, so it may be said that Morris was the Purse."
+  - says: "He signed the Declaration."
+    source: 1
+    quote: "Morris was ready to affix his signature too."
+  - says: "When the country's credit was worthless, he borrowed on his own."
+    source: 1
+    quote: "he found that his own credit was much better than that of the nation, and in order to raise money he did not hesitate to pledge his own means"
+  - says: "And on this block, he set out to build a house like nothing else in America."
+    source: 1
+    quote: "His ambition to erect this splendid mansion, which far exceeded anything at that time to be seen in the city, attracted much attention"
+  - says: "His architect was a French officer named Pierre L'Enfant, the same man who laid out the streets of Washington."
+    source: 1
+    quote: "the government of the United States had sufficient confidence in his abilities to entrust to him the important task of laying out the city of Washington."
+  - says: "It went down two and sometimes three floors underground, with arches and vaults."
+    source: 1
+    quote: "it being generally two, and sometimes three, stories under ground, and the arches, vaults, and labyrinths were numerous."
+  - says: "By one old account"
+    source: 1
+    quote: "Watson the annalist, whose tendency was to rely on gossip rather than on the results of accurate investigation"
+  - says: "Above ground, it rose in red brick and pale blue marble."
+    source: 1
+    quote: "At present -it appeared a huge mass of red brick and pale-blue marble"
+  - says: "They called it Morris's Folly."
+    source: 1
+    quote: "When it became evident that the house could not be finished, the appellation of \" Morris's Folly \" was given to it"
+  - says: "Here is the twist. It was not the house that ruined him. It was land."
+    source: 1
+    quote: "The enormous land speculations into which he entered with John Nicholson and James Greenleaf were really the cause of Mr. Morris's failure."
+  - says: "Millions of acres, bought on borrowed money, all across the country."
+    source: 1
+    quote: "the propert}' which Morris alone was interested in was considerably over six millions of acres."
+  - says: "The buyers never came."
+    source: 1
+    quote: "that the coming population would be attracted by the offer of fine farming-land at what might be considered low prices"
+  - says: "His notes piled up like autumn leaves."
+    source: 1
+    quote: "The notes of Morris, Nicholson, and Greenleaf were as thick in the money-market as autumnal leaves"
+  - says: "By seventeen ninety seven, afraid of prison for debt, he fled his own home across the street."
+    source: 1
+    quote: "the fear of imprisonment for debt became so strong that in 1797 Mr. Morris was forced to leave his residence in Chestnut street opposite the \" Folly,\" and fly to The Hills."
+  - says: "The sheriff sold this whole block."
+    source: 1
+    quote: "made deed-poll to William Sansom for the whole lot and building"
+  - says: "One of the buyers, William Sansom, cut two streets through it. He named the small one after Morris."
+    source: 1
+    quote: "Mr. Sansom laid two streets through the property, the principal one being called Sansom street, and the smaller one Morris street."
+  - says: "The big one, the one you are standing on, he named after himself."
+    source: 1
+    quote: "the principal one being called Sansom street"
+  - says: "Look along this narrow street, Sansom Street, between Seventh and Eighth."
+    source: 1
+    quote: "The property included the whole lot from Chestnut to Walnut and from Seventh to Eighth streets"
+  - says: "Look along this narrow street, Sansom Street, between Seventh and Eighth."
+    source: 1
+    quote: "Mr. Sansom laid two streets through the property, the principal one being called Sansom street, and the smaller one Morris street."
+sources:
+  - title: "The Historic Mansions and Buildings of Philadelphia (Thompson Westcott, 1877), chapter: Robert Morris's Folly"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicmansions00west
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-a-street-through-the-folly/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 91.5
+    audioBytes: 1465407
+    transcript:
+      totalS: 91.5
+      lines:
+        - text: Look along this narrow street, Sansom Street, between Seventh and Eighth.
+          atS: 0
+          durationS: 5.11
+        - text: It runs straight through the middle of a palace.
+          atS: 5.62
+          durationS: 2.48
+        - text: You cannot see it, because it was never finished.
+          atS: 8.54
+          durationS: 2.78
+        - text: In seventeen ninety one, the whole block from here to Walnut Street belonged to Robert Morris.
+          atS: 12.27
+          durationS: 5.65
+        - text: He was the man they called the purse of the Revolution.
+          atS: 18.31
+          durationS: 2.83
+        - text: He signed the Declaration.
+          atS: 21.52
+          durationS: 1.96
+        - text: When the country's credit was worthless, he borrowed on his own.
+          atS: 24
+          durationS: 3.66
+        - text: And on this block, he set out to build a house like nothing else in America.
+          atS: 28.35
+          durationS: 5.21
+        - text: His architect was a French officer named Pierre L'Enfant, the same man who laid out the streets of Washington.
+          atS: 34.87
+          durationS: 6.43
+        - text: By one old account, it went down two and sometimes three floors underground, with arches and vaults.
+          atS: 42.11
+          durationS: 6.87
+        - text: Above ground, it rose in red brick and pale blue marble.
+          atS: 49.93
+          durationS: 3.9
+        - text: People came to stare.
+          atS: 54.44
+          durationS: 1.41
+        - text: They called it Morris's Folly.
+          atS: 56.17
+          durationS: 1.83
+        - text: Here is the twist.
+          atS: 58.33
+          durationS: 1.31
+        - text: It was not the house that ruined him.
+          atS: 60.24
+          durationS: 1.92
+        - text: It was land.
+          atS: 62.4
+          durationS: 1.03
+        - text: Millions of acres, bought on borrowed money, all across the country.
+          atS: 64.13
+          durationS: 4.04
+        - text: The buyers never came.
+          atS: 68.35
+          durationS: 1.32
+        - text: His notes piled up like autumn leaves.
+          atS: 69.95
+          durationS: 2.97
+        - text: By seventeen ninety seven, afraid of prison for debt, he fled his own home across the street.
+          atS: 73.53
+          durationS: 5.9
+        - text: The sheriff sold this whole block.
+          atS: 79.75
+          durationS: 2.02
+        - text: One of the buyers, William Sansom, cut two streets through it.
+          atS: 82.05
+          durationS: 3.54
+        - text: He named the small one after Morris.
+          atS: 85.76
+          durationS: 1.92
+        - text: The big one, the one you are standing on, he named after himself.
+          atS: 87.96
+          durationS: 3.58

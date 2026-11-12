@@ -1,0 +1,131 @@
+# Drafted by Claude Code (2026-11-09) for Nashville.
+# Listening spot: Roy Acuff Place sidewalk outside RCA Studio B. Inside is by museum tour only.
+# Position: HABS TN-269 coordinates for the building (36.149952, -86.792847), consistent with Wikidata Q7276060 (high confidence).
+id: nashville-the-colored-lights
+title: "The Colored Lights"
+summary: "RCA Studio B saw about 35,000 sessions and over a thousand hits. Its colored lights went in at Elvis Presley's suggestion."
+place: "RCA Studio B, 1611 Roy Acuff Place, Nashville, Tennessee"
+at: { lat: 36.149952, lng: -86.792847 }
+triggerRadiusKm: 0.04
+category: arts
+rare: extra-rare
+rareReason: "Inside, with opening hours"
+inspo:
+  kind: creation
+  evidence: building
+format: short
+durationS: 59
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [nashville, music-row, elvis, recording-studio, rca-studio-b]
+teaser: "The lights inside this studio are red, blue, green and white, because Elvis did not like the old ones."
+script: |
+  Inside this plain concrete-block building, the lights over the studio floor hang from the ceiling in groups of four. Each group has a red bulb, a blue, a green and a white.
+
+  They are there because Elvis Presley did not like fluorescent light.
+
+  This is RCA Studio B. It was built in 1957, the first studio in Nashville that belonged to a major label.
+
+  About thirty-five thousand recording sessions happened in here. More than a thousand hit records came out.
+
+  Elvis's first session here ran overnight, in June 1958, while he was on leave from the army.
+
+  His last was exactly thirteen years later. In between, he made more than two hundred and thirty recordings in this building, among them It's Now or Never and Are You Lonesome Tonight.
+
+  The Everly Brothers cut All I Have to Do Is Dream and Cathy's Clown here too.
+
+  A thousand hits, sung under colored bulbs, because one singer wanted the room to feel right.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Inside this plain concrete-block building, the lights over the studio floor hang from the ceiling in groups of four."
+    source: 1
+    quote: "In Studio B itself, brushed aluminum bullet lights, made by the Swivelier Company of New York City, are suspended from the ceiling in groups of four"
+  - says: "Each group has a red bulb, a blue, a green and a white."
+    source: 1
+    quote: "with different color bulbs (red, blue, green and white) in each of the four lights."
+  - says: "They are there because Elvis Presley did not like fluorescent light."
+    source: 1
+    quote: "The still extant Swivelier brushed aluminum light fixtures with different colored bulbs were installed at Presley’s suggestion since he disliked the original fluorescent lighting."
+  - says: "This is RCA Studio B."
+    source: 1
+    quote: "Approximately 35,000 recording sessions took place at RCA Studio B"
+  - says: "It was built in 1957, the first studio in Nashville that belonged to a major label."
+    source: 1
+    quote: "This one- and two-story concrete-block structure was built in 1957"
+  - says: "It was built in 1957, the first studio in Nashville that belonged to a major label."
+    source: 1
+    quote: "Its new Nashville location was the first in that city to belong to a major label"
+  - says: "About thirty-five thousand recording sessions happened in here."
+    source: 1
+    quote: "Approximately 35,000 recording sessions took place at RCA Studio B, resulting in more than one thousand hit records."
+  - says: "More than a thousand hit records came out."
+    source: 1
+    quote: "Approximately 35,000 recording sessions took place at RCA Studio B, resulting in more than one thousand hit records."
+  - says: "Elvis's first session here ran overnight, in June 1958, while he was on leave from the army."
+    source: 1
+    quote: "Presley’s first session in Studio B took place in 1958 while he was on leave from the army and ran overnight from June 10th into June 11th."
+  - says: "His last was exactly thirteen years later."
+    source: 1
+    quote: "his last, which took place exactly thirteen years later on June 10, 1971"
+  - says: "In between, he made more than two hundred and thirty recordings in this building, among them It's Now or Never and Are You Lonesome Tonight."
+    source: 1
+    quote: "Presley made more that 230 recordings in the building, including “It’s Now or Never,” “Are You Lonesome Tonight?,”"
+  - says: "The Everly Brothers cut All I Have to Do Is Dream and Cathy's Clown here too."
+    source: 1
+    quote: "The hit records that the Everly Brothers cut in the building included “All I Have to Do is Dream” and “Cathy’s Clown.”"
+  - says: "A thousand hits, sung under colored bulbs, because one singer wanted the room to feel right."
+    source: 1
+    quote: "resulting in more than one thousand hit records."
+sources:
+  - title: "RCA Studio B, 1611 Roy Acuff Place, HABS No. TN-269, Written Historical and Descriptive Data"
+    publisher: "Library of Congress, Historic American Buildings Survey (National Park Service)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tn/tn0400/tn0437/data/tn0437data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-the-colored-lights/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 59.4
+    audioBytes: 951318
+    transcript:
+      totalS: 59.4
+      lines:
+        - text: Inside this plain concrete-block building, the lights over the studio floor hang from the ceiling in groups of four.
+          atS: 0
+          durationS: 6.29
+        - text: Each group has a red bulb, a blue, a green and a white.
+          atS: 6.99
+          durationS: 3.8
+        - text: They are there because Elvis Presley did not like fluorescent light.
+          atS: 11.3
+          durationS: 3.56
+        - text: This is RCA Studio B.
+          atS: 15.37
+          durationS: 2.36
+        - text: It was built in 1957, the first studio in Nashville that belonged to a major label.
+          atS: 18.17
+          durationS: 5.28
+        - text: About thirty-five thousand recording sessions happened in here.
+          atS: 24.15
+          durationS: 3.43
+        - text: More than a thousand hit records came out.
+          atS: 28.18
+          durationS: 2.45
+        - text: Elvis's first session here ran overnight, in June 1958, while he was on leave from the army.
+          atS: 31.44
+          durationS: 6.23
+        - text: His last was exactly thirteen years later.
+          atS: 38.28
+          durationS: 2.77
+        - text: In between, he made more than two hundred and thirty recordings in this building, among them It's Now or Never and Are You Lonesome Tonight.
+          atS: 41.66
+          durationS: 7.47
+        - text: The Everly Brothers cut All I Have to Do Is Dream and Cathy's Clown here too.
+          atS: 49.37
+          durationS: 4.17
+        - text: A thousand hits, sung under colored bulbs, because one singer wanted the room to feel right.
+          atS: 53.78
+          durationS: 5.62

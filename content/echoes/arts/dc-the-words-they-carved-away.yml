@@ -8,6 +8,8 @@ place: "Stone of Hope, north face, Martin Luther King Jr. Memorial, West Potomac
 at: { lat: 38.88640, lng: -77.04418 }
 triggerRadiusKm: 0.03
 category: arts
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 79
 visibility: at-hand

@@ -1,0 +1,247 @@
+# 2026-11-07 fact-check: the City of Wilmington landmarks page (source 1) refused this
+# session (Access Denied). Most facts are re-sourced to the state and WWAY; the one claim
+# still resting on source 1 (that he trained Gibson at his home and on his private court)
+# is as copied on 2026-11-03 and was NOT re-verified.
+# Drafted 2026-11-03 from the city's landmark register and the state's highway-marker
+# essay for the Algonquin Tennis Club, which carries the Eaton and Gibson connection and
+# the rule that explains the court.
+#
+# POSITION IS DERIVED, NOT SURVEYED (medium confidence). No geocoder is reachable from a
+# cloud session, so this comes from the Overture street graph already in the repo
+# (apps/prototype/public/streets/the-lady-in-grey.json): Orange Street meets 14th at
+# 34.23425,-77.93124 and 15th at 34.23436,-77.92994, and the point below is the midpoint
+# of that block. The block is right: two known Orange Street addresses in the library, 116
+# and 211, both fall in the block their number predicts. Where in the block number 1406
+# sits is not: those same two addresses sit 60% and 43% along their own blocks, so
+# numbering is not evenly spaced here. Worst case is about half a block, roughly 60 m,
+# against a 40 m trigger radius. James: worth dropping a pin before this one is approved.
+id: wilmington-the-court-behind-the-house
+title: "The Court Behind the House"
+summary: "A Wilmington doctor laid a tennis court in his own back garden. Althea Gibson learned on it."
+place: "Dr. Hubert Eaton House, 1406 Orange Street, Wilmington, North Carolina"
+at: { lat: 34.23431, lng: -77.93059 }
+triggerRadiusKm: 0.04
+category: sports
+format: feature
+durationS: 131
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [wilmington]
+teaser: "Work out what a private court was for."
+script: |
+  There is a tennis court behind this house.
+
+  Not a club court. Not a park court. A doctor's back garden, with a full court laid in
+  it.
+
+  Work out what that is for.
+
+  Start with the rule, because the rule is the whole story. A Black player in America
+  could not join the United States Lawn Tennis Association. So in nineteen sixteen Black
+  players built their own: the American Tennis Association, set up to encourage and
+  support competitive tennis among African Americans, who were not permitted to join the
+  white association. The state's own account calls it the first professional sports
+  league for African Americans in the country.
+
+  A separate league is not a door opening. It is a door staying shut, and people building
+  another house.
+
+  Now the man.
+
+  Hubert Eaton lived here, and he was a doctor. For years he led the fight to desegregate
+  this county's schools, the city's municipal golf course and the YMCA. He was also an
+  avid tennis player.
+
+  That is what fits on a plaque. Here is what it cost.
+
+  A public court can turn you away. A club can decline your application. A tournament can
+  lose your entry form. There is a court in this city that none of that can happen on, and
+  it is the court a man pays for himself and lays in his own back garden.
+
+  So he did. And then he taught on it.
+
+  The register is specific about one of the people he taught at his home and on that
+  court. The state goes further and says she lived with him for a time.
+
+  Her name was Althea Gibson.
+
+  She went on to win Wimbledon, and to become the first African American woman to win a
+  Grand Slam title. The state's account says Eaton is given much credit for her development.
+
+  Look at the house.
+
+  It is a house. That is the whole point of it. There is no stadium and no statue. A
+  doctor who could not change the rule built around it instead, in his own yard, at his
+  own expense, and handed the result to somebody else.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "A Black player in America could not join the United States Lawn Tennis Association."
+    source: 2
+    quote: "The American Tennis Association (ATA) was established in 1916 to encourage and support competitive tennis among African Americans, who were not permitted to join the white United States Lawn Tennis Association."
+  - says: "So in nineteen sixteen Black players built their own: the American Tennis Association, set up to encourage and support competitive tennis among African Americans, who were not permitted to join the white association."
+    source: 2
+    quote: "The American Tennis Association (ATA) was established in 1916 to encourage and support competitive tennis among African Americans, who were not permitted to join the white United States Lawn Tennis Association."
+  - says: "The state's own account calls it the first professional sports league for African Americans in the country."
+    source: 2
+    quote: "It was the nation’s first professional sports league for African Americans."
+  - says: "Hubert Eaton lived here"
+    source: 3
+    quote: "The house Dr. Hubert Eaton lived in, 1406 Orange Street, is now a local Historic Landmark."
+  - says: "and he was a doctor"
+    source: 4
+    quote: "While his occupation was a physician, Dr. Eaton tirelessly led efforts related to civil rights for many years, including the desegregation of New Hanover County Schools, UNCW, the City of Wilmington’s Municipal Golf Course and YMCA."
+  - says: "For years he led the fight to desegregate this county's schools, the city's municipal golf course and the YMCA."
+    source: 4
+    quote: "While his occupation was a physician, Dr. Eaton tirelessly led efforts related to civil rights for many years, including the desegregation of New Hanover County Schools, UNCW, the City of Wilmington’s Municipal Golf Course and YMCA."
+  - says: "He was also an avid tennis player."
+    source: 4
+    quote: "In addition to his work in civil rights, Dr. Eaton was an avid tennis player who mentored International Tennis Hall of Famer and former Wimbledon champion Althea Gibson."
+  - says: "The register is specific about one of the people he taught at his home and on that court."
+    source: 1
+    quote: "He used his success and passion to train and educate Althea Gibson at his home and on his private tennis court."
+  - says: "The state goes further and says she lived with him for a time."
+    source: 2
+    quote: "Dr. Hubert Eaton of Wilmington, with whom Gibson lived for a time, is given much credit for the development of the women’s tennis star."
+  - says: "Her name was Althea Gibson."
+    source: 3
+    quote: "A national championship winner in tennis, Eaton was the coach and mentor of Althea Gibson, the first African-American woman to win a Grand Slam title."
+  - says: "She went on to win Wimbledon"
+    source: 4
+    quote: "In addition to his work in civil rights, Dr. Eaton was an avid tennis player who mentored International Tennis Hall of Famer and former Wimbledon champion Althea Gibson."
+  - says: "to become the first African American woman to win a Grand Slam title"
+    source: 3
+    quote: "A national championship winner in tennis, Eaton was the coach and mentor of Althea Gibson, the first African-American woman to win a Grand Slam title."
+  - says: "The state's account says Eaton is given much credit for her development."
+    source: 2
+    quote: "Dr. Hubert Eaton of Wilmington, with whom Gibson lived for a time, is given much credit for the development of the women’s tennis star."
+sources:
+  - title: "Local Historic Landmarks"
+    publisher: "City of Wilmington"
+    url: https://www.wilmingtonnc.gov/Development-Business/Historic-Preservation/Local-Historic-Landmarks
+    retrievedAt: "2026-11-03"
+    rights: fair-use-facts
+  - title: "Algonquin Tennis Club (G-138)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/20/algonquin-tennis-club-g-138
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Dr. Hubert Eaton's house recognized as local Historic Landmark"
+    publisher: "WWAY News"
+    url: https://www.wwaytv3.com/?p=1850312
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Dr. Hubert Eaton honored with NC Civil Rights Trail Plaque in Wilmington"
+    publisher: "WWAY News"
+    url: https://www.wwaytv3.com/?p=1753509
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-court-behind-the-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 130.8
+    audioBytes: 2094018
+    transcript:
+      totalS: 130.8
+      lines:
+        - text: There is a tennis court behind this house.
+          atS: 0
+          durationS: 2.19
+        - text: Not a club court.
+          atS: 2.37
+          durationS: 1.14
+        - text: Not a park court.
+          atS: 3.66
+          durationS: 1.16
+        - text: A doctor's back garden, with a full court laid in it.
+          atS: 4.99
+          durationS: 2.95
+        - text: Work out what that is for.
+          atS: 8.22
+          durationS: 1.54
+        - text: Start with the rule, because the rule is the whole story.
+          atS: 10.28
+          durationS: 3.36
+        - text: A Black player in America could not join the United States Lawn Tennis Association.
+          atS: 14.23
+          durationS: 5.41
+        - text: "So in nineteen sixteen Black players built their own: the American Tennis Association, set up to encourage and support competitive tennis among African Americans, who were not permitted to join the white association."
+          atS: 20.46
+          durationS: 14.73
+        - text: The state's own account calls it the first professional sports league for African Americans in the country.
+          atS: 36
+          durationS: 5.72
+        - text: A separate league is not a door opening.
+          atS: 42.42
+          durationS: 2.66
+        - text: It is a door staying shut, and people building another house.
+          atS: 45.69
+          durationS: 3.89
+        - text: Now the man.
+          atS: 50.39
+          durationS: 1.02
+        - text: Hubert Eaton lived here, and he was a doctor.
+          atS: 51.65
+          durationS: 2.72
+        - text: For years he led the fight to desegregate this county's schools, the city's municipal golf course and the YMCA.
+          atS: 54.97
+          durationS: 7.13
+        - text: He was also an avid tennis player.
+          atS: 62.7
+          durationS: 2.09
+        - text: That is what fits on a plaque.
+          atS: 65.4
+          durationS: 1.89
+        - text: Here is what it cost.
+          atS: 67.67
+          durationS: 1.49
+        - text: A public court can turn you away.
+          atS: 69.54
+          durationS: 2.23
+        - text: A club can decline your application.
+          atS: 71.95
+          durationS: 2.32
+        - text: A tournament can lose your entry form.
+          atS: 74.59
+          durationS: 2.47
+        - text: There is a court in this city that none of that can happen on, and it is the court a man pays for himself and lays in his own back garden.
+          atS: 77.76
+          durationS: 7.94
+        - text: So he did.
+          atS: 86.4
+          durationS: 0.93
+        - text: And then he taught on it.
+          atS: 88.03
+          durationS: 1.3
+        - text: The register is specific about one of the people he taught at his home and on that court.
+          atS: 89.84
+          durationS: 4.68
+        - text: The state goes further and says she lived with him for a time.
+          atS: 95.21
+          durationS: 3.73
+        - text: Her name was Althea Gibson.
+          atS: 99.32
+          durationS: 2.37
+        - text: She went on to win Wimbledon, and to become the first African American woman to win a Grand Slam title.
+          atS: 102.07
+          durationS: 6.47
+        - text: The state's account says Eaton is given much credit for her development.
+          atS: 108.92
+          durationS: 4.35
+        - text: Look at the house.
+          atS: 113.6
+          durationS: 1.08
+        - text: It is a house.
+          atS: 114.93
+          durationS: 1.15
+        - text: That is the whole point of it.
+          atS: 116.35
+          durationS: 1.73
+        - text: There is no stadium and no statue.
+          atS: 118.41
+          durationS: 2.7
+        - text: A doctor who could not change the rule built around it instead, in his own yard, at his own expense, and handed the result to somebody else.
+          atS: 121.44
+          durationS: 9.38

@@ -1,0 +1,87 @@
+# From W062 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Authorized museum tour for identified plasterwork; public sidewalk alternative at the associated worksite.
+# Position: DigitalNC building point 34.2361,-77.9429 (NE corner Market & 5th); moved ~17 m south to north Market St sidewalk in front of house (high confidence).
+# Shares a stop with other echoes, so it sits 9m off the spot to keep its pin tappable.
+id: wilmington-william-goulds-initials
+title: "William Gould's Initials"
+summary: "William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site."
+place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+at: { lat: 34.23591, lng: -77.94294 }
+triggerRadiusKm: 0.04
+category: history
+rare: extra-rare
+rareReason: "Easy to miss"
+format: short
+durationS: 53
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site."
+script: |
+  William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site.
+  The museum records that a later renovation revealed plasterwork bearing his initials.
+
+  In 1862, Gould escaped down the Cape Fear River and entered Union naval service. He kept
+  a diary, leaving a record in his own words beyond the evidence of his skilled labor.
+
+  This is his documented worksite, not the location of every stage of his escape or
+  service.
+
+  If the identified plaster is available on your authorized tour, notice how small a
+  signature can be beside a large house. Initials connect a finished surface to a
+  particular person. Gould's later life changes the meaning again: the craftsperson was
+  also someone who acted to claim freedom and preserve his experience.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site."
+    source: 1
+    quote: "William Benjamin Gould, an enslaved plasterer who worked at the Bellamy site around 1860-61, was 'hired out' by his enslaver, Nicholas Nixon, for the construction project."
+  - says: "In 1862, Gould escaped down the Cape Fear River and entered Union naval service."
+    source: 2
+    quote: "William, along with several other slaves, escaped to their freedom in 1862 by boat down the Cape Fear River."
+sources:
+  - title: "Previous"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/museum-blog/previous/2
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "The people"
+    publisher: "Bellamy Mansion Museum"
+    url: https://www.bellamymansion.org/the-people.html
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-william-goulds-initials/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 52.7
+    audioBytes: 843484
+    transcript:
+      totalS: 52.7
+      lines:
+        - text: William Benjamin Gould was an enslaved plasterer hired out for work at the Bellamy site.
+          atS: 0
+          durationS: 5.49
+        - text: The museum records that a later renovation revealed plasterwork bearing his initials.
+          atS: 6.09
+          durationS: 5.18
+        - text: In 1862, Gould escaped down the Cape Fear River and entered Union naval service.
+          atS: 11.97
+          durationS: 6.07
+        - text: He kept a diary, leaving a record in his own words beyond the evidence of his skilled labor.
+          atS: 18.43
+          durationS: 5.79
+        - text: This is his documented worksite, not the location of every stage of his escape or service.
+          atS: 24.91
+          durationS: 6.06
+        - text: If the identified plaster is available on your authorized tour, notice how small a signature can be beside a large house.
+          atS: 31.67
+          durationS: 7.34
+        - text: Initials connect a finished surface to a particular person.
+          atS: 39.45
+          durationS: 3.75
+        - text: "Gould's later life changes the meaning again: the craftsperson was also someone who acted to claim freedom and preserve his experience."
+          atS: 43.9
+          durationS: 8.77

@@ -1,0 +1,121 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Franklin Court courtyard, open daily, beside the steel ghost structure of the house; enter by the Market Street archway or the Chestnut Street gates.
+# Position: Overture "Franklin Court and Ghost Structures" at 39.95014, -75.14666 and Benjamin Franklin Museum at 39.94947, -75.14690; the house frame stands mid-block between Market and Chestnut, so the spot is set between them (medium confidence).
+id: philadelphia-as-much-as-anyone-knows
+title: "As Much as Anyone Knows"
+summary: "Nobody knew what Franklin's demolished house looked like, so the architects built only its outline, in steel, to his insurance measurements."
+place: "Franklin Court ghost structure, between Market and Chestnut streets, Philadelphia, Pennsylvania"
+at: { lat: 39.94985, lng: -75.14665 }
+triggerRadiusKm: 0.04
+category: wonders
+format: short
+durationS: 65
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, franklin, architecture, archaeology]
+teaser: "Look up at the steel frame. It is a house with nothing filled in."
+script: |
+  Stand in the courtyard and look up at the steel frame. It is the outline of a house, drawn in the air, with nothing filled in.
+
+  Benjamin Franklin's house stood here. It was large for the city, and unusual, set back from Market Street in a garden court. Franklin died here in seventeen ninety. Twenty-two years later his heirs tore it down. The land had become too valuable to keep one house on it.
+
+  When the Park Service investigated the court, archaeologists found the outline of the house and its cellar. But nobody could find enough evidence of what the house had actually looked like.
+
+  So the architects decided not to guess. They built a frame to the measurements recorded in Franklin's own property insurance, and left it empty.
+
+  Look down through the viewing portals near your feet. You can see what is left of his cellar kitchen.
+
+  Everything above that is exactly as much as anyone knows.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Benjamin Franklin's house stood here."
+    source: 2
+    quote: "Benjamin Franklin's home sat in this courtyard"
+  - says: "It was large for the city, and unusual, set back from Market Street in a garden court."
+    source: 1
+    quote: "The Franklin family house was large for the 18th-century city, and unusual because it sat within a garden court, away from Market Street."
+  - says: "Franklin died here in seventeen ninety."
+    source: 1
+    quote: "Franklin died here in 1790; the house was torn down 22 years later."
+  - says: "Twenty-two years later his heirs tore it down."
+    source: 1
+    quote: "By 1812, the land had so increased in value that the Bache heirs decided to tear down the house"
+  - says: "The land had become too valuable to keep one house on it."
+    source: 1
+    quote: "By 1812, the land had so increased in value that the Bache heirs decided to tear down the house and rebuild Franklin Court with rental row houses."
+  - says: "When the Park Service investigated the court, archaeologists found the outline of the house and its cellar."
+    source: 1
+    quote: "After the National Park Service began a closer investigation of the courtyard, archeologists located the outline and basement features of the Franklin's house."
+  - says: "But nobody could find enough evidence of what the house had actually looked like."
+    source: 1
+    quote: "As evidence of the building’s original design was incomplete, they decided to create a representational design."
+  - says: "They built a frame to the measurements recorded in Franklin's own property insurance, and left it empty."
+    source: 1
+    quote: "designed space frames following dimensions recorded in Benjamin Franklin’s property insurance"
+  - says: "You can see what is left of his cellar kitchen."
+    source: 1
+    quote: "Viewing portals provide visitors with a glimpse of the original cellar kitchen to the Franklin mansion."
+sources:
+  - title: "Franklin Court"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-franklincourt.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Visiting the Franklin Court Courtyard"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/planyourvisit/franklincourtcourtyard.htm
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-as-much-as-anyone-knows/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65
+    audioBytes: 1040761
+    transcript:
+      totalS: 65
+      lines:
+        - text: Stand in the courtyard and look up at the steel frame.
+          atS: 0
+          durationS: 3.5
+        - text: It is the outline of a house, drawn in the air, with nothing filled in.
+          atS: 3.88
+          durationS: 4.74
+        - text: Benjamin Franklin's house stood here.
+          atS: 9.91
+          durationS: 2.36
+        - text: It was large for the city, and unusual, set back from Market Street in a garden court.
+          atS: 13.08
+          durationS: 5.5
+        - text: Franklin died here in seventeen ninety.
+          atS: 19.89
+          durationS: 2.39
+        - text: Twenty-two years later his heirs tore it down.
+          atS: 22.98
+          durationS: 3.16
+        - text: The land had become too valuable to keep one house on it.
+          atS: 26.64
+          durationS: 3.27
+        - text: When the Park Service investigated the court, archaeologists found the outline of the house and its cellar.
+          atS: 31.03
+          durationS: 6.13
+        - text: But nobody could find enough evidence of what the house had actually looked like.
+          atS: 37.86
+          durationS: 4.81
+        - text: So the architects decided not to guess.
+          atS: 43.48
+          durationS: 2.82
+        - text: They built a frame to the measurements recorded in Franklin's own property insurance, and left it empty.
+          atS: 47.11
+          durationS: 6.29
+        - text: Look down through the viewing portals near your feet.
+          atS: 54.36
+          durationS: 2.76
+        - text: You can see what is left of his cellar kitchen.
+          atS: 57.56
+          durationS: 2.51
+        - text: Everything above that is exactly as much as anyone knows.
+          atS: 60.67
+          durationS: 4.3

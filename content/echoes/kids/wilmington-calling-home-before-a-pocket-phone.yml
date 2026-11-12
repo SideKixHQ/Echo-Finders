@@ -9,6 +9,8 @@ place: "Hannah Block Historic USO, 120 South Second Street, Wilmington, North Ca
 at: { lat: 34.23322, lng: -77.94729 }
 triggerRadiusKm: 0.04
 category: kids
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 44
 visibility: at-hand

@@ -8,6 +8,8 @@ place: "Fulton Ferry Landing, foot of Old Fulton Street, DUMBO, Brooklyn"
 at: { lat: 40.70335, lng: -73.99530 }
 triggerRadiusKm: 0.04
 category: arts
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 83
 visibility: at-hand

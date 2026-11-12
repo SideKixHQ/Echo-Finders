@@ -1,0 +1,175 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: Public sidewalk on Tremont Street at the corner of School Street, in front of the chapel's portico.
+# Position: Offset from the Overture place for King's Chapel, 58 Tremont Street, to the Tremont and School street corner (medium confidence).
+id: boston-the-church-inside-the-church
+title: "The Church Inside the Church"
+summary: "King's Chapel was built around the old wooden church, while the congregation kept worshipping inside it."
+place: "King's Chapel, Tremont and School streets, Boston, Massachusetts"
+at: { lat: 42.35795, lng: -71.06035 }
+triggerRadiusKm: 0.04
+category: wonders
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, kings-chapel, architecture]
+teaser: "Look at the stone. Nobody quarried it."
+script: |
+  Look at the walls of King's Chapel. Rough blocks of stone.
+
+  Nobody quarried them. There were no quarries yet. The stone was gathered off the surface
+  of the ground in Braintree, south of here, and the builders had little skill at dressing
+  it. That is why it looks the way it does.
+
+  Now picture this corner in the summer of seventeen forty nine.
+
+  There is already a church here. A wooden one, old and decaying. The governor lays the
+  cornerstone for a new stone chapel, gives the workmen money to drink his health, and then
+  walks inside the old wooden church for a service.
+
+  Because the plan was not to pull the old church down first.
+
+  The plan was to build the new one around it.
+
+  So for nearly four years the congregation kept worshipping in a wooden church while stone
+  walls went up on every side of them. Only when the old building was too far gone did they
+  move out, and borrow somebody else's.
+
+  By the summer of seventeen fifty four the stone chapel was in use. The pulpit was carried
+  over from the old church into the new one.
+
+  Most buildings replace the one before them. This one swallowed it.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the walls of King's Chapel."
+    source: 1
+    quote: "The stone for the chapel came from Braintree"
+  - says: "Nobody quarried them."
+    source: 1
+    quote: "from the surface of the ground, no quarries being then opened."
+  - says: "There were no quarries yet."
+    source: 1
+    quote: "no quarries being then opened."
+  - says: "The stone was gathered off the surface of the ground in Braintree, south of here, and the builders had little skill at dressing it."
+    source: 1
+    quote: "The stone for the chapel came from Braintree, and was taken 30 LANDMARKS OF BOSTON. from the surface of the ground, no quarries being then opened."
+  - says: "The stone was gathered off the surface of the ground in Braintree, south of here, and the builders had little skill at dressing it."
+    source: 1
+    quote: "The rough appearance of the stone is due to the limited knowl- edge of the art of dressing it which then prevailed."
+  - says: "That is why it looks the way it does."
+    source: 1
+    quote: "The rough appearance of the stone is due to the limited knowl- edge of the art of dressing it which then prevailed."
+  - says: "Now picture this corner in the summer of seventeen forty nine."
+    source: 2
+    quote: "the corner-stone was laid by Governor Shirley with becoming ceremony Aug. 11,1749."
+  - says: "A wooden one, old and decaying."
+    source: 1
+    quote: "It was first erected of wood in the year 1688, en- larged in 1710, and, being found in the year 1741 in a state of considerable decay, it was proposed to rebuild it of stone."
+  - says: "The governor lays the cornerstone for a new stone chapel, gives the workmen money to drink his health, and then walks inside the old wooden church for a service."
+    source: 1
+    quote: "Governor Shirley laid the corner-stone on the 11th of August, 1749, and after giving the workmen £ 20 (old tenor) to drink his health, went into the old church, which was still standing, where a service appropriate to the occasion was held"
+  - says: "The plan was to build the new one around it."
+    source: 1
+    quote: "The new chapel was built so as to enclose the old church"
+  - says: "So for nearly four years the congregation kept worshipping in a wooden church while stone walls went up on every side of them."
+    source: 1
+    quote: "The new chapel was built so as to enclose the old church, in which services continued to be held, in spite of its ruinous con- dition, until March, 1753, when the society was obliged to remove to Trinity."
+  - says: "Only when the old building was too far gone did they move out, and borrow somebody else's."
+    source: 1
+    quote: "in spite of its ruinous con- dition, until March, 1753, when the society was obliged to remove to Trinity."
+  - says: "Because the plan was not to pull the old church down first."
+    source: 1
+    quote: "The new chapel was built so as to enclose the old church"
+  - says: "Most buildings replace the one before them."
+    source: 1
+    quote: "The new chapel was built so as to enclose the old church"
+  - says: "This one swallowed it."
+    source: 1
+    quote: "The new chapel was built so as to enclose the old church"
+  - says: "By the summer of seventeen fifty four the stone chapel was in use."
+    source: 2
+    quote: "it was not occupied for worship till the summer of 1754."
+  - says: "The pulpit was carried over from the old church into the new one."
+    source: 2
+    quote: "The pulpit of the old church was transferred to the new."
+sources:
+  - title: "Old landmarks and historic personages of Boston (Samuel Adams Drake, 1873)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01012230/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "A brief sketch of the history of King's Chapel (1898)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/07030336/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Freedom Trail Audio Described Brochure"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/bost/planyourvisit/freedom-trail-audio-described-brochure.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-church-inside-the-church/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.1
+    audioBytes: 1154446
+    transcript:
+      totalS: 72.1
+      lines:
+        - text: Look at the walls of King's Chapel.
+          atS: 0
+          durationS: 1.89
+        - text: Rough blocks of stone.
+          atS: 2.22
+          durationS: 1.45
+        - text: Nobody quarried them.
+          atS: 3.84
+          durationS: 1.2
+        - text: There were no quarries yet.
+          atS: 5.36
+          durationS: 1.5
+        - text: The stone was gathered off the surface of the ground in Braintree, south of here, and the builders had little skill at dressing it.
+          atS: 7.19
+          durationS: 6.98
+        - text: That is why it looks the way it does.
+          atS: 14.68
+          durationS: 2.29
+        - text: Now picture this corner in the summer of seventeen forty nine.
+          atS: 17.57
+          durationS: 3.27
+        - text: There is already a church here.
+          atS: 21.22
+          durationS: 1.74
+        - text: A wooden one, old and decaying.
+          atS: 23.24
+          durationS: 2.55
+        - text: The governor lays the cornerstone for a new stone chapel, gives the workmen money to drink his health, and then walks inside the old wooden church for a service.
+          atS: 26.4
+          durationS: 9.22
+        - text: Because the plan was not to pull the old church down first.
+          atS: 36.32
+          durationS: 3.96
+        - text: The plan was to build the new one around it.
+          atS: 40.66
+          durationS: 2.69
+        - text: So for nearly four years the congregation kept worshipping in a wooden church while stone walls went up on every side of them.
+          atS: 43.95
+          durationS: 7.83
+        - text: Only when the old building was too far gone did they move out, and borrow somebody else's.
+          atS: 52.38
+          durationS: 5.9
+        - text: By the summer of seventeen fifty four the stone chapel was in use.
+          atS: 59.4
+          durationS: 4.11
+        - text: The pulpit was carried over from the old church into the new one.
+          atS: 63.95
+          durationS: 3.49
+        - text: Most buildings replace the one before them.
+          atS: 67.88
+          durationS: 2.19
+        - text: This one swallowed it.
+          atS: 70.52
+          durationS: 1.56

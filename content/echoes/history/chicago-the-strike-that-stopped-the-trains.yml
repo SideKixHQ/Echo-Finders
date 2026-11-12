@@ -8,6 +8,8 @@ place: "Pullman Administration Clock Tower Building, 111th Street and Cottage Gr
 at: { lat: 41.6926, lng: -87.6083 }
 triggerRadiusKm: 0.1
 category: history
+rare: rare
+rareReason: "Hard to reach"
 format: short
 durationS: 75
 visibility: at-hand

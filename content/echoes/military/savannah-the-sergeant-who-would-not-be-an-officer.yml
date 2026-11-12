@@ -1,0 +1,161 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: Inside Madison Square, at the foot of the bronze Jasper monument in its centre. Public square.
+# Position: Overture point for the William Jasper Monument (32.07357,-81.09392), which agrees with the Overture Madison Square point at 332 Bull St (high confidence).
+id: savannah-the-sergeant-who-would-not-be-an-officer
+title: "The Sergeant Who Would Not Be an Officer"
+summary: "William Jasper turned down a commission twice. Savannah made him fifteen feet tall in bronze."
+place: "Jasper Monument, Madison Square, Savannah, Georgia"
+at: { lat: 32.07350, lng: -81.09390 }
+triggerRadiusKm: 0.04
+category: military
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.75
+tags: [savannah, savannah-core, madison-square, american-revolution, monuments]
+teaser: "Look at his right hand."
+script: |
+  Look up at the bronze soldier on top of the monument in the middle of the square. His left hand holds a battle-worn flag out at arm's length. His right hand is pressed against his side, over a bullet wound.
+
+  His name was William Jasper, a sergeant in a South Carolina regiment.
+
+  Some time before he died, the British fleet bombarded Fort Moultrie, and the fort's flagstaff was shot in two. Jasper caught the flag, tied it to a sponge staff, and jumped up onto the rampart to hold it there until a new pole was found.
+
+  He was offered a commission as an officer. He turned it down. He said he could neither read nor write, and so did not think himself worthy. The governor offered it again. He refused again.
+
+  On the ninth of October, seventeen seventy nine, in the attack on the British lines at Spring Hill, Jasper was mortally wounded. He carried his regiment's colours off the field anyway.
+
+  A hundred years later to the day, Savannah laid the cornerstone of this monument. When it was unveiled in eighteen eighty eight, the President came.
+
+  He refused to be made an officer. So the city made him fifteen feet tall.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "His left hand holds a battle-worn flag out at arm's length."
+    source: 2
+    quote: "The left hand clutches at arm’s length a battle-worn banner."
+  - says: "His right hand is pressed against his side, over a bullet wound."
+    source: 2
+    quote: "is pressed tightly over a bullet wound in his side."
+  - says: "His name was William Jasper, a sergeant in a South Carolina regiment."
+    source: 1
+    quote: "his regiment (the 24 South Carolina) was presented with a stand of colors,"
+  - says: "William Jasper"
+    source: 3
+    quote: "Erected to the memory of Sergt. William Jasper, who fell in the siege of Savannah, 9th October, 1779."
+  - says: "Some time before he died, the British fleet bombarded Fort Moultrie, and the fort's flagstaff was shot in two."
+    source: 1
+    quote: "Sergeant Jasper greatly distinguished himself during the bombardment of Fort Moultrie by the British fleet some time previous. During the hottest part of the engagement the flag-staff was cut intwo."
+  - says: "Jasper caught the flag, tied it to a sponge staff, and jumped up onto the rampart to hold it there until a new pole was found."
+    source: 1
+    quote: "and, tying the flag to it, jumped upon the ramparts and held it there until a new staff was procured."
+  - says: "He was offered a commission as an officer."
+    source: 1
+    quote: "For this brave act he was offered a com- mission,"
+  - says: "He said he could neither read nor write, and so did not think himself worthy."
+    source: 1
+    quote: "stating that he could neither read nor write, and therefore did not deem himself worthy;"
+  - says: "The governor offered it again."
+    source: 1
+    quote: "Governor Rutledge at the same time presented him with a sword, and again offered hima commission, which he again refused."
+  - says: "He refused again."
+    source: 1
+    quote: "which he again refused."
+  - says: "On the ninth of October, seventeen seventy nine, in the attack on the British lines at Spring Hill, Jasper was mortally wounded."
+    source: 3
+    quote: "Erected to the memory of Sergt. William Jasper, who fell in the siege of Savannah, 9th October, 1779."
+  - says: "Jasper was mortally wounded"
+    source: 1
+    quote: "Sergeant Jasper mortally wounded while bearing off the Colors of his Regiment"
+  - says: "He carried his regiment's colours off the field anyway."
+    source: 1
+    quote: "Sergeant Jasper carrying off the colors."
+  - says: "A hundred years later to the day, Savannah laid the cornerstone of this monument."
+    source: 2
+    quote: "The corner-stone was laid October 9, 1879, the centennial anniversary of Sergeant Jasper’s death,"
+  - says: "When it was unveiled in eighteen eighty eight, the President came."
+    source: 2
+    quote: "The monument was completed and unveiled February 22, 1888, President Cleveland taking part in the ceremonies."
+  - says: "So the city made him fifteen feet tall."
+    source: 2
+    quote: "The bronze statue of Jasper, which surmounts the pedestal, is fifteen feet high"
+sources:
+  - title: "Historical record of the city of Savannah (F. D. Lee and J. L. Agnew, 1869)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Savannah and its surroundings (G. A. Gregory, 1890)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007695/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Moultrie
+    say: MOOL-tree
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-sergeant-who-would-not-be-an-officer/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.4
+    audioBytes: 1190808
+    transcript:
+      totalS: 74.4
+      lines:
+        - text: Look up at the bronze soldier on top of the monument in the middle of the square.
+          atS: 0
+          durationS: 4.27
+        - text: His left hand holds a battle-worn flag out at arm's length.
+          atS: 4.45
+          durationS: 3.6
+        - text: His right hand is pressed against his side, over a bullet wound.
+          atS: 8.2
+          durationS: 3.58
+        - text: His name was William Jasper, a sergeant in a South Carolina regiment.
+          atS: 11.98
+          durationS: 4.31
+        - text: Some time before he died, the British fleet bombarded Fort Moultrie, and the fort's flagstaff was shot in two.
+          atS: 17.4
+          durationS: 6.91
+        - text: Jasper caught the flag, tied it to a sponge staff, and jumped up onto the rampart to hold it there until a new pole was found.
+          atS: 25.26
+          durationS: 7.41
+        - text: He was offered a commission as an officer.
+          atS: 33.27
+          durationS: 2.12
+        - text: He turned it down.
+          atS: 35.84
+          durationS: 1.14
+        - text: He said he could neither read nor write, and so did not think himself worthy.
+          atS: 37.49
+          durationS: 4.64
+        - text: The governor offered it again.
+          atS: 42.74
+          durationS: 1.58
+        - text: He refused again.
+          atS: 44.76
+          durationS: 1.28
+        - text: On the ninth of October, seventeen seventy nine, in the attack on the British lines at Spring Hill, Jasper was mortally wounded.
+          atS: 46.64
+          durationS: 8.31
+        - text: He carried his regiment's colours off the field anyway.
+          atS: 55.55
+          durationS: 3.03
+        - text: A hundred years later to the day, Savannah laid the cornerstone of this monument.
+          atS: 59.28
+          durationS: 4.62
+        - text: When it was unveiled in eighteen eighty eight, the President came.
+          atS: 64.41
+          durationS: 4.02
+        - text: He refused to be made an officer.
+          atS: 68.94
+          durationS: 1.97
+        - text: So the city made him fifteen feet tall.
+          atS: 71.36
+          durationS: 3

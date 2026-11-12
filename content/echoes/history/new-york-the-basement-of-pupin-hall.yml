@@ -1,0 +1,165 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Morningside Heights cluster (more NYC batch).
+# Listening spot: Outside Pupin Hall, Columbia University's physics building, at the north end of the campus near West 120th Street and Broadway.
+# Position: Wikidata Q7260678 (Pupin Hall) coordinate (high confidence).
+id: new-york-the-basement-of-pupin-hall
+title: "The Basement of Pupin Hall"
+summary: "In 1939, in this building's basement, scientists saw an atom split for the first time in America. The project took the city's name."
+place: "Pupin Hall, Columbia University, near West 120th Street and Broadway, Morningside Heights, Manhattan"
+at: { lat: 40.81006, lng: -73.96153 }
+triggerRadiusKm: 0.05
+category: history
+inspo:
+  kind: first
+  evidence: building
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [new-york, columbia, morningside-heights, manhattan-project, physics, fission, world-war-two]
+teaser: "Why is it called the Manhattan Project? Partly because of buildings like this one."
+script: |
+  Look at the tall brick physics building at the edge of the campus. Ordinary classrooms. Ordinary labs.
+
+  Now think about what is under it. The basement.
+
+  In nineteen thirty nine, down there, scientists watched an atom split. It was the first time anyone had seen nuclear fission on American soil.
+
+  The people working in these buildings had names that would end up in every history book. Enrico Fermi. Leo Szilard. I I Rabi.
+
+  In the basement of another building across the campus, Fermi and his colleagues stacked uranium and graphite into a pile. It never quite came alive. But it led to the one in Chicago that did, the world's first nuclear reactor, in December, nineteen forty two.
+
+  By nineteen forty three, a chemist named Harold Urey had more than seven hundred people here, working out how to separate uranium.
+
+  And the whole effort, the army's secret project to build the bomb, had its first headquarters downtown, at two seventy Broadway. A general named Leslie Groves worried that its first name, the Laboratory for the Development of Substitute Materials, would attract attention. So he gave it a duller one, after the island.
+
+  The Manhattan Engineer District.
+
+  Everyone else calls it the Manhattan Project.
+
+  It started in this city, in basements like this one.
+
+pronunciations:
+  - written: Szilard
+    say: SIL-ard
+  - written: Rabi
+    say: RAH-bee
+  - written: Urey
+    say: YOOR-ee
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In nineteen thirty nine, down there, scientists watched an atom split."
+    source: 1
+    quote: "In 1939, in the basement of Pupin Hall, scientists first observed nuclear fission on US soil."
+  - says: "It was the first time anyone had seen nuclear fission on American soil."
+    source: 1
+    quote: "In 1939, in the basement of Pupin Hall, scientists first observed nuclear fission on US soil."
+  - says: "Enrico Fermi. Leo Szilard. I I Rabi."
+    source: 1
+    quote: "where scientists including Enrico Fermi, Leo Szilard, I.I. Rabi, and others worked in the code-named Substitute Alloys Materials Laboratory."
+  - says: "In the basement of another building across the campus, Fermi and his colleagues stacked uranium and graphite into a pile."
+    source: 1
+    quote: "In the basement of Schermerhorn Hall, Fermi and colleagues constructed a subcritical uranium and graphite nuclear reactor"
+  - says: "It never quite came alive."
+    source: 1
+    quote: "constructed a subcritical uranium and graphite nuclear reactor"
+  - says: "But it led to the one in Chicago that did, the world's first nuclear reactor, in December, nineteen forty two."
+    source: 1
+    quote: "the precursor to the Chicago Pile, the world’s first nuclear reactor which reached criticality on the University of Chicago campus in December 1942."
+  - says: "By nineteen forty three, a chemist named Harold Urey had more than seven hundred people here, working out how to separate uranium."
+    source: 1
+    quote: "By 1943, chemist Harold Urey oversaw more than 700 workers experimenting with uranium enrichment processes"
+  - says: "And the whole effort, the army's secret project to build the bomb, had its first headquarters downtown, at two seventy Broadway."
+    source: 1
+    quote: "Prior to moving to Oak Ridge in the summer of 1943, the Manhattan Project was headquartered at 270 Broadway in lower Manhattan"
+  - says: "A general named Leslie Groves worried that its first name, the Laboratory for the Development of Substitute Materials, would attract attention."
+    source: 1
+    quote: "With an initial name of “Laboratory for the Development of Substitute Materials”, project leader General Leslie Groves, fearing the name would cause unwanted attention, changed it to “Manhattan Engineer District.”"
+  - says: "Everyone else calls it the Manhattan Project."
+    source: 1
+    quote: "This name would soon be shortened to the “Manhattan Project.”"
+  - says: "So he gave it a duller one, after the island. The Manhattan Engineer District."
+    source: 1
+    quote: "project leader General Leslie Groves, fearing the name would cause unwanted attention, changed it to “Manhattan Engineer District.”"
+  - says: "It started in this city, in basements like this one."
+    source: 1
+    quote: "In addition to Manhattan initially housing the project’s headquarters, the city was also home to Columbia University, where scientists including Enrico Fermi, Leo Szilard, I.I. Rabi, and others worked in the code-named Substitute Alloys Materials Laboratory. In 1939, in the basement of Pupin Hall, scientists first observed nuclear fission on US soil."
+sources:
+  - title: "New York, New York (Manhattan Project National Historical Park)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/new-york-new-york.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-basement-of-pupin-hall/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 88.1
+    audioBytes: 1410655
+    transcript:
+      totalS: 88.1
+      lines:
+        - text: Look at the tall brick physics building at the edge of the campus.
+          atS: 0
+          durationS: 3.47
+        - text: Ordinary classrooms.
+          atS: 3.71
+          durationS: 1.42
+        - text: Ordinary labs.
+          atS: 5.22
+          durationS: 1.2
+        - text: Now think about what is under it.
+          atS: 7.02
+          durationS: 1.95
+        - text: The basement.
+          atS: 9.36
+          durationS: 0.99
+        - text: In nineteen thirty nine, down there, scientists watched an atom split.
+          atS: 11.64
+          durationS: 4.41
+        - text: It was the first time anyone had seen nuclear fission on American soil.
+          atS: 16.38
+          durationS: 4.47
+        - text: The people working in these buildings had names that would end up in every history book.
+          atS: 21.66
+          durationS: 4.48
+        - text: Enrico Fermi.
+          atS: 26.47
+          durationS: 1.25
+        - text: Leo Szilard.
+          atS: 28
+          durationS: 1.22
+        - text: I I Rabi.
+          atS: 29.43
+          durationS: 1.57
+        - text: In the basement of another building across the campus, Fermi and his colleagues stacked uranium and graphite into a pile.
+          atS: 31.81
+          durationS: 6.87
+        - text: It never quite came alive.
+          atS: 39.01
+          durationS: 1.82
+        - text: But it led to the one in Chicago that did, the world's first nuclear reactor, in December, nineteen forty two.
+          atS: 41.22
+          durationS: 7.24
+        - text: By nineteen forty three, a chemist named Harold Urey had more than seven hundred people here, working out how to separate uranium.
+          atS: 48.9
+          durationS: 8.41
+        - text: And the whole effort, the army's secret project to build the bomb, had its first headquarters downtown, at two seventy Broadway.
+          atS: 57.82
+          durationS: 7.44
+        - text: A general named Leslie Groves worried that its first name, the Laboratory for the Development of Substitute Materials, would attract attention.
+          atS: 65.77
+          durationS: 9.17
+        - text: So he gave it a duller one, after the island.
+          atS: 75.38
+          durationS: 2.87
+        - text: The Manhattan Engineer District.
+          atS: 78.58
+          durationS: 2.1
+        - text: Everyone else calls it the Manhattan Project.
+          atS: 81.06
+          durationS: 2.73
+        - text: It started in this city, in basements like this one.
+          atS: 84.3
+          durationS: 3.8

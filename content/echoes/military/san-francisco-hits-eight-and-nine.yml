@@ -1,0 +1,143 @@
+# Drafted by Claude Code (2026-11-09) for San Francisco, California.
+# Listening spot: The public memorial beside the Lands End parking area on El Camino del Mar, walking around the steel bridge section.
+# Position: Wikidata Q49573654 (USS San Francisco Memorial, 37.782778, -122.511667); the memorial is a public overlook (high confidence).
+id: san-francisco-hits-eight-and-nine
+title: "Hits Eight and Nine"
+summary: "At Lands End stands a piece of the bridge of the cruiser San Francisco, still holed by the shells of a night battle in 1942."
+place: "USS San Francisco Memorial, El Camino del Mar, Lands End, San Francisco, California"
+at: { lat: 37.78278, lng: -122.51167 }
+triggerRadiusKm: 0.05
+category: military
+format: short
+durationS: 63
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-francisco, lands-end, world-war-ii, military, navy, guadalcanal]
+teaser: "The holes in this steel were made in one night, on the other side of the Pacific."
+script: |
+  Walk around this steel structure and look for two large holes punched clean through it.
+
+  This is part of the bridge of the cruiser San Francisco. The command center of the ship.
+
+  In 1942, during the Battle of Guadalcanal, she took forty-five hits and twenty-five fires.
+
+  It was a gun battle at night, with the two fleets mixed up together. Veterans described it as a bar-room brawl.
+
+  These two openings are hits the Navy numbered eight and nine. Five-inch shells, thought to be from a Japanese destroyer, maybe from a single volley.
+
+  The holes themselves were not the worst of it. It was the fragments that flew inward when the shells burst.
+
+  The admiral of the task force, Daniel Callaghan, was up here with his staff. So was the ship's captain, Cassin Young, who had been in command for a week, maybe two. Neither of them survived.
+
+  Their names are on the plaque for those who did not come home. The steel next to it is still the shape that night left it.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Walk around this steel structure and look for two large holes punched clean through it."
+    source: 2
+    quote: "we’re here on the opposite side of the memorial and you can see two of the hits that the San Francisco sustained"
+  - says: "This is part of the bridge of the cruiser San Francisco."
+    source: 1
+    quote: "a shrapnel-scarred piece of the bridge tower from the cruiser is accompanied by plaques and a flagpole"
+  - says: "The command center of the ship."
+    source: 2
+    quote: "this was the bridge of the USS San Francisco, so it’s the command center if you want to think of it."
+  - says: "In 1942, during the Battle of Guadalcanal, she took forty-five hits and twenty-five fires."
+    source: 1
+    quote: "In 1942, the WWII cruiser the USS San Francisco sustained 45 hits and 25 fires during the Battle of Guadalcanal in the Pacific."
+  - says: "It was a gun battle at night, with the two fleets mixed up together."
+    source: 2
+    quote: "how the two fleets got intermingled"
+  - says: "Veterans described it as a bar-room brawl."
+    source: 2
+    quote: "It’s been described by some of the veterans of this battle as just a bar-room brawl"
+  - says: "These two openings are hits the Navy numbered eight and nine."
+    source: 2
+    quote: "these two particular openings right here represent two hits that the Navy labeled as hits number eight and nine"
+  - says: "Five-inch shells"
+    source: 2
+    quote: "they were apparently five-inch gun hits"
+  - says: "thought to be from a Japanese destroyer, maybe from a single volley"
+    source: 2
+    quote: "this was thought to be produced from a Japanese destroyer"
+  - says: "It was the fragments that flew inward when the shells burst."
+    source: 2
+    quote: "it’s the fragments that fly outward, and in this case inward"
+  - says: "The admiral of the task force, Daniel Callaghan, was up here with his staff."
+    source: 2
+    quote: "That was the admiral of the US task force during that battle."
+  - says: "So was the ship's captain, Cassin Young, who had been in command for a week, maybe two."
+    source: 2
+    quote: "he had been in command for a week or so, maybe two weeks at most"
+  - says: "Neither of them survived."
+    source: 2
+    quote: "just like the admiral he did not survive"
+  - says: "Their names are on the plaque for those who did not come home."
+    source: 2
+    quote: "There’s a separate one just around the edge here for those that did not survive."
+sources:
+  - title: "USS San Francisco Memorial"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/uss-san-francisco-memorial.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "USS San Francisco: A Story That Links Four National Parks, From the Pacific to New England (video transcript)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/media/video/view.htm?id=AAAD7D76-0CF0-AD68-B715B71A19631FD6
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-hits-eight-and-nine/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 62.6
+    audioBytes: 1002727
+    transcript:
+      totalS: 62.6
+      lines:
+        - text: Walk around this steel structure and look for two large holes punched clean through it.
+          atS: 0
+          durationS: 5.18
+        - text: This is part of the bridge of the cruiser San Francisco.
+          atS: 5.62
+          durationS: 3.03
+        - text: The command center of the ship.
+          atS: 8.97
+          durationS: 1.66
+        - text: In 1942, during the Battle of Guadalcanal, she took forty-five hits and twenty-five fires.
+          atS: 11.94
+          durationS: 6.04
+        - text: It was a gun battle at night, with the two fleets mixed up together.
+          atS: 18.36
+          durationS: 4.04
+        - text: Veterans described it as a bar-room brawl.
+          atS: 23
+          durationS: 2.81
+        - text: These two openings are hits the Navy numbered eight and nine.
+          atS: 26.41
+          durationS: 3.53
+        - text: Five-inch shells, thought to be from a Japanese destroyer, maybe from a single volley.
+          atS: 30.55
+          durationS: 5.39
+        - text: The holes themselves were not the worst of it.
+          atS: 36.37
+          durationS: 2.52
+        - text: It was the fragments that flew inward when the shells burst.
+          atS: 39.17
+          durationS: 3.43
+        - text: The admiral of the task force, Daniel Callaghan, was up here with his staff.
+          atS: 42.92
+          durationS: 4.56
+        - text: So was the ship's captain, Cassin Young, who had been in command for a week, maybe two.
+          atS: 47.93
+          durationS: 5.13
+        - text: Neither of them survived.
+          atS: 53.44
+          durationS: 1.47
+        - text: Their names are on the plaque for those who did not come home.
+          atS: 55.61
+          durationS: 3.12
+        - text: The steel next to it is still the shape that night left it.
+          atS: 59.43
+          durationS: 3.17

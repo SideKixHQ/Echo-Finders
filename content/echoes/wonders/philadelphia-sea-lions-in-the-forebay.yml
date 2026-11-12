@@ -1,0 +1,153 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (Fairmount, the Schuylkill), second pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The terrace walk at the Fairmount Water Works, on the east bank of the Schuylkill below the Art Museum, looking at the little temple buildings on the mill house roof and the dam.
+# Position: the Water Works on Waterworks Drive below the Art Museum (about 39.9658, -75.1830), set on the landward side of the buildings. Outside the app's street map, so the position is from memory of the map and was not checked against a map file here (medium confidence). About 280 m from the new Rocky steps echo.
+id: philadelphia-sea-lions-in-the-forebay
+title: "Sea Lions in the Forebay"
+summary: "The Water Works was built to look like temples. When the pumps stopped in 1909 it became an aquarium, with sea lions in the forebay."
+place: "Fairmount Water Works, Waterworks Drive, on the Schuylkill below the Art Museum, Philadelphia, Pennsylvania"
+at: { lat: 39.96580, lng: -75.18300 }
+triggerRadiusKm: 0.06
+category: wonders
+format: short
+durationS: 91
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [philadelphia, fairmount, schuylkill-river, fairmount-water-works, frederick-graff, water, aquarium, built]
+teaser: "They filled it in with the bridge still standing."
+script: |
+  Look at the little white buildings along the river, with their columns. They look like temples. They were built to pump water.
+
+  In eighteen eleven, a young engineer named Frederick Graff began building here, at the foot of the hill. The plan was simple. Pump the river water up to reservoirs on top of the hill. Then let gravity carry it down through pipes into the city.
+
+  Graff made the engine house look like a gentleman's country villa. Then, in eighteen nineteen, he threw a dam across the river at an angle, so the river itself could turn the water wheels. When it was finished, it was the longest dam in North America.
+
+  He put two little temples on the roof of the mill house. People came out from the city just to stand up there, over the roar of the water, and look at the river. That was the start of Fairmount Park.
+
+  But the river got dirty. Factories upstream poured into it. In eighteen ninety, the city had cholera and typhoid. In nineteen oh nine, the pumps stopped for good.
+
+  Two years later, the mill houses became the city aquarium. The forebay, the channel that once fed the water wheels, held sea lions.
+
+  Then, in nineteen twenty three, they filled the forebay in. The little footbridge that crossed it was buried, just as it was.
+
+  Look along the terrace. Somewhere beside these temples, they buried a bridge.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In eighteen eleven, a young engineer named Frederick Graff began building here, at the foot of the hill. The plan was simple. Pump the river water up to reservoirs on top of the hill. Then let gravity carry it down through pipes into the city."
+    source: 1
+    quote: "By 1811, a young engineer, Frederick Graff (1775-1847), was superintendent of the waterworks. He recommended that a new and much larger facility be built at Fairmount, just to the northwest of the city boundary and at the Schuylkill’s edge. Water could be pumped up to reservoirs to be constructed on the hill’s summit. From there, gravity would do the rest, allowing water to flow through pipes down into the city."
+  - says: "In eighteen eleven, a young engineer named Frederick Graff began building here"
+    source: 1
+    quote: "construction began on August 1, 1811."
+  - says: "Graff made the engine house look like a gentleman's country villa."
+    source: 1
+    quote: "Graff’s design was for a building that might be mistaken for one of the grand country villas built in the previous century along the river bank by affluent citizens as summer retreats."
+  - says: "Then, in eighteen nineteen, he threw a dam across the river at an angle, so the river itself could turn the water wheels. When it was finished, it was the longest dam in North America."
+    source: 1
+    quote: "He proposed that the city should abandon the expensive steam technology and build a spillway dam at an angle across the river so that water power could drive the pumps. Once agreed to, construction began in 1819. When completed two years later, the dam was the longest in North America at 2,008 feet."
+  - says: "He put two little temples on the roof of the mill house. People came out from the city just to stand up there, over the roar of the water, and look at the river."
+    source: 1
+    quote: "Graff placed two little administrative buildings in the form of Classical temples at each end of the terrace roof of the mill house. Visitors could cross to it via a pedestrian bridge, take in the roar of waters spilling over the wheels"
+  - says: "That was the start of Fairmount Park."
+    source: 1
+    quote: "the riverbank below Fairmount became the birthplace of what would become the largest landscaped urban park in North America."
+  - says: "But the river got dirty. Factories upstream poured into it. In eighteen ninety, the city had cholera and typhoid. In nineteen oh nine, the pumps stopped for good."
+    source: 1
+    quote: "Yet within decades it became clear that industrialization along the river, including that well beyond the city’s limits, had polluted the river irremediably. In 1890, Philadelphia suffered a terrible outbreak of cholera and typhoid."
+  - says: "In nineteen oh nine, the pumps stopped for good."
+    source: 1
+    quote: "its waterworks were decommissioned in 1909."
+  - says: "Two years later, the mill houses became the city aquarium. The forebay, the channel that once fed the water wheels, held sea lions."
+    source: 1
+    quote: "The two mill houses were transformed into a city aquarium in 1911. For a time, sea lions cavorted in the forebay."
+  - says: "The forebay, the channel that once fed the water wheels"
+    source: 1
+    quote: "Behind it, a channel was dug out of the rock to create a forebay so that water would flow into it from above the dam. It would then fall down through flumes to turn the waterwheels"
+  - says: "Then, in nineteen twenty three, they filled the forebay in. The little footbridge that crossed it was buried, just as it was."
+    source: 1
+    quote: "But in 1923, the forebay was filled in, its pedestrian bridge buried intact."
+sources:
+  - title: "Fairmount Water Works (Encyclopedia of Greater Philadelphia)"
+    publisher: "The Encyclopedia of Greater Philadelphia, Rutgers University"
+    url: https://philadelphiaencyclopedia.org/essays/fairmount-water-works/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-sea-lions-in-the-forebay/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 90.7
+    audioBytes: 1452869
+    transcript:
+      totalS: 90.7
+      lines:
+        - text: Look at the little white buildings along the river, with their columns.
+          atS: 0
+          durationS: 3.65
+        - text: They look like temples.
+          atS: 3.82
+          durationS: 1.52
+        - text: They were built to pump water.
+          atS: 5.46
+          durationS: 1.92
+        - text: In eighteen eleven, a young engineer named Frederick Graff began building here, at the foot of the hill.
+          atS: 8.07
+          durationS: 6.7
+        - text: The plan was simple.
+          atS: 15.58
+          durationS: 1.54
+        - text: Pump the river water up to reservoirs on top of the hill.
+          atS: 17.57
+          durationS: 3.26
+        - text: Then let gravity carry it down through pipes into the city.
+          atS: 21.21
+          durationS: 3.94
+        - text: Graff made the engine house look like a gentleman's country villa.
+          atS: 26.1
+          durationS: 3.62
+        - text: Then, in eighteen nineteen, he threw a dam across the river at an angle, so the river itself could turn the water wheels.
+          atS: 30
+          durationS: 7.47
+        - text: When it was finished, it was the longest dam in North America.
+          atS: 38.16
+          durationS: 3.79
+        - text: He put two little temples on the roof of the mill house.
+          atS: 42.55
+          durationS: 3.09
+        - text: People came out from the city just to stand up there, over the roar of the water, and look at the river.
+          atS: 46.08
+          durationS: 5.49
+        - text: That was the start of Fairmount Park.
+          atS: 52.08
+          durationS: 2.52
+        - text: But the river got dirty.
+          atS: 54.93
+          durationS: 1.46
+        - text: Factories upstream poured into it.
+          atS: 56.99
+          durationS: 2.45
+        - text: In eighteen ninety, the city had cholera and typhoid.
+          atS: 59.88
+          durationS: 3.61
+        - text: In nineteen oh nine, the pumps stopped for good.
+          atS: 64.45
+          durationS: 2.69
+        - text: Two years later, the mill houses became the city aquarium.
+          atS: 67.74
+          durationS: 3.66
+        - text: The forebay, the channel that once fed the water wheels, held sea lions.
+          atS: 71.78
+          durationS: 4.39
+        - text: Then, in nineteen twenty three, they filled the forebay in.
+          atS: 76.61
+          durationS: 3.74
+        - text: The little footbridge that crossed it was buried, just as it was.
+          atS: 80.86
+          durationS: 3.42
+        - text: Look along the terrace.
+          atS: 84.8
+          durationS: 1.35
+        - text: Somewhere beside these temples, they buried a bridge.
+          atS: 86.75
+          durationS: 3.99

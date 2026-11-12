@@ -1,0 +1,87 @@
+# Batch 1 for the MVP (docs/12-cities.md), written 2026-11-05.
+# Position: Wikidata Q1044392 (Carolina Beach, the town). The boardwalk is a few hundred metres east; needs a pin before approval (low confidence).
+id: carolina-beach-where-the-shag-began
+title: "Where the Shag Began, Maybe"
+summary: "Local history buffs say the Carolina shag likely began on the Carolina Beach Boardwalk."
+place: "Carolina Beach Boardwalk, Carolina Beach, North Carolina"
+at: { lat: 34.036667, lng: -77.896944 }
+triggerRadiusKm: 0.25
+category: arts
+format: short
+durationS: 46
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [carolina-beach, music, boardwalk]
+teaser: "This boardwalk claims a dance. The claim is worth hearing, carefully."
+script: |
+  Listen for beach music. If any town can claim this dance, it might be this town.
+
+  The shag is danced to beach music, a laid-back kind of rhythm and blues with strong ties to
+  the Carolina coast. Local history buffs claim it is likely to have begun right here, on the
+  Carolina Beach Boardwalk.
+
+  Likely is doing real work in that sentence. Dances do not keep birth certificates.
+
+  But the music never left. The Carolina Beach Music Festival has run here for more than thirty
+  years, and its organizers believe it is the longest-running beach music festival still held
+  on the actual beach.
+
+  Watch the feet. Whether or not it started here, it has never stopped here.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The shag is danced to beach music, a laid-back kind of rhythm and blues with strong ties to the Carolina coast."
+    source: 1
+    quote: "Each band is renowned for beach music, a laid-back style of rhythm-and-blues that has strong ties to the Carolina coast."
+  - says: "Local history buffs claim it is likely to have begun right here, on the Carolina Beach Boardwalk."
+    source: 1
+    quote: "In fact local history buffs claim that the uniquely coastal Carolina \"shag dance\" is likely to have originated on the Carolina Beach Boardwalk."
+  - says: "The Carolina Beach Music Festival has run here for more than thirty years, and its organizers believe it is the longest-running beach music festival still held on the actual beach."
+    source: 1
+    quote: "Organizers believe the Carolina Beach Music Festival to be the longest-running beach music festival that is still held on the beach."
+sources:
+  - title: "Carolina Beach Music Festival Rocks The Beach Stage & Renovated Historic Boardwalk"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/articles/post/carolina-beach-music-festival-rocks-the-beach-stage-renovated-historic-boardwalk/
+    retrievedAt: "2026-11-05"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/carolina-beach-where-the-shag-began/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 46
+    audioBytes: 737323
+    transcript:
+      totalS: 46
+      lines:
+        - text: Listen for beach music.
+          atS: 0
+          durationS: 1.58
+        - text: If any town can claim this dance, it might be this town.
+          atS: 2.28
+          durationS: 3.83
+        - text: The shag is danced to beach music, a laid-back kind of rhythm and blues with strong ties to the Carolina coast.
+          atS: 6.92
+          durationS: 7.32
+        - text: Local history buffs claim it is likely to have begun right here, on the Carolina Beach Boardwalk.
+          atS: 14.94
+          durationS: 5.91
+        - text: Likely is doing real work in that sentence.
+          atS: 21.02
+          durationS: 2.91
+        - text: Dances do not keep birth certificates.
+          atS: 24.11
+          durationS: 2.65
+        - text: But the music never left.
+          atS: 26.97
+          durationS: 1.79
+        - text: The Carolina Beach Music Festival has run here for more than thirty years, and its organizers believe it is the longest-running beach music festival still held on the actual beach.
+          atS: 29.27
+          durationS: 11.19
+        - text: Watch the feet.
+          atS: 40.79
+          durationS: 1.05
+        - text: Whether or not it started here, it has never stopped here.
+          atS: 42.27
+          durationS: 3.75

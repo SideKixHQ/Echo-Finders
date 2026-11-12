@@ -1,0 +1,138 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Colonial Park Cemetery, beside the walk that continues Lincoln Street through the cemetery, near the James Wilde stone, which Gamble (1923) places "directly west of the vault of the Johnston family".
+# Position: Lincoln Street at Oglethorpe Avenue from the street segments in the app's Savannah street file, set about 40 m south along the Lincoln Street walk (medium confidence for the walk, low for the stone itself; find the stone on site and set the radius tight). About 85 m from the vaults echo at the Abercorn corner (savannah-the-vaults-on-south-broad), which is a different subject.
+id: savannah-friendless-but-for-him
+title: "Friendless But for Him"
+summary: "James Wilde was shot through the heart in a duel in 1815, by a man he had befriended. His family put that on his gravestone."
+place: "Grave of James Wilde, Colonial Park Cemetery, by the Lincoln Street walk, Savannah, Georgia"
+at: { lat: 32.07570, lng: -81.08945 }
+triggerRadiusKm: 0.03
+category: scandals
+rare: rare
+rareReason: "Easy to miss"
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [savannah, savannah-core, colonial-park, duels, poetry, epitaphs]
+teaser: "A gravestone that accuses someone without saying his name."
+script: |
+  Somewhere near this walk is a gravestone with a very long inscription. Find it, and read the middle of it.
+
+  It is a eulogy. It is also an accusation.
+
+  The young man under it was James Wilde, an army paymaster, in his twenty second year. On the sixteenth of January, eighteen fifteen, across the river in South Carolina, he fought a duel with a fellow officer, Captain Roswell Johnson. They fired four times. On the fourth, Wilde was shot through the heart.
+
+  His family wrote the stone. It says he fell in a duel by the hand of a man who, a short time ago, would have been friendless but for him.
+
+  They did not name the man on the stone.
+
+  A century later the novelist William Dean Howells stood here and read it. The words, he wrote, must have been meant for the eye of the man who fired, and they wrung his heart.
+
+  James had a brother, the poet Richard Henry Wilde. Gamble wrote that the duel was woven into the writing of his brother's poem, My life is like a summer rose.
+
+  Read the line on the stone again.
+
+  Friendless but for him. Two hundred years on, the stone is still saying it.
+detail: >-
+  Gamble (1923) gives the stone's full inscription, its place in the cemetery, the burial book entry (aged 23 in the book, "22d year" on the stone; died January 16, 1815; "shot through the heart at the fourth discharge by his antagonist, Capt. R. P. Johnson"; the duel on the north side of the river in South Carolina), and Howells's words from Harper's Magazine, February 1919. Gamble says the duel is "inseparably interwoven with the writing of Wilde's beautiful poem"; the script attributes that to Gamble and uses his title.
+pronunciations:
+  - written: "Wilde"
+    say: "WILD"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The young man under it was James Wilde, an army paymaster, in his twenty second year."
+    source: 1
+    quote: "JAMES WILDE, Esquire, late District Paymaster in the army of the U. S. He fell in a Duel on the 16th of January, 1815, by the hand of a man who, a short time ago, would have been friendless but for him; and expired instantly in his 22d year"
+  - says: "On the sixteenth of January, eighteen fifteen, across the river in South Carolina, he fought a duel with a fellow officer, Captain Roswell Johnson."
+    source: 1
+    quote: "His corpse was conveyed from the fatal spot, on the north side of the Savannah river in South Carolina"
+  - says: "On the sixteenth of January, eighteen fifteen, across the river in South Carolina, he fought a duel with a fellow officer, Captain Roswell Johnson."
+    source: 1
+    quote: "referring to Capt. R. P. Johnson, who slew James Wilde in duel"
+  - says: "They fired four times. On the fourth, Wilde was shot through the heart."
+    source: 1
+    quote: "He was shot through the heart at the fourth discharge by his antagonist, Capt. R. P. Johnson, of the 8th Regt. U.S. Infantry."
+  - says: "It says he fell in a duel by the hand of a man who, a short time ago, would have been friendless but for him."
+    source: 1
+    quote: "He fell in a Duel on the 16th of January, 1815, by the hand of a man who, a short time ago, would have been friendless but for him"
+  - says: "A century later the novelist William Dean Howells stood here and read it. The words, he wrote, must have been meant for the eye of the man who fired, and they wrung his heart."
+    source: 1
+    quote: "The words must have been primarily meant for the eye of the homicide, but they wrung my heart with abhorrence for the custom which wronged him and his victim alike"
+  - says: "James had a brother, the poet Richard Henry Wilde. Gamble wrote that the duel was woven into the writing of his brother's poem, My life is like a summer rose."
+    source: 1
+    quote: "James Wilde was the beloved brother of the poet. The incident of the duel is inseparably interwoven with the writ- ing of Wilde's beautiful poem, \"My life is like a summer rose,\""
+  - says: "Two hundred years on, the stone is still saying it."
+    source: 1
+    quote: "He fell in a Duel on the 16th of January, 1815, by the hand of a man who, a short time ago, would have been friendless but for him"
+sources:
+  - title: "Savannah Duels and Duellists, 1733 to 1877 (Thomas Gamble, 1923)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannahduelsdue0000thom
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-friendless-but-for-him/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.2
+    audioBytes: 1204183
+    transcript:
+      totalS: 75.2
+      lines:
+        - text: Somewhere near this walk is a gravestone with a very long inscription.
+          atS: 0
+          durationS: 3.89
+        - text: Find it, and read the middle of it.
+          atS: 4.17
+          durationS: 2.03
+        - text: It is a eulogy.
+          atS: 6.53
+          durationS: 1.15
+        - text: It is also an accusation.
+          atS: 7.95
+          durationS: 1.65
+        - text: The young man under it was James Wilde, an army paymaster, in his twenty second year.
+          atS: 10.3
+          durationS: 5.57
+        - text: On the sixteenth of January, eighteen fifteen, across the river in South Carolina, he fought a duel with a fellow officer, Captain Roswell Johnson.
+          atS: 16.31
+          durationS: 9.07
+        - text: They fired four times.
+          atS: 25.76
+          durationS: 1.72
+        - text: On the fourth, Wilde was shot through the heart.
+          atS: 27.66
+          durationS: 2.73
+        - text: His family wrote the stone.
+          atS: 30.71
+          durationS: 1.65
+        - text: It says he fell in a duel by the hand of a man who, a short time ago, would have been friendless but for him.
+          atS: 32.68
+          durationS: 6.43
+        - text: They did not name the man on the stone.
+          atS: 39.62
+          durationS: 2.14
+        - text: A century later the novelist William Dean Howells stood here and read it.
+          atS: 42.46
+          durationS: 4.2
+        - text: The words, he wrote, must have been meant for the eye of the man who fired, and they wrung his heart.
+          atS: 47.1
+          durationS: 5.97
+        - text: James had a brother, the poet Richard Henry Wilde.
+          atS: 53.77
+          durationS: 3.39
+        - text: Gamble wrote that the duel was woven into the writing of his brother's poem, My life is like a summer rose.
+          atS: 57.85
+          durationS: 7.17
+        - text: Read the line on the stone again.
+          atS: 65.72
+          durationS: 2.03
+        - text: Friendless but for him.
+          atS: 68.45
+          durationS: 2.02
+        - text: Two hundred years on, the stone is still saying it.
+          atS: 71.17
+          durationS: 4.02

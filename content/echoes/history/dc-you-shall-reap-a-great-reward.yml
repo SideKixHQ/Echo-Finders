@@ -1,0 +1,149 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core, following docs/writing-echoes.md (six beats).
+# Listening spot: Fort Stevens Park, 13th and Quackenbos Streets NW, Brightwood, on the grass in front of the rebuilt earthwork.
+# Position: Overture place 'Fort Stevens' (6001 13th St NW) at 38.96419, -77.02921 (high confidence).
+id: dc-you-shall-reap-a-great-reward
+title: "You Shall Reap a Great Reward"
+summary: "The Army tore down Elizabeth Thomas's house to build this fort. She waited more than fifty years to be paid for it."
+place: "Fort Stevens Park, 13th and Quackenbos Streets NW, Brightwood, Washington, D.C."
+at: { lat: 38.96422, lng: -77.02930 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, brightwood, fort-stevens, civil-war, elizabeth-thomas, african-american-history]
+teaser: "Her house stood where this fort stands. A stranger told her it would be worth it."
+script: |
+  Look at the grassy wall of this fort, and the old guns on top of it. Before there was a fort here, there was a house. It belonged to a free Black woman named Elizabeth Thomas.
+
+  In September eighteen sixty one, Union troops took her land. To build this fort, they destroyed her home, her barn, her orchard and her garden.
+
+  She told the story for the rest of her life. As her house came down, she was holding her six month old baby, and crying under a sycamore tree. A tall, slender man dressed in black came up to her. He said, it is hard, but you shall reap a great reward. She believed the man was President Lincoln. Nobody can prove that. It is her account, and she told it for more than fifty years.
+
+  Three years later, Lincoln really did stand on this wall, under Confederate fire.
+
+  And Elizabeth Thomas stayed. After the war she still owned parts of the fort, and bought more land around it. She spent years asking the government to pay for what it had taken.
+
+  In nineteen sixteen, it finally did. One thousand, eight hundred and thirty five dollars.
+
+  She died the following year.
+detail: >-
+  The Park Service treats the Lincoln encounter as Thomas's own account ("The man offering comfort was believed to be President Lincoln"), and the script says so. One Park Service page calls the 1916 award of $1,835 "an unconfirmed account"; the other states it plainly. A reviewer may want a second source for the award before approval.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It belonged to a free Black woman named Elizabeth Thomas."
+    source: 2
+    quote: "a free Black woman named Elizabeth Proctor Thomas who also owned part of the land on which the army constructed the fort"
+  - says: "In September eighteen sixty one, Union troops took her land. To build this fort, they destroyed her home, her barn, her orchard and her garden."
+    source: 1
+    quote: "In September 1861, Union troops took possession of her land and ultimately destroyed her home, barn, orchard and garden to build Fort Massachusetts, later renamed Fort Stevens."
+  - says: "As her house came down, she was holding her six month old baby, and crying under a sycamore tree."
+    source: 1
+    quote: "According to Thomas, at the time her house was being demolished she was holding her six-month old baby and weeping beneath a sycamore tree."
+  - says: "A tall, slender man dressed in black came up to her. He said, it is hard, but you shall reap a great reward."
+    source: 1
+    quote: "a tall, slender man dressed in black approached her and said, “It is hard, but you shall reap a great reward.”"
+  - says: "She believed the man was President Lincoln."
+    source: 1
+    quote: "The man offering comfort was believed to be President Lincoln."
+  - says: "Three years later, Lincoln really did stand on this wall, under Confederate fire."
+    source: 1
+    quote: "The president watched the fighting as Confederate sharpshooters fired upon the fort."
+  - says: "After the war she still owned parts of the fort, and bought more land around it."
+    source: 1
+    quote: "She remained the owner of portions of the fort, and during the course of her life, she amassed a considerable amount of land in the vicinity."
+  - says: "She spent years asking the government to pay for what it had taken."
+    source: 1
+    quote: "For many years, Elizabeth Thomas fought for compensation for the damage and loss of her property incurred during the war."
+  - says: "In nineteen sixteen, it finally did. One thousand, eight hundred and thirty five dollars."
+    source: 1
+    quote: "She was eventually awarded $1,835 in 1916, a year before she died."
+  - says: "She died the following year."
+    source: 1
+    quote: "She was eventually awarded $1,835 in 1916, a year before she died."
+  - says: "It is her account, and she told it for more than fifty years."
+    source: 1
+    quote: "Thomas’ encounter with the stranger was a story she told throughout her life, helping her story to gain recognition as part of the history of Fort Stevens."
+  - says: "And Elizabeth Thomas stayed."
+    source: 1
+    quote: "Following the Civil War, Elizabeth Thomas continued to reside near Fort Stevens."
+sources:
+  - title: "Elizabeth Proctor Thomas"
+    publisher: "National Park Service, Civil War Defenses of Washington"
+    url: https://www.nps.gov/articles/featured_stories_thomas.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Women and the Defenses"
+    publisher: "National Park Service, Civil War Defenses of Washington"
+    url: https://www.nps.gov/cwdw/learn/historyculture/women-and-the-defenses.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-you-shall-reap-a-great-reward/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 79.6
+    audioBytes: 1275236
+    transcript:
+      totalS: 79.6
+      lines:
+        - text: Look at the grassy wall of this fort, and the old guns on top of it.
+          atS: 0
+          durationS: 4.26
+        - text: Before there was a fort here, there was a house.
+          atS: 4.64
+          durationS: 2.72
+        - text: It belonged to a free Black woman named Elizabeth Thomas.
+          atS: 7.74
+          durationS: 3.53
+        - text: In September eighteen sixty one, Union troops took her land.
+          atS: 11.66
+          durationS: 4.38
+        - text: To build this fort, they destroyed her home, her barn, her orchard and her garden.
+          atS: 16.42
+          durationS: 5.05
+        - text: She told the story for the rest of her life.
+          atS: 21.85
+          durationS: 2.44
+        - text: As her house came down, she was holding her six month old baby, and crying under a sycamore tree.
+          atS: 25.59
+          durationS: 6.04
+        - text: A tall, slender man dressed in black came up to her.
+          atS: 32.32
+          durationS: 3.4
+        - text: He said, it is hard, but you shall reap a great reward.
+          atS: 36
+          durationS: 4.06
+        - text: She believed the man was President Lincoln.
+          atS: 40.76
+          durationS: 2.53
+        - text: Nobody can prove that.
+          atS: 43.99
+          durationS: 1.42
+        - text: It is her account, and she told it for more than fifty years.
+          atS: 46.01
+          durationS: 3.86
+        - text: Three years later, Lincoln really did stand on this wall, under Confederate fire.
+          atS: 50.56
+          durationS: 5.6
+        - text: And Elizabeth Thomas stayed.
+          atS: 56.67
+          durationS: 2.09
+        - text: After the war she still owned parts of the fort, and bought more land around it.
+          atS: 59.87
+          durationS: 4.78
+        - text: She spent years asking the government to pay for what it had taken.
+          atS: 65.35
+          durationS: 3.73
+        - text: In nineteen sixteen, it finally did.
+          atS: 69.89
+          durationS: 2.76
+        - text: One thousand, eight hundred and thirty five dollars.
+          atS: 73.26
+          durationS: 3.42
+        - text: She died the following year.
+          atS: 77.29
+          durationS: 2.36

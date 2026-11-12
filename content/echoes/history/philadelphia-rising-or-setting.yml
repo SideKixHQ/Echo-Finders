@@ -8,6 +8,8 @@ place: "Assembly Room, Independence Hall, Philadelphia, Pennsylvania"
 at: { lat: 39.94925, lng: -75.14975 }
 triggerRadiusKm: 0.04
 category: history
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 96
 visibility: at-hand

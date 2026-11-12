@@ -8,6 +8,8 @@ place: "Mission Concepcion, 807 Mission Road, San Antonio, Texas"
 at: { lat: 29.39069, lng: -98.49014 }
 triggerRadiusKm: 0.06
 category: arts
+rare: extra-rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 65
 visibility: at-hand

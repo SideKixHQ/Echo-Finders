@@ -1,0 +1,145 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Hasell Street sidewalk in front of Kahal Kadosh Beth Elohim, looking at the columned portico. A working synagogue; listen from the public sidewalk.
+# Position: Overture point for 90 Hasell St moved south onto the north sidewalk of Hasell St, checked against 89, 87 and 92 Hasell St (medium confidence).
+id: charleston-the-petition-of-forty-seven
+title: "The Petition of Forty-Seven"
+summary: "In 1824, forty-seven members of this congregation asked to pray in English, and started something."
+place: "Kahal Kadosh Beth Elohim, Hasell Street, Charleston, South Carolina"
+at: { lat: 32.78212, lng: -79.93290 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, jewish-history, religion, architecture]
+teaser: "The petition lost. Seventeen years later it had the whole building."
+script: |
+  Look at the front of this synagogue. Tall columns, a deep porch, a heavy roof line. It was designed to look like a temple from ancient Greece.
+
+  The congregation is older than the building. It began in seventeen forty nine, and by the end of that century it was the largest Jewish community in the country.
+
+  In eighteen twenty four, forty seven members sent the trustees a petition. They asked for shorter Hebrew rituals. They asked for prayers and sermons in English. The trustees said no, and for a time the congregation split.
+
+  By eighteen thirty three, the congregation was back together, with nearly two hundred members supporting reform. Then the Charleston fire of eighteen thirty eight burned the first synagogue, which stood on this spot.
+
+  This one was built to replace it in eighteen forty. When its first service was held, the year after, it was the new kind. Beth Elohim became the first Reform congregation in America, and this is now the oldest synagogue in the country in continuous use.
+
+  The petition of eighteen twenty four was turned down. Seventeen years later, it had the whole building.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It was designed to look like a temple from ancient Greece."
+    source: 1
+    quote: "The building is an excellent example of the Greek Revival style, as its form, portico and rich ornamentation are adapted from classic Greek temples."
+  - says: "It began in seventeen forty nine, and by the end of that century it was the largest Jewish community in the country."
+    source: 1
+    quote: "was established in colonial Charleston in 1749"
+  - says: "It began in seventeen forty nine, and by the end of that century it was the largest Jewish community in the country."
+    source: 1
+    quote: "By the end of the 18th century the Beth Elohim congregation had become the largest Jewish community in the nation, with a membership of 500."
+  - says: "In eighteen twenty four, forty seven members sent the trustees a petition."
+    source: 1
+    quote: "In 1824, 47 members of Beth Elohim petitioned the trustees to abridge the Hebrew rituals and conduct prayers and sermons in English."
+  - says: "They asked for shorter Hebrew rituals."
+    source: 1
+    quote: "petitioned the trustees to abridge the Hebrew rituals"
+  - says: "They asked for prayers and sermons in English."
+    source: 1
+    quote: "conduct prayers and sermons in English."
+  - says: "The trustees said no, and for a time the congregation split."
+    source: 1
+    quote: "The denial of these requests resulted in a temporary split of the congregation"
+  - says: "By eighteen thirty three, the congregation was back together, with nearly two hundred members supporting reform."
+    source: 1
+    quote: "but by 1833 a united Beth Elohim had nearly 200 members supporting the Reform Movement."
+  - says: "Then the Charleston fire of eighteen thirty eight burned the first synagogue, which stood on this spot."
+    source: 1
+    quote: "This synagogue was built in 1840, on the site of the congregation's first synagogue destroyed in the Charleston fire of 1838."
+  - says: "This one was built to replace it in eighteen forty."
+    source: 1
+    quote: "This synagogue was built in 1840"
+  - says: "When its first service was held, the year after, it was the new kind."
+    source: 1
+    quote: "the inaugural service of this synagogue held in 1841 contained modernized ritual"
+  - says: "Beth Elohim became the first Reform congregation in America, and this is now the oldest synagogue in the country in continuous use."
+    source: 1
+    quote: "Beth Elohim formally became the first American Reform congregation."
+  - says: "Beth Elohim became the first Reform congregation in America, and this is now the oldest synagogue in the country in continuous use."
+    source: 1
+    quote: "is the country's second oldest synagogue and the oldest in continuous use."
+  - says: "The petition of eighteen twenty four was turned down."
+    source: 1
+    quote: "The denial of these requests"
+  - says: "Seventeen years later, it had the whole building."
+    source: 1
+    quote: "By 1841, the majority of the congregation was embracing Reform Judaism, and the first service held in the new temple reflected this ideology."
+sources:
+  - title: "Kahal Kadosh Beth Elohim Synagogue"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/kahal-kadosh-beth-elohim-synagogue.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+pronunciations:
+  - written: Kahal Kadosh Beth Elohim
+    say: kah-HAHL kah-DOHSH bayt eh-loh-HEEM
+  - written: Hasell Street
+    say: HAY-zel Street
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-petition-of-forty-seven/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76.3
+    audioBytes: 1221737
+    transcript:
+      totalS: 76.3
+      lines:
+        - text: Look at the front of this synagogue.
+          atS: 0
+          durationS: 1.89
+        - text: Tall columns, a deep porch, a heavy roof line.
+          atS: 2.5
+          durationS: 3.92
+        - text: It was designed to look like a temple from ancient Greece.
+          atS: 7.12
+          durationS: 3.37
+        - text: The congregation is older than the building.
+          atS: 11.3
+          durationS: 2.51
+        - text: It began in seventeen forty nine, and by the end of that century it was the largest Jewish community in the country.
+          atS: 14.41
+          durationS: 7.07
+        - text: In eighteen twenty four, forty seven members sent the trustees a petition.
+          atS: 22.08
+          durationS: 4.62
+        - text: They asked for shorter Hebrew rituals.
+          atS: 27.14
+          durationS: 2.39
+        - text: They asked for prayers and sermons in English.
+          atS: 29.86
+          durationS: 2.55
+        - text: The trustees said no, and for a time the congregation split.
+          atS: 32.8
+          durationS: 3.91
+        - text: By eighteen thirty three, the congregation was back together, with nearly two hundred members supporting reform.
+          atS: 37.15
+          durationS: 6.51
+        - text: Then the Charleston fire of eighteen thirty eight burned the first synagogue, which stood on this spot.
+          atS: 44.18
+          durationS: 6.22
+        - text: This one was built to replace it in eighteen forty.
+          atS: 51
+          durationS: 3.19
+        - text: When its first service was held, the year after, it was the new kind.
+          atS: 55.15
+          durationS: 4.39
+        - text: Beth Elohim became the first Reform congregation in America, and this is now the oldest synagogue in the country in continuous use.
+          atS: 60.23
+          durationS: 8.24
+        - text: The petition of eighteen twenty four was turned down.
+          atS: 69.17
+          durationS: 3.08
+        - text: Seventeen years later, it had the whole building.
+          atS: 73.36
+          durationS: 2.94

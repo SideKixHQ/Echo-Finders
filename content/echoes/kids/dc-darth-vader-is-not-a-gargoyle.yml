@@ -8,6 +8,8 @@ place: "Northwest tower, Washington National Cathedral, Wisconsin Avenue NW, Was
 at: { lat: 38.93080, lng: -77.07160 }
 triggerRadiusKm: 0.06
 category: kids
+rare: extra-rare
+rareReason: "Easy to miss"
 format: short
 durationS: 72
 visibility: daylight-dependent

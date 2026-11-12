@@ -1,0 +1,164 @@
+# Drafted by Claude Code (2026-11-12) for the Boston inventions and firsts pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The sidewalk of Avenue de Lafayette, by the plaque marking where Bell sent the first complete sentence by telephone. Exeter Place itself no longer exists.
+# Position: The western block of Avenue de Lafayette between Washington Street and Chauncy Street, from the Overture street segments (medium confidence; the plaque itself was not pinned).
+id: boston-the-wire-watson-kept
+title: "The Wire Watson Kept"
+summary: "The first sentence ever spoken by telephone went down a wire in a Boston boarding house. The man who heard it took the wire home."
+place: "Avenue de Lafayette, site of 5 Exeter Place, Downtown Crossing, Boston, Massachusetts"
+at: { lat: 42.35355, lng: -71.06150 }
+triggerRadiusKm: 0.05
+category: business
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [boston, boston-core, downtown-crossing, telephone, bell, watson, inventions, firsts]
+teaser: "The first sentence on the telephone was an errand. The wire it travelled on went into a safe."
+script: |
+  Find the plaque on Avenue de Lafayette. The address it remembers no longer exists.
+
+  In March eighteen seventy six, Alexander Graham Bell had his laboratory in a boarding house here, at number five, Exeter Place. His assistant, Thomas Watson, was in the next room.
+
+  On the tenth of March, Bell spoke into the instrument, and Watson heard him through the wire. Mister Watson, come here. I want to see you.
+
+  The first complete sentence ever sent by telephone was an errand.
+
+  Watson went at once.
+
+  Later that day, Bell wrote to his father. The day is coming, he said, when wires will be laid on to houses just like water and gas, and friends will talk to each other without leaving home.
+
+  Watson kept the wire. When the laboratory was cleared out in eighteen seventy seven, he took it down, wrote on it which two rooms it had joined, and locked it in a safe. It stayed there for more than thirty five years.
+
+  Look at the people walking past you, talking into their phones.
+
+  Watson kept the first piece of the wire. They are all on the rest of it.
+pronunciations:
+  - written: "Watson"
+    say: "WOT-sun"
+detail: >-
+  The Library of Congress Information Bulletin (April 1999) describes Bell's notebook entry of 10 March 1876, his assistant Watson in the next room, the words "Mr. Watson, come here, I want to see you" as Bell recorded them, and his letter to "Papa" later that day predicting wires laid on to houses like water and gas. Watson's 1915 speech, in the Library of Congress Bell papers, gives the boarding house at number 5 Exeter Place, the sentence sent from Bell's laboratory to his bedroom, "I am sure that I went at once", and the wire he took down on 8 June 1877, inscribed and kept in a safe until "a year or two ago", that is about 1913, hence "more than thirty five years". Watson remembered the words as "Watson, come here, I want you"; the script uses Bell's notebook wording, and a reviewer should know the two differ. WBUR (2026) gives the Avenue de Lafayette plaque and that the address no longer exists. The final line is the script's own reading of the scene, not a sourced claim.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Find the plaque on Avenue de Lafayette."
+    source: 3
+    quote: "walks past the plaque on Avenue de Lafayette marking the place where, Alexander Graham Bell transmitted to Thomas Watson, the first complete and intelligible sentence by telephone."
+  - says: "The address it remembers no longer exists."
+    source: 3
+    quote: "The exact Boston address where Alexander Graham Bell made that historic transmission doesn't exist anymore."
+  - says: "In March eighteen seventy six, Alexander Graham Bell had his laboratory in a boarding house here, at number five, Exeter Place."
+    source: 2
+    quote: "uttered by Bell from his laboratory to his bed room in the boarding house, number 5, Exeter Place, Boston."
+  - says: "His assistant, Thomas Watson, was in the next room."
+    source: 1
+    quote: "Speaking through the instrument to his assistant Watson in the next room"
+  - says: "On the tenth of March, Bell spoke into the instrument, and Watson heard him through the wire."
+    source: 1
+    quote: "a handwritten experimental notebook containing Bell's description of events as they occurred in his Boston laboratory on March 10, 1876."
+  - says: "Mister Watson, come here."
+    source: 1
+    quote: "Bell recorded the famous, \"Mr. Watson — come here — I want to see you.\""
+  - says: "I want to see you."
+    source: 1
+    quote: "Bell recorded the famous, \"Mr. Watson — come here — I want to see you.\""
+  - says: "The first complete sentence ever sent by telephone was an errand."
+    source: 3
+    quote: "the first complete and intelligible sentence by telephone"
+  - says: "Watson went at once."
+    source: 2
+    quote: "I am sure that I went at once."
+  - says: "Later that day, Bell wrote to his father."
+    source: 1
+    quote: "Later that day, Bell wrote proudly to \"Papa\" of his accomplishments and announced \"a great success.\""
+  - says: "The day is coming, he said, when wires will be laid on to houses just like water and gas, and friends will talk to each other without leaving home."
+    source: 1
+    quote: "the day is coming when telegraph [phone] wires will be laid on to houses just like water and gas — and friends will converse with each other without leaving home."
+  - says: "When the laboratory was cleared out in eighteen seventy seven, he took it down, wrote on it which two rooms it had joined, and locked it in a safe."
+    source: 2
+    quote: "I took down this wire when the laboratory was vacated in 1877, inscribed it and put it into a safe"
+  - says: "When the laboratory was cleared out in eighteen seventy seven, he took it down, wrote on it which two rooms it had joined, and locked it in a safe."
+    source: 2
+    quote: "This wire connected room 13 with room 15 at number 5 Exeter Place, Boston"
+  - says: "It stayed there for more than thirty five years."
+    source: 2
+    quote: "put it into a safe where it remained until a year or two ago when I presented it to the American Telephone and Telegraph Co. for its museum."
+  - says: "Watson kept the first piece of the wire."
+    source: 2
+    quote: "I have here the wire over which that first sentence was sent."
+sources:
+  - title: "'Mr. Watson, Come Here' (April 1999). Library of Congress Information Bulletin"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/loc/lcib/9904/bell.html
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Speech by Thomas A. Watson, May 18, 1915. Alexander Graham Bell Family Papers"
+    publisher: "Library of Congress, Manuscript Division"
+    url: https://tile.loc.gov/storage-services/service/mss/magbell/300/30000202/30000202.pdf
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Bell's first phone call made history 150 years ago in Boston"
+    publisher: "WBUR"
+    url: https://www.wbur.org/news/2026/03/10/first-telephone-call-150-years
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-wire-watson-kept/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.4
+    audioBytes: 1207109
+    transcript:
+      totalS: 75.4
+      lines:
+        - text: Find the plaque on Avenue de Lafayette.
+          atS: 0
+          durationS: 2.57
+        - text: The address it remembers no longer exists.
+          atS: 2.68
+          durationS: 2.99
+        - text: In March eighteen seventy six, Alexander Graham Bell had his laboratory in a boarding house here, at number five, Exeter Place.
+          atS: 6.49
+          durationS: 8.67
+        - text: His assistant, Thomas Watson, was in the next room.
+          atS: 15.77
+          durationS: 3.73
+        - text: On the tenth of March, Bell spoke into the instrument, and Watson heard him through the wire.
+          atS: 20.1
+          durationS: 5.82
+        - text: Mister Watson, come here.
+          atS: 26.52
+          durationS: 2.05
+        - text: I want to see you.
+          atS: 28.9
+          durationS: 1.07
+        - text: The first complete sentence ever sent by telephone was an errand.
+          atS: 30.78
+          durationS: 3.9
+        - text: Watson went at once.
+          atS: 35.28
+          durationS: 1.96
+        - text: Later that day, Bell wrote to his father.
+          atS: 37.94
+          durationS: 2.38
+        - text: The day is coming, he said, when wires will be laid on to houses just like water and gas, and friends will talk to each other without leaving home.
+          atS: 40.83
+          durationS: 8.86
+        - text: Watson kept the wire.
+          atS: 50.5
+          durationS: 1.78
+        - text: When the laboratory was cleared out in eighteen seventy seven, he took it down, wrote on it which two rooms it had joined, and locked it in a safe.
+          atS: 52.66
+          durationS: 10.01
+        - text: It stayed there for more than thirty five years.
+          atS: 63.18
+          durationS: 2.75
+        - text: Look at the people walking past you, talking into their phones.
+          atS: 66.63
+          durationS: 3.55
+        - text: Watson kept the first piece of the wire.
+          atS: 70.69
+          durationS: 2.59
+        - text: They are all on the rest of it.
+          atS: 73.67
+          durationS: 1.71

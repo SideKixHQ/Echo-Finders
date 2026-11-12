@@ -1,0 +1,173 @@
+# Drafted by Claude Code (2026-11-11) for the second Charleston pass, following docs/writing-echoes.md (format v2).
+# Listening spot: Fort Lamar Road at the Fort Lamar heritage preserve on James Island, beside the earthworks of the old Tower Battery. The National Register nomination says the road cuts through part of the central rampart.
+# Position: Fort Lamar Road beside the "Fort Lamar Historic Preserve" point in the Overture data, checked against the land map (medium to high confidence).
+id: charleston-where-the-horses-grazed
+title: "Where the Horses Grazed"
+summary: "In June 1862 a Union general attacked this earthwork against orders. The narrow neck of land beat him. His dead lie just to the west."
+place: "Fort Lamar, Secessionville, James Island, South Carolina"
+at: { lat: 32.70395, lng: -79.94850 }
+triggerRadiusKm: 0.08
+category: military
+format: short
+durationS: 86
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [charleston, james-island, secessionville, fort-lamar, civil-war, military, battle]
+teaser: "His commander told him not to attack. He waited until the commander left."
+script: |
+  Find the low walls of earth beside the road. This was a Confederate battery, first called the Tower Battery, then Fort Lamar. It stands at the narrowest point of the peninsula, about a hundred and twenty five yards across, with marsh on both sides.
+
+  That narrow neck decided a battle.
+
+  In June eighteen sixty two, Union troops were working their way across the islands toward Charleston. Their commander, General David Hunter, warned General Henry Benham not to attack. Then Hunter left for Hilton Head.
+
+  Benham used his absence. On the morning of the sixteenth of June, he sent his men straight at these walls.
+
+  The ground did the rest. The marsh forced the attackers into the mouths of the guns. The pluff mud kept a second column from getting round the side. After three hours, Benham pulled back. Nearly seven hundred of his men were killed, wounded or missing.
+
+  Benham was arrested. Then he was reduced to the rank of major.
+
+  The Union never came this way at the city again.
+
+  Now look just to the west of the walls. Under that ground is the unmarked grave of three hundred and forty one Union soldiers, buried by the men they had been fighting.
+
+  When the site was surveyed in nineteen seventy nine, it was a horse pasture.
+
+  The horses grazed on it.
+detail: >-
+  The South Carolina Encyclopedia entry (Pat Brennan) gives Hunter's warning to Benham and his departure for Hilton Head on 11 June, Benham's assault on the Tower Battery on the morning of 16 June 1862, the marsh forcing the attackers into the guns, the pluff mud stopping the second wing, the withdrawal after three hours, nearly 700 casualties, and the view that Secessionville blunted the North's best chance to take Charleston. The National Register nomination for the Secessionville Historic District (1979) gives the fort at the narrowest point of the peninsula, about 125 yards wide with marsh on both sides, the names Tower Battery and Fort Lamar, Benham's arrest and reduction to major, the unmarked grave of 341 Union soldiers directly west of the battery, buried by Confederate troops, and both sites in use as horse pasture. The sources differ on the size of the Union force (about 3,500 in the nomination, 4,500 in the encyclopedia), so the script gives no number for it. "The Union never came this way at the city again" rests on the nomination's statement that the victory led to the withdrawal of Union forces from James Island and ended a major offensive; a reviewer may prefer the encyclopedia's softer wording. Whether the grave is marked today was not checked; the script ties "unmarked" and the pasture to the 1979 survey.
+pronunciations:
+  - written: "Benham"
+    say: "BEN-um"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "This was a Confederate battery, first called the Tower Battery, then Fort Lamar."
+    source: 2
+    quote: "Although the fort was originally called Tower Battery, it was"
+  - says: "It stands at the narrowest point of the peninsula, about a hundred and twenty five yards across, with marsh on both sides."
+    source: 2
+    quote: "(approximately 125 yards wide). Flanked by marshlands on both sides"
+  - says: "In June eighteen sixty two, Union troops were working their way across the islands toward Charleston."
+    source: 1
+    quote: "Union forces occupied Battery Island and Johns Island during the first week of June"
+  - says: "Their commander, General David Hunter, warned General Henry Benham not to attack."
+    source: 1
+    quote: "he warned Benham not to attack"
+  - says: "Then Hunter left for Hilton Head."
+    source: 1
+    quote: "Before Hunter returned to Hilton Head on June 11"
+  - says: "On the morning of the sixteenth of June, he sent his men straight at these walls."
+    source: 1
+    quote: "Benham, however, used Hunter’s absence to organize an assault on the Confederate Tower Battery near the planter village of Secessionville, an operation he launched on the morning of June 16."
+  - says: "The marsh forced the attackers into the mouths of the guns."
+    source: 1
+    quote: "The marshy terrain forced the Federal attackers into the mouths of the Confederate guns"
+  - says: "The pluff mud kept a second column from getting round the side."
+    source: 1
+    quote: "prevented Benham’s second wing from attacking the fort’s northern flank"
+  - says: "After three hours, Benham pulled back."
+    source: 1
+    quote: "After three frustrating hours, Benham withdrew his forces."
+  - says: "Nearly seven hundred of his men were killed, wounded or missing."
+    source: 1
+    quote: "nearly 700 became casualties"
+  - says: "Benham was arrested. Then he was reduced to the rank of major."
+    source: 2
+    quote: "Benham was first arrested, then reduced to the rank of Major."
+  - says: "The Union never came this way at the city again."
+    source: 2
+    quote: "The Confederate victory at Secessionville led to the withdrawal of Union forces from James"
+  - says: "Under that ground is the unmarked grave of three hundred and forty one Union soldiers, buried by the men they had been fighting."
+    source: 2
+    quote: "mass grave of 341 Union soldiers who were killed during the Battle of Secessionville."
+  - says: "Under that ground is the unmarked grave of three hundred and forty one Union soldiers, buried by the men they had been fighting."
+    source: 2
+    quote: "Buried by Confederate troops"
+  - says: "When the site was surveyed in nineteen seventy nine, it was a horse pasture."
+    source: 2
+    quote: "Like Fort Lamar, the unmarked grave site is currently being used as a horse pasture."
+sources:
+  - title: "Secessionville, Battle of (Pat Brennan)"
+    publisher: "South Carolina Encyclopedia, University of South Carolina"
+    url: https://www.scencyclopedia.org/sce/entries/secessionville-battle-of/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Secessionville Historic District, National Register of Historic Places nomination (1979)"
+    publisher: "National Park Service, NPGallery"
+    url: https://npgallery.nps.gov/NRHP/GetAsset/NRHP/79002378_text
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-where-the-horses-grazed/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 86.1
+    audioBytes: 1378054
+    transcript:
+      totalS: 86.1
+      lines:
+        - text: Find the low walls of earth beside the road.
+          atS: 0
+          durationS: 3.19
+        - text: This was a Confederate battery, first called the Tower Battery, then Fort Lamar.
+          atS: 3.89
+          durationS: 5.79
+        - text: It stands at the narrowest point of the peninsula, about a hundred and twenty five yards across, with marsh on both sides.
+          atS: 10.38
+          durationS: 8.1
+        - text: That narrow neck decided a battle.
+          atS: 19.09
+          durationS: 2.33
+        - text: In June eighteen sixty two, Union troops were working their way across the islands toward Charleston.
+          atS: 22.02
+          durationS: 6.19
+        - text: Their commander, General David Hunter, warned General Henry Benham not to attack.
+          atS: 28.59
+          durationS: 5.28
+        - text: Then Hunter left for Hilton Head.
+          atS: 34.48
+          durationS: 2.31
+        - text: Benham used his absence.
+          atS: 37.12
+          durationS: 2.03
+        - text: On the morning of the sixteenth of June, he sent his men straight at these walls.
+          atS: 39.53
+          durationS: 4.78
+        - text: The ground did the rest.
+          atS: 44.7
+          durationS: 1.5
+        - text: The marsh forced the attackers into the mouths of the guns.
+          atS: 46.58
+          durationS: 3.35
+        - text: The pluff mud kept a second column from getting round the side.
+          atS: 50.21
+          durationS: 3.56
+        - text: After three hours, Benham pulled back.
+          atS: 54.02
+          durationS: 2.68
+        - text: Nearly seven hundred of his men were killed, wounded or missing.
+          atS: 57.03
+          durationS: 3.85
+        - text: Benham was arrested.
+          atS: 61.21
+          durationS: 1.32
+        - text: Then he was reduced to the rank of major.
+          atS: 62.77
+          durationS: 2.24
+        - text: The Union never came this way at the city again.
+          atS: 65.29
+          durationS: 2.86
+        - text: Now look just to the west of the walls.
+          atS: 68.59
+          durationS: 2.3
+        - text: Under that ground is the unmarked grave of three hundred and forty one Union soldiers, buried by the men they had been fighting.
+          atS: 71.27
+          durationS: 7.7
+        - text: When the site was surveyed in nineteen seventy nine, it was a horse pasture.
+          atS: 79.67
+          durationS: 4.35
+        - text: The horses grazed on it.
+          atS: 84.4
+          durationS: 1.65

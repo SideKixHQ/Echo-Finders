@@ -1,0 +1,192 @@
+# Drafted by Claude Code (2026-11-10) for Houston, south of the Museum District (NRG Park).
+# Listening spot: outside the Astrodome, 8400 Kirby Drive, in NRG Park.
+# Position: Wikidata Q1025406 (Astrodome), 29.685, -95.40778, the building's centre; the radius reaches the plaza around it (high confidence).
+id: houston-the-grass-that-gave-up
+title: "The Grass That Gave Up"
+summary: "The first air conditioned domed stadium. Its real grass dried out, and the fake grass that replaced it took the building's name."
+place: "Astrodome, 8400 Kirby Drive, NRG Park, Houston, Texas"
+at: { lat: 29.68500, lng: -95.40778 }
+triggerRadiusKm: 0.15
+category: sports
+inspo:
+  kind: first
+  evidence: building
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, astrodome, nrg-park, baseball, astroturf, firsts, sports]
+teaser: "Fake grass got its name from this building, because the real grass gave up."
+script: |
+  Look up at the Astrodome. A roof six hundred and forty two feet across, with no columns holding it up in the middle.
+
+  Under it, plastic grass got its name.
+
+  The man behind it was Roy Hofheinz, a former county judge and mayor. Houston summers had heat, humidity and mosquitoes. Nobody wanted to play baseball in that, or watch it. So he dreamed of a stadium with a roof and air conditioning. It had never been done.
+
+  It opened in nineteen sixty five, the first fully air conditioned, domed stadium. Hofheinz called it the Eighth Wonder of the World.
+
+  The roof had plastic skylights, and the plan was real grass. But out in the field, the players had trouble with the glare.
+
+  So the skylights were painted over.
+
+  Under the dome, the grass dried out.
+
+  In nineteen sixty six, it was pulled up, and replaced with a new artificial grass. It came to be named after the building that needed it.
+
+  AstroTurf.
+
+  Look at the dome again. Plastic grass all over the world still carries a little of its name.
+
+  The grass gave up first.
+
+pronunciations:
+  - written: Hofheinz
+    say: HOFF-hines
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "A roof six hundred and forty two feet across, with no columns holding it up in the middle."
+    source: 1
+    quote: "Circular in shape, the outer diameter of the Astrodome is 710', and the clear span of the dome roof is 642'."
+  - says: "The man behind it was Roy Hofheinz, a former county judge and mayor."
+    source: 1
+    quote: "He had the distinction of being the Harris County judge from 1936 to 1944, and then mayor of Houston from 1953 to 1955."
+  - says: "Houston summers had heat, humidity and mosquitoes."
+    source: 1
+    quote: "the vagaries of the Houston weather coupled with heat, humidity, and mosquitoes that would make either playing or watching ballgames an unpleasant experience."
+  - says: "It had never been done."
+    source: 1
+    quote: "one businessman dared to dream about a fully air-conditioned stadium, which had never been done before."
+  - says: "It opened in nineteen sixty five, the first fully air conditioned, domed stadium."
+    source: 2
+    quote: "Called the \"Eighth Wonder of the World,\" the Astrodome was the first fully air-conditioned, enclosed and domed stadium."
+  - says: "It opened in nineteen sixty five, the first fully air conditioned, domed stadium."
+    source: 4
+    quote: "When the Astrodome opened in 1965, it was called the Eighth Wonder of the World."
+  - says: "Hofheinz called it the Eighth Wonder of the World."
+    source: 1
+    quote: "he branded the Astrodome the \"Eighth Wonder of the World.\""
+  - says: "The roof had plastic skylights, and the plan was real grass."
+    source: 1
+    quote: "There was a keen desire to have a grass field as well."
+  - says: "The roof had plastic skylights, and the plan was real grass."
+    source: 1
+    quote: "with plastic skylights"
+  - says: "So the skylights were painted over."
+    source: 3
+    quote: "SKY LIGHTS PAINTED OVER TO REDUCE GLARE FOR BASEBALL OUTFIELDERS."
+  - says: "But out in the field, the players had trouble with the glare."
+    source: 3
+    quote: "SKY LIGHTS PAINTED OVER TO REDUCE GLARE FOR BASEBALL OUTFIELDERS."
+  - says: "Under the dome, the grass dried out."
+    source: 2
+    quote: "The grass that was originally used dried out under the dome."
+  - says: "In nineteen sixty six, it was pulled up, and replaced with a new artificial grass."
+    source: 2
+    quote: "Grass is replaced with Astroturf in 1966."
+  - says: "It came to be named after the building that needed it."
+    source: 5
+    quote: "the AstroTurf that got its name from the building"
+  - says: "Plastic grass all over the world still carries a little of its name."
+    source: 5
+    quote: "gave synthetic grass its name"
+  - says: "The grass gave up first."
+    source: 2
+    quote: "The grass that was originally used dried out under the dome."
+sources:
+  - title: "Houston Astrodome (Harris County Domed Stadium), HAER TX-108, Written Historical and Descriptive Data"
+    publisher: "Historic American Engineering Record, National Park Service (Library of Congress)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tx/tx1000/tx1045/data/tx1045data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Astrodoomed? Famed Houston Stadium May Fall To Wrecking Ball"
+    publisher: "NPR, The Two-Way, 6 November 2013"
+    url: https://www.npr.org/sections/thetwo-way/2013/11/06/243455173/astrodoomed-famed-houston-stadium-may-fall-to-wrecking-ball
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Houston Astrodome, HAER TX-108, photograph caption: view south toward moveable field level seats"
+    publisher: "Historic American Engineering Record, National Park Service (Library of Congress)"
+    url: https://www.loc.gov/resource/hhh.tx1045.photos/?sp=1&st=slideshow
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Memories are all that's left of Houston Astrodome"
+    publisher: "The Boston Globe, 5 February 2017"
+    url: https://www.bostonglobe.com/sports/2017/02/05/memories-are-all-that-left-houston-astrodome/9bLKJjXajRgOuc0awXe92M/story.html
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Astrodome Fades As Houston Decides Fate (Associated Press)"
+    publisher: "CBS Texas"
+    url: https://www.cbsnews.com/texas/news/astrodome-fades-as-houston-decides-its-fate/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-the-grass-that-gave-up/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74
+    audioBytes: 1184539
+    transcript:
+      totalS: 74
+      lines:
+        - text: Look up at the Astrodome.
+          atS: 0
+          durationS: 1.53
+        - text: A roof six hundred and forty two feet across, with no columns holding it up in the middle.
+          atS: 1.86
+          durationS: 5.12
+        - text: Under it, plastic grass got its name.
+          atS: 7.36
+          durationS: 2.68
+        - text: The man behind it was Roy Hofheinz, a former county judge and mayor.
+          atS: 10.65
+          durationS: 4.76
+        - text: Houston summers had heat, humidity and mosquitoes.
+          atS: 16.01
+          durationS: 3.83
+        - text: Nobody wanted to play baseball in that, or watch it.
+          atS: 20.35
+          durationS: 3.04
+        - text: So he dreamed of a stadium with a roof and air conditioning.
+          atS: 24
+          durationS: 3.42
+        - text: It had never been done.
+          atS: 27.81
+          durationS: 1.33
+        - text: It opened in nineteen sixty five, the first fully air conditioned, domed stadium.
+          atS: 29.95
+          durationS: 5.99
+        - text: Hofheinz called it the Eighth Wonder of the World.
+          atS: 36.55
+          durationS: 3.48
+        - text: The roof had plastic skylights, and the plan was real grass.
+          atS: 40.54
+          durationS: 3.99
+        - text: But out in the field, the players had trouble with the glare.
+          atS: 45.23
+          durationS: 3.11
+        - text: So the skylights were painted over.
+          atS: 48.67
+          durationS: 2.1
+        - text: Under the dome, the grass dried out.
+          atS: 51.38
+          durationS: 2.47
+        - text: In nineteen sixty six, it was pulled up, and replaced with a new artificial grass.
+          atS: 54.36
+          durationS: 5.4
+        - text: It came to be named after the building that needed it.
+          atS: 60.36
+          durationS: 2.96
+        - text: AstroTurf.
+          atS: 64.13
+          durationS: 1.23
+        - text: Look at the dome again.
+          atS: 65.75
+          durationS: 1.32
+        - text: Plastic grass all over the world still carries a little of its name.
+          atS: 67.4
+          durationS: 4.3
+        - text: The grass gave up first.
+          atS: 72.08
+          durationS: 1.9

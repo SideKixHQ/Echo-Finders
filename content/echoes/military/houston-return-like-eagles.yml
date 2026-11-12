@@ -1,0 +1,227 @@
+# Drafted by Claude Code (2026-11-10) for Houston, San Jacinto battleground.
+# Listening spot: the foot of the San Jacinto Monument, which stands between the Texan and Mexican camp sites (WPA Houston guide, 1942).
+# Position: Monument Circle in Overture road data rings 29.7489 to 29.7492, -95.0807 to -95.0816; the spot is on its west side (high confidence for the monument).
+# Second pass (2026-11-11): the Handbook of Texas added as an independent source for the date, the bridge, the siesta, the charge and the eighteen minutes. It differs on two details a reviewer should settle: it says Cos brought about 540 troops (the script says some four hundred) and that Houston formed his line about 3:30 (the script says about four o'clock).
+id: houston-return-like-eagles
+title: "Return Like Eagles"
+summary: "On 21 April 1836 Sam Houston let the afternoon pass in silence. At four o'clock he attacked. It took about eighteen minutes."
+place: "San Jacinto Monument, San Jacinto Battleground State Historic Site, La Porte, Texas"
+at: { lat: 29.74905, lng: -95.08130 }
+triggerRadiusKm: 0.1
+category: military
+format: short
+durationS: 97
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.9
+tags: [houston, san-jacinto, battleground, military, texas-revolution, sam-houston, santa-anna, 1836]
+teaser: "Sam Houston did nothing all afternoon. That was the plan."
+script: |
+  Stand at the foot of the monument and look out over the flat ground around it. The Texans camped on one side of where it stands. The Mexican army camped on the other.
+
+  On the afternoon of the battle, the Texans did nothing at all.
+
+  It was the twenty first of April, eighteen thirty six. For forty days, Sam Houston had retreated across Texas, ahead of General Santa Anna. Some of his own officers had talked of mutiny. Now the two armies were camped on this plain, and that morning, some four hundred Mexican reinforcements had marched in.
+
+  Houston told his officers nothing. Quietly, he sent a scout, Deaf Smith, with a few men and axes, to destroy Vince's Bridge, so no more Mexican troops could reach the field. Return like eagles, he told him, or you will be too late for the day.
+
+  Then he waited. Hour after hour, the Texan camp sat still.
+
+  Across the field, the Mexican officers decided no attack was coming. They took their afternoon siesta. Muskets were stacked.
+
+  At about four o'clock, Houston formed his men, and they walked forward through the tall grass, silently, holding their fire.
+
+  When they were close, two small cannon, the Twin Sisters, fired point blank into the barricade. The Texans charged, shouting Remember the Alamo.
+
+  The battle took about eighteen minutes.
+
+  Look at the plain again. All that waiting, for eighteen minutes.
+
+  And Texas was a country.
+
+pronunciations:
+  - written: San Jacinto
+    say: san juh-SIN-toh
+  - written: Santa Anna
+    say: SAN-tuh AN-uh
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The Texans camped on one side of where it stands."
+    source: 1
+    quote: "The San Jacinto Memorial stands between the two camp sites."
+  - says: "It was the twenty first of April, eighteen thirty six."
+    source: 1
+    quote: "Here, on April 21, 1836, Gen. Sam Houston’s inferior force of Texans engaged an army under the personal command of Gen. Antonio Lopez de Santa Anna"
+  - says: "It was the twenty first of April, eighteen thirty six."
+    source: 3
+    quote: "On Thursday morning, April 21, the Texans were eager to attack."
+  - says: "For forty days, Sam Houston had retreated across Texas, ahead of General Santa Anna."
+    source: 1
+    quote: "For 40 days, after the tragedy of the Alamo and the defeat and massacre of Fannin’s men at the Coleto and Goliad, Houston had conducted a Fabian retreat eastward across Texas"
+  - says: "Some of his own officers had talked of mutiny."
+    source: 1
+    quote: "Declining to state his intentions to his officers, some of whom had threatened mutiny during the retreat"
+  - says: "Now the two armies were camped on this plain, and that morning, some four hundred Mexican reinforcements had marched in."
+    source: 2
+    quote: "On the following morning, Santa Anna received reinforcements numbering some 400, who arrived, however, so exhausted as not to be ready for immediate fighting."
+  - says: "Houston told his officers nothing."
+    source: 2
+    quote: "Houston refused to give any indication of his intentions."
+  - says: "Quietly, he sent a scout, Deaf Smith, with a few men and axes, to destroy Vince's Bridge, so no more Mexican troops could reach the field."
+    source: 2
+    quote: "He sent Deaf Smith and a detachment with axes to destroy Vince s Bayou bridge"
+  - says: "Quietly, he sent a scout, Deaf Smith, with a few men and axes, to destroy Vince's Bridge, so no more Mexican troops could reach the field."
+    source: 3
+    quote: "Houston ordered Erastus (Deaf) Smith to destroy the bridge and prevent further enemy reinforcements."
+  - says: "Quietly, he sent a scout, Deaf Smith, with a few men and axes, to destroy Vince's Bridge, so no more Mexican troops could reach the field."
+    source: 1
+    quote: "had sent “Deaf” Smith with a detail to destroy Vince’s Bridge and thus prevent further reinforcement of the Mexicans"
+  - says: "Return like eagles, he told him, or you will be too late for the day."
+    source: 1
+    quote: "telling them to “return like eagles, or you will be too late for the day.”"
+  - says: "Hour after hour, the Texan camp sat still."
+    source: 2
+    quote: "The complete inactivity in the Texans camp, as the afternoon advanced, lulled Santa Anna into the belief that Houston would not attack."
+  - says: "They took their afternoon siesta."
+    source: 1
+    quote: "Santa Anna and his officers took their usual siesta, and most of the Mexican troops, their muskets stacked, either slept or were detailed to watering the horses and other camp duties."
+  - says: "They took their afternoon siesta."
+    source: 3
+    quote: "Houston disposed his forces in battle order about 3:30 in the afternoon while all was quiet on the Mexican side during the afternoon siesta."
+  - says: "At about four o'clock, Houston formed his men, and they walked forward through the tall grass, silently, holding their fire."
+    source: 1
+    quote: "About four o'clock Houston suddenly formed his forces and launched an attack."
+  - says: "At about four o'clock, Houston formed his men, and they walked forward through the tall grass, silently, holding their fire."
+    source: 1
+    quote: "Moving forward silently through tall grass, the Texans were well advanced before the enemy discovered them."
+  - says: "When they were close, two small cannon, the Twin Sisters, fired point blank into the barricade."
+    source: 1
+    quote: "Houston waved his hat and the “Twin Sisters,” firing pointblank, blasted an opening in the breastworks."
+  - says: "The Texans charged, shouting Remember the Alamo."
+    source: 1
+    quote: "Houston and his men charged through, shouting the battle cry that he had given them two nights before, “Remember the Alamo!”"
+  - says: "The Texans charged, shouting Remember the Alamo."
+    source: 3
+    quote: "The Twin Sisters were wheeled into position, and the whole line, led by Sherman's men, sprang forward on the run with the cry, \"Remember the Alamo!\""
+  - says: "The battle took about eighteen minutes."
+    source: 1
+    quote: "The battle was won in about 18 minutes"
+  - says: "The battle took about eighteen minutes."
+    source: 3
+    quote: "The battle lasted but eighteen minutes."
+  - says: "The battle took about eighteen minutes."
+    source: 2
+    quote: "The actual battle was over in less than 30 minutes some said 18."
+  - says: "And Texas was a country."
+    source: 2
+    quote: "This battle terminated the Texas Revolution and made possible the firm establishment of the Republic of Texas."
+  - says: "The Mexican army camped on the other."
+    source: 1
+    quote: "The San Jacinto Memorial stands between the two camp sites."
+  - says: "On the afternoon of the battle, the Texans did nothing at all."
+    source: 2
+    quote: "The complete inactivity in the Texans camp, as the afternoon advanced, lulled Santa Anna into the belief that Houston would not attack."
+  - says: "Across the field, the Mexican officers decided no attack was coming."
+    source: 1
+    quote: "Believing by afternoon that the Texans dared not attack and that he could choose his own time for battle"
+  - says: "All that waiting, for eighteen minutes."
+    source: 3
+    quote: "The battle lasted but eighteen minutes."
+  - says: "All that waiting, for eighteen minutes."
+    source: 2
+    quote: "The complete inactivity in the Texans camp, as the afternoon advanced, lulled Santa Anna into the belief that Houston would not attack."
+sources:
+  - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942), Tour to San Jacinto State Park"
+    publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"
+    url: https://archive.org/details/houstonahistory00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Texas: A Guide to the Lone Star State (Writers' Program of the Work Projects Administration, 1940), Tour 6A"
+    publisher: "Internet Archive (scan); copyright 1940 Texas State Highway Commission"
+    url: https://archive.org/details/texasaguidetothe00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "San Jacinto, Battle of (L. W. Kemp)"
+    publisher: "Handbook of Texas Online, Texas State Historical Association"
+    url: https://www.tshaonline.org/handbook/entries/san-jacinto-battle-of
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-return-like-eagles/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 97.4
+    audioBytes: 1559030
+    transcript:
+      totalS: 97.4
+      lines:
+        - text: Stand at the foot of the monument and look out over the flat ground around it.
+          atS: 0
+          durationS: 4.78
+        - text: The Texans camped on one side of where it stands.
+          atS: 5.22
+          durationS: 3.42
+        - text: The Mexican army camped on the other.
+          atS: 9.25
+          durationS: 2.4
+        - text: On the afternoon of the battle, the Texans did nothing at all.
+          atS: 12.47
+          durationS: 3.98
+        - text: It was the twenty first of April, eighteen thirty six.
+          atS: 16.89
+          durationS: 3.34
+        - text: For forty days, Sam Houston had retreated across Texas, ahead of General Santa Anna.
+          atS: 20.62
+          durationS: 6.21
+        - text: Some of his own officers had talked of mutiny.
+          atS: 27.53
+          durationS: 2.67
+        - text: Now the two armies were camped on this plain, and that morning, some four hundred Mexican reinforcements had marched in.
+          atS: 30.64
+          durationS: 6.99
+        - text: Houston told his officers nothing.
+          atS: 38.14
+          durationS: 2.04
+        - text: Quietly, he sent a scout, Deaf Smith, with a few men and axes, to destroy Vince's Bridge, so no more Mexican troops could reach the field.
+          atS: 40.69
+          durationS: 10.07
+        - text: Return like eagles, he told him, or you will be too late for the day.
+          atS: 50.97
+          durationS: 4.26
+        - text: Then he waited.
+          atS: 55.83
+          durationS: 1.27
+        - text: Hour after hour, the Texan camp sat still.
+          atS: 57.79
+          durationS: 3.6
+        - text: Across the field, the Mexican officers decided no attack was coming.
+          atS: 62
+          durationS: 4.02
+        - text: They took their afternoon siesta.
+          atS: 66.45
+          durationS: 1.96
+        - text: Muskets were stacked.
+          atS: 68.66
+          durationS: 1.33
+        - text: At about four o'clock, Houston formed his men, and they walked forward through the tall grass, silently, holding their fire.
+          atS: 70.51
+          durationS: 7.07
+        - text: When they were close, two small cannon, the Twin Sisters, fired point blank into the barricade.
+          atS: 77.96
+          durationS: 5.9
+        - text: The Texans charged, shouting Remember the Alamo.
+          atS: 84.24
+          durationS: 3.83
+        - text: The battle took about eighteen minutes.
+          atS: 88.51
+          durationS: 2.26
+        - text: Look at the plain again.
+          atS: 90.89
+          durationS: 1.29
+        - text: All that waiting, for eighteen minutes.
+          atS: 92.3
+          durationS: 2.68
+        - text: And Texas was a country.
+          atS: 95.22
+          durationS: 2.16

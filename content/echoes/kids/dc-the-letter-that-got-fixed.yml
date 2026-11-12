@@ -8,6 +8,8 @@ place: "Lincoln Memorial, north wall of the chamber, Washington, D.C."
 at: { lat: 38.88932, lng: -77.05020 }
 triggerRadiusKm: 0.03
 category: kids
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 63
 visibility: at-hand

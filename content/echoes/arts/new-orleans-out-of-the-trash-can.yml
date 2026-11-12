@@ -1,0 +1,201 @@
+# Drafted by Claude Code (2026-11-10) for the New Orleans City Pass, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk outside the Mother-in-Law Lounge, 1500 North Claiborne Avenue at Columbus Street, beside the Claiborne Expressway.
+# Position: Overture place 'Mother-in-Law Lounge' (1500 N Claiborne Ave), checked against the North Claiborne Avenue and Columbus Street lines (medium confidence).
+id: new-orleans-out-of-the-trash-can
+title: "Out of the Trash Can"
+summary: "Mother in Law was thrown in a trash can before it became a number one hit. Ernie K Doe's lounge stands on this corner."
+place: "Mother in Law Lounge, North Claiborne Avenue at Columbus Street, New Orleans, Louisiana"
+at: { lat: 29.97096, lng: -90.06678 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 77
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, seventh-ward, claiborne-avenue, r-and-b, music, ernie-k-doe]
+teaser: "Somebody went back for it."
+script: |
+  Look at the lounge on this corner. It is named for a song that was thrown in the garbage.
+
+  In nineteen sixty one, a young songwriter and producer named Allen Toussaint made a song called Mother in Law. After a few bad takes, he threw it in the trash. One of the backup singers fished it out. Toussaint remembers the singer walking over to Ernie K Doe and saying, look, try this again, man.
+
+  It went to number one in the country. K Doe always knew he was special. I'm cocky, he liked to say, but I'm good.
+
+  Then the hits stopped. By the middle of the seventies he had pretty much dropped out. He drank, and people remember seeing him living on the streets.
+
+  In the early nineteen nineties, an old friend, Antoinette, took him in. They married. She dressed him in capes and feathered hats, and she opened this lounge, so he could sing again. It was wall to wall, one of his backup singers remembers.
+
+  He died in two thousand one. But he didn't exactly leave. Antoinette had a likeness of him made from a department store mannequin, and set it up in the lounge. Everybody wanted to take a picture with Ernie.
+
+  Look at the lounge again.
+
+  Somebody went back for the song. Somebody went back for him.
+detail: >-
+  Ernie K-Doe (Ernest Kador Jr.) died on 5 July 2001. The lounge was damaged by Hurricane Katrina and rebuilt at its original location; Antoinette K-Doe ran it after his death. The mannequin is no longer kept there.
+pronunciations:
+  - written: "K Doe"
+    say: "kay DOE"
+  - written: "Toussaint"
+    say: "too-SAHN"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It is named for a song that was thrown in the garbage."
+    source: 2
+    quote: "a song that was considered a throw-away tune, actually thrown into the trash, but was retrieved and became a #1 song for singer Ernie K-Doe."
+  - says: "In nineteen sixty one, a young songwriter and producer named Allen Toussaint made a song called Mother in Law."
+    source: 1
+    quote: "In fact, Allen Toussaint composed and produced the song"
+  - says: "In nineteen sixty one, a young songwriter and producer named Allen Toussaint made a song called Mother in Law."
+    source: 2
+    quote: "In early 1961, he recorded and released the song \"Mother-In-Law\" which was written and produced by Toussaint."
+  - says: "After a few bad takes, he threw it in the trash."
+    source: 1
+    quote: "and, after a few unsatisfactory takes, literally threw it away."
+  - says: "One of the backup singers fished it out."
+    source: 1
+    quote: "It was rescued from oblivion by one of the backup singers at the session."
+  - says: "Toussaint remembers the singer walking over to Ernie K Doe and saying, look, try this again, man."
+    source: 1
+    quote: "he took it out of the trash can when I took a short break, and went over to K-Doe and said, 'Look, try this again, man,'"
+  - says: "It went to number one in the country."
+    source: 2
+    quote: "It was a #1 hit on Billboard and stayed on the charts for 12 weeks."
+  - says: "K Doe always knew he was special."
+    source: 1
+    quote: "The New Orleans musician always knew — and said, loudly — that he was special."
+  - says: "I'm cocky, he liked to say, but I'm good."
+    source: 1
+    quote: "He always said, 'I'm cocky, but I'm good.'"
+  - says: "Then the hits stopped."
+    source: 1
+    quote: "When Toussaint went into the army, K-Doe continued recording, without much success."
+  - says: "By the middle of the seventies he had pretty much dropped out."
+    source: 1
+    quote: "by the mid-'70s, K-Doe had pretty much dropped out."
+  - says: "He drank, and people remember seeing him living on the streets."
+    source: 1
+    quote: "He drank a lot, and many people remember seeing the once-dapper musician living on the streets."
+  - says: "In the early nineteen nineties, an old friend, Antoinette, took him in."
+    source: 1
+    quote: "In the early 1990s, his life took another turn when an old friend, Antoinette Dorsey Fox, took him in."
+  - says: "They married."
+    source: 1
+    quote: "They got married"
+  - says: "She dressed him in capes and feathered hats, and she opened this lounge, so he could sing again."
+    source: 1
+    quote: "she created a new look for her husband, replete with capes, shiny suits and feathered hats. And she created the Mother-in-Law Lounge, where K-Doe would perform once again."
+  - says: "It was wall to wall, one of his backup singers remembers."
+    source: 1
+    quote: "it used to be wall-to-wall"
+  - says: "He died in two thousand one."
+    source: 1
+    quote: "Ernie K-Doe died in 2001 at the age of 65"
+  - says: "He died in two thousand one."
+    source: 2
+    quote: "passed away on July 5, 2001"
+  - says: "But he didn't exactly leave."
+    source: 1
+    quote: "but he didn't exactly leave"
+  - says: "Antoinette had a likeness of him made from a department store mannequin, and set it up in the lounge."
+    source: 1
+    quote: "His wife commissioned a likeness, fashioned from a department-store mannequin, that she installed in the lounge."
+  - says: "Everybody wanted to take a picture with Ernie."
+    source: 1
+    quote: "Everybody wanted to take a picture with Ernie"
+  - says: "Somebody went back for the song."
+    source: 1
+    quote: "he took it out of the trash can"
+  - says: "Somebody went back for him."
+    source: 1
+    quote: "an old friend, Antoinette Dorsey Fox, took him in."
+sources:
+  - title: "The Rise, Fall And Redemption Of New Orleans' 'R&B Emperor'"
+    publisher: "NPR"
+    url: https://www.npr.org/2012/12/23/167879568/ernie-k-doe-a-one-hit-weirdos-rise-fall-and-redemption
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "The Foote Files: Ernie K-Doe And Mother-In-Law"
+    publisher: "CBS News Texas"
+    url: https://www.cbsnews.com/texas/news/foote-files-ernie-k-doe-mother-in-law/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-out-of-the-trash-can/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77.1
+    audioBytes: 1235112
+    transcript:
+      totalS: 77.1
+      lines:
+        - text: Look at the lounge on this corner.
+          atS: 0
+          durationS: 1.79
+        - text: It is named for a song that was thrown in the garbage.
+          atS: 2.11
+          durationS: 2.98
+        - text: In nineteen sixty one, a young songwriter and producer named Allen Toussaint made a song called Mother in Law.
+          atS: 5.61
+          durationS: 7.06
+        - text: After a few bad takes, he threw it in the trash.
+          atS: 13.11
+          durationS: 3.15
+        - text: One of the backup singers fished it out.
+          atS: 16.64
+          durationS: 2.14
+        - text: Toussaint remembers the singer walking over to Ernie K Doe and saying, look, try this again, man.
+          atS: 19.38
+          durationS: 6.33
+        - text: It went to number one in the country.
+          atS: 25.98
+          durationS: 1.86
+        - text: K Doe always knew he was special.
+          atS: 28.22
+          durationS: 2.39
+        - text: I'm cocky, he liked to say, but I'm good.
+          atS: 31.31
+          durationS: 2.59
+        - text: Then the hits stopped.
+          atS: 34.6
+          durationS: 1.31
+        - text: By the middle of the seventies he had pretty much dropped out.
+          atS: 36.35
+          durationS: 3.09
+        - text: He drank, and people remember seeing him living on the streets.
+          atS: 39.88
+          durationS: 3.58
+        - text: In the early nineteen nineties, an old friend, Antoinette, took him in.
+          atS: 43.9
+          durationS: 4.05
+        - text: They married.
+          atS: 48.33
+          durationS: 0.73
+        - text: She dressed him in capes and feathered hats, and she opened this lounge, so he could sing again.
+          atS: 49.24
+          durationS: 5.03
+        - text: It was wall to wall, one of his backup singers remembers.
+          atS: 54.65
+          durationS: 3.35
+        - text: He died in two thousand one.
+          atS: 58.33
+          durationS: 1.89
+        - text: But he didn't exactly leave.
+          atS: 60.43
+          durationS: 1.72
+        - text: Antoinette had a likeness of him made from a department store mannequin, and set it up in the lounge.
+          atS: 62.66
+          durationS: 5.46
+        - text: Everybody wanted to take a picture with Ernie.
+          atS: 68.63
+          durationS: 2.51
+        - text: Look at the lounge again.
+          atS: 71.52
+          durationS: 1.33
+        - text: Somebody went back for the song.
+          atS: 73.24
+          durationS: 1.63
+        - text: Somebody went back for him.
+          atS: 75.47
+          durationS: 1.67

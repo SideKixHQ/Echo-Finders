@@ -1,0 +1,97 @@
+# From W033 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Third Street sidewalk; original building viewed from outside.
+# Position: SE corner 3rd & Market (St James block 3rd-4th/Market-Dock). Market St south sidewalk ~35 m east of Third, facing church/churchyard. UNF NRHP photo point 34.23560,-77.94591 agrees within ~25 m. (medium confidence).
+# Shares a stop with other echoes, so it sits 6m off the spot to keep its pin tappable.
+id: wilmington-the-church-used-as-a-hospital
+title: "The Church Used as a Hospital"
+summary: "In February 1865, Union forces entered Wilmington."
+place: "St. James Episcopal Church, 25 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.23542, lng: -77.94561 }
+triggerRadiusKm: 0.04
+category: military
+format: short
+durationS: 54
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "In February 1865, Union forces entered Wilmington."
+script: |
+  In February 1865, Union forces entered Wilmington. St. James's church building was
+  seized and used as a hospital.
+
+  The congregation's history records that the building was returned that summer, repaired,
+  and used for services again in December. A space designed for worship had temporarily
+  become a place of wartime care.
+
+  The change makes you see the church differently. Its doors and interior were practical
+  resources in a city undergoing military occupation, not just symbols on a familiar
+  street.
+
+  From the sidewalk, consider the work required to make a building serve an urgent
+  purpose, then restore it to its regular life. The hospital chapter was temporary, but it
+  belongs to the building's history. Returning to worship did not mean that the preceding
+  months had never happened.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In February 1865, Union forces entered Wilmington."
+    source: 1
+    quote: "In February 1865, during the Civil War, Union forces entered Wilmington; the church building was seized and used as a hospital."
+  - says: "St. James's church building was seized and used as a hospital."
+    source: 1
+    quote: "In February 1865, during the Civil War, Union forces entered Wilmington; the church building was seized and used as a hospital."
+  - says: "The congregation's history records that the building was returned that summer, repaired, and used for services again in December."
+    source: 1
+    quote: "In the summer of 1865 the building was returned to the congregation and repaired. Services resumed on December 8, 1865."
+sources:
+  - title: "Our history"
+    publisher: "St. James Parish"
+    url: https://www.stjamesp.org/our-history/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-church-used-as-a-hospital/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.9
+    audioBytes: 863546
+    transcript:
+      totalS: 53.9
+      lines:
+        - text: In February 1865, Union forces entered Wilmington.
+          atS: 0
+          durationS: 4.56
+        - text: St.
+          atS: 5
+          durationS: 0.26
+        - text: James's church building was seized and used as a hospital.
+          atS: 5.29
+          durationS: 3.39
+        - text: The congregation's history records that the building was returned that summer, repaired, and used for services again in December.
+          atS: 9.07
+          durationS: 7.55
+        - text: A space designed for worship had temporarily become a place of wartime care.
+          atS: 17.57
+          durationS: 4.73
+        - text: The change makes you see the church differently.
+          atS: 23.41
+          durationS: 2.57
+        - text: Its doors and interior were practical resources in a city undergoing military occupation, not just symbols on a familiar street.
+          atS: 26.78
+          durationS: 8.2
+        - text: From the sidewalk, consider the work required to make a building serve an urgent purpose, then restore it to its regular life.
+          atS: 35.79
+          durationS: 8.36
+        - text: The hospital chapter was temporary, but it belongs to the building's history.
+          atS: 44.85
+          durationS: 4.37
+        - text: Returning to worship did not mean that the preceding months had never happened.
+          atS: 49.73
+          durationS: 4.19
+archive:
+  - imageKey: archive/loc-csas-02951.jpg
+    year: 1938
+    caption: "St. James Church, the tower and front, from the street"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2744-A, 1938), https://www.loc.gov/item/2017888683/"
+    rights: public-domain

@@ -1,0 +1,139 @@
+# Drafted by Claude Code (2026-11-09) for Memphis.
+# Listening spot: Inside W. C. Handy Park on Beale Street, a public park.
+# Position: Wikidata Q49497627 (Handy Park) offset a few metres from memphis-the-song-that-mocked-mr-crump (medium-high confidence).
+id: memphis-kid-douglas
+title: "Kid Douglas"
+summary: "Before it was Handy Park, Church's Park was where Memphis Minnie, the jug bands and Howlin' Wolf played Beale Street for tips."
+place: "W. C. Handy Park, formerly Church's Park, Beale Street, Memphis, Tennessee"
+at: { lat: 35.1401, lng: -90.051 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [memphis, beale-street, blues, memphis-minnie, music]
+teaser: "A runaway girl with a guitar played for tips in this park. She became Memphis Minnie."
+script: |
+  Before this was Handy Park, it was Church's Park. Musicians came here to play for tips.
+
+  One of them was a girl from northern Mississippi who had been given a guitar for her birthday, and who ran away from home to play it here. She called herself Kid Douglas.
+
+  Her real name was Lizzie Douglas. Later she took the name Memphis Minnie.
+
+  The jug bands played this park too, the Memphis Jug Band among them. They came for the tips, and to learn new songs from the other bands.
+
+  In the late thirties, a man from the Delta who called himself Howlin' Wolf would come up to Memphis and play here for tips.
+
+  Minnie went on to record fifty sides before the Depression shut the studios down. She wore bracelets made of silver dollars.
+
+  The National Park Service calls her the greatest female country blues singer.
+
+  All of it started on this patch of ground, for whatever people dropped in the hat.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Before this was Handy Park, it was Church's Park."
+    source: 2
+    quote: "they played for tips in Church's Park (now W.C. Handy Park) on Beale Street"
+  - says: "Musicians came here to play for tips."
+    source: 2
+    quote: "they played for tips in Church's Park (now W.C. Handy Park) on Beale Street"
+  - says: "One of them was a girl from northern Mississippi who had been given a guitar for her birthday, and who ran away from home to play it here."
+    source: 1
+    quote: "Lizzie Douglas was raised on a farm before moving in 1904 to Walls in northern Mississippi. The following year Douglas was given a guitar for her birthday and quickly learned to play."
+  - says: "One of them was a girl from northern Mississippi who had been given a guitar for her birthday, and who ran away from home to play it here."
+    source: 1
+    quote: "before running away from home to play for tips at Church's Park ( the current W.C. Handy Park) on Beale Street in Memphis."
+  - says: "She called herself Kid Douglas."
+    source: 1
+    quote: "she began playing local parties as \"Kid\" Douglas"
+  - says: "Her real name was Lizzie Douglas."
+    source: 1
+    quote: "Lizzie Douglas was raised on a farm"
+  - says: "Later she took the name Memphis Minnie."
+    source: 1
+    quote: "Douglas adopted the handle of Memphis Minnie"
+  - says: "The jug bands played this park too, the Memphis Jug Band among them."
+    source: 2
+    quote: "they played for tips in Church's Park (now W.C. Handy Park) on Beale Street"
+  - says: "They came for the tips, and to learn new songs from the other bands."
+    source: 2
+    quote: "The band played the park not only for tips but also to learn new songs from other jug bands"
+  - says: "In the late thirties, a man from the Delta who called himself Howlin' Wolf would come up to Memphis and play here for tips."
+    source: 3
+    quote: "During the late 1930s Wolf often ventured to Memphis, playing local juke joints off Beale Street or in W. C. Handy Park for tips."
+  - says: "Minnie went on to record fifty sides before the Depression shut the studios down."
+    source: 1
+    quote: "By the time the effects of the Great Depression had shackled the recording industry, Minnie had recorded fifty sides"
+  - says: "She wore bracelets made of silver dollars."
+    source: 1
+    quote: "wearing bracelets made of silver dollars on her wrists."
+  - says: "The National Park Service calls her the greatest female country blues singer."
+    source: 1
+    quote: "Memphis Minnie was the greatest female country blues singer"
+sources:
+  - title: "Memphis Minnie, Lower Mississippi Delta Region"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/locations/lowermsdeltaregion/memphis-minnie.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Memphis Jug Band, Lower Mississippi Delta Region"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/locations/lowermsdeltaregion/memphis-jug-band.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Howlin' Wolf, Lower Mississippi Delta Region"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/locations/lowermsdeltaregion/howlin-wolf.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/memphis-kid-douglas/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 59.7
+    audioBytes: 956751
+    transcript:
+      totalS: 59.7
+      lines:
+        - text: Before this was Handy Park, it was Church's Park.
+          atS: 0
+          durationS: 3.53
+        - text: Musicians came here to play for tips.
+          atS: 4.04
+          durationS: 2.37
+        - text: One of them was a girl from northern Mississippi who had been given a guitar for her birthday, and who ran away from home to play it here.
+          atS: 6.92
+          durationS: 7.67
+        - text: She called herself Kid Douglas.
+          atS: 15.41
+          durationS: 2.5
+        - text: Her real name was Lizzie Douglas.
+          atS: 18.34
+          durationS: 2.15
+        - text: Later she took the name Memphis Minnie.
+          atS: 20.82
+          durationS: 2.51
+        - text: The jug bands played this park too, the Memphis Jug Band among them.
+          atS: 24.02
+          durationS: 4.66
+        - text: They came for the tips, and to learn new songs from the other bands.
+          atS: 29.12
+          durationS: 4.02
+        - text: In the late thirties, a man from the Delta who called himself Howlin' Wolf would come up to Memphis and play here for tips.
+          atS: 33.65
+          durationS: 7.31
+        - text: Minnie went on to record fifty sides before the Depression shut the studios down.
+          atS: 41.56
+          durationS: 4.9
+        - text: She wore bracelets made of silver dollars.
+          atS: 47.07
+          durationS: 2.44
+        - text: The National Park Service calls her the greatest female country blues singer.
+          atS: 50.02
+          durationS: 4.78
+        - text: All of it started on this patch of ground, for whatever people dropped in the hat.
+          atS: 55.24
+          durationS: 4.48

@@ -1,0 +1,146 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2).
+# Listening spot: The public sidewalk at the Chinatown Gate, Grant Avenue and Bush Street. Grant Avenue was Dupont Street in 1880.
+# Position: The Grant Avenue and Bush Street corner at the Chinatown Gate, from general map knowledge (high confidence for the corner). The 1880 report says only that Norton fell "walking along Dupont street", so the script places him on the street, not at this corner.
+id: san-francisco-an-emperor-on-dupont-street
+title: "An Emperor on Dupont Street"
+summary: "Norton the First, self-proclaimed Emperor of North America, inspected the city for twenty years. He died on this street in 1880."
+place: "Chinatown Gate, Grant Avenue and Bush Street, San Francisco, California"
+at: { lat: 37.79080, lng: -122.40568 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 69
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [san-francisco, chinatown, grant-avenue, emperor-norton, eccentrics, 1880]
+teaser: "The city's only emperor printed his own money, and the banks took it."
+script: |
+  You are on Grant Avenue. In eighteen eighty, it had another name. Dupont Street.
+
+  Picture a man walking along it in a blue army uniform, with brass buttons and gold braid, and a plumed beaver hat. Everybody knew him. He called himself Norton the First, Emperor of North America and Protector of Mexico.
+
+  He was an Englishman who had lost a fortune. For two decades after that, he went from one part of the city to another, seeing to it that policemen were on duty and sidewalks were clear. He inspected every building going up. The newspapers solemnly printed his proclamations.
+
+  When he needed money, he issued bonds for fifty cents. Banks, restaurants and stores honoured them.
+
+  In January, eighteen eighty, he was walking along Dupont Street when he fell to the pavement. People helped him to his feet and leaned him against a building to rest.
+
+  He died there, without a struggle.
+
+  More than thirty thousand people came to his funeral. Not bad, for an emperor with no empire.
+detail: >-
+  The Silver State (Unionville, Nevada), 10 January 1880, via Chronicling America: Emperor Norton died suddenly the day before, walking along Dupont Street, fell to the pavement, was helped up and placed against a building, and died without a struggle. The 1940 Federal Writers' Project guide to San Francisco gives the blue army uniform, brass buttons, gold braid and plumed beaver hat, "Norton I, Emperor of North America and Protector of Mexico", the mildly insane Englishman after heavy financial reverses, two decades of seeing that policemen were on duty and sidewalks unobstructed, inspecting buildings under construction, newspapers solemnly publishing his proclamations, 50 cent bonds honoured by banks, restaurants and stores, and a funeral in 1880 attended by more than 30,000. The same guide glosses Dupont Street as Grant Avenue. Two independent sources.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Picture a man walking along it in a blue army uniform, with brass buttons and gold braid, and a plumed beaver hat."
+    source: 2
+    quote: "Emperor Norton attired in his blue Army uniform with its brass buttons and gold braid and his plumed beaver hat."
+  - says: "Everybody knew him. He called himself Norton the First, Emperor of North America and Protector of Mexico."
+    source: 2
+    quote: "Everybody knew and liked this mildly insane little Englishman, who, after heavy financial reverses had wrecked his mind, styled himself \"Norton I, Emperor of North America and Protector of Mexico.\""
+  - says: "He was an Englishman who had lost a fortune."
+    source: 2
+    quote: "Englishman, who, after heavy financial reverses had wrecked his mind"
+  - says: "For two decades after that, he went from one part of the city to another, seeing to it that policemen were on duty and sidewalks were clear."
+    source: 2
+    quote: "For two decades, traveling from one part of the city to another, he saw to it that policemen were on duty, that sidewalks were unobstructed"
+  - says: "He inspected every building going up."
+    source: 2
+    quote: "He visited and inspected all buildings in process of construction."
+  - says: "The newspapers solemnly printed his proclamations."
+    source: 2
+    quote: "The newspapers solemnly published the proclamations of this kindly old man"
+  - says: "When he needed money, he issued bonds for fifty cents. Banks, restaurants and stores honoured them."
+    source: 2
+    quote: "When in need of funds, he issued 50^ bonds, supplied by an obliging printer, which were honored by banks, restaurants, and stores."
+  - says: "In January, eighteen eighty, he was walking along Dupont Street when he fell to the pavement."
+    source: 1
+    quote: "died suddenly yesterday. He was walking along Dupont street and fell to the pave ment."
+  - says: "People helped him to his feet and leaned him against a building to rest."
+    source: 1
+    quote: "He was assisted to his feet, and placed against a building to rest"
+  - says: "He died there, without a struggle."
+    source: 1
+    quote: "when he died without a struggle."
+  - says: "More than thirty thousand people came to his funeral."
+    source: 2
+    quote: "His funeral, in 1880, was one of the most impressive of the times, with more than 30,000 attending"
+  - says: "You are on Grant Avenue."
+    source: 2
+    quote: "Dupont Street (Grant Avenue)"
+  - says: "In eighteen eighty, it had another name."
+    source: 2
+    quote: "Dupont Street (Grant Avenue)"
+sources:
+  - title: "The Silver State (Unionville, Nevada), 10 January 1880, page 2"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84022060/1880-01-10/ed-1/?sp=2
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "San Francisco: The Bay and Its Cities (Federal Writers' Project, American Guide Series, 1940)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/sanfranciscobaya00writrich
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-an-emperor-on-dupont-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.5
+    audioBytes: 1097603
+    transcript:
+      totalS: 68.5
+      lines:
+        - text: You are on Grant Avenue.
+          atS: 0
+          durationS: 1.57
+        - text: In eighteen eighty, it had another name.
+          atS: 1.89
+          durationS: 2.62
+        - text: Dupont Street.
+          atS: 4.84
+          durationS: 1.2
+        - text: Picture a man walking along it in a blue army uniform, with brass buttons and gold braid, and a plumed beaver hat.
+          atS: 6.48
+          durationS: 7.44
+        - text: Everybody knew him.
+          atS: 14.62
+          durationS: 1.18
+        - text: He called himself Norton the First, Emperor of North America and Protector of Mexico.
+          atS: 16.18
+          durationS: 6.02
+        - text: He was an Englishman who had lost a fortune.
+          atS: 22.89
+          durationS: 2.65
+        - text: For two decades after that, he went from one part of the city to another, seeing to it that policemen were on duty and sidewalks were clear.
+          atS: 26.49
+          durationS: 8.68
+        - text: He inspected every building going up.
+          atS: 35.88
+          durationS: 2.66
+        - text: The newspapers solemnly printed his proclamations.
+          atS: 38.86
+          durationS: 3.15
+        - text: When he needed money, he issued bonds for fifty cents.
+          atS: 42.39
+          durationS: 3.83
+        - text: Banks, restaurants and stores honoured them.
+          atS: 46.6
+          durationS: 2.89
+        - text: In January, eighteen eighty, he was walking along Dupont Street when he fell to the pavement.
+          atS: 50
+          durationS: 5.6
+        - text: People helped him to his feet and leaned him against a building to rest.
+          atS: 55.93
+          durationS: 3.74
+        - text: He died there, without a struggle.
+          atS: 59.99
+          durationS: 2.11
+        - text: More than thirty thousand people came to his funeral.
+          atS: 62.43
+          durationS: 3.12
+        - text: Not bad, for an emperor with no empire.
+          atS: 65.93
+          durationS: 2.61
