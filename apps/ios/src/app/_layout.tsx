@@ -18,6 +18,7 @@ import { Sora_600SemiBold } from "@expo-google-fonts/sora/600SemiBold";
 import { SpaceGrotesk_400Regular } from "@expo-google-fonts/space-grotesk/400Regular";
 import { SpaceGrotesk_500Medium } from "@expo-google-fonts/space-grotesk/500Medium";
 import { NarratorProvider } from "../player";
+import { PacksProvider } from "../packs/PacksProvider";
 import { color } from "../theme";
 
 SplashScreen.preventAutoHideAsync().catch(() => undefined);
@@ -41,11 +42,19 @@ export default function RootLayout() {
 
   return (
     <NarratorProvider>
-      <StatusBar style="light" />
-      <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: color.space } }}>
-        <Stack.Screen name="(tabs)" />
-        <Stack.Screen name="echo/[id]" options={{ presentation: "modal" }} />
-      </Stack>
+      <PacksProvider>
+        <StatusBar style="light" />
+        <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: color.space } }}>
+          <Stack.Screen name="(tabs)" />
+          <Stack.Screen name="echo/[id]" options={{ presentation: "modal" }} />
+          {/* Download packs: Settings › Offline echoes, and the sheet before a trip. */}
+          <Stack.Screen name="offline" />
+          <Stack.Screen
+            name="trip/[id]"
+            options={{ presentation: "transparentModal", animation: "fade", contentStyle: { backgroundColor: "transparent" } }}
+          />
+        </Stack>
+      </PacksProvider>
     </NarratorProvider>
   );
 }
