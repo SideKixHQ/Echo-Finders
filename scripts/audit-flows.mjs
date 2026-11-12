@@ -1139,7 +1139,10 @@ async function arrive() {
     const caseOf = await p.locator('#kind-box').evaluate((box) => ({
       all: box.querySelector('.chip-all').innerText.trim(),
       transform: getComputedStyle(box.querySelector('.chip-all')).textTransform,
-      divider: getComputedStyle(box.querySelector('.chip-all')).borderRightWidth,
+      // The 16 topic panel (2026-11-12) outlines every chip on all four sides, as on the
+      // canvas, so "no divider" now means All's right edge is no different from its left:
+      // an outline, not the old rule down one side. Was borderRightWidth === '0px'.
+      divider: (() => { const cs = getComputedStyle(box.querySelector('.chip-all')); return cs.borderRightWidth === cs.borderLeftWidth ? '0px' : cs.borderRightWidth; })(),
       crime: [...box.querySelectorAll('.chip')].some((c) => c.innerText.trim() === 'True crime'),
     }));
     check('Filter: "All" and "True crime" in sentence case, no divider by All',
