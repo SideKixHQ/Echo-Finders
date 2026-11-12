@@ -3,7 +3,7 @@
  *
  * The TestFlight test shell, the live web app in a WebView (ADR-0012, amendment of
  * 2026-11-11). `index.ts` starts it only when the bundle is built with
- * `EXPO_PUBLIC_SHELL=web` (the eas `production` profile); every other build starts the
+ * `EXPO_PUBLIC_SHELL=web` (no eas profile sets it since 2026-11-12); every other build starts the
  * native app in `src/app/`. The shell is deleted once the native app is ready. It never
  * goes to the App Store.
  */
