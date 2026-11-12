@@ -1,5 +1,5 @@
 # What Expo's build servers get for the iPhone app (apps/ios): the app and the engine it
-# imports, nothing else. Without this they get the whole repository, audio included (594 MB).
+# imports, and the echo library, nothing else. Without this they get the whole repository, audio included (594 MB).
 # Replaces .gitignore for EAS, so the usual exclusions are repeated here.
 node_modules/
 **/node_modules/
@@ -16,6 +16,10 @@ coverage/
 /design/
 /scripts/
 /test/
-/apps/prototype/
+# The web app's source stays in: the iPhone app imports its generated echo library
+# (apps/ios/src/library.ts), and Metro watches apps/prototype/src. Its public/ holds the
+# rendered audio, which the phone streams from the site, so that stays out. (EAS ignored a
+# `!` re-include here, so this excludes by name rather than excluding all and re-including.)
+/apps/prototype/public/
 /apps/site/
 /packages/echo/

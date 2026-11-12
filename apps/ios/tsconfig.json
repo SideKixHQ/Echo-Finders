@@ -1,6 +1,16 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    // The generated library lives in the web app's source and imports the engine's types;
+    // resolve them here, to this app's copy, rather than from the web app's node_modules.
+    "paths": {
+      "@echofinders/core": ["./node_modules/@echofinders/core"],
+      // The web's map style (`src/basemap.ts`) imports its types from MapLibre GL JS; the
+      // phone has MapLibre Native, so they come from the style spec (`src/types`).
+      "maplibre-gl": ["./src/types/maplibre-gl.d.ts"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
 }
