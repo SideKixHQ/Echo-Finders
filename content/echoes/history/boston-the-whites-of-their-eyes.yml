@@ -9,7 +9,7 @@ at: { lat: 42.37590, lng: -71.06058 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 55
+durationS: 68
 visibility: at-hand
 certainty: contested
 certaintyNote: >-
@@ -19,47 +19,47 @@ quality: 0.75
 tags: [boston, boston-core, freedom-trail, charlestown, bunker-hill, revolution, quotations]
 teaser: "Everyone knows the order. Nobody can show who gave it."
 script: |
-  The bronze figure on these grounds is Colonel William Prescott. He is shown walking
-  along the top of an earth wall, the way witnesses said he did at dawn, while British cannon
-  fired at it.
+  Find the bronze man in front of the monument, caught mid stride on top of a wall.
 
-  Prescott commanded the earthwork on this hill. And he usually gets the credit for the most
-  famous order of the battle.
+  That is Colonel William Prescott. He commanded the earthwork on this hill. At dawn on the day of the battle, with British cannon firing at it, witnesses said he walked along the top of that wall. The statue shows him doing it.
+
+  And he usually gets the credit for the most famous order of the battle.
 
   Don't fire until you see the whites of their eyes.
 
   Here is the trouble. Nobody can show that he said it.
 
-  Some accounts give the line to Prescott. Others give it to General Israel Putnam. The park
-  service, which looks after this hill, calls it possibly a myth.
+  Some accounts give the line to Prescott. Others give it to General Israel Putnam. The park service, which looks after this hill, calls it possibly a myth.
 
-  What the record supports is plainer. Wait. Do not waste a shot on men too far away. Fire
-  together, on the signal.
+  What the record supports is plainer. Wait. Do not waste a shot on men too far away. Fire together, on the signal.
 
-  Whatever was actually shouted, officers passed it along the line. And when the British
-  came up the slope, more than fourteen hundred men fired at once.
+  Whatever was actually shouted, officers passed it along the line. And when the British came up this slope, more than fourteen hundred men fired at once.
 
   The words may be a legend.
 
   The waiting was real.
+
 editorial: approved
 factCheck: corroborated
 claims:
-  - says: "The words may be a legend."
-    source: 1
-    quote: "While possibly a myth"
-  - says: "The bronze figure on these grounds is Colonel William Prescott."
+  - says: "That is Colonel William Prescott."
     source: 1
     quote: "The bronze statue of Colonel William Prescott stands before the Bunker Hill Monument."
-  - says: "He is shown walking along the top of an earth wall, the way witnesses said he did at dawn, while British cannon fired at it."
-    source: 3
-    quote: "When dawn broke and British cannon opened fire on his position, accounts identify Prescott walking on top of the dirt walls of the redoubt"
-  - says: "He is shown walking along the top of an earth wall, the way witnesses said he did at dawn, while British cannon fired at it."
-    source: 3
-    quote: "this statue portrays Prescott walking that same redoubt wall"
-  - says: "Prescott commanded the earthwork on this hill."
+  - says: "He commanded the earthwork on this hill."
     source: 3
     quote: "He is effectively considered to have been the commander of the redoubt."
+  - says: "At dawn on the day of the battle, with British cannon firing at it, witnesses said he walked along the top of that wall."
+    source: 3
+    quote: "When dawn broke and British cannon opened fire on his position, accounts identify Prescott walking on top of the dirt walls of the redoubt"
+  - says: "At dawn on the day of the battle, with British cannon firing at it, witnesses said he walked along the top of that wall."
+    source: 3
+    quote: "this statue portrays Prescott walking that same redoubt wall"
+  - says: "The statue shows him doing it."
+    source: 3
+    quote: "When dawn broke and British cannon opened fire on his position, accounts identify Prescott walking on top of the dirt walls of the redoubt"
+  - says: "The statue shows him doing it."
+    source: 3
+    quote: "this statue portrays Prescott walking that same redoubt wall"
   - says: "And he usually gets the credit for the most famous order of the battle."
     source: 1
     quote: "The infamous order to \"not fire until you see the whites of their eyes,\" [4] is attributed to Prescott in American Revolution lore."
@@ -84,9 +84,12 @@ claims:
   - says: "Whatever was actually shouted, officers passed it along the line."
     source: 1
     quote: "Whatever Prescott shouted, other officers repeated it up and down the Provincial line."
-  - says: "And when the British came up the slope, more than fourteen hundred men fired at once."
+  - says: "And when the British came up this slope, more than fourteen hundred men fired at once."
     source: 1
     quote: "Over 1,400 Provincials from three colonies fired their muskets simultaneously"
+  - says: "The words may be a legend."
+    source: 1
+    quote: "While possibly a myth"
 sources:
   - title: "William Prescott"
     publisher: "National Park Service"
@@ -106,62 +109,68 @@ sources:
 renders:
   - voiceId: IMlxLW3qgn0MWgfz7Vnh
     audioKey: audio/boston-the-whites-of-their-eyes/IMlxLW3qgn0MWgfz7Vnh.mp3
-    durationS: 54.9
-    audioBytes: 880265
+    durationS: 67.7
+    audioBytes: 1083811
     transcript:
-      totalS: 54.9
+      totalS: 67.7
       lines:
-        - text: The bronze figure on these grounds is Colonel William Prescott.
+        - text: Find the bronze man in front of the monument, caught mid stride on top of a wall.
           atS: 0
-          durationS: 3.79
-        - text: He is shown walking along the top of an earth wall, the way witnesses said he did at dawn, while British cannon fired at it.
-          atS: 4.23
-          durationS: 7.48
-        - text: Prescott commanded the earthwork on this hill.
-          atS: 12.14
-          durationS: 2.59
-        - text: And he usually gets the credit for the most famous order of the battle.
-          atS: 15.06
-          durationS: 3.68
-        - text: Don't fire until you see the whites of their eyes.
-          atS: 19.12
-          durationS: 2.83
-        - text: Here is the trouble.
-          atS: 22.23
-          durationS: 0.96
-        - text: Nobody can show that he said it.
-          atS: 23.64
-          durationS: 1.75
-        - text: Some accounts give the line to Prescott.
-          atS: 25.77
-          durationS: 2.07
-        - text: Others give it to General Israel Putnam.
-          atS: 28.05
+          durationS: 4.71
+        - text: That is Colonel William Prescott.
+          atS: 5.16
           durationS: 2.22
+        - text: He commanded the earthwork on this hill.
+          atS: 7.7
+          durationS: 2.5
+        - text: At dawn on the day of the battle, with British cannon firing at it, witnesses said he walked along the top of that wall.
+          atS: 11.31
+          durationS: 6.82
+        - text: The statue shows him doing it.
+          atS: 18.45
+          durationS: 2.33
+        - text: And he usually gets the credit for the most famous order of the battle.
+          atS: 21.11
+          durationS: 4.09
+        - text: Don't fire until you see the whites of their eyes.
+          atS: 25.8
+          durationS: 2.94
+        - text: Here is the trouble.
+          atS: 29.55
+          durationS: 1.17
+        - text: Nobody can show that he said it.
+          atS: 31.1
+          durationS: 2.04
+        - text: Some accounts give the line to Prescott.
+          atS: 33.47
+          durationS: 2.29
+        - text: Others give it to General Israel Putnam.
+          atS: 35.97
+          durationS: 2.52
         - text: The park service, which looks after this hill, calls it possibly a myth.
-          atS: 30.44
-          durationS: 3.75
+          atS: 38.81
+          durationS: 4.3
         - text: What the record supports is plainer.
-          atS: 34.44
-          durationS: 2.05
+          atS: 43.71
+          durationS: 2.3
         - text: Wait.
-          atS: 36.73
-          durationS: 0.51
+          atS: 46.71
+          durationS: 0.65
         - text: Do not waste a shot on men too far away.
-          atS: 37.42
-          durationS: 2.54
+          atS: 47.74
+          durationS: 2.83
         - text: Fire together, on the signal.
-          atS: 40.11
-          durationS: 1.98
+          atS: 50.96
+          durationS: 2.15
         - text: Whatever was actually shouted, officers passed it along the line.
-          atS: 42.38
-          durationS: 3.59
-        - text: And when the British came up the slope, more than fourteen hundred men fired at once.
-          atS: 46
-          durationS: 4.56
+          atS: 53.8
+          durationS: 4.15
+        - text: And when the British came up this slope, more than fourteen hundred men fired at once.
+          atS: 58.46
+          durationS: 5.33
         - text: The words may be a legend.
-          atS: 50.84
-          durationS: 2.02
+          atS: 64.17
+          durationS: 1.67
         - text: The waiting was real.
-          atS: 53.14
-          durationS: 1.8
+          atS: 66.17
+          durationS: 1.5

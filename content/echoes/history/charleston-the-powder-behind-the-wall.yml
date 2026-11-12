@@ -9,7 +9,7 @@ at: { lat: 32.77695, lng: -79.92730 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 84
+durationS: 73
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -17,85 +17,100 @@ quality: 0.75
 tags: [charleston, charleston-core, south-of-broad, old-exchange, revolution]
 teaser: "Look at the building at the foot of Broad Street. Think about what is under it."
 script: |
-  The building at the foot of Broad Street is the Exchange. When it was finished, in seventeen seventy-one, it fronted the harbour. Everything between it and the water now is filled land.
+  Look at the Exchange, the big building at the foot of Broad Street. Then think about what is underneath it.
 
-  Think about what is underneath it.
+  In the spring of seventeen eighty, a British army had Charleston under siege. One day a shell burst within ten feet of the town's powder magazine.
 
-  In the spring of seventeen eighty a British army laid siege to Charleston. During the siege, after a shell burst close to the powder magazine on Cumberland Street, the defenders moved ten thousand pounds of gunpowder out of it, by night, and carried it down into the vaults of this building. Then they
-  bricked it in.
+  The defenders did not wait for the next one.
 
-  The city surrendered in May. The British took vast stores of powder when it fell. They
-  held Charleston for more than two years. They used the Exchange as barracks, and the
-  cellar became their military prison, the Provost. In one damp, dark room they kept the lowest criminals together with anyone, however respectable, against whom a complaint was brought, men and women alike.
+  That night, they carried ten thousand pounds of gunpowder out of the magazine and down into the vaults of this building. Then they bricked it in.
 
-  William Moultrie, one of the American commanders, wrote about it afterwards. The Provost,
-  he said, was right next to the powder. The British never found it. When the Americans
-  came back into the town, it was still there.
+  In May, the city fell.
 
-  For more than two years, the British had been guarding it for them.
+  The British used this building as barracks. And the cellar became their prison. The Provost. One damp, dark room where the lowest criminals were locked up with anyone at all who had been complained about. Men and women together.
+
+  It was the terror of the town.
+
+  And it was right next to the powder.
+
+  The American commander, William Moultrie, wrote it down afterwards. Although the Provost was next to it, the British never discovered it, and we found it there when we retook the town.
+
+  The British held Charleston for more than two years.
+
+  All that time, they had been guarding it for him.
+
 pronunciations:
   - written: Moultrie
     say: MOOL-tree
 editorial: approved
 factCheck: corroborated
 claims:
-  - says: "The building at the foot of Broad Street is the Exchange."
-    source: 3
-    quote: "THE OLD EXCHANGE, Foot oF BROAD STREET"
-  - says: "When it was finished, in seventeen seventy-one, it fronted the harbour."
-    source: 1
-    quote: "the Exchange and Custom House was built from 1767 to 1771"
-  - says: "When it was finished, in seventeen seventy-one, it fronted the harbour."
-    source: 1
-    quote: "Originally the building fronted the harbor"
-  - says: "Everything between it and the water now is filled land."
-    source: 1
-    quote: "during the past two centuries several blocks have been created by landfill between the Exchange and the water."
-  - says: "In the spring of seventeen eighty a British army laid siege to Charleston."
+  - says: "In the spring of seventeen eighty, a British army had Charleston under siege."
     source: 4
     quote: "The British commenced their bombardment of Charleston on April 13"
-  - says: "During the siege, after a shell burst close to the powder magazine on Cumberland Street, the defenders moved ten thousand pounds of gunpowder out of it, by night, and carried it down into the vaults of this building."
+  - says: "One day a shell burst within ten feet of the town's powder magazine."
+    source: 3
+    quote: "a huge shell bursting within ten feet of the powder maga- zine in Cumberland Street, they, for fear lest worse might ensue, took out at night ten thousand pounds of powder, and carried it to the vaults of the Exchange in Broad Street"
+  - says: "The defenders did not wait for the next one."
+    source: 3
+    quote: "a huge shell bursting within ten feet of the powder maga- zine in Cumberland Street, they, for fear lest worse might ensue, took out at night ten thousand pounds of powder, and carried it to the vaults of the Exchange in Broad Street"
+  - says: "That night, they carried ten thousand pounds of gunpowder out of the magazine and down into the vaults of this building."
     source: 3
     quote: "a huge shell bursting within ten feet of the powder maga- zine in Cumberland Street, they, for fear lest worse might ensue, took out at night ten thousand pounds of powder, and carried it to the vaults of the Exchange in Broad Street"
   - says: "Then they bricked it in."
     source: 3
     quote: "where they bricked it up securely"
-  - says: "The city surrendered in May."
+  - says: "In May, the city fell."
     source: 2
     quote: "taken prisoner at Charlestown, May 12, 1780"
-  - says: "The British took vast stores of powder when it fell."
-    source: 4
-    quote: "The British captured over 300 cannons and about 6,000 muskets, along with vast stores of gunpowder."
-  - says: "They held Charleston for more than two years."
-    source: 5
-    quote: "ending over two years of British occupation."
-  - says: "They used the Exchange as barracks, and the cellar became their military prison, the Provost."
+  - says: "The British used this building as barracks."
     source: 1
     quote: "During the Revolutionary War, the British used the building for barracks and the basement as a military prison."
-  - says: "They used the Exchange as barracks, and the cellar became their military prison, the Provost."
+  - says: "The British used this building as barracks."
     source: 3
     quote: "The Cellar of the Old Exchange used as a Prison during the Revolution."
-  - says: "In one damp, dark room they kept the lowest criminals together with anyone, however respectable, against whom a complaint was brought, men and women alike."
+  - says: "And the cellar became their prison."
+    source: 1
+    quote: "During the Revolutionary War, the British used the building for barracks and the basement as a military prison."
+  - says: "And the cellar became their prison."
+    source: 3
+    quote: "The Cellar of the Old Exchange used as a Prison during the Revolution."
+  - says: "One damp, dark room where the lowest criminals were locked up with anyone at all who had been complained about."
     source: 3
     quote: "The chief terror of the town was the “ Provost,” the damp dark cellar under the Exchange, next to the hiding- place of Moultrie’s powder. In this single room were confined the lowest criminals and malefactors. Men and women together, and any one, however respectable, against whom any complaint might be brought."
-  - says: "William Moultrie, one of the American commanders, wrote about it afterwards."
+  - says: "Men and women together."
     source: 3
-    quote: "next to the hiding- place of Moultrie’s powder."
-  - says: "William Moultrie, one of the American commanders, wrote about it afterwards."
+    quote: "The chief terror of the town was the “ Provost,” the damp dark cellar under the Exchange, next to the hiding- place of Moultrie’s powder. In this single room were confined the lowest criminals and malefactors. Men and women together, and any one, however respectable, against whom any complaint might be brought."
+  - says: "It was the terror of the town."
     source: 3
-    quote: "“and although the Provost was next to it, the British never discovered it, and we found it there when we retook the town.”"
-  - says: "The Provost, he said, was right next to the powder."
+    quote: "The chief terror of the town was the “ Provost,” the damp dark cellar under the Exchange, next to the hiding- place of Moultrie’s powder. In this single room were confined the lowest criminals and malefactors. Men and women together, and any one, however respectable, against whom any complaint might be brought."
+  - says: "And it was right next to the powder."
     source: 3
     quote: "and although the Provost was next to it"
-  - says: "The British never found it."
+  - says: "The American commander, William Moultrie, wrote it down afterwards."
+    source: 3
+    quote: "next to the hiding- place of Moultrie’s powder."
+  - says: "The American commander, William Moultrie, wrote it down afterwards."
+    source: 3
+    quote: "“and although the Provost was next to it, the British never discovered it, and we found it there when we retook the town.”"
+  - says: "Although the Provost was next to it, the British never discovered it, and we found it there when we retook the town."
+    source: 3
+    quote: "and although the Provost was next to it"
+  - says: "Although the Provost was next to it, the British never discovered it, and we found it there when we retook the town."
     source: 3
     quote: "the British never discovered it"
-  - says: "When the Americans came back into the town, it was still there."
+  - says: "Although the Provost was next to it, the British never discovered it, and we found it there when we retook the town."
     source: 3
     quote: "we found it there when we retook the town."
-  - says: "For more than two years, the British had been guarding it for them."
+  - says: "The British held Charleston for more than two years."
     source: 5
     quote: "ending over two years of British occupation."
+  - says: "All that time, they had been guarding it for him."
+    source: 3
+    quote: "and although the Provost was next to it"
+  - says: "All that time, they had been guarding it for him."
+    source: 3
+    quote: "the British never discovered it"
 sources:
   - title: "Exchange and Provost Building"
     publisher: "National Park Service, Travel Charleston"
@@ -125,59 +140,65 @@ sources:
 renders:
   - voiceId: IMlxLW3qgn0MWgfz7Vnh
     audioKey: audio/charleston-the-powder-behind-the-wall/IMlxLW3qgn0MWgfz7Vnh.mp3
-    durationS: 84.4
-    audioBytes: 1351305
+    durationS: 72.8
+    audioBytes: 1166149
     transcript:
-      totalS: 84.4
+      totalS: 72.8
       lines:
-        - text: The building at the foot of Broad Street is the Exchange.
+        - text: Look at the Exchange, the big building at the foot of Broad Street.
           atS: 0
-          durationS: 3.67
-        - text: When it was finished, in seventeen seventy-one, it fronted the harbour.
-          atS: 4.27
-          durationS: 4.2
-        - text: Everything between it and the water now is filled land.
-          atS: 9.08
-          durationS: 3.62
-        - text: Think about what is underneath it.
-          atS: 13.3
-          durationS: 1.87
-        - text: In the spring of seventeen eighty a British army laid siege to Charleston.
-          atS: 15.69
-          durationS: 4.68
-        - text: During the siege, after a shell burst close to the powder magazine on Cumberland Street, the defenders moved ten thousand pounds of gunpowder out of it, by night, and carried it down into the vaults of this building.
-          atS: 21.18
-          durationS: 13.32
+          durationS: 3.8
+        - text: Then think about what is underneath it.
+          atS: 4.18
+          durationS: 2.21
+        - text: In the spring of seventeen eighty, a British army had Charleston under siege.
+          atS: 6.99
+          durationS: 4.61
+        - text: One day a shell burst within ten feet of the town's powder magazine.
+          atS: 12.04
+          durationS: 4.39
+        - text: The defenders did not wait for the next one.
+          atS: 16.87
+          durationS: 2.75
+        - text: That night, they carried ten thousand pounds of gunpowder out of the magazine and down into the vaults of this building.
+          atS: 20.13
+          durationS: 6.68
         - text: Then they bricked it in.
-          atS: 35.19
-          durationS: 1.42
-        - text: The city surrendered in May.
-          atS: 37.21
-          durationS: 1.87
-        - text: The British took vast stores of powder when it fell.
-          atS: 39.46
-          durationS: 3.38
-        - text: They held Charleston for more than two years.
-          atS: 43.35
-          durationS: 2.72
-        - text: They used the Exchange as barracks, and the cellar became their military prison, the Provost.
-          atS: 46.51
-          durationS: 5.68
-        - text: In one damp, dark room they kept the lowest criminals together with anyone, however respectable, against whom a complaint was brought, men and women alike.
-          atS: 52.88
-          durationS: 10.53
-        - text: William Moultrie, one of the American commanders, wrote about it afterwards.
-          atS: 64.11
-          durationS: 4.72
-        - text: The Provost, he said, was right next to the powder.
-          atS: 69.79
-          durationS: 3.1
-        - text: The British never found it.
-          atS: 73.4
-          durationS: 1.61
-        - text: When the Americans came back into the town, it was still there.
-          atS: 75.71
-          durationS: 3.66
-        - text: For more than two years, the British had been guarding it for them.
-          atS: 80.67
-          durationS: 3.72
+          atS: 27.13
+          durationS: 1.27
+        - text: In May, the city fell.
+          atS: 28.91
+          durationS: 1.96
+        - text: The British used this building as barracks.
+          atS: 31.25
+          durationS: 2.32
+        - text: And the cellar became their prison.
+          atS: 33.69
+          durationS: 1.74
+        - text: The Provost.
+          atS: 35.94
+          durationS: 0.99
+        - text: One damp, dark room where the lowest criminals were locked up with anyone at all who had been complained about.
+          atS: 38.23
+          durationS: 6.9
+        - text: Men and women together.
+          atS: 45.82
+          durationS: 1.66
+        - text: It was the terror of the town.
+          atS: 48.09
+          durationS: 2.03
+        - text: And it was right next to the powder.
+          atS: 50.4
+          durationS: 2
+        - text: The American commander, William Moultrie, wrote it down afterwards.
+          atS: 53.35
+          durationS: 4.87
+        - text: Although the Provost was next to it, the British never discovered it, and we found it there when we retook the town.
+          atS: 58.82
+          durationS: 7.38
+        - text: The British held Charleston for more than two years.
+          atS: 66.53
+          durationS: 2.99
+        - text: All that time, they had been guarding it for him.
+          atS: 69.84
+          durationS: 2.97

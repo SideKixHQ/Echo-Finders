@@ -2112,7 +2112,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 55,
+    "durationS": 68,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -2120,15 +2120,15 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The bronze figure on these grounds is Colonel William Prescott. He is shown walking\nalong the top of an earth wall, the way witnesses said he did at dawn, while British cannon\nfired at it.\n\nPrescott commanded the earthwork on this hill. And he usually gets the credit for the most\nfamous order of the battle.\n\nDon't fire until you see the whites of their eyes.\n\nHere is the trouble. Nobody can show that he said it.\n\nSome accounts give the line to Prescott. Others give it to General Israel Putnam. The park\nservice, which looks after this hill, calls it possibly a myth.\n\nWhat the record supports is plainer. Wait. Do not waste a shot on men too far away. Fire\ntogether, on the signal.\n\nWhatever was actually shouted, officers passed it along the line. And when the British\ncame up the slope, more than fourteen hundred men fired at once.\n\nThe words may be a legend.\n\nThe waiting was real.\n",
+    "script": "Find the bronze man in front of the monument, caught mid stride on top of a wall.\n\nThat is Colonel William Prescott. He commanded the earthwork on this hill. At dawn on the day of the battle, with British cannon firing at it, witnesses said he walked along the top of that wall. The statue shows him doing it.\n\nAnd he usually gets the credit for the most famous order of the battle.\n\nDon't fire until you see the whites of their eyes.\n\nHere is the trouble. Nobody can show that he said it.\n\nSome accounts give the line to Prescott. Others give it to General Israel Putnam. The park service, which looks after this hill, calls it possibly a myth.\n\nWhat the record supports is plainer. Wait. Do not waste a shot on men too far away. Fire together, on the signal.\n\nWhatever was actually shouted, officers passed it along the line. And when the British came up this slope, more than fourteen hundred men fired at once.\n\nThe words may be a legend.\n\nThe waiting was real.\n",
     "teaser": "Everyone knows the order. Nobody can show who gave it.",
     "certaintyNote": "The order \"don't fire until you see the whites of their eyes\" is credited by some to Colonel William Prescott and by others to General Israel Putnam (NPS, Israel Putnam); the NPS article on Prescott calls it possibly a myth. What the sources support is that officers told the men to hold their fire and fire together. The script says this out loud.",
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "audio/boston-the-whites-of-their-eyes/IMlxLW3qgn0MWgfz7Vnh.mp3",
-        "durationS": 54.9,
-        "audioBytes": 880265
+        "durationS": 67.7,
+        "audioBytes": 1083811
       }
     ],
     "tags": [
@@ -2199,7 +2199,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 93,
+    "durationS": 85,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -2207,14 +2207,14 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This is the Old South Meeting House. On the morning of the sixteenth of December,\nseventeen seventy three, nearly five thousand people crowded in. About a third of the town.\n\nThree ships full of tea were tied up at a wharf nearby. By law, the tea had to be landed\nand the tax paid by the next day. The crowd wanted the ships sent home instead.\n\nOnly the governor could let them go. And the governor was not in town. He was at his\ncountry house in Milton, ten miles away.\n\nSo the owner of one of the ships, Francis Rotch, was sent to ask him. In December. Twenty\nmiles there and back, in freezing rain.\n\nAnd everyone waited.\n\nThey waited through the morning. They broke off and came back at three. By four it was\ngetting dark, and Rotch had still not returned. Thousands of people in this building, in\nthe dusk, waiting on one man on a cold road.\n\nWhen he finally came in, the answer was no.\n\nBy the traditional account, Samuel Adams stood and said, this meeting can do nothing more\nto save the country. A war whoop went up at the doors. Men with soot on their faces were\nalready in the street, heading for the wharf.\n\nBy the end of the night, three hundred and forty two chests of tea were in the harbour.\n\nIt began as a meeting that ran out of options. Look at the doors. That is the way they\nwent.\n",
+    "script": "Look at the doors of this old brick meeting house.\n\nOn the sixteenth of December, seventeen seventy three, nearly five thousand people crowded in through them. A third of the whole town. And they spent the day inside, waiting for one man.\n\nThree ships full of tea were tied up at a wharf nearby. By law, the tea had to be landed, and the tax paid, by the next day. The crowd wanted the ships sent home instead.\n\nOnly the governor could let them go. And the governor was at his country house in Milton, ten miles away.\n\nSo the owner of one of the ships, Francis Rotch, was sent to ask him. Twenty miles, there and back, in freezing December rain.\n\nAnd everyone waited.\n\nThrough the morning. Back again at three. By four, it was dark. The hall was lit by candles, and it was still full.\n\nThen Rotch came in.\n\nThe answer was no.\n\nBy the traditional account, Samuel Adams rose and quietly said, this meeting can do nothing more to save the country.\n\nAt the doors, a war whoop.\n\nMen with soot on their faces were already out in the street, heading for the ships. By the end of the night, three hundred and forty two chests of tea were in the harbour.\n\nLook at the doors again.\n\nThat is the way they went.\n",
     "teaser": "Nearly five thousand people waited in there for one man.",
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "audio/boston-waiting-for-mister-rotch/IMlxLW3qgn0MWgfz7Vnh.mp3",
-        "durationS": 92.8,
-        "audioBytes": 1486305
+        "durationS": 84.6,
+        "audioBytes": 1357156
       }
     ],
     "pronunciations": [
@@ -6212,7 +6212,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 84,
+    "durationS": 73,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -6220,14 +6220,14 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The building at the foot of Broad Street is the Exchange. When it was finished, in seventeen seventy-one, it fronted the harbour. Everything between it and the water now is filled land.\n\nThink about what is underneath it.\n\nIn the spring of seventeen eighty a British army laid siege to Charleston. During the siege, after a shell burst close to the powder magazine on Cumberland Street, the defenders moved ten thousand pounds of gunpowder out of it, by night, and carried it down into the vaults of this building. Then they\nbricked it in.\n\nThe city surrendered in May. The British took vast stores of powder when it fell. They\nheld Charleston for more than two years. They used the Exchange as barracks, and the\ncellar became their military prison, the Provost. In one damp, dark room they kept the lowest criminals together with anyone, however respectable, against whom a complaint was brought, men and women alike.\n\nWilliam Moultrie, one of the American commanders, wrote about it afterwards. The Provost,\nhe said, was right next to the powder. The British never found it. When the Americans\ncame back into the town, it was still there.\n\nFor more than two years, the British had been guarding it for them.\n",
+    "script": "Look at the Exchange, the big building at the foot of Broad Street. Then think about what is underneath it.\n\nIn the spring of seventeen eighty, a British army had Charleston under siege. One day a shell burst within ten feet of the town's powder magazine.\n\nThe defenders did not wait for the next one.\n\nThat night, they carried ten thousand pounds of gunpowder out of the magazine and down into the vaults of this building. Then they bricked it in.\n\nIn May, the city fell.\n\nThe British used this building as barracks. And the cellar became their prison. The Provost. One damp, dark room where the lowest criminals were locked up with anyone at all who had been complained about. Men and women together.\n\nIt was the terror of the town.\n\nAnd it was right next to the powder.\n\nThe American commander, William Moultrie, wrote it down afterwards. Although the Provost was next to it, the British never discovered it, and we found it there when we retook the town.\n\nThe British held Charleston for more than two years.\n\nAll that time, they had been guarding it for him.\n",
     "teaser": "Look at the building at the foot of Broad Street. Think about what is under it.",
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "audio/charleston-the-powder-behind-the-wall/IMlxLW3qgn0MWgfz7Vnh.mp3",
-        "durationS": 84.4,
-        "audioBytes": 1351305
+        "durationS": 72.8,
+        "audioBytes": 1166149
       }
     ],
     "pronunciations": [
@@ -28219,7 +28219,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 87,
+    "durationS": 94,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -28227,15 +28227,15 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "This small house on Arch Street is famous for one scene. George Washington and two gentlemen of Congress call on a young widow, an upholsterer named Betsy Ross. They show her a rough sketch of a flag. She suggests changes. She sews the first Stars and Stripes.\n\nHere is what is on record. Betsy Ross was real. Her first husband died in seventeen seventy-six, and she carried on his trade. For about fifty years she was an expert needlewoman and flag-maker. During the war she made state colours for ships and gun batteries. After her, one of her daughters kept the flag business going.\n\nHere is what is not. The visit appears in no record of Congress, no letter, no diary and no newspaper of the time. Washington wrote a great deal, and never mentioned it.\n\nThe story was first told in public in eighteen seventy, ninety-three years after the flag was adopted. Her grandson, William Canby, read it to the Historical Society of Pennsylvania. It was, he said, what the family had heard her say.\n\nFor most people, the evidence is a picture. Washington seated in her parlour, the new flag across her lap.\n\nThat picture was printed in eighteen ninety-three. Prints of it went to people who joined a club raising money to save this house.\n",
+    "script": "Look at this small house on Arch Street, and picture the most famous scene ever set inside it.\n\nGeorge Washington and two gentlemen of Congress call on a young widow, an upholsterer named Betsy Ross. They show her a sketch of a flag. She suggests changes. She sews the first Stars and Stripes.\n\nIt is a lovely story. Here is what is on record.\n\nBetsy Ross was real. Her first husband died in January, seventeen seventy six, and she carried on his trade. For fifty years she was an expert needlewoman and flag maker. During the war she made state colours for ships and gun batteries.\n\nNow here is what is not.\n\nThe visit is in no record of Congress, and in no newspaper of the time. Washington wrote a great many letters and kept detailed diaries. He never mentioned it.\n\nThe story was first told in public in eighteen seventy, ninety three years after the flag was adopted, by her grandson, William Canby. It was, he said, what the family had heard her say.\n\nSo where does the picture in your head come from?\n\nFrom a print. Washington seated in her parlour, Betsy with the flag across her lap. It was made in eighteen ninety three, as a souvenir for people who joined a club raising money to save this house.\n\nThe most famous moment in this house was a thank you gift.\n\nFor helping to save the house.\n",
     "teaser": "Everyone knows the scene in this house. Nobody wrote it down for ninety-three years.",
     "certaintyNote": "Betsy Ross's work as an upholsterer and flag-maker is on record. The visit from Washington, Robert Morris and George Ross, and her part in the first Stars and Stripes, rest on family tradition first made public by her grandson William Canby in 1870; no record of Congress, letter, diary or newspaper of 1776 or 1777 mentions it, as Franklin Hanford set out in 1917. The script says so plainly.",
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "audio/philadelphia-what-her-grandson-said/IMlxLW3qgn0MWgfz7Vnh.mp3",
-        "durationS": 86.6,
-        "audioBytes": 1385995
+        "durationS": 93.9,
+        "audioBytes": 1502606
       }
     ],
     "pronunciations": [
@@ -33717,7 +33717,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 93,
+    "durationS": 94,
     "minAge": 0,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -33725,14 +33725,14 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "The grand house on the west side of Telfair Square is the Telfair Academy, designed by the English architect William Jay about two centuries ago. Mary Telfair left it in her will to become an academy of arts and sciences.\n\nBut the academy's own account of this ground goes back further. This, it says, was the site of Government House, home of Georgia's royal governor.\n\nIn January seventeen seventy-six, British warships were lying off Tybee. On the eighteenth, Savannah's Council of Safety voted to arrest the governor, Sir James Wright.\n\nA major named Joseph Habersham, twenty-four years old, volunteered. That evening the governor was meeting his council in his house. Habersham walked past the sentries at the door, alone. He went into the room, up to the head of the table, laid his hand on the governor's shoulder, and said, Sir James, you are my prisoner.\n\nAccording to the city's history of eighteen sixty-nine, the councillors assumed he had a large force close behind him. They fled through the doors and the windows.\n\nHe did not have a large force.\n\nWright gave his word that he would not leave town, and was kept in his own house under guard.\n\nHe kept his word for twenty-four days. Then he slipped past the sentries, ran to Bonaventure, and was rowed out to a British ship.\n",
+    "script": "Look at the grand house on the west side of Telfair Square.\n\nBefore it was built, this ground held another house. Government House, home of Georgia's royal governor. And one evening in January, seventeen seventy six, a young man walked into it alone, to arrest him.\n\nBritish warships had arrived off the coast. On the eighteenth, Savannah's Council of Safety voted to take the governor, Sir James Wright.\n\nA major named Joseph Habersham volunteered. He was twenty four.\n\nThat evening the governor was meeting his council, here, in his house. Habersham passed the sentries at the door. He walked up to the head of the table, laid his hand on the governor's shoulder, and said,\n\nSir James, you are my prisoner.\n\nHe spoke so firmly that the councillors supposed he had a large force nearby. They fled. Through the doors, and through the windows.\n\nHe had come alone.\n\nThe governor gave his word that he would not leave town, and was kept under guard in his own house. He kept his word for twenty four days. Then he slipped past the sentries and was rowed out in a small boat to a British ship.\n\nThe governor's house is gone. This one stands on its ground.\n\nSomewhere here, the King's council went out of the windows, because one young man walked in as if he were not alone.\n",
     "teaser": "He walked in alone, put a hand on the governor's shoulder, and the room emptied.",
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "audio/savannah-you-are-my-prisoner/IMlxLW3qgn0MWgfz7Vnh.mp3",
-        "durationS": 93,
-        "audioBytes": 1489231
+        "durationS": 93.6,
+        "audioBytes": 1498426
       }
     ],
     "pronunciations": [
