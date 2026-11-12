@@ -9,5 +9,5 @@ export default defineConfig({
       "@echofinders/core": fileURLToPath(new URL("../../packages/core/src/index.ts", import.meta.url)),
     },
   },
-  test: { include: ["test/api/**/*.test.ts", "test/app/**/*.test.ts"], root: fileURLToPath(new URL("../..", import.meta.url)) },
+  test: { include: ["test/api/**/*.test.ts", "test/app/**/*.test.ts", "test/ios/**/*.test.ts"], root: fileURLToPath(new URL("../..", import.meta.url)) },
 });
