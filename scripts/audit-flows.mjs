@@ -108,12 +108,14 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await kinds.click();
   await p.waitForTimeout(400);
   const sheet = p.locator('#kind-box');
-  // All, and nine kinds: Inspo joined the row on 2026-11-06 (`categories.tsx`, CHIP_GROUPS).
-  check('Kinds: tapping it shows all of them at once, just below', (await sheet.locator('.chip').count()) === 10);
+  // All, and fourteen kinds: Inspo joined on 2026-11-06, and Unsolved, Music, Disasters,
+  // Firsts and Hidden on 2026-11-12 (`categories.tsx`, CHIP_GROUPS).
+  check('Kinds: tapping it shows all of them at once, just below', (await sheet.locator('.chip').count()) === 15);
   await sheet.getByRole('button', { name: 'Ghosts' }).click();
   await p.waitForTimeout(300);
   check('Kinds: picking keeps it open, to pick more', await visible(sheet));
-  await p.mouse.click(195, 400);
+  // Below the panel, which reaches about 440px now that it holds fourteen kinds; just under it, clear of the pins.
+  await p.mouse.click(195, 470);
   await p.waitForTimeout(300);
   check('Kinds: a tap on the map closes it', !(await visible(sheet)));
   check('Kinds: the button says what is picked', /Ghosts/.test(await kinds.innerText()));
@@ -1119,8 +1121,8 @@ async function arrive() {
       !(await p.getByRole('button', { name: /^Filter my echoes/ }).count()) && !(await p.getByRole('button', { name: /^Show \d+ echoes?$/ }).count()));
     await kindPill.click();
     await p.waitForTimeout(400);
-    // All, and nine kinds, Inspo included (`categories.tsx`, CHIP_GROUPS): the map's own box.
-    check("Filter: the map's own kind box, every kind at once", (await p.locator('#kind-box .chip').count()) === 10);
+    // All, and fourteen kinds (`categories.tsx`, CHIP_GROUPS): the map's own box.
+    check("Filter: the map's own kind box, every kind at once", (await p.locator('#kind-box .chip').count()) === 15);
     const caseOf = await p.locator('#kind-box').evaluate((box) => ({
       all: box.querySelector('.chip-all').innerText.trim(),
       transform: getComputedStyle(box.querySelector('.chip-all')).textTransform,
