@@ -20,7 +20,8 @@ export const CATEGORY_LABEL: Record<EchoCategory, string> = {
   // "Culture" said nothing: it is the word you reach for when you have not decided what
   // the category is. This one is music, art and performance, so it says that. The design's
   // note stays with it.
-  arts: "Arts & music",
+  // Music has its own chip since 2026-11-12, so this is painting, theatre, film and writing.
+  arts: "Arts",
   kids: "Kids",
   // "Ghosts", after all. I argued for Folklore on the grounds that the category holds more
   // than ghost stories, which is true and beside the point: a ghost tour is a thing people
@@ -34,6 +35,11 @@ export const CATEGORY_LABEL: Record<EchoCategory, string> = {
   land: "Landmarks",
   // James's word (2026-11-06), short enough for a chip: where something people know began.
   inspo: "Inspo",
+  unsolved: "Unsolved",
+  disasters: "Disasters",
+  music: "Music",
+  firsts: "Firsts",
+  hidden: "Hidden",
 };
 
 /**
@@ -61,9 +67,16 @@ export const CHIP_GROUPS: readonly ChipGroup[] = [
   { id: "history", label: "History", face: "history", categories: ["history"] },
   { id: "true-crime", label: "True crime", face: "true-crime", categories: ["true-crime"] },
   { id: "ghosts", label: "Ghosts", face: "legend", categories: ["legend"] },
+  // Fourth, in the part of the row seen without scrolling: the strongest pull of the five
+  // new ones for the history and ghosts crowd (James approved, 2026-11-12).
+  { id: "unsolved", label: "Unsolved", face: "unsolved", categories: ["unsolved"] },
   { id: "kids", label: "Kids", face: "kids", categories: ["kids"] },
   { id: "inspo", label: "Inspo", face: "inspo", categories: ["inspo"] },
-  { id: "arts", label: "Arts & music", face: "arts", categories: ["arts"] },
+  { id: "music", label: "Music", face: "music", categories: ["music"] },
+  { id: "arts", label: "Arts", face: "arts", categories: ["arts"] },
+  { id: "disasters", label: "Disasters", face: "disasters", categories: ["disasters"] },
+  { id: "firsts", label: "Firsts", face: "firsts", categories: ["firsts"] },
+  { id: "hidden", label: "Hidden", face: "hidden", categories: ["hidden"] },
   { id: "people", label: "People", face: "people", categories: ["people"] },
   { id: "food", label: "Food & drink", face: "food-drink", categories: ["food-drink"] },
   { id: "landmarks", label: "Landmarks", face: "built", categories: ["built", "land"] },
@@ -88,6 +101,11 @@ export const CATEGORY_ORDER: readonly EchoCategory[] = [
   "food-drink",
   "built",
   "land",
+  "unsolved",
+  "music",
+  "disasters",
+  "firsts",
+  "hidden",
 ];
 
 /**
@@ -114,11 +132,41 @@ export const CATEGORY_ICON: Record<EchoCategory, ReactNode> = {
     </>
   ),
   // The design's `culture` note, on the category that actually means music and art.
+  /*
+   * A palette. The note this had went to Music when Music got its own chip (2026-11-12);
+   * Arts is painting, theatre, film and writing, and a palette reads as all of them.
+   */
   arts: (
+    <>
+      <path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-.9 2-1.9 0-1.2-1-1.6-1-2.6 0-1 .8-1.5 1.8-1.5H17a4 4 0 0 0 4-4c0-4.4-4-8-9-8z" />
+      <path d="M7.5 11h.01M10 7h.01M15 7.5h.01" />
+    </>
+  ),
+  // The five of 2026-11-12, drawn as on the approved canvas "New Categories".
+  music: (
     <>
       <path d="M9 18V6l10-2v12" />
       <circle cx="6.5" cy="18" r="2.5" />
       <circle cx="16.5" cy="16" r="2.5" />
+    </>
+  ),
+  unsolved: (
+    <>
+      <path d="M9 9a3 3 0 1 1 4.2 2.75c-.75.35-1.2 1.1-1.2 1.95V15" />
+      <path d="M12 19h.01" />
+    </>
+  ),
+  disasters: (
+    <>
+      <path d="M12 3c.5 3 4.5 5 4.5 10a4.5 4.5 0 0 1-9 0c0-2.5 1.5-3.5 2-6 1.5 1 2 2.5 2 3.5 1-1.5 1-4 .5-7.5z" />
+      <path d="M4 21h16" />
+    </>
+  ),
+  firsts: <path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4l-5.3 3 1.2-6-4.5-4.1 6-.7z" />,
+  hidden: (
+    <>
+      <circle cx="12" cy="9" r="3.5" />
+      <path d="M10.6 12.2L9 20h6l-1.6-7.8" />
     </>
   ),
   legend: (

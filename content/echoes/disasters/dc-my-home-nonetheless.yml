@@ -1,0 +1,177 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on the east side of 7th Street SE in front of the Eastern Market hall, between C Street and North Carolina Avenue.
+# Position: Overture place 'Eastern Market' (225 7th St SE) at 38.88658, -76.99656; set west onto the 7th Street sidewalk in front of the hall (medium confidence).
+id: dc-my-home-nonetheless
+title: "My Home, Nonetheless"
+summary: "Eastern Market had not shut its doors since 1873. Then one night in 2007 a neighbour watched it burn."
+place: "Eastern Market, 225 7th Street SE, Capitol Hill, Washington, D.C."
+at: { lat: 38.88660, lng: -76.99672 }
+triggerRadiusKm: 0.04
+category: disasters
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, capitol-hill, eastern-market, food, fire]
+teaser: "Last night I watched my house burn. Not the house where I live."
+script: |
+  Look at the long brick market hall, with its tall arched windows and the round ones high up. From the day it opened, in eighteen seventy three, it never shut its doors. Not once.
+
+  Until a Monday morning in the spring of two thousand seven. A fire started in a trash bin behind the building. It took a hundred and sixty firefighters two hours to put it out. The southern half of the hall was destroyed.
+
+  Bonny Wolf lived one block away. She stood out in the dark with her neighbours, and watched the flames come through the roof. Then she wrote this. Last night I watched my house burn. Not the house where I live, but my home, nonetheless.
+
+  Her son had grown up working for the farmers who came to the market on weekends. He rang her from New York, his voice shaking. People at work think it's so strange that I care about this, he said. But Mom, I grew up at the market.
+
+  It was the last of this city's old public markets still working. Two years later, it opened again, and hundreds cheered when the mayor cut the ribbon. Bonny went back. At one counter she asked what she owed, and the man told her it was fine. We'll rip you off the next time you're in here.
+
+  There was going to be a next time.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the long brick market hall, with its tall arched windows and the round ones high up."
+    source: 1
+    quote: "The magnificent Italianate brick building with its soaring ceilings, cast iron trusses and bulls eye windows"
+  - says: "From the day it opened, in eighteen seventy three, it never shut its doors."
+    source: 1
+    quote: "has not shut its doors since 1873. Until today."
+  - says: "Until a Monday morning in the spring of two thousand seven."
+    source: 2
+    quote: "Fire ravaged the Eastern Market early Monday"
+  - says: "Until a Monday morning in the spring of two thousand seven."
+    source: 3
+    quote: "Washington D.C.'s Eastern Market is open again, two years after its historic building was gutted by fire."
+  - says: "A fire started in a trash bin behind the building."
+    source: 2
+    quote: "Rubin said the fire appeared to have started in a trash bin behind the building."
+  - says: "It took a hundred and sixty firefighters two hours to put it out."
+    source: 2
+    quote: "It took 160 firefighters two hours to put out the blaze."
+  - says: "The southern half of the hall was destroyed."
+    source: 2
+    quote: "the blaze destroyed the southern half of the city-owned building, which was empty at the time."
+  - says: "Bonny Wolf lived one block away."
+    source: 1
+    quote: "Commentator Bonny Wolf lives just one block from Washington D.C.'s Eastern Market"
+  - says: "She stood out in the dark with her neighbours, and watched the flames come through the roof."
+    source: 1
+    quote: "I stood outside in the chilly dark with countless neighbors and saw flames leap through the roof of Washington, D.C.'s Eastern Market."
+  - says: "Last night I watched my house burn."
+    source: 1
+    quote: "Last night I watched my house burn."
+  - says: "Not the house where I live, but my home, nonetheless."
+    source: 1
+    quote: "Not the house where I live, but my home nonetheless."
+  - says: "Her son had grown up working for the farmers who came to the market on weekends."
+    source: 1
+    quote: "By the time my son was 10, he ... like most neighborhood children, worked for the farmers who come to the market on weekends."
+  - says: "He rang her from New York, his voice shaking."
+    source: 1
+    quote: "I got a call from my grown son in New York. His voice was shaky."
+  - says: "People at work think it's so strange that I care about this, he said. But Mom, I grew up at the market."
+    source: 1
+    quote: "People at work think it's so strange that I care about this. But Mom, I grew up at the market."
+  - says: "It was the last of this city's old public markets still working."
+    source: 3
+    quote: "It was built in 1873 as part of a citywide public food market system and is the last one still in operation."
+  - says: "Two years later, it opened again, and hundreds cheered when the mayor cut the ribbon."
+    source: 3
+    quote: "it's the Eastern Market that made hundreds cheer when Mayor Adrian Fenty cut the ribbon to reopen the building."
+  - says: "At one counter she asked what she owed, and the man told her it was fine."
+    source: 3
+    quote: "WOLF: How much can I give you? Unidentified Man #3: That's okay."
+  - says: "We'll rip you off the next time you're in here."
+    source: 3
+    quote: "We'll rip you off the next time you're in here."
+sources:
+  - title: "A Favorite D.C. Food Landmark Suffers in Fire (Bonny Wolf)"
+    publisher: "NPR"
+    url: https://www.npr.org/2007/04/30/9928057/a-favorite-d-c-food-landmark-suffers-in-fire
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Historic D.C. Market Ravaged By Fire"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/historic-dc-market-ravaged-by-fire/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "D.C.'s Historic Eastern Market Reopens After Fire"
+    publisher: "NPR, Weekend Edition"
+    url: https://www.npr.org/2009/07/12/106521614/d-c-s-historic-eastern-market-reopens-after-fire
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-my-home-nonetheless/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85
+    audioBytes: 1360918
+    transcript:
+      totalS: 85
+      lines:
+        - text: Look at the long brick market hall, with its tall arched windows and the round ones high up.
+          atS: 0
+          durationS: 5.43
+        - text: From the day it opened, in eighteen seventy three, it never shut its doors.
+          atS: 5.88
+          durationS: 4.77
+        - text: Not once.
+          atS: 11.09
+          durationS: 0.81
+        - text: Until a Monday morning in the spring of two thousand seven.
+          atS: 12.41
+          durationS: 3.48
+        - text: A fire started in a trash bin behind the building.
+          atS: 16.85
+          durationS: 3.01
+        - text: It took a hundred and sixty firefighters two hours to put it out.
+          atS: 20.46
+          durationS: 3.83
+        - text: The southern half of the hall was destroyed.
+          atS: 24.89
+          durationS: 2.53
+        - text: Bonny Wolf lived one block away.
+          atS: 28.54
+          durationS: 2.3
+        - text: She stood out in the dark with her neighbours, and watched the flames come through the roof.
+          atS: 31.65
+          durationS: 4.5
+        - text: Then she wrote this.
+          atS: 36.76
+          durationS: 1.28
+        - text: Last night I watched my house burn.
+          atS: 38.64
+          durationS: 2.5
+        - text: Not the house where I live, but my home, nonetheless.
+          atS: 41.65
+          durationS: 4.09
+        - text: Her son had grown up working for the farmers who came to the market on weekends.
+          atS: 47.03
+          durationS: 4.28
+        - text: He rang her from New York, his voice shaking.
+          atS: 51.92
+          durationS: 3.24
+        - text: People at work think it's so strange that I care about this, he said.
+          atS: 55.67
+          durationS: 4
+        - text: But Mom, I grew up at the market.
+          atS: 59.83
+          durationS: 2.67
+        - text: It was the last of this city's old public markets still working.
+          atS: 63.1
+          durationS: 3.73
+        - text: Two years later, it opened again, and hundreds cheered when the mayor cut the ribbon.
+          atS: 67.43
+          durationS: 4.72
+        - text: Bonny went back.
+          atS: 72.6
+          durationS: 1.17
+        - text: At one counter she asked what she owed, and the man told her it was fine.
+          atS: 74.37
+          durationS: 4.84
+        - text: We'll rip you off the next time you're in here.
+          atS: 79.91
+          durationS: 2.48
+        - text: There was going to be a next time.
+          atS: 83
+          durationS: 1.98

@@ -139,7 +139,10 @@ for (const { echo, file } of echoes) {
  */
 const voicesFile = parseYaml(await readFile(join(ROOT, "content", "voices.yml"), "utf8"));
 for (const { echo, file } of echoes) {
-  const want = voicesFile.casting?.[echo.category] ?? voicesFile.defaultVoiceId;
+  // Unsolved holds documented mysteries and treasure legends alike (2026-11-12). A legend
+  // keeps the legend voice wherever it is filed; a documented mystery takes the default.
+  const castAs = echo.category === "unsolved" && echo.certainty === "legend" ? "legend" : echo.category;
+  const want = voicesFile.casting?.[castAs] ?? voicesFile.defaultVoiceId;
   const have = echo.voice ?? voicesFile.defaultVoiceId;
   if (have !== want) {
     const name = (id) => voicesFile.voices.find((v) => v.id === id)?.role ?? id;

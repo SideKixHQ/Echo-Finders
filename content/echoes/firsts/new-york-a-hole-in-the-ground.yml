@@ -1,0 +1,158 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, City Hall cluster (more NYC batch).
+# Listening spot: Broadway at Warren Street, on the west side of City Hall Park, above the line of Alfred Ely Beach's one block pneumatic tunnel of 1870, which ran under Broadway from Warren to Murray Street.
+# Position: Broadway between Warren and Murray Streets, from the street plan (medium confidence).
+id: new-york-a-hole-in-the-ground
+title: "A Hole in the Ground"
+summary: "In 1870 a car blown by air ran one block under Broadway here. It was New York's first subway ride, and the city said no."
+place: "Broadway between Warren and Murray Streets, opposite City Hall Park, Manhattan"
+at: { lat: 40.71400, lng: -74.00790 }
+triggerRadiusKm: 0.06
+category: firsts
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [new-york, city-hall, broadway, subway, pneumatic, invention]
+teaser: "The first subway car in New York was pushed by wind. It went one block."
+script: |
+  Look down at the pavement of Broadway, between Warren Street and Murray Street. One block. Under your feet, in eighteen seventy, somebody dug a tunnel.
+
+  And a railroad car rode through it, pushed by air.
+
+  London had opened an underground railway seventeen years before. New York had nothing. So a promoter named Alfred Ely Beach built a short tunnel under Broadway, from Warren to Murray, and sent a car through it on a trial run, driven by a great rush of air.
+
+  It worked. Beach asked the city to let him build a line all the way from lower Broadway to the Bronx.
+
+  The public was on his side. They signed petitions. They even marched in a parade by torchlight to show their support.
+
+  But the men who owned the buildings along Broadway did not. And they won. The plan failed.
+
+  Thirty years later, when the city finally announced a real subway, a man named Russell Sage gave his opinion. New York people, he said, will never go into a hole in the ground to ride. Preposterous.
+
+  The first line opened in nineteen oh four.
+
+  Look down at the street again.
+
+  Under it, every day, New York people go into a hole in the ground to ride.
+
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "London had opened an underground railway seventeen years before."
+    source: 1
+    quote: "London witnessed the operation of an underground railway in 1853. Seventeen years later, in New York, a pneumatic-driven railroad car made a trial run in a one-block tunnel extending under Broadway from Warren to Murray Street."
+  - says: "So a promoter named Alfred Ely Beach built a short tunnel under Broadway, from Warren to Murray, and sent a car through it on a trial run, driven by a great rush of air."
+    source: 1
+    quote: "a pneumatic-driven railroad car made a trial run in a one-block tunnel extending under Broadway from Warren to Murray Street. With this demonstration as proof of the practicability of subways, E. A. Beach, the promoter"
+  - says: "Beach asked the city to let him build a line all the way from lower Broadway to the Bronx."
+    source: 1
+    quote: "E. A. Beach, the promoter, sought permission from the city to construct a line from lower Broadway to the Bronx."
+  - says: "They signed petitions. They even marched in a parade by torchlight to show their support."
+    source: 1
+    quote: "While the citizens were solidly behind the plan, petitioning public officials and even marching in a torchlight parade to emphasize their support"
+  - says: "But the men who owned the buildings along Broadway did not."
+    source: 1
+    quote: "Beach had to contend with the skepticism of Broadway property owners, and the venture failed."
+  - says: "The plan failed."
+    source: 1
+    quote: "and the venture failed."
+  - says: "Thirty years later, when the city finally announced a real subway, a man named Russell Sage gave his opinion."
+    source: 1
+    quote: "When plans for the first IRT line (from City Hall to West 145th Street) were announced in 1900, Russell Sage remarked"
+  - says: "New York people, he said, will never go into a hole in the ground to ride. Preposterous."
+    source: 1
+    quote: "\"New York people will never go into a hole in the ground to ride . . . Preposterous!\""
+  - says: "The first line opened in nineteen oh four."
+    source: 1
+    quote: "In 1904 the first line was opened"
+  - says: "One block."
+    source: 1
+    quote: "a pneumatic-driven railroad car made a trial run in a one-block tunnel extending under Broadway from Warren to Murray Street."
+  - says: "Under your feet, in eighteen seventy, somebody dug a tunnel."
+    source: 1
+    quote: "London witnessed the operation of an underground railway in 1853. Seventeen years later, in New York, a pneumatic-driven railroad car made a trial run in a one-block tunnel extending under Broadway from Warren to Murray Street."
+  - says: "New York had nothing."
+    source: 1
+    quote: "London witnessed the operation of an underground railway in 1853. Seventeen years later, in New York, a pneumatic-driven railroad car made a trial run in a one-block tunnel"
+  - says: "Under it, every day, New York people go into a hole in the ground to ride."
+    source: 1
+    quote: "About 5,500,000 passengers are carried daily by the three subway"
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Subways"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-a-hole-in-the-ground/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 79.5
+    audioBytes: 1273146
+    transcript:
+      totalS: 79.5
+      lines:
+        - text: Look down at the pavement of Broadway, between Warren Street and Murray Street.
+          atS: 0
+          durationS: 4.42
+        - text: One block.
+          atS: 4.81
+          durationS: 0.81
+        - text: Under your feet, in eighteen seventy, somebody dug a tunnel.
+          atS: 6.13
+          durationS: 3.68
+        - text: And a railroad car rode through it, pushed by air.
+          atS: 10.09
+          durationS: 3.4
+        - text: London had opened an underground railway seventeen years before.
+          atS: 14.3
+          durationS: 3.84
+        - text: New York had nothing.
+          atS: 19.26
+          durationS: 1.35
+        - text: So a promoter named Alfred Ely Beach built a short tunnel under Broadway, from Warren to Murray, and sent a car through it on a trial run, driven by a great rush of air.
+          atS: 20.78
+          durationS: 10.9
+        - text: It worked.
+          atS: 32.5
+          durationS: 0.86
+        - text: Beach asked the city to let him build a line all the way from lower Broadway to the Bronx.
+          atS: 33.68
+          durationS: 4.92
+        - text: The public was on his side.
+          atS: 39.21
+          durationS: 1.73
+        - text: They signed petitions.
+          atS: 41.18
+          durationS: 1.5
+        - text: They even marched in a parade by torchlight to show their support.
+          atS: 42.92
+          durationS: 3.42
+        - text: But the men who owned the buildings along Broadway did not.
+          atS: 46.79
+          durationS: 3.24
+        - text: And they won.
+          atS: 50.54
+          durationS: 0.98
+        - text: The plan failed.
+          atS: 51.9
+          durationS: 1.42
+        - text: Thirty years later, when the city finally announced a real subway, a man named Russell Sage gave his opinion.
+          atS: 53.83
+          durationS: 7.2
+        - text: New York people, he said, will never go into a hole in the ground to ride.
+          atS: 61.63
+          durationS: 4.64
+        - text: Preposterous.
+          atS: 66.71
+          durationS: 1.18
+        - text: The first line opened in nineteen oh four.
+          atS: 68.22
+          durationS: 2.93
+        - text: Look down at the street again.
+          atS: 71.59
+          durationS: 1.64
+        - text: Under it, every day, New York people go into a hole in the ground to ride.
+          atS: 73.55
+          durationS: 5.96

@@ -1,0 +1,93 @@
+# Wrightsville Beach (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture address point, 2 Waynick Boulevard (Wynn Plaza Waterfront Park); viewpoint only, Money Island itself is about 2.4 km west (Wikidata coordinates 34.2022, -77.8225) (high for the park)
+id: wrightsville-the-treasure-beyond-the-channel
+title: "The Treasure Beyond the Channel"
+summary: "Legend says Captain Kidd buried two chests of gold and silver on Money Island in 1699. None has been found."
+place: "Wynn Plaza Waterfront Park, 2 Waynick Boulevard, Wrightsville Beach, North Carolina"
+at: { lat: 34.20832, lng: -77.79659 }
+triggerRadiusKm: 0.08
+category: unsolved
+format: look-below
+durationS: 38
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published local legend. No record or find confirms that Captain Kidd buried anything on Money Island; the script says so out loud.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [wrightsville-beach, pirates, legend, waterfront]
+teaser: "Two iron chests, a famous pirate, and an island named for what nobody found."
+script: |
+  Look out across the channel, toward the marsh and the mainland. Beyond what you can see from
+  this park is a small island with a big name: Money Island.
+
+  What follows is a legend, and it has never been proven. The story says that in 1699, Captain
+  William Kidd stood supervising while workmen buried two iron chests full of gold and silver on the
+  island.
+
+  Locals have spent hundreds of years searching for those chests. None have ever been found.
+
+  So the island kept its name, and nothing else. It works like a treasure map made of a single word, passed from
+  neighbor to neighbor, promising more than anyone ever dug up.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Beyond what you can see from this park is a small island with a big name: Money Island."
+    source: 2
+    quote: "the legend of a supposed treasure island right off Wrightsville Beach, aptly dubbed Money Island."
+  - says: "The story says that in 1699, Captain William Kidd stood supervising while workmen buried two iron chests full of gold and silver on the island."
+    source: 1
+    quote: "The legend has him supervising while workmen buried two iron chests full of gold and silver."
+  - says: "The story says that in 1699, Captain William Kidd stood supervising"
+    source: 1
+    quote: "it's rumored Captain William Kidd buried treasure on appropriately-named Money Island off Wrightsville Beach in 1699."
+  - says: "Locals have spent hundreds of years searching for those chests."
+    source: 1
+    quote: "While locals have spent hundreds of years searching for the buried treasure chests, none have ever been found."
+  - says: "None have ever been found."
+    source: 1
+    quote: "While locals have spent hundreds of years searching for the buried treasure chests, none have ever been found."
+sources:
+  - title: "History with 'Hud': Remembering famous pirates who once ruled the Cape Fear coast"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/history-with-hud-remembering-famous-pirates-who-once-ruled-the-cape-fear-coast/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "The Lost Treasure of Money Island"
+    publisher: "Cape Fear Unearthed (StarNews Media)"
+    url: https://omny.fm/shows/cape-fear-unearthed/the-lost-treasure-of-money-island
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/wrightsville-the-treasure-beyond-the-channel/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 38.4
+    audioBytes: 614861
+    transcript:
+      totalS: 38.4
+      lines:
+        - text: Look out across the channel, toward the marsh and the mainland.
+          atS: 0
+          durationS: 3.27
+        - text: "Beyond what you can see from this park is a small island with a big name: Money Island."
+          atS: 3.42
+          durationS: 5.38
+        - text: What follows is a legend, and it has never been proven.
+          atS: 9.08
+          durationS: 3.7
+        - text: The story says that in 1699, Captain William Kidd stood supervising while workmen buried two iron chests full of gold and silver on the island.
+          atS: 13.22
+          durationS: 9.43
+        - text: Locals have spent hundreds of years searching for those chests.
+          atS: 23.09
+          durationS: 3.45
+        - text: None have ever been found.
+          atS: 26.71
+          durationS: 1.45
+        - text: So the island kept its name, and nothing else.
+          atS: 28.49
+          durationS: 2.78
+        - text: It works like a treasure map made of a single word, passed from neighbor to neighbor, promising more than anyone ever dug up.
+          atS: 31.59
+          durationS: 6.77

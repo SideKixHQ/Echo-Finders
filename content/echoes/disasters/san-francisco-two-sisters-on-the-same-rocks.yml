@@ -1,0 +1,153 @@
+# Drafted by Claude Code (2026-11-09) for San Francisco, California.
+# Listening spot: The Lands End Trail near the top of the stairs down to Mile Rock Beach, looking down at the rocks and surf.
+# Position: Wikidata Q6484999 (Lands End, 37.787707, -122.505528); the wrecks lie off the Lands End point by Mile Rock Beach, which the trail overlooks (medium-low confidence; check the stair head on a map).
+id: san-francisco-two-sisters-on-the-same-rocks
+title: "Two Sisters on the Same Rocks"
+summary: "Two sister tankers were wrecked in fog at Lands End fifteen years apart. Their engines still show at low tide, side by side."
+place: "Lands End, above Mile Rock Beach, Lands End Trail, San Francisco, California"
+at: { lat: 37.7878, lng: -122.5055 }
+triggerRadiusKm: 0.12
+category: disasters
+format: short
+durationS: 75
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [san-francisco, lands-end, shipwreck, fog, golden-gate]
+teaser: "Two identical tankers, fifteen years apart, ended up in the same spot."
+script: |
+  Look down at the rocks below Lands End. At low tide, if you know where to look, there are engines sitting in the surf.
+
+  They came from two oil tankers. Sisters, built identical.
+
+  In October 1922, the Lyman A. Stewart left San Francisco Bay in thickening fog. A freighter was headed in through the Golden Gate. Horns and whistles were muffled in the fog, and neither ship saw the other until it was too late.
+
+  Her captain ordered the crew to abandon ship, and stayed aboard to steer her to shore. She ripped her hull open on the jagged rocks of Lands End.
+
+  Fifteen years later, her sister met a similar fate in the same spot. In March 1937, the Frank H. Buck was on her way through the Golden Gate in fog, and crashed head-on into a passenger liner.
+
+  The liner merely suffered a crushed bow. The tanker came to rest off Lands End, right next to her sister.
+
+  In 1938 both wrecks were dynamited to clean up the harbor approach. What the dynamite left is still down there.
+
+  Same design, same fog, same rocks.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "At low tide, if you know where to look, there are engines sitting in the surf."
+    source: 1
+    quote: "The engine block of Lyman A. Stewart and the engine and sternpost of Frank H. Buck can still be seen today at low tide"
+  - says: "They came from two oil tankers."
+    source: 1
+    quote: "the steel-hulled oil tanker, Frank H. Buck"
+  - says: "Sisters, built identical."
+    source: 1
+    quote: "Though identical to its sister ship, the steel-hulled oil tanker, Frank H. Buck"
+  - says: "In October 1922, the Lyman A. Stewart left San Francisco Bay in thickening fog."
+    source: 1
+    quote: "Lyman A. Stewart left San Francisco Bay on a routine trip to Seattle with a cargo of oil. As she left the harbor in thickening fog"
+  - says: "In October 1922"
+    source: 1
+    quote: "until 7 October 1922"
+  - says: "A freighter was headed in through the Golden Gate."
+    source: 1
+    quote: "the freighter Walter A. Luckenbach was headed in through the Golden Gate."
+  - says: "Horns and whistles were muffled in the fog, and neither ship saw the other until it was too late."
+    source: 1
+    quote: "Horns and whistles were muffled in the thick fog and neither vessel saw the other until it was too late."
+  - says: "Her captain ordered the crew to abandon ship, and stayed aboard to steer her to shore."
+    source: 1
+    quote: "Captain Cloyd ordered his crew to abandon ship while he stayed on the tanker to steer her to shore."
+  - says: "She ripped her hull open on the jagged rocks of Lands End."
+    source: 1
+    quote: "The vessel ripped her hull on the jagged rocks of Lands End"
+  - says: "Fifteen years later, her sister met a similar fate in the same spot."
+    source: 1
+    quote: "Fifteen years later, Lyman A. Stewart’s sister ship Frank H. Buck would meet a similar fate in the same spot."
+  - says: "In March 1937, the Frank H. Buck was on her way through the Golden Gate in fog, and crashed head-on into a passenger liner."
+    source: 1
+    quote: "On March 6, 1937 the Frank H. Buck was on her way through the Golden Gate"
+  - says: "crashed head-on into a passenger liner"
+    source: 1
+    quote: "it crashed head-on into the luxury passenger liner, President Coolidge. Fog at the Gate had prevented the ships from seeing each other"
+  - says: "The liner merely suffered a crushed bow."
+    source: 1
+    quote: "It merely suffered a crushed bow."
+  - says: "The tanker came to rest off Lands End, right next to her sister."
+    source: 1
+    quote: "The remains of the Frank H. Buck came to rest in the sand and rocks off Lands End, next to its sister ship, the Lyman Stewart"
+  - says: "In 1938 both wrecks were dynamited to clean up the harbor approach."
+    source: 1
+    quote: "In 1938 the ship’s remains were dynamited as part of a general effort to clean up some of the many shipwreck hulks that littered the harbor approach."
+  - says: "What the dynamite left is still down there."
+    source: 1
+    quote: "can still be seen today at low tide"
+sources:
+  - title: "Vestiges of Shipwrecks, Golden Gate National Recreation Area"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/goga/learn/historyculture/vestiges-shipwrecks.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-two-sisters-on-the-same-rocks/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75
+    audioBytes: 1200421
+    transcript:
+      totalS: 75
+      lines:
+        - text: Look down at the rocks below Lands End.
+          atS: 0
+          durationS: 2.33
+        - text: At low tide, if you know where to look, there are engines sitting in the surf.
+          atS: 2.66
+          durationS: 4.64
+        - text: They came from two oil tankers.
+          atS: 7.63
+          durationS: 2.32
+        - text: Sisters, built identical.
+          atS: 10.39
+          durationS: 2.13
+        - text: In October 1922, the Lyman A.
+          atS: 13.63
+          durationS: 3.1
+        - text: Stewart left San Francisco Bay in thickening fog.
+          atS: 16.79
+          durationS: 3.55
+        - text: A freighter was headed in through the Golden Gate.
+          atS: 20.85
+          durationS: 2.7
+        - text: Horns and whistles were muffled in the fog, and neither ship saw the other until it was too late.
+          atS: 24.25
+          durationS: 5.89
+        - text: Her captain ordered the crew to abandon ship, and stayed aboard to steer her to shore.
+          atS: 30.95
+          durationS: 5.49
+        - text: She ripped her hull open on the jagged rocks of Lands End.
+          atS: 37.14
+          durationS: 3.41
+        - text: Fifteen years later, her sister met a similar fate in the same spot.
+          atS: 41.51
+          durationS: 4.54
+        - text: In March 1937, the Frank H.
+          atS: 47
+          durationS: 2.61
+        - text: Buck was on her way through the Golden Gate in fog, and crashed head-on into a passenger liner.
+          atS: 49.63
+          durationS: 5.64
+        - text: The liner merely suffered a crushed bow.
+          atS: 55.72
+          durationS: 2.36
+        - text: The tanker came to rest off Lands End, right next to her sister.
+          atS: 58.59
+          durationS: 4.24
+        - text: In 1938 both wrecks were dynamited to clean up the harbor approach.
+          atS: 63.33
+          durationS: 4.9
+        - text: What the dynamite left is still down there.
+          atS: 68.62
+          durationS: 2.54
+        - text: Same design, same fog, same rocks.
+          atS: 71.6
+          durationS: 3.36

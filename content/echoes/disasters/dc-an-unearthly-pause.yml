@@ -1,0 +1,150 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Adams Morgan), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Public sidewalk at the southwest corner of 18th Street and Columbia Road NW, the site of the Knickerbocker Theater.
+# Position: the southwest corner of 18th Street and Columbia Road NW, placed from Overture's 1800 block of Columbia Road (1805 Columbia Rd NW at 38.92261, -77.04322) and the line of 18th Street (medium confidence).
+id: dc-an-unearthly-pause
+title: "An Unearthly Pause"
+summary: "On 28 January 1922, the weight of a record snowfall brought down the roof of the Knickerbocker Theater. Nearly a hundred people died."
+place: "Site of the Knickerbocker Theater, 18th Street and Columbia Road NW, Adams Morgan, Washington, D.C."
+at: { lat: 38.92210, lng: -77.04255 }
+triggerRadiusKm: 0.04
+category: disasters
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [washington, adams-morgan, knickerbocker-theater, snowstorm, 1922, disaster]
+teaser: "The orchestra was playing between reels. Then came a hiss."
+script: |
+  Stand at this busy corner, and look at the building on the southwest side. In January nineteen twenty two, this was the Knickerbocker, a movie theater.
+
+  That week brought the heaviest snowstorm Washington has ever recorded. Twenty eight inches. And on the Saturday night, the twenty eighth, people still came out through the snow to see a picture.
+
+  Around nine o'clock, there was a break between reels. The orchestra was playing. People were filing in and out of their seats.
+
+  Then, the next morning's Evening Star reported, came a hiss.
+
+  The flat roof, loaded with snow, split down the middle. It fell onto the balcony, and the balcony fell onto the people below. And then, the paper said, a stillness. An unearthly pause. Then the screaming.
+
+  Soldiers, marines, police and firemen dug all night in the snow. Nearly a hundred people died.
+
+  Look at the corner again. There is no theater now.
+
+  The record snowfall still stands.
+detail: >-
+  Told without injuries. The Evening Star of 29 January 1922 reported the hiss, the roof parting "in the middle under the weight of many inches of snow", and "A stillness, an unearthly pause". The script says nearly a hundred, as the National Weather Service does; the final count usually given is ninety eight, and early reports were lower. National Weather Service lists the storm, at twenty eight inches, as Washington's biggest official snowstorm. Later Evening Star reports cover the investigations into the roof trusses; the script does not assign blame.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "That week brought the heaviest snowstorm Washington has ever recorded. Twenty eight inches."
+    source: 2
+    quote: "Biggest Snowstorm = 28 inches, Jan. 1922 (official)"
+  - says: "Around nine o'clock, there was a break between reels. The orchestra was playing. People were filing in and out of their seats."
+    source: 1
+    quote: "The orchestra was playing during the intermission for a change i of reels. The show was about to begin. People were filing in and out oil the theater."
+  - says: "Then, the next morning's Evening Star reported, came a hiss."
+    source: 1
+    quote: "Came a hiss?a terrlffic crash?the rattle and clatter of falling timber"
+  - says: "The flat roof, loaded with snow, split down the middle. It fell onto the balcony, and the balcony fell onto the people below."
+    source: 1
+    quote: "Parting in; the middle under the weight of many inches of snow, the roof j had given way. It struck the balcony, which extends about half! way over the pit. Down crashed the balcony."
+  - says: "And then, the paper said, a stillness. An unearthly pause. Then the screaming."
+    source: 1
+    quote: "A stillness, an unearthly pause, followed the din. Then a; scream"
+  - says: "Soldiers, marines, police and firemen dug all night in the snow."
+    source: 1
+    quote: "the ruins were still being searched by more than 200 soldiers, marines, police and firemen."
+  - says: "Nearly a hundred people died."
+    source: 2
+    quote: "crushing nearly 100 people to death."
+  - says: "Stand at this busy corner, and look at the building on the southwest side. In January nineteen twenty two, this was the Knickerbocker"
+    source: 3
+    quote: "Knickerbocker Theater located on the southwest corner of 18th Street and Columbia Road, N.W., Washington, D.C."
+  - says: "In January nineteen twenty two, this was the Knickerbocker, a movie theater."
+    source: 2
+    quote: "The weight of the snow was too much for the Knickerbocker Theater on 18th Street and Columbia in Northwest Washington, DC."
+  - says: "And on the Saturday night, the twenty eighth, people still came out through the snow to see a picture."
+    source: 1
+    quote: "Forty persons are known to have been killed and between 60 and 100 injured when the snow laden roof of the Knickerbocker Theater, at 18th street and Columbia road northwest, collapsed last night"
+sources:
+  - title: "Evening Star (Washington, D.C.), 29 January 1922, page 1: Knickerbocker Theater caves in"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1922-01-29/ed-1/?sp=1
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "DC Winters"
+    publisher: "National Weather Service, Baltimore/Washington"
+    url: https://www.weather.gov/lwx/winter_DC-Winters
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Collapsed roof following snow storm on January 28, 1922. Knickerbocker Theater (Harris and Ewing photograph)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2016891178/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-an-unearthly-pause/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 67.1
+    audioBytes: 1074616
+    transcript:
+      totalS: 67.1
+      lines:
+        - text: Stand at this busy corner, and look at the building on the southwest side.
+          atS: 0
+          durationS: 4.33
+        - text: In January nineteen twenty two, this was the Knickerbocker, a movie theater.
+          atS: 4.93
+          durationS: 5.21
+        - text: That week brought the heaviest snowstorm Washington has ever recorded.
+          atS: 10.84
+          durationS: 4.16
+        - text: Twenty eight inches.
+          atS: 15.28
+          durationS: 1.87
+        - text: And on the Saturday night, the twenty eighth, people still came out through the snow to see a picture.
+          atS: 17.59
+          durationS: 5.92
+        - text: Around nine o'clock, there was a break between reels.
+          atS: 24.21
+          durationS: 3.32
+        - text: The orchestra was playing.
+          atS: 27.97
+          durationS: 1.49
+        - text: People were filing in and out of their seats.
+          atS: 29.73
+          durationS: 2.67
+        - text: Then, the next morning's Evening Star reported, came a hiss.
+          atS: 32.91
+          durationS: 4.13
+        - text: The flat roof, loaded with snow, split down the middle.
+          atS: 37.56
+          durationS: 3.68
+        - text: It fell onto the balcony, and the balcony fell onto the people below.
+          atS: 41.56
+          durationS: 3.98
+        - text: And then, the paper said, a stillness.
+          atS: 45.99
+          durationS: 2.89
+        - text: An unearthly pause.
+          atS: 49.26
+          durationS: 1.49
+        - text: Then the screaming.
+          atS: 51.35
+          durationS: 1.13
+        - text: Soldiers, marines, police and firemen dug all night in the snow.
+          atS: 53.08
+          durationS: 5
+        - text: Nearly a hundred people died.
+          atS: 58.47
+          durationS: 1.77
+        - text: Look at the corner again.
+          atS: 60.74
+          durationS: 1.34
+        - text: There is no theater now.
+          atS: 62.68
+          durationS: 1.58
+        - text: The record snowfall still stands.
+          atS: 64.7
+          durationS: 2.4

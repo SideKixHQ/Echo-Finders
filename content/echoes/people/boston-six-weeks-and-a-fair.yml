@@ -1,0 +1,199 @@
+# Drafted by Claude Code (2026-11-12) for the Boston military and monuments pass, following docs/writing-echoes.md (format v2).
+# Listening spot: Inside or beside the central domed rotunda of Quincy Market, whose upper floor held the 1840 Bunker Hill Monument Fair. Public market hall, open daily.
+# Position: Overture "Quincy Market" point, moved about 25 m east along the building so the spot sits under the rotunda and about 100 m from the Faneuil Hall grasshopper echo (medium confidence).
+id: boston-six-weeks-and-a-fair
+title: "Six Weeks and a Fair"
+summary: "The Bunker Hill Monument stood half built for years. In 1840 Sarah Josepha Hale's circle held a fair here and raised the money in five days."
+place: "Quincy Market rotunda, Faneuil Hall Marketplace, Boston, Massachusetts"
+at: { lat: 42.36015, lng: -71.05450 }
+triggerRadiusKm: 0.05
+category: people
+format: short
+durationS: 86
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [boston, boston-core, quincy-market, bunker-hill-monument, sarah-josepha-hale, women, revolution, monuments]
+teaser: "The men had fifteen years to pay for the monument. The women took six weeks."
+script: |
+  Look up into the dome of Quincy Market. In September eighteen forty, the floor up there was a fair. It finished the Bunker Hill Monument.
+
+  The monument's cornerstone was laid in eighteen twenty five. Then the money ran out. Then it ran out again. By eighteen thirty nine it stood on its hill in Charlestown at eighty five feet, not much more than a third of its planned height. Its backers were talking about making it shorter.
+
+  Men had been raising money for it for years, and falling short. A magazine editor, Sarah Josepha Hale, had asked women to give a dollar each. Newspapers attacked her for it.
+
+  So in the summer of eighteen forty, a sewing circle Hale led tried something else. A women's fair. They wrote to women's groups across New England and down the coast, asking for crafts, art and things from their kitchens. Six weeks later, the fair opened up there.
+
+  Visitors climbed a temporary staircase from the street. In five days, about thirty five thousand people came. Nearly forty percent of Boston. The goal was thirty thousand dollars. They made more than thirty three thousand.
+
+  The top stone went on the monument less than two years later.
+
+  The men had fifteen years. The women took six weeks.
+pronunciations:
+  - written: "Sarah Josepha Hale"
+    say: "SAIR-uh jo-SEE-fuh HAYL"
+detail: >-
+  The National Park Service article on the Bunker Hill Monument Fair gives the 1825 cornerstone, the failed subscription drives since 1825, Hale's campaign for women to give $1 and the newspaper criticism, the Ladies' Fund of only $2,937.90 by 1840, the sewing circle of Seaman's Aid Society members, the appeal to women's networks for crafts, art and kitchen specialties, "Six weeks later", the fair on the second floor of the Faneuil Hall Market (today Quincy Market) from 10 to 15 September 1840, the temporary stairway from the street, 35,600 visitors, nearly 40 percent of Boston's 1840 population, $33,067 against a $30,000 goal, and the top stone laid on 23 July 1842. The NPS article on building the monument gives the two stoppages for lack of money, the 85 feet reached by November 1835, 135 feet short of the 220 foot goal, and the proposal to cut it to about 160 feet. The NPS page on Hale says the sewing circle was "led by Sarah Josepha Hale". All three are NPS, so this is single-source by publisher. Hale also wrote Mary Had a Little Lamb (NPS Hale page); it is left out to keep one idea, and would make a good kids echo. "Fifteen years" counts from the 1825 cornerstone to the 1840 fair.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In September eighteen forty, the floor up there was a fair."
+    source: 1
+    quote: "The Bunker Hill Monument Fair occupied the second floor of \"the Faneuil Hall Market\" (today known as Quincy Market)"
+  - says: "In September eighteen forty, the floor up there was a fair."
+    source: 1
+    quote: "From September 10 to September 15, 1840, a women's committee associated with the Bunker Hill Monument Association held a fundraising fair"
+  - says: "The monument's cornerstone was laid in eighteen twenty five."
+    source: 1
+    quote: "On this day, the 50th anniversary of the Battle of Bunker Hill, attendees were gathered to witness the laying of the cornerstone for the Bunker Hill Monument."
+  - says: "Then the money ran out."
+    source: 2
+    quote: "the work stopped in December of 1828 after a 19-month effort because the BHMA ran out of money."
+  - says: "Then it ran out again."
+    source: 2
+    quote: "This activity lasted 17 months before work stopped again in November 1835."
+  - says: "By eighteen thirty nine it stood on its hill in Charlestown at eighty five feet, not much more than a third of its planned height."
+    source: 2
+    quote: "The monument now stood 85 feet tall, still 135 feet short of the goal of 220 feet."
+  - says: "Its backers were talking about making it shorter."
+    source: 2
+    quote: "Still short of money, the BHMA reduced the proposed height of the monument to about 160 feet, instead of the planned 220."
+  - says: "Men had been raising money for it for years, and falling short."
+    source: 1
+    quote: "The donation strategy had fallen short in a number of attempts since 1825."
+  - says: "A magazine editor, Sarah Josepha Hale, had asked women to give a dollar each."
+    source: 1
+    quote: "Sarah Josepha Hale, the women’s fundraising coordinator, stepped onto her Ladies' Magazine public platform and campaigned for women to contribute $1."
+  - says: "Newspapers attacked her for it."
+    source: 1
+    quote: "Her stance was strongly criticized in newspapers that favored men only to raise Monument funds."
+  - says: "So in the summer of eighteen forty, a sewing circle Hale led tried something else."
+    source: 3
+    quote: "In the summer of 1840, a Boston women’s sewing circle of Seaman's Aid Society members, led by Sarah Josepha Hale, conceived of using a women’s fair to generate the $30,000 necessary to complete the Bunker Hill Monument."
+  - says: "They wrote to women's groups across New England and down the coast, asking for crafts, art and things from their kitchens."
+    source: 1
+    quote: "This Committee contacted women’s networks throughout New England and down the Atlantic coast through newspaper articles and letters. These articles and letters requested that women's clubs donate all manner of crafts, pieces of art, and kitchen specialties."
+  - says: "Six weeks later, the fair opened up there."
+    source: 1
+    quote: "Six weeks later, the Bunker Hill Monument Fair was held."
+  - says: "Visitors climbed a temporary staircase from the street."
+    source: 1
+    quote: "Visitors from all corners of New England gained entrance to the second-floor fair by climbing a temporary stairway erected in the street."
+  - says: "In five days, about thirty five thousand people came."
+    source: 1
+    quote: "the total Fair visitation accounted for nearly 40% of Boston’s population, at 35,600."
+  - says: "Nearly forty percent of Boston."
+    source: 1
+    quote: "the total Fair visitation accounted for nearly 40% of Boston’s population, at 35,600."
+  - says: "The goal was thirty thousand dollars."
+    source: 1
+    quote: "brought in substantially more cash than the goal of $30,000."
+  - says: "They made more than thirty three thousand."
+    source: 1
+    quote: "making the fair’s total profit $33,067 and 73 ½ cents"
+  - says: "The top stone went on the monument less than two years later."
+    source: 1
+    quote: "On Saturday July 23, 1842, at 6 AM, the top stone of the Bunker Hill Monument was laid"
+  - says: "The men had fifteen years."
+    source: 1
+    quote: "The donation strategy had fallen short in a number of attempts since 1825."
+  - says: "The women took six weeks."
+    source: 1
+    quote: "Six weeks later, the Bunker Hill Monument Fair was held."
+  - says: "It finished the Bunker Hill Monument."
+    source: 1
+    quote: "women's creativity and use of their community-based social networks successfully brought the Bunker Hill Monument to life."
+sources:
+  - title: "The Bunker Hill Monument Fair of September 1840"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/articles/bunker-hill-monument-fair.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Building the Bunker Hill Monument"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/articles/000/building-the-bunker-hill-monument.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Sarah Josepha Hale"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/sarah-josepha-hale.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-six-weeks-and-a-fair/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 86.3
+    audioBytes: 1381816
+    transcript:
+      totalS: 86.3
+      lines:
+        - text: Look up into the dome of Quincy Market.
+          atS: 0
+          durationS: 2.77
+        - text: In September eighteen forty, the floor up there was a fair.
+          atS: 3.47
+          durationS: 3.7
+        - text: It finished the Bunker Hill Monument.
+          atS: 7.78
+          durationS: 2.11
+        - text: The monument's cornerstone was laid in eighteen twenty five.
+          atS: 10.33
+          durationS: 3.77
+        - text: Then the money ran out.
+          atS: 14.62
+          durationS: 1.45
+        - text: Then it ran out again.
+          atS: 16.58
+          durationS: 1.6
+        - text: By eighteen thirty nine it stood on its hill in Charlestown at eighty five feet, not much more than a third of its planned height.
+          atS: 19.3
+          durationS: 7.15
+        - text: Its backers were talking about making it shorter.
+          atS: 27.4
+          durationS: 2.64
+        - text: Men had been raising money for it for years, and falling short.
+          atS: 30.55
+          durationS: 3.72
+        - text: A magazine editor, Sarah Josepha Hale, had asked women to give a dollar each.
+          atS: 34.77
+          durationS: 5.54
+        - text: Newspapers attacked her for it.
+          atS: 40.75
+          durationS: 1.95
+        - text: So in the summer of eighteen forty, a sewing circle Hale led tried something else.
+          atS: 43.51
+          durationS: 5.03
+        - text: A women's fair.
+          atS: 48.82
+          durationS: 1.27
+        - text: They wrote to women's groups across New England and down the coast, asking for crafts, art and things from their kitchens.
+          atS: 50.41
+          durationS: 7.3
+        - text: Six weeks later, the fair opened up there.
+          atS: 58.22
+          durationS: 2.93
+        - text: Visitors climbed a temporary staircase from the street.
+          atS: 61.75
+          durationS: 3.32
+        - text: In five days, about thirty five thousand people came.
+          atS: 65.52
+          durationS: 3.85
+        - text: Nearly forty percent of Boston.
+          atS: 69.61
+          durationS: 2.15
+        - text: The goal was thirty thousand dollars.
+          atS: 71.97
+          durationS: 2.23
+        - text: They made more than thirty three thousand.
+          atS: 74.41
+          durationS: 2.54
+        - text: The top stone went on the monument less than two years later.
+          atS: 77.28
+          durationS: 4.18
+        - text: The men had fifteen years.
+          atS: 81.84
+          durationS: 2.04
+        - text: The women took six weeks.
+          atS: 84.16
+          durationS: 2.13

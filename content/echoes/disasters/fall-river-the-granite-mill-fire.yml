@@ -1,0 +1,76 @@
+# Drafted by Claude Code (2026-11-09) for Fall River, Massachusetts.
+# Listening spot: Public sidewalk near the site of the Granite Mills.
+# Position: Wikidata Q113903803 (Granite Mill fire) 41.6997, -71.146, close to Q5595887 (Granite Mills, Bedford Street, 41.7013, -71.1463); listener on the nearest street (low-medium confidence).
+id: fall-river-the-granite-mill-fire
+title: "The Granite Mill Fire"
+summary: "An 1874 fire at the Granite Mill killed 20 workers, mainly young girls. One was reported to be five years old."
+place: "Site of the Granite Mill, Fall River, Massachusetts"
+at: { lat: 41.6997, lng: -71.146 }
+triggerRadiusKm: 0.1
+category: disasters
+format: look-below
+durationS: 17
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [fall-river, textile-mills, labor, child-labor]
+teaser: "Twenty workers died here. Most of them were young girls."
+script: |
+  Near here stood the Granite Mill.
+
+  In 1874 a fire at the mill killed twenty workers. Most of them were young girls.
+
+  One of the girls was reported to be only five years old.
+
+  Twenty people died at work. Some of them were children.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Near here stood the Granite Mill."
+    source: 1
+    quote: "A fire at the Granite Mill in Fall River, Massachusetts resulted in the deaths of 20 workers."
+  - says: "In 1874 a fire at the mill killed twenty workers."
+    source: 1
+    quote: "Granite Mill fire, 1874 A fire at the Granite Mill in Fall River, Massachusetts resulted in the deaths of 20 workers."
+  - says: "Most of them were young girls."
+    source: 1
+    quote: "The 20 laborers killed were mainly young girls"
+  - says: "One of the girls was reported to be only five years old."
+    source: 1
+    quote: "one of the girls was reported to be only five years old."
+  - says: "Twenty people died at work."
+    source: 1
+    quote: "resulted in the deaths of 20 workers."
+sources:
+  - title: "200 Years of Labor History - Blackstone River Valley National Historical Park"
+    publisher: "National Park Service"
+    url: https://home.nps.gov/blrv/learn/historyculture/200-labor-events.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fall-river-the-granite-mill-fire/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 17
+    audioBytes: 273806
+    transcript:
+      totalS: 17
+      lines:
+        - text: Near here stood the Granite Mill.
+          atS: 0
+          durationS: 1.9
+        - text: In 1874 a fire at the mill killed twenty workers.
+          atS: 2.86
+          durationS: 4.06
+        - text: Most of them were young girls.
+          atS: 7.07
+          durationS: 1.72
+        - text: One of the girls was reported to be only five years old.
+          atS: 9.39
+          durationS: 3.12
+        - text: Twenty people died at work.
+          atS: 12.96
+          durationS: 1.94
+        - text: Some of them were children.
+          atS: 15.22
+          durationS: 1.82

@@ -1,0 +1,123 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2).
+# Listening spot: The public plaza beside the cable car turntable at Powell Street and Market Street, at the start of the Powell lines, three blocks from Union Square.
+# Position: The Powell and Market turntable from general map knowledge (high confidence for the turntable).
+id: san-francisco-turn-the-cable-car-around
+title: "Turn the Cable Car Around"
+summary: "A children's telling: at Powell and Market, workers turn each cable car around by hand. The cars are pulled by a cable under the street."
+place: "Cable car turntable, Powell Street and Market Street, San Francisco, California"
+at: { lat: 37.78482, lng: -122.40760 }
+triggerRadiusKm: 0.04
+category: kids
+format: short
+durationS: 58
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.85
+tags: [san-francisco, union-square, powell-street, cable-cars, hallidie, kids]
+teaser: "How do you turn a cable car around? Watch."
+script: |
+  Find the round turntable at the end of the cable car tracks. Now wait for a cable car to arrive, and watch.
+
+  The car has to face the other way to go back up the hill. So the workers push it around on the turntable, by hand!
+
+  How does a cable car climb these hills? Under the street, a steel cable is always moving. The car holds on to it with a grip, and the cable pulls it along.
+
+  A San Francisco man, Andrew Hallidie, came up with the idea, because the hills here were too steep for horses.
+
+  The very first cable car ran on Clay Street, in eighteen seventy three. It was meant to hold fourteen people. On its first public trip, lots more people climbed in, and on top. It made it up the hill anyway.
+
+  Up on Mason Street, there is a cable car museum where you can see the giant wheels that pull the cables under the streets.
+
+  So, which way is this one going?
+detail: >-
+  NBC News (Associated Press, 2008): the Powell and Market turnaround, where workers manually swivel the cars around, and the Cable Car Museum at 1201 Mason Street with the underground pulleys that operate the cables. The 1940 Federal Writers' Project guide: Andrew S. Hallidie, a local manufacturer, invented the cable car for hills too steep for horses; the first line on Clay Street; the trial trip of 2 August 1873 in a car intended to hold only 14 that was overloaded and made the grade; the moving cable and the grip. "The giant wheels" glosses the museum's pulleys for children.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "So the workers push it around on the turntable, by hand!"
+    source: 1
+    quote: "Here tourists can snap pictures of workers manually swiveling the cars around to begin the route again."
+  - says: "Under the street, a steel cable is always moving. The car holds on to it with a grip, and the cable pulls it along."
+    source: 2
+    quote: "in solving the problem of how to make a moving cable follow the contour of the street and how to devise a grip which could not tear the cable apart by too sudden a jerk."
+  - says: "A San Francisco man, Andrew Hallidie, came up with the idea, because the hills here were too steep for horses."
+    source: 2
+    quote: "surmounting hills too steep for horses."
+  - says: "A San Francisco man, Andrew Hallidie, came up with the idea, because the hills here were too steep for horses."
+    source: 2
+    quote: "by local manufacturer Andrew S. Hallidie, of the cable car."
+  - says: "The very first cable car ran on Clay Street, in eighteen seventy three."
+    source: 2
+    quote: "The inaugural trip of the first car, over the newly laid line on Clay Street between Kearny and Jones Streets, was a civic event. On the morning of August 2, 1873"
+  - says: "It was meant to hold fourteen people. On its first public trip, lots more people climbed in, and on top. It made it up the hill anyway."
+    source: 2
+    quote: "That afternoon a public trial trip was made: many people climbed into and upon the car, which was intended to hold only 14, but in spite of the overload, it literally made the grade."
+  - says: "Up on Mason Street, there is a cable car museum where you can see the giant wheels that pull the cables under the streets."
+    source: 1
+    quote: "both lines pass by the Cable Car Museum (1201 Mason St.), where you can learn about the history of the cable cars and see the underground pulleys that operate them."
+  - says: "So, which way is this one going?"
+    source: 1
+    quote: "Many of them board at Powell and Market streets, the famous turnaround site at the end of the line."
+sources:
+  - title: "Exploring San Francisco by cable car (Associated Press, 22 October 2008)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna27294552
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "San Francisco: The Bay and Its Cities (Federal Writers' Project, American Guide Series, 1940)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/sanfranciscobaya00writrich
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/san-francisco-turn-the-cable-car-around/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 58.2
+    audioBytes: 932927
+    transcript:
+      totalS: 58.2
+      lines:
+        - text: Find the round turntable at the end of the cable car tracks.
+          atS: 0
+          durationS: 3.33
+        - text: Now wait for a cable car to arrive, and watch.
+          atS: 3.51
+          durationS: 3.22
+        - text: The car has to face the other way to go back up the hill.
+          atS: 7.16
+          durationS: 3.32
+        - text: So the workers push it around on the turntable, by hand!
+          atS: 10.66
+          durationS: 3.32
+        - text: How does a cable car climb these hills?
+          atS: 14.36
+          durationS: 2.29
+        - text: Under the street, a steel cable is always moving.
+          atS: 17.16
+          durationS: 3.44
+        - text: The car holds on to it with a grip, and the cable pulls it along.
+          atS: 20.98
+          durationS: 3.88
+        - text: A San Francisco man, Andrew Hallidie, came up with the idea, because the hills here were too steep for horses.
+          atS: 25.18
+          durationS: 7.49
+        - text: The very first cable car ran on Clay Street, in eighteen seventy three.
+          atS: 33
+          durationS: 4.47
+        - text: It was meant to hold fourteen people.
+          atS: 37.85
+          durationS: 2.36
+        - text: On its first public trip, lots more people climbed in, and on top.
+          atS: 40.65
+          durationS: 5.09
+        - text: It made it up the hill anyway.
+          atS: 46.12
+          durationS: 1.76
+        - text: Up on Mason Street, there is a cable car museum where you can see the giant wheels that pull the cables under the streets.
+          atS: 48.39
+          durationS: 6.99
+        - text: So, which way is this one going?
+          atS: 55.76
+          durationS: 2.47

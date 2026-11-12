@@ -1,0 +1,132 @@
+# Drafted by Claude Code (2026-11-09) for Cleveland, Ohio.
+# Listening spot: Public riverside path in the Flats, looking upstream.
+# Position: Approximate riverside spot in the Flats near Rivergate, from general knowledge; the 1969 fire was upstream near the Republic Steel railroad bridges, now on private industrial land (low-medium confidence).
+# Moved to the shore 2026-11-10: was 41.4895, -81.704, in the water on the map's shoreline (scripts/check-land.mjs); moved 45 m to the nearest land, about 5 m in from the edge.
+id: cleveland-the-river-that-burned
+title: "The River That Burned"
+summary: "On June 22, 1969, the Cuyahoga caught fire for less than half an hour. It became a world symbol of water pollution."
+place: "Cuyahoga River in the Flats, Cleveland, Ohio"
+at: { lat: 41.48926, lng: -81.70443 }
+triggerRadiusKm: 0.1
+category: disasters
+format: short
+durationS: 55
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [cleveland, cuyahoga, river-fire, environment]
+teaser: "A short fire on a working river became a picture the whole world remembers."
+script: |
+  Look at the water. On a Sunday in June 1969, this river caught fire.
+
+  Upstream, railroad bridges near Republic Steel had trapped floating debris. Oil on the water made it burn.
+
+  A flare tossed from a passing train probably lit it.
+
+  The fire lasted less than half an hour, and did minor damage to the bridges.
+
+  Clevelanders were not very surprised. The river had burned more than ten times in the century before.
+
+  Then, in August, Time magazine featured the fire. It called the Cuyahoga the river that oozes rather than flows, in which a person does not drown but decays.
+
+  A small fire on a working river became a world symbol of water pollution.
+
+  It did not change the laws by itself. Changes were already in motion. It just became the picture everybody remembered.
+pronunciations:
+  - written: "Cuyahoga"
+    say: "ky-uh-HOH-guh"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "On a Sunday in June 1969, this river caught fire."
+    source: 2
+    quote: "On June 22, 1969, the Cuyahoga River caught on fire in Cleveland, Ohio"
+  - says: "Upstream, railroad bridges near Republic Steel had trapped floating debris."
+    source: 1
+    quote: "Railroad bridges near Republic Steel trapped debris in the river, causing it to pile up."
+  - says: "A flare tossed from a passing train probably lit it."
+    source: 1
+    quote: "A flare tossed from an overpassing train likely provided the spark that ignited the debris."
+  - says: "The fire lasted less than half an hour, and did minor damage to the bridges."
+    source: 1
+    quote: "The fire lasted for less than a half hour and resulted in minor damage to the railroad bridges."
+  - says: "Clevelanders were not very surprised."
+    source: 1
+    quote: "The 1969 fire did not surprise Clevelanders."
+  - says: "The river had burned more than ten times in the century before."
+    source: 1
+    quote: "The river had burned more than 10 times over the previous century."
+  - says: "Then, in August, Time magazine featured the fire."
+    source: 1
+    quote: "On August 1, Time magazine featured Mayor Stokes and the fire in a new section on \"The Environment.\""
+  - says: "It called the Cuyahoga the river that oozes rather than flows, in which a person does not drown but decays."
+    source: 1
+    quote: "The article described the Cuyahoga as the river that \"oozes rather than ﬂows\" and in which a person \"does not drown but decays.\""
+  - says: "A small fire on a working river became a world symbol of water pollution."
+    source: 1
+    quote: "the Cuyahoga River fire has become a symbol of water pollution and the environmental movement."
+  - says: "Changes were already in motion."
+    source: 1
+    quote: "Changes were already in motion."
+sources:
+  - title: "The 1969 Cuyahoga River Fire"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/story-of-the-fire.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Carl B. Stokes and the 1969 River Fire"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/carl-stokes-and-the-river-fire.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/cleveland-the-river-that-burned/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55
+    audioBytes: 880683
+    transcript:
+      totalS: 55
+      lines:
+        - text: Look at the water.
+          atS: 0
+          durationS: 1.15
+        - text: On a Sunday in June 1969, this river caught fire.
+          atS: 2.1
+          durationS: 3.9
+        - text: Upstream, railroad bridges near Republic Steel had trapped floating debris.
+          atS: 6.44
+          durationS: 4.63
+        - text: Oil on the water made it burn.
+          atS: 11.68
+          durationS: 1.92
+        - text: A flare tossed from a passing train probably lit it.
+          atS: 13.98
+          durationS: 3.25
+        - text: The fire lasted less than half an hour, and did minor damage to the bridges.
+          atS: 17.83
+          durationS: 4.39
+        - text: Clevelanders were not very surprised.
+          atS: 22.73
+          durationS: 2.22
+        - text: The river had burned more than ten times in the century before.
+          atS: 25.39
+          durationS: 3.49
+        - text: Then, in August, Time magazine featured the fire.
+          atS: 29.21
+          durationS: 3.55
+        - text: It called the Cuyahoga the river that oozes rather than flows, in which a person does not drown but decays.
+          atS: 33.09
+          durationS: 7.92
+        - text: A small fire on a working river became a world symbol of water pollution.
+          atS: 41.52
+          durationS: 4.97
+        - text: It did not change the laws by itself.
+          atS: 46.87
+          durationS: 2.67
+        - text: Changes were already in motion.
+          atS: 49.98
+          durationS: 2.01
+        - text: It just became the picture everybody remembered.
+          atS: 52.2
+          durationS: 2.79

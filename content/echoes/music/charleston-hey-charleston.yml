@@ -1,0 +1,191 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Franklin Street sidewalk in front of the Old Marine Hospital, 20 Franklin Street, looking at the porches.
+# Position: Overture points for 20 Franklin St moved west onto Franklin St, which runs along the building's west front per HABS SC-13-10; about 85 m from the Old City Jail point at 21 Magazine St (medium confidence).
+id: charleston-hey-charleston
+title: "Hey Charleston"
+summary: "An orphanage paid its way with a brass band, and by many accounts gave the world a dance."
+place: "Old Marine Hospital (Jenkins Orphanage), 20 Franklin Street, Charleston, South Carolina"
+at: { lat: 32.77790, lng: -79.93770 }
+triggerRadiusKm: 0.04
+category: music
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, music, jazz, african-american-history]
+teaser: "A boy dancing in front of a band of orphans."
+script: |
+  Look at the porch railings on this building. They were designed to look like the tracery around a Gothic stained glass window. It was built in the eighteen thirties as a hospital for sailors.
+
+  From eighteen ninety five, it was home to something louder. The Jenkins Orphanage.
+
+  The Reverend Daniel Jenkins had been born enslaved, and orphaned young. In eighteen ninety one he took in four boys he found sheltering in an abandoned building. Soon the orphanage housed hundreds of boys. To pay for them, he did something unusual. He gathered up instruments, hired two local musicians as teachers, and sent the boys out as a brass band.
+
+  It worked. The band played the streets of Charleston, then New York and London. It marched in the inaugural parades of two presidents.
+
+  And it played the tunes of the Gullah people of the Sea Islands, with a small boy out front, dancing the steps. In Harlem, the pianist Willie the Lion Smith remembered, people would shout to that boy. Hey Charleston, do your Geechie dance.
+
+  The jazz pianist James P Johnson listened to the band and wrote eight tunes he called charlestons. One of them became The Charleston, and it went around the world.
+
+  By many accounts, the craze started here. With orphans, earning their keep.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "They were designed to look like the tracery around a Gothic stained glass window."
+    source: 1
+    quote: "The delicate porch railings were designed to resemble the tracery around Gothic stained glass windows."
+  - says: "It was built in the eighteen thirties as a hospital for sailors."
+    source: 1
+    quote: "construction of their Marine Hospital, which began in 1831"
+  - says: "It was built in the eighteen thirties as a hospital for sailors."
+    source: 1
+    quote: "provided the first Federal health care and social welfare initiative for United States sailors"
+  - says: "From eighteen ninety five, it was home to something louder."
+    source: 1
+    quote: "From 1895-1939 the structure served as the Jenkins Orphanage, whose famous band traveled the United States and Europe"
+  - says: "The Jenkins Orphanage."
+    source: 1
+    quote: "From 1895-1939 the structure served as the Jenkins Orphanage"
+  - says: "The Reverend Daniel Jenkins had been born enslaved, and orphaned young."
+    source: 2
+    quote: "Born a slave on a plantation just outside of Charleston, Jenkins himself had been or"
+  - says: "The Reverend Daniel Jenkins had been born enslaved, and orphaned young."
+    source: 2
+    quote: "phaned at a young age"
+  - says: "In eighteen ninety one he took in four boys he found sheltering in an abandoned building."
+    source: 2
+    quote: "In 1891, the Reverend Daniel Jenkins, pastor of a small African American church in Charleston, South Carolina, stumbled on a group of four black youths huddled in an abandoned building on the edge of town."
+  - says: "Soon the orphanage housed hundreds of boys."
+    source: 2
+    quote: "the three to five hundred boys the orphanage soon"
+  - says: "He gathered up instruments, hired two local musicians as teachers, and sent the boys out as a brass band."
+    source: 2
+    quote: "musical instruments as he could find and hired two"
+  - says: "He gathered up instruments, hired two local musicians as teachers, and sent the boys out as a brass band."
+    source: 2
+    quote: "local Charleston musicians"
+  - says: "He gathered up instruments, hired two local musicians as teachers, and sent the boys out as a brass band."
+    source: 2
+    quote: "ed to assemble a brass band and tour the northern"
+  - says: "The band played the streets of Charleston, then New York and London."
+    source: 2
+    quote: "streets of Charleston, Jenkins took his group on the"
+  - says: "The band played the streets of Charleston, then New York and London."
+    source: 2
+    quote: "In New York he and the"
+  - says: "The band played the streets of Charleston, then New York and London."
+    source: 2
+    quote: "a fortuitous trip to Lon"
+  - says: "It marched in the inaugural parades of two presidents."
+    source: 2
+    quote: "In 1905, the Jenkins Orphanage Band played in the Presidents Roosevelt’s inaugural parade, and in 1909 they repeated the honor for President Taft."
+  - says: "And it played the tunes of the Gullah people of the Sea Islands, with a small boy out front, dancing the steps."
+    source: 2
+    quote: "The Gullah were an Afro-Caribbean population that had settled on the sea islands off the coast of Charleston."
+  - says: "And it played the tunes of the Gullah people of the Sea Islands, with a small boy out front, dancing the steps."
+    source: 2
+    quote: "by a young boy dancing"
+  - says: "In Harlem, the pianist Willie the Lion Smith remembered, people would shout to that boy."
+    source: 2
+    quote: "Smith remembers"
+  - says: "In Harlem, the pianist Willie the Lion Smith remembered, people would shout to that boy."
+    source: 2
+    quote: "the people of Harlem used to shout out to him as he passed by"
+  - says: "Hey Charleston, do your Geechie dance."
+    source: 2
+    quote: "hey Charleston, do your Geechie dance."
+  - says: "The jazz pianist James P Johnson listened to the band and wrote eight tunes he called charlestons."
+    source: 2
+    quote: "Jazz pianist James P. Johnson actually wrote eight different"
+  - says: "One of them became The Charleston, and it went around the world."
+    source: 2
+    quote: "One became the international pop song phenomenon known as"
+  - says: "By many accounts, the craze started here."
+    source: 2
+    quote: "By many accounts, they were also responsible for launching the dance craze known as"
+sources:
+  - title: "Old Marine Hospital"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/old-marine-hospital.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Fox Movietone News: Jenkins Orphanage Band (National Film Registry essay by Julie Hubbert)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/static/programs/national-film-preservation-board/documents/jenkins.pdf
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+pronunciations:
+  - written: Geechie
+    say: GEE-chee
+  - written: Gullah
+    say: GULL-uh
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-hey-charleston/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84.2
+    audioBytes: 1348797
+    transcript:
+      totalS: 84.2
+      lines:
+        - text: Look at the porch railings on this building.
+          atS: 0
+          durationS: 2.29
+        - text: They were designed to look like the tracery around a Gothic stained glass window.
+          atS: 2.73
+          durationS: 4.59
+        - text: It was built in the eighteen thirties as a hospital for sailors.
+          atS: 7.83
+          durationS: 3.88
+        - text: From eighteen ninety five, it was home to something louder.
+          atS: 12.09
+          durationS: 3.8
+        - text: The Jenkins Orphanage.
+          atS: 16.32
+          durationS: 1.57
+        - text: The Reverend Daniel Jenkins had been born enslaved, and orphaned young.
+          atS: 18.27
+          durationS: 4.21
+        - text: In eighteen ninety one he took in four boys he found sheltering in an abandoned building.
+          atS: 23.09
+          durationS: 5.19
+        - text: Soon the orphanage housed hundreds of boys.
+          atS: 28.98
+          durationS: 2.76
+        - text: To pay for them, he did something unusual.
+          atS: 32.12
+          durationS: 2.64
+        - text: He gathered up instruments, hired two local musicians as teachers, and sent the boys out as a brass band.
+          atS: 35.04
+          durationS: 6.47
+        - text: It worked.
+          atS: 41.71
+          durationS: 0.87
+        - text: The band played the streets of Charleston, then New York and London.
+          atS: 42.91
+          durationS: 3.82
+        - text: It marched in the inaugural parades of two presidents.
+          atS: 47.11
+          durationS: 3.19
+        - text: And it played the tunes of the Gullah people of the Sea Islands, with a small boy out front, dancing the steps.
+          atS: 50.69
+          durationS: 6.82
+        - text: In Harlem, the pianist Willie the Lion Smith remembered, people would shout to that boy.
+          atS: 58.2
+          durationS: 5.38
+        - text: Hey Charleston, do your Geechie dance.
+          atS: 64.09
+          durationS: 2.96
+        - text: The jazz pianist James P Johnson listened to the band and wrote eight tunes he called charlestons.
+          atS: 68.35
+          durationS: 6.54
+        - text: One of them became The Charleston, and it went around the world.
+          atS: 75.58
+          durationS: 3.41
+        - text: By many accounts, the craze started here.
+          atS: 79.43
+          durationS: 2.4
+        - text: With orphans, earning their keep.
+          atS: 82.08
+          durationS: 2.16

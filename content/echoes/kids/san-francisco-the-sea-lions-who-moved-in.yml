@@ -1,0 +1,146 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2).
+# Listening spot: The public sea lion viewing area on the west side of Pier 39, Fisherman's Wharf, above the floating docks.
+# Position: Pier 39's west side above the docks from general map knowledge (medium confidence; the spot is on the pier, over water by design).
+id: san-francisco-the-sea-lions-who-moved-in
+title: "The Sea Lions Who Moved In"
+summary: "A children's telling: the docks at Pier 39 were built for boats. In 1990 the sea lions moved in, and the city gave them their own day."
+place: "Sea lion docks, Pier 39, Fisherman's Wharf, San Francisco, California"
+at: { lat: 37.80965, lng: -122.41040 }
+triggerRadiusKm: 0.05
+category: kids
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.85
+tags: [san-francisco, fishermans-wharf, pier-39, sea-lions, wildlife, kids]
+teaser: "Nobody invited them. They came anyway, and stayed."
+script: |
+  Listen. Can you hear barking? Look down at the floating docks beside the pier. Those big brown heaps are sea lions!
+
+  These docks were built for boats. Then, in nineteen ninety, a few dozen sea lions climbed on. Nobody invited them.
+
+  More and more came. The harbourmaster, who looks after the docks, remembers when there were fourteen hundred of them. A seething mass, she said, of sea lion noise, and smell.
+
+  But people loved them. Millions have come to watch. The city even gave them a holiday: Sea Lion Day, on the sixteenth of January.
+
+  In spring, they feast on anchovies and herring, to get ready for the mating season. Then many of them head south, to islands off Southern California.
+
+  Mostly, though, they just lie in the sun. One visitor said: I want some entertainment from them, and they've got nothing.
+
+  Watch for a minute. Which one is the laziest?
+detail: >-
+  CBS News (2004): Pier 39 home to some 1,500 sea lions, up from the few dozen that moved in in 1990. CBS News (2020): thirty years since sea lions invaded the boat docks of Pier 39, harbormaster Sheila Chandor and her 1,400 animals, "millions" of visitors, Sea Lion Day on 16 January, and the tourist's line about entertainment. NPR (2024): anchovies and herring, fuelling up for the mating season, the Channel Islands. CBS 2004 and 2020 are one publisher; NPR is independent. Other accounts date the first arrivals to late 1989, after the Loma Prieta earthquake; the CBS figure of 1990 is used.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "These docks were built for boats. Then, in nineteen ninety, a few dozen sea lions climbed on."
+    source: 1
+    quote: "Pier 39 alone is home to some 1,500 - up from the few dozen that moved in there in 1990."
+  - says: "These docks were built for boats. Then, in nineteen ninety, a few dozen sea lions climbed on."
+    source: 2
+    quote: "Thirty years ago, hundreds of smelly, noisy sea lions invaded the boat docks of Pier 39 on San Francisco's Fisherman's Wharf."
+  - says: "The harbourmaster, who looks after the docks, remembers when there were fourteen hundred of them. A seething mass, she said, of sea lion noise, and smell."
+    source: 2
+    quote: "\"If you can imagine 1,400 animals on that dock. It was just a seething mass of sea lion noise... and smell,\" Chandor said."
+  - says: "But people loved them. Millions have come to watch."
+    source: 2
+    quote: "Chandor estimates \"millions\" of people have come to see the sea lions over the years."
+  - says: "The city even gave them a holiday: Sea Lion Day, on the sixteenth of January."
+    source: 2
+    quote: "announcing January 16th as \"Sea Lion Day.\""
+  - says: "In spring, they feast on anchovies and herring, to get ready for the mating season."
+    source: 3
+    quote: "A bounty of anchovies and herring in the bay waters has drawn the pinnipeds to feast ahead of mating season, which starts next month"
+  - says: "Then many of them head south, to islands off Southern California."
+    source: 3
+    quote: "They are ready to rock and roll down in the Channel Islands, and we're a nice pit stop with some great seafood."
+  - says: "One visitor said: I want some entertainment from them, and they've got nothing."
+    source: 2
+    quote: "\"I want some entertainment from them and they've got nothing,\" one tourist said."
+  - says: "Which one is the laziest?"
+    source: 2
+    quote: "It's a lot of excitement over an animal that spends much of its time just lying in the sun."
+sources:
+  - title: "Sea Lions Invade San Fran Tourist Spot (2004)"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/sea-lions-invade-san-fran-tourist-spot/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "San Francisco sea lions celebrated 30 years after first invading the docks (2020)"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/sea-lions-san-francisco-pier-39-2020-01-30/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "A seafood bounty lures sea lions to S.F.'s Pier 39 in numbers not seen in 15 years (4 May 2024)"
+    publisher: "NPR"
+    url: https://www.npr.org/2024/05/04/1249133148/sea-lions-pier-39-san-francisco-bay
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/san-francisco-the-sea-lions-who-moved-in/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 60
+    audioBytes: 961767
+    transcript:
+      totalS: 60
+      lines:
+        - text: Listen.
+          atS: 0
+          durationS: 0.71
+        - text: Can you hear barking?
+          atS: 1.09
+          durationS: 1.32
+        - text: Look down at the floating docks beside the pier.
+          atS: 2.74
+          durationS: 2.61
+        - text: Those big brown heaps are sea lions!
+          atS: 5.68
+          durationS: 2.52
+        - text: These docks were built for boats.
+          atS: 8.47
+          durationS: 1.9
+        - text: Then, in nineteen ninety, a few dozen sea lions climbed on.
+          atS: 10.76
+          durationS: 3.89
+        - text: Nobody invited them.
+          atS: 14.93
+          durationS: 1.2
+        - text: More and more came.
+          atS: 16.73
+          durationS: 1.27
+        - text: The harbourmaster, who looks after the docks, remembers when there were fourteen hundred of them.
+          atS: 18.51
+          durationS: 5.35
+        - text: A seething mass, she said, of sea lion noise, and smell.
+          atS: 24.37
+          durationS: 4.5
+        - text: But people loved them.
+          atS: 29.39
+          durationS: 1.18
+        - text: Millions have come to watch.
+          atS: 31.01
+          durationS: 1.53
+        - text: "The city even gave them a holiday: Sea Lion Day, on the sixteenth of January."
+          atS: 32.87
+          durationS: 5.36
+        - text: In spring, they feast on anchovies and herring, to get ready for the mating season.
+          atS: 38.84
+          durationS: 5.26
+        - text: Then many of them head south, to islands off Southern California.
+          atS: 44.6
+          durationS: 3.88
+        - text: Mostly, though, they just lie in the sun.
+          atS: 48.99
+          durationS: 2.53
+        - text: "One visitor said: I want some entertainment from them, and they've got nothing."
+          atS: 52.04
+          durationS: 4.93
+        - text: Watch for a minute.
+          atS: 57.18
+          durationS: 1.07
+        - text: Which one is the laziest?
+          atS: 58.46
+          durationS: 1.59

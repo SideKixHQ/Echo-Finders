@@ -1,0 +1,168 @@
+# Drafted by Claude Code (2026-11-09) for Jerome, Arizona.
+# Listening spot: The Main Street sidewalk near the Liberty Theatre, looking along the gulch that held the old business district.
+# Position: Wikidata Q42311249 (Liberty Theatre, 34.751393, -112.115673), on Main Street in the old business district; the 1898 fire's footprint was not mapped (low-medium confidence; a district-wide story).
+id: jerome-the-day-the-stone-melted
+title: "The Day the Stone Melted"
+summary: "In September 1898 fire wiped out Jerome's business district. Only the Methodist church was left, and the death toll was never agreed."
+place: "Main Street and Jerome Avenue, Jerome, Arizona"
+at: { lat: 34.7514, lng: -112.11567 }
+triggerRadiusKm: 0.1
+category: disasters
+format: short
+durationS: 81
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [jerome, fire, 1898, mining, old-west]
+teaser: "In 1898 fire swept up this gulch so fast that even the stone buildings went down like cardboard."
+script: |
+  Look down along the gulch this part of town sits in. In 1898, the business district filled it. Wooden buildings and stone ones, packed in close.
+
+  On the morning of the eleventh of September, at about twenty past seven, a fire started. One paper said nobody knew how. The wire reports said it was a gasoline stove, in a cabin. A good breeze from the north did the rest.
+
+  The fire raced through the narrow gulch and the ravines leading into it. The stone buildings, one report said, melted before the flames as rapidly as pasteboard.
+
+  By the end, not a single business house remained. More than a hundred and fifty homes were gone, and the stores, and the saloons. The only building to escape was the Methodist church.
+
+  How many died? Nobody could agree. One Arizona paper said three. The wire said eleven bodies had been found, and a score or more were missing. The real number was lost in the smoke.
+
+  What saved the town's future was a strip of open ground, between the burned district and the great works of the United Verde company. The company's plant survived. The town would be built again around it.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look down along the gulch this part of town sits in."
+    source: 1
+    quote: "The area of the fire was confined to a narrow gulch and ravines leading to it"
+  - says: "In 1898, the business district filled it."
+    source: 1
+    quote: "The fire was confined exclusively ta the business portion of the town"
+  - says: "Wooden buildings and stone ones, packed in close."
+    source: 1
+    quote: "in which were locate substantial wooden and stone build Ings"
+  - says: "On the morning of the eleventh of September, at about twenty past seven, a fire started."
+    source: 3
+    quote: "fire start a about 7:20 o'clock a. m."
+  - says: "On the morning of the eleventh of September, at about twenty past seven, a fire started."
+    source: 2
+    quote: "Prescott, Arizona, Sept. iL-The town of Jerome, near here, was completely wiped out this morning by fir?."
+  - says: "One paper said nobody knew how."
+    source: 3
+    quote: "but just in what manner is not known."
+  - says: "The wire reports said it was a gasoline stove, in a cabin."
+    source: 1
+    quote: "The fire originated from a gasoline stove in a cabin and spread so rapidly and fiercely that it was impossible to save even clothing"
+  - says: "A good breeze from the north did the rest."
+    source: 3
+    quote: "by a good breeze from the north, the flames began their devastating career"
+  - says: "The fire raced through the narrow gulch and the ravines leading into it."
+    source: 1
+    quote: "The area of the fire was confined to a narrow gulch and ravines leading to it"
+  - says: "The stone buildings, one report said, melted before the flames as rapidly as pasteboard."
+    source: 2
+    quote: "the latter melting as rapidly be fore the flames as pasteboard."
+  - says: "By the end, not a single business house remained."
+    source: 1
+    quote: "In short not a single business house remains"
+  - says: "More than a hundred and fifty homes were gone, and the stores, and the saloons."
+    source: 2
+    quote: "Over 150 residences averaging in value 12.000, 25 general merchandise and other stores, saloons, etc., of all kinds are wiped out"
+  - says: "The only building to escape was the Methodist church."
+    source: 2
+    quote: "The only building to escape was the Methodist church."
+  - says: "One Arizona paper said three."
+    source: 3
+    quote: "three persons are known to have lost their lives"
+  - says: "The wire said eleven bodies had been found, and a score or more were missing."
+    source: 1
+    quote: "Eleven bodies have so far been recov ered while a score or more are said to be in the ruins or missing"
+  - says: "What saved the town's future was a strip of open ground, between the burned district and the great works of the United Verde company."
+    source: 2
+    quote: "open ground intervening between it and the mammoth works of the United Verde company saved the latter's plant"
+  - says: "The company's plant survived."
+    source: 2
+    quote: "the mammoth works of the United Verde company saved the latter's plant"
+sources:
+  - title: "The Salt Lake Herald, September 12, 1898, page 1"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn85058130/1898-09-12/ed-1/?sp=1
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Anaconda Standard, September 12, 1898, page 1"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84036012/1898-09-12/ed-1/?sp=1
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Arizona Republican (Phoenix), September 12, 1898, page 1"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84020558/1898-09-12/ed-1/?sp=1
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/jerome-the-day-the-stone-melted/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.7
+    audioBytes: 1291536
+    transcript:
+      totalS: 80.7
+      lines:
+        - text: Look down along the gulch this part of town sits in.
+          atS: 0
+          durationS: 3.09
+        - text: In 1898, the business district filled it.
+          atS: 3.69
+          durationS: 3.35
+        - text: Wooden buildings and stone ones, packed in close.
+          atS: 7.74
+          durationS: 3.46
+        - text: On the morning of the eleventh of September, at about twenty past seven, a fire started.
+          atS: 12.5
+          durationS: 5.92
+        - text: One paper said nobody knew how.
+          atS: 18.94
+          durationS: 2.21
+        - text: The wire reports said it was a gasoline stove, in a cabin.
+          atS: 21.42
+          durationS: 3.64
+        - text: A good breeze from the north did the rest.
+          atS: 25.88
+          durationS: 2.26
+        - text: The fire raced through the narrow gulch and the ravines leading into it.
+          atS: 28.75
+          durationS: 4.01
+        - text: The stone buildings, one report said, melted before the flames as rapidly as pasteboard.
+          atS: 33.26
+          durationS: 5.9
+        - text: By the end, not a single business house remained.
+          atS: 39.97
+          durationS: 3.27
+        - text: More than a hundred and fifty homes were gone, and the stores, and the saloons.
+          atS: 43.76
+          durationS: 5.1
+        - text: The only building to escape was the Methodist church.
+          atS: 49.81
+          durationS: 3.31
+        - text: How many died?
+          atS: 53.56
+          durationS: 1.09
+        - text: Nobody could agree.
+          atS: 55.34
+          durationS: 1.15
+        - text: One Arizona paper said three.
+          atS: 57.1
+          durationS: 2.39
+        - text: The wire said eleven bodies had been found, and a score or more were missing.
+          atS: 60.09
+          durationS: 4.68
+        - text: The real number was lost in the smoke.
+          atS: 65.21
+          durationS: 2.18
+        - text: What saved the town's future was a strip of open ground, between the burned district and the great works of the United Verde company.
+          atS: 67.91
+          durationS: 7.81
+        - text: The company's plant survived.
+          atS: 76.1
+          durationS: 1.68
+        - text: The town would be built again around it.
+          atS: 78.23
+          durationS: 2.44

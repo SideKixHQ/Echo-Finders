@@ -113,6 +113,26 @@ export const ECHO_CATEGORIES = [
    * script may only say "this exact spot" when the evidence is exact (`parse.ts`).
    */
   "inspo",
+  /**
+   * The five James added on 2026-11-12. Each is what an echo is mainly about, so an echo
+   * still has one category; one that fits better here than where it was is moved, not
+   * tagged twice.
+   *
+   * Unsolved: disappearances, odd sightings, lost treasure, questions nobody has answered.
+   * Not a crime at the centre (that is true crime) and not a ghost (that is legend). It is
+   * the one category that holds both fact and tale, so it is in neither family in
+   * `truth.ts`: a stolen stone never found is documented, a pirate's buried chest is a
+   * legend, and each is labelled as what it is.
+   */
+  "unsolved",
+  /** Fires, floods, storms, epidemics, explosions, shipwrecks, and the people who got through them. */
+  "disasters",
+  /** Where a sound was born, and the clubs and studios that are gone. Arts keeps the rest. */
+  "music",
+  /** The first of anything, and what was invented here. */
+  "firsts",
+  /** Tunnels, sealed rooms, buried rivers: what is under your feet or behind the wall. */
+  "hidden",
 ] as const;
 
 export type EchoCategory = (typeof ECHO_CATEGORIES)[number];

@@ -1,0 +1,133 @@
+# Drafted by Claude Code (2026-11-09) for Nashville.
+# Listening spot: Riverfront Park on First Avenue North at Broadway, looking at the Cumberland River.
+# Position: Riverfront Park at the foot of Broadway, from street knowledge, not a fetched coordinate (medium-low confidence, check on a map).
+id: nashville-when-the-cumberland-came-up
+title: "When the Cumberland Came Up"
+summary: "After record rain in May 2010 the Cumberland crested at 52.55 feet at Nashville, flooding downtown landmarks. Dams kept it lower."
+place: "Cumberland River at Riverfront Park, First Avenue North, Nashville, Tennessee"
+at: { lat: 36.1617, lng: -86.7742 }
+triggerRadiusKm: 0.12
+category: disasters
+format: short
+durationS: 62
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [nashville, downtown, cumberland-river, flood, weather]
+teaser: "In May 2010 two days of rain put this river into the city's stadium, arena and symphony hall."
+script: |
+  Look at the river. It looks tame from here.
+
+  On the third of May, 2010, the Cumberland at Nashville rose to fifty-two and a half feet.
+
+  Two days of rain did it. Thirteen and a half inches fell on the first and second of May. That was more than double the old two-day record.
+
+  The second of May was the rainiest day in Nashville's weather records, which go back to the 1870s.
+
+  Downtown, the football stadium, the hockey arena and the symphony hall all took damage. Upriver, so did the Grand Ole Opry House.
+
+  Eleven people died in the Nashville area.
+
+  And it could have been worse. The river's record is fifty-six feet, set in 1927, before dams controlled the Cumberland.
+
+  The Army Corps of Engineers has said that without the dams, the 2010 flood would have come close to that, or gone past it, right here downtown.
+
+  The river looks tame because people keep a hand on it, upstream.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "On the third of May, 2010, the Cumberland at Nashville rose to fifty-two and a half feet."
+    source: 1
+    quote: "The Cumberland River at Nashville caused tremendous damage when it rose to 52.55 feet on May 3rd"
+  - says: "Two days of rain did it."
+    source: 1
+    quote: "Back-to-back record breaking rains fell on Saturday, May 1, and again on Sunday, May 2, causing widespread flash flooding and river flooding across much of the mid state."
+  - says: "Thirteen and a half inches fell on the first and second of May."
+    source: 1
+    quote: "A new two day rainfall record was established when 13.57 inches fell on May 1st and May 2nd"
+  - says: "That was more than double the old two-day record."
+    source: 2
+    quote: "A 2-day total of 13.57 inches of rain fell on May 1-2, more than double the previous 2-day rainfall record of 6.68 inches set in September 1979."
+  - says: "The second of May was the rainiest day in Nashville's weather records, which go back to the 1870s."
+    source: 1
+    quote: "A new calendar day rainfall record was set when 7.25 inches of rain fell on May 2nd"
+  - says: "The second of May was the rainiest day in Nashville's weather records, which go back to the 1870s."
+    source: 1
+    quote: "Nashville experienced its all-time rainiest day AND third-rainiest day on back-to-back days with National Weather Service weather records dating back to the early 1870s."
+  - says: "Downtown, the football stadium, the hockey arena and the symphony hall all took damage."
+    source: 2
+    quote: "In the downtown area, LP Field (home of the Tennessee Titans), Bridgestone Arena (home of the Nashville Predators), the Schermerhorn Symphony Center, and many other commercial and residential buildings sustained damage"
+  - says: "Upriver, so did the Grand Ole Opry House."
+    source: 2
+    quote: "Many notable landmarks were flooded around Nashville, including the Grand Ole Opry House, Opry Mills Mall, and Gaylord Opryland Resort and Convention Center east of downtown."
+  - says: "Eleven people died in the Nashville area."
+    source: 2
+    quote: "18 in Middle Tennessee (11 of those in the Nashville Metro area)"
+  - says: "The river's record is fifty-six feet, set in 1927, before dams controlled the Cumberland."
+    source: 1
+    quote: "fell well short of the highest crest on record - 56.20 feet. This record crest was set back in 1927, before dams controlled the flow of the Cumberland and its tributaries."
+  - says: "The Army Corps of Engineers has said that without the dams, the 2010 flood would have come close to that, or gone past it, right here downtown."
+    source: 1
+    quote: "It has been speculated by the U.S. Army Corps of Engineers that if there was no control of the river, the water level in the May Flood would have come close to or even exceeded 56 feet in downtown Nashville."
+sources:
+  - title: "10th Anniversary of May 2010 Flood"
+    publisher: "National Weather Service Nashville"
+    url: https://www.weather.gov/ohx/10thAnniversaryMay2010Flood
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Flooding in Tennessee"
+    publisher: "National Weather Service"
+    url: https://www.weather.gov/safety/flood-states-tn
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-when-the-cumberland-came-up/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 61.6
+    audioBytes: 987262
+    transcript:
+      totalS: 61.6
+      lines:
+        - text: Look at the river.
+          atS: 0
+          durationS: 0.92
+        - text: It looks tame from here.
+          atS: 1.16
+          durationS: 1.53
+        - text: On the third of May, 2010, the Cumberland at Nashville rose to fifty-two and a half feet.
+          atS: 3.13
+          durationS: 6.25
+        - text: Two days of rain did it.
+          atS: 9.98
+          durationS: 1.54
+        - text: Thirteen and a half inches fell on the first and second of May.
+          atS: 11.97
+          durationS: 3.51
+        - text: That was more than double the old two-day record.
+          atS: 15.86
+          durationS: 2.86
+        - text: The second of May was the rainiest day in Nashville's weather records, which go back to the 1870s.
+          atS: 19.41
+          durationS: 6.46
+        - text: Downtown, the football stadium, the hockey arena and the symphony hall all took damage.
+          atS: 26.38
+          durationS: 5.74
+        - text: Upriver, so did the Grand Ole Opry House.
+          atS: 32.55
+          durationS: 2.83
+        - text: Eleven people died in the Nashville area.
+          atS: 35.71
+          durationS: 2.62
+        - text: And it could have been worse.
+          atS: 38.72
+          durationS: 1.51
+        - text: The river's record is fifty-six feet, set in 1927, before dams controlled the Cumberland.
+          atS: 40.67
+          durationS: 6.44
+        - text: The Army Corps of Engineers has said that without the dams, the 2010 flood would have come close to that, or gone past it, right here downtown.
+          atS: 47.5
+          durationS: 9.18
+        - text: The river looks tame because people keep a hand on it, upstream.
+          atS: 57.63
+          durationS: 3.99

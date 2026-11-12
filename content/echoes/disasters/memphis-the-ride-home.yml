@@ -1,0 +1,160 @@
+# Drafted by Claude Code (2026-11-09) for Memphis.
+# Listening spot: Tom Lee Park on the riverfront, looking up the Mississippi to the north.
+# Position: Wikidata Q7816557 (Tom Lee Park), a public riverfront park; the source places the explosion north of Memphis, not at a point, so this is a viewing spot (medium confidence).
+id: memphis-the-ride-home
+title: "The Ride Home"
+summary: "In April 1865 the overloaded Sultana left Memphis with freed Union prisoners. Its boilers blew; more than 1,000 died."
+place: "Mississippi River riverfront, Tom Lee Park, Memphis, Tennessee"
+at: { lat: 35.1365, lng: -90.0627 }
+triggerRadiusKm: 0.15
+category: disasters
+format: short
+durationS: 81
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [memphis, riverfront, civil-war, military, sultana, mississippi-river]
+teaser: "He survived two years of war and eight months in Andersonville. Then he boarded a steamboat here."
+script: |
+  Look up the river, to the north. In April 1865 a steamboat called the Sultana left Memphis going that way, carrying Union soldiers home from the war.
+
+  More than nineteen hundred of them were men just released from prison camps.
+
+  One was Private Valmore Lambert, a farmer from Ohio.
+
+  He had fought through two years of the war. He was captured near Atlanta, and he survived eight months in Andersonville, the prison where more than thirteen thousand Union soldiers died.
+
+  The Sultana was overloaded, far beyond what it should have carried. Before leaving, the captain had a leaking boiler patched instead of properly repaired, because a repair would have taken more time.
+
+  On the twenty-seventh of April, heading north from Memphis, three of its four boilers exploded.
+
+  More than a thousand men died. It is still called the worst maritime disaster in American history. No one was ever held accountable.
+
+  Valmore Lambert was among them. Where his remains are, nobody knows.
+
+  The bodies that were found were buried at Fort Pickering, and later moved to the Memphis National Cemetery.
+
+  He made it through the war, and through the prison. It was the boat home that killed him.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In April 1865 a steamboat called the Sultana left Memphis going that way, carrying Union soldiers home from the war."
+    source: 1
+    quote: "On April 27, 1865, as the Sultana was heading north from Memphis, Tennessee, three of the four boilers exploded."
+  - says: "In April 1865 a steamboat called the Sultana left Memphis going that way, carrying Union soldiers home from the war."
+    source: 1
+    quote: "he and over 1900 former prisoners boarded the steamboat Sultana , which was set to bring them home."
+  - says: "More than nineteen hundred of them were men just released from prison camps."
+    source: 1
+    quote: "When the war ended, he and over 1900 former prisoners boarded the steamboat Sultana"
+  - says: "One was Private Valmore Lambert, a farmer from Ohio."
+    source: 1
+    quote: "Born in 1831 in Ohio to Aaron and Phebe Lambert, Valmore was likely the second oldest of seven children. Like his father, he was a farmer."
+  - says: "He had fought through two years of the war."
+    source: 1
+    quote: "Private Valmore Lambert, who had survived two years of fighting in the Civil war"
+  - says: "He was captured near Atlanta, and he survived eight months in Andersonville, the prison where more than thirteen thousand Union soldiers died."
+    source: 1
+    quote: "In 1864, The 100th Ohio Infantry participated in the Battle of Utoy Creek during the Atlanta Campaign, where Lambert was captured."
+  - says: "He was captured near Atlanta, and he survived eight months in Andersonville, the prison where more than thirteen thousand Union soldiers died."
+    source: 1
+    quote: "Lambert was sent to Andersonville —the infamous Confederate prison in Georgia—where he remained for 8 months."
+  - says: "He was captured near Atlanta, and he survived eight months in Andersonville, the prison where more than thirteen thousand Union soldiers died."
+    source: 1
+    quote: "The prison operated for less than 2 years, but over 13,000 US soldiers perished."
+  - says: "The Sultana was overloaded, far beyond what it should have carried."
+    source: 1
+    quote: "The boat had been overloaded with passengers far beyond its capacity"
+  - says: "Before leaving, the captain had a leaking boiler patched instead of properly repaired, because a repair would have taken more time."
+    source: 1
+    quote: "prior to the journey, Captain James Cass Mason had opted to put a temporary fix on a leaking boiler rather than repairing the ship, which would have taken more time."
+  - says: "On the twenty-seventh of April, heading north from Memphis, three of its four boilers exploded."
+    source: 1
+    quote: "On April 27, 1865, as the Sultana was heading north from Memphis, Tennessee, three of the four boilers exploded."
+  - says: "More than a thousand men died."
+    source: 1
+    quote: "More than 1000 men lost their lives"
+  - says: "It is still called the worst maritime disaster in American history."
+    source: 1
+    quote: "The explosion of the Sultana is to this day known as the worst maritime disaster in US history"
+  - says: "No one was ever held accountable."
+    source: 1
+    quote: "no one was ever held accountable for it."
+  - says: "Valmore Lambert was among them."
+    source: 1
+    quote: "Private Valmore Lambert, who had survived two years of fighting in the Civil war, and eight months in the nightmare of Andersonville, was among them."
+  - says: "Where his remains are, nobody knows."
+    source: 1
+    quote: "The location of Private Lambert’s remains are unknown"
+  - says: "The bodies that were found were buried at Fort Pickering, and later moved to the Memphis National Cemetery."
+    source: 1
+    quote: "The bodies that were found were interred at Fort Pickering cemetery and were later moved to the Memphis National Cemetery."
+  - says: "It was the boat home that killed him."
+    source: 1
+    quote: "The ship that was meant to be his deliverance was the reason he never made it home."
+sources:
+  - title: "Valmore Lambert"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/valmore-lambert.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/memphis-the-ride-home/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.1
+    audioBytes: 1299060
+    transcript:
+      totalS: 81.1
+      lines:
+        - text: Look up the river, to the north.
+          atS: 0
+          durationS: 2.04
+        - text: In April 1865 a steamboat called the Sultana left Memphis going that way, carrying Union soldiers home from the war.
+          atS: 2.65
+          durationS: 8.35
+        - text: More than nineteen hundred of them were men just released from prison camps.
+          atS: 11.51
+          durationS: 4.01
+        - text: One was Private Valmore Lambert, a farmer from Ohio.
+          atS: 15.89
+          durationS: 3.76
+        - text: He had fought through two years of the war.
+          atS: 20.17
+          durationS: 2.41
+        - text: He was captured near Atlanta, and he survived eight months in Andersonville, the prison where more than thirteen thousand Union soldiers died.
+          atS: 23.02
+          durationS: 8.84
+        - text: The Sultana was overloaded, far beyond what it should have carried.
+          atS: 32.46
+          durationS: 3.91
+        - text: Before leaving, the captain had a leaking boiler patched instead of properly repaired, because a repair would have taken more time.
+          atS: 37.19
+          durationS: 7.26
+        - text: On the twenty-seventh of April, heading north from Memphis, three of its four boilers exploded.
+          atS: 45.74
+          durationS: 6.52
+        - text: More than a thousand men died.
+          atS: 53.08
+          durationS: 2.62
+        - text: It is still called the worst maritime disaster in American history.
+          atS: 56.52
+          durationS: 4.26
+        - text: No one was ever held accountable.
+          atS: 61.38
+          durationS: 2.22
+        - text: Valmore Lambert was among them.
+          atS: 64.3
+          durationS: 1.86
+        - text: Where his remains are, nobody knows.
+          atS: 66.48
+          durationS: 2.47
+        - text: The bodies that were found were buried at Fort Pickering, and later moved to the Memphis National Cemetery.
+          atS: 69.33
+          durationS: 5.94
+        - text: He made it through the war, and through the prison.
+          atS: 75.66
+          durationS: 2.95
+        - text: It was the boat home that killed him.
+          atS: 79.05
+          durationS: 2.08

@@ -1,0 +1,130 @@
+# Drafted by Claude Code (2026-11-09) for Newport, Rhode Island.
+# Listening spot: Footpath inside Touro Park beside the tower, a public city park.
+# Position: Wikidata Q727068 (Newport Tower) 41.4858, -71.3099; the park path circles the tower within the radius (high confidence).
+id: newport-the-tower-nobody-agrees-on
+title: "The Tower Nobody Agrees On"
+summary: "Newport's stone tower has long been called a Viking relic. The likelier story is a colonial governor's windmill."
+place: "Old Stone Mill (Newport Tower), Touro Park, Newport, Rhode Island"
+at: { lat: 41.4858, lng: -71.3099 }
+triggerRadiusKm: 0.05
+category: unsolved
+format: short
+durationS: 55
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The Viking origin is a long-told legend and is not established. The script says so aloud and gives the survey's likelier colonial windmill explanation.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [newport, touro-park, old-stone-mill, legend]
+teaser: "A round stone tower on arches, and an argument that has run since at least 1851."
+script: |
+  Look at the round stone tower standing on its arches. People have been arguing about who built it for a very long time.
+
+  The old story says Vikings. The tower has traditionally been linked with Viking explorers.
+
+  That is legend, and it is not proven.
+
+  By 1851 there was already a book about it, called The controversy touching the old stone mill.
+
+  In 1911 another asked the question in its title. Did the Norsemen erect the Newport Round Tower?
+
+  The building survey gives the likelier answer. It probably dates from the colonial period, and was the stone windmill built by Governor Benedict Arnold.
+
+  Its wooden top was gone by 1740. Later it was used to store gunpowder, and then hay.
+
+  Stand under the arches and pick your story. The likelier story has a governor's name attached to it.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The old story says Vikings."
+    source: 1
+    quote: "traditionally has been associated with Viking explorers"
+  - says: "The tower has traditionally been linked with Viking explorers."
+    source: 1
+    quote: "traditionally has been associated with Viking explorers"
+  - says: "By 1851 there was already a book about it, called The controversy touching the old stone mill."
+    source: 2
+    quote: "created_published: Newport, C. E. Hammett, jr., 1851."
+  - says: "In 1911 another asked the question in its title."
+    source: 3
+    quote: "created_published: [Cedar Rapids, Ia. : The Torch Press, 1911]"
+  - says: "Did the Norsemen erect the Newport Round Tower?"
+    source: 3
+    quote: "title: Did the Norsemen erect the Newport Round Tower"
+  - says: "It probably dates from the colonial period, and was the stone windmill built by Governor Benedict Arnold."
+    source: 1
+    quote: "More likely it dates to the colonial period and was the stone windmill constructed by Governor Benedict Arnold"
+  - says: "Its wooden top was gone by 1740."
+    source: 1
+    quote: "the wood superstructure was gone by 1740"
+  - says: "Later it was used to store gunpowder, and then hay."
+    source: 1
+    quote: "It later served as a powder magazine and a hay mow."
+sources:
+  - title: "Stone Mill, Touro Park, Newport, Newport County, RI (HABS RI-103)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/ri0078/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The controversy touching the old stone mill (catalogue record)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/rc01003020/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Did the Norsemen erect the Newport Round Tower (catalogue record)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/11030420/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/newport-the-tower-nobody-agrees-on/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 55.4
+    audioBytes: 886952
+    transcript:
+      totalS: 55.4
+      lines:
+        - text: Look at the round stone tower standing on its arches.
+          atS: 0
+          durationS: 3.05
+        - text: People have been arguing about who built it for a very long time.
+          atS: 3.75
+          durationS: 3.71
+        - text: The old story says Vikings.
+          atS: 8.28
+          durationS: 2.19
+        - text: The tower has traditionally been linked with Viking explorers.
+          atS: 11.08
+          durationS: 3.46
+        - text: That is legend, and it is not proven.
+          atS: 15.23
+          durationS: 2.82
+        - text: By 1851 there was already a book about it, called The controversy touching the old stone mill.
+          atS: 18.75
+          durationS: 6.51
+        - text: In 1911 another asked the question in its title.
+          atS: 25.87
+          durationS: 3.54
+        - text: Did the Norsemen erect the Newport Round Tower?
+          atS: 30.22
+          durationS: 2.81
+        - text: The building survey gives the likelier answer.
+          atS: 33.73
+          durationS: 2.55
+        - text: It probably dates from the colonial period, and was the stone windmill built by Governor Benedict Arnold.
+          atS: 36.88
+          durationS: 5.69
+        - text: Its wooden top was gone by 1740.
+          atS: 43.02
+          durationS: 2.7
+        - text: Later it was used to store gunpowder, and then hay.
+          atS: 46.32
+          durationS: 2.97
+        - text: Stand under the arches and pick your story.
+          atS: 49.81
+          durationS: 2.3
+        - text: The likelier story has a governor's name attached to it.
+          atS: 52.26
+          durationS: 3.1

@@ -1,0 +1,170 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk on the river side of Bourbon Street at the Toulouse Street corner, looking across at the lake-side corner of the 500 block where the opera house stood.
+# Position: Bourbon and Toulouse intersection from street lines fitted to Overture addresses; the 1919 reports say only "Bourbon and Toulouse" and the block toward St. Peter, so the exact corner is not confirmed (medium confidence).
+id: new-orleans-the-opera-house-that-isnt-here
+title: "The Opera House That Isn't Here"
+summary: "The French Opera House stood here sixty years. Its 1866 company drowned on the way over, and in 1919 it burned to the ground."
+place: "Site of the French Opera House, Bourbon and Toulouse streets, New Orleans, Louisiana"
+at: { lat: 29.95791, lng: -90.06621 }
+triggerRadiusKm: 0.04
+category: music
+format: short
+durationS: 77
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, french-quarter, opera, music, bourbon-street]
+teaser: "Stand at the corner of Bourbon and Toulouse, and look for an opera house."
+script: |
+  Stand at the corner of Bourbon and Toulouse, and look for an opera house.
+
+  There is none. For sixty years, there was.
+
+  The French Opera House opened here in December eighteen fifty-nine. A city guide from nineteen-oh-four counted about two thousand eight hundred seats, in four tiers, and every tier had its own French name. The gallery, at the top, was popularly called le paradis. Paradise.
+
+  During the Civil War the house went dark. In eighteen sixty-six it was ready to open again, and its new director was sailing from France with a whole company of singers, aboard a ship called the Evening Star.
+
+  The ship went down. The entire company was lost.
+
+  The house opened anyway, and the opera carried on.
+
+  Then, early on the fourth of December, nineteen nineteen, a fire started in a restaurant at the front of the building. By morning the French Opera House had burned to the ground. Its season had opened on Armistice night, only weeks before. The management said it was the most successful season the house had ever had.
+
+  So look up, above the corner, into the empty air.
+
+  That is about where Paradise used to be.
+pronunciations:
+  - written: le paradis
+    say: luh pah-rah-DEE
+  - written: Toulouse
+    say: too-LOOSE
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Stand at the corner of Bourbon and Toulouse, and look for an opera house."
+    source: 3
+    quote: "at the corner of Bourbon and Toulouse see the 18 French Opera House"
+  - says: "For sixty years, there was."
+    source: 2
+    quote: "The opera house was erected sixty years ago, being formally opened in December, 1859."
+  - says: "The French Opera House opened here in December eighteen fifty-nine."
+    source: 2
+    quote: "The opera house was erected sixty years ago, being formally opened in December, 1859."
+  - says: "A city guide from nineteen-oh-four counted about two thousand eight hundred seats, in four tiers, and every tier had its own French name."
+    source: 3
+    quote: "It seats about 2,800 persons."
+  - says: "A city guide from nineteen-oh-four counted about two thousand eight hundred seats, in four tiers, and every tier had its own French name."
+    source: 3
+    quote: "here are four tiers, each of which retains its peculiar name."
+  - says: "A city guide from nineteen-oh-four counted about two thousand eight hundred seats, in four tiers, and every tier had its own French name."
+    source: 3
+    quote: "Copyright 1904 by"
+  - says: "The gallery, at the top, was popularly called le paradis."
+    source: 3
+    quote: "while the gallery is popularly known as “le paradis.”"
+  - says: "During the Civil War the house went dark."
+    source: 2
+    quote: "During the Civil War the house was closed"
+  - says: "In eighteen sixty-six it was ready to open again, and its new director was sailing from France with a whole company of singers, aboard a ship called the Evening Star."
+    source: 2
+    quote: "The new director was on his way from France with a large company of artists on board the Evening Star, but the ship foundered and the entire troupe perished."
+  - says: "In eighteen sixty-six it was ready to open again, and its new director was sailing from France with a whole company of singers, aboard a ship called the Evening Star."
+    source: 2
+    quote: "but in 1866 it re? opened"
+  - says: "Then, early on the fourth of December, nineteen nineteen, a fire started in a restaurant at the front of the building."
+    source: 1
+    quote: "December 4 (by the Associated Press)"
+  - says: "Then, early on the fourth of December, nineteen nineteen, a fire started in a restaurant at the front of the building."
+    source: 1
+    quote: "restaurant. In the front of the opera"
+  - says: "By morning the French Opera House had burned to the ground."
+    source: 1
+    quote: "burned to the ground early today"
+  - says: "Its season had opened on Armistice night, only weeks before."
+    source: 1
+    quote: "opera began Armistice night"
+  - says: "The management said it was the most successful season the house had ever had."
+    source: 1
+    quote: "cording to the management, had been ' the most successful in the institution's"
+  - says: "That is about where Paradise used to be."
+    source: 3
+    quote: "while the gallery is popularly known as “le paradis.”"
+sources:
+  - title: "Historic Opera House in New Orleans Burns, Evening Star (Washington), 4 December 1919, page 2"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83045462/1919-12-04/ed-1/?sp=2
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Famous French Opera House at New Orleans Burned, New-York Tribune, 5 December 1919, page 10"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn83030214/1919-12-05/ed-1/?sp=10
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Picayune's Guide to New Orleans (1904), French Opera House"
+    publisher: "The Picayune, via the Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-opera-house-that-isnt-here/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76.9
+    audioBytes: 1231350
+    transcript:
+      totalS: 76.9
+      lines:
+        - text: Stand at the corner of Bourbon and Toulouse, and look for an opera house.
+          atS: 0
+          durationS: 3.83
+        - text: There is none.
+          atS: 3.96
+          durationS: 0.81
+        - text: For sixty years, there was.
+          atS: 5.1
+          durationS: 1.69
+        - text: The French Opera House opened here in December eighteen fifty-nine.
+          atS: 7.74
+          durationS: 3.77
+        - text: A city guide from nineteen-oh-four counted about two thousand eight hundred seats, in four tiers, and every tier had its own French name.
+          atS: 11.84
+          durationS: 8.47
+        - text: The gallery, at the top, was popularly called le paradis.
+          atS: 20.64
+          durationS: 4.48
+        - text: Paradise.
+          atS: 25.27
+          durationS: 0.96
+        - text: During the Civil War the house went dark.
+          atS: 26.68
+          durationS: 2.35
+        - text: In eighteen sixty-six it was ready to open again, and its new director was sailing from France with a whole company of singers, aboard a ship called the Evening Star.
+          atS: 29.27
+          durationS: 9.9
+        - text: The ship went down.
+          atS: 39.68
+          durationS: 1.27
+        - text: The entire company was lost.
+          atS: 41.1
+          durationS: 1.9
+        - text: The house opened anyway, and the opera carried on.
+          atS: 43.51
+          durationS: 3.36
+        - text: Then, early on the fourth of December, nineteen nineteen, a fire started in a restaurant at the front of the building.
+          atS: 47.98
+          durationS: 7.01
+        - text: By morning the French Opera House had burned to the ground.
+          atS: 55.69
+          durationS: 3.58
+        - text: Its season had opened on Armistice night, only weeks before.
+          atS: 59.87
+          durationS: 4.44
+        - text: The management said it was the most successful season the house had ever had.
+          atS: 65
+          durationS: 4.08
+        - text: So look up, above the corner, into the empty air.
+          atS: 69.68
+          durationS: 3.78
+        - text: That is about where Paradise used to be.
+          atS: 74.28
+          durationS: 2.62

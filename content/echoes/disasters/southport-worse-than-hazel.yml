@@ -1,0 +1,136 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: West Bay Street sidewalk on the river side, between Lord and Howe Streets.
+# Position: South side of W Bay St near W Bay St 201 (Overture 33.916603, -78.020355); the nomination says Hazel destroyed most commercial buildings on the south side of Bay Street (medium confidence).
+id: southport-worse-than-hazel
+title: "Worse Than Hazel"
+summary: "Hurricane Helene never made landfall in 1958, yet the damage in Southport was reported as worse than Hazel's."
+place: "West Bay Street waterfront between Lord Street and Howe Street, Southport, North Carolina"
+at: { lat: 33.91665, lng: -78.0206 }
+triggerRadiusKm: 0.04
+category: disasters
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, hurricane-hazel, hurricane-helene, weather, waterfront]
+teaser: "Everyone here measures storms by Hazel. Four years later, one did more damage and never even came ashore."
+script: |
+  Look at the buildings on the water side of this street. In 1954, Hurricane Hazel destroyed most of the commercial buildings on the south side of Bay Street.
+
+  Hazel became the benchmark hurricane for an entire generation. It is the storm people here measure the others by.
+
+  Four years later, in September 1958, Hurricane Helene came up the coast with winds estimated at a hundred and thirty miles an hour.
+
+  It never made landfall. The eye stayed about twenty miles offshore.
+
+  The next day, an Associated Press report said the damage in Southport was worse than anything seen in Hazel.
+
+  Every house was said to have been damaged. A number of buildings caved in, their roofs lifted and tossed about like paper. More than half of the town's pier was carried away.
+
+  And Helene came through near low tide.
+
+  It missed by twenty miles, at low tide, and it was still worse than Hazel.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In 1954, Hurricane Hazel destroyed most of the commercial buildings on the south side of Bay Street."
+    source: 2
+    quote: "Hurricane Hazel destroyed most of the commercial buildings on the south side of Bay Street in 1954."
+  - says: "Hazel became the benchmark hurricane for an entire generation."
+    source: 3
+    quote: "became the benchmark hurricane for an entire generation"
+  - says: "Four years later, in September 1958, Hurricane Helene came up the coast with winds estimated at a hundred and thirty miles an hour."
+    source: 1
+    quote: "missing Southport and Cape Fear by just over 20 miles as an intense hurricane with winds estimated at 130 mph."
+  - says: "in September 1958"
+    source: 1
+    quote: "Date: September 27, 1958"
+  - says: "It never made landfall."
+    source: 1
+    quote: "Helene never actually made landfall as the eye remained approximately 20 miles offshore."
+  - says: "The eye stayed about twenty miles offshore."
+    source: 1
+    quote: "Helene never actually made landfall as the eye remained approximately 20 miles offshore."
+  - says: "The next day, an Associated Press report said the damage in Southport was worse than anything seen in Hazel."
+    source: 1
+    quote: "A report from the Associated Press appearing in newspapers on September 28th said the damage in Southport, NC exceeded that seen during Hazel."
+  - says: "Every house was said to have been damaged."
+    source: 1
+    quote: "Every house was said to have sustained damage"
+  - says: "A number of buildings caved in, their roofs lifted and tossed about like paper."
+    source: 1
+    quote: "\"a number of buildings were caved in, their roofs lifted and tossed about like paper.\""
+  - says: "More than half of the town's pier was carried away."
+    source: 1
+    quote: "\"More than half of the [Southport] Municipal Pier was carried away.\""
+  - says: "And Helene came through near low tide."
+    source: 1
+    quote: "The Cape Fear area beaches were spared more substantial wave and surge impact by the fact Helene moved through near low tide."
+  - says: "It missed by twenty miles, at low tide, and it was still worse than Hazel."
+    source: 1
+    quote: "said the damage in Southport, NC exceeded that seen during Hazel."
+sources:
+  - title: "Top 20 Storms in Wilmington, North Carolina's History"
+    publisher: "National Weather Service, Wilmington NC"
+    url: https://www.weather.gov/ilm/top_20_storms
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+  - title: "Southport Historic District, National Register of Historic Places Inventory-Nomination Form"
+    publisher: "North Carolina State Historic Preservation Office"
+    url: https://files.nc.gov/ncdcr/nr/BW0008.pdf
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+  - title: "Hurricane Hazel (D-109)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/11/hurricane-hazel-d-109
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-worse-than-hazel/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 60.2
+    audioBytes: 963856
+    transcript:
+      totalS: 60.2
+      lines:
+        - text: Look at the buildings on the water side of this street.
+          atS: 0
+          durationS: 2.67
+        - text: In 1954, Hurricane Hazel destroyed most of the commercial buildings on the south side of Bay Street.
+          atS: 3
+          durationS: 6.41
+        - text: Hazel became the benchmark hurricane for an entire generation.
+          atS: 9.85
+          durationS: 3.91
+        - text: It is the storm people here measure the others by.
+          atS: 14.2
+          durationS: 3.25
+        - text: Four years later, in September 1958, Hurricane Helene came up the coast with winds estimated at a hundred and thirty miles an hour.
+          atS: 18.15
+          durationS: 9.52
+        - text: It never made landfall.
+          atS: 28.48
+          durationS: 1.63
+        - text: The eye stayed about twenty miles offshore.
+          atS: 30.55
+          durationS: 2.74
+        - text: The next day, an Associated Press report said the damage in Southport was worse than anything seen in Hazel.
+          atS: 33.98
+          durationS: 6.93
+        - text: Every house was said to have been damaged.
+          atS: 41.42
+          durationS: 2.45
+        - text: A number of buildings caved in, their roofs lifted and tossed about like paper.
+          atS: 44.2
+          durationS: 4.96
+        - text: More than half of the town's pier was carried away.
+          atS: 49.67
+          durationS: 2.8
+        - text: And Helene came through near low tide.
+          atS: 52.58
+          durationS: 2.33
+        - text: It missed by twenty miles, at low tide, and it was still worse than Hazel.
+          atS: 55.16
+          durationS: 5.03

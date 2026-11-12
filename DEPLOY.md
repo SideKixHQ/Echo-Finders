@@ -198,14 +198,11 @@ paid, and the phone keeps the Stripe customer id. Restore works on the phone tha
 second phone waits for accounts (`docs/03-selling.md`). No webhook is needed for this: the
 app reads what was bought from Stripe directly when it comes back from checkout.
 
-**The bank statement (2026-11-09).** The Stripe account is shared with SideKix, so a charge
-on its own reads "SIDEKIX" and a buyer may not know what it is. Week and City Pass checkouts
-add the suffix "ECHO FINDERS" (`api/checkout.ts`), so the statement reads
-"SIDEKIX* ECHO FINDERS". A subscription cannot take a per-checkout suffix: for All-Access,
-set the statement descriptor on the All-Access product in the dashboard (Product catalog →
-All-Access → Edit → Statement descriptor: `ECHO FINDERS`). A separate Stripe account for
-Echo Finders would let the statement show its own name with no prefix; worth doing before
-launch.
+**The bank statement (2026-11-12).** Every Echo Finders charge reads "CHARACTER LIMIT LLC",
+the account's statement descriptor (Stripe: Settings → Business → Public details). Checkout
+adds no suffix: Stripe joins a suffix to the short descriptor, at most 10 characters, so the
+company name could not appear in full alongside one. The All-Access product must not carry
+its own statement descriptor (Product catalog → All-Access → Edit), or it overrides this.
 
 The secret key lives only in Vercel. It is never in the repository and never in the app.
 

@@ -1,0 +1,174 @@
+# Drafted by Claude Code (2026-11-12) for the Boston inventions and firsts pass, following docs/writing-echoes.md (format v2).
+# Listening spot: City Hall Plaza by Government Center station, near the marker WBUR describes "near City Hall" for Bell's lost attic laboratory at 109 Court Street. The building and that end of Court Street are gone.
+# Position: West edge of City Hall Plaza between the JFK Federal Building and Government Center station, from the Overture points for both (low to medium confidence: the marker itself was not pinned, and 109 Court Street stood somewhere under the modern plaza).
+id: boston-the-reed-that-stuck
+title: "The Reed That Stuck"
+summary: "On 2 June 1875, in an attic on Court Street, a stuck reed and a cross assistant gave Alexander Graham Bell the telephone's first sound."
+place: "Site of 109 Court Street, City Hall Plaza, Government Center, Boston, Massachusetts"
+at: { lat: 42.36000, lng: -71.05960 }
+triggerRadiusKm: 0.06
+category: firsts
+format: short
+durationS: 74
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [boston, boston-core, government-center, telephone, bell, watson, inventions, firsts]
+teaser: "The telephone's first sound was not a word. It was a twang."
+script: |
+  Look for the marker near City Hall. The building it remembers is gone. So is that end of Court Street.
+
+  The telephone made its first sound here. Not a word. A twang.
+
+  In eighteen seventy five, Alexander Graham Bell was using two attic rooms at one hundred and nine Court Street, above Charles Williams's workshop. Freezing in winter, his assistant remembered, and unbearably hot in summer.
+
+  Bell did not set out to invent the telephone. He set out to build a better telegraph.
+
+  On the afternoon of the second of June, his assistant, Thomas Watson, was in the other room with a steel reed that would not start. So he plucked it. Then he gave it several more hard plucks, and by his own account he said what he thought of it, in vivid shop language.
+
+  In the next room, Bell had a receiver pressed to his ear. He heard the reed.
+
+  He came running out in great excitement. The plucked reed had made its own current, and sent its sound down the wire. In Watson's words, it was the first real sound that had ever been transmitted electrically.
+
+  The telephone began with a stuck reed, and a man losing his temper with it.
+pronunciations:
+  - written: "Watson"
+    say: "WOT-sun"
+detail: >-
+  Thomas A. Watson's own account, in his 1915 speech now in the Library of Congress Bell papers, gives the attic of 109 Court Street where Williams's shop was, the two rooms Bell used as his laboratory, freezing in winter and unbearably hot in summer, the afternoon of 2 June 1875, the reed that was not vibrating and the several vigorous plucks "in vivid shop language", Bell rushing out in great excitement, and the snapped reed acting as a generator. Bell's 1911 speech, in the same collection, independently gives "the plucking of reeds that went on, on that celebrated June 2, 1875" and the building as Charles Williams, Jr.'s at 109 Court Street. Both are first person accounts from the two men involved, so they are not fully independent of each other; WBUR (2026, MIT Museum curator) supplies the better telegraph line and the marker near City Hall. "Swearing" is avoided: Watson's phrase is "vivid shop language", and the script keeps it. The exact position of the marker was not checked on site.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look for the marker near City Hall."
+    source: 3
+    quote: "strolled past the marker near City Hall"
+  - says: "The building it remembers is gone."
+    source: 3
+    quote: "Nor does his former attic lab near City Hall."
+  - says: "In eighteen seventy five, Alexander Graham Bell was using two attic rooms at one hundred and nine Court Street, above Charles Williams's workshop."
+    source: 1
+    quote: "In the attic of the building 109 Court street, Boston, where Williams's shop was, two rooms had been partitioned off and used by Williams for the manufacture of tin-foil condensers. These rooms Bell used as his laboratory at that time."
+  - says: "In eighteen seventy five, Alexander Graham Bell was using two attic rooms at one hundred and nine Court Street, above Charles Williams's workshop."
+    source: 2
+    quote: "down in the basement of Charles Williams, Jr.'s, building, 109 Court Street"
+  - says: "Freezing in winter, his assistant remembered, and unbearably hot in summer."
+    source: 1
+    quote: "Those rough attic rooms, freezing in winter and unbearably hot in summer"
+  - says: "Bell did not set out to invent the telephone."
+    source: 3
+    quote: "Bell didn't set out to create a telephone, he set out to create a better telegraph"
+  - says: "He set out to build a better telegraph."
+    source: 3
+    quote: "Bell didn't set out to create a telephone, he set out to create a better telegraph"
+  - says: "On the afternoon of the second of June, his assistant, Thomas Watson, was in the other room with a steel reed that would not start."
+    source: 1
+    quote: "On the afternoon of June 2d, 1875, Bell was doing this with one of the receivers and at that very moment I happened to snap the steel reed of another instrument in the other room connected into the same circuit, which for some reason was"
+  - says: "On the afternoon of the second of June, his assistant, Thomas Watson, was in the other room with a steel reed that would not start."
+    source: 2
+    quote: "the plucking of reeds that went on, on that"
+  - says: "Then he gave it several more hard plucks, and by his own account he said what he thought of it, in vivid shop language."
+    source: 1
+    quote: "It did not start at once so I gave it several vigorous plucks, undoubtedly expressing my opinion of the thing in vivid shop language"
+  - says: "In the next room, Bell had a receiver pressed to his ear."
+    source: 1
+    quote: "he would press that receiver reed against his ear"
+  - says: "He heard the reed."
+    source: 1
+    quote: "telling me that he had heard in the receiver at his ear the unmistakable timbre of the sound of one of the reeds"
+  - says: "He came running out in great excitement."
+    source: 1
+    quote: "out Bell came in great excitement to see what I had been doing"
+  - says: "The plucked reed had made its own current, and sent its sound down the wire."
+    source: 1
+    quote: "was functioning as a magneto-electric generator and by its vibration had generated in its magnet an electric current that was moulded into undulations exactly analogous to the sound waves of the plucked reed"
+  - says: "In Watson's words, it was the first real sound that had ever been transmitted electrically."
+    source: 1
+    quote: "His excitement came from his realization that he had heard the first real sound that had ever been transmitted electrically."
+  - says: "So is that end of Court Street."
+    source: 3
+    quote: "Nor does his former attic lab near City Hall."
+  - says: "The telephone made its first sound here."
+    source: 1
+    quote: "His excitement came from his realization that he had heard the first real sound that had ever been transmitted electrically."
+sources:
+  - title: "Speech by Thomas A. Watson, May 18, 1915. Alexander Graham Bell Family Papers"
+    publisher: "Library of Congress, Manuscript Division"
+    url: https://tile.loc.gov/storage-services/service/mss/magbell/300/30000202/30000202.pdf
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Speech by Alexander Graham Bell, November 2, 1911. Alexander Graham Bell Family Papers"
+    publisher: "Library of Congress, Manuscript Division"
+    url: https://tile.loc.gov/storage-services/service/mss/magbell/380/38000101/38000101.pdf
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Bell's first phone call made history 150 years ago in Boston"
+    publisher: "WBUR"
+    url: https://www.wbur.org/news/2026/03/10/first-telephone-call-150-years
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-reed-that-stuck/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.4
+    audioBytes: 1192062
+    transcript:
+      totalS: 74.4
+      lines:
+        - text: Look for the marker near City Hall.
+          atS: 0
+          durationS: 1.88
+        - text: The building it remembers is gone.
+          atS: 2.16
+          durationS: 1.92
+        - text: So is that end of Court Street.
+          atS: 4.59
+          durationS: 2.23
+        - text: The telephone made its first sound here.
+          atS: 7.2
+          durationS: 2.24
+        - text: Not a word.
+          atS: 9.68
+          durationS: 0.93
+        - text: A twang.
+          atS: 10.99
+          durationS: 0.89
+        - text: In eighteen seventy five, Alexander Graham Bell was using two attic rooms at one hundred and nine Court Street, above Charles Williams's workshop.
+          atS: 12.4
+          durationS: 8.82
+        - text: Freezing in winter, his assistant remembered, and unbearably hot in summer.
+          atS: 21.92
+          durationS: 4.99
+        - text: Bell did not set out to invent the telephone.
+          atS: 27.72
+          durationS: 2.6
+        - text: He set out to build a better telegraph.
+          atS: 30.65
+          durationS: 2.4
+        - text: On the afternoon of the second of June, his assistant, Thomas Watson, was in the other room with a steel reed that would not start.
+          atS: 33.75
+          durationS: 7.59
+        - text: So he plucked it.
+          atS: 41.73
+          durationS: 1.11
+        - text: Then he gave it several more hard plucks, and by his own account he said what he thought of it, in vivid shop language.
+          atS: 43.28
+          durationS: 6.7
+        - text: In the next room, Bell had a receiver pressed to his ear.
+          atS: 50.68
+          durationS: 3.55
+        - text: He heard the reed.
+          atS: 54.61
+          durationS: 1.11
+        - text: He came running out in great excitement.
+          atS: 56.05
+          durationS: 2.26
+        - text: The plucked reed had made its own current, and sent its sound down the wire.
+          atS: 58.7
+          durationS: 4.44
+        - text: In Watson's words, it was the first real sound that had ever been transmitted electrically.
+          atS: 63.58
+          durationS: 5.68
+        - text: The telephone began with a stuck reed, and a man losing his temper with it.
+          atS: 69.95
+          durationS: 4.49

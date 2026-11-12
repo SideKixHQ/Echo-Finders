@@ -1,0 +1,139 @@
+# From 18 of James's Twenty Stories collection (2026-10-09).
+# Listening spot: Designated overlook, only when open. This is a viewing location, not an alleged apparition’s exact position.
+# Position: interpolated to Parkway milepost 310; check on a map (low confidence).
+# REVIEW FLAG: no published coordinate for Lost Cove Cliffs Overlook (MP 310); interpolated
+# along the Parkway and could be up to 1.5 km out. Check on a map.
+id: the-lights-beyond-the-ridge
+title: "The Lights Beyond the Ridge"
+summary: "Look out toward the ridges."
+place: "Lost Cove Cliffs Overlook, Blue Ridge Parkway, North Carolina"
+at: { lat: 36.00100, lng: -81.87900 }
+triggerRadiusKm: 0.4
+category: unsolved
+format: short
+durationS: 58
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A published legend. The script says out loud that the haunting is reported, not proven; no supernatural claim is established.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [blue-ridge-parkway, ghosts]
+teaser: "Look out toward the ridges."
+script: |
+  Look out toward the ridges.
+
+  Since at least 1910, people have reported unusual lights around Brown Mountain.
+
+  The descriptions vary: bright points that appear, seem to move, then disappear.
+
+  The lights became part of local folklore, often given ghostly explanations. The Park Service calls them a legend.
+
+  The National Park Service notes that studies have linked reports to ordinary sources,
+  including vehicle headlights.
+
+  So a distant light is not evidence of a spirit.
+
+  But distance makes certainty difficult.
+
+  You might not see the road beneath a moving light. You might not recognize the angle. Trees
+  can hide a source and reveal it again.
+
+  That uncertainty is part of why the legend endures.
+
+  Watch from the designated overlook. There is no need to chase anything into the woods.
+
+  If you see a light, notice its direction and movement before deciding what it is.
+
+  The landscape is real.
+
+  The reports are documented.
+
+  What people make of them is where the ghost story begins.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Since at least 1910, people have reported unusual lights around Brown Mountain."
+    source: 1
+    quote: "Witnesses have claimed to see strange bright lights that appear as if from nowhere, and disappear without a trace, on and around Brown Mountain since at least 1910."
+  - says: "The descriptions vary: bright points that appear, seem to move, then disappear."
+    source: 1
+    quote: "strange bright lights that appear as if from nowhere, and disappear without a trace"
+  - says: "The Park Service calls them a legend."
+    source: 1
+    quote: "you just may catch a glimpse of legend— the mysterious and elusive Brown Mountain lights!"
+  - says: "The National Park Service notes that studies have linked reports to ordinary sources, including vehicle headlights."
+    source: 1
+    quote: "Despite various studies showing that these reports are likely describing normal occurrences such as vehicle headlights"
+  - says: "The reports are documented."
+    source: 1
+    quote: "Witnesses have claimed to see strange bright lights"
+sources:
+  - title: "Lost Cove Cliffs Overlook"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/lost-cove-cliffs-overlook.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/the-lights-beyond-the-ridge/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 57.6
+    audioBytes: 922478
+    transcript:
+      totalS: 57.6
+      lines:
+        - text: Look out toward the ridges.
+          atS: 0
+          durationS: 1.47
+        - text: Since at least 1910, people have reported unusual lights around Brown Mountain.
+          atS: 1.92
+          durationS: 4.33
+        - text: "The descriptions vary: bright points that appear, seem to move, then disappear."
+          atS: 6.34
+          durationS: 4.79
+        - text: The lights became part of local folklore, often given ghostly explanations.
+          atS: 11.64
+          durationS: 4.49
+        - text: The Park Service calls them a legend.
+          atS: 16.84
+          durationS: 1.8
+        - text: The National Park Service notes that studies have linked reports to ordinary sources, including vehicle headlights.
+          atS: 18.91
+          durationS: 6.11
+        - text: So a distant light is not evidence of a spirit.
+          atS: 25.46
+          durationS: 2.65
+        - text: But distance makes certainty difficult.
+          atS: 28.55
+          durationS: 2.07
+        - text: You might not see the road beneath a moving light.
+          atS: 30.94
+          durationS: 2.38
+        - text: You might not recognize the angle.
+          atS: 33.56
+          durationS: 1.94
+        - text: Trees can hide a source and reveal it again.
+          atS: 35.78
+          durationS: 2.47
+        - text: That uncertainty is part of why the legend endures.
+          atS: 38.53
+          durationS: 2.91
+        - text: Watch from the designated overlook.
+          atS: 41.77
+          durationS: 2
+        - text: There is no need to chase anything into the woods.
+          atS: 43.92
+          durationS: 2.45
+        - text: If you see a light, notice its direction and movement before deciding what it is.
+          atS: 46.46
+          durationS: 4.54
+        - text: The landscape is real.
+          atS: 51.18
+          durationS: 1.35
+        - text: The reports are documented.
+          atS: 52.65
+          durationS: 1.53
+        - text: What people make of them is where the ghost story begins.
+          atS: 54.3
+          durationS: 3.29

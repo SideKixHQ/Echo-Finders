@@ -1,0 +1,174 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: South sidewalk of Magazine Street in front of the Old City Jail, just east of Franklin Street.
+# Position: HABS places the jail at the southeast corner of Magazine and Franklin; intersection from Overture road segments, matched by the Overture "Old City Jail" point at 21 Magazine St (high confidence).
+id: charleston-the-night-the-wall-opened
+title: "The Night the Wall Opened"
+summary: "The Old Jail used to be taller. On the night of the 1886 earthquake, its yard wall split, and half the prisoners walked out."
+place: "Old City Jail, 21 Magazine Street, Charleston, South Carolina"
+at: { lat: 32.77862, lng: -79.93718 }
+triggerRadiusKm: 0.04
+category: disasters
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, jails, earthquake-1886, architecture]
+teaser: "Look up at the Old Jail. It used to be taller."
+script: |
+  Look up at the old jail. Heavy walls, towers, the look of a building nothing could move.
+
+  It used to be taller.
+
+  It was built in eighteen-oh-two, and through the eighteen hundreds the main building had a fourth floor. Over
+  the eight-sided wing at the back stood a tall tower, which the records call the
+  ventilator, or the high cupola.
+
+  On the last night of August, eighteen eighty-six, an earthquake struck Charleston.
+
+  The local paper reported that the jail's walls, in some places nearly three feet thick,
+  yielded to the quivering earth like so much glass. Cracks ran from the top of the building
+  down into the foundations.
+
+  The jailer made a decision. Rather than leave his prisoners in cells that might come down
+  on them, he let them out into the jail yard.
+
+  The yard had a wall around it. The earthquake opened a gap in it.
+
+  There were sixty-nine prisoners in the jail that night. Thirty-six of them went out
+  through the gap.
+
+  Afterwards the tower was condemned and torn down, and the top storey was removed. The
+  building you are looking at is the jail the earthquake left behind. It went on holding
+  prisoners until nineteen thirty-nine.
+
+  It still looks like nothing could get out of it. For one night, more than half of the
+  people inside proved otherwise.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It was built in eighteen-oh-two, and through the eighteen hundreds the main building had a fourth floor."
+    source: 2
+    quote: "When the Jail was constructed in 1802 it consisted of four stories, topped with a two-story octagonal tower."
+  - says: "It was built in eighteen-oh-two, and through the eighteen hundreds the main building had a fourth floor."
+    source: 2
+    quote: "The 1886 earthquake badly damaged the tower and top story of the main building, and these were subsequently removed."
+  - says: "Over the eight-sided wing at the back stood a tall tower, which the records call the ventilator, or the high cupola."
+    source: 1
+    quote: "the octagonal tower on top of the octagonal wing. This tower, also referred to as the \"ventilator\" or the \"high cupola,\""
+  - says: "Over the eight-sided wing at the back stood a tall tower, which the records call the ventilator, or the high cupola."
+    source: 2
+    quote: "including a rear octagonal wing"
+  - says: "On the last night of August, eighteen eighty-six, an earthquake struck Charleston."
+    source: 1
+    quote: "\"The County Jail,\" News and Courier, September 4, 1886."
+  - says: "On the last night of August, eighteen eighty-six, an earthquake struck Charleston."
+    source: 1
+    quote: "The article also described events at the jail the night of the earthquake."
+  - says: "The local paper reported that the jail's walls, in some places nearly three feet thick, yielded to the quivering earth like so much glass."
+    source: 1
+    quote: "According to the News and Courier: The massive brick walls, in some places nearly three feet thick, yielded to the quivering earth like so much glass"
+  - says: "Cracks ran from the top of the building down into the foundations."
+    source: 1
+    quote: "the walls are filled with gaping cracks, many of which extend from the top of the building to the very foundations underground."
+  - says: "Rather than leave his prisoners in cells that might come down on them, he let them out into the jail yard."
+    source: 1
+    quote: "Apparently the jailer released the prisoners into the jail yard to avoid their being injured by the trembling building."
+  - says: "The earthquake opened a gap in it."
+    source: 1
+    quote: "The earthquake, however, created an opening in the jail wall"
+  - says: "There were sixty-nine prisoners in the jail that night."
+    source: 1
+    quote: "through which thirty-six of the sixty-nine prisoners escaped."
+  - says: "Thirty-six of them went out through the gap."
+    source: 1
+    quote: "through which thirty-six of the sixty-nine prisoners escaped."
+  - says: "Afterwards the tower was condemned and torn down, and the top storey was removed."
+    source: 1
+    quote: "had to be condemned and torn down."
+  - says: "Afterwards the tower was condemned and torn down, and the top storey was removed."
+    source: 2
+    quote: "The 1886 earthquake badly damaged the tower and top story of the main building, and these were subsequently removed."
+  - says: "It went on holding prisoners until nineteen thirty-nine."
+    source: 1
+    quote: "The Charleston District Jail operated as a place of incarceration from the time of its completion until its sale to the Housing Authority in 1939."
+  - says: "For one night, more than half of the people inside proved otherwise."
+    source: 1
+    quote: "through which thirty-six of the sixty-nine prisoners escaped."
+sources:
+  - title: "Charleston County Jail, HABS No. SC-688, written historical and descriptive data (Christine Trebellas, 1994)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc0900/sc0902/data/sc0902data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Old Jail"
+    publisher: "National Park Service, Travel Historic Charleston"
+    url: https://www.nps.gov/places/old-jail.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-night-the-wall-opened/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 87.6
+    audioBytes: 1403132
+    transcript:
+      totalS: 87.6
+      lines:
+        - text: Look up at the old jail.
+          atS: 0
+          durationS: 1.71
+        - text: Heavy walls, towers, the look of a building nothing could move.
+          atS: 1.95
+          durationS: 4.54
+        - text: It used to be taller.
+          atS: 6.73
+          durationS: 1.42
+        - text: It was built in eighteen-oh-two, and through the eighteen hundreds the main building had a fourth floor.
+          atS: 8.53
+          durationS: 6.33
+        - text: Over the eight-sided wing at the back stood a tall tower, which the records call the ventilator, or the high cupola.
+          atS: 15.37
+          durationS: 7.52
+        - text: On the last night of August, eighteen eighty-six, an earthquake struck Charleston.
+          atS: 24.01
+          durationS: 5.42
+        - text: The local paper reported that the jail's walls, in some places nearly three feet thick, yielded to the quivering earth like so much glass.
+          atS: 30.13
+          durationS: 8.99
+        - text: Cracks ran from the top of the building down into the foundations.
+          atS: 39.39
+          durationS: 3.99
+        - text: The jailer made a decision.
+          atS: 43.83
+          durationS: 1.52
+        - text: Rather than leave his prisoners in cells that might come down on them, he let them out into the jail yard.
+          atS: 45.67
+          durationS: 6.25
+        - text: The yard had a wall around it.
+          atS: 52.43
+          durationS: 2.03
+        - text: The earthquake opened a gap in it.
+          atS: 54.64
+          durationS: 2.11
+        - text: There were sixty-nine prisoners in the jail that night.
+          atS: 57.45
+          durationS: 3.19
+        - text: Thirty-six of them went out through the gap.
+          atS: 61.24
+          durationS: 2.94
+        - text: Afterwards the tower was condemned and torn down, and the top storey was removed.
+          atS: 64.78
+          durationS: 5.43
+        - text: The building you are looking at is the jail the earthquake left behind.
+          atS: 71.33
+          durationS: 3.99
+        - text: It went on holding prisoners until nineteen thirty-nine.
+          atS: 76.02
+          durationS: 3.63
+        - text: It still looks like nothing could get out of it.
+          atS: 80.35
+          durationS: 2.51
+        - text: For one night, more than half of the people inside proved otherwise.
+          atS: 83.56
+          durationS: 4.08

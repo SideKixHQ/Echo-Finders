@@ -1,0 +1,234 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch, following docs/writing-echoes.md and docs/14-true-crime.md.
+# Listening spot: The Frances Street sidewalk on the east side of the Key West Cemetery (the "city cemetery" of the 1940 reports), where Elena Hoyos was first buried in a vault. The vault is not located or pointed at, and her second grave was kept secret, so the listener stands outside the cemetery on the public sidewalk.
+# Position: Frances Street midway between Angela Street (24.55821, -81.79439) and Olivia Street (24.55630, -81.79303) in the app's Key West street file; Wikidata Q14686015 puts the cemetery at 24.5564, -81.7951. This keeps about 300 m from the existing Maine memorial echo at the Margaret Street side (medium confidence).
+# Category: the brief listed this case under legend, but the record is documented (an arrest, a charge, a grand jury), and the validator does not allow a documented legend; ADR-0009 says crime told as fact belongs in true crime. So it is filed here, with the true crime rules applied.
+# Sources: the Key West Citizen's own report (7 October 1940), Associated Press reports in the Washington Evening Star (8 October, 10 November and 19 December 1940, counted as one source), and United Press reports in the McAllen Daily Press (7 October 1940) and the Washington Daily News (20 December 1940), counted as one source. Corroborated 2026-11-12: her death in 1931 after treatment for tuberculosis at the Marine Hospital where he worked; the vault he paid for with the family's permission; the body found in his house in October 1940 and kept, by the reports, for seven years; the charge of disturbing the vault; no indictment because of the statute of limitations; the secret reburial by her sister in December 1940. Each is in at least two of the three.
+# The reports disagree on her age (19 or 22) and spell her name Hoyos, Hoyo and Hoyas; the script gives no age and uses Hoyos.
+id: key-west-the-grave-nobody-was-shown
+title: "The Grave Nobody Was Shown"
+summary: "In 1940 a Key West X-ray technician was found to have kept a young woman's body for years. He was never tried. She was reburied in secret."
+place: "Key West Cemetery, Frances Street side, Key West, Florida"
+at: { lat: 24.55725, lng: -81.79371 }
+triggerRadiusKm: 0.05
+category: true-crime
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.8
+tags: [key-west, true-crime, 1940, cemetery, von-cosel, elena-hoyos]
+teaser: "Her sister buried her again, before dawn, and told no one where."
+script: |
+  Stand on the sidewalk and look in at the cemetery's vaults.
+
+  In nineteen thirty one, a young woman named Elena Hoyos died. She had been treated for tuberculosis at the Marine Hospital in Key West. An X-ray technician there, a man named Karl Tanzler von Cosel, had fallen in love with her.
+
+  After she died, with her family's permission, he paid for a vault for her in this cemetery. He visited it regularly.
+
+  In October nineteen forty, her family grew suspicious. A search warrant was issued. And her body was found in his house, where, police said, it had been for seven years.
+
+  He did not deny taking her. He told reporters he had promised to take care of her, and that he had wanted to see whether life could be restored.
+
+  He was charged with maliciously disturbing the vault. But a grand jury did not indict him. The statute of limitations, it said, barred prosecution. He was never tried.
+
+  That December, before dawn, her sister buried her again. The new grave was not revealed.
+
+  It was kept secret so that he could not find her.
+detail: >-
+  Told from the record and the 1940 reporting only. He was charged (a warrant for malicious and wanton disfigurement of a burial vault, reported by the Associated Press as maliciously disturbing the contents of a tomb and by the United Press as mutilating a vault), admitted taking the body, and was not indicted because the time limit had passed; so the conviction status is "alleged", and the script says what he was charged with, what he said, and how it ended. The reports' details about the state of the body, its reconstruction and the public viewing at a funeral home are left out on purpose: the echo is about her, the town and the ending, not about the remains. Everyone named died long ago; her relatives are not named. The search warrant and the family's suspicion rest on the United Press report quoting the sheriff's office; the Key West Citizen says county officials had been investigating reports of grave robbing.
+pronunciations:
+  - written: "Hoyos"
+    say: "OY-ohs"
+  - written: "Tanzler von Cosel"
+    say: "TANTS-ler fon KO-zel"
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: alleged
+  reviewedBy: "James (owner), approved 2026-11-12"
+  reviewedAt: "2026-11-12"
+  contentWarning: "This echo is about a man who took a young woman's body from her grave in Key West. Nothing is described in detail."
+claims:
+  - says: "Stand on the sidewalk and look in at the cemetery's vaults."
+    source: 1
+    quote: "the damage created to several vaults."
+  - says: "In nineteen thirty one, a young woman named Elena Hoyos died."
+    source: 3
+    quote: "She died in 1931."
+  - says: "In nineteen thirty one, a young woman named Elena Hoyos died."
+    source: 2
+    quote: "who died nine years ago at the age of 19."
+  - says: "She had been treated for tuberculosis at the Marine Hospital in Key West."
+    source: 1
+    quote: "then employed at the Marine hospital as an X-ray expert, met the young lady, de clared to have been very beauti ful, whi n she was admitted to that institution suffering from tuberculosis."
+  - says: "She had been treated for tuberculosis at the Marine Hospital in Key West."
+    source: 2
+    quote: "when sheVas treated at the hospital for tuberculosis."
+  - says: "An X-ray technician there, a man named Karl Tanzler von Cosel, had fallen in love with her."
+    source: 2
+    quote: "X-ray ex pert formerly employed at the Ma rine Hospital here"
+  - says: "An X-ray technician there, a man named Karl Tanzler von Cosel, had fallen in love with her."
+    source: 3
+    quote: "he met her in 1929 in a hospital here where she was a patient for tuberculosis and he was an x-ray technician."
+  - says: "After she died, with her family's permission, he paid for a vault for her in this cemetery."
+    source: 2
+    quote: "After her death he financed construction of a vault and obtained permission of the family to have the body disintered and placed there."
+  - says: "After she died, with her family's permission, he paid for a vault for her in this cemetery."
+    source: 3
+    quote: "two years later Cosel cbtained permission from her family to transfer the body to a vault which was built at his ex. pense in city cemetery."
+  - says: "He visited it regularly."
+    source: 3
+    quote: "Cosel visited the vault regularly"
+  - says: "He visited it regularly."
+    source: 1
+    quote: "was visited regularly by her aged lover"
+  - says: "In October nineteen forty, her family grew suspicious."
+    source: 3
+    quote: "gradually the family grew suspicious"
+  - says: "A search warrant was issued."
+    source: 3
+    quote: "a search warrant was issued."
+  - says: "And her body was found in his house, where, police said, it had been for seven years."
+    source: 3
+    quote: "The body, police said, had been in his bed for seven years"
+  - says: "And her body was found in his house, where, police said, it had been for seven years."
+    source: 2
+    quote: "the corpse he kept in his bedroom seven years."
+  - says: "He did not deny taking her."
+    source: 5
+    quote: "When he was arrested, Von Cosel admitted taking the body"
+  - says: "He told reporters he had promised to take care of her, and that he had wanted to see whether life could be restored."
+    source: 2
+    quote: "I promised Elena that I would take care of her no matter what hap pened."
+  - says: "He told reporters he had promised to take care of her, and that he had wanted to see whether life could be restored."
+    source: 2
+    quote: "try mv experiments to see whether life could be restored."
+  - says: "He told reporters he had promised to take care of her, and that he had wanted to see whether life could be restored."
+    source: 5
+    quote: "had made a vow to “take care of her as long as I lived.”"
+  - says: "He was charged with maliciously disturbing the vault."
+    source: 1
+    quote: "formerly charged with mali cious and wanton disfigure ment of a burial vault in the city cemetery"
+  - says: "He was charged with maliciously disturbing the vault."
+    source: 2
+    quote: "disturbing the contents of a tomb"
+  - says: "But a grand jury did not indict him."
+    source: 4
+    quote: "A Mon roe County grand Jury today failed to Indict Karl Tanzler Van Cosel"
+  - says: "The statute of limitations, it said, barred prosecution."
+    source: 4
+    quote: "the grand Jury said the statute of limitations barred prosecution."
+  - says: "He was never tried."
+    source: 5
+    quote: "Charges against him were dropped recently after authorities agreed that they were outlawed by the statute of limitations."
+  - says: "That December, before dawn, her sister buried her again."
+    source: 6
+    quote: "sister of the dead girl, ordered the burial before dawn yesterday."
+  - says: "That December, before dawn, her sister buried her again."
+    source: 5
+    quote: "was buried yesterday by her sister."
+  - says: "The new grave was not revealed."
+    source: 5
+    quote: "The location of the new grave was not revealed"
+  - says: "The new grave was not revealed."
+    source: 6
+    quote: "has been secretly buried"
+  - says: "It was kept secret so that he could not find her."
+    source: 5
+    quote: "The location of the new grave was not revealed for fear Von Cosel might at tempt to obtain the corpse again."
+sources:
+  - title: "The Key West Citizen, 7 October 1940, page 1: report on the charge against Karl Tanzler Van Cosel"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83016244/1940-10-07/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Evening Star (Washington, D.C.), 8 October 1940, page 15: Associated Press report from Key West"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1940-10-08/ed-1/?sp=15
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "McAllen Daily Press (McAllen, Tex.), 7 October 1940, page 1: United Press report, Man Sleeps With Dead Body 7 Years"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86089716/1940-10-07/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Evening Star (Washington, D.C.), 10 November 1940, page 23: Associated Press, Jury Fails to Indict Man Who Kept Body 7 Years"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1940-11-10/ed-1/?sp=23
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "The Washington Daily News, 20 December 1940, page 11: United Press, Eccentric to Fight for Woman's Body"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82016181/1940-12-20/ed-1/?sp=11
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Evening Star (Washington, D.C.), 19 December 1940, page 33: Associated Press, Man May Sue for Girl's Body He Kept 9 Years"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1940-12-19/ed-1/?sp=33
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/key-west-the-grave-nobody-was-shown/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 67.7
+    audioBytes: 1084229
+    transcript:
+      totalS: 67.7
+      lines:
+        - text: Stand on the sidewalk and look in at the cemetery's vaults.
+          atS: 0
+          durationS: 3.02
+        - text: In nineteen thirty one, a young woman named Elena Hoyos died.
+          atS: 3.3
+          durationS: 4.34
+        - text: She had been treated for tuberculosis at the Marine Hospital in Key West.
+          atS: 7.92
+          durationS: 3.98
+        - text: An X-ray technician there, a man named Karl Tanzler von Cosel, had fallen in love with her.
+          atS: 12.22
+          durationS: 6.57
+        - text: After she died, with her family's permission, he paid for a vault for her in this cemetery.
+          atS: 19.31
+          durationS: 5.17
+        - text: He visited it regularly.
+          atS: 24.8
+          durationS: 1.58
+        - text: In October nineteen forty, her family grew suspicious.
+          atS: 26.82
+          durationS: 3.19
+        - text: A search warrant was issued.
+          atS: 30.34
+          durationS: 1.52
+        - text: And her body was found in his house, where, police said, it had been for seven years.
+          atS: 32.03
+          durationS: 5.39
+        - text: He did not deny taking her.
+          atS: 37.74
+          durationS: 1.66
+        - text: He told reporters he had promised to take care of her, and that he had wanted to see whether life could be restored.
+          atS: 39.68
+          durationS: 6.11
+        - text: He was charged with maliciously disturbing the vault.
+          atS: 46.23
+          durationS: 3.17
+        - text: But a grand jury did not indict him.
+          atS: 49.73
+          durationS: 2.53
+        - text: The statute of limitations, it said, barred prosecution.
+          atS: 52.7
+          durationS: 3.97
+        - text: He was never tried.
+          atS: 57.11
+          durationS: 1.2
+        - text: That December, before dawn, her sister buried her again.
+          atS: 58.91
+          durationS: 3.65
+        - text: The new grave was not revealed.
+          atS: 63
+          durationS: 1.88
+        - text: It was kept secret so that he could not find her.
+          atS: 65.03
+          durationS: 2.68

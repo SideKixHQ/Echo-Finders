@@ -1,0 +1,149 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch, following docs/writing-echoes.md.
+# Listening spot: The Duval Street sidewalk outside the San Carlos Institute (516 Duval Street), the Cuban community's institution in Key West. The script does not name or describe the building, because no source reachable from this session covered it; it is chosen as the natural place on Duval Street to hear this.
+# Position: Wikidata Q22058823 (San Carlos Institute, 24.555279, -81.802801), on the 500 block of Duval Street between Fleming (24.55599, -81.80292) and Southard Streets in the app's Key West street file (medium high confidence).
+id: key-west-every-factory-a-club
+title: "Every Factory a Club"
+summary: "In 1892 a Key West organiser said every Cuban on the island belonged to a revolutionary club, and every cigar factory was one."
+place: "Duval Street by the San Carlos Institute, Key West, Florida"
+at: { lat: 24.55528, lng: -81.80280 }
+triggerRadiusKm: 0.04
+category: inspo
+inspo:
+  kind: connection
+  evidence: area
+format: short
+durationS: 72
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [key-west, jose-marti, cuba, cigar-makers, duval-street, 1890s]
+teaser: "A revolution organised in the rooms where people rolled cigars."
+script: |
+  Stand on Duval Street, and picture this island in the days of the cigar factories.
+
+  That summer, in Chicago, a man named Socorro told a reporter how a revolution was being organised. Until recently, he had been secretary of the council of Cuban club presidents here, in Key West.
+
+  Key West, he said, was so well organised that every Cuban here belonged to one club or more. And every cigar factory was a club.
+
+  Even the women had formed clubs.
+
+  The clubs spread the word, bought arms, and enlisted men, ready to move at a moment's notice.
+
+  At their head, he said, was José Martí. As a schoolboy, the paper said, Martí took the blame alone for an essay he and a friend had written for Cuban independence, and was put to work in irons in the streets of Havana.
+
+  Martí, he said, would not waste lives. He was waiting for the word.
+
+  Three years later, Martí was killed on the field of battle in Cuba.
+
+  But picture it. A revolution organised not in barracks, but in the rooms where people rolled cigars.
+detail: >-
+  From the Pittsburg Dispatch of 28 July 1892 (a Chicago interview with K. G. Socorro, until recently secretary of the Council of Presidents of Cuban clubs at Key West): every Cuban in Key West in one or more clubs and every cigar factory a club; women's clubs in Key West; the clubs' objects (propaganda, arms, enlistment, readiness); Martí at the head of the revolutionary party, unwilling to make a useless sacrifice of life, waiting for the word; and the paper's account of Martí's arrest as a boy over an essay for independence, the chain gang and the streets of Havana. The paper gives his age then as 12; other accounts put the arrest later, so the script says "as a schoolboy" and attributes it to the paper. Martí's death on the field of battle is from the New-York Tribune of 3 November 1895. Nothing in either source names a building in Key West; San Carlos is only the listening spot.
+pronunciations:
+  - written: "José Martí"
+    say: "ho-SAY mar-TEE"
+  - written: "Socorro"
+    say: "so-KOR-oh"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "That summer, in Chicago, a man named Socorro told a reporter how a revolution was being organised."
+    source: 1
+    quote: "CrtlCAGO, July 27. \"A revolution in the Island of Cuba is likely to take place at any moment,\" said K. G. Socorro"
+  - says: "Until recently, he had been secretary of the council of Cuban club presidents here, in Key West."
+    source: 1
+    quote: "who was until recently Secretary of the -Council of Presidents of Cuban clubs at Key West"
+  - says: "Key West, he said, was so well organised that every Cuban here belonged to one club or more."
+    source: 1
+    quote: "Now Key West is so well organ ized that every Cuban there belongs to one or more clubs, and every cigar factory is a club."
+  - says: "And every cigar factory was a club."
+    source: 1
+    quote: "and every cigar factory is a club."
+  - says: "Even the women had formed clubs."
+    source: 1
+    quote: "Even the women have formed clubs in Key West"
+  - says: "The clubs spread the word, bought arms, and enlisted men, ready to move at a moment's notice."
+    source: 1
+    quote: "The objects of the clubs are the tpreading of propaganda, the purchase of amis anu munitions of war, the enlistment cl men and the preparation for an outbreak at a moment's notice."
+  - says: "At their head, he said, was José Martí."
+    source: 1
+    quote: "Fortunately we have at the head of the revolutionary party a man, Josepe Marti, who possesses the necessary prudence."
+  - says: "As a schoolboy, the paper said, Martí took the blame alone for an essay he and a friend had written for Cuban independence, and was put to work in irons in the streets of Havana."
+    source: 1
+    quote: "he and a schoolmato named Valdes JDominguez were implicated in writing an essay advocating Cuban inde pendence."
+  - says: "As a schoolboy, the paper said, Martí took the blame alone for an essay he and a friend had written for Cuban independence, and was put to work in irons in the streets of Havana."
+    source: 1
+    quote: "Josepe Marti avowed him self alone responsible to save his school mates. He was put in the chain gang and compelled to work in the streets ot Havana in irons."
+  - says: "Martí, he said, would not waste lives."
+    source: 1
+    quote: "He will not consent to a useless cicrificc of life"
+  - says: "He was waiting for the word."
+    source: 1
+    quote: "All he is waiting for now is to hear the word."
+  - says: "Three years later, Martí was killed on the field of battle in Cuba."
+    source: 2
+    quote: "When Jose Marti was killed on the field of battle in Cuba"
+  - says: "A revolution organised not in barracks, but in the rooms where people rolled cigars."
+    source: 1
+    quote: "and every cigar factory is a club."
+sources:
+  - title: "Pittsburg Dispatch, 28 July 1892, page 12: Ready for Revolt (interview with K. G. Socorro)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84024546/1892-07-28/ed-1/?sp=12
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "New-York Tribune, 3 November 1895, page 12"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030214/1895-11-03/ed-1/?sp=12
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-every-factory-a-club/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72
+    audioBytes: 1152774
+    transcript:
+      totalS: 72
+      lines:
+        - text: Stand on Duval Street, and picture this island in the days of the cigar factories.
+          atS: 0
+          durationS: 4.92
+        - text: That summer, in Chicago, a man named Socorro told a reporter how a revolution was being organised.
+          atS: 6.04
+          durationS: 6.59
+        - text: Until recently, he had been secretary of the council of Cuban club presidents here, in Key West.
+          atS: 13.23
+          durationS: 5.85
+        - text: Key West, he said, was so well organised that every Cuban here belonged to one club or more.
+          atS: 19.6
+          durationS: 5.65
+        - text: And every cigar factory was a club.
+          atS: 25.69
+          durationS: 2.44
+        - text: Even the women had formed clubs.
+          atS: 28.57
+          durationS: 2.05
+        - text: The clubs spread the word, bought arms, and enlisted men, ready to move at a moment's notice.
+          atS: 31.14
+          durationS: 6.51
+        - text: At their head, he said, was José Martí.
+          atS: 38.46
+          durationS: 3.05
+        - text: As a schoolboy, the paper said, Martí took the blame alone for an essay he and a friend had written for Cuban independence, and was put to work in irons in the streets of Havana.
+          atS: 42.33
+          durationS: 11.49
+        - text: Martí, he said, would not waste lives.
+          atS: 54.43
+          durationS: 2.84
+        - text: He was waiting for the word.
+          atS: 57.6
+          durationS: 1.66
+        - text: Three years later, Martí was killed on the field of battle in Cuba.
+          atS: 59.64
+          durationS: 4.6
+        - text: But picture it.
+          atS: 64.62
+          durationS: 1.06
+        - text: A revolution organised not in barracks, but in the rooms where people rolled cigars.
+          atS: 66.12
+          durationS: 5.86

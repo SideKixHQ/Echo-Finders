@@ -74,6 +74,12 @@ const NOTE: Record<EchoCategory, number> = {
   "food-drink": 293.66, // D4
   kids: 329.63, // E4
   inspo: 392.0, // G4, the next note of the same pentatonic: still a chord with all the rest
+  // The five of 2026-11-12, still A minor pentatonic: the heavy two below the rest.
+  disasters: 82.41, // E2
+  unsolved: 98.0, // G2
+  hidden: 196.0, // G3, with land: both are about the ground
+  music: 440.0, // A4
+  firsts: 523.25, // C5
 };
 
 /**
@@ -94,6 +100,11 @@ const WAVE: Record<EchoCategory, OscillatorType> = {
   "food-drink": "sine",
   kids: "triangle",
   inspo: "triangle",
+  disasters: "triangle",
+  unsolved: "triangle",
+  hidden: "sine",
+  music: "triangle",
+  firsts: "sine",
 };
 
 /** Beyond this nothing hums. Past it a tone is not guidance, it is a rumour. */

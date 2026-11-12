@@ -1,0 +1,131 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: Sidewalk or road shoulder at the state highway marker for Hurricane Hazel, Country Club Drive (NC 133) at Yaupon Way.
+# Position: Marker location from the DNCR marker page (NC 133, Country Club Drive, at Yaupon Way); intersection placed between the Overture points 1 and 3 Yaupon Way (33.9125, -78.0726) and 121 Country Club Drive (33.9119, -78.0732) (medium confidence for the marker itself).
+id: oak-island-five-left-standing
+title: "Five Left Standing"
+summary: "Hurricane Hazel's surge in October 1954 swept away 352 of the 357 buildings on Long Beach, today's Oak Island."
+place: "Hurricane Hazel historical marker, Country Club Drive (NC 133) at Yaupon Way, Oak Island, North Carolina"
+at: { lat: 33.9122, lng: -78.073 }
+triggerRadiusKm: 0.05
+category: disasters
+format: short
+durationS: 52
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [oak-island, long-beach, hurricane-hazel, storms]
+teaser: "In 1954 this beach had three hundred and fifty-seven buildings. One morning it had five."
+script: |
+  Find the state highway marker beside the road here. It is for a storm.
+
+  On the fifteenth of October, 1954, Hurricane Hazel came ashore in southern Brunswick County, on a full moon high tide.
+
+  This beach was a town called Long Beach then. A storm surge of seventeen feet swept across the island.
+
+  There were three hundred and fifty-seven buildings on the island. The surge took three hundred and fifty-two of them.
+
+  Grass covered sand dunes, ten to twenty feet high, simply disappeared.
+
+  The marker calls it the greatest coastal flood in North Carolina's recorded history. Hazel is still the storm every hurricane here is measured against.
+
+  Five buildings were left standing. Count the houses on this one street, and you will already have counted more than survived.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Find the state highway marker beside the road here."
+    source: 1
+    quote: "Location: NC 133 (Country Club Drive) at Yaupon Way in Oak Island"
+  - says: "On the fifteenth of October, 1954, Hurricane Hazel came ashore in southern Brunswick County, on a full moon high tide."
+    source: 1
+    quote: "On October 15, 1954, Hurricane Hazel made landfall in southern Brunswick County"
+  - says: "on a full moon high tide"
+    source: 1
+    quote: "Its landfall in North Carolina occurred on a full moon high tide"
+  - says: "This beach was a town called Long Beach then."
+    source: 1
+    quote: "Long Beach (present-day Oak Island)"
+  - says: "A storm surge of seventeen feet swept across the island."
+    source: 1
+    quote: "where a 17-foot storm surge swept away 352 of the 357 structures on the island."
+  - says: "There were three hundred and fifty-seven buildings on the island."
+    source: 1
+    quote: "where a 17-foot storm surge swept away 352 of the 357 structures on the island."
+  - says: "The surge took three hundred and fifty-two of them."
+    source: 1
+    quote: "where a 17-foot storm surge swept away 352 of the 357 structures on the island."
+  - says: "Grass covered sand dunes, ten to twenty feet high, simply disappeared."
+    source: 2
+    quote: "Grass-covered sand dunes 10 to 20 feet high simply disappeared during the storm on Oak Island, a testament to the power of the storm surge."
+  - says: "The marker calls it the greatest coastal flood in North Carolina's recorded history."
+    source: 1
+    quote: "to this day represents the greatest coastal inundation in North Carolina's recorded history."
+  - says: "Hazel is still the storm every hurricane here is measured against."
+    source: 1
+    quote: "Hazel remains the standard by which other North Carolina hurricanes are measured."
+  - says: "Count the houses on this one street, and you will already have counted more than survived."
+    source: 3
+    quote: "But Hurricane Hazel destroyed all but five buildings in 1954"
+  - says: "Five buildings were left standing."
+    source: 3
+    quote: "But Hurricane Hazel destroyed all but five buildings in 1954"
+sources:
+  - title: "Hurricane Hazel (D-109)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/11/hurricane-hazel-d-109
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Top 20 Storms in Wilmington, North Carolina's History"
+    publisher: "National Weather Service Wilmington, NC"
+    url: https://www.weather.gov/ilm/top_20_storms
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+  - title: "History with 'Hud': How three Cape Fear beach towns exploded into popular tourist destinations"
+    publisher: "WWAY TV3"
+    url: https://www.wwaytv3.com/history-with-hud-how-three-cape-fear-beach-towns-exploded-into-popular-tourist-destinations/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/oak-island-five-left-standing/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 51.5
+    audioBytes: 825930
+    transcript:
+      totalS: 51.5
+      lines:
+        - text: Find the state highway marker beside the road here.
+          atS: 0
+          durationS: 3.15
+        - text: It is for a storm.
+          atS: 3.35
+          durationS: 1.29
+        - text: On the fifteenth of October, 1954, Hurricane Hazel came ashore in southern Brunswick County, on a full moon high tide.
+          atS: 5.34
+          durationS: 8.6
+        - text: This beach was a town called Long Beach then.
+          atS: 14.55
+          durationS: 2.72
+        - text: A storm surge of seventeen feet swept across the island.
+          atS: 17.51
+          durationS: 3.36
+        - text: There were three hundred and fifty-seven buildings on the island.
+          atS: 21.19
+          durationS: 3.1
+        - text: The surge took three hundred and fifty-two of them.
+          atS: 24.53
+          durationS: 2.79
+        - text: Grass covered sand dunes, ten to twenty feet high, simply disappeared.
+          atS: 27.7
+          durationS: 4.96
+        - text: The marker calls it the greatest coastal flood in North Carolina's recorded history.
+          atS: 33.47
+          durationS: 5.2
+        - text: Hazel is still the storm every hurricane here is measured against.
+          atS: 39.37
+          durationS: 3.82
+        - text: Five buildings were left standing.
+          atS: 43.79
+          durationS: 2.21
+        - text: Count the houses on this one street, and you will already have counted more than survived.
+          atS: 46.44
+          durationS: 5.11

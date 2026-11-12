@@ -1,0 +1,179 @@
+# Drafted by Claude Code (2026-11-10) for Houston, East End by Buffalo Bayou and the Ship Channel: legend.
+# Listening spot: Broadway at Glendale Cemetery, the old Harrisburg burying ground at the foot of Magnolia Avenue (WPA Houston guide, 1942). Old Harrisburg, burned by Santa Anna in 1836, stood along Buffalo Bayou here. The listener stays on the street.
+# Position: Wikidata Q117637997 (Glendale Cemetery), 29.7194, -95.2744 (area evidence only: no source fixes "Sam Allen's house" or the claimed cache).
+id: houston-the-bodyguards-treasure
+title: "The Bodyguard's Treasure"
+summary: "Santa Anna burned Harrisburg in 1836. In 1899 a man claiming to be his bodyguard said treasure lay buried in the bayou bank here."
+place: "Glendale Cemetery and old Harrisburg, Broadway at Magnolia, East End, Houston, Texas"
+at: { lat: 29.71940, lng: -95.27440 }
+triggerRadiusKm: 0.15
+voice: wC1005J19tvhoqqC2hkf
+category: unsolved
+format: short
+durationS: 77
+visibility: position-only
+certainty: legend
+certaintyNote: >-
+  A treasure tale, not history. The WPA's Houston guide of 1942 reports that in April 1899 a man claiming to have been one of Santa Anna's bodyguards offered to share two buried caches, one in the bank of Buffalo Bayou near Sam Allen's house in Harrisburg. Nothing in the record says he was who he claimed, or that anything was found. The burning of Harrisburg in 1836 is history, from the same guide quoting Santa Anna. The script says out loud which part is legend.
+minAge: 0
+quality: 0.75
+tags: [houston, harrisburg, east-end, buffalo-bayou, santa-anna, treasure, legend, 1836]
+teaser: "A stranger came to Harrisburg with a treasure map in his head. He said he had guarded Santa Anna."
+script: |
+  Look toward Buffalo Bayou. This was Harrisburg, a port town that was here ten years before Houston.
+
+  Part of what you are about to hear is history. Part of it is a legend, and nobody has ever proved it.
+
+  First, the history. On the night of the fifteenth of April, eighteen thirty six, General Santa Anna entered Harrisburg, lit by the glare of burning houses. He was hunting the government of Texas. It had left that noon for Galveston. He found only three men, working in a printing shop.
+
+  In a rage, he ordered the whole town burned. The newspaper, when it printed again, said its office was consumed in the fire.
+
+  Now the legend.
+
+  In April, eighteen ninety nine, a Mexican man came to Harrisburg. He said he had been one of Santa Anna's bodyguards in the war. And he said he knew where treasure was buried. Two caches. One, he said, was in the bank of Buffalo Bayou, near Sam Allen's house, here in Harrisburg.
+
+  He offered to share it with anyone who would pay for the digging. It created, as one account put it, something of a stir.
+
+  Nothing in the record says he was who he claimed. Nothing says anyone found anything.
+
+  Look at the bayou bank.
+
+  If it is there, it has waited a long time.
+
+pronunciations:
+  - written: Santa Anna
+    say: SAN-tuh AN-uh
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "This was Harrisburg, a port town that was here ten years before Houston."
+    source: 1
+    quote: "1826 to make a survey. The embryo town was named Harrisburgh."
+  - says: "This was Harrisburg, a port town that was here ten years before Houston."
+    source: 1
+    quote: "By 1829, Harrisburgh had become a thriving port with sloops and schooners"
+  - says: "On the night of the fifteenth of April, eighteen thirty six, General Santa Anna entered Harrisburg, lit by the glare of burning houses."
+    source: 1
+    quote: "I entered Harrisburg the night of the 15th, lighted by the glare of sev- eral houses that were burning"
+  - says: "It had left that noon for Galveston."
+    source: 1
+    quote: "the so-called president, vice-president, and other important personages had left at noon for the island of Galveston in a small steamboat"
+  - says: "He found only three men, working in a printing shop."
+    source: 1
+    quote: "found only a Frenchman and two North Americans working in a printing shop."
+  - says: "In a rage, he ordered the whole town burned."
+    source: 1
+    quote: "General Santa Anna, in a rage at finding his quarry gone, ordered all of the town’s buildings burned."
+  - says: "The newspaper, when it printed again, said its office was consumed in the fire."
+    source: 1
+    quote: "“Amidst the conflagration that ensued, our establishment was consumed.”"
+  - says: "In April, eighteen ninety nine, a Mexican man came to Harrisburg."
+    source: 1
+    quote: "A Mexican who claimed to have been one of General Santa Anna’s body- guards during the Texas Revolution created “something of a stir” in Harrisburg in April, 1899"
+  - says: "He said he had been one of Santa Anna's bodyguards in the war."
+    source: 1
+    quote: "A Mexican who claimed to have been one of General Santa Anna’s body- guards during the Texas Revolution"
+  - says: "Two caches."
+    source: 1
+    quote: "by offering to share two caches of treasure with anyone willing to finance explorations."
+  - says: "One, he said, was in the bank of Buffalo Bayou, near Sam Allen's house, here in Harrisburg."
+    source: 1
+    quote: "One cache was said to be buried in the bank of Buffalo Bayou near Sam Allen’s house"
+  - says: "He offered to share it with anyone who would pay for the digging."
+    source: 1
+    quote: "offering to share two caches of treasure with anyone willing to finance explorations."
+  - says: "It created, as one account put it, something of a stir."
+    source: 1
+    quote: "created “something of a stir” in Harrisburg in April, 1899"
+  - says: "First, the history."
+    source: 1
+    quote: "I entered Harrisburg the night of the 15th, lighted by the glare of sev- eral houses that were burning"
+  - says: "He was hunting the government of Texas."
+    source: 1
+    quote: "General Santa Anna, in a rage at finding his quarry gone, ordered all of the town’s buildings burned."
+  - says: "He was hunting the government of Texas."
+    source: 1
+    quote: "the so-called president, vice-president, and other important personages had left at noon for the island of Galveston in a small steamboat"
+sources:
+  - title: "Houston: A History and Guide (Writers' Program of the Work Projects Administration, 1942)"
+    publisher: "Internet Archive (scan); copyright 1942 Harris County Historical Society"
+    url: https://archive.org/details/houstonahistory00writmiss
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/houston-the-bodyguards-treasure/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 76.7
+    audioBytes: 1228425
+    transcript:
+      totalS: 76.7
+      lines:
+        - text: Look toward Buffalo Bayou.
+          atS: 0
+          durationS: 1.66
+        - text: This was Harrisburg, a port town that was here ten years before Houston.
+          atS: 1.94
+          durationS: 4.24
+        - text: Part of what you are about to hear is history.
+          atS: 6.56
+          durationS: 2.24
+        - text: Part of it is a legend, and nobody has ever proved it.
+          atS: 9.18
+          durationS: 2.8
+        - text: First, the history.
+          atS: 12.49
+          durationS: 1.74
+        - text: On the night of the fifteenth of April, eighteen thirty six, General Santa Anna entered Harrisburg, lit by the glare of burning houses.
+          atS: 14.84
+          durationS: 8.52
+        - text: He was hunting the government of Texas.
+          atS: 23.68
+          durationS: 2.05
+        - text: It had left that noon for Galveston.
+          atS: 25.89
+          durationS: 2.14
+        - text: He found only three men, working in a printing shop.
+          atS: 28.2
+          durationS: 3.1
+        - text: In a rage, he ordered the whole town burned.
+          atS: 31.81
+          durationS: 2.74
+        - text: The newspaper, when it printed again, said its office was consumed in the fire.
+          atS: 34.99
+          durationS: 4.7
+        - text: Now the legend.
+          atS: 40.21
+          durationS: 1.09
+        - text: In April, eighteen ninety nine, a Mexican man came to Harrisburg.
+          atS: 42.6
+          durationS: 4.21
+        - text: He said he had been one of Santa Anna's bodyguards in the war.
+          atS: 47.19
+          durationS: 3.88
+        - text: And he said he knew where treasure was buried.
+          atS: 51.4
+          durationS: 2.38
+        - text: Two caches.
+          atS: 53.95
+          durationS: 0.96
+        - text: One, he said, was in the bank of Buffalo Bayou, near Sam Allen's house, here in Harrisburg.
+          atS: 55.16
+          durationS: 5.09
+        - text: He offered to share it with anyone who would pay for the digging.
+          atS: 60.57
+          durationS: 2.94
+        - text: It created, as one account put it, something of a stir.
+          atS: 63.68
+          durationS: 3.32
+        - text: Nothing in the record says he was who he claimed.
+          atS: 67.33
+          durationS: 2.74
+        - text: Nothing says anyone found anything.
+          atS: 70.24
+          durationS: 2.08
+        - text: Look at the bayou bank.
+          atS: 72.6
+          durationS: 1.37
+        - text: If it is there, it has waited a long time.
+          atS: 73.99
+          durationS: 2.73

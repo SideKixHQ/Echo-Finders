@@ -1,0 +1,113 @@
+# Wrightsville Beach, batch A (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: North Lumina Avenue just north of Salisbury Street: average of Overture address points 1103 and 1104 North Lumina Avenue. District viewpoint on the north end; the fire's origin (Kitty Cottage) is not pinpointed (low confidence).
+id: wrightsville-the-fire-engine-that-came-by-trolley
+title: "The Fire Engine That Came by Trolley"
+summary: "In the Great Fire of 1934, with no automobile bridge to the island, Wilmington sent a fire engine to Wrightsville Beach on the trolley."
+place: "North Lumina Avenue near Salisbury Street, Wrightsville Beach, North Carolina"
+at: { lat: 34.21545, lng: -77.79055 }
+triggerRadiusKm: 0.1
+category: disasters
+format: short
+durationS: 45
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, fire, trolley, oceanic-hotel]
+teaser: "The beach was burning, and the only way to bring a fire engine was by rail."
+script: |
+  Look down North Lumina Avenue, along the north end of the island.
+
+  In 1934, the Great Fire burned through here. It is thought to have started in the Kitty Cottage,
+  from a careless cigarette or an electric iron.
+
+  A brisk westerly wind drove it, then a gale shifted to the south southwest and pushed it into the
+  Oceanic Hotel. In less than three hours, a third of the beach was gone. The town counts a hundred
+  and three buildings destroyed.
+
+  Wilmington's fire department was called. But there was no automobile bridge yet, and everything
+  came onto the island by trolley or by boat. So the firefighters loaded an engine onto the trolley.
+
+  It made the crossing. Then, off the tracks at last, it got stuck in the sand.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In 1934, the Great Fire burned through here."
+    source: 1
+    quote: "The Great Fire of 1934 This fire which destroyed most of Wrightsville beach"
+  - says: "It is thought to have started in the Kitty Cottage, from a careless cigarette or an electric iron."
+    source: 1
+    quote: "is thought to have originated in the Kitty Cottage Either improperly discarded smoking materials or an electric iron is thought to be the cause."
+  - says: "A brisk westerly wind drove it, then a gale shifted to the south southwest and pushed it into the Oceanic Hotel."
+    source: 1
+    quote: "The fire, at first whipped by a brisk westerly wind, enveloped the Kitty Cottage and then lashed by a gale that shifted to the south-southwest, spread to the historic Oceanic Hotel"
+  - says: "In less than three hours, a third of the beach was gone."
+    source: 1
+    quote: "IN less than 3 hours a third of the beach was destroyed."
+  - says: "The town counts a hundred and three buildings destroyed."
+    source: 1
+    quote: "103 buildings were destroyed including the Oceanic Hotel."
+  - says: "Wilmington's fire department was called."
+    source: 1
+    quote: "The City of Wilmington FIre Department was called to assist."
+  - says: "But there was no automobile bridge yet, and everything came onto the island by trolley or by boat."
+    source: 1
+    quote: "At his time there was no automobile bridge and all traffic came on the island by trolley or boat."
+  - says: "So the firefighters loaded an engine onto the trolley."
+    source: 1
+    quote: "An engine from Wilmington was loaded on the trolley and responded to Wrightsville Beach."
+  - says: "Then, off the tracks at last, it got stuck in the sand."
+    source: 1
+    quote: "After disembarking from the trolley the engine became stuck in sand."
+sources:
+  - title: "History of the Fire Department"
+    publisher: "Town of Wrightsville Beach"
+    url: https://www.townofwrightsvillebeach.com/253/History-of-the-Fire-Department
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Points on the Tour"
+    publisher: "Historic Wrightsville Beach"
+    url: https://historicwrightsvillebeach.wordpress.com/points-on-the-tour-2/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-the-fire-engine-that-came-by-trolley/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 45
+    audioBytes: 721022
+    transcript:
+      totalS: 45
+      lines:
+        - text: Look down North Lumina Avenue, along the north end of the island.
+          atS: 0
+          durationS: 3.91
+        - text: In 1934, the Great Fire burned through here.
+          atS: 4.24
+          durationS: 3.33
+        - text: It is thought to have started in the Kitty Cottage, from a careless cigarette or an electric iron.
+          atS: 8.08
+          durationS: 5.33
+        - text: A brisk westerly wind drove it, then a gale shifted to the south southwest and pushed it into the Oceanic Hotel.
+          atS: 14.01
+          durationS: 7.04
+        - text: In less than three hours, a third of the beach was gone.
+          atS: 21.65
+          durationS: 2.91
+        - text: The town counts a hundred and three buildings destroyed.
+          atS: 25.01
+          durationS: 3.12
+        - text: Wilmington's fire department was called.
+          atS: 28.57
+          durationS: 2.25
+        - text: But there was no automobile bridge yet, and everything came onto the island by trolley or by boat.
+          atS: 31.15
+          durationS: 5.27
+        - text: So the firefighters loaded an engine onto the trolley.
+          atS: 36.75
+          durationS: 2.8
+        - text: It made the crossing.
+          atS: 39.79
+          durationS: 1.23
+        - text: Then, off the tracks at last, it got stuck in the sand.
+          atS: 41.53
+          durationS: 3.47

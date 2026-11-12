@@ -30,13 +30,6 @@ function inlinePrice(amountMinor: number, name: string): Record<string, string |
 /** The label on every Echo Finders payment in the shared Stripe account. */
 const APP = "echo-finders";
 
-/**
- * Added after "SIDEKIX* " on a card statement. A subscription cannot take a suffix per
- * checkout, so All-Access gets the same words from its product's statement descriptor,
- * set in the Stripe dashboard (DEPLOY.md).
- */
-const STATEMENT_SUFFIX = "ECHO FINDERS";
-
 function oneOff(plan: "city-pass" | "week-pass", city: City, customer: string | undefined, origin: string) {
   return {
     mode: "payment",
@@ -49,11 +42,9 @@ function oneOff(plan: "city-pass" | "week-pass", city: City, customer: string | 
     // All-Access renewal reminder, finds them by this label.
     "payment_intent_data[metadata][app]": APP,
     "metadata[app]": APP,
-    // What the buyer's bank statement says. On its own the shared account prints "SIDEKIX",
-    // which nobody who bought an Echo Finders pass would recognise, and an unrecognised
-    // charge becomes a dispute. Stripe joins the suffix to the account's short descriptor,
-    // "SIDEKIX* ECHO FINDERS", inside the 22 characters a card statement allows.
-    "payment_intent_data[statement_descriptor_suffix]": STATEMENT_SUFFIX,
+    // No statement suffix (James, 2026-11-12): the statement reads the account's own
+    // descriptor, "CHARACTER LIMIT LLC". A suffix is joined to the short descriptor, at most
+    // 10 characters, so with one the company name could never appear in full.
     ...(customer ? { customer } : { customer_creation: "always" }),
     ...taxAndAddress(customer),
     success_url: `${origin}/?checkout=success&session_id={CHECKOUT_SESSION_ID}`,

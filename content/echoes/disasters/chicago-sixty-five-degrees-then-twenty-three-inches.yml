@@ -1,0 +1,137 @@
+# Drafted by Claude Code (2026-11-09) for Chicago, Illinois.
+# Listening spot: The public sidewalk of the Michigan Avenue bridge, or the Riverwalk below it, looking at the river.
+# Position: Wikidata Q1928112 (Michigan Avenue Bridge, Chicago, 41.888861, -87.624361); any public spot above the river serves (high confidence).
+id: chicago-sixty-five-degrees-then-twenty-three-inches
+title: "Sixty-Five Degrees, Then Twenty-Three Inches"
+summary: "In January 1967 it was 65 degrees two days before Chicago's biggest snowstorm. The snow cleared from its streets went into the river."
+place: "Chicago River at the Michigan Avenue (DuSable) Bridge, Chicago, Illinois"
+at: { lat: 41.88886, lng: -87.62436 }
+triggerRadiusKm: 0.08
+category: disasters
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [chicago, chicago-river, weather, blizzard, snow]
+teaser: "Chicago's biggest snowstorm arrived two days after a warm spell, and ended up in this river."
+script: |
+  Look down at the river. In the winter of 1967, Chicago was shovelling its streets into it.
+
+  On the twenty-fourth of January that year, the high was sixty-five degrees. There were thunderstorms that evening.
+
+  The snow started at two minutes past five on Thursday morning, the twenty-sixth. By ten past ten the next morning, a record twenty-three inches had fallen. It is still the greatest snowfall from a single storm in the city's records.
+
+  Winds gusted to fifty-three miles an hour. Drifts four to six feet high were everywhere. In the city, twenty thousand cars and eleven hundred buses were stranded in the snow. Expectant mothers were taken to hospital by sled, bulldozer and snow plow. At least a dozen babies were born at home.
+
+  When the city dug itself out, it had to put the snow somewhere. So it was hauled by dump truck to the Chicago River.
+
+  Sixty-five degrees, then twenty-three inches. And the river took what the streets could not hold.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In the winter of 1967, Chicago was shovelling its streets into it."
+    source: 1
+    quote: "Snow was hauled by dump truck to the Chicago River."
+  - says: "On the twenty-fourth of January that year, the high was sixty-five degrees."
+    source: 1
+    quote: "Two days before the blizzard, on January 24th, the high temperature was 65 degrees"
+  - says: "There were thunderstorms that evening."
+    source: 1
+    quote: "Thunderstorms occurred in the evening of the 24th."
+  - says: "The snow started at two minutes past five on Thursday morning, the twenty-sixth."
+    source: 1
+    quote: "The snow started at 502 AM on the 26th"
+  - says: "Thursday morning"
+    source: 1
+    quote: "Snow began on Thursday morning, January 26th"
+  - says: "By ten past ten the next morning, a record twenty-three inches had fallen."
+    source: 1
+    quote: "by 1010 AM of the 27th a record 23 inches of snow crippled the city."
+  - says: "It is still the greatest snowfall from a single storm in the city's records."
+    source: 1
+    quote: "Greatest snowfall from a storm - 23.0 inches January 26-27, 1967."
+  - says: "Winds gusted to fifty-three miles an hour."
+    source: 1
+    quote: "During the storm winds gusted to 53 mph at Midway Airport."
+  - says: "Drifts four to six feet high were everywhere."
+    source: 1
+    quote: "Drifts 4 to 6 feet high were widespread throughout the area."
+  - says: "In the city, twenty thousand cars and eleven hundred buses were stranded in the snow."
+    source: 1
+    quote: "In the city of Chicago 20,000 cars and 1,100 CTA buses were stranded in the snow."
+  - says: "Expectant mothers were taken to hospital by sled, bulldozer and snow plow."
+    source: 1
+    quote: "Expectant mothers were taken to hospitals by sled, bulldozer and snow plow."
+  - says: "At least a dozen babies were born at home."
+    source: 1
+    quote: "At least a dozen babies were born at home."
+  - says: "So it was hauled by dump truck to the Chicago River."
+    source: 1
+    quote: "Snow was hauled by dump truck to the Chicago River."
+  - says: "Sixty-five degrees, then twenty-three inches."
+    source: 1
+    quote: "a record 23 inches of snow crippled the city."
+sources:
+  - title: "January 26-27, 1967: Chicago's Largest Snowfall on Record"
+    publisher: "National Weather Service Chicago"
+    url: https://www.weather.gov/lot/67blizzard
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/chicago-sixty-five-degrees-then-twenty-three-inches/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65.9
+    audioBytes: 1056225
+    transcript:
+      totalS: 65.9
+      lines:
+        - text: Look down at the river.
+          atS: 0
+          durationS: 1.29
+        - text: In the winter of 1967, Chicago was shovelling its streets into it.
+          atS: 1.53
+          durationS: 4.93
+        - text: On the twenty-fourth of January that year, the high was sixty-five degrees.
+          atS: 6.91
+          durationS: 4.45
+        - text: There were thunderstorms that evening.
+          atS: 11.8
+          durationS: 1.92
+        - text: The snow started at two minutes past five on Thursday morning, the twenty-sixth.
+          atS: 14.1
+          durationS: 4.58
+        - text: By ten past ten the next morning, a record twenty-three inches had fallen.
+          atS: 19.49
+          durationS: 4.28
+        - text: It is still the greatest snowfall from a single storm in the city's records.
+          atS: 24.59
+          durationS: 4.31
+        - text: Winds gusted to fifty-three miles an hour.
+          atS: 29.34
+          durationS: 2.62
+        - text: Drifts four to six feet high were everywhere.
+          atS: 32.66
+          durationS: 2.93
+        - text: In the city, twenty thousand cars and eleven hundred buses were stranded in the snow.
+          atS: 36.09
+          durationS: 5.17
+        - text: Expectant mothers were taken to hospital by sled, bulldozer and snow plow.
+          atS: 41.64
+          durationS: 5.12
+        - text: At least a dozen babies were born at home.
+          atS: 47.37
+          durationS: 2.4
+        - text: When the city dug itself out, it had to put the snow somewhere.
+          atS: 50.58
+          durationS: 3.55
+        - text: So it was hauled by dump truck to the Chicago River.
+          atS: 54.83
+          durationS: 2.87
+        - text: Sixty-five degrees, then twenty-three inches.
+          atS: 58.4
+          durationS: 3.33
+        - text: And the river took what the streets could not hold.
+          atS: 62.43
+          durationS: 3.52
