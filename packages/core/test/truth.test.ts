@@ -28,13 +28,13 @@ describe("the mark a listener sees", () => {
 });
 
 describe("each family held to its own rule", () => {
-  const certaintyErrors = (category: "history" | "people" | "arts" | "legend" | "kids", certainty: "documented" | "legend" | "contested") =>
+  const certaintyErrors = (category: "history" | "military" | "arts" | "legend" | "kids", certainty: "documented" | "legend" | "contested") =>
     validateEcho(
       makeEcho({ id: "t", at: { lat: 34.2, lng: -77.9 }, category, certainty, certaintyNote: "note", minAge: 0 }),
     ).filter((i) => i.severity === "error" && i.field === "certainty");
 
   it("refuses a legend filed as history, people or the arts", () => {
-    for (const category of ["history", "people", "arts"] as const) {
+    for (const category of ["history", "military", "arts"] as const) {
       expect(certaintyErrors(category, "legend")).toHaveLength(1);
     }
   });

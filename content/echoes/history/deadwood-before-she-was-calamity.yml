@@ -1,0 +1,108 @@
+# Drafted by Claude Code (2026-11-09) for Deadwood, South Dakota.
+# Listening spot: Paths of Mount Moriah Cemetery, open to visitors in season.
+# Position: Wikidata Q451629 (Mount Moriah Cemetery) 44.376, -103.725; the radius covers the hilltop graves (medium confidence).
+id: deadwood-before-she-was-calamity
+title: "Before She Was Calamity"
+summary: "Calamity Jane stood by Wild Bill's grave on this hill. Decades earlier, the 1860 census knew her as Martha Canary."
+place: "Mount Moriah Cemetery, Deadwood, South Dakota"
+at: { lat: 44.376, lng: -103.725 }
+triggerRadiusKm: 0.12
+category: history
+format: short
+durationS: 46
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [deadwood, mount-moriah, calamity-jane, wild-bill-hickok, old-west]
+teaser: "Long before Deadwood, she was a name on a census form."
+script: |
+  Somewhere on this hill is the grave of Wild Bill Hickok.
+
+  A photograph in the Library of Congress shows a woman standing beside it. Calamity Jane.
+
+  If you have watched the television series about this town, you know her as a character.
+
+  The National Archives points out that she, and the others in that series, were real people, and turn up in federal records.
+
+  There is a document with Seth Bullock's signature as marshal. There is an indictment against a man named Swearingen.
+
+  And there is Calamity Jane, years before any of it, in the 1860 census. Under the name Martha Canary.
+
+  Before she was a legend, she was a line in a census.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Somewhere on this hill is the grave of Wild Bill Hickok."
+    source: 1
+    quote: "standing by the grave of Wild Bill Hickok in Mt. Moriah Cemetery, Deadwood, South Dakota."
+  - says: "A photograph in the Library of Congress shows a woman standing beside it."
+    source: 1
+    quote: "Photographs shows Martha Jane Burke, popularly known as Calamity Jane, standing by the grave of Wild Bill Hickok"
+  - says: "Calamity Jane."
+    source: 1
+    quote: "popularly known as Calamity Jane"
+  - says: "The National Archives points out that she, and the others in that series, were real people, and turn up in federal records."
+    source: 2
+    quote: "\"characters\" were real people and"
+  - says: "There is a document with Seth Bullock's signature as marshal."
+    source: 2
+    quote: "Document featuring Seth Bullock's signature as Marshal"
+  - says: "There is an indictment against a man named Swearingen."
+    source: 2
+    quote: "Indictment against E.A. Swearingen"
+  - says: "And there is Calamity Jane, years before any of it, in the 1860 census."
+    source: 2
+    quote: "Martha Canary in 1860 Cen"
+  - says: "Under the name Martha Canary."
+    source: 2
+    quote: "Martha Canary in 1860 Cen"
+sources:
+  - title: "Calamity Jane on Wild Bill's grave"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/2005688172/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Real Deadwood (exhibit brochure)"
+    publisher: "National Archives, Central Plains Region"
+    url: https://www.archives.gov/files/kansas-city/public/displays/deadwood/deadwood.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/deadwood-before-she-was-calamity/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 45.7
+    audioBytes: 733143
+    transcript:
+      totalS: 45.7
+      lines:
+        - text: Somewhere on this hill is the grave of Wild Bill Hickok.
+          atS: 0
+          durationS: 3.58
+        - text: A photograph in the Library of Congress shows a woman standing beside it.
+          atS: 4.69
+          durationS: 4.05
+        - text: Calamity Jane.
+          atS: 9.69
+          durationS: 1.23
+        - text: If you have watched the television series about this town, you know her as a character.
+          atS: 12.04
+          durationS: 4.95
+        - text: The National Archives points out that she, and the others in that series, were real people, and turn up in federal records.
+          atS: 17.8
+          durationS: 7.66
+        - text: There is a document with Seth Bullock's signature as marshal.
+          atS: 26.16
+          durationS: 3.4
+        - text: There is an indictment against a man named Swearingen.
+          atS: 30
+          durationS: 3.05
+        - text: And there is Calamity Jane, years before any of it, in the 1860 census.
+          atS: 33.49
+          durationS: 5.42
+        - text: Under the name Martha Canary.
+          atS: 39.52
+          durationS: 2.36
+        - text: Before she was a legend, she was a line in a census.
+          atS: 42.26
+          durationS: 3.48

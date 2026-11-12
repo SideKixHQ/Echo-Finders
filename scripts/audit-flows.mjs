@@ -108,17 +108,25 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await kinds.click();
   await p.waitForTimeout(400);
   const sheet = p.locator('#kind-box');
-  // All, and fourteen kinds: Inspo joined on 2026-11-06, and Unsolved, Music, Disasters,
-  // Firsts and Hidden on 2026-11-12 (`categories.tsx`, CHIP_GROUPS).
-  check('Kinds: tapping it shows all of them at once, just below', (await sheet.locator('.chip').count()) === 15);
-  await sheet.getByRole('button', { name: 'Ghosts' }).click();
+  // The 16 topics (2026-11-12, docs/adr/0021-topics-and-rare.md): the map's panel offers
+  // only the topics with three or more echoes in view, plus Rare on the same rule, so the
+  // count depends on where the map is. Was "exactly 15 chips"; the new truth is All, at
+  // least one topic from the Battery, never more than All plus fifteen topics and Rare.
+  const chipCount = await sheet.locator('.chip').count();
+  check('Kinds: tapping it shows the topics around here at once, just below', chipCount >= 2 && chipCount <= 17, String(chipCount));
+  check('Kinds: the panel says where it counted', /^Around here/i.test((await sheet.locator('.kind-head').innerText()).trim()));
+  const firstTopic = sheet.locator('.chip:not(.chip-all):not(.cat-rare)').first();
+  const firstName = (await firstTopic.innerText()).trim();
+  await firstTopic.click();
   await p.waitForTimeout(300);
   check('Kinds: picking keeps it open, to pick more', await visible(sheet));
-  // Below the panel, which reaches about 440px now that it holds fourteen kinds; just under it, clear of the pins.
-  await p.mouse.click(195, 470);
+  check('Kinds: a picked chip stays in the panel', (await sheet.locator('.chip.on', { hasText: firstName }).count()) === 1);
+  // Just below the panel, clear of it whatever its height here.
+  const bb = await sheet.boundingBox();
+  await p.mouse.click(195, Math.min(bb.y + bb.height + 24, 640));
   await p.waitForTimeout(300);
   check('Kinds: a tap on the map closes it', !(await visible(sheet)));
-  check('Kinds: the button says what is picked', /Ghosts/.test(await kinds.innerText()));
+  check('Kinds: the button says what is picked', (await kinds.innerText()).includes(firstName), `${firstName} vs ${await kinds.innerText()}`);
   await kinds.click();
   await p.waitForTimeout(300);
   await sheet.getByRole('button', { name: 'All' }).click();
@@ -778,13 +786,15 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
 // A collection seeded as the screenshots seed it: a rare walk, true crime, a legend, one
 // heard. Each row says kind, length and a US date ("Nov 3", "Today"), a short place rather
 // than a street address, "Legend" or "Disputed" where it is not fact and never "verified"
-// (James, 2026-11-11), and "Rare find" on rare and singular echoes, true crime included.
+// (James, 2026-11-11), and "Rare find" on rare and extra rare echoes, true crime included.
 {
   const { ctx, p } = await freshApp();
   const ago = (d) => new Date(Date.now() - d * 86400000).toISOString();
   const seed = [
     ['the-prison-corridor', 0, false],
-    ['dakota-three-minutes', 1, false],
+    // A true crime echo hand picked as rare (2026-11-12): the Dakota is a draft and not rare,
+    // so it could no longer show true crime earning Rare find.
+    ['the-empty-frames', 1, false],
     ['wilmington-meg-at-the-old-waterfront', 8, false],
     ['wilmington-the-government-taken-by-force', 8, false],
     ['bald-head-the-swim-to-southport', 6, false],
@@ -825,7 +835,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   check('Rows: true crime earns Rare find like any other echo', texts.some((t) => /True crime/.test(t) && /Rare find/.test(t)));
   const tile = p.locator('.me-tile-rare');
   const n = Number((await tile.locator('.me-tile-n').innerText()).trim());
-  check('Rare finds: the tile counts rare and singular', n >= 2 && n === rareRows, `${n} vs ${rareRows} rows`);
+  check('Rare finds: the tile counts rare and extra rare', n >= 2 && n === rareRows, `${n} vs ${rareRows} rows`);
   check('Rare finds: sentence case, not spaced capitals', await tile.evaluate((t) => {
     const label = t.querySelector('span');
     return label.innerText.trim() === 'Rare finds' && getComputedStyle(label).textTransform === 'none';
@@ -833,8 +843,9 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await tile.click();
   await p.waitForTimeout(400);
   const callout = p.locator('#me-rare');
-  check('Rare finds: a tap explains them', await visible(callout.getByText('Rare finds are hard to reach'))
-    && await visible(callout.getByText('Far off the usual walk, open only some hours, or inside somewhere.')));
+  // The copy follows hand picked rarity and its four reasons (2026-11-12).
+  check('Rare finds: a tap explains them', await visible(callout.getByText('Rare finds take some finding'))
+    && await visible(callout.getByText('Picked by hand: inside with opening hours, only at certain times, hard to reach, or easy to miss.')));
   await callout.getByRole('button', { name: 'Got it' }).click();
   await p.waitForTimeout(300);
   check('Rare finds: Got it closes it', !(await callout.count()));
@@ -1121,12 +1132,17 @@ async function arrive() {
       !(await p.getByRole('button', { name: /^Filter my echoes/ }).count()) && !(await p.getByRole('button', { name: /^Show \d+ echoes?$/ }).count()));
     await kindPill.click();
     await p.waitForTimeout(400);
-    // All, and fourteen kinds (`categories.tsx`, CHIP_GROUPS): the map's own box.
-    check("Filter: the map's own kind box, every kind at once", (await p.locator('#kind-box .chip').count()) === 15);
+    // All and the fifteen topics (`categories.tsx`, CHIP_GROUPS): the map's own box. My
+    // Echoes has no area to count, so every topic shows and there is no Rare chip (the Rare
+    // finds tile is its rare filter). Was 15 with the fourteen kinds before 2026-11-12.
+    check("Filter: the map's own kind box, every kind at once", (await p.locator('#kind-box .chip').count()) === 16);
     const caseOf = await p.locator('#kind-box').evaluate((box) => ({
       all: box.querySelector('.chip-all').innerText.trim(),
       transform: getComputedStyle(box.querySelector('.chip-all')).textTransform,
-      divider: getComputedStyle(box.querySelector('.chip-all')).borderRightWidth,
+      // The 16 topic panel (2026-11-12) outlines every chip on all four sides, as on the
+      // canvas, so "no divider" now means All's right edge is no different from its left:
+      // an outline, not the old rule down one side. Was borderRightWidth === '0px'.
+      divider: (() => { const cs = getComputedStyle(box.querySelector('.chip-all')); return cs.borderRightWidth === cs.borderLeftWidth ? '0px' : cs.borderRightWidth; })(),
       crime: [...box.querySelectorAll('.chip')].some((c) => c.innerText.trim() === 'True crime'),
     }));
     check('Filter: "All" and "True crime" in sentence case, no divider by All',
@@ -1135,7 +1151,7 @@ async function arrive() {
     await p.waitForTimeout(400);
     check('Filter: a tap applies at once, the box still open', await visible(p.locator('#kind-box'))
       && !(await fort.count()) && (await p.locator('.coll-nomatch').count()) === 1);
-    check('Filter: the pill says how many it shows', /Ghosts\s*·\s*0/.test(await kindPill.innerText()), await kindPill.innerText());
+    check('Filter: the pill says how many it shows', /Ghosts & legends\s*·\s*0/.test(await kindPill.innerText()), await kindPill.innerText());
     await p.keyboard.press('Escape');
     await p.waitForTimeout(300);
     check('Filter: Escape closes the box', !(await p.locator('#kind-box').count()));

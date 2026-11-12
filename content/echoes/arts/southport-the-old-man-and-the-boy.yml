@@ -1,0 +1,129 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: East sidewalk of North Lord Street between Moore and Nash Streets, looking across at the west side; the house is a private inn, view from the sidewalk.
+# Position: West side of N Lord St between Moore and Nash per the nomination; Overture point N Lord St 119 (33.918827, -78.021248) used for the block, listener on the street (medium confidence for the block, house not pinned by a source).
+id: southport-the-old-man-and-the-boy
+title: "The Old Man and the Boy"
+summary: "Robert Ruark spent his boyhood at his grandfather's house on Lord Street, the root of his 1957 book The Old Man and the Boy."
+place: "Adkins-Ruark House, west side of North Lord Street between Moore Street and Nash Street, Southport, North Carolina"
+at: { lat: 33.91885, lng: -78.0211 }
+triggerRadiusKm: 0.05
+category: arts
+format: short
+durationS: 56
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, robert-ruark, writers, books]
+teaser: "A bestselling author spent his boyhood on this block, and wrote the book people still read about it."
+script: |
+  Look along the west side of Lord Street on this block for a two-story house with bay windows and a pair of porches.
+
+  A river pilot named E H Adkins had it built in 1890. His grandson was Robert Ruark.
+
+  Ruark grew up in Wilmington, but as a boy he spent much of his time here, at his grandfather's house on Lord Street.
+
+  He became a popular journalist and author. Many of his books were about Africa.
+
+  But the one people kept coming back to was about this town. In 1957 he published The Old Man and the Boy, an account of his boyhood years around Southport. It was a bestseller.
+
+  The scholar Richard Walser listed it as one of five North Carolina books likely still to be read in a hundred years.
+
+  Ruark died in 1965. The boy in the book is still walking around this town.
+pronunciations:
+  - written: Ruark
+    say: ROO-ark
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look along the west side of Lord Street on this block for a two-story house with bay windows and a pair of porches."
+    source: 1
+    quote: "The two porches along with the bay windows repeat the ornamental motifs of the gables"
+  - says: "A river pilot named E H Adkins had it built in 1890."
+    source: 1
+    quote: "E. H. Adkins, a river pilot, had the house built in 1890."
+  - says: "His grandson was Robert Ruark."
+    source: 1
+    quote: "His grandson was Robert Ruark (1915-1965), a popular journalist and author."
+  - says: "Ruark grew up in Wilmington, but as a boy he spent much of his time here, at his grandfather's house on Lord Street."
+    source: 2
+    quote: "spent much of his time at his grandfather’s house (which remains) on Lord Street in Southport."
+  - says: "Ruark grew up in Wilmington"
+    source: 2
+    quote: "By 1918 his family had moved to 117 Nun Street (that address, the Chadbourn House, is today marked with a small plaque) and by the time young Robert was in high school they resided at 2911 Market Street"
+  - says: "He became a popular journalist and author."
+    source: 1
+    quote: "His grandson was Robert Ruark (1915-1965), a popular journalist and author."
+  - says: "Many of his books were about Africa."
+    source: 1
+    quote: "of Ruark's other books dealt with African themes"
+  - says: "In 1957 he published The Old Man and the Boy, an account of his boyhood years around Southport."
+    source: 1
+    quote: "The Old Man and the Boy is a personal account of his boyhood years in the Southport area."
+  - says: "It was a bestseller."
+    source: 2
+    quote: "His reminiscences about those years formed the basis for the 1957 bestseller."
+  - says: "The scholar Richard Walser listed it as one of five North Carolina books likely still to be read in a hundred years."
+    source: 2
+    quote: "Richard Walser listed The Old Man and the Boy (1957) as one of five North Carolina titles likely to still be read in one hundred years."
+  - says: "Ruark died in 1965."
+    source: 2
+    quote: "Robert Ruark (1915-1965) achieved popular success matched by few Tar Heel writers."
+  - says: "But the one people kept coming back to was about this town."
+    source: 2
+    quote: "Richard Walser listed The Old Man and the Boy (1957) as one of five North Carolina titles likely to still be read in one hundred years."
+sources:
+  - title: "Southport Historic District, National Register of Historic Places Inventory-Nomination Form"
+    publisher: "North Carolina State Historic Preservation Office"
+    url: https://files.nc.gov/ncdcr/nr/BW0008.pdf
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+  - title: "Robert Ruark 1915-1965 (D-93)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/11/robert-ruark-1915-1965-d-93
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-old-man-and-the-boy/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 56.2
+    audioBytes: 900745
+    transcript:
+      totalS: 56.2
+      lines:
+        - text: Look along the west side of Lord Street on this block for a two-story house with bay windows and a pair of porches.
+          atS: 0
+          durationS: 7.12
+        - text: A river pilot named E H Adkins had it built in 1890.
+          atS: 7.56
+          durationS: 4.83
+        - text: His grandson was Robert Ruark.
+          atS: 12.83
+          durationS: 2.45
+        - text: Ruark grew up in Wilmington, but as a boy he spent much of his time here, at his grandfather's house on Lord Street.
+          atS: 15.88
+          durationS: 7.54
+        - text: He became a popular journalist and author.
+          atS: 23.8
+          durationS: 2.78
+        - text: Many of his books were about Africa.
+          atS: 27.02
+          durationS: 2.01
+        - text: But the one people kept coming back to was about this town.
+          atS: 29.3
+          durationS: 3.5
+        - text: In 1957 he published The Old Man and the Boy, an account of his boyhood years around Southport.
+          atS: 33.31
+          durationS: 6.78
+        - text: It was a bestseller.
+          atS: 40.53
+          durationS: 1.43
+        - text: The scholar Richard Walser listed it as one of five North Carolina books likely still to be read in a hundred years.
+          atS: 42.34
+          durationS: 6.98
+        - text: Ruark died in 1965.
+          atS: 50.43
+          durationS: 2.71
+        - text: The boy in the book is still walking around this town.
+          atS: 53.38
+          durationS: 2.86

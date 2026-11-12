@@ -1,0 +1,142 @@
+# Drafted by Claude Code (2026-11-09) for Asheville, North Carolina.
+# Listening spot: The sidewalk in front of the Flat Iron Building on Battery Park Avenue; the Jimmie Rodgers marker is close by at Haywood Street.
+# Position: Wikidata Q60748464 (Flat Iron Building, 35.595, -82.5552); the DNCR marker is at Haywood Street and Battery Park Avenue, a short walk away (medium confidence).
+id: asheville-a-yodel-on-the-top-floor
+title: "A Yodel on the Top Floor"
+summary: "In 1927 Jimmie Rodgers, later the Father of Country Music, began his career on WWNC radio, upstairs in the Flat Iron Building."
+place: "Flat Iron Building, Battery Park Avenue, Asheville, North Carolina"
+at: { lat: 35.595, lng: -82.5552 }
+triggerRadiusKm: 0.05
+category: arts
+inspo:
+  kind: before-fame
+  evidence: building
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [asheville, jimmie-rodgers, country-music, radio, music]
+teaser: "In 1927 a janitor and part-time detective sang on a radio station at the top of this building."
+script: |
+  Look up at the top floor of the Flat Iron Building. In 1927, that was where a brand new radio station, WWNC, had its studio and its transmitter.
+
+  By March that year, a former railroad man named Jimmie Rodgers had moved to Asheville. He worked as a janitor, a cab driver, and a city detective. He was already sick. He had been diagnosed with tuberculosis three years before.
+
+  On the eighteenth of April, 1927, he started singing on WWNC. He and a friend played live every week.
+
+  It did not go brilliantly to begin with. At one show, in Hendersonville, the only person who came was a housekeeper.
+
+  That August he recorded his first two songs, at Bristol, on the line between Tennessee and Virginia. The Carter Family made their first recordings the same week. People call those sessions the Big Bang of Country Music.
+
+  Jimmie Rodgers became the Singing Brakeman, the Blue Yodeler, the Father of Country Music.
+
+  But before all that, he was a janitor singing into a microphone, somewhere up on that top floor.
+pronunciations:
+  - written: WWNC
+    say: W W N C
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Look up at the top floor of the Flat Iron Building."
+    source: 1
+    quote: "The studio and transmitter were on the top floor of the nearby Flat Iron Building."
+  - says: "In 1927, that was where a brand new radio station, WWNC, had its studio and its transmitter."
+    source: 1
+    quote: "The station took to the air on February 2, 1927"
+  - says: "In 1927, that was where a brand new radio station, WWNC, had its studio and its transmitter."
+    source: 1
+    quote: "The studio and transmitter were on the top floor of the nearby Flat Iron Building."
+  - says: "By March that year, a former railroad man named Jimmie Rodgers had moved to Asheville."
+    source: 1
+    quote: "By March 1927 Jimmie Rodgers had moved to Asheville, following a friend who worked for the Southern Railway."
+  - says: "He worked as a janitor, a cab driver, and a city detective."
+    source: 1
+    quote: "He worked as a janitor, cab driver, and city detective"
+  - says: "He had been diagnosed with tuberculosis three years before."
+    source: 1
+    quote: "He was diagnosed with tuberculosis in 1924 and it killed him in 1933."
+  - says: "On the eighteenth of April, 1927, he started singing on WWNC."
+    source: 1
+    quote: "he launched his music career with appearances on WWNC radio beginning on April 18, 1927."
+  - says: "He and a friend played live every week."
+    source: 1
+    quote: "Rodgers and his friend Otis Kuykendall played live weekly on WWNC"
+  - says: "At one show, in Hendersonville, the only person who came was a housekeeper."
+    source: 1
+    quote: "In Hendersonville only a housekeeper was present for the show."
+  - says: "That August he recorded his first two songs, at Bristol, on the line between Tennessee and Virginia."
+    source: 1
+    quote: "On August 4, upon producer Ralph Peer's invitation, he recorded his first two tracks"
+  - says: "That August he recorded his first two songs, at Bristol, on the line between Tennessee and Virginia."
+    source: 1
+    quote: "at the Bristol sessions in the town of that name that bestrides the Tennessee/Virginia line."
+  - says: "The Carter Family made their first recordings the same week."
+    source: 1
+    quote: "The Carter Family made their first recordings that same week"
+  - says: "People call those sessions the Big Bang of Country Music."
+    source: 1
+    quote: "the sessions are known as the \"Big Bang of Country Music.\""
+  - says: "Jimmie Rodgers became the Singing Brakeman, the Blue Yodeler, the Father of Country Music."
+    source: 1
+    quote: "He is known as the \"Singing Brakeman,\" the \"Blue Yodeler,\" and the \"Father of Country Music.\""
+sources:
+  - title: "Jimmie Rodgers 1897-1933 (P-94)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2024/01/23/jimmie-rodgers-1897-1933-p-94
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/asheville-a-yodel-on-the-top-floor/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.6
+    audioBytes: 1178687
+    transcript:
+      totalS: 73.6
+      lines:
+        - text: Look up at the top floor of the Flat Iron Building.
+          atS: 0
+          durationS: 2.9
+        - text: In 1927, that was where a brand new radio station, WWNC, had its studio and its transmitter.
+          atS: 3.34
+          durationS: 7.84
+        - text: By March that year, a former railroad man named Jimmie Rodgers had moved to Asheville.
+          atS: 11.78
+          durationS: 4.81
+        - text: He worked as a janitor, a cab driver, and a city detective.
+          atS: 17.1
+          durationS: 3.9
+        - text: He was already sick.
+          atS: 21.7
+          durationS: 1.33
+        - text: He had been diagnosed with tuberculosis three years before.
+          atS: 23.85
+          durationS: 3.51
+        - text: On the eighteenth of April, 1927, he started singing on WWNC.
+          atS: 28.17
+          durationS: 5.34
+        - text: He and a friend played live every week.
+          atS: 34.11
+          durationS: 2.5
+        - text: It did not go brilliantly to begin with.
+          atS: 37.12
+          durationS: 2.23
+        - text: At one show, in Hendersonville, the only person who came was a housekeeper.
+          atS: 39.95
+          durationS: 4.82
+        - text: That August he recorded his first two songs, at Bristol, on the line between Tennessee and Virginia.
+          atS: 45.58
+          durationS: 6.59
+        - text: The Carter Family made their first recordings the same week.
+          atS: 52.78
+          durationS: 3.78
+        - text: People call those sessions the Big Bang of Country Music.
+          atS: 57.01
+          durationS: 3.32
+        - text: Jimmie Rodgers became the Singing Brakeman, the Blue Yodeler, the Father of Country Music.
+          atS: 60.93
+          durationS: 5.75
+        - text: But before all that, he was a janitor singing into a microphone, somewhere up on that top floor.
+          atS: 67.19
+          durationS: 6.42

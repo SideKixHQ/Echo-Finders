@@ -8,6 +8,8 @@ place: "Indian Trail Tree, Keziah Park, Lord Street at Moore Street, Southport, 
 at: { lat: 33.9179, lng: -78.02085 }
 triggerRadiusKm: 0.05
 category: legend
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 39
 visibility: at-hand

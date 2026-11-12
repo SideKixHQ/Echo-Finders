@@ -8,6 +8,8 @@ place: "Small Senate rotunda, U.S. Capitol, Washington, D.C."
 at: { lat: 38.89020, lng: -77.00910 }
 triggerRadiusKm: 0.05
 category: legend
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 61
 visibility: at-hand

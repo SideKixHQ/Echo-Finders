@@ -7,6 +7,8 @@ place: "Carolina Beach State Park, Flytrap Trail and bog garden, Carolina Beach,
 at: { lat: 34.0503, lng: -77.9103 }
 triggerRadiusKm: 0.3
 category: kids
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 48
 visibility: at-hand

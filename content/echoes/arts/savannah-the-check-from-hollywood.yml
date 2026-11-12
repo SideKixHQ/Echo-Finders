@@ -1,0 +1,189 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: Ellis Square, on the east side of the square near the Johnny Mercer statue.
+# Position: Ellis Square from the street segments in the app's Savannah street file, placed on the east side of the square, about 80 metres from the market echo. The statue's position in the square is from memory, not a source: check on the ground (low confidence).
+id: savannah-the-check-from-hollywood
+title: "The Check from Hollywood"
+summary: "Johnny Mercer's father lost his business and spent his life repaying it. In 1954 the son sent a check and paid every creditor."
+place: "Ellis Square, Savannah, Georgia"
+at: { lat: 32.08060, lng: -81.09255 }
+triggerRadiusKm: 0.03
+category: arts
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [savannah, savannah-core, ellis-square, music, johnny-mercer]
+teaser: "Savannah lost a square that year. The Mercers got their name back."
+script: |
+  Look for Johnny Mercer, in bronze. Savannah put him up for his hundredth birthday. He was born here, and he wrote the words to more than a thousand songs. Moon River. Skylark. That Old Black Magic.
+
+  As a boy in Savannah, he learned to speak Geechee, and he would sit outside Black churches to listen to the singing.
+
+  In nineteen twenty seven, when he was about to go to college, his father's real estate business lost more than a million dollars. His father, George Mercer, could have declared bankruptcy. Instead he put his own savings into the debt, and spent the rest of his life paying people back. When he died in nineteen forty, he still owed more than a quarter of a million dollars.
+
+  Johnny went to New York instead of college. Some weeks, he had nothing to eat but oatmeal.
+
+  He made it. He helped found Capitol Records. In nineteen fifty four, he sold his share for nearly two million dollars. The first thing he did was send a check to a Savannah bank, and pay back every one of his father's creditors.
+
+  That same year, nineteen fifty four, this square was torn down for a parking garage.
+
+  Savannah lost a square that year. The Mercers got their name back.
+detail: >-
+  The Library of Congress essay is by Philip Furia, Mercer's biographer, for the National Recording Registry. NPR reported the statue's unveiling on 18 November 2009; its placement in Ellis Square is not confirmed by these sources.
+pronunciations:
+  - written: "Geechee"
+    say: "GEE-chee"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Savannah put him up for his hundredth birthday."
+    source: 1
+    quote: "the city of Savannah has unveiled a statue of Johnny Mercer, in honor of his 100th birthday."
+  - says: "He was born here, and he wrote the words to more than a thousand songs."
+    source: 2
+    quote: "born Nov. 18, 1909, in Savannah, Ga."
+  - says: "He was born here, and he wrote the words to more than a thousand songs."
+    source: 2
+    quote: "wrote or co-wrote more than 1,000 songs"
+  - says: "Moon River. Skylark. That Old Black Magic."
+    source: 2
+    quote: "including American Songbook standards like \"Skylark,\" \"That Old Black Magic\""
+  - says: "Moon River. Skylark. That Old Black Magic."
+    source: 2
+    quote: "one for what's possibly his most famous tune, \"Moon River\""
+  - says: "As a boy in Savannah, he learned to speak Geechee, and he would sit outside Black churches to listen to the singing."
+    source: 3
+    quote: "learned to speak “Geechee,” the African-Creole dialect of Savannah."
+  - says: "As a boy in Savannah, he learned to speak Geechee, and he would sit outside Black churches to listen to the singing."
+    source: 3
+    quote: "He loved to sit outside black churches and listen to the singing"
+  - says: "In nineteen twenty seven, when he was about to go to college, his father's real estate business lost more than a million dollars."
+    source: 3
+    quote: "After graduating from prep school in 1927, he was supposed to go on to college, but his"
+  - says: "In nineteen twenty seven, when he was about to go to college, his father's real estate business lost more than a million dollars."
+    source: 3
+    quote: "father’s real estate business suffered a loss of more than a million dollars."
+  - says: "His father, George Mercer, could have declared bankruptcy."
+    source: 3
+    quote: "George Mercer could have declared bankruptcy"
+  - says: "Instead he put his own savings into the debt, and spent the rest of his life paying people back."
+    source: 3
+    quote: "he liquidated the company instead and poured his own savings into the firm’s debt. He devoted the rest of his life to repaying his credit holders"
+  - says: "When he died in nineteen forty, he still owed more than a quarter of a million dollars."
+    source: 3
+    quote: "still owed more than a quarter of a million dollars when he died in 1940."
+  - says: "Johnny went to New York instead of college."
+    source: 3
+    quote: "freed Johnny Mercer to pursue his dream of going to New York to become an actor."
+  - says: "Some weeks, he had nothing to eat but oatmeal."
+    source: 3
+    quote: "there were some weeks when he had nothing to eat but oatmeal."
+  - says: "He helped found Capitol Records."
+    source: 3
+    quote: "He recorded it on Capitol Records, a company he had founded"
+  - says: "In nineteen fifty four, he sold his share for nearly two million dollars."
+    source: 3
+    quote: "In 1954, when Mercer sold his share in the company for nearly two million dollars"
+  - says: "The first thing he did was send a check to a Savannah bank, and pay back every one of his father's creditors."
+    source: 3
+    quote: "the first thing he did was to send a check to a Savannah bank, repaying all of the credit holders in his father’s real-estate company and clearing the family name."
+  - says: "That same year, nineteen fifty four, this square was torn down for a parking garage."
+    source: 4
+    quote: "Ellis Square and the market were demolished in 1954 to make way for a new four-story parking garage."
+  - says: "Savannah lost a square that year."
+    source: 4
+    quote: "Ellis Square and the market were demolished in 1954"
+  - says: "The Mercers got their name back."
+    source: 3
+    quote: "clearing the family name."
+sources:
+  - title: "100 Years Of Johnny Mercer, Pop Poet Laureate (2009)"
+    publisher: "NPR"
+    url: https://www.npr.org/2009/11/18/120541054/100-years-of-johnny-mercer-pop-poet-laureate
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Celebrating The Johnny Mercer Centennial (Fresh Air, 2009)"
+    publisher: "NPR"
+    url: https://www.npr.org/2009/11/18/120535469/celebrating-the-johnny-mercer-centennial
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "\"Ac-Cent-Tchu-Ate the Positive\", Johnny Mercer (1944), essay by Philip Furia for the National Recording Registry"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/static/programs/national-recording-preservation-board/documents/AcCentTchuAteThePositive.pdf
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Historic treasure resurrected in Savannah, Ga. (Associated Press, 2010)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna35837819
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-check-from-hollywood/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 78.9
+    audioBytes: 1263533
+    transcript:
+      totalS: 78.9
+      lines:
+        - text: Look for Johnny Mercer, in bronze.
+          atS: 0
+          durationS: 2.66
+        - text: Savannah put him up for his hundredth birthday.
+          atS: 3.61
+          durationS: 2.57
+        - text: He was born here, and he wrote the words to more than a thousand songs.
+          atS: 6.56
+          durationS: 4.02
+        - text: Moon River.
+          atS: 10.86
+          durationS: 0.82
+        - text: Skylark.
+          atS: 11.89
+          durationS: 0.92
+        - text: That Old Black Magic.
+          atS: 13.02
+          durationS: 1.54
+        - text: As a boy in Savannah, he learned to speak Geechee, and he would sit outside Black churches to listen to the singing.
+          atS: 15.37
+          durationS: 7.17
+        - text: In nineteen twenty seven, when he was about to go to college, his father's real estate business lost more than a million dollars.
+          atS: 23.24
+          durationS: 6.99
+        - text: His father, George Mercer, could have declared bankruptcy.
+          atS: 30.93
+          durationS: 3.53
+        - text: Instead he put his own savings into the debt, and spent the rest of his life paying people back.
+          atS: 34.74
+          durationS: 5.52
+        - text: When he died in nineteen forty, he still owed more than a quarter of a million dollars.
+          atS: 41.2
+          durationS: 4.98
+        - text: Johnny went to New York instead of college.
+          atS: 47.14
+          durationS: 2.34
+        - text: Some weeks, he had nothing to eat but oatmeal.
+          atS: 49.81
+          durationS: 2.83
+        - text: He made it.
+          atS: 53.08
+          durationS: 0.81
+        - text: He helped found Capitol Records.
+          atS: 54.34
+          durationS: 2.07
+        - text: In nineteen fifty four, he sold his share for nearly two million dollars.
+          atS: 56.73
+          durationS: 5.05
+        - text: The first thing he did was send a check to a Savannah bank, and pay back every one of his father's creditors.
+          atS: 62.22
+          durationS: 6.32
+        - text: That same year, nineteen fifty four, this square was torn down for a parking garage.
+          atS: 68.86
+          durationS: 5.55
+        - text: Savannah lost a square that year.
+          atS: 74.73
+          durationS: 1.97
+        - text: The Mercers got their name back.
+          atS: 77.03
+          durationS: 1.87

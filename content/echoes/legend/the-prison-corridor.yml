@@ -13,6 +13,8 @@ place: "Eastern State Penitentiary, Philadelphia"
 at: { lat: 39.96765, lng: -75.17265 }
 triggerRadiusKm: 0.06
 category: legend
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 64
 visibility: at-hand

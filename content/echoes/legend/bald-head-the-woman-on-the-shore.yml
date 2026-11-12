@@ -8,6 +8,8 @@ place: "Beach near Cape Fear point, Bald Head Island, North Carolina"
 at: { lat: 33.8442, lng: -77.9618 }
 triggerRadiusKm: 0.15
 category: legend
+rare: rare
+rareReason: "Hard to reach"
 format: short
 durationS: 54
 visibility: at-hand

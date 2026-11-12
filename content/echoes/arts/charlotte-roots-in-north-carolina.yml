@@ -1,0 +1,148 @@
+# Drafted by Claude Code (2026-11-09) for Charlotte.
+# Listening spot: Inside Romare Bearden Park, a public park off South Church Street and Martin Luther King Jr. Boulevard.
+# Position: Wikidata Q14708162 (Romare Bearden Park); the DNCR marker stands at Mint Street and Martin Luther King Jr. Boulevard beside the park (high confidence).
+id: charlotte-roots-in-north-carolina
+title: "Roots in North Carolina"
+summary: "Romare Bearden was born in Charlotte in 1911 and left at four. His collages kept returning to North Carolina."
+place: "Romare Bearden Park, Charlotte, North Carolina"
+at: { lat: 35.227, lng: -80.8473 }
+triggerRadiusKm: 0.08
+category: arts
+format: short
+durationS: 62
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charlotte, uptown, art, romare-bearden, african-american-history]
+teaser: "This park is named for an artist who left Charlotte at four, and kept painting it for the rest of his life."
+script: |
+  This park carries the name of an artist who left Charlotte when he was four years old.
+
+  Romare Bearden was born in Charlotte in 1911. His family moved north, and settled in Harlem.
+
+  He grew up, went to university in New York, and took a job as a caseworker for the city's social services. He kept that job until 1969.
+
+  All the while he was painting.
+
+  By the early 1960s he had found his way of working. Collage. Newspaper and magazine clippings, fabric, pencil and paint, cut and fitted together into faces made from many faces.
+
+  And many of those pictures were drawn from what he remembered of North Carolina.
+
+  He said it plainly. Most artists take some place, and like a flower, they sink roots. My roots are in North Carolina.
+
+  In 1987 he was awarded the National Medal of Arts.
+
+  Four years in Charlotte. A lifetime of pictures.
+pronunciations:
+  - written: Romare
+    say: ROH-mer-ee
+  - written: Bearden
+    say: BEER-den
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "This park carries the name of an artist who left Charlotte when he was four years old."
+    source: 1
+    quote: "Although his family moved north when he was only four years old"
+  - says: "This park carries the name of an artist who left Charlotte when he was four years old."
+    source: 1
+    quote: "In Charlotte a street and a park are named in his memory."
+  - says: "Romare Bearden was born in Charlotte in 1911."
+    source: 1
+    quote: "Romare Bearden was born in Charlotte in 1911."
+  - says: "His family moved north, and settled in Harlem."
+    source: 1
+    quote: "The Beardens eventually settled in Harlem"
+  - says: "He grew up, went to university in New York, and took a job as a caseworker for the city's social services."
+    source: 1
+    quote: "In 1935 Bearden graduated from New York University and gained employment as a caseworker for the New York City Department of Social Services"
+  - says: "He kept that job until 1969."
+    source: 1
+    quote: "a job he would hold until 1969."
+  - says: "By the early 1960s he had found his way of working."
+    source: 1
+    quote: "By the early 1960s Bearden settled into the techniques of collage and photomontage"
+  - says: "Newspaper and magazine clippings, fabric, pencil and paint, cut and fitted together into faces made from many faces."
+    source: 1
+    quote: "assimilating newspaper and magazine clippings, fabric, graphite and oils to create multifaceted compositions."
+  - says: "Newspaper and magazine clippings, fabric, pencil and paint, cut and fitted together into faces made from many faces."
+    source: 1
+    quote: "He amalgamated photographic images including African masks, animal eyes, and even vegetation to construct fragmented images of his subject’s faces"
+  - says: "And many of those pictures were drawn from what he remembered of North Carolina."
+    source: 1
+    quote: "many of his paintings and collages were drawn from memories of his time in North Carolina."
+  - says: "Most artists take some place, and like a flower, they sink roots."
+    source: 1
+    quote: "“Most artists take some place, and like a flower, they sink roots, looking for universal implications… My roots are in North Carolina.”"
+  - says: "My roots are in North Carolina."
+    source: 1
+    quote: "My roots are in North Carolina."
+  - says: "In 1987 he was awarded the National Medal of Arts."
+    source: 1
+    quote: "In 1987, Bearden was awarded the National Medal of Arts"
+  - says: "Four years in Charlotte."
+    source: 1
+    quote: "Although his family moved north when he was only four years old"
+sources:
+  - title: "Romare Bearden 1911-1988 (L-113)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2024/01/16/romare-bearden-1911-1988-l-113
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-roots-in-north-carolina/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 62.3
+    audioBytes: 998129
+    transcript:
+      totalS: 62.3
+      lines:
+        - text: This park carries the name of an artist who left Charlotte when he was four years old.
+          atS: 0
+          durationS: 4.59
+        - text: Romare Bearden was born in Charlotte in 1911.
+          atS: 5.28
+          durationS: 3.82
+        - text: His family moved north, and settled in Harlem.
+          atS: 9.8
+          durationS: 2.89
+        - text: He grew up, went to university in New York, and took a job as a caseworker for the city's social services.
+          atS: 13.2
+          durationS: 6.8
+        - text: He kept that job until 1969.
+          atS: 20.7
+          durationS: 2.68
+        - text: All the while he was painting.
+          atS: 24.2
+          durationS: 1.66
+        - text: By the early 1960s he had found his way of working.
+          atS: 26.37
+          durationS: 3.3
+        - text: Collage.
+          atS: 30.1
+          durationS: 0.8
+        - text: Newspaper and magazine clippings, fabric, pencil and paint, cut and fitted together into faces made from many faces.
+          atS: 31.08
+          durationS: 7.74
+        - text: And many of those pictures were drawn from what he remembered of North Carolina.
+          atS: 39.21
+          durationS: 4.38
+        - text: He said it plainly.
+          atS: 44.19
+          durationS: 1.27
+        - text: Most artists take some place, and like a flower, they sink roots.
+          atS: 46.15
+          durationS: 4.55
+        - text: My roots are in North Carolina.
+          atS: 51.4
+          durationS: 1.95
+        - text: In 1987 he was awarded the National Medal of Arts.
+          atS: 53.73
+          durationS: 4.06
+        - text: Four years in Charlotte.
+          atS: 58.24
+          durationS: 1.75
+        - text: A lifetime of pictures.
+          atS: 60.37
+          durationS: 1.95

@@ -1,0 +1,140 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2).
+# Listening spot: The western end of Golden Gate Park, on the public path near the Great Highway and the Beach Chalet, where the park meets Ocean Beach and the sand still shows.
+# Position: Golden Gate Park west end near John F. Kennedy Drive and the Great Highway, from general map knowledge (medium confidence; the spot only needs to be inside the park within sight of the beach).
+id: san-francisco-four-posts-for-a-blade-of-grass
+title: "Four Posts for a Blade of Grass"
+summary: "Golden Gate Park was planted on shifting dunes. Its gardener held them with a European beach grass and fed the trees street sweepings."
+place: "Western end of Golden Gate Park, near the Great Highway, San Francisco, California"
+at: { lat: 37.76960, lng: -122.50960 }
+triggerRadiusKm: 0.08
+category: wonders
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [san-francisco, golden-gate-park, ocean-beach, sand-dunes, john-mclaren, trees]
+teaser: "A newspaper said a blade of grass here would need four posts to hold it down."
+script: |
+  Look at the trees around you, and then down at the ground between them. Under the leaves, it is sand.
+
+  In eighteen seventy three, a newspaper laughed at the city's new park. A dreary waste of shifting sand hills, it said, where a blade of grass cannot be raised without four posts to support it, and keep it from blowing away.
+
+  The park had two great problems: fresh water, and dunes that would not stay put.
+
+  The man who solved the dunes was the gardener, John McLaren. He tried native lupine and barley. They could not hold the sand.
+
+  So he used a beach grass from the coasts of Northern Europe. When the wind buries it, it keeps growing, until the dune is too high for the wind to carry more sand to the top.
+
+  The first years were hard. Time after time, he woke to find thousands of young trees covered with sand. He dug them out, and nursed them back to life.
+
+  For fertiliser, he asked the city for the sweepings from its streets. In those days, the streets were full of horses.
+
+  Look at the trees again. Every one of them is growing on that.
+detail: >-
+  From the 1940 Federal Writers' Project guide to San Francisco, Golden Gate Park chapter: the Santa Rosa Democrat's 1873 jibe about shifting sand hills and four posts, the two chief problems of fresh water and moving dunes, native lupine and barley failing to hold the sand, Ammophila arenaria from the coast of Northern Europe growing as fast as the wind covers it until the wind no longer carries sand to the top, McLaren waking to find thousands of young trees covered with sand and digging them out, and his request for the sweepings from the city streets. The guide's aside that McLaren was annoyed "when the automobile drove the horses from the streets" supports the horses. "Every one of them" is a turn, not a census: the guide says the whole landscape is man's handiwork on the former dunes.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In eighteen seventy three, a newspaper laughed at the city's new park."
+    source: 1
+    quote: "said the Santa Rosa Democrat in 1873"
+  - says: "A dreary waste of shifting sand hills, it said, where a blade of grass cannot be raised without four posts to support it, and keep it from blowing away."
+    source: 1
+    quote: "a dreary waste of shifting sand hills where a blade of grass cannot be raised without four posts to support it and keep it from blowing away."
+  - says: "The park had two great problems: fresh water, and dunes that would not stay put."
+    source: 1
+    quote: "The two chief problems were to discover an economical and consistent source of fresh water and to fix in position the constantly moving sand dunes."
+  - says: "He tried native lupine and barley. They could not hold the sand."
+    source: 1
+    quote: "When native lupine and barley were found to be unable to hold the sand, McLaren resorted to the Ammophila arenaria"
+  - says: "So he used a beach grass from the coasts of Northern Europe."
+    source: 1
+    quote: "a beach grass common to the coast of Northern Europe."
+  - says: "When the wind buries it, it keeps growing, until the dune is too high for the wind to carry more sand to the top."
+    source: 1
+    quote: "this grass continues to grow as fast as the wind covers it over, refusing to be buried, until the dune has reached such a height that the wind velocity will no longer carry sand to the top."
+  - says: "The first years were hard. Time after time, he woke to find thousands of young trees covered with sand. He dug them out, and nursed them back to life."
+    source: 1
+    quote: "Time after time he awakened to find thousands of young trees covered with sand. Patiently he dug them out and nursed them back to life."
+  - says: "For fertiliser, he asked the city for the sweepings from its streets."
+    source: 1
+    quote: "Needing fertilizer, he asked for, and was given, the sweepings from the city streets."
+  - says: "In those days, the streets were full of horses."
+    source: 1
+    quote: "(When the automobile drove the horses from the streets, \"Uncle John\" was annoyed.)"
+  - says: "Under the leaves, it is sand."
+    source: 1
+    quote: "When the city set out to create a park here in 1870, these 1,017 acres were a windswept desert."
+  - says: "The man who solved the dunes was the gardener, John McLaren."
+    source: 1
+    quote: "McLaren resorted to the Ammophila arenaria"
+  - says: "Every one of them is growing on that."
+    source: 1
+    quote: "all are man's handiwork."
+sources:
+  - title: "San Francisco: The Bay and Its Cities (Federal Writers' Project, American Guide Series, 1940)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/sanfranciscobaya00writrich
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-four-posts-for-a-blade-of-grass/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.2
+    audioBytes: 1188301
+    transcript:
+      totalS: 74.2
+      lines:
+        - text: Look at the trees around you, and then down at the ground between them.
+          atS: 0
+          durationS: 3.76
+        - text: Under the leaves, it is sand.
+          atS: 4.2
+          durationS: 2.45
+        - text: In eighteen seventy three, a newspaper laughed at the city's new park.
+          atS: 7.95
+          durationS: 4.84
+        - text: A dreary waste of shifting sand hills, it said, where a blade of grass cannot be raised without four posts to support it, and keep it from blowing away.
+          atS: 13.3
+          durationS: 9.39
+        - text: "The park had two great problems: fresh water, and dunes that would not stay put."
+          atS: 24
+          durationS: 6.13
+        - text: The man who solved the dunes was the gardener, John McLaren.
+          atS: 30.94
+          durationS: 3.82
+        - text: He tried native lupine and barley.
+          atS: 35.46
+          durationS: 2.24
+        - text: They could not hold the sand.
+          atS: 38.14
+          durationS: 1.56
+        - text: So he used a beach grass from the coasts of Northern Europe.
+          atS: 40.14
+          durationS: 3.27
+        - text: When the wind buries it, it keeps growing, until the dune is too high for the wind to carry more sand to the top.
+          atS: 43.85
+          durationS: 6.7
+        - text: The first years were hard.
+          atS: 51.06
+          durationS: 1.6
+        - text: Time after time, he woke to find thousands of young trees covered with sand.
+          atS: 53.1
+          durationS: 5.09
+        - text: He dug them out, and nursed them back to life.
+          atS: 58.63
+          durationS: 2.7
+        - text: For fertiliser, he asked the city for the sweepings from its streets.
+          atS: 61.78
+          durationS: 4.18
+        - text: In those days, the streets were full of horses.
+          atS: 66.47
+          durationS: 2.88
+        - text: Look at the trees again.
+          atS: 69.95
+          durationS: 1.49
+        - text: Every one of them is growing on that.
+          atS: 71.95
+          durationS: 2.26

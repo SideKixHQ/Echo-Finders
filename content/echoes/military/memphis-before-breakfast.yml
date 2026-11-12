@@ -1,0 +1,115 @@
+# Drafted by Claude Code (2026-11-09) for Memphis.
+# Listening spot: The public bluff-top park on Front Street downtown, looking out over the Mississippi.
+# Position: Front Street bluff between Court Avenue and Jefferson Avenue, from street knowledge, not a fetched coordinate; the source says only that the battle was fought off Memphis (medium-low confidence, check on a map).
+id: memphis-before-breakfast
+title: "Before Breakfast"
+summary: "On June 6, 1862, Union boats destroyed the Confederate river fleet off Memphis in an hour and a half, and the city surrendered."
+place: "Mississippi River bluff, Front Street, downtown Memphis, Tennessee"
+at: { lat: 35.1453, lng: -90.0535 }
+triggerRadiusKm: 0.12
+category: military
+format: short
+durationS: 65
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [memphis, riverfront, civil-war, military, mississippi-river]
+teaser: "In June 1862 a river battle was fought in front of this city at dawn, and Memphis fell by breakfast."
+script: |
+  Look out over the river. On the sixth of June, 1862, a battle was fought on the water in front of this city.
+
+  The Confederate army had already pulled its troops out of Memphis. What was left to defend it was a small river fleet, and a few soldiers camped outside town.
+
+  The Union boats set out from an island just north of Memphis a little after four in the morning. They arrived off the city about half past five, and the battle began.
+
+  It lasted an hour and a half. When it was over, the Union had sunk or captured every Confederate boat but one.
+
+  Then the son of the Union colonel, a medical cadet named Charles Ellet, went ashore, met the mayor, and raised the Union flag over the courthouse.
+
+  Memphis, one of the great trading cities on the Mississippi, had fallen. Another stretch of the river was open to Union shipping.
+
+  A city that size, taken before most people had finished breakfast.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "On the sixth of June, 1862, a battle was fought on the water in front of this city."
+    source: 1
+    quote: "launched a naval attack on Memphis after 4:00 am on June 6. Arriving off Memphis about 5:30 am, the battle began."
+  - says: "The Confederate army had already pulled its troops out of Memphis."
+    source: 1
+    quote: "Confederate Gen. P.G.T. Beauregard ordered troops out of Fort Pillow and Memphis on June 4"
+  - says: "What was left to defend it was a small river fleet, and a few soldiers camped outside town."
+    source: 1
+    quote: "Thompson's few troops, camped outside Memphis, and Montgomery's fleet were the only force available to meet the Union naval threat to the city."
+  - says: "The Union boats set out from an island just north of Memphis a little after four in the morning."
+    source: 1
+    quote: "From Island No. 45, just north of Memphis, Flag-Officer Charles H. Davis and Col. Charles Ellet launched a naval attack on Memphis after 4:00 am on June 6."
+  - says: "They arrived off the city about half past five, and the battle began."
+    source: 1
+    quote: "Arriving off Memphis about 5:30 am, the battle began."
+  - says: "It lasted an hour and a half."
+    source: 1
+    quote: "In the hour and a half battle, the Union boats sank or captured all but one of the Confederate vessels"
+  - says: "When it was over, the Union had sunk or captured every Confederate boat but one."
+    source: 1
+    quote: "In the hour and a half battle, the Union boats sank or captured all but one of the Confederate vessels"
+  - says: "Then the son of the Union colonel, a medical cadet named Charles Ellet, went ashore, met the mayor, and raised the Union flag over the courthouse."
+    source: 1
+    quote: "Immediately following the battle, Col. Ellet's son, Medical Cadet Charles Ellet, Jr., met the mayor of Memphis and raised the Union colors over the courthouse."
+  - says: "Memphis, one of the great trading cities on the Mississippi, had fallen."
+    source: 1
+    quote: "Memphis, an important commercial and economic center on the Mississippi River, had fallen"
+  - says: "Another stretch of the river was open to Union shipping."
+    source: 1
+    quote: "opening another section of the Mississippi River to Union shipping."
+sources:
+  - title: "Battle Detail: Memphis (TN004)"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/civilwar/search-battles-detail.htm?battleCode=tn004
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/memphis-before-breakfast/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.6
+    audioBytes: 1034492
+    transcript:
+      totalS: 64.6
+      lines:
+        - text: Look out over the river.
+          atS: 0
+          durationS: 1.52
+        - text: On the sixth of June, 1862, a battle was fought on the water in front of this city.
+          atS: 2.63
+          durationS: 5.89
+        - text: The Confederate army had already pulled its troops out of Memphis.
+          atS: 9.13
+          durationS: 3.81
+        - text: What was left to defend it was a small river fleet, and a few soldiers camped outside town.
+          atS: 13.75
+          durationS: 5.57
+        - text: The Union boats set out from an island just north of Memphis a little after four in the morning.
+          atS: 20.02
+          durationS: 5.68
+        - text: They arrived off the city about half past five, and the battle began.
+          atS: 26.2
+          durationS: 4.46
+        - text: It lasted an hour and a half.
+          atS: 31.48
+          durationS: 2.19
+        - text: When it was over, the Union had sunk or captured every Confederate boat but one.
+          atS: 34.27
+          durationS: 5.29
+        - text: Then the son of the Union colonel, a medical cadet named Charles Ellet, went ashore, met the mayor, and raised the Union flag over the courthouse.
+          atS: 40.68
+          durationS: 8.87
+        - text: Memphis, one of the great trading cities on the Mississippi, had fallen.
+          atS: 50.85
+          durationS: 4.71
+        - text: Another stretch of the river was open to Union shipping.
+          atS: 56.26
+          durationS: 3.13
+        - text: A city that size, taken before most people had finished breakfast.
+          atS: 60
+          durationS: 4.6

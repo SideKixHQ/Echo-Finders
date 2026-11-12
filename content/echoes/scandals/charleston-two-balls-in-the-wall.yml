@@ -1,0 +1,196 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: In St. Michael's Alley, the public lane beside St. Michael's Church, a few steps in from Meeting Street.
+# Position: St. Michael's Alley from the Overture street segments in the app's Charleston street file, midway along the alley; the tavern's building is not identified (high confidence for the alley).
+id: charleston-two-balls-in-the-wall
+title: "Two Balls in the Wall"
+summary: "In St. Michael's Alley, a doctor and a loyalist fought a duel across a table upstairs. The proof was dug out of the plaster."
+place: "St. Michael's Alley, off Meeting Street, Charleston, South Carolina"
+at: { lat: 32.77588, lng: -79.93030 }
+triggerRadiusKm: 0.03
+category: scandals
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.8
+tags: [charleston, charleston-core, south-of-broad, revolution, duel, st-michaels-alley]
+teaser: "Two shots, one on each side of a living man's head."
+script: |
+  Walk a few steps into St. Michael's Alley, the narrow lane beside the church. Before the Revolution, there was a fashionable tavern in this alley.
+
+  One August day, two men in there were arguing politics. Doctor John Haley, an Irishman on the side of the colonists. And a New Yorker named Delancey, loyal to the King. Delancey called the doctor a liar.
+
+  Haley challenged him on the spot. Pistols, upstairs, just the two of them, no seconds. Delancey agreed, and took one of Haley's own pistols. They faced each other across a table, and fired at the same moment. Delancey was killed.
+
+  With no witnesses, the law called it murder, and Haley's friends hid him until the trial. One night, in the dark, a clothesline caught him by the throat, and he took it as a sign that he would hang.
+
+  At the trial, the best young lawyers in Charleston defended him, Thomas Heyward, the Pinckneys and the Rutledges. And the proof came out of the plaster. Delancey's pistol had been loaded with two balls. Both were dug out of the wall behind where Haley had stood, one on each side of his head. Haley was acquitted.
+
+  Look up at the windows above the alley, and choose a window.
+
+  Two balls in the wall. And a head between them.
+detail: >-
+  Joseph Johnson's Traditions and Reminiscences (1851) dates the quarrel to 16 August 1771 at a house of entertainment in St. Michael's Alley; Ravenel (1906) suggests it was probably the South Carolina Coffee House. Which building it was is not known.
+pronunciations:
+  - written: "Delancey"
+    say: "deh-LAN-see"
+  - written: "Haley"
+    say: "HAY-lee"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Before the Revolution, there was a fashionable tavern in this alley."
+    source: 1
+    quote: "at a genteel house of en- tertainment in St. Michael's alley"
+  - says: "One August day, two men in there were arguing politics."
+    source: 1
+    quote: "of August, an altercation arose, at a genteel house of en-"
+  - says: "Doctor John Haley, an Irishman on the side of the colonists."
+    source: 1
+    quote: "Dr. Haley was an Irishman by birth, an eminent practitioner of medicine in Charleston."
+  - says: "Doctor John Haley, an Irishman on the side of the colonists."
+    source: 1
+    quote: "He warmly espoused the popular cause in opposition to royalty"
+  - says: "And a New Yorker named Delancey, loyal to the King."
+    source: 1
+    quote: "between Dr. John Haley and Delancy, an elegant, accomplished royal- ist, of New- York"
+  - says: "Delancey called the doctor a liar."
+    source: 1
+    quote: "insulted Dr. Haley, by giving him the \" lie.\""
+  - says: "Haley challenged him on the spot."
+    source: 1
+    quote: "Haley immediately challenged Delancy to fight with pistols at that house"
+  - says: "Pistols, upstairs, just the two of them, no seconds."
+    source: 1
+    quote: "proposed that they should go together to an upper room, alone, and with- out seconds."
+  - says: "Delancey agreed, and took one of Haley's own pistols."
+    source: 1
+    quote: "He took one of the pistols offered to him by Haley"
+  - says: "They faced each other across a table, and fired at the same moment."
+    source: 1
+    quote: "they fought across a table, fired at the same moment, and Delancy was killed."
+  - says: "Delancey was killed."
+    source: 1
+    quote: "and Delancy was killed."
+  - says: "With no witnesses, the law called it murder, and Haley's friends hid him until the trial."
+    source: 1
+    quote: "the laws of his country and the usages of courts considered him a murderer"
+  - says: "With no witnesses, the law called it murder, and Haley's friends hid him until the trial."
+    source: 1
+    quote: "concealed him until his trial came on."
+  - says: "One night, in the dark, a clothesline caught him by the throat, and he took it as a sign that he would hang."
+    source: 1
+    quote: "a clothes-line, which had been left extended and unseen, suddenly caught him by the throat"
+  - says: "One night, in the dark, a clothesline caught him by the throat, and he took it as a sign that he would hang."
+    source: 1
+    quote: "He considered this to be ominous of his fate"
+  - says: "At the trial, the best young lawyers in Charleston defended him, Thomas Heyward, the Pinckneys and the Rutledges."
+    source: 1
+    quote: "Thomas Heyward, the Pinckneys and the Rutledges defended him in his trial."
+  - says: "And the proof came out of the plaster."
+    source: 1
+    quote: "were taken out of the wall just back of his adversary"
+  - says: "Delancey's pistol had been loaded with two balls."
+    source: 1
+    quote: "for the two balls with which it was loaded"
+  - says: "Both were dug out of the wall behind where Haley had stood, one on each side of his head."
+    source: 1
+    quote: "were taken out of the wall just back of his adversary, one on each side of where he stood."
+  - says: "Both were dug out of the wall behind where Haley had stood, one on each side of his head."
+    source: 2
+    quote: "on each side of where his head had been."
+  - says: "Haley was acquitted."
+    source: 1
+    quote: "Haley was acquitted"
+  - says: "Two balls in the wall."
+    source: 1
+    quote: "for the two balls with which it was loaded were taken out of the wall"
+  - says: "And a head between them."
+    source: 2
+    quote: "on each side of where his head had been."
+sources:
+  - title: "Traditions and Reminiscences, chiefly of the American Revolution in the South (Joseph Johnson, 1851)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/traditionsremini01john
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906)"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-two-balls-in-the-wall/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85
+    audioBytes: 1361754
+    transcript:
+      totalS: 85
+      lines:
+        - text: Walk a few steps into St.
+          atS: 0
+          durationS: 1.61
+        - text: Michael's Alley, the narrow lane beside the church.
+          atS: 1.64
+          durationS: 3.31
+        - text: Before the Revolution, there was a fashionable tavern in this alley.
+          atS: 5.76
+          durationS: 3.78
+        - text: One August day, two men in there were arguing politics.
+          atS: 10.36
+          durationS: 4.16
+        - text: Doctor John Haley, an Irishman on the side of the colonists.
+          atS: 14.9
+          durationS: 3.82
+        - text: And a New Yorker named Delancey, loyal to the King.
+          atS: 18.93
+          durationS: 3.78
+        - text: Delancey called the doctor a liar.
+          atS: 23.31
+          durationS: 2.26
+        - text: Haley challenged him on the spot.
+          atS: 25.75
+          durationS: 1.95
+        - text: Pistols, upstairs, just the two of them, no seconds.
+          atS: 28.03
+          durationS: 3.03
+        - text: Delancey agreed, and took one of Haley's own pistols.
+          atS: 31.38
+          durationS: 3.63
+        - text: They faced each other across a table, and fired at the same moment.
+          atS: 35.71
+          durationS: 3.98
+        - text: Delancey was killed.
+          atS: 40.3
+          durationS: 1.86
+        - text: With no witnesses, the law called it murder, and Haley's friends hid him until the trial.
+          atS: 42.76
+          durationS: 5.46
+        - text: One night, in the dark, a clothesline caught him by the throat, and he took it as a sign that he would hang.
+          atS: 49.03
+          durationS: 6.62
+        - text: At the trial, the best young lawyers in Charleston defended him, Thomas Heyward, the Pinckneys and the Rutledges.
+          atS: 56.34
+          durationS: 6.9
+        - text: And the proof came out of the plaster.
+          atS: 63.68
+          durationS: 2.24
+        - text: Delancey's pistol had been loaded with two balls.
+          atS: 66.53
+          durationS: 3.03
+        - text: Both were dug out of the wall behind where Haley had stood, one on each side of his head.
+          atS: 69.83
+          durationS: 4.8
+        - text: Haley was acquitted.
+          atS: 75.33
+          durationS: 1.36
+        - text: Look up at the windows above the alley, and choose a window.
+          atS: 77.8
+          durationS: 3.26
+        - text: Two balls in the wall.
+          atS: 81.39
+          durationS: 1.43
+        - text: And a head between them.
+          atS: 83.25
+          durationS: 1.78

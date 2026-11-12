@@ -8,6 +8,8 @@ place: "Bald Head Island harbor and ferry landing, Bald Head Island, North Carol
 at: { lat: 33.8768, lng: -78.0008 }
 triggerRadiusKm: 0.08
 category: legend
+rare: rare
+rareReason: "Hard to reach"
 format: short
 durationS: 53
 visibility: at-hand

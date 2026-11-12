@@ -1,0 +1,180 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2).
+# Listening spot: The public sidewalk outside 575 Castro Street, the former Castro Camera, a city landmark. The shop is a business: listen from the sidewalk.
+# Position: 575 Castro Street, between 18th and 19th Streets, from general map knowledge (medium to high confidence for the storefront).
+id: san-francisco-in-the-event-of-my-death
+title: "In the Event of My Death"
+summary: "Harvey Milk ran his campaigns from a camera shop here, and some of his ashes lie outside it. He left a tape, to be played if he was killed."
+place: "Former Castro Camera, 575 Castro Street, the Castro, San Francisco, California"
+at: { lat: 37.76094, lng: -122.43504 }
+triggerRadiusKm: 0.03
+category: history
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.9
+tags: [san-francisco, castro, harvey-milk, lgbtq, civil-rights, 1978]
+teaser: "He recorded a tape, to be played only if he was killed."
+script: |
+  Look at the shopfront at five seventy five Castro Street. In the nineteen seventies it was a camera shop. Castro Camera. It belonged to Harvey Milk.
+
+  Now look down. A monument outside the shop covers some of his ashes. In a city that bans burials, it is one of the exceptions.
+
+  It was his campaign headquarters, all four times he ran for office. From nineteen seventy five, he lived in the apartment upstairs.
+
+  On the fourth try, he won. He became the first openly gay man ever voted into office in the United States, as a San Francisco supervisor.
+
+  He knew what that might cost. Not long before he was killed, he recorded a kind of political will on a cassette tape. It begins:
+
+  This is to be played only in the event of my death by assassination.
+
+  On the twenty seventh of November, nineteen seventy eight, he and Mayor George Moscone were shot and killed. He had been on the board for eleven months.
+
+  On the tape, he talks about a phone call from a frightened teenager in Altoona, Pennsylvania, who had read about him in the news.
+
+  You got to give them hope, he says.
+
+  Look at the shop window again. That is where he started. And where part of him still is.
+detail: >-
+  NBC News (2023) gives Castro Camera as the shop Milk owned from 1972 until his murder in 1978, his headquarters in four runs for office, the apartment above from 1975, and the 2000 city landmark designation. NPR (2008) gives the first openly gay man ever voted into office in the United States, the cassette tape and its opening words, the announcement by Dianne Feinstein on 27 November 1978 that Moscone and Milk had been shot and killed, eleven months on the board, and the Altoona caller and "You got to give them hope"; NPR adds that Milk's friends think the Altoona caller may have been a rhetorical device. NBC News (2018) dates his election to one year before his death. CBS San Francisco gives 575 Castro Street, and the monument outside the former Castro Camera covering some of Milk's ashes, an exception to the city's ban on burials. The convicted killer, Dan White, is not named; he is dead and the echo is about Milk. "On the fourth try" follows from four runs and the win; a reviewer may want that checked.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In the nineteen seventies it was a camera shop. Castro Camera. It belonged to Harvey Milk."
+    source: 1
+    quote: "Castro Camera, the retail shop the gay rights pioneer Harvey Milk owned from 1972 until his murder in 1978"
+  - says: "It was his campaign headquarters, all four times he ran for office. From nineteen seventy five, he lived in the apartment upstairs."
+    source: 1
+    quote: "was Milk’s campaign headquarters in his four runs for public office, as well as a hub for the local gay community of San Francisco’s Castro District. Milk moved into the apartment above the shop in 1975 and lived there until his death."
+  - says: "He became the first openly gay man ever voted into office in the United States, as a San Francisco supervisor."
+    source: 2
+    quote: "He was the first openly gay man ever voted into office in the United States."
+  - says: "He became the first openly gay man ever voted into office in the United States, as a San Francisco supervisor."
+    source: 2
+    quote: "when Milk became the country's first openly gay city supervisor"
+  - says: "On the fourth try, he won."
+    source: 3
+    quote: "Gay rights pioneer Harvey Milk was assassinated on Nov. 27, 1978, just one year after becoming California’s first openly gay elected official."
+  - says: "Not long before he was killed, he recorded a kind of political will on a cassette tape."
+    source: 2
+    quote: "That fear led Harvey Milk to record a sort of political will on cassette tape not long before he was killed."
+  - says: "This is to be played only in the event of my death by assassination."
+    source: 2
+    quote: "This is to be played only in the event of my death by assassination."
+  - says: "On the twenty seventh of November, nineteen seventy eight, he and Mayor George Moscone were shot and killed."
+    source: 2
+    quote: "Both Mayor Moscone and Supervisor Harvey Milk have been shot and killed."
+  - says: "On the twenty seventh of November, nineteen seventy eight, he and Mayor George Moscone were shot and killed."
+    source: 3
+    quote: "Gay rights pioneer Harvey Milk was assassinated on Nov. 27, 1978"
+  - says: "He had been on the board for eleven months."
+    source: 2
+    quote: "He was only on the board for 11 months"
+  - says: "On the tape, he talks about a phone call from a frightened teenager in Altoona, Pennsylvania, who had read about him in the news."
+    source: 2
+    quote: "In the tape, Milk invokes a phone call he got from a teenager in Altoona, Pennsylvania. The kid was scared and closeted. He got up the nerve to call Milk after he made national headlines"
+  - says: "You got to give them hope, he says."
+    source: 2
+    quote: "You got to give them hope."
+  - says: "Look at the shopfront at five seventy five Castro Street."
+    source: 4
+    quote: "One notable exception to San Francisco's ban on burials can be found at 575 Castro Street, where a monument covers ashes of the much-loved gay rights activist Harvey Milk, outside the former Castro Camera."
+  - says: "A monument outside the shop covers some of his ashes. In a city that bans burials, it is one of the exceptions."
+    source: 4
+    quote: "One notable exception to San Francisco's ban on burials can be found at 575 Castro Street, where a monument covers ashes of the much-loved gay rights activist Harvey Milk, outside the former Castro Camera."
+  - says: "And where part of him still is."
+    source: 4
+    quote: "where a monument covers ashes of the much-loved gay rights activist Harvey Milk, outside the former Castro Camera."
+sources:
+  - title: "9 LGBTQ historic residences that you can visit now"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/nbc-out/out-news/9-lgbtq-historic-residences-can-visit-now-rcna120706
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "'Gotta Give 'Em Hope': The Legacy Of Harvey Milk (Neda Ulaby, 2008)"
+    publisher: "NPR"
+    url: https://www.npr.org/transcripts/96865519
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Forty years after his death, Harvey Milk's legacy still lives on"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/feature/nbc-out/forty-years-after-his-death-harvey-milk-s-legacy-still-n940356
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "10 Things You Didn't Know About San Francisco"
+    publisher: "CBS San Francisco"
+    url: https://www.cbsnews.com/sanfrancisco/news/10-things-you-didnt-know-about-san-francisco/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-in-the-event-of-my-death/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 82.1
+    audioBytes: 1314106
+    transcript:
+      totalS: 82.1
+      lines:
+        - text: Look at the shopfront at five seventy five Castro Street.
+          atS: 0
+          durationS: 3.9
+        - text: In the nineteen seventies it was a camera shop.
+          atS: 4.11
+          durationS: 2.9
+        - text: Castro Camera.
+          atS: 7.26
+          durationS: 1.28
+        - text: It belonged to Harvey Milk.
+          atS: 8.74
+          durationS: 1.6
+        - text: Now look down.
+          atS: 10.67
+          durationS: 1.01
+        - text: A monument outside the shop covers some of his ashes.
+          atS: 12.06
+          durationS: 3.25
+        - text: In a city that bans burials, it is one of the exceptions.
+          atS: 15.64
+          durationS: 3.76
+        - text: It was his campaign headquarters, all four times he ran for office.
+          atS: 20.1
+          durationS: 3.98
+        - text: From nineteen seventy five, he lived in the apartment upstairs.
+          atS: 25.03
+          durationS: 3.43
+        - text: On the fourth try, he won.
+          atS: 28.78
+          durationS: 2
+        - text: He became the first openly gay man ever voted into office in the United States, as a San Francisco supervisor.
+          atS: 31.73
+          durationS: 7.31
+        - text: He knew what that might cost.
+          atS: 39.65
+          durationS: 1.85
+        - text: Not long before he was killed, he recorded a kind of political will on a cassette tape.
+          atS: 42.1
+          durationS: 4.91
+        - text: "It begins: This is to be played only in the event of my death by assassination."
+          atS: 47.33
+          durationS: 5.32
+        - text: On the twenty seventh of November, nineteen seventy eight, he and Mayor George Moscone were shot and killed.
+          atS: 53.26
+          durationS: 6.87
+        - text: He had been on the board for eleven months.
+          atS: 60.83
+          durationS: 2.26
+        - text: On the tape, he talks about a phone call from a frightened teenager in Altoona, Pennsylvania, who had read about him in the news.
+          atS: 63.79
+          durationS: 7.12
+        - text: You got to give them hope, he says.
+          atS: 71.86
+          durationS: 2.37
+        - text: Look at the shop window again.
+          atS: 75.18
+          durationS: 1.6
+        - text: That is where he started.
+          atS: 77.16
+          durationS: 1.47
+        - text: And where part of him still is.
+          atS: 79.33
+          durationS: 2.73

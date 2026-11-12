@@ -32,6 +32,8 @@
  */
 import {
   CaptureTracker,
+  ECHO_CATEGORIES,
+  OPT_IN_CATEGORIES,
   PRIVACY_DEFAULTS,
   capabilitiesToRequest,
   redactRecord,
@@ -52,7 +54,7 @@ import {
  * phone has no kids mode or opt ins yet, so it is the web's default listener exactly.
  */
 export const WALK_LISTENER: ListenerProfile = {
-  categories: ["history", "food-drink", "people", "built", "land", "arts", "legend", "kids", "inspo", "unsolved", "disasters", "music", "firsts", "hidden"],
+  categories: ECHO_CATEGORIES.filter((c) => !OPT_IN_CATEGORIES.includes(c)),
   age: 35,
   density: "immersive",
 };

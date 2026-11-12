@@ -1,0 +1,126 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: Caswell Beach Road at the Oak Island Lighthouse parking lot, looking across the road at the old station's rooftop lookout. The station is a private home: look from the road only.
+# Position: Life Saving Station NR UTM point (17 774350 3753900, NAD27) converted and shifted about 200 m north for the datum gives 33.8918, -78.0335; the listener is placed on the road by the lighthouse lot, about 80 m northwest (medium confidence).
+id: caswell-beach-the-long-day-of-dunbar-davis
+title: "The Long Day of Dunbar Davis"
+summary: "In August 1893, Oak Island Life Saving Station keeper Dunbar Davis and a volunteer crew rescued five schooners in one day."
+place: "Former Oak Island Life Saving Station, Caswell Beach Road, Caswell Beach, North Carolina"
+at: { lat: 33.8922, lng: -78.0342 }
+triggerRadiusKm: 0.05
+category: disasters
+rare: rare
+rareReason: "Easy to miss"
+format: short
+durationS: 60
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [caswell-beach, oak-island, life-saving-service, rescue, frying-pan-shoals]
+teaser: "The little tower on that roof was a lookout. In 1893 its keeper had one very long day."
+script: |
+  Across the road, among the beach cottages, look for a house with a small tower on its roof. That tower was a lookout.
+
+  This was the Oak Island Life Saving Station, built in 1889. Around 1938 it was sold, and moved across the road to be a beach cottage. It is a private home, so look from here.
+
+  From the tower, one man kept watch while a second man patrolled the beach.
+
+  In August 1893, a hurricane came ashore at Charleston. The regular crew of surfmen did not report for duty until the first of September. So the keeper, Dunbar Davis, made his rescues with volunteers.
+
+  That day, they rescued five schooners.
+
+  The coastal historian David Stick called it the long day of Dunbar Davis.
+
+  Davis kept this station from 1891 to 1915. The tower he watched from is still up there, on a summer house.
+pronunciations:
+  - written: Dunbar
+    say: DUN-bar
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "This was the Oak Island Life Saving Station, built in 1889."
+    source: 1
+    quote: "is a picturesque one-and-one-half story frame life saving station built in 1889"
+  - says: "Around 1938 it was sold, and moved across the road to be a beach cottage."
+    source: 1
+    quote: "Around 193 8 the station was sold to a man from Charlotte, who moved it across the road for use as a private beach cottage."
+  - says: "Across the road, among the beach cottages, look for a house with a small tower on its roof."
+    source: 1
+    quote: "an enclosed rooftop lookout tower"
+  - says: "From the tower, one man kept watch while a second man patrolled the beach."
+    source: 1
+    quote: "One man stayed in the lookout tower, and the second man patrolled the beach for two hours"
+  - says: "In August 1893, a hurricane came ashore at Charleston."
+    source: 1
+    quote: "Davis's most famous rescue at the Oak Island Station took place in August 1893 during a hurricane that made"
+  - says: "The regular crew of surfmen did not report for duty until the first of September."
+    source: 1
+    quote: "Because the hurricane happened in August, before the normal crew of surfmen reported for duty on September 1, Dunbar had to make rescues with the help of volunteers."
+  - says: "So the keeper, Dunbar Davis, made his rescues with volunteers."
+    source: 1
+    quote: "Dunbar had to make rescues with the help of volunteers."
+  - says: "That day, they rescued five schooners."
+    source: 1
+    quote: "He led the successful rescue of five schooners on this day"
+  - says: "The coastal historian David Stick called it the long day of Dunbar Davis."
+    source: 1
+    quote: "christened by noted coastal historian David Stick the \"long day of Dunbar Davis.\""
+  - says: "Davis kept this station from 1891 to 1915."
+    source: 1
+    quote: "Dunbar Davis-July 1891 to March 1915"
+  - says: "The tower he watched from is still up there, on a summer house."
+    source: 1
+    quote: "Since the late 1930s, the old Life Saving Station has been a summer cottage"
+sources:
+  - title: "Oak Island Life Saving Station, National Register of Historic Places Registration Form"
+    publisher: "North Carolina State Historic Preservation Office (National Register of Historic Places nomination)"
+    url: https://files.nc.gov/ncdcr/nr/BW0259.pdf
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/caswell-beach-the-long-day-of-dunbar-davis/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 60
+    audioBytes: 960513
+    transcript:
+      totalS: 60
+      lines:
+        - text: Across the road, among the beach cottages, look for a house with a small tower on its roof.
+          atS: 0
+          durationS: 5.42
+        - text: That tower was a lookout.
+          atS: 5.93
+          durationS: 1.47
+        - text: This was the Oak Island Life Saving Station, built in 1889.
+          atS: 7.79
+          durationS: 5.06
+        - text: Around 1938 it was sold, and moved across the road to be a beach cottage.
+          atS: 13.46
+          durationS: 5.31
+        - text: It is a private home, so look from here.
+          atS: 19.2
+          durationS: 2.62
+        - text: From the tower, one man kept watch while a second man patrolled the beach.
+          atS: 22.52
+          durationS: 4.52
+        - text: In August 1893, a hurricane came ashore at Charleston.
+          atS: 27.64
+          durationS: 4.27
+        - text: The regular crew of surfmen did not report for duty until the first of September.
+          atS: 32.36
+          durationS: 4.88
+        - text: So the keeper, Dunbar Davis, made his rescues with volunteers.
+          atS: 37.93
+          durationS: 4.42
+        - text: That day, they rescued five schooners.
+          atS: 42.85
+          durationS: 2.74
+        - text: The coastal historian David Stick called it the long day of Dunbar Davis.
+          atS: 46.03
+          durationS: 4.89
+        - text: Davis kept this station from 1891 to 1915.
+          atS: 51.51
+          durationS: 4.32
+        - text: The tower he watched from is still up there, on a summer house.
+          atS: 56.22
+          durationS: 3.74

@@ -1,0 +1,127 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the southwest corner of Oglethorpe Avenue and Habersham Street, outside the Police Barracks and its arched gateway. A working police building; the listener stays on the sidewalk.
+# Position: Oglethorpe and Habersham intersection from the street segments in the app's Savannah street file, set onto the southwest corner, where the 1937 guide places the barracks (high confidence).
+id: savannah-names-over-the-gate
+title: "Names Over the Gate"
+summary: "Built just after the Civil War, the Police Barracks is still police headquarters, said to be the oldest in continuous use."
+place: "Police Barracks, Oglethorpe Avenue at Habersham Street, Savannah, Georgia"
+at: { lat: 32.07572, lng: -81.08848 }
+triggerRadiusKm: 0.035
+category: wonders
+rare: rare
+rareReason: "Easy to miss"
+format: short
+durationS: 61
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.7
+tags: [savannah, savannah-core, oglethorpe-avenue, police, reconstruction, architecture]
+teaser: "Look up at the arch. Two men signed it."
+script: |
+  Find the brick arch on this corner, the old carriage gate with the iron grille. Look at the top of the arch.
+
+  There are names cut into it. Not of heroes. Of the men who designed it and built it.
+
+  When the Civil War ended, Savannah was shaken and disorganised. The city decided the first thing it needed was more police. This was the first large building it put up after the war, in eighteen seventy, as barracks for its police.
+
+  Its architect and its builder were proud enough to sign the gate.
+
+  It never stopped being a police building. The Library of Congress catalogue calls it the oldest continually active police headquarters in the nation. There is a statue of a police officer standing outside.
+
+  Look up at the names again.
+
+  Most of the city's builders are forgotten. These two wrote themselves over the door.
+detail: >-
+  The 1937 guide: "the first large building erected in Savannah after the War Between the States, when the tragic and disorganized city felt the necessity for greater police protection. The brick arcaded sally port, inscribed with the architect's and builder's names". Carol M. Highsmith's catalog records give the 1870 date, the statue of a police officer, and "the oldest continually active police headquarters in the nation". Neither source gives the two names; read them on site and add them before review.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Find the brick arch on this corner, the old carriage gate with the iron grille."
+    source: 1
+    quote: "The brick arcaded sally port, inscribed with the architect's and builder's names, is a picturesque feature with its iron grilled gate."
+  - says: "There are names cut into it. Not of heroes. Of the men who designed it and built it."
+    source: 1
+    quote: "inscribed with the architect's and builder's names"
+  - says: "When the Civil War ended, Savannah was shaken and disorganised. The city decided the first thing it needed was more police."
+    source: 1
+    quote: "when the tragic and disorganized city felt the necessity for greater police pro- tection."
+  - says: "This was the first large building it put up after the war, in eighteen seventy, as barracks for its police."
+    source: 1
+    quote: "This was the first large building erected in Savannah after the War Between the States"
+  - says: "This was the first large building it put up after the war, in eighteen seventy, as barracks for its police."
+    source: 2
+    quote: "Statue of a police officer outside the 1870 building that serves as the Savannah, Georgia, \"police barracks,\" as it is known"
+  - says: "The Library of Congress catalogue calls it the oldest continually active police headquarters in the nation."
+    source: 2
+    quote: "Now the Savannah-Chatham Metropolitan Police Department headquarters, it is the oldest continually active police headquarters in the nation."
+  - says: "There is a statue of a police officer standing outside."
+    source: 2
+    quote: "Statue of a police officer outside the 1870 building"
+  - says: "These two wrote themselves over the door."
+    source: 1
+    quote: "The brick arcaded sally port, inscribed with the architect's and builder's names, is a picturesque feature with its iron grilled gate."
+sources:
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Statue of a police officer outside the 1870 building that serves as the Savannah, Georgia, police barracks (Carol M. Highsmith, catalog record)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/2017880455/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-names-over-the-gate/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 60.8
+    audioBytes: 974305
+    transcript:
+      totalS: 60.8
+      lines:
+        - text: Find the brick arch on this corner, the old carriage gate with the iron grille.
+          atS: 0
+          durationS: 5.07
+        - text: Look at the top of the arch.
+          atS: 5.35
+          durationS: 1.63
+        - text: There are names cut into it.
+          atS: 7.19
+          durationS: 1.73
+        - text: Not of heroes.
+          atS: 9.13
+          durationS: 1.24
+        - text: Of the men who designed it and built it.
+          atS: 10.58
+          durationS: 2.62
+        - text: When the Civil War ended, Savannah was shaken and disorganised.
+          atS: 14.5
+          durationS: 4.51
+        - text: The city decided the first thing it needed was more police.
+          atS: 19.61
+          durationS: 4.09
+        - text: This was the first large building it put up after the war, in eighteen seventy, as barracks for its police.
+          atS: 24.08
+          durationS: 7.08
+        - text: Its architect and its builder were proud enough to sign the gate.
+          atS: 31.67
+          durationS: 4.03
+        - text: It never stopped being a police building.
+          atS: 36.4
+          durationS: 2.5
+        - text: The Library of Congress catalogue calls it the oldest continually active police headquarters in the nation.
+          atS: 40.01
+          durationS: 6.86
+        - text: There is a statue of a police officer standing outside.
+          atS: 47.47
+          durationS: 3.95
+        - text: Look up at the names again.
+          atS: 52.54
+          durationS: 1.6
+        - text: Most of the city's builders are forgotten.
+          atS: 54.74
+          durationS: 2.37
+        - text: These two wrote themselves over the door.
+          atS: 57.62
+          durationS: 3.22

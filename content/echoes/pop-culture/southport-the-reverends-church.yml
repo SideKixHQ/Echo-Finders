@@ -1,0 +1,90 @@
+# Drafted by Claude Code (2026-11-08) for Southport and Oak Island.
+# Listening spot: Sidewalk of East Nash Street in front of Trinity United Methodist Church; a working church, view from the street.
+# Position: Overture address point for E Nash St 209 (33.920357, -78.017647), the church's address as commonly listed; the nomination puts Trinity on the north side of Nash between Howe and Atlantic (medium confidence).
+id: southport-the-reverends-church
+title: "The Reverend's Church"
+summary: "Trinity United Methodist Church, built 1888 to 1890, was the church of Jamie's father in the film A Walk to Remember."
+place: "Trinity United Methodist Church, East Nash Street between Howe Street and Atlantic Avenue, Southport, North Carolina"
+at: { lat: 33.92025, lng: -78.0177 }
+triggerRadiusKm: 0.04
+category: pop-culture
+inspo:
+  kind: creation
+  evidence: site
+format: look-below
+durationS: 32
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [southport, film, a-walk-to-remember, church]
+teaser: "In A Walk to Remember, Jamie's father preached here."
+script: |
+  Look at the white church with the squat bell tower on its roof. It was built between 1888 and 1890, by local carpenters, and inside it is polished Carolina pine.
+
+  In the film A Walk to Remember, Jamie's father was the reverend at this church.
+
+  It has turned up in several other films and television shows since.
+
+  On screen, it belonged to a fictional preacher. Off screen, it has been this town's church for well over a century.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the white church with the squat bell tower on its roof."
+    source: 2
+    quote: "A squat bell-tower sits atop the shingled roof."
+  - says: "It was built between 1888 and 1890, by local carpenters, and inside it is polished Carolina pine."
+    source: 2
+    quote: "Trinity Methodist Church: 1888-1890."
+  - says: "by local carpenters"
+    source: 2
+    quote: "this late 19th c. frame church is the best testament to the imagination and competent skills of native Southport carpenter-builders"
+  - says: "inside it is polished Carolina pine"
+    source: 2
+    quote: "Highly polished Carolina pine was employed on the interior."
+  - says: "In the film A Walk to Remember, Jamie's father was the reverend at this church."
+    source: 1
+    quote: "In A Walk to Remember , Jamie’s father was the reverend at this church, which has made appearances in several TV shows and movies."
+  - says: "It has turned up in several other films and television shows since."
+    source: 1
+    quote: "which has made appearances in several TV shows and movies."
+  - says: "Off screen, it has been this town's church for well over a century."
+    source: 1
+    quote: "This simple white church was built in 1890 and features a beautiful wooden interior."
+sources:
+  - title: "A Guide to Downtown Southport"
+    publisher: "Our State"
+    url: https://www.ourstate.com/a-guide-to-downtown-southport/
+    retrievedAt: "2026-11-08"
+    rights: fair-use-facts
+  - title: "Southport Historic District, National Register of Historic Places Inventory-Nomination Form"
+    publisher: "North Carolina State Historic Preservation Office"
+    url: https://files.nc.gov/ncdcr/nr/BW0008.pdf
+    retrievedAt: "2026-11-08"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/southport-the-reverends-church/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 31.5
+    audioBytes: 504937
+    transcript:
+      totalS: 31.5
+      lines:
+        - text: Look at the white church with the squat bell tower on its roof.
+          atS: 0
+          durationS: 3.59
+        - text: It was built between 1888 and 1890, by local carpenters, and inside it is polished Carolina pine.
+          atS: 4.1
+          durationS: 8.37
+        - text: In the film A Walk to Remember, Jamie's father was the reverend at this church.
+          atS: 13.77
+          durationS: 4.76
+        - text: It has turned up in several other films and television shows since.
+          atS: 18.97
+          durationS: 3.96
+        - text: On screen, it belonged to a fictional preacher.
+          atS: 23.53
+          durationS: 2.96
+        - text: Off screen, it has been this town's church for well over a century.
+          atS: 27.19
+          durationS: 4.3

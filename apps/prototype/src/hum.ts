@@ -67,19 +67,21 @@ const NOTE: Record<EchoCategory, number> = {
   "true-crime": 110.0, // A2
   legend: 130.81, // C3
   history: 146.83, // D3
-  built: 164.81, // E3
-  land: 196.0, // G3
-  people: 220.0, // A3
+  // The 16 topics (2026-11-12), every note still A minor pentatonic. Each new topic takes
+  // the note of the retired one it mostly came from: wonders built's, business firsts',
+  // pop culture inspo's, scandals music's. Military and sports take free octaves.
+  wonders: 164.81, // E3
+  military: 73.42, // D2: the heaviest subject, below the rest
+  sports: 659.25, // E5
   arts: 261.63, // C4
   "food-drink": 293.66, // D4
   kids: 329.63, // E4
-  inspo: 392.0, // G4, the next note of the same pentatonic: still a chord with all the rest
-  // The five of 2026-11-12, still A minor pentatonic: the heavy two below the rest.
+  "pop-culture": 392.0, // G4
   disasters: 82.41, // E2
   unsolved: 98.0, // G2
-  hidden: 196.0, // G3, with land: both are about the ground
-  music: 440.0, // A4
-  firsts: 523.25, // C5
+  hidden: 196.0, // G3: about the ground
+  scandals: 440.0, // A4
+  business: 523.25, // C5
 };
 
 /**
@@ -93,18 +95,18 @@ const WAVE: Record<EchoCategory, OscillatorType> = {
   "true-crime": "triangle",
   legend: "triangle",
   history: "sine",
-  built: "sine",
-  land: "sine",
-  people: "sine",
+  military: "triangle",
+  scandals: "triangle",
+  wonders: "sine",
   arts: "triangle",
+  "pop-culture": "triangle",
+  sports: "triangle",
   "food-drink": "sine",
+  business: "sine",
   kids: "triangle",
-  inspo: "triangle",
   disasters: "triangle",
   unsolved: "triangle",
   hidden: "sine",
-  music: "triangle",
-  firsts: "sine",
 };
 
 /** Beyond this nothing hums. Past it a tone is not guidance, it is a rumour. */

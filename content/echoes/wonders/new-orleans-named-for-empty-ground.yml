@@ -1,0 +1,132 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Public sidewalk at the corner of Esplanade Avenue and North Rampart Street.
+# Position: Fitted Esplanade Ave (600-1100 block points, rms 21 m) and N Rampart (1000-1500 block points) intersection (medium confidence).
+id: new-orleans-named-for-empty-ground
+title: "Named for Empty Ground"
+summary: "Esplanade Avenue, the grand street of Creole New Orleans, takes its name from the cleared ground outside a fort."
+place: "Esplanade Avenue at North Rampart Street, New Orleans, Louisiana"
+at: { lat: 29.96599, lng: -90.06355 }
+triggerRadiusKm: 0.04
+category: wonders
+format: short
+durationS: 63
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, esplanade, fortifications, creole]
+teaser: "The best address in Creole New Orleans is a military word."
+script: |
+  Look down Esplanade Avenue, toward the river. The trees, the wide middle, the old houses on both sides.
+
+  A guidebook of nineteen hundred and four said this avenue was to the Creoles what St. Charles Avenue was to the Americans. Their grand residence street.
+
+  The name is older than the houses, and it is a soldier's word.
+
+  Right here, where Rampart now crosses Esplanade, the Spanish governor Carondelet put up a fort in seventeen ninety-six. Fort St. Ferdinand. It was part of a ring of defenses around the town.
+
+  An esplanade is the open, cleared ground that lies outside a line of fortifications like that. Flat, bare and empty. That is what this was.
+
+  The fort was taken down early in the eighteen-hundreds, and the town spread out across the cleared ground.
+
+  So the finest address in Creole New Orleans is named for the space that was meant to stay empty.
+detail: |
+  The 1913 Picayune guide calls Esplanade the principal residence street of the French
+  Quarter and says Fort St. Ferdinand was dismantled in the early part of the nineteenth
+  century; the Rampart Street defenses did not wholly disappear until 1820.
+pronunciations:
+  - written: Esplanade
+    say: ESS-pluh-nade
+  - written: Carondelet
+    say: kuh-RON-duh-let
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look down Esplanade Avenue, toward the river."
+    source: 1
+    quote: "Hsplanade Avenue crosses the city in- a northwesterly direction, from: the Mississippi to Bayou St. John."
+  - says: "A guidebook of nineteen hundred and four said this avenue was to the Creoles what St. Charles Avenue was to the Americans."
+    source: 2
+    quote: "is to the Creoles what St. Charles Avenue is to the Americans—the aristocratic residence street."
+  - says: "A guidebook of nineteen hundred and four said this avenue was to the Creoles what St. Charles Avenue was to the Americans."
+    source: 2
+    quote: "Copyright 1904 by"
+  - says: "Right here, where Rampart now crosses Esplanade, the Spanish governor Carondelet put up a fort in seventeen ninety-six."
+    source: 1
+    quote: "Where Rampart now crosses Esplanade, Carondelet, in 1796, erected Fort St. Ferdinand, dismantled in the early part of the last century."
+  - says: "Right here, where Rampart now crosses Esplanade, the Spanish governor Carondelet put up a fort in seventeen ninety-six."
+    source: 2
+    quote: "the Spanish Governor of colonial days, Baron de Carondelet"
+  - says: "Fort St. Ferdinand."
+    source: 1
+    quote: "Fort St. Ferdinand, at the intersection of Rampart and Es- planade avenues"
+  - says: "The fort was taken down early in the eighteen-hundreds, and the town spread out across the cleared ground."
+    source: 1
+    quote: "Where Rampart now crosses Esplanade, Carondelet, in 1796, erected Fort St. Ferdinand, dismantled in the early part of the last century."
+  - says: "So the finest address in Creole New Orleans is named for the space that was meant to stay empty."
+    source: 1
+    quote: "It is the principal residence street of the french Quarter. Its is derived from name the esplanade or cleared space which lay outside of the old line of fortifications."
+sources:
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Daily Picayune, 1913), Esplanade Avenue, from the river to Rampart Street"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto00unse/picayunesguideto00unse.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Picayune's guide to New Orleans (New Orleans, The Picayune, 1904), Esplanade Avenue"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/picayunesguideto03newo/picayunesguideto03newo.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-named-for-empty-ground/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 63.3
+    audioBytes: 1014012
+    transcript:
+      totalS: 63.3
+      lines:
+        - text: Look down Esplanade Avenue, toward the river.
+          atS: 0
+          durationS: 3.84
+        - text: The trees, the wide middle, the old houses on both sides.
+          atS: 4.12
+          durationS: 4.4
+        - text: A guidebook of nineteen hundred and four said this avenue was to the Creoles what St.
+          atS: 9.03
+          durationS: 5.28
+        - text: Charles Avenue was to the Americans.
+          atS: 14.34
+          durationS: 2.43
+        - text: Their grand residence street.
+          atS: 17.28
+          durationS: 1.78
+        - text: The name is older than the houses, and it is a soldier's word.
+          atS: 19.56
+          durationS: 3.57
+        - text: Right here, where Rampart now crosses Esplanade, the Spanish governor Carondelet put up a fort in seventeen ninety-six.
+          atS: 23.94
+          durationS: 9.15
+        - text: Fort St.
+          atS: 33.53
+          durationS: 0.67
+        - text: Ferdinand.
+          atS: 34.23
+          durationS: 0.91
+        - text: It was part of a ring of defenses around the town.
+          atS: 35.74
+          durationS: 3.08
+        - text: An esplanade is the open, cleared ground that lies outside a line of fortifications like that.
+          atS: 39.51
+          durationS: 6.07
+        - text: Flat, bare and empty.
+          atS: 46.28
+          durationS: 2.22
+        - text: That is what this was.
+          atS: 49.01
+          durationS: 1.39
+        - text: The fort was taken down early in the eighteen-hundreds, and the town spread out across the cleared ground.
+          atS: 50.84
+          durationS: 6
+        - text: So the finest address in Creole New Orleans is named for the space that was meant to stay empty.
+          atS: 57.8
+          durationS: 5.5

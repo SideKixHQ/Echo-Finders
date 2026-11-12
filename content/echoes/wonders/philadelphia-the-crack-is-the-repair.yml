@@ -1,0 +1,164 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Outside the south end of the Liberty Bell Center, where the bell is visible through the glass with Independence Hall behind it.
+# Position: Overture "Liberty Bell" (39.94962, -75.15029, 526 Market St) is the building centre; moved about 30 m south to the glass at the Chestnut Street end (medium confidence).
+id: philadelphia-the-crack-is-the-repair
+title: "The Crack Is the Repair"
+summary: "The wide crack in the Liberty Bell was drilled out on purpose in 1846, as a repair that failed."
+place: "Liberty Bell Center, Independence Mall, Philadelphia, Pennsylvania"
+at: { lat: 39.94935, lng: -75.15030 }
+triggerRadiusKm: 0.04
+category: wonders
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, independence-mall, liberty-bell, abolition]
+teaser: "Look along the edges of the crack. They are not clean breaks."
+script: |
+  Find the bell, and look at the crack.
+
+  It is wide and dark, and it could be the best known flaw in the country. Now look along its edges. They are not clean breaks. They are a row of little round scallops.
+
+  Nobody wrote down when the bell first cracked. The likeliest answer is the early eighteen forties, after almost ninety years of hard use. A thin split, easy to miss.
+
+  In eighteen forty-six the city decided to repair the bell before Washington's birthday. So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back. Those scallops are their drill holes. The Park Service counts more than forty of them.
+
+  It did not work. A newspaper, the Public Ledger, reported that the bell had split again. The second crack runs up through the word Liberty, and nobody alive has heard this bell ring freely.
+
+  By then it had a new name. In eighteen thirty-five an abolitionist paper had called it the Liberty Bell, for the verse cast around its top. Proclaim liberty throughout all the land, unto all the inhabitants thereof. The name took years to catch on.
+
+  So the famous crack is not the damage. It is the repair.
+pronunciations:
+  - written: thereof
+    say: thair-OV
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Nobody wrote down when the bell first cracked."
+    source: 1
+    quote: "No one recorded when or why the Liberty Bell first cracked"
+  - says: "The likeliest answer is the early eighteen forties, after almost ninety years of hard use."
+    source: 1
+    quote: "the most likely explanation is that a narrow split developed in the early 1840s after nearly 90 years of hard use."
+  - says: "In eighteen forty-six the city decided to repair the bell before Washington's birthday."
+    source: 1
+    quote: "In 1846, when the city decided to repair the bell prior to George Washington's birthday holiday (February 23)"
+  - says: "So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back."
+    source: 1
+    quote: "metal workers widened the thin crack to prevent its farther spread and restore the tone of the bell using a technique called \"stop drilling\"."
+  - says: "Those scallops are their drill holes."
+    source: 1
+    quote: "Look carefully and you'll see over 40 drill bit marks in that wide \"crack\"."
+  - says: "The Park Service counts more than forty of them."
+    source: 1
+    quote: "Look carefully and you'll see over 40 drill bit marks in that wide \"crack\"."
+  - says: "It did not work."
+    source: 1
+    quote: "But, the repair was not successful."
+  - says: "A newspaper, the Public Ledger, reported that the bell had split again."
+    source: 1
+    quote: "The Public Ledger newspaper reported that the repair failed when another fissure developed."
+  - says: "The second crack runs up through the word Liberty, and nobody alive has heard this bell ring freely."
+    source: 1
+    quote: "This second crack, running from the abbreviation for \"Philadelphia\" up through the word \"Liberty\", silenced the bell forever. No one living today has heard the bell ring freely with its clapper"
+  - says: "In eighteen thirty-five an abolitionist paper had called it the Liberty Bell, for the verse cast around its top."
+    source: 1
+    quote: "The Anti-Slavery Record, an abolitionist publication, first referred to the bell as the Liberty Bell in 1835"
+  - says: "Proclaim liberty throughout all the land, unto all the inhabitants thereof."
+    source: 1
+    quote: "The Liberty Bell's inscription is from the Bible (King James version): \"Proclaim Liberty Throughout All the Land Unto All the Inhabitants thereof.\""
+  - says: "The name took years to catch on."
+    source: 1
+    quote: "but that name was not widely adopted until years later."
+  - says: "So the famous crack is not the damage."
+    source: 1
+    quote: "The wide \"crack\" in the Liberty Bell is actually the repair job!"
+sources:
+  - title: "The Liberty Bell"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "Visiting the Liberty Bell Center"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/planyourvisit/libertybellcenter.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "The Liberty bell, its history, associations and home (E. R. Gudehus, 1915)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/16006838/
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-crack-is-the-repair/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.9
+    audioBytes: 1311181
+    transcript:
+      totalS: 81.9
+      lines:
+        - text: Find the bell, and look at the crack.
+          atS: 0
+          durationS: 2.13
+        - text: It is wide and dark, and it could be the best known flaw in the country.
+          atS: 2.3
+          durationS: 4.07
+        - text: Now look along its edges.
+          atS: 6.58
+          durationS: 1.57
+        - text: They are not clean breaks.
+          atS: 8.28
+          durationS: 1.61
+        - text: They are a row of little round scallops.
+          atS: 10.07
+          durationS: 2.46
+        - text: Nobody wrote down when the bell first cracked.
+          atS: 12.77
+          durationS: 2.47
+        - text: The likeliest answer is the early eighteen forties, after almost ninety years of hard use.
+          atS: 15.39
+          durationS: 5.86
+        - text: A thin split, easy to miss.
+          atS: 21.35
+          durationS: 2.18
+        - text: In eighteen forty-six the city decided to repair the bell before Washington's birthday.
+          atS: 23.78
+          durationS: 5.07
+        - text: So metal workers drilled out the thin crack and widened it on purpose, to stop it spreading and to bring the tone back.
+          atS: 29.03
+          durationS: 7.34
+        - text: Those scallops are their drill holes.
+          atS: 36.8
+          durationS: 2.46
+        - text: The Park Service counts more than forty of them.
+          atS: 39.78
+          durationS: 2.65
+        - text: It did not work.
+          atS: 43.12
+          durationS: 1.16
+        - text: A newspaper, the Public Ledger, reported that the bell had split again.
+          atS: 45.09
+          durationS: 4.86
+        - text: The second crack runs up through the word Liberty, and nobody alive has heard this bell ring freely.
+          atS: 50.66
+          durationS: 6.88
+        - text: By then it had a new name.
+          atS: 58.49
+          durationS: 2.04
+        - text: In eighteen thirty-five an abolitionist paper had called it the Liberty Bell, for the verse cast around its top.
+          atS: 61.05
+          durationS: 7.36
+        - text: Proclaim liberty throughout all the land, unto all the inhabitants thereof.
+          atS: 69.22
+          durationS: 4.98
+        - text: The name took years to catch on.
+          atS: 75.01
+          durationS: 2.12
+        - text: So the famous crack is not the damage.
+          atS: 77.65
+          durationS: 2.61
+        - text: It is the repair.
+          atS: 80.64
+          durationS: 1.23

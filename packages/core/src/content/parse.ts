@@ -23,9 +23,18 @@ import type {
   InspoKind,
   InspoLink,
   PlaceEvidence,
+  RareReason,
+  RareTier,
   TrueCrimeReview,
 } from "../types.js";
-import { ECHO_CATEGORIES, INSPO_KINDS, NOMINAL_DURATION_S, PLACE_EVIDENCE } from "../types.js";
+import {
+  ECHO_CATEGORIES,
+  INSPO_KINDS,
+  NOMINAL_DURATION_S,
+  PLACE_EVIDENCE,
+  RARE_REASONS,
+  RARE_TIERS,
+} from "../types.js";
 import type { ValidationIssue } from "./validate.js";
 
 export interface ParseResult {
@@ -189,7 +198,8 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
   if (input["inside"] !== undefined && typeof input["inside"] !== "boolean") {
     fail("inside", "must be true or false");
   }
-  const inspo = inspoLinkOf(input, category ?? "", fail);
+  const inspo = inspoLinkOf(input, fail);
+  const { rare, rareReason } = rareOf(input, fail);
   const durationS = num("durationS", false) ?? NOMINAL_DURATION_S[format] ?? 90;
   const triggerRadiusKm = num("triggerRadiusKm");
   const title = str("title");
@@ -229,6 +239,8 @@ export function parseEcho(input: unknown, fileHint = "<unknown>"): ParseResult {
     ...optional("hours", hours),
     ...optional("inside", typeof input["inside"] === "boolean" ? input["inside"] : undefined),
     ...optional("inspo", inspo),
+    ...optional("rare", rare),
+    ...optional("rareReason", rareReason),
     ...optional("tags", stringList(input["tags"])),
     ...optional("relatedIds", stringList(input["relatedIds"])),
     ...optional("perspectiveIds", stringList(input["perspectiveIds"])),
@@ -541,16 +553,46 @@ export function exactPlaceClaims(script: string): string[] {
   return EXACT_PLACE_PHRASES.flatMap((re) => script.match(re)?.[0] ?? []);
 }
 
+/**
+ * Hand picked rarity (docs/adr/0021-topics-and-rare.md). A reason is required with a tier,
+ * because the card shows it: a rare echo nobody can say why is rare is a designer's dial.
+ */
+function rareOf(
+  input: Record<string, unknown>,
+  fail: (field: string, why: string) => void,
+): { rare?: RareTier; rareReason?: RareReason } {
+  const rare = input["rare"];
+  const reason = input["rareReason"];
+  if (rare === undefined || rare === null) {
+    if (reason !== undefined && reason !== null) fail("rareReason", "is set but rare is not");
+    return {};
+  }
+  if (!(RARE_TIERS as readonly unknown[]).includes(rare)) {
+    fail("rare", `must be one of ${RARE_TIERS.join(", ")}`);
+    return {};
+  }
+  if (reason === undefined || reason === null) {
+    fail("rareReason", "is required when rare is set");
+    return {};
+  }
+  if (!(RARE_REASONS as readonly unknown[]).includes(reason)) {
+    fail("rareReason", `must be one of: ${RARE_REASONS.join("; ")}`);
+    return {};
+  }
+  return { rare: rare as RareTier, rareReason: reason as RareReason };
+}
+
+/**
+ * The inspo link: optional on any echo since the 2026-11-12 topics (the film echoes moved
+ * to pop culture and the arts ones keep theirs). When present, the place evidence rule
+ * holds wherever the echo is filed.
+ */
 function inspoLinkOf(
   input: Record<string, unknown>,
-  category: string,
   fail: (field: string, why: string) => void,
 ): InspoLink | undefined {
   const raw = input["inspo"];
-  if (raw === undefined) {
-    if (category === "inspo") fail("inspo", "an inspo echo must say its kind and its place evidence");
-    return undefined;
-  }
+  if (raw === undefined) return undefined;
   if (typeof raw !== "object" || raw === null) {
     fail("inspo", "must be { kind, evidence }");
     return undefined;
@@ -560,7 +602,6 @@ function inspoLinkOf(
   const evidence = r["evidence"];
   if (!(INSPO_KINDS as readonly unknown[]).includes(kind)) fail("inspo.kind", `must be one of ${INSPO_KINDS.join(", ")}`);
   if (!(PLACE_EVIDENCE as readonly unknown[]).includes(evidence)) fail("inspo.evidence", `must be one of ${PLACE_EVIDENCE.join(", ")}`);
-  if (category !== "inspo") fail("inspo", "only an inspo echo carries an inspo link");
   const script = typeof input["script"] === "string" ? input["script"] : "";
   const claims = exactPlaceClaims(script);
   if (evidence !== "exact" && claims.length) {

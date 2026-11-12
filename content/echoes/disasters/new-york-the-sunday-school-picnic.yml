@@ -8,6 +8,8 @@ place: "General Slocum memorial, Tompkins Square Park, near East 10th Street, Ea
 at: { lat: 40.72745, lng: -73.98205 }
 triggerRadiusKm: 0.03
 category: disasters
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 94
 visibility: at-hand

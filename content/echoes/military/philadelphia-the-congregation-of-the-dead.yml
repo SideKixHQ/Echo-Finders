@@ -1,0 +1,173 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: The paved walk in front of the Tomb of the Unknown Revolutionary War Soldier, west side of Washington Square, inside the public park.
+# Position: Overture "Tomb of the Unknown Soldier" (39.94710, -75.15312, W Washington Square), consistent with the square's centre and fountain (39.94706, -75.15234); spot set about 20 m east of the tomb on the approach walk (high confidence).
+id: philadelphia-the-congregation-of-the-dead
+title: "The Congregation of the Dead"
+summary: "The tomb in Washington Square holds one unknown soldier. The square around it holds thousands more."
+place: "Tomb of the Unknown Revolutionary War Soldier, Washington Square, Philadelphia, Pennsylvania"
+at: { lat: 39.94708, lng: -75.15290 }
+triggerRadiusKm: 0.05
+category: military
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, washington-square, revolution, burial-ground, yellow-fever]
+teaser: "The memorial honours one soldier. The rest are under the grass."
+script: |
+  In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet. Go close enough to read the lid. Beneath this stone rests the soldier of Washington's army, who died to give you liberty.
+
+  One soldier, name unknown. His remains were found in a grave nearby in nineteen fifty-six, and the memorial was dedicated the next year.
+
+  He is not alone. He is not even unusual.
+
+  For most of the seventeen hundreds this square was the city's potter's field, the burial ground for strangers and the poor. Free and enslaved Africans were buried here, and their families sometimes gathered to guard the graves from the anatomy lecturers.
+
+  Then came the war. In January seventeen seventy-seven, Deborah Norris wrote to her friend Sally Wister about a shocking sight here. Large pits are dug, she wrote, and forty or fifty coffins are put in the same hole.
+
+  That April John Adams came and spent an hour among the graves. He had been told perhaps two thousand soldiers lay here. They are enough, he wrote, to make the heart of stone melt away.
+
+  In seventeen ninety-three, more than thirteen hundred victims of yellow fever filled the space that was left.
+
+  Look past the tomb, at the lawns and the benches and the paths.
+
+  The memorial honours one soldier. The rest of them are under the grass.
+pronunciations:
+  - written: Sally Wister
+    say: SAL-ee WIS-ter
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet."
+    source: 4
+    quote: "The memorial includes a bronze statue of George Washington, a limestone wall featuring epitaphs to the fallen, and a tomb"
+  - says: "In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet."
+    source: 3
+    quote: "A propane-fueled eternal flame was dedicated in 1976 for the bicentennial."
+  - says: "Beneath this stone rests the soldier of Washington's army, who died to give you liberty."
+    source: 3
+    quote: "The lid of the sarcophagus is inscribed with the words, \"Beneath this stone rests the soldier of Washington's army, who died to give you liberty.\""
+  - says: "One soldier, name unknown."
+    source: 1
+    quote: "This memorial contains the remains of an unknown Revolutionary War soldier who perished in the fight for independence."
+  - says: "His remains were found in a grave nearby in nineteen fifty-six, and the memorial was dedicated the next year."
+    source: 2
+    quote: "In 1957 the city dedicated this memorial to the unknown soldiers of the American Revolution. It includes the remains of a soldier discovered in a nearby grave in 1956."
+  - says: "For most of the seventeen hundreds this square was the city's potter's field, the burial ground for strangers and the poor."
+    source: 1
+    quote: "William Penn patented this square in 1706 as a Potter’s Field, or a public graveyard for the poor. Free and enslaved Africans were interred here alongside suicide victims, those unaffiliated with a church, and strangers to the city."
+  - says: "Free and enslaved Africans were buried here, and their families sometimes gathered to guard the graves from the anatomy lecturers."
+    source: 1
+    quote: "Free and enslaved Africans socialized here prior to the American Revolution, sometimes gathering to protect the remains of their loved ones from being exhumed for dissection in Dr. William Shippen’s anatomy lectures."
+  - says: "In January seventeen seventy-seven, Deborah Norris wrote to her friend Sally Wister about a shocking sight here."
+    source: 2
+    quote: "On January 27, 1777, Deborah Norris wrote to her friend Sally Wister of a “shocking sight.”"
+  - says: "Large pits are dug, she wrote, and forty or fifty coffins are put in the same hole."
+    source: 2
+    quote: "Large pits are dug in the Negroes burying ground [Washington Square], and forty or fifty [soldiers’] coffins are put in the same hole."
+  - says: "That April John Adams came and spent an hour among the graves."
+    source: 2
+    quote: "John Adams, a member of the Continental Congress meeting in Independence Hall, visited the Square in April 1777. He spent an hour “in congregation of the dead.”"
+  - says: "He had been told perhaps two thousand soldiers lay here."
+    source: 2
+    quote: "The graves of the soldiers, perhaps two thousand he had been told, “are enough to make the heart of stone melt away.”"
+  - says: "They are enough, he wrote, to make the heart of stone melt away."
+    source: 2
+    quote: "“are enough to make the heart of stone melt away.”"
+  - says: "In seventeen ninety-three, more than thirteen hundred victims of yellow fever filled the space that was left."
+    source: 1
+    quote: "Victims of the yellow fever epidemic, numbering more than 1300, filled the remaining space in the burial ground in 1793."
+  - says: "The memorial honours one soldier."
+    source: 1
+    quote: "This memorial contains the remains of an unknown Revolutionary War soldier"
+  - says: "The rest of them are under the grass."
+    source: 4
+    quote: "a tomb that represents thousands of fallen Revolutionary War soldiers whose bodies were laid to rest in the square."
+sources:
+  - title: "Washington Square"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-washingtonsquare.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "Invisible Architects, Stop 7: Washington Square"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/invisible-architects-stop-7.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "The Tomb of the Unknown Revolutionary War Soldier: Graffiti and the Legacy of the Founding Fathers"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/tomb-of-the-unknown-revolutionary-war-soldier.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "Preservation on the Memorial in Washington Square"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/preservation-on-the-memorial-in-washington-square.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-congregation-of-the-dead/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 96
+    audioBytes: 1536878
+    transcript:
+      totalS: 96
+      lines:
+        - text: In front of you, a bronze George Washington stands above a stone tomb, and a flame burns near his feet.
+          atS: 0
+          durationS: 7.11
+        - text: Go close enough to read the lid.
+          atS: 7.71
+          durationS: 1.85
+        - text: Beneath this stone rests the soldier of Washington's army, who died to give you liberty.
+          atS: 9.94
+          durationS: 5.97
+        - text: One soldier, name unknown.
+          atS: 16.29
+          durationS: 2.13
+        - text: His remains were found in a grave nearby in nineteen fifty-six, and the memorial was dedicated the next year.
+          atS: 18.86
+          durationS: 6.93
+        - text: He is not alone.
+          atS: 26.39
+          durationS: 1.38
+        - text: He is not even unusual.
+          atS: 28.21
+          durationS: 1.74
+        - text: For most of the seventeen hundreds this square was the city's potter's field, the burial ground for strangers and the poor.
+          atS: 30.77
+          durationS: 7.67
+        - text: Free and enslaved Africans were buried here, and their families sometimes gathered to guard the graves from the anatomy lecturers.
+          atS: 38.88
+          durationS: 8.2
+        - text: Then came the war.
+          atS: 47.59
+          durationS: 1.58
+        - text: In January seventeen seventy-seven, Deborah Norris wrote to her friend Sally Wister about a shocking sight here.
+          atS: 49.68
+          durationS: 7.84
+        - text: Large pits are dug, she wrote, and forty or fifty coffins are put in the same hole.
+          atS: 57.96
+          durationS: 5.46
+        - text: That April John Adams came and spent an hour among the graves.
+          atS: 64.02
+          durationS: 4.16
+        - text: He had been told perhaps two thousand soldiers lay here.
+          atS: 68.69
+          durationS: 3.64
+        - text: They are enough, he wrote, to make the heart of stone melt away.
+          atS: 73.03
+          durationS: 4.99
+        - text: In seventeen ninety-three, more than thirteen hundred victims of yellow fever filled the space that was left.
+          atS: 78.72
+          durationS: 7.01
+        - text: Look past the tomb, at the lawns and the benches and the paths.
+          atS: 86.11
+          durationS: 4.19
+        - text: The memorial honours one soldier.
+          atS: 90.55
+          durationS: 2.25
+        - text: The rest of them are under the grass.
+          atS: 93.12
+          durationS: 2.87

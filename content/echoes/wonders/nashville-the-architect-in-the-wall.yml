@@ -1,0 +1,145 @@
+# Drafted by Claude Code (2026-11-09) for Nashville.
+# Listening spot: Capitol grounds on the north side, below the lower portico, on the public paths.
+# Position: Wikidata Q2570396 (Tennessee State Capitol, 36.1658, -86.7842) moved about 50 m north toward the north portico named in HABS TN-51 (medium confidence).
+id: nashville-the-architect-in-the-wall
+title: "The Architect in the Wall"
+summary: "William Strickland designed the Tennessee State Capitol, died before it was done, and was entombed in its north portico wall."
+place: "Tennessee State Capitol, north portico, Nashville, Tennessee"
+at: { lat: 36.16625, lng: -86.7842 }
+triggerRadiusKm: 0.06
+category: wonders
+rare: rare
+rareReason: "Easy to miss"
+format: short
+durationS: 56
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [nashville, capitol, architecture, william-strickland]
+teaser: "The man who designed this capitol never saw it finished. He is inside it."
+script: |
+  Stand on the north side of the capitol and look at the lower portico. The man who designed this building is inside that wall.
+
+  His name was William Strickland, an architect from Philadelphia.
+
+  The digging began on the first of January, 1845. The walls are Tennessee limestone, quarried within half a mile of here. Some of the blocks are eight feet wide and fourteen feet long.
+
+  Instead of a Roman dome, Strickland gave it a tower, after ancient Greek models.
+
+  He did not see it finished. He died in April 1854, and his funeral was held inside, in the Hall of Representatives.
+
+  Then his body was placed in a recess in the walls of the north portico. It is still there.
+
+  His son finished the job. The last stone of the tower went up in July 1855.
+
+  Most architects sign their buildings. Strickland is buried in his.
+pronunciations:
+  - written: Strickland
+    say: STRICK-lund
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Stand on the north side of the capitol and look at the lower portico."
+    source: 1
+    quote: "entombed in a recess in the walls of the north basement portico"
+  - says: "His name was William Strickland, an architect from Philadelphia."
+    source: 1
+    quote: "architect Mr. William Strickland of Philadelphia, Pa."
+  - says: "The digging began on the first of January, 1845."
+    source: 1
+    quote: "Excavation was begun on January 1st 1845"
+  - says: "The walls are Tennessee limestone, quarried within half a mile of here."
+    source: 1
+    quote: "The superstructure walls are of Tennessee lime stone"
+  - says: "The walls are Tennessee limestone, quarried within half a mile of here."
+    source: 1
+    quote: "All stone was quarried within a half mile of the building site"
+  - says: "Some of the blocks are eight feet wide and fourteen feet long."
+    source: 1
+    quote: "There are stones recorded measuring eight feet wide and fourteen feet long"
+  - says: "Instead of a Roman dome, Strickland gave it a tower, after ancient Greek models."
+    source: 2
+    quote: "Avoiding a traditional Roman dome, Strickland created a striking tower based upon classical Greek precedents."
+  - says: "He died in April 1854, and his funeral was held inside, in the Hall of Representatives."
+    source: 1
+    quote: "until the death of Mr. Strickland,April 7th"
+  - says: "He died in April 1854, and his funeral was held inside, in the Hall of Representatives."
+    source: 1
+    quote: "Funeral ceremonies were conducted in the Hall of Representa"
+  - says: "Then his body was placed in a recess in the walls of the north portico."
+    source: 1
+    quote: "entombed in a recess in the walls of the north basement portico"
+  - says: "His son finished the job."
+    source: 1
+    quote: "the work was completed by his son,Mr."
+  - says: "The last stone of the tower went up in July 1855."
+    source: 1
+    quote: "The last stone of the towar was laid July 21st 1855"
+  - says: "Strickland is buried in his."
+    source: 1
+    quote: "entombed in a recess in the walls of the north basement portico"
+sources:
+  - title: "The Tennessee State Capitol, HABS No. TN-51, Written Historical and Descriptive Data"
+    publisher: "Library of Congress, Historic American Buildings Survey (National Park Service)"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/tn/tn0000/tn0034/data/tn0034data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Capitols as National Historic Landmarks"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/subjects/nationalhistoriclandmarks/upload/Capitols_NHLs_Resource_Guide_Final.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/nashville-the-architect-in-the-wall/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 56
+    audioBytes: 896983
+    transcript:
+      totalS: 56
+      lines:
+        - text: Stand on the north side of the capitol and look at the lower portico.
+          atS: 0
+          durationS: 3.82
+        - text: The man who designed this building is inside that wall.
+          atS: 3.99
+          durationS: 3.27
+        - text: His name was William Strickland, an architect from Philadelphia.
+          atS: 7.65
+          durationS: 3.87
+        - text: The digging began on the first of January, 1845.
+          atS: 12.21
+          durationS: 3.55
+        - text: The walls are Tennessee limestone, quarried within half a mile of here.
+          atS: 16.15
+          durationS: 4.18
+        - text: Some of the blocks are eight feet wide and fourteen feet long.
+          atS: 20.61
+          durationS: 3.36
+        - text: Instead of a Roman dome, Strickland gave it a tower, after ancient Greek models.
+          atS: 24.21
+          durationS: 4.99
+        - text: He did not see it finished.
+          atS: 29.58
+          durationS: 1.58
+        - text: He died in April 1854, and his funeral was held inside, in the Hall of Representatives.
+          atS: 31.49
+          durationS: 6.39
+        - text: Then his body was placed in a recess in the walls of the north portico.
+          atS: 38.31
+          durationS: 4.11
+        - text: It is still there.
+          atS: 43.03
+          durationS: 1.04
+        - text: His son finished the job.
+          atS: 44.51
+          durationS: 1.72
+        - text: The last stone of the tower went up in July 1855.
+          atS: 46.67
+          durationS: 4.1
+        - text: Most architects sign their buildings.
+          atS: 51.21
+          durationS: 2.17
+        - text: Strickland is buried in his.
+          atS: 53.59
+          durationS: 2.41

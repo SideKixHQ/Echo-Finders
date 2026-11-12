@@ -8,6 +8,8 @@ place: "Fort Independence, Castle Island, South Boston, Massachusetts"
 at: { lat: 42.33770, lng: -71.01180 }
 triggerRadiusKm: 0.1
 category: legend
+rare: rare
+rareReason: "Hard to reach"
 format: short
 durationS: 66
 visibility: landmark-visible

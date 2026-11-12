@@ -1,0 +1,67 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Overture 2026-09-23.0 address point for 206 Greenfield Street, the address in James's document.
+id: wilmington-a-heart-to-heart-over-pizza
+title: "A Heart-to-Heart Over Pizza"
+summary: "Benny's Big Time Pizzeria is where Belly and Steven talk over pizza in The Summer I Turned Pretty."
+place: "Benny's Big Time Pizzeria, Wilmington, North Carolina"
+at: { lat: 34.21637, lng: -77.944901 }
+triggerRadiusKm: 0.05
+category: pop-culture
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 27
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, the-summer-i-turned-pretty, south-front]
+teaser: "Look for the cheese grater mural. That is the table."
+script: |
+  Look at the pizzeria. In The Summer I Turned Pretty, this is where Belly and her brother Steven
+  share a heart-to-heart over pizza.
+
+  Fans who want the full television moment ask for a table near the cheese grater mural in the
+  back.
+
+  A brother and a sister, a slice each, saying the thing that is hard to say. The show filmed
+  it in a working restaurant, where anyone can order the same pizza.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In The Summer I Turned Pretty, this is where Belly and her brother Steven share a heart-to-heart over pizza."
+    source: 1
+    quote: "Benny's Big Time Pizzeria is where Belly and Steven share a heart-to-heart over pizza at this well-known foodie spot."
+  - says: "Fans who want the full television moment ask for a table near the cheese grater mural"
+    source: 1
+    quote: "request a table near the recognizable cheese grater mural in the back."
+sources:
+  - title: "The Summer I Turned Pretty: A Wilmington Guide to Cousins Beach"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/the-summer-i-turned-pretty-a-wilmington-guide-to-cousins-beach/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-heart-to-heart-over-pizza/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 26.8
+    audioBytes: 430541
+    transcript:
+      totalS: 26.8
+      lines:
+        - text: Look at the pizzeria.
+          atS: 0
+          durationS: 1.35
+        - text: In The Summer I Turned Pretty, this is where Belly and her brother Steven share a heart-to-heart over pizza.
+          atS: 2.3
+          durationS: 6.72
+        - text: Fans who want the full television moment ask for a table near the cheese grater mural in the back.
+          atS: 9.63
+          durationS: 5.92
+        - text: A brother and a sister, a slice each, saying the thing that is hard to say.
+          atS: 16.15
+          durationS: 5.04
+        - text: The show filmed it in a working restaurant, where anyone can order the same pizza.
+          atS: 22
+          durationS: 4.84

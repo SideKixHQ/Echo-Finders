@@ -1,0 +1,141 @@
+# Drafted by Claude Code (2026-11-09) for St. Augustine, Florida.
+# Listening spot: The public walk between the Castillo's east wall and the seawall on Matanzas Bay, inside the National Monument grounds.
+# Position: Wikidata Q101094405 (Castillo de San Marcos, 29.89778, -81.31139; LOC HABS FL-17 gives 29.897788, -81.311517), moved about 70 m east to the walk between the fort and the seawall (medium-high confidence).
+# Moved to the shore 2026-11-10: was 29.89775, -81.3107, in the water on the map's shoreline (scripts/check-land.mjs); moved 22 m to the nearest land, about 5 m in from the edge.
+id: st-augustine-a-wall-of-seashells
+title: "A Wall of Seashells"
+summary: "The Castillo is built of coquina, a stone made of tiny shells. In the 1702 siege, English cannonballs sank into it and the fort held."
+place: "Castillo de San Marcos, bayfront walk on the east side, St. Augustine, Florida"
+at: { lat: 29.89786, lng: -81.31089 }
+triggerRadiusKm: 0.06
+category: military
+format: short
+durationS: 73
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [st-augustine, castillo-de-san-marcos, coquina, military, siege-of-1702]
+teaser: "Look closely at this fort's walls. They are made of shells, and in 1702 nobody knew if they would hold."
+script: |
+  Look closely at the wall of this fort. Those gray blocks are full of shells. Tiny clam shells, glued together over thousands of years into stone.
+
+  The stone is called coquina, which is Spanish for tiny shell. The Spanish began building this fort in 1672, and the coquina was quarried across the water on Anastasia Island.
+
+  Nobody had ever built a fort out of coquina before. Nobody knew how it would stand up to cannon fire. So they built the walls an average of twelve feet thick, and on the ocean side as thick as nineteen.
+
+  In 1702 they found out. An English governor from Charleston captured the town and set up his cannon among the houses. Almost fifteen hundred people had taken refuge inside these walls.
+
+  Instead of shattering, the stone simply compressed and absorbed the shock. The cannonballs bounced off, or sank in a few inches.
+
+  The fort held. On the way out, the English burned the town to the ground.
+
+  A wall of seashells, and it did not break.
+pronunciations:
+  - written: coquina
+    say: koh-KEE-nah
+  - written: Anastasia
+    say: an-uh-STAY-zhuh
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Tiny clam shells, glued together over thousands of years into stone."
+    source: 1
+    quote: "This material \"glued\" the shell fragments together into a porous type of limestone we now call coquina"
+  - says: "The stone is called coquina, which is Spanish for tiny shell."
+    source: 1
+    quote: "a porous type of limestone we now call coquina, which is Spanish for \"tiny shell\"."
+  - says: "The Spanish began building this fort in 1672, and the coquina was quarried across the water on Anastasia Island."
+    source: 1
+    quote: "the Spanish began construction on the Castillo de San Marcos in 1672. The coquina stone was quarried in the area of present-day Anastasia State Park on Anastasia Island."
+  - says: "Nobody had ever built a fort out of coquina before."
+    source: 1
+    quote: "Since no one had ever built a fort or any large building out of coquina, they had no idea how strong it would be."
+  - says: "So they built the walls an average of twelve feet thick, and on the ocean side as thick as nineteen."
+    source: 1
+    quote: "so they built the walls an average of 12 feet (3.7m) thick. The walls on the ocean side are as thick as 19 feet (5.8 m)!"
+  - says: "In 1702 they found out."
+    source: 1
+    quote: "In 1702, Governor James Moore of Charleston led his English forces against St. Augustine and the Castillo."
+  - says: "An English governor from Charleston captured the town and set up his cannon among the houses."
+    source: 1
+    quote: "He captured the town and set his cannon up amongst the houses to bombard the fortress."
+  - says: "Almost fifteen hundred people had taken refuge inside these walls."
+    source: 2
+    quote: "By the 10th, almost 1500 people, had taken refuge inside the Castillo."
+  - says: "Instead of shattering, the stone simply compressed and absorbed the shock."
+    source: 1
+    quote: "Instead of shattering, the coquina stone merely compressed and absorbed the shock of the hit."
+  - says: "The cannonballs bounced off, or sank in a few inches."
+    source: 1
+    quote: "The cannon balls just bounced off or sunk in a few inches."
+  - says: "On the way out, the English burned the town to the ground."
+    source: 2
+    quote: "after burning the rest of St. Augustine to the ground."
+sources:
+  - title: "Coquina - The Rock that Saved St Augustine"
+    publisher: "National Park Service, Castillo de San Marcos National Monument"
+    url: https://www.nps.gov/casa/learn/historyculture/coquina-the-rock-that-saved-st-augustine.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Siege of 1702"
+    publisher: "National Park Service, Castillo de San Marcos National Monument"
+    url: https://www.nps.gov/casa/learn/historyculture/the-siege-of-1702.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/st-augustine-a-wall-of-seashells/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.5
+    audioBytes: 1168238
+    transcript:
+      totalS: 72.5
+      lines:
+        - text: Look closely at the wall of this fort.
+          atS: 0
+          durationS: 2.17
+        - text: Those gray blocks are full of shells.
+          atS: 2.55
+          durationS: 2.33
+        - text: Tiny clam shells, glued together over thousands of years into stone.
+          atS: 5.27
+          durationS: 4.93
+        - text: The stone is called coquina, which is Spanish for tiny shell.
+          atS: 10.65
+          durationS: 4.34
+        - text: The Spanish began building this fort in 1672, and the coquina was quarried across the water on Anastasia Island.
+          atS: 15.37
+          durationS: 8.8
+        - text: Nobody had ever built a fort out of coquina before.
+          atS: 24.5
+          durationS: 3.48
+        - text: Nobody knew how it would stand up to cannon fire.
+          atS: 28.3
+          durationS: 2.73
+        - text: So they built the walls an average of twelve feet thick, and on the ocean side as thick as nineteen.
+          atS: 31.36
+          durationS: 6.51
+        - text: In 1702 they found out.
+          atS: 38.99
+          durationS: 2.47
+        - text: An English governor from Charleston captured the town and set up his cannon among the houses.
+          atS: 42.4
+          durationS: 5.33
+        - text: Almost fifteen hundred people had taken refuge inside these walls.
+          atS: 48.54
+          durationS: 4.87
+        - text: Instead of shattering, the stone simply compressed and absorbed the shock.
+          atS: 54.1
+          durationS: 4.95
+        - text: The cannonballs bounced off, or sank in a few inches.
+          atS: 59.86
+          durationS: 3.51
+        - text: The fort held.
+          atS: 63.61
+          durationS: 1.21
+        - text: On the way out, the English burned the town to the ground.
+          atS: 65.42
+          durationS: 3.46
+        - text: A wall of seashells, and it did not break.
+          atS: 69.39
+          durationS: 3.1

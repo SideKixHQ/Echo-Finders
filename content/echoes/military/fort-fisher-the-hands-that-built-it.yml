@@ -1,0 +1,96 @@
+# Batch 2 for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Wikidata Q49490531 (Fort Fisher State Historic Site), at the surviving mounds (medium confidence).
+id: fort-fisher-the-hands-that-built-it
+title: "The Hands That Built It"
+summary: "More than five hundred African Americans, enslaved and free, worked alongside soldiers to build Fort Fisher."
+place: "Fort Fisher, the land face, Kure Beach, North Carolina"
+at: { lat: 33.97, lng: -77.918055 }
+triggerRadiusKm: 0.06
+category: military
+format: short
+durationS: 39
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [fort-fisher, kure-beach, civil-war, slavery, african-american-history]
+teaser: "Every mound here was moved by hand, and many of the hands were not free."
+script: |
+  Look at the height of these mounds. Each one on the land face rose about thirty-two feet.
+  Every bit of it was sand, moved by people.
+
+  More than five hundred African Americans, both enslaved and free, worked with Confederate
+  soldiers to build this fort. At times, as many as a thousand men were digging at once.
+
+  For the enslaved among them, there was no choice in it. Under the fort's last commander,
+  perhaps as many as five hundred of the workers were enslaved.
+
+  When you read that Fort Fisher was the largest earthwork fort in the South, remember who
+  moved the earth.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Each one on the land face rose about thirty-two feet."
+    source: 1
+    quote: "Each mound was 32 feet high with interior rooms used as bombproofs or powder magazines and connected by underground passageways."
+  - says: "More than five hundred African Americans, both enslaved and free, worked with Confederate soldiers to build this fort."
+    source: 1
+    quote: "More than five hundred African Americans, both slave and free, worked with Confederate soldiers on construction; occasionally as many as one thousand men were working, although maintaining adequate labor was difficult."
+  - says: "At times, as many as a thousand men were digging at once."
+    source: 1
+    quote: "occasionally as many as one thousand men were working, although maintaining adequate labor was difficult."
+  - says: "Under the fort's last commander, perhaps as many as five hundred of the workers were enslaved."
+    source: 2
+    quote: "Soon the garrison, and perhaps as many as 500 enslaved laborers, were hard at work on conforming the works at Fort Fisher to Col. Lamb's own design."
+  - says: "When you read that Fort Fisher was the largest earthwork fort in the South, remember who moved the earth."
+    source: 1
+    quote: "constructed what was to become the largest and most important earthwork fort in the South"
+sources:
+  - title: "History"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+  - title: "The Fort"
+    publisher: "North Carolina Division of State Historic Sites"
+    url: https://historicsites.nc.gov/all-sites/fort-fisher/history/fort
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-the-hands-that-built-it/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 38.5
+    audioBytes: 616114
+    transcript:
+      totalS: 38.5
+      lines:
+        - text: Look at the height of these mounds.
+          atS: 0
+          durationS: 1.83
+        - text: Each one on the land face rose about thirty-two feet.
+          atS: 2.35
+          durationS: 3.75
+        - text: Every bit of it was sand, moved by people.
+          atS: 6.54
+          durationS: 2.74
+        - text: More than five hundred African Americans, both enslaved and free, worked with Confederate soldiers to build this fort.
+          atS: 9.88
+          durationS: 7.45
+        - text: At times, as many as a thousand men were digging at once.
+          atS: 17.94
+          durationS: 3.79
+        - text: For the enslaved among them, there was no choice in it.
+          atS: 22
+          durationS: 3.25
+        - text: Under the fort's last commander, perhaps as many as five hundred of the workers were enslaved.
+          atS: 25.86
+          durationS: 5.32
+        - text: When you read that Fort Fisher was the largest earthwork fort in the South, remember who moved the earth.
+          atS: 31.68
+          durationS: 6.77
+archive:
+  - imageKey: archive/loc-03747v.jpg
+    year: 1865
+    caption: The first traverse at the northwest end, the entrance to the fort
+    credit: T. H. O'Sullivan, Library of Congress, Prints and Photographs (LC-DIG-cwpb-03747, 1865), https://www.loc.gov/item/2018671553/
+    rights: public-domain

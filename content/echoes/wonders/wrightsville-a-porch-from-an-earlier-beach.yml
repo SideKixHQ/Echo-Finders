@@ -1,0 +1,102 @@
+# Wrightsville Beach (from James's document) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture address point, 123 South Lumina Avenue (high); private home, sidewalk listening only
+id: wrightsville-a-porch-from-an-earlier-beach
+title: "A Porch From an Earlier Beach"
+summary: "The James Cottage at 123 South Lumina Avenue was built in 1900 as a one-story summer cottage with a triple gable roof and a deep porch."
+place: "James Cottage, 123 South Lumina Avenue, Wrightsville Beach, North Carolina"
+at: { lat: 34.20559, lng: -77.79663 }
+triggerRadiusKm: 0.05
+category: wonders
+format: look-below
+durationS: 43
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wrightsville-beach, cottage, architecture, private-property]
+teaser: "A deep porch built for summer breezes, and the neighbor that moved away."
+script: |
+  Look at the cottage from the sidewalk; it is a private home. The James Cottage was built in
+  1900 for Dr. W.D. James of Hamlet.
+
+  It is a summer cottage design: one story, a triple gable roof and a deep porch. The hip roof along
+  the street was the servants' quarters.
+
+  On this beach, the porch was where summer happened. Meals were often eaten outdoors on the porch,
+  to catch the cool summer breezes.
+
+  Across the street, at 124 South Lumina Avenue, stood the Myers Cottage. In 1995 it was moved away
+  to house the Wrightsville Beach Museum. Its neighbor across the road stayed put.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "The James Cottage was built in 1900 for Dr. W.D. James of Hamlet."
+    source: 1
+    quote: "The cottage was built in 1900 for Dr. W.D. James of Hamlet."
+  - says: "It is a summer cottage design: one story, a triple gable roof and a deep porch."
+    source: 1
+    quote: "James cottage is a summer cottage design, is one story and features a triple gable roof and a deep porch."
+  - says: "The hip roof along the street was the servants' quarters."
+    source: 1
+    quote: "The hip roof along the street was the servant's quarters."
+  - says: "Meals were often eaten outdoors on the porch, to catch the cool summer breezes."
+    source: 2
+    quote: "Dining was frequently enjoyed outdoors on the porch to take advantage of the cool summer breezes at Wrightsville Beach."
+  - says: "Across the street, at 124 South Lumina Avenue, stood the Myers Cottage."
+    source: 1
+    quote: "Myers cottage once stood at 124 South Lumina Ave."
+  - says: "In 1995 it was moved away to house the Wrightsville Beach Museum."
+    source: 1
+    quote: "In 1995 the cottage was donated and moved to its present location to house the Wrightsville Beach Museum."
+sources:
+  - title: "Points on the Tour"
+    publisher: "Historic Wrightsville Beach (historicwrightsvillebeach.com)"
+    url: https://historicwrightsvillebeach.wordpress.com/points-on-the-tour-2/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Current Exhibits"
+    publisher: "Wrightsville Beach Museum of History"
+    url: https://wbmuseumofhistory.com/current-exhibits/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wrightsville-a-porch-from-an-earlier-beach/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 42.9
+    audioBytes: 686750
+    transcript:
+      totalS: 42.9
+      lines:
+        - text: Look at the cottage from the sidewalk; it is a private home.
+          atS: 0
+          durationS: 3.25
+        - text: The James Cottage was built in 1900 for Dr.
+          atS: 3.58
+          durationS: 2.79
+        - text: W.D.
+          atS: 6.38
+          durationS: 0.58
+        - text: James of Hamlet.
+          atS: 7.01
+          durationS: 1.24
+        - text: "It is a summer cottage design: one story, a triple gable roof and a deep porch."
+          atS: 8.64
+          durationS: 5.83
+        - text: The hip roof along the street was the servants' quarters.
+          atS: 14.85
+          durationS: 3.03
+        - text: On this beach, the porch was where summer happened.
+          atS: 18.39
+          durationS: 3.1
+        - text: Meals were often eaten outdoors on the porch, to catch the cool summer breezes.
+          atS: 22.09
+          durationS: 5.05
+        - text: Across the street, at 124 South Lumina Avenue, stood the Myers Cottage.
+          atS: 27.75
+          durationS: 6.23
+        - text: In 1995 it was moved away to house the Wrightsville Beach Museum.
+          atS: 34.59
+          durationS: 5.09
+        - text: Its neighbor across the road stayed put.
+          atS: 40.27
+          durationS: 2.59

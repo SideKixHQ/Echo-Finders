@@ -1,0 +1,197 @@
+# Drafted by Claude Code (2026-10-14) for the Boston core.
+# Listening spot: City Square Park, Charlestown, beside the exposed foundations of the Great House and Three Cranes Tavern; public park.
+# Position: Estimated centre of City Square Park from surrounding Overture entries (10 and 20 City Square to the east, 90 Main St and the Warren Tavern to the north-west, the former City Square MBTA point to the south); the park itself is not in the places file (low confidence; check on site).
+id: boston-in-short-i-lost-most-all
+title: "In Short, I Lost Most All"
+summary: "The British burned Charlestown during the Battle of Bunker Hill. A tavern's foundations in this park are almost all that is left."
+place: "City Square Park, Three Cranes Tavern foundations, Charlestown, Boston, Massachusetts"
+at: { lat: 42.37290, lng: -71.06245 }
+triggerRadiusKm: 0.06
+category: military
+format: short
+durationS: 91
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, charlestown, bunker-hill, revolution, archaeology]
+teaser: "Look for the old foundations in this park. They are most of what is left of a town."
+script: |
+  Look for the old stone foundations in this park. They belonged to the Great House, later the
+  Three Cranes Tavern. In seventeen seventy-five this was the middle of Charlestown.
+
+  That spring, about sixteen hundred people lived here. Wooden houses, workshops, warehouses,
+  narrow streets, a ferry across to Boston.
+
+  By June, most of them had gone. The British army was shut up in Boston, the colonial army
+  was gathering outside, and Charlestown sat in between.
+
+  On the seventeenth of June, the militia dug in on the hill above the town. During the
+  battle, colonial soldiers fired on the British from the empty houses. General William Howe
+  ordered the town set on fire.
+
+  A British general, John Burgoyne, had been directing guns from Copp's Hill, across the
+  water. He wrote that the timber church steeples were great pyramids of fire above the rest.
+
+  Afterwards, more than four hundred and fifty families listed what they had lost. One man,
+  Willson Chamberlain, began his list and ran out of room on the paper. He ended it with one
+  line.
+
+  In short, I lost most all that I had.
+
+  The town asked Congress to pay. Congress said it lamented the distress. Nobody was ever
+  compensated.
+
+  Of the town Chamberlain lost, this is what you can still see. A tavern's foundations, in a
+  park.
+pronunciations:
+  - written: Burgoyne
+    say: bur-GOYN
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "They belonged to the Great House, later the Three Cranes Tavern."
+    source: 1
+    quote: "The foundations of this early building, still visible today in City Square Park"
+  - says: "They belonged to the Great House, later the Three Cranes Tavern."
+    source: 1
+    quote: "The former Great House, later known as the Three Cranes Tavern"
+  - says: "In seventeen seventy-five this was the middle of Charlestown."
+    source: 1
+    quote: "mark the heart of the Charlestown residents knew on the eve of war"
+  - says: "That spring, about sixteen hundred people lived here."
+    source: 1
+    quote: "By 1775, the town had grown into a thriving community of about 1,600 people"
+  - says: "Wooden houses, workshops, warehouses, narrow streets, a ferry across to Boston."
+    source: 1
+    quote: "Wooden homes, workshops, and warehouses lined the town’s narrow streets, and ferries carried people, goods, and news across the river to Boston."
+  - says: "By June, most of them had gone."
+    source: 1
+    quote: "By early June, most of Charlestown’s population had left."
+  - says: "The British army was shut up in Boston, the colonial army was gathering outside, and Charlestown sat in between."
+    source: 1
+    quote: "Charlestown lay outside the established siege lines. British troops had withdrawn fully into Boston"
+  - says: "On the seventeenth of June, the militia dug in on the hill above the town."
+    source: 1
+    quote: "On the morning of June 17, colonial militia took up positions on Bunker Hill, overlooking Charlestown."
+  - says: "During the battle, colonial soldiers fired on the British from the empty houses."
+    source: 1
+    quote: "During the battle, colonial soldiers hid among the empty buildings of Charlestown, firing on British troops from windows and rooftops."
+  - says: "General William Howe ordered the town set on fire."
+    source: 1
+    quote: "In response, British General William Howe ordered the town set on fire."
+  - says: "A British general, John Burgoyne, had been directing guns from Copp's Hill, across the water."
+    source: 2
+    quote: "From this spot on June 17, 1775, Generals John Burgoyne and Henry Clinton directed British soldiers to bombard Breed’s Hill with naval guns."
+  - says: "He wrote that the timber church steeples were great pyramids of fire above the rest."
+    source: 1
+    quote: "Timber church steeples stood as \"great Pyramids of Fire above the rest,\" British General John Burgoyne recounted in a letter to his nephew shortly after the battle."
+  - says: "Afterwards, more than four hundred and fifty families listed what they had lost."
+    source: 1
+    quote: "In total, more than 450 families filed claims for losses caused by the destruction of the town by British troops."
+  - says: "One man, Willson Chamberlain, began his list and ran out of room on the paper."
+    source: 1
+    quote: "Willson Chamberlain began his list but ran out of space on the paper"
+  - says: "He ended it with one line."
+    source: 1
+    quote: "ending the note by saying, \"in short I Lost most all that I had.\""
+  - says: "In short, I lost most all that I had."
+    source: 1
+    quote: "\"in short I Lost most all that I had.\""
+  - says: "The town asked Congress to pay."
+    source: 1
+    quote: "wrote a letter petitioning the Continental Congress for restitution."
+  - says: "Congress said it lamented the distress."
+    source: 1
+    quote: "Congress responded saying that while they \"lament the distress,\" [16] they could not provide financial relief."
+  - says: "Nobody was ever compensated."
+    source: 1
+    quote: "the residents of Charlestown never received compensation for their losses."
+  - says: "Of the town Chamberlain lost, this is what you can still see."
+    source: 1
+    quote: "Only the foundations of the Three Cranes Tavern remain visible as a reminder of the community that stood here"
+  - says: "A tavern's foundations, in a park."
+    source: 1
+    quote: "still visible today in City Square Park"
+sources:
+  - title: "The Burning of Charlestown"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/the-burning-of-charlestown.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Copp's Hill Burying Ground"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/copp-s-hill-burying-ground.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-in-short-i-lost-most-all/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 90.7
+    audioBytes: 1452033
+    transcript:
+      totalS: 90.7
+      lines:
+        - text: Look for the old stone foundations in this park.
+          atS: 0
+          durationS: 2.95
+        - text: They belonged to the Great House, later the Three Cranes Tavern.
+          atS: 3.19
+          durationS: 3.84
+        - text: In seventeen seventy-five this was the middle of Charlestown.
+          atS: 7.64
+          durationS: 3.94
+        - text: That spring, about sixteen hundred people lived here.
+          atS: 11.96
+          durationS: 3.37
+        - text: Wooden houses, workshops, warehouses, narrow streets, a ferry across to Boston.
+          atS: 15.65
+          durationS: 6.07
+        - text: By June, most of them had gone.
+          atS: 22.33
+          durationS: 2.14
+        - text: The British army was shut up in Boston, the colonial army was gathering outside, and Charlestown sat in between.
+          atS: 24.74
+          durationS: 7.51
+        - text: On the seventeenth of June, the militia dug in on the hill above the town.
+          atS: 33.06
+          durationS: 4.23
+        - text: During the battle, colonial soldiers fired on the British from the empty houses.
+          atS: 37.99
+          durationS: 5.04
+        - text: General William Howe ordered the town set on fire.
+          atS: 43.63
+          durationS: 3.51
+        - text: A British general, John Burgoyne, had been directing guns from Copp's Hill, across the water.
+          atS: 47.95
+          durationS: 6.15
+        - text: He wrote that the timber church steeples were great pyramids of fire above the rest.
+          atS: 54.8
+          durationS: 4.83
+        - text: Afterwards, more than four hundred and fifty families listed what they had lost.
+          atS: 60.01
+          durationS: 4.84
+        - text: One man, Willson Chamberlain, began his list and ran out of room on the paper.
+          atS: 65.46
+          durationS: 5.07
+        - text: He ended it with one line.
+          atS: 70.7
+          durationS: 2.07
+        - text: In short, I lost most all that I had.
+          atS: 73.38
+          durationS: 3.32
+        - text: The town asked Congress to pay.
+          atS: 77.14
+          durationS: 1.95
+        - text: Congress said it lamented the distress.
+          atS: 79.33
+          durationS: 2.3
+        - text: Nobody was ever compensated.
+          atS: 82.07
+          durationS: 1.97
+        - text: Of the town Chamberlain lost, this is what you can still see.
+          atS: 84.29
+          durationS: 3.45
+        - text: A tavern's foundations, in a park.
+          atS: 88.06
+          durationS: 2.64

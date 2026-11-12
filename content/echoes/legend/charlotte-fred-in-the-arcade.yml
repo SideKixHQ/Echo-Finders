@@ -8,6 +8,8 @@ place: "Latta Arcade, 320 South Tryon Street, Charlotte, North Carolina"
 at: { lat: 35.22556, lng: -80.84583 }
 triggerRadiusKm: 0.04
 category: legend
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 63
 visibility: at-hand

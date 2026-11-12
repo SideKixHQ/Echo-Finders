@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Echo } from "@echofinders/core";
-import { dayLabel, isRareFind, minutesLabel, rareFindCount, shortPlace } from "../../apps/prototype/src/my-echoes";
+import { dayLabel, isRareFind, minutesLabel, rareFindCount, rareWhy, shortPlace } from "../../apps/prototype/src/my-echoes";
 
 describe("the short place on a My echoes row", () => {
   it("keeps the first part and the town, and drops the street and the state", () => {
@@ -45,28 +45,43 @@ describe("the date on a My echoes row", () => {
   });
 });
 
+// Rarity is hand picked since 2026-11-12 (docs/adr/0021-topics-and-rare.md): the tier is
+// the echo's `rare` field, not inside, hours or remoteness. These were rewritten to that,
+// and the last case pins that the old inputs no longer count on their own.
 describe("rare finds", () => {
-  const echo = (o: Partial<{ category: string; inside: boolean; hours: string; remoteness: number; radius: number }>) =>
+  const echo = (o: Partial<{ category: string; rare: string; rareReason: string; inside: boolean; remoteness: number }>) =>
     ({
       id: "x",
       category: o.category ?? "history",
+      rare: o.rare,
+      rareReason: o.rareReason,
       inside: o.inside,
-      hours: o.hours,
       remoteness: o.remoteness,
-      point: { at: { lat: 0, lng: 0 }, place: "", triggerRadiusKm: o.radius ?? 0.04 },
+      point: { at: { lat: 0, lng: 0 }, place: "", triggerRadiusKm: 0.04 },
     }) as unknown as Echo;
 
-  it("counts rare and singular, not uncommon or common", () => {
+  it("counts rare and extra rare, not common", () => {
     const common = echo({});
-    const uncommon = echo({ inside: true });
-    const rare = echo({ inside: true, hours: "dusk" });
-    const singular = echo({ inside: true, remoteness: 0.9 });
-    expect([common, uncommon, rare, singular].map(isRareFind)).toEqual([false, false, true, true]);
-    expect(rareFindCount([common, uncommon, rare, singular])).toBe(2);
+    const rare = echo({ rare: "rare", rareReason: "Easy to miss" });
+    const extra = echo({ rare: "extra-rare", rareReason: "Hard to reach" });
+    expect([common, rare, extra].map(isRareFind)).toEqual([false, true, true]);
+    expect(rareFindCount([common, rare, extra])).toBe(2);
   });
 
   it("counts true crime like any other echo (James, 2026-11-11)", () => {
-    expect(isRareFind(echo({ category: "true-crime", inside: true, hours: "dusk" }))).toBe(true);
+    expect(isRareFind(echo({ category: "true-crime", rare: "rare", rareReason: "Only at certain times" }))).toBe(true);
+  });
+
+  it("no longer counts inside or far off the walk on their own", () => {
+    expect(isRareFind(echo({ inside: true, remoteness: 0.9 }))).toBe(false);
+  });
+
+  it("says why on the card, in a short line", () => {
+    expect(rareWhy(echo({ rare: "rare", rareReason: "Hard to reach" }))).toBe("Rare: hard to reach");
+    expect(rareWhy(echo({ rare: "extra-rare", rareReason: "Inside, with opening hours" }))).toBe(
+      "Extra rare: inside, with opening hours",
+    );
+    expect(rareWhy(echo({}))).toBeNull();
   });
 });
 

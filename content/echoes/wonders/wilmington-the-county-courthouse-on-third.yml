@@ -1,0 +1,102 @@
+# From W087 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Third or Princess Street sidewalk; enter only through an authorized public event or visitor process.
+# Position: NCDCR: SE corner of 3rd & Princess; hmdb Johnston Blakeley marker (postal 24 N 3rd, at 3rd & Princess) 34 14.19N 77 56.763W. (high confidence).
+id: wilmington-the-county-courthouse-on-third
+title: "The County Courthouse on Third"
+summary: "This is the late-nineteenth-century county courthouse at Third and Princess, built in 1892 to 1893."
+place: "New Hanover County Historic Courthouse, 24 North Third Street, Wilmington, North Carolina"
+at: { lat: 34.23642, lng: -77.94600 }
+triggerRadiusKm: 0.04
+category: wonders
+format: short
+durationS: 54
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "This is the late-nineteenth-century county courthouse at Third and Princess, built in 1892 to 1893."
+script: |
+  This is the late-nineteenth-century county courthouse at Third and Princess, built in
+  1892 to 1893.
+
+  It is not the earlier courthouse once located at Market and Third. Keeping those places
+  separate stops very different periods from collapsing into a single story.
+
+  Look from the public sidewalk. The building's prominent scale and detailed exterior make
+  government visible in the streetscape. A courthouse is designed to gather public
+  business under an identifiable roof.
+
+  Its landmark role continues even when visitors come mainly to look at the architecture.
+  The exact address matters: history happened in particular buildings, and similar names
+  can lead you to the wrong door. This stop anchors the later county institution, while the
+  marker at Market and Third recalls the vanished colonial courthouse.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "This is the late-nineteenth-century county courthouse at Third and Princess, built in 1892 to 1893."
+    source: 2
+    quote: "Location: 24 North 3rd Street / Princess Street Built: 1892 – 1893"
+  - says: "It is not the earlier courthouse once located at Market and Third."
+    source: 3
+    quote: "Location: US 17 Business (Market Street) at Third Street in Wilmington County: New Hanover Original Date Cast: 1936 Although many merchants in Wilmington’s booming maritime industry remained fiercely loyal to England throughout the Revolution, a historical marker near the old courthouse site reminds residents and tourists that Wilmington was, at times, a hotbed of resistance."
+  - says: "This stop anchors the later county institution, while the marker at Market and Third recalls the vanished colonial courthouse."
+    source: 3
+    quote: "Location: US 17 Business (Market Street) at Third Street in Wilmington County: New Hanover Original Date Cast: 1936 Although many merchants in Wilmington’s booming maritime industry remained fiercely loyal to England throughout the Revolution, a historical marker near the old courthouse site reminds residents and tourists that Wilmington was, at times, a hotbed of resistance."
+sources:
+  - title: "New Hanover County Historic Courthouse 51"
+    publisher: "New Hanover County"
+    url: https://www.nhcgov.com/Facilities/Facility/Details/New-Hanover-County-Historic-Courthouse-51
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "New hanover county"
+    publisher: "Courthouses.co"
+    url: https://courthouses.co/us-states/n/north-carolina/new-hanover-county/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Old Courthouse (D-2)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2023/12/08/old-courthouse-d-2
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-county-courthouse-on-third/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.2
+    audioBytes: 868144
+    transcript:
+      totalS: 54.2
+      lines:
+        - text: This is the late-nineteenth-century county courthouse at Third and Princess, built in 1892 to 1893.
+          atS: 0
+          durationS: 7.98
+        - text: It is not the earlier courthouse once located at Market and Third.
+          atS: 8.19
+          durationS: 4.21
+        - text: Keeping those places separate stops very different periods from collapsing into a single story.
+          atS: 12.72
+          durationS: 5.82
+        - text: Look from the public sidewalk.
+          atS: 19.14
+          durationS: 1.78
+        - text: The building's prominent scale and detailed exterior make government visible in the streetscape.
+          atS: 21.25
+          durationS: 5.76
+        - text: A courthouse is designed to gather public business under an identifiable roof.
+          atS: 27.39
+          durationS: 5.2
+        - text: Its landmark role continues even when visitors come mainly to look at the architecture.
+          atS: 32.97
+          durationS: 5.34
+        - text: "The exact address matters: history happened in particular buildings, and similar names can lead you to the wrong door."
+          atS: 38.59
+          durationS: 7.27
+        - text: This stop anchors the later county institution, while the marker at Market and Third recalls the vanished colonial courthouse.
+          atS: 46.3
+          durationS: 7.89
+archive:
+  - imageKey: archive/loc-pcrd-1a11273.jpg
+    year: 1905
+    caption: "The county courthouse at Third and Princess, clock tower"
+    credit: "The Rotograph Co. postcard, Library of Congress, Prints and Photographs (PCRD 1 - North Carolina - Wilmington, no. 2, 1905), https://www.loc.gov/item/2025673108/"
+    rights: public-domain

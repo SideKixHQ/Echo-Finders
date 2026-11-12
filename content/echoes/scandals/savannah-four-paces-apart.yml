@@ -1,0 +1,188 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: north sidewalk of East Oglethorpe Avenue in front of 110 East Oglethorpe, the McIntosh House, between Drayton and Abercorn streets. Private house; the echo needs no entry.
+# Position: Oglethorpe Avenue at Drayton and at Abercorn from the street segments in the app's Savannah street file; 110 is the first lot east of Drayton on the north side (medium confidence for the lot, high for the block).
+# Not a duplicate: the Colonial Park echo (savannah-the-vaults-on-south-broad) is across the avenue and about the vaults; this one is the house and the duel.
+id: savannah-four-paces-apart
+title: "Four Paces Apart"
+summary: "Lachlan McIntosh lived in this house, the oldest brick house in the city. In 1777 he and Button Gwinnett fought a duel twelve feet apart."
+place: "McIntosh House, 110 East Oglethorpe Avenue, Savannah, Georgia"
+at: { lat: 32.07656, lng: -81.09135 }
+triggerRadiusKm: 0.04
+category: scandals
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [savannah, savannah-core, oglethorpe-avenue, revolution, duels, military, signers]
+teaser: "Twelve feet apart, two of Georgia's leaders raised their pistols."
+script: |
+  Find the tall stuccoed house at one hundred and ten East Oglethorpe. Federal surveyors in the nineteen thirties called it the oldest brick house in the city.
+
+  The man who lived here once killed a signer of the Declaration of Independence.
+
+  His name was Lachlan McIntosh, a general. In the spring of seventeen seventy seven, in front of Georgia's leaders, he called Button Gwinnett a scoundrel. Gwinnett had signed the Declaration the summer before. He sent a challenge.
+
+  The next morning, the sixteenth of May, they met at the edge of town. Four paces apart. About twelve feet.
+
+  Both fired, at nearly the same moment. Both were hit in the thigh. Gwinnett's thigh was broken, and he fell. His friend Lyman Hall, who had signed the Declaration just beneath him, wrote that the general asked if he wanted another shot. Gwinnett answered yes, if they would help him up. The seconds stepped in.
+
+  It was a hot week. Three days later, Gwinnett was dead.
+
+  McIntosh was indicted, tried, and acquitted. He went north to fight under Washington, and came home, and lived for years in this house.
+
+  Look at the door. A general walked out of it every morning, past a town that remembered.
+
+  Twelve feet. That was all the room the argument needed.
+detail: >-
+  Gamble (1923) says the duel ground is believed to be the area south of Colonial Cemetery, then a children's playground; the script says only "at the edge of town". HABS (1934) dates the house 1770 or 1776 and gives the first Constitutional session of the legislature here as 1783; the 1937 guide says about August 1, 1782. The script avoids the date. The 1937 guide says McIntosh "lived here for a number of years"; Gamble says he died at his home on South Broad, which is the old name of Oglethorpe Avenue.
+pronunciations:
+  - written: "Lachlan"
+    say: "LOCK-lun"
+  - written: "Gwinnett"
+    say: "gwin-NET"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Federal surveyors in the nineteen thirties called it the oldest brick house in the city."
+    source: 1
+    quote: "Oldest briok flA house in the City."
+  - says: "The man who lived here once killed a signer of the Declaration of Independence."
+    source: 2
+    quote: "Lachlan Mcintosh who, in a duel fought over a political diff'erence, mortally wounded Button Gwinnett, President of Georgia and Signer of the Declaration of Independence."
+  - says: "In the spring of seventeen seventy seven, in front of Georgia's leaders, he called Button Gwinnett a scoundrel."
+    source: 3
+    quote: "in the presence of members of the Executive Council, had denounced him as a scoundrel"
+  - says: "He sent a challenge."
+    source: 3
+    quote: "He challenged Gen. McIntosh to immediate mortal combat."
+  - says: "The next morning, the sixteenth of May, they met at the edge of town."
+    source: 3
+    quote: "The next morning, May 16, 1777, they met, it is believed on the area now occu- pied by the children's playground to the south of Colonial cemetery."
+  - says: "Four paces apart. About twelve feet."
+    source: 3
+    quote: "Four paces, or twelve feet apart, they faced each other."
+  - says: "Both fired, at nearly the same moment. Both were hit in the thigh."
+    source: 3
+    quote: "Discharged their Pistols nearly at the same Time. Each wounded in the Thigh."
+  - says: "His friend Lyman Hall, who had signed the Declaration just beneath him, wrote that the general asked if he wanted another shot."
+    source: 3
+    quote: "Dr. Lyman Hall, who had signed the Declaration of Independence immediately under the name of Gwinnett"
+  - says: "Gwinnett answered yes, if they would help him up. The seconds stepped in."
+    source: 3
+    quote: "Mr. Gwinnett's thigh broke so that he fell—on wh'h ('tis said) the Genl. Asked him if he chose to take another shot—was Answered Yes, if they would help him up (or words nearly the same). The seconds interposed."
+  - says: "It was a hot week. Three days later, Gwinnett was dead."
+    source: 3
+    quote: "In the morning of May 19th Gwinnett died"
+  - says: "McIntosh was indicted, tried, and acquitted."
+    source: 3
+    quote: "McIntosh then surrendered to the civil authorities, gave bond, was indicted, tried and acquitted."
+  - says: "He went north to fight under Washington, and came home, and lived for years in this house."
+    source: 2
+    quote: "it is an established fact that he lived here for a number of years"
+  - says: "Find the tall stuccoed house at one hundred and ten East Oglethorpe."
+    source: 2
+    quote: "THE McINTOSH HOUSE, 110 Oglethorpe Ave. E., is reputed to be the oldest brick house in the State of Georgia."
+  - says: "His name was Lachlan McIntosh, a general."
+    source: 3
+    quote: "the meeting between Button Gwinnett, signer of the Declaration of Independence, and Gen. Lachlan McIntosh, one of Georgia’s two brigadiers of the Continental line"
+  - says: "Gwinnett had signed the Declaration the summer before."
+    source: 2
+    quote: "mortally wounded Button Gwinnett, President of Georgia and Signer of the Declaration of Independence."
+sources:
+  - title: "Macintosh House, HABS No. GA-23 (written data, 1934)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ga/ga0000/ga0056/data/ga0056data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Savannah Duels and Duellists, 1733 to 1877 (Thomas Gamble, 1923)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannahduelsdue0000thom
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-four-paces-apart/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 90.3
+    audioBytes: 1445345
+    transcript:
+      totalS: 90.3
+      lines:
+        - text: Find the tall stuccoed house at one hundred and ten East Oglethorpe.
+          atS: 0
+          durationS: 4.56
+        - text: Federal surveyors in the nineteen thirties called it the oldest brick house in the city.
+          atS: 5.07
+          durationS: 5.12
+        - text: The man who lived here once killed a signer of the Declaration of Independence.
+          atS: 10.8
+          durationS: 4.69
+        - text: His name was Lachlan McIntosh, a general.
+          atS: 16
+          durationS: 3.47
+        - text: In the spring of seventeen seventy seven, in front of Georgia's leaders, he called Button Gwinnett a scoundrel.
+          atS: 20.77
+          durationS: 6.78
+        - text: Gwinnett had signed the Declaration the summer before.
+          atS: 28.25
+          durationS: 3.02
+        - text: He sent a challenge.
+          atS: 31.71
+          durationS: 1.34
+        - text: The next morning, the sixteenth of May, they met at the edge of town.
+          atS: 33.99
+          durationS: 4.04
+        - text: Four paces apart.
+          atS: 38.48
+          durationS: 1.32
+        - text: About twelve feet.
+          atS: 40.08
+          durationS: 1.28
+        - text: Both fired, at nearly the same moment.
+          atS: 41.74
+          durationS: 2.75
+        - text: Both were hit in the thigh.
+          atS: 44.93
+          durationS: 1.67
+        - text: Gwinnett's thigh was broken, and he fell.
+          atS: 47.04
+          durationS: 2.71
+        - text: His friend Lyman Hall, who had signed the Declaration just beneath him, wrote that the general asked if he wanted another shot.
+          atS: 50.56
+          durationS: 7.23
+        - text: Gwinnett answered yes, if they would help him up.
+          atS: 58.73
+          durationS: 2.88
+        - text: The seconds stepped in.
+          atS: 62.41
+          durationS: 1.39
+        - text: It was a hot week.
+          atS: 64.61
+          durationS: 1.39
+        - text: Three days later, Gwinnett was dead.
+          atS: 66.5
+          durationS: 3.09
+        - text: McIntosh was indicted, tried, and acquitted.
+          atS: 70.03
+          durationS: 3.24
+        - text: He went north to fight under Washington, and came home, and lived for years in this house.
+          atS: 73.65
+          durationS: 5.56
+        - text: Look at the door.
+          atS: 79.6
+          durationS: 1.06
+        - text: A general walked out of it every morning, past a town that remembered.
+          atS: 80.98
+          durationS: 4.41
+        - text: Twelve feet.
+          atS: 86.09
+          durationS: 1.38
+        - text: That was all the room the argument needed.
+          atS: 87.91
+          durationS: 2.37

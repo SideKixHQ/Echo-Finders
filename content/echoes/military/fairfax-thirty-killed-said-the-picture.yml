@@ -1,0 +1,102 @@
+# Drafted by Claude Code (2026-11-09) for the City of Fairfax, Virginia.
+# Listening spot: Public sidewalk on Main Street in Old Town Fairfax, east of the courthouse corner.
+# Position: Approximate Main Street sidewalk about 150 m east of the historic courthouse corner, from general knowledge of Old Town Fairfax (low-medium confidence).
+id: fairfax-thirty-killed-said-the-picture
+title: "Thirty Killed, Said the Picture"
+summary: "A June 1861 cavalry raid on Fairfax Court House was printed as thirty enemy killed. A witness said the count was exaggerated."
+place: "Main Street at Chain Bridge Road, Old Town Fairfax, Virginia"
+at: { lat: 38.8459, lng: -77.3044 }
+triggerRadiusKm: 0.08
+category: military
+format: short
+durationS: 42
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [fairfax, civil-war, military, 1861]
+teaser: "A cavalry charge through this town became a picture, and the picture got bigger than the fight."
+script: |
+  On the first of June, 1861, a company of United States dragoons charged into this town, and back out again.
+
+  A week later an illustrated newspaper printed a picture of the charge.
+
+  Its caption said they killed thirty of the enemy and carried off five prisoners, in the face of fifteen hundred troops.
+
+  Early newspaper reports said much the same. Thirty rebels killed.
+
+  Then an official dispatch to the War Department put the Confederate loss at twenty-seven.
+
+  And a man who had been in the town that night told reporters the count of the dead was exaggerated.
+
+  The war had barely started. Already, the picture was bigger than the fight.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "On the first of June, 1861, a company of United States dragoons charged into this town, and back out again."
+    source: 1
+    quote: "Lieutenant Tompkins, at the head of Company B, U.S. Dragoons, charging into town at Fairfax Court House, killing thirty of the enemy and carrying off five prisoners, in the face of fifteen hundred secession troops, on Saturday, June 1, 1861"
+  - says: "A week later an illustrated newspaper printed a picture of the charge."
+    source: 1
+    quote: "Illus. in: Frank Leslie's illustrated newspaper, vol. 12, no. 290 (1861 June 8), p. 53."
+  - says: "Its caption said they killed thirty of the enemy and carried off five prisoners, in the face of fifteen hundred troops."
+    source: 1
+    quote: "killing thirty of the enemy and carrying off five prisoners, in the face of fifteen hundred secession troops"
+  - says: "Thirty rebels killed."
+    source: 2
+    quote: "Lieut. Tompkins reports 30 rebels killed"
+  - says: "Early newspaper reports said much the same."
+    source: 2
+    quote: "Lieut. Tompkins reports 30 rebels killed, and that their force amounted to 1,300."
+  - says: "Then an official dispatch to the War Department put the Confederate loss at twenty-seven."
+    source: 2
+    quote: "An official dispatch I from Gen. McDowell to the War Department, ays the loss to the Union troops at Fairfax I ('ourt House is 3 and the Confederates 27."
+  - says: "And a man who had been in the town that night told reporters the count of the dead was exaggerated."
+    source: 2
+    quote: "account of the killed in the Washington papers! I is exaggerated"
+sources:
+  - title: "Lieutenant Tompkins ... charging into town at Fairfax Court House ... June 1, 1861 (Frank Leslie's illustrated newspaper)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/99614100/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Chicago Evening Journal, June 3, 1861"
+    publisher: "Library of Congress, Rare Book and Special Collections"
+    url: https://tile.loc.gov/storage-services/service/rbc/lprbscsm/scsm1144/scsm1144.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fairfax-thirty-killed-said-the-picture/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 41.6
+    audioBytes: 666270
+    transcript:
+      totalS: 41.6
+      lines:
+        - text: On the first of June, 1861, a company of United States dragoons charged into this town, and back out again.
+          atS: 0
+          durationS: 7.57
+        - text: A week later an illustrated newspaper printed a picture of the charge.
+          atS: 8.52
+          durationS: 4.61
+        - text: Its caption said they killed thirty of the enemy and carried off five prisoners, in the face of fifteen hundred troops.
+          atS: 13.64
+          durationS: 7.01
+        - text: Early newspaper reports said much the same.
+          atS: 20.98
+          durationS: 2.59
+        - text: Thirty rebels killed.
+          atS: 23.78
+          durationS: 1.39
+        - text: Then an official dispatch to the War Department put the Confederate loss at twenty-seven.
+          atS: 25.5
+          durationS: 5.09
+        - text: And a man who had been in the town that night told reporters the count of the dead was exaggerated.
+          atS: 30.86
+          durationS: 5.51
+        - text: The war had barely started.
+          atS: 36.65
+          durationS: 1.93
+        - text: Already, the picture was bigger than the fight.
+          atS: 39.02
+          durationS: 2.54

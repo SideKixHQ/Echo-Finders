@@ -64,7 +64,7 @@ const RARITY_LABEL: Record<string, string> = {
   common: "",
   uncommon: "Uncommon",
   rare: "Rare",
-  singular: "Singular",
+  singular: "Extra rare",
 };
 
 /** Samples across the ribbon. Enough to read as sound, few enough to stay a shape. */

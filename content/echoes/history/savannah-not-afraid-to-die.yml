@@ -1,0 +1,163 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Oglethorpe Square, by the Moravian monument.
+# Position: the centre of Oglethorpe Square, from where Abercorn Street bends around it between York and State in the app's Savannah street file; about 60 m west of the Owens-Thomas House echo (medium confidence for the monument's place within the square; the 1937 guide lists it only as "Oglethorpe Square").
+id: savannah-not-afraid-to-die
+title: "Not Afraid to Die"
+summary: "The Moravians came to Savannah in 1735, calm enough to amaze John Wesley in a storm at sea. They would not bear arms, so they had to leave."
+place: "Moravian monument, Oglethorpe Square, Savannah, Georgia"
+at: { lat: 32.07745, lng: -81.09035 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 81
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [savannah, savannah-core, oglethorpe-square, colonial, religion, moravians, john-wesley, pacifism]
+teaser: "In the middle of a storm at sea, they kept singing."
+script: |
+  Find the monument in this square to the Moravians, the colonists who lived in Savannah from seventeen thirty five to seventeen forty.
+
+  Five years. Then they were gone. They were the colonists who would not fight.
+
+  A young clergyman named John Wesley crossed the Atlantic with some of them, in the winter of seventeen thirty six. In the middle of the voyage a great storm broke over the ship. The English passengers screamed. The Moravians, in the middle of a psalm, went on singing.
+
+  Afterwards Wesley asked one of them whether he had been afraid. He wrote down the answer.
+
+  I thank God, no.
+
+  But were not your women and children afraid?
+
+  No. Our women and children are not afraid to die.
+
+  In Georgia they cleared land and built homes, and taught at a school for Indian children near Tomochichi's village. But Georgia was a border colony, facing the Spanish. When the Moravians refused, for their faith, to bear arms, they were no longer welcome. They left for Pennsylvania and North Carolina.
+
+  Look at the monument again.
+
+  The colony wanted settlers who were not afraid. It sent away the ones who were not afraid to die.
+detail: >-
+  The 1937 guide gives the monument's inscription ("In memory of the Moravian colonists in Savannah, 1735-1740"), their work, the Indian school near Tomochichi's village, the refusal to bear arms "against the Spaniards, because of religious scruples", and their departure to North Carolina and Pennsylvania. The storm and the exchange are from Wesley's journal for the voyage. Wesley calls the Moravians "the Germans" in this entry.
+pronunciations:
+  - written: "Moravians"
+    say: "mor-AY-vee-unz"
+  - written: "Tomochichi"
+    say: "toe-moe-CHEE-chee"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Find the monument in this square to the Moravians, the colonists who lived in Savannah from seventeen thirty five to seventeen forty."
+    source: 1
+    quote: "MORAVIAN MONUMENT, Oglethorpe Square In memory of the Moravian colonists in Savannah, 1735-1740."
+  - says: "In the middle of the voyage a great storm broke over the ship. The English passengers screamed. The Moravians, in the middle of a psalm, went on singing."
+    source: 2
+    quote: "In the midst of the psalm wherewith their service began, the sea broke over, split the main-sail in pieces, covered the ship, and poured in between the decks, as if the great deep had already swallowed us up. A terrible screaming began among the EngUsh. The Germans calmly sung on."
+  - says: "I thank God, no."
+    source: 2
+    quote: "I thank God, no.\" I asked, \" But were not your women and children afraid ? \" He repHed mildly, \"No; our women and children are not afraid to die.\""
+  - says: "No. Our women and children are not afraid to die."
+    source: 2
+    quote: "\"No; our women and children are not afraid to die.\""
+  - says: "In Georgia they cleared land and built homes, and taught at a school for Indian children near Tomochichi's village."
+    source: 1
+    quote: "They v*-orked with zeal in subduing the forest and building homes, and their missionary activities among the Indians were markedly successful"
+  - says: "In Georgia they cleared land and built homes, and taught at a school for Indian children near Tomochichi's village."
+    source: 1
+    quote: "They also assisted in building the Indian school, Irene, near Tomochichi's village."
+  - says: "When the Moravians refused, for their faith, to bear arms, they were no longer welcome. They left for Pennsylvania and North Carolina."
+    source: 1
+    quote: "However, when they re- fused to bear arms against the Spaniards, because of religious scruples, they were no longer welcome in the Colony of Geor- gia. Abandoning their settlement, they moved to North Caro- lina and Pennsylvania."
+  - says: "Five years."
+    source: 1
+    quote: "MORAVIAN MONUMENT, Oglethorpe Square In memory of the Moravian colonists in Savannah, 1735-1740."
+  - says: "A young clergyman named John Wesley crossed the Atlantic with some of them, in the winter of seventeen thirty six."
+    source: 2
+    quote: "I began to learn German, in order to converse with the Germans, six and twenty of whom we had on board."
+  - says: "Afterwards Wesley asked one of them whether he had been afraid."
+    source: 2
+    quote: "I asked one of them afterwards, \" Was you not afraid?\" He answered, \"I thank God, no.\""
+  - says: "But Georgia was a border colony, facing the Spanish."
+    source: 1
+    quote: "However, when they re- fused to bear arms against the Spaniards, because of religious scruples, they were no longer welcome in the Colony of Geor- gia."
+sources:
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "The Journal of the Rev. John Wesley (1906 edition)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/journalofrevjohnwesl
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-not-afraid-to-die/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.1
+    audioBytes: 1299060
+    transcript:
+      totalS: 81.1
+      lines:
+        - text: Find the monument in this square to the Moravians, the colonists who lived in Savannah from seventeen thirty five to seventeen forty.
+          atS: 0
+          durationS: 8.93
+        - text: Five years.
+          atS: 9.31
+          durationS: 1.18
+        - text: Then they were gone.
+          atS: 11.1
+          durationS: 1.58
+        - text: They were the colonists who would not fight.
+          atS: 13.28
+          durationS: 2.38
+        - text: A young clergyman named John Wesley crossed the Atlantic with some of them, in the winter of seventeen thirty six.
+          atS: 16.36
+          durationS: 6.8
+        - text: In the middle of the voyage a great storm broke over the ship.
+          atS: 23.77
+          durationS: 3.6
+        - text: The English passengers screamed.
+          atS: 27.75
+          durationS: 1.95
+        - text: The Moravians, in the middle of a psalm, went on singing.
+          atS: 30.14
+          durationS: 4.53
+        - text: Afterwards Wesley asked one of them whether he had been afraid.
+          atS: 35.48
+          durationS: 3.37
+        - text: He wrote down the answer.
+          atS: 39.17
+          durationS: 1.58
+        - text: I thank God, no.
+          atS: 41.35
+          durationS: 1.24
+        - text: But were not your women and children afraid?
+          atS: 43.41
+          durationS: 2.4
+        - text: No.
+          atS: 46.42
+          durationS: 0.5
+        - text: Our women and children are not afraid to die.
+          atS: 47.73
+          durationS: 2.59
+        - text: In Georgia they cleared land and built homes, and taught at a school for Indian children near Tomochichi's village.
+          atS: 50.7
+          durationS: 6.65
+        - text: But Georgia was a border colony, facing the Spanish.
+          atS: 57.96
+          durationS: 3.44
+        - text: When the Moravians refused, for their faith, to bear arms, they were no longer welcome.
+          atS: 62
+          durationS: 6.19
+        - text: They left for Pennsylvania and North Carolina.
+          atS: 68.88
+          durationS: 2.87
+        - text: Look at the monument again.
+          atS: 72.56
+          durationS: 1.44
+        - text: The colony wanted settlers who were not afraid.
+          atS: 74.7
+          durationS: 3.02
+        - text: It sent away the ones who were not afraid to die.
+          atS: 78.32
+          durationS: 2.81

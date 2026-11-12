@@ -131,25 +131,20 @@
   --cat-kids: #00ffe7;
   --cat-arts: #ff9e4f;
   --cat-food-drink: #ff87c3;
-  --cat-people: #ffd98a;
-  /*
-     Landmarks had no colour. It was #d8dce5, which is --cool to the digit, so the one
-     category with more pins on a city route than any other drew in exactly the neutral
-     ink everything else was already using — and when the map was asked to carry category
-     colour, a third of it stayed grey. The prototype's table was written for chips, where
-     a near-white dot beside a label is fine; a map needs nine hues that are nine hues.
-     Sky blue is the gap in the set: away from history's violet, land's teal and the
-     interface aqua. */
-  --cat-built: #7fb4ff;
-  --cat-land: #7fd4c1;
-  --cat-inspo: #d7f75b;
-  /* The five of 2026-11-12 (approved canvas "New Categories"). With fourteen, some hues sit
-     close (firsts gold, people pale gold); the pin icon carries the difference. */
+  /* The 16 topics of 2026-11-12 (approved canvas, board "The 16 topics"): the colours are
+     the canvas's own. Wonders keeps the sky blue Landmarks had, business the teal land had,
+     pop culture the lime inspo had, sports the gold firsts had, scandals the violet music
+     had. Rare is a chip colour only: an echo's colour is always its topic. */
+  --cat-military: #c9a66b;
+  --cat-scandals: #c38bff;
   --cat-unsolved: #e8ecf5;
   --cat-disasters: #ff5c4d;
-  --cat-music: #c38bff;
-  --cat-firsts: #ffc21a;
   --cat-hidden: #9aa6bd;
+  --cat-pop-culture: #d7f75b;
+  --cat-sports: #ffc21a;
+  --cat-business: #7fd4c1;
+  --cat-wonders: #7fb4ff;
+  --cat-rare: #ffd98a;
 
   --stage: #07080c;
   --rgb-hair: 216, 220, 229;
@@ -319,17 +314,21 @@
   --cat-kids: #00655f;
   --cat-arts: #894900;
   --cat-food-drink: #a52266;
-  --cat-people: #5048bc;
-  /* Same gap on the light scheme: this was a slate that read as "no category". */
-  --cat-built: #1d57b0;
-  --cat-land: #1a5e51;
-  --cat-inspo: #556100;
-  /* Each clears 4.6:1 on white and on the composed chip, as above. */
+  /* The 16 topics. Each clears 4.6:1 on white and on the composed chip, as above
+     (computed 2026-11-12: military 6.95 and 4.66, scandals 7.33 and 4.92, pop culture 7.02
+     and 4.71, sports 7.24 and 4.86, business 7.60 and 5.10, wonders 6.90 and 4.63, rare
+     7.06 and 4.74). Pop culture is a step darker than inspo's #556100, which measured 4.55
+     on the chip. */
+  --cat-military: #705529;
+  --cat-scandals: #7232b8;
   --cat-unsolved: #3d4380;
   --cat-disasters: #a02417;
-  --cat-music: #7232b8;
-  --cat-firsts: #6e5300;
   --cat-hidden: #3f4d60;
+  --cat-pop-culture: #4d6005;
+  --cat-sports: #6e5300;
+  --cat-business: #1a5e51;
+  --cat-wonders: #1d57b0;
+  --cat-rare: #785100;
 
 }
 
@@ -587,20 +586,21 @@ body {
  * whole card in one hue.
  */
 .cat-history { --cat: var(--cat-history); color: var(--cat); }
+.cat-military { --cat: var(--cat-military); color: var(--cat); }
 .cat-true-crime { --cat: var(--cat-true-crime); color: var(--cat); }
+.cat-scandals { --cat: var(--cat-scandals); color: var(--cat); }
 .cat-legend { --cat: var(--cat-legend); color: var(--cat); }
-.cat-kids { --cat: var(--cat-kids); color: var(--cat); }
-.cat-arts { --cat: var(--cat-arts); color: var(--cat); }
-.cat-inspo { --cat: var(--cat-inspo); color: var(--cat); }
 .cat-unsolved { --cat: var(--cat-unsolved); color: var(--cat); }
 .cat-disasters { --cat: var(--cat-disasters); color: var(--cat); }
-.cat-music { --cat: var(--cat-music); color: var(--cat); }
-.cat-firsts { --cat: var(--cat-firsts); color: var(--cat); }
 .cat-hidden { --cat: var(--cat-hidden); color: var(--cat); }
-.cat-people { --cat: var(--cat-people); color: var(--cat); }
+.cat-arts { --cat: var(--cat-arts); color: var(--cat); }
+.cat-pop-culture { --cat: var(--cat-pop-culture); color: var(--cat); }
+.cat-sports { --cat: var(--cat-sports); color: var(--cat); }
 .cat-food-drink { --cat: var(--cat-food-drink); color: var(--cat); }
-.cat-built { --cat: var(--cat-built); color: var(--cat); }
-.cat-land { --cat: var(--cat-land); color: var(--cat); }
+.cat-business { --cat: var(--cat-business); color: var(--cat); }
+.cat-wonders { --cat: var(--cat-wonders); color: var(--cat); }
+.cat-kids { --cat: var(--cat-kids); color: var(--cat); }
+.cat-rare { --cat: var(--cat-rare); color: var(--cat); }
 
 /*
  * THE MAP PINS ARE THE EXCEPTION, and this rule is the whole line.
@@ -1742,15 +1742,16 @@ body {
   --cat-kids: #00ffe7;
   --cat-arts: #ff9e4f;
   --cat-food-drink: #ff87c3;
-  --cat-people: #ffd98a;
-  --cat-built: #d8dce5;
-  --cat-land: #7fd4c1;
-  --cat-inspo: #d7f75b;
+  --cat-military: #c9a66b;
+  --cat-scandals: #c38bff;
   --cat-unsolved: #e8ecf5;
   --cat-disasters: #ff5c4d;
-  --cat-music: #c38bff;
-  --cat-firsts: #ffc21a;
   --cat-hidden: #9aa6bd;
+  --cat-pop-culture: #d7f75b;
+  --cat-sports: #ffc21a;
+  --cat-business: #7fd4c1;
+  --cat-wonders: #7fb4ff;
+  --cat-rare: #ffd98a;
   --muted: #aeb5c2;
   /* Its glows and shadows are the dark scheme's too: they were literals until the light
      scheme was redone, and the camera frame is the one place they should stay that way. */
@@ -3782,6 +3783,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   font-style: normal; margin-left: 2px; color: var(--ember-core);
   letter-spacing: 0.12em; text-transform: uppercase;
 }
+/* "Rare: hard to reach", under the title: why this one is rare, in the rarity's own ink. */
+.pop-rare-why { margin-top: 2px; font-size: var(--fs-secondary); color: var(--ember-core); }
 /* The card's mark, when there is a photograph of the place to put on it. Square rather
    than round, because a photograph in a circle is a photograph with its corners cut off,
    and the corners of a street scene are where the street is. */
@@ -4465,8 +4468,23 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   animation: catpopIn 0.16s var(--ease);
 }
 @media (prefers-reduced-motion: reduce) { .kind-box { animation: none; } }
-/* Chips that wrap, never scroll: a scroller hides half the options behind a gesture. */
-.kind-chips { display: flex; flex-wrap: wrap; gap: 3px; }
+/* Two columns, never a scroller (approved canvas, board "The 16 topics", 2026-11-12): a
+   header saying where the count was taken, the topics with echoes here, and a note saying
+   why the list changes. Fits a 390x844 screen with every topic showing. */
+.kind-box { padding: 14px; border-radius: 18px; }
+.kind-panel { display: flex; flex-direction: column; gap: 10px; }
+.kind-head {
+  font-family: "Space Grotesk", monospace; font-size: 12px; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--muted);
+}
+.kind-note { font-size: 13px; line-height: 1.4; color: var(--muted); }
+.kind-chips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.kind-chips .chip {
+  min-height: 44px; border-radius: 22px; padding: 0 12px; gap: 8px; min-width: 0;
+  border: 1px solid rgba(var(--rgb-hair), 0.22); white-space: normal; text-align: left; line-height: 1.15;
+}
+.kind-chips .chip svg { width: 18px; height: 18px; }
+.kind-chips .chip.on { border-color: transparent; background: rgba(var(--rgb-hair), 0.12); }
 /* Every chip in its own colour, picked or not: the box is the map's colour key. A later
    `.chip svg` rule had put unpicked marks back to grey at 55%, undoing the key. */
 .kind-chips .chip svg { stroke: var(--cat, currentColor); opacity: 1; }

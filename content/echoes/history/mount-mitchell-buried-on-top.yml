@@ -1,0 +1,121 @@
+id: mount-mitchell-buried-on-top
+title: "He died settling the height of this mountain"
+summary: "Elisha Mitchell died in 1857 trying to settle whether this was the highest peak in the east. It was."
+place: Mount Mitchell, North Carolina
+at: { lat: 35.7654, lng: -82.2651 }
+triggerRadiusKm: 4
+voice: IMlxLW3qgn0MWgfz7Vnh
+category: history
+format: short
+durationS: 68
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.88
+tags: [blue-ridge, north-carolina, appalachians, mountains]
+teaser: The highest ground east of the Mississippi is off to your left.
+script: |
+  Off to the left is the highest ground anywhere east of the Mississippi. Six thousand six hundred and eighty four feet.
+
+  It is named after Elisha Mitchell, a minister and a professor at the University of North Carolina. In eighteen thirty five he went up into the Black Mountains and measured one of the peaks at six thousand four hundred and seventy six feet, higher than Mount Washington in New Hampshire, which had been taken for the highest point in the range.
+
+  Not everybody accepted it. It was suggested that he had been mistaken, and had never measured the highest peak at all.
+
+  In June eighteen fifty seven he went back up, alone, partly to settle the question. He did not come down. Days later his body was found in deep water at the foot of a cliff about forty feet high. His watch had stopped.
+
+  Later surveys confirmed that this was indeed the highest point east of the Mississippi. The mountain that had been called Black Dome now carries his name.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Off to the left is the highest ground anywhere east of the Mississippi."
+    source: 1
+    quote: "with views now dominated by 6,684' Mount Mitchell, the highest peak east of the Mississippi"
+  - says: "Six thousand six hundred and eighty four feet."
+    source: 1
+    quote: "Mount Mitchell, at 6,684' the highest peak in the eastern United States"
+  - says: "It is named after Elisha Mitchell, a minister and a professor at the University of North Carolina."
+    source: 1
+    quote: "the mountain was renamed after Dr. Elisha Mitchell, a minister, scientist, and professor at the University of North Carolina"
+  - says: "In eighteen thirty five he went up into the Black Mountains and measured one of the peaks at six thousand four hundred and seventy six feet"
+    source: 2
+    quote: "These suggestions Dr. Mitchell wss the first to verily m 1835. Alter err amu- ous labours in a country naturally savage and at that time very little known, he found the height of one of \"the peaks to be 6,476 feet."
+  - says: "higher than Mount Washington in New Hampshire, which had been taken for the highest point in the range"
+    source: 2
+    quote: "ML Washington, in New Hampshire, hitherto considered the highest point of the Alle- ghanies, is 6,423 feet high."
+  - says: "It was suggested that he had been mistaken, and had never measured the highest peak at all."
+    source: 2
+    quote: "It has been ttugteii lately that Dr. Mitchell was uiitaken, and that he ner measured the highest beak."
+  - says: "In June eighteen fifty seven he went back up, alone, partly to settle the question."
+    source: 1
+    quote: "who fell to his death on 27 June 1857 while trying to determine the peak's elevation"
+  - says: "he went back up, alone"
+    source: 2
+    quote: "He started logo alone"
+  - says: "Days later his body was found in deep water at the foot of a cliff about forty feet high."
+    source: 2
+    quote: "the base of a cliff about 40 leet hig't, tiown which he had evidently fallen."
+  - says: "His watch had stopped."
+    source: 2
+    quote: "His watch stopped at 20 minutes before 8"
+  - says: "Later surveys confirmed that this was indeed the highest point east of the Mississippi."
+    source: 1
+    quote: "Once surveys by Arnold Guyot confirmed the mountain was indeed the highest point east of the Mississippi River"
+  - says: "The mountain that had been called Black Dome now carries his name."
+    source: 1
+    quote: "Originally known as \"Black Dome,\" the mountain was renamed after Dr. Elisha Mitchell"
+sources:
+  - title: "Blue Ridge Parkway (HAER NC-42), written historical and descriptive data"
+    publisher: "Historic American Engineering Record, Library of Congress"
+    url: https://www.loc.gov/item/nc0478/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Hillsborough recorder, July 29, 1857, page 2: The late Professor Mitchell (from the Chapel Hill Gazette)"
+    publisher: "Chronicling America, Library of Congress"
+    url: https://www.loc.gov/resource/sn84026472/1857-07-29/ed-1/?sp=2
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/mount-mitchell-buried-on-top/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 67.5
+    audioBytes: 1081303
+    transcript:
+      totalS: 67.5
+      lines:
+        - text: Off to the left is the highest ground anywhere east of the Mississippi.
+          atS: 0
+          durationS: 3.91
+        - text: Six thousand six hundred and eighty four feet.
+          atS: 4.24
+          durationS: 3.11
+        - text: It is named after Elisha Mitchell, a minister and a professor at the University of North Carolina.
+          atS: 7.86
+          durationS: 6.35
+        - text: In eighteen thirty five he went up into the Black Mountains and measured one of the peaks at six thousand four hundred and seventy six feet, higher than Mount Washington in New Hampshire, which had been taken for the highest point in the range.
+          atS: 14.59
+          durationS: 14.71
+        - text: Not everybody accepted it.
+          atS: 29.91
+          durationS: 1.72
+        - text: It was suggested that he had been mistaken, and had never measured the highest peak at all.
+          atS: 32.23
+          durationS: 5.9
+        - text: In June eighteen fifty seven he went back up, alone, partly to settle the question.
+          atS: 38.73
+          durationS: 5.86
+        - text: He did not come down.
+          atS: 44.98
+          durationS: 1.51
+        - text: Days later his body was found in deep water at the foot of a cliff about forty feet high.
+          atS: 47.3
+          durationS: 6
+        - text: His watch had stopped.
+          atS: 53.91
+          durationS: 1.67
+        - text: Later surveys confirmed that this was indeed the highest point east of the Mississippi.
+          atS: 56.53
+          durationS: 5.76
+        - text: The mountain that had been called Black Dome now carries his name.
+          atS: 63.59
+          durationS: 3.94

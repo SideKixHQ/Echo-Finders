@@ -8,6 +8,8 @@ place: "Boston Massacre site, cobblestone circle below the Old State House balco
 at: { lat: 42.35877, lng: -71.05717 }
 triggerRadiusKm: 0.04
 category: history
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 97
 visibility: at-hand

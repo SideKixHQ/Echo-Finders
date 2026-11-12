@@ -1,0 +1,75 @@
+# Batch 2 for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Wikidata Q141896353 (Fort Fisher Visitor Center), a few metres off so it does not sit on top of the Richmond echo (high confidence for the building).
+id: fort-fisher-medals-never-handed-over
+title: "Medals Never Handed Over"
+summary: "Seventy-two soldiers, sailors and Marines received the Medal of Honor for Fort Fisher, and five medals were never presented."
+place: "Fort Fisher Visitor Center, Kure Beach, North Carolina"
+at: { lat: 33.9721, lng: -77.9176 }
+triggerRadiusKm: 0.06
+category: military
+format: look-below
+durationS: 32
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [fort-fisher, kure-beach, civil-war, military]
+teaser: "Seventy-two Medals of Honor were earned here. Some were never given to the men."
+script: |
+  Stand by the visitor center and count to seventy-two.
+
+  That is how many soldiers, sailors and Marines received the Medal of Honor for what they did
+  at Fort Fisher, between June 1864 and January 1865.
+
+  For the hundred and fifty-first anniversary of the battle, the site put five of those medals
+  on display, on loan from the Navy. None of the five had ever been presented to the man who
+  earned it.
+
+  They were made, and kept. The hands they were for never held them.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Stand by the visitor center and count to seventy-two."
+    source: 1
+    quote: "highlights the 72 soldiers, sailors, and Marines who received the Medal of Honor"
+  - says: "That is how many soldiers, sailors and Marines received the Medal of Honor for what they did at Fort Fisher, between June 1864 and January 1865."
+    source: 1
+    quote: "highlights the 72 soldiers, sailors, and Marines who received the Medal of Honor for their actions at Fort Fisher near the end of the Civil War, from June 1864 to January 1865."
+  - says: "For the hundred and fifty-first anniversary of the battle, the site put five of those medals on display, on loan from the Navy."
+    source: 1
+    quote: "Although never presented to their recipients, five Medals of Honor on loan from the U.S. Navy will be among the articles featured in the exhibit."
+  - says: "None of the five had ever been presented to the man who earned it."
+    source: 1
+    quote: "Although never presented to their recipients, five Medals of Honor on loan from the U.S. Navy will be among the articles featured in the exhibit."
+sources:
+  - title: "Fort Fisher's 151st Anniversary Commemoration Pays Tribute to Medal of Honor Recipients"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/articles/post/fort-fishers-151st-anniversary-commemoration-pays-tribute-to-medal-of-honor-recipients/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/fort-fisher-medals-never-handed-over/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 32.2
+    audioBytes: 516640
+    transcript:
+      totalS: 32.2
+      lines:
+        - text: Stand by the visitor center and count to seventy-two.
+          atS: 0
+          durationS: 3.29
+        - text: That is how many soldiers, sailors and Marines received the Medal of Honor for what they did at Fort Fisher, between June 1864 and January 1865.
+          atS: 3.46
+          durationS: 10.47
+        - text: For the hundred and fifty-first anniversary of the battle, the site put five of those medals on display, on loan from the Navy.
+          atS: 14.74
+          durationS: 7.85
+        - text: None of the five had ever been presented to the man who earned it.
+          atS: 23.1
+          durationS: 3.49
+        - text: They were made, and kept.
+          atS: 26.98
+          durationS: 1.79
+        - text: The hands they were for never held them.
+          atS: 29.21
+          durationS: 3.02

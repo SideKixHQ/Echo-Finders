@@ -1,0 +1,117 @@
+# Drafted by Claude Code (2026-10-14) for the Washington DC core.
+# Listening spot: The open stone surface of Freedom Plaza, Pennsylvania Avenue between 13th and 14th Streets NW.
+# Position: Centre of the plaza; Overture's Freedom Plaza entry (38.89584, -77.03072) sits between 13th and 14th Streets as the NPS page describes, nudged west towards the middle of the inlaid plan (high confidence).
+id: dc-the-map-underfoot
+title: "The Map Underfoot"
+summary: "Freedom Plaza is paved with L'Enfant's plan of Washington. You can stand on the White House."
+place: "Freedom Plaza, Pennsylvania Avenue NW between 13th and 14th Streets, Washington, D.C."
+at: { lat: 38.89588, lng: -77.03085 }
+triggerRadiusKm: 0.06
+category: wonders
+format: short
+durationS: 48
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, pennsylvania-avenue, lenfant]
+teaser: "Look down. You are standing on a map."
+script: |
+  Look down. You are standing on a map.
+
+  The dark lines in the stone are streets and avenues. The curving edge is the shoreline of
+  the Potomac. Bronze plaques set into the pavement mark the places that matter.
+
+  It is the plan Pierre L'Enfant drew for this city in seventeen ninety-one. It was laid into
+  the stone of this plaza when the plaza opened in nineteen eighty.
+
+  Find Pennsylvania Avenue on the map. Follow it to the Capitol at one end, and the
+  President's house at the other.
+
+  Now look up. The plaza was built so that you can see the Capitol in one direction, and
+  the White House in the other.
+
+  The map is the promise. Lift your eyes, and you are standing in the city it turned into.
+editorial: approved
+factCheck: corroborated
+pronunciations:
+  - written: L'Enfant
+    say: lahn-FAHN
+claims:
+  - says: "The dark lines in the stone are streets and avenues."
+    source: 1
+    quote: "Streets, avenues, and the Potomac shoreline are marked in black granite"
+  - says: "The curving edge is the shoreline of the Potomac."
+    source: 1
+    quote: "Streets, avenues, and the Potomac shoreline are marked in black granite"
+  - says: "Bronze plaques set into the pavement mark the places that matter."
+    source: 1
+    quote: "Bronze plaques set into the pavement highlight key sites and historical references"
+  - says: "It is the plan Pierre L'Enfant drew for this city in seventeen ninety-one."
+    source: 1
+    quote: "Its most striking feature is its broad granite and marble surface inlaid with a giant, map-like representation of Pierre L’Enfant’s 1791 plan for the city of Washington."
+  - says: "It was laid into the stone of this plaza when the plaza opened in nineteen eighty."
+    source: 1
+    quote: "Completed in 1980 and originally named Western Plaza"
+  - says: "Find Pennsylvania Avenue on the map."
+    source: 1
+    quote: "Freedom Plaza, located along Pennsylvania Avenue NW between 13th and 14th Streets"
+  - says: "Follow it to the Capitol at one end, and the President's house at the other."
+    source: 1
+    quote: "frame views toward the U.S. Capitol in one direction and the White House in the other"
+  - says: "The plaza was built so that you can see the Capitol in one direction, and the White House in the other."
+    source: 1
+    quote: "Freedom Plaza includes raised terraces, low stone seating walls, and planters that frame views toward the U.S. Capitol in one direction and the White House in the other."
+sources:
+  - title: "Freedom Plaza"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/000/freedom-plaza.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-map-underfoot/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 47.9
+    audioBytes: 767834
+    transcript:
+      totalS: 47.9
+      lines:
+        - text: Look down.
+          atS: 0
+          durationS: 0.86
+        - text: You are standing on a map.
+          atS: 1.3
+          durationS: 1.43
+        - text: The dark lines in the stone are streets and avenues.
+          atS: 3.54
+          durationS: 3.45
+        - text: The curving edge is the shoreline of the Potomac.
+          atS: 7.31
+          durationS: 3.12
+        - text: Bronze plaques set into the pavement mark the places that matter.
+          atS: 11.04
+          durationS: 4.14
+        - text: It is the plan Pierre L'Enfant drew for this city in seventeen ninety-one.
+          atS: 15.79
+          durationS: 4.95
+        - text: It was laid into the stone of this plaza when the plaza opened in nineteen eighty.
+          atS: 21.18
+          durationS: 5.1
+        - text: Find Pennsylvania Avenue on the map.
+          atS: 26.88
+          durationS: 2.46
+        - text: Follow it to the Capitol at one end, and the President's house at the other.
+          atS: 29.72
+          durationS: 3.9
+        - text: Now look up.
+          atS: 34.23
+          durationS: 1.05
+        - text: The plaza was built so that you can see the Capitol in one direction, and the White House in the other.
+          atS: 35.65
+          durationS: 5.41
+        - text: The map is the promise.
+          atS: 41.67
+          durationS: 1.58
+        - text: Lift your eyes, and you are standing in the city it turned into.
+          atS: 43.85
+          durationS: 4.08

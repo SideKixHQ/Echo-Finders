@@ -1,0 +1,136 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core.
+# Listening spot: Dilworth Park, the open public plaza on the west side of City Hall, with the tower and the statue overhead and the western skyline behind.
+# Position: Overture "Wintergarden at Dilworth Park" (39.95266, -75.16480) and "Dilworth Park" (39.95305, -75.16470), cross-checked against "Philadelphia City Hall" (39.95241, -75.16363); placed on the plaza west of the building (high confidence).
+id: philadelphia-penn-on-the-tower
+title: "The Man on the Tower"
+summary: "William Penn stands on top of City Hall. For most of a century nothing in the city stood higher."
+place: "City Hall tower, Dilworth Park, Philadelphia, Pennsylvania"
+at: { lat: 39.95255, lng: -75.16475 }
+triggerRadiusKm: 0.06
+category: wonders
+format: short
+durationS: 62
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, center-city, city-hall, skyline, sculpture]
+teaser: "Look all the way up the tower. There is a man standing on top."
+script: |
+  Look straight up the tower in front of you, past the clock, to the very top. There is a man standing up there.
+
+  He is William Penn, the founder of Pennsylvania and the planner of this city. From down here he looks about life size. He is thirty-seven feet tall, and he weighs more than fifty-three thousand pounds of bronze.
+
+  The last piece to go up was his head. It was set on his shoulders on the twenty-eighth of November, eighteen ninety-four, and the statue was complete.
+
+  The tower under him rises five hundred and forty-eight feet. Until nineteen oh nine it was the highest occupied building in the United States.
+
+  In the autumn of nineteen eighty-one, historians wrote this building up for the federal survey of American architecture. They wrote that no other building in the city exceeds its height.
+
+  Now turn around, and look at the skyline to the west.
+
+  Count the towers standing higher than Penn's hat.
+
+  All of them went up after that was written.
+pronunciations:
+  - written: Dilworth Park
+    say: DIL-wurth Park
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "He is William Penn, the founder of Pennsylvania and the planner of this city."
+    source: 3
+    quote: "famously topped by a statue of William Penn, known locally simply as \"Billy Penn,\" founder of the English North American colony of Pennsylvania and the lead planner of Philadelphia"
+  - says: "He is thirty-seven feet tall, and he weighs more than fifty-three thousand pounds"
+    source: 1
+    quote: "His greatest achievement, the Penn statue, stands 37 feet tall atop City Hall tower and weighs 53,348 pounds."
+  - says: "pounds of bronze"
+    source: 2
+    quote: "The bronze statue, by Alexander Milne Calder, was installed in 1894"
+  - says: "The last piece to go up was his head."
+    source: 1
+    quote: "Head placed on the bronze stat/ae of William Penn on the tower, 28 November 1894; this completed the erection of the statue."
+  - says: "It was set on his shoulders on the twenty-eighth of November, eighteen ninety-four, and the statue was complete."
+    source: 1
+    quote: "Head placed on the bronze stat/ae of William Penn on the tower, 28 November 1894; this completed the erection of the statue."
+  - says: "The tower under him rises five hundred and forty-eight feet."
+    source: 1
+    quote: "the City Hall tower rising 548 feet from the ground and 571 feet from its foundation"
+  - says: "Until nineteen oh nine it was the highest occupied building in the United States."
+    source: 1
+    quote: "Philadelphia's City Hall stood as the highest occupied structure in the United States until 1909"
+  - says: "In the autumn of nineteen eighty-one, historians wrote this building up for the federal survey of American architecture."
+    source: 1
+    quote: "16 November 1981"
+  - says: "They wrote that no other building in the city exceeds its height."
+    source: 1
+    quote: "Architecturally, City Hall dominates Philadelphia: no other building in the city has its exuberance of design or exceeds its height."
+  - says: "Count the towers standing higher than Penn's hat."
+    source: 1
+    quote: "a huge bronze statue of William Penn, also by Calder, crowns the tower"
+sources:
+  - title: "The New Public Buildings, Penn Square, Broad and Market Streets, Philadelphia (HABS PA-1530), written historical and descriptive data, prepared 16 November 1981"
+    publisher: "Historic American Buildings Survey, Library of Congress"
+    url: https://www.loc.gov/item/pa1054/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "Street-level view of Philadelphia, Pennsylvania's, iconic City Hall, above which stands perhaps the city's best-known landmark, a statue of Pennsylvania founder and Philadelphia planner William Penn"
+    publisher: "Carol M. Highsmith Archive, Library of Congress"
+    url: https://www.loc.gov/item/2019689257/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+  - title: "View of Philadelphia, Pennsylvania's, City Hall, famously topped by a statue of William Penn"
+    publisher: "Carol M. Highsmith Archive, Library of Congress"
+    url: https://www.loc.gov/item/2019689061/
+    retrievedAt: "2026-10-14"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-penn-on-the-tower/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 62.3
+    audioBytes: 997293
+    transcript:
+      totalS: 62.3
+      lines:
+        - text: Look straight up the tower in front of you, past the clock, to the very top.
+          atS: 0
+          durationS: 4.2
+        - text: There is a man standing up there.
+          atS: 4.38
+          durationS: 1.88
+        - text: He is William Penn, the founder of Pennsylvania and the planner of this city.
+          atS: 6.47
+          durationS: 4.61
+        - text: From down here he looks about life size.
+          atS: 11.4
+          durationS: 2.75
+        - text: He is thirty-seven feet tall, and he weighs more than fifty-three thousand pounds of bronze.
+          atS: 14.4
+          durationS: 5.63
+        - text: The last piece to go up was his head.
+          atS: 20.31
+          durationS: 2.4
+        - text: It was set on his shoulders on the twenty-eighth of November, eighteen ninety-four, and the statue was complete.
+          atS: 22.99
+          durationS: 6.72
+        - text: The tower under him rises five hundred and forty-eight feet.
+          atS: 30.04
+          durationS: 3.65
+        - text: Until nineteen oh nine it was the highest occupied building in the United States.
+          atS: 34.01
+          durationS: 4.93
+        - text: In the autumn of nineteen eighty-one, historians wrote this building up for the federal survey of American architecture.
+          atS: 39.27
+          durationS: 7
+        - text: They wrote that no other building in the city exceeds its height.
+          atS: 46.96
+          durationS: 3.91
+        - text: Now turn around, and look at the skyline to the west.
+          atS: 51.48
+          durationS: 3.74
+        - text: Count the towers standing higher than Penn's hat.
+          atS: 55.91
+          durationS: 3.05
+        - text: All of them went up after that was written.
+          atS: 59.66
+          durationS: 2.61

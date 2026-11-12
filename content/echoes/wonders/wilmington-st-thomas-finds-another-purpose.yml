@@ -1,0 +1,92 @@
+# From W088 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public Dock Street sidewalk; venue interior requires an authorized tour or event.
+# Position: HMDB St. Thomas the Apostle Church marker 34 14.055N 77 56.803W; listing lat 34.23413; Dock St south sidewalk east of DeRosset House (high confidence).
+id: wilmington-st-thomas-finds-another-purpose
+title: "St. Thomas Finds Another Purpose"
+summary: "St. Thomas Preservation Hall describes its building as a former Catholic church constructed in 1847."
+place: "St. Thomas Preservation Hall, 208 Dock Street, Wilmington, North Carolina"
+at: { lat: 34.23430, lng: -77.94672 }
+triggerRadiusKm: 0.04
+category: wonders
+format: short
+durationS: 56
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "St. Thomas Preservation Hall describes its building as a former Catholic church constructed in 1847."
+script: |
+  St. Thomas Preservation Hall describes its building as a former Catholic church
+  constructed in 1847. Today it is used as an event venue.
+
+  The change illustrates a practical route to preservation: keep an old structure useful
+  while allowing its role to evolve.
+
+  The original worship setting and the present venue are different chapters. Neither
+  requires us to pretend that every surface or furnishing stayed unchanged.
+
+  Listen from Dock Street unless you have permission to enter. A building's public history
+  does not make a private event open to everyone.
+
+  From outside, the survival is clear. The old structure remains part of downtown instead
+  of becoming an empty lot. A new purpose supplies the reason to maintain it, while the
+  name and building keep its earlier identity in view.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "St. Thomas Preservation Hall describes its building as a former Catholic church constructed in 1847."
+    source: 1
+    quote: "Formerly a Catholic church, Saint Thomas Preservation Hall is a beautifully-restored 1847 -built building listed in the National Historic Register."
+sources:
+  - title: "Stthomaspreservationhall.com"
+    publisher: "St. Thomas Preservation Hall"
+    url: https://www.stthomaspreservationhall.com/
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+  - title: "Contact"
+    publisher: "St. Thomas Preservation Hall"
+    url: https://www.stthomaspreservationhall.com/contact
+    retrievedAt: "2026-10-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-st-thomas-finds-another-purpose/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.7
+    audioBytes: 891967
+    transcript:
+      totalS: 55.7
+      lines:
+        - text: St.
+          atS: 0
+          durationS: 0.41
+        - text: Thomas Preservation Hall describes its building as a former Catholic church constructed in 1847.
+          atS: 0.43
+          durationS: 6.98
+        - text: Today it is used as an event venue.
+          atS: 7.85
+          durationS: 2.81
+        - text: "The change illustrates a practical route to preservation: keep an old structure useful while allowing its role to evolve."
+          atS: 10.94
+          durationS: 7.8
+        - text: The original worship setting and the present venue are different chapters.
+          atS: 19.69
+          durationS: 4.36
+        - text: Neither requires us to pretend that every surface or furnishing stayed unchanged.
+          atS: 24.66
+          durationS: 5.41
+        - text: Listen from Dock Street unless you have permission to enter.
+          atS: 30.88
+          durationS: 3.46
+        - text: A building's public history does not make a private event open to everyone.
+          atS: 35.15
+          durationS: 4.75
+        - text: From outside, the survival is clear.
+          atS: 40.51
+          durationS: 2.41
+        - text: The old structure remains part of downtown instead of becoming an empty lot.
+          atS: 43.36
+          durationS: 4.81
+        - text: A new purpose supplies the reason to maintain it, while the name and building keep its earlier identity in view.
+          atS: 48.87
+          durationS: 6.81

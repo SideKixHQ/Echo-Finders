@@ -7,6 +7,8 @@ place: "Kure Beach oceanfront, North Carolina"
 at: { lat: 33.997777, lng: -77.908055 }
 triggerRadiusKm: 0.15
 category: unsolved
+rare: rare
+rareReason: "Only at certain times"
 format: short
 durationS: 50
 visibility: at-hand

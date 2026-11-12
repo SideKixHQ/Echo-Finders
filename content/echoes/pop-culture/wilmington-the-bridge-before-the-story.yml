@@ -1,0 +1,84 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Between the Overture address points for 505 Hanover St and 705 N 6th St; the source gives 694 N. Sixth St., which has no point of its own (medium confidence).
+id: wilmington-the-bridge-before-the-story
+title: "The Bridge Before Tree Hill"
+summary: "The Harry Forden Bridge is the one-lane truss bridge from the opening of One Tree Hill."
+place: "Harry Forden Bridge, North Sixth Street, Wilmington, North Carolina"
+at: { lat: 34.2437, lng: -77.9431 }
+triggerRadiusKm: 0.05
+category: pop-culture
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 39
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, one-tree-hill, downtown]
+teaser: "A boy, a basketball and this bridge. Four seasons began here."
+script: |
+  Look at the steel trusses over the street. Fans call this the One Tree Hill Bridge.
+
+  It is a one-lane metal truss bridge, and for the first four seasons it opened the show: Chad
+  Michael Murray in a gray hoodie, bouncing a basketball across it.
+
+  That was the first thing viewers saw of a town called Tree Hill. The town was
+  fictional. The bridge was real, and it is in front of you.
+
+  Between 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area.
+  Each of them depended on real places standing in for imaginary ones.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "That was the first thing viewers saw of a town called Tree Hill."
+    source: 1
+    quote: "This one-lane metal truss bridge appears in the show's opening sequence in seasons 1-4"
+  - says: "Fans call this the One Tree Hill Bridge."
+    source: 1
+    quote: "also known as the One Tree Hill Bridge"
+  - says: "It is a one-lane metal truss bridge, and for the first four seasons it opened the show: Chad Michael Murray in a gray hoodie, bouncing a basketball across it."
+    source: 1
+    quote: "This one-lane metal truss bridge appears in the show's opening sequence in seasons 1-4 where Chad Michael Murray wears a gray hoodie and bounces a basketball across the bridge."
+  - says: "Between 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area."
+    source: 1
+    quote: "Between 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area."
+sources:
+  - title: "One Tree Hill Tour"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-bridge-before-the-story/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 39.3
+    audioBytes: 630325
+    transcript:
+      totalS: 39.3
+      lines:
+        - text: Look at the steel trusses over the street.
+          atS: 0
+          durationS: 2.32
+        - text: Fans call this the One Tree Hill Bridge.
+          atS: 2.6
+          durationS: 2.91
+        - text: "It is a one-lane metal truss bridge, and for the first four seasons it opened the show: Chad Michael Murray in a gray hoodie, bouncing a basketball across it."
+          atS: 6.03
+          durationS: 10.33
+        - text: That was the first thing viewers saw of a town called Tree Hill.
+          atS: 16.96
+          durationS: 3.59
+        - text: The town was fictional.
+          atS: 20.87
+          durationS: 1.34
+        - text: The bridge was real, and it is in front of you.
+          atS: 22.33
+          durationS: 2.65
+        - text: Between 2003 and 2012, 288 episodes spanning nine seasons were filmed in the Wilmington area.
+          atS: 26.27
+          durationS: 8.13
+        - text: Each of them depended on real places standing in for imaginary ones.
+          atS: 35.1
+          durationS: 4.24

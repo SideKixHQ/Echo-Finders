@@ -9,6 +9,8 @@ place: "Latimer House, 126 South Third Street, Wilmington, North Carolina"
 at: { lat: 34.23359, lng: -77.94599 }
 triggerRadiusKm: 0.04
 category: arts
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 52
 visibility: at-hand

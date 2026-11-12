@@ -8,6 +8,8 @@ place: "Adams Memorial, Rock Creek Cemetery, Rock Creek Church Road NW, Petworth
 at: { lat: 38.94738, lng: -77.01031 }
 triggerRadiusKm: 0.03
 category: arts
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 76
 visibility: at-hand

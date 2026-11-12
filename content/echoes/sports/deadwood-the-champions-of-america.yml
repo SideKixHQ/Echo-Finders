@@ -1,0 +1,107 @@
+# Drafted by Claude Code (2026-11-09) for Deadwood, South Dakota.
+# Listening spot: Main Street sidewalk, looking along the street.
+# Position: About 200 m along Main Street from Wikidata Q5245750 (Deadwood Historic District, 44.371944, -103.733333) (medium-low confidence).
+id: deadwood-the-champions-of-america
+title: "The Champions of America"
+summary: "On July 4, 1888, the only two Chinese hose teams in the United States raced down Deadwood's main street."
+place: "Main Street, Deadwood, South Dakota"
+at: { lat: 44.3733, lng: -103.7312 }
+triggerRadiusKm: 0.1
+category: sports
+format: short
+durationS: 39
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [deadwood, chinese-american, fourth-of-july, old-west]
+teaser: "On the Fourth of July, 1888, the crowd lined this street to watch a race."
+script: |
+  Look along this street and picture both sides of it packed with people.
+
+  On the Fourth of July, 1888, Deadwood held a hub and hub race.
+
+  Two small teams of runners pulled a hose and wagon down the main street as fast as they could.
+
+  Both teams were Chinese. The photographer's caption says they were the only two Chinese hose teams in the United States.
+
+  The winners posed afterwards, twelve men in uniform.
+
+  The caption calls them the champion Chinese Hose Team of America.
+
+  The pictures were made by John Grabill.
+
+  On the Fourth of July in Deadwood, the champions of America were Chinese.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "On the Fourth of July, 1888, Deadwood held a hub and hub race."
+    source: 1
+    quote: "The Race. The great Hub-and-Hub race at Deadwood, Dak., July 4, 1888"
+  - says: "Two small teams of runners pulled a hose and wagon down the main street as fast as they could."
+    source: 1
+    quote: "Two small teams of Chinese runners pulling a hose and wagon, racing down main street; large crowds of spectators line both sides of street."
+  - says: "Both teams were Chinese."
+    source: 1
+    quote: "Two small teams of Chinese runners pulling a hose and wagon"
+  - says: "The photographer's caption says they were the only two Chinese hose teams in the United States."
+    source: 1
+    quote: "between the only two Chinese hose teams in the United States"
+  - says: "The winners posed afterwards, twelve men in uniform."
+    source: 2
+    quote: "Twelve member team of Chinese"
+  - says: "The caption calls them the champion Chinese Hose Team of America."
+    source: 2
+    quote: "The champion Chinese Hose Team of America, who won the great Hub-and-Hub race at Deadwood, Dak., July 4th, 1888"
+  - says: "The pictures were made by John Grabill."
+    source: 2
+    quote: "Grabill, John C. H., photographer"
+  - says: "On the Fourth of July in Deadwood, the champions of America were Chinese."
+    source: 2
+    quote: "The champion Chinese Hose Team of America, who won the great Hub-and-Hub race at Deadwood, Dak., July 4th, 1888"
+sources:
+  - title: "The Race. The great Hub-and-Hub race at Deadwood, Dak., July 4, 1888"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/ppmsc.02678/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Hose team. The champion Chinese Hose Team of America"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/ppmsc.02679/
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/deadwood-the-champions-of-america/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 39
+    audioBytes: 624474
+    transcript:
+      totalS: 39
+      lines:
+        - text: Look along this street and picture both sides of it packed with people.
+          atS: 0
+          durationS: 4.06
+        - text: On the Fourth of July, 1888, Deadwood held a hub and hub race.
+          atS: 4.57
+          durationS: 4.97
+        - text: Two small teams of runners pulled a hose and wagon down the main street as fast as they could.
+          atS: 9.98
+          durationS: 5.43
+        - text: Both teams were Chinese.
+          atS: 15.86
+          durationS: 1.69
+        - text: The photographer's caption says they were the only two Chinese hose teams in the United States.
+          atS: 17.76
+          durationS: 5.49
+        - text: The winners posed afterwards, twelve men in uniform.
+          atS: 23.5
+          durationS: 3.74
+        - text: The caption calls them the champion Chinese Hose Team of America.
+          atS: 27.45
+          durationS: 4.17
+        - text: The pictures were made by John Grabill.
+          atS: 31.89
+          durationS: 2.18
+        - text: On the Fourth of July in Deadwood, the champions of America were Chinese.
+          atS: 34.46
+          durationS: 4.51

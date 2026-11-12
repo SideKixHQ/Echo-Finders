@@ -8,6 +8,8 @@ place: "White Point Garden, Charleston, South Carolina"
 at: { lat: 32.76992, lng: -79.93035 }
 triggerRadiusKm: 0.08
 category: history
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 88
 visibility: at-hand

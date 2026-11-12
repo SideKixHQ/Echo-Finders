@@ -1,0 +1,196 @@
+# Drafted by Claude Code (2026-11-11) for Houston, Downtown: people. Second pass.
+# Listening spot: the corner of Travis Street and Rusk, outside the Niels Esperson Building, 808 Travis Street, built by Mellie Esperson as a memorial to her husband and opened in 1927 (Handbook of Texas; Houston Chronicle, 1950 article republished 2017). The Mellie Esperson Building adjoins it on Walker.
+# Position: Overture places at 808 Travis St cluster at 29.75876 to 29.75906, -95.36481 to -95.36545; spot 29.75885, -95.36500 (high confidence for the building). About 250 m from the Capitol echo.
+id: houston-his-name-on-the-tower
+title: "His Name on the Tower"
+summary: "Mellie Esperson built Texas's tallest tower as a memorial to her husband, and ran her business from it. The one beside it has her name."
+place: "Niels Esperson Building, 808 Travis Street at Rusk, Downtown Houston, Texas"
+at: { lat: 29.75885, lng: -95.36500 }
+triggerRadiusKm: 0.05
+category: business
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [houston, downtown, esperson-building, mellie-esperson, skyscrapers, women-in-business, oil]
+teaser: "It was built for a man who never saw it. His widow worked in it for twenty years."
+script: |
+  Look up, all the way up, at the top of the tower on this corner. A ring of columns, gold leaf, a little temple in the sky.
+
+  It was built for a man who never saw it.
+
+  Niels Esperson came from Denmark. He and his wife, Mellie, moved to Houston in nineteen oh three. He made his fortune in the Humble oilfield and in real estate. He owned this corner, and he meant to build on it.
+
+  In the early nineteen twenties he died, and left her a fortune.
+
+  He had left no plans for the building. So Mellie went to Europe herself, for ideas on stone and materials, and hired the architect John Eberson to design what she meant as a memorial to her husband. Thirty two storeys, Italian Renaissance. When it opened in nineteen twenty seven, it was the tallest building in Texas. She gave it his name.
+
+  Then she went to work in it. From a suite on the twenty fifth floor, for some twenty years, she ran her oil business, her rice farms and her real estate. She kept at it after she lost her sight.
+
+  Fourteen years after his tower, she built a second one, joined to it, on Walker. Nineteen storeys. The first skyscraper in Houston built with central air conditioning.
+
+  That one carries her name.
+
+  Look up at the gold again.
+
+  His name is on the tower. Hers is on the one beside it, holding on.
+
+pronunciations:
+  - written: Esperson
+    say: ESS-per-son
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look up, all the way up, at the top of the tower on this corner."
+    source: 2
+    quote: "40-foot terra cotta Corinthian columns support a circular cupola on the roof, ornamented with gold leaf and surmounted with an air beacon visible for many miles."
+  - says: "Look up, all the way up, at the top of the tower on this corner."
+    source: 1
+    quote: "The Italian Renaissance building features a gold-leaf tower topped by an elaborate six-story tiered monument."
+  - says: "It was built for a man who never saw it."
+    source: 1
+    quote: "In 1924 Esperson initiated plans for an office building that her husband had envisioned for property he owned in downtown Houston."
+  - says: "Niels Esperson came from Denmark."
+    source: 1
+    quote: "Niels Esperson, a native of Denmark"
+  - says: "He and his wife, Mellie, moved to Houston in nineteen oh three."
+    source: 1
+    quote: "In 1903 they moved to Houston, where Mellie learned the intricate dealings of the oil business while her husband became a pioneer developer of the Humble oilfield ."
+  - says: "He made his fortune in the Humble oilfield and in real estate."
+    source: 2
+    quote: "erected as a monument to Niels Esperson, pioneer Houston real estate and oil capitalist, by his widow Mellie Esperson."
+  - says: "He owned this corner, and he meant to build on it."
+    source: 1
+    quote: "an office building that her husband had envisioned for property he owned in downtown Houston."
+  - says: "In the early nineteen twenties he died, and left her a fortune."
+    source: 1
+    quote: "When Niels Esperson died in 1922, he left his wife substantial commercial wealth"
+  - says: "In the early nineteen twenties he died, and left her a fortune."
+    source: 2
+    quote: "Mellie Keenan Esperson also was responsible for building the Majestic Theater on Rusk in 1922, a year after her husband died."
+  - says: "He had left no plans for the building."
+    source: 1
+    quote: "He had left no specific instructions for the building, so she traveled to Europe to gather ideas on materials and then again turned to architect Eberson to design what she intended as a memorial to her husband."
+  - says: "Thirty two storeys, Italian Renaissance."
+    source: 2
+    quote: "The 32-story office building was erected as a monument to Niels Esperson"
+  - says: "When it opened in nineteen twenty seven, it was the tallest building in Texas."
+    source: 1
+    quote: "The thirty-two story Niels Esperson Building at the corner of Travis and Rusk Avenue opened in 1927, the tallest structure in Texas at that time."
+  - says: "From a suite on the twenty fifth floor, for some twenty years, she ran her oil business, her rice farms and her real estate."
+    source: 1
+    quote: "For some twenty years she oversaw all of these efforts from her suite of offices on the twenty-fifth floor of the Niels Esperson Building"
+  - says: "From a suite on the twenty fifth floor, for some twenty years, she ran her oil business, her rice farms and her real estate."
+    source: 1
+    quote: "Her Liberty County interests included not only oil but rice farms."
+  - says: "She kept at it after she lost her sight."
+    source: 1
+    quote: "In her later years she continued her business work even after losing her eyesight."
+  - says: "Fourteen years after his tower, she built a second one, joined to it, on Walker."
+    source: 1
+    quote: "Fourteen years after this building opened, Mellie Esperson turned to John Eberson and his brother Drew to design an adjoining structure. The Mellie Esperson Building on Walker Avenue was completed in 1941"
+  - says: "Nineteen storeys."
+    source: 1
+    quote: "a nineteen-story structure similar in style to its larger neighbor."
+  - says: "The first skyscraper in Houston built with central air conditioning."
+    source: 1
+    quote: "the first skyscraper in Houston to be built with central air-conditioning ."
+  - says: "That one carries her name."
+    source: 2
+    quote: "A building bearing her name went up adjacent to the Niels Esperson Building in 1941."
+  - says: "So Mellie went to Europe herself, for ideas on stone and materials, and hired the architect John Eberson to design what she meant as a memorial to her husband."
+    source: 1
+    quote: "He had left no specific instructions for the building, so she traveled to Europe to gather ideas on materials and then again turned to architect Eberson to design what she intended as a memorial to her husband."
+  - says: "Hers is on the one beside it, holding on."
+    source: 2
+    quote: "A building bearing her name went up adjacent to the Niels Esperson Building in 1941."
+sources:
+  - title: "Esperson, Mellie Keenan (Debbie Mauldin Cottrell)"
+    publisher: "Handbook of Texas Online, Texas State Historical Association"
+    url: https://www.tshaonline.org/handbook/entries/esperson-mellie-keenan
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Birth of a skyline: Niels Esperson Building (first published 10 September 1950; republished 28 February 2017)"
+    publisher: "Houston Chronicle"
+    url: https://www.houstonchronicle.com/news/houston-texas/bayou-city-history/article/Birth-of-a-skyline-Niels-Esperson-Building-10966126.php
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/houston-his-name-on-the-tower/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 89.5
+    audioBytes: 1432807
+    transcript:
+      totalS: 89.5
+      lines:
+        - text: Look up, all the way up, at the top of the tower on this corner.
+          atS: 0
+          durationS: 3.97
+        - text: A ring of columns, gold leaf, a little temple in the sky.
+          atS: 4.41
+          durationS: 4.16
+        - text: It was built for a man who never saw it.
+          atS: 9.01
+          durationS: 2.28
+        - text: Niels Esperson came from Denmark.
+          atS: 12.4
+          durationS: 3.57
+        - text: He and his wife, Mellie, moved to Houston in nineteen oh three.
+          atS: 16.48
+          durationS: 3.78
+        - text: He made his fortune in the Humble oilfield and in real estate.
+          atS: 20.5
+          durationS: 3.7
+        - text: He owned this corner, and he meant to build on it.
+          atS: 24.45
+          durationS: 2.62
+        - text: In the early nineteen twenties he died, and left her a fortune.
+          atS: 27.4
+          durationS: 3.97
+        - text: He had left no plans for the building.
+          atS: 31.61
+          durationS: 1.97
+        - text: So Mellie went to Europe herself, for ideas on stone and materials, and hired the architect John Eberson to design what she meant as a memorial to her husband.
+          atS: 33.91
+          durationS: 10.17
+        - text: Thirty two storeys, Italian Renaissance.
+          atS: 44.59
+          durationS: 2.97
+        - text: When it opened in nineteen twenty seven, it was the tallest building in Texas.
+          atS: 48.08
+          durationS: 4.34
+        - text: She gave it his name.
+          atS: 52.74
+          durationS: 1.25
+        - text: Then she went to work in it.
+          atS: 54.32
+          durationS: 1.52
+        - text: From a suite on the twenty fifth floor, for some twenty years, she ran her oil business, her rice farms and her real estate.
+          atS: 56.23
+          durationS: 8.03
+        - text: She kept at it after she lost her sight.
+          atS: 64.59
+          durationS: 2.59
+        - text: Fourteen years after his tower, she built a second one, joined to it, on Walker.
+          atS: 68.48
+          durationS: 5.38
+        - text: Nineteen storeys.
+          atS: 74.36
+          durationS: 1.48
+        - text: The first skyscraper in Houston built with central air conditioning.
+          atS: 76.35
+          durationS: 4.16
+        - text: That one carries her name.
+          atS: 80.83
+          durationS: 1.65
+        - text: Look up at the gold again.
+          atS: 83.08
+          durationS: 1.49
+        - text: His name is on the tower.
+          atS: 84.95
+          durationS: 1.44
+        - text: Hers is on the one beside it, holding on.
+          atS: 86.83
+          durationS: 2.66

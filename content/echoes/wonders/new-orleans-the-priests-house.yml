@@ -1,0 +1,161 @@
+# Drafted by Claude Code (2026-10-14) for the New Orleans core.
+# Listening spot: Pedestrian Chartres Street in front of the Presbytère, facing its arcade.
+# Position: Grid offset from the Overture Jackson Square centre, checked against the Overture Presbytère point (751 Chartres St); the Presbytère stands right of the cathedral as you face it (medium confidence).
+id: new-orleans-the-priests-house
+title: "The Priests' House"
+summary: "The Presbytère was built as a home for the cathedral's clergy. It stalled for fifteen years, and no priest ever lived in it."
+place: "The Presbytère, Jackson Square, New Orleans, Louisiana"
+at: { lat: 29.95805, lng: -90.06317 }
+triggerRadiusKm: 0.04
+category: wonders
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, jackson-square, french-quarter, spanish-colonial, architecture]
+teaser: "It was built to be the priests' house. No priest ever lived in it."
+script: |
+  Look at the building to the right of the cathedral. It is a near twin of the Cabildo on the other side. Arches below, arches above.
+
+  It was built to be the priests' house. The name says so. The Presbytère.
+
+  No priest ever lived in it.
+
+  The rich Spaniard who paid for the cathedral started this building in the seventeen nineties, and got it as far as the first row of arches. Then, in seventeen ninety-eight, he died.
+
+  And it stopped. For years it was just the ground floor, roofed over with boards and rented out.
+
+  The church wardens finally finished it in eighteen thirteen. By then New Orleans belonged to the United States. They let it to shopkeepers, and then to the courts, because the rent was useful. The parish priest went on living in a small frame house round the back.
+
+  In the nineteen thirties, workmen stripped the stucco off the walls, and found the pause written in the brickwork. At the sills of the upper windows, the bricks and the mortar change completely.
+
+  Look at those upper window sills now. The join is covered again, but that line is about fifteen years of nothing.
+
+  The priests' house became a courthouse, and later a museum. It has been a lot of things.
+
+  It was never a home.
+pronunciations:
+  - written: Presbytère
+    say: PREZ-bih-tair
+  - written: Cabildo
+    say: kah-BEEL-doh
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It is a near twin of the Cabildo on the other side."
+    source: 2
+    quote: "Guillemard designed the Presbytere to match the Cabildo."
+  - says: "The Presbytère."
+    source: 1
+    quote: "The Presbytere obtained its name from being that part of the church reserved as a dwelling for the offi- ciating priests and it has retained this name, regardless of the fact that no priest ever lived in this house"
+  - says: "The rich Spaniard who paid for the cathedral started this building in the seventeen nineties, and got it as far as the first row of arches."
+    source: 1
+    quote: "It is however almost certain that Don Almonaster planned and started the construction of the building about 1795, and had raised it to the first arches when"
+  - says: "The rich Spaniard who paid for the cathedral started this building in the seventeen nineties, and got it as far as the first row of arches."
+    source: 1
+    quote: "Don Andres Almonaster y Roxas at his own ex- pense rebuilt St. Louis Cathedral"
+  - says: "Then, in seventeen ninety-eight, he died."
+    source: 1
+    quote: "the work was intercepted by his death. April 80, 1798."
+  - says: "The church wardens finally finished it in eighteen thirteen."
+    source: 2
+    quote: "The wardens of the St. Louis Cathedral finished the building in 1813."
+  - says: "By then New Orleans belonged to the United States."
+    source: 2
+    quote: "By that time, New Orleans had already been part of the United States for a decade."
+  - says: "In the nineteen thirties, workmen stripped the stucco off the walls, and found the pause written in the brickwork."
+    source: 1
+    quote: "was revealed in the brickwork, when the stucco was stripped off in the restoration work conducted by the C. W. A. in at 1934."
+  - says: "The join is covered again, but that line is about fifteen years of nothing."
+    source: 1
+    quote: "after the work was discontinued in 1798"
+  - says: "The join is covered again, but that line is about fifteen years of nothing."
+    source: 2
+    quote: "The wardens of the St. Louis Cathedral finished the building in 1813."
+sources:
+  - title: "Presbytere, Jackson Square, New Orleans (HABS LA-18-5), written historical and descriptive data"
+    publisher: "Historic American Buildings Survey, National Park Service; Library of Congress"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/la/la0000/la0008/data/la0008data.pdf
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "The Presbytere, New Orleans, Louisiana"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/the-presbytere-new-orleans-louisiana.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-priests-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 84.6
+    audioBytes: 1355066
+    transcript:
+      totalS: 84.6
+      lines:
+        - text: Look at the building to the right of the cathedral.
+          atS: 0
+          durationS: 2.54
+        - text: It is a near twin of the Cabildo on the other side.
+          atS: 2.93
+          durationS: 3.51
+        - text: Arches below, arches above.
+          atS: 6.87
+          durationS: 2.14
+        - text: It was built to be the priests' house.
+          atS: 9.29
+          durationS: 2.07
+        - text: The name says so.
+          atS: 11.51
+          durationS: 1.23
+        - text: The Presbytère.
+          atS: 13.02
+          durationS: 1.43
+        - text: No priest ever lived in it.
+          atS: 14.83
+          durationS: 1.6
+        - text: The rich Spaniard who paid for the cathedral started this building in the seventeen nineties, and got it as far as the first row of arches.
+          atS: 16.71
+          durationS: 8.47
+        - text: Then, in seventeen ninety-eight, he died.
+          atS: 25.69
+          durationS: 3.33
+        - text: And it stopped.
+          atS: 29.72
+          durationS: 1.18
+        - text: For years it was just the ground floor, roofed over with boards and rented out.
+          atS: 31.86
+          durationS: 5.06
+        - text: The church wardens finally finished it in eighteen thirteen.
+          atS: 37.52
+          durationS: 3.61
+        - text: By then New Orleans belonged to the United States.
+          atS: 41.83
+          durationS: 2.92
+        - text: They let it to shopkeepers, and then to the courts, because the rent was useful.
+          atS: 45.2
+          durationS: 4.52
+        - text: The parish priest went on living in a small frame house round the back.
+          atS: 50.23
+          durationS: 3.98
+        - text: In the nineteen thirties, workmen stripped the stucco off the walls, and found the pause written in the brickwork.
+          atS: 54.59
+          durationS: 6.79
+        - text: At the sills of the upper windows, the bricks and the mortar change completely.
+          atS: 62.08
+          durationS: 4.62
+        - text: Look at those upper window sills now.
+          atS: 67.4
+          durationS: 2.52
+        - text: The join is covered again, but that line is about fifteen years of nothing.
+          atS: 70.43
+          durationS: 4.82
+        - text: The priests' house became a courthouse, and later a museum.
+          atS: 76.36
+          durationS: 4.32
+        - text: It has been a lot of things.
+          atS: 81.28
+          durationS: 1.5
+        - text: It was never a home.
+          atS: 83.16
+          durationS: 1.45

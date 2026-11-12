@@ -8,6 +8,8 @@ place: "Site of the Up Stairs Lounge, Chartres and Iberville streets, New Orlean
 at: { lat: 29.95349, lng: -90.06745 }
 triggerRadiusKm: 0.03
 category: true-crime
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 71
 visibility: at-hand

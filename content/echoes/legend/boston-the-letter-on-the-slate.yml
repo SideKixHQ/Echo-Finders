@@ -8,6 +8,8 @@ place: "King's Chapel Burying Ground, Tremont Street, Boston, Massachusetts"
 at: { lat: 42.35822, lng: -71.0603 }
 triggerRadiusKm: 0.04
 category: legend
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 61
 visibility: at-hand

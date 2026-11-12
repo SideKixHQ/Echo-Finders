@@ -8,6 +8,8 @@ place: "Lands End, above Mile Rock Beach, Lands End Trail, San Francisco, Califo
 at: { lat: 37.7878, lng: -122.5055 }
 triggerRadiusKm: 0.12
 category: disasters
+rare: extra-rare
+rareReason: "Only at certain times"
 format: short
 durationS: 75
 visibility: at-hand

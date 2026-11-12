@@ -9,6 +9,8 @@ place: "Oldest House (Captain Francis Watlington House), 322 Duval Street, Key W
 at: { lat: 24.5578, lng: -81.8043 }
 triggerRadiusKm: 0.04
 category: legend
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 54
 visibility: at-hand

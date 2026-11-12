@@ -1,0 +1,175 @@
+# Drafted by Claude Code (2026-10-15) for the Charleston core.
+# Listening spot: Tradd Street between Church and Meeting streets, among the old brick and stucco house fronts south of Broad.
+# Position: Tradd Street centreline interpolated between Overture 38 Tradd St and 70 Tradd St (John Robert Pringle House); no single house is the subject, so the spot is a representative street (medium confidence).
+id: charleston-bolted-together
+title: "Bolted Together"
+summary: "After the 1886 earthquake Charleston bolted its buildings back together. When the ground shook again, the iron held."
+place: "Tradd Street, south of Broad, Charleston, South Carolina"
+at: { lat: 32.77482, lng: -79.93040 }
+triggerRadiusKm: 0.05
+category: wonders
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, south-of-broad, earthquake, architecture]
+teaser: "Look along the house fronts for iron on the outside of the walls."
+script: |
+  Look along the house fronts on this street for iron on the outside of the walls. A plate,
+  or the end of a bolt, up between the floors. Where you find one, it may be there because of one night.
+
+  At about ten o'clock on the thirty-first of August, eighteen eighty-six, an earthquake
+  hit Charleston. It came with a horrid roar. Walls
+  and chimneys came down into the streets. Overturned lamps started fires. It was said at
+  the time that more people were killed or hurt in those few seconds than the shelling of
+  the whole Civil War siege had managed.
+
+  In the months that followed, iron bolts and iron plates went into the cracked walls.
+
+  The test came on St. Patrick's Day, eighteen eighty-seven. At ten past nine in the
+  morning there was another violent shock, with the same underground roar. The buildings
+  seemed to be thrust forward and pulled back.
+
+  A report from Charleston that day said that most of the buildings in town had been made
+  earthquake-proof by iron bolts and plates, and that without them there would have been
+  serious damage. Unrepaired cracks widened. Windows rattled. Plaster fell.
+
+  The St. Patrick's Day celebrations were not interrupted. Somebody had done the
+  ironmongery.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Where you find one, it may be there because of one night."
+    source: 1
+    quote: "Most of the buildings in Charles ton have been rendered earthquake-proof by iron bolts and plates"
+  - says: "At about ten o'clock on the thirty-first of August, eighteen eighty-six, an earthquake hit Charleston."
+    source: 2
+    quote: "About ten o’clock on the night of August 31, 1886, was felt in Charleston the first of a series of shocks of earthquake"
+  - says: "It came with a horrid roar."
+    source: 2
+    quote: "the horrid roar of the earthquake"
+  - says: "Walls and chimneys came down into the streets."
+    source: 2
+    quote: "walls and chimneys were toppling and falling"
+  - says: "Overturned lamps started fires."
+    source: 2
+    quote: "Lamps had been overturned and broken in the deserted houses, and the oil from them bursting into flames had fired the city."
+  - says: "It was said at the time that more people were killed or hurt in those few seconds than the shelling of the whole Civil War siege had managed."
+    source: 2
+    quote: "It is said that in a few seconds the casualties resulting to life and limb exceeded in number those caused in the city proper by its shell- ing during the entire siege of the late war"
+  - says: "In the months that followed, iron bolts and iron plates went into the cracked walls."
+    source: 1
+    quote: "rendered earthquake-proof by iron bolts and plates"
+  - says: "The test came on St. Patrick's Day, eighteen eighty-seven."
+    source: 1
+    quote: "St. Patrick's Day Ushered in by Violent Shock of Earthquake. Charleston, March 17."
+  - says: "At ten past nine in the morning there was another violent shock, with the same underground roar."
+    source: 1
+    quote: "It was, moreover, ushered in at 9.10 a. m. by a peculiar and violent shock of ..earthquake."
+  - says: "At ten past nine in the morning there was another violent shock, with the same underground roar."
+    source: 1
+    quote: "accompanied by the usual subter ranean roar, verv loud and dreadful."
+  - says: "The buildings seemed to be thrust forward and pulled back."
+    source: 1
+    quote: "the buildings appearing to have been thrust forward and pulled back"
+  - says: "A report from Charleston that day said that most of the buildings in town had been made earthquake-proof by iron bolts and plates, and that without them there would have been serious damage."
+    source: 1
+    quote: "Most of the buildings in Charles ton have been rendered earthquake-proof by iron bolts and plates; otherwise there Would have been serious damage"
+  - says: "Unrepaired cracks widened."
+    source: 1
+    quote: "The cracks bf Such buildings as have not yet been repaired were widened"
+  - says: "Windows rattled."
+    source: 1
+    quote: "windows were rattled"
+  - says: "Plaster fell."
+    source: 1
+    quote: "plastering thrown down in a number of places."
+  - says: "The St. Patrick's Day celebrations were not interrupted."
+    source: 1
+    quote: "The celebration of St. Patrick's Day was not interrupted."
+sources:
+  - title: "Connecticut Western News, March 23, 1887, \"Charleston Again Shaken\""
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84027718/1887-03-23/ed-1/?sp=4
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Short sketch of Charleston, S.C.; how it fared in two wars and an earthquake"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/shortsketchofcha01newy/shortsketchofcha01newy.text.txt
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+  - title: "Charleston Community History"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/articles/charleston-community-history.htm
+    retrievedAt: "2026-11-09"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-bolted-together/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77.8
+    audioBytes: 1245561
+    transcript:
+      totalS: 77.8
+      lines:
+        - text: Look along the house fronts on this street for iron on the outside of the walls.
+          atS: 0
+          durationS: 4.14
+        - text: A plate, or the end of a bolt, up between the floors.
+          atS: 4.66
+          durationS: 3.7
+        - text: Where you find one, it may be there because of one night.
+          atS: 8.96
+          durationS: 3.81
+        - text: At about ten o'clock on the thirty-first of August, eighteen eighty-six, an earthquake hit Charleston.
+          atS: 13.89
+          durationS: 6.03
+        - text: It came with a horrid roar.
+          atS: 20.42
+          durationS: 1.67
+        - text: Walls and chimneys came down into the streets.
+          atS: 22.42
+          durationS: 2.57
+        - text: Overturned lamps started fires.
+          atS: 25.19
+          durationS: 2.15
+        - text: It was said at the time that more people were killed or hurt in those few seconds than the shelling of the whole Civil War siege had managed.
+          atS: 27.72
+          durationS: 7.36
+        - text: In the months that followed, iron bolts and iron plates went into the cracked walls.
+          atS: 35.78
+          durationS: 4.75
+        - text: The test came on St.
+          atS: 41.65
+          durationS: 1.29
+        - text: Patrick's Day, eighteen eighty-seven.
+          atS: 42.96
+          durationS: 2.46
+        - text: At ten past nine in the morning there was another violent shock, with the same underground roar.
+          atS: 46.53
+          durationS: 5.29
+        - text: The buildings seemed to be thrust forward and pulled back.
+          atS: 52.34
+          durationS: 3.03
+        - text: A report from Charleston that day said that most of the buildings in town had been made earthquake-proof by iron bolts and plates, and that without them there would have been serious damage.
+          atS: 56.18
+          durationS: 10.08
+        - text: Unrepaired cracks widened.
+          atS: 66.86
+          durationS: 1.86
+        - text: Windows rattled.
+          atS: 68.87
+          durationS: 1.2
+        - text: Plaster fell.
+          atS: 70.13
+          durationS: 1.14
+        - text: The St.
+          atS: 71.59
+          durationS: 0.39
+        - text: Patrick's Day celebrations were not interrupted.
+          atS: 72
+          durationS: 3.25
+        - text: Somebody had done the ironmongery.
+          atS: 75.77
+          durationS: 2.02

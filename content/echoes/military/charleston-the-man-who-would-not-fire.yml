@@ -1,0 +1,163 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The Fort Johnson grounds at the end of Fort Johnson Road, James Island, by the harbour shore, looking east to Fort Sumter.
+# Position: Fort Johnson site, James Island, from general knowledge of the grounds (medium confidence). The grounds belong to the state's marine resources centre; the listener stays on the public areas.
+id: charleston-the-man-who-would-not-fire
+title: "The Man Who Would Not Fire"
+summary: "At 4:30 in the morning of 12 April 1861, a mortar here fired the shell that opened the Civil War. Another man had refused the honour."
+place: "Fort Johnson, end of Fort Johnson Road, James Island, South Carolina"
+at: { lat: 32.75170, lng: -79.89870 }
+triggerRadiusKm: 0.08
+category: military
+format: short
+durationS: 74
+visibility: landmark-visible
+certainty: contested
+certaintyNote: >-
+  Which gun fired the first shot of the Civil War is disputed. The National Park Service credits the mortar battery at Fort Johnson commanded by Captain George S. James, firing at 4:30 a.m. on 12 April 1861. The same service says Edmund Ruffin, long popularly credited with the first shot, fired "one of the first shots" from Morris Island. Accounts also differ on who pulled the lanyard of the Fort Johnson mortar; the script does not name anyone for that.
+minAge: 10
+quality: 0.85
+tags: [charleston, james-island, fort-johnson, fort-sumter, civil-war, military, first-shot]
+teaser: "The honour of the first shot was offered to a man who said no."
+script: |
+  Look east, across the water, to the low, dark shape of Fort Sumter. In the dark, before dawn, a single shell went up from this shore, and burst over it.
+
+  It was the twelfth of April, eighteen sixty one. Somebody had to be the one who started it.
+
+  That night, an officer rowed out here to Fort Johnson with orders to attack. The honour of firing the first shot was offered to Roger Pryor, a former Virginia congressman, and one of the loudest voices for secession.
+
+  Pryor said no.
+
+  So at half past four in the morning, Captain George James ordered his battery to fire. A ten inch mortar shell soared over the harbour and exploded over Fort Sumter. The war had begun.
+
+  And yet another man claimed that honour. An old Virginian named Edmund Ruffin had predicted that the first shots of a civil war would be fired at Fort Sumter. That morning, on Morris Island, he fired one of the first shots himself. But the signal shot came from here.
+
+  George James was killed at South Mountain in Maryland, seventeen months later.
+
+  Look at Fort Sumter again.
+
+  The first shot was offered. And it was refused.
+detail: >-
+  Second pass (2026-11-11): the South Carolina Encyclopedia entry on Fort Johnson independently confirms that the signal shot was fired from a Fort Johnson mortar battery on 12 April 1861; Pryor's refusal and James's later death still rest on the National Park Service alone, so factCheck stays single-source. The National Park Service page on George S. James gives the orders brought to Fort Johnson, the offer to Roger Pryor and his refusal, and the 4:30 a.m. mortar shell. Its page on Edmund Ruffin gives his prediction in Anticipations of the Future (1860) and his shot from Morris Island, described as one of the first. James died at South Mountain on 14 September 1862. The Ruffin claim is stated as a claim; the popular credit to Ruffin is in the certainty note, not the script.
+pronunciations:
+  - written: "Pryor"
+    say: "PRY-er"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It was the twelfth of April, eighteen sixty one."
+    source: 1
+    quote: "In the early morning darkness of April 12, 1861"
+  - says: "That night, an officer rowed out here to Fort Johnson with orders to attack."
+    source: 1
+    quote: "Captain Stephen D. Lee of General Beauregard's staff rowed out to Fort Johnson with orders to attack Fort Sumter."
+  - says: "The honour of firing the first shot was offered to Roger Pryor, a former Virginia congressman, and one of the loudest voices for secession."
+    source: 1
+    quote: "The honor of firing the first shot was offered to former Virginia congressman and Fire-Eater Roger Pryor."
+  - says: "Pryor said no."
+    source: 1
+    quote: "Pryor refused"
+  - says: "So at half past four in the morning, Captain George James ordered his battery to fire."
+    source: 1
+    quote: "at 4:30 a.m. Captain George S. James ordered his battery to fire a 10-inch mortar shell"
+  - says: "A ten inch mortar shell soared over the harbour and exploded over Fort Sumter."
+    source: 1
+    quote: "which soared over the harbor and exploded over Fort Sumter, announcing the start of the war."
+  - says: "An old Virginian named Edmund Ruffin had predicted that the first shots of a civil war would be fired at Fort Sumter."
+    source: 2
+    quote: "that the first shots of that war would be fired at Fort Sumter"
+  - says: "That morning, on Morris Island, he fired one of the first shots himself."
+    source: 2
+    quote: "On April 12, 1861 Ruffin, now a private in the Palmetto Guard and stationed on Morris Island, fired a shot from a 64-pounder columbiad at Fort Sumter, one of the first shots fired of the American Civil War."
+  - says: "George James was killed at South Mountain in Maryland, seventeen months later."
+    source: 1
+    quote: "Late in the evening of September 14, Lieutenant Colonel James was twice warned"
+  - says: "George James was killed at South Mountain in Maryland, seventeen months later."
+    source: 1
+    quote: "The thirty-three-year-old James was presumed killed in action."
+  - says: "So at half past four in the morning, Captain George James ordered his battery to fire."
+    source: 3
+    quote: "The signal shot that commenced the bombardment of Fort Sumter and the beginning of the Civil War was fired from a Fort Johnson mortar battery on April 12, 1861."
+  - says: "Somebody had to be the one who started it."
+    source: 1
+    quote: "The honor of firing the first shot was offered to former Virginia congressman and Fire-Eater Roger Pryor."
+  - says: "But the signal shot came from here."
+    source: 3
+    quote: "The signal shot that commenced the bombardment of Fort Sumter and the beginning of the Civil War was fired from a Fort Johnson mortar battery on April 12, 1861."
+sources:
+  - title: "George S. James"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/george-s-james.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Edmund Ruffin"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/edmund-ruffin.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Fort Johnson (Willis J. Keith)"
+    publisher: "South Carolina Encyclopedia, University of South Carolina"
+    url: https://www.scencyclopedia.org/sce/entries/fort-johnson/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-man-who-would-not-fire/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.7
+    audioBytes: 1179523
+    transcript:
+      totalS: 73.7
+      lines:
+        - text: Look east, across the water, to the low, dark shape of Fort Sumter.
+          atS: 0
+          durationS: 4.99
+        - text: In the dark, before dawn, a single shell went up from this shore, and burst over it.
+          atS: 5.43
+          durationS: 4.98
+        - text: It was the twelfth of April, eighteen sixty one.
+          atS: 10.93
+          durationS: 2.75
+        - text: Somebody had to be the one who started it.
+          atS: 14.12
+          durationS: 2.23
+        - text: That night, an officer rowed out here to Fort Johnson with orders to attack.
+          atS: 17.16
+          durationS: 4.09
+        - text: The honour of firing the first shot was offered to Roger Pryor, a former Virginia congressman, and one of the loudest voices for secession.
+          atS: 21.85
+          durationS: 8.52
+        - text: Pryor said no.
+          atS: 31.18
+          durationS: 1.35
+        - text: So at half past four in the morning, Captain George James ordered his battery to fire.
+          atS: 33.34
+          durationS: 4.84
+        - text: A ten inch mortar shell soared over the harbour and exploded over Fort Sumter.
+          atS: 38.46
+          durationS: 4.76
+        - text: The war had begun.
+          atS: 43.92
+          durationS: 1.22
+        - text: And yet another man claimed that honour.
+          atS: 45.74
+          durationS: 2.08
+        - text: An old Virginian named Edmund Ruffin had predicted that the first shots of a civil war would be fired at Fort Sumter.
+          atS: 48.33
+          durationS: 6.55
+        - text: That morning, on Morris Island, he fired one of the first shots himself.
+          atS: 55.39
+          durationS: 4.25
+        - text: But the signal shot came from here.
+          atS: 60.08
+          durationS: 1.98
+        - text: George James was killed at South Mountain in Maryland, seventeen months later.
+          atS: 63.37
+          durationS: 4.59
+        - text: Look at Fort Sumter again.
+          atS: 68.77
+          durationS: 1.51
+        - text: The first shot was offered.
+          atS: 70.52
+          durationS: 1.36
+        - text: And it was refused.
+          atS: 72.26
+          durationS: 1.39

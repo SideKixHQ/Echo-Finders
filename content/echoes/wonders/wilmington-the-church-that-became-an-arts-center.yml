@@ -1,0 +1,107 @@
+# From W084 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk at Fourth and Campbell; interior access through an authorized event or visit.
+# Position: Former St Andrew's Presbyterian at corner of N 4th & Campbell; 516 = even/east side -> SE corner. No direct coordinate found; extrapolated 4th St and Campbell from grid (hmdb Red Cross & 7th 34.24153). (low confidence).
+id: wilmington-the-church-that-became-an-arts-center
+title: "The Church That Became an Arts Center"
+summary: "Construction of St. Andrew's Presbyterian Church began here in 1888."
+place: "Brooklyn Arts Center, 516 North Fourth Street, Wilmington, North Carolina"
+at: { lat: 34.24225, lng: -77.94505 }
+triggerRadiusKm: 0.06
+category: wonders
+format: short
+durationS: 54
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Construction of St. Andrew's Presbyterian Church began here in 1888."
+script: |
+  Construction of St. Andrew's Presbyterian Church began here in 1888. The congregation
+  dedicated the building in 1889.
+
+  Its later history included other congregations, serious deterioration, and preservation
+  efforts. The surviving structure became the Brooklyn Arts Center.
+
+  From the public corner, notice that a changed purpose did not require the old building
+  to disappear. Its prominent form remains part of the neighborhood while its interior
+  serves new gatherings.
+
+  The building's survival is the turning point. A former church could have become only a
+  historical photograph. Instead, restoration made another use possible. Today's arts
+  setting carries an architectural inheritance from the congregation that first raised it.
+  When people gather here now, they add a chapter rather than beginning on a blank site.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Construction of St. Andrew's Presbyterian Church began here in 1888."
+    source: 1
+    quote: "On October 1, 1888, ground was broken and construction began on the new church."
+  - says: "Construction of St. Andrew's Presbyterian Church began here"
+    source: 1
+    quote: "Since its construction of the corner of North 4th and Campbell streets in 1888, St. Andrew’s Presbyterian Church has been a spiritual, cultural, and community center for the Brooklyn neighborhood and beyond."
+  - says: "The congregation dedicated the building in 1889."
+    source: 1
+    quote: "St. Andrew’s Presbyterian Church was dedicated on June 9, 1889."
+  - says: "Its later history included other congregations, serious deterioration, and preservation efforts."
+    source: 1
+    quote: "Because of extensive roof damage, the members retreated into the Annex behind the church."
+  - says: "The surviving structure became the Brooklyn Arts Center."
+    source: 1
+    quote: "Nathans was able to purchase the property and create the Brooklyn Arts Center at St. Andrew’s."
+  - says: "A former church could have become only a historical photograph."
+    source: 1
+    quote: "Due to the increasingly poor conditions, city officials deemed the structure unsound."
+  - says: "Today's arts setting carries an architectural inheritance from the congregation that first raised it."
+    source: 1
+    quote: "Nathans and others worked to renovate the church, keeping it as close to its original appearance as possible."
+sources:
+  - title: "Full history"
+    publisher: "Brooklyn Arts Center"
+    url: https://www.brooklynartsnc.com/full-history/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-the-church-that-became-an-arts-center/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 54.4
+    audioBytes: 871070
+    transcript:
+      totalS: 54.4
+      lines:
+        - text: Construction of St.
+          atS: 0
+          durationS: 1.13
+        - text: Andrew's Presbyterian Church began here in 1888.
+          atS: 1.16
+          durationS: 3.98
+        - text: The congregation dedicated the building in 1889.
+          atS: 5.65
+          durationS: 3.6
+        - text: Its later history included other congregations, serious deterioration, and preservation efforts.
+          atS: 9.76
+          durationS: 6.21
+        - text: The surviving structure became the Brooklyn Arts Center.
+          atS: 16.42
+          durationS: 3.3
+        - text: From the public corner, notice that a changed purpose did not require the old building to disappear.
+          atS: 20.53
+          durationS: 5.69
+        - text: Its prominent form remains part of the neighborhood while its interior serves new gatherings.
+          atS: 26.91
+          durationS: 5.24
+        - text: The building's survival is the turning point.
+          atS: 33.26
+          durationS: 2.46
+        - text: A former church could have become only a historical photograph.
+          atS: 36.05
+          durationS: 3.63
+        - text: Instead, restoration made another use possible.
+          atS: 39.93
+          durationS: 3.38
+        - text: Today's arts setting carries an architectural inheritance from the congregation that first raised it.
+          atS: 43.63
+          durationS: 5.65
+        - text: When people gather here now, they add a chapter rather than beginning on a blank site.
+          atS: 49.73
+          durationS: 4.66

@@ -9,6 +9,8 @@ at: { lat: 40.72881, lng: -73.98966 }
 triggerRadiusKm: 0.03
 inside: true
 category: food-drink
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 69
 visibility: at-hand

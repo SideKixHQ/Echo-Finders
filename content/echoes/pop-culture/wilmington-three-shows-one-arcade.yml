@@ -1,0 +1,86 @@
+# Inspo, film and television (from James's document) for the MVP (docs/12-cities.md), written 2026-11-06.
+# Position: Overture 2026-09-23.0 address point for 5320 Oleander Drive.
+id: wilmington-three-shows-one-arcade
+title: "Three Shows, One Arcade"
+summary: "Jungle Rapids appears in One Tree Hill, Dawson's Creek and The Summer I Turned Pretty."
+place: "Jungle Rapids Family Fun Park, 5320 Oleander Drive, Wilmington, North Carolina"
+at: { lat: 34.207424, lng: -77.863106 }
+triggerRadiusKm: 0.12
+category: pop-culture
+inspo:
+  kind: creation
+  evidence: site
+format: look-below
+durationS: 30
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, one-tree-hill, dawsons-creek, the-summer-i-turned-pretty]
+teaser: "Tree Hill, Capeside and Cousins all came here to play."
+script: |
+  Look at the arcade and the mini golf. Fictional towns keep coming here to play.
+
+  Dawson's Creek filmed scenes in the arcade and the Big Splash Cafe and Pizzeria. So did One Tree
+  Hill, along with the miniature golf course. Years later, The Summer I Turned Pretty filmed its
+  arcade and go-kart scenes here.
+
+  On screen they were different towns. Off screen, their teenagers all had the same favorite
+  afternoon out.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Dawson's Creek filmed scenes in the arcade and the Big Splash Cafe and Pizzeria."
+    source: 2
+    quote: "Several of the show's scenes were filmed at Jungle Rapids Family Fun Park , 5320 Oleander Drive, in the arcade and Big Splash Café and Pizzeria."
+  - says: "So did One Tree Hill, along with the miniature golf course."
+    source: 1
+    quote: "Fans may recall scenes from the arcade, miniature golf course and Big Splash Café and Pizzeria."
+  - says: "The Summer I Turned Pretty filmed its arcade and go-kart scenes here."
+    source: 3
+    quote: "Jungle Rapids is where the interior arcade and go-kart scenes were filmed."
+sources:
+  - title: "One Tree Hill Tour"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/one-tree-hill-walking-tour/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+  - title: "Dawson's Creek Locations Tour"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/dawsons-creek-locations-tour/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+  - title: "The Summer I Turned Pretty: A Wilmington Guide to Cousins Beach"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://www.wilmingtonandbeaches.com/blog/post/the-summer-i-turned-pretty-a-wilmington-guide-to-cousins-beach/
+    retrievedAt: "2026-11-06"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-three-shows-one-arcade/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 30
+    audioBytes: 481114
+    transcript:
+      totalS: 30
+      lines:
+        - text: Look at the arcade and the mini golf.
+          atS: 0
+          durationS: 2.07
+        - text: Fictional towns keep coming here to play.
+          atS: 2.67
+          durationS: 2.61
+        - text: Dawson's Creek filmed scenes in the arcade and the Big Splash Cafe and Pizzeria.
+          atS: 5.79
+          durationS: 4.96
+        - text: So did One Tree Hill, along with the miniature golf course.
+          atS: 11.19
+          durationS: 3.58
+        - text: Years later, The Summer I Turned Pretty filmed its arcade and go-kart scenes here.
+          atS: 16.07
+          durationS: 5.68
+        - text: On screen they were different towns.
+          atS: 22.35
+          durationS: 2.54
+        - text: Off screen, their teenagers all had the same favorite afternoon out.
+          atS: 25.4
+          durationS: 4.6

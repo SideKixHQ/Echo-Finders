@@ -1,0 +1,153 @@
+# Drafted by Claude Code (2026-11-09) for Charlotte.
+# Listening spot: East Trade Street sidewalk at the Confederate Navy Yard marker.
+# Position: East Trade Street a block or two east of Tryon, where the DNCR marker page places the marker; exact block not confirmed from a fetched source (low-medium confidence, check the marker's spot before approval).
+id: charlotte-a-navy-yard-far-from-the-sea
+title: "A Navy Yard Far From the Sea"
+summary: "In 1862 the Confederacy moved its Norfolk navy yard to Charlotte, 200 miles inland, to keep it out of Union reach."
+place: "East Trade Street, site of the Confederate Navy Yard, Charlotte, North Carolina"
+at: { lat: 35.2256, lng: -80.8406 }
+triggerRadiusKm: 0.08
+category: military
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [charlotte, uptown, civil-war, military, navy-yard]
+teaser: "The Confederate navy built its engines and torpedoes on this street, two hundred miles from the ocean."
+script: |
+  Look around for the sea. It is about two hundred miles away, and that was the point.
+
+  In March 1862, the Confederate navy yard at Norfolk, in Virginia, was about to be captured by Union forces.
+
+  So the Confederacy moved its machinery here, to a railroad town in the middle of the Carolinas, far out of reach of the Union navy.
+
+  Along this street they built a gun carriage shop, a torpedo shop, and a forge where the largest steam hammer in the South pounded away.
+
+  About fifteen hundred men worked here. They made marine engines, shells, torpedoes and solid shot.
+
+  One worker, Thomas Dwyer, built a machine that turned out perfectly round cannonballs.
+
+  For most of the war, the yard felt the fighting less than any other navy yard. Its real trouble was keeping trained workers.
+
+  Near the end, the machinery was loaded up and sent to Lincolnton. The war ended before it could be put back together.
+
+  And the man who owned the land, Colonel John Wilkes, simply took his property back. The Confederate government had never paid him for it.
+
+  A navy yard, two hundred miles from the sea, that never paid its rent.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It is about two hundred miles away, and that was the point."
+    source: 1
+    quote: "The city appealed to Confederate leaders owing to its location 200 miles from the ocean keeping it far out of reach of the Union Navy."
+  - says: "In March 1862, the Confederate navy yard at Norfolk, in Virginia, was about to be captured by Union forces."
+    source: 1
+    quote: "In March 1862, Gosport Yard, a Confederate Navy Yard in Norfolk, was at risk of being captured by Union forces."
+  - says: "So the Confederacy moved its machinery here, to a railroad town in the middle of the Carolinas, far out of reach of the Union navy."
+    source: 1
+    quote: "the Confederacy moved the operations and machinery of Gosport Yard to Charlotte."
+  - says: "So the Confederacy moved its machinery here, to a railroad town in the middle of the Carolinas, far out of reach of the Union navy."
+    source: 1
+    quote: "given its location along the North Carolina Railroad and the South Carolina Railroad, it was connected to several seaboard cities"
+  - says: "So the Confederacy moved its machinery here, to a railroad town in the middle of the Carolinas, far out of reach of the Union navy."
+    source: 2
+    quote: "Established here 1862 following its removal"
+  - says: "Along this street they built a gun carriage shop, a torpedo shop, and a forge where the largest steam hammer in the South pounded away."
+    source: 1
+    quote: "Among the buildings constructed on the site of the new naval yard were a gun carriage shop, a torpedo shop, and a large forge shop where the largest steam hammer in the South operated."
+  - says: "About fifteen hundred men worked here."
+    source: 1
+    quote: "Captain H. Ashton Ramsey was chief engineer over approximately 1,500 men"
+  - says: "They made marine engines, shells, torpedoes and solid shot."
+    source: 1
+    quote: "Products of the yard included marine engines, rifle shells, torpedoes, gun carriages, solid shot, heavy forgings, and projectiles."
+  - says: "One worker, Thomas Dwyer, built a machine that turned out perfectly round cannonballs."
+    source: 1
+    quote: "An employee named Thomas Dwyer built a machine that made perfectly round spheres, improving the production of cannonballs"
+  - says: "For most of the war, the yard felt the fighting less than any other navy yard."
+    source: 1
+    quote: "Until November 1864, the Charlotte Naval Yard experienced fewer effects of the war than any other navy yard."
+  - says: "Its real trouble was keeping trained workers."
+    source: 1
+    quote: "In time it began to encounter difficulty obtaining and retaining trained workers."
+  - says: "Near the end, the machinery was loaded up and sent to Lincolnton."
+    source: 1
+    quote: "At that point the tools and machinery from the yard were moved from Charlotte to Lincolnton."
+  - says: "The war ended before it could be put back together."
+    source: 1
+    quote: "Before the yard could be reassembled and activated in Lincolnton, the war ended."
+  - says: "And the man who owned the land, Colonel John Wilkes, simply took his property back."
+    source: 1
+    quote: "After the war the yard’s previous landowner, Colonel John Wilkes, repossessed the property"
+  - says: "The Confederate government had never paid him for it."
+    source: 1
+    quote: "for which the Confederate government had never paid him."
+  - says: "A navy yard, two hundred miles from the sea, that never paid its rent."
+    source: 1
+    quote: "The city appealed to Confederate leaders owing to its location 200 miles from the ocean"
+sources:
+  - title: "Confederate Navy Yard (L-56)"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/blog/2024/01/12/confederate-navy-yard-l-56
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+  - title: "Guide to North Carolina Highway Historical Markers, August 2026 Edition"
+    publisher: "North Carolina Department of Natural and Cultural Resources"
+    url: https://www.dncr.nc.gov/nc-historical-markers-guide-summer-2026/open
+    retrievedAt: "2026-11-09"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charlotte-a-navy-yard-far-from-the-sea/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 77.6
+    audioBytes: 1241799
+    transcript:
+      totalS: 77.6
+      lines:
+        - text: Look around for the sea.
+          atS: 0
+          durationS: 1.51
+        - text: It is about two hundred miles away, and that was the point.
+          atS: 1.95
+          durationS: 3.41
+        - text: In March 1862, the Confederate navy yard at Norfolk, in Virginia, was about to be captured by Union forces.
+          atS: 6.18
+          durationS: 7.89
+        - text: So the Confederacy moved its machinery here, to a railroad town in the middle of the Carolinas, far out of reach of the Union navy.
+          atS: 14.51
+          durationS: 8.6
+        - text: Along this street they built a gun carriage shop, a torpedo shop, and a forge where the largest steam hammer in the South pounded away.
+          atS: 23.81
+          durationS: 9.18
+        - text: About fifteen hundred men worked here.
+          atS: 33.69
+          durationS: 2.45
+        - text: They made marine engines, shells, torpedoes and solid shot.
+          atS: 36.58
+          durationS: 4.97
+        - text: One worker, Thomas Dwyer, built a machine that turned out perfectly round cannonballs.
+          atS: 42.16
+          durationS: 5.9
+        - text: For most of the war, the yard felt the fighting less than any other navy yard.
+          atS: 48.66
+          durationS: 4.54
+        - text: Its real trouble was keeping trained workers.
+          atS: 53.35
+          durationS: 2.66
+        - text: Near the end, the machinery was loaded up and sent to Lincolnton.
+          atS: 56.39
+          durationS: 3.78
+        - text: The war ended before it could be put back together.
+          atS: 60.5
+          durationS: 2.88
+        - text: And the man who owned the land, Colonel John Wilkes, simply took his property back.
+          atS: 63.7
+          durationS: 4.9
+        - text: The Confederate government had never paid him for it.
+          atS: 69.56
+          durationS: 2.92
+        - text: A navy yard, two hundred miles from the sea, that never paid its rent.
+          atS: 72.86
+          durationS: 4.69

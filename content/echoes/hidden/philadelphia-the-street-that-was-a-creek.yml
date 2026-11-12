@@ -1,0 +1,166 @@
+# Drafted by Claude Code (2026-10-14) for the Philadelphia core. Replaces "The Curse of Billy Penn", which could not be sourced from any reachable page.
+# Listening spot: Public sidewalk on Dock Street beside the rounded east end of the Merchants' Exchange.
+# Position: Overture "Merchants' Exchange Building" (39.94722, -75.14623, 143 S 3rd St) moved about 55 m east to the Dock Street side of the triangular site described by NPS (medium confidence).
+id: philadelphia-the-street-that-was-a-creek
+title: "The Street That Was a Creek"
+summary: "Dock Street bends in a city of right angles, because it follows a creek William Penn once came up in a boat."
+place: "Dock Street at the Merchants' Exchange, Philadelphia, Pennsylvania"
+at: { lat: 39.94740, lng: -75.14565 }
+triggerRadiusKm: 0.04
+category: hidden
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, dock-creek, merchants-exchange, waterways]
+teaser: "Every street here runs straight. Except this one."
+script: |
+  Every street around here runs straight, at right angles, the way William Penn liked it. Except the street you are standing on. Dock Street bends.
+
+  Now look at the building beside you. Its end is not flat. It is round, a curve of stone columns with a little round lantern on top. This is the Merchants' Exchange, finished in the eighteen thirties, and its architect fitted it onto a triangle of ground between Third Street, Walnut Street, and this odd curving road.
+
+  So why does the road curve?
+
+  When Penn first came to Philadelphia, he left the big ship out on the Delaware and went up a creek in a skiff. That creek ran here. Dock Creek. In the seventeen nineties the city covered it over, and the street took its line.
+
+  Before this building, merchants did their deals in coffee houses and taverns down by the river. This was the first large building in the city put up for doing business. Ships' cargoes changed hands in it. So did stocks. The Philadelphia Stock Exchange met here.
+
+  Penn came up this line in a small boat. Generations later, the city's money was following it too.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Every street around here runs straight, at right angles, the way William Penn liked it."
+    source: 5
+    quote: "It was a positive Quakeresque delight to Penn to map out the gridiron of right-angled streets"
+  - says: "Dock Street bends."
+    source: 5
+    quote: "Dock Street itself being a romantic survival of early days, in its ramblings, its divagations"
+  - says: "It is round, a curve of stone columns with a little round lantern on top."
+    source: 5
+    quote: "The old Stock Exchange is a rounding-fronted structure of stone"
+  - says: "It is round, a curve of stone columns with a little round lantern on top."
+    source: 2
+    quote: "The Choragic Monument of Lysicrates was the model for the building's lantern."
+  - says: "This is the Merchants' Exchange, finished in the eighteen thirties, and its architect fitted it onto a triangle of ground between Third Street, Walnut Street, and this odd curving road."
+    source: 2
+    quote: "Built between 1832 and 1834, the Merchants' Exchange Building, also known as the Philadelphia Exchange, is located on the triangular site bounded by Dock Street, Third Street, and Walnut Streets."
+  - says: "When Penn first came to Philadelphia, he left the big ship out on the Delaware and went up a creek in a skiff."
+    source: 1
+    quote: "William Penn sailed a skiff up dock creek after unloading from a larger ship on the Delaware when he first came to Philadelphia in the late 17th century."
+  - says: "Dock Creek."
+    source: 1
+    quote: "Once the site of a fairly large creek, Dock Creek was covered over in the 1790's."
+  - says: "In the seventeen nineties the city covered it over, and the street took its line."
+    source: 1
+    quote: "Dock Creek was covered over in the 1790's."
+  - says: "In the seventeen nineties the city covered it over, and the street took its line."
+    source: 4
+    quote: "Dock creek, which occupied the line of the present Dock street."
+  - says: "Before this building, merchants did their deals in coffee houses and taverns down by the river."
+    source: 2
+    quote: "Previously, meetings between merchants took place in small coffee houses or taverns located near the Delaware riverfront."
+  - says: "This was the first large building in the city put up for doing business."
+    source: 3
+    quote: "the exchange functioned as a commercial and financial hub and post office and was the first large central building in Philadelphia for the conduct of business."
+  - says: "Ships' cargoes changed hands in it."
+    source: 2
+    quote: "served as a place where businessmen exchanged everything from ships' cargos to real estate and stocks."
+  - says: "The Philadelphia Stock Exchange met here."
+    source: 2
+    quote: "the building soon became the financial center for Philadelphia housing commercial houses, marine insurance companies, the Philadelphia Board of Trade, and the Philadelphia Stock Exchange."
+  - says: "Penn came up this line in a small boat."
+    source: 1
+    quote: "William Penn sailed a skiff up dock creek"
+sources:
+  - title: "Dock Creek"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/dock-creek.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "Merchants' Exchange Building"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-merchantsexchange.htm
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "Philadelphia Exchange. (lithograph, catalogue description)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/2021670211/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+  - title: "Market Street, Philadelphia; the most historic highway in America, its merchants and its story, by Joseph Jackson (1918)"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/marketstreetphil00jack/marketstreetphil00jack.text.txt
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+  - title: "The Book of Philadelphia, by Robert Shackleton (1918)"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/bookofphiladelph00shac/bookofphiladelph00shac.text.txt
+    retrievedAt: "2026-11-07"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-street-that-was-a-creek/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.9
+    audioBytes: 1215050
+    transcript:
+      totalS: 75.9
+      lines:
+        - text: Every street around here runs straight, at right angles, the way William Penn liked it.
+          atS: 0
+          durationS: 5.56
+        - text: Except the street you are standing on.
+          atS: 5.84
+          durationS: 1.97
+        - text: Dock Street bends.
+          atS: 8.32
+          durationS: 1.4
+        - text: Now look at the building beside you.
+          atS: 9.94
+          durationS: 1.8
+        - text: Its end is not flat.
+          atS: 11.91
+          durationS: 1.46
+        - text: It is round, a curve of stone columns with a little round lantern on top.
+          atS: 13.43
+          durationS: 4.48
+        - text: This is the Merchants' Exchange, finished in the eighteen thirties, and its architect fitted it onto a triangle of ground between Third Street, Walnut Street, and this odd curving road.
+          atS: 18.43
+          durationS: 11.62
+        - text: So why does the road curve?
+          atS: 30.65
+          durationS: 2.14
+        - text: When Penn first came to Philadelphia, he left the big ship out on the Delaware and went up a creek in a skiff.
+          atS: 33.74
+          durationS: 6.15
+        - text: That creek ran here.
+          atS: 40.33
+          durationS: 1.63
+        - text: Dock Creek.
+          atS: 42.28
+          durationS: 1.08
+        - text: In the seventeen nineties the city covered it over, and the street took its line.
+          atS: 44.31
+          durationS: 4.91
+        - text: Before this building, merchants did their deals in coffee houses and taverns down by the river.
+          atS: 50.18
+          durationS: 5.75
+        - text: This was the first large building in the city put up for doing business.
+          atS: 56.44
+          durationS: 4.1
+        - text: Ships' cargoes changed hands in it.
+          atS: 61.14
+          durationS: 2.39
+        - text: So did stocks.
+          atS: 63.91
+          durationS: 1.2
+        - text: The Philadelphia Stock Exchange met here.
+          atS: 65.55
+          durationS: 2.7
+        - text: Penn came up this line in a small boat.
+          atS: 68.95
+          durationS: 2.64
+        - text: Generations later, the city's money was following it too.
+          atS: 72.19
+          durationS: 3.69

@@ -1,0 +1,88 @@
+# Inspo, film and television (from James's document, second set) for the MVP (docs/12-cities.md), written 2026-11-07.
+# Position: Overture 2026-09-23.0 address point for 503 Market Street.
+id: wilmington-a-museum-plays-an-art-school
+title: "A Museum Plays an Art School"
+summary: "The Bellamy Mansion played the Savannah College of Art and Design in One Tree Hill, and its kitchen was in Sleepy Hollow."
+place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
+at: { lat: 34.236073, lng: -77.943008 }
+triggerRadiusKm: 0.05
+category: pop-culture
+inspo:
+  kind: creation
+  evidence: building
+format: look-below
+durationS: 37
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [film, one-tree-hill, sleepy-hollow, downtown]
+teaser: "One Tree Hill sent Peyton to art school. It sent her here."
+script: |
+  Look up at the columns of the Bellamy Mansion. It is a museum of history and the design arts,
+  and that is exactly why a television show borrowed it.
+
+  In a 2006 episode of One Tree Hill, Peyton and Jake had a scene here, and the mansion was called
+  the Savannah College of Art and Design. A museum of design played a school of design.
+
+  It was not done with fiction. Years later, its kitchen appeared in Sleepy Hollow, in an episode
+  called Sin Eater. A house built before the Civil War keeps being cast as somewhere else.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Look up at the columns of the Bellamy Mansion."
+    source: 1
+    quote: "Bellamy Mansion Museum of History & Design 503 Market St."
+  - says: "It is a museum of history and the design arts"
+    source: 1
+    quote: "The mansion's modern-day role as a museum of history and the design arts served well for a scene"
+  - says: "In a 2006 episode of One Tree Hill, Peyton and Jake had a scene here, and the mansion was called the Savannah College of Art and Design."
+    source: 1
+    quote: "in which it was referred to as Savannah College of Art & Design in the 2006 episode, Every Day is a Sunday."
+  - says: "Years later, its kitchen appeared in Sleepy Hollow, in an episode called Sin Eater."
+    source: 1
+    quote: "Bellamy Mansion Museum's kitchen most recently appeared in \"Sleepy Hollow's\" episode, Sin Eater."
+  - says: "A house built before the Civil War keeps being cast as somewhere else."
+    source: 1
+    quote: "Serving as one of North Carolina's most spectacular examples of antebellum architecture"
+sources:
+  - title: "Top Wilmington & Beaches Film and TV Locations"
+    publisher: "Wilmington and Beaches Convention and Visitors Bureau"
+    url: https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/wilmingtonnc/Wilmington_Film_and_TV_Location_Guide_1b6bc72d-2881-4fd5-b656-0344de2b7a24.pdf
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-a-museum-plays-an-art-school/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 36.8
+    audioBytes: 590201
+    transcript:
+      totalS: 36.8
+      lines:
+        - text: Look up at the columns of the Bellamy Mansion.
+          atS: 0
+          durationS: 2.58
+        - text: It is a museum of history and the design arts, and that is exactly why a television show borrowed it.
+          atS: 2.73
+          durationS: 6.06
+        - text: In a 2006 episode of One Tree Hill, Peyton and Jake had a scene here, and the mansion was called the Savannah College of Art and Design.
+          atS: 9.9
+          durationS: 9.46
+        - text: A museum of design played a school of design.
+          atS: 19.97
+          durationS: 2.87
+        - text: It was not done with fiction.
+          atS: 23.35
+          durationS: 2
+        - text: Years later, its kitchen appeared in Sleepy Hollow, in an episode called Sin Eater.
+          atS: 26.64
+          durationS: 5.5
+        - text: A house built before the Civil War keeps being cast as somewhere else.
+          atS: 32.75
+          durationS: 4.07
+archive:
+  - imageKey: archive/loc-csas-02920.jpg
+    year: 1935
+    caption: "The Bellamy house columns and portico from the street"
+    credit: "Frances Benjamin Johnston, Carnegie Survey of the Architecture of the South, Library of Congress, Prints and Photographs (LC-J7-NC-2715, between 1935 and 1938), https://www.loc.gov/item/2017888652/"
+    rights: public-domain

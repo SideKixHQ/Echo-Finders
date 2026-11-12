@@ -8,6 +8,8 @@ place: "Alcatraz Island, San Francisco"
 at: { lat: 37.82671, lng: -122.42298 }
 triggerRadiusKm: 0.06
 category: true-crime
+rare: extra-rare
+rareReason: "Hard to reach"
 format: short
 durationS: 64
 visibility: at-hand

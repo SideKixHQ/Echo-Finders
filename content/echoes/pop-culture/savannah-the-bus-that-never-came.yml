@@ -1,0 +1,136 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the north edge of Chippewa Square on Hull Street, at Bull Street, where the film placed Forrest Gump's bench.
+# Position: Bull and Hull intersection from the street segments in the app's Savannah street file, set a few metres into the square's north edge; about 55 m from the Oglethorpe monument echo and 95 m from the east side lion legend (high confidence for the edge of the square; NBC names Hull Street).
+id: savannah-the-bus-that-never-came
+title: "The Bus That Never Came"
+summary: "Forrest Gump waited for a bus on a bench at the edge of Chippewa Square. There was never a real bus stop here."
+place: "Chippewa Square, north side on Hull Street, Savannah, Georgia"
+at: { lat: 32.07610, lng: -81.09345 }
+triggerRadiusKm: 0.035
+category: pop-culture
+inspo:
+  kind: creation
+  evidence: site
+format: short
+durationS: 58
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [savannah, savannah-core, chippewa-square, film, forrest-gump]
+teaser: "Look for the bus stop. You will not find one."
+script: |
+  Look along the north edge of Chippewa Square, where Hull Street runs past the oaks. Look for the bus stop.
+
+  There is not one. There never was.
+
+  But on film, a man waits for a bus on this edge of the square. He sat on a bench with a box of chocolates and told his whole life to whoever sat down beside him. A stranger, then another stranger. He was waiting for a bus to take him to Jenny's house.
+
+  The film was Forrest Gump. The bus stop was only ever there for the camera.
+
+  And the bench is not here either. NBC News reported that the one from the film is kept at the Savannah History Museum.
+
+  People still come to this square and look for it. A Boston travel writer called it the Forrest Gump Square.
+
+  Look along the edge again, at the empty space under the trees.
+
+  He was only ever waiting here in the film. The people looking for him are real.
+detail: >-
+  NBC News (2009) says "the spot in Chippewa Square on Hull Street never had a real bus stop, and the bench used in the movie is in the Savannah History Museum". The Boston Globe (2023) calls it "Chippewa Square (also known as the Forrest Gump Square". Place evidence is `site`: the sources put the scene in the square, on its Hull Street side, not at a measured spot, so the script says "this edge of the square" and never claims a precise spot. Whether the bench is still on view should be checked before review.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "There is not one. There never was."
+    source: 1
+    quote: "But the spot in Chippewa Square on Hull Street never had a real bus stop"
+  - says: "He sat on a bench with a box of chocolates and told his whole life to whoever sat down beside him."
+    source: 1
+    quote: "the place where Forrest Gump sat on a bench with a box of chocolates, telling his life story as he waited for a bus to take him to his beloved Jenny's house."
+  - says: "He was waiting for a bus to take him to Jenny's house."
+    source: 1
+    quote: "as he waited for a bus to take him to his beloved Jenny's house"
+  - says: "NBC News reported that the one from the film is kept at the Savannah History Museum."
+    source: 1
+    quote: "the bench used in the movie is in the Savannah History Museum."
+  - says: "A Boston travel writer called it the Forrest Gump Square."
+    source: 2
+    quote: "Chippewa Square (also known as the Forrest Gump Square, where Gump sat on the bench eating his box of chocolates in the movie \"Forrest Gump\")"
+  - says: "The film was Forrest Gump."
+    source: 1
+    quote: "you'll pass by the place where Forrest Gump sat on a bench with a box of chocolates, telling his life story as he waited for a bus to take him to his beloved Jenny's house."
+  - says: "The bus stop was only ever there for the camera."
+    source: 1
+    quote: "But the spot in Chippewa Square on Hull Street never had a real bus stop"
+  - says: "He was only ever waiting here in the film."
+    source: 1
+    quote: "the place where Forrest Gump sat on a bench with a box of chocolates, telling his life story as he waited for a bus"
+sources:
+  - title: "Explore Savannah's squares, parks and homes (2009)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna33492780
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "We took a girlfriend getaway to Savannah (2023)"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/2023/12/21/lifestyle/a-girlfriend-getaway-to-savannah/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-bus-that-never-came/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 57.8
+    audioBytes: 926240
+    transcript:
+      totalS: 57.8
+      lines:
+        - text: Look along the north edge of Chippewa Square, where Hull Street runs past the oaks.
+          atS: 0
+          durationS: 4.45
+        - text: Look for the bus stop.
+          atS: 4.83
+          durationS: 1.28
+        - text: There is not one.
+          atS: 6.28
+          durationS: 1.06
+        - text: There never was.
+          atS: 7.58
+          durationS: 1.07
+        - text: But on film, a man waits for a bus on this edge of the square.
+          atS: 9.09
+          durationS: 3.88
+        - text: He sat on a bench with a box of chocolates and told his whole life to whoever sat down beside him.
+          atS: 13.48
+          durationS: 6.07
+        - text: A stranger, then another stranger.
+          atS: 20.25
+          durationS: 2.83
+        - text: He was waiting for a bus to take him to Jenny's house.
+          atS: 24.03
+          durationS: 2.96
+        - text: The film was Forrest Gump.
+          atS: 27.38
+          durationS: 1.74
+        - text: The bus stop was only ever there for the camera.
+          atS: 29.63
+          durationS: 2.53
+        - text: And the bench is not here either.
+          atS: 32.48
+          durationS: 2.16
+        - text: NBC News reported that the one from the film is kept at the Savannah History Museum.
+          atS: 35.6
+          durationS: 5.25
+        - text: People still come to this square and look for it.
+          atS: 41.45
+          durationS: 2.81
+        - text: A Boston travel writer called it the Forrest Gump Square.
+          atS: 44.77
+          durationS: 3.36
+        - text: Look along the edge again, at the empty space under the trees.
+          atS: 48.94
+          durationS: 3.29
+        - text: He was only ever waiting here in the film.
+          atS: 52.92
+          durationS: 2.12
+        - text: The people looking for him are real.
+          atS: 55.74
+          durationS: 2.08

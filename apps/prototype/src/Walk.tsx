@@ -40,7 +40,7 @@ const RARITY_LABEL: Record<string, string> = {
   common: "Echo",
   uncommon: "Uncommon",
   rare: "Rare",
-  singular: "Singular",
+  singular: "Extra rare",
 };
 
 export interface WalkProps {

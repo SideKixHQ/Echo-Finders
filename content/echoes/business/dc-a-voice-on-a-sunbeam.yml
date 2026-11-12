@@ -1,0 +1,165 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC (Franklin Square), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Public sidewalk at 13th and K Streets NW, in front of the Franklin School (now the Planet Word museum), looking up at the roof.
+# Position: Overture places 'Franklin School' (963 13th St NW) at 38.90212, -77.02936 and 'Benjamin Franklin School' historic site at 38.90218, -77.02934 (high confidence).
+id: dc-a-voice-on-a-sunbeam
+title: "A Voice on a Sunbeam"
+summary: "In June 1880 Alexander Graham Bell sent the first wireless telephone message from the top of this school, on a beam of light."
+place: "Franklin School, 13th and K Streets NW, Washington, D.C."
+at: { lat: 38.90212, lng: -77.02945 }
+triggerRadiusKm: 0.04
+category: business
+inspo:
+  kind: first
+  evidence: building
+format: short
+durationS: 88
+visibility: daylight-dependent
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, franklin-square, alexander-graham-bell, photophone, firsts, science]
+teaser: "Look at the roof. Bell's greatest invention, by his own account, went out from up there."
+script: |
+  Look up at the top of this old school building. In June eighteen eighty, Alexander Graham Bell was up there, with a mirror.
+
+  He had already invented the telephone, four years before. This was something stranger. A telephone with no wire.
+
+  Bell and his young assistant, Charles Sumner Tainter, called it the photophone. You spoke into it, towards a thin mirror. Your voice made the mirror shiver. Sunlight bounced off the mirror, and carried those tiny shivers away across the rooftops. At the other end, a crystal of selenium caught the light, and turned it back into a voice.
+
+  On the third of June, eighteen eighty, from the top of the Franklin School, it worked. The first wireless telephone message in history, carried on a beam of sunlight.
+
+  Bell called it the greatest invention he had ever made. Greater, he said, than the telephone.
+
+  For years, hardly anyone saw why. A cloud could cut it off. Until much later, there was no good way to carry light safely over a distance.
+
+  Then came fibre optics. Today, the Library of Congress calls the photophone their ancestor.
+
+  So look up at the roof again. A good part of the internet travels the way Bell's voice did.
+
+  On light.
+pronunciations:
+  - written: Tainter
+    say: TANE-ter
+detail: >-
+  The Library of Congress gives 3 June 1880 and the Franklin School. "A good part of the internet travels on light" is the narrator's own gloss on fibre optics, not a sourced claim, and a reviewer may cut it.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "He had already invented the telephone, four years before."
+    source: 2
+    quote: "In 1876, at the age of 29, Alexander Graham Bell invented the telephone."
+  - says: "Bell and his young assistant, Charles Sumner Tainter, called it the photophone."
+    source: 2
+    quote: "Bell and his young associate, Charles Sumner Tainter, invent the photophone, an apparatus that transmits sound through light."
+  - says: "You spoke into it, towards a thin mirror. Your voice made the mirror shiver. Sunlight bounced off the mirror, and carried those tiny shivers away across the rooftops."
+    source: 1
+    quote: "Bell’s photophone worked by projecting the voice through an instrument toward a mirror. Vibrations in the voice caused similar vibrations in the mirror. Bell directed sunlight into the mirror, which captured and projected the mirror’s vibrations."
+  - says: "At the other end, a crystal of selenium caught the light, and turned it back into a voice."
+    source: 2
+    quote: "Bell and his assistant, Charles Sumner Tainter, developed the photophone using a sensitive selenium crystal and a mirror that would vibrate in response to a sound."
+  - says: "On the third of June, eighteen eighty, from the top of the Franklin School, it worked. The first wireless telephone message in history, carried on a beam of sunlight."
+    source: 1
+    quote: "On June 3 , 1880, Alexander Graham Bell transmitted the first wireless telephone message on his newly invented photophone from the top of the Franklin School in Washington, D.C."
+  - says: "Bell called it the greatest invention he had ever made. Greater, he said, than the telephone."
+    source: 2
+    quote: "Bell regarded the photophone as \"the greatest invention I have ever made; greater than the telephone."
+  - says: "For years, hardly anyone saw why."
+    source: 1
+    quote: "it was many years before the significance of Bell’s work was fully recognized."
+  - says: "A cloud could cut it off. Until much later, there was no good way to carry light safely over a distance."
+    source: 1
+    quote: "Bell’s original photophone failed to protect transmissions from outside interferences, such as clouds, that easily disrupted transport."
+  - says: "Then came fibre optics. Today, the Library of Congress calls the photophone their ancestor."
+    source: 1
+    quote: "Bell’s photophone is recognized as the progenitor of modern fiber optics."
+  - says: "In June eighteen eighty, Alexander Graham Bell was up there, with a mirror."
+    source: 1
+    quote: "On June 3 , 1880, Alexander Graham Bell transmitted the first wireless telephone message on his newly invented photophone from the top of the Franklin School in Washington, D.C."
+  - says: "A good part of the internet travels the way Bell's voice did."
+    source: 1
+    quote: "Bell’s photophone is recognized as the progenitor of modern fiber optics."
+sources:
+  - title: "Today in History: June 3 (Bell's Photophone)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/today-in-history/june-03/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Inventor and Scientist (Alexander Graham Bell Family Papers)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/collections/alexander-graham-bell-papers/articles-and-essays/inventor-and-scientist/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-a-voice-on-a-sunbeam/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 88.4
+    audioBytes: 1415670
+    transcript:
+      totalS: 88.4
+      lines:
+        - text: Look up at the top of this old school building.
+          atS: 0
+          durationS: 2.83
+        - text: In June eighteen eighty, Alexander Graham Bell was up there, with a mirror.
+          atS: 3.44
+          durationS: 4.98
+        - text: He had already invented the telephone, four years before.
+          atS: 8.93
+          durationS: 3.68
+        - text: This was something stranger.
+          atS: 13.21
+          durationS: 1.77
+        - text: A telephone with no wire.
+          atS: 15.36
+          durationS: 1.83
+        - text: Bell and his young assistant, Charles Sumner Tainter, called it the photophone.
+          atS: 17.7
+          durationS: 5.03
+        - text: You spoke into it, towards a thin mirror.
+          atS: 23.34
+          durationS: 2.89
+        - text: Your voice made the mirror shiver.
+          atS: 26.67
+          durationS: 1.9
+        - text: Sunlight bounced off the mirror, and carried those tiny shivers away across the rooftops.
+          atS: 29.27
+          durationS: 5.49
+        - text: At the other end, a crystal of selenium caught the light, and turned it back into a voice.
+          atS: 35.27
+          durationS: 6.21
+        - text: On the third of June, eighteen eighty, from the top of the Franklin School, it worked.
+          atS: 42.3
+          durationS: 5.41
+        - text: The first wireless telephone message in history, carried on a beam of sunlight.
+          atS: 48.15
+          durationS: 5.28
+        - text: Bell called it the greatest invention he had ever made.
+          atS: 54.13
+          durationS: 3.69
+        - text: Greater, he said, than the telephone.
+          atS: 58.2
+          durationS: 2.48
+        - text: For years, hardly anyone saw why.
+          atS: 61.2
+          durationS: 2.4
+        - text: A cloud could cut it off.
+          atS: 63.77
+          durationS: 1.75
+        - text: Until much later, there was no good way to carry light safely over a distance.
+          atS: 66.13
+          durationS: 5.38
+        - text: Then came fibre optics.
+          atS: 72.32
+          durationS: 2.19
+        - text: Today, the Library of Congress calls the photophone their ancestor.
+          atS: 75.63
+          durationS: 4.56
+        - text: So look up at the roof again.
+          atS: 80.89
+          durationS: 1.69
+        - text: A good part of the internet travels the way Bell's voice did.
+          atS: 83.02
+          durationS: 3.69
+        - text: On light.
+          atS: 87.41
+          durationS: 1.01

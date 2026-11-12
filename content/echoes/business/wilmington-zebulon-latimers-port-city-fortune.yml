@@ -1,0 +1,97 @@
+# From W069 of James's Downtown Wilmington collection (2026-10-09).
+# Listening spot: Public sidewalk; associated residence, not his Market Street business premises.
+# Position: NCSU Built Heritage 34.233547,-77.945924; nudged west to east sidewalk of 3rd between Dock and Orange; fits grid (Dock 34.2344) (high confidence).
+# Shares a stop with other echoes, so it sits 8m off the spot to keep its pin tappable.
+id: wilmington-zebulon-latimers-port-city-fortune
+title: "Zebulon Latimer's Port-City Fortune"
+summary: "Zebulon Latimer came from Connecticut and built a career as a commission merchant in Wilmington."
+place: "Latimer House, 126 South Third Street, Wilmington, North Carolina"
+at: { lat: 34.23348, lng: -77.94607 }
+triggerRadiusKm: 0.04
+category: business
+format: short
+durationS: 53
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [wilmington, downtown]
+teaser: "Zebulon Latimer came from Connecticut and built a career as a commission merchant in Wilmington."
+script: |
+  Zebulon Latimer came from Connecticut and built a career as a commission merchant in
+  Wilmington. His business success helped support the substantial house completed here
+  in 1852.
+
+  The museum also connects his wealth with investments in gas, light, and railroad
+  companies. His domestic surroundings belonged to a larger commercial network.
+
+  This is his residence, not the place where every business transaction occurred. The
+  distinction helps you read the house as evidence of economic results rather than the
+  whole economy itself.
+
+  Notice the confidence of its scale from the sidewalk. A merchant's success could
+  become brick, rooms, and furnishings. The facade makes private prosperity visible,
+  while the wider story asks where that prosperity came from and whose work helped
+  sustain the city around it.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Zebulon Latimer came from Connecticut and built a career as a commission merchant in Wilmington."
+    source: 1
+    quote: "Zebulon Latimer (1810-1881) was born and raised in a middle class family in Middlesex County, Connecticut. As a young man, he moved to North Carolina to pursue business ventures and found success in Wilmington."
+  - says: "built a career as a commission merchant in Wilmington"
+    source: 1
+    quote: "He operated a storefront on Market Street as a commission merchant."
+  - says: "His business success helped support the substantial house completed here in 1852."
+    source: 1
+    quote: "Zebulon Latimer married Elizabeth Savage in 1848 at St. James Episcopal Church and moved into their brand new estate in 1852."
+  - says: "The museum also connects his wealth with investments in gas, light, and railroad companies."
+    source: 1
+    quote: "Key investments in gas, light, and railroad companies helped earn much of their wealth."
+  - says: "This is his residence, not the place where every business transaction occurred."
+    source: 1
+    quote: "He operated a storefront on Market Street as a commission merchant."
+  - says: "wider story asks where that prosperity came from and whose work helped sustain the city"
+    source: 1
+    quote: "Also located on the grounds are the Latimer House enslaved quarters, restored after a major preservation effort in the 1970s."
+sources:
+  - title: "About"
+    publisher: "Latimer House Museum, Lower Cape Fear Historical Society"
+    url: https://latimerhouse.org/about/
+    retrievedAt: "2026-11-07"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/wilmington-zebulon-latimers-port-city-fortune/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.4
+    audioBytes: 855605
+    transcript:
+      totalS: 53.4
+      lines:
+        - text: Zebulon Latimer came from Connecticut and built a career as a commission merchant in Wilmington.
+          atS: 0
+          durationS: 5.78
+        - text: His business success helped support the substantial house completed here in 1852.
+          atS: 6.38
+          durationS: 5.79
+        - text: The museum also connects his wealth with investments in gas, light, and railroad companies.
+          atS: 12.78
+          durationS: 5.77
+        - text: His domestic surroundings belonged to a larger commercial network.
+          atS: 19.25
+          durationS: 3.65
+        - text: This is his residence, not the place where every business transaction occurred.
+          atS: 23.41
+          durationS: 4.41
+        - text: The distinction helps you read the house as evidence of economic results rather than the whole economy itself.
+          atS: 28.63
+          durationS: 6.37
+        - text: Notice the confidence of its scale from the sidewalk.
+          atS: 35.61
+          durationS: 3.08
+        - text: A merchant's success could become brick, rooms, and furnishings.
+          atS: 39.01
+          durationS: 4.13
+        - text: The facade makes private prosperity visible, while the wider story asks where that prosperity came from and whose work helped sustain the city around it.
+          atS: 43.65
+          durationS: 9.75

@@ -1,0 +1,152 @@
+# Drafted by Claude Code (2026-10-15) for the Savannah core.
+# Listening spot: The east side of Monterey Square, looking across at the front of Congregation Mickve Israel's synagogue with its tower and pointed windows. Public square and sidewalk.
+# Position: Between the Overture point for Congregation Mickve Israel (32.07090,-81.09387, 20 E Gordon St) and the square's east edge; HABS gives the address as 428 Bull Street on the square (medium confidence).
+id: savannah-the-synagogue-with-the-onion-dome
+title: "The Synagogue with the Onion Dome"
+summary: "A building that looks like a Gothic church, for a congregation that reached Savannah five months after the first colonists."
+place: "Congregation Mickve Israel, Monterey Square, Savannah, Georgia"
+at: { lat: 32.07115, lng: -81.09435 }
+triggerRadiusKm: 0.04
+category: wonders
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, savannah-core, monterey-square, architecture, jewish-history]
+teaser: "Pointed windows, buttresses, a tower. Now look at the very top."
+script: |
+  From the east side of the square, look at the building with the pointed windows and the tower. Buttresses down its sides. A big pointed window over the entrance. Inside, the plan is shaped like a cross, with a nave and transepts.
+
+  You would guess it was a church.
+
+  Now look at the very top of the tower. An onion dome.
+
+  This is a synagogue, the home of Congregation Mickve Israel. It went up between eighteen seventy six and eighteen seventy eight.
+
+  The congregation is far older than the building. Savannah's first colonists arrived in February, seventeen thirty three. In July, a group of about forty Jewish settlers arrived straight from London, paying their own way. They brought two scrolls of the Law with them, and an Ark to keep them in.
+
+  How the congregation grew from there is not clear. In eighteen sixty nine, a historian of the city spent a long time trying to find the date it was founded, and gave up. Its written records begin in seventeen ninety, the year of its charter.
+
+  The scrolls arrived first. The paperwork caught up fifty seven years later.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "This is a synagogue, the home of Congregation Mickve Israel."
+    source: 1
+    quote: "Mickve Israel Synagogue Habs No. Ga-1190 428 Bull Street"
+  - says: "It went up between eighteen seventy six and eighteen seventy eight."
+    source: 1
+    quote: "L876-1878 Henry G. Harrison and J. D. Foley"
+  - says: "An onion dome."
+    source: 1
+    quote: "belfry with onion dome"
+  - says: "Savannah's first colonists arrived in February, seventeen thirty three."
+    source: 3
+    quote: "February 12th the first colonist arrived."
+  - says: "In July, a group of about forty Jewish settlers arrived straight from London, paying their own way."
+    source: 3
+    quote: "1733—July 11th, forty Israelites arrived,"
+  - says: "arrived straight from London, paying their own way"
+    source: 2
+    quote: "a colony of Israelites arrived direct from London,"
+  - says: "paying their own way"
+    source: 2
+    quote: "all coming at their own expense."
+  - says: "They brought two scrolls of the Law with them, and an Ark to keep them in."
+    source: 2
+    quote: "these brought with them two scrolls of the Law and the Ark, or receptacle for the same."
+  - says: "In eighteen sixty nine, a historian of the city spent a long time trying to find the date it was founded, and gave up."
+    source: 2
+    quote: "after the greatest possible labor and research on the part of the writer of this sketch, the task of ascertaining the exact date of organization was compelled to be abandoned."
+  - says: "Its written records begin in seventeen ninety, the year of its charter."
+    source: 2
+    quote: "the old minute book, now in the possession of the con- gregation, contains entries as far back as that year, and the charter of the congregation bears date November 30th, 1790,"
+  - says: "The scrolls arrived first."
+    source: 2
+    quote: "several Jews arrived from England in the year 1733, and that these brought with them two scrolls of the Law"
+  - says: "The paperwork caught up fifty seven years later."
+    source: 2
+    quote: "the charter of the congregation bears date November 30th, 1790,"
+sources:
+  - title: "Mickve Israel Synagogue, 428 Bull Street, Savannah (HABS GA-1190), data pages"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://www.loc.gov/item/ga0132/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Historical record of the city of Savannah (F. D. Lee and J. L. Agnew, 1869)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/01007699/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+  - title: "Illustrated guide to Savannah (Maude Heyward, 1910)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/unk84031503/
+    retrievedAt: "2026-10-15"
+    rights: public-domain
+pronunciations:
+  - written: Mickve Israel
+    say: MIK-vay IZ-ray-el
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-the-synagogue-with-the-onion-dome/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 75.6
+    audioBytes: 1210034
+    transcript:
+      totalS: 75.6
+      lines:
+        - text: From the east side of the square, look at the building with the pointed windows and the tower.
+          atS: 0
+          durationS: 4.59
+        - text: Buttresses down its sides.
+          atS: 5.1
+          durationS: 1.79
+        - text: A big pointed window over the entrance.
+          atS: 7.33
+          durationS: 2.62
+        - text: Inside, the plan is shaped like a cross, with a nave and transepts.
+          atS: 10.46
+          durationS: 4.48
+        - text: You would guess it was a church.
+          atS: 15.32
+          durationS: 1.67
+        - text: Now look at the very top of the tower.
+          atS: 17.38
+          durationS: 2.24
+        - text: An onion dome.
+          atS: 20.22
+          durationS: 1.23
+        - text: This is a synagogue, the home of Congregation Mickve Israel.
+          atS: 21.9
+          durationS: 5.4
+        - text: It went up between eighteen seventy six and eighteen seventy eight.
+          atS: 27.9
+          durationS: 4.03
+        - text: The congregation is far older than the building.
+          atS: 32.44
+          durationS: 2.7
+        - text: Savannah's first colonists arrived in February, seventeen thirty three.
+          atS: 36.44
+          durationS: 4.39
+        - text: In July, a group of about forty Jewish settlers arrived straight from London, paying their own way.
+          atS: 41.64
+          durationS: 5.79
+        - text: They brought two scrolls of the Law with them, and an Ark to keep them in.
+          atS: 48.04
+          durationS: 4.06
+        - text: How the congregation grew from there is not clear.
+          atS: 52.71
+          durationS: 3.1
+        - text: In eighteen sixty nine, a historian of the city spent a long time trying to find the date it was founded, and gave up.
+          atS: 56.41
+          durationS: 7.96
+        - text: Its written records begin in seventeen ninety, the year of its charter.
+          atS: 64.98
+          durationS: 4.41
+        - text: The scrolls arrived first.
+          atS: 69.9
+          durationS: 1.94
+        - text: The paperwork caught up fifty seven years later.
+          atS: 72.12
+          durationS: 3.44

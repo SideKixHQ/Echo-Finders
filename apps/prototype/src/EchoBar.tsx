@@ -124,7 +124,7 @@ export const ECHOBAR_FLOAT = 8;
  */
 export const ECHOBAR_H = 99;
 
-const RARITY_LABEL: Record<string, string> = { rare: "Rare", singular: "Singular" };
+const RARITY_LABEL: Record<string, string> = { rare: "Rare", singular: "Extra rare" };
 
 export function EchoBar({
   items,

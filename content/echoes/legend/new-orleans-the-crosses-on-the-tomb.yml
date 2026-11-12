@@ -8,6 +8,8 @@ place: "St. Louis Cemetery No. 1, Basin Street gate, New Orleans, Louisiana"
 at: { lat: 29.95920, lng: -90.07125 }
 triggerRadiusKm: 0.04
 category: legend
+rare: extra-rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 85
 visibility: at-hand

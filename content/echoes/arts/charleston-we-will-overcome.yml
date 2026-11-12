@@ -1,0 +1,172 @@
+# Drafted by Claude Code (2026-11-11) for the second Charleston pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The west sidewalk of East Bay Street, across from the Cigar Factory's long front between Columbus and Blake streets.
+# Position: The midpoint of East Bay Street between its Columbus and Blake street intersections in the app's Charleston street file; the National Register nomination puts the factory on the block bounded by East Bay, Columbus, Blake and Drake (high confidence). Place evidence is "building": the sources put the picketing outside this factory, not at a point on the sidewalk.
+id: charleston-we-will-overcome
+title: "We Will Overcome"
+summary: "Striking cigar workers, most of them Black women, ended each day on the picket line here in 1945 with a hymn. It became We Shall Overcome."
+place: "The Cigar Factory, 701 East Bay Street, Charleston, South Carolina"
+at: { lat: 32.79800, lng: -79.93440 }
+triggerRadiusKm: 0.06
+category: arts
+inspo:
+  kind: connection
+  evidence: building
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.85
+tags: [charleston, east-side, cigar-factory, labor, civil-rights, we-shall-overcome, music, 1945]
+teaser: "Every evening on the picket line, they sang the same song."
+script: |
+  Look across the street at the long brick factory, five storeys high, with rows of arched windows. It was built as a cotton mill in the eighteen eighties. From nineteen twelve it made cigars, and the city called it the Cigar Factory.
+
+  Inside, the work was divided by race. Black women stripped the stems from the tobacco. White women rolled the cigars.
+
+  In October nineteen forty five, the workers went on strike. Most of them were Black women. They picketed outside this factory for five months, through the winter, until March.
+
+  And at the end of every day on the picket line, they sang.
+
+  It was a hymn from the Black churches. Where the hymn said I, they sang we. We will overcome.
+
+  One account remembers a worker named Lucille Simmons leading it, slowly, every evening.
+
+  The song left Charleston with the strikers. Somewhere on its way, the words were changed again, to We Shall Overcome. It became an anthem of the civil rights movement.
+
+  Look back at the factory.
+
+  It began as the way they ended a day on the picket line.
+detail: >-
+  The National Register nomination (1980) gives the five storey brick mill built about 1882, its rows of segmental headed windows, and its use by the American Cigar Company from 1912 as the Cigar Factory. The Post and Courier's report on the factory's designation as a National Historic Landmark (December 2024) gives the division of work by race and sex, the strike from October 1945 to March 1946 by workers who were mostly Black women, the singing of "We Will Overcome" to close each day of picketing, and the hymn's later change to "We Shall Overcome". The South Carolina Encyclopedia entry on organised labour independently gives the six month strike, Black women as its prime force, and their singing of the song on the line. Lucille Simmons leading it slowly is from a Post and Courier column (2020) quoting the historian Peter Lau, a single source, so the script says "one account". The column also traces the song through the Highlander Folk School to Pete Seeger; the script leaves that out.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look across the street at the long brick factory, five storeys high, with rows of arched windows."
+    source: 1
+    quote: "The main building is five stories of brick in common bond with a flat metal roof"
+  - says: "It was built as a cotton mill in the eighteen eighties."
+    source: 1
+    quote: "The Cigar Factory was built ca. 1882 as a textile mill by the Charleston Manufacturing"
+  - says: "From nineteen twelve it made cigars, and the city called it the Cigar Factory."
+    source: 1
+    quote: "The purchase was concluded in 1912 and the property"
+  - says: "From nineteen twelve it made cigars, and the city called it the Cigar Factory."
+    source: 1
+    quote: "became known locally as the Cigar Factory."
+  - says: "Black women stripped the stems from the tobacco. White women rolled the cigars."
+    source: 2
+    quote: "Black women stemmed the tobacco, while White women rolled the cigars."
+  - says: "In October nineteen forty five, the workers went on strike. Most of them were Black women. They picketed outside this factory for five months, through the winter, until March."
+    source: 2
+    quote: "For five months between October 1945 and March 1946, striking workers, mostly Black women, closed each day of picketing outside the Charleston Cigar Factory by singing \" We Will Overcome .\""
+  - says: "In October nineteen forty five, the workers went on strike. Most of them were Black women. They picketed outside this factory for five months, through the winter, until March."
+    source: 3
+    quote: "then launched a six-month strike from October 1945 to March 1946. Black women were the prime force in the strike"
+  - says: "And at the end of every day on the picket line, they sang."
+    source: 3
+    quote: "Black women on the line sang “We Shall Overcome,” which later became an anthem of the civil rights movement."
+  - says: "It was a hymn from the Black churches."
+    source: 2
+    quote: "The song, adapted from a hymn popular in Black churches and later tweaked further to \"We Shall Overcome,\" became an anthem of the Civil Rights Movement."
+  - says: "Where the hymn said I, they sang we. We will overcome."
+    source: 4
+    quote: "They changed \"I\" to \"we\""
+  - says: "Where the hymn said I, they sang we. We will overcome."
+    source: 2
+    quote: "by singing \" We Will Overcome .\""
+  - says: "The song left Charleston with the strikers."
+    source: 4
+    quote: "The protest version then left Charleston, traveling with tobacco workers to the Highlander Folk School"
+  - says: "One account remembers a worker named Lucille Simmons leading it, slowly, every evening."
+    source: 4
+    quote: "These included Lucille Simmons, who led the workers in a slowed-down take on the song."
+  - says: "Somewhere on its way, the words were changed again, to We Shall Overcome. It became an anthem of the civil rights movement."
+    source: 2
+    quote: "The song, adapted from a hymn popular in Black churches and later tweaked further to \"We Shall Overcome,\" became an anthem of the Civil Rights Movement."
+sources:
+  - title: "Cigar Factory, National Register of Historic Places nomination (1980)"
+    publisher: "National Park Service, NPGallery"
+    url: https://npgallery.nps.gov/NRHP/GetAsset/NRHP/80003658_text
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Site of historic strikes in 1940s, Charleston Cigar Factory now designated a national landmark"
+    publisher: "The Post and Courier"
+    url: https://www.postandcourier.com/news/charleston-cigar-factory-strike-national-landmark/article_d2762c80-bcb1-11ef-81fe-47e392031efc.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Organized labor"
+    publisher: "South Carolina Encyclopedia, University of South Carolina"
+    url: https://www.scencyclopedia.org/sce/entries/organized-labor/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "A world-famous, Charleston-powered protest song sounds again"
+    publisher: "The Post and Courier"
+    url: https://www.postandcourier.com/columnists/a-world-famous-charleston-powered-protest-song-sounds-again/article_00f7e718-a9a9-11ea-bbf0-e3918cbc373a.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-we-will-overcome/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 72.1
+    audioBytes: 1154446
+    transcript:
+      totalS: 72.1
+      lines:
+        - text: Look across the street at the long brick factory, five storeys high, with rows of arched windows.
+          atS: 0
+          durationS: 5.78
+        - text: It was built as a cotton mill in the eighteen eighties.
+          atS: 6.29
+          durationS: 2.82
+        - text: From nineteen twelve it made cigars, and the city called it the Cigar Factory.
+          atS: 9.63
+          durationS: 5.29
+        - text: Inside, the work was divided by race.
+          atS: 15.62
+          durationS: 3.02
+        - text: Black women stripped the stems from the tobacco.
+          atS: 19.14
+          durationS: 2.68
+        - text: White women rolled the cigars.
+          atS: 22.21
+          durationS: 2.1
+        - text: In October nineteen forty five, the workers went on strike.
+          atS: 25.01
+          durationS: 3.77
+        - text: Most of them were Black women.
+          atS: 29.22
+          durationS: 1.7
+        - text: They picketed outside this factory for five months, through the winter, until March.
+          atS: 31.52
+          durationS: 4.98
+        - text: And at the end of every day on the picket line, they sang.
+          atS: 36.94
+          durationS: 3.4
+        - text: It was a hymn from the Black churches.
+          atS: 40.95
+          durationS: 2.19
+        - text: Where the hymn said I, they sang we.
+          atS: 43.65
+          durationS: 2.75
+        - text: We will overcome.
+          atS: 46.79
+          durationS: 1.15
+        - text: One account remembers a worker named Lucille Simmons leading it, slowly, every evening.
+          atS: 49.24
+          durationS: 5.86
+        - text: The song left Charleston with the strikers.
+          atS: 55.7
+          durationS: 2.37
+        - text: Somewhere on its way, the words were changed again, to We Shall Overcome.
+          atS: 58.77
+          durationS: 4.11
+        - text: It became an anthem of the civil rights movement.
+          atS: 63.83
+          durationS: 2.72
+        - text: Look back at the factory.
+          atS: 66.93
+          durationS: 1.49
+        - text: It began as the way they ended a day on the picket line.
+          atS: 68.8
+          durationS: 3.27

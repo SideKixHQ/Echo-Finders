@@ -8,6 +8,8 @@ place: "Presidio Pet Cemetery, McDowell Avenue, Presidio of San Francisco, Calif
 at: { lat: 37.80290, lng: -122.46140 }
 triggerRadiusKm: 0.04
 category: kids
+rare: rare
+rareReason: "Easy to miss"
 format: short
 durationS: 56
 visibility: at-hand

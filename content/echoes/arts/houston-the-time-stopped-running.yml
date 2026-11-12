@@ -9,6 +9,8 @@ at: { lat: 29.73742, lng: -95.39617 }
 triggerRadiusKm: 0.05
 inside: true
 category: arts
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 76
 visibility: at-hand

@@ -1,0 +1,116 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch, following docs/writing-echoes.md.
+# Listening spot: Front Street near Whitehead Street, by the Navy coal depot and storehouse (HABS FL-190), known as Building 1 and later used by the Coast Guard. Stay on the public street; parts of the waterfront here are Coast Guard property.
+# Position: Front Street and Whitehead Street in the app's Key West street file (24.55881, -81.80664), toward Wikidata Q7863130 (U.S. Coast Guard Headquarters, Key West Station, 24.558611, -81.8075); the HABS UTM reference (17 418280 2716110) converts to 24.55677, -81.80694 with the survey's usual southward offset (medium confidence). About 100 m from the Old Post Office and Customshouse, which has no echo.
+id: key-west-walls-waiting-for-a-roof
+title: "Walls Waiting for a Roof"
+summary: "Key West's oldest brick building stood with walls up and no roof for years, until the Civil War finished it."
+place: "U.S. Navy Coal Depot and Storehouse (Building 1), Front and Whitehead Streets, Key West, Florida"
+at: { lat: 24.5587, lng: -81.8070 }
+triggerRadiusKm: 0.04
+category: wonders
+format: short
+durationS: 46
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [key-west, navy, civil-war, brick, waterfront, coast-guard]
+teaser: "The walls were ready in 1856. The money was not."
+script: |
+  Look at the old brick building here by Front Street. It is the oldest brick building on Key West, and the first permanent Navy building on the island.
+
+  In eighteen fifty two, Congress set up a depot for naval supplies here. By eighteen fifty six, the walls were built, ready to receive the roof.
+
+  Then the money ran out.
+
+  For years it stood unfinished. What finished it was a war. When the Civil War came, Key West became the headquarters of the East Gulf Blockade Squadron, and the building was completed.
+
+  The Navy called it Number One Building. Later, the lighthouse service made it its headquarters, and then the Coast Guard.
+
+  The oldest brick building on the island began as four walls, waiting for a roof.
+detail: >-
+  From the Historic American Buildings Survey record (HABS FL-190): the oldest brick building and the first permanent navy building on Key West; a depot for naval supplies established by an Act of Congress of 21 July 1852 on ground used by the Anti-Pirate Squadron from 1823 to 1826; walls ready for the roof by 1856, then unfinished for lack of appropriations until the outbreak of the Civil War, when Key West became headquarters of the East Gulf Blockade Squadron; known as Number 1 Building and the Naval Administration Building until 1932; then headquarters of the 7th Lighthouse District, and of the Coast Guard station after the Lighthouse Service joined the Coast Guard in 1939. "Four walls" is the script's image for walls without a roof. Present use was not checked.
+pronunciations: []
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Look at the old brick building here by Front Street."
+    source: 1
+    quote: "U. S. Navy Coal Depot & Storehouse, Front & Whitehead Streets, Key West"
+  - says: "It is the oldest brick building on Key West, and the first permanent Navy building on the island."
+    source: 1
+    quote: "This building is the oldest brick building and the first permanent navy building to be constructed on Key West."
+  - says: "In eighteen fifty two, Congress set up a depot for naval supplies here."
+    source: 1
+    quote: "By an Act of Congress approved July 21, 1852, a depot for Naval supplies was established at Key West."
+  - says: "By eighteen fifty six, the walls were built, ready to receive the roof."
+    source: 1
+    quote: "By 1856, the walls of the depot were built and ready to receive the roof."
+  - says: "Then the money ran out."
+    source: 1
+    quote: "The necessary appropriations to continue were lacking"
+  - says: "For years it stood unfinished."
+    source: 1
+    quote: "the building remained incomplete until the outbreak of the Civil War."
+  - says: "What finished it was a war."
+    source: 1
+    quote: "the building remained incomplete until the outbreak of the Civil War."
+  - says: "When the Civil War came, Key West became the headquarters of the East Gulf Blockade Squadron, and the building was completed."
+    source: 1
+    quote: "At this time, Key Vfest became headquarters of the East Gulf Blockade Squadron."
+  - says: "The Navy called it Number One Building."
+    source: 1
+    quote: "Upon completion the building became known as \"Number 1 Building\" and served as the Naval Mministration Building until 1932."
+  - says: "Later, the lighthouse service made it its headquarters, and then the Coast Guard."
+    source: 1
+    quote: "The 7th Lighthouse District took over the building as its headquarters. In 1939, the Lighthouse Service became part of the United States Coast Guard, which now uses it as its Key Vfest Station headquarters."
+  - says: "The oldest brick building on the island began as four walls, waiting for a roof."
+    source: 1
+    quote: "By 1856, the walls of the depot were built and ready to receive the roof."
+sources:
+  - title: "U. S. Navy Coal Depot & Storehouse, Front & Whitehead Streets, Key West, HABS FL-190 (record and data pages)"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/fl0151/
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-walls-waiting-for-a-roof/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 46.4
+    audioBytes: 744010
+    transcript:
+      totalS: 46.4
+      lines:
+        - text: Look at the old brick building here by Front Street.
+          atS: 0
+          durationS: 2.9
+        - text: It is the oldest brick building on Key West, and the first permanent Navy building on the island.
+          atS: 3.02
+          durationS: 5.33
+        - text: In eighteen fifty two, Congress set up a depot for naval supplies here.
+          atS: 8.41
+          durationS: 4.35
+        - text: By eighteen fifty six, the walls were built, ready to receive the roof.
+          atS: 12.85
+          durationS: 4.36
+        - text: Then the money ran out.
+          atS: 17.73
+          durationS: 1.49
+        - text: For years it stood unfinished.
+          atS: 19.66
+          durationS: 2.17
+        - text: What finished it was a war.
+          atS: 22.27
+          durationS: 2.12
+        - text: When the Civil War came, Key West became the headquarters of the East Gulf Blockade Squadron, and the building was completed.
+          atS: 25.34
+          durationS: 7.7
+        - text: The Navy called it Number One Building.
+          atS: 33.42
+          durationS: 2.33
+        - text: Later, the lighthouse service made it its headquarters, and then the Coast Guard.
+          atS: 36.46
+          durationS: 4.57
+        - text: The oldest brick building on the island began as four walls, waiting for a roof.
+          atS: 41.63
+          durationS: 4.81

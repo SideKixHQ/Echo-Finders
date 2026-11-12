@@ -9,6 +9,8 @@ place: "Wilmington Railroad Museum, 505 Nutt Street, Wilmington, North Carolina"
 at: { lat: 34.24174, lng: -77.95054 }
 triggerRadiusKm: 0.04
 category: kids
+rare: rare
+rareReason: "Inside, with opening hours"
 format: short
 durationS: 49
 visibility: at-hand
