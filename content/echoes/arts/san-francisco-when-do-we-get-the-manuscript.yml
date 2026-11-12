@@ -1,0 +1,93 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2).
+# Listening spot: The public sidewalk outside City Lights bookstore, 261 Columbus Avenue, North Beach, at Jack Kerouac Alley.
+# Position: City Lights, Columbus Avenue at Jack Kerouac Alley, from general map knowledge (high confidence for the shop).
+id: san-francisco-when-do-we-get-the-manuscript
+title: "When Do We Get the Manuscript?"
+summary: "City Lights published Allen Ginsberg's Howl in 1956. Police arrested a bookseller here, and the trial that followed made the poem."
+place: "City Lights Booksellers, 261 Columbus Avenue, North Beach, San Francisco, California"
+at: { lat: 37.79763, lng: -122.40652 }
+triggerRadiusKm: 0.03
+category: arts
+format: short
+durationS: 61
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.85
+tags: [san-francisco, north-beach, city-lights, howl, beat-generation, ginsberg, ferlinghetti, censorship]
+teaser: "A telegram, a little paperback, an arrest, and a poem nobody could stop."
+script: |
+  Look at the bookshop on the corner. City Lights. A poet named Lawrence Ferlinghetti opened it in nineteen fifty three.
+
+  In nineteen fifty five, he heard a young poet, Allen Ginsberg, read a new poem called Howl. Ferlinghetti sent him a telegram.
+
+  I greet you at the beginning of a great career, it said.
+
+  Then he added a second line. When do we get the manuscript?
+
+  In the fall of nineteen fifty six, he published it, as a little paperback that cost seventy five cents.
+
+  Howl described sex, between men and women, and between men. Not long after it came out, police arrested a bookseller here, and Ferlinghetti was charged with obscenity.
+
+  Ginsberg was delighted. He knew a trial would only make the poem more famous.
+
+  At the end of it, the judge found that Howl had redeeming social importance. It was not obscene.
+
+  Ferlinghetti lived to a hundred and one. His shop is still on the corner.
+detail: >-
+  NPR (2006) gives the 1955 telegram, "I greet you at the beginning of a great career" and the coda "When do we get the manuscript?", police arresting a bookseller at City Lights and charging Ferlinghetti with obscenity, Ginsberg's delight at a trial he knew would enhance the poem's reputation, and Judge Clayton Horn's ruling. NPR (2021, obituary) gives the 75 cent paperback in the fall of 1956, the passages about sex between men and women and between two men, the 1957 arrest, the finding of redeeming social importance, and his death at 101. CBS San Francisco (2021) gives the founding in 1953. Two independent publishers. NPR calls the trial "a long federal trial"; it was in San Francisco municipal court before Judge Horn, so the script does not call it federal.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "A poet named Lawrence Ferlinghetti opened it in nineteen fifty three."
+    source: 3
+    quote: "City Lights was founded by Ferlinghetti, a prominent member of the Beat movement, in 1953."
+  - says: "In nineteen fifty five, he heard a young poet, Allen Ginsberg, read a new poem called Howl. Ferlinghetti sent him a telegram."
+    source: 1
+    quote: "When poet and publisher Lawrence Ferlinghetti heard Howl in 1955, he sent a telegram to Alan Ginsberg."
+  - says: "I greet you at the beginning of a great career, it said."
+    source: 1
+    quote: "\"I greet you at the beginning of a great career,\" he wrote."
+  - says: "Then he added a second line. When do we get the manuscript?"
+    source: 1
+    quote: "who had added a coda to that congratulatory 1955 telegram: \"When do we get the manuscript?\""
+  - says: "In the fall of nineteen fifty six, he published it, as a little paperback that cost seventy five cents."
+    source: 2
+    quote: "In the fall of 1956, he published a little 75-cent paperback, the first edition of Howl by Allen Ginsberg ."
+  - says: "Howl described sex, between men and women, and between men."
+    source: 2
+    quote: "Howl included passages describing sex — both between men and women and between two men"
+  - says: "Not long after it came out, police arrested a bookseller here, and Ferlinghetti was charged with obscenity."
+    source: 1
+    quote: "Not long after it arrived in San Francisco, police arrested a bookseller at City Lights -- the iconic book store -- and charged publisher Ferlinghetti with obscenity."
+  - says: "Ginsberg was delighted. He knew a trial would only make the poem more famous."
+    source: 1
+    quote: "The ensuing trial delighted Ginsberg, who knew it would only enhance the poem's reputation."
+  - says: "At the end of it, the judge found that Howl had redeeming social importance. It was not obscene."
+    source: 2
+    quote: "the poem was found to have redeeming social importance and therefore to not be obscene."
+  - says: "Ferlinghetti lived to a hundred and one."
+    source: 2
+    quote: "Lawrence Ferlinghetti has died in San Francisco. He was 101."
+  - says: "City Lights."
+    source: 3
+    quote: "City Lights was founded by Ferlinghetti, a prominent member of the Beat movement, in 1953."
+sources:
+  - title: "After 50 Years, Ginsberg's 'Howl' Still Resonates (27 October 2006)"
+    publisher: "NPR"
+    url: https://www.npr.org/2006/10/27/6393328/after-50-years-ginsbergs-howl-still-resonates
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Lawrence Ferlinghetti, Beat Poet And Small-Press Publisher, Dies At 101 (23 February 2021)"
+    publisher: "NPR"
+    url: https://www.npr.org/2021/02/23/375206219/lawrence-ferlinghetti-beat-poet-and-small-press-publisher-dies-at-101
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Iconic Beat Poet, City Lights Bookstore Founder Lawrence Ferlinghetti Dies at 101"
+    publisher: "CBS San Francisco"
+    url: https://www.cbsnews.com/sanfrancisco/news/iconic-beat-poet-city-lights-bookstore-founder-lawrence-ferlinghetti-dies-at-101/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+pronunciations:
+  - written: Ferlinghetti
+    say: fer-lin-GET-ee

@@ -1,0 +1,64 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2).
+# Listening spot: The public sidewalk on Sacramento Street along the north side of Grace Cathedral, Nob Hill. The cathedral stands on the block where Charles Crocker's mansion and Mr. Yung's house stood.
+# Position: Sacramento Street between Taylor and Jones, beside Grace Cathedral, from general map knowledge (medium confidence). The exact width and place of Yung's strip on the block is not known, so the script says "on this block".
+id: san-francisco-a-fence-against-the-sun
+title: "A Fence Against the Sun"
+summary: "Charles Crocker wanted this whole block. A Mr. Yung would not sell, so Crocker walled his house in with a fence that shut out the sun."
+place: "Sacramento Street beside Grace Cathedral, Nob Hill, San Francisco, California"
+at: { lat: 37.79222, lng: -122.41335 }
+triggerRadiusKm: 0.05
+category: built
+format: short
+durationS: 62
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [san-francisco, nob-hill, grace-cathedral, crocker, spite-fence, cable-cars]
+teaser: "The richest man on the hill against the one neighbour who would not sell."
+script: |
+  Stand on Sacramento Street, beside the cathedral, and look along its wall. Before the cathedral, there was a mansion on this block. It belonged to Charles Crocker.
+
+  In eighteen seventy seven, Crocker set out to own the whole block. One man would not sell. A Mr. Yung, whose house stood on a strip of land twenty five feet wide, here on Sacramento Street.
+
+  So Crocker had Yung's house hemmed in by a fence. A fence that shut out the sunlight.
+
+  It became a sight. Gripmen stopped their cable cars at the spot so passengers could look. Cab drivers brought tourists to stare. Souvenir hunters pulled pickets off it to take home. People called it the spite fence.
+
+  Neither man gave in. The Crocker family got the land only after both of them had died.
+
+  The mansion stood until nineteen oh six. Crocker's heirs gave the land to the church.
+
+  The cathedral stands on the block Mr. Yung would not sell.
+detail: >-
+  From the 1940 Federal Writers' Project guide to San Francisco, Grace Cathedral entry: the property deeded to the diocese by Crocker's heirs, his mansion standing until 1906, his attempt in 1877 to acquire the whole block, Yung's home on a 25 foot strip on Sacramento Street, the fence that shut out the sunlight, gripmen stopping their cable cars, hackmen bringing tourists, souvenir seekers removing pickets from the "spite" fence, and the Crocker family obtaining the property only after the death of the principals. The guide gives only "a Mr. Yung"; his full name is not in the source. "Both of them" reads "the principals" as Crocker and Yung.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Before the cathedral, there was a mansion on this block. It belonged to Charles Crocker."
+    source: 1
+    quote: "by the heirs of Charles Crocker, whose mansion stood here until 1906."
+  - says: "In eighteen seventy seven, Crocker set out to own the whole block. One man would not sell. A Mr. Yung, whose house stood on a strip of land twenty five feet wide, here on Sacramento Street."
+    source: 1
+    quote: "Attempting to acquire possession of the whole block in 1877, Crocker was defied by a Mr. Yung, whose home occupied a 25-foot strip on Sacramento Street."
+  - says: "So Crocker had Yung's house hemmed in by a fence. A fence that shut out the sunlight."
+    source: 1
+    quote: "In revenge, Crocker had Yung's property hemmed in by a fence that shut out the sunlight."
+  - says: "Gripmen stopped their cable cars at the spot so passengers could look. Cab drivers brought tourists to stare. Souvenir hunters pulled pickets off it to take home. People called it the spite fence."
+    source: 1
+    quote: "gripmen stopped their cable cars at the spot, hackmen brought ogling tourists, and souvenir seekers removed pickets from the \"spite\" fence."
+  - says: "Neither man gave in. The Crocker family got the land only after both of them had died."
+    source: 1
+    quote: "It was not until after the death of the principals that the Crocker family obtained the property."
+  - says: "The mansion stood until nineteen oh six. Crocker's heirs gave the land to the church."
+    source: 1
+    quote: "Property on which the cathedral stands was deeded to the diocese by the heirs of Charles Crocker, whose mansion stood here until 1906."
+  - says: "The cathedral stands on the block Mr. Yung would not sell."
+    source: 1
+    quote: "Property on which the cathedral stands was deeded to the diocese by the heirs of Charles Crocker"
+sources:
+  - title: "San Francisco: The Bay and Its Cities (Federal Writers' Project, American Guide Series, 1940)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/sanfranciscobaya00writrich
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts

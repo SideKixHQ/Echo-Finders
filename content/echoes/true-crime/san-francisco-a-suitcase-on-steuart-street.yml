@@ -1,0 +1,115 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2) and docs/14-true-crime.md.
+# Listening spot: The public sidewalk on Steuart Street just south of Market Street, by the Embarcadero and the Ferry Building. The bomb was on the west side of Steuart Street, just south of Market, per the Library of Congress. Public street; no home, no business door.
+# Position: Steuart Street just south of Market from general map knowledge (medium to high confidence for the block).
+# Conviction status: exonerated. Thomas Mooney and Warren K. Billings were convicted in 1917; Governor Culbert Olson granted Mooney a full pardon on 7 January 1939, which the Washington Times said "absolves Mooney of guilt". Billings's 1939 release is described as a pardon by one Library of Congress text and a commutation by another, so the script says only what is agreed of him. No one else was ever convicted. Everyone named is dead. The victims are not named.
+# Sources: three independent publishers: the Library of Congress film record (its own description), The Washington Times editorial of 10 January 1939, and the 1916 wire report printed in The Brandon News (Mississippi).
+id: san-francisco-a-suitcase-on-steuart-street
+title: "A Suitcase on Steuart Street"
+summary: "In 1916 a bomb in a suitcase killed ten people at a parade here. Two labour men were convicted. The bomber was never found."
+place: "Steuart Street at Market Street, near the Ferry Building, San Francisco, California"
+at: { lat: 37.79385, lng: -122.39478 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 71
+visibility: position-only
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.85
+tags: [san-francisco, embarcadero, ferry-building, 1916, preparedness-day, mooney, bombing, unsolved]
+teaser: "The jury convicted a man. The pardon said they had the wrong one."
+script: |
+  Stand on Steuart Street, just south of Market, and look toward the Ferry Building.
+
+  On Saturday the twenty second of July, nineteen sixteen, the city held a parade here to argue for getting ready for war. It was perhaps the largest parade San Francisco had ever seen. More than fifty thousand marchers.
+
+  At six minutes past two, half an hour in, a bomb went off on the west side of this street. It had been hidden in a cheap suitcase, left beside the marchers. Ten bystanders were killed, and forty wounded.
+
+  The city wanted someone. Police arrested two radical labour men, Thomas Mooney and his assistant, Warren Billings.
+
+  The trial was hasty, and it included several false witnesses. Both men were convicted. Mooney was sentenced to death.
+
+  A commission set up by President Wilson found no clear evidence of his guilt, and his sentence was changed to life in prison.
+
+  He served twenty two years. In January, nineteen thirty nine, a new governor gave Mooney a full pardon.
+
+  Nobody else was ever convicted. Whoever left the suitcase on this street has never been named.
+detail: >-
+  Key facts and their sources. The parade on Saturday 22 July 1916, its size (51,329 marchers), the bomb at 2.06 pm about half an hour in, on the west side of Steuart Street just south of Market, concealed in a suitcase, ten bystanders killed and forty wounded, the arrest of Mooney and Billings, the hasty trial with several false witnesses, the convictions, the death sentence, the Mediation Commission finding no clear evidence of guilt, the 1918 commutation to life, and the 1939 pardon: Library of Congress film record "San Francisco's future" (1916). The corner of Steuart and Market, the cheap suit case by the side of the marchers, and no trace of the bombers at the time: The Brandon News, 27 July 1916, a wire report (it gives seven dead, the early count). Ten killed and forty wounded, twenty two years in San Quentin, Olson's full pardon absolving Mooney, and the bomber likely never to be known: The Washington Times, 10 January 1939. Status exonerated: the script says "pardon" aloud. Victims are not named and no injuries are described. "To argue for getting ready for war" glosses "Preparedness Day"; a reviewer may prefer the name itself.
+editorial: draft
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: exonerated
+  reviewedBy: "TODO: James, before this can leave draft."
+  reviewedAt: "2026-11-12"
+  contentWarning: "This echo describes a bombing at a parade in 1916 in which ten people were killed. No injuries are described in detail."
+claims:
+  - says: "On Saturday the twenty second of July, nineteen sixteen, the city held a parade here to argue for getting ready for war."
+    source: 1
+    quote: "The huge Preparedness Day parade of Saturday, July 22, 1916, was the target date."
+  - says: "It was perhaps the largest parade San Francisco had ever seen. More than fifty thousand marchers."
+    source: 1
+    quote: "The San Francisco Preparedness Day parade of 1916 was perhaps the largest parade ever held in the city. The 3.5 hour procession had 51,329 marchers"
+  - says: "At six minutes past two, half an hour in, a bomb went off on the west side of this street."
+    source: 1
+    quote: "At 2:06pm, about half an hour into the parade, a bomb exploded on the west side of Steuart Street, just south of Market Street, near the Ferry Building."
+  - says: "At six minutes past two, half an hour in, a bomb went off on the west side of this street."
+    source: 3
+    quote: "the mad act of a man who set an infernal machine at the crowded corner of Steuart and Market streets"
+  - says: "It had been hidden in a cheap suitcase, left beside the marchers."
+    source: 3
+    quote: "There is no trace of the men who left the bomb, timed to explode, shel tered in a cheap suit case, by the side of the marchers."
+  - says: "It had been hidden in a cheap suitcase, left beside the marchers."
+    source: 1
+    quote: "The bomb was concealed in a suitcase"
+  - says: "Ten bystanders were killed, and forty wounded."
+    source: 1
+    quote: "ten bystanders were killed and forty wounded in the worst terrorist act in San Francisco history."
+  - says: "Ten bystanders were killed, and forty wounded."
+    source: 2
+    quote: "an explosion which killed ten persons and wounded forty."
+  - says: "Police arrested two radical labour men, Thomas Mooney and his assistant, Warren Billings."
+    source: 1
+    quote: "Two known radical labor leaders -- Thomas Mooney (ca. 1882-1942) and his assistant, Warren K. Billings (1893-1972) -- were arrested."
+  - says: "The trial was hasty, and it included several false witnesses. Both men were convicted."
+    source: 1
+    quote: "In a hasty and bungled trial carried out in a lynch-mob atmosphere that included several false witnesses, the two were convicted."
+  - says: "Mooney was sentenced to death."
+    source: 1
+    quote: "Mooney was sentenced to be executed"
+  - says: "A commission set up by President Wilson found no clear evidence of his guilt, and his sentence was changed to life in prison."
+    source: 1
+    quote: "a Mediation Commission set up by President Wilson found no clear evidence of his guilt. In 1918 Mooney's sentence was changed to life imprisonment"
+  - says: "He served twenty two years."
+    source: 2
+    quote: "THOMAS J. MOONEY last Saturday wound up his twenty-two-year trick in San Quentin Prison, Cal."
+  - says: "In January, nineteen thirty nine, a new governor gave Mooney a full pardon."
+    source: 2
+    quote: "Culbert L. Olson, newly elected California Governor, redeemed one of his campaign promises by granting Mooney a full pardon."
+  - says: "In January, nineteen thirty nine, a new governor gave Mooney a full pardon."
+    source: 1
+    quote: "By 1939, evidence of perjury and false testimony at the trial had become overwhelming. Governor Culbert Olson pardoned both men."
+  - says: "Whoever left the suitcase on this street has never been named."
+    source: 1
+    quote: "The identity of the bomber will probably never be known."
+  - says: "Whoever left the suitcase on this street has never been named."
+    source: 2
+    quote: "the pardon probably means that the mystery concerning how and by whom that Preparedness Day bomb was heaved will never be solved."
+sources:
+  - title: "San Francisco's future (film, 1916), item description"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/00694431/
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Mooney's Case Closed (editorial), The Washington Times, 10 January 1939, page 6"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84026749/1939-01-10/ed-1/?sp=6
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Bomb Concealed In Suit Case (wire report), The Brandon News (Brandon, Mississippi), 27 July 1916, page 1"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86074053/1916-07-27/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
