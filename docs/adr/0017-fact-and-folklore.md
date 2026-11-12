@@ -22,6 +22,9 @@ call itself documented, but a History echo could call itself a legend.
 
 Children's echoes may be either and are labelled as what they are.
 
+*Since ADR-0021 (2026-11-12) the kinds are the 15 topics: fact is every topic but Ghosts &
+legends, Unsolved and Kids; Unsolved, like Kids, is labelled by each echo's certainty.*
+
 **One mark, everywhere** (`TruthMark.tsx`: the card, the player, My Echoes):
 
 | Mark | When |
