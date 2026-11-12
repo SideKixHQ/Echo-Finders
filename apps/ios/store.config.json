@@ -1,0 +1,36 @@
+{
+  "configVersion": 0,
+  "apple": {
+    "categories": [
+      "TRAVEL",
+      "EDUCATION"
+    ],
+    "info": {
+      "en-US": {
+        "title": "Echo Finders: History & Ghosts",
+        "subtitle": "Walking & driving audio tours",
+        "description": "Echo Finders plays short narrated echoes of the place you are passing: its history, its people, its ghosts and legends, its true crime and the films made there. Walk a street, and each echo plays when you reach the spot it belongs to.\n\nAn echo is one place, told in a few minutes by a narrator. History, true crime and people echoes are checked against sources before they are published. Ghost echoes and local legends are always marked as legend, so you know which is which.\n\nWHERE IT WORKS\nWilmington and the Cape Fear coast, North Carolina: Wilmington, Wrightsville Beach, Carolina Beach, Kure Beach, Fort Fisher and Southport.\nSavannah, Georgia.\nCharleston, South Carolina.\nNew Orleans, Louisiana.\nWashington, DC.\nPhiladelphia, Pennsylvania.\nNew York City.\nBoston, Massachusetts.\nHouston, Texas.\nNew cities and towns are added as their echoes are finished.\n\nHOW IT WORKS\nStart where you are. Echo Finders uses your location to find the echoes nearby and plays each one as you arrive.\nWalk with your phone in your pocket: echoes start on their own as you reach them, with the screen off.\nDownload a city before you go and listen with no signal.\nSave the echoes you like and come back to them later.\n\nWHAT YOU HEAR\nHistory: what happened on the spot.\nGhosts and legends: haunted houses and local lore, marked as legend.\nTrue crime: real cases, told from court records and reporting.\nFilm locations: where films and shows were shot.\nNotable people: who lived, worked or was born here.\nUnsolved mysteries, disasters, music, firsts and hidden places.\n\nWHAT IT COSTS\nYour first echoes are free.\nWeek Pass: one city for 7 days.\nCity Pass: one city for good, including echoes added there later.\nAll-Access: every city for a year. It renews automatically unless you cancel at least 24 hours before the end of the year, which you can do in your Apple Account settings.\n\nNo account to create. Your exact location stays on your phone.\n\nTerms of Use: https://echofinders.com/terms\nPrivacy Policy: https://echofinders.com/privacy",
+        "keywords": [
+          "savannah",
+          "charleston",
+          "new",
+          "orleans",
+          "york",
+          "nyc",
+          "boston",
+          "philadelphia",
+          "dc",
+          "wilmington",
+          "haunted",
+          "local",
+          "houston"
+        ],
+        "releaseNotes": "The first version of Echo Finders for iPhone. Echoes play as you walk through Wilmington and the Cape Fear coast, Savannah, Charleston, New Orleans, Washington DC, Philadelphia, New York, Boston and Houston. Walk with your phone in your pocket, and download a city to listen with no signal.",
+        "promoText": "New on the Cape Fear coast: echoes from Wilmington to Fort Fisher and Southport. Download a city before you go and listen with no signal.",
+        "marketingUrl": "https://echofinders.com",
+        "supportUrl": "https://echofinders.com",
+        "privacyPolicyUrl": "https://echofinders.com/privacy"
+      }
+    }
+  }
+}
