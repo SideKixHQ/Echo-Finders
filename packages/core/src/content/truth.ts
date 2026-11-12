@@ -23,6 +23,10 @@ export const FACT_CATEGORIES: readonly EchoCategory[] = [
   "food-drink",
   "arts",
   "inspo",
+  "disasters",
+  "music",
+  "firsts",
+  "hidden",
 ];
 
 /**
@@ -30,6 +34,9 @@ export const FACT_CATEGORIES: readonly EchoCategory[] = [
  * echoes are either, and are labelled as what they are.
  */
 export const FOLKLORE_CATEGORIES: readonly EchoCategory[] = ["legend"];
+
+// `unsolved` is in neither list on purpose: it holds documented mysteries and treasure
+// legends alike, and the certainty on each echo says which (see `ECHO_CATEGORIES`).
 
 /**
  * The mark a listener sees.

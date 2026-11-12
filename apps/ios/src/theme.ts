@@ -65,13 +65,18 @@ export const CATEGORY_COLOR: Record<EchoCategory, string> = {
   built: "#7fb4ff",
   land: "#7fd4c1",
   inspo: "#d7f75b",
+  unsolved: "#e8ecf5",
+  disasters: "#ff5c4d",
+  music: "#c38bff",
+  firsts: "#ffc21a",
+  hidden: "#9aa6bd",
 };
 
 /** What each category is called, the web app's `CATEGORY_LABEL`. */
 export const CATEGORY_LABEL: Record<EchoCategory, string> = {
   history: "History",
   "true-crime": "True crime",
-  arts: "Arts & music",
+  arts: "Arts",
   kids: "Kids",
   legend: "Ghosts",
   people: "People",
@@ -79,4 +84,9 @@ export const CATEGORY_LABEL: Record<EchoCategory, string> = {
   built: "Landmarks",
   land: "Landmarks",
   inspo: "Inspo",
+  unsolved: "Unsolved",
+  disasters: "Disasters",
+  music: "Music",
+  firsts: "Firsts",
+  hidden: "Hidden",
 };

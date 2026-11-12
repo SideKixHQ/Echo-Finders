@@ -143,6 +143,13 @@
   --cat-built: #7fb4ff;
   --cat-land: #7fd4c1;
   --cat-inspo: #d7f75b;
+  /* The five of 2026-11-12 (approved canvas "New Categories"). With fourteen, some hues sit
+     close (firsts gold, people pale gold); the pin icon carries the difference. */
+  --cat-unsolved: #e8ecf5;
+  --cat-disasters: #ff5c4d;
+  --cat-music: #c38bff;
+  --cat-firsts: #ffc21a;
+  --cat-hidden: #9aa6bd;
 
   --stage: #07080c;
   --rgb-hair: 216, 220, 229;
@@ -317,6 +324,12 @@
   --cat-built: #1d57b0;
   --cat-land: #1a5e51;
   --cat-inspo: #556100;
+  /* Each clears 4.6:1 on white and on the composed chip, as above. */
+  --cat-unsolved: #3d4380;
+  --cat-disasters: #a02417;
+  --cat-music: #7232b8;
+  --cat-firsts: #6e5300;
+  --cat-hidden: #3f4d60;
 
 }
 
@@ -579,6 +592,11 @@ body {
 .cat-kids { --cat: var(--cat-kids); color: var(--cat); }
 .cat-arts { --cat: var(--cat-arts); color: var(--cat); }
 .cat-inspo { --cat: var(--cat-inspo); color: var(--cat); }
+.cat-unsolved { --cat: var(--cat-unsolved); color: var(--cat); }
+.cat-disasters { --cat: var(--cat-disasters); color: var(--cat); }
+.cat-music { --cat: var(--cat-music); color: var(--cat); }
+.cat-firsts { --cat: var(--cat-firsts); color: var(--cat); }
+.cat-hidden { --cat: var(--cat-hidden); color: var(--cat); }
 .cat-people { --cat: var(--cat-people); color: var(--cat); }
 .cat-food-drink { --cat: var(--cat-food-drink); color: var(--cat); }
 .cat-built { --cat: var(--cat-built); color: var(--cat); }
@@ -1728,6 +1746,11 @@ body {
   --cat-built: #d8dce5;
   --cat-land: #7fd4c1;
   --cat-inspo: #d7f75b;
+  --cat-unsolved: #e8ecf5;
+  --cat-disasters: #ff5c4d;
+  --cat-music: #c38bff;
+  --cat-firsts: #ffc21a;
+  --cat-hidden: #9aa6bd;
   --muted: #aeb5c2;
   /* Its glows and shadows are the dark scheme's too: they were literals until the light
      scheme was redone, and the camera frame is the one place they should stay that way. */
