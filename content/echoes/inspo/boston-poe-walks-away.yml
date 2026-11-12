@@ -12,7 +12,7 @@ inspo:
   kind: before-fame
   evidence: area
 format: short
-durationS: 80
+durationS: 72
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -38,7 +38,7 @@ pronunciations:
     say: "ROCK-nak"
 detail: >-
   The Boston Globe (5 October 2014) gives the unveiling at Boylston and Charles streets near Boston Common, Poe as the city's "sour native son", the statue facing away from the Frog Pond "to represent his disdain for Bostonians" as he walks toward his birthplace on Carver Street, and the briefcase with a larger than life raven and a human heart. WBUR (4 October 2014) gives his birth in Boston in 1809, the coffin like wooden box and Paul Lewis's words, The Tell Tale Heart first published in Boston, and his insults to local writers including Longfellow; WBUR (April 2014) adds that the city's writers "reciprocated in earnest" and the sculptor's name. CBS Boston (AP) gives "more than 160 years after his death". Inspo kind is before-fame and evidence area: Poe was born nearby, on Carver Street, not at this corner.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Edgar Allan Poe, born in Boston in eighteen o nine."
@@ -110,3 +110,71 @@ sources:
     url: https://www.cbsnews.com/boston/news/edgar-allen-poe-statue-being-unveiled-in-boston/
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-poe-walks-away/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.9
+    audioBytes: 1151102
+    transcript:
+      totalS: 71.9
+      lines:
+        - text: Find the bronze man striding along the corner, like a commuter rushing to catch the train.
+          atS: 0
+          durationS: 5.63
+        - text: Edgar Allan Poe, born in Boston in eighteen o nine.
+          atS: 5.75
+          durationS: 3.62
+        - text: He did not much care for the place.
+          atS: 9.45
+          durationS: 1.81
+        - text: As a critic, he insulted a whole row of the city's writers, Longfellow among them.
+          atS: 11.38
+          durationS: 5.35
+        - text: They returned the favour.
+          atS: 17.11
+          durationS: 1.53
+        - text: So it took Boston more than a hundred and sixty years after his death to put up a statue.
+          atS: 19.03
+          durationS: 5.13
+        - text: It was unveiled here in twenty fourteen.
+          atS: 24.6
+          durationS: 2.8
+        - text: Look which way he is walking.
+          atS: 27.84
+          durationS: 1.75
+        - text: The sculptor, Stefanie Rocknak, turned his back on the Frog Pond, on the Common, to show his disdain for Bostonians.
+          atS: 30.71
+          durationS: 7.42
+        - text: He is striding toward his birthplace, on Carver Street.
+          atS: 38.73
+          durationS: 3.87
+        - text: Now look at the briefcase.
+          atS: 43.11
+          durationS: 1.32
+        - text: It is overflowing.
+          atS: 44.55
+          durationS: 1.34
+        - text: A raven, larger than life.
+          atS: 46.27
+          durationS: 2.26
+        - text: And a human heart.
+          atS: 48.91
+          durationS: 1.51
+        - text: The Tell Tale Heart was first published here in Boston.
+          atS: 51.72
+          durationS: 3.07
+        - text: Before the unveiling, the statue stood in the ground for more than a week, hidden in a wooden box.
+          atS: 55.11
+          durationS: 5.32
+        - text: The man who led the campaign said that made perfect sense.
+          atS: 60.81
+          durationS: 3.32
+        - text: Poe was emerging from a coffin.
+          atS: 64.57
+          durationS: 2.08
+        - text: Boston took its time to welcome him home.
+          atS: 67.16
+          durationS: 2.52
+        - text: He still will not look at it.
+          atS: 70.12
+          durationS: 1.76

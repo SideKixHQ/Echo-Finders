@@ -9,7 +9,7 @@ at: { lat: 42.33285, lng: -71.04550 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 93
+durationS: 86
 visibility: landmark-visible
 certainty: documented
 minAge: 0
@@ -37,7 +37,7 @@ detail: >-
 pronunciations:
   - written: "Rufus Putnam"
     say: "ROO-fus PUT-num"
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "It stands on the last of the hills that once looked down on Boston and its harbour."
@@ -96,3 +96,62 @@ sources:
     url: https://www.nps.gov/places/dorchester-heights.htm
     retrievedAt: "2026-11-12"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-a-fort-you-could-carry/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85.9
+    audioBytes: 1375546
+    transcript:
+      totalS: 85.9
+      lines:
+        - text: Look up at the white marble tower.
+          atS: 0
+          durationS: 2
+        - text: It stands on the last of the hills that once looked down on Boston and its harbour.
+          atS: 2.09
+          durationS: 4.54
+        - text: In the winter of seventeen seventy six, the British held Boston, and the Americans had them trapped.
+          atS: 7.14
+          durationS: 5.9
+        - text: Whoever fortified this hill could fire down on the town.
+          atS: 13.55
+          durationS: 3.59
+        - text: But the ground was rocky and frozen.
+          atS: 17.74
+          durationS: 2.57
+        - text: Nobody could dig a fort into it fast enough.
+          atS: 20.69
+          durationS: 2.6
+        - text: Then one of Washington's officers, Rufus Putnam, came across a word in a military engineering book.
+          atS: 24.24
+          durationS: 7.48
+        - text: Chandeliers.
+          atS: 32.16
+          durationS: 1.13
+        - text: He did not know what it meant.
+          atS: 33.89
+          durationS: 1.58
+        - text: It meant wooden frames, built somewhere else and carried in, then filled with bundles of sticks and bales of hay to stop the shot.
+          atS: 35.91
+          durationS: 8.19
+        - text: A fort you could bring with you.
+          atS: 44.7
+          durationS: 1.9
+        - text: The army spent February nailing them together.
+          atS: 47.11
+          durationS: 2.94
+        - text: Then, in one night in March, more than twelve hundred men and three hundred oxcarts hauled everything up this hill as quietly as they could.
+          atS: 50.86
+          durationS: 9.13
+        - text: At dawn on the fifth of March, Boston woke up to cannon above it.
+          atS: 60.8
+          durationS: 4.09
+        - text: "The British general, William Howe, is reported to have said: My God, these fellows have done more work in one night than I could make my army do in three months."
+          atS: 65.49
+          durationS: 10.53
+        - text: Twelve days later, the British left Boston.
+          atS: 77.32
+          durationS: 3.01
+        - text: It began with an officer who did not know what a word meant, and looked it up.
+          atS: 81.28
+          durationS: 4.63

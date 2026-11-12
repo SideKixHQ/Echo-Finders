@@ -9,7 +9,7 @@ at: { lat: 42.35450, lng: -71.07110 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 66
+durationS: 65
 visibility: at-hand
 certainty: documented
 minAge: 8
@@ -36,7 +36,7 @@ script: |
   Forty feet of stone, and not one name on it.
 detail: >-
   The Boston Globe (2014) gives the Ether Monument commemorating the discovery, Wells as a Connecticut dentist who tried nitrous oxide until a disastrous demonstration in the same amphitheater, Morton's later demonstration, Wells and Dr. Charles Jackson making claims "that were never sorted out", the aftermath that "ravaged all of their lives", the Hartford statue inscribed "Horace Wells, discoverer of anesthesia", and that the Boston monument's inscription "praises the discovery for its relief of human suffering, but mentions no names at all". The Globe (2024) gives 1868 as the date, the oldest monument in the Public Garden, about 40 feet tall, and the 1846 demonstration. One flag: the 2024 piece also says the monument "honors the Boston dentist" credited with the first public use; the 2014 piece and the script follow the inscription, which names no one. Both are Globe articles, so this is single-source by publisher. "Boston decided not to decide" is the script's reading, not a sourced claim. The position needs checking on site.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Find the tall stone monument, the oldest in the Public Garden."
@@ -98,3 +98,62 @@ sources:
     url: https://www.bostonglobe.com/2024/08/23/lifestyle/boston-hidden-secret-guide-tourist-guide-destinations-where-to-go/
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-monument-that-names-nobody/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65.4
+    audioBytes: 1047448
+    transcript:
+      totalS: 65.4
+      lines:
+        - text: Find the tall stone monument, the oldest in the Public Garden.
+          atS: 0
+          durationS: 3.65
+        - text: It went up in eighteen sixty eight, about forty feet of it, to celebrate ether.
+          atS: 3.69
+          durationS: 4.84
+        - text: Twenty two years earlier, at Massachusetts General Hospital, ether had been used in public to put a patient under for surgery.
+          atS: 8.66
+          durationS: 7.7
+        - text: Read the inscription.
+          atS: 16.87
+          durationS: 1.28
+        - text: It praises the discovery for the relief of human suffering.
+          atS: 18.59
+          durationS: 3.64
+        - text: Now look for a name.
+          atS: 22.92
+          durationS: 1.49
+        - text: There isn't one.
+          atS: 24.83
+          durationS: 1.05
+        - text: By then, three men had claimed the discovery.
+          atS: 26.47
+          durationS: 2.83
+        - text: William Morton, the dentist who gave the ether that day.
+          atS: 29.75
+          durationS: 3.62
+        - text: Charles Jackson, a doctor.
+          atS: 34.06
+          durationS: 2.09
+        - text: And Horace Wells, a Connecticut dentist, who had tried laughing gas in the same operating theatre, and failed.
+          atS: 36.97
+          durationS: 7.49
+        - text: Their claims were never sorted out.
+          atS: 45.15
+          durationS: 2.11
+        - text: The fight ravaged all of their lives.
+          atS: 47.78
+          durationS: 2.58
+        - text: In Hartford, Connecticut, there is a statue of Horace Wells.
+          atS: 50.8
+          durationS: 3.71
+        - text: Its inscription calls him the discoverer of anaesthesia.
+          atS: 54.95
+          durationS: 3.54
+        - text: Boston decided not to decide.
+          atS: 59.1
+          durationS: 2.15
+        - text: Forty feet of stone, and not one name on it.
+          atS: 61.76
+          durationS: 3.63

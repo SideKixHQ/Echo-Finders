@@ -9,7 +9,7 @@ at: { lat: 42.36262, lng: -71.06830 }
 triggerRadiusKm: 0.06
 category: history
 format: short
-durationS: 76
+durationS: 70
 visibility: landmark-visible
 certainty: documented
 minAge: 8
@@ -37,7 +37,7 @@ pronunciations:
     say: "LEE-thee-on"
 detail: >-
   All three sources are The Boston Globe, so this is single-source by publisher. The Globe (2014, on the play Ether Dome) gives the first demonstration at Massachusetts General Hospital on 16 October 1846, the surgical amphitheater atop the Bulfinch Building, Morton's name Letheon "after the mythological river of forgetting", that it was "really sulfuric ether with oil of orange added to disguise its odor", the patient "having a tumor removed from his neck", Morton's demand that Warren sign a license and his plan to patent it, and the renaming of the amphitheater "The Ether Dome". The Globe (2012, on the Russell Museum) gives the sponge soaked in ether, the skepticism, the patient feeling no pain and Warren's "Gentlemen, this is no humbug!"; it calls the tumour a jaw tumour, the 2014 piece a neck tumour, so the script says only "a tumour". The Globe (2024) gives more than 8,000 surgeries in front of spectators and Morton as a Boston dentist. The patient is often named as Gilbert Abbott; no fetched source names him, so the script does not. Rival claims to the discovery are in the Ether Monument echo.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Under that dome is an old operating theatre."
@@ -98,3 +98,65 @@ sources:
     url: https://www.bostonglobe.com/2024/08/23/lifestyle/boston-hidden-secret-guide-tourist-guide-destinations-where-to-go/
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-a-smell-of-oranges/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 70.1
+    audioBytes: 1123099
+    transcript:
+      totalS: 70.1
+      lines:
+        - text: Look up at the granite building with the small dome on top.
+          atS: 0
+          durationS: 3.34
+        - text: Under that dome is an old operating theatre.
+          atS: 3.67
+          durationS: 3.06
+        - text: More than eight thousand operations were done in it in front of spectators.
+          atS: 7.34
+          durationS: 4.41
+        - text: On the sixteenth of October, eighteen forty six, one of them changed medicine.
+          atS: 12.45
+          durationS: 4.97
+        - text: A Boston dentist, William Morton, stood beside a patient who was about to have a tumour cut out.
+          atS: 18.37
+          durationS: 5.47
+        - text: The doctors in the seats were sceptical.
+          atS: 24.35
+          durationS: 2.3
+        - text: Morton had the man breathe from a sponge.
+          atS: 27.16
+          durationS: 2.67
+        - text: Morton called his gas Letheon, after the river of forgetting in the old myths.
+          atS: 30.52
+          durationS: 5.83
+        - text: It was really ether, with oil of orange added to disguise the smell.
+          atS: 36.95
+          durationS: 4.47
+        - text: The operation went ahead.
+          atS: 42.03
+          durationS: 1.56
+        - text: The patient felt no pain.
+          atS: 44.02
+          durationS: 1.68
+        - text: "And the chief surgeon, John Collins Warren, turned to the room and said: Gentlemen, this is no humbug."
+          atS: 46.09
+          durationS: 7.02
+        - text: Morton had a reason for the orange.
+          atS: 53.56
+          durationS: 1.9
+        - text: He planned to patent his gas, and he made Warren sign a licence to use it.
+          atS: 55.84
+          durationS: 4.18
+        - text: The room was renamed for what happened in it.
+          atS: 60.63
+          durationS: 2.53
+        - text: The Ether Dome.
+          atS: 63.54
+          durationS: 1.06
+        - text: The discovery was the ether.
+          atS: 65.04
+          durationS: 1.79
+        - text: The orange was there so nobody would know.
+          atS: 67.15
+          durationS: 2.97

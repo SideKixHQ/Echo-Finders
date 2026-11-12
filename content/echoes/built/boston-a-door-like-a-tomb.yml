@@ -9,7 +9,7 @@ at: { lat: 42.35290, lng: -71.06460 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 76
+durationS: 69
 visibility: at-hand
 certainty: documented
 minAge: 10
@@ -34,7 +34,7 @@ script: |
   America's first subway goes down past a graveyard, through a door that looks like a tomb.
 detail: >-
   The National Historic Landmark nomination for the Tremont Street Subway (National Park Service) gives ground broken on 28 March 1895, the Public Garden incline to Park Street segment opening on 1 September 1897, the first underground public transportation system in the United States and only the fifth in the world, the Classical Revival kiosks at Boylston and Park streets described as "resembling mausoleums", the Boylston kiosks "essentially unaltered", and the reinterment of 910 bodies exhumed from colonial burial grounds. WBUR (2024) independently gives the Central Burying Ground dug in 1756 along Boylston and Tremont streets, 90 bodies in undisturbed tombs and another 820 found crushed, piled or scattered, the crowds and the undertaker. The Boston Globe (2022) gives the MBTA's statement that the 1897 tunnel still connects the Green Line's Boylston and Park Street stations. "Only four cities had a subway before it" restates "fifth in the world"; the nomination names London, Glasgow and Paris among them.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "When it was new, critics said it resembled a mausoleum."
@@ -101,3 +101,56 @@ sources:
     url: https://www.bostonglobe.com/2022/09/01/metro/americas-first-subway-opened-boston-125-years-ago-sept-1/
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-a-door-like-a-tomb/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.5
+    audioBytes: 1097185
+    transcript:
+      totalS: 68.5
+      lines:
+        - text: Look at the small granite entrance to Boylston station, at the corner of the Common.
+          atS: 0
+          durationS: 4.84
+        - text: When it was new, critics said it resembled a mausoleum.
+          atS: 5.22
+          durationS: 3.54
+        - text: They had more of a point than they knew.
+          atS: 9.21
+          durationS: 2.07
+        - text: Below Tremont Street is the first subway in America.
+          atS: 12.57
+          durationS: 3.27
+        - text: Ground was broken in eighteen ninety five.
+          atS: 16.23
+          durationS: 2.59
+        - text: On the first of September, eighteen ninety seven, the first stretch opened, from the Public Garden to Park Street.
+          atS: 19.33
+          durationS: 6.82
+        - text: Only four cities in the world had a subway before it.
+          atS: 26.53
+          durationS: 3.09
+        - text: But the digging ran along the old Central Burying Ground, a short walk west of here, on the Boylston Street side of the Common.
+          atS: 29.94
+          durationS: 7.72
+        - text: And the crews found people.
+          atS: 38.27
+          durationS: 1.71
+        - text: Ninety in their tombs, undisturbed.
+          atS: 40.41
+          durationS: 2.96
+        - text: About eight hundred and twenty more, crushed, or piled, or scattered in pieces through the ground.
+          atS: 43.89
+          durationS: 6.34
+        - text: Crowds came to watch.
+          atS: 51.04
+          durationS: 1.37
+        - text: An undertaker was hired to bury them again.
+          atS: 52.56
+          durationS: 2.38
+        - text: The kiosk in front of you is essentially as it was built, and still in use, on what is now the Green Line.
+          atS: 55.54
+          durationS: 6.61
+        - text: America's first subway goes down past a graveyard, through a door that looks like a tomb.
+          atS: 63.26
+          durationS: 5.24

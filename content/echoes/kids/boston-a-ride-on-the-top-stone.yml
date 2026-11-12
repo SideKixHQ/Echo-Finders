@@ -9,7 +9,7 @@ at: { lat: 42.37562, lng: -71.06138 }
 triggerRadiusKm: 0.05
 category: kids
 format: short
-durationS: 75
+durationS: 54
 visibility: landmark-visible
 certainty: documented
 voice: UrTldiIxfedDl9tlesyS
@@ -33,7 +33,7 @@ script: |
   Look up at the top again. Would you have ridden it?
 detail: >-
   Everything comes from the National Park Service article Building the Bunker Hill Monument: the capstone, a pyramid shaped granite block of about three tons, lifted by a hoist powered by the steam engine "similar to lifting a fish from the sea with a rod and reel", the workman who volunteered to ride atop it as it rose "that frightful height between heaven and earth" (the article quotes a period account), the 26 gun salute, one for every state, the finished height of 221 feet in July 1842, about 3,000 blocks, and large blocks averaging five tons. Single source. The volunteer's name is not given. Kids voice per casting.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "It is called the capstone, and it weighs about three tons."
@@ -75,3 +75,56 @@ sources:
     url: https://www.nps.gov/articles/000/building-the-bunker-hill-monument.htm
     retrievedAt: "2026-11-12"
     rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/boston-a-ride-on-the-top-stone/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 54.1
+    audioBytes: 867308
+    transcript:
+      totalS: 54.1
+      lines:
+        - text: Look up, all the way to the very top of the tall stone tower.
+          atS: 0
+          durationS: 4.05
+        - text: Right at the tip is a stone shaped like a pyramid.
+          atS: 4.66
+          durationS: 2.93
+        - text: It is called the capstone, and it weighs about three tons.
+          atS: 7.96
+          durationS: 3.56
+        - text: How do you get a stone that heavy all the way up there?
+          atS: 12.13
+          durationS: 2.42
+        - text: The builders had a steam engine and a clever lifting machine.
+          atS: 15.15
+          durationS: 3.14
+        - text: It pulled the capstone up from the ground, a bit like reeling a fish out of the sea with a fishing rod.
+          atS: 18.67
+          durationS: 5.49
+        - text: And one of the workmen volunteered to ride on top of it.
+          atS: 24.54
+          durationS: 2.87
+        - text: All the way up, to the top of the monument, two hundred and twenty one feet in the air.
+          atS: 27.79
+          durationS: 4.6
+        - text: Someone at the time called it that frightful height between heaven and earth.
+          atS: 33.2
+          durationS: 3.78
+        - text: When the capstone was in place, cannons fired twenty six times.
+          atS: 37.31
+          durationS: 4.11
+        - text: One for every state in the country back then.
+          atS: 41.81
+          durationS: 2.26
+        - text: The whole tower is made of about three thousand granite blocks.
+          atS: 44.31
+          durationS: 3.27
+        - text: Lots of them weigh five tons each, more than the capstone.
+          atS: 47.83
+          durationS: 3.11
+        - text: Look up at the top again.
+          atS: 51.27
+          durationS: 1.31
+        - text: Would you have ridden it?
+          atS: 52.83
+          durationS: 1.32

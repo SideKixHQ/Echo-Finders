@@ -9,7 +9,7 @@ at: { lat: 42.35559, lng: -71.06970 }
 triggerRadiusKm: 0.04
 category: kids
 format: short
-durationS: 90
+durationS: 83
 visibility: at-hand
 certainty: documented
 voice: UrTldiIxfedDl9tlesyS
@@ -40,7 +40,7 @@ pronunciations:
     say: "rah-EE-sah GOR-buh-chof"
 detail: >-
   WBUR (31 March 2017) gives the nine bronze ducks and the eight ducklings' names, McCloskey's 1941 book, Nancy Schön's 1987 sculpture, the 1991 Moscow copy given by Barbara Bush to Raisa Gorbachev, their 1990 visit to the sculpture with a group of children after the Wellesley commencement, "The story goes that Gorbachev admired the ducklings", McCloskey's condition that it be "for children and it's not political", the plaque giving it to the children of the Soviet Union, and the Moscow park (Novodevichy). WBUR (27 November 2017) gives Schön's promise not to make copies, the one exception for Moscow, and her saying no to requests. NPR (2016) gives the crate of ducks McCloskey brought back to his studio apartment in New York to draw from, and his daughter's line that Mrs. Mallard's head is "so shiny". The two WBUR pieces are one publisher; NPR is independent for the book. "Not been friends" softens WBUR's "decades-long divisions" for children. Kids voice per casting.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "There are eight."
@@ -119,3 +119,89 @@ sources:
     url: https://www.npr.org/transcripts/473565285
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/boston-the-ducklings-twins/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 82.6
+    audioBytes: 1322047
+    transcript:
+      totalS: 82.6
+      lines:
+        - text: Find Mrs.
+          atS: 0
+          durationS: 0.94
+        - text: Mallard and her ducklings, marching in a line.
+          atS: 0.97
+          durationS: 2.94
+        - text: Can you count them?
+          atS: 4.19
+          durationS: 1.02
+        - text: There are eight.
+          atS: 6.17
+          durationS: 0.84
+        - text: Jack, Kack, Lack, Mack, Nack, Ouack, Pack and Quack.
+          atS: 7.33
+          durationS: 5.56
+        - text: They come from a book called Make Way for Ducklings, by Robert McCloskey, from nineteen forty one.
+          atS: 13.33
+          durationS: 5.92
+        - text: To draw the ducks, he bought a whole crate of real ones, and took them home to his apartment.
+          atS: 19.69
+          durationS: 5.21
+        - text: This sculpture was made by an artist named Nancy Schön, in nineteen eighty seven.
+          atS: 25.18
+          durationS: 5.27
+        - text: And she made Mr.
+          atS: 30.73
+          durationS: 0.91
+        - text: McCloskey a promise.
+          atS: 31.66
+          durationS: 1.45
+        - text: No copies.
+          atS: 33.44
+          durationS: 0.89
+        - text: Lots of people asked her for ducks of their own.
+          atS: 34.61
+          durationS: 2.57
+        - text: She said no.
+          atS: 37.45
+          durationS: 0.89
+        - text: Except once.
+          atS: 38.67
+          durationS: 1.27
+        - text: In nineteen ninety, the wife of the American president, Barbara Bush, brought a special guest here with a group of children.
+          atS: 40.89
+          durationS: 6.34
+        - text: Raisa Gorbachev, the wife of the leader of the Soviet Union.
+          atS: 47.83
+          durationS: 5.33
+        - text: For a very long time, those two countries had not been friends.
+          atS: 53.49
+          durationS: 4.16
+        - text: The story goes that Mrs.
+          atS: 57.92
+          durationS: 1.38
+        - text: Gorbachev loved the ducklings.
+          atS: 59.34
+          durationS: 2.03
+        - text: So in nineteen ninety one, a second family of bronze ducks was made, and set up in a park in Moscow, as a present to the children there.
+          atS: 61.7
+          durationS: 8.44
+        - text: Mr.
+          atS: 70.83
+          durationS: 0.35
+        - text: McCloskey said yes, as long as it was for children.
+          atS: 71.2
+          durationS: 3.2
+        - text: Pat Mrs.
+          atS: 74.85
+          durationS: 0.6
+        - text: Mallard on the head.
+          atS: 75.48
+          durationS: 0.95
+        - text: Her head is shiny from all the patting.
+          atS: 76.71
+          durationS: 1.95
+        - text: Far away in Moscow, her twin is getting patted too.
+          atS: 79.17
+          durationS: 3.4
