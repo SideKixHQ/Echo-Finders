@@ -510,15 +510,16 @@ describe("two echoes, one pair of ears", () => {
     expect(deferred[0]?.type === "deferred" && deferred[0].deferred.reason).toBe("queue-full");
   });
 
-  it("plays on demand, and puts back what was interrupted", () => {
+  it("plays on demand, and does not bring back what it stopped", () => {
     const echoes = [withAudio("statue", CORNER), withAudio("bull", ALSO_HERE)];
     const { audio, session } = walkTo(echoes);
     session.play(echoes[1]!);
     expect(audio.played).toEqual(["audio/statue.mp3", "audio/bull.mp3"]);
     expect(session.nowPlaying?.echo.id).toBe("bull");
     audio.finish();
-    // The one it jumped in front of is still there, not thrown away.
-    expect(session.nowPlaying?.echo.id).toBe("statue");
+    // The statue was stopped by the listener's own choice. It stays in the collection, but
+    // it does not start over by itself once the bull ends (James, 2026-11-12).
+    expect(session.nowPlaying).toBeNull();
   });
 
   it("stays quiet unless hands-free was asked for", () => {
@@ -620,7 +621,7 @@ describe("playing something that is already in hand", () => {
     queue.playNow(queued("b"));
 
     expect(queue.nowPlaying?.echo.id).toBe("b");
-    expect(queue.waiting.map((q) => q.echo.id)).toEqual(["a"]);
+    expect(queue.waiting).toHaveLength(0);
   });
 
   it("does not queue the same echo twice", () => {
@@ -631,18 +632,29 @@ describe("playing something that is already in hand", () => {
     expect(queue.waiting.map((q) => q.echo.id)).toEqual(["b"]);
   });
 
-  it("reports what it gave up to make room, and gives up the weakest", () => {
-    // `playNow` used to pop the tail — the newest arrival — and say nothing about it, while
-    // `offer` right next to it dropped the weakest and reported it. One queue, one rule.
+  it("stops what was playing for good when the listener picks another", () => {
+    // Starting B partway through A used to put A back at the front of the queue, so A
+    // played again from the beginning when B ended, with no card on screen to stop it.
+    const queue = new PlaybackQueue("walking");
+    queue.offer(queued("a"));
+    queue.playNow(queued("b"));
+    queue.playNow(queued("c"));
+
+    expect(queue.nowPlaying?.echo.id).toBe("c");
+    expect(queue.waiting).toHaveLength(0);
+    expect(queue.finished()).toBeNull();
+  });
+
+  it("keeps echoes that arrived on their own waiting, and gives nothing up", () => {
     const queue = new PlaybackQueue("walking", { maxWaiting: 2 });
     queue.offer(queued("a", 0.9));
     queue.offer(queued("weak", 0.2));
     queue.offer(queued("c", 0.8));
     const deferred = queue.playNow(queued("d", 0.9));
 
-    expect(deferred?.echo.id).toBe("weak");
-    expect(deferred?.reason).toBe("queue-full");
-    expect(queue.waiting.map((q) => q.echo.id)).toEqual(["a", "c"]);
+    expect(deferred).toBeNull();
+    expect(queue.nowPlaying?.echo.id).toBe("d");
+    expect(queue.waiting.map((q) => q.echo.id)).toEqual(["weak", "c"]);
   });
 });
 

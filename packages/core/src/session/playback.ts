@@ -194,32 +194,22 @@ export class PlaybackQueue {
   /**
    * Play something on demand, from the collection or the map. Jumps the queue.
    *
-   * Returns whatever had to be given up to make room, for the same reason `offer` does:
-   * an echo that quietly stopped being on its way to the listener's ears is the one event
-   * a UI cannot reconstruct for itself.
+   * What was playing stops for good. It used to go back to the front of the queue, so
+   * starting a second echo partway through the first meant the first started over from the
+   * beginning the moment the second ended, then the one before that, and so on, with no
+   * card on screen to pause or skip them from (James, 2026-11-12). Picking an echo is the
+   * listener saying what they want to hear now; the one they left is still in the
+   * collection if they want it back. Echoes that arrived on their own and are still waiting
+   * keep their place.
+   *
+   * Nothing is ever given up to make room, because the queue never grows here, so this
+   * always returns null. The return stays so callers that report deferrals need no change.
    */
   playNow(item: QueuedEcho): Deferred | null {
-    // Pressing play on what is already playing restarts it — it does not clone it.
-    //
-    // The old version pushed the current item back onto the queue unconditionally, so
-    // tapping Listen on the card that already said "Playing" left a second copy waiting
-    // behind it, and the echo played straight through twice. The same happened to anything
-    // already queued: promoting it to current left the duplicate in place.
-    if (this.current?.echo.id === item.echo.id) {
-      this.current = item;
-      this.isPaused = false;
-      return null;
-    }
-
     this.drop(item.echo.id);
-    if (this.current) this.queue.unshift(this.current);
     this.current = item;
     this.isPaused = false;
-
-    // Over capacity: drop the weakest and say so, exactly as `offer` does. Popping the tail
-    // silently threw away whatever had arrived most recently, which is both the wrong item
-    // and an event the listener never heard about.
-    return this.queue.length > this.maxWaiting ? this.evictWeakest() : null;
+    return null;
   }
 
   clear(): void {
