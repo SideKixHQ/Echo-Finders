@@ -12,11 +12,7 @@
       "buildNumber": "1",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
-        "NSLocationWhenInUseUsageDescription": "Echo Finders plays the echoes of the place you are standing in, so it needs to know where you are.",
-        "NSCameraUsageDescription": "Echo Finders uses the camera so you can hold up your phone and see which echoes are around you.",
-        "UIBackgroundModes": [
-          "audio"
-        ]
+        "NSCameraUsageDescription": "Echo Finders uses the camera so you can hold up your phone and see which echoes are around you."
       }
     },
     "owner": "echofinders",
@@ -49,11 +45,14 @@
       [
         "expo-location",
         {
-          "locationWhenInUsePermission": "Echo Finders plays the echoes of the place you are standing in, so it needs to know where you are.",
-          "locationAlwaysAndWhenInUsePermission": "So echoes can open with your phone in your pocket and the screen off, while you walk and listen. Echo Finders works without this: you would keep the app on screen instead."
+          "locationWhenInUsePermission": "Echo Finders uses your location to find the echoes around you and to start each one as you reach it. Your exact location stays on your phone.",
+          "locationAlwaysAndWhenInUsePermission": "So echoes can start on their own as you reach them, with your phone in your pocket and the screen off, during a hands free walk you start. Echo Finders works without this: keep it on screen while you walk and echoes will still open. Your exact location stays on your phone.",
+          "isIosBackgroundLocationEnabled": true,
+          "locationAlwaysPermission": "So echoes can start on their own as you reach them, with your phone in your pocket and the screen off, during a hands free walk you start. Echo Finders works without this: keep it on screen while you walk and echoes will still open. Your exact location stays on your phone."
         }
       ],
-      "@maplibre/maplibre-react-native"
+      "@maplibre/maplibre-react-native",
+      "./plugins/withoutBackgroundFetch"
     ]
   }
 }

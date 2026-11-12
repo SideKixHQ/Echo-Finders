@@ -3,7 +3,7 @@
  *
  * `docs/ios-permissions.md`: on first use ask for When In Use, which the app is fully
  * usable with; Always is asked for later, the first time someone starts a hands free walk,
- * and never at launch. Phase 1 has no hands free walk, so it never asks for Always.
+ * and never at launch (`walk/WalkProvider.tsx`). This file only ever asks for When In Use.
  *
  * It asks when the Map tab first needs a position, not at launch, and a refusal leaves the
  * map working: every echo is still on it, with a note offering to turn location on.
