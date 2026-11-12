@@ -1,0 +1,131 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2).
+# Listening spot: The plaza at the entrance of Coit Tower, Telegraph Hill Boulevard, Pioneer Park. The ground floor murals can be seen from the lobby when the tower is open.
+# Position: Coit Tower from general map knowledge (high confidence for the tower; the plaza is at its foot).
+id: san-francisco-nothing-above-the-windows
+title: "Nothing Above the Windows"
+summary: "In 1934 the city locked Coit Tower over a painted hammer and sickle. When it opened, the art above the windows was gone."
+place: "Coit Tower, Telegraph Hill Boulevard, Telegraph Hill, San Francisco, California"
+at: { lat: 37.80239, lng: -122.40582 }
+triggerRadiusKm: 0.05
+category: arts
+format: short
+durationS: 65
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [san-francisco, telegraph-hill, coit-tower, murals, new-deal, 1934, censorship]
+teaser: "The murals that stayed are on the walls. Look for the ones that did not."
+script: |
+  If the doors are open, step inside the base of this tower. The walls are covered in murals, painted in nineteen thirty four by artists on a federal relief program.
+
+  Now look above the windows.
+
+  The artists painted in fresco, into wet plaster. Near the end, one of them, Clifford Wight, added small paintings above the windows. A dollar sign. The blue eagle of the New Deal. And a hammer and sickle.
+
+  That summer, the dockworkers went on strike, and then the whole city. On the fifth of July, two waterfront workers were killed by police. The same day, a newspaper printed a doctored photograph that laid Wight's hammer and sickle over another artist's mural, and said the murals were part of a communist plot.
+
+  The city locked the tower and cancelled the opening.
+
+  When it finally opened, in October, the artwork over the windows had been removed. All of it, not only the hammer and sickle.
+
+  The murals that stayed are the ones you can see. Above the windows is what they took away.
+detail: >-
+  From the National Register additional documentation for Coit Memorial Tower: the Public Works of Art Project murals, the dockworkers strike from 9 May 1934 and the general strike of 16 to 19 July, Wight's late additions of a dollar sign, the NRA blue eagle and a hammer and sickle, the deaths of two waterfront workers killed by police on 5 July, the San Francisco Examiner's photograph superimposing the hammer and sickle on Zakheim's mural and alleging a communist plot, the Park and Art Commissions locking the doors and cancelling the opening, and the removal of all the artwork over the east, south and west windows before the October 1934 opening. CBS San Francisco (2018) gives the Public Works of Art Project. The NR gives the opening as 12 October in one place and 20 October in another, so the script says only October. "The blue eagle of the New Deal" stands for the NRA's blue eagle; a reviewer may prefer "the eagle of the National Recovery Administration".
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "The walls are covered in murals, painted in nineteen thirty four by artists on a federal relief program."
+    source: 2
+    quote: "Artists employed by the Public Works of Art Project - a precursor to the Works Progress Administration, painted its frescoes in 1934."
+  - says: "The artists painted in fresco, into wet plaster."
+    source: 1
+    quote: "Technique: fresco buono"
+  - says: "Near the end, one of them, Clifford Wight, added small paintings above the windows."
+    source: 1
+    quote: "The areas immediately above these frescoes originally contained other small murals by Wight, including a hammer and sickle"
+  - says: "A dollar sign. The blue eagle of the New Deal. And a hammer and sickle."
+    source: 1
+    quote: "At a late date, artist Clifford Wight incorporated political symbolism in the form of a dollar sign, the blue-eagle logo of the NRA, and a hammer and sickle."
+  - says: "That summer, the dockworkers went on strike, and then the whole city."
+    source: 1
+    quote: "the strike by West Coast dockworkers that began on May 9, 1934, and the subsequent general strike, July 16-19, 1934"
+  - says: "On the fifth of July, two waterfront workers were killed by police."
+    source: 1
+    quote: "July 5, 1934 was a day of terrible conflict on the waterfront, culminating in the deaths of two waterfront workers, killed by police."
+  - says: "The same day, a newspaper printed a doctored photograph that laid Wight's hammer and sickle over another artist's mural, and said the murals were part of a communist plot."
+    source: 1
+    quote: "That same day, the San Francisco Examiner published a photograph superimposing Wight's hammer and sickle image over Zakheim's depiction of a man reaching for Das Kapital, as if it were part of the same painting. The accompanying story alleged that the murals were part of a communist plot."
+  - says: "The city locked the tower and cancelled the opening."
+    source: 1
+    quote: "Incited by the doctored newspaper photo, the San Francisco Park Commission and Art Commission locked the doors to Coit Tower and cancelled the public opening"
+  - says: "When it finally opened, in October, the artwork over the windows had been removed. All of it, not only the hammer and sickle."
+    source: 1
+    quote: "that all the artwork over the east, south, and west windows, including Wight's hammer and sickle, be removed. When the tower opened in October 1934, the Art Commission’s recommendations had been heeded. The artwork over the windows was removed."
+sources:
+  - title: "National Register of Historic Places Registration Form: Coit Memorial Tower (Additional Documentation)"
+    publisher: "National Park Service, NPGallery"
+    url: https://npgallery.nps.gov/GetAsset/5b02a09a-bc9f-404c-b635-da88f5a1cd8b
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "San Francisco's Coit Tower Celebrates 85th Birthday (2018)"
+    publisher: "CBS San Francisco"
+    url: https://www.cbsnews.com/sanfrancisco/news/coit-tower-telegraph-hill-85th-birthday/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-nothing-above-the-windows/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65.2
+    audioBytes: 1043687
+    transcript:
+      totalS: 65.2
+      lines:
+        - text: If the doors are open, step inside the base of this tower.
+          atS: 0
+          durationS: 3.42
+        - text: The walls are covered in murals, painted in nineteen thirty four by artists on a federal relief program.
+          atS: 3.75
+          durationS: 6.25
+        - text: Now look above the windows.
+          atS: 10.44
+          durationS: 1.58
+        - text: The artists painted in fresco, into wet plaster.
+          atS: 12.4
+          durationS: 3.65
+        - text: Near the end, one of them, Clifford Wight, added small paintings above the windows.
+          atS: 16.43
+          durationS: 5.12
+        - text: A dollar sign.
+          atS: 22.06
+          durationS: 1.22
+        - text: The blue eagle of the New Deal.
+          atS: 23.66
+          durationS: 2.31
+        - text: And a hammer and sickle.
+          atS: 26.18
+          durationS: 1.59
+        - text: That summer, the dockworkers went on strike, and then the whole city.
+          atS: 28.72
+          durationS: 4.12
+        - text: On the fifth of July, two waterfront workers were killed by police.
+          atS: 33.17
+          durationS: 4.02
+        - text: The same day, a newspaper printed a doctored photograph that laid Wight's hammer and sickle over another artist's mural, and said the murals were part of a communist plot.
+          atS: 37.57
+          durationS: 9.91
+        - text: The city locked the tower and cancelled the opening.
+          atS: 47.87
+          durationS: 2.82
+        - text: When it finally opened, in October, the artwork over the windows had been removed.
+          atS: 51.01
+          durationS: 5.07
+        - text: All of it, not only the hammer and sickle.
+          atS: 56.53
+          durationS: 2.65
+        - text: The murals that stayed are the ones you can see.
+          atS: 59.45
+          durationS: 2.76
+        - text: Above the windows is what they took away.
+          atS: 62.73
+          durationS: 2.43

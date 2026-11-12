@@ -1,0 +1,157 @@
+# Drafted by Claude Code (2026-11-12) for the Boston military pass, following docs/writing-echoes.md (format v2).
+# Listening spot: Thomas Park on Dorchester Heights, South Boston, on the path in front of the white marble monument tower. Public park, open daily.
+# Position: Overture "Dorchester Heights Monument" point (42.3329, -71.04497), moved about 45 m west into the park lawn the tower faces (medium to high confidence).
+id: boston-a-fort-you-could-carry
+title: "A Fort You Could Carry"
+summary: "In March 1776 the army took this hill in one night with a fort built elsewhere and carried up, an idea an officer found in a book."
+place: "Dorchester Heights Monument, Thomas Park, South Boston, Massachusetts"
+at: { lat: 42.33285, lng: -71.04550 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 86
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [boston, south-boston, dorchester-heights, siege-of-boston, revolution, military, washington]
+teaser: "The ground was frozen too hard to dig a fort. So they brought one with them."
+script: |
+  Look up at the white marble tower. It stands on the last of the hills that once looked down on Boston and its harbour.
+
+  In the winter of seventeen seventy six, the British held Boston, and the Americans had them trapped. Whoever fortified this hill could fire down on the town. But the ground was rocky and frozen. Nobody could dig a fort into it fast enough.
+
+  Then one of Washington's officers, Rufus Putnam, came across a word in a military engineering book. Chandeliers. He did not know what it meant.
+
+  It meant wooden frames, built somewhere else and carried in, then filled with bundles of sticks and bales of hay to stop the shot. A fort you could bring with you.
+
+  The army spent February nailing them together. Then, in one night in March, more than twelve hundred men and three hundred oxcarts hauled everything up this hill as quietly as they could.
+
+  At dawn on the fifth of March, Boston woke up to cannon above it. The British general, William Howe, is reported to have said: My God, these fellows have done more work in one night than I could make my army do in three months.
+
+  Twelve days later, the British left Boston.
+
+  It began with an officer who did not know what a word meant, and looked it up.
+detail: >-
+  The Library of Congress Bibliomania blog (25 February 2026) gives the frozen, rocky ground, Lieutenant Colonel Rufus Putnam not knowing the term "chandeliers" from John Muller's The Attack and Defense of Fortified Places, Muller's definition, the army building frames and tying fascines and hay bales in February 1776, and Howe's reported words. The National Park Service page for Dorchester Heights gives the last surviving hill, the night of 4 March, more than 1,200 soldiers and volunteers and 300 oxcarts, the dawn of 5 March revealing the fort, the same Howe quotation, and the evacuation on 17 March. The two sources disagree on the night: the blog says "the night of March 5th", the park service says 4 March with the works revealed at dawn on 5 March; the script follows the park service and does not name the night. Howe's words are told as reported, because both sources hedge or quote them second hand. Knox's guns from Ticonderoga, which also made the position work, are left out to keep one idea.
+pronunciations:
+  - written: "Rufus Putnam"
+    say: "ROO-fus PUT-num"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It stands on the last of the hills that once looked down on Boston and its harbour."
+    source: 2
+    quote: "it marks the last surviving hill of a collection of hills that once commanded Boston and Boston Harbor."
+  - says: "In the winter of seventeen seventy six, the British held Boston, and the Americans had them trapped."
+    source: 1
+    quote: "American militia forces had encircled and trapped the British in Boston."
+  - says: "Whoever fortified this hill could fire down on the town."
+    source: 1
+    quote: "From those strategically important hills, artillery could fire down on the enemy"
+  - says: "But the ground was rocky and frozen."
+    source: 1
+    quote: "Because of the difficulty of digging into the frozen, rocky hills of the Dorchester Heights"
+  - says: "Nobody could dig a fort into it fast enough."
+    source: 1
+    quote: "neither the Americans nor the British had confidence that they could dig fortifications into the rocky and frozen ground of the Heights before being pummeled by artillery"
+  - says: "Then one of Washington's officers, Rufus Putnam, came across a word in a military engineering book."
+    source: 1
+    quote: "Then, one of Washington’s officers named Rufus Putnam encountered an illustration in a book that pointed the way to American victory."
+  - says: "Chandeliers."
+    source: 1
+    quote: "Putnam found the term “chandeliers” in an earlier edition of this military engineering book."
+  - says: "He did not know what it meant."
+    source: 1
+    quote: "Lieutenant Colonel Putnam wasn’t familiar with the term “chandeliers” when he found it in his copy of John Muller’s The Attack and Defense of Fortified Places."
+  - says: "It meant wooden frames, built somewhere else and carried in, then filled with bundles of sticks and bales of hay to stop the shot."
+    source: 1
+    quote: "the concept allowed an army to build the chandeliers’ wooden frames and gather bales of hay and fascines (tightly bound bundles of sticks) off-site, and then the soldiers would use wagons to transport everything into the desired positions. Once the chandeliers were installed, the hay and fascines would block incoming fire."
+  - says: "The army spent February nailing them together."
+    source: 1
+    quote: "In February of 1776, the army began nailing together large wooden frames and tying together fascines and hay bales."
+  - says: "Then, in one night in March, more than twelve hundred men and three hundred oxcarts hauled everything up this hill as quietly as they could."
+    source: 2
+    quote: "Over 1,200 soldiers and volunteers and 300 oxcarts transported tools and materials to the site as stealthily as possible."
+  - says: "At dawn on the fifth of March, Boston woke up to cannon above it."
+    source: 2
+    quote: "The dawn of March 5, 1776 – the 6-year anniversary of the Boston Massacre – revealed to everyone what the Continental forces achieved overnight. A fortification with cannon towered over Boston"
+  - says: "The British general, William Howe, is reported to have said: My God, these fellows have done more work in one night than I could make my army do in three months."
+    source: 2
+    quote: "British General William Howe commented, \"My God, these fellows have done more work in one night than I could make my army do in three months.\""
+  - says: "The British general, William Howe, is reported to have said: My God, these fellows have done more work in one night than I could make my army do in three months."
+    source: 1
+    quote: "the British military leader General Howe reportedly exclaimed, “My God, these fellows have done more work in one night than I could make my army do in three months.”"
+  - says: "Twelve days later, the British left Boston."
+    source: 2
+    quote: "On March 17, 1776, the British forces evacuated Boston, along with over a thousand colonial Loyalists."
+sources:
+  - title: "The Siege of Boston, General Washington, and Phillis Wheatley"
+    publisher: "Library of Congress, Bibliomania blog"
+    url: https://blogs.loc.gov/bibliomania/2026/02/25/the-siege-of-boston-general-washington-and-phillis-wheatley/
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Dorchester Heights"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/places/dorchester-heights.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-a-fort-you-could-carry/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85.9
+    audioBytes: 1375546
+    transcript:
+      totalS: 85.9
+      lines:
+        - text: Look up at the white marble tower.
+          atS: 0
+          durationS: 2
+        - text: It stands on the last of the hills that once looked down on Boston and its harbour.
+          atS: 2.09
+          durationS: 4.54
+        - text: In the winter of seventeen seventy six, the British held Boston, and the Americans had them trapped.
+          atS: 7.14
+          durationS: 5.9
+        - text: Whoever fortified this hill could fire down on the town.
+          atS: 13.55
+          durationS: 3.59
+        - text: But the ground was rocky and frozen.
+          atS: 17.74
+          durationS: 2.57
+        - text: Nobody could dig a fort into it fast enough.
+          atS: 20.69
+          durationS: 2.6
+        - text: Then one of Washington's officers, Rufus Putnam, came across a word in a military engineering book.
+          atS: 24.24
+          durationS: 7.48
+        - text: Chandeliers.
+          atS: 32.16
+          durationS: 1.13
+        - text: He did not know what it meant.
+          atS: 33.89
+          durationS: 1.58
+        - text: It meant wooden frames, built somewhere else and carried in, then filled with bundles of sticks and bales of hay to stop the shot.
+          atS: 35.91
+          durationS: 8.19
+        - text: A fort you could bring with you.
+          atS: 44.7
+          durationS: 1.9
+        - text: The army spent February nailing them together.
+          atS: 47.11
+          durationS: 2.94
+        - text: Then, in one night in March, more than twelve hundred men and three hundred oxcarts hauled everything up this hill as quietly as they could.
+          atS: 50.86
+          durationS: 9.13
+        - text: At dawn on the fifth of March, Boston woke up to cannon above it.
+          atS: 60.8
+          durationS: 4.09
+        - text: "The British general, William Howe, is reported to have said: My God, these fellows have done more work in one night than I could make my army do in three months."
+          atS: 65.49
+          durationS: 10.53
+        - text: Twelve days later, the British left Boston.
+          atS: 77.32
+          durationS: 3.01
+        - text: It began with an officer who did not know what a word meant, and looked it up.
+          atS: 81.28
+          durationS: 4.63

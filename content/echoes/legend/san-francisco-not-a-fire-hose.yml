@@ -1,0 +1,134 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2).
+# Listening spot: Washington Square, North Beach, at the statue of three volunteer firemen paid for by Lillie Hitchcock Coit. Coit Tower is in view on Telegraph Hill to the east.
+# Position: Washington Square from general map knowledge (medium confidence for the statue's corner of the square; the trigger radius covers the square).
+id: san-francisco-not-a-fire-hose
+title: "Not a Fire Hose"
+summary: "A legend of San Francisco: Coit Tower was built to look like a fire hose, for a woman who loved firemen. The record says it was not."
+place: "Volunteer firemen statue, Washington Square, North Beach, San Francisco, California"
+at: { lat: 37.80078, lng: -122.41004 }
+triggerRadiusKm: 0.07
+category: legend
+format: short
+durationS: 68
+visibility: landmark-visible
+certainty: legend
+certaintyNote: >-
+  The fire hose story is popular lore with no source behind it, and the National Register documentation for Coit Tower says plainly that the tower was not designed to resemble a fire hose. The account of Lillie Coit's childhood rescue comes from the same documentation, which cites a 1967 biography; it is told here as she is remembered, and is not independently confirmed.
+minAge: 0
+quality: 0.85
+voice: wC1005J19tvhoqqC2hkf
+tags: [san-francisco, north-beach, washington-square, coit-tower, lillie-coit, firefighters]
+teaser: "Look up at the tower and tell me it does not look like a fire hose."
+script: |
+  Find the statue in this square: three volunteer firemen at work. One of them is carrying a frightened young girl to safety.
+
+  Now look up the hill, at the white tower on top. The same woman paid for both. Her name was Lillie Hitchcock Coit.
+
+  When she was a small girl, new to San Francisco, she watched two of her friends die in a fire. She was rescued herself by a volunteer from Knickerbocker Engine Company Number Five. He chopped a hole in the roof, let himself down on a rope, and climbed out with her on his back.
+
+  She never forgot it. The engine company made her an honorary member, with a helmet of her own. Ever after, she signed her name: Lillie Hitchcock Coit, five.
+
+  When she died, in nineteen twenty nine, she left a third of her estate to the city, to add to its beauty. It paid for the statue, and the tower.
+
+  And so the legend. That the tower was built to look like a fire hose.
+
+  It is a wonderful story. The official record of the tower says, flatly, that it was not designed to resemble a fire hose.
+
+  Look at it anyway.
+detail: >-
+  From the National Register additional documentation for Coit Memorial Tower: Lillie Hitchcock Coit's arrival in 1851 at seven, watching two friends burn to death, her rescue by John Boynton of Knickerbocker Engine Company Number 5 through a hole in the roof, honorary membership and a helmet in October 1863, signing "Lillie Hitchcock Coit 5", her death in 1929 and the bequest of a third of her estate "for the purpose of adding to the beauty of the city", which paid for both the tower and the Patigian statue in Washington Square showing three volunteer firemen, one carrying a young girl. The same document says the tower "was not designed to resemble a fire hose". The legend's existence rests on that denial; no fetched source records who first told it. Male narrator, as for every legend.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Find the statue in this square: three volunteer firemen at work. One of them is carrying a frightened young girl to safety."
+    source: 1
+    quote: "The sculpture, by Haig Patigian, depicts three volunteer firefighters at work. One of them is carrying a distressed young girl to safety."
+  - says: "The same woman paid for both. Her name was Lillie Hitchcock Coit."
+    source: 1
+    quote: "Lillie’s bequest paid for both the construction of Coit Tower and for a sculpture placed in nearby Washington Square Park to commemorate San Francisco’s volunteer firefighters."
+  - says: "When she was a small girl, new to San Francisco, she watched two of her friends die in a fire."
+    source: 1
+    quote: "Soon after arriving in San Francisco, Lillie watched two of her friends burn to death when a building they were playing in suddenly caught fire."
+  - says: "She was rescued herself by a volunteer from Knickerbocker Engine Company Number Five. He chopped a hole in the roof, let himself down on a rope, and climbed out with her on his back."
+    source: 1
+    quote: "Lillie was rescued from the flames by John Boynton, a volunteer member of Knickerbocker Engine Company Number 5. Boynton chopped a hole in the roof of the building, let himself down on a rope, put Lillie on his back, and climbed to safety."
+  - says: "The engine company made her an honorary member, with a helmet of her own."
+    source: 1
+    quote: "In October 1863, she was made an honorary member of the Number 5 engine company, and given an official certificate of membership and a personalized fire helmet."
+  - says: "Ever after, she signed her name: Lillie Hitchcock Coit, five."
+    source: 1
+    quote: "Thereafter, Lillie always signed her name “Lillie Hitchcock Coit 5”"
+  - says: "When she died, in nineteen twenty nine, she left a third of her estate to the city, to add to its beauty."
+    source: 1
+    quote: "When Lillie died in 1929 at the age of 85, she left onethird of her estate to the City of San Francisco “for the purpose of adding to the beauty of the city which I have always loved.”"
+  - says: "The official record of the tower says, flatly, that it was not designed to resemble a fire hose."
+    source: 1
+    quote: "tower was not designed to resemble a fire hose."
+sources:
+  - title: "National Register of Historic Places Registration Form: Coit Memorial Tower (Additional Documentation)"
+    publisher: "National Park Service, NPGallery"
+    url: https://npgallery.nps.gov/GetAsset/5b02a09a-bc9f-404c-b635-da88f5a1cd8b
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/san-francisco-not-a-fire-hose/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 68.3
+    audioBytes: 1093424
+    transcript:
+      totalS: 68.3
+      lines:
+        - text: "Find the statue in this square: three volunteer firemen at work."
+          atS: 0
+          durationS: 3.76
+        - text: One of them is carrying a frightened young girl to safety.
+          atS: 4.14
+          durationS: 2.95
+        - text: Now look up the hill, at the white tower on top.
+          atS: 7.48
+          durationS: 2.78
+        - text: The same woman paid for both.
+          atS: 10.69
+          durationS: 1.83
+        - text: Her name was Lillie Hitchcock Coit.
+          atS: 12.97
+          durationS: 2.73
+        - text: When she was a small girl, new to San Francisco, she watched two of her friends die in a fire.
+          atS: 16.21
+          durationS: 5.97
+        - text: She was rescued herself by a volunteer from Knickerbocker Engine Company Number Five.
+          atS: 22.42
+          durationS: 4.76
+        - text: He chopped a hole in the roof, let himself down on a rope, and climbed out with her on his back.
+          atS: 27.56
+          durationS: 5.75
+        - text: She never forgot it.
+          atS: 33.69
+          durationS: 1.16
+        - text: The engine company made her an honorary member, with a helmet of her own.
+          atS: 35.18
+          durationS: 4.2
+        - text: "Ever after, she signed her name: Lillie Hitchcock Coit, five."
+          atS: 39.89
+          durationS: 4.6
+        - text: When she died, in nineteen twenty nine, she left a third of her estate to the city, to add to its beauty.
+          atS: 45.3
+          durationS: 6.66
+        - text: It paid for the statue, and the tower.
+          atS: 52.29
+          durationS: 2.53
+        - text: And so the legend.
+          atS: 55.07
+          durationS: 1.17
+        - text: That the tower was built to look like a fire hose.
+          atS: 56.41
+          durationS: 2.86
+        - text: It is a wonderful story.
+          atS: 59.59
+          durationS: 1.57
+        - text: The official record of the tower says, flatly, that it was not designed to resemble a fire hose.
+          atS: 61.44
+          durationS: 5.47
+        - text: Look at it anyway.
+          atS: 67.06
+          durationS: 1.21

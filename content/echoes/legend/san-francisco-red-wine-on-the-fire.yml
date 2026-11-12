@@ -1,0 +1,120 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2).
+# Listening spot: The Filbert Steps on the east face of Telegraph Hill, at Napier Lane, among the cottages. Public stairway; the houses are private.
+# Position: The Filbert Steps at Napier Lane, below Montgomery Street, from general map knowledge (medium confidence; the steps run between Sansome and Montgomery).
+id: san-francisco-red-wine-on-the-fire
+title: "Red Wine on the Fire"
+summary: "A legend of Telegraph Hill: in 1906 Italian families held back the fire with blankets soaked in red wine from their cellars."
+place: "Filbert Steps at Napier Lane, Telegraph Hill, San Francisco, California"
+at: { lat: 37.80187, lng: -122.40415 }
+triggerRadiusKm: 0.05
+category: legend
+format: short
+durationS: 49
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The 1940 Federal Writers' Project guide states as fact that Italians saved Telegraph Hill with wine-soaked blankets; the historian Philip Fradkin, on NPR in 2006, calls it stories of the old-timers. Nobody has shown how much wine was used or whether it made the difference, so the script tells it as a legend.
+minAge: 0
+quality: 0.85
+voice: wC1005J19tvhoqqC2hkf
+tags: [san-francisco, telegraph-hill, filbert-steps, 1906-earthquake, italian-american, wine]
+teaser: "When the water ran out, the story goes, they used the wine."
+script: |
+  Look at the little cottages along these steps. In April, nineteen oh six, after the earthquake, the city burned for almost four days.
+
+  These cottages did not. The fire stopped a few hundred feet from where you are.
+
+  Back then, the hill was working class. Irish and Italian immigrants. And this is where the legend begins.
+
+  Many of the Italian families made their own wine, and kept the barrels in their basements. When the fire crept up the hill, the story goes, they rolled the barrels out of their cellars, formed a bucket brigade, and fought the flames with blankets soaked in red wine.
+
+  A guidebook written in nineteen forty tells it as plain fact. A historian, a century later, called it one of the stories the old timers told. Nobody can prove it either way.
+
+  Whatever saved them, the cottages are still here.
+detail: >-
+  NPR's 2006 Morning Edition piece on the 1906 earthquake: fire for almost four days, Aaron Peskin on the Filbert Steps saying the fire stopped a few hundred feet away, the working class Irish and Italian neighbourhood whose simple cottages were among the few spared, and Philip Fradkin on buckets of saved water, barrels of wine fermenting in basements and "stories of the old-timers". The 1940 Federal Writers' Project guide: the Italians rolled barrels of red wine from their cellars and, forming a bucket brigade, protected their houses with blankets soaked in the wine. Told as a legend because the two sources differ on how sure it is.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In April, nineteen oh six, after the earthquake, the city burned for almost four days."
+    source: 1
+    quote: "For almost four days, the city burned."
+  - says: "The fire stopped a few hundred feet from where you are."
+    source: 1
+    quote: "The fire stopped totally and utterly just a few hundred feet from where we're standing."
+  - says: "These cottages did not."
+    source: 1
+    quote: "whose simple cottages would be among the few spared from the fire."
+  - says: "Back then, the hill was working class. Irish and Italian immigrants."
+    source: 1
+    quote: "A hundred years ago, this neighborhood was working class, Irish and Italian immigrants"
+  - says: "Many of the Italian families made their own wine, and kept the barrels in their basements."
+    source: 1
+    quote: "In those days, many of the Italian immigrants fermented their own wine in their basements"
+  - says: "When the fire crept up the hill, the story goes, they rolled the barrels out of their cellars, formed a bucket brigade, and fought the flames with blankets soaked in red wine."
+    source: 2
+    quote: "When the fire of 1906 began to creep up the slopes of the hill, it was the Italians who saved it. From their cellars they rolled out barrels of red wine and, forming a bucket brigade, protected their houses against the flames with blankets soaked in the wine."
+  - says: "A guidebook written in nineteen forty tells it as plain fact."
+    source: 2
+    quote: "it was the Italians who saved it."
+  - says: "A historian, a century later, called it one of the stories the old timers told."
+    source: 1
+    quote: "there are stories of the old-timers getting those barrels of wine out and pouring them on the fire."
+sources:
+  - title: "Remembering the 1906 San Francisco Earthquake (Morning Edition, April 2006)"
+    publisher: "NPR"
+    url: https://www.npr.org/transcripts/5334411
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "San Francisco: The Bay and Its Cities (Federal Writers' Project, American Guide Series, 1940)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/sanfranciscobaya00writrich
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/san-francisco-red-wine-on-the-fire/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 49.4
+    audioBytes: 790821
+    transcript:
+      totalS: 49.4
+      lines:
+        - text: Look at the little cottages along these steps.
+          atS: 0
+          durationS: 2.44
+        - text: In April, nineteen oh six, after the earthquake, the city burned for almost four days.
+          atS: 2.61
+          durationS: 5.84
+        - text: These cottages did not.
+          atS: 8.6
+          durationS: 1.52
+        - text: The fire stopped a few hundred feet from where you are.
+          atS: 10.37
+          durationS: 2.86
+        - text: Back then, the hill was working class.
+          atS: 13.38
+          durationS: 2.43
+        - text: Irish and Italian immigrants.
+          atS: 16.01
+          durationS: 1.76
+        - text: And this is where the legend begins.
+          atS: 17.93
+          durationS: 2.08
+        - text: Many of the Italian families made their own wine, and kept the barrels in their basements.
+          atS: 20.39
+          durationS: 4.67
+        - text: When the fire crept up the hill, the story goes, they rolled the barrels out of their cellars, formed a bucket brigade, and fought the flames with blankets soaked in red wine.
+          atS: 25.3
+          durationS: 9.46
+        - text: A guidebook written in nineteen forty tells it as plain fact.
+          atS: 35.04
+          durationS: 3.73
+        - text: A historian, a century later, called it one of the stories the old timers told.
+          atS: 38.98
+          durationS: 4.92
+        - text: Nobody can prove it either way.
+          atS: 44.28
+          durationS: 1.8
+        - text: Whatever saved them, the cottages are still here.
+          atS: 46.36
+          durationS: 3.01

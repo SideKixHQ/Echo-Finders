@@ -1,0 +1,142 @@
+# Drafted by Claude Code (2026-11-12) for the Boston literature and military pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The Charlestown Navy Yard ground just north of the ship's berth at Pier 1, by Dry Dock 1, with the ship in view. Public, open daily.
+# Position: About 60 m north east of the Overture "USS Constitution" point used by the existing sides-made-of-iron echo, moved onto land after the app's coast check put a first try in the water (medium confidence). Different subject from that echo: the poem, not the nickname.
+id: boston-the-harpies-of-the-shore
+title: "The Harpies of the Shore"
+summary: "Around 1830 the navy was letting old sailing ships rot. A law student's poem, Old Ironsides, made this one the people's ship."
+place: "USS Constitution, Charlestown Navy Yard, Charlestown, Boston, Massachusetts"
+at: { lat: 42.37300, lng: -71.05590 }
+triggerRadiusKm: 0.06
+category: inspo
+inspo:
+  kind: inspiration
+  evidence: site
+format: short
+durationS: 64
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [boston, charlestown, navy-yard, uss-constitution, old-ironsides, holmes, poems, military, books]
+teaser: "The navy was finished with her. A twenty two year old with a poem was not."
+script: |
+  Look at the ship. In eighteen thirty, she was nearly lost without a shot being fired.
+
+  The age of sail was ending, and steam was coming in. The navy was simply letting its old sailing ships fall apart. And there was a rumour that this one was going to be scrapped.
+
+  An unknown twenty two year old law student, Oliver Wendell Holmes, wrote a poem about her, and a Boston newspaper printed it. He called it Old Ironsides.
+
+  Its second verse ends: The harpies of the shore shall pluck the eagle of the sea.
+
+  Newspapers around the country picked it up. People in Boston, and then across the nation, rallied to save her.
+
+  As one historian puts it, from then on she stopped being the navy's ship, and started being the people's ship.
+
+  She is still the oldest commissioned warship afloat in the world.
+
+  The navy had cannon. The people had a poem. The poem won.
+pronunciations:
+  - written: "Oliver Wendell Holmes"
+    say: "OL-iv-er WEN-dul HOHMZ"
+detail: >-
+  Prologue magazine (National Archives, spring 2005), interviewing the historian David Fitz-Enz, gives 1830, the waning age of sail, the navy letting old sailing ships deteriorate, the unknown 22 year old law student Holmes publishing the poem in a Boston newspaper, the closing lines of its second stanza, newspapers around the country picking it up, and "Old Ironsides stopped being the Navy's ship and started being the people's ship". WBUR (2012), quoting Matthew Brenckle of the USS Constitution Museum, independently gives the 1830s rumour that the navy would scrap the ship and the poem rallying Boston and then the nation, and calls her the oldest commissioned warship afloat in the world. Inspo evidence is "site": the poem is about this ship, which is in view; Holmes wrote it elsewhere. The poem itself (1830) is in the public domain. "The navy had cannon" is the script's own turn of phrase.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In eighteen thirty, she was nearly lost without a shot being fired."
+    source: 1
+    quote: "It was 1830. The Age of Sail was waning, and the Age of Steam was getting under way."
+  - says: "The age of sail was ending, and steam was coming in."
+    source: 1
+    quote: "It was 1830. The Age of Sail was waning, and the Age of Steam was getting under way."
+  - says: "The navy was simply letting its old sailing ships fall apart."
+    source: 1
+    quote: "The Navy was just letting the old sailing ships deteriorate."
+  - says: "And there was a rumour that this one was going to be scrapped."
+    source: 2
+    quote: "In the 1830s there was a rumor that the Navy was going to scrap the ship"
+  - says: "An unknown twenty two year old law student, Oliver Wendell Holmes, wrote a poem about her, and a Boston newspaper printed it."
+    source: 1
+    quote: "An unknown 22-year-old law student named Oliver Wendell Holmes published a poem about the Constitution's fate in a Boston newspaper."
+  - says: "He called it Old Ironsides."
+    source: 2
+    quote: "Oliver Wendell Holmes wrote his stirring poem, 'Old Ironsides,'"
+  - says: "Its second verse ends: The harpies of the shore shall pluck the eagle of the sea."
+    source: 1
+    quote: "The second stanza ended with the words, \"The harpies of the shore shall pluck / The eagle of the sea!\""
+  - says: "Newspapers around the country picked it up."
+    source: 1
+    quote: "Newspapers around the country picked up the poem."
+  - says: "People in Boston, and then across the nation, rallied to save her."
+    source: 2
+    quote: "to rally people in Boston — and eventually people in the nation — to save the ship"
+  - says: "As one historian puts it, from then on she stopped being the navy's ship, and started being the people's ship."
+    source: 1
+    quote: "Old Ironsides stopped being the Navy's ship and started being the people's ship—and it has remained so to this day."
+  - says: "She is still the oldest commissioned warship afloat in the world."
+    source: 2
+    quote: "the oldest commissioned warship afloat in the world"
+sources:
+  - title: "Old Ironsides: Warrior and Survivor. Prologue Magazine, Spring 2005"
+    publisher: "National Archives and Records Administration"
+    url: https://www.archives.gov/publications/prologue/2005/spring/ironsides.html
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "'Old Ironsides,' 200 Years Later"
+    publisher: "WBUR"
+    url: https://www.wbur.org/news/2012/06/28/old-ironsides
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-the-harpies-of-the-shore/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.4
+    audioBytes: 1030730
+    transcript:
+      totalS: 64.4
+      lines:
+        - text: Look at the ship.
+          atS: 0
+          durationS: 1.03
+        - text: In eighteen thirty, she was nearly lost without a shot being fired.
+          atS: 1.31
+          durationS: 4.38
+        - text: The age of sail was ending, and steam was coming in.
+          atS: 6.13
+          durationS: 3.59
+        - text: The navy was simply letting its old sailing ships fall apart.
+          atS: 10.16
+          durationS: 3.9
+        - text: And there was a rumour that this one was going to be scrapped.
+          atS: 14.5
+          durationS: 3.38
+        - text: An unknown twenty two year old law student, Oliver Wendell Holmes, wrote a poem about her, and a Boston newspaper printed it.
+          atS: 18.69
+          durationS: 9.2
+        - text: He called it Old Ironsides.
+          atS: 28.27
+          durationS: 2.29
+        - text: "Its second verse ends: The harpies of the shore shall pluck the eagle of the sea."
+          atS: 31.16
+          durationS: 5.6
+        - text: Newspapers around the country picked it up.
+          atS: 37.45
+          durationS: 2.68
+        - text: People in Boston, and then across the nation, rallied to save her.
+          atS: 40.46
+          durationS: 4.83
+        - text: As one historian puts it, from then on she stopped being the navy's ship, and started being the people's ship.
+          atS: 46.1
+          durationS: 7.08
+        - text: She is still the oldest commissioned warship afloat in the world.
+          atS: 54
+          durationS: 4.11
+        - text: The navy had cannon.
+          atS: 58.8
+          durationS: 1.67
+        - text: The people had a poem.
+          atS: 60.92
+          durationS: 1.5
+        - text: The poem won.
+          atS: 63.02
+          durationS: 1.35

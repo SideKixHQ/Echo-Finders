@@ -1,0 +1,146 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2).
+# Listening spot: Outside the entrance gate of the Japanese Tea Garden, Hagiwara Tea Garden Drive, Golden Gate Park. No ticket needed to hear it.
+# Position: The Japanese Tea Garden entrance from general map knowledge (medium confidence; the gate is on the east side of the garden, by the de Young Museum).
+id: san-francisco-a-cookie-from-the-tea-garden
+title: "A Cookie from the Tea Garden"
+summary: "The fortune cookie is not Chinese. Many credit Makoto Hagiwara, who ran this Japanese Tea Garden, though nobody has settled it."
+place: "Japanese Tea Garden, Hagiwara Tea Garden Drive, Golden Gate Park, San Francisco, California"
+at: { lat: 37.77010, lng: -122.47040 }
+triggerRadiusKm: 0.05
+category: food-drink
+format: short
+durationS: 70
+visibility: at-hand
+certainty: contested
+certaintyNote: >-
+  Who made the first fortune cookie is disputed. CBS San Francisco says "multiple sources" credit Makoto Hagiwara of this garden, in the late 1890s to early 1900s. NPR reports a New York Times account that traces the cookie to Japan, and the reporter Jennifer 8. Lee on fortune cookies being American rather than Chinese. Other claimants, including a Los Angeles baker, are not in the fetched sources and are not named. The script says the question is open.
+minAge: 0
+quality: 0.85
+tags: [san-francisco, golden-gate-park, japanese-tea-garden, fortune-cookie, hagiwara, japanese-american]
+teaser: "Crack one open. It probably did not come from China."
+script: |
+  Stand at the gate of the Japanese Tea Garden. Somewhere in here, the story goes, the fortune cookie began.
+
+  Not in China. A reporter who wrote a whole book about Chinese food in America found out at thirteen that fortune cookies were not Chinese. People think of them as Chinese, she says, but they are fundamentally American.
+
+  This garden began as a Japanese village, built for a world's fair in this park in eighteen ninety four. When the fair was over, the park hired a Japanese gardener named Makoto Hagiwara to run it.
+
+  He and his family devoted themselves to it. They even brought over plants from his ancestral home in Osaka.
+
+  Several sources credit Hagiwara with introducing the fortune cookie, around the turn of the century. Others trace the idea back to Japan. Nobody has settled it.
+
+  His family looked after this garden from eighteen ninety four until nineteen forty two.
+
+  Next time you crack one open, think of this gate.
+detail: >-
+  The National Register nomination for the de Sabla Teahouse and Garden (San Mateo) gives the Japanese village at the 1894 California Midwinter Fair in Golden Gate Park, small portions of which survive as the Japanese Tea Garden, Makoto Hagiwara (spelled Makota) hired after the fair by John McLaren and the park commissioners to run the concession, and the family's dedication to the garden from 1894 to 1942, including plants from his ancestral home in Osaka. CBS San Francisco credits Hagiwara with introducing the fortune cookie in the late 1890s to early 1900s, citing "multiple sources". NPR (2008) carries Jennifer 8. Lee's account of learning at 13 that fortune cookies were not Chinese, and her line that they are fundamentally American; an NPR blog the same year reports a New York Times article tracing the cookie to Japan. The script does not say why the family's tenure ended in 1942; the reason (the wartime removal of Japanese Americans) is widely known but is not stated in the fetched sources, and a reviewer may want a source before saying it aloud. "A world's fair" stands for the California Midwinter International Exposition; a reviewer may prefer "a fair".
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "A reporter who wrote a whole book about Chinese food in America found out at thirteen that fortune cookies were not Chinese."
+    source: 3
+    quote: "\"My interest started when I was about 13, and I found out that fortune cookies weren't Chinese,\" Lee says."
+  - says: "People think of them as Chinese, she says, but they are fundamentally American."
+    source: 3
+    quote: "\"People think of fortune cookies as being Chinese but in essence, they are fundamentally American,\" Lee says."
+  - says: "This garden began as a Japanese village, built for a world's fair in this park in eighteen ninety four."
+    source: 2
+    quote: "California Midwinter Fair in Golden Gate Park in San Francisco, which was built in less than five months and opened on January 27, 1894."
+  - says: "This garden began as a Japanese village, built for a world's fair in this park in eighteen ninety four."
+    source: 2
+    quote: "The Japanese village, small portions of which still exist today in the form of the Japanese Tea Garden of the Golden Gate Park"
+  - says: "When the fair was over, the park hired a Japanese gardener named Makoto Hagiwara to run it."
+    source: 2
+    quote: "Immediately following the Fair, John McLaren and the San Francisco park commissioners hired Makota Hagiwara to run the Japanese village concession."
+  - says: "He and his family devoted themselves to it. They even brought over plants from his ancestral home in Osaka."
+    source: 2
+    quote: "He and his family became totally dedicated to the development of the Japanese Tea Garden from 1894 to 1942, even to the point of bringing over plants from his ancestral home in Osaka."
+  - says: "Several sources credit Hagiwara with introducing the fortune cookie, around the turn of the century."
+    source: 1
+    quote: "According to the sources, Makoto Hagiwara, caretaker of the Japanese Tea Garden in San Francisco' s Golden Gate Park, is credited for introducing the fortune cookie in the late 1890s to early 1900s."
+  - says: "Others trace the idea back to Japan."
+    source: 4
+    quote: "the fortune cookie's country of origin is not China, as some people thought, or an american Chinese food restaurant, as I thought, but Japan ."
+  - says: "His family looked after this garden from eighteen ninety four until nineteen forty two."
+    source: 2
+    quote: "He and his family became totally dedicated to the development of the Japanese Tea Garden from 1894 to 1942"
+  - says: "Not in China."
+    source: 3
+    quote: "I found out that fortune cookies weren't Chinese,"
+  - says: "Next time you crack one open, think of this gate."
+    source: 1
+    quote: "is credited for introducing the fortune cookie in the late 1890s to early 1900s."
+sources:
+  - title: "10 Things You Didn't Know About San Francisco"
+    publisher: "CBS San Francisco"
+    url: https://www.cbsnews.com/sanfrancisco/news/10-things-you-didnt-know-about-san-francisco/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "National Register of Historic Places Registration Form: de Sabla, Eugene J., Jr., Teahouse and Tea Garden"
+    publisher: "National Park Service, NPGallery"
+    url: https://npgallery.nps.gov/GetAsset/9411017d-3a41-4a24-a3ae-00b331550c00/
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "'Fortune Cookie' Offers New Taste of America (2008)"
+    publisher: "NPR"
+    url: https://www.npr.org/templates/story/story.php?storyId=19200355
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Fortune Cookie Originated in Japan (The Bryant Park Project, 2008)"
+    publisher: "NPR"
+    url: https://www.npr.org/sections/bryantpark/2008/01/fortune_cookie_originated_in_j_1.html
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+pronunciations:
+  - written: Hagiwara
+    say: hah-gee-WAH-rah
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-a-cookie-from-the-tea-garden/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 70
+    audioBytes: 1121009
+    transcript:
+      totalS: 70
+      lines:
+        - text: Stand at the gate of the Japanese Tea Garden.
+          atS: 0
+          durationS: 2.53
+        - text: Somewhere in here, the story goes, the fortune cookie began.
+          atS: 2.97
+          durationS: 4.05
+        - text: Not in China.
+          atS: 7.46
+          durationS: 1.24
+        - text: A reporter who wrote a whole book about Chinese food in America found out at thirteen that fortune cookies were not Chinese.
+          atS: 9.82
+          durationS: 8.02
+        - text: People think of them as Chinese, she says, but they are fundamentally American.
+          atS: 18.45
+          durationS: 5.28
+        - text: This garden began as a Japanese village, built for a world's fair in this park in eighteen ninety four.
+          atS: 24.85
+          durationS: 6.65
+        - text: When the fair was over, the park hired a Japanese gardener named Makoto Hagiwara to run it.
+          atS: 32.31
+          durationS: 6.84
+        - text: He and his family devoted themselves to it.
+          atS: 39.85
+          durationS: 2.53
+        - text: They even brought over plants from his ancestral home in Osaka.
+          atS: 42.82
+          durationS: 3.81
+        - text: Several sources credit Hagiwara with introducing the fortune cookie, around the turn of the century.
+          atS: 47.32
+          durationS: 6.64
+        - text: Others trace the idea back to Japan.
+          atS: 54.47
+          durationS: 2.51
+        - text: Nobody has settled it.
+          atS: 57.59
+          durationS: 1.51
+        - text: His family looked after this garden from eighteen ninety four until nineteen forty two.
+          atS: 59.79
+          durationS: 5.36
+        - text: Next time you crack one open, think of this gate.
+          atS: 65.85
+          durationS: 4.13

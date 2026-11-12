@@ -1,0 +1,191 @@
+# Drafted by Claude Code (2026-11-12) for the Boston literature pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The Boston Women's Memorial on the Commonwealth Avenue Mall, between Fairfield and Gloucester streets, at the statue of Phillis Wheatley. Public mall.
+# Position: Overture "Boston Women's Memorial" point (high confidence for the memorial; the three statues stand a few metres apart).
+id: boston-her-book-on-the-tea-ship
+title: "Her Book on the Tea Ship"
+summary: "Phillis Wheatley had to convince a panel of Boston men she wrote her own poems. Then copies of her book came home on a Tea Party ship."
+place: "Phillis Wheatley statue, Boston Women's Memorial, Commonwealth Avenue Mall, Back Bay, Boston, Massachusetts"
+at: { lat: 42.35048, lng: -71.08341 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.85
+tags: [boston, back-bay, commonwealth-avenue, phillis-wheatley, poets, women, black-history, books, tea-party]
+teaser: "First she had to prove she wrote her poems. Then she had to get them off a tea ship."
+script: |
+  Find Phillis Wheatley in the Boston Women's Memorial. The city put her here in two thousand three.
+
+  She arrived in Boston in seventeen sixty one, a child, on a ship from West Africa. John and Susanna Wheatley bought her. They taught her to read and write. By about fourteen, she had a poem in a newspaper.
+
+  Then came the doubters. Critics refused to believe that an enslaved Black woman could write poetry that good.
+
+  So in seventeen seventy two, she had to defend her own poems, in front of a panel of prominent Boston men. John Hancock was one of them. So was the governor, Thomas Hutchinson.
+
+  She convinced them. They signed a statement saying so.
+
+  Even then, no printer in the colonies would publish her book. It came out in London, in seventeen seventy three. The first book of poetry by an African American.
+
+  And when copies were shipped home to Boston that winter, some of them were in the cargo of a ship carrying tea. The ship the patriots boarded in disguise.
+
+  First she had to prove she wrote her book. Then she had to get it off a tea ship.
+pronunciations:
+  - written: "Phillis Wheatley"
+    say: "FIL-is WHEET-lee"
+detail: >-
+  The National Park Service page on Phillis Wheatley gives her purchase by John and Susanna Wheatley on arrival in 1761, the Wheatleys teaching her to read and write, the critics who refused to believe an enslaved Black woman could write such poetry, her defence before a panel of prominent Boston citizens in 1772 and their attestation, the failure to publish in the colonies, and the London book of 1773 as the first book of poetry by an enslaved Black woman. The Library of Congress (2018) independently gives the first volume of poetry by an African American, her first published poem at about 14, and John Hancock and Governor Thomas Hutchinson among her examiners; it places the examination after her return from London, while the park service puts it in 1772, before; the script follows the park service. The Boston Globe (2026) gives her arrival on a ship from Africa and the 2003 statue on the Commonwealth Avenue Mall. WBUR (2023) is the only fetched source for her book among the cargo of a Tea Party ship; it states it as fact in introducing a play about her efforts to get the copies off the ship. A reviewer should look hardest at that line; "that winter" rests on the Tea Party date, December 1773. The ship is not named.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Find Phillis Wheatley in the Boston Women's Memorial."
+    source: 3
+    quote: "Boston commemorated the poet in 2003 with a statue of her in the Boston Women’s Memorial on the Commonwealth Avenue mall, the statement said."
+  - says: "The city put her here in two thousand three."
+    source: 3
+    quote: "Boston commemorated the poet in 2003 with a statue of her in the Boston Women’s Memorial on the Commonwealth Avenue mall"
+  - says: "She arrived in Boston in seventeen sixty one, a child, on a ship from West Africa."
+    source: 3
+    quote: "Phillis Wheatley, the first published African American poet who arrived in Boston in 1761 on a ship from Africa"
+  - says: "She arrived in Boston in seventeen sixty one, a child, on a ship from West Africa."
+    source: 1
+    quote: "Born in West Africa, Wheatley became enslaved as a child."
+  - says: "John and Susanna Wheatley bought her."
+    source: 1
+    quote: "In 1761, John and Susanna Wheatley purchased her when she arrived in Boston."
+  - says: "They taught her to read and write."
+    source: 1
+    quote: "As she grew up, the Wheatleys taught her how to read and write."
+  - says: "By about fourteen, she had a poem in a newspaper."
+    source: 2
+    quote: "Wheatley’s first published poem, “On Messrs. Hussey and Coffin,” appeared in Rhode Island’s Newport Mercury newspaper in 1767, when she was about 14."
+  - says: "Critics refused to believe that an enslaved Black woman could write poetry that good."
+    source: 1
+    quote: "critics questioned Wheatley's abilities, refusing to believe than an enslaved Black woman could write such remarkable poetry."
+  - says: "So in seventeen seventy two, she had to defend her own poems, in front of a panel of prominent Boston men."
+    source: 1
+    quote: "To counter these critics, Wheatley defended her work to a panel of prominent Boston citizens in 1772."
+  - says: "John Hancock was one of them."
+    source: 2
+    quote: "under the examination of such Boston luminaries as John Hancock and Gov. Thomas Hutchinson."
+  - says: "So was the governor, Thomas Hutchinson."
+    source: 2
+    quote: "under the examination of such Boston luminaries as John Hancock and Gov. Thomas Hutchinson."
+  - says: "She convinced them."
+    source: 1
+    quote: "She convinced the panel that she had authored the poems"
+  - says: "They signed a statement saying so."
+    source: 1
+    quote: "they later wrote an attestation to her abilities, which her publishers included in the preface of her first book."
+  - says: "Even then, no printer in the colonies would publish her book."
+    source: 1
+    quote: "Even with the panel’s attestation, Wheatley could not get her book published within the colonies."
+  - says: "It came out in London, in seventeen seventy three."
+    source: 2
+    quote: "originally published overseas, in London, in 1773."
+  - says: "The first book of poetry by an African American."
+    source: 2
+    quote: "the first volume of poetry by an African-American ever published."
+  - says: "And when copies were shipped home to Boston that winter, some of them were in the cargo of a ship carrying tea."
+    source: 4
+    quote: "Phillis Wheatley's first published work of poems was among the cargo."
+  - says: "The ship the patriots boarded in disguise."
+    source: 4
+    quote: "But there was a lot more than tea on the ship that those rebels boarded in disguise."
+  - says: "First she had to prove she wrote her book."
+    source: 1
+    quote: "Wheatley defended her work to a panel of prominent Boston citizens in 1772."
+  - says: "Then she had to get it off a tea ship."
+    source: 4
+    quote: "Wheatley's quest to retrieve hundreds of copies of her book off the ship as Tea Party tensions boiled over is the subject of the play"
+sources:
+  - title: "Phillis Wheatley"
+    publisher: "National Park Service, Boston National Historical Park"
+    url: https://www.nps.gov/people/phillis-wheatley.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Phillis Wheatley: A First for Verse in America"
+    publisher: "Library of Congress, From the Catbird Seat blog"
+    url: https://blogs.loc.gov/catbird/2018/01/phillis-wheatley-a-first-for-verse-in-america/
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Phillis Wheatley to be honored on Black Heritage Stamp Thursday at Old South Meeting House"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/2026/01/13/metro/phillis-wheatley-be-honored-black-heritage-stamp-event-old-south-meeting-house/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Play at Old South Meeting House details Phillis Wheatley's life in Boston in 1773"
+    publisher: "WBUR, Radio Boston"
+    url: https://www.wbur.org/radioboston/2023/11/21/phillis-wheatley-boston-tea-party
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-her-book-on-the-tea-ship/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.7
+    audioBytes: 1179523
+    transcript:
+      totalS: 73.7
+      lines:
+        - text: Find Phillis Wheatley in the Boston Women's Memorial.
+          atS: 0
+          durationS: 3.31
+        - text: The city put her here in two thousand three.
+          atS: 3.48
+          durationS: 2.65
+        - text: She arrived in Boston in seventeen sixty one, a child, on a ship from West Africa.
+          atS: 6.57
+          durationS: 5.38
+        - text: John and Susanna Wheatley bought her.
+          atS: 12.46
+          durationS: 2.16
+        - text: They taught her to read and write.
+          atS: 14.86
+          durationS: 1.97
+        - text: By about fourteen, she had a poem in a newspaper.
+          atS: 17.34
+          durationS: 3.63
+        - text: Then came the doubters.
+          atS: 21.49
+          durationS: 1.57
+        - text: Critics refused to believe that an enslaved Black woman could write poetry that good.
+          atS: 23.5
+          durationS: 5.24
+        - text: So in seventeen seventy two, she had to defend her own poems, in front of a panel of prominent Boston men.
+          atS: 29.34
+          durationS: 7.41
+        - text: John Hancock was one of them.
+          atS: 37.19
+          durationS: 1.85
+        - text: So was the governor, Thomas Hutchinson.
+          atS: 39.36
+          durationS: 2.53
+        - text: She convinced them.
+          atS: 42.27
+          durationS: 1.17
+        - text: They signed a statement saying so.
+          atS: 43.72
+          durationS: 2.03
+        - text: Even then, no printer in the colonies would publish her book.
+          atS: 46.14
+          durationS: 3.59
+        - text: It came out in London, in seventeen seventy three.
+          atS: 50.11
+          durationS: 3.09
+        - text: The first book of poetry by an African American.
+          atS: 53.64
+          durationS: 3.2
+        - text: And when copies were shipped home to Boston that winter, some of them were in the cargo of a ship carrying tea.
+          atS: 57.23
+          durationS: 6.35
+        - text: The ship the patriots boarded in disguise.
+          atS: 64.18
+          durationS: 2.72
+        - text: First she had to prove she wrote her book.
+          atS: 67.59
+          durationS: 2.44
+        - text: Then she had to get it off a tea ship.
+          atS: 70.54
+          durationS: 3.11

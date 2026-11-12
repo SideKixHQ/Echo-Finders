@@ -1,0 +1,154 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch: a children's echo.
+# Listening spot: The Historic Seaport at Key West Bight, on the public harbourwalk near Caroline and Margaret Streets. The Overseas Railroad's terminal was on Trumbo Point, across the Bight to the northeast, which is Navy land today and cannot be visited; the script does not point at it, because the sources fetched do not say where the trains stopped.
+# Position: Margaret Street at Caroline Street (24.56100, -81.79980) from the app's Key West street file, nudged toward the harbourwalk; Wikidata Q383907 (Historic Seaport) is 24.56, -81.80028 (medium confidence).
+id: key-west-the-gold-telegram
+title: "The Gold Telegram"
+summary: "When the first train reached Key West in 1912, children threw flowers and Henry Flagler was handed a telegram made of gold."
+place: "Historic Seaport, Key West Bight, Key West, Florida"
+at: { lat: 24.5611, lng: -81.8000 }
+triggerRadiusKm: 0.08
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 49
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [key-west, overseas-railroad, flagler, trains, 1912, family]
+teaser: "A telegram you could never fold."
+script: |
+  Imagine this. Cannons booming. Whistles blowing. Bells ringing. Thousands of people cheering.
+
+  It all happened here, in January nineteen twelve, on the morning the first passenger train arrived in Key West.
+
+  Before that, this island was cut off from the mainland. Then Henry Flagler built a railroad that leaped from island to island, all the way to Key West.
+
+  When the trains came in, children sang songs, and threw flowers in front of the parade.
+
+  And the railroad workers gave Mister Flagler a present. A telegram. But not on paper. It was made of gold, exactly the size of a telegraph form, and a sixteenth of an inch thick. It came in a box of solid gold.
+
+  Imagine getting a letter you could never fold.
+detail: >-
+  From the New York Sun of 23 January 1912 (Key West dispatch of the 22nd): cannon, whistles and bells, thousands cheering, the island city bound to the mainland by Flagler's oversea railroad, the first passenger train arriving that morning, children singing patriotic songs and throwing flowers in the path of the parade, and the gold telegram, the exact size of a telegraph blank and a sixteenth of an inch thick. The OCR gives a number of children that cannot be read ("tine thousand"), so the script gives none. The Daytona Daily News of 23 January 1912 independently describes the testimonial from the Florida East Coast railroad's employees as engraved on a plate of gold in a casket of solid 18 karat gold. "Leaped from island to island" is from the HALS record of the Overseas Highway, which carried trains until 1935. Where the trains stopped (Trumbo Point) is in the header only.
+pronunciations: []
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Imagine this."
+    source: 1
+    quote: "Cannon boomrd. whist lex were blown, bells were rung and thousands of people cheered to day"
+  - says: "Cannons booming."
+    source: 1
+    quote: "Cannon boomrd."
+  - says: "Whistles blowing."
+    source: 1
+    quote: "whist lex were blown"
+  - says: "Bells ringing."
+    source: 1
+    quote: "bells were rung"
+  - says: "Thousands of people cheering."
+    source: 1
+    quote: "thousands of people cheered to day"
+  - says: "It all happened here, in January nineteen twelve, on the morning the first passenger train arrived in Key West."
+    source: 1
+    quote: "began thi morning with the arrival of the first pa.-sengertraln over tho railroad"
+  - says: "It all happened here, in January nineteen twelve, on the morning the first passenger train arrived in Key West."
+    source: 2
+    quote: "KEY WEST, Fla., Jan. 23 Upon; the arrival of the special train bar-l ing Henry M. Flagler to the Over-! sea celebration here yesterday"
+  - says: "Before that, this island was cut off from the mainland."
+    source: 1
+    quote: "this iMand citv has at last been bound to the mainland bv tho completion of Henry M. Flagler's oversea railroad"
+  - says: "Then Henry Flagler built a railroad that leaped from island to island, all the way to Key West."
+    source: 3
+    quote: "connects the Florida mainland like a long twisting ribbon leaping from island to island to Key West."
+  - says: "Then Henry Flagler built a railroad that leaped from island to island, all the way to Key West."
+    source: 1
+    quote: "completion of Henry M. Flagler's oversea railroad"
+  - says: "When the trains came in, children sang songs, and threw flowers in front of the parade."
+    source: 1
+    quote: "chil dren sang patriotic songs and throw- tlow ers in the path of the parade"
+  - says: "And the railroad workers gave Mister Flagler a present."
+    source: 2
+    quote: "was presented with a testimonial! from the employes of the Florida; East Coast railroad"
+  - says: "A telegram."
+    source: 1
+    quote: "pre sented the gold telegram to Mr Flagler"
+  - says: "It was made of gold, exactly the size of a telegraph form, and a sixteenth of an inch thick."
+    source: 1
+    quote: "The gold telegram is the exact size of a telegranh blank, a sixteenth of an inch thick"
+  - says: "It came in a box of solid gold."
+    source: 2
+    quote: "enclosed l i a casket of solid 18-karat gold."
+  - says: "Imagine getting a letter you could never fold."
+    source: 1
+    quote: "a sixteenth of an inch thick"
+sources:
+  - title: "The Sun (New York), 23 January 1912, page 4: Key West Rejoices in Honor of H. M. Flagler"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030272/1912-01-23/ed-1/?sp=4
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "The Daytona Daily News (Daytona, Fla.), 23 January 1912, page 2: Testimonial to Henry M. Flagler"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn93063916/1912-01-23/ed-1/?sp=2
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Overseas Highway, Key West, HALS FL-29 (record)"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record / Historic American Landscapes Survey"
+    url: https://www.loc.gov/item/fl0926/
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/key-west-the-gold-telegram/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 48.5
+    audioBytes: 776611
+    transcript:
+      totalS: 48.5
+      lines:
+        - text: Imagine this.
+          atS: 0
+          durationS: 1.07
+        - text: Cannons booming.
+          atS: 1.51
+          durationS: 1.21
+        - text: Whistles blowing.
+          atS: 3.04
+          durationS: 1.18
+        - text: Bells ringing.
+          atS: 4.61
+          durationS: 1.08
+        - text: Thousands of people cheering.
+          atS: 5.97
+          durationS: 1.68
+        - text: It all happened here, in January nineteen twelve, on the morning the first passenger train arrived in Key West.
+          atS: 8.26
+          durationS: 6.77
+        - text: Before that, this island was cut off from the mainland.
+          atS: 15.41
+          durationS: 3.23
+        - text: Then Henry Flagler built a railroad that leaped from island to island, all the way to Key West.
+          atS: 19.14
+          durationS: 5.28
+        - text: When the trains came in, children sang songs, and threw flowers in front of the parade.
+          atS: 24.87
+          durationS: 5.24
+        - text: And the railroad workers gave Mister Flagler a present.
+          atS: 30.71
+          durationS: 2.94
+        - text: A telegram.
+          atS: 33.82
+          durationS: 0.79
+        - text: But not on paper.
+          atS: 34.93
+          durationS: 1.22
+        - text: It was made of gold, exactly the size of a telegraph form, and a sixteenth of an inch thick.
+          atS: 36.54
+          durationS: 5.66
+        - text: It came in a box of solid gold.
+          atS: 42.59
+          durationS: 2.53
+        - text: Imagine getting a letter you could never fold.
+          atS: 45.44
+          durationS: 3.04

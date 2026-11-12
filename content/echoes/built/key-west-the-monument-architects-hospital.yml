@@ -1,0 +1,131 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch, following docs/writing-echoes.md.
+# Listening spot: Emma Street between Southard and Fleming Streets, inside the Truman Annex, looking west at the old Marine Hospital. The building is private housing; the Truman Annex streets are walkable by day, but check access on site.
+# Position: Midpoint of Emma Street between Southard (24.55270, -81.80535) and Fleming (24.55392, -81.80621) in the app's Key West street file. The HABS FL-194 UTM reference (17 418280 2715600) converts to 24.55216, -81.80692; the survey's Key West references sit about 140 m south of the matching Wikidata points, so the building is taken to be about 90 m west of this spot (medium-low confidence).
+id: key-west-the-monument-architects-hospital
+title: "The Monument Architect's Hospital"
+summary: "The old Marine Hospital in the Truman Annex was designed by Robert Mills, architect of the Washington Monument, for the breeze."
+place: "Former U.S. Marine Hospital, Emma Street, Truman Annex, Key West, Florida"
+at: { lat: 24.5533, lng: -81.8058 }
+triggerRadiusKm: 0.06
+category: built
+format: short
+durationS: 55
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [key-west, truman-annex, robert-mills, hospital, yellow-fever, architecture]
+teaser: "The man who drew the Washington Monument also drew this."
+script: |
+  Look west from Emma Street at the plain masonry building with porches on the front and the back. When it was last surveyed, it had been made into apartments.
+
+  It began as a hospital for sailors, built in eighteen forty five. And it was designed by Robert Mills, the architect of the Washington Monument.
+
+  He designed eight of these marine hospitals. This one was built for the heat. Windows everywhere, and two storey verandas at the front and the rear, for as much air and light as possible.
+
+  And in the basement, two cisterns, each eighteen feet long. In Key West, a hospital kept its own water.
+
+  Doctors here were pioneers against yellow fever. They helped bring in the quarantine laws that Florida, and then the United States, adopted.
+
+  In Washington, Mills built up. Here, he built for the breeze.
+detail: >-
+  From the Historic American Buildings Survey record (HABS FL-194): one of eight Marine Hospitals designed by Robert Mills, whose Washington work included the Washington Monument; built 1844 to 1845 on land sold by John Simonton; two and a half storeys of stone and brick with two storey verandas front and rear; two 18 foot cisterns in the basement; Dr. Robert Murray and Dr. J. W. Porter among the pioneers in treating yellow fever and in the quarantine laws later adopted by Florida and the United States; closed as a Marine Hospital in 1943 and later remodelled for multi family housing. The survey's own wording on the date is OCR damaged; the 1845 date is from the record's structure dates. Access inside the Truman Annex was not checked.
+pronunciations: []
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Look west from Emma Street at the plain masonry building with porches on the front and the back."
+    source: 1
+    quote: "A plain, three-story masonry building"
+  - says: "Look west from Emma Street at the plain masonry building with porches on the front and the back."
+    source: 1
+    quote: "extended between projecting, end wings on the front and rear."
+  - says: "When it was last surveyed, it had been made into apartments."
+    source: 1
+    quote: "The house has been extensively remodeled to accommodate multi-family housing*"
+  - says: "It began as a hospital for sailors, built in eighteen forty five."
+    source: 1
+    quote: "Building/structure dates: 1845 Initial Construction"
+  - says: "And it was designed by Robert Mills, the architect of the Washington Monument."
+    source: 1
+    quote: "Mills designed many important Washington landmarks, including the Washington Monument."
+  - says: "He designed eight of these marine hospitals."
+    source: 1
+    quote: "One of eight Marine Hospitals designed by Robert Mills"
+  - says: "Windows everywhere, and two storey verandas at the front and the rear, for as much air and light as possible."
+    source: 1
+    quote: "provided maximum ventilation and light"
+  - says: "And in the basement, two cisterns, each eighteen feet long."
+    source: 1
+    quote: "Two cisterns, 18' long, were located in the basement at the southern end of the building."
+  - says: "In Key West, a hospital kept its own water."
+    source: 1
+    quote: "Two cisterns, 18' long, were located in the basement at the southern end of the building."
+  - says: "Doctors here were pioneers against yellow fever."
+    source: 1
+    quote: "Dr. Robert Murray and Dr. J.W. Porter of the hospital staff were among the famous pioneers in treating yellow fever"
+  - says: "They helped bring in the quarantine laws that Florida, and then the United States, adopted."
+    source: 1
+    quote: "in bringing about the quarantine laws that later adopted by not only Florida but the United States."
+  - says: "Here, he built for the breeze."
+    source: 1
+    quote: "provided maximum ventilation and light"
+  - says: "This one was built for the heat."
+    source: 1
+    quote: "reflect its usage as a hospital and the salubrious climate"
+  - says: "In Washington, Mills built up."
+    source: 1
+    quote: "Mills designed many important Washington landmarks, including the Washington Monument."
+sources:
+  - title: "U. S. Marine Hospital, Emma Street, Key West, HABS FL-194 (record and data pages)"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/fl0150/
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-the-monument-architects-hospital/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55
+    audioBytes: 881518
+    transcript:
+      totalS: 55
+      lines:
+        - text: Look west from Emma Street at the plain masonry building with porches on the front and the back.
+          atS: 0
+          durationS: 5.65
+        - text: When it was last surveyed, it had been made into apartments.
+          atS: 6.35
+          durationS: 3.41
+        - text: It began as a hospital for sailors, built in eighteen forty five.
+          atS: 10.37
+          durationS: 4.42
+        - text: And it was designed by Robert Mills, the architect of the Washington Monument.
+          atS: 15.17
+          durationS: 4.69
+        - text: He designed eight of these marine hospitals.
+          atS: 20.38
+          durationS: 2.61
+        - text: This one was built for the heat.
+          atS: 23.31
+          durationS: 1.71
+        - text: Windows everywhere, and two storey verandas at the front and the rear, for as much air and light as possible.
+          atS: 25.23
+          durationS: 6.36
+        - text: And in the basement, two cisterns, each eighteen feet long.
+          atS: 31.8
+          durationS: 4.62
+        - text: In Key West, a hospital kept its own water.
+          atS: 37.02
+          durationS: 3.23
+        - text: Doctors here were pioneers against yellow fever.
+          atS: 40.85
+          durationS: 3
+        - text: They helped bring in the quarantine laws that Florida, and then the United States, adopted.
+          atS: 44.18
+          durationS: 5.7
+        - text: In Washington, Mills built up.
+          atS: 50.05
+          durationS: 2.36
+        - text: Here, he built for the breeze.
+          atS: 52.73
+          durationS: 2.3

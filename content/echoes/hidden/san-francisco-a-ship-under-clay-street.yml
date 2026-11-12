@@ -1,0 +1,160 @@
+# Drafted by Claude Code (2026-11-12) for San Francisco (second pass), following docs/writing-echoes.md (format v2).
+# Listening spot: The public sidewalk at the corner of Clay Street and Sansome Street, Financial District, a block from the Transamerica Pyramid. The ship lies under the corner, per the National Park Service.
+# Position: The Clay and Sansome intersection from general map knowledge (medium confidence; check on the Overture street file before approval).
+id: san-francisco-a-ship-under-clay-street
+title: "A Ship Under Clay Street"
+summary: "The Gold Rush ship Niantic was abandoned in the cove, hauled ashore, made into a hotel, burned, and buried. She is still under this corner."
+place: "Corner of Clay Street and Sansome Street, Financial District, San Francisco, California"
+at: { lat: 37.79515, lng: -122.40118 }
+triggerRadiusKm: 0.04
+category: hidden
+format: short
+durationS: 70
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [san-francisco, financial-district, waterfront, gold-rush, shipwreck, niantic, landfill]
+teaser: "There is a ship under this corner. She never sank."
+script: |
+  Stand at the corner of Clay and Sansome, and look down at the pavement. There is a ship under it.
+
+  Her name was the Niantic. In July, eighteen forty nine, she sailed into the cove that was here, packed with men on their way to the gold fields.
+
+  Most of her crew deserted too. The captain let the last five men go, and with no crew, the Niantic was stuck.
+
+  So she was hauled ashore and put to use. A store. A warehouse. A hotel.
+
+  The town filled in the water around her with mud, sand and debris. By eighteen fifty, the Niantic was more than three blocks from the sea.
+
+  In eighteen fifty one, a great fire burned her down to the waterline. What was left made good foundations, and the buildings put up on top of her carried her name.
+
+  In nineteen seventy eight, builders dug here and uncovered a large part of the ship. Her stern and rudder went to the Maritime Museum.
+
+  The rest of her is still down there.
+
+  Nobody moved the ship. They moved the sea.
+detail: >-
+  All from the National Park Service page on the Niantic (San Francisco Maritime National Historical Park): arrival in Yerba Buena Cove on 5 July 1849 with gold seekers, the crew deserting and the last five men discharged on 11 July, the ship hauled ashore as building material, warehouse and hotel, the water lots filled with mud, sand and debris, more than three blocks from the sea by 1850, burned to the waterline in the fire of May 1851, the Niantic Hotel, Block and Building on the site, the 1978 excavation, the stern and rudder in the Maritime Museum, and the remains beneath the corner of Clay and Sansome. The last line is a turn, not a claim: the shoreline moved as the cove was filled.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "There is a ship under it."
+    source: 1
+    quote: "The remains of Niantic today lie beneath the corner of Clay and Sansome Streets"
+  - says: "In July, eighteen forty nine, she sailed into the cove that was here, packed with men on their way to the gold fields."
+    source: 1
+    quote: "Niantic entered San Francisco Bay on July 5, 1849 and anchored in Yerba Buena Cove."
+  - says: "In July, eighteen forty nine, she sailed into the cove that was here, packed with men on their way to the gold fields."
+    source: 1
+    quote: "the Niantic, packed with eager fortune seekers, set sail for San Francisco."
+  - says: "Most of her crew deserted too."
+    source: 1
+    quote: "Most of the crew deserted the ship, eager to head to the gold fields."
+  - says: "The captain let the last five men go, and with no crew, the Niantic was stuck."
+    source: 1
+    quote: "He discharged the last five men on July 11, 1849. With no crew and little likelihood of raising a new one, the Niantic was stuck in San Francisco."
+  - says: "So she was hauled ashore and put to use."
+    source: 1
+    quote: "who had the ship hauled ashore and used for building material, warehouse storage, and a hotel."
+  - says: "A store."
+    source: 1
+    quote: "The Niantic was then converted for use as a store, a warehouse, and a hotel."
+  - says: "The town filled in the water around her with mud, sand and debris."
+    source: 1
+    quote: "the shoreline moved as water lots were filled in with mud, sand and debris."
+  - says: "By eighteen fifty, the Niantic was more than three blocks from the sea."
+    source: 1
+    quote: "By 1850, the Niantic was more than three blocks from the sea."
+  - says: "In eighteen fifty one, a great fire burned her down to the waterline."
+    source: 1
+    quote: "The great fire of May, 1851 burned the ship down to the waterline"
+  - says: "What was left made good foundations, and the buildings put up on top of her carried her name."
+    source: 1
+    quote: "That bottom made good foundations for future buildings, which carried on the name of the ship"
+  - says: "In nineteen seventy eight, builders dug here and uncovered a large part of the ship."
+    source: 1
+    quote: "Construction through the years encountered the remains of the Niantic , and in 1978, a large portion of the ship was uncovered."
+  - says: "Her stern and rudder went to the Maritime Museum."
+    source: 1
+    quote: "the ship's actual stern and rudder ,  which was recovered in 1978 during excavations"
+  - says: "The rest of her is still down there."
+    source: 1
+    quote: "The remains of Niantic today lie beneath the corner of Clay and Sansome Streets, near the Transamerica Pyramid building."
+  - says: "Her name was the Niantic."
+    source: 1
+    quote: "The Niantic was one of the many ships that brought gold-seekers to San Francisco during the height of the California Gold Rush ."
+sources:
+  - title: "Niantic: Buried Gold Rush Ship"
+    publisher: "National Park Service, San Francisco Maritime National Historical Park"
+    url: https://www.nps.gov/safr/learn/historyculture/niantic.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+pronunciations:
+  - written: Niantic
+    say: nye-AN-tick
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-a-ship-under-clay-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.8
+    audioBytes: 1117665
+    transcript:
+      totalS: 69.8
+      lines:
+        - text: Stand at the corner of Clay and Sansome, and look down at the pavement.
+          atS: 0
+          durationS: 4.12
+        - text: There is a ship under it.
+          atS: 4.56
+          durationS: 1.5
+        - text: Her name was the Niantic.
+          atS: 6.44
+          durationS: 2.15
+        - text: In July, eighteen forty nine, she sailed into the cove that was here, packed with men on their way to the gold fields.
+          atS: 9.1
+          durationS: 7.51
+        - text: Most of her crew deserted too.
+          atS: 17
+          durationS: 1.86
+        - text: The captain let the last five men go, and with no crew, the Niantic was stuck.
+          atS: 19.54
+          durationS: 6.1
+        - text: So she was hauled ashore and put to use.
+          atS: 26.08
+          durationS: 2.48
+        - text: A store.
+          atS: 28.77
+          durationS: 0.78
+        - text: A warehouse.
+          atS: 29.71
+          durationS: 0.89
+        - text: A hotel.
+          atS: 30.78
+          durationS: 0.93
+        - text: The town filled in the water around her with mud, sand and debris.
+          atS: 32.03
+          durationS: 4.19
+        - text: By eighteen fifty, the Niantic was more than three blocks from the sea.
+          atS: 36.83
+          durationS: 4.67
+        - text: In eighteen fifty one, a great fire burned her down to the waterline.
+          atS: 42.1
+          durationS: 4.39
+        - text: What was left made good foundations, and the buildings put up on top of her carried her name.
+          atS: 46.87
+          durationS: 5.69
+        - text: In nineteen seventy eight, builders dug here and uncovered a large part of the ship.
+          atS: 53.86
+          durationS: 5.05
+        - text: Her stern and rudder went to the Maritime Museum.
+          atS: 59.61
+          durationS: 3.37
+        - text: The rest of her is still down there.
+          atS: 63.92
+          durationS: 1.93
+        - text: Nobody moved the ship.
+          atS: 66.55
+          durationS: 1.47
+        - text: They moved the sea.
+          atS: 68.41
+          durationS: 1.39
