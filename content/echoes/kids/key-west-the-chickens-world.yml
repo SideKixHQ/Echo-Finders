@@ -1,0 +1,86 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch: a children's echo.
+# Listening spot: Bayview Park, Truman Avenue at Jose Marti Drive, a public city park. The chickens roam the whole island; the park is simply a safe public place to stop and look for them.
+# Position: Wikidata Q34834428 (Bayview Park, 24.55699, -81.78878) (high confidence for the park).
+id: key-west-the-chickens-world
+title: "The Chickens' World"
+summary: "Key West's chickens were once backyard birds. When families let them go, an island with no predators let them multiply."
+place: "Bayview Park, Truman Avenue, Key West, Florida"
+at: { lat: 24.55699, lng: -81.78878 }
+triggerRadiusKm: 0.1
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 52
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [key-west, chickens, animals, roosters, family]
+teaser: "Can you hear a rooster? You probably can."
+script: |
+  Look around. Can you see a chicken? Can you hear a rooster?
+
+  In Key West, whole chicken families cross the road together. They are everywhere.
+
+  Long ago, lots of families here kept chickens at home. From the early nineteen hundreds until around World War Two.
+
+  Then it got easy to buy eggs and chicken at the supermarket. So people let their chickens loose.
+
+  And on a small island, two miles by four, with no wild animals to hunt them, the chickens did very well.
+
+  In nineteen ninety eight, a big hurricane blew them all over the island. They have been multiplying ever since.
+
+  The city once had a chicken catcher. He quit.
+
+  So now it is the chickens' world. We are just living in it.
+detail: >-
+  From CBS News (Cristian Benavides, 27 July 2024), quoting Corey Malcolm, lead historian of the Florida Keys History Center: chicken raising from the early 1900s to around the Second World War, with Cuban cockfighting traditions behind it; supermarkets made home flocks unnecessary and birds were let loose on a two by four mile island with no natural predators; Florida banned cockfighting in 1986 and roosters were set free; Hurricane Georges (spelled "George" in the article) scattered them in 1998; a city employed chicken catcher quit in the 2000s after a backlash. Cockfighting is left out of a children's script. The closing line is the article's own.
+pronunciations: []
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In Key West, whole chicken families cross the road together."
+    source: 1
+    quote: "with entire chicken families often seen crossing roads."
+  - says: "They are everywhere."
+    source: 1
+    quote: "They're \"everywhere,\" he says"
+  - says: "Long ago, lots of families here kept chickens at home."
+    source: 1
+    quote: "\"Chickens were very much a part of early Key West,\" Malcolm said."
+  - says: "From the early nineteen hundreds until around World War Two."
+    source: 1
+    quote: "The tradition of raising chickens carries on from the early 1900s into around World War II."
+  - says: "Then it got easy to buy eggs and chicken at the supermarket."
+    source: 1
+    quote: "By then, the ease of getting eggs and meat from supermarkets meant homeowners let their chickens loose"
+  - says: "So people let their chickens loose."
+    source: 1
+    quote: "homeowners let their chickens loose"
+  - says: "And on a small island, two miles by four, with no wild animals to hunt them, the chickens did very well."
+    source: 1
+    quote: "in a two-by-four mile island with no natural predators."
+  - says: "In nineteen ninety eight, a big hurricane blew them all over the island."
+    source: 1
+    quote: "Then in 1998, Hurricane George spread them all throughout the island"
+  - says: "They have been multiplying ever since."
+    source: 1
+    quote: "and they have been multiplying ever since."
+  - says: "The city once had a chicken catcher."
+    source: 1
+    quote: "a city-employed chicken catcher in the 2000s quit after swift backlash from chicken enthusiasts."
+  - says: "He quit."
+    source: 1
+    quote: "a city-employed chicken catcher in the 2000s quit"
+  - says: "So now it is the chickens' world."
+    source: 1
+    quote: "In Key West, it's the chickens' world, and we're just living in it."
+  - says: "We are just living in it."
+    source: 1
+    quote: "In Key West, it's the chickens' world, and we're just living in it."
+sources:
+  - title: "How feral chickens rule the roost in Key West (Cristian Benavides, 27 July 2024)"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/feral-chickens-rule-the-roost-key-west-florida/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts

@@ -1,0 +1,102 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch, following docs/writing-echoes.md.
+# Listening spot: The Duncan Street sidewalk in the 1400 block, near 1431 Duncan Street, Tennessee Williams's Key West house (named in the Key West Citizen, 9 April 1952). It is a private home: stay on the sidewalk and do not point at the door.
+# Position: Duncan Street between Leon Street (24.55575, -81.78638) and Thompson Street (24.55636, -81.78540) in the app's Key West street file, midway. Which side of the block 1431 stands on was not confirmed (medium-low confidence for the house, medium for the block).
+id: key-west-the-light-was-sharp-and-crisp
+title: "The Light Was Sharp and Crisp"
+summary: "In 1954 Hollywood came to Key West to film Tennessee Williams's The Rose Tattoo. The local paper watched the stars arrive."
+place: "Duncan Street near Tennessee Williams's house, Key West, Florida"
+at: { lat: 24.55605, lng: -81.78590 }
+triggerRadiusKm: 0.05
+category: people
+format: short
+durationS: 70
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [key-west, tennessee-williams, film, the-rose-tattoo, anna-magnani, 1950s]
+teaser: "Fewer than twenty fans were waiting for the greatest actress in Italy."
+script: |
+  You are on Duncan Street. In the nineteen fifties, Tennessee Williams had a house on this street. It is a private home, so enjoy it from the sidewalk.
+
+  In the autumn of nineteen fifty four, Hollywood came to Key West to film his play, The Rose Tattoo.
+
+  The star was Anna Magnani, Italy's most celebrated actress. She flew from Hollywood to Miami, and came down the Overseas Highway. Fewer than twenty fans were waiting when she pulled up at her hotel, in a canary yellow convertible. She signed one autograph. The next day, the hotel said, she slept until noon.
+
+  A few days later Williams drove down from Miami too, with his secretary, Frank Merlo. The Key West Citizen called him a regular winter visitor, and photographed him at his Duncan Street home.
+
+  Behind the camera was James Wong Howe, who had won his share of Academy Awards. The lighting here, he said, was sharp and crisp. And the Key West settings? They could not be duplicated anywhere.
+
+  So for a few weeks, the town played itself.
+detail: >-
+  From the Key West Citizen: 28 October 1954 (Magnani's arrival via the Overseas Highway after flying from Hollywood to Miami, fewer than a score of fans, the canary yellow convertible at the Casa Marina, one autograph, asleep until noon), 2 November 1954 (Williams, "a regular winter visitor", arriving to be present for the filming, photographed at his Duncan Street home, accompanied by his secretary Frank Merlo; James Wong Howe on the light and the settings) and 9 April 1952 (Williams's home at 1431 Duncan Street). "Italy's most celebrated actress" paraphrases the paper's "hailed as Italy's foremost actress". "For a few weeks" is from the filming being reported as starting in early November; the end date was not checked. The papers call Merlo his secretary; the Library of Congress's Headlines and Heroes blog (2022) describes their fifteen year relationship, which the script does not go into.
+pronunciations:
+  - written: "Magnani"
+    say: "mahn-YAH-nee"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "You are on Duncan Street."
+    source: 3
+    quote: "Film star Montgomery Clift was entertained at dinner Friday even ing at foe home of his host, Ten nessee Williams, 1431 Duncan street"
+  - says: "In the nineteen fifties, Tennessee Williams had a house on this street."
+    source: 3
+    quote: "Ten nessee Williams, 1431 Duncan street"
+  - says: "It is a private home, so enjoy it from the sidewalk."
+    source: 2
+    quote: "He's shown at his Duncan Street homo"
+  - says: "In the autumn of nineteen fifty four, Hollywood came to Key West to film his play, The Rose Tattoo."
+    source: 1
+    quote: "rived in Key West shortly after 7 o’clock Wednesday for a few days rest before the filming of Tennessee Williams’ play, “The Rose Tattoo.”"
+  - says: "The star was Anna Magnani, Italy's most celebrated actress."
+    source: 1
+    quote: "Anna Magnani, hailed os Italy’s foremost actress"
+  - says: "She flew from Hollywood to Miami, and came down the Overseas Highway."
+    source: 1
+    quote: "arrived via the Overseas Highway after flying from Hollywood to Miami."
+  - says: "Fewer than twenty fans were waiting when she pulled up at her hotel, in a canary yellow convertible."
+    source: 1
+    quote: "Less than a score of movie fans were on hand when she pulled up in a canary yellow convertible at the entrance to the Case Marin? Hotel."
+  - says: "She signed one autograph."
+    source: 1
+    quote: "She took time out to sign one autograph."
+  - says: "The next day, the hotel said, she slept until noon."
+    source: 1
+    quote: "Miss Magnani slept until noon to* day, according to hotel officials."
+  - says: "A few days later Williams drove down from Miami too, with his secretary, Frank Merlo."
+    source: 2
+    quote: "Accompanied by his secretary. Frank Merlo. he drove hero from Miami."
+  - says: "The Key West Citizen called him a regular winter visitor, and photographed him at his Duncan Street home."
+    source: 2
+    quote: "Tennossoo Williams, a regular winter visitor to Kay West, arrived hero this morning to bo present for tho filming o! his play."
+  - says: "The Key West Citizen called him a regular winter visitor, and photographed him at his Duncan Street home."
+    source: 2
+    quote: "He's shown at his Duncan Street homo"
+  - says: "Behind the camera was James Wong Howe, who had won his share of Academy Awards."
+    source: 2
+    quote: "Cameraman James Wong Howe, who has won more than hts share of Academy Awards"
+  - says: "The lighting here, he said, was sharp and crisp."
+    source: 2
+    quote: "He added that the lighting here is “sharp and crisp"
+  - says: "They could not be duplicated anywhere."
+    source: 2
+    quote: "And the Key West settings are wonderful we couldn't dup licate them anywnere."
+  - says: "So for a few weeks, the town played itself."
+    source: 2
+    quote: "And the Key West settings are wonderful we couldn't dup licate them anywnere."
+sources:
+  - title: "The Key West Citizen, 28 October 1954, page 1: Italian Star Sleeps Until Noon Today"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83016244/1954-10-28/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "The Key West Citizen, 2 November 1954, page 1: Filming Of Rose Tattoo To Start"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83016244/1954-11-02/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "The Key West Citizen, 9 April 1952, page 4: Film Star Clift Dines At Home Of Famed Playwright"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83016244/1952-04-09/ed-1/?sp=4
+    retrievedAt: "2026-11-12"
+    rights: public-domain

@@ -1,0 +1,92 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch, following docs/writing-echoes.md.
+# Listening spot: The public sidewalk at the northwest corner of Wall Street and Exchange Street, by Mallory Square, facing the Wall and Company warehouse (HABS FL-175). Whether the building is still standing in its 1967 form was not checked; the script describes what the survey recorded.
+# Position: Wall Street and Exchange Street intersection from the app's Key West street file (24.55999, -81.80666); the HABS UTM reference (17 418270 2716270) converts to 24.55821, -81.80705, with the survey's usual southward offset (medium confidence). About 90 m from the existing Ice From the North echo at Wall Street and Tift Alley.
+id: key-west-brought-by-a-wreck
+title: "Brought by a Wreck"
+summary: "William Wall reached Key West in 1824 because his ship was wrecked. He got rich on salvaged cargo. Wall Street is named for him."
+place: "Wall and Company warehouse, Wall Street and Exchange Street, Key West, Florida"
+at: { lat: 24.55999, lng: -81.80666 }
+triggerRadiusKm: 0.03
+category: history
+format: short
+durationS: 62
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [key-west, wreckers, salvage, mallory-square, wall-street]
+teaser: "He arrived the way a lot of cargo did. By shipwreck."
+script: |
+  Find the brick warehouse at the corner of Wall Street and Exchange Street. It was one of the earliest brick buildings on the island.
+
+  Wall Street is named for the man who founded the company, William Wall.
+
+  He was an Englishman. And in eighteen twenty four he came to Key West for a very Key West reason. He was shipwrecked.
+
+  He stayed. And he made his fortune dealing in salvaged goods.
+
+  He pioneered cigar making here too, owned an early printing office, and held shares in the local salt company. He was the first man on the island to make a substantial fortune.
+
+  He left before the Civil War, and died in New York in eighteen sixty six. This warehouse went up after him, in eighteen seventy nine. And it carried on the trade. It stored cargoes auctioned off by order of the federal admiralty court.
+
+  A shipwreck brought him here. Other people's shipwrecks made him rich.
+detail: >-
+  From the Historic American Buildings Survey record of the Wall and Company Warehouse (HABS FL-175): one of the earliest brick buildings on the island, built 1879 with work in 1886; Wall Street named for the company's founder, William H. Wall, an Englishman who came to Key West in 1824 after being shipwrecked and made a fortune dealing in salvaged goods; his cigar making, printing office, salt company shares and real estate; the first to make a substantial fortune; left before the Civil War, died in New York in 1866; the building used as a storehouse for cargoes auctioned by order of the federal admiralty. "Court" is added to "federal admiralty" for the ear. "Other people's shipwrecks" is the inference that salvaged goods came from wrecked ships.
+pronunciations: []
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Find the brick warehouse at the corner of Wall Street and Exchange Street."
+    source: 1
+    quote: "Wall & Company Warehouse, Wall & Exchange Streets, Key West"
+  - says: "It was one of the earliest brick buildings on the island."
+    source: 1
+    quote: "This warehouse was one of the earliest brick buildings on the island."
+  - says: "Wall Street is named for the man who founded the company, William Wall."
+    source: 1
+    quote: "Wall Street was named for the Wall & Company's founder, William H. Wall."
+  - says: "He was an Englishman."
+    source: 1
+    quote: "William H. Wall, founder of Wall & Co., was an Englishman"
+  - says: "And in eighteen twenty four he came to Key West for a very Key West reason."
+    source: 1
+    quote: "was an Englishman who in 1824 came to Key West after being shipwrecked."
+  - says: "He was shipwrecked."
+    source: 1
+    quote: "came to Key West after being shipwrecked."
+  - says: "He stayed."
+    source: 1
+    quote: "He was one of the community's earliest and most prominent citizens"
+  - says: "And he made his fortune dealing in salvaged goods."
+    source: 1
+    quote: "An astute businessman, he made a fortune dealing in salvaged goods."
+  - says: "He pioneered cigar making here too, owned an early printing office, and held shares in the local salt company."
+    source: 1
+    quote: "Wall also pioneered the cigar making business, owned an early printing office, was a stockholder in the local salt company, and speculated in real estate."
+  - says: "He was the first man on the island to make a substantial fortune."
+    source: 1
+    quote: "the first to make a substantial fortune."
+  - says: "He left before the Civil War, and died in New York in eighteen sixty six."
+    source: 1
+    quote: "He left the island just prior to the Civil War and died in New York in 1866."
+  - says: "This warehouse went up after him, in eighteen seventy nine."
+    source: 1
+    quote: "Building/structure dates: 1879 Initial Construction"
+  - says: "And it carried on the trade."
+    source: 1
+    quote: "Ihis building was used as a storehouse for cargos auctioned by order of the federal admiralty."
+  - says: "It stored cargoes auctioned off by order of the federal admiralty court."
+    source: 1
+    quote: "Ihis building was used as a storehouse for cargos auctioned by order of the federal admiralty."
+  - says: "A shipwreck brought him here."
+    source: 1
+    quote: "came to Key West after being shipwrecked."
+  - says: "Other people's shipwrecks made him rich."
+    source: 1
+    quote: "he made a fortune dealing in salvaged goods."
+sources:
+  - title: "Wall & Company Warehouse, Wall & Exchange Streets, Key West, HABS FL-175 (record and data pages)"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/fl0152/
+    retrievedAt: "2026-11-12"
+    rights: public-domain

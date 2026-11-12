@@ -1,0 +1,88 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch, following docs/writing-echoes.md.
+# Listening spot: The Greene Street sidewalk near 512 Greene Street, where the Star Coffee Mills roasted coffee in 1947. What stands at the address now was not checked; the script does not say the mill is still there.
+# Position: The 500 block of Greene Street runs from Duval Street (24.55910, -81.80524) to Simonton Street (24.55993, -81.80392) in the app's Key West street file; 512 is placed near the Duval end (medium confidence).
+id: key-west-the-weaker-cup
+title: "The Weaker Cup"
+summary: "Visitors kept asking which was stronger, Cuban coffee or American. In 1947 a Greene Street roaster gave a surprising answer."
+place: "Star Coffee Mills site, 512 Greene Street, Key West, Florida"
+at: { lat: 24.5592, lng: -81.8050 }
+triggerRadiusKm: 0.04
+category: food-drink
+format: short
+durationS: 55
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [key-west, cuban-coffee, coffee, greene-street, 1940s]
+teaser: "Which is stronger? The roaster said the answer was not the one you think."
+script: |
+  You are on Greene Street. In nineteen forty seven, at number five twelve, the Star Coffee Mills was roasting coffee.
+
+  Visitors kept asking the same question. Cuban coffee or American coffee. Which is stronger?
+
+  That January, the roaster, J. T. Sanchez, answered it for the Key West Citizen, turning over a batch of Cuban coffee as he talked.
+
+  American coffee, he said. American is stronger.
+
+  His reason was the oven. Cuban coffee, he said, roasts for twenty to twenty five minutes. American coffee, for a little over fifteen. Roast it longer, he said, and nearly all the caffeine burns out.
+
+  He was roasting fourteen to sixteen hundred pounds of Cuban coffee a day.
+
+  So, the next time a tiny cup of Cuban coffee makes your heart race, remember. The man who roasted it said that was the weak one.
+detail: >-
+  From the Key West Citizen, 3 January 1947, page 1 ("Cuban Coffee Not So Strong As American, Roaster Says"): J. T. Sanchez of the Star Coffee Mills, 512 Greene Street, on roasting times (20 to 25 minutes against a little over 15) and caffeine burning out of the longer roast, and his output of 1,400 to 1,600 pounds of Cuban coffee a day. The caffeine claim is his, and the script attributes it to him; how much caffeine a darker roast loses is more modest than "nearly all", and a reviewer may want the script to say so. The final line is attributed to him for that reason.
+pronunciations:
+  - written: "Sanchez"
+    say: "SAN-chez"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "You are on Greene Street."
+    source: 1
+    quote: "Star Coffee Mills, 512 Greene street"
+  - says: "In nineteen forty seven, at number five twelve, the Star Coffee Mills was roasting coffee."
+    source: 1
+    quote: "The answer came today from J. T. Sanchez of the Star Coffee Mills, 512 Greene street"
+  - says: "Visitors kept asking the same question."
+    source: 1
+    quote: "Many visitors to Key West are puzzled as between American coffee and Cuban-type coffee"
+  - says: "Which is stronger?"
+    source: 1
+    quote: "which is stronger?—they fre quently ask."
+  - says: "That January, the roaster, J. T. Sanchez, answered it for the Key West Citizen, turning over a batch of Cuban coffee as he talked."
+    source: 1
+    quote: "as he turned over a batch of Cuban coffee in the mills."
+  - says: "American coffee, he said."
+    source: 1
+    quote: "the American coffee is stronger."
+  - says: "American is stronger."
+    source: 1
+    quote: "the American coffee is stronger."
+  - says: "His reason was the oven."
+    source: 1
+    quote: "Cuban coffee is cooked longer than American coffee."
+  - says: "Cuban coffee, he said, roasts for twenty to twenty five minutes."
+    source: 1
+    quote: "The Cuban coffee stays in the oven for from 20 to 25 minutes"
+  - says: "American coffee, for a little over fifteen."
+    source: 1
+    quote: "tfie American coffee only re mains there for a little over 15 minutes."
+  - says: "Roast it longer, he said, and nearly all the caffeine burns out."
+    source: 1
+    quote: "So the result is that nearly all the eaffein is burned out of it."
+  - says: "He was roasting fourteen to sixteen hundred pounds of Cuban coffee a day."
+    source: 1
+    quote: "Sanchez roasts from 1,400 to 1,600 pounds of Cuban coffee a day."
+  - says: "The man who roasted it said that was the weak one."
+    source: 1
+    quote: "the American coffee is stronger."
+  - says: "Cuban coffee or American coffee."
+    source: 1
+    quote: "Many visitors to Key West are puzzled as between American coffee and Cuban-type coffee"
+sources:
+  - title: "The Key West Citizen, 3 January 1947, page 1: Cuban Coffee Not So Strong As American, Roaster Says"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83016244/1947-01-03/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts

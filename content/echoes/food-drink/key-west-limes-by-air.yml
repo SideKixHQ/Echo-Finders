@@ -1,0 +1,88 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch, following docs/writing-echoes.md.
+# Listening spot: The Duval Street sidewalk at Caroline Street, in the middle of the old town. The sources tie the pie to the town, not to a building, so the echo sits on a central public corner rather than at any shop.
+# Position: Duval Street and Caroline Street intersection from the app's Key West street file (24.55806, -81.80447) (high confidence for the corner; no building is meant).
+id: key-west-limes-by-air
+title: "Limes by Air"
+summary: "In 1949 Key limes were flown to Cincinnati for one birthday pie. By 1955 visitors were writing to the paper to beg for the recipe."
+place: "Duval Street at Caroline Street, Key West, Florida"
+at: { lat: 24.55806, lng: -81.80447 }
+triggerRadiusKm: 0.05
+category: food-drink
+format: short
+durationS: 76
+visibility: position-only
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [key-west, key-lime-pie, food, duval-street, 1940s, 1950s]
+teaser: "Three dozen limes, by air, for one birthday."
+script: |
+  If you have a slice of Key lime pie in your hand, good. Listen to this one while you eat it.
+
+  In August nineteen forty nine, the Key West Citizen ran a small item on its front page. An order had come in that morning for three dozen Key limes, to be sent by air express to Cincinnati, Ohio.
+
+  The woman who ordered them had visited Key West, and fallen in love with the lime pie. Now she wanted to bake one for her mother's seventy second birthday.
+
+  The paper said Key lime pie might some day replace the birthday cake.
+
+  Six years later, a letter came to the paper from Oklahoma City. A couple had been introduced to Key lime pie on holiday here. Back home, she wrote, they could not find it in a restaurant, or even a recipe close to it. Could the paper send one, as it is baked in Key West? She had enclosed a stamped envelope.
+
+  The columnist passed the plea on, to a chef, or to any housewife who turned out a really good one.
+
+  Some recipes travel in cookbooks. This one travelled by air mail, and by pleading letter.
+detail: >-
+  From the Key West Citizen: 18 August 1949, page 1 ("Lime Pie Will Replace Birthday Cake": three dozen Key limes air expressed to a former visitor in Cincinnati for her mother's 72nd birthday pie) and 14 September 1955, page 3 (a column printing a letter from Oklahoma City asking for the recipe "as it is baked in Key West", with a self addressed stamped envelope, and the columnist's appeal to a chef or "any housewife"). The private people named in the papers are not named in the script. Neither article says where the pie came from or how it was made; the echo is about how far its reputation travelled, not its origin, which is disputed.
+pronunciations: []
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "In August nineteen forty nine, the Key West Citizen ran a small item on its front page."
+    source: 1
+    quote: "Lime Pie Will Replace Birthday Cake August 23"
+  - says: "An order had come in that morning for three dozen Key limes, to be sent by air express to Cincinnati, Ohio."
+    source: 1
+    quote: "An order was received this morning for three dozen Key Limes that were air-expressed to"
+  - says: "The woman who ordered them had visited Key West, and fallen in love with the lime pie."
+    source: 1
+    quote: "a former visitor here, fell in love with our famous Lime Pie"
+  - says: "Now she wanted to bake one for her mother's seventy second birthday."
+    source: 1
+    quote: "decided that she would make one for her mother’s birthday, August 23rd. Her mother will be 72 years old on that date"
+  - says: "The paper said Key lime pie might some day replace the birthday cake."
+    source: 1
+    quote: "Key Lime Pie may some day replace the time honored birth day cake"
+  - says: "Six years later, a letter came to the paper from Oklahoma City."
+    source: 2
+    quote: "Oklahoma City 3. Oklahoma, arrives to ask a favor of Key West lime pie experts"
+  - says: "A couple had been introduced to Key lime pie on holiday here."
+    source: 2
+    quote: "While visiting Key West recently, my husband and I were intro duced to your famous ‘Key Lime Pie’."
+  - says: "Back home, she wrote, they could not find it in a restaurant, or even a recipe close to it."
+    source: 2
+    quote: "we are unable to find this delicious pie in a estaurant or even a recipe closely related to your particular pie"
+  - says: "Could the paper send one, as it is baked in Key West?"
+    source: 2
+    quote: "would it be possible for you to send me the recipe for this pie as it is baked in Key West?"
+  - says: "She had enclosed a stamped envelope."
+    source: 2
+    quote: "I am enclosing a self-addressed, stamped envelope for your convenience."
+  - says: "The columnist passed the plea on, to a chef, or to any housewife who turned out a really good one."
+    source: 2
+    quote: "Page Bill de Loach to give up a chef's secret on Key Lime pie! Or any housewife who turns out a really good recipe!"
+  - says: "This one travelled by air mail, and by pleading letter."
+    source: 1
+    quote: "three dozen Key Limes that were air-expressed"
+  - says: "An order had come in that morning for three dozen Key limes, to be sent by air express to Cincinnati, Ohio."
+    source: 1
+    quote: "of Cincinnati, Ohio."
+sources:
+  - title: "The Key West Citizen, 18 August 1949, page 1: Lime Pie Will Replace Birthday Cake"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83016244/1949-08-18/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "The Key West Citizen, 14 September 1955, page 3: column, Mail Call"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83016244/1955-09-14/ed-1/?sp=3
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts

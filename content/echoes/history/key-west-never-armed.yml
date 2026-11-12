@@ -1,0 +1,91 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch, following docs/writing-echoes.md.
+# Listening spot: The grounds outside East Martello (Fort East Martello Museum, Key West Art and Historical Society), on South Roosevelt Boulevard by the airport. The museum charges admission; the listener can stand outside the walls.
+# Position: The National Register nomination's centre point, N24 33 07, W81 45 18 (24.55194, -81.75500), which matches Wikidata Q6774235 (24.551944, -81.755) (high confidence for the fort, medium for where a listener stands).
+id: key-west-never-armed
+title: "Never Armed"
+summary: "East Martello was begun in 1862 to guard Key West in the Civil War. It was never finished, and no gun was ever mounted on it."
+place: "East Martello Tower, South Roosevelt Boulevard, Key West, Florida"
+at: { lat: 24.55194, lng: -81.75500 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 58
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [key-west, civil-war, military, fort, martello, museum]
+teaser: "A fort, built against a war, that the same war made useless."
+script: |
+  Look at the square brick tower in the middle, behind the low walls. On the side facing the sea, its walls are more than eight feet thick.
+
+  Work began in eighteen sixty two, in the Civil War, because the Union feared Confederate forces would attack the island.
+
+  Its job was to guard the land side of Fort Taylor, against an enemy landing. Four towers were planned. Only two were begun.
+
+  Then, in eighteen sixty six, the orders came to stop. It was never finished. No gun was ever mounted on it.
+
+  The reason was the war itself. New rifled artillery had come into use, and towers like this one were obsolete.
+
+  It stood empty and unarmed for a long time. In nineteen fifty, it opened as a museum.
+
+  So the fort was out of date before it was finished. And what it guards now is a collection.
+detail: >-
+  From the National Register of Historic Places nomination for East Martello Tower (1972): begun in 1862 out of fear of a Confederate attack, to secure the island and the land side of Fort Taylor against landing forces; four towers planned and two begun; work suspended in 1866, never completed and never armed, the type proven obsolete by rifled artillery in the Civil War; a square central tower 56 feet on a side with seaward walls 8 feet 4 inches thick; used for defence purposes in later wars, declared surplus in 1944, and opened as the Key West Art and Historical Society's museum in 1950. "Stood empty" compresses the later wartime uses; the script says only that it stood unarmed. Robert the Doll is kept in this museum; that legend is not in this echo because no source reachable from this session covered it.
+pronunciations:
+  - written: "Martello"
+    say: "mar-TELL-oh"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at the square brick tower in the middle, behind the low walls."
+    source: 1
+    quote: "the central tower or citadel of East Martello is built in a square, 56 feet on a side at the base and 36 feet high."
+  - says: "On the side facing the sea, its walls are more than eight feet thick."
+    source: 1
+    quote: "Its walls on the sides facing the sea are 8 feet4 inches thick"
+  - says: "Work began in eighteen sixty two, in the Civil War, because the Union feared Confederate forces would attack the island."
+    source: 1
+    quote: "Work on the Martello Towers, however, did not begin until 1862 when fear of the island being attacked by Confederate forces prompted their construction."
+  - says: "Its job was to guard the land side of Fort Taylor, against an enemy landing."
+    source: 1
+    quote: "Their military purpose was to secure the island and the land side of Fort Taylor against enemy landing forces."
+  - says: "Four towers were planned."
+    source: 1
+    quote: "Originally four towers were planned but construction began on only two"
+  - says: "Only two were begun."
+    source: 1
+    quote: "construction began on only two"
+  - says: "Then, in eighteen sixty six, the orders came to stop."
+    source: 1
+    quote: "In 1866 orders were received to suspend work on the Towers."
+  - says: "It was never finished."
+    source: 1
+    quote: "They were never completed or armed"
+  - says: "No gun was ever mounted on it."
+    source: 1
+    quote: "No armament was ever installed"
+  - says: "New rifled artillery had come into use, and towers like this one were obsolete."
+    source: 1
+    quote: "this type of structure had been proven obsolete when the new rifled artillery came into use during the Civil War."
+  - says: "In nineteen fifty, it opened as a museum."
+    source: 1
+    quote: "The new museum opened in 1950"
+  - says: "It stood empty and unarmed for a long time."
+    source: 1
+    quote: "in 1944 they were declared surplus by the government and eventually turned over to Monroe County."
+  - says: "And what it guards now is a collection."
+    source: 1
+    quote: "Since 1950 when East Martello Tower was converted into an art and historical museum"
+  - says: "The reason was the war itself."
+    source: 1
+    quote: "this type of structure had been proven obsolete when the new rifled artillery came into use during the Civil War."
+  - says: "So the fort was out of date before it was finished."
+    source: 1
+    quote: "They were never completed or armed, as this type of structure had been proven obsolete"
+sources:
+  - title: "National Register of Historic Places Inventory, Nomination Form: East Martello Tower (Martello Gallery, Key West Art and Historical Museum), 1972"
+    publisher: "National Park Service, National Register of Historic Places (NPGallery)"
+    url: https://npgallery.nps.gov/NRHP/GetAsset/NRHP/72000341_text
+    retrievedAt: "2026-11-12"
+    rights: public-domain

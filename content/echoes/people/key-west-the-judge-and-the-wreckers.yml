@@ -1,0 +1,81 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch, following docs/writing-echoes.md.
+# Listening spot: The Caroline Street sidewalk in front of 429 Caroline Street (the Webb-Porter House, HABS FL-188). Private property when surveyed; stay on the sidewalk.
+# Position: Wikidata Q5304219 (Dr. Joseph Y. Porter House, 24.557222, -81.804722), moved north onto the 400 block of Caroline Street between Whitehead (24.55734, -81.80562) and Duval (24.55806, -81.80447) in the app's Key West street file (medium confidence). About 120 m from the existing Audubon House legend echo.
+id: key-west-the-judge-and-the-wreckers
+title: "The Judge and the Wreckers"
+summary: "Judge James Webb, believed to have built this house, made wrecking a legitimate business with salvage law. A Texas county bears his name."
+place: "Webb-Porter House, 429 Caroline Street, Key West, Florida"
+at: { lat: 24.5576, lng: -81.8050 }
+triggerRadiusKm: 0.03
+category: people
+format: short
+durationS: 58
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [key-west, wreckers, salvage-law, caroline-street, judge-webb, texas]
+teaser: "A county in Texas is named for a Key West judge."
+script: |
+  Look at the house at four twenty nine Caroline Street. It is believed to date from eighteen thirty eight, and to have been built by a judge.
+
+  James Webb was the first federal judge of the Southern District of the Florida Territory. He sat here, in Key West, from eighteen twenty nine to eighteen thirty nine.
+
+  This was a town that lived on salvage, on what could be saved from ships in trouble. And Webb brought in important laws to regulate it. That, says the government's survey of his house, is what made wrecking a legitimate business in Florida.
+
+  Then he left for Texas. He served the Republic of Texas, and then the State.
+
+  Later this house became the birthplace of Dr. Joseph Yates Porter, Florida's first public health officer, who fought yellow fever.
+
+  But the judge is the one with a county. Webb County, Texas, is named for him.
+detail: >-
+  From the Historic American Buildings Survey record of the Webb-Porter House (HABS FL-188): believed to date to 1838 and to have been built by Judge James Webb, first federal judge of the Southern District of the Florida Territory, judge from 1829 to 1839, who introduced laws regulating salvage, "thereby making wrecking a legitimate business in Florida"; his later service in the Republic and State of Texas, and Webb County named for him; the house better known as the birthplace of Dr. Joseph Yates Porter, Florida's first public health officer (1889 to 1917), known for controlling yellow fever. "A town that lived on salvage" is an inference from the record's account of salvage law and wrecking; the HABS records of Wall and Company and Captain Watlington support it, but this record alone does not say it.
+pronunciations: []
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look at the house at four twenty nine Caroline Street."
+    source: 1
+    quote: "Webb-Porter House, 429 Caroline Street, Key West"
+  - says: "It is believed to date from eighteen thirty eight, and to have been built by a judge."
+    source: 1
+    quote: "The house is believed to date to 1838, and to have been built by Judge James Webb"
+  - says: "James Webb was the first federal judge of the Southern District of the Florida Territory."
+    source: 1
+    quote: "who was the first Federal Judge of the Southern District of the Florida Territory."
+  - says: "He sat here, in Key West, from eighteen twenty nine to eighteen thirty nine."
+    source: 1
+    quote: "presided as Judge of the Southern District from 1829 to 1839."
+  - says: "This was a town that lived on salvage, on what could be saved from ships in trouble."
+    source: 1
+    quote: "he in- troduced important laws which regulated salvage, thereby making wreck- ing a legitimate business in Florida."
+  - says: "And Webb brought in important laws to regulate it."
+    source: 1
+    quote: "he in- troduced important laws which regulated salvage"
+  - says: "That, says the government's survey of his house, is what made wrecking a legitimate business in Florida."
+    source: 1
+    quote: "thereby making wreck- ing a legitimate business in Florida."
+  - says: "Then he left for Texas."
+    source: 1
+    quote: "He moved to Texas after leaving Key West"
+  - says: "He served the Republic of Texas, and then the State."
+    source: 1
+    quote: "served in many important positions in that government, both in the Republic and in the State"
+  - says: "Later this house became the birthplace of Dr. Joseph Yates Porter, Florida's first public health officer, who fought yellow fever."
+    source: 1
+    quote: "Dr. Joseph Yates Porter, II, who was born and lived in the house"
+  - says: "Later this house became the birthplace of Dr. Joseph Yates Porter, Florida's first public health officer, who fought yellow fever."
+    source: 1
+    quote: "He was appointed the first Public Health Officer in Flor- ida, serving from 1889 to 1917. His work in controlling Yellow Fever"
+  - says: "But the judge is the one with a county."
+    source: 1
+    quote: "Webb County, Texas is named for Judge Webb."
+  - says: "Webb County, Texas, is named for him."
+    source: 1
+    quote: "Webb County, Texas is named for Judge Webb."
+sources:
+  - title: "Webb-Porter House, 429 Caroline Street, Key West, HABS FL-188 (record and data pages)"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/fl0154/
+    retrievedAt: "2026-11-12"
+    rights: public-domain

@@ -1,0 +1,92 @@
+# Drafted by Claude Code (2026-11-12) for the second Key West batch, following docs/writing-echoes.md.
+# Listening spot: The Duval Street sidewalk in front of 322 Duval Street (the Oldest House; HABS FL-192 calls it the Captain Francis Watlington House). Stay on the sidewalk.
+# Position: The 300 block of Duval Street runs from Caroline Street (24.55806, -81.80447) to Eaton Street (24.55690, -81.80361) in the app's Key West street file; 322 is placed about a fifth of the way from Caroline (medium confidence). Wikidata has no point for the house.
+# Legend handling: the HABS record itself calls the naval quarters story "one legend" and gives the evidence against it, so the script says it is a legend and tells both.
+id: key-west-built-for-the-pirate-hunters
+title: "Built for the Pirate Hunters?"
+summary: "Legend says the government built the Oldest House for Commodore Porter's pirate hunters. A carpenter's 1829 advertisement says otherwise."
+place: "Oldest House (Captain Francis Watlington House), 322 Duval Street, Key West, Florida"
+at: { lat: 24.5578, lng: -81.8043 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 66
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The Historic American Buildings Survey (1967) records the story that the house was built by the government for officers of Commodore Porter's Anti-Pirate Squadron as "one legend", and sets against it an 1829 advertisement by Richard Cussans as a carpenter and joiner and his ownership of land on Whitehead Street. The script tells it as a legend and gives the evidence; the Watlington facts are documented.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 0
+quality: 0.75
+tags: [key-west, old-town, duval-street, pirates, wreckers, folklore]
+teaser: "The pirate hunters may never have slept here. A wrecker did."
+script: |
+  Look up at the three dormer windows in the roof of the house at three twenty two Duval Street. They are not the same size.
+
+  People have long called this the oldest house in Key West. And there is a legend about who built it.
+
+  The story goes that the United States government put it up, as quarters for the naval officers of Commodore David Porter's Anti-Pirate Squadron.
+
+  It is a good story. But in eighteen twenty nine, a man named Richard Cussans placed an advertisement in the Key West Advertiser. He was a carpenter and joiner. The county records show he owned land on Whitehead Street.
+
+  And the house is said to have been moved here from Whitehead Street, by Cussans, in eighteen thirty two.
+
+  Later it became the home of Captain Francis Watlington. He was a fine pilot. He commanded merchant ships, and wrecking vessels as well.
+
+  So the pirate hunters may never have slept here. But a wrecker did.
+detail: >-
+  From the Historic American Buildings Survey record (HABS FL-192, 1966 and 1967): "traditionally called the oldest house in Key West", said to have been built as early as 1825 and moved by Richard Cussans from Whitehead Street in 1832; the legend of the Anti-Pirate Squadron quarters; Cussans's 1829 advertisement in the Key West Advertiser as a carpenter and joiner, and his Whitehead Street property; the dormers, now unequal in size; Captain Watlington as a pilot in command of merchant ships and wrecking vessels. The record does not say outright that Cussans built the house; the script says only what the advertisement and the deeds show and lets the listener draw the line.
+pronunciations:
+  - written: "Cussans"
+    say: "KUSS-ens"
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "Look up at the three dormer windows in the roof of the house at three twenty two Duval Street."
+    source: 1
+    quote: "The three dormer windows on the street or front side of the house have been modified."
+  - says: "They are not the same size."
+    source: 1
+    quote: "Each dormer is now unequal in size."
+  - says: "People have long called this the oldest house in Key West."
+    source: 1
+    quote: "Traditionally called the oldest house in Key West"
+  - says: "And there is a legend about who built it."
+    source: 1
+    quote: "One legend is that this house was built by the United States Government as quarters for naval officers of Commodore David Porter*s Anti-Pirate Squadron."
+  - says: "The story goes that the United States government put it up, as quarters for the naval officers of Commodore David Porter's Anti-Pirate Squadron."
+    source: 1
+    quote: "One legend is that this house was built by the United States Government as quarters for naval officers of Commodore David Porter*s Anti-Pirate Squadron."
+  - says: "But in eighteen twenty nine, a man named Richard Cussans placed an advertisement in the Key West Advertiser."
+    source: 1
+    quote: "However, in an issue of The Key West Advertiser of 1829, Cussand placed an ad as being a carpenter and joiner"
+  - says: "He was a carpenter and joiner."
+    source: 1
+    quote: "Cussand placed an ad as being a carpenter and joiner"
+  - says: "The county records show he owned land on Whitehead Street."
+    source: 1
+    quote: "The County records show that in l829> Cussans owned property on Whitehead Street."
+  - says: "And the house is said to have been moved here from Whitehead Street, by Cussans, in eighteen thirty two."
+    source: 1
+    quote: "said to have been built as early as 1825 and moved by Richard Cussans from Whitehead Street to its present location in 1832."
+  - says: "Later it became the home of Captain Francis Watlington."
+    source: 1
+    quote: "Later, it became the home of Captain Watlington and has remained in his family until this date."
+  - says: "He was a fine pilot."
+    source: 1
+    quote: "A fine pilot, he was in command of not only merchant ships but wrecking vessels as well,"
+  - says: "He commanded merchant ships, and wrecking vessels as well."
+    source: 1
+    quote: "he was in command of not only merchant ships but wrecking vessels as well,"
+  - says: "So the pirate hunters may never have slept here."
+    source: 1
+    quote: "One legend is that this house was built by the United States Government as quarters for naval officers of Commodore David Porter*s Anti-Pirate Squadron. However, in an issue of The Key West Advertiser of 1829, Cussand placed an ad as being a carpenter and joiner"
+  - says: "But a wrecker did."
+    source: 1
+    quote: "Captain Watlington, whose home was in this house, was one of the early settlers and a prominent figure in maritime activities."
+sources:
+  - title: "Captain Francis Watlington House, 322 Duval Street, Key West, HABS FL-192 (record and data pages)"
+    publisher: "Library of Congress, Historic American Buildings Survey / Historic American Engineering Record"
+    url: https://www.loc.gov/item/fl0153/
+    retrievedAt: "2026-11-12"
+    rights: public-domain
