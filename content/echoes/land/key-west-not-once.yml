@@ -9,7 +9,7 @@ at: { lat: 24.5468, lng: -81.7972 }
 triggerRadiusKm: 0.04
 category: land
 format: short
-durationS: 50
+durationS: 49
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
 detail: >-
   From the National Weather Service Key West office: its climate page (continuous records back to 1871; no record of frost, ice, sleet or snow in Key West, though ice has been reported in the Upper Keys) and its statement on the January 2010 cold wave (all time record low of 41 degrees on 12 January 1886 and 13 January 1981; 42 degrees on 11 January 2010, the second coldest on record; seven consecutive days with lows below 50, the longest such streak recorded to that date). The statement dates temperature records from 1873; the climate page dates the record from 1871, which is what the script uses. Whether the 2010 streak has been matched since was not checked, so the script says "had ever recorded" as of then.
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Weather records here go back to eighteen seventy one."
@@ -90,3 +90,59 @@ sources:
     url: https://www.weather.gov/media/key/Climate/201001-ColdWave.pdf
     retrievedAt: "2026-11-12"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-not-once/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 49.3
+    audioBytes: 789985
+    transcript:
+      totalS: 49.3
+      lines:
+        - text: Stand by the buoy and look at the sea.
+          atS: 0
+          durationS: 2.51
+        - text: Feel the air on your skin.
+          atS: 2.89
+          durationS: 2.03
+        - text: Weather records here go back to eighteen seventy one.
+          atS: 5.62
+          durationS: 3.36
+        - text: Key West is one of the longest running climate record sites in the United States.
+          atS: 9.42
+          durationS: 5.03
+        - text: In all that time, there is no record of frost here.
+          atS: 14.88
+          durationS: 3.31
+        - text: No ice.
+          atS: 18.52
+          durationS: 0.91
+        - text: No sleet.
+          atS: 19.6
+          durationS: 0.94
+        - text: No snow.
+          atS: 20.78
+          durationS: 0.94
+        - text: The coldest it has ever been is forty one degrees Fahrenheit.
+          atS: 22
+          durationS: 3.45
+        - text: That has happened twice.
+          atS: 25.77
+          durationS: 1.5
+        - text: In January eighteen eighty six, and in January nineteen eighty one.
+          atS: 27.6
+          durationS: 4.8
+        - text: In January twenty ten, a cold wave came close.
+          atS: 32.77
+          durationS: 3.7
+        - text: Forty two degrees.
+          atS: 36.8
+          durationS: 1.27
+        - text: Seven nights in a row below fifty, the longest such streak the weather office had ever recorded here.
+          atS: 38.28
+          durationS: 6.07
+        - text: Up the Keys, ice has been reported.
+          atS: 45.05
+          durationS: 2.53
+        - text: Here, not once.
+          atS: 47.7
+          durationS: 1.61

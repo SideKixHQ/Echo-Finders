@@ -9,7 +9,7 @@ at: { lat: 24.5587, lng: -81.8070 }
 triggerRadiusKm: 0.04
 category: built
 format: short
-durationS: 50
+durationS: 46
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
 detail: >-
   From the Historic American Buildings Survey record (HABS FL-190): the oldest brick building and the first permanent navy building on Key West; a depot for naval supplies established by an Act of Congress of 21 July 1852 on ground used by the Anti-Pirate Squadron from 1823 to 1826; walls ready for the roof by 1856, then unfinished for lack of appropriations until the outbreak of the Civil War, when Key West became headquarters of the East Gulf Blockade Squadron; known as Number 1 Building and the Naval Administration Building until 1932; then headquarters of the 7th Lighthouse District, and of the Coast Guard station after the Lighthouse Service joined the Coast Guard in 1939. "Four walls" is the script's image for walls without a roof. Present use was not checked.
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at the old brick building here by Front Street."
@@ -73,3 +73,44 @@ sources:
     url: https://www.loc.gov/item/fl0151/
     retrievedAt: "2026-11-12"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-walls-waiting-for-a-roof/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 46.4
+    audioBytes: 744010
+    transcript:
+      totalS: 46.4
+      lines:
+        - text: Look at the old brick building here by Front Street.
+          atS: 0
+          durationS: 2.9
+        - text: It is the oldest brick building on Key West, and the first permanent Navy building on the island.
+          atS: 3.02
+          durationS: 5.33
+        - text: In eighteen fifty two, Congress set up a depot for naval supplies here.
+          atS: 8.41
+          durationS: 4.35
+        - text: By eighteen fifty six, the walls were built, ready to receive the roof.
+          atS: 12.85
+          durationS: 4.36
+        - text: Then the money ran out.
+          atS: 17.73
+          durationS: 1.49
+        - text: For years it stood unfinished.
+          atS: 19.66
+          durationS: 2.17
+        - text: What finished it was a war.
+          atS: 22.27
+          durationS: 2.12
+        - text: When the Civil War came, Key West became the headquarters of the East Gulf Blockade Squadron, and the building was completed.
+          atS: 25.34
+          durationS: 7.7
+        - text: The Navy called it Number One Building.
+          atS: 33.42
+          durationS: 2.33
+        - text: Later, the lighthouse service made it its headquarters, and then the Coast Guard.
+          atS: 36.46
+          durationS: 4.57
+        - text: The oldest brick building on the island began as four walls, waiting for a roof.
+          atS: 41.63
+          durationS: 4.81

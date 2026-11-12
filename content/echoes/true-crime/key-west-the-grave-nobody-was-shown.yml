@@ -12,7 +12,7 @@ at: { lat: 24.55725, lng: -81.79371 }
 triggerRadiusKm: 0.05
 category: true-crime
 format: short
-durationS: 75
+durationS: 68
 visibility: at-hand
 certainty: documented
 voice: wC1005J19tvhoqqC2hkf
@@ -43,12 +43,12 @@ pronunciations:
     say: "OY-ohs"
   - written: "Tanzler von Cosel"
     say: "TANTS-ler fon KO-zel"
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: alleged
-  reviewedBy: "TODO: James, before this can leave draft."
+  reviewedBy: "James (owner), approved 2026-11-12"
   reviewedAt: "2026-11-12"
   contentWarning: "This echo is about a man who took a young woman's body from her grave in Key West. Nothing is described in detail."
 claims:
@@ -170,3 +170,65 @@ sources:
     url: https://www.loc.gov/resource/sn83045462/1940-12-19/ed-1/?sp=33
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/key-west-the-grave-nobody-was-shown/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 67.7
+    audioBytes: 1084229
+    transcript:
+      totalS: 67.7
+      lines:
+        - text: Stand on the sidewalk and look in at the cemetery's vaults.
+          atS: 0
+          durationS: 3.02
+        - text: In nineteen thirty one, a young woman named Elena Hoyos died.
+          atS: 3.3
+          durationS: 4.34
+        - text: She had been treated for tuberculosis at the Marine Hospital in Key West.
+          atS: 7.92
+          durationS: 3.98
+        - text: An X-ray technician there, a man named Karl Tanzler von Cosel, had fallen in love with her.
+          atS: 12.22
+          durationS: 6.57
+        - text: After she died, with her family's permission, he paid for a vault for her in this cemetery.
+          atS: 19.31
+          durationS: 5.17
+        - text: He visited it regularly.
+          atS: 24.8
+          durationS: 1.58
+        - text: In October nineteen forty, her family grew suspicious.
+          atS: 26.82
+          durationS: 3.19
+        - text: A search warrant was issued.
+          atS: 30.34
+          durationS: 1.52
+        - text: And her body was found in his house, where, police said, it had been for seven years.
+          atS: 32.03
+          durationS: 5.39
+        - text: He did not deny taking her.
+          atS: 37.74
+          durationS: 1.66
+        - text: He told reporters he had promised to take care of her, and that he had wanted to see whether life could be restored.
+          atS: 39.68
+          durationS: 6.11
+        - text: He was charged with maliciously disturbing the vault.
+          atS: 46.23
+          durationS: 3.17
+        - text: But a grand jury did not indict him.
+          atS: 49.73
+          durationS: 2.53
+        - text: The statute of limitations, it said, barred prosecution.
+          atS: 52.7
+          durationS: 3.97
+        - text: He was never tried.
+          atS: 57.11
+          durationS: 1.2
+        - text: That December, before dawn, her sister buried her again.
+          atS: 58.91
+          durationS: 3.65
+        - text: The new grave was not revealed.
+          atS: 63
+          durationS: 1.88
+        - text: It was kept secret so that he could not find her.
+          atS: 65.03
+          durationS: 2.68

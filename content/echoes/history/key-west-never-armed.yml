@@ -9,7 +9,7 @@ at: { lat: 24.55194, lng: -81.75500 }
 triggerRadiusKm: 0.08
 category: history
 format: short
-durationS: 58
+durationS: 56
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -35,7 +35,7 @@ detail: >-
 pronunciations:
   - written: "Martello"
     say: "mar-TELL-oh"
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at the square brick tower in the middle, behind the low walls."
@@ -89,3 +89,56 @@ sources:
     url: https://npgallery.nps.gov/NRHP/GetAsset/NRHP/72000341_text
     retrievedAt: "2026-11-12"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-never-armed/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 55.8
+    audioBytes: 894057
+    transcript:
+      totalS: 55.8
+      lines:
+        - text: Look at the square brick tower in the middle, behind the low walls.
+          atS: 0
+          durationS: 4.13
+        - text: On the side facing the sea, its walls are more than eight feet thick.
+          atS: 4.46
+          durationS: 4.5
+        - text: Work began in eighteen sixty two, in the Civil War, because the Union feared Confederate forces would attack the island.
+          atS: 9.47
+          durationS: 7.51
+        - text: Its job was to guard the land side of Fort Taylor, against an enemy landing.
+          atS: 17.31
+          durationS: 4.7
+        - text: Four towers were planned.
+          atS: 22.52
+          durationS: 1.64
+        - text: Only two were begun.
+          atS: 24.48
+          durationS: 1.65
+        - text: Then, in eighteen sixty six, the orders came to stop.
+          atS: 26.57
+          durationS: 3.82
+        - text: It was never finished.
+          atS: 30.84
+          durationS: 1.27
+        - text: No gun was ever mounted on it.
+          atS: 32.43
+          durationS: 1.96
+        - text: The reason was the war itself.
+          atS: 34.71
+          durationS: 2.01
+        - text: New rifled artillery had come into use, and towers like this one were obsolete.
+          atS: 37.16
+          durationS: 5
+        - text: It stood empty and unarmed for a long time.
+          atS: 42.61
+          durationS: 3.15
+        - text: In nineteen fifty, it opened as a museum.
+          atS: 46.36
+          durationS: 3.01
+        - text: So the fort was out of date before it was finished.
+          atS: 49.81
+          durationS: 2.9
+        - text: And what it guards now is a collection.
+          atS: 53.03
+          durationS: 2.79

@@ -9,7 +9,7 @@ at: { lat: 24.5592, lng: -81.8050 }
 triggerRadiusKm: 0.04
 category: food-drink
 format: short
-durationS: 55
+durationS: 56
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -29,13 +29,13 @@ script: |
 
   He was roasting fourteen to sixteen hundred pounds of Cuban coffee a day.
 
-  So, the next time a tiny cup of Cuban coffee makes your heart race, remember. The man who roasted it said that was the weak one.
+  Keep it in mind, the next time a tiny cup of Cuban coffee makes your heart race. The man who roasted it said that was the weak one.
 detail: >-
   From the Key West Citizen, 3 January 1947, page 1 ("Cuban Coffee Not So Strong As American, Roaster Says"): J. T. Sanchez of the Star Coffee Mills, 512 Greene Street, on roasting times (20 to 25 minutes against a little over 15) and caffeine burning out of the longer roast, and his output of 1,400 to 1,600 pounds of Cuban coffee a day. The caffeine claim is his, and the script attributes it to him; how much caffeine a darker roast loses is more modest than "nearly all", and a reviewer may want the script to say so. The final line is attributed to him for that reason.
 pronunciations:
   - written: "Sanchez"
     say: "SAN-chez"
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "You are on Greene Street."
@@ -86,3 +86,62 @@ sources:
     url: https://www.loc.gov/resource/sn83016244/1947-01-03/ed-1/?sp=1
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-the-weaker-cup/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 56.4
+    audioBytes: 903252
+    transcript:
+      totalS: 56.4
+      lines:
+        - text: You are on Greene Street.
+          atS: 0
+          durationS: 1.61
+        - text: In nineteen forty seven, at number five twelve, the Star Coffee Mills was roasting coffee.
+          atS: 2.06
+          durationS: 5.63
+        - text: Visitors kept asking the same question.
+          atS: 8.13
+          durationS: 2.36
+        - text: Cuban coffee or American coffee.
+          atS: 10.93
+          durationS: 2.25
+        - text: Which is stronger?
+          atS: 13.27
+          durationS: 1.16
+        - text: That January, the roaster, J.
+          atS: 14.94
+          durationS: 2.03
+        - text: T.
+          atS: 17
+          durationS: 0.28
+        - text: Sanchez, answered it for the Key West Citizen, turning over a batch of Cuban coffee as he talked.
+          atS: 17.31
+          durationS: 5.67
+        - text: American coffee, he said.
+          atS: 23.42
+          durationS: 1.86
+        - text: American is stronger.
+          atS: 25.48
+          durationS: 1.49
+        - text: His reason was the oven.
+          atS: 27.18
+          durationS: 1.54
+        - text: Cuban coffee, he said, roasts for twenty to twenty five minutes.
+          atS: 29.16
+          durationS: 4.62
+        - text: American coffee, for a little over fifteen.
+          atS: 34.39
+          durationS: 2.97
+        - text: Roast it longer, he said, and nearly all the caffeine burns out.
+          atS: 38.06
+          durationS: 5.03
+        - text: He was roasting fourteen to sixteen hundred pounds of Cuban coffee a day.
+          atS: 43.69
+          durationS: 4.55
+        - text: Keep it in mind, the next time a tiny cup of Cuban coffee makes your heart race.
+          atS: 48.62
+          durationS: 4.85
+        - text: The man who roasted it said that was the weak one.
+          atS: 53.55
+          durationS: 2.83

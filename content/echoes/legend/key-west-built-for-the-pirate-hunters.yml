@@ -10,7 +10,7 @@ at: { lat: 24.5578, lng: -81.8043 }
 triggerRadiusKm: 0.04
 category: legend
 format: short
-durationS: 66
+durationS: 54
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -39,7 +39,7 @@ detail: >-
 pronunciations:
   - written: "Cussans"
     say: "KUSS-ens"
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look up at the three dormer windows in the roof of the house at three twenty two Duval Street."
@@ -90,3 +90,56 @@ sources:
     url: https://www.loc.gov/item/fl0153/
     retrievedAt: "2026-11-12"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/key-west-built-for-the-pirate-hunters/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 54.3
+    audioBytes: 870234
+    transcript:
+      totalS: 54.3
+      lines:
+        - text: Look up at the three dormer windows in the roof of the house at three twenty two Duval Street.
+          atS: 0
+          durationS: 5.22
+        - text: They are not the same size.
+          atS: 5.5
+          durationS: 1.57
+        - text: People have long called this the oldest house in Key West.
+          atS: 7.28
+          durationS: 3.39
+        - text: And there is a legend about who built it.
+          atS: 11.11
+          durationS: 2.11
+        - text: The story goes that the United States government put it up, as quarters for the naval officers of Commodore David Porter's Anti-Pirate Squadron.
+          atS: 13.47
+          durationS: 8.37
+        - text: It is a good story.
+          atS: 21.88
+          durationS: 1.13
+        - text: But in eighteen twenty nine, a man named Richard Cussans placed an advertisement in the Key West Advertiser.
+          atS: 23.03
+          durationS: 6.78
+        - text: He was a carpenter and joiner.
+          atS: 30.25
+          durationS: 1.63
+        - text: The county records show he owned land on Whitehead Street.
+          atS: 32.39
+          durationS: 3.31
+        - text: And the house is said to have been moved here from Whitehead Street, by Cussans, in eighteen thirty two.
+          atS: 36.14
+          durationS: 5.9
+        - text: Later it became the home of Captain Francis Watlington.
+          atS: 42.64
+          durationS: 2.87
+        - text: He was a fine pilot.
+          atS: 45.84
+          durationS: 1.24
+        - text: He commanded merchant ships, and wrecking vessels as well.
+          atS: 47.25
+          durationS: 2.88
+        - text: So the pirate hunters may never have slept here.
+          atS: 50.31
+          durationS: 2.39
+        - text: But a wrecker did.
+          atS: 53.02
+          durationS: 1.31

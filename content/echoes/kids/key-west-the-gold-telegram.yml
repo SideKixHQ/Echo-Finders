@@ -10,7 +10,7 @@ triggerRadiusKm: 0.08
 voice: UrTldiIxfedDl9tlesyS
 category: kids
 format: short
-durationS: 52
+durationS: 49
 visibility: position-only
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
 detail: >-
   From the New York Sun of 23 January 1912 (Key West dispatch of the 22nd): cannon, whistles and bells, thousands cheering, the island city bound to the mainland by Flagler's oversea railroad, the first passenger train arriving that morning, children singing patriotic songs and throwing flowers in the path of the parade, and the gold telegram, the exact size of a telegraph blank and a sixteenth of an inch thick. The OCR gives a number of children that cannot be read ("tine thousand"), so the script gives none. The Daytona Daily News of 23 January 1912 independently describes the testimonial from the Florida East Coast railroad's employees as engraved on a plate of gold in a casket of solid 18 karat gold. "Leaped from island to island" is from the HALS record of the Overseas Highway, which carried trains until 1935. Where the trains stopped (Trumbo Point) is in the header only.
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Imagine this."
@@ -99,3 +99,56 @@ sources:
     url: https://www.loc.gov/item/fl0926/
     retrievedAt: "2026-11-12"
     rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/key-west-the-gold-telegram/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 48.5
+    audioBytes: 776611
+    transcript:
+      totalS: 48.5
+      lines:
+        - text: Imagine this.
+          atS: 0
+          durationS: 1.07
+        - text: Cannons booming.
+          atS: 1.51
+          durationS: 1.21
+        - text: Whistles blowing.
+          atS: 3.04
+          durationS: 1.18
+        - text: Bells ringing.
+          atS: 4.61
+          durationS: 1.08
+        - text: Thousands of people cheering.
+          atS: 5.97
+          durationS: 1.68
+        - text: It all happened here, in January nineteen twelve, on the morning the first passenger train arrived in Key West.
+          atS: 8.26
+          durationS: 6.77
+        - text: Before that, this island was cut off from the mainland.
+          atS: 15.41
+          durationS: 3.23
+        - text: Then Henry Flagler built a railroad that leaped from island to island, all the way to Key West.
+          atS: 19.14
+          durationS: 5.28
+        - text: When the trains came in, children sang songs, and threw flowers in front of the parade.
+          atS: 24.87
+          durationS: 5.24
+        - text: And the railroad workers gave Mister Flagler a present.
+          atS: 30.71
+          durationS: 2.94
+        - text: A telegram.
+          atS: 33.82
+          durationS: 0.79
+        - text: But not on paper.
+          atS: 34.93
+          durationS: 1.22
+        - text: It was made of gold, exactly the size of a telegraph form, and a sixteenth of an inch thick.
+          atS: 36.54
+          durationS: 5.66
+        - text: It came in a box of solid gold.
+          atS: 42.59
+          durationS: 2.53
+        - text: Imagine getting a letter you could never fold.
+          atS: 45.44
+          durationS: 3.04

@@ -10,7 +10,7 @@ triggerRadiusKm: 0.1
 voice: UrTldiIxfedDl9tlesyS
 category: kids
 format: short
-durationS: 52
+durationS: 44
 visibility: position-only
 certainty: documented
 minAge: 0
@@ -36,7 +36,7 @@ script: |
 detail: >-
   From CBS News (Cristian Benavides, 27 July 2024), quoting Corey Malcolm, lead historian of the Florida Keys History Center: chicken raising from the early 1900s to around the Second World War, with Cuban cockfighting traditions behind it; supermarkets made home flocks unnecessary and birds were let loose on a two by four mile island with no natural predators; Florida banned cockfighting in 1986 and roosters were set free; Hurricane Georges (spelled "George" in the article) scattered them in 1998; a city employed chicken catcher quit in the 2000s after a backlash. Cockfighting is left out of a children's script. The closing line is the article's own.
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In Key West, whole chicken families cross the road together."
@@ -84,3 +84,59 @@ sources:
     url: https://www.cbsnews.com/news/feral-chickens-rule-the-roost-key-west-florida/
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/key-west-the-chickens-world/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 43.6
+    audioBytes: 698034
+    transcript:
+      totalS: 43.6
+      lines:
+        - text: Look around.
+          atS: 0
+          durationS: 0.81
+        - text: Can you see a chicken?
+          atS: 1.09
+          durationS: 1.01
+        - text: Can you hear a rooster?
+          atS: 2.28
+          durationS: 1.23
+        - text: In Key West, whole chicken families cross the road together.
+          atS: 3.95
+          durationS: 3.67
+        - text: They are everywhere.
+          atS: 8.06
+          durationS: 1.15
+        - text: Long ago, lots of families here kept chickens at home.
+          atS: 9.81
+          durationS: 3.3
+        - text: From the early nineteen hundreds until around World War Two.
+          atS: 13.55
+          durationS: 3.27
+        - text: Then it got easy to buy eggs and chicken at the supermarket.
+          atS: 17.33
+          durationS: 3.07
+        - text: So people let their chickens loose.
+          atS: 20.72
+          durationS: 1.77
+        - text: And on a small island, two miles by four, with no wild animals to hunt them, the chickens did very well.
+          atS: 22.77
+          durationS: 6.78
+        - text: In nineteen ninety eight, a big hurricane blew them all over the island.
+          atS: 29.93
+          durationS: 3.69
+        - text: They have been multiplying ever since.
+          atS: 33.83
+          durationS: 2.01
+        - text: The city once had a chicken catcher.
+          atS: 36.05
+          durationS: 2
+        - text: He quit.
+          atS: 38.22
+          durationS: 0.85
+        - text: So now it is the chickens' world.
+          atS: 39.28
+          durationS: 2.11
+        - text: We are just living in it.
+          atS: 41.6
+          durationS: 1.96

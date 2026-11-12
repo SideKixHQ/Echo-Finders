@@ -33,7 +33,7 @@ detail: >-
 pronunciations:
   - written: "Magnani"
     say: "mahn-YAH-nee"
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "You are on Duncan Street."
@@ -78,6 +78,9 @@ claims:
   - says: "The lighting here, he said, was sharp and crisp."
     source: 2
     quote: "He added that the lighting here is “sharp and crisp"
+  - says: "And the Key West settings?"
+    source: 2
+    quote: "And the Key West settings are wonderful we couldn't dup licate them anywnere."
   - says: "They could not be duplicated anywhere."
     source: 2
     quote: "And the Key West settings are wonderful we couldn't dup licate them anywnere."
@@ -100,3 +103,59 @@ sources:
     url: https://www.loc.gov/resource/sn83016244/1952-04-09/ed-1/?sp=4
     retrievedAt: "2026-11-12"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-the-light-was-sharp-and-crisp/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 70
+    audioBytes: 1121009
+    transcript:
+      totalS: 70
+      lines:
+        - text: You are on Duncan Street.
+          atS: 0
+          durationS: 1.53
+        - text: In the nineteen fifties, Tennessee Williams had a house on this street.
+          atS: 1.65
+          durationS: 4.02
+        - text: It is a private home, so enjoy it from the sidewalk.
+          atS: 5.82
+          durationS: 3.25
+        - text: In the autumn of nineteen fifty four, Hollywood came to Key West to film his play, The Rose Tattoo.
+          atS: 9.39
+          durationS: 6.62
+        - text: The star was Anna Magnani, Italy's most celebrated actress.
+          atS: 16.34
+          durationS: 4.12
+        - text: She flew from Hollywood to Miami, and came down the Overseas Highway.
+          atS: 20.78
+          durationS: 4.17
+        - text: Fewer than twenty fans were waiting when she pulled up at her hotel, in a canary yellow convertible.
+          atS: 25.33
+          durationS: 5.84
+        - text: She signed one autograph.
+          atS: 31.61
+          durationS: 1.82
+        - text: The next day, the hotel said, she slept until noon.
+          atS: 34.04
+          durationS: 3.49
+        - text: A few days later Williams drove down from Miami too, with his secretary, Frank Merlo.
+          atS: 38.35
+          durationS: 5.69
+        - text: The Key West Citizen called him a regular winter visitor, and photographed him at his Duncan Street home.
+          atS: 44.73
+          durationS: 6.34
+        - text: Behind the camera was James Wong Howe, who had won his share of Academy Awards.
+          atS: 52.02
+          durationS: 5.27
+        - text: The lighting here, he said, was sharp and crisp.
+          atS: 58.25
+          durationS: 3.05
+        - text: And the Key West settings?
+          atS: 61.91
+          durationS: 1.83
+        - text: They could not be duplicated anywhere.
+          atS: 64.44
+          durationS: 2.23
+        - text: So for a few weeks, the town played itself.
+          atS: 66.99
+          durationS: 3

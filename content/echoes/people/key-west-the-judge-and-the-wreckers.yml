@@ -9,7 +9,7 @@ at: { lat: 24.5576, lng: -81.8050 }
 triggerRadiusKm: 0.03
 category: people
 format: short
-durationS: 58
+durationS: 54
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -31,7 +31,7 @@ script: |
 detail: >-
   From the Historic American Buildings Survey record of the Webb-Porter House (HABS FL-188): believed to date to 1838 and to have been built by Judge James Webb, first federal judge of the Southern District of the Florida Territory, judge from 1829 to 1839, who introduced laws regulating salvage, "thereby making wrecking a legitimate business in Florida"; his later service in the Republic and State of Texas, and Webb County named for him; the house better known as the birthplace of Dr. Joseph Yates Porter, Florida's first public health officer (1889 to 1917), known for controlling yellow fever. "A town that lived on salvage" is an inference from the record's account of salvage law and wrecking; the HABS records of Wall and Company and Captain Watlington support it, but this record alone does not say it.
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look at the house at four twenty nine Caroline Street."
@@ -79,3 +79,50 @@ sources:
     url: https://www.loc.gov/item/fl0154/
     retrievedAt: "2026-11-12"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-the-judge-and-the-wreckers/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 53.9
+    audioBytes: 863128
+    transcript:
+      totalS: 53.9
+      lines:
+        - text: Look at the house at four twenty nine Caroline Street.
+          atS: 0
+          durationS: 3.31
+        - text: It is believed to date from eighteen thirty eight, and to have been built by a judge.
+          atS: 3.63
+          durationS: 4.9
+        - text: James Webb was the first federal judge of the Southern District of the Florida Territory.
+          atS: 9.65
+          durationS: 5.03
+        - text: He sat here, in Key West, from eighteen twenty nine to eighteen thirty nine.
+          atS: 15.28
+          durationS: 5.32
+        - text: This was a town that lived on salvage, on what could be saved from ships in trouble.
+          atS: 21.2
+          durationS: 4.85
+        - text: And Webb brought in important laws to regulate it.
+          atS: 26.44
+          durationS: 2.94
+        - text: That, says the government's survey of his house, is what made wrecking a legitimate business in Florida.
+          atS: 29.89
+          durationS: 5.76
+        - text: Then he left for Texas.
+          atS: 36.09
+          durationS: 1.4
+        - text: He served the Republic of Texas, and then the State.
+          atS: 37.54
+          durationS: 2.97
+        - text: Later this house became the birthplace of Dr.
+          atS: 40.89
+          durationS: 2.45
+        - text: Joseph Yates Porter, Florida's first public health officer, who fought yellow fever.
+          atS: 43.38
+          durationS: 5.25
+        - text: But the judge is the one with a county.
+          atS: 48.95
+          durationS: 1.93
+        - text: Webb County, Texas, is named for him.
+          atS: 51.2
+          durationS: 2.67

@@ -9,7 +9,7 @@ at: { lat: 24.55999, lng: -81.80666 }
 triggerRadiusKm: 0.03
 category: history
 format: short
-durationS: 62
+durationS: 60
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -33,7 +33,7 @@ script: |
 detail: >-
   From the Historic American Buildings Survey record of the Wall and Company Warehouse (HABS FL-175): one of the earliest brick buildings on the island, built 1879 with work in 1886; Wall Street named for the company's founder, William H. Wall, an Englishman who came to Key West in 1824 after being shipwrecked and made a fortune dealing in salvaged goods; his cigar making, printing office, salt company shares and real estate; the first to make a substantial fortune; left before the Civil War, died in New York in 1866; the building used as a storehouse for cargoes auctioned by order of the federal admiralty. "Court" is added to "federal admiralty" for the ear. "Other people's shipwrecks" is the inference that salvaged goods came from wrecked ships.
 pronunciations: []
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Find the brick warehouse at the corner of Wall Street and Exchange Street."
@@ -90,3 +90,59 @@ sources:
     url: https://www.loc.gov/item/fl0152/
     retrievedAt: "2026-11-12"
     rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/key-west-brought-by-a-wreck/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 60.1
+    audioBytes: 962603
+    transcript:
+      totalS: 60.1
+      lines:
+        - text: Find the brick warehouse at the corner of Wall Street and Exchange Street.
+          atS: 0
+          durationS: 4.72
+        - text: It was one of the earliest brick buildings on the island.
+          atS: 5.11
+          durationS: 3.12
+        - text: Wall Street is named for the man who founded the company, William Wall.
+          atS: 8.67
+          durationS: 4.54
+        - text: He was an Englishman.
+          atS: 13.65
+          durationS: 1.21
+        - text: And in eighteen twenty four he came to Key West for a very Key West reason.
+          atS: 15.24
+          durationS: 5.27
+        - text: He was shipwrecked.
+          atS: 20.84
+          durationS: 1.17
+        - text: He stayed.
+          atS: 22.22
+          durationS: 0.92
+        - text: And he made his fortune dealing in salvaged goods.
+          atS: 23.65
+          durationS: 3.04
+        - text: He pioneered cigar making here too, owned an early printing office, and held shares in the local salt company.
+          atS: 27.02
+          durationS: 7.05
+        - text: He was the first man on the island to make a substantial fortune.
+          atS: 34.51
+          durationS: 3.74
+        - text: He left before the Civil War, and died in New York in eighteen sixty six.
+          atS: 38.94
+          durationS: 4.98
+        - text: This warehouse went up after him, in eighteen seventy nine.
+          atS: 44.87
+          durationS: 3.81
+        - text: And it carried on the trade.
+          atS: 49.12
+          durationS: 1.63
+        - text: It stored cargoes auctioned off by order of the federal admiralty court.
+          atS: 51.03
+          durationS: 4.25
+        - text: A shipwreck brought him here.
+          atS: 55.66
+          durationS: 1.71
+        - text: Other people's shipwrecks made him rich.
+          atS: 57.75
+          durationS: 2.35
