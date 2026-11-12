@@ -622,7 +622,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 40,
       "place": "Atlantic City, New Jersey"
     },
-    "category": "built",
+    "category": "firsts",
     "format": "short",
     "durationS": 54,
     "minAge": 0,
@@ -2245,7 +2245,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Langone Park, site of the 1919 molasses flood, Commercial Street, North End, Boston, Massachusetts"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 80,
     "minAge": 12,
@@ -2777,7 +2777,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.25,
       "place": "Carolina Beach Boardwalk, Carolina Beach, North Carolina"
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 46,
     "minAge": 0,
@@ -3852,7 +3852,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.03,
       "place": "Quaker burying ground, 138 King Street, Charleston, South Carolina"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "look-below",
     "durationS": 33,
     "minAge": 0,
@@ -4190,7 +4190,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "St. Philip's Church western churchyard, Church Street, Charleston, South Carolina"
     },
-    "category": "history",
+    "category": "hidden",
     "format": "short",
     "durationS": 110,
     "minAge": 0,
@@ -4336,7 +4336,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.1,
       "place": "Breach Inlet, Isle of Palms side, South Carolina"
     },
-    "category": "land",
+    "category": "disasters",
     "format": "short",
     "durationS": 56,
     "minAge": 8,
@@ -4507,7 +4507,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Old Marine Hospital (Jenkins Orphanage), 20 Franklin Street, Charleston, South Carolina"
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 84,
     "minAge": 0,
@@ -5554,7 +5554,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Broad and Church Streets, Charleston, South Carolina"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 94,
     "minAge": 0,
@@ -5984,7 +5984,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Old City Jail, 21 Magazine Street, Charleston, South Carolina"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 88,
     "minAge": 0,
@@ -6071,7 +6071,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Kahal Kadosh Beth Elohim, Hasell Street, Charleston, South Carolina"
     },
-    "category": "history",
+    "category": "firsts",
     "format": "short",
     "durationS": 76,
     "minAge": 0,
@@ -6210,7 +6210,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "The Old Exchange and Provost Dungeon, East Bay Street, Charleston, South Carolina"
     },
-    "category": "history",
+    "category": "hidden",
     "format": "short",
     "durationS": 84,
     "minAge": 0,
@@ -7427,7 +7427,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.08,
       "place": "South Boulevard at Bland Street, South End, Charlotte, North Carolina"
     },
-    "category": "history",
+    "category": "hidden",
     "format": "short",
     "durationS": 66,
     "minAge": 0,
@@ -7467,7 +7467,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "South Tryon Street at Third Street, Charlotte, North Carolina"
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 69,
     "minAge": 0,
@@ -7651,7 +7651,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Independence Square, Trade Street at Tryon Street, Charlotte, North Carolina"
     },
-    "category": "history",
+    "category": "unsolved",
     "format": "short",
     "durationS": 92,
     "minAge": 0,
@@ -7856,7 +7856,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.08,
       "place": "Chicago River at the Clark Street Bridge, south bank, Chicago, Illinois"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 81,
     "minAge": 0,
@@ -7897,7 +7897,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.08,
       "place": "Chicago River at the Michigan Avenue (DuSable) Bridge, Chicago, Illinois"
     },
-    "category": "land",
+    "category": "disasters",
     "format": "short",
     "durationS": 66,
     "minAge": 0,
@@ -8227,7 +8227,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.06,
       "place": "Site of Chicago Pile-1, Ellis Avenue, University of Chicago, Chicago, Illinois"
     },
-    "category": "history",
+    "category": "firsts",
     "format": "short",
     "durationS": 77,
     "minAge": 0,
@@ -8395,7 +8395,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.1,
       "place": "Cuyahoga River in the Flats, Cleveland, Ohio"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 55,
     "minAge": 0,
@@ -8441,7 +8441,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 3,
       "place": "Craggy Gardens, Blue Ridge Parkway"
     },
-    "category": "land",
+    "category": "unsolved",
     "format": "short",
     "durationS": 52,
     "minAge": 0,
@@ -8974,7 +8974,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Site of the Knickerbocker Theater, 18th Street and Columbia Road NW, Adams Morgan, Washington, D.C."
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 67,
     "minAge": 10,
@@ -9195,7 +9195,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Arsenal Monument, Congressional Cemetery, 1801 E Street SE, Washington, D.C."
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 77,
     "minAge": 10,
@@ -9487,7 +9487,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Eastern Market, 225 7th Street SE, Capitol Hill, Washington, D.C."
     },
-    "category": "built",
+    "category": "disasters",
     "format": "short",
     "durationS": 85,
     "minAge": 0,
@@ -10515,7 +10515,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.06,
       "place": "Union Station concourse, Washington, D.C."
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 81,
     "minAge": 0,
@@ -10960,7 +10960,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.03,
       "place": "Clara Barton Missing Soldiers Office, 437 7th Street NW, Penn Quarter, Washington, D.C."
     },
-    "category": "history",
+    "category": "hidden",
     "format": "short",
     "durationS": 95,
     "minAge": 0,
@@ -11948,7 +11948,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.06,
       "place": "Washington Monument grounds, National Mall, Washington, D.C."
     },
-    "category": "history",
+    "category": "unsolved",
     "format": "short",
     "durationS": 101,
     "minAge": 0,
@@ -12273,7 +12273,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Lincoln Memorial steps, Washington, D.C."
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 60,
     "minAge": 0,
@@ -12934,7 +12934,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.1,
       "place": "Site of the Granite Mill, Fall River, Massachusetts"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "look-below",
     "durationS": 17,
     "minAge": 0,
@@ -12974,7 +12974,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.06,
       "place": "Federal Hall, 26 Wall Street, Manhattan"
     },
-    "category": "history",
+    "category": "firsts",
     "format": "short",
     "durationS": 70,
     "minAge": 0,
@@ -13778,7 +13778,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Houston Avenue at Washington Avenue, Houston, Texas"
     },
-    "category": "legend",
+    "category": "unsolved",
     "format": "short",
     "durationS": 77,
     "minAge": 0,
@@ -14620,7 +14620,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.15,
       "place": "Glendale Cemetery and old Harrisburg, Broadway at Magnolia, East End, Houston, Texas"
     },
-    "category": "legend",
+    "category": "unsolved",
     "format": "short",
     "durationS": 77,
     "minAge": 0,
@@ -15241,7 +15241,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Sam (Lightnin') Hopkins marker, 3405 Emancipation Avenue (formerly Dowling Street), Third Ward, Houston, Texas"
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 88,
     "minAge": 0,
@@ -15715,7 +15715,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.1,
       "place": "Main Street and Jerome Avenue, Jerome, Arizona"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 81,
     "minAge": 0,
@@ -16099,7 +16099,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 50,
       "place": "Kill Devil Hills, North Carolina"
     },
-    "category": "history",
+    "category": "firsts",
     "format": "short",
     "durationS": 51,
     "minAge": 0,
@@ -16140,7 +16140,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.15,
       "place": "Kure Beach oceanfront, North Carolina"
     },
-    "category": "legend",
+    "category": "unsolved",
     "format": "short",
     "durationS": 50,
     "minAge": 0,
@@ -16355,7 +16355,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "W. C. Handy Park, formerly Church's Park, Beale Street, Memphis, Tennessee"
     },
-    "category": "people",
+    "category": "music",
     "format": "short",
     "durationS": 60,
     "minAge": 0,
@@ -16525,7 +16525,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.15,
       "place": "Mississippi River riverfront, Tom Lee Park, Memphis, Tennessee"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 81,
     "minAge": 0,
@@ -16567,7 +16567,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "W. C. Handy Park, Beale Street, Memphis, Tennessee"
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 66,
     "minAge": 0,
@@ -16778,7 +16778,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Ryman Auditorium, Fifth Avenue North, Nashville, Tennessee"
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 59,
     "minAge": 0,
@@ -16951,7 +16951,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "War Memorial Auditorium, Nashville, Tennessee"
     },
-    "category": "people",
+    "category": "music",
     "format": "short",
     "durationS": 62,
     "minAge": 0,
@@ -17040,7 +17040,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "United Record Pressing plant, 453 Chestnut Street, Nashville, Tennessee"
     },
-    "category": "history",
+    "category": "music",
     "format": "short",
     "durationS": 72,
     "minAge": 0,
@@ -17126,7 +17126,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.12,
       "place": "Cumberland River at Riverfront Park, First Avenue North, Nashville, Tennessee"
     },
-    "category": "land",
+    "category": "disasters",
     "format": "short",
     "durationS": 62,
     "minAge": 0,
@@ -17770,7 +17770,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Mother in Law Lounge, North Claiborne Avenue at Columbus Street, New Orleans, Louisiana"
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 77,
     "minAge": 0,
@@ -17983,7 +17983,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.03,
       "place": "Preservation Hall, 726 St. Peter Street, French Quarter, New Orleans, Louisiana"
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 84,
     "minAge": 0,
@@ -18136,7 +18136,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "The Cabildo, St. Peter Street side, Jackson Square, New Orleans, Louisiana"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 99,
     "minAge": 0,
@@ -18960,7 +18960,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.03,
       "place": "Site of the Karnofsky shop, 427 South Rampart Street, New Orleans, Louisiana"
     },
-    "category": "people",
+    "category": "music",
     "format": "short",
     "durationS": 75,
     "minAge": 0,
@@ -19105,7 +19105,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.06,
       "place": "Congo Square, Louis Armstrong Park, North Rampart Street, New Orleans, Louisiana"
     },
-    "category": "history",
+    "category": "music",
     "format": "short",
     "durationS": 87,
     "minAge": 10,
@@ -19215,7 +19215,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Site of the French Opera House, Bourbon and Toulouse streets, New Orleans, Louisiana"
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 77,
     "minAge": 0,
@@ -19916,7 +19916,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.06,
       "place": "Broadway between Warren and Murray Streets, opposite City Hall Park, Manhattan"
     },
-    "category": "built",
+    "category": "firsts",
     "format": "short",
     "durationS": 80,
     "minAge": 0,
@@ -20001,7 +20001,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Titanic Memorial Lighthouse, Fulton Street at Pearl Street, South Street Seaport, Manhattan"
     },
-    "category": "built",
+    "category": "disasters",
     "format": "short",
     "durationS": 66,
     "minAge": 0,
@@ -21093,7 +21093,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Brown Building, Washington Place and Greene Street, Greenwich Village, Manhattan"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 87,
     "minAge": 12,
@@ -21416,7 +21416,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Apollo Theater, 125th Street, Harlem, Manhattan"
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 80,
     "minAge": 0,
@@ -21563,7 +21563,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Empire State Building, Fifth Avenue at 34th Street, Manhattan"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 93,
     "minAge": 10,
@@ -22615,7 +22615,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.12,
       "place": "Dead Horse Bay, on old Barren Island, off Flatbush Avenue, Brooklyn"
     },
-    "category": "legend",
+    "category": "unsolved",
     "format": "short",
     "durationS": 49,
     "minAge": 0,
@@ -22660,7 +22660,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.06,
       "place": "Collect Pond Park, Centre Street at Leonard Street, Civic Center, Manhattan"
     },
-    "category": "land",
+    "category": "hidden",
     "format": "short",
     "durationS": 88,
     "minAge": 0,
@@ -22794,7 +22794,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.03,
       "place": "General Slocum memorial, Tompkins Square Park, near East 10th Street, East Village, Manhattan"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 94,
     "minAge": 10,
@@ -23456,7 +23456,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Touro Synagogue, 85 Touro Street, Newport, Rhode Island"
     },
-    "category": "built",
+    "category": "hidden",
     "format": "look-below",
     "durationS": 20,
     "minAge": 0,
@@ -23588,7 +23588,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Old Stone Mill (Newport Tower), Touro Park, Newport, Rhode Island"
     },
-    "category": "legend",
+    "category": "unsolved",
     "format": "short",
     "durationS": 55,
     "minAge": 0,
@@ -23683,7 +23683,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Hurricane Hazel historical marker, Country Club Drive (NC 133) at Yaupon Way, Oak Island, North Carolina"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 52,
     "minAge": 0,
@@ -25069,7 +25069,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "762 South Martin Street, Graduate Hospital, Philadelphia, Pennsylvania"
     },
-    "category": "people",
+    "category": "music",
     "format": "short",
     "durationS": 94,
     "minAge": 0,
@@ -26552,7 +26552,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Old St. Joseph's Church, Willings Alley, Philadelphia, Pennsylvania"
     },
-    "category": "history",
+    "category": "hidden",
     "format": "short",
     "durationS": 87,
     "minAge": 0,
@@ -26737,7 +26737,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Second and Willow streets, over the bed of Pegg's Run, Northern Liberties, Philadelphia, Pennsylvania"
     },
-    "category": "land",
+    "category": "hidden",
     "format": "short",
     "durationS": 85,
     "minAge": 0,
@@ -27391,7 +27391,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Broad and Pine streets, Avenue of the Arts, Philadelphia, Pennsylvania"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 93,
     "minAge": 10,
@@ -28374,7 +28374,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.15,
       "place": "Bluff near Shepard Road and Drake Street, West Seventh neighborhood, Saint Paul, Minnesota"
     },
-    "category": "food-drink",
+    "category": "hidden",
     "format": "look-below",
     "durationS": 26,
     "minAge": 0,
@@ -29305,7 +29305,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.08,
       "place": "Sutro Baths ruins below the Cliff House, Point Lobos Avenue, San Francisco, California"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 74,
     "minAge": 0,
@@ -29597,7 +29597,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.12,
       "place": "Lands End, above Mile Rock Beach, Lands End Trail, San Francisco, California"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 75,
     "minAge": 0,
@@ -31125,7 +31125,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Johnny Mercer statue, Ellis Square, Savannah, Georgia"
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 70,
     "minAge": 0,
@@ -31590,7 +31590,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Savannah riverfront, River Street, Savannah, Georgia"
     },
-    "category": "history",
+    "category": "firsts",
     "format": "short",
     "durationS": 77,
     "minAge": 0,
@@ -31743,7 +31743,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.15,
       "place": "South end of Tybee Island, facing Wassaw Sound, Georgia"
     },
-    "category": "history",
+    "category": "unsolved",
     "format": "short",
     "durationS": 83,
     "minAge": 0,
@@ -31838,7 +31838,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.03,
       "place": "Ellis Square, Savannah, Georgia"
     },
-    "category": "arts",
+    "category": "music",
     "format": "short",
     "durationS": 79,
     "minAge": 0,
@@ -32737,7 +32737,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Cathedral of St. John the Baptist, Lafayette Square, Savannah, Georgia"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 69,
     "minAge": 0,
@@ -33010,7 +33010,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Tomochichi memorial stone, Wright Square, Savannah, Georgia"
     },
-    "category": "history",
+    "category": "unsolved",
     "format": "short",
     "durationS": 99,
     "minAge": 0,
@@ -33565,7 +33565,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Pulaski Monument, Monterey Square, Savannah, Georgia"
     },
-    "category": "history",
+    "category": "unsolved",
     "format": "short",
     "durationS": 82,
     "minAge": 12,
@@ -34577,7 +34577,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "West Bay Street waterfront between Lord Street and Howe Street, Southport, North Carolina"
     },
-    "category": "land",
+    "category": "disasters",
     "format": "short",
     "durationS": 60,
     "minAge": 0,
@@ -34876,7 +34876,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.12,
       "place": "Fort Mose Historic State Park, St. Augustine, Florida"
     },
-    "category": "people",
+    "category": "firsts",
     "format": "short",
     "durationS": 89,
     "minAge": 0,
@@ -34981,7 +34981,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Castillo de San Marcos, grounds outside the southwest corner, St. Augustine, Florida"
     },
-    "category": "history",
+    "category": "unsolved",
     "format": "short",
     "durationS": 77,
     "minAge": 0,
@@ -35518,7 +35518,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.4,
       "place": "Lost Cove Cliffs Overlook, Blue Ridge Parkway, North Carolina"
     },
-    "category": "legend",
+    "category": "unsolved",
     "format": "short",
     "durationS": 58,
     "minAge": 0,
@@ -38229,7 +38229,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Temple of Israel, Fourth and Market streets, Wilmington, North Carolina"
     },
-    "category": "built",
+    "category": "firsts",
     "format": "short",
     "durationS": 58,
     "minAge": 0,
@@ -40016,7 +40016,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.04,
       "place": "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 59,
     "minAge": 0,
@@ -42373,7 +42373,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.1,
       "place": "North Lumina Avenue near Salisbury Street, Wrightsville Beach, North Carolina"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "short",
     "durationS": 45,
     "minAge": 0,
@@ -42614,7 +42614,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.08,
       "place": "Wynn Plaza Waterfront Park, 2 Waynick Boulevard, Wrightsville Beach, North Carolina"
     },
-    "category": "legend",
+    "category": "unsolved",
     "format": "look-below",
     "durationS": 38,
     "minAge": 0,
@@ -42656,7 +42656,7 @@ export const LIBRARY: readonly Echo[] = [
       "triggerRadiusKm": 0.05,
       "place": "Wrightsville Beach Museum of History, 303 West Salisbury Street, Wrightsville Beach, North Carolina"
     },
-    "category": "history",
+    "category": "disasters",
     "format": "look-below",
     "durationS": 41,
     "minAge": 0,
