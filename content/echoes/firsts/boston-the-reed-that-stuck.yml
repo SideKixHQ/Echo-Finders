@@ -7,7 +7,7 @@ summary: "On 2 June 1875, in an attic on Court Street, a stuck reed and a cross 
 place: "Site of 109 Court Street, City Hall Plaza, Government Center, Boston, Massachusetts"
 at: { lat: 42.36000, lng: -71.05960 }
 triggerRadiusKm: 0.06
-category: history
+category: firsts
 format: short
 durationS: 74
 visibility: position-only

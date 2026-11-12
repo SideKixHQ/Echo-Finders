@@ -7,7 +7,7 @@ summary: "The Gold Rush ship Niantic was abandoned in the cove, hauled ashore, m
 place: "Corner of Clay Street and Sansome Street, Financial District, San Francisco, California"
 at: { lat: 37.79515, lng: -122.40118 }
 triggerRadiusKm: 0.04
-category: history
+category: hidden
 format: short
 durationS: 70
 visibility: position-only

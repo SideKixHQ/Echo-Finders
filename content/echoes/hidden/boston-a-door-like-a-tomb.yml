@@ -7,7 +7,7 @@ summary: "America's first subway opened here in 1897. Its kiosks were mocked as 
 place: "Boylston station entrance, Tremont Street subway, corner of Boylston and Tremont streets, Boston, Massachusetts"
 at: { lat: 42.35290, lng: -71.06460 }
 triggerRadiusKm: 0.04
-category: built
+category: hidden
 format: short
 durationS: 69
 visibility: at-hand

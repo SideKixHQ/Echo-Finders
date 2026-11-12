@@ -7,7 +7,7 @@ summary: "The first sentence ever spoken by telephone went down a wire in a Bost
 place: "Avenue de Lafayette, site of 5 Exeter Place, Downtown Crossing, Boston, Massachusetts"
 at: { lat: 42.35355, lng: -71.06150 }
 triggerRadiusKm: 0.05
-category: history
+category: firsts
 format: short
 durationS: 75
 visibility: at-hand
