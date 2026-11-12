@@ -3,9 +3,8 @@
  * walk that hands it echoes, and a
  * stack holding the three tabs with an echo's card presented over them.
  *
- * Only the native build reaches this file. `index.ts` sends the WebView test shell build
- * (`EXPO_PUBLIC_SHELL=web`, the eas `production` profile) to `App.tsx` and never starts
- * the router.
+ * Every build starts here (`"main": "expo-router/entry"`). The WebView test shell that
+ * TestFlight carried until the native app was ready is gone (ADR-0012).
  */
 // The walk's background location task, defined before anything mounts: iOS can deliver a
 // location update to an app it has woken in the background (`src/walk/task.ts`).

@@ -1,7 +1,7 @@
 {
   "name": "@echofinders/ios",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "expo-router/entry",
   "dependencies": {
     "@echofinders/core": "file:../../packages/core",
     "@expo-google-fonts/sora": "^0.4.2",
@@ -27,8 +27,7 @@
     "react-native": "0.88.1",
     "react-native-safe-area-context": "~5.11.1",
     "react-native-screens": "~4.30.1",
-    "react-native-svg": "15.16.0",
-    "react-native-webview": "14.0.1"
+    "react-native-svg": "15.16.0"
   },
   "devDependencies": {
     "@types/react": "~19.3.0",
