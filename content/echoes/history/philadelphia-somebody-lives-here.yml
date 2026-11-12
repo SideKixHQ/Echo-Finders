@@ -1,0 +1,191 @@
+# Drafted by Claude Code (2026-11-10) for the Philadelphia core, following docs/writing-echoes.md.
+# Listening spot: In Elfreth's Alley itself, near number 126 and the museum, looking along the two rows of houses.
+# Position: Overture place 'Elfreth's Alley Museum' (126 Elfreth's Alley) at 39.95272, -75.14240; set a few metres west in the lane (high confidence).
+id: philadelphia-somebody-lives-here
+title: "Somebody Lives Here"
+summary: "Elfreth's Alley has been lived in for more than three hundred years. In 1933 one resident's plea saved its oldest houses."
+place: "Elfreth's Alley, between Front and Second Streets, Old City, Philadelphia, Pennsylvania"
+at: { lat: 39.95268, lng: -75.14255 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 94
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, old-city, elfreths-alley, preservation]
+teaser: "Keep your voice down. Somebody lives here."
+script: |
+  Look along the alley, at the two rows of little brick houses facing each other, with their shutters and white doorways. People have been living on this lane for more than three hundred years, without a break. It is called the oldest street in America that has never stopped being lived in.
+
+  And in the nineteen thirties, some of it was about to be knocked down.
+
+  A woman who lived here, Dolly Ottey, would not let it go. She ran a restaurant on the alley, called the Hearthstone. In nineteen thirty three, a landmarks society answered her plea, and three of the oldest houses were saved. Her own house was number one fifteen, with a mantelpiece from seventeen twenty.
+
+  People like to say Benjamin Franklin lived on this alley. A city guidebook of nineteen thirty seven put it gently. If he did, it was so briefly that history failed to record it. The people who really lived here were tradesmen. The alley takes its name from the family of a blacksmith. A Quaker cabinet maker lived here, and a pewterer, and a man who helped found the first synagogue in the city. Not famous people. Just people.
+
+  And people still live behind these doors. More than three hundred and eighty thousand visitors a year walk down this lane, past their windows. There are plans for a small park at the corner, named after Dolly Ottey.
+
+  Keep your voice down.
+
+  Somebody lives here.
+detail: >-
+  The park named for Dolly Ottey was planned to open in 2026; check on the ground whether it exists before the script is changed to say so.
+pronunciations:
+  - written: "Elfreth"
+    say: "EL-freth"
+  - written: "Ottey"
+    say: "OTT-ee"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look along the alley, at the two rows of little brick houses facing each other, with their shutters and white doorways."
+    source: 1
+    quote: "The windows are wood-shuttered ; the entrances are arched white doorways, approached by two or three stone steps."
+  - says: "Look along the alley, at the two rows of little brick houses facing each other, with their shutters and white doorways."
+    source: 1
+    quote: "Two stories in height, their red-brick fronts line both sides of the little street"
+  - says: "People have been living on this lane for more than three hundred years, without a break."
+    source: 2
+    quote: "Established in 1703, Elfreth's Alley is America's oldest continuously inhabited residential street."
+  - says: "People have been living on this lane for more than three hundred years, without a break."
+    source: 3
+    quote: "Visitors tell KYW Newsradio they were amazed how people lived here 300 years ago"
+  - says: "It is called the oldest street in America that has never stopped being lived in."
+    source: 2
+    quote: "Established in 1703, Elfreth's Alley is America's oldest continuously inhabited residential street."
+  - says: "And in the nineteen thirties, some of it was about to be knocked down."
+    source: 1
+    quote: "Three standing there, among the oldest in the country, were saved from demolition in 1933"
+  - says: "A woman who lived here, Dolly Ottey, would not let it go."
+    source: 2
+    quote: "The park will be named for Dolly Ottey, an Elfreth's Alley resident who led preservation efforts on the street in the 1930s."
+  - says: "She ran a restaurant on the alley, called the Hearthstone."
+    source: 2
+    quote: "Ottey also owned The Hearthstone Restaurant on the street"
+  - says: "In nineteen thirty three, a landmarks society answered her plea, and three of the oldest houses were saved."
+    source: 1
+    quote: "Three standing there, among the oldest in the country, were saved from demolition in 1933 through intervention of the Philadelphia Society for the Preservation of Landmarks, acting upon the plea of Mrs. D. W. Ottey, a resident of the alley."
+  - says: "Her own house was number one fifteen, with a mantelpiece from seventeen twenty."
+    source: 1
+    quote: "In Mrs. Ottey's house, at 115, may be seen a fine Colonial mantelpiece, constructed when the house was erected in 1720."
+  - says: "People like to say Benjamin Franklin lived on this alley."
+    source: 1
+    quote: "Tradition has it that Benjamin Franklin and Talleyrand both resided in houses in the alley."
+  - says: "A city guidebook of nineteen thirty seven put it gently. If he did, it was so briefly that history failed to record it."
+    source: 1
+    quote: "If either did, it was for such a brief period that history failed to record the stay."
+  - says: "The alley takes its name from the family of a blacksmith."
+    source: 1
+    quote: "The first of the name to come to Philadelphia was Jeremiah, a blacksmith, who arrived from England in 1690."
+  - says: "A Quaker cabinet maker lived here, and a pewterer, and a man who helped found the first synagogue in the city."
+    source: 3
+    quote: "There was a Quaker cabinet-maker."
+  - says: "A Quaker cabinet maker lived here, and a pewterer, and a man who helped found the first synagogue in the city."
+    source: 3
+    quote: "There was sweetish pewter that made stuff out of pewter in 110."
+  - says: "A Quaker cabinet maker lived here, and a pewterer, and a man who helped found the first synagogue in the city."
+    source: 3
+    quote: "Moses Mordecai lived in 118 and helped find the first synagogue in Philadelphia"
+  - says: "And people still live behind these doors."
+    source: 4
+    quote: "It's also tourist magnet, so you'd have to be OK with people staring in your windows all the time."
+  - says: "More than three hundred and eighty thousand visitors a year walk down this lane, past their windows."
+    source: 2
+    quote: "More than 380,000 people visit Elfreth's Alley every year, the announcement says."
+  - says: "There are plans for a small park at the corner, named after Dolly Ottey."
+    source: 2
+    quote: "Community groups are raising money for Dolly Ottey Park , a public space at the corner of Elfreth's Alley and North 2nd Street in Old City."
+sources:
+  - title: "Philadelphia: A Guide to the Nation's Birthplace (Federal Writers' Project, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/philadelphiaguid00federich
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "New park planned for Philadelphia's Old City to honor Elfreth's Alley resident who helped preserve street"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/elfreths-alley-dolly-ottey-park/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Visitors Step Back In Time In Old City"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/visitors-step-back-in-time-in-old-city/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Home On Philly's Historic Elfreth's Alley Goes On Sale"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/home-on-phillys-historic-elfreths-alley-goes-on-sale/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-somebody-lives-here/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 93.7
+    audioBytes: 1499680
+    transcript:
+      totalS: 93.7
+      lines:
+        - text: Look along the alley, at the two rows of little brick houses facing each other, with their shutters and white doorways.
+          atS: 0
+          durationS: 6.53
+        - text: People have been living on this lane for more than three hundred years, without a break.
+          atS: 6.91
+          durationS: 4.88
+        - text: It is called the oldest street in America that has never stopped being lived in.
+          atS: 12.17
+          durationS: 4.32
+        - text: And in the nineteen thirties, some of it was about to be knocked down.
+          atS: 17.18
+          durationS: 4.02
+        - text: A woman who lived here, Dolly Ottey, would not let it go.
+          atS: 21.9
+          durationS: 4.14
+        - text: She ran a restaurant on the alley, called the Hearthstone.
+          atS: 26.74
+          durationS: 2.97
+        - text: In nineteen thirty three, a landmarks society answered her plea, and three of the oldest houses were saved.
+          atS: 30.52
+          durationS: 6.39
+        - text: Her own house was number one fifteen, with a mantelpiece from seventeen twenty.
+          atS: 37.6
+          durationS: 4.67
+        - text: People like to say Benjamin Franklin lived on this alley.
+          atS: 42.88
+          durationS: 3.38
+        - text: A city guidebook of nineteen thirty seven put it gently.
+          atS: 46.95
+          durationS: 3.53
+        - text: If he did, it was so briefly that history failed to record it.
+          atS: 51.18
+          durationS: 4.6
+        - text: The people who really lived here were tradesmen.
+          atS: 56.47
+          durationS: 2.89
+        - text: The alley takes its name from the family of a blacksmith.
+          atS: 60.06
+          durationS: 3.55
+        - text: A Quaker cabinet maker lived here, and a pewterer, and a man who helped found the first synagogue in the city.
+          atS: 64.31
+          durationS: 6.95
+        - text: Not famous people.
+          atS: 72.08
+          durationS: 1.37
+        - text: Just people.
+          atS: 74.14
+          durationS: 1.18
+        - text: And people still live behind these doors.
+          atS: 75.93
+          durationS: 2.53
+        - text: More than three hundred and eighty thousand visitors a year walk down this lane, past their windows.
+          atS: 79.27
+          durationS: 5.72
+        - text: There are plans for a small park at the corner, named after Dolly Ottey.
+          atS: 85.44
+          durationS: 4.85
+        - text: Keep your voice down.
+          atS: 90.73
+          durationS: 1.38
+        - text: Somebody lives here.
+          atS: 92.39
+          durationS: 1.28

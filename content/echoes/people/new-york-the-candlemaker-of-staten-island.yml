@@ -1,0 +1,140 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Staten Island (more NYC batch). A rare find: about 12 km from the Midtown cluster, a short walk from the ferry.
+# Listening spot: Outside the Garibaldi-Meucci Museum, the small frame cottage at Tompkins Avenue and Chestnut Avenue, Rosebank, Staten Island.
+# Position: Wikidata Q3758341 (Garibaldi-Meucci Museum) coordinate (high confidence). The cottage was moved here from across the street before 1939.
+id: new-york-the-candlemaker-of-staten-island
+title: "The Candlemaker of Staten Island"
+summary: "In the 1850s Giuseppe Garibaldi, the liberator of Italy, lived in this little Staten Island cottage and made candles for a living."
+place: "Garibaldi-Meucci Museum, Tompkins Avenue at Chestnut Avenue, Rosebank, Staten Island"
+at: { lat: 40.61500, lng: -74.07361 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 57
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, staten-island, rosebank, garibaldi, meucci, italian-american, immigrants]
+teaser: "Italy's liberator once made candles for a living, right here on Staten Island."
+script: |
+  Look at the little frame cottage in front of you. Plain. Small. Easy to walk past.
+
+  For two years, a man Italians remember as their liberator lived inside it. Making candles.
+
+  His name was Giuseppe Garibaldi. There is a statue of him across the harbor, in Washington Square in Manhattan.
+
+  But from eighteen fifty one to eighteen fifty three, he was here. Far from home. Living in the house of a friend, Antonio Meucci. And he supported himself the plainest way he could. He made candles.
+
+  The liberator of Italy, in a cottage on Staten Island, making candles to pay his way.
+
+  Then he left.
+
+  Meucci stayed. In nineteen thirty nine, his grave was on the lawn in front of the house, marked by a bust.
+
+  Look at the cottage again.
+
+  A hero, between chapters.
+
+pronunciations:
+  - written: Giuseppe Garibaldi
+    say: joo-ZEP-ay gar-ih-BALL-dee
+  - written: Meucci
+    say: may-OO-chee
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "For two years, a man Italians remember as their liberator lived inside it."
+    source: 1
+    quote: "commemorates the Italian liberator's brief American residence. From 1851 to 1853 Garibaldi resided at the home of Antonio Meucci"
+  - says: "There is a statue of him across the harbor, in Washington Square in Manhattan."
+    source: 1
+    quote: "Statue of Giuseppe Garibaldi"
+  - says: "But from eighteen fifty one to eighteen fifty three, he was here."
+    source: 1
+    quote: "From 1851 to 1853 Garibaldi resided at the home of Antonio Meucci"
+  - says: "Living in the house of a friend, Antonio Meucci."
+    source: 1
+    quote: "Garibaldi resided at the home of Antonio Meucci, where he supported himself as a candlemaker."
+  - says: "He made candles."
+    source: 1
+    quote: "where he supported himself as a candlemaker."
+  - says: "In nineteen thirty nine, his grave was on the lawn in front of the house, marked by a bust."
+    source: 1
+    quote: "A bust marks the grave of Meucci on the weedy lawn fronting the house."
+  - says: "His name was Giuseppe Garibaldi."
+    source: 1
+    quote: "Giuseppe Garibaldi, Italian patriot"
+  - says: "The liberator of Italy, in a cottage on Staten Island, making candles to pay his way."
+    source: 1
+    quote: "commemorates the Italian liberator's brief American residence. From 1851 to 1853 Garibaldi resided at the home of Antonio Meucci, where he supported himself as a candlemaker. Meucci's house, a small frame cottage"
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Staten Island, and Greenwich Village"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-candlemaker-of-staten-island/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 56.6
+    audioBytes: 907014
+    transcript:
+      totalS: 56.6
+      lines:
+        - text: Look at the little frame cottage in front of you.
+          atS: 0
+          durationS: 2.57
+        - text: Plain.
+          atS: 2.77
+          durationS: 0.58
+        - text: Small.
+          atS: 3.53
+          durationS: 0.66
+        - text: Easy to walk past.
+          atS: 4.4
+          durationS: 1.42
+        - text: For two years, a man Italians remember as their liberator lived inside it.
+          atS: 6.51
+          durationS: 4.76
+        - text: Making candles.
+          atS: 11.6
+          durationS: 1.17
+        - text: His name was Giuseppe Garibaldi.
+          atS: 13.15
+          durationS: 3.12
+        - text: There is a statue of him across the harbor, in Washington Square in Manhattan.
+          atS: 16.88
+          durationS: 4.43
+        - text: But from eighteen fifty one to eighteen fifty three, he was here.
+          atS: 21.76
+          durationS: 3.81
+        - text: Far from home.
+          atS: 25.84
+          durationS: 1.04
+        - text: Living in the house of a friend, Antonio Meucci.
+          atS: 27.4
+          durationS: 3.98
+        - text: And he supported himself the plainest way he could.
+          atS: 31.66
+          durationS: 2.76
+        - text: He made candles.
+          atS: 34.93
+          durationS: 1.21
+        - text: The liberator of Italy, in a cottage on Staten Island, making candles to pay his way.
+          atS: 36.52
+          durationS: 5.21
+        - text: Then he left.
+          atS: 42.25
+          durationS: 1.02
+        - text: Meucci stayed.
+          atS: 43.78
+          durationS: 2.19
+        - text: In nineteen thirty nine, his grave was on the lawn in front of the house, marked by a bust.
+          atS: 46.67
+          durationS: 5.43
+        - text: Look at the cottage again.
+          atS: 52.8
+          durationS: 1.29
+        - text: A hero, between chapters.
+          atS: 54.33
+          durationS: 2.28

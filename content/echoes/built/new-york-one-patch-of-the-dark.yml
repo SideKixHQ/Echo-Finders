@@ -1,0 +1,175 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Midtown cluster.
+# Listening spot: The floor of Grand Central Terminal's Main Concourse, near the information booth and its clock, looking up at the ceiling.
+# Position: Centre of the Main Concourse, about 40 m north of Overture's points for the lower-level Oyster Bar (40.75258, -73.97745) (medium confidence; indoor GPS is poor, so the radius is generous).
+id: new-york-one-patch-of-the-dark
+title: "One Patch of the Dark"
+summary: "High on Grand Central's starry ceiling is one dark patch nobody cleaned, left from the years the building nearly disappeared."
+place: "Main Concourse, Grand Central Terminal, 42nd Street and Park Avenue, Manhattan"
+at: { lat: 40.75285, lng: -73.97715 }
+triggerRadiusKm: 0.06
+category: built
+format: short
+durationS: 71
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-york, midtown, grand-central, preservation, jacqueline-kennedy-onassis]
+teaser: "Find the one dark patch in the stars. That is what the whole sky used to look like."
+script: |
+  Look up at the ceiling. The green sky. The gold stars.
+
+  Now look for the dark patch, high up, near the western windows. Everything else up there is clean. That one patch is not.
+
+  At one time, this whole night sky was black. Decades of cigarette and cigar smoke. In the nineteen nineties, workers spent a year cleaning the tar off it, by hand. And they left that patch, on purpose, to show how dirty it had been.
+
+  But there very nearly was no ceiling to clean.
+
+  In nineteen sixty four, the old Penn Station, across town, was torn down. Grand Central was in trouble too. Its owners wanted to build a tower, fifty five stories high, on top of it.
+
+  In nineteen seventy five, a woman who had once lived in the White House led the fight against that plan. Jacqueline Kennedy Onassis.
+
+  It went all the way to the United States Supreme Court. Three years later, the court upheld the city's landmark law. The tower was never built.
+
+  Look at the dark patch again.
+
+  They kept one piece of the dark, so you would know.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Now look for the dark patch, high up, near the western windows."
+    source: 1
+    quote: "leaving behind a little dark patch high in the ceiling near the western windows as a reminder of how dirty that ceiling once was."
+  - says: "At one time, this whole night sky was black."
+    source: 1
+    quote: "At one time that night sky was completely black, covered by layers of grime, accumulated from years of cigarette and cigar smoke."
+  - says: "In the nineteen nineties, workers spent a year cleaning the tar off it, by hand."
+    source: 2
+    quote: "They spent a year painstakingly cleaning the black tar off the ceiling."
+  - says: "In the nineteen nineties, workers spent a year cleaning the tar off it, by hand."
+    source: 1
+    quote: "Workers cleaned it by hand during the building’s $250 million restoration in the 1990s"
+  - says: "And they left that patch, on purpose, to show how dirty it had been."
+    source: 1
+    quote: "leaving behind a little dark patch high in the ceiling near the western windows as a reminder of how dirty that ceiling once was."
+  - says: "In nineteen sixty four, the old Penn Station, across town, was torn down."
+    source: 1
+    quote: "New Yorkers, such as Jacqueline Onassis, were shocked by the demolition of nearby Penn Station in 1964 and didn’t want Grand Central to go the same way."
+  - says: "Grand Central was in trouble too."
+    source: 2
+    quote: "But in the 1960s, the New York Central was bankrupt, and there was a real possibility that Grand Central would be torn down and replaced by a skyscraper."
+  - says: "Its owners wanted to build a tower, fifty five stories high, on top of it."
+    source: 3
+    quote: "In 1975, Onassis led a movement against a plan to build a 55-story tower on top of the landmarked building."
+  - says: "In nineteen seventy five, a woman who had once lived in the White House led the fight against that plan."
+    source: 3
+    quote: "In 1975, Onassis led a movement against a plan to build a 55-story tower on top of the landmarked building."
+  - says: "In nineteen seventy five, a woman who had once lived in the White House led the fight against that plan."
+    source: 3
+    quote: "A newly-renovated entrance at Grand Central Terminal has been named for former First Lady Jacqueline Kennedy Onassis."
+  - says: "Jacqueline Kennedy Onassis."
+    source: 2
+    quote: "There was a public outcry, and Jacqueline Kennedy Onassis joined the fight to save the building, says Brucker."
+  - says: "It went all the way to the United States Supreme Court."
+    source: 1
+    quote: "They fought all the way up to the US Supreme Court in support of the New York Landmark Law that gave Grand Central protective status."
+  - says: "Three years later, the court upheld the city's landmark law."
+    source: 3
+    quote: "Three year later, the U.S. Supreme Court upheld the city's Landmark Law, which was being challenged by developers."
+  - says: "The tower was never built."
+    source: 2
+    quote: "The terminal was saved, but it was in terrible shape."
+  - says: "That one patch is not."
+    source: 1
+    quote: "leaving behind a little dark patch high in the ceiling near the western windows as a reminder of how dirty that ceiling once was."
+  - says: "They kept one piece of the dark, so you would know."
+    source: 1
+    quote: "leaving behind a little dark patch high in the ceiling near the western windows as a reminder of how dirty that ceiling once was."
+sources:
+  - title: "Take an audio tour of New York's Grand Central Terminal"
+    publisher: "The Boston Globe, 13 October 2012"
+    url: https://www.bostonglobe.com/lifestyle/travel/2012/10/13/take-audio-tour-new-york-grand-central-terminal/3HBPvMm3Vb1wy1rQcDoeYJ/story.html
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Grand Central, A Cathedral For Commuters, Celebrates 100"
+    publisher: "NPR, 1 February 2013"
+    url: https://www.npr.org/2013/02/01/170692025/grand-central-a-cathedral-for-commuters-celebrates-100
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Grand Central Entrance Named For Jacqueline Kennedy Onassis"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/grand-central-entrance-to-be-named-for-jacqueline-kennedy-onassis/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-one-patch-of-the-dark/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.4
+    audioBytes: 1143161
+    transcript:
+      totalS: 71.4
+      lines:
+        - text: Look up at the ceiling.
+          atS: 0
+          durationS: 1.36
+        - text: The green sky.
+          atS: 1.74
+          durationS: 1.09
+        - text: The gold stars.
+          atS: 3.01
+          durationS: 1.36
+        - text: Now look for the dark patch, high up, near the western windows.
+          atS: 4.81
+          durationS: 4.27
+        - text: Everything else up there is clean.
+          atS: 9.4
+          durationS: 1.96
+        - text: That one patch is not.
+          atS: 11.64
+          durationS: 1.95
+        - text: At one time, this whole night sky was black.
+          atS: 14.9
+          durationS: 3.01
+        - text: Decades of cigarette and cigar smoke.
+          atS: 18.23
+          durationS: 2.37
+        - text: In the nineteen nineties, workers spent a year cleaning the tar off it, by hand.
+          atS: 21.11
+          durationS: 4.55
+        - text: And they left that patch, on purpose, to show how dirty it had been.
+          atS: 25.87
+          durationS: 4.1
+        - text: But there very nearly was no ceiling to clean.
+          atS: 30.35
+          durationS: 2.55
+        - text: In nineteen sixty four, the old Penn Station, across town, was torn down.
+          atS: 33.6
+          durationS: 5.12
+        - text: Grand Central was in trouble too.
+          atS: 39.32
+          durationS: 1.88
+        - text: Its owners wanted to build a tower, fifty five stories high, on top of it.
+          atS: 41.65
+          durationS: 4.43
+        - text: In nineteen seventy five, a woman who had once lived in the White House led the fight against that plan.
+          atS: 47.03
+          durationS: 6.08
+        - text: Jacqueline Kennedy Onassis.
+          atS: 53.63
+          durationS: 2.03
+        - text: It went all the way to the United States Supreme Court.
+          atS: 55.94
+          durationS: 3.39
+        - text: Three years later, the court upheld the city's landmark law.
+          atS: 60.02
+          durationS: 4.1
+        - text: The tower was never built.
+          atS: 64.56
+          durationS: 1.58
+        - text: Look at the dark patch again.
+          atS: 66.47
+          durationS: 1.61
+        - text: They kept one piece of the dark, so you would know.
+          atS: 68.41
+          durationS: 2.97

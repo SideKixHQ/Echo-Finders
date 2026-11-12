@@ -1,0 +1,228 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Central Park cluster.
+# Listening spot: The path inside Central Park near West 84th to 85th Streets, by the Seneca Village historical markers, a short walk in from Mariners' Gate (Central Park West at 85th Street).
+# Position: Overture places "Seneca Village Site" at 40.78401, -73.96890; NPR describes the marker near a playground and drinking fountain and CBS places it on West Drive near 85th Street (medium confidence).
+id: new-york-under-the-grass
+title: "Under the Grass"
+summary: "Before Central Park, a village of Black landowners stood here. In 1857 the city forced them out and knocked it down."
+place: "Seneca Village site, Central Park near West 85th Street, Manhattan"
+at: { lat: 40.78420, lng: -73.96895 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 91
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [new-york, central-park, seneca-village, black-history, archaeology]
+teaser: "They found the sole of a child's shoe. One of the students started to cry."
+script: |
+  Look around you. The paths. The trees. The playground nearby.
+
+  Before there was a Central Park, there was a village here.
+
+  In September, eighteen twenty five, a shoe shiner named Andrew Williams bought three lots of land, right around here. He was twenty five, and a free Black man. Slavery had not even ended yet in New York.
+
+  Others followed him. Free Black families, and later Irish and German immigrants. They built houses, three churches, a school. They called it Seneca Village.
+
+  Owning land mattered. In those days, a Black man in New York who owned property could vote. Seneca Village had the largest number of Black property owners in the city before the Civil War.
+
+  Then the city decided it wanted a park.
+
+  The newspapers started calling the villagers squatters and vagabonds. In eighteen fifty seven, the city used eminent domain to force them out. Police removed the ones who resisted. Then the village was knocked down, and the park was built over it.
+
+  Historians still know very little about where the people went.
+
+  In two thousand eleven, archaeologists dug here. They found bottles, dishes, buttons, a toothbrush. And the sole of a child's shoe.
+
+  One of the students on the dig started to cry.
+
+  Look down at the grass.
+
+  The village is still here. Just underneath.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look around you."
+    source: 3
+    quote: "Copeland helped push for a historical sign now standing near a playground and drinking fountain in Central Park."
+  - says: "Before there was a Central Park, there was a village here."
+    source: 3
+    quote: "Beginning in 1825, about 300 people — mainly free African-Americans — lived in a village that spanned a portion of the park's 843 acres in Manhattan, between 82nd and 89th streets, east of Central Park West."
+  - says: "In September, eighteen twenty five, a shoe shiner named Andrew Williams bought three lots of land, right around here."
+    source: 2
+    quote: "Andrew Williams, a free black shoe shiner, purchased three lots of land near there on Sept. 27, 1825."
+  - says: "He was twenty five, and a free Black man."
+    source: 4
+    quote: "In 1825, a 25-year-old African American shoe shiner named Andrew Williams bought land in the middle of Manhattan, two years before slavery was abolished in New York."
+  - says: "Slavery had not even ended yet in New York."
+    source: 4
+    quote: "In 1825, a 25-year-old African American shoe shiner named Andrew Williams bought land in the middle of Manhattan, two years before slavery was abolished in New York."
+  - says: "Others followed him."
+    source: 4
+    quote: "More free Black Americans followed, fleeing the disease and discrimination of downtown, and together they created a bustling settlement of their own, known as Seneca Village."
+  - says: "Free Black families, and later Irish and German immigrants."
+    source: 4
+    quote: "Irish and German immigrants moved in, too, and White and Black villagers attended church side-by-side."
+  - says: "They built houses, three churches, a school."
+    source: 2
+    quote: "The area had a school, three churches and some cemeteries."
+  - says: "They built houses, three churches, a school."
+    source: 1
+    quote: "It had streets, three churches, two schools, and two cemeteries."
+  - says: "They called it Seneca Village."
+    source: 1
+    quote: "One of these was Seneca Village. Free Blacks founded the village in 1825: the first free Black community in New York City."
+  - says: "In those days, a Black man in New York who owned property could vote."
+    source: 4
+    quote: "Seneca Village was home to the largest number of African-American property owners in New York before the Civil War, and because those Black men possessed property, they had the ability to vote."
+  - says: "Seneca Village had the largest number of Black property owners in the city before the Civil War."
+    source: 4
+    quote: "Seneca Village was home to the largest number of African-American property owners in New York before the Civil War"
+  - says: "The newspapers started calling the villagers squatters and vagabonds."
+    source: 1
+    quote: "They called the residents “denizens,” “squatters,” “vagabonds,” and “scoundrels.”"
+  - says: "In eighteen fifty seven, the city used eminent domain to force them out."
+    source: 1
+    quote: "But in 1857, the city used eminent domain to forcibly remove them."
+  - says: "In eighteen fifty seven, the city used eminent domain to force them out."
+    source: 3
+    quote: "The village was leveled in 1857, the same year construction began on Central Park."
+  - says: "Police removed the ones who resisted."
+    source: 1
+    quote: "Police removed those who resisted"
+  - says: "Then the village was knocked down, and the park was built over it."
+    source: 1
+    quote: "Once the people were gone, the city demolished the village."
+  - says: "Historians still know very little about where the people went."
+    source: 1
+    quote: "Historians know very little about what happened to the former residents."
+  - says: "In two thousand eleven, archaeologists dug here."
+    source: 1
+    quote: "These took place in 2004, 2005, and 2011."
+  - says: "They found bottles, dishes, buttons, a toothbrush."
+    source: 1
+    quote: "These included beef bones, dishes, buttons, bottles, smoking pipes, a toothbrush, and the sole from a child’s shoe."
+  - says: "And the sole of a child's shoe."
+    source: 1
+    quote: "These included beef bones, dishes, buttons, bottles, smoking pipes, a toothbrush, and the sole from a child’s shoe."
+  - says: "One of the students on the dig started to cry."
+    source: 4
+    quote: "\"We found lots of beautiful bottles, [and] a shoe that was probably the size that was used by one of the children,\" said Copeland. \"And one of the students just started to cry.\""
+  - says: "The village is still here."
+    source: 3
+    quote: "But there's still evidence of Seneca Village under the park's west side."
+sources:
+  - title: "Seneca Village, New York City"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/seneca-village-new-york-city.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Lost Village In New York City"
+    publisher: "NPR, The Protojournalist, 6 May 2014"
+    url: https://www.npr.org/sections/theprotojournalist/2014/05/06/309727058/the-lost-village-in-new-york-city
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Lives Displaced By Central Park Take Center Stage In New Play"
+    publisher: "NPR, 4 September 2015"
+    url: https://www.npr.org/2015/09/04/436938527/lives-displaced-by-central-park-take-center-stage-in-new-play
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Uncovering the history of Seneca Village in New York City"
+    publisher: "CBS News Sunday Morning"
+    url: https://www.cbsnews.com/news/uncovering-the-history-of-seneca-village-in-new-york-city/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-under-the-grass/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 90.7
+    audioBytes: 1451615
+    transcript:
+      totalS: 90.7
+      lines:
+        - text: Look around you.
+          atS: 0
+          durationS: 0.89
+        - text: The paths.
+          atS: 1.17
+          durationS: 0.96
+        - text: The trees.
+          atS: 2.31
+          durationS: 0.91
+        - text: The playground nearby.
+          atS: 3.54
+          durationS: 1.54
+        - text: Before there was a Central Park, there was a village here.
+          atS: 5.47
+          durationS: 2.88
+        - text: In September, eighteen twenty five, a shoe shiner named Andrew Williams bought three lots of land, right around here.
+          atS: 8.67
+          durationS: 7.3
+        - text: He was twenty five, and a free Black man.
+          atS: 16.42
+          durationS: 2.89
+        - text: Slavery had not even ended yet in New York.
+          atS: 20
+          durationS: 2.69
+        - text: Others followed him.
+          atS: 23.02
+          durationS: 1.1
+        - text: Free Black families, and later Irish and German immigrants.
+          atS: 24.51
+          durationS: 4.05
+        - text: They built houses, three churches, a school.
+          atS: 29
+          durationS: 3.45
+        - text: They called it Seneca Village.
+          atS: 32.96
+          durationS: 1.88
+        - text: Owning land mattered.
+          atS: 35.23
+          durationS: 1.51
+        - text: In those days, a Black man in New York who owned property could vote.
+          atS: 37.17
+          durationS: 4.42
+        - text: Seneca Village had the largest number of Black property owners in the city before the Civil War.
+          atS: 42.11
+          durationS: 5.26
+        - text: Then the city decided it wanted a park.
+          atS: 47.81
+          durationS: 2.6
+        - text: The newspapers started calling the villagers squatters and vagabonds.
+          atS: 51.11
+          durationS: 4.33
+        - text: In eighteen fifty seven, the city used eminent domain to force them out.
+          atS: 55.82
+          durationS: 4.87
+        - text: Police removed the ones who resisted.
+          atS: 61.38
+          durationS: 2.47
+        - text: Then the village was knocked down, and the park was built over it.
+          atS: 64.24
+          durationS: 3.61
+        - text: Historians still know very little about where the people went.
+          atS: 68.29
+          durationS: 3.49
+        - text: In two thousand eleven, archaeologists dug here.
+          atS: 72.23
+          durationS: 3.44
+        - text: They found bottles, dishes, buttons, a toothbrush.
+          atS: 75.94
+          durationS: 4.35
+        - text: And the sole of a child's shoe.
+          atS: 80.62
+          durationS: 2.14
+        - text: One of the students on the dig started to cry.
+          atS: 83.36
+          durationS: 2.6
+        - text: Look down at the grass.
+          atS: 86.24
+          durationS: 1.39
+        - text: The village is still here.
+          atS: 87.96
+          durationS: 1.38
+        - text: Just underneath.
+          atS: 89.46
+          durationS: 1.19

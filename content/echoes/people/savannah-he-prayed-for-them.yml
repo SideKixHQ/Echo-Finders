@@ -1,0 +1,145 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the sidewalk of West Bryan Street outside First Bryan Baptist Church, on the south side of Bryan Street between Martin Luther King Jr. Boulevard and Fahm Street, in old Yamacraw.
+# Position: Bryan Street at MLK and at Fahm from the street segments in the app's Savannah street file, and the church's point in the same file (medium confidence for the door). About 150 m from the First African Baptist echo on Franklin Square, which is a different church and a different subject.
+# Contested ground, said in the detail: First Bryan Baptist and First African Baptist both descend from Andrew Bryan's congregation and both claim its founding. This echo is about Bryan himself and the lot he bought; it takes no side.
+id: savannah-he-prayed-for-them
+title: "He Prayed for Them"
+summary: "Andrew Bryan, an enslaved preacher, was whipped until his back bled for holding services. He prayed for the men who did it."
+place: "First Bryan Baptist Church, West Bryan Street, Yamacraw, Savannah, Georgia"
+at: { lat: 32.08212, lng: -81.09895 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 78
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [savannah, yamacraw, african-american-history, religion, slavery, baptists]
+teaser: "Someone listening at his window heard him praying, and it was for them."
+script: |
+  Look at the church on this block of Bryan Street, and at the lot it stands on.
+
+  The man who bought this lot was once whipped until his blood ran down to the ground.
+
+  His name was Andrew Bryan. He was enslaved, and he was a preacher. In seventeen eighty eight he was ordained pastor of a church of Black Baptists, meeting in a barn outside the city.
+
+  The patrols did not like it. Members were whipped for not carrying passes. Then, around seventeen ninety, about fifty of them were arrested. Andrew and his brother Sampson were whipped worst of all. A church history from eighteen eighty eight says Andrew told the men whipping him that he rejoiced not only to be whipped, but would freely suffer death for the cause of Jesus Christ.
+
+  Afterwards, the story goes, a man went to spy on him, and listened at his window. He heard Bryan praying, earnestly, for the men who had whipped him.
+
+  In seventeen ninety three Bryan bought this lot for thirty pounds. He built a high board fence around it, and kept his meeting house at the back, as quiet as he could make it.
+
+  Look at the church again.
+
+  He built it to be hard to see. It has been seen ever since.
+detail: >-
+  Simms, The First Colored Baptist Church in North America (1888), gives the whipping, Bryan's words as reported speech, the eavesdropper (a story Simms says he heard often from Rev. A. Marshall), the arrest of "some fifty others" about 1789 or 1790, the purchase of "Lot No. 7, Middle Oglethorpe Ward ... on south side of Bryan St." for thirty pounds by deeds dated September 4, 1793, and the high board fence. Wilson (1889) gives the 1788 ordination by Abraham Marshall and a 1797 deed for Lot Seven in Yamacraw to the trustees of the First African Baptist Church; the dates differ and the script follows Simms. The Boston Globe (2025) reports a Savannah guide's account that Bryan was "publicly whipped and imprisoned for preaching". The two churches' shared and disputed history is not told here; it is the subject of savannah-first-african-baptist and deserves its own contested echo.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "The man who bought this lot was once whipped until his blood ran down to the ground."
+    source: 1
+    quote: "were inhumanly cut, and their backs were so lacerated that their blood ran down to the earth"
+  - says: "In seventeen eighty eight he was ordained pastor of a church of Black Baptists, meeting in a barn outside the city."
+    source: 2
+    quote: "The church originated at Brampton's barn, three miles south-west of Savannah, on January thirtieth, 1788. Andrew Bryan, a man of pure negro blood, was ordained as the pastor of this new organization"
+  - says: "Members were whipped for not carrying passes."
+    source: 1
+    quote: "Fre- quent, then, became the whipping of individual mem- bers by the patrol on the plea of not having proper tickets-of-leave"
+  - says: "Then, around seventeen ninety, about fifty of them were arrested. Andrew and his brother Sampson were whipped worst of all."
+    source: 1
+    quote: "were with some fifty others locked up in prison and their meeting-house taken away from them. This was about the year 1789 or 1790."
+  - says: "A church history from eighteen eighty eight says Andrew told the men whipping him that he rejoiced not only to be whipped, but would freely suffer death for the cause of Jesus Christ."
+    source: 1
+    quote: "declared to his persecutors \" that he re- joiced not only to be whipped, but would freely suffer death for the cause of Jesus Christ.\""
+  - says: "A church history from eighteen eighty eight says Andrew told the men whipping him that he rejoiced not only to be whipped, but would freely suffer death for the cause of Jesus Christ."
+    source: 3
+    quote: "the story of Andrew Bryan, one of the founders of the First African Baptist Church, who was publicly whipped and imprisoned for preaching."
+  - says: "He heard Bryan praying, earnestly, for the men who had whipped him."
+    source: 1
+    quote: "he heard this pious servant of God praying earnestly for the very men who had so mercilessly whipped him."
+  - says: "In seventeen ninety three Bryan bought this lot for thirty pounds."
+    source: 1
+    quote: "he purchased for thirty pounds sterling, equal to about one hundred and fifty dollars, Lot No. 7, Middle Oglethorpe Ward"
+  - says: "He built a high board fence around it, and kept his meeting house at the back, as quiet as he could make it."
+    source: 1
+    quote: "These positions are defined thus strictly, as they will show the care of the old leader to have his meetings as little conspicuous as possible. The whole lot was enclosed by a high board fence"
+  - says: "His name was Andrew Bryan."
+    source: 2
+    quote: "Andrew Bryan, a man of pure negro blood, was ordained as the pastor of this new organization"
+sources:
+  - title: "The First Colored Baptist Church in North America (James M. Simms, 1888)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/firstcoloredbapt00simm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Historic and Picturesque Savannah (Adelaide Wilson, 1889)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicpictures00wils
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Walking through history and Savannah's stories of slavery (2025)"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/2025/02/14/lifestyle/savannah-slavery-walking-tour-black-history-month/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-he-prayed-for-them/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 78.4
+    audioBytes: 1255174
+    transcript:
+      totalS: 78.4
+      lines:
+        - text: Look at the church on this block of Bryan Street, and at the lot it stands on.
+          atS: 0
+          durationS: 4.88
+        - text: The man who bought this lot was once whipped until his blood ran down to the ground.
+          atS: 5.83
+          durationS: 4.73
+        - text: His name was Andrew Bryan.
+          atS: 10.99
+          durationS: 1.9
+        - text: He was enslaved, and he was a preacher.
+          atS: 13.28
+          durationS: 2.75
+        - text: In seventeen eighty eight he was ordained pastor of a church of Black Baptists, meeting in a barn outside the city.
+          atS: 16.73
+          durationS: 7.4
+        - text: The patrols did not like it.
+          atS: 24.73
+          durationS: 1.86
+        - text: Members were whipped for not carrying passes.
+          atS: 27.1
+          durationS: 2.81
+        - text: Then, around seventeen ninety, about fifty of them were arrested.
+          atS: 30.6
+          durationS: 4.63
+        - text: Andrew and his brother Sampson were whipped worst of all.
+          atS: 35.84
+          durationS: 3.15
+        - text: A church history from eighteen eighty eight says Andrew told the men whipping him that he rejoiced not only to be whipped, but would freely suffer death for the cause of Jesus Christ.
+          atS: 39.59
+          durationS: 10.69
+        - text: Afterwards, the story goes, a man went to spy on him, and listened at his window.
+          atS: 51.1
+          durationS: 5.47
+        - text: He heard Bryan praying, earnestly, for the men who had whipped him.
+          atS: 57.17
+          durationS: 4.1
+        - text: In seventeen ninety three Bryan bought this lot for thirty pounds.
+          atS: 62.38
+          durationS: 3.99
+        - text: He built a high board fence around it, and kept his meeting house at the back, as quiet as he could make it.
+          atS: 66.62
+          durationS: 6
+        - text: Look at the church again.
+          atS: 73
+          durationS: 1.37
+        - text: He built it to be hard to see.
+          atS: 74.65
+          durationS: 1.74
+        - text: It has been seen ever since.
+          atS: 76.6
+          durationS: 1.79

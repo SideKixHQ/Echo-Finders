@@ -1,0 +1,163 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC (Capitol Hill East), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Congressional Cemetery, inside the gates, at the tall marble Arsenal Monument near the western wall.
+# Position: Overture place 'Arsenal Monument' (1801 E St SE) at 38.88246, -76.97875; the Library of Congress survey photo places it near the west wall (medium confidence).
+id: dc-farewell-sisters
+title: "Farewell, Sisters"
+summary: "In June 1864 an explosion at the Washington Arsenal killed twenty one young women making cartridges. Lincoln walked behind their coffins."
+place: "Arsenal Monument, Congressional Cemetery, 1801 E Street SE, Washington, D.C."
+at: { lat: 38.88246, lng: -76.97875 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 77
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+inside: true
+tags: [washington, capitol-hill, congressional-cemetery, civil-war, military, women, irish-american]
+teaser: "At the top of this column, a young woman looks down at twenty one names."
+script: |
+  Look up to the top of this tall marble column. A young woman stands there, hands clenched, looking down. Below her, on the shaft, are twenty one names.
+
+  They were girls and young women, many of them the daughters of Irish immigrants. Some were as young as thirteen. In the summer of eighteen sixty four, they worked at the Washington Arsenal, packing cartridges for the Union Army. Small hands were thought to be better at it.
+
+  The seventeenth of June was a blazing hot day. A window was open for air. Outside, the superintendent had left pans of fireworks drying in the sun.
+
+  Just before noon, they caught. A burning pellet flew in through the open window, onto the table full of cartridges. A barrel of gunpowder went up, and lifted the roof off the building.
+
+  Two days later, a funeral procession nearly a mile long came here. Behind the hearses rode President Lincoln. He did not speak. He came as a mourner.
+
+  As the coffins went into the ground, the crowd began to chant.
+
+  Their co-workers raised the money for this column, and it went up a year later.
+
+  Read the names.
+
+  Farewell, sisters. Farewell.
+detail: >-
+  Told without injuries, by design. The coroner's jury found the superintendent careless and negligent but recommended no criminal charges, so he is not named. The script uses twenty one, the number of names on the monument according to the National Archives and the Park Service.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "A young woman stands there, hands clenched, looking down."
+    source: 1
+    quote: "At the top of the shaft stands a young woman with clenched hands, looking downward"
+  - says: "Below her, on the shaft, are twenty one names."
+    source: 1
+    quote: "On the shaft itself are the names of the 21 victims:"
+  - says: "They were girls and young women, many of them the daughters of Irish immigrants. Some were as young as thirteen."
+    source: 1
+    quote: "Young women and teenage girls, some as young as 13 years old, were often selected for this kind of work, as it was believed their smaller fingers better enabled them to pack the ammunition once it was assembled. Many of these workers were children of Irish immigrants"
+  - says: "The seventeenth of June was a blazing hot day. A window was open for air. Outside, the superintendent had left pans of fireworks drying in the sun."
+    source: 1
+    quote: "Outside the building on the ground were three pans of fireworks, possibly for use in the upcoming Fourth of July celebrations, foolishly set out by the superintendant, Thomas B. Brown, to dry."
+  - says: "Just before noon, they caught. A burning pellet flew in through the open window, onto the table full of cartridges."
+    source: 1
+    quote: "through this open window a flaming pellet entered and traveled down the countertop, setting fire to the cartridges the women were handling."
+  - says: "Two days later, a funeral procession nearly a mile long came here. Behind the hearses rode President Lincoln."
+    source: 1
+    quote: "Lincoln’s personal carriage followed behind the hearses carrying the remains of the other victims."
+  - says: "He did not speak. He came as a mourner."
+    source: 1
+    quote: "Lincoln was not asked to and did not speak at either the arsenal service or at the graveside."
+  - says: "As the coffins went into the ground, the crowd began to chant."
+    source: 1
+    quote: "the crowd began to chant “Farewell, sisters, farewell.”"
+  - says: "A barrel of gunpowder went up, and lifted the roof off the building."
+    source: 1
+    quote: "At the end of the work table sat a barrel of gunpowder, which ignited when the pellet reached the end of its travel, lifting the roof off the building"
+  - says: "Their co-workers raised the money for this column, and it went up a year later."
+    source: 1
+    quote: "a meeting of the arsenal employees was held to discuss ways in which funds could be raised to erect a monument in memory of their fallen co-workers."
+  - says: "Their co-workers raised the money for this column, and it went up a year later."
+    source: 2
+    quote: "The monument was erected in 1865, on the first anniversary of the disaster."
+  - says: "In the summer of eighteen sixty four, they worked at the Washington Arsenal, packing cartridges for the Union Army."
+    source: 2
+    quote: "On June 17, 1864, while workers packed gunpowder cartridges, an incendiary ammunition exploded"
+sources:
+  - title: "Fireworks, Hoopskirts, and Death: Explosion at a Union Ammunition Plant Proved Fatal for 21 Women (Prologue, Spring 2012)"
+    publisher: "National Archives"
+    url: https://www.archives.gov/publications/prologue/2012/spring/arsenal
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Congressional Cemetery"
+    publisher: "National Park Service, National Historic Landmarks"
+    url: https://www.nps.gov/places/congressional-cemetery.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-farewell-sisters/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76.6
+    audioBytes: 1227171
+    transcript:
+      totalS: 76.6
+      lines:
+        - text: Look up to the top of this tall marble column.
+          atS: 0
+          durationS: 2.98
+        - text: A young woman stands there, hands clenched, looking down.
+          atS: 3.42
+          durationS: 4.24
+        - text: Below her, on the shaft, are twenty one names.
+          atS: 8.05
+          durationS: 3.71
+        - text: They were girls and young women, many of them the daughters of Irish immigrants.
+          atS: 12.14
+          durationS: 5.07
+        - text: Some were as young as thirteen.
+          atS: 17.66
+          durationS: 2.03
+        - text: In the summer of eighteen sixty four, they worked at the Washington Arsenal, packing cartridges for the Union Army.
+          atS: 20.29
+          durationS: 6.25
+        - text: Small hands were thought to be better at it.
+          atS: 26.98
+          durationS: 2.43
+        - text: The seventeenth of June was a blazing hot day.
+          atS: 30.1
+          durationS: 2.97
+        - text: A window was open for air.
+          atS: 33.52
+          durationS: 1.82
+        - text: Outside, the superintendent had left pans of fireworks drying in the sun.
+          atS: 35.94
+          durationS: 4.61
+        - text: Just before noon, they caught.
+          atS: 41.16
+          durationS: 1.88
+        - text: A burning pellet flew in through the open window, onto the table full of cartridges.
+          atS: 43.36
+          durationS: 4.64
+        - text: A barrel of gunpowder went up, and lifted the roof off the building.
+          atS: 48.33
+          durationS: 3.62
+        - text: Two days later, a funeral procession nearly a mile long came here.
+          atS: 52.65
+          durationS: 4.54
+        - text: Behind the hearses rode President Lincoln.
+          atS: 57.7
+          durationS: 2.47
+        - text: He did not speak.
+          atS: 60.69
+          durationS: 1.16
+        - text: He came as a mourner.
+          atS: 62.23
+          durationS: 1.59
+        - text: As the coffins went into the ground, the crowd began to chant.
+          atS: 64.42
+          durationS: 3.38
+        - text: Their co-workers raised the money for this column, and it went up a year later.
+          atS: 68.13
+          durationS: 4.23
+        - text: Read the names.
+          atS: 72.68
+          durationS: 1.02
+        - text: Farewell, sisters.
+          atS: 73.87
+          durationS: 1.35
+        - text: Farewell.
+          atS: 75.6
+          durationS: 1.02

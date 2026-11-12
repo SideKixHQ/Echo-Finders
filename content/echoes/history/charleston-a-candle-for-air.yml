@@ -1,0 +1,211 @@
+# Drafted by Claude Code (2026-11-11) for the second Charleston pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The Sullivan's Island shore at Breach Inlet, where the National Register nomination puts Battery Marshall, the Hunley's base, looking out past the inlet to the sea.
+# Position: A beach point on the Sullivan's Island side of Breach Inlet, checked against the land map and the Overture street data (medium confidence for the battery site, which is not marked on the map). About 170 m from the Gold Bug echo, which is a different subject.
+id: charleston-a-candle-for-air
+title: "A Candle for Air"
+summary: "In 1864 the Hunley went out from Breach Inlet and sank the Housatonic, the first warship ever sunk by a submarine. It never came back."
+place: "Breach Inlet, Sullivan's Island side, South Carolina"
+at: { lat: 32.77420, lng: -79.81500 }
+triggerRadiusKm: 0.06
+category: history
+format: short
+durationS: 99
+visibility: landmark-visible
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [charleston, sullivans-island, breach-inlet, civil-war, military, hunley, submarine, housatonic]
+teaser: "Under the water, the only light was a candle. When it guttered, the air was going."
+script: |
+  Look out past the end of the island, to the open sea beyond the inlet. In the winter of eighteen sixty four, a boat went out from this shore that was hardly a boat at all.
+
+  It was iron, forty feet long and four feet wide. It was built to go under the water.
+
+  The crew sat in a row inside it and turned a crank by hand to drive the propeller. When it dived, their light came from a candle. When the flame began to die, it warned them the air was running out.
+
+  It had already sunk twice, in practice. Thirteen men had drowned in it. One of them was the man it was named for, Horace Hunley.
+
+  After that, the general in command would only let it fight on the surface.
+
+  The submarine was based at Battery Marshall, here at Breach Inlet. For more than three months, four nights a week, it kept watch from this end of the island.
+
+  Then, on the night of the seventeenth of February, eighteen sixty four, Lieutenant George Dixon took it out. The moon was bright. In the channel, the Union warship Housatonic lay at anchor.
+
+  By the time her lookouts saw it, it was too close for her heavy guns to aim down at it. The torpedo struck. The Housatonic sank.
+
+  It was the first time in history that a submarine had sunk an enemy ship in war.
+
+  And the Hunley did not come back.
+
+  Nobody on this shore missed it for days. They saw the gap in the blockade, and thought the Housatonic had been moved.
+
+  Look out at the water again.
+
+  It was found in nineteen ninety five.
+detail: >-
+  The South Carolina Encyclopedia entry (Richard W. Hatcher III) gives the iron hull forty feet long and four feet wide, the hand crank, the two accidental sinkings with thirteen men lost, Hunley's death in the second, Beauregard's order to operate only on the surface, Dixon's command, the attack on the night of 17 February 1864, the first sinking of an enemy ship by a submersible, the loss of the Hunley and its discovery in 1995. The National Register nomination (1976) gives the candle and its warning of failing air, the base at Battery Marshall at Breach Inlet, the watch four nights a week for more than three months, the bright moonlight, the Housatonic at anchor, the heavy guns that could not be depressed, and the shore not missing the boat for several days. The two sources differ on how many men turned the crank (seven or eight) and how far out the Housatonic lay (two or four miles), so the script gives neither number. Two independent sources for every key fact.
+pronunciations:
+  - written: "Hunley"
+    say: "HUN-lee"
+  - written: "Housatonic"
+    say: "hoo-suh-TON-ik"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It was iron, forty feet long and four feet wide."
+    source: 1
+    quote: "The iron vessel was forty feet long, five feet tall, and four feet wide."
+  - says: "The crew sat in a row inside it and turned a crank by hand to drive the propeller."
+    source: 1
+    quote: "operated a hand crank connected to the propeller"
+  - says: "When it dived, their light came from a candle."
+    source: 2
+    quote: "light was provided by a"
+  - says: "When the flame began to die, it warned them the air was running out."
+    source: 2
+    quote: "candle whose dying flame would also warn of a dwindling air supply."
+  - says: "Thirteen men had drowned in it."
+    source: 1
+    quote: "the loss of thirteen crew members in the two accidental sinkings"
+  - says: "One of them was the man it was named for, Horace Hunley."
+    source: 1
+    quote: "it failed to surface and all eight crew members, including Hunley, drowned."
+  - says: "After that, the general in command would only let it fight on the surface."
+    source: 1
+    quote: "Beauregard ordered the vessel to operate only on the surface."
+  - says: "The submarine was based at Battery Marshall, here at Breach Inlet."
+    source: 2
+    quote: "The submarine was based at Battery Marshall, Breach Inlet, Sullivan's Island"
+  - says: "For more than three months, four nights a week, it kept watch from this end of the island."
+    source: 2
+    quote: "four nights a week"
+  - says: "Then, on the night of the seventeenth of February, eighteen sixty four, Lieutenant George Dixon took it out."
+    source: 1
+    quote: "On the night of February 17, 1864, the submarine attacked and sank the USS Housatonic."
+  - says: "Then, on the night of the seventeenth of February, eighteen sixty four, Lieutenant George Dixon took it out."
+    source: 1
+    quote: "Lieutenant George E. Dixon, who had trained on the submarine, assumed command"
+  - says: "The moon was bright."
+    source: 2
+    quote: "Her destiny came on a bright moonlight night February 17, 1864"
+  - says: "In the channel, the Union warship Housatonic lay at anchor."
+    source: 2
+    quote: "Housatonic was spotted anchored"
+  - says: "By the time her lookouts saw it, it was too close for her heavy guns to aim down at it."
+    source: 2
+    quote: "heavy guns could not be depressed sufficiently"
+  - says: "It was the first time in history that a submarine had sunk an enemy ship in war."
+    source: 1
+    quote: "This was the first successful sinking of an enemy ship in warfare by a submersible in the history of the world."
+  - says: "And the Hunley did not come back."
+    source: 1
+    quote: "However, the H. L. Hunley was also lost."
+  - says: "Nobody on this shore missed it for days."
+    source: 2
+    quote: "missed for several days."
+  - says: "They saw the gap in the blockade, and thought the Housatonic had been moved."
+    source: 2
+    quote: "assumed it had been moved."
+  - says: "It was found in nineteen ninety five."
+    source: 1
+    quote: "Discovered in 1995"
+  - says: "In the winter of eighteen sixty four, a boat went out from this shore that was hardly a boat at all."
+    source: 2
+    quote: "tained a watch from Battery Marshall at Breach Inlet, Sullivan's Island"
+  - says: "The Housatonic sank."
+    source: 2
+    quote: "the Housatonic sank rapidly in the"
+sources:
+  - title: "H.L. Hunley (Richard W. Hatcher III)"
+    publisher: "South Carolina Encyclopedia, University of South Carolina"
+    url: https://www.scencyclopedia.org/sce/entries/h-l-hunley/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "H. L. Hunley (submarine), National Register of Historic Places nomination (1976)"
+    publisher: "National Park Service, NPGallery"
+    url: https://npgallery.nps.gov/NRHP/GetAsset/NRHP/78003412_text
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-a-candle-for-air/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 99.2
+    audioBytes: 1588287
+    transcript:
+      totalS: 99.2
+      lines:
+        - text: Look out past the end of the island, to the open sea beyond the inlet.
+          atS: 0
+          durationS: 4.08
+        - text: In the winter of eighteen sixty four, a boat went out from this shore that was hardly a boat at all.
+          atS: 4.89
+          durationS: 5.64
+        - text: It was iron, forty feet long and four feet wide.
+          atS: 11.34
+          durationS: 3.48
+        - text: It was built to go under the water.
+          atS: 15.34
+          durationS: 2.09
+        - text: The crew sat in a row inside it and turned a crank by hand to drive the propeller.
+          atS: 17.94
+          durationS: 4.93
+        - text: When it dived, their light came from a candle.
+          atS: 23.31
+          durationS: 2.73
+        - text: When the flame began to die, it warned them the air was running out.
+          atS: 26.55
+          durationS: 4.05
+        - text: It had already sunk twice, in practice.
+          atS: 31.05
+          durationS: 2.4
+        - text: Thirteen men had drowned in it.
+          atS: 33.77
+          durationS: 1.85
+        - text: One of them was the man it was named for, Horace Hunley.
+          atS: 35.95
+          durationS: 3.39
+        - text: After that, the general in command would only let it fight on the surface.
+          atS: 39.66
+          durationS: 4.26
+        - text: The submarine was based at Battery Marshall, here at Breach Inlet.
+          atS: 44.36
+          durationS: 4.09
+        - text: For more than three months, four nights a week, it kept watch from this end of the island.
+          atS: 48.89
+          durationS: 5.36
+        - text: Then, on the night of the seventeenth of February, eighteen sixty four, Lieutenant George Dixon took it out.
+          atS: 54.58
+          durationS: 6.63
+        - text: The moon was bright.
+          atS: 61.81
+          durationS: 1.39
+        - text: In the channel, the Union warship Housatonic lay at anchor.
+          atS: 63.72
+          durationS: 4.93
+        - text: By the time her lookouts saw it, it was too close for her heavy guns to aim down at it.
+          atS: 69.35
+          durationS: 5.12
+        - text: The torpedo struck.
+          atS: 74.91
+          durationS: 1.39
+        - text: The Housatonic sank.
+          atS: 76.47
+          durationS: 1.73
+        - text: It was the first time in history that a submarine had sunk an enemy ship in war.
+          atS: 78.81
+          durationS: 4.86
+        - text: And the Hunley did not come back.
+          atS: 84
+          durationS: 2.28
+        - text: Nobody on this shore missed it for days.
+          atS: 86.97
+          durationS: 2.46
+        - text: They saw the gap in the blockade, and thought the Housatonic had been moved.
+          atS: 89.81
+          durationS: 4.46
+        - text: Look out at the water again.
+          atS: 94.71
+          durationS: 1.5
+        - text: It was found in nineteen ninety five.
+          atS: 96.72
+          durationS: 2.47

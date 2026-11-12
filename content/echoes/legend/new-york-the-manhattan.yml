@@ -1,0 +1,95 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Madison Square cluster (more NYC batch).
+# Listening spot: The southeast corner of Madison Avenue and East 26th Street, facing Madison Square Park, where the Manhattan Club stood in 1939.
+# Position: Madison Avenue at East 26th Street, southeast corner, from the street plan (medium confidence).
+id: new-york-the-manhattan
+title: "The Manhattan"
+summary: "The 1939 city guide said the Manhattan cocktail was said to have been born at the club on this corner. Nobody has proved it."
+place: "Madison Avenue at East 26th Street, opposite Madison Square Park, Manhattan"
+at: { lat: 40.74270, lng: -73.98580 }
+triggerRadiusKm: 0.04
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: look-below
+durationS: 33
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  An origin legend, not established fact. The Federal Writers' Project guide of 1939 says only that the Manhattan cocktail "is said to have originated" at the Manhattan Club, then on this corner. It gives no date or evidence. The script says out loud that the story is unproven.
+minAge: 18
+quality: 0.7
+tags: [new-york, madison-square, cocktails, manhattan-club, legend, drink]
+teaser: "A famous cocktail, a famous club, and a story nobody can prove."
+script: |
+  Look at the corner across the avenue from the park. In nineteen thirty nine, a gentlemen's club stood here, the Manhattan Club, once the headquarters of the city's Democratic leaders.
+
+  And the city guide passed on a story about it. The Manhattan cocktail, it said, is said to have originated there.
+
+  Said to have.
+
+  This is a legend. The guide gave no date, and no proof.
+
+  But somewhere, someone mixed the first one, and gave it the name of this island.
+
+  Raise a glass to the corner, if you like.
+
+  It might even be the right one.
+
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In nineteen thirty nine, a gentlemen's club stood here, the Manhattan Club, once the headquarters of the city's Democratic leaders."
+    source: 1
+    quote: "The MANHATTAN CLUB, at the southeast corner, was prominent in the late nineteenth century as headquarters of Democratic leaders."
+  - says: "The Manhattan cocktail, it said, is said to have originated there."
+    source: 1
+    quote: "The Manhattan cocktail is said to have originated there."
+  - says: "But somewhere, someone mixed the first one, and gave it the name of this island."
+    source: 1
+    quote: "It is said that the original Manhattan cocktail was mixed at the bar in the basement"
+  - says: "It might even be the right one."
+    source: 1
+    quote: "honor also claimed for the old Manhattan Club, Madison Avenue and Twenty-sixth Street, Manhattan."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Madison Square District"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-the-manhattan/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 32.9
+    audioBytes: 527925
+    transcript:
+      totalS: 32.9
+      lines:
+        - text: Look at the corner across the avenue from the park.
+          atS: 0
+          durationS: 2.63
+        - text: In nineteen thirty nine, a gentlemen's club stood here, the Manhattan Club, once the headquarters of the city's Democratic leaders.
+          atS: 3.02
+          durationS: 7.15
+        - text: And the city guide passed on a story about it.
+          atS: 10.45
+          durationS: 2.46
+        - text: The Manhattan cocktail, it said, is said to have originated there.
+          atS: 13.42
+          durationS: 3.68
+        - text: Said to have.
+          atS: 17.48
+          durationS: 0.99
+        - text: This is a legend.
+          atS: 18.68
+          durationS: 1.1
+        - text: The guide gave no date, and no proof.
+          atS: 20.17
+          durationS: 2.45
+        - text: But somewhere, someone mixed the first one, and gave it the name of this island.
+          atS: 23.06
+          durationS: 4.79
+        - text: Raise a glass to the corner, if you like.
+          atS: 28.36
+          durationS: 2.39
+        - text: It might even be the right one.
+          atS: 31.2
+          durationS: 1.73

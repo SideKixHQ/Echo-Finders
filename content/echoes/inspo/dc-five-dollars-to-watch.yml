@@ -1,0 +1,142 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Georgetown), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: The foot of the long, steep stone stairway from M Street NW up to Prospect Street, beside the old car barn, in Georgetown.
+# Position: Overture place 'The Exorcist Steps' (M St NW) at 38.90514, -77.06920 (high confidence).
+id: dc-five-dollars-to-watch
+title: "Five Dollars to Watch"
+summary: "These steep Georgetown steps were used for two deaths in The Exorcist. Students charged people to watch the stunt being filmed."
+place: "The Exorcist steps, M Street NW to Prospect Street NW, Georgetown, Washington, D.C."
+at: { lat: 38.90514, lng: -77.06920 }
+triggerRadiusKm: 0.04
+category: inspo
+inspo:
+  kind: creation
+  evidence: exact
+format: short
+durationS: 66
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.75
+tags: [washington, georgetown, exorcist, film, horror, william-peter-blatty]
+teaser: "Ninety stone steps, and two of the most famous falls in film."
+script: |
+  Look up these steps, climbing away from the traffic of M Street. Ninety of them. Runners use them now, and tourists.
+
+  In nineteen seventy three, they became a piece of horror film history. The Exorcist. The film used them for two deaths.
+
+  In the story, a character falls from a bedroom window above, and down these stairs. In real life, the house is about forty feet away. So the film crew built a false front onto it, to make the fall look right.
+
+  The man who wrote the story knew this neighbourhood. William Peter Blatty grew up poor, and won a scholarship to Georgetown University. As a student there, he heard about a case from nineteen forty nine, a fourteen year old boy in Maryland who was said to be possessed. He turned it into a novel.
+
+  When the stunt was filmed here, Georgetown students made the most of it. They charged people five dollars to watch.
+
+  Now look up to the top, where the falls began.
+
+  It is a long way down. Climb it slowly.
+pronunciations:
+  - written: Blatty
+    say: BLAT-ee
+detail: >-
+  Evidence is `exact`: CBS says these steps were used for two death scenes. The 1949 case is told as NPR reported it ("said to be possessed"), not as fact; the script says Blatty heard about it and adapted it, as NPR puts it. The scene is described without gore.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Ninety of them. Runners use them now, and tourists."
+    source: 1
+    quote: "Today, the site is popular with tourists and local runners (90 stairs, what a workout)."
+  - says: "The Exorcist. The film used them for two deaths."
+    source: 1
+    quote: "became a piece of horror history after being used for two death scenes in 1973's \"The Exorcist.\""
+  - says: "In the story, a character falls from a bedroom window above, and down these stairs. In real life, the house is about forty feet away. So the film crew built a false front onto it, to make the fall look right."
+    source: 1
+    quote: "In the film, a character falls out a bedroom window and down the stairs. In real life, they're about 40 feet away. A facade was built onto the house to make the death look more realistic."
+  - says: "William Peter Blatty grew up poor, and won a scholarship to Georgetown University."
+    source: 3
+    quote: "Blatty grew up in absolute poverty. His family was evicted 27 times. He got a scholarship to Georgetown."
+  - says: "As a student there, he heard about a case from nineteen forty nine, a fourteen year old boy in Maryland who was said to be possessed. He turned it into a novel."
+    source: 2
+    quote: "In 1949, a 14-year-old boy was said to be possessed by a demon at his Maryland home."
+  - says: "When the stunt was filmed here, Georgetown students made the most of it. They charged people five dollars to watch."
+    source: 1
+    quote: "Georgetown students charged people $5 to watch the movie stunt being filmed."
+  - says: "In nineteen seventy three, they became a piece of horror film history."
+    source: 1
+    quote: "These steps, located in Georgetown in Washington D.C., became a piece of horror history after being used for two death scenes in 1973's \"The Exorcist.\""
+sources:
+  - title: "Then and now: Horror movie locations"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/pictures/horror-movie-locations-then-and-now/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Couple unknowingly purchases 'The Exorcist' house"
+    publisher: "NPR, Weekend Edition Sunday"
+    url: https://www.npr.org/2021/10/03/1042802556/couple-unknowingly-purchases-the-exorcist-house
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Remembering William Peter Blatty, Author Of 'The Exorcist'"
+    publisher: "NPR"
+    url: https://www.npr.org/2017/12/26/573628826/remembering-william-peter-blatty-author-of-the-exorcist
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-five-dollars-to-watch/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.1
+    audioBytes: 1058315
+    transcript:
+      totalS: 66.1
+      lines:
+        - text: Look up these steps, climbing away from the traffic of M Street.
+          atS: 0
+          durationS: 3.38
+        - text: Ninety of them.
+          atS: 3.55
+          durationS: 0.97
+        - text: Runners use them now, and tourists.
+          atS: 4.81
+          durationS: 2.33
+        - text: In nineteen seventy three, they became a piece of horror film history.
+          atS: 7.84
+          durationS: 3.84
+        - text: The Exorcist.
+          atS: 11.92
+          durationS: 1.25
+        - text: The film used them for two deaths.
+          atS: 13.5
+          durationS: 2.35
+        - text: In the story, a character falls from a bedroom window above, and down these stairs.
+          atS: 16.45
+          durationS: 5.04
+        - text: In real life, the house is about forty feet away.
+          atS: 22.19
+          durationS: 3.36
+        - text: So the film crew built a false front onto it, to make the fall look right.
+          atS: 26.15
+          durationS: 4.65
+        - text: The man who wrote the story knew this neighbourhood.
+          atS: 31.61
+          durationS: 2.98
+        - text: William Peter Blatty grew up poor, and won a scholarship to Georgetown University.
+          atS: 35.2
+          durationS: 5.55
+        - text: As a student there, he heard about a case from nineteen forty nine, a fourteen year old boy in Maryland who was said to be possessed.
+          atS: 41.45
+          durationS: 8.24
+        - text: He turned it into a novel.
+          atS: 50.13
+          durationS: 1.5
+        - text: When the stunt was filmed here, Georgetown students made the most of it.
+          atS: 52.44
+          durationS: 3.97
+        - text: They charged people five dollars to watch.
+          atS: 56.92
+          durationS: 2.44
+        - text: Now look up to the top, where the falls began.
+          atS: 59.8
+          durationS: 2.86
+        - text: It is a long way down.
+          atS: 63.04
+          durationS: 1.44
+        - text: Climb it slowly.
+          atS: 64.72
+          durationS: 1.36

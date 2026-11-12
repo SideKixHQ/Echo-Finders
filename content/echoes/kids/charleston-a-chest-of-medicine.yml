@@ -1,0 +1,178 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: Waterfront Park, at the harbour end of Vendue Range, looking out over the water.
+# Position: East end of Vendue Range at Concord Street from the Overture street segments in the app's Charleston street file, moved east into Waterfront Park toward the water (medium confidence).
+id: charleston-a-chest-of-medicine
+title: "A Chest of Medicine"
+summary: "In 1718 Blackbeard trapped Charleston's harbour and took prisoners, a little boy among them. His price was a chest of medicine."
+place: "Waterfront Park at the end of Vendue Range, Charleston, South Carolina"
+at: { lat: 32.77885, lng: -79.92580 }
+triggerRadiusKm: 0.05
+category: kids
+format: short
+durationS: 73
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [charleston, charleston-core, waterfront, pirates, blackbeard, kids]
+relatedIds: [charleston-blackbeards-ransom]
+teaser: "Nine ships, one pirate, and a very strange demand."
+script: |
+  Look out at the harbour, toward the sea. Now imagine nine ships out there, near the sandbar, and every one of them captured by the same pirate.
+
+  His name was Blackbeard. In seventeen eighteen, he sat outside this harbour, and no ship dared to sail out. Then his men rowed a boat right up to the town, with a message. It was a very strange message.
+
+  Blackbeard did not ask the town for gold. He asked for medicine. A whole chest of it. And if the town said no, he said, the prisoners would lose their heads.
+
+  One of those prisoners was a little boy named William Wragg, on a ship bound for England with his father. While the grown ups in town argued, the pirates' boat got stuck on the way back, and the medicine was late. Blackbeard grew impatient, and the prisoners were terrified.
+
+  At last, the chest arrived. Blackbeard took everything the prisoners had, even most of their clothes, and sent them ashore almost naked. But he let them go.
+
+  Look at the harbour again. Out there, a little boy and his father got to come home.
+
+  Even pirates get sick.
+detail: >-
+  Ravenel (1906) gives the demand as medicines on pain of the heads of Samuel Wragg, his little son and other prisoners; Johnson's General History (1724) names the demand as a chest of medicines, valued at between 300 and 400 pounds, and says the prisoners and ships were released; Ravenel says they were sent on shore almost naked.
+pronunciations:
+  - written: "Wragg"
+    say: "RAG"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Now imagine nine ships out there, near the sandbar, and every one of them captured by the same pirate."
+    source: 1
+    quote: "their ship was one of nine vessels which had been taken near the bar within a few days."
+  - says: "His name was Blackbeard."
+    source: 1
+    quote: "a notorious pirate, one Thatch, or Blackbeard."
+  - says: "In seventeen eighteen, he sat outside this harbour, and no ship dared to sail out."
+    source: 1
+    quote: "when, in 1718,"
+  - says: "In seventeen eighteen, he sat outside this harbour, and no ship dared to sail out."
+    source: 2
+    quote: "ready for the Sea, but none dar’d to venture out"
+  - says: "Then his men rowed a boat right up to the town, with a message."
+    source: 1
+    quote: "a long-boat pulled audaciously up to the Charles Town"
+  - says: "It was a very strange message."
+    source: 1
+    quote: "The message was peculiar."
+  - says: "He asked for medicine."
+    source: 1
+    quote: "Blackbeard informed Governor Johnson that his crew was in want of medicines"
+  - says: "A whole chest of it."
+    source: 2
+    quote: "if they did not fend immediately the Cheft of Medi"
+  - says: "And if the town said no, he said, the prisoners would lose their heads."
+    source: 1
+    quote: "the heads of Mr. Samuel Wragg, of his little son, and of some other citizens should be pre-"
+  - says: "One of those prisoners was a little boy named William Wragg, on a ship bound for England with his father."
+    source: 1
+    quote: "had sailed for England recently"
+  - says: "One of those prisoners was a little boy named William Wragg, on a ship bound for England with his father."
+    source: 1
+    quote: "the heads of Mr. Samuel Wragg, of his little son"
+  - says: "One of those prisoners was a little boy named William Wragg, on a ship bound for England with his father."
+    source: 1
+    quote: "William Wragg, the same who as a little boy had so narrowly escaped the clutches of the pirate Blackbeard"
+  - says: "While the grown ups in town argued, the pirates' boat got stuck on the way back, and the medicine was late."
+    source: 1
+    quote: "The boat had got aground and so been delayed."
+  - says: "Blackbeard grew impatient, and the prisoners were terrified."
+    source: 1
+    quote: "Blackbeard had been impatient"
+  - says: "Blackbeard grew impatient, and the prisoners were terrified."
+    source: 1
+    quote: "had been in great terror"
+  - says: "At last, the chest arrived."
+    source: 1
+    quote: "The drugs appearing"
+  - says: "Blackbeard took everything the prisoners had, even most of their clothes, and sent them ashore almost naked."
+    source: 1
+    quote: "he plundered them of everything which they possessed"
+  - says: "Blackbeard took everything the prisoners had, even most of their clothes, and sent them ashore almost naked."
+    source: 1
+    quote: "sent them on shore almost naked."
+  - says: "But he let them go."
+    source: 2
+    quote: "let go the Ships andthe Prifoners"
+  - says: "Out there, a little boy and his father got to come home."
+    source: 1
+    quote: "William Wragg, the same who as a little boy had so narrowly escaped the clutches of the pirate Blackbeard"
+sources:
+  - title: "Charleston, the place and the people (Harriott Horry Ravenel, 1906)"
+    publisher: "Library of Congress"
+    url: https://tile.loc.gov/storage-services/public/gdcmassbookdig/charlestonplacep01rave/charlestonplacep01rave.text.txt
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "A General History of the Robberies and Murders of the most notorious Pyrates (Captain Charles Johnson, 1724)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/generalhistoryofrobberies00johnson
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/charleston-a-chest-of-medicine/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 72.7
+    audioBytes: 1164059
+    transcript:
+      totalS: 72.7
+      lines:
+        - text: Look out at the harbour, toward the sea.
+          atS: 0
+          durationS: 2.51
+        - text: Now imagine nine ships out there, near the sandbar, and every one of them captured by the same pirate.
+          atS: 2.95
+          durationS: 6.88
+        - text: His name was Blackbeard.
+          atS: 10.11
+          durationS: 1.72
+        - text: In seventeen eighteen, he sat outside this harbour, and no ship dared to sail out.
+          atS: 12.21
+          durationS: 5.39
+        - text: Then his men rowed a boat right up to the town, with a message.
+          atS: 17.98
+          durationS: 3.86
+        - text: It was a very strange message.
+          atS: 22.05
+          durationS: 2.18
+        - text: Blackbeard did not ask the town for gold.
+          atS: 25.04
+          durationS: 2.41
+        - text: He asked for medicine.
+          atS: 27.78
+          durationS: 1.53
+        - text: A whole chest of it.
+          atS: 29.56
+          durationS: 1.45
+        - text: And if the town said no, he said, the prisoners would lose their heads.
+          atS: 31.34
+          durationS: 4.68
+        - text: One of those prisoners was a little boy named William Wragg, on a ship bound for England with his father.
+          atS: 36.34
+          durationS: 6.21
+        - text: While the grown ups in town argued, the pirates' boat got stuck on the way back, and the medicine was late.
+          atS: 42.88
+          durationS: 6.2
+        - text: Blackbeard grew impatient, and the prisoners were terrified.
+          atS: 49.77
+          durationS: 3.65
+        - text: At last, the chest arrived.
+          atS: 54.11
+          durationS: 2.08
+        - text: Blackbeard took everything the prisoners had, even most of their clothes, and sent them ashore almost naked.
+          atS: 56.58
+          durationS: 6.48
+        - text: But he let them go.
+          atS: 63.56
+          durationS: 1.24
+        - text: Look at the harbour again.
+          atS: 65.25
+          durationS: 1.28
+        - text: Out there, a little boy and his father got to come home.
+          atS: 66.85
+          durationS: 3.44
+        - text: Even pirates get sick.
+          atS: 70.61
+          durationS: 2.07

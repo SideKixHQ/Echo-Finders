@@ -1,0 +1,151 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core (Pennsylvania Avenue), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Public sidewalk at the northwest corner of Sixth Street and Pennsylvania Avenue NW, outside 555 Pennsylvania Avenue.
+# Position: Overture address '555 Pennsylvania Avenue Northwest' at 38.89313, -77.01936, at the northwest corner of Sixth and Pennsylvania (high confidence for the corner; the 1830s building is long gone).
+id: dc-the-epicurean-eating-house
+title: "The Epicurean Eating House"
+summary: "In the 1830s a free Black cook, Beverly Snow, ran one of Washington's first true restaurants in a basement on this corner. A mob wrecked it."
+place: "Northwest corner of Sixth Street and Pennsylvania Avenue NW, Washington, D.C."
+at: { lat: 38.89305, lng: -77.01936 }
+triggerRadiusKm: 0.04
+category: food-drink
+format: short
+durationS: 86
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [washington, pennsylvania-avenue, beverly-snow, restaurants, snow-riot, 1835, african-american-history]
+teaser: "Down a flight of steps on this corner, Washington learned what a restaurant was."
+script: |
+  Stand on this corner of Pennsylvania Avenue and Sixth Street. In the early eighteen thirties, a new three story brick building stood here. Out front, a stairway went down from the sidewalk to a basement door.
+
+  Behind that door was a new kind of dining room for Washington. Snow's Epicurean Eating House.
+
+  Its owner was Beverly Snow, a free Black cook from Lynchburg, Virginia. A basement was about the last place anyone expected respectable people to eat. He filled it anyway.
+
+  Historians count it as one of the first true restaurants in the city, maybe the first. Customers sat at their own tables, ate when they liked, and chose from a menu. And Snow advertised it in the newspapers himself, with jokes. His champagne, he wrote, though it may offend the purse, can never affect the head.
+
+  No Black man in Washington had ever spoken to the white public like that.
+
+  In eighteen thirty five, a white mob came for him. They wrecked his eating house, on the pretext that he had insulted a white woman. Then the rioters went on to burn and loot the city's free Black neighbourhood, its schools and its churches.
+
+  Look down at the pavement where the basement steps were.
+
+  This was where it started.
+pronunciations:
+  - written: Epicurean
+    say: ep-ih-kyoo-REE-un
+detail: >-
+  The basement, the corner and the advertisement are from Jefferson Morley's book Snow-Storm in August, as excerpted by NPR; "one of the first true restaurants" and "no black man... had ever dared to speak so freely and publicly" are Morley's judgements, attributed in the script to historians. The riot is from the Park Service's article on abolitionism in the capital. Snow's later life is not told here because it is not in the fetched sources.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In the early eighteen thirties, a new three story brick building stood here. Out front, a stairway went down from the sidewalk to a basement door."
+    source: 1
+    quote: "a three- story brick building that Withers had just constructed on the northwest corner of Sixth and Pennsylvania"
+  - says: "Out front, a stairway went down from the sidewalk to a basement door."
+    source: 1
+    quote: "On the sidewalk in front there was an outdoor stairwell surrounded by a cast-iron guardrail. The stairs descended to a basement door"
+  - says: "A basement was about the last place anyone expected respectable people to eat."
+    source: 1
+    quote: "A basement was about the last place you would expect to find respectable people eating dinner."
+  - says: "Historians count it as one of the first true restaurants in the city, maybe the first. Customers sat at their own tables, ate when they liked, and chose from a menu."
+    source: 1
+    quote: "He was among the first cooks to seat groups of patrons at their own tables; to serve meals at unspecified times; to provide a menu from which customers made their own choices"
+  - says: "His champagne, he wrote, though it may offend the purse, can never affect the head."
+    source: 1
+    quote: "his Champaigne, though it may offend the purse can never affect the head"
+  - says: "No Black man in Washington had ever spoken to the white public like that."
+    source: 1
+    quote: "It is safe to say that no black man, free or enslaved, had ever dared to speak so freely and publicly to the white people of Washington City."
+  - says: "They wrecked his eating house, on the pretext that he had insulted a white woman. Then the rioters went on to burn and loot the city's free Black neighbourhood, its schools and its churches."
+    source: 2
+    quote: "The pretext for trampling Snow’s civil rights was that he had insulted a white female patron. Rioters, primarily white mechanics and laborers, then moved on to burn and loot the nearby free African American community and especially the schools and churches"
+  - says: "Its owner was Beverly Snow, a free Black cook from Lynchburg, Virginia."
+    source: 2
+    quote: "owned by a free man of color"
+  - says: "Behind that door was a new kind of dining room for Washington."
+    source: 1
+    quote: "The Epicurean Eating House constituted one of the first true restaurants in Washington City, if not the very first."
+  - says: "Snow's Epicurean Eating House."
+    source: 1
+    quote: "Beverly announced a grander name for his new establishment: SNOW'S EPICUREAN EATING HOUSE"
+  - says: "And Snow advertised it in the newspapers himself, with jokes."
+    source: 1
+    quote: "In a round of advertisements placed in the Intelligencer, the Globe, and the Telegraph in October 1832, Beverly announced a grander name for his new establishment"
+  - says: "In eighteen thirty five, a white mob came for him."
+    source: 2
+    quote: "1835 - The Snow Riots in Washington, DC occurred when White mobs attacked Beverly Snow’s Epicurean Eating House at 6th and Pennsylvania Avenue , owned by a free man of color, and went on to destroy his property and terrorize him."
+sources:
+  - title: "Excerpt: Snow-Storm In August (Jefferson Morley, Doubleday 2012)"
+    publisher: "NPR Books"
+    url: https://www.npr.org/2012/07/03/156191748/excerpt-snow-storm-in-august
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Abolitionism and Freedom in the National Capital Area"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/abolitionism-and-freedom-in-the-national-capital-area.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-epicurean-eating-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85.9
+    audioBytes: 1375128
+    transcript:
+      totalS: 85.9
+      lines:
+        - text: Stand on this corner of Pennsylvania Avenue and Sixth Street.
+          atS: 0
+          durationS: 3.83
+        - text: In the early eighteen thirties, a new three story brick building stood here.
+          atS: 4.27
+          durationS: 4.59
+        - text: Out front, a stairway went down from the sidewalk to a basement door.
+          atS: 9.37
+          durationS: 4.25
+        - text: Behind that door was a new kind of dining room for Washington.
+          atS: 14.31
+          durationS: 3.44
+        - text: Snow's Epicurean Eating House.
+          atS: 18.13
+          durationS: 3.73
+        - text: Its owner was Beverly Snow, a free Black cook from Lynchburg, Virginia.
+          atS: 22.46
+          durationS: 4.9
+        - text: A basement was about the last place anyone expected respectable people to eat.
+          atS: 27.88
+          durationS: 4.77
+        - text: He filled it anyway.
+          atS: 33.16
+          durationS: 1.24
+        - text: Historians count it as one of the first true restaurants in the city, maybe the first.
+          atS: 34.84
+          durationS: 5.42
+        - text: Customers sat at their own tables, ate when they liked, and chose from a menu.
+          atS: 40.7
+          durationS: 5.24
+        - text: And Snow advertised it in the newspapers himself, with jokes.
+          atS: 46.38
+          durationS: 4.3
+        - text: His champagne, he wrote, though it may offend the purse, can never affect the head.
+          atS: 51.28
+          durationS: 5.04
+        - text: No Black man in Washington had ever spoken to the white public like that.
+          atS: 57.27
+          durationS: 4.54
+        - text: In eighteen thirty five, a white mob came for him.
+          atS: 62.25
+          durationS: 3.47
+        - text: They wrecked his eating house, on the pretext that he had insulted a white woman.
+          atS: 66.23
+          durationS: 5.03
+        - text: Then the rioters went on to burn and loot the city's free Black neighbourhood, its schools and its churches.
+          atS: 72.08
+          durationS: 7
+        - text: Look down at the pavement where the basement steps were.
+          atS: 80.03
+          durationS: 3.11
+        - text: This was where it started.
+          atS: 84.09
+          durationS: 1.78

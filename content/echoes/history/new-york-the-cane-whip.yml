@@ -1,0 +1,148 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Kips Bay and Murray Hill (more NYC batch).
+# Listening spot: Second Avenue at East 35th Street, Kips Bay, the site of Jacobus Kip's farm, a few blocks inland from the cove where the British landed in 1776.
+# Position: Second Avenue at East 35th Street, from the street plan (medium confidence). The bay itself has long been filled in.
+id: new-york-the-cane-whip
+title: "The Cane Whip"
+summary: "In September 1776 British warships anchored in Kip's Bay and the American army ran. Washington, by one account, beat his own officers."
+place: "Second Avenue at East 35th Street, Kips Bay, Manhattan"
+at: { lat: 40.74570, lng: -73.97570 }
+triggerRadiusKm: 0.08
+category: history
+format: short
+durationS: 71
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.85
+tags: [new-york, kips-bay, revolution, military, washington, 1776, retreat]
+teaser: "The calm general of the statues. Not on this day."
+script: |
+  Look east, down the street toward the river. Before landfill and highways, the shore curved in near here to make a cove. Kip's Bay, named for the Dutch farmer whose land ran down to it.
+
+  On the fifteenth of September, seventeen seventy six, that cove filled with British warships.
+
+  The American army had just been beaten on Long Island. The men were worn out and frightened. And when the warships opened fire, they broke. They fled north.
+
+  George Washington went into the middle of it, trying to stop them.
+
+  What happened next was told very differently from the calm, marble Washington of the statues. One biographer, Rupert Hughes, put it this way. He used the cane whip he carried, and he beat his people over the shoulders. He flogged not only private soldiers but officers as well. He lashed colonels across the shoulder blades. He flailed a brigadier general.
+
+  But the next day, at Harlem Heights, Washington rallied them, and they beat the British back.
+
+  Look east again.
+
+  The marble general you know was made after. This is where he lost his temper.
+
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Kip's Bay, named for the Dutch farmer whose land ran down to it."
+    source: 1
+    quote: "The area near Second Avenue and East Thirty-fifth Street was the site of Jacobus Kip's farm"
+  - says: "Kip's Bay, named for the Dutch farmer whose land ran down to it."
+    source: 1
+    quote: "It extended eastward to a bay subsequently named for Kip."
+  - says: "On the fifteenth of September, seventeen seventy six, that cove filled with British warships."
+    source: 1
+    quote: "It was in Kip's Bay that British men-of-war anchored September 15, 1776, to take over Manhattan Island."
+  - says: "The American army had just been beaten on Long Island."
+    source: 1
+    quote: "The Revolutionary army, wearied and disheartened after the disastrous defeat on Long Island, broke before broadsides from these vessels and fled toward Harlem Heights."
+  - says: "And when the warships opened fire, they broke."
+    source: 1
+    quote: "broke before broadsides from these vessels and fled toward Harlem Heights."
+  - says: "George Washington went into the middle of it, trying to stop them."
+    source: 1
+    quote: "George Washington tried to stem the rout."
+  - says: "He used the cane whip he carried, and he beat his people over the shoulders."
+    source: 1
+    quote: "he used the cane whip he carried, and he beat his people over the shoulders in an insane hatred of their shameless cowardice."
+  - says: "He flogged not only private soldiers but officers as well."
+    source: 1
+    quote: "He flogged not only private soldiers but officers as well."
+  - says: "He lashed colonels across the shoulder blades."
+    source: 1
+    quote: "He lashed colonels across the shoulder blades"
+  - says: "He flailed a brigadier general."
+    source: 1
+    quote: "He flailed a brigadier general."
+  - says: "But the next day, at Harlem Heights, Washington rallied them, and they beat the British back."
+    source: 1
+    quote: "The next day Washington succeeded in rallying his troops and defeated the enemy at Harlem Heights."
+  - says: "What happened next was told very differently from the calm, marble Washington of the statues."
+    source: 1
+    quote: "George Washington tried to stem the rout. \"It was said that he drew his sword and threatened to run the cowards through,\" wrote Rupert Hughes in his biography of Washington"
+  - says: "One biographer, Rupert Hughes, put it this way."
+    source: 1
+    quote: "wrote Rupert Hughes in his biography of Washington"
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Kip's Bay and Turtle Bay (quoting Rupert Hughes, George Washington)"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-cane-whip/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.1
+    audioBytes: 1138563
+    transcript:
+      totalS: 71.1
+      lines:
+        - text: Look east, down the street toward the river.
+          atS: 0
+          durationS: 2.39
+        - text: Before landfill and highways, the shore curved in near here to make a cove.
+          atS: 2.6
+          durationS: 4.29
+        - text: Kip's Bay, named for the Dutch farmer whose land ran down to it.
+          atS: 7.34
+          durationS: 4.14
+        - text: On the fifteenth of September, seventeen seventy six, that cove filled with British warships.
+          atS: 11.99
+          durationS: 5.87
+        - text: The American army had just been beaten on Long Island.
+          atS: 18.38
+          durationS: 2.87
+        - text: The men were worn out and frightened.
+          atS: 21.46
+          durationS: 2.31
+        - text: And when the warships opened fire, they broke.
+          atS: 24.09
+          durationS: 3.17
+        - text: They fled north.
+          atS: 27.43
+          durationS: 1.14
+        - text: George Washington went into the middle of it, trying to stop them.
+          atS: 28.96
+          durationS: 3.46
+        - text: What happened next was told very differently from the calm, marble Washington of the statues.
+          atS: 33.37
+          durationS: 5.63
+        - text: One biographer, Rupert Hughes, put it this way.
+          atS: 39.81
+          durationS: 3.17
+        - text: He used the cane whip he carried, and he beat his people over the shoulders.
+          atS: 43.42
+          durationS: 4.22
+        - text: He flogged not only private soldiers but officers as well.
+          atS: 48.02
+          durationS: 3.63
+        - text: He lashed colonels across the shoulder blades.
+          atS: 52.04
+          durationS: 2.52
+        - text: He flailed a brigadier general.
+          atS: 54.88
+          durationS: 2.05
+        - text: But the next day, at Harlem Heights, Washington rallied them, and they beat the British back.
+          atS: 57.38
+          durationS: 6.16
+        - text: Look east again.
+          atS: 64.24
+          durationS: 1.1
+        - text: The marble general you know was made after.
+          atS: 65.67
+          durationS: 2.72
+        - text: This is where he lost his temper.
+          atS: 69.08
+          durationS: 2.02

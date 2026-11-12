@@ -1,0 +1,203 @@
+# Drafted by Claude Code (2026-11-10) for the Charleston and Savannah batch, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on King Street between Tradd Street and Broad Street. Joe Cole's stand is placed on lower King Street by the source; its exact address is not known.
+# Position: King Street between Tradd and Broad from the Overture street segments in the app's Charleston street file, kept north of the Tradd and Orange corner to stay clear of an existing echo (medium confidence; the stand's exact location is unknown).
+id: charleston-old-joe-cole
+title: "Old Joe Cole, Good Old Soul"
+summary: "In 1910 a writer set down Charleston's street cries. The star was a fish seller on lower King Street who made sure he was written down."
+place: "Lower King Street, between Tradd and Broad, Charleston, South Carolina"
+at: { lat: 32.77520, lng: -79.93262 }
+triggerRadiusKm: 0.04
+category: food-drink
+format: short
+durationS: 89
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [charleston, charleston-core, south-of-broad, food, street-cries, gullah-geechee, king-street]
+teaser: "Porgy in the summertime, and whiting in the spring."
+script: |
+  Stand still on King Street a moment, and listen. In nineteen ten, a Charleston writer named Harriette Leiding set out to write down the songs this city's streets were full of. The cries of the people selling fish and shrimp and vegetables, from door to door.
+
+  One voice, she wrote, outshone all the others.
+
+  His name was Joe Cole. He did a thriving business on lower King Street, under a sign that read Joe Cole and Wife. He walked with a limp, and he used his walking stick like a conductor's baton. And he sang out his fish.
+
+  Old Joe Cole, good old soul. Porgy in the summertime, and whiting in the spring. Don't be late, I'm waiting at the gate. Don't be mad, here's your shad.
+
+  When she asked him to sing it into her megaphone, so she could set it down properly, a crowd gathered round. Joe sent them all away. She had asked him to sing for her book, he told them, and nobody else. And sure enough, she wrote him down.
+
+  Up the street came Little John, singing his peas for Hoppin' John, and his cabbage, and his yellow turnips. Even the chimney sweeps sang, from the tops of the chimneys. Thirty years later, a state guide was still hearing the shrimp man in the morning. Ro ro swimp, come and get your ro ro swimp.
+
+  Listen to King Street now.
+
+  In a book at the Library of Congress, Joe Cole is still waiting at the gate.
+detail: >-
+  Leiding's 1910 book renders the vendors' speech in dialect spelling and uses the demeaning language of its time, including slurs in the passage about Joe Cole; the script quotes only his cry and paraphrases the rest. The surviving copy, digitised by the Internet Archive, is the Library of Congress copy. The 1941 state guide records the shrimp cry "Ro-ro swimp".
+pronunciations:
+  - written: "Leiding"
+    say: "LIE-ding"
+  - written: "porgy"
+    say: "POR-gee"
+  - written: "swimp"
+    say: "SWIMP"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In nineteen ten, a Charleston writer named Harriette Leiding set out to write down the songs this city's streets were full of."
+    source: 1
+    quote: "Harriette Kershaw Leiding."
+  - says: "In nineteen ten, a Charleston writer named Harriette Leiding set out to write down the songs this city's streets were full of."
+    source: 1
+    quote: "1910"
+  - says: "In nineteen ten, a Charleston writer named Harriette Leiding set out to write down the songs this city's streets were full of."
+    source: 1
+    quote: "the various cries of the hucksters as they ply their street trade"
+  - says: "The cries of the people selling fish and shrimp and vegetables, from door to door."
+    source: 1
+    quote: "the various cries of the hucksters as they ply their street trade"
+  - says: "One voice, she wrote, outshone all the others."
+    source: 1
+    quote: "is the bright, particular, tho fast-waning, star of our galaxy of street artists."
+  - says: "His name was Joe Cole."
+    source: 1
+    quote: "\"Old Joe Cole, good old soul,\" who does a thriving business in lower King Street"
+  - says: "He did a thriving business on lower King Street, under a sign that read Joe Cole and Wife."
+    source: 1
+    quote: "who does a thriving business in lower King Street under the quaint sign of \"Joe Cole 8c Wife\""
+  - says: "He walked with a limp, and he used his walking stick like a conductor's baton."
+    source: 1
+    quote: "and uses his walking stick as a baton"
+  - says: "Old Joe Cole, good old soul."
+    source: 1
+    quote: "\"Old Joe Cole— Good Old Soul"
+  - says: "Porgy in the summertime, and whiting in the spring."
+    source: 1
+    quote: "Porgy in the Summer-time An e Whiting in the Spring"
+  - says: "Don't be late, I'm waiting at the gate."
+    source: 1
+    quote: "Don't be late I'm watin at de gate"
+  - says: "Don't be mad, here's your shad."
+    source: 1
+    quote: "Don't be mad — Heres your shad"
+  - says: "When she asked him to sing it into her megaphone, so she could set it down properly, a crowd gathered round."
+    source: 1
+    quote: "When asked to sing so that his remarkable cry might be cor- rectly reproduced"
+  - says: "When she asked him to sing it into her megaphone, so she could set it down properly, a crowd gathered round."
+    source: 1
+    quote: "Joe gravely informed the awe-struck crowd sur- rounding him"
+  - says: "Joe sent them all away."
+    source: 1
+    quote: "Joe gravely informed the awe-struck crowd sur- rounding him"
+  - says: "She had asked him to sing for her book, he told them, and nobody else."
+    source: 1
+    quote: "cos little Miss done ax me to sing in de megafone so as she can write Me down in de white folks' book"
+  - says: "She had asked him to sing for her book, he told them, and nobody else."
+    source: 1
+    quote: "do dat ting, jest Me"
+  - says: "And sure enough, she wrote him down."
+    source: 1
+    quote: "And sure enough I did."
+  - says: "Up the street came Little John, singing his peas for Hoppin' John, and his cabbage, and his yellow turnips."
+    source: 1
+    quote: "I got Hoppen John Peas Mam ! I got cabbage— I got yaller turnips Mam"
+  - says: "Even the chimney sweeps sang, from the tops of the chimneys."
+    source: 1
+    quote: "In Charleston, even the chimney-sweeps are musical, and as their tiny faces appear at the top of the chimney they are sweeping"
+  - says: "Thirty years later, a state guide was still hearing the shrimp man in the morning."
+    source: 2
+    quote: "In the early morning Charlestonians are awakened by the rhythmic, melodious calling of Negro vendors hawking their wares."
+  - says: "Ro ro swimp, come and get your ro ro swimp."
+    source: 2
+    quote: "Come and git yo ro-ro swimp."
+  - says: "In a book at the Library of Congress, Joe Cole is still waiting at the gate."
+    source: 1
+    quote: "LIBRARY OF CONGRESS"
+  - says: "In a book at the Library of Congress, Joe Cole is still waiting at the gate."
+    source: 1
+    quote: "Don't be late I'm watin at de gate"
+sources:
+  - title: "Street Cries of an Old Southern City (Harriette Kershaw Leiding, 1910)"
+    publisher: "Internet Archive (Library of Congress copy)"
+    url: https://archive.org/details/streetcriesofold00leid
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "South Carolina: A Guide to the Palmetto State (Federal Writers' Project, 1941)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/in.ernet.dli.2015.180130
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-old-joe-cole/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 89.2
+    audioBytes: 1428627
+    transcript:
+      totalS: 89.2
+      lines:
+        - text: Stand still on King Street a moment, and listen.
+          atS: 0
+          durationS: 3.26
+        - text: In nineteen ten, a Charleston writer named Harriette Leiding set out to write down the songs this city's streets were full of.
+          atS: 3.96
+          durationS: 7.64
+        - text: The cries of the people selling fish and shrimp and vegetables, from door to door.
+          atS: 11.98
+          durationS: 5.11
+        - text: One voice, she wrote, outshone all the others.
+          atS: 17.6
+          durationS: 3.26
+        - text: His name was Joe Cole.
+          atS: 21.14
+          durationS: 1.57
+        - text: He did a thriving business on lower King Street, under a sign that read Joe Cole and Wife.
+          atS: 23.03
+          durationS: 5.9
+        - text: He walked with a limp, and he used his walking stick like a conductor's baton.
+          atS: 29.37
+          durationS: 4.56
+        - text: And he sang out his fish.
+          atS: 34.21
+          durationS: 1.8
+        - text: Old Joe Cole, good old soul.
+          atS: 36.34
+          durationS: 2.24
+        - text: Porgy in the summertime, and whiting in the spring.
+          atS: 38.91
+          durationS: 3.04
+        - text: Don't be late, I'm waiting at the gate.
+          atS: 42.27
+          durationS: 2.15
+        - text: Don't be mad, here's your shad.
+          atS: 44.66
+          durationS: 1.88
+        - text: When she asked him to sing it into her megaphone, so she could set it down properly, a crowd gathered round.
+          atS: 46.98
+          durationS: 5.24
+        - text: Joe sent them all away.
+          atS: 52.83
+          durationS: 1.37
+        - text: She had asked him to sing for her book, he told them, and nobody else.
+          atS: 54.64
+          durationS: 3.63
+        - text: And sure enough, she wrote him down.
+          atS: 58.45
+          durationS: 2.2
+        - text: Up the street came Little John, singing his peas for Hoppin' John, and his cabbage, and his yellow turnips.
+          atS: 61.25
+          durationS: 6.24
+        - text: Even the chimney sweeps sang, from the tops of the chimneys.
+          atS: 68.09
+          durationS: 3.47
+        - text: Thirty years later, a state guide was still hearing the shrimp man in the morning.
+          atS: 72.17
+          durationS: 4.71
+        - text: Ro ro swimp, come and get your ro ro swimp.
+          atS: 78
+          durationS: 3.24
+        - text: Listen to King Street now.
+          atS: 81.62
+          durationS: 1.65
+        - text: In a book at the Library of Congress, Joe Cole is still waiting at the gate.
+          atS: 84.57
+          durationS: 4.64

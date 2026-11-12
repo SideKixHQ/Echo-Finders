@@ -1,0 +1,190 @@
+# Drafted by Claude Code (2026-11-10) for the Philadelphia core, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk at Pat's King of Steaks, where 9th Street, Wharton Street and Passyunk Avenue meet, by the Italian Market.
+# Position: Overture place 'Pat's King of Steaks' (1237 Passyunk Ave) at 39.93312, -75.15926 (high confidence).
+id: philadelphia-harrys-sandwich
+title: "Harry's Sandwich"
+summary: "Two brothers, tired of their own hot dogs, grilled some beef. A cab driver smelled it, and Harry sold him his lunch."
+place: "Pat's King of Steaks, 1237 East Passyunk Avenue, at 9th and Wharton Streets, South Philadelphia, Pennsylvania"
+at: { lat: 39.93312, lng: -75.15926 }
+triggerRadiusKm: 0.03
+category: food-drink
+format: short
+durationS: 81
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, philadelphia-core, south-philadelphia, italian-market, cheesesteak, food]
+teaser: "The first one had no cheese, and Harry never got to eat it."
+script: |
+  Look at the stand on this corner, with its name in lights, and the rival stand across the street. This is where people say the cheesesteak began.
+
+  In nineteen thirty, two brothers, Pat and Harry Olivieri, opened a hot dog stand near here, by the Italian Market. They sold hot dogs, mostly to cab drivers. They both had other jobs. Pat made sleds in the daytime. Harry worked at the Navy Yard. And every day, they ate hot dogs.
+
+  One day, tired of hot dogs, Pat sent Harry to a store for some beef. Harry sliced it, grilled it with onions, and piled it on a roll. They were about to eat, when a cab driver pulled up, smelled the meat and onions, and wanted one. So Harry sold the cabbie his own sandwich. The brothers always counted that as the moment it all began. By most accounts, that was in nineteen thirty three.
+
+  Notice what was missing. There was no cheese. Cheese came later. The orange kind arrived in the nineteen sixties. Geno's opened across the street in nineteen sixty six. Its owner today says of Pat, he invented it. We just perfected it.
+
+  The first one had no cheese.
+
+  And Harry never got to eat it.
+detail: >-
+  The date is told both ways: Pat's says 1930; the Associated Press put the stand in 1930 and the first sandwich three years later. Who first added cheese is disputed between Pat's and later rivals.
+pronunciations:
+  - written: "Olivieri"
+    say: "oh-liv-YAIR-ee"
+  - written: "Passyunk"
+    say: "PASH-unk"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the stand on this corner, with its name in lights, and the rival stand across the street."
+    source: 1
+    quote: "Geno's and Pat's sit across the street from each other near South Philadelphia's Italian Market."
+  - says: "This is where people say the cheesesteak began."
+    source: 2
+    quote: "Harry Olivieri, credited with helping invent the Philly cheesesteak sandwich, has died at the age of 90."
+  - says: "In nineteen thirty, two brothers, Pat and Harry Olivieri, opened a hot dog stand near here, by the Italian Market."
+    source: 3
+    quote: "He and his older brother opened a corner hot dog stand near south Philadelphia's Italian Market in 1930."
+  - says: "They sold hot dogs, mostly to cab drivers."
+    source: 2
+    quote: "They had a little stand on 9th Street that they used to sell hot dogs to mostly the cab drivers."
+  - says: "They both had other jobs. Pat made sleds in the daytime. Harry worked at the Navy Yard."
+    source: 2
+    quote: "My uncle made sleds in the daytime and he used to work at the hot dog stand at night. And my father worked at the Navy yard"
+  - says: "And every day, they ate hot dogs."
+    source: 2
+    quote: "And then every day they were eating hot dogs and hot dogs and hot dogs."
+  - says: "One day, tired of hot dogs, Pat sent Harry to a store for some beef."
+    source: 3
+    quote: "Tired of hot dogs, Pat suggested that Harry go to a store and buy some beef."
+  - says: "Harry sliced it, grilled it with onions, and piled it on a roll."
+    source: 3
+    quote: "Harry brought it back, sliced it up and grilled it with some onions. The brothers piled the meat on rolls"
+  - says: "They were about to eat, when a cab driver pulled up, smelled the meat and onions, and wanted one."
+    source: 3
+    quote: "were about to dig in when a cab driver arrived for lunch, smelled the meat and onions and demanded one of the sandwiches."
+  - says: "So Harry sold the cabbie his own sandwich."
+    source: 3
+    quote: "Harry sold the cabbie his own sandwich"
+  - says: "The brothers always counted that as the moment it all began."
+    source: 3
+    quote: "in a transaction the brothers counted as the birth of Pat's King of Steaks."
+  - says: "By most accounts, that was in nineteen thirty three."
+    source: 3
+    quote: "Three years later, they made the first version of the sandwich"
+  - says: "By most accounts, that was in nineteen thirty three."
+    source: 2
+    quote: "Olivieri and his older brother, Pat, began making Philadelphia's signature sandwich in 1933."
+  - says: "There was no cheese."
+    source: 3
+    quote: "Cheez Whiz was added to the steak and onions starting in the 1960s"
+  - says: "Cheese came later. The orange kind arrived in the nineteen sixties."
+    source: 3
+    quote: "Cheez Whiz was added to the steak and onions starting in the 1960s"
+  - says: "Geno's opened across the street in nineteen sixty six."
+    source: 1
+    quote: "In 1966, Geno's Steaks opened"
+  - says: "Its owner today says of Pat, he invented it. We just perfected it."
+    source: 1
+    quote: "\"He invented it. We just perfected it.\""
+  - says: "The first one had no cheese."
+    source: 3
+    quote: "Cheez Whiz was added to the steak and onions starting in the 1960s"
+  - says: "And Harry never got to eat it."
+    source: 3
+    quote: "Harry sold the cabbie his own sandwich"
+sources:
+  - title: "Why has the cheesesteak become so uniquely Philadelphia?"
+    publisher: "CBS Philadelphia"
+    url: https://www.cbsnews.com/philadelphia/news/philadelphia-cheesesteaks-history-pats-genos-angelos-jims/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Harry Olivieri, Philly Cheesesteak King, Dies"
+    publisher: "NPR, All Things Considered"
+    url: https://www.npr.org/2006/07/21/5573992/harry-olivieri-philly-cheesesteak-king-dies
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Cheesesteak Inventor Dead At 90 (Associated Press, 2006)"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/cheesesteak-inventor-dead-at-90/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-harrys-sandwich/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 80.9
+    audioBytes: 1296134
+    transcript:
+      totalS: 80.9
+      lines:
+        - text: Look at the stand on this corner, with its name in lights, and the rival stand across the street.
+          atS: 0
+          durationS: 5.21
+        - text: This is where people say the cheesesteak began.
+          atS: 5.65
+          durationS: 2.66
+        - text: In nineteen thirty, two brothers, Pat and Harry Olivieri, opened a hot dog stand near here, by the Italian Market.
+          atS: 8.49
+          durationS: 8.73
+        - text: They sold hot dogs, mostly to cab drivers.
+          atS: 17.6
+          durationS: 3.1
+        - text: They both had other jobs.
+          atS: 21.21
+          durationS: 1.57
+        - text: Pat made sleds in the daytime.
+          atS: 23.29
+          durationS: 1.9
+        - text: Harry worked at the Navy Yard.
+          atS: 25.58
+          durationS: 1.76
+        - text: And every day, they ate hot dogs.
+          atS: 27.67
+          durationS: 2.39
+        - text: One day, tired of hot dogs, Pat sent Harry to a store for some beef.
+          atS: 30.66
+          durationS: 4.69
+        - text: Harry sliced it, grilled it with onions, and piled it on a roll.
+          atS: 35.63
+          durationS: 4.33
+        - text: They were about to eat, when a cab driver pulled up, smelled the meat and onions, and wanted one.
+          atS: 40.77
+          durationS: 6.28
+        - text: So Harry sold the cabbie his own sandwich.
+          atS: 47.57
+          durationS: 2.68
+        - text: The brothers always counted that as the moment it all began.
+          atS: 50.94
+          durationS: 3.3
+        - text: By most accounts, that was in nineteen thirty three.
+          atS: 55.05
+          durationS: 3.39
+        - text: Notice what was missing.
+          atS: 58.95
+          durationS: 1.44
+        - text: There was no cheese.
+          atS: 61.09
+          durationS: 1.36
+        - text: Cheese came later.
+          atS: 63.05
+          durationS: 1.38
+        - text: The orange kind arrived in the nineteen sixties.
+          atS: 65.04
+          durationS: 2.86
+        - text: Geno's opened across the street in nineteen sixty six.
+          atS: 68.22
+          durationS: 3.27
+        - text: Its owner today says of Pat, he invented it.
+          atS: 71.82
+          durationS: 2.95
+        - text: We just perfected it.
+          atS: 75.01
+          durationS: 1.31
+        - text: The first one had no cheese.
+          atS: 76.5
+          durationS: 1.86
+        - text: And Harry never got to eat it.
+          atS: 78.63
+          durationS: 2.31

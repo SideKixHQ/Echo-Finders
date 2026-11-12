@@ -1,0 +1,197 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Harlem cluster.
+# Listening spot: The path in front of Hamilton Grange National Memorial, at the northwest corner of St. Nicholas Park, West 141st Street near Convent Avenue.
+# Position: Overture places Hamilton Grange National Memorial at 40.82135, -73.94735 (414 W 141st St); the spot is just in front of the house (high confidence).
+id: new-york-the-house-that-moved-twice
+title: "The House That Moved Twice"
+summary: "Hamilton's house has moved twice. The second time, it was lifted thirty eight feet in the air and rolled over a church porch."
+place: "Hamilton Grange National Memorial, St. Nicholas Park, West 141st Street, Harlem, Manhattan"
+at: { lat: 40.82130, lng: -73.94725 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 90
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-york, harlem, hamilton, national-park, houses, preservation]
+teaser: "Two hundred tons of house, thirty eight feet up in the air."
+script: |
+  Look at the yellow and white house in front of you, with its porches and tall windows.
+
+  It is not where it was built. It has moved twice.
+
+  Alexander Hamilton built it in eighteen oh two, as a country home on his estate up here. It was the only home he ever owned. Lower Manhattan was two hours away by carriage. He named it The Grange, after his family's old home in Scotland.
+
+  He lived in it for two years. On the eleventh of July, eighteen oh four, he was fatally wounded in a duel with Aaron Burr.
+
+  Then the city grew up the island toward his house. In eighteen eighty nine, a new street was coming through. So the house was lifted off its foundation and drawn by horses to a new spot, squeezed between a church and an apartment building.
+
+  In two thousand eight, the Park Service moved it again. But a stone porch on the church was in the way. So the movers jacked the whole house, nearly two hundred tons, thirty eight feet into the air. And rolled it out over the top.
+
+  On the seventh of June, hundreds of people watched it roll down the street, turn the corner, and come here.
+
+  Look at the trees around it. Thirteen sweet gums, for the thirteen original states, like the grove on the first site.
+
+  This little piece of park was part of Hamilton's own estate.
+
+  The house came home.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the yellow and white house in front of you, with its porches and tall windows."
+    source: 4
+    quote: "Alexander Hamilton 's stately yellow and white federal style country estate - Hamilton Grange - has been refurbished and now stands at 141st Street and Saint Nicholas Park."
+  - says: "It has moved twice."
+    source: 3
+    quote: "The home itself has been moved twice."
+  - says: "Alexander Hamilton built it in eighteen oh two, as a country home on his estate up here."
+    source: 3
+    quote: "Hamilton commissioned architect John McComb Jr. to design a Federal style country home on a sprawling 32 acre estate in upper Manhattan. This house was completed in 1802"
+  - says: "It was the only home he ever owned."
+    source: 1
+    quote: "The move was the first step in a full-scale restoration of the only home Alexander Hamilton ever owned."
+  - says: "Lower Manhattan was two hours away by carriage."
+    source: 4
+    quote: "In 1802, this was Hamilton's retreat. At the time it was two hours from Lower Manhattan by carriage."
+  - says: "He named it The Grange, after his family's old home in Scotland."
+    source: 3
+    quote: "named “The Grange” after the Hamilton family’s ancestral home in Scotland"
+  - says: "He lived in it for two years."
+    source: 3
+    quote: "but served as his home for only two years."
+  - says: "He lived in it for two years."
+    source: 4
+    quote: "Hamilton lived in the home for just two years, up until his fatal duel with Vice President Aaron Burr across the Hudson River in Weehawken."
+  - says: "On the eleventh of July, eighteen oh four, he was fatally wounded in a duel with Aaron Burr."
+    source: 3
+    quote: "On July 11, 1804, Hamilton was fatally wounded in a duel with his political rival Aaron Burr."
+  - says: "In eighteen eighty nine, a new street was coming through."
+    source: 2
+    quote: "In 1889, The Grange had to be moved for the creation of 143rd Street."
+  - says: "So the house was lifted off its foundation and drawn by horses to a new spot, squeezed between a church and an apartment building."
+    source: 2
+    quote: "The front and rear porches were removed, and the house was lifted off its foundation and drawn by horses to the new site."
+  - says: "So the house was lifted off its foundation and drawn by horses to a new spot, squeezed between a church and an apartment building."
+    source: 2
+    quote: "When the National Park Service (NPS) acquired The Grange in 1962, the building had been sandwiched between St. Luke's Church and an apartment building."
+  - says: "In two thousand eight, the Park Service moved it again."
+    source: 2
+    quote: "In 2008, the building was moved to its current location at St. Nicholas Park."
+  - says: "But a stone porch on the church was in the way."
+    source: 1
+    quote: "A stone loggia (porch) on the church jutted out in front of the Grange, requiring Wolfe House & Building Movers to lift the house 38 feet vertically in order to roll it out over the loggia and out to the street."
+  - says: "So the movers jacked the whole house, nearly two hundred tons, thirty eight feet into the air."
+    source: 1
+    quote: "A stone loggia (porch) on the church jutted out in front of the Grange, requiring Wolfe House & Building Movers to lift the house 38 feet vertically in order to roll it out over the loggia and out to the street."
+  - says: "So the movers jacked the whole house, nearly two hundred tons, thirty eight feet into the air."
+    source: 1
+    quote: "hundreds of onlookers gathered to watch the nearly 200-ton structure roll down to the intersection of 141st Street and Convent Avenue"
+  - says: "And rolled it out over the top."
+    source: 1
+    quote: "On May 26, 2008, the push over the loggia and out to the street took only a few hours."
+  - says: "On the seventh of June, hundreds of people watched it roll down the street, turn the corner, and come here."
+    source: 1
+    quote: "On June 7, 2008, hundreds of onlookers gathered to watch the nearly 200-ton structure roll down to the intersection of 141st Street and Convent Avenue and turn the corner to head to the park."
+  - says: "Thirteen sweet gums, for the thirteen original states, like the grove on the first site."
+    source: 1
+    quote: "The landscaping plan for Hamilton Grange includes 13 sweet gum trees that recall the grove of sweet gum trees that was planted on the first site to represent the 13 original states."
+  - says: "This little piece of park was part of Hamilton's own estate."
+    source: 1
+    quote: "The 1-acre site was part of Alexander Hamilton’s original 32-acre estate, which makes it an ideal place to tell its story and the story of the man who built it."
+  - says: "The house came home."
+    source: 1
+    quote: "The 1-acre site was part of Alexander Hamilton’s original 32-acre estate"
+sources:
+  - title: "A Monumental Move"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/a-monumental-move.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Hamilton Grange Convent Ave location"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/hamilton-grange-convent-ave-location.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Fact Sheet: Hamilton Grange National Memorial"
+    publisher: "National Park Service, National Parks of New York Harbor"
+    url: https://www.nps.gov/npnh/learn/news/fact-sheet-hagr.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Stories From Main Street: Alexander Hamilton's Home Moves In Harlem"
+    publisher: "CBS New York (WCBS 880), September 2011"
+    url: https://www.cbsnews.com/newyork/news/stories-from-main-street-alexander-hamiltons-home-moves-in-harlem/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-house-that-moved-twice/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 90.3
+    audioBytes: 1445345
+    transcript:
+      totalS: 90.3
+      lines:
+        - text: Look at the yellow and white house in front of you, with its porches and tall windows.
+          atS: 0
+          durationS: 4.67
+        - text: It is not where it was built.
+          atS: 4.99
+          durationS: 1.71
+        - text: It has moved twice.
+          atS: 6.98
+          durationS: 1.65
+        - text: Alexander Hamilton built it in eighteen oh two, as a country home on his estate up here.
+          atS: 9.44
+          durationS: 5.45
+        - text: It was the only home he ever owned.
+          atS: 15.32
+          durationS: 2.22
+        - text: Lower Manhattan was two hours away by carriage.
+          atS: 18.24
+          durationS: 3.02
+        - text: He named it The Grange, after his family's old home in Scotland.
+          atS: 21.58
+          durationS: 3.78
+        - text: He lived in it for two years.
+          atS: 25.88
+          durationS: 1.86
+        - text: On the eleventh of July, eighteen oh four, he was fatally wounded in a duel with Aaron Burr.
+          atS: 28.34
+          durationS: 6.12
+        - text: Then the city grew up the island toward his house.
+          atS: 35.16
+          durationS: 2.86
+        - text: In eighteen eighty nine, a new street was coming through.
+          atS: 38.45
+          durationS: 3.17
+        - text: So the house was lifted off its foundation and drawn by horses to a new spot, squeezed between a church and an apartment building.
+          atS: 42.23
+          durationS: 7.89
+        - text: In two thousand eight, the Park Service moved it again.
+          atS: 51.42
+          durationS: 3.19
+        - text: But a stone porch on the church was in the way.
+          atS: 55.22
+          durationS: 2.97
+        - text: So the movers jacked the whole house, nearly two hundred tons, thirty eight feet into the air.
+          atS: 58.79
+          durationS: 6.02
+        - text: And rolled it out over the top.
+          atS: 65.42
+          durationS: 2.28
+        - text: On the seventh of June, hundreds of people watched it roll down the street, turn the corner, and come here.
+          atS: 68.51
+          durationS: 6.65
+        - text: Look at the trees around it.
+          atS: 75.86
+          durationS: 1.61
+        - text: Thirteen sweet gums, for the thirteen original states, like the grove on the first site.
+          atS: 77.8
+          durationS: 6.2
+        - text: This little piece of park was part of Hamilton's own estate.
+          atS: 84.69
+          durationS: 3.67
+        - text: The house came home.
+          atS: 88.8
+          durationS: 1.48

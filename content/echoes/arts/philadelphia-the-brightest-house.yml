@@ -1,0 +1,182 @@
+# Drafted by Claude Code (2026-11-10) for the Philadelphia core, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on North 7th Street beside the Raven statue and the garden, at the corner of Spring Garden Street.
+# Position: Overture place 'Edgar Allan Poe National Historic Site' (532 N 7th St) at 39.96198, -75.14989; set onto the 7th Street sidewalk by the garden (medium confidence).
+id: philadelphia-the-brightest-house
+title: "The Brightest House"
+summary: "Poe chose this house for its light, to help his sick wife. In it he published The Black Cat, set in a cellar much like its own."
+place: "Edgar Allan Poe National Historic Site, 532 North 7th Street, Spring Garden, Philadelphia, Pennsylvania"
+at: { lat: 39.96190, lng: -75.14975 }
+triggerRadiusKm: 0.03
+category: arts
+format: short
+durationS: 72
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [philadelphia, philadelphia-core, spring-garden, edgar-allan-poe, literature, the-black-cat]
+teaser: "He came here for the light."
+script: |
+  Look at the dark bird on the statue by the garden, and the plain brick house behind it. Edgar Allan Poe lived in Philadelphia for six years, in five different houses. This is the only one left.
+
+  You might expect it to be gloomy. It isn't.
+
+  Just before they moved in, his young wife Virginia was found to have tuberculosis. They chose this house because it was bright and airy, to help heal her lungs. Her mother, Maria, kept everything spotless. They called her Muddy. There was a cat, called Catterina. Money was short. When Poe filed for bankruptcy around this time, he had hardly any furniture to list.
+
+  But in this bright house, he published The Black Cat. In that story, a man walls up a body in his cellar, behind a false chimney. The cellar of this house has a false chimney. And by the kitchen door, someone once carved a single word into the plaster. Death. Nobody knows who did it.
+
+  Look at the windows. In Poe's day, the house stood alone on the corner, and the light came pouring in.
+
+  He came here for the light.
+
+  He wrote about the cellar.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the dark bird on the statue by the garden, and the plain brick house behind it."
+    source: 1
+    quote: "A step outside brings the visitor to the statue commemorating Poe’s most famous poem “The Raven”"
+  - says: "Edgar Allan Poe lived in Philadelphia for six years, in five different houses."
+    source: 2
+    quote: "During his six years in Philadelphia, Poe lived in five different houses. Only this house survives."
+  - says: "This is the only one left."
+    source: 2
+    quote: "Only this house survives."
+  - says: "It isn't."
+    source: 2
+    quote: "Contrary to the common image of Poe as a dark and brooding man, his home was light and airy."
+  - says: "Just before they moved in, his young wife Virginia was found to have tuberculosis."
+    source: 2
+    quote: "Just before moving here, Virginia, Edgar Allan Poe’s young wife, was diagnosed with tuberculosis."
+  - says: "They chose this house because it was bright and airy, to help heal her lungs."
+    source: 2
+    quote: "The family moved into this bright, airy house to help heal Virginia’s lungs."
+  - says: "Her mother, Maria, kept everything spotless. They called her Muddy."
+    source: 2
+    quote: "Virginia’s mother Maria Clemm, or “Muddy,”"
+  - says: "Her mother, Maria, kept everything spotless. They called her Muddy."
+    source: 2
+    quote: "You would notice how clean and orderly everything looked."
+  - says: "There was a cat, called Catterina."
+    source: 2
+    quote: "and a cat named Catterina."
+  - says: "Money was short. When Poe filed for bankruptcy around this time, he had hardly any furniture to list."
+    source: 2
+    quote: "Around the time he lived here, his failed literary endeavors and his ailing wife’s costly medical care finally forced him to file for bankruptcy. His bankruptcy petition lists hardly any furniture or valuable material possessions."
+  - says: "But in this bright house, he published The Black Cat."
+    source: 2
+    quote: "Poe published (and probably wrote) the story while he lived in this house."
+  - says: "In that story, a man walls up a body in his cellar, behind a false chimney."
+    source: 2
+    quote: "In Poe’s horror story, “The Black Cat,” the murderer confesses, “I had walled the monster inside the tomb” in the cellar."
+  - says: "In that story, a man walls up a body in his cellar, behind a false chimney."
+    source: 3
+    quote: "it's in the false chimney that the corpse is concealed at the end of the story."
+  - says: "The cellar of this house has a false chimney."
+    source: 3
+    quote: "We have a nice false chimney over here"
+  - says: "And by the kitchen door, someone once carved a single word into the plaster."
+    source: 2
+    quote: "One of the most notable details in the room is the word “death” carved into the plaster near the doorway to the kitchen."
+  - says: "Death."
+    source: 2
+    quote: "the word “death” carved into the plaster"
+  - says: "Nobody knows who did it."
+    source: 2
+    quote: "It is unknown whether Poe made this carving"
+  - says: "In Poe's day, the house stood alone on the corner, and the light came pouring in."
+    source: 2
+    quote: "In Poe’s time, the house stood on the corner, which allowed more light to enter the home through its many east-facing windows."
+  - says: "He came here for the light."
+    source: 2
+    quote: "The family moved into this bright, airy house to help heal Virginia’s lungs."
+sources:
+  - title: "National Park Getaway: Edgar Allan Poe National Historic Site"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/000/getaway-edal.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Layout of the House"
+    publisher: "National Park Service, Edgar Allan Poe National Historic Site"
+    url: https://www.nps.gov/edal/learn/historyculture/roomlayout.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Philadelphia, Baltimore Battle Over Edgar Allan Poe"
+    publisher: "NPR, All Things Considered"
+    url: https://www.npr.org/transcripts/15817021
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-brightest-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 71.8
+    audioBytes: 1149848
+    transcript:
+      totalS: 71.8
+      lines:
+        - text: Look at the dark bird on the statue by the garden, and the plain brick house behind it.
+          atS: 0
+          durationS: 5.17
+        - text: Edgar Allan Poe lived in Philadelphia for six years, in five different houses.
+          atS: 5.55
+          durationS: 4.92
+        - text: This is the only one left.
+          atS: 10.86
+          durationS: 1.7
+        - text: You might expect it to be gloomy.
+          atS: 12.93
+          durationS: 1.94
+        - text: It isn't.
+          atS: 15.2
+          durationS: 0.78
+        - text: Just before they moved in, his young wife Virginia was found to have tuberculosis.
+          atS: 16.36
+          durationS: 4.76
+        - text: They chose this house because it was bright and airy, to help heal her lungs.
+          atS: 21.33
+          durationS: 4.37
+        - text: Her mother, Maria, kept everything spotless.
+          atS: 26.02
+          durationS: 2.67
+        - text: They called her Muddy.
+          atS: 28.86
+          durationS: 1.22
+        - text: There was a cat, called Catterina.
+          atS: 30.32
+          durationS: 2.29
+        - text: Money was short.
+          atS: 32.86
+          durationS: 1.13
+        - text: When Poe filed for bankruptcy around this time, he had hardly any furniture to list.
+          atS: 34.19
+          durationS: 5.15
+        - text: But in this bright house, he published The Black Cat.
+          atS: 39.63
+          durationS: 3.77
+        - text: In that story, a man walls up a body in his cellar, behind a false chimney.
+          atS: 44
+          durationS: 4.78
+        - text: The cellar of this house has a false chimney.
+          atS: 49.23
+          durationS: 2.48
+        - text: And by the kitchen door, someone once carved a single word into the plaster.
+          atS: 52.31
+          durationS: 4.61
+        - text: Death.
+          atS: 57.62
+          durationS: 0.65
+        - text: Nobody knows who did it.
+          atS: 58.87
+          durationS: 1.51
+        - text: Look at the windows.
+          atS: 61.08
+          durationS: 1.27
+        - text: In Poe's day, the house stood alone on the corner, and the light came pouring in.
+          atS: 62.79
+          durationS: 4.57
+        - text: He came here for the light.
+          atS: 67.87
+          durationS: 1.72
+        - text: He wrote about the cellar.
+          atS: 70.29
+          durationS: 1.51

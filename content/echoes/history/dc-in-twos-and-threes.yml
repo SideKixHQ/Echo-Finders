@@ -1,0 +1,146 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC (Southwest Waterfront), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: The Wharf promenade on the Washington Channel near the foot of Seventh Street SW, the old southwest waterfront where the Pearl was docked.
+# Position: Overture place 'The Wharf' (117 Maine Ave SW) at 38.87940, -77.02364, moved onto the waterfront promenade; the Park Service says only "a secluded spot along the southwest wharf", so this is the waterfront, not a known berth (medium confidence).
+id: dc-in-twos-and-threes
+title: "In Twos and Threes"
+summary: "In April 1848, seventy seven enslaved people slipped aboard a schooner on the southwest wharf, in the largest escape attempt in US history."
+place: "Southwest waterfront, The Wharf, near Seventh Street SW, Washington, D.C."
+at: { lat: 38.87915, lng: -77.02395 }
+triggerRadiusKm: 0.15
+category: history
+format: short
+durationS: 79
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [washington, southwest-waterfront, the-wharf, the-pearl, slavery, underground-railroad, african-american-history]
+teaser: "People walked down to this waterfront quietly, a few at a time."
+script: |
+  Look along the water here, at the restaurants and the boats. In eighteen forty eight, somewhere along this southwest waterfront, at a quiet, out of the way spot, a schooner called the Pearl was waiting.
+
+  On the fifteenth of April, people began to arrive. They came in twos and threes, so as not to be noticed. From Georgetown, from the city, some from Alexandria, across the Mall. Many of them worked in the best homes and hotels in Washington. Among them were two teenage sisters, Mary and Emily Edmonson.
+
+  Seventy seven enslaved people went aboard. The plan was to sail down the Potomac, up the Chesapeake Bay, and on to Philadelphia, and freedom. It was the largest single escape attempt in American history.
+
+  They got more than a hundred miles. Then a storm stopped them at the mouth of the river. A steamboat full of armed men caught up with them, and towed them back here, to a waiting mob.
+
+  Most were sold to slave traders.
+
+  The Edmonson sisters were freed, with money raised in the North. And the uproar started a push to end the slave trade in this city.
+
+  Look out at the channel. They were nearly gone.
+pronunciations:
+  - written: Edmonson
+    say: ED-mun-sun
+detail: >-
+  Sources give the number as seventy six, seventy seven or "nearly 80"; the script uses the Park Service's seventy seven. NPR's account says the Pearl "created a move to end at least the slave trade in Washington"; the script says no more than that.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In eighteen forty eight, somewhere along this southwest waterfront, at a quiet, out of the way spot, a schooner called the Pearl was waiting."
+    source: 1
+    quote: "Docked at a secluded spot along the southwest wharf"
+  - says: "On the fifteenth of April, people began to arrive."
+    source: 1
+    quote: "on April 15, 1848, when 77 enslaved persons fled their quarters in Washington City, Georgetown, and Alexandria."
+  - says: "They came in twos and threes, so as not to be noticed. From Georgetown, from the city, some from Alexandria, across the Mall. Many of them worked in the best homes and hotels in Washington."
+    source: 2
+    quote: "many of whom worked in the best homes and hotels in Washington — made their way in twos and threes from Georgetown and some from Alexandria, Va., across the National Mall to a small, secluded wharf."
+  - says: "Among them were two teenage sisters, Mary and Emily Edmonson."
+    source: 2
+    quote: "the teenage sisters Mary (left) and Emily Edmonson"
+  - says: "The plan was to sail down the Potomac, up the Chesapeake Bay, and on to Philadelphia, and freedom. It was the largest single escape attempt in American history."
+    source: 1
+    quote: "This, the largest single escape attempt in United States history"
+  - says: "They got more than a hundred miles. Then a storm stopped them at the mouth of the river."
+    source: 1
+    quote: "as soon as the schooner reached the mouth of the Potomac a severe storm prevented access to the Chesapeake Bay. And then after having traveled more than 100 miles The Pearl was forced to seek refuge"
+  - says: "A steamboat full of armed men caught up with them, and towed them back here, to a waiting mob."
+    source: 1
+    quote: "The vessel and its passengers were towed back to Washington, where a mob had already assembled."
+  - says: "Most were sold to slave traders."
+    source: 2
+    quote: "Most of the captured fugitives were sold to slave traders."
+  - says: "The Edmonson sisters were freed, with money raised in the North."
+    source: 2
+    quote: "Henry Ward Beecher, who had helped raise the money to free them."
+  - says: "And the uproar started a push to end the slave trade in this city."
+    source: 2
+    quote: "This actually created a move to end at least the slave trade in Washington"
+  - says: "Seventy seven enslaved people went aboard."
+    source: 1
+    quote: "The most popular and well-documented escape attempt from the Nation’s capital occurred on April 15, 1848, when 77 enslaved persons fled their quarters in Washington City, Georgetown, and Alexandria."
+sources:
+  - title: "The Underground Railroad on the Potomac"
+    publisher: "National Park Service, Potomac Heritage National Scenic Trail"
+    url: https://www.nps.gov/pohe/learn/historyculture/potomac-underground-railroad.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Failed Escape Sheds New Light on D.C. Slavery"
+    publisher: "NPR, Morning Edition"
+    url: https://www.npr.org/templates/story/story.php?storyId=10103500
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-in-twos-and-threes/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 79.4
+    audioBytes: 1271474
+    transcript:
+      totalS: 79.4
+      lines:
+        - text: Look along the water here, at the restaurants and the boats.
+          atS: 0
+          durationS: 3.76
+        - text: In eighteen forty eight, somewhere along this southwest waterfront, at a quiet, out of the way spot, a schooner called the Pearl was waiting.
+          atS: 4.14
+          durationS: 9.16
+        - text: On the fifteenth of April, people began to arrive.
+          atS: 13.82
+          durationS: 3.1
+        - text: They came in twos and threes, so as not to be noticed.
+          atS: 17.3
+          durationS: 3.56
+        - text: From Georgetown, from the city, some from Alexandria, across the Mall.
+          atS: 21.3
+          durationS: 4.78
+        - text: Many of them worked in the best homes and hotels in Washington.
+          atS: 26.6
+          durationS: 3.47
+        - text: Among them were two teenage sisters, Mary and Emily Edmonson.
+          atS: 30.45
+          durationS: 4.69
+        - text: Seventy seven enslaved people went aboard.
+          atS: 35.84
+          durationS: 2.61
+        - text: The plan was to sail down the Potomac, up the Chesapeake Bay, and on to Philadelphia, and freedom.
+          atS: 39.27
+          durationS: 6.32
+        - text: It was the largest single escape attempt in American history.
+          atS: 46.39
+          durationS: 3.63
+        - text: They got more than a hundred miles.
+          atS: 50.98
+          durationS: 2.09
+        - text: Then a storm stopped them at the mouth of the river.
+          atS: 53.51
+          durationS: 2.75
+        - text: A steamboat full of armed men caught up with them, and towed them back here, to a waiting mob.
+          atS: 56.7
+          durationS: 6.09
+        - text: Most were sold to slave traders.
+          atS: 64.1
+          durationS: 2.16
+        - text: The Edmonson sisters were freed, with money raised in the North.
+          atS: 67.07
+          durationS: 3.97
+        - text: And the uproar started a push to end the slave trade in this city.
+          atS: 71.65
+          durationS: 3.74
+        - text: Look out at the channel.
+          atS: 76.2
+          durationS: 1.27
+        - text: They were nearly gone.
+          atS: 78.16
+          durationS: 1.25

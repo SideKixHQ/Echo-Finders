@@ -1,0 +1,166 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Old City, Fourth and Vine), following docs/writing-echoes.md (format v2).
+# Listening spot: The sidewalk on Fourth Street in front of St. Augustine's Church, opposite New Street, just below Vine.
+# Position: the Overture place "St. Augustine's Roman Catholic Church" (39.95555, -75.146506), on the Fourth Street frontage; Scharf and Westcott give the 1844 church as "on Fourth Street below Vine, and opposite New Street" (high confidence for the site; today's church is the rebuilt one).
+id: philadelphia-the-lord-seeth
+title: "The Lord Seeth"
+summary: "In May 1844 a mob burned the church on this spot while police stood outside. In the morning, words were still on the wall."
+place: "St. Augustine's Church, Fourth Street below Vine, opposite New Street, Old City, Philadelphia, Pennsylvania"
+at: { lat: 39.95555, lng: -75.14640 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.8
+tags: [philadelphia, old-city, st-augustines, 1844, nativist-riots, catholics, irish, mob]
+teaser: "The police were standing out front. The fire started inside."
+script: |
+  Look at the church in front of you. It stands where another church was burned by a mob, in May of eighteen forty four.
+
+  That spring, Philadelphia turned on its Irish Catholics. For days there had been riots up in Kensington. Houses burned. Another church burned. And on the eighth of May, a rumour went round the city. St. Augustine's would be next.
+
+  So the mayor came, with a body of police, and stood them on the pavement right out front. A troop of cavalry waited nearby. Thousands of people gathered in the street to look at the church. There was no violence. Just low talk, and watching.
+
+  And while the police and the crowd were all outside, somebody had got in. A light appeared inside. The fire went from pew to pew, and up into the galleries, and out through the roof. Then the steeple caught. When the cross on top fell in, people in the street cheered.
+
+  The firemen were there. They did not turn their engines on the church. They saved the buildings next door. The Augustinian fathers' library of rare books burned with it, and some were thrown into the street and trampled.
+
+  In the morning, only blackened walls were left. But through the broken windows, over where the high altar had been, you could still read the words written there, as plainly as the day before.
+
+  The Lord Seeth.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It stands where another church was burned by a mob, in May of eighteen forty four."
+    source: 1
+    quote: "ST. AUGUSTINE'S CATHOLIC CHURCH, DESTROYED BY"
+  - says: "For days there had been riots up in Kensington. Houses burned. Another church burned."
+    source: 1
+    quote: "At this time the Roman Catholic Church of St. Michael, a large brick building at the corner of Second and Jefferson Streets, was set on fire."
+  - says: "That spring, Philadelphia turned on its Irish Catholics."
+    source: 1
+    quote: "American flags were displayed from the windows of various houses to indicate that the tenants were not Irish."
+  - says: "And on the eighth of May, a rumour went round the city. St. Augustine's would be next."
+    source: 1
+    quote: "rumor in the course of the day had circulated through the city that there was probability that the Roman Catholic Church of St. Augustine, on Fourth Street below Vine, and opposite New Street, would be attacked."
+  - says: "And on the eighth of May"
+    source: 1
+    quote: "City Councils had an informal session on the evening of the 8th"
+  - says: "So the mayor came, with a body of police, and stood them on the pavement right out front. A troop of cavalry waited nearby."
+    source: 1
+    quote: "The mayor, John M. Scott, was on the ground with a body of police, who were stationed on the pavement in front of the church. The First City Troop of Cavalry was stationed in the neighborhood."
+  - says: "Thousands of people gathered in the street to look at the church. There was no violence. Just low talk, and watching."
+    source: 1
+    quote: "Thousands stood or looked at the church or were engaged in low conversation. There was no demonstration of violence to attract attention."
+  - says: "And while the police and the crowd were all outside, somebody had got in. A light appeared inside."
+    source: 1
+    quote: "But whilst the police and the crowd were on the outside, somebody had entered the church and kindled a fire, the light of which was soon seen."
+  - says: "The fire went from pew to pew, and up into the galleries, and out through the roof. Then the steeple caught. When the cross on top fell in, people in the street cheered."
+    source: 1
+    quote: "They increased in brightness as pew led the fire to pew, the galleries caught, and at length the flames broke forth from the roof and the windows in front, and finally the steeple was on fire, and as the cross which crowned the height yielded to the flames and fell in, plaudits arose with savage exultation from many in the streets."
+  - says: "The firemen were there. They did not turn their engines on the church. They saved the buildings next door."
+    source: 1
+    quote: "The firemen who were upon the ground did not attempt to play upon the church, but devoted themselves to saving the adjoin"
+  - says: "The Augustinian fathers' library of rare books burned with it, and some were thrown into the street and trampled."
+    source: 1
+    quote: "It had contained the large and costly theological library of the Hermits of St. Augustine, including rare books not to be found elsewhere in America. Some of these during the fire were thrown out into Crown Street, and torn up or trodden upon so as to be worthless."
+  - says: "In the morning, only blackened walls were left. But through the broken windows, over where the high altar had been, you could still read the words written there, as plainly as the day before."
+    source: 1
+    quote: "nothing but the blackened walls, and there in the morning, through the broken windows over what had been the high altar, were seen as plainly as they had existed on the previous day, the remarkable words, \" The Lord Seeth.\""
+  - says: "The Lord Seeth."
+    source: 1
+    quote: "were seen as plainly as they had existed on the previous day, the remarkable words, \" The Lord Seeth.\""
+sources:
+  - title: "History of Philadelphia, 1609 to 1884, volume 1 (J. Thomas Scharf and Thompson Westcott, 1884), the riots of 1844"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofphilade01scha
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-lord-seeth/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85.2
+    audioBytes: 1364679
+    transcript:
+      totalS: 85.2
+      lines:
+        - text: Look at the church in front of you.
+          atS: 0
+          durationS: 1.68
+        - text: It stands where another church was burned by a mob, in May of eighteen forty four.
+          atS: 2.29
+          durationS: 5.43
+        - text: That spring, Philadelphia turned on its Irish Catholics.
+          atS: 8.42
+          durationS: 3.66
+        - text: For days there had been riots up in Kensington.
+          atS: 12.59
+          durationS: 3.2
+        - text: Houses burned.
+          atS: 16.49
+          durationS: 1.18
+        - text: Another church burned.
+          atS: 17.88
+          durationS: 1.5
+        - text: And on the eighth of May, a rumour went round the city.
+          atS: 19.7
+          durationS: 3.36
+        - text: St.
+          atS: 23.5
+          durationS: 0.26
+        - text: Augustine's would be next.
+          atS: 23.78
+          durationS: 1.58
+        - text: So the mayor came, with a body of police, and stood them on the pavement right out front.
+          atS: 25.74
+          durationS: 5.25
+        - text: A troop of cavalry waited nearby.
+          atS: 31.43
+          durationS: 2.3
+        - text: Thousands of people gathered in the street to look at the church.
+          atS: 34.11
+          durationS: 3.16
+        - text: There was no violence.
+          atS: 37.71
+          durationS: 1.4
+        - text: Just low talk, and watching.
+          atS: 39.39
+          durationS: 2.04
+        - text: And while the police and the crowd were all outside, somebody had got in.
+          atS: 41.76
+          durationS: 4.23
+        - text: A light appeared inside.
+          atS: 46.37
+          durationS: 1.66
+        - text: The fire went from pew to pew, and up into the galleries, and out through the roof.
+          atS: 48.24
+          durationS: 4.85
+        - text: Then the steeple caught.
+          atS: 53.37
+          durationS: 1.3
+        - text: When the cross on top fell in, people in the street cheered.
+          atS: 55
+          durationS: 3.45
+        - text: The firemen were there.
+          atS: 58.69
+          durationS: 1.31
+        - text: They did not turn their engines on the church.
+          atS: 60.21
+          durationS: 2.37
+        - text: They saved the buildings next door.
+          atS: 62.79
+          durationS: 1.82
+        - text: The Augustinian fathers' library of rare books burned with it, and some were thrown into the street and trampled.
+          atS: 65.21
+          durationS: 6.33
+        - text: In the morning, only blackened walls were left.
+          atS: 71.92
+          durationS: 2.79
+        - text: But through the broken windows, over where the high altar had been, you could still read the words written there, as plainly as the day before.
+          atS: 75.31
+          durationS: 7.89
+        - text: The Lord Seeth.
+          atS: 83.91
+          durationS: 1.31

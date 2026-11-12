@@ -1,3 +1,4 @@
+# Held 2026-11-11: approved content, but its payoff (strawberry-fields-one-word) is held for sources, and this echo sends the listener there. Release the pair together.
 # First of the Central Park West pair, and the better of the two stories in this batch.
 #
 # The idea is not the murder. It is that the killing and the memorial are three minutes
@@ -29,8 +30,8 @@ script: |
   Look across the street, into the park. Those trees are Strawberry Fields. It is about a
   three-minute walk, and you are going to make it in a moment.
 
-  Behind you is the Dakota. John Lennon lived here with Yoko Ono and their son. Yoko Ono
-  lives here still. This is not a monument, it is a building full of people's homes, so
+  Behind you is the Dakota. John Lennon lived here with Yoko Ono and their son. This is not
+  a monument, it is a building full of people's homes, so
   stay on the pavement and keep out of the archway.
 
   On the eighth of December nineteen eighty, at around ten to eleven at night, Lennon came
@@ -59,12 +60,94 @@ trueCrimeReview:
   reviewedBy: "TODO: a named human, before this can leave draft. See the note below."
   reviewedAt: "2026-09-22"
   contentWarning: This echo describes a murder. No violence is described in detail.
+claims:
+  - says: "Those trees are Strawberry Fields."
+    source: 1
+    quote: "the \"Strawberry Fields\" memorial to John Lennon in New York's Central Park, Wednesday Dec. 7, 2005. The memorial is near The Dakota, the building where Lennon, a former member of the Beatles, lived and where he was murdered 25 years ago."
+  - says: "It is about a three-minute walk, and you are going to make it in a moment."
+    source: 5
+    quote: "A short distance from his home at the Dakota lays Central Park's Strawberry Fields, a spot Lennon often visited."
+  - says: "Behind you is the Dakota."
+    source: 2
+    quote: "Police said the shooting occurred outside the Dakota, the century-old luxury apartment house where Lennon and his wife, Yoko Ono, lived. It is across the street from Central Park."
+  - says: "John Lennon lived here with Yoko Ono and their son."
+    source: 2
+    quote: "the Dakota, the century-old luxury apartment house where Lennon and his wife, Yoko Ono, lived."
+  - says: "John Lennon lived here with Yoko Ono and their son."
+    source: 2
+    quote: "saying he wanted to be with Yoko Ono and their son, Sean."
+  - says: "On the eighth of December nineteen eighty, at around ten to eleven at night, Lennon came back from a recording session."
+    source: 3
+    quote: "When Lennon returned from the recording session around 10:50 p.m., Chapman took aim directly at Lennon's back and fired five shots."
+  - says: "On the eighth of December nineteen eighty, at around ten to eleven at night, Lennon came back from a recording session."
+    source: 2
+    quote: "Chief of Detectives James Sullivan said Lennon and his wife were walking into the enclosed courtyard of the Dakota about 10:50 p.m. when five shots rang out."
+  - says: "On the eighth of December nineteen eighty, at around ten to eleven at night, Lennon came back from a recording session."
+    source: 4
+    quote: "Chapman fired five shots outside the Dakota apartment house on Dec. 8, 1980, hitting Lennon four times in front of his wife, Yoko Ono, and others."
+  - says: "A man who had been waiting near the entrance since the afternoon fired five shots, and four of them hit him."
+    source: 6
+    quote: "Chapman fired five shots with a .38-caliber revolver, hitting Lennon four times in front of Ono and others."
+  - says: "A man who had been waiting near the entrance since the afternoon fired five shots, and four of them hit him."
+    source: 6
+    quote: "Chapman said that on the day he shot Lennon, he staked out the Dakota from before noon and talked to him early in the day."
+  - says: "A man who had been waiting near the entrance since the afternoon fired five shots, and four of them hit him."
+    source: 4
+    quote: "Chapman fired five shots outside the Dakota apartment house on Dec. 8, 1980, hitting Lennon four times in front of his wife, Yoko Ono, and others."
+  - says: "Earlier the same day, Lennon had signed a record for him."
+    source: 6
+    quote: "“He was very kind to me” and signed an album while his wife, Yoko Ono, waited in a limousine, Chapman said."
+  - says: "Earlier the same day, Lennon had signed a record for him."
+    source: 7
+    quote: "for much of the day, the deranged 25-year-old hospital security guard had been hanging out at The Dakota where John Lennon autographed an album for him."
+  - says: "They put him in the back of a patrol car and drove him to Roosevelt Hospital, where he was pronounced dead."
+    source: 2
+    quote: "Authorities said Lennon, 40, was rushed in a police car to Roosevelt Hospital, where he was pronounced dead shortly after arriving."
+  - says: "They put him in the back of a patrol car and drove him to Roosevelt Hospital, where he was pronounced dead."
+    source: 7
+    quote: "John Lennon was brought to the emergency room this evening shortly before 11 PM. He was dead on arrival."
+  - says: "He was forty."
+    source: 2
+    quote: "Authorities said Lennon, 40, was rushed in a police car to Roosevelt Hospital,"
+  - says: "He was forty."
+    source: 4
+    quote: "The musician, singer and songwriter was 40."
+  - says: "There was never going to be one."
+    source: 5
+    quote: "the area was dedicated on October 9, 1985, the 45th anniversary of his birth."
 sources:
-  - title: People v. Chapman — conviction and sentence, New York Supreme Court, 1981
-    publisher: New York State Unified Court System
-    retrievedAt: "2026-09-22"
-    rights: public-domain
-  - title: Parole Board hearing transcripts, Mark David Chapman
-    publisher: New York State Board of Parole
-    retrievedAt: "2026-09-22"
-    rights: public-domain
+  - title: "Lennon's Death"
+    publisher: CBS News
+    url: https://www.cbsnews.com/pictures/lennons-death/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "John Lennon was shot 35 years ago (Associated Press obituary of December 9, 1980, republished)"
+    publisher: "CBS News / Associated Press"
+    url: https://www.cbsnews.com/news/john-lennon-was-shot-35-years-ago/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Fans Honor John Lennon On 34th Anniversary Of Assassination"
+    publisher: CBS New York
+    url: https://www.cbsnews.com/newyork/news/fans-honor-john-lennon-on-34th-anniversary-of-assassination/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "John Lennon's killer denied parole for seventh time"
+    publisher: NBC News
+    url: https://www.nbcnews.com/news/us-news/john-lennons-killer-denied-parole-seventh-time-flna960835
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "7 Spots From John Lennon's New York"
+    publisher: CBS New York
+    url: https://www.cbsnews.com/newyork/news/7-spots-from-john-lennons-new-york/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Chilling details of John Lennon shooting recounted at Chapman parole hearing"
+    publisher: NBC News
+    url: https://www.nbcnews.com/news/us-news/chilling-details-john-lennon-shooting-recounted-chapman-parole-hearing-flna970728
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "The Night John Lennon Died"
+    publisher: NPR
+    url: https://www.npr.org/2005/12/08/5044122/the-night-john-lennon-died
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts

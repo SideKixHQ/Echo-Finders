@@ -1,0 +1,142 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2). A legend, told as one, in the male narrator.
+# Listening spot: Greenwich Cemetery, the old Greenwich plantation ground beside Bonaventure on the Wilmington River. Cemetery with gates and daytime hours.
+# Position: LOW confidence. The app's street file has no named feature for Greenwich; the point is on land north of the two existing Bonaventure echoes (savannah-dinner-under-the-trees, savannah-the-m-and-t-oaks), set from the coast data. Move to the Greenwich section on site before review.
+# Not a duplicate: savannah-who-lies-under-the-pulaski-monument is about whether Pulaski lies under his monument. This echo is the ghost verse written about Greenwich; it mentions the hero's grave only as the poem does.
+id: savannah-the-ghosts-of-old-greenwich
+title: "The Ghosts of Old Greenwich"
+summary: "A Savannah woman's poem, printed in 1889, peopled old Greenwich with ghosts: a pale lady guarding gold and a little man in a gold-laced hat."
+place: "Greenwich, beside Bonaventure Cemetery on the Wilmington River, Savannah, Georgia"
+at: { lat: 32.05300, lng: -81.04400 }
+triggerRadiusKm: 0.1
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 68
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The ghosts are from a poem, "On Old Greenwich", by Mrs. Ann Elizabeth Bowen, printed in extracts by Adelaide Wilson in 1889. Wilson presents them as childhood tales the poet remembered, not as sightings. That Greenwich was the Bowen family's plantation, and that wounded officers were brought there after the siege of 1779, is Wilson's account and is documented elsewhere in the library.
+minAge: 0
+quality: 0.75
+inside: true
+hours: { fromHour: 8, toHour: 17 }
+tags: [savannah, greenwich, bonaventure, ghosts, legend, poetry, rare]
+teaser: "A woman in white, looking for buried gold. A little man looking for his hedge."
+script: |
+  Look along the river edge here, under the oaks. This was Greenwich, an old plantation.
+
+  A Savannah woman wrote down who was said to haunt it.
+
+  Her name was Ann Elizabeth Bowen. In a poem, printed in a Savannah history in eighteen eighty nine, she wrote down the ghosts she remembered from the tales of her childhood. This is a legend, told in verse, and nothing more.
+
+  First, a lady, pale and fair, in robes of ghostly white. Death, the poem says, sealed her lips before she could tell where she had hidden an orphan's money. So she lingers by the hearth where the gold lies buried, and sighs.
+
+  Then a little old man in a gold-laced hat and satin knee breeches. He had sent home to England for roses and myrtles, and loved his box hedge more than his bride. Now the hedge is stolen, and he stamps about with his stick, muttering, and wishing every thief the gout.
+
+  And last, the poem says, a sentinel, pacing night after night, guarding a hero's grave.
+
+  Look along the river again.
+
+  A pale lady, a cross little gardener, and a soldier who will not go off duty.
+detail: >-
+  Wilson (1889), chapter on the Revolution: the Bowen family at Greenwich, Pulaski brought there wounded, and extracts from "On Old Greenwich (now Greenwich Park)" by Mrs. Ann Elizabeth Bowen. The ghost descriptions paraphrase the verse closely. The 1937 guide places Greenwich beyond Bonaventure, "2 m." from Thunderbolt, and calls it Samuel Bowen's plantation during the Revolution.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Her name was Ann Elizabeth Bowen."
+    source: 1
+    quote: "The pen of Mrs. Ann Elizabeth Bowen, the wife of the late William P. Bowen, commemorated the event in verse. Of this poem extracts arc given. ON OLD GREENWICH (NOW GREENWICH PARK)."
+  - says: "First, a lady, pale and fair, in robes of ghostly white."
+    source: 1
+    quote: "1 see the lady, pale and fair, With robes of ghostly white, in stature tall."
+  - says: "Death, the poem says, sealed her lips before she could tell where she had hidden an orphan's money. So she lingers by the hearth where the gold lies buried, and sighs."
+    source: 1
+    quote: "Alas ! grim death upon her lips did set His seal before she told them where to seek The orphan's portion — and she lingers yet. Around the hearth where buried lies The golden ore, — and utters piteous sighs."
+  - says: "Then a little old man in a gold-laced hat and satin knee breeches."
+    source: 1
+    quote: "A little old man in a gold-laced hat, With satin knee-breeches, all so fine"
+  - says: "He had sent home to England for roses and myrtles, and loved his box hedge more than his bride."
+    source: 1
+    quote: "Roses and myrtles came over the sea"
+  - says: "He had sent home to England for roses and myrtles, and loved his box hedge more than his bride."
+    source: 1
+    quote: "And his -'box\" he loved more than his bride."
+  - says: "Now the hedge is stolen, and he stamps about with his stick, muttering, and wishing every thief the gout."
+    source: 1
+    quote: "When all his box is stolen and gone? He mutters and curses and turns him about And wishes each rascal had his gout."
+  - says: "And last, the poem says, a sentinel, pacing night after night, guarding a hero's grave."
+    source: 1
+    quote: "Pis here the unearthly sentinel with measured tread And folded arms, night after night is seen, This guard to keep over the hero's head"
+  - says: "This was Greenwich, an old plantation."
+    source: 2
+    quote: "GREENWICH, 2 to. was, during the days of the Revolution, a thriving plantation belonging to Samuel Bowen."
+  - says: "A Savannah woman wrote down who was said to haunt it."
+    source: 1
+    quote: "The pen of Mrs. Ann Elizabeth Bowen, the wife of the late William P. Bowen, commemorated the event in verse."
+  - says: "In a poem, printed in a Savannah history in eighteen eighty nine, she wrote down the ghosts she remembered from the tales of her childhood."
+    source: 1
+    quote: "Such sceptics are we now of the place In which an honest ghost dare show his face. Was on the tablet of my childhood's .memory traced"
+sources:
+  - title: "Historic and Picturesque Savannah (Adelaide Wilson, 1889)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicpictures00wils
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-the-ghosts-of-old-greenwich/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 68.4
+    audioBytes: 1094678
+    transcript:
+      totalS: 68.4
+      lines:
+        - text: Look along the river edge here, under the oaks.
+          atS: 0
+          durationS: 2.95
+        - text: This was Greenwich, an old plantation.
+          atS: 3.39
+          durationS: 2.46
+        - text: A Savannah woman wrote down who was said to haunt it.
+          atS: 6.29
+          durationS: 2.83
+        - text: Her name was Ann Elizabeth Bowen.
+          atS: 9.37
+          durationS: 2.4
+        - text: In a poem, printed in a Savannah history in eighteen eighty nine, she wrote down the ghosts she remembered from the tales of her childhood.
+          atS: 12.28
+          durationS: 7.84
+        - text: This is a legend, told in verse, and nothing more.
+          atS: 20.33
+          durationS: 3.09
+        - text: First, a lady, pale and fair, in robes of ghostly white.
+          atS: 23.63
+          durationS: 4.19
+        - text: Death, the poem says, sealed her lips before she could tell where she had hidden an orphan's money.
+          atS: 27.95
+          durationS: 5.27
+        - text: So she lingers by the hearth where the gold lies buried, and sighs.
+          atS: 33.6
+          durationS: 4.2
+        - text: Then a little old man in a gold-laced hat and satin knee breeches.
+          atS: 38.24
+          durationS: 4.01
+        - text: He had sent home to England for roses and myrtles, and loved his box hedge more than his bride.
+          atS: 42.57
+          durationS: 5.21
+        - text: Now the hedge is stolen, and he stamps about with his stick, muttering, and wishing every thief the gout.
+          atS: 48.03
+          durationS: 5.25
+        - text: And last, the poem says, a sentinel, pacing night after night, guarding a hero's grave.
+          atS: 53.43
+          durationS: 6.33
+        - text: Look along the river again.
+          atS: 60.87
+          durationS: 1.51
+        - text: A pale lady, a cross little gardener, and a soldier who will not go off duty.
+          atS: 63.08
+          durationS: 5.28

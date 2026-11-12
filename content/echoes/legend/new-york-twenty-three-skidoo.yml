@@ -1,0 +1,152 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Madison Square and Flatiron cluster (more NYC batch).
+# Listening spot: The north point of the Flatiron Building, where Broadway and Fifth Avenue meet at 23rd Street, facing Madison Square.
+# Position: the sidewalk at the building's narrow north tip, from the street plan (high confidence; the corner is unmistakable).
+id: new-york-twenty-three-skidoo
+title: "Twenty Three Skidoo"
+summary: "They called this the windiest corner in the city. A police order to move along here may have given America a catchphrase."
+place: "The north tip of the Flatiron Building, Broadway and Fifth Avenue at 23rd Street, Manhattan"
+at: { lat: 40.74140, lng: -73.98955 }
+triggerRadiusKm: 0.04
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 59
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A popular origin story, not established fact. The Federal Writers' Project guide of 1939 says only that the phrase "twenty-three skidoo" "is supposed to have originated" at this corner, where police shooed loungers away. That the corner was traditionally called the windiest in the city is reported in the same guide. The script says out loud that the origin is a legend.
+minAge: 0
+quality: 0.8
+tags: [new-york, flatiron, madison-square, slang, wind, folklore]
+teaser: "The wind on this corner lifted skirts. The police had a word for the men who came to watch."
+script: |
+  Stand right at the sharp point of the building, where the two avenues split around it like water around the bow of a ship. Feel the wind.
+
+  New Yorkers long said this was the windiest corner in the city. And the wind here may have left something behind in the way Americans talk.
+
+  This is a legend. Here is how it goes.
+
+  When this building was new, skirts reached the ground. A gust off this corner could lift one, just for a moment. So men came to stand here and wait for a gust, hoping for a glimpse of an ankle.
+
+  The police were not amused. They walked up to the loungers on the Twenty Third Street side, and moved them along.
+
+  Twenty three. Skidoo.
+
+  It became a saying. Twenty three skidoo. Get lost. Move it.
+
+  Is it true? Nobody can prove it. The city guide that wrote it down in nineteen thirty nine would only say it was supposed to have started here.
+
+  But stand here a minute in the wind.
+
+  It does make you want to move along.
+
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "New Yorkers long said this was the windiest corner in the city."
+    source: 1
+    quote: "was traditionally the windiest corner of the city"
+  - says: "So men came to stand here and wait for a gust, hoping for a glimpse of an ankle."
+    source: 1
+    quote: "it was facetiously considered a good vantage point for the glimpse of a trim ankle, in the longskirted, prewar era"
+  - says: "They walked up to the loungers on the Twenty Third Street side, and moved them along."
+    source: 1
+    quote: "policemen used to shoo loungers away from the Twenty-third Street corner"
+  - says: "Is it true? Nobody can prove it."
+    source: 1
+    quote: "the expression \"twenty-three skidoo\" is supposed to have originated from this association."
+  - says: "The city guide that wrote it down in nineteen thirty nine would only say it was supposed to have started here."
+    source: 1
+    quote: "the expression \"twenty-three skidoo\" is supposed to have originated from this association."
+  - says: "Stand right at the sharp point of the building, where the two avenues split around it like water around the bow of a ship."
+    source: 1
+    quote: "It was christened the Fuller Building, but because of its shape became known as the \"Flatiron.\""
+  - says: "And the wind here may have left something behind in the way Americans talk."
+    source: 1
+    quote: "policemen used to shoo loungers away from the Twenty-third Street corner, and the expression \"twenty-three skidoo\" is supposed to have originated from this association."
+  - says: "A gust off this corner could lift one, just for a moment."
+    source: 1
+    quote: "a good vantage point for the glimpse of a trim ankle"
+  - says: "Twenty three. Skidoo."
+    source: 1
+    quote: "the expression \"twenty-three skidoo\" is supposed to have originated from this association."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Madison Square District"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-twenty-three-skidoo/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 58.8
+    audioBytes: 941705
+    transcript:
+      totalS: 58.8
+      lines:
+        - text: Stand right at the sharp point of the building, where the two avenues split around it like water around the bow of a ship.
+          atS: 0
+          durationS: 6.21
+        - text: Feel the wind.
+          atS: 6.72
+          durationS: 1.06
+        - text: New Yorkers long said this was the windiest corner in the city.
+          atS: 8.22
+          durationS: 3.44
+        - text: And the wind here may have left something behind in the way Americans talk.
+          atS: 11.87
+          durationS: 3.99
+        - text: This is a legend.
+          atS: 16.46
+          durationS: 1.37
+        - text: Here is how it goes.
+          atS: 18.34
+          durationS: 1.17
+        - text: When this building was new, skirts reached the ground.
+          atS: 20.12
+          durationS: 2.7
+        - text: A gust off this corner could lift one, just for a moment.
+          atS: 23.15
+          durationS: 3.31
+        - text: So men came to stand here and wait for a gust, hoping for a glimpse of an ankle.
+          atS: 26.97
+          durationS: 4.34
+        - text: The police were not amused.
+          atS: 31.64
+          durationS: 1.53
+        - text: They walked up to the loungers on the Twenty Third Street side, and moved them along.
+          atS: 33.38
+          durationS: 4.17
+        - text: Twenty three.
+          atS: 37.99
+          durationS: 0.89
+        - text: Skidoo.
+          atS: 39.32
+          durationS: 0.8
+        - text: It became a saying.
+          atS: 40.73
+          durationS: 1.2
+        - text: Twenty three skidoo.
+          atS: 42.17
+          durationS: 1.46
+        - text: Get lost.
+          atS: 43.8
+          durationS: 0.78
+        - text: Move it.
+          atS: 44.73
+          durationS: 0.57
+        - text: Is it true?
+          atS: 45.69
+          durationS: 0.8
+        - text: Nobody can prove it.
+          atS: 46.81
+          durationS: 1.15
+        - text: The city guide that wrote it down in nineteen thirty nine would only say it was supposed to have started here.
+          atS: 48.4
+          durationS: 5.69
+        - text: But stand here a minute in the wind.
+          atS: 54.47
+          durationS: 1.83
+        - text: It does make you want to move along.
+          atS: 56.75
+          durationS: 2.04

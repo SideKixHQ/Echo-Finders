@@ -1,0 +1,223 @@
+# Drafted by Claude Code (2026-11-11) for the second Charleston pass, following docs/writing-echoes.md (format v2) and docs/14-true-crime.md.
+# Listening spot: The public sidewalk at the corner of Remount Road and Craig Road, North Charleston. The traffic stop ended in the auto parts store's car park at this corner; the shooting followed in the cut through behind it. The listener stays on the public sidewalk and is not pointed at any business.
+# Position: The Remount Road and Craig Road intersection from the Overture street segments (high confidence for the corner, which the Post and Courier names).
+# Conviction status: convicted. Michael Slager pleaded guilty in federal court in May 2017 to violating Walter Scott's civil rights; on 7 December 2017 a federal judge found the killing was second degree murder and sentenced him to 20 years. Slager is living and is public in this case as the convicted officer. The bystander who filmed is living and is not named. No relative is named.
+# Sources: three independent publishers, as the rule for a living person requires: The Post and Courier (its own reporting), NBC News (its own report) and CBS News (an Associated Press report).
+id: charleston-a-broken-taillight
+title: "A Broken Taillight"
+summary: "In 2015 an officer stopped Walter Scott here for a broken taillight and shot him as he ran. A bystander's video changed the case."
+place: "Corner of Remount Road and Craig Road, North Charleston, South Carolina"
+at: { lat: 32.89935, lng: -80.01429 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 75
+visibility: position-only
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.8
+tags: [charleston, north-charleston, true-crime, 2015, police, walter-scott]
+teaser: "The radio call said one thing. A stranger's phone said another."
+script: |
+  Stand on the corner and look at the car park of the auto parts store. On a Saturday morning in April, twenty fifteen, a police car pulled a man over here, for a broken taillight.
+
+  The driver was Walter Scott. He was fifty years old, and a father of four.
+
+  The officer was Michael Slager, of the North Charleston police.
+
+  As the officer checked his papers, Scott opened his door and ran. Slager went after him, with his Taser. There was a struggle on the ground.
+
+  Then, over the radio, Slager said: Shots fired. Subject is down. He grabbed my Taser.
+
+  In the days that followed, that was the police account. A traffic stop gone wrong. A man who fought for an officer's Taser.
+
+  But a bystander had been filming on his phone.
+
+  The video began after the struggle. It showed Scott running away, and the officer firing eight times. Five shots hit him. It did not show Scott taking the Taser.
+
+  Slager was charged with murder. His state trial ended with a deadlocked jury. In twenty seventeen, he pleaded guilty in federal court to violating Walter Scott's civil rights. The judge found that the killing was murder, and sentenced him to twenty years in prison.
+
+  Look at the corner again. The radio call said one thing.
+
+  A stranger's phone said another.
+detail: >-
+  Key facts and their sources. The stop on Remount Road at Craig Road on Saturday 4 April 2015, for a broken taillight, into an auto parts store's car park, Scott running, the Taser and the struggle, the radio call in Slager's words, and the police account in the following days: The Post and Courier (2015 and 2020). Scott's age and children: The Post and Courier (2021) and NBC News. The bystander's video starting after the struggle and showing Scott running and the eight shots, five of which hit him: CBS News (AP) and NBC News, with The Post and Courier. The video not showing Scott taking the Taser: NBC News. The deadlocked state murder trial, the federal guilty plea to violating Scott's civil rights, the judge's finding of murder and the twenty year sentence: NBC News and CBS News (AP), with The Post and Courier (2021). Slager was convicted, so the script states the facts his plea and sentence cover and attributes the Taser claim to him. The Post and Courier article reached through its search is readable without a subscription; a reviewer should confirm it is not metered on a normal visit. The sentencing date (7 December 2017) is in the CBS and NBC reports.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: true
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-11"
+  contentWarning: "This echo describes a police shooting in 2015 in which a man was killed. No injuries are described in detail."
+claims:
+  - says: "On a Saturday morning in April, twenty fifteen, a police car pulled a man over here, for a broken taillight."
+    source: 1
+    quote: "The officer noticed a 1990 Mercedes-Benz with a broken taillight. He turned on his flashing blue lights and the two vehicles pulled over into the parking lot of an auto parts store on Remount and Craig roads."
+  - says: "On a Saturday morning in April, twenty fifteen, a police car pulled a man over here, for a broken taillight."
+    source: 2
+    quote: "Scott, a father of four children, was stopped by Slager for a broken taillight."
+  - says: "The driver was Walter Scott. He was fifty years old, and a father of four."
+    source: 4
+    quote: "Scott, 50, was Black."
+  - says: "The driver was Walter Scott. He was fifty years old, and a father of four."
+    source: 2
+    quote: "Scott, a father of four children"
+  - says: "The officer was Michael Slager, of the North Charleston police."
+    source: 4
+    quote: "Slager, a former North Charleston police officer"
+  - says: "As the officer checked his papers, Scott opened his door and ran. Slager went after him, with his Taser."
+    source: 1
+    quote: "Scott opened his car door and ran as the officer checked his identification. Slager chased after him, using a Taser in a bid to gain control."
+  - says: "There was a struggle on the ground."
+    source: 1
+    quote: "said Scott gained control of the officer’s Taser during the ground struggle"
+  - says: "Then, over the radio, Slager said: Shots fired. Subject is down. He grabbed my Taser."
+    source: 1
+    quote: "\"Shots fired. Subject is down. He grabbed my Taser,\" Slager said over his radio."
+  - says: "In the days that followed, that was the police account."
+    source: 1
+    quote: "In the days that followed, police declared it a traffic stop gone wrong"
+  - says: "But a bystander had been filming on his phone."
+    source: 2
+    quote: "A bystander captured the shooting of Scott on his cellphone"
+  - says: "The video began after the struggle. It showed Scott running away, and the officer firing eight times. Five shots hit him."
+    source: 3
+    quote: "The bystander's video started after the struggle between Slager and Scott and showed Scott running away and the officer firing eight times. Scott was hit in the back five times."
+  - says: "It did not show Scott taking the Taser."
+    source: 2
+    quote: "The video didn't show Scott taking the stun gun."
+  - says: "His state trial ended with a deadlocked jury."
+    source: 3
+    quote: "A year ago, a state judge declared a mistrial when jurors deadlocked."
+  - says: "In twenty seventeen, he pleaded guilty in federal court to violating Walter Scott's civil rights."
+    source: 3
+    quote: "Still, Slager pleaded guilty in federal court to violating Scott's civil rights."
+  - says: "The judge found that the killing was murder, and sentenced him to twenty years in prison."
+    source: 3
+    quote: "Norton found that it was murder."
+  - says: "The judge found that the killing was murder, and sentenced him to twenty years in prison."
+    source: 2
+    quote: "was sentenced to 20 years behind bars after pleading guilty in Scott's death"
+  - says: "A man who fought for an officer's Taser."
+    source: 1
+    quote: "said Scott gained control of the officer’s Taser during the ground struggle and tried to use it against Slager."
+  - says: "The radio call said one thing."
+    source: 1
+    quote: "\"Shots fired. Subject is down. He grabbed my Taser,\" Slager said over his radio."
+  - says: "A stranger's phone said another."
+    source: 3
+    quote: "A bystander recorded the shooting on a cellphone"
+sources:
+  - title: "How Walter Scott's death continues to reverberate 5 years later for two SC families"
+    publisher: "The Post and Courier"
+    url: https://www.postandcourier.com/news/how-walter-scotts-death-continues-to-reverberate-5-years-later-for-two-sc-families/article_6a6f74dc-58cc-11ea-b9f2-9bb5868db708.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Walter Scott shooting: Michael Slager, ex-officer, sentenced to 20 years in prison"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/storyline/walter-scott-shooting/walter-scott-shooting-michael-slager-ex-officer-sentenced-20-years-n825006
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Michael Slager, ex-cop, gets 20 years for fatal shooting of unarmed motorist Walter Scott (Associated Press)"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/michael-slager-ex-cop-gets-20-years-for-fatal-shooting-of-unarmed-motorist-walter-scott/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Judge upholds Michael Slager's 20-year sentence for killing Walter Scott"
+    publisher: "The Post and Courier"
+    url: https://www.postandcourier.com/news/judge-upholds-michael-slagers-20-year-sentence-for-killing-walter-scott/article_ed4b79c4-a14f-11eb-8d5e-7ffbbaf76933.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "N. Charleston officer fatally shoots man"
+    publisher: "The Post and Courier"
+    url: https://www.postandcourier.com/archives/n-charleston-officer-fatally-shoots-man/article_4480489f-a733-57fc-b326-bdf95032d33c.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/charleston-a-broken-taillight/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 75
+    audioBytes: 1201675
+    transcript:
+      totalS: 75
+      lines:
+        - text: Stand on the corner and look at the car park of the auto parts store.
+          atS: 0
+          durationS: 3.84
+        - text: On a Saturday morning in April, twenty fifteen, a police car pulled a man over here, for a broken taillight.
+          atS: 4.17
+          durationS: 6.75
+        - text: The driver was Walter Scott.
+          atS: 11.09
+          durationS: 2
+        - text: He was fifty years old, and a father of four.
+          atS: 13.36
+          durationS: 2.86
+        - text: The officer was Michael Slager, of the North Charleston police.
+          atS: 16.46
+          durationS: 3.82
+        - text: As the officer checked his papers, Scott opened his door and ran.
+          atS: 20.53
+          durationS: 4.1
+        - text: Slager went after him, with his Taser.
+          atS: 24.9
+          durationS: 2.3
+        - text: There was a struggle on the ground.
+          atS: 27.38
+          durationS: 1.66
+        - text: "Then, over the radio, Slager said: Shots fired."
+          atS: 29.12
+          durationS: 3.32
+        - text: Subject is down.
+          atS: 32.55
+          durationS: 0.98
+        - text: He grabbed my Taser.
+          atS: 33.55
+          durationS: 1.25
+        - text: In the days that followed, that was the police account.
+          atS: 35.02
+          durationS: 2.76
+        - text: A traffic stop gone wrong.
+          atS: 37.86
+          durationS: 1.58
+        - text: A man who fought for an officer's Taser.
+          atS: 39.55
+          durationS: 2.22
+        - text: But a bystander had been filming on his phone.
+          atS: 41.89
+          durationS: 2.45
+        - text: The video began after the struggle.
+          atS: 44.94
+          durationS: 2.05
+        - text: It showed Scott running away, and the officer firing eight times.
+          atS: 47.17
+          durationS: 3.98
+        - text: Five shots hit him.
+          atS: 51.36
+          durationS: 1.09
+        - text: It did not show Scott taking the Taser.
+          atS: 52.63
+          durationS: 2.39
+        - text: Slager was charged with murder.
+          atS: 55.26
+          durationS: 1.84
+        - text: His state trial ended with a deadlocked jury.
+          atS: 57.26
+          durationS: 2.68
+        - text: In twenty seventeen, he pleaded guilty in federal court to violating Walter Scott's civil rights.
+          atS: 60.01
+          durationS: 5.26
+        - text: The judge found that the killing was murder, and sentenced him to twenty years in prison.
+          atS: 65.36
+          durationS: 4.27
+        - text: Look at the corner again.
+          atS: 69.79
+          durationS: 1.3
+        - text: The radio call said one thing.
+          atS: 71.17
+          durationS: 1.81
+        - text: A stranger's phone said another.
+          atS: 73.13
+          durationS: 1.92

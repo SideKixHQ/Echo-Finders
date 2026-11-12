@@ -1,0 +1,203 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on 9th Street NW in front of number 1538, between Q and R Streets.
+# Position: Overture place 'Carter G. Woodson National Historic Site' (1538 9th St NW) at 38.91086, -77.02416; set onto the 9th Street sidewalk (high confidence).
+id: dc-why-february
+title: "Why February"
+summary: "Black History Month began as one week in February, planned in this Shaw row house by a former coal miner, Carter G. Woodson."
+place: "Carter G. Woodson Home National Historic Site, 1538 9th Street NW, Shaw, Washington, D.C."
+at: { lat: 38.91086, lng: -77.02405 }
+triggerRadiusKm: 0.03
+category: people
+format: short
+durationS: 102
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, shaw, black-history, carter-g-woodson, langston-hughes]
+teaser: "Every February starts in this row house."
+script: |
+  Find the narrow brick row house at fifteen thirty eight, Ninth Street. Every February, the whole country marks something that was dreamed up in there.
+
+  The man who bought it, in nineteen twenty two, was Carter G. Woodson. His parents had been enslaved. As a young man he dug coal in West Virginia, and he did not start high school until he was twenty. He finished in two years. In nineteen twelve, he earned a doctorate from Harvard. Only the second Black American ever to do it.
+
+  And then he noticed what was missing. The schools taught almost nothing about Black Americans at all. So he set out to write them back in, from this house. For a while, a young poet named Langston Hughes worked for him here. Hughes remembered his job. To open the office in the mornings, wrap and mail books, and bank the furnace at night when Doctor Woodson was away.
+
+  In nineteen twenty six, Woodson started something called Negro History Week. He chose the second week of February, because it held two birthdays. Abraham Lincoln's, and Frederick Douglass's. It was a week.
+
+  He died in this house in nineteen fifty, in his bedroom on the third floor. Look up at the top windows. Later, the house stood empty and fell apart. In twenty eleven, an earthquake pulled its front wall loose. The Park Service put it back together.
+
+  He asked the country for one week.
+
+  It gave him a month, twenty six years after he died.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Find the narrow brick row house at fifteen thirty eight, Ninth Street."
+    source: 1
+    quote: "Dr. Carter G. Woodson purchased 1538 Ninth Street in Northwest, Washington, D.C. on July 18, 1922 for $8,000.00."
+  - says: "Every February, the whole country marks something that was dreamed up in there."
+    source: 1
+    quote: "where he created \"Negro History Week\" in 1926"
+  - says: "The man who bought it, in nineteen twenty two, was Carter G. Woodson."
+    source: 1
+    quote: "Dr. Carter G. Woodson purchased 1538 Ninth Street in Northwest, Washington, D.C. on July 18, 1922 for $8,000.00."
+  - says: "His parents had been enslaved."
+    source: 2
+    quote: "Carter G. Woodson was the son of former slaves."
+  - says: "As a young man he dug coal in West Virginia, and he did not start high school until he was twenty."
+    source: 2
+    quote: "he worked in the New River Gorge coalfields to help supplement the family’s income"
+  - says: "As a young man he dug coal in West Virginia, and he did not start high school until he was twenty."
+    source: 2
+    quote: "by the time he was 20, Woodson saved enough money from his days as a coal miner to begin his formal education at Douglass High School"
+  - says: "He finished in two years."
+    source: 2
+    quote: "He received his diploma in just two years"
+  - says: "In nineteen twelve, he earned a doctorate from Harvard. Only the second Black American ever to do it."
+    source: 2
+    quote: "In 1912, he earned his Ph.D. from Harvard University, making him the second black American, only following W.E.B. Du Bois"
+  - says: "The schools taught almost nothing about Black Americans at all."
+    source: 2
+    quote: "The public knew very little about the role of African Americans in American history, and schools were not including African American history in their curricula."
+  - says: "So he set out to write them back in, from this house."
+    source: 3
+    quote: "to write Black Americans into the nation's history"
+  - says: "For a while, a young poet named Langston Hughes worked for him here."
+    source: 1
+    quote: "During the 1920s, the renowned poet and future leader of the Harlem Renaissance , Langston Hughes worked for Woodson."
+  - says: "Hughes remembered his job. To open the office in the mornings, wrap and mail books, and bank the furnace at night when Doctor Woodson was away."
+    source: 1
+    quote: "My job was to open the office in the mornings, keep it clean, wrap and mail books, assist in answering the mail, read proofs, bank the furnace at night when Dr. Woodson was away"
+  - says: "In nineteen twenty six, Woodson started something called Negro History Week."
+    source: 2
+    quote: "He initiated celebration of the first Negro History Week in 1926"
+  - says: "He chose the second week of February, because it held two birthdays."
+    source: 2
+    quote: "Woodson chose the second week of February for Negro History Week because it corresponds with the birthdays of both Frederick Douglass and Abraham Lincoln ."
+  - says: "Abraham Lincoln's, and Frederick Douglass's."
+    source: 2
+    quote: "because it corresponds with the birthdays of both Frederick Douglass and Abraham Lincoln"
+  - says: "He died in this house in nineteen fifty, in his bedroom on the third floor."
+    source: 1
+    quote: "On April 3, 1950 Woodson died in his bedroom, located on the third floor of the home."
+  - says: "Later, the house stood empty and fell apart."
+    source: 1
+    quote: "1990s and 2000s , house is still vacant and has fallen into disrepair again."
+  - says: "In twenty eleven, an earthquake pulled its front wall loose."
+    source: 1
+    quote: "August 2011 , additional damage occurred when a 5.8-magnitude earthquake detached the façade from the building"
+  - says: "The Park Service put it back together."
+    source: 1
+    quote: "NPS undertakes major rehabilitation of the building."
+  - says: "He asked the country for one week."
+    source: 2
+    quote: "He initiated celebration of the first Negro History Week in 1926"
+  - says: "It gave him a month, twenty six years after he died."
+    source: 2
+    quote: "the week became a month in 1976."
+  - says: "It gave him a month, twenty six years after he died."
+    source: 1
+    quote: "On April 3, 1950 Woodson died in his bedroom"
+sources:
+  - title: "The Office-Home"
+    publisher: "National Park Service, Carter G. Woodson Home National Historic Site"
+    url: https://www.nps.gov/cawo/learn/the-office-home.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Carter G. Woodson Home National Historic Site"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/carterg.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Meet Carter G. Woodson, the \"Father of Black History\""
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/carter-g-woodson-father-of-black-history-month/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-why-february/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 101.9
+    audioBytes: 1631337
+    transcript:
+      totalS: 101.9
+      lines:
+        - text: Find the narrow brick row house at fifteen thirty eight, Ninth Street.
+          atS: 0
+          durationS: 4.26
+        - text: Every February, the whole country marks something that was dreamed up in there.
+          atS: 4.96
+          durationS: 4.76
+        - text: The man who bought it, in nineteen twenty two, was Carter G.
+          atS: 10.53
+          durationS: 4.17
+        - text: Woodson.
+          atS: 14.74
+          durationS: 0.78
+        - text: His parents had been enslaved.
+          atS: 16.13
+          durationS: 2.03
+        - text: As a young man he dug coal in West Virginia, and he did not start high school until he was twenty.
+          atS: 19.27
+          durationS: 5.63
+        - text: He finished in two years.
+          atS: 25.6
+          durationS: 1.7
+        - text: In nineteen twelve, he earned a doctorate from Harvard.
+          atS: 27.9
+          durationS: 2.97
+        - text: Only the second Black American ever to do it.
+          atS: 31.48
+          durationS: 2.82
+        - text: And then he noticed what was missing.
+          atS: 34.9
+          durationS: 1.93
+        - text: The schools taught almost nothing about Black Americans at all.
+          atS: 37.15
+          durationS: 3.68
+        - text: So he set out to write them back in, from this house.
+          atS: 41.22
+          durationS: 3.58
+        - text: For a while, a young poet named Langston Hughes worked for him here.
+          atS: 45.49
+          durationS: 5.2
+        - text: Hughes remembered his job.
+          atS: 51.13
+          durationS: 1.95
+        - text: To open the office in the mornings, wrap and mail books, and bank the furnace at night when Doctor Woodson was away.
+          atS: 53.46
+          durationS: 7.14
+        - text: In nineteen twenty six, Woodson started something called Negro History Week.
+          atS: 61.56
+          durationS: 5.06
+        - text: He chose the second week of February, because it held two birthdays.
+          atS: 67.13
+          durationS: 4.05
+        - text: Abraham Lincoln's, and Frederick Douglass's.
+          atS: 71.78
+          durationS: 2.97
+        - text: It was a week.
+          atS: 75.45
+          durationS: 1
+        - text: He died in this house in nineteen fifty, in his bedroom on the third floor.
+          atS: 76.96
+          durationS: 4.66
+        - text: Look up at the top windows.
+          atS: 82.32
+          durationS: 1.71
+        - text: Later, the house stood empty and fell apart.
+          atS: 84.46
+          durationS: 3.21
+        - text: In twenty eleven, an earthquake pulled its front wall loose.
+          atS: 88.27
+          durationS: 4.16
+        - text: The Park Service put it back together.
+          atS: 92.87
+          durationS: 2.3
+        - text: He asked the country for one week.
+          atS: 95.55
+          durationS: 2.05
+        - text: It gave him a month, twenty six years after he died.
+          atS: 98.05
+          durationS: 3.84

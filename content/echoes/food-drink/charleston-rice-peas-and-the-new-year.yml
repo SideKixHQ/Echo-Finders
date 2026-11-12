@@ -1,0 +1,164 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The sidewalk in front of Hibernian Hall, 105 Meeting Street, under the Irish harp over the door. The hall is not open to the public.
+# Position: West side of Meeting Street just south of the Mills House, from the street file's Mills House point and the hall's street number (medium confidence). About 45 metres from the Fireproof Building echo across the street.
+id: charleston-rice-peas-and-the-new-year
+title: "Rice, Peas and the New Year"
+summary: "Hibernian Hall's New Year's Day dinner served Hoppin' John, rice and peas, which the 1941 state guide said Charleston loved like porridge."
+place: "Hibernian Hall, 105 Meeting Street, Charleston, South Carolina"
+at: { lat: 32.77757, lng: -79.93142 }
+triggerRadiusKm: 0.03
+category: food-drink
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [charleston, charleston-core, hibernian-hall, hoppin-john, rice, food, new-year]
+teaser: "Rice, peas and bacon. The most Charleston plate there is."
+script: |
+  Look above the door of this hall, at the carved Irish harp. Inside, on the first day of every year, the members sat down to a plate of something very plain.
+
+  Rice. Black eyed peas. A little bacon. Hoppin' John.
+
+  The Hibernian Society was founded in eighteen o one by eight Irishmen who had just arrived in South Carolina. This hall was built for them in eighteen forty. It even has a stone in it from the Giant's Causeway in Ireland.
+
+  In eighteen sixty, this building was full of cots. The national Democratic convention met in Charleston, and the delegates who backed Stephen Douglas made it their headquarters. The party could not agree on slavery. It split, and Abraham Lincoln won that November.
+
+  But the dinner that lasted was the quiet one. In nineteen forty one, the state guide listed the society's New Year's Day dinner, and the dish at the centre of it. Rice and peas and bacon, it said, as dear to Charlestonians as porridge to the Scot.
+
+  Look up at the harp again.
+
+  Irish founders. A Lowcountry plate. Every New Year.
+detail: >-
+  The 1941 Federal Writers' Project guide records the Hibernian Society's founding on 17 March 1801 by eight Irishmen, its New Year's Day dinner with Hop-in-John as a traditional dish, and the porridge comparison; it also lists hop-in-John among Low Country rice dishes. The National Park Service page gives the 1840 hall, the Douglas headquarters with hundreds of cots in 1860, the split of the Democratic party, the harp and the Giant's Causeway stone. Whether the dinner continues today is not in these sources, so the script ties it to 1941.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "The Hibernian Society was founded in eighteen o one by eight Irishmen who had just arrived in South Carolina."
+    source: 1
+    quote: "This is the home of the Hibernian Society, founded March 17, 1801, by eight Irishmen who had recently arrived in the State."
+  - says: "This hall was built for them in eighteen forty."
+    source: 2
+    quote: "Hibernian Hall, a National Historic Landmark, was built in 1840 to provide a meeting place for the Hibernian Society"
+  - says: "It even has a stone in it from the Giant's Causeway in Ireland."
+    source: 2
+    quote: "as well as a stone from Ireland’s Giant’s Causeway"
+  - says: "The national Democratic convention met in Charleston, and the delegates who backed Stephen Douglas made it their headquarters."
+    source: 2
+    quote: "Hibernian Hall served as the convention headquarters for the faction supporting Stephen A. Douglas."
+  - says: "The national Democratic convention met in Charleston, and the delegates who backed Stephen Douglas made it their headquarters."
+    source: 2
+    quote: "while the second floor was filled with hundreds of cots for the delegates."
+  - says: "The party could not agree on slavery."
+    source: 2
+    quote: "It was hoped that Douglas would bridge the gap between the northern and southern delegates on the issue of extending slavery to the territories."
+  - says: "It split, and Abraham Lincoln won that November."
+    source: 2
+    quote: "This divisiveness resulted in a split in the Democratic party, and the election of Abraham Lincoln, the Republican candidate."
+  - says: "In nineteen forty one, the state guide listed the society's New Year's Day dinner, and the dish at the centre of it."
+    source: 1
+    quote: "Day banquet and the New Year’s Day dinner, at which"
+  - says: "Rice and peas and bacon, it said, as dear to Charlestonians as porridge to the Scot."
+    source: 1
+    quote: "This mixture of rice, black-eyed peas, and bacon is as dear to Charlestonians as porridge to the Scot."
+  - says: "Inside, on the first day of every year, the members sat down to a plate of something very plain."
+    source: 1
+    quote: "Annual events of long standing held here are the society’s St. Pat- rick’s Day banquet and the New Year’s Day dinner, at which £ Hop-in- John’ is a traditional dish."
+  - says: "Hoppin' John."
+    source: 1
+    quote: "the New Year’s Day dinner, at which £ Hop-in- John’ is a traditional dish."
+  - says: "In eighteen sixty, this building was full of cots."
+    source: 2
+    quote: "The Hall is the only extant building associated with the National Democratic Convention of 1860"
+  - says: "In eighteen sixty, this building was full of cots."
+    source: 2
+    quote: "The first floor of the Hall was used for meetings, while the second floor was filled with hundreds of cots for the delegates."
+  - says: "But the dinner that lasted was the quiet one."
+    source: 1
+    quote: "Annual events of long standing held here are the society’s St. Pat- rick’s Day banquet and the New Year’s Day dinner"
+  - says: "A Lowcountry plate."
+    source: 1
+    quote: "This mixture of rice, black-eyed peas, and bacon is as dear to Charlestonians as porridge to the Scot."
+  - says: "Every New Year."
+    source: 1
+    quote: "the New Year’s Day dinner, at which £ Hop-in- John’ is a traditional dish."
+sources:
+  - title: "South Carolina: A Guide to the Palmetto State (Federal Writers' Project, 1941)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/in.ernet.dli.2015.180130
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Hibernian Hall"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/places/hibernian-hall.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-rice-peas-and-the-new-year/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 74.1
+    audioBytes: 1187047
+    transcript:
+      totalS: 74.1
+      lines:
+        - text: Look above the door of this hall, at the carved Irish harp.
+          atS: 0
+          durationS: 3.73
+        - text: Inside, on the first day of every year, the members sat down to a plate of something very plain.
+          atS: 4.05
+          durationS: 5.9
+        - text: Rice.
+          atS: 10.39
+          durationS: 0.65
+        - text: Black eyed peas.
+          atS: 11.42
+          durationS: 1.39
+        - text: A little bacon.
+          atS: 13.14
+          durationS: 1.12
+        - text: Hoppin' John.
+          atS: 14.64
+          durationS: 1.01
+        - text: The Hibernian Society was founded in eighteen o one by eight Irishmen who had just arrived in South Carolina.
+          atS: 16.77
+          durationS: 6.76
+        - text: This hall was built for them in eighteen forty.
+          atS: 23.96
+          durationS: 3.09
+        - text: It even has a stone in it from the Giant's Causeway in Ireland.
+          atS: 27.49
+          durationS: 3.65
+        - text: In eighteen sixty, this building was full of cots.
+          atS: 31.74
+          durationS: 3.43
+        - text: The national Democratic convention met in Charleston, and the delegates who backed Stephen Douglas made it their headquarters.
+          atS: 35.55
+          durationS: 7
+        - text: The party could not agree on slavery.
+          atS: 42.93
+          durationS: 2.29
+        - text: It split, and Abraham Lincoln won that November.
+          atS: 45.34
+          durationS: 3.32
+        - text: But the dinner that lasted was the quiet one.
+          atS: 49.17
+          durationS: 2.95
+        - text: In nineteen forty one, the state guide listed the society's New Year's Day dinner, and the dish at the centre of it.
+          atS: 52.72
+          durationS: 8.03
+        - text: Rice and peas and bacon, it said, as dear to Charlestonians as porridge to the Scot.
+          atS: 61.57
+          durationS: 5.99
+        - text: Look up at the harp again.
+          atS: 67.94
+          durationS: 1.34
+        - text: Irish founders.
+          atS: 69.49
+          durationS: 1.14
+        - text: A Lowcountry plate.
+          atS: 70.83
+          durationS: 1.41
+        - text: Every New Year.
+          atS: 72.48
+          durationS: 1.64

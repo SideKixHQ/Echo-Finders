@@ -1,0 +1,165 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core (U.S. Capitol), following the six beats in docs/writing-echoes.md (echo-format-v2) and docs/14-true-crime.md.
+# Listening spot: Inside the U.S. Capitol, in the public gallery of the House chamber (visitors need a gallery pass), looking down at the floor.
+# Position: the House wing at the south end of the Capitol, south of the Rotunda's centre (38.88990, -77.00906); the chamber's exact centre was not found in a reachable source (medium confidence).
+id: dc-shots-from-the-gallery
+title: "Shots From the Gallery"
+summary: "On 1 March 1954, four Puerto Rican nationalists opened fire from the House visitors' gallery. Five congressmen were wounded."
+place: "House chamber public gallery, U.S. Capitol, Washington, D.C."
+at: { lat: 38.88935, lng: -77.00905 }
+triggerRadiusKm: 0.05
+category: true-crime
+format: short
+durationS: 71
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.75
+inside: true
+hours: { fromHour: 9, toHour: 16 }
+tags: [washington, dc-core, us-capitol, house-of-representatives, 1954, puerto-rico]
+teaser: "Visitors sit up here to watch the House. In 1954, four of them came to shoot."
+script: |
+  Look down from the gallery onto the floor of the House. This is where the public sits, to watch its representatives at work.
+
+  On the first of March, nineteen fifty four, the House was debating, and the floor was crowded. Up in this gallery sat four visitors, three men and a woman, Puerto Rican nationalists from New York.
+
+  They stood up with pistols, and fired down onto the floor. Nearly thirty shots, by one count. They unfurled a Puerto Rican flag, and shouted, Viva Puerto Rico libre.
+
+  Five congressmen were wounded. None of them died.
+
+  The four were sentenced to long prison terms. The woman who led them, Lolita Lebron, spent twenty five years behind bars. In nineteen seventy nine, President Carter granted all four clemency.
+
+  Their cause was independence for Puerto Rico. When Lebron died, a Latino policy leader told NPR she was very controversial. A significant number of Puerto Ricans, he said, see her as a heroine. To the people on this floor, under a hail of bullets, she was something else.
+
+  Look down at the floor again. People still argue about what those shots meant.
+
+  Nobody argues about where they came from.
+pronunciations:
+  - written: Lebron
+    say: leh-BRONE
+detail: >-
+  Conviction status: convicted; all four received long sentences (NBC, NPR) and were granted clemency by President Carter in 1979. All four are dead (Lebron in 2010, per NPR; the others are named only in source captions). The wounded congressmen are not named in the script. "Nearly thirty shots" is NBC's figure; NPR has given "more than 20". The view of Lebron as a heroine is attributed to Angelo Falcon, as NPR reported it.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo concerns a shooting in which five people were wounded. No injuries are described."
+claims:
+  - says: "Up in this gallery sat four visitors, three men and a woman, Puerto Rican nationalists from New York."
+    source: 1
+    quote: "On March 1, 1954, Puerto Rican nationalists from New York carried out a shooting attack on Capitol Hill"
+  - says: "They stood up with pistols, and fired down onto the floor. Nearly thirty shots, by one count. They unfurled a Puerto Rican flag, and shouted, Viva Puerto Rico libre."
+    source: 2
+    quote: "They fired nearly 30 shots, unfurled a Puerto Rican flag and shouted, \"Viva Puerto Rico libre!\""
+  - says: "Five congressmen were wounded."
+    source: 2
+    quote: "Five congressmen were wounded when four Puerto Rican nationalists entered the U.S. Capitol with automatic pistols and opened fire from an upstairs spectators' gallery onto the crowded floor of the House."
+  - says: "None of them died."
+    source: 3
+    quote: "No members of Congress died in the attack"
+  - says: "The woman who led them, Lolita Lebron, spent twenty five years behind bars."
+    source: 3
+    quote: "Lolita Lebron, the Puerto Rican independence activist who led three others to attack the U.S. House of Representatives with pistols in 1954, died at age 90 over the weekend. She spent 25 years in jail for the shooting on Capitol Hill."
+  - says: "In nineteen seventy nine, President Carter granted all four clemency."
+    source: 2
+    quote: "President Jimmy Carter granted them clemency in 1979."
+  - says: "Their cause was independence for Puerto Rico."
+    source: 3
+    quote: "Lolita Lebron, the Puerto Rican independence activist"
+  - says: "When Lebron died, a Latino policy leader told NPR she was very controversial. A significant number of Puerto Ricans, he said, see her as a heroine."
+    source: 3
+    quote: "She's very controversial. I'm not going to say everybody thinks she's a hero, but certainly a significant number of Puerto Ricans do see her that way, do see her as a heroine for Puerto Rico."
+  - says: "The four were sentenced to long prison terms."
+    source: 2
+    quote: "Lolita Lebron, Rafael Cancel Miranda, Irving Flores and Andres Figueroa Cordero received lengthy prison sentences."
+  - says: "On the first of March, nineteen fifty four, the House was debating, and the floor was crowded."
+    source: 2
+    quote: "March 1, 1954: Five congressmen were wounded when four Puerto Rican nationalists entered the U.S. Capitol with automatic pistols and opened fire from an upstairs spectators' gallery onto the crowded floor of the House."
+  - says: "On the first of March, nineteen fifty four, the House was debating, and the floor was crowded."
+    source: 1
+    quote: "More than 60 years ago, four Puerto Rican nationalists opened fire on lawmakers debating on the House floor."
+sources:
+  - title: "Listen: Eyewitnesses Recount The 1954 Shooting Attack On The U.S. Capitol"
+    publisher: "NPR, Weekend Edition Sunday"
+    url: https://www.npr.org/2021/01/17/957722906/listen-eyewitnesses-recount-the-1954-shooting-attack-on-the-u-s-capitol
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Members of Congress attacked in past"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna40980103
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Remembering Puerto Rican Activist Lolita Lebron"
+    publisher: "NPR, All Things Considered"
+    url: https://www.npr.org/transcripts/128959759
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-shots-from-the-gallery/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 70.8
+    audioBytes: 1133548
+    transcript:
+      totalS: 70.8
+      lines:
+        - text: Look down from the gallery onto the floor of the House.
+          atS: 0
+          durationS: 2.75
+        - text: This is where the public sits, to watch its representatives at work.
+          atS: 3.03
+          durationS: 3.89
+        - text: On the first of March, nineteen fifty four, the House was debating, and the floor was crowded.
+          atS: 7.25
+          durationS: 5.56
+        - text: Up in this gallery sat four visitors, three men and a woman, Puerto Rican nationalists from New York.
+          atS: 13.32
+          durationS: 5.84
+        - text: They stood up with pistols, and fired down onto the floor.
+          atS: 19.31
+          durationS: 3.3
+        - text: Nearly thirty shots, by one count.
+          atS: 22.75
+          durationS: 2.09
+        - text: They unfurled a Puerto Rican flag, and shouted, Viva Puerto Rico libre.
+          atS: 25
+          durationS: 4.66
+        - text: Five congressmen were wounded.
+          atS: 29.98
+          durationS: 1.63
+        - text: None of them died.
+          atS: 31.78
+          durationS: 1.04
+        - text: The four were sentenced to long prison terms.
+          atS: 32.95
+          durationS: 2.74
+        - text: The woman who led them, Lolita Lebron, spent twenty five years behind bars.
+          atS: 35.9
+          durationS: 4.86
+        - text: In nineteen seventy nine, President Carter granted all four clemency.
+          atS: 41.09
+          durationS: 4.3
+        - text: Their cause was independence for Puerto Rico.
+          atS: 45.53
+          durationS: 2.89
+        - text: When Lebron died, a Latino policy leader told NPR she was very controversial.
+          atS: 48.81
+          durationS: 5.29
+        - text: A significant number of Puerto Ricans, he said, see her as a heroine.
+          atS: 54.38
+          durationS: 4.4
+        - text: To the people on this floor, under a hail of bullets, she was something else.
+          atS: 59.06
+          durationS: 4.41
+        - text: Look down at the floor again.
+          atS: 63.75
+          durationS: 1.59
+        - text: People still argue about what those shots meant.
+          atS: 65.55
+          durationS: 2.68
+        - text: Nobody argues about where they came from.
+          atS: 68.44
+          durationS: 2.33

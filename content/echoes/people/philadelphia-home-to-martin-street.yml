@@ -1,0 +1,164 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (Graduate Hospital, Southwest Center City), second pass, following docs/writing-echoes.md (format v2).
+# Listening spot: Martin Street, the narrow street between Nineteenth and Twentieth, just north of Catharine Street, outside number 762.
+# Position: the Overture street-map intersection of Martin and Catharine streets (39.941901, -75.174876), moved a few metres north along Martin Street (high confidence for the street; the NPS page gives the address, 762 Martin Street).
+id: philadelphia-home-to-martin-street
+title: "Home to Martin Street"
+summary: "Marian Anderson's mother bought this row house in 1924 with money from her singing. It was still her home in 1939, when Washington said no."
+place: "762 South Martin Street, Graduate Hospital, Philadelphia, Pennsylvania"
+at: { lat: 39.94215, lng: -75.17482 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 94
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [philadelphia, graduate-hospital, martin-street, marian-anderson, music, civil-rights, lincoln-memorial]
+teaser: "Turned away by a Philadelphia music school. Then seventy five thousand people."
+script: |
+  Look along this little street, at the row houses. One of them, number seven six two, was bought in nineteen twenty four by a woman named Anna Anderson. Part of the money came from her daughter's singing.
+
+  Her daughter was Marian Anderson. A contralto. And a music school here in Philadelphia had turned her away, because she was Black.
+
+  So she went to Europe, where there was less prejudice and more chance to learn. She sang there for years. When she came home, she was famous. She sang at the White House. And through all of it, the house on this street stayed her home, and her office.
+
+  In nineteen thirty nine, her manager tried to book her into Constitution Hall in Washington. It belonged to the Daughters of the American Revolution. They said no. Every date he asked for was refused, even though those dates were open to white performers.
+
+  The First Lady, Eleanor Roosevelt, resigned from the Daughters in protest.
+
+  And so, on Easter Sunday, the ninth of April, nineteen thirty nine, Marian Anderson sang outdoors instead. On the steps of the Lincoln Memorial. More than seventy five thousand people came. Millions more listened on the radio.
+
+  Look at the house again. Small, plain, one of a row.
+
+  Seventy five thousand people. And then, home to Martin Street.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "One of them, number seven six two, was bought in nineteen twenty four by a woman named Anna Anderson. Part of the money came from her daughter's singing."
+    source: 1
+    quote: "The Marian Anderson House was purchased by her mother, Anna, in 1924 in part with money from Anderson's fledgling career as a musician."
+  - says: "Her daughter was Marian Anderson. A contralto."
+    source: 1
+    quote: "a civil rights icon and an African American contralto"
+  - says: "And a music school here in Philadelphia had turned her away, because she was Black."
+    source: 1
+    quote: "Marian was denied admittance to a music school in Philadelphia based solely on the color of her skin."
+  - says: "So she went to Europe, where there was less prejudice and more chance to learn. She sang there for years."
+    source: 1
+    quote: "Many found it easier to complete studies in Europe, where there was less racial discrimination and more opportunities to grow. Following other musicians before her, Marian took advantage of the opportunities abroad. From late October 1927 through 1935, Marian spent much of her time in Europe."
+  - says: "She sang at the White House."
+    source: 1
+    quote: "In February 1936, she performed at the White House for President and Mrs. Roosevelt."
+  - says: "And through all of it, the house on this street stayed her home, and her office."
+    source: 1
+    quote: "Anderson continued to make the family home her primary residence and office even as she toured increasingly across the country and internationally."
+  - says: "In nineteen thirty nine, her manager tried to book her into Constitution Hall in Washington. It belonged to the Daughters of the American Revolution. They said no. Every date he asked for was refused, even though those dates were open to white performers."
+    source: 1
+    quote: "The Daughters of the American Revolution (DAR), proprietors of Constitution Hall, refused to schedule Marian Anderson to perform at Constitution Hall on any of the dates Hurok requested, even though the same dates were open to white performers."
+  - says: "The First Lady, Eleanor Roosevelt, resigned from the Daughters in protest."
+    source: 1
+    quote: "Ultimately as a result of this overt racial discrimination, First Lady Eleanor Roosevelt resigned from the DAR"
+  - says: "And so, on Easter Sunday, the ninth of April, nineteen thirty nine, Marian Anderson sang outdoors instead. On the steps of the Lincoln Memorial. More than seventy five thousand people came. Millions more listened on the radio."
+    source: 1
+    quote: "Mrs. Roosevelt and the Department of the Interior organized an open-air concert on the steps of the Lincoln Memorial on Easter Sunday, April 9, 1939. More than 75,000 people were in attendance at this performance, with millions more listening via radio."
+  - says: "Seventy five thousand people. And then, home to Martin Street."
+    source: 1
+    quote: "Following Anderson's marriage in 1943, she moved to Connecticut but continued to own the Philadelphia house"
+  - says: "Small, plain, one of a row."
+    source: 2
+    quote: "Anderson bought the 1,168-square-foot rowhouse at 762 Martin St. in 1924"
+  - says: "Small, plain, one of a row."
+    source: 2
+    quote: "was living in this two-story South Philly home on Martin Street when she sang at the Lincoln Memorial."
+sources:
+  - title: "Marian Anderson House"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/marian-anderson-house.htm
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "The Marian Anderson Historical Society and Museum reopens in time for Women's History Month (2025)"
+    publisher: "The Philadelphia Inquirer"
+    url: https://www.inquirer.com/arts/theater/marian-anderson-historical-society-reopened-jillian-pirtle-20250312.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-home-to-martin-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 93.9
+    audioBytes: 1502606
+    transcript:
+      totalS: 93.9
+      lines:
+        - text: Look along this little street, at the row houses.
+          atS: 0
+          durationS: 2.97
+        - text: One of them, number seven six two, was bought in nineteen twenty four by a woman named Anna Anderson.
+          atS: 3.41
+          durationS: 6.69
+        - text: Part of the money came from her daughter's singing.
+          atS: 10.91
+          durationS: 2.41
+        - text: Her daughter was Marian Anderson.
+          atS: 14.14
+          durationS: 2.01
+        - text: A contralto.
+          atS: 16.75
+          durationS: 1.1
+        - text: And a music school here in Philadelphia had turned her away, because she was Black.
+          atS: 18.55
+          durationS: 5.02
+        - text: So she went to Europe, where there was less prejudice and more chance to learn.
+          atS: 24.38
+          durationS: 4.78
+        - text: She sang there for years.
+          atS: 29.77
+          durationS: 1.71
+        - text: When she came home, she was famous.
+          atS: 32.08
+          durationS: 1.99
+        - text: She sang at the White House.
+          atS: 34.67
+          durationS: 1.52
+        - text: And through all of it, the house on this street stayed her home, and her office.
+          atS: 36.28
+          durationS: 5.28
+        - text: In nineteen thirty nine, her manager tried to book her into Constitution Hall in Washington.
+          atS: 42.38
+          durationS: 5.5
+        - text: It belonged to the Daughters of the American Revolution.
+          atS: 48.58
+          durationS: 2.98
+        - text: They said no.
+          atS: 52.16
+          durationS: 0.94
+        - text: Every date he asked for was refused, even though those dates were open to white performers.
+          atS: 53.92
+          durationS: 5.89
+        - text: The First Lady, Eleanor Roosevelt, resigned from the Daughters in protest.
+          atS: 60.92
+          durationS: 5.42
+        - text: And so, on Easter Sunday, the ninth of April, nineteen thirty nine, Marian Anderson sang outdoors instead.
+          atS: 66.94
+          durationS: 7.49
+        - text: On the steps of the Lincoln Memorial.
+          atS: 74.87
+          durationS: 2.23
+        - text: More than seventy five thousand people came.
+          atS: 77.92
+          durationS: 2.57
+        - text: Millions more listened on the radio.
+          atS: 80.86
+          durationS: 2.23
+        - text: Look at the house again.
+          atS: 83.79
+          durationS: 1.18
+        - text: Small, plain, one of a row.
+          atS: 85.36
+          durationS: 3.14
+        - text: Seventy five thousand people.
+          atS: 89
+          durationS: 1.82
+        - text: And then, home to Martin Street.
+          atS: 91.43
+          durationS: 2.43

@@ -1,0 +1,160 @@
+# Drafted by Claude Code (2026-11-11) for the second Charleston pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The public road in the 700 block of West Ashley Avenue, Folly Beach, by the historical marker unveiled in September 2026 in front of the Heywards' summer house at 712 West Ashley Avenue. The house is private; the listener stays on the road.
+# Position: West Ashley Avenue between 7th and 8th Streets West, from the Overture street segments, checked against the land map (medium confidence; the house number was placed by block, not by a surveyed point). Place evidence is "building".
+id: charleston-an-opera-at-the-beach
+title: "An Opera at the Beach"
+summary: "In 1934 George Gershwin came to Folly Beach to write Porgy and Bess with DuBose Heyward. Charleston did not hear it performed until 1970."
+place: "West Ashley Avenue, Folly Beach, South Carolina, by the Porgy House marker"
+at: { lat: 32.64870, lng: -79.95470 }
+triggerRadiusKm: 0.06
+category: inspo
+inspo:
+  kind: creation
+  evidence: building
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.8
+tags: [charleston, folly-beach, gershwin, porgy-and-bess, heyward, music, opera, 1934]
+teaser: "The opera was written a few miles from Charleston. Charleston waited thirty five years to hear it."
+script: |
+  Find the two storey house on West Ashley Avenue, with the historical marker in front of it. The writer DuBose Heyward and his wife, Dorothy, spent their summers here.
+
+  In nineteen thirty four, George Gershwin came down by train with his cousin, the painter Henry Botkin. They drove out to Folly Beach, where Heyward had rented a cottage for him on West Arctic Avenue.
+
+  Gershwin had come to write an opera, from Heyward's novel Porgy.
+
+  The house in front of you is where the two men worked on it together. Inside, it still has a writer's booth that the Heywards and Gershwin used.
+
+  Porgy was not entirely invented. Heyward had kept a clipping from the Charleston paper about a real man, Samuel Smalls, who was familiar to King Street with his goat and cart.
+
+  The opera they wrote was Porgy and Bess. It was set in Charleston.
+
+  Charleston did not see it performed until nineteen seventy.
+
+  Look at the house again.
+
+  It was written a few miles from the city. The city waited thirty five years to hear it.
+detail: >-
+  The Post and Courier gives the house at 712 West Ashley Avenue where DuBose and Dorothy Heyward spent their summers, the September 2026 marker in front of it, its account that Heyward and Gershwin collaborated there in 1934, the writer's booth still inside, and Samuel Smalls and the 1924 clipping Heyward kept (report of 25 September 2026). A separate Post and Courier item (2020) gives Gershwin's arrival by train with his cousin Henry Botkin and the cottage Heyward had rented for him at 708 West Arctic Avenue. The South Carolina Encyclopedia entry on Heyward independently gives Heyward's large part in writing Porgy and Bess, its debut six years after Mamba's Daughters (1929), that is 1935, and that it was not performed in Charleston until June 1970. The place facts rest on one publisher, so factCheck stays single-source: a reviewer should look for a second source that puts the collaboration in the West Ashley Avenue house rather than Gershwin's cottage on West Arctic Avenue. "Thirty five years" counts from the 1935 debut to 1970. The Catfish Row echo on Church Street covers the play and Cabbage Row; this one covers where the opera was written.
+pronunciations:
+  - written: "DuBose Heyward"
+    say: "doo-BOHZ HAY-wurd"
+  - written: "Botkin"
+    say: "BOT-kin"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Find the two storey house on West Ashley Avenue, with the historical marker in front of it."
+    source: 1
+    quote: "installed a historical marker in front of the home at 712 W. Ashley Ave."
+  - says: "The writer DuBose Heyward and his wife, Dorothy, spent their summers here."
+    source: 1
+    quote: "Nicknamed the Porgy House, the two-story home on West Ashley Avenue is where author DuBose Heyward and his wife, Dorothy, spent their summers."
+  - says: "In nineteen thirty four, George Gershwin came down by train with his cousin, the painter Henry Botkin."
+    source: 2
+    quote: "George Gershwin arrived by train in Charleston with his cousin, artist Henry Botkin."
+  - says: "They drove out to Folly Beach, where Heyward had rented a cottage for him on West Arctic Avenue."
+    source: 2
+    quote: "They drove out to Folly Beach where Heyward had rented a cottage at 708 West Arctic Avenue."
+  - says: "Gershwin had come to write an opera, from Heyward's novel Porgy."
+    source: 2
+    quote: "Gershwin was in the Lowcountry to work on the score for his proposed opera, Porgy and Bess, based on Dubose Heyward’s novel and stage play, Porgy."
+  - says: "The house in front of you is where the two men worked on it together."
+    source: 1
+    quote: "In 1934, the home is where George Gershwin and Heyward collaborated to create “Porgy and Bess,” inspired by Heyward’s novel “Porgy.”"
+  - says: "Inside, it still has a writer's booth that the Heywards and Gershwin used."
+    source: 1
+    quote: "still features its original wood interiors and a writer’s booth used by the Heywards and Gershwin as a workspace."
+  - says: "Heyward had kept a clipping from the Charleston paper about a real man, Samuel Smalls, who was familiar to King Street with his goat and cart."
+    source: 1
+    quote: "Smalls, described in the blotter as a man “familiar to King street pedestrians with his goat and cart”"
+  - says: "Heyward had kept a clipping from the Charleston paper about a real man, Samuel Smalls, who was familiar to King Street with his goat and cart."
+    source: 1
+    quote: "Heyward kept the blurb"
+  - says: "It was set in Charleston."
+    source: 1
+    quote: "a novel set in Charleston that follows the lives of African Americans in Catfish Row"
+  - says: "The opera they wrote was Porgy and Bess."
+    source: 3
+    quote: "he collaborated with George Gershwin on the script and wrote the libretto (the sung dialogue) by himself"
+  - says: "Charleston did not see it performed until nineteen seventy."
+    source: 3
+    quote: "Porgy and Bess, the work that brought him–and his city–unprecedented fame was not performed in Charleston until the South Carolina Tricentennial in June 1970."
+  - says: "Charleston did not see it performed until nineteen seventy."
+    source: 1
+    quote: "Despite being set in the Lowcountry, the opera would not be performed in Charleston until 1970."
+  - says: "The city waited thirty five years to hear it."
+    source: 3
+    quote: "six short years later the innovative opera Porgy and Bess made its debut"
+sources:
+  - title: "South Carolina beach home where opera 'Porgy and Bess' was written receives historical marker"
+    publisher: "The Post and Courier"
+    url: https://www.postandcourier.com/charleston_sc/porgy-and-bess-house-folly-beach-historical-marker/article_20f3d0ec-2a42-4476-81c4-d453917c2972.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "June 16, 1934: Porgy and Bess"
+    publisher: "The Post and Courier"
+    url: https://www.postandcourier.com/350/articles/june-16-1934---porgy-and-bess/article_e0d256f6-a432-11ea-a05e-e3c29f0e0d3b.html
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Heyward, DuBose"
+    publisher: "South Carolina Encyclopedia, University of South Carolina"
+    url: https://www.scencyclopedia.org/sce/entries/heyward-dubose/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-an-opera-at-the-beach/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.3
+    audioBytes: 1094260
+    transcript:
+      totalS: 68.3
+      lines:
+        - text: Find the two storey house on West Ashley Avenue, with the historical marker in front of it.
+          atS: 0
+          durationS: 5.46
+        - text: The writer DuBose Heyward and his wife, Dorothy, spent their summers here.
+          atS: 6.06
+          durationS: 4.54
+        - text: In nineteen thirty four, George Gershwin came down by train with his cousin, the painter Henry Botkin.
+          atS: 11.55
+          durationS: 7.01
+        - text: They drove out to Folly Beach, where Heyward had rented a cottage for him on West Arctic Avenue.
+          atS: 19.17
+          durationS: 5.63
+        - text: Gershwin had come to write an opera, from Heyward's novel Porgy.
+          atS: 25.4
+          durationS: 4.23
+        - text: The house in front of you is where the two men worked on it together.
+          atS: 30.07
+          durationS: 3.76
+        - text: Inside, it still has a writer's booth that the Heywards and Gershwin used.
+          atS: 34.95
+          durationS: 4.62
+        - text: Porgy was not entirely invented.
+          atS: 40.01
+          durationS: 2.37
+        - text: Heyward had kept a clipping from the Charleston paper about a real man, Samuel Smalls, who was familiar to King Street with his goat and cart.
+          atS: 42.98
+          durationS: 8.63
+        - text: The opera they wrote was Porgy and Bess.
+          atS: 52.3
+          durationS: 2.65
+        - text: It was set in Charleston.
+          atS: 55.46
+          durationS: 1.54
+        - text: Charleston did not see it performed until nineteen seventy.
+          atS: 57.82
+          durationS: 3.29
+        - text: Look at the house again.
+          atS: 61.91
+          durationS: 1.25
+        - text: It was written a few miles from the city.
+          atS: 63.55
+          durationS: 1.96
+        - text: The city waited thirty five years to hear it.
+          atS: 65.76
+          durationS: 2.55

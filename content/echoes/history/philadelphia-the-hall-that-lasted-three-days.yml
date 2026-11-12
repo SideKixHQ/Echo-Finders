@@ -1,0 +1,201 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Old City), following docs/writing-echoes.md (format v2).
+# Listening spot: West sidewalk of North Sixth Street between Cherry and Race, the block where Pennsylvania Hall stood.
+# Position: between the Overture street-map intersections of Sixth and Cherry and Sixth and Race (39.954641, -75.149523), on the west side; the 1838 account puts the Hall at the southwest corner of Sixth and Haines, a lane between Cherry and Sassafras (Race) that no longer exists (medium confidence).
+id: philadelphia-the-hall-that-lasted-three-days
+title: "The Hall That Lasted Three Days"
+summary: "Abolitionists built a grand hall here in 1838, with Virtue, Liberty and Independence over the stage. On its fourth night a mob burned it."
+place: "Site of Pennsylvania Hall, North Sixth Street between Cherry and Race streets, Old City, Philadelphia, Pennsylvania"
+at: { lat: 39.95420, lng: -75.14982 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 94
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.8
+tags: [philadelphia, philadelphia-core, old-city, pennsylvania-hall, abolition, angelina-grimke, mob, black-history]
+teaser: "The firemen came with their engines. They did not aim them at the hall."
+script: |
+  Look along this side of Sixth Street, just below Race. In the spring of eighteen thirty eight, the most splendid hall in the city stood here. Lit with gas. Galleries on three sides. And over the stage, in large gold letters, three words. Virtue, Liberty, and Independence.
+
+  It was built by people who wanted to end slavery. It lasted three days.
+
+  It opened on the fourteenth of May. On the third night, a woman from South Carolina named Angelina Grimke stood up to speak. Slavery had been all around her as a girl. I have seen it, she said. I have seen it. Outside, a crowd was gathering. Stones hit the windows. She kept going. What is a mob, she asked. What would the breaking of every window be?
+
+  The next evening, the managers handed the keys to the mayor. He told the crowd there would be no meeting that night. They gave three cheers for the mayor. Then they forced the doors, piled up books and window blinds on the stage, and set them alight. They turned the gas pipes toward the flames.
+
+  The fire companies came with their engines. They sprayed the houses next door. Not one drop went on the hall.
+
+  The next morning at eight, the abolitionists met beside the ruins, and carried on.
+
+  Look up at the empty air over Sixth Street. For a moment, in the firelight, those gold words shone clearly.
+
+  Then they were gone.
+pronunciations:
+  - written: "Grimke"
+    say: "GRIM-kee"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In the spring of eighteen thirty eight, the most splendid hall in the city stood here."
+    source: 1
+    quote: "formed altogether one of the most commodious and splendid buildings in the city."
+  - says: "Lit with gas."
+    source: 1
+    quote: "This Hall, which was brilliantly lighted with gas"
+  - says: "Galleries on three sides."
+    source: 1
+    quote: "The second story formed one large saloon, having galleries round three sides."
+  - says: "And over the stage, in large gold letters, three words. Virtue, Liberty, and Independence."
+    source: 1
+    quote: "over this arch, in large gold letters, was the motto"
+  - says: "It was built by people who wanted to end slavery."
+    source: 1
+    quote: "the views of many of the Managers of the Hall on the subject of Abolition"
+  - says: "It lasted three days."
+    source: 1
+    quote: "destroyed by a mob on the night of the 17th of the Fifth Month, (May,) 1838"
+  - says: "It opened on the fourteenth of May."
+    source: 1
+    quote: "On the 14th of the Fifth month, (May,) 1838, agreeably to public notice, the doors of the Pennsylvania Hall were thrown open"
+  - says: "On the third night, a woman from South Carolina named Angelina Grimke stood up to speak."
+    source: 1
+    quote: "She was followed by Angelina E. Grimke Weld, a native, and until within a few years a resident, of South Carolina."
+  - says: "Slavery had been all around her as a girl."
+    source: 1
+    quote: "I was brought up under its wing"
+  - says: "I have seen it, she said. I have seen it."
+    source: 1
+    quote: "bear testimony against slavery. I have seen it — I have seen it."
+  - says: "Outside, a crowd was gathering."
+    source: 1
+    quote: "she was frequently interrupted by the mob."
+  - says: "Stones hit the windows. She kept going. What is a mob, she asked. What would the breaking of every window be?"
+    source: 1
+    quote: "Just then stones were thrown at the windows, — a great noise without, and commotion within.] What is a mob ? What would the breaking of every window be?"
+  - says: "The next evening, the managers handed the keys to the mayor."
+    source: 1
+    quote: "directed the door-keeper, in the presence of the Mayor, to deliver up the keys to the Mayor"
+  - says: "They gave three cheers for the mayor."
+    source: 1
+    quote: "The mob then gave \"three cheers for the Mayor,\" and soon after commenced the attack."
+  - says: "Then they forced the doors, piled up books and window blinds on the stage, and set them alight."
+    source: 1
+    quote: "forcing open the doors, and carrying papers and the window-blinds upon the speaker's platform, where they set fire to them"
+  - says: "They turned the gas pipes toward the flames."
+    source: 1
+    quote: "turning the gas pipes towards the flames thus increased their activity"
+  - says: "They sprayed the houses next door. Not one drop went on the hall."
+    source: 1
+    quote: "not a drop of water was thrown upon the Hall, till its destruction was ensured beyond possibility of prevention. Till then, the firemen confined their efforts to preserving the surrounding buildings"
+  - says: "The next morning at eight, the abolitionists met beside the ruins, and carried on."
+    source: 1
+    quote: "at 8 o'clock, the members of the Stale Society"
+  - says: "For a moment, in the firelight, those gold words shone clearly."
+    source: 1
+    quote: "shone clearly for a moment in the dazzling light, and was then effaced for ever"
+sources:
+  - title: "History of Pennsylvania Hall, which was destroyed by a mob, on the 17th of May, 1838 (Pennsylvania Hall Association, 1838)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofpennsyl00penn
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-hall-that-lasted-three-days/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 94.2
+    audioBytes: 1508875
+    transcript:
+      totalS: 94.2
+      lines:
+        - text: Look along this side of Sixth Street, just below Race.
+          atS: 0
+          durationS: 3.39
+        - text: In the spring of eighteen thirty eight, the most splendid hall in the city stood here.
+          atS: 3.99
+          durationS: 4.79
+        - text: Lit with gas.
+          atS: 9.07
+          durationS: 1.22
+        - text: Galleries on three sides.
+          atS: 10.61
+          durationS: 1.76
+        - text: And over the stage, in large gold letters, three words.
+          atS: 12.76
+          durationS: 4.2
+        - text: Virtue, Liberty, and Independence.
+          atS: 17.29
+          durationS: 3.02
+        - text: It was built by people who wanted to end slavery.
+          atS: 20.62
+          durationS: 3.18
+        - text: It lasted three days.
+          atS: 23.88
+          durationS: 1.56
+        - text: It opened on the fourteenth of May.
+          atS: 25.52
+          durationS: 2.09
+        - text: On the third night, a woman from South Carolina named Angelina Grimke stood up to speak.
+          atS: 27.84
+          durationS: 5.93
+        - text: Slavery had been all around her as a girl.
+          atS: 34.35
+          durationS: 2.72
+        - text: I have seen it, she said.
+          atS: 37.88
+          durationS: 1.61
+        - text: I have seen it.
+          atS: 39.67
+          durationS: 0.98
+        - text: Outside, a crowd was gathering.
+          atS: 41.25
+          durationS: 1.97
+        - text: Stones hit the windows.
+          atS: 43.47
+          durationS: 1.63
+        - text: She kept going.
+          atS: 45.21
+          durationS: 1.03
+        - text: What is a mob, she asked.
+          atS: 46.75
+          durationS: 2.11
+        - text: What would the breaking of every window be?
+          atS: 49.19
+          durationS: 2.41
+        - text: The next evening, the managers handed the keys to the mayor.
+          atS: 52.72
+          durationS: 3.37
+        - text: He told the crowd there would be no meeting that night.
+          atS: 56.78
+          durationS: 2.91
+        - text: They gave three cheers for the mayor.
+          atS: 60.02
+          durationS: 2.07
+        - text: Then they forced the doors, piled up books and window blinds on the stage, and set them alight.
+          atS: 62.53
+          durationS: 5.83
+        - text: They turned the gas pipes toward the flames.
+          atS: 68.96
+          durationS: 2.45
+        - text: The fire companies came with their engines.
+          atS: 71.54
+          durationS: 2.33
+        - text: They sprayed the houses next door.
+          atS: 73.99
+          durationS: 1.96
+        - text: Not one drop went on the hall.
+          atS: 76.16
+          durationS: 2
+        - text: The next morning at eight, the abolitionists met beside the ruins, and carried on.
+          atS: 79.46
+          durationS: 4.7
+        - text: Look up at the empty air over Sixth Street.
+          atS: 84.54
+          durationS: 2.6
+        - text: For a moment, in the firelight, those gold words shone clearly.
+          atS: 87.59
+          durationS: 4.77
+        - text: Then they were gone.
+          atS: 92.8
+          durationS: 1.43

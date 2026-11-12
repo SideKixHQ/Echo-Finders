@@ -1,0 +1,197 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Park Slope (more NYC batch).
+# Listening spot: In front of the Old Stone House in Washington Park, Fifth Avenue between Third and Fourth Streets, Park Slope, Brooklyn.
+# Position: Wikidata Q7085115 (Old Stone House) coordinate (high confidence).
+id: new-york-then-they-did-it-again
+title: "Then They Did It Again"
+summary: "In August 1776 about four hundred Marylanders and Delawareans charged a stone house full of British troops here, so the army could escape."
+place: "Old Stone House, Washington Park, Fifth Avenue at Third Street, Park Slope, Brooklyn"
+at: { lat: 40.67296, lng: -73.98462 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.9
+tags: [new-york, brooklyn, park-slope, revolution, military, battle-of-brooklyn, maryland-400]
+teaser: "They charged the house, fell back over their own wounded, and charged again."
+script: |
+  Look at the old stone farmhouse in front of you, with its thick walls and small windows. On the twenty seventh of August, seventeen seventy six, the house that stood here was full of British soldiers, firing from the windows.
+
+  And a few hundred Americans were about to run straight at it.
+
+  That morning, the British had marched around behind the American army in Brooklyn. Men were being surrounded. The only way out was across a marsh about eighty yards wide, called Gowanus Creek, under fire, to the lines on Brooklyn Heights.
+
+  Someone had to hold the British back while they crossed.
+
+  A general called Lord Stirling stayed behind with about four hundred men, most of them from Maryland, some from Delaware. Two thousand British and Hessian soldiers closed in around them. Then Stirling and his men did something nobody expected. They charged the stone house, with bayonets.
+
+  The survivors remembered musket balls coming at them in almost solid sheets of lead. They fell back, over their own dead and wounded. They formed up again. They charged a second time.
+
+  Then they did it a third time.
+
+  The fighting here lasted almost an hour. Long enough. Much of the army got across the marsh.
+
+  Two hundred and fifty six of those men died around this house. Only a few dozen made it back.
+
+  Look at the windows again.
+
+  They ran at them three times, so that other men could run the other way.
+
+pronunciations:
+  - written: Gowanus
+    say: guh-WAH-nus
+  - written: Hessian
+    say: HESH-un
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "On the twenty seventh of August, seventeen seventy six, the house that stood here was full of British soldiers, firing from the windows."
+    source: 1
+    quote: "Many of the British fired from the windows of a building known locally as the “Old Stone House.”"
+  - says: "On the twenty seventh of August, seventeen seventy six, the house that stood here was full of British soldiers, firing from the windows."
+    source: 1
+    quote: "Early on August 27, 1776, a column of several thousand British soldiers under the command of Generals Cornwallis and Clinton marched through the barely defended Jamaica Pass on Long Island."
+  - says: "That morning, the British had marched around behind the American army in Brooklyn."
+    source: 1
+    quote: "At 9:00 am, the British commenced an attack on the Americans from the rear, while Hessian (German) mercenaries attacked from the front."
+  - says: "The only way out was across a marsh about eighty yards wide, called Gowanus Creek, under fire, to the lines on Brooklyn Heights."
+    source: 1
+    quote: "The only possible escape route was to cross under heavy fire, a marshy area about eighty yards wide called Gowanus Creek. On the other side was the stronger American position of Brooklyn Heights."
+  - says: "A general called Lord Stirling stayed behind with about four hundred men, most of them from Maryland, some from Delaware."
+    source: 1
+    quote: "Stirling stayed with about 400 battle-weary Maryland and Delaware survivors to serve as a rear guard."
+  - says: "Two thousand British and Hessian soldiers closed in around them."
+    source: 1
+    quote: "Two thousand British infantrymen and Hessians surrounded the Marylanders and Delawareans."
+  - says: "They charged the stone house, with bayonets."
+    source: 1
+    quote: "Then Lord Stirling and the “Maryland 400” did the unexpected. They charged towards the Old Stone House with their muskets and bayonets."
+  - says: "The survivors remembered musket balls coming at them in almost solid sheets of lead."
+    source: 1
+    quote: "According to survivor accounts, the British “infantry poured volleys of musket balls in almost solid sheets of lead” at the Marylanders and Delawareans."
+  - says: "They fell back, over their own dead and wounded."
+    source: 1
+    quote: "Forced to retreat, they regrouped over their dead and wounded friends and colleagues and charged a second time with their fixed bayonets. Then they did it a third time."
+  - says: "Then they did it a third time."
+    source: 1
+    quote: "Then they did it a third time."
+  - says: "Then they did it a third time."
+    source: 2
+    quote: "Three times, it is said, he charged the Stone House where Cornwallis was entrenched"
+  - says: "The fighting here lasted almost an hour."
+    source: 1
+    quote: "The intense fighting near the Old Stone House lasted almost an hour, which allowed many Americans to escape with their lives."
+  - says: "Two hundred and fifty six of those men died around this house."
+    source: 1
+    quote: "When the fighting was ended, 256 Marylanders and Delawareans lay dead on the ground in the vicinity of the Old Stone House"
+  - says: "Only a few dozen made it back."
+    source: 1
+    quote: "Only a few dozen of the “Maryland 400” escaped alive back to American lines."
+  - says: "And a few hundred Americans were about to run straight at it."
+    source: 1
+    quote: "Stirling stayed with about 400 battle-weary Maryland and Delaware survivors to serve as a rear guard."
+  - says: "Someone had to hold the British back while they crossed."
+    source: 1
+    quote: "Lord Stirling ordered most of his men towards the Gowanus Creek, and about half the First Maryland Regiment and most of the First Delaware Regiment was able to retreat, including Stone’s first company. Stirling stayed with about 400 battle-weary Maryland and Delaware survivors to serve as a rear guard."
+  - says: "Then Stirling and his men did something nobody expected."
+    source: 1
+    quote: "Then Lord Stirling and the “Maryland 400” did the unexpected."
+  - says: "They charged a second time."
+    source: 1
+    quote: "Forced to retreat, they regrouped over their dead and wounded friends and colleagues and charged a second time with their fixed bayonets."
+  - says: "They ran at them three times, so that other men could run the other way."
+    source: 1
+    quote: "The intense fighting near the Old Stone House lasted almost an hour, which allowed many Americans to escape with their lives."
+  - says: "They ran at them three times, so that other men could run the other way."
+    source: 2
+    quote: "Three times, it is said, he charged the Stone House where Cornwallis was entrenched"
+sources:
+  - title: "The Maryland 400"
+    publisher: "National Park Service, Thomas Stone National Historic Site"
+    url: https://www.nps.gov/articles/000/the-maryland-400.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Stone House at Gowanus, by Georgia Fraser (1909)"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/stonehouseatgo00fras
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-then-they-did-it-again/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 92.3
+    audioBytes: 1477528
+    transcript:
+      totalS: 92.3
+      lines:
+        - text: Look at the old stone farmhouse in front of you, with its thick walls and small windows.
+          atS: 0
+          durationS: 5.22
+        - text: On the twenty seventh of August, seventeen seventy six, the house that stood here was full of British soldiers, firing from the windows.
+          atS: 5.74
+          durationS: 8.18
+        - text: And a few hundred Americans were about to run straight at it.
+          atS: 14.36
+          durationS: 3.48
+        - text: That morning, the British had marched around behind the American army in Brooklyn.
+          atS: 18.45
+          durationS: 4.72
+        - text: Men were being surrounded.
+          atS: 23.78
+          durationS: 1.82
+        - text: The only way out was across a marsh about eighty yards wide, called Gowanus Creek, under fire, to the lines on Brooklyn Heights.
+          atS: 26.04
+          durationS: 8.59
+        - text: Someone had to hold the British back while they crossed.
+          atS: 35.07
+          durationS: 3.07
+        - text: A general called Lord Stirling stayed behind with about four hundred men, most of them from Maryland, some from Delaware.
+          atS: 38.84
+          durationS: 7.37
+        - text: Two thousand British and Hessian soldiers closed in around them.
+          atS: 46.65
+          durationS: 3.47
+        - text: Then Stirling and his men did something nobody expected.
+          atS: 50.29
+          durationS: 3.16
+        - text: They charged the stone house, with bayonets.
+          atS: 54.15
+          durationS: 2.63
+        - text: The survivors remembered musket balls coming at them in almost solid sheets of lead.
+          atS: 57.11
+          durationS: 4.74
+        - text: They fell back, over their own dead and wounded.
+          atS: 62.66
+          durationS: 3.08
+        - text: They formed up again.
+          atS: 66.18
+          durationS: 1.33
+        - text: They charged a second time.
+          atS: 67.84
+          durationS: 1.85
+        - text: Then they did it a third time.
+          atS: 70.01
+          durationS: 2.08
+        - text: The fighting here lasted almost an hour.
+          atS: 72.6
+          durationS: 2.66
+        - text: Long enough.
+          atS: 75.86
+          durationS: 0.81
+        - text: Much of the army got across the marsh.
+          atS: 77.37
+          durationS: 2.26
+        - text: Two hundred and fifty six of those men died around this house.
+          atS: 80.14
+          durationS: 3.61
+        - text: Only a few dozen made it back.
+          atS: 84.36
+          durationS: 1.87
+        - text: Look at the windows again.
+          atS: 86.61
+          durationS: 1.36
+        - text: They ran at them three times, so that other men could run the other way.
+          atS: 88.29
+          durationS: 3.98

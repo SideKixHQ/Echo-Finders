@@ -1,0 +1,168 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, West Village cluster (more NYC batch).
+# Listening spot: James J. Walker Park (the old Hudson Park), Hudson Street at St. Luke's Place, a playground and ball field laid over an old graveyard.
+# Position: the park's Hudson Street gate at St. Luke's Place, from the street plan (medium confidence).
+id: new-york-the-king-under-the-playground
+title: "The King Under the Playground"
+summary: "This playground was a graveyard until the 1890s. The legend says a lost prince of France was buried here, under a stone that read Leroy."
+place: "James J. Walker Park, Hudson Street at St. Luke's Place, West Village, Manhattan"
+at: { lat: 40.72975, lng: -74.00660 }
+triggerRadiusKm: 0.06
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 62
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A legend, not history. The Federal Writers' Project guide of 1939 reports only that "it is claimed" the lost Dauphin of France was buried in the graveyard here, under a stone reading Leroy. No record proves it, and the guide itself calls him "the oft-found lost Dauphin". That the playground was converted from a graveyard in the 1890s is documented in the same guide. The script says out loud that it is a legend.
+minAge: 0
+quality: 0.8
+tags: [new-york, west-village, legend, graveyard, france, dauphin, playground]
+teaser: "Kids play ball where a king was said to be buried. One word on a stone started it."
+script: |
+  Look across the fence at the playground and the ball field. Swings. Benches. Somebody's lost glove.
+
+  Before the eighteen nineties, this was a graveyard. And people here will tell you that a king is still under it.
+
+  This is a legend. Nobody has proved a word of it.
+
+  It starts in France. The Dauphin was the title of the heir to the French throne. One of them was lost in the French Revolution, as a boy.
+
+  And then he kept being found. For years, men turned up claiming to be him. New York's own guidebook, in nineteen thirty nine, called him the oft found lost Dauphin of France.
+
+  And here is the New York version. Somewhere in this old graveyard, the story goes, they buried him. Over him, they put a stone with just one word on it.
+
+  Leroy.
+
+  Say it slowly. Le roi. The king.
+
+  The graves are gone now. So listen to the shouting from the ball field.
+
+  It might be the noisiest royal tomb in the world.
+
+pronunciations:
+  - written: Dauphin
+    say: DOH-fan
+  - written: Le roi
+    say: luh RWAH
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Before the eighteen nineties, this was a graveyard."
+    source: 1
+    quote: "The HUDSON PARK PLAYGROUND, south of St. Luke's Place, was converted from a graveyard in the 1890's."
+  - says: "New York's own guidebook in nineteen thirty nine called him the oft found lost Dauphin of France."
+    source: 1
+    quote: "Here, it is claimed, was buried the oft-found lost Dauphin of France"
+  - says: "Somewhere in this old graveyard, the story goes, they buried him."
+    source: 1
+    quote: "Here, it is claimed, was buried the oft-found lost Dauphin of France, above whose body was placed a stone bearing the simple description"
+  - says: "Over him, they put a stone with just one word on it."
+    source: 1
+    quote: "above whose body was placed a stone bearing the simple description"
+  - says: "Leroy."
+    source: 1
+    quote: "Leroy (The King)."
+  - says: "It starts in France."
+    source: 1
+    quote: "Here, it is claimed, was buried the oft-found lost Dauphin of France"
+  - says: "The Dauphin was the title of the heir to the French throne."
+    source: 2
+    quote: "an ailing boy who died in a Paris prison more than 200 years ago was the son of King Louis XVI and Marie-Antoinette and heir to the French throne."
+  - says: "One of them was lost in the French Revolution, as a boy."
+    source: 2
+    quote: "Some historians declared the dead boy to be Louis XVII; others said the royal heir escaped and another child died in his place to save official face during the unstable days of the French Revolution."
+  - says: "And here is the New York version."
+    source: 1
+    quote: "Here, it is claimed, was buried the oft-found lost Dauphin of France, above whose body was placed a stone bearing the simple description"
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Greenwich Village"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Remains Identified As Louis XVII (Associated Press), 19 April 2000"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/remains-identified-as-louis-xvii/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-the-king-under-the-playground/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 61.9
+    audioBytes: 991442
+    transcript:
+      totalS: 61.9
+      lines:
+        - text: Look across the fence at the playground and the ball field.
+          atS: 0
+          durationS: 2.93
+        - text: Swings.
+          atS: 3.13
+          durationS: 0.74
+        - text: Benches.
+          atS: 3.96
+          durationS: 0.71
+        - text: Somebody's lost glove.
+          atS: 4.76
+          durationS: 1.38
+        - text: Before the eighteen nineties, this was a graveyard.
+          atS: 6.26
+          durationS: 2.64
+        - text: And people here will tell you that a king is still under it.
+          atS: 9.02
+          durationS: 3.12
+        - text: This is a legend.
+          atS: 12.26
+          durationS: 1.09
+        - text: Nobody has proved a word of it.
+          atS: 13.47
+          durationS: 1.83
+        - text: It starts in France.
+          atS: 15.48
+          durationS: 1.32
+        - text: The Dauphin was the title of the heir to the French throne.
+          atS: 16.92
+          durationS: 3.53
+        - text: One of them was lost in the French Revolution, as a boy.
+          atS: 20.77
+          durationS: 3.29
+        - text: And then he kept being found.
+          atS: 24.17
+          durationS: 1.7
+        - text: For years, men turned up claiming to be him.
+          atS: 26.19
+          durationS: 2.88
+        - text: New York's own guidebook, in nineteen thirty nine, called him the oft found lost Dauphin of France.
+          atS: 29.51
+          durationS: 7.04
+        - text: And here is the New York version.
+          atS: 36.83
+          durationS: 1.67
+        - text: Somewhere in this old graveyard, the story goes, they buried him.
+          atS: 38.94
+          durationS: 3.86
+        - text: Over him, they put a stone with just one word on it.
+          atS: 43.24
+          durationS: 3.68
+        - text: Leroy.
+          atS: 47.61
+          durationS: 0.8
+        - text: Say it slowly.
+          atS: 49.11
+          durationS: 1.21
+        - text: Le roi.
+          atS: 51.02
+          durationS: 1.45
+        - text: The king.
+          atS: 53.16
+          durationS: 0.67
+        - text: The graves are gone now.
+          atS: 54.79
+          durationS: 1.48
+        - text: So listen to the shouting from the ball field.
+          atS: 56.59
+          durationS: 2.26
+        - text: It might be the noisiest royal tomb in the world.
+          atS: 59.18
+          durationS: 2.73

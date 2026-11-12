@@ -1,0 +1,151 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, a kids telling, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the grounds of Bethesda Academy, 9520 Ferguson Avenue, by Whitefield Chapel, on the Vernon River south of Savannah. A working school; visit by arrangement.
+# Position: LOW confidence. The app's street file has no tiles this far south, and no fetched source gives coordinates; the point is on land in the right part of the county and must be moved to Whitefield Chapel before review. More than 1.5 km from the historic district, so a rare find once placed.
+id: savannah-house-of-mercy
+title: "House of Mercy"
+summary: "George Whitefield opened Bethesda for orphans in 1740. Lightning burned it, fire and storm wrecked it, and it is still a home for children."
+place: "Bethesda Academy, Whitefield Chapel, Ferguson Avenue, Savannah, Georgia"
+at: { lat: 31.97600, lng: -81.09500 }
+triggerRadiusKm: 0.1
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 61
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.7
+inside: true
+tags: [savannah, bethesda, colonial, orphans, george-whitefield, kids, rare]
+teaser: "Lightning, fire and a hurricane. The children's home is still here."
+script: |
+  Look around this place, at the chapel and the old trees. Children have lived here for nearly three hundred years.
+
+  And twice, it was almost wiped out.
+
+  In seventeen forty, a famous preacher named George Whitefield started a home here for children who had no parents. He called it Bethesda. It means House of Mercy.
+
+  When Whitefield died, he left the home to his friend in England, Lady Huntingdon. Soon after, lightning struck, and all the buildings burned. She paid to build them again.
+
+  Years later, in eighteen oh five, fire and a hurricane destroyed it a second time.
+
+  But the children's home did not give up. People brought it back again. By the nineteen thirties, a Savannah guidebook called it the oldest orphanage still running in America. Its chapel today is named for Whitefield.
+
+  Look at the chapel again.
+
+  Lightning, fire and a hurricane. And it is still a house of mercy.
+detail: >-
+  The 1937 guide: founded in 1740 by Whitefield; "Bethesda, meaning 'House of Mercy'"; willed to Selina, Countess of Huntingdon; "the buildings were completely destroyed by lightning"; rebuilt from her means; "In 1805 the school was again destroyed by fire and hurricane"; "the oldest existing orphanage in America". Wilson (1889) independently gives the lightning and Lady Huntingdon's rebuilding. HABS (Whitefield Chapel) gives the 1740 founding with James Habersham and the chapel, built 1916 to 1925 in Whitefield's memory. The guide also records that the property was sold off after 1805 and the boys cared for by the Union Society; "people brought it back again" compresses that, and the reopening should be dated from a source before review.
+pronunciations:
+  - written: "Bethesda"
+    say: "beh-THEZ-duh"
+  - written: "Whitefield"
+    say: "WIT-field"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In seventeen forty, a famous preacher named George Whitefield started a home here for children who had no parents."
+    source: 1
+    quote: "BETHESDA (12 Vicinity Map, see Short Tow 2) was founded in 1740 by the Rev. George Whitefield"
+  - says: "In seventeen forty, a famous preacher named George Whitefield started a home here for children who had no parents."
+    source: 3
+    quote: "Whitefield founded Bethesda Academy (formerly Bethesda Orphan House and Academy) in conjunction with James Habersham in 1740 as a home for orphaned, abandoned, and needy children in the newly founded colony of Georgia."
+  - says: "He called it Bethesda. It means House of Mercy."
+    source: 1
+    quote: "Whitefield named it Bethesda, meaning \"House of Mercy,\""
+  - says: "When Whitefield died, he left the home to his friend in England, Lady Huntingdon. Soon after, lightning struck, and all the buildings burned."
+    source: 1
+    quote: "At Whitefield's death in 1770, it was found that he had willed Bethesda to Selina, Countess of Huntingdon."
+  - says: "When Whitefield died, he left the home to his friend in England, Lady Huntingdon. Soon after, lightning struck, and all the buildings burned."
+    source: 2
+    quote: "when all the buildings were destroyed by lightning."
+  - says: "She paid to build them again."
+    source: 2
+    quote: "Lady Huntingdon contributed largely from her private means to restore the shattered buildings"
+  - says: "Years later, in eighteen oh five, fire and a hurricane destroyed it a second time."
+    source: 1
+    quote: "In 1805 the school was again destroyed by fire and hurricane."
+  - says: "By the nineteen thirties, a Savannah guidebook called it the oldest orphanage still running in America."
+    source: 1
+    quote: "today stands as the oldest existing orphanage in America"
+  - says: "Its chapel today is named for Whitefield."
+    source: 3
+    quote: "Whitefield Chapel was presented to Bethesda Academy by the Georgia Society of Colonial Dames in memorial of Bethesda's founder, Reverend George Whitefield."
+  - says: "Children have lived here for nearly three hundred years."
+    source: 3
+    quote: "Whitefield founded Bethesda Academy (formerly Bethesda Orphan House and Academy) in conjunction with James Habersham in 1740 as a home for orphaned, abandoned, and needy children in the newly founded colony of Georgia."
+sources:
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Historic and Picturesque Savannah (Adelaide Wilson, 1889)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicpictures00wils
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Whitefield Chapel, HABS No. GA-301"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ga/ga1100/ga1124/data/ga1124data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/savannah-house-of-mercy/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 60.7
+    audioBytes: 973052
+    transcript:
+      totalS: 60.7
+      lines:
+        - text: Look around this place, at the chapel and the old trees.
+          atS: 0
+          durationS: 3.85
+        - text: Children have lived here for nearly three hundred years.
+          atS: 4.18
+          durationS: 2.74
+        - text: And twice, it was almost wiped out.
+          atS: 7.16
+          durationS: 2.45
+        - text: In seventeen forty, a famous preacher named George Whitefield started a home here for children who had no parents.
+          atS: 10.12
+          durationS: 7.38
+        - text: He called it Bethesda.
+          atS: 17.75
+          durationS: 2.08
+        - text: It means House of Mercy.
+          atS: 20.16
+          durationS: 1.95
+        - text: When Whitefield died, he left the home to his friend in England, Lady Huntingdon.
+          atS: 22.38
+          durationS: 4.84
+        - text: Soon after, lightning struck, and all the buildings burned.
+          atS: 27.61
+          durationS: 3.98
+        - text: She paid to build them again.
+          atS: 31.92
+          durationS: 1.92
+        - text: Years later, in eighteen oh five, fire and a hurricane destroyed it a second time.
+          atS: 34.27
+          durationS: 5.79
+        - text: But the children's home did not give up.
+          atS: 40.39
+          durationS: 2.19
+        - text: People brought it back again.
+          atS: 42.91
+          durationS: 1.6
+        - text: By the nineteen thirties, a Savannah guidebook called it the oldest orphanage still running in America.
+          atS: 45.12
+          durationS: 6
+        - text: Its chapel today is named for Whitefield.
+          atS: 51.44
+          durationS: 2.5
+        - text: Look at the chapel again.
+          atS: 54.32
+          durationS: 1.37
+        - text: Lightning, fire and a hurricane.
+          atS: 56.13
+          durationS: 2.31
+        - text: And it is still a house of mercy.
+          atS: 58.69
+          durationS: 2.05

@@ -1,0 +1,191 @@
+# Drafted by Claude Code (2026-11-11) for the New York City Pass, SoHo (more NYC, second pass).
+# Listening spot: The Spring Street sidewalk outside number 129, between Greene and Wooster Streets, SoHo.
+# Position: Overture Maps address point for 129 Spring St, 10012 (high confidence for the building).
+id: new-york-the-well-under-the-shop
+title: "The Well Under the Shop"
+summary: "In 1799 a young woman was found at the bottom of a well in a meadow here. The well is still in the basement, and the legend says she is too."
+place: "129 Spring Street, between Greene and Wooster Streets, SoHo, Manhattan"
+at: { lat: 40.72396, lng: -74.00052 }
+triggerRadiusKm: 0.04
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 79
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The death, the trial, the defence lawyers and the verdict are documented: the Law Library of Congress (2026, drawing on William Coleman's 1800 trial report) and the NYC Municipal Archives (2017) agree on them. The haunting is told by the Municipal Archives as "it is said", and the script says out loud that it cannot be proved. The archive's post gives her name as Juliana Elmore Sands; the Library of Congress and the trial report call her Gulielma "Elma" Sands, which the script uses.
+minAge: 12
+quality: 0.85
+tags: [new-york, soho, spring-street, manhattan-well, hamilton, burr, ghost, 1799]
+teaser: "Hamilton and Burr were on the same side once. This is where it started."
+script: |
+  Look at the building at number one twenty nine Spring Street. A shop, with clothes in the windows.
+
+  Somewhere below it, in the basement, there is a well.
+
+  Go back to the winter of seventeen ninety nine. This was not a street. It was open ground at the edge of the city, called Lispenard's Meadow.
+
+  On the twenty second of December, a young woman named Elma Sands left her family's boarding house. She told her cousin she was going to marry one of the boarders that night. His name was Levi Weeks.
+
+  Eleven days later, her body was pulled from the bottom of a well, in this meadow.
+
+  Weeks was charged with her murder. His brother hired the most famous lawyers in New York to defend him. Aaron Burr. And Alexander Hamilton.
+
+  Burr told the jury she had not been murdered at all.
+
+  The jury took five minutes. Not guilty. Weeks left the city, and no one else was ever charged.
+
+  So the case never closed. And the story goes that she never left. For more than two hundred years, people have said Elma Sands still haunts this building, looking for justice. Nobody can prove it. That is why it is a legend.
+
+  The well is real. When the city's archivists wrote about it, it was still down there, in the back of the shop, guarded by two mannequins.
+
+  Look at the door.
+
+  Hamilton and Burr were on the same side, once.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Somewhere below it, in the basement, there is a well."
+    source: 1
+    quote: "the well, which is now located in the basement of 129 Spring Street"
+  - says: "It was open ground at the edge of the city, called Lispenard's Meadow."
+    source: 1
+    quote: "in the Lispenard's Meadow at the bottom of the well"
+  - says: "On the twenty second of December, a young woman named Elma Sands left her family's boarding house. She told her cousin she was going to marry one of the boarders that night. His name was Levi Weeks."
+    source: 2
+    quote: "On December 22, 1799 , twenty-two-year-old Gulielma \"Elma\" Sands left her family's boarding house, telling her cousin, Catherine Ring, that she was going to marry one of the boarders, Levi Weeks, that night."
+  - says: "Eleven days later, her body was pulled from the bottom of a well, in this meadow."
+    source: 2
+    quote: "Elma's body was pulled from that well on January 2, 1800."
+  - says: "Eleven days later, her body was pulled from the bottom of a well, in this meadow."
+    source: 1
+    quote: "only to turn up dead eleven days later in the Lispenard's Meadow at the bottom of the well"
+  - says: "Weeks was charged with her murder. His brother hired the most famous lawyers in New York to defend him. Aaron Burr. And Alexander Hamilton."
+    source: 2
+    quote: "Levi's brother, Ezra Weeks, was a wealthy and influential builder who hired Henry Brockholst Livingston , Aaron Burr , and Alexander Hamilton to defend Levi."
+  - says: "Burr told the jury she had not been murdered at all."
+    source: 2
+    quote: "In his opening statement for the defense, Aaron Burr argued that Elma Sands was not murdered, but instead took her own life."
+  - says: "The jury took five minutes. Not guilty."
+    source: 2
+    quote: "after five minutes of deliberation, the jury returned a verdict that Levi Weeks was not guilty."
+  - says: "Weeks left the city, and no one else was ever charged."
+    source: 1
+    quote: "The case became a public sensation and Weeks ended up leaving New York City. No one else was ever charged with the crime"
+  - says: "For more than two hundred years, people have said Elma Sands still haunts this building, looking for justice."
+    source: 1
+    quote: "it is said Sands still haunts the building looking for justice"
+  - says: "When the city's archivists wrote about it, it was still down there, in the back of the shop, guarded by two mannequins."
+    source: 1
+    quote: "COS left it intact, located in the basement in the back of the men's section, guarded by two mannequins."
+  - says: "Look at the building at number one twenty nine Spring Street."
+    source: 1
+    quote: "Currently the COS clothing store, this SoHo building on 129 Spring Street has long been haunted by Juliana Elmore Sands."
+  - says: "Go back to the winter of seventeen ninety nine."
+    source: 1
+    quote: "It is said that on December 22, 1799 the young girl ran away with her lover"
+  - says: "Hamilton and Burr were on the same side, once."
+    source: 1
+    quote: "With the help of two prominent lawyers, Aaron Burr and Alexander Hamilton, Weeks was acquitted."
+sources:
+  - title: "Haunted Buildings of New York (For the Record blog, 12 October 2017)"
+    publisher: "NYC Department of Records and Information Services, Municipal Archives"
+    url: https://www.archives.nyc/blog/2017/10/12/haunted-buildings-of-new-york
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "America's First Murder Trial (In Custodia Legis blog, 21 October 2026)"
+    publisher: "Law Library of Congress"
+    url: https://blogs.loc.gov/law/2026/10/americas-first-murder-trial/
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-the-well-under-the-shop/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 79.1
+    audioBytes: 1266459
+    transcript:
+      totalS: 79.1
+      lines:
+        - text: Look at the building at number one twenty nine Spring Street.
+          atS: 0
+          durationS: 3.08
+        - text: A shop, with clothes in the windows.
+          atS: 3.4
+          durationS: 2.15
+        - text: Somewhere below it, in the basement, there is a well.
+          atS: 5.88
+          durationS: 2.69
+        - text: Go back to the winter of seventeen ninety nine.
+          atS: 8.95
+          durationS: 2.51
+        - text: This was not a street.
+          atS: 11.74
+          durationS: 1.34
+        - text: It was open ground at the edge of the city, called Lispenard's Meadow.
+          atS: 13.25
+          durationS: 4.12
+        - text: On the twenty second of December, a young woman named Elma Sands left her family's boarding house.
+          atS: 17.65
+          durationS: 5.2
+        - text: She told her cousin she was going to marry one of the boarders that night.
+          atS: 23.13
+          durationS: 3.26
+        - text: His name was Levi Weeks.
+          atS: 26.6
+          durationS: 1.71
+        - text: Eleven days later, her body was pulled from the bottom of a well, in this meadow.
+          atS: 28.69
+          durationS: 4.63
+        - text: Weeks was charged with her murder.
+          atS: 33.7
+          durationS: 1.88
+        - text: His brother hired the most famous lawyers in New York to defend him.
+          atS: 35.91
+          durationS: 3.34
+        - text: Aaron Burr.
+          atS: 39.5
+          durationS: 0.93
+        - text: And Alexander Hamilton.
+          atS: 40.67
+          durationS: 1.54
+        - text: Burr told the jury she had not been murdered at all.
+          atS: 42.82
+          durationS: 2.89
+        - text: The jury took five minutes.
+          atS: 46.31
+          durationS: 1.5
+        - text: Not guilty.
+          atS: 47.93
+          durationS: 0.82
+        - text: Weeks left the city, and no one else was ever charged.
+          atS: 49.03
+          durationS: 3.06
+        - text: So the case never closed.
+          atS: 52.48
+          durationS: 1.46
+        - text: And the story goes that she never left.
+          atS: 54.27
+          durationS: 2.29
+        - text: For more than two hundred years, people have said Elma Sands still haunts this building, looking for justice.
+          atS: 57.25
+          durationS: 6.38
+        - text: Nobody can prove it.
+          atS: 63.96
+          durationS: 1.13
+        - text: That is why it is a legend.
+          atS: 65.41
+          durationS: 1.6
+        - text: The well is real.
+          atS: 67.26
+          durationS: 1.14
+        - text: When the city's archivists wrote about it, it was still down there, in the back of the shop, guarded by two mannequins.
+          atS: 68.78
+          durationS: 6.07
+        - text: Look at the door.
+          atS: 75.23
+          durationS: 0.85
+        - text: Hamilton and Burr were on the same side, once.
+          atS: 76.36
+          durationS: 2.73

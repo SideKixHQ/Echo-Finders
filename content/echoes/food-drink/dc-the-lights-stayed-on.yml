@@ -1,0 +1,192 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on the south side of U Street NW in front of Ben's Chili Bowl, between 12th and 13th Streets.
+# Position: Overture place 'Ben's Chili Bowl' (1213 U St NW) at 38.91713, -77.02879; set onto the U Street sidewalk (high confidence).
+id: dc-the-lights-stayed-on
+title: "The Lights Stayed On"
+summary: "In April 1968, as U Street burned, Ben's Chili Bowl stayed open through the curfew and fed police, firemen and activists alike."
+place: "Ben's Chili Bowl, 1213 U Street NW, Washington, D.C."
+at: { lat: 38.91708, lng: -77.02879 }
+triggerRadiusKm: 0.03
+category: food-drink
+format: short
+durationS: 88
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, u-street, black-broadway, food, civil-rights, 1968]
+teaser: "Apart from Thanksgiving and Christmas, it has opened every day since 1958."
+script: |
+  Look at the narrow storefront of Ben's Chili Bowl. Apart from Thanksgiving and Christmas, it has opened every single day since nineteen fifty eight. Even the week this street was on fire.
+
+  Ben Ali came here from Trinidad to become a doctor. Virginia worked at a bank at Eleventh and U. He kept coming in. On his third visit, three days in a row, he wrote her a little note. Please call me. They married in nineteen fifty eight, the same year they opened this place, in an old silent movie house. Duke Ellington and Sarah Vaughan came in after their shows.
+
+  On the fourth of April, nineteen sixty eight, someone ran in to say that Martin Luther King had been shot. Virginia remembered it. The tears were everywhere. Everybody's crying. Then the sadness turned to anger, and the uprising began.
+
+  For four days, the blocks around here burned. The city put on a curfew. But the activist Stokely Carmichael asked for the Chili Bowl to stay open past it, and keep feeding people. The city said yes. So the police came in to eat. And the firemen. And the activists. Everybody felt safe in here.
+
+  Many businesses on this street never reopened after those four days. Ben's never closed.
+
+  Look at the lights in the window.
+
+  They stayed on.
+detail: >-
+  CBS News reported in 2026 that the original restaurant was closing temporarily for renovation; check on the ground whether it has reopened before relying on the opening line about every day.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Apart from Thanksgiving and Christmas, it has opened every single day since nineteen fifty eight."
+    source: 1
+    quote: "Apart from Thanksgiving and Christmas, the original U Street location has been open every day since 1958."
+  - says: "Even the week this street was on fire."
+    source: 1
+    quote: "Ben's stayed open and unharmed during the unrest that tore through the neighborhood over the next four days."
+  - says: "Ben Ali came here from Trinidad to become a doctor."
+    source: 1
+    quote: "Ali moved to the U.S. from Trinidad in 1945 to become a doctor"
+  - says: "Virginia worked at a bank at Eleventh and U."
+    source: 1
+    quote: "Virginia, now 86, was working at the Industrial Bank of Washington, a minority-owned bank at 11th and U Streets."
+  - says: "He kept coming in. On his third visit, three days in a row, he wrote her a little note. Please call me."
+    source: 1
+    quote: "on his third visit, three days in a row, he eventually wrote a little note that said, 'Please call me,'"
+  - says: "They married in nineteen fifty eight, the same year they opened this place, in an old silent movie house."
+    source: 1
+    quote: "Ben and Virginia Ali were married in 1958, the year they opened the Chili Bowl."
+  - says: "They married in nineteen fifty eight, the same year they opened this place, in an old silent movie house."
+    source: 1
+    quote: "They chose a narrow building on U Street that had once been a silent-movie house, a vaudeville theater and a pool hall."
+  - says: "Duke Ellington and Sarah Vaughan came in after their shows."
+    source: 1
+    quote: "with artists such as Duke Ellington, Sarah Vaughan and Johnny Mathis stopping by after performances at the nearby Howard Theatre or Lincoln Theatre ballroom."
+  - says: "On the fourth of April, nineteen sixty eight, someone ran in to say that Martin Luther King had been shot."
+    source: 1
+    quote: "And the Alis were there on April 4, 1968, when someone ran into the shop to announce Martin Luther King Jr. had been shot."
+  - says: "The tears were everywhere. Everybody's crying."
+    source: 1
+    quote: "The tears were everywhere. Everybody's crying."
+  - says: "Then the sadness turned to anger, and the uprising began."
+    source: 1
+    quote: "Finally, that sadness turned into frustration. And the frustration turned to anger. And the uprising began."
+  - says: "For four days, the blocks around here burned."
+    source: 1
+    quote: "the unrest that tore through the neighborhood over the next four days"
+  - says: "For four days, the blocks around here burned."
+    source: 1
+    quote: "It was very stressful to see your neighborhood going up in flames."
+  - says: "The city put on a curfew. But the activist Stokely Carmichael asked for the Chili Bowl to stay open past it, and keep feeding people."
+    source: 1
+    quote: "Stokely Carmichael, head of the Student Nonviolent Coordinating Committee, requested that the Chili Bowl remain open and serve food past the city-mandated curfew."
+  - says: "The city said yes."
+    source: 1
+    quote: "The city obliged, Virginia says."
+  - says: "So the police came in to eat. And the firemen. And the activists."
+    source: 1
+    quote: "We were the safe place for the first responders, for the police officers, the firemen and even the activists"
+  - says: "Everybody felt safe in here."
+    source: 1
+    quote: "everybody felt safe coming into the Chili Bowl"
+  - says: "Many businesses on this street never reopened after those four days."
+    source: 1
+    quote: "Many area businesses never reopened after the riots, but Ben's kept its lights on."
+  - says: "Ben's never closed."
+    source: 1
+    quote: "Ben's stayed open and unharmed during the unrest"
+  - says: "They stayed on."
+    source: 1
+    quote: "Many area businesses never reopened after the riots, but Ben's kept its lights on."
+sources:
+  - title: "After Six Decades, Ben's Chili Bowl Faces Its Greatest Challenge Yet: Coronavirus"
+    publisher: "NPR (WAMU)"
+    url: https://www.npr.org/local/305/2020/04/28/847318186/after-six-decades-ben-s-chili-bowl-faces-its-greatest-challenge-yet-coronavirus
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-lights-stayed-on/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 87.6
+    audioBytes: 1403132
+    transcript:
+      totalS: 87.6
+      lines:
+        - text: Look at the narrow storefront of Ben's Chili Bowl.
+          atS: 0
+          durationS: 3.06
+        - text: Apart from Thanksgiving and Christmas, it has opened every single day since nineteen fifty eight.
+          atS: 3.51
+          durationS: 5.4
+        - text: Even the week this street was on fire.
+          atS: 9.42
+          durationS: 2.3
+        - text: Ben Ali came here from Trinidad to become a doctor.
+          atS: 12.32
+          durationS: 2.98
+        - text: Virginia worked at a bank at Eleventh and U.
+          atS: 15.91
+          durationS: 2.35
+        - text: He kept coming in.
+          atS: 18.58
+          durationS: 1.14
+        - text: On his third visit, three days in a row, he wrote her a little note.
+          atS: 20.16
+          durationS: 3.53
+        - text: Please call me.
+          atS: 24.38
+          durationS: 0.99
+        - text: They married in nineteen fifty eight, the same year they opened this place, in an old silent movie house.
+          atS: 25.81
+          durationS: 6.62
+        - text: Duke Ellington and Sarah Vaughan came in after their shows.
+          atS: 33.24
+          durationS: 3.3
+        - text: On the fourth of April, nineteen sixty eight, someone ran in to say that Martin Luther King had been shot.
+          atS: 37.35
+          durationS: 6.13
+        - text: Virginia remembered it.
+          atS: 44.08
+          durationS: 1.43
+        - text: The tears were everywhere.
+          atS: 46.12
+          durationS: 1.65
+        - text: Everybody's crying.
+          atS: 48.46
+          durationS: 1.46
+        - text: Then the sadness turned to anger, and the uprising began.
+          atS: 51.04
+          durationS: 3.52
+        - text: For four days, the blocks around here burned.
+          atS: 55.16
+          durationS: 2.81
+        - text: The city put on a curfew.
+          atS: 58.48
+          durationS: 1.83
+        - text: But the activist Stokely Carmichael asked for the Chili Bowl to stay open past it, and keep feeding people.
+          atS: 61.01
+          durationS: 6.4
+        - text: The city said yes.
+          atS: 68.01
+          durationS: 1.43
+        - text: So the police came in to eat.
+          atS: 69.88
+          durationS: 1.88
+        - text: And the firemen.
+          atS: 72.04
+          durationS: 1.14
+        - text: And the activists.
+          atS: 73.35
+          durationS: 1.35
+        - text: Everybody felt safe in here.
+          atS: 74.91
+          durationS: 1.85
+        - text: Many businesses on this street never reopened after those four days.
+          atS: 77.19
+          durationS: 4.3
+        - text: Ben's never closed.
+          atS: 81.93
+          durationS: 1.61
+        - text: Look at the lights in the window.
+          atS: 83.93
+          durationS: 1.68
+        - text: They stayed on.
+          atS: 86.31
+          durationS: 1.32

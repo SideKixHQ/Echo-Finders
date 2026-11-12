@@ -1,0 +1,192 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Brooklyn Bridge and DUMBO cluster.
+# Listening spot: Emily Warren Roebling Plaza in Brooklyn Bridge Park, directly beneath the Brooklyn tower of the Brooklyn Bridge, off Old Fulton Street and Water Street.
+# Reviewer note: the rooster crossing is family tradition (Kristian Roebling to CBS: "It's believed with a rooster in hand"), so the script attributes it to her family. Hewitt's tribute and Kingsley's line about Washington Roebling are from the 1883 official ceremonies volume.
+# Position: Overture places Roebling Rink "at Emily Warren Roebling Plaza" at 40.70417, -73.99420 and Glide at the same plaza at 40.70388, -73.99402; the spot sits between them, under the tower (medium confidence).
+id: new-york-one-name-not-in-the-records
+title: "One Name Not in the Records"
+summary: "The chief engineer of the Brooklyn Bridge could only watch it from a distance. His wife carried it to the finish."
+place: "Emily Warren Roebling Plaza, under the Brooklyn tower of the Brooklyn Bridge, DUMBO, Brooklyn"
+at: { lat: 40.70405, lng: -73.99410 }
+triggerRadiusKm: 0.05
+category: people
+format: short
+durationS: 89
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [new-york, dumbo, brooklyn-bridge, engineering, roebling, women]
+teaser: "On opening day, one speaker stopped to say the name nobody had written down."
+script: |
+  Look up at the stone tower above you, and the cables running down from it.
+
+  On the day this bridge opened, the man in charge of building it had never seen it up close.
+
+  The first chief engineer, John Roebling, was hurt while surveying the site, and died. His son, Washington Roebling, took over. He went down into the caissons, the chambers under the river where the towers' foundations were dug. And he caught the disease that came up out of them. For years after that, he could not leave his house. He watched the work through a telescope.
+
+  So his wife, Emily, carried his ideas to the bridge. She was the one who talked to the engineers and the contractors. In the end, the contractors came to her, and her alone.
+
+  On the opening day, the twenty fourth of May, eighteen eighty three, one of the speakers stopped to say her name.
+
+  One name, he said, which may find no place in the official records, cannot be passed over here in silence.
+
+  He called this bridge a lasting monument to the devotion of a woman, and to her capacity for the higher education she had been shut out of for too long.
+
+  Her family says that when it opened, she was the first to cross. In a carriage, with a rooster, for victory.
+
+  Look up at the tower again.
+
+  He saw it from a distance. She was the one who crossed.
+
+pronunciations:
+  - written: Roebling
+    say: ROBE-ling
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "On the day this bridge opened, the man in charge of building it had never seen it up close."
+    source: 1
+    quote: "He has never seen this structure as it now stands, save from a distance."
+  - says: "The first chief engineer, John Roebling, was hurt while surveying the site, and died."
+    source: 2
+    quote: "John Roebling, who was well known for building suspension bridges in other parts of the country, died following an accident while surveying the site before work even started."
+  - says: "The first chief engineer, John Roebling, was hurt while surveying the site, and died."
+    source: 1
+    quote: "lockjaw supervened, and the man who designed this Bridge lost his life in its service."
+  - says: "His son, Washington Roebling, took over."
+    source: 1
+    quote: "He was succeeded at once by his son, Colonel Washington A. Roebling"
+  - says: "He went down into the caissons, the chambers under the river where the towers' foundations were dug."
+    source: 1
+    quote: "During the anxious days and nights while work was going on within the caissons, Colonel Roebling seemed to be always on hand, at the head of his men"
+  - says: "He went down into the caissons, the chambers under the river where the towers' foundations were dug."
+    source: 1
+    quote: "The foundations of the towers were successfully laid"
+  - says: "And he caught the disease that came up out of them."
+    source: 1
+    quote: "Colonel Roebling contracted the mysterious disease in the caissons which had proved fatal to several of the workmen in our employ."
+  - says: "For years after that, he could not leave his house."
+    source: 1
+    quote: "For many long and weary years this man, who entered our service young, and full of life, and hope, and daring, has been an invalid and confined to his home."
+  - says: "He watched the work through a telescope."
+    source: 2
+    quote: "He used a telescope to watch the construction."
+  - says: "So his wife, Emily, carried his ideas to the bridge."
+    source: 2
+    quote: "The job of conveying Roebling's ideas to the workers was left to his wife, Emily, who became an essential part of the development."
+  - says: "She was the one who talked to the engineers and the contractors."
+    source: 2
+    quote: "became this key liaison with contractors, with the assistant engineers"
+  - says: "In the end, the contractors came to her, and her alone."
+    source: 2
+    quote: "contractors were contacting her and her alone and asking about specifications and the demands of the contracts"
+  - says: "On the opening day, the twenty fourth of May, eighteen eighty three, one of the speakers stopped to say her name."
+    source: 1
+    quote: "The name of Mrs. Emily Warren Roebling will thus be inseparably associated with all that is admirable in human nature"
+  - says: "On the opening day, the twenty fourth of May, eighteen eighty three, one of the speakers stopped to say her name."
+    source: 1
+    quote: "ADDRESS OF HON. ABRAM S. HEWITT,"
+  - says: "One name, he said, which may find no place in the official records, cannot be passed over here in silence."
+    source: 1
+    quote: "One name, however, which may find no place in the official records, cannot be passed over here in silence."
+  - says: "He called this bridge a lasting monument to the devotion of a woman, and to her capacity for the higher education she had been shut out of for too long."
+    source: 1
+    quote: "lasting monument to the self-sacrificing devotion of woman, and of her capacity for that higher education from which she has been too long debarred."
+  - says: "Her family says that when it opened, she was the first to cross."
+    source: 3
+    quote: "Kristian Roebling said after the bridge's completion in 1883, it was his great-great grandmother who was the first person to officially cross the bridge."
+  - says: "In a carriage, with a rooster, for victory."
+    source: 3
+    quote: "It's believed with a rooster in hand."
+  - says: "In a carriage, with a rooster, for victory."
+    source: 4
+    quote: "At the opening ceremony of the Brooklyn Bridge in 1883, she was the first to drive across the span with a rooster, as a sign of victory, proving that barriers are meant to be broken."
+  - says: "She was the one who crossed."
+    source: 3
+    quote: "Kristian Roebling said after the bridge's completion in 1883, it was his great-great grandmother who was the first person to officially cross the bridge."
+sources:
+  - title: "Opening ceremonies of the New York and Brooklyn Bridge, May 24, 1883 (addresses of William C. Kingsley and Abram S. Hewitt)"
+    publisher: "Internet Archive (public domain scan, 1883)"
+    url: https://archive.org/details/openingceremonie00broorich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The history of the Brooklyn Bridge: \"Such an iconic piece of New York City and beyond\""
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/brooklyn-bridge-history-new-york-city/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Brooklyn Bridge Park Pedestrian Plaza To Be Named After Famed Span's Pioneer, Emily Roebling"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/emily-roebling-plaza-brooklyn-bridge-park/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Honoring the legacy of Emily Warren Roebling, who helped build the Brooklyn Bridge"
+    publisher: "CBS News New York"
+    url: https://www.cbsnews.com/newyork/news/honoring-the-legacy-of-emily-warren-roebling-who-helped-build-the-brooklyn-bridge/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-one-name-not-in-the-records/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 89.4
+    audioBytes: 1430717
+    transcript:
+      totalS: 89.4
+      lines:
+        - text: Look up at the stone tower above you, and the cables running down from it.
+          atS: 0
+          durationS: 4.08
+        - text: On the day this bridge opened, the man in charge of building it had never seen it up close.
+          atS: 4.68
+          durationS: 5.29
+        - text: The first chief engineer, John Roebling, was hurt while surveying the site, and died.
+          atS: 10.48
+          durationS: 5.62
+        - text: His son, Washington Roebling, took over.
+          atS: 16.92
+          durationS: 3.59
+        - text: He went down into the caissons, the chambers under the river where the towers' foundations were dug.
+          atS: 21.11
+          durationS: 5.62
+        - text: And he caught the disease that came up out of them.
+          atS: 27.42
+          durationS: 2.73
+        - text: For years after that, he could not leave his house.
+          atS: 31.1
+          durationS: 3.16
+        - text: He watched the work through a telescope.
+          atS: 34.7
+          durationS: 2.24
+        - text: So his wife, Emily, carried his ideas to the bridge.
+          atS: 37.38
+          durationS: 3.37
+        - text: She was the one who talked to the engineers and the contractors.
+          atS: 41.26
+          durationS: 3.64
+        - text: In the end, the contractors came to her, and her alone.
+          atS: 45.35
+          durationS: 4.4
+        - text: On the opening day, the twenty fourth of May, eighteen eighty three, one of the speakers stopped to say her name.
+          atS: 50.45
+          durationS: 7.49
+        - text: One name, he said, which may find no place in the official records, cannot be passed over here in silence.
+          atS: 58.63
+          durationS: 7.29
+        - text: He called this bridge a lasting monument to the devotion of a woman, and to her capacity for the higher education she had been shut out of for too long.
+          atS: 66.36
+          durationS: 9.15
+        - text: Her family says that when it opened, she was the first to cross.
+          atS: 76.11
+          durationS: 4.15
+        - text: In a carriage, with a rooster, for victory.
+          atS: 80.58
+          durationS: 2.55
+        - text: Look up at the tower again.
+          atS: 83.65
+          durationS: 1.57
+        - text: He saw it from a distance.
+          atS: 85.73
+          durationS: 1.6
+        - text: She was the one who crossed.
+          atS: 87.66
+          durationS: 1.69

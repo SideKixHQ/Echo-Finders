@@ -1,0 +1,163 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (Old City, Seventh Street), second pass, following docs/writing-echoes.md (format v2). A children's echo; kids narrator per content/voices.yml.
+# Listening spot: North Seventh Street between Arch and Filbert, where the first United States Mint stood at 37 to 39 North Seventh.
+# Position: on Seventh Street between the Overture street-map intersections at Arch (39.95291, -75.151656) and Filbert (39.952104, -75.151853), on the east side (medium confidence: the mint's buildings are gone and the address was placed by block, not by lot). About 200 m from the Declaration House echo at Seventh and Market, and kept well away from the present Mint at Fifth and Arch, which is beside the Free Quaker echo.
+id: philadelphia-no-letter-by-the-date
+title: "No Letter by the Date"
+summary: "A children's echo: America's first mint stood on this block, worked by men and horses. Your pennies may still come from Philadelphia."
+place: "Site of the first United States Mint, North Seventh Street between Arch and Filbert, Old City, Philadelphia, Pennsylvania"
+at: { lat: 39.95250, lng: -75.15160 }
+triggerRadiusKm: 0.05
+category: kids
+format: short
+durationS: 80
+visibility: at-hand
+certainty: documented
+voice: UrTldiIxfedDl9tlesyS
+minAge: 0
+quality: 0.75
+tags: [philadelphia, old-city, seventh-street, us-mint, coins, kids, money]
+teaser: "Check your pocket for a penny."
+script: |
+  Have you got a coin in your pocket? A penny is best. Take it out, and look near the date.
+
+  Is there a little letter there? A P, or a D? Or nothing at all?
+
+  Hold on to that. We will come back to it.
+
+  Long ago, right after the Revolution, America had a problem. Almost all the coins people used came from other countries. So in seventeen ninety two, Congress decided America would make its own money. Dollars, and cents. And the place to make them would be Philadelphia, because Philadelphia was the capital.
+
+  The very first mint stood on this block. It was the first public building put up by an act of Congress. There were no big machines. The coins were made by the strength of men, and horses. It was slow, hard work. They made copper cents, silver dimes and quarters, and gold coins too.
+
+  Philadelphia has made coins ever since. The mint moved three times, to bigger and bigger buildings. Today's mint can make more than a million coins in a single day.
+
+  Now look at your penny again. If there is a P, or no letter at all, it was most likely made by the Philadelphia mint.
+
+  That coin in your hand may have started its life in this city.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Almost all the coins people used came from other countries."
+    source: 1
+    quote: "Following the Revolutionary War, virtually all coins circulating in the United States were foreign."
+  - says: "So in seventeen ninety two, Congress decided America would make its own money. Dollars, and cents. And the place to make them would be Philadelphia, because Philadelphia was the capital."
+    source: 1
+    quote: "To create a simple, uniquely American coinage system, Congress passed the Coinage Act in 1792. This groundbreaking piece of legislation authorized the creation of a mint to manufacture coins representing American denominations (dollars and cents). The site chosen for this mint was Philadelphia, then the capital of the United States."
+  - says: "The very first mint stood on this block."
+    source: 1
+    quote: "The first Philadelphia mint, founded in 1792, operated in a multibuilding facility on Seventh Street between Arch and Filbert Streets."
+  - says: "It was the first public building put up by an act of Congress."
+    source: 1
+    quote: "Built in 1792, it was the first public building erected by an act of Congress."
+  - says: "There were no big machines. The coins were made by the strength of men, and horses. It was slow, hard work."
+    source: 1
+    quote: "However, because it was dependent upon the power of men and horses, the production of the nation’s first coins was slow and laborious."
+  - says: "They made copper cents, silver dimes and quarters, and gold coins too."
+    source: 1
+    quote: "the first mint produced copper half-cent and one-cent pieces, silver half-dimes (the precursor to the modern nickel), dimes, quarters, half-dollars, and dollars, as well as gold two-and-a-half-dollar, five-dollar, and ten-dollar coins."
+  - says: "Philadelphia has made coins ever since. The mint moved three times, to bigger and bigger buildings."
+    source: 1
+    quote: "Coins have been minted in Philadelphia as long as the federal government has produced legal tender coins."
+  - says: "The mint moved three times, to bigger and bigger buildings."
+    source: 1
+    quote: "in 1969 the Philadelphia mint moved once again to a larger, more technologically sophisticated facility on Independence Mall."
+  - says: "Today's mint can make more than a million coins in a single day."
+    source: 1
+    quote: "the Philadelphia mint proved capable of producing more than one million coins within a twenty-four hour period."
+  - says: "If there is a P, or no letter at all, it was most likely made by the Philadelphia mint."
+    source: 1
+    quote: "Identified easily by a “P” mintmark or, in the case of pennies and older coins, the absence of a mintmark, coins manufactured at the Philadelphia mint have been among the most readily available in the United States."
+  - says: "Long ago, right after the Revolution, America had a problem."
+    source: 1
+    quote: "Following the Revolutionary War, virtually all coins circulating in the United States were foreign. Because these coins reflected several dissimilar coinage systems, they could be difficult to use in everyday transactions."
+  - says: "That coin in your hand may have started its life in this city."
+    source: 1
+    quote: "Identified easily by a “P” mintmark or, in the case of pennies and older coins, the absence of a mintmark, coins manufactured at the Philadelphia mint have been among the most readily available in the United States."
+sources:
+  - title: "U.S. Mint (Philadelphia) (Stephen Burciaga)"
+    publisher: "The Encyclopedia of Greater Philadelphia, Rutgers University"
+    url: https://philadelphiaencyclopedia.org/essays/united-states-mint-philadelphia/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/philadelphia-no-letter-by-the-date/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 80.1
+    audioBytes: 1282759
+    transcript:
+      totalS: 80.1
+      lines:
+        - text: Have you got a coin in your pocket?
+          atS: 0
+          durationS: 1.74
+        - text: A penny is best.
+          atS: 1.95
+          durationS: 1.18
+        - text: Take it out, and look near the date.
+          atS: 3.46
+          durationS: 1.96
+        - text: Is there a little letter there?
+          atS: 5.8
+          durationS: 1.54
+        - text: A P, or a D?
+          atS: 7.5
+          durationS: 1.7
+        - text: Or nothing at all?
+          atS: 9.58
+          durationS: 1.01
+        - text: Hold on to that.
+          atS: 11.1
+          durationS: 0.96
+        - text: We will come back to it.
+          atS: 12.34
+          durationS: 1.41
+        - text: Long ago, right after the Revolution, America had a problem.
+          atS: 14.56
+          durationS: 4.25
+        - text: Almost all the coins people used came from other countries.
+          atS: 19.09
+          durationS: 3.71
+        - text: So in seventeen ninety two, Congress decided America would make its own money.
+          atS: 23.13
+          durationS: 5.13
+        - text: Dollars, and cents.
+          atS: 28.7
+          durationS: 1.63
+        - text: And the place to make them would be Philadelphia, because Philadelphia was the capital.
+          atS: 30.6
+          durationS: 5.58
+        - text: The very first mint stood on this block.
+          atS: 36.79
+          durationS: 2.58
+        - text: It was the first public building put up by an act of Congress.
+          atS: 39.7
+          durationS: 3.47
+        - text: There were no big machines.
+          atS: 43.49
+          durationS: 1.57
+        - text: The coins were made by the strength of men, and horses.
+          atS: 45.38
+          durationS: 3.27
+        - text: It was slow, hard work.
+          atS: 49.1
+          durationS: 1.96
+        - text: They made copper cents, silver dimes and quarters, and gold coins too.
+          atS: 51.34
+          durationS: 4.69
+        - text: Philadelphia has made coins ever since.
+          atS: 56.54
+          durationS: 2.74
+        - text: The mint moved three times, to bigger and bigger buildings.
+          atS: 59.61
+          durationS: 4.38
+        - text: Today's mint can make more than a million coins in a single day.
+          atS: 64.31
+          durationS: 3.8
+        - text: Now look at your penny again.
+          atS: 68.43
+          durationS: 1.53
+        - text: If there is a P, or no letter at all, it was most likely made by the Philadelphia mint.
+          atS: 70.29
+          durationS: 5.76
+        - text: That coin in your hand may have started its life in this city.
+          atS: 76.49
+          durationS: 3.62

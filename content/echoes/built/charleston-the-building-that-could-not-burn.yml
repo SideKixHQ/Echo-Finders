@@ -1,0 +1,157 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: The sidewalk in front of the Fireproof Building, 100 Meeting Street, at Chalmers Street, beside Washington Square.
+# Position: "The South Carolina Historical Society" point (the building's occupant) in the app's Charleston street file (high confidence).
+id: charleston-the-building-that-could-not-burn
+title: "The Building That Could Not Burn"
+summary: "Charleston kept losing its records to fire. In the 1820s Robert Mills built it a vault with no wood in it at all, iron shutters included."
+place: "Fireproof Building, 100 Meeting Street, Charleston, South Carolina"
+at: { lat: 32.77723, lng: -79.93098 }
+triggerRadiusKm: 0.03
+category: built
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [charleston, charleston-core, fireproof-building, robert-mills, architecture, washington-square]
+teaser: "Look for the wood. There isn't any."
+script: |
+  Look at the windows of this plain, grey building. The shutters are not wood. They are iron. So are the window frames. Look for anything at all that could burn.
+
+  There is nothing. That was the whole point.
+
+  In a city that kept burning, this was built to keep the public records safe. No flammable material was used anywhere in it. It was solid masonry, with an oval hall inside, and a stone staircase that seems to hang in the air.
+
+  It is believed to be the oldest fireproof building in the United States.
+
+  Its architect was born in Charleston. Robert Mills, the first American born architect trained for the job. He drew for Thomas Jefferson at Monticello. And later, he designed the Washington Monument.
+
+  The building was put to the test in eighteen eighty six, when the great earthquake struck. It came through unharmed, except for its outside stairs.
+
+  Look at the iron shutters again.
+
+  Iron, stone and brick. All of it, to keep paper safe.
+detail: >-
+  The National Park Service page gives the date of 1827 (the 1941 state guide says 1826), the original name Charleston District Record Building, the absence of flammable materials, the iron sashes and shutters, the cantilevered stone stair, survival of the 1886 earthquake except the exterior stairs, and Mills's training, his work for Jefferson and his design of the Washington Monument. "Oldest building of fireproof construction" is the NPS wording, given as a belief.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "The shutters are not wood."
+    source: 1
+    quote: "with window sashes and shutters of iron."
+  - says: "They are iron."
+    source: 1
+    quote: "with window sashes and shutters of iron."
+  - says: "In a city that kept burning, this was built to keep the public records safe."
+    source: 1
+    quote: "Because the building was designed to store public records safely, no flammable materials were used in its construction."
+  - says: "In a city that kept burning, this was built to keep the public records safe."
+    source: 2
+    quote: "built in 1826 for the purpose of housing local records safely"
+  - says: "No flammable material was used anywhere in it."
+    source: 1
+    quote: "no flammable materials were used in its construction."
+  - says: "It was solid masonry, with an oval hall inside, and a stone staircase that seems to hang in the air."
+    source: 1
+    quote: "Inside, an oval hall contains a cantilevered stone staircase, lit by a cupola."
+  - says: "It is believed to be the oldest fireproof building in the United States."
+    source: 1
+    quote: "It is now believed to be the oldest building of fireproof construction in the United States."
+  - says: "It is believed to be the oldest fireproof building in the United States."
+    source: 2
+    quote: "is believed to be the first building of fireproof construction in the United States."
+  - says: "Its architect was born in Charleston."
+    source: 1
+    quote: "and a Charleston native."
+  - says: "Robert Mills, the first American born architect trained for the job."
+    source: 1
+    quote: "Robert Mills, the first native-born American to be trained as an architect"
+  - says: "He drew for Thomas Jefferson at Monticello."
+    source: 1
+    quote: "as a draftsman for Monticello"
+  - says: "And later, he designed the Washington Monument."
+    source: 1
+    quote: "Mills was responsible for the Washington Monumet"
+  - says: "The building was put to the test in eighteen eighty six, when the great earthquake struck."
+    source: 1
+    quote: "the Fireproof Building survived the 1886 earthquake unharmed, except for the exterior stairs."
+sources:
+  - title: "Fireproof Building"
+    publisher: "National Park Service, Travel Charleston"
+    url: https://www.nps.gov/places/fireproof-building.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "South Carolina: A Guide to the Palmetto State (Federal Writers' Project, 1941)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/in.ernet.dli.2015.180130
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/charleston-the-building-that-could-not-burn/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.1
+    audioBytes: 1090916
+    transcript:
+      totalS: 68.1
+      lines:
+        - text: Look at the windows of this plain, grey building.
+          atS: 0
+          durationS: 2.88
+        - text: The shutters are not wood.
+          atS: 3.05
+          durationS: 1.45
+        - text: They are iron.
+          atS: 4.56
+          durationS: 1.03
+        - text: So are the window frames.
+          atS: 5.77
+          durationS: 1.65
+        - text: Look for anything at all that could burn.
+          atS: 7.74
+          durationS: 2.37
+        - text: There is nothing.
+          atS: 10.55
+          durationS: 1.2
+        - text: That was the whole point.
+          atS: 12.26
+          durationS: 1.44
+        - text: In a city that kept burning, this was built to keep the public records safe.
+          atS: 14.03
+          durationS: 4.99
+        - text: No flammable material was used anywhere in it.
+          atS: 19.53
+          durationS: 2.98
+        - text: It was solid masonry, with an oval hall inside, and a stone staircase that seems to hang in the air.
+          atS: 23.21
+          durationS: 6.69
+        - text: It is believed to be the oldest fireproof building in the United States.
+          atS: 30.71
+          durationS: 4.07
+        - text: Its architect was born in Charleston.
+          atS: 35.17
+          durationS: 2.5
+        - text: Robert Mills, the first American born architect trained for the job.
+          atS: 38.27
+          durationS: 4.62
+        - text: He drew for Thomas Jefferson at Monticello.
+          atS: 43.49
+          durationS: 2.8
+        - text: And later, he designed the Washington Monument.
+          atS: 46.73
+          durationS: 3.25
+        - text: The building was put to the test in eighteen eighty six, when the great earthquake struck.
+          atS: 50.49
+          durationS: 5.06
+        - text: It came through unharmed, except for its outside stairs.
+          atS: 56.16
+          durationS: 3.8
+        - text: Look at the iron shutters again.
+          atS: 60.56
+          durationS: 1.94
+        - text: Iron, stone and brick.
+          atS: 63.01
+          durationS: 2.24
+        - text: All of it, to keep paper safe.
+          atS: 65.57
+          durationS: 2.55

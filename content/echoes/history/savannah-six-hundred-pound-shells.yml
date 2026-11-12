@@ -1,0 +1,128 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: outside Battery Garland, the concrete gun battery of Fort Screven at the north end of Tybee Island, now the Tybee Island Museum.
+# Position: the north end of Tybee near the light station from the coast data in the app's map (medium confidence; the app's street file has no tiles on Tybee). About 170 m from the lighthouse echo.
+id: savannah-six-hundred-pound-shells
+title: "Six Hundred Pound Shells"
+summary: "Battery Garland held a twelve inch gun and its magazines at Fort Screven, which guarded the river from 1897 to 1947. Now it is a museum."
+place: "Battery Garland, Fort Screven, north end of Tybee Island, Georgia"
+at: { lat: 32.02250, lng: -80.84400 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 67
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, tybee, fort-screven, military, coastal-defense, world-war-ii]
+teaser: "The rooms inside were built for shells that weighed six hundred pounds each."
+script: |
+  Look at the low, grassy mound of concrete in front of you. It does not look like much. It was built not to.
+
+  It was built to hide one enormous gun.
+
+  In eighteen ninety five, the army ordered a new fort on this end of the island, Fort Screven. Not a brick castle like Fort Pulaski across the water, which rifled cannon had already made obsolete. Low concrete batteries instead, six of them, and a minefield in the river.
+
+  This one, Battery Garland, held a long range gun with a barrel twelve inches across. Inside, the rooms stored its shells, six hundred pounds each, and the powder to fire them, in two hundred pound bags.
+
+  Soldiers trained and stood guard here through the Spanish American War, the First World War and the Second. In nineteen forty seven the fort closed. In nineteen sixty one, the magazine became the island's museum.
+
+  Look at the mound again.
+
+  The rooms that held six hundred pound shells now hold the island's memories.
+detail: >-
+  All facts from the NPS Tybee Island page: Fort Screven ordered in 1895; six low profile poured concrete gun batteries and a minefield; 1897 to 1947; Battery Garland "the former gun battery and magazine for a 12 inch long-range gun"; rooms that "once stored six hundred pound projectiles and two hundred pound bags of gun powder"; the museum in 1961. The 1937 guide calls Fort Screven "an active Army post". The mound's appearance is to be confirmed on site.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In eighteen ninety five, the army ordered a new fort on this end of the island, Fort Screven."
+    source: 1
+    quote: "In 1895, Fort Screven was ordered built on the North end of Tybee to provide a more modern system of seacoast defenses."
+  - says: "Low concrete batteries instead, six of them, and a minefield in the river."
+    source: 1
+    quote: "Six poured concrete low profile gun batteries and a minefield were ordered for Tybee along with hundreds of other military buildings."
+  - says: "Not a brick castle like Fort Pulaski across the water, which rifled cannon had already made obsolete."
+    source: 1
+    quote: "Within 30 hours, the rifled guns had such a devastating effect on the brick fort that it was surrendered and all forts like Pulaski were considered obsolete."
+  - says: "This one, Battery Garland, held a long range gun with a barrel twelve inches across."
+    source: 1
+    quote: "Battery Garland, the former gun battery and magazine for a 12 inch long-range gun"
+  - says: "Inside, the rooms stored its shells, six hundred pounds each, and the powder to fire them, in two hundred pound bags."
+    source: 1
+    quote: "Rooms which once stored six hundred pound projectiles and two hundred pound bags of gun powder"
+  - says: "Soldiers trained and stood guard here through the Spanish American War, the First World War and the Second. In nineteen forty seven the fort closed."
+    source: 1
+    quote: "Troops would train and stand guard on Tybee through the Spanish American War of 1898, World War I, and World War II. In 1947, the Fort was closed and sold to the Town of Tybee"
+  - says: "In nineteen sixty one, the magazine became the island's museum."
+    source: 1
+    quote: "In 1961, Battery Garland, the former gun battery and magazine for a 12 inch long-range gun, became the Tybee Island museum."
+  - says: "Soldiers trained and stood guard here through the Spanish American War, the First World War and the Second."
+    source: 2
+    quote: "FORT SCREVEN, 18 m. (5 Vicinity Map), is an active Army post on Tybee Island"
+  - says: "It was built to hide one enormous gun."
+    source: 1
+    quote: "In 1961, Battery Garland, the former gun battery and magazine for a 12 inch long-range gun, became the Tybee Island museum."
+  - says: "The rooms that held six hundred pound shells now hold the island's memories."
+    source: 1
+    quote: "Rooms which once stored six hundred pound projectiles and two hundred pound bags of gun powder, now hold the collections and exhibits of over four hundred years of Tybee Island history."
+sources:
+  - title: "Tybee Island"
+    publisher: "National Park Service, Fort Pulaski National Monument"
+    url: https://www.nps.gov/fopu/learn/historyculture/tybee-island.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-six-hundred-pound-shells/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 66.5
+    audioBytes: 1064167
+    transcript:
+      totalS: 66.5
+      lines:
+        - text: Look at the low, grassy mound of concrete in front of you.
+          atS: 0
+          durationS: 3.41
+        - text: It does not look like much.
+          atS: 3.74
+          durationS: 1.45
+        - text: It was built not to.
+          atS: 5.57
+          durationS: 1.37
+        - text: It was built to hide one enormous gun.
+          atS: 7.19
+          durationS: 2.48
+        - text: In eighteen ninety five, the army ordered a new fort on this end of the island, Fort Screven.
+          atS: 10.48
+          durationS: 5.46
+        - text: Not a brick castle like Fort Pulaski across the water, which rifled cannon had already made obsolete.
+          atS: 16.54
+          durationS: 6.36
+        - text: Low concrete batteries instead, six of them, and a minefield in the river.
+          atS: 23.6
+          durationS: 5.1
+        - text: This one, Battery Garland, held a long range gun with a barrel twelve inches across.
+          atS: 29.4
+          durationS: 5.65
+        - text: Inside, the rooms stored its shells, six hundred pounds each, and the powder to fire them, in two hundred pound bags.
+          atS: 35.86
+          durationS: 7.57
+        - text: Soldiers trained and stood guard here through the Spanish American War, the First World War and the Second.
+          atS: 44.04
+          durationS: 6.65
+        - text: In nineteen forty seven the fort closed.
+          atS: 51.5
+          durationS: 2.87
+        - text: In nineteen sixty one, the magazine became the island's museum.
+          atS: 54.81
+          durationS: 4.08
+        - text: Look at the mound again.
+          atS: 59.58
+          durationS: 1.35
+        - text: The rooms that held six hundred pound shells now hold the island's memories.
+          atS: 61.44
+          durationS: 5.02

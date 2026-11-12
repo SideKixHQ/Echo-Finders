@@ -1,0 +1,194 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Old City), following docs/writing-echoes.md (format v2).
+# Listening spot: East sidewalk of North Fifth Street just south of Race.
+# Position: on Fifth Street north of Arch, from the Overture street map; set on the east side so it stays clear of the James Dexter echo on the west side (low confidence on the building: William Still gives the office as 107 North Fifth Street, but Philadelphia renumbered its houses in the 1850s, so the script places it on this street, not at a door).
+id: philadelphia-this-side-up-with-care
+title: "This Side Up With Care"
+summary: "In 1849 a crate from Richmond was carried into the Anti-Slavery office on this street. Someone knocked on the lid. A voice answered."
+place: "North Fifth Street between Arch and Race, where the Pennsylvania Anti-Slavery office stood, Old City, Philadelphia, Pennsylvania"
+at: { lat: 39.95412, lng: -75.14776 }
+triggerRadiusKm: 0.05
+category: people
+format: short
+durationS: 95
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.8
+tags: [philadelphia, philadelphia-core, old-city, henry-box-brown, william-still, underground-railroad, black-history, abolition]
+teaser: "Someone knocked on the lid of the crate. A voice answered."
+script: |
+  Look along Fifth Street. Somewhere on this street, in eighteen forty nine, stood the office of the Pennsylvania Anti Slavery Society. Early one morning, an express wagon pulled up outside it, with a wooden crate on the back.
+
+  The crate was three feet long and two feet wide. It was marked, this side up with care. It had come from Richmond, Virginia. And there was a man inside.
+
+  His name was Henry Brown. He was enslaved in Richmond, and he had himself nailed into that box, with a bladder of water and a few biscuits. He breathed through three small holes. He was carried on his end, head downwards, though the box said this side up. On a steamboat he was left on his head for what felt like an hour and a half. His eyes, he said, were almost swollen out of their sockets. Near Washington, he heard two men guess the box was the mail. Yes, he thought. A male, indeed.
+
+  Inside the office, the door was locked. A man rapped quietly on the lid and called out, all right? And from inside came the answer. All right, sir.
+
+  They cut the hoops and lifted the lid. He rose up in the box, held out his hand, and said, how do you do, gentlemen?
+
+  From that day, he was Henry Box Brown.
+
+  Look down Fifth Street again. Twenty six hours from Richmond.
+
+  All right, sir.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Somewhere on this street, in eighteen forty nine, stood the office of the Pennsylvania Anti Slavery Society."
+    source: 1
+    quote: "not intended for that street, but for the Anti-Slavery office at 107 North Fifth street"
+  - says: "Early one morning, an express wagon pulled up outside it, with a wooden crate on the back."
+    source: 1
+    quote: "It was agreed that Dan should go after the box next morning before daylight and bring it to the Anti-Slavery office direct"
+  - says: "The crate was three feet long and two feet wide."
+    source: 1
+    quote: "two feet wide, and three feet long"
+  - says: "It was marked, this side up with care."
+    source: 1
+    quote: "This side up with care."
+  - says: "It had come from Richmond, Virginia."
+    source: 1
+    quote: "It was twenty-six hours from the time he left Richmond until his arrival in the City of Brotherly Love."
+  - says: "He was enslaved in Richmond, and he had himself nailed into that box, with a bladder of water and a few biscuits."
+    source: 1
+    quote: "One bladder of water and a few small biscuits."
+  - says: "He breathed through three small holes."
+    source: 2
+    quote: "excepting three small gimblet holes"
+  - says: "He was carried on his end, head downwards, though the box said this side up."
+    source: 2
+    quote: "the box being placed on its end, so that I started with my head downwards, although the box was directed, '' this side up with care."
+  - says: "On a steamboat he was left on his head for what felt like an hour and a half."
+    source: 2
+    quote: "I was put aboard a steamboat, and placed on my head. In this dreadful position, I remained the space of an hour and a half, it seemed to me"
+  - says: "His eyes, he said, were almost swollen out of their sockets."
+    source: 2
+    quote: "my eyes were almost swollen out of their sockets"
+  - says: "Near Washington, he heard two men guess the box was the mail."
+    source: 2
+    quote: "replied, that he guessed it was the mail."
+  - says: "Yes, he thought. A male, indeed."
+    source: 2
+    quote: "it is a male, indeed, although not the mail of the United States."
+  - says: "Inside the office, the door was locked."
+    source: 1
+    quote: "The door had been safely locked."
+  - says: "A man rapped quietly on the lid and called out, all right?"
+    source: 1
+    quote: "Mr. McKim rapped quietly on the lid of the box and called out, \"All right!\""
+  - says: "And from inside came the answer. All right, sir."
+    source: 1
+    quote: "Instantly came the answer from within, \"All right, sir !\""
+  - says: "They cut the hoops and lifted the lid."
+    source: 1
+    quote: "Saw and hatchet quickly had the five hickory hoops cut and the lid off"
+  - says: "He rose up in the box, held out his hand, and said, how do you do, gentlemen?"
+    source: 1
+    quote: "Rising up in his box, he reached out his hand, saying, \"How do you do, gentlemen?\""
+  - says: "From that day, he was Henry Box Brown."
+    source: 1
+    quote: "He was then christened Henry Box Brown"
+  - says: "Twenty six hours from Richmond."
+    source: 1
+    quote: "It was twenty-six hours from the time he left Richmond until his arrival in the City of Brotherly Love."
+  - says: "His name was Henry Brown."
+    source: 2
+    quote: "NARRATIVE HENRY BOX BROWN, WHO ESCAPED FROM SLAVERY ENCLOSED IN A BOX 3 FEET LONG AND 2 WIDE."
+sources:
+  - title: "The Underground Rail Road (William Still, 1872), the chapter on Henry Box Brown"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/undergroundrailr00stil_0
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Narrative of Henry Box Brown, who escaped from slavery enclosed in a box (1849)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/narrativeofhenry00brow
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-this-side-up-with-care/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 94.5
+    audioBytes: 1512219
+    transcript:
+      totalS: 94.5
+      lines:
+        - text: Look along Fifth Street.
+          atS: 0
+          durationS: 1.65
+        - text: Somewhere on this street, in eighteen forty nine, stood the office of the Pennsylvania Anti Slavery Society.
+          atS: 2.16
+          durationS: 6.73
+        - text: Early one morning, an express wagon pulled up outside it, with a wooden crate on the back.
+          atS: 9.59
+          durationS: 5.71
+        - text: The crate was three feet long and two feet wide.
+          atS: 15.81
+          durationS: 3.16
+        - text: It was marked, this side up with care.
+          atS: 19.41
+          durationS: 2.96
+        - text: It had come from Richmond, Virginia.
+          atS: 23.07
+          durationS: 2.16
+        - text: And there was a man inside.
+          atS: 25.83
+          durationS: 1.68
+        - text: His name was Henry Brown.
+          atS: 28.12
+          durationS: 1.85
+        - text: He was enslaved in Richmond, and he had himself nailed into that box, with a bladder of water and a few biscuits.
+          atS: 30.57
+          durationS: 7.48
+        - text: He breathed through three small holes.
+          atS: 38.49
+          durationS: 2.41
+        - text: He was carried on his end, head downwards, though the box said this side up.
+          atS: 41.23
+          durationS: 5.24
+        - text: On a steamboat he was left on his head for what felt like an hour and a half.
+          atS: 46.97
+          durationS: 4.77
+        - text: His eyes, he said, were almost swollen out of their sockets.
+          atS: 52.56
+          durationS: 3.75
+        - text: Near Washington, he heard two men guess the box was the mail.
+          atS: 57.12
+          durationS: 3.54
+        - text: Yes, he thought.
+          atS: 61.36
+          durationS: 1.68
+        - text: A male, indeed.
+          atS: 63.48
+          durationS: 1.42
+        - text: Inside the office, the door was locked.
+          atS: 65.71
+          durationS: 2.16
+        - text: A man rapped quietly on the lid and called out, all right?
+          atS: 68.57
+          durationS: 3.65
+        - text: And from inside came the answer.
+          atS: 72.82
+          durationS: 2.26
+        - text: All right, sir.
+          atS: 75.52
+          durationS: 0.95
+        - text: They cut the hoops and lifted the lid.
+          atS: 77.43
+          durationS: 2.04
+        - text: He rose up in the box, held out his hand, and said, how do you do, gentlemen?
+          atS: 79.91
+          durationS: 4.74
+        - text: From that day, he was Henry Box Brown.
+          atS: 85.25
+          durationS: 2.81
+        - text: Look down Fifth Street again.
+          atS: 88.76
+          durationS: 1.74
+        - text: Twenty six hours from Richmond.
+          atS: 90.94
+          durationS: 2.01
+        - text: All right, sir.
+          atS: 93.39
+          durationS: 1.07

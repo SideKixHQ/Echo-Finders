@@ -1,0 +1,196 @@
+# Drafted by Claude Code (2026-11-11) for the Washington DC core (Lafayette Square), second pass, following the six beats in docs/writing-echoes.md (echo-format-v2) and docs/14-true-crime.md.
+# Listening spot: Public pavement at the corner of Pennsylvania Avenue and Madison Place NW, the southeast corner of Lafayette Square, looking across the square to Jackson Place.
+# Position: the National Intelligencer of 28 February 1859 puts the shooting "at the corner of Pennsylvania avenue and the east side of Lafayette Square"; the pin is on that corner (high confidence on the corner, which is now a pedestrian plaza). About 95 m from the nearest Lafayette Square echo, which tells a different subject.
+id: dc-the-opera-glass
+title: "The Opera Glass"
+summary: "In February 1859 a congressman shot the son of Francis Scott Key on this corner. A jury acquitted him in an hour."
+place: "Corner of Pennsylvania Avenue and Madison Place NW, Lafayette Square, Washington, D.C."
+at: { lat: 38.89918, lng: -77.03535 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 89
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.75
+tags: [washington, dc-core, lafayette-square, sickles, key, 1859, insanity-defence]
+teaser: "One man held out his hand. The other drew a pistol."
+script: |
+  Look across the square, to the row of old houses on the far side. In eighteen fifty nine, one of them belonged to a congressman from New York, Daniel Sickles.
+
+  That winter a man kept walking round this square, waving a handkerchief at one of those windows.
+
+  He was Philip Barton Key, the federal prosecutor for this city, and the son of Francis Scott Key, who wrote the Star Spangled Banner. He was signalling to Sickles's wife, Teresa. An anonymous note had already told Sickles about the affair. Teresa confessed, in writing.
+
+  On the twenty seventh of February, Sickles saw Key outside. He armed himself and crossed the square.
+
+  They met on this corner, at about two in the afternoon. Key held out his hand. How are you, he said. Sickles would not take it. You have dishonored my home and my family, he said. Key reached into his pocket. Sickles drew a pistol, and fired three times. Key was carried to the club house close by, and died within minutes.
+
+  Sickles was tried for murder. His lawyers, among them Edwin Stanton, argued that he had been temporarily insane. The White House Historical Association calls it the first time that defence was used in an American court. The jury was out for about an hour. Not guilty. Sickles was acquitted, and left the court to cheers.
+
+  Stand on the corner for a moment. It is an ordinary corner now.
+
+  What Key had pulled from his pocket was an opera glass.
+pronunciations:
+  - written: Sickles
+    say: SICK-ulz
+detail: >-
+  Conviction status: acquitted, recorded as "exonerated" as the Lizzie Borden echo is, because the schema has no "acquitted"; the script says plainly that the jury found him not guilty. Nobody named is alive. The shooting at this corner, the handshake, the words, the opera glass and the club house are from the National Intelligencer of 28 February 1859, which reports the testimony of the witness Samuel Butterworth. The note, the handkerchief and Teresa's written confession are from the White House Historical Association. The acquittal is in both the Association's page and the New-York Daily Tribune of 27 April 1859. "First time" is the Association's claim, attributed aloud. Told without injuries.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: exonerated
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-11"
+  contentWarning: "This echo concerns a shooting in 1859 and the trial that followed. Injuries are not described."
+claims:
+  - says: "In eighteen fifty nine, one of them belonged to a congressman from New York, Daniel Sickles."
+    source: 1
+    quote: "Sickles and his wife Teresa lived in a home on the west side of the square, now called Jackson Place."
+  - says: "That winter a man kept walking round this square, waving a handkerchief at one of those windows."
+    source: 1
+    quote: "Key had been circling the square, waving a handkerchief to signal Teresa for a meeting."
+  - says: "He was Philip Barton Key, the federal prosecutor for this city, and the son of Francis Scott Key, who wrote the Star Spangled Banner."
+    source: 1
+    quote: "Representative Daniel Sickles of New York shot United States District Attorney Philip Barton Key. Philip was the son of Francis Scott Key, the author of \"The Star-Spangled Banner.\""
+  - says: "An anonymous note had already told Sickles about the affair. Teresa confessed, in writing."
+    source: 1
+    quote: "On the night of February 24, 1859, Sickles received an anonymous note about the affair."
+  - says: "Teresa confessed, in writing."
+    source: 1
+    quote: "After an investigation, Mrs. Sickles confessed, in writing, of her infidelity."
+  - says: "On the twenty seventh of February, Sickles saw Key outside. He armed himself and crossed the square."
+    source: 1
+    quote: "On February 27, 1859, Congressman Sickles spotted Key outside the house they rented on the west side of Lafayette Square."
+  - says: "They met on this corner, at about two in the afternoon."
+    source: 2
+    quote: "took place about two o’clock in the First Ward, at the corner of Pennsylvania avenue and the east side of Lafayette Square."
+  - says: "Key held out his hand. How are you, he said. Sickles would not take it. You have dishonored my home and my family, he said."
+    source: 2
+    quote: "Mr. Key extended his hand towards Mr. Sickles, saying “How are you?” Mr. Sickles refused to take the proffered hand, saying, “You have dishon ored my home and my family,”"
+  - says: "Sickles drew a pistol, and fired three times."
+    source: 2
+    quote: "Mr. Sickles then fired a third shot into the body of Mr. Key"
+  - says: "Key was carried to the club house close by, and died within minutes."
+    source: 2
+    quote: "Key was conveyed to the Club-House,” close at hand, where he expired in a few minutes."
+  - says: "His lawyers, among them Edwin Stanton, argued that he had been temporarily insane. The White House Historical Association calls it the first time that defence was used in an American court."
+    source: 1
+    quote: "At the trial, Sickles claimed temporary insanity, the first time such a defense had been mounted in a United States court. Edwin Stanton, the future Secretary of War under Abraham Lincoln, served as a lawyer for Sickles."
+  - says: "The jury was out for about an hour. Not guilty."
+    source: 1
+    quote: "The jury believed the defendant's claims, and after only an hour of deliberation, they acquitted him."
+  - says: "Not guilty. Sickles was acquitted, and left the court to cheers."
+    source: 3
+    quote: "rendered a verdict of Not Guilty, snd that Mr. Sickles was thersupon liberated, amid the enthusinstic plaudits of bis assembled friends"
+  - says: "What Key had pulled from his pocket was an opera glass."
+    source: 2
+    quote: "As Mr. Key raised his hand to throw at Mr. Sickles the article he took out of his pocket, (which proved to be an opera glass,) Mr. Sickles fired his pistol"
+  - says: "He was signalling to Sickles's wife, Teresa."
+    source: 1
+    quote: "Key had been circling the square, waving a handkerchief to signal Teresa for a meeting."
+sources:
+  - title: "Murder and Untimely Tragedy: The Haunting of Lafayette Square"
+    publisher: "White House Historical Association"
+    url: https://www.whitehousehistory.org/murder-and-untimely-tragedy-the-haunting-of-lafayette-square
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Daily National Intelligencer (Washington, D.C.), 28 February 1859, page 3: Deplorable Occurrence"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83026172/1859-02-28/ed-1/?sp=3
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "New-York Daily Tribune, 27 April 1859, page 4: Sickles Acquitted"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030213/1859-04-27/ed-1/?sp=4
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-the-opera-glass/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 89.3
+    audioBytes: 1429881
+    transcript:
+      totalS: 89.3
+      lines:
+        - text: Look across the square, to the row of old houses on the far side.
+          atS: 0
+          durationS: 3.82
+        - text: In eighteen fifty nine, one of them belonged to a congressman from New York, Daniel Sickles.
+          atS: 4.26
+          durationS: 5.87
+        - text: That winter a man kept walking round this square, waving a handkerchief at one of those windows.
+          atS: 10.65
+          durationS: 5.29
+        - text: He was Philip Barton Key, the federal prosecutor for this city, and the son of Francis Scott Key, who wrote the Star Spangled Banner.
+          atS: 16.45
+          durationS: 7.44
+        - text: He was signalling to Sickles's wife, Teresa.
+          atS: 24.4
+          durationS: 2.77
+        - text: An anonymous note had already told Sickles about the affair.
+          atS: 27.78
+          durationS: 3.38
+        - text: Teresa confessed, in writing.
+          atS: 31.54
+          durationS: 2
+        - text: On the twenty seventh of February, Sickles saw Key outside.
+          atS: 34.66
+          durationS: 3.41
+        - text: He armed himself and crossed the square.
+          atS: 38.28
+          durationS: 2.01
+        - text: They met on this corner, at about two in the afternoon.
+          atS: 40.46
+          durationS: 2.82
+        - text: Key held out his hand.
+          atS: 43.45
+          durationS: 1.34
+        - text: How are you, he said.
+          atS: 45.17
+          durationS: 1.42
+        - text: Sickles would not take it.
+          atS: 46.68
+          durationS: 1.36
+        - text: You have dishonored my home and my family, he said.
+          atS: 48.28
+          durationS: 3.1
+        - text: Key reached into his pocket.
+          atS: 51.71
+          durationS: 1.59
+        - text: Sickles drew a pistol, and fired three times.
+          atS: 53.58
+          durationS: 2.8
+        - text: Key was carried to the club house close by, and died within minutes.
+          atS: 56.59
+          durationS: 3.7
+        - text: Sickles was tried for murder.
+          atS: 60.67
+          durationS: 1.9
+        - text: His lawyers, among them Edwin Stanton, argued that he had been temporarily insane.
+          atS: 62.82
+          durationS: 5.67
+        - text: The White House Historical Association calls it the first time that defence was used in an American court.
+          atS: 68.81
+          durationS: 5.71
+        - text: The jury was out for about an hour.
+          atS: 75.13
+          durationS: 1.85
+        - text: Not guilty.
+          atS: 77.22
+          durationS: 0.81
+        - text: Sickles was acquitted, and left the court to cheers.
+          atS: 78.41
+          durationS: 2.98
+        - text: Stand on the corner for a moment.
+          atS: 81.91
+          durationS: 1.56
+        - text: It is an ordinary corner now.
+          atS: 83.79
+          durationS: 1.8
+        - text: What Key had pulled from his pocket was an opera glass.
+          atS: 86.28
+          durationS: 3.02

@@ -1,0 +1,199 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Germantown), following docs/writing-echoes.md (format v2). Legend, told as legend; male narrator per content/voices.yml.
+# Listening spot: Germantown Avenue sidewalk in front of Grumblethorpe, the Wister house, 5267 Germantown Avenue.
+# Position: Wikidata's point for Grumblethorpe (40.032222, -75.168333), kept on the avenue frontage; the app's street map does not reach Germantown, so the sidewalk line was not checked (medium confidence; widened radius).
+id: philadelphia-the-stain-on-the-parlour-floor
+title: "The Stain on the Parlour Floor"
+summary: "Germantown has long shown a bloodstain on this house's parlour floor, from a British general. His own servant told it differently."
+place: "Grumblethorpe (the Wister House), 5267 Germantown Avenue, Germantown, Philadelphia, Pennsylvania"
+at: { lat: 40.03215, lng: -75.16820 }
+triggerRadiusKm: 0.06
+category: legend
+format: short
+durationS: 95
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  The bloodstain is a Germantown tradition, recorded by Thompson Westcott in 1877 ("stains are still shown on the floor"). What is on record: General James Agnew lodged here in the week before the Battle of Germantown and was killed in the battle on 4 October 1777. His servant's letter to Agnew's widow says he died in another house and his body was then brought back here, which would put the blood on the floor but not his death in the room. The local claim of a villager named Boyer to have shot him is contradicted by the same letter. The script says all of this is tradition.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 10
+quality: 0.8
+tags: [philadelphia, germantown, revolution, military, battle-of-germantown, grumblethorpe, wister-house, legend, bloodstain]
+teaser: "Germantown has been showing the stain for two hundred years."
+script: |
+  Look at the old stone house with the long front, set right on the avenue. This is a legend, and it has been told in Germantown for a very long time. Inside, they say, on the floor of the west parlour, there is a stain. Blood, from a British general.
+
+  Here is what is on record. In late September of seventeen seventy seven, the British army took over Germantown. A general named James Agnew moved into this house. The person left in charge of it was a servant named Justina. As a child, she had walked seventy miles to find this family, after her father died.
+
+  On the fourth of October, Agnew heard the American attack begin. He hurried out. In the garden, Justina was working with her hoe. He told her to get into the cellar. She would not, and kept on hoeing.
+
+  Later that morning, Agnew was shot from his horse, in the street.
+
+  The legend says he was carried back here, and died on the parlour floor. A man from the village claimed for years that he had fired the shot himself, from behind a wall.
+
+  But Agnew's own servant wrote to his widow. He said the general died in a different house, within fifteen minutes, and that afterward he had the body brought back to his former quarters.
+
+  Justina stayed with this family for the rest of her life. They kept her old hoe for years, in memory of that morning.
+
+  Look at the house again. The blood on that floor may well be real.
+
+  It is the deathbed that is the legend.
+pronunciations:
+  - written: "Agnew"
+    say: "AG-new"
+  - written: "Justina"
+    say: "juss-TEE-na"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Inside, they say, on the floor of the west parlour, there is a stain."
+    source: 1
+    quote: "According to tradition, General Agnew was taken to the Wister House, where he died, and stains are still shown on the floor which were from the blood of his wounds."
+  - says: "In late September of seventeen seventy seven, the British army took over Germantown."
+    source: 1
+    quote: "moved on the 25th of September in two grand divisions. On the next day General Agnew became a tenant of the W^ister House."
+  - says: "A general named James Agnew moved into this house."
+    source: 1
+    quote: "The officer who came in and found Justina to be his hostess was Brevet-Brigadier-General James Agnew"
+  - says: "The person left in charge of it was a servant named Justina."
+    source: 1
+    quote: "Justina was in charge of the Wister House in Germantown when the British troops marched through the village"
+  - says: "As a child, she had walked seventy miles to find this family, after her father died."
+    source: 1
+    quote: "She walked all the way to Philadelphia — a long, rough, and weary journey of seventy miles."
+  - says: "On the fourth of October, Agnew heard the American attack begin. He hurried out."
+    source: 1
+    quote: "But on the 4th of October he was summoned from the house by the noise of the American attack."
+  - says: "In the garden, Justina was working with her hoe. He told her to get into the cellar. She would not, and kept on hoeing."
+    source: 1
+    quote: "he noticed that Justina was working in the garden with an oldfashioned German hoe"
+  - says: "In the garden, Justina was working with her hoe. He told her to get into the cellar. She would not, and kept on hoeing."
+    source: 1
+    quote: "advised her to avoid exposure and take refuge in the cellar. She refused his advice, and continued on with her work"
+  - says: "Later that morning, Agnew was shot from his horse, in the street."
+    source: 1
+    quote: "the general being then in the street, and even in front of the piquet, and all alone, only me ; he wheeled around, and, putting spurs to his horse and calling to me, he received a whole volley from the enemy."
+  - says: "The legend says he was carried back here, and died on the parlour floor."
+    source: 1
+    quote: "According to tradition, General Agnew was taken to the Wister House, where he died"
+  - says: "A man from the village claimed for years that he had fired the shot himself, from behind a wall."
+    source: 1
+    quote: "which attributed the killing of General Agnew to a man named Hans P. Boyer, a native of the village, and not a soldier. Boyer was the hero of his own story"
+  - says: "A man from the village claimed for years that he had fired the shot himself, from behind a wall."
+    source: 1
+    quote: "He said that he was concealed near an old wall"
+  - says: "But Agnew's own servant wrote to his widow."
+    source: 1
+    quote: "a private soldier who was the principal servant of General Agnew, in a letter to the 2/8 HISTORIC MANSIONS OF PHILADELPHIA. widow of the general"
+  - says: "He said the general died in a different house, within fifteen minutes, and that afterward he had the body brought back to his former quarters."
+    source: 1
+    quote: "Andrew says he died within fifteen minutes after he was shot, in \" a house \" near by, but not at the Wister House. His bleeding body was afterward taken there"
+  - says: "He said the general died in a different house, within fifteen minutes, and that afterward he had the body brought back to his former quarters."
+    source: 1
+    quote: "I then had his body brought to his former quarters"
+  - says: "They kept her old hoe for years, in memory of that morning."
+    source: 1
+    quote: "an implement, by the by, which for a long time thereafter was preserved in the family as a memorial of the day."
+  - says: "Justina stayed with this family for the rest of her life."
+    source: 1
+    quote: "was, in fact, a resident with the family until her death."
+  - says: "The blood on that floor may well be real."
+    source: 1
+    quote: "His bleeding body was afterward taken there, and the blood on the floor of the west parlor dropped from his wound."
+  - says: "Later that morning, Agnew was shot from his horse, in the street."
+    source: 1
+    quote: "Being between the hours of nine and twelve"
+  - says: "This is a legend, and it has been told in Germantown for a very long time."
+    source: 1
+    quote: "According to tradition, General Agnew was taken to the Wister House, where he died, and stains are still shown on the floor which were from the blood of his wounds."
+  - says: "Blood, from a British general."
+    source: 1
+    quote: "stains are still shown on the floor which were from the blood of his wounds."
+  - says: "Blood, from a British general."
+    source: 1
+    quote: "The officer who came in and found Justina to be his hostess was Brevet-Brigadier-General James Agnew"
+sources:
+  - title: "The Historic Mansions and Buildings of Philadelphia (Thompson Westcott, 1877), chapter: The Wister House, Germantown"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicmansions00west
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/philadelphia-the-stain-on-the-parlour-floor/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 94.7
+    audioBytes: 1516816
+    transcript:
+      totalS: 94.7
+      lines:
+        - text: Look at the old stone house with the long front, set right on the avenue.
+          atS: 0
+          durationS: 4.42
+        - text: This is a legend, and it has been told in Germantown for a very long time.
+          atS: 4.93
+          durationS: 4.66
+        - text: Inside, they say, on the floor of the west parlour, there is a stain.
+          atS: 9.91
+          durationS: 4.53
+        - text: Blood, from a British general.
+          atS: 14.95
+          durationS: 2.07
+        - text: Here is what is on record.
+          atS: 17.46
+          durationS: 1.68
+        - text: In late September of seventeen seventy seven, the British army took over Germantown.
+          atS: 19.84
+          durationS: 5.5
+        - text: A general named James Agnew moved into this house.
+          atS: 25.73
+          durationS: 3.73
+        - text: The person left in charge of it was a servant named Justina.
+          atS: 29.84
+          durationS: 3.94
+        - text: As a child, she had walked seventy miles to find this family, after her father died.
+          atS: 34.47
+          durationS: 4.86
+        - text: On the fourth of October, Agnew heard the American attack begin.
+          atS: 40.03
+          durationS: 4.19
+        - text: He hurried out.
+          atS: 44.6
+          durationS: 1
+        - text: In the garden, Justina was working with her hoe.
+          atS: 45.99
+          durationS: 3.19
+        - text: He told her to get into the cellar.
+          atS: 49.56
+          durationS: 1.65
+        - text: She would not, and kept on hoeing.
+          atS: 51.59
+          durationS: 2.19
+        - text: Later that morning, Agnew was shot from his horse, in the street.
+          atS: 54.6
+          durationS: 4.16
+        - text: The legend says he was carried back here, and died on the parlour floor.
+          atS: 59.27
+          durationS: 4.32
+        - text: A man from the village claimed for years that he had fired the shot himself, from behind a wall.
+          atS: 64.19
+          durationS: 5.17
+        - text: But Agnew's own servant wrote to his widow.
+          atS: 69.87
+          durationS: 2.8
+        - text: He said the general died in a different house, within fifteen minutes, and that afterward he had the body brought back to his former quarters.
+          atS: 73.18
+          durationS: 7.66
+        - text: Justina stayed with this family for the rest of her life.
+          atS: 81.44
+          durationS: 3.1
+        - text: They kept her old hoe for years, in memory of that morning.
+          atS: 84.72
+          durationS: 3.17
+        - text: Look at the house again.
+          atS: 88.17
+          durationS: 1.16
+        - text: The blood on that floor may well be real.
+          atS: 89.61
+          durationS: 2.44
+        - text: It is the deathbed that is the legend.
+          atS: 92.37
+          durationS: 2.37

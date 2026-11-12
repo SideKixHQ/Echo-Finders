@@ -1,0 +1,142 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Madison Square and NoMad cluster (more NYC batch).
+# Listening spot: The garden gate of the Church of the Transfiguration, 1 East 29th Street between Fifth and Madison Avenues: the "Little Church Around the Corner".
+# Position: 1 East 29th Street from the street numbering, north side just east of Fifth Avenue (medium confidence).
+id: new-york-the-little-church-around-the-corner
+title: "Try the Little Church Around the Corner"
+summary: "In 1870 a fashionable church refused to bury an actor. Its pastor sent the mourners round the corner, to this one. Actors never forgot."
+place: "Church of the Transfiguration, 1 East 29th Street, NoMad, Manhattan"
+at: { lat: 40.74535, lng: -73.98625 }
+triggerRadiusKm: 0.04
+category: arts
+format: short
+durationS: 62
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [new-york, nomad, theater, actors, church, broadway]
+teaser: "One pastor turned an actor's funeral away. He gave the mourners directions."
+script: |
+  Look through the gate at the little cluster of stone buildings, set back in a garden, in the middle of Midtown. It looks like a village church that got lost.
+
+  It has a nickname. And it started as a brush off.
+
+  In eighteen seventy, an actor named George Holland died. A friend of his, Joseph Jefferson, went to the pastor of a fashionable church on Madison Avenue to ask for a funeral.
+
+  The pastor said no. Not for an actor.
+
+  But he did make a suggestion. Try, he said, the little church around the corner.
+
+  So they did. And this church buried him.
+
+  When the story got out, the theater people of New York made this their church. An actors' guild made its home in the building.
+
+  Couples came to marry here, perhaps more than at any other church in the city. And it is still better known by the pastor's words than by its own name.
+
+  The Little Church Around the Corner.
+
+  A brush off.
+
+  It turned into a blessing.
+
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It has a nickname."
+    source: 1
+    quote: "PROTESTANT EPISCOPAL CHURCH OF THE TRANSFIGURATION, 1 East Twenty-ninth Street, better known as the \"Little Church Around the Corner.\""
+  - says: "In eighteen seventy, an actor named George Holland died."
+    source: 1
+    quote: "The edifice gained its more popular name in 1870 when the pastor of a fashionable Madison Avenue congregation refused burial services to George Holland, an actor"
+  - says: "A friend of his, Joseph Jefferson, went to the pastor of a fashionable church on Madison Avenue to ask for a funeral."
+    source: 1
+    quote: "and suggested to Joseph Jefferson, a friend of the deceased, that he \"try the little church around the corner.\""
+  - says: "The pastor said no. Not for an actor."
+    source: 1
+    quote: "the pastor of a fashionable Madison Avenue congregation refused burial services to George Holland, an actor"
+  - says: "Try, he said, the little church around the corner."
+    source: 1
+    quote: "that he \"try the little church around the corner.\""
+  - says: "When the story got out, the theater people of New York made this their church."
+    source: 1
+    quote: "The ensuing publicity made the church a shrine for theater people."
+  - says: "Couples came to marry here, perhaps more than at any other church in the city."
+    source: 1
+    quote: "More marriage ceremonies are performed here, perhaps, than in any other church in the city."
+  - says: "And it is still better known by the pastor's words than by its own name."
+    source: 1
+    quote: "better known as the \"Little Church Around the Corner.\""
+  - says: "An actors' guild made its home in the building."
+    source: 1
+    quote: "The EPISCOPAL ACTORS GUILD OF AMERICA, of which Otis Skinner is head, has headquarters in the church building."
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Murray Hill"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-the-little-church-around-the-corner/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 61.9
+    audioBytes: 991442
+    transcript:
+      totalS: 61.9
+      lines:
+        - text: Look through the gate at the little cluster of stone buildings, set back in a garden, in the middle of Midtown.
+          atS: 0
+          durationS: 6.4
+        - text: It looks like a village church that got lost.
+          atS: 6.84
+          durationS: 2.66
+        - text: It has a nickname.
+          atS: 9.88
+          durationS: 1.17
+        - text: And it started as a brush off.
+          atS: 11.38
+          durationS: 2.01
+        - text: In eighteen seventy, an actor named George Holland died.
+          atS: 14.5
+          durationS: 4.11
+        - text: A friend of his, Joseph Jefferson, went to the pastor of a fashionable church on Madison Avenue to ask for a funeral.
+          atS: 18.82
+          durationS: 6.73
+        - text: The pastor said no.
+          atS: 25.88
+          durationS: 1.37
+        - text: Not for an actor.
+          atS: 27.49
+          durationS: 1.15
+        - text: But he did make a suggestion.
+          atS: 29.02
+          durationS: 1.73
+        - text: Try, he said, the little church around the corner.
+          atS: 31.57
+          durationS: 2.97
+        - text: So they did.
+          atS: 34.87
+          durationS: 0.86
+        - text: And this church buried him.
+          atS: 36.23
+          durationS: 1.63
+        - text: When the story got out, the theater people of New York made this their church.
+          atS: 38.56
+          durationS: 4.83
+        - text: An actors' guild made its home in the building.
+          atS: 43.77
+          durationS: 2.58
+        - text: Couples came to marry here, perhaps more than at any other church in the city.
+          atS: 46.79
+          durationS: 4.49
+        - text: And it is still better known by the pastor's words than by its own name.
+          atS: 51.66
+          durationS: 4.14
+        - text: The Little Church Around the Corner.
+          atS: 56.25
+          durationS: 2.13
+        - text: A brush off.
+          atS: 58.76
+          durationS: 1.01
+        - text: It turned into a blessing.
+          atS: 60.21
+          durationS: 1.7

@@ -1,0 +1,224 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2) and docs/14-true-crime.md.
+# Listening spot: The public sidewalk at the corner of Bull Street and Rutledge Avenue. The 1889 trial reports put McDow's house and office near this corner, with Dawson's home on Bull Street. The listener stays on the sidewalk; no house is pointed at.
+# Position: Bull Street and Rutledge Avenue intersection from the street segments in the app's Charleston street file (high confidence for the corner; the exact building is not identified).
+# Sources: four 1889 newspapers on Chronicling America that likely share wire copy (counted as one source), the Savannah Morning News's own Charleston reports of 12 March and 29 June 1889, and the South Carolina Encyclopedia entry on Dawson. Corroborated 2026-11-11: the killing in McDow's office on 12 March 1889, the governess, McDow's surrender and self defence claim, the attempt to bury the body, and the acquittal are each in at least two of these.
+# The wire report puts the jury out two hours and a quarter; the Savannah Morning News has it retire about 1 o'clock and agree shortly after 2. The script now says only that the jury was not out long.
+id: charleston-the-editor-who-got-off-the-streetcar
+title: "The Editor Who Got Off the Streetcar"
+summary: "In March 1889 the editor of the News and Courier was shot dead in a doctor's office near this corner. A jury acquitted the doctor."
+place: "Corner of Bull Street and Rutledge Avenue, Charleston, South Carolina"
+at: { lat: 32.78155, lng: -79.94282 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 62
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.8
+tags: [charleston, true-crime, 1889, dawson, news-and-courier, harleston-village]
+teaser: "He stepped off the car near home. He never got there."
+script: |
+  Stand on the corner, and look along Bull Street. In March eighteen eighty nine, a man stepped off the horse car near here, in the middle of the afternoon.
+
+  He was Captain Francis Dawson, the editor of the News and Courier. Two men on the car said he was cheerful. He chatted with them, and got off.
+
+  He went into the office of a neighbour, a doctor named McDow. He never came out alive.
+
+  McDow told the police he had killed him. He said it was self defence. Dawson had come to confront him about the way he was pursuing the family's governess, McDow said, and had struck him with a cane.
+
+  At the trial, a surgeon testified that the bullet had come from behind. And the papers reported that someone had begun to dig in the earth under the house, as if to make a grave.
+
+  The jury was not out long. It found McDow not guilty.
+
+  Dawson's friends said that neither justice, nor the shadow of justice, had been done.
+
+  Look along the street again. His own house was just around the corner, on Bull Street.
+detail: >-
+  Contemporary reports on Chronicling America: the coroner's jury and McDow's surrender (Evening Star, 15 March 1889); McDow's account of the cane and the governess and the evidence of an attempted burial (Waterbury Evening Democrat, 14 March 1889, Charleston dispatch); the streetcar witnesses, the location near Bull and Rutledge, and the surgeon's testimony that the shot came from behind (Charlotte Democrat, 28 June 1889); the acquittal and the words of Dawson's friends (Butler Weekly Times, 3 July 1889, Charleston dispatch of 29 June). Independently: the Savannah Morning News reports of 13 March and 30 June 1889, and the South Carolina Encyclopedia, which gives the date, the office, the governess, the self defence claim and the acquittal. McDow was acquitted, so the script says only what the record shows: that he admitted the killing, claimed self defence, and was found not guilty. Everyone named died long ago.
+pronunciations:
+  - written: "McDow"
+    say: "mik-DOW"
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: alleged
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo describes a killing in 1889. No injuries are described in detail."
+claims:
+  - says: "In March eighteen eighty nine, a man stepped off the horse car near here, in the middle of the afternoon."
+    source: 3
+    quote: "Dawson aliehted near McDow's residence, near the corner of Bull and Rutledge streets."
+  - says: "He was Captain Francis Dawson, the editor of the News and Courier."
+    source: 2
+    quote: "the murderer of Capt Dawson, of The News and .Courier"
+  - says: "Two men on the car said he was cheerful."
+    source: 3
+    quote: "He chatted pleasantly and showed no signs of irritation."
+  - says: "He went into the office of a neighbour, a doctor named McDow."
+    source: 1
+    quote: "came to hi* death from a gunshot woaad inflicted by a gun in the hands of Dr. T. B. McDow"
+  - says: "McDow told the police he had killed him."
+    source: 1
+    quote: "testified that McDow acknowledged killing Dawson."
+  - says: "He said it was self defence."
+    source: 2
+    quote: "Capt. Dawson struck him with a cane whereupon he shot the man."
+  - says: "Dawson had come to confront him about the way he was pursuing the family's governess, McDow said, and had struck him with a cane."
+    source: 2
+    quote: "McDow admits that his victim called upon him to remonstrate against his conduct with the governess of the Dawson children."
+  - says: "At the trial, a surgeon testified that the bullet had come from behind."
+    source: 3
+    quote: "The line of flight was from behind."
+  - says: "And the papers reported that someone had begun to dig in the earth under the house, as if to make a grave."
+    source: 2
+    quote: "The mold was noticed to be freshly turned up"
+  - says: "The jury was not out long."
+    source: 4
+    quote: "the jury after being out but two hovrs and a quarter, brought in a verd'et of acquittal"
+  - says: "It found McDow not guilty."
+    source: 4
+    quote: "brought in a verd'et of acquittal"
+  - says: "Dawson's friends said that neither justice, nor the shadow of justice, had been done."
+    source: 4
+    quote: "The friends of Capt. Dawson declare that neither justice nor the shadow of justice has been done."
+  - says: "His own house was just around the corner, on Bull Street."
+    source: 3
+    quote: "occupies an angle between McDow 's house on Rutle Jge street aod Dawson's rejidence on Bull street."
+  - says: "In March eighteen eighty nine, a man stepped off the horse car near here, in the middle of the afternoon."
+    source: 5
+    quote: "died of gunshot wounds on March 12, 1889."
+  - says: "In March eighteen eighty nine, a man stepped off the horse car near here, in the middle of the afternoon."
+    source: 6
+    quote: "Capt. Dawson left the News and Courier office about 3:30 o’clock"
+  - says: "He was Captain Francis Dawson, the editor of the News and Courier."
+    source: 6
+    quote: "the assassination of Capt. F. W. Daw son, the editor of the News and Courier."
+  - says: "He went into the office of a neighbour, a doctor named McDow."
+    source: 5
+    quote: "He had gone to the office of Dr. Thomas B. McDow"
+  - says: "He went into the office of a neighbour, a doctor named McDow."
+    source: 6
+    quote: "The body of the murdered man had in the meantime lain in the office of the mur derer not 100 yards from his own residence."
+  - says: "McDow told the police he had killed him."
+    source: 6
+    quote: "he appeared at the police station and sur rendered himself."
+  - says: "He said it was self defence."
+    source: 5
+    quote: "McDow was acquitted, however, claiming self-defense."
+  - says: "Dawson had come to confront him about the way he was pursuing the family's governess, McDow said, and had struck him with a cane."
+    source: 5
+    quote: "whom he accused of making “dishonorable advances” toward the Swiss governess of his children."
+  - says: "And the papers reported that someone had begun to dig in the earth under the house, as if to make a grave."
+    source: 6
+    quote: "There is evidence that he tried to bury the corpse of his vic tim"
+  - says: "The jury was not out long."
+    source: 7
+    quote: "Shortly after 2 o’clook it was announced that the jury had agreed upon a verdict"
+  - says: "It found McDow not guilty."
+    source: 5
+    quote: "McDow was acquitted"
+  - says: "It found McDow not guilty."
+    source: 7
+    quote: "The ver dict was “Not guilty,”"
+  - says: "His own house was just around the corner, on Bull Street."
+    source: 6
+    quote: "not 100 yards from his own residence."
+sources:
+  - title: "Evening Star (Washington, D.C.), 15 March 1889, page 8: Editor Dawson's Murder"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1889-03-15/ed-1/?sp=8
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Waterbury Evening Democrat (Waterbury, Conn.), 14 March 1889, page 1: The Murder of Capt. Dawson"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn94053256/1889-03-14/ed-1/?sp=1
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Charlotte Democrat (Charlotte, N.C.), 28 June 1889, page 3: the McDow trial"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn91068247/1889-06-28/ed-1/?sp=3
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Butler Weekly Times (Butler, Mo.), 3 July 1889, page 4: McDow Acquitted"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn89066489/1889-07-03/ed-1/?sp=4
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Dawson, Francis Warrington (Robert A. Pierce)"
+    publisher: "South Carolina Encyclopedia, University of South Carolina"
+    url: https://www.scencyclopedia.org/sce/entries/dawson-francis-warrington/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "The Morning News (Savannah, Ga.), 13 March 1889, page 1: the murder of Capt. Dawson"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86063034/1889-03-13/ed-1/?sp=1
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "The Morning News (Savannah, Ga.), 30 June 1889, page 1: McDow found not guilty"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86063034/1889-06-30/ed-1/?sp=1
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/charleston-the-editor-who-got-off-the-streetcar/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 62
+    audioBytes: 992278
+    transcript:
+      totalS: 62
+      lines:
+        - text: Stand on the corner, and look along Bull Street.
+          atS: 0
+          durationS: 2.6
+        - text: In March eighteen eighty nine, a man stepped off the horse car near here, in the middle of the afternoon.
+          atS: 2.84
+          durationS: 6.05
+        - text: He was Captain Francis Dawson, the editor of the News and Courier.
+          atS: 9.07
+          durationS: 4.1
+        - text: Two men on the car said he was cheerful.
+          atS: 13.38
+          durationS: 2.16
+        - text: He chatted with them, and got off.
+          atS: 16.05
+          durationS: 2.27
+        - text: He went into the office of a neighbour, a doctor named McDow.
+          atS: 18.83
+          durationS: 3.67
+        - text: He never came out alive.
+          atS: 23.01
+          durationS: 1.51
+        - text: McDow told the police he had killed him.
+          atS: 24.9
+          durationS: 2.16
+        - text: He said it was self defence.
+          atS: 27.5
+          durationS: 1.6
+        - text: Dawson had come to confront him about the way he was pursuing the family's governess, McDow said, and had struck him with a cane.
+          atS: 29.8
+          durationS: 6.55
+        - text: At the trial, a surgeon testified that the bullet had come from behind.
+          atS: 36.95
+          durationS: 3.95
+        - text: And the papers reported that someone had begun to dig in the earth under the house, as if to make a grave.
+          atS: 41.28
+          durationS: 5.39
+        - text: The jury was not out long.
+          atS: 47.05
+          durationS: 1.64
+        - text: It found McDow not guilty.
+          atS: 49.02
+          durationS: 1.87
+        - text: Dawson's friends said that neither justice, nor the shadow of justice, had been done.
+          atS: 51.33
+          durationS: 5.11
+        - text: Look along the street again.
+          atS: 56.88
+          durationS: 1.38
+        - text: His own house was just around the corner, on Bull Street.
+          atS: 58.95
+          durationS: 3

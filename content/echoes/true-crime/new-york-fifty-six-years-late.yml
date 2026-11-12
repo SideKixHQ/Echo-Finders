@@ -1,0 +1,231 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Washington Heights (more NYC batch). About 10 km from the Midtown cluster.
+# Listening spot: The Broadway sidewalk outside the former Audubon Ballroom, Broadway at West 165th Street, now the Malcolm X and Dr. Betty Shabazz Memorial and Educational Center.
+# Position: Wikidata Q4820234 (Audubon Ballroom) coordinate (high confidence).
+id: new-york-fifty-six-years-late
+title: "Fifty Six Years Late"
+summary: "Malcolm X was shot dead on the stage inside in 1965. In 2021 a court cleared two of the three men convicted of killing him."
+place: "Former Audubon Ballroom, Broadway at West 165th Street, Washington Heights, Manhattan"
+at: { lat: 40.83917, lng: -73.94083 }
+triggerRadiusKm: 0.05
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 93
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.9
+tags: [new-york, washington-heights, harlem, malcolm-x, 1965, civil-rights, wrongful-conviction]
+teaser: "Two men were convicted of killing Malcolm X. In 2021 a judge said they had not."
+script: |
+  Look at the long, decorated front of this building on Broadway. It was the Audubon Ballroom.
+
+  On Sunday, the twenty first of February, nineteen sixty five, hundreds of people sat inside to hear Malcolm X speak. His wife was there, pregnant. So were his daughters. Several men opened fire. He was killed on the stage.
+
+  Within weeks, three men were arrested. In March, nineteen sixty six, all three were convicted of murder and sent to prison for life. Two of those convictions were wrong, and it would take more than half a century for a court to say so.
+
+  One of them admitted to the shooting. And he said, at the trial and for years afterwards, that the other two had nothing to do with it. Those two men always said they were innocent. One of them had been at a hospital in the Bronx that morning, with an injured leg. The doctor who treated him testified for him.
+
+  They went to prison anyway.
+
+  Fifty six years later, in November, twenty twenty one, a new investigation found evidence that had been kept from the defence, including F B I files that pointed away from them. A judge in Manhattan threw out their convictions. Muhammad Aziz and Khalil Islam were exonerated.
+
+  Aziz was eighty three, and in the courtroom. He said, the events that brought us here should never have occurred.
+
+  Islam had died in two thousand nine, still insisting he was innocent.
+
+  The District Attorney stood up and apologised.
+
+  Look at the ballroom again.
+
+  The question of who else was in that room with a gun has still not been answered.
+
+pronunciations:
+  - written: Muhammad Aziz
+    say: moo-HAM-ad ah-ZEEZ
+  - written: Khalil Islam
+    say: kah-LEEL iss-LAHM
+  - written: Audubon
+    say: AW-duh-bon
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  # Exonerated: the script says so in the same breath as the convictions it reverses.
+  # Muhammad Aziz and Khalil Islam are named because they are public in this case and were
+  # cleared; the third man, who admitted the shooting, is not named. Others he later accused
+  # were never charged and are not mentioned. Living people may be involved (Aziz's family,
+  # the third man), so three independent sources are cited.
+  involvesLivingPeople: true
+  convictionStatus: exonerated
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-10"
+  contentWarning: This echo describes an assassination and a wrongful conviction. No violence is described in detail.
+claims:
+  - says: "It was the Audubon Ballroom."
+    source: 2
+    quote: "Malcolm X was gunned down Feb. 21, 1965, at the Audubon Ballroom in New York City, where hundreds had gathered to hear him speak."
+  - says: "On Sunday, the twenty first of February, nineteen sixty five, hundreds of people sat inside to hear Malcolm X speak."
+    source: 2
+    quote: "Malcolm X was gunned down Feb. 21, 1965, at the Audubon Ballroom in New York City, where hundreds had gathered to hear him speak."
+  - says: "His wife was there, pregnant. So were his daughters."
+    source: 1
+    quote: "who was murdered onstage in 1965 in a hail of bullets in front of hundreds of people, including his daughters and pregnant wife."
+  - says: "Several men opened fire."
+    source: 2
+    quote: "Inside the ballroom, several men opened fire, striking him onstage."
+  - says: "He was killed on the stage."
+    source: 1
+    quote: "who was murdered onstage in 1965"
+  - says: "In March, nineteen sixty six, all three were convicted of murder and sent to prison for life."
+    source: 3
+    quote: "Aziz and Islam, then known as Norman 3X Butler and Thomas 15X Johnson, and a third man were convicted of murder in March 1966. They were sentenced to life in prison."
+  - says: "One of them admitted to the shooting."
+    source: 3
+    quote: "The third man, Mujahid Abdul Halim — also known as Talmadge Hayer and Thomas Hagan — admitted to shooting Malcolm X but said neither Aziz nor Islam was involved."
+  - says: "And he said, at the trial and for years afterwards, that the other two had nothing to do with it."
+    source: 1
+    quote: "While Halim confessed to the murder during the trial, he testified that neither Aziz nor Islam was involved."
+  - says: "Those two men always said they were innocent."
+    source: 1
+    quote: "Meanwhile, Islam, then known as Thomas 15X Johnson, and Aziz, then known as Norman 3X Butler, always maintained their innocence."
+  - says: "One of them had been at a hospital in the Bronx that morning, with an injured leg."
+    source: 2
+    quote: "He had injured his leg and gone to a hospital only hours before the assassination."
+  - says: "The doctor who treated him testified for him."
+    source: 1
+    quote: "a doctor who treated Aziz at Jacobi Hospital in the Bronx just hours before Malcolm's murder took the stand in Aziz's defense."
+  - says: "Fifty six years later, in November, twenty twenty one, a new investigation found evidence that had been kept from the defence, including F B I files that pointed away from them."
+    source: 1
+    quote: "Over the last 22 months, Vance's team has unearthed FBI documents that would have cast doubt on the involvement of Aziz and Islam. That evidence was available at the time of the trial but was withheld from the defense and prosecution."
+  - says: "A judge in Manhattan threw out their convictions."
+    source: 3
+    quote: "A Manhattan judge dismissed the convictions of Muhammad Aziz and the late Khalil Islam"
+  - says: "Muhammad Aziz and Khalil Islam were exonerated."
+    source: 2
+    quote: "Two men who served decades in prison for the 1965 assassination of civil rights icon Malcolm X had their convictions formally thrown out Thursday."
+  - says: "Aziz was eighty three, and in the courtroom."
+    source: 2
+    quote: "But only one them, Muhammad Aziz, was in the New York City courtroom to hear a judge announce his exoneration"
+  - says: "He said, the events that brought us here should never have occurred."
+    source: 2
+    quote: "“The events that brought us here should never have occurred. Those events were and are the result of a process that was corrupt to its core,” Muhammad Aziz, 83, said."
+  - says: "Islam had died in two thousand nine, still insisting he was innocent."
+    source: 2
+    quote: "The other wrongly convicted man, Khalil Islam, went to his grave in 2009 insisting he was innocent."
+  - says: "The District Attorney stood up and apologised."
+    source: 3
+    quote: "“I apologize for what were serious, unacceptable violations of law and the public trust,” he said."
+  - says: "The question of who else was in that room with a gun has still not been answered."
+    source: 3
+    quote: "“For millions and millions of Americans, we still need to know who killed Malcolm X and who ordered it.”"
+  - says: "Within weeks, three men were arrested."
+    source: 2
+    quote: "Three Nation of Islam members were arrested: Mujahid Abdul Halim, then known as Talmadge Hayer and Thomas Hagan; Aziz, then known as Norman 3X Butler; and Islam, then known as Thomas 15X Johnson."
+  - says: "Within weeks, three men were arrested."
+    source: 1
+    quote: "Muhammad Aziz, a suspect in the slaying of Malcolm X, is escorted by detectives at police headquarters after his arrest in New York on Feb. 26, 1965."
+  - says: "Two of those convictions were wrong, and it would take more than half a century for a court to say so."
+    source: 1
+    quote: "Aziz, previously known as Norman 3X Butler, was cleared after more than half a century, with prosecutors now saying authorities withheld evidence in the civil rights leader's killing"
+  - says: "Two of those convictions were wrong, and it would take more than half a century for a court to say so."
+    source: 3
+    quote: "half a century after the assassination of Malcolm X, two of his convicted killers were exonerated Thursday after decades of doubt about who was responsible for the civil rights icon’s death."
+sources:
+  - title: "Convictions of Muhammad Aziz and Khalil Islam are dismissed in Malcolm X murder, 17 November 2021"
+    publisher: "NPR"
+    url: https://www.npr.org/2021/11/17/1056649430/malcolm-x-aziz-islam-exonerated
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "2 men wrongly convicted of assassinating Malcolm X are exonerated, 18 November 2021"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/news/us-news/2-men-wrongly-convicted-assassinating-malcolm-x-exonerated-rcna6031
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Judge tosses convictions of two men in killing of Malcolm X (Associated Press), 18 November 2021"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/2021/11/18/nation/judge-tosses-convictions-two-men-killing-malcolm-x/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-fifty-six-years-late/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 92.6
+    audioBytes: 1483380
+    transcript:
+      totalS: 92.6
+      lines:
+        - text: Look at the long, decorated front of this building on Broadway.
+          atS: 0
+          durationS: 3.61
+        - text: It was the Audubon Ballroom.
+          atS: 3.67
+          durationS: 2.44
+        - text: On Sunday, the twenty first of February, nineteen sixty five, hundreds of people sat inside to hear Malcolm X speak.
+          atS: 6.71
+          durationS: 7.51
+        - text: His wife was there, pregnant.
+          atS: 14.66
+          durationS: 2.03
+        - text: So were his daughters.
+          atS: 17.14
+          durationS: 1.18
+        - text: Several men opened fire.
+          atS: 18.5
+          durationS: 1.39
+        - text: He was killed on the stage.
+          atS: 20
+          durationS: 1.56
+        - text: Within weeks, three men were arrested.
+          atS: 21.84
+          durationS: 2.28
+        - text: In March, nineteen sixty six, all three were convicted of murder and sent to prison for life.
+          atS: 24.44
+          durationS: 5.78
+        - text: Two of those convictions were wrong, and it would take more than half a century for a court to say so.
+          atS: 30.55
+          durationS: 5.38
+        - text: One of them admitted to the shooting.
+          atS: 36.09
+          durationS: 1.79
+        - text: And he said, at the trial and for years afterwards, that the other two had nothing to do with it.
+          atS: 38.09
+          durationS: 5.29
+        - text: Those two men always said they were innocent.
+          atS: 43.56
+          durationS: 2.14
+        - text: One of them had been at a hospital in the Bronx that morning, with an injured leg.
+          atS: 45.85
+          durationS: 4.14
+        - text: The doctor who treated him testified for him.
+          atS: 50.6
+          durationS: 2.47
+        - text: They went to prison anyway.
+          atS: 53.24
+          durationS: 1.45
+        - text: Fifty six years later, in November, twenty twenty one, a new investigation found evidence that had been kept from the defence, including F B I files that pointed away from them.
+          atS: 55.02
+          durationS: 11.08
+        - text: A judge in Manhattan threw out their convictions.
+          atS: 66.48
+          durationS: 2.65
+        - text: Muhammad Aziz and Khalil Islam were exonerated.
+          atS: 69.57
+          durationS: 4.59
+        - text: Aziz was eighty three, and in the courtroom.
+          atS: 74.3
+          durationS: 2.42
+        - text: He said, the events that brought us here should never have occurred.
+          atS: 76.83
+          durationS: 3.32
+        - text: Islam had died in two thousand nine, still insisting he was innocent.
+          atS: 80.33
+          durationS: 4.37
+        - text: The District Attorney stood up and apologised.
+          atS: 84.76
+          durationS: 2.52
+        - text: Look at the ballroom again.
+          atS: 87.43
+          durationS: 1.28
+        - text: The question of who else was in that room with a gun has still not been answered.
+          atS: 88.76
+          durationS: 3.89

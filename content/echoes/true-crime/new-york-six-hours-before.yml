@@ -1,0 +1,199 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Times Square cluster (more NYC batch).
+# Listening spot: The West 43rd Street sidewalk just east of Sixth Avenue, outside 147 West 43rd, the old Hotel Metropole, a few steps from Times Square.
+# Position: Wikidata Q5911733 (Hotel Metropole) coordinate (high confidence). About 120 m from the One Times Square echo on the drafts branch; a different subject.
+id: new-york-six-hours-before
+title: "Six Hours Before"
+summary: "In July 1912 a gambler about to name corrupt police was shot dead outside a hotel here. A police lieutenant went to the chair for it."
+place: "Former Hotel Metropole, 147 West 43rd Street, Times Square, Manhattan"
+at: { lat: 40.75630, lng: -73.98550 }
+triggerRadiusKm: 0.04
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 84
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.85
+tags: [new-york, times-square, 1912, police-corruption, becker, rosenthal, tenderloin]
+teaser: "He had an appointment with the District Attorney in the morning. He never kept it."
+script: |
+  Look along West Forty Third Street, a few steps from the lights of Times Square. In nineteen twelve, this street ran through the Tenderloin, and one of its doors belonged to the Hotel Metropole.
+
+  At two o'clock in the morning, on the sixteenth of July, a gambler named Herman Rosenthal walked out of that door.
+
+  Rosenthal had been talking. He had told the District Attorney, Charles Whitman, that gamblers were paying bribes to the police to stay open. And he had promised more. That very morning, he was due to bring the District Attorney a list of ten or more gamblers, ready to testify about the officers they paid.
+
+  He never got there.
+
+  A gray touring car was waiting up the street. Five men surrounded him on the sidewalk, and shot him dead. Then they ran for the car, and it was gone.
+
+  Six hours before he was due to talk.
+
+  The detectives traced the car within hours. Arrests began that same morning. And the trail led, at last, to a police lieutenant named Charles Becker.
+
+  A jury convicted Becker of the murder of Herman Rosenthal. He was sentenced to death.
+
+  And on the thirtieth of July, nineteen fifteen, at a quarter to six in the morning, Becker was electrocuted at Sing Sing prison, for instigating the murder of the man who was going to talk.
+
+  Look at the doorway again.
+
+  He was six hours from talking.
+
+pronunciations:
+  - written: Rosenthal
+    say: ROSE-en-thal
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  # Convicted and executed in 1915; everyone named has been dead for decades. The gunmen are
+  # not named. Sources: the Evening World of the day of the murder (Chronicling America),
+  # the Library of Congress's Bain photograph record quoting the New York Times of 30 October
+  # 1912 on the conviction and sentence, and the Alaska Daily Empire of 30 July 1915 on the
+  # execution (wire report). Three independent publications.
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-10"
+  contentWarning: This echo describes a murder and an execution. No violence is described in detail.
+claims:
+  - says: "At two o'clock in the morning, on the sixteenth of July, a gambler named Herman Rosenthal walked out of that door."
+    source: 1
+    quote: "complicity In the murder of Herman Rosenthal the. gambler, In front of the Hotel Metropole at 2 o'clock this morning"
+  - says: "He had told the District Attorney, Charles Whitman, that gamblers were paying bribes to the police to stay open."
+    source: 1
+    quote: "the names of ten or more gamblers who would go before the Grand Jury and tell of having paid money to at least two influential police officers as bribes to be permitted to keep their gambling houses open."
+  - says: "That very morning, he was due to bring the District Attorney a list of ten or more gamblers, ready to testify about the officers they paid."
+    source: 1
+    quote: "The object of the proposed call was to put in the hands of the District-Attorney the names of ten or more gamblers who would go before the Grand Jury"
+  - says: "A gray touring car was waiting up the street."
+    source: 2
+    quote: "The gray touring car with six men In It, four In the tonneau and the driver and another man In front, rolled past tho Hotel Metropole"
+  - says: "Five men surrounded him on the sidewalk, and shot him dead."
+    source: 1
+    quote: "just six hours after five men surroundid him and shot him to death."
+  - says: "Then they ran for the car, and it was gone."
+    source: 2
+    quote: "The Ave murderers ran swiftly up the street to a gray automobile"
+  - says: "Six hours before he was due to talk."
+    source: 1
+    quote: "SLAIN SIX HOURS BEFORE PROMISED EXPOSE."
+  - says: "Arrests began that same morning."
+    source: 2
+    quote: "Within thrM hours after Rosenthal was shot to death three men were"
+  - says: "A jury convicted Becker of the murder of Herman Rosenthal."
+    source: 3
+    quote: "Photo shows \"Charles Becker, the ex-Police Lieutenant and convicted murderer of Herman Rosenthal, who will be sentenced to death this morning by Justice Goff.\""
+  - says: "He was sentenced to death."
+    source: 3
+    quote: "who will be sentenced to death this morning by Justice Goff."
+  - says: "And on the thirtieth of July, nineteen fifteen, at a quarter to six in the morning, Becker was electrocuted at Sing Sing prison, for instigating the murder of the man who was going to talk."
+    source: 4
+    quote: "Police Lieutenant Charles Becker was electrocuted In the death chamber of"
+  - says: "And on the thirtieth of July, nineteen fifteen, at a quarter to six in the morning, Becker was electrocuted at Sing Sing prison, for instigating the murder of the man who was going to talk."
+    source: 4
+    quote: "morning for instigating the murder of Herman Rosenthal, a gambler."
+  - says: "In nineteen twelve, this street ran through the Tenderloin, and one of its doors belonged to the Hotel Metropole."
+    source: 2
+    quote: "The Tenderloin was pouring Ita motley crowd Into Forty-third street"
+  - says: "Look along West Forty Third Street, a few steps from the lights of Times Square."
+    source: 2
+    quote: "The Tenderloin was pouring Ita motley crowd Into Forty-third street"
+  - says: "And the trail led, at last, to a police lieutenant named Charles Becker."
+    source: 3
+    quote: "Photo shows \"Charles Becker, the ex-Police Lieutenant and convicted murderer of Herman Rosenthal, who will be sentenced to death this morning by Justice Goff.\""
+  - says: "And the trail led, at last, to a police lieutenant named Charles Becker."
+    source: 4
+    quote: "Former Police Lieutenant Charles Becker was electrocuted In the death chamber of Sing Sing prison at 5:45 o'clock this morning for instigating the murder of Herman Rosenthal, a gambler."
+  - says: "He was six hours from talking."
+    source: 1
+    quote: "to the rooms of District-Attorney Whitman, in the Madison apartments, in Madison Square, just six hours after five men surroundid him and shot him to death."
+sources:
+  - title: "The Evening World (New York), 16 July 1912, page 1"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030193/1912-07-16/ed-1/?sp=1
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Evening World (New York), 16 July 1912, page 2"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030193/1912-07-16/ed-1/?sp=2
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Becker on way to Sing Sing (Bain News Service photograph, record quoting the New York Times of 30 October 1912)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2014690731/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "The Alaska Daily Empire (Juneau), 30 July 1915, page 1"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84020657/1915-07-30/ed-1/?sp=1
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-six-hours-before/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 83.8
+    audioBytes: 1342110
+    transcript:
+      totalS: 83.8
+      lines:
+        - text: Look along West Forty Third Street, a few steps from the lights of Times Square.
+          atS: 0
+          durationS: 4.42
+        - text: In nineteen twelve, this street ran through the Tenderloin, and one of its doors belonged to the Hotel Metropole.
+          atS: 5.03
+          durationS: 6.14
+        - text: At two o'clock in the morning, on the sixteenth of July, a gambler named Herman Rosenthal walked out of that door.
+          atS: 11.98
+          durationS: 6.99
+        - text: Rosenthal had been talking.
+          atS: 19.92
+          durationS: 1.87
+        - text: He had told the District Attorney, Charles Whitman, that gamblers were paying bribes to the police to stay open.
+          atS: 22.23
+          durationS: 6.2
+        - text: And he had promised more.
+          atS: 28.56
+          durationS: 1.59
+        - text: That very morning, he was due to bring the District Attorney a list of ten or more gamblers, ready to testify about the officers they paid.
+          atS: 31.1
+          durationS: 7.86
+        - text: He never got there.
+          atS: 39.41
+          durationS: 1.14
+        - text: A gray touring car was waiting up the street.
+          atS: 41.05
+          durationS: 2.54
+        - text: Five men surrounded him on the sidewalk, and shot him dead.
+          atS: 43.77
+          durationS: 3.44
+        - text: Then they ran for the car, and it was gone.
+          atS: 47.28
+          durationS: 2.52
+        - text: Six hours before he was due to talk.
+          atS: 50.18
+          durationS: 2.31
+        - text: The detectives traced the car within hours.
+          atS: 52.81
+          durationS: 2.62
+        - text: Arrests began that same morning.
+          atS: 55.68
+          durationS: 2.15
+        - text: And the trail led, at last, to a police lieutenant named Charles Becker.
+          atS: 57.95
+          durationS: 4.64
+        - text: A jury convicted Becker of the murder of Herman Rosenthal.
+          atS: 62.97
+          durationS: 3.74
+        - text: He was sentenced to death.
+          atS: 66.95
+          durationS: 1.44
+        - text: And on the thirtieth of July, nineteen fifteen, at a quarter to six in the morning, Becker was electrocuted at Sing Sing prison, for instigating the murder of the man who was going to talk.
+          atS: 68.72
+          durationS: 10.81
+        - text: Look at the doorway again.
+          atS: 79.97
+          durationS: 1.4
+        - text: He was six hours from talking.
+          atS: 81.7
+          durationS: 2.12

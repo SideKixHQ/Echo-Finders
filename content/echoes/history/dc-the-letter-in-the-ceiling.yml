@@ -1,0 +1,185 @@
+# Drafted by Claude Code (2026-11-10) for the Washington DC core, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on the east side of 7th Street NW in front of number 437, between D and E Streets, looking up at the third floor.
+# Position: Overture place 'Clara Barton Missing Soldiers Office' (437 7th St NW) at 38.89582, -77.02172 (high confidence).
+id: dc-the-letter-in-the-ceiling
+title: "The Letter in the Ceiling"
+summary: "In 1996 a carpenter checking an empty building found a letter hanging from the ceiling, and Clara Barton's lost office above it."
+place: "Clara Barton Missing Soldiers Office, 437 7th Street NW, Penn Quarter, Washington, D.C."
+at: { lat: 38.89582, lng: -77.02165 }
+triggerRadiusKm: 0.03
+category: history
+format: short
+durationS: 95
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, dc-core, penn-quarter, clara-barton, civil-war, rediscovered]
+teaser: "He felt something touch his shoulder. Then he saw the letter."
+script: |
+  Look up at the third floor of this narrow building. For most of a century, nobody knew what was up there.
+
+  In nineteen ninety six, the building was empty, and due to be torn down. A carpenter named Richard Lyons was sent in to make sure nobody was living there. He said he kept hearing a noise in the front room. When he went to look, he felt something touch his shoulder. Then he saw a letter, hanging down through a crack in the ceiling. He found a ladder, and climbed into the attic. Up there were letters, newspapers from the Civil War, old clothes, and a sign. Missing Soldiers Office.
+
+  These had been the rooms of Clara Barton, after the Civil War. Families wrote to her, desperate to know what had become of their sons. There was no official system for finding the missing and the dead. So she made one, up there. Her office answered more than sixty three thousand letters, and found more than twenty two thousand missing men.
+
+  When Lyons reported what he had found, a supervisor told him, get rid of it. Throw it away. He did not. He spent months researching it, and quietly got word to a historian at the National Park Service. In nineteen ninety seven, the Park Service announced the find, and the building was saved.
+
+  Look up at the third floor again. She spent four years finding the missing.
+
+  Then her own office went missing, for more than a century.
+detail: >-
+  The account of the noise and the touch on the shoulder is Richard Lyons's own, as told to the Associated Press in 2012. The Park Service's figures for Barton's office vary between pages (more than 60,000 letters and 20,000 soldiers found by 1867 on one; over 63,000 and 22,000 by December 1868 on another); the script uses the second.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look up at the third floor of this narrow building."
+    source: 1
+    quote: "The third-floor office suite was left mostly untouched for decades."
+  - says: "For most of a century, nobody knew what was up there."
+    source: 1
+    quote: "From 1920 to 1990, a shoe store occupied the first-floor space. The third-floor office suite was left mostly untouched for decades."
+  - says: "In nineteen ninety six, the building was empty, and due to be torn down."
+    source: 1
+    quote: "The discovery was made in 1996 when the government-owned building was slated for demolition."
+  - says: "A carpenter named Richard Lyons was sent in to make sure nobody was living there."
+    source: 1
+    quote: "Carpenter Richard Lyons was sent in by a contractor to make sure no one was living in the space before it was torn down."
+  - says: "He said he kept hearing a noise in the front room. When he went to look, he felt something touch his shoulder."
+    source: 1
+    quote: "Lyons said he kept hearing a noise in the front room and felt something touch his shoulder when he went to investigate."
+  - says: "Then he saw a letter, hanging down through a crack in the ceiling."
+    source: 1
+    quote: "That's when he noticed a letter hanging through a crack in the ceiling."
+  - says: "He found a ladder, and climbed into the attic."
+    source: 1
+    quote: "Lyons found a ladder in a back room and climbed into the attic to see what might be up in the crawl space."
+  - says: "Up there were letters, newspapers from the Civil War, old clothes, and a sign."
+    source: 1
+    quote: "He found a treasure trove: government records, Civil War-era newspapers, letters, leftover wallpaper, 19th century clothing -- and a sign from Barton's Missing Soldier's Office."
+  - says: "Missing Soldiers Office."
+    source: 1
+    quote: "and a sign from Barton's Missing Soldier's Office."
+  - says: "These had been the rooms of Clara Barton, after the Civil War."
+    source: 2
+    quote: "Barton operated the Missing Soldiers Office from her boarding house in Washington, D.C. from March 1865 until December 1868."
+  - says: "Families wrote to her, desperate to know what had become of their sons."
+    source: 3
+    quote: "She began to receive letters from family members trying to find out the fate of their loved ones who had not returned home."
+  - says: "There was no official system for finding the missing and the dead. So she made one, up there."
+    source: 3
+    quote: "During the Civil War there was no official system in place to document missing or dead soldiers. As the war ended Clara Barton, the \"Angel of the Battlefield\" who had achieved fame as a nurse during the war, took it upon herself to fill this void."
+  - says: "Her office answered more than sixty three thousand letters, and found more than twenty two thousand missing men."
+    source: 2
+    quote: "During that time, she received over 63,000 inquiries, located over 22,000 missing soldiers"
+  - says: "When Lyons reported what he had found, a supervisor told him, get rid of it. Throw it away."
+    source: 1
+    quote: "“Get rid of it,” a supervisor told Lyons when he reported the find, fearing it would halt the demolition. “Throw it away; don't go to the GSA.”"
+  - says: "He spent months researching it, and quietly got word to a historian at the National Park Service."
+    source: 1
+    quote: "He said he spent months researching the materials and eventually alerted a historian with the National Park Service through backchannels so that he wouldn't face retribution for stopping the government demolition."
+  - says: "In nineteen ninety seven, the Park Service announced the find, and the building was saved."
+    source: 1
+    quote: "Eventually, the National Park Service announced the find in 1997."
+  - says: "Look up at the third floor again."
+    source: 1
+    quote: "The third-floor office suite was left mostly untouched for decades."
+  - says: "She spent four years finding the missing."
+    source: 2
+    quote: "from March 1865 until December 1868"
+  - says: "Then her own office went missing, for more than a century."
+    source: 1
+    quote: "The third-floor office suite was left mostly untouched for decades."
+sources:
+  - title: "Clara Barton's D.C. Office To Be Civil War Museum (Associated Press, 2012)"
+    publisher: "CBS Baltimore"
+    url: https://www.cbsnews.com/baltimore/news/clara-bartons-d-c-office-to-be-civil-war-museum
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Organization is Key"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/articles/organization-is-key.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Clara Barton Missing Soldiers Office Museum"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/places/clara-barton-missing-soldiers-office-museum.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-letter-in-the-ceiling/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 95.1
+    audioBytes: 1522668
+    transcript:
+      totalS: 95.1
+      lines:
+        - text: Look up at the third floor of this narrow building.
+          atS: 0
+          durationS: 3.02
+        - text: For most of a century, nobody knew what was up there.
+          atS: 3.97
+          durationS: 3.56
+        - text: In nineteen ninety six, the building was empty, and due to be torn down.
+          atS: 8.23
+          durationS: 4.98
+        - text: A carpenter named Richard Lyons was sent in to make sure nobody was living there.
+          atS: 14.51
+          durationS: 4.67
+        - text: He said he kept hearing a noise in the front room.
+          atS: 19.88
+          durationS: 2.62
+        - text: When he went to look, he felt something touch his shoulder.
+          atS: 23.45
+          durationS: 3.08
+        - text: Then he saw a letter, hanging down through a crack in the ceiling.
+          atS: 27.13
+          durationS: 3.68
+        - text: He found a ladder, and climbed into the attic.
+          atS: 31.32
+          durationS: 2.67
+        - text: Up there were letters, newspapers from the Civil War, old clothes, and a sign.
+          atS: 34.6
+          durationS: 5.53
+        - text: Missing Soldiers Office.
+          atS: 40.73
+          durationS: 1.82
+        - text: These had been the rooms of Clara Barton, after the Civil War.
+          atS: 43.15
+          durationS: 3.61
+        - text: Families wrote to her, desperate to know what had become of their sons.
+          atS: 47.46
+          durationS: 4.28
+        - text: There was no official system for finding the missing and the dead.
+          atS: 52.19
+          durationS: 3.68
+        - text: So she made one, up there.
+          atS: 56.56
+          durationS: 2.05
+        - text: Her office answered more than sixty three thousand letters, and found more than twenty two thousand missing men.
+          atS: 59.32
+          durationS: 7.01
+        - text: When Lyons reported what he had found, a supervisor told him, get rid of it.
+          atS: 67.28
+          durationS: 4.2
+        - text: Throw it away.
+          atS: 71.56
+          durationS: 0.99
+        - text: He did not.
+          atS: 72.88
+          durationS: 0.91
+        - text: He spent months researching it, and quietly got word to a historian at the National Park Service.
+          atS: 74.29
+          durationS: 6.14
+        - text: In nineteen ninety seven, the Park Service announced the find, and the building was saved.
+          atS: 80.94
+          durationS: 5.09
+        - text: Look up at the third floor again.
+          atS: 86.63
+          durationS: 1.72
+        - text: She spent four years finding the missing.
+          atS: 88.68
+          durationS: 2.48
+        - text: Then her own office went missing, for more than a century.
+          atS: 91.49
+          durationS: 3.62

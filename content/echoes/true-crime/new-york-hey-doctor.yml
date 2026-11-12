@@ -1,0 +1,238 @@
+# Drafted by Claude Code (2026-11-11) for the New York City Pass, the East Bronx (more NYC, second pass). A far find: about 13 km from the Midtown cluster.
+# Listening spot: The sidewalk of Whittemore Avenue, the short street off East Tremont Avenue on the northwest side of St. Raymond's Cemetery. Public street, outside the cemetery.
+# Position: midpoint of Whittemore Avenue from Overture Maps street segments (medium confidence that today's street still runs along the cemetery fence as the 1937 account describes; check on the ground).
+id: new-york-hey-doctor
+title: "Hey, Doctor"
+summary: "In 1932 Charles Lindbergh sat in a car by this cemetery while his kidnapped son's ransom was paid in the dark. He never forgot the voice."
+place: "Whittemore Avenue at St. Raymond's Cemetery, Throggs Neck, the Bronx"
+at: { lat: 40.83450, lng: -73.83400 }
+triggerRadiusKm: 0.12
+voice: wC1005J19tvhoqqC2hkf
+category: true-crime
+format: short
+durationS: 102
+visibility: at-hand
+certainty: documented
+minAge: 16
+quality: 0.85
+tags: [new-york, bronx, st-raymonds-cemetery, lindbergh, kidnapping, hauptmann, 1932]
+teaser: "Two words, shouted over a cemetery fence. A father in a parked car heard them."
+script: |
+  Look along the cemetery fence. Rows of headstones on the other side. In nineteen thirty two, this was a dirt road at the edge of the cemetery.
+
+  On the night of the second of April, a car stopped here. Behind the wheel was Charles Lindbergh, the flier who had crossed the Atlantic alone.
+
+  A month before, his baby son had been taken from his crib, at home in New Jersey. There had been a ransom note. And then more notes, and a go between, a Bronx man named John Condon, who had offered his help.
+
+  Condon got out of the car and walked to the fence. Lindbergh stayed where he was.
+
+  From the dark, among the graves, a voice called out. Two words.
+
+  Hey, Doctor.
+
+  Lindbergh heard it from the car. One history of the case says the strange accent of that voice was fixed in his brain for ever.
+
+  The man called himself John. Condon went back to the car for the money, and handed him fifty thousand dollars. In return he got a note, saying where to find the boy.
+
+  The boy was not there. In May, he was found dead, not far from his home.
+
+  But every serial number on that money had been written down. In September, nineteen thirty four, one of those bills led police to a man in the Bronx named Bruno Richard Hauptmann. Thousands of dollars of the ransom were in his garage.
+
+  Lindbergh listened to him say those two words. Hey, Doctor. And he swore it was the same voice.
+
+  A jury in New Jersey found Hauptmann guilty of murder. He was executed in nineteen thirty six.
+
+  Look at the fence again.
+
+  Two words, in the dark, and a father who never forgot them.
+
+pronunciations:
+  - written: Hauptmann
+    say: HOWPT-mahn
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  # Convicted and executed in 1936; everyone named has been dead for decades. The child is
+  # named only as Lindbergh's son, and nothing is said of how he died. Sources: the 1937
+  # trial volume edited with a history of the case (Internet Archive), the Bureau of
+  # Investigation's own summary of the case (Internet Archive copy of the FBI file), and the
+  # NYC Municipal Archives' account drawn from the Bronx District Attorney's closed case
+  # files. Three independent sources: a published trial record, a federal investigation
+  # file, and a city archive. The listener stands on a public street outside the cemetery.
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-11"
+  contentWarning: This echo describes the kidnapping and death of a baby, and an execution. Nothing is described in detail.
+claims:
+  - says: "In nineteen thirty two, this was a dirt road at the edge of the cemetery."
+    source: 1
+    quote: "On Whittemore Avenue, a dirt road bounding the north- west side of St Raymond's Cemetery"
+  - says: "On the night of the second of April, a car stopped here."
+    source: 3
+    quote: "After this exchange on April 2, nothing further was heard from the kidnappers."
+  - says: "Behind the wheel was Charles Lindbergh, the flier who had crossed the Atlantic alone."
+    source: 1
+    quote: "Colonel Lindbergh stopped and parked the car while Condon alighted and went to the cemetery fence"
+  - says: "Behind the wheel was Charles Lindbergh, the flier who had crossed the Atlantic alone."
+    source: 3
+    quote: "After his 1927 solo flight from Long Island to Paris, Col. Charles Lindbergh won both fame and fortune."
+  - says: "A month before, his baby son had been taken from his crib, at home in New Jersey. There had been a ransom note."
+    source: 3
+    quote: "Lindbergh discovered that the child was missing from his crib and found a ransom note."
+  - says: "And then more notes, and a go between, a Bronx man named John Condon, who had offered his help."
+    source: 3
+    quote: "Condon inserted himself into the case by offering his own reward for the safe return of the child."
+  - says: "Condon got out of the car and walked to the fence. Lindbergh stayed where he was."
+    source: 2
+    quote: "Colonel Lindbergh waited nearby in tho car irtiilo Dr, Condon, following tho directions in this note, ontored tho eemotory"
+  - says: "From the dark, among the graves, a voice called out. Two words. Hey, Doctor."
+    source: 1
+    quote: "A remark by Condon drew from the ex- tortioner the exclamation, \"Hey, Doctor.\""
+  - says: "One history of the case says the strange accent of that voice was fixed in his brain for ever."
+    source: 1
+    quote: "Colonel Lindbergh heard the shout, and the strange accent and peculiar tonal quality of the voice were forever fixed in his brain."
+  - says: "The man called himself John. Condon went back to the car for the money, and handed him fifty thousand dollars."
+    source: 2
+    quote: "agreed to accept $50,000 ransom instead of |70,000 anA after c trip bfick to tho car to got tho money"
+  - says: "In return he got a note, saying where to find the boy."
+    source: 1
+    quote: "the extortioner handing Condon a note and Condon transferring to him the package of money"
+  - says: "In May, he was found dead, not far from his home."
+    source: 3
+    quote: "On May 12, a truck driver pulled off the road near the Lindbergh house and went into the woods"
+  - says: "But every serial number on that money had been written down."
+    source: 3
+    quote: "All the serial numbers had been recorded"
+  - says: "In September, nineteen thirty four, one of those bills led police to a man in the Bronx named Bruno Richard Hauptmann. Thousands of dollars of the ransom were in his garage."
+    source: 3
+    quote: "Finally, on September 18, 1934, a bank teller spotted another gold note from the ransom."
+  - says: "Thousands of dollars of the ransom were in his garage."
+    source: 3
+    quote: "including $14,590 in ransom money stashed in his garage"
+  - says: "Lindbergh listened to him say those two words. Hey, Doctor. And he swore it was the same voice."
+    source: 1
+    quote: "listened to the prisoner calling out, \"Hey, Doctor!\" under police dictation, and declared it was the same voice he had heard calling those words over the wall of St Raymond's Ceme- tery on the night of the ransom payment."
+  - says: "A jury in New Jersey found Hauptmann guilty of murder."
+    source: 1
+    quote: "We, the jury, find the defendant, Bruno Richard Hauptmann, guilty of murder in the first degree."
+  - says: "He was executed in nineteen thirty six."
+    source: 3
+    quote: "On April 3, 1936, Bruno Richard Hauptmann was put to death in the New Jersey State Prison at Trenton"
+  - says: "Two words, in the dark, and a father who never forgot them."
+    source: 1
+    quote: "Colonel Lindbergh heard the shout, and the strange accent and peculiar tonal quality of the voice were forever fixed in his brain."
+sources:
+  - title: "The Trial of Bruno Richard Hauptmann, Edited with a History of the Case (1937)"
+    publisher: "Internet Archive (Digital Library of India scan)"
+    url: https://archive.org/details/in.ernet.dli.2015.58206
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Lindbergh Baby Kidnapping, FBI case summary file"
+    publisher: "Federal Bureau of Investigation, via Internet Archive"
+    url: https://archive.org/details/LindberghBabyKidnappingFBIFiles
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "The Case Against Bruno Richard Hauptmann (For the Record blog, 27 June 2025)"
+    publisher: "NYC Department of Records and Information Services, Municipal Archives"
+    url: https://www.archives.nyc/blog/2025/6/27/the-case-against-bruno-richard-hauptmann
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-hey-doctor/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 101.9
+    audioBytes: 1631337
+    transcript:
+      totalS: 101.9
+      lines:
+        - text: Look along the cemetery fence.
+          atS: 0
+          durationS: 1.89
+        - text: Rows of headstones on the other side.
+          atS: 2.4
+          durationS: 2.16
+        - text: In nineteen thirty two, this was a dirt road at the edge of the cemetery.
+          atS: 5
+          durationS: 3.98
+        - text: On the night of the second of April, a car stopped here.
+          atS: 9.5
+          durationS: 3.16
+        - text: Behind the wheel was Charles Lindbergh, the flier who had crossed the Atlantic alone.
+          atS: 13.1
+          durationS: 5.09
+        - text: A month before, his baby son had been taken from his crib, at home in New Jersey.
+          atS: 18.79
+          durationS: 4.59
+        - text: There had been a ransom note.
+          atS: 23.65
+          durationS: 1.43
+        - text: And then more notes, and a go between, a Bronx man named John Condon, who had offered his help.
+          atS: 25.4
+          durationS: 6.14
+        - text: Condon got out of the car and walked to the fence.
+          atS: 32.24
+          durationS: 2.69
+        - text: Lindbergh stayed where he was.
+          atS: 35.63
+          durationS: 1.76
+        - text: From the dark, among the graves, a voice called out.
+          atS: 38
+          durationS: 3.84
+        - text: Two words.
+          atS: 42.54
+          durationS: 0.92
+        - text: Hey, Doctor.
+          atS: 43.97
+          durationS: 0.75
+        - text: Lindbergh heard it from the car.
+          atS: 45.23
+          durationS: 1.68
+        - text: One history of the case says the strange accent of that voice was fixed in his brain for ever.
+          atS: 47.61
+          durationS: 5.46
+        - text: The man called himself John.
+          atS: 53.58
+          durationS: 2.09
+        - text: Condon went back to the car for the money, and handed him fifty thousand dollars.
+          atS: 56.27
+          durationS: 4.4
+        - text: In return he got a note, saying where to find the boy.
+          atS: 60.88
+          durationS: 3.23
+        - text: The boy was not there.
+          atS: 64.55
+          durationS: 1.24
+        - text: In May, he was found dead, not far from his home.
+          atS: 66.18
+          durationS: 2.92
+        - text: But every serial number on that money had been written down.
+          atS: 69.48
+          durationS: 3.5
+        - text: In September, nineteen thirty four, one of those bills led police to a man in the Bronx named Bruno Richard Hauptmann.
+          atS: 73.58
+          durationS: 7.45
+        - text: Thousands of dollars of the ransom were in his garage.
+          atS: 81.25
+          durationS: 3.15
+        - text: Lindbergh listened to him say those two words.
+          atS: 84.64
+          durationS: 2.56
+        - text: Hey, Doctor.
+          atS: 87.36
+          durationS: 0.82
+        - text: And he swore it was the same voice.
+          atS: 88.31
+          durationS: 2.15
+        - text: A jury in New Jersey found Hauptmann guilty of murder.
+          atS: 90.66
+          durationS: 3.48
+        - text: He was executed in nineteen thirty six.
+          atS: 94.35
+          durationS: 2.52
+        - text: Look at the fence again.
+          atS: 97.08
+          durationS: 1.17
+        - text: Two words, in the dark, and a father who never forgot them.
+          atS: 98.37
+          durationS: 3.52

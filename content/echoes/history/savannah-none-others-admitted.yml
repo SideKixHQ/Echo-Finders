@@ -1,0 +1,150 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the northwest corner of Broughton and Whitaker streets, where Tondee's Tavern stood. The tavern is long gone; the corner is a shopfront.
+# Position: Broughton and Whitaker intersection from the street segments in the app's Savannah street file, set a few metres onto the northwest corner (high confidence for the corner; Wilson 1889 names the corner).
+id: savannah-none-others-admitted
+title: "None Others Admitted"
+summary: "On this corner stood Tondee's Tavern, where Georgia's Sons of Liberty met. The innkeeper stood in the door with a list of names."
+place: "Site of Tondee's Tavern, Broughton Street at Whitaker Street, Savannah, Georgia"
+at: { lat: 32.07932, lng: -81.09316 }
+triggerRadiusKm: 0.035
+category: history
+format: short
+durationS: 74
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.8
+tags: [savannah, savannah-core, broughton-street, revolution, taverns, liberty]
+teaser: "The doorman of the Revolution had a printed list. If your name was not on it, you stayed outside."
+script: |
+  Stand on the northwest corner of Broughton and Whitaker. Look at the doorway nearest the corner.
+
+  In the summer of seventeen seventy four, a man stood in a doorway here with a piece of paper in his hand. It was a printed list of names. If yours was not on it, you did not come in.
+
+  His name was Peter Tondee, and this corner was his tavern.
+
+  The royal governor had warned the town that anyone who met to talk about their rights would do so at their peril. On the tenth of August, they met anyway, in Tondee's. Tondee checked the list at the door. None others were admitted.
+
+  The next summer, they raised a liberty pole out front, the first in Georgia, while the governor's friends were toasting the King's birthday. And on the fourth of July, seventeen seventy five, a year before the Declaration, Georgia's Provincial Congress sat down in Tondee's long room and began steering the colony out of the empire.
+
+  Of Tondee himself, an old Savannah history says almost nothing is known. He helped found a charity for orphans. And he stood in this door.
+
+  Look at the doorway again.
+
+  Every revolution needs someone to decide who gets in.
+detail: >-
+  Wilson (1889) places the tavern on the northwest corner of Broughton and Whitaker and describes Tondee at the door with the list; Gamble (1923) independently gives the Provincial Congress at Tondee's tavern on July 4, 1775. The liberty pole is dated by Wilson to the King's birthday celebration, before the Council of Safety was organized at its foot on June 22, 1775. Wilson's "nothing is known beyond two facts" is paraphrased, not quoted.
+pronunciations:
+  - written: "Tondee"
+    say: "TON-dee"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Stand on the northwest corner of Broughton and Whitaker."
+    source: 1
+    quote: "situated on the north-west corner of Broughton and Whitaker streets"
+  - says: "It was a printed list of names. If yours was not on it, you did not come in."
+    source: 1
+    quote: "The innkeeper himself stood in the doorway with a printed list of names of recognized \" Sons of Liberty ; \" none others were admitted to the meeting."
+  - says: "The royal governor had warned the town that anyone who met to talk about their rights would do so at their peril."
+    source: 1
+    quote: "in the face of the Gov- ernor'.; proclamation, \"that they must do so at their peril.\""
+  - says: "On the tenth of August, they met anyway, in Tondee's."
+    source: 1
+    quote: "The meeting of the tenth of August was held in \"Tondee's Tavern,\""
+  - says: "The next summer, they raised a liberty pole out front, the first in Georgia, while the governor's friends were toasting the King's birthday."
+    source: 1
+    quote: "A liberty-pole, the first erected in Georgia, was set up in front of Tondee's Tavern, while the English were celebrating the king's birthday."
+  - says: "And on the fourth of July, seventeen seventy five, a year before the Declaration, Georgia's Provincial Congress sat down in Tondee's long room"
+    source: 1
+    quote: "the meeting of the Provincial Congress, held in Tondee's long room on the fourth of July, 1775."
+  - says: "And on the fourth of July, seventeen seventy five, a year before the Declaration, Georgia's Provincial Congress sat down in Tondee's long room"
+    source: 2
+    quote: "When the Provincial Con- gress met at Tondee's tavern on July 4, 1775"
+  - says: "He helped found a charity for orphans."
+    source: 1
+    quote: "he was one of the founders of the Union Society"
+  - says: "In the summer of seventeen seventy four, a man stood in a doorway here with a piece of paper in his hand."
+    source: 1
+    quote: "The innkeeper himself stood in the doorway with a printed list of names of recognized \" Sons of Liberty ; \" none others were admitted to the meeting."
+  - says: "His name was Peter Tondee, and this corner was his tavern."
+    source: 1
+    quote: "Tradition has preserved but three names of the original five: Benjamin Sheftall, an Israelite; Richard Milledge, an Episcopalian; and Peter Tondee, a Catholic."
+  - says: "Of Tondee himself, an old Savannah history says almost nothing is known."
+    source: 1
+    quote: "Sturdy supporter of the Liberty party was he, of whom nothing is known beyond two facts : the first that he was one of the founders of the Union Society"
+sources:
+  - title: "Historic and Picturesque Savannah (Adelaide Wilson, 1889)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicpictures00wils
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah Duels and Duellists, 1733 to 1877 (Thomas Gamble, 1923)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannahduelsdue0000thom
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-none-others-admitted/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 73.7
+    audioBytes: 1181195
+    transcript:
+      totalS: 73.7
+      lines:
+        - text: Stand on the northwest corner of Broughton and Whitaker.
+          atS: 0
+          durationS: 3.02
+        - text: Look at the doorway nearest the corner.
+          atS: 3.34
+          durationS: 2.01
+        - text: In the summer of seventeen seventy four, a man stood in a doorway here with a piece of paper in his hand.
+          atS: 5.56
+          durationS: 6.21
+        - text: It was a printed list of names.
+          atS: 12.1
+          durationS: 2.29
+        - text: If yours was not on it, you did not come in.
+          atS: 14.71
+          durationS: 2.88
+        - text: His name was Peter Tondee, and this corner was his tavern.
+          atS: 18.1
+          durationS: 4.27
+        - text: The royal governor had warned the town that anyone who met to talk about their rights would do so at their peril.
+          atS: 22.88
+          durationS: 6.41
+        - text: On the tenth of August, they met anyway, in Tondee's.
+          atS: 29.99
+          durationS: 3.46
+        - text: Tondee checked the list at the door.
+          atS: 33.69
+          durationS: 2.09
+        - text: None others were admitted.
+          atS: 36.11
+          durationS: 1.42
+        - text: The next summer, they raised a liberty pole out front, the first in Georgia, while the governor's friends were toasting the King's birthday.
+          atS: 37.96
+          durationS: 7.84
+        - text: And on the fourth of July, seventeen seventy five, a year before the Declaration, Georgia's Provincial Congress sat down in Tondee's long room and began steering the colony out of the empire.
+          atS: 46.08
+          durationS: 11.88
+        - text: Of Tondee himself, an old Savannah history says almost nothing is known.
+          atS: 58.47
+          durationS: 4.7
+        - text: He helped found a charity for orphans.
+          atS: 63.49
+          durationS: 2.42
+        - text: And he stood in this door.
+          atS: 66.15
+          durationS: 1.64
+        - text: Look at the doorway again.
+          atS: 68.11
+          durationS: 1.52
+        - text: Every revolution needs someone to decide who gets in.
+          atS: 70.08
+          durationS: 3.67

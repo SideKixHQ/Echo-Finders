@@ -1,0 +1,179 @@
+# Drafted by Claude Code (2026-11-11) for the New York City Pass, Stapleton Heights, Staten Island (more NYC, second pass). A far find: about 13 km from the Midtown cluster, a ferry ride away.
+# Listening spot: The St. Paul's Avenue sidewalk outside number 207, Stapleton Heights. A private house: the listener stays on the public sidewalk.
+# Position: Overture Maps address point for 207 St Pauls Ave, 10304 (high confidence for the house).
+id: new-york-a-diamond-in-the-rough
+title: "A Diamond in the Rough"
+summary: "Audre Lorde lived in this house from 1972 to 1987 and wrote some of her most famous work here, including The Cancer Journals."
+place: "Audre Lorde Residence, 207 St. Paul's Avenue, Stapleton Heights, Staten Island"
+at: { lat: 40.63257, lng: -74.07898 }
+triggerRadiusKm: 0.04
+category: people
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.8
+tags: [new-york, staten-island, stapleton-heights, audre-lorde, poet, landmark]
+teaser: "She called herself a warrior poet. She wrote it here, a ferry ride from Manhattan."
+script: |
+  Look at the house with the wide wooden porch, and the sunburst carved over the steps.
+
+  In July, nineteen seventy two, a poet and her partner bought it, for thirty seven thousand, seven hundred and fifty dollars. The poet's name was Audre Lorde.
+
+  She had grown up in Harlem, so nearsighted that she was considered legally blind. Now she wanted space, and trees, for her children. This house was a ferry ride from Manhattan, and it had both. She fell in love with it. She called it a diamond in the rough.
+
+  She set up her study on the second floor. Here she could have a garden, and look out over the water.
+
+  She called herself a black, lesbian, mother, warrior, poet. And in this house she wrote some of her most famous books.
+
+  In nineteen seventy eight, she was diagnosed with breast cancer. She was horrified, and afraid. And she wrote about it. The Cancer Journals came out two years later. It argued for a woman's right to make her own decisions about her health. And it won a book of the year award.
+
+  The city's report says the family also met racism here, many times.
+
+  She lived here fifteen years. In nineteen ninety one, New York made her the state's poet laureate.
+
+  Look up at the second floor.
+
+  She was afraid, and she wrote it down anyway.
+
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Look at the house with the wide wooden porch, and the sunburst carved over the steps."
+    source: 1
+    quote: "a full-width wooden porch on brick supports, featuring lattice-work screened base, tapered columns, wooden railings, wood steps and platform, shed roof, and triangular pediment with a sunburst"
+  - says: "In July, nineteen seventy two, a poet and her partner bought it, for thirty seven thousand, seven hundred and fifty dollars."
+    source: 1
+    quote: "Lorde and Clayton purchased 207 St. Paul's Avenue in July 1972, for $37,750."
+  - says: "She had grown up in Harlem, so nearsighted that she was considered legally blind."
+    source: 1
+    quote: "so nearsighted that she was considered legally blind."
+  - says: "Now she wanted space, and trees, for her children. This house was a ferry ride from Manhattan, and it had both."
+    source: 1
+    quote: "It was a ferry ride to Manhattan, and it appealed to both women because it was surrounded by \"space and trees.\""
+  - says: "She fell in love with it. She called it a diamond in the rough."
+    source: 1
+    quote: "Lorde fell in love with the house, calling it \"a diamond in the rough,\""
+  - says: "She set up her study on the second floor. Here she could have a garden, and look out over the water."
+    source: 1
+    quote: "Lorde set up her study on the second floor."
+  - says: "Here she could have a garden, and look out over the water."
+    source: 1
+    quote: "here she could have trees, a garden, and overlook water"
+  - says: "She called herself a black, lesbian, mother, warrior, poet. And in this house she wrote some of her most famous books."
+    source: 1
+    quote: "the self-proclaimed \"black, lesbian, mother, warrior, poet,\""
+  - says: "And in this house she wrote some of her most famous books."
+    source: 1
+    quote: "wrote many of her most famous books and poems during the time she occupied this house"
+  - says: "In nineteen seventy eight, she was diagnosed with breast cancer. She was horrified, and afraid. And she wrote about it."
+    source: 1
+    quote: "The year 1978 also brought serious health challenges when Lorde was diagnosed with breast cancer. Although horrified and afraid, she turned to chronicling her journey in The Cancer Journals, her first piece of non-fiction, published in 1980."
+  - says: "It argued for a woman's right to make her own decisions about her health."
+    source: 1
+    quote: "advocated women's ability, responsibility, and"
+  - says: "And it won a book of the year award."
+    source: 1
+    quote: "In 1981, The Cancer Journals won the American Library Association Gay Caucus Book of the Year Award."
+  - says: "The city's report says the family also met racism here, many times."
+    source: 1
+    quote: "they experienced many acts of racism while living at the house."
+  - says: "She lived here fifteen years."
+    source: 1
+    quote: "lived at 207 St. Paul's Avenue with her children and partner Frances Clayton from 1972 to 1987"
+  - says: "In nineteen ninety one, New York made her the state's poet laureate."
+    source: 1
+    quote: "was appointed the New York State poet laureate in 1991"
+  - says: "The poet's name was Audre Lorde."
+    source: 1
+    quote: "The critically-acclaimed African-American novelist, poet, essayist, and feminist Audre Lorde (1934-1992) lived at 207 St. Paul's Avenue"
+  - says: "The Cancer Journals came out two years later."
+    source: 1
+    quote: "The Cancer Journals, her first piece of non-fiction, published in 1980."
+  - says: "Look up at the second floor."
+    source: 1
+    quote: "Lorde set up her study on the second floor."
+sources:
+  - title: "Audre Lorde Residence, designation report LP-2642, 18 June 2019"
+    publisher: "New York City Landmarks Preservation Commission"
+    url: https://s-media.nyc.gov/agencies/lpc/lp/2642.pdf
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-a-diamond-in-the-rough/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 92.4
+    audioBytes: 1479618
+    transcript:
+      totalS: 92.4
+      lines:
+        - text: Look at the house with the wide wooden porch, and the sunburst carved over the steps.
+          atS: 0
+          durationS: 5.13
+        - text: In July, nineteen seventy two, a poet and her partner bought it, for thirty seven thousand, seven hundred and fifty dollars.
+          atS: 5.57
+          durationS: 8.32
+        - text: The poet's name was Audre Lorde.
+          atS: 14.59
+          durationS: 2.47
+        - text: She had grown up in Harlem, so nearsighted that she was considered legally blind.
+          atS: 17.51
+          durationS: 5.69
+        - text: Now she wanted space, and trees, for her children.
+          atS: 23.8
+          durationS: 3.81
+        - text: This house was a ferry ride from Manhattan, and it had both.
+          atS: 28.3
+          durationS: 4.04
+        - text: She fell in love with it.
+          atS: 32.86
+          durationS: 1.5
+        - text: She called it a diamond in the rough.
+          atS: 34.74
+          durationS: 2.17
+        - text: She set up her study on the second floor.
+          atS: 37.51
+          durationS: 2.26
+        - text: Here she could have a garden, and look out over the water.
+          atS: 40.16
+          durationS: 3.08
+        - text: She called herself a black, lesbian, mother, warrior, poet.
+          atS: 43.68
+          durationS: 5.09
+        - text: And in this house she wrote some of her most famous books.
+          atS: 49.2
+          durationS: 3.93
+        - text: In nineteen seventy eight, she was diagnosed with breast cancer.
+          atS: 53.73
+          durationS: 3.88
+        - text: She was horrified, and afraid.
+          atS: 58.21
+          durationS: 2.45
+        - text: And she wrote about it.
+          atS: 61.36
+          durationS: 1.45
+        - text: The Cancer Journals came out two years later.
+          atS: 63.92
+          durationS: 2.97
+        - text: It argued for a woman's right to make her own decisions about her health.
+          atS: 67.5
+          durationS: 3.98
+        - text: And it won a book of the year award.
+          atS: 71.86
+          durationS: 2.04
+        - text: The city's report says the family also met racism here, many times.
+          atS: 74.61
+          durationS: 4.73
+        - text: She lived here fifteen years.
+          atS: 79.93
+          durationS: 2
+        - text: In nineteen ninety one, New York made her the state's poet laureate.
+          atS: 82.44
+          durationS: 4.4
+        - text: Look up at the second floor.
+          atS: 87.8
+          durationS: 1.43
+        - text: She was afraid, and she wrote it down anyway.
+          atS: 89.43
+          durationS: 2.98

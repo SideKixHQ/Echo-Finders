@@ -1,0 +1,152 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, far north Manhattan (more NYC batch). A rare find: about 14 km from the Midtown cluster.
+# Listening spot: The Shorakkopoch boulder and plaque in Inwood Hill Park, on the lawn west of the salt marsh, near Indian Road and West 218th Street, where the great tulip tree stood.
+# Position: the boulder's spot in the park's eastern valley, from the park plan (medium confidence; the boulder is a few minutes' walk in from the Indian Road entrance).
+id: new-york-the-last-tulip-tree
+title: "The Last Tulip Tree"
+summary: "A boulder in Inwood marks where a giant tulip tree stood. The legend says it grew where Henry Hudson met the people who lived here."
+place: "Shorakkopoch boulder, Inwood Hill Park, near Indian Road and West 218th Street, Manhattan"
+at: { lat: 40.87225, lng: -73.92320 }
+triggerRadiusKm: 0.05
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 64
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A legend, not history. The Federal Writers' Project guide of 1939 reports that the stump of a huge tulip tree here marked, "according to legend", the site of a meeting between Henry Hudson and the Indians, and that the tree "is said to have been" planted to commemorate it. No record of such a meeting at this spot exists. The Algonquin settlement and the finds in the park's eastern valley are reported as fact in the same guide. The script says out loud that the meeting is a legend.
+minAge: 0
+quality: 0.8
+tags: [new-york, inwood, inwood-hill-park, lenape, henry-hudson, legend, trees]
+teaser: "A rock stands in for a tree, which stood in for a meeting nobody wrote down."
+script: |
+  Find the big boulder with the plaque on it, on the grass near the edge of the woods. Then look up, and imagine a tree so wide that a family could stand inside its shadow.
+
+  It stood here. Now there is only the rock.
+
+  This park holds the wildest acres left in Manhattan. And this tree came with a legend.
+
+  Before the city, there was a village in this valley. The people who lived here called it Shorakapkok. Their tools and weapons have been found in this valley.
+
+  Here is the legend. When Henry Hudson sailed up the river, he came ashore and met the people of this village. Right where this tree would grow. And afterwards, the story goes, they planted the tree to remember the meeting.
+
+  No record says it happened. No one can say it did not.
+
+  By nineteen thirty nine, all that was left of the tree was a gaunt stump. Today, even the stump is gone.
+
+  So the boulder holds its place.
+
+  Which makes it a stone standing in for a tree, standing in for a meeting nobody wrote down.
+
+pronunciations:
+  - written: Shorakapkok
+    say: shor-AH-kap-kok
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "This park holds the wildest acres left in Manhattan."
+    source: 1
+    quote: "the Department of Parks announced plans for landscaping the 167 wildest acres in Manhattan."
+  - says: "Before the city, there was a village in this valley."
+    source: 1
+    quote: "This was once an Algonquin Indian settlement, Shora-Kap-Kok, meaning \"in between the hills.\""
+  - says: "The people who lived here called it Shorakapkok."
+    source: 1
+    quote: "This was once an Algonquin Indian settlement, Shora-Kap-Kok, meaning \"in between the hills.\""
+  - says: "Their tools and weapons have been found in this valley."
+    source: 1
+    quote: "Algonquin weapons and utensils have been found on the site of the village in the park's eastern valley."
+  - says: "Right where this tree would grow."
+    source: 1
+    quote: "The gaunt stump of a huge tulip tree that stands near an indentation of the Harlem River Ship Canal marks, according to legend, the site of a meeting between Henry Hudson and the Indians"
+  - says: "And afterwards, the story goes, they planted the tree to remember the meeting."
+    source: 1
+    quote: "and is said to have been planted by the 'Indians to commemorate that occasion."
+  - says: "By nineteen thirty nine, all that was left of the tree was a gaunt stump."
+    source: 1
+    quote: "The gaunt stump of a huge tulip tree that stands near an indentation of the Harlem River Ship Canal"
+  - says: "Now there is only the rock."
+    source: 2
+    quote: "THIS BOULDER ALSO MARKS THE SPOT WHERE / A TULIP TREE (LIRIODENRON TULIPIFERA) GREW TO A HEIGHT / OF 165 FEET AND A GIRTH OF 20 FEET."
+  - says: "When Henry Hudson sailed up the river, he came ashore and met the people of this village."
+    source: 1
+    quote: "between Henry Hudson and the Indians, and is said to have been planted by the 'Indians to commemorate that occasion."
+  - says: "No record says it happened. No one can say it did not."
+    source: 1
+    quote: "marks, according to legend, the site of a meet- ing between Henry Hudson and the Indians"
+sources:
+  - title: "New York City Guide (American Guide Series), Federal Writers' Project, 1939: Inwood Hill Park"
+    publisher: "Internet Archive (public domain scan)"
+    url: https://archive.org/details/newyorkcityguide00federich
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Inwood Hill Park Monuments: Tulip Tree (Shorakkopoch boulder and tablet)"
+    publisher: "NYC Department of Parks & Recreation"
+    url: https://www.nycgovparks.org/parks/inwood-hill-park/monuments/1578
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-the-last-tulip-tree/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 64.1
+    audioBytes: 1027386
+    transcript:
+      totalS: 64.1
+      lines:
+        - text: Find the big boulder with the plaque on it, on the grass near the edge of the woods.
+          atS: 0
+          durationS: 4.09
+        - text: Then look up, and imagine a tree so wide that a family could stand inside its shadow.
+          atS: 4.47
+          durationS: 5.13
+        - text: It stood here.
+          atS: 9.93
+          durationS: 1.02
+        - text: Now there is only the rock.
+          atS: 11.39
+          durationS: 1.43
+        - text: This park holds the wildest acres left in Manhattan.
+          atS: 13.33
+          durationS: 3.21
+        - text: And this tree came with a legend.
+          atS: 16.78
+          durationS: 2.25
+        - text: Before the city, there was a village in this valley.
+          atS: 19.41
+          durationS: 2.93
+        - text: The people who lived here called it Shorakapkok.
+          atS: 22.62
+          durationS: 4.17
+        - text: Their tools and weapons have been found in this valley.
+          atS: 27.06
+          durationS: 3.1
+        - text: Here is the legend.
+          atS: 30.44
+          durationS: 1.34
+        - text: When Henry Hudson sailed up the river, he came ashore and met the people of this village.
+          atS: 32.16
+          durationS: 5.76
+        - text: Right where this tree would grow.
+          atS: 38.16
+          durationS: 1.78
+        - text: And afterwards, the story goes, they planted the tree to remember the meeting.
+          atS: 40.15
+          durationS: 4.51
+        - text: No record says it happened.
+          atS: 45.03
+          durationS: 1.85
+        - text: No one can say it did not.
+          atS: 47.12
+          durationS: 2.16
+        - text: By nineteen thirty nine, all that was left of the tree was a gaunt stump.
+          atS: 49.56
+          durationS: 4.33
+        - text: Today, even the stump is gone.
+          atS: 54.07
+          durationS: 2.29
+        - text: So the boulder holds its place.
+          atS: 56.53
+          durationS: 1.89
+        - text: Which makes it a stone standing in for a tree, standing in for a meeting nobody wrote down.
+          atS: 58.63
+          durationS: 5.5

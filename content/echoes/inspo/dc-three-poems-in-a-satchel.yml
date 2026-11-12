@@ -1,0 +1,149 @@
+# Drafted by Claude Code (2026-11-10) for Washington DC beyond the core (Woodley Park), following the six beats in docs/writing-echoes.md (echo-format-v2).
+# Listening spot: Public sidewalk on Woodley Road NW by the old Wardman Park hotel site and its surviving Wardman Tower, near Connecticut Avenue.
+# Position: Overture places 'Wardman Tower' (38.92538, -77.05311) and 'Marriott Wardman Park Hotel' (2660 Woodley Rd NW, 38.92460, -77.05506); set between them on Woodley Road (medium confidence; the hotel's dining room cannot be placed).
+id: dc-three-poems-in-a-satchel
+title: "Three Poems in a Satchel"
+summary: "In 1925 a busboy at the Wardman hotel slipped three poems into a famous guest's bag. The busboy was Langston Hughes."
+place: "Wardman Park hotel site, Woodley Road and Connecticut Avenue NW, Woodley Park, Washington, D.C."
+at: { lat: 38.92500, lng: -77.05400 }
+triggerRadiusKm: 0.08
+category: inspo
+inspo:
+  kind: before-fame
+  evidence: site
+format: short
+durationS: 68
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, woodley-park, langston-hughes, vachel-lindsay, poetry, harlem-renaissance]
+teaser: "A busboy cleared the tables here. One night he left something behind."
+script: |
+  Look along this block. In the nineteen twenties, this was the Wardman hotel.
+
+  In nineteen twenty five, one of its busboys was a young man from the Midwest, carrying plates in the dining room. He had already had a poem published, in a magazine of the NAACP. But nobody here knew that.
+
+  That year, a famous poet came to stay. Vachel Lindsay, known across America for performing his poems out loud, to big crowds.
+
+  The busboy saw his chance. He dashed off three poems, and slipped them into the guest's bag.
+
+  Lindsay read them. And he was taken with them. He read them out himself, with all his showman's energy. Word got round. The busboy won a scholarship to Lincoln University in Pennsylvania. Within five years he had his degree, and two books of poetry.
+
+  His name was Langston Hughes.
+
+  He became one of the great voices of the Harlem Renaissance.
+
+  It started on this block. With three poems, and a busboy who would not wait.
+pronunciations:
+  - written: Vachel Lindsay
+    say: VAY-chul LIND-zee
+detail: >-
+  Evidence is `site`: the Library of Congress says only that Hughes was a busboy "at the Wardman Hotel in Washington" and slipped three poems into Lindsay's satchel; the script does not place it in a room.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "He had already had a poem published, in a magazine of the NAACP."
+    source: 1
+    quote: "Hughes’s poem “The Negro Speaks of Rivers,” written the summer after he graduated from high school in Cleveland, Ohio, was published in Crisis , the magazine of the NAACP, in 1921."
+  - says: "In nineteen twenty five, one of its busboys was a young man from the Midwest, carrying plates in the dining room."
+    source: 1
+    quote: "His reputation received a boost in 1925 when Hughes, who was working as a busboy at the Wardman Hotel in Washington, D.C., slipped three poems into the satchel of guest Vachel Lindsay"
+  - says: "He dashed off three poems, and slipped them into the guest's bag."
+    source: 1
+    quote: "slipped three poems into the satchel of guest Vachel Lindsay"
+  - says: "Vachel Lindsay, known across America for performing his poems out loud, to big crowds."
+    source: 1
+    quote: "who was famous for his public readings or performances of poetry."
+  - says: "Lindsay read them. And he was taken with them. He read them out himself, with all his showman's energy."
+    source: 1
+    quote: "Lindsay’s enthusiastic rendition of and response to Hughes’s hastily written poems led to a scholarship at Lincoln University in Pennsylvania."
+  - says: "Within five years he had his degree, and two books of poetry."
+    source: 1
+    quote: "By 1930, Hughes had earned his degree from Lincoln and published two collections of poetry and one work of prose."
+  - says: "He became one of the great voices of the Harlem Renaissance."
+    source: 1
+    quote: "Hughes is closely associated with the Harlem Renaissance or New Negro Movement"
+  - says: "In the nineteen twenties, this was the Wardman hotel."
+    source: 1
+    quote: "His reputation received a boost in 1925 when Hughes, who was working as a busboy at the Wardman Hotel in Washington, D.C., slipped three poems into the satchel of guest Vachel Lindsay"
+  - says: "The busboy won a scholarship to Lincoln University in Pennsylvania."
+    source: 1
+    quote: "Lindsay’s enthusiastic rendition of and response to Hughes’s hastily written poems led to a scholarship at Lincoln University in Pennsylvania."
+  - says: "His name was Langston Hughes."
+    source: 1
+    quote: "His reputation received a boost in 1925 when Hughes, who was working as a busboy at the Wardman Hotel in Washington, D.C., slipped three poems into the satchel of guest Vachel Lindsay"
+  - says: "With three poems, and a busboy who would not wait."
+    source: 1
+    quote: "His reputation received a boost in 1925 when Hughes, who was working as a busboy at the Wardman Hotel in Washington, D.C., slipped three poems into the satchel of guest Vachel Lindsay"
+sources:
+  - title: "Today in History: February 1 (Langston Hughes)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/today-in-history/february-01/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-three-poems-in-a-satchel/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 67.8
+    audioBytes: 1085065
+    transcript:
+      totalS: 67.8
+      lines:
+        - text: Look along this block.
+          atS: 0
+          durationS: 1.46
+        - text: In the nineteen twenties, this was the Wardman hotel.
+          atS: 2.07
+          durationS: 3.42
+        - text: In nineteen twenty five, one of its busboys was a young man from the Midwest, carrying plates in the dining room.
+          atS: 6.19
+          durationS: 6.82
+        - text: He had already had a poem published, in a magazine of the NAACP.
+          atS: 13.61
+          durationS: 4.28
+        - text: But nobody here knew that.
+          atS: 18.33
+          durationS: 1.7
+        - text: That year, a famous poet came to stay.
+          atS: 20.72
+          durationS: 2.83
+        - text: Vachel Lindsay, known across America for performing his poems out loud, to big crowds.
+          atS: 23.99
+          durationS: 6.34
+        - text: The busboy saw his chance.
+          atS: 30.93
+          durationS: 2.21
+        - text: He dashed off three poems, and slipped them into the guest's bag.
+          atS: 33.65
+          durationS: 3.8
+        - text: Lindsay read them.
+          atS: 38.4
+          durationS: 1.02
+        - text: And he was taken with them.
+          atS: 40.02
+          durationS: 1.39
+        - text: He read them out himself, with all his showman's energy.
+          atS: 41.85
+          durationS: 3.05
+        - text: Word got round.
+          atS: 45.72
+          durationS: 1.17
+        - text: The busboy won a scholarship to Lincoln University in Pennsylvania.
+          atS: 47.5
+          durationS: 3.94
+        - text: Within five years he had his degree, and two books of poetry.
+          atS: 52.04
+          durationS: 3.94
+        - text: His name was Langston Hughes.
+          atS: 56.48
+          durationS: 1.85
+        - text: He became one of the great voices of the Harlem Renaissance.
+          atS: 58.65
+          durationS: 3.2
+        - text: It started on this block.
+          atS: 62.46
+          durationS: 1.47
+        - text: With three poems, and a busboy who would not wait.
+          atS: 64.26
+          durationS: 3.5

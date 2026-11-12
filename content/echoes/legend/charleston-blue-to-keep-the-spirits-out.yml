@@ -1,0 +1,139 @@
+# Drafted by Claude Code (2026-11-10) for the third Charleston batch, following docs/writing-echoes.md (format v2).
+# Listening spot: Along US Highway 17 north of Mount Pleasant, the old coast road the 1941 guide follows from Georgetown to Charleston.
+# Position: A point on the US 17 corridor north of Mount Pleasant from general knowledge of the road (low confidence; checked only as on land). The guide describes the whole route, not one house, so the radius is wide and the script points at no private home.
+id: charleston-blue-to-keep-the-spirits-out
+title: "Blue to Keep the Spirits Out"
+summary: "On the coast road into Charleston, the 1941 state guide saw doors and shutters painted blue to keep away spirits."
+place: "US Highway 17 north of Mount Pleasant, South Carolina"
+at: { lat: 32.87000, lng: -79.78800 }
+triggerRadiusKm: 0.4
+category: legend
+format: short
+durationS: 67
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  This is folklore, recorded as belief. The 1941 Federal Writers' Project guide reports that along this road doors and shutters were often painted blue to keep away spirits, and that travellers recalled "ha'nts" and the "plat-eye"; elsewhere in the same guide, the plat-eye is described from Lowcountry belief as a fiery eye or an animal that pursues anyone who steals from a grave. None of it is presented as fact. Whether blue paint is still common here today is not in this source; the script does not claim it.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 0
+quality: 0.75
+tags: [charleston, mount-pleasant, legend, gullah, haint-blue, plat-eye, folklore]
+teaser: "Why paint a door blue? So nothing that is not alive can come through it."
+script: |
+  If you see a door or a window shutter painted blue along this old road, look at it twice. In the Lowcountry, that blue has a job.
+
+  This is folklore, and it has been told here for a very long time.
+
+  In nineteen forty one, the writers of the state guide drove this road into Charleston. They wrote that doors and window shutters were often painted blue to keep away spirits.
+
+  Spirits of what kind? They named two. The ha'nts, the restless dead. And the plat eye.
+
+  Further down the coast, the same guide described the plat eye. It might be a fiery eye, it said, or some sort of animal. And it never vanishes until vengeance is achieved. Its business was with anyone who stole from a grave.
+
+  And at night, the guide said, in the swamps beside this road, a traveller remembers the ha'nts and the plat eye, as he sees the jack o' lantern lights, and hears bull alligators bellow.
+
+  Nobody can prove a spirit stays outside a blue door.
+
+  But nobody painted it blue by accident.
+detail: >-
+  The 1941 Federal Writers' Project guide, Tour 1b on US 17 from Georgetown to Charleston, records the eeriness of the swamps at night, the "ha'nts" and "plat-eye", jack-o'-lanterns and bull alligators, and doors and shutters painted blue to keep away spirits. Its St. Helena Island tour describes the plat-eye as "a fiery eye or some sort of animal that never vanishes until vengeance is achieved", pursuing anyone who steals the possessions left on a grave. The guide's wording about the people who held these beliefs is of its time and is not repeated.
+pronunciations:
+  - written: "plat eye"
+    say: "PLAT eye"
+  - written: "ha'nts"
+    say: "HANTS"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "They wrote that doors and window shutters were often painted blue to keep away spirits."
+    source: 1
+    quote: "Doors and window shutters are often painted blue to keep away spirits."
+  - says: "It might be a fiery eye, it said, or some sort of animal."
+    source: 1
+    quote: "which may be a fiery eye or some sort of animal that never vanishes until vengeance is achieved."
+  - says: "And it never vanishes until vengeance is achieved."
+    source: 1
+    quote: "that never vanishes until vengeance is achieved."
+  - says: "Its business was with anyone who stole from a grave."
+    source: 1
+    quote: "Penalty for ‘t’iefing’ (stealing) any of these"
+  - says: "And at night, the guide said, in the swamps beside this road, a traveller remembers the ha'nts and the plat eye, as he sees the jack o' lantern lights, and hears bull alligators bellow."
+    source: 1
+    quote: "as he sees the jack-o’-lantern and hears bull alligators bellow"
+  - says: "In the Lowcountry, that blue has a job."
+    source: 1
+    quote: "Doors and window shutters are often painted blue to keep away spirits."
+  - says: "In nineteen forty one, the writers of the state guide drove this road into Charleston."
+    source: 1
+    quote: "COPYRIGHT 1941 BY BURNET R. MAYBANK, GOVERNOR OF SOUTH CAROLINA"
+  - says: "In nineteen forty one, the writers of the state guide drove this road into Charleston."
+    source: 1
+    quote: "Section b. GEORGETOWN to CHARLESTON, 61.3 m. US 17."
+  - says: "They named two."
+    source: 1
+    quote: "the traveler recalls the ‘ha’nts 5 and ‘plat-eye, 5 as he sees the jack-o’-lantern"
+  - says: "They named two."
+    source: 1
+    quote: "The blue doors and shut- ters are to keep the ‘ha’nts’ out"
+sources:
+  - title: "South Carolina: A Guide to the Palmetto State (Federal Writers' Project, 1941)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/in.ernet.dli.2015.180130
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/charleston-blue-to-keep-the-spirits-out/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 67.2
+    audioBytes: 1076287
+    transcript:
+      totalS: 67.2
+      lines:
+        - text: If you see a door or a window shutter painted blue along this old road, look at it twice.
+          atS: 0
+          durationS: 5.39
+        - text: In the Lowcountry, that blue has a job.
+          atS: 5.77
+          durationS: 2.25
+        - text: This is folklore, and it has been told here for a very long time.
+          atS: 8.17
+          durationS: 4.01
+        - text: In nineteen forty one, the writers of the state guide drove this road into Charleston.
+          atS: 12.78
+          durationS: 4.53
+        - text: They wrote that doors and window shutters were often painted blue to keep away spirits.
+          atS: 17.43
+          durationS: 4.84
+        - text: Spirits of what kind?
+          atS: 22.71
+          durationS: 1.39
+        - text: They named two.
+          atS: 24.54
+          durationS: 1.14
+        - text: The ha'nts, the restless dead.
+          atS: 26.12
+          durationS: 2.39
+        - text: And the plat eye.
+          atS: 28.9
+          durationS: 1.26
+        - text: Further down the coast, the same guide described the plat eye.
+          atS: 31.27
+          durationS: 3.61
+        - text: It might be a fiery eye, it said, or some sort of animal.
+          atS: 35.48
+          durationS: 4.05
+        - text: And it never vanishes until vengeance is achieved.
+          atS: 40.14
+          durationS: 3.16
+        - text: Its business was with anyone who stole from a grave.
+          atS: 44.11
+          durationS: 3.4
+        - text: And at night, the guide said, in the swamps beside this road, a traveller remembers the ha'nts and the plat eye, as he sees the jack o' lantern lights, and hears bull alligators bellow.
+          atS: 48.32
+          durationS: 12.1
+        - text: Nobody can prove a spirit stays outside a blue door.
+          atS: 61.23
+          durationS: 2.98
+        - text: But nobody painted it blue by accident.
+          atS: 64.91
+          durationS: 2.29

@@ -1,0 +1,181 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Fishtown), following docs/writing-echoes.md (format v2). Legend, told as legend; male narrator per content/voices.yml.
+# Listening spot: Penn Treaty Park, Beach Street at Columbia Avenue, by the small stone monument that marks where the Treaty Elm stood.
+# Position: the Overture place 'Penn Treaty Park' (39.966271, -75.128484), on the riverside lawn; the monument's own point was not checked (medium confidence).
+id: philadelphia-the-elm-nobody-wrote-down
+title: "The Elm Nobody Wrote Down"
+summary: "Everyone knew Penn made his great treaty under the elm here. Nobody wrote it down at the time, and the painter left the tree out."
+place: "Penn Treaty Park, Beach Street, Fishtown, Philadelphia, Pennsylvania"
+at: { lat: 39.96627, lng: -75.12848 }
+triggerRadiusKm: 0.08
+category: legend
+format: short
+durationS: 90
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  That Penn held a treaty with the Lenape under the great elm at Shackamaxon is tradition. John F. Watson, who collected it in 1842 and believed it, wrote that it "depends more upon the general tenor of tradition, than upon any direct facts." The tree itself is documented: it stood here, a British commander set a guard on it, and it blew down on 3 March 1810. The script says the treaty under the tree is a legend.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 0
+quality: 0.8
+tags: [philadelphia, fishtown, penn-treaty-park, william-penn, lenape, treaty-elm, legend, trees]
+teaser: "The British put a guard on it. Then a gust of wind took it."
+script: |
+  Look across the grass toward the river. Somewhere near here stood a huge elm, wider than it was tall. Its longest branch reached a hundred and fifty feet toward the water.
+
+  Philadelphians will tell you that under that tree, William Penn sat down with the Lenape and made a treaty of friendship. A promise, an old writer said, pledged without an oath, and never broken.
+
+  It is a legend. Even the man who collected it, John Watson, admitted it rested on tradition, not on any record. When everybody knew it, he said, nobody thought to write it down.
+
+  But they believed it. Benjamin West, who played under this tree as a schoolboy, painted the famous picture of the treaty. And then he left the tree out.
+
+  In the Revolution, British soldiers were cutting every tree they could find for firewood. A British commander, John Graves Simcoe, heard what this one was. He put a guard of soldiers around it, to keep off the axe.
+
+  It survived the war. Then, on a Saturday night in March, eighteen ten, a wind that nobody thought was very strong wrenched it out of the ground. On Sunday, hundreds of people came to see it lying there. They counted its rings. Two hundred and eighty three.
+
+  People carried off pieces. One became an armchair for Doctor Benjamin Rush.
+
+  Look toward the river again. Nobody can prove a treaty was signed here.
+
+  But an army once stood guard over a tree, just in case.
+pronunciations:
+  - written: "Lenape"
+    say: "LEN-uh-pee"
+  - written: "Simcoe"
+    say: "SIM-koh"
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Its longest branch reached a hundred and fifty feet toward the water."
+    source: 1
+    quote: "its main branch inclining towards the river measured 150 feet in length"
+  - says: "Somewhere near here stood a huge elm, wider than it was tall."
+    source: 1
+    quote: "In its form it was remarkably wide spread, but not lofty"
+  - says: "A promise, an old writer said, pledged without an oath, and never broken."
+    source: 1
+    quote: "\"pledged without an oath, and never broken!\""
+  - says: "Even the man who collected it, John Watson, admitted it rested on tradition, not on any record."
+    source: 1
+    quote: "The fact of the treaty being held under the Elm, depends more upon the general tenor of tradition, than upon any direct facts now in our possession."
+  - says: "When everybody knew it, he said, nobody thought to write it down."
+    source: 1
+    quote: "they felt little occasion to lay up evidences for posterity."
+  - says: "Benjamin West, who played under this tree as a schoolboy, painted the famous picture of the treaty. And then he left the tree out."
+    source: 1
+    quote: "about the year 1755, when a boy, often resorting with my school-fellows"
+  - says: "Benjamin West, who played under this tree as a schoolboy, painted the famous picture of the treaty. And then he left the tree out."
+    source: 1
+    quote: "although he did not use the image of the treaty tree as any part of his picture"
+  - says: "In the Revolution, British soldiers were cutting every tree they could find for firewood."
+    source: 1
+    quote: "from parties sent out in search of wood for firing"
+  - says: "A British commander, John Graves Simcoe, heard what this one was. He put a guard of soldiers around it, to keep off the axe."
+    source: 1
+    quote: "ordered a guard of British soldiers to protect it from the axe."
+  - says: "Then, on a Saturday night in March, eighteen ten, a wind that nobody thought was very strong wrenched it out of the ground."
+    source: 1
+    quote: "The tree thus memorable was blown over on the 3d of March, 1810; the blow was not deemed generally prevalent, nor strong. In its case, the root was wrenched and the trunk broken off; it fell on Saturday night, and on Sunday many hundreds of people visited it."
+  - says: "They counted its rings. Two hundred and eighty three."
+    source: 1
+    quote: "as it was counted by the inspection of its circles of annual growth, was 283 years."
+  - says: "People carried off pieces. One became an armchair for Doctor Benjamin Rush."
+    source: 1
+    quote: "several took their measures to secure some of the wood as relics. An arm-chair was made from it and presented to Doctor Rush"
+  - says: "Philadelphians will tell you that under that tree, William Penn sat down with the Lenape and made a treaty of friendship."
+    source: 1
+    quote: "The fact of the treaty being held under the Elm, depends more upon the general tenor of tradition, than upon any direct facts now in our possession."
+  - says: "Philadelphians will tell you that under that tree, William Penn sat down with the Lenape and made a treaty of friendship."
+    source: 1
+    quote: "he established a friendly correspondence, by way of treaty with the Indians, at least twice a year."
+  - says: "Philadelphians will tell you that under that tree, William Penn sat down with the Lenape and made a treaty of friendship."
+    source: 1
+    quote: "The river they called Lenape Wihittuck; which means — the rapid stream of the Lenape."
+  - says: "On Sunday, hundreds of people came to see it lying there."
+    source: 1
+    quote: "it fell on Saturday night, and on Sunday many hundreds of people visited it."
+sources:
+  - title: "Annals of Philadelphia and Pennsylvania in the Olden Time, volume 1 (John F. Watson, 1856 edition), chapter: The Treaty Tree and Fairman's Mansion"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/annalsofphiladelphi01wats
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/philadelphia-the-elm-nobody-wrote-down/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 90
+    audioBytes: 1440330
+    transcript:
+      totalS: 90
+      lines:
+        - text: Look across the grass toward the river.
+          atS: 0
+          durationS: 2.09
+        - text: Somewhere near here stood a huge elm, wider than it was tall.
+          atS: 2.47
+          durationS: 3.77
+        - text: Its longest branch reached a hundred and fifty feet toward the water.
+          atS: 6.63
+          durationS: 3.62
+        - text: Philadelphians will tell you that under that tree, William Penn sat down with the Lenape and made a treaty of friendship.
+          atS: 10.58
+          durationS: 7.55
+        - text: A promise, an old writer said, pledged without an oath, and never broken.
+          atS: 18.63
+          durationS: 4.76
+        - text: It is a legend.
+          atS: 23.78
+          durationS: 0.99
+        - text: Even the man who collected it, John Watson, admitted it rested on tradition, not on any record.
+          atS: 25.46
+          durationS: 6.14
+        - text: When everybody knew it, he said, nobody thought to write it down.
+          atS: 32.11
+          durationS: 3.74
+        - text: But they believed it.
+          atS: 36.1
+          durationS: 1.14
+        - text: Benjamin West, who played under this tree as a schoolboy, painted the famous picture of the treaty.
+          atS: 38.05
+          durationS: 5.4
+        - text: And then he left the tree out.
+          atS: 43.96
+          durationS: 1.72
+        - text: In the Revolution, British soldiers were cutting every tree they could find for firewood.
+          atS: 46.12
+          durationS: 5.26
+        - text: A British commander, John Graves Simcoe, heard what this one was.
+          atS: 51.7
+          durationS: 4.45
+        - text: He put a guard of soldiers around it, to keep off the axe.
+          atS: 56.59
+          durationS: 3.23
+        - text: It survived the war.
+          atS: 60.2
+          durationS: 1.53
+        - text: Then, on a Saturday night in March, eighteen ten, a wind that nobody thought was very strong wrenched it out of the ground.
+          atS: 62.11
+          durationS: 7.01
+        - text: On Sunday, hundreds of people came to see it lying there.
+          atS: 69.37
+          durationS: 3.29
+        - text: They counted its rings.
+          atS: 72.86
+          durationS: 1.36
+        - text: Two hundred and eighty three.
+          atS: 74.43
+          durationS: 1.54
+        - text: People carried off pieces.
+          atS: 76.36
+          durationS: 1.59
+        - text: One became an armchair for Doctor Benjamin Rush.
+          atS: 78.55
+          durationS: 2.94
+        - text: Look toward the river again.
+          atS: 81.87
+          durationS: 1.51
+        - text: Nobody can prove a treaty was signed here.
+          atS: 83.71
+          durationS: 2.25
+        - text: But an army once stood guard over a tree, just in case.
+          atS: 86.28
+          durationS: 3.67

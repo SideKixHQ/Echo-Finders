@@ -1,0 +1,234 @@
+# Drafted by Claude Code (2026-11-10) for the second Charleston batch, following docs/writing-echoes.md (format v2) and docs/14-true-crime.md.
+# Listening spot: Memorial Waterfront Park, Mount Pleasant, at the water's edge by the bridge, looking across the Cooper River toward Castle Pinckney on its island, where the Echo's captives were first landed in 1858.
+# Position: A point in Mount Pleasant's Memorial Waterfront Park checked against the land map (medium confidence). Castle Pinckney and Fort Sumter are in the water and cannot be visited from here.
+id: charleston-the-ship-called-echo
+title: "The Ship Called Echo"
+summary: "In 1858 a captured slave ship was brought into this harbour. Its crew was tried in Charleston, and none was convicted."
+place: "Memorial Waterfront Park, Mount Pleasant, South Carolina, facing Castle Pinckney"
+at: { lat: 32.80050, lng: -79.90400 }
+triggerRadiusKm: 0.08
+category: true-crime
+format: short
+durationS: 92
+visibility: landmark-visible
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.85
+tags: [charleston, mount-pleasant, slave-trade, fort-sumter, castle-pinckney, 1858, true-crime]
+teaser: "The trade had been illegal for fifty years. The ship came in anyway."
+script: |
+  Look across the water to the little round fort on its island. Castle Pinckney. In the summer of eighteen fifty eight, the people landed there had been brought across the ocean as captives.
+
+  Their ship was called the Echo. Bringing Africans to the Americas for sale had been illegal in the United States for fifty years. Under one of those laws, it was piracy, and the penalty was death.
+
+  In August, an American navy brig caught the Echo off Cuba. Four hundred and fifty people had been forced aboard in Africa. A hundred and thirty seven died on the crossing. The hold was forty four inches high. All but the smallest children could not stand.
+
+  The survivors were landed at Castle Pinckney, then moved to Fort Sumter. More than half were children and teenagers. Thirty five more died there.
+
+  The crew was tried for piracy in the federal court in Charleston. Their lawyer argued the slave trade laws themselves were wrong. The judge ruled that the slave trade was not piracy. None of them was convicted. The captain was freed on a technicality in Florida, and within a year he was back aboard a slaver.
+
+  The survivors were sent to Liberia. Seventy one more died on the way.
+
+  The marshal who guarded them at Fort Sumter had been for slavery. He wrote, it seems to me that I can never forget it.
+
+  Look at the little fort again. No one was ever punished for that ship.
+
+  The marshal, at least, never forgot it.
+detail: >-
+  The National Park Service article "The Echo" gives the capture on 21 August 1858, 450 captives at departure and 137 deaths on the voyage, the 44 inch hold, the share of children and teenagers, 35 deaths in quarantine at Fort Sumter, the piracy trial in Charleston, Judge Magrath's ruling that the African slave trade is not piracy, Captain Townsend's acquittal in Key West, the voyage to Liberia with 71 deaths, and the marshal's words. The New York Daily Tribune of 30 August 1858 reports the Echo's arrival in Charleston and the landing of the Africans at Castle Pinckney. No one was convicted; the script says so. Everyone named is long dead.
+pronunciations:
+  - written: "Pinckney"
+    say: "PINK-nee"
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: alleged
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-10"
+  contentWarning: "This echo describes the transatlantic slave trade and the deaths of captive Africans. No injuries are described in detail."
+claims:
+  - says: "Their ship was called the Echo."
+    source: 1
+    quote: "the USS Dolphin captured the American slave trading ship, Echo , off the coast of Cuba while on patrol."
+  - says: "Bringing Africans to the Americas for sale had been illegal in the United States for fifty years."
+    source: 1
+    quote: "Congress had passed legislation in 1807, 1818, 1819, and 1820 prohibiting the Atlantic slave trading business."
+  - says: "Under one of those laws, it was piracy, and the penalty was death."
+    source: 1
+    quote: "the crew was put on trial for piracy, a provision of the 1820 law. If convicted, the penalty was death."
+  - says: "In August, an American navy brig caught the Echo off Cuba."
+    source: 1
+    quote: "On Saturday, August 21, 1858, the USS Dolphin captured the American slave trading ship, Echo , off the coast of Cuba while on patrol."
+  - says: "In August, an American navy brig caught the Echo off Cuba."
+    source: 2
+    quote: "She was captured fin days since off the north coast of Cuba by tae Usitel States brig Dolphin"
+  - says: "Four hundred and fifty people had been forced aboard in Africa."
+    source: 1
+    quote: "The Echo had departed the African coast with 450 captives aboard."
+  - says: "A hundred and thirty seven died on the crossing."
+    source: 1
+    quote: "In total, 137 of the original 450 captives died during the six-week voyage"
+  - says: "The hold was forty four inches high."
+    source: 1
+    quote: "Since the holds were only forty-four inches in height, all but the youngest captives could not stand"
+  - says: "The survivors were landed at Castle Pinckney, then moved to Fort Sumter."
+    source: 2
+    quote: "The cargo of Afriesns from the Echo have besa landed at Castle inckuey"
+  - says: "The survivors were landed at Castle Pinckney, then moved to Fort Sumter."
+    source: 1
+    quote: "They spent much of their nearly month long stay at Fort Sumter huddled together on the parade ground."
+  - says: "More than half were children and teenagers."
+    source: 1
+    quote: "over half of the survivors were children and teenagers"
+  - says: "Thirty five more died there."
+    source: 1
+    quote: "Thirty-five Africans died during twenty-five days of quarantine at Fort Sumter."
+  - says: "The crew was tried for piracy in the federal court in Charleston."
+    source: 1
+    quote: "prosecuted the trial against the crew in federal court in Charleston, South Carolina."
+  - says: "Their lawyer argued the slave trade laws themselves were wrong."
+    source: 1
+    quote: "Spratt turned the focus of his defense of the crew against the constitutionality of the acts restricting the slave trade."
+  - says: "The judge ruled that the slave trade was not piracy."
+    source: 1
+    quote: "Judge Andrew G. Magrath ignored the spirit of the 1820 law when he ruled that the \"African slave trade is not piracy.\""
+  - says: "The captain was freed on a technicality in Florida, and within a year he was back aboard a slaver."
+    source: 1
+    quote: "The judge presiding over his trial directed the jury to find him not guilty on the technicality that the ship's registry did not confirm Townsend's ownership of the vessel. Within a year, Townsend was back aboard a slaver"
+  - says: "The survivors were sent to Liberia."
+    source: 1
+    quote: "The surviving captives at Fort Sumter were loaded aboard the USS Niagara , bound for Liberia, in September 1858."
+  - says: "Seventy one more died on the way."
+    source: 1
+    quote: "The month-long voyage cost a further seventy-one lives."
+  - says: "The marshal who guarded them at Fort Sumter had been for slavery."
+    source: 1
+    quote: "A US marshal in Charleston, who had been pro-slavery, changed his mind after watching over the captives at Fort Sumter."
+  - says: "He wrote, it seems to me that I can never forget it."
+    source: 1
+    quote: "It seems to me that I can never forget it."
+  - says: "In the summer of eighteen fifty eight, the people landed there had been brought across the ocean as captives."
+    source: 1
+    quote: "On Saturday, August 21, 1858, the USS Dolphin captured the American slave trading ship, Echo , off the coast of Cuba while on patrol."
+  - says: "In the summer of eighteen fifty eight, the people landed there had been brought across the ocean as captives."
+    source: 1
+    quote: "The Echo had departed the African coast with 450 captives aboard."
+  - says: "In the summer of eighteen fifty eight, the people landed there had been brought across the ocean as captives."
+    source: 2
+    quote: "The cargo of Afriesns from the Echo have besa landed at Castle inckuey"
+  - says: "All but the smallest children could not stand."
+    source: 1
+    quote: "Since the holds were only forty-four inches in height, all but the youngest captives could not stand, except during rare moments when they were allowed on deck during the voyage."
+  - says: "None of them was convicted."
+    source: 3
+    quote: "The trial of the crew of the slaver Echo, which was commenced on Tuesday, was concluded to day in the United States Circuit Court, Judge Wayne presiding. The jury rendered a verdict of not guilty."
+  - says: "No one was ever punished for that ship."
+    source: 3
+    quote: "The jury rendered a verdict of not guilty."
+  - says: "No one was ever punished for that ship."
+    source: 1
+    quote: "The judge presiding over his trial directed the jury to find him not guilty on the technicality that the ship's registry did not confirm Townsend's ownership of the vessel."
+sources:
+  - title: "The Echo"
+    publisher: "National Park Service, Fort Sumter and Fort Moultrie National Historical Park"
+    url: https://www.nps.gov/articles/the-echo.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "New-York Daily Tribune, 30 August 1858, page 4: The Slaver Echo at Charleston"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030213/1858-08-30/ed-1/?sp=4
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Daily National Intelligencer (Washington, D.C.), 18 April 1859, page 3: The Echo Prisoners"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83026172/1859-04-18/ed-1/?sp=3
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/charleston-the-ship-called-echo/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 91.7
+    audioBytes: 1468751
+    transcript:
+      totalS: 91.7
+      lines:
+        - text: Look across the water to the little round fort on its island.
+          atS: 0
+          durationS: 3.39
+        - text: Castle Pinckney.
+          atS: 3.67
+          durationS: 1.39
+        - text: In the summer of eighteen fifty eight, the people landed there had been brought across the ocean as captives.
+          atS: 5.67
+          durationS: 5.78
+        - text: Their ship was called the Echo.
+          atS: 11.69
+          durationS: 1.75
+        - text: Bringing Africans to the Americas for sale had been illegal in the United States for fifty years.
+          atS: 14.05
+          durationS: 5.47
+        - text: Under one of those laws, it was piracy, and the penalty was death.
+          atS: 20.33
+          durationS: 4.79
+        - text: In August, an American navy brig caught the Echo off Cuba.
+          atS: 26.08
+          durationS: 3.91
+        - text: Four hundred and fifty people had been forced aboard in Africa.
+          atS: 30.59
+          durationS: 3.37
+        - text: A hundred and thirty seven died on the crossing.
+          atS: 34.4
+          durationS: 2.46
+        - text: The hold was forty four inches high.
+          atS: 37.3
+          durationS: 2
+        - text: All but the smallest children could not stand.
+          atS: 39.51
+          durationS: 2.63
+        - text: The survivors were landed at Castle Pinckney, then moved to Fort Sumter.
+          atS: 42.59
+          durationS: 4.53
+        - text: More than half were children and teenagers.
+          atS: 47.81
+          durationS: 2.34
+        - text: Thirty five more died there.
+          atS: 50.54
+          durationS: 1.73
+        - text: The crew was tried for piracy in the federal court in Charleston.
+          atS: 52.78
+          durationS: 3.48
+        - text: Their lawyer argued the slave trade laws themselves were wrong.
+          atS: 56.7
+          durationS: 3.61
+        - text: The judge ruled that the slave trade was not piracy.
+          atS: 60.76
+          durationS: 3.18
+        - text: None of them was convicted.
+          atS: 64.45
+          durationS: 1.39
+        - text: The captain was freed on a technicality in Florida, and within a year he was back aboard a slaver.
+          atS: 66.28
+          durationS: 5.87
+        - text: The survivors were sent to Liberia.
+          atS: 72.67
+          durationS: 2.24
+        - text: Seventy one more died on the way.
+          atS: 75.42
+          durationS: 2.12
+        - text: The marshal who guarded them at Fort Sumter had been for slavery.
+          atS: 77.72
+          durationS: 3.78
+        - text: He wrote, it seems to me that I can never forget it.
+          atS: 81.71
+          durationS: 3.15
+        - text: Look at the little fort again.
+          atS: 85.14
+          durationS: 1.59
+        - text: No one was ever punished for that ship.
+          atS: 86.94
+          durationS: 2.18
+        - text: The marshal, at least, never forgot it.
+          atS: 89.36
+          durationS: 2.36

@@ -1,0 +1,202 @@
+# Drafted by Claude Code (2026-11-11) for Washington DC (Foggy Bottom, south of the Octagon), second pass, following the six beats in docs/writing-echoes.md (echo-format-v2). Told as legend, male narrator.
+# Listening spot: Public sidewalk on 18th Street NW at C Street, beside the small stuccoed Van Ness stables on the northwest corner of the Pan American Union (OAS) block.
+# Position: the NRHP nomination puts the stables on the block's northwest corner (18th and C Streets NW); Overture addresses place 203 18th Street NW at 38.89338, -77.04149 and 1849 C Street at 38.89445, -77.04261, so the pin is on the 18th Street sidewalk just south of C Street (medium confidence on the building's exact footprint).
+id: dc-six-white-horses
+title: "Six White Horses"
+summary: "The Van Ness mansion was pulled down in 1907. Its ghosts went with it, all except six headless horses. Their stable is still on the corner."
+place: "Van Ness stables, 18th and C Streets NW, beside the Pan American Union Building, Washington, D.C."
+at: { lat: 38.89405, lng: -77.04150 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 91
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  A legend, labelled as one in the script. The house, the family, its decay, its demolition and the surviving stables are history (National Park Service nomination; a 1919 newspaper feature). The candle-carrying ghost of Marcia Van Ness and the six headless horses are folklore as two newspapers told it in 1919 and 1936, and as the Library of Congress retells it. Nothing supernatural is claimed.
+minAge: 0
+quality: 0.75
+voice: wC1005J19tvhoqqC2hkf
+tags: [washington, foggy-bottom, van-ness, ghosts, latrobe, pan-american-union, lost-washington]
+teaser: "A stable with no house. Some say the horses still come back to it."
+script: |
+  Stand on the corner of Eighteenth and C Streets, and find the small, plain building behind the railings. It is older than anything else on this block. It is a stable.
+
+  A stable needs a house. Look around for it. There is no house.
+
+  There was. A farmer named David Burns once owned much of the land downtown Washington is built on. His daughter, Marcia, married a congressman from New York, John Van Ness. On this block they built a mansion, designed by Benjamin Latrobe. It was long regarded as one of the finest homes in the country.
+
+  Marcia died there. Later in the century the house stood empty, and fell into decay. A newspaper said it was given over to the bat, the owl, and the spider. And, as one might guess, it was said to be haunted.
+
+  This is a legend. Nobody has ever proved a word of it.
+
+  People said Marcia walked the ruin at night, carrying a candle. And they told a stranger story. When John Van Ness died, his funeral bier was drawn by six white horses. Every year after, on the anniversary of his death, the story went, you could hear those horses galloping round the old mansion. White sides heaving. Great tails flying. And no heads. They had buried their heads in the dust, with their master.
+
+  In nineteen oh seven the mansion was pulled down, to make way for the white marble building on this block. Only the stables are still standing.
+
+  So the house is gone, and the lady with the candle went with it.
+
+  The horses kept their stable.
+pronunciations:
+  - written: Latrobe
+    say: luh-TROBE
+detail: >-
+  Told as legend. Spellings differ: the Park Service writes Burnes and Marchia, the 1919 feature Burns and Marcia; the script uses Burns and Marcia. The 1919 feature dates the mansion to 1826 and the Park Service to 1816, so the script gives no year for it. The six horses are from the Evening Star of 1 November 1936, which calls their owner "old John"; the Library of Congress's retelling identifies the bier as John Van Ness's.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "It is a stable."
+    source: 1
+    quote: "On the N. W. corner of the block, Latrobe's 1816 Van Ness House Stables is the only reminder of the site^s distinguished 19th century tenants."
+  - says: "A farmer named David Burns once owned much of the land downtown Washington is built on."
+    source: 1
+    quote: "was owned by David Burnes, a Scotch farmer whose plantation encompassed much of today's downtown Washington."
+  - says: "His daughter, Marcia, married a congressman from New York, John Van Ness."
+    source: 2
+    quote: "His daughter, a beautiful girl, chose from many suitors John P. Van Ness, a Congressman from New York"
+  - says: "On this block they built a mansion, designed by Benjamin Latrobe. It was long regarded as one of the finest homes in the country."
+    source: 1
+    quote: "The Van Ness Mansion designed by Benjamin Latrobe and erected on the property in 1816, was long regarded as one of the finest homes in the coun try."
+  - says: "Marcia died there. Later in the century the house stood empty, and fell into decay."
+    source: 2
+    quote: "Marcia died there six years later. During the latter half of the nine teenth century the house, unoccupied, fell into decay."
+  - says: "A newspaper said it was given over to the bat, the owl, and the spider. And, as one might guess, it was said to be haunted."
+    source: 2
+    quote: "It was given over to the bat. the owl. and the spider"
+  - says: "And, as one might guess, it was said to be haunted."
+    source: 2
+    quote: "which, as one might guess, was reputed to be haunted."
+  - says: "People said Marcia walked the ruin at night, carrying a candle."
+    source: 2
+    quote: "The ghost of the fair Mar cia. so people said, flitted about it at night, carrying a spectral candle in her hand."
+  - says: "When John Van Ness died, his funeral bier was drawn by six white horses."
+    source: 4
+    quote: "Others say that that dilapidated mansion is haunted by the ghosts of the six white horses that drew John Van Ness’ funeral bier."
+  - says: "Every year after, on the anniversary of his death, the story went, you could hear those horses galloping round the old mansion."
+    source: 3
+    quote: "each year on the anniversary of his death, you could hear the ghosts of these"
+  - says: "White sides heaving. Great tails flying. And no heads."
+    source: 3
+    quote: "their white sides heaving and great tails flying in the wind but they were headless"
+  - says: "They had buried their heads in the dust, with their master."
+    source: 3
+    quote: "their heads in the dust with their master."
+  - says: "In nineteen oh seven the mansion was pulled down, to make way for the white marble building on this block. Only the stables are still standing."
+    source: 1
+    quote: "The Van Ness Mansion was demolished in 1907 to make way for the Pan American Union. Only the Van Ness stables are still standing."
+sources:
+  - title: "Pan American Union, National Register of Historic Places Inventory, Nomination Form"
+    publisher: "National Park Service"
+    url: https://npgallery.nps.gov/GetAsset/c79740f0-16cb-4698-b845-8114aea0439f
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "The Bridgeport Times and Evening Farmer, 16 October 1919, page 12: haunted places of Washington, Van Ness Mansion"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn92051227/1919-10-16/ed-1/?sp=12
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 1 November 1936, page 64: Ghosts (continued)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1936-11-01/ed-1/?sp=64
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "The Haunted Houses of Washington"
+    publisher: "Library of Congress, Headlines and Heroes blog"
+    url: https://blogs.loc.gov/headlinesandheroes/2020/10/the-haunted-houses-of-washington/
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-six-white-horses/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 91
+    audioBytes: 1456630
+    transcript:
+      totalS: 91
+      lines:
+        - text: Stand on the corner of Eighteenth and C Streets, and find the small, plain building behind the railings.
+          atS: 0
+          durationS: 5.34
+        - text: It is older than anything else on this block.
+          atS: 5.55
+          durationS: 2.24
+        - text: It is a stable.
+          atS: 7.91
+          durationS: 1.01
+        - text: A stable needs a house.
+          atS: 9.03
+          durationS: 1.44
+        - text: Look around for it.
+          atS: 10.62
+          durationS: 1.02
+        - text: There is no house.
+          atS: 11.77
+          durationS: 1.03
+        - text: There was.
+          atS: 12.92
+          durationS: 0.72
+        - text: A farmer named David Burns once owned much of the land downtown Washington is built on.
+          atS: 14.03
+          durationS: 4.82
+        - text: His daughter, Marcia, married a congressman from New York, John Van Ness.
+          atS: 19.09
+          durationS: 4.46
+        - text: On this block they built a mansion, designed by Benjamin Latrobe.
+          atS: 23.99
+          durationS: 3.99
+        - text: It was long regarded as one of the finest homes in the country.
+          atS: 28.22
+          durationS: 3.5
+        - text: Marcia died there.
+          atS: 32
+          durationS: 1.21
+        - text: Later in the century the house stood empty, and fell into decay.
+          atS: 33.45
+          durationS: 3.77
+        - text: A newspaper said it was given over to the bat, the owl, and the spider.
+          atS: 37.55
+          durationS: 4.42
+        - text: And, as one might guess, it was said to be haunted.
+          atS: 42.3
+          durationS: 2.98
+        - text: This is a legend.
+          atS: 45.72
+          durationS: 1.14
+        - text: Nobody has ever proved a word of it.
+          atS: 47.18
+          durationS: 1.86
+        - text: People said Marcia walked the ruin at night, carrying a candle.
+          atS: 49.42
+          durationS: 3.22
+        - text: And they told a stranger story.
+          atS: 52.97
+          durationS: 1.93
+        - text: When John Van Ness died, his funeral bier was drawn by six white horses.
+          atS: 55.5
+          durationS: 4.85
+        - text: Every year after, on the anniversary of his death, the story went, you could hear those horses galloping round the old mansion.
+          atS: 60.73
+          durationS: 7.28
+        - text: White sides heaving.
+          atS: 68.34
+          durationS: 1.35
+        - text: Great tails flying.
+          atS: 70.01
+          durationS: 1.49
+        - text: And no heads.
+          atS: 71.88
+          durationS: 0.94
+        - text: They had buried their heads in the dust, with their master.
+          atS: 73.26
+          durationS: 3
+        - text: In nineteen oh seven the mansion was pulled down, to make way for the white marble building on this block.
+          atS: 76.86
+          durationS: 5.54
+        - text: Only the stables are still standing.
+          atS: 83
+          durationS: 2.04
+        - text: So the house is gone, and the lady with the candle went with it.
+          atS: 85.43
+          durationS: 3.39
+        - text: The horses kept their stable.
+          atS: 89.2
+          durationS: 1.78

@@ -1,0 +1,140 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, a kids telling, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: beside the Tybee Island Light Station at the north end of Tybee Island. The tower and museum are ticketed; the echo plays outside.
+# Position: the light station at the north end of Tybee from the coast data in the app's map (medium confidence; the app's street file has no tiles on Tybee). About 170 m from the Battery Garland echo across the road.
+id: savannah-a-tower-made-of-pine
+title: "A Tower Made of Pine"
+summary: "Oglethorpe's first tower here was ninety feet of pine on cedar posts, a landmark for ships on a coast where everything looked alike."
+place: "Tybee Island Light Station, north end of Tybee Island, Georgia"
+at: { lat: 32.02180, lng: -80.84570 }
+triggerRadiusKm: 0.06
+voice: UrTldiIxfedDl9tlesyS
+category: kids
+format: short
+durationS: 65
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [savannah, tybee, lighthouses, colonial, oglethorpe, kids]
+teaser: "Imagine a lighthouse built out of trees."
+script: |
+  Look up at the lighthouse. Now imagine it made of wood.
+
+  The very first tower on this island was not brick. It was pine.
+
+  When Savannah was brand new, General Oglethorpe had a problem. From out at sea, this whole coast looked the same, mile after mile of low land and trees. A sailor could not tell where the river was.
+
+  So he ordered a tower. Ninety feet high. Twenty five feet wide at the bottom and ten feet wide at the top, built of the best pine, standing on posts of cedar. He wrote that it would be of good service to all shipping, because the land of all the coast is so alike that a distinguishing mark is of great consequence.
+
+  A distinguishing mark. A thing that looks different, so you know where you are.
+
+  The wooden tower did not last. Over the years it fell into ruin, and new towers took its place.
+
+  Look up again.
+
+  The first job of a lighthouse here was not to shine. It was just to stand out.
+detail: >-
+  Wilson (1889) quotes Oglethorpe's specification and his reason, dates the beacon to 1733 "under Oglethorpe's direction", and says it fell into ruin and was replaced by a lighthouse built by the federal government. The NPS Tybee page says Oglethorpe ordered a lighthouse in 1736; the script gives no year. Neither source says whether the first tower carried a light; the landing says only that its first job was to stand out, which is Oglethorpe's stated purpose.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "From out at sea, this whole coast looked the same, mile after mile of low land and trees."
+    source: 1
+    quote: "for the land of all the coast for some hundred miles is so alike, being all low and woody, that a distinguishing mark is of great consequence."
+  - says: "So he ordered a tower."
+    source: 2
+    quote: "General Oglethorpe ordered a lighthouse constructed to mark the entrance to the river in 1736"
+  - says: "Ninety feet high. Twenty five feet wide at the bottom and ten feet wide at the top, built of the best pine, standing on posts of cedar."
+    source: 1
+    quote: "was designed to be \"twenty-five feet square at the base, ninety feet high, and ten feet each way at the top.\" to he con- structed \" of the best pine, strongly timbered, raised upon cedar piles and brick work round the bottom.\""
+  - says: "He wrote that it would be of good service to all shipping, because the land of all the coast is so alike that a distinguishing mark is of great consequence."
+    source: 1
+    quote: "\" It must be of good service to all shipping, not only to those bound to this port, but also to Carolina, for the land of all the coast for some hundred miles is so alike, being all low and woody, that a distinguishing mark is of great consequence.\""
+  - says: "Over the years it fell into ruin, and new towers took its place."
+    source: 1
+    quote: "In the course of time it fell into ruin, and it has been supplanted by the present substantial lighthouse"
+  - says: "The very first tower on this island was not brick."
+    source: 1
+    quote: "This beacon, begun in 1733, under Oglethorpe's direction, was designed to be \"twenty-five feet square at the base, ninety feet high, and ten feet each way at the top.\" to he con- structed \" of the best pine, strongly timbered"
+  - says: "When Savannah was brand new, General Oglethorpe had a problem."
+    source: 2
+    quote: "General Oglethorpe ordered a lighthouse constructed to mark the entrance to the river in 1736"
+  - says: "The wooden tower did not last."
+    source: 1
+    quote: "In the course of time it fell into ruin, and it has been supplanted by the present substantial lighthouse"
+  - says: "The first job of a lighthouse here was not to shine."
+    source: 1
+    quote: "It must be of good service to all shipping, not only to those bound to this port, but also to Carolina, for the land of all the coast for some hundred miles is so alike, being all low and woody, that a distinguishing mark is of great consequence."
+sources:
+  - title: "Historic and Picturesque Savannah (Adelaide Wilson, 1889)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historicpictures00wils
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Tybee Island"
+    publisher: "National Park Service, Fort Pulaski National Monument"
+    url: https://www.nps.gov/fopu/learn/historyculture/tybee-island.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/savannah-a-tower-made-of-pine/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 64.8
+    audioBytes: 1038253
+    transcript:
+      totalS: 64.8
+      lines:
+        - text: Look up at the lighthouse.
+          atS: 0
+          durationS: 1.42
+        - text: Now imagine it made of wood.
+          atS: 1.59
+          durationS: 1.86
+        - text: The very first tower on this island was not brick.
+          atS: 3.77
+          durationS: 3.16
+        - text: It was pine.
+          atS: 7.08
+          durationS: 1
+        - text: When Savannah was brand new, General Oglethorpe had a problem.
+          atS: 8.41
+          durationS: 3.8
+        - text: From out at sea, this whole coast looked the same, mile after mile of low land and trees.
+          atS: 12.53
+          durationS: 6.67
+        - text: A sailor could not tell where the river was.
+          atS: 19.7
+          durationS: 2.65
+        - text: So he ordered a tower.
+          atS: 22.68
+          durationS: 1.54
+        - text: Ninety feet high.
+          atS: 24.6
+          durationS: 1.24
+        - text: Twenty five feet wide at the bottom and ten feet wide at the top, built of the best pine, standing on posts of cedar.
+          atS: 26.17
+          durationS: 7.96
+        - text: He wrote that it would be of good service to all shipping, because the land of all the coast is so alike that a distinguishing mark is of great consequence.
+          atS: 34.83
+          durationS: 9.6
+        - text: A distinguishing mark.
+          atS: 44.94
+          durationS: 1.57
+        - text: A thing that looks different, so you know where you are.
+          atS: 47.21
+          durationS: 3.22
+        - text: The wooden tower did not last.
+          atS: 50.86
+          durationS: 1.89
+        - text: Over the years it fell into ruin, and new towers took its place.
+          atS: 53.2
+          durationS: 4.06
+        - text: Look up again.
+          atS: 58.07
+          durationS: 0.93
+        - text: The first job of a lighthouse here was not to shine.
+          atS: 59.44
+          durationS: 3.05
+        - text: It was just to stand out.
+          atS: 62.88
+          durationS: 1.95

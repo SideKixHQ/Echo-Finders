@@ -1,0 +1,206 @@
+# Drafted by Claude Code (2026-11-10) for the New York City Pass, Harlem cluster.
+# Listening spot: Malcolm X Boulevard (Lenox Avenue) sidewalk outside Sylvia's Restaurant, near West 127th Street.
+# Position: Overture places Sylvia's Restaurant at 40.80868, -73.94457 (328 Malcolm X Blvd) (high confidence).
+id: new-york-you-eat-too-fast
+title: "You Eat Too Fast"
+summary: "Sylvia Woods opened her soul food restaurant here in 1962. Half a century later, it was a meeting place for a whole community."
+place: "Sylvia's Restaurant, Malcolm X Boulevard at 127th Street, Harlem, Manhattan"
+at: { lat: 40.80865, lng: -73.94450 }
+triggerRadiusKm: 0.04
+category: food-drink
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.7
+tags: [new-york, harlem, soul-food, restaurants, sylvia-woods]
+teaser: "She came back to your table, again and again, with extra food."
+script: |
+  Look at the name over this restaurant. Sylvia's.
+
+  Sylvia Woods opened it on the first of August, nineteen sixty two, with her husband, Herbert. They were both from South Carolina. They had known each other since they were children.
+
+  Fried chicken. Collard greens. Cornbread. Ribs. The cooking of the South, on Lenox Avenue.
+
+  It became more than a restaurant. One minister called it a meeting place for Black America. Politicians kept coming, especially when they were running for something.
+
+  But mostly, people remember her, at the tables. A congressman said everyone she met was the most important guest in her dining room. She kept coming back to your table, smiling, bringing extra food.
+
+  A neighbor remembered how she would scold the customers. You eat too fast, she'd say. You got to slow down.
+
+  In July, two thousand twelve, the mayor was due to celebrate her legacy. She died that same day. She was eighty six.
+
+  Her granddaughter said the restaurant was where Sylvia could show her hospitality. And there was a saying that went with it.
+
+  Look in through the window.
+
+  If you come alone, you're never going to dine alone.
+
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the name over this restaurant."
+    source: 2
+    quote: "Sylvia Woods founded the famed Harlem soul food restaurant that carries her name in 1962."
+  - says: "Sylvia Woods opened it on the first of August, nineteen sixty two, with her husband, Herbert."
+    source: 2
+    quote: "Sylvia's opened on August 1st, 1962."
+  - says: "Sylvia Woods opened it on the first of August, nineteen sixty two, with her husband, Herbert."
+    source: 1
+    quote: "Ms. Woods and her husband Herbert, natives of South Carolina who met as children, started Sylvia’s Restaurant in 1962."
+  - says: "They were both from South Carolina."
+    source: 1
+    quote: "Ms. Woods and her husband Herbert, natives of South Carolina who met as children, started Sylvia’s Restaurant in 1962."
+  - says: "They had known each other since they were children."
+    source: 1
+    quote: "natives of South Carolina who met as children"
+  - says: "Fried chicken."
+    source: 1
+    quote: "with tourists and local residents coming for cornbread, ribs, collard greens, fried chicken and other staples of Southern cooking"
+  - says: "The cooking of the South, on Lenox Avenue."
+    source: 1
+    quote: "‘‘Ms. Sylvia created a special place on Lenox and 127th street,’’ he said."
+  - says: "One minister called it a meeting place for Black America."
+    source: 1
+    quote: "The Rev. Al Sharpton said Sylvia’s was ‘‘more than a restaurant; it has been a meeting place for black America.’’"
+  - says: "Politicians kept coming, especially when they were running for something."
+    source: 1
+    quote: "with politicians making frequent visits while on the campaign trail."
+  - says: "A congressman said everyone she met was the most important guest in her dining room."
+    source: 3
+    quote: "\"Everyone that she met was the most important guest that she had in her dining room and the constant coming back to the table and smiling and giving extra orders."
+  - says: "A congressman said everyone she met was the most important guest in her dining room."
+    source: 3
+    quote: "Charles Rangel reacted to Woods' passing and remembered her as a woman who \"had a way with people.\""
+  - says: "She kept coming back to your table, smiling, bringing extra food."
+    source: 3
+    quote: "the constant coming back to the table and smiling and giving extra orders."
+  - says: "A neighbor remembered how she would scold the customers."
+    source: 4
+    quote: "When you came in there, she'd say 'You eat too fast, you gotta slow down,'\" Breeden said."
+  - says: "You eat too fast, she'd say."
+    source: 4
+    quote: "When you came in there, she'd say 'You eat too fast, you gotta slow down,'\" Breeden said."
+  - says: "In July, two thousand twelve, the mayor was due to celebrate her legacy."
+    source: 2
+    quote: "yesterday, Sylvia Woods died at the age of 86, on the same day New York Mayor Michael Bloomberg was due to celebrate her legacy."
+  - says: "She died that same day."
+    source: 2
+    quote: "She died Thursday — the same day New York Mayor Michael Bloomberg was to celebrate her legacy."
+  - says: "She was eighty six."
+    source: 2
+    quote: "Woods was 86."
+  - says: "Her granddaughter said the restaurant was where Sylvia could show her hospitality."
+    source: 1
+    quote: "that it is a place where her grandmother could express her hospitality, a tradition that following generations have maintained."
+  - says: "If you come alone, you're never going to dine alone."
+    source: 1
+    quote: "‘‘If you come alone, you’re never going to dine alone,’’ she said."
+sources:
+  - title: "Sylvia Woods; started famous Harlem restaurant"
+    publisher: "The Boston Globe (Associated Press), 20 July 2012"
+    url: https://www.bostonglobe.com/metro/obituaries/2012/07/20/sylvia-woods-started-famous-harlem-soul-food-restaurant/lUcGPFH4NH3mh6h5Kd564N/story.html
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Founder Of Famed Soul Food Restaurant Dies"
+    publisher: "NPR, Morning Edition, 20 July 2012"
+    url: https://www.npr.org/2012/07/20/157087559/the-last-word-in-business
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Sylvia Woods, Founder Of Iconic Harlem Restaurant, Dead At 86"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/sylvia-woods-founder-of-iconic-harlem-restaurant-dead-at-86/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "'Queen Of Soul Food' Sylvia Woods Remembered At Wake"
+    publisher: "CBS New York"
+    url: https://www.cbsnews.com/newyork/news/queen-of-soul-food-sylvia-woods-remembered-at-wake/
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-you-eat-too-fast/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 76.3
+    audioBytes: 1221737
+    transcript:
+      totalS: 76.3
+      lines:
+        - text: Look at the name over this restaurant.
+          atS: 0
+          durationS: 2
+        - text: Sylvia's.
+          atS: 2.38
+          durationS: 0.99
+        - text: Sylvia Woods opened it on the first of August, nineteen sixty two, with her husband, Herbert.
+          atS: 4.32
+          durationS: 5.55
+        - text: They were both from South Carolina.
+          atS: 10.31
+          durationS: 1.98
+        - text: They had known each other since they were children.
+          atS: 12.62
+          durationS: 2.3
+        - text: Fried chicken.
+          atS: 15.36
+          durationS: 0.99
+        - text: Collard greens.
+          atS: 16.39
+          durationS: 0.93
+        - text: Cornbread.
+          atS: 17.38
+          durationS: 0.8
+        - text: Ribs.
+          atS: 18.36
+          durationS: 0.64
+        - text: The cooking of the South, on Lenox Avenue.
+          atS: 19.24
+          durationS: 2.4
+        - text: It became more than a restaurant.
+          atS: 22.34
+          durationS: 1.87
+        - text: One minister called it a meeting place for Black America.
+          atS: 24.59
+          durationS: 3.18
+        - text: Politicians kept coming, especially when they were running for something.
+          atS: 28.28
+          durationS: 3.45
+        - text: But mostly, people remember her, at the tables.
+          atS: 32.05
+          durationS: 3.49
+        - text: A congressman said everyone she met was the most important guest in her dining room.
+          atS: 36.5
+          durationS: 5.12
+        - text: She kept coming back to your table, smiling, bringing extra food.
+          atS: 42.23
+          durationS: 4.13
+        - text: A neighbor remembered how she would scold the customers.
+          atS: 47.05
+          durationS: 3.06
+        - text: You eat too fast, she'd say.
+          atS: 50.82
+          durationS: 2.24
+        - text: You got to slow down.
+          atS: 53.57
+          durationS: 1.27
+        - text: In July, two thousand twelve, the mayor was due to celebrate her legacy.
+          atS: 55.53
+          durationS: 4.44
+        - text: She died that same day.
+          atS: 60.48
+          durationS: 1.92
+        - text: She was eighty six.
+          atS: 62.83
+          durationS: 1.38
+        - text: Her granddaughter said the restaurant was where Sylvia could show her hospitality.
+          atS: 64.72
+          durationS: 3.97
+        - text: And there was a saying that went with it.
+          atS: 68.74
+          durationS: 2.03
+        - text: Look in through the window.
+          atS: 71.47
+          durationS: 1.49
+        - text: If you come alone, you're never going to dine alone.
+          atS: 73.17
+          durationS: 3.14

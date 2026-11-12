@@ -30,6 +30,10 @@ script: |
 
   The closer to the equator, the more you get. That is most of the reason the map of the
   world's launch sites looks the way it does.
+# Held as draft (2026-11-11, claims pass): the only source has no URL, and NASA and Space Force
+# pages that would back it are not reachable from a session. "Nearly everything the United
+# States has ever launched went up" here is doubtful (Vandenberg, Wallops), and "Nevada" and
+# "three thousand miles" have no source yet.
 editorial: draft
 factCheck: single-source
 sources:

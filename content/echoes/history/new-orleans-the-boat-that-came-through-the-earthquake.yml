@@ -1,0 +1,220 @@
+# Drafted by Claude Code (2026-11-10) for the New Orleans City Pass, following docs/writing-echoes.md.
+# Listening spot: The riverfront walk in Woldenberg Park at the foot of Toulouse Street, facing the Mississippi; public park.
+# Position: Between the Overture places 'Steamboat Natchez' (400 Toulouse St) and the Woldenberg Park gazebo, on the riverside path (medium confidence).
+id: new-orleans-the-boat-that-came-through-the-earthquake
+title: "The Boat That Came Through the Earthquake"
+summary: "The first steamboat on the Mississippi was named for this city. It came down the river in 1811, through the New Madrid earthquakes."
+place: "Riverfront at Woldenberg Park, foot of Toulouse Street, New Orleans, Louisiana"
+at: { lat: 29.95500, lng: -90.06250 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 97
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, new-orleans-core, riverfront, mississippi, steamboat, earthquake]
+teaser: "The dog knew before anyone else did."
+script: |
+  Look out at the river.
+
+  The first steamboat ever to come down it was named for the place it was heading. The New Orleans. In the autumn of eighteen eleven she set out from Pittsburgh.
+
+  People in Pittsburgh told the builder, Nicholas Roosevelt, that he had no right to risk his wife's life. Lydia Roosevelt went anyway, and she was expecting a baby. On board were the two of them, a small crew, and an immense Newfoundland dog named Tiger. At Louisville, waiting for the river to rise, she had the baby.
+
+  Then, in December, the earth began to shake. The New Madrid earthquakes. So powerful, the story goes, that they made the Mississippi run backward.
+
+  At New Madrid, terrified people begged to be taken on board. There was no room and no food for them, and the boat went on. On board, people spoke in whispers. The dog prowled the deck, moaning and growling, and when he came and laid his head in Lydia's lap, they knew a bad shock was coming.
+
+  One night they tied up at the foot of an island. All night she heard things grinding and striking against the hull. In the morning, the island was gone.
+
+  Lydia said she lived in constant fright, unable to sleep or sew, or read.
+
+  Look at the river again. This is where that voyage was going, all along.
+
+  The man who wrote the story down gave the last stretch one line. From there to New Orleans, there was no occurrence worthy of note.
+detail: >-
+  The voyage is told by John H. B. Latrobe, Lydia Roosevelt's brother, in a paper read to the Maryland Historical Society in 1871 and drawn from her recollections; the quotations above are his and hers. The New Orleans left Pittsburgh in the autumn of 1811 and reached Natchez and then New Orleans in the winter of 1811 to 1812. Magnitude estimates for the New Madrid earthquakes differ between sources.
+pronunciations:
+  - written: "New Madrid"
+    say: "new MAD-rid"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "The first steamboat ever to come down it was named for the place it was heading."
+    source: 1
+    quote: "and the boat was launched— and called, from the place of her ulti- mate destination, the New Orleans."
+  - says: "The New Orleans."
+    source: 2
+    quote: "In 1811 the sidewheeler New Orleans traveled from Pittsburgh to New Orleans."
+  - says: "In the autumn of eighteen eleven she set out from Pittsburgh."
+    source: 2
+    quote: "In 1811 the sidewheeler New Orleans traveled from Pittsburgh to New Orleans."
+  - says: "In the autumn of eighteen eleven she set out from Pittsburgh."
+    source: 1
+    quote: "in the latter part of September, 1811, the N\"ew Orleans."
+  - says: "People in Pittsburgh told the builder, Nicholas Roosevelt, that he had no right to risk his wife's life."
+    source: 1
+    quote: "He was told that he had no right to peril his wife's life, however reckless he might be of his own."
+  - says: "Lydia Roosevelt went anyway, and she was expecting a baby."
+    source: 1
+    quote: "Mrs. Roosevelt, too, expected before long to become a mother"
+  - says: "On board were the two of them, a small crew, and an immense Newfoundland dog named Tiger."
+    source: 1
+    quote: "Mr. Roosevelt and herself were the only passengers."
+  - says: "On board were the two of them, a small crew, and an immense Newfoundland dog named Tiger."
+    source: 1
+    quote: "an immense Newfoundland dog, named Tiger."
+  - says: "At Louisville, waiting for the river to rise, she had the baby."
+    source: 1
+    quote: "Mrs. Roosevelt had, for the second"
+  - says: "At Louisville, waiting for the river to rise, she had the baby."
+    source: 1
+    quote: "Fortunately, this ad- dition to the passengers happened when the New Orleans was necessarily detained in port."
+  - says: "Then, in December, the earth began to shake."
+    source: 3
+    quote: "The three strongest earthquakes occurred on December 16, 1811, and on January 23 and February 7, 1812"
+  - says: "The New Madrid earthquakes."
+    source: 3
+    quote: "During the winter of 1811-1812, a series of earthquakes and after-shocks struck the mid-. Mississippi River valley in the vicinity of New Madrid, Missouri"
+  - says: "So powerful, the story goes, that they made the Mississippi run backward."
+    source: 4
+    quote: "They were so powerful, the story goes, they made the Mississippi River run backward."
+  - says: "At New Madrid, terrified people begged to be taken on board."
+    source: 1
+    quote: "terror stricken people had begged to be taken on board"
+  - says: "There was no room and no food for them, and the boat went on."
+    source: 1
+    quote: "it would have been altogether insuf- ficient for any. large increase of passengers"
+  - says: "There was no room and no food for them, and the boat went on."
+    source: 1
+    quote: "there was no choice but to turn a deaf ear to the cries of the terrified inhabitants of the doomed town."
+  - says: "On board, people spoke in whispers."
+    source: 1
+    quote: "it was carried on in whispers, almost."
+  - says: "The dog prowled the deck, moaning and growling, and when he came and laid his head in Lydia's lap, they knew a bad shock was coming."
+    source: 1
+    quote: "prowled about, moaning and growling; and when he came and placed his head on Mrs. Roosevelt's lap, it"
+  - says: "The dog prowled the deck, moaning and growling, and when he came and laid his head in Lydia's lap, they knew a bad shock was coming."
+    source: 1
+    quote: "was a sure sign of a commotion of more than usual violence."
+  - says: "One night they tied up at the foot of an island."
+    source: 1
+    quote: "it was thought safer to stop at the foot of an island"
+  - says: "All night she heard things grinding and striking against the hull."
+    source: 1
+    quote: "she was disturbed by the jar and noise produced by hard objects grating against the planking outside the boat."
+  - says: "In the morning, the island was gone."
+    source: 1
+    quote: "With morning, however, came the true explana- tion. The island had disappeared"
+  - says: "Lydia said she lived in constant fright, unable to sleep or sew, or read."
+    source: 1
+    quote: "that she lived in a constant fright, unable to sleep or sew, or read."
+  - says: "This is where that voyage was going, all along."
+    source: 2
+    quote: "In 1811 the sidewheeler New Orleans traveled from Pittsburgh to New Orleans."
+  - says: "The man who wrote the story down gave the last stretch one line."
+    source: 1
+    quote: "From thence to New Orleans, there was no occurrence worthy of note."
+  - says: "From there to New Orleans, there was no occurrence worthy of note."
+    source: 1
+    quote: "From thence to New Orleans, there was no occurrence worthy of note."
+sources:
+  - title: "The First Steamboat Voyage on the Western Waters (John H. B. Latrobe, Maryland Historical Society, 1871)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/firststeamboatv00latrgoog
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "History and Culture of the Mississippi Delta Region"
+    publisher: "National Park Service, Lower Mississippi Delta Region"
+    url: https://www.nps.gov/locations/lowermsdeltaregion/history-and-culture-of-the-mississippi-delta-region.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Concept III: New Madrid Earthquakes Seismic Zone Tour Route"
+    publisher: "National Park Service, Lower Mississippi Delta Region"
+    url: https://www.nps.gov/locations/lowermsdeltaregion/concept-iii-new-madrid-earthquakes-seismic-zone-tour-route.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "At New Madrid Fault, Shaky Guesses On Next Quake"
+    publisher: "NPR"
+    url: https://www.npr.org/2011/08/27/139968260/at-new-madrid-fault-shaky-guesses-on-next-quake
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-boat-that-came-through-the-earthquake/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 96.5
+    audioBytes: 1545238
+    transcript:
+      totalS: 96.5
+      lines:
+        - text: Look out at the river.
+          atS: 0
+          durationS: 1.36
+        - text: The first steamboat ever to come down it was named for the place it was heading.
+          atS: 1.53
+          durationS: 4.37
+        - text: The New Orleans.
+          atS: 6.18
+          durationS: 1.16
+        - text: In the autumn of eighteen eleven she set out from Pittsburgh.
+          atS: 7.94
+          durationS: 3.5
+        - text: People in Pittsburgh told the builder, Nicholas Roosevelt, that he had no right to risk his wife's life.
+          atS: 12.04
+          durationS: 5.98
+        - text: Lydia Roosevelt went anyway, and she was expecting a baby.
+          atS: 18.46
+          durationS: 3.69
+        - text: On board were the two of them, a small crew, and an immense Newfoundland dog named Tiger.
+          atS: 22.48
+          durationS: 5.74
+        - text: At Louisville, waiting for the river to rise, she had the baby.
+          atS: 28.82
+          durationS: 4.04
+        - text: Then, in December, the earth began to shake.
+          atS: 33.46
+          durationS: 3.31
+        - text: The New Madrid earthquakes.
+          atS: 37.09
+          durationS: 2.1
+        - text: So powerful, the story goes, that they made the Mississippi run backward.
+          atS: 39.58
+          durationS: 4.63
+        - text: At New Madrid, terrified people begged to be taken on board.
+          atS: 44.49
+          durationS: 4.19
+        - text: There was no room and no food for them, and the boat went on.
+          atS: 49.12
+          durationS: 3.32
+        - text: On board, people spoke in whispers.
+          atS: 52.88
+          durationS: 2.24
+        - text: The dog prowled the deck, moaning and growling, and when he came and laid his head in Lydia's lap, they knew a bad shock was coming.
+          atS: 55.45
+          durationS: 8.07
+        - text: One night they tied up at the foot of an island.
+          atS: 64.12
+          durationS: 2.96
+        - text: All night she heard things grinding and striking against the hull.
+          atS: 67.52
+          durationS: 3.89
+        - text: In the morning, the island was gone.
+          atS: 71.85
+          durationS: 2.48
+        - text: Lydia said she lived in constant fright, unable to sleep or sew, or read.
+          atS: 74.85
+          durationS: 5.52
+        - text: Look at the river again.
+          atS: 81.48
+          durationS: 1.28
+        - text: This is where that voyage was going, all along.
+          atS: 83.2
+          durationS: 3.09
+        - text: The man who wrote the story down gave the last stretch one line.
+          atS: 86.98
+          durationS: 4.63
+        - text: From there to New Orleans, there was no occurrence worthy of note.
+          atS: 92.43
+          durationS: 4.07

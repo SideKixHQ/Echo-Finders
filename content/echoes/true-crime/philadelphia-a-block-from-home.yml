@@ -1,0 +1,248 @@
+# Drafted by Claude Code (2026-11-11) for Philadelphia (South Street, Bella Vista and Washington Square West), second pass, following docs/writing-echoes.md (format v2) and docs/14-true-crime.md. Male narrator per content/voices.yml.
+# Listening spot: South Street at Eighth Street, on the public sidewalk. Catto lived at 814 South Street and was shot about a block from home; the memorial's own text puts the polling place on the 700 block.
+# Position: the Eighth and South intersection from the Overture street map (39.942412, -75.155488), nudged west along South Street toward the 800 block (medium confidence: the sources differ by a block, so the radius covers both).
+# Key facts and their sources (docs/14-true-crime.md): that Catto was shot dead on South Street on Election Day, 10 October 1871, is in both the Encyclopedia of Greater Philadelphia and WHYY (2017). The 1877 trial of Frank Kelly is in the Encyclopedia, the 1877 trial pamphlet (the prosecution's opening and the testimony) and the New-York Tribune (10 May 1877), which also reports that he could not be convicted and was set free; South Street and the date are in the pamphlet too (2026-11-11). No one was convicted. No one named is alive.
+id: philadelphia-a-block-from-home
+title: "A Block From Home"
+summary: "On Election Day 1871 the civil rights leader Octavius Catto was shot dead on South Street, a block from his home. No one was ever convicted."
+place: "South Street at Eighth Street, Philadelphia, Pennsylvania"
+at: { lat: 39.94245, lng: -75.15585 }
+triggerRadiusKm: 0.08
+category: true-crime
+format: short
+durationS: 83
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.85
+tags: [philadelphia, south-street, true-crime, octavius-catto, civil-rights, election-day, reconstruction, voting-rights]
+teaser: "He was walking home to fetch the bullets."
+script: |
+  Look along South Street, toward Ninth. On the afternoon of the tenth of October, eighteen seventy one, a young teacher was walking home along this street. His house was a block away.
+
+  His name was Octavius Catto. He was thirty two. He had helped raise Black regiments in the Civil War. He had fought to let Black Philadelphians ride the streetcars, and to let them vote. Black men in Pennsylvania had won back the vote only the year before.
+
+  That Election Day, white mobs were attacking Black voters around Lombard and South streets. The police did little. Catto closed his school early, to keep his students safe. Then he went and bought a revolver. He was walking home to get ammunition for it.
+
+  Witnesses later said two white men passed him here. No words were spoken. One of them drew a pistol and fired. Catto tried to get behind a streetcar. He died in the arms of a police officer.
+
+  Years later, in eighteen seventy seven, a man named Frank Kelly was put on trial for the murder. Dozens of witnesses testified. The jury acquitted him of all charges. No one was ever convicted.
+
+  Five thousand people followed his coffin through the rain.
+
+  Look along the street once more. In twenty seventeen, the city put up a statue of him at City Hall. It was the first public statue in Philadelphia of an African American.
+
+  He is shown striding forward, hands held out.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: alleged
+  reviewedBy: "James (owner), approved 2026-11-11"
+  reviewedAt: "2026-11-11"
+  contentWarning: "This echo is about the shooting of a civil rights leader on Election Day 1871. The shooting is described briefly, without detail of injuries."
+claims:
+  - says: "On the afternoon of the tenth of October, eighteen seventy one, a young teacher was walking home along this street. His house was a block away."
+    source: 1
+    quote: "Just a block away from his home at 814 South Street, Octavius Catto was shot and killed by Frank Kelly around 3:30 p.m. on October 10, 1871"
+  - says: "His name was Octavius Catto. He was thirty two."
+    source: 1
+    quote: "Catto was born, free from slavery, on February 22, 1839, in South Carolina."
+  - says: "He had helped raise Black regiments in the Civil War."
+    source: 1
+    quote: "During the Civil War, Catto helped organize eleven regiments of the United States Colored Troops and was elevated to the rank of major."
+  - says: "He had fought to let Black Philadelphians ride the streetcars, and to let them vote."
+    source: 2
+    quote: "He fought for the rights of African-Americans to ride Philadelphia’s trolley cars."
+  - says: "He had fought to let Black Philadelphians ride the streetcars, and to let them vote."
+    source: 1
+    quote: "an African American leader who struggled against segregation and discrimination in transportation, sports, politics, and society."
+  - says: "Black men in Pennsylvania had won back the vote only the year before."
+    source: 1
+    quote: "Election Day in 1871, just one year after the Fifteenth Amendment to the U.S. Constitution restored voting rights for African Americans in Pennsylvania"
+  - says: "That Election Day, white mobs were attacking Black voters around Lombard and South streets. The police did little."
+    source: 1
+    quote: "Fighting between angry white Democrats and African Americans, who aligned with the Republican Party, expanded into a riot in the predominantly African American neighborhood along eastern Lombard and South Streets. Police did little to intervene."
+  - says: "Catto closed his school early, to keep his students safe."
+    source: 1
+    quote: "He and his colleagues decided to close the Institute early due to risks to staff and students."
+  - says: "Then he went and bought a revolver. He was walking home to get ammunition for it."
+    source: 1
+    quote: "the two traveled to a pawnshop on Walnut Street where Catto purchased a six-shot revolver."
+  - says: "He was walking home to get ammunition for it."
+    source: 1
+    quote: "Around 3 p.m. the two friends parted and Catto started for home (814 South Street), where he had stored ammunition for his newly purchased firearm."
+  - says: "Witnesses later said two white men passed him here. No words were spoken. One of them drew a pistol and fired. Catto tried to get behind a streetcar. He died in the arms of a police officer."
+    source: 1
+    quote: "This depiction of the murder of Octavius V. Catto was based on testimony provided by witnesses during Frank Kelly’s trial in 1877."
+  - says: "No words were spoken. One of them drew a pistol and fired. Catto tried to get behind a streetcar. He died in the arms of a police officer."
+    source: 1
+    quote: "Catto attempted to flee to safety behind a streetcar to no avail."
+  - says: "He died in the arms of a police officer."
+    source: 1
+    quote: "Catto collapsed lifeless into the arms of an approaching police officer."
+  - says: "Witnesses later said two white men passed him here. No words were spoken."
+    source: 1
+    quote: "Seconds after crossing paths and without any words being exchanged"
+  - says: "On the afternoon of the tenth of October, eighteen seventy one, a young teacher was walking home along this street."
+    source: 2
+    quote: "On Election Day in 1871, he was shot to death on South Street."
+  - says: "Years later, in eighteen seventy seven, a man named Frank Kelly was put on trial for the murder. Dozens of witnesses testified. The jury acquitted him of all charges. No one was ever convicted."
+    source: 1
+    quote: "Kelly went on trial for the murder of Catto in April 1877, and this image is from a pamphlet, published soon after, transcribing the testimony in the case. The trial lasted eight days and dozens of witnesses testified, but Kelly was acquitted of all charges."
+  - says: "Five thousand people followed his coffin through the rain."
+    source: 1
+    quote: "The funeral procession, beginning at 7 a.m. in the drizzling rain at Broad and Race Streets"
+  - says: "Five thousand people followed his coffin through the rain."
+    source: 1
+    quote: "and more than 5,000 mourners."
+  - says: "In twenty seventeen, the city put up a statue of him at City Hall. It was the first public statue in Philadelphia of an African American."
+    source: 2
+    quote: "For the first time in its history, the city of Philadelphia officially dedicated a public statue of an African-American individual."
+  - says: "He is shown striding forward, hands held out."
+    source: 2
+    quote: "He is posed in mid-stride with his chest thrust forward, hands outstretched"
+  - says: "Look along South Street, toward Ninth."
+    source: 1
+    quote: "Just a block away from his home at 814 South Street"
+  - says: "Look along South Street, toward Ninth."
+    source: 4
+    quote: "He resided on South street, above Eighth"
+  - says: "Look along South Street, toward Ninth."
+    source: 4
+    quote: "he then ran up to Ninth street"
+  - says: "On the afternoon of the tenth of October, eighteen seventy one, a young teacher was walking home along this street."
+    source: 4
+    quote: "The morning of Tuesday, (October 10th, 1871) opened with the streets (including the territory bounded by Fifth, Eighth, Pine and South streets) crowded with feverish mobs of blacks and whites, ready for mischief."
+  - says: "On the afternoon of the tenth of October, eighteen seventy one, a young teacher was walking home along this street."
+    source: 4
+    quote: "Octavius V. Catto was a colored man, and teacher of a school for colored youth."
+  - says: "On the afternoon of the tenth of October, eighteen seventy one, a young teacher was walking home along this street."
+    source: 3
+    quote: "While passing quietly along the street to his dwelling on an election day"
+  - says: "Witnesses later said two white men passed him here. No words were spoken."
+    source: 4
+    quote: "When on South street he was met by a young mm whom the Commonwealth says was Frank Kelly, who passed him."
+  - says: "He died in the arms of a police officer."
+    source: 4
+    quote: "Catto either fell in the street, or in the aruis of a policeman attracted to the spot by the fireing of the shots."
+  - says: "Years later, in eighteen seventy seven, a man named Frank Kelly was put on trial for the murder. Dozens of witnesses testified. The jury acquitted him of all charges. No one was ever convicted."
+    source: 4
+    quote: "Frank Kelly, charged with the killing of Octavius V. Catto, on October 10th 1ST1, was put on trial on Monday, April 23d, 18TT."
+  - says: "Years later, in eighteen seventy seven, a man named Frank Kelly was put on trial for the murder. Dozens of witnesses testified. The jury acquitted him of all charges. No one was ever convicted."
+    source: 3
+    quote: "A man named Kelly was tried for the murder Inst week"
+  - says: "Years later, in eighteen seventy seven, a man named Frank Kelly was put on trial for the murder. Dozens of witnesses testified. The jury acquitted him of all charges. No one was ever convicted."
+    source: 3
+    quote: "On the evidence, however, Kelly could not be convicted in deference therefore to the strict letter of the law he was set free"
+sources:
+  - title: "Murder of Octavius Catto (Aaron X. Smith)"
+    publisher: "The Encyclopedia of Greater Philadelphia, Rutgers University"
+    url: https://philadelphiaencyclopedia.org/essays/murder-of-octavius-catto/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "Philly presents long overdue honor to 'true American hero' Octavius Catto (2017)"
+    publisher: "WHYY"
+    url: https://whyy.org/articles/philly-presents-long-overdue-honor-true-american-hero-octavius-catto-photos/
+    retrievedAt: "2026-11-11"
+    rights: fair-use-facts
+  - title: "The Case of Catto, editorial. New-York Tribune, 10 May 1877, page 4 (Chronicling America)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/resource/sn83030214/1877-05-10/ed-1/?sp=4
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+  - title: "The Trial of Frank Kelly for the Assassination and Murder of Octavius V. Catto, on October 10, 1871 (Henry H. Griffin, compiler, 1877)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/trialoffrankkell00kell
+    retrievedAt: "2026-11-11"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/philadelphia-a-block-from-home/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 83.4
+    audioBytes: 1335004
+    transcript:
+      totalS: 83.4
+      lines:
+        - text: Look along South Street, toward Ninth.
+          atS: 0
+          durationS: 2.31
+        - text: On the afternoon of the tenth of October, eighteen seventy one, a young teacher was walking home along this street.
+          atS: 3.42
+          durationS: 6.52
+        - text: His house was a block away.
+          atS: 10.46
+          durationS: 1.59
+        - text: His name was Octavius Catto.
+          atS: 12.38
+          durationS: 2.26
+        - text: He was thirty two.
+          atS: 14.96
+          durationS: 1.2
+        - text: He had helped raise Black regiments in the Civil War.
+          atS: 16.67
+          durationS: 2.89
+        - text: He had fought to let Black Philadelphians ride the streetcars, and to let them vote.
+          atS: 19.89
+          durationS: 4.82
+        - text: Black men in Pennsylvania had won back the vote only the year before.
+          atS: 25.09
+          durationS: 4.13
+        - text: That Election Day, white mobs were attacking Black voters around Lombard and South streets.
+          atS: 29.66
+          durationS: 5.53
+        - text: The police did little.
+          atS: 35.43
+          durationS: 1.14
+        - text: Catto closed his school early, to keep his students safe.
+          atS: 36.81
+          durationS: 3.02
+        - text: Then he went and bought a revolver.
+          atS: 40.16
+          durationS: 1.67
+        - text: He was walking home to get ammunition for it.
+          atS: 42.11
+          durationS: 2.26
+        - text: Witnesses later said two white men passed him here.
+          atS: 44.62
+          durationS: 2.76
+        - text: No words were spoken.
+          atS: 47.59
+          durationS: 1.19
+        - text: One of them drew a pistol and fired.
+          atS: 48.87
+          durationS: 2.02
+        - text: Catto tried to get behind a streetcar.
+          atS: 51.16
+          durationS: 2.05
+        - text: He died in the arms of a police officer.
+          atS: 53.39
+          durationS: 2.28
+        - text: Years later, in eighteen seventy seven, a man named Frank Kelly was put on trial for the murder.
+          atS: 55.99
+          durationS: 5.19
+        - text: Dozens of witnesses testified.
+          atS: 61.3
+          durationS: 1.72
+        - text: The jury acquitted him of all charges.
+          atS: 63.09
+          durationS: 2.04
+        - text: No one was ever convicted.
+          atS: 65.22
+          durationS: 1.47
+        - text: Five thousand people followed his coffin through the rain.
+          atS: 66.83
+          durationS: 3.01
+        - text: Look along the street once more.
+          atS: 69.93
+          durationS: 1.67
+        - text: In twenty seventeen, the city put up a statue of him at City Hall.
+          atS: 71.77
+          durationS: 4.13
+        - text: It was the first public statue in Philadelphia of an African American.
+          atS: 76.02
+          durationS: 3.93
+        - text: He is shown striding forward, hands held out.
+          atS: 80.13
+          durationS: 3.23

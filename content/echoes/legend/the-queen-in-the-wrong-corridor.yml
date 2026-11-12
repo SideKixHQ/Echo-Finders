@@ -45,6 +45,9 @@ script: |
   The legend gives her one endless attempt to reach the king.
 
   History does not confirm that she ever ran here.
+# Held as draft (2026-11-11, claims pass): both sources are Historic Royal Palaces pages, and
+# hrp.org.uk answers a session with a Cloudflare challenge, so no quote could be taken from
+# them. The script attributes its correction to "the palace's own historians".
 editorial: draft
 factCheck: corroborated
 sources:

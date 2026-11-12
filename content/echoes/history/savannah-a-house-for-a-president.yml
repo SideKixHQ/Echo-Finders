@@ -1,0 +1,167 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2).
+# Listening spot: the east sidewalk of Martin Luther King Jr. Boulevard (old West Broad Street) at Congress Street, facing the Scarbrough House, now the Ships of the Sea Maritime Museum. The echo needs no entry.
+# Position: MLK Boulevard at Congress Street from the street segments in the app's Savannah street file; HABS says the house faces east on West Broad and south on Congress, so it stands on the northwest corner (high confidence).
+# Not a duplicate: savannah-steamship-savannah is the ship and its voyage, told on River Street. This is the house, and what it became.
+id: savannah-a-house-for-a-president
+title: "A House for a President"
+summary: "Built in time to host President Monroe in 1819, this house became the first public school for Black students here in 1878."
+place: "Scarbrough House, Martin Luther King Jr. Boulevard at Congress Street, Savannah, Georgia"
+at: { lat: 32.08108, lng: -81.09692 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 83
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.85
+tags: [savannah, savannah-core, yamacraw, william-jay, schools, african-american-history, steamship-savannah]
+teaser: "Built for a president. Lost to bankruptcy. Then, for eighty four years, a school."
+script: |
+  Look at the big stuccoed house on the corner, with the squat columns and the round arched windows. It looks like it was built to impress someone.
+
+  It was. And then it spent eighty four years full of children.
+
+  In the spring of eighteen nineteen, a merchant named William Scarbrough was getting it ready for a guest. Scarbrough was behind the Savannah, the first steamship to cross the Atlantic, and the President of the United States, James Monroe, was coming to see her. On the sixth of May, Scarbrough wrote,
+
+  Our house is quite in readiness for him. It is most tastefully and elegantly decorated and furnished.
+
+  The President stayed here. The ship sailed. And within a year, Scarbrough had lost this house to bankruptcy.
+
+  It passed from owner to owner. After a fire in eighteen sixty five, the family living here abandoned it. It became a boys' orphanage. Then, in eighteen seventy eight, a new owner gave it to the Board of Education, as the first public school for Black students in the area.
+
+  It was the West Broad Street School for eighty four years, until nineteen sixty two.
+
+  Look at the round arched windows again.
+
+  A house built to impress a president did its longest work for the children of Yamacraw.
+detail: >-
+  The HABS addendum gives the 1818 to 1819 construction, Scarbrough's letter of May 6, 1819, the bankruptcy in 1820, the abandonment after the fire of 1865, the boys' orphanage, the 1878 conveyance by "Georgia W. J. Derenne" to the Board of Education "for use as the first public school for black students in the area", the 84 years and the closing in 1962. The 1934 HABS sheet says Monroe was tendered the house for his visit in 1819. The 1937 guide spells the name Scarborough; the later HABS addendum spells it Scarbrough, which the museum uses.
+pronunciations:
+  - written: "Scarbrough"
+    say: "SCAR-burr-oh"
+  - written: "Yamacraw"
+    say: "YAM-uh-craw"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the big stuccoed house on the corner, with the squat columns and the round arched windows."
+    source: 1
+    quote: "round-headed windows with round-headed sash along three sides of the first floor"
+  - says: "Scarbrough was behind the Savannah, the first steamship to cross the Atlantic, and the President of the United States, James Monroe, was coming to see her."
+    source: 1
+    quote: "In 1819, the Savannah Steamship Company financed the first voyage of the Savannah, the first trans-Atlantic steamship. The house was host to President James Monroe during his inspection tour of the steamship."
+  - says: "Our house is quite in readiness for him. It is most tastefully and elegantly decorated and furnished."
+    source: 1
+    quote: "\"Our house is quite in readiness for him [President Monroe]. It is most tastefully and elegantly decorated and furnished"
+  - says: "On the sixth of May, Scarbrough wrote,"
+    source: 1
+    quote: "William Scarbrough, letter of May 6, 1819"
+  - says: "And within a year, Scarbrough had lost this house to bankruptcy."
+    source: 1
+    quote: "Lot bought by William Scarbrough in 1803. Lost in bankruptcy in 1820."
+  - says: "After a fire in eighteen sixty five, the family living here abandoned it. It became a boys' orphanage."
+    source: 1
+    quote: "Abandoned by the O'Byrne family as a residence after fire of 1865. Sold in 1870 to the Rt. Rev. Augustine Verot, Bishop of S"
+  - says: "After a fire in eighteen sixty five, the family living here abandoned it. It became a boys' orphanage."
+    source: 1
+    quote: "nah and used as a boys' orphanage."
+  - says: "Then, in eighteen seventy eight, a new owner gave it to the Board of Education, as the first public school for Black students in the area."
+    source: 1
+    quote: "sold by him in 1878 to Georgia W. J. Derenne, who that year conveyed it to the Board of Education for use as the first public school for black students in the area."
+  - says: "Then, in eighteen seventy eight, a new owner gave it to the Board of Education, as the first public school for Black students in the area."
+    source: 2
+    quote: "In 1878 through the generosity of Wymberley Jones DeRenne, this building became the first public school for Negroes in Savannah."
+  - says: "It was the West Broad Street School for eighty four years, until nineteen sixty two."
+    source: 1
+    quote: "The house was known for 84 years as the West Broad Street School. After the school closed in 1962"
+  - says: "And then it spent eighty four years full of children."
+    source: 1
+    quote: "The house was known for 84 years as the West Broad Street School."
+  - says: "In the spring of eighteen nineteen, a merchant named William Scarbrough was getting it ready for a guest."
+    source: 1
+    quote: "The house was built for a prominent merchant, planter, and inventor, William Scarbrough."
+  - says: "The President stayed here."
+    source: 1
+    quote: "The house was host to President James Monroe during his inspection tour of the steamship."
+  - says: "A house built to impress a president did its longest work for the children of Yamacraw."
+    source: 1
+    quote: "is situated in Yamacraw, the oldest section of the city-"
+sources:
+  - title: "William Scarbrough House, HABS No. GA-2127 (written data and addendum)"
+    publisher: "Library of Congress, Historic American Buildings Survey"
+    url: https://tile.loc.gov/storage-services/master/pnp/habshaer/ga/ga0000/ga0030/data/ga0030data.pdf
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Savannah (Federal Writers' Project, American Guide Series, 1937)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannah1937fede
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "The historic William Scarborough House in Savannah, Georgia (Carol M. Highsmith, catalog record)"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/2017880483/
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/savannah-a-house-for-a-president/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 82.5
+    audioBytes: 1321630
+    transcript:
+      totalS: 82.5
+      lines:
+        - text: Look at the big stuccoed house on the corner, with the squat columns and the round arched windows.
+          atS: 0
+          durationS: 5.58
+        - text: It looks like it was built to impress someone.
+          atS: 5.86
+          durationS: 2.33
+        - text: It was.
+          atS: 8.52
+          durationS: 0.85
+        - text: And then it spent eighty four years full of children.
+          atS: 9.69
+          durationS: 3.51
+        - text: In the spring of eighteen nineteen, a merchant named William Scarbrough was getting it ready for a guest.
+          atS: 13.53
+          durationS: 6.54
+        - text: Scarbrough was behind the Savannah, the first steamship to cross the Atlantic, and the President of the United States, James Monroe, was coming to see her.
+          atS: 20.5
+          durationS: 9.79
+        - text: On the sixth of May, Scarbrough wrote, Our house is quite in readiness for him.
+          atS: 30.8
+          durationS: 5.73
+        - text: It is most tastefully and elegantly decorated and furnished.
+          atS: 36.86
+          durationS: 3.91
+        - text: The President stayed here.
+          atS: 41.16
+          durationS: 1.73
+        - text: The ship sailed.
+          atS: 43.1
+          durationS: 1.3
+        - text: And within a year, Scarbrough had lost this house to bankruptcy.
+          atS: 44.68
+          durationS: 4.26
+        - text: It passed from owner to owner.
+          atS: 49.26
+          durationS: 1.8
+        - text: After a fire in eighteen sixty five, the family living here abandoned it.
+          atS: 51.34
+          durationS: 4.84
+        - text: It became a boys' orphanage.
+          atS: 56.51
+          durationS: 1.91
+        - text: Then, in eighteen seventy eight, a new owner gave it to the Board of Education, as the first public school for Black students in the area.
+          atS: 58.75
+          durationS: 8.75
+        - text: It was the West Broad Street School for eighty four years, until nineteen sixty two.
+          atS: 68.01
+          durationS: 5.36
+        - text: Look at the round arched windows again.
+          atS: 74.33
+          durationS: 2.6
+        - text: A house built to impress a president did its longest work for the children of Yamacraw.
+          atS: 77.37
+          durationS: 5.16

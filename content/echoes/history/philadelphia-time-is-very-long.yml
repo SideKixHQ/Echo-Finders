@@ -1,0 +1,196 @@
+# Drafted by Claude Code (2026-11-10) for the Philadelphia core, following docs/writing-echoes.md.
+# Listening spot: South sidewalk of Fairmount Avenue, opposite the prison wall, near 22nd Street, looking across at the gatehouse towers.
+# Position: Overture place 'Eastern State Penitentiary' (2027 Fairmount Ave) at 39.96833, -75.17267; set across Fairmount Avenue facing the front wall (medium confidence).
+id: philadelphia-time-is-very-long
+title: "Time Is Very Long"
+summary: "Charles Dickens came to America wanting to see two things: Niagara Falls, and the prison behind this wall. What he found there."
+place: "Eastern State Penitentiary, Fairmount Avenue at 22nd Street, Fairmount, Philadelphia, Pennsylvania"
+at: { lat: 39.96738, lng: -75.17330 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 100
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [philadelphia, philadelphia-core, fairmount, eastern-state-penitentiary, charles-dickens, prisons]
+teaser: "Two sights in America Dickens most wanted to see. This was one."
+script: |
+  Look at the great wall across the street, and the gate built to look like a castle. When Charles Dickens came to America, in eighteen forty two, there were two sights he most wanted to see. Niagara Falls. And this.
+
+  Behind this wall was an experiment. Every prisoner alone in a cell, for years, to think about what he had done. A new prisoner was led in with a black hood over his head. After that, Dickens wrote, he never looks upon a human countenance, or hears a human voice.
+
+  Dickens spent a whole day going from cell to cell. In the first, a man sat at a loom. He had made himself a little clock out of odds and ends, with his vinegar bottle for a pendulum. On the wall over his door, he had painted a woman. He called her The Lady of the Lake. One of the visitors asked him whether time went quickly. Time is very long, gentlemen, he said, within these four walls.
+
+  Dickens believed the men who ran this place meant well. And that they did not know what they were doing. He called it a slow and daily tampering with the mysteries of the brain, immeasurably worse than any torture of the body. Each man inside, he wrote, was a man buried alive.
+
+  They kept it up for decades. The prison was copied more than three hundred times around the world before Eastern State gave up solitary confinement, in nineteen thirteen. Look at the wall again.
+
+  Time is very long, gentlemen.
+
+  Within these four walls.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the great wall across the street, and the gate built to look like a castle."
+    source: 1
+    quote: "The penitentiary’s medieval Gothic façade was meant to intimidate"
+  - says: "When Charles Dickens came to America, in eighteen forty two, there were two sights he most wanted to see."
+    source: 2
+    quote: "English author Charles Dickens wrote that the two sites in the United States he most wanted to see were “The falls at Niagara” and the Eastern State Penitentiary."
+  - says: "When Charles Dickens came to America, in eighteen forty two, there were two sights he most wanted to see."
+    source: 1
+    quote: "After an 1842 visit to Eastern State"
+  - says: "Niagara Falls. And this."
+    source: 2
+    quote: "“The falls at Niagara” and the Eastern State Penitentiary."
+  - says: "Behind this wall was an experiment."
+    source: 1
+    quote: "a group of notable Philadelphians including Benjamin Franklin and Dr. Benjamin Rush established the Philadelphia Society for Alleviating the Miseries of Public Prisons."
+  - says: "Every prisoner alone in a cell, for years, to think about what he had done."
+    source: 1
+    quote: "a first-of-its-kind prison designed to encourage regret or “penitence” through a strict system of solitary confinement with labor known as the Pennsylvania System."
+  - says: "A new prisoner was led in with a black hood over his head."
+    source: 3
+    quote: "Over the head and face of every prisoner who comes into this melancholy house a black hood is drawn"
+  - says: "After that, Dickens wrote, he never looks upon a human countenance, or hears a human voice."
+    source: 3
+    quote: "he never looks upon a human countenance, or hears a human voice."
+  - says: "Dickens spent a whole day going from cell to cell."
+    source: 3
+    quote: "passed the day in going from cell to cell, and talking with the inmates."
+  - says: "In the first, a man sat at a loom."
+    source: 3
+    quote: "The first man I saw was seated at his loom, at work."
+  - says: "He had made himself a little clock out of odds and ends, with his vinegar bottle for a pendulum."
+    source: 3
+    quote: "had very ingeniously manufactured a sort of Dutch clock from some disregarded odds and ends ; and his vinegar bottle served for the pendulum."
+  - says: "On the wall over his door, he had painted a woman. He called her The Lady of the Lake."
+    source: 3
+    quote: "One, of a female, over the door, he called \"The Lady of the Lake.\""
+  - says: "One of the visitors asked him whether time went quickly."
+    source: 3
+    quote: "\"And time goes pretty quickly ? \""
+  - says: "Time is very long, gentlemen, he said, within these four walls."
+    source: 3
+    quote: "\" Time is very long, gentlemen, within these four walls ! \""
+  - says: "Dickens believed the men who ran this place meant well."
+    source: 3
+    quote: "In its intention I am well convinced that it is kind, humane, and meant for reformation"
+  - says: "And that they did not know what they were doing."
+    source: 3
+    quote: "those who devised this system of Prison Discipline, and those benevolent gentlemen who carry it into execution, do not know what it is that they are doing."
+  - says: "He called it a slow and daily tampering with the mysteries of the brain, immeasurably worse than any torture of the body."
+    source: 3
+    quote: "I hold this slow and daily tampering with the mysteries of the brain to be immeasurably worse than any torture of the body"
+  - says: "Each man inside, he wrote, was a man buried alive."
+    source: 3
+    quote: "He is a man buried alive"
+  - says: "The prison was copied more than three hundred times around the world before Eastern State gave up solitary confinement, in nineteen thirteen."
+    source: 4
+    quote: "Eastern State dropped the practice in 1913, but by then the blueprint of this penitentiary had been copied more than 300 times across the Western world."
+  - says: "Within these four walls."
+    source: 3
+    quote: "\" Time is very long, gentlemen, within these four walls ! \""
+sources:
+  - title: "History of Eastern State Penitentiary"
+    publisher: "Eastern State Penitentiary Historic Site"
+    url: https://easternstate.org/about/history-of-eastern-state-penitentiary
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "Eastern State Penitentiary audio tour transcript"
+    publisher: "Eastern State Penitentiary Historic Site"
+    url: https://easternstate.org/uploads/media/ESP_English_Audio_Tour_Transcript.pdf
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+  - title: "American Notes for General Circulation (Charles Dickens, 1842; 1890 edition)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/americannotes00dickiala
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Solitary Confinement: Punishment Or Cruelty?"
+    publisher: "NPR"
+    url: https://www.npr.org/2013/03/10/173957675/solitary-confinement-punishment-or-cruelty
+    retrievedAt: "2026-11-10"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-time-is-very-long/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 99.6
+    audioBytes: 1594139
+    transcript:
+      totalS: 99.6
+      lines:
+        - text: Look at the great wall across the street, and the gate built to look like a castle.
+          atS: 0
+          durationS: 4.78
+        - text: When Charles Dickens came to America, in eighteen forty two, there were two sights he most wanted to see.
+          atS: 5.48
+          durationS: 6.23
+        - text: Niagara Falls.
+          atS: 12.16
+          durationS: 1.23
+        - text: And this.
+          atS: 13.63
+          durationS: 0.84
+        - text: Behind this wall was an experiment.
+          atS: 15.07
+          durationS: 2.18
+        - text: Every prisoner alone in a cell, for years, to think about what he had done.
+          atS: 17.64
+          durationS: 4.54
+        - text: A new prisoner was led in with a black hood over his head.
+          atS: 22.69
+          durationS: 3.46
+        - text: After that, Dickens wrote, he never looks upon a human countenance, or hears a human voice.
+          atS: 26.75
+          durationS: 6.51
+        - text: Dickens spent a whole day going from cell to cell.
+          atS: 33.77
+          durationS: 3.22
+        - text: In the first, a man sat at a loom.
+          atS: 37.43
+          durationS: 3.04
+        - text: He had made himself a little clock out of odds and ends, with his vinegar bottle for a pendulum.
+          atS: 40.91
+          durationS: 4.84
+        - text: On the wall over his door, he had painted a woman.
+          atS: 46.45
+          durationS: 3.31
+        - text: He called her The Lady of the Lake.
+          atS: 50.2
+          durationS: 2.18
+        - text: One of the visitors asked him whether time went quickly.
+          atS: 52.99
+          durationS: 3.2
+        - text: Time is very long, gentlemen, he said, within these four walls.
+          atS: 57.01
+          durationS: 4.62
+        - text: Dickens believed the men who ran this place meant well.
+          atS: 62.14
+          durationS: 3.19
+        - text: And that they did not know what they were doing.
+          atS: 65.84
+          durationS: 2.33
+        - text: He called it a slow and daily tampering with the mysteries of the brain, immeasurably worse than any torture of the body.
+          atS: 68.69
+          durationS: 7.59
+        - text: Each man inside, he wrote, was a man buried alive.
+          atS: 76.97
+          durationS: 4.18
+        - text: They kept it up for decades.
+          atS: 81.54
+          durationS: 1.82
+        - text: The prison was copied more than three hundred times around the world before Eastern State gave up solitary confinement, in nineteen thirteen.
+          atS: 83.8
+          durationS: 8.3
+        - text: Look at the wall again.
+          atS: 92.92
+          durationS: 1.28
+        - text: Time is very long, gentlemen.
+          atS: 94.63
+          durationS: 2.15
+        - text: Within these four walls.
+          atS: 97.16
+          durationS: 2.4

@@ -1,0 +1,155 @@
+# Drafted by Claude Code (2026-11-10) for the second Savannah batch, following the six beats of docs/writing-echoes.md (echo-format-v2). A legend, told as one, in the male narrator.
+# Listening spot: Colonial Park Cemetery, at the flat granite slab of Odrey Miller, which Gamble (1923) places "on a line with the north side of Hull street", near the Cottineau graves.
+# Position: LOW confidence for the slab. Set inside the cemetery on the line of Hull Street from the street segments in the app's Savannah street file; about 60 m from the James Wilde echo and about 70 m from the vaults echo at the Abercorn corner. Find the slab on site and tighten the radius; it is a hard-to-find spot on purpose.
+id: savannah-who-slew-odrey-miller
+title: "Who Slew Odrey Miller?"
+summary: "A stone in the old cemetery once named the man who killed Odrey Miller in 1831. Someone chipped the name away. Tradition says: a duel."
+place: "Grave of Odrey Miller, Colonial Park Cemetery, Savannah, Georgia"
+at: { lat: 32.07530, lng: -81.08990 }
+triggerRadiusKm: 0.03
+voice: wC1005J19tvhoqqC2hkf
+category: legend
+format: short
+durationS: 68
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  That Miller died in a duel is tradition, which Gamble (1923) calls "so often merely the mother of 'historical' lies", though he thinks the silence of the newspapers supports it. The facts from the city burial book (age, birthplace, trade, the head wound on July 13, 1831) and the chipped inscription are documented by Gamble; who fired, and why, is unknown.
+minAge: 0
+quality: 0.8
+tags: [savannah, savannah-core, colonial-park, duels, legend, mysteries, epitaphs]
+teaser: "The stone told you who killed him. Then somebody took a chisel to it."
+script: |
+  Look for a heavy granite slab lying flat on the ground. Read the inscription, and look for the place where the letters stop making sense.
+
+  Somebody has chipped a name out of it.
+
+  The man under the slab was Odrey Miller. The city's old burial book says he was thirty three, born in Kentucky, a horse trader, who lived on State Street. On the thirteenth of July, eighteen thirty one, he was wounded in the head. Three doctors tried to save him. He was buried the next day.
+
+  His stone once named the man who killed him, cut deep. And then someone, perhaps connected with that man, came with a chisel and took the name off.
+
+  Not one newspaper in town mentioned his death. Tradition says that is the clue. A murder would have been reported. A duel, a matter of honour, was not.
+
+  So the legend goes like this. A quarrel over a horse, or a race. A meeting at dawn. A hospital, a grave, all in a few hours. Nobody can prove a word of it.
+
+  Look at the chipped place again.
+
+  Whoever erased the name made sure nobody would ever forget there was one.
+detail: >-
+  Gamble (1923), "Who Slew Odrey Miller? A Mystery of Savannah's Old Cemetery": the slab, its place, the chipped name, the burial book, the three doctors (Daniell, Arnold and Richardson), the newspapers' silence, and his speculation about horses and racing. "Perhaps connected with that man" condenses Gamble's "removed by some one connected with him". The script calls the duel a legend and the horse quarrel a guess, as Gamble does.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Look for a heavy granite slab lying flat on the ground."
+    source: 1
+    quote: "lying flat upon the earth, on a line with the north side of Hull street, is a heavy granite slab with an inscription which frequently attracts attention."
+  - says: "Somebody has chipped a name out of it."
+    source: 1
+    quote: "The chipping of the name until it became undecipher- able has done more to centre attention on the inscription"
+  - says: "The city's old burial book says he was thirty three, born in Kentucky, a horse trader, who lived on State Street."
+    source: 1
+    quote: "Odrey Miller was 33 years of age, that he was a Kentuckian by birth, a horse trader by occupation, that he was wounded in the head on July 13, 1831, and that Doctors Daniell, Arnold and Richard- son gave their surgical services in vain. He was buried the next day."
+  - says: "The city's old burial book says he was thirty three, born in Kentucky, a horse trader, who lived on State Street."
+    source: 1
+    quote: "the Kentuckian who had come to Savannah and lived on State street."
+  - says: "His stone once named the man who killed him, cut deep. And then someone, perhaps connected with that man, came with a chisel and took the name off."
+    source: 1
+    quote: "on this memorial tablet the slayer's name was deeply graven, only to be removed by some one connected with him, who properly resented the perpetuation of his memory as a homi- cide."
+  - says: "Not one newspaper in town mentioned his death."
+    source: 1
+    quote: "\"The Georgian's\" columns threw no light on the slaying of Miller, and a search through the pages of 'The Republican\"' files at Washington was equally fruitless."
+  - says: "A murder would have been reported. A duel, a matter of honour, was not."
+    source: 1
+    quote: "If it had been a murder, or ordinary man- slaughter, the daily papers would doubtless have alluded to it. Being a duel it came within the scope of private affairs about which good taste and ordinary prudence dictated silence."
+  - says: "A quarrel over a horse, or a race."
+    source: 1
+    quote: "Did Miller take advantage of a patron in a horse deal? Did the trouble originate in charges of misdoing at a race?"
+  - says: "The man under the slab was Odrey Miller."
+    source: 1
+    quote: "Odrey Miller was 33 years of age, that he was a Kentuckian by birth"
+  - says: "On the thirteenth of July, eighteen thirty one, he was wounded in the head."
+    source: 1
+    quote: "that he was wounded in the head on July 13, 1831"
+  - says: "Three doctors tried to save him."
+    source: 1
+    quote: "and that Doctors Daniell, Arnold and Richard- son gave their surgical services in vain."
+  - says: "Whoever erased the name made sure nobody would ever forget there was one."
+    source: 1
+    quote: "The chipping of the name until it became undecipher- able has done more to centre attention on the inscription and awaken comment and conjecture than if it still told the passer-by who it was that slew Odrey Miller."
+sources:
+  - title: "Savannah Duels and Duellists, 1733 to 1877 (Thomas Gamble, 1923)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/savannahduelsdue0000thom
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/savannah-who-slew-odrey-miller/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 67.8
+    audioBytes: 1086736
+    transcript:
+      totalS: 67.8
+      lines:
+        - text: Look for a heavy granite slab lying flat on the ground.
+          atS: 0
+          durationS: 3.16
+        - text: Read the inscription, and look for the place where the letters stop making sense.
+          atS: 3.44
+          durationS: 3.85
+        - text: Somebody has chipped a name out of it.
+          atS: 7.62
+          durationS: 1.94
+        - text: The man under the slab was Odrey Miller.
+          atS: 10.51
+          durationS: 2.4
+        - text: The city's old burial book says he was thirty three, born in Kentucky, a horse trader, who lived on State Street.
+          atS: 13.61
+          durationS: 6.25
+        - text: On the thirteenth of July, eighteen thirty one, he was wounded in the head.
+          atS: 20.36
+          durationS: 3.75
+        - text: Three doctors tried to save him.
+          atS: 24.36
+          durationS: 1.73
+        - text: He was buried the next day.
+          atS: 26.2
+          durationS: 1.49
+        - text: His stone once named the man who killed him, cut deep.
+          atS: 27.86
+          durationS: 3.24
+        - text: And then someone, perhaps connected with that man, came with a chisel and took the name off.
+          atS: 31.49
+          durationS: 5.7
+        - text: Not one newspaper in town mentioned his death.
+          atS: 37.63
+          durationS: 2.61
+        - text: Tradition says that is the clue.
+          atS: 40.94
+          durationS: 2.23
+        - text: A murder would have been reported.
+          atS: 43.55
+          durationS: 1.85
+        - text: A duel, a matter of honour, was not.
+          atS: 45.6
+          durationS: 3.25
+        - text: So the legend goes like this.
+          atS: 49.67
+          durationS: 1.78
+        - text: A quarrel over a horse, or a race.
+          atS: 51.65
+          durationS: 2.55
+        - text: A meeting at dawn.
+          atS: 54.53
+          durationS: 1.32
+        - text: A hospital, a grave, all in a few hours.
+          atS: 56.03
+          durationS: 3.52
+        - text: Nobody can prove a word of it.
+          atS: 60.06
+          durationS: 1.58
+        - text: Look at the chipped place again.
+          atS: 62.15
+          durationS: 1.59
+        - text: Whoever erased the name made sure nobody would ever forget there was one.
+          atS: 64.25
+          durationS: 3.6

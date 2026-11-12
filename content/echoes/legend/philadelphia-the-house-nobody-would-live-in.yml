@@ -1,0 +1,150 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Society Hill, by Independence Square), following docs/writing-echoes.md (format v2). Legend, told as legend; male narrator per content/voices.yml.
+# Listening spot: The northeast corner of Fifth and Walnut streets, diagonally across from Independence Square.
+# Position: Fifth and Walnut from the Overture street map (39.947537, -75.149515), moved onto the northeast corner (high confidence for the corner; the house itself is long gone and no trace is claimed).
+id: philadelphia-the-house-nobody-would-live-in
+title: "The House Nobody Would Live In"
+summary: "Colonial Philadelphia had a famous haunted house on this corner. The man who wrote it down named the crime, and not the man."
+place: "Northeast corner of Fifth and Walnut streets, by Independence Square, Philadelphia, Pennsylvania"
+at: { lat: 39.94765, lng: -75.14940 }
+triggerRadiusKm: 0.04
+category: legend
+format: short
+durationS: 71
+visibility: at-hand
+certainty: legend
+certaintyNote: >-
+  Recorded as town talk by John F. Watson in his Annals (1842), in a chapter he titled Superstitions and Popular Credulity. Watson gives no date beyond "about ninety-five years ago", gives the owner only as "Mr. B.", and nothing in the record confirms a murder here. The script says it is a legend and that Watson himself kept the names back.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 12
+quality: 0.7
+tags: [philadelphia, philadelphia-core, society-hill, independence-square, haunted-house, legend, john-watson, ghosts]
+teaser: "The lawyer took it as his fee. Then nobody would live in it."
+script: |
+  Stand on this corner, Fifth and Walnut, and look at the buildings here. This is a legend, written down by an old collector of Philadelphia tales, John Watson. He called the chapter Superstitions and Popular Credulity.
+
+  On this corner, he wrote, there once stood a house that everybody in town called the haunted house.
+
+  A man he names only as Mr. B. was said to have killed his wife inside it. Then, the story goes, he gave the house away, to the colony's attorney general, a lawyer named Hamilton, to plead for his acquittal in court.
+
+  If so, the lawyer had his fee. And then the house stood empty, for years. Nobody would live with what was inside.
+
+  Watson heard other tales, too. Old people remembered the whole town talking about a black coach, driven through the streets at midnight by an evil spirit. Inside it, they said, sat a rich man who had died not long before, a man who had been unkind to someone who depended on him.
+
+  Watson knew the names. He would not print them. But there were plenty of people, he wrote, quite persuaded they saw it.
+
+  Look around this corner again. Nothing is left of that house. Not even the name of the man who lived in it.
+
+  Only the initial.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "He called the chapter Superstitions and Popular Credulity."
+    source: 1
+    quote: "Superstitions and Popular Creduhtij."
+  - says: "On this corner, he wrote, there once stood a house that everybody in town called the haunted house."
+    source: 1
+    quote: "On the northeast corner of Walnut and Fifth streets once stood a house very generally called \" the haunted house,\""
+  - says: "A man he names only as Mr. B. was said to have killed his wife inside it."
+    source: 1
+    quote: "because of Mr. B. having there killed his wife."
+  - says: "Then, the story goes, he gave the house away, to the colony's attorney general, a lawyer named Hamilton, to plead for his acquittal in court."
+    source: 1
+    quote: "He gave the property to Hamilton, the Attorney General, to purge him from his sins by pleading his acquiual at the bar."
+  - says: "And then the house stood empty, for years. Nobody would live with what was inside."
+    source: 1
+    quote: "It long remained empty from the dread of its invisible guest"
+  - says: "Old people remembered the whole town talking about a black coach, driven through the streets at midnight by an evil spirit."
+    source: 1
+    quote: "aged people who well remembered the town talk of the people about seeing a black coach driven about at midnight by au evil spirit"
+  - says: "Inside it, they said, sat a rich man who had died not long before, a man who had been unkind to someone who depended on him."
+    source: 1
+    quote: "having therein one of our deceased rich citizens, who was deemed to have died with unkind feelings to one dependant upon him."
+  - says: "Watson knew the names. He would not print them. But there were plenty of people, he wrote, quite persuaded they saw it."
+    source: 1
+    quote: "suppress names and circumstances; but there were people enough who were quite persuaded that they saw it!"
+  - says: "Stand on this corner, Fifth and Walnut, and look at the buildings here."
+    source: 1
+    quote: "On the northeast corner of Walnut and Fifth streets once stood a house very generally called \" the haunted house,\""
+  - says: "This is a legend, written down by an old collector of Philadelphia tales, John Watson."
+    source: 1
+    quote: "Mr. John F. Watson is the compiler and annalist"
+  - says: "Only the initial."
+    source: 1
+    quote: "because of Mr. B. having there killed his wife."
+sources:
+  - title: "Annals of Philadelphia and Pennsylvania in the Olden Time, volume 1 (John F. Watson, 1856 edition), chapter: Superstitions and Popular Credulity"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/annalsofphiladelphi01wats
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/philadelphia-the-house-nobody-would-live-in/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 71.4
+    audioBytes: 1143997
+    transcript:
+      totalS: 71.4
+      lines:
+        - text: Stand on this corner, Fifth and Walnut, and look at the buildings here.
+          atS: 0
+          durationS: 3.6
+        - text: This is a legend, written down by an old collector of Philadelphia tales, John Watson.
+          atS: 3.84
+          durationS: 5.32
+        - text: He called the chapter Superstitions and Popular Credulity.
+          atS: 9.54
+          durationS: 3.67
+        - text: On this corner, he wrote, there once stood a house that everybody in town called the haunted house.
+          atS: 13.54
+          durationS: 5.42
+        - text: A man he names only as Mr.
+          atS: 19.34
+          durationS: 2.04
+        - text: B.
+          atS: 21.43
+          durationS: 0.48
+        - text: was said to have killed his wife inside it.
+          atS: 21.98
+          durationS: 2.32
+        - text: Then, the story goes, he gave the house away, to the colony's attorney general, a lawyer named Hamilton, to plead for his acquittal in court.
+          atS: 24.74
+          durationS: 8.67
+        - text: If so, the lawyer had his fee.
+          atS: 33.66
+          durationS: 2.18
+        - text: And then the house stood empty, for years.
+          atS: 36.08
+          durationS: 2.7
+        - text: Nobody would live with what was inside.
+          atS: 39.03
+          durationS: 2.36
+        - text: Watson heard other tales, too.
+          atS: 41.6
+          durationS: 2.07
+        - text: Old people remembered the whole town talking about a black coach, driven through the streets at midnight by an evil spirit.
+          atS: 43.94
+          durationS: 6.63
+        - text: Inside it, they said, sat a rich man who had died not long before, a man who had been unkind to someone who depended on him.
+          atS: 50.72
+          durationS: 7.55
+        - text: Watson knew the names.
+          atS: 58.42
+          durationS: 1.34
+        - text: He would not print them.
+          atS: 59.8
+          durationS: 1.16
+        - text: But there were plenty of people, he wrote, quite persuaded they saw it.
+          atS: 61.02
+          durationS: 3.46
+        - text: Look around this corner again.
+          atS: 64.66
+          durationS: 1.52
+        - text: Nothing is left of that house.
+          atS: 66.23
+          durationS: 1.66
+        - text: Not even the name of the man who lived in it.
+          atS: 67.97
+          durationS: 2.18
+        - text: Only the initial.
+          atS: 70.23
+          durationS: 1.2

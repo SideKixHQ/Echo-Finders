@@ -1,0 +1,170 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Northern Liberties, Old City edge), following docs/writing-echoes.md (format v2).
+# Listening spot: The corner of Second and Willow streets, where Second Street once crossed Pegg's Run on a causeway called the Hollow.
+# Position: Second and Willow from the Overture street map (39.958074, -75.14201) (high confidence for the corner; Willow Street follows the creek's bed, per Scharf and Westcott).
+id: philadelphia-the-creek-under-willow-street
+title: "The Creek Under Willow Street"
+summary: "Willow Street is laid over a buried creek. Here boys once rowed boats over the road in floods, and the whole city came to skate."
+place: "Second and Willow streets, over the bed of Pegg's Run, Northern Liberties, Philadelphia, Pennsylvania"
+at: { lat: 39.95800, lng: -75.14195 }
+triggerRadiusKm: 0.05
+category: land
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [philadelphia, northern-liberties, willow-street, peggs-run, cohoquinoque, creeks, marsh, skating]
+teaser: "Under your feet is a creek with a Lenape name."
+script: |
+  Look along Willow Street, here at Second. There is a creek under this street.
+
+  Its first name was Cohoquinoque. The settlers called it Pegg's Run, after a man who owned the meadows. And Willow Street was laid right along its bed.
+
+  The writer John Watson remembered it from when he was a boy. To the south, a high, steep bluff, where the old city ended. To the north, a wide marsh, where the Delaware flowed in at high tide. Second Street crossed it on a low causeway that everyone called the Hollow.
+
+  When the river flooded, boats rowed right over the top of the causeway, from bank to bank. In summer, the marsh was loud with thousands of frogs, and men came to shoot snipe and plover. Floods left catfish stranded in the ponds, for boys to catch.
+
+  And in winter, the whole marsh froze into one great pond. All the skaters of Philadelphia, he wrote, even the grown men, came here to skate.
+
+  Then the city filled it in, with loose rubbish, year after year. Streets went over it, and houses. By eighteen forty two, Watson wrote, the creek ran hidden, in a tunnel under Willow Street.
+
+  Look along Willow Street once more.
+
+  It runs where the creek ran.
+pronunciations:
+  - written: "Cohoquinoque"
+    say: "koh-hoh-KWIN-oh-kwee"
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Its first name was Cohoquinoque. The settlers called it Pegg's Run, after a man who owned the meadows. And Willow Street was laid right along its bed."
+    source: 2
+    quote: "Willow Street, as laid out at present, represents part of the bed of the stream called Pegg's Run, named from Daniel Pegg, who owned extensive tracts of meadow, marsh, and upland in the Northern Liberties on the Delaware border. The Indian title of this stream was Cohoquinoque"
+  - says: "Its first name was Cohoquinoque."
+    source: 1
+    quote: "primarily known under the Indian name of Cohoquinoque."
+  - says: "To the south, a high, steep bluff, where the old city ended."
+    source: 1
+    quote: "At the north end of Philadelphia the high table land of the city terminated in a high precipitous bluff"
+  - says: "To the north, a wide marsh, where the Delaware flowed in at high tide."
+    source: 1
+    quote: "there was an extensive marsh into which the Delaware flowed"
+  - says: "Second Street crossed it on a low causeway that everyone called the Hollow."
+    source: 1
+    quote: "a low causeway made the street and joined the two bluffs, and was universally called \" the Hollow.\""
+  - says: "When the river flooded, boats rowed right over the top of the causeway, from bank to bank."
+    source: 1
+    quote: "boats actually rowed from bank to bank, even on the top of the causeway"
+  - says: "In summer, the marsh was loud with thousands of frogs, and men came to shoot snipe and plover."
+    source: 1
+    quote: "In the summer, the water which rested in places on this marsh, gave life and song to thousands of clamorous frogs"
+  - says: "In summer, the marsh was loud with thousands of frogs, and men came to shoot snipe and plover."
+    source: 1
+    quote: "this, therefore, was a great resort for snipe, kildear, and even plover, and many birds have been shot there."
+  - says: "Floods left catfish stranded in the ponds, for boys to catch."
+    source: 1
+    quote: "catfish, brought in by the floods, were left, and were often caught by boys."
+  - says: "All the skaters of Philadelphia, he wrote, even the grown men, came here to skate."
+    source: 1
+    quote: "in the winter the whole areaw^as a great ice pond, in which all the skating population of Philadelphia, even including men, were wont to skate."
+  - says: "Then the city filled it in, with loose rubbish, year after year."
+    source: 1
+    quote: "The filling up was not a short work ; it became long a deposit for all the loose rubbish of the city"
+  - says: "By eighteen forty two, Watson wrote, the creek ran hidden, in a tunnel under Willow Street."
+    source: 1
+    quote: "the hidden tunnel now conceaUng the former creek, along Willow street"
+  - says: "The writer John Watson remembered it from when he was a boy."
+    source: 1
+    quote: "The writer, when a boy, remembers two or three occasions when the floods in the Delaware backed so much water into all this marsh"
+  - says: "By eighteen forty two"
+    source: 1
+    quote: "having been dosed in its Manuscript, in 1842"
+  - says: "It runs where the creek ran."
+    source: 2
+    quote: "Willow Street occupied the bed of Pegg's Run."
+  - says: "Look along Willow Street, here at Second."
+    source: 2
+    quote: "Willow Street occupied the bed of Pegg's Run."
+  - says: "Look along Willow Street, here at Second."
+    source: 1
+    quote: "Not one of the present range of houses on either side of Second street, from Noble to the Second street bridge, was standing there till within the last thirty years."
+  - says: "And in winter, the whole marsh froze into one great pond."
+    source: 1
+    quote: "in the winter the whole areaw^as a great ice pond"
+sources:
+  - title: "Annals of Philadelphia and Pennsylvania in the Olden Time, volume 1 (John F. Watson, 1856 edition, text closed 1842), chapter: Pegg's Run"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/annalsofphiladelphi01wats
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "History of Philadelphia, 1609 to 1884, volume 1 (J. Thomas Scharf and Thompson Westcott, 1884)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/historyofphilade01scha
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-creek-under-willow-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 85.3
+    audioBytes: 1365097
+    transcript:
+      totalS: 85.3
+      lines:
+        - text: Look along Willow Street, here at Second.
+          atS: 0
+          durationS: 2.72
+        - text: There is a creek under this street.
+          atS: 3.23
+          durationS: 1.87
+        - text: Its first name was Cohoquinoque.
+          atS: 5.54
+          durationS: 3.36
+        - text: The settlers called it Pegg's Run, after a man who owned the meadows.
+          atS: 9.5
+          durationS: 4.39
+        - text: And Willow Street was laid right along its bed.
+          atS: 14.33
+          durationS: 2.65
+        - text: The writer John Watson remembered it from when he was a boy.
+          atS: 17.58
+          durationS: 3.22
+        - text: To the south, a high, steep bluff, where the old city ended.
+          atS: 21.23
+          durationS: 4.27
+        - text: To the north, a wide marsh, where the Delaware flowed in at high tide.
+          atS: 26.02
+          durationS: 5.02
+        - text: Second Street crossed it on a low causeway that everyone called the Hollow.
+          atS: 31.55
+          durationS: 4.25
+        - text: When the river flooded, boats rowed right over the top of the causeway, from bank to bank.
+          atS: 36.61
+          durationS: 5.13
+        - text: In summer, the marsh was loud with thousands of frogs, and men came to shoot snipe and plover.
+          atS: 42.69
+          durationS: 6.78
+        - text: Floods left catfish stranded in the ponds, for boys to catch.
+          atS: 50.28
+          durationS: 4.03
+        - text: And in winter, the whole marsh froze into one great pond.
+          atS: 55.01
+          durationS: 3.84
+        - text: All the skaters of Philadelphia, he wrote, even the grown men, came here to skate.
+          atS: 59.66
+          durationS: 5.02
+        - text: Then the city filled it in, with loose rubbish, year after year.
+          atS: 65.28
+          durationS: 4.33
+        - text: Streets went over it, and houses.
+          atS: 70.43
+          durationS: 2.5
+        - text: By eighteen forty two, Watson wrote, the creek ran hidden, in a tunnel under Willow Street.
+          atS: 73.43
+          durationS: 6.59
+        - text: Look along Willow Street once more.
+          atS: 80.72
+          durationS: 1.92
+        - text: It runs where the creek ran.
+          atS: 83.15
+          durationS: 2.11

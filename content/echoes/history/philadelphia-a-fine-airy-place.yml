@@ -1,0 +1,177 @@
+# Drafted by Claude Code (2026-11-10) for Philadelphia (Germantown, Market Square), following docs/writing-echoes.md (format v2).
+# Listening spot: Germantown Avenue sidewalk in front of the Deshler-Morris House (the Germantown White House), 5442 Germantown Avenue, across from Market Square.
+# Position: Wikidata's point for the Germantown White House (40.033778, -75.171778), kept on the avenue frontage; the app's street map does not reach Germantown (medium confidence).
+id: philadelphia-a-fine-airy-place
+title: "A Fine Airy Place"
+summary: "In November 1793 yellow fever emptied Philadelphia, and Washington's cabinet met in this house. A British general had lived here first."
+place: "Deshler-Morris House (Germantown White House), 5442 Germantown Avenue, Germantown, Philadelphia, Pennsylvania"
+at: { lat: 40.03370, lng: -75.17170 }
+triggerRadiusKm: 0.05
+category: history
+format: short
+durationS: 97
+visibility: at-hand
+certainty: documented
+minAge: 8
+quality: 0.75
+tags: [philadelphia, germantown, george-washington, yellow-fever, 1793, william-howe, ona-judge, hercules]
+teaser: "The enemy general moved in first. Then the President."
+script: |
+  Look at the stone house facing the square. For two weeks in the autumn of seventeen ninety three, this was the seat of the government of the United States.
+
+  That summer, yellow fever had swept through Philadelphia, the capital. The city was under quarantine. So in November, President Washington rented this house, out here in Germantown, from a man named Isaac Franks.
+
+  The cabinet came to him. Four times they met here. Thomas Jefferson, Alexander Hamilton, Henry Knox and Edmund Randolph, around one table, while Britain and France were at war. Could a president declare the country neutral on his own? Hamilton said yes. Jefferson said that was a power for Congress. They argued it out in these rooms.
+
+  Here is the strange part. Sixteen years earlier, in the Revolution, another general had lived in this same house. Washington's enemy. The British commander, Sir William Howe.
+
+  The next summer, Washington came back, to escape the heat of the city. He called it a fine airy place. He brought Martha and the grandchildren. And he brought the people he held in slavery. Ona Judge, who sewed for Martha. Hercules, who cooked. Moll, and Austin. The family went to church across the square.
+
+  Look at the house again. Two generals on opposite sides, under one roof.
+
+  And under the same roof, a cook and a seamstress who would both escape to freedom.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "For two weeks in the autumn of seventeen ninety three, this was the seat of the government of the United States."
+    source: 1
+    quote: "From November 16 - 30, 1793, President George Washington lived in this rented home while Philadelphia remained under quarantine for yellow fever. Washington met with his cabinet here, and together, they conducted the nation's business"
+  - says: "That summer, yellow fever had swept through Philadelphia, the capital. The city was under quarantine."
+    source: 1
+    quote: "In 1793, he took refuge here from the deadly yellow fever epidemic in Philadelphia."
+  - says: "So in November, President Washington rented this house, out here in Germantown, from a man named Isaac Franks."
+    source: 1
+    quote: "Colonel Franks rented this home to President Washington in the fall of 1793 and the summer of 1794."
+  - says: "Four times they met here. Thomas Jefferson, Alexander Hamilton, Henry Knox and Edmund Randolph, around one table, while Britain and France were at war."
+    source: 1
+    quote: "Differences of opinion defined the four cabinet meetings here between November 16 and November 30, 1793. Attending were Thomas Jefferson (State), Alexander Hamilton (Treasury), Henry Knox (War) and Edmund Randolph (Attorney General). Much of the discussion centered on issues raised by the war between France and Britain."
+  - says: "Could a president declare the country neutral on his own? Hamilton said yes. Jefferson said that was a power for Congress."
+    source: 1
+    quote: "Hamilton maintained that the Constitution gave the President and the Senate the right to make treaties, including a treaty of neutrality, referring to Washington's \"Neutrality Proclamation\". Jefferson viewed the proclamation as an infringement on the Congress' power to declare war."
+  - says: "Here is the strange part. Sixteen years earlier, in the Revolution, another general had lived in this same house. Washington's enemy. The British commander, Sir William Howe."
+    source: 1
+    quote: "Ironically, Washington's nemesis, British General William Howe, occupied this home during the Revolutionary War in October 1777."
+  - says: "The next summer, Washington came back, to escape the heat of the city. He called it a fine airy place."
+    source: 1
+    quote: "The following summer, President Washington returned with his family to enjoy the expansive gardens and orchards in this"
+  - says: "He called it a fine airy place."
+    source: 1
+    quote: "\"fine airy place\""
+  - says: "He brought Martha and the grandchildren. And he brought the people he held in slavery. Ona Judge, who sewed for Martha. Hercules, who cooked. Moll, and Austin."
+    source: 1
+    quote: "The enslaved servants included Ona Judge, Austin, Moll, and Hercules. Moll attended to the grandchildren, Nelly and Young Wash. Ona Judge served as seamstress and personal servant to Martha Washington. Hercules prepared meals for the family."
+  - says: "The family went to church across the square."
+    source: 1
+    quote: "the family attended the German Reformed Church across the square from their house."
+  - says: "And under the same roof, a cook and a seamstress who would both escape to freedom."
+    source: 2
+    quote: "Hercules was famous in Philadelphia for his culinary skills. He escaped to freedom in 1797."
+  - says: "And under the same roof, a cook and a seamstress who would both escape to freedom."
+    source: 2
+    quote: "She ran away from the President’s House and escaped to freedom in 1796."
+  - says: "Two generals on opposite sides, under one roof."
+    source: 1
+    quote: "Twice this house sheltered George Washington."
+  - says: "Two generals on opposite sides, under one roof."
+    source: 1
+    quote: "Ironically, Washington's nemesis, British General William Howe, occupied this home during the Revolutionary War in October 1777."
+sources:
+  - title: "Germantown White House"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-germantownwhitehouse.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+  - title: "Visiting the President's House Site: From Enslavement to Emancipation"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-presidentshousesite.htm
+    retrievedAt: "2026-11-10"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-a-fine-airy-place/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 96.7
+    audioBytes: 1548163
+    transcript:
+      totalS: 96.7
+      lines:
+        - text: Look at the stone house facing the square.
+          atS: 0
+          durationS: 2.46
+        - text: For two weeks in the autumn of seventeen ninety three, this was the seat of the government of the United States.
+          atS: 2.84
+          durationS: 6.19
+        - text: That summer, yellow fever had swept through Philadelphia, the capital.
+          atS: 9.64
+          durationS: 4.51
+        - text: The city was under quarantine.
+          atS: 14.58
+          durationS: 1.88
+        - text: So in November, President Washington rented this house, out here in Germantown, from a man named Isaac Franks.
+          atS: 17.16
+          durationS: 7.02
+        - text: The cabinet came to him.
+          atS: 24.57
+          durationS: 1.46
+        - text: Four times they met here.
+          atS: 26.24
+          durationS: 1.61
+        - text: Thomas Jefferson, Alexander Hamilton, Henry Knox and Edmund Randolph, around one table, while Britain and France were at war.
+          atS: 28.18
+          durationS: 8.59
+        - text: Could a president declare the country neutral on his own?
+          atS: 37.37
+          durationS: 3.05
+        - text: Hamilton said yes.
+          atS: 41.12
+          durationS: 1.39
+        - text: Jefferson said that was a power for Congress.
+          atS: 42.96
+          durationS: 2.61
+        - text: They argued it out in these rooms.
+          atS: 46.17
+          durationS: 2.12
+        - text: Here is the strange part.
+          atS: 48.9
+          durationS: 1.87
+        - text: Sixteen years earlier, in the Revolution, another general had lived in this same house.
+          atS: 51.87
+          durationS: 5.95
+        - text: Washington's enemy.
+          atS: 58.19
+          durationS: 1.39
+        - text: The British commander, Sir William Howe.
+          atS: 59.97
+          durationS: 2.65
+        - text: The next summer, Washington came back, to escape the heat of the city.
+          atS: 63.72
+          durationS: 4.6
+        - text: He called it a fine airy place.
+          atS: 68.64
+          durationS: 2.18
+        - text: He brought Martha and the grandchildren.
+          atS: 71.1
+          durationS: 2.09
+        - text: And he brought the people he held in slavery.
+          atS: 73.4
+          durationS: 2.69
+        - text: Ona Judge, who sewed for Martha.
+          atS: 76.6
+          durationS: 2.51
+        - text: Hercules, who cooked.
+          atS: 79.35
+          durationS: 1.6
+        - text: Moll, and Austin.
+          atS: 81.34
+          durationS: 1.5
+        - text: The family went to church across the square.
+          atS: 83.35
+          durationS: 2.38
+        - text: Look at the house again.
+          atS: 86.17
+          durationS: 1.29
+        - text: Two generals on opposite sides, under one roof.
+          atS: 87.74
+          durationS: 3.12
+        - text: And under the same roof, a cook and a seamstress who would both escape to freedom.
+          atS: 91.3
+          durationS: 5.39
