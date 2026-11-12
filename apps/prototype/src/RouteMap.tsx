@@ -149,6 +149,12 @@ interface Props {
    * to rest or what it draws changes. For the zoomed-out card that counts them (`AreaCard`).
    */
   readonly onInView?: (echoes: readonly Echo[]) => void;
+  /**
+   * What `onInView` counts, when that is more than what is drawn: the map passes the echoes
+   * in this area before the topic filter, so the panel can offer the topics that are here
+   * even while one is picked (`KindGrid`). Defaults to `library`.
+   */
+  readonly viewLibrary?: readonly Echo[];
   readonly onPan: (next: { x: number; y: number }) => void;
   /**
    * Counts taps on "Go to my location". Each new value puts you in the middle of the map
@@ -401,6 +407,7 @@ export function RouteMap({
   onPan,
   locateTap = 0,
   onInView,
+  viewLibrary,
   lookAt = null,
   countryBox = null,
   directions = null,
@@ -1170,7 +1177,7 @@ export function RouteMap({
   reportInView.current = () => {
     if (!onInView) return;
     const bottom = box.h - navH - reservedBottom;
-    const seen = library.filter((e) => {
+    const seen = (viewLibrary ?? library).filter((e) => {
       const { x, y } = projection(e.point.at);
       return x >= 0 && x <= box.w && y >= barH && y <= bottom;
     });
@@ -1179,7 +1186,8 @@ export function RouteMap({
     lastInView.current = key;
     onInView(seen);
   };
-  useEffect(() => reportInView.current(), [librarySignature, gl, box.w, box.h]);
+  const viewSignature = useMemo(() => (viewLibrary ? viewLibrary.map((e) => e.id).join(",") : ""), [viewLibrary]);
+  useEffect(() => reportInView.current(), [librarySignature, viewSignature, gl, box.w, box.h]);
 
   /**
    * The pins, grouped by what landed on top of what.
@@ -1808,7 +1816,7 @@ export function RouteMap({
               const away = at ? distanceKm(at, echo.point.at) : null;
               return (
                 <text className={`pin-tag pin-tag-${rarity}`} y="27" textAnchor="middle">
-                  {rarity === "singular" ? "Singular" : "Rare"}
+                  {rarity === "singular" ? "Extra rare" : "Rare"}
                   {away !== null && ` · ${coarse(away)}`}
                 </text>
               );
@@ -2347,9 +2355,9 @@ export function RouteMap({
           characters what the map already says in a symbol, while the one piece of
           information you actually navigate by got pushed off the edge.
         */
-        const label = warm ? (mark.rarity === "singular" ? "Singular" : "Rare") : coarse(mark.km);
+        const label = warm ? (mark.rarity === "singular" ? "Extra rare" : "Rare") : coarse(mark.km);
         const name = warm
-          ? `${mark.rarity === "singular" ? "Singular" : "Rare"} ${CATEGORY_LABEL[mark.echo.category]}`
+          ? `${mark.rarity === "singular" ? "Extra rare" : "Rare"} ${CATEGORY_LABEL[mark.echo.category]}`
           : CATEGORY_LABEL[mark.echo.category];
         hoverAt.current.set(`edge:${mark.echo.id}`, { x: right ? box.w - GUTTER - 72 : GUTTER + 72, y: mark.y - 4 });
         return (

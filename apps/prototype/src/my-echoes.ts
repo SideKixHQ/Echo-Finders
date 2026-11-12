@@ -57,10 +57,27 @@ export function dayLabel(when: Date, now: Date = new Date()): string {
   });
 }
 
-/** A rare find: rare or singular. Hard to reach: far off the walk, open some hours, or inside. */
+/** A rare find: rare or extra rare, as an editor picked it (`rare` in the echo file). */
 export function isRareFind(echo: Echo): boolean {
   const rarity = rarityOf(echo);
   return rarity === "rare" || rarity === "singular";
+}
+
+/** "Rare" or "Extra rare", or null for an echo nobody picked as rare. */
+export function rareLabel(echo: Echo): string | null {
+  const rarity = rarityOf(echo);
+  return rarity === "singular" ? "Extra rare" : rarity === "rare" ? "Rare" : null;
+}
+
+/**
+ * The card's short line on why: "Rare: hard to reach" (docs/adr/0021-topics-and-rare.md).
+ * Null when the echo is not rare or carries no reason.
+ */
+export function rareWhy(echo: Echo): string | null {
+  const label = rareLabel(echo);
+  const reason = echo.rareReason;
+  if (!label || !reason) return null;
+  return `${label}: ${reason.charAt(0).toLowerCase()}${reason.slice(1)}`;
 }
 
 /** How many rare finds a list holds. */

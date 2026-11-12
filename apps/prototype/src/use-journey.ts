@@ -10,6 +10,8 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
+  ECHO_CATEGORIES,
+  OPT_IN_CATEGORIES,
   rarityOf,
   WalkSession,
   type Arriving,
@@ -58,7 +60,8 @@ export interface WalkState {
  * and has to be chosen rather than defaulted into.
  */
 export const LISTENER: ListenerProfile = {
-  categories: ["history", "food-drink", "people", "built", "land", "arts", "legend", "kids", "inspo", "unsolved", "disasters", "music", "firsts", "hidden"],
+  // Derived, so a topic added to the engine reaches the listener without a second edit.
+  categories: ECHO_CATEGORIES.filter((c) => !OPT_IN_CATEGORIES.includes(c)),
   age: 35,
   density: "immersive",
 };

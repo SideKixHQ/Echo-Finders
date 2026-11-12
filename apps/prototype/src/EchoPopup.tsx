@@ -31,6 +31,7 @@
 
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { presetFor, rarityOf, type Echo, type TravelMode } from "@echofinders/core";
+import { rareLabel, rareWhy } from "./my-echoes";
 import { CATEGORY_LABEL } from "./categories";
 import { platePng } from "./archive-plate";
 import type { PinState } from "./RouteMap";
@@ -332,7 +333,7 @@ export function EchoPopup({
         <span className={`pop-kicker cat-${echo.category}`}>
           {CATEGORY_LABEL[echo.category]}
           {/* The rarity decides whether the walk is worth taking, so it is here, before it. */}
-          {rarity !== "common" && <em className="pop-rarity">{rarity}</em>}
+          {rarity !== "common" && <em className="pop-rarity">{rareLabel(echo) ?? rarity}</em>}
           {/* On a short screen the mark rides this line instead of taking its own. */}
           <span className="pop-truth-inline">
             <TruthMark echo={echo} short />
@@ -346,6 +347,8 @@ export function EchoPopup({
       </div>
 
       <h3>{echo.title}</h3>
+      {/* Hand picked rare: the one line that says why, so the tier is something you can check. */}
+      {rareWhy(echo) && <p className="pop-rare-why">{rareWhy(echo)}</p>}
       {/* The rest of the address after its first comma goes first on a short screen. */}
       <p className="pop-where">
         {placeHead}

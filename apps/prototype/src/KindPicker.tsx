@@ -9,7 +9,7 @@
  *
  * So the strip becomes a button that SAYS what is on ("Echoes", "Ghosts", "History +1")
  * and drops a box straight below the map bar with all of them in it at once: All, then the
- * eight kinds as chips, each in its own colour and glyph so the box is still the key to the
+ * topics as chips, each in its own colour and glyph so the box is still the key to the
  * map. It is the box flight mode always had, now everywhere. (A bottom sheet was tried
  * first; James preferred this: it opens where you tapped and leaves the map in view.)
  * Pick as many as you like; the map changes as you tap; a tap outside, the button again,
@@ -20,12 +20,28 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { EchoCategory } from "@echofinders/core";
-import { CATEGORY_ICON, CHIP_GROUPS, type ChipGroup } from "./categories";
+import { CATEGORY_ICON, CHIP_GROUPS, RARE_AFTER, RARE_ICON, type ChipGroup } from "./categories";
+
+/** The Rare chip: a filter on rarity, combined with the topics (AND). */
+export interface RareChip {
+  readonly on: boolean;
+  readonly onToggle: () => void;
+  /** Offered at all: three or more rare echoes in view, or on already. */
+  readonly offered: boolean;
+}
 
 interface KindProps {
   readonly on: ReadonlySet<EchoCategory>;
   readonly onToggle: (group: ChipGroup) => void;
   readonly onAll: () => void;
+  /**
+   * The topics with enough echoes in view to be offered (`CHIP_MIN_ECHOES`). Absent means
+   * every topic, as My Echoes has no area to count.
+   */
+  readonly offered?: ReadonlySet<EchoCategory>;
+  readonly rare?: RareChip;
+  /** "Philadelphia": the header line names where the count was taken. */
+  readonly area?: string;
 }
 
 const isAll = (on: ReadonlySet<EchoCategory>) =>
@@ -36,36 +52,61 @@ const picked = (on: ReadonlySet<EchoCategory>) =>
   isAll(on) ? [] : CHIP_GROUPS.filter((g) => g.categories.some((c) => on.has(c)));
 
 /**
- * All, then every kind, as chips that wrap: every option in view, none behind a scroll. With everything showing, All is the one lit tile and
- * the kinds sit unlit, as on the old strip: eight lit tiles would read as eight things
- * picked and invite a tap that narrows.
+ * All, then every topic with echoes around here, in two columns (the approved canvas,
+ * board "The 16 topics", 2026-11-12). With everything showing, All is the one lit tile and
+ * the topics sit unlit: fifteen lit tiles would read as fifteen things picked.
+ *
+ * Only what is near: a topic is offered when at least three of its echoes are in view
+ * (`offered`), so the panel is a list of what you can actually find here. A chip that is
+ * on never disappears while it is on, or there would be no way to turn it off.
  */
-export function KindGrid({ on, onToggle, onAll }: KindProps) {
+export function KindGrid({ on, onToggle, onAll, offered, rare, area }: KindProps) {
   const all = isAll(on);
-  return (
-    <div className="kind-chips" role="group" aria-label="Which echoes to show">
-      <button className={`chip chip-all${all ? " on" : ""}`} aria-pressed={all} onClick={onAll}>
+  const shown = CHIP_GROUPS.filter(
+    (g) => !offered || g.categories.some((c) => offered.has(c)) || (!all && g.categories.some((c) => on.has(c))),
+  );
+  const rareShown = !!rare && (rare.offered || rare.on);
+  const topic = (group: ChipGroup) => {
+    const lit = !all && group.categories.some((c) => on.has(c));
+    return (
+      <button
+        key={group.id}
+        className={`chip cat-${group.face}${lit ? " on" : ""}`}
+        aria-pressed={lit}
+        onClick={() => onToggle(group)}
+      >
         <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M5 12.5 L10 17.5 L19 7" />
+          {CATEGORY_ICON[group.face]}
         </svg>
-        All
+        {group.label}
       </button>
-      {CHIP_GROUPS.map((group) => {
-        const lit = !all && group.categories.some((c) => on.has(c));
-        return (
-          <button
-            key={group.id}
-            className={`chip cat-${group.face}${lit ? " on" : ""}`}
-            aria-pressed={lit}
-            onClick={() => onToggle(group)}
-          >
+    );
+  };
+  // Rare after the first four of the panel's order, wherever those four are in what shows.
+  const before = shown.filter((g) => CHIP_GROUPS.indexOf(g) < RARE_AFTER);
+  const after = shown.filter((g) => CHIP_GROUPS.indexOf(g) >= RARE_AFTER);
+  return (
+    <div className="kind-panel">
+      {area !== undefined && <div className="kind-head">{area ? `Around here, ${area}` : "Around here"}</div>}
+      <div className="kind-chips" role="group" aria-label="Which echoes to show">
+        <button className={`chip chip-all${all && !rare?.on ? " on" : ""}`} aria-pressed={all && !rare?.on} onClick={onAll}>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12.5 L10 17.5 L19 7" />
+          </svg>
+          All
+        </button>
+        {before.map(topic)}
+        {rareShown && (
+          <button className={`chip cat-rare${rare.on ? " on" : ""}`} aria-pressed={rare.on} onClick={rare.onToggle}>
             <svg viewBox="0 0 24 24" aria-hidden="true">
-              {CATEGORY_ICON[group.face]}
+              {RARE_ICON}
             </svg>
-            {group.label}
+            Rare
           </button>
-        );
-      })}
+        )}
+        {after.map(topic)}
+      </div>
+      {offered && <p className="kind-note">Only topics with echoes around here show. Move the map and the list changes.</p>}
     </div>
   );
 }
@@ -78,7 +119,7 @@ interface PickerProps extends KindProps {
   readonly onOpenChange?: (open: boolean) => void;
 }
 
-export function KindPicker({ on, onToggle, onAll, count, open: openIn, onOpenChange }: PickerProps) {
+export function KindPicker({ on, onToggle, onAll, offered, rare, area, count, open: openIn, onOpenChange }: PickerProps) {
   const [openOwn, setOpenOwn] = useState(false);
   const open = openIn ?? openOwn;
   const setOpen = useCallback(
@@ -91,10 +132,14 @@ export function KindPicker({ on, onToggle, onAll, count, open: openIn, onOpenCha
   const tap = useRef<HTMLButtonElement | null>(null);
   const box = useRef<HTMLDivElement | null>(null);
 
-  const chosen = picked(on);
-  const all = chosen.length === 0;
-  const first = chosen[0];
-  const label = all ? "All echoes" : chosen.length === 1 ? first!.label : `${first!.label} +${chosen.length - 1}`;
+  const topics = picked(on);
+  const rareOn = !!rare?.on;
+  // Rare counts as one more thing picked, said after the topics: "History + Rare" reads
+  // as "+1"; with no topic picked it is "Rare" alone.
+  const names = [...topics.map((g) => g.label), ...(rareOn ? ["Rare"] : [])];
+  const all = names.length === 0;
+  const first = topics[0];
+  const label = all ? "All echoes" : names.length === 1 ? names[0]! : `${names[0]} +${names.length - 1}`;
 
   /*
    * A tap anywhere else closes it, on the way down, so the tap that closes it does not also
@@ -133,13 +178,13 @@ export function KindPicker({ on, onToggle, onAll, count, open: openIn, onOpenCha
         aria-label={
           all
             ? "Echoes showing: all"
-            : `Echoes showing: ${chosen.map((g) => g.label).join(", ")}${count === undefined ? "" : `, ${count}`}`
+            : `Echoes showing: ${names.join(", ")}${count === undefined ? "" : `, ${count}`}`
         }
       >
         {/* Everything on says so in words, "All echoes", as the map board draws it. */}
         {!all && (
-          <svg className={`kind-glyph cat-${first!.face}`} viewBox="0 0 24 24" aria-hidden="true">
-            {CATEGORY_ICON[first!.face]}
+          <svg className={`kind-glyph cat-${first ? first.face : "rare"}`} viewBox="0 0 24 24" aria-hidden="true">
+            {first ? CATEGORY_ICON[first.face] : RARE_ICON}
           </svg>
         )}
         <span className="kind-label">{label}</span>
@@ -153,7 +198,7 @@ export function KindPicker({ on, onToggle, onAll, count, open: openIn, onOpenCha
       {/* Below the whole map bar, its full width: one box, every kind in view. */}
       {open && (
         <div className="kind-box" id="kind-box" ref={box}>
-          <KindGrid on={on} onToggle={onToggle} onAll={onAll} />
+          <KindGrid on={on} onToggle={onToggle} onAll={onAll} offered={offered} rare={rare} area={area} />
         </div>
       )}
     </>

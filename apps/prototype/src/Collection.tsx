@@ -32,7 +32,7 @@ import { CATEGORY_ICON, CATEGORY_LABEL, toggleCategories, ALL_CATEGORIES, type C
 import { KindPicker } from "./KindPicker";
 import { platePng } from "./archive-plate";
 import { truthFor } from "./TruthMark";
-import { dayLabel, isRareFind, minutesLabel, placeOf, rareFindCount, shortPlace } from "./my-echoes";
+import { dayLabel, isRareFind, minutesLabel, placeOf, rareFindCount, rareWhy, shortPlace } from "./my-echoes";
 
 interface Props {
   readonly captured: readonly CaptureEvent[];
@@ -295,10 +295,9 @@ export function Collection({
         <>
           {/*
             Three numbers, because progress belongs on the screen you look things up on
-            rather than the one you walk with. Rare finds are rare and singular together
-            (`rarityOf`): far off the usual walk, open only some hours, or inside. Scarce on
-            purpose; lowering the thresholds to light it up would be assigning rarity
-            rather than earning it.
+            rather than the one you walk with. Rare finds are rare and extra rare together
+            (`rarityOf`), hand picked with a reason since 2026-11-12
+            (docs/adr/0021-topics-and-rare.md).
           */}
           <div className="me-tiles">
             <div className="me-tile">
@@ -334,8 +333,8 @@ export function Collection({
                     <EchoCharacter face="calling" r={46} uid="me-rare-echo" detail={false} />
                   </svg>
                   <div className="me-rare-words">
-                    <b>Rare finds are hard to reach</b>
-                    <p>Far off the usual walk, open only some hours, or inside somewhere.</p>
+                    <b>Rare finds take some finding</b>
+                    <p>Picked by hand: inside with opening hours, only at certain times, hard to reach, or easy to miss.</p>
                     <div className="me-rare-acts">
                       {rareOnly ? (
                         <button
@@ -583,7 +582,12 @@ function Meta({ echo, when, playing = false }: { echo: Echo; when?: Date; playin
   else if (when) parts.push(<span key="when" className="me-day">{dayLabel(when)}</span>);
   if (truth === "legend") parts.push(<span key="truth" className="truth truth-legend">Legend</span>);
   if (truth === "disputed") parts.push(<span key="truth" className="truth truth-disputed">Disputed</span>);
-  if (isRareFind(echo)) parts.push(<span key="rare" className="me-rare">Rare find</span>);
+  if (isRareFind(echo))
+    parts.push(
+      <span key="rare" className="me-rare" title={rareWhy(echo) ?? undefined}>
+        Rare find
+      </span>,
+    );
   return (
     <span className="entry-meta">
       {/* The dot rides at the end of each part, so a wrapped line never starts with one. */}

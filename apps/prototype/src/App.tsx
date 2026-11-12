@@ -5,11 +5,11 @@ import { testPositionFrom } from "./test-position";
 import { count } from "./analytics";
 import { takeSharedEcho } from "./share";
 import { LIBRARY, ROUTES } from "./library.generated";
-import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
+import { ALL_CATEGORIES, CHIP_MIN_ECHOES, toggleCategories, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { BASE_ZOOM, MIN_ZOOM, RouteMap, type PinState } from "./RouteMap";
-import { AreaCard, AREACARD_H, AREACARD_OVER_BAR } from "./AreaCard";
+import { AreaCard, AREACARD_H, AREACARD_OVER_BAR, areaName } from "./AreaCard";
 import { Collection } from "./Collection";
 import { IndexedDbCollection } from "./collection-store";
 import { Privacy } from "./Privacy";
@@ -85,6 +85,7 @@ import {
   startCheckout,
 } from "./payments";
 import { addHeard, readHeard } from "./heard-store";
+import { isRareFind } from "./my-echoes";
 import type { CaptureEvent, CaptureRecord, Echo, EchoCategory, TravelMode } from "@echofinders/core";
 import {
   planWalk,
@@ -334,6 +335,8 @@ export function App() {
    * library rather than nothing.
    */
   const [cats, setCats] = useState<ReadonlySet<EchoCategory> | null>(null);
+  /** The Rare chip: only rare and extra rare echoes, among the topics picked (AND). */
+  const [rareOnly, setRareOnly] = useState(false);
   /*
    * The map is the app, so the map is what opens.
    *
@@ -880,6 +883,7 @@ export function App() {
     // The plan's picks belong to the journey they were made for. What is saved stays.
     setChosen(new Set());
     setCats(null);
+    setRareOnly(false);
     setOverview(false);
   };
 
@@ -1284,6 +1288,11 @@ export function App() {
    * category that does not exist.
    */
   const activeCats = cats ?? ALL_CATEGORIES;
+  /** What the panel lets through: a picked topic, and rare when Rare is on. */
+  const shows = useCallback(
+    (e: Echo) => activeCats.has(e.category) && (!rareOnly || isRareFind(e)),
+    [activeCats, rareOnly],
+  );
 
   /*
    * Hoisted and made stable, and not for tidiness.
@@ -1311,7 +1320,11 @@ export function App() {
    * It toggled to none when everything was on, which made the one reset button empty the
    * map. "Just this one" is now a single tap on that chip, so All only ever means all.
    */
-  const allCategories = useCallback(() => setCats(null), []);
+  const allCategories = useCallback(() => {
+    setCats(null);
+    setRareOnly(false);
+  }, []);
+  const toggleRare = useCallback(() => setRareOnly((on) => !on), []);
   /** "Saved to My echoes": which echo was just saved, for the toast that says where it went. */
   const [savedToast, setSavedToast] = useState<string | null>(null);
   // Leaving the map lets it go, so it does not come back on the way in again.
@@ -1387,10 +1400,10 @@ export function App() {
   const nearby = useMemo(() => {
     const at = (id: string) => alongKm.get(id) ?? Number.POSITIVE_INFINITY;
     return state.nearby
-      .filter((n) => activeCats.has(n.echo.category))
+      .filter((n) => shows(n.echo))
       .slice()
       .sort((a, b) => at(a.echo.id) - at(b.echo.id));
-  }, [state.nearby, activeCats, alongKm]);
+  }, [state.nearby, shows, alongKm]);
 
   /**
    * The echo whose pin is open, and how far off it is.
@@ -1463,22 +1476,55 @@ export function App() {
    * dot goes in on that town, and with no location the engine's nearby list is empty.
    */
   const everything = farOut || (roaming && country && !overview && !lookAt && !plan);
-  const onMap = useMemo(
+  /** The area's echoes before the panel's filter: what the topic chips are counted from. */
+  const inArea = useMemo(
     () =>
       roaming
-        ? (overview
-            ? overviewEchoes
-            : lookAt
-              ? LIBRARY.filter((e) => distanceKm(lookAt.at, e.point.at) <= LOOK_RADIUS_KM)
-              : everything
-                ? LIBRARY
-                : state.nearby.map((n) => n.echo)
-          ).filter((e) => activeCats.has(e.category))
-        : onRoute.filter((e) => activeCats.has(e.category)),
-    [roaming, overview, overviewEchoes, lookAt, everything, state.nearby, activeCats, onRoute],
+        ? overview
+          ? overviewEchoes
+          : lookAt
+            ? LIBRARY.filter((e) => distanceKm(lookAt.at, e.point.at) <= LOOK_RADIUS_KM)
+            : everything
+              ? LIBRARY
+              : state.nearby.map((n) => n.echo)
+        : onRoute,
+    [roaming, overview, overviewEchoes, lookAt, everything, state.nearby, onRoute],
   );
-  /** Zoomed out, the echoes on screen, for the card that counts them (`AreaCard`). */
-  const [inView, setInView] = useState<readonly Echo[]>([]);
+  const onMap = useMemo(() => inArea.filter(shows), [inArea, shows]);
+  /**
+   * The echoes on screen, before the filter. The zoomed-out card counts what the filter
+   * lets through (`AreaCard`, as before); the panel counts the lot, so picking History does
+   * not take every other topic out of the list (`KindGrid`).
+   */
+  const [inViewAll, setInView] = useState<readonly Echo[]>([]);
+  const inView = useMemo(() => inViewAll.filter(shows), [inViewAll, shows]);
+  /**
+   * Show only what is near (James, 2026-11-12): the topics with at least three echoes in
+   * the area, and Rare on the same rule. "All" always shows; a chip that is on stays.
+   *
+   * The area is what the zoomed-out card counts (`inViewAll`, the echoes on screen) when
+   * that card is up. Zoomed in, the screen holds a street and a handful of pins, and
+   * counting only those offered Philadelphia nothing but History (and the engine's reach,
+   * 30 echoes, only History and Wonders). There the area is the city around where the map
+   * is looking: exploring, what the whole-thing button frames (`overviewEchoes`, a city
+   * centre and its edges); a searched place, its echoes; on a journey, the route.
+   */
+  const chipSource = farOut ? inViewAll : roaming && !lookAt ? overviewEchoes : inArea;
+  const offeredTopics = useMemo(() => {
+    const n = new Map<EchoCategory, number>();
+    for (const e of chipSource) n.set(e.category, (n.get(e.category) ?? 0) + 1);
+    return new Set([...n].filter(([, c]) => c >= CHIP_MIN_ECHOES).map(([k]) => k));
+  }, [chipSource]);
+  const rareOffered = useMemo(() => chipSource.filter(isRareFind).length >= CHIP_MIN_ECHOES, [chipSource]);
+  const rareChip = useMemo(
+    () => ({ on: rareOnly, onToggle: toggleRare, offered: rareOffered }),
+    [rareOnly, toggleRare, rareOffered],
+  );
+  const panelArea = useMemo(() => {
+    const name = areaName(chipSource);
+    if (/^\d+ places$/.test(name)) return "";
+    return name.replace(/^Around /, "");
+  }, [chipSource]);
 
   /**
    * The same list, nearest first, which is the order the stepper moves in.
@@ -2197,6 +2243,9 @@ export function App() {
                   on={activeCats}
                   onToggle={toggleCategory}
                   onAll={allCategories}
+                  offered={offeredTopics}
+                  rare={rareChip}
+                  area={panelArea}
                 />
                 </div>
               </div>
@@ -2276,6 +2325,7 @@ export function App() {
                    keeps pins, edge markers and the Esri credit above it. */
                 reservedBottom={(showBar ? ECHOBAR_H : directing ? dirBarH : 0) + (farOut && !directing ? AREACARD_H + (showBar ? AREACARD_OVER_BAR : 0) : 0)}
                 onInView={setInView}
+                viewLibrary={inArea}
                 overview={overview}
                 progress={along}
                 theme={theme}
@@ -2775,7 +2825,7 @@ export function App() {
             <Viewfinder
               echo={camera}
               at={state.position.at}
-              nearby={onRoute.filter((e) => activeCats.has(e.category))}
+              nearby={onRoute.filter(shows)}
               onClose={() => setCamera(null)}
               onSelect={setCamera}
             />
