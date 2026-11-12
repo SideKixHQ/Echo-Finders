@@ -64,6 +64,23 @@ describe("the map's search", () => {
     expect(searchEchoes("28401", LIBRARY)).toEqual([]);
   });
 
+  // Houston is a City Pass city before its echoes are approved (2026-11-11), so these stand
+  // in for them: one downtown, one at Space Center Houston, 35km out and still Houston.
+  it("finds Houston as one city, by name and by what people type for it", () => {
+    const at = (id: string, lat: number, lng: number, place: string) =>
+      ({ ...LIBRARY[0]!, id, point: { ...LIBRARY[0]!.point, at: { lat, lng }, place } });
+    const houston = [
+      at("downtown", 29.76, -95.372, "Market Square, Houston, Texas"),
+      at("nasa", 29.5519, -95.0983, "Space Center Houston, 1601 NASA Parkway, Clear Lake, Texas"),
+    ];
+    for (const q of ["houston", "Houston", "htx", "h-town", "houston tx", "houston, texas"]) {
+      const hits = searchCities(q, new Map(), houston);
+      expect(hits.map((h) => h.label)).toEqual(["Houston"]);
+      expect(hits[0]?.pass).toBe(true);
+      expect(hits[0]?.detail).toBe("2 echoes");
+    }
+  });
+
   it("leaves the first run's list as it was", () => {
     expect(searchPlaces("boston", new Map(), LIBRARY).map((h) => h.label)[0]).toBe("Boston");
   });

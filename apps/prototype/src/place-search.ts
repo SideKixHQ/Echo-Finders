@@ -198,6 +198,7 @@ const ALIASES: Readonly<Record<string, readonly string[]>> = {
   "Washington, DC": ["dc", "d.c.", "washington"],
   "New Orleans": ["nola"],
   Philadelphia: ["philly"],
+  Houston: ["htx", "h-town", "houston tx", "houston, tx", "houston texas", "houston, texas"],
 };
 
 /** Near enough for "is anything within 25 km": flat-earth, which is fine at that range. */
