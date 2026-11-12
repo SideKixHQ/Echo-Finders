@@ -1,0 +1,125 @@
+# Drafted by Claude Code (2026-11-12) for the Boston literature and military pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The path around the granite walls of Fort Independence, Castle Island, South Boston. State park, open year round; the fort's interior opens only on scheduled days.
+# Position: About 80 m south west of the Overture "Fort Independence" point, on the walking loop outside the walls (medium confidence).
+id: boston-sealed-in-the-fort
+title: "Sealed in the Fort"
+summary: "Poe served at Fort Independence as a private in 1827. The soldiers told of a killer walled up alive. He later wrote The Cask of Amontillado."
+place: "Fort Independence, Castle Island, South Boston, Massachusetts"
+at: { lat: 42.33770, lng: -71.01180 }
+triggerRadiusKm: 0.1
+category: legend
+format: short
+durationS: 79
+visibility: landmark-visible
+certainty: legend
+certaintyNote: >-
+  The walling up is a legend. The National Park Service tells it as "the story" Poe heard at the fort and says it is "believed to have inspired" The Cask of Amontillado. WBUR (2024) names the duellists as Gustavus Drane and Robert F. Massie and says Drane "was a real person" but "didn't actually meet his end this way". CBS Boston calls the tale "not entirely true". Poe's service at the fort under an assumed name is documented by the park service. Its two pages disagree on the year he enlisted (1826 on the Castle Island page, 26 May 1827 on the Poe page); the script follows the Poe page.
+voice: wC1005J19tvhoqqC2hkf
+minAge: 10
+quality: 0.85
+tags: [boston, south-boston, castle-island, fort-independence, poe, legend, military, books]
+teaser: "The soldiers told a story about a man sealed into the walls. One private wrote it down, years later."
+script: |
+  Walk along the granite walls of Fort Independence. In eighteen twenty seven, a private was posted here under a false name. Edgar A. Perry. He had lied about his age as well.
+
+  He was really Edgar Allan Poe. Eighteen, broke, and five months from sailing south with his battery.
+
+  This is a legend, and here is how it goes.
+
+  The soldiers at the fort told a story from ten years before. On Christmas Day, eighteen seventeen, two lieutenants quarrelled over a game of cards. They fought a duel. The less popular one killed the other.
+
+  The dead man's friends wanted revenge. So, the story goes, they got the killer drunk, led him into a chamber, and sealed him inside. And left him there to die.
+
+  Nearly twenty years later, Poe published his own version of the tale, set in Italy. The Cask of Amontillado.
+
+  Was any of it true? The man said to have been walled up, Gustavus Drane, was real. He did not die that way.
+
+  The walls in front of you were rebuilt after Poe left. The story was not. He took it with him.
+pronunciations:
+  - written: "Amontillado"
+    say: "ah-mon-tee-YAH-doh"
+  - written: "Gustavus Drane"
+    say: "gus-TAY-vus DRAYN"
+detail: >-
+  The National Park Service page on Castle Island gives Poe enlisting as "Edgar A. Perry", his five months on the island, the 1817 duel over a Christmas Day card game, the less popular lieutenant killing the other, the friends sealing the killer in a vault, the 1846 story it is believed to have inspired, and the rebuilding of the fort from 1833. The park service page on Poe gives his enlistment on 26 May 1827 under an assumed name, his lie about his age (he claimed 22 and was 18), Battery H at Fort Independence, its orders south on 31 October 1827, and that he was unable to support himself. WBUR (2024) gives Drane and Massie, the drink and the chamber, the story set in Italy, and that Drane did not die this way. CBS Boston gives the five months and "not entirely true". Male narrator per casting for legend.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "In eighteen twenty seven, a private was posted here under a false name."
+    source: 2
+    quote: "Poe enlisted as a private in the US Army on May 26, 1827 for a five year term. He entered under an assumed name and lied about his age"
+  - says: "Edgar A. Perry."
+    source: 1
+    quote: "In 1826, 18-year-old Edgar Allan Poe enlisted in the military under the name \"Edgar A. Perry.\""
+  - says: "He had lied about his age as well."
+    source: 2
+    quote: "He entered under an assumed name and lied about his age, claiming to be 22 years old when he was only 18."
+  - says: "Eighteen, broke, and five months from sailing south with his battery."
+    source: 2
+    quote: "Unable to support himself, and receiving little assistance from his foster father"
+  - says: "Eighteen, broke, and five months from sailing south with his battery."
+    source: 1
+    quote: "Poe spent five months on Castle Island."
+  - says: "Eighteen, broke, and five months from sailing south with his battery."
+    source: 2
+    quote: "On October 31, 1827 Battery H was ordered to Fort Moultrie to protect Charleston Harbor."
+  - says: "The soldiers at the fort told a story from ten years before."
+    source: 1
+    quote: "While at Fort Independence, Poe heard the story of a duel that had occurred in 1817."
+  - says: "On Christmas Day, eighteen seventeen, two lieutenants quarrelled over a game of cards."
+    source: 1
+    quote: "two lieutenants argued over a card game on Christmas day."
+  - says: "They fought a duel."
+    source: 1
+    quote: "After agreeing to a duel, the less popular lieutenant killed the other."
+  - says: "The less popular one killed the other."
+    source: 1
+    quote: "After agreeing to a duel, the less popular lieutenant killed the other."
+  - says: "So, the story goes, they got the killer drunk, led him into a chamber, and sealed him inside."
+    source: 3
+    quote: "They decided to get Drane drunk, lure him into a chamber and seal him inside, leaving him to die."
+  - says: "So, the story goes, they got the killer drunk, led him into a chamber, and sealed him inside."
+    source: 1
+    quote: "In retaliation, the dead lieutenant’s friends sealed the killer in a vault."
+  - says: "Nearly twenty years later, Poe published his own version of the tale, set in Italy."
+    source: 3
+    quote: "Poe later published a version of the tale set in Italy, “The Cask of Amontillado,” in 1846."
+  - says: "The Cask of Amontillado."
+    source: 1
+    quote: "This story is believed to have inspired Poe’s 1846 short story The Cask of Amontillado."
+  - says: "The man said to have been walled up, Gustavus Drane, was real."
+    source: 3
+    quote: "(While Drane was a real person, he didn’t actually meet his end this way.)"
+  - says: "He did not die that way."
+    source: 3
+    quote: "(While Drane was a real person, he didn’t actually meet his end this way.)"
+  - says: "He did not die that way."
+    source: 4
+    quote: "That tale, while not entirely true, was believed to be behind Poe's \"The Cask of Amontillado.\""
+  - says: "The walls in front of you were rebuilt after Poe left."
+    source: 1
+    quote: "construction on Fort Independence began in 1833 and took nearly twenty years to finish."
+  - says: "He was really Edgar Allan Poe."
+    source: 1
+    quote: "In 1826, 18-year-old Edgar Allan Poe enlisted in the military under the name \"Edgar A. Perry.\""
+sources:
+  - title: "Castle Island"
+    publisher: "National Park Service, Boston Harbor Islands"
+    url: https://www.nps.gov/places/castle-island.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Edgar Allan Poe"
+    publisher: "National Park Service"
+    url: https://www.nps.gov/people/edgarallanpoe.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Journey if you dare: 5 historically haunted spots in Boston"
+    publisher: "WBUR"
+    url: https://www.wbur.org/news/2024/10/25/boston-haunted-locations-green-line-ghosts-witches-harbor-islands-newsletter
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "5 Things You Didn't Know About South Boston"
+    publisher: "CBS Boston"
+    url: https://www.cbsnews.com/boston/news/5-things-you-didnt-know-about-south-boston/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts

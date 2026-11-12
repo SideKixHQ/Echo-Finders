@@ -1,0 +1,100 @@
+# Drafted by Claude Code (2026-11-12) for the Boston military pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The corner of Cambridge and North Russell streets, West End. The National Park Service story map pins the first stop of Eli George Biddle's story here, on 14 February 1863.
+# Position: Cambridge Street at the North Russell Street corner, from the Overture Cambridge Street segments and the Irving Street junction opposite (medium confidence; the north side corner was placed by the street grid, not surveyed).
+id: boston-the-boy-who-would-not-sing
+title: "The Boy Who Would Not Sing"
+summary: "In 1863 a Black teenager in Boston refused to sing My Country, 'Tis of Thee at school, walked out, and joined the 54th Massachusetts."
+place: "Corner of Cambridge and North Russell streets, West End, Boston, Massachusetts"
+at: { lat: 42.36130, lng: -71.06630 }
+triggerRadiusKm: 0.04
+category: history
+format: short
+durationS: 92
+visibility: position-only
+certainty: documented
+minAge: 8
+quality: 0.85
+tags: [boston, west-end, beacon-hill, 54th-massachusetts, civil-war, military, black-heritage-trail]
+teaser: "Every voice in the class joined the song but one. He went and enlisted instead."
+script: |
+  The National Park Service begins one soldier's story at this corner, on the fourteenth of February, eighteen sixty three.
+
+  His name was Eli George Biddle. He was about seventeen, a young Black man who worked as a painter. That day, at school, the class stood to sing My Country, 'Tis of Thee. Sweet land of liberty.
+
+  Every voice joined in but his. To him, the words did not ring true.
+
+  After a confrontation with his teacher, he walked out, and kept walking, until he reached a recruiting office for a new regiment, the Fifty fourth Massachusetts. He signed up for three years. Only nine men had signed before him.
+
+  That summer, at Fort Wagner in South Carolina, his company was at the head of the column. His gun was blown out of his hands. He crawled back through a ditch under fire, and reached his comrades with a severe wound in his shoulder.
+
+  Seventy five years later, at Gettysburg, he was one of ten old soldiers, Union and Confederate, chosen to shake hands across a stone wall. The Confederate across from him said: Many years ago you were shooting at me and I was shooting at you. Thank God we both missed.
+
+  He would not sing that it was a land of liberty. So he went and fought for it.
+pronunciations:
+  - written: "Biddle"
+    say: "BID-ul"
+detail: >-
+  Everything here comes from one National Park Service story map, Eli George Biddle: Faithful until the End, so the echo is single-source. It gives his birth around 1846, his work as a painter in Boston, the stop dated 14 February 1863 at the corner of Cambridge and North Russell streets, the refusal to sing "My Country Tis of Thee", the confrontation with his teacher, the walk to a recruiting location and enlistment for three years with only nine before him, Company A at the head of the column at Fort Wagner on 18 July 1863, his gun blown from his hands, the crawl back through the ditch and the shoulder wound (from a later newspaper interview the map quotes), and the 1938 Gettysburg reunion where Franklin Roosevelt chose ten Union and Confederate veterans to shake hands across the wall, with the Confederate's words as Biddle recalled them. A reviewer should note the map does not say whether this corner was his school or the recruiting office; the script says only that the park service begins his story here. "About seventeen" follows from the birth year, which the map gives as approximate. The last line is the script's reading.
+editorial: draft
+factCheck: single-source
+claims:
+  - says: "The National Park Service begins one soldier's story at this corner, on the fourteenth of February, eighteen sixty three."
+    source: 1
+    quote: "February 14, 1863: Corner of Cambridge and North Russell Streets, Boston, Massachusetts"
+  - says: "His name was Eli George Biddle."
+    source: 1
+    quote: "On February 14, 1863, Eli George Biddle attended school like every other day that year."
+  - says: "He was about seventeen, a young Black man who worked as a painter."
+    source: 1
+    quote: "Born in Black Rock, Pennsylvania around 1846"
+  - says: "He was about seventeen, a young Black man who worked as a painter."
+    source: 1
+    quote: "At that time, he worked as a painter."
+  - says: "That day, at school, the class stood to sing My Country, 'Tis of Thee."
+    source: 1
+    quote: "As part of their lessons, the students gathered to sing “My Country Tis of Thee.”"
+  - says: "Every voice joined in but his."
+    source: 1
+    quote: "All but one voice joined in song. Biddle refused to participate."
+  - says: "To him, the words did not ring true."
+    source: 1
+    quote: "To him as a young Black man, the claim of America as a “sweet land of liberty” did not ring true."
+  - says: "After a confrontation with his teacher, he walked out, and kept walking, until he reached a recruiting office for a new regiment, the Fifty fourth Massachusetts."
+    source: 1
+    quote: "After a confrontation with his teacher, Biddle left the school and started walking the streets of Boston.[2] He soon arrived at a recruiting location for the newly established 54th Massachusetts Regiment and enlisted for three years."
+  - says: "He signed up for three years."
+    source: 1
+    quote: "enlisted for three years"
+  - says: "Only nine men had signed before him."
+    source: 1
+    quote: "Only nine other individuals had signed up before Biddle"
+  - says: "That summer, at Fort Wagner in South Carolina, his company was at the head of the column."
+    source: 1
+    quote: "Biddle and Company A took their place at the head of the column on the far end of the right wing."
+  - says: "His gun was blown out of his hands."
+    source: 1
+    quote: "Biddle had his gun blown out of his hands from a nearby explosion."
+  - says: "He crawled back through a ditch under fire, and reached his comrades with a severe wound in his shoulder."
+    source: 1
+    quote: "Stealthily he wormed his way across the ground until he came to the ditch."
+  - says: "He crawled back through a ditch under fire, and reached his comrades with a severe wound in his shoulder."
+    source: 1
+    quote: "At last, however, he reached his comrades with a severe wound in his shoulder."
+  - says: "Seventy five years later, at Gettysburg, he was one of ten old soldiers, Union and Confederate, chosen to shake hands across a stone wall."
+    source: 1
+    quote: "President Franklin Delano Roosevelt chose 10 veterans from the United States Army and Confederate troops to shake hands across the stone wall on Cemetery Ridge, including Eli George Biddle."
+  - says: "Seventy five years later, at Gettysburg, he was one of ten old soldiers, Union and Confederate, chosen to shake hands across a stone wall."
+    source: 1
+    quote: "That year, the country commemorated the 75th anniversary of the Battle of Gettysburg."
+  - says: "The Confederate across from him said: Many years ago you were shooting at me and I was shooting at you."
+    source: 1
+    quote: "Biddle recalled later in life that the former confederate said: “Many years ago you were shooting at me and I was shooting at you. Thank God we both missed.”"
+  - says: "Thank God we both missed."
+    source: 1
+    quote: "Thank God we both missed."
+sources:
+  - title: "Eli George Biddle: Faithful until the End"
+    publisher: "National Park Service, Boston African American National Historic Site"
+    url: https://www.nps.gov/articles/000/eli-george-biddle-storymap.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain

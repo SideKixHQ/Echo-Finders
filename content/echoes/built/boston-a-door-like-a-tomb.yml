@@ -1,0 +1,103 @@
+# Drafted by Claude Code (2026-11-12) for the Boston inventions and firsts pass, following docs/writing-echoes.md (format v2).
+# Listening spot: The sidewalk by the granite entrance kiosks of Boylston station, on the Boston Common side of the corner of Boylston and Tremont streets. The Central Burying Ground is about 110 m west along Boylston Street.
+# Position: Corner of Boylston and Tremont streets on the Common side, from the Overture path segments of the Lafayette Mall beside the kiosks (medium confidence).
+id: boston-a-door-like-a-tomb
+title: "A Door Like a Tomb"
+summary: "America's first subway opened here in 1897. Its kiosks were mocked as mausoleums, and digging it moved 910 bodies."
+place: "Boylston station entrance, Tremont Street subway, corner of Boylston and Tremont streets, Boston, Massachusetts"
+at: { lat: 42.35290, lng: -71.06460 }
+triggerRadiusKm: 0.04
+category: built
+format: short
+durationS: 76
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.8
+tags: [boston, boston-core, boston-common, subway, mbta, green-line, firsts, burying-ground]
+teaser: "When it opened, people said the subway entrance looked like a mausoleum. They did not know the half of it."
+script: |
+  Look at the small granite entrance to Boylston station, at the corner of the Common. When it was new, critics said it resembled a mausoleum.
+
+  They had more of a point than they knew.
+
+  Below Tremont Street is the first subway in America. Ground was broken in eighteen ninety five. On the first of September, eighteen ninety seven, the first stretch opened, from the Public Garden to Park Street. Only four cities in the world had a subway before it.
+
+  But the digging ran along the old Central Burying Ground, a short walk west of here, on the Boylston Street side of the Common.
+
+  And the crews found people. Ninety in their tombs, undisturbed. About eight hundred and twenty more, crushed, or piled, or scattered in pieces through the ground.
+
+  Crowds came to watch. An undertaker was hired to bury them again.
+
+  The kiosk in front of you is essentially as it was built, and still in use, on what is now the Green Line.
+
+  America's first subway goes down past a graveyard, through a door that looks like a tomb.
+detail: >-
+  The National Historic Landmark nomination for the Tremont Street Subway (National Park Service) gives ground broken on 28 March 1895, the Public Garden incline to Park Street segment opening on 1 September 1897, the first underground public transportation system in the United States and only the fifth in the world, the Classical Revival kiosks at Boylston and Park streets described as "resembling mausoleums", the Boylston kiosks "essentially unaltered", and the reinterment of 910 bodies exhumed from colonial burial grounds. WBUR (2024) independently gives the Central Burying Ground dug in 1756 along Boylston and Tremont streets, 90 bodies in undisturbed tombs and another 820 found crushed, piled or scattered, the crowds and the undertaker. The Boston Globe (2022) gives the MBTA's statement that the 1897 tunnel still connects the Green Line's Boylston and Park Street stations. "Only four cities had a subway before it" restates "fifth in the world"; the nomination names London, Glasgow and Paris among them.
+editorial: draft
+factCheck: corroborated
+claims:
+  - says: "When it was new, critics said it resembled a mausoleum."
+    source: 1
+    quote: "The Classical Revival structures at Boylston and Park Streets were described as \"resembling mausoleums\""
+  - says: "Below Tremont Street is the first subway in America."
+    source: 1
+    quote: "Boston's Tremont Street Subway was the first underground system for public transportation in the United States and only the fifth such system in the world."
+  - says: "Below Tremont Street is the first subway in America."
+    source: 3
+    quote: "On Sept. 1, 1897, the Tremont Street subway opened for service and became America’s first-ever subway tunnel, the MBTA tweeted."
+  - says: "Ground was broken in eighteen ninety five."
+    source: 1
+    quote: "Ground was broken for the Tremont Street Subway on March 28, 1895."
+  - says: "On the first of September, eighteen ninety seven, the first stretch opened, from the Public Garden to Park Street."
+    source: 1
+    quote: "The segment between the Public Garden incline and the Park Street terminal went into operation on September 1, 1897"
+  - says: "Only four cities in the world had a subway before it."
+    source: 1
+    quote: "only the fifth such system in the world"
+  - says: "But the digging ran along the old Central Burying Ground, a short walk west of here, on the Boylston Street side of the Common."
+    source: 2
+    quote: "the Central Burying Ground, a mass grave considered an undesirable resting place for Bostonians at the time, was dug along Boylston and Tremont streets."
+  - says: "But the digging ran along the old Central Burying Ground, a short walk west of here, on the Boylston Street side of the Common."
+    source: 2
+    quote: "When they started digging up Tremont Street in order to build the train in 1895"
+  - says: "Ninety in their tombs, undisturbed."
+    source: 2
+    quote: "It is estimated workers uncovered 90 bodies in undisturbed tombs"
+  - says: "About eight hundred and twenty more, crushed, or piled, or scattered in pieces through the ground."
+    source: 2
+    quote: "while another 820 bodies were discovered in other circumstances — crushed beneath debris, underground (but outside of the tomb) in piles or scattered in parts."
+  - says: "About eight hundred and twenty more, crushed, or piled, or scattered in pieces through the ground."
+    source: 1
+    quote: "reinterment of the remains of 910 bodies exhumed as the excavators worked their way through colonial burial grounds."
+  - says: "Crowds came to watch."
+    source: 2
+    quote: "The construction drew crowds, who were fascinated by the horrific sight of human remains strewn across the site."
+  - says: "An undertaker was hired to bury them again."
+    source: 2
+    quote: "An undertaker had to be hired to respectfully rebury the salvageable remains."
+  - says: "The kiosk in front of you is essentially as it was built, and still in use, on what is now the Green Line."
+    source: 1
+    quote: "Boylston Street Station and the entrance and exit kiipsks at both Park and Boyston Street are essentially unaltered."
+  - says: "The kiosk in front of you is essentially as it was built, and still in use, on what is now the Green Line."
+    source: 3
+    quote: "This historic landmark is still used today connecting the Green Line’s Boylston & Park Street stations"
+  - says: "America's first subway goes down past a graveyard, through a door that looks like a tomb."
+    source: 1
+    quote: "reinterment of the remains of 910 bodies exhumed as the excavators worked their way through colonial burial grounds."
+sources:
+  - title: "Tremont Street Subway. National Register of Historic Places Inventory, Nomination Form (National Historic Landmark)"
+    publisher: "National Park Service"
+    url: https://npgallery.nps.gov/NRHP/GetAsset/NHLS/66000788_text
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Journey if you dare: 5 historically haunted spots in Boston"
+    publisher: "WBUR"
+    url: https://www.wbur.org/news/2024/10/25/boston-haunted-locations-green-line-ghosts-witches-harbor-islands-newsletter
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "America's first subway opened in Boston 125 years ago on Sept. 1"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/2022/09/01/metro/americas-first-subway-opened-boston-125-years-ago-sept-1/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
