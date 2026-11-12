@@ -18,7 +18,7 @@ prototype shows these three offers; nothing charges money yet.
 | Week Pass | **$3.99 for 7 days** from purchase. One city. Counts towards its City Pass while it runs ($6.00 more) |
 | City Pass | **$9.99 once.** One city, for good, including echoes added there later |
 | All-Access | **$34.99 a year.** Every city, road trip and flight. Renews; cancel any time |
-| Checkout | Web only (Stripe, with Apple Pay and Google Pay). No App Store purchases |
+| Checkout | The website: Stripe, with Apple Pay and Google Pay. The iPhone app: the App Store, below |
 | Floor | No lifetime plan at launch. The old $4.99 floor gave way to the Week Pass (James, 2026-11-06): a beach weekend at an impulse price, with the City Pass at 2.5 times it still the better buy for a longer stay |
 
 The $6.99 lifetime unlock is retired. It priced under every comparable product (single
@@ -39,6 +39,26 @@ The shape is still the right one for this product: an echo costs an hour to rese
 verify and write, and then serves thousands of people for almost nothing. Produce once,
 sell many times. Ten free is enough to be a real walk rather than a demo, which is what
 makes the payment a decision about more rather than a toll gate.
+
+## In the iPhone app (James, 2026-11-11)
+
+The native iPhone app sells the same three passes through the App Store, because Apple
+requires it for digital content used in the app. Bundle `com.echofinders.app`; the product
+ids are fixed for good:
+
+| Product id | Type | Price | Opens |
+|---|---|---|---|
+| `com.echofinders.app.allaccess.yearly` | auto-renewable, group "Echo Finders", 1 year | $34.99 | every echo everywhere |
+| `com.echofinders.app.weekpass` | non-renewing subscription | $3.99 | the place chosen at purchase, 7 days |
+| `com.echofinders.app.city.<id>` | non-consumable, one per city (`cape_fear`, `washington_dc`, `philadelphia`, `new_york`, `savannah`, `charleston`, `new_orleans`, `boston`, `houston`) | $9.99 | every echo in that place, kept |
+
+Rules: the app never links to the website's checkout; a Week Pass bought in the app does not
+count towards a City Pass (the $6.00 upgrade is the website's); a pass bought on the website
+opens in the app too, restored by the email and receipt number (`/api/restore`). The app's
+half is `apps/ios/src/purchases/`: StoreKit 2 through expo-iap, mapped onto the engine's
+`Entitlement`, so what is locked is decided here exactly as on the web. A Week Pass carries
+its place in the transaction itself (`appAccountToken`), so it comes back after a reinstall
+and on another phone on the same Apple Account.
 
 ## What 80% margin takes
 

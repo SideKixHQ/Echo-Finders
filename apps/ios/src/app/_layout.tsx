@@ -1,5 +1,6 @@
 /**
- * The native app's root: fonts, the one narrator, the walk that hands it echoes, and a
+ * The native app's root: fonts, the one narrator, the passes that say what it may play, the
+ * walk that hands it echoes, and a
  * stack holding the three tabs with an echo's card presented over them.
  *
  * Only the native build reaches this file. `index.ts` sends the WebView test shell build
@@ -22,6 +23,7 @@ import { SpaceGrotesk_400Regular } from "@expo-google-fonts/space-grotesk/400Reg
 import { SpaceGrotesk_500Medium } from "@expo-google-fonts/space-grotesk/500Medium";
 import { NarratorProvider } from "../player";
 import { PacksProvider } from "../packs/PacksProvider";
+import { PurchasesProvider } from "../purchases/PurchasesProvider";
 import { WalkProvider } from "../walk/WalkProvider";
 // The map's planner: packs save the map's files too, so it draws with no signal.
 import "../mapPacks";
@@ -48,21 +50,24 @@ export default function RootLayout() {
 
   return (
     <NarratorProvider>
-      <WalkProvider>
-        <PacksProvider>
-          <StatusBar style="light" />
-          <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: color.space } }}>
-            <Stack.Screen name="(tabs)" />
-            <Stack.Screen name="echo/[id]" options={{ presentation: "modal" }} />
-            {/* Download packs: Settings › Offline echoes, and the sheet before a trip. */}
-            <Stack.Screen name="offline" />
-            <Stack.Screen
-              name="trip/[id]"
-              options={{ presentation: "transparentModal", animation: "fade", contentStyle: { backgroundColor: "transparent" } }}
-            />
-          </Stack>
-        </PacksProvider>
-      </WalkProvider>
+      {/* Passes: inside the narrator (it counts what is heard), above the walk (which asks). */}
+      <PurchasesProvider>
+        <WalkProvider>
+          <PacksProvider>
+            <StatusBar style="light" />
+            <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: color.space } }}>
+              <Stack.Screen name="(tabs)" />
+              <Stack.Screen name="echo/[id]" options={{ presentation: "modal" }} />
+              {/* Download packs: Settings › Offline echoes, and the sheet before a trip. */}
+              <Stack.Screen name="offline" />
+              <Stack.Screen
+                name="trip/[id]"
+                options={{ presentation: "transparentModal", animation: "fade", contentStyle: { backgroundColor: "transparent" } }}
+              />
+            </Stack>
+          </PacksProvider>
+        </WalkProvider>
+      </PurchasesProvider>
     </NarratorProvider>
   );
 }

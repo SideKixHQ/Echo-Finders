@@ -23,6 +23,7 @@ import * as Location from "expo-location";
 import { activateKeepAwakeAsync, deactivateKeepAwake } from "expo-keep-awake";
 import { screenAwake } from "@echofinders/core";
 import { useNarrator } from "../player";
+import { usePurchases } from "../purchases/PurchasesProvider";
 import {
   FRESH_LADDER,
   NO_LOCATION_LINE,
@@ -56,21 +57,24 @@ const KEEP_AWAKE_TAG = "echo-finders-walk";
 
 export function WalkProvider({ children }: { children: ReactNode }) {
   const { offer, moved } = useNarrator();
+  const { isLocked } = usePurchases();
   const [mode, setMode] = useState<WalkMode>("off");
   const [note, setNote] = useState<string | null>(null);
   const [explaining, setExplaining] = useState(false);
   const [active, setActive] = useState(AppState.currentState === "active");
   const busy = useRef(false);
 
-  // The narrator's calls, current, for a task that runs outside React.
-  const handsRef = useRef({ offer, moved });
+  // The narrator's calls, current, for a task that runs outside React. An echo no pass
+  // opens past the free ten is not handed over: the walk goes quietly on, as the web's
+  // play gate does, and the echo's card offers the passes when it is opened.
+  const handsRef = useRef({ offer, moved, isLocked });
   useEffect(() => {
-    handsRef.current = { offer, moved };
-  }, [offer, moved]);
+    handsRef.current = { offer, moved, isLocked };
+  }, [offer, moved, isLocked]);
   useEffect(
     () =>
       attachNarrator({
-        offer: (echo) => handsRef.current.offer(echo),
+        offer: (echo) => (handsRef.current.isLocked(echo) ? null : handsRef.current.offer(echo)),
         moved: (at) => handsRef.current.moved(at),
       }),
     [],

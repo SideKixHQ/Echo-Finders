@@ -52,7 +52,8 @@
         }
       ],
       "@maplibre/maplibre-react-native",
-      "./plugins/withoutBackgroundFetch"
+      "./plugins/withoutBackgroundFetch",
+      "expo-iap"
     ]
   }
 }

@@ -5,6 +5,10 @@
  * colour, the title, the place, the length, the teaser. The player under it plays the
  * rendered narration through the app's one narrator, so it carries on when the card is
  * closed or the screen is locked, with Now Playing controls on the lock screen.
+ *
+ * Past the free ten, an echo no pass opens shows the paywall in the card's place
+ * (`purchases/Paywall.tsx`). Whether it is locked is the engine's answer (`isLocked`); once
+ * a pass is bought the same card turns into the player.
  */
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
@@ -14,12 +18,15 @@ import { clock, useNarrator } from "../../player";
 import { color, font, gutter, size } from "../../theme";
 import { CloseIcon, PauseIcon, PlayIcon } from "../../icons";
 import { Kicker } from "../../ui";
+import { usePurchases } from "../../purchases/PurchasesProvider";
+import { Paywall } from "../../purchases/Paywall";
 
 export default function EchoCard() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const echo = echoById(id);
   const narrator = useNarrator();
+  const purchases = usePurchases();
 
   if (!echo) {
     return (
@@ -36,6 +43,28 @@ export default function EchoCard() {
   const duration = isCurrent && status.duration > 0 ? status.duration : (audio?.durationS ?? echo.durationS);
   const position = isCurrent ? status.currentTime : 0;
   const progress = duration > 0 ? Math.min(1, position / duration) : 0;
+
+  // The echo loaded now is already heard, so it is never locked; any other asks the engine.
+  if (!isCurrent && purchases.isLocked(echo)) {
+    return (
+      <SafeAreaView style={styles.screen} edges={["bottom", "left", "right"]}>
+        <ScrollView contentContainerStyle={styles.body}>
+          <View style={styles.paywallTop}>
+            <Pressable
+              onPress={() => router.back()}
+              style={styles.close}
+              accessibilityRole="button"
+              accessibilityLabel="Close"
+              hitSlop={8}
+            >
+              <CloseIcon color={color.muted} />
+            </Pressable>
+          </View>
+          <Paywall echo={echo} onClose={() => router.back()} />
+        </ScrollView>
+      </SafeAreaView>
+    );
+  }
 
   return (
     <SafeAreaView style={styles.screen} edges={["bottom", "left", "right"]}>
@@ -110,6 +139,7 @@ const styles = StyleSheet.create({
   body: { padding: gutter, paddingTop: 20 },
   missing: { fontFamily: font.regular, fontSize: size.body, color: color.muted, padding: gutter },
   top: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
+  paywallTop: { flexDirection: "row", justifyContent: "flex-end" },
   close: {
     width: 36,
     height: 36,
