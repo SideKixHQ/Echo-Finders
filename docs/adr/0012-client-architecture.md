@@ -25,6 +25,10 @@ TestFlight now, and the native React Native app above, built in parallel.
   starts the shell from `App.tsx`; anything else (the `development` and `preview`
   profiles) starts the native app, Expo Router in `apps/ios/src/app/`. The switch is
   decided in `apps/ios/index.ts` and goes when the shell does.
+- 2026-11-12: the `production` profile now sets `EXPO_PUBLIC_SHELL=native`, so TestFlight
+  carries the native app (map, download packs, playback) instead of the shell, as James
+  agreed on 2026-11-11 ("when the native app can play an echo, it replaces that wrapper in
+  the same TestFlight"). The shell code stays until the walk and purchases land, then goes.
 
 ## Why not one React Native codebase for both
 
