@@ -273,7 +273,7 @@ export const HANDS_FREE_SHEET = {
   caps: "HANDS FREE",
   title: "Walk with your phone in your pocket",
   body:
-    "Echoes start on their own as you reach them, with the screen off. To do that, Echo Finders needs to know where you are while the app is closed. It is used only to find echoes near you and never leaves your phone.",
+    "Echoes start on their own as you reach them, with the screen off. To do that, Echo Finders needs to know where you are while the app is closed. It is used only to find echoes near you. Your exact location stays on your phone.",
   primary: "Turn on hands free",
   secondary: "Not now",
 } as const;
