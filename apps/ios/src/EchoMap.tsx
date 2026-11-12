@@ -12,7 +12,8 @@
  *     colour stands in for it;
  *   - you, the aqua disc with its glow;
  *   - north up, no tilt, as on the web;
- *   - the map follows you until you move it, and "Show where I am" brings it back.
+ *   - the map follows you until you move it, and "Show where I am" brings it back;
+ *   - "Start a walk", and while one is on a bar saying so with Stop (`walk/ui.tsx`).
  *
  * Pins are style layers, not views, so all six hundred cost what one does. A tap on one
  * opens its card (`/echo/[id]`).
@@ -43,6 +44,7 @@ import { useWhileUsingLocation, type LocationState } from "./location";
 import { useNarrator } from "./player";
 import { CATEGORY_COLOR, color, font, gutter, size } from "./theme";
 import { LocateIcon, SoundIcon } from "./icons";
+import { StartWalkButton, WalkingBar } from "./walk/ui";
 
 /**
  * Camera moves are typed as returning nothing but return a promise, which rejects if the
@@ -191,7 +193,11 @@ export function EchoMap() {
 
       {state.status === "denied" || state.status === "unavailable" ? (
         <LocationNote state={state} onPress={showWhereIAm} top={insets.top + 10} />
-      ) : null}
+      ) : (
+        <WalkingBar top={insets.top + 10} />
+      )}
+
+      <StartWalkButton bottom={34} />
 
       <View style={styles.rail} pointerEvents="box-none">
         <Pressable

@@ -1,6 +1,6 @@
 /**
  * Settings: not in phase 1, beyond one honest line about location, which is the one
- * permission this build asks for.
+ * permission this build asks for (When In Use, and Always for a hands free walk).
  */
 import { Linking, Pressable, StyleSheet, Text, View } from "react-native";
 import Constants from "expo-constants";
@@ -17,7 +17,7 @@ export default function SettingsTab() {
       <View style={styles.block}>
         <Text style={styles.label}>Location</Text>
         <Text style={styles.line}>
-          Echo Finders uses your location only while it is open, to find the echoes nearest you. It stays on your phone.
+          Echo Finders uses your location to find the echoes nearest you: while it is open, and with the screen off only during a hands free walk you start. It stays on your phone.
         </Text>
         <Pressable onPress={() => void Linking.openSettings()} accessibilityRole="button">
           <Text style={styles.link}>Change in iPhone Settings</Text>
