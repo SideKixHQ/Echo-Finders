@@ -6,12 +6,16 @@
  * rendered narration through the app's one narrator, so it carries on when the card is
  * closed or the screen is locked, with Now Playing controls on the lock screen.
  *
+ * A true crime echo carries the web's note under its teaser (`CrimeNote` in
+ * `apps/prototype/src/TruthMark.tsx`): where it comes from, and a link to the Terms, where
+ * the rest is said once.
+ *
  * Past the free ten, an echo no pass opens shows the paywall in the card's place
  * (`purchases/Paywall.tsx`). Whether it is locked is the engine's answer (`isLocked`); once
  * a pass is bought the same card turns into the player.
  */
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { echoById, listenLength, renderedAudio } from "../../library";
 import { clock, useNarrator } from "../../player";
@@ -20,6 +24,10 @@ import { CloseIcon, PauseIcon, PlayIcon } from "../../icons";
 import { Kicker } from "../../ui";
 import { usePurchases } from "../../purchases/PurchasesProvider";
 import { Paywall } from "../../purchases/Paywall";
+
+/** The web's disclaimer and where the whole of it is said (`TruthMark.tsx`). */
+const CRIME_NOTE = "From public records.";
+const CRIME_POLICY_URL = "https://echofinders.com/terms";
 
 export default function EchoCard() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -85,6 +93,19 @@ export default function EchoCard() {
         {echo.point.place ? <Text style={styles.place}>{echo.point.place}</Text> : null}
         <Text style={styles.length}>{listenLength(audio?.durationS ?? echo.durationS)}</Text>
         <Text style={styles.teaser}>{echo.teaser ?? echo.summary}</Text>
+        {echo.category === "true-crime" ? (
+          <View style={styles.crime}>
+            <Text style={styles.crimeNote}>{CRIME_NOTE}</Text>
+            <Pressable
+              onPress={() => void Linking.openURL(CRIME_POLICY_URL).catch(() => undefined)}
+              accessibilityRole="link"
+              accessibilityHint="Opens in Safari"
+              hitSlop={8}
+            >
+              <Text style={styles.crimeLink}>How we tell true crime</Text>
+            </Pressable>
+          </View>
+        ) : null}
 
         {audio ? (
           <View style={styles.player}>
@@ -161,6 +182,9 @@ const styles = StyleSheet.create({
   place: { fontFamily: font.mono, fontSize: size.secondary, color: color.muted, marginTop: 6 },
   length: { fontFamily: font.mono, fontSize: size.secondary, color: color.mutedSoft, marginTop: 4 },
   teaser: { fontFamily: font.regular, fontSize: size.body, lineHeight: 26, color: color.cool, marginTop: 14 },
+  crime: { flexDirection: "row", flexWrap: "wrap", alignItems: "baseline", gap: 6, marginTop: 10 },
+  crimeNote: { fontFamily: font.regular, fontSize: size.secondary, color: color.muted },
+  crimeLink: { fontFamily: font.medium, fontSize: size.secondary, color: color.aqua, textDecorationLine: "underline" },
   player: {
     marginTop: 24,
     padding: 16,
