@@ -30,6 +30,14 @@ TestFlight now, and the native React Native app above, built in parallel.
   agreed on 2026-11-11 ("when the native app can play an echo, it replaces that wrapper in
   the same TestFlight"). The shell code stays until the walk and purchases land, then goes.
 
+**Gone, 2026-11-12.** The native app reached the store build (map, download packs,
+playback, the hands free walk, in-app purchase), so the shell was deleted:
+`apps/ios/src/WebShell.tsx`, `App.tsx`, the `index.ts` switch and the
+`react-native-webview` dependency. The app starts at Expo Router's entry
+(`"main": "expo-router/entry"`), every eas profile builds the native app, and
+`EXPO_PUBLIC_SHELL` is no longer read or set. The camera purpose string went with it: only
+the web app's camera view used the camera.
+
 ## Why not one React Native codebase for both
 
 `react-native-web` is the obvious suggestion and it is wrong here, for three reasons that

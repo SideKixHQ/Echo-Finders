@@ -11,8 +11,41 @@
       "bundleIdentifier": "com.echofinders.app",
       "buildNumber": "1",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false,
-        "NSCameraUsageDescription": "Echo Finders uses the camera so you can hold up your phone and see which echoes are around you."
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "privacyManifests": {
+        "NSPrivacyTracking": false,
+        "NSPrivacyTrackingDomains": [],
+        "NSPrivacyCollectedDataTypes": [],
+        "NSPrivacyAccessedAPITypes": [
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "CA92.1"
+            ]
+          },
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryFileTimestamp",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "C617.1",
+              "0A2A.1",
+              "3B52.1"
+            ]
+          },
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryDiskSpace",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "E174.1",
+              "85F4.1"
+            ]
+          },
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategorySystemBootTime",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "35F9.1"
+            ]
+          }
+        ]
       }
     },
     "owner": "echofinders",
@@ -48,7 +81,9 @@
           "locationWhenInUsePermission": "Echo Finders uses your location to find the echoes around you and to start each one as you reach it. Your exact location stays on your phone.",
           "locationAlwaysAndWhenInUsePermission": "So echoes can start on their own as you reach them, with your phone in your pocket and the screen off, during a hands free walk you start. Echo Finders works without this: keep it on screen while you walk and echoes will still open. Your exact location stays on your phone.",
           "isIosBackgroundLocationEnabled": true,
-          "locationAlwaysPermission": "So echoes can start on their own as you reach them, with your phone in your pocket and the screen off, during a hands free walk you start. Echo Finders works without this: keep it on screen while you walk and echoes will still open. Your exact location stays on your phone."
+          "locationAlwaysPermission": "So echoes can start on their own as you reach them, with your phone in your pocket and the screen off, during a hands free walk you start. Echo Finders works without this: keep it on screen while you walk and echoes will still open. Your exact location stays on your phone.",
+          "motionUsagePermission": false,
+          "locationFullAccuracyPermission": false
         }
       ],
       "@maplibre/maplibre-react-native",

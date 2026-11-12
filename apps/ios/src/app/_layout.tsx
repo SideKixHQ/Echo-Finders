@@ -3,9 +3,8 @@
  * walk that hands it echoes, and a
  * stack holding the three tabs with an echo's card presented over them.
  *
- * Only the native build reaches this file. `index.ts` sends the WebView test shell build
- * (`EXPO_PUBLIC_SHELL=web`, the eas `production` profile) to `App.tsx` and never starts
- * the router.
+ * Every build starts here (`"main": "expo-router/entry"`). The WebView test shell that
+ * TestFlight carried until the native app was ready is gone (ADR-0012).
  */
 // The walk's background location task, defined before anything mounts: iOS can deliver a
 // location update to an app it has woken in the background (`src/walk/task.ts`).
@@ -25,6 +24,7 @@ import { NarratorProvider } from "../player";
 import { PacksProvider } from "../packs/PacksProvider";
 import { PurchasesProvider } from "../purchases/PurchasesProvider";
 import { WalkProvider } from "../walk/WalkProvider";
+import { DriveLock } from "../drive/DriveLock";
 // The map's planner: packs save the map's files too, so it draws with no signal.
 import "../mapPacks";
 import { color } from "../theme";
@@ -65,6 +65,8 @@ export default function RootLayout() {
                 options={{ presentation: "transparentModal", animation: "fade", contentStyle: { backgroundColor: "transparent" } }}
               />
             </Stack>
+            {/* Over everything while the phone travels faster than walking pace (`drive/`). */}
+            <DriveLock />
           </PacksProvider>
         </WalkProvider>
       </PurchasesProvider>

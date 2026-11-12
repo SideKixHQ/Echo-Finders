@@ -44,6 +44,16 @@ in `CAPABILITY_NEEDS`.
 
 ## Info.plist
 
+> **What the native app ships (2026-11-12).** `apps/ios/app.json` is the source; check it
+> with `npx expo config --type introspect`. Location When In Use and Always (with the
+> legacy `NSLocationAlwaysUsageDescription`), `UIBackgroundModes` `location` and `audio`,
+> and `ITSAppUsesNonExemptEncryption` false. **No camera and no motion string:** the
+> camera view went with the WebView shell, the compass is not in the native app, and
+> expo-location's motion activity code and its generic purpose strings are switched off
+> (`motionUsagePermission: false`, `locationFullAccuracyPermission: false`). Add each back
+> only with the feature that needs it. The privacy manifest and the App Privacy answers
+> are in `docs/15-app-store.md`. The strings below are the original draft.
+
 Purpose strings are read aloud by the system prompt, and vague ones are a documented
 rejection reason. Each of these says what the app does with the data and what the person
 gets — never "to improve your experience".

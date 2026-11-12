@@ -1,13 +1,14 @@
 {
   "name": "@echofinders/ios",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "expo-router/entry",
   "dependencies": {
     "@echofinders/core": "file:../../packages/core",
     "@expo-google-fonts/sora": "^0.4.2",
     "@expo-google-fonts/space-grotesk": "^0.4.1",
     "@maplibre/maplibre-react-native": "^11.5.1",
     "expo": "~58.0.24",
+    "expo-application": "~58.1.2",
     "expo-asset": "~58.0.21",
     "expo-audio": "~58.0.11",
     "expo-constants": "~58.0.15",
@@ -27,8 +28,7 @@
     "react-native": "0.88.1",
     "react-native-safe-area-context": "~5.11.1",
     "react-native-screens": "~4.30.1",
-    "react-native-svg": "15.16.0",
-    "react-native-webview": "14.0.1"
+    "react-native-svg": "15.16.0"
   },
   "devDependencies": {
     "@types/react": "~19.3.0",
