@@ -12,7 +12,12 @@
  * opens, so changing `TESTER_CODE` in Vercel turns every tester off; James's own phone
  * does not, so changing the tester code never locks him out.
  *
- * Neither variable set, no owner or tester mode for anyone.
+ * The App Store reviewer gets a code of their own, `REVIEWER_CODE` (James, 2026-11-11, for the
+ * iPhone app's review notes). It opens tester mode exactly as `TESTER_CODE` does, but on its
+ * own, so changing the tester code never locks a reviewer out mid review, and the reviewer's
+ * code can be retired once the app is approved without touching any tester.
+ *
+ * No variable set, no owner or tester mode for anyone.
  *
  * REMEMBERED BY A COOKIE TOO (James, 2026-11-10: "What happened to my free owner account").
  * The phone's own mark lives in localStorage, which iPhone Safari deletes after about a week
@@ -54,6 +59,11 @@ function withCookie(res: Response, value: string, maxAge: number): Response {
   return res;
 }
 
+/** The codes that open tester mode: the testers' and the App Store reviewer's. */
+function testerCodes(): string[] {
+  return [process.env.TESTER_CODE, process.env.REVIEWER_CODE].filter((c): c is string => !!c);
+}
+
 /** Which role the request's cookie proves against today's codes, if any. */
 function roleFromCookie(request: Request): Role | null {
   const raw = request.headers.get("cookie") ?? "";
@@ -61,21 +71,21 @@ function roleFromCookie(request: Request): Role | null {
   if (!value) return null;
   const [role, sig] = value.split(".");
   if (!sig) return null;
-  const code = role === "owner" ? process.env.OWNER_CODE : role === "tester" ? process.env.TESTER_CODE : undefined;
-  if (!code) return null;
-  return same(sig, sign(role as Role, code)) ? (role as Role) : null;
+  const codes = role === "owner" ? [process.env.OWNER_CODE ?? ""].filter(Boolean) : role === "tester" ? testerCodes() : [];
+  return codes.some((code) => same(sig, sign(role as Role, code))) ? (role as Role) : null;
 }
 
 export async function POST(request: Request): Promise<Response> {
   const owner = process.env.OWNER_CODE;
-  const tester = process.env.TESTER_CODE;
-  if (!owner && !tester) return reply(503, { error: "Owner mode is not set up." });
+  const testers = testerCodes();
+  if (!owner && testers.length === 0) return reply(503, { error: "Owner mode is not set up." });
   const body = (await request.json().catch(() => ({}))) as { code?: unknown };
   const given = typeof body.code === "string" ? body.code : "";
   if (owner && same(given, owner)) {
     return withCookie(reply(200, { ok: true, role: "owner" }), `owner.${sign("owner", owner)}`, YEAR_AND_A_BIT);
   }
-  if (tester && same(given, tester)) {
+  const tester = testers.find((code) => same(given, code));
+  if (tester) {
     return withCookie(reply(200, { ok: true, role: "tester" }), `tester.${sign("tester", tester)}`, YEAR_AND_A_BIT);
   }
   return reply(403, { error: "That link is not right." });

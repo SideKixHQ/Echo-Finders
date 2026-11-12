@@ -224,6 +224,12 @@ Settings calls it Tester mode. A tester phone asks `/api/owner` again every time
 opens, so changing `TESTER_CODE` and redeploying turns every tester off at once; give the
 people who should keep testing the new link. James's own phone is unaffected.
 
+**The App Store reviewer's key** is `REVIEWER_CODE` (Vercel, Production, sensitive;
+2026-11-11). It opens tester mode exactly as `TESTER_CODE` does, typed into Settings ›
+Skeleton key, but it is a separate code: changing the tester code never locks a reviewer out
+mid review. Put it in App Store Connect's review notes for each submission, and retire it by
+removing the variable once the app is approved.
+
 ## Analytics (Vercel Web Analytics)
 
 Anonymous counts, on both the app and the website: visits, plus four app events (`Echo

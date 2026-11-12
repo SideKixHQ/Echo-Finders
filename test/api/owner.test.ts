@@ -43,6 +43,39 @@ describe("tester mode", () => {
   });
 });
 
+describe("the App Store reviewer's code", () => {
+  afterEach(() => vi.unstubAllEnvs());
+  const get = (cookie: string) => new Request("https://echo-finders.vercel.app/api/owner", { headers: { cookie } });
+  const value = (res: Response) => /ef_access=([^;]*)/.exec(res.headers.get("set-cookie") ?? "")?.[1] ?? "";
+
+  it("opens tester mode on its own, without a tester code", async () => {
+    vi.stubEnv("OWNER_CODE", "");
+    vi.stubEnv("TESTER_CODE", "");
+    vi.stubEnv("REVIEWER_CODE", "reviewer-code-1");
+    expect(await (await owner(post({ code: "reviewer-code-1" }))).json()).toEqual({ ok: true, role: "tester" });
+    expect((await owner(post({ code: "" }))).status).toBe(403);
+  });
+
+  it("keeps working when the tester code changes", async () => {
+    vi.stubEnv("TESTER_CODE", "tester-code-12");
+    vi.stubEnv("REVIEWER_CODE", "reviewer-code-1");
+    const remembered = value(await owner(post({ code: "reviewer-code-1" })));
+    vi.stubEnv("TESTER_CODE", "a-new-tester-code");
+    expect(await (await who(get(`ef_access=${remembered}`))).json()).toEqual({ role: "tester" });
+    expect((await owner(post({ code: "tester-code-12" }))).status).toBe(403);
+    expect((await owner(post({ code: "reviewer-code-1" }))).status).toBe(200);
+  });
+
+  it("stops working when it is retired", async () => {
+    vi.stubEnv("TESTER_CODE", "tester-code-12");
+    vi.stubEnv("REVIEWER_CODE", "reviewer-code-1");
+    const remembered = value(await owner(post({ code: "reviewer-code-1" })));
+    vi.stubEnv("REVIEWER_CODE", "");
+    expect(await (await who(get(`ef_access=${remembered}`))).json()).toEqual({ role: null });
+    expect((await owner(post({ code: "reviewer-code-1" }))).status).toBe(403);
+  });
+});
+
 describe("remembered by a cookie, for a phone whose storage was wiped", () => {
   afterEach(() => vi.unstubAllEnvs());
   const get = (cookie?: string) =>
