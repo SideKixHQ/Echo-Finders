@@ -1,69 +1,37 @@
 /**
  * How hard is it to stand here?
  *
- * Every input is a fact about the world rather than a dial: whether the place is off the
- * walk most people take, whether it is reachable at all hours, whether you have to go inside
- * somewhere, and whether the spot itself is hard to find. Nothing here is tunable for
- * pacing, deliberately: the moment rarity is assigned rather than earned, a collection of
- * places you stood stops meaning anything.
+ * Hand picked since 2026-11-12 (docs/adr/0021-topics-and-rare.md): an echo is rare because
+ * an editor chose it and wrote down one of four reasons a listener can check (inside with
+ * opening hours, only at certain times, hard to reach, easy to miss).
  *
- * Rewritten 2026-11-05 (`docs/13-story-mix.md`, approved by James). The first version scored
- * the trigger radius, and the standard walking radius (40 m) counted as "find the exact
- * spot" on its own, so 318 of 329 echoes came out uncommon and the tier said nothing. A
- * standard radius is the default, not a difficulty. Only a radius set tighter than the
- * default on purpose still scores, because then the spot really is the point.
+ * History: 2026-11-05 scored radius, hours, inside and remoteness (`docs/13-story-mix.md`).
+ * Remoteness is still computed below and shipped with the library for anything that reads
+ * it, but it no longer decides the tier.
  */
 
 import { distanceKm } from "../geo/great-circle.js";
 import type { Echo } from "../types.js";
 import type { Rarity } from "./types.js";
 
-/** A radius at or below this was set on purpose: a plaque, a mark on a wall, one grave. */
-const TIGHT_SPOT_KM = 0.03;
-
 /**
- * Remoteness thresholds, on the 0 to 1 scale `remotenessOf` writes: distance from the
- * main walk over 2 km, capped at 1. So 0.2 is 400 m off it and 0.75 is 1.5 km.
+ * The tier, from the hand picked `rare` field and nothing else (James, 2026-11-12,
+ * docs/adr/0021-topics-and-rare.md).
+ *
+ * The computed version scored radius, hours, inside and remoteness, and a reader could not
+ * tell from the card why one echo was rare and the next was not. Now an editor picks the
+ * few that really are, and says why in `rareReason`, which the card shows. "uncommon" stays
+ * in the type so callers compile; nothing is assigned it any more.
  */
-const REMOTE = 0.75;
-const OFF_THE_BEATEN_TRACK = 0.2;
-
-export function rarityOf(echo: Echo): Rarity {
-  let difficulty = 0;
-
-  // A spot you have to find: tighter than the standard radius on purpose.
-  if (echo.point.triggerRadiusKm <= TIGHT_SPOT_KM) difficulty += 1;
-
-  // Availability: an echo you can only open after dark, or in one season.
-  if (echo.hours) difficulty += 1;
-
-  // Somewhere you have to walk into: a church, a museum, a bar, a gated cemetery.
-  if (echo.inside) difficulty += 1;
-
-  // Remoteness: how far off the walk most people take.
-  const remoteness = echo.remoteness ?? 0;
-  if (remoteness >= REMOTE) difficulty += 2;
-  else if (remoteness >= OFF_THE_BEATEN_TRACK) difficulty += 1;
-
-  if (difficulty >= 3) return "singular";
-  if (difficulty >= 2) return "rare";
-  if (difficulty >= 1) return "uncommon";
+export function rarityOf(echo: Pick<Echo, "rare">): Rarity {
+  if (echo.rare === "extra-rare") return "singular";
+  if (echo.rare === "rare") return "rare";
   return "common";
 }
 
-/** Human-readable reason an echo is hard to reach, for the collection screen. */
-export function rarityReasons(echo: Echo): string[] {
-  const reasons: string[] = [];
-
-  if (echo.point.triggerRadiusKm <= TIGHT_SPOT_KM) reasons.push("You have to find the exact spot");
-  if (echo.hours) reasons.push("Only open at certain hours");
-  if (echo.inside) reasons.push("You have to go inside");
-
-  const remoteness = echo.remoteness ?? 0;
-  if (remoteness >= REMOTE) reasons.push("A long way from anywhere");
-  else if (remoteness >= OFF_THE_BEATEN_TRACK) reasons.push("Off the beaten track");
-
-  return reasons;
+/** Why an echo is rare, for the card and the collection screen: its one hand written reason. */
+export function rarityReasons(echo: Pick<Echo, "rare" | "rareReason">): string[] {
+  return echo.rare && echo.rareReason ? [echo.rareReason] : [];
 }
 
 /** Echoes found on foot. Wider radii are passed by car or plane, not walked to. */

@@ -272,7 +272,7 @@ describe("buildPlaylist", () => {
 
   it("keeps a child's flight free of adult material", () => {
     const adultLibrary = [
-      ...echoesAlongJfkMia(40, ["kids", "land"]),
+      ...echoesAlongJfkMia(40, ["kids", "wonders"]),
       ...echoesAlongJfkMia(40, ["true-crime"]).map((s) =>
         makeEcho({ ...s, id: `tc-${s.id}`, minAge: 16, trueCrimeReview: REVIEW }),
       ),

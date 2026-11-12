@@ -16,17 +16,17 @@ import type { Echo, EchoCategory } from "../types.js";
 /** Kinds that make factual claims: documented or disputed, and verified before approval. */
 export const FACT_CATEGORIES: readonly EchoCategory[] = [
   "history",
+  "military",
   "true-crime",
-  "people",
-  "built",
-  "land",
-  "food-drink",
-  "arts",
-  "inspo",
+  "scandals",
   "disasters",
-  "music",
-  "firsts",
   "hidden",
+  "arts",
+  "pop-culture",
+  "sports",
+  "food-drink",
+  "business",
+  "wonders",
 ];
 
 /**
@@ -35,6 +35,8 @@ export const FACT_CATEGORIES: readonly EchoCategory[] = [
  */
 export const FOLKLORE_CATEGORIES: readonly EchoCategory[] = ["legend"];
 
+// `kids` is in neither list either, as before: children's echoes are fact or tale and are
+// labelled by their own certainty.
 // `unsolved` is in neither list on purpose: it holds documented mysteries and treasure
 // legends alike, and the certainty on each echo says which (see `ECHO_CATEGORIES`).
 

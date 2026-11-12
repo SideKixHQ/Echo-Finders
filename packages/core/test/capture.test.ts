@@ -362,44 +362,21 @@ describe("the collection survives", () => {
   });
 });
 
-describe("rarity is earned, not assigned", () => {
-  it("calls a city-scale echo common", () => {
+// Rarity is hand picked since 2026-11-12 (docs/adr/0021-topics-and-rare.md). These replaced
+// the tests for the computed tier (radius, hours, inside, remoteness): the new truth is that
+// only the `rare` field decides it, so the old inputs are asserted to no longer count.
+describe("rarity is hand picked, with a reason", () => {
+  it("calls an echo with no rare field common", () => {
     expect(rarityOf(makeEcho({ id: "c", at: WALL_STREET, triggerRadiusKm: 60 }))).toBe("common");
   });
 
-  // The bug this rule replaced: the standard walking radius scored as "find the exact spot",
-  // so 318 of 329 echoes were uncommon and the tier meant nothing.
-  it("does not count the standard walking radius as difficulty", () => {
-    expect(rarityOf(plaque({ triggerRadiusKm: 0.04 }))).toBe("common");
-    expect(rarityOf(plaque({ triggerRadiusKm: 0.05 }))).toBe("common");
+  it("reads rare as rare and extra rare as singular", () => {
+    expect(rarityOf(plaque({ rare: "rare", rareReason: "Easy to miss" }))).toBe("rare");
+    expect(rarityOf(plaque({ rare: "extra-rare", rareReason: "Hard to reach" }))).toBe("singular");
   });
 
-  it("counts a spot made tight on purpose", () => {
-    expect(rarityOf(plaque({ triggerRadiusKm: 0.03 }))).toBe("uncommon");
-  });
-
-  it("counts having to go inside", () => {
-    expect(rarityOf(plaque({ inside: true }))).toBe("uncommon");
-  });
-
-  it("counts being off the main walk, and far off it more", () => {
-    expect(rarityOf(plaque({ remoteness: 0.2 }))).toBe("uncommon");
-    expect(rarityOf(plaque({ remoteness: 0.9 }))).toBe("rare");
-  });
-
-  it("stacks difficulty into something singular", () => {
-    const hard = makeEcho({
-      id: "hard",
-      at: { lat: 63.07, lng: -151.0 },
-      triggerRadiusKm: 0.04,
-      remoteness: 0.95,
-      hours: { fromHour: 22, toHour: 3 },
-    });
-    expect(rarityOf(hard)).toBe("singular");
-  });
-
-  it("explains itself, so the collection screen can say why", () => {
-    const hard = makeEcho({
+  it("no longer computes a tier from radius, hours, inside or remoteness", () => {
+    const once = makeEcho({
       id: "hard",
       at: WALL_STREET,
       triggerRadiusKm: 0.03,
@@ -407,16 +384,18 @@ describe("rarity is earned, not assigned", () => {
       hours: { fromHour: 22, toHour: 3 },
       inside: true,
     });
-    const reasons = rarityReasons(hard);
-    expect(reasons).toContain("You have to find the exact spot");
-    expect(reasons).toContain("Only open at certain hours");
-    expect(reasons).toContain("You have to go inside");
-    expect(reasons).toContain("A long way from anywhere");
+    expect(rarityOf(once)).toBe("common");
+  });
+
+  it("explains itself with its one hand written reason", () => {
+    expect(rarityReasons(plaque({ rare: "rare", rareReason: "Inside, with opening hours" }))).toEqual([
+      "Inside, with opening hours",
+    ]);
   });
 
   it("gives an ordinary echo nothing to boast about", () => {
     expect(rarityReasons(makeEcho({ id: "c", at: WALL_STREET, triggerRadiusKm: 60 }))).toEqual([]);
-    expect(rarityReasons(plaque({ triggerRadiusKm: 0.04 }))).toEqual([]);
+    expect(rarityReasons(plaque({ inside: true }))).toEqual([]);
   });
 });
 

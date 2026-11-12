@@ -54,71 +54,24 @@ export function isOnFoot(mode: TravelMode): boolean {
  *   2. Would somebody plausibly switch it off? A category nobody would ever deselect is
  *      not a filter, it is a tag.
  *
- * Eight is also about as many toggles as a phone screen holds, and the scheduler's variety
- * rules need a list short enough that repeats actually mean something.
+ * The list is the 15 topics James approved on 2026-11-12 (docs/adr/0021-topics-and-rare.md);
+ * the panel adds a sixteenth chip, Rare, which filters on rarity rather than topic. One
+ * topic per echo: one that fits better elsewhere is moved, never tagged twice.
  */
 export const ECHO_CATEGORIES = [
   /** What happened here. The backbone, and the default when nothing else fits better. */
   "history",
+  /** Battles, forts, ships and the people who served. */
+  "military",
   /** Its own gates, its own review, and the one category that is opt-in everywhere. */
   "true-crime",
-  /**
-   * Who was here.
-   *
-   * Deliberately not "famous-people". The best echoes about people are rarely about famous
-   * ones — eight million immigrants through one door beats a plaque about a senator — and
-   * the word "famous" quietly instructs a writer to go and find a celebrity.
-   */
-  "people",
-  /**
-   * The built environment: architecture, engineering, why a thing is the shape it is.
-   *
-   * Broader than the "landmarks" it replaces, because "why does this building have no
-   * windows" is a better echo than most famous structures can offer.
-   */
-  "built",
-  /** Geology, wildlife, weather, the shape of the ground. Why the place is where it is. */
-  "land",
-  /** What is eaten and drunk here, and what used to be. */
-  "food-drink",
-  /** Where it was written, recorded, filmed, painted or first performed. */
-  "arts",
-  /** Folklore, ghosts and tall tales — told as such. See `Certainty`. */
+  /** Corruption, cover-ups and the affairs that made the papers. Told as fact. */
+  "scandals",
+  /** Ghosts & legends: folklore, ghosts and tall tales, told as such. See `Certainty`. */
   "legend",
   /**
-   * Content written for children.
+   * Disappearances, odd sightings, lost treasure, questions nobody has answered.
    *
-   * The odd one out, and knowingly so: this is an *audience*, not a subject, which is the
-   * axis confusion the rest of this list just removed. The Pearl Street oysters echo is
-   * about history and is filed here, so a history filter cannot see it, and the scheduler's
-   * variety rule counts two children's echoes as a repeated subject when in kids mode every
-   * echo should be one.
-   *
-   * The right shape is a *telling*, like `simple` — one echo about a place, with a
-   * children's script, duration and narrator alongside the adult one. Left as a category
-   * for now because changing it moves content rather than a list, and it is the only entry
-   * here with anything filed under it.
-   */
-  "kids",
-  /**
-   * Inspo: where something people know began (James, 2026-11-06).
-   *
-   * The first performance, the place that inspired the song, the room the book was written
-   * in, the decision that changed a life, the set that became a famous town. Its spine is
-   * always the same three steps: what you can see now, what happened here, what it became.
-   * That spine is what separates it from `people` or `arts`: a plaque about who lived here
-   * is people; the room where the book got written is inspo.
-   *
-   * Every inspo echo says how strongly the place is tied to the story (`InspoLink`), and a
-   * script may only say "this exact spot" when the evidence is exact (`parse.ts`).
-   */
-  "inspo",
-  /**
-   * The five James added on 2026-11-12. Each is what an echo is mainly about, so an echo
-   * still has one category; one that fits better here than where it was is moved, not
-   * tagged twice.
-   *
-   * Unsolved: disappearances, odd sightings, lost treasure, questions nobody has answered.
    * Not a crime at the centre (that is true crime) and not a ghost (that is legend). It is
    * the one category that holds both fact and tale, so it is in neither family in
    * `truth.ts`: a stolen stone never found is documented, a pirate's buried chest is a
@@ -127,12 +80,33 @@ export const ECHO_CATEGORIES = [
   "unsolved",
   /** Fires, floods, storms, epidemics, explosions, shipwrecks, and the people who got through them. */
   "disasters",
-  /** Where a sound was born, and the clubs and studios that are gone. Arts keeps the rest. */
-  "music",
-  /** The first of anything, and what was invented here. */
-  "firsts",
   /** Tunnels, sealed rooms, buried rivers: what is under your feet or behind the wall. */
   "hidden",
+  /** Where it was written, recorded, painted or first performed, and the music of a place. */
+  "arts",
+  /**
+   * Films, television and the famous: the set that became a town, the star who lived here.
+   *
+   * Most of the former inspo echoes live here and keep their `inspo` link, which still
+   * holds a script to "this exact spot" only when the evidence is exact (`parse.ts`).
+   */
+  "pop-culture",
+  /** Games, grounds, players and the records set here. */
+  "sports",
+  /** What is eaten and drunk here, and what used to be. */
+  "food-drink",
+  /** Shops, makers, inventions and the first of anything. */
+  "business",
+  /** Buildings, bridges, landscapes and wildlife: why a thing is the shape it is. */
+  "wonders",
+  /**
+   * Content written for children.
+   *
+   * The odd one out, and knowingly so: this is an *audience*, not a subject. The right
+   * shape is a *telling*, like `simple`; left as a category for now because changing it
+   * moves content rather than a list.
+   */
+  "kids",
 ] as const;
 
 export type EchoCategory = (typeof ECHO_CATEGORIES)[number];
@@ -441,8 +415,18 @@ export interface Echo {
    * cemetery. A point of rarity, because standing there takes going in (`rarityOf`).
    */
   readonly inside?: boolean;
-  /** For `inspo` echoes, and required there: what kind of beginning, and how sure the place is. */
+  /**
+   * Optional on any echo: what kind of beginning this place is, and how sure the place is.
+   * When present, a script may only say "this exact spot" when the evidence is exact.
+   */
   readonly inspo?: InspoLink;
+  /**
+   * Hand picked rarity (James, 2026-11-12, docs/adr/0021-topics-and-rare.md). Unset is
+   * common. `rarityOf` reads this and nothing else for the tier.
+   */
+  readonly rare?: RareTier;
+  /** Why it is rare, shown on the card. Required when `rare` is set. */
+  readonly rareReason?: RareReason;
 
   readonly sources: readonly Source[];
   /** Each checkable sentence of the script beside its quoted source. Required to approve. */
@@ -845,6 +829,19 @@ export interface Playlist {
   readonly routeDurationS: number;
   readonly mode: TravelMode;
 }
+
+/** Hand picked rarity tiers. */
+export const RARE_TIERS = ["rare", "extra-rare"] as const;
+export type RareTier = (typeof RARE_TIERS)[number];
+
+/** The four reasons an echo is rare, as a listener reads them. */
+export const RARE_REASONS = [
+  "Inside, with opening hours",
+  "Only at certain times",
+  "Hard to reach",
+  "Easy to miss",
+] as const;
+export type RareReason = (typeof RARE_REASONS)[number];
 
 /** The six kinds of inspo story (James, 2026-11-06). */
 export const INSPO_KINDS = [

@@ -408,20 +408,45 @@ describe("opening hours", () => {
     expect(errorFields({ ...minimal(), hours: { fromHour: 9, toHour: 9 } })).toContain("hours");
   });
 
-  it("earns the difficulty point that makes a tight, time-limited echo rare", () => {
+  // Hours no longer make an echo rare on their own (2026-11-12, hand picked rarity); an
+  // editor who wants it rare says so with `rare` and a reason.
+  it("does not make an echo rare by itself", () => {
     const { echo } = parseEcho({
       ...minimal(),
       triggerRadiusKm: 0.03,
       hours: { fromHour: 8, toHour: 17 },
     });
-    expect(echo && rarityOf(echo)).toBe("rare");
+    expect(echo && rarityOf(echo)).toBe("common");
+  });
+});
+
+describe("hand picked rarity", () => {
+  it("reads a tier and its reason", () => {
+    const { echo, issues } = parseEcho({ ...minimal(), rare: "extra-rare", rareReason: "Hard to reach" });
+    expect(issues.filter((i) => i.severity === "error")).toEqual([]);
+    expect(echo!.rare).toBe("extra-rare");
+    expect(echo!.rareReason).toBe("Hard to reach");
+    expect(rarityOf(echo!)).toBe("singular");
+  });
+
+  it("requires a reason with a tier, because the card shows it", () => {
+    expect(errorFields({ ...minimal(), rare: "rare" })).toContain("rareReason");
+  });
+
+  it("refuses a tier or a reason it does not know", () => {
+    expect(errorFields({ ...minimal(), rare: "legendary", rareReason: "Hard to reach" })).toContain("rare");
+    expect(errorFields({ ...minimal(), rare: "rare", rareReason: "Because" })).toContain("rareReason");
+  });
+
+  it("refuses a reason without a tier", () => {
+    expect(errorFields({ ...minimal(), rareReason: "Easy to miss" })).toContain("rareReason");
   });
 });
 
 describe("inspo: where something people know began", () => {
   const inspo = (evidence: string, script = "A story about a room.") => ({
     ...minimal(),
-    category: "inspo",
+    category: "pop-culture",
     script,
     inspo: { kind: "creation", evidence },
   });
@@ -432,8 +457,10 @@ describe("inspo: where something people know began", () => {
     expect(echo!.inspo).toEqual({ kind: "creation", evidence: "building" });
   });
 
-  it("refuses an inspo echo that does not say how sure the place is", () => {
-    expect(errorFields({ ...minimal(), category: "inspo" })).toContain("inspo");
+  // Since 2026-11-12 there is no inspo category: the link is optional on any echo, so an
+  // echo without one is fine (the old test required it of the inspo category).
+  it("does not require an inspo link of any echo", () => {
+    expect(errorFields({ ...minimal(), category: "pop-culture" })).not.toContain("inspo");
   });
 
   it("refuses a kind or an evidence it does not know", () => {
@@ -453,7 +480,12 @@ describe("inspo: where something people know began", () => {
     expect(errorFields(inspo("area", "Somewhere on these streets, he practised."))).not.toContain("script");
   });
 
-  it("keeps the inspo block to inspo echoes", () => {
-    expect(errorFields({ ...minimal(), inspo: { kind: "first", evidence: "exact" } })).toContain("inspo");
+  // Was "keeps the inspo block to inspo echoes". The link may now ride on any echo
+  // (arts and pop culture carry them), and the exact spot rule still applies there.
+  it("lets any echo carry an inspo link, with the exact spot rule", () => {
+    expect(errorFields({ ...minimal(), inspo: { kind: "first", evidence: "exact" } })).not.toContain("inspo");
+    expect(
+      errorFields({ ...minimal(), category: "arts", script: "It was written right here.", inspo: { kind: "creation", evidence: "area" } }),
+    ).toContain("script");
   });
 });
