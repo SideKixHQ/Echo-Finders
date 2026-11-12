@@ -74,7 +74,7 @@ function SaveRouteSheet({ route, onStart, onDismiss }: { route: Route; onStart: 
   }, [nothingToAsk, isFlight, onStart]);
 
   const count = echoCount(plan.echoIds.length);
-  const facts = [count.toUpperCase(), formatBytes(plan.estimatedBytes), ...(packs.settings.wifiOnly ? ["ON WI-FI"] : [])];
+  const facts = [count.toUpperCase(), formatBytes(packs.sizeToSave(plan)), ...(packs.settings.wifiOnly ? ["ON WI-FI"] : [])];
 
   if (isFlight) {
     const progress = packs.progressOf(plan.id);

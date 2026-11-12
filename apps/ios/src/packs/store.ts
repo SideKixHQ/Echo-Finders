@@ -3,6 +3,7 @@
  * when storage runs low (the cache directory it does, which would empty a pack mid flight).
  *
  *   offline/settings.json          { wifiOnly }
+ *   offline/map-index.json         the map's list of street squares, as last read
  *   offline/packs/<pack id>.json   the manifest (`PackManifest` in `plan.ts`)
  *   offline/packs/<pack id>.echoes.json   the pack's echoes, as the library had them
  *   offline/files/<file name>      one file per part, shared by every pack that holds it
@@ -53,6 +54,27 @@ export function writeSettings(settings: OfflineSettings): void {
     writeText(new File(root(), "settings.json"), JSON.stringify(settings));
   } catch {
     /* The switch still holds for this session. */
+  }
+}
+
+// --- Small records ----------------------------------------------------------------------
+
+/** A JSON file kept in the offline folder (the map's list of squares), or null. */
+export function readOfflineJson(name: string): unknown {
+  try {
+    const file = new File(root(), name);
+    return file.exists ? (JSON.parse(file.textSync()) as unknown) : null;
+  } catch {
+    return null;
+  }
+}
+
+export function writeOfflineJson(name: string, value: unknown): void {
+  try {
+    ensureDirs();
+    writeText(new File(root(), name), JSON.stringify(value));
+  } catch {
+    /* Read again next time. */
   }
 }
 
@@ -124,6 +146,16 @@ export function localUriFor(key: string): string | null {
   try {
     const file = fileFor(key);
     return file.exists ? file.uri : null;
+  } catch {
+    return null;
+  }
+}
+
+/** The folder saved files are in, as a `file://` URI: what a template over them starts with. */
+export function filesDirUri(): string | null {
+  try {
+    ensureDirs();
+    return filesDir().uri;
   } catch {
     return null;
   }

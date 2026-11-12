@@ -13,6 +13,10 @@
  *   the library and picks up new or changed echoes and drops retired ones (`diffPack`).
  * - **Stop and Remove.** Both cancel what is in flight and delete the pack's files, except
  *   files another saved pack also holds.
+ * - **Shared files.** The map's world, coast and glyphs are in every pack (`mapPack.ts`) and
+ *   on the phone once: a pack that wants one another pack already saved records it without
+ *   fetching it, two packs saving at once share one download, and Remove deletes it only
+ *   when no pack left holds it (`orphanedKeys`, worked out again on every remove).
  */
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { NetworkStateType, useNetworkState, type NetworkState } from "expo-network";
@@ -20,16 +24,20 @@ import { ECHOES } from "../library";
 import {
   SAVE_CONCURRENCY,
   applyDiff,
+  bytesToSave,
   diffPack,
   echoesFor,
   isDiffEmpty,
   manifestFor,
   maySaveNow,
+  onPartPlannersChanged,
   orphanedKeys,
+  partPlannersReady,
   pendingParts,
   planPack,
   progressOf,
   runPool,
+  savedBytesOf,
   withPartSaved,
   type Connection,
   type ManifestPart,
@@ -41,6 +49,7 @@ import {
   deleteFiles,
   deletePackRecords,
   downloadPart,
+  localUriFor,
   readManifests,
   readSettings,
   storage,
@@ -75,6 +84,8 @@ interface Packs {
   readonly packById: (packId: string) => PackManifest | undefined;
   /** What saving this would take, before it is saved. */
   readonly plan: (source: PackSource) => PackPlan;
+  /** The bytes a plan takes on the phone: its own files, and shared ones no other pack saved. */
+  readonly sizeToSave: (plan: PackPlan) => number;
   readonly save: (source: PackSource) => void;
   /** Stop a save in progress; what it had saved is removed. */
   readonly stop: (packId: string) => void;
@@ -118,7 +129,12 @@ export function PacksProvider({ children }: { children: ReactNode }) {
   const [space, setSpace] = useState(() => storage());
   const [inFlight, setInFlight] = useState<Readonly<Record<string, number>>>({});
   const [retryTick, setRetryTick] = useState(0);
+  // Bumped when a planner learns something (the map's squares, a file's real size).
+  const [planTick, setPlanTick] = useState(0);
+  useEffect(() => onPartPlannersChanged(() => setPlanTick((n) => n + 1)), []);
   const jobs = useRef(new Map<string, Job>());
+  // One download per file, however many packs want it at once.
+  const downloads = useRef(new Map<string, Promise<number>>());
   const flight = useRef(new Map<string, Map<string, number>>());
   const lastPaint = useRef(0);
 
@@ -173,12 +189,30 @@ export function PacksProvider({ children }: { children: ReactNode }) {
       const signal = job.controller.signal;
 
       const fetchOne = async (part: ManifestPart) => {
+        // Already saved by another pack, at the size the library has now: nothing to fetch.
+        const others = [...manifests.current.values()].filter((m) => m.id !== packId);
+        const elsewhere = savedBytesOf(others, part.key);
+        if (
+          elsewhere !== null &&
+          (part.libraryBytes === undefined || part.libraryBytes === elsewhere) &&
+          localUriFor(part.key) !== null
+        ) {
+          const current = manifests.current.get(packId);
+          if (!signal.aborted && current) put(withPartSaved(current, part.key, elsewhere, Date.now()));
+          return;
+        }
         files.set(part.key, 0);
         try {
-          const bytes = await downloadPart(part, signal, (written) => {
-            files.set(part.key, written);
-            paintProgress();
-          });
+          let download = downloads.current.get(part.key);
+          if (!download) {
+            download = downloadPart(part, signal, (written) => {
+              files.set(part.key, written);
+              paintProgress();
+            });
+            downloads.current.set(part.key, download);
+            download.finally(() => downloads.current.delete(part.key)).catch(() => undefined);
+          }
+          const bytes = await download;
           const current = manifests.current.get(packId);
           if (signal.aborted || !current) return;
           put(withPartSaved(current, part.key, bytes, Date.now()));
@@ -200,9 +234,10 @@ export function PacksProvider({ children }: { children: ReactNode }) {
     [discard, paintProgress, put],
   );
 
-  // Updates: on Wi-Fi, bring every saved pack up to the library.
+  // Updates: on Wi-Fi, bring every saved pack up to the library, and to the map's plan once
+  // it knows its squares (`partPlannersReady`).
   useEffect(() => {
-    if (connection !== "wifi") return;
+    if (connection !== "wifi" || !partPlannersReady()) return;
     for (const manifest of [...manifests.current.values()]) {
       if (manifest.state !== "saved" || jobs.current.has(manifest.id)) continue;
       const source = sourceOf(manifest);
@@ -215,7 +250,7 @@ export function PacksProvider({ children }: { children: ReactNode }) {
       put(next);
       deleteFiles(orphanedKeys([...manifests.current.values()], diff.removed));
     }
-  }, [connection, put]);
+  }, [connection, planTick, put]);
 
   // Saving runs while the network allows it, and pauses when it does not.
   const allowed = maySaveNow(connection, settings.wifiOnly);
@@ -270,7 +305,12 @@ export function PacksProvider({ children }: { children: ReactNode }) {
     writeSettings(next);
   }, []);
 
-  const plan = useCallback((source: PackSource) => planPack(source, ECHOES), []);
+  // Made again when a planner learns something, so the sizes on screen follow.
+  const plan = useCallback(
+    (source: PackSource) => planPack(source, ECHOES),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [planTick],
+  );
 
   const value = useMemo<Packs>(() => {
     const byId = new Map(packs.map((p) => [p.id, p]));
@@ -290,6 +330,8 @@ export function PacksProvider({ children }: { children: ReactNode }) {
         return { savedBytes: saved, totalBytes: base.totalBytes, fraction: base.totalBytes > 0 ? saved / base.totalBytes : 1 };
       },
       plan,
+      // Counted against the other packs, so a pack's own size holds once it is saved.
+      sizeToSave: (p) => bytesToSave(p, packs.filter((m) => m.id !== p.id)),
       save,
       stop: stopOrRemove,
       remove: stopOrRemove,

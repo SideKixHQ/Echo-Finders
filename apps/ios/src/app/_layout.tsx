@@ -19,6 +19,8 @@ import { SpaceGrotesk_400Regular } from "@expo-google-fonts/space-grotesk/400Reg
 import { SpaceGrotesk_500Medium } from "@expo-google-fonts/space-grotesk/500Medium";
 import { NarratorProvider } from "../player";
 import { PacksProvider } from "../packs/PacksProvider";
+// The map's planner: packs save the map's files too, so it draws with no signal.
+import "../mapPacks";
 import { color } from "../theme";
 
 SplashScreen.preventAutoHideAsync().catch(() => undefined);

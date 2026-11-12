@@ -95,7 +95,7 @@ export default function OfflineEchoes() {
                 <View style={styles.rowText}>
                   <Text style={styles.rowName}>{city.name}</Text>
                   <Text style={styles.rowLine}>
-                    {echoCount(plan.echoIds.length)} · {formatBytes(plan.estimatedBytes)}
+                    {echoCount(plan.echoIds.length)} · {formatBytes(packs.sizeToSave(plan))}
                   </Text>
                 </View>
                 <PrimaryButton

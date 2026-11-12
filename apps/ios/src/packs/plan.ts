@@ -9,8 +9,10 @@
  * React. The store (`store.ts`) and the saver (`saver.ts`) do the I/O; this decides what
  * they do it to, and it is what the tests in `test/ios/packs.test.ts` cover.
  *
- * A pack is a list of PARTS, each one file at a URL. Today every part is an echo's rendered
- * audio. The map's offline tiles are meant to be parts too: see `PackPartPlanner`.
+ * A pack is a list of PARTS, each one file at a URL: an echo's rendered audio, and the map's
+ * files for its streets (`kind: "tiles"`, planned on the map's side, `mapPack.ts`, through
+ * `PackPartPlanner`). A file is stored once whatever number of packs hold it, and is
+ * deleted only when none does (`orphanedKeys`).
  */
 import { cityAt, distanceKm, findEchoesAlongRoute, type City, type Echo, type LatLng, type Route } from "@echofinders/core";
 
@@ -61,10 +63,7 @@ export function routeName(route: Route): string {
 
 // --- Parts ----------------------------------------------------------------------------
 
-/**
- * The kinds of file a pack carries. `tiles` is reserved for the map (see
- * `PackPartPlanner`); nothing produces one yet.
- */
+/** The kinds of file a pack carries: an echo's audio, or a map file (see `PackPartPlanner`). */
 export type PackPartKind = "audio" | "tiles";
 
 /** One file a pack needs, before it is saved. */
@@ -95,12 +94,42 @@ export interface PackPart {
 export type PackPartPlanner = (source: PackSource, echoes: readonly Echo[]) => readonly PackPart[];
 
 const partPlanners: PackPartPlanner[] = [];
+const readiness = new Map<PackPartPlanner, () => boolean>();
+const changeListeners = new Set<() => void>();
 
-export function registerPartPlanner(planner: PackPartPlanner): () => void {
+/**
+ * `ready`, when given, says whether the planner knows enough yet to plan (the map's needs
+ * its list of squares). Until every planner is ready, saved packs are not updated, so a
+ * planner that does not know yet cannot make an update drop files it would have kept.
+ */
+export function registerPartPlanner(planner: PackPartPlanner, options: { ready?: () => boolean } = {}): () => void {
   partPlanners.push(planner);
+  if (options.ready) readiness.set(planner, options.ready);
+  partPlannersChanged();
   return () => {
     const i = partPlanners.indexOf(planner);
     if (i >= 0) partPlanners.splice(i, 1);
+    readiness.delete(planner);
+    partPlannersChanged();
+  };
+}
+
+/** Whether every registered planner can plan now. */
+export function partPlannersReady(): boolean {
+  for (const ready of readiness.values()) if (!ready()) return false;
+  return true;
+}
+
+/** Called by a planner when what it would plan has changed: it learnt a list, or a size. */
+export function partPlannersChanged(): void {
+  for (const listener of changeListeners) listener();
+}
+
+/** Hear when plans should be made again. Returns the way to stop hearing. */
+export function onPartPlannersChanged(listener: () => void): () => void {
+  changeListeners.add(listener);
+  return () => {
+    changeListeners.delete(listener);
   };
 }
 
@@ -373,6 +402,26 @@ export function applyDiff(manifest: PackManifest, plan: PackPlan, diff: PackDiff
 export function orphanedKeys(manifests: readonly PackManifest[], candidates: readonly string[]): string[] {
   const held = new Set(manifests.flatMap((m) => m.parts.map((p) => p.key)));
   return candidates.filter((key) => !held.has(key));
+}
+
+/**
+ * The real size of a file another pack already saved under `key`, or null when none has.
+ * A file packs share (the world map, the label glyphs) is fetched once: the next pack to
+ * want it records it as saved at that size, and nothing downloads.
+ */
+export function savedBytesOf(manifests: readonly PackManifest[], key: string): number | null {
+  for (const m of manifests) {
+    for (const p of m.parts) if (p.key === key && isPartSaved(p)) return p.bytes ?? null;
+  }
+  return null;
+}
+
+/**
+ * What saving a plan adds to the phone: every part no pack has saved yet. The first pack
+ * pays for the files every pack shares; the next one only for its own.
+ */
+export function bytesToSave(plan: PackPlan, manifests: readonly PackManifest[]): number {
+  return plan.parts.reduce((sum, p) => sum + (savedBytesOf(manifests, p.key) === null ? p.estimatedBytes : 0), 0);
 }
 
 /** A part's key as one flat file name, so the store needs no nested folders. */
