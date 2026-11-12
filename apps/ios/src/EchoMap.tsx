@@ -4,7 +4,8 @@
  * The web map is the design (`apps/prototype/src/MapCanvas.tsx`, `RouteMap.tsx`,
  * `Rail.tsx`), and this follows it:
  *
- *   - the navy style over our own map files (`basemap.ts`);
+ *   - the navy style over our own map files (`basemap.ts`), each read from the phone when
+ *     a download pack saved it and from the site when not (`chooseMapAddresses`);
  *   - every echo as a pin in its category's colour: a dark disc with a ring of the colour,
  *     a glow of it underneath and a contour outside, as `.pin-body` and `.pin-contour`
  *     draw them. The web pin carries its category's glyph in the middle; here a dot of the
@@ -34,7 +35,10 @@ import type { ExpressionSpecification } from "@maplibre/maplibre-gl-style-spec";
 import type { LatLng } from "@echofinders/core";
 import { ECHOES, distanceLabel } from "./library";
 import { nearestEchoes } from "./nearest";
-import { MAP_CREDIT, nativeBasemapStyle, streetSquares } from "./basemap";
+import { MAP_CREDIT, MAP_FONTSTACKS, nativeBasemapStyle, savedStreetSquares, streetSquares } from "./basemap";
+import { chooseMapAddresses, mapSquares } from "./mapPack";
+import { usePacks } from "./packs/PacksProvider";
+import { filesDirUri, localUriFor } from "./packs/store";
 import { useWhileUsingLocation, type LocationState } from "./location";
 import { useNarrator } from "./player";
 import { CATEGORY_COLOR, color, font, gutter, size } from "./theme";
@@ -94,19 +98,39 @@ export function EchoMap() {
   const [recentre, setRecentre] = useState(0);
   const at = state.status === "located" ? state.at : null;
 
-  // The style, once the squares are known. Until then the field alone, so nothing flashes.
-  const [style, setStyle] = useState<string | null>(null);
+  // The squares: the site's list, or with no signal the copy kept on the phone.
+  const [squares, setSquares] = useState<readonly string[] | null>(null);
   useEffect(() => {
     let live = true;
     streetSquares()
-      .catch(() => [] as readonly string[])
-      .then((squares) => {
-        if (live) setStyle(JSON.stringify(nativeBasemapStyle(squares)));
+      .catch(() => savedStreetSquares() ?? [])
+      .then((list) => {
+        if (live) setSquares(list);
       });
     return () => {
       live = false;
     };
   }, []);
+
+  // The map files saved packs hold. Only finished packs count, so a save in progress does
+  // not hand MapLibre a new style for every file.
+  const { packs } = usePacks();
+  const savedMapKeys = useMemo(
+    () =>
+      [...new Set(packs.filter((p) => p.state === "saved").flatMap((p) => p.parts.filter((x) => x.kind === "tiles").map((x) => x.key)))]
+        .sort()
+        .join("\n"),
+    [packs],
+  );
+
+  // The style, once the squares are known; until then the field alone, so nothing flashes.
+  // Each file from the phone when it is saved there, from the site when not.
+  const style = useMemo(() => {
+    if (!squares) return null;
+    const saved = savedMapKeys ? savedMapKeys.split("\n") : [];
+    const files = chooseMapAddresses(MAP_FONTSTACKS, localUriFor, filesDirUri());
+    return JSON.stringify(nativeBasemapStyle(mapSquares(squares, saved), files));
+  }, [squares, savedMapKeys]);
 
   // Follow you: street level on the first fix, then keep you in the middle as you walk.
   const centred = useRef(false);

@@ -16,6 +16,7 @@ import { setAudioModeAsync, useAudioPlayer, useAudioPlayerStatus, type AudioPlay
 import type { Echo } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./theme";
 import { renderedAudio } from "./library";
+import { localUriFor } from "./packs/store";
 
 interface Narrator {
   readonly player: AudioPlayer;
@@ -67,7 +68,8 @@ export function NarratorProvider({ children }: { children: ReactNode }) {
       const audio = renderedAudio(echo);
       if (!audio) return;
       if (current?.id !== echo.id) {
-        player.replace({ uri: audio.url });
+        // A saved copy first (Settings › Offline echoes), so it plays with no signal.
+        player.replace({ uri: localUriFor(audio.audioKey) ?? audio.url });
         setCurrent(echo);
       } else if (status.didJustFinish || (status.duration > 0 && status.currentTime >= status.duration - 0.5)) {
         void player.seekTo(0);

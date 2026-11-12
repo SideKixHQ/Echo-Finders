@@ -4,8 +4,11 @@
  */
 import { Linking, Pressable, StyleSheet, Text, View } from "react-native";
 import Constants from "expo-constants";
+import { useRouter } from "expo-router";
 import { Screen, ScreenTitle, ComingSoon } from "../../ui";
 import { color, font, gutter, size } from "../../theme";
+import { usePacks } from "../../packs/PacksProvider";
+import { echoCount } from "../../packs/plan";
 
 export default function SettingsTab() {
   return (
@@ -20,9 +23,27 @@ export default function SettingsTab() {
           <Text style={styles.link}>Change in iPhone Settings</Text>
         </Pressable>
       </View>
+      <OfflineRow />
       <ComingSoon what="Membership, privacy, listening and the rest" />
       <Text style={styles.version}>Native preview {Constants.expoConfig?.version ?? ""}</Text>
     </Screen>
+  );
+}
+
+/** Settings › Offline echoes: download packs (`src/app/offline.tsx`). */
+function OfflineRow() {
+  const router = useRouter();
+  const { packs } = usePacks();
+  const saved = packs.filter((p) => p.state === "saved");
+  const line =
+    packs.length === 0
+      ? "Save a place so its echoes play with no signal."
+      : `${saved.length} ${saved.length === 1 ? "place" : "places"} saved · ${echoCount(saved.reduce((n, p) => n + p.echoIds.length, 0))}`;
+  return (
+    <Pressable onPress={() => router.push("/offline")} accessibilityRole="button" style={styles.block}>
+      <Text style={styles.label}>Offline echoes</Text>
+      <Text style={styles.line}>{line}</Text>
+    </Pressable>
   );
 }
 

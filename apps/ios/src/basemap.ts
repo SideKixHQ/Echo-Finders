@@ -21,35 +21,24 @@
  * map opens. The list of squares is the web's own `index.json`, read when the map opens,
  * so a new city reaches the phone with the web's next deploy, no app update.
  *
- * OFFLINE LATER. Every address comes from `MapFiles`, and MapLibre Native reads
- * `pmtiles://file://...` as readily as `pmtiles://https://...`. Bundling or downloading
- * the squares is a change of addresses, not of this file.
+ * OFFLINE. A download pack saves the squares under its echoes, the world, the coast and
+ * the label glyphs (`mapPack.ts` plans them, `mapPacks.ts` puts them into packs). The map
+ * reads a saved file as `pmtiles://file://...`, which MapLibre Native reads as readily as
+ * `pmtiles://https://...`, and anything not saved from the site, file by file
+ * (`chooseMapAddresses`). The list of squares is kept on the phone each time it is read,
+ * so with no signal the map still knows its squares.
  */
 import type { LayerSpecification, SourceSpecification, StyleSpecification } from "@maplibre/maplibre-react-native";
 import { basemapStyle } from "../../prototype/src/basemap-style";
 import { AUDIO_ORIGIN } from "./library";
-
-/** Where the map's files are. The web app's site today; a folder on the phone later. */
-export interface MapFiles {
-  /** The folder of squares: `index.json` and one `<square>.pmtiles` each. */
-  readonly streets: string;
-  /** Coastlines, borders and towns, everywhere, zoomed out. */
-  readonly world: string;
-  /** The real shore around the echoes. */
-  readonly coast: string;
-  /** Label glyphs, with `{fontstack}` and `{range}`. */
-  readonly glyphs: string;
-}
+import { chooseMapAddresses, fontstacksOf, type MapAddresses } from "./mapPack";
+import { readOfflineJson, writeOfflineJson } from "./packs/store";
 
 /** The web app's site, which serves the audio and the map alike. */
 export const MAP_ORIGIN = AUDIO_ORIGIN;
 
-export const SITE_MAP: MapFiles = {
-  streets: `${MAP_ORIGIN}/map/echoes`,
-  world: `${MAP_ORIGIN}/map/world.pmtiles`,
-  coast: `${MAP_ORIGIN}/map/coast.pmtiles`,
-  glyphs: `${MAP_ORIGIN}/fonts/{fontstack}/{range}.pbf`,
-};
+/** Every file from the site: the map before anything is saved. */
+export const SITE_MAP: MapAddresses = chooseMapAddresses([], () => null, null, MAP_ORIGIN);
 
 /**
  * The credit the map needs: OpenStreetMap's data is ODbL, which requires it. The web
@@ -70,55 +59,77 @@ interface SquareIndex {
   readonly squares: readonly string[];
 }
 
+/** Where the last list read is kept, under the offline folder. */
+const INDEX_COPY = "map-index.json";
+
+function squaresIn(index: unknown): string[] | null {
+  const list = (index as Partial<SquareIndex> | null)?.squares;
+  if (!Array.isArray(list)) return null;
+  return list.filter((s): s is string => typeof s === "string" && /^\d+-\d+-\d+$/.test(s));
+}
+
 let squares: Promise<readonly string[]> | null = null;
 
 /**
- * The squares the street map is cut into. Read once per launch; a failure is not kept, so
- * the next time the map opens it tries again, and until then the map is the world outline.
+ * The squares the street map is cut into. Read once per launch, and kept on the phone; a
+ * failure is not kept, so the next time the map opens it tries again.
  */
-export function streetSquares(files: MapFiles = SITE_MAP): Promise<readonly string[]> {
-  squares ??= fetch(`${files.streets}/index.json`)
+export function streetSquares(): Promise<readonly string[]> {
+  squares ??= fetch(`${MAP_ORIGIN}/map/echoes/index.json`)
     .then((r) => {
       if (!r.ok) throw new Error(`map index: ${r.status}`);
-      return r.json() as Promise<SquareIndex>;
+      return r.json() as Promise<unknown>;
     })
-    .then((index) => index.squares.filter((s) => /^\d+-\d+-\d+$/.test(s)));
+    .then((index) => {
+      const list = squaresIn(index);
+      if (!list) throw new Error("map index: no squares");
+      writeOfflineJson(INDEX_COPY, { squares: list });
+      return list;
+    });
   squares.catch(() => {
     squares = null;
   });
   return squares;
 }
 
+/** The list as last read, from the phone: what the map uses with no signal. */
+export function savedStreetSquares(): readonly string[] | null {
+  return squaresIn(readOfflineJson(INDEX_COPY));
+}
+
 /** Placeholder for the one street source the web style names; replaced per square below. */
 const STREETS = "base";
 
 /**
- * The web's dark style, with the street source split into one source per square and the
- * map field painted underneath.
+ * The web's dark style, with the street source split into one source per square, each
+ * read from the address `files` gives it, and the map field painted underneath.
  */
-export function nativeBasemapStyle(squareIds: readonly string[], files: MapFiles = SITE_MAP): StyleSpecification {
-  const web = basemapStyle(
-    `pmtiles://${files.streets}`,
-    files.glyphs,
-    "dark",
-    `pmtiles://${files.world}`,
-    `pmtiles://${files.coast}`,
-  ) as unknown as StyleSpecification;
+export function nativeBasemapStyle(squareIds: readonly string[], files: MapAddresses = SITE_MAP): StyleSpecification {
+  const web = basemapStyle(`pmtiles://${MAP_ORIGIN}/map/echoes`, files.glyphs, "dark", files.world, files.coast) as unknown as StyleSpecification;
 
   const { [STREETS]: street, ...otherSources } = web.sources;
   const sources: Record<string, SourceSpecification> = { ...otherSources };
   if (street) {
     for (const square of squareIds) {
-      sources[`${STREETS}-${square}`] = { ...street, url: `pmtiles://${files.streets}/${square}.pmtiles` } as SourceSpecification;
+      sources[`${STREETS}-${square}`] = { ...street, url: files.square(square) } as SourceSpecification;
     }
   }
+
+  // Glyphs from the phone: each stack goes by the name its saved files are under.
+  const alias = files.fontAlias;
+  const named = (layer: LayerSpecification): LayerSpecification => {
+    if (!alias || layer.type !== "symbol") return layer;
+    const font = layer.layout?.["text-font"];
+    if (!Array.isArray(font) || !font.every((f) => typeof f === "string")) return layer;
+    return { ...layer, layout: { ...layer.layout, "text-font": [alias(font.join(","))] } } as LayerSpecification;
+  };
 
   // Layer by layer, square by square: every square's water under every square's roads,
   // and every name over every road, as the web style orders them.
   const layers: LayerSpecification[] = [
     { id: "field", type: "background", paint: { "background-color": MAP_FIELD } },
   ];
-  for (const layer of web.layers) {
+  for (const layer of web.layers.map(named)) {
     if (!("source" in layer) || layer.source !== STREETS) {
       layers.push(layer);
       continue;
@@ -130,3 +141,6 @@ export function nativeBasemapStyle(squareIds: readonly string[], files: MapFiles
 
   return { ...web, sources, layers };
 }
+
+/** The font stacks the style's labels use: the glyphs a pack saves. */
+export const MAP_FONTSTACKS: readonly string[] = fontstacksOf(nativeBasemapStyle([]));
