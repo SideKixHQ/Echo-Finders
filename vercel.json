@@ -4,6 +4,7 @@
   "outputDirectory": "apps/prototype/dist",
   "installCommand": "npm install",
   "framework": null,
+  "ignoreCommand": "bash scripts/vercel-ignore.sh app",
   "github": {
     "silent": true
   },
