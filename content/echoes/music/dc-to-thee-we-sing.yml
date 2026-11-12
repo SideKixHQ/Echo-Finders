@@ -7,7 +7,7 @@ summary: "Refused a concert hall, Marian Anderson sang from the Lincoln Memorial
 place: "Lincoln Memorial steps, Washington, D.C."
 at: { lat: 38.88929, lng: -77.04888 }
 triggerRadiusKm: 0.04
-category: arts
+category: music
 format: short
 durationS: 60
 visibility: at-hand

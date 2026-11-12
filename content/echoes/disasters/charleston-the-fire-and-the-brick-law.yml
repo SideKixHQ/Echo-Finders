@@ -7,7 +7,7 @@ summary: "The fire of November 1740 burned the oldest part of Charles Town. Thre
 place: "Broad and Church Streets, Charleston, South Carolina"
 at: { lat: 32.77675, lng: -79.92925 }
 triggerRadiusKm: 0.04
-category: history
+category: disasters
 format: short
 durationS: 94
 visibility: at-hand

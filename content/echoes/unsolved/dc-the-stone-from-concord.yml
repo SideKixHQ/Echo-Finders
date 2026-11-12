@@ -7,7 +7,7 @@ summary: "In 1854 men tied up the night watchman and stole the Pope's gift stone
 place: "Washington Monument grounds, National Mall, Washington, D.C."
 at: { lat: 38.88935, lng: -77.03510 }
 triggerRadiusKm: 0.06
-category: history
+category: unsolved
 format: short
 durationS: 101
 visibility: at-hand

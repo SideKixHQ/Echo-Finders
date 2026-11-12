@@ -7,7 +7,7 @@ summary: "Lightnin' Hopkins played Carnegie Hall and for the Queen. For more tha
 place: "Sam (Lightnin') Hopkins marker, 3405 Emancipation Avenue (formerly Dowling Street), Third Ward, Houston, Texas"
 at: { lat: 29.73324, lng: -95.36587 }
 triggerRadiusKm: 0.05
-category: arts
+category: music
 format: short
 durationS: 88
 visibility: at-hand

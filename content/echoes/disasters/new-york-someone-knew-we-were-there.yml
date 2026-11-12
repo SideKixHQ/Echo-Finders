@@ -7,7 +7,7 @@ summary: "In July 1945 a bomber flew into the Empire State Building in fog. Trap
 place: "Empire State Building, Fifth Avenue at 34th Street, Manhattan"
 at: { lat: 40.74870, lng: -73.98520 }
 triggerRadiusKm: 0.05
-category: history
+category: disasters
 format: short
 durationS: 93
 visibility: at-hand

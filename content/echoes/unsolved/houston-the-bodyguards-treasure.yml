@@ -8,7 +8,7 @@ place: "Glendale Cemetery and old Harrisburg, Broadway at Magnolia, East End, Ho
 at: { lat: 29.71940, lng: -95.27440 }
 triggerRadiusKm: 0.15
 voice: wC1005J19tvhoqqC2hkf
-category: legend
+category: unsolved
 format: short
 durationS: 77
 visibility: position-only

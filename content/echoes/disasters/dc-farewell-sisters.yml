@@ -7,7 +7,7 @@ summary: "In June 1864 an explosion at the Washington Arsenal killed twenty one 
 place: "Arsenal Monument, Congressional Cemetery, 1801 E Street SE, Washington, D.C."
 at: { lat: 38.88246, lng: -76.97875 }
 triggerRadiusKm: 0.04
-category: history
+category: disasters
 format: short
 durationS: 77
 visibility: at-hand

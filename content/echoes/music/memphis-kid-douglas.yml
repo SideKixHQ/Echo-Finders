@@ -7,7 +7,7 @@ summary: "Before it was Handy Park, Church's Park was where Memphis Minnie, the 
 place: "W. C. Handy Park, formerly Church's Park, Beale Street, Memphis, Tennessee"
 at: { lat: 35.1401, lng: -90.051 }
 triggerRadiusKm: 0.04
-category: people
+category: music
 format: short
 durationS: 60
 visibility: at-hand

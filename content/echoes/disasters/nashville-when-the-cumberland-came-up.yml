@@ -7,7 +7,7 @@ summary: "After record rain in May 2010 the Cumberland crested at 52.55 feet at 
 place: "Cumberland River at Riverfront Park, First Avenue North, Nashville, Tennessee"
 at: { lat: 36.1617, lng: -86.7742 }
 triggerRadiusKm: 0.12
-category: land
+category: disasters
 format: short
 durationS: 62
 visibility: at-hand

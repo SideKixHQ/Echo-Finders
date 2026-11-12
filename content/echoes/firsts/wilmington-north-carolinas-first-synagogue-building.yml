@@ -8,7 +8,7 @@ summary: "Dedicated in 1876, Wilmington's Temple of Israel is recognized as Nort
 place: "Temple of Israel, Fourth and Market streets, Wilmington, North Carolina"
 at: { lat: 34.23548, lng: -77.94436 }
 triggerRadiusKm: 0.04
-category: built
+category: firsts
 format: short
 durationS: 58
 visibility: at-hand

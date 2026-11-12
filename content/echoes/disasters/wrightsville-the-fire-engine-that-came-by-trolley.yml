@@ -6,7 +6,7 @@ summary: "In the Great Fire of 1934, with no automobile bridge to the island, Wi
 place: "North Lumina Avenue near Salisbury Street, Wrightsville Beach, North Carolina"
 at: { lat: 34.21545, lng: -77.79055 }
 triggerRadiusKm: 0.1
-category: history
+category: disasters
 format: short
 durationS: 45
 visibility: at-hand

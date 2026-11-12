@@ -7,7 +7,7 @@ summary: "John C. Calhoun is buried in St. Philip's western churchyard. During t
 place: "St. Philip's Church western churchyard, Church Street, Charleston, South Carolina"
 at: { lat: 32.77900, lng: -79.92972 }
 triggerRadiusKm: 0.04
-category: history
+category: hidden
 format: short
 durationS: 110
 visibility: at-hand

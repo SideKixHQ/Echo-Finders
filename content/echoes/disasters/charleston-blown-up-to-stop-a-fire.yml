@@ -7,7 +7,7 @@ summary: "Charleston's Quaker meeting house stood on King Street from the 1690s.
 place: "Quaker burying ground, 138 King Street, Charleston, South Carolina"
 at: { lat: 32.77745, lng: -79.93285 }
 triggerRadiusKm: 0.03
-category: history
+category: disasters
 format: look-below
 durationS: 33
 visibility: at-hand

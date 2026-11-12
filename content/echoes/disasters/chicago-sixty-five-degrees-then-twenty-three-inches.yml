@@ -7,7 +7,7 @@ summary: "In January 1967 it was 65 degrees two days before Chicago's biggest sn
 place: "Chicago River at the Michigan Avenue (DuSable) Bridge, Chicago, Illinois"
 at: { lat: 41.88886, lng: -87.62436 }
 triggerRadiusKm: 0.08
-category: land
+category: disasters
 format: short
 durationS: 66
 visibility: at-hand

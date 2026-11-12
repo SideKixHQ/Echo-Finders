@@ -7,7 +7,7 @@ summary: "Johnny Mercer, born in Savannah, wrote Moon River. His bronze here was
 place: "Johnny Mercer statue, Ellis Square, Savannah, Georgia"
 at: { lat: 32.08050, lng: -81.09370 }
 triggerRadiusKm: 0.05
-category: arts
+category: music
 format: short
 durationS: 70
 visibility: at-hand

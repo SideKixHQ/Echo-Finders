@@ -7,7 +7,7 @@ summary: "Old St. Joseph's was tucked into a courtyard off an alley. Washington 
 place: "Old St. Joseph's Church, Willings Alley, Philadelphia, Pennsylvania"
 at: { lat: 39.94643, lng: -75.14745 }
 triggerRadiusKm: 0.04
-category: history
+category: hidden
 format: short
 durationS: 87
 visibility: at-hand

@@ -7,7 +7,7 @@ summary: "In November 1837 the Seminole leader Wild Cat escaped from this fort w
 place: "Castillo de San Marcos, grounds outside the southwest corner, St. Augustine, Florida"
 at: { lat: 29.89735, lng: -81.31205 }
 triggerRadiusKm: 0.05
-category: history
+category: unsolved
 format: short
 durationS: 77
 visibility: at-hand

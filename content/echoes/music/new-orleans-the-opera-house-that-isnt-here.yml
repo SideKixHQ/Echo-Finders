@@ -7,7 +7,7 @@ summary: "The French Opera House stood here sixty years. Its 1866 company drowne
 place: "Site of the French Opera House, Bourbon and Toulouse streets, New Orleans, Louisiana"
 at: { lat: 29.95791, lng: -90.06621 }
 triggerRadiusKm: 0.04
-category: arts
+category: music
 format: short
 durationS: 77
 visibility: at-hand

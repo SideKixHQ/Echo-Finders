@@ -7,7 +7,7 @@ summary: "In 1958 an Air Force bomber dropped a 7,000 pound nuclear bomb into th
 place: "South end of Tybee Island, facing Wassaw Sound, Georgia"
 at: { lat: 31.98900, lng: -80.84950 }
 triggerRadiusKm: 0.15
-category: history
+category: unsolved
 format: short
 durationS: 83
 visibility: at-hand

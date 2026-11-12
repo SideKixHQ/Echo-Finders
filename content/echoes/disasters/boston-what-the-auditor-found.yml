@@ -7,7 +7,7 @@ summary: "In 1919 a molasses tank burst here and killed twenty-one people. The o
 place: "Langone Park, site of the 1919 molasses flood, Commercial Street, North End, Boston, Massachusetts"
 at: { lat: 42.36833, lng: -71.05576 }
 triggerRadiusKm: 0.05
-category: history
+category: disasters
 format: short
 durationS: 80
 visibility: at-hand

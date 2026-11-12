@@ -7,7 +7,7 @@ summary: "The state flag carries May 20, 1775, for a Mecklenburg declaration tha
 place: "Independence Square, Trade Street at Tryon Street, Charlotte, North Carolina"
 at: { lat: 35.22709, lng: -80.84313 }
 triggerRadiusKm: 0.05
-category: history
+category: unsolved
 format: short
 durationS: 92
 visibility: at-hand

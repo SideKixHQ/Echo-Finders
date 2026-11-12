@@ -6,7 +6,7 @@ summary: "Hurricane Hazel struck on October 15, 1954, damaging 530 homes at Wrig
 place: "Wrightsville Beach Museum of History, 303 West Salisbury Street, Wrightsville Beach, North Carolina"
 at: { lat: 34.21668, lng: -77.80317 }
 triggerRadiusKm: 0.05
-category: history
+category: disasters
 format: look-below
 durationS: 41
 visibility: at-hand

@@ -7,7 +7,7 @@ summary: "In July 1915 the Eastland rolled over at its Clark Street dock and mor
 place: "Chicago River at the Clark Street Bridge, south bank, Chicago, Illinois"
 at: { lat: 41.887, lng: -87.6315 }
 triggerRadiusKm: 0.08
-category: history
+category: disasters
 format: short
 durationS: 81
 visibility: at-hand

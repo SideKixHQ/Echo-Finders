@@ -6,7 +6,7 @@ summary: "The story of a U-boat that shelled the Kure Beach chemical plant in 19
 place: "Kure Beach oceanfront, North Carolina"
 at: { lat: 33.997777, lng: -77.908055 }
 triggerRadiusKm: 0.15
-category: legend
+category: unsolved
 format: short
 durationS: 50
 visibility: at-hand

@@ -7,7 +7,7 @@ summary: "The man falling from his horse on this column is certain. Whether he i
 place: "Pulaski Monument, Monterey Square, Savannah, Georgia"
 at: { lat: 32.07135, lng: -81.09490 }
 triggerRadiusKm: 0.04
-category: history
+category: unsolved
 format: short
 durationS: 82
 visibility: at-hand

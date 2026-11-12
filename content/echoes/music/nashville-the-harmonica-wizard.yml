@@ -7,7 +7,7 @@ summary: "On the Opry's first network broadcast, from this hall in 1939, DeFord 
 place: "War Memorial Auditorium, Nashville, Tennessee"
 at: { lat: 36.16435, lng: -86.78375 }
 triggerRadiusKm: 0.05
-category: people
+category: music
 format: short
 durationS: 62
 visibility: at-hand

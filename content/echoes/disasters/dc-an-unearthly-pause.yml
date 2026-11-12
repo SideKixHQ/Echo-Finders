@@ -7,7 +7,7 @@ summary: "On 28 January 1922, the weight of a record snowfall brought down the r
 place: "Site of the Knickerbocker Theater, 18th Street and Columbia Road NW, Adams Morgan, Washington, D.C."
 at: { lat: 38.92210, lng: -77.04255 }
 triggerRadiusKm: 0.04
-category: history
+category: disasters
 format: short
 durationS: 67
 visibility: at-hand

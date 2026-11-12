@@ -7,7 +7,7 @@ summary: "In March 1911 a fire broke out in the factory on these top floors. Som
 place: "Brown Building, Washington Place and Greene Street, Greenwich Village, Manhattan"
 at: { lat: 40.73012, lng: -73.99525 }
 triggerRadiusKm: 0.04
-category: history
+category: disasters
 format: short
 durationS: 87
 visibility: at-hand

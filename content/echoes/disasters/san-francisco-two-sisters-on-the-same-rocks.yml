@@ -7,7 +7,7 @@ summary: "Two sister tankers were wrecked in fog at Lands End fifteen years apar
 place: "Lands End, above Mile Rock Beach, Lands End Trail, San Francisco, California"
 at: { lat: 37.7878, lng: -122.5055 }
 triggerRadiusKm: 0.12
-category: history
+category: disasters
 format: short
 durationS: 75
 visibility: at-hand

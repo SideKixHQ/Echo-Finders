@@ -7,7 +7,7 @@ summary: "Hurricane Helene never made landfall in 1958, yet the damage in Southp
 place: "West Bay Street waterfront between Lord Street and Howe Street, Southport, North Carolina"
 at: { lat: 33.91665, lng: -78.0206 }
 triggerRadiusKm: 0.04
-category: land
+category: disasters
 format: short
 durationS: 60
 visibility: at-hand

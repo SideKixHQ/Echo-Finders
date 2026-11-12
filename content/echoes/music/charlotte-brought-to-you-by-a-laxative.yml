@@ -7,7 +7,7 @@ summary: "WBT, the state's first commercial radio station, broadcast country mus
 place: "South Tryon Street at Third Street, Charlotte, North Carolina"
 at: { lat: 35.2249, lng: -80.846 }
 triggerRadiusKm: 0.05
-category: arts
+category: music
 format: short
 durationS: 69
 visibility: at-hand

@@ -7,7 +7,7 @@ summary: "On 15 June 1904 a church from this neighbourhood set off for its picni
 place: "General Slocum memorial, Tompkins Square Park, near East 10th Street, East Village, Manhattan"
 at: { lat: 40.72745, lng: -73.98205 }
 triggerRadiusKm: 0.03
-category: history
+category: disasters
 format: short
 durationS: 94
 visibility: at-hand

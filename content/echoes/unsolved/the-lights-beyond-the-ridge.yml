@@ -9,7 +9,7 @@ summary: "Look out toward the ridges."
 place: "Lost Cove Cliffs Overlook, Blue Ridge Parkway, North Carolina"
 at: { lat: 36.00100, lng: -81.87900 }
 triggerRadiusKm: 0.4
-category: legend
+category: unsolved
 format: short
 durationS: 58
 visibility: at-hand

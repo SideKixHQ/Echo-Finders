@@ -8,7 +8,7 @@ place: "Dead Horse Bay, on old Barren Island, off Flatbush Avenue, Brooklyn"
 at: { lat: 40.58330, lng: -73.89560 }
 triggerRadiusKm: 0.12
 voice: wC1005J19tvhoqqC2hkf
-category: legend
+category: unsolved
 format: short
 durationS: 49
 visibility: at-hand

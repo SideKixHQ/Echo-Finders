@@ -7,7 +7,7 @@ summary: "The Old Jail used to be taller. On the night of the 1886 earthquake, i
 place: "Old City Jail, 21 Magazine Street, Charleston, South Carolina"
 at: { lat: 32.77862, lng: -79.93718 }
 triggerRadiusKm: 0.04
-category: history
+category: disasters
 format: short
 durationS: 88
 visibility: at-hand

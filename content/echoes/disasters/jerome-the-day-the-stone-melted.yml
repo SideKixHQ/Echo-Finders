@@ -7,7 +7,7 @@ summary: "In September 1898 fire wiped out Jerome's business district. Only the 
 place: "Main Street and Jerome Avenue, Jerome, Arizona"
 at: { lat: 34.7514, lng: -112.11567 }
 triggerRadiusKm: 0.1
-category: history
+category: disasters
 format: short
 durationS: 81
 visibility: at-hand

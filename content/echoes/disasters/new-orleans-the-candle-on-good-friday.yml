@@ -7,7 +7,7 @@ summary: "In 1788 a chapel candle burned most of New Orleans. The old city you w
 place: "The Cabildo, St. Peter Street side, Jackson Square, New Orleans, Louisiana"
 at: { lat: 29.95747, lng: -90.06403 }
 triggerRadiusKm: 0.04
-category: history
+category: disasters
 format: short
 durationS: 99
 visibility: at-hand

@@ -7,7 +7,7 @@ summary: "On June 11, 1949, Hank Williams made his Opry debut here with Lovesick
 place: "Ryman Auditorium, Fifth Avenue North, Nashville, Tennessee"
 at: { lat: 36.1614, lng: -86.7787 }
 triggerRadiusKm: 0.05
-category: arts
+category: music
 format: short
 durationS: 59
 visibility: at-hand

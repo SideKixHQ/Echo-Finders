@@ -7,7 +7,7 @@ summary: "The Rudisill and Saint Catherine gold mines sat near South Boulevard a
 place: "South Boulevard at Bland Street, South End, Charlotte, North Carolina"
 at: { lat: 35.2148, lng: -80.8562 }
 triggerRadiusKm: 0.08
-category: history
+category: hidden
 format: short
 durationS: 66
 visibility: at-hand

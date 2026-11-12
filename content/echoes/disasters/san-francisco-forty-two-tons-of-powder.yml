@@ -7,7 +7,7 @@ summary: "In 1887 an abandoned schooner carrying 42 tons of black powder ran agr
 place: "Sutro Baths ruins below the Cliff House, Point Lobos Avenue, San Francisco, California"
 at: { lat: 37.7787, lng: -122.5137 }
 triggerRadiusKm: 0.08
-category: history
+category: disasters
 format: short
 durationS: 74
 visibility: at-hand

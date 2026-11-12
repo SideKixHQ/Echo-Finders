@@ -7,7 +7,7 @@ summary: "In 1942, under the stands of Stagg Field, Manhattan Project scientists
 place: "Site of Chicago Pile-1, Ellis Avenue, University of Chicago, Chicago, Illinois"
 at: { lat: 41.7925, lng: -87.6011 }
 triggerRadiusKm: 0.06
-category: history
+category: firsts
 format: short
 durationS: 77
 visibility: at-hand

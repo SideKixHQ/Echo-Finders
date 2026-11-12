@@ -8,7 +8,7 @@ summary: "On June 22, 1969, the Cuyahoga caught fire for less than half an hour.
 place: "Cuyahoga River in the Flats, Cleveland, Ohio"
 at: { lat: 41.48926, lng: -81.70443 }
 triggerRadiusKm: 0.1
-category: history
+category: disasters
 format: short
 durationS: 55
 visibility: at-hand

@@ -8,7 +8,7 @@ summary: "The Bellamy house went up between 1859 and 1861, and soon afterward Wi
 place: "Bellamy Mansion Museum, 503 Market Street, Wilmington, North Carolina"
 at: { lat: 34.23599, lng: -77.94279 }
 triggerRadiusKm: 0.04
-category: history
+category: disasters
 format: short
 durationS: 59
 visibility: at-hand

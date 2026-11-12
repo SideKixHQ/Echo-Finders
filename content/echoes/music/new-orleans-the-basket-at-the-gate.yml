@@ -7,7 +7,7 @@ summary: "In 1961 a young couple opened Preservation Hall, where Black and white
 place: "Preservation Hall, 726 St. Peter Street, French Quarter, New Orleans, Louisiana"
 at: { lat: 29.95832, lng: -90.06530 }
 triggerRadiusKm: 0.03
-category: arts
+category: music
 format: short
 durationS: 84
 visibility: at-hand

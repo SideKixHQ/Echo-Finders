@@ -7,7 +7,7 @@ summary: "On 28 September 1918 a war bond pageant filled Broad Street. Five days
 place: "Broad and Pine streets, Avenue of the Arts, Philadelphia, Pennsylvania"
 at: { lat: 39.94550, lng: -75.16500 }
 triggerRadiusKm: 0.05
-category: history
+category: disasters
 format: short
 durationS: 93
 visibility: at-hand

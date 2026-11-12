@@ -7,7 +7,7 @@ summary: "An 1874 fire at the Granite Mill killed 20 workers, mainly young girls
 place: "Site of the Granite Mill, Fall River, Massachusetts"
 at: { lat: 41.6997, lng: -71.146 }
 triggerRadiusKm: 0.1
-category: history
+category: disasters
 format: look-below
 durationS: 17
 visibility: at-hand

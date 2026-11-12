@@ -7,7 +7,7 @@ summary: "In 1870 a car blown by air ran one block under Broadway here. It was N
 place: "Broadway between Warren and Murray Streets, opposite City Hall Park, Manhattan"
 at: { lat: 40.71400, lng: -74.00790 }
 triggerRadiusKm: 0.06
-category: built
+category: firsts
 format: short
 durationS: 80
 visibility: at-hand

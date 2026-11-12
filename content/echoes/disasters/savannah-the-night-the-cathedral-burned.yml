@@ -7,7 +7,7 @@ summary: "In 1898 every fire engine in Savannah was somewhere else when the cath
 place: "Cathedral of St. John the Baptist, Lafayette Square, Savannah, Georgia"
 at: { lat: 32.07325, lng: -81.09105 }
 triggerRadiusKm: 0.04
-category: history
+category: disasters
 format: short
 durationS: 69
 visibility: at-hand

@@ -7,7 +7,7 @@ summary: "Tomochichi is buried somewhere in Wright Square. The stone that marks 
 place: "Tomochichi memorial stone, Wright Square, Savannah, Georgia"
 at: { lat: 32.07783, lng: -81.09215 }
 triggerRadiusKm: 0.04
-category: history
+category: unsolved
 format: short
 durationS: 99
 visibility: at-hand

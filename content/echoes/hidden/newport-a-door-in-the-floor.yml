@@ -7,7 +7,7 @@ summary: "Under the reading desk of Touro Synagogue is a trap door to an escape 
 place: "Touro Synagogue, 85 Touro Street, Newport, Rhode Island"
 at: { lat: 41.48925, lng: -71.3123 }
 triggerRadiusKm: 0.05
-category: built
+category: hidden
 format: look-below
 durationS: 20
 visibility: at-hand

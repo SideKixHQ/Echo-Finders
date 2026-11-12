@@ -7,7 +7,7 @@ summary: "In April 1865 the overloaded Sultana left Memphis with freed Union pri
 place: "Mississippi River riverfront, Tom Lee Park, Memphis, Tennessee"
 at: { lat: 35.1365, lng: -90.0627 }
 triggerRadiusKm: 0.15
-category: history
+category: disasters
 format: short
 durationS: 81
 visibility: at-hand

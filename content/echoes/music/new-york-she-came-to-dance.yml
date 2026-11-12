@@ -8,7 +8,7 @@ summary: "In November 1934 a homeless seventeen year old walked onto the Apollo 
 place: "Apollo Theater, 125th Street, Harlem, Manhattan"
 at: { lat: 40.80985, lng: -73.95015 }
 triggerRadiusKm: 0.04
-category: arts
+category: music
 format: short
 durationS: 80
 visibility: at-hand

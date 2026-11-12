@@ -6,7 +6,7 @@ summary: "Legend says Captain Kidd buried two chests of gold and silver on Money
 place: "Wynn Plaza Waterfront Park, 2 Waynick Boulevard, Wrightsville Beach, North Carolina"
 at: { lat: 34.20832, lng: -77.79659 }
 triggerRadiusKm: 0.08
-category: legend
+category: unsolved
 format: look-below
 durationS: 38
 visibility: at-hand

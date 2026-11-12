@@ -7,7 +7,7 @@ summary: "Eastern Market had not shut its doors since 1873. Then one night in 20
 place: "Eastern Market, 225 7th Street SE, Capitol Hill, Washington, D.C."
 at: { lat: 38.88660, lng: -76.99672 }
 triggerRadiusKm: 0.04
-category: built
+category: disasters
 format: short
 durationS: 85
 visibility: at-hand

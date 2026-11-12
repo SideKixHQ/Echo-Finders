@@ -7,7 +7,7 @@ summary: "In 1996 a carpenter checking an empty building found a letter hanging 
 place: "Clara Barton Missing Soldiers Office, 437 7th Street NW, Penn Quarter, Washington, D.C."
 at: { lat: 38.89582, lng: -77.02165 }
 triggerRadiusKm: 0.03
-category: history
+category: hidden
 format: short
 durationS: 95
 visibility: at-hand

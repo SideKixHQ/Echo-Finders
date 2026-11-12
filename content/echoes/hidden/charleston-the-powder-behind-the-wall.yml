@@ -7,7 +7,7 @@ summary: "In 1780 the Americans bricked ten thousand pounds of powder into the E
 place: "The Old Exchange and Provost Dungeon, East Bay Street, Charleston, South Carolina"
 at: { lat: 32.77695, lng: -79.92730 }
 triggerRadiusKm: 0.04
-category: history
+category: hidden
 format: short
 durationS: 84
 visibility: at-hand

@@ -7,7 +7,7 @@ summary: "Hurricane Hazel's surge in October 1954 swept away 352 of the 357 buil
 place: "Hurricane Hazel historical marker, Country Club Drive (NC 133) at Yaupon Way, Oak Island, North Carolina"
 at: { lat: 33.9122, lng: -78.073 }
 triggerRadiusKm: 0.05
-category: history
+category: disasters
 format: short
 durationS: 52
 visibility: at-hand

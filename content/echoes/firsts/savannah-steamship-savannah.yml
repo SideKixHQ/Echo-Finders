@@ -7,7 +7,7 @@ summary: "In 1819 the Savannah left this river for Liverpool, the first steamshi
 place: "Savannah riverfront, River Street, Savannah, Georgia"
 at: { lat: 32.08215, lng: -81.09230 }
 triggerRadiusKm: 0.05
-category: history
+category: firsts
 format: short
 durationS: 77
 visibility: at-hand

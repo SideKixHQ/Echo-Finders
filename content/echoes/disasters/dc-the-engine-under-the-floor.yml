@@ -7,7 +7,7 @@ summary: "In 1953 a runaway express crashed through Union Station's concourse fl
 place: "Union Station concourse, Washington, D.C."
 at: { lat: 38.89770, lng: -77.00630 }
 triggerRadiusKm: 0.06
-category: history
+category: disasters
 format: short
 durationS: 81
 visibility: at-hand

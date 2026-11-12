@@ -8,7 +8,7 @@ place: "Houston Avenue at Washington Avenue, Houston, Texas"
 at: { lat: 29.76735, lng: -95.37245 }
 triggerRadiusKm: 0.04
 voice: wC1005J19tvhoqqC2hkf
-category: legend
+category: unsolved
 format: short
 durationS: 77
 visibility: position-only

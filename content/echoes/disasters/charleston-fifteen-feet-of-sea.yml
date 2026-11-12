@@ -7,7 +7,7 @@ summary: "Hurricane Hugo came ashore at Sullivan's Island at midnight on 22 Sept
 place: "Breach Inlet, Isle of Palms side, South Carolina"
 at: { lat: 32.78100, lng: -79.80500 }
 triggerRadiusKm: 0.1
-category: land
+category: disasters
 format: short
 durationS: 56
 visibility: at-hand

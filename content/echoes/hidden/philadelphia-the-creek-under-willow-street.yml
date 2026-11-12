@@ -7,7 +7,7 @@ summary: "Willow Street is laid over a buried creek. Here boys once rowed boats 
 place: "Second and Willow streets, over the bed of Pegg's Run, Northern Liberties, Philadelphia, Pennsylvania"
 at: { lat: 39.95800, lng: -75.14195 }
 triggerRadiusKm: 0.05
-category: land
+category: hidden
 format: short
 durationS: 85
 visibility: at-hand

@@ -7,7 +7,7 @@ summary: "A pond once filled this hollow among the courthouses. A steamboat was 
 place: "Collect Pond Park, Centre Street at Leonard Street, Civic Center, Manhattan"
 at: { lat: 40.71639, lng: -74.00167 }
 triggerRadiusKm: 0.06
-category: land
+category: hidden
 format: short
 durationS: 88
 visibility: at-hand

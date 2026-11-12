@@ -7,7 +7,7 @@ summary: "Newport's stone tower has long been called a Viking relic. The likelie
 place: "Old Stone Mill (Newport Tower), Touro Park, Newport, Rhode Island"
 at: { lat: 41.4858, lng: -71.3099 }
 triggerRadiusKm: 0.05
-category: legend
+category: unsolved
 format: short
 durationS: 55
 visibility: at-hand

@@ -7,7 +7,7 @@ summary: "The Banholzer brewery near Shepard Road and Drake Street dug caves hal
 place: "Bluff near Shepard Road and Drake Street, West Seventh neighborhood, Saint Paul, Minnesota"
 at: { lat: 44.9215, lng: -93.128 }
 triggerRadiusKm: 0.15
-category: food-drink
+category: hidden
 format: look-below
 durationS: 26
 visibility: at-hand
