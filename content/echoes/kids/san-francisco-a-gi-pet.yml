@@ -9,7 +9,7 @@ at: { lat: 37.80290, lng: -122.46140 }
 triggerRadiusKm: 0.04
 category: kids
 format: short
-durationS: 57
+durationS: 56
 visibility: at-hand
 certainty: documented
 voice: UrTldiIxfedDl9tlesyS
@@ -33,7 +33,7 @@ script: |
   So which gravestone is your favourite?
 detail: >-
   All from the National Park Service page on the Presidio Pet Cemetery: the white picket fence, hundreds of animals owned by families stationed at the Presidio, markers that mimic military cemetery markers, birthplaces including China, England, Australia and Germany, owners' ranks including majors, colonels and generals, the epitaph "A GI pet. He did his time.", markers to "unknowns", no official records of its origin, and the legends of cavalry horses or guard dogs. The page notes the cemetery was closed during construction of the viaduct that towers over it; a reviewer should confirm access now. "Dogs and cats" is a child-friendly gloss of "loyal animals".
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Look for the little white picket fence under the big road bridge."
@@ -72,3 +72,65 @@ sources:
     url: https://www.nps.gov/prsf/learn/historyculture/pet-cemetery.htm
     retrievedAt: "2026-11-12"
     rights: public-domain
+renders:
+  - voiceId: UrTldiIxfedDl9tlesyS
+    audioKey: audio/san-francisco-a-gi-pet/UrTldiIxfedDl9tlesyS.mp3
+    durationS: 56
+    audioBytes: 896565
+    transcript:
+      totalS: 56
+      lines:
+        - text: Look for the little white picket fence under the big road bridge.
+          atS: 0
+          durationS: 3.77
+        - text: Behind it is a cemetery.
+          atS: 4.16
+          durationS: 2.13
+        - text: But it is not for people.
+          atS: 6.56
+          durationS: 1.59
+        - text: It is for pets!
+          atS: 8.43
+          durationS: 1.22
+        - text: Lots of army families used to live here at the Presidio.
+          atS: 10.09
+          durationS: 3.22
+        - text: When their dogs and cats died, this is where they buried them.
+          atS: 13.58
+          durationS: 3.53
+        - text: Hundreds of them.
+          atS: 17.39
+          durationS: 1.13
+        - text: Look at the gravestones.
+          atS: 19.12
+          durationS: 1.34
+        - text: Lots of them look just like the ones in a soldiers' cemetery.
+          atS: 20.84
+          durationS: 3.44
+        - text: "Some say where the pet was born: China, England, Australia, Germany."
+          atS: 24.72
+          durationS: 5.43
+        - text: Some give the owner's rank, like major, colonel or even general.
+          atS: 30.75
+          durationS: 4.45
+        - text: "One just says: A GI pet."
+          atS: 35.58
+          durationS: 2.33
+        - text: He did his time.
+          atS: 38.16
+          durationS: 1.1
+        - text: There are even graves for unknown pets, just like in a real military cemetery.
+          atS: 39.59
+          durationS: 5.24
+        - text: Nobody knows for sure how it all began.
+          atS: 45.34
+          durationS: 2.41
+        - text: People tell stories that it was once a graveyard for cavalry horses, or for guard dogs.
+          atS: 47.96
+          durationS: 4.81
+        - text: Nobody has proved it.
+          atS: 52.88
+          durationS: 1.1
+        - text: So which gravestone is your favourite?
+          atS: 54.11
+          durationS: 1.85

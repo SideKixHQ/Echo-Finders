@@ -9,7 +9,7 @@ at: { lat: 37.76094, lng: -122.43504 }
 triggerRadiusKm: 0.03
 category: people
 format: short
-durationS: 83
+durationS: 82
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -38,7 +38,7 @@ script: |
   Look at the shop window again. That is where he started. And where part of him still is.
 detail: >-
   NBC News (2023) gives Castro Camera as the shop Milk owned from 1972 until his murder in 1978, his headquarters in four runs for office, the apartment above from 1975, and the 2000 city landmark designation. NPR (2008) gives the first openly gay man ever voted into office in the United States, the cassette tape and its opening words, the announcement by Dianne Feinstein on 27 November 1978 that Moscone and Milk had been shot and killed, eleven months on the board, and the Altoona caller and "You got to give them hope"; NPR adds that Milk's friends think the Altoona caller may have been a rhetorical device. NBC News (2018) dates his election to one year before his death. CBS San Francisco gives 575 Castro Street, and the monument outside the former Castro Camera covering some of Milk's ashes, an exception to the city's ban on burials. The convicted killer, Dan White, is not named; he is dead and the echo is about Milk. "On the fourth try" follows from four runs and the win; a reviewer may want that checked.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In the nineteen seventies it was a camera shop. Castro Camera. It belonged to Harvey Milk."
@@ -107,3 +107,74 @@ sources:
     url: https://www.cbsnews.com/sanfrancisco/news/10-things-you-didnt-know-about-san-francisco/
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-in-the-event-of-my-death/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 82.1
+    audioBytes: 1314106
+    transcript:
+      totalS: 82.1
+      lines:
+        - text: Look at the shopfront at five seventy five Castro Street.
+          atS: 0
+          durationS: 3.9
+        - text: In the nineteen seventies it was a camera shop.
+          atS: 4.11
+          durationS: 2.9
+        - text: Castro Camera.
+          atS: 7.26
+          durationS: 1.28
+        - text: It belonged to Harvey Milk.
+          atS: 8.74
+          durationS: 1.6
+        - text: Now look down.
+          atS: 10.67
+          durationS: 1.01
+        - text: A monument outside the shop covers some of his ashes.
+          atS: 12.06
+          durationS: 3.25
+        - text: In a city that bans burials, it is one of the exceptions.
+          atS: 15.64
+          durationS: 3.76
+        - text: It was his campaign headquarters, all four times he ran for office.
+          atS: 20.1
+          durationS: 3.98
+        - text: From nineteen seventy five, he lived in the apartment upstairs.
+          atS: 25.03
+          durationS: 3.43
+        - text: On the fourth try, he won.
+          atS: 28.78
+          durationS: 2
+        - text: He became the first openly gay man ever voted into office in the United States, as a San Francisco supervisor.
+          atS: 31.73
+          durationS: 7.31
+        - text: He knew what that might cost.
+          atS: 39.65
+          durationS: 1.85
+        - text: Not long before he was killed, he recorded a kind of political will on a cassette tape.
+          atS: 42.1
+          durationS: 4.91
+        - text: "It begins: This is to be played only in the event of my death by assassination."
+          atS: 47.33
+          durationS: 5.32
+        - text: On the twenty seventh of November, nineteen seventy eight, he and Mayor George Moscone were shot and killed.
+          atS: 53.26
+          durationS: 6.87
+        - text: He had been on the board for eleven months.
+          atS: 60.83
+          durationS: 2.26
+        - text: On the tape, he talks about a phone call from a frightened teenager in Altoona, Pennsylvania, who had read about him in the news.
+          atS: 63.79
+          durationS: 7.12
+        - text: You got to give them hope, he says.
+          atS: 71.86
+          durationS: 2.37
+        - text: Look at the shop window again.
+          atS: 75.18
+          durationS: 1.6
+        - text: That is where he started.
+          atS: 77.16
+          durationS: 1.47
+        - text: And where part of him still is.
+          atS: 79.33
+          durationS: 2.73

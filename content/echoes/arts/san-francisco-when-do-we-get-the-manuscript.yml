@@ -9,7 +9,7 @@ at: { lat: 37.79763, lng: -122.40652 }
 triggerRadiusKm: 0.03
 category: arts
 format: short
-durationS: 61
+durationS: 65
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -36,7 +36,7 @@ script: |
   Ferlinghetti lived to a hundred and one. His shop is still on the corner.
 detail: >-
   NPR (2006) gives the 1955 telegram, "I greet you at the beginning of a great career" and the coda "When do we get the manuscript?", police arresting a bookseller at City Lights and charging Ferlinghetti with obscenity, Ginsberg's delight at a trial he knew would enhance the poem's reputation, and Judge Clayton Horn's ruling. NPR (2021, obituary) gives the 75 cent paperback in the fall of 1956, the passages about sex between men and women and between two men, the 1957 arrest, the finding of redeeming social importance, and his death at 101. CBS San Francisco (2021) gives the founding in 1953. Two independent publishers. NPR calls the trial "a long federal trial"; it was in San Francisco municipal court before Judge Horn, so the script does not call it federal.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "A poet named Lawrence Ferlinghetti opened it in nineteen fifty three."
@@ -91,3 +91,62 @@ sources:
 pronunciations:
   - written: Ferlinghetti
     say: fer-lin-GET-ee
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-when-do-we-get-the-manuscript/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65.4
+    audioBytes: 1047448
+    transcript:
+      totalS: 65.4
+      lines:
+        - text: Look at the bookshop on the corner.
+          atS: 0
+          durationS: 1.82
+        - text: City Lights.
+          atS: 2.26
+          durationS: 0.95
+        - text: A poet named Lawrence Ferlinghetti opened it in nineteen fifty three.
+          atS: 3.66
+          durationS: 5
+        - text: In nineteen fifty five, he heard a young poet, Allen Ginsberg, read a new poem called Howl.
+          atS: 9.17
+          durationS: 6.49
+        - text: Ferlinghetti sent him a telegram.
+          atS: 16.27
+          durationS: 2.4
+        - text: I greet you at the beginning of a great career, it said.
+          atS: 19.27
+          durationS: 3.69
+        - text: Then he added a second line.
+          atS: 23.35
+          durationS: 1.9
+        - text: When do we get the manuscript?
+          atS: 25.86
+          durationS: 1.91
+        - text: In the fall of nineteen fifty six, he published it, as a little paperback that cost seventy five cents.
+          atS: 28.47
+          durationS: 7.26
+        - text: Howl described sex, between men and women, and between men.
+          atS: 36.33
+          durationS: 4.38
+        - text: Not long after it came out, police arrested a bookseller here, and Ferlinghetti was charged with obscenity.
+          atS: 41.52
+          durationS: 6.34
+        - text: Ginsberg was delighted.
+          atS: 48.55
+          durationS: 1.74
+        - text: He knew a trial would only make the poem more famous.
+          atS: 50.57
+          durationS: 3.04
+        - text: At the end of it, the judge found that Howl had redeeming social importance.
+          atS: 53.86
+          durationS: 4.57
+        - text: It was not obscene.
+          atS: 58.64
+          durationS: 1.31
+        - text: Ferlinghetti lived to a hundred and one.
+          atS: 60.28
+          durationS: 2.72
+        - text: His shop is still on the corner.
+          atS: 63.24
+          durationS: 2.15

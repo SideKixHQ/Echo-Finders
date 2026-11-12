@@ -9,7 +9,7 @@ at: { lat: 37.77009, lng: -122.44685 }
 triggerRadiusKm: 0.04
 category: history
 format: short
-durationS: 63
+durationS: 66
 visibility: at-hand
 certainty: documented
 minAge: 10
@@ -32,7 +32,7 @@ script: |
   Look around the corner now. The tourists still come, looking for the hippies.
 detail: >-
   NPR (2017) gives the date, 6 October 1967, the Diggers as counterculture purists, the mock funeral and the coffin labelled "Hippie, Son of Media", and the collapse by midsummer, with heroin and speed, and the bands and original hippies leaving for more pastoral settings. CBS News gives the Diggers as actors, artists and anarchists, their free store, free food and the free clinic on Haight Street, and the October 1967 mock funeral. NBC News (2009) gives the "death of the hippie" funeral that fall and the thousands of hippies in the 1960s, and describes tourists at Haight and Ashbury. NBC says "residents" held the funeral; NPR and CBS name the Diggers, and the script follows them. "The people who started it" is a reading of CBS's account of the Diggers at the heart of the Haight; a reviewer may prefer softer wording.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In nineteen sixty seven, thousands of young people came to this neighbourhood, for what was called the Summer of Love."
@@ -90,3 +90,65 @@ sources:
     url: https://www.nbcnews.com/id/wbna32863917
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-a-coffin-for-the-hippie/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65.9
+    audioBytes: 1056225
+    transcript:
+      totalS: 65.9
+      lines:
+        - text: Look up at the street signs on this corner.
+          atS: 0
+          durationS: 2.31
+        - text: Haight, and Ashbury.
+          atS: 2.75
+          durationS: 1.72
+        - text: In nineteen sixty seven, thousands of young people came to this neighbourhood, for what was called the Summer of Love.
+          atS: 5.07
+          durationS: 7.13
+        - text: A group called the Diggers was here first.
+          atS: 12.71
+          durationS: 2.54
+        - text: They were actors, artists and anarchists, and they saw this place as somewhere they could transform society.
+          atS: 15.58
+          durationS: 7.05
+        - text: The Diggers ran a free store.
+          atS: 23.32
+          durationS: 1.72
+        - text: They gave away free food.
+          atS: 25.29
+          durationS: 1.68
+        - text: On Haight Street there was a free clinic.
+          atS: 27.92
+          durationS: 2.37
+        - text: By midsummer it was falling apart.
+          atS: 30.73
+          durationS: 2.32
+        - text: Grass and acid had given way to heroin and speed.
+          atS: 33.56
+          durationS: 3.35
+        - text: Most of the bands, and the original hippies, moved out to the country.
+          atS: 37.24
+          durationS: 3.82
+        - text: So on the sixth of October, nineteen sixty seven, the Diggers held a funeral.
+          atS: 41.45
+          durationS: 4.91
+        - text: A mock funeral, with a coffin.
+          atS: 46.6
+          durationS: 2.15
+        - text: "On the coffin it said: Hippie, Son of Media."
+          atS: 49.19
+          durationS: 4.1
+        - text: The Summer of Love was over.
+          atS: 54.59
+          durationS: 2.4
+        - text: The people who had started it were the ones who buried it.
+          atS: 57.38
+          durationS: 2.88
+        - text: Look around the corner now.
+          atS: 60.95
+          durationS: 1.39
+        - text: The tourists still come, looking for the hippies.
+          atS: 62.67
+          durationS: 3.27

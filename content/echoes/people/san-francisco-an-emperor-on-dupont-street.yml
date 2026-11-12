@@ -9,7 +9,7 @@ at: { lat: 37.79080, lng: -122.40568 }
 triggerRadiusKm: 0.04
 category: people
 format: short
-durationS: 65
+durationS: 69
 visibility: position-only
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   More than thirty thousand people came to his funeral. Not bad, for an emperor with no empire.
 detail: >-
   The Silver State (Unionville, Nevada), 10 January 1880, via Chronicling America: Emperor Norton died suddenly the day before, walking along Dupont Street, fell to the pavement, was helped up and placed against a building, and died without a struggle. The 1940 Federal Writers' Project guide to San Francisco gives the blue army uniform, brass buttons, gold braid and plumed beaver hat, "Norton I, Emperor of North America and Protector of Mexico", the mildly insane Englishman after heavy financial reverses, two decades of seeing that policemen were on duty and sidewalks unobstructed, inspecting buildings under construction, newspapers solemnly publishing his proclamations, 50 cent bonds honoured by banks, restaurants and stores, and a funeral in 1880 attended by more than 30,000. The same guide glosses Dupont Street as Grant Avenue. Two independent sources.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "Picture a man walking along it in a blue army uniform, with brass buttons and gold braid, and a plumed beaver hat."
@@ -85,3 +85,62 @@ sources:
     url: https://archive.org/details/sanfranciscobaya00writrich
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-an-emperor-on-dupont-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 68.5
+    audioBytes: 1097603
+    transcript:
+      totalS: 68.5
+      lines:
+        - text: You are on Grant Avenue.
+          atS: 0
+          durationS: 1.57
+        - text: In eighteen eighty, it had another name.
+          atS: 1.89
+          durationS: 2.62
+        - text: Dupont Street.
+          atS: 4.84
+          durationS: 1.2
+        - text: Picture a man walking along it in a blue army uniform, with brass buttons and gold braid, and a plumed beaver hat.
+          atS: 6.48
+          durationS: 7.44
+        - text: Everybody knew him.
+          atS: 14.62
+          durationS: 1.18
+        - text: He called himself Norton the First, Emperor of North America and Protector of Mexico.
+          atS: 16.18
+          durationS: 6.02
+        - text: He was an Englishman who had lost a fortune.
+          atS: 22.89
+          durationS: 2.65
+        - text: For two decades after that, he went from one part of the city to another, seeing to it that policemen were on duty and sidewalks were clear.
+          atS: 26.49
+          durationS: 8.68
+        - text: He inspected every building going up.
+          atS: 35.88
+          durationS: 2.66
+        - text: The newspapers solemnly printed his proclamations.
+          atS: 38.86
+          durationS: 3.15
+        - text: When he needed money, he issued bonds for fifty cents.
+          atS: 42.39
+          durationS: 3.83
+        - text: Banks, restaurants and stores honoured them.
+          atS: 46.6
+          durationS: 2.89
+        - text: In January, eighteen eighty, he was walking along Dupont Street when he fell to the pavement.
+          atS: 50
+          durationS: 5.6
+        - text: People helped him to his feet and leaned him against a building to rest.
+          atS: 55.93
+          durationS: 3.74
+        - text: He died there, without a struggle.
+          atS: 59.99
+          durationS: 2.11
+        - text: More than thirty thousand people came to his funeral.
+          atS: 62.43
+          durationS: 3.12
+        - text: Not bad, for an emperor with no empire.
+          atS: 65.93
+          durationS: 2.61

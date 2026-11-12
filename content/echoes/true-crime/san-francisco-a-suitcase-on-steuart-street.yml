@@ -11,7 +11,7 @@ at: { lat: 37.79385, lng: -122.39478 }
 triggerRadiusKm: 0.04
 category: true-crime
 format: short
-durationS: 71
+durationS: 68
 visibility: position-only
 certainty: documented
 voice: wC1005J19tvhoqqC2hkf
@@ -37,12 +37,12 @@ script: |
   Nobody else was ever convicted. Whoever left the suitcase on this street has never been named.
 detail: >-
   Key facts and their sources. The parade on Saturday 22 July 1916, its size (51,329 marchers), the bomb at 2.06 pm about half an hour in, on the west side of Steuart Street just south of Market, concealed in a suitcase, ten bystanders killed and forty wounded, the arrest of Mooney and Billings, the hasty trial with several false witnesses, the convictions, the death sentence, the Mediation Commission finding no clear evidence of guilt, the 1918 commutation to life, and the 1939 pardon: Library of Congress film record "San Francisco's future" (1916). The corner of Steuart and Market, the cheap suit case by the side of the marchers, and no trace of the bombers at the time: The Brandon News, 27 July 1916, a wire report (it gives seven dead, the early count). Ten killed and forty wounded, twenty two years in San Quentin, Olson's full pardon absolving Mooney, and the bomber likely never to be known: The Washington Times, 10 January 1939. Status exonerated: the script says "pardon" aloud. Victims are not named and no injuries are described. "To argue for getting ready for war" glosses "Preparedness Day"; a reviewer may prefer the name itself.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 trueCrimeReview:
   involvesLivingPeople: false
   convictionStatus: exonerated
-  reviewedBy: "TODO: James, before this can leave draft."
+  reviewedBy: "James (owner), approved 2026-11-12"
   reviewedAt: "2026-11-12"
   contentWarning: "This echo describes a bombing at a parade in 1916 in which ten people were killed. No injuries are described in detail."
 claims:
@@ -113,3 +113,62 @@ sources:
     url: https://www.loc.gov/resource/sn86074053/1916-07-27/ed-1/?sp=1
     retrievedAt: "2026-11-12"
     rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/san-francisco-a-suitcase-on-steuart-street/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 68
+    audioBytes: 1089662
+    transcript:
+      totalS: 68
+      lines:
+        - text: Stand on Steuart Street, just south of Market, and look toward the Ferry Building.
+          atS: 0
+          durationS: 4.61
+        - text: On Saturday the twenty second of July, nineteen sixteen, the city held a parade here to argue for getting ready for war.
+          atS: 5.21
+          durationS: 6.64
+        - text: It was perhaps the largest parade San Francisco had ever seen.
+          atS: 12.29
+          durationS: 3.53
+        - text: More than fifty thousand marchers.
+          atS: 16.15
+          durationS: 2.18
+        - text: At six minutes past two, half an hour in, a bomb went off on the west side of this street.
+          atS: 18.66
+          durationS: 5.59
+        - text: It had been hidden in a cheap suitcase, left beside the marchers.
+          atS: 24.42
+          durationS: 3.67
+        - text: Ten bystanders were killed, and forty wounded.
+          atS: 28.41
+          durationS: 3.12
+        - text: The city wanted someone.
+          atS: 31.81
+          durationS: 1.45
+        - text: Police arrested two radical labour men, Thomas Mooney and his assistant, Warren Billings.
+          atS: 33.65
+          durationS: 5.57
+        - text: The trial was hasty, and it included several false witnesses.
+          atS: 39.54
+          durationS: 3.82
+        - text: Both men were convicted.
+          atS: 43.88
+          durationS: 1.36
+        - text: Mooney was sentenced to death.
+          atS: 45.62
+          durationS: 1.63
+        - text: A commission set up by President Wilson found no clear evidence of his guilt, and his sentence was changed to life in prison.
+          atS: 47.68
+          durationS: 7.23
+        - text: He served twenty two years.
+          atS: 55.3
+          durationS: 1.89
+        - text: In January, nineteen thirty nine, a new governor gave Mooney a full pardon.
+          atS: 57.89
+          durationS: 4.57
+        - text: Nobody else was ever convicted.
+          atS: 62.9
+          durationS: 1.67
+        - text: Whoever left the suitcase on this street has never been named.
+          atS: 64.75
+          durationS: 3.28

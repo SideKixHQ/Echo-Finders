@@ -9,7 +9,7 @@ at: { lat: 37.80239, lng: -122.40582 }
 triggerRadiusKm: 0.05
 category: arts
 format: short
-durationS: 67
+durationS: 65
 visibility: at-hand
 certainty: documented
 minAge: 10
@@ -32,7 +32,7 @@ script: |
   The murals that stayed are the ones you can see. Above the windows is what they took away.
 detail: >-
   From the National Register additional documentation for Coit Memorial Tower: the Public Works of Art Project murals, the dockworkers strike from 9 May 1934 and the general strike of 16 to 19 July, Wight's late additions of a dollar sign, the NRA blue eagle and a hammer and sickle, the deaths of two waterfront workers killed by police on 5 July, the San Francisco Examiner's photograph superimposing the hammer and sickle on Zakheim's mural and alleging a communist plot, the Park and Art Commissions locking the doors and cancelling the opening, and the removal of all the artwork over the east, south and west windows before the October 1934 opening. CBS San Francisco (2018) gives the Public Works of Art Project. The NR gives the opening as 12 October in one place and 20 October in another, so the script says only October. "The blue eagle of the New Deal" stands for the NRA's blue eagle; a reviewer may prefer "the eagle of the National Recovery Administration".
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "The walls are covered in murals, painted in nineteen thirty four by artists on a federal relief program."
@@ -73,3 +73,59 @@ sources:
     url: https://www.cbsnews.com/sanfrancisco/news/coit-tower-telegraph-hill-85th-birthday/
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-nothing-above-the-windows/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 65.2
+    audioBytes: 1043687
+    transcript:
+      totalS: 65.2
+      lines:
+        - text: If the doors are open, step inside the base of this tower.
+          atS: 0
+          durationS: 3.42
+        - text: The walls are covered in murals, painted in nineteen thirty four by artists on a federal relief program.
+          atS: 3.75
+          durationS: 6.25
+        - text: Now look above the windows.
+          atS: 10.44
+          durationS: 1.58
+        - text: The artists painted in fresco, into wet plaster.
+          atS: 12.4
+          durationS: 3.65
+        - text: Near the end, one of them, Clifford Wight, added small paintings above the windows.
+          atS: 16.43
+          durationS: 5.12
+        - text: A dollar sign.
+          atS: 22.06
+          durationS: 1.22
+        - text: The blue eagle of the New Deal.
+          atS: 23.66
+          durationS: 2.31
+        - text: And a hammer and sickle.
+          atS: 26.18
+          durationS: 1.59
+        - text: That summer, the dockworkers went on strike, and then the whole city.
+          atS: 28.72
+          durationS: 4.12
+        - text: On the fifth of July, two waterfront workers were killed by police.
+          atS: 33.17
+          durationS: 4.02
+        - text: The same day, a newspaper printed a doctored photograph that laid Wight's hammer and sickle over another artist's mural, and said the murals were part of a communist plot.
+          atS: 37.57
+          durationS: 9.91
+        - text: The city locked the tower and cancelled the opening.
+          atS: 47.87
+          durationS: 2.82
+        - text: When it finally opened, in October, the artwork over the windows had been removed.
+          atS: 51.01
+          durationS: 5.07
+        - text: All of it, not only the hammer and sickle.
+          atS: 56.53
+          durationS: 2.65
+        - text: The murals that stayed are the ones you can see.
+          atS: 59.45
+          durationS: 2.76
+        - text: Above the windows is what they took away.
+          atS: 62.73
+          durationS: 2.43

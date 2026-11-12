@@ -13,7 +13,7 @@ inspo:
   kind: creation
   evidence: site
 format: short
-durationS: 56
+durationS: 57
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -34,7 +34,7 @@ script: |
   A reporter who came here met a visitor from Vancouver. He said he had wanted to make sure he stopped here.
 detail: >-
   From NPR's 2011 On Location piece on Vertigo: the 1958 film, Stewart as Scotty, the police detective turned private detective asked by an old college friend to follow his wife Madeline (Kim Novak), her apparent obsession or possession by Carlotta Valdes, "a figure from San Francisco's history", and the cemetery at Mission Dolores "where the fictional Carlotta Valdes was buried in the film", with the visitor from Vancouver. NPR spells the character Madeline and Scotty; the film's credits use Madeleine, which the script follows.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In the nineteen fifty eight film Vertigo, James Stewart plays Scotty, a police detective turned private eye."
@@ -73,3 +73,50 @@ sources:
     url: https://www.npr.org/2011/09/05/140145083/san-franciscos-twisted-romance-with-vertigo
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-a-grave-for-carlotta/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 56.5
+    audioBytes: 904506
+    transcript:
+      totalS: 56.5
+      lines:
+        - text: Beside the old mission church on Dolores Street is a small cemetery.
+          atS: 0
+          durationS: 3.89
+        - text: There is a grave in it that people come a long way to find.
+          atS: 4.17
+          durationS: 3.35
+        - text: The woman in it never existed.
+          atS: 7.91
+          durationS: 2.02
+        - text: In the nineteen fifty eight film Vertigo, James Stewart plays Scotty, a police detective turned private eye.
+          atS: 10.62
+          durationS: 8.09
+        - text: An old college friend asks him to follow his wife, Madeleine, played by Kim Novak.
+          atS: 19.32
+          durationS: 5.12
+        - text: He follows her through San Francisco.
+          atS: 24.95
+          durationS: 2.07
+        - text: And Madeleine seems obsessed, perhaps possessed, by a figure from the city's past.
+          atS: 27.46
+          durationS: 5.04
+        - text: A woman named Carlotta Valdes.
+          atS: 32.82
+          durationS: 2.58
+        - text: In the film, Carlotta Valdes is buried in this cemetery, at Mission Dolores.
+          atS: 36.09
+          durationS: 4.87
+        - text: She was invented.
+          atS: 41.56
+          durationS: 1.2
+        - text: But the film made this city mysterious for a lot of people, and they still come looking for her.
+          atS: 43.2
+          durationS: 5.57
+        - text: A reporter who came here met a visitor from Vancouver.
+          atS: 49.47
+          durationS: 3.42
+        - text: He said he had wanted to make sure he stopped here.
+          atS: 53.59
+          durationS: 2.88

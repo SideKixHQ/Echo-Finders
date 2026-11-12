@@ -13,7 +13,7 @@ inspo:
   kind: inspiration
   evidence: site
 format: short
-durationS: 61
+durationS: 64
 visibility: at-hand
 certainty: documented
 minAge: 10
@@ -32,7 +32,7 @@ script: |
   Miles Archer never existed. People come to see where he died anyway. One guide brings walking tours here, recites the scene from memory, and at the climax pulls a rubber dart gun from his coat and shoots one of his guests.
 detail: >-
   CBS San Francisco's walking tours piece: Don Herron's Dashiell Hammett tour, Burritt Alley as where Miles Archer, Spade's partner in The Maltese Falcon, "was plugged by a femme fatale", and the rubber dart gun. CBS San Francisco on Hammett's papers: his stories peppered with allusions to San Francisco streets and landmarks, including a scene in The Maltese Falcon citing his own apartment building at 891 Post Street. CBS San Francisco's "Best Movies Set in San Francisco": John Huston's 1941 film with Bogart, called the best movie filmed with a San Francisco backdrop, and Spade's office near the Stockton Street tunnel. One publisher. A bronze plaque in the alley marks the spot; no fetched source describes it, so the script does not mention it.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In The Maltese Falcon, this is where Miles Archer dies. He was the partner of a private detective named Sam Spade, and in the alley, he is shot by a woman he should not have trusted."
@@ -72,3 +72,47 @@ sources:
     url: https://www.cbsnews.com/sanfrancisco/news/best-movies-set-in-san-francisco/
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-the-alley-where-miles-archer-fell/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 64.2
+    audioBytes: 1027804
+    transcript:
+      totalS: 64.2
+      lines:
+        - text: Look into the short, narrow alley off Bush Street.
+          atS: 0
+          durationS: 2.95
+        - text: Its name is Burritt.
+          atS: 3.33
+          durationS: 1.44
+        - text: In The Maltese Falcon, this is where Miles Archer dies.
+          atS: 5.21
+          durationS: 4.12
+        - text: He was the partner of a private detective named Sam Spade, and in the alley, he is shot by a woman he should not have trusted.
+          atS: 10.03
+          durationS: 8.53
+        - text: Dashiell Hammett, who wrote it, knew these streets.
+          atS: 19.26
+          durationS: 3.16
+        - text: His stories are full of real San Francisco streets and landmarks.
+          atS: 23.02
+          durationS: 4.48
+        - text: In The Maltese Falcon, he even names his own apartment building, on Post Street, a few blocks from here.
+          atS: 27.95
+          durationS: 6.67
+        - text: In nineteen forty one, John Huston made the book into a film, starring Humphrey Bogart.
+          atS: 35.43
+          durationS: 6.14
+        - text: One critic calls it the best film ever made with San Francisco as its backdrop.
+          atS: 42.02
+          durationS: 5.23
+        - text: Miles Archer never existed.
+          atS: 47.75
+          durationS: 2.14
+        - text: People come to see where he died anyway.
+          atS: 50.49
+          durationS: 2.8
+        - text: One guide brings walking tours here, recites the scene from memory, and at the climax pulls a rubber dart gun from his coat and shoots one of his guests.
+          atS: 53.8
+          durationS: 10.38

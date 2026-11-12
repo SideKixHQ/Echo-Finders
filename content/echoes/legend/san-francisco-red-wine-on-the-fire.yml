@@ -9,7 +9,7 @@ at: { lat: 37.80187, lng: -122.40415 }
 triggerRadiusKm: 0.05
 category: legend
 format: short
-durationS: 55
+durationS: 49
 visibility: at-hand
 certainty: legend
 certaintyNote: >-
@@ -33,7 +33,7 @@ script: |
   Whatever saved them, the cottages are still here.
 detail: >-
   NPR's 2006 Morning Edition piece on the 1906 earthquake: fire for almost four days, Aaron Peskin on the Filbert Steps saying the fire stopped a few hundred feet away, the working class Irish and Italian neighbourhood whose simple cottages were among the few spared, and Philip Fradkin on buckets of saved water, barrels of wine fermenting in basements and "stories of the old-timers". The 1940 Federal Writers' Project guide: the Italians rolled barrels of red wine from their cellars and, forming a bucket brigade, protected their houses with blankets soaked in the wine. Told as a legend because the two sources differ on how sure it is.
-editorial: draft
+editorial: approved
 factCheck: corroborated
 claims:
   - says: "In April, nineteen oh six, after the earthquake, the city burned for almost four days."
@@ -71,3 +71,50 @@ sources:
     url: https://archive.org/details/sanfranciscobaya00writrich
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/san-francisco-red-wine-on-the-fire/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 49.4
+    audioBytes: 790821
+    transcript:
+      totalS: 49.4
+      lines:
+        - text: Look at the little cottages along these steps.
+          atS: 0
+          durationS: 2.44
+        - text: In April, nineteen oh six, after the earthquake, the city burned for almost four days.
+          atS: 2.61
+          durationS: 5.84
+        - text: These cottages did not.
+          atS: 8.6
+          durationS: 1.52
+        - text: The fire stopped a few hundred feet from where you are.
+          atS: 10.37
+          durationS: 2.86
+        - text: Back then, the hill was working class.
+          atS: 13.38
+          durationS: 2.43
+        - text: Irish and Italian immigrants.
+          atS: 16.01
+          durationS: 1.76
+        - text: And this is where the legend begins.
+          atS: 17.93
+          durationS: 2.08
+        - text: Many of the Italian families made their own wine, and kept the barrels in their basements.
+          atS: 20.39
+          durationS: 4.67
+        - text: When the fire crept up the hill, the story goes, they rolled the barrels out of their cellars, formed a bucket brigade, and fought the flames with blankets soaked in red wine.
+          atS: 25.3
+          durationS: 9.46
+        - text: A guidebook written in nineteen forty tells it as plain fact.
+          atS: 35.04
+          durationS: 3.73
+        - text: A historian, a century later, called it one of the stories the old timers told.
+          atS: 38.98
+          durationS: 4.92
+        - text: Nobody can prove it either way.
+          atS: 44.28
+          durationS: 1.8
+        - text: Whatever saved them, the cottages are still here.
+          atS: 46.36
+          durationS: 3.01

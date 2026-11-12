@@ -13,7 +13,7 @@ inspo:
   kind: creation
   evidence: building
 format: short
-durationS: 55
+durationS: 50
 visibility: at-hand
 certainty: documented
 minAge: 0
@@ -32,7 +32,7 @@ script: |
   The doctor who owned it then kept the tributes up. He told a reporter he had seen much of the film, but had never sat down and watched it from start to finish.
 detail: >-
   CBS San Francisco (KPIX, 2014): fans paying respects at the home on Broadway and Steiner where the film was set, hundreds dropping off notes and flowers since news broke, the owner (a plastic surgeon) keeping the tributes up and saying he had seen much of the film but never watched it from start to finish. CBS News (2016, the same publisher, so this counts as one source): the 1993 film, Sally Field's character living with her children in the home, the ex-husband in disguise as the perfect elderly British nanny, the home briefly an impromptu shrine after Williams's death in 2014. The owner is not named in the script. Robin Williams's death was a suicide; the script does not say so, which suits a general audience.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "In nineteen ninety three, it was the family home in the film Mrs. Doubtfire."
@@ -76,3 +76,53 @@ sources:
     url: https://www.cbsnews.com/news/mrs-doubtfire-house-up-for-sale-in-san-francisco/
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-flowers-at-the-doubtfire-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 50.2
+    audioBytes: 804196
+    transcript:
+      totalS: 50.2
+      lines:
+        - text: Look at the house on the corner of Steiner and Broadway.
+          atS: 0
+          durationS: 2.71
+        - text: You may know it.
+          atS: 2.88
+          durationS: 0.96
+        - text: In nineteen ninety three, it was the family home in the film Mrs.
+          atS: 4.23
+          durationS: 3.94
+        - text: Doubtfire.
+          atS: 8.19
+          durationS: 0.89
+        - text: In the film, Sally Field's character lives here with her children.
+          atS: 9.46
+          durationS: 3.75
+        - text: Her ex husband, played by Robin Williams, will do anything to stay close to them.
+          atS: 13.6
+          durationS: 4.59
+        - text: So he comes back in disguise, as the perfect elderly British nanny.
+          atS: 18.79
+          durationS: 4.32
+        - text: In twenty fourteen, Robin Williams died.
+          atS: 23.92
+          durationS: 2.86
+        - text: As soon as the news broke, people began to come to this corner.
+          atS: 27.28
+          durationS: 3.68
+        - text: Hundreds of them.
+          atS: 31.24
+          durationS: 1.08
+        - text: They left notes and flowers, for a man who had never lived here.
+          atS: 32.93
+          durationS: 3.67
+        - text: For a while, the house was a shrine.
+          atS: 37.71
+          durationS: 2.13
+        - text: The doctor who owned it then kept the tributes up.
+          atS: 40.34
+          durationS: 2.9
+        - text: He told a reporter he had seen much of the film, but had never sat down and watched it from start to finish.
+          atS: 43.85
+          durationS: 6.35

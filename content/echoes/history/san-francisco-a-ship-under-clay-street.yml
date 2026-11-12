@@ -36,7 +36,7 @@ script: |
   Nobody moved the ship. They moved the sea.
 detail: >-
   All from the National Park Service page on the Niantic (San Francisco Maritime National Historical Park): arrival in Yerba Buena Cove on 5 July 1849 with gold seekers, the crew deserting and the last five men discharged on 11 July, the ship hauled ashore as building material, warehouse and hotel, the water lots filled with mud, sand and debris, more than three blocks from the sea by 1850, burned to the waterline in the fire of May 1851, the Niantic Hotel, Block and Building on the site, the 1978 excavation, the stern and rudder in the Maritime Museum, and the remains beneath the corner of Clay and Sansome. The last line is a turn, not a claim: the shoreline moved as the cove was filled.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "There is a ship under it."
@@ -93,3 +93,68 @@ sources:
 pronunciations:
   - written: Niantic
     say: nye-AN-tick
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-a-ship-under-clay-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 69.8
+    audioBytes: 1117665
+    transcript:
+      totalS: 69.8
+      lines:
+        - text: Stand at the corner of Clay and Sansome, and look down at the pavement.
+          atS: 0
+          durationS: 4.12
+        - text: There is a ship under it.
+          atS: 4.56
+          durationS: 1.5
+        - text: Her name was the Niantic.
+          atS: 6.44
+          durationS: 2.15
+        - text: In July, eighteen forty nine, she sailed into the cove that was here, packed with men on their way to the gold fields.
+          atS: 9.1
+          durationS: 7.51
+        - text: Most of her crew deserted too.
+          atS: 17
+          durationS: 1.86
+        - text: The captain let the last five men go, and with no crew, the Niantic was stuck.
+          atS: 19.54
+          durationS: 6.1
+        - text: So she was hauled ashore and put to use.
+          atS: 26.08
+          durationS: 2.48
+        - text: A store.
+          atS: 28.77
+          durationS: 0.78
+        - text: A warehouse.
+          atS: 29.71
+          durationS: 0.89
+        - text: A hotel.
+          atS: 30.78
+          durationS: 0.93
+        - text: The town filled in the water around her with mud, sand and debris.
+          atS: 32.03
+          durationS: 4.19
+        - text: By eighteen fifty, the Niantic was more than three blocks from the sea.
+          atS: 36.83
+          durationS: 4.67
+        - text: In eighteen fifty one, a great fire burned her down to the waterline.
+          atS: 42.1
+          durationS: 4.39
+        - text: What was left made good foundations, and the buildings put up on top of her carried her name.
+          atS: 46.87
+          durationS: 5.69
+        - text: In nineteen seventy eight, builders dug here and uncovered a large part of the ship.
+          atS: 53.86
+          durationS: 5.05
+        - text: Her stern and rudder went to the Maritime Museum.
+          atS: 59.61
+          durationS: 3.37
+        - text: The rest of her is still down there.
+          atS: 63.92
+          durationS: 1.93
+        - text: Nobody moved the ship.
+          atS: 66.55
+          durationS: 1.47
+        - text: They moved the sea.
+          atS: 68.41
+          durationS: 1.39

@@ -32,7 +32,7 @@ script: |
   The cathedral stands on the block Mr. Yung would not sell.
 detail: >-
   From the 1940 Federal Writers' Project guide to San Francisco, Grace Cathedral entry: the property deeded to the diocese by Crocker's heirs, his mansion standing until 1906, his attempt in 1877 to acquire the whole block, Yung's home on a 25 foot strip on Sacramento Street, the fence that shut out the sunlight, gripmen stopping their cable cars, hackmen bringing tourists, souvenir seekers removing pickets from the "spite" fence, and the Crocker family obtaining the property only after the death of the principals. The guide gives only "a Mr. Yung"; his full name is not in the source. "Both of them" reads "the principals" as Crocker and Yung.
-editorial: draft
+editorial: approved
 factCheck: single-source
 claims:
   - says: "Before the cathedral, there was a mansion on this block. It belonged to Charles Crocker."
@@ -62,3 +62,71 @@ sources:
     url: https://archive.org/details/sanfranciscobaya00writrich
     retrievedAt: "2026-11-12"
     rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/san-francisco-a-fence-against-the-sun/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 62.3
+    audioBytes: 997293
+    transcript:
+      totalS: 62.3
+      lines:
+        - text: Stand on Sacramento Street, beside the cathedral, and look along its wall.
+          atS: 0
+          durationS: 4.61
+        - text: Before the cathedral, there was a mansion on this block.
+          atS: 4.99
+          durationS: 3.12
+        - text: It belonged to Charles Crocker.
+          atS: 8.44
+          durationS: 1.73
+        - text: In eighteen seventy seven, Crocker set out to own the whole block.
+          atS: 10.61
+          durationS: 4.35
+        - text: One man would not sell.
+          atS: 15.41
+          durationS: 1.72
+        - text: A Mr.
+          atS: 17.94
+          durationS: 0.49
+        - text: Yung, whose house stood on a strip of land twenty five feet wide, here on Sacramento Street.
+          atS: 18.45
+          durationS: 5.61
+        - text: So Crocker had Yung's house hemmed in by a fence.
+          atS: 24.66
+          durationS: 3.09
+        - text: A fence that shut out the sunlight.
+          atS: 28.19
+          durationS: 2.13
+        - text: It became a sight.
+          atS: 30.82
+          durationS: 1.44
+        - text: Gripmen stopped their cable cars at the spot so passengers could look.
+          atS: 33.22
+          durationS: 3.9
+        - text: Cab drivers brought tourists to stare.
+          atS: 37.63
+          durationS: 2.36
+        - text: Souvenir hunters pulled pickets off it to take home.
+          atS: 40.31
+          durationS: 3.3
+        - text: People called it the spite fence.
+          atS: 43.89
+          durationS: 2.43
+        - text: Neither man gave in.
+          atS: 47.13
+          durationS: 1.57
+        - text: The Crocker family got the land only after both of them had died.
+          atS: 49.2
+          durationS: 3.52
+        - text: The mansion stood until nineteen oh six.
+          atS: 53.53
+          durationS: 2.36
+        - text: Crocker's heirs gave the land to the church.
+          atS: 56.13
+          durationS: 2.52
+        - text: The cathedral stands on the block Mr.
+          atS: 58.86
+          durationS: 1.96
+        - text: Yung would not sell.
+          atS: 60.86
+          durationS: 1.42
