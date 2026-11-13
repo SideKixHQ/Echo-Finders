@@ -63,6 +63,7 @@ import { EchoBar, ECHOBAR_FLOAT, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, buyWeekPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
+import { buyInApp, inApp, restoreInApp, useInAppEntitlement, withInApp } from "./native-bridge";
 import { MembershipPanel } from "./Membership";
 import { ReactionCard, faceOf } from "./ReactionCard";
 import { react, readReactions, type Reactions } from "./reaction-store";
@@ -504,7 +505,9 @@ export function App() {
    * play is actually requested, and refuses by opening the paywall rather than by
    * silently doing nothing.
    */
-  const [entitlement, setEntitlement] = useState<Entitlement>(() => readEntitlement());
+  const [webEntitlement, setEntitlement] = useState<Entitlement>(() => readEntitlement());
+  // In the iPhone app, what the App Store holds as well (`native-bridge.ts`); elsewhere the same.
+  const entitlement = useInAppEntitlement(webEntitlement);
   /*
    * Real payments, once the Stripe keys are in Vercel (`payments.ts`). Until then this stays
    * false and every purchase is the device-only record it always was.
@@ -524,6 +527,11 @@ export function App() {
   }, []);
   /** Buy for real when payments are on; otherwise record it on this device, as before. */
   const buy = (plan: "week" | "city" | "allAccess", cityId: string | undefined, local: () => void) => {
+    // In the iPhone app, the App Store, and never the website's checkout (`native-bridge.ts`).
+    if (inApp()) {
+      setPaymentError(null);
+      return void buyInApp(plan, cityId).then((bought) => bought && local(), (e: Error) => e.message && setPaymentError(e.message));
+    }
     if (!paymentsOn) return local();
     setPaymentError(null);
     startCheckout(plan !== "allAccess" && cityId ? plan : "allAccess", cityId).catch((e: Error) =>
@@ -532,7 +540,10 @@ export function App() {
   };
   /** The same purchase recorded on this device, for when payments are not switched on. */
   const boughtHere = (plan: "week" | "city" | "allAccess", cityId: string | undefined): Entitlement =>
-    plan === "week" && cityId
+    // In the iPhone app the App Store keeps the record; nothing is added on this phone.
+    inApp()
+      ? webEntitlement
+      : plan === "week" && cityId
       ? buyWeekPass(entitlement, cityId)
       : plan === "city" && cityId
         ? buyCityPass(entitlement, cityId)
@@ -2783,17 +2794,18 @@ export function App() {
                   error={paymentError}
                   onCard={() => openCardPage().catch((e: Error) => setPaymentError(e.message))}
                   onRestore={async () => {
+                    if (inApp()) await restoreInApp();
                     const back = (paymentsOn ? await restoreFromStripe().catch(() => null) : null) ?? readEntitlement();
                     setEntitlement(back);
-                    return membershipOf(back, Date.now());
+                    return membershipOf(withInApp(back), Date.now());
                   }}
                   onRestoreReceipt={async (email, receipt) => {
                     const back = await restoreWithReceipt(email, receipt);
                     setEntitlement(back);
-                    return membershipOf(back, Date.now());
+                    return membershipOf(withInApp(back), Date.now());
                   }}
                   onRenewal={(on) => {
-                    if (!paymentsOn || !customerId()) return setEntitlement(setAllAccessRenewal(entitlement, on));
+                    if (!paymentsOn || !customerId()) return setEntitlement(setAllAccessRenewal(webEntitlement, on));
                     setRenewalAtStripe(on)
                       .then(setEntitlement)
                       .catch((e: Error) => setPaymentError(e.message));

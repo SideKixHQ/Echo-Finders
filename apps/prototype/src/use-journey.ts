@@ -37,7 +37,7 @@ import {
 import { SimulatedJourney } from "./simulated-journey";
 import { simulatesRoute } from "./guided-walk";
 import { EchoTone } from "./echo-tone";
-import { Narration } from "./narration";
+import { bridgeSession, narratorFor } from "./native-bridge";
 import { IndexedDbCollection } from "./collection-store";
 
 export interface WalkState {
@@ -299,7 +299,8 @@ export function useJourney(
   // page, and one left open per mount is a limit reached by clicking around.
   useEffect(() => () => void toneRenderer.dispose(), [toneRenderer]);
 
-  const speech = useMemo(() => new Narration(library), [library]);
+  // `Narration`, or in the iPhone app the phone's own player (`native-bridge.ts`).
+  const speech = useMemo(() => narratorFor(library), [library]);
   useEffect(() => {
     speech.setMuted(!narrate);
   }, [speech, narrate]);
@@ -358,6 +359,9 @@ export function useJourney(
   useEffect(() => {
     session.setAutoPlay(autoPlay);
   }, [session, autoPlay]);
+
+  // Inside the iPhone app: the plan handed to the phone when the screen locks. Nothing elsewhere.
+  useEffect(() => bridgeSession(session, library, speech), [session, library, speech]);
 
   // Safari would not start a recording without a tap. Pause, so the player shows Play and
   // the listener's tap on it starts the real voice — not the robot stand-in (narration.ts).

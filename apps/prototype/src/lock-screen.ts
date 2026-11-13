@@ -21,6 +21,8 @@
  * anywhere: once it has played from a gesture, later plays are allowed.
  */
 
+import { inApp } from "./native-bridge";
+
 let carrier: HTMLAudioElement | null = null;
 
 /** One second of silence, made here: 8kHz, 8-bit mono, no network. */
@@ -38,7 +40,8 @@ function silence(): string {
 }
 
 function element(): HTMLAudioElement | null {
-  if (typeof Audio === "undefined") return null;
+  // Inside the iPhone app the phone's own player holds the lock screen (`native-bridge.ts`).
+  if (typeof Audio === "undefined" || inApp()) return null;
   if (!carrier) {
     carrier = new Audio(silence());
     carrier.loop = true;
