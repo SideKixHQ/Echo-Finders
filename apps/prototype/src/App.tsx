@@ -2437,7 +2437,10 @@ export function App() {
                 focusId={focusId}
                 /* The stepper covers the bottom of the map, so the map has to know: it
                    keeps pins, edge markers and the Esri credit above it. */
-                reservedBottom={(showBar ? ECHOBAR_H : directing ? dirBarH : 0) + (farOut && !directing ? AREACARD_H + (showBar ? AREACARD_OVER_BAR : 0) : 0)}
+                /* The topic view keeps the area card's room from the pick, not only once it is
+                   zoomed out: its fit is worked out before the card is up, and London went
+                   under the card fitting the UK's three ghost stories (2026-11-13). */
+                reservedBottom={(showBar ? ECHOBAR_H : directing ? dirBarH : 0) + ((farOut || topicBox !== null) && !directing ? AREACARD_H + (showBar ? AREACARD_OVER_BAR : 0) : 0)}
                 onInView={setInView}
                 viewLibrary={inArea}
                 overview={overview}

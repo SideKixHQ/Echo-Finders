@@ -248,13 +248,15 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
 // echoes are all Ghosts & legends (test/app/country.test.ts).
 {
   const UK_GHOSTS = 3;
-  // Every echo drawn on the screen: the numbers on the numbered dots, and single pins.
+  // Every echo drawn on the screen and clear of the area card (London went under it once):
+  // the numbers on the numbered dots, and single pins.
   const onScreen = (p) => p.evaluate(() => {
+    const card = document.querySelector('.area-card')?.getBoundingClientRect().top ?? innerHeight;
     const vis = (e) => {
       const r = e.getBoundingClientRect();
       const x = r.x + r.width / 2;
       const y = r.y + r.height / 2;
-      return x > 0 && y > 0 && x < innerWidth && y < innerHeight;
+      return x > 0 && y > 0 && x < innerWidth && y < card;
     };
     const dots = [...document.querySelectorAll('.clus')].filter(vis)
       .reduce((n, e) => n + Number(e.querySelector('.clus-n')?.textContent || 0), 0);
@@ -336,8 +338,17 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.keyboard.press('Escape');
   await p.waitForTimeout(2500);
   const after = await trip();
-  check('Topic on a drive: All returns to the trip view as it was', after.pins === before.pins && after.pins !== '',
-    `${before.pins} / ${after.pins}`);
+  // Within 3 px: the trip's pins can be thousands of pixels off screen, where a camera put
+  // back to the same centre lands a pixel or two away in rounding.
+  const where = (pins) => new Map(pins.split(' ').filter(Boolean).map((s) => {
+    const [id, xy] = s.split('@');
+    return [id, xy.split(',').map(Number)];
+  }));
+  const was = where(before.pins);
+  const now = where(after.pins);
+  const same = was.size > 0 && was.size === now.size
+    && [...was].every(([id, [x, y]]) => now.has(id) && Math.abs(now.get(id)[0] - x) <= 3 && Math.abs(now.get(id)[1] - y) <= 3);
+  check('Topic on a drive: All returns to the trip view as it was', same, `${before.pins} / ${after.pins}`);
   check('Topic on a drive: the trip is unchanged (journey, echo bar)', after.chip === before.chip && after.bar === before.bar,
     `${before.chip} | ${before.bar} / ${after.chip} | ${after.bar}`);
   check('Topic on a drive: the area card goes with the topic view', !(await visible(p.locator('.area-card'))));
