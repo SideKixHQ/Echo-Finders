@@ -18,6 +18,10 @@
  *
  * Inside the narrator (it records what is heard) and above the walk (which asks before it
  * hands an echo over), so both see one answer.
+ *
+ * The app shows the web app (ADR-0012, amended 2026-11-13), whose paywall and Settings ask
+ * here through the shell (`shell/WebShell.tsx`): `buyAndWait` and `restoreAndRead` answer
+ * once the App Store has, and `appStore` is what it holds, which the page adds to its own.
  */
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { AppState, Linking } from "react-native";
@@ -83,6 +87,12 @@ interface Purchases {
   readonly restoreAppStore: () => Promise<string>;
   /** "Bought on our website?" Resolves to what to say; throws with words to show. */
   readonly restoreWebsite: (email: string, receipt: string) => Promise<string>;
+  /** What the App Store alone holds, for the web app. */
+  readonly appStore: Entitlement;
+  /** Buy, and say how it ended once the App Store has answered. */
+  readonly buyAndWait: (offer: Pick<Offer, "plan" | "sku" | "city">) => Promise<{ outcome: "bought" | "cancelled" | "pending" | "failed"; message?: string; entitlement?: Entitlement }>;
+  /** App Store restore, then what it holds now (null if it did not answer). */
+  readonly restoreAndRead: () => Promise<Entitlement | null>;
   /** Apple's own page for the All-Access subscription. */
   readonly manageSubscription: () => void;
   readonly turnKey: (code: string) => Promise<KeyResult>;
@@ -131,6 +141,14 @@ export function PurchasesProvider({ children }: { children: ReactNode }) {
   // The city a Week Pass on the App Store's sheet now is for, in case its token is lost.
   const weekCityPending = useRef<string | null>(null);
   const connected = useRef<Promise<boolean> | null>(null);
+  // A purchase the web app is waiting on, answered by the listeners below.
+  type Waiting = (result: { outcome: "bought" | "cancelled" | "pending" | "failed"; message?: string; entitlement?: Entitlement }) => void;
+  const waiting = useRef<Waiting | null>(null);
+  const answer = useCallback((result: Parameters<Waiting>[0]) => {
+    const resolve = waiting.current;
+    waiting.current = null;
+    resolve?.(result);
+  }, []);
 
   const connect = useCallback(() => {
     connected.current ??= initConnection().catch(() => {
@@ -212,8 +230,10 @@ export function PurchasesProvider({ children }: { children: ReactNode }) {
       void (async () => {
         const p = purchase as unknown as StorePurchaseLike;
         if (p.purchaseState === "pending") {
-          setNote("Waiting for approval. Your pass opens as soon as it is approved.");
+          const line = "Waiting for approval. Your pass opens as soon as it is approved.";
+          setNote(line);
           setBuying(false);
+          answer({ outcome: "pending", message: line });
           return;
         }
         if (p.productId === WEEK_PASS_SKU) {
@@ -221,22 +241,26 @@ export function PurchasesProvider({ children }: { children: ReactNode }) {
           if (city) writeJson("week-cities", { ...readWeekCities(), [p.transactionId || p.id]: city });
         }
         weekCityPending.current = null;
-        await refreshStore();
+        const found = await refreshStore();
         // Finished once recorded, so StoreKit stops offering it again.
         await finishTransaction({ purchase, isConsumable: false }).catch(() => undefined);
         setBuying(false);
+        answer({ outcome: "bought", ...(found ? { entitlement: found } : {}) });
       })();
     });
     const failed = purchaseErrorListener((error) => {
       setBuying(false);
       weekCityPending.current = null;
-      if (!isUserCancelledError(error)) setNote("The App Store did not finish that. Nothing was charged. Try again in a moment.");
+      if (isUserCancelledError(error)) return answer({ outcome: "cancelled" });
+      const line = "The App Store did not finish that. Nothing was charged. Try again in a moment.";
+      setNote(line);
+      answer({ outcome: "failed", message: line });
     });
     return () => {
       updated.remove();
       failed.remove();
     };
-  }, [refreshStore]);
+  }, [answer, refreshStore]);
 
   useEffect(() => {
     const tick = setInterval(() => setNow(Date.now()), 60_000);
@@ -310,6 +334,54 @@ export function PurchasesProvider({ children }: { children: ReactNode }) {
     },
     [buying, connect],
   );
+
+  const buyAndWait = useCallback(
+    (offer: Pick<Offer, "plan" | "sku" | "city">) =>
+      new Promise<Parameters<Waiting>[0]>((resolve) => {
+        if (buying || waiting.current) return resolve({ outcome: "failed", message: "" });
+        waiting.current = resolve;
+        void (async () => {
+          setNote(null);
+          setBuying(true);
+          if (!(await connect())) {
+            setBuying(false);
+            const line = "The App Store is not answering. Try again in a moment.";
+            setNote(line);
+            return answer({ outcome: "failed", message: line });
+          }
+          try {
+            if (offer.plan === "allAccess") {
+              await requestPurchase({ request: { apple: { sku: offer.sku } }, type: "subs" });
+            } else {
+              const token = offer.plan === "week" && offer.city ? cityToken(offer.city.id) : null;
+              weekCityPending.current = offer.plan === "week" ? (offer.city?.id ?? null) : null;
+              await requestPurchase({
+                request: { apple: { sku: offer.sku, ...(token ? { appAccountToken: token } : {}) } },
+                type: "in-app",
+              });
+            }
+          } catch {
+            // The error listener has answered, or will; if it never does, the page is not
+            // left waiting.
+            setBuying(false);
+            setTimeout(() => {
+              if (waiting.current === resolve) answer({ outcome: "failed", message: "" });
+            }, 3000);
+          }
+        })();
+      }),
+    [answer, buying, connect],
+  );
+
+  const restoreAndRead = useCallback(async () => {
+    if (!(await connect())) return null;
+    try {
+      await restorePurchases();
+    } catch {
+      /* Cancelled or refused: read what is held anyway. */
+    }
+    return refreshStore();
+  }, [connect, refreshStore]);
 
   const restoreAppStore = useCallback(async () => {
     if (!(await connect())) return "The App Store is not answering. Try again in a moment.";
@@ -388,11 +460,14 @@ export function PurchasesProvider({ children }: { children: ReactNode }) {
       buy,
       restoreAppStore,
       restoreWebsite,
+      appStore: store,
+      buyAndWait,
+      restoreAndRead,
       manageSubscription,
       turnKey,
       removeKey,
     }),
-    [entitlement, now, role, store, heardIds, isLocked, priceOf, buying, note, clearNote, buy, restoreAppStore, restoreWebsite, manageSubscription, turnKey, removeKey],
+    [entitlement, now, role, store, heardIds, isLocked, priceOf, buying, note, clearNote, buy, restoreAppStore, restoreWebsite, buyAndWait, restoreAndRead, manageSubscription, turnKey, removeKey],
   );
 
   return <PurchasesContext.Provider value={value}>{children}</PurchasesContext.Provider>;

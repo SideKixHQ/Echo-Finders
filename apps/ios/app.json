@@ -11,7 +11,11 @@
       "bundleIdentifier": "com.echofinders.app",
       "buildNumber": "1",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "Echo Finders uses the camera so you can hold up your phone and see which echoes are around you.",
+        "WKAppBoundDomains": [
+          "echo-finders.vercel.app"
+        ]
       },
       "privacyManifests": {
         "NSPrivacyTracking": false,

@@ -104,6 +104,10 @@ export interface WalkStep {
  * One judge for the life of the app, so an echo found on one walk is not found again on
  * the next, and restored from what earlier launches kept (`records`), so it is not found
  * again tomorrow either.
+ *
+ * Since 2026-11-13 the app shows the web app, which judges arrival itself; with the screen
+ * locked the shell's `PocketJudge` (`shell/logic.ts`) does, from the page's own plan. This
+ * class is kept, and tested, as the record of the native walk's rules.
  */
 export class WalkJudge {
   private readonly tracker: CaptureTracker;

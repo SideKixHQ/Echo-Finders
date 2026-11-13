@@ -14,16 +14,16 @@
  *   Stop       Ends background updates (`stopLocationUpdatesAsync`) or the on screen
  *              watch. An echo already playing finishes.
  *
- * Above the navigator, inside the narrator, so the walk outlives the Map tab and hands
- * the narrator its echoes from anywhere in the app.
+ * The app shows the web app (ADR-0012, amended 2026-11-13): the walk starts and stops
+ * from the page's Settings › Hands-free (`shell/WebShell.tsx`), and the page decides what
+ * a fix means. `resume` starts a hands free walk only if Always is already granted, never
+ * asking: it is what runs when the page loads with Hands-free already on.
  */
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { AppState } from "react-native";
 import * as Location from "expo-location";
 import { activateKeepAwakeAsync, deactivateKeepAwake } from "expo-keep-awake";
 import { screenAwake } from "@echofinders/core";
-import { useNarrator } from "../player";
-import { usePurchases } from "../purchases/PurchasesProvider";
 import {
   FRESH_LADDER,
   NO_LOCATION_LINE,
@@ -34,7 +34,7 @@ import {
   type LadderSession,
   type WalkPlan,
 } from "./logic";
-import { attachNarrator, isHandsFreeOn, startHandsFree, startOnScreen, stopWalk } from "./task";
+import { isHandsFreeOn, startHandsFree, startOnScreen, stopWalk } from "./task";
 import { HandsFreeSheet } from "./sheet";
 
 export type WalkMode = "off" | "hands-free" | "on-screen";
@@ -44,6 +44,8 @@ interface Walk {
   /** A line to show once with the walk: the fallback, or why it could not start. */
   readonly note: string | null;
   readonly start: () => void;
+  /** Start hands free if Always is already granted. Asks nothing. */
+  readonly resume: () => void;
   readonly stop: () => void;
   readonly dismissNote: () => void;
 }
@@ -56,29 +58,11 @@ let ladder: LadderSession = FRESH_LADDER;
 const KEEP_AWAKE_TAG = "echo-finders-walk";
 
 export function WalkProvider({ children }: { children: ReactNode }) {
-  const { offer, moved } = useNarrator();
-  const { isLocked } = usePurchases();
   const [mode, setMode] = useState<WalkMode>("off");
   const [note, setNote] = useState<string | null>(null);
   const [explaining, setExplaining] = useState(false);
   const [active, setActive] = useState(AppState.currentState === "active");
   const busy = useRef(false);
-
-  // The narrator's calls, current, for a task that runs outside React. An echo no pass
-  // opens past the free ten is not handed over: the walk goes quietly on, as the web's
-  // play gate does, and the echo's card offers the passes when it is opened.
-  const handsRef = useRef({ offer, moved, isLocked });
-  useEffect(() => {
-    handsRef.current = { offer, moved, isLocked };
-  }, [offer, moved, isLocked]);
-  useEffect(
-    () =>
-      attachNarrator({
-        offer: (echo) => (handsRef.current.isLocked(echo) ? null : handsRef.current.offer(echo)),
-        moved: (at) => handsRef.current.moved(at),
-      }),
-    [],
-  );
 
   // A hands free walk outlives the app's screens, and a relaunch: pick it up.
   useEffect(() => {
@@ -139,6 +123,19 @@ export function WalkProvider({ children }: { children: ReactNode }) {
       });
   }, [go]);
 
+  const resume = useCallback(() => {
+    if (busy.current) return;
+    busy.current = true;
+    void (async () => {
+      const plan = planWalk(await Location.getForegroundPermissionsAsync(), await Location.getBackgroundPermissionsAsync(), ladder);
+      if (plan.kind === "hands-free") await go(plan);
+    })()
+      .catch(() => undefined)
+      .finally(() => {
+        busy.current = false;
+      });
+  }, [go]);
+
   const answer = useCallback(
     (choice: "turn-on" | "not-now") => {
       setExplaining(false);
@@ -186,7 +183,7 @@ export function WalkProvider({ children }: { children: ReactNode }) {
 
   const dismissNote = useCallback(() => setNote(null), []);
 
-  const value = useMemo(() => ({ mode, note, start, stop, dismissNote }), [mode, note, start, stop, dismissNote]);
+  const value = useMemo(() => ({ mode, note, start, resume, stop, dismissNote }), [mode, note, start, resume, stop, dismissNote]);
   return (
     <WalkContext.Provider value={value}>
       {children}
