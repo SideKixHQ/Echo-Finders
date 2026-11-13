@@ -93,7 +93,10 @@ Asked of James, not yet decided, built as below until he answers:
   too"). The panel's True crime chip is the opt in while exploring, and picking any other
   topic switched it off, which rebuilt the session: on the Central Park West walk, with
   Ghosts & legends picked, the Dakota never synced. On a planned route, drive or flight
-  true crime now stays on whatever is picked; exploring is unchanged until James decides.
+  true crime now stays on whatever is picked. Exploring keeps the chip as the opt in, decided
+  2026-11-13 (James, "yes"): while exploring, picking a topic means only that topic's echoes
+  alert and play nearby, so with any other topic picked a true crime echo does not sync,
+  does not count in the nearby list or the "An echo is close" toast, and does not play.
 - **In the topic view you are drawn under the numbered dots** (James, 2026-11-13), so your
   dot never hides the number of the town you are in. Everywhere else you stay on top.
 - **A trip's topic view has the area card** ("N places · M echoes") when zoomed out, as
