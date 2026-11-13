@@ -11,7 +11,7 @@ category: history
 rare: rare
 rareReason: "Easy to miss"
 format: short
-durationS: 88
+durationS: 92
 visibility: at-hand
 certainty: documented
 minAge: 12
@@ -31,13 +31,13 @@ script: |
   The record of the trials was printed the following year. Twenty-two of his crew were hanged in November. Bonnet followed on the tenth of December, executed, it says, at the White Point
   near Charles Town.
 
-  That is here.
+  White Point was this end of the town.
 
   There was no garden then. The point took its name from the oyster shells heaped along the shore. A Charleston historian, writing in nineteen-oh-six, recorded where the
   pirates went afterwards. They were buried on the White Point shoal, just above the
   low-water mark. Out on the mud, at the edge of the tide.
 
-  The city later filled the shoal in. This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on top of it.
+  The city later filled the shoal in. This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on that ground.
 
   They were buried where the tide came in. The city moved the tide.
 pronunciations:
@@ -88,6 +88,18 @@ claims:
   - says: "Bonnet followed on the tenth of December, executed, it says, at the White Point near Charles Town."
     source: 1
     quote: "Wednefday December the roth, 1718. the faid Major Stede Bonnet was executed at the White»Point near Charles-Zown, according to the above Sentence."
+  - says: "Bonnet followed on the tenth of December, executed, it says, at the White Point near Charles Town."
+    source: 3
+    quote: "He appointed Wednesday, the 10th of December, as the fatal day, and Bonnet was accordingly executed."
+  - says: "Bonnet followed on the tenth of December, executed, it says, at the White Point near Charles Town."
+    source: 3
+    quote: "as desperate outlaws as any of those who had paid the penalty of their crimes at White Point"
+  - says: "White Point was this end of the town."
+    source: 4
+    quote: "White Point Gardens is located at the southern tip of the Charleston peninsula"
+  - says: "White Point was this end of the town."
+    source: 5
+    quote: "old White Point, with its numerous creeks and desolate mud-flats, is now occupied by a populous and fashionable portion of Charleston"
   - says: "There was no garden then. The point took its name from the oyster shells heaped along the shore."
     source: 4
     quote: "Originally known as “White Point” or “Oyster Point” during the initial English settlement of Charleston, the area took its name from the large accumulation of oyster shells along the river shore."
@@ -100,15 +112,21 @@ claims:
   - says: "They were buried on the White Point shoal, just above the low-water mark."
     source: 2
     quote: "They were buried on White Point shoal, just above low-water mark."
+  - says: "Out on the mud, at the edge of the tide."
+    source: 5
+    quote: "the condemned men were hanged at White Point, and their bodies buried in the marsh below the low-water mark"
   - says: "The city later filled the shoal in."
     source: 2
     quote: "The place has been filled up and is now the Battery Garden"
-  - says: "This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on top of it."
+  - says: "This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on that ground."
     source: 4
     quote: "a public recreation ground laid out in 1837"
-  - says: "This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on top of it."
+  - says: "This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on that ground."
     source: 4
     quote: "Mature live oak trees planted on a grid pattern line the park’s walkways and shade its interior."
+  - says: "They were buried where the tide came in."
+    source: 5
+    quote: "Bonnet was hanged in accordance with his sentence, and his body buried with those of his companions in guilt, within the flowing of the sea"
 sources:
   - title: "The tryals of Major Stede Bonnet and other pirates (1719)"
     publisher: "Library of Congress"
@@ -130,74 +148,79 @@ sources:
     url: https://tile.loc.gov/storage-services/master/pnp/habshaer/sc/sc1200/sc1228/data/sc1228data.pdf
     retrievedAt: "2026-11-09"
     rights: fair-use-facts
+  - title: "The Carolina pirates and colonial commerce, 1670-1740 (Shirley Carter Hughson, Johns Hopkins University Studies in Historical and Political Science, series XII, 1894), pp. 106 and 109"
+    publisher: "Internet Archive"
+    url: https://archive.org/stream/sim_johns-hopkins-university-historical-political_may-july-1894_12_5-7/sim_johns-hopkins-university-historical-political_may-july-1894_12_5-7_djvu.txt
+    retrievedAt: "2026-11-13"
+    rights: public-domain
 renders:
   - voiceId: IMlxLW3qgn0MWgfz7Vnh
     audioKey: audio/charleston-where-the-tide-came-in/IMlxLW3qgn0MWgfz7Vnh.mp3
-    durationS: 87.5
-    audioBytes: 1401878
+    durationS: 92.3
+    audioBytes: 1477528
     transcript:
-      totalS: 87.5
+      totalS: 92.3
       lines:
         - text: Somewhere in this garden is a small stone with a pirate's name on it.
           atS: 0
-          durationS: 3.79
+          durationS: 4.18
         - text: Stede Bonnet.
-          atS: 4.23
-          durationS: 1.14
+          atS: 4.78
+          durationS: 1.29
         - text: It was put up in nineteen forty-three, and it is easy to walk straight past.
-          atS: 5.97
-          durationS: 4.56
+          atS: 6.68
+          durationS: 4.7
         - text: Bonnet was not the usual kind of pirate.
-          atS: 10.97
-          durationS: 2.51
+          atS: 12.07
+          durationS: 2.59
         - text: The old histories describe a gentleman by birth and education, of fair estate, a former army major.
-          atS: 13.8
-          durationS: 7.21
+          atS: 15.27
+          durationS: 7.63
         - text: There seemed no reason why he took to piracy.
-          atS: 21.83
-          durationS: 2.75
+          atS: 23.71
+          durationS: 2.69
         - text: In the autumn of seventeen eighteen, ships from Charles Town caught him and brought him back in irons.
-          atS: 25.02
-          durationS: 5.63
+          atS: 27
+          durationS: 6.27
         - text: He escaped once, in a woman's dress, and was hunted down in the sandhills of Sullivan's Island.
-          atS: 31.03
-          durationS: 5.79
+          atS: 33.88
+          durationS: 6.42
         - text: The record of the trials was printed the following year.
-          atS: 37.27
-          durationS: 2.93
+          atS: 41.6
+          durationS: 2.91
         - text: Twenty-two of his crew were hanged in November.
-          atS: 40.58
-          durationS: 2.56
+          atS: 45.21
+          durationS: 2.94
         - text: Bonnet followed on the tenth of December, executed, it says, at the White Point near Charles Town.
-          atS: 43.75
-          durationS: 6.59
-        - text: That is here.
-          atS: 50.85
-          durationS: 1.13
+          atS: 48.84
+          durationS: 6.07
+        - text: White Point was this end of the town.
+          atS: 55.61
+          durationS: 2.09
         - text: There was no garden then.
-          atS: 52.58
-          durationS: 1.52
+          atS: 57.98
+          durationS: 1.37
         - text: The point took its name from the oyster shells heaped along the shore.
-          atS: 54.61
-          durationS: 3.7
+          atS: 59.95
+          durationS: 3.87
         - text: A Charleston historian, writing in nineteen-oh-six, recorded where the pirates went afterwards.
-          atS: 58.7
-          durationS: 6.19
+          atS: 64.42
+          durationS: 5.64
         - text: They were buried on the White Point shoal, just above the low-water mark.
-          atS: 65.33
-          durationS: 4.02
+          atS: 70.76
+          durationS: 3.93
         - text: Out on the mud, at the edge of the tide.
-          atS: 69.79
-          durationS: 2.61
-        - text: The city later filled the shoal in.
-          atS: 73.21
-          durationS: 2.12
-        - text: This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on top of it.
-          atS: 76.03
-          durationS: 6.37
-        - text: They were buried where the tide came in.
-          atS: 82.85
-          durationS: 2.08
-        - text: The city moved the tide.
-          atS: 85.2
+          atS: 75.3
           durationS: 2.33
+        - text: The city later filled the shoal in.
+          atS: 78.24
+          durationS: 2.05
+        - text: This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on that ground.
+          atS: 80.9
+          durationS: 6.4
+        - text: They were buried where the tide came in.
+          atS: 87.81
+          durationS: 2.14
+        - text: The city moved the tide.
+          atS: 90.45
+          durationS: 1.82
