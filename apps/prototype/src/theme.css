@@ -2294,7 +2294,7 @@ body {
   color: var(--btn-ink); background: var(--btn);
 }
 
-/* Flight number, on the package screen. */
+/* An airport field, on the journey screen. */
 .onb-field {
   width: 100%; padding: 14px 15px; border-radius: 14px; font: inherit; font-size: var(--fs-body);
   background: rgba(var(--rgb-panel), 0.55); border: 1px solid var(--line-2);

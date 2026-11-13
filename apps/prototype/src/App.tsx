@@ -2921,7 +2921,7 @@ export function App() {
                * How you are travelling, changeable here and nowhere else until now.
                *
                * Switching to flying clears the route rather than carrying a walk over into
-               * the air: a flight is chosen by number, and leaving the old journey selected
+               * the air: a flight is chosen by its airports, and leaving the old journey selected
                * would mean "Carry on" quietly putting somebody back on a pavement.
                */
               travel={travel}
