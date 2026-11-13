@@ -1003,8 +1003,12 @@ export function App() {
     if (fresh.length === 0) return;
     for (const c of fresh) seenCaptures.current.add(c.echo.id);
     // The last one is the one you are standing on.
-    setSyncedNow(fresh[fresh.length - 1]!);
-  }, [state.captured, firstRunDone, restored, journeyKey]);
+    const last = fresh[fresh.length - 1]!;
+    // On a drive an echo that plays by itself is not asked for (James, 2026-11-13, decision
+    // 2): "tap to play" would ask a driver to tap for something already playing, or about to.
+    if (travel === "driving" && session.playsOnArrival(last.echo)) return;
+    setSyncedNow(last);
+  }, [state.captured, firstRunDone, restored, journeyKey, travel, session]);
   // Played some other way (the bar, the card): the toast asking for that tap is answered.
   useEffect(() => {
     if (syncedNow && state.playback.kind !== "idle" && state.playback.item.echo.id === syncedNow.echo.id) setSyncedNow(null);

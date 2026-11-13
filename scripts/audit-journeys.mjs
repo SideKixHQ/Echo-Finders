@@ -10,7 +10,7 @@
  */
 
 import { chromium } from 'playwright';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { spawn, spawnSync } from 'node:child_process';
 import { setTimeout as sleep } from 'node:timers/promises';
 
@@ -124,6 +124,55 @@ async function choosePlays(p) {
   sw = await choosePlays(p);
   check('D2: turned off on the drive, it stays off', (await sw.getAttribute('aria-pressed')) === 'false',
     `aria-pressed=${await sw.getAttribute('aria-pressed')}`);
+  await ctx.close();
+}
+
+/**
+ * Drive the MVP route's traced road by GPS, from the Cotton Exchange, at `kph` for `seconds`,
+ * one fix a second, calling `each` after every fix.
+ */
+const MVP_PATH = JSON.parse(readFileSync('content/routes/wilmington-to-southport.path.json', 'utf8')).path;
+function pointAlong(path, km) {
+  const R = 6371;
+  const rad = (d) => (d * Math.PI) / 180;
+  const dist = (a, b) => 2 * R * Math.asin(Math.sqrt(Math.sin(rad(b[0] - a[0]) / 2) ** 2 +
+    Math.cos(rad(a[0])) * Math.cos(rad(b[0])) * Math.sin(rad(b[1] - a[1]) / 2) ** 2));
+  for (let i = 1; i < path.length; i++) {
+    const d = dist(path[i - 1], path[i]);
+    if (km <= d) {
+      const f = d ? km / d : 0;
+      return { latitude: path[i - 1][0] + (path[i][0] - path[i - 1][0]) * f, longitude: path[i - 1][1] + (path[i][1] - path[i - 1][1]) * f };
+    }
+    km -= d;
+  }
+  const last = path[path.length - 1];
+  return { latitude: last[0], longitude: last[1] };
+}
+async function driveAlong(ctx, p, { kph, seconds }, each = async () => {}) {
+  for (let t = 1; t <= seconds; t++) {
+    await ctx.setGeolocation({ ...pointAlong(MVP_PATH, (kph * t) / 3600), accuracy: 10 });
+    await p.waitForTimeout(1000);
+    await each(t);
+  }
+}
+
+// ── D3: on a drive, no "Synced · tap to play" for an echo that plays by itself ────────
+// Decision 2. The drive at 47 km/h through downtown Wilmington, as the plan drove it.
+{
+  const { ctx, p } = await freshApp(WILMINGTON);
+  await startDrive(p);
+  for (let i = 0; i < 6 && (await p.locator('.toast-synced').count()); i++) {
+    await p.locator('.toast-synced .toast-close').click().catch(() => {});
+    await p.waitForTimeout(300);
+  }
+  const asked = new Set();
+  let played = 0;
+  await driveAlong(ctx, p, { kph: 47, seconds: 40 }, async () => {
+    for (const t of await p.locator('.toast-synced').allInnerTexts()) if (/tap to play/.test(t)) asked.add(t.split('\n')[1] ?? t);
+    if ((await p.locator('.echobar-orb[aria-label="Pause"]').count()) > 0) played++;
+  });
+  check('D3: on a drive, echoes play by themselves', played > 0, `${played} s playing`);
+  check('D3: on a drive, no "Synced · tap to play" for an echo that plays by itself', asked.size === 0, [...asked].join(' / '));
   await ctx.close();
 }
 
