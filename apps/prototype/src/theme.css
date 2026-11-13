@@ -4237,6 +4237,20 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .jchip-wrap-wide { flex: 1 1 190px; min-width: 0; }
 /* The journey side always fills the row up to the echoes button, chip or ribbon alike. */
 .mapbar-row > .jchip-wrap { flex: 1 1 auto; min-width: 0; }
+/*
+ * Exploring with no route, the trip button keeps its whole name and the topics button gives
+ * way (James, 2026-11-13, mock 30 B): "Ghosts & legends" took the row and cut "Walking
+ * nearby" to "W...". The topics button takes what is left, its words cut with an ellipsis,
+ * its topic icon and its chevron always showing. Its words count for nothing in its own
+ * size (width 0, then grow), so only a trip name too long to leave room for the icon and
+ * chevron (a searched place) is cut, as before. A route's chip (it carries a progress fill)
+ * and the flight ribbon keep the rule above.
+ */
+.mapbar-row > .jchip-wrap:not(.jchip-wrap-wide):not(:has(.jchip-fill)) { flex: 0 1 auto; }
+.mapbar-row > .jchip-wrap:not(.jchip-wrap-wide):not(:has(.jchip-fill)) ~ .kind-tap { flex: 1 0 auto; }
+.mapbar-row > .jchip-wrap:not(.jchip-wrap-wide):not(:has(.jchip-fill)) ~ .kind-tap .kind-label {
+  flex: 1 1 auto; width: 0; min-width: 0; overflow: hidden; text-overflow: ellipsis; text-align: left;
+}
 .mapbar .jchip { width: 100%; }
 .mapbar .jchip-caret { margin-left: auto; }
 

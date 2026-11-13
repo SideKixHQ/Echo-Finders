@@ -12,6 +12,7 @@
  *
  *   20  "EXTRA RARE" never touches the marker's arrow
  *   26  the marker never sits over a pin or a group, and a tap on a pin reaches the pin
+ *   30  the trip button keeps its whole label; the topics button gives way, icon showing
  */
 
 import { chromium } from 'playwright';
@@ -142,6 +143,56 @@ if (runs('26')) {
   }
   check('26  markers were on screen to measure', measured >= 20, `${measured}`);
   await ctx.close();
+}
+
+// 30. The trip button keeps its whole name; the topics button gives way, its icon showing.
+if (runs('30')) {
+  const cases = [['All echoes', []], ['Ghosts & legends', ['Ghosts & legends']], ['Food & drink', ['Food & drink']],
+    ['two topics', ['Ghosts & legends', 'True crime']]];
+  for (const width of [375, 390, 440]) {
+    const { ctx, p } = await phone({ latitude: 40.70556, longitude: -74.01705 }, { width });
+    for (const trip of ['Walking nearby', 'Driving nearby']) {
+      if (trip === 'Driving nearby') {
+        await p.getByLabel(/Change your journey/).click();
+        await p.locator('.jmenu').getByRole('button', { name: 'Drive', exact: true }).click();
+        await p.locator('.jmenu-card', { hasText: 'Around here' }).click();
+        await p.waitForTimeout(800);
+      }
+      for (const [name, picks] of cases) {
+        await p.locator('.kind-tap').click();
+        await p.locator('.kind-box button', { hasText: /^All$/ }).click();
+        for (const t of picks) await p.locator('.kind-box button').filter({ hasText: new RegExp(`^${t}$`) }).first().click();
+        if (await p.locator('.kind-box').count()) await p.keyboard.press('Escape');
+        await p.waitForTimeout(300);
+        const m = await p.evaluate(() => {
+          const r = (el) => el?.getBoundingClientRect();
+          const label = document.querySelector('.mapbar-row > .jchip-wrap .jchip-label');
+          const tap = document.querySelector('.kind-tap');
+          const glyph = tap.querySelector('.kind-glyph');
+          const chev = tap.querySelector('.kind-chev');
+          const words = tap.querySelector('.kind-label');
+          const t = r(tap), g = r(glyph), c = r(chev), w = r(words);
+          return {
+            trip: label.textContent,
+            tripWhole: label.scrollWidth <= label.clientWidth,
+            rowFits: t.right <= innerWidth - 16 + 0.5,
+            glyph: !glyph || (g.width > 0 && g.left >= t.left && g.right <= t.right),
+            chev: c.width > 0 && c.right <= t.right,
+            wordsFit: w.right <= c.left + 0.5,
+            cut: words.scrollWidth > words.clientWidth,
+            ellipsis: getComputedStyle(words).textOverflow === 'ellipsis',
+          };
+        });
+        const tag = `30  ${width}, ${trip}, ${name}`;
+        check(`${tag}: trip button says "${m.trip}" whole`, m.tripWhole && m.trip === trip, m.trip);
+        check(`${tag}: topics button inside the row, icon and chevron showing`, m.rowFits && m.glyph && m.chev,
+          JSON.stringify(m));
+        check(`${tag}: topics words end before the chevron, ellipsised when cut`,
+          m.wordsFit && (!m.cut || m.ellipsis), JSON.stringify(m));
+      }
+    }
+    await ctx.close();
+  }
 }
 
 await browser.close();
