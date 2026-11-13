@@ -19,6 +19,9 @@ import { WALK_M_PER_S } from "./streets.js";
 /** Streets are longer than the crow flies; across a city grid, by about this much. */
 export const DETOUR = 1.3;
 
+/** The most stops a planned walk takes, whatever the time: a safety limit, not a target. */
+export const MAX_STOPS = 20;
+
 /** Echoes closer together than this are one stop: you sync them all standing in one place. */
 export const SAME_PLACE_M = 40;
 
@@ -58,8 +61,12 @@ function legs(start: LatLng, order: readonly Candidate[], loop: boolean): number
  * The best walk from `start` that fits in `budgetS` seconds, listening included.
  *
  * `loop` brings you back to the start (for somebody who parked there); otherwise the walk
- * ends at the last echo. `maxStops` keeps a long budget from turning into a list nobody
- * will finish.
+ * ends at the last echo.
+ *
+ * The time decides how many stops (James, 2026-11-13: "drop the cap"). It was six, so an
+ * hour and two hours in San Francisco planned the same six stops. `maxStops` is now only a
+ * safety limit, `MAX_STOPS`, against a long budget in a dense place becoming a list nobody
+ * could follow.
  */
 export function planWalk(
   start: LatLng,
@@ -68,7 +75,7 @@ export function planWalk(
   options: { readonly loop?: boolean; readonly maxStops?: number } = {},
 ): PlannedWalk {
   const loop = options.loop ?? false;
-  const maxStops = options.maxStops ?? 6;
+  const maxStops = options.maxStops ?? MAX_STOPS;
   let order: Candidate[] = [];
   let listen = 0;
   const left = new Set(candidates);

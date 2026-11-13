@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { orderStops, planWalk, type Candidate } from "../src/index.js";
+import { MAX_STOPS, orderStops, planWalk, type Candidate } from "../src/index.js";
 
 const start = { lat: 34.235, lng: -77.948 };
 // About 100 m per step north (0.0009 degrees of latitude).
@@ -13,6 +13,23 @@ describe("planning a walk", () => {
     const long = planWalk(start, line, 20 * 60);
     expect(short.walkS + short.listenS).toBeLessThanOrEqual(6 * 60);
     expect(long.stops.length).toBeGreaterThan(short.stops.length);
+  });
+
+  // James, 2026-11-13: "drop the cap". It was six stops whatever the time.
+  it("lets the time decide how many stops, past the old six", () => {
+    // Five minutes at each, about 100 m apart: nine or so in an hour, twice that in two.
+    const line = Array.from({ length: 30 }, (_, i) => c(`e${i + 1}`, north(i + 1), 0.5, 300));
+    const hour = planWalk(start, line, 60 * 60);
+    const twoHours = planWalk(start, line, 2 * 60 * 60);
+    expect(hour.stops.length).toBeGreaterThan(6);
+    expect(twoHours.stops.length).toBeGreaterThan(hour.stops.length);
+    expect(twoHours.walkS + twoHours.listenS).toBeLessThanOrEqual(2 * 60 * 60);
+  });
+
+  it("stops at the safety limit of twenty however long the time", () => {
+    expect(MAX_STOPS).toBe(20);
+    const line = Array.from({ length: 40 }, (_, i) => c(`e${i + 1}`, north(i + 1)));
+    expect(planWalk(start, line, 10 * 60 * 60).stops).toHaveLength(MAX_STOPS);
   });
 
   it("walks them in order rather than doubling back", () => {
