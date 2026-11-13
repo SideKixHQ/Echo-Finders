@@ -11,6 +11,7 @@
  * failed on the app as it was:
  *
  *   20  "EXTRA RARE" never touches the marker's arrow
+ *   26  the marker never sits over a pin or a group, and a tap on a pin reaches the pin
  */
 
 import { chromium } from 'playwright';
@@ -99,6 +100,47 @@ if (runs('20')) {
   }
   check('20  an Extra rare marker was measured on both edges',
     seen.has('Extra rare right') && seen.has('Extra rare left'), [...seen].join(', '));
+  await ctx.close();
+}
+
+// 26. The marker clear of every pin and group, and taps on pins reach the pins. The sweep of
+//     the findings: five by five around Philadelphia and Lower Manhattan, plus the two above.
+if (runs('26')) {
+  const { ctx, p } = await phone({ latitude: 39.947, longitude: -75.1471 });
+  const spots = ['39.9420,-75.1540', '39.9470,-75.1471'];
+  for (const [la, ln] of [[39.948, -75.15], [40.714, -74.014]]) {
+    for (let i = -2; i <= 2; i++) for (let j = -2; j <= 2; j++) {
+      spots.push(`${(la + i * 0.003).toFixed(4)},${(ln + j * 0.004).toFixed(4)}`);
+    }
+  }
+  let measured = 0;
+  for (const at of spots) {
+    await standAt(p, at);
+    const bad = await p.$$eval('.map-edge', (gs) => gs.flatMap((g) => {
+      const plate = g.querySelector('.map-edge-plate').getBoundingClientRect();
+      const out = [];
+      for (const hit of document.querySelectorAll('.pin-hit')) {
+        if (g.contains(hit)) continue;
+        const q = hit.getBoundingClientRect();
+        if (!q.width) continue;
+        const cx = q.left + q.width / 2, cy = q.top + q.height / 2;
+        // A pin's own disc is 13 to 15px; a group's is up to 26. Its centre that close to
+        // the plate means the plate is drawn over it.
+        const r = Math.min(q.width / 2, 26) - 9;
+        const under = cx > plate.left - r && cx < plate.right + r && cy > plate.top - r && cy < plate.bottom + r;
+        const top = document.elementFromPoint(cx, cy);
+        const stolen = !!top && !!top.closest('.map-edge');
+        if (under || stolen) {
+          const name = hit.parentElement.getAttribute('aria-label') ?? 'a pin';
+          out.push(`${name.slice(0, 40)}${stolen ? ' (tap goes to the marker)' : ''}`);
+        }
+      }
+      return out;
+    }));
+    measured += await p.locator('.map-edge').count();
+    check(`26  the marker clear of pins at ${at}`, bad.length === 0, bad.join('; '));
+  }
+  check('26  markers were on screen to measure', measured >= 20, `${measured}`);
   await ctx.close();
 }
 

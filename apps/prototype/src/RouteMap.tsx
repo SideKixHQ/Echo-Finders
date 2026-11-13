@@ -1689,6 +1689,20 @@ export function RouteMap({
     const taken: { side: "left" | "right"; y: number }[] = [];
     const free = (side: "left" | "right", y: number) =>
       taken.every((t) => t.side !== side || Math.abs(t.y - y) >= 40) && !(side === "right" && onColumn(y));
+    /*
+     * And off the pins (James, 2026-11-13, mock 26 A). Drawn over a pin or a group, a plate
+     * hid it and took its taps: in Lower Manhattan tapping two pins under "RARE" opened the
+     * rare echo 2 km away instead. A plate keeps clear of every pin and group centre by the
+     * mock's margins, 14px either side and 26px (the biggest group's radius) above and below,
+     * at the nearest height that allows it, so it stays as close to the echo's bearing as it
+     * can. Where no height is clear it keeps the slot it had before.
+     */
+    const centres = groups.map((g) => ({ x: g.x, y: g.y }));
+    const clearOfPins = (side: "left" | "right", y: number) => {
+      const left = side === "right" ? box.w - GUTTER - EDGE_PLATE_W : GUTTER;
+      const right = left + EDGE_PLATE_W;
+      return centres.every((c) => !(c.x > left - 14 && c.x < right + 14 && c.y > y - 17 - 26 && c.y < y + 17 + 26));
+    };
     const placed: (EdgeMark & { y: number })[] = [];
     for (const mark of shown) {
       /*
@@ -1699,6 +1713,16 @@ export function RouteMap({
       const want = mark.side === "right" && onColumn(mark.y) ? railTop - 17 - 10 : mark.y;
       const low = mark.side === "right" && want === railTop - 17 - 10 ? barH + 17 + 10 : floor;
       let y: number | null = null;
+      // The nearest slot clear of the pins as well, in 4px steps: here, then above, then below.
+      for (let k = 0; k <= 120 && y === null; k++) {
+        for (const step of k === 0 ? [0] : [-k, k]) {
+          const slot = want + step * 4;
+          if (slot >= low && slot <= ceiling && free(mark.side, slot) && clearOfPins(mark.side, slot)) {
+            y = slot;
+            break;
+          }
+        }
+      }
       for (let k = 0; k < 12 && y === null; k++) {
         // The nearest free slot: here, then above, then below, widening.
         for (const step of k === 0 ? [0] : [-k, k]) {
@@ -1715,7 +1739,7 @@ export function RouteMap({
       placed.push({ ...mark, y });
     }
     return placed;
-  }, [at, overview, lookAt, directions, library, stateOf, projection, box, zoom, barH, reservedBottom, navH, railTopPx]);
+  }, [at, overview, lookAt, directions, library, stateOf, projection, box, zoom, barH, reservedBottom, navH, railTopPx, groups]);
 
   /**
    * One pin, drawn wherever it has been put.
