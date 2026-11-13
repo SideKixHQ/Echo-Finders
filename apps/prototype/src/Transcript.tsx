@@ -81,15 +81,19 @@ export function Transcript({ echo, simple, progress, onSeek }: TranscriptProps) 
 
       {echo.tags && echo.tags.length > 0 && (
         <div className="tkeys">
-          {echo.tags.slice(0, 4).map((tag) => (
-            <button
-              key={tag}
-              className={query === tag ? "tkey on" : "tkey"}
-              onClick={() => setQuery(query === tag ? "" : tag)}
-            >
-              {tag.replace(/-/g, " ")}
-            </button>
-          ))}
+          {echo.tags.slice(0, 4).map((tag) => {
+            // Searched as it reads: the slug ("independence-hall") is in no line of any script.
+            const words = tag.replace(/-/g, " ");
+            return (
+              <button
+                key={tag}
+                className={query === words ? "tkey on" : "tkey"}
+                onClick={() => setQuery(query === words ? "" : words)}
+              >
+                {words}
+              </button>
+            );
+          })}
         </div>
       )}
 
