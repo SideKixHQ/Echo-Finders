@@ -245,6 +245,71 @@ let browserSettings = null;
   await ctx.close();
 }
 
+// ── Saving a journey for no signal (D8, mock 2, approved 2026-11-13) ─────────────
+// Inside the app only: the trip sheet's card asks the phone to save, and the phone says
+// how it is going. With no answer the card stays as it was.
+async function tripSheet(p, mode) {
+  await p.getByLabel(/Change your journey/).click();
+  await p.waitForTimeout(400);
+  await p.locator('.jmenu-mode', { hasText: mode }).click();
+  await p.waitForTimeout(300);
+  const far = p.locator('.jmenu-far');
+  if ((await far.count()) && (await far.getAttribute('aria-expanded')) === 'false') await far.click();
+}
+async function pickRoute(p, mode, name) {
+  await tripSheet(p, mode);
+  await p.locator('.jmenu-item', { hasText: name }).first().click();
+  await p.waitForTimeout(1000);
+  await tripSheet(p, mode);
+}
+{
+  const { ctx, p } = await open({ bridge: {} });
+  await firstRun(p);
+  await pickRoute(p, 'Drive', 'Wilmington to Southport');
+  const card = p.locator('.jmenu-card', { hasText: /for no signal/ });
+  check('Save: a drive offers "Save for no signal" with its echoes and size',
+    /^Save for no signal\s+25 echoes · \d+(\.\d)? MB, with the map\. Plays where your phone loses signal\.$/.test((await card.innerText().catch(() => '')).trim()),
+    await card.innerText().catch(() => 'no card'));
+  check('Save: the card sits above Journey details', await p.evaluate(() => {
+    const c = [...document.querySelectorAll('.jmenu-card')].find((e) => /for no signal/.test(e.textContent));
+    return !!c && c.nextElementSibling?.classList.contains('jmenu-link') && /Journey details/.test(c.nextElementSibling.textContent);
+  }));
+  await card.click();
+  await p.waitForTimeout(300);
+  const ask = (await sent(p, 'trip:save')).at(-1);
+  check('Save: a tap asks the phone, with the route and its kind', ask?.routeId === 'wilmington-to-southport' && ask.kind === 'drive', JSON.stringify(ask));
+  check('Save: with no answer from the phone, the card stays as it was', /^Save for no signal/.test((await card.innerText()).trim()));
+  await p.evaluate(() => window.__send({ type: 'trip:saving', routeId: 'wilmington-to-southport', savedBytes: 7 * 1048576, totalBytes: 17 * 1048576 }));
+  await p.waitForTimeout(300);
+  check('Save: while saving, "Saving for no signal · Saving · 7 of 17 MB"',
+    /^Saving for no signal\s+Saving · 7 of 17 MB$/.test((await card.innerText()).trim()), await card.innerText());
+  await p.evaluate(() => window.__send({ type: 'trip:saved', routeId: 'wilmington-to-southport' }));
+  await p.waitForTimeout(300);
+  check('Save: once saved, "Saved for no signal", lit, with a tick',
+    /^Saved for no signal\s+On this device, plays with no signal$/.test((await card.innerText()).trim())
+      && (await card.getAttribute('class')).includes('on') && (await card.locator('.jmenu-tick').count()) === 1);
+  check('Save: the route\'s row ends in "· saved"', /· 25 echoes · saved$/.test((await p.locator('.jmenu-item', { hasText: 'Wilmington to Southport' }).innerText()).replace(/\s+/g, ' ').trim()));
+  if (SHOTS) await p.screenshot({ path: `${SHOTS}/bridge-trip-saved.png` });
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(400);
+  await pickRoute(p, 'Fly', 'Miami');
+  const flight = p.locator('.jmenu-card', { hasText: 'Save this flight' });
+  check('Save: a flight offers "Save this flight"',
+    /^Save this flight\s+New York to Miami · \d+ echoes · \d+(\.\d)? MB, with the map\. Saves by itself when the flight starts\.$/.test((await flight.innerText().catch(() => '')).trim()),
+    await flight.innerText().catch(() => 'no card'));
+  await flight.click();
+  await p.waitForTimeout(300);
+  check('Save: a flight is asked for as a flight', (await sent(p, 'trip:save')).at(-1)?.kind === 'flight');
+  await ctx.close();
+}
+{
+  const { ctx, p } = await open();
+  await firstRun(p);
+  await pickRoute(p, 'Drive', 'Wilmington to Southport');
+  check('Save: a browser offers no save card', (await p.locator('.jmenu-card', { hasText: /no signal|Save this flight/ }).count()) === 0);
+  await ctx.close();
+}
+
 // ── In the app: a launch with no signal opens the kept copy ──────────────────────
 {
   const { ctx, p } = await open({ bridge: { sw: true }, offlineReady: true });

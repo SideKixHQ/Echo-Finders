@@ -66,6 +66,14 @@ export interface JourneyChipProps {
    * "Echoes around me" to tell apart.
    */
   readonly compass?: { readonly label: string; readonly detail: string; readonly onOpen: () => void };
+  /**
+   * Inside the iPhone app, the card that saves this journey for no signal (D8, mock 2): on
+   * the tab of the journey you are on, under its routes. Absent in a browser, which cannot
+   * save.
+   */
+  readonly save?: { readonly title: string; readonly line: string; readonly saved: boolean; readonly onSave: () => void } | null;
+  /** Routes saved on this phone: their rows end in "· saved". */
+  readonly savedIds?: ReadonlySet<string>;
 }
 
 const MODES: readonly { readonly id: Travel; readonly label: string }[] = [
@@ -266,6 +274,7 @@ export function JourneyChip(props: JourneyChipProps) {
               // no stops to walk to: it plays what it passes, so it says how many that is,
               // the same count its journey screen gives ("25 echoes", not "3").
               countOf={tab === "walking" ? stopsOf : (r) => counts[r.id] ?? 0}
+              savedIds={props.savedIds}
               current={roaming ? null : route.id}
               onPick={(r) => done(() => props.onRoute(r))()}
             />
@@ -289,6 +298,7 @@ export function JourneyChip(props: JourneyChipProps) {
                         {r.mode === "flight" && r.origin.code && r.destination.code
                           ? ` · ${r.origin.code} to ${r.destination.code}`
                           : ""}
+                        {props.savedIds?.has(r.id) ? " · saved" : ""}
                       </small>
                     </span>
                     {on ? <Tick /> : <Chev />}
@@ -299,6 +309,16 @@ export function JourneyChip(props: JourneyChipProps) {
           )}
           {tab === "flight" && forTab.length === 0 && (
             <p className="jmenu-empty">No flights with echoes yet.</p>
+          )}
+
+          {props.save && !roaming && tab === travel && (
+            <button className={props.save.saved ? "jmenu-card on" : "jmenu-card"} onClick={props.save.onSave}>
+              <span>
+                <b>{props.save.title}</b>
+                <small>{props.save.line}</small>
+              </span>
+              {props.save.saved ? <Tick /> : <Chev />}
+            </button>
           )}
 
           <button className="jmenu-link" onClick={done(() => props.onDetails(tab))}>
@@ -353,6 +373,7 @@ function GuidedRoutes({
   here,
   heading,
   countOf,
+  savedIds,
   current,
   onPick,
 }: {
@@ -361,6 +382,7 @@ function GuidedRoutes({
   readonly heading: string;
   /** How many echoes each route is listed with. */
   readonly countOf: (r: Route) => number;
+  readonly savedIds?: ReadonlySet<string> | undefined;
   readonly current: string | null;
   readonly onPick: (r: Route) => void;
 }) {
@@ -387,6 +409,7 @@ function GuidedRoutes({
           <small>
             {withArea && r.area ? `${r.area} · ` : ""}
             {lengthAndTime(r)} · {countOf(r)} {countOf(r) === 1 ? "echo" : "echoes"}
+            {savedIds?.has(r.id) ? " · saved" : ""}
           </small>
         </span>
         {on ? <Tick /> : <Chev />}

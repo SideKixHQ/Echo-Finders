@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
+import { buildEchoJourney, holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettings } from "@echofinders/core";
 import { accessRole, claimOwnerFromAddress, setOwnerMode, type AccessRole } from "./owner";
 import { testPositionFrom } from "./test-position";
 import { count } from "./analytics";
@@ -25,7 +25,7 @@ import { KindPicker } from "./KindPicker";
 import { MapSearch } from "./MapSearch";
 import { JourneyChip, type Travel } from "./JourneyChip";
 import { Arrival } from "./Arrival";
-import { Preflight } from "./Preflight";
+import { Preflight, megabytes } from "./Preflight";
 import { EchoPopup } from "./EchoPopup";
 import { Rose } from "./Rose";
 import { Hum } from "./hum";
@@ -63,7 +63,7 @@ import { EchoBar, ECHOBAR_FLOAT, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, buyWeekPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
-import { buyInApp, inApp, restoreInApp, useInAppEntitlement, withInApp } from "./native-bridge";
+import { buyInApp, inApp, restoreInApp, saveTrip, useInAppEntitlement, useTripSaves, withInApp } from "./native-bridge";
 import { MembershipPanel } from "./Membership";
 import { ReactionCard, faceOf } from "./ReactionCard";
 import { react, readReactions, type Reactions } from "./reaction-store";
@@ -1276,6 +1276,38 @@ export function App() {
     for (const hit of findEchoesAlongRoute(route, LIBRARY)) out.set(hit.echo.id, hit.alongTrackKm);
     return out;
   }, [route]);
+  /**
+   * Saving this journey for no signal, inside the iPhone app (D8, mock 2, approved
+   * 2026-11-13). The phone does the saving and says how it is going (`useTripSaves`); the
+   * trip sheet's card asks for it. A browser cannot save, so it has no card.
+   */
+  const tripSaves = useTripSaves();
+  const savedIds = useMemo(
+    () => new Set([...tripSaves].filter(([, s]) => s.state === "saved").map(([id]) => id)),
+    [tripSaves],
+  );
+  const savePack = useMemo(() => (inApp() && !roaming ? buildEchoJourney(route, LIBRARY) : null), [route, roaming]);
+  const saveCard = (() => {
+    if (!savePack) return null;
+    const kind = route.mode === "flight" ? "flight" : route.mode === "driving" ? "drive" : "walk";
+    const onSave = () => saveTrip(route.id, kind);
+    const save = tripSaves.get(route.id);
+    if (save?.state === "saved") return { title: "Saved for no signal", line: "On this device, plays with no signal", saved: true, onSave };
+    if (save?.state === "saving") {
+      const mb = (bytes: number) => Math.round(bytes / (1024 * 1024));
+      return { title: "Saving for no signal", line: `Saving · ${mb(save.savedBytes)} of ${mb(save.totalBytes)} MB`, saved: false, onSave };
+    }
+    const n = savePack.echoes.length;
+    const size = megabytes(savePack.totalBytes);
+    return kind === "flight"
+      ? {
+          title: "Save this flight",
+          line: `${(route.name ?? route.destination.name).split(":")[0]!.trim()} · ${n} echoes · ${size}, with the map. Saves by itself when the flight starts.`,
+          saved: false,
+          onSave,
+        }
+      : { title: "Save for no signal", line: `${n} echoes · ${size}, with the map. Plays where your phone loses signal.`, saved: false, onSave };
+  })();
   const corridorCounts = useMemo(
     () => Object.fromEntries(Object.entries(byRoute).map(([id, echoes]) => [id, echoes.length])),
     [byRoute],
@@ -2196,6 +2228,8 @@ export function App() {
                   routes={ROUTES}
                   counts={corridorCounts}
                   kept={downloaded}
+                  save={saveCard}
+                  savedIds={savedIds}
                   label={roaming ? (lookAt ? lookAt.label : roamMode === "driving" ? "Driving nearby" : "Walking nearby") : leftLabel}
                   here={state.position?.at ?? null}
                   {...(!roaming || plan

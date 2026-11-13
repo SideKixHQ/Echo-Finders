@@ -108,7 +108,16 @@ export type WebToNative =
    * the only time the phone may ask for Always; false when the page reports it on loading.
    */
   | { readonly type: "handsfree"; readonly on: boolean; readonly changed: boolean }
-  | ({ readonly type: "pocket" } & PocketPlan);
+  | ({ readonly type: "pocket" } & PocketPlan)
+  /**
+   * The trip sheet's "Save for no signal" or "Save this flight" card was tapped (D8, mock 2,
+   * approved 2026-11-13): the phone opens its "Before a drive or flight" sheet for this
+   * route, and reports the save with `trip:saving` and `trip:saved`.
+   */
+  | { readonly type: "trip:save"; readonly routeId: string; readonly kind: TripKind };
+
+/** What a saved route is, in the native sheet's words: its noun ("Save this drive"). */
+export type TripKind = "drive" | "walk" | "flight";
 
 export type NativeToWeb =
   | { readonly type: "reply"; readonly id: number; readonly result: unknown }
@@ -121,7 +130,11 @@ export type NativeToWeb =
   /** 1 refused, 2 unavailable: the Geolocation API's own codes. */
   | { readonly type: "location:error"; readonly code: 1 | 2 }
   /** What the App Store says this Apple Account holds, and nothing else. */
-  | { readonly type: "purchase:entitlement"; readonly entitlement: Entitlement };
+  | { readonly type: "purchase:entitlement"; readonly entitlement: Entitlement }
+  /** A route saving for no signal: so many bytes of so many on the phone. */
+  | { readonly type: "trip:saving"; readonly routeId: string; readonly savedBytes: number; readonly totalBytes: number }
+  /** A route saved on the phone, plays with no signal. Sent for each saved route as the page loads, too. */
+  | { readonly type: "trip:saved"; readonly routeId: string };
 
 export interface LocationStartResult {
   readonly status: "granted" | "denied" | "unavailable";

@@ -38,6 +38,7 @@ import {
   type PlayRequest,
   type PurchasePlan,
   type PurchaseResult,
+  type TripKind,
   type WebToNative,
 } from "./native-bridge-protocol";
 
@@ -103,6 +104,12 @@ function receive(message: NativeToWeb): void {
     case "audio:failed":
     case "audio:progress":
       for (const narrator of narrators) narrator.hear(message);
+      return;
+    case "trip:saving":
+      setTripSave(message.routeId, { state: "saving", savedBytes: message.savedBytes, totalBytes: message.totalBytes });
+      return;
+    case "trip:saved":
+      setTripSave(message.routeId, { state: "saved" });
       return;
   }
 }
@@ -516,6 +523,36 @@ export async function buyInApp(plan: PurchasePlan, cityId: string | undefined): 
 /** Restore from the App Store; what it holds arrives before this resolves. */
 export async function restoreInApp(): Promise<void> {
   await ask<unknown>((id) => ({ type: "purchase:restore", id }));
+}
+
+// --- Saved for no signal -------------------------------------------------------------------
+
+/** A route the phone is saving, or has saved, for no signal (D8). Only the phone knows. */
+export type TripSave =
+  | { readonly state: "saving"; readonly savedBytes: number; readonly totalBytes: number }
+  | { readonly state: "saved" };
+
+let tripSaves: ReadonlyMap<string, TripSave> = new Map();
+const tripListeners = new Set<() => void>();
+
+function setTripSave(routeId: string, save: TripSave): void {
+  tripSaves = new Map(tripSaves).set(routeId, save);
+  for (const listener of tripListeners) listener();
+}
+
+function subscribeTrips(listener: () => void): () => void {
+  tripListeners.add(listener);
+  return () => void tripListeners.delete(listener);
+}
+
+/** What the phone has said about saving routes, by route id. Empty outside the app. */
+export function useTripSaves(): ReadonlyMap<string, TripSave> {
+  return useSyncExternalStore(subscribeTrips, () => tripSaves, () => tripSaves);
+}
+
+/** Ask the phone to save a route for no signal: it opens its "Before a drive or flight" sheet. */
+export function saveTrip(routeId: string, kind: TripKind): void {
+  post({ type: "trip:save", routeId, kind });
 }
 
 // --- Offline --------------------------------------------------------------------------------

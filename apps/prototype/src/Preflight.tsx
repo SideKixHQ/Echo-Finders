@@ -531,7 +531,7 @@ const TRAVEL_LABEL = {
   flight: "Flying",
 } as const;
 
-const megabytes = (bytes: number) =>
+export const megabytes = (bytes: number) =>
   bytes >= 1024 * 1024
     ? `${(bytes / (1024 * 1024)).toFixed(bytes < 10 * 1024 * 1024 ? 1 : 0)} MB`
     : `${Math.max(1, Math.round(bytes / 1024))} KB`;
