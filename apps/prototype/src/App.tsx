@@ -1611,6 +1611,16 @@ export function App() {
   // And while a topic is picked: every echo of it, wherever it is.
   const everything = picking || farOut || (roaming && country && !overview && !lookAt && !plan);
   /** The area's echoes before the panel's filter: what the topic chips are counted from. */
+  /**
+   * The topic view's echoes: the country it fits (`pickCountry`), so the echo bar, the area
+   * card and the pins count the same set (2026-11-13: London's was "3 places · 3 echoes"
+   * on the card and "1 of 100" on the bar). Where the country has none of the topic, the
+   * map stays where it was and this is the whole library, as before.
+   */
+  const topicPool = useMemo(
+    () => (picking && topicBox && pickCountry ? LIBRARY.filter((e) => countryOfEcho(e) === pickCountry) : null),
+    [picking, topicBox, pickCountry],
+  );
   const inArea = useMemo(
     () =>
       roaming
@@ -1619,12 +1629,12 @@ export function App() {
           : lookAt && !picking
             ? LIBRARY.filter((e) => distanceKm(lookAt.at, e.point.at) <= LOOK_RADIUS_KM)
             : everything
-              ? LIBRARY
+              ? topicPool ?? LIBRARY
               : state.nearby.map((n) => n.echo)
         : picking
-          ? LIBRARY
+          ? topicPool ?? LIBRARY
           : onRoute,
-    [roaming, overview, overviewEchoes, lookAt, picking, everything, state.nearby, onRoute],
+    [roaming, overview, overviewEchoes, lookAt, picking, everything, topicPool, state.nearby, onRoute],
   );
   const onMap = useMemo(() => inArea.filter(shows), [inArea, shows]);
   /**

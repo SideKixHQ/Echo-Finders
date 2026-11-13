@@ -271,18 +271,22 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
     await p.keyboard.press('Escape');
     await p.waitForTimeout(2500);
     const total = Number(/OF (\d+)/.exec(await p.locator('.echobar').innerText())?.[1] ?? 0);
-    return { ctx, p, before, after: Number(await p.locator('svg.map').getAttribute('data-zoom')), total, seen: await onScreen(p) };
+    const card = Number(/(\d+) echoes/.exec(await p.locator('.area-card').innerText().catch(() => ''))?.[1] ?? -1);
+    return { ctx, p, before, after: Number(await p.locator('svg.map').getAttribute('data-zoom')), total, card, seen: await onScreen(p) };
   };
   {
     const r = await pickFrom({ latitude: 39.9526, longitude: -75.1635 }, 'Ghosts & legends');
     check('Topic by country: from Philadelphia, every US ghost story and none of the UK ones',
-      r.total > UK_GHOSTS && r.seen === r.total - UK_GHOSTS, `${r.seen} on screen of ${r.total}`);
+      r.seen > UK_GHOSTS && r.card === r.seen, `${r.seen} on screen, the card says ${r.card}`);
+    // The echo bar steps through the same set the map and the card count (2026-11-13).
+    check('Topic by country: from Philadelphia, the echo bar counts the US ones the card does', r.total === r.card, `1 of ${r.total}, card ${r.card}`);
     await r.ctx.close();
   }
   {
     const r = await pickFrom({ latitude: 51.5072, longitude: -0.1276 }, 'Ghosts & legends');
     check('Topic by country: from London, the UK ghost stories, London to Edinburgh, and no US ones',
-      r.seen === UK_GHOSTS, `${r.seen} on screen of ${r.total}`);
+      r.seen === UK_GHOSTS && r.card === UK_GHOSTS, `${r.seen} on screen, the card says ${r.card}`);
+    check('Topic by country: from London, the echo bar is 1 of 3', r.total === UK_GHOSTS, `1 of ${r.total}`);
     await r.ctx.close();
   }
   {

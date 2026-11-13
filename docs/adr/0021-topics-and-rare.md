@@ -75,7 +75,8 @@ Asked of James, not yet decided, built as below until he answers:
   library has echoes in (`countries.generated.ts`, `countryAt` in the engine); a point just
   off a coast the outline left out belongs to the nearest country within 25 km. England and
   Scotland are one country, the United Kingdom. A country with none of the topic, or the
-  open sea, leaves the map where it is.
+  open sea, leaves the map where it is. The echo bar, the area card and the pins all count
+  that country's echoes of the topic (London: 1 of 3, 3 places · 3 echoes).
 - ~~The zoom out is while exploring. On a planned journey (a route, a drive, a flight) the
   panel offers every topic and filters the journey's own echoes, as before.~~ Decided
   2026-11-13 (James: "Should it zoom out there too? - yes"): on a planned route, drive or
