@@ -20,7 +20,7 @@
  * than no ring.
  */
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, characterFor } from "@echofinders/echo";
@@ -738,6 +738,28 @@ export function RouteMap({
    * (see the return), which makes it a new element.
    */
   const [svgEl, setSvgEl] = useState<SVGSVGElement | null>(null);
+  /*
+   * TAG_ROOM: the pin labels never print over each other.
+   *
+   * Two Rare pins a street apart drew "RARE · 200 M" straight over "RARE · 300 M" (Savannah,
+   * found 2026-11-13). The map's own names already follow a rule for this: when two
+   * collide, the one placed later is left out, and comes back when there is room. The pin
+   * labels now follow the same one, after every render, measured as drawn: Extra rare is
+   * placed first, then the nearer, and a label that would touch one already placed is
+   * hidden. The pin itself always stays.
+   */
+  useLayoutEffect(() => {
+    const tags = [...(svg.current?.querySelectorAll<SVGTextElement>(".pin-tag") ?? [])];
+    tags.sort((a, b) => Number(a.dataset["rank"]) - Number(b.dataset["rank"]));
+    const placed: DOMRect[] = [];
+    for (const tag of tags) {
+      tag.style.visibility = "";
+      const r = tag.getBoundingClientRect();
+      const hit = placed.some((p) => r.left < p.right && r.right > p.left && r.top < p.bottom && r.bottom > p.top);
+      if (hit) tag.style.visibility = "hidden";
+      else placed.push(r);
+    }
+  });
   const svgRef = useCallback((node: SVGSVGElement | null) => {
     svg.current = node;
     setSvgEl(node);
@@ -1901,7 +1923,13 @@ export function RouteMap({
               if (rarity !== "rare" && rarity !== "singular") return null;
               const away = at ? distanceKm(at, echo.point.at) : null;
               return (
-                <text className={`pin-tag pin-tag-${rarity}`} y="27" textAnchor="middle">
+                <text
+                  className={`pin-tag pin-tag-${rarity}`}
+                  y="27"
+                  textAnchor="middle"
+                  /* Which label wins a collision: Extra rare, then the nearer. See `TAG_ROOM`. */
+                  data-rank={(rarity === "singular" ? 0 : 1e6) + (away ?? 1e5)}
+                >
                   {rarity === "singular" ? "Extra rare" : "Rare"}
                   {away !== null && ` · ${coarse(away)}`}
                 </text>

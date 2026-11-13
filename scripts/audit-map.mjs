@@ -17,6 +17,7 @@
  *       something is
  *   25  on a flight the echo bar and Coming up give the same minutes for the same echo
  *   XR  Extra rare pins are magenta and 1.15x (option D); Rare stays ember
+ *   TAG the labels under Rare and Extra rare pins never print over each other
  */
 
 import { chromium } from 'playwright';
@@ -317,6 +318,27 @@ if (runs('XR')) {
       JSON.stringify(m.rare));
     await ctx.close();
   }
+}
+
+// TAG. Pin labels never print over each other (Savannah, where two Rare labels did).
+if (runs('TAG')) {
+  const { ctx, p } = await phone({ latitude: 32.0733, longitude: -81.0897 });
+  for (const at of ['32.0733,-81.0897', '32.0760,-81.0920', '32.0710,-81.0870']) {
+    await standAt(p, at);
+    const tags = await p.$$eval('.pin-tag', (ts) => ts
+      .filter((t) => getComputedStyle(t).visibility !== 'hidden')
+      .map((t) => { const r = t.getBoundingClientRect(); return { text: t.textContent, l: r.left, r: r.right, t: r.top, b: r.bottom }; }));
+    const clash = [];
+    for (let i = 0; i < tags.length; i++) for (let j = i + 1; j < tags.length; j++) {
+      const a = tags[i], b = tags[j];
+      if (a.l < b.r && a.r > b.l && a.t < b.b && a.b > b.t) clash.push(`"${a.text}" on "${b.text}"`);
+    }
+    check(`TAG  pin labels clear of each other at ${at}`, clash.length === 0, clash.join('; '));
+    if (at === '32.0733,-81.0897') {
+      check('TAG  the Extra rare label is kept', tags.some((t) => /^Extra rare/.test(t.text)), JSON.stringify(tags.map((t) => t.text)));
+    }
+  }
+  await ctx.close();
 }
 
 await browser.close();
