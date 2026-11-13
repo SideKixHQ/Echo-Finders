@@ -46,8 +46,9 @@ describe("a guided walk follows the phone, not a simulation", () => {
     expect(simulatesRoute("walking", "")).toBe(false);
     expect(simulatesRoute("driving", "?at=34.2357,-77.9452")).toBe(false);
   });
-  it("a flight, which has no aircraft feed yet, is still simulated", () => {
-    expect(simulatesRoute("flight", "")).toBe(true);
+  it("a flight runs in real time from takeoff (FlightClock); its demo only with ?simulate", () => {
+    expect(simulatesRoute("flight", "")).toBe(false);
+    expect(simulatesRoute("flight", "?simulate")).toBe(true);
   });
   it("the demo runs only when the address asks for it", () => {
     expect(simulatesRoute("walking", "?simulate")).toBe(true);

@@ -33,6 +33,9 @@ for (let i = 0; i < 60; i++) {
 
 const SANDBOX_CHROMIUM = '/opt/pw-browsers/chromium';
 const browser = await chromium.launch(existsSync(SANDBOX_CHROMIUM) ? { executablePath: SANDBOX_CHROMIUM } : {});
+/** `JOURNEYS_ONLY=F1,D2` runs those items alone, while working on one. */
+const ONLY = process.env.JOURNEYS_ONLY?.split(',');
+const want = (item) => !ONLY || ONLY.includes(item);
 const failures = [];
 const errors = [];
 const check = (name, ok, detail = '') => {
@@ -74,7 +77,7 @@ const MVP_DRIVE = 'Wilmington to Southport';
 // ── D1: the road trips list counts echoes, not stops ────────────────────────────────
 // The MVP drive was listed as "3 echoes": its stops. The drive plays the 25 it passes,
 // which is what its journey screen says.
-{
+if (want('D1')) {
   const { ctx, p } = await freshApp(WILMINGTON);
   await tripSheet(p, 'Drive');
   const row = (await p.locator('.jmenu-item', { hasText: MVP_DRIVE }).innerText()).replace(/\s+/g, ' ');
@@ -111,7 +114,7 @@ async function choosePlays(p) {
 // ── D2: a drive plays its echoes by itself ───────────────────────────────────────────
 // Decision 1: "Play these as I reach them" is on when a drive starts, with no ask. A
 // listener who turns it off keeps it off for the rest of that drive.
-{
+if (want('D2')) {
   const { ctx, p } = await freshApp(WILMINGTON);
   await startDrive(p);
   let sw = await choosePlays(p);
@@ -158,7 +161,7 @@ async function driveAlong(ctx, p, { kph, seconds }, each = async () => {}) {
 
 // ── D3: on a drive, no "Synced · tap to play" for an echo that plays by itself ────────
 // Decision 2. The drive at 47 km/h through downtown Wilmington, as the plan drove it.
-{
+if (want('D3')) {
   const { ctx, p } = await freshApp(WILMINGTON);
   await startDrive(p);
   for (let i = 0; i < 6 && (await p.locator('.toast-synced').count()); i++) {
@@ -173,6 +176,42 @@ async function driveAlong(ctx, p, { kph, seconds }, each = async () => {}) {
   });
   check('D3: on a drive, echoes play by themselves', played > 0, `${played} s playing`);
   check('D3: on a drive, no "Synced · tap to play" for an echo that plays by itself', asked.size === 0, [...asked].join(' / '));
+  await ctx.close();
+}
+
+/** Time left on the journey, in minutes, from the chip's accessible name ("..., 2h 58m left"). */
+async function minutesLeft(p) {
+  const name = (await p.getByLabel(/Change your journey/).getAttribute('aria-label')) ?? '';
+  const m = /(?:(\d+)h)?\s*(?:(\d+)\s*m(?:in)?)? left/.exec(name);
+  return m ? Number(m[1] ?? 0) * 60 + Number(m[2] ?? 0) : NaN;
+}
+
+/** Pick the written flight, New York to Miami, from the trip sheet. */
+async function startFlight(p) {
+  await tripSheet(p, 'Fly');
+  await p.locator('.jmenu-item', { hasText: 'Miami' }).first().click();
+  await p.waitForTimeout(1000);
+}
+
+// ── F1: a flight moves in real time from takeoff ─────────────────────────────────────
+// It ran any route in about 210 seconds (`?simulate` keeps that demo). Now the plane waits
+// at the gate until the phone's speed says it has taken off.
+if (want('F1')) {
+  const { ctx, p } = await freshApp();
+  await startFlight(p);
+  const atStart = await minutesLeft(p);
+  await p.waitForTimeout(20000);
+  const later = await minutesLeft(p);
+  check('F1: at the gate, a flight does not move by itself', atStart >= 170 && later === atStart, `${atStart} then ${later} min left`);
+  await ctx.close();
+}
+if (want('F1')) {
+  const { ctx, p } = await freshApp(BATTERY, '/?simulate');
+  await startFlight(p);
+  const atStart = await minutesLeft(p);
+  await p.waitForTimeout(20000);
+  const later = await minutesLeft(p);
+  check('F1: ?simulate keeps the demo flight', later < atStart, `${atStart} then ${later} min left`);
   await ctx.close();
 }
 

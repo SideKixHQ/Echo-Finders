@@ -1,0 +1,78 @@
+import { describe, expect, it } from "vitest";
+import { distanceKm, type LatLng, type LocationSource, type Position, type Route } from "@echofinders/core";
+import { FlightClock, TAKEOFF_KPH } from "../../apps/prototype/src/flight-clock";
+
+const JFK = { lat: 40.6413, lng: -73.7781 };
+const MIA = { lat: 25.7959, lng: -80.287 };
+const JFK_MIA: Route = {
+  id: "jfk-mia",
+  mode: "flight",
+  origin: { code: "JFK", name: "JFK", at: JFK, timeZone: "America/New_York" },
+  destination: { code: "MIA", name: "MIA", at: MIA, timeZone: "America/New_York" },
+  waypoints: [
+    { name: "JFK", at: JFK },
+    { name: "MIA", at: MIA },
+  ],
+  departureAt: "2026-06-15T14:00:00Z",
+  durationS: 10_800,
+};
+const NOW = Date.parse("2026-11-13T15:00:00Z");
+const NO_GPS: LocationSource = { watch: () => () => {} };
+const fix = (at: LatLng, ms: number, extra: Partial<Position> = {}): Position => ({
+  at,
+  accuracyM: 10,
+  timestamp: ms,
+  source: "device-gnss",
+  ...extra,
+});
+/** A point `km` south of `from`. */
+const south = (from: LatLng, km: number): LatLng => ({ lat: from.lat - km / 111.195, lng: from.lng });
+
+describe("a flight in real time (F1)", () => {
+  it("waits at the gate until it takes off, however long that is", () => {
+    let now = NOW;
+    const clock = new FlightClock(JFK_MIA, NO_GPS, { now: () => now });
+    now += 3 * 3600_000;
+    expect(clock.takeoffAtMs).toBeNull();
+    expect(distanceKm(clock.position().at, JFK)).toBeLessThan(0.5);
+  });
+
+  it("moves with the clock from takeoff, not in 210 seconds", () => {
+    let now = NOW;
+    const clock = new FlightClock(JFK_MIA, NO_GPS, { now: () => now });
+    clock.tookOff(now);
+    now += 210_000;
+    // The demo would have landed. Three and a half minutes after takeoff a real flight is
+    // still climbing out of New York.
+    expect(clock.elapsedS()).toBeCloseTo(600 + 210, 0);
+    expect(distanceKm(clock.position().at, JFK)).toBeLessThan(150);
+    // And it lands when the route says it does: three hours from the gate.
+    now = NOW + (10_800 - 600) * 1000;
+    expect(distanceKm(clock.position().at, MIA)).toBeLessThan(1);
+  });
+
+  it("takes off when the phone says it is moving faster than a car", () => {
+    let now = NOW;
+    const clock = new FlightClock(JFK_MIA, NO_GPS, { now: () => now });
+    clock.onGps(fix(JFK, now));
+    clock.onGps(fix(south(JFK, 0.02), now + 1000)); // 72 km/h on the taxiway
+    expect(clock.takeoffAtMs).toBeNull();
+    clock.onGps(fix(south(JFK, 0.11), now + 2000)); // 324 km/h
+    expect(TAKEOFF_KPH).toBe(250);
+    expect(clock.takeoffAtMs).toBe(now + 2000);
+  });
+
+  it("uses the speed the phone reports where it gives one", () => {
+    const clock = new FlightClock(JFK_MIA, NO_GPS, { now: () => NOW });
+    clock.onGps(fix(JFK, NOW, { speedKph: 280 }));
+    expect(clock.takeoffAtMs).toBe(NOW);
+  });
+
+  it("is not fooled by a parked phone's fix wandering", () => {
+    const clock = new FlightClock(JFK_MIA, NO_GPS, { now: () => NOW });
+    // 150 m in a second is 540 km/h, but both fixes are only good to 100 m.
+    clock.onGps(fix(JFK, NOW, { accuracyM: 100 }));
+    clock.onGps(fix(south(JFK, 0.15), NOW + 1000, { accuracyM: 100 }));
+    expect(clock.takeoffAtMs).toBeNull();
+  });
+});

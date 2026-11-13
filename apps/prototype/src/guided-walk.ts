@@ -6,10 +6,9 @@
  * seconds, to somebody who had not taken a step (found in review, 2026-11-10). That breaks
  * the one rule the product is built on: an echo unlocks only where it happened.
  *
- * So a route you steer yourself follows the phone, and the simulation is kept for what it
- * was made for: a flight, where the aircraft knows where it is and the handset does not
- * (ADR-0002), and a demo somebody asked for with `?simulate` on the address. Kept pure so
- * it can be tested without a browser.
+ * So a route you steer yourself follows the phone, a flight follows the clock from takeoff
+ * (`flight-clock.ts`), and the simulation is kept for a demo somebody asked for with
+ * `?simulate` on the address. Kept pure so it can be tested without a browser.
  */
 
 import { WALKABLE_KM } from "./going";
@@ -25,14 +24,14 @@ import {
 } from "@echofinders/core";
 
 /**
- * Whether a route is played back by the simulation rather than by the phone's position.
+ * Whether a route is played back by the simulation rather than in real time.
  *
- * Carried modes (a flight) are simulated: there is no aircraft feed yet, and nothing a
- * passenger does moves the aircraft. A self directed route (on foot, driving) follows the
- * real position, unless the address asks for the demo with `?simulate`.
+ * Only when the address asks for the demo with `?simulate`. A route you steer yourself (on
+ * foot, driving) follows the phone's position; a flight follows the clock from takeoff
+ * (`FlightClock`). Flights used to be simulated whatever the address said, so JFK to Miami
+ * landed three and a half minutes after the gate (James, 2026-11-13, F1).
  */
-export function simulatesRoute(mode: TravelMode, search: string): boolean {
-  if (!presetFor(mode).selfDirected) return true;
+export function simulatesRoute(_mode: TravelMode, search: string): boolean {
   return new URLSearchParams(search).has("simulate");
 }
 

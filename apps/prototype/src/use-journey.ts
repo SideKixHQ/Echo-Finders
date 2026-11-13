@@ -12,6 +12,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ECHO_CATEGORIES,
   OPT_IN_CATEGORIES,
+  presetFor,
   rarityOf,
   WalkSession,
   type Arriving,
@@ -35,6 +36,7 @@ import {
   type TravelMode,
 } from "@echofinders/core";
 import { SimulatedJourney } from "./simulated-journey";
+import { FlightClock } from "./flight-clock";
 import { simulatesRoute } from "./guided-walk";
 import { EchoTone } from "./echo-tone";
 import { bridgeSession, narratorFor } from "./native-bridge";
@@ -188,8 +190,7 @@ export interface JourneyControls {
  * layered on top, and it took a UX review to notice we had built only the special case.
  *
  * @param gps  The real device location: used when roaming and on any route you steer
- *             yourself. A flight is simulated so it can be watched in three minutes;
- *             standing in a street cannot be.
+ *             yourself, and on a flight to tell when it has taken off.
  */
 export function useJourney(
   route: Route | null,
@@ -218,10 +219,10 @@ export function useJourney(
    * walking into three so a demo is watchable, and it does that by following a known
    * distance-time curve. Standing in a real street has no curve to follow.
    *
-   * And only a route nobody on it steers (`simulatesRoute`). A guided walk ran on the
+   * And only when the address asks for it (`simulatesRoute`). A guided walk ran on the
    * simulation too, so starting one at St. James put you at the river and synced its echo
    * before you had taken a step (found 2026-11-10). A walk or a road trip follows the phone
-   * now; a flight, which has no aircraft feed yet, and `?simulate` stay simulated.
+   * now, a flight the clock from takeoff (`flight` below); `?simulate` is the demo.
    */
   const walk = useMemo(() => {
     if (!route || !simulatesRoute(route.mode, window.location.search)) return null;
@@ -237,8 +238,17 @@ export function useJourney(
     return simulation;
   }, [route]);
 
+  /**
+   * A flight, in real time: where it is comes from the clock from takeoff, and takeoff from
+   * the phone's speed (`flight-clock.ts`). Only a route nobody on it steers, and not the demo.
+   */
+  const flight = useMemo(
+    () => (route && !walk && !presetFor(route.mode).selfDirected ? new FlightClock(route, gps) : null),
+    [route, walk, gps],
+  );
+
   /** Whichever one is actually feeding positions. */
-  const location: LocationSource = walk ?? gps;
+  const location: LocationSource = walk ?? flight ?? gps;
 
   // The collection survives a refresh, so it has to be read before the session exists.
   //
@@ -397,7 +407,9 @@ export function useJourney(
     // Only a simulation can be held. Real time does not pause for narration, which is the
     // honest behaviour anyway: out on a street you walk and listen at once.
     walk?.setPaused(paused || state.playback.kind === "playing");
-  }, [walk, paused, state.playback.kind]);
+    // A real flight is not held for narration, only behind the welcome screens or a pause.
+    flight?.setPaused(paused);
+  }, [walk, flight, paused, state.playback.kind]);
 
   useEffect(() => {
     // A new session is a new journey: different route, different collection, and nothing
@@ -464,5 +476,5 @@ export function useJourney(
     };
   }, [session, restored, library]);
 
-  return { state, session, walk, store, speech, restored, restoring: restored === null };
+  return { state, session, walk, flight, store, speech, restored, restoring: restored === null };
 }
