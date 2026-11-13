@@ -52,6 +52,14 @@ import { existsSync } from 'node:fs';
 import { spawn, spawnSync } from 'node:child_process';
 import { setTimeout as sleep } from 'node:timers/promises';
 
+/*
+ * What puts a toast away: its ✕, or OK on the usage counts note ("We count visits, not
+ * you"), which has no ✕ in its approved design. It arrives on the map a few seconds after
+ * the first run and sat over the menus these journeys tap through (the planned walk's
+ * "Plan a walk" went under it), so it is put away the way every other toast is.
+ */
+const TOAST_DISMISS = '.toast-close, .toast-usage .toast-act-go';
+
 const PORT = 4173;
 spawnSync('npm', ['run', 'build', '-w', '@echofinders/prototype'], { stdio: 'inherit' });
 const server = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--host', '127.0.0.1', '--strictPort'],
@@ -443,7 +451,7 @@ if (!(await p.locator('.me-pills').count())) {
     });
   });
   await p.reload({ waitUntil: 'domcontentloaded' }); await p.waitForTimeout(2500);
-  for (let i = 0; i < 4; i++) await p.locator('.toast-close').first().click({ timeout: 400 }).catch(() => {});
+  for (let i = 0; i < 4; i++) await p.locator(TOAST_DISMISS).first().click({ timeout: 400 }).catch(() => {});
   await p.locator('.nav button').nth(1).click(); await p.waitForTimeout(700);
   await capture('my-echoes/filled');
 }

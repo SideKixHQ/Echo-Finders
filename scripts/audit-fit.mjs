@@ -36,6 +36,14 @@ import { existsSync, mkdirSync } from 'node:fs';
 import { spawn, spawnSync } from 'node:child_process';
 import { setTimeout as sleep } from 'node:timers/promises';
 
+/*
+ * What puts a toast away: its ✕, or OK on the usage counts note ("We count visits, not
+ * you"), which has no ✕ in its approved design. It arrives on the map a few seconds after
+ * the first run and sat over the menus these journeys tap through (the planned walk's
+ * "Plan a walk" went under it), so it is put away the way every other toast is.
+ */
+const TOAST_DISMISS = '.toast-close, .toast-usage .toast-act-go';
+
 const PORT = 4191;
 let BASE = process.env.FIT_URL;
 if (!BASE) {
@@ -248,7 +256,7 @@ async function device(geo, { onboarded = true, heard = 0 } = {}) {
 }
 const tap = (l) => l.first().click({ timeout: 3000 }).catch(() => {});
 const closeToasts = async (p) => {
-  for (let i = 0; i < 3; i++) await p.locator('.toast-close').first().click({ timeout: 400 }).catch(() => {});
+  for (let i = 0; i < 3; i++) await p.locator(TOAST_DISMISS).first().click({ timeout: 400 }).catch(() => {});
 };
 
 /** Walk in to Castle Clinton at a walking pace, then stand still until it syncs. */

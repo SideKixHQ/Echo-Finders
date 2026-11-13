@@ -41,12 +41,24 @@ const check = (name, ok, detail = '') => {
   if (!ok) failures.push(name);
 };
 
-async function freshApp(geolocation = START) {
+/** The usage counts note, put away before the app starts: see `freshApp`. */
+const noUsageNote = (ctx) => ctx.addInitScript(() => { try { localStorage.setItem('echo-finders:usage-note', '1'); } catch {} });
+
+async function freshApp(geolocation = START, { usageNote = false } = {}) {
   const ctx = await browser.newContext({ colorScheme: "dark",
     viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation,
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  /*
+   * The usage counts note ("We count visits, not you") is put away before the app starts,
+   * except where it is the thing being checked. It arrives on the map a few seconds after
+   * the first run, drawn as a near toast (`.toast-near`), and every other journey here
+   * would meet it: it held the dock where the nearby toast's checks look, and lay over the
+   * map where a town dot is tapped. Its own checks pass `{ usageNote: true }`; the journeys
+   * that open their own context put it away with `noUsageNote` for the same reason.
+   */
+  if (!usageNote) await noUsageNote(ctx);
   // The lock screen's buttons, recorded as the app registers them, so they can be pressed.
   await ctx.addInitScript(() => {
     window.__lock = {};
@@ -203,6 +215,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
     ignoreHTTPSErrors: true, permissions: [],
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  await noUsageNote(ctx);
   const p = await ctx.newPage();
   p.setDefaultTimeout(6000);
   p.on('pageerror', (e) => errors.push(e.message));
@@ -264,6 +277,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
       ignoreHTTPSErrors: true, ...(geo ? { permissions: ['geolocation'], geolocation: START } : { permissions: [] }),
     });
     await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+    await noUsageNote(ctx);
     const p = await ctx.newPage();
     p.setDefaultTimeout(6000);
     p.on('pageerror', (e) => errors.push(e.message));
@@ -319,6 +333,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
     ignoreHTTPSErrors: true, permissions: [],
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  await noUsageNote(ctx);
   const p = await ctx.newPage();
   p.setDefaultTimeout(6000);
   p.on('pageerror', (e) => errors.push(e.message));
@@ -1325,6 +1340,7 @@ async function arrive() {
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: START,
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  await noUsageNote(ctx);
   const p = await ctx.newPage();
   p.setDefaultTimeout(6000);
   p.on('pageerror', (e) => errors.push(e.message));
@@ -1423,6 +1439,7 @@ async function nearby() {
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: ST_JAMES,
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  await noUsageNote(ctx);
   const p = await ctx.newPage();
   p.setDefaultTimeout(6000);
   const loops = [];
@@ -1539,6 +1556,62 @@ for (const size of [{ width: 1440, height: 789 }, { width: 1366, height: 657 }, 
   check(`Computer ${at}: the tab bar is on the screen`, m.navBottom !== undefined && m.navBottom <= m.vh && m.navH > 0, JSON.stringify(m));
   check(`Computer ${at}: the whole phone frame is on the screen`, m.phoneTop >= 0 && m.phoneBottom <= m.vh, JSON.stringify(m));
   if (size.height >= 892) check(`Computer ${at}: the frame is the 390x844 phone`, m.phoneW === 390 && m.phoneH === 844, JSON.stringify(m));
+  await ctx.close();
+}
+
+// ── The usage counts note: once, on the map, after the first run ────────────────
+// "We count visits, not you" (approved 2026-11-13, option A). Not over the first run or
+// How echoes unlock; OK and Settings each put it away for good; Settings opens Settings
+// at the switch; not at all when usage counts are off.
+{
+  const { ctx, p } = await freshApp(START, { usageNote: true });
+  const note = p.locator('.toast-usage');
+  await note.waitFor({ state: 'visible', timeout: 15000 }).catch(() => {});
+  check('Usage note: shows on the map after the first run', await visible(note));
+  check('Usage note: in the toast dock, one toast at a time',
+    (await p.locator('.toast-dock[role="status"] .toast-usage').count()) === 1 && (await p.locator('.toast-dock .toast').count()) === 1);
+  check('Usage note: the approved words',
+    (await note.locator('b').innerText().catch(() => '')) === 'We count visits, not you'
+    && (await note.locator('.toast-words span').innerText().catch(() => '')) === 'Anonymous usage counts help us improve Echo Finders. Turn them off any time in Settings.');
+  const small = await note.locator('button').evaluateAll((els) => els.filter((e) => e.getBoundingClientRect().height < 44).length);
+  check('Usage note: OK and Settings are 44px targets', small === 0);
+  await note.getByRole('button', { name: 'Settings', exact: true }).click().catch(() => {});
+  await p.waitForTimeout(800);
+  check('Usage note: Settings opens Settings', (await currentTab(p)).includes('Settings'));
+  const sw = await p.locator('[role="switch"][data-setting="analytics"]').boundingBox().catch(() => null);
+  const vh = await p.evaluate(() => innerHeight);
+  check('Usage note: at the usage counts switch', sw !== null && sw.y >= 0 && sw.y + sw.height <= vh, JSON.stringify(sw));
+  await p.locator('.nav').getByRole('button', { name: /Map/ }).click();
+  await p.waitForTimeout(600);
+  check('Usage note: Settings put it away', !(await visible(note)));
+  await p.reload();
+  await p.waitForTimeout(12000);
+  check('Usage note: and it stays away', (await note.count()) === 0);
+  await ctx.close();
+}
+{
+  const { ctx, p } = await freshApp(START, { usageNote: true });
+  const note = p.locator('.toast-usage');
+  await note.waitFor({ state: 'visible', timeout: 15000 }).catch(() => {});
+  await note.getByRole('button', { name: 'OK', exact: true }).click().catch(() => {});
+  await p.waitForTimeout(600);
+  check('Usage note: OK puts it away', (await note.count()) === 0);
+  await p.reload();
+  await p.waitForTimeout(12000);
+  check('Usage note: OK is for good', (await note.count()) === 0);
+  await ctx.close();
+}
+{
+  const { ctx, p } = await freshApp(START, { usageNote: true });
+  // Usage counts off before the note arrives: it never comes.
+  await p.evaluate(() => {
+    const k = 'echo-finders:settings';
+    const v = JSON.parse(localStorage.getItem(k) ?? '{}');
+    localStorage.setItem(k, JSON.stringify({ ...v, privacy: { ...(v.privacy ?? {}), analytics: false } }));
+  });
+  await p.reload();
+  await p.waitForTimeout(12000);
+  check('Usage note: not when usage counts are off', (await p.locator('.toast-usage').count()) === 0);
   await ctx.close();
 }
 

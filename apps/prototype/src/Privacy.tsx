@@ -179,6 +179,7 @@ export function Privacy({
         detail="How many people visit and play echoes. Never who, and never where you are."
         cost="On unless you turn it off. No cookies, nothing that identifies you."
         on={settings.analytics}
+        setting="analytics"
         onToggle={() => onChange({ ...settings, analytics: !settings.analytics })}
       />
 
@@ -333,12 +334,15 @@ function Toggle({
   cost,
   on,
   onToggle,
+  setting,
 }: {
   label: string;
   detail: string;
   cost: string;
   on: boolean;
   onToggle: () => void;
+  /** A name to find this switch by, for "Settings" in the usage counts note. */
+  setting?: string;
 }) {
   return (
     <div className="setting">
@@ -347,6 +351,7 @@ function Toggle({
         onClick={onToggle}
         role="switch"
         aria-checked={on}
+        data-setting={setting}
       >
         <span className="setting-text">
           <strong>{label}</strong>

@@ -40,9 +40,11 @@ import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { holdLockScreen, primeLockScreen } from "./lock-screen";
 import { savedList } from "./saved-list";
 import { readSaved, toggleSaved, writeSaved } from "./saved-store";
-import { CopiedToast, HowEchoesUnlock, NearToast, SavedToast, SAVED_SHOW_MS, SyncedToast } from "./Toasts";
+import { CopiedToast, HowEchoesUnlock, NearToast, SavedToast, SAVED_SHOW_MS, SyncedToast, UsageNoteToast } from "./Toasts";
 import {
   HOW_KEY,
+  USAGE_NOTE_KEY,
+  showUsageNote,
   LOCKED_KEY,
   NEAR_SHOW_MS,
   nearToastFor,
@@ -455,6 +457,12 @@ export function App() {
    */
   const [howSeen, setHowSeen] = useState(() => readFlag(HOW_KEY));
   const firstRunDone = onboarded && howSeen;
+  /** "We count visits, not you": dismissed for good, in this browser (`Toasts.tsx`). */
+  const [usageNoteDone, setUsageNoteDone] = useState(() => readFlag(USAGE_NOTE_KEY));
+  const dismissUsageNote = () => {
+    setFlag(USAGE_NOTE_KEY);
+    setUsageNoteDone(true);
+  };
   const { state, session, walk, store, speech, restored } = useJourney(roaming ? null : route, LIBRARY, {
     sound,
     narrate,
@@ -3064,6 +3072,25 @@ export function App() {
                       setSelectedId(near.echo.id);
                     }}
                     onClose={() => setNearToast(null)}
+                  />
+                );
+              }
+              // Last, so any toast above waits it out and it never stacks on one.
+              if (showUsageNote({ firstRunDone, onMap: tab === "map", analyticsOn: privacy.analytics, dismissed: usageNoteDone })) {
+                return (
+                  <UsageNoteToast
+                    key="usage-note"
+                    onOk={dismissUsageNote}
+                    onSettings={() => {
+                      dismissUsageNote();
+                      setTab("settings");
+                      // At the switch it talks about, once Settings has drawn.
+                      setTimeout(() => {
+                        document
+                          .querySelector('[role="switch"][data-setting="analytics"]')
+                          ?.scrollIntoView({ block: "center" });
+                      }, 60);
+                    }}
                   />
                 );
               }

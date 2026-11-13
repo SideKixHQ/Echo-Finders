@@ -35,6 +35,14 @@ import { existsSync } from 'node:fs';
 import { spawn, spawnSync } from 'node:child_process';
 import { setTimeout as sleep } from 'node:timers/promises';
 
+/*
+ * What puts a toast away: its ✕, or OK on the usage counts note ("We count visits, not
+ * you"), which has no ✕ in its approved design. It arrives on the map a few seconds after
+ * the first run and sat over the menus these journeys tap through (the planned walk's
+ * "Plan a walk" went under it), so it is put away the way every other toast is.
+ */
+const TOAST_DISMISS = '.toast-close, .toast-usage .toast-act-go';
+
 const PORT = 4179;
 let BASE = process.env.CLIP_URL;
 let shutdown = () => {};
@@ -324,7 +332,7 @@ for (const [at, screen] of [
   const { ctx, p, look } = await device(at, { onboarded: true });
   await p.goto(`${BASE}/?at=${at.latitude},${at.longitude}`, { waitUntil: 'domcontentloaded' });
   await p.waitForTimeout(3000);
-  for (let i = 0; i < 3; i++) await p.locator('.toast-close').first().click({ timeout: 500 }).catch(() => {});
+  for (let i = 0; i < 3; i++) await p.locator(TOAST_DISMISS).first().click({ timeout: 500 }).catch(() => {});
   if (!(await p.locator('.nowhere-say h1').count())) unreached.push(screen);
   await look(screen);
   await ctx.close();
@@ -358,7 +366,7 @@ for (const [at, screen] of [
   await tap(p.getByRole('button', { name: 'Close search' }));
   await p.waitForTimeout(300);
   // Whatever a search step left open, a card or a toast, out of the way of the trip sheet.
-  for (let i = 0; i < 3; i++) await p.locator('.toast-close').first().click({ timeout: 500 }).catch(() => {});
+  for (let i = 0; i < 3; i++) await p.locator(TOAST_DISMISS).first().click({ timeout: 500 }).catch(() => {});
   await p.locator('.pop-close').click({ force: true, timeout: 1000 }).catch(() => {});
   await p.waitForTimeout(300);
   await tap(p.getByLabel(/Change your journey/));
@@ -378,7 +386,7 @@ for (const [at, screen] of [
   await p.waitForTimeout(300);
   await tap(p.locator('.jmenu .jmenu-item'));
   await p.waitForTimeout(1500);
-  for (let i = 0; i < 3; i++) await p.locator('.toast-close').first().click({ timeout: 500 }).catch(() => {});
+  for (let i = 0; i < 3; i++) await p.locator(TOAST_DISMISS).first().click({ timeout: 500 }).catch(() => {});
   if (!(await p.locator('.upnext').count())) unreached.push('a flight, coming up');
   await look('a flight, coming up');
   await tap(p.locator('.nav button').nth(1));
@@ -414,7 +422,7 @@ for (const [at, screen] of [
   }, seed);
   await p.reload({ waitUntil: 'domcontentloaded' });
   await p.waitForTimeout(2000);
-  for (let i = 0; i < 4; i++) await p.locator('.toast-close').first().click({ timeout: 400 }).catch(() => {});
+  for (let i = 0; i < 4; i++) await p.locator(TOAST_DISMISS).first().click({ timeout: 400 }).catch(() => {});
   await tap(p.locator('.nav button').nth(1));
   await p.waitForTimeout(700);
   if (!(await p.locator('.entry').count())) unreached.push('my echoes, filled');
@@ -469,7 +477,7 @@ for (const [at, how] of [
   if (how === 'search') await ctx.route('**/streets/**', (r) => r.fulfill({ status: 404, body: '' }));
   await p.goto(`${BASE}/?at=${at.latitude},${at.longitude}`, { waitUntil: 'domcontentloaded' });
   await p.waitForTimeout(3000);
-  for (let i = 0; i < 3; i++) await p.locator('.toast-close').first().click({ timeout: 500 }).catch(() => {});
+  for (let i = 0; i < 3; i++) await p.locator(TOAST_DISMISS).first().click({ timeout: 500 }).catch(() => {});
   if (how === 'search') {
     const box = p.getByLabel('Search a city, place or ZIP code');
     await box.click().catch(() => {});
@@ -487,7 +495,7 @@ for (const [at, how] of [
     await tap(p.locator('.pw-go'));
   }
   await p.waitForTimeout(3000);
-  for (let i = 0; i < 3; i++) await p.locator('.toast-close').first().click({ timeout: 500 }).catch(() => {});
+  for (let i = 0; i < 3; i++) await p.locator(TOAST_DISMISS).first().click({ timeout: 500 }).catch(() => {});
   const screen = how === 'search' ? 'directions, a long title' : 'directions, a planned walk';
   if (!(await p.locator('.echobar-dir').count())) unreached.push(screen);
   await look(screen);
