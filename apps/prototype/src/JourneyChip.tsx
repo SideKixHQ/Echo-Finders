@@ -262,6 +262,10 @@ export function JourneyChip(props: JourneyChipProps) {
               routes={forTab}
               here={props.here ?? null}
               heading={tab === "walking" ? "Guided walks" : "Road trips"}
+              // A walk is listed by its stops, the echoes it walks you to. A road trip has
+              // no stops to walk to: it plays what it passes, so it says how many that is,
+              // the same count its journey screen gives ("25 echoes", not "3").
+              countOf={tab === "walking" ? stopsOf : (r) => counts[r.id] ?? 0}
               current={roaming ? null : route.id}
               onPick={(r) => done(() => props.onRoute(r))()}
             />
@@ -348,12 +352,15 @@ function GuidedRoutes({
   routes,
   here,
   heading,
+  countOf,
   current,
   onPick,
 }: {
   readonly routes: readonly Route[];
   readonly here: LatLng | null;
   readonly heading: string;
+  /** How many echoes each route is listed with. */
+  readonly countOf: (r: Route) => number;
   readonly current: string | null;
   readonly onPick: (r: Route) => void;
 }) {
@@ -379,7 +386,7 @@ function GuidedRoutes({
           <b>{r.name ?? r.destination.name}</b>
           <small>
             {withArea && r.area ? `${r.area} · ` : ""}
-            {lengthAndTime(r)} · {stopsOf(r)} {stopsOf(r) === 1 ? "echo" : "echoes"}
+            {lengthAndTime(r)} · {countOf(r)} {countOf(r) === 1 ? "echo" : "echoes"}
           </small>
         </span>
         {on ? <Tick /> : <Chev />}

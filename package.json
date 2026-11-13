@@ -24,7 +24,7 @@
     "audit:controls": "node scripts/audit-controls.mjs",
     "audit:contrast": "python3 scripts/check-contrast.py",
     "audit:dashes": "node scripts/check-dashes.mjs",
-    "gate": "npm run typecheck && npm test && npm run content:validate && npm run audit:dashes && npm run build --workspace @echofinders/core && npm run library:build && npm run audit:contrast && npm run audit:frame && npm run audit:controls && npm run audit:spec && npm run audit:layout && npm run audit:clip && npm run audit:paywall && npm run audit:align && npm run audit:fit && npm run audit:flows && npm run audit:bridge",
+    "gate": "npm run typecheck && npm test && npm run content:validate && npm run audit:dashes && npm run build --workspace @echofinders/core && npm run library:build && npm run audit:contrast && npm run audit:frame && npm run audit:controls && npm run audit:spec && npm run audit:layout && npm run audit:clip && npm run audit:paywall && npm run audit:align && npm run audit:fit && npm run audit:flows && npm run audit:bridge && npm run audit:journeys",
     "audit:spec": "node scripts/check-spec.mjs",
     "audit:frame": "node scripts/check-frame.mjs",
     "audit:layout": "node scripts/audit-layout.mjs",
@@ -32,6 +32,7 @@
     "audit:paywall": "node scripts/audit-paywall.mjs",
     "audit:align": "node scripts/audit-align.mjs",
     "audit:flows": "node scripts/audit-flows.mjs",
+    "audit:journeys": "node scripts/audit-journeys.mjs",
     "audit:bridge": "node scripts/audit-bridge.mjs",
     "audit:fit": "node scripts/audit-fit.mjs"
   },

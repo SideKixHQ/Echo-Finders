@@ -86,3 +86,5 @@ jobs:
       - run: npm run audit:fit
       - run: npm run audit:flows
       - run: npm run audit:bridge
+      # Drives and flights as James approved them (scripts/audit-journeys.mjs).
+      - run: npm run audit:journeys
