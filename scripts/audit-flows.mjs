@@ -1513,6 +1513,35 @@ async function nearby() {
   await ctx.close();
 }
 
+// ── A computer: the whole phone frame on the screen ─────────────────────────────
+// On a laptop the frame was a fixed 844px plus the page's 24px margins, so in any window
+// shorter than 892px (a 1440x900 screen less the browser's own bars) the tab bar was
+// below the bottom edge (James, 2026-11-13). The frame now fits the window's height; on
+// a tall enough window it is the 390x844 phone it always was.
+for (const size of [{ width: 1440, height: 789 }, { width: 1366, height: 657 }, { width: 1440, height: 900 }]) {
+  const ctx = await browser.newContext({ colorScheme: 'dark', viewport: size, deviceScaleFactor: 1,
+    permissions: ['geolocation'], geolocation: START });
+  await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  const p = await ctx.newPage();
+  p.on('pageerror', (e) => errors.push(e.message));
+  await p.goto(`http://127.0.0.1:${PORT}/`, { waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(800);
+  await p.getByRole('button', { name: 'Find echoes near me' }).click();
+  await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
+  await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
+  await p.waitForTimeout(1500);
+  const m = await p.evaluate(() => {
+    const box = (s) => document.querySelector(s)?.getBoundingClientRect();
+    const phone = box('.phone'), nav = box('.nav');
+    return { vh: innerHeight, phoneTop: phone?.top, phoneBottom: phone?.bottom, phoneW: phone?.width, phoneH: phone?.height, navBottom: nav?.bottom, navH: nav?.height };
+  });
+  const at = `${size.width}x${size.height}`;
+  check(`Computer ${at}: the tab bar is on the screen`, m.navBottom !== undefined && m.navBottom <= m.vh && m.navH > 0, JSON.stringify(m));
+  check(`Computer ${at}: the whole phone frame is on the screen`, m.phoneTop >= 0 && m.phoneBottom <= m.vh, JSON.stringify(m));
+  if (size.height >= 892) check(`Computer ${at}: the frame is the 390x844 phone`, m.phoneW === 390 && m.phoneH === 844, JSON.stringify(m));
+  await ctx.close();
+}
+
 await browser.close();
 console.log(`\nPAGE ERRORS: ${errors.length ? errors.join(' | ') : 'none'}`);
 if (failures.length || errors.length) {
