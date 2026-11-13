@@ -24,7 +24,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, characterFor } from "@echofinders/echo";
-import { ClusterDot, FAN_GAP, GROUP_PX } from "./PinCluster";
+import { ClusterDot, clusterRadius, FAN_GAP, GROUP_PX } from "./PinCluster";
 import { TILE_ATTRIBUTION, TILE_URL, VECTOR_ATTRIBUTION, VECTOR_TILES_URL, planTiles, toWorld, type TilePlan } from "./tiles";
 import type { GeoJSONSource, Map as MapLibre } from "maplibre-gl";
 import { MapCanvas } from "./MapCanvas";
@@ -34,6 +34,7 @@ import { useSmoothedPoint } from "./use-smoothed";
 import { NEAR_KM } from "./toast-rules";
 import { buildRouteGeometry, distanceKm, effectiveRadiusKm, presetFor, rarityOf, type Arriving, type Echo, type LatLng, type Position, type Route, type TravelMode,
   clusterPoints,
+  mergeOverlapping,
   fanOut,
 } from "@echofinders/core";
 
@@ -1213,7 +1214,8 @@ export function RouteMap({
       return { item: echo, x, y };
     });
     const held = heldGroups.current;
-    if (!held) return clusterPoints(placed, GROUP_PX);
+    // And numbered dots that would overlap each other merge into one (James, 2026-11-13).
+    if (!held) return mergeOverlapping(clusterPoints(placed, GROUP_PX), clusterRadius);
     /*
      * A finger is down: the same groups as when it landed, only moved. See `holdUnder`.
      * Centred on the mean of their members, as `clusterPoints` centres them.

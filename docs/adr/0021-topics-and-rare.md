@@ -99,6 +99,9 @@ Asked of James, not yet decided, built as below until he answers:
   does not count in the nearby list or the "An echo is close" toast, and does not play.
 - **In the topic view you are drawn under the numbered dots** (James, 2026-11-13), so your
   dot never hides the number of the town you are in. Everywhere else you stay on top.
+- **Numbered dots that overlap each other merge** into one with the combined number, at
+  every zoom (James, 2026-11-13, "the usual map clustering"): from Philadelphia with Ghosts
+  & legends, Philadelphia's 18 no longer sits over New York's; they are one 36.
 - **A trip's topic view has the area card** ("N places · M echoes") when zoomed out, as
   exploring does (James, 2026-11-13).
 

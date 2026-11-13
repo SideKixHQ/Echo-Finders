@@ -280,6 +280,20 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
       r.seen > UK_GHOSTS && r.card === r.seen, `${r.seen} on screen, the card says ${r.card}`);
     // The echo bar steps through the same set the map and the card count (2026-11-13).
     check('Topic by country: from Philadelphia, the echo bar counts the US ones the card does', r.total === r.card, `1 of ${r.total}, card ${r.card}`);
+    // Numbered dots that overlap each other merge (James, 2026-11-13): Philadelphia's 18
+    // sat over New York's 8 here. No two numbered dots on the screen overlap.
+    const overlaps = await r.p.evaluate(() => {
+      const dots = [...document.querySelectorAll('.clus .clus-body')].map((c) => {
+        const b = c.getBoundingClientRect();
+        return { x: b.x + b.width / 2, y: b.y + b.height / 2, r: b.width / 2 };
+      });
+      const out = [];
+      for (let i = 0; i < dots.length; i++)
+        for (let j = i + 1; j < dots.length; j++)
+          if (Math.hypot(dots[i].x - dots[j].x, dots[i].y - dots[j].y) < dots[i].r + dots[j].r - 0.5) out.push(`${i}/${j}`);
+      return out;
+    });
+    check('Topic by country: no two numbered dots overlap', overlaps.length === 0, overlaps.join(' '));
     await r.ctx.close();
   }
   {
