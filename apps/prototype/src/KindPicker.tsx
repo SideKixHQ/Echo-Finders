@@ -20,7 +20,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { EchoCategory } from "@echofinders/core";
-import { CATEGORY_ICON, CHIP_GROUPS, RARE_AFTER, RARE_ICON, type ChipGroup } from "./categories";
+import { CATEGORY_ICON, CHIP_GROUPS, KIDS_CHIP_GROUPS, RARE_AFTER, RARE_ICON, type ChipGroup } from "./categories";
 
 /** The Rare chip: a filter on rarity, combined with the topics (AND). */
 export interface RareChip {
@@ -34,6 +34,11 @@ interface KindProps {
   readonly onAll: () => void;
   /** The map's panel has Rare; My Echoes has its own Rare finds tile instead. */
   readonly rare?: RareChip;
+  /**
+   * Kids mode: the panel offers All and Kids only (James, 2026-11-13, `KIDS_CATEGORIES`),
+   * and Rare where the caller passes it. True crime is never offered there.
+   */
+  readonly kids?: boolean;
 }
 
 const isAll = (on: ReadonlySet<EchoCategory>) =>
@@ -54,9 +59,9 @@ const picked = (on: ReadonlySet<EchoCategory>) =>
  * with that rule. Picking a topic here now takes the map out to every echo of it
  * (`topicBox`, App.tsx), so a topic with none nearby is still somewhere to go.
  */
-export function KindGrid({ on, onToggle, onAll, rare }: KindProps) {
+export function KindGrid({ on, onToggle, onAll, rare, kids = false }: KindProps) {
   const all = isAll(on);
-  const shown = CHIP_GROUPS;
+  const shown = kids ? KIDS_CHIP_GROUPS : CHIP_GROUPS;
   const rareShown = !!rare;
   const topic = (group: ChipGroup) => {
     const lit = !all && group.categories.some((c) => on.has(c));
@@ -109,7 +114,7 @@ interface PickerProps extends KindProps {
   readonly onOpenChange?: (open: boolean) => void;
 }
 
-export function KindPicker({ on, onToggle, onAll, rare, count, open: openIn, onOpenChange }: PickerProps) {
+export function KindPicker({ on, onToggle, onAll, rare, kids, count, open: openIn, onOpenChange }: PickerProps) {
   const [openOwn, setOpenOwn] = useState(false);
   const open = openIn ?? openOwn;
   const setOpen = useCallback(
@@ -188,7 +193,7 @@ export function KindPicker({ on, onToggle, onAll, rare, count, open: openIn, onO
       {/* Below the whole map bar, its full width: one box, every kind in view. */}
       {open && (
         <div className="kind-box" id="kind-box" ref={box}>
-          <KindGrid on={on} onToggle={onToggle} onAll={onAll} rare={rare} />
+          <KindGrid on={on} onToggle={onToggle} onAll={onAll} rare={rare} {...(kids ? { kids } : {})} />
         </div>
       )}
     </>

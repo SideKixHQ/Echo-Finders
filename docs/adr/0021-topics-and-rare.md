@@ -69,6 +69,24 @@ Asked of James, not yet decided, built as below until he answers:
 - Where the panel is taller than the screen (an iPhone SE, or Safari with its bars) it
   stops above the tab bar and scrolls; on the approved 390x844 frame it fits whole.
 
+## Amended 2026-11-13 (afternoon): kids mode is the Kids topic
+James first answered "True crime in kids mode ... Should I hide it in kids mode? - yes", then
+chose, for kids mode as a whole, "A now, B over time":
+- **A, now: the Kids topic only.** Kids mode used to be an age alone (`minAge` at or below
+  8), which let 822 of 981 echoes through, ghosts, battles, disasters and scandals among
+  them. Now a kids listener's profile lists only `kids` (`KIDS_CATEGORIES`, `kids-mode.ts`),
+  so the engine's gate refuses every other topic to the queue, the capture and the player,
+  and the map draws only Kids echoes everywhere, the country view, zoomed out and the topic
+  view included. The age is still checked as well. The Settings line is unchanged: "Only
+  echoes written for children, and nothing with an age on it."
+- **The panel in kids mode** offers All and Kids, and Rare because the Kids topic has rare
+  echoes (10 today); with none it would not. True crime is never offered there and no true
+  crime pin or dot is drawn, which is the first answer, kept.
+- **Turning kids mode on** drops every picked topic it does not offer, True crime first among
+  them; with nothing left the map is on All, as if All had been tapped.
+- **B, over time:** a per echo all-ages mark, so an echo from another topic written for every
+  age can join kids mode. Not built; `kidsMay` and `listenerFor` are where it would go.
+
 ## Held back
 - `dc-the-tape-on-the-door` (Watergate) stays in true crime with its review, as James was
   told, rather than moving to Scandals.

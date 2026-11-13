@@ -150,6 +150,59 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── Kids mode: the Kids topic only ─────────────────────────────────────────────
+// James, 2026-11-13 (docs/adr/0021-topics-and-rare.md): kids mode never offers True crime
+// and shows no true crime pin anywhere; then, superseding that and keeping it, kids mode
+// is the Kids topic only. The panel is All, Rare (there are rare Kids echoes) and Kids. A
+// True crime picked before kids mode goes, and with nothing left the map is on All.
+{
+  const { ctx, p } = await freshApp();
+  const kinds = p.locator('.kind-tap');
+  const sheet = p.locator('#kind-box');
+  await kinds.click();
+  await p.waitForTimeout(300);
+  await sheet.locator('.chip', { hasText: 'True crime' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(1500);
+  const nav = p.locator('.nav');
+  await nav.getByRole('button', { name: /Settings/ }).click();
+  await p.waitForTimeout(400);
+  await p.getByRole('switch', { name: /Kids mode/ }).click();
+  await nav.getByRole('button', { name: /Map/ }).click();
+  await p.waitForTimeout(1500);
+  check('Kids mode: a True crime picked before goes, back to All', (await kinds.innerText()).trim() === 'All echoes', await kinds.innerText());
+  await kinds.click();
+  await p.waitForTimeout(300);
+  const chips = (await sheet.locator('.chip').allInnerTexts()).map((t) => t.trim());
+  check('Kids mode: the panel offers All, Rare and Kids, and no True crime', chips.join('|') === 'All|Rare|Kids', chips.join('|'));
+  // Picking Kids is the topic view: every Kids echo, from the whole library.
+  await sheet.locator('.chip', { hasText: 'Kids' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(1800);
+  const cats = await p.locator('.pin, .clus').evaluateAll((es) => es.map((e) => [...e.classList].find((c) => c.startsWith('cat-'))));
+  check('Kids mode: the topic view draws Kids echoes and nothing else', cats.length > 0 && cats.every((c) => c === 'cat-kids'), [...new Set(cats)].join(','));
+  // All, zoomed out as far as the map goes: the whole library is drawn there, and still
+  // only Kids echoes, no true crime pin or dot.
+  await kinds.click();
+  await p.waitForTimeout(300);
+  await sheet.getByRole('button', { name: 'All' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(1500);
+  const box = await p.locator('svg.map').boundingBox();
+  for (let i = 0; i < 12; i++) {
+    await p.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+    await p.mouse.wheel(0, 600);
+    await p.waitForTimeout(150);
+  }
+  await p.waitForTimeout(1500);
+  const farZoom = Number(await p.locator('svg.map').getAttribute('data-zoom'));
+  // Out where the area card counts the screen (`farOut`), the map draws from the whole library.
+  check('Kids mode: zoomed out to where the whole library is drawn', await visible(p.locator('.area-card')), String(farZoom));
+  const far = await p.locator('.pin, .clus').evaluateAll((es) => es.map((e) => [...e.classList].find((c) => c.startsWith('cat-'))));
+  check('Kids mode: zoomed out, no true crime and nothing but Kids', far.length > 0 && far.every((c) => c === 'cat-kids'), `${far.length}: ${[...new Set(far)].join(',')}`);
+  await ctx.close();
+}
+
 // ── Settings › Membership ──────────────────────────────────────────────────────
 // Buying, cancelling and turning renewal back on, all from Settings. Nothing is charged:
 // purchases are recorded on the device until Stripe lands.

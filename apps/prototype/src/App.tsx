@@ -6,6 +6,7 @@ import { count } from "./analytics";
 import { takeSharedEcho } from "./share";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
+import { keepForKids, kidsMay } from "./kids-mode";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { BASE_ZOOM, MIN_ZOOM, RouteMap, type PinState } from "./RouteMap";
@@ -148,6 +149,11 @@ const OVERVIEW_RADIUS_KM = 6;
 const FAR_OUT_MAP_ZOOM = 12;
 /** What the country view fits: the library's echoes in the continental US (`country-view.ts`). */
 const US_FRAME = countryFrame(LIBRARY.map((e) => e.point.at));
+/**
+ * Whether kids mode offers Rare: only when the Kids topic has rare echoes (James,
+ * 2026-11-13: "no Rare unless there are rare kids echoes"). Read from the library.
+ */
+const KIDS_HAVE_RARE = LIBRARY.some((e) => kidsMay(e) && isRareFind(e));
 /**
  * Seatback mode: a big landscape touch screen in the back of an aircraft seat (ADR-0001).
  *
@@ -1298,10 +1304,14 @@ export function App() {
    * category that does not exist.
    */
   const activeCats = cats ?? ALL_CATEGORIES;
-  /** What the panel lets through: a picked topic, and rare when Rare is on. */
+  /**
+   * What the panel lets through: a picked topic, and rare when Rare is on. In kids mode,
+   * the Kids topic only (`kidsMay`), wherever the map draws from the whole library: the
+   * country view, zoomed out and the topic view as well as around you.
+   */
   const shows = useCallback(
-    (e: Echo) => activeCats.has(e.category) && (!rareOnly || isRareFind(e)),
-    [activeCats, rareOnly],
+    (e: Echo) => (!kids || kidsMay(e)) && activeCats.has(e.category) && (!rareOnly || isRareFind(e)),
+    [kids, activeCats, rareOnly],
   );
 
   /*
@@ -1378,6 +1388,12 @@ export function App() {
   const setKidsMode = useCallback((on: boolean) => {
     setKids(on);
     setSimple(on);
+    // A picked topic kids mode does not offer goes (True crime first among them); nothing
+    // left is All. Rare goes too where the Kids topic has none.
+    if (on) {
+      setCats(keepForKids);
+      if (!KIDS_HAVE_RARE) setRareOnly(false);
+    }
   }, []);
 
   // Recomputed as the listener moves, from how far along they are rather than from the
@@ -1540,6 +1556,7 @@ export function App() {
   const inView = useMemo(() => inViewAll.filter(shows), [inViewAll, shows]);
   /** The Rare chip: every topic and Rare are offered everywhere (`KindGrid`). */
   const rareChip = useMemo(() => ({ on: rareOnly, onToggle: toggleRare }), [rareOnly, toggleRare]);
+  const panelRare = kids && !KIDS_HAVE_RARE ? undefined : rareChip;
 
   /**
    * The same list, nearest first, which is the order the stepper moves in.
@@ -2260,7 +2277,8 @@ export function App() {
                   on={activeCats}
                   onToggle={toggleCategory}
                   onAll={allCategories}
-                  rare={rareChip}
+                  {...(panelRare ? { rare: panelRare } : {})}
+                  kids={kids}
                 />
                 </div>
               </div>
