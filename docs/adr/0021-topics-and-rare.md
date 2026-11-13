@@ -60,6 +60,9 @@ replaces "Chips show only what is near" above for the map:
   anywhere, including a place with none of that topic and "Nothing within".
 - **All, or the last one off, goes back.** The map flies back to the view the listener had
   just before the first pick.
+- **A search or the locate arrow replaces where All goes back to** (2026-11-13, James: "go
+  with the better user experience"). Searched while a topic is picked, All frames the place
+  searched, as the search would have; after the locate arrow, All comes back to you.
 
 Asked of James, not yet decided, built as below until he answers:
 - The fit uses the country view's box (`country-view.ts`), the continental US, so the

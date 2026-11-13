@@ -253,6 +253,51 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── A search while a topic is picked ───────────────────────────────────────────
+// 2026-11-13, James: "go with the better user experience". A search, or the locate arrow,
+// while a topic is picked replaces the view All goes back to: All returns to the place
+// searched (or to you, after the locate arrow), not to the place before the first pick.
+{
+  const { ctx, p } = await freshApp();
+  const kinds = p.locator('.kind-tap');
+  const sheet = p.locator('#kind-box');
+  const pick = async (name) => {
+    await kinds.click();
+    await p.waitForTimeout(300);
+    await (name === 'All' ? sheet.getByRole('button', { name: 'All' }) : sheet.locator('.chip', { hasText: name })).click();
+    await p.keyboard.press('Escape');
+    await p.waitForTimeout(2500);
+  };
+  // The echoes whose pins are on the screen, by id.
+  const onScreen = async () => p.locator('.pin').evaluateAll((es) => es.filter((e) => {
+    const r = e.getBoundingClientRect();
+    return r.x > 0 && r.y > 0 && r.right < innerWidth && r.bottom < innerHeight;
+  }).map((e) => e.dataset.echo));
+  await pick('Ghosts & legends');
+  const box = p.getByLabel('Search a city, place or ZIP code');
+  await box.click();
+  await box.fill('Boston');
+  await p.waitForTimeout(600);
+  await p.locator('#msearch-results .msearch-city', { hasText: 'Boston' }).first().click();
+  await p.waitForTimeout(2500);
+  await pick('All');
+  const there = await onScreen();
+  check('Topic and search: All returns to the place searched, not the place before the pick',
+    there.length > 0 && there.every((id) => /^boston-/.test(id)), there.join(', '));
+  // The locate arrow while a topic is picked: All comes back to you (the Battery).
+  await pick('Ghosts & legends');
+  await p.getByRole('button', { name: 'Go to my location' }).click();
+  await p.waitForTimeout(2500);
+  await pick('All');
+  // Back at street level on you: no Boston pin in view, and the bar on the nearest echo.
+  const home = await onScreen();
+  const bar = (await p.locator('.echobar').innerText().catch(() => '')).replace(/\s+/g, ' ');
+  check('Topic and locate: All returns to where you are',
+    home.every((id) => !/^boston-/.test(id)) && /Castle/.test(bar) && Number(await p.locator('svg.map').getAttribute('data-zoom')) >= 0.5,
+    `${home.join(', ')} | ${bar}`);
+  await ctx.close();
+}
+
 // ── Settings › Membership ──────────────────────────────────────────────────────
 // Buying, cancelling and turning renewal back on, all from Settings. Nothing is charged:
 // purchases are recorded on the device until Stripe lands.

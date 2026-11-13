@@ -1358,18 +1358,36 @@ export function App() {
    * topic view does not change; only what the map draws does (`inArea`).
    */
   const picking = cats !== null || rareOnly;
-  /** The zoom and pan from just before the first pick. The map keeps its own camera. */
-  const [beforePick, setBeforePick] = useState<{ zoom: number; pan: { x: number; y: number } } | null>(null);
+  /**
+   * The zoom and pan from just before the first pick. The map keeps its own camera. The
+   * zoom is null once a search or the locate arrow has replaced the view to go back to:
+   * the map's camera says it then (`onZoom` when it settles).
+   */
+  const [beforePick, setBeforePick] = useState<{ zoom: number | null; pan: { x: number; y: number } } | null>(null);
   useEffect(() => {
     if (picking && !beforePick) setBeforePick({ zoom, pan });
     if (!picking && beforePick) {
-      setZoom(beforePick.zoom);
+      if (beforePick.zoom !== null) setZoom(beforePick.zoom);
       setPan(beforePick.pan);
       setBeforePick(null);
     }
     // Only on the pick and the return: the zoom and pan in between are the topic view's.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [picking]);
+  /*
+   * A search or the locate arrow while a topic is picked replaces the view All goes back to
+   * (2026-11-13: "go with the better user experience"): the place searched, or where you
+   * are, not the place before the first pick. The map keeps that camera (`RouteMap`).
+   */
+  const lookKey = lookAt ? `${lookAt.at.lat},${lookAt.at.lng}` : null;
+  const lastLook = useRef({ lookKey, locateTap });
+  useEffect(() => {
+    const was = lastLook.current;
+    lastLook.current = { lookKey, locateTap };
+    if (was.lookKey === lookKey && was.locateTap === locateTap) return;
+    if (picking && beforePick) setBeforePick({ zoom: null, pan });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lookKey, locateTap]);
   /**
    * What the topic view fits: every echo the panel lets through, framed as the country view
    * frames the library (`country-view.ts`), so the three ghost stories in England do not
