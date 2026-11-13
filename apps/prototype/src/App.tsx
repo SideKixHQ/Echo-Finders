@@ -6,7 +6,7 @@ import { count } from "./analytics";
 import { takeSharedEcho } from "./share";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
-import { keepForKids, kidsMay } from "./kids-mode";
+import { keepForKids, kidsMayHear } from "./kids-mode";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { BASE_ZOOM, MIN_ZOOM, RouteMap, type PinState } from "./RouteMap";
@@ -153,7 +153,7 @@ const US_FRAME = countryFrame(LIBRARY.map((e) => e.point.at));
  * Whether kids mode offers Rare: only when the Kids topic has rare echoes (James,
  * 2026-11-13: "no Rare unless there are rare kids echoes"). Read from the library.
  */
-const KIDS_HAVE_RARE = LIBRARY.some((e) => kidsMay(e) && isRareFind(e));
+const KIDS_HAVE_RARE = LIBRARY.some((e) => kidsMayHear(e) && isRareFind(e));
 /**
  * Seatback mode: a big landscape touch screen in the back of an aircraft seat (ADR-0001).
  *
@@ -782,6 +782,9 @@ export function App() {
     return { list, travel, heardBefore };
   }, [kept, elsewhere, deleted, privacy.keepCollection, journeyMode]);
 
+  /** My echoes in kids mode: Kids echoes only, as everywhere else in kids mode (2026-11-13). */
+  const kidsFound = useMemo(() => (kids ? found.list.filter((c) => kidsMayHear(c.echo)) : found.list), [kids, found.list]);
+
   /**
    * Which echoes have actually been HEARD, which is what the free ten counts.
    *
@@ -847,6 +850,9 @@ export function App() {
    */
   const playOrAsk = useCallback(
     (echo: Echo) => {
+      // Kids mode plays Kids echoes only, from a card as from the engine (James, 2026-11-13).
+      // Search, the map and My echoes no longer offer any other, so this is the last guard.
+      if (kids && !kidsMayHear(echo)) return;
       if (!mayStart(echo)) {
         count({ name: "Paywall shown", category: echo.category });
         setPaywallFor(echo);
@@ -855,7 +861,7 @@ export function App() {
       count({ name: "Echo played", category: echo.category });
       session.play(echo);
     },
-    [mayStart, session],
+    [kids, mayStart, session],
   );
 
   const storedPositions = useMemo(
@@ -1294,6 +1300,7 @@ export function App() {
    */
   // Every saved echo, not only the ones on this journey (`saved-list.ts`).
   const savedNearby = useMemo(() => savedList(saved, LIBRARY_BY_ID, state.position?.at), [saved, state.position]);
+  const kidsSaved = useMemo(() => (kids ? savedNearby.filter(kidsMayHear) : savedNearby), [kids, savedNearby]);
   const suggestion = useMemo(
     () => ROUTES.find((r) => r.id !== route.id && (corridorCounts[r.id] ?? 0) > 1) ?? null,
     [route.id, corridorCounts],
@@ -1312,11 +1319,11 @@ export function App() {
   const activeCats = cats ?? ALL_CATEGORIES;
   /**
    * What the panel lets through: a picked topic, and rare when Rare is on. In kids mode,
-   * the Kids topic only (`kidsMay`), wherever the map draws from the whole library: the
+   * the Kids topic only (`kidsMayHear`), wherever the map draws from the whole library: the
    * country view, zoomed out and the topic view as well as around you.
    */
   const shows = useCallback(
-    (e: Echo) => (!kids || kidsMay(e)) && activeCats.has(e.category) && (!rareOnly || isRareFind(e)),
+    (e: Echo) => (!kids || kidsMayHear(e)) && activeCats.has(e.category) && (!rareOnly || isRareFind(e)),
     [kids, activeCats, rareOnly],
   );
 
@@ -2184,6 +2191,7 @@ export function App() {
                 */}
                 <MapSearch
                   library={LIBRARY}
+                  {...(kids ? { may: kidsMayHear } : {})}
                   saved={saved}
                   onLook={(hit) => lookSomewhere(hit, roamMode)}
                   onGo={goToEcho}
@@ -2750,7 +2758,7 @@ export function App() {
                 const r = reactions[id];
                 return r ? faceOf(r.reaction) : null;
               }}
-              captured={found.list}
+              captured={kidsFound}
               travelOf={(id) => found.travel.get(id) ?? journeyMode}
               privacy={privacy}
               onPlay={(echo) => {
@@ -2761,8 +2769,9 @@ export function App() {
                 state.playback.kind !== "idle" && state.playback.item.echo.id === id
               }
               isHeard={(id) => stateOf(id) === "heard" || found.heardBefore.has(id)}
-              saved={savedNearby}
+              saved={kidsSaved}
               onSave={toggleSave}
+              kids={kids}
               onGo={goToEcho}
               onFindNear={() => {
                 // Back to the map, framed on you rather than on somewhere looked up.
@@ -2778,7 +2787,7 @@ export function App() {
                   routes={routes}
                   echoOf={(id) => LIBRARY_BY_ID.get(id)}
                   isDone={(id) => stateOf(id) !== "sealed"}
-                  saved={savedNearby}
+                  saved={kidsSaved}
                   startBlock={routeStartBlock}
                   onStart={startRoute}
                   onCreate={() => {

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { checkEligibility } from "@echofinders/core";
-import { KIDS_CATEGORIES, keepForKids, kidsMay } from "../../apps/prototype/src/kids-mode";
+import { KIDS_AGE, KIDS_CATEGORIES, keepForKids, kidsMay, kidsMayHear } from "../../apps/prototype/src/kids-mode";
 import { listenerFor } from "../../apps/prototype/src/use-journey";
 import { isRareFind } from "../../apps/prototype/src/my-echoes";
 import { LIBRARY } from "../../apps/prototype/src/library.generated";
@@ -32,6 +32,18 @@ describe("Kids mode", () => {
     // Out of kids mode nothing changes: true crime is still the opt in it was.
     expect(listenerFor(false, ["true-crime"]).categories).toContain("true-crime");
     expect(listenerFor(false).categories).toContain("legend");
+  });
+
+  // Search, My echoes and a play from a card ask the same question (James, 2026-11-13).
+  it("lets search, My echoes and a card through exactly what the engine plays", () => {
+    const kids = listenerFor(true);
+    const now = Date.now();
+    for (const e of LIBRARY) {
+      // The engine also has hours an echo plays in; the rule here is the topic and the age.
+      if (e.hours) continue;
+      expect(kidsMayHear(e)).toBe(checkEligibility(e, { profile: kids, playAtMs: now }).eligible);
+    }
+    expect(kidsMayHear({ category: "kids", minAge: KIDS_AGE + 1 })).toBe(false);
   });
 
   it("drops a picked True crime when kids mode turns on, and nothing left is All", () => {

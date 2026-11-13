@@ -54,6 +54,8 @@ interface Props {
   readonly faceOf?: (echoId: string) => string | null;
   /** Echoes bookmarked but not yet stood on. Intentions, as against the record. */
   readonly saved: readonly Echo[];
+  /** Kids mode: the topic filter offers All and Kids only, as on the map (`KindGrid`). */
+  readonly kids?: boolean;
   /** Save or unsave. Unsave lives on the echo's card now; kept for callers. */
   readonly onSave: (echo: Echo) => void;
   /** Go, on a saved row: the map, on that echo, its card open. */
@@ -150,6 +152,7 @@ export function Collection({
   view = "echoes",
   onView,
   routes,
+  kids = false,
 }: Props) {
   /*
    * The filters. Kind is the map's own box and rule (`KindPicker`, `toggleCategories`), so
@@ -375,6 +378,7 @@ export function Collection({
               on={cats ?? ALL_CATEGORIES}
               onToggle={onToggle}
               onAll={onAllKinds}
+              kids={kids}
               count={results}
               open={box === "kind"}
               onOpenChange={onKindOpen}

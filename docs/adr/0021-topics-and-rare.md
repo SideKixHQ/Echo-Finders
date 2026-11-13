@@ -99,6 +99,10 @@ chose, for kids mode as a whole, "A now, B over time":
   echoes (10 today); with none it would not. In that order, All, Kids, Rare (James,
   2026-11-13). True crime is never offered there and no true
   crime pin or dot is drawn, which is the first answer, kept.
+- **Search, My echoes and a card follow it too** (James, 2026-11-13): in kids mode the
+  search offers Kids echoes only (cities are still found), My echoes lists only Kids echoes
+  and its topic filter offers All and Kids, and a play from a card is refused for anything
+  else. One rule for all of them and the engine: `kidsMayHear`, the topic and the age.
 - **Turning kids mode on** drops every picked topic it does not offer, True crime first among
   them; with nothing left the map is on All, as if All had been tapped.
 - **B, over time:** a per echo all-ages mark, so an echo from another topic written for every

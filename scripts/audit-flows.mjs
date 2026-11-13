@@ -157,6 +157,17 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
 // True crime picked before kids mode goes, and with nothing left the map is on All.
 {
   const { ctx, p } = await freshApp();
+  // Two saved before kids mode: a ghost story and a Kids echo, for My echoes below.
+  const search = p.getByLabel('Search a city, place or ZIP code');
+  for (const title of ['The Lady in Black', 'Turn the Cable Car Around']) {
+    await search.click();
+    await search.fill(title);
+    await p.waitForTimeout(600);
+    await p.locator('#msearch-results .msearch-save').first().click();
+    await p.waitForTimeout(300);
+  }
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(300);
   const kinds = p.locator('.kind-tap');
   const sheet = p.locator('#kind-box');
   await kinds.click();
@@ -201,6 +212,32 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   check('Kids mode: zoomed out to where the whole library is drawn', await visible(p.locator('.area-card')), String(farZoom));
   const far = await p.locator('.pin, .clus').evaluateAll((es) => es.map((e) => [...e.classList].find((c) => c.startsWith('cat-'))));
   check('Kids mode: zoomed out, no true crime and nothing but Kids', far.length > 0 && far.every((c) => c === 'cat-kids'), `${far.length}: ${[...new Set(far)].join(',')}`);
+  // Search finds Kids echoes only (James, 2026-11-13): a ghost story by its title is not
+  // offered, a Kids echo by its title is, and cities are still found.
+  await search.click();
+  await search.fill('The Lady in Black');
+  await p.waitForTimeout(600);
+  check('Kids mode: search does not offer a ghost story', (await p.locator('#msearch-results .msearch-go').count()) === 0,
+    (await p.locator('#msearch-results').innerText()).replace(/\s+/g, ' '));
+  await search.fill('Turn the Cable Car Around');
+  await p.waitForTimeout(600);
+  check('Kids mode: search offers a Kids echo', (await p.locator('#msearch-results .msearch-go').count()) === 1);
+  await search.fill('Boston');
+  await p.waitForTimeout(600);
+  check('Kids mode: search still finds cities', (await p.locator('#msearch-results .msearch-city').count()) > 0);
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(300);
+  // My echoes shows the saved Kids echo and not the ghost story, and its topic filter
+  // offers All and Kids only.
+  await p.locator('.nav').getByRole('button', { name: /My echoes/i }).click();
+  await p.waitForTimeout(500);
+  const list = await p.locator('.screen-body').innerText();
+  check('Kids mode: My echoes keeps the Kids echo and not the ghost story',
+    /Turn the Cable Car Around/i.test(list) && !/Lady in Black/i.test(list), list.replace(/\s+/g, ' ').slice(0, 300));
+  await p.locator('.me-pills .kind-tap:not(.me-place-tap)').click();
+  await p.waitForTimeout(300);
+  const mine = (await p.locator('.me-pills .kind-box .chip').allInnerTexts()).map((t) => t.trim());
+  check('Kids mode: My echoes filter offers All and Kids only', mine.join('|') === 'All|Kids', mine.join('|'));
   await ctx.close();
 }
 

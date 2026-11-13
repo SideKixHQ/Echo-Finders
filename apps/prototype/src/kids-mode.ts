@@ -18,8 +18,18 @@ import type { EchoCategory } from "@echofinders/core";
  */
 export const KIDS_CATEGORIES: readonly EchoCategory[] = ["kids"];
 
-/** Whether kids mode lets this echo through, on the map and in the panel. */
+/** The age kids mode claims. Under every `minAge` the library sets above zero. */
+export const KIDS_AGE = 8;
+
+/** Whether the topic is one kids mode offers. */
 export const kidsMay = (echo: { readonly category: EchoCategory }): boolean => KIDS_CATEGORIES.includes(echo.category);
+
+/**
+ * Whether a kids listener may see and hear this echo: the engine's own rule (`listenerFor`),
+ * the Kids topic and the age. The map, search, My echoes and a play from a card all ask it.
+ */
+export const kidsMayHear = (echo: { readonly category: EchoCategory; readonly minAge: number }): boolean =>
+  kidsMay(echo) && echo.minAge <= KIDS_AGE;
 
 /**
  * Turning kids mode on drops every picked topic it does not offer, True crime among them

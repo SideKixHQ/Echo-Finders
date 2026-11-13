@@ -34,7 +34,7 @@ import {
   type PrivacySettings,
   type TravelMode,
 } from "@echofinders/core";
-import { KIDS_CATEGORIES } from "./kids-mode";
+import { KIDS_AGE, KIDS_CATEGORIES } from "./kids-mode";
 import { SimulatedJourney } from "./simulated-journey";
 import { simulatesRoute } from "./guided-walk";
 import { EchoTone } from "./echo-tone";
@@ -67,8 +67,8 @@ export const LISTENER: ListenerProfile = {
   density: "immersive",
 };
 
-/** The age kids mode claims. Under every `minAge` the library sets above zero. */
-export const KIDS_AGE = 8;
+// The age kids mode claims lives with the rest of kids mode (`kids-mode.ts`).
+export { KIDS_AGE };
 
 /** Kids mode: the Kids topic only, at the kids age (`listenerFor`). One object, so it is stable. */
 const KIDS_LISTENER: ListenerProfile = { ...LISTENER, categories: KIDS_CATEGORIES, age: KIDS_AGE };

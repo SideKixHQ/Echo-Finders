@@ -28,9 +28,11 @@ export interface MapSearchProps {
   /** The map, on this echo, its card open. */
   readonly onGo: (echo: Echo) => void;
   readonly onSave: (echo: Echo) => void;
+  /** Which echoes the search may find; kids mode passes `kidsMayHear`. Cities are not limited. */
+  readonly may?: (echo: Echo) => boolean;
 }
 
-export function MapSearch({ library, saved, onLook, onGo, onSave }: MapSearchProps) {
+export function MapSearch({ library, saved, onLook, onGo, onSave, may }: MapSearchProps) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   /** The row just saved, which says where it went: the toast is under these results. */
@@ -40,7 +42,7 @@ export function MapSearch({ library, saved, onLook, onGo, onSave }: MapSearchPro
 
   const typed = query.trim();
   const cities = typed.length >= 2 ? searchCities(query, table ?? new Map(), library, 4) : [];
-  const echoes: readonly EchoHit[] = typed.length >= 2 ? searchEchoes(query, library, 6) : [];
+  const echoes: readonly EchoHit[] = typed.length >= 2 ? searchEchoes(query, may ? library.filter(may) : library, 6) : [];
   const waiting = /^\d{2,5}$/.test(typed) && table === null;
 
   const close = () => {
