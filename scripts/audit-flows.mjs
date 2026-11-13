@@ -1038,6 +1038,33 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── A flight by airport ─────────────────────────────────────────────────────────
+// Two airports with no written route build a great circle (`build-flight.ts`). Its plan
+// counted three echoes along it, and the map then showed none of them: the corridor was
+// only ever asked of the written routes.
+{
+  const { ctx, p } = await freshApp();
+  await p.getByLabel(/Change your journey/).click();
+  await p.waitForTimeout(300);
+  await p.locator('.jmenu-mode', { hasText: 'Fly' }).click();
+  await p.waitForTimeout(300);
+  await p.locator('.jmenu-link', { hasText: 'Find a flight by airport' }).click();
+  await p.waitForTimeout(600);
+  await p.getByLabel('From airport').fill('PHL');
+  await p.waitForTimeout(300);
+  await p.locator('.pf-air-list button').first().click();
+  await p.getByLabel('To airport').fill('MSY');
+  await p.waitForTimeout(300);
+  await p.locator('.pf-air-list button').first().click();
+  await p.waitForTimeout(600);
+  const planned = Number(/(\d+) echoes along that route/.exec(await p.locator('.pf-go').locator('..').innerText())?.[1] ?? 0);
+  await p.locator('.pf-go').click();
+  await p.waitForTimeout(1500);
+  const shown = Number(/\d+ OF (\d+)/i.exec(await p.locator('.echobar').innerText().catch(() => ''))?.[1] ?? 0);
+  check('Flight by airport: the map shows the echoes its plan counted', planned > 0 && shown === planned, `${planned} planned, ${shown} on the map`);
+  await ctx.close();
+}
+
 // ── A story: its card, then the player ──────────────────────────────────────────
 // The walk runs on real timers and a simulated GPS, so arriving is retried from a fresh
 // start; only a journey that arrives and then has no way back is a failure.
