@@ -3514,6 +3514,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* Restart and next are secondary to the three in the middle, and saying so with weight
    costs nothing and stops a five-button row reading as five equal choices. */
 .hear-transport button:first-child, .hear-transport button:last-child { color: var(--muted); }
+/* Next with nothing queued: dimmed as the player's chips are (`.hear-chip:disabled`). */
+.hear-transport button:disabled { opacity: 0.4; cursor: default; }
 /*
  * The creature, at 78, and no disc under it.
  *

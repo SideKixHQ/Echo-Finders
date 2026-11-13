@@ -103,6 +103,11 @@ export interface RibbonProps {
   /** The next echo in the queue. `session.skip()`, same as the sheet's "Next echo". */
   readonly onNext: () => void;
   /**
+   * Something is queued behind this one (`state.waiting`). With nothing queued, `skip()`
+   * just ended the echo and closed the player: Next was a hidden Stop (James, 2026-11-13).
+   */
+  readonly canNext: boolean;
+  /**
    * Done with this one entirely. Not pause, which keeps your place.
    *
    * It has to live here now, because this is the only player. Leaving the screen does not
@@ -151,6 +156,7 @@ export function Ribbon({
   onRate,
   onRestart,
   onNext,
+  canNext,
   onStop,
   stopped,
   voice,
@@ -498,7 +504,7 @@ export function Ribbon({
           ALREADY synced, so it skips within what you earned rather than handing you
           something you did not. The sheet has had exactly this button all along.
         */}
-        <button onClick={onNext} aria-label="Next echo">
+        <button onClick={onNext} disabled={!canNext} aria-label="Next echo">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M6 5v14l9.5-7z" className="hear-solid" />
             <path d="M18 5v14" />

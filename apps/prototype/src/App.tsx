@@ -3142,6 +3142,7 @@ export function App() {
             onRate={setRate}
             onRestart={() => seekTo(0)}
             onNext={() => session.skip()}
+            canNext={state.waiting.length > 0}
             /* The last three arrived when the sheet's player became a one line bar: stop,
                the narrator and the rating had nowhere else to be, and this is the screen
                they belonged on anyway. */

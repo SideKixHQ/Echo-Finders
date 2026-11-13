@@ -13,6 +13,8 @@
  *   20  "EXTRA RARE" never touches the marker's arrow
  *   26  the marker never sits over a pin or a group, and a tap on a pin reaches the pin
  *   30  the trip button keeps its whole label; the topics button gives way, icon showing
+ *   21  the player's Next is dimmed and does nothing when nothing is queued, and works when
+ *       something is
  */
 
 import { chromium } from 'playwright';
@@ -193,6 +195,55 @@ if (runs('30')) {
     }
     await ctx.close();
   }
+}
+
+// 21. Next with nothing queued: dimmed, and pressing it does not end the echo.
+if (runs('21')) {
+  const { ctx, p } = await phone({ latitude: 39.947, longitude: -75.147 });
+  await p.goto(`${BASE}/?at=philadelphia-where-evangeline-was-buried`, { waitUntil: 'domcontentloaded' });
+  await p.locator('.toast-synced .toast-play').first().click({ timeout: 15000 });
+  await p.waitForTimeout(1200);
+  const next = p.locator('button[aria-label="Next echo"]');
+  check('21  the player is open', (await p.locator('.hear-go').count()) === 1);
+  check('21  Next is disabled with nothing queued', await next.isDisabled().catch(() => false));
+  check('21  and dimmed as the player dims a control it cannot use',
+    (await next.evaluate((e) => getComputedStyle(e).opacity).catch(() => '1')) === '0.4');
+  await next.click({ force: true }).catch(() => {});
+  await p.waitForTimeout(800);
+  check('21  pressing it does not stop the echo', (await p.locator('.hear-go').count()) === 1);
+  await ctx.close();
+}
+
+// 21. Next with something queued: enabled, and it moves on. Wilmington, the Old Wilmington
+//     walk with "Play these as I reach them" on and every echo chosen, then standing at the
+//     Bellamy Mansion, where several echoes sync at once and the rest queue behind the first.
+if (runs('21')) {
+  const { ctx, p } = await phone({ latitude: 34.2357, longitude: -77.9452 });
+  await p.getByLabel(/Change your journey/).click();
+  await p.getByRole('button', { name: /Journey details/ }).click();
+  await p.getByRole('button', { name: /^Riverwalk at Market Street/ }).click();
+  await p.locator('.pf-alt').first().click();
+  await p.getByRole('button', { name: 'All', exact: true }).click();
+  // By keyboard: the switch sits under the plan's sticky footer at this height.
+  await p.getByRole('button', { name: /Play these as I reach them/ }).focus();
+  await p.keyboard.press('Enter');
+  await p.locator('button[aria-label*="ack"], button[aria-label*="lose"]').first().click();
+  const bellamy = { latitude: 34.23593, longitude: -77.9429 };
+  for (let i = 0; i < 14; i++) {
+    await ctx.setGeolocation({ ...bellamy, latitude: bellamy.latitude + (i % 2) * 0.00001 });
+    await p.waitForTimeout(700);
+  }
+  await p.locator('.toast-synced .toast-play').first().click({ timeout: 10000 });
+  await p.waitForTimeout(1000);
+  const next = p.locator('button[aria-label="Next echo"]');
+  const before = await p.locator('.hear h1, h1').first().innerText().catch(() => '');
+  check('21  Next is enabled with echoes queued', (await next.count()) === 1 && !(await next.isDisabled()));
+  await next.click().catch(() => {});
+  await p.waitForTimeout(1000);
+  const after = await p.locator('.hear h1, h1').first().innerText().catch(() => '');
+  check('21  and moves on to the next echo', (await p.locator('.hear-go').count()) === 1 && after !== before && after !== '',
+    `${before} then ${after}`);
+  await ctx.close();
 }
 
 await browser.close();
