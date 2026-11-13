@@ -149,6 +149,14 @@ const PROBE = ([top, bottom]) => {
     }
   }
   style.remove();
+  // A panel over the map stops above the tab bar; what does not fit scrolls inside it.
+  const nav = document.querySelector('.nav')?.getBoundingClientRect();
+  for (const sel of ['.mapbar .kind-box', '.jmenu', '.pop']) {
+    const el = document.querySelector(sel);
+    if (!el || !nav || !el.getClientRects().length) continue;
+    const r = el.getBoundingClientRect();
+    if (r.bottom > nav.top + 1) out.push(`UNDER THE TAB BAR: ${sel} runs ${(r.bottom - nav.top).toFixed(0)}px under it`);
+  }
   const doc = document.scrollingElement;
   if (doc.scrollHeight > H + 1 || scrollY > 0) out.push(`TOO LONG: the page is ${doc.scrollHeight}px tall on a ${H}px screen (scrolled ${scrollY})`);
   if (doc.scrollWidth > W + 1) out.push(`TOO LONG: the page is ${doc.scrollWidth}px wide on a ${W}px screen`);

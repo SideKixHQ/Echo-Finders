@@ -105,28 +105,37 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   // Kinds of echo: one button that says what is on, every kind behind it at once.
   const kinds = p.locator('.kind-tap');
   check('Kinds: the button says everything is on', (await kinds.innerText()).trim() === "All echoes");
+  // The map's own zoom, as a multiple of the walking view (`data-zoom` on the map).
+  const mapZoom = async () => Number(await p.locator('svg.map').getAttribute('data-zoom'));
+  const zoomBefore = await mapZoom();
   await kinds.click();
   await p.waitForTimeout(400);
   const sheet = p.locator('#kind-box');
-  // The 16 topics (2026-11-12, docs/adr/0021-topics-and-rare.md): the map's panel offers
-  // only the topics with three or more echoes in view, plus Rare on the same rule, so the
-  // count depends on where the map is. Was "exactly 15 chips"; the new truth is All, at
-  // least one topic from the Battery, never more than All plus fifteen topics and Rare.
+  // Topics everywhere (James, 2026-11-13, docs/adr/0021-topics-and-rare.md amended): the
+  // map's panel offers All, the fifteen topics and Rare wherever you are, and nothing else.
+  // Was "the topics with three or more echoes in view" (2 to 17 chips, depending on where
+  // the map was) under a header naming the area and a note saying the list changes.
   const chipCount = await sheet.locator('.chip').count();
-  check('Kinds: tapping it shows the topics around here at once, just below', chipCount >= 2 && chipCount <= 17, String(chipCount));
-  check('Kinds: the panel says where it counted', /^Around here/i.test((await sheet.locator('.kind-head').innerText()).trim()));
+  check('Kinds: tapping it shows every topic and Rare at once, just below', chipCount === 17, String(chipCount));
+  check('Kinds: just the chips, no header naming the area and no note',
+    (await sheet.locator('.kind-panel > *').count()) === 1 && !/Around here|Only topics/i.test(await sheet.innerText()));
   const firstTopic = sheet.locator('.chip:not(.chip-all):not(.cat-rare)').first();
   const firstName = (await firstTopic.innerText()).trim();
   await firstTopic.click();
   await p.waitForTimeout(300);
   check('Kinds: picking keeps it open, to pick more', await visible(sheet));
   check('Kinds: a picked chip stays in the panel', (await sheet.locator('.chip.on', { hasText: firstName }).count()) === 1);
-  // Just below the panel, clear of it whatever its height here.
-  const bb = await sheet.boundingBox();
-  await p.mouse.click(195, Math.min(bb.y + bb.height + 24, 640));
+  // Beside the panel, at the left edge: on a phone this short it runs down to the tab bar
+  // and scrolls, so below it is the tab bar, not the map.
+  await p.mouse.click(6, 400);
   await p.waitForTimeout(300);
   check('Kinds: a tap on the map closes it', !(await visible(sheet)));
   check('Kinds: the button says what is picked', (await kinds.innerText()).includes(firstName), `${firstName} vs ${await kinds.innerText()}`);
+  // Picking a topic takes the map out to every echo of it, across the country (from the
+  // Battery, about 0.2 to the map's floor of 0.03).
+  await p.waitForTimeout(1500);
+  const zoomPicked = await mapZoom();
+  check('Kinds: picking a topic zooms the map out to every echo of it', zoomPicked < zoomBefore / 4, `${zoomBefore} then ${zoomPicked}`);
   await kinds.click();
   await p.waitForTimeout(300);
   await sheet.getByRole('button', { name: 'All' }).click();
@@ -134,6 +143,10 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.waitForTimeout(300);
   check('Kinds: Escape closes it, and All puts everything back',
     !(await visible(sheet)) && (await kinds.innerText()).trim() === "All echoes");
+  // ...and All flies the map back to where it was before the pick.
+  await p.waitForTimeout(1500);
+  const zoomBack = await mapZoom();
+  check('Kinds: All takes the map back to the view before the pick', Math.abs(zoomBack - zoomBefore) < 0.01, `${zoomBefore} then ${zoomBack}`);
   await ctx.close();
 }
 

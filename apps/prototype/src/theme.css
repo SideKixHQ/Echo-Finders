@@ -4492,16 +4492,21 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   animation: catpopIn 0.16s var(--ease);
 }
 @media (prefers-reduced-motion: reduce) { .kind-box { animation: none; } }
-/* Two columns, never a scroller (approved canvas, board "The 16 topics", 2026-11-12): a
-   header saying where the count was taken, the topics with echoes here, and a note saying
-   why the list changes. Fits a 390x844 screen with every topic showing. */
+/* Two columns, never a scroller (approved canvas, board "The 16 topics", 2026-11-12): every
+   topic and Rare, and nothing else (James, 2026-11-13: the header naming the area and the
+   note about the list changing went with the "three or more nearby" rule). Fits a 390x844
+   screen with every topic showing. */
 .kind-box { padding: 14px; border-radius: 18px; }
-.kind-panel { display: flex; flex-direction: column; gap: 10px; }
-.kind-head {
-  font-family: "Space Grotesk", monospace; font-size: 12px; letter-spacing: 0.04em;
-  text-transform: uppercase; color: var(--muted);
+/* Every topic is in the map's panel now, everywhere, and on a phone shorter than the
+   approved 390x844 frame (an SE, or Safari with its bars) the last row ran under the tab
+   bar, out of reach. Where it fits it is exactly as approved; where it does not, it stops
+   above the tabs and scrolls. */
+.mapbar .kind-box {
+  max-height: calc(var(--screen-h) - var(--top-gap) - var(--mapbar-h) - 8px - var(--nav-h) - 8px);
+  overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none;
 }
-.kind-note { font-size: 13px; line-height: 1.4; color: var(--muted); }
+.mapbar .kind-box::-webkit-scrollbar { display: none; }
+.kind-panel { display: flex; flex-direction: column; gap: 10px; }
 .kind-chips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 .kind-chips .chip {
   min-height: 44px; border-radius: 22px; padding: 0 12px; gap: 8px; min-width: 0;
