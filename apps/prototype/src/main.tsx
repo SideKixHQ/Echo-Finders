@@ -1,3 +1,6 @@
+// Inside the iPhone app only: the phone plays, locates and sells (`native-bridge.ts`). First,
+// so it is in place before anything asks for a position. In a browser it does nothing.
+import "./native-bridge";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./App";

@@ -22,13 +22,22 @@
  *
  * Walks hand echoes in with `offer`: one plays, two wait, and a waiting one is dropped when
  * you have walked on from it (the engine's `PlaybackQueue`, as the web app's walk uses it).
+ *
+ * THE WEB APP (ADR-0012, amended 2026-11-13). The app shows the web app, and the web app
+ * decides what plays: it asks with `playRequest` (the render's key, its address and what
+ * the lock screen shows), and hears back through `subscribe` when a file ends, will not
+ * play, or the lock screen's Play or Pause was pressed. While the page cannot run (the
+ * screen locked) `handOver` takes its plan, so what it queued still plays in order, and
+ * `takeBack` returns the queue to it.
  */
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { AppState, type AppStateStatus } from "react-native";
 import { Asset } from "expo-asset";
 import { setAudioModeAsync, useAudioPlayer, useAudioPlayerStatus, type AudioPlayer, type AudioStatus } from "expo-audio";
-import type { Deferred, Echo, LatLng } from "@echofinders/core";
-import { renderedAudio } from "./library";
+import type { Deferred, Echo, LatLng, QueuedEcho } from "@echofinders/core";
+import type { PlayRequest } from "../../prototype/src/native-bridge-protocol";
+import { ECHOES, renderedAudio } from "./library";
+import { echoOfRequest } from "./shell/logic";
 import { localUriFor } from "./packs/store";
 import {
   IDLE,
@@ -76,7 +85,39 @@ interface Narrator {
    */
   readonly soundOn: boolean;
   readonly setSoundOn: (on: boolean) => void;
+  /** The web app's Pause and Play: nothing happens if it is already so. */
+  readonly pause: () => void;
+  readonly resume: () => void;
+  /** The web app asks: play this render now, from `startAtS`. */
+  readonly playRequest: (request: PlayRequest) => void;
+  /** Queue this render behind the one playing, as a walk does (the pocket). */
+  readonly offerRequest: (request: PlayRequest) => Deferred | null;
+  /** Move to this fraction of the file loaded. */
+  readonly seekFraction: (fraction: number) => void;
+  /** The web app's speed setting. */
+  readonly setRate: (rate: number) => void;
+  /** The key of the file loaded, or null. */
+  readonly loadedKey: () => string | null;
+  /** What the player did by itself, for the web app. Returns how to stop listening. */
+  readonly subscribe: (listener: (event: NarratorEvent) => void) => () => void;
+  /** The page's plan while it cannot run: what is playing, and what waits behind it. */
+  readonly handOver: (current: PlayRequest | null, waiting: readonly PlayRequest[]) => void;
+  /** The page runs again: it queues for itself, so nothing waits here. */
+  readonly takeBack: () => void;
 }
+
+/** What the player tells the web app. */
+export type NarratorEvent =
+  | { readonly type: "started"; readonly key: string }
+  | { readonly type: "ended"; readonly key: string }
+  | { readonly type: "failed"; readonly key: string }
+  | { readonly type: "progress"; readonly key: string; readonly positionS: number; readonly durationS: number }
+  | { readonly type: "remote"; readonly action: "play" | "pause" };
+
+/** How long after the app moves the player itself a change is still its own. */
+const SELF_MOVED_MS = 1500;
+
+const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(ECHOES.map((echo) => [echo.id, echo]));
 
 const NarratorContext = createContext<Narrator | null>(null);
 
@@ -125,8 +166,19 @@ export function NarratorProvider({ children }: { children: ReactNode }) {
   const [queue] = useState(walkQueue);
   const intent = useRef<Intent>(IDLE);
   const appPhase = useRef<AppPhase>(phaseOf(AppState.currentState));
-  const lastReport = useRef<PlayerReport | null>(null);
+  const lastReport = useRef<(PlayerReport & { readonly playbackState?: string }) | null>(null);
   const artwork = useRef<string | null>(null);
+  // The web app's renders: which file each queued echo plays, and the one loaded now.
+  const sources = useRef(new Map<string, { key: string; uri: string; durationS: number }>());
+  const loaded = useRef<{ key: string; durationS: number } | null>(null);
+  const rate = useRef(1);
+  // When the app itself last moved the player, so its own start or pause is not reported
+  // back to the page as the lock screen's.
+  const selfMoved = useRef(0);
+  const listeners = useRef(new Set<(event: NarratorEvent) => void>());
+  const tell = useCallback((event: NarratorEvent) => {
+    for (const listener of listeners.current) listener(event);
+  }, []);
 
   /** Feed the intent an event; start the player again if it says to. */
   const dispatch = useCallback(
@@ -160,20 +212,27 @@ export function NarratorProvider({ children }: { children: ReactNode }) {
 
   /** Load an echo into the player and start it, with the lock screen showing it. */
   const start = useCallback(
-    (echo: Echo, fromTheTop: boolean) => {
-      const audio = renderedAudio(echo);
-      if (!audio) return;
+    (echo: Echo, fromTheTop: boolean, startAtS = 0) => {
+      const source = sources.current.get(echo.id);
+      const audio = source ? null : renderedAudio(echo);
+      const key = source?.key ?? audio?.audioKey;
+      if (!key) return;
       if (fromTheTop) {
         // A saved copy first (Settings › Offline echoes), so it plays with no signal.
-        player.replace({ uri: localUriFor(audio.audioKey) ?? audio.url });
+        player.replace({ uri: localUriFor(key) ?? source?.uri ?? audio!.url });
+        player.setPlaybackRate(rate.current);
+        loaded.current = { key, durationS: source?.durationS ?? echo.durationS };
+        if (startAtS > 0) void player.seekTo(startAtS);
         setCurrent(echo);
+        tell({ type: "started", key });
       }
+      selfMoved.current = Date.now();
       dispatch({ type: "play" });
       setFullVolume(player);
       player.setActiveForLockScreen(true, nowPlayingFor(echo, artwork.current), LOCK_SCREEN_OPTIONS);
       player.play();
     },
-    [dispatch, player],
+    [dispatch, player, tell],
   );
 
   const play = useCallback(
@@ -216,8 +275,100 @@ export function NarratorProvider({ children }: { children: ReactNode }) {
     player.clearLockScreenControls();
     queue.clear();
     syncWaiting();
+    loaded.current = null;
+    sources.current.clear();
     setCurrent(null);
   }, [dispatch, player, queue, syncWaiting]);
+
+  /** A render the web app asked for, as the queue holds it. */
+  const itemOf = useCallback((request: PlayRequest): QueuedEcho => {
+    const echo = echoOfRequest(request, LIBRARY_BY_ID);
+    sources.current.set(echo.id, { key: request.key, uri: request.url, durationS: request.durationS });
+    const render = echo.renders?.find((r) => r.audioKey === request.key) ?? { voiceId: "", audioKey: request.key, durationS: request.durationS };
+    return { echo, render, atMs: Date.now() };
+  }, []);
+
+  const playRequest = useCallback(
+    (request: PlayRequest) => {
+      setSoundOnState(!request.muted);
+      rate.current = request.rate;
+      const item = itemOf(request);
+      queue.playNow(item);
+      syncWaiting();
+      start(item.echo, true, request.startAtS);
+    },
+    [itemOf, queue, start, syncWaiting],
+  );
+
+  const offerRequest = useCallback(
+    (request: PlayRequest): Deferred | null => {
+      const item = itemOf(request);
+      const { started, deferred } = queue.offer(item);
+      syncWaiting();
+      if (started) start(item.echo, true);
+      return deferred;
+    },
+    [itemOf, queue, start, syncWaiting],
+  );
+
+  const seekFraction = useCallback(
+    (fraction: number) => {
+      const total = status.duration > 0 ? status.duration : (loaded.current?.durationS ?? 0);
+      void player.seekTo(Math.max(0, Math.min(1, fraction)) * total);
+    },
+    [player, status.duration],
+  );
+
+  const setRate = useCallback(
+    (next: number) => {
+      rate.current = next;
+      player.setPlaybackRate(next);
+    },
+    [player],
+  );
+
+  const pause = useCallback(() => {
+    if (!player.playing) return;
+    selfMoved.current = Date.now();
+    dispatch({ type: "pause" });
+    queue.pause();
+    player.pause();
+  }, [dispatch, player, queue]);
+
+  const resume = useCallback(() => {
+    if (!loaded.current || player.playing) return;
+    selfMoved.current = Date.now();
+    dispatch({ type: "play" });
+    queue.resume();
+    setFullVolume(player);
+    player.play();
+  }, [dispatch, player, queue]);
+
+  const loadedKey = useCallback(() => loaded.current?.key ?? null, []);
+
+  const subscribe = useCallback((listener: (event: NarratorEvent) => void) => {
+    listeners.current.add(listener);
+    return () => void listeners.current.delete(listener);
+  }, []);
+
+  const handOver = useCallback(
+    (now: PlayRequest | null, waiting: readonly PlayRequest[]) => {
+      const playing = queue.nowPlaying;
+      // The page's queue, behind what is playing here now; nothing restarts.
+      queue.clear();
+      if (playing && now && loaded.current?.key === now.key) queue.offer(playing);
+      for (const request of waiting) queue.offer(itemOf(request));
+      syncWaiting();
+    },
+    [itemOf, queue, syncWaiting],
+  );
+
+  const takeBack = useCallback(() => {
+    const playing = queue.nowPlaying;
+    queue.clear();
+    if (playing) queue.offer(playing);
+    syncWaiting();
+  }, [queue, syncWaiting]);
 
   const next = useCallback(() => {
     const item = queue.skip();
@@ -251,7 +402,12 @@ export function NarratorProvider({ children }: { children: ReactNode }) {
     const subscription = player.addListener("playbackStatusUpdate", (now) => {
       const before = lastReport.current;
       lastReport.current = now;
+      if (now.playbackState === "failed" && before?.playbackState !== "failed" && loaded.current) {
+        tell({ type: "failed", key: loaded.current.key });
+        return;
+      }
       if (now.didJustFinish && !before?.didJustFinish) {
+        if (loaded.current) tell({ type: "ended", key: loaded.current.key });
         const following = queue.finished();
         syncWaiting();
         if (following) start(following.echo, true);
@@ -260,11 +416,21 @@ export function NarratorProvider({ children }: { children: ReactNode }) {
       }
       if (!before) return;
       const change = playerChange(before, now);
-      if (change === "halted") dispatch({ type: "halted", volume: player.volume, app: appPhase.current });
-      else if (change === "started") dispatch({ type: "started" });
+      const ours = Date.now() - selfMoved.current < SELF_MOVED_MS;
+      if (change === "halted") {
+        dispatch({ type: "halted", volume: player.volume, app: appPhase.current });
+        // Paused by the listener (lock screen, headphones), not by a call: the page pauses too.
+        if (!ours && intent.current.want === "paused") tell({ type: "remote", action: "pause" });
+      } else if (change === "started") {
+        dispatch({ type: "started" });
+        if (!ours) tell({ type: "remote", action: "play" });
+      }
+      if (loaded.current && Math.floor(now.currentTime) !== Math.floor(before.currentTime)) {
+        tell({ type: "progress", key: loaded.current.key, positionS: now.currentTime, durationS: now.duration });
+      }
     });
     return () => subscription.remove();
-  }, [dispatch, player, queue, start, syncWaiting]);
+  }, [dispatch, player, queue, start, syncWaiting, tell]);
 
   // After an interruption: look again whenever the app changes phase, and every second
   // while one is open, for the volume coming back (iOS said resume) or the app returning.
@@ -304,8 +470,18 @@ export function NarratorProvider({ children }: { children: ReactNode }) {
       stop,
       soundOn,
       setSoundOn,
+      pause,
+      resume,
+      playRequest,
+      offerRequest,
+      seekFraction,
+      setRate,
+      loadedKey,
+      subscribe,
+      handOver,
+      takeBack,
     }),
-    [player, status, current, waiting, play, offer, moved, next, toggle, skip, stop, soundOn, setSoundOn],
+    [player, status, current, waiting, play, offer, moved, next, toggle, skip, stop, soundOn, setSoundOn, pause, resume, playRequest, offerRequest, seekFraction, setRate, loadedKey, subscribe, handOver, takeBack],
   );
   return <NarratorContext.Provider value={value}>{children}</NarratorContext.Provider>;
 }

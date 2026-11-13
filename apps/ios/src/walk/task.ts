@@ -1,64 +1,50 @@
 /**
  * The walk's location: the background task that hears the phone move with the screen
- * locked, and the on screen watch that stands in for it when Always was refused.
+ * locked, during a hands free walk.
  *
- * Both feed one `WalkJudge` (`logic.ts`), which runs the engine's arrival rules, and hand
- * what it decides to the narrator: `offer(echo)` for each echo reached, then `moved(at)`.
- * The narrator plays one, queues two, and drops a waiting echo once you have walked on.
+ * The app shows the web app (ADR-0012, amended 2026-11-13), and the web app decides what a
+ * fix means. So the task decides nothing: it hands every fix to whoever is attached
+ * (`attachFixes`, the app's shell, `shell/WebShell.tsx`), which passes them to the page, or
+ * keeps them while the page cannot run and lets the pocket judge (`shell/logic.ts`) start
+ * what the page said would play.
  *
  * `TaskManager.defineTask` runs when this module loads, at the top of the root layout
  * (`app/_layout.tsx`), because iOS can deliver a background update before any screen has
- * mounted. Until the narrator has attached itself (`attachNarrator`) updates are left
- * alone, so an echo is never marked found without being offered.
+ * mounted. Fixes that arrive before the shell has attached are held for it.
  *
- * Location goes nowhere but here. Fixes are read in memory, compared with the echoes
- * already on the phone, and dropped; what is kept on disk is which echoes were found and
- * when, never where you stood (`walk.json`, privacy defaults applied).
+ * Location goes nowhere but the page on this phone. Nothing here writes a fix down.
  */
 import * as Location from "expo-location";
 import * as TaskManager from "expo-task-manager";
-import { Directory, File, Paths } from "expo-file-system";
-import type { Deferred, Echo, LatLng } from "@echofinders/core";
-import { ECHOES } from "../library";
-import { WALKING_UPDATES, WalkJudge, parseRecords, type Fix } from "./logic";
+import { WALKING_UPDATES } from "./logic";
 
 /** The background location task's name, as registered with iOS. */
 export const WALK_TASK = "echo-finders-walk";
 
-/** The narrator's two calls a walk makes (`player.tsx`). */
-export interface WalkHands {
-  readonly offer: (echo: Echo) => Deferred | null;
-  readonly moved: (at: LatLng) => readonly Deferred[];
-}
+type FixSink = (fixes: readonly Location.LocationObject[]) => void;
 
-let hands: WalkHands | null = null;
-let judge: WalkJudge | null = null;
-let onScreen: Location.LocationSubscription | null = null;
+let sink: FixSink | null = null;
+/** Fixes that came before the shell was ready, oldest first, a few hundred at most. */
+let early: Location.LocationObject[] = [];
+const MAX_EARLY = 500;
 
-/** The narrator, while the app is running. Returns how to let go. */
-export function attachNarrator(next: WalkHands): () => void {
-  hands = next;
+/** The shell, while the app is running. Returns how to let go. */
+export function attachFixes(next: FixSink): () => void {
+  sink = next;
+  if (early.length > 0) {
+    const held = early;
+    early = [];
+    next(held);
+  }
   return () => {
-    if (hands === next) hands = null;
+    if (sink === next) sink = null;
   };
 }
 
-function theJudge(): WalkJudge {
-  judge ??= new WalkJudge(ECHOES, readFound());
-  return judge;
-}
-
-/** Run fixes through the engine, and hand the narrator what they decide. */
-function feed(fixes: readonly Fix[]): void {
-  const narrator = hands;
-  if (!narrator || fixes.length === 0) return;
-  let found = false;
-  for (const step of theJudge().update(fixes)) {
-    for (const echo of step.offer) narrator.offer(echo);
-    narrator.moved(step.at);
-    if (step.found.length > 0) found = true;
-  }
-  if (found) writeFound(theJudge());
+function feed(fixes: readonly Location.LocationObject[]): void {
+  if (fixes.length === 0) return;
+  if (sink) return sink(fixes);
+  early = [...early, ...fixes].slice(-MAX_EARLY);
 }
 
 TaskManager.defineTask<{ locations?: Location.LocationObject[] }>(WALK_TASK, async ({ data, error }) => {
@@ -81,24 +67,16 @@ const UPDATES: Location.LocationTaskOptions = {
  * Calling it again while the walk is on re-arms it, which wakes updates iOS paused.
  */
 export async function startHandsFree(): Promise<void> {
-  stopOnScreen();
   await Location.startLocationUpdatesAsync(WALK_TASK, UPDATES);
 }
 
-/** Walk with the app on screen: the same judge, fed only while the app is in front. */
+/**
+ * Walk with the app on screen. The page's own location (the shell's watch) is already
+ * running while the app is on screen, so this needs no watch of its own; the walk only
+ * keeps the screen awake (`WalkProvider.tsx`).
+ */
 export async function startOnScreen(): Promise<void> {
-  if (onScreen) return;
-  const subscription = await Location.watchPositionAsync(
-    { accuracy: UPDATES.accuracy, distanceInterval: UPDATES.distanceInterval },
-    (fix) => feed([fix]),
-  );
-  if (onScreen) subscription.remove();
-  else onScreen = subscription;
-}
-
-function stopOnScreen(): void {
-  onScreen?.remove();
-  onScreen = null;
+  /* Nothing to start. */
 }
 
 /** Is a hands free walk running? It outlives the screen that started it, and a relaunch. */
@@ -112,35 +90,5 @@ export async function isHandsFreeOn(): Promise<boolean> {
 
 /** End the walk, either kind. Background updates stop here. */
 export async function stopWalk(): Promise<void> {
-  stopOnScreen();
   if (await isHandsFreeOn()) await Location.stopLocationUpdatesAsync(WALK_TASK);
-}
-
-// --- What is kept -----------------------------------------------------------------------------
-
-const prefs = () => new Directory(Paths.document, "prefs");
-const foundFile = () => new File(prefs(), "walk.json");
-
-function readFound() {
-  try {
-    const file = foundFile();
-    return file.exists ? parseRecords(JSON.parse(file.textSync()) as unknown) : [];
-  } catch {
-    return [];
-  }
-}
-
-function writeFound(from: WalkJudge): void {
-  try {
-    const folder = prefs();
-    if (!folder.exists) folder.create({ intermediates: true, idempotent: true });
-    // Written beside and moved into place, so a crash mid write never leaves half a file.
-    const tmp = new File(folder, "walk.json.tmp");
-    if (tmp.exists) tmp.delete();
-    tmp.create();
-    tmp.writeSync(JSON.stringify({ found: from.records }));
-    tmp.moveSync(foundFile(), { overwrite: true });
-  } catch {
-    /* Found echoes are still remembered until the app closes. */
-  }
 }

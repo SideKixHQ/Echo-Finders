@@ -48,7 +48,7 @@ export default function OfflineEchoes() {
     <Screen>
       <ScrollView contentContainerStyle={styles.body}>
         <Pressable
-          onPress={() => (router.canGoBack() ? router.back() : router.replace("/settings"))}
+          onPress={() => (router.canGoBack() ? router.back() : router.replace("/"))}
           accessibilityRole="button"
           accessibilityLabel="Back to Settings"
           style={styles.back}

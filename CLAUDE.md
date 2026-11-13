@@ -26,6 +26,14 @@ Asked to do something, do it end to end: branch, fix, run the gate, push, open t
 Ask only when a decision is genuinely his. Show the work, not a description of it:
 before/after screenshots for anything visual, and what was not verified. One change per PR.
 
+**Build exactly what was approved, and ask, never guess** (James, 2026-11-13, no exceptions):
+"if you need something to build correctly, you must ask. you dont guess, you dont assume, you
+dont make things up. you build exactly what was approved pixel for pixel, you double check your
+work. no exceptions." The approved design artifacts and the web app as built are the spec for
+every surface, the iPhone app included. Anything not settled by them is a question for James,
+asked before building, not a choice made in the code. No build (TestFlight included) is called
+done until its screens have been checked side by side against the approved reference.
+
 **No dashes in anything a user reads** (James, 2026-11-09): no em or en dashes, and no
 hyphen standing in for one, in the app, the website, the published policies or any echo.
 Use a full stop, a comma, a colon or "to". Hyphenated words (All-Access) are fine.
