@@ -21,7 +21,11 @@ const WILMINGTON = { latitude: 34.23979, longitude: -77.94958 };
 
 // `JOURNEYS_DIST=<dir>` serves a build made elsewhere (the app before a change) unbuilt.
 const DIST = process.env.JOURNEYS_DIST;
-if (!DIST) spawnSync('npm', ['run', 'build', '-w', '@echofinders/prototype'], { stdio: 'ignore' });
+// A failed build would leave the last one in `dist` to be audited instead, and pass.
+if (!DIST && spawnSync('npm', ['run', 'build', '-w', '@echofinders/prototype'], { stdio: 'ignore' }).status !== 0) {
+  console.log('FAIL  the app does not build (npm run build -w @echofinders/prototype)');
+  process.exit(1);
+}
 const server = spawn('npx', ['vite', 'preview', '--port', String(PORT), '--host', '127.0.0.1', '--strictPort',
   ...(DIST ? ['--outDir', DIST] : [])],
   { stdio: 'ignore', detached: true, cwd: 'apps/prototype' });
@@ -212,6 +216,23 @@ if (want('F1')) {
   await p.waitForTimeout(20000);
   const later = await minutesLeft(p);
   check('F1: ?simulate keeps the demo flight', later < atStart, `${atStart} then ${later} min left`);
+  await ctx.close();
+}
+
+// ── F2: the phone's GPS corrects the flight when it can be believed ─────────────────
+// A window seat gets a fix over Kitty Hawk, then another a second later at airliner
+// speed: the flight has taken off, and is where the phone says, about a third of the way.
+if (want('F2')) {
+  const { ctx, p } = await freshApp();
+  await startFlight(p);
+  const atGate = await minutesLeft(p);
+  await ctx.setGeolocation({ latitude: 36.07, longitude: -75.70, accuracy: 20 });
+  await p.waitForTimeout(1000);
+  await ctx.setGeolocation({ latitude: 36.0678, longitude: -75.6995, accuracy: 20 });
+  await p.waitForTimeout(3000);
+  const overKittyHawk = await minutesLeft(p);
+  check('F2: a believable fix moves the flight to where the phone is', overKittyHawk < atGate - 30,
+    `${atGate} min left at the gate, ${overKittyHawk} after the fix`);
   await ctx.close();
 }
 

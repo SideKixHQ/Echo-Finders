@@ -16,6 +16,13 @@
  * button is the backup in that decision; it is new UI and waits for its mockup, so it is
  * not here. Until one of the two happens, the flight waits at the gate.
  *
+ * THE PHONE'S GPS CORRECTS IT when it has a plausible fix (ADR-0002, F2): within the
+ * flight's corridor, and at a speed an aircraft could have flown from the last fix. In a
+ * window seat the fix comes and goes; each one that passes moves the flight to where the
+ * phone says it is, and the clock carries on from there. Aircraft Wi-Fi often places a
+ * phone at the ground station, hundreds of kilometres away, which is what the two checks
+ * are for.
+ *
  * Kept free of React and of the browser, with the time passed in, so it can be tested.
  */
 
@@ -26,6 +33,7 @@ import {
   distanceKm,
   pointAtDistance,
   presetFor,
+  projectOntoRoute,
   type LocationSource,
   type Position,
   type Route,
@@ -39,6 +47,13 @@ import {
  * taxi or road speed, and below an airliner's at rotation.
  */
 export const TAKEOFF_KPH = 250;
+
+/**
+ * How many times the mode's own speed a fix may imply before it is not believed: the
+ * engine's rule for "this is teleportation, not travel" (`CaptureTracker`'s
+ * `maxSpeedFactor`), here against an airliner's 850 km/h.
+ */
+const MAX_SPEED_FACTOR = 4;
 
 /** How often the flight reports where it is, ms. */
 const TICK_MS = 1000;
@@ -62,6 +77,8 @@ export class FlightClock implements LocationSource {
   /** The phone's last fix, for measuring its speed. */
   private lastGps: Position | null = null;
   private paused = false;
+  /** A believed GPS fix arrived since the last tick, so the tick has nothing to add. */
+  private gpsSinceTick = false;
   private readonly listeners = new Set<(p: Position) => void>();
   private timer: ReturnType<typeof setInterval> | null = null;
   private unwatchGps: (() => void) | null = null;
@@ -116,6 +133,24 @@ export class FlightClock implements LocationSource {
     const kph = this.speedOf(fix);
     this.lastGps = fix;
     if (!this.anchor && kph !== null && kph > TAKEOFF_KPH) this.tookOff(fix.timestamp);
+    if (!this.anchor || !this.believable(fix, kph)) return;
+    // Where the phone says, and the clock carries on from there. Never back onto the
+    // runway: once airborne the route's clock is past the taxi.
+    const km = projectOntoRoute(this.geometry, fix.at).alongTrackKm;
+    this.anchor = { km, routeS: Math.max(this.takeoffS, this.profile.timeAtDistance(km)), ms: fix.timestamp };
+    this.gpsSinceTick = true;
+    if (!this.paused) this.emit({ ...fix, source: "device-gnss" });
+  }
+
+  /**
+   * A fix ADR-0002 accepts: inside the flight's corridor, at a speed an aircraft could have
+   * flown since the phone's last fix. A first fix, with nothing to measure against, waits
+   * for the next.
+   */
+  private believable(fix: Position, kph: number | null): boolean {
+    const preset = presetFor(this.route.mode);
+    if (projectOntoRoute(this.geometry, fix.at).crossTrackKm > preset.corridorKm) return false;
+    return kph !== null && kph <= preset.speedKph * MAX_SPEED_FACTOR;
   }
 
   private speedOf(fix: Position): number | null {
@@ -167,7 +202,9 @@ export class FlightClock implements LocationSource {
   }
 
   private tick(): void {
-    if (this.paused) return;
+    const fresh = this.gpsSinceTick;
+    this.gpsSinceTick = false;
+    if (this.paused || fresh) return;
     this.emit(this.position());
   }
 

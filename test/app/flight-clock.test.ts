@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { distanceKm, type LatLng, type LocationSource, type Position, type Route } from "@echofinders/core";
+import { buildRouteGeometry, distanceKm, pointAtDistance, type LatLng, type LocationSource, type Position, type Route } from "@echofinders/core";
 import { FlightClock, TAKEOFF_KPH } from "../../apps/prototype/src/flight-clock";
 
 const JFK = { lat: 40.6413, lng: -73.7781 };
@@ -74,5 +74,61 @@ describe("a flight in real time (F1)", () => {
     clock.onGps(fix(JFK, NOW, { accuracyM: 100 }));
     clock.onGps(fix(south(JFK, 0.15), NOW + 1000, { accuracyM: 100 }));
     expect(clock.takeoffAtMs).toBeNull();
+  });
+});
+
+describe("the phone's GPS corrects the flight when it can be believed (F2, ADR-0002)", () => {
+  /** A clock that took off at NOW, ten minutes ago by the time the window seat gets a fix. */
+  function airborne() {
+    let now = NOW;
+    const clock = new FlightClock(JFK_MIA, NO_GPS, { now: () => now });
+    clock.tookOff(now);
+    now += 600_000;
+    return { clock, at: (ms: number) => (now = ms), get now() { return now; } };
+  }
+
+  it("moves the flight to where a plausible fix says, and carries on from there", () => {
+    const f = airborne();
+    const reckoned = f.clock.km();
+    // Further along than the clock thinks: a tailwind. Two fixes a minute apart at 900 km/h.
+    const line = buildRouteGeometry(JFK_MIA);
+    f.clock.onGps(fix(pointAtDistance(line, reckoned + 60), f.now));
+    const second = pointAtDistance(line, reckoned + 75);
+    f.clock.onGps(fix(second, f.now + 60_000));
+    f.at(f.now + 60_000);
+    expect(f.clock.km()).toBeGreaterThan(reckoned + 70);
+    expect(distanceKm(f.clock.position().at, second)).toBeLessThan(1);
+    // And the clock carries on from there: a minute later, about 14 km further.
+    f.at(f.now + 60_000);
+    expect(distanceKm(f.clock.position().at, second)).toBeGreaterThan(5);
+  });
+
+  it("ignores a fix outside the corridor: aircraft Wi-Fi placing the phone at a ground station", () => {
+    const f = airborne();
+    const reckoned = f.clock.km();
+    const station = { lat: 39.74, lng: -104.99 }; // Denver
+    f.clock.onGps(fix(station, f.now));
+    f.clock.onGps(fix(station, f.now + 60_000));
+    f.at(f.now + 60_000);
+    expect(Math.abs(f.clock.km() - reckoned - (60 * 850) / 3600)).toBeLessThan(5);
+  });
+
+  it("ignores a fix no aircraft could have flown to", () => {
+    const f = airborne();
+    const reckoned = f.clock.km();
+    f.clock.onGps(fix(south(JFK, reckoned), f.now));
+    // 1,000 km in a minute.
+    f.clock.onGps(fix(south(JFK, reckoned + 1000), f.now + 60_000));
+    f.at(f.now + 60_000);
+    expect(f.clock.km()).toBeLessThan(reckoned + 100);
+  });
+
+  it("does not let GPS move the plane before takeoff", () => {
+    let now = NOW;
+    const clock = new FlightClock(JFK_MIA, NO_GPS, { now: () => now });
+    clock.onGps(fix(JFK, now));
+    clock.onGps(fix(south(JFK, 0.01), now + 1000));
+    now += 1000;
+    expect(clock.km()).toBe(0);
   });
 });
