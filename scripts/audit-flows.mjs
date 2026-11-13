@@ -1019,6 +1019,16 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await p.waitForTimeout(400);
   check('Trip sheet: Escape closes it', !(await visible(p.locator('.jmenu'))));
   check('Trip sheet: Escape hands focus back to the chip', await chip.evaluate((e) => e === document.activeElement));
+  // Drive, from the Battery: no road trip is near, so they are all listed. The walks' list
+  // (closed, walks being near) was kept for the drive tab, which then listed nothing at all.
+  await chip.click();
+  await p.waitForTimeout(400);
+  await p.locator('.jmenu-mode', { hasText: 'Drive' }).click();
+  await p.waitForTimeout(300);
+  check('Trip sheet: Drive lists the road trips when none is near', (await p.locator('.jmenu .jmenu-item').count()) > 0,
+    (await p.locator('.jmenu').innerText()).replace(/\n+/g, ' | '));
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(400);
   await chip.click();
   await p.waitForTimeout(400);
   const nav = await p.locator('.nav').boundingBox();
@@ -1088,6 +1098,18 @@ async function arrive() {
     await p.locator('.pop-go').click().catch(() => {});
     await p.waitForTimeout(1200);
     check('Player: Play opens it', await visible(p.locator('.hear')));
+    // Read along: a word under the search searches for what it says. The chips searched for
+    // the tag's slug ("new-york"), which is in no script, so two words found nothing.
+    await p.getByRole('button', { name: 'Read', exact: true }).click().catch(() => {});
+    await p.waitForTimeout(400);
+    await p.locator('.tkey', { hasText: 'new york' }).click().catch(() => {});
+    await p.waitForTimeout(300);
+    check('Read along: a two word chip finds its line',
+      (await p.getByLabel('Search this transcript').inputValue().catch(() => '')) === 'new york'
+      && (await p.locator('.tline', { hasText: /New York/ }).count()) > 0 && !(await p.locator('.transcript .empty').count()));
+    await p.locator('.tkey', { hasText: 'new york' }).click().catch(() => {});
+    await p.getByRole('button', { name: 'Hide', exact: true }).click().catch(() => {});
+    await p.waitForTimeout(300);
     // The lock screen: the story's name, and Pause, Play and Stop that work.
     const lock = () => p.evaluate(() => ({
       title: navigator.mediaSession?.metadata?.title ?? null,
@@ -1326,6 +1348,27 @@ async function nearby() {
     check('Nearby toast: and goes', !(await p.locator('.toast-near').count()));
     await ctx.close();
   } else check('Nearby toast: appears again on a fresh start', false);
+  // On foot only: picking a road trip while it is up takes "walk over" away with it. It
+  // stayed, and came back each time another toast went, all the way down the drive.
+  const third = await nearby();
+  if (third) {
+    const { ctx, p } = third;
+    await p.getByLabel(/Change your journey/).click();
+    await p.waitForTimeout(300);
+    await p.locator('.jmenu-mode', { hasText: 'Drive' }).click();
+    await p.waitForTimeout(300);
+    const far = p.locator('.jmenu-far');
+    if (await far.count()) await far.click();
+    await p.locator('.jmenu-item').first().click().catch(() => {});
+    let walked = 0;
+    for (let i = 0; i < 6; i++) {
+      walked += await p.locator('.toast-near').count();
+      await p.locator('.toast-synced .toast-close').click({ timeout: 500 }).catch(() => {});
+      await p.waitForTimeout(500);
+    }
+    check('Nearby toast: goes when the journey is a drive', walked === 0, `${walked} times`);
+    await ctx.close();
+  } else check('Nearby toast: appears for the drive check', false);
 }
 
 // ── A guided walk follows you ───────────────────────────────────────────────────
