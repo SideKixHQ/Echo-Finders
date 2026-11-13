@@ -321,6 +321,35 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── You, under the numbered dots in the topic view ──────────────────────────────
+// James, 2026-11-13: in the topic view your dot sat on the number of the town you were in.
+// Every numbered dot that overlaps you is drawn after you, so its number is on top.
+{
+  const { ctx, p } = await freshApp();
+  await p.locator('.kind-tap').click();
+  await p.waitForTimeout(300);
+  await p.locator('#kind-box .chip', { hasText: 'Ghosts & legends' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(2500);
+  const r = await p.evaluate(() => {
+    const here = document.querySelector('.here');
+    if (!here) return { here: false };
+    const h = here.getBoundingClientRect();
+    const over = [...document.querySelectorAll('.clus')].filter((c) => {
+      const b = c.getBoundingClientRect();
+      return b.left < h.right && b.right > h.left && b.top < h.bottom && b.bottom > h.top;
+    });
+    return {
+      here: true,
+      over: over.length,
+      under: over.filter((c) => !(here.compareDocumentPosition(c) & Node.DOCUMENT_POSITION_FOLLOWING)).length,
+    };
+  });
+  check('Topic view: your dot overlaps a numbered dot here (the check has something to check)', r.here && r.over > 0, JSON.stringify(r));
+  check('Topic view: every numbered dot it overlaps is drawn over your dot', r.here && r.under === 0, JSON.stringify(r));
+  await ctx.close();
+}
+
 // ── A search while a topic is picked ───────────────────────────────────────────
 // 2026-11-13, James: "go with the better user experience". A search, or the locate arrow,
 // while a topic is picked replaces the view All goes back to: All returns to the place

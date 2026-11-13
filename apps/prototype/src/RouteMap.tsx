@@ -2288,6 +2288,13 @@ export function RouteMap({
       )}
 
       {/*
+        You, under the numbered dots while the topic view is up (James, 2026-11-13): it is a
+        map of where the echoes are, and drawn on top the dot hid the number of the town you
+        are in (Philadelphia's, picking Ghosts & legends from there). Everywhere else you
+        are drawn over the pins, below.
+      */}
+      {topicKey && here && <Here x={here.x} y={here.y} mode={mode} headingDeg={position?.headingDeg ?? null} />}
+      {/*
         PINS, GROUPED BY WHAT LANDED ON TOP OF WHAT.
 
         Measured on the Manhattan map: twenty six pins drawn, and fifteen of them within
@@ -2431,7 +2438,7 @@ export function RouteMap({
           </g>
         );
       })}
-      {here && <Here x={here.x} y={here.y} mode={mode} headingDeg={position?.headingDeg ?? null} />}
+      {!topicKey && here && <Here x={here.x} y={here.y} mode={mode} headingDeg={position?.headingDeg ?? null} />}
 
       {/*
         THE VIGNETTE, and it is most of why the board looks like night and the app looked

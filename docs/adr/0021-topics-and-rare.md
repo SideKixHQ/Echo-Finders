@@ -84,6 +84,8 @@ Asked of James, not yet decided, built as below until he answers:
   topic switched it off, which rebuilt the session: on the Central Park West walk, with
   Ghosts & legends picked, the Dakota never synced. On a planned route, drive or flight
   true crime now stays on whatever is picked; exploring is unchanged until James decides.
+- **In the topic view you are drawn under the numbered dots** (James, 2026-11-13), so your
+  dot never hides the number of the town you are in. Everywhere else you stay on top.
 - **A trip's topic view has the area card** ("N places · M echoes") when zoomed out, as
   exploring does (James, 2026-11-13).
 
