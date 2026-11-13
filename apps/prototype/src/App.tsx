@@ -2006,11 +2006,18 @@ export function App() {
     : !state.position
       ? "Start needs your location."
       : null;
+  /** A saved route's stop that kids mode would not play: skipped, and greyed in the list. */
+  const kidsSkip = (id: string) => {
+    if (!kids) return false;
+    const echo = LIBRARY_BY_ID.get(id);
+    return !!echo && !kidsMayHear(echo);
+  };
   /** Start a saved route: the planned-walk machinery, already under way, from here. */
   const startRoute = (r: SavedRoute) => {
     const start = state.position?.at;
     if (!start) return;
-    const ids = reorder(start, r.stops.filter((id) => stateOf(id) === "sealed"), false);
+    // Kids mode skips a stop it would not play (James, 2026-11-13); the list shows it greyed.
+    const ids = reorder(start, r.stops.filter((id) => stateOf(id) === "sealed" && !kidsSkip(id)), false);
     if (ids.length === 0) return;
     setSelectedId(null);
     setLookAt(null);
@@ -2845,6 +2852,7 @@ export function App() {
                   routes={routes}
                   echoOf={(id) => LIBRARY_BY_ID.get(id)}
                   isDone={(id) => stateOf(id) !== "sealed"}
+                  {...(kids ? { isSkipped: kidsSkip } : {})}
                   saved={kidsSaved}
                   startBlock={routeStartBlock}
                   onStart={startRoute}

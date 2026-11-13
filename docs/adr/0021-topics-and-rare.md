@@ -123,6 +123,9 @@ chose, for kids mode as a whole, "A now, B over time":
   search offers Kids echoes only (cities are still found), My echoes lists only Kids echoes
   and its topic filter offers All and Kids, and a play from a card is refused for anything
   else. One rule for all of them and the engine: `kidsMayHear`, the topic and the age.
+- **A saved route in kids mode** (James, 2026-11-13): a stop kids mode would not play is
+  skipped when the route starts and greyed in the route's list, in the style a stop already
+  heard has. No new words.
 - **Turning kids mode on** drops every picked topic it does not offer, True crime first among
   them; with nothing left the map is on All, as if All had been tapped.
 - **B, over time:** a per echo all-ages mark, so an echo from another topic written for every

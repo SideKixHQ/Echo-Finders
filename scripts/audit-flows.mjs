@@ -310,6 +310,54 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   }
 }
 
+// ── Kids mode and a saved route ─────────────────────────────────────────────────
+// James, 2026-11-13: a stop on a saved route that kids mode would not play is skipped,
+// and greyed in the route's list as a stop already heard is. A route of a ghost story and
+// a Kids echo, made before kids mode: the ghost story greys, Start goes to the Kids echo.
+{
+  const { ctx, p } = await freshApp();
+  const search = p.getByLabel('Search a city, place or ZIP code');
+  for (const title of ['The Lady in Black', 'Turn the Cable Car Around']) {
+    await search.click();
+    await search.fill(title);
+    await p.waitForTimeout(600);
+    await p.locator('#msearch-results .msearch-save').first().click();
+    await p.waitForTimeout(300);
+  }
+  await p.keyboard.press('Escape');
+  const nav = p.locator('.nav');
+  await nav.getByRole('button', { name: /My echoes/i }).click();
+  await p.waitForTimeout(500);
+  await p.getByRole('tab', { name: 'Routes' }).click();
+  await p.waitForTimeout(300);
+  await p.locator('.rt-new').click();
+  await p.waitForTimeout(300);
+  for (const title of ['The Lady in Black', 'Turn the Cable Car Around']) {
+    await p.getByRole('button', { name: `Add: ${title}` }).click();
+    await p.waitForTimeout(200);
+  }
+  await p.locator('.rt-acts').getByRole('button', { name: 'Done' }).click();
+  await p.waitForTimeout(300);
+  const greyed = async () => p.locator('.rt-stop').evaluateAll((es) => es.map((e) => `${e.classList.contains('done') ? 'grey' : 'on'}:${e.querySelector('.pw-title').textContent}`));
+  check('Kids route: out of kids mode both stops are on', (await greyed()).every((t) => t.startsWith('on:')), (await greyed()).join(', '));
+  await nav.getByRole('button', { name: /Settings/ }).click();
+  await p.waitForTimeout(400);
+  await p.getByRole('switch', { name: /Kids mode/ }).click();
+  await nav.getByRole('button', { name: /My echoes/i }).click();
+  await p.waitForTimeout(500);
+  await p.getByRole('tab', { name: 'Routes' }).click();
+  await p.waitForTimeout(300);
+  const stops = await greyed();
+  check('Kids route: in kids mode the ghost story is greyed and the Kids echo is not',
+    stops.join(', ') === 'grey:The Lady in Black, on:Turn the Cable Car Around', stops.join(', '));
+  await p.locator('.rt-acts').getByRole('button', { name: 'Start' }).click();
+  await p.waitForTimeout(2000);
+  const card = await p.locator('.pop').innerText().catch(() => '');
+  check('Kids route: Start skips the ghost story and goes to the Kids echo',
+    /Turn the Cable Car Around/.test(card) && !/Lady in Black/.test(card), card.replace(/\s+/g, ' ').slice(0, 120));
+  await ctx.close();
+}
+
 // ── A topic on a planned drive ─────────────────────────────────────────────────
 // James, 2026-11-13: "Planned walks, drives and flights: picking a topic only filters that
 // trip's echoes, so the map can show nothing. Should it zoom out there too? - yes." Picking
