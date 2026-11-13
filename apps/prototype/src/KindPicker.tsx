@@ -80,8 +80,9 @@ export function KindGrid({ on, onToggle, onAll, rare, kids = false }: KindProps)
     );
   };
   // Rare after the first four of the panel's order, wherever those four are in what shows.
-  const before = shown.filter((g) => CHIP_GROUPS.indexOf(g) < RARE_AFTER);
-  const after = shown.filter((g) => CHIP_GROUPS.indexOf(g) >= RARE_AFTER);
+  // In kids mode, after Kids: All, Kids, Rare (James, 2026-11-13).
+  const before = kids ? shown : shown.filter((g) => CHIP_GROUPS.indexOf(g) < RARE_AFTER);
+  const after = kids ? [] : shown.filter((g) => CHIP_GROUPS.indexOf(g) >= RARE_AFTER);
   return (
     <div className="kind-panel">
       <div className="kind-chips" role="group" aria-label="Which echoes to show">

@@ -96,7 +96,8 @@ chose, for kids mode as a whole, "A now, B over time":
   view included. The age is still checked as well. The Settings line is unchanged: "Only
   echoes written for children, and nothing with an age on it."
 - **The panel in kids mode** offers All and Kids, and Rare because the Kids topic has rare
-  echoes (10 today); with none it would not. True crime is never offered there and no true
+  echoes (10 today); with none it would not. In that order, All, Kids, Rare (James,
+  2026-11-13). True crime is never offered there and no true
   crime pin or dot is drawn, which is the first answer, kept.
 - **Turning kids mode on** drops every picked topic it does not offer, True crime first among
   them; with nothing left the map is on All, as if All had been tapped.

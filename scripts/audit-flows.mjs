@@ -153,7 +153,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
 // ── Kids mode: the Kids topic only ─────────────────────────────────────────────
 // James, 2026-11-13 (docs/adr/0021-topics-and-rare.md): kids mode never offers True crime
 // and shows no true crime pin anywhere; then, superseding that and keeping it, kids mode
-// is the Kids topic only. The panel is All, Rare (there are rare Kids echoes) and Kids. A
+// is the Kids topic only. The panel is All, Kids and Rare (there are rare Kids echoes). A
 // True crime picked before kids mode goes, and with nothing left the map is on All.
 {
   const { ctx, p } = await freshApp();
@@ -174,7 +174,8 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await kinds.click();
   await p.waitForTimeout(300);
   const chips = (await sheet.locator('.chip').allInnerTexts()).map((t) => t.trim());
-  check('Kids mode: the panel offers All, Rare and Kids, and no True crime', chips.join('|') === 'All|Rare|Kids', chips.join('|'));
+  // All, Kids, Rare, in that order (James, 2026-11-13).
+  check('Kids mode: the panel offers All, Kids and Rare, and no True crime', chips.join('|') === 'All|Kids|Rare', chips.join('|'));
   // Picking Kids is the topic view: every Kids echo, from the whole library.
   await sheet.locator('.chip', { hasText: 'Kids' }).click();
   await p.keyboard.press('Escape');
