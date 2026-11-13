@@ -91,6 +91,42 @@ const MVP_DRIVE = 'Wilmington to Southport';
   await ctx.close();
 }
 
+/** Pick the MVP drive from the trip sheet. */
+async function startDrive(p) {
+  await tripSheet(p, 'Drive');
+  await p.locator('.jmenu-item', { hasText: MVP_DRIVE }).click();
+  await p.waitForTimeout(800);
+}
+
+/** "Choose what plays", from the journey screen; returns the switch. */
+async function choosePlays(p) {
+  await tripSheet(p, 'Drive');
+  await p.locator('.jmenu-link', { hasText: 'Journey details' }).click();
+  await p.waitForTimeout(600);
+  await p.getByRole('button', { name: /Choose what plays/ }).click();
+  await p.waitForTimeout(600);
+  return p.locator('.plan-auto-hit');
+}
+
+// ── D2: a drive plays its echoes by itself ───────────────────────────────────────────
+// Decision 1: "Play these as I reach them" is on when a drive starts, with no ask. A
+// listener who turns it off keeps it off for the rest of that drive.
+{
+  const { ctx, p } = await freshApp(WILMINGTON);
+  await startDrive(p);
+  let sw = await choosePlays(p);
+  check('D2: on a drive, "Play these as I reach them" is on from the start',
+    (await sw.getAttribute('aria-pressed')) === 'true', `aria-pressed=${await sw.getAttribute('aria-pressed')}`);
+  if ((await sw.getAttribute('aria-pressed')) === 'true') await sw.click();
+  await p.waitForTimeout(300);
+  await p.locator('.plan-close').click();
+  await p.waitForTimeout(600);
+  sw = await choosePlays(p);
+  check('D2: turned off on the drive, it stays off', (await sw.getAttribute('aria-pressed')) === 'false',
+    `aria-pressed=${await sw.getAttribute('aria-pressed')}`);
+  await ctx.close();
+}
+
 await browser.close();
 console.log(`\nPAGE ERRORS: ${errors.length ? errors.join(' | ') : 'none'}`);
 if (failures.length || errors.length) {

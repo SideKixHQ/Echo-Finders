@@ -321,6 +321,28 @@ export function App() {
   // a phone collecting in a pocket while still choosing what they hear.
   const [autoPlay, setAutoPlay] = useState(false);
   /**
+   * A drive plays its echoes by itself (James, 2026-11-13: "Play these as I reach them is on
+   * when a drive starts; no ask"). A driver cannot tap Play, and with the switch off a drive
+   * synced eleven echoes in ninety seconds and said none of them.
+   *
+   * Set as each drive starts, not held: switched off on the way, it stays off for the rest
+   * of that drive. Leaving the drive puts back what the listener had before it, so a walk
+   * still starts the way walks do.
+   */
+  const onDrive = travel === "driving" && !roaming;
+  const beforeDrive = useRef<boolean | null>(null);
+  useEffect(() => {
+    if (onDrive) {
+      setAutoPlay((had) => {
+        if (beforeDrive.current === null) beforeDrive.current = had;
+        return true;
+      });
+    } else if (beforeDrive.current !== null) {
+      setAutoPlay(beforeDrive.current);
+      beforeDrive.current = null;
+    }
+  }, [onDrive, route.id]);
+  /**
    * The plan's picks: what autoplay may play on this journey (`Plan.tsx`). Not Save, which
    * shared this set until saving a far echo limited autoplay to it, and switching journeys
    * cleared everything saved. Saved is `saved`, kept on the device (`saved-store.ts`).
