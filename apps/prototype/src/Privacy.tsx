@@ -19,6 +19,7 @@ import { Suggest } from "./Suggest";
 import { feedbackAvailable } from "./feedback";
 import { forgetOnServer, type AccessRole } from "./owner";
 import { SkeletonKey } from "./SkeletonKey";
+import type { LocationAccess } from "./native-bridge-protocol";
 
 interface Props {
   readonly settings: PrivacySettings;
@@ -54,6 +55,11 @@ interface Props {
   readonly membership?: ReactNode;
   /** Inside the iPhone app only: open its Offline echoes screen (D9). Absent in a browser. */
   readonly onOfflineEchoes?: (() => void) | undefined;
+  /**
+   * Inside the iPhone app only: location for Echo Finders as the phone reports it, and the
+   * way to its page in iPhone Settings (Hands free lines, mock 7). Absent in a browser.
+   */
+  readonly phoneLocation?: { readonly access: LocationAccess | null; readonly onOpenSettings: () => void } | undefined;
 }
 
 export function Privacy({
@@ -74,6 +80,7 @@ export function Privacy({
   onUnlocked,
   membership,
   onOfflineEchoes,
+  phoneLocation,
 }: Props) {
   // Kept by error-report.ts itself, not in PrivacySettings: it has to be readable before
   // the app renders, which is when reporting starts.
@@ -163,7 +170,26 @@ export function Privacy({
         cost="Turn off and echoes still open. You just keep the app on screen while you travel."
         on={settings.handsFree}
         onToggle={() => onChange({ ...settings, handsFree: !settings.handsFree })}
-      />
+      >
+        {/* Inside the iPhone app, each only when it applies (mock 7, approved 2026-11-13). */}
+        {(() => {
+          const line =
+            phoneLocation?.access === "off"
+              ? "Turn on location for Echo Finders in iPhone Settings to hear echoes as you go."
+              : phoneLocation?.access === "while-using" && settings.handsFree
+                ? "Hands free works while Echo Finders is open or the screen is on. For echoes with the screen off, allow location Always in iPhone Settings."
+                : null;
+          if (!line || !phoneLocation) return null;
+          return (
+            <div className="setting-phone" data-app-only>
+              <p className="pf-note">{line}</p>
+              <button className="toast-act toast-act-go setting-open" onClick={phoneLocation.onOpenSettings}>
+                Open iPhone Settings
+              </button>
+            </div>
+          );
+        })()}
+      </Toggle>
 
       <Toggle
         label="Remember where I stood"
@@ -324,12 +350,14 @@ function Toggle({
   cost,
   on,
   onToggle,
+  children,
 }: {
   label: string;
   detail: string;
   cost: string;
   on: boolean;
   onToggle: () => void;
+  children?: ReactNode;
 }) {
   return (
     <div className="setting">
@@ -348,6 +376,7 @@ function Toggle({
         </span>
       </button>
       <p className="setting-cost">{cost}</p>
+      {children}
     </div>
   );
 }

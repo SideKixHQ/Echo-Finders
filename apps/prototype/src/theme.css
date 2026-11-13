@@ -2656,6 +2656,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 
 .pf-flight { margin-bottom: 10px; }
+/* Settings › Hands-free, in the iPhone app: "Open iPhone Settings" under its line (mock 7). */
+.setting-open { margin-top: 10px; }
 .pf-note { margin: 6px 2px 0; font-size: var(--fs-secondary); line-height: 1.5; color: var(--muted); }
 /* Its own line: it is an alternative to every route rather than one more of them. */
 .pf-roam { width: 100%; margin-bottom: 8px; }

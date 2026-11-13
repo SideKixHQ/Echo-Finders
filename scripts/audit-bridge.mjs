@@ -365,6 +365,36 @@ async function pickRoute(p, mode, name) {
   await ctx.close();
 }
 
+// ── Settings › Hands-free's lines, in the app only (mock 7, approved 2026-11-13) ─────
+{
+  const { ctx, p } = await open({ bridge: {} });
+  await firstRun(p);
+  await p.locator('.nav').getByRole('button', { name: /Settings/ }).click();
+  await p.waitForTimeout(600);
+  const hands = p.locator('.setting', { has: p.getByRole('switch', { name: /Hands-free/ }) });
+  const lines = async () => (await hands.locator('.setting-phone').innerText().catch(() => '')).replace(/\s+/g, ' ').trim();
+  check('Hands free: nothing until the phone says', (await lines()) === '');
+  await p.evaluate(() => window.__send({ type: 'location:access', access: 'off' }));
+  await p.waitForTimeout(300);
+  check('Hands free: location off, the line and Open iPhone Settings',
+    (await lines()) === 'Turn on location for Echo Finders in iPhone Settings to hear echoes as you go. Open iPhone Settings', await lines());
+  await hands.getByRole('button', { name: 'Open iPhone Settings' }).click();
+  await p.waitForTimeout(300);
+  check('Hands free: the button asks the phone to open iPhone Settings', (await sent(p, 'settings:open')).length === 1);
+  await p.evaluate(() => window.__send({ type: 'location:access', access: 'while-using' }));
+  await p.waitForTimeout(300);
+  check('Hands free: only while using, with Hands-free off, says nothing', (await lines()) === '', await lines());
+  await p.getByRole('switch', { name: /Hands-free/ }).click();
+  await p.waitForTimeout(300);
+  check('Hands free: Always refused, the line and Open iPhone Settings',
+    (await lines()) === 'Hands free works while Echo Finders is open or the screen is on. For echoes with the screen off, allow location Always in iPhone Settings. Open iPhone Settings', await lines());
+  if (SHOTS) await p.screenshot({ path: `${SHOTS}/bridge-settings-always.png` });
+  await p.evaluate(() => window.__send({ type: 'location:access', access: 'always' }));
+  await p.waitForTimeout(300);
+  check('Hands free: with Always, nothing', (await lines()) === '');
+  await ctx.close();
+}
+
 // ── In the app: a launch with no signal opens the kept copy ──────────────────────
 {
   const { ctx, p } = await open({ bridge: { sw: true }, offlineReady: true });

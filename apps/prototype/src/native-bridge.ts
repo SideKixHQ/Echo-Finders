@@ -32,6 +32,7 @@ import { mergePasses } from "./native-passes";
 import {
   BRIDGE_VERSION,
   type BridgeFix,
+  type LocationAccess,
   type LocationPermission,
   type LocationStartResult,
   type NativeToWeb,
@@ -110,6 +111,10 @@ function receive(message: NativeToWeb): void {
       return;
     case "trip:saved":
       setTripSave(message.routeId, { state: "saved" });
+      return;
+    case "location:access":
+      locationAccess = message.access;
+      for (const listener of accessListeners) listener();
       return;
   }
 }
@@ -478,6 +483,25 @@ function checkHandsFree(): void {
   const first = handsFree === null;
   handsFree = on;
   post({ type: "handsfree", on, changed: !first });
+}
+
+/** Location for Echo Finders in iPhone Settings, once the phone has said. Null in a browser. */
+let locationAccess: LocationAccess | null = null;
+const accessListeners = new Set<() => void>();
+
+function subscribeAccess(listener: () => void): () => void {
+  accessListeners.add(listener);
+  return () => void accessListeners.delete(listener);
+}
+
+/** What the phone says about location for Echo Finders, for Settings' Hands free lines. */
+export function useLocationAccess(): LocationAccess | null {
+  return useSyncExternalStore(subscribeAccess, () => locationAccess, () => locationAccess);
+}
+
+/** Echo Finders' page in iPhone Settings. */
+export function openPhoneSettings(): void {
+  post({ type: "settings:open" });
 }
 
 // --- Passes ---------------------------------------------------------------------------------

@@ -63,7 +63,7 @@ import { EchoBar, ECHOBAR_FLOAT, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, buyWeekPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
-import { buyInApp, inApp, openOfflineEchoes, restoreInApp, saveTrip, useInAppEntitlement, useTripSaves, withInApp } from "./native-bridge";
+import { buyInApp, inApp, openOfflineEchoes, openPhoneSettings, restoreInApp, saveTrip, useInAppEntitlement, useLocationAccess, useTripSaves, withInApp } from "./native-bridge";
 import { MembershipPanel } from "./Membership";
 import { ReactionCard, faceOf } from "./ReactionCard";
 import { react, readReactions, type Reactions } from "./reaction-store";
@@ -1282,6 +1282,8 @@ export function App() {
    * trip sheet's card asks for it. A browser cannot save, so it has no card.
    */
   const tripSaves = useTripSaves();
+  /** Location for Echo Finders, as the phone says, for Settings' Hands free lines. */
+  const locationAccess = useLocationAccess();
   const savedIds = useMemo(
     () => new Set([...tripSaves].filter(([, s]) => s.state === "saved").map(([id]) => id)),
     [tripSaves],
@@ -2826,6 +2828,7 @@ export function App() {
           {tab === "settings" && (
             <Privacy
               onOfflineEchoes={inApp() ? openOfflineEchoes : undefined}
+              phoneLocation={inApp() ? { access: locationAccess, onOpenSettings: openPhoneSettings } : undefined}
               onJourney={() => {
                 setTab("echoes");
                 openPackage();

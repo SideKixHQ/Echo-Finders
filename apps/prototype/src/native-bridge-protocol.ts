@@ -116,7 +116,15 @@ export type WebToNative =
    */
   | { readonly type: "trip:save"; readonly routeId: string; readonly kind: TripKind }
   /** Settings › Offline echoes (D9, mock 3, approved 2026-11-13): open the phone's own screen. */
-  | { readonly type: "offline:open" };
+  | { readonly type: "offline:open" }
+  /** Settings › Hands-free's "Open iPhone Settings": Echo Finders' page in iPhone Settings. */
+  | { readonly type: "settings:open" };
+
+/**
+ * Location for Echo Finders, as iPhone Settings has it: off, only while the app is in use,
+ * or Always. With Hands-free on, "while-using" means Always was not given.
+ */
+export type LocationAccess = "off" | "while-using" | "always";
 
 /** What a saved route is, in the native sheet's words: its noun ("Save this drive"). */
 export type TripKind = "drive" | "walk" | "flight";
@@ -136,7 +144,9 @@ export type NativeToWeb =
   /** A route saving for no signal: so many bytes of so many on the phone. */
   | { readonly type: "trip:saving"; readonly routeId: string; readonly savedBytes: number; readonly totalBytes: number }
   /** A route saved on the phone, plays with no signal. Sent for each saved route as the page loads, too. */
-  | { readonly type: "trip:saved"; readonly routeId: string };
+  | { readonly type: "trip:saved"; readonly routeId: string }
+  /** Location for Echo Finders, sent as the page loads and whenever it changes (Hands free lines, mock 7). */
+  | { readonly type: "location:access"; readonly access: LocationAccess };
 
 export interface LocationStartResult {
   readonly status: "granted" | "denied" | "unavailable";
