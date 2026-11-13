@@ -25,6 +25,7 @@ import { buildEchoJourney, distanceKm, type Echo, type LatLng, type Route } from
 import { MODE_ICON } from "./travel";
 import { AIRPORTS, searchAirports, type Airport } from "./airports";
 import { buildFlight } from "./build-flight";
+import { inApp, useTripSaves } from "./native-bridge";
 
 export interface PreflightProps {
   readonly routes: readonly Route[];
@@ -165,6 +166,14 @@ export function Preflight({
    */
   const total = counts[picked.id] ?? journeyCount;
 
+  /*
+   * Works without signal only when it does (F7, mock 5, approved 2026-11-13). The audio and
+   * the map come from the internet until the iPhone app has saved the journey, which only
+   * the phone knows (`trip:saved`), and a phone's browser cannot save at all.
+   */
+  const savedHere = useTripSaves().get(picked.id)?.state === "saved";
+  const offline: "saved" | "app" | "browser" = !inApp() ? "browser" : savedHere ? "saved" : "app";
+
 
   // `current` seeds the choice, and then keeps seeding it. The mode picker sits beside the
   // phone and is live while this is showing, so switching to Car there used to leave this
@@ -212,9 +221,13 @@ export function Preflight({
             */}
             <h2>Hear what happened right where you are</h2>
             <p>
-              {travel === "flight"
-                ? "Pick your airports before you board. The journey downloads, and Echo Finders runs in airplane mode the whole way."
-                : "Choose how you are getting around and press start. Echoes play as you reach the places they happened."}
+              {travel !== "flight"
+                ? "Choose how you are getting around and press start. Echoes play as you reach the places they happened."
+                : offline === "saved"
+                  ? "Pick your airports before you board. The journey downloads, and Echo Finders runs in airplane mode the whole way."
+                  : offline === "app"
+                    ? "Pick your airports before you board, and save the flight while you have signal so its echoes play in airplane mode."
+                    : "Pick your airports before you board. Echoes play while you have signal; to hear them in airplane mode, use the Echo Finders app for iPhone."}
             </p>
           </>
         )}
@@ -374,7 +387,8 @@ export function Preflight({
           */}
           <span className="pf-pkg-text">
             {journey.echoes.length} {journey.echoes.length === 1 ? "echo" : "echoes"} ·{" "}
-            {megabytes(journey.totalBytes)} · works without signal
+            {megabytes(journey.totalBytes)} ·{" "}
+            {offline === "saved" ? "works without signal" : offline === "app" ? "needs signal until saved" : "plays with signal"}
           </span>
           {journey.droppedCount > 0 && (
             <span className="pf-pkg-drop">

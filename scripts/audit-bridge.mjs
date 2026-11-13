@@ -310,6 +310,31 @@ async function pickRoute(p, mode, name) {
   await ctx.close();
 }
 
+// ── Works without signal, only once saved (F7, mock 5, approved 2026-11-13) ────────
+{
+  const { ctx, p } = await open({ bridge: {} });
+  await firstRun(p);
+  await tripSheet(p, 'Fly');
+  await p.locator('.jmenu-link', { hasText: 'Find a flight by airport' }).click();
+  await p.waitForTimeout(600);
+  for (const [label, code] of [['From', 'JFK'], ['To', 'MIA']]) {
+    await p.getByLabel(`${label} airport`).fill(code);
+    await p.locator('.pf-air-list button', { hasText: code }).first().click();
+    await p.waitForTimeout(300);
+  }
+  const words = async () => [(await p.locator('.preflight p').first().innerText()).trim(), (await p.locator('.pf-pkg-text').innerText()).trim()];
+  let [intro, pkg] = await words();
+  check('Signal: in the app, not saved, the flight says to save it while there is signal',
+    intro === 'Pick your airports before you board, and save the flight while you have signal so its echoes play in airplane mode.', intro);
+  check('Signal: in the app, not saved, "needs signal until saved"', /^\d+ echoes · [\d.]+ (MB|KB) · needs signal until saved$/.test(pkg), pkg);
+  await p.evaluate(() => window.__send({ type: 'trip:saved', routeId: 'jfk-mia' }));
+  await p.waitForTimeout(300);
+  [intro, pkg] = await words();
+  check('Signal: once the phone has saved it, the airplane mode words come back',
+    intro === 'Pick your airports before you board. The journey downloads, and Echo Finders runs in airplane mode the whole way.' && / · works without signal$/.test(pkg), `${intro} | ${pkg}`);
+  await ctx.close();
+}
+
 // ── In the app: a launch with no signal opens the kept copy ──────────────────────
 {
   const { ctx, p } = await open({ bridge: { sw: true }, offlineReady: true });

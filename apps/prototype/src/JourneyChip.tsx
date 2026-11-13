@@ -24,6 +24,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { distanceKm, type LatLng, type Route } from "@echofinders/core";
 import { MODE_ICON } from "./travel";
 import { stopWaypoints } from "./guided-walk";
+import { inApp } from "./native-bridge";
 
 export type Travel = "walking" | "driving" | "flight";
 
@@ -35,7 +36,7 @@ export interface JourneyChipProps {
   readonly routes: readonly Route[];
   /** Echoes along each route, by id. */
   readonly counts: Readonly<Record<string, number>>;
-  /** The journey is on this device, so it plays with no signal. */
+  /** A journey was taken from the journey screen (Choose what plays). */
   readonly kept: boolean;
   /** Short text on the chip: "Exploring", or the time left on a route. */
   readonly label: string;
@@ -327,7 +328,12 @@ export function JourneyChip(props: JourneyChipProps) {
             ) : (
               <span>
                 Journey details
-                {props.kept && <small>On this device, plays with no signal</small>}
+                {/* True only once the iPhone app has saved it (F7, mock 5); a browser cannot. */}
+                {inApp() && !roaming && props.savedIds?.has(route.id) ? (
+                  <small>On this device, plays with no signal</small>
+                ) : (
+                  inApp() && props.kept && <small>Needs signal until it is saved</small>
+                )}
               </span>
             )}
           </button>

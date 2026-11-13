@@ -318,6 +318,43 @@ if (want('F5')) {
   await ctx.close();
 }
 
+// ── F7: "works without signal" only when it is true (mock 5, approved) ──────────────
+// In a phone's browser nothing can be saved: the flight screen says to use the iPhone app
+// for airplane mode, the package line says it plays with signal, and the trip sheet makes
+// no promise under Journey details. (In the app: audit:bridge.)
+async function airports(p) {
+  for (const [label, code] of [['From', 'JFK'], ['To', 'MIA']]) {
+    const i = p.getByLabel(`${label} airport`);
+    await i.fill(code);
+    await p.locator('.pf-air-list button', { hasText: code }).first().click();
+    await p.waitForTimeout(300);
+  }
+}
+if (want('F7')) {
+  const { ctx, p } = await freshApp();
+  await tripSheet(p, 'Fly');
+  await p.locator('.jmenu-link', { hasText: 'Find a flight by airport' }).click();
+  await p.waitForTimeout(600);
+  await airports(p);
+  const intro = (await p.locator('.preflight p').first().innerText()).trim();
+  const pkg = (await p.locator('.pf-pkg-text').innerText()).trim();
+  check('F7: in a browser the flight screen sends you to the app for airplane mode',
+    intro === 'Pick your airports before you board. Echoes play while you have signal; to hear them in airplane mode, use the Echo Finders app for iPhone.', intro);
+  check('F7: in a browser the package plays with signal', /^\d+ echoes · [\d.]+ (MB|KB) · plays with signal$/.test(pkg), pkg);
+  await ctx.close();
+}
+if (want('F7')) {
+  const { ctx, p } = await freshApp(WILMINGTON);
+  await startDrive(p);
+  await choosePlays(p);
+  await p.locator('.plan-close').click();
+  await p.waitForTimeout(400);
+  await tripSheet(p, 'Drive');
+  const details = (await p.locator('.jmenu-link', { hasText: 'Journey details' }).innerText()).replace(/\s+/g, ' ').trim();
+  check('F7: in a browser the trip sheet promises nothing under Journey details', details === 'Journey details', details);
+  await ctx.close();
+}
+
 await browser.close();
 console.log(`\nPAGE ERRORS: ${errors.length ? errors.join(' | ') : 'none'}`);
 if (failures.length || errors.length) {
