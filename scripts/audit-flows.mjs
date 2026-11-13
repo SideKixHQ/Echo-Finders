@@ -1477,6 +1477,42 @@ async function nearby() {
   await ctx.close();
 }
 
+// ── Settings: Delete everything asks first ──────────────────────────────────────
+// One tap cleared every synced echo (James, 2026-11-13). Now it asks, Keep leaves the
+// collection as it was, and only Delete deletes. One synced echo is put in storage first.
+{
+  const { ctx, p } = await freshApp();
+  await p.evaluate(async () => {
+    const db = await new Promise((res, rej) => { const o = indexedDB.open('echo-finders', 1); o.onsuccess = () => res(o.result); o.onerror = rej; });
+    await new Promise((res) => {
+      const t = db.transaction('collection', 'readwrite');
+      t.objectStore('collection').put({ key: 'roam', records: [{ echoId: 'african-burial-ground', capturedAt: new Date().toISOString() }] });
+      t.oncomplete = res;
+    });
+  });
+  await p.reload();
+  await p.waitForTimeout(2500);
+  await p.locator('.how-go').click({ timeout: 1500 }).catch(() => {});
+  await p.locator('.nav').getByRole('button', { name: /Settings/ }).click();
+  await p.waitForTimeout(500);
+  const row = p.locator('.danger-row', { hasText: 'Delete everything' });
+  const says = async () => (await row.innerText().catch(() => '')).replace(/\s+/g, ' ');
+  check('Delete everything: counts the synced echo', /Removes all 1 synced echo/.test(await says()), await says());
+  await row.click().catch(() => {});
+  await p.waitForTimeout(400);
+  const ask = p.getByRole('group', { name: 'Delete everything' });
+  check('Delete everything: one tap asks first', await visible(ask));
+  await ask.getByRole('button', { name: 'Keep', exact: true }).click().catch(() => {});
+  await p.waitForTimeout(400);
+  check('Delete everything: Keep deletes nothing', !(await visible(ask)) && /Removes all 1 synced echo/.test(await says()), await says());
+  await row.click().catch(() => {});
+  await p.waitForTimeout(300);
+  await ask.getByRole('button', { name: 'Delete', exact: true }).click().catch(() => {});
+  await p.waitForTimeout(500);
+  check('Delete everything: Delete deletes', /Removes everything this phone keeps/.test(await says()), await says());
+  await ctx.close();
+}
+
 await browser.close();
 console.log(`\nPAGE ERRORS: ${errors.length ? errors.join(' | ') : 'none'}`);
 if (failures.length || errors.length) {

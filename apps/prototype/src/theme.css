@@ -1523,6 +1523,8 @@ body {
 .danger-row:last-child { border-bottom: 0; }
 .danger-row span { font-size: var(--fs-button); color: var(--magenta-ink); }
 .danger-row small { font-size: var(--fs-secondary); color: var(--muted); line-height: 1.5; }
+/* Delete everything, asked first: the Membership ask, as one row of this list. */
+.panel-danger .danger-confirm { border-top: 0; padding: 9px 0 12px; border-bottom: 1px solid var(--line); }
 /* `?at=`: a test position, said plainly so nobody mistakes it for GPS (test-position.ts). */
 /* One line across the very top, and the top bar moved down below it: it used to sit over
    the journey chip and the filter, so a tap on either went to the banner and nothing

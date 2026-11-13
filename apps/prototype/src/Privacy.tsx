@@ -75,6 +75,11 @@ export function Privacy({
   // Kept by error-report.ts itself, not in PrivacySettings: it has to be readable before
   // the app renders, which is when reporting starts.
   const [errorReports, setErrorReports] = useState(errorReportsAllowed);
+  const [confirmingDelete, setConfirmingDelete] = useState(false);
+  const deleteLine =
+    collectionSize === 0
+      ? "Removes everything this phone keeps for the app. Immediate and permanent."
+      : `Removes all ${collectionSize} synced echo${collectionSize === 1 ? "" : "es"}. Immediate and permanent.`;
 
   return (
     <div className="screen-body">
@@ -219,14 +224,36 @@ export function Privacy({
           <span>Delete my positions</span>
           <small>Removes every saved standing position. Keeps your collection.</small>
         </button>
-        <button className="danger-row" onClick={() => onDelete("everything")}>
-          <span>Delete everything</span>
-          <small>
-            {collectionSize === 0
-              ? "Removes everything this phone keeps for the app. Immediate and permanent."
-              : `Removes all ${collectionSize} synced echo${collectionSize === 1 ? "" : "es"}. Immediate and permanent.`}
-          </small>
-        </button>
+        {/*
+          Asked first. One tap cleared every synced echo, with nothing between the tap and
+          the loss (James, 2026-11-13). The same ask as cancelling All-Access
+          (`Membership.tsx`), with keeping it the filled, safe choice. What it deletes is
+          unchanged.
+        */}
+        {confirmingDelete ? (
+          <div className="membership-confirm danger-confirm" role="group" aria-label="Delete everything">
+            <p>Delete everything? {deleteLine}</p>
+            <div className="membership-confirm-actions">
+              <button className="membership-keep" onClick={() => setConfirmingDelete(false)}>
+                Keep
+              </button>
+              <button
+                className="membership-cancel"
+                onClick={() => {
+                  onDelete("everything");
+                  setConfirmingDelete(false);
+                }}
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        ) : (
+          <button className="danger-row" onClick={() => setConfirmingDelete(true)}>
+            <span>Delete everything</span>
+            <small>{deleteLine}</small>
+          </button>
+        )}
         <button className="danger-row" onClick={startOver}>
           <span>Start over</span>
           <small>
