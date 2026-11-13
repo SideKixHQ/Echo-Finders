@@ -343,6 +343,8 @@ const MAPBAR_FALLBACK = 119;
    rail's 10px (`theme.css`). Stale at 8 after the gap changed, which let the rare marker
    sit 8px into the column's top button. */
 const RAIL_H = 44 * 4 + 90 + 10 * 4; // measured 306: the zoom pair is 90 with its borders
+/** The off-screen marker's plate, wide enough for "EXTRA RARE" clear of its arrow. */
+const EDGE_PLATE_W = 176;
 /* The side margin, `--gutter` in `theme.css`. The edge marker lines up with the rail. */
 const GUTTER = 16;
 /**
@@ -2437,19 +2439,20 @@ export function RouteMap({
             <g transform={right ? undefined : "scale(-1 1)"}>
               {/* A whole pill on the gutter, its right edge on the rail's: hung off the
                   screen edge as a tab, it read as cut off beside everything else on 16px. */}
-              {/* 144 wide: at 124 the word "Singular" (76px in Space Grotesk at 14) ran under the
-                  arrow, which drew over its last letter on the right and its first on the left. */}
-              <rect className="map-edge-plate" x="-144" y="-17" width="144" height="34" rx="14" />
+              {/* 176 wide (James, 2026-11-13, mock 20 A): at 144 "EXTRA RARE" (about 99px in
+                  Space Grotesk at 14, spaced) ran into the arrow, over its last letter on the
+                  right and its first on the left. */}
+              <rect className="map-edge-plate" x={-EDGE_PLATE_W} y="-17" width={EDGE_PLATE_W} height="34" rx="14" />
             </g>
             <g
               className="map-edge-glyph"
-              transform={`translate(${right ? -130 : 130} 0) scale(0.6) translate(-12 -12)`}
+              transform={`translate(${right ? -162 : 162} 0) scale(0.6) translate(-12 -12)`}
             >
               {CATEGORY_ICON[mark.echo.category]}
             </g>
             <text
               className="map-edge-text"
-              x={right ? -114 : 114}
+              x={right ? -146 : 146}
               y="4"
               textAnchor={right ? "start" : "end"}
             >
