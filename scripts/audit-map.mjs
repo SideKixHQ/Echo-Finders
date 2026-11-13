@@ -16,6 +16,7 @@
  *   21  the player's Next is dimmed and does nothing when nothing is queued, and works when
  *       something is
  *   25  on a flight the echo bar and Coming up give the same minutes for the same echo
+ *   XR  Extra rare pins are magenta and 1.15x (option D); Rare stays ember
  */
 
 import { chromium } from 'playwright';
@@ -280,6 +281,42 @@ if (runs('25')) {
       nowBar.includes(item.title) && said && listed && said[1] === listed[1], JSON.stringify([nowBar, nowUp]));
   }
   await ctx.close();
+}
+
+// XR. Extra rare pins in magenta, 1.15x, label magenta; Rare stays ember (Savannah, both themes).
+if (runs('XR')) {
+  for (const theme of ['dark', 'light']) {
+    const { ctx, p } = await phone({ latitude: 32.0733, longitude: -81.0897 });
+    await p.emulateMedia({ colorScheme: theme });
+    await standAt(p, '32.0733,-81.0897');
+    const m = await p.evaluate(() => {
+      const css = getComputedStyle(document.documentElement);
+      const ink = (v) => { const d = document.createElement('div'); d.style.color = css.getPropertyValue(v); document.body.append(d); const c = getComputedStyle(d).color; d.remove(); return c; };
+      const pin = (rarity) => [...document.querySelectorAll('.pin')].find((g) => g.querySelector(`:scope > .pin-halo-${rarity}`) && g.querySelector(':scope > .echo-char'));
+      const look = (g) => g && {
+        scale: getComputedStyle(g.querySelector(':scope > .echo-char')).transform,
+        glow: getComputedStyle(g.querySelector('[id^="ecGlow-"] stop')).stopColor,
+        body: getComputedStyle(g.querySelector('[id^="ecBody-"] stop:nth-child(3)')).stopColor,
+        tag: g.querySelector('.pin-tag') && getComputedStyle(g.querySelector('.pin-tag')).fill,
+      };
+      return {
+        magenta: ink('--magenta'), magentaInk: ink('--magenta-ink'),
+        halo: getComputedStyle(document.querySelector('#raritySingular stop')).stopColor,
+        xr: look(pin('singular')), rare: look(pin('rare')),
+      };
+    });
+    const tag = `XR  ${theme}`;
+    check(`${tag}: an Extra rare and a Rare pin on screen`, !!m.xr && !!m.rare, JSON.stringify(m));
+    if (!m.xr || !m.rare) { await ctx.close(); continue; }
+    check(`${tag}: Extra rare creature 1.15x`, m.xr.scale === 'matrix(1.15, 0, 0, 1.15, 0, 0)', m.xr.scale);
+    check(`${tag}: its glow magenta, its body the approved ramp`, m.xr.glow === m.magenta && m.xr.body === 'rgb(200, 19, 106)',
+      JSON.stringify(m.xr));
+    check(`${tag}: its label magenta (--magenta-ink, ${m.magentaInk})`, m.xr.tag === m.magentaInk, `${m.xr.tag} vs ${m.magentaInk}`);
+    check(`${tag}: the Extra rare halo magenta`, m.halo === m.magenta, m.halo);
+    check(`${tag}: Rare stays ember, same size`, m.rare.scale === 'none' && m.rare.glow !== m.magenta && m.rare.tag !== m.magentaInk,
+      JSON.stringify(m.rare));
+    await ctx.close();
+  }
 }
 
 await browser.close();

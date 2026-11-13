@@ -2120,11 +2120,12 @@ export function RouteMap({
           Rare and singular went up hard. At 0.24 the rare halo was a slightly warmer patch
           of navy and the listener could not see it, which is the whole report.
         */}
+        {/* Extra rare is magenta (James, 2026-11-13, option D); Rare stays ember. */}
         <radialGradient id="raritySingular">
-          <stop offset="0%" stopColor="var(--ember)" stopOpacity="0.62" />
-          <stop offset="30%" stopColor="var(--ember)" stopOpacity="0.3" />
-          <stop offset="64%" stopColor="var(--ember)" stopOpacity="0.1" />
-          <stop offset="100%" stopColor="var(--ember)" stopOpacity="0" />
+          <stop offset="0%" stopColor="var(--magenta)" stopOpacity="0.62" />
+          <stop offset="30%" stopColor="var(--magenta)" stopOpacity="0.3" />
+          <stop offset="64%" stopColor="var(--magenta)" stopOpacity="0.1" />
+          <stop offset="100%" stopColor="var(--magenta)" stopOpacity="0" />
         </radialGradient>
         <radialGradient id="rarityRare">
           <stop offset="0%" stopColor="var(--ember)" stopOpacity="0.5" />
