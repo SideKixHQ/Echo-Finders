@@ -38,6 +38,44 @@ playback, the hands free walk, in-app purchase), so the shell was deleted:
 `EXPO_PUBLIC_SHELL` is no longer read or set. The camera purpose string went with it: only
 the web app's camera view used the camera.
 
+## Amended 2026-11-13: the iPhone app is the approved web app, with native plumbing
+
+James, 2026-11-13: the iPhone app has to be exactly what was built and approved, screen by
+screen, pixel by pixel, and how is up to us. The native screens rebuilt by hand missed or
+differed on 95 of 129 points against the web app, and redrawing them would drift again.
+**This reverses the note of 2026-11-11 that a web based shell is never the App Store app.**
+
+- **Screens.** The app opens on the deployed web app (https://echo-finders.vercel.app/) in a
+  full screen WKWebView (`apps/ios/src/shell/WebShell.tsx`), so every screen is the web's,
+  and a merge reaches the app as it reaches the site. The live site was chosen over a
+  build shipped inside the app because the page depends on its own origin: `/api` (payments
+  config, the owner cookie, restore), share links built from `location.origin`, map tiles
+  read with HTTP Range from that origin. file:// and a local server both break those, and
+  `public/` is 162 MB. An offline copy is kept by a service worker that only the app
+  registers (`apps/prototype/public/app-sw.js`), network first, on the app bound domain
+  (`WKAppBoundDomains`). Map tiles are not kept offline.
+- **Native supplies** what a page cannot do on an iPhone, through one typed set of messages
+  (`apps/prototype/src/native-bridge-protocol.ts`), switched on in the page only when it
+  finds the app (`native-bridge.ts`): narration (the narrator, `duckOthers`, the lock
+  screen, calls and headphones), location (When In Use, and the background task during a
+  hands free walk), purchases (StoreKit, the approved products, never the website's
+  checkout), downloads (the native offline screens, kept), the lock screen, and the driving
+  lock, drawn over the WebView. Links to the policies, mail and maps open outside the app.
+- **The screen locked.** The page may not run with the screen off, so when it goes out of
+  sight it hands the phone its plan (what plays, what waits, which echoes would play on
+  arrival). The phone carries it out and keeps every fix; back on screen the page gets
+  them in order and comes to the same echoes by the same engine rules, and the phone
+  carries on with the echo already playing.
+- **Removed from the running app:** the native Map, My echoes and Settings tabs, the echo
+  page, the mini player. History keeps them.
+- **Risk: App Store guideline 4.2** (minimum functionality). An app that is mainly a web
+  site can be rejected as one. The answer is what the phone adds that the site cannot:
+  narration and hands free walking with the screen locked, background location, the
+  driving lock, offline packs, in-app purchase. Say so in the review notes.
+- What only a phone can confirm is listed in the pull request: the page's scripts with the
+  screen locked, the service worker in WKWebView, the camera and compass prompts, the
+  audio session with the page's own sonar.
+
 ## Why not one React Native codebase for both
 
 `react-native-web` is the obvious suggestion and it is wrong here, for three reasons that

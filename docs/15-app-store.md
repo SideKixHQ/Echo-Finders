@@ -46,6 +46,13 @@ Bundle `com.echofinders.app`, App Store Connect app 6822091365, team 75682A9A73
 
 Check all of it with `npx expo config --type introspect` in `apps/ios`.
 
+**2026-11-13.** The app now shows the approved web app (ADR-0012, amended 2026-11-13). Two
+keys came with it: the camera string the shell carried (#211), for the web's Then and now
+camera, and `WKAppBoundDomains` with the app's own site, for its offline copy. The privacy
+manifest and the App Privacy answers below are unchanged, but the web app inside sends
+anonymous usage counts unless Settings turns them off, and error reports when it is turned
+on: they need James's answer before submission.
+
 ## What remains, for James
 
 1. **Store listing text.** Name, subtitle (30 characters), promotional text, description,
