@@ -1,10 +1,11 @@
 /**
- * The native app's root: fonts, the one narrator, the passes that say what it may play, the
- * walk that hands it echoes, and a
- * stack holding the three tabs with an echo's card presented over them.
+ * The app's root: fonts, the one narrator, the passes, the walk, and a stack whose first
+ * screen is the web app (`app/index.tsx`, `shell/WebShell.tsx`), with the phone's own
+ * screens beside it and the driving lock over everything.
  *
- * Every build starts here (`"main": "expo-router/entry"`). The WebView test shell that
- * TestFlight carried until the native app was ready is gone (ADR-0012).
+ * Every build starts here (`"main": "expo-router/entry"`). Since 2026-11-13 the app shows
+ * the approved web app itself, and the screens rebuilt natively are gone (ADR-0012,
+ * amended 2026-11-13).
  */
 // The walk's background location task, defined before anything mounts: iOS can deliver a
 // location update to an app it has woken in the background (`src/walk/task.ts`).
@@ -56,8 +57,7 @@ export default function RootLayout() {
           <PacksProvider>
             <StatusBar style="light" />
             <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: color.space } }}>
-              <Stack.Screen name="(tabs)" />
-              <Stack.Screen name="echo/[id]" options={{ presentation: "modal" }} />
+              <Stack.Screen name="index" />
               {/* Download packs: Settings › Offline echoes, and the sheet before a trip. */}
               <Stack.Screen name="offline" />
               <Stack.Screen
