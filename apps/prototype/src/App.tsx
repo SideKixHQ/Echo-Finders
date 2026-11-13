@@ -40,7 +40,7 @@ import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { holdLockScreen, primeLockScreen } from "./lock-screen";
 import { savedList } from "./saved-list";
 import { readSaved, toggleSaved, writeSaved } from "./saved-store";
-import { HowEchoesUnlock, NearToast, SavedToast, SAVED_SHOW_MS, SyncedToast } from "./Toasts";
+import { HowEchoesUnlock, NearToast, SavedToast, SAVED_SHOW_MS, SyncedToast, TakeoffToast } from "./Toasts";
 import {
   HOW_KEY,
   LOCKED_KEY,
@@ -320,6 +320,8 @@ export function App() {
   // the screen off; this decides whether they then talk. Somebody can very reasonably want
   // a phone collecting in a pocket while still choosing what they hear.
   const [autoPlay, setAutoPlay] = useState(false);
+  /** The flight whose "Waiting for take off" toast was answered or put away. */
+  const [takeoffShut, setTakeoffShut] = useState<string | null>(null);
   /**
    * A drive plays its echoes by itself (James, 2026-11-13: "Play these as I reach them is on
    * when a drive starts; no ask"). A driver cannot tap Play, and with the switch off a drive
@@ -478,7 +480,7 @@ export function App() {
    */
   const [howSeen, setHowSeen] = useState(() => readFlag(HOW_KEY));
   const firstRunDone = onboarded && howSeen;
-  const { state, session, walk, store, speech, restored } = useJourney(roaming ? null : route, LIBRARY, {
+  const { state, session, walk, flight, store, speech, restored } = useJourney(roaming ? null : route, LIBRARY, {
     sound,
     narrate,
     autoPlay,
@@ -3074,6 +3076,19 @@ export function App() {
                       setSelectedId(near.echo.id);
                     }}
                     onClose={() => setNearToast(null)}
+                  />
+                );
+              }
+              // A flight, until take off is known: the backup for a phone with no fix.
+              if (flight && flight.takeoffAtMs === null && tab === "map" && takeoffShut !== route.id) {
+                return (
+                  <TakeoffToast
+                    key={`takeoff-${route.id}`}
+                    onTakenOff={() => {
+                      flight.tookOff(Date.now());
+                      setTakeoffShut(route.id);
+                    }}
+                    onClose={() => setTakeoffShut(route.id)}
                   />
                 );
               }

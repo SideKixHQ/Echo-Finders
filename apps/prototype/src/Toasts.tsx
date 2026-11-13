@@ -21,6 +21,7 @@
  */
 
 import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
+import { MODE_ICON } from "./travel";
 
 /** How long the slide away takes, ms. Matches `toast-out` in theme.css. */
 const LEAVE_MS = 220;
@@ -256,5 +257,32 @@ export function HowEchoesUnlock({ onDone }: { readonly onDone: () => void }) {
         Got it
       </button>
     </div>
+  );
+}
+
+/**
+ * On a flight, until take off is known (James, 2026-11-13, mock 4, approved). Take off is
+ * detected from speed (`flight-clock.ts`); this is the backup for a phone with no fix, a
+ * middle seat. The button starts the flight's clock now. It goes by itself once take off is
+ * detected, and the ✕ puts it away.
+ */
+export function TakeoffToast({ onTakenOff, onClose }: { readonly onTakenOff: () => void; readonly onClose: () => void }) {
+  const [leaving, leave] = useLeave(onClose);
+  return (
+    <Shell kind="locked" leaving={leaving}>
+      <span className="toast-lock" aria-hidden="true">
+        <svg viewBox="0 0 24 24">{MODE_ICON.flight}</svg>
+      </span>
+      <span className="toast-words">
+        <b>Waiting for take off</b>
+        <span>Echoes start by themselves once the plane is in the air.</span>
+      </span>
+      <Close onClick={leave} />
+      <span className="toast-row">
+        <button className="toast-act toast-act-go" onClick={onTakenOff}>
+          We've taken off
+        </button>
+      </span>
+    </Shell>
   );
 }

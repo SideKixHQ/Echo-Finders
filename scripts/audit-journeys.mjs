@@ -220,6 +220,40 @@ if (want('F1')) {
   await ctx.close();
 }
 
+// ── F1 backup: "We've taken off" (mock 4, approved) ─────────────────────────────────
+// From flight start until take off is detected, a toast offers the backup; its button
+// starts the flight's clock. It goes by itself once take off is detected from speed.
+if (want('F1b')) {
+  const { ctx, p } = await freshApp();
+  await startFlight(p);
+  const toast = p.locator('.toast', { hasText: 'Waiting for take off' });
+  check('F1b: on a flight, "Waiting for take off" with "We\'ve taken off"',
+    (await toast.count()) === 1 && /Echoes start by themselves once the plane is in the air\./.test(await toast.innerText())
+      && (await toast.getByRole('button', { name: "We've taken off" }).count()) === 1);
+  await toast.getByRole('button', { name: "We've taken off" }).click();
+  await p.waitForTimeout(800);
+  check('F1b: the button starts the flight and the toast goes', (await toast.count()) === 0);
+  await ctx.close();
+}
+if (want('F1b')) {
+  const { ctx, p } = await freshApp();
+  await startFlight(p);
+  const toast = p.locator('.toast', { hasText: 'Waiting for take off' });
+  const before = await toast.count();
+  await ctx.setGeolocation({ latitude: 36.07, longitude: -75.70, accuracy: 20 });
+  await p.waitForTimeout(1000);
+  await ctx.setGeolocation({ latitude: 36.0678, longitude: -75.6995, accuracy: 20 });
+  await p.waitForTimeout(1500);
+  check('F1b: take off detected from speed takes the toast away by itself', before === 1 && (await toast.count()) === 0, `${before} then ${await toast.count()}`);
+  await ctx.close();
+}
+if (want('F1b')) {
+  const { ctx, p } = await freshApp(WILMINGTON);
+  await startDrive(p);
+  check('F1b: a drive has no take off toast', (await p.locator('.toast', { hasText: 'Waiting for take off' }).count()) === 0);
+  await ctx.close();
+}
+
 // ── F2: the phone's GPS corrects the flight when it can be believed ─────────────────
 // A window seat gets a fix over Kitty Hawk, then another a second later at airliner
 // speed: the flight has taken off, and is where the phone says, about a third of the way.
