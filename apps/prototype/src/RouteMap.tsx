@@ -1041,18 +1041,51 @@ export function RouteMap({
    * Coastlines, when there is no MapLibre to draw the map (no WebGL: an old phone, or a
    * seatback browser). The fallback drew the route on a blank field, so a flight showed a
    * line over nothing. `public/map/land.json` comes with the app (`scripts/build-land.mjs`),
-   * so it needs no internet, and it is only fetched on a device that cannot run the map.
+   * so it needs no internet, and it is only fetched on a device that cannot run the map, or
+   * on a flight.
    */
-  const [land, setLand] = useState<readonly (readonly [number, number])[][] | null>(null);
+  /*
+   * And under a flight whose map tiles cannot load (F5): in the air there is no signal, and
+   * the tiles come from the site, so the map was the route over nothing. Fetched as the
+   * flight is picked, while there is still signal at the gate, and drawn only while tiles
+   * are failing; a tile arriving (landed, Wi-Fi on) gives the map back.
+   */
+  const flying = mode === "flight";
+  // Down until a tile has arrived: with no signal the map's own files fail before it is ready
+  // to report anything.
+  const [tilesDown, setTilesDown] = useState(true);
   useEffect(() => {
-    if (HAS_WEBGL) return;
+    if (!gl) return;
+    // Any map error: with no signal the tile files themselves cannot be opened, and that
+    // error names no tile. A tile that loads arrives as source data and clears it.
+    const failed = () => setTilesDown(true);
+    // Only the map's own tiles count: the app's drawn layers make tiles of their own, offline.
+    const arrived = (e: object) => {
+      const { dataType, tile, source } = e as { dataType?: string; tile?: unknown; source?: { type?: string } };
+      if (dataType === "source" && tile && source?.type === "vector") setTilesDown(false);
+    };
+    const offline = () => setTilesDown(true);
+    gl.on("error", failed);
+    gl.on("data", arrived);
+    window.addEventListener("offline", offline);
+    return () => {
+      gl.off("error", failed);
+      gl.off("data", arrived);
+      window.removeEventListener("offline", offline);
+    };
+  }, [gl]);
+  const floor = !HAS_WEBGL || (flying && tilesDown);
+  const [land, setLand] = useState<readonly (readonly [number, number])[][] | null>(null);
+  const wantLand = !HAS_WEBGL || flying;
+  useEffect(() => {
+    if (!wantLand || land) return;
     fetch("/map/land.json")
       .then((r) => (r.ok ? r.json() : null))
       .then((rings) => Array.isArray(rings) && setLand(rings))
       .catch(() => {});
-  }, []);
+  }, [wantLand, land]);
   const landPath = useMemo(() => {
-    if (!land || gl) return "";
+    if (!land || !floor) return "";
     let d = "";
     for (const ring of land) {
       let prev: number | null = null;
@@ -1065,7 +1098,7 @@ export function RouteMap({
       d += "Z";
     }
     return d;
-  }, [land, gl, projection]);
+  }, [land, floor, projection]);
 
   const planPath = useMemo(() => {
     const line = plan?.line;

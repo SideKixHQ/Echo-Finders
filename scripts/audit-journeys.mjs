@@ -47,12 +47,13 @@ const check = (name, ok, detail = '') => {
   if (!ok) failures.push(name);
 };
 
-async function freshApp(geolocation = BATTERY, path = '/') {
+async function freshApp(geolocation = BATTERY, path = '/', before = async () => {}) {
   const ctx = await browser.newContext({ colorScheme: 'dark',
     viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, isMobile: true, hasTouch: true,
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation,
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  await before(ctx);
   const p = await ctx.newPage();
   p.setDefaultTimeout(6000);
   p.on('pageerror', (e) => errors.push(e.message));
@@ -253,6 +254,33 @@ if (want('F3')) {
   }
   check('F3: past an echo\'s moment, the flight plays it by itself', /sand out of the lobbies/i.test(playing),
     playing.replace(/\s+/g, ' ') || 'nothing playing');
+  await ctx.close();
+}
+
+// ── F5: in the air with no tiles, the coastline under the route ──────────────────────
+// The map's tiles come from the site, so with no signal a flight was its route over
+// nothing. The coastline file, as the map without WebGL draws it, is the floor.
+if (want('F5')) {
+  // No signal from the start: every map tile fails. The coastline file came with the app.
+  const { ctx, p } = await freshApp(BATTERY, '/', (c) => c.route(/\/map\/(?!land\.json)/, (r) => r.abort('internetdisconnected')));
+  await startFlight(p);
+  await p.locator('.jchip, [aria-label^="Change your journey"]').first().waitFor();
+  // Move the map so it asks for tiles it cannot get.
+  await p.mouse.move(195, 420);
+  await p.mouse.wheel(0, 300);
+  await p.waitForTimeout(3000);
+  const d = await p.locator('path.map-land').getAttribute('d').catch(() => null);
+  check('F5: a flight with no tiles draws the coastline under its route', (d ?? '').length > 1000, d ? `${d.length} characters` : 'no coastline');
+  await ctx.close();
+}
+if (want('F5')) {
+  // With signal the map is the map: no coastline drawn over it.
+  const { ctx, p } = await freshApp();
+  await startFlight(p);
+  await p.mouse.move(195, 420);
+  await p.mouse.wheel(0, 300);
+  await p.waitForTimeout(3000);
+  check('F5: with tiles, a flight draws no coastline over the map', (await p.locator('path.map-land').count()) === 0);
   await ctx.close();
 }
 
