@@ -78,6 +78,13 @@ Asked of James, not yet decided, built as below until he answers:
   Decided 2026-11-13: James approved it as built. The panel scrolls only on short screens
   (an iPhone SE, an iPhone Duo closed) and fits without scrolling everywhere else.
 
+## Amended 2026-11-13 (evening): what picking a topic may change
+- **On a trip, picking a topic changes only what the map shows** (James, "yes to those
+  too"). The panel's True crime chip is the opt in while exploring, and picking any other
+  topic switched it off, which rebuilt the session: on the Central Park West walk, with
+  Ghosts & legends picked, the Dakota never synced. On a planned route, drive or flight
+  true crime now stays on whatever is picked; exploring is unchanged until James decides.
+
 ## Amended 2026-11-13 (afternoon): kids mode is the Kids topic
 James first answered "True crime in kids mode ... Should I hide it in kids mode? - yes", then
 chose, for kids mode as a whole, "A now, B over time":

@@ -253,6 +253,32 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── A topic picked on a trip leaves the trip playing ────────────────────────────
+// James, 2026-11-13: picking a topic only changes what the map shows. It switched True
+// crime off, which rebuilt the session, so on the Central Park West walk (two true crime
+// echoes) with Ghosts & legends picked, walking up to the Dakota synced nothing.
+{
+  const { ctx, p } = await freshApp({ latitude: 40.774, longitude: -73.976 });
+  await p.getByLabel(/Change your journey/).click();
+  await p.waitForTimeout(400);
+  await p.locator('.jmenu-routes .jmenu-item', { hasText: 'Central Park West' }).first().click();
+  await p.waitForTimeout(3000);
+  await p.locator('.kind-tap').click();
+  await p.waitForTimeout(300);
+  await p.locator('#kind-box .chip', { hasText: 'Ghosts & legends' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(2500);
+  // Walk up to the Dakota: a fix a second, a metre apart, so the phone reports each one.
+  for (let i = 0; i < 20; i++) {
+    await ctx.setGeolocation({ latitude: 40.77625 + (i % 2) * 0.00001, longitude: -73.97596, accuracy: 5 });
+    await p.waitForTimeout(1000);
+  }
+  const body = await p.locator('body').innerText();
+  check('Topic on a trip: the walk still syncs its true crime echo with Ghosts & legends picked',
+    /Synced/.test(body) && /Three minutes from here/.test(body), body.replace(/\s+/g, ' ').slice(0, 300));
+  await ctx.close();
+}
+
 // ── A search while a topic is picked ───────────────────────────────────────────
 // 2026-11-13, James: "go with the better user experience". A search, or the locate arrow,
 // while a topic is picked replaces the view All goes back to: All returns to the place

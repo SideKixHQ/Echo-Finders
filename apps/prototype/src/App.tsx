@@ -415,7 +415,13 @@ export function App() {
    */
   // Read from `cats` rather than `activeCats`, which is derived further down: null means
   // nothing has been switched off yet, and the default set carries every category.
-  const trueCrimeOn = (cats ?? ALL_CATEGORIES).has("true-crime");
+  //
+  // Never on a trip (James, 2026-11-13): picking a topic there only changes what the map
+  // shows. It switched True crime off, which rebuilt the session and stopped the trip's own
+  // true crime echoes: with Ghosts & legends picked, the Central Park West walk walked up to
+  // the Dakota and nothing synced. On a planned route, drive or flight true crime stays on.
+  // Exploring keeps the chip as the opt in, as before (docs/adr/0021-topics-and-rare.md).
+  const trueCrimeOn = !roaming || (cats ?? ALL_CATEGORIES).has("true-crime");
   const optIns = useMemo<readonly EchoCategory[]>(
     () => (trueCrimeOn ? ["true-crime"] : []),
     [trueCrimeOn],
