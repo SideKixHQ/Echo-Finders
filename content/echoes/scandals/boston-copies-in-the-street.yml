@@ -1,0 +1,189 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (political scandal), filed under history until the topic exists, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on Washington Street at the west end of the Old State House, at the corner of Court Street, looking at the west gable.
+# Position: Overture places the Old State House (206 Washington St) at 42.35873, -71.05746; the pin is on the Washington Street side, west of the building (high confidence). The Boston Massacre echo (Who Said Fire?) and The Lion and the Unicorn are pinned at the east end, 55 m and 100 m away, and tell different subjects.
+id: boston-copies-in-the-street
+title: "Copies in the Street"
+summary: "In 1773 Franklin sent the governor's private letters on a promise they would not be copied. Then copies turned up in the street."
+place: "Old State House, Washington Street at Court Street, Boston, Massachusetts"
+at: { lat: 42.35866, lng: -71.05790 }
+triggerRadiusKm: 0.04
+category: scandals
+format: short
+durationS: 94
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, freedom-trail, scandal, old-state-house, hutchinson, franklin, revolution, 1773]
+teaser: "The letters were never to be copied. So the copies came from the street."
+script: |
+  Look at the old State House in front of you. In seventeen seventy three, the Massachusetts House of Representatives sat in here.
+
+  That year, with the public shut out, Samuel Adams told the House he had letters. Private letters, written by the royal governor, Thomas Hutchinson, and his lieutenant governor, to a member of Parliament in London.
+
+  They had come from Benjamin Franklin. He had sent them under strict secrecy. They were to be shown only to a few leading men. They were not to be printed or copied, and they were to be sent back.
+
+  Adams said the House could still know what was in them. So the letters were read. A committee reported that they tended to annul the charter and overthrow all liberty.
+
+  Word got out into the streets, and people grew wild to know what was in the letters. But the leaders had promised Franklin. Nothing printed, nothing copied.
+
+  Then John Hancock told the House that copies of the letters had been put into his hands, in the streets.
+
+  The House gave way. The letters were printed, and the House asked the King to remove the Governor and the Lieutenant Governor.
+
+  Franklin paid for it in London, where he was lashed without mercy before a committee. And Hutchinson's own biographer wrote that his letters were mild as mother's milk.
+
+  Hutchinson put it his own way. Had they been Chevy Chase, an old ballad, the leaders would have made the people believe it was full of evil and treason.
+pronunciations:
+  - written: Hutchinson
+    say: HUTCH-in-sun
+detail: >-
+  Everything in the script is from James K. Hosmer's Life of Thomas Hutchinson (1896), chapter 12, "The Affair of the Letters", which quotes Hutchinson's own letters: the House sitting in the Assembly Chamber of the Old State House, the letters to Thomas Whately, a member of Parliament, Franklin's conditions (shown to a few, not printed or copied, returned), Samuel Adams reading them with the public excluded, the committee's finding, the crowd "wild to know", Hancock's copies "put into his hands in the streets", the order to print, the address to the King, Wedderburn lashing Franklin, "mild as mother's milk" (Hosmer's own phrase) and Hutchinson's "Chevy Chase" line. The Library of Congress catalogue record of the 1774 London pamphlet, "The letters of Governor Hutchinson, and Lieut. Governor Oliver, &c. printed at Boston", backs the printing. Founders Online (the Franklin Papers) is the obvious second source but does not answer from this session. Hosmer says "a Committee of Parliament"; the hearing was before the Privy Council's committee, so the script says only "a committee". "An old ballad" for Chevy Chase is general knowledge, not from the source. Hosmer is sympathetic to Hutchinson; the script attributes his judgement ("his biographer wrote").
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In seventeen seventy three, the Massachusetts House of Representatives sat in here."
+    source: 1
+    quote: "sat thus yearly in the Assembly Chamber in the Old State House"
+  - says: "In seventeen seventy three, the Massachusetts House of Representatives sat in here."
+    source: 1
+    quote: "1773] THE AFFAIR OF THE LETTERS."
+  - says: "That year, with the public shut out, Samuel Adams told the House he had letters."
+    source: 1
+    quote: "the public having been excluded, Samuel Adams in formed the House of the reception of the letters"
+  - says: "Private letters, written by the royal governor, Thomas Hutchinson, and his lieutenant governor, to a member of Parliament in London."
+    source: 1
+    quote: "the letters having been written to a member of Parliament, Thomas Whately"
+  - says: "Private letters, written by the royal governor, Thomas Hutchinson, and his lieutenant governor, to a member of Parliament in London."
+    source: 1
+    quote: "six from me, four from the Lieutenant-Governor"
+  - says: "They had come from Benjamin Franklin."
+    source: 1
+    quote: "Franklin, having received the originals, under strict injunctions of secrecy, was allowed at last to send them to Boston"
+  - says: "They were to be shown only to a few leading men. They were not to be printed or copied, and they were to be sent back."
+    source: 1
+    quote: "with the understanding that the letters were to be shown only to a few leading people of the gov ernment, without being printed or copied, and that they were to be carefully returned."
+  - says: "He had sent them under strict secrecy."
+    source: 1
+    quote: "Franklin, having received the originals, under strict injunctions of secrecy, was allowed at last to send them to Boston"
+  - says: "Adams said the House could still know what was in them."
+    source: 1
+    quote: "The House, he said, could, however, be possessed of their contents, and the reading of the letters then fol lowed."
+  - says: "A committee reported that they tended to annul the charter and overthrow all liberty."
+    source: 1
+    quote: "A committee then reported, taking the letters together, that they tended to annul the charter and overthrow all liberty."
+  - says: "Word got out into the streets, and people grew wild to know what was in the letters."
+    source: 1
+    quote: "the transactions being made known in the streets, the people grew wild to know upon what the action of the House was based."
+  - says: "But the leaders had promised Franklin."
+    source: 1
+    quote: "They were bound by the conditions imposed by Frank lin neither to print nor to copy"
+  - says: "Then John Hancock told the House that copies of the letters had been put into his hands, in the streets."
+    source: 1
+    quote: "Hancock told the House that copies of the letters had been put into his hands in the streets"
+  - says: "The letters were printed, and the House asked the King to remove the Governor and the Lieutenant Governor."
+    source: 1
+    quote: "The letters were ordered printed"
+  - says: "The letters were printed, and the House asked the King to remove the Governor and the Lieutenant Governor."
+    source: 2
+    quote: "The letters of Governor Hutchinson, and Lieut. Governor Oliver, &c. printed at Boston"
+  - says: "The letters were printed, and the House asked the King to remove the Governor and the Lieutenant Governor."
+    source: 1
+    quote: "the House resolved to address the King to remove the Governor and Lieutenant-Governor."
+  - says: "Franklin paid for it in London, where he was lashed without mercy before a committee."
+    source: 1
+    quote: "lashed Franklin before a Committee of Parliament with out mercy"
+  - says: "And Hutchinson's own biographer wrote that his letters were mild as mother's milk."
+    source: 1
+    quote: "the letters signed by him were mild as mother's milk."
+  - says: "Hutchinson put it his own way."
+    source: 1
+    quote: "as Hutchinson said, \" had they been Chevy Chase, the leaders would have made them believe it was full of evil and treason.\""
+  - says: "Had they been Chevy Chase, an old ballad, the leaders would have made the people believe it was full of evil and treason."
+    source: 1
+    quote: "had they been Chevy Chase, the leaders would have made them believe it was full of evil and treason."
+  - says: "The House gave way."
+    source: 1
+    quote: "they were really out then, and the House gave way."
+sources:
+  - title: "The Life of Thomas Hutchinson, Royal Governor of the Province of Massachusetts Bay (James K. Hosmer, 1896), chapter 12: The Affair of the Letters"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/lifeofthomashutc00hosmrich
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "The letters of Governor Hutchinson, and Lieut. Governor Oliver, &c. printed at Boston (London, 1774), catalogue record"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/08001555/
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-copies-in-the-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 93.8
+    audioBytes: 1502188
+    transcript:
+      totalS: 93.8
+      lines:
+        - text: Look at the old State House in front of you.
+          atS: 0
+          durationS: 2.4
+        - text: In seventeen seventy three, the Massachusetts House of Representatives sat in here.
+          atS: 2.79
+          durationS: 4.66
+        - text: That year, with the public shut out, Samuel Adams told the House he had letters.
+          atS: 8.14
+          durationS: 5.04
+        - text: Private letters, written by the royal governor, Thomas Hutchinson, and his lieutenant governor, to a member of Parliament in London.
+          atS: 13.78
+          durationS: 7.88
+        - text: They had come from Benjamin Franklin.
+          atS: 22.48
+          durationS: 2.18
+        - text: He had sent them under strict secrecy.
+          atS: 25.36
+          durationS: 2.17
+        - text: They were to be shown only to a few leading men.
+          atS: 27.97
+          durationS: 2.89
+        - text: They were not to be printed or copied, and they were to be sent back.
+          atS: 31.46
+          durationS: 4.02
+        - text: Adams said the House could still know what was in them.
+          atS: 35.99
+          durationS: 2.95
+        - text: So the letters were read.
+          atS: 39.38
+          durationS: 1.38
+        - text: A committee reported that they tended to annul the charter and overthrow all liberty.
+          atS: 41.27
+          durationS: 5.43
+        - text: Word got out into the streets, and people grew wild to know what was in the letters.
+          atS: 47.15
+          durationS: 4.82
+        - text: But the leaders had promised Franklin.
+          atS: 52.35
+          durationS: 2.36
+        - text: Nothing printed, nothing copied.
+          atS: 55.09
+          durationS: 2.4
+        - text: Then John Hancock told the House that copies of the letters had been put into his hands, in the streets.
+          atS: 58.1
+          durationS: 5.84
+        - text: The House gave way.
+          atS: 64.45
+          durationS: 1.33
+        - text: The letters were printed, and the House asked the King to remove the Governor and the Lieutenant Governor.
+          atS: 66.22
+          durationS: 5.36
+        - text: Franklin paid for it in London, where he was lashed without mercy before a committee.
+          atS: 72.28
+          durationS: 4.67
+        - text: And Hutchinson's own biographer wrote that his letters were mild as mother's milk.
+          atS: 77.9
+          durationS: 4.88
+        - text: Hutchinson put it his own way.
+          atS: 83.89
+          durationS: 2.11
+        - text: Had they been Chevy Chase, an old ballad, the leaders would have made the people believe it was full of evil and treason.
+          atS: 86.82
+          durationS: 6.99

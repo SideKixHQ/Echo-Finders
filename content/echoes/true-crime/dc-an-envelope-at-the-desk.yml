@@ -1,0 +1,189 @@
+# Drafted by Claude Code (2026-11-12) for Washington DC (16th Street, downtown), Scandals topic, following the six beats in docs/writing-echoes.md and docs/14-true-crime.md. Filed under true-crime (an espionage conviction) until the Scandals category is built; tagged scandal and spies.
+# Listening spot: Public sidewalk on the east side of 16th Street NW, between L and M Streets, across the street from the mansion at 1125 16th Street.
+# Position: the Evening Star (1950 to 1957) gives the Soviet Embassy as 1125 Sixteenth Street N.W., the house built for Mrs. George M. Pullman; set across the street from it at 38.90465, -77.03635 (high confidence on the house). The 1994 bulletin says only "the Soviet Embassy in Washington, D.C." for April 1985; that the embassy was still in this house in 1985 is widely recorded but is not in a fetched source, and is flagged for James.
+id: dc-an-envelope-at-the-desk
+title: "An Envelope at the Desk"
+summary: "In 1985 a CIA officer walked into the Soviet Embassy, handed an envelope across the desk, and asked for $50,000."
+place: "1125 16th Street NW (the former Soviet Embassy), Washington, D.C."
+at: { lat: 38.90465, lng: -77.03635 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 94
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.76
+tags: [washington, sixteenth-street, scandal, spies, aldrich-ames, cia, kgb, soviet-embassy, cold-war, 1985, espionage]
+teaser: "He thought he was selling them nothing. He asked for fifty thousand dollars."
+script: |
+  Look across Sixteenth Street at the big stone house, number eleven twenty five. It was built for the widow of George Pullman, the man who made the sleeping cars, and later sold to the Russian government. For decades, Washington knew it as the Soviet Embassy.
+
+  On the sixteenth of April, nineteen eighty five, a CIA officer named Aldrich Ames walked into the Soviet Embassy in Washington.
+
+  He had been meeting a Soviet diplomat there with the CIA's blessing. The agency thought he was sizing the man up as a possible source.
+
+  At the reception desk, Ames handed the duty officer an envelope and asked for the diplomat by name. The letter inside was meant for the most senior KGB officer in the embassy. The duty officer nodded.
+
+  Inside were two or three CIA cases, Soviets who had offered to work for the Americans. Ames believed they were double agents, really loyal to the KGB, so he thought he was giving away nothing. To prove who he was, he added a page from a CIA directory with his own name highlighted. And he asked for fifty thousand dollars.
+
+  A month later, on the fifteenth of May, he came back. A KGB officer passed him a note. They had agreed to pay.
+
+  Years later, Ames told a court that he had conceived a kind of confidence game to play on the KGB. It did not stay a game. He went on to give them the names of Soviet officials who were truly helping American intelligence, and many of them were later executed. He was sentenced to life in prison without parole.
+
+  Look at the front door. It began with an envelope, handed across a desk.
+detail: >-
+  Conviction status: convicted. The walk in of 16 April 1985, the envelope, the letter's contents, the request for fifty thousand dollars and the return on 15 May are from the Department of Defense Security Institute's Security Awareness Bulletin 4-94, which reprints the Senate Intelligence Committee's findings, drawing on the statement of facts Ames agreed to at his plea. The Los Angeles Times of 29 April 1994 independently reports, from the court hearing, the April 1985 start, the confidence game, the fifty thousand dollars, the executions and the life sentence. The house and its address are from the Evening Star of 1951 and 1957. The diplomat, Sergey Chuvakhin, is not named in the script. Ames is believed to be alive and serving his sentence (involvesLivingPeople true); he was convicted, so nothing is told as alleged. Uncertain: no fetched source places the 1985 embassy in this house in so many words (see the position note above).
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: true
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-13"
+  reviewedAt: "2026-11-13"
+  contentWarning: "This echo concerns espionage by a CIA officer, whose betrayals cost lives, and his conviction. No violence is described."
+claims:
+  - says: "Look across Sixteenth Street at the big stone house, number eleven twenty five. It was built for the widow of George Pullman, the man who made the sleeping cars, and later sold to the Russian government."
+    source: 3
+    quote: "The house occupied by the Ambasador at 1125 Sixteenth street was built 42 years ago this month by Mrs. George M. Pullman of Chicago, widow of one of the era's capitalists. Mr. Pullman was the inventor of the Pullman sleeping car."
+  - says: "Look across Sixteenth Street at the big stone house, number eleven twenty five. It was built for the widow of George Pullman, the man who made the sleeping cars, and later sold to the Russian government."
+    source: 3
+    quote: "some of which were sold with the house to the Czar's Russian government."
+  - says: "For decades, Washington knew it as the Soviet Embassy."
+    source: 4
+    quote: "The embassy at 1125 Sixteenth street N.W. is directly across the street from IUE headquarters."
+  - says: "On the sixteenth of April, nineteen eighty five, a CIA officer named Aldrich Ames walked into the Soviet Embassy in Washington."
+    source: 1
+    quote: "Ames entered the Soviet Embassy in Washing¬ Security Awareness Bulletin ton, D.C. on 16 April 1985 and handed an enve¬ lope to the duty officer at the reception desk, while asking for Chuvakhin by name."
+  - says: "The agency thought he was sizing the man up as a possible source."
+    source: 1
+    quote: "the CIA thought Ames was meeting with Chuvakhin to assess the Soviet as a possible source for U.S. intelligence."
+  - says: "The letter inside was meant for the most senior KGB officer in the embassy. The duty officer nodded."
+    source: 1
+    quote: "The message was addressed to the Russian officer he knew to be the most senior KGB officer at the embassy."
+  - says: "Inside were two or three CIA cases, Soviets who had offered to work for the Americans."
+    source: 1
+    quote: "a note which described two or three CIA cases involving Soviets who had approached the CIA to offer their services."
+  - says: "Ames believed they were double agents, really loyal to the KGB, so he thought he was giving away nothing."
+    source: 1
+    quote: "Ames thought that disclosing to the KGB that these Soviets were working with the CIA was “essentially valueless information.”"
+  - says: "To prove who he was, he added a page from a CIA directory with his own name highlighted. And he asked for fifty thousand dollars."
+    source: 1
+    quote: "Ames in¬ cluded a page from an internal SE Division direc¬ tory with his true name highlighted."
+  - says: "To prove who he was, he added a page from a CIA directory with his own name highlighted. And he asked for fifty thousand dollars."
+    source: 2
+    quote: "“In exchange for $50,000 I provided the KGB with the identities of several Soviet citizens who appeared to be cooperating with the CIA inside the Soviet Union,” he said."
+  - says: "A month later, on the fifteenth of May, he came back. A KGB officer passed him a note. They had agreed to pay."
+    source: 1
+    quote: "he entered the Soviet Embassy on May 15, 1985 and asked for Chuvak¬ hin, but instead was escorted to a private room. A KGB officer came in and passed him a note which said that the KGB had agreed to pay him $50,000."
+  - says: "Years later, Ames told a court that he had conceived a kind of confidence game to play on the KGB."
+    source: 2
+    quote: "Ames said in the jammed courtroom that in April, 1985, “I conceived a kind of confidence game to play on the KGB” to obtain funds to pay personal debts."
+  - says: "He went on to give them the names of Soviet officials who were truly helping American intelligence, and many of them were later executed."
+    source: 2
+    quote: "he gave the KGB the names of Soviet officials cooperating with American intelligence--many of whom were later executed"
+  - says: "He was sentenced to life in prison without parole."
+    source: 2
+    quote: "For his crimes, Ames was sentenced by a federal judge to life in prison without possibility of parole"
+  - says: "He had been meeting a Soviet diplomat there with the CIA's blessing."
+    source: 1
+    quote: "In April 1985, Ames ar¬ ranged a meeting with Chuvakhin."
+  - says: "At the reception desk, Ames handed the duty officer an envelope and asked for the diplomat by name."
+    source: 1
+    quote: "handed an enve¬ lope to the duty officer at the reception desk, while asking for Chuvakhin by name."
+sources:
+  - title: "Security Awareness Bulletin, Number 4-94: the Aldrich Ames espionage case"
+    publisher: "Department of Defense Security Institute (via Defense Technical Information Center, ADA311607, on the Internet Archive)"
+    url: https://archive.org/details/DTIC_ADA311607
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Ames Gets Life; Admits Betraying Double Agents (Robert L. Jackson and Ronald J. Ostrow, 29 April 1994)"
+    publisher: "Los Angeles Times"
+    url: https://www.latimes.com/archives/la-xpm-1994-04-29-mn-51912-story.html
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Evening Star (Washington, D.C.), 4 November 1951, page 82: the Soviet Ambassador's house at 1125 Sixteenth Street"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1951-11-04/ed-1/?sp=82
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 12 July 1957, page 56: Soviet Embassy Hired 'Scabs,' Union Charges"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1957-07-12/ed-1/?sp=56
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-an-envelope-at-the-desk/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 94.3
+    audioBytes: 1510129
+    transcript:
+      totalS: 94.3
+      lines:
+        - text: Look across Sixteenth Street at the big stone house, number eleven twenty five.
+          atS: 0
+          durationS: 4.71
+        - text: It was built for the widow of George Pullman, the man who made the sleeping cars, and later sold to the Russian government.
+          atS: 5.1
+          durationS: 6.52
+        - text: For decades, Washington knew it as the Soviet Embassy.
+          atS: 12.06
+          durationS: 3.54
+        - text: On the sixteenth of April, nineteen eighty five, a CIA officer named Aldrich Ames walked into the Soviet Embassy in Washington.
+          atS: 16.05
+          durationS: 8.73
+        - text: He had been meeting a Soviet diplomat there with the CIA's blessing.
+          atS: 25.16
+          durationS: 3.82
+        - text: The agency thought he was sizing the man up as a possible source.
+          atS: 29.3
+          durationS: 3.95
+        - text: At the reception desk, Ames handed the duty officer an envelope and asked for the diplomat by name.
+          atS: 33.85
+          durationS: 5.62
+        - text: The letter inside was meant for the most senior KGB officer in the embassy.
+          atS: 39.72
+          durationS: 4.38
+        - text: The duty officer nodded.
+          atS: 44.22
+          durationS: 1.44
+        - text: Inside were two or three CIA cases, Soviets who had offered to work for the Americans.
+          atS: 45.78
+          durationS: 5.05
+        - text: Ames believed they were double agents, really loyal to the KGB, so he thought he was giving away nothing.
+          atS: 50.94
+          durationS: 5.61
+        - text: To prove who he was, he added a page from a CIA directory with his own name highlighted.
+          atS: 56.67
+          durationS: 4.9
+        - text: And he asked for fifty thousand dollars.
+          atS: 61.74
+          durationS: 2.16
+        - text: A month later, on the fifteenth of May, he came back.
+          atS: 64.22
+          durationS: 3.19
+        - text: A KGB officer passed him a note.
+          atS: 67.7
+          durationS: 2.23
+        - text: They had agreed to pay.
+          atS: 70.14
+          durationS: 1.25
+        - text: Years later, Ames told a court that he had conceived a kind of confidence game to play on the KGB.
+          atS: 71.6
+          durationS: 5.63
+        - text: It did not stay a game.
+          atS: 77.4
+          durationS: 1.51
+        - text: He went on to give them the names of Soviet officials who were truly helping American intelligence, and many of them were later executed.
+          atS: 79.16
+          durationS: 7.07
+        - text: He was sentenced to life in prison without parole.
+          atS: 86.4
+          durationS: 2.84
+        - text: Look at the front door.
+          atS: 89.52
+          durationS: 1.17
+        - text: It began with an envelope, handed across a desk.
+          atS: 90.91
+          durationS: 3.41

@@ -1,0 +1,216 @@
+# Drafted by Claude Code (2026-11-12) for Washington DC (Capitol Hill, House side), Scandals topic, following the six beats in docs/writing-echoes.md and docs/14-true-crime.md. Filed under true-crime (a perjury conviction in a spy case) until the Scandals category is built; tagged scandal and spies.
+# Listening spot: Public sidewalk on Independence Avenue SE at New Jersey Avenue, at the corner rotunda of the Cannon House Office Building.
+# Position: the Architect of the Capitol bounds the Cannon Building by Independence Avenue, First Street SE, New Jersey Avenue and C Street SE; set at the Independence and New Jersey corner at 38.88725, -77.00790 (high confidence on the building; the Caucus Room is inside). About 240 m from the nearest Capitol pin.
+id: dc-one-of-these-witnesses
+title: "One of These Witnesses"
+summary: "In 1948 Alger Hiss and Whittaker Chambers met face to face here. The chairman said one would be tried for perjury."
+place: "Cannon House Office Building, Independence Avenue and New Jersey Avenue SE, Washington, D.C."
+at: { lat: 38.88725, lng: -77.00790 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.76
+tags: [washington, capitol-hill, cannon-building, scandal, spies, alger-hiss, whittaker-chambers, huac, cold-war, 1948, perjury]
+teaser: "Certainly one of these witnesses will be tried for perjury."
+script: |
+  Look at the corner of the House office building across the avenue, the Cannon Building. It is the oldest congressional office building. At the back of its rotunda, twin marble staircases lead up to the Caucus Room.
+
+  On the twenty fifth of August, nineteen forty eight, that room was packed. The House Committee on Un-American Activities had brought two men face to face.
+
+  One was Whittaker Chambers, a senior editor of Time Magazine, who said he had once been a Communist. He had told the committee that a former State Department official had belonged to an underground Communist group in the government.
+
+  The other was that official. Alger Hiss.
+
+  Before the questions began, the chairman made a promise. As a result of this hearing, he said, certainly one of these witnesses will be tried for perjury.
+
+  Hiss was asked to stand. So was Chambers, fifteen feet away. Have you ever seen the individual who is standing? I have, said Hiss. I identify him as George Crosley.
+
+  The chairman was right, and it was Hiss. In January nineteen fifty, a federal jury in New York convicted him of perjury on both counts. One was for denying that he gave government secrets to Chambers. He was sentenced to five years in prison.
+
+  Hiss would not accept it. It just seems impossible, he was quoted as saying, that any one would believe Chambers, the admitted perjurer.
+
+  Look up at the building. Two men stood up in that room, and before a single question was asked, the chairman had said that one of them would be tried.
+pronunciations:
+  - written: Hiss
+    say: HISS
+detail: >-
+  Conviction status: convicted. Hiss was convicted of perjury on two counts on 21 January 1950, at his second trial, and sentenced to five years (Evening Star staff report of 22 January 1950; Associated Press reports in the Daily Alaska Empire of 24 January 1950 and the Evening Star of 23 January and 2 May 1950). The hearing of 25 August 1948 in the caucus room "of the old House Office Building", the chairman's warning, the standing identification and "George Crosley" are from Miriam Ottenberg's report in the Evening Star of 25 August 1948. The Architect of the Capitol confirms the Old House Office Building is the Cannon Building, the oldest congressional office building, with its Caucus Room up twin staircases behind the rotunda. Hiss maintained his innocence for the rest of his life; the script says he would not accept the verdict, in his own quoted words. Everyone named is dead. The statute of limitations meant he could not be charged with espionage itself (Evening Star, 23 January 1950); the script says perjury and nothing more.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-13"
+  reviewedAt: "2026-11-13"
+  contentWarning: "This echo concerns a Cold War spy accusation and a perjury conviction. No violence is described."
+claims:
+  - says: "Look at the corner of the House office building across the avenue, the Cannon Building. It is the oldest congressional office building."
+    source: 1
+    quote: "The Cannon Building (completed in 1908) is the oldest congressional office building"
+  - says: "At the back of its rotunda, twin marble staircases lead up to the Caucus Room."
+    source: 1
+    quote: "At the rear of the Rotunda, twin marble staircases lead to the imposing Caucus Room."
+  - says: "On the twenty fifth of August, nineteen forty eight, that room was packed."
+    source: 2
+    quote: "Mr. Hiss, first of the two men to take the witness stand before an overflow crowd in the caucus room of the old House Office Building"
+  - says: "On the twenty fifth of August, nineteen forty eight, that room was packed."
+    source: 1
+    quote: "The \"Old\" House Office Building's namesake, Joseph Gurney Cannon of Illinois, was Speaker of the House of Representatives (1903-1911) when the building was constructed."
+  - says: "The House Committee on Un-American Activities had brought two men face to face."
+    source: 2
+    quote: "Hiss and Chambers, Face to Face At Hearing, Warned That One of Them Will Be Tried for Perjury"
+  - says: "One was Whittaker Chambers, a senior editor of Time Magazine, who said he had once been a Communist."
+    source: 2
+    quote: "Mr. Chambers, repentant Communist and now a senior editor of Time Magazine."
+  - says: "He had told the committee that a former State Department official had belonged to an underground Communist group in the government."
+    source: 2
+    quote: "Mr. Hiss was a member of an underground group whose primary purpose was Communist infiltration of the Government before the war."
+  - says: "As a result of this hearing, he said, certainly one of these witnesses will be tried for perjury."
+    source: 2
+    quote: "\"As a result of this hearing, certainly one of these witnesses will be tried for perjury.\""
+  - says: "Hiss was asked to stand. So was Chambers, fifteen feet away."
+    source: 2
+    quote: "Mr. Stripling asked Mr. Hiss to stand up. Mr. Chambers, sitting 15 j feet away in a chair before the committee rostrum, also was asked i to stand."
+  - says: "Have you ever seen the individual who is standing? I have, said Hiss. I identify him as George Crosley."
+    source: 2
+    quote: "\"I identify him as George Crosley,” Mr Hiss said."
+  - says: "In January nineteen fifty, a federal jury in New York convicted him of perjury on both counts."
+    source: 3
+    quote: "NEW YORK. Jan. 21.—Alger Hiss, once a fair-haired boy of the State Department, stands convicted of perjury tonight, branded by a Federal Court jury as a liar and a spy."
+  - says: "In January nineteen fifty, a federal jury in New York convicted him of perjury on both counts."
+    source: 4
+    quote: "walks out of the l'. S. Courthouse in New York after jury had ftund him guilty on both counts in his second trial for perjury."
+  - says: "One was for denying that he gave government secrets to Chambers."
+    source: 5
+    quote: "One count was for his denial that he gave United States secrets to Mr. Chambers."
+  - says: "He was sentenced to five years in prison."
+    source: 6
+    quote: "Hiss was convicted by a Federal Court jury January 21 and four days later was sentenced to a term of five years in prison."
+  - says: "It just seems impossible, he was quoted as saying, that any one would believe Chambers, the admitted perjurer."
+    source: 5
+    quote: "\"It just seems impossible that any one would believe Chambers, the admitted perjurer,” Hiss was quoted as saying"
+  - says: "Two men stood up in that room, and before a single question was asked, the chairman had said that one of them would be tried."
+    source: 2
+    quote: "declare that \"certainly” one of them \"will be tried for perjury” as a result of today’s hearing."
+  - says: "Alger Hiss."
+    source: 2
+    quote: "Alger Hiss and Whittaker Chambers stared at each other across a crowded hearing room"
+  - says: "The chairman was right, and it was Hiss."
+    source: 3
+    quote: "stands convicted of perjury tonight"
+sources:
+  - title: "Cannon House Office Building"
+    publisher: "Architect of the Capitol"
+    url: https://www.aoc.gov/explore-capitol-campus/buildings-grounds/house-office-buildings/cannon
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 25 August 1948, page 1: Hiss and Chambers, Face to Face (Miriam Ottenberg)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1948-08-25/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 22 January 1950, page 1: Hiss, Found Guilty of Perjury (Newbold Noyes, Jr.)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1950-01-22/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Daily Alaska Empire (Juneau), 24 January 1950, page 1: Hiss After Verdict (Associated Press photo caption)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045499/1950-01-24/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 23 January 1950, page 3: Hiss to File Appeal Immediately After Sentence (Associated Press)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1950-01-23/ed-1/?sp=3
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 2 May 1950, page 1: Alger Hiss Disbarred in New York State (Associated Press)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1950-05-02/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-one-of-these-witnesses/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 91.8
+    audioBytes: 1469169
+    transcript:
+      totalS: 91.8
+      lines:
+        - text: Look at the corner of the House office building across the avenue, the Cannon Building.
+          atS: 0
+          durationS: 4.24
+        - text: It is the oldest congressional office building.
+          atS: 4.48
+          durationS: 2.65
+        - text: At the back of its rotunda, twin marble staircases lead up to the Caucus Room.
+          atS: 7.3
+          durationS: 4.73
+        - text: On the twenty fifth of August, nineteen forty eight, that room was packed.
+          atS: 12.31
+          durationS: 4.02
+        - text: The House Committee on Un-American Activities had brought two men face to face.
+          atS: 16.93
+          durationS: 3.99
+        - text: One was Whittaker Chambers, a senior editor of Time Magazine, who said he had once been a Communist.
+          atS: 21.13
+          durationS: 5.83
+        - text: He had told the committee that a former State Department official had belonged to an underground Communist group in the government.
+          atS: 27.4
+          durationS: 6.11
+        - text: The other was that official.
+          atS: 33.89
+          durationS: 1.93
+        - text: Alger Hiss.
+          atS: 36.26
+          durationS: 1
+        - text: Before the questions began, the chairman made a promise.
+          atS: 37.77
+          durationS: 3.34
+        - text: As a result of this hearing, he said, certainly one of these witnesses will be tried for perjury.
+          atS: 41.81
+          durationS: 5.14
+        - text: Hiss was asked to stand.
+          atS: 47.34
+          durationS: 1.37
+        - text: So was Chambers, fifteen feet away.
+          atS: 49.09
+          durationS: 2.41
+        - text: Have you ever seen the individual who is standing?
+          atS: 52.01
+          durationS: 2.4
+        - text: I have, said Hiss.
+          atS: 54.93
+          durationS: 1.78
+        - text: I identify him as George Crosley.
+          atS: 56.95
+          durationS: 2.47
+        - text: The chairman was right, and it was Hiss.
+          atS: 59.75
+          durationS: 2.37
+        - text: In January nineteen fifty, a federal jury in New York convicted him of perjury on both counts.
+          atS: 62.56
+          durationS: 6.01
+        - text: One was for denying that he gave government secrets to Chambers.
+          atS: 69.01
+          durationS: 3.32
+        - text: He was sentenced to five years in prison.
+          atS: 72.77
+          durationS: 2.13
+        - text: Hiss would not accept it.
+          atS: 75.22
+          durationS: 1.37
+        - text: It just seems impossible, he was quoted as saying, that any one would believe Chambers, the admitted perjurer.
+          atS: 76.97
+          durationS: 6.19
+        - text: Look up at the building.
+          atS: 83.67
+          durationS: 1.11
+        - text: Two men stood up in that room, and before a single question was asked, the chairman had said that one of them would be tried.
+          atS: 85.11
+          durationS: 6.65

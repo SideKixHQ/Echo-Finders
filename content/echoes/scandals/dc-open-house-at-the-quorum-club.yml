@@ -1,0 +1,180 @@
+# Drafted by Claude Code (2026-11-12) for Washington DC (Capitol Hill, Senate side), Scandals topic, following the six beats in docs/writing-echoes.md. Filed under history until the Scandals category is built; tagged scandal.
+# Listening spot: Public sidewalk at the crossing of First Street and C Street NE, by the Dirksen Senate Office Building.
+# Position: the Evening Star of 27 and 31 October 1963 puts the Carroll Arms Hotel, and the club on its second floor, at "First and C streets N.E.", "just across the street from the new Senate Office Building" (the Dirksen Building, per the Architect of the Capitol bounded by Constitution Avenue, Second Street, First Street and C Street NE). Set on the crossing at 38.89375, -77.00535 (medium confidence: the crossing is sourced, the corner the hotel stood on is not). The hotel is gone; the script does not say what replaced it. About 190 m from "A Loan From an Old Friend".
+id: dc-open-house-at-the-quorum-club
+title: "Open House at the Quorum Club"
+summary: "As the Bobby Baker scandal broke in 1963, a private club for Senate aides and lobbyists let the press in for one hour."
+place: "First Street and C Street NE, site of the Carroll Arms Hotel, Capitol Hill, Washington, D.C."
+at: { lat: 38.89375, lng: -77.00535 }
+triggerRadiusKm: 0.04
+category: scandals
+format: short
+durationS: 103
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.7
+tags: [washington, capitol-hill, scandal, bobby-baker, quorum-club, carroll-arms, senate, 1963, lobbying]
+teaser: "Not a hideaway, said the man leaning on the bar."
+script: |
+  Look around this crossing, First and C Streets, North East. In nineteen sixty three, a hotel stood here, the Carroll Arms, just across the street from the new Senate office building. Upstairs, on the second floor, three rooms held a private club. The Quorum Club.
+
+  It had opened in nineteen sixty one, for Senate staff, lobbyists and their guests. Drinks were a dollar apiece. Membership was limited to two hundred.
+
+  One of its founders was Bobby Baker, the secretary to the Senate's Democratic majority. On the seventh of October, nineteen sixty three, with senators waiting to question him about his business ventures, Baker resigned. Three days later the Senate voted to investigate.
+
+  And suddenly everyone wanted to know about the club upstairs. The talk was of a hideaway, for members of Congress, lobbyists and playgirls.
+
+  So on the last day of October, the club did something it had never done. It opened its doors to the press, from ten in the morning until eleven.
+
+  Reporters and photographers trooped through the three rooms. The club's treasurer, who also owned the hotel, leaned on the bar and said it was nothing of the kind. There seemed to be a feeling, he said, that the Q Club was a secretive organization and a hideaway. That wasn't the image we wanted.
+
+  Bobby Baker was nowhere to be seen.
+
+  And since the story broke, the treasurer said, not one member had dropped out. In the last few days, the club had voted to take in five more.
+detail: >-
+  Everything here is from the Evening Star: the club's founding, rooms, prices and membership limit (27 October 1963), the Senate inquiry and its timing (29 October 1963), and the press open house, the treasurer's words, the five new members and Baker's resignation on 7 October (31 October 1963). Three pages of one paper are one source, so this is single-source; a second paper's report of the open house would corroborate it. Baker was later convicted (in 1967) of tax evasion, theft and conspiracy, but no fetched source covers that, so the script ends in 1963 and the echo is history, not true crime. The treasurer, Thomas Pickford, is not named because whether he is alive is unknown. The woman the Star mentions in connection with the club, who was sent back to Germany, is not mentioned; she was never charged with anything.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "In nineteen sixty three, a hotel stood here, the Carroll Arms, just across the street from the new Senate office building."
+    source: 3
+    quote: "Mr. Pickford also owns the Carroll Arms Hotel, First and C streets N.E., where the club is located."
+  - says: "In nineteen sixty three, a hotel stood here, the Carroll Arms, just across the street from the new Senate office building."
+    source: 3
+    quote: "The club is on the second floor of the hotel just across the street from the new Senate Office Building."
+  - says: "Upstairs, on the second floor, three rooms held a private club. The Quorum Club."
+    source: 1
+    quote: "The Quorum Club, Inc., for which the former secretary of the Senate majority served as secretary during 1961, its first year of operations, occupies three rooms on the second floor 1 of the Carroll Arms Hotel at First and C streets N.E."
+  - says: "It had opened in nineteen sixty one, for Senate staff, lobbyists and their guests."
+    source: 1
+    quote: "Robert O. (Bobby) Baker was one of the founding fathers of a discreet little private club frequented by Senate administrative assistants, lobbyists and their guests on Capitol Hill"
+  - says: "Drinks were a dollar apiece."
+    source: 1
+    quote: "Drinks sell for $1 apiece"
+  - says: "Membership was limited to two hundred."
+    source: 3
+    quote: "Mr. Pickford said the club organized in May, 1961, has a membership of 200. the limit set by the club’s nile."
+  - says: "One of its founders was Bobby Baker, the secretary to the Senate's Democratic majority."
+    source: 3
+    quote: "Mr. Baker, the former secretary of the Senate Democratic majority who helped organize the club, was nowhere to be seen."
+  - says: "On the seventh of October, nineteen sixty three, with senators waiting to question him about his business ventures, Baker resigned."
+    source: 3
+    quote: "Mr. Baker, who resigned his Senate position October 7, has not held office in the club for more than a year"
+  - says: "On the seventh of October, nineteen sixty three, with senators waiting to question him about his business ventures, Baker resigned."
+    source: 2
+    quote: "at a time when Senate [ leaders from both sides of the . aisle were waiting to question t him about his off-Capitol Hill ' ventures"
+  - says: "Three days later the Senate voted to investigate."
+    source: 2
+    quote: "Three days after his resignation, the Senate unanimously voted the investigation"
+  - says: "The talk was of a hideaway, for members of Congress, lobbyists and playgirls."
+    source: 3
+    quote: "Club officials, dismayed about publicity portraying the club as a hideaway for members of Congress, lobbyists and playgirls, held an open house from 10 am. to 11 am. for the press."
+  - says: "So on the last day of October, the club did something it had never done. It opened its doors to the press, from ten in the morning until eleven."
+    source: 3
+    quote: "The exclusive Quorum Club which has figured in the Robert O. (Bobby) Baker story on Capitol Hill opened wide its doors for a little while today."
+  - says: "Reporters and photographers trooped through the three rooms. The club's treasurer, who also owned the hotel, leaned on the bar and said it was nothing of the kind."
+    source: 3
+    quote: "With reporters and photographers flocking through the three rooms of the well-furnished , club, Mr. Pickford leaned on a bar and disclaimed that the club was in any sense a hideaway."
+  - says: "There seemed to be a feeling, he said, that the Q Club was a secretive organization and a hideaway. That wasn't the image we wanted."
+    source: 3
+    quote: "“There seemed to be a feeling that the Q Club was a secretive organization and a hidaway,” he said. “That wasn’t the image we wanted.”"
+  - says: "And since the story broke, the treasurer said, not one member had dropped out."
+    source: 3
+    quote: "Since the Baker story broke. Mr. Pickford said, there have been no dropouts."
+  - says: "In the last few days, the club had voted to take in five more."
+    source: 3
+    quote: "The club in the last four or five days voted to take in five new members to bring the club up to the maximum 200."
+  - says: "Look around this crossing, First and C Streets, North East."
+    source: 1
+    quote: "of the Carroll Arms Hotel at First and C streets N.E."
+  - says: "Bobby Baker was nowhere to be seen."
+    source: 3
+    quote: "was nowhere to be seen."
+sources:
+  - title: "Evening Star (Washington, D.C.), 27 October 1963, page 7: Baker Bared as a Founder of Capitol Hill Private Club"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1963-10-27/ed-1/?sp=7
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 29 October 1963, page 5: the Senate inquiry into Bobby Baker"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1963-10-29/ed-1/?sp=5
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 31 October 1963, page 1: Quorum Club Raises Veil"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1963-10-31/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-open-house-at-the-quorum-club/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 103.2
+    audioBytes: 1652235
+    transcript:
+      totalS: 103.2
+      lines:
+        - text: Look around this crossing, First and C Streets, North East.
+          atS: 0
+          durationS: 4.4
+        - text: In nineteen sixty three, a hotel stood here, the Carroll Arms, just across the street from the new Senate office building.
+          atS: 4.72
+          durationS: 7.78
+        - text: Upstairs, on the second floor, three rooms held a private club.
+          atS: 13.11
+          durationS: 4.1
+        - text: The Quorum Club.
+          atS: 17.59
+          durationS: 1.21
+        - text: It had opened in nineteen sixty one, for Senate staff, lobbyists and their guests.
+          atS: 19.31
+          durationS: 5.45
+        - text: Drinks were a dollar apiece.
+          atS: 25.26
+          durationS: 1.82
+        - text: Membership was limited to two hundred.
+          atS: 27.41
+          durationS: 2.22
+        - text: One of its founders was Bobby Baker, the secretary to the Senate's Democratic majority.
+          atS: 30.23
+          durationS: 5.37
+        - text: On the seventh of October, nineteen sixty three, with senators waiting to question him about his business ventures, Baker resigned.
+          atS: 36.42
+          durationS: 8.35
+        - text: Three days later the Senate voted to investigate.
+          atS: 45.47
+          durationS: 3.48
+        - text: And suddenly everyone wanted to know about the club upstairs.
+          atS: 49.46
+          durationS: 3.74
+        - text: The talk was of a hideaway, for members of Congress, lobbyists and playgirls.
+          atS: 53.8
+          durationS: 4.95
+        - text: So on the last day of October, the club did something it had never done.
+          atS: 59.35
+          durationS: 4.63
+        - text: It opened its doors to the press, from ten in the morning until eleven.
+          atS: 64.68
+          durationS: 4.19
+        - text: Reporters and photographers trooped through the three rooms.
+          atS: 69.98
+          durationS: 3.32
+        - text: The club's treasurer, who also owned the hotel, leaned on the bar and said it was nothing of the kind.
+          atS: 73.82
+          durationS: 5.83
+        - text: There seemed to be a feeling, he said, that the Q Club was a secretive organization and a hideaway.
+          atS: 80.6
+          durationS: 5.93
+        - text: That wasn't the image we wanted.
+          atS: 87.23
+          durationS: 1.82
+        - text: Bobby Baker was nowhere to be seen.
+          atS: 89.37
+          durationS: 2.08
+        - text: And since the story broke, the treasurer said, not one member had dropped out.
+          atS: 92.15
+          durationS: 5.35
+        - text: In the last few days, the club had voted to take in five more.
+          atS: 98.45
+          durationS: 4.74

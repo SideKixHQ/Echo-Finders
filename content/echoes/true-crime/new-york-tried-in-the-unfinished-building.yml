@@ -1,0 +1,210 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (corruption), filed under true-crime until the topic exists, following docs/writing-echoes.md and docs/14-true-crime.md.
+# Listening spot: Public sidewalk on the south side of Chambers Street, in front of the steps of the Tweed Courthouse (52 Chambers Street), City Hall Park, Lower Manhattan.
+# Position: the building faces Chambers Street on the north edge of City Hall Park; the pin is on the Chambers Street sidewalk at the foot of the portico steps (high confidence on the building, medium on the exact pavement point). About 120 m from the nearest echoes (African Burial Ground, City Hall), which tell different subjects.
+id: new-york-tried-in-the-unfinished-building
+title: "Tried in an Unfinished Building"
+summary: "The courthouse that made Boss Tweed's name a byword was still not finished when he was put on trial inside it, in 1873."
+place: "Tweed Courthouse, 52 Chambers Street, City Hall Park, Lower Manhattan"
+at: { lat: 40.71372, lng: -74.00530 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 109
+visibility: landmark-visible
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.75
+tags: [new-york, city-hall-park, scandal, corruption, tweed, 1870s]
+teaser: "They tried him inside the courthouse. It still was not finished."
+script: |
+  Look up the steps at the marble building in front of you. Its builders called it the new county courthouse. Everyone else calls it the Tweed Courthouse.
+
+  William Tweed and his Ring ran this city and county while it went up. Building began in eighteen sixty one. A few days later, Tweed bought a marble quarry in Massachusetts, and a large part of the marble for this courthouse was bought from it.
+
+  The state authorised about four and a half million dollars for the job. In nineteen fourteen, a city board put the real cost at between eleven and twelve million. Almost every major contractor on it was tied to the Ring, and sent in padded bills. Some of the contractors did not even exist.
+
+  In July eighteen seventy one, the New York Times began printing the courthouse payments, copied by a county auditor from the Comptroller's own books. Tweed was arrested that October.
+
+  His trial was held in the Court of Oyer and Terminer, here, in this courthouse, which was still not complete. In November eighteen seventy three, the jury came back. Guilty, on the counts covering the bills of Garvey and Keyser, two of the men whose courthouse accounts the Times had printed. The newspapers' bulletin boards put it in big letters. Tweed Guilty. A Verdict at Last.
+
+  He was sentenced to twelve years. The Court of Appeals cut it to one. Held again on new charges, he escaped his guards in eighteen seventy five, and fled to Cuba and then to Spain, where officials knew his face from a Thomas Nast cartoon. He was brought back, and in April eighteen seventy eight he died in the Ludlow Street Jail.
+
+  Look at the steps again.
+
+  The records of what was paid for this building were a large part of the evidence that brought him down. They tried him inside it, and they had not finished it yet.
+pronunciations:
+  - written: Oyer and Terminer
+    say: OY-er and TER-min-er
+  - written: Keyser
+    say: KY-zer
+detail: >-
+  Conviction status: convicted (November 1873, New-York Tribune of 20 November 1873 and the Landmarks Preservation Commission report). Nobody named is alive. The verdict counts are from the Tribune ("Keyser, Garvey, and Davidson counts"); the LPC report says he was convicted on 204 counts, which the script does not repeat because the two sources frame the counts differently. Cost figures, the quarry, the contractors, the Times exposure, the trial in the unfinished building, the sentence, the escape and the Nast cartoon are from the LPC report; the death in Ludlow Street Jail is in both the LPC report and The Sun of 13 April 1878. No violence is described.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-13"
+  reviewedAt: "2026-11-13"
+  contentWarning: "This echo concerns political corruption and a criminal trial in the 1870s. No violence is described."
+claims:
+  - says: "Everyone else calls it the Tweed Courthouse."
+    source: 1
+    quote: "The Tweed Courthouse, although associated by name and history with one of New York's most notoriously corrupt city governments, is architecturally one of the city's grandest and most important civic spaces."
+  - says: "William Tweed and his Ring ran this city and county while it went up."
+    source: 1
+    quote: "Tweed and his Ring dominated both the city and county of New York during much of the construction period of the courthouse, from 1861 until 1871."
+  - says: "Building began in eighteen sixty one."
+    source: 1
+    quote: "Construction began on the building in 1861 and progressed at an outrageously slow rate."
+  - says: "A few days later, Tweed bought a marble quarry in Massachusetts, and a large part of the marble for this courthouse was bought from it."
+    source: 1
+    quote: "In September 1861 just a few days after construction had begun on the new court- house, Tweed purchased a marble quarry in Sheffield, Massachusetts, from which a large portion of the marble for the courthouse was bought"
+  - says: "The state authorised about four and a half million dollars for the job."
+    source: 1
+    quote: "The total sum authorized by these legislative acts amounted to $4,550,000."
+  - says: "In nineteen fourteen, a city board put the real cost at between eleven and twelve million."
+    source: 1
+    quote: "But in a report publish e d by the Board of Estimate and Apportionment in 1914, the total cost of the build- ing was estimated to have been between $11,000,000 and $12,000,000."
+  - says: "Almost every major contractor on it was tied to the Ring, and sent in padded bills."
+    source: 1
+    quote: "It appears that almost every major contractor involved with the construction of the courthouse was also associated with the Ring and submitted fraudulent bills."
+  - says: "Some of the contractors did not even exist."
+    source: 1
+    quote: "ut some contractors, such as· J.A. Smi'th, and Hennes:s·ey, didn 1 t even exist."
+  - says: "In July eighteen seventy one, the New York Times began printing the courthouse payments, copied by a county auditor from the Comptroller's own books."
+    source: 1
+    quote: "It was 0 1 Rourke who copied the figures from the Comptroller•s book and gave them to the New York Times. 13 On July 21, 1871, the, New York Times began printing lists of the innumerable fraudulent payments made by Comptroller Connolly \" to the con- tractors for the new courthouse."
+  - says: "Tweed was arrested that October."
+    source: 1
+    quote: "Tweed was arrested on October 27, 1871."
+  - says: "His trial was held in the Court of Oyer and Terminer, here, in this courthouse, which was still not complete."
+    source: 1
+    quote: "The trial took place in the Court of Oyer and Terminer in the new county courthouse which, ironically, was still not complete."
+  - says: "In November eighteen seventy three, the jury came back."
+    source: 2
+    quote: "TWEED FOUND GUILTY. SENTENCE DEFERRED UNTIL SATURDAY. CONVICTION ON THE KEYSER, GARVEY, AND DAVID= SON COUNTS, AND ACQUITTAL ON THE REST"
+  - says: "Guilty, on the counts covering the bills of Garvey and Keyser, two of the men whose courthouse accounts the Times had printed."
+    source: 2
+    quote: "the jury retired, and before Img returned with a verdiet off guilty on the Keyser, Garvey, and Davidson counts"
+  - says: "Guilty, on the counts covering the bills of Garvey and Keyser, two of the men whose courthouse accounts the Times had printed."
+    source: 1
+    quote: "The accounts of Garvey, Keyser and many others, together with records of padded payrolls, appeared in the newspaper for several weeks."
+  - says: "The newspapers' bulletin boards put it in big letters. Tweed Guilty. A Verdict at Last."
+    source: 2
+    quote: "on the bulletin boards of all the newspapers of the city, was announced in such sensational catehi-words as “Tweed Guilty?” “A Verdict at Last!”"
+  - says: "He was sentenced to twelve years. The Court of Appeals cut it to one."
+    source: 1
+    quote: "sentenced to twelve years of imprisonment and to a fine of $12,750. The Court of Appeals reduced his sentence to one year in prison and a $250 fine."
+  - says: "Held again on new charges, he escaped his guards in eighteen seventy five, and fled to Cuba and then to Spain, where officials knew his face from a Thomas Nast cartoon."
+    source: 1
+    quote: "On the evening of December 4, 1875, while on leave from prison, Tweed escaped from his guards and fled to Cuba and then to Spain. It was a cartoon by Thomas Nast that aided Spanish officials in recognizing Tweed."
+  - says: "He was brought back, and in April eighteen seventy eight he died in the Ludlow Street Jail."
+    source: 3
+    quote: "William M. Tweed died In Ludlow afreet jail nt noon yesterday."
+  - says: "He was brought back, and in April eighteen seventy eight he died in the Ludlow Street Jail."
+    source: 1
+    quote: "However, he died in his room at the Ludlow Street Jail on April 12, 1878,"
+  - says: "The records of what was paid for this building were a large part of the evidence that brought him down."
+    source: 1
+    quote: "The records of the payments made for the new courthouse were a major part of the evidence used in bringing about the downfall of the Ring in 1871."
+sources:
+  - title: "Tweed Courthouse, first floor interior: designation report (LP-1122)"
+    publisher: "New York City Landmarks Preservation Commission"
+    url: https://s-media.nyc.gov/agencies/lpc/lp/1122.pdf
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "New-York Tribune, 20 November 1873, page 1: Tweed Found Guilty"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030214/1873-11-20/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "The Sun (New York), 13 April 1878, page 1: William Marcy Tweed, A Most Eventful Life Ending in Ludlow Street Jail"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030272/1878-04-13/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-tried-in-the-unfinished-building/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 109.4
+    audioBytes: 1750874
+    transcript:
+      totalS: 109.4
+      lines:
+        - text: Look up the steps at the marble building in front of you.
+          atS: 0
+          durationS: 2.46
+        - text: Its builders called it the new county courthouse.
+          atS: 2.54
+          durationS: 2.58
+        - text: Everyone else calls it the Tweed Courthouse.
+          atS: 5.5
+          durationS: 2.54
+        - text: William Tweed and his Ring ran this city and county while it went up.
+          atS: 8.22
+          durationS: 3.62
+        - text: Building began in eighteen sixty one.
+          atS: 12.02
+          durationS: 2.45
+        - text: A few days later, Tweed bought a marble quarry in Massachusetts, and a large part of the marble for this courthouse was bought from it.
+          atS: 14.68
+          durationS: 7.05
+        - text: The state authorised about four and a half million dollars for the job.
+          atS: 22
+          durationS: 3.7
+        - text: In nineteen fourteen, a city board put the real cost at between eleven and twelve million.
+          atS: 26.15
+          durationS: 5.06
+        - text: Almost every major contractor on it was tied to the Ring, and sent in padded bills.
+          atS: 31.45
+          durationS: 4.89
+        - text: Some of the contractors did not even exist.
+          atS: 36.66
+          durationS: 2.44
+        - text: In July eighteen seventy one, the New York Times began printing the courthouse payments, copied by a county auditor from the Comptroller's own books.
+          atS: 39.61
+          durationS: 7.94
+        - text: Tweed was arrested that October.
+          atS: 47.83
+          durationS: 1.86
+        - text: His trial was held in the Court of Oyer and Terminer, here, in this courthouse, which was still not complete.
+          atS: 49.87
+          durationS: 6.83
+        - text: In November eighteen seventy three, the jury came back.
+          atS: 57.5
+          durationS: 3.44
+        - text: Guilty, on the counts covering the bills of Garvey and Keyser, two of the men whose courthouse accounts the Times had printed.
+          atS: 61.38
+          durationS: 6.92
+        - text: The newspapers' bulletin boards put it in big letters.
+          atS: 68.74
+          durationS: 2.98
+        - text: Tweed Guilty.
+          atS: 72.11
+          durationS: 1.08
+        - text: A Verdict at Last.
+          atS: 73.63
+          durationS: 1.37
+        - text: He was sentenced to twelve years.
+          atS: 75.51
+          durationS: 1.85
+        - text: The Court of Appeals cut it to one.
+          atS: 77.87
+          durationS: 2.08
+        - text: Held again on new charges, he escaped his guards in eighteen seventy five, and fled to Cuba and then to Spain, where officials knew his face from a Thomas Nast cartoon.
+          atS: 80.64
+          durationS: 10.84
+        - text: He was brought back, and in April eighteen seventy eight he died in the Ludlow Street Jail.
+          atS: 92
+          durationS: 5.88
+        - text: Look at the steps again.
+          atS: 98.68
+          durationS: 1.3
+        - text: The records of what was paid for this building were a large part of the evidence that brought him down.
+          atS: 100.8
+          durationS: 5
+        - text: They tried him inside it, and they had not finished it yet.
+          atS: 106.24
+          durationS: 3.12

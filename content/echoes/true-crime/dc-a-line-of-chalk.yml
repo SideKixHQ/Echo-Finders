@@ -1,0 +1,181 @@
+# Drafted by Claude Code (2026-11-12) for Washington DC (Georgetown), Scandals topic, following the six beats in docs/writing-echoes.md and docs/14-true-crime.md. Filed under true-crime (an espionage conviction) until the Scandals category is built; tagged scandal and spies.
+# Listening spot: Public sidewalk at the corner of 37th Street and R Street NW, Georgetown, by the corner where the mailbox stood.
+# Position: the Department of Defense Security Institute's 1994 bulletin, quoting the Senate Intelligence Committee's account, places the signal mailbox "at the corner of 37th and R Street, N.W."; the pin is on that corner at 38.91330, -77.07160 (medium confidence on the exact corner of the four; the mailbox has reportedly been removed, which the script does not claim either way).
+id: dc-a-line-of-chalk
+title: "A Line of Chalk"
+summary: "In 1993 the FBI watched a CIA officer's signal mailbox on this corner. One morning a chalk line appeared on it."
+place: "Corner of 37th Street and R Street NW, Georgetown, Washington, D.C."
+at: { lat: 38.91330, lng: -77.07160 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.78
+tags: [washington, georgetown, scandal, spies, aldrich-ames, cia, kgb, cold-war, 1993, espionage]
+teaser: "There at seven in the morning. Gone by the afternoon."
+script: |
+  Look at this corner, where Thirty Seventh Street meets R Street. In October nineteen ninety three, there was a mailbox here, and the FBI was watching it.
+
+  Agents had searched the home of a CIA officer named Aldrich Ames, and found a document on his computer. It identified a mailbox at Thirty Seventh and R Streets as a signal site. In the plan Ames shared with the KGB, the site had a cover name. Smile.
+
+  The signal was a chalk mark on a mailbox. It told the Russians that Ames would load a dead drop, or come to a meeting.
+
+  That October the FBI had a tap on his telephone. It caught his wife asking why he had not left the signal yet. I should have, he said, except it was raining like crazy.
+
+  Then, on the twelfth of October, Ames told her he would leave for work early the next morning, to put a signal down, confirming that I am coming. He had a meeting with the KGB in Bogota.
+
+  Agents followed him here. They did not see him make a mark. But at seven in the morning, there was a horizontal chalk mark on the side of the mailbox.
+
+  Ames had been selling secrets to Moscow since the spring of nineteen eighty five. He was arrested in February nineteen ninety four. He pleaded guilty, and was sentenced to life in prison without parole.
+
+  Look at the corner. By that afternoon, the chalk mark had been erased.
+pronunciations:
+  - written: Bogota
+    say: boh-goh-TAH
+detail: >-
+  Conviction status: convicted. Ames pleaded guilty to conspiracy to commit espionage on 28 April 1994 and was sentenced to life without parole (Los Angeles Times, 29 April 1994; the Department of Defense Security Institute's Security Awareness Bulletin 4-94, which reprints the Senate Intelligence Committee's findings). The search of his home, the computer document naming the mailbox, the cover name SMILE, the call of 12 October 1993, the 7 a.m. chalk mark and its erasure are from the bulletin. The raining call is from the Los Angeles Times of 26 February 1994, quoting the FBI's transcript. Ames is believed to be alive and serving his sentence, so involvesLivingPeople is true; he was convicted, so nothing is told as alleged. His wife is not named; she also pleaded guilty, to lesser charges. Both sources ultimately rest on the FBI's affidavit and the agreed statement of facts, reported independently. The CIA sources Ames betrayed, many of whom were executed, are not described.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: true
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-13"
+  reviewedAt: "2026-11-13"
+  contentWarning: "This echo concerns espionage by a CIA officer, whose betrayals cost lives, and his conviction. No violence is described."
+claims:
+  - says: "In October nineteen ninety three, there was a mailbox here, and the FBI was watching it."
+    source: 1
+    quote: "Around 7:00 a.m., FBI agents observed that a horizontal chalk mark had appeared on a mailbox at the comer of 37th and R Street, N.W., Washington, D.C."
+  - says: "Agents had searched the home of a CIA officer named Aldrich Ames, and found a document on his computer. It identified a mailbox at Thirty Seventh and R Streets as a signal site."
+    source: 1
+    quote: "a com¬ puter document which identified a mailbox at 37th and R Streets in Washington, D.C. as a signal site"
+  - says: "In the plan Ames shared with the KGB, the site had a cover name. Smile."
+    source: 1
+    quote: "They knew from other recovered documents that this mailbox served as signal site SMILE."
+  - says: "The signal was a chalk mark on a mailbox. It told the Russians that Ames would load a dead drop, or come to a meeting."
+    source: 1
+    quote: "Ames would leave a signal — such as a chalk mark on a mailbox to indicate to the So¬ viets that he would “load” a dead drop site."
+  - says: "It caught his wife asking why he had not left the signal yet. I should have, he said, except it was raining like crazy."
+    source: 2
+    quote: "Her husband replied, “I should have, except it was raining like crazy.”"
+  - says: "That October the FBI had a tap on his telephone."
+    source: 2
+    quote: "FBI agents say they listened in on a call last October in which a panicked Rosario Ames grilled her husband about a signal he was supposed to leave on a mailbox"
+  - says: "Then, on the twelfth of October, Ames told her he would leave for work early the next morning, to put a signal down, confirming that I am coming."
+    source: 1
+    quote: "On October 12, 1993, Ames spoke to his wife about leaving for work early the next morning to “put a signal down...confirming that I am coming.”"
+  - says: "He had a meeting with the KGB in Bogota."
+    source: 1
+    quote: "On November 1, 1993, Ames traveled to Bo¬ gota for another personal meeting with a KGB official."
+  - says: "Agents followed him here. They did not see him make a mark. But at seven in the morning, there was a horizontal chalk mark on the side of the mailbox."
+    source: 1
+    quote: "FBI agents followed Ames to the mailbox, and, while not observing him making a mark, they found a horizontal mark on the side of the mailbox at 7:00 a.m. the same day."
+  - says: "Ames had been selling secrets to Moscow since the spring of nineteen eighty five."
+    source: 3
+    quote: "When he began spying for the KGB in the spring of 1985"
+  - says: "He was arrested in February nineteen ninety four."
+    source: 3
+    quote: "The Ameses, arrested Feb. 21 at their suburban Virginia home"
+  - says: "He pleaded guilty, and was sentenced to life in prison without parole."
+    source: 3
+    quote: "For his crimes, Ames was sentenced by a federal judge to life in prison without possibility of parole"
+  - says: "He pleaded guilty, and was sentenced to life in prison without parole."
+    source: 1
+    quote: "On April 28, 1994, Ames and his wife, Ro¬ sario, pled guilty to charges stemming from their espionage activities."
+  - says: "By that afternoon, the chalk mark had been erased."
+    source: 1
+    quote: "Later in the afternoon, the chalk mark had been erased."
+  - says: "Look at this corner, where Thirty Seventh Street meets R Street."
+    source: 1
+    quote: "a mailbox at the comer of 37th and R Street, N.W., Washington, D.C."
+sources:
+  - title: "Security Awareness Bulletin, Number 4-94: the Aldrich Ames espionage case"
+    publisher: "Department of Defense Security Institute (via Defense Technical Information Center, ADA311607, on the Internet Archive)"
+    url: https://archive.org/details/DTIC_ADA311607
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "For Ames, a Wife and a Crossroads in Mexico City (Paul Richter, 26 February 1994)"
+    publisher: "Los Angeles Times"
+    url: https://www.latimes.com/archives/la-xpm-1994-02-26-mn-27360-story.html
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Ames Gets Life; Admits Betraying Double Agents (Robert L. Jackson and Ronald J. Ostrow, 29 April 1994)"
+    publisher: "Los Angeles Times"
+    url: https://www.latimes.com/archives/la-xpm-1994-04-29-mn-51912-story.html
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-a-line-of-chalk/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 84.8
+    audioBytes: 1358410
+    transcript:
+      totalS: 84.8
+      lines:
+        - text: Look at this corner, where Thirty Seventh Street meets R Street.
+          atS: 0
+          durationS: 3.32
+        - text: In October nineteen ninety three, there was a mailbox here, and the FBI was watching it.
+          atS: 4.27
+          durationS: 4.88
+        - text: Agents had searched the home of a CIA officer named Aldrich Ames, and found a document on his computer.
+          atS: 9.96
+          durationS: 6
+        - text: It identified a mailbox at Thirty Seventh and R Streets as a signal site.
+          atS: 16.24
+          durationS: 4.34
+        - text: In the plan Ames shared with the KGB, the site had a cover name.
+          atS: 20.97
+          durationS: 4.3
+        - text: Smile.
+          atS: 25.59
+          durationS: 0.72
+        - text: The signal was a chalk mark on a mailbox.
+          atS: 26.55
+          durationS: 2.38
+        - text: It told the Russians that Ames would load a dead drop, or come to a meeting.
+          atS: 29.21
+          durationS: 3.89
+        - text: That October the FBI had a tap on his telephone.
+          atS: 33.48
+          durationS: 3.07
+        - text: It caught his wife asking why he had not left the signal yet.
+          atS: 36.83
+          durationS: 3.25
+        - text: I should have, he said, except it was raining like crazy.
+          atS: 40.32
+          durationS: 3.61
+        - text: Then, on the twelfth of October, Ames told her he would leave for work early the next morning, to put a signal down, confirming that I am coming.
+          atS: 44.37
+          durationS: 8.89
+        - text: He had a meeting with the KGB in Bogota.
+          atS: 53.96
+          durationS: 2.86
+        - text: Agents followed him here.
+          atS: 57.26
+          durationS: 1.54
+        - text: They did not see him make a mark.
+          atS: 59.41
+          durationS: 1.82
+        - text: But at seven in the morning, there was a horizontal chalk mark on the side of the mailbox.
+          atS: 61.67
+          durationS: 5.16
+        - text: Ames had been selling secrets to Moscow since the spring of nineteen eighty five.
+          atS: 67.27
+          durationS: 4.6
+        - text: He was arrested in February nineteen ninety four.
+          atS: 72.25
+          durationS: 3.01
+        - text: He pleaded guilty, and was sentenced to life in prison without parole.
+          atS: 75.5
+          durationS: 4.34
+        - text: Look at the corner.
+          atS: 80.05
+          durationS: 1.01
+        - text: By that afternoon, the chalk mark had been erased.
+          atS: 81.66
+          durationS: 3.18

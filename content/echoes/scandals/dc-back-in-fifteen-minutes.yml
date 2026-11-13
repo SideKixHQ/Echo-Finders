@@ -1,0 +1,209 @@
+# Drafted by Claude Code (2026-11-12) for Washington DC (Georgetown), Scandals topic, following the six beats in docs/writing-echoes.md. Filed under history (no crime, no charge) until the Scandals category is built; tagged scandal and spies.
+# Listening spot: Public sidewalk on Wisconsin Avenue NW at the corner of Dumbarton Street, Georgetown.
+# Position: Au Pied de Cochon was at 1335 Wisconsin Avenue NW, at Dumbarton Street (restaurant listings and local history sites found by search; not in a fetched source, which say only "a Georgetown restaurant"). Set on the corner at 38.90745, -77.06275 (medium confidence). The restaurant closed long ago; the script does not say what is there now.
+id: dc-back-in-fifteen-minutes
+title: "Back in Fifteen Minutes"
+summary: "In 1985 a KGB defector got up from dinner with his CIA handler here, walked out, and went back to the Soviets."
+place: "Wisconsin Avenue NW at Dumbarton Street, site of Au Pied de Cochon, Georgetown, Washington, D.C."
+at: { lat: 38.90745, lng: -77.06275 }
+triggerRadiusKm: 0.04
+category: scandals
+format: short
+durationS: 102
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.78
+tags: [washington, georgetown, wisconsin-avenue, scandal, spies, yurchenko, kgb, cia, cold-war, 1985, defector]
+teaser: "Would you shoot me? No, of course not. So he left."
+script: |
+  Look at this corner of Wisconsin Avenue. In November nineteen eighty five there was a small, rather noisy French restaurant here, Au Pied de Cochon. In French, the name means the pig's foot.
+
+  One Saturday night a Russian sat down to dinner here with his CIA handler. His name was Vitaly Yurchenko. The State Department had described him as a defector, a senior officer of the KGB. That August he had walked into the American Embassy in Rome and asked for asylum.
+
+  ABC News reported what happened at the table. Yurchenko asked his companion, what would you do if I walked out? Would you shoot me?
+
+  No, of course not, said the CIA man. We don't treat defectors that way.
+
+  So Yurchenko got up and left. On his way out, it was reported, he said, if I'm not back in fifteen minutes, don't blame yourself. Nobody followed him. The Soviet compound was little more than a mile away.
+
+  On Monday he held a news conference at the Soviet Embassy. He said the CIA had abducted him in Rome and drugged him. The State Department called that completely false.
+
+  On Wednesday he left Washington on an Aeroflot jet. He grinned and waved to reporters, and answered no questions.
+
+  A senator on the intelligence committee put the choice plainly. Either a real defector had been allowed just to walk away, or the Americans had been fooled by a double agent.
+
+  Look at the corner. He was not back in fifteen minutes.
+pronunciations:
+  - written: Yurchenko
+    say: yur-CHEN-koh
+  - written: Au Pied de Cochon
+    say: oh pee-AY duh koh-SHON
+detail: >-
+  No one was charged with anything, so this is history, not true crime. The restaurant, its name, the "would you shoot me" exchange (attributed aloud to ABC News, as the Los Angeles Times did), the fifteen minutes (attributed: "it was reported"), the mile to the Soviet compound and Senator Leahy's either-or are from the Los Angeles Times of 6 and 7 November 1985. The single handler, the lack of any tail, the news conference, the State Department's reply and the Aeroflot departure are from the Chicago Tribune of 5, 7 and 10 November 1985. Yurchenko's own claim of abduction is told as his claim. Whether he was a genuine defector is still argued, and the script leaves it as the senator's question. Yurchenko's fate after 1985 is not reliably reported, so the script says nothing about it. Leahy is named in the detail only.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In November nineteen eighty five there was a small, rather noisy French restaurant here, Au Pied de Cochon."
+    source: 1
+    quote: "It was not clear what ruse Yurchenko used to get away from his dining companions at the restaurant, which is small and rather noisy."
+  - says: "In November nineteen eighty five there was a small, rather noisy French restaurant here, Au Pied de Cochon."
+    source: 1
+    quote: "According to intelligence sources, Yurchenko on Saturday walked out of Au Pied de Cochon, a Georgetown restaurant where he was dining with his CIA contacts, and headed for the Soviet Embassy compound nearby."
+  - says: "In French, the name means the pig's foot."
+    source: 1
+    quote: "Employees of the restaurant, whose name in French means “the pig’s foot,” said they were interviewed repeatedly by CIA officials after Yurchenko’s departure."
+  - says: "One Saturday night a Russian sat down to dinner here with his CIA handler."
+    source: 3
+    quote: "Yurchenko, dining with a single CIA handler at the Au Pied de Cochon restaurant in the Georgetown section of Washington last Saturday, was allowed to get up and leave with no questions asked and no effort made to trail him."
+  - says: "The State Department had described him as a defector, a senior officer of the KGB."
+    source: 4
+    quote: "A high-ranking Soviet KGB officer who had been described by the State Department as a defector held a surprising and unprecedented news conference at the Soviet Embassy Monday"
+  - says: "That August he had walked into the American Embassy in Rome and asked for asylum."
+    source: 4
+    quote: "He said Yurchenko walked into the U.S. Embassy in Rome Aug. 1, asked for asylum"
+  - says: "ABC News reported what happened at the table. Yurchenko asked his companion, what would you do if I walked out? Would you shoot me?"
+    source: 2
+    quote: "ABC News reported that, at the restaurant, Au Pied de Cochon, Yurchenko asked his CIA companion: “What would you do if I walked out? Would you shoot me?”"
+  - says: "No, of course not, said the CIA man. We don't treat defectors that way."
+    source: 2
+    quote: "“No, of course not,” the CIA escort said. “We don’t treat defectors that way.”"
+  - says: "On his way out, it was reported, he said, if I'm not back in fifteen minutes, don't blame yourself."
+    source: 2
+    quote: "Yurchenko then left the restaurant, reportedly saying: “If I’m not back in 15 minutes, don’t blame yourself.”"
+  - says: "Nobody followed him."
+    source: 3
+    quote: "was allowed to get up and leave with no questions asked and no effort made to trail him."
+  - says: "The Soviet compound was little more than a mile away."
+    source: 1
+    quote: "The embassy compound is little more than a mile away from the restaurant."
+  - says: "On Monday he held a news conference at the Soviet Embassy. He said the CIA had abducted him in Rome and drugged him."
+    source: 4
+    quote: "held a surprising and unprecedented news conference at the Soviet Embassy Monday, claiming he had been ”forcibly abducted” in Rome, drugged by CIA interrogators"
+  - says: "The State Department called that completely false."
+    source: 4
+    quote: "The State Department called Yurchenko`s account ”completely false and without any foundation”"
+  - says: "On Wednesday he left Washington on an Aeroflot jet. He grinned and waved to reporters, and answered no questions."
+    source: 5
+    quote: "He left Washington Wednesday afternoon on an Aeroflot jet, which had brought Ambassador Anatoly Dobrynin from Moscow. Embassy personnel saw him off. He grinned and waved to reporters but answered no questions."
+  - says: "A senator on the intelligence committee put the choice plainly. Either a real defector had been allowed just to walk away, or the Americans had been fooled by a double agent."
+    source: 1
+    quote: "“You’ve either got a defector who was allowed just to walk away under circumstances I still can’t understand and cause a significant embarrassment to the United States, or you have a double agent who was planted on the United States,” Leahy said."
+  - says: "His name was Vitaly Yurchenko."
+    source: 4
+    quote: "Vitaly Yurchenko, who had been described by the State Department as the No. 5 man in Soviet intelligence"
+  - says: "So Yurchenko got up and left."
+    source: 2
+    quote: "Yurchenko then left the restaurant"
+  - says: "He was not back in fifteen minutes."
+    source: 1
+    quote: "Yurchenko on Saturday walked out of Au Pied de Cochon, a Georgetown restaurant where he was dining with his CIA contacts, and headed for the Soviet Embassy compound nearby."
+sources:
+  - title: "U.S. Clears KGB Agent to Go Home (Norman Kempster, 6 November 1985)"
+    publisher: "Los Angeles Times"
+    url: https://www.latimes.com/archives/la-xpm-1985-11-06-mn-4609-story.html
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "CIA Admits Yurchenko Mistakes, Panel Reports (Ronald J. Ostrow, 7 November 1985)"
+    publisher: "Los Angeles Times"
+    url: https://www.latimes.com/archives/la-xpm-1985-11-07-mn-3113-story.html
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Soviet Spy's Flip-Flop Defection Leaves CIA Red-Faced (10 November 1985)"
+    publisher: "Chicago Tribune"
+    url: https://www.chicagotribune.com/1985/11/10/soviet-spys-flip-flop-defection-leaves-cia-red-faced/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "KGB Agent: CIA Abducted Me (5 November 1985)"
+    publisher: "Chicago Tribune"
+    url: https://www.chicagotribune.com/1985/11/05/kgb-agent-cia-abducted-me/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Soviet Defections May Be Deliberate Ploy, Reagan Says (7 November 1985)"
+    publisher: "Chicago Tribune"
+    url: https://www.chicagotribune.com/1985/11/07/soviet-defections-may-be-deliberate-ploy-reagan-says/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-back-in-fifteen-minutes/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 101.7
+    audioBytes: 1628412
+    transcript:
+      totalS: 101.7
+      lines:
+        - text: Look at this corner of Wisconsin Avenue.
+          atS: 0
+          durationS: 2.38
+        - text: In November nineteen eighty five there was a small, rather noisy French restaurant here, Au Pied de Cochon.
+          atS: 2.82
+          durationS: 8.58
+        - text: In French, the name means the pig's foot.
+          atS: 11.84
+          durationS: 2.95
+        - text: One Saturday night a Russian sat down to dinner here with his CIA handler.
+          atS: 15.39
+          durationS: 4.82
+        - text: His name was Vitaly Yurchenko.
+          atS: 20.82
+          durationS: 2.19
+        - text: The State Department had described him as a defector, a senior officer of the KGB.
+          atS: 23.61
+          durationS: 5.53
+        - text: That August he had walked into the American Embassy in Rome and asked for asylum.
+          atS: 30.09
+          durationS: 4.53
+        - text: ABC News reported what happened at the table.
+          atS: 35.32
+          durationS: 2.95
+        - text: Yurchenko asked his companion, what would you do if I walked out?
+          atS: 38.71
+          durationS: 4.33
+        - text: Would you shoot me?
+          atS: 43.36
+          durationS: 1.07
+        - text: No, of course not, said the CIA man.
+          atS: 45.13
+          durationS: 2.89
+        - text: We don't treat defectors that way.
+          atS: 48.4
+          durationS: 1.95
+        - text: So Yurchenko got up and left.
+          atS: 50.86
+          durationS: 2.28
+        - text: On his way out, it was reported, he said, if I'm not back in fifteen minutes, don't blame yourself.
+          atS: 53.74
+          durationS: 6.32
+        - text: Nobody followed him.
+          atS: 60.38
+          durationS: 1.32
+        - text: The Soviet compound was little more than a mile away.
+          atS: 62.82
+          durationS: 3.31
+        - text: On Monday he held a news conference at the Soviet Embassy.
+          atS: 66.46
+          durationS: 3.6
+        - text: He said the CIA had abducted him in Rome and drugged him.
+          atS: 70.44
+          durationS: 3.69
+        - text: The State Department called that completely false.
+          atS: 74.51
+          durationS: 2.68
+        - text: On Wednesday he left Washington on an Aeroflot jet.
+          atS: 77.71
+          durationS: 3.76
+        - text: He grinned and waved to reporters, and answered no questions.
+          atS: 81.91
+          durationS: 4.05
+        - text: A senator on the intelligence committee put the choice plainly.
+          atS: 86.56
+          durationS: 3.32
+        - text: Either a real defector had been allowed just to walk away, or the Americans had been fooled by a double agent.
+          atS: 90.58
+          durationS: 6.42
+        - text: Look at the corner.
+          atS: 98.12
+          durationS: 1.02
+        - text: He was not back in fifteen minutes.
+          atS: 99.42
+          durationS: 2.29

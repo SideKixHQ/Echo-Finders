@@ -1,0 +1,157 @@
+# Drafted by Claude Code (2026-11-12) for Washington DC (Tidal Basin), Scandals topic, following the six beats in docs/writing-echoes.md. Filed under history until the Scandals category is built (no one was charged); tagged scandal.
+# Listening spot: The Tidal Basin path on the east side, by the water between the Kutz Bridge and the Jefferson Memorial, looking across toward the memorial.
+# Position: the Los Angeles Times says police stopped the car "near the Tidal Basin" and that Foxe leapt into the water "near the Jefferson Memorial". Set on the Tidal Basin path at 38.88260, -77.03530 (low to medium confidence: the general place is sourced, the exact spot of the stop is not, and the script says only "near here"). About 130 m from "The Cherry Tree Rebellion", a different subject.
+id: dc-the-buttons-popped-off
+title: "The Buttons Popped Off"
+summary: "In 1974 police stopped a congressman's car by the Tidal Basin. A dancer jumped into the water, and his power began to sink."
+place: "Tidal Basin, near the Jefferson Memorial, Washington, D.C."
+at: { lat: 38.88260, lng: -77.03530 }
+triggerRadiusKm: 0.06
+category: scandals
+format: short
+durationS: 97
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.74
+tags: [washington, tidal-basin, jefferson-memorial, scandal, wilbur-mills, fanne-foxe, congress, 1974]
+teaser: "The most tightly buttoned man in Congress, by the water, at night."
+script: |
+  Look out over the Tidal Basin, toward the Jefferson Memorial. Early on the seventh of October, nineteen seventy four, police stopped a weaving car near here.
+
+  In the car was one of the most powerful men in Washington. Wilbur Mills of Arkansas, for sixteen years chairman of the House Ways and Means Committee. He wrote much of the federal tax code. He was once called the most tightly buttoned up man in Congress.
+
+  A woman jumped from the car and ran. She was Annabel Battistella, a burlesque dancer known on stage as Fanne Foxe, the Argentine firecracker. She leapt into the water, near the Jefferson Memorial.
+
+  Mills stepped out of the car, his face bleeding.
+
+  At first a spokesman denied that Mills had been in the car at all. Then Mills said she was one of the neighbors and friends he had been entertaining, that she had been taken ill, and that in a struggle her elbow had broken his glasses.
+
+  The truth came out, slowly. Ten days later, back in Arkansas, he said it himself. I drank some champagne when I knew it went to my head quickly. And it did.
+
+  He was elected again a month later. But he stepped down as chairman, and both the committee and its chairman lost much of their power. He went into hospital for his alcoholism, and spent his later years talking to anyone who would listen about the need for treatment.
+
+  Look at the water. As one newspaper put it, this is where the buttons popped off.
+pronunciations:
+  - written: Battistella
+    say: bat-ih-STEL-uh
+  - written: Fanne Foxe
+    say: FANNY FOX
+detail: >-
+  Single source: the Los Angeles Times obituary of Mills (Times Wire Services, 3 May 1992), which gives the stop, the leap, the bleeding face, the denials, the elbow, the champagne line, the re-election and the loss of power, and his later work on alcoholism. A second independent source was not reachable: the Washington Post's 2021 obituary of Battistella and the contemporary 1974 reports are behind hosts this session could not reach. Mills died in 1992 and Battistella in 2021 (the latter from search results, not a fetched page), so no one named is alive; Battistella was public in the story under her stage name. No one was charged, so this is history. The weaving car and the leap are the paper's words; nothing about her is said beyond what it printed.
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "Early on the seventh of October, nineteen seventy four, police stopped a weaving car near here."
+    source: 1
+    quote: "The buttons popped off early on Oct. 7, 1974, when police stopped Mills’ weaving car in Washington near the Tidal Basin."
+  - says: "Wilbur Mills of Arkansas, for sixteen years chairman of the House Ways and Means Committee."
+    source: 1
+    quote: "Mills, a Democrat, wielded immense influence as chairman of the tax-writing House Ways and Means Committee for 16 years."
+  - says: "He wrote much of the federal tax code."
+    source: 1
+    quote: "he wrote much of the federal tax code and helped shape the Social Security program."
+  - says: "He was once called the most tightly buttoned up man in Congress."
+    source: 1
+    quote: "who was once called “the most tightly buttoned-up man in Congress.”"
+  - says: "She was Annabel Battistella, a burlesque dancer known on stage as Fanne Foxe, the Argentine firecracker. She leapt into the water, near the Jefferson Memorial."
+    source: 1
+    quote: "Annabel Battistella, a burlesque dancer known as Fanne Foxe, “the Argentine firecracker,” jumped from the car and ran, leaping into the Potomac River estuary near the Jefferson Memorial."
+  - says: "Mills stepped out of the car, his face bleeding."
+    source: 1
+    quote: "An intoxicated Mills stepped from the car, his face bleeding."
+  - says: "At first a spokesman denied that Mills had been in the car at all. Then Mills said she was one of the neighbors and friends he had been entertaining, that she had been taken ill, and that in a struggle her elbow had broken his glasses."
+    source: 1
+    quote: "At first, a Mills spokesman denied that the congressman was in the car. Later, Mills claimed Battistella was among neighbors and friends he was entertaining, that she became ill and he tried to take her home. He said there was a struggle and her elbow broke his glasses, causing facial cuts."
+  - says: "Ten days later, back in Arkansas, he said it himself. I drank some champagne when I knew it went to my head quickly. And it did."
+    source: 1
+    quote: "“I did something I shouldn’t have done,” Mills said in Little Rock, Ark., 10 days later. “I drank some champagne when I knew it went to my head quickly. And it did.”"
+  - says: "He was elected again a month later. But he stepped down as chairman, and both the committee and its chairman lost much of their power."
+    source: 1
+    quote: "Mills was elected to his 19th and final House term a month later, but he was held to 59% of the vote. He stepped down as chairman of the Ways and Means Committee during that term and saw both the committee and its chairman stripped of many of its powers."
+  - says: "He went into hospital for his alcoholism, and spent his later years talking to anyone who would listen about the need for treatment."
+    source: 1
+    quote: "As a recovered alcoholic, Mills spoke to civic clubs, state legislatures and congressional committees about the need for treatment programs."
+  - says: "As one newspaper put it, this is where the buttons popped off."
+    source: 1
+    quote: "The buttons popped off early on Oct. 7, 1974"
+  - says: "In the car was one of the most powerful men in Washington."
+    source: 1
+    quote: "Former Rep. Wilbur D. Mills, the powerful Arkansas congressman whose career was destroyed by a stripper’s plunge into Washington’s Tidal Basin"
+sources:
+  - title: "Wilbur Mills, Former Powerful Lawmaker, Dies (Times Wire Services, 3 May 1992)"
+    publisher: "Los Angeles Times"
+    url: https://www.latimes.com/archives/la-xpm-1992-05-03-mn-1983-story.html
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-buttons-popped-off/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 97.2
+    audioBytes: 1555687
+    transcript:
+      totalS: 97.2
+      lines:
+        - text: Look out over the Tidal Basin, toward the Jefferson Memorial.
+          atS: 0
+          durationS: 4.03
+        - text: Early on the seventh of October, nineteen seventy four, police stopped a weaving car near here.
+          atS: 4.72
+          durationS: 5.6
+        - text: In the car was one of the most powerful men in Washington.
+          atS: 11.02
+          durationS: 3.4
+        - text: Wilbur Mills of Arkansas, for sixteen years chairman of the House Ways and Means Committee.
+          atS: 15.12
+          durationS: 5.8
+        - text: He wrote much of the federal tax code.
+          atS: 21.36
+          durationS: 2.1
+        - text: He was once called the most tightly buttoned up man in Congress.
+          atS: 23.67
+          durationS: 3.46
+        - text: A woman jumped from the car and ran.
+          atS: 27.74
+          durationS: 2.21
+        - text: She was Annabel Battistella, a burlesque dancer known on stage as Fanne Foxe, the Argentine firecracker.
+          atS: 30.55
+          durationS: 7.85
+        - text: She leapt into the water, near the Jefferson Memorial.
+          atS: 38.84
+          durationS: 3.39
+        - text: Mills stepped out of the car, his face bleeding.
+          atS: 42.92
+          durationS: 2.9
+        - text: At first a spokesman denied that Mills had been in the car at all.
+          atS: 46.34
+          durationS: 3.81
+        - text: Then Mills said she was one of the neighbors and friends he had been entertaining, that she had been taken ill, and that in a struggle her elbow had broken his glasses.
+          atS: 50.53
+          durationS: 9.79
+        - text: The truth came out, slowly.
+          atS: 61.43
+          durationS: 2.62
+        - text: Ten days later, back in Arkansas, he said it himself.
+          atS: 64.56
+          durationS: 3.99
+        - text: I drank some champagne when I knew it went to my head quickly.
+          atS: 69.16
+          durationS: 3.32
+        - text: And it did.
+          atS: 72.92
+          durationS: 0.8
+        - text: He was elected again a month later.
+          atS: 74.33
+          durationS: 2.52
+        - text: But he stepped down as chairman, and both the committee and its chairman lost much of their power.
+          atS: 77.45
+          durationS: 5.75
+        - text: He went into hospital for his alcoholism, and spent his later years talking to anyone who would listen about the need for treatment.
+          atS: 83.8
+          durationS: 7.35
+        - text: Look at the water.
+          atS: 91.85
+          durationS: 1.07
+        - text: As one newspaper put it, this is where the buttons popped off.
+          atS: 93.36
+          durationS: 3.8

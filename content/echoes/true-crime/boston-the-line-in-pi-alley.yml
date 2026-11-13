@@ -1,0 +1,203 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (corruption and fraud), filed under true-crime until the topic exists, following docs/writing-echoes.md and docs/14-true-crime.md.
+# Listening spot: Public sidewalk on Washington Street at the mouth of Pi Alley, between School Street and Court Street, Downtown Boston.
+# Position: Overture places the Pi Alley Parking Garage (275 Washington St) at 42.35827, -71.05797; the pin is on the Washington Street sidewalk where the alley opens (medium confidence; check that the alley entrance is open to walk into). Ponzi's office was at 27 School Street, round the corner, a short walk west. About 75 m from Say No More (Old Corner Bookstore), which tells a different subject.
+id: boston-the-line-in-pi-alley
+title: "The Line in Pi Alley"
+summary: "In July 1920 crowds jammed this alley to cash out of Charles Ponzi's scheme, and were paid. By November he had pleaded guilty to mail fraud."
+place: "Pi Alley, off Washington Street near School Street, Downtown Boston, Massachusetts"
+at: { lat: 42.35815, lng: -71.05812 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 85
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.75
+tags: [boston, boston-core, scandal, fraud, ponzi, school-street, pi-alley, 1920]
+teaser: "For a few days in July, this alley paid everyone back."
+script: |
+  Look down the narrow alley beside you. This is Pi Alley.
+
+  In the summer of nineteen twenty, a man named Charles Ponzi had offices here, and round the corner, on School Street. He had started with one room, at twenty seven School Street.
+
+  His idea was postage. He said he could buy international postal reply coupons cheaply in countries with weak currencies, and cash them in here for more. He promised his investors fifty percent.
+
+  Over eight months, he took in roughly fifteen million dollars. The early investors really were paid. But the money came from the people who invested after them.
+
+  At the end of July, doubts were growing. As early as five in the morning, crowds gathered here to get their money back. Thousands jammed into the square around his offices. The cash was handed out from the Pi Alley office, and a newspaper reported that not a claimant was turned away.
+
+  The crowds came to see Ponzi himself, too. They waited every day to watch him arrive in his limousine, until the police banned it from School Street.
+
+  Then the Boston Post revealed that Ponzi had served two terms in prison. The scheme collapsed in August. On the thirtieth of November, Ponzi pleaded guilty in federal court to using the mails to defraud, and was sentenced to five years.
+
+  Look back down the alley. For a few days that summer, it paid everyone. That was how it worked.
+pronunciations:
+  - written: Ponzi
+    say: PON-zee
+detail: >-
+  Conviction status: convicted (Ponzi pleaded guilty to using the mails to defraud on 30 November 1920 and was sentenced to five years; New-York Tribune and Milwaukee Leader of 30 November and 1 December 1920, from the Associated Press and the United Press, which are independent wires). Nobody named is alive. The postal reply coupon pitch, "roughly $15 million" over eight months, early investors paid from later money, and the Boston Post's revelation of two prison terms are from the National Archives' Prologue (2010). The National Archives says 50 percent in 90 days and the 1920 papers say 50 percent in forty five days, so the script gives only "fifty percent". The crowd, the 5 a.m. start, the Pi Alley cash office and "not a claimant was turned away" are from the Washington Times of 30 July 1920; Ponzi's "one room at 27 School street" is his own account in the same article. The limousine ban is from the New-York Tribune of 1 August 1920. No violence. The last line is a turn, not a claim.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-13"
+  reviewedAt: "2026-11-13"
+  contentWarning: "This echo concerns a financial fraud in 1920 and the prison sentence that followed. No violence is described."
+claims:
+  - says: "In the summer of nineteen twenty, a man named Charles Ponzi had offices here, and round the corner, on School Street."
+    source: 2
+    quote: "thousands jammed into the square about his School street and PI alley offices."
+  - says: "He had started with one room, at twenty seven School Street."
+    source: 2
+    quote: "I took one room at 27 School street"
+  - says: "He said he could buy international postal reply coupons cheaply in countries with weak currencies, and cash them in here for more."
+    source: 1
+    quote: "by buying international postal reply coupons in bulk in foreign countries with weak currencies and redeeming them at higher values in the United States."
+  - says: "He promised his investors fifty percent."
+    source: 1
+    quote: "He promised a staggering return of 50 percent interest in 90 days."
+  - says: "Over eight months, he took in roughly fifteen million dollars."
+    source: 1
+    quote: "Over eight months, Ponzi took in roughly $15 million."
+  - says: "The early investors really were paid. But the money came from the people who invested after them."
+    source: 1
+    quote: "Those who came in at the start did receive their promised returns, but Ponzi was able to make these huge payoffs only by using the money coming in from later investors."
+  - says: "At the end of July, doubts were growing."
+    source: 1
+    quote: "In late July 1920, in an effort to quell the doubts among his investors"
+  - says: "As early as five in the morning, crowds gathered here to get their money back."
+    source: 2
+    quote: "As early as 5 o'clook in the morn ing crowds began to gather"
+  - says: "Thousands jammed into the square around his offices."
+    source: 2
+    quote: "thousands jammed into the square about his School street and PI alley offices."
+  - says: "The cash was handed out from the Pi Alley office, and a newspaper reported that not a claimant was turned away."
+    source: 2
+    quote: "It was from the latter that the cash was given out, and not a claimant was turned away disappointed."
+  - says: "The crowds came to see Ponzi himself, too."
+    source: 3
+    quote: "the throng that has gathered daily about the entrance to Ponzi's offices to see thair idol come and go"
+  - says: "They waited every day to watch him arrive in his limousine, until the police banned it from School Street."
+    source: 3
+    quote: "the police to-day put a ban on Ponzi's parking his automobile in School Street and made the crowd disperse."
+  - says: "Then the Boston Post revealed that Ponzi had served two terms in prison."
+    source: 1
+    quote: "The bubble burst when the Boston Post revealed that Ponzi had served two terms in prison between 1908 and 1912."
+  - says: "The scheme collapsed in August."
+    source: 4
+    quote: "invested millions af dollars before it collapsed last August"
+  - says: "On the thirtieth of November, Ponzi pleaded guilty in federal court to using the mails to defraud, and was sentenced to five years."
+    source: 4
+    quote: "pleaded guilty to-day in the Federal District Court to using the mails to defraud."
+  - says: "On the thirtieth of November, Ponzi pleaded guilty in federal court to using the mails to defraud, and was sentenced to five years."
+    source: 4
+    quote: "BOSTON, Nov. 30."
+  - says: "On the thirtieth of November, Ponzi pleaded guilty in federal court to using the mails to defraud, and was sentenced to five years."
+    source: 5
+    quote: "sen tenced the self styled financial wizard to five years in Plymouth jail after he pleaded guilty to using the mails to defraud."
+  - says: "This is Pi Alley."
+    source: 2
+    quote: "thousands jammed into the square about his School street and PI alley offices."
+sources:
+  - title: "When Ponzi's Bubble Burst (Prologue, Summer 2010)"
+    publisher: "National Archives"
+    url: https://www.archives.gov/publications/prologue/2010/summer/ponzi-inmate-case-file
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "The Washington Times, 30 July 1920, page 8: Ponzi returns half million"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84026749/1920-07-30/ed-1/?sp=8
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "New-York Tribune, 1 August 1920, page 15"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030214/1920-08-01/ed-1/?sp=15
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "New-York Tribune, 1 December 1920, page 7: Ponzi Pleads Guilty; Sentenced to Five Years"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030214/1920-12-01/ed-1/?sp=7
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "The Milwaukee Leader, 30 November 1920, page 1: Final Chapter in Ponzi Case (United Press)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045293/1920-11-30/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/boston-the-line-in-pi-alley/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 84.6
+    audioBytes: 1355066
+    transcript:
+      totalS: 84.6
+      lines:
+        - text: Look down the narrow alley beside you.
+          atS: 0
+          durationS: 2.19
+        - text: This is Pi Alley.
+          atS: 2.37
+          durationS: 1.25
+        - text: In the summer of nineteen twenty, a man named Charles Ponzi had offices here, and round the corner, on School Street.
+          atS: 3.9
+          durationS: 7.65
+        - text: He had started with one room, at twenty seven School Street.
+          atS: 11.99
+          durationS: 3.52
+        - text: His idea was postage.
+          atS: 15.84
+          durationS: 1.6
+        - text: He said he could buy international postal reply coupons cheaply in countries with weak currencies, and cash them in here for more.
+          atS: 17.76
+          durationS: 6.83
+        - text: He promised his investors fifty percent.
+          atS: 24.97
+          durationS: 2.25
+        - text: Over eight months, he took in roughly fifteen million dollars.
+          atS: 27.47
+          durationS: 3.12
+        - text: The early investors really were paid.
+          atS: 30.77
+          durationS: 2.09
+        - text: But the money came from the people who invested after them.
+          atS: 33.03
+          durationS: 2.95
+        - text: At the end of July, doubts were growing.
+          atS: 36.15
+          durationS: 2.33
+        - text: As early as five in the morning, crowds gathered here to get their money back.
+          atS: 38.6
+          durationS: 4.28
+        - text: Thousands jammed into the square around his offices.
+          atS: 43.27
+          durationS: 3.17
+        - text: The cash was handed out from the Pi Alley office, and a newspaper reported that not a claimant was turned away.
+          atS: 46.88
+          durationS: 6.72
+        - text: The crowds came to see Ponzi himself, too.
+          atS: 53.88
+          durationS: 2.84
+        - text: They waited every day to watch him arrive in his limousine, until the police banned it from School Street.
+          atS: 57.17
+          durationS: 5.45
+        - text: Then the Boston Post revealed that Ponzi had served two terms in prison.
+          atS: 62.99
+          durationS: 4.7
+        - text: The scheme collapsed in August.
+          atS: 68.3
+          durationS: 1.95
+        - text: On the thirtieth of November, Ponzi pleaded guilty in federal court to using the mails to defraud, and was sentenced to five years.
+          atS: 70.86
+          durationS: 7.55
+        - text: Look back down the alley.
+          atS: 78.91
+          durationS: 1.29
+        - text: For a few days that summer, it paid everyone.
+          atS: 80.41
+          durationS: 2.59
+        - text: That was how it worked.
+          atS: 83.33
+          durationS: 1.29

@@ -1,0 +1,225 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (political scandal and duels), filed under history until the topic exists, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on the east side of South Sixth Street, beside the Sixth Street wall of Congress Hall, just south of Chestnut Street, Independence National Historical Park, Philadelphia.
+# Position: the Library of Congress print is inscribed "Congress Hall, in Philada. Feb.15.1798" and "S.E.Cor.6th & Chesnut St."; the pin is on the Sixth Street side of the building, away from the Chestnut Street front where "Washington Left Last" plays (about 45 m apart). High confidence on the building, medium on the sidewalk point.
+id: philadelphia-mister-lyon-kept-the-tongs
+title: "Mister Lyon Kept the Tongs"
+summary: "In February 1798 two congressmen fought on the floor of the House in this building, one with a cane and the other with the fireplace tongs."
+place: "Congress Hall, Sixth and Chestnut Streets, Independence National Historical Park, Philadelphia, Pennsylvania"
+at: { lat: 39.94870, lng: -75.15135 }
+triggerRadiusKm: 0.04
+category: scandals
+format: short
+durationS: 98
+visibility: landmark-visible
+certainty: documented
+minAge: 8
+quality: 0.8
+tags: [philadelphia, independence-park, congress-hall, scandal, duels, congress, 1798]
+teaser: "A cane, a pair of fire tongs, and a Speaker who never called the House to order."
+script: |
+  Look at the brick building on the corner, Congress Hall. When Philadelphia was the capital, the House of Representatives met inside. And in seventeen ninety eight, two of its members had a fight on the floor.
+
+  It began with an insult. Roger Griswold of Connecticut taunted Matthew Lyon of Vermont about a wooden sword, a jibe at an old story that Lyon had once been cashiered from the army. Lyon spat in his face.
+
+  Then, on the fifteenth of February, before the House was called to order, Griswold picked up his cane, crossed the chamber, and began beating Lyon with it.
+
+  Lyon was trapped. His desk was screwed to the floor in front of him, with another behind. He was literally pinned in a box, one account said. He had to shuffle out sideways. Behind the Speaker's chair, he grabbed the fireplace tongs.
+
+  They closed, and fell on the floor. Two members pulled Griswold off by his legs.
+
+  It was half past eleven. The Speaker was in his chair. He never called the House to order.
+
+  That afternoon, Lyon challenged Griswold to a duel. Griswold said he would not fight him. A few days later, a House committee recommended that neither man be expelled.
+
+  Somebody in town made a cartoon of it, and you can still see it at the Library of Congress. Griswold with his cane. Lyon with the tongs.
+
+  In the struggle, one witness wrote, Mister Griswold lost his cane.
+
+  Mister Lyon kept the tongs.
+pronunciations:
+  - written: Griswold
+    say: GRIZ-wold
+detail: >-
+  The fight is from two newspaper accounts reprinted in The Mirror of Concord, New Hampshire, on 6 March 1798: an eyewitness letter first printed in the Gazette of the United States, and a second account sympathetic to Lyon (the desks, the tongs, the challenge and the refusal); the spitting is from the Speaker's evidence printed in The Mirror on 27 February 1798. The Library of Congress record of the print "Congressional Pugilists" gives the place, the date and the cane and tongs. The two newspaper accounts disagree on who struck first and how hard, and the script keeps to what both share. No injuries are described beyond "beating".
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the brick building on the corner, Congress Hall."
+    source: 3
+    quote: "In all three \"Congress Hall, in Philada. Feb.15.1798\" is inscribed in the lower right corner. In the second and third this is followed by \"S.E.Cor.6th & Chesnut St.\""
+  - says: "When Philadelphia was the capital, the House of Representatives met inside."
+    source: 4
+    quote: "Explore the home to the U.S. Congress from 1790 to 1800, when Philadelphia served as the temporary capital of the United States."
+  - says: "And in seventeen ninety eight, two of its members had a fight on the floor."
+    source: 3
+    quote: "A crude portrayal of a fight on the floor of Congress between Vermont Representative Matthew Lyon and Roger Griswold of Connecticut."
+  - says: "Roger Griswold of Connecticut taunted Matthew Lyon of Vermont about a wooden sword, a jibe at an old story that Lyon had once been cashiered from the army."
+    source: 1
+    quote: "Mr. G. then replied when do go there, you had b,rter takethe wooden sword that was attached to you at M r Lyon here spit in his face"
+  - says: "Roger Griswold of Connecticut taunted Matthew Lyon of Vermont about a wooden sword, a jibe at an old story that Lyon had once been cashiered from the army."
+    source: 1
+    quote: "Mr. Lyon, when in Vermont, declared, that no pee fons in Philadelphia, should mention the fubjea of his being cashiered with impu nity"
+  - says: "Lyon spat in his face."
+    source: 1
+    quote: "M r Lyon here spit in his face"
+  - says: "Then, on the fifteenth of February, before the House was called to order, Griswold picked up his cane, crossed the chamber, and began beating Lyon with it."
+    source: 3
+    quote: "In all three \"Congress Hall, in Philada. Feb.15.1798\" is inscribed in the lower right corner."
+  - says: "Then, on the fifteenth of February, before the House was called to order, Griswold picked up his cane, crossed the chamber, and began beating Lyon with it."
+    source: 2
+    quote: "Before the House was called to order, M=. Griswold came into the hall and took hi< feathilia cane in bis hand."
+  - says: "Then, on the fifteenth of February, before the House was called to order, Griswold picked up his cane, crossed the chamber, and began beating Lyon with it."
+    source: 2
+    quote: "took up his stick, advanced to wards him in front, from the oppofire fide of the House, and ftruek him with the flick"
+  - says: "His desk was screwed to the floor in front of him, with another behind."
+    source: 2
+    quote: "having a long circular desk, which it Screw ed co the floor, before him, and a similar one behind."
+  - says: "He was literally pinned in a box, one account said."
+    source: 2
+    quote: "He was literally pinned in a box, whilst Mr. Griswold was in the open area before him."
+  - says: "Behind the Speaker's chair, he grabbed the fireplace tongs."
+    source: 2
+    quote: "'rill they come behind the Speaker'# chair, when Mr. Lyon seized the tonga, and aimed a blow at Mr. Griswold."
+  - says: "Behind the Speaker's chair, he grabbed the fireplace tongs."
+    source: 3
+    quote: "Griswold, armed with a cane, kicks Lyon, who grasps the former's arm and raises a pair of fireplace tongs to strike him."
+  - says: "Two members pulled Griswold off by his legs."
+    source: 2
+    quote: "whilst Havens and Elmendorf pulled off Mr. Griswold by the legs."
+  - says: "It was half past eleven."
+    source: 2
+    quote: "The fpe&ker was in the chair. It was half past eleven. He nev er called to order"
+  - says: "The Speaker was in his chair."
+    source: 2
+    quote: "The fpe&ker was in the chair."
+  - says: "He never called the House to order."
+    source: 2
+    quote: "He nev er called to order, notwithfland ing repeated calli of several mem ber!"
+  - says: "That afternoon, Lyon challenged Griswold to a duel."
+    source: 2
+    quote: "The fame afternoon Mr. Lyon lent a challenge 10 Mr. Griswold, who was not to be found that day at home."
+  - says: "Griswold said he would not fight him."
+    source: 2
+    quote: "Mr. G. refuted to give a written answer but Bofwered verbally that be would not fight Mr. Lyon."
+  - says: "A few days later, a House committee recommended that neither man be expelled."
+    source: 2
+    quote: "FEB. 20. The Committee of Privileges reported against the expulsion of Mtffrs. Griswold and Lyon."
+  - says: "Somebody in town made a cartoon of it, and you can still see it at the Library of Congress."
+    source: 3
+    quote: "Congressional pugilists"
+  - says: "Griswold with his cane."
+    source: 3
+    quote: "Griswold, armed with a cane, kicks Lyon, who grasps the former's arm and raises a pair of fireplace tongs to strike him."
+  - says: "Lyon with the tongs."
+    source: 3
+    quote: "Griswold, armed with a cane, kicks Lyon, who grasps the former's arm and raises a pair of fireplace tongs to strike him."
+  - says: "In the struggle, one witness wrote, Mister Griswold lost his cane."
+    source: 2
+    quote: "Mr Griswold lofthis cane in the struggle—Mr. Lyon kept the tongs."
+  - says: "Mister Lyon kept the tongs."
+    source: 2
+    quote: "Mr Griswold lofthis cane in the struggle—Mr. Lyon kept the tongs."
+sources:
+  - title: "The Mirror (Concord, N.H.), 27 February 1798, page 3: the House inquiry into Mr. Lyon"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83025525/1798-02-27/ed-1/?sp=3
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "The Mirror (Concord, N.H.), 6 March 1798, page 3: Griswold and Lyon"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83025525/1798-03-06/ed-1/?sp=3
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Congressional pugilists (print, Philadelphia, 1798)"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/2008661719/
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Congress Hall"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-congresshall.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-mister-lyon-kept-the-tongs/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 97.6
+    audioBytes: 1562792
+    transcript:
+      totalS: 97.6
+      lines:
+        - text: Look at the brick building on the corner, Congress Hall.
+          atS: 0
+          durationS: 3.29
+        - text: When Philadelphia was the capital, the House of Representatives met inside.
+          atS: 4.4
+          durationS: 4.91
+        - text: And in seventeen ninety eight, two of its members had a fight on the floor.
+          atS: 9.59
+          durationS: 4.33
+        - text: It began with an insult.
+          atS: 14.52
+          durationS: 2.18
+        - text: Roger Griswold of Connecticut taunted Matthew Lyon of Vermont about a wooden sword, a jibe at an old story that Lyon had once been cashiered from the army.
+          atS: 17.82
+          durationS: 9.82
+        - text: Lyon spat in his face.
+          atS: 28.34
+          durationS: 2.05
+        - text: Then, on the fifteenth of February, before the House was called to order, Griswold picked up his cane, crossed the chamber, and began beating Lyon with it.
+          atS: 30.78
+          durationS: 9.94
+        - text: Lyon was trapped.
+          atS: 41.32
+          durationS: 1.25
+        - text: His desk was screwed to the floor in front of him, with another behind.
+          atS: 42.96
+          durationS: 4.31
+        - text: He was literally pinned in a box, one account said.
+          atS: 47.59
+          durationS: 3.44
+        - text: He had to shuffle out sideways.
+          atS: 51.47
+          durationS: 1.83
+        - text: Behind the Speaker's chair, he grabbed the fireplace tongs.
+          atS: 53.81
+          durationS: 2.93
+        - text: They closed, and fell on the floor.
+          atS: 56.91
+          durationS: 2.07
+        - text: Two members pulled Griswold off by his legs.
+          atS: 59.67
+          durationS: 2.91
+        - text: It was half past eleven.
+          atS: 62.7
+          durationS: 1.49
+        - text: The Speaker was in his chair.
+          atS: 64.7
+          durationS: 1.57
+        - text: He never called the House to order.
+          atS: 66.59
+          durationS: 1.87
+        - text: That afternoon, Lyon challenged Griswold to a duel.
+          atS: 69.07
+          durationS: 3.45
+        - text: Griswold said he would not fight him.
+          atS: 72.96
+          durationS: 2.04
+        - text: A few days later, a House committee recommended that neither man be expelled.
+          atS: 75.7
+          durationS: 4.49
+        - text: Somebody in town made a cartoon of it, and you can still see it at the Library of Congress.
+          atS: 80.7
+          durationS: 5.02
+        - text: Griswold with his cane.
+          atS: 86.16
+          durationS: 1.72
+        - text: Lyon with the tongs.
+          atS: 88.32
+          durationS: 1.57
+        - text: In the struggle, one witness wrote, Mister Griswold lost his cane.
+          atS: 90.39
+          durationS: 4.8
+        - text: Mister Lyon kept the tongs.
+          atS: 95.52
+          durationS: 2.1

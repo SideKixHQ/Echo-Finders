@@ -1,0 +1,245 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (spies and espionage), filed under history until the topic exists, following docs/writing-echoes.md.
+# Listening spot: Woldenberg Riverfront Park, on the riverside path facing the Mississippi, between Canal Street and Toulouse Street, French Quarter.
+# Position: Overture places Woldenberg Riverfront Park (1 Canal St) at 29.95314, -90.06295; the pin is further up the park, on the riverside walk opposite Conti Street (low to medium confidence; check it is on the path and not in the water). About 90 m from The Boat That Came Through the Earthquake, which tells a different subject. The sources place the ketch "in the middle of the river" at New Orleans, not off this exact point; the script says only "out there".
+id: new-orleans-the-ketch-in-the-river
+title: "The Ketch in the River"
+summary: "In 1806 General Wilkinson seized Burr's men without warrants and held two on a ketch in the river. He was Spain's Agent 13."
+place: "Woldenberg Riverfront Park, on the Mississippi, French Quarter, New Orleans, Louisiana"
+at: { lat: 29.95420, lng: -90.06300 }
+triggerRadiusKm: 0.05
+category: scandals
+format: short
+durationS: 127
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, french-quarter, riverfront, scandal, spies, wilkinson, burr-conspiracy, habeas-corpus, 1806]
+teaser: "No boat in the city would take the judge's man out to the ketch."
+script: |
+  Look out to the middle of the river.
+
+  In December eighteen oh six, a United States bomb ketch lay out there with prisoners on board. The man who put them there was the senior officer of the United States Army, General James Wilkinson.
+
+  Wilkinson said that Aaron Burr, the man who had fought the duel with Hamilton, was plotting against the country. He wrote to the Governor, William Claiborne, of Burr and his lawless banditti from the Ohio River. He asked for martial law, and for the writ of habeas corpus to be suspended. Claiborne refused.
+
+  So Wilkinson acted on his own. On the fourteenth of December, he had a doctor, Erick Bollman, arrested and held in some unknown place. A judge was asked for a writ of habeas corpus. By the time it was granted, Bollman had been put on a vessel and sent down the river.
+
+  Two more men, Ogden and Swartwout, were held on the ketch. Another judge granted a writ for them. But the city was so frightened that no boat could be found to take the officer of the court out to the ketch. The next day, for a large sum of money, a boat was found. By then, Swartwout was gone.
+
+  Wilkinson told the court that he took on himself all responsibility.
+
+  Bollman and Swartwout were taken to Washington. In February eighteen oh seven, the Supreme Court ordered them discharged. Their lawyer had put it plainly. The laws were open in New Orleans.
+
+  And Wilkinson? The National Park Service says that in seventeen eighty seven, on a trip to New Orleans, he swore allegiance to the King of Spain, and worked for Spain as Agent Thirteen. He traded secrets for Spanish money for decades. It was suspected, but never proven, and he was never convicted.
+
+  A New Orleans historian, Charles Gayarré, had a phrase for him. The pensioner and the tool of Spain.
+pronunciations:
+  - written: Wilkinson
+    say: WILL-kin-sun
+  - written: Claiborne
+    say: CLAY-born
+  - written: Swartwout
+    say: SWART-out
+  - written: Gayarré
+    say: GUY-uh-ray
+detail: >-
+  The arrests, Claiborne's refusals, the writs, Bollman sent down the river, Ogden and Swartwout on the bomb ketch "lying in the middle of the river", no boat to be had, the large sum, Swartwout gone, and Wilkinson's reply are from Charles Gayarré's History of Louisiana: The American Domination (1866), which cites Martin's History of Louisiana and Claiborne's letters. The seizure "by orders of a military officer", the transport to Washington, the discharge in February 1807 and counsel's "The laws were open in New-Orleans" are from the Supreme Court's report, Ex parte Bollman and Ex parte Swartwout (1807), 8 U.S. 75. Wilkinson's 1787 oath to the King of Spain, "Agent 13", the decades of trading secrets, "suspected ... but never proven", his post as Senior Officer of the Army and his exoneration by court-martial in 1811 are from the National Park Service (Saratoga). "The pensioner and the tool of Spain" is Gayarré's phrase, attributed aloud. Nobody named is alive. Wilkinson was never convicted of anything, and the script says so; the Spanish payments are told as the Park Service's account. That Gayarré was a New Orleans historian is general knowledge (he was born in the city and wrote the history cited), not quoted from a source. Kept under history rather than true crime because no one at its centre was convicted and no crime was proven in court.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In December eighteen oh six, a United States bomb ketch lay out there with prisoners on board."
+    source: 1
+    quote: "arrived at New Orleans: on board of a bomb-ketch-of the Upited States, where they were detained."
+  - says: "In December eighteen oh six, a United States bomb ketch lay out there with prisoners on board."
+    source: 1
+    quote: "lying in the middleof the river."
+  - says: "The man who put them there was the senior officer of the United States Army, General James Wilkinson."
+    source: 3
+    quote: "His second lasted from 1800–12."
+  - says: "The man who put them there was the senior officer of the United States Army, General James Wilkinson."
+    source: 1
+    quote: "who had: been arrested, a few days before, by order of Wilkinson, at Fort Adams"
+  - says: "Wilkinson said that Aaron Burr, the man who had fought the duel with Hamilton, was plotting against the country."
+    source: 1
+    quote: "the result of his duel with Hamilton"
+  - says: "Wilkinson said that Aaron Burr, the man who had fought the duel with Hamilton, was plotting against the country."
+    source: 1
+    quote: "as participants in’ Burr’s lawless combination:"
+  - says: "He wrote to the Governor, William Claiborne, of Burr and his lawless banditti from the Ohio River."
+    source: 1
+    quote: "Burr atid his lawless banditti trom the Ohio River against the Territory"
+  - says: "He asked for martial law, and for the writ of habeas corpus to be suspended. Claiborne refused."
+    source: 1
+    quote: "Claiborne still continued to refuse to order the impress- ment of the sailors, the suspension of the writ of Habeas Corpus, the declaration of martial law"
+  - says: "On the fourteenth of December, he had a doctor, Erick Bollman, arrested and held in some unknown place."
+    source: 1
+    quote: "On Sunday, the 14th of. December, Dr: Erick Bollman"
+  - says: "On the fourteenth of December, he had a doctor, Erick Bollman, arrested and held in some unknown place."
+    source: 1
+    quote: "had been arrested by order:of: Wilkinson and confined in some unknown place:"
+  - says: "By the time it was granted, Bollman had been put on a vessel and sent down the river."
+    source: 1
+    quote: "but Bollman had, in the mean time, been put on Loard of a vessel and sent down the river."
+  - says: "Two more men, Ogden and Swartwout, were held on the ketch."
+    source: 1
+    quote: "in favor of two men, Ogden and: Swartwout"
+  - says: "But the city was so frightened that no boat could be found to take the officer of the court out to the ketch."
+    source: 1
+    quote: "no-boat could be procured to take the officer of the Court on beard of the ketch"
+  - says: "The next day, for a large sum of money, a boat was found. By then, Swartwout was gone."
+    source: 1
+    quote: "It was only onthe next day that; for the tempting consi(eration of a large sum of money"
+  - says: "By then, Swartwout was gone."
+    source: 1
+    quote: "that: Swartwout was no longer in his hands"
+  - says: "Wilkinson told the court that he took on himself all responsibility."
+    source: 1
+    quote: "that he took: on himself all responsibility for the arrest of Bollman"
+  - says: "Bollman and Swartwout were taken to Washington."
+    source: 2
+    quote: "They were seized by orders of a military officer 2,000 miles from this place, without any process of law or legal authority, and sent here to be disposed of by, the Executive."
+  - says: "In February eighteen oh seven, the Supreme Court ordered them discharged."
+    source: 2
+    quote: "FEBRUARY, 1807."
+  - says: "In February eighteen oh seven, the Supreme Court ordered them discharged."
+    source: 2
+    quote: "the court can only direct them to be discharged."
+  - says: "The laws were open in New Orleans."
+    source: 2
+    quote: "The laws were open in New-Orleans."
+  - says: "The National Park Service says that in seventeen eighty seven, on a trip to New Orleans, he swore allegiance to the King of Spain, and worked for Spain as Agent Thirteen."
+    source: 3
+    quote: "He crossed the bridge to treason in 1787 when he made a trip to New Orleans"
+  - says: "The National Park Service says that in seventeen eighty seven, on a trip to New Orleans, he swore allegiance to the King of Spain, and worked for Spain as Agent Thirteen."
+    source: 3
+    quote: "Wilkinson swore allegiance to the King of Spain"
+  - says: "The National Park Service says that in seventeen eighty seven, on a trip to New Orleans, he swore allegiance to the King of Spain, and worked for Spain as Agent Thirteen."
+    source: 3
+    quote: "Working as Spanish “Agent 13,”"
+  - says: "He traded secrets for Spanish money for decades."
+    source: 3
+    quote: "he continued to trade secrets for Spanish money for decades."
+  - says: "It was suspected, but never proven, and he was never convicted."
+    source: 3
+    quote: "Wilkinson’s efforts with Spain were suspected by the U.S. government but never proven."
+  - says: "It was suspected, but never proven, and he was never convicted."
+    source: 3
+    quote: "James Wilkinson is most remembered for committing treason although never convicted of that crime."
+  - says: "A New Orleans historian, Charles Gayarré, had a phrase for him."
+    source: 1
+    quote: "Wilkinson, the pensioner and the tool of Spain"
+  - says: "The pensioner and the tool of Spain."
+    source: 1
+    quote: "Wilkinson, the pensioner and the tool of Spain"
+  - says: "So Wilkinson acted on his own."
+    source: 1
+    quote: "determined to act without him"
+  - says: "And Wilkinson?"
+    source: 3
+    quote: "Wilkinson swore allegiance to the King of Spain"
+sources:
+  - title: "History of Louisiana: The American Domination (Charles Gayarré, 1866), pages 167 to 172"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/cihm_45095
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Ex parte Bollman and Ex parte Swartwout, 8 U.S. (4 Cranch) 75 (1807)"
+    publisher: "Library of Congress, United States Reports"
+    url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep008/usrep008075/usrep008075.pdf
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "James Wilkinson"
+    publisher: "National Park Service (Saratoga National Historical Park)"
+    url: https://www.nps.gov/sara/learn/historyculture/james-wilkinson.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-ketch-in-the-river/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 127.3
+    audioBytes: 2037594
+    transcript:
+      totalS: 127.3
+      lines:
+        - text: Look out to the middle of the river.
+          atS: 0
+          durationS: 1.79
+        - text: In December eighteen oh six, a United States bomb ketch lay out there with prisoners on board.
+          atS: 2.74
+          durationS: 6.23
+        - text: The man who put them there was the senior officer of the United States Army, General James Wilkinson.
+          atS: 9.58
+          durationS: 6.91
+        - text: Wilkinson said that Aaron Burr, the man who had fought the duel with Hamilton, was plotting against the country.
+          atS: 17.44
+          durationS: 6.66
+        - text: He wrote to the Governor, William Claiborne, of Burr and his lawless banditti from the Ohio River.
+          atS: 24.61
+          durationS: 6
+        - text: He asked for martial law, and for the writ of habeas corpus to be suspended.
+          atS: 31.22
+          durationS: 4.9
+        - text: Claiborne refused.
+          atS: 36.72
+          durationS: 1.72
+        - text: So Wilkinson acted on his own.
+          atS: 38.65
+          durationS: 2.47
+        - text: On the fourteenth of December, he had a doctor, Erick Bollman, arrested and held in some unknown place.
+          atS: 41.82
+          durationS: 6.64
+        - text: A judge was asked for a writ of habeas corpus.
+          atS: 48.84
+          durationS: 3.1
+        - text: By the time it was granted, Bollman had been put on a vessel and sent down the river.
+          atS: 52.38
+          durationS: 4.82
+        - text: Two more men, Ogden and Swartwout, were held on the ketch.
+          atS: 57.81
+          durationS: 4.36
+        - text: Another judge granted a writ for them.
+          atS: 62.56
+          durationS: 2.09
+        - text: But the city was so frightened that no boat could be found to take the officer of the court out to the ketch.
+          atS: 65.03
+          durationS: 6.19
+        - text: The next day, for a large sum of money, a boat was found.
+          atS: 71.73
+          durationS: 3.49
+        - text: By then, Swartwout was gone.
+          atS: 75.61
+          durationS: 2.43
+        - text: Wilkinson told the court that he took on himself all responsibility.
+          atS: 78.73
+          durationS: 4.72
+        - text: Bollman and Swartwout were taken to Washington.
+          atS: 84.25
+          durationS: 2.9
+        - text: In February eighteen oh seven, the Supreme Court ordered them discharged.
+          atS: 88.11
+          durationS: 4.81
+        - text: Their lawyer had put it plainly.
+          atS: 93.19
+          durationS: 1.85
+        - text: The laws were open in New Orleans.
+          atS: 95.55
+          durationS: 2.07
+        - text: And Wilkinson?
+          atS: 98.06
+          durationS: 1.35
+        - text: The National Park Service says that in seventeen eighty seven, on a trip to New Orleans, he swore allegiance to the King of Spain, and worked for Spain as Agent Thirteen.
+          atS: 99.73
+          durationS: 10.72
+        - text: He traded secrets for Spanish money for decades.
+          atS: 111.05
+          durationS: 3.17
+        - text: It was suspected, but never proven, and he was never convicted.
+          atS: 114.66
+          durationS: 4.25
+        - text: A New Orleans historian, Charles Gayarré, had a phrase for him.
+          atS: 120.21
+          durationS: 4.31
+        - text: The pensioner and the tool of Spain.
+          atS: 125.03
+          durationS: 2.26

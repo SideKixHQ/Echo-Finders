@@ -1,0 +1,186 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (spies and espionage), filed under history until the topic exists, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on Union Street beside the Blackstone Block, between the Union Oyster House and Marshall Street, looking along the street.
+# Position: Goss (1891) puts the Green Dragon Tavern "in Union Street, formerly Green Dragon Lane" without a number; Overture places the Union Oyster House (41 Union St) at 42.36133, -71.05696 and the modern Green Dragon bar (11 Marshall St) at 42.36158, -71.05684. The pin is on Union Street between them (high confidence on the street, low on the tavern's exact site, so the script says only "on this street"). About 140 m from The Spy Question (Faneuil Hall), which tells a different subject.
+id: boston-we-did-not-then-distrust
+title: "We Did Not Then Distrust Him"
+summary: "Revere's secret committee met at the Green Dragon and swore to tell only a few leaders. One of those leaders was writing to General Gage."
+place: "Union Street, Blackstone Block, Boston, Massachusetts"
+at: { lat: 42.36145, lng: -71.05700 }
+triggerRadiusKm: 0.04
+category: scandals
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [boston, boston-core, scandal, spies, revolution, green-dragon, revere, benjamin-church, 1775]
+teaser: "They swore on the Bible to tell only a handful of leaders. One of them was the leak."
+script: |
+  Look along Union Street. In the autumn of seventeen seventy four, the Green Dragon Tavern stood on this street, and a group of Boston men met there in secret.
+
+  Paul Revere was one of them. He later wrote that they were upwards of thirty, chiefly mechanics, and that they met to watch the movements of the British soldiers.
+
+  They were careful. Every time they met, each man swore on the Bible to tell their business to nobody but a few leaders. Hancock, Adams, Doctor Warren, Doctor Church, and one or two more.
+
+  Then a man with friends in the Tory party warned Revere that their meetings had been discovered. He repeated the very words they had spoken the night before.
+
+  We did not then distrust Doctor Church, Revere wrote. They supposed it must be someone among themselves.
+
+  Benjamin Church was a physician, and one of the leaders of the Sons of Liberty. And by early seventeen seventy five, he was selling information to the British commander, General Thomas Gage, in coded letters.
+
+  One of those letters was found, and brought to George Washington. On the third of October, Washington and his leading advisors met to discuss it. Church admitted writing the letter. He said he had done it to get intelligence from the British.
+
+  He was imprisoned, and later banished. The ship he sailed on disappeared, and he was never heard from again.
+
+  The letter has been decoded. One line of it reads, make use of every precaution, or I perish.
+pronunciations:
+  - written: Gage
+    say: GAYJ
+detail: >-
+  The Green Dragon committee, the oath, the list of leaders (Hancock, Adams, Doctors Warren and Church), the warning from a man with Tory connections, the repeated words and "We did not then distrust Dr. Church" are from Paul Revere's letter to Jeremy Belknap as printed in full in Elbridge Goss's Life of Colonel Paul Revere (1891), which reprints the Massachusetts Historical Society's 1878 text. Church as a Sons of Liberty leader, the coded letters to Gage, the council of 3 October 1775 at Washington's headquarters, his admission and defence, imprisonment, banishment and the lost ship, and the decoded line are from the National Park Service. Church was never convicted by a court (the NPS says he was put on trial and imprisoned); everyone named died in the eighteenth or early nineteenth century. The script places the tavern only on Union Street, not on this spot. The existing legend echo The Spy Question (Faneuil Hall grasshopper) does not mention Church.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In the autumn of seventeen seventy four, the Green Dragon Tavern stood on this street, and a group of Boston men met there in secret."
+    source: 2
+    quote: "In the fall of 1774, and winter of 1775, I"
+  - says: "In the autumn of seventeen seventy four, the Green Dragon Tavern stood on this street, and a group of Boston men met there in secret."
+    source: 2
+    quote: "This celebrated hostelry was in Union Street, formerly \" Green Dragon Lane,\""
+  - says: "Paul Revere was one of them."
+    source: 2
+    quote: "We held our meetings at the Green Dragon Tavern."
+  - says: "He later wrote that they were upwards of thirty, chiefly mechanics, and that they met to watch the movements of the British soldiers."
+    source: 2
+    quote: "who formed ourselves into a committee for the purpose of watching the movements of the British soldiers"
+  - says: "He later wrote that they were upwards of thirty, chiefly mechanics, and that they met to watch the movements of the British soldiers."
+    source: 2
+    quote: "was one of upwards of thirty, chiefly mechan- ics"
+  - says: "Every time they met, each man swore on the Bible to tell their business to nobody but a few leaders."
+    source: 2
+    quote: "every time we met, every person swore upon the Bible that they would not discover any of our transactions but to Messrs. Hancock, Adams, Doctors Warren, Church, and one or two more."
+  - says: "Hancock, Adams, Doctor Warren, Doctor Church, and one or two more."
+    source: 2
+    quote: "but to Messrs. Hancock, Adams, Doctors Warren, Church, and one or two more."
+  - says: "Then a man with friends in the Tory party warned Revere that their meetings had been discovered."
+    source: 2
+    quote: "a gentleman who had con- nections with the Tory party, but was a Whig at heart, acquainted me, that our meetings were discovered"
+  - says: "He repeated the very words they had spoken the night before."
+    source: 2
+    quote: "mentioned the identical words that were spoken among us"
+  - says: "We did not then distrust Doctor Church, Revere wrote."
+    source: 2
+    quote: "We did not then distrust Dr. Church, but supposed it must be some one among us."
+  - says: "They supposed it must be someone among themselves."
+    source: 2
+    quote: "but supposed it must be some one among us."
+  - says: "Benjamin Church was a physician, and one of the leaders of the Sons of Liberty."
+    source: 1
+    quote: "Dr. Benjamin Church was one of the prominent leaders of the Sons of Liberty"
+  - says: "And by early seventeen seventy five, he was selling information to the British commander, General Thomas Gage, in coded letters."
+    source: 1
+    quote: "By early 1775, he began selling information to General Thomas Gage, commander in chief of the British forces in America, in the form of coded letters."
+  - says: "One of those letters was found, and brought to George Washington."
+    source: 1
+    quote: "One of those letters was found and brought to the attention of General George Washington."
+  - says: "On the third of October, Washington and his leading advisors met to discuss it."
+    source: 1
+    quote: "On October 3, 1775, General Washington and his leading advisors met at headquarters"
+  - says: "Church admitted writing the letter."
+    source: 1
+    quote: "Dr. Church admitted to writing the coded letter"
+  - says: "He said he had done it to get intelligence from the British."
+    source: 1
+    quote: "but claimed he did it to get intelligence from the British army for the Continental Army."
+  - says: "He was imprisoned, and later banished."
+    source: 1
+    quote: "Dr. Benjamin Church was put on trial and imprisoned across the street from headquarters. Eventually, he was banished from the colony"
+  - says: "The ship he sailed on disappeared, and he was never heard from again."
+    source: 1
+    quote: "However, the ship disappeared and he was never heard from again!"
+  - says: "One line of it reads, make use of every precaution, or I perish."
+    source: 1
+    quote: "Make use of every precaution or I perish."
+sources:
+  - title: "Decoding Benjamin Church"
+    publisher: "National Park Service (Longfellow House, Washington's Headquarters National Historic Site)"
+    url: https://www.nps.gov/articles/decoding-benjamin-church.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "The Life of Colonel Paul Revere, volume 1 (Elbridge Henry Goss, 1891), pages 182 to 183: Revere's letter to Jeremy Belknap"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/lifeofcolonelpau01goss
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/boston-we-did-not-then-distrust/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 95.9
+    audioBytes: 1536043
+    transcript:
+      totalS: 95.9
+      lines:
+        - text: Look along Union Street.
+          atS: 0
+          durationS: 1.63
+        - text: In the autumn of seventeen seventy four, the Green Dragon Tavern stood on this street, and a group of Boston men met there in secret.
+          atS: 2.44
+          durationS: 7.73
+        - text: Paul Revere was one of them.
+          atS: 10.61
+          durationS: 1.63
+        - text: He later wrote that they were upwards of thirty, chiefly mechanics, and that they met to watch the movements of the British soldiers.
+          atS: 12.62
+          durationS: 7.44
+        - text: They were careful.
+          atS: 20.45
+          durationS: 1.13
+        - text: Every time they met, each man swore on the Bible to tell their business to nobody but a few leaders.
+          atS: 21.9
+          durationS: 5.99
+        - text: Hancock, Adams, Doctor Warren, Doctor Church, and one or two more.
+          atS: 28.21
+          durationS: 4.98
+        - text: Then a man with friends in the Tory party warned Revere that their meetings had been discovered.
+          atS: 33.7
+          durationS: 5.26
+        - text: He repeated the very words they had spoken the night before.
+          atS: 39.57
+          durationS: 3.27
+        - text: We did not then distrust Doctor Church, Revere wrote.
+          atS: 43.54
+          durationS: 3.69
+        - text: They supposed it must be someone among themselves.
+          atS: 47.67
+          durationS: 3.15
+        - text: Benjamin Church was a physician, and one of the leaders of the Sons of Liberty.
+          atS: 51.33
+          durationS: 4.23
+        - text: And by early seventeen seventy five, he was selling information to the British commander, General Thomas Gage, in coded letters.
+          atS: 55.99
+          durationS: 8.55
+        - text: One of those letters was found, and brought to George Washington.
+          atS: 65.14
+          durationS: 3.38
+        - text: On the third of October, Washington and his leading advisors met to discuss it.
+          atS: 69.22
+          durationS: 4.73
+        - text: Church admitted writing the letter.
+          atS: 74.55
+          durationS: 1.97
+        - text: He said he had done it to get intelligence from the British.
+          atS: 77.13
+          durationS: 2.97
+        - text: He was imprisoned, and later banished.
+          atS: 80.61
+          durationS: 2.21
+        - text: The ship he sailed on disappeared, and he was never heard from again.
+          atS: 83.42
+          durationS: 3.9
+        - text: The letter has been decoded.
+          atS: 88.13
+          durationS: 1.85
+        - text: One line of it reads, make use of every precaution, or I perish.
+          atS: 90.67
+          durationS: 5.27
