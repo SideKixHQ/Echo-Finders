@@ -256,6 +256,9 @@ export function JourneyChip(props: JourneyChipProps) {
           )}
           {tab !== "flight" && forTab.length > 0 && (
             <GuidedRoutes
+              // One per tab: "open when nothing is near" is decided as it mounts, and the
+              // walks' closed list was being kept for road trips, which then showed none.
+              key={tab}
               routes={forTab}
               here={props.here ?? null}
               heading={tab === "walking" ? "Guided walks" : "Road trips"}
