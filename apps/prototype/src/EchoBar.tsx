@@ -52,7 +52,7 @@ import { presetFor, rarityOf, type Echo, type Guidance, type TravelMode } from "
 import { CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, type EchoFace } from "@echofinders/echo";
 import type { PinState } from "./RouteMap";
-import { listenLength } from "./going";
+import { listenLength, reach } from "./going";
 
 export interface EchoBarItem {
   readonly echo: Echo;
@@ -386,40 +386,6 @@ export function EchoBar({
   );
 }
 
-/**
- * HOW LONG UNTIL I AM THERE, which is the question, and metres only when minutes are silly.
- *
- * It was metres all the way out, and "390 m" is a measurement rather than an answer:
- * nobody decides anything from it without first dividing by their own walking pace in
- * their head. Six minutes is the decision. It is also the one number this bar was missing
- * — the top of the screen has how long the whole journey has left, the bar had how long
- * the story is, and neither of them is how far away the thing in front of you is in the
- * only unit a person plans with.
- *
- * Near the end it goes back to distance, because minutes stop meaning anything there: "one
- * minute" is noise when you can see the doorway, while "100 m" tells you to look up. And
- * inside the trigger radius it stops being a number at all — a live count that close
- * invites staring at a screen instead of at the thing, which is the one behaviour this
- * whole product is arranged to prevent.
- *
- * The metres are rounded to fifty, which is the echo card's rounding. They are on screen
- * together — tap the bar and the card opens above it — and they disagreed in an early
- * render: "390 m" on the bar over "About 400m away" on the card, about the same echo, two
- * inches apart. That is how somebody stops believing either number.
- */
-function reach(distanceKm: number | null, cue: string | null, speedKph: number): string {
-  if (cue === "arrived") return "you're here";
-  if (cue === "close") return "a few steps";
-  if (distanceKm === null) return "near here";
-  const m = distanceKm * 1000;
-  if (m < 150) return `${Math.max(50, Math.round(m / 50) * 50)} m`;
-  const minutes = Math.round((distanceKm / speedKph) * 60);
-  if (minutes < 1) return `${Math.round(m / 50) * 50} m`;
-  if (minutes < 60) return `${minutes} min`;
-  // Somewhere looked up, not walked to: hours on foot is not an answer, a distance is.
-  if (minutes >= 600) return `${Math.round(distanceKm).toLocaleString("en-US")} km`;
-  return `${Math.floor(minutes / 60)}h ${String(minutes % 60).padStart(2, "0")}`;
-}
 
 /**
  * The place, to its first comma.

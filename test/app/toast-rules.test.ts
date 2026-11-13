@@ -77,23 +77,40 @@ describe("what the toasts say", () => {
 describe("toast B: Next", () => {
   it("the nearest echo still waiting, never the one that just synced", () => {
     const around = [near("synced", 0.01), near("heard", 0.1, false), near("far", 0.6), near("close", 0.46)];
-    expect(nextAfterSync("synced", around, null)).toEqual({ echo: around[3]!.echo, label: "Next · 8 min walk" });
+    expect(nextAfterSync("synced", around, null, "walking")).toEqual({ echo: around[3]!.echo, label: "Next · 8 min walk" });
   });
 
   it("nothing past a walk: an echo 9.5 km off is not a next", () => {
-    expect(nextAfterSync("synced", [near("synced", 0.01), near("far", 9.5)], null)).toBeNull();
-    expect(nextAfterSync("synced", [near("far", 9.5), near("walkable", 4.9)], null)?.echo.id).toBe("walkable");
+    expect(nextAfterSync("synced", [near("synced", 0.01), near("far", 9.5)], null, "walking")).toBeNull();
+    expect(nextAfterSync("synced", [near("far", 9.5), near("walkable", 4.9)], null, "walking")?.echo.id).toBe("walkable");
   });
 
   it("the planned walk's own next stop, when there is one", () => {
     const stop = { echo: echo("stop"), distanceKm: 0.35 };
-    expect(nextAfterSync("synced", [near("close", 0.05)], stop)?.label).toBe("Next stop · 6 min");
-    expect(nextAfterSync("synced", [near("close", 0.05)], stop)?.echo.id).toBe("stop");
+    expect(nextAfterSync("synced", [near("close", 0.05)], stop, "walking")?.label).toBe("Next stop · 6 min");
+    expect(nextAfterSync("synced", [near("close", 0.05)], stop, "walking")?.echo.id).toBe("stop");
   });
 
   it("nothing when nothing is left", () => {
-    expect(nextAfterSync("synced", [near("synced", 0.01), near("done", 0.2, false)], null)).toBeNull();
-    expect(nextAfterSync("stop", [], { echo: echo("stop"), distanceKm: 0 })).toBeNull();
+    expect(nextAfterSync("synced", [near("synced", 0.01), near("done", 0.2, false)], null, "walking")).toBeNull();
+    expect(nextAfterSync("stop", [], { echo: echo("stop"), distanceKm: 0 }, "walking")).toBeNull();
+  });
+
+  it("driving, it says distance as the echo bar does: metres close up, minutes driving further", () => {
+    const around = [near("synced", 0.01), near("close", 0.065)];
+    expect(nextAfterSync("synced", around, null, "driving")?.label).toBe("Next · 50 m");
+    expect(nextAfterSync("synced", [near("town", 1.2)], null, "driving")?.label).toBe("Next · 1 min drive");
+    expect(nextAfterSync("synced", [near("out", 6)], null, "driving")?.label).toBe("Next · 4 min drive");
+  });
+
+  it("driving, past a walk is still a next: the bar has no walking limit", () => {
+    expect(nextAfterSync("synced", [near("synced", 0.01), near("far", 9.5)], null, "driving")?.label).toBe(
+      "Next · 6 min drive",
+    );
+  });
+
+  it("on foot it stays minutes walking", () => {
+    expect(nextAfterSync("synced", [near("close", 0.065)], null, "walking")?.label).toBe("Next · 1 min walk");
   });
 
   it("minutes on foot, at least one", () => {

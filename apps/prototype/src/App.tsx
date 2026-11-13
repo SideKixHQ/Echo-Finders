@@ -2997,6 +2997,7 @@ export function App() {
                         syncedNow.echo.id,
                         around,
                         stopEcho ? { echo: stopEcho, distanceKm: from ? distanceKm(from, stopEcho.point.at) : 0 } : null,
+                        roaming ? roamMode : route.mode,
                       );
                       if (!n) return null;
                       return {
