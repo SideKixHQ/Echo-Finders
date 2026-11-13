@@ -1,0 +1,47 @@
+# A suggested drive (proposed 2026-11-11, for James's approval).
+#
+# New Orleans in one afternoon: up Prytania Street through the Garden District, St. Charles
+# to Canal, down Royal Street the length of the French Quarter and on into the Marigny to
+# where Homer Plessy was arrested, back by Chartres past Jackson Square, along Rampart and
+# Basin Street to St. Louis Cemetery No. 1, under the Claiborne oaks of Treme, and out
+# Esplanade Avenue and Bayou St. John to the oaks of City Park.
+#
+# Waypoint positions are road nodes from Overture Maps 2026-09-23.0 (transportation/segment,
+# OpenStreetMap contributors, ODbL), picked at the corner or entrance nearest the landmark or
+# echo each is named for; the landmarks are the echoes' own positions in content/echoes.
+id: new-orleans-garden-district-to-city-park
+mode: driving
+name: "New Orleans: the Garden District to City Park, by the French Quarter"
+area: New Orleans
+# The road the line on the map follows between waypoints (`scripts/build-route-paths.py`).
+follows: Esplanade Avenue
+
+origin:
+  name: Garden District, New Orleans
+  at: { lat: 29.93020, lng: -90.08425 }
+  timeZone: America/Chicago
+
+destination:
+  name: City Park, New Orleans
+  at: { lat: 29.98603, lng: -90.09305 }
+  timeZone: America/Chicago
+
+# About 15 km at Quarter speed, with a stop at Jackson Square. An estimate.
+durationS: 5400
+
+waypoints:
+  - { name: Colonel Short's Villa, at: { lat: 29.93020, lng: -90.08425 } }
+  - { name: Margaret Place, at: { lat: 29.94056, lng: -90.07246 } }
+  - { name: Canal and Royal, at: { lat: 29.95328, lng: -90.06900 } }
+  - { name: Royal and Esplanade, at: { lat: 29.9633, lng: -90.0590 } }
+  - { name: Homer Plessy Way, at: { lat: 29.96414, lng: -90.04839 } }
+  - { name: Chartres and Esplanade, at: { lat: 29.96271, lng: -90.05906 } }
+  - { name: Jackson Square, at: { lat: 29.95700, lng: -90.06422 }, dwellS: 1200 }
+  - { name: Rampart and Saint Peter, at: { lat: 29.96043, lng: -90.06840 } }
+  - { name: Saint Louis Cemetery No. 1, at: { lat: 29.95899, lng: -90.07067 } }
+  - { name: Orleans Avenue, at: { lat: 29.96037, lng: -90.07004 } }
+  - { name: Esplanade and Rampart, at: { lat: 29.96593, lng: -90.06349 } }
+  - { name: Claiborne and Ursulines, at: { lat: 29.9673, lng: -90.0703 } }
+  - { name: Claiborne and Columbus, at: { lat: 29.9709, lng: -90.0670 } }
+  - { name: Bayou Saint John, at: { lat: 29.98116, lng: -90.08842 } }
+  - { name: City Park, at: { lat: 29.98603, lng: -90.09305 } }

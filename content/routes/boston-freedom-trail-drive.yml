@@ -1,0 +1,49 @@
+# A suggested drive (proposed 2026-11-11, for James's approval).
+#
+# The Freedom Trail for anyone who cannot walk it: from the Public Garden up Beacon Hill to
+# the African Meeting House, past the State House, Park Street Church, the Granary and King's
+# Chapel, down School Street to the Old Corner Bookstore and the Tea Party wharf, back by the
+# Old State House and Long Wharf, through the North End by Paul Revere's house, Old North and
+# Copp's Hill, along Commercial Street past the molasses flood, and over the bridge to
+# Charlestown and Bunker Hill.
+#
+# Short and dense: barely seven kilometres, with an echo every few hundred metres.
+#
+# Waypoint positions are road nodes from Overture Maps 2026-09-23.0 (transportation/segment,
+# OpenStreetMap contributors, ODbL), picked at the corner or entrance nearest the landmark or
+# echo each is named for; the landmarks are the echoes' own positions in content/echoes.
+id: boston-freedom-trail-drive
+mode: driving
+name: "Boston: the Freedom Trail by car, Beacon Hill to Bunker Hill"
+area: Boston
+# The road the line on the map follows between waypoints (`scripts/build-route-paths.py`).
+follows: Tremont Street
+
+origin:
+  name: Boston Public Garden
+  at: { lat: 42.35606, lng: -71.07005 }
+  timeZone: America/New_York
+
+destination:
+  name: Bunker Hill Monument, Charlestown
+  at: { lat: 42.37569, lng: -71.06109 }
+  timeZone: America/New_York
+
+# About 7 km of old, narrow Boston at walking pace, and a stop at Bunker Hill. An estimate.
+durationS: 3600
+
+waypoints:
+  - { name: Public Garden, at: { lat: 42.35606, lng: -71.07005 } }
+  - { name: African Meeting House, at: { lat: 42.36006, lng: -71.06508 } }
+  - { name: State House, at: { lat: 42.35772, lng: -71.06321 } }
+  - { name: Park Street Church, at: { lat: 42.35651, lng: -71.06198 } }
+  - { name: King's Chapel, at: { lat: 42.35800, lng: -71.06045 } }
+  - { name: Old Corner Bookstore, at: { lat: 42.35742, lng: -71.05834 } }
+  - { name: Griffin's Wharf, at: { lat: 42.35448, lng: -71.05345 } }
+  - { name: Old State House, at: { lat: 42.35886, lng: -71.05711 } }
+  - { name: Long Wharf, at: { lat: 42.35995, lng: -71.04984 } }
+  - { name: Paul Revere House, at: { lat: 42.36363, lng: -71.05363 } }
+  - { name: Copp's Hill, at: { lat: 42.36655, lng: -71.05507 } }
+  - { name: Commercial Street, at: { lat: 42.36821, lng: -71.05570 } }
+  - { name: City Square, at: { lat: 42.37288, lng: -71.06242 } }
+  - { name: Bunker Hill Monument, at: { lat: 42.37569, lng: -71.06109 }, dwellS: 900 }
