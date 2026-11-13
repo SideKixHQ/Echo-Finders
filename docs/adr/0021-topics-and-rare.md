@@ -84,6 +84,8 @@ Asked of James, not yet decided, built as below until he answers:
   topic switched it off, which rebuilt the session: on the Central Park West walk, with
   Ghosts & legends picked, the Dakota never synced. On a planned route, drive or flight
   true crime now stays on whatever is picked; exploring is unchanged until James decides.
+- **A trip's topic view has the area card** ("N places · M echoes") when zoomed out, as
+  exploring does (James, 2026-11-13).
 
 ## Amended 2026-11-13 (afternoon): kids mode is the Kids topic
 James first answered "True crime in kids mode ... Should I hide it in kids mode? - yes", then

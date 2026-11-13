@@ -278,6 +278,9 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   const dots = await p.locator('.clus').count();
   check('Topic on a drive: zooms out to every echo of it, with numbered dots',
     picked.zoom < before.zoom / 2 && dots > 0, `${before.zoom} then ${picked.zoom}, ${dots} dots`);
+  // The area card, as exploring has it zoomed out (James, 2026-11-13).
+  const card = (await p.locator('.area-card').innerText().catch(() => '')).replace(/\s+/g, ' ');
+  check('Topic on a drive: the area card says what is on screen', /\d+ places · \d+ echoes/.test(card), card);
   await kinds.click();
   await p.waitForTimeout(300);
   await sheet.getByRole('button', { name: 'All' }).click();
@@ -288,6 +291,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
     `${before.pins} / ${after.pins}`);
   check('Topic on a drive: the trip is unchanged (journey, echo bar)', after.chip === before.chip && after.bar === before.bar,
     `${before.chip} | ${before.bar} / ${after.chip} | ${after.bar}`);
+  check('Topic on a drive: the area card goes with the topic view', !(await visible(p.locator('.area-card'))));
   await ctx.close();
 }
 

@@ -1561,7 +1561,12 @@ export function App() {
    * decides what the hum sings and what the rose draws, and looking at a map of the world
    * should not put four hundred voices in somebody's ears.
    */
-  const farOut = roaming && (picking || (!overview && !lookAt)) && !plan && zoom < 1 && BASE_ZOOM[roamMode] + Math.log2(zoom) <= FAR_OUT_MAP_ZOOM;
+  // And on a trip, zoomed out in the topic view, as exploring has it (James, 2026-11-13): the
+  // area card says what is on screen there too.
+  const farOut =
+    (roaming ? (picking || (!overview && !lookAt)) && !plan : picking) &&
+    zoom < 1 &&
+    BASE_ZOOM[roaming ? roamMode : route.mode] + Math.log2(zoom) <= FAR_OUT_MAP_ZOOM;
   /*
    * The country view draws every echo at any zoom, not only zoomed out: a tap on a town's
    * dot goes in on that town, and with no location the engine's nearby list is empty.
