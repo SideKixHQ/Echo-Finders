@@ -73,8 +73,10 @@ Asked of James, not yet decided, built as below until he answers:
   flight, picking a topic is the same topic view as exploring, and All returns to the trip
   view as it was. The trip's queue, Coming up and progress are not the topic view's: they
   read the journey's own echoes, which picking does not change.
-- Where the panel is taller than the screen (an iPhone SE, or Safari with its bars) it
-  stops above the tab bar and scrolls; on the approved 390x844 frame it fits whole.
+- ~~Where the panel is taller than the screen (an iPhone SE, or Safari with its bars) it
+  stops above the tab bar and scrolls; on the approved 390x844 frame it fits whole.~~
+  Decided 2026-11-13: James approved it as built. The panel scrolls only on short screens
+  (an iPhone SE, an iPhone Duo closed) and fits without scrolling everywhere else.
 
 ## Amended 2026-11-13 (afternoon): kids mode is the Kids topic
 James first answered "True crime in kids mode ... Should I hide it in kids mode? - yes", then
