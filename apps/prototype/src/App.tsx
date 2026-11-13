@@ -1652,11 +1652,12 @@ export function App() {
     writeNearMemory(next);
     setNearToast(pick.echo.id);
   }, [around, nearMemory, firstRunDone, journeyMode, nearToast, syncedNow, lockedToast, state.playback.kind, heardSet]);
-  // Something started playing, or it synced: the nearby toast has nothing left to say.
+  // Something started playing, or it synced: the nearby toast has nothing left to say. Nor
+  // once the journey is no longer on foot: a drive picked while it was up kept saying "walk over".
   useEffect(() => {
     if (!nearToast) return;
-    if (state.playback.kind !== "idle" || stateOf(nearToast) !== "sealed") setNearToast(null);
-  }, [nearToast, state.playback.kind, stateOf]);
+    if (journeyMode !== "walking" || state.playback.kind !== "idle" || stateOf(nearToast) !== "sealed") setNearToast(null);
+  }, [nearToast, journeyMode, state.playback.kind, stateOf]);
 
   /**
    * The nearest echo anywhere, and whether looking further would turn anything up.
