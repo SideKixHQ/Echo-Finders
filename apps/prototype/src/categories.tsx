@@ -200,12 +200,6 @@ export const RARE_ICON: ReactNode = (
   </>
 );
 
-/**
- * How many echoes of a topic have to be in view before its chip is offered (James,
- * 2026-11-12). Two is a coincidence; three is something to go looking for.
- */
-export const CHIP_MIN_ECHOES = 3;
-
 /** Every category: the filter's "everything", on the map and on My Echoes alike. */
 export const ALL_CATEGORIES: ReadonlySet<EchoCategory> = new Set(CATEGORY_ORDER);
 

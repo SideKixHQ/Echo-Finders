@@ -26,22 +26,14 @@ import { CATEGORY_ICON, CHIP_GROUPS, RARE_AFTER, RARE_ICON, type ChipGroup } fro
 export interface RareChip {
   readonly on: boolean;
   readonly onToggle: () => void;
-  /** Offered at all: three or more rare echoes in view, or on already. */
-  readonly offered: boolean;
 }
 
 interface KindProps {
   readonly on: ReadonlySet<EchoCategory>;
   readonly onToggle: (group: ChipGroup) => void;
   readonly onAll: () => void;
-  /**
-   * The topics with enough echoes in view to be offered (`CHIP_MIN_ECHOES`). Absent means
-   * every topic, as My Echoes has no area to count.
-   */
-  readonly offered?: ReadonlySet<EchoCategory>;
+  /** The map's panel has Rare; My Echoes has its own Rare finds tile instead. */
   readonly rare?: RareChip;
-  /** "Philadelphia": the header line names where the count was taken. */
-  readonly area?: string;
 }
 
 const isAll = (on: ReadonlySet<EchoCategory>) =>
@@ -52,20 +44,20 @@ const picked = (on: ReadonlySet<EchoCategory>) =>
   isAll(on) ? [] : CHIP_GROUPS.filter((g) => g.categories.some((c) => on.has(c)));
 
 /**
- * All, then every topic with echoes around here, in two columns (the approved canvas,
- * board "The 16 topics", 2026-11-12). With everything showing, All is the one lit tile and
- * the topics sit unlit: fifteen lit tiles would read as fifteen things picked.
+ * All, then every topic, in two columns (the approved canvas, board "The 16 topics",
+ * 2026-11-12). With everything showing, All is the one lit tile and the topics sit unlit:
+ * fifteen lit tiles would read as fifteen things picked.
  *
- * Only what is near: a topic is offered when at least three of its echoes are in view
- * (`offered`), so the panel is a list of what you can actually find here. A chip that is
- * on never disappears while it is on, or there would be no way to turn it off.
+ * Every topic, and Rare, wherever you are (James, 2026-11-13, amending ADR-0021). The
+ * panel used to offer only the topics with three or more echoes in view, under a line
+ * naming the area and a note saying the list changes as the map moves; both lines went
+ * with that rule. Picking a topic here now takes the map out to every echo of it
+ * (`topicBox`, App.tsx), so a topic with none nearby is still somewhere to go.
  */
-export function KindGrid({ on, onToggle, onAll, offered, rare, area }: KindProps) {
+export function KindGrid({ on, onToggle, onAll, rare }: KindProps) {
   const all = isAll(on);
-  const shown = CHIP_GROUPS.filter(
-    (g) => !offered || g.categories.some((c) => offered.has(c)) || (!all && g.categories.some((c) => on.has(c))),
-  );
-  const rareShown = !!rare && (rare.offered || rare.on);
+  const shown = CHIP_GROUPS;
+  const rareShown = !!rare;
   const topic = (group: ChipGroup) => {
     const lit = !all && group.categories.some((c) => on.has(c));
     return (
@@ -87,7 +79,6 @@ export function KindGrid({ on, onToggle, onAll, offered, rare, area }: KindProps
   const after = shown.filter((g) => CHIP_GROUPS.indexOf(g) >= RARE_AFTER);
   return (
     <div className="kind-panel">
-      {area !== undefined && <div className="kind-head">{area ? `Around here, ${area}` : "Around here"}</div>}
       <div className="kind-chips" role="group" aria-label="Which echoes to show">
         <button className={`chip chip-all${all && !rare?.on ? " on" : ""}`} aria-pressed={all && !rare?.on} onClick={onAll}>
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -106,7 +97,6 @@ export function KindGrid({ on, onToggle, onAll, offered, rare, area }: KindProps
         )}
         {after.map(topic)}
       </div>
-      {offered && <p className="kind-note">Only topics with echoes around here show. Move the map and the list changes.</p>}
     </div>
   );
 }
@@ -119,7 +109,7 @@ interface PickerProps extends KindProps {
   readonly onOpenChange?: (open: boolean) => void;
 }
 
-export function KindPicker({ on, onToggle, onAll, offered, rare, area, count, open: openIn, onOpenChange }: PickerProps) {
+export function KindPicker({ on, onToggle, onAll, rare, count, open: openIn, onOpenChange }: PickerProps) {
   const [openOwn, setOpenOwn] = useState(false);
   const open = openIn ?? openOwn;
   const setOpen = useCallback(
@@ -198,7 +188,7 @@ export function KindPicker({ on, onToggle, onAll, offered, rare, area, count, op
       {/* Below the whole map bar, its full width: one box, every kind in view. */}
       {open && (
         <div className="kind-box" id="kind-box" ref={box}>
-          <KindGrid on={on} onToggle={onToggle} onAll={onAll} offered={offered} rare={rare} area={area} />
+          <KindGrid on={on} onToggle={onToggle} onAll={onAll} rare={rare} />
         </div>
       )}
     </>

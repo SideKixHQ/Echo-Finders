@@ -177,6 +177,10 @@
      more. Opened from the home screen an iPhone reports 34, and a fixed 74 squeezed the
      tabs into 40px. Everything below the map reads this, and the map measures the bar. */
   --nav-h: calc(60px + max(14px, env(safe-area-inset-bottom)));
+  /* The height the app has, below the phone's status bar: what `100dvh` is in Safari, where
+     the top inset is 0. In the iPhone app the page also runs under the status bar, and a
+     plate sized from `dvh` there came out taller than the approved one. */
+  --screen-h: calc(100dvh - env(safe-area-inset-top));
   /*
    * The pretend status bar the desktop frame draws ("10:42 … walking"), and where the top
    * chrome starts below it. On a real phone that bar is hidden (the phone has its own), so
@@ -1843,6 +1847,19 @@ body {
     width: 100%; max-width: 520px; margin: 0 auto; height: 100dvh;
     padding: 0; border-radius: 0; background: var(--space);
     box-shadow: none;
+    /*
+       Below the phone's status bar. In Safari the page already starts below it, so the
+       top inset is 0 and this is nothing. The iPhone app draws the page edge to edge
+       under the status bar and the Dynamic Island (`apps/ios/src/shell/WebShell.tsx`),
+       and there the inset is 20 to 62px. Everything inside started at the very top, so
+       the clock and the battery sat on the search box (James, TestFlight build 10,
+       2026-11-13). Padding the frame rather than each screen puts every screen exactly
+       where Safari puts it, one inset down, and nothing inside adds the inset again.
+       The bottom stays edge to edge: the tab bar and the full screen layers keep their
+       backgrounds under the home indicator and their buttons above it, as an installed
+       web app does.
+    */
+    padding-top: env(safe-area-inset-top);
   }
   .screen { border-radius: 0; }
   /* No notch to clear, but a real one to avoid. */
@@ -2164,7 +2181,8 @@ body {
     radial-gradient(ellipse at 50% 30%, rgba(var(--rgb-hair), 0.07) 0%, transparent 60%),
     var(--space);
   display: flex; flex-direction: column; align-items: center;
-  padding: max(24px, env(safe-area-inset-top)) 28px max(40px, calc(env(safe-area-inset-bottom) + 24px));
+  /* No top inset here: the frame is already below the status bar (On an actual phone). */
+  padding: 24px 28px max(40px, calc(env(safe-area-inset-bottom) + 24px));
   overflow-y: auto; scrollbar-width: none;
 }
 .onb::-webkit-scrollbar { display: none; }
@@ -2983,7 +3001,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .how {
   position: absolute; inset: 0; z-index: 1200; background: var(--space);
   display: flex; flex-direction: column;
-  padding: calc(72px + env(safe-area-inset-top)) 24px calc(40px + env(safe-area-inset-bottom));
+  /* No top inset here: the frame is already below the status bar (On an actual phone). */
+  padding: 72px 24px calc(40px + env(safe-area-inset-bottom));
 }
 .how-body { margin: auto 0; display: flex; flex-direction: column; }
 .how h1 { margin: 0; font-size: var(--fs-title); line-height: 1.15; font-weight: 700; text-wrap: balance; color: var(--white); }
@@ -3039,7 +3058,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   position: absolute; inset: 0; z-index: 55;
   background: radial-gradient(70% 42% at 50% 38%, #16110a 0%, #08080e 58%, #04050a 100%);
   display: flex; flex-direction: column; align-items: center;
-  padding: calc(14px + env(safe-area-inset-top)) 22px calc(18px + env(safe-area-inset-bottom));
+  /* No top inset here: the frame is already below the status bar (On an actual phone). */
+  padding: 14px 22px calc(18px + env(safe-area-inset-bottom));
   text-align: center; overflow: hidden;
 }
 
@@ -3296,7 +3316,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .hear {
   position: absolute; inset: 0; z-index: 40;
   /* The one number the rest of the screen is built from. */
-  --plate-h: clamp(150px, 26dvh, 300px);
+  --plate-h: clamp(150px, calc(var(--screen-h) * 0.26), 300px);
   background: linear-gradient(#101534 0%, #100e0a 42%, #07080c 100%);
   display: flex; flex-direction: column;
   padding-bottom: calc(var(--nav-h) + 6px);
@@ -3325,7 +3345,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 
 .hear-back {
-  position: absolute; left: var(--gutter); top: calc(var(--top-gap) + 4px + env(safe-area-inset-top));
+  /* No top inset here: the frame is already below the status bar (On an actual phone). */
+  position: absolute; left: var(--gutter); top: calc(var(--top-gap) + 4px);
   width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
   display: grid; place-items: center; color: var(--white);
   background: rgba(11, 15, 43, 0.5); border: 1px solid rgba(255, 255, 255, 0.16);
@@ -3334,7 +3355,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* Done with it, top right, mirroring the way out top left. Absolute, so it costs the
    layout nothing on a screen that already fits an iPhone SE with no slack. */
 .hear-stop {
-  position: absolute; right: var(--gutter); top: calc(var(--top-gap) + 4px + env(safe-area-inset-top));
+  position: absolute; right: var(--gutter); top: calc(var(--top-gap) + 4px);
   width: 44px; height: 44px; border-radius: 50%; cursor: pointer; z-index: 3;
   display: grid; place-items: center; color: var(--muted);
   background: rgba(11, 15, 43, 0.5); border: 1px solid rgba(255, 255, 255, 0.16);
@@ -3374,7 +3395,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 /* Scales with the screen for the same reason the plate does. 96px is where the four
    ribbons still read as four rather than as one band; 130 is the board's. */
-.hear-wave { display: block; width: 100%; height: clamp(96px, 16dvh, 130px); }
+.hear-wave { display: block; width: 100%; height: clamp(96px, calc(var(--screen-h) * 0.16), 130px); }
 /*
  * The ribbons ADD where they overlap, which is the whole reason this reads as light
  * rather than as a shape. Four warm fills laid over each other with `screen` give a hot
@@ -3582,7 +3603,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
      characters of "Search this transcript" were behind a circle, on the one control on
      this screen you are most likely to reach for first. 48 + 44 + 12 of air.
   */
-  padding-top: calc(var(--top-gap) + 60px + env(safe-area-inset-top));
+  /* No top inset here: the frame is already below the status bar (On an actual phone). */
+  padding-top: calc(var(--top-gap) + 60px);
   padding-left: 4px;
   padding-right: 4px;
   padding-bottom: 8px;
@@ -3638,7 +3660,9 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
      top of the body instead of clipping it. Two plans made this taller than one price. */
   /* 16 top and bottom, not 24: with two plans the screen is fitted to an iPhone in
      Safari (390x664) exactly, and `audit:align` measures that it does. */
-  display: flex; flex-direction: column; padding: 16px 24px; overflow-y: auto;
+  /* The bottom clears the home indicator, as the first run's and the sync screen's do: in
+     the iPhone app the last line scrolled to rest under it. 0 in Safari. */
+  display: flex; flex-direction: column; padding: 16px 24px calc(16px + env(safe-area-inset-bottom)); overflow-y: auto;
   animation: paywall-in 0.28s ease-out both;
 }
 @keyframes paywall-in { from { opacity: 0; } to { opacity: 1; } }
@@ -3746,7 +3770,7 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 }
 /* Shorter on a shorter screen, so the whole card fits without scrolling in Safari, where
    the bars leave about 664px: at a fixed 132 "Save for later" was cut in half. */
-.pop-plate img { width: 100%; height: clamp(84px, calc(100dvh - 560px), 132px); object-fit: cover; display: block; }
+.pop-plate img { width: 100%; height: clamp(84px, calc(var(--screen-h) - 560px), 132px); object-fit: cover; display: block; }
 /*
  * An iPhone SE in Safari leaves 553px, and the card was 51px taller than its room, with
  * "Save for later" cut off. Measured, not guessed (`audit:align`). Below 600px the photo
@@ -4468,16 +4492,21 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   animation: catpopIn 0.16s var(--ease);
 }
 @media (prefers-reduced-motion: reduce) { .kind-box { animation: none; } }
-/* Two columns, never a scroller (approved canvas, board "The 16 topics", 2026-11-12): a
-   header saying where the count was taken, the topics with echoes here, and a note saying
-   why the list changes. Fits a 390x844 screen with every topic showing. */
+/* Two columns, never a scroller (approved canvas, board "The 16 topics", 2026-11-12): every
+   topic and Rare, and nothing else (James, 2026-11-13: the header naming the area and the
+   note about the list changing went with the "three or more nearby" rule). Fits a 390x844
+   screen with every topic showing. */
 .kind-box { padding: 14px; border-radius: 18px; }
-.kind-panel { display: flex; flex-direction: column; gap: 10px; }
-.kind-head {
-  font-family: "Space Grotesk", monospace; font-size: 12px; letter-spacing: 0.04em;
-  text-transform: uppercase; color: var(--muted);
+/* Every topic is in the map's panel now, everywhere, and on a phone shorter than the
+   approved 390x844 frame (an SE, or Safari with its bars) the last row ran under the tab
+   bar, out of reach. Where it fits it is exactly as approved; where it does not, it stops
+   above the tabs and scrolls. */
+.mapbar .kind-box {
+  max-height: calc(var(--screen-h) - var(--top-gap) - var(--mapbar-h) - 8px - var(--nav-h) - 8px);
+  overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none;
 }
-.kind-note { font-size: 13px; line-height: 1.4; color: var(--muted); }
+.mapbar .kind-box::-webkit-scrollbar { display: none; }
+.kind-panel { display: flex; flex-direction: column; gap: 10px; }
 .kind-chips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 .kind-chips .chip {
   min-height: 44px; border-radius: 22px; padding: 0 12px; gap: 8px; min-width: 0;
@@ -5141,7 +5170,7 @@ div.maplibregl-map { font-size: var(--fs-label); }
    above without editing it, and built from the tokens so the light scheme follows. */
 .pop { padding: 14px 20px 14px; border-radius: 24px; }
 .pop .pop-plate { margin: 0 0 12px; border-radius: 16px; }
-.pop .pop-plate img { height: clamp(84px, calc(100dvh - 740px), 108px); }
+.pop .pop-plate img { height: clamp(84px, calc(var(--screen-h) - 740px), 108px); }
 /*
  * The credit, in full, under the photograph rather than over its corner.
  *

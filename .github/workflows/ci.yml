@@ -81,5 +81,8 @@ jobs:
       - run: npm run library:build
       - run: npm run audit:paywall
       - run: npm run audit:align
+      # Every screen inside the iPhone app, with its real status bar and home indicator insets
+      # (scripts/audit-fit.mjs).
+      - run: npm run audit:fit
       - run: npm run audit:flows
       - run: npm run audit:bridge

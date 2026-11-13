@@ -175,6 +175,12 @@ interface Props {
    */
   readonly countryBox?: Bounds | null;
   /**
+   * Every echo of the topics picked in the panel (James, 2026-11-13): the map goes out just
+   * far enough to fit them, and stops following you while it is up. When it goes, the map
+   * flies back to where it was just before. Comes before every other framing.
+   */
+  readonly topicBox?: Bounds | null;
+  /**
    * The walk to the echo you asked to be taken to, along the streets, from where you are
    * (`directions.ts`). Drawn over everything but the pins; framed once when it first
    * appears, so you see the whole way before following it.
@@ -410,6 +416,7 @@ export function RouteMap({
   viewLibrary,
   lookAt = null,
   countryBox = null,
+  topicBox = null,
   directions = null,
   directionsStraight = false,
   aimId = null,
@@ -1329,6 +1336,57 @@ export function RouteMap({
     return [0, (inset.top + (box.h - inset.top - inset.bottom) / 2) - box.h / 2];
   }, [barH, reservedBottom, navH, box.h]);
   const framed = useRef(false);
+  /*
+   * THE TOPIC VIEW. Picking a topic fits every echo of it (`topicBox`), with the same
+   * animated move as every other framing; picking another refits. The camera from just
+   * before the first pick is kept, and flown back to when the box goes. Following you stands
+   * aside while it is up; a search or the locate arrow still move the map.
+   */
+  const topicKey = topicBox ? `${topicBox.south},${topicBox.west},${topicBox.north},${topicBox.east}` : null;
+  const topicHeld = useRef(false);
+  const beforeTopic = useRef<{ center: [number, number]; zoom: number; bearing: number; pitch: number } | null>(null);
+  useEffect(() => {
+    if (!gl) return;
+    if (topicBox) {
+      if (!beforeTopic.current) {
+        const c = gl.getCenter();
+        beforeTopic.current = { center: [c.lng, c.lat], zoom: gl.getZoom(), bearing: gl.getBearing(), pitch: gl.getPitch() };
+      }
+      topicHeld.current = true;
+      const inset = insetFor(barH, reservedBottom, navH);
+      gl.fitBounds(
+        [
+          [topicBox.west, topicBox.south],
+          [topicBox.east, topicBox.north],
+        ],
+        // The country view's padding: coast to coast is about as far out as the map goes.
+        { padding: { top: inset.top + 30, bottom: inset.bottom + 30, left: inset.side + 4, right: inset.side + 10 }, maxZoom: base, duration: 600 },
+      );
+      return;
+    }
+    const back = beforeTopic.current;
+    if (!back) {
+      topicHeld.current = false;
+      return;
+    }
+    beforeTopic.current = null;
+    /*
+     * Following waits until the camera is back. An ease started over this one cuts it short,
+     * and MapLibre reports the zoom it was cut at (far out) as the zoom on screen, so the
+     * map followed you at the topic view's zoom (found in testing, from "Nothing within").
+     * Back where it was is the view following had, so it carries on from there without
+     * fitting your nearest echoes again.
+     */
+    revealed.current = true;
+    const release = () => {
+      topicHeld.current = false;
+    };
+    gl.once("moveend", release);
+    window.setTimeout(release, 900);
+    gl.easeTo({ ...back, duration: 600 });
+    // Only the box decides; the insets and the base zoom are read as they are now.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gl, topicKey]);
   const hasFix = at !== null;
   const frameKey = countryBox ? `${countryBox.south},${countryBox.west},${countryBox.north},${countryBox.east}` : null;
   /** The country box last fitted, so a fix arriving later does not throw the listener back. */
@@ -1419,6 +1477,8 @@ export function RouteMap({
 
   useEffect(() => {
     if (!gl || !at || overview || lookAt || !following) return;
+    // The topic view has the camera, until it has given it back.
+    if (topicHeld.current) return;
     // Mid-pinch, a finger is in charge; the next fix after it lets go will catch up.
     if (gesturing.current) return;
     /*

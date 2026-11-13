@@ -157,25 +157,20 @@ let browserSettings = null;
   await firstRun(p);
   check('App: location asked of the phone', (await sent(p, 'location:start')).length >= 1);
   const here = () => p.locator('.here').first().boundingBox().catch(() => null);
-  const kindsHead = async () => {
-    await p.locator('.kind-tap').click();
-    await p.waitForTimeout(400);
-    const text = (await p.locator('#kind-box .kind-head').innerText().catch(() => '')).trim();
-    await p.keyboard.press('Escape');
-    await p.waitForTimeout(300);
-    return text;
-  };
+  // The echo the bar opens on is the nearest to you: where the map thinks you are. (It was
+  // the topic panel's "Around here, <place>" line, which went on 2026-11-13.)
+  const barNow = async () => (await p.locator('.echobar').innerText().catch(() => '')).replace(/\s+/g, ' ').trim();
   check('App: the phone\'s fix puts you on the map', !!(await here()));
   const appSettings = await settingsShot(p);
   if (SHOTS) await p.screenshot({ path: `${SHOTS}/bridge-settings-app.png` });
   check('App: Settings is the same pixels as in a browser', !!browserSettings && Buffer.compare(browserSettings, appSettings) === 0);
   await p.locator('.nav').getByRole('button', { name: /Map/ }).click();
   await p.waitForTimeout(800);
-  const ny = await kindsHead();
+  const ny = await barNow();
   await p.evaluate((at) => { window.__at = at; }, PHILADELPHIA);
   await p.waitForTimeout(3500);
-  const philly = await kindsHead();
-  check('App: the phone\'s next fix moves the map', !/Philadelphia/i.test(ny) && /Philadelphia/i.test(philly), `${ny} then ${philly}`);
+  const philly = await barNow();
+  check('App: the phone\'s next fix moves the map', !!ny && !!philly && ny !== philly && /Liberty Bell|Independence|Philadelphia/i.test(philly), `${ny} then ${philly}`);
 
   await p.locator('.nav').getByRole('button', { name: /Settings/ }).click();
   await p.waitForTimeout(600);

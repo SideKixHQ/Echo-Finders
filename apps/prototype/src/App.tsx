@@ -5,11 +5,11 @@ import { testPositionFrom } from "./test-position";
 import { count } from "./analytics";
 import { takeSharedEcho } from "./share";
 import { LIBRARY, ROUTES } from "./library.generated";
-import { ALL_CATEGORIES, CHIP_MIN_ECHOES, toggleCategories, type ChipGroup } from "./categories";
+import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { BASE_ZOOM, MIN_ZOOM, RouteMap, type PinState } from "./RouteMap";
-import { AreaCard, AREACARD_H, AREACARD_OVER_BAR, areaName } from "./AreaCard";
+import { AreaCard, AREACARD_H, AREACARD_OVER_BAR } from "./AreaCard";
 import { Collection } from "./Collection";
 import { IndexedDbCollection } from "./collection-store";
 import { Privacy } from "./Privacy";
@@ -1335,6 +1335,35 @@ export function App() {
     setRareOnly(false);
   }, []);
   const toggleRare = useCallback(() => setRareOnly((on) => !on), []);
+  /**
+   * Topics everywhere (James, 2026-11-13, amending ADR-0021). Picking a topic, Rare, or
+   * several takes the map out just far enough to show every echo of them, in every city,
+   * the numbered dots saying where they are; back to All, or the last one turned off,
+   * flies it back to the view from just before the first pick. While exploring: a journey
+   * filters its own echoes, as before.
+   */
+  const picking = roaming && (cats !== null || rareOnly);
+  /** The zoom and pan from just before the first pick. The map keeps its own camera. */
+  const [beforePick, setBeforePick] = useState<{ zoom: number; pan: { x: number; y: number } } | null>(null);
+  useEffect(() => {
+    if (picking && !beforePick) setBeforePick({ zoom, pan });
+    if (!picking && beforePick) {
+      setZoom(beforePick.zoom);
+      setPan(beforePick.pan);
+      setBeforePick(null);
+    }
+    // Only on the pick and the return: the zoom and pan in between are the topic view's.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [picking]);
+  /**
+   * What the topic view fits: every echo the panel lets through, framed as the country view
+   * frames the library (`country-view.ts`), so the three ghost stories in England do not
+   * take the map out over the Atlantic.
+   */
+  const topicBox = useMemo(
+    () => (picking ? countryFrame(LIBRARY.filter(shows).map((e) => e.point.at)) : null),
+    [picking, shows],
+  );
   /** "Saved to My echoes": which echo was just saved, for the toast that says where it went. */
   const [savedToast, setSavedToast] = useState<string | null>(null);
   // Leaving the map lets it go, so it does not come back on the way in again.
@@ -1480,25 +1509,26 @@ export function App() {
    * decides what the hum sings and what the rose draws, and looking at a map of the world
    * should not put four hundred voices in somebody's ears.
    */
-  const farOut = roaming && !overview && !lookAt && !plan && zoom < 1 && BASE_ZOOM[roamMode] + Math.log2(zoom) <= FAR_OUT_MAP_ZOOM;
+  const farOut = roaming && (picking || (!overview && !lookAt)) && !plan && zoom < 1 && BASE_ZOOM[roamMode] + Math.log2(zoom) <= FAR_OUT_MAP_ZOOM;
   /*
    * The country view draws every echo at any zoom, not only zoomed out: a tap on a town's
    * dot goes in on that town, and with no location the engine's nearby list is empty.
    */
-  const everything = farOut || (roaming && country && !overview && !lookAt && !plan);
+  // And while a topic is picked: every echo of it, wherever it is.
+  const everything = picking || farOut || (roaming && country && !overview && !lookAt && !plan);
   /** The area's echoes before the panel's filter: what the topic chips are counted from. */
   const inArea = useMemo(
     () =>
       roaming
-        ? overview
+        ? overview && !picking
           ? overviewEchoes
-          : lookAt
+          : lookAt && !picking
             ? LIBRARY.filter((e) => distanceKm(lookAt.at, e.point.at) <= LOOK_RADIUS_KM)
             : everything
               ? LIBRARY
               : state.nearby.map((n) => n.echo)
         : onRoute,
-    [roaming, overview, overviewEchoes, lookAt, everything, state.nearby, onRoute],
+    [roaming, overview, overviewEchoes, lookAt, picking, everything, state.nearby, onRoute],
   );
   const onMap = useMemo(() => inArea.filter(shows), [inArea, shows]);
   /**
@@ -1508,33 +1538,8 @@ export function App() {
    */
   const [inViewAll, setInView] = useState<readonly Echo[]>([]);
   const inView = useMemo(() => inViewAll.filter(shows), [inViewAll, shows]);
-  /**
-   * Show only what is near (James, 2026-11-12): the topics with at least three echoes in
-   * the area, and Rare on the same rule. "All" always shows; a chip that is on stays.
-   *
-   * The area is what the zoomed-out card counts (`inViewAll`, the echoes on screen) when
-   * that card is up. Zoomed in, the screen holds a street and a handful of pins, and
-   * counting only those offered Philadelphia nothing but History (and the engine's reach,
-   * 30 echoes, only History and Wonders). There the area is the city around where the map
-   * is looking: exploring, what the whole-thing button frames (`overviewEchoes`, a city
-   * centre and its edges); a searched place, its echoes; on a journey, the route.
-   */
-  const chipSource = farOut ? inViewAll : roaming && !lookAt ? overviewEchoes : inArea;
-  const offeredTopics = useMemo(() => {
-    const n = new Map<EchoCategory, number>();
-    for (const e of chipSource) n.set(e.category, (n.get(e.category) ?? 0) + 1);
-    return new Set([...n].filter(([, c]) => c >= CHIP_MIN_ECHOES).map(([k]) => k));
-  }, [chipSource]);
-  const rareOffered = useMemo(() => chipSource.filter(isRareFind).length >= CHIP_MIN_ECHOES, [chipSource]);
-  const rareChip = useMemo(
-    () => ({ on: rareOnly, onToggle: toggleRare, offered: rareOffered }),
-    [rareOnly, toggleRare, rareOffered],
-  );
-  const panelArea = useMemo(() => {
-    const name = areaName(chipSource);
-    if (/^\d+ places$/.test(name)) return "";
-    return name.replace(/^Around /, "");
-  }, [chipSource]);
+  /** The Rare chip: every topic and Rare are offered everywhere (`KindGrid`). */
+  const rareChip = useMemo(() => ({ on: rareOnly, onToggle: toggleRare }), [rareOnly, toggleRare]);
 
   /**
    * The same list, nearest first, which is the order the stepper moves in.
@@ -1685,7 +1690,8 @@ export function App() {
   // has asked for the map at their own position either: that is the answer they wanted.
   // Not while walking to an echo either: the way there is the answer, however far it is.
   // Nor on the country view, which is what its own "Show me where they are" opened.
-  const nowhere = roaming && !lookAt && !showMe && !country && !(beacon !== null && selfDirected) && state.nearby.length === 0;
+  // Nor while a topic is picked: the map has gone out to every echo of it.
+  const nowhere = roaming && !lookAt && !showMe && !country && !picking && !(beacon !== null && selfDirected) && state.nearby.length === 0;
   const nearestAnywhere = useMemo(() => {
     if (!nowhere) return null;
     const from = state.position?.at ?? null;
@@ -2254,9 +2260,7 @@ export function App() {
                   on={activeCats}
                   onToggle={toggleCategory}
                   onAll={allCategories}
-                  offered={offeredTopics}
                   rare={rareChip}
-                  area={panelArea}
                 />
                 </div>
               </div>
@@ -2347,6 +2351,7 @@ export function App() {
                 locateTap={locateTap}
                 lookAt={roaming ? lookAt?.at ?? null : null}
                 countryBox={roaming && country ? US_FRAME : null}
+                topicBox={topicBox}
                 /*
                   The way there: along the streets where there is a street file, and a
                   straight line to the echo where there is not, so the map always shows

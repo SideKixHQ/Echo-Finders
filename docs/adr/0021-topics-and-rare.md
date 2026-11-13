@@ -1,6 +1,6 @@
 # ADR-0021: The 16 topics, and Rare picked by hand
 
-**Status:** accepted · **Date:** 2026-11-12 · **Builds on ADR-0009 (ubiquitous language),
+**Status:** accepted, amended 2026-11-13 (topics everywhere) · **Date:** 2026-11-12 · **Builds on ADR-0009 (ubiquitous language),
 ADR-0010 (capture) and ADR-0017 (fact and folklore)**
 
 ## Context
@@ -46,6 +46,28 @@ topic, and 117 echoes marked rare or extra rare with a reason.
   in, it is the city around where the map is looking (the echoes the whole-trip button
   frames), a searched place, or the route. The panel is a two column grid that fits a
   390x844 screen.
+
+## Amended 2026-11-13: topics everywhere
+James decided that the map's panel offers every topic and Rare wherever you are. This
+replaces "Chips show only what is near" above for the map:
+- **Every topic and Rare, always,** in the same two column grid, order, icons and colours.
+  The rule of three echoes in view is gone, and with it both lines that explained it: the
+  "Around here, <place>" header and the note "Only topics with echoes around here show.
+  Move the map and the list changes." The panel is the chips and nothing else.
+- **Picking zooms out to them.** Picking a topic, Rare, or several takes the map out just
+  far enough to fit every echo of the picked topics, in every city, with the numbered dots
+  (`PinCluster`) saying where they are, using the map's animated camera. It works from
+  anywhere, including a place with none of that topic and "Nothing within".
+- **All, or the last one off, goes back.** The map flies back to the view the listener had
+  just before the first pick.
+
+Asked of James, not yet decided, built as below until he answers:
+- The fit uses the country view's box (`country-view.ts`), the continental US, so the
+  three Ghosts & legends echoes in England and Scotland are not in the first view.
+- The zoom out is while exploring. On a planned journey (a route, a drive, a flight) the
+  panel offers every topic and filters the journey's own echoes, as before.
+- Where the panel is taller than the screen (an iPhone SE, or Safari with its bars) it
+  stops above the tab bar and scrolls; on the approved 390x844 frame it fits whole.
 
 ## Held back
 - `dc-the-tape-on-the-door` (Watergate) stays in true crime with its review, as James was
