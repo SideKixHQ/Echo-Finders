@@ -15,6 +15,7 @@
 
 import { tooFarToWalk } from "./going";
 import type { Echo, TravelMode } from "@echofinders/core";
+import { syncRadiusKm } from "@echofinders/core";
 
 /** How close counts as close, for toast A. */
 export const NEAR_KM = 0.15;
@@ -116,7 +117,8 @@ export function toastDistance(km: number): string {
 
 /** Toast C's second line: the real sync radius, said for the way you are travelling. */
 export function unlockLine(echo: Echo, mode: TravelMode): string {
-  const km = echo.point.triggerRadiusKm;
+  // A driver's reach from the road where that is wider (`syncReachKm`), as the engine syncs.
+  const km = syncRadiusKm(echo.point.triggerRadiusKm, mode);
   const reach = km < 1 ? `${Math.round(km * 1000)} m` : toastDistance(km);
   return `${mode === "walking" ? "Walk" : "Get"} within ${reach} to unlock it`;
 }

@@ -133,6 +133,31 @@ export interface ModePreset {
    */
   readonly defaultProvenances: readonly Provenance[];
 
+  /**
+   * How far from the road an echo can be synced, km, however small its own radius. Absent
+   * means an echo syncs only within its own radius.
+   *
+   * Driving only (James, 2026-11-13, decision 3: "a driver syncs an echo up to about 150 m
+   * from the road"). Nearly every echo is written for somebody on foot, at thirty to sixty
+   * metres, and a car only crosses one when the road runs right over it: a landmark sixty
+   * metres off the kerb never synced, and at highway speed a forty metre echo is crossed in
+   * about five seconds. A wider radius is never narrowed (`syncRadiusKm`).
+   */
+  readonly syncReachKm?: number;
+
+  /**
+   * Whether an echo waiting its turn gives up once the traveller has gone past it: outside
+   * its sync radius and further away than at the last fix.
+   *
+   * Driving only. A car downtown syncs more than it has time to hear (eleven in ninety
+   * seconds on the MVP drive, three heard), and a waiting echo otherwise held its place
+   * until the car was the mode's whole drift tolerance away, four and a half kilometres,
+   * so the queue played places already left behind and gave up on the ones being passed.
+   * On foot the drift tolerance is a hundred metres and doing its job, so walks are as
+   * they were.
+   */
+  readonly waitingGivesUpOncePassed?: boolean;
+
   /** Suggested trigger radius for new content in this mode, km. Editorial guidance. */
   readonly typicalTriggerRadiusKm: number;
 
@@ -213,6 +238,9 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
     // No ceiling. A car cannot stand still, and a three kilometre radius at ninety is
     // two minutes inside the place. Passing through it *is* the arrival.
     syncAtKph: null,
+    // An echo you can see from the road syncs from the road (decision 3, 2026-11-13).
+    syncReachKm: 0.15,
+    waitingGivesUpOncePassed: true,
     maxTimingDriftS: 180,
     minGapS: 20,
     dutyCycle: { light: 0.3, balanced: 0.55, immersive: 0.8 },
@@ -281,6 +309,14 @@ export const MODE_PRESETS: Record<TravelMode, ModePreset> = {
 
 export function presetFor(mode: TravelMode): ModePreset {
   return MODE_PRESETS[mode];
+}
+
+/**
+ * The radius an echo syncs within in this mode, km: its own, or the mode's reach from the
+ * road where that is wider (`syncReachKm`).
+ */
+export function syncRadiusKm(triggerRadiusKm: number, mode: TravelMode): number {
+  return Math.max(triggerRadiusKm, MODE_PRESETS[mode].syncReachKm ?? 0);
 }
 
 /** Duty cycle for a mode and density, with `balanced` as the default. */

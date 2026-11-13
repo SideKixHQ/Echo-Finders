@@ -71,6 +71,8 @@ describe("what the toasts say", () => {
     expect(unlockLine(echo("a", 0.04), "walking")).toBe("Walk within 40 m to unlock it");
     expect(unlockLine(echo("a", 0.09), "walking")).toBe("Walk within 90 m to unlock it");
     expect(unlockLine(echo("a", 3), "driving")).toBe("Get within 3 km to unlock it");
+    // A walking echo, on a drive: the driver's reach from the road (decision 3, 2026-11-13).
+    expect(unlockLine(echo("a", 0.04), "driving")).toBe("Get within 150 m to unlock it");
   });
 });
 

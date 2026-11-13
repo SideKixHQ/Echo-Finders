@@ -9,7 +9,7 @@
 
 import type { Echo, ListenerProfile, Position, TravelMode } from "../types.js";
 import { distanceKm } from "../geo/great-circle.js";
-import { presetFor } from "../modes.js";
+import { presetFor, syncRadiusKm } from "../modes.js";
 import { checkEligibility } from "../ranking/score.js";
 import { rarityOf } from "./rarity.js";
 import type {
@@ -317,7 +317,7 @@ export class CaptureTracker {
    * only catches the pathological cases.
    */
   private reachFor(echo: Echo, position: Position): number {
-    const radiusKm = echo.point.triggerRadiusKm;
+    const radiusKm = this.radiusOf(echo);
     const accuracyKm = Math.min(
       (position.accuracyM ?? 0) / 1000,
       radiusKm * this.options.maxSlackFraction,
@@ -334,7 +334,15 @@ export class CaptureTracker {
    */
   private fixTooVague(echo: Echo, position: Position): boolean {
     const accuracyKm = (position.accuracyM ?? 0) / 1000;
-    return accuracyKm > echo.point.triggerRadiusKm * this.options.maxAccuracyRatio;
+    return accuracyKm > this.radiusOf(echo) * this.options.maxAccuracyRatio;
+  }
+
+  /**
+   * The radius this echo syncs within, travelling this way: its own, or a driver's reach
+   * from the road where that is wider (`syncReachKm` in `modes.ts`).
+   */
+  private radiusOf(echo: Echo): number {
+    return syncRadiusKm(echo.point.triggerRadiusKm, this.options.mode);
   }
 
   private isEligible(echo: Echo, atMs: number): boolean {

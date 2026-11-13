@@ -31,7 +31,7 @@
 
 import type { AudioRender, Echo, LatLng, TravelMode } from "../types.js";
 import { distanceKm } from "../geo/great-circle.js";
-import { driftToleranceKm, presetFor } from "../modes.js";
+import { driftToleranceKm, presetFor, syncRadiusKm } from "../modes.js";
 
 export interface QueuedEcho {
   readonly echo: Echo;
@@ -81,9 +81,16 @@ export class PlaybackQueue {
   private readonly queue: QueuedEcho[] = [];
   private readonly maxWaiting: number;
   private readonly maxDriftKm: number;
+  private readonly mode: TravelMode;
+  /** Gives up on a waiting echo once it is passed (`waitingGivesUpOncePassed`). */
+  private readonly givesUpOncePassed: boolean;
+  /** How far each waiting echo was at the last fix, km, to tell passing from approaching. */
+  private readonly lastKm = new Map<string, number>();
 
   constructor(mode: TravelMode, options: PlaybackOptions = {}) {
     const preset = presetFor(mode);
+    this.mode = mode;
+    this.givesUpOncePassed = preset.waitingGivesUpOncePassed ?? false;
     this.maxWaiting = options.maxWaiting ?? DEFAULT_MAX_WAITING;
     this.maxDriftKm =
       options.maxDriftKm ?? driftToleranceKm(preset.maxTimingDriftS, preset.speedKph);
@@ -163,11 +170,25 @@ export class PlaybackQueue {
     const gone: Deferred[] = [];
     for (let i = this.queue.length - 1; i >= 0; i--) {
       const item = this.queue[i]!;
-      if (distanceKm(at, item.echo.point.at) > item.echo.point.triggerRadiusKm + this.maxDriftKm) {
+      const km = distanceKm(at, item.echo.point.at);
+      const before = this.lastKm.get(item.echo.id);
+      this.lastKm.set(item.echo.id, km);
+      /*
+       * On a drive, gone past: out of the radius it synced in, and further away than at the
+       * last fix. A car that has left a place behind is not coming back to it, and the
+       * drift tolerance (four and a half kilometres at ninety) kept it waiting long after.
+       */
+      const passed =
+        this.givesUpOncePassed &&
+        before !== undefined &&
+        km > before &&
+        km > syncRadiusKm(item.echo.point.triggerRadiusKm, this.mode);
+      if (passed || km > item.echo.point.triggerRadiusKm + this.maxDriftKm) {
         this.queue.splice(i, 1);
         gone.push({ echo: item.echo, reason: "out-of-range" });
       }
     }
+    for (const id of this.lastKm.keys()) if (!this.queue.some((q) => q.echo.id === id)) this.lastKm.delete(id);
     return gone.reverse();
   }
 

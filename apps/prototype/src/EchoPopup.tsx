@@ -30,7 +30,7 @@
  */
 
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { presetFor, rarityOf, type Echo, type TravelMode } from "@echofinders/core";
+import { presetFor, rarityOf, syncRadiusKm, type Echo, type TravelMode } from "@echofinders/core";
 import { rareLabel, rareWhy } from "./my-echoes";
 import { CATEGORY_LABEL } from "./categories";
 import { platePng } from "./archive-plate";
@@ -100,7 +100,9 @@ export interface EchoPopupProps {
  * Writing the number on screen is what made it obvious. "Syncs when you are within 30 m"
  * is a promise specific enough to be checked, which a vague one never was.
  */
-const reachM = (echo: Echo) => Math.round(echo.point.triggerRadiusKm * 1000);
+const reachM = (echo: Echo, mode: TravelMode) =>
+  // On a drive, the driver's reach from the road where that is wider (`syncReachKm`).
+  Math.round(syncRadiusKm(echo.point.triggerRadiusKm, mode) * 1000);
 
 /** What being there means, per mode. */
 const ARRIVED: Record<TravelMode, string> = {
@@ -141,7 +143,7 @@ export function EchoPopup({
 }: EchoPopupProps) {
   const metres = distanceKm === null ? null : distanceKm * 1000;
   const synced = state === "captured" || state === "heard";
-  const reach = reachM(echo);
+  const reach = reachM(echo, mode);
   const withinReach = metres !== null && metres <= reach;
   const rarity = rarityOf(echo);
   const photo = echo.archive?.[0];
