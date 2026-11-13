@@ -3,7 +3,7 @@ import { holdsPersonalLocation, screenAwake, screenAwakeNote, type PrivacySettin
 import { accessRole, claimOwnerFromAddress, setOwnerMode, type AccessRole } from "./owner";
 import { testPositionFrom } from "./test-position";
 import { count } from "./analytics";
-import { takeSharedEcho } from "./share";
+import { COPIED_EVENT, takeSharedEcho } from "./share";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
 import { useJourney, listenerFor } from "./use-journey";
@@ -40,7 +40,7 @@ import { publishNowPlaying, usePageVisible, useScreenAwake } from "./wake";
 import { holdLockScreen, primeLockScreen } from "./lock-screen";
 import { savedList } from "./saved-list";
 import { readSaved, toggleSaved, writeSaved } from "./saved-store";
-import { HowEchoesUnlock, NearToast, SavedToast, SAVED_SHOW_MS, SyncedToast } from "./Toasts";
+import { CopiedToast, HowEchoesUnlock, NearToast, SavedToast, SAVED_SHOW_MS, SyncedToast } from "./Toasts";
 import {
   HOW_KEY,
   LOCKED_KEY,
@@ -1364,6 +1364,18 @@ export function App() {
     () => (picking ? countryFrame(LIBRARY.filter(shows).map((e) => e.point.at)) : null),
     [picking, shows],
   );
+  /**
+   * "Link copied": when Share last copied a link instead of opening a share sheet, as it
+   * does on a computer (`share.ts`). A count rather than a flag, so a second Share while the
+   * toast is up starts it again.
+   */
+  const [copied, setCopied] = useState<number | null>(null);
+  useEffect(() => {
+    const onCopied = () => setCopied((n) => (n ?? 0) + 1);
+    window.addEventListener(COPIED_EVENT, onCopied);
+    return () => window.removeEventListener(COPIED_EVENT, onCopied);
+  }, []);
+
   /** "Saved to My echoes": which echo was just saved, for the toast that says where it went. */
   const [savedToast, setSavedToast] = useState<string | null>(null);
   // Leaving the map lets it go, so it does not come back on the way in again.
@@ -2980,7 +2992,12 @@ export function App() {
           they close.
         */}
         <div className="toast-dock" role="status" aria-live="polite">
-          {!(onboarded && packageOpen) && !planOpen && !listening && !paywallFor && !optionsOpen && !camera &&
+          {/* "Link copied" answers a button just pressed, so it shows wherever Share is:
+              the card, the player and the end of a journey. */}
+          {copied !== null && (
+            <CopiedToast key={`copied-${copied}`} showMs={SAVED_SHOW_MS} onClose={() => setCopied(null)} />
+          )}
+          {copied === null && !(onboarded && packageOpen) && !planOpen && !listening && !paywallFor && !optionsOpen && !camera &&
             (() => {
               if (syncedNow) {
                 return (

@@ -9,18 +9,30 @@
  * Shared between the card and the end-of-journey screen, because the end-of-journey Share
  * button had no handler at all and the card already had this written inside it.
  */
-export async function shareText(title: string, text: string, url?: string): Promise<void> {
-  if (typeof navigator === "undefined") return;
+export async function shareText(title: string, text: string, url?: string): Promise<"shared" | "copied" | "none"> {
+  if (typeof navigator === "undefined") return "none";
   try {
     if (typeof navigator.share === "function") {
       await navigator.share(url ? { title, text, url } : { title, text });
-      return;
+      return "shared";
     }
-    await navigator.clipboard?.writeText(url ? `${text} ${url}` : text);
+    if (!navigator.clipboard) return "none";
+    await navigator.clipboard.writeText(url ? `${text} ${url}` : text);
+    /*
+     * Said out loud. On a computer Share copied the link and nothing on the screen changed,
+     * so it read as a button that did nothing (James, 2026-11-13). The app shows "Link
+     * copied" in its toast when it hears this (App.tsx, `CopiedToast`).
+     */
+    window.dispatchEvent(new Event(COPIED_EVENT));
+    return "copied";
   } catch {
     /* Cancelled, or no clipboard. Neither is worth interrupting a walk for. */
+    return "none";
   }
 }
+
+/** Sent on `window` when Share copied the link instead of opening a share sheet. */
+export const COPIED_EVENT = "echofinders:link-copied";
 
 /** The address `?echo=` reads: where a shared story is found. */
 const PARAM = "echo";

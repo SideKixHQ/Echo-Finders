@@ -2915,6 +2915,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .toast-saved { --toast-edge: var(--ember); }
 .toast-mark { width: 28px; height: 28px; flex: none; display: grid; place-items: center; }
 .toast-mark svg { width: 24px; height: 24px; fill: var(--ember); stroke: none; }
+/* "Link copied" carries the Share button's own mark, which is drawn in strokes, not filled. */
+.toast-copied .toast-mark svg { fill: none; stroke: var(--ember); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .toast-saved .toast-close { align-self: center; }
 .toast-saved .toast-words span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 

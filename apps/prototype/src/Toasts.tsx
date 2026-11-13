@@ -179,6 +179,33 @@ export function SavedToast({
   );
 }
 
+/**
+ * "Link copied": Share on a computer, where there is no share sheet and the link goes to
+ * the clipboard (`share.ts`). It copied silently, which looked like Share doing nothing.
+ * The Saved toast's shape and colours, one line, and it slides away by itself.
+ */
+export function CopiedToast({ showMs, onClose }: { readonly showMs: number; readonly onClose: () => void }) {
+  const [leaving, leave] = useLeave(onClose);
+  useEffect(() => {
+    const t = setTimeout(leave, showMs);
+    return () => clearTimeout(t);
+  }, [leave, showMs]);
+  return (
+    <Shell kind="saved toast-copied" leaving={leaving}>
+      <span className="toast-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 15V3M8.5 6.5L12 3l3.5 3.5" />
+          <path d="M7 10H5v11h14V10h-2" />
+        </svg>
+      </span>
+      <span className="toast-words">
+        <b>Link copied</b>
+      </span>
+      <Close onClick={leave} />
+    </Shell>
+  );
+}
+
 /** C: the first tap on a locked echo, once ever. */
 export function LockedToast({ line, onClose }: { readonly line: string; readonly onClose: () => void }) {
   const [leaving, leave] = useLeave(onClose);
