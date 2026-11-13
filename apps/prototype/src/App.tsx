@@ -1233,13 +1233,9 @@ export function App() {
    */
   const alongKm = useMemo(() => {
     const out = new Map<string, number>();
-    for (const r of ROUTES) {
-      for (const hit of findEchoesAlongRoute(r, LIBRARY)) {
-        if (r.id === route.id) out.set(hit.echo.id, hit.alongTrackKm);
-      }
-    }
+    for (const hit of findEchoesAlongRoute(route, LIBRARY)) out.set(hit.echo.id, hit.alongTrackKm);
     return out;
-  }, [route.id]);
+  }, [route]);
   const corridorCounts = useMemo(
     () => Object.fromEntries(Object.entries(byRoute).map(([id, echoes]) => [id, echoes.length])),
     [byRoute],
@@ -1255,10 +1251,13 @@ export function App() {
    */
   const onRoute = useMemo(() => {
     const listener = listenerFor(kids, optIns);
-    return (byRoute[route.id] ?? []).filter(
+    // A flight built from two airports (`build-flight.ts`) is not one of ROUTES: its corridor
+    // is asked for here, or the map showed none of the echoes its plan had just counted.
+    const passes = byRoute[route.id] ?? findEchoesAlongRoute(route, LIBRARY).map((hit) => hit.echo);
+    return passes.filter(
       (echo) => checkEligibility(echo, { profile: listener, playAtMs: Date.now() }).eligible,
     );
-  }, [byRoute, route.id, kids]);
+  }, [byRoute, route, kids]);
   const savedEchoes = useMemo(() => onRoute.filter((e) => saved.has(e.id)), [onRoute, saved]);
   /**
    * The saved list, in the order you will reach them.
