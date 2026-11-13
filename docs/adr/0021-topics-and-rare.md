@@ -64,8 +64,12 @@ replaces "Chips show only what is near" above for the map:
 Asked of James, not yet decided, built as below until he answers:
 - The fit uses the country view's box (`country-view.ts`), the continental US, so the
   three Ghosts & legends echoes in England and Scotland are not in the first view.
-- The zoom out is while exploring. On a planned journey (a route, a drive, a flight) the
-  panel offers every topic and filters the journey's own echoes, as before.
+- ~~The zoom out is while exploring. On a planned journey (a route, a drive, a flight) the
+  panel offers every topic and filters the journey's own echoes, as before.~~ Decided
+  2026-11-13 (James: "Should it zoom out there too? - yes"): on a planned route, drive or
+  flight, picking a topic is the same topic view as exploring, and All returns to the trip
+  view as it was. The trip's queue, Coming up and progress are not the topic view's: they
+  read the journey's own echoes, which picking does not change.
 - Where the panel is taller than the screen (an iPhone SE, or Safari with its bars) it
   stops above the tab bar and scrolls; on the approved 390x844 frame it fits whole.
 

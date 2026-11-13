@@ -1349,10 +1349,15 @@ export function App() {
    * Topics everywhere (James, 2026-11-13, amending ADR-0021). Picking a topic, Rare, or
    * several takes the map out just far enough to show every echo of them, in every city,
    * the numbered dots saying where they are; back to All, or the last one turned off,
-   * flies it back to the view from just before the first pick. While exploring: a journey
-   * filters its own echoes, as before.
+   * flies it back to the view from just before the first pick.
+   *
+   * On a planned route, drive or flight too (James, 2026-11-13: "Should it zoom out there
+   * too? - yes"). It filtered only the trip's own echoes, so the map could show nothing.
+   * Now it is the same topic view as exploring, and All returns to the trip view. The trip
+   * itself is not touched: its queue, Coming up and progress read `onRoute`, which the
+   * topic view does not change; only what the map draws does (`inArea`).
    */
-  const picking = roaming && (cats !== null || rareOnly);
+  const picking = cats !== null || rareOnly;
   /** The zoom and pan from just before the first pick. The map keeps its own camera. */
   const [beforePick, setBeforePick] = useState<{ zoom: number; pan: { x: number; y: number } } | null>(null);
   useEffect(() => {
@@ -1543,7 +1548,9 @@ export function App() {
             : everything
               ? LIBRARY
               : state.nearby.map((n) => n.echo)
-        : onRoute,
+        : picking
+          ? LIBRARY
+          : onRoute,
     [roaming, overview, overviewEchoes, lookAt, picking, everything, state.nearby, onRoute],
   );
   const onMap = useMemo(() => inArea.filter(shows), [inArea, shows]);

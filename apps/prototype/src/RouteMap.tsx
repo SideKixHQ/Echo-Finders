@@ -1395,6 +1395,14 @@ export function RouteMap({
     if (!gl) return;
     const inset = insetFor(barH, reservedBottom, navH);
     const duration = framed.current ? 600 : 0;
+    /*
+     * A fix lost for a moment while the topic view has the camera, or is giving it back, is
+     * not a reason to frame the whole journey. Picking a topic can rebuild the session (True
+     * crime is an opt in, `optIns` in App.tsx), and for a moment there is no fix: on a
+     * flight that fitted the whole route over the way back, so All left the map on the
+     * route instead of the trip view it had. A search still frames (`lookAt`).
+     */
+    if (topicHeld.current && !hasFix && !overview && !lookAt) return;
     framed.current = true;
     if (!frameKey) framedBox.current = null;
     if (countryBox && !overview && !lookAt) {

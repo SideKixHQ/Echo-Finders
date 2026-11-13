@@ -203,6 +203,56 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── A topic on a planned drive ─────────────────────────────────────────────────
+// James, 2026-11-13: "Planned walks, drives and flights: picking a topic only filters that
+// trip's echoes, so the map can show nothing. Should it zoom out there too? - yes." Picking
+// a topic on a drive is the topic view, as exploring: every echo of it, numbered dots, the
+// map fitted. All returns to the trip view as it was, and the trip is unchanged.
+{
+  const { ctx, p } = await freshApp();
+  await p.getByLabel(/Change your journey/).click();
+  await p.waitForTimeout(400);
+  await p.locator('.jmenu-mode', { hasText: 'Drive' }).click();
+  await p.waitForTimeout(300);
+  const far = p.locator('.jmenu-far');
+  if (await far.count()) await far.click();
+  await p.locator('.jmenu-item').first().click();
+  await p.waitForTimeout(3500);
+  const trip = async () => ({
+    zoom: Number(await p.locator('svg.map').getAttribute('data-zoom')),
+    // Where each of the trip's pins is on the screen: the view itself.
+    pins: (await p.locator('.pin').evaluateAll((es) => es.map((e) => {
+      const r = e.getBoundingClientRect();
+      return `${e.dataset.echo}@${Math.round(r.x)},${Math.round(r.y)}`;
+    }))).join(' '),
+    bar: (await p.locator('.echobar').innerText().catch(() => '')).replace(/\s+/g, ' '),
+    chip: (await p.getByLabel(/Change your journey/).innerText()).replace(/\s+/g, ' '),
+  });
+  const before = await trip();
+  const kinds = p.locator('.kind-tap');
+  const sheet = p.locator('#kind-box');
+  await kinds.click();
+  await p.waitForTimeout(300);
+  await sheet.locator('.chip', { hasText: 'Ghosts & legends' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(2500);
+  const picked = await trip();
+  const dots = await p.locator('.clus').count();
+  check('Topic on a drive: zooms out to every echo of it, with numbered dots',
+    picked.zoom < before.zoom / 2 && dots > 0, `${before.zoom} then ${picked.zoom}, ${dots} dots`);
+  await kinds.click();
+  await p.waitForTimeout(300);
+  await sheet.getByRole('button', { name: 'All' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(2500);
+  const after = await trip();
+  check('Topic on a drive: All returns to the trip view as it was', after.pins === before.pins && after.pins !== '',
+    `${before.pins} / ${after.pins}`);
+  check('Topic on a drive: the trip is unchanged (journey, echo bar)', after.chip === before.chip && after.bar === before.bar,
+    `${before.chip} | ${before.bar} / ${after.chip} | ${after.bar}`);
+  await ctx.close();
+}
+
 // ── Settings › Membership ──────────────────────────────────────────────────────
 // Buying, cancelling and turning renewal back on, all from Settings. Nothing is charged:
 // purchases are recorded on the device until Stripe lands.
