@@ -28,10 +28,9 @@ import { FREE, type Echo, type Entitlement, type QueuedEcho, type WalkSession } 
 import { Narration } from "./narration";
 import { SpeechAudio } from "./speech-audio";
 import { readSettings } from "./settings-store";
+import { mergePasses } from "./native-passes";
 import {
   BRIDGE_VERSION,
-  RECEIVER,
-  SHELL_MARKER,
   type BridgeFix,
   type LocationPermission,
   type LocationStartResult,
@@ -44,8 +43,10 @@ import {
 
 interface Host {
   ReactNativeWebView?: { postMessage(data: string): void };
-  [SHELL_MARKER]?: { v?: unknown; sw?: unknown };
-  [RECEIVER]?: { receive(message: NativeToWeb): void };
+  /** `SHELL_MARKER`. */
+  __EF_SHELL__?: { v?: unknown; sw?: unknown };
+  /** `RECEIVER`. */
+  __echoFindersNative?: { receive(message: NativeToWeb): void };
 }
 
 function host(): Host | null {
@@ -55,7 +56,7 @@ function host(): Host | null {
 /** Is this page inside the iPhone app? Both the bridge and the app's own marker must be there. */
 export function inApp(): boolean {
   const h = host();
-  return !!h && typeof h.ReactNativeWebView?.postMessage === "function" && typeof h[SHELL_MARKER] === "object" && h[SHELL_MARKER] !== null;
+  return !!h && typeof h.ReactNativeWebView?.postMessage === "function" && typeof h.__EF_SHELL__ === "object" && h.__EF_SHELL__ !== null;
 }
 
 // --- The wire -------------------------------------------------------------------------------
@@ -478,35 +479,6 @@ function checkHandsFree(): void {
 let appStore: Entitlement = FREE;
 const entitlementListeners = new Set<() => void>();
 
-/**
- * Two records as one: every city, the latest end of each Week Pass, the year that runs
- * longest. The same sum as the iPhone app's `mergeEntitlements`
- * (`apps/ios/src/purchases/entitlement.ts`), which `test/ios/bridge.test.ts` holds it to.
- */
-export function mergePasses(a: Entitlement, b: Entitlement): Entitlement {
-  const paid = [a, b].filter((e) => e.kind !== "free");
-  if (paid.length === 0) return FREE;
-  if (paid.length === 1) return paid[0]!;
-  const firsts = paid.map((e) => e.purchasedAt).filter((n): n is number => typeof n === "number");
-  const at = firsts.length ? { purchasedAt: Math.min(...firsts) } : {};
-  if (paid.some((e) => e.kind === "unlocked")) return { kind: "unlocked", ...at };
-  const cities = [...new Set(paid.flatMap((e) => e.cities ?? []))].sort();
-  const weekUntil = new Map<string, number>();
-  for (const w of paid.flatMap((e) => e.weekPasses ?? [])) weekUntil.set(w.city, Math.max(w.until, weekUntil.get(w.city) ?? 0));
-  const weekPasses = [...weekUntil].sort(([x], [y]) => x.localeCompare(y)).map(([city, until]) => ({ city, until }));
-  const year = paid
-    .filter((e) => e.allAccessUntil !== undefined)
-    .sort((x, y) => (y.allAccessUntil ?? 0) - (x.allAccessUntil ?? 0))[0];
-  return {
-    kind: "passes",
-    ...at,
-    ...(cities.length ? { cities } : {}),
-    ...(weekPasses.length ? { weekPasses } : {}),
-    ...(year ? { allAccessUntil: year.allAccessUntil! } : {}),
-    ...(year && year.renews === false ? { renews: false } : {}),
-  };
-}
-
 function subscribeEntitlement(listener: () => void): () => void {
   entitlementListeners.add(listener);
   return () => void entitlementListeners.delete(listener);
@@ -521,6 +493,8 @@ export function useInAppEntitlement(web: Entitlement): Entitlement {
   const store = useSyncExternalStore(subscribeEntitlement, () => appStore, () => appStore);
   return useMemo(() => (inApp() ? mergePasses(web, store) : web), [web, store]);
 }
+
+export { mergePasses };
 
 /** The same, outside React: a record with the App Store's passes added in the app. */
 export function withInApp(web: Entitlement): Entitlement {
@@ -551,7 +525,7 @@ export async function restoreInApp(): Promise<void> {
  * in the app (`public/app-sw.js`). A browser never registers it.
  */
 function keepOffline(): void {
-  const marker = host()?.[SHELL_MARKER];
+  const marker = host()?.__EF_SHELL__;
   if (!("serviceWorker" in navigator)) return;
   if (marker?.sw === false) {
     void navigator.serviceWorker.getRegistrations().then((all) => all.forEach((r) => void r.unregister()));
@@ -572,7 +546,7 @@ function define(target: object, name: string, value: unknown): void {
 
 function install(): void {
   const h = host()!;
-  h[RECEIVER] = { receive };
+  h.__echoFindersNative = { receive };
   define(navigator, "geolocation", geolocation);
   define(navigator, "mediaSession", lockScreen.session);
   const permissions = navigator.permissions;
