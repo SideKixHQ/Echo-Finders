@@ -351,6 +351,8 @@ export function useJourney(
       { location, haptics, tones, audio: speech, collection: store },
       {
         mode: route?.mode ?? roamMode,
+        // A flight plays each echo at its moment on the route (`playAtMoments`).
+        ...(route ? { route } : {}),
         // Restored before the first fix, so echoes found on a previous visit stay found
         // rather than opening a second time.
         ...(restored && restored.length > 0 ? { captured: restored } : {}),
@@ -364,7 +366,7 @@ export function useJourney(
     // `optIns` is a dependency for the same reason `kids` is: both change the profile that
     // `checkEligibility` gates on, and a live session holding the old one keeps refusing
     // the category that was just switched on.
-  }, [library, location, route?.mode, toneRenderer, speech, store, restored, kids, optIns]);
+  }, [library, location, route, toneRenderer, speech, store, restored, kids, optIns]);
 
   useEffect(() => {
     session.setAutoPlay(autoPlay);

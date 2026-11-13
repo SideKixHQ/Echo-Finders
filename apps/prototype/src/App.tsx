@@ -323,13 +323,14 @@ export function App() {
   /**
    * A drive plays its echoes by itself (James, 2026-11-13: "Play these as I reach them is on
    * when a drive starts; no ask"). A driver cannot tap Play, and with the switch off a drive
-   * synced eleven echoes in ninety seconds and said none of them.
+   * synced eleven echoes in ninety seconds and said none of them. So does a flight (decision
+   * 8: "Flights play by themselves by default"), each echo at its moment on the route.
    *
-   * Set as each drive starts, not held: switched off on the way, it stays off for the rest
-   * of that drive. Leaving the drive puts back what the listener had before it, so a walk
+   * Set as each drive or flight starts, not held: switched off on the way, it stays off for
+   * the rest of that journey. Leaving it puts back what the listener had before, so a walk
    * still starts the way walks do.
    */
-  const onDrive = travel === "driving" && !roaming;
+  const onDrive = (travel === "driving" && !roaming) || (travel === "flight" && route.mode === "flight");
   const beforeDrive = useRef<boolean | null>(null);
   useEffect(() => {
     if (onDrive) {

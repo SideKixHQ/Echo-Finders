@@ -236,6 +236,26 @@ if (want('F2')) {
   await ctx.close();
 }
 
+// ── F3: a flight plays each echo at its moment ───────────────────────────────────────
+// Decision 8: flights play by themselves. Nothing ever "arrives" on a flight, so with every
+// echo chosen and the switch on, nothing played. Fixes just past Atlantic City, where the
+// first echo's moment is, take the flight there: it plays.
+if (want('F3')) {
+  const { ctx, p } = await freshApp();
+  await startFlight(p);
+  await ctx.setGeolocation({ latitude: 39.189, longitude: -74.4865, accuracy: 20 });
+  await p.waitForTimeout(1000);
+  await ctx.setGeolocation({ latitude: 39.1868, longitude: -74.4874, accuracy: 20 });
+  let playing = '';
+  for (let i = 0; i < 8 && !playing; i++) {
+    await p.waitForTimeout(1000);
+    if (await p.locator('.echobar-orb[aria-label="Pause"]').count()) playing = await p.locator('.echobar').innerText();
+  }
+  check('F3: past an echo\'s moment, the flight plays it by itself', /sand out of the lobbies/i.test(playing),
+    playing.replace(/\s+/g, ' ') || 'nothing playing');
+  await ctx.close();
+}
+
 await browser.close();
 console.log(`\nPAGE ERRORS: ${errors.length ? errors.join(' | ') : 'none'}`);
 if (failures.length || errors.length) {

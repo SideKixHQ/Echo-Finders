@@ -14,7 +14,9 @@
 
 import { renderFor } from "../types.js";
 import { willPlayOnArrival } from "./autoplay.js";
-import type { Echo, ListenerProfile, Position, TravelMode } from "../types.js";
+import type { Echo, ListenerProfile, Position, Route, TravelMode } from "../types.js";
+import { buildRouteGeometry, projectOntoRoute, type RouteGeometry } from "../geo/corridor.js";
+import { upcomingOnRoute } from "../ranking/upcoming.js";
 import { CaptureTracker, type CaptureEvent, type CaptureOptions } from "../capture/index.js";
 import { rarityOf } from "../capture/rarity.js";
 import type { Arriving, CaptureRecord } from "../capture/types.js";
@@ -30,7 +32,7 @@ import type {
   Unsubscribe,
 } from "./adapters.js";
 import { toneFor } from "../proximity/tone.js";
-import { presetFor } from "../modes.js";
+import { driftToleranceKm, presetFor } from "../modes.js";
 import {
   PlaybackQueue,
   type Deferred,
@@ -92,6 +94,14 @@ export interface WalkSessionDeps {
 
 export interface WalkSessionOptions {
   readonly mode?: TravelMode;
+  /**
+   * The route being travelled, when there is one.
+   *
+   * Only a carried route (a flight) uses it: nothing is ever arrived at on one, so with
+   * auto-play on each echo plays when the journey reaches its moment instead, the point
+   * Coming up counts down to (`upcomingOnRoute`). A route you steer plays on arrival.
+   */
+  readonly route?: Route;
   readonly capture?: CaptureOptions;
   readonly proximity?: ProximityOptions;
   /** How far to look for the nearby list, km. */
@@ -165,6 +175,17 @@ export class WalkSession {
   private playGate: ((echo: Echo) => boolean) | null = null;
   /** The cue currently being rendered, so we do not restate it on every fix. */
   private activeCue: string | null = null;
+
+  /**
+   * On a carried route: the route's line, and each echo's moment on it, km along, in the
+   * order the journey reaches them (`playAtMoments`). Empty on foot, driving, roaming.
+   */
+  private readonly line: RouteGeometry | null = null;
+  private readonly moments: readonly { readonly echo: Echo; readonly atKm: number }[] = [];
+  /** Moments already reached, played or not: each is reached once. */
+  private readonly reached = new Set<string>();
+  /** Echoes that have started playing this session, by any way: none plays itself twice. */
+  private readonly started = new Set<string>();
 
   /**
    * Auto-play and the pre-chosen list, held separately because they change mid-journey.
@@ -244,6 +265,16 @@ export class WalkSession {
     this.tracker = options.captured
       ? CaptureTracker.restore(listener, options.captured, captureOptions)
       : new CaptureTracker(listener, captureOptions);
+
+    if (options.route && !presetFor(this.mode).selfDirected) {
+      this.line = buildRouteGeometry(options.route);
+      // Every echo the route's playlist holds, with the moment it is nearest, as Coming up
+      // lists them: the same plan, so what plays is what was offered.
+      this.moments = upcomingOnRoute(options.route, library, listener, 0, {
+        limit: Number.POSITIVE_INFINITY,
+        minLeadS: Number.NEGATIVE_INFINITY,
+      }).map((u) => ({ echo: u.echo, atKm: u.atKm }));
+    }
   }
 
   subscribe(handler: (event: WalkEvent) => void): Unsubscribe {
@@ -443,6 +474,7 @@ export class WalkSession {
    * every pin stayed "captured" and "Play it again" never appeared.
    */
   private began(echo: Echo): void {
+    this.started.add(echo.id);
     if (this.tracker.markHeard(echo.id)) this.persist();
     this.emit({ type: "started", echo });
   }
@@ -487,6 +519,7 @@ export class WalkSession {
 
     const captures = this.tracker.update(position, this.library);
     for (const capture of captures) this.announce(capture);
+    this.playAtMoments(position);
 
     const nearby = this.lookAround(position);
     this.emit({ type: "nearby", echoes: nearby });
@@ -534,27 +567,60 @@ export class WalkSession {
     // Offered to the queue rather than played: a second capture arriving while the first is
     // still talking used to call `play()` straight over it, and at a stop where two echoes
     // sit a few metres apart that is the normal case, not the edge one.
-    if (this.playsOnArrival(capture.echo)) {
-      const render = renderFor(capture.echo.renders, this.options.voiceId);
-      if (render && this.playGate && !this.playGate(capture.echo)) {
-        // Still captured (they stood there), just not played. The pin goes solid.
-        this.emit({ type: "refused", echo: capture.echo });
-      } else if (render) {
-        const wasIdle = this.playback.nowPlaying === null;
-        const outcome = this.playback.offer({ echo: capture.echo, render, atMs: Date.now() });
-        if (outcome.deferred) this.emit({ type: "deferred", deferred: outcome.deferred });
-        if (outcome.started && wasIdle) {
-          this.deps.audio?.play(render.audioKey);
-          this.began(capture.echo);
-        }
-        this.emitPlayback();
-      }
-    }
+    if (this.playsOnArrival(capture.echo)) this.offerToPlay(capture.echo);
     // A captured echo is no longer a destination; drop any approach in progress so the
     // next fix starts guiding towards something else.
     this.guide.reset();
     this.emit({ type: "captured", capture });
     this.persist();
+  }
+
+  /**
+   * Start an echo that plays by itself, or queue it behind the one playing.
+   *
+   * The play gate is asked first; a refusal is reported (the paywall) and nothing plays.
+   */
+  private offerToPlay(echo: Echo): void {
+    const render = renderFor(echo.renders, this.options.voiceId);
+    if (render && this.playGate && !this.playGate(echo)) {
+      // On arrival it is still captured (they stood there), just not played.
+      this.emit({ type: "refused", echo });
+    } else if (render) {
+      const wasIdle = this.playback.nowPlaying === null;
+      const outcome = this.playback.offer({ echo, render, atMs: Date.now() });
+      if (outcome.deferred) this.emit({ type: "deferred", deferred: outcome.deferred });
+      if (outcome.started && wasIdle) {
+        this.deps.audio?.play(render.audioKey);
+        this.began(echo);
+      }
+      this.emitPlayback();
+    }
+  }
+
+  /**
+   * On a carried route, each echo plays itself when the journey reaches its moment (James,
+   * 2026-11-13, decision 8: "Flights play by themselves by default").
+   *
+   * Arrival never happens on a flight (`CaptureTracker`: being carried past something is
+   * not arriving at it), so auto-play had nothing to act on and a flight with every echo
+   * chosen played none. The moment is where the route passes nearest the echo, the point
+   * Coming up counts down to. The same switch and the same chosen few decide
+   * (`playsOnArrival`), and a moment already further behind than the mode's own timing
+   * tolerance (a journey joined part way) is let go rather than played late.
+   */
+  private playAtMoments(position: Position): void {
+    if (!this.line || this.moments.length === 0) return;
+    const preset = presetFor(this.mode);
+    const hit = projectOntoRoute(this.line, position.at);
+    if (hit.crossTrackKm > preset.corridorKm) return;
+    const lateKm = driftToleranceKm(preset.maxTimingDriftS, preset.speedKph);
+    for (const { echo, atKm } of this.moments) {
+      if (hit.alongTrackKm < atKm || this.reached.has(echo.id)) continue;
+      this.reached.add(echo.id);
+      if (hit.alongTrackKm - atKm > lateKm) continue;
+      if (this.started.has(echo.id) || !this.playsOnArrival(echo)) continue;
+      this.offerToPlay(echo);
+    }
   }
 
   /**
