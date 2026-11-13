@@ -65,8 +65,17 @@ replaces "Chips show only what is near" above for the map:
   searched, as the search would have; after the locate arrow, All comes back to you.
 
 Asked of James, not yet decided, built as below until he answers:
-- The fit uses the country view's box (`country-view.ts`), the continental US, so the
-  three Ghosts & legends echoes in England and Scotland are not in the first view.
+- ~~The fit uses the country view's box (`country-view.ts`), the continental US, so the
+  three Ghosts & legends echoes in England and Scotland are not in the first view.~~
+  Decided 2026-11-13 (James: "maybe we expand only in country? we will continue to add
+  echoes in other countries though", then "yes"): picking a topic fits that topic's echoes
+  in the country the map is centred on when it is picked (or the place searched, or where
+  you are after the locate arrow). Countries come from Natural Earth's 1:50m outlines
+  (`world-atlas`, as the map's borders), written at library build for the countries the
+  library has echoes in (`countries.generated.ts`, `countryAt` in the engine); a point just
+  off a coast the outline left out belongs to the nearest country within 25 km. England and
+  Scotland are one country, the United Kingdom. A country with none of the topic, or the
+  open sea, leaves the map where it is.
 - ~~The zoom out is while exploring. On a planned journey (a route, a drive, a flight) the
   panel offers every topic and filters the journey's own echoes, as before.~~ Decided
   2026-11-13 (James: "Should it zoom out there too? - yes"): on a planned route, drive or

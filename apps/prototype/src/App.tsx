@@ -58,7 +58,8 @@ import {
 } from "./toast-rules";
 import { Walk } from "./Walk";
 import { Nowhere, widenTo } from "./Nowhere";
-import { countryFrame } from "./country-view";
+import { countryFrame, type Bounds } from "./country-view";
+import { COUNTRIES } from "./countries.generated";
 import { Ribbon } from "./Ribbon";
 import { EchoBar, ECHOBAR_FLOAT, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
@@ -98,6 +99,7 @@ import {
   interestsFrom,
   bearingDeg as bearingTo,
   checkEligibility,
+  countryAt,
   mayHearAnother,
   cityAt,
   freeEchoesLeft,
@@ -153,6 +155,12 @@ const US_FRAME = countryFrame(LIBRARY.map((e) => e.point.at));
  * Whether kids mode offers Rare: only when the Kids topic has rare echoes (James,
  * 2026-11-13: "no Rare unless there are rare kids echoes"). Read from the library.
  */
+/** Each echo's country (`countryAt`, Natural Earth outlines), worked out once, when first asked. */
+const ECHO_COUNTRY = new Map<string, string | null>();
+const countryOfEcho = (echo: Echo): string | null => {
+  if (!ECHO_COUNTRY.has(echo.id)) ECHO_COUNTRY.set(echo.id, countryAt(echo.point.at, COUNTRIES));
+  return ECHO_COUNTRY.get(echo.id) ?? null;
+};
 const KIDS_HAVE_RARE = LIBRARY.some((e) => kidsMayHear(e) && isRareFind(e));
 /**
  * Seatback mode: a big landscape touch screen in the back of an aircraft seat (ADR-0001).
@@ -1377,6 +1385,25 @@ export function App() {
    * the map's camera says it then (`onZoom` when it settles).
    */
   const [beforePick, setBeforePick] = useState<{ zoom: number | null; pan: { x: number; y: number } } | null>(null);
+  /**
+   * The country the topic view fits in (James, 2026-11-13): the country of the map's centre
+   * when the first topic is picked, or of where you are, or of the place searched. Picking a
+   * topic fits its echoes there only, so the US fits the US ones and England the UK ones;
+   * null (the open sea, or a country with no echoes) leaves the map where it is.
+   */
+  const viewCentre = useRef<LatLng | null>(null);
+  const [pickCountry, setPickCountry] = useState<string | null>(null);
+  const countryHere = (at: LatLng | null | undefined) => (at ? countryAt(at, COUNTRIES) : null);
+  /*
+   * Worked out in the render that picks, not in an effect after it, so the map is handed the
+   * topic's box with the pick itself: a render in between let following move the camera
+   * before the topic view kept it, and All came back 44 px off on a drive.
+   */
+  const [pickedBefore, setPickedBefore] = useState(picking);
+  if (picking !== pickedBefore) {
+    setPickedBefore(picking);
+    setPickCountry(picking ? countryHere(viewCentre.current ?? lookAt?.at ?? state.position?.at) : null);
+  }
   useEffect(() => {
     if (picking && !beforePick) setBeforePick({ zoom, pan });
     if (!picking && beforePick) {
@@ -1398,18 +1425,28 @@ export function App() {
     const was = lastLook.current;
     lastLook.current = { lookKey, locateTap };
     if (was.lookKey === lookKey && was.locateTap === locateTap) return;
-    if (picking && beforePick) setBeforePick({ zoom: null, pan });
+    if (picking && beforePick) {
+      setBeforePick({ zoom: null, pan });
+      // The topic view moves to that country's echoes, if it is another one.
+      setPickCountry(countryHere(lookAt?.at ?? state.position?.at));
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lookKey, locateTap]);
   /**
-   * What the topic view fits: every echo the panel lets through, framed as the country view
-   * frames the library (`country-view.ts`), so the three ghost stories in England do not
-   * take the map out over the Atlantic.
+   * What the topic view fits: every echo the panel lets through in the country it is in
+   * (`pickCountry`). None there, no box: the map stays where it is.
    */
-  const topicBox = useMemo(
-    () => (picking ? countryFrame(LIBRARY.filter(shows).map((e) => e.point.at)) : null),
-    [picking, shows],
-  );
+  const topicBox = useMemo((): Bounds | null => {
+    if (!picking || !pickCountry) return null;
+    const pts = LIBRARY.filter((e) => shows(e) && countryOfEcho(e) === pickCountry).map((e) => e.point.at);
+    if (pts.length === 0) return null;
+    return {
+      south: Math.min(...pts.map((p) => p.lat)),
+      west: Math.min(...pts.map((p) => p.lng)),
+      north: Math.max(...pts.map((p) => p.lat)),
+      east: Math.max(...pts.map((p) => p.lng)),
+    };
+  }, [picking, pickCountry, shows]);
   /** "Saved to My echoes": which echo was just saved, for the toast that says where it went. */
   const [savedToast, setSavedToast] = useState<string | null>(null);
   // Leaving the map lets it go, so it does not come back on the way in again.
@@ -2414,6 +2451,9 @@ export function App() {
                 lookAt={roaming ? lookAt?.at ?? null : null}
                 countryBox={roaming && country ? US_FRAME : null}
                 topicBox={topicBox}
+                onCentre={(at) => {
+                  viewCentre.current = at;
+                }}
                 /*
                   The way there: along the streets where there is a street file, and a
                   straight line to the echo where there is not, so the map always shows

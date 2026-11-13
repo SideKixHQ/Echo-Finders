@@ -180,6 +180,8 @@ interface Props {
    * flies back to where it was just before. Comes before every other framing.
    */
   readonly topicBox?: Bounds | null;
+  /** Where the map is centred, each time it comes to rest: the topic view's country (App.tsx). */
+  readonly onCentre?: (at: LatLng) => void;
   /**
    * The walk to the echo you asked to be taken to, along the streets, from where you are
    * (`directions.ts`). Drawn over everything but the pins; framed once when it first
@@ -417,6 +419,7 @@ export function RouteMap({
   lookAt = null,
   countryBox = null,
   topicBox = null,
+  onCentre,
   directions = null,
   directionsStraight = false,
   aimId = null,
@@ -2018,6 +2021,10 @@ export function RouteMap({
          */
         const rel = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, 2 ** (mapZoom - base)));
         if (Math.abs(rel - zoom) > 1e-3) onZoom(rel);
+        if (gl && onCentre) {
+          const c = gl.getCenter();
+          onCentre({ lat: c.lat, lng: c.lng });
+        }
         reportInView.current();
       }}
       onMapTap={() => {

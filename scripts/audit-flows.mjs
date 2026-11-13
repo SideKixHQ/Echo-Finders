@@ -241,6 +241,55 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── A topic fits its echoes in the country you are looking at ───────────────────
+// James, 2026-11-13: picking a topic fits that topic's echoes in the current country, the
+// US ones from Philadelphia and the UK ones (England and Scotland, one country) from
+// London. A country with none of it leaves the map where it is. The library's three UK
+// echoes are all Ghosts & legends (test/app/country.test.ts).
+{
+  const UK_GHOSTS = 3;
+  // Every echo drawn on the screen: the numbers on the numbered dots, and single pins.
+  const onScreen = (p) => p.evaluate(() => {
+    const vis = (e) => {
+      const r = e.getBoundingClientRect();
+      const x = r.x + r.width / 2;
+      const y = r.y + r.height / 2;
+      return x > 0 && y > 0 && x < innerWidth && y < innerHeight;
+    };
+    const dots = [...document.querySelectorAll('.clus')].filter(vis)
+      .reduce((n, e) => n + Number(e.querySelector('.clus-n')?.textContent || 0), 0);
+    return dots + [...document.querySelectorAll('.pin')].filter(vis).length;
+  });
+  const pickFrom = async (geolocation, topic) => {
+    const { ctx, p } = await freshApp(geolocation);
+    const before = Number(await p.locator('svg.map').getAttribute('data-zoom'));
+    await p.locator('.kind-tap').click();
+    await p.waitForTimeout(300);
+    await p.locator('#kind-box .chip', { hasText: topic }).click();
+    await p.keyboard.press('Escape');
+    await p.waitForTimeout(2500);
+    const total = Number(/OF (\d+)/.exec(await p.locator('.echobar').innerText())?.[1] ?? 0);
+    return { ctx, p, before, after: Number(await p.locator('svg.map').getAttribute('data-zoom')), total, seen: await onScreen(p) };
+  };
+  {
+    const r = await pickFrom({ latitude: 39.9526, longitude: -75.1635 }, 'Ghosts & legends');
+    check('Topic by country: from Philadelphia, every US ghost story and none of the UK ones',
+      r.total > UK_GHOSTS && r.seen === r.total - UK_GHOSTS, `${r.seen} on screen of ${r.total}`);
+    await r.ctx.close();
+  }
+  {
+    const r = await pickFrom({ latitude: 51.5072, longitude: -0.1276 }, 'Ghosts & legends');
+    check('Topic by country: from London, the UK ghost stories, London to Edinburgh, and no US ones',
+      r.seen === UK_GHOSTS, `${r.seen} on screen of ${r.total}`);
+    await r.ctx.close();
+  }
+  {
+    const r = await pickFrom({ latitude: 51.5072, longitude: -0.1276 }, 'Sports');
+    check('Topic by country: a topic with none in the UK leaves the map where it is', r.after === r.before, `${r.before} then ${r.after}`);
+    await r.ctx.close();
+  }
+}
+
 // ── A topic on a planned drive ─────────────────────────────────────────────────
 // James, 2026-11-13: "Planned walks, drives and flights: picking a topic only filters that
 // trip's echoes, so the map can show nothing. Should it zoom out there too? - yes." Picking
