@@ -96,6 +96,13 @@ export interface EchoBarProps {
    */
   readonly guidance: Guidance | null;
   /**
+   * On a journey that carries you (a flight, a train), seconds until the route reaches each
+   * echo, by id: the same `upcomingOnRoute` times Coming up shows, so the two never give
+   * different minutes for the same echo. Null walking and driving, where you go where you
+   * like and the time is distance over speed.
+   */
+  readonly routeS?: ReadonlyMap<string, number> | null;
+  /**
    * Walking to this echo (board DirC, 2026-11-10): the bar IS the directions. No arrows and
    * no kicker; the title in full, wrapping rather than cut; how long and when you arrive
    * under it ("Stop 1 of 6 · 3 min · arrive 9:28 pm"); and a round ✕ that ends them.
@@ -141,6 +148,7 @@ export function EchoBar({
   mode,
   guidance,
   directions,
+  routeS,
 }: EchoBarProps) {
   /*
    * Nothing chosen yet shows the nearest, which is what the right arrow would give you
@@ -342,7 +350,7 @@ export function EchoBar({
             <span className="echobar-where">
               <span className="echobar-place">{shortPlace(echo.point.place)}</span>
               <span className="echobar-facts">
-                {reach(distanceKm, cue?.kind ?? null, presetFor(mode).speedKph)} · {listenLength(durationS)}
+                {reach(distanceKm, cue?.kind ?? null, presetFor(mode).speedKph, routeS?.get(echo.id))} · {listenLength(durationS)}
               </span>
             </span>
             )}

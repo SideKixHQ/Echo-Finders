@@ -60,13 +60,27 @@ export function farAway(distanceKm: number): string {
  * Here rather than in `EchoBar.tsx` so the synced toast's Next says distance the same way
  * (`toast-rules.ts`).
  */
-export function reach(distanceKm: number | null, cue: string | null, speedKph: number): string {
+export function reach(
+  distanceKm: number | null,
+  cue: string | null,
+  speedKph: number,
+  /**
+   * Seconds until the route reaches it, on a journey that carries you: Coming up's own
+   * number (`upcomingOnRoute`'s `inS`). A flight is not at cruise speed at the gate, nor
+   * flying straight at the pin, so distance over speed said 11 min where Coming up said 25
+   * (James, 2026-11-13). Absent, or already behind, it is distance over speed.
+   */
+  routeS?: number | null,
+): string {
   if (cue === "arrived") return "you're here";
   if (cue === "close") return "a few steps";
   if (distanceKm === null) return "near here";
   const m = distanceKm * 1000;
   if (m < 150) return `${Math.max(50, Math.round(m / 50) * 50)} m`;
-  const minutes = Math.round((distanceKm / speedKph) * 60);
+  const minutes =
+    routeS !== undefined && routeS !== null && routeS >= 0
+      ? Math.round(routeS / 60)
+      : Math.round((distanceKm / speedKph) * 60);
   if (minutes < 1) return `${Math.round(m / 50) * 50} m`;
   if (minutes < 60) return `${minutes} min`;
   // Somewhere looked up, not walked to: hours on foot is not an answer, a distance is.

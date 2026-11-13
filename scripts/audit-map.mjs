@@ -15,6 +15,7 @@
  *   30  the trip button keeps its whole label; the topics button gives way, icon showing
  *   21  the player's Next is dimmed and does nothing when nothing is queued, and works when
  *       something is
+ *   25  on a flight the echo bar and Coming up give the same minutes for the same echo
  */
 
 import { chromium } from 'playwright';
@@ -243,6 +244,41 @@ if (runs('21')) {
   const after = await p.locator('.hear h1, h1').first().innerText().catch(() => '');
   check('21  and moves on to the next echo', (await p.locator('.hear-go').count()) === 1 && after !== before && after !== '',
     `${before} then ${after}`);
+  await ctx.close();
+}
+
+// 25. Flying JFK to MIA: the echo bar and Coming up agree, to the minute, about the same echo.
+if (runs('25')) {
+  const { ctx, p } = await phone({ latitude: 40.70556, longitude: -74.01705 });
+  await p.getByLabel(/Change your journey/).click();
+  await p.locator('.jmenu-mode', { hasText: 'Fly' }).click();
+  await p.locator('.jmenu .jmenu-routes .jmenu-item').first().click();
+  await p.waitForTimeout(2500);
+  const trip = await p.getByLabel(/Change your journey/).getAttribute('aria-label');
+  check('25  flying JFK to MIA', /MIA|Miami/.test(trip ?? ''), trip);
+  // Held still, so the two are read at the same moment of the flight.
+  await p.getByRole('button', { name: /^Pause/ }).first().click().catch(() => {});
+  const rows = await p.locator('.upnext li, .upnext-row').evaluateAll((ls) => ls.map((l) => l.innerText));
+  const up = await p.locator('.upnext').innerText().catch(() => '');
+  check('25  Coming up is showing', /coming up/i.test(up), up);
+  const items = [...up.matchAll(/(\d+) min\n([^\n]+)/g)].map((m) => ({ min: +m[1], title: m[2] }));
+  check('25  Coming up names an echo', items.length > 0, JSON.stringify(rows));
+  for (const item of items) {
+    let bar = '';
+    for (let i = 0; i < 40; i++) {
+      bar = await p.locator('.echobar').innerText();
+      if (bar.includes(item.title)) break;
+      await p.locator('.echobar').getByRole('button', { name: /Next/i }).first().click();
+      await p.waitForTimeout(150);
+    }
+    // Both read in the same instant: the simulated flight keeps moving.
+    const [nowBar, nowUp] = await p.evaluate(() => [document.querySelector('.echobar').innerText,
+      document.querySelector('.upnext').innerText]);
+    const said = /(\d+) min ·/.exec(nowBar);
+    const listed = [...nowUp.matchAll(/(\d+) min\n([^\n]+)/g)].find((m) => m[2] === item.title);
+    check(`25  "${item.title}": Coming up ${listed ? listed[1] : '?'} min, the echo bar ${said ? said[1] : '?'} min`,
+      nowBar.includes(item.title) && said && listed && said[1] === listed[1], JSON.stringify([nowBar, nowUp]));
+  }
   await ctx.close();
 }
 
