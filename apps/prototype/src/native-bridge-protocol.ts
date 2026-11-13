@@ -114,7 +114,9 @@ export type WebToNative =
    * approved 2026-11-13): the phone opens its "Before a drive or flight" sheet for this
    * route, and reports the save with `trip:saving` and `trip:saved`.
    */
-  | { readonly type: "trip:save"; readonly routeId: string; readonly kind: TripKind };
+  | { readonly type: "trip:save"; readonly routeId: string; readonly kind: TripKind }
+  /** Settings › Offline echoes (D9, mock 3, approved 2026-11-13): open the phone's own screen. */
+  | { readonly type: "offline:open" };
 
 /** What a saved route is, in the native sheet's words: its noun ("Save this drive"). */
 export type TripKind = "drive" | "walk" | "flight";

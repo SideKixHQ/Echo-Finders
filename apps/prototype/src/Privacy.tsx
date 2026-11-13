@@ -52,6 +52,8 @@ interface Props {
   readonly onTheme: (theme: "dark" | "light") => void;
   /** Settings › Membership, first: what you have is the first thing anybody looks for here. */
   readonly membership?: ReactNode;
+  /** Inside the iPhone app only: open its Offline echoes screen (D9). Absent in a browser. */
+  readonly onOfflineEchoes?: (() => void) | undefined;
 }
 
 export function Privacy({
@@ -71,6 +73,7 @@ export function Privacy({
   onOwnerOff,
   onUnlocked,
   membership,
+  onOfflineEchoes,
 }: Props) {
   // Kept by error-report.ts itself, not in PrivacySettings: it has to be readable before
   // the app renders, which is when reporting starts.
@@ -112,6 +115,21 @@ export function Privacy({
       */}
       <section className="panel">
         <h3>This app</h3>
+        {/* The phone's own screen for what is saved for no signal (D9, mock 3, approved
+            2026-11-13). Only the iPhone app can save, so only it has the row. */}
+        {onOfflineEchoes && (
+          <div className="setting" data-app-only>
+            <button className="setting-row setting-link" onClick={onOfflineEchoes}>
+              <span className="setting-text">
+                <strong>Offline echoes</strong>
+                <small>Save a place to your phone and its echoes play with no signal: on a flight, a drive or a walk.</small>
+              </span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="setting-chev">
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        )}
         <Toggle
           label="Kids mode"
           detail="Only echoes written for children, and nothing with an age on it."

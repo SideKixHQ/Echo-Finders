@@ -119,6 +119,10 @@ const sent = (p, type) => p.evaluate((type) => window.__sent.filter((m) => m.typ
 async function settingsShot(p) {
   await p.locator('.nav').getByRole('button', { name: /Settings/ }).click();
   await p.waitForTimeout(800);
+  // What only the app has (Offline echoes, the Hands free lines) is set aside, so the rest
+  // can be compared with the browser pixel for pixel.
+  await p.addStyleTag({ content: '[data-app-only] { display: none !important; }' });
+  await p.waitForTimeout(200);
   return p.screenshot();
 }
 
@@ -332,6 +336,32 @@ async function pickRoute(p, mode, name) {
   [intro, pkg] = await words();
   check('Signal: once the phone has saved it, the airplane mode words come back',
     intro === 'Pick your airports before you board. The journey downloads, and Echo Finders runs in airplane mode the whole way.' && / · works without signal$/.test(pkg), `${intro} | ${pkg}`);
+  await ctx.close();
+}
+
+// ── Settings › Offline echoes, in the app only (D9, mock 3, approved 2026-11-13) ────
+{
+  const { ctx, p } = await open({ bridge: {} });
+  await firstRun(p);
+  await p.locator('.nav').getByRole('button', { name: /Settings/ }).click();
+  await p.waitForTimeout(600);
+  const panel = p.locator('section.panel', { has: p.locator('h3', { hasText: 'This app' }) });
+  const first = panel.locator('.setting-row').first();
+  check('Offline echoes: the first row of This app, with the screen\'s own lede',
+    (await first.innerText()).replace(/\s+/g, ' ').trim() === 'Offline echoes Save a place to your phone and its echoes play with no signal: on a flight, a drive or a walk.',
+    await first.innerText());
+  await first.click();
+  await p.waitForTimeout(300);
+  check('Offline echoes: a tap asks the phone to open its screen', (await sent(p, 'offline:open')).length === 1);
+  if (SHOTS) await p.screenshot({ path: `${SHOTS}/bridge-settings-offline-echoes.png` });
+  await ctx.close();
+}
+{
+  const { ctx, p } = await open();
+  await firstRun(p);
+  await p.locator('.nav').getByRole('button', { name: /Settings/ }).click();
+  await p.waitForTimeout(600);
+  check('Offline echoes: no row in a browser', (await p.getByText('Offline echoes').count()) === 0);
   await ctx.close();
 }
 

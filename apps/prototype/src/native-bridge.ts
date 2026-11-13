@@ -555,6 +555,11 @@ export function saveTrip(routeId: string, kind: TripKind): void {
   post({ type: "trip:save", routeId, kind });
 }
 
+/** Settings › Offline echoes: the phone's own screen for what is saved (D9). */
+export function openOfflineEchoes(): void {
+  post({ type: "offline:open" });
+}
+
 // --- Offline --------------------------------------------------------------------------------
 
 /**

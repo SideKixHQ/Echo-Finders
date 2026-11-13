@@ -63,7 +63,7 @@ import { EchoBar, ECHOBAR_FLOAT, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, buyWeekPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
-import { buyInApp, inApp, restoreInApp, saveTrip, useInAppEntitlement, useTripSaves, withInApp } from "./native-bridge";
+import { buyInApp, inApp, openOfflineEchoes, restoreInApp, saveTrip, useInAppEntitlement, useTripSaves, withInApp } from "./native-bridge";
 import { MembershipPanel } from "./Membership";
 import { ReactionCard, faceOf } from "./ReactionCard";
 import { react, readReactions, type Reactions } from "./reaction-store";
@@ -2825,6 +2825,7 @@ export function App() {
 
           {tab === "settings" && (
             <Privacy
+              onOfflineEchoes={inApp() ? openOfflineEchoes : undefined}
               onJourney={() => {
                 setTab("echoes");
                 openPackage();
