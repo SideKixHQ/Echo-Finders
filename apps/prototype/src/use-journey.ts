@@ -366,7 +366,9 @@ export function useJourney(
     // `optIns` is a dependency for the same reason `kids` is: both change the profile that
     // `checkEligibility` gates on, and a live session holding the old one keeps refusing
     // the category that was just switched on.
-  }, [library, location, route, toneRenderer, speech, store, restored, kids, optIns]);
+    // `roamMode` too: switching to "Driving nearby" kept the walking session, so a car
+    // exploring with no route was held to walking's sync speed and synced nothing.
+  }, [library, location, route, roamMode, toneRenderer, speech, store, restored, kids, optIns]);
 
   useEffect(() => {
     session.setAutoPlay(autoPlay);

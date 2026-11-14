@@ -330,9 +330,10 @@ export function App() {
    *
    * Set as each drive or flight starts, not held: switched off on the way, it stays off for
    * the rest of that journey. Leaving it puts back what the listener had before, so a walk
-   * still starts the way walks do.
+   * still starts the way walks do. "Driving nearby", with no route, is a drive too (James,
+   * 2026-11-14).
    */
-  const onDrive = (travel === "driving" && !roaming) || (travel === "flight" && route.mode === "flight");
+  const onDrive = travel === "driving" || (travel === "flight" && route.mode === "flight");
   const beforeDrive = useRef<boolean | null>(null);
   useEffect(() => {
     if (onDrive) {
@@ -344,7 +345,7 @@ export function App() {
       setAutoPlay(beforeDrive.current);
       beforeDrive.current = null;
     }
-  }, [onDrive, route.id]);
+  }, [onDrive, route.id, roaming]);
   /**
    * The plan's picks: what autoplay may play on this journey (`Plan.tsx`). Not Save, which
    * shared this set until saving a far echo limited autoplay to it, and switching journeys

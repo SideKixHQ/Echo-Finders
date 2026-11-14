@@ -184,6 +184,28 @@ if (want('D3')) {
   await ctx.close();
 }
 
+// ── D2: "Driving nearby", with no route, plays its echoes by itself too ──────────────
+// James, 2026-11-14: the same rule as a road trip. Through downtown Wilmington at 47 km/h.
+if (want('D2n')) {
+  const { ctx, p } = await freshApp(WILMINGTON);
+  await tripSheet(p, 'Drive');
+  await p.locator('.jmenu-card', { hasText: 'Around here' }).click();
+  await p.waitForTimeout(800);
+  for (let i = 0; i < 6 && (await p.locator('.toast-synced').count()); i++) {
+    await p.locator('.toast-synced .toast-close').click().catch(() => {});
+    await p.waitForTimeout(300);
+  }
+  const asked = new Set();
+  let played = 0;
+  await driveAlong(ctx, p, { kph: 47, seconds: 40 }, async () => {
+    for (const t of await p.locator('.toast-synced').allInnerTexts()) if (/tap to play/.test(t)) asked.add(t.split('\n')[1] ?? t);
+    if ((await p.locator('.echobar-orb[aria-label="Pause"]').count()) > 0) played++;
+  });
+  check('D2n: driving nearby, echoes play by themselves', played > 0, `${played} s playing`);
+  check('D2n: driving nearby, no "Synced · tap to play"', asked.size === 0, [...asked].join(' / '));
+  await ctx.close();
+}
+
 /** Time left on the journey, in minutes, from the chip's accessible name ("..., 2h 58m left"). */
 async function minutesLeft(p) {
   const name = (await p.getByLabel(/Change your journey/).getAttribute('aria-label')) ?? '';
