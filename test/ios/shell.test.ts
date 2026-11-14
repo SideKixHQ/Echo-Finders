@@ -245,3 +245,9 @@ describe("the page's new asks (build 11)", () => {
     expect(parseWebMessage(JSON.stringify({ type: "settings:open" }))).toEqual({ type: "settings:open" });
   });
 });
+
+describe("Settings › Offline echoes (D9)", () => {
+  it("takes the page's ask to open the phone's screen", () => {
+    expect(parseWebMessage(JSON.stringify({ type: "offline:open" }))).toEqual({ type: "offline:open" });
+  });
+});

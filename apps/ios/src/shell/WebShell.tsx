@@ -31,6 +31,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AppState, Linking, StyleSheet, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
+import { useRouter } from "expo-router";
 import * as Location from "expo-location";
 import * as Network from "expo-network";
 import { WebView, type WebViewMessageEvent } from "react-native-webview";
@@ -77,6 +78,7 @@ export default function WebShell() {
   const narrator = useNarrator();
   const purchases = usePurchases();
   const walk = useWalk();
+  const router = useRouter();
   // Reloading remounts the WebView under a new key.
   const [generation, setGeneration] = useState(0);
   const reload = useCallback(() => setGeneration((g) => g + 1), []);
@@ -276,6 +278,11 @@ export default function WebShell() {
           } else if (message.changed) w.start();
           else w.resume();
           return;
+        case "offline:open":
+          // Settings › Offline echoes (D9, mock 3): the phone's own screen; its back link
+          // says Settings and comes back here.
+          router.push("/offline");
+          return;
         case "settings:open":
           // Echo Finders' own page in iPhone Settings, where Location is.
           Linking.openSettings().catch(() => undefined);
@@ -302,7 +309,7 @@ export default function WebShell() {
         }
       }
     },
-    [flush, reportAccess, send, startWatch, stopWatch],
+    [flush, reportAccess, router, send, startWatch, stopWatch],
   );
 
   const onMessage = useCallback(
