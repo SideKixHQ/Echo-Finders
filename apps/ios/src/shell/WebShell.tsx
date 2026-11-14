@@ -104,6 +104,8 @@ export default function WebShell() {
   const ledger = useRef(new PocketLedger());
   const pocket = useRef<PocketJudge | null>(null);
   const plan = useRef<PocketPlan | null>(null);
+  /** Echoes the pocket has started since the page handed over, so a judge made again skips them. */
+  const pocketStarted = useRef<string[]>([]);
   const watch = useRef<Location.LocationSubscription | null>(null);
 
   // The latest of everything, for listeners that outlive a render.
@@ -150,6 +152,7 @@ export default function WebShell() {
       if (!judge) return;
       const n = live.current.narrator;
       for (const echo of judge.update(raw)) {
+        pocketStarted.current.push(echo.id);
         const render = echo.renders?.find((r) => r.audioKey.startsWith("audio/"));
         if (!render) continue;
         n.offerRequest({
@@ -344,6 +347,7 @@ export default function WebShell() {
           plan.current = handed;
           n.setOnDrive(handed.mode === "driving");
           n.handOver(handed.current, handed.waiting);
+          pocketStarted.current = [];
           pocket.current = handed.handsFree ? new PocketJudge(handed, currentEchoes(), new Date().toISOString()) : null;
           // An echo the page plays that this phone has not heard of (added after the build,
           // and since the last fetch): fetch the site's library now, while the app still
@@ -351,7 +355,9 @@ export default function WebShell() {
           if (handed.handsFree) {
             void refreshLibrary(handed.plays).then((newer) => {
               if (newer && plan.current === handed && !active.current) {
-                pocket.current = new PocketJudge(handed, currentEchoes(), new Date().toISOString());
+                // What the first judge already started counts as found: nothing plays twice.
+                const found = { ...handed, captured: [...handed.captured, ...pocketStarted.current] };
+                pocket.current = new PocketJudge(found, currentEchoes(), new Date().toISOString());
               }
             });
           }
