@@ -62,6 +62,10 @@ async function phone(geo, { width = 390, height = 844, query = '' } = {}) {
     permissions: ['geolocation'], geolocation: geo,
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  // The one time usage counts note ("We count visits, not you") starts put away, as in
+  // audit:flows: it is not measured here, and while it is in the toast dock Coming up waits
+  // under it (theme.css), so on a flight check 25 found nothing to read.
+  await ctx.addInitScript(() => { try { localStorage.setItem('echo-finders:usage-note', '1'); } catch {} });
   const p = await ctx.newPage();
   p.on('pageerror', (e) => errors.push(e.message));
   await p.goto(`${BASE}/${query}`, { waitUntil: 'domcontentloaded' });
