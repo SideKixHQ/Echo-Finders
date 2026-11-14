@@ -56,12 +56,36 @@ function versionFile(): Plugin {
   };
 }
 
+/**
+ * `/library.json`: the library this build plays, for the iPhone app.
+ *
+ * With the screen locked the page may not run, so the phone decides itself when an echo
+ * is reached, from the page's plan (`apps/ios/src/shell/logic.ts`, `PocketJudge`). It
+ * needs each echo's place and radius for that, and the library built into the app only
+ * has the echoes that existed when the app was built. So the phone fetches this file and
+ * keeps it (`apps/ios/src/library.ts`): an echo added after the build starts on its own
+ * too. The same echoes and routes as `library.generated.ts`, nothing more.
+ */
+function libraryFile(): Plugin {
+  return {
+    name: "echo-finders-library",
+    async generateBundle() {
+      const { LIBRARY, ROUTES } = await import("./src/library.generated");
+      this.emitFile({
+        type: "asset",
+        fileName: "library.json",
+        source: JSON.stringify({ v: 1, commit: commit(), echoes: LIBRARY, routes: ROUTES }),
+      });
+    },
+  };
+}
+
 export default defineConfig({
   define: {
     __BUILD_COMMIT__: JSON.stringify(commit()),
     __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
   },
-  plugins: [react(), versionFile()],
+  plugins: [react(), versionFile(), libraryFile()],
   resolve: {
     alias: {
       /**

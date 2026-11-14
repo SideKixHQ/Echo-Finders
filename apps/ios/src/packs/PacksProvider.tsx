@@ -20,7 +20,7 @@
  */
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { NetworkStateType, useNetworkState, type NetworkState } from "expo-network";
-import { ECHOES } from "../library";
+import { currentEchoes, onLibraryChanged } from "../library";
 import {
   SAVE_CONCURRENCY,
   applyDiff,
@@ -132,6 +132,8 @@ export function PacksProvider({ children }: { children: ReactNode }) {
   // Bumped when a planner learns something (the map's squares, a file's real size).
   const [planTick, setPlanTick] = useState(0);
   useEffect(() => onPartPlannersChanged(() => setPlanTick((n) => n + 1)), []);
+  // A newer library from the site plans again too: saved packs pick up echoes added since.
+  useEffect(() => onLibraryChanged(() => setPlanTick((n) => n + 1)), []);
   const jobs = useRef(new Map<string, Job>());
   // One download per file, however many packs want it at once.
   const downloads = useRef(new Map<string, Promise<number>>());
@@ -242,11 +244,11 @@ export function PacksProvider({ children }: { children: ReactNode }) {
       if (manifest.state !== "saved" || jobs.current.has(manifest.id)) continue;
       const source = sourceOf(manifest);
       if (!source) continue;
-      const plan = planPack(source, ECHOES);
+      const plan = planPack(source, currentEchoes());
       const diff = diffPack(manifest, plan);
       if (isDiffEmpty(diff)) continue;
       const next = applyDiff(manifest, plan, diff, Date.now());
-      writeEchoData(next.id, echoesFor(source, ECHOES));
+      writeEchoData(next.id, echoesFor(source, currentEchoes()));
       put(next);
       deleteFiles(orphanedKeys([...manifests.current.values()], diff.removed));
     }
@@ -272,14 +274,14 @@ export function PacksProvider({ children }: { children: ReactNode }) {
 
   const save = useCallback(
     (source: PackSource) => {
-      const plan = planPack(source, ECHOES);
+      const plan = planPack(source, currentEchoes());
       const existing = manifests.current.get(plan.id);
       if (existing) {
         const diff = diffPack(existing, plan);
         if (!isDiffEmpty(diff)) put(applyDiff(existing, plan, diff, Date.now()));
         return;
       }
-      writeEchoData(plan.id, echoesFor(source, ECHOES));
+      writeEchoData(plan.id, echoesFor(source, currentEchoes()));
       put(manifestFor(plan, Date.now()));
     },
     [put],
@@ -307,7 +309,7 @@ export function PacksProvider({ children }: { children: ReactNode }) {
 
   // Made again when a planner learns something, so the sizes on screen follow.
   const plan = useCallback(
-    (source: PackSource) => planPack(source, ECHOES),
+    (source: PackSource) => planPack(source, currentEchoes()),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [planTick],
   );

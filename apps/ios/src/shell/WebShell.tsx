@@ -36,7 +36,7 @@ import * as Network from "expo-network";
 import { WebView, type WebViewMessageEvent } from "react-native-webview";
 import type { ShouldStartLoadRequest } from "react-native-webview/lib/WebViewTypes";
 import type { NativeToWeb, PocketPlan, WebToNative } from "../../../prototype/src/native-bridge-protocol";
-import { ECHOES } from "../library";
+import { currentEchoes, refreshLibrary } from "../library";
 import { useNarrator } from "../player";
 import { usePurchases } from "../purchases/PurchasesProvider";
 import { useWalk } from "../walk/WalkProvider";
@@ -246,7 +246,17 @@ export default function WebShell() {
           const { type: _type, ...handed } = message;
           plan.current = handed;
           n.handOver(handed.current, handed.waiting);
-          pocket.current = handed.handsFree ? new PocketJudge(handed, ECHOES, new Date().toISOString()) : null;
+          pocket.current = handed.handsFree ? new PocketJudge(handed, currentEchoes(), new Date().toISOString()) : null;
+          // An echo the page plays that this phone has not heard of (added after the build,
+          // and since the last fetch): fetch the site's library now, while the app still
+          // runs, and judge again with it if this is still the plan.
+          if (handed.handsFree) {
+            void refreshLibrary(handed.plays).then((newer) => {
+              if (newer && plan.current === handed && !active.current) {
+                pocket.current = new PocketJudge(handed, currentEchoes(), new Date().toISOString());
+              }
+            });
+          }
           return;
         }
       }
@@ -290,12 +300,18 @@ export default function WebShell() {
     [narrator, send],
   );
 
+  // The site's library, for echoes added after this build: at launch, then on screen again.
+  useEffect(() => {
+    void refreshLibrary();
+  }, []);
+
   // Out of sight and back. Away, the pocket plays; back, the page has the queue again.
   useEffect(() => {
     const subscription = AppState.addEventListener("change", (state) => {
       const wasActive = active.current;
       active.current = state === "active";
       if (active.current && !wasActive) {
+        void refreshLibrary();
         pocket.current = null;
         plan.current = null;
         live.current.narrator.takeBack();

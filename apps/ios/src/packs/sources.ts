@@ -4,13 +4,16 @@
  * place). Kept apart from `plan.ts` so that stays free of the library and testable.
  */
 import { CITIES, type Route } from "@echofinders/core";
-import { ROUTES } from "../../../prototype/src/library.generated";
+import { currentRoutes } from "../library";
 import type { PackManifest, PackSource } from "./plan";
 
-export const ALL_ROUTES: readonly Route[] = ROUTES;
+/** Every route the phone knows: the site's, as last fetched, and the built in ones (`library.ts`). */
+export function allRoutes(): readonly Route[] {
+  return currentRoutes();
+}
 
 export function routeById(id: string | undefined): Route | undefined {
-  return id ? ROUTES.find((r) => r.id === id) : undefined;
+  return id ? currentRoutes().find((r) => r.id === id) : undefined;
 }
 
 /**

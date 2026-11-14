@@ -36,7 +36,7 @@ import { Asset } from "expo-asset";
 import { setAudioModeAsync, useAudioPlayer, useAudioPlayerStatus, type AudioPlayer, type AudioStatus } from "expo-audio";
 import type { Deferred, Echo, LatLng, QueuedEcho } from "@echofinders/core";
 import type { PlayRequest } from "../../prototype/src/native-bridge-protocol";
-import { ECHOES, renderedAudio } from "./library";
+import { currentById, renderedAudio } from "./library";
 import { echoOfRequest } from "./shell/logic";
 import { localUriFor } from "./packs/store";
 import {
@@ -117,7 +117,6 @@ export type NarratorEvent =
 /** How long after the app moves the player itself a change is still its own. */
 const SELF_MOVED_MS = 1500;
 
-const LIBRARY_BY_ID: ReadonlyMap<string, Echo> = new Map(ECHOES.map((echo) => [echo.id, echo]));
 
 const NarratorContext = createContext<Narrator | null>(null);
 
@@ -282,7 +281,7 @@ export function NarratorProvider({ children }: { children: ReactNode }) {
 
   /** A render the web app asked for, as the queue holds it. */
   const itemOf = useCallback((request: PlayRequest): QueuedEcho => {
-    const echo = echoOfRequest(request, LIBRARY_BY_ID);
+    const echo = echoOfRequest(request, currentById());
     sources.current.set(echo.id, { key: request.key, uri: request.url, durationS: request.durationS });
     const render = echo.renders?.find((r) => r.audioKey === request.key) ?? { voiceId: "", audioKey: request.key, durationS: request.durationS };
     return { echo, render, atMs: Date.now() };
