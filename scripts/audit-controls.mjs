@@ -370,9 +370,13 @@ await capture('onboarding/welcome');
 // First run is one screen: Find echoes near me asks for the location and opens the map.
 await p.getByRole('button', { name: 'Find echoes near me' }).click();
 await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
-if (await p.locator('.how').count()) await capture('onboarding/how-echoes-unlock');
 // "How echoes unlock" follows the first run, once (Toasts.tsx): read it, then Got it.
-await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
+// Wait for it to come and to go: a fixed three second try gave up silently under load and
+// left the dialog over everything the rest of this audit taps.
+await p.locator('.how').waitFor({ state: 'visible', timeout: 20000 });
+await capture('onboarding/how-echoes-unlock');
+await p.locator('.how-go').click({ timeout: 20000 });
+await p.locator('.how').waitFor({ state: 'detached', timeout: 20000 });
 await p.waitForTimeout(4500);
 /*
  * The compass view (the rose), its own screen and worth inventorying. Walking opens on the
