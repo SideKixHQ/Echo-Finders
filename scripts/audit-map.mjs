@@ -20,6 +20,7 @@
  *   TAG the labels under Rare and Extra rare pins never print over each other
  *   XRB the echo bar's creature is magenta for an Extra rare echo
  *   KICK the echo bar's kicker: the topic whole or left out, the count never clipped
+ *   ROUTE route chips follow 30 B: the ribbon whole, the topics button gives way
  */
 
 import { chromium } from 'playwright';
@@ -429,6 +430,59 @@ if (runs('KICK')) {
       check(`KICK ${width}, ${view}: an Extra rare echo was on the bar`, extra);
       check(`KICK ${width}, ${view}: rarity and count whole, topic whole or left out`, bad.length === 0, [...new Set(bad)].join(' | '));
       if (noRoom.size) console.log(`note  KICK ${width}, ${view}: rarity and count cannot both fit this line: ${[...noRoom].join(' | ')}`);
+    }
+    await ctx.close();
+  }
+}
+
+// ROUTE. Route chips follow 30 B too: the ribbon's words whole and the topics button giving
+//        way down to its icon, an ellipsis and its chevron (walk and flight; 375, 390, 440).
+if (runs('ROUTE')) {
+  for (const width of [375, 390, 440]) {
+    const { ctx, p } = await phone({ latitude: 40.70556, longitude: -74.01705 }, { width });
+    const routes = [
+      ['the Lower Manhattan walk', async () => {
+        await p.getByLabel(/Change your journey/).click();
+        await p.locator('.jmenu-routes .jmenu-item', { hasText: /Lower Manhattan/ }).first().click();
+      }],
+      ['JFK to MIA', async () => {
+        await p.getByLabel(/Change your journey/).click();
+        await p.locator('.jmenu-mode', { hasText: 'Fly' }).click();
+        await p.locator('.jmenu .jmenu-routes .jmenu-item').first().click();
+      }],
+    ];
+    for (const [trip, choose] of routes) {
+      await choose();
+      await p.waitForTimeout(1500);
+      for (const [name, picks] of [['All echoes', []], ['Ghosts & legends', ['Ghosts & legends']], ['two topics', ['Ghosts & legends', 'True crime']]]) {
+        await p.locator('.kind-tap').click();
+        await p.locator('.kind-box button', { hasText: /^All$/ }).click();
+        for (const t of picks) await p.locator('.kind-box button').filter({ hasText: new RegExp(`^${t}$`) }).first().click();
+        if (await p.locator('.kind-box').count()) await p.keyboard.press('Escape');
+        await p.waitForTimeout(300);
+        const m = await p.evaluate(() => {
+          const ribbon = document.querySelector('.mapbar-row .ribbon');
+          const dest = ribbon.querySelector('.ribbon-dest');
+          const tap = document.querySelector('.kind-tap');
+          const t = tap.getBoundingClientRect();
+          const glyph = tap.querySelector('.kind-glyph')?.getBoundingClientRect();
+          const chev = tap.querySelector('.kind-chev').getBoundingClientRect();
+          const floor = parseFloat(getComputedStyle(tap).minWidth);
+          return {
+            ribbonWhole: ribbon.scrollWidth <= ribbon.clientWidth + 0.5,
+            destWhole: !dest || dest.scrollWidth <= dest.clientWidth + 0.5,
+            atFloor: t.width <= floor + 1,
+            rowFits: t.right <= innerWidth - 16 + 0.5,
+            parts: (!glyph || (glyph.width > 0 && glyph.left >= t.left && glyph.right <= t.right)) && chev.width > 0 && chev.right <= t.right,
+            text: ribbon.innerText.replace(/\n/g, ' '),
+          };
+        });
+        const tag = `ROUTE ${width}, ${trip}, ${name}`;
+        check(`${tag}: the ribbon is not clipped`, m.ribbonWhole, m.text);
+        // Its name whole, unless the topics button is already down to its floor.
+        check(`${tag}: the ribbon's name whole, or the topics button at its floor`, m.destWhole || m.atFloor, JSON.stringify(m));
+        check(`${tag}: the topics button in the row, icon and chevron showing`, m.rowFits && m.parts, JSON.stringify(m));
+      }
     }
     await ctx.close();
   }

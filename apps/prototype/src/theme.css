@@ -4285,6 +4285,28 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .mapbar-row > .jchip-wrap:not(.jchip-wrap-wide):not(:has(.jchip-fill)) ~ .kind-tap .kind-label {
   flex: 1 1 auto; width: 0; min-width: 0; overflow: hidden; text-overflow: ellipsis; text-align: left;
 }
+/*
+ * A route's ribbon follows 30 B too (James, 2026-11-14): its name, or its airports and time,
+ * stay whole and the topics button gives way, down to its icon, an ellipsis and its
+ * chevron. The ribbon still takes whatever the topics button does not need, because on a
+ * flight that is where the progress bar lives (it has no width of its own).
+ *
+ * The topics button's floor is its padding, border, icon, two gaps and chevron (`.kind-tap`,
+ * `.kind-glyph`, `.kind-chev`: 78px, 70px at 380 and under) and 0.92em for the words, which
+ * is room for the ellipsis alone (14.6px in Sora at 16px): any less and the words came out
+ * as a sliver of a letter.
+ * The ribbon's ceiling is the row less that floor and the row's gap, so a name too long for
+ * the row is cut inside the ribbon rather than pushing the button off.
+ */
+.mapbar-row > .jchip-wrap-wide { flex: 1 0 auto; max-width: calc(100% - 78px - 0.92em - 8px); }
+.mapbar-row > .jchip-wrap-wide ~ .kind-tap { flex: 0 1 auto; min-width: calc(78px + 0.92em); overflow: hidden; }
+.mapbar-row > .jchip-wrap-wide ~ .kind-tap .kind-label { min-width: 0.92em; overflow: hidden; text-overflow: ellipsis; }
+.mapbar-row > .jchip-wrap-wide ~ .kind-tap .kind-chev { margin-left: auto; }
+@media (max-width: 380px) {
+  /* The same floor with the small screen's 12px padding and 6px gaps. */
+  .mapbar-row > .jchip-wrap-wide { max-width: calc(100% - 70px - 0.92em - 8px); }
+  .mapbar-row > .jchip-wrap-wide ~ .kind-tap { min-width: calc(70px + 0.92em); }
+}
 .mapbar .jchip { width: 100%; }
 .mapbar .jchip-caret { margin-left: auto; }
 
