@@ -18,6 +18,7 @@
  *   25  on a flight the echo bar and Coming up give the same minutes for the same echo
  *   XR  Extra rare pins are magenta and 1.15x (option D); Rare stays ember
  *   TAG the labels under Rare and Extra rare pins never print over each other
+ *   XRB the echo bar's creature is magenta for an Extra rare echo
  */
 
 import { chromium } from 'playwright';
@@ -339,6 +340,42 @@ if (runs('TAG')) {
     }
   }
   await ctx.close();
+}
+
+// XRB. The echo bar's creature is magenta for an Extra rare echo too, and only for one.
+if (runs('XRB')) {
+  for (const theme of ['dark', 'light']) {
+    const { ctx, p } = await phone({ latitude: 32.0733, longitude: -81.0897 });
+    await p.emulateMedia({ colorScheme: theme });
+    await standAt(p, '32.0733,-81.0897');
+    const look = () => p.evaluate(() => {
+      const css = getComputedStyle(document.documentElement);
+      const d = document.createElement('div'); d.style.color = css.getPropertyValue('--magenta'); document.body.append(d);
+      const magenta = getComputedStyle(d).color; d.remove();
+      const bar = document.querySelector('.echobar .echo-char');
+      return {
+        kicker: document.querySelector('.echobar-kicker').innerText,
+        magenta,
+        glow: getComputedStyle(bar.querySelector('[id^="ecGlow-"] stop')).stopColor,
+        body: getComputedStyle(bar.querySelector('[id^="ecBody-"] stop:nth-child(3)')).stopColor,
+        scale: getComputedStyle(bar).transform,
+      };
+    });
+    let m = await look();
+    for (let i = 0; i < 40 && !/extra rare/i.test(m.kicker); i++) {
+      await p.locator('.echobar').getByRole('button', { name: /Next/i }).first().click();
+      await p.waitForTimeout(150);
+      m = await look();
+    }
+    check(`XRB ${theme}: the bar is on an Extra rare echo`, /extra rare/i.test(m.kicker), m.kicker);
+    check(`XRB ${theme}: its creature is magenta, the pin's ramp, its own size`,
+      m.glow === m.magenta && m.body === 'rgb(200, 19, 106)' && m.scale === 'none', JSON.stringify(m));
+    await p.locator('.echobar').getByRole('button', { name: /Next/i }).first().click();
+    await p.waitForTimeout(300);
+    m = await look();
+    check(`XRB ${theme}: and ember again on the next echo`, !/extra rare/i.test(m.kicker) && m.glow !== m.magenta, JSON.stringify(m));
+    await ctx.close();
+  }
 }
 
 await browser.close();

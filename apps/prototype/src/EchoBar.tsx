@@ -301,7 +301,10 @@ export function EchoBar({
               />
             )}
             <svg viewBox="-60 -60 120 120" aria-hidden="true">
-              <EchoCharacter face={face} r={40} uid="echobar" />
+              {/* Extra rare is magenta, as its pin is (`.echo-xr` in theme.css). */}
+              <g className={rarityOf(echo) === "singular" ? "echo-xr" : undefined}>
+                <EchoCharacter face={face} r={40} uid="echobar" />
+              </g>
             </svg>
           </button>
 

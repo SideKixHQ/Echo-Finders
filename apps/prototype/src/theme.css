@@ -3869,21 +3869,24 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  * creature and the card keep theirs. The colours are the approved mock's, stop for stop;
  * the creature's own gradients carry them, overridden here only where its pin has the
  * extra rare halo (a sealed or opening one).
+ *
+ * The echo bar's creature takes the same colours for an Extra rare echo (`.echo-xr`,
+ * James, 2026-11-14), in every face it shows (the bar has no heard face); not the size.
  */
 .pin-tag-singular { fill: var(--magenta-ink); transform: translateY(3px); }
 .pin:has(> .pin-halo-singular) > .echo-char { transform: scale(1.15); }
-.pin:has(> .pin-halo-singular) > .echo-char [id^="ecBody-"] stop:nth-child(1) { stop-color: #7a0036; }
-.pin:has(> .pin-halo-singular) > .echo-char [id^="ecBody-"] stop:nth-child(2) { stop-color: #a3004e; }
-.pin:has(> .pin-halo-singular) > .echo-char [id^="ecBody-"] stop:nth-child(3) { stop-color: #c8136a; }
-.pin:has(> .pin-halo-singular) > .echo-char [id^="ecBody-"] stop:nth-child(4) { stop-color: #ee4c95; }
-.pin:has(> .pin-halo-singular) > .echo-char [id^="ecBody-"] stop:nth-child(5) { stop-color: #ff9bc8; }
-.pin:has(> .pin-halo-singular) > .echo-char [id^="ecRim-"] stop:nth-child(1),
-.pin:has(> .pin-halo-singular) > .echo-char [id^="ecRim-"] stop:nth-child(2) { stop-color: #ffd6ea; }
-.pin:has(> .pin-halo-singular) > .echo-char [id^="ecRim-"] stop:nth-child(3) { stop-color: #ff6aac; }
-.pin:has(> .pin-halo-singular) > .echo-char [id^="ecRim-"] stop:nth-child(4) { stop-color: #e5157a; }
-.pin:has(> .pin-halo-singular) > .echo-char [id^="ecGlow-"] stop { stop-color: var(--magenta); }
-.pin:has(> .pin-halo-singular) > .echo-char [id^="ecEye-"] stop:nth-child(2),
-.pin:has(> .pin-halo-singular) > .echo-char [id^="ecEye-"] stop:nth-child(3) { stop-color: #e5157a; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecBody-"] stop:nth-child(1) { stop-color: #7a0036; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecBody-"] stop:nth-child(2) { stop-color: #a3004e; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecBody-"] stop:nth-child(3) { stop-color: #c8136a; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecBody-"] stop:nth-child(4) { stop-color: #ee4c95; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecBody-"] stop:nth-child(5) { stop-color: #ff9bc8; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecRim-"] stop:nth-child(1),
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecRim-"] stop:nth-child(2) { stop-color: #ffd6ea; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecRim-"] stop:nth-child(3) { stop-color: #ff6aac; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecRim-"] stop:nth-child(4) { stop-color: #e5157a; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecGlow-"] stop { stop-color: var(--magenta); }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecEye-"] stop:nth-child(2),
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecEye-"] stop:nth-child(3) { stop-color: #e5157a; }
 .pin-tag-rare { fill: var(--ember); }
 
 /* Which way you are pointed. Wide and soft, because course over ground on foot is
