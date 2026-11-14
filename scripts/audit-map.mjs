@@ -466,7 +466,8 @@ if (runs('KICK')) {
 }
 
 // ROUTE. Route chips follow 30 B too: the ribbon's words whole and the topics button giving
-//        way down to its icon, an ellipsis and its chevron (walk and flight; 375, 390, 440).
+//        way. On a walked route its words are whole or gone (icon and chevron only), and the
+//        route's name is always whole; on a flight they give way to an ellipsis (375, 390, 440).
 if (runs('ROUTE')) {
   for (const width of [375, 390, 440]) {
     const { ctx, p } = await phone({ latitude: 40.70556, longitude: -74.01705 }, { width });
@@ -498,7 +499,11 @@ if (runs('ROUTE')) {
           const glyph = tap.querySelector('.kind-glyph')?.getBoundingClientRect();
           const chev = tap.querySelector('.kind-chev').getBoundingClientRect();
           const floor = parseFloat(getComputedStyle(tap).minWidth);
+          const words = tap.querySelector('.kind-label');
+          const wordsShown = getComputedStyle(words).visibility !== 'hidden';
           return {
+            // The topics button's words: whole, or not there at all (no "G." or "Al...").
+            wordsWholeOrGone: !wordsShown || words.scrollWidth <= words.clientWidth + 0.5,
             ribbonWhole: ribbon.scrollWidth <= ribbon.clientWidth + 0.5,
             destWhole: !dest || dest.scrollWidth <= dest.clientWidth + 0.5,
             atFloor: t.width <= floor + 1,
@@ -509,8 +514,15 @@ if (runs('ROUTE')) {
         });
         const tag = `ROUTE ${width}, ${trip}, ${name}`;
         check(`${tag}: the ribbon is not clipped`, m.ribbonWhole, m.text);
-        // Its name whole, unless the topics button is already down to its floor.
-        check(`${tag}: the ribbon's name whole, or the topics button at its floor`, m.destWhole || m.atFloor, JSON.stringify(m));
+        if (trip === 'JFK to MIA') {
+          // Its codes whole, unless the topics button is already down to its floor.
+          check(`${tag}: the ribbon's words whole, or the topics button at its floor`, m.destWhole || m.atFloor, JSON.stringify(m));
+        } else {
+          // A walked route's name is always whole, and the topics button's words are whole
+          // or gone, leaving its icon and chevron (James, 2026-11-14).
+          check(`${tag}: the route's name whole`, m.destWhole, JSON.stringify(m));
+          check(`${tag}: the topics button's words whole or gone`, m.wordsWholeOrGone, JSON.stringify(m));
+        }
         check(`${tag}: the topics button in the row, icon and chevron showing`, m.rowFits && m.parts, JSON.stringify(m));
       }
     }

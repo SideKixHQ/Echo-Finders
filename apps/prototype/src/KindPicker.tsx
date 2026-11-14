@@ -18,7 +18,7 @@
  * behind the box.
  */
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import type { EchoCategory } from "@echofinders/core";
 import { CATEGORY_ICON, CHIP_GROUPS, RARE_AFTER, RARE_ICON, type ChipGroup } from "./categories";
 
@@ -121,6 +121,26 @@ export function KindPicker({ on, onToggle, onAll, rare, count, open: openIn, onO
   );
   const tap = useRef<HTMLButtonElement | null>(null);
   const box = useRef<HTMLDivElement | null>(null);
+  /*
+   * Whether its words fit whole where it is, as `kind-tap-bare` (James, 2026-11-14). Beside a
+   * walked or driven route's ribbon the words are whole or not there at all (theme.css); this
+   * only says which. Measured with the words in place after every render, and again when the
+   * button or the trip beside it changes size.
+   */
+  useLayoutEffect(() => {
+    const el = tap.current;
+    const words = el?.querySelector<HTMLElement>(".kind-label");
+    if (!el || !words) return;
+    const measure = () => {
+      el.classList.remove("kind-tap-bare");
+      if (words.scrollWidth > words.clientWidth + 0.5) el.classList.add("kind-tap-bare");
+    };
+    measure();
+    const observer = typeof ResizeObserver === "undefined" ? null : new ResizeObserver(measure);
+    if (el.parentElement) observer?.observe(el.parentElement);
+    if (el.previousElementSibling) observer?.observe(el.previousElementSibling);
+    return () => observer?.disconnect();
+  });
 
   const topics = picked(on);
   const rareOn = !!rare?.on;

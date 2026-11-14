@@ -4311,6 +4311,23 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   .mapbar-row > .jchip-wrap-wide { max-width: calc(100% - 70px - 0.92em - 8px); }
   .mapbar-row > .jchip-wrap-wide ~ .kind-tap { min-width: calc(70px + 0.92em); }
 }
+/*
+ * On a walked or driven route the topics button's words are whole or not there at all
+ * (James, 2026-11-14): "G." and "Al..." said nothing, and the room they took cut "Lower
+ * Manhattan" at 375. So its floor is the icon and chevron alone, and when KindPicker finds
+ * the words would not fit whole (`kind-tap-bare`) they are taken out (no letters, no
+ * ellipsis) and the room goes to the route's name. A flight's ribbon keeps the rule above.
+ */
+.mapbar-row > .jchip-wrap-wide:has(.ribbon-ahead) { max-width: calc(100% - 78px - 8px); }
+.mapbar-row > .jchip-wrap-wide:has(.ribbon-ahead) ~ .kind-tap { min-width: 78px; }
+.mapbar-row > .jchip-wrap-wide:has(.ribbon-ahead) ~ .kind-tap .kind-label { min-width: 0; }
+.mapbar-row > .jchip-wrap-wide:has(.ribbon-ahead) ~ .kind-tap.kind-tap-bare .kind-label {
+  position: absolute; visibility: hidden; pointer-events: none;
+}
+@media (max-width: 380px) {
+  .mapbar-row > .jchip-wrap-wide:has(.ribbon-ahead) { max-width: calc(100% - 70px - 8px); }
+  .mapbar-row > .jchip-wrap-wide:has(.ribbon-ahead) ~ .kind-tap { min-width: 70px; }
+}
 .mapbar .jchip { width: 100%; }
 .mapbar .jchip-caret { margin-left: auto; }
 
