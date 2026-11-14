@@ -105,7 +105,12 @@ export function nextAfterSync(
 ): NextEcho | null {
   if (plannedStop) {
     if (plannedStop.echo.id === syncedId) return null;
-    return { echo: plannedStop.echo, label: `Next stop · ${walkMinutes(plannedStop.distanceKm)} min` };
+    // Driving, the minutes are driving minutes, at the mode's own speed (James, 2026-11-14).
+    const minutes =
+      mode === "driving"
+        ? Math.max(1, Math.round((plannedStop.distanceKm / presetFor(mode).speedKph) * 60))
+        : walkMinutes(plannedStop.distanceKm);
+    return { echo: plannedStop.echo, label: `Next stop · ${minutes} min` };
   }
   let best: NearCandidate | null = null;
   for (const a of around) {

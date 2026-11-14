@@ -91,6 +91,13 @@ describe("toast B: Next", () => {
     expect(nextAfterSync("synced", [near("close", 0.05)], stop, "walking")?.echo.id).toBe("stop");
   });
 
+  it("a planned stop while driving is in driving minutes", () => {
+    const stop = { echo: echo("stop"), distanceKm: 6 };
+    expect(nextAfterSync("synced", [], stop, "driving")?.label).toBe("Next stop · 4 min");
+    expect(nextAfterSync("synced", [], { echo: echo("stop"), distanceKm: 0.35 }, "driving")?.label).toBe("Next stop · 1 min");
+    expect(nextAfterSync("synced", [], stop, "walking")?.label).toBe("Next stop · 104 min");
+  });
+
   it("nothing when nothing is left", () => {
     expect(nextAfterSync("synced", [near("synced", 0.01), near("done", 0.2, false)], null, "walking")).toBeNull();
     expect(nextAfterSync("stop", [], { echo: echo("stop"), distanceKm: 0 }, "walking")).toBeNull();
