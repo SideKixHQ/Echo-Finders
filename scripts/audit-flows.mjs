@@ -150,6 +150,381 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   await ctx.close();
 }
 
+// ── Kids mode: the Kids topic only ─────────────────────────────────────────────
+// James, 2026-11-13 (docs/adr/0021-topics-and-rare.md): kids mode never offers True crime
+// and shows no true crime pin anywhere; then, superseding that and keeping it, kids mode
+// is the Kids topic only. The panel is All, Kids and Rare (there are rare Kids echoes). A
+// True crime picked before kids mode goes, and with nothing left the map is on All.
+{
+  const { ctx, p } = await freshApp();
+  // Two saved before kids mode: a ghost story and a Kids echo, for My echoes below.
+  const search = p.getByLabel('Search a city, place or ZIP code');
+  for (const title of ['The Lady in Black', 'Turn the Cable Car Around']) {
+    await search.click();
+    await search.fill(title);
+    await p.waitForTimeout(600);
+    await p.locator('#msearch-results .msearch-save').first().click();
+    await p.waitForTimeout(300);
+  }
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(300);
+  const kinds = p.locator('.kind-tap');
+  const sheet = p.locator('#kind-box');
+  await kinds.click();
+  await p.waitForTimeout(300);
+  await sheet.locator('.chip', { hasText: 'True crime' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(1500);
+  const nav = p.locator('.nav');
+  await nav.getByRole('button', { name: /Settings/ }).click();
+  await p.waitForTimeout(400);
+  await p.getByRole('switch', { name: /Kids mode/ }).click();
+  await nav.getByRole('button', { name: /Map/ }).click();
+  await p.waitForTimeout(1500);
+  check('Kids mode: a True crime picked before goes, back to All', (await kinds.innerText()).trim() === 'All echoes', await kinds.innerText());
+  await kinds.click();
+  await p.waitForTimeout(300);
+  const chips = (await sheet.locator('.chip').allInnerTexts()).map((t) => t.trim());
+  // All, Kids, Rare, in that order (James, 2026-11-13).
+  check('Kids mode: the panel offers All, Kids and Rare, and no True crime', chips.join('|') === 'All|Kids|Rare', chips.join('|'));
+  // Picking Kids is the topic view: every Kids echo, from the whole library.
+  await sheet.locator('.chip', { hasText: 'Kids' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(1800);
+  const cats = await p.locator('.pin, .clus').evaluateAll((es) => es.map((e) => [...e.classList].find((c) => c.startsWith('cat-'))));
+  check('Kids mode: the topic view draws Kids echoes and nothing else', cats.length > 0 && cats.every((c) => c === 'cat-kids'), [...new Set(cats)].join(','));
+  // All, zoomed out as far as the map goes: the whole library is drawn there, and still
+  // only Kids echoes, no true crime pin or dot.
+  await kinds.click();
+  await p.waitForTimeout(300);
+  await sheet.getByRole('button', { name: 'All' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(1500);
+  const box = await p.locator('svg.map').boundingBox();
+  for (let i = 0; i < 12; i++) {
+    await p.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+    await p.mouse.wheel(0, 600);
+    await p.waitForTimeout(150);
+  }
+  await p.waitForTimeout(1500);
+  const farZoom = Number(await p.locator('svg.map').getAttribute('data-zoom'));
+  // Out where the area card counts the screen (`farOut`), the map draws from the whole library.
+  check('Kids mode: zoomed out to where the whole library is drawn', await visible(p.locator('.area-card')), String(farZoom));
+  const far = await p.locator('.pin, .clus').evaluateAll((es) => es.map((e) => [...e.classList].find((c) => c.startsWith('cat-'))));
+  check('Kids mode: zoomed out, no true crime and nothing but Kids', far.length > 0 && far.every((c) => c === 'cat-kids'), `${far.length}: ${[...new Set(far)].join(',')}`);
+  // Search finds Kids echoes only (James, 2026-11-13): a ghost story by its title is not
+  // offered, a Kids echo by its title is, and cities are still found.
+  await search.click();
+  await search.fill('The Lady in Black');
+  await p.waitForTimeout(600);
+  check('Kids mode: search does not offer a ghost story', (await p.locator('#msearch-results .msearch-go').count()) === 0,
+    (await p.locator('#msearch-results').innerText()).replace(/\s+/g, ' '));
+  await search.fill('Turn the Cable Car Around');
+  await p.waitForTimeout(600);
+  check('Kids mode: search offers a Kids echo', (await p.locator('#msearch-results .msearch-go').count()) === 1);
+  await search.fill('Boston');
+  await p.waitForTimeout(600);
+  check('Kids mode: search still finds cities', (await p.locator('#msearch-results .msearch-city').count()) > 0);
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(300);
+  // My echoes shows the saved Kids echo and not the ghost story, and its topic filter
+  // offers All and Kids only.
+  await p.locator('.nav').getByRole('button', { name: /My echoes/i }).click();
+  await p.waitForTimeout(500);
+  const list = await p.locator('.screen-body').innerText();
+  check('Kids mode: My echoes keeps the Kids echo and not the ghost story',
+    /Turn the Cable Car Around/i.test(list) && !/Lady in Black/i.test(list), list.replace(/\s+/g, ' ').slice(0, 300));
+  await p.locator('.me-pills .kind-tap:not(.me-place-tap)').click();
+  await p.waitForTimeout(300);
+  const mine = (await p.locator('.me-pills .kind-box .chip').allInnerTexts()).map((t) => t.trim());
+  check('Kids mode: My echoes filter offers All and Kids only', mine.join('|') === 'All|Kids', mine.join('|'));
+  await ctx.close();
+}
+
+// ── A topic fits its echoes in the country you are looking at ───────────────────
+// James, 2026-11-13: picking a topic fits that topic's echoes in the current country, the
+// US ones from Philadelphia and the UK ones (England and Scotland, one country) from
+// London. A country with none of it leaves the map where it is. The library's three UK
+// echoes are all Ghosts & legends (test/app/country.test.ts).
+{
+  const UK_GHOSTS = 3;
+  // Every echo drawn on the screen and clear of the area card (London went under it once):
+  // the numbers on the numbered dots, and single pins.
+  const onScreen = (p) => p.evaluate(() => {
+    const card = document.querySelector('.area-card')?.getBoundingClientRect().top ?? innerHeight;
+    const vis = (e) => {
+      const r = e.getBoundingClientRect();
+      const x = r.x + r.width / 2;
+      const y = r.y + r.height / 2;
+      return x > 0 && y > 0 && x < innerWidth && y < card;
+    };
+    const dots = [...document.querySelectorAll('.clus')].filter(vis)
+      .reduce((n, e) => n + Number(e.querySelector('.clus-n')?.textContent || 0), 0);
+    return dots + [...document.querySelectorAll('.pin')].filter(vis).length;
+  });
+  const pickFrom = async (geolocation, topic) => {
+    const { ctx, p } = await freshApp(geolocation);
+    const before = Number(await p.locator('svg.map').getAttribute('data-zoom'));
+    await p.locator('.kind-tap').click();
+    await p.waitForTimeout(300);
+    await p.locator('#kind-box .chip', { hasText: topic }).click();
+    await p.keyboard.press('Escape');
+    await p.waitForTimeout(2500);
+    const total = Number(/OF (\d+)/.exec(await p.locator('.echobar').innerText())?.[1] ?? 0);
+    const card = Number(/(\d+) echoes/.exec(await p.locator('.area-card').innerText().catch(() => ''))?.[1] ?? -1);
+    return { ctx, p, before, after: Number(await p.locator('svg.map').getAttribute('data-zoom')), total, card, seen: await onScreen(p) };
+  };
+  {
+    const r = await pickFrom({ latitude: 39.9526, longitude: -75.1635 }, 'Ghosts & legends');
+    check('Topic by country: from Philadelphia, every US ghost story and none of the UK ones',
+      r.seen > UK_GHOSTS && r.card === r.seen, `${r.seen} on screen, the card says ${r.card}`);
+    // The echo bar steps through the same set the map and the card count (2026-11-13).
+    check('Topic by country: from Philadelphia, the echo bar counts the US ones the card does', r.total === r.card, `1 of ${r.total}, card ${r.card}`);
+    // Numbered dots that overlap each other merge (James, 2026-11-13): Philadelphia's 18
+    // sat over New York's 8 here. No two numbered dots on the screen overlap.
+    const overlaps = await r.p.evaluate(() => {
+      const dots = [...document.querySelectorAll('.clus .clus-body')].map((c) => {
+        const b = c.getBoundingClientRect();
+        return { x: b.x + b.width / 2, y: b.y + b.height / 2, r: b.width / 2 };
+      });
+      const out = [];
+      for (let i = 0; i < dots.length; i++)
+        for (let j = i + 1; j < dots.length; j++)
+          if (Math.hypot(dots[i].x - dots[j].x, dots[i].y - dots[j].y) < dots[i].r + dots[j].r - 0.5) out.push(`${i}/${j}`);
+      return out;
+    });
+    check('Topic by country: no two numbered dots overlap', overlaps.length === 0, overlaps.join(' '));
+    await r.ctx.close();
+  }
+  {
+    const r = await pickFrom({ latitude: 51.5072, longitude: -0.1276 }, 'Ghosts & legends');
+    check('Topic by country: from London, the UK ghost stories, London to Edinburgh, and no US ones',
+      r.seen === UK_GHOSTS && r.card === UK_GHOSTS, `${r.seen} on screen, the card says ${r.card}`);
+    check('Topic by country: from London, the echo bar is 1 of 3', r.total === UK_GHOSTS, `1 of ${r.total}`);
+    await r.ctx.close();
+  }
+  {
+    const r = await pickFrom({ latitude: 51.5072, longitude: -0.1276 }, 'Sports');
+    check('Topic by country: a topic with none in the UK leaves the map where it is', r.after === r.before, `${r.before} then ${r.after}`);
+    await r.ctx.close();
+  }
+}
+
+// ── Kids mode and a saved route ─────────────────────────────────────────────────
+// James, 2026-11-13: a stop on a saved route that kids mode would not play is skipped,
+// and greyed in the route's list as a stop already heard is. A route of a ghost story and
+// a Kids echo, made before kids mode: the ghost story greys, Start goes to the Kids echo.
+{
+  const { ctx, p } = await freshApp();
+  const search = p.getByLabel('Search a city, place or ZIP code');
+  for (const title of ['The Lady in Black', 'Turn the Cable Car Around']) {
+    await search.click();
+    await search.fill(title);
+    await p.waitForTimeout(600);
+    await p.locator('#msearch-results .msearch-save').first().click();
+    await p.waitForTimeout(300);
+  }
+  await p.keyboard.press('Escape');
+  const nav = p.locator('.nav');
+  await nav.getByRole('button', { name: /My echoes/i }).click();
+  await p.waitForTimeout(500);
+  await p.getByRole('tab', { name: 'Routes' }).click();
+  await p.waitForTimeout(300);
+  await p.locator('.rt-new').click();
+  await p.waitForTimeout(300);
+  for (const title of ['The Lady in Black', 'Turn the Cable Car Around']) {
+    await p.getByRole('button', { name: `Add: ${title}` }).click();
+    await p.waitForTimeout(200);
+  }
+  await p.locator('.rt-acts').getByRole('button', { name: 'Done' }).click();
+  await p.waitForTimeout(300);
+  const greyed = async () => p.locator('.rt-stop').evaluateAll((es) => es.map((e) => `${e.classList.contains('done') ? 'grey' : 'on'}:${e.querySelector('.pw-title').textContent}`));
+  check('Kids route: out of kids mode both stops are on', (await greyed()).every((t) => t.startsWith('on:')), (await greyed()).join(', '));
+  await nav.getByRole('button', { name: /Settings/ }).click();
+  await p.waitForTimeout(400);
+  await p.getByRole('switch', { name: /Kids mode/ }).click();
+  await nav.getByRole('button', { name: /My echoes/i }).click();
+  await p.waitForTimeout(500);
+  await p.getByRole('tab', { name: 'Routes' }).click();
+  await p.waitForTimeout(300);
+  const stops = await greyed();
+  check('Kids route: in kids mode the ghost story is greyed and the Kids echo is not',
+    stops.join(', ') === 'grey:The Lady in Black, on:Turn the Cable Car Around', stops.join(', '));
+  // The time is only the stops the walk will go to (James, 2026-11-14): one stop in San
+  // Francisco is a minute or two of listening, not the 1254 hours from Boston it said.
+  const meta = await p.locator('.rt-meta').innerText();
+  check('Kids route: the time counts only the stops the walk will go to', /about \d+ min with listening/.test(meta) && !/hr/.test(meta), meta);
+  await p.locator('.rt-acts').getByRole('button', { name: 'Start' }).click();
+  await p.waitForTimeout(2000);
+  const card = await p.locator('.pop').innerText().catch(() => '');
+  check('Kids route: Start skips the ghost story and goes to the Kids echo',
+    /Turn the Cable Car Around/.test(card) && !/Lady in Black/.test(card), card.replace(/\s+/g, ' ').slice(0, 120));
+  await ctx.close();
+}
+
+// ── A topic on a planned drive ─────────────────────────────────────────────────
+// James, 2026-11-13: "Planned walks, drives and flights: picking a topic only filters that
+// trip's echoes, so the map can show nothing. Should it zoom out there too? - yes." Picking
+// a topic on a drive is the topic view, as exploring: every echo of it, numbered dots, the
+// map fitted. All returns to the trip view as it was, and the trip is unchanged.
+{
+  const { ctx, p } = await freshApp();
+  await p.getByLabel(/Change your journey/).click();
+  await p.waitForTimeout(400);
+  await p.locator('.jmenu-mode', { hasText: 'Drive' }).click();
+  await p.waitForTimeout(300);
+  const far = p.locator('.jmenu-far');
+  if (await far.count()) await far.click();
+  await p.locator('.jmenu-item').first().click();
+  await p.waitForTimeout(3500);
+  const trip = async () => ({
+    zoom: Number(await p.locator('svg.map').getAttribute('data-zoom')),
+    // Where each of the trip's pins is on the screen: the view itself.
+    pins: (await p.locator('.pin').evaluateAll((es) => es.map((e) => {
+      const r = e.getBoundingClientRect();
+      return `${e.dataset.echo}@${Math.round(r.x)},${Math.round(r.y)}`;
+    }))).join(' '),
+    bar: (await p.locator('.echobar').innerText().catch(() => '')).replace(/\s+/g, ' '),
+    chip: (await p.getByLabel(/Change your journey/).innerText()).replace(/\s+/g, ' '),
+  });
+  const before = await trip();
+  const kinds = p.locator('.kind-tap');
+  const sheet = p.locator('#kind-box');
+  await kinds.click();
+  await p.waitForTimeout(300);
+  await sheet.locator('.chip', { hasText: 'Ghosts & legends' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(2500);
+  const picked = await trip();
+  const dots = await p.locator('.clus').count();
+  check('Topic on a drive: zooms out to every echo of it, with numbered dots',
+    picked.zoom < before.zoom / 2 && dots > 0, `${before.zoom} then ${picked.zoom}, ${dots} dots`);
+  // The area card, as exploring has it zoomed out (James, 2026-11-13).
+  const card = (await p.locator('.area-card').innerText().catch(() => '')).replace(/\s+/g, ' ');
+  check('Topic on a drive: the area card says what is on screen', /\d+ places · \d+ echoes/.test(card), card);
+  await kinds.click();
+  await p.waitForTimeout(300);
+  await sheet.getByRole('button', { name: 'All' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(2500);
+  const after = await trip();
+  // Within 3 px: the trip's pins can be thousands of pixels off screen, where a camera put
+  // back to the same centre lands a pixel or two away in rounding.
+  const where = (pins) => new Map(pins.split(' ').filter(Boolean).map((s) => {
+    const [id, xy] = s.split('@');
+    return [id, xy.split(',').map(Number)];
+  }));
+  const was = where(before.pins);
+  const now = where(after.pins);
+  const same = was.size > 0 && was.size === now.size
+    && [...was].every(([id, [x, y]]) => now.has(id) && Math.abs(now.get(id)[0] - x) <= 3 && Math.abs(now.get(id)[1] - y) <= 3);
+  check('Topic on a drive: All returns to the trip view as it was', same, `${before.pins} / ${after.pins}`);
+  check('Topic on a drive: the trip is unchanged (journey, echo bar)', after.chip === before.chip && after.bar === before.bar,
+    `${before.chip} | ${before.bar} / ${after.chip} | ${after.bar}`);
+  check('Topic on a drive: the area card goes with the topic view', !(await visible(p.locator('.area-card'))));
+  await ctx.close();
+}
+
+// ── A topic picked on a trip leaves the trip playing ────────────────────────────
+// James, 2026-11-13: picking a topic only changes what the map shows. It switched True
+// crime off, which rebuilt the session, so on the Central Park West walk (two true crime
+// echoes) with Ghosts & legends picked, walking up to the Dakota synced nothing.
+{
+  const { ctx, p } = await freshApp({ latitude: 40.774, longitude: -73.976 });
+  await p.getByLabel(/Change your journey/).click();
+  await p.waitForTimeout(400);
+  await p.locator('.jmenu-routes .jmenu-item', { hasText: 'Central Park West' }).first().click();
+  await p.waitForTimeout(3000);
+  await p.locator('.kind-tap').click();
+  await p.waitForTimeout(300);
+  await p.locator('#kind-box .chip', { hasText: 'Ghosts & legends' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(2500);
+  // Walk up to the Dakota: a fix a second, a metre apart, so the phone reports each one.
+  for (let i = 0; i < 20; i++) {
+    await ctx.setGeolocation({ latitude: 40.77625 + (i % 2) * 0.00001, longitude: -73.97596, accuracy: 5 });
+    await p.waitForTimeout(1000);
+  }
+  const body = await p.locator('body').innerText();
+  check('Topic on a trip: the walk still syncs its true crime echo with Ghosts & legends picked',
+    /Synced/.test(body) && /Three minutes from here/.test(body), body.replace(/\s+/g, ' ').slice(0, 300));
+  await ctx.close();
+}
+
+// ── You, under the numbered dots in the topic view ──────────────────────────────
+// James, 2026-11-13: in the topic view your dot sat on the number of the town you were in.
+// Every numbered dot that overlaps you is drawn after you, so its number is on top.
+{
+  const { ctx, p } = await freshApp();
+  await p.locator('.kind-tap').click();
+  await p.waitForTimeout(300);
+  await p.locator('#kind-box .chip', { hasText: 'Ghosts & legends' }).click();
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(2500);
+  const r = await p.evaluate(() => {
+    const here = document.querySelector('.here');
+    if (!here) return { here: false };
+    const h = here.getBoundingClientRect();
+    const over = [...document.querySelectorAll('.clus')].filter((c) => {
+      const b = c.getBoundingClientRect();
+      return b.left < h.right && b.right > h.left && b.top < h.bottom && b.bottom > h.top;
+    });
+    return {
+      here: true,
+      over: over.length,
+      under: over.filter((c) => !(here.compareDocumentPosition(c) & Node.DOCUMENT_POSITION_FOLLOWING)).length,
+    };
+  });
+  check('Topic view: your dot overlaps a numbered dot here (the check has something to check)', r.here && r.over > 0, JSON.stringify(r));
+  check('Topic view: every numbered dot it overlaps is drawn over your dot', r.here && r.under === 0, JSON.stringify(r));
+  await ctx.close();
+}
+
+// ── A search while a topic is picked ───────────────────────────────────────────
+// 2026-11-13, James: "go with the better user experience". A search, or the locate arrow,
+// while a topic is picked replaces the view All goes back to: All returns to the place
+// searched (or to you, after the locate arrow), not to the place before the first pick.
+{
+  const { ctx, p } = await freshApp();
+  const kinds = p.locator('.kind-tap');
+  const sheet = p.locator('#kind-box');
+  const pick = async (name) => {
+    await kinds.click();
+    await p.waitForTimeout(300);
+    await (name === 'All' ? sheet.getByRole('button', { name: 'All' }) : sheet.locator('.chip', { hasText: name })).click();
+    await p.keyboard.press('Escape');
+    await p.waitForTimeout(2500);
+  };
+  // The echoes whose pins are on the screen, by id.
+  const onScreen = async () => p.locator('.pin').evaluateAll((es) => es.filter((e) => {
+    const r = e.getBoundingClientRect();
+    return r.x > 0 && r.y > 0 && r.right < innerWidth && r.bottom < innerHeight;
+  }).map((e) => e.dataset.echo));
+  await pick('Ghosts & legends');
+  const box = p.getByLabel('Search a city, place or ZIP code');
+  await box.click();
+  await box.fill('Boston');
+  await p.waitForTimeout(600);
+  await p.locator('#msearch-results .msearch-city', { hasText: 'Boston' }).first().click();
+  await p.waitForTimeout(2500);
+  await pick('All');
+  const there = await onScreen();
+  check('Topic and search: All returns to the place searched, not the place before the pick',
+    there.length > 0 && there.every((id) => /^boston-/.test(id)), there.join(', '));
+  // The locate arrow while a topic is picked: All comes back to you (the Battery).
+  await pick('Ghosts & legends');
+  await p.getByRole('button', { name: 'Go to my location' }).click();
+  await p.waitForTimeout(2500);
+  await pick('All');
+  // Back at street level on you: no Boston pin in view, and the bar on the nearest echo.
+  const home = await onScreen();
+  const bar = (await p.locator('.echobar').innerText().catch(() => '')).replace(/\s+/g, ' ');
+  check('Topic and locate: All returns to where you are',
+    home.every((id) => !/^boston-/.test(id)) && /Castle/.test(bar) && Number(await p.locator('svg.map').getAttribute('data-zoom')) >= 0.5,
+    `${home.join(', ')} | ${bar}`);
+  await ctx.close();
+}
+
 // ── Settings › Membership ──────────────────────────────────────────────────────
 // Buying, cancelling and turning renewal back on, all from Settings. Nothing is charged:
 // purchases are recorded on the device until Stripe lands.

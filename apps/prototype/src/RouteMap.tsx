@@ -24,7 +24,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, characterFor } from "@echofinders/echo";
-import { ClusterDot, FAN_GAP, GROUP_PX } from "./PinCluster";
+import { ClusterDot, clusterRadius, FAN_GAP, GROUP_PX } from "./PinCluster";
 import { TILE_ATTRIBUTION, TILE_URL, VECTOR_ATTRIBUTION, VECTOR_TILES_URL, planTiles, toWorld, type TilePlan } from "./tiles";
 import type { GeoJSONSource, Map as MapLibre } from "maplibre-gl";
 import { MapCanvas } from "./MapCanvas";
@@ -34,6 +34,7 @@ import { useSmoothedPoint } from "./use-smoothed";
 import { NEAR_KM } from "./toast-rules";
 import { buildRouteGeometry, distanceKm, effectiveRadiusKm, presetFor, rarityOf, type Arriving, type Echo, type LatLng, type Position, type Route, type TravelMode,
   clusterPoints,
+  mergeOverlapping,
   fanOut,
 } from "@echofinders/core";
 
@@ -180,6 +181,8 @@ interface Props {
    * flies back to where it was just before. Comes before every other framing.
    */
   readonly topicBox?: Bounds | null;
+  /** Where the map is centred, each time it comes to rest: the topic view's country (App.tsx). */
+  readonly onCentre?: (at: LatLng) => void;
   /**
    * The walk to the echo you asked to be taken to, along the streets, from where you are
    * (`directions.ts`). Drawn over everything but the pins; framed once when it first
@@ -417,6 +420,7 @@ export function RouteMap({
   lookAt = null,
   countryBox = null,
   topicBox = null,
+  onCentre,
   directions = null,
   directionsStraight = false,
   aimId = null,
@@ -1210,7 +1214,8 @@ export function RouteMap({
       return { item: echo, x, y };
     });
     const held = heldGroups.current;
-    if (!held) return clusterPoints(placed, GROUP_PX);
+    // And numbered dots that would overlap each other merge into one (James, 2026-11-13).
+    if (!held) return mergeOverlapping(clusterPoints(placed, GROUP_PX), clusterRadius);
     /*
      * A finger is down: the same groups as when it landed, only moved. See `holdUnder`.
      * Centred on the mean of their members, as `clusterPoints` centres them.
@@ -1344,7 +1349,42 @@ export function RouteMap({
    */
   const topicKey = topicBox ? `${topicBox.south},${topicBox.west},${topicBox.north},${topicBox.east}` : null;
   const topicHeld = useRef(false);
-  const beforeTopic = useRef<{ center: [number, number]; zoom: number; bearing: number; pitch: number } | null>(null);
+  /**
+   * Somewhere looked up: show its nearest few echoes, not one pin at a fixed zoom.
+   * "10004" opened on Castle Clinton alone with fifteen more just off screen, which is
+   * the "hard to zoom in to find an echo" complaint all over again.
+   */
+  const frameLook = (place: LatLng, duration: number) => {
+    if (!gl) return;
+    const inset = insetFor(barH, reservedBottom, navH);
+    const near = library
+      .map((e) => ({ at: e.point.at, km: distanceKm(place, e.point.at) }))
+      .sort((a, b) => a.km - b.km)
+      // Twelve, and not quite street level: six nearest were often all one house, which
+      // opened North Carolina on a single bubble of thirteen.
+      .slice(0, 12)
+      .map((n) => n.at);
+    if (near.length < 2) {
+      gl.easeTo({ center: [place.lng, place.lat], zoom: base - 1, offset: bandOffset, duration });
+    } else {
+      const pts = [place, ...near];
+      const lngs = pts.map((p) => p.lng);
+      const lats = pts.map((p) => p.lat);
+      gl.fitBounds(
+        [
+          [Math.min(...lngs), Math.min(...lats)],
+          [Math.max(...lngs), Math.max(...lats)],
+        ],
+        { padding: { top: inset.top + 40, bottom: inset.bottom + 30, left: inset.side + 20, right: inset.side + 70 }, maxZoom: base - 1, duration },
+      );
+    }
+  };
+  /**
+   * Where All goes back to: the camera from just before the first pick, or "look" once a
+   * search has been made while the topic view is up, which frames the place searched again
+   * with every echo back on the map, as the search itself would have.
+   */
+  const beforeTopic = useRef<{ center: [number, number]; zoom: number; bearing: number; pitch: number } | "look" | null>(null);
   useEffect(() => {
     if (!gl) return;
     if (topicBox) {
@@ -1383,7 +1423,10 @@ export function RouteMap({
     };
     gl.once("moveend", release);
     window.setTimeout(release, 900);
-    gl.easeTo({ ...back, duration: 600 });
+    if (back === "look") {
+      if (lookAt) frameLook(lookAt, 600);
+      else release();
+    } else gl.easeTo({ ...back, duration: 600 });
     // Only the box decides; the insets and the base zoom are read as they are now.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gl, topicKey]);
@@ -1395,6 +1438,14 @@ export function RouteMap({
     if (!gl) return;
     const inset = insetFor(barH, reservedBottom, navH);
     const duration = framed.current ? 600 : 0;
+    /*
+     * A fix lost for a moment while the topic view has the camera, or is giving it back, is
+     * not a reason to frame the whole journey. Picking a topic can rebuild the session (True
+     * crime is an opt in, `optIns` in App.tsx), and for a moment there is no fix: on a
+     * flight that fitted the whole route over the way back, so All left the map on the
+     * route instead of the trip view it had. A search still frames (`lookAt`).
+     */
+    if (topicHeld.current && !hasFix && !overview && !lookAt) return;
     framed.current = true;
     if (!frameKey) framedBox.current = null;
     if (countryBox && !overview && !lookAt) {
@@ -1425,32 +1476,7 @@ export function RouteMap({
         { padding: { top: inset.top + 10, bottom: inset.bottom + 10, left: inset.side, right: inset.side + 50 }, maxZoom: base, duration },
       );
     } else if (lookAt) {
-      /*
-       * Somewhere looked up: show its nearest few echoes, not one pin at a fixed zoom.
-       * "10004" opened on Castle Clinton alone with fifteen more just off screen, which is
-       * the "hard to zoom in to find an echo" complaint all over again.
-       */
-      const near = library
-        .map((e) => ({ at: e.point.at, km: distanceKm(lookAt, e.point.at) }))
-        .sort((a, b) => a.km - b.km)
-        // Twelve, and not quite street level: six nearest were often all one house, which
-        // opened North Carolina on a single bubble of thirteen.
-        .slice(0, 12)
-        .map((n) => n.at);
-      if (near.length < 2) {
-        gl.easeTo({ center: [lookAt.lng, lookAt.lat], zoom: base - 1, offset: bandOffset, duration });
-      } else {
-        const pts = [lookAt, ...near];
-        const lngs = pts.map((p) => p.lng);
-        const lats = pts.map((p) => p.lat);
-        gl.fitBounds(
-          [
-            [Math.min(...lngs), Math.min(...lats)],
-            [Math.max(...lngs), Math.max(...lats)],
-          ],
-          { padding: { top: inset.top + 40, bottom: inset.bottom + 30, left: inset.side + 20, right: inset.side + 70 }, maxZoom: base - 1, duration },
-        );
-      }
+      frameLook(lookAt, duration);
     }
     // Following is the next effect's job.
     // Only a change of framing reframes; a new fix or a new library does not.
@@ -1577,6 +1603,37 @@ export function RouteMap({
     gl.easeTo({ center: [at.lng, at.lat], zoom: z, offset: bandOffset, duration: far ? 0 : 500 });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [locateTap, gl]);
+
+  /*
+   * A search, or the locate arrow, while the topic view is up (2026-11-13, James: "go with
+   * the better user experience"): that is where the listener wants to be now, so All comes
+   * back to it, the place searched or where you are, not to the view before the first
+   * pick. A search is framed again on the way back, with every echo on the map (`frameLook`);
+   * after the locate arrow, the camera kept is where its move lands. After the framing and
+   * locate effects above, so the move the locate arrow starts is the one waited for.
+   */
+  const lookKey = lookAt ? `${lookAt.lat},${lookAt.lng}` : null;
+  const lastLook = useRef({ lookKey, locateTap });
+  useEffect(() => {
+    const was = lastLook.current;
+    lastLook.current = { lookKey, locateTap };
+    if (was.lookKey === lookKey && was.locateTap === locateTap) return;
+    if (!gl || !topicKey || !beforeTopic.current) return;
+    if (lookAt && was.lookKey !== lookKey) {
+      beforeTopic.current = "look";
+      return;
+    }
+    const keep = () => {
+      if (!beforeTopic.current) return;
+      const c = gl.getCenter();
+      beforeTopic.current = { center: [c.lng, c.lat], zoom: gl.getZoom(), bearing: gl.getBearing(), pitch: gl.getPitch() };
+    };
+    gl.once("moveend", keep);
+    return () => {
+      gl.off("moveend", keep);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lookKey, locateTap, gl]);
 
   /*
    * NOTHING PUSHES A ZOOM INTO THE MAP FROM OUTSIDE ANY MORE.
@@ -1966,6 +2023,10 @@ export function RouteMap({
          */
         const rel = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, 2 ** (mapZoom - base)));
         if (Math.abs(rel - zoom) > 1e-3) onZoom(rel);
+        if (gl && onCentre) {
+          const c = gl.getCenter();
+          onCentre({ lat: c.lat, lng: c.lng });
+        }
         reportInView.current();
       }}
       onMapTap={() => {
@@ -2236,6 +2297,13 @@ export function RouteMap({
       )}
 
       {/*
+        You, under the numbered dots while the topic view is up (James, 2026-11-13): it is a
+        map of where the echoes are, and drawn on top the dot hid the number of the town you
+        are in (Philadelphia's, picking Ghosts & legends from there). Everywhere else you
+        are drawn over the pins, below.
+      */}
+      {topicKey && here && <Here x={here.x} y={here.y} mode={mode} headingDeg={position?.headingDeg ?? null} />}
+      {/*
         PINS, GROUPED BY WHAT LANDED ON TOP OF WHAT.
 
         Measured on the Manhattan map: twenty six pins drawn, and fifteen of them within
@@ -2379,7 +2447,7 @@ export function RouteMap({
           </g>
         );
       })}
-      {here && <Here x={here.x} y={here.y} mode={mode} headingDeg={position?.headingDeg ?? null} />}
+      {!topicKey && here && <Here x={here.x} y={here.y} mode={mode} headingDeg={position?.headingDeg ?? null} />}
 
       {/*
         THE VIGNETTE, and it is most of why the board looks like night and the app looked

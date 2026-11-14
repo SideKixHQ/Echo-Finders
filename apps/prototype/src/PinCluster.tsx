@@ -36,6 +36,15 @@ export const GROUP_PX = 40;
  */
 export const FAN_GAP = 44;
 
+/**
+ * A numbered dot's radius for its count. Bigger for a bigger pile, and it stops growing.
+ * Area would be the honest encoding and a group of fifteen would then be four times the
+ * width of a group of one, which is a disc the size of a thumb sitting over the street it
+ * is meant to be marking. The map merges dots that would overlap at these sizes
+ * (`mergeOverlapping`).
+ */
+export const clusterRadius = (n: number): number => Math.min(26, 15 + Math.sqrt(n) * 2.4);
+
 export interface ClusterDotProps {
   readonly x: number;
   readonly y: number;
@@ -63,12 +72,7 @@ function ClusterDotInner({ x, y, members, zooms = false, onOpen, hover }: Cluste
   )[0]!;
   const rarity = rarityOf(best);
   const n = members.length;
-  /*
-   * Bigger for a bigger pile, and it stops growing. Area would be the honest encoding and
-   * a group of fifteen would then be four times the width of a group of one, which is a
-   * disc the size of a thumb sitting over the street it is meant to be marking.
-   */
-  const r = Math.min(26, 15 + Math.sqrt(n) * 2.4);
+  const r = clusterRadius(n);
 
   return (
     <g

@@ -7,7 +7,7 @@
  */
 
 import { describe, it, expect } from "vitest";
-import { clusterPoints, fanOut, type Placed } from "../src/ranking/pin-clusters.js";
+import { clusterPoints, fanOut, mergeOverlapping, type Placed } from "../src/ranking/pin-clusters.js";
 
 const at = (id: string, x: number, y: number): Placed<string> => ({ item: id, x, y });
 
@@ -103,5 +103,42 @@ describe("fanOut", () => {
 
   it("returns nothing for nothing", () => {
     expect(fanOut(0, 44)).toEqual([]);
+  });
+});
+
+// James, 2026-11-13: numbered dots that overlap each other merge, with the combined number.
+describe("numbered dots that overlap", () => {
+  const radius = (n: number) => Math.min(26, 15 + Math.sqrt(n) * 2.4);
+  const pile = (id: string, x: number, y: number, n: number) => ({
+    x,
+    y,
+    members: Array.from({ length: n }, (_, i) => ({ item: `${id}${i}`, x, y })),
+  });
+
+  it("merge into one, with the combined count, centred on all their members", () => {
+    // 45 apart, radius about 25 each: they overlap.
+    const out = mergeOverlapping([pile("a", 0, 0, 18), pile("b", 45, 0, 8)], radius);
+    expect(out).toHaveLength(1);
+    expect(out[0]!.members).toHaveLength(26);
+    expect(out[0]!.x).toBeCloseTo((45 * 8) / 26);
+  });
+
+  it("leave dots that do not touch alone, and never swallow a single pin", () => {
+    const apart = mergeOverlapping([pile("a", 0, 0, 3), pile("b", 60, 0, 3)], radius);
+    expect(apart).toHaveLength(2);
+    const pin = mergeOverlapping([pile("a", 0, 0, 3), pile("p", 10, 0, 1)], radius);
+    expect(pin).toHaveLength(2);
+  });
+
+  it("keep going until no two overlap, as a merged dot grows", () => {
+    const out = mergeOverlapping([pile("a", 0, 0, 2), pile("b", 40, 0, 2), pile("c", 85, 0, 30)], radius);
+    for (let i = 0; i < out.length; i++)
+      for (let j = i + 1; j < out.length; j++) {
+        const a = out[i]!;
+        const b = out[j]!;
+        if (a.members.length < 2 || b.members.length < 2) continue;
+        expect(Math.hypot(a.x - b.x, a.y - b.y)).toBeGreaterThanOrEqual(radius(a.members.length) + radius(b.members.length));
+      }
+    expect(out.reduce((n, c) => n + c.members.length, 0)).toBe(34);
   });
 });

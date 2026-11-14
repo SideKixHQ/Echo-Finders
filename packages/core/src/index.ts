@@ -6,6 +6,7 @@ export * from "./geo/solar.js";
 export * from "./geo/streets.js";
 export * from "./geo/guidance.js";
 export * from "./geo/plan-walk.js";
+export * from "./geo/country.js";
 export * from "./entitlement/entitlement.js";
 export * from "./route/profile.js";
 export * from "./ranking/score.js";

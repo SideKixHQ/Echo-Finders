@@ -12,6 +12,7 @@
 
 import type { EchoCategory } from "@echofinders/core";
 import type { ReactNode } from "react";
+import { KIDS_CATEGORIES } from "./kids-mode";
 
 export const CATEGORY_LABEL: Record<EchoCategory, string> = {
   history: "History",
@@ -202,6 +203,9 @@ export const RARE_ICON: ReactNode = (
 
 /** Every category: the filter's "everything", on the map and on My Echoes alike. */
 export const ALL_CATEGORIES: ReadonlySet<EchoCategory> = new Set(CATEGORY_ORDER);
+
+/** The panel's topics in kids mode: Kids only (the panel adds All, and Rare when there are rare ones). */
+export const KIDS_CHIP_GROUPS: readonly ChipGroup[] = CHIP_GROUPS.filter((g) => g.categories.every((c) => KIDS_CATEGORIES.includes(c)));
 
 /**
  * What a tap on a category chip selects next. One rule, used by the map and by My Echoes,

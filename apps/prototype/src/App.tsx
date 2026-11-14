@@ -6,6 +6,7 @@ import { count } from "./analytics";
 import { takeSharedEcho } from "./share";
 import { LIBRARY, ROUTES } from "./library.generated";
 import { ALL_CATEGORIES, toggleCategories, type ChipGroup } from "./categories";
+import { keepForKids, kidsMayHear } from "./kids-mode";
 import { useJourney, listenerFor } from "./use-journey";
 import { ModePicker } from "./ModePicker";
 import { BASE_ZOOM, MIN_ZOOM, RouteMap, type PinState } from "./RouteMap";
@@ -57,7 +58,8 @@ import {
 } from "./toast-rules";
 import { Walk } from "./Walk";
 import { Nowhere, widenTo } from "./Nowhere";
-import { countryFrame } from "./country-view";
+import { countryFrame, type Bounds } from "./country-view";
+import { COUNTRIES } from "./countries.generated";
 import { Ribbon } from "./Ribbon";
 import { EchoBar, ECHOBAR_FLOAT, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
@@ -97,6 +99,7 @@ import {
   interestsFrom,
   bearingDeg as bearingTo,
   checkEligibility,
+  countryAt,
   mayHearAnother,
   cityAt,
   freeEchoesLeft,
@@ -148,6 +151,17 @@ const OVERVIEW_RADIUS_KM = 6;
 const FAR_OUT_MAP_ZOOM = 12;
 /** What the country view fits: the library's echoes in the continental US (`country-view.ts`). */
 const US_FRAME = countryFrame(LIBRARY.map((e) => e.point.at));
+/**
+ * Whether kids mode offers Rare: only when the Kids topic has rare echoes (James,
+ * 2026-11-13: "no Rare unless there are rare kids echoes"). Read from the library.
+ */
+/** Each echo's country (`countryAt`, Natural Earth outlines), worked out once, when first asked. */
+const ECHO_COUNTRY = new Map<string, string | null>();
+const countryOfEcho = (echo: Echo): string | null => {
+  if (!ECHO_COUNTRY.has(echo.id)) ECHO_COUNTRY.set(echo.id, countryAt(echo.point.at, COUNTRIES));
+  return ECHO_COUNTRY.get(echo.id) ?? null;
+};
+const KIDS_HAVE_RARE = LIBRARY.some((e) => kidsMayHear(e) && isRareFind(e));
 /**
  * Seatback mode: a big landscape touch screen in the back of an aircraft seat (ADR-0001).
  *
@@ -409,7 +423,13 @@ export function App() {
    */
   // Read from `cats` rather than `activeCats`, which is derived further down: null means
   // nothing has been switched off yet, and the default set carries every category.
-  const trueCrimeOn = (cats ?? ALL_CATEGORIES).has("true-crime");
+  //
+  // Never on a trip (James, 2026-11-13): picking a topic there only changes what the map
+  // shows. It switched True crime off, which rebuilt the session and stopped the trip's own
+  // true crime echoes: with Ghosts & legends picked, the Central Park West walk walked up to
+  // the Dakota and nothing synced. On a planned route, drive or flight true crime stays on.
+  // Exploring keeps the chip as the opt in, as before (docs/adr/0021-topics-and-rare.md).
+  const trueCrimeOn = !roaming || (cats ?? ALL_CATEGORIES).has("true-crime");
   const optIns = useMemo<readonly EchoCategory[]>(
     () => (trueCrimeOn ? ["true-crime"] : []),
     [trueCrimeOn],
@@ -770,6 +790,9 @@ export function App() {
     return { list, travel, heardBefore };
   }, [kept, elsewhere, deleted, privacy.keepCollection, journeyMode]);
 
+  /** My echoes in kids mode: Kids echoes only, as everywhere else in kids mode (2026-11-13). */
+  const kidsFound = useMemo(() => (kids ? found.list.filter((c) => kidsMayHear(c.echo)) : found.list), [kids, found.list]);
+
   /**
    * Which echoes have actually been HEARD, which is what the free ten counts.
    *
@@ -835,6 +858,9 @@ export function App() {
    */
   const playOrAsk = useCallback(
     (echo: Echo) => {
+      // Kids mode plays Kids echoes only, from a card as from the engine (James, 2026-11-13).
+      // Search, the map and My echoes no longer offer any other, so this is the last guard.
+      if (kids && !kidsMayHear(echo)) return;
       if (!mayStart(echo)) {
         count({ name: "Paywall shown", category: echo.category });
         setPaywallFor(echo);
@@ -843,7 +869,7 @@ export function App() {
       count({ name: "Echo played", category: echo.category });
       session.play(echo);
     },
-    [mayStart, session],
+    [kids, mayStart, session],
   );
 
   const storedPositions = useMemo(
@@ -1282,6 +1308,7 @@ export function App() {
    */
   // Every saved echo, not only the ones on this journey (`saved-list.ts`).
   const savedNearby = useMemo(() => savedList(saved, LIBRARY_BY_ID, state.position?.at), [saved, state.position]);
+  const kidsSaved = useMemo(() => (kids ? savedNearby.filter(kidsMayHear) : savedNearby), [kids, savedNearby]);
   const suggestion = useMemo(
     () => ROUTES.find((r) => r.id !== route.id && (corridorCounts[r.id] ?? 0) > 1) ?? null,
     [route.id, corridorCounts],
@@ -1298,10 +1325,14 @@ export function App() {
    * category that does not exist.
    */
   const activeCats = cats ?? ALL_CATEGORIES;
-  /** What the panel lets through: a picked topic, and rare when Rare is on. */
+  /**
+   * What the panel lets through: a picked topic, and rare when Rare is on. In kids mode,
+   * the Kids topic only (`kidsMayHear`), wherever the map draws from the whole library: the
+   * country view, zoomed out and the topic view as well as around you.
+   */
   const shows = useCallback(
-    (e: Echo) => activeCats.has(e.category) && (!rareOnly || isRareFind(e)),
-    [activeCats, rareOnly],
+    (e: Echo) => (!kids || kidsMayHear(e)) && activeCats.has(e.category) && (!rareOnly || isRareFind(e)),
+    [kids, activeCats, rareOnly],
   );
 
   /*
@@ -1339,31 +1370,83 @@ export function App() {
    * Topics everywhere (James, 2026-11-13, amending ADR-0021). Picking a topic, Rare, or
    * several takes the map out just far enough to show every echo of them, in every city,
    * the numbered dots saying where they are; back to All, or the last one turned off,
-   * flies it back to the view from just before the first pick. While exploring: a journey
-   * filters its own echoes, as before.
+   * flies it back to the view from just before the first pick.
+   *
+   * On a planned route, drive or flight too (James, 2026-11-13: "Should it zoom out there
+   * too? - yes"). It filtered only the trip's own echoes, so the map could show nothing.
+   * Now it is the same topic view as exploring, and All returns to the trip view. The trip
+   * itself is not touched: its queue, Coming up and progress read `onRoute`, which the
+   * topic view does not change; only what the map draws does (`inArea`).
    */
-  const picking = roaming && (cats !== null || rareOnly);
-  /** The zoom and pan from just before the first pick. The map keeps its own camera. */
-  const [beforePick, setBeforePick] = useState<{ zoom: number; pan: { x: number; y: number } } | null>(null);
+  const picking = cats !== null || rareOnly;
+  /**
+   * The zoom and pan from just before the first pick. The map keeps its own camera. The
+   * zoom is null once a search or the locate arrow has replaced the view to go back to:
+   * the map's camera says it then (`onZoom` when it settles).
+   */
+  const [beforePick, setBeforePick] = useState<{ zoom: number | null; pan: { x: number; y: number } } | null>(null);
+  /**
+   * The country the topic view fits in (James, 2026-11-13): the country of the map's centre
+   * when the first topic is picked, or of where you are, or of the place searched. Picking a
+   * topic fits its echoes there only, so the US fits the US ones and England the UK ones;
+   * null (the open sea, or a country with no echoes) leaves the map where it is.
+   */
+  const viewCentre = useRef<LatLng | null>(null);
+  const [pickCountry, setPickCountry] = useState<string | null>(null);
+  const countryHere = (at: LatLng | null | undefined) => (at ? countryAt(at, COUNTRIES) : null);
+  /*
+   * Worked out in the render that picks, not in an effect after it, so the map is handed the
+   * topic's box with the pick itself: a render in between let following move the camera
+   * before the topic view kept it, and All came back 44 px off on a drive.
+   */
+  const [pickedBefore, setPickedBefore] = useState(picking);
+  if (picking !== pickedBefore) {
+    setPickedBefore(picking);
+    setPickCountry(picking ? countryHere(viewCentre.current ?? lookAt?.at ?? state.position?.at) : null);
+  }
   useEffect(() => {
     if (picking && !beforePick) setBeforePick({ zoom, pan });
     if (!picking && beforePick) {
-      setZoom(beforePick.zoom);
+      if (beforePick.zoom !== null) setZoom(beforePick.zoom);
       setPan(beforePick.pan);
       setBeforePick(null);
     }
     // Only on the pick and the return: the zoom and pan in between are the topic view's.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [picking]);
-  /**
-   * What the topic view fits: every echo the panel lets through, framed as the country view
-   * frames the library (`country-view.ts`), so the three ghost stories in England do not
-   * take the map out over the Atlantic.
+  /*
+   * A search or the locate arrow while a topic is picked replaces the view All goes back to
+   * (2026-11-13: "go with the better user experience"): the place searched, or where you
+   * are, not the place before the first pick. The map keeps that camera (`RouteMap`).
    */
-  const topicBox = useMemo(
-    () => (picking ? countryFrame(LIBRARY.filter(shows).map((e) => e.point.at)) : null),
-    [picking, shows],
-  );
+  const lookKey = lookAt ? `${lookAt.at.lat},${lookAt.at.lng}` : null;
+  const lastLook = useRef({ lookKey, locateTap });
+  useEffect(() => {
+    const was = lastLook.current;
+    lastLook.current = { lookKey, locateTap };
+    if (was.lookKey === lookKey && was.locateTap === locateTap) return;
+    if (picking && beforePick) {
+      setBeforePick({ zoom: null, pan });
+      // The topic view moves to that country's echoes, if it is another one.
+      setPickCountry(countryHere(lookAt?.at ?? state.position?.at));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lookKey, locateTap]);
+  /**
+   * What the topic view fits: every echo the panel lets through in the country it is in
+   * (`pickCountry`). None there, no box: the map stays where it is.
+   */
+  const topicBox = useMemo((): Bounds | null => {
+    if (!picking || !pickCountry) return null;
+    const pts = LIBRARY.filter((e) => shows(e) && countryOfEcho(e) === pickCountry).map((e) => e.point.at);
+    if (pts.length === 0) return null;
+    return {
+      south: Math.min(...pts.map((p) => p.lat)),
+      west: Math.min(...pts.map((p) => p.lng)),
+      north: Math.max(...pts.map((p) => p.lat)),
+      east: Math.max(...pts.map((p) => p.lng)),
+    };
+  }, [picking, pickCountry, shows]);
   /** "Saved to My echoes": which echo was just saved, for the toast that says where it went. */
   const [savedToast, setSavedToast] = useState<string | null>(null);
   // Leaving the map lets it go, so it does not come back on the way in again.
@@ -1378,6 +1461,12 @@ export function App() {
   const setKidsMode = useCallback((on: boolean) => {
     setKids(on);
     setSimple(on);
+    // A picked topic kids mode does not offer goes (True crime first among them); nothing
+    // left is All. Rare goes too where the Kids topic has none.
+    if (on) {
+      setCats(keepForKids);
+      if (!KIDS_HAVE_RARE) setRareOnly(false);
+    }
   }, []);
 
   // Recomputed as the listener moves, from how far along they are rather than from the
@@ -1509,7 +1598,12 @@ export function App() {
    * decides what the hum sings and what the rose draws, and looking at a map of the world
    * should not put four hundred voices in somebody's ears.
    */
-  const farOut = roaming && (picking || (!overview && !lookAt)) && !plan && zoom < 1 && BASE_ZOOM[roamMode] + Math.log2(zoom) <= FAR_OUT_MAP_ZOOM;
+  // And on a trip, zoomed out in the topic view, as exploring has it (James, 2026-11-13): the
+  // area card says what is on screen there too.
+  const farOut =
+    (roaming ? (picking || (!overview && !lookAt)) && !plan : picking) &&
+    zoom < 1 &&
+    BASE_ZOOM[roaming ? roamMode : route.mode] + Math.log2(zoom) <= FAR_OUT_MAP_ZOOM;
   /*
    * The country view draws every echo at any zoom, not only zoomed out: a tap on a town's
    * dot goes in on that town, and with no location the engine's nearby list is empty.
@@ -1517,6 +1611,16 @@ export function App() {
   // And while a topic is picked: every echo of it, wherever it is.
   const everything = picking || farOut || (roaming && country && !overview && !lookAt && !plan);
   /** The area's echoes before the panel's filter: what the topic chips are counted from. */
+  /**
+   * The topic view's echoes: the country it fits (`pickCountry`), so the echo bar, the area
+   * card and the pins count the same set (2026-11-13: London's was "3 places · 3 echoes"
+   * on the card and "1 of 100" on the bar). Where the country has none of the topic, the
+   * map stays where it was and this is the whole library, as before.
+   */
+  const topicPool = useMemo(
+    () => (picking && topicBox && pickCountry ? LIBRARY.filter((e) => countryOfEcho(e) === pickCountry) : null),
+    [picking, topicBox, pickCountry],
+  );
   const inArea = useMemo(
     () =>
       roaming
@@ -1525,10 +1629,12 @@ export function App() {
           : lookAt && !picking
             ? LIBRARY.filter((e) => distanceKm(lookAt.at, e.point.at) <= LOOK_RADIUS_KM)
             : everything
-              ? LIBRARY
+              ? topicPool ?? LIBRARY
               : state.nearby.map((n) => n.echo)
-        : onRoute,
-    [roaming, overview, overviewEchoes, lookAt, picking, everything, state.nearby, onRoute],
+        : picking
+          ? topicPool ?? LIBRARY
+          : onRoute,
+    [roaming, overview, overviewEchoes, lookAt, picking, everything, topicPool, state.nearby, onRoute],
   );
   const onMap = useMemo(() => inArea.filter(shows), [inArea, shows]);
   /**
@@ -1540,6 +1646,7 @@ export function App() {
   const inView = useMemo(() => inViewAll.filter(shows), [inViewAll, shows]);
   /** The Rare chip: every topic and Rare are offered everywhere (`KindGrid`). */
   const rareChip = useMemo(() => ({ on: rareOnly, onToggle: toggleRare }), [rareOnly, toggleRare]);
+  const panelRare = kids && !KIDS_HAVE_RARE ? undefined : rareChip;
 
   /**
    * The same list, nearest first, which is the order the stepper moves in.
@@ -1899,11 +2006,18 @@ export function App() {
     : !state.position
       ? "Start needs your location."
       : null;
+  /** A saved route's stop that kids mode would not play: skipped, and greyed in the list. */
+  const kidsSkip = (id: string) => {
+    if (!kids) return false;
+    const echo = LIBRARY_BY_ID.get(id);
+    return !!echo && !kidsMayHear(echo);
+  };
   /** Start a saved route: the planned-walk machinery, already under way, from here. */
   const startRoute = (r: SavedRoute) => {
     const start = state.position?.at;
     if (!start) return;
-    const ids = reorder(start, r.stops.filter((id) => stateOf(id) === "sealed"), false);
+    // Kids mode skips a stop it would not play (James, 2026-11-13); the list shows it greyed.
+    const ids = reorder(start, r.stops.filter((id) => stateOf(id) === "sealed" && !kidsSkip(id)), false);
     if (ids.length === 0) return;
     setSelectedId(null);
     setLookAt(null);
@@ -2136,6 +2250,7 @@ export function App() {
                 */}
                 <MapSearch
                   library={LIBRARY}
+                  {...(kids ? { may: kidsMayHear } : {})}
                   saved={saved}
                   onLook={(hit) => lookSomewhere(hit, roamMode)}
                   onGo={goToEcho}
@@ -2260,7 +2375,8 @@ export function App() {
                   on={activeCats}
                   onToggle={toggleCategory}
                   onAll={allCategories}
-                  rare={rareChip}
+                  {...(panelRare ? { rare: panelRare } : {})}
+                  kids={kids}
                 />
                 </div>
               </div>
@@ -2338,7 +2454,10 @@ export function App() {
                 focusId={focusId}
                 /* The stepper covers the bottom of the map, so the map has to know: it
                    keeps pins, edge markers and the Esri credit above it. */
-                reservedBottom={(showBar ? ECHOBAR_H : directing ? dirBarH : 0) + (farOut && !directing ? AREACARD_H + (showBar ? AREACARD_OVER_BAR : 0) : 0)}
+                /* The topic view keeps the area card's room from the pick, not only once it is
+                   zoomed out: its fit is worked out before the card is up, and London went
+                   under the card fitting the UK's three ghost stories (2026-11-13). */
+                reservedBottom={(showBar ? ECHOBAR_H : directing ? dirBarH : 0) + ((farOut || topicBox !== null) && !directing ? AREACARD_H + (showBar ? AREACARD_OVER_BAR : 0) : 0)}
                 onInView={setInView}
                 viewLibrary={inArea}
                 overview={overview}
@@ -2352,6 +2471,9 @@ export function App() {
                 lookAt={roaming ? lookAt?.at ?? null : null}
                 countryBox={roaming && country ? US_FRAME : null}
                 topicBox={topicBox}
+                onCentre={(at) => {
+                  viewCentre.current = at;
+                }}
                 /*
                   The way there: along the streets where there is a street file, and a
                   straight line to the echo where there is not, so the map always shows
@@ -2701,7 +2823,7 @@ export function App() {
                 const r = reactions[id];
                 return r ? faceOf(r.reaction) : null;
               }}
-              captured={found.list}
+              captured={kidsFound}
               travelOf={(id) => found.travel.get(id) ?? journeyMode}
               privacy={privacy}
               onPlay={(echo) => {
@@ -2712,8 +2834,9 @@ export function App() {
                 state.playback.kind !== "idle" && state.playback.item.echo.id === id
               }
               isHeard={(id) => stateOf(id) === "heard" || found.heardBefore.has(id)}
-              saved={savedNearby}
+              saved={kidsSaved}
               onSave={toggleSave}
+              kids={kids}
               onGo={goToEcho}
               onFindNear={() => {
                 // Back to the map, framed on you rather than on somewhere looked up.
@@ -2729,7 +2852,8 @@ export function App() {
                   routes={routes}
                   echoOf={(id) => LIBRARY_BY_ID.get(id)}
                   isDone={(id) => stateOf(id) !== "sealed"}
-                  saved={savedNearby}
+                  {...(kids ? { isSkipped: kidsSkip } : {})}
+                  saved={kidsSaved}
                   startBlock={routeStartBlock}
                   onStart={startRoute}
                   onCreate={() => {

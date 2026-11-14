@@ -34,6 +34,7 @@ import {
   type PrivacySettings,
   type TravelMode,
 } from "@echofinders/core";
+import { KIDS_AGE, KIDS_CATEGORIES } from "./kids-mode";
 import { SimulatedJourney } from "./simulated-journey";
 import { simulatesRoute } from "./guided-walk";
 import { EchoTone } from "./echo-tone";
@@ -66,8 +67,11 @@ export const LISTENER: ListenerProfile = {
   density: "immersive",
 };
 
-/** The age kids mode claims. Under every `minAge` the library sets above zero. */
-export const KIDS_AGE = 8;
+// The age kids mode claims lives with the rest of kids mode (`kids-mode.ts`).
+export { KIDS_AGE };
+
+/** Kids mode: the Kids topic only, at the kids age (`listenerFor`). One object, so it is stable. */
+const KIDS_LISTENER: ListenerProfile = { ...LISTENER, categories: KIDS_CATEGORIES, age: KIDS_AGE };
 
 /** A stable empty default, so an absent `optIns` cannot rebuild the session every render. */
 const EMPTY_OPT_INS: readonly EchoCategory[] = [];
@@ -106,19 +110,21 @@ const EMPTY_OPT_INS: readonly EchoCategory[] = [];
  *
  * Kids mode still wins, because it is an age rather than a preference: `minAge` is checked
  * separately and 16 is above the age kids mode claims.
+ *
+ * And kids mode is the Kids topic only (James, 2026-11-13, docs/adr/0021-topics-and-rare.md):
+ * the age alone let 822 of 981 echoes through, ghosts, battles, disasters and scandals among
+ * them. So a kids listener's categories are `KIDS_CATEGORIES` and nothing they have opted
+ * into, by the same hard gate, and the age is still checked as well.
  */
 export const listenerFor = (
   kids: boolean,
   optIns: readonly EchoCategory[] = [],
 ): ListenerProfile => {
+  if (kids) return KIDS_LISTENER;
   const categories = optIns.length
     ? [...new Set([...LISTENER.categories, ...optIns])]
     : LISTENER.categories;
-  return kids
-    ? { ...LISTENER, categories, age: KIDS_AGE }
-    : categories === LISTENER.categories
-      ? LISTENER
-      : { ...LISTENER, categories };
+  return categories === LISTENER.categories ? LISTENER : { ...LISTENER, categories };
 };
 
 export interface JourneyControls {

@@ -83,6 +83,44 @@ export function clusterPoints<T>(
 }
 
 /**
+ * Numbered dots that overlap each other on the glass become one, with the combined number
+ * (James, 2026-11-13, "the usual map clustering"). `clusterPoints` groups by distance to
+ * a centre, and a dot grows with its count, so two groups 45 pixels apart, each a dot of
+ * 22, drew one over the other and hid a number: Philadelphia's 18 over New York's.
+ *
+ * `radiusOf` is the drawn radius for a count. Only groups of two or more merge (a single
+ * pin is not a numbered dot); a merged dot is centred on the mean of all its members, is
+ * bigger, and is checked again, until no two numbered dots overlap. At any zoom, since
+ * the input is wherever the pins landed on screen.
+ */
+export function mergeOverlapping<T>(
+  clusters: readonly PointCluster<T>[],
+  radiusOf: (count: number) => number,
+): PointCluster<T>[] {
+  const out = clusters.map((c) => ({ x: c.x, y: c.y, members: [...c.members] }));
+  for (let merged = true; merged; ) {
+    merged = false;
+    outer: for (let i = 0; i < out.length; i++) {
+      const a = out[i]!;
+      if (a.members.length < 2) continue;
+      for (let j = i + 1; j < out.length; j++) {
+        const b = out[j]!;
+        if (b.members.length < 2) continue;
+        if (Math.hypot(a.x - b.x, a.y - b.y) >= radiusOf(a.members.length) + radiusOf(b.members.length)) continue;
+        const n = a.members.length + b.members.length;
+        a.x = (a.x * a.members.length + b.x * b.members.length) / n;
+        a.y = (a.y * a.members.length + b.y * b.members.length) / n;
+        a.members.push(...b.members);
+        out.splice(j, 1);
+        merged = true;
+        break outer;
+      }
+    }
+  }
+  return out.map((c) => ({ x: c.x, y: c.y, members: c.members }));
+}
+
+/**
  * Where to put the members of a group when it is opened, as offsets from its centre.
  *
  * Concentric rings rather than one circle, because one circle of fifteen at a hittable

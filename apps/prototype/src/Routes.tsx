@@ -19,6 +19,11 @@ interface Props {
   readonly echoOf: (id: string) => Echo | undefined;
   /** Synced or heard already: a stop the walk will skip. */
   readonly isDone: (id: string) => boolean;
+  /**
+   * A stop kids mode would not play (James, 2026-11-13): the walk skips it and the list
+   * shows it greyed, as a stop already heard is. Absent outside kids mode.
+   */
+  readonly isSkipped?: (id: string) => boolean;
   /** Saved echoes, offered while editing a route. */
   readonly saved: readonly Echo[];
   /** Why Start cannot work right now, or null when it can. */
@@ -69,8 +74,15 @@ export function Routes(p: Props) {
       ) : (
         p.routes.map((r) => {
           const stops = r.stops.flatMap((id) => p.echoOf(id) ?? []);
-          const left = stops.filter((e) => !p.isDone(e.id)).length;
-          const time = timing(stops);
+          const skipped = (id: string) => p.isSkipped?.(id) ?? false;
+          // What the walk will go to: not heard, and not skipped by kids mode.
+          const playable = stops.filter((e) => !skipped(e.id));
+          const ahead = playable.filter((e) => !p.isDone(e.id));
+          const left = ahead.length;
+          // The time is the walk's (James, 2026-11-14): only the stops it will go to, not
+          // the ones heard already or skipped by kids mode. A Boston ghost story skipped
+          // in kids mode put "about 1254 hr" on a route to one San Francisco stop.
+          const time = timing(ahead);
           const isEditing = editing === r.id;
           const addable = p.saved.filter((e) => !r.stops.includes(e.id));
           return (
@@ -93,7 +105,7 @@ export function Routes(p: Props) {
                 {stops.length === 0
                   ? "No stops yet"
                   : `${stops.length} ${stops.length === 1 ? "stop" : "stops"}${time ? ` · ${time}` : ""}`}
-                {stops.length > 0 && left < stops.length && (
+                {playable.length > 0 && left < playable.length && (
                   <span className="rt-left"> · {left === 0 ? "all heard" : `${left} to go`}</span>
                 )}
               </p>
@@ -101,7 +113,7 @@ export function Routes(p: Props) {
               {stops.length > 0 && (
                 <ol className="rt-stops">
                   {stops.map((e, i) => (
-                    <li key={e.id} className={p.isDone(e.id) ? "rt-stop done" : "rt-stop"}>
+                    <li key={e.id} className={p.isDone(e.id) || skipped(e.id) ? "rt-stop done" : "rt-stop"}>
                       <span className={`pw-n cat-${e.category}`} aria-hidden="true">
                         {i + 1}
                       </span>
