@@ -322,7 +322,7 @@ describe("what the paywall offers", () => {
         return [plan.sum, ...plan.offers.flatMap((o) => [o.name, o.per, o.what])];
       }),
     ];
-    expect(heardLine(14)).toBe("10 of 10 free echoes heard");
+    expect(heardLine(14)).toBe("10 of 10 complimentary echoes heard");
     expect(smallPrint("allAccess")).toMatch(/Renews each year/);
     for (const w of words) {
       expect(w).not.toMatch(/[–—]|\s-\s/);
@@ -337,8 +337,8 @@ describe("Settings lines", () => {
     const week = membershipOf({ kind: "passes", weekPasses: [{ city: "boston", until: T0 + DAY }] }, T0);
     expect(membershipName(week)).toBe("Boston Week Pass");
     expect(membershipDetail(week, 0, day)).toBe("Every echo in Boston until 2026-11-13.");
-    expect(membershipName(membershipOf(FREE, T0))).toBe("Free");
-    expect(membershipDetail(membershipOf(FREE, T0), 4, day)).toBe("4 of 10 free echoes left. Everything you find and hear stays yours.");
+    expect(membershipName(membershipOf(FREE, T0))).toBe("Complimentary");
+    expect(membershipDetail(membershipOf(FREE, T0), 4, day)).toBe("4 of 10 complimentary echoes left. Everything you find and hear stays yours.");
     expect(membershipName(membershipOf({ kind: "unlocked" }, T0), "owner")).toBe("Owner mode");
     expect(membershipDetail(membershipOf({ kind: "unlocked" }, T0), 0, day, "tester")).toBe("On: every echo unlocked, on this phone.");
   });

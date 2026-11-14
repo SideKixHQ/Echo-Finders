@@ -225,7 +225,7 @@ export function membershipName(membership: Membership, role: AccessRole | null =
   if (role === "tester") return "Tester mode";
   switch (membership.plan) {
     case "free":
-      return "Free";
+      return "Complimentary";
     case "lifetime":
       return "Lifetime unlock";
     case "city-pass":
@@ -247,7 +247,7 @@ export function membershipDetail(
   if (role) return "On: every echo unlocked, on this phone.";
   switch (membership.plan) {
     case "free":
-      return `${freeLeft} of ${FREE_ECHO_LIMIT} free echoes left. Everything you find and hear stays yours.`;
+      return `${freeLeft} of ${FREE_ECHO_LIMIT} complimentary echoes left. Everything you find and hear stays yours.`;
     case "lifetime":
       return "Everything, for good. You bought it before the plans changed, and it stays.";
     case "city-pass": {

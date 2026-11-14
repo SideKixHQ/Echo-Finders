@@ -107,10 +107,10 @@ export function buyLabel(offer: Offer, price: string | null): string {
 
 /** Above the heading: how many of the free echoes have been heard. A fact, not a warning. */
 export function heardLine(heardCount: number): string {
-  return `${Math.min(heardCount, FREE_ECHO_LIMIT)} of ${FREE_ECHO_LIMIT} free echoes heard`;
+  return `${Math.min(heardCount, FREE_ECHO_LIMIT)} of ${FREE_ECHO_LIMIT} complimentary echoes heard`;
 }
 
-export const PAYWALL_HEADING = `That is all ${FREE_ECHO_LIMIT} of your free echoes.`;
+export const PAYWALL_HEADING = `You have heard all ${FREE_ECHO_LIMIT}.`;
 
 /**
  * Under the button, before the money moves. Apple asks that an auto-renewing subscription
