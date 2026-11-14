@@ -13,12 +13,12 @@ describe("suggestions", () => {
     expect(p.contexts.feedback.at).toBeUndefined();
   });
 
-  it("sends a position only when one was added, rounded to about a metre", () => {
+  it("sends a position only when one was added, rounded to about 100 m", () => {
     const p = payload(
       feedbackEnvelope({ kind: "mine", message: "I proposed here.", at: { lat: 34.2359123, lng: -77.9428456, accuracyM: 12.4 }, source: "suggest" }, "abc", "/", at, "1"),
     );
-    expect(p.contexts.feedback.at).toEqual({ lat: 34.23591, lng: -77.94285, accuracyM: 12 });
-    expect(p.contexts.feedback.message).toBe("[It happened to me here] Place: (34.23591, -77.94285). I proposed here.");
+    expect(p.contexts.feedback.at).toEqual({ lat: 34.236, lng: -77.943, accuracyM: 12 });
+    expect(p.contexts.feedback.message).toBe("[It happened to me here] Place: (34.236, -77.943). I proposed here.");
   });
 
   it("leaves ordinary feedback as it was", () => {

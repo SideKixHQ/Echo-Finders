@@ -16,7 +16,8 @@
  * this is a person pressing Send on words they wrote, which is the asking.
  *
  * What goes: what they typed, which kind of feedback it is, the email address if they gave
- * one, the build's commit and the page path. Nothing else: no position, no collection.
+ * one, the build's commit and the page path, and where they were standing only when they
+ * ticked the box to add it, rounded to about 100 m. Nothing else.
  */
 
 import { parseDsn } from "./error-report";
@@ -151,9 +152,13 @@ export async function sendFeedback(
   }
 }
 
-/** Five decimals is about a metre: enough to find the spot, no false precision beyond it. */
+/**
+ * Rounded to about 100 m (James, 2026-11-13, payments and privacy item 17: "rounds the spot
+ * to about 100 m"): three decimals, 111 m north to south and less east to west. Enough to
+ * find the street a suggestion is about, not the doorstep it was sent from.
+ */
 function spot(at: SuggestedSpot): SuggestedSpot {
-  const r = (n: number) => Math.round(n * 1e5) / 1e5;
+  const r = (n: number) => Math.round(n * 1e3) / 1e3;
   return { lat: r(at.lat), lng: r(at.lng), ...(at.accuracyM ? { accuracyM: Math.round(at.accuracyM) } : {}) };
 }
 
