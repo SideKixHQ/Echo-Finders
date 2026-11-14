@@ -234,7 +234,7 @@ export function Paywall({
                 checked={chosen === "city"}
                 onChange={() => setPlan("city")}
               />
-              <span className="paywall-plan-head">
+              <span className={weekRunning ? "paywall-plan-head counted" : "paywall-plan-head"}>
                 <span className="paywall-plan-name">{city.name} {PLANS.city.name}</span>
                 <span className="paywall-plan-price">
                   {cityPrice} <small>{weekRunning ? "your week counted" : PLANS.city.per}</small>
