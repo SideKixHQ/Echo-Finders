@@ -305,11 +305,15 @@ async function pickRoute(p, mode, name) {
   // Starting the drive from its journey screen tells the phone (D6 asks for Always then).
   await p.locator('.jmenu-link', { hasText: 'Journey details' }).click();
   await p.waitForTimeout(500);
-  await p.getByRole('button', { name: /^Start driving/ }).click();
+  // "Find my route" on the drive, or "Start driving" when the screen offers Driving nearby
+  // (no route) because the route is far from here.
+  const go = p.locator('.pf-go');
+  const label = ((await go.textContent()) ?? '').trim();
+  await go.click();
   await p.waitForTimeout(300);
   const started = (await sent(p, 'trip:start')).at(-1);
-  check('Start: Start driving tells the phone a drive began, on its route',
-    started?.kind === 'drive' && started.routeId === 'wilmington-to-southport', JSON.stringify(started));
+  check(`Start: "${label}" tells the phone a drive began`,
+    started?.kind === 'drive' && started.routeId === (label === 'Start driving' ? null : 'wilmington-to-southport'), JSON.stringify(started));
   await pickRoute(p, 'Fly', 'Miami');
   const flight = p.locator('.jmenu-card', { hasText: 'Save this flight' });
   check('Save: a flight offers "Save this flight"',
