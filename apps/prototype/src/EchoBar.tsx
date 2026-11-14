@@ -47,7 +47,7 @@
  * of twenty six. Nearest first, so the next item is always the cheapest one to go and get.
  */
 
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { presetFor, rarityOf, type Echo, type Guidance, type TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, type EchoFace } from "@echofinders/echo";
@@ -187,6 +187,44 @@ export function EchoBar({
       screen?.style.removeProperty("--step-h");
     };
   }, [measuring]);
+  /*
+   * The kicker says what it is worth, its topic and where you are in the ring, in one line.
+   * "EXTRA RARE GHOSTS & LEGENDS 3 OF 30" is about 340px and the line has 181 to 246, so the
+   * topic came out as "G." (James, 2026-11-14). With a rarity on the line, the topic is
+   * shown whole or not at all: measured as it would lay out, and left out when it would not
+   * fit, keeping the rarity and the count. Checked after every render and on a resize.
+   */
+  const kicker = useRef<HTMLSpanElement>(null);
+  const [tight, setTight] = useState(false);
+  const countPad = useRef(0);
+  const [, setWidth] = useState(0);
+  useLayoutEffect(() => {
+    const el = kicker.current;
+    const kind = el?.querySelector<HTMLElement>(".echobar-kind");
+    if (!el || !kind || !el.querySelector("b")) {
+      setTight(false);
+      return;
+    }
+    const gap = parseFloat(getComputedStyle(el).columnGap) || 0;
+    const parts = [...el.children] as HTMLElement[];
+    // Each part at its natural width as the full line lays it out: the topic's whole name,
+    // and the count with the lead-in it has there (it drops it when the topic is out).
+    const width = (part: HTMLElement) => {
+      if (part === kind) return kind.scrollWidth;
+      const w = part.getBoundingClientRect().width;
+      if (part.tagName !== "EM") return w;
+      const pad = parseFloat(getComputedStyle(part).paddingLeft) || 0;
+      if (!el.classList.contains("echobar-kicker-tight")) countPad.current = pad;
+      return w - pad + countPad.current;
+    };
+    const need = parts.reduce((sum, part) => sum + width(part), 0) + gap * (parts.length - 1);
+    setTight(need > el.clientWidth + 0.5);
+  });
+  useLayoutEffect(() => {
+    const resized = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", resized);
+    return () => window.removeEventListener("resize", resized);
+  }, []);
   if (!current) return null;
 
   const { echo, distanceKm } = current;
@@ -318,10 +356,10 @@ export function EchoBar({
             aria-label={isLoaded ? `Open the player: ${echo.title}` : `Open: ${echo.title}`}
           >
             {!directions && (
-            <span className="echobar-kicker mono">
+            <span ref={kicker} className={`echobar-kicker mono${rarity && tight ? " echobar-kicker-tight" : ""}`}>
               <span className="echobar-dot" />
               {rarity && <b>{rarity}</b>}
-              <span>{CATEGORY_LABEL[echo.category]}</span>
+              <span className="echobar-kind">{CATEGORY_LABEL[echo.category]}</span>
               {/*
                 Where you are in the ring, said as a fact rather than as a progress bar. A
                 bar would imply an order worth finishing; this is a ring of places and you

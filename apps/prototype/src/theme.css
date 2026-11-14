@@ -4128,6 +4128,14 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* "RARE" is four letters and the point of the line; the kind gives way first. */
 .echobar-kicker > b { flex: none; }
 /*
+ * With a rarity on the line, the kind is whole or left out (James, 2026-11-14): "EXTRA RARE
+ * G." said nothing. Left out, it is taken out of the row but still laid out, so EchoBar can
+ * measure whether it would fit again. The count then sits one gap from the rarity rather
+ * than a gap and its own 8px, which is what keeps "EXTRA RARE 1 OF 117" whole at 375.
+ */
+.echobar-kicker-tight > .echobar-kind { position: absolute; visibility: hidden; pointer-events: none; }
+.echobar-kicker-tight > em { padding-left: 0; }
+/*
  * ONE LINE, then an ellipsis, and that is the point rather than a saving. A title that
  * wraps changes the height of the card every time an arrow is pressed, and a control that
  * moves under your thumb between presses is the one thing this exists to fix. The whole

@@ -19,6 +19,7 @@
  *   XR  Extra rare pins are magenta and 1.15x (option D); Rare stays ember
  *   TAG the labels under Rare and Extra rare pins never print over each other
  *   XRB the echo bar's creature is magenta for an Extra rare echo
+ *   KICK the echo bar's kicker: the topic whole or left out, the count never clipped
  */
 
 import { chromium } from 'playwright';
@@ -374,6 +375,61 @@ if (runs('XRB')) {
     await p.waitForTimeout(300);
     m = await look();
     check(`XRB ${theme}: and ember again on the next echo`, !/extra rare/i.test(m.kicker) && m.glow !== m.magenta, JSON.stringify(m));
+    await ctx.close();
+  }
+}
+
+// KICK. The echo bar's kicker: with a rarity, the topic whole or left out, and the count never
+//       clipped (375, 390, 440; every echo in the Savannah ring, then the Rare topic).
+if (runs('KICK')) {
+  for (const width of [375, 390, 440]) {
+    const { ctx, p } = await phone({ latitude: 32.0733, longitude: -81.0897 }, { width });
+    await standAt(p, '32.0733,-81.0897');
+    const read = () => p.locator('.echobar-kicker').evaluate((k) => {
+      const box = k.getBoundingClientRect();
+      const kind = k.querySelector('.echobar-kind');
+      const count = k.querySelector('em');
+      const rarity = k.querySelector('b');
+      const shown = kind && getComputedStyle(kind).visibility !== 'hidden';
+      const gap = parseFloat(getComputedStyle(k).columnGap) || 0;
+      const dot = k.querySelector('.echobar-dot');
+      // Whether the rarity and the count can both be whole on this line at all, with the
+      // topic left out. Where they cannot, it is a question for James, not a clip to fix.
+      const textW = (el) => { const r = document.createRange(); r.selectNodeContents(el); return r.getBoundingClientRect().width; };
+      const room = !rarity || !count ||
+        dot.getBoundingClientRect().width + gap + rarity.getBoundingClientRect().width + gap + textW(count) <= box.width + 0.5;
+      return {
+        room,
+        text: k.innerText.replace(/\n/g, ' '),
+        rarity: rarity?.textContent ?? '',
+        rarityWhole: !rarity || (rarity.scrollWidth <= rarity.clientWidth && rarity.getBoundingClientRect().right <= box.right + 0.5),
+        kindOk: !rarity || !shown || kind.scrollWidth <= kind.clientWidth,
+        countWhole: !count || (count.scrollWidth <= count.clientWidth + 0.5 && count.getBoundingClientRect().right <= box.right + 0.5),
+      };
+    });
+    for (const view of ['all', 'rare']) {
+      if (view === 'rare') {
+        await p.locator('.kind-tap').click();
+        await p.locator('.chip.cat-rare').click();
+        await p.keyboard.press('Escape');
+        if (await p.locator('.kind-box').count()) await p.locator('.menu-scrim').click({ force: true }).catch(() => {});
+        await p.waitForTimeout(2500);
+      }
+      const bad = [];
+      const noRoom = new Set();
+      let extra = false;
+      for (let i = 0; i < 30; i++) {
+        const m = await read();
+        if (/extra rare/i.test(m.rarity)) extra = true;
+        if (!m.room) noRoom.add(m.text);
+        else if (!m.rarityWhole || !m.kindOk || !m.countWhole) bad.push(m.text);
+        await p.locator('.echobar').getByRole('button', { name: /Next/i }).first().click();
+        await p.waitForTimeout(120);
+      }
+      check(`KICK ${width}, ${view}: an Extra rare echo was on the bar`, extra);
+      check(`KICK ${width}, ${view}: rarity and count whole, topic whole or left out`, bad.length === 0, [...new Set(bad)].join(' | '));
+      if (noRoom.size) console.log(`note  KICK ${width}, ${view}: rarity and count cannot both fit this line: ${[...noRoom].join(' | ')}`);
+    }
     await ctx.close();
   }
 }
