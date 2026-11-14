@@ -14,6 +14,7 @@
 import { useEffect, useReducer } from "react";
 import { AccessibilityInfo, AppState, Modal, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { StatusBar } from "expo-status-bar";
 import * as Location from "expo-location";
 import { useNarrator } from "../player";
 import { PrimaryButton, SmallCaps } from "../packs/ui";
@@ -110,6 +111,8 @@ export function DriveLock() {
   return (
     <Modal visible={locked} animationType="fade" presentationStyle="overFullScreen" transparent onRequestClose={() => undefined}>
       <SafeAreaView style={styles.screen} accessibilityViewIsModal>
+        {/* Navy in both themes, so light text whatever the page's theme (item 7). */}
+        {locked ? <StatusBar style="light" /> : null}
         <View style={styles.body}>
           <SmallCaps>{DRIVE_LOCK_COPY.caps}</SmallCaps>
           <Text style={styles.title} accessibilityRole="header">

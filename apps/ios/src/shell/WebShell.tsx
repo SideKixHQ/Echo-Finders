@@ -51,6 +51,8 @@ import {
   navigationFor,
   offerFor,
   parseWebMessage,
+  statusBarStyleFor,
+  themeScript,
   type PhoneFix,
 } from "./logic";
 
@@ -77,6 +79,8 @@ export default function WebShell() {
   const [generation, setGeneration] = useState(0);
   const reload = useCallback(() => setGeneration((g) => g + 1), []);
   const failed = useRef(false);
+  // The page's theme, for the status bar's text (overnight item 7). Dark until it says.
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
 
   // The page's state, as the phone sees it.
   const ready = useRef(false);
@@ -242,6 +246,9 @@ export default function WebShell() {
           } else if (message.changed) w.start();
           else w.resume();
           return;
+        case "theme":
+          setTheme(message.theme);
+          return;
         case "pocket": {
           const { type: _type, ...handed } = message;
           plan.current = handed;
@@ -345,7 +352,7 @@ export default function WebShell() {
 
   return (
     <View style={styles.screen}>
-      <StatusBar style="light" />
+      <StatusBar style={statusBarStyleFor(theme)} />
       <WebView<object>
         ref={web}
         key={generation}
@@ -354,6 +361,8 @@ export default function WebShell() {
         containerStyle={styles.web}
         // The page knows it is in the app before its own scripts run.
         injectedJavaScriptBeforeContentLoaded={markerScript()}
+        // Once it has loaded: its theme, for the status bar.
+        injectedJavaScript={themeScript()}
         onMessage={onMessage}
         // Edge to edge: the page applies the safe area insets itself.
         contentInsetAdjustmentBehavior="never"

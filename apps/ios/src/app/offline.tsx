@@ -6,6 +6,7 @@
 import { useMemo, useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Switch, Text, View } from "react-native";
 import { useRouter } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 import { Screen } from "../ui";
 import { color, font, gutter, size } from "../theme";
 import { usePacks } from "../packs/PacksProvider";
@@ -46,6 +47,8 @@ export default function OfflineEchoes() {
 
   return (
     <Screen>
+      {/* Navy in both themes, so light text whatever the page's theme (item 7). */}
+      <StatusBar style="light" />
       <ScrollView contentContainerStyle={styles.body}>
         <Pressable
           onPress={() => (router.canGoBack() ? router.back() : router.replace("/"))}

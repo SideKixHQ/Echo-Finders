@@ -80,6 +80,25 @@ export function deliverScript(message: NativeToWeb): string {
   return `(function(){var r=window[${JSON.stringify(RECEIVER)}];if(r)r.receive(${json});})();true;`;
 }
 
+/**
+ * Run once the page has loaded: tell the phone the page's theme now and whenever it
+ * changes, so the status bar's text follows it (dark text on the light theme). The page
+ * marks its theme on its root (`document.documentElement.dataset.theme`, `App.tsx`).
+ */
+export function themeScript(): string {
+  return (
+    "(function(){var root=document.documentElement,last=null;" +
+    "function send(){var t=root.getAttribute('data-theme')==='light'?'light':'dark';if(t===last)return;last=t;" +
+    "var b=window.ReactNativeWebView;if(b)b.postMessage(JSON.stringify({type:'theme',theme:t}));}" +
+    "send();new MutationObserver(send).observe(root,{attributes:true,attributeFilter:['data-theme']});})();true;"
+  );
+}
+
+/** expo-status-bar's style for the page's theme: dark text on the light page, light on the dark. */
+export function statusBarStyleFor(theme: "dark" | "light"): "dark" | "light" {
+  return theme === "light" ? "dark" : "light";
+}
+
 const WEB_TYPES = new Set<WebToNative["type"]>([
   "hello",
   "audio:play",
@@ -96,6 +115,7 @@ const WEB_TYPES = new Set<WebToNative["type"]>([
   "purchase:restore",
   "handsfree",
   "pocket",
+  "theme",
 ]);
 
 const finite = (n: unknown): n is number => typeof n === "number" && Number.isFinite(n);
@@ -147,6 +167,8 @@ export function parseWebMessage(data: string): WebToNative | null {
         : null;
     case "handsfree":
       return typeof r["on"] === "boolean" && typeof r["changed"] === "boolean" ? (r as unknown as WebToNative) : null;
+    case "theme":
+      return r["theme"] === "dark" || r["theme"] === "light" ? (r as unknown as WebToNative) : null;
     case "pocket": {
       const ids = (v: unknown) => Array.isArray(v) && v.every(text);
       const reqs = (v: unknown) => Array.isArray(v) && v.every((x) => !!x && typeof x === "object" && isPlayRequest(x as Record<string, unknown>));

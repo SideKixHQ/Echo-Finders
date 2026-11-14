@@ -118,7 +118,17 @@ export type WebToNative =
   /** Settings › Offline echoes (D9, mock 3, approved 2026-11-13): open the phone's own screen. */
   | { readonly type: "offline:open" }
   /** Settings › Hands-free's "Open iPhone Settings": Echo Finders' page in iPhone Settings. */
-  | { readonly type: "settings:open" };
+  | { readonly type: "settings:open" }
+  /**
+   * The page's theme, so the phone's status bar text can be read on it (overnight item 7).
+   * Sent by the app's own script, injected into the page (`themeScript` in the iPhone app's
+   * `shell/logic.ts`), which watches `data-theme` on the page's root; the page itself sends
+   * nothing.
+   */
+  | { readonly type: "theme"; readonly theme: PageTheme };
+
+/** The page's light or dark scheme (`data-theme` on its root). */
+export type PageTheme = "dark" | "light";
 
 /**
  * Location for Echo Finders, as iPhone Settings has it: off, only while the app is in use,
