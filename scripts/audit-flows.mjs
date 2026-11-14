@@ -41,12 +41,24 @@ const check = (name, ok, detail = '') => {
   if (!ok) failures.push(name);
 };
 
-async function freshApp(geolocation = START) {
+/** The usage counts note, put away before the app starts: see `freshApp`. */
+const noUsageNote = (ctx) => ctx.addInitScript(() => { try { localStorage.setItem('echo-finders:usage-note', '1'); } catch {} });
+
+async function freshApp(geolocation = START, { usageNote = false } = {}) {
   const ctx = await browser.newContext({ colorScheme: "dark",
     viewport: { width: 390, height: 664 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true,
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation,
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  /*
+   * The usage counts note ("We count visits, not you") is put away before the app starts,
+   * except where it is the thing being checked. It arrives on the map a few seconds after
+   * the first run, drawn as a near toast (`.toast-near`), and every other journey here
+   * would meet it: it held the dock where the nearby toast's checks look, and lay over the
+   * map where a town dot is tapped. Its own checks pass `{ usageNote: true }`; the journeys
+   * that open their own context put it away with `noUsageNote` for the same reason.
+   */
+  if (!usageNote) await noUsageNote(ctx);
   // The lock screen's buttons, recorded as the app registers them, so they can be pressed.
   await ctx.addInitScript(() => {
     window.__lock = {};
@@ -578,6 +590,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
     ignoreHTTPSErrors: true, permissions: [],
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  await noUsageNote(ctx);
   const p = await ctx.newPage();
   p.setDefaultTimeout(6000);
   p.on('pageerror', (e) => errors.push(e.message));
@@ -639,6 +652,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
       ignoreHTTPSErrors: true, ...(geo ? { permissions: ['geolocation'], geolocation: START } : { permissions: [] }),
     });
     await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+    await noUsageNote(ctx);
     const p = await ctx.newPage();
     p.setDefaultTimeout(6000);
     p.on('pageerror', (e) => errors.push(e.message));
@@ -694,6 +708,7 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
     ignoreHTTPSErrors: true, permissions: [],
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  await noUsageNote(ctx);
   const p = await ctx.newPage();
   p.setDefaultTimeout(6000);
   p.on('pageerror', (e) => errors.push(e.message));
@@ -1700,6 +1715,7 @@ async function arrive() {
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: START,
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  await noUsageNote(ctx);
   const p = await ctx.newPage();
   p.setDefaultTimeout(6000);
   p.on('pageerror', (e) => errors.push(e.message));
@@ -1798,6 +1814,7 @@ async function nearby() {
     ignoreHTTPSErrors: true, permissions: ['geolocation'], geolocation: ST_JAMES,
   });
   await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  await noUsageNote(ctx);
   const p = await ctx.newPage();
   p.setDefaultTimeout(6000);
   const loops = [];
@@ -1849,6 +1866,145 @@ async function nearby() {
   await bar.getByRole('button', { name: 'End directions' }).click().catch(() => {});
   await p.waitForTimeout(600);
   check('Guided walk: ✕ puts the directions away', !(await visible(p.locator('.echobar-dir, .dir-turn'))));
+  await ctx.close();
+}
+
+// ── Settings: Delete everything asks first ──────────────────────────────────────
+// One tap cleared every synced echo (James, 2026-11-13). Now it asks, Keep leaves the
+// collection as it was, and only Delete deletes. One synced echo is put in storage first.
+{
+  const { ctx, p } = await freshApp();
+  await p.evaluate(async () => {
+    const db = await new Promise((res, rej) => { const o = indexedDB.open('echo-finders', 1); o.onsuccess = () => res(o.result); o.onerror = rej; });
+    await new Promise((res) => {
+      const t = db.transaction('collection', 'readwrite');
+      t.objectStore('collection').put({ key: 'roam', records: [{ echoId: 'african-burial-ground', capturedAt: new Date().toISOString() }] });
+      t.oncomplete = res;
+    });
+  });
+  await p.reload();
+  await p.waitForTimeout(2500);
+  await p.locator('.how-go').click({ timeout: 1500 }).catch(() => {});
+  await p.locator('.nav').getByRole('button', { name: /Settings/ }).click();
+  await p.waitForTimeout(500);
+  const row = p.locator('.danger-row', { hasText: 'Delete everything' });
+  const says = async () => (await row.innerText().catch(() => '')).replace(/\s+/g, ' ');
+  check('Delete everything: counts the synced echo', /Removes all 1 synced echo/.test(await says()), await says());
+  await row.click().catch(() => {});
+  await p.waitForTimeout(400);
+  const ask = p.getByRole('group', { name: 'Delete everything' });
+  check('Delete everything: one tap asks first', await visible(ask));
+  await ask.getByRole('button', { name: 'Keep', exact: true }).click().catch(() => {});
+  await p.waitForTimeout(400);
+  check('Delete everything: Keep deletes nothing', !(await visible(ask)) && /Removes all 1 synced echo/.test(await says()), await says());
+  await row.click().catch(() => {});
+  await p.waitForTimeout(300);
+  await ask.getByRole('button', { name: 'Delete', exact: true }).click().catch(() => {});
+  await p.waitForTimeout(500);
+  check('Delete everything: Delete deletes', /Removes everything this phone keeps/.test(await says()), await says());
+  await ctx.close();
+}
+
+// ── A computer: the whole phone frame on the screen ─────────────────────────────
+// On a laptop the frame was a fixed 844px plus the page's 24px margins, so in any window
+// shorter than 892px (a 1440x900 screen less the browser's own bars) the tab bar was
+// below the bottom edge (James, 2026-11-13). The frame now fits the window's height; on
+// a tall enough window it is the 390x844 phone it always was.
+for (const size of [{ width: 1440, height: 789 }, { width: 1366, height: 657 }, { width: 1440, height: 900 }]) {
+  const ctx = await browser.newContext({ colorScheme: 'dark', viewport: size, deviceScaleFactor: 1,
+    permissions: ['geolocation'], geolocation: START });
+  await ctx.route('**://server.arcgisonline.com/**', (r) => r.fulfill({ status: 204, body: '' }));
+  const p = await ctx.newPage();
+  p.on('pageerror', (e) => errors.push(e.message));
+  await p.goto(`http://127.0.0.1:${PORT}/`, { waitUntil: 'domcontentloaded' });
+  await p.waitForTimeout(800);
+  await p.getByRole('button', { name: 'Find echoes near me' }).click();
+  await p.locator('.onb').waitFor({ state: 'detached', timeout: 20000 });
+  await p.locator('.how-go').click({ timeout: 3000 }).catch(() => {});
+  await p.waitForTimeout(1500);
+  const m = await p.evaluate(() => {
+    const box = (s) => document.querySelector(s)?.getBoundingClientRect();
+    const phone = box('.phone'), nav = box('.nav');
+    return { vh: innerHeight, phoneTop: phone?.top, phoneBottom: phone?.bottom, phoneW: phone?.width, phoneH: phone?.height, navBottom: nav?.bottom, navH: nav?.height };
+  });
+  const at = `${size.width}x${size.height}`;
+  check(`Computer ${at}: the tab bar is on the screen`, m.navBottom !== undefined && m.navBottom <= m.vh && m.navH > 0, JSON.stringify(m));
+  check(`Computer ${at}: the whole phone frame is on the screen`, m.phoneTop >= 0 && m.phoneBottom <= m.vh, JSON.stringify(m));
+  if (size.height >= 892) check(`Computer ${at}: the frame is the 390x844 phone`, m.phoneW === 390 && m.phoneH === 844, JSON.stringify(m));
+  await ctx.close();
+}
+
+// ── The usage counts note: once, on the map, after the first run ────────────────
+// "We count visits, not you" (approved 2026-11-13, option A). Not over the first run or
+// How echoes unlock; OK and Settings each put it away for good; Settings opens Settings
+// at the switch; not at all when usage counts are off.
+{
+  const { ctx, p } = await freshApp(START, { usageNote: true });
+  const note = p.locator('.toast-usage');
+  await note.waitFor({ state: 'visible', timeout: 15000 }).catch(() => {});
+  check('Usage note: shows on the map after the first run', await visible(note));
+  check('Usage note: in the toast dock, one toast at a time',
+    (await p.locator('.toast-dock[role="status"] .toast-usage').count()) === 1 && (await p.locator('.toast-dock .toast').count()) === 1);
+  check('Usage note: the approved words',
+    (await note.locator('b').innerText().catch(() => '')) === 'We count visits, not you'
+    && (await note.locator('.toast-words span').innerText().catch(() => '')) === 'Anonymous usage counts help us improve Echo Finders. Turn them off any time in Settings.');
+  const small = await note.locator('button').evaluateAll((els) => els.filter((e) => e.getBoundingClientRect().height < 44).length);
+  check('Usage note: OK and Settings are 44px targets', small === 0);
+  // The ✕ every toast has, and the two buttons apart rather than touching (James, 2026-11-14).
+  const xb = await note.locator('.toast-close').boundingBox().catch(() => null);
+  check('Usage note: has the ✕, a 44px target', xb !== null && xb.width >= 44 && xb.height >= 44, JSON.stringify(xb));
+  const gap = await note.locator('.toast-row button').evaluateAll((b) => b.length === 2
+    ? b[1].getBoundingClientRect().left - b[0].getBoundingClientRect().right : -1);
+  check('Usage note: OK and Settings stand apart', gap >= 8, String(gap));
+  await note.getByRole('button', { name: 'Settings', exact: true }).click().catch(() => {});
+  await p.waitForTimeout(800);
+  check('Usage note: Settings opens Settings', (await currentTab(p)).includes('Settings'));
+  const sw = await p.locator('[role="switch"][data-setting="analytics"]').boundingBox().catch(() => null);
+  const vh = await p.evaluate(() => innerHeight);
+  check('Usage note: at the usage counts switch', sw !== null && sw.y >= 0 && sw.y + sw.height <= vh, JSON.stringify(sw));
+  await p.locator('.nav').getByRole('button', { name: /Map/ }).click();
+  await p.waitForTimeout(600);
+  check('Usage note: Settings put it away', !(await visible(note)));
+  await p.reload();
+  await p.waitForTimeout(12000);
+  check('Usage note: and it stays away', (await note.count()) === 0);
+  await ctx.close();
+}
+{
+  const { ctx, p } = await freshApp(START, { usageNote: true });
+  const note = p.locator('.toast-usage');
+  await note.waitFor({ state: 'visible', timeout: 15000 }).catch(() => {});
+  await note.getByRole('button', { name: 'OK', exact: true }).click().catch(() => {});
+  await p.waitForTimeout(600);
+  check('Usage note: OK puts it away', (await note.count()) === 0);
+  await p.reload();
+  await p.waitForTimeout(12000);
+  check('Usage note: OK is for good', (await note.count()) === 0);
+  await ctx.close();
+}
+{
+  const { ctx, p } = await freshApp(START, { usageNote: true });
+  const note = p.locator('.toast-usage');
+  await note.waitFor({ state: 'visible', timeout: 15000 }).catch(() => {});
+  await note.locator('.toast-close').click().catch(() => {});
+  await p.waitForTimeout(600);
+  check('Usage note: ✕ puts it away', (await note.count()) === 0);
+  await p.reload();
+  await p.waitForTimeout(12000);
+  check('Usage note: ✕ is for good, like OK', (await note.count()) === 0);
+  await ctx.close();
+}
+{
+  const { ctx, p } = await freshApp(START, { usageNote: true });
+  // Usage counts off before the note arrives: it never comes.
+  await p.evaluate(() => {
+    const k = 'echo-finders:settings';
+    const v = JSON.parse(localStorage.getItem(k) ?? '{}');
+    localStorage.setItem(k, JSON.stringify({ ...v, privacy: { ...(v.privacy ?? {}), analytics: false } }));
+  });
+  await p.reload();
+  await p.waitForTimeout(12000);
+  check('Usage note: not when usage counts are off', (await p.locator('.toast-usage').count()) === 0);
   await ctx.close();
 }
 

@@ -15,7 +15,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Echo } from "@echofinders/core";
-import { splitScript } from "./transcript-lines";
+import { readAlongChips, splitScript } from "./transcript-lines";
 
 export interface TranscriptProps {
   readonly echo: Echo;
@@ -29,6 +29,7 @@ export function Transcript({ echo, simple, progress, onSeek }: TranscriptProps) 
   const [query, setQuery] = useState("");
   const script = (simple ? echo.simple?.script : echo.script) ?? echo.script ?? "";
   const lines = useMemo(() => splitScript(script), [script]);
+  const chips = useMemo(() => readAlongChips(echo.tags, lines), [echo.tags, lines]);
 
   const current = lines.findIndex((l) => progress >= l.from && progress < l.to);
 
@@ -79,21 +80,19 @@ export function Transcript({ echo, simple, progress, onSeek }: TranscriptProps) 
         />
       </label>
 
-      {echo.tags && echo.tags.length > 0 && (
+      {/* Searched as it reads: the slug ("independence-hall") is in no line of any script.
+          Only the chips that find a line (`readAlongChips`). */}
+      {chips.length > 0 && (
         <div className="tkeys">
-          {echo.tags.slice(0, 4).map((tag) => {
-            // Searched as it reads: the slug ("independence-hall") is in no line of any script.
-            const words = tag.replace(/-/g, " ");
-            return (
-              <button
-                key={tag}
-                className={query === words ? "tkey on" : "tkey"}
-                onClick={() => setQuery(query === words ? "" : words)}
-              >
-                {words}
-              </button>
-            );
-          })}
+          {chips.map((words) => (
+            <button
+              key={words}
+              className={query === words ? "tkey on" : "tkey"}
+              onClick={() => setQuery(query === words ? "" : words)}
+            >
+              {words}
+            </button>
+          ))}
         </div>
       )}
 

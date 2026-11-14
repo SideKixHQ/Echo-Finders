@@ -61,3 +61,21 @@ export function stepLine(lines: readonly Line[], progress: number, delta: -1 | 1
   if (progress > line.from + NUDGE) return line.from;
   return lines[index - 1]?.from ?? 0;
 }
+
+/**
+ * The read along chips worth showing: up to four of the echo's tags, as they read ("new
+ * york", not the slug "new-york"), and only those whose words are in a line of the script.
+ * A later tag that matches takes the place of an earlier one that does not (James,
+ * 2026-11-14).
+ *
+ * A chip is a search, and the search matches line by line, so a tag that is in no line
+ * found nothing: "Nothing in this echo matches" under a word the app had offered (James,
+ * 2026-11-13). Matched exactly as the search matches, so every chip shown finds a line.
+ */
+export function readAlongChips(tags: readonly string[] | undefined, lines: readonly Line[]): readonly string[] {
+  if (!tags) return [];
+  return tags
+    .map((tag) => tag.replace(/-/g, " "))
+    .filter((words) => lines.some((l) => l.text.toLowerCase().includes(words.trim().toLowerCase())))
+    .slice(0, 4);
+}

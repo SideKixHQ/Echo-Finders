@@ -124,6 +124,8 @@ export function unlockLine(echo: Echo, mode: TravelMode): string {
 const NEAR_KEY = "echo-finders:near-toasts";
 export const LOCKED_KEY = "echo-finders:locked-toast";
 export const HOW_KEY = "echo-finders:how-echoes-unlock";
+/** The one time note that usage counts are on ("We count visits, not you"), dismissed. */
+export const USAGE_NOTE_KEY = "echo-finders:usage-note";
 
 export function readNearMemory(): NearMemory {
   try {
@@ -147,7 +149,7 @@ export function writeNearMemory(memory: NearMemory): void {
 }
 
 /** A flag that is true once set, in this browser. Fails as "not yet". */
-export function readFlag(key: typeof LOCKED_KEY | typeof HOW_KEY): boolean {
+export function readFlag(key: typeof LOCKED_KEY | typeof HOW_KEY | typeof USAGE_NOTE_KEY): boolean {
   try {
     return localStorage.getItem(key) === "1";
   } catch {
@@ -155,10 +157,24 @@ export function readFlag(key: typeof LOCKED_KEY | typeof HOW_KEY): boolean {
   }
 }
 
-export function setFlag(key: typeof LOCKED_KEY | typeof HOW_KEY): void {
+export function setFlag(key: typeof LOCKED_KEY | typeof HOW_KEY | typeof USAGE_NOTE_KEY): void {
   try {
     localStorage.setItem(key, "1");
   } catch {
     /* As above. */
   }
+}
+
+/**
+ * Whether the usage counts note shows now: once, on the map, after the first run and "How
+ * echoes unlock" are done, and only while usage counts are on. Below every other toast in
+ * the dock, so it waits for them.
+ */
+export function showUsageNote(o: {
+  readonly firstRunDone: boolean;
+  readonly onMap: boolean;
+  readonly analyticsOn: boolean;
+  readonly dismissed: boolean;
+}): boolean {
+  return o.firstRunDone && o.onMap && o.analyticsOn && !o.dismissed;
 }

@@ -366,7 +366,14 @@ body {
 
 /* ── device ──────────────────────────────────────────────── */
 .phone {
-  width: 390px; height: 844px; flex: none;
+  /*
+     The 390x844 phone, as tall as the window allows. A fixed 844px plus the page's 24px
+     margins needs a 892px window, and a laptop's is shorter once the browser has its bars
+     (a 1440x900 screen leaves about 790), so the tab bar sat below the bottom of the
+     screen (James, 2026-11-13). Phones never see this: the frame there is the screen
+     (the max-width 680px / coarse pointer rule below).
+  */
+  width: 390px; height: min(844px, calc(100dvh - 48px)); flex: none;
   border-radius: 52px; background: #000; padding: 11px;
   box-shadow: 0 0 0 2px #23262e, 0 40px 90px rgba(var(--rgb-shadow), calc(0.7 * var(--shadow-k)));
 }
@@ -1523,6 +1530,8 @@ body {
 .danger-row:last-child { border-bottom: 0; }
 .danger-row span { font-size: var(--fs-button); color: var(--magenta-ink); }
 .danger-row small { font-size: var(--fs-secondary); color: var(--muted); line-height: 1.5; }
+/* Delete everything, asked first: the Membership ask, as one row of this list. */
+.panel-danger .danger-confirm { border-top: 0; padding: 9px 0 12px; border-bottom: 1px solid var(--line); }
 /* `?at=`: a test position, said plainly so nobody mistakes it for GPS (test-position.ts). */
 /* One line across the very top, and the top bar moved down below it: it used to sit over
    the journey chip and the filter, so a tap on either went to the banner and nothing
@@ -2915,6 +2924,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .toast-saved { --toast-edge: var(--ember); }
 .toast-mark { width: 28px; height: 28px; flex: none; display: grid; place-items: center; }
 .toast-mark svg { width: 24px; height: 24px; fill: var(--ember); stroke: none; }
+/* "Link copied" carries the Share button's own mark, which is drawn in strokes, not filled. */
+.toast-copied .toast-mark svg { fill: none; stroke: var(--ember); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .toast-saved .toast-close { align-self: center; }
 .toast-saved .toast-words span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
@@ -2975,6 +2986,9 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* The button row: its own line, lined up with the words. */
 .toast-row { flex-basis: 100%; display: flex; padding-left: 52px; padding-bottom: 4px; }
 .toast-locked .toast-row { padding-left: 40px; }
+/* The usage note's OK and Settings, apart: the 8px the app's other pair of buttons keeps
+   (Membership's Keep and Cancel renewal). */
+.toast-usage .toast-row { gap: 8px; }
 .toast-act {
   min-height: 44px; padding: 0 16px; border: 0; border-radius: 999px; cursor: pointer;
   font: inherit; font-size: var(--fs-button); font-weight: 600;

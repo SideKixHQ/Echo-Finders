@@ -179,6 +179,61 @@ export function SavedToast({
   );
 }
 
+/**
+ * "Link copied": Share on a computer, where there is no share sheet and the link goes to
+ * the clipboard (`share.ts`). It copied silently, which looked like Share doing nothing.
+ * The Saved toast's shape and colours, one line, and it slides away by itself.
+ */
+export function CopiedToast({ showMs, onClose }: { readonly showMs: number; readonly onClose: () => void }) {
+  const [leaving, leave] = useLeave(onClose);
+  useEffect(() => {
+    const t = setTimeout(leave, showMs);
+    return () => clearTimeout(t);
+  }, [leave, showMs]);
+  return (
+    <Shell kind="saved toast-copied" leaving={leaving}>
+      <span className="toast-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 15V3M8.5 6.5L12 3l3.5 3.5" />
+          <path d="M7 10H5v11h14V10h-2" />
+        </svg>
+      </span>
+      <span className="toast-words">
+        <b>Link copied</b>
+      </span>
+      <Close onClick={leave} />
+    </Shell>
+  );
+}
+
+/**
+ * The usage counts note, once (approved 2026-11-13, option A): the near toast's shape,
+ * an orb, the words, and OK and Settings on their own row, with the ✕ every toast has
+ * (James, 2026-11-14), which counts as OK. Each of the three dismisses it for good;
+ * Settings also opens Settings at the switch.
+ */
+export function UsageNoteToast({ onOk, onSettings }: { readonly onOk: () => void; readonly onSettings: () => void }) {
+  const [leaving, leave] = useLeave(onOk);
+  return (
+    <Shell kind="near toast-usage" leaving={leaving}>
+      <span className="toast-orb" aria-hidden="true" />
+      <span className="toast-words">
+        <b>We count visits, not you</b>
+        <span>Anonymous usage counts help us improve Echo Finders. Turn them off any time in Settings.</span>
+      </span>
+      <Close onClick={leave} />
+      <span className="toast-row">
+        <button className="toast-act toast-act-go" onClick={leave}>
+          OK
+        </button>
+        <button className="toast-act" onClick={onSettings}>
+          Settings
+        </button>
+      </span>
+    </Shell>
+  );
+}
+
 /** C: the first tap on a locked echo, once ever. */
 export function LockedToast({ line, onClose }: { readonly line: string; readonly onClose: () => void }) {
   const [leaving, leave] = useLeave(onClose);

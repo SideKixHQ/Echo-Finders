@@ -25,6 +25,7 @@ import { buildEchoJourney, distanceKm, type Echo, type LatLng, type Route } from
 import { MODE_ICON } from "./travel";
 import { AIRPORTS, searchAirports, type Airport } from "./airports";
 import { buildFlight } from "./build-flight";
+import { preflightGoLabel } from "./preflight-go";
 
 export interface PreflightProps {
   readonly routes: readonly Route[];
@@ -413,13 +414,7 @@ export function Preflight({
         )}
 
         <button className="pf-go" onClick={() => onStart(picked)} disabled={awaitingPair}>
-          {roaming
-            ? travel === "driving"
-              ? "Start driving"
-              : "Start looking"
-            : returning && !choosing
-              ? "Carry on"
-              : "Find my route"}
+          {preflightGoLabel({ roaming, travel, returning, choosing })}
         </button>
 
         {/* Offered rather than imposed. A returning listener usually wants the journey they
