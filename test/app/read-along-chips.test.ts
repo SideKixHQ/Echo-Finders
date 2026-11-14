@@ -8,6 +8,12 @@ describe("read along chips", () => {
     expect(readAlongChips(["new-york", "immigration", "fort"], lines)).toEqual(["new york", "fort"]);
   });
 
+  it("a later tag that matches fills a slot a dead one left, up to four", () => {
+    const lines = splitScript("A fort in New York, a garden, a ferry and a museum.");
+    expect(readAlongChips(["immigration", "new-york", "forts", "nineteenth-century", "garden", "ferry", "museum"], lines))
+      .toEqual(["new york", "garden", "ferry", "museum"]);
+  });
+
   it("no tags, no chips", () => {
     expect(readAlongChips(undefined, splitScript("Anything."))).toEqual([]);
   });
