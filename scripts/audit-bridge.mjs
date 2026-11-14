@@ -302,8 +302,14 @@ async function pickRoute(p, mode, name) {
       && (await card.getAttribute('class')).includes('on') && (await card.locator('.jmenu-tick').count()) === 1);
   check('Save: the route\'s row ends in "· saved"', /· 25 echoes · saved$/.test((await p.locator('.jmenu-item', { hasText: 'Wilmington to Southport' }).innerText()).replace(/\s+/g, ' ').trim()));
   if (SHOTS) await p.screenshot({ path: `${SHOTS}/bridge-trip-saved.png` });
-  await p.keyboard.press('Escape');
-  await p.waitForTimeout(400);
+  // Starting the drive from its journey screen tells the phone (D6 asks for Always then).
+  await p.locator('.jmenu-link', { hasText: 'Journey details' }).click();
+  await p.waitForTimeout(500);
+  await p.getByRole('button', { name: /^Start driving/ }).click();
+  await p.waitForTimeout(300);
+  const started = (await sent(p, 'trip:start')).at(-1);
+  check('Start: Start driving tells the phone a drive began, on its route',
+    started?.kind === 'drive' && started.routeId === 'wilmington-to-southport', JSON.stringify(started));
   await pickRoute(p, 'Fly', 'Miami');
   const flight = p.locator('.jmenu-card', { hasText: 'Save this flight' });
   check('Save: a flight offers "Save this flight"',

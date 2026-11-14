@@ -597,6 +597,14 @@ export function saveTrip(routeId: string, kind: TripKind): void {
   post({ type: "trip:save", routeId, kind });
 }
 
+/**
+ * The journey screen's start button, inside the app: the phone saves a flight as it starts
+ * (D8) and, on a drive, asks for Always (D6). Nothing in a browser.
+ */
+export function tripStarted(routeId: string | null, kind: TripKind): void {
+  if (inApp()) post({ type: "trip:start", routeId, kind });
+}
+
 /** Settings › Offline echoes: the phone's own screen for what is saved (D9). */
 export function openOfflineEchoes(): void {
   post({ type: "offline:open" });

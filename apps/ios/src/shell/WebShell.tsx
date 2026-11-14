@@ -40,6 +40,7 @@ import type { LocationAccess, NativeToWeb, PocketPlan, WebToNative } from "../..
 import { currentEchoes, refreshLibrary } from "../library";
 import { useNarrator } from "../player";
 import { usePurchases } from "../purchases/PurchasesProvider";
+import { usePacks } from "../packs/PacksProvider";
 import { pagePrices } from "../purchases/products";
 import { useWalk } from "../walk/WalkProvider";
 import { attachFixes } from "../walk/task";
@@ -52,6 +53,7 @@ import {
   deliverScript,
   markerScript,
   navigationFor,
+  tripMessages,
   offerFor,
   parseWebMessage,
   statusBarStyleFor,
@@ -79,6 +81,7 @@ export default function WebShell() {
   const purchases = usePurchases();
   const walk = useWalk();
   const router = useRouter();
+  const packs = usePacks();
   // Reloading remounts the WebView under a new key.
   const [generation, setGeneration] = useState(0);
   const reload = useCallback(() => setGeneration((g) => g + 1), []);
@@ -209,6 +212,31 @@ export default function WebShell() {
     }
   }, [send]);
 
+  /**
+   * Routes saving and saved, for the trip sheet's card (D8): told as the page loads and as
+   * a save goes on, a megabyte at a time (`tripMessages`).
+   */
+  const tripsTold = useRef(new Map<string, string>());
+  const livePacks = useRef(packs);
+  const reportTrips = useCallback(() => {
+    const p = livePacks.current;
+    const states = p.packs.map((m) => {
+      const progress = p.progressOf(m.id);
+      return {
+        kind: m.kind,
+        sourceId: m.sourceId,
+        state: m.state,
+        savedBytes: progress?.savedBytes ?? m.bytes,
+        totalBytes: progress?.totalBytes ?? m.bytes,
+      };
+    });
+    for (const message of tripMessages(states, tripsTold.current)) send(message);
+  }, [send]);
+  useEffect(() => {
+    livePacks.current = packs;
+    if (ready.current) reportTrips();
+  }, [packs, reportTrips]);
+
   // --- The page's messages ---------------------------------------------------------------
 
   const handle = useCallback(
@@ -223,6 +251,8 @@ export default function WebShell() {
           // A page that has just loaded knows nothing yet: tell it afresh.
           lastAccess.current = undefined;
           void reportAccess();
+          tripsTold.current.clear();
+          reportTrips();
           return;
         case "audio:play": {
           const { type: _type, ...request } = message;
@@ -278,6 +308,14 @@ export default function WebShell() {
           } else if (message.changed) w.start();
           else w.resume();
           return;
+        case "trip:save":
+          // The trip sheet's card (D8, mock 2): the approved "Before a drive or flight".
+          router.push(`/trip/${encodeURIComponent(message.routeId)}`);
+          return;
+        case "trip:start":
+          // A flight saves itself as it starts (the sheet starts the save as it opens).
+          if (message.kind === "flight" && message.routeId) router.push(`/trip/${encodeURIComponent(message.routeId)}`);
+          return;
         case "offline:open":
           // Settings › Offline echoes (D9, mock 3): the phone's own screen; its back link
           // says Settings and comes back here.
@@ -309,7 +347,7 @@ export default function WebShell() {
         }
       }
     },
-    [flush, reportAccess, router, send, startWatch, stopWatch],
+    [flush, reportAccess, reportTrips, router, send, startWatch, stopWatch],
   );
 
   const onMessage = useCallback(

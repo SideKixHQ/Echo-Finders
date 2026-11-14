@@ -128,6 +128,14 @@ export type WebToNative =
    * route, and reports the save with `trip:saving` and `trip:saved`.
    */
   | { readonly type: "trip:save"; readonly routeId: string; readonly kind: TripKind }
+  /**
+   * The journey screen's start button was pressed ("Start driving", "Find my route", a
+   * flight's start): a drive, walk or flight begins, on a route or (a drive or walk with no
+   * route) none. The phone saves a flight for no signal as it starts (D8, approved: "On a
+   * flight we save the route for you before take off") and, on a drive, asks for Always
+   * (D6). Added for build 11.
+   */
+  | { readonly type: "trip:start"; readonly routeId: string | null; readonly kind: TripKind }
   /** Settings › Offline echoes (D9, mock 3, approved 2026-11-13): open the phone's own screen. */
   | { readonly type: "offline:open" }
   /** Settings › Hands-free's "Open iPhone Settings": Echo Finders' page in iPhone Settings. */

@@ -63,7 +63,7 @@ import { EchoBar, ECHOBAR_FLOAT, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, buyWeekPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
-import { buyInApp, inApp, useAppPrices, openOfflineEchoes, openPhoneSettings, restoreInApp, saveTrip, useInAppEntitlement, useLocationAccess, useTripSaves, withInApp } from "./native-bridge";
+import { buyInApp, inApp, useAppPrices, openOfflineEchoes, tripStarted, openPhoneSettings, restoreInApp, saveTrip, useInAppEntitlement, useLocationAccess, useTripSaves, withInApp } from "./native-bridge";
 import { MembershipPanel } from "./Membership";
 import { ReactionCard, faceOf } from "./ReactionCard";
 import { react, readReactions, type Reactions } from "./reaction-store";
@@ -3024,6 +3024,13 @@ export function App() {
               }}
               onStart={(next) => {
                 if (!roaming && next.id !== route.id) onSelectRoute(next);
+                // Inside the iPhone app: a flight saves itself now, a drive asks for Always.
+                tripStarted(
+                  roaming ? null : next.id,
+                  roaming
+                    ? roamMode === "driving" ? "drive" : "walk"
+                    : next.mode === "flight" ? "flight" : next.mode === "driving" ? "drive" : "walk",
+                );
                 setDownloaded(true);
                 setPackageOpen(false);
                 setOverview(false);

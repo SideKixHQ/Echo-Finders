@@ -115,12 +115,15 @@ const WEB_TYPES = new Set<WebToNative["type"]>([
   "purchase:restore",
   "handsfree",
   "pocket",
+  "trip:save",
+  "trip:start",
   "offline:open",
   "settings:open",
   "theme",
 ]);
 
 const finite = (n: unknown): n is number => typeof n === "number" && Number.isFinite(n);
+const isTripKind = (k: unknown) => k === "drive" || k === "walk" || k === "flight";
 const text = (s: unknown): s is string => typeof s === "string";
 
 function isPlayRequest(m: Record<string, unknown>): boolean {
@@ -171,6 +174,10 @@ export function parseWebMessage(data: string): WebToNative | null {
       return typeof r["on"] === "boolean" && typeof r["changed"] === "boolean" ? (r as unknown as WebToNative) : null;
     case "theme":
       return r["theme"] === "dark" || r["theme"] === "light" ? (r as unknown as WebToNative) : null;
+    case "trip:save":
+      return text(r["routeId"]) && isTripKind(r["kind"]) ? (r as unknown as WebToNative) : null;
+    case "trip:start":
+      return (r["routeId"] === null || text(r["routeId"])) && isTripKind(r["kind"]) ? (r as unknown as WebToNative) : null;
     case "pocket": {
       const ids = (v: unknown) => Array.isArray(v) && v.every(text);
       const reqs = (v: unknown) => Array.isArray(v) && v.every((x) => !!x && typeof x === "object" && isPlayRequest(x as Record<string, unknown>));
@@ -256,6 +263,45 @@ export function offerFor(plan: PlanKey, cityId: string | undefined, upgrade = fa
   const city = CITIES.find((c) => c.id === cityId);
   if (!city) return null;
   return { plan, sku: skuFor(plan, city.id, plan === "city" && upgrade), city };
+}
+
+// --- Saved for no signal (D8) ----------------------------------------------------------------
+
+/** A download pack, as the trip sheet's card needs it: which route, and how far it has got. */
+export interface RoutePackState {
+  readonly kind: string;
+  readonly sourceId: string;
+  readonly state: "saving" | "saved";
+  readonly savedBytes: number;
+  readonly totalBytes: number;
+}
+
+const MB = 1024 * 1024;
+
+/**
+ * What the page should hear about routes saving or saved (`trip:saving`, `trip:saved`),
+ * given what it was last told (`told`, by route id, updated here). A saving route is told
+ * again each time another whole megabyte is in, the step the card shows ("Saving · 7 of
+ * 17 MB"); a saved one once. Cities and areas are not the trip sheet's.
+ */
+export function tripMessages(packs: readonly RoutePackState[], told: Map<string, string>): NativeToWeb[] {
+  const out: NativeToWeb[] = [];
+  const seen = new Set<string>();
+  for (const pack of packs) {
+    if (pack.kind !== "route") continue;
+    seen.add(pack.sourceId);
+    const key = pack.state === "saved" ? "saved" : `saving:${Math.floor(pack.savedBytes / MB)}:${Math.floor(pack.totalBytes / MB)}`;
+    if (told.get(pack.sourceId) === key) continue;
+    told.set(pack.sourceId, key);
+    out.push(
+      pack.state === "saved"
+        ? { type: "trip:saved", routeId: pack.sourceId }
+        : { type: "trip:saving", routeId: pack.sourceId, savedBytes: pack.savedBytes, totalBytes: pack.totalBytes },
+    );
+  }
+  // Removed or stopped: forgotten, so saving it again is told afresh.
+  for (const id of [...told.keys()]) if (!seen.has(id)) told.delete(id);
+  return out;
 }
 
 // --- The pocket -------------------------------------------------------------------------------

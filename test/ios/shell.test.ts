@@ -15,6 +15,7 @@ import {
   PocketJudge,
   PocketLedger,
   RECLAIM_MS,
+  tripMessages,
   bridgeFix,
   deliverScript,
   echoOfRequest,
@@ -249,5 +250,44 @@ describe("the page's new asks (build 11)", () => {
 describe("Settings › Offline echoes (D9)", () => {
   it("takes the page's ask to open the phone's screen", () => {
     expect(parseWebMessage(JSON.stringify({ type: "offline:open" }))).toEqual({ type: "offline:open" });
+  });
+});
+
+describe("saving for no signal (D8)", () => {
+  const MB = 1024 * 1024;
+  const route = (state: "saving" | "saved", saved: number, total = 17 * MB) =>
+    ({ kind: "route", sourceId: "wilmington-to-southport", state, savedBytes: saved, totalBytes: total });
+
+  it("takes the card's save and the journey's start", () => {
+    expect(parseWebMessage(JSON.stringify({ type: "trip:save", routeId: "jfk-mia", kind: "flight" }))).not.toBeNull();
+    expect(parseWebMessage(JSON.stringify({ type: "trip:save", routeId: "jfk-mia", kind: "boat" }))).toBeNull();
+    expect(parseWebMessage(JSON.stringify({ type: "trip:start", routeId: null, kind: "drive" }))).not.toBeNull();
+    expect(parseWebMessage(JSON.stringify({ type: "trip:start", routeId: 3, kind: "drive" }))).toBeNull();
+  });
+
+  it("tells the page a megabyte at a time while saving, then once when saved", () => {
+    const told = new Map<string, string>();
+    expect(tripMessages([route("saving", 0)], told)).toEqual([
+      { type: "trip:saving", routeId: "wilmington-to-southport", savedBytes: 0, totalBytes: 17 * MB },
+    ]);
+    expect(tripMessages([route("saving", 0.5 * MB)], told)).toEqual([]);
+    expect(tripMessages([route("saving", 7 * MB)], told)).toHaveLength(1);
+    expect(tripMessages([route("saved", 17 * MB)], told)).toEqual([{ type: "trip:saved", routeId: "wilmington-to-southport" }]);
+    expect(tripMessages([route("saved", 17 * MB)], told)).toEqual([]);
+  });
+
+  it("says nothing of cities, and tells a route saved again afresh after it was removed", () => {
+    const told = new Map<string, string>();
+    expect(tripMessages([{ kind: "city", sourceId: "boston", state: "saved", savedBytes: 1, totalBytes: 1 }], told)).toEqual([]);
+    tripMessages([route("saved", 17 * MB)], told);
+    tripMessages([], told);
+    expect(tripMessages([route("saved", 17 * MB)], told)).toHaveLength(1);
+  });
+
+  it("a page loading afresh hears every saved route again", () => {
+    const told = new Map<string, string>();
+    tripMessages([route("saved", 17 * MB)], told);
+    told.clear();
+    expect(tripMessages([route("saved", 17 * MB)], told)).toEqual([{ type: "trip:saved", routeId: "wilmington-to-southport" }]);
   });
 });
