@@ -135,6 +135,28 @@ if (want('D2')) {
   await ctx.close();
 }
 
+// ── D2: a drive starts with every echo chosen (James, 2026-11-14) ────────────────────
+// So the switch says what it will do, "25 chosen · 18 min of listening", not "Nothing
+// chosen yet" over a drive that plays them all. What the listener unticks stays unticked.
+if (want('D2a')) {
+  const { ctx, p } = await freshApp(WILMINGTON);
+  await startDrive(p);
+  await choosePlays(p);
+  const line = async () => (await p.locator('.plan-auto-text small').innerText()).trim();
+  const cards = await p.locator('.plan .card-hit').count();
+  const first = await line();
+  const n = Number(/^(\d+) chosen · \d+ min of listening$/.exec(first)?.[1] ?? NaN);
+  check('D2a: a drive starts with all its echoes chosen', n > 0 && n === cards, `"${first}", ${cards} echoes listed`);
+  await p.locator('.plan .card-hit').first().click();
+  await p.waitForTimeout(300);
+  await p.locator('.plan-close').click();
+  await p.waitForTimeout(500);
+  await choosePlays(p);
+  const after = await line();
+  check('D2a: one unticked stays unticked', after.startsWith(`${n - 1} chosen`), after);
+  await ctx.close();
+}
+
 /**
  * Drive the MVP route's traced road by GPS, from the Cotton Exchange, at `kph` for `seconds`,
  * one fix a second, calling `each` after every fix.
@@ -173,14 +195,25 @@ if (want('D3')) {
     await p.locator('.toast-synced .toast-close').click().catch(() => {});
     await p.waitForTimeout(300);
   }
+  // What plays by itself on this drive: the echoes chosen in "Choose what plays" (all of
+  // them as the drive starts). An echo passed that is not on that list does not play
+  // itself, so its toast asking for a tap is true.
+  await choosePlays(p);
+  const chosen = new Set(await p.locator('.plan .card-hit[aria-pressed="true"] h4').allInnerTexts());
+  await p.locator('.plan-close').click();
+  await p.waitForTimeout(400);
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(300);
   const asked = new Set();
   let played = 0;
   await driveAlong(ctx, p, { kph: 47, seconds: 40 }, async () => {
-    for (const t of await p.locator('.toast-synced').allInnerTexts()) if (/tap to play/.test(t)) asked.add(t.split('\n')[1] ?? t);
+    for (const t of await p.locator('.toast-synced').allInnerTexts()) if (/tap to play/.test(t)) asked.add((t.split('\n')[1] ?? t).trim());
     if ((await p.locator('.echobar-orb[aria-label="Pause"]').count()) > 0) played++;
   });
+  const wrong = [...asked].filter((t) => chosen.has(t));
   check('D3: on a drive, echoes play by themselves', played > 0, `${played} s playing`);
-  check('D3: on a drive, no "Synced · tap to play" for an echo that plays by itself', asked.size === 0, [...asked].join(' / '));
+  check('D3: on a drive, no "Synced · tap to play" for an echo that plays by itself', chosen.size > 0 && wrong.length === 0,
+    `${chosen.size} chosen; asked for ${wrong.join(' / ')}`);
   await ctx.close();
 }
 

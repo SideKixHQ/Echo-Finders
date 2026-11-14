@@ -1453,6 +1453,22 @@ export function App() {
     () => upcomingOnRoute(route, onRoute, listenerFor(kids, optIns), 0, { limit: 99, minLeadS: -Infinity }),
     [route, onRoute, kids],
   );
+  /**
+   * A drive starts with every echo on it chosen (James, 2026-11-14), so "Play these as I
+   * reach them" says what it will do ("25 chosen · 18 min of listening") rather than
+   * "Nothing chosen yet" over a drive that plays them all. Once, as each drive starts: what
+   * the listener then unticks stays unticked.
+   */
+  const allChosenFor = useRef<string | null>(null);
+  useEffect(() => {
+    if (travel !== "driving" || roaming || route.mode !== "driving") {
+      allChosenFor.current = null;
+      return;
+    }
+    if (allChosenFor.current === route.id) return;
+    allChosenFor.current = route.id;
+    setChosen(new Set(wholeRoute.map((i) => i.echo.id)));
+  }, [travel, roaming, route.id, route.mode, wholeRoute]);
 
   /**
    * Progress, in twenty-metre steps.
