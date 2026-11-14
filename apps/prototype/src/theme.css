@@ -4137,6 +4137,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  */
 .echobar-kicker-tight > .echobar-kind { position: absolute; visibility: hidden; pointer-events: none; }
 .echobar-kicker-tight > em { padding-left: 0; }
+/* And when the rarity and the count cannot both be whole, the count goes too, the same way. */
+.echobar-kicker-bare > em { position: absolute; visibility: hidden; pointer-events: none; }
 /*
  * ONE LINE, then an ellipsis, and that is the point rather than a saving. A title that
  * wraps changes the height of the card every time an arrow is pressed, and a control that

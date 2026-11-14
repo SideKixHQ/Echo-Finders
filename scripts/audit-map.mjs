@@ -20,7 +20,7 @@
  *   TAG the labels under Rare and Extra rare pins never print over each other or other pins
  *   XRB the echo bar's creature is magenta for an Extra rare echo
  *   XRP and so are the player's creature and its My echoes thumbnail
- *   KICK the echo bar's kicker: the topic whole or left out, the count never clipped
+ *   KICK the echo bar's kicker: the topic, then the count, whole or left out, never clipped
  *   ROUTE route chips follow 30 B: the ribbon whole, the topics button gives way
  */
 
@@ -393,8 +393,10 @@ if (runs('XRB')) {
   }
 }
 
-// KICK. The echo bar's kicker: with a rarity, the topic whole or left out, and the count never
-//       clipped (375, 390, 440; every echo in the Savannah ring, then the Rare topic).
+// KICK. The echo bar's kicker, with a rarity on it: the topic whole or left out, then the count
+//       whole or left out (the rarity alone) when the two cannot both be whole, and back when
+//       they can (375, 390, 440; the Savannah ring, then the Rare topic, where 375 is checked
+//       at a two and a three digit position as well).
 if (runs('KICK')) {
   for (const width of [375, 390, 440]) {
     const { ctx, p } = await phone({ latitude: 32.0733, longitude: -81.0897 }, { width });
@@ -404,23 +406,27 @@ if (runs('KICK')) {
       const kind = k.querySelector('.echobar-kind');
       const count = k.querySelector('em');
       const rarity = k.querySelector('b');
-      const shown = kind && getComputedStyle(kind).visibility !== 'hidden';
+      const visible = (el) => !!el && getComputedStyle(el).visibility !== 'hidden';
       const gap = parseFloat(getComputedStyle(k).columnGap) || 0;
       const dot = k.querySelector('.echobar-dot');
-      // Whether the rarity and the count can both be whole on this line at all, with the
-      // topic left out. Where they cannot, it is a question for James, not a clip to fix.
       const textW = (el) => { const r = document.createRange(); r.selectNodeContents(el); return r.getBoundingClientRect().width; };
+      // Whether the rarity and the count can both be whole on this line, with the topic out.
       const room = !rarity || !count ||
         dot.getBoundingClientRect().width + gap + rarity.getBoundingClientRect().width + gap + textW(count) <= box.width + 0.5;
       return {
         room,
-        text: k.innerText.replace(/\n/g, ' '),
+        text: [rarity?.textContent, visible(kind) ? kind.textContent : null, visible(count) ? count.textContent : null].filter(Boolean).join(' '),
+        at: count ? Number(/^(\d+)/.exec(count.textContent)?.[1] ?? 0) : 0,
         rarity: rarity?.textContent ?? '',
+        countShown: visible(count),
         rarityWhole: !rarity || (rarity.scrollWidth <= rarity.clientWidth && rarity.getBoundingClientRect().right <= box.right + 0.5),
-        kindOk: !rarity || !shown || kind.scrollWidth <= kind.clientWidth,
-        countWhole: !count || (count.scrollWidth <= count.clientWidth + 0.5 && count.getBoundingClientRect().right <= box.right + 0.5),
+        kindOk: !rarity || !visible(kind) || kind.scrollWidth <= kind.clientWidth,
+        countWhole: !visible(count) || (count.scrollWidth <= count.clientWidth + 0.5 && count.getBoundingClientRect().right <= box.right + 0.5),
       };
     });
+    // A rarity kicker is right when everything shown is whole, and the count is shown exactly
+    // when it fits beside the rarity.
+    const right = (m) => !m.rarity || (m.rarityWhole && m.kindOk && m.countWhole && m.countShown === m.room);
     for (const view of ['all', 'rare']) {
       if (view === 'rare') {
         await p.locator('.kind-tap').click();
@@ -430,19 +436,30 @@ if (runs('KICK')) {
         await p.waitForTimeout(2500);
       }
       const bad = [];
-      const noRoom = new Set();
-      let extra = false;
-      for (let i = 0; i < 30; i++) {
-        const m = await read();
-        if (/extra rare/i.test(m.rarity)) extra = true;
-        if (!m.room) noRoom.add(m.text);
-        else if (!m.rarityWhole || !m.kindOk || !m.countWhole) bad.push(m.text);
-        await p.locator('.echobar').getByRole('button', { name: /Next/i }).first().click();
-        await p.waitForTimeout(120);
+      const seen = [];
+      for (const [arrow, steps] of [['The next one', 30], ['The one before this', 70]]) {
+        for (let i = 0; i < steps; i++) {
+          const m = await read();
+          if (/extra rare/i.test(m.rarity)) seen.push(m);
+          if (!right(m)) bad.push(`${m.text} (${m.room ? 'fits' : 'no room'})`);
+          await p.getByRole('button', { name: arrow }).click();
+          await p.waitForTimeout(120);
+        }
       }
-      check(`KICK ${width}, ${view}: an Extra rare echo was on the bar`, extra);
-      check(`KICK ${width}, ${view}: rarity and count whole, topic whole or left out`, bad.length === 0, [...new Set(bad)].join(' | '));
-      if (noRoom.size) console.log(`note  KICK ${width}, ${view}: rarity and count cannot both fit this line: ${[...noRoom].join(' | ')}`);
+      check(`KICK ${width}, ${view}: an Extra rare echo was on the bar`, seen.length > 0);
+      check(`KICK ${width}, ${view}: rarity whole, topic whole or out, count whole or out as room allows`,
+        bad.length === 0, [...new Set(bad)].join(' | '));
+      if (width === 375 && view === 'rare') {
+        const two = seen.find((m) => m.at >= 10 && m.at < 100);
+        const three = seen.find((m) => m.at >= 100);
+        const one = seen.find((m) => m.at > 0 && m.at < 10);
+        check('KICK 375, rare: an Extra rare at a two digit position shows the rarity alone',
+          !!two && !two.countShown && two.rarityWhole, JSON.stringify(two));
+        check('KICK 375, rare: an Extra rare at a three digit position shows the rarity alone',
+          !!three && !three.countShown && three.rarityWhole, JSON.stringify(three));
+        check('KICK 375, rare: and the count is back where it fits (a one digit position)',
+          !!one && one.countShown && one.countWhole, JSON.stringify(one));
+      }
     }
     await ctx.close();
   }

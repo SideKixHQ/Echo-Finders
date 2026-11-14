@@ -195,30 +195,40 @@ export function EchoBar({
    * fit, keeping the rarity and the count. Checked after every render and on a resize.
    */
   const kicker = useRef<HTMLSpanElement>(null);
-  const [tight, setTight] = useState(false);
+  /*
+   * How much of the line fits: all of it, the rarity and the count (`tight`, the topic out),
+   * or the rarity alone (`bare`, the count out too, James, 2026-11-14): "EXTRA RARE 11 OF
+   * 117" is 189px on a 181px line at 375. The count comes back when there is room for it.
+   */
+  const [fit, setFit] = useState<"all" | "tight" | "bare">("all");
   const countPad = useRef(0);
   const [, setWidth] = useState(0);
   useLayoutEffect(() => {
     const el = kicker.current;
     const kind = el?.querySelector<HTMLElement>(".echobar-kind");
-    if (!el || !kind || !el.querySelector("b")) {
-      setTight(false);
+    const rarity = el?.querySelector<HTMLElement>("b");
+    if (!el || !kind || !rarity) {
+      setFit("all");
       return;
     }
     const gap = parseFloat(getComputedStyle(el).columnGap) || 0;
-    const parts = [...el.children] as HTMLElement[];
-    // Each part at its natural width as the full line lays it out: the topic's whole name,
-    // and the count with the lead-in it has there (it drops it when the topic is out).
-    const width = (part: HTMLElement) => {
-      if (part === kind) return kind.scrollWidth;
-      const w = part.getBoundingClientRect().width;
-      if (part.tagName !== "EM") return w;
-      const pad = parseFloat(getComputedStyle(part).paddingLeft) || 0;
-      if (!el.classList.contains("echobar-kicker-tight")) countPad.current = pad;
-      return w - pad + countPad.current;
+    const dot = el.querySelector<HTMLElement>(".echobar-dot")?.getBoundingClientRect().width ?? 0;
+    // Natural widths, whatever is shown now: the words themselves, laid out or not.
+    const text = (part: HTMLElement | null) => {
+      if (!part) return 0;
+      const range = document.createRange();
+      range.selectNodeContents(part);
+      return range.getBoundingClientRect().width;
     };
-    const need = parts.reduce((sum, part) => sum + width(part), 0) + gap * (parts.length - 1);
-    setTight(need > el.clientWidth + 0.5);
+    const count = el.querySelector<HTMLElement>("em");
+    // The count's own lead-in on the full line, read while it is showing it.
+    if (count && fit === "all") countPad.current = parseFloat(getComputedStyle(count).paddingLeft) || 0;
+    const room = el.clientWidth + 0.5;
+    const r = rarity.getBoundingClientRect().width;
+    const c = text(count);
+    const all = dot + gap + r + gap + text(kind) + (count ? gap + c + countPad.current : 0);
+    const tight = dot + gap + r + (count ? gap + c : 0);
+    setFit(all <= room ? "all" : tight <= room ? "tight" : "bare");
   });
   useLayoutEffect(() => {
     const resized = () => setWidth(window.innerWidth);
@@ -356,7 +366,7 @@ export function EchoBar({
             aria-label={isLoaded ? `Open the player: ${echo.title}` : `Open: ${echo.title}`}
           >
             {!directions && (
-            <span ref={kicker} className={`echobar-kicker mono${rarity && tight ? " echobar-kicker-tight" : ""}`}>
+            <span ref={kicker} className={`echobar-kicker mono${rarity && fit !== "all" ? " echobar-kicker-tight" : ""}${rarity && fit === "bare" ? " echobar-kicker-bare" : ""}`}>
               <span className="echobar-dot" />
               {rarity && <b>{rarity}</b>}
               <span className="echobar-kind">{CATEGORY_LABEL[echo.category]}</span>
