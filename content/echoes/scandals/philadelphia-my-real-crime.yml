@@ -1,0 +1,183 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (affairs), filed under people until the topic exists, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on the west side of South Third Street, at the north end of the First Bank of the United States frontage, between Chestnut and Walnut streets, Old City, Philadelphia.
+# Position: the First Bank stands at 120 South Third Street (NPS); the pin is on the Third Street sidewalk toward the north end of its marble front, about 45 m from "The Baby Over the Bank Door", which stands at the portico and tells a different subject. High confidence on the building. Hamilton's own house in 1791 is not marked here because the sources reachable today disagree on which house it was (see the review doc).
+id: philadelphia-my-real-crime
+title: "My Real Crime"
+summary: "Accused of corruption, Hamilton answered in a 1797 Philadelphia pamphlet by confessing an affair and a blackmail."
+place: "First Bank of the United States, South Third Street between Chestnut and Walnut, Old City, Philadelphia, Pennsylvania"
+at: { lat: 39.94845, lng: -75.14625 }
+triggerRadiusKm: 0.04
+category: scandals
+format: short
+durationS: 107
+visibility: landmark-visible
+certainty: documented
+minAge: 13
+quality: 0.75
+tags: [philadelphia, old-city, scandal, hamilton, reynolds, 1790s]
+teaser: "To prove he was not a crook, he confessed to something else."
+script: |
+  Look at the marble face of the bank in front of you. It was Alexander Hamilton's idea. He was Secretary of the Treasury, and he drew up the plan for a national bank.
+
+  The bank moved into this building in seventeen ninety seven. That same year, Hamilton, no longer at the Treasury, published a pamphlet in this city. He had been accused of a crooked money scheme with a man named James Reynolds, and the pamphlet was his answer.
+
+  A few pages in, he wrote this. My real crime is an amorous connection with his wife.
+
+  His account went like this. In the summer of seventeen ninety one, a woman called at his house in Philadelphia, and asked to see him in private. Her husband had treated her cruelly and left her, she said, and she needed money to get home to her family.
+
+  That evening, he put a bank note in his pocket and went to the house where she lodged. She met him at the top of the stairs.
+
+  His own wife and children were away, visiting her father. The meetings went on, most of them at his house.
+
+  In December, the husband wrote to him. He had found out, he said, and he wanted satisfaction. Hamilton wrote that it was easy to understand that he wanted money.
+
+  The price was a thousand dollars, as a plaster for his wounded honour. Hamilton paid it in two instalments.
+
+  He knew how this would read. This confession, he wrote, is not made without a blush.
+
+  But he could not resist a dig at his accusers. If he were really a greedy, speculating Treasury Secretary, he asked, how was it that he had been so short of money that he had to pay a blackmailer in two payments?
+pronunciations: []
+detail: >-
+  Hamilton's own account, from his 1797 pamphlet (Observations on Certain Documents), read on a scan of the Philadelphia edition at the Internet Archive; quotations keep the OCR spelling. The script tells it as his account ("he wrote", "his account went like this") because it is the only side the pamphlet gives, and it says nothing about Maria Reynolds that he did not write. The bank, Hamilton's plan and the building's date are from the National Park Service. Hamilton's 1791 house is not identified: reachable sources disagree on whether he was on Walnut Street or South Third Street that summer, so the echo stands at the bank instead. Single primary source for the affair; no second source was reachable (Founders Online is behind a browser check).
+editorial: approved
+factCheck: single-source
+claims:
+  - says: "It was Alexander Hamilton's idea."
+    source: 2
+    quote: "Secretary of the Treasury Alexander Hamilton submitted to Congress a highly detailed plan to establish a national bank for the United States"
+  - says: "He was Secretary of the Treasury, and he drew up the plan for a national bank."
+    source: 2
+    quote: "Secretary of the Treasury Alexander Hamilton submitted to Congress a highly detailed plan to establish a national bank for the United States"
+  - says: "The bank moved into this building in seventeen ninety seven."
+    source: 2
+    quote: "When the bank first opened in 1791, it was initially housed in Carpenters’ Hall on Chestnut Street, but it moved into a magnificent new home on South Third Street six years later."
+  - says: "That same year, Hamilton, no longer at the Treasury, published a pamphlet in this city."
+    source: 1
+    quote: "ALEXANDER HAMILTON, LATE SECRETARY OF THE TREASURY, IS FULLY REFUTED. WRITTEN BY HIMSELF. PHILADELPHIA : PRINTED FOR JOHN FENNO, BY JOHN BIOREN. 1797."
+  - says: "He had been accused of a crooked money scheme with a man named James Reynolds, and the pamphlet was his answer."
+    source: 1
+    quote: "The charge against me is a connection with one James Eeynolds for purposes of improper pecuniary speculation."
+  - says: "My real crime is an amorous connection with his wife."
+    source: 1
+    quote: "My. real crime is an amorous connection with his wife for a considerable time with his privity and connivance"
+  - says: "In the summer of seventeen ninety one, a woman called at his house in Philadelphia, and asked to see him in private."
+    source: 1
+    quote: "Some time in the summer of the year 1791 a wo- man called at my house in the city of Philadelphia and asked to speak with me in private."
+  - says: "Her husband had treated her cruelly and left her, she said, and she needed money to get home to her family."
+    source: 1
+    quote: "that her husband, who for a long time had treated her very cruelly, had lately left her, to live with another woman, and in so destitute a condition, that though desirous of return- ing to her friends she had not the means"
+  - says: "That evening, he put a bank note in his pocket and went to the house where she lodged."
+    source: 1
+    quote: "In the evening I put a bank-bill in my pocket and went to the house."
+  - says: "His own wife and children were away, visiting her father."
+    source: 1
+    quote: "After this, I had frequent meetings with her, most of them at my own house ; Mrs. Hamilton with her children being absent on a- visit to her father."
+  - says: "In December, the husband wrote to him."
+    source: 1
+    quote: "The same day, being the 15th of December 1791, OBSERVATIONS, &C. 33 I received from Mr. Reynolds tlie letter (No. II. b)"
+  - says: "Hamilton wrote that it was easy to understand that he wanted money."
+    source: 1
+    quote: "It was easy to understand tbat be wanted money, and to prevent an explosion, I resolved to gra- 34 OBSERVATIONS, &C. tify him."
+  - says: "The price was a thousand dollars, as a plaster for his wounded honour."
+    source: 1
+    quote: "thousand dollars as the plaister for his wounded honor,"
+  - says: "Hamilton paid it in two instalments."
+    source: 1
+    quote: "I determined to give it to him, and did so in two payments, as per receipts (No. V and VI) dated the 22d of December and 3d of January."
+  - says: "This confession, he wrote, is not made without a blush."
+    source: 1
+    quote: "This confession is not made without a blush."
+  - says: "If he were really a greedy, speculating Treasury Secretary, he asked, how was it that he had been so short of money that he had to pay a blackmailer in two payments?"
+    source: 1
+    quote: "It is a little re- markable, that an avaricious speculating secretary of the treasury should have been so straitened for money as to be obliged to satisfy an engagement of this sort by two different payments !"
+sources:
+  - title: "Alexander Hamilton, Observations on Certain Documents Contained in No. V and VI of \"The History of the United States for the Year 1796\" (Philadelphia: John Fenno, 1797)"
+    publisher: "Internet Archive (Cornell University Library copy)"
+    url: https://archive.org/details/cu31924032742664
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "First Bank of the United States"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/places-firstbank.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-my-real-crime/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 107.2
+    audioBytes: 1716183
+    transcript:
+      totalS: 107.2
+      lines:
+        - text: Look at the marble face of the bank in front of you.
+          atS: 0
+          durationS: 2.82
+        - text: It was Alexander Hamilton's idea.
+          atS: 3.15
+          durationS: 2.3
+        - text: He was Secretary of the Treasury, and he drew up the plan for a national bank.
+          atS: 5.77
+          durationS: 4.52
+        - text: The bank moved into this building in seventeen ninety seven.
+          atS: 10.8
+          durationS: 3.42
+        - text: That same year, Hamilton, no longer at the Treasury, published a pamphlet in this city.
+          atS: 14.66
+          durationS: 5.65
+        - text: He had been accused of a crooked money scheme with a man named James Reynolds, and the pamphlet was his answer.
+          atS: 20.92
+          durationS: 6.64
+        - text: A few pages in, he wrote this.
+          atS: 28.26
+          durationS: 2.3
+        - text: My real crime is an amorous connection with his wife.
+          atS: 31.07
+          durationS: 3.23
+        - text: His account went like this.
+          atS: 34.74
+          durationS: 1.65
+        - text: In the summer of seventeen ninety one, a woman called at his house in Philadelphia, and asked to see him in private.
+          atS: 36.9
+          durationS: 6.48
+        - text: Her husband had treated her cruelly and left her, she said, and she needed money to get home to her family.
+          atS: 43.88
+          durationS: 6.46
+        - text: That evening, he put a bank note in his pocket and went to the house where she lodged.
+          atS: 51.64
+          durationS: 4.54
+        - text: She met him at the top of the stairs.
+          atS: 57.13
+          durationS: 1.96
+        - text: His own wife and children were away, visiting her father.
+          atS: 59.91
+          durationS: 3.52
+        - text: The meetings went on, most of them at his house.
+          atS: 64.12
+          durationS: 2.96
+        - text: In December, the husband wrote to him.
+          atS: 67.89
+          durationS: 2.23
+        - text: He had found out, he said, and he wanted satisfaction.
+          atS: 70.64
+          durationS: 3.88
+        - text: Hamilton wrote that it was easy to understand that he wanted money.
+          atS: 75.12
+          durationS: 3.7
+        - text: The price was a thousand dollars, as a plaster for his wounded honour.
+          atS: 79.33
+          durationS: 4.05
+        - text: Hamilton paid it in two instalments.
+          atS: 84.19
+          durationS: 2.33
+        - text: He knew how this would read.
+          atS: 87.23
+          durationS: 1.53
+        - text: This confession, he wrote, is not made without a blush.
+          atS: 89.27
+          durationS: 3.56
+        - text: But he could not resist a dig at his accusers.
+          atS: 93.16
+          durationS: 2.87
+        - text: If he were really a greedy, speculating Treasury Secretary, he asked, how was it that he had been so short of money that he had to pay a blackmailer in two payments?
+          atS: 96.63
+          durationS: 10.55

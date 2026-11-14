@@ -878,6 +878,64 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1
   },
   {
+    "id": "boston-a-campaign-from-a-cell",
+    "title": "A Campaign from a Cell",
+    "summary": "In 1904 a Boston alderman was jailed here for sitting an exam in another man's name. Boston re-elected him from his cell.",
+    "point": {
+      "at": {
+        "lat": 42.3621,
+        "lng": -71.06995
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Liberty Hotel (former Charles Street Jail), 215 Charles Street, Boston, Massachusetts"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 90,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the big granite building across from you, with the tall arched windows. It is a hotel now, the Liberty. For more than a century it was the Charles Street Jail.\n\nIn the winter of nineteen oh four, one of the men inside was a Boston alderman, James Michael Curley.\n\nHe and his brother Thomas, a state representative, had been convicted of taking civil service examinations in other men's names. Curley had sat the exam for a friend who wanted a job.\n\nThey fought it all the way to the Supreme Court, and lost. The judge sentenced them both to two months in jail. He said their effrontery was only equalled by their boldness in running for office after they had been convicted.\n\nOutside the federal building, several hundred men cheered them on their way to jail.\n\nCurley stayed on the ballot. He was renominated for the Board of Aldermen after his sentence had begun, and a newspaper reported that he ran his entire campaign himself, from his prison cell.\n\nIn December, while he was still in here, Boston re-elected him.\n\nA paper in Maine called the brothers jailbirds. It made no difference. Curley went on to be mayor of Boston four times. During his fourth term, convicted of mail fraud at the age of seventy two, he went to federal prison again.\n\nThe jail closed in nineteen seventy nine. The hotel bar is in the old drunk tank.\n\nIt is called the Alibi.\n",
+    "teaser": "He was in a cell when Boston voted for him. He won.",
+    "detail": "Conviction status: convicted (James M. and Thomas F. Curley, conspiracy against the United States by impersonation at a civil service examination; sentenced to two months in jail on 7 November 1904 after the Supreme Court declined to disturb the judgment; Daily Kennebec Journal, Associated Press, 8 November and 17 December 1904). Nobody named is alive (James Michael Curley died 1958). The Charles Street Jail, the renomination from the cell and the re-election are in the Daily Kennebec Journal of 15 December 1904 and the Billings Gazette of 20 December 1904 (both wire reports, counted as one source), and are corroborated by NBC News (2007, Associated Press) and the Boston Globe (2024). \"For a friend\" is NBC's wording; the 1904 report names the two men for whom the Curleys sat the exams, and the script does not. \"Jailbirds\" is an editorial in the Daily Kennebec Journal of 17 December 1904, attributed aloud to a paper in Maine. The 1947 prison term, at Danbury, and \"fourth non-consecutive term as mayor\" are from the Boston Globe. The jail's opening and closing years are from NPR (2007), and the Alibi bar in the former drunk tank from NBC. No violence.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/boston-a-campaign-from-a-cell/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 90.1,
+        "audioBytes": 1443256
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Curley",
+        "say": "KUR-lee"
+      }
+    ],
+    "tags": [
+      "boston",
+      "beacon-hill",
+      "scandal",
+      "corruption",
+      "curley",
+      "charles-street-jail",
+      "liberty-hotel"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "convicted",
+      "reviewedBy": "James (owner), approved 2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "contentWarning": "This echo concerns a fraud conviction in 1904 and a jail sentence. No violence is described."
+    },
+    "remoteness": 0.07
+  },
+  {
     "id": "boston-a-door-like-a-tomb",
     "title": "A Door Like a Tomb",
     "summary": "America's first subway opened here in 1897. Its kiosks were mocked as mausoleums, and digging it moved 910 bodies.",
@@ -1289,6 +1347,57 @@ export const LIBRARY: readonly Echo[] = [
       "boston-common",
       "revolution",
       "farming"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "boston-copies-in-the-street",
+    "title": "Copies in the Street",
+    "summary": "In 1773 Franklin sent the governor's private letters on a promise they would not be copied. Then copies turned up in the street.",
+    "point": {
+      "at": {
+        "lat": 42.35866,
+        "lng": -71.0579
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Old State House, Washington Street at Court Street, Boston, Massachusetts"
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 94,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the old State House in front of you. In seventeen seventy three, the Massachusetts House of Representatives sat in here.\n\nThat year, with the public shut out, Samuel Adams told the House he had letters. Private letters, written by the royal governor, Thomas Hutchinson, and his lieutenant governor, to a member of Parliament in London.\n\nThey had come from Benjamin Franklin. He had sent them under strict secrecy. They were to be shown only to a few leading men. They were not to be printed or copied, and they were to be sent back.\n\nAdams said the House could still know what was in them. So the letters were read. A committee reported that they tended to annul the charter and overthrow all liberty.\n\nWord got out into the streets, and people grew wild to know what was in the letters. But the leaders had promised Franklin. Nothing printed, nothing copied.\n\nThen John Hancock told the House that copies of the letters had been put into his hands, in the streets.\n\nThe House gave way. The letters were printed, and the House asked the King to remove the Governor and the Lieutenant Governor.\n\nFranklin paid for it in London, where he was lashed without mercy before a committee. And Hutchinson's own biographer wrote that his letters were mild as mother's milk.\n\nHutchinson put it his own way. Had they been Chevy Chase, an old ballad, the leaders would have made the people believe it was full of evil and treason.\n",
+    "teaser": "The letters were never to be copied. So the copies came from the street.",
+    "detail": "Everything in the script is from James K. Hosmer's Life of Thomas Hutchinson (1896), chapter 12, \"The Affair of the Letters\", which quotes Hutchinson's own letters: the House sitting in the Assembly Chamber of the Old State House, the letters to Thomas Whately, a member of Parliament, Franklin's conditions (shown to a few, not printed or copied, returned), Samuel Adams reading them with the public excluded, the committee's finding, the crowd \"wild to know\", Hancock's copies \"put into his hands in the streets\", the order to print, the address to the King, Wedderburn lashing Franklin, \"mild as mother's milk\" (Hosmer's own phrase) and Hutchinson's \"Chevy Chase\" line. The Library of Congress catalogue record of the 1774 London pamphlet, \"The letters of Governor Hutchinson, and Lieut. Governor Oliver, &c. printed at Boston\", backs the printing. Founders Online (the Franklin Papers) is the obvious second source but does not answer from this session. Hosmer says \"a Committee of Parliament\"; the hearing was before the Privy Council's committee, so the script says only \"a committee\". \"An old ballad\" for Chevy Chase is general knowledge, not from the source. Hosmer is sympathetic to Hutchinson; the script attributes his judgement (\"his biographer wrote\").",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-copies-in-the-street/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 93.8,
+        "audioBytes": 1502188
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Hutchinson",
+        "say": "HUTCH-in-sun"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "freedom-trail",
+      "scandal",
+      "old-state-house",
+      "hutchinson",
+      "franklin",
+      "revolution"
     ],
     "remoteness": 0
   },
@@ -2249,7 +2358,7 @@ export const LIBRARY: readonly Echo[] = [
       "paul-revere",
       "houses"
     ],
-    "remoteness": 0.1
+    "remoteness": 0
   },
   {
     "id": "boston-the-lady-in-black",
@@ -2342,6 +2451,64 @@ export const LIBRARY: readonly Echo[] = [
       "literature",
       "hawthorne"
     ],
+    "remoteness": 0
+  },
+  {
+    "id": "boston-the-line-in-pi-alley",
+    "title": "The Line in Pi Alley",
+    "summary": "In July 1920 crowds jammed this alley to cash out of Charles Ponzi's scheme, and were paid. By November he had pleaded guilty to mail fraud.",
+    "point": {
+      "at": {
+        "lat": 42.35815,
+        "lng": -71.05812
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Pi Alley, off Washington Street near School Street, Downtown Boston, Massachusetts"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look down the narrow alley beside you. This is Pi Alley.\n\nIn the summer of nineteen twenty, a man named Charles Ponzi had offices here, and round the corner, on School Street. He had started with one room, at twenty seven School Street.\n\nHis idea was postage. He said he could buy international postal reply coupons cheaply in countries with weak currencies, and cash them in here for more. He promised his investors fifty percent.\n\nOver eight months, he took in roughly fifteen million dollars. The early investors really were paid. But the money came from the people who invested after them.\n\nAt the end of July, doubts were growing. As early as five in the morning, crowds gathered here to get their money back. Thousands jammed into the square around his offices. The cash was handed out from the Pi Alley office, and a newspaper reported that not a claimant was turned away.\n\nThe crowds came to see Ponzi himself, too. They waited every day to watch him arrive in his limousine, until the police banned it from School Street.\n\nThen the Boston Post revealed that Ponzi had served two terms in prison. The scheme collapsed in August. On the thirtieth of November, Ponzi pleaded guilty in federal court to using the mails to defraud, and was sentenced to five years.\n\nLook back down the alley. For a few days that summer, it paid everyone. That was how it worked.\n",
+    "teaser": "For a few days in July, this alley paid everyone back.",
+    "detail": "Conviction status: convicted (Ponzi pleaded guilty to using the mails to defraud on 30 November 1920 and was sentenced to five years; New-York Tribune and Milwaukee Leader of 30 November and 1 December 1920, from the Associated Press and the United Press, which are independent wires). Nobody named is alive. The postal reply coupon pitch, \"roughly $15 million\" over eight months, early investors paid from later money, and the Boston Post's revelation of two prison terms are from the National Archives' Prologue (2010). The National Archives says 50 percent in 90 days and the 1920 papers say 50 percent in forty five days, so the script gives only \"fifty percent\". The crowd, the 5 a.m. start, the Pi Alley cash office and \"not a claimant was turned away\" are from the Washington Times of 30 July 1920; Ponzi's \"one room at 27 School street\" is his own account in the same article. The limousine ban is from the New-York Tribune of 1 August 1920. No violence. The last line is a turn, not a claim.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/boston-the-line-in-pi-alley/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 84.6,
+        "audioBytes": 1355066
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Ponzi",
+        "say": "PON-zee"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "scandal",
+      "fraud",
+      "ponzi",
+      "school-street",
+      "pi-alley"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "convicted",
+      "reviewedBy": "James (owner), approved 2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "contentWarning": "This echo concerns a financial fraud in 1920 and the prison sentence that followed. No violence is described."
+    },
     "remoteness": 0
   },
   {
@@ -3004,6 +3171,57 @@ export const LIBRARY: readonly Echo[] = [
       "revolution",
       "tea-party",
       "old-south"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "boston-we-did-not-then-distrust",
+    "title": "We Did Not Then Distrust Him",
+    "summary": "Revere's secret committee met at the Green Dragon and swore to tell only a few leaders. One of those leaders was writing to General Gage.",
+    "point": {
+      "at": {
+        "lat": 42.36145,
+        "lng": -71.057
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Union Street, Blackstone Block, Boston, Massachusetts"
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along Union Street. In the autumn of seventeen seventy four, the Green Dragon Tavern stood on this street, and a group of Boston men met there in secret.\n\nPaul Revere was one of them. He later wrote that they were upwards of thirty, chiefly mechanics, and that they met to watch the movements of the British soldiers.\n\nThey were careful. Every time they met, each man swore on the Bible to tell their business to nobody but a few leaders. Hancock, Adams, Doctor Warren, Doctor Church, and one or two more.\n\nThen a man with friends in the Tory party warned Revere that their meetings had been discovered. He repeated the very words they had spoken the night before.\n\nWe did not then distrust Doctor Church, Revere wrote. They supposed it must be someone among themselves.\n\nBenjamin Church was a physician, and one of the leaders of the Sons of Liberty. And by early seventeen seventy five, he was selling information to the British commander, General Thomas Gage, in coded letters.\n\nOne of those letters was found, and brought to George Washington. On the third of October, Washington and his leading advisors met to discuss it. Church admitted writing the letter. He said he had done it to get intelligence from the British.\n\nHe was imprisoned, and later banished. The ship he sailed on disappeared, and he was never heard from again.\n\nThe letter has been decoded. One line of it reads, make use of every precaution, or I perish.\n",
+    "teaser": "They swore on the Bible to tell only a handful of leaders. One of them was the leak.",
+    "detail": "The Green Dragon committee, the oath, the list of leaders (Hancock, Adams, Doctors Warren and Church), the warning from a man with Tory connections, the repeated words and \"We did not then distrust Dr. Church\" are from Paul Revere's letter to Jeremy Belknap as printed in full in Elbridge Goss's Life of Colonel Paul Revere (1891), which reprints the Massachusetts Historical Society's 1878 text. Church as a Sons of Liberty leader, the coded letters to Gage, the council of 3 October 1775 at Washington's headquarters, his admission and defence, imprisonment, banishment and the lost ship, and the decoded line are from the National Park Service. Church was never convicted by a court (the NPS says he was put on trial and imprisoned); everyone named died in the eighteenth or early nineteenth century. The script places the tavern only on Union Street, not on this spot. The existing legend echo The Spy Question (Faneuil Hall grasshopper) does not mention Church.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/boston-we-did-not-then-distrust/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 95.9,
+        "audioBytes": 1536043
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Gage",
+        "say": "GAYJ"
+      }
+    ],
+    "tags": [
+      "boston",
+      "boston-core",
+      "scandal",
+      "spies",
+      "revolution",
+      "green-dragon",
+      "revere",
+      "benjamin-church"
     ],
     "remoteness": 0
   },
@@ -9523,6 +9741,127 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1
   },
   {
+    "id": "dc-a-line-of-chalk",
+    "title": "A Line of Chalk",
+    "summary": "In 1993 the FBI watched a CIA officer's signal mailbox on this corner. One morning a chalk line appeared on it.",
+    "point": {
+      "at": {
+        "lat": 38.9133,
+        "lng": -77.0716
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Corner of 37th Street and R Street NW, Georgetown, Washington, D.C."
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 85,
+    "minAge": 16,
+    "quality": 0.78,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at this corner, where Thirty Seventh Street meets R Street. In October nineteen ninety three, there was a mailbox here, and the FBI was watching it.\n\nAgents had searched the home of a CIA officer named Aldrich Ames, and found a document on his computer. It identified a mailbox at Thirty Seventh and R Streets as a signal site. In the plan Ames shared with the KGB, the site had a cover name. Smile.\n\nThe signal was a chalk mark on a mailbox. It told the Russians that Ames would load a dead drop, or come to a meeting.\n\nThat October the FBI had a tap on his telephone. It caught his wife asking why he had not left the signal yet. I should have, he said, except it was raining like crazy.\n\nThen, on the twelfth of October, Ames told her he would leave for work early the next morning, to put a signal down, confirming that I am coming. He had a meeting with the KGB in Bogota.\n\nAgents followed him here. They did not see him make a mark. But at seven in the morning, there was a horizontal chalk mark on the side of the mailbox.\n\nAmes had been selling secrets to Moscow since the spring of nineteen eighty five. He was arrested in February nineteen ninety four. He pleaded guilty, and was sentenced to life in prison without parole.\n\nLook at the corner. By that afternoon, the chalk mark had been erased.\n",
+    "teaser": "There at seven in the morning. Gone by the afternoon.",
+    "detail": "Conviction status: convicted. Ames pleaded guilty to conspiracy to commit espionage on 28 April 1994 and was sentenced to life without parole (Los Angeles Times, 29 April 1994; the Department of Defense Security Institute's Security Awareness Bulletin 4-94, which reprints the Senate Intelligence Committee's findings). The search of his home, the computer document naming the mailbox, the cover name SMILE, the call of 12 October 1993, the 7 a.m. chalk mark and its erasure are from the bulletin. The raining call is from the Los Angeles Times of 26 February 1994, quoting the FBI's transcript. Ames is believed to be alive and serving his sentence, so involvesLivingPeople is true; he was convicted, so nothing is told as alleged. His wife is not named; she also pleaded guilty, to lesser charges. Both sources ultimately rest on the FBI's affidavit and the agreed statement of facts, reported independently. The CIA sources Ames betrayed, many of whom were executed, are not described.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/dc-a-line-of-chalk/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 84.8,
+        "audioBytes": 1358410
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Bogota",
+        "say": "boh-goh-TAH"
+      }
+    ],
+    "tags": [
+      "washington",
+      "georgetown",
+      "scandal",
+      "spies",
+      "aldrich-ames",
+      "cia",
+      "kgb",
+      "cold-war",
+      "espionage"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "convicted",
+      "reviewedBy": "James (owner), approved 2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "contentWarning": "This echo concerns espionage by a CIA officer, whose betrayals cost lives, and his conviction. No violence is described."
+    },
+    "remoteness": 1
+  },
+  {
+    "id": "dc-a-loan-from-an-old-friend",
+    "title": "A Loan From an Old Friend",
+    "summary": "Teapot Dome was heard in this building. One jury found Albert Fall took a bribe. Another found the giver not guilty.",
+    "point": {
+      "at": {
+        "lat": 38.89245,
+        "lng": -77.00695
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Russell Senate Office Building, Constitution Avenue and Delaware Avenue NE, Washington, D.C."
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 16,
+    "quality": 0.76,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the corner of the Senate office building in front of you, the Russell Building. Inside, up twin marble staircases, is its Caucus Room. In nineteen twenty three and twenty four, that room held the hearings into the Teapot Dome scandal.\n\nIt was about oil. Under President Harding, the Secretary of the Interior, Albert Fall, leased naval oil reserves to private companies. One lease, to the oil fields at Elk Hills in California, went to a company of Edward Doheny's.\n\nEarly in nineteen twenty four, Doheny came before Senator Walsh's committee and admitted that he had given Fall one hundred thousand dollars. In cash. Carried to Washington in a satchel by his own son.\n\nIt was a loan, Doheny said. A loan from one old friend to another.\n\nIn October nineteen twenty nine, a jury of eight men and four women found Albert Fall guilty of accepting a bribe of one hundred thousand dollars from Doheny, in exchange for the lease. They had taken twenty three hours and fifty minutes. Fall received the verdict slumped in the invalid's chair he had used through the trial.\n\nIn March nineteen thirty, another jury heard the case against Doheny himself, for giving the same money. That jury accepted that the hundred thousand dollars was a loan, and acquitted him.\n\nLook at the building again. One man was guilty of taking the money. The other was not guilty of giving it.\n",
+    "teaser": "One jury said he took a bribe. The next said nobody gave one.",
+    "detail": "Conviction status: convicted. Fall was convicted of accepting the bribe on 25 October 1929 (Washington Times, same day, and the Associated Press report of Doheny's trial in the Evening Star, 22 March 1930, which says Fall \"Was Convicted in Case\"). Doheny was acquitted of giving it on 22 March 1930 (Evening Star). The satchel and Doheny's admission before the Walsh committee are from the Producers News of 1 February 1924, a Montana paper, the only fetched source for the satchel, so that detail rests on one source. The Caucus Room as the place of the Teapot Dome hearings is from the Architect of the Capitol. Everyone named is long dead. Strictly, Fall's bribe was for the Elk Hills lease in California; Teapot Dome in Wyoming went to Harry Sinclair, which is why the script says Teapot Dome only of the hearings. Fall's sentence (a year in prison and a fine) is left out for want of a fetched source.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/dc-a-loan-from-an-old-friend/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 82.2,
+        "audioBytes": 1316196
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Doheny",
+        "say": "doh-HEE-nee"
+      }
+    ],
+    "tags": [
+      "washington",
+      "capitol-hill",
+      "russell-building",
+      "scandal",
+      "teapot-dome",
+      "albert-fall",
+      "doheny",
+      "harding",
+      "bribery",
+      "corruption"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "convicted",
+      "reviewedBy": "James (owner), approved 2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "contentWarning": "This echo concerns a bribery scandal and the trials that followed. No violence is described."
+    },
+    "remoteness": 0
+  },
+  {
     "id": "dc-a-parade-around-the-building",
     "title": "A Parade Around the Building",
     "summary": "Around the old Pension Building marches a frieze of Union soldiers, built for the veterans who came here for their pensions.",
@@ -9723,7 +10062,7 @@ export const LIBRARY: readonly Echo[] = [
       "african-american-history",
       "segregation"
     ],
-    "remoteness": 0.49
+    "remoteness": 0.43
   },
   {
     "id": "dc-a-voice-on-a-sunbeam",
@@ -9779,6 +10118,61 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.3
   },
   {
+    "id": "dc-an-envelope-at-the-desk",
+    "title": "An Envelope at the Desk",
+    "summary": "In 1985 a CIA officer walked into the Soviet Embassy, handed an envelope across the desk, and asked for $50,000.",
+    "point": {
+      "at": {
+        "lat": 38.90465,
+        "lng": -77.03635
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "1125 16th Street NW (the former Soviet Embassy), Washington, D.C."
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 94,
+    "minAge": 16,
+    "quality": 0.76,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across Sixteenth Street at the big stone house, number eleven twenty five. It was built for the widow of George Pullman, the man who made the sleeping cars, and later sold to the Russian government. For decades, Washington knew it as the Soviet Embassy.\n\nOn the sixteenth of April, nineteen eighty five, a CIA officer named Aldrich Ames walked into the Soviet Embassy in Washington.\n\nHe had been meeting a Soviet diplomat there with the CIA's blessing. The agency thought he was sizing the man up as a possible source.\n\nAt the reception desk, Ames handed the duty officer an envelope and asked for the diplomat by name. The letter inside was meant for the most senior KGB officer in the embassy. The duty officer nodded.\n\nInside were two or three CIA cases, Soviets who had offered to work for the Americans. Ames believed they were double agents, really loyal to the KGB, so he thought he was giving away nothing. To prove who he was, he added a page from a CIA directory with his own name highlighted. And he asked for fifty thousand dollars.\n\nA month later, on the fifteenth of May, he came back. A KGB officer passed him a note. They had agreed to pay.\n\nYears later, Ames told a court that he had conceived a kind of confidence game to play on the KGB. It did not stay a game. He went on to give them the names of Soviet officials who were truly helping American intelligence, and many of them were later executed. He was sentenced to life in prison without parole.\n\nLook at the front door. It began with an envelope, handed across a desk.\n",
+    "teaser": "He thought he was selling them nothing. He asked for fifty thousand dollars.",
+    "detail": "Conviction status: convicted. The walk in of 16 April 1985, the envelope, the letter's contents, the request for fifty thousand dollars and the return on 15 May are from the Department of Defense Security Institute's Security Awareness Bulletin 4-94, which reprints the Senate Intelligence Committee's findings, drawing on the statement of facts Ames agreed to at his plea. The Los Angeles Times of 29 April 1994 independently reports, from the court hearing, the April 1985 start, the confidence game, the fifty thousand dollars, the executions and the life sentence. The house and its address are from the Evening Star of 1951 and 1957. The diplomat, Sergey Chuvakhin, is not named in the script. Ames is believed to be alive and serving his sentence (involvesLivingPeople true); he was convicted, so nothing is told as alleged. Uncertain: no fetched source places the 1985 embassy in this house in so many words (see the position note above).",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/dc-an-envelope-at-the-desk/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 94.3,
+        "audioBytes": 1510129
+      }
+    ],
+    "tags": [
+      "washington",
+      "sixteenth-street",
+      "scandal",
+      "spies",
+      "aldrich-ames",
+      "cia",
+      "kgb",
+      "soviet-embassy",
+      "cold-war",
+      "espionage"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": true,
+      "convictionStatus": "convicted",
+      "reviewedBy": "James (owner), approved 2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "contentWarning": "This echo concerns espionage by a CIA officer, whose betrayals cost lives, and his conviction. No violence is described."
+    },
+    "remoteness": 0.13
+  },
+  {
     "id": "dc-an-unearthly-pause",
     "title": "An Unearthly Pause",
     "summary": "On 28 January 1922, the weight of a record snowfall brought down the roof of the Knickerbocker Theater. Nearly a hundred people died.",
@@ -9817,6 +10211,63 @@ export const LIBRARY: readonly Echo[] = [
       "knickerbocker-theater",
       "snowstorm",
       "disaster"
+    ],
+    "remoteness": 1
+  },
+  {
+    "id": "dc-back-in-fifteen-minutes",
+    "title": "Back in Fifteen Minutes",
+    "summary": "In 1985 a KGB defector got up from dinner with his CIA handler here, walked out, and went back to the Soviets.",
+    "point": {
+      "at": {
+        "lat": 38.90745,
+        "lng": -77.06275
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Wisconsin Avenue NW at Dumbarton Street, site of Au Pied de Cochon, Georgetown, Washington, D.C."
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 102,
+    "minAge": 12,
+    "quality": 0.78,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at this corner of Wisconsin Avenue. In November nineteen eighty five there was a small, rather noisy French restaurant here, Au Pied de Cochon. In French, the name means the pig's foot.\n\nOne Saturday night a Russian sat down to dinner here with his CIA handler. His name was Vitaly Yurchenko. The State Department had described him as a defector, a senior officer of the KGB. That August he had walked into the American Embassy in Rome and asked for asylum.\n\nABC News reported what happened at the table. Yurchenko asked his companion, what would you do if I walked out? Would you shoot me?\n\nNo, of course not, said the CIA man. We don't treat defectors that way.\n\nSo Yurchenko got up and left. On his way out, it was reported, he said, if I'm not back in fifteen minutes, don't blame yourself. Nobody followed him. The Soviet compound was little more than a mile away.\n\nOn Monday he held a news conference at the Soviet Embassy. He said the CIA had abducted him in Rome and drugged him. The State Department called that completely false.\n\nOn Wednesday he left Washington on an Aeroflot jet. He grinned and waved to reporters, and answered no questions.\n\nA senator on the intelligence committee put the choice plainly. Either a real defector had been allowed just to walk away, or the Americans had been fooled by a double agent.\n\nLook at the corner. He was not back in fifteen minutes.\n",
+    "teaser": "Would you shoot me? No, of course not. So he left.",
+    "detail": "No one was charged with anything, so this is history, not true crime. The restaurant, its name, the \"would you shoot me\" exchange (attributed aloud to ABC News, as the Los Angeles Times did), the fifteen minutes (attributed: \"it was reported\"), the mile to the Soviet compound and Senator Leahy's either-or are from the Los Angeles Times of 6 and 7 November 1985. The single handler, the lack of any tail, the news conference, the State Department's reply and the Aeroflot departure are from the Chicago Tribune of 5, 7 and 10 November 1985. Yurchenko's own claim of abduction is told as his claim. Whether he was a genuine defector is still argued, and the script leaves it as the senator's question. Yurchenko's fate after 1985 is not reliably reported, so the script says nothing about it. Leahy is named in the detail only.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-back-in-fifteen-minutes/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 101.7,
+        "audioBytes": 1628412
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Yurchenko",
+        "say": "yur-CHEN-koh"
+      },
+      {
+        "written": "Au Pied de Cochon",
+        "say": "oh pee-AY duh koh-SHON"
+      }
+    ],
+    "tags": [
+      "washington",
+      "georgetown",
+      "wisconsin-avenue",
+      "scandal",
+      "spies",
+      "yurchenko",
+      "kgb",
+      "cia",
+      "cold-war",
+      "defector"
     ],
     "remoteness": 1
   },
@@ -10511,6 +10962,112 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1
   },
   {
+    "id": "dc-one-of-these-witnesses",
+    "title": "One of These Witnesses",
+    "summary": "In 1948 Alger Hiss and Whittaker Chambers met face to face here. The chairman said one would be tried for perjury.",
+    "point": {
+      "at": {
+        "lat": 38.88725,
+        "lng": -77.0079
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Cannon House Office Building, Independence Avenue and New Jersey Avenue SE, Washington, D.C."
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 92,
+    "minAge": 16,
+    "quality": 0.76,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the corner of the House office building across the avenue, the Cannon Building. It is the oldest congressional office building. At the back of its rotunda, twin marble staircases lead up to the Caucus Room.\n\nOn the twenty fifth of August, nineteen forty eight, that room was packed. The House Committee on Un-American Activities had brought two men face to face.\n\nOne was Whittaker Chambers, a senior editor of Time Magazine, who said he had once been a Communist. He had told the committee that a former State Department official had belonged to an underground Communist group in the government.\n\nThe other was that official. Alger Hiss.\n\nBefore the questions began, the chairman made a promise. As a result of this hearing, he said, certainly one of these witnesses will be tried for perjury.\n\nHiss was asked to stand. So was Chambers, fifteen feet away. Have you ever seen the individual who is standing? I have, said Hiss. I identify him as George Crosley.\n\nThe chairman was right, and it was Hiss. In January nineteen fifty, a federal jury in New York convicted him of perjury on both counts. One was for denying that he gave government secrets to Chambers. He was sentenced to five years in prison.\n\nHiss would not accept it. It just seems impossible, he was quoted as saying, that any one would believe Chambers, the admitted perjurer.\n\nLook up at the building. Two men stood up in that room, and before a single question was asked, the chairman had said that one of them would be tried.\n",
+    "teaser": "Certainly one of these witnesses will be tried for perjury.",
+    "detail": "Conviction status: convicted. Hiss was convicted of perjury on two counts on 21 January 1950, at his second trial, and sentenced to five years (Evening Star staff report of 22 January 1950; Associated Press reports in the Daily Alaska Empire of 24 January 1950 and the Evening Star of 23 January and 2 May 1950). The hearing of 25 August 1948 in the caucus room \"of the old House Office Building\", the chairman's warning, the standing identification and \"George Crosley\" are from Miriam Ottenberg's report in the Evening Star of 25 August 1948. The Architect of the Capitol confirms the Old House Office Building is the Cannon Building, the oldest congressional office building, with its Caucus Room up twin staircases behind the rotunda. Hiss maintained his innocence for the rest of his life; the script says he would not accept the verdict, in his own quoted words. Everyone named is dead. The statute of limitations meant he could not be charged with espionage itself (Evening Star, 23 January 1950); the script says perjury and nothing more.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/dc-one-of-these-witnesses/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 91.8,
+        "audioBytes": 1469169
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Hiss",
+        "say": "HISS"
+      }
+    ],
+    "tags": [
+      "washington",
+      "capitol-hill",
+      "cannon-building",
+      "scandal",
+      "spies",
+      "alger-hiss",
+      "whittaker-chambers",
+      "huac",
+      "cold-war",
+      "perjury"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "convicted",
+      "reviewedBy": "James (owner), approved 2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "contentWarning": "This echo concerns a Cold War spy accusation and a perjury conviction. No violence is described."
+    },
+    "remoteness": 0
+  },
+  {
+    "id": "dc-open-house-at-the-quorum-club",
+    "title": "Open House at the Quorum Club",
+    "summary": "As the Bobby Baker scandal broke in 1963, a private club for Senate aides and lobbyists let the press in for one hour.",
+    "point": {
+      "at": {
+        "lat": 38.89375,
+        "lng": -77.00535
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "First Street and C Street NE, site of the Carroll Arms Hotel, Capitol Hill, Washington, D.C."
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 103,
+    "minAge": 12,
+    "quality": 0.7,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look around this crossing, First and C Streets, North East. In nineteen sixty three, a hotel stood here, the Carroll Arms, just across the street from the new Senate office building. Upstairs, on the second floor, three rooms held a private club. The Quorum Club.\n\nIt had opened in nineteen sixty one, for Senate staff, lobbyists and their guests. Drinks were a dollar apiece. Membership was limited to two hundred.\n\nOne of its founders was Bobby Baker, the secretary to the Senate's Democratic majority. On the seventh of October, nineteen sixty three, with senators waiting to question him about his business ventures, Baker resigned. Three days later the Senate voted to investigate.\n\nAnd suddenly everyone wanted to know about the club upstairs. The talk was of a hideaway, for members of Congress, lobbyists and playgirls.\n\nSo on the last day of October, the club did something it had never done. It opened its doors to the press, from ten in the morning until eleven.\n\nReporters and photographers trooped through the three rooms. The club's treasurer, who also owned the hotel, leaned on the bar and said it was nothing of the kind. There seemed to be a feeling, he said, that the Q Club was a secretive organization and a hideaway. That wasn't the image we wanted.\n\nBobby Baker was nowhere to be seen.\n\nAnd since the story broke, the treasurer said, not one member had dropped out. In the last few days, the club had voted to take in five more.\n",
+    "teaser": "Not a hideaway, said the man leaning on the bar.",
+    "detail": "Everything here is from the Evening Star: the club's founding, rooms, prices and membership limit (27 October 1963), the Senate inquiry and its timing (29 October 1963), and the press open house, the treasurer's words, the five new members and Baker's resignation on 7 October (31 October 1963). Three pages of one paper are one source, so this is single-source; a second paper's report of the open house would corroborate it. Baker was later convicted (in 1967) of tax evasion, theft and conspiracy, but no fetched source covers that, so the script ends in 1963 and the echo is history, not true crime. The treasurer, Thomas Pickford, is not named because whether he is alive is unknown. The woman the Star mentions in connection with the club, who was sent back to Germany, is not mentioned; she was never charged with anything.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-open-house-at-the-quorum-club/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 103.2,
+        "audioBytes": 1652235
+      }
+    ],
+    "tags": [
+      "washington",
+      "capitol-hill",
+      "scandal",
+      "bobby-baker",
+      "quorum-club",
+      "carroll-arms",
+      "senate",
+      "lobbying"
+    ],
+    "remoteness": 0
+  },
+  {
     "id": "dc-perseverance",
     "title": "Perseverance",
     "summary": "President John Quincy Adams struck a tree stump breaking ground for this canal. The railroad started the same day, and won.",
@@ -10646,7 +11203,7 @@ export const LIBRARY: readonly Echo[] = [
       "mary-mcleod-bethune",
       "black-history"
     ],
-    "remoteness": 0.67
+    "remoteness": 0.61
   },
   {
     "id": "dc-saved-by-a-mistake",
@@ -10960,6 +11517,57 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.16
   },
   {
+    "id": "dc-swallowed-the-bait",
+    "title": "Swallowed the Bait",
+    "summary": "In 1862 a Confederate spy and her daughter, eight, were held in a prison here. She left ink for the guards to find.",
+    "point": {
+      "at": {
+        "lat": 38.8912,
+        "lng": -77.005
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "First Street NE near A Street, site of the Old Capitol Prison, Capitol Hill, Washington, D.C."
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 110,
+    "minAge": 0,
+    "quality": 0.78,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along First Street. During the Civil War, a prison stood close to here, at First and A Streets, North East. It was called the Old Capitol.\n\nIn January eighteen sixty two, two women were brought here from a house on Sixteenth Street, where they had been held under guard. One of them was Rose Greenhow, a Washington hostess the Union knew as a dangerous agent of the South. The Library of Congress still files her photograph under two words. Confederate spy.\n\nHer daughter came with her. Little Rose was eight.\n\nGreenhow wrote down everything. Her room was about ten feet by twelve, with a straw bed. On her second day, a carpenter came to put bars on the windows.\n\nHer letters, she wrote, went through the detective police, who treated them with chemicals to bring out the treason. The newspapers reported that she used invisible ink. She wrote that she had left a preparation in plain sight on purpose, to draw attention away from her real means of communication. And they have swallowed the bait.\n\nLittle Rose had a plan of her own. Never fear, she told her mother. I intend to dance and sing Jeff Davis is coming, just to scare them.\n\nOne January day Greenhow stood at her barred window, to get out of the smoke and dust. A guard below shouted at her to go away from the window, and raised his musket. She did not move.\n\nAt the start of June, mother and daughter were released and sent South.\n\nLook along the street again. A guard with a musket. A woman at the window who would not move. And upstairs, a girl of eight, planning a song.\n",
+    "teaser": "She left the ink where they would find it. They took the bait.",
+    "detail": "Rose O'Neal Greenhow was arrested in August 1861, held in her own house on Sixteenth Street, moved to the Old Capitol Prison in January 1862 and sent South in early June 1862; she was never tried. Her room, the bars, the chemical tests, the decoy ink, Little Rose's song and the guard at the window are from her own book, My Imprisonment and the First Year of Abolition Rule at Washington (London, 1863), and are told as her account (\"she wrote\"). The transfer from her house is from the Chicago Tribune of 20 January 1862; her imprisonment in her own house and the Union view of her as \"a dangerous agent of a hostile army\" from the New York Herald of 16 December 1861; the release from the Louisville Daily Journal of 3 June 1862 (dateline Baltimore, 2 June). The prison's corner and the \"Confederate spy\" photograph title are from the Library of Congress catalogue. Her death at sea off Fort Fisher in 1864 is a separate echo (fort-fisher-the-spy-who-tried-to-row-ashore); this one is only the prison. The second woman, Mrs. Baxley, is not named.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-swallowed-the-bait/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 109.8,
+        "audioBytes": 1758397
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Greenhow",
+        "say": "GREEN-how"
+      }
+    ],
+    "tags": [
+      "washington",
+      "capitol-hill",
+      "old-capitol-prison",
+      "scandal",
+      "spies",
+      "rose-greenhow",
+      "civil-war",
+      "confederacy"
+    ],
+    "remoteness": 0
+  },
+  {
     "id": "dc-the-admiral-went-home",
     "title": "The Admiral Went Home",
     "summary": "Dupont Circle is named for a statue that is not here. The admiral's family took him back to Delaware.",
@@ -11000,7 +11608,7 @@ export const LIBRARY: readonly Echo[] = [
       "fountain",
       "civil-war"
     ],
-    "remoteness": 0.55
+    "remoteness": 0.46
   },
   {
     "id": "dc-the-ballroom-ward",
@@ -11188,7 +11796,61 @@ export const LIBRARY: readonly Echo[] = [
       "skyline",
       "architecture"
     ],
-    "remoteness": 0.62
+    "remoteness": 0.49
+  },
+  {
+    "id": "dc-the-buttons-popped-off",
+    "title": "The Buttons Popped Off",
+    "summary": "In 1974 police stopped a congressman's car by the Tidal Basin. A dancer jumped into the water, and his power began to sink.",
+    "point": {
+      "at": {
+        "lat": 38.8826,
+        "lng": -77.0353
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Tidal Basin, near the Jefferson Memorial, Washington, D.C."
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 97,
+    "minAge": 12,
+    "quality": 0.74,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out over the Tidal Basin, toward the Jefferson Memorial. Early on the seventh of October, nineteen seventy four, police stopped a weaving car near here.\n\nIn the car was one of the most powerful men in Washington. Wilbur Mills of Arkansas, for sixteen years chairman of the House Ways and Means Committee. He wrote much of the federal tax code. He was once called the most tightly buttoned up man in Congress.\n\nA woman jumped from the car and ran. She was Annabel Battistella, a burlesque dancer known on stage as Fanne Foxe, the Argentine firecracker. She leapt into the water, near the Jefferson Memorial.\n\nMills stepped out of the car, his face bleeding.\n\nAt first a spokesman denied that Mills had been in the car at all. Then Mills said she was one of the neighbors and friends he had been entertaining, that she had been taken ill, and that in a struggle her elbow had broken his glasses.\n\nThe truth came out, slowly. Ten days later, back in Arkansas, he said it himself. I drank some champagne when I knew it went to my head quickly. And it did.\n\nHe was elected again a month later. But he stepped down as chairman, and both the committee and its chairman lost much of their power. He went into hospital for his alcoholism, and spent his later years talking to anyone who would listen about the need for treatment.\n\nLook at the water. As one newspaper put it, this is where the buttons popped off.\n",
+    "teaser": "The most tightly buttoned man in Congress, by the water, at night.",
+    "detail": "Single source: the Los Angeles Times obituary of Mills (Times Wire Services, 3 May 1992), which gives the stop, the leap, the bleeding face, the denials, the elbow, the champagne line, the re-election and the loss of power, and his later work on alcoholism. A second independent source was not reachable: the Washington Post's 2021 obituary of Battistella and the contemporary 1974 reports are behind hosts this session could not reach. Mills died in 1992 and Battistella in 2021 (the latter from search results, not a fetched page), so no one named is alive; Battistella was public in the story under her stage name. No one was charged, so this is history. The weaving car and the leap are the paper's words; nothing about her is said beyond what it printed.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-buttons-popped-off/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 97.2,
+        "audioBytes": 1555687
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Battistella",
+        "say": "bat-ih-STEL-uh"
+      },
+      {
+        "written": "Fanne Foxe",
+        "say": "FANNY FOX"
+      }
+    ],
+    "tags": [
+      "washington",
+      "tidal-basin",
+      "jefferson-memorial",
+      "scandal",
+      "wilbur-mills",
+      "fanne-foxe",
+      "congress"
+    ],
+    "remoteness": 0.6
   },
   {
     "id": "dc-the-caretaker-heard-nothing",
@@ -11364,7 +12026,7 @@ export const LIBRARY: readonly Echo[] = [
       "union-station",
       "railways"
     ],
-    "remoteness": 0.4
+    "remoteness": 0.22
   },
   {
     "id": "dc-the-epicurean-eating-house",
@@ -11676,7 +12338,7 @@ export const LIBRARY: readonly Echo[] = [
       "capitol-hill",
       "womens-rights"
     ],
-    "remoteness": 0.11
+    "remoteness": 0
   },
   {
     "id": "dc-the-knight-of-the-feather-duster",
@@ -11899,7 +12561,58 @@ export const LIBRARY: readonly Echo[] = [
       "food",
       "civil-rights"
     ],
-    "remoteness": 0.99
+    "remoteness": 0.9
+  },
+  {
+    "id": "dc-the-little-green-house",
+    "title": "The Little Green House",
+    "summary": "In the Harding years a green house on K Street meant liquor deals in Prohibition. Later, no one recalled who lived there.",
+    "point": {
+      "at": {
+        "lat": 38.90245,
+        "lng": -77.03755
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "1600 block of K Street NW, near Farragut Square, Washington, D.C."
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 92,
+    "minAge": 12,
+    "quality": 0.72,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look along this block of K Street. In the early nineteen twenties a small house stood on it that the whole country came to know as the Little Green House on K Street.\n\nIt was not grand. A reporter who went to look at it in March nineteen twenty four wrote that, beside the mansions of the city, it was little better than a garage. Its front was green stone, the pale apple color of shallow water in the tropics.\n\nThe man who lived there was Howard Mannington, of Ohio. He had arrived in Washington just after President Harding's inauguration, and he knew Harding's Ohio friends.\n\nLiquor was against the law. But in April nineteen twenty four, a man who had worked for Mannington told a Senate committee that twenty or thirty cases of liquor at a time were delivered to the little green house by express. A revenue man came with them.\n\nIn May, another witness said he had lived in the house with Mannington. He told the committee that deals in liquor permits and tax cases were arranged there, and that he had split twenty thousand dollars with Mannington.\n\nMannington himself flatly refused to appear before the committee. That was the testimony, and it was never answered.\n\nBy then the house had a deserted look by day. Fraternity boys had moved in.\n\nAnd the reporter asked a dozen men who had known Mannington who else had lived in the Little Green House. Scratch their heads as they would, they could not recall the name of a single person.\n",
+    "teaser": "Twenty or thirty cases of liquor at a time, delivered by express. With a revenue man.",
+    "detail": "The house, its green stone, the garage comparison, the fraternity and the forgotten tenants are from Robert T. Small's dispatch in the San Antonio Light of 26 March 1924. The liquor deliveries (the testimony of Daniel F. Smith, who had worked for Mannington), the permit deals and the twenty thousand dollars (the testimony of M. P. Kraffmiller) and Mannington's refusal are from the Washington Daily News of 4 April, 16 April and 7 May 1924, three pages of one paper and so one source. None of it was tested at a trial, so the script calls it testimony and names nobody but Mannington and the president. The Senate committee was the Brookhart committee investigating Attorney General Harry Daugherty. Often filed with Teapot Dome, this is the Daugherty and Justice Department side of the Harding scandals.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-the-little-green-house/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 92.1,
+        "audioBytes": 1475438
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Mannington",
+        "say": "MAN-ing-tun"
+      }
+    ],
+    "tags": [
+      "washington",
+      "k-street",
+      "farragut-square",
+      "scandal",
+      "harding",
+      "ohio-gang",
+      "prohibition",
+      "corruption"
+    ],
+    "remoteness": 0
   },
   {
     "id": "dc-the-little-stone-house-that-moved",
@@ -13330,6 +14043,57 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.02
   },
   {
+    "id": "dc-where-they-will-do-most-good",
+    "title": "Where They Will Do Most Good",
+    "summary": "In 1873 the House condemned Oakes Ames for handing out railroad shares in Congress. His letter said where he put them.",
+    "point": {
+      "at": {
+        "lat": 38.8889,
+        "lng": -77.0085
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "House wing, East Front of the United States Capitol, Washington, D.C."
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 96,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up at the south wing of the Capitol, the House side. In February eighteen seventy three, inside it, the House of Representatives sat in judgement on one of its own members, Oakes Ames of Massachusetts.\n\nAmes made shovels. His family's shovels were used all over the world. He also had money in the railroad being built across the continent, through a company called Credit Mobilier.\n\nIn eighteen seventy two, a lawsuit brought out two of his private letters, and the newspapers printed them. In one, he listed shares he had handed to members of Congress. Four from Massachusetts. One from New Hampshire. And I have three to place, he wrote, which I shall put where they will do most good to us. I am here on the spot, he added, and can better judge where they should go.\n\nThe House argued about him for three days. A committee wanted him expelled. Instead, the House voted that it absolutely condemned what he had done. One hundred and eighty one members voted for it.\n\nThat morning Ames had sat in a front seat with a large and handsome bouquet on his desk. It was a gift from the wife of General Sherman.\n\nThe other members named in the affair escaped any vote at all.\n\nAmes went home to Easton, Massachusetts. Ten weeks later, in May, he died.\n\nLook at the House wing again. On that point, at least, his letter was honest. He was here on the spot.\n",
+    "teaser": "Three shares left to place, he wrote, where they will do most good to us.",
+    "detail": "The letter is quoted from the Chicago Tribune's reprint of 12 September 1872, which says the letters came out when H. S. McComb sued the Credit Mobilier and produced them under oath. The debate, the committee's call for expulsion, the substitute resolution and the vote of 27 February 1873 are from the New York Herald and the Chicago Tribune of 28 February 1873, each with its own Washington correspondent. The Tribune counts the vote on the Ames resolution as 181 to 35 in one place and 181 to 86 (an OCR misreading of 36, probably) in another, so the script gives only the 181. The bouquet is from the Tribune alone, so it rests on one source. The death and the shovels are from the Tribune of 9 May 1873. James Brooks of New York, censured the same day, is left out to keep the echo to one man.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/dc-where-they-will-do-most-good/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 96.1,
+        "audioBytes": 1538968
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Mobilier",
+        "say": "moh-BEEL-yay"
+      }
+    ],
+    "tags": [
+      "washington",
+      "capitol-hill",
+      "capitol",
+      "scandal",
+      "credit-mobilier",
+      "oakes-ames",
+      "congress",
+      "corruption"
+    ],
+    "remoteness": 0
+  },
+  {
     "id": "dc-white-before-the-fire",
     "title": "White Before the Fire",
     "summary": "The famous story of why the White House is white has a dating problem.",
@@ -13409,7 +14173,7 @@ export const LIBRARY: readonly Echo[] = [
       "carter-g-woodson",
       "langston-hughes"
     ],
-    "remoteness": 0.76
+    "remoteness": 0.75
   },
   {
     "id": "dc-written-in-the-dark",
@@ -19165,6 +19929,60 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.25
   },
   {
+    "id": "new-orleans-machine-guns-across-the-street",
+    "title": "Machine Guns Across the Street",
+    "summary": "In July 1934 Huey Long's Guardsmen seized the voting office beside City Hall. Machine guns looked across at the mayor.",
+    "point": {
+      "at": {
+        "lat": 29.9486,
+        "lng": -90.0708
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Gallier Hall (former New Orleans City Hall), 545 St. Charles Avenue, New Orleans, Louisiana"
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 87,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the white columns of Gallier Hall. In the nineteen thirties, this was New Orleans City Hall.\n\nThe Mayor in here was T. Semmes Walmsley. Once a friend of Huey Long, the Kingfish. By the summer of nineteen thirty four, his bitter enemy.\n\nOne Monday night at the end of July, more than a score of National Guardsmen came to the city hall annex, battered in the door, and took the lists of qualified voters. The Governor, a Long ally, declared partial martial law around City Hall.\n\nWithin two days, machine guns looked from the windows across a narrow street toward City Hall.\n\nLong said he was cleaning up vice and corruption in the city. Walmsley said that was a ruse to seize the city government. He called five hundred more police to duty, which made fourteen hundred, and issued them riot guns. Long had five hundred Guardsmen waiting at Jackson Barracks.\n\nOn the radio, the Mayor called the Senator a cringing coward. We will never surrender to this madman, he said.\n\nIn September, at the primary, Long brought about two thousand fully armed Guardsmen into the city. His candidates trounced the Mayor's.\n\nStand here a moment, and picture it. Ordinary people stared wide eyed at the soldiers in the voting office.\n\nSome stopped to laugh and joke with them.\n",
+    "teaser": "The Governor's soldiers held the voting office. The Mayor's police held City Hall.",
+    "detail": "The seizure of the registration office \"last night\" (Monday 30 July 1934), the battered door and the voter lists, partial martial law, the machine guns \"across a narrow street toward City Hall\", the police at 1,400 with riot guns, the 500 Guardsmen at Jackson Barracks, the radio insults, \"We will never surrender to this madman\" and the onlookers laughing with the soldiers are from Associated Press reports in the McAllen Daily Monitor of 31 July and the Evening Star of 1 August 1934. The Plentywood Herald's weekly news summary of 9 August 1934 independently gives the seizure of the registration office, the 1,400 police and the \"moral crusade\" and \"smoke screen\" exchange. The September primary, the 2,000 Guardsmen and the result are from the Evening Star of 28 December 1934. Gallier Hall as City Hall is from the Historic American Buildings Survey record (City Hall, 545 Saint Charles Street, documentation compiled after 1933). Nobody named is alive. No shots or injuries are described because none are in the sources.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-machine-guns-across-the-street/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 86.9,
+        "audioBytes": 1391429
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Walmsley",
+        "say": "WAWMZ-lee"
+      },
+      {
+        "written": "Gallier",
+        "say": "GAL-ee-ur"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "cbd",
+      "lafayette-square",
+      "scandal",
+      "huey-long",
+      "walmsley",
+      "national-guard"
+    ],
+    "remoteness": 0.32
+  },
+  {
     "id": "new-orleans-named-for-empty-ground",
     "title": "Named for Empty Ground",
     "summary": "Esplanade Avenue, the grand street of Creole New Orleans, takes its name from the cleared ground outside a fort.",
@@ -19909,6 +20727,51 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "new-orleans-the-deduct-box",
+    "title": "The Deduct Box",
+    "summary": "Huey Long kept a suite here. State workers paid into his locked campaign box, which vanished after he was shot.",
+    "point": {
+      "at": {
+        "lat": 29.95435,
+        "lng": -90.072
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "The Roosevelt Hotel, Baronne Street, New Orleans, Louisiana"
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 82,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "contested",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the Roosevelt Hotel. In the nineteen twenties and thirties, this was the place to stay in New Orleans. And Huey Long, the Kingfish, kept a suite here.\n\nLong was governor of Louisiana, and then a United States senator. NPR, reporting on this hotel, called him ruthless, corrupt, and massively powerful.\n\nHistorians say that every state employee who got a job from Long was expected to contribute to his campaign fund. Long had no base of wealthy donors, and he reasoned that this was a fair source of money. The fund was kept in a locked box. People called it the deduct box.\n\nSome say he carried that box under his arm through this lobby, on his way up to his suite.\n\nIn September nineteen thirty five, Long was assassinated. The box was believed to have been stolen by one of his associates.\n\nAfter Hurricane Katrina, the hotel was closed for nearly four years, and rebuilt for a hundred and forty five million dollars. Many believe Long hid the box in a wall. Even the renovation did not turn it up.\n\nOne of the hotel's managers put it this way. There are a lot of colorful things that may or may not have happened in this room.\n\nBut the deduct box? We sure haven't been able to find it.\n",
+    "teaser": "Every state job came with a contribution. The box it went into has never been found.",
+    "detail": "The hotel's 1920s and 1930s heyday, Long's suite, \"ruthless, corrupt and gained massive political power\", the deduct box as his political slush fund, the wall legend, the box not found in the renovation and the manager's words (Mark Wilson, the hotel's director of sales and marketing, not named aloud because he may be living and is not a public figure in this subject) are from NPR (2009). Long's offices and years, \"historians say\" every state employee who received a job from Long was expected to contribute, the locked box, the lack of wealthy contributors, \"tucked under his arm\", the assassination in September 1935, the box believed stolen by an associate, the $145 million renovation and the closure after Katrina are from NBC News (2009, Associated Press). NPR and the AP are independent. The script turns Wilson's \"There's\" into \"There are\" and \"we sure haven't been able to find it\" is quoted exactly. Nobody named aloud is alive.",
+    "certaintyNote": "That Long's state employees were expected to pay into a campaign fund kept in a locked box is what historians say, according to the Associated Press (2009). That he carried it to his suite here, and that it was hidden in a wall, are legend, and the script says so (\"some say\", \"many believe\"). That it has never been found is the hotel's own statement to NPR and the AP.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-deduct-box/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 81.9,
+        "audioBytes": 1311181
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "cbd",
+      "scandal",
+      "corruption",
+      "huey-long",
+      "roosevelt-hotel",
+      "deduct-box"
+    ],
+    "remoteness": 0.2
+  },
+  {
     "id": "new-orleans-the-duke-on-the-street-sign",
     "title": "The Duke on the Street Sign",
     "summary": "Bourbon Street was named for a French duke, not a drink. The streets around it are a family tree of the French court.",
@@ -20479,6 +21342,69 @@ export const LIBRARY: readonly Echo[] = [
       "french-quarter",
       "churches",
       "spanish-colonial"
+    ],
+    "remoteness": 0
+  },
+  {
+    "id": "new-orleans-the-ketch-in-the-river",
+    "title": "The Ketch in the River",
+    "summary": "In 1806 General Wilkinson seized Burr's men without warrants and held two on a ketch in the river. He was Spain's Agent 13.",
+    "point": {
+      "at": {
+        "lat": 29.9542,
+        "lng": -90.063
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Woldenberg Riverfront Park, on the Mississippi, French Quarter, New Orleans, Louisiana"
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 127,
+    "minAge": 0,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out to the middle of the river.\n\nIn December eighteen oh six, a United States bomb ketch lay out there with prisoners on board. The man who put them there was the senior officer of the United States Army, General James Wilkinson.\n\nWilkinson said that Aaron Burr, the man who had fought the duel with Hamilton, was plotting against the country. He wrote to the Governor, William Claiborne, of Burr and his lawless banditti from the Ohio River. He asked for martial law, and for the writ of habeas corpus to be suspended. Claiborne refused.\n\nSo Wilkinson acted on his own. On the fourteenth of December, he had a doctor, Erick Bollman, arrested and held in some unknown place. A judge was asked for a writ of habeas corpus. By the time it was granted, Bollman had been put on a vessel and sent down the river.\n\nTwo more men, Ogden and Swartwout, were held on the ketch. Another judge granted a writ for them. But the city was so frightened that no boat could be found to take the officer of the court out to the ketch. The next day, for a large sum of money, a boat was found. By then, Swartwout was gone.\n\nWilkinson told the court that he took on himself all responsibility.\n\nBollman and Swartwout were taken to Washington. In February eighteen oh seven, the Supreme Court ordered them discharged. Their lawyer had put it plainly. The laws were open in New Orleans.\n\nAnd Wilkinson? The National Park Service says that in seventeen eighty seven, on a trip to New Orleans, he swore allegiance to the King of Spain, and worked for Spain as Agent Thirteen. He traded secrets for Spanish money for decades. It was suspected, but never proven, and he was never convicted.\n\nA New Orleans historian, Charles Gayarré, had a phrase for him. The pensioner and the tool of Spain.\n",
+    "teaser": "No boat in the city would take the judge's man out to the ketch.",
+    "detail": "The arrests, Claiborne's refusals, the writs, Bollman sent down the river, Ogden and Swartwout on the bomb ketch \"lying in the middle of the river\", no boat to be had, the large sum, Swartwout gone, and Wilkinson's reply are from Charles Gayarré's History of Louisiana: The American Domination (1866), which cites Martin's History of Louisiana and Claiborne's letters. The seizure \"by orders of a military officer\", the transport to Washington, the discharge in February 1807 and counsel's \"The laws were open in New-Orleans\" are from the Supreme Court's report, Ex parte Bollman and Ex parte Swartwout (1807), 8 U.S. 75. Wilkinson's 1787 oath to the King of Spain, \"Agent 13\", the decades of trading secrets, \"suspected ... but never proven\", his post as Senior Officer of the Army and his exoneration by court-martial in 1811 are from the National Park Service (Saratoga). \"The pensioner and the tool of Spain\" is Gayarré's phrase, attributed aloud. Nobody named is alive. Wilkinson was never convicted of anything, and the script says so; the Spanish payments are told as the Park Service's account. That Gayarré was a New Orleans historian is general knowledge (he was born in the city and wrote the history cited), not quoted from a source. Kept under history rather than true crime because no one at its centre was convicted and no crime was proven in court.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-orleans-the-ketch-in-the-river/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 127.3,
+        "audioBytes": 2037594
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Wilkinson",
+        "say": "WILL-kin-sun"
+      },
+      {
+        "written": "Claiborne",
+        "say": "CLAY-born"
+      },
+      {
+        "written": "Swartwout",
+        "say": "SWART-out"
+      },
+      {
+        "written": "Gayarré",
+        "say": "GUY-uh-ray"
+      }
+    ],
+    "tags": [
+      "new-orleans",
+      "french-quarter",
+      "riverfront",
+      "scandal",
+      "spies",
+      "wilkinson",
+      "burr-conspiracy",
+      "habeas-corpus"
     ],
     "remoteness": 0
   },
@@ -21478,7 +22404,7 @@ export const LIBRARY: readonly Echo[] = [
       "family",
       "sculpture"
     ],
-    "remoteness": 0.18
+    "remoteness": 0
   },
   {
     "id": "new-york-a-hole-in-the-ground",
@@ -21737,7 +22663,7 @@ export const LIBRARY: readonly Echo[] = [
       "pushcarts",
       "italian-american"
     ],
-    "remoteness": 0.42
+    "remoteness": 0.36
   },
   {
     "id": "new-york-balto-and-togo",
@@ -21879,7 +22805,7 @@ export const LIBRARY: readonly Echo[] = [
       "theater",
       "nineteenth-century"
     ],
-    "remoteness": 0.47
+    "remoteness": 0.41
   },
   {
     "id": "new-york-born-and-died-upstairs",
@@ -21924,7 +22850,7 @@ export const LIBRARY: readonly Echo[] = [
       "greek-revival",
       "museum"
     ],
-    "remoteness": 0.88
+    "remoteness": 0.78
   },
   {
     "id": "new-york-crossing-brooklyn-ferry",
@@ -22057,7 +22983,7 @@ export const LIBRARY: readonly Echo[] = [
       "food",
       "family"
     ],
-    "remoteness": 0.67
+    "remoteness": 0.59
   },
   {
     "id": "new-york-easy-to-get-in",
@@ -22219,7 +23145,7 @@ export const LIBRARY: readonly Echo[] = [
       "lgbtq",
       "national-monument"
     ],
-    "remoteness": 0.94
+    "remoteness": 0.69
   },
   {
     "id": "new-york-hey-doctor",
@@ -22276,6 +23202,48 @@ export const LIBRARY: readonly Echo[] = [
       "contentWarning": "This echo describes the kidnapping and death of a baby, and an execution. Nothing is described in detail."
     },
     "remoteness": 1
+  },
+  {
+    "id": "new-york-i-shall-obey-myself",
+    "title": "I Shall Obey Myself",
+    "summary": "In June 1857 the mayor's police and the state's new police fought on these steps over a warrant for the mayor's arrest.",
+    "point": {
+      "at": {
+        "lat": 40.71185,
+        "lng": -74.0064
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "City Hall Park, by the fountain, facing the steps of City Hall, Lower Manhattan"
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 95,
+    "minAge": 10,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look past the fountain at the front steps of City Hall. In June eighteen fifty seven, two police forces fought each other on them.\n\nNew York had two because the state government and the city were at war. One force was the mayor's own Municipal Police. The other was the state's new Metropolitan Police. The mayor was Fernando Wood.\n\nThat morning, the street commissioner the Governor had appointed came to his office to work. The mayor's men told him to leave, and when he would not, they threw him out. The mayor had a candidate of his own for the post, the city's leading street contractor.\n\nA judge issued a warrant for the mayor's arrest. The coroner brought it to City Hall. He got as far as the mayor's office, where some twenty of the mayor's police stopped him at the rail, and he was put out.\n\nSo he came back with fifty Metropolitans. On these steps they were attacked by a crowd outside and the mayor's police from within, and driven back. Several of them were badly hurt.\n\nThen the militia came. The Seventh Regiment marched up and stood in front of City Hall. With bayonets outside his door, the mayor stopped resisting, the coroner served the warrant, and Fernando Wood went home under arrest.\n\nAt one point that day, the sheriff asked the militia's general a question. Whose authority did he recognise? Whom did he intend to obey?\n\nThe general said, Sir, I shall obey myself.\n",
+    "teaser": "Two police forces, one warrant, and the mayor on the wrong side of it.",
+    "detail": "The day is told from the New-York Tribune of 17 June 1857 (pages 4 to 6), which was hostile to Wood; its editorial language (\"ruffians\", \"rowdies\") is left out. The National Intelligencer of 18 June 1857 gives the fifty policemen, the warrant from Judge Hoffman, the street commissioner dispute and the state and city \"in conflict\". The Intelligencer also reports deaths; the Tribune of the same day says only that the recovery of one or two injured men was doubtful, so the script says \"badly hurt\" and no more. The Tribune also calls the regiment the \"National Guard\"; the script uses \"the Seventh Regiment\", which the Tribune uses too.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/new-york-i-shall-obey-myself/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 94.5,
+        "audioBytes": 1512219
+      }
+    ],
+    "tags": [
+      "new-york",
+      "city-hall-park",
+      "scandal",
+      "fernando-wood",
+      "police"
+    ],
+    "remoteness": 0
   },
   {
     "id": "new-york-in-their-good-suits",
@@ -22427,7 +23395,7 @@ export const LIBRARY: readonly Echo[] = [
       "lgbt",
       "landmark"
     ],
-    "remoteness": 0.94
+    "remoteness": 0.78
   },
   {
     "id": "new-york-launched-in-greenpoint",
@@ -22569,7 +23537,7 @@ export const LIBRARY: readonly Echo[] = [
       "narrow-house",
       "edna-st-vincent-millay"
     ],
-    "remoteness": 0.94
+    "remoteness": 0.86
   },
   {
     "id": "new-york-no-women-are-served",
@@ -22620,7 +23588,7 @@ export const LIBRARY: readonly Echo[] = [
       "womens-history",
       "mcsorleys"
     ],
-    "remoteness": 0.93
+    "remoteness": 0.7
   },
   {
     "id": "new-york-nobody-knows-her-name",
@@ -22707,7 +23675,7 @@ export const LIBRARY: readonly Echo[] = [
       "immigration",
       "frances-perkins"
     ],
-    "remoteness": 0.93
+    "remoteness": 0.67
   },
   {
     "id": "new-york-one-name-not-in-the-records",
@@ -23180,6 +24148,71 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.19
   },
   {
+    "id": "new-york-talk-of-a-duel",
+    "title": "Talk of a Duel",
+    "summary": "In June 1906 Harry Thaw shot Stanford White on the roof garden of Madison Square Garden, across this avenue.",
+    "point": {
+      "at": {
+        "lat": 40.7422,
+        "lng": -73.9871
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Madison Avenue at East 26th Street, opposite the New York Life Building, Madison Square, Manhattan"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 91,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across the avenue at the big insurance building with the gold top. Before it, the corner held Madison Square Garden, designed by the architects McKim, Mead and White.\n\nStanford White was one of the partners. And the Garden had a theatre on its roof.\n\nIn June nineteen oh six, the roof was showing the opening night of a musical called Mam'zelle Champagne. About a thousand people were there.\n\nWhite had spent the evening at his club, across the street. At five to eleven he walked over, went up to the roof, and sat at a table near the stage, his chin resting on his hand, listening to the music.\n\nHarry Thaw had been there all evening. He came from a well known Pittsburgh family. He was married to Evelyn Nesbit, an artists' model and chorus girl, and he blamed White for ruining his life with her. He was pale, and kept walking about the roof as if looking for someone.\n\nOn stage there had been talk of a duel. Thaw walked up to White's table, drew a revolver, and fired three times. White died almost at once.\n\nFor a moment, much of the audience thought the shooting was part of the play.\n\nThaw walked calmly toward the elevators, the gun held up and pointed at the sky, and handed it to a fireman.\n\nHe was tried for murder. The first jury could not agree. In February nineteen oh eight a second jury acquitted him, on the ground that he had been insane, and the judge sent him to the Matteawan asylum for the criminally insane.\n\nLook at the gold top again.\n\nWhite's firm built the Garden. Demolition began in May nineteen twenty five, to make room for the building you are looking at.\n",
+    "teaser": "The audience thought the shots were part of the show.",
+    "detail": "Conviction status: acquitted by reason of insanity, recorded as \"exonerated\" as the Sickles echo is, because the schema has no \"acquitted\"; the script says plainly that the jury acquitted him on the ground of insanity and that he was committed to an asylum. Nobody named is alive (Thaw died 1947, Nesbit 1967). The night itself is from the New-York Tribune of 26 June 1906, with the place and the arrest in the Evening Star of the same day; the trials and verdict are in the Evening Star of 1 February 1908 and the New-York Tribune of 2 February 1908. Injuries are not described; the Tribune's detail of where the shots struck is left out on purpose.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/new-york-talk-of-a-duel/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 91.4,
+        "audioBytes": 1463318
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Mam'zelle",
+        "say": "mam-ZEL"
+      },
+      {
+        "written": "Matteawan",
+        "say": "MAT-ee-uh-wahn"
+      },
+      {
+        "written": "Nesbit",
+        "say": "NEZ-bit"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "madison-square",
+      "scandal",
+      "stanford-white",
+      "thaw",
+      "nesbit"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "exonerated",
+      "reviewedBy": "James (owner), approved 2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "contentWarning": "This echo concerns a fatal shooting in 1906 and the trials that followed. Injuries are not described."
+    },
+    "remoteness": 0
+  },
+  {
     "id": "new-york-ten-thousand-answers",
     "title": "Ten Thousand Answers",
     "summary": "A teacher told young Arturo Schomburg his people had no history. He collected the proof. A poet's ashes now lie in its floor.",
@@ -23339,7 +24372,7 @@ export const LIBRARY: readonly Echo[] = [
       "folklore",
       "cholera"
     ],
-    "remoteness": 0.56
+    "remoteness": 0.47
   },
   {
     "id": "new-york-the-candlemaker-of-staten-island",
@@ -23860,7 +24893,7 @@ export const LIBRARY: readonly Echo[] = [
       "president",
       "replica"
     ],
-    "remoteness": 0.39
+    "remoteness": 0.15
   },
   {
     "id": "new-york-the-king-under-the-playground",
@@ -24095,7 +25128,7 @@ export const LIBRARY: readonly Echo[] = [
       "legend",
       "drink"
     ],
-    "remoteness": 0.15
+    "remoteness": 0
   },
   {
     "id": "new-york-the-millionaire-who-went-missing",
@@ -24151,7 +25184,7 @@ export const LIBRARY: readonly Echo[] = [
       "reviewedAt": "2026-11-10",
       "contentWarning": "This echo describes the theft of a body from a grave. Nothing is described in graphic detail."
     },
-    "remoteness": 0.84
+    "remoteness": 0.62
   },
   {
     "id": "new-york-the-others-are-still-awake",
@@ -24291,7 +25324,7 @@ export const LIBRARY: readonly Echo[] = [
       "steamboat",
       "landfill"
     ],
-    "remoteness": 0.15
+    "remoteness": 0.12
   },
   {
     "id": "new-york-the-prodigal-son-has-returned",
@@ -24426,7 +25459,64 @@ export const LIBRARY: readonly Echo[] = [
       "german-american",
       "disaster"
     ],
-    "remoteness": 1
+    "remoteness": 0.84
+  },
+  {
+    "id": "new-york-the-typewriter",
+    "title": "The Typewriter",
+    "summary": "The Rosenbergs were convicted of atomic spying here in 1951. The key witness later took back what he said about a typewriter.",
+    "point": {
+      "at": {
+        "lat": 40.7142,
+        "lng": -74.0023
+      },
+      "triggerRadiusKm": 0.05,
+      "place": "Foley Square, opposite the federal courthouse at 40 Centre Street, Lower Manhattan"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 98,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look across the square at the federal courthouse, the tall tower with the gold pyramid on top.\n\nIn March nineteen fifty one, a husband and wife went on trial in New York, accused of passing atomic secrets to the Soviet Union. Julius and Ethel Rosenberg. Their judge was Irving Kaufman, of the federal court here on Foley Square.\n\nThe government's star witness was Ethel's younger brother, David Greenglass. During the war he had been an Army machinist at Los Alamos, where the bomb was built. He testified that he had passed what he learned there to the Rosenbergs.\n\nAnd he said something else. He had seen his sister type up his handwritten notes, on a portable typewriter, in their New York apartment.\n\nOn the twenty ninth of March, the jury found them guilty. On the fifth of April, the judge sentenced them both to death. I consider your crime worse than murder, he told them.\n\nThey were executed at Sing Sing in June nineteen fifty three. They were the only people ever executed in the United States for Cold War espionage. Some historians have said the evidence against Ethel was weak, compared with the evidence against her husband.\n\nThen, in two thousand one, nearly fifty years after her death, her brother admitted he had lied under oath. He told a reporter that he did not know who had typed the notes. To this day, he said, I can't remember that the typing took place. He said it was likely his own wife who had typed them.\n\nIn two thousand fifteen, after his death, his grand jury testimony was finally released. It shows Julius at the centre of a spy ring.\n\nIt does not mention the typing.\n",
+    "teaser": "Her brother said he watched her type his notes. Nearly fifty years later he took it back.",
+    "detail": "Conviction status: convicted (Julius and Ethel Rosenberg, 29 March 1951; Evening Star of 29 March and 5 April 1951). Everyone named is dead: Julius and Ethel Rosenberg (1953), David Greenglass (2014), Ruth Greenglass (2008, not named aloud), Irving Kaufman (1992). The Rosenbergs' two sons are alive and are deliberately not named or mentioned. Morton Sobell, convicted with them, is not named. The recantation is from CBS News (2001, with AP), corroborated by NPR (2015) and CBS News (2015, AP); the grand jury release is in both 2015 reports. \"Only people executed for Cold War espionage\" is CBS/AP's claim. The script does not say Ethel was innocent; it says what her brother later said and what the released testimony does and does not contain. Execution is mentioned, not described.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/new-york-the-typewriter/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 98.4,
+        "audioBytes": 1575749
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Greenglass",
+        "say": "GREEN-glass"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "foley-square",
+      "scandal",
+      "spies",
+      "rosenberg",
+      "cold-war"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "convicted",
+      "reviewedBy": "James (owner), approved 2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "contentWarning": "This echo concerns an espionage trial and the execution of a husband and wife in 1953. The execution is not described."
+    },
+    "remoteness": 0
   },
   {
     "id": "new-york-the-well-under-the-shop",
@@ -24682,6 +25772,67 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 1
   },
   {
+    "id": "new-york-tried-in-the-unfinished-building",
+    "title": "Tried in an Unfinished Building",
+    "summary": "The courthouse that made Boss Tweed's name a byword was still not finished when he was put on trial inside it, in 1873.",
+    "point": {
+      "at": {
+        "lat": 40.71372,
+        "lng": -74.0053
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Tweed Courthouse, 52 Chambers Street, City Hall Park, Lower Manhattan"
+    },
+    "category": "true-crime",
+    "format": "short",
+    "durationS": 109,
+    "minAge": 16,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look up the steps at the marble building in front of you. Its builders called it the new county courthouse. Everyone else calls it the Tweed Courthouse.\n\nWilliam Tweed and his Ring ran this city and county while it went up. Building began in eighteen sixty one. A few days later, Tweed bought a marble quarry in Massachusetts, and a large part of the marble for this courthouse was bought from it.\n\nThe state authorised about four and a half million dollars for the job. In nineteen fourteen, a city board put the real cost at between eleven and twelve million. Almost every major contractor on it was tied to the Ring, and sent in padded bills. Some of the contractors did not even exist.\n\nIn July eighteen seventy one, the New York Times began printing the courthouse payments, copied by a county auditor from the Comptroller's own books. Tweed was arrested that October.\n\nHis trial was held in the Court of Oyer and Terminer, here, in this courthouse, which was still not complete. In November eighteen seventy three, the jury came back. Guilty, on the counts covering the bills of Garvey and Keyser, two of the men whose courthouse accounts the Times had printed. The newspapers' bulletin boards put it in big letters. Tweed Guilty. A Verdict at Last.\n\nHe was sentenced to twelve years. The Court of Appeals cut it to one. Held again on new charges, he escaped his guards in eighteen seventy five, and fled to Cuba and then to Spain, where officials knew his face from a Thomas Nast cartoon. He was brought back, and in April eighteen seventy eight he died in the Ludlow Street Jail.\n\nLook at the steps again.\n\nThe records of what was paid for this building were a large part of the evidence that brought him down. They tried him inside it, and they had not finished it yet.\n",
+    "teaser": "They tried him inside the courthouse. It still was not finished.",
+    "detail": "Conviction status: convicted (November 1873, New-York Tribune of 20 November 1873 and the Landmarks Preservation Commission report). Nobody named is alive. The verdict counts are from the Tribune (\"Keyser, Garvey, and Davidson counts\"); the LPC report says he was convicted on 204 counts, which the script does not repeat because the two sources frame the counts differently. Cost figures, the quarry, the contractors, the Times exposure, the trial in the unfinished building, the sentence, the escape and the Nast cartoon are from the LPC report; the death in Ludlow Street Jail is in both the LPC report and The Sun of 13 April 1878. No violence is described.",
+    "voice": "wC1005J19tvhoqqC2hkf",
+    "renders": [
+      {
+        "voiceId": "wC1005J19tvhoqqC2hkf",
+        "audioKey": "audio/new-york-tried-in-the-unfinished-building/wC1005J19tvhoqqC2hkf.mp3",
+        "durationS": 109.4,
+        "audioBytes": 1750874
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Oyer and Terminer",
+        "say": "OY-er and TER-min-er"
+      },
+      {
+        "written": "Keyser",
+        "say": "KY-zer"
+      }
+    ],
+    "tags": [
+      "new-york",
+      "city-hall-park",
+      "scandal",
+      "corruption",
+      "tweed",
+      "1870s"
+    ],
+    "trueCrimeReview": {
+      "involvesLivingPeople": false,
+      "convictionStatus": "convicted",
+      "reviewedBy": "James (owner), approved 2026-11-13",
+      "reviewedAt": "2026-11-13",
+      "contentWarning": "This echo concerns political corruption and a criminal trial in the 1870s. No violence is described."
+    },
+    "remoteness": 0
+  },
+  {
     "id": "new-york-twenty-five-cents-for-girls",
     "title": "Twenty Five Cents for Girls",
     "summary": "On 11 August 1973 a teenager threw a back to school party in this building's rec room. Her brother played the records. It became hip hop.",
@@ -24774,7 +25925,7 @@ export const LIBRARY: readonly Echo[] = [
       "wind",
       "folklore"
     ],
-    "remoteness": 0.26
+    "remoteness": 0
   },
   {
     "id": "new-york-under-the-grass",
@@ -24956,7 +26107,7 @@ export const LIBRARY: readonly Echo[] = [
       "tenements",
       "reform"
     ],
-    "remoteness": 0.22
+    "remoteness": 0.14
   },
   {
     "id": "new-york-whos-buried-in-grants-tomb",
@@ -26904,6 +28055,55 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0.36
   },
   {
+    "id": "philadelphia-mister-lyon-kept-the-tongs",
+    "title": "Mister Lyon Kept the Tongs",
+    "summary": "In February 1798 two congressmen fought on the floor of the House in this building, one with a cane and the other with the fireplace tongs.",
+    "point": {
+      "at": {
+        "lat": 39.9487,
+        "lng": -75.15135
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "Congress Hall, Sixth and Chestnut Streets, Independence National Historical Park, Philadelphia, Pennsylvania"
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 98,
+    "minAge": 8,
+    "quality": 0.8,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the brick building on the corner, Congress Hall. When Philadelphia was the capital, the House of Representatives met inside. And in seventeen ninety eight, two of its members had a fight on the floor.\n\nIt began with an insult. Roger Griswold of Connecticut taunted Matthew Lyon of Vermont about a wooden sword, a jibe at an old story that Lyon had once been cashiered from the army. Lyon spat in his face.\n\nThen, on the fifteenth of February, before the House was called to order, Griswold picked up his cane, crossed the chamber, and began beating Lyon with it.\n\nLyon was trapped. His desk was screwed to the floor in front of him, with another behind. He was literally pinned in a box, one account said. He had to shuffle out sideways. Behind the Speaker's chair, he grabbed the fireplace tongs.\n\nThey closed, and fell on the floor. Two members pulled Griswold off by his legs.\n\nIt was half past eleven. The Speaker was in his chair. He never called the House to order.\n\nThat afternoon, Lyon challenged Griswold to a duel. Griswold said he would not fight him. A few days later, a House committee recommended that neither man be expelled.\n\nSomebody in town made a cartoon of it, and you can still see it at the Library of Congress. Griswold with his cane. Lyon with the tongs.\n\nIn the struggle, one witness wrote, Mister Griswold lost his cane.\n\nMister Lyon kept the tongs.\n",
+    "teaser": "A cane, a pair of fire tongs, and a Speaker who never called the House to order.",
+    "detail": "The fight is from two newspaper accounts reprinted in The Mirror of Concord, New Hampshire, on 6 March 1798: an eyewitness letter first printed in the Gazette of the United States, and a second account sympathetic to Lyon (the desks, the tongs, the challenge and the refusal); the spitting is from the Speaker's evidence printed in The Mirror on 27 February 1798. The Library of Congress record of the print \"Congressional Pugilists\" gives the place, the date and the cane and tongs. The two newspaper accounts disagree on who struck first and how hard, and the script keeps to what both share. No injuries are described beyond \"beating\".",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-mister-lyon-kept-the-tongs/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 97.6,
+        "audioBytes": 1562792
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Griswold",
+        "say": "GRIZ-wold"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "independence-park",
+      "congress-hall",
+      "scandal",
+      "duels",
+      "congress"
+    ],
+    "remoteness": 0
+  },
+  {
     "id": "philadelphia-muddy-footprints",
     "title": "Muddy Footprints",
     "summary": "In April 1945 twelve men came up out of a tunnel under Fairmount Avenue. One was the bank robber Willie Sutton. He got two blocks.",
@@ -26956,6 +28156,49 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "philadelphia-my-real-crime",
+    "title": "My Real Crime",
+    "summary": "Accused of corruption, Hamilton answered in a 1797 Philadelphia pamphlet by confessing an affair and a blackmail.",
+    "point": {
+      "at": {
+        "lat": 39.94845,
+        "lng": -75.14625
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "First Bank of the United States, South Third Street between Chestnut and Walnut, Old City, Philadelphia, Pennsylvania"
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 107,
+    "minAge": 13,
+    "quality": 0.75,
+    "visibility": "landmark-visible",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the marble face of the bank in front of you. It was Alexander Hamilton's idea. He was Secretary of the Treasury, and he drew up the plan for a national bank.\n\nThe bank moved into this building in seventeen ninety seven. That same year, Hamilton, no longer at the Treasury, published a pamphlet in this city. He had been accused of a crooked money scheme with a man named James Reynolds, and the pamphlet was his answer.\n\nA few pages in, he wrote this. My real crime is an amorous connection with his wife.\n\nHis account went like this. In the summer of seventeen ninety one, a woman called at his house in Philadelphia, and asked to see him in private. Her husband had treated her cruelly and left her, she said, and she needed money to get home to her family.\n\nThat evening, he put a bank note in his pocket and went to the house where she lodged. She met him at the top of the stairs.\n\nHis own wife and children were away, visiting her father. The meetings went on, most of them at his house.\n\nIn December, the husband wrote to him. He had found out, he said, and he wanted satisfaction. Hamilton wrote that it was easy to understand that he wanted money.\n\nThe price was a thousand dollars, as a plaster for his wounded honour. Hamilton paid it in two instalments.\n\nHe knew how this would read. This confession, he wrote, is not made without a blush.\n\nBut he could not resist a dig at his accusers. If he were really a greedy, speculating Treasury Secretary, he asked, how was it that he had been so short of money that he had to pay a blackmailer in two payments?\n",
+    "teaser": "To prove he was not a crook, he confessed to something else.",
+    "detail": "Hamilton's own account, from his 1797 pamphlet (Observations on Certain Documents), read on a scan of the Philadelphia edition at the Internet Archive; quotations keep the OCR spelling. The script tells it as his account (\"he wrote\", \"his account went like this\") because it is the only side the pamphlet gives, and it says nothing about Maria Reynolds that he did not write. The bank, Hamilton's plan and the building's date are from the National Park Service. Hamilton's 1791 house is not identified: reachable sources disagree on whether he was on Walnut Street or South Third Street that summer, so the echo stands at the bank instead. Single primary source for the affair; no second source was reachable (Founders Online is behind a browser check).",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-my-real-crime/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 107.2,
+        "audioBytes": 1716183
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "old-city",
+      "scandal",
+      "hamilton",
+      "reynolds",
+      "1790s"
+    ],
+    "remoteness": 0
+  },
+  {
     "id": "philadelphia-no-hatch-wide-enough",
     "title": "No Hatch Wide Enough",
     "summary": "In 1921 the cruiser Olympia carried the Unknown Soldier home from France on her open deck, because no hatch could take the casket level.",
@@ -27005,7 +28248,7 @@ export const LIBRARY: readonly Echo[] = [
       "world-war-one",
       "ships"
     ],
-    "remoteness": 0.16
+    "remoteness": 0.14
   },
   {
     "id": "philadelphia-no-letter-by-the-date",
@@ -28598,6 +29841,49 @@ export const LIBRARY: readonly Echo[] = [
     "remoteness": 0
   },
   {
+    "id": "philadelphia-the-generals-wagons",
+    "title": "The General's Wagons",
+    "summary": "Benedict Arnold lived here as commander of Philadelphia. He was court martialled, and began writing to the British.",
+    "point": {
+      "at": {
+        "lat": 39.95055,
+        "lng": -75.15075
+      },
+      "triggerRadiusKm": 0.04,
+      "place": "President's House site, Sixth and Market Streets, Independence Mall, Philadelphia, Pennsylvania"
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 113,
+    "minAge": 10,
+    "quality": 0.75,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look at the outline of the old house here, on Market Street. Before it was the President's House, it was the home of the American commander of Philadelphia, Benedict Arnold.\n\nThe British left the city in June seventeen seventy eight. Arnold marched in, and promptly made this house his residence and headquarters.\n\nHe lived far beyond his pay. A costly carriage, a lavish table, servants in livery. The editor of the trial record later wrote that his style of living was what you might expect of a prince, not of an army officer in a simple republic. He married into the Shippen family, who were known to prefer the old order of things.\n\nPennsylvania's government brought charges against him, and in the end he was court martialled.\n\nAmong the charges was the matter of the wagons. Wagons drawn from Pennsylvania for the public service had been sent, at Arnold's request, to move private property out of danger.\n\nIn January seventeen eighty the court gave its verdict. It cleared him of two charges, and found against him on two. On the wagons, it accepted that he had meant to pay for them himself and had not meant to defraud anyone. But a request from a general, it said, could work as an order. The request was imprudent and improper. He was sentenced to a reprimand from Washington.\n\nWashington's words, as a French diplomat reported them, were gentle. Even the shadow of a fault, he said, tarnishes the lustre of our finest achievements.\n\nIt was far too late. The Park Service says that in the spring of seventeen seventy nine, while he was still living in this house, Arnold had already begun his secret correspondence with the British.\n",
+    "teaser": "Washington reprimanded him gently. By then it was far too late.",
+    "detail": "The verdict, the wagon finding, the sentence, the account of his style of living and the Shippen marriage are from the 1865 printing of the court martial proceedings, read on a scan at the Internet Archive (quotations keep the long-s OCR spelling, so \"fumptuous\" is \"sumptuous\"). The words of the reprimand are as the French diplomat Marbois reported them, quoted in that book's notes, and the script says so. The house and the start of the treasonous correspondence are from the National Park Service. Filed under History, not True Crime: a court martial on two counts of misconduct, ending in a reprimand, rather than a crime at the centre of the echo; James may prefer to move it. The existing Mischianza echo mentions Arnold and Peggy Shippen; this echo does not retell that evening.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-generals-wagons/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 113.1,
+        "audioBytes": 1810224
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "independence-mall",
+      "scandal",
+      "spies",
+      "arnold",
+      "revolution"
+    ],
+    "remoteness": 0
+  },
+  {
     "id": "philadelphia-the-good-china",
     "title": "The Good China",
     "summary": "Under the Constitution Center's bus drop-off is the house where a free Black coachman hosted the meeting that founded a church.",
@@ -28849,6 +30135,54 @@ export const LIBRARY: readonly Echo[] = [
       "benedict-arnold"
     ],
     "remoteness": 0.56
+  },
+  {
+    "id": "philadelphia-the-little-democrat",
+    "title": "The Little Democrat",
+    "summary": "In 1793 Citizen Genet had a privateer armed in this port against Washington's neutrality. She sailed anyway.",
+    "point": {
+      "at": {
+        "lat": 39.9466,
+        "lng": -75.141
+      },
+      "triggerRadiusKm": 0.06,
+      "place": "Penn's Landing, the Delaware River waterfront near Walnut Street, Philadelphia, Pennsylvania"
+    },
+    "category": "scandals",
+    "format": "short",
+    "durationS": 103,
+    "minAge": 10,
+    "quality": 0.7,
+    "visibility": "at-hand",
+    "certainty": "documented",
+    "sources": [],
+    "editorial": "approved",
+    "factCheck": "corroborated",
+    "script": "Look out over the Delaware. In the summer of seventeen ninety three, a ship was being armed in this port against the wishes of the President, and the man behind it was the ambassador of France.\n\nHis name was Edmond Charles Genet, the French minister to the United States. He called himself Citizen Genet.\n\nFrance was at war with Britain. Washington had declared the United States neutral. But the moment Genet landed in Charleston, he began handing out commissions to privateers, to seize British merchant ships.\n\nWhen he came on to Philadelphia, then the capital, Secretary of State Thomas Jefferson told him plainly. Fitting out French privateers in American ports broke American neutrality.\n\nGenet went ahead. A vessel called the Little Sarah was armed here, as a French privateer, under a new name. The Little Democrat.\n\nAmerican officials warned him, again and again, to keep her in port. Genet threatened to take his case over their heads, to the American people.\n\nJefferson put what happened next in a letter. In disregard of that request, he wrote, the Little Democrat went out immediately on a cruise.\n\nThe cabinet agreed to ask France to call him home. By then France had a new government, and it wanted him sent back to face it. Washington knew that would almost certainly mean his execution, and he let Genet stay.\n\nCitizen Genet lived in the United States for the rest of his life. He died here, in eighteen thirty four.\n",
+    "teaser": "The government asked him to keep one ship in port. He would not.",
+    "detail": "The arc is from the State Department Office of the Historian's Milestones essay on the Citizen Genet affair (retired but online). The arming at Philadelphia, the two names of the ship, her being in the Delaware and Jefferson's sentence about her sailing are from the 1793 Message of the President to Congress with its papers, read on a scan at the Internet Archive (OCR spelling kept in the quotations). The script calls Genet \"the ambassador of France\" once, for the ear; his title was minister, and the next sentence says so.",
+    "renders": [
+      {
+        "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
+        "audioKey": "audio/philadelphia-the-little-democrat/IMlxLW3qgn0MWgfz7Vnh.mp3",
+        "durationS": 102.7,
+        "audioBytes": 1644712
+      }
+    ],
+    "pronunciations": [
+      {
+        "written": "Genet",
+        "say": "zhuh-NAY"
+      }
+    ],
+    "tags": [
+      "philadelphia",
+      "delaware-river",
+      "scandal",
+      "genet",
+      "neutrality"
+    ],
+    "remoteness": 0
   },
   {
     "id": "philadelphia-the-lord-seeth",
@@ -46070,4 +47404,4 @@ export const ROUTES: readonly Route[] = [
 
 // What a person has really checked, as authored, before the demo override above. The
 // "true story" mark reads this, never the overridden status (`truth.ts` in the engine).
-export const VERIFIED_IDS: ReadonlySet<string> = new Set(["african-burial-ground","annapolis-a-port-called-napolis","annapolis-a-private-citizen-by-christmas","annapolis-married-in-that-house","annapolis-the-dome-was-a-lookout","asheville-a-dome-made-of-tile","asheville-a-government-at-the-inn","asheville-a-leg-in-a-boot","asheville-a-yodel-on-the-top-floor","asheville-the-boardinghouse-called-dixieland","asheville-the-fire-at-highland-hospital","asheville-the-man-who-walked-a-wheel","asheville-the-ymi","atlantic-city-first-boardwalk","bald-head-captain-charlie-lit-both","bald-head-the-builder-who-lost-money","bald-head-the-prisms-coming-home","bald-head-the-swim-to-southport","bald-head-the-woman-on-the-shore","boston-a-door-like-a-tomb","boston-a-fort-you-could-carry","boston-a-ride-on-the-top-stone","boston-a-smell-of-oranges","boston-abiel-smith-school-goodbye","boston-african-meeting-house-built-by-its-people","boston-beacon-hill-the-beacon","boston-brimstone-corner","boston-common-cows","boston-franklins-other-corner","boston-granary-five-in-one-grave","boston-hayden-house-keg","boston-her-book-on-the-tea-ship","boston-in-short-i-lost-most-all","boston-mother-goose","boston-poe-walks-away","boston-say-no-more","boston-sealed-in-the-fort","boston-shaw-memorial-forty-faces","boston-sides-made-of-iron","boston-six-weeks-and-a-fair","boston-state-house-dome-copper","boston-swan-boats-mrs-paget","boston-the-boy-who-would-not-sing","boston-the-church-inside-the-church","boston-the-cloak-she-forgot","boston-the-ducklings-twins","boston-the-harpies-of-the-shore","boston-the-house-that-stayed-useful","boston-the-lady-in-black","boston-the-letter-on-the-slate","boston-the-lion-and-the-unicorn","boston-the-monument-that-names-nobody","boston-the-poem-that-built-a-statue","boston-the-reed-that-stuck","boston-the-school-that-lost-its-ground","boston-the-sextons-lodgers","boston-the-spire-that-fell","boston-the-spy-question","boston-the-stone-they-shot-at","boston-the-street-that-ran-into-the-sea","boston-the-whites-of-their-eyes","boston-the-wire-watson-kept","boston-the-wrong-hill","boston-waiting-for-mister-rotch","boston-what-the-auditor-found","boston-where-the-water-was","boston-who-said-fire","bowling-green-king-george","canyon-of-heroes","carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","casa-casuarina-the-steps","castle-clinton-eight-million","caswell-beach-a-hat-from-a-helicopter","caswell-beach-a-lighthouse-poured-in-a-week","caswell-beach-the-long-day-of-dunbar-davis","caswell-beach-the-night-caswell-blew-up","caswell-beach-the-second-brightest-light","caswell-beach-yachts-on-submarine-watch","charging-bull-illegal","charleston-a-bench-for-the-unnamed","charleston-a-broken-taillight","charleston-a-cake-and-a-shark","charleston-a-candle-for-air","charleston-a-chest-of-medicine","charleston-a-dollar-thirty-an-hour","charleston-a-gallery-on-the-highway","charleston-a-message-for-hell","charleston-a-strangers-initials","charleston-a-wharf-he-was-willing-to-lose","charleston-an-opera-at-the-beach","charleston-blackbeards-ransom","charleston-blown-up-to-stop-a-fire","charleston-blue-and-buff-rosettes","charleston-blue-to-keep-the-spirits-out","charleston-bolted-together","charleston-built-for-a-capital","charleston-built-to-fall-inward","charleston-buried-at-the-gate","charleston-calhoun-moved-by-night","charleston-every-five-minutes","charleston-exiled-by-the-sound-of-the-lash","charleston-fifteen-feet-of-sea","charleston-five-times-across","charleston-four-years-to-the-day","charleston-gothic-over-brick","charleston-hey-charleston","charleston-madame-margots-bargain","charleston-martyrs-of-the-race-course","charleston-no-pirates-lived-here","charleston-not-called-catfish","charleston-old-joe-cole","charleston-pineapples-that-are-not","charleston-rice-peas-and-the-new-year","charleston-sermons-on-the-tide","charleston-silver-forks-and-iced-claret","charleston-skulls-over-the-market","charleston-steps-that-only-go-up","charleston-the-angels-oak","charleston-the-audience-on-the-sea-wall","charleston-the-badge-that-paid-the-firemen","charleston-the-bedsheet","charleston-the-building-that-could-not-burn","charleston-the-butlers-soup","charleston-the-castle-on-the-square","charleston-the-church-that-crossed-the-street","charleston-the-congregation-that-rebuilt","charleston-the-editor-who-got-off-the-streetcar","charleston-the-fire-and-the-brick-law","charleston-the-flag-on-a-sponge-stick","charleston-the-island-in-the-gold-bug","charleston-the-last-of-six-beaches","charleston-the-lighthouse-the-sea-walked-to","charleston-the-lighthouse-with-a-lift","charleston-the-man-who-would-not-fire","charleston-the-museums-front-door","charleston-the-narrow-strip-of-sand","charleston-the-night-the-wall-opened","charleston-the-painter-on-chalmers-street","charleston-the-petition-of-forty-seven","charleston-the-piece-somebody-kept","charleston-the-playhouse-on-dock-street","charleston-the-powder-behind-the-wall","charleston-the-presidents-face-in-their-hair","charleston-the-sailor-on-the-steeple","charleston-the-school-behind-the-store","charleston-the-seed-and-the-knowing","charleston-the-ship-called-echo","charleston-the-street-named-for-a-meeting-house","charleston-the-swamp-angel","charleston-the-tables-in-the-shed","charleston-the-village-that-would-not-line-up","charleston-the-wall-built-for-one-elopement","charleston-the-window-marion-missed","charleston-the-wood-that-would-not-break","charleston-the-yard-named-for-a-water-tank","charleston-they-called-out-liberty","charleston-three-daughters-in-the-garret","charleston-two-balls-in-the-wall","charleston-we-will-overcome","charleston-what-the-survey-wrote-down","charleston-where-the-horses-grazed","charleston-where-the-tide-came-in","charleston-white-ribbons","charleston-whose-arms-on-the-roof","charlotte-a-city-of-tents","charlotte-a-navy-yard-far-from-the-sea","charlotte-a-vein-under-south-end","charlotte-brought-to-you-by-a-laxative","charlotte-fred-in-the-arcade","charlotte-roots-in-north-carolina","charlotte-strictly-stock","charlotte-the-declaration-nobody-can-find","charlotte-the-mint-that-moved","charlotte-the-sandwich-from-crescent-avenue","charlotte-the-wall-in-front-of-the-courthouse","charlotte-twenty-beds-under-the-stadium","chicago-allowed-to-carry-twenty-five-hundred","chicago-sixty-five-degrees-then-twenty-three-inches","chicago-the-architect-went-to-the-seaside","chicago-the-case-that-outlived-the-pipe","chicago-the-cow-that-took-the-blame","chicago-the-garbage-inspector","chicago-the-porters-contract","chicago-the-sign-says-end","chicago-the-strike-that-stopped-the-trains","chicago-under-the-bleachers","city-hall-declaration","cleveland-no-more-protection","cleveland-the-missing-letter","cleveland-the-river-that-burned","craggy-gardens-balds","dc-a-bandstand-for-the-dead","dc-a-bear-with-his-own-zip-code","dc-a-country-he-never-saw","dc-a-gay-vietnam-veteran","dc-a-parade-around-the-building","dc-a-place-to-growl","dc-a-question-not-an-answer","dc-a-room-for-the-night","dc-a-voice-on-a-sunbeam","dc-an-unearthly-pause","dc-bring-him-in-here","dc-darth-vader-is-not-a-gargoyle","dc-erected-by-their-friends","dc-every-day-but-one","dc-farewell-sisters","dc-five-dollars-to-watch","dc-harding-waffles","dc-in-the-shadow-of-the-capitol","dc-in-twos-and-threes","dc-joan-gets-her-sword-back","dc-my-home-nonetheless","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-on-the-fort","dc-one-good-arm-and-a-shovel","dc-perseverance","dc-priced-by-size","dc-room-for-another-monument","dc-saved-by-a-mistake","dc-seventy-six-years-round","dc-shots-from-the-gallery","dc-six-white-horses","dc-somebody-had-to-be-there","dc-somewhere-to-hide","dc-the-admiral-went-home","dc-the-ballroom-ward","dc-the-best-show-in-town","dc-the-bow-in-the-corridor","dc-the-building-that-set-the-limit","dc-the-caretaker-heard-nothing","dc-the-cat-in-the-crypt","dc-the-cherry-tree-rebellion","dc-the-engine-under-the-floor","dc-the-epicurean-eating-house","dc-the-first-are-with-the-last","dc-the-first-name-on-the-bill-of-sale","dc-the-floor-under-the-street","dc-the-horse-called-freedom-rider","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-knight-of-the-feather-duster","dc-the-ladies-waiting-room","dc-the-letter-in-the-ceiling","dc-the-letter-that-got-fixed","dc-the-lights-stayed-on","dc-the-little-stone-house-that-moved","dc-the-man-who-found-the-bolts","dc-the-man-who-kept-up","dc-the-man-who-saved-patton","dc-the-map-underfoot","dc-the-old-man-finishing-his-speech","dc-the-opera-glass","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-password-at-the-bridge","dc-the-pilot-who-flew-the-wrong-way","dc-the-plaque-on-the-fence","dc-the-pleasantest-camp","dc-the-room-built-for-music","dc-the-seeds-from-the-dry-lake","dc-the-spots-on-the-stairs","dc-the-starting-line-came-later","dc-the-stone-from-concord","dc-the-tape-on-the-door","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-the-words-they-carved-away","dc-three-names-for-one-wing","dc-three-poems-in-a-satchel","dc-to-thee-we-sing","dc-too-good-to-check","dc-what-hath-god-wrought","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-white-before-the-fire","dc-why-february","dc-written-in-the-dark","dc-you-shall-reap-a-great-reward","deadwood-before-she-was-calamity","deadwood-his-back-to-the-door","deadwood-the-champions-of-america","fairfax-she-married-the-man-who-arrested-her","fairfax-thirty-killed-said-the-picture","fall-river-a-description-without-a-photograph","fall-river-the-granite-mill-fire","federal-hall-two-firsts","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","fraunces-tavern-farewell","hatteras-moved-the-lighthouse","houston-a-bison-named-earl","houston-a-bunch-of-guys-about-to-turn-blue","houston-a-capitol-without-a-roof","houston-a-pot-of-gold-on-washington","houston-a-window-for-doughnuts","houston-another-uss-houston","houston-constitution-bend","houston-for-the-masses","houston-ground-to-be-free-on","houston-his-name-on-the-tower","houston-hold-the-rail","houston-if-there-is-such-a-thing","houston-know-what-this-is-about","houston-love-me-orange","houston-one-dollar","houston-one-letter-missing","houston-out-of-desperation","houston-pay-as-you-go","houston-return-like-eagles","houston-the-basement-above-ground","houston-the-bodyguards-treasure","houston-the-box-began-to-chirp","houston-the-caretakers-violin","houston-the-condition","houston-the-cows-moved-out","houston-the-grass-that-gave-up","houston-the-letter-got-home","houston-the-lion-tamer","houston-the-man-in-the-brown-suit","houston-the-star-under-the-rug","houston-the-thing-in-freedmantown","houston-the-time-stopped-running","houston-the-verdict-that-was-erased","houston-thunder-and-lightnin","houston-turn-back","houston-two-bridges-for-one-street","houston-umbrellas-and-tennis-rackets","houston-we-passed-the-city","houston-weve-had-a-problem","houston-whatever-was-on-sale","houston-why-does-rice-play-texas","jerome-a-ghost-town-on-purpose","jerome-sixty-seven-men-in-cattle-cars","jerome-the-day-the-stone-melted","jerome-water-from-seven-miles-away","key-west-a-house-named-for-mercedes","key-west-brought-by-a-wreck","key-west-built-for-the-pirate-hunters","key-west-every-factory-a-club","key-west-ice-from-the-north","key-west-limes-by-air","key-west-never-armed","key-west-not-once","key-west-the-chickens-world","key-west-the-fort-that-lost-the-sea","key-west-the-gold-telegram","key-west-the-grave-nobody-was-shown","key-west-the-guest-who-was-not-there","key-west-the-house-that-came-by-boat","key-west-the-judge-and-the-wreckers","key-west-the-key-west-uniform","key-west-the-light-was-sharp-and-crisp","key-west-the-monument-architects-hospital","key-west-the-sailor-with-the-oar","key-west-the-studio-across-the-catwalk","key-west-the-weaker-cup","key-west-walls-waiting-for-a-roof","kitty-hawk-shorter-than-this-plane","kure-beach-five-shells-in-the-dark","linn-cove-viaduct-last-piece","linville-gorge-too-steep","memphis-before-breakfast","memphis-it-worked-when-they-stopped","memphis-kid-douglas","memphis-the-amp-on-the-roof","memphis-the-b-side","memphis-the-mountaintop","memphis-the-ride-home","memphis-the-song-that-mocked-mr-crump","memphis-they-smashed-the-press","mount-mitchell-buried-on-top","nashville-a-hall-built-by-song","nashville-she-bit-the-conductor","nashville-six-encores","nashville-the-architect-in-the-wall","nashville-the-colored-lights","nashville-the-fort-nobody-attacked","nashville-the-harmonica-wizard","nashville-the-saloon-keepers-tabernacle","nashville-the-united-hilton","nashville-tile-thirteen","nashville-when-the-cumberland-came-up","nashville-yellow-roses-and-red","new-orleans-a-district-with-his-name","new-orleans-a-tomb-used-again","new-orleans-an-american-house","new-orleans-corn-from-philadelphia","new-orleans-ghosts-under-the-oaks","new-orleans-her-initials-in-the-iron","new-orleans-just-margaret","new-orleans-love-street","new-orleans-named-for-empty-ground","new-orleans-no-funerals-at-the-cathedral","new-orleans-nobody-left-by-the-back-door","new-orleans-out-of-the-trash-can","new-orleans-st-johns-eve-on-the-bayou","new-orleans-the-apothecarys-egg-cup","new-orleans-the-arrest-that-was-planned","new-orleans-the-basket-at-the-gate","new-orleans-the-blacksmith-shop-with-no-blacksmiths","new-orleans-the-boat-that-came-through-the-earthquake","new-orleans-the-candle-on-good-friday","new-orleans-the-casket-girls","new-orleans-the-champion-who-stopped","new-orleans-the-crosses-on-the-tomb","new-orleans-the-duke-on-the-street-sign","new-orleans-the-emperor-never-came","new-orleans-the-file-sellers","new-orleans-the-fire-in-the-kitchen","new-orleans-the-flag-on-the-mint","new-orleans-the-girl-on-the-belvedere","new-orleans-the-grand-zombis-square","new-orleans-the-harbor-behind-the-cemetery","new-orleans-the-house-of-the-turk","new-orleans-the-inquisitor-who-came-back","new-orleans-the-legislature-in-the-convent","new-orleans-the-lullaby-on-rampart-street","new-orleans-the-man-under-the-altar","new-orleans-the-neutral-ground","new-orleans-the-noise-on-the-common","new-orleans-the-oaks-on-the-pillars","new-orleans-the-opera-house-that-isnt-here","new-orleans-the-priests-house","new-orleans-the-river-above-the-street","new-orleans-the-short-pews","new-orleans-the-singing-priest","new-orleans-the-train-with-sails","new-orleans-the-woman-who-never-lived-here","new-orleans-three-cooks-know","new-orleans-twenty-days-of-france","new-orleans-two-weeks-from-water","new-orleans-words-on-the-base","new-york-a-canoe-under-the-wings","new-york-a-diamond-in-the-rough","new-york-a-giant-arm-in-the-park","new-york-a-hole-in-the-ground","new-york-a-house-for-sheep","new-york-a-lighthouse-for-the-titanic","new-york-a-monument-to-small-things","new-york-an-amiable-child","new-york-an-unsweetened-pastry","new-york-balto-and-togo","new-york-battleship-number-thirty-nine","new-york-big-mose","new-york-born-and-died-upstairs","new-york-crossing-brooklyn-ferry","new-york-doing-a-brodie","new-york-doughnut-shaped-rolls","new-york-easy-to-get-in","new-york-fifty-six-years-late","new-york-for-what-a-kick-line","new-york-hey-doctor","new-york-in-their-good-suits","new-york-it-sounds-like-a-tin-pan","new-york-its-magic-time","new-york-launched-in-greenpoint","new-york-more-than-paris","new-york-nine-and-a-half-feet","new-york-no-women-are-served","new-york-nobody-knows-her-name","new-york-nobody-told-the-ninth","new-york-one-name-not-in-the-records","new-york-one-of-several-places","new-york-one-patch-of-the-dark","new-york-one-staircase","new-york-out-the-back-door","new-york-patience-and-fortitude","new-york-she-came-to-dance","new-york-she-took-his-place","new-york-six-hours-before","new-york-someone-knew-we-were-there","new-york-ten-thousand-answers","new-york-the-basement-of-pupin-hall","new-york-the-black-bottle","new-york-the-candlemaker-of-staten-island","new-york-the-cane-whip","new-york-the-contest-nobody-held","new-york-the-cottage-at-fordham","new-york-the-crabs-under-the-needle","new-york-the-generals-guard","new-york-the-ghost-who-hates-golf","new-york-the-grand-central-depot","new-york-the-horse-at-the-ferry","new-york-the-house-that-moved-twice","new-york-the-house-they-built-back","new-york-the-king-under-the-playground","new-york-the-last-living-thing","new-york-the-last-tulip-tree","new-york-the-little-church-around-the-corner","new-york-the-manhattan","new-york-the-millionaire-who-went-missing","new-york-the-others-are-still-awake","new-york-the-pirates-share","new-york-the-pond-under-the-courthouses","new-york-the-prodigal-son-has-returned","new-york-the-red-ball-on-the-castle","new-york-the-sunday-school-picnic","new-york-the-well-under-the-shop","new-york-the-whispering-corners","new-york-the-years-without-the-ball","new-york-then-they-did-it-again","new-york-thirty-eight-was-wrong","new-york-twenty-five-cents-for-girls","new-york-twenty-three-skidoo","new-york-under-the-grass","new-york-under-the-surface-of-that-hill","new-york-water-over-the-harlem","new-york-where-mulberry-street-crooks","new-york-whos-buried-in-grants-tomb","new-york-you-eat-too-fast","newport-a-door-in-the-floor","newport-a-year-of-waiting","newport-the-line-washington-borrowed","newport-the-tower-nobody-agrees-on","news-cafe-last-ordinary-morning","oak-island-five-left-standing","oak-island-how-oak-island-became-an-island","oak-island-the-fence-on-the-dune","pawhuska-guardian-of-his-own-children","pawhuska-the-missing-panel","pearl-street-oysters","philadelphia-a-block-from-home","philadelphia-a-castle-in-our-rear","philadelphia-a-cat-named-catterina","philadelphia-a-fine-airy-place","philadelphia-a-firehouse-on-a-market","philadelphia-a-nickel-from-a-cab-driver","philadelphia-a-purple-and-cream-gown","philadelphia-a-ride-for-fire-crackers","philadelphia-a-roof-made-of-awnings","philadelphia-a-steeple-paid-by-lottery","philadelphia-a-street-through-the-folly","philadelphia-a-young-gentleman-of-this-city","philadelphia-as-much-as-anyone-knows","philadelphia-carpet-on-the-floor","philadelphia-citizens-in-peace","philadelphia-coffee-through-the-car-windows","philadelphia-congress-started-at-the-tavern","philadelphia-dear-julia","philadelphia-dorothy-todd-widow","philadelphia-forty-dozen-catfish","philadelphia-hamlet-paid-for-the-hospital","philadelphia-harrys-sandwich","philadelphia-he-left-the-year-blank","philadelphia-home-to-martin-street","philadelphia-if-you-can-keep-it","philadelphia-just-kids-dancing","philadelphia-knockout-prices","philadelphia-lines-around-the-block","philadelphia-muddy-footprints","philadelphia-no-hatch-wide-enough","philadelphia-no-letter-by-the-date","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-patents-bought-and-sold","philadelphia-penn-on-the-tower","philadelphia-prisoner-c-2559","philadelphia-prisoner-c2559","philadelphia-read-aloud-in-the-yard","philadelphia-recruited-at-the-bar","philadelphia-rising-or-setting","philadelphia-sea-lions-in-the-forebay","philadelphia-seventy-two-steps","philadelphia-shaken-in-a-hat","philadelphia-shoes-for-bob","philadelphia-showered-and-jerked-about","philadelphia-somebody-lives-here","philadelphia-tea-upstairs","philadelphia-the-baby-born-in-a-cave","philadelphia-the-baby-over-the-bank-door","philadelphia-the-battle-of-the-kegs","philadelphia-the-bell-went-to-allentown","philadelphia-the-brightest-house","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-creek-under-willow-street","philadelphia-the-curse-of-billy-penn","philadelphia-the-elm-nobody-wrote-down","philadelphia-the-empty-seat","philadelphia-the-first-vote-was-the-room","philadelphia-the-good-china","philadelphia-the-hall-that-lasted-three-days","philadelphia-the-house-nobody-would-live-in","philadelphia-the-house-that-nickels-built","philadelphia-the-knights-of-the-burning-mountain","philadelphia-the-lord-seeth","philadelphia-the-major-who-volunteered","philadelphia-the-market-under-the-trains","philadelphia-the-pageant-on-broad-street","philadelphia-the-ploughman-and-the-daisy","philadelphia-the-real-fighter","philadelphia-the-room-upstairs","philadelphia-the-stain-on-the-parlour-floor","philadelphia-the-street-that-was-a-creek","philadelphia-the-tusks-were-upside-down","philadelphia-they-work-fast-here","philadelphia-this-side-up-with-care","philadelphia-three-hundred-on-the-alley","philadelphia-time-is-very-long","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-unless-the-walls-could-speak","philadelphia-up-from-the-prison-yard","philadelphia-washington-left-last","philadelphia-we-sought-not-fee-nor-reward","philadelphia-what-her-grandson-said","philadelphia-where-evangeline-was-buried","saint-paul-almost-pigs-eye","saint-paul-half-a-mile-of-cellar","saint-paul-the-end-of-the-river-road","saint-paul-the-spirit-house","salem-a-life-in-one-house","salem-a-wharf-built-on-mud","salem-the-judges-house","salem-the-ship-that-missed-the-war","salem-the-surveyor-who-lost-his-job","san-antonio-a-day-at-the-mission","san-antonio-a-window-for-rosa","san-antonio-one-governor-was-enough","san-antonio-spirits-with-flaming-swords","san-antonio-the-army-gave-it-the-hump","san-antonio-the-chili-queens-plaza","san-antonio-the-eye-with-a-mustache","san-antonio-the-mission-that-kept-moving","san-antonio-twelve-thousand-pecan-shellers","san-antonio-water-over-the-creek","san-antonio-wooden-cannons-on-the-long-barrack","san-francisco-a-coffin-for-the-hippie","san-francisco-a-cookie-from-the-tea-garden","san-francisco-a-fence-against-the-sun","san-francisco-a-gi-pet","san-francisco-a-grave-for-carlotta","san-francisco-a-message-on-the-water-tower","san-francisco-a-ship-under-clay-street","san-francisco-a-suitcase-on-steuart-street","san-francisco-a-toast-to-the-wrong-president","san-francisco-an-emperor-on-dupont-street","san-francisco-filled-by-the-tide","san-francisco-flowers-at-the-doubtfire-house","san-francisco-forty-two-tons-of-powder","san-francisco-four-posts-for-a-blade-of-grass","san-francisco-hits-eight-and-nine","san-francisco-in-the-event-of-my-death","san-francisco-not-a-fire-hose","san-francisco-nothing-above-the-windows","san-francisco-pagodas-for-the-tourists","san-francisco-red-wine-on-the-fire","san-francisco-studying-in-the-bathroom","san-francisco-the-alley-where-miles-archer-fell","san-francisco-the-arch-over-the-fort","san-francisco-the-first-rangers-on-this-hill","san-francisco-the-lighthouse-with-a-flat-top","san-francisco-the-sea-lions-who-moved-in","san-francisco-the-unfinished-mosaic","san-francisco-to-brisbane-in-two-minutes","san-francisco-turn-the-cable-car-around","san-francisco-two-sisters-on-the-same-rocks","san-francisco-when-do-we-get-the-manuscript","santa-fe-a-tank-called-the-mud-puppy","santa-fe-ben-hur-after-dark","santa-fe-the-carpenter-who-vanished","santa-fe-the-door-to-the-hill","santa-fe-the-end-of-the-trail","santa-fe-the-mother-ditch","santa-fe-what-the-tree-rings-say","santa-fe-when-the-plaza-was-a-pueblo","savannah-a-city-for-christmas","savannah-a-clubhouse-in-the-carriage-house","savannah-a-fort-for-jefferson","savannah-a-fort-made-of-oysters","savannah-a-house-for-a-president","savannah-a-hundred-yards-barefoot","savannah-a-pillow-in-bonaventure","savannah-a-rising-ground","savannah-a-tower-made-of-pine","savannah-ballast-stones","savannah-baseball-inside-the-fort","savannah-brick-pretending-to-be-stone","savannah-city-hall-dome","savannah-cotton-exchange","savannah-dinner-under-the-trees","savannah-eight-to-four","savannah-factors-walk","savannah-first-african-baptist","savannah-four-paces-apart","savannah-four-trials","savannah-friendless-but-for-him","savannah-he-prayed-for-them","savannah-house-of-mercy","savannah-leaning-on-a-fire-hydrant","savannah-little-gracie","savannah-morning-honey","savannah-names-over-the-gate","savannah-none-others-admitted","savannah-not-afraid-to-die","savannah-old-harbor-light","savannah-pirates-house","savannah-raleigh-on-gas-works-hill","savannah-six-hundred-pound-shells","savannah-steamship-savannah","savannah-thackerays-comfortable-quarters","savannah-the-artillerys-other-weapon","savannah-the-bomb-in-wassaw-sound","savannah-the-bus-that-never-came","savannah-the-check-from-hollywood","savannah-the-chicken-that-walked-backwards","savannah-the-chimney-with-privies-in-its-base","savannah-the-church-copied-from-itself","savannah-the-colonel-and-the-general","savannah-the-drummer-from-saint-domingue","savannah-the-fountain-that-kept-getting-more-parisian","savannah-the-gate-in-the-bull-street-wall","savannah-the-gate-she-made","savannah-the-general-facing-south","savannah-the-general-who-went-missing","savannah-the-ghosts-of-old-greenwich","savannah-the-girl-who-left-the-cemetery","savannah-the-handkerchief-duel","savannah-the-house-that-moved","savannah-the-lazaretto","savannah-the-library-on-loan","savannah-the-lion-on-the-bed","savannah-the-m-and-t-oaks","savannah-the-night-the-cathedral-burned","savannah-the-parking-lot-that-never-came","savannah-the-punch-that-sank-an-admiral","savannah-the-sergeant-who-would-not-be-an-officer","savannah-the-silkworm-house","savannah-the-spring-that-smelled-of-the-bolt","savannah-the-stone-beside-the-grave","savannah-the-synagogue-with-the-onion-dome","savannah-the-vaults-on-south-broad","savannah-the-woman-was-hanged-yesterday","savannah-the-word-in-the-basement","savannah-they-cannot-breach-your-walls","savannah-to-have-land","savannah-twenty-two-squares","savannah-waving-girl","savannah-wesleys-empty-lot","savannah-white-only-until-1963","savannah-white-paper-in-their-hats","savannah-who-lies-under-the-pulaski-monument","savannah-who-slew-odrey-miller","savannah-yamacraw-bluff","savannah-you-are-my-prisoner","southport-a-fish-house-plays-a-fish-shack","southport-a-wretched-little-place","southport-carved-in-imperishable-stone","southport-croaker-queen","southport-one-floor-below-the-cells","southport-pay-on-your-way-out","southport-red-over-white","southport-the-bent-oak","southport-the-city-of-the-south-atlantic","southport-the-festival-of-free-men","southport-the-gentleman-giant","southport-the-harp-that-kept-playing","southport-the-last-cupola","southport-the-old-man-and-the-boy","southport-the-reporter-who-could-not-hear","southport-the-reverends-church","southport-the-station-in-the-river","southport-the-watch-on-the-river","southport-the-woman-who-raised-the-flags","southport-worse-than-hazel","st-augustine-a-hotel-poured-from-shells","st-augustine-a-wall-of-seashells","st-augustine-acid-in-the-pool","st-augustine-drawings-on-ledger-paper","st-augustine-the-first-thanksgiving-menu","st-augustine-the-free-town-in-the-marsh","st-augustine-the-inlet-of-slaughters","st-augustine-wild-cats-window","the-balcony","the-children-at-the-lighthouse","the-distance-across-the-street","the-empty-frames","the-footsteps-above-the-gallows","the-garage-that-vanished","the-girl-who-wanted-her-doll","the-lady-in-grey","the-last-movie","the-lights-beyond-the-ridge","the-men-who-left-their-faces-behind","the-music-in-the-empty-room","the-other-history-of-fraunces-tavern","the-prison-corridor","the-prisoner-who-never-reached-the-prison","the-room-that-knocks-back","the-turn-onto-elm-street","wall-street-the-wall","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);
+export const VERIFIED_IDS: ReadonlySet<string> = new Set(["african-burial-ground","annapolis-a-port-called-napolis","annapolis-a-private-citizen-by-christmas","annapolis-married-in-that-house","annapolis-the-dome-was-a-lookout","asheville-a-dome-made-of-tile","asheville-a-government-at-the-inn","asheville-a-leg-in-a-boot","asheville-a-yodel-on-the-top-floor","asheville-the-boardinghouse-called-dixieland","asheville-the-fire-at-highland-hospital","asheville-the-man-who-walked-a-wheel","asheville-the-ymi","atlantic-city-first-boardwalk","bald-head-captain-charlie-lit-both","bald-head-the-builder-who-lost-money","bald-head-the-prisms-coming-home","bald-head-the-swim-to-southport","bald-head-the-woman-on-the-shore","boston-a-campaign-from-a-cell","boston-a-door-like-a-tomb","boston-a-fort-you-could-carry","boston-a-ride-on-the-top-stone","boston-a-smell-of-oranges","boston-abiel-smith-school-goodbye","boston-african-meeting-house-built-by-its-people","boston-beacon-hill-the-beacon","boston-brimstone-corner","boston-common-cows","boston-copies-in-the-street","boston-franklins-other-corner","boston-granary-five-in-one-grave","boston-hayden-house-keg","boston-her-book-on-the-tea-ship","boston-in-short-i-lost-most-all","boston-mother-goose","boston-poe-walks-away","boston-say-no-more","boston-sealed-in-the-fort","boston-shaw-memorial-forty-faces","boston-sides-made-of-iron","boston-six-weeks-and-a-fair","boston-state-house-dome-copper","boston-swan-boats-mrs-paget","boston-the-boy-who-would-not-sing","boston-the-church-inside-the-church","boston-the-cloak-she-forgot","boston-the-ducklings-twins","boston-the-harpies-of-the-shore","boston-the-house-that-stayed-useful","boston-the-lady-in-black","boston-the-letter-on-the-slate","boston-the-line-in-pi-alley","boston-the-lion-and-the-unicorn","boston-the-monument-that-names-nobody","boston-the-poem-that-built-a-statue","boston-the-reed-that-stuck","boston-the-school-that-lost-its-ground","boston-the-sextons-lodgers","boston-the-spire-that-fell","boston-the-spy-question","boston-the-stone-they-shot-at","boston-the-street-that-ran-into-the-sea","boston-the-whites-of-their-eyes","boston-the-wire-watson-kept","boston-the-wrong-hill","boston-waiting-for-mister-rotch","boston-we-did-not-then-distrust","boston-what-the-auditor-found","boston-where-the-water-was","boston-who-said-fire","bowling-green-king-george","canyon-of-heroes","carolina-beach-a-haven-called-seabreeze","carolina-beach-one-of-the-last-boardwalks","carolina-beach-the-boat-to-the-beach","carolina-beach-the-editors-and-the-dance","carolina-beach-the-plant-that-eats-bugs","carolina-beach-the-show-over-the-ocean","carolina-beach-the-trap-that-counts","carolina-beach-where-the-shag-began","casa-casuarina-the-steps","castle-clinton-eight-million","caswell-beach-a-hat-from-a-helicopter","caswell-beach-a-lighthouse-poured-in-a-week","caswell-beach-the-long-day-of-dunbar-davis","caswell-beach-the-night-caswell-blew-up","caswell-beach-the-second-brightest-light","caswell-beach-yachts-on-submarine-watch","charging-bull-illegal","charleston-a-bench-for-the-unnamed","charleston-a-broken-taillight","charleston-a-cake-and-a-shark","charleston-a-candle-for-air","charleston-a-chest-of-medicine","charleston-a-dollar-thirty-an-hour","charleston-a-gallery-on-the-highway","charleston-a-message-for-hell","charleston-a-strangers-initials","charleston-a-wharf-he-was-willing-to-lose","charleston-an-opera-at-the-beach","charleston-blackbeards-ransom","charleston-blown-up-to-stop-a-fire","charleston-blue-and-buff-rosettes","charleston-blue-to-keep-the-spirits-out","charleston-bolted-together","charleston-built-for-a-capital","charleston-built-to-fall-inward","charleston-buried-at-the-gate","charleston-calhoun-moved-by-night","charleston-every-five-minutes","charleston-exiled-by-the-sound-of-the-lash","charleston-fifteen-feet-of-sea","charleston-five-times-across","charleston-four-years-to-the-day","charleston-gothic-over-brick","charleston-hey-charleston","charleston-madame-margots-bargain","charleston-martyrs-of-the-race-course","charleston-no-pirates-lived-here","charleston-not-called-catfish","charleston-old-joe-cole","charleston-pineapples-that-are-not","charleston-rice-peas-and-the-new-year","charleston-sermons-on-the-tide","charleston-silver-forks-and-iced-claret","charleston-skulls-over-the-market","charleston-steps-that-only-go-up","charleston-the-angels-oak","charleston-the-audience-on-the-sea-wall","charleston-the-badge-that-paid-the-firemen","charleston-the-bedsheet","charleston-the-building-that-could-not-burn","charleston-the-butlers-soup","charleston-the-castle-on-the-square","charleston-the-church-that-crossed-the-street","charleston-the-congregation-that-rebuilt","charleston-the-editor-who-got-off-the-streetcar","charleston-the-fire-and-the-brick-law","charleston-the-flag-on-a-sponge-stick","charleston-the-island-in-the-gold-bug","charleston-the-last-of-six-beaches","charleston-the-lighthouse-the-sea-walked-to","charleston-the-lighthouse-with-a-lift","charleston-the-man-who-would-not-fire","charleston-the-museums-front-door","charleston-the-narrow-strip-of-sand","charleston-the-night-the-wall-opened","charleston-the-painter-on-chalmers-street","charleston-the-petition-of-forty-seven","charleston-the-piece-somebody-kept","charleston-the-playhouse-on-dock-street","charleston-the-powder-behind-the-wall","charleston-the-presidents-face-in-their-hair","charleston-the-sailor-on-the-steeple","charleston-the-school-behind-the-store","charleston-the-seed-and-the-knowing","charleston-the-ship-called-echo","charleston-the-street-named-for-a-meeting-house","charleston-the-swamp-angel","charleston-the-tables-in-the-shed","charleston-the-village-that-would-not-line-up","charleston-the-wall-built-for-one-elopement","charleston-the-window-marion-missed","charleston-the-wood-that-would-not-break","charleston-the-yard-named-for-a-water-tank","charleston-they-called-out-liberty","charleston-three-daughters-in-the-garret","charleston-two-balls-in-the-wall","charleston-we-will-overcome","charleston-what-the-survey-wrote-down","charleston-where-the-horses-grazed","charleston-where-the-tide-came-in","charleston-white-ribbons","charleston-whose-arms-on-the-roof","charlotte-a-city-of-tents","charlotte-a-navy-yard-far-from-the-sea","charlotte-a-vein-under-south-end","charlotte-brought-to-you-by-a-laxative","charlotte-fred-in-the-arcade","charlotte-roots-in-north-carolina","charlotte-strictly-stock","charlotte-the-declaration-nobody-can-find","charlotte-the-mint-that-moved","charlotte-the-sandwich-from-crescent-avenue","charlotte-the-wall-in-front-of-the-courthouse","charlotte-twenty-beds-under-the-stadium","chicago-allowed-to-carry-twenty-five-hundred","chicago-sixty-five-degrees-then-twenty-three-inches","chicago-the-architect-went-to-the-seaside","chicago-the-case-that-outlived-the-pipe","chicago-the-cow-that-took-the-blame","chicago-the-garbage-inspector","chicago-the-porters-contract","chicago-the-sign-says-end","chicago-the-strike-that-stopped-the-trains","chicago-under-the-bleachers","city-hall-declaration","cleveland-no-more-protection","cleveland-the-missing-letter","cleveland-the-river-that-burned","craggy-gardens-balds","dc-a-bandstand-for-the-dead","dc-a-bear-with-his-own-zip-code","dc-a-country-he-never-saw","dc-a-gay-vietnam-veteran","dc-a-line-of-chalk","dc-a-loan-from-an-old-friend","dc-a-parade-around-the-building","dc-a-place-to-growl","dc-a-question-not-an-answer","dc-a-room-for-the-night","dc-a-voice-on-a-sunbeam","dc-an-envelope-at-the-desk","dc-an-unearthly-pause","dc-back-in-fifteen-minutes","dc-bring-him-in-here","dc-darth-vader-is-not-a-gargoyle","dc-erected-by-their-friends","dc-every-day-but-one","dc-farewell-sisters","dc-five-dollars-to-watch","dc-harding-waffles","dc-in-the-shadow-of-the-capitol","dc-in-twos-and-threes","dc-joan-gets-her-sword-back","dc-my-home-nonetheless","dc-nineteen-in-the-stone","dc-no-props-no-serpents","dc-on-the-fort","dc-one-good-arm-and-a-shovel","dc-one-of-these-witnesses","dc-open-house-at-the-quorum-club","dc-perseverance","dc-priced-by-size","dc-room-for-another-monument","dc-saved-by-a-mistake","dc-seventy-six-years-round","dc-shots-from-the-gallery","dc-six-white-horses","dc-somebody-had-to-be-there","dc-somewhere-to-hide","dc-swallowed-the-bait","dc-the-admiral-went-home","dc-the-ballroom-ward","dc-the-best-show-in-town","dc-the-bow-in-the-corridor","dc-the-building-that-set-the-limit","dc-the-buttons-popped-off","dc-the-caretaker-heard-nothing","dc-the-cat-in-the-crypt","dc-the-cherry-tree-rebellion","dc-the-engine-under-the-floor","dc-the-epicurean-eating-house","dc-the-first-are-with-the-last","dc-the-first-name-on-the-bill-of-sale","dc-the-floor-under-the-street","dc-the-horse-called-freedom-rider","dc-the-house-on-h-street","dc-the-house-that-fired-back","dc-the-knight-of-the-feather-duster","dc-the-ladies-waiting-room","dc-the-letter-in-the-ceiling","dc-the-letter-that-got-fixed","dc-the-lights-stayed-on","dc-the-little-green-house","dc-the-little-stone-house-that-moved","dc-the-man-who-found-the-bolts","dc-the-man-who-kept-up","dc-the-man-who-saved-patton","dc-the-map-underfoot","dc-the-old-man-finishing-his-speech","dc-the-opera-glass","dc-the-other-half-of-the-circle","dc-the-other-revere","dc-the-part-he-didnt-write","dc-the-password-at-the-bridge","dc-the-pilot-who-flew-the-wrong-way","dc-the-plaque-on-the-fence","dc-the-pleasantest-camp","dc-the-room-built-for-music","dc-the-seeds-from-the-dry-lake","dc-the-spots-on-the-stairs","dc-the-starting-line-came-later","dc-the-stone-from-concord","dc-the-tape-on-the-door","dc-the-trees-that-came-second","dc-the-word-was-waiting","dc-the-words-they-carved-away","dc-three-names-for-one-wing","dc-three-poems-in-a-satchel","dc-to-thee-we-sing","dc-too-good-to-check","dc-what-hath-god-wrought","dc-where-the-money-ran-out","dc-where-the-war-ended","dc-where-they-will-do-most-good","dc-white-before-the-fire","dc-why-february","dc-written-in-the-dark","dc-you-shall-reap-a-great-reward","deadwood-before-she-was-calamity","deadwood-his-back-to-the-door","deadwood-the-champions-of-america","fairfax-she-married-the-man-who-arrested-her","fairfax-thirty-killed-said-the-picture","fall-river-a-description-without-a-photograph","fall-river-the-granite-mill-fire","federal-hall-two-firsts","fort-fisher-it-amounted-to-nothing","fort-fisher-medals-never-handed-over","fort-fisher-more-important-than-richmond","fort-fisher-soldiers-who-had-never-seen-the-sea","fort-fisher-the-hands-that-built-it","fort-fisher-the-mound","fort-fisher-the-pilots-in-the-pines","fort-fisher-the-runway-through-the-wall","fort-fisher-the-same-sand-twice","fort-fisher-the-spy-who-tried-to-row-ashore","fort-fisher-what-the-sea-took","fort-fisher-why-a-fort-made-of-sand","fraunces-tavern-farewell","hatteras-moved-the-lighthouse","houston-a-bison-named-earl","houston-a-bunch-of-guys-about-to-turn-blue","houston-a-capitol-without-a-roof","houston-a-pot-of-gold-on-washington","houston-a-window-for-doughnuts","houston-another-uss-houston","houston-constitution-bend","houston-for-the-masses","houston-ground-to-be-free-on","houston-his-name-on-the-tower","houston-hold-the-rail","houston-if-there-is-such-a-thing","houston-know-what-this-is-about","houston-love-me-orange","houston-one-dollar","houston-one-letter-missing","houston-out-of-desperation","houston-pay-as-you-go","houston-return-like-eagles","houston-the-basement-above-ground","houston-the-bodyguards-treasure","houston-the-box-began-to-chirp","houston-the-caretakers-violin","houston-the-condition","houston-the-cows-moved-out","houston-the-grass-that-gave-up","houston-the-letter-got-home","houston-the-lion-tamer","houston-the-man-in-the-brown-suit","houston-the-star-under-the-rug","houston-the-thing-in-freedmantown","houston-the-time-stopped-running","houston-the-verdict-that-was-erased","houston-thunder-and-lightnin","houston-turn-back","houston-two-bridges-for-one-street","houston-umbrellas-and-tennis-rackets","houston-we-passed-the-city","houston-weve-had-a-problem","houston-whatever-was-on-sale","houston-why-does-rice-play-texas","jerome-a-ghost-town-on-purpose","jerome-sixty-seven-men-in-cattle-cars","jerome-the-day-the-stone-melted","jerome-water-from-seven-miles-away","key-west-a-house-named-for-mercedes","key-west-brought-by-a-wreck","key-west-built-for-the-pirate-hunters","key-west-every-factory-a-club","key-west-ice-from-the-north","key-west-limes-by-air","key-west-never-armed","key-west-not-once","key-west-the-chickens-world","key-west-the-fort-that-lost-the-sea","key-west-the-gold-telegram","key-west-the-grave-nobody-was-shown","key-west-the-guest-who-was-not-there","key-west-the-house-that-came-by-boat","key-west-the-judge-and-the-wreckers","key-west-the-key-west-uniform","key-west-the-light-was-sharp-and-crisp","key-west-the-monument-architects-hospital","key-west-the-sailor-with-the-oar","key-west-the-studio-across-the-catwalk","key-west-the-weaker-cup","key-west-walls-waiting-for-a-roof","kitty-hawk-shorter-than-this-plane","kure-beach-five-shells-in-the-dark","linn-cove-viaduct-last-piece","linville-gorge-too-steep","memphis-before-breakfast","memphis-it-worked-when-they-stopped","memphis-kid-douglas","memphis-the-amp-on-the-roof","memphis-the-b-side","memphis-the-mountaintop","memphis-the-ride-home","memphis-the-song-that-mocked-mr-crump","memphis-they-smashed-the-press","mount-mitchell-buried-on-top","nashville-a-hall-built-by-song","nashville-she-bit-the-conductor","nashville-six-encores","nashville-the-architect-in-the-wall","nashville-the-colored-lights","nashville-the-fort-nobody-attacked","nashville-the-harmonica-wizard","nashville-the-saloon-keepers-tabernacle","nashville-the-united-hilton","nashville-tile-thirteen","nashville-when-the-cumberland-came-up","nashville-yellow-roses-and-red","new-orleans-a-district-with-his-name","new-orleans-a-tomb-used-again","new-orleans-an-american-house","new-orleans-corn-from-philadelphia","new-orleans-ghosts-under-the-oaks","new-orleans-her-initials-in-the-iron","new-orleans-just-margaret","new-orleans-love-street","new-orleans-machine-guns-across-the-street","new-orleans-named-for-empty-ground","new-orleans-no-funerals-at-the-cathedral","new-orleans-nobody-left-by-the-back-door","new-orleans-out-of-the-trash-can","new-orleans-st-johns-eve-on-the-bayou","new-orleans-the-apothecarys-egg-cup","new-orleans-the-arrest-that-was-planned","new-orleans-the-basket-at-the-gate","new-orleans-the-blacksmith-shop-with-no-blacksmiths","new-orleans-the-boat-that-came-through-the-earthquake","new-orleans-the-candle-on-good-friday","new-orleans-the-casket-girls","new-orleans-the-champion-who-stopped","new-orleans-the-crosses-on-the-tomb","new-orleans-the-deduct-box","new-orleans-the-duke-on-the-street-sign","new-orleans-the-emperor-never-came","new-orleans-the-file-sellers","new-orleans-the-fire-in-the-kitchen","new-orleans-the-flag-on-the-mint","new-orleans-the-girl-on-the-belvedere","new-orleans-the-grand-zombis-square","new-orleans-the-harbor-behind-the-cemetery","new-orleans-the-house-of-the-turk","new-orleans-the-inquisitor-who-came-back","new-orleans-the-ketch-in-the-river","new-orleans-the-legislature-in-the-convent","new-orleans-the-lullaby-on-rampart-street","new-orleans-the-man-under-the-altar","new-orleans-the-neutral-ground","new-orleans-the-noise-on-the-common","new-orleans-the-oaks-on-the-pillars","new-orleans-the-opera-house-that-isnt-here","new-orleans-the-priests-house","new-orleans-the-river-above-the-street","new-orleans-the-short-pews","new-orleans-the-singing-priest","new-orleans-the-train-with-sails","new-orleans-the-woman-who-never-lived-here","new-orleans-three-cooks-know","new-orleans-twenty-days-of-france","new-orleans-two-weeks-from-water","new-orleans-words-on-the-base","new-york-a-canoe-under-the-wings","new-york-a-diamond-in-the-rough","new-york-a-giant-arm-in-the-park","new-york-a-hole-in-the-ground","new-york-a-house-for-sheep","new-york-a-lighthouse-for-the-titanic","new-york-a-monument-to-small-things","new-york-an-amiable-child","new-york-an-unsweetened-pastry","new-york-balto-and-togo","new-york-battleship-number-thirty-nine","new-york-big-mose","new-york-born-and-died-upstairs","new-york-crossing-brooklyn-ferry","new-york-doing-a-brodie","new-york-doughnut-shaped-rolls","new-york-easy-to-get-in","new-york-fifty-six-years-late","new-york-for-what-a-kick-line","new-york-hey-doctor","new-york-i-shall-obey-myself","new-york-in-their-good-suits","new-york-it-sounds-like-a-tin-pan","new-york-its-magic-time","new-york-launched-in-greenpoint","new-york-more-than-paris","new-york-nine-and-a-half-feet","new-york-no-women-are-served","new-york-nobody-knows-her-name","new-york-nobody-told-the-ninth","new-york-one-name-not-in-the-records","new-york-one-of-several-places","new-york-one-patch-of-the-dark","new-york-one-staircase","new-york-out-the-back-door","new-york-patience-and-fortitude","new-york-she-came-to-dance","new-york-she-took-his-place","new-york-six-hours-before","new-york-someone-knew-we-were-there","new-york-talk-of-a-duel","new-york-ten-thousand-answers","new-york-the-basement-of-pupin-hall","new-york-the-black-bottle","new-york-the-candlemaker-of-staten-island","new-york-the-cane-whip","new-york-the-contest-nobody-held","new-york-the-cottage-at-fordham","new-york-the-crabs-under-the-needle","new-york-the-generals-guard","new-york-the-ghost-who-hates-golf","new-york-the-grand-central-depot","new-york-the-horse-at-the-ferry","new-york-the-house-that-moved-twice","new-york-the-house-they-built-back","new-york-the-king-under-the-playground","new-york-the-last-living-thing","new-york-the-last-tulip-tree","new-york-the-little-church-around-the-corner","new-york-the-manhattan","new-york-the-millionaire-who-went-missing","new-york-the-others-are-still-awake","new-york-the-pirates-share","new-york-the-pond-under-the-courthouses","new-york-the-prodigal-son-has-returned","new-york-the-red-ball-on-the-castle","new-york-the-sunday-school-picnic","new-york-the-typewriter","new-york-the-well-under-the-shop","new-york-the-whispering-corners","new-york-the-years-without-the-ball","new-york-then-they-did-it-again","new-york-thirty-eight-was-wrong","new-york-tried-in-the-unfinished-building","new-york-twenty-five-cents-for-girls","new-york-twenty-three-skidoo","new-york-under-the-grass","new-york-under-the-surface-of-that-hill","new-york-water-over-the-harlem","new-york-where-mulberry-street-crooks","new-york-whos-buried-in-grants-tomb","new-york-you-eat-too-fast","newport-a-door-in-the-floor","newport-a-year-of-waiting","newport-the-line-washington-borrowed","newport-the-tower-nobody-agrees-on","news-cafe-last-ordinary-morning","oak-island-five-left-standing","oak-island-how-oak-island-became-an-island","oak-island-the-fence-on-the-dune","pawhuska-guardian-of-his-own-children","pawhuska-the-missing-panel","pearl-street-oysters","philadelphia-a-block-from-home","philadelphia-a-castle-in-our-rear","philadelphia-a-cat-named-catterina","philadelphia-a-fine-airy-place","philadelphia-a-firehouse-on-a-market","philadelphia-a-nickel-from-a-cab-driver","philadelphia-a-purple-and-cream-gown","philadelphia-a-ride-for-fire-crackers","philadelphia-a-roof-made-of-awnings","philadelphia-a-steeple-paid-by-lottery","philadelphia-a-street-through-the-folly","philadelphia-a-young-gentleman-of-this-city","philadelphia-as-much-as-anyone-knows","philadelphia-carpet-on-the-floor","philadelphia-citizens-in-peace","philadelphia-coffee-through-the-car-windows","philadelphia-congress-started-at-the-tavern","philadelphia-dear-julia","philadelphia-dorothy-todd-widow","philadelphia-forty-dozen-catfish","philadelphia-hamlet-paid-for-the-hospital","philadelphia-harrys-sandwich","philadelphia-he-left-the-year-blank","philadelphia-home-to-martin-street","philadelphia-if-you-can-keep-it","philadelphia-just-kids-dancing","philadelphia-knockout-prices","philadelphia-lines-around-the-block","philadelphia-mister-lyon-kept-the-tongs","philadelphia-muddy-footprints","philadelphia-my-real-crime","philadelphia-no-hatch-wide-enough","philadelphia-no-letter-by-the-date","philadelphia-of-the-empire-eight","philadelphia-ona-judge-walked-out","philadelphia-patents-bought-and-sold","philadelphia-penn-on-the-tower","philadelphia-prisoner-c-2559","philadelphia-prisoner-c2559","philadelphia-read-aloud-in-the-yard","philadelphia-recruited-at-the-bar","philadelphia-rising-or-setting","philadelphia-sea-lions-in-the-forebay","philadelphia-seventy-two-steps","philadelphia-shaken-in-a-hat","philadelphia-shoes-for-bob","philadelphia-showered-and-jerked-about","philadelphia-somebody-lives-here","philadelphia-tea-upstairs","philadelphia-the-baby-born-in-a-cave","philadelphia-the-baby-over-the-bank-door","philadelphia-the-battle-of-the-kegs","philadelphia-the-bell-went-to-allentown","philadelphia-the-brightest-house","philadelphia-the-church-that-came-on-a-cart","philadelphia-the-church-you-have-to-find","philadelphia-the-congregation-of-the-dead","philadelphia-the-court-with-no-cases","philadelphia-the-crack-is-the-repair","philadelphia-the-creek-under-willow-street","philadelphia-the-curse-of-billy-penn","philadelphia-the-elm-nobody-wrote-down","philadelphia-the-empty-seat","philadelphia-the-first-vote-was-the-room","philadelphia-the-generals-wagons","philadelphia-the-good-china","philadelphia-the-hall-that-lasted-three-days","philadelphia-the-house-nobody-would-live-in","philadelphia-the-house-that-nickels-built","philadelphia-the-knights-of-the-burning-mountain","philadelphia-the-little-democrat","philadelphia-the-lord-seeth","philadelphia-the-major-who-volunteered","philadelphia-the-market-under-the-trains","philadelphia-the-pageant-on-broad-street","philadelphia-the-ploughman-and-the-daisy","philadelphia-the-real-fighter","philadelphia-the-room-upstairs","philadelphia-the-stain-on-the-parlour-floor","philadelphia-the-street-that-was-a-creek","philadelphia-the-tusks-were-upside-down","philadelphia-they-work-fast-here","philadelphia-this-side-up-with-care","philadelphia-three-hundred-on-the-alley","philadelphia-time-is-very-long","philadelphia-two-rooms-one-roof","philadelphia-two-things-from-st-louis","philadelphia-unless-the-walls-could-speak","philadelphia-up-from-the-prison-yard","philadelphia-washington-left-last","philadelphia-we-sought-not-fee-nor-reward","philadelphia-what-her-grandson-said","philadelphia-where-evangeline-was-buried","saint-paul-almost-pigs-eye","saint-paul-half-a-mile-of-cellar","saint-paul-the-end-of-the-river-road","saint-paul-the-spirit-house","salem-a-life-in-one-house","salem-a-wharf-built-on-mud","salem-the-judges-house","salem-the-ship-that-missed-the-war","salem-the-surveyor-who-lost-his-job","san-antonio-a-day-at-the-mission","san-antonio-a-window-for-rosa","san-antonio-one-governor-was-enough","san-antonio-spirits-with-flaming-swords","san-antonio-the-army-gave-it-the-hump","san-antonio-the-chili-queens-plaza","san-antonio-the-eye-with-a-mustache","san-antonio-the-mission-that-kept-moving","san-antonio-twelve-thousand-pecan-shellers","san-antonio-water-over-the-creek","san-antonio-wooden-cannons-on-the-long-barrack","san-francisco-a-coffin-for-the-hippie","san-francisco-a-cookie-from-the-tea-garden","san-francisco-a-fence-against-the-sun","san-francisco-a-gi-pet","san-francisco-a-grave-for-carlotta","san-francisco-a-message-on-the-water-tower","san-francisco-a-ship-under-clay-street","san-francisco-a-suitcase-on-steuart-street","san-francisco-a-toast-to-the-wrong-president","san-francisco-an-emperor-on-dupont-street","san-francisco-filled-by-the-tide","san-francisco-flowers-at-the-doubtfire-house","san-francisco-forty-two-tons-of-powder","san-francisco-four-posts-for-a-blade-of-grass","san-francisco-hits-eight-and-nine","san-francisco-in-the-event-of-my-death","san-francisco-not-a-fire-hose","san-francisco-nothing-above-the-windows","san-francisco-pagodas-for-the-tourists","san-francisco-red-wine-on-the-fire","san-francisco-studying-in-the-bathroom","san-francisco-the-alley-where-miles-archer-fell","san-francisco-the-arch-over-the-fort","san-francisco-the-first-rangers-on-this-hill","san-francisco-the-lighthouse-with-a-flat-top","san-francisco-the-sea-lions-who-moved-in","san-francisco-the-unfinished-mosaic","san-francisco-to-brisbane-in-two-minutes","san-francisco-turn-the-cable-car-around","san-francisco-two-sisters-on-the-same-rocks","san-francisco-when-do-we-get-the-manuscript","santa-fe-a-tank-called-the-mud-puppy","santa-fe-ben-hur-after-dark","santa-fe-the-carpenter-who-vanished","santa-fe-the-door-to-the-hill","santa-fe-the-end-of-the-trail","santa-fe-the-mother-ditch","santa-fe-what-the-tree-rings-say","santa-fe-when-the-plaza-was-a-pueblo","savannah-a-city-for-christmas","savannah-a-clubhouse-in-the-carriage-house","savannah-a-fort-for-jefferson","savannah-a-fort-made-of-oysters","savannah-a-house-for-a-president","savannah-a-hundred-yards-barefoot","savannah-a-pillow-in-bonaventure","savannah-a-rising-ground","savannah-a-tower-made-of-pine","savannah-ballast-stones","savannah-baseball-inside-the-fort","savannah-brick-pretending-to-be-stone","savannah-city-hall-dome","savannah-cotton-exchange","savannah-dinner-under-the-trees","savannah-eight-to-four","savannah-factors-walk","savannah-first-african-baptist","savannah-four-paces-apart","savannah-four-trials","savannah-friendless-but-for-him","savannah-he-prayed-for-them","savannah-house-of-mercy","savannah-leaning-on-a-fire-hydrant","savannah-little-gracie","savannah-morning-honey","savannah-names-over-the-gate","savannah-none-others-admitted","savannah-not-afraid-to-die","savannah-old-harbor-light","savannah-pirates-house","savannah-raleigh-on-gas-works-hill","savannah-six-hundred-pound-shells","savannah-steamship-savannah","savannah-thackerays-comfortable-quarters","savannah-the-artillerys-other-weapon","savannah-the-bomb-in-wassaw-sound","savannah-the-bus-that-never-came","savannah-the-check-from-hollywood","savannah-the-chicken-that-walked-backwards","savannah-the-chimney-with-privies-in-its-base","savannah-the-church-copied-from-itself","savannah-the-colonel-and-the-general","savannah-the-drummer-from-saint-domingue","savannah-the-fountain-that-kept-getting-more-parisian","savannah-the-gate-in-the-bull-street-wall","savannah-the-gate-she-made","savannah-the-general-facing-south","savannah-the-general-who-went-missing","savannah-the-ghosts-of-old-greenwich","savannah-the-girl-who-left-the-cemetery","savannah-the-handkerchief-duel","savannah-the-house-that-moved","savannah-the-lazaretto","savannah-the-library-on-loan","savannah-the-lion-on-the-bed","savannah-the-m-and-t-oaks","savannah-the-night-the-cathedral-burned","savannah-the-parking-lot-that-never-came","savannah-the-punch-that-sank-an-admiral","savannah-the-sergeant-who-would-not-be-an-officer","savannah-the-silkworm-house","savannah-the-spring-that-smelled-of-the-bolt","savannah-the-stone-beside-the-grave","savannah-the-synagogue-with-the-onion-dome","savannah-the-vaults-on-south-broad","savannah-the-woman-was-hanged-yesterday","savannah-the-word-in-the-basement","savannah-they-cannot-breach-your-walls","savannah-to-have-land","savannah-twenty-two-squares","savannah-waving-girl","savannah-wesleys-empty-lot","savannah-white-only-until-1963","savannah-white-paper-in-their-hats","savannah-who-lies-under-the-pulaski-monument","savannah-who-slew-odrey-miller","savannah-yamacraw-bluff","savannah-you-are-my-prisoner","southport-a-fish-house-plays-a-fish-shack","southport-a-wretched-little-place","southport-carved-in-imperishable-stone","southport-croaker-queen","southport-one-floor-below-the-cells","southport-pay-on-your-way-out","southport-red-over-white","southport-the-bent-oak","southport-the-city-of-the-south-atlantic","southport-the-festival-of-free-men","southport-the-gentleman-giant","southport-the-harp-that-kept-playing","southport-the-last-cupola","southport-the-old-man-and-the-boy","southport-the-reporter-who-could-not-hear","southport-the-reverends-church","southport-the-station-in-the-river","southport-the-watch-on-the-river","southport-the-woman-who-raised-the-flags","southport-worse-than-hazel","st-augustine-a-hotel-poured-from-shells","st-augustine-a-wall-of-seashells","st-augustine-acid-in-the-pool","st-augustine-drawings-on-ledger-paper","st-augustine-the-first-thanksgiving-menu","st-augustine-the-free-town-in-the-marsh","st-augustine-the-inlet-of-slaughters","st-augustine-wild-cats-window","the-balcony","the-children-at-the-lighthouse","the-distance-across-the-street","the-empty-frames","the-footsteps-above-the-gallows","the-garage-that-vanished","the-girl-who-wanted-her-doll","the-lady-in-grey","the-last-movie","the-lights-beyond-the-ridge","the-men-who-left-their-faces-behind","the-music-in-the-empty-room","the-other-history-of-fraunces-tavern","the-prison-corridor","the-prisoner-who-never-reached-the-prison","the-room-that-knocks-back","the-turn-onto-elm-street","wall-street-the-wall","wilmington-a-bar-takes-a-road-trip","wilmington-a-bookshop-plays-a-bookshop","wilmington-a-cafe-before-tree-hill","wilmington-a-college-goes-back-to-high-school","wilmington-a-fountain-in-sleepy-hollow","wilmington-a-garden-with-different-jobs","wilmington-a-goodbye-in-a-living-garden","wilmington-a-government-before-independence","wilmington-a-heart-to-heart-over-pizza","wilmington-a-house-built-to-catch-the-air","wilmington-a-little-town-in-the-1950s","wilmington-a-memory-borrowed-from-the-cotton-exchange","wilmington-a-museum-begins-with-one-case","wilmington-a-museum-plays-an-art-school","wilmington-a-new-home-for-old-evidence","wilmington-a-private-club-throws-a-marvel-party","wilmington-a-real-riverwalk-an-invented-romance","wilmington-a-residence-becomes-a-museum","wilmington-a-restaurant-at-the-end-of-the-story","wilmington-a-small-gift-by-a-wide-river","wilmington-a-superhero-above-the-river","wilmington-a-table-at-circa-1922","wilmington-a-warehouse-with-a-second-life","wilmington-a-welcome-with-teeth","wilmington-alex-manlys-voice","wilmington-art-in-the-old-lodge","wilmington-before-streaming-this-door","wilmington-bricks-that-crossed-two-churches","wilmington-calling-home-before-a-pocket-phone","wilmington-capeside-high-was-a-university","wilmington-chestnut-streets-wooden-church","wilmington-claude-howell-asks-for-more-art","wilmington-cornelius-harnett-at-the-council-table","wilmington-eight-buildings-one-new-use","wilmington-elisabeth-chant-makes-a-studio","wilmington-elizabeth-savage-latimers-wilmington","wilmington-ellen-bellamys-long-view","wilmington-fords-other-opera-house","wilmington-fourteen-rooms-on-third-street","wilmington-fred-in-the-storeroom","wilmington-giblem-lodge-holds-a-community","wilmington-guy-nixon-and-the-water-tank","wilmington-hannah-block-at-the-piano","wilmington-harry-fordens-name-on-the-bridge","wilmington-henry-bacons-smaller-building","wilmington-henry-taylors-skilled-hands","wilmington-j-allen-kirk-kept-a-record","wilmington-james-posts-practical-design","wilmington-joshua-wright-buys-a-downtown-home","wilmington-listening-behind-the-jail-walls","wilmington-meg-at-the-old-waterfront","wilmington-north-carolinas-first-synagogue-building","wilmington-one-parish-many-screen-worlds","wilmington-real-art-in-a-film-romance","wilmington-robert-taylor-beyond-wilmington","wilmington-rufus-bunnells-written-weather","wilmington-samuel-mendelsohns-forty-six-years","wilmington-second-oldest-in-the-state","wilmington-six-paddles-for-memory","wilmington-st-thomas-finds-another-purpose","wilmington-stars-under-a-downtown-roof","wilmington-steel-above-the-tracks","wilmington-the-annex-behind-the-landmark","wilmington-the-association-before-the-building","wilmington-the-basilicas-brick-invention","wilmington-the-beach-tournament-off-the-beach","wilmington-the-bridge-before-the-story","wilmington-the-building-behind-the-mansion","wilmington-the-cabooses-very-short-journey","wilmington-the-ceiling-nobody-replaced","wilmington-the-church-of-the-television-weddings","wilmington-the-church-that-became-an-arts-center","wilmington-the-church-used-as-a-hospital","wilmington-the-county-courthouse-on-third","wilmington-the-court-behind-the-house","wilmington-the-courthouse-and-the-stamp-act","wilmington-the-courthouse-sheriffs-office","wilmington-the-deep-river-apartments","wilmington-the-department-stores-big-windows","wilmington-the-diner-in-blue-velvet","wilmington-the-dog-made-of-metal","wilmington-the-exhibition-in-a-little-lane","wilmington-the-federal-building-by-the-water","wilmington-the-first-curtain","wilmington-the-first-heritage-city","wilmington-the-friend-who-came-back","wilmington-the-garden-that-was-designed-later","wilmington-the-gas-station-that-never-came","wilmington-the-gathering-before-the-coup","wilmington-the-government-taken-by-force","wilmington-the-headquarters-that-left-town","wilmington-the-home-purchased-for-history","wilmington-the-house-above-the-cells","wilmington-the-house-with-several-lives","wilmington-the-household-that-fled-yellow-fever","wilmington-the-inn-that-travels-in-time","wilmington-the-jail-fire-without-an-answer","wilmington-the-kitchen-with-an-earlier-job","wilmington-the-lodge-on-orange-street","wilmington-the-longest-line","wilmington-the-mansion-they-tried-to-burn","wilmington-the-mansion-with-boarders","wilmington-the-mill-inside-the-shopping-district","wilmington-the-movie-theater-in-a-tent","wilmington-the-museum-moves-with-the-rails","wilmington-the-other-wartime-uso","wilmington-the-painting-with-a-river-journey","wilmington-the-park-that-became-a-promise","wilmington-the-pelican-beside-the-marina","wilmington-the-people-who-decided-to-save-downtown","wilmington-the-plasterer-who-became-a-legislator","wilmington-the-press-that-the-mob-burned","wilmington-the-railroad-called-raleigh","wilmington-the-shop-that-made-the-parts","wilmington-the-stars-came-through-wilmington","wilmington-the-theatre-inside-the-tv-town","wilmington-the-tiny-train-with-a-huge-record","wilmington-the-tree-kept-in-watercolor","wilmington-the-tv-bar-that-became-a-real-bar","wilmington-the-wartime-dance-floor","wilmington-the-wilmington-ten-and-the-missing-evidence","wilmington-thirty-years-along-the-river","wilmington-this-liberty-bell-came-from-the-river-fleet","wilmington-thomas-wright-changes-the-house","wilmington-three-buildings-become-a-play-place","wilmington-three-shows-one-arcade","wilmington-trimbles-surviving-theater","wilmington-twenty-four-hours-at-the-uso","wilmington-washington-sees-the-port","wilmington-when-the-house-became-headquarters","wilmington-when-the-stage-turned-electric","wilmington-william-goulds-initials","wilmington-william-hoopers-wilmington-beginning","wilmington-zebulon-latimers-port-city-fortune","wrightsville-a-beach-memory-in-a-sandwich","wrightsville-a-beach-of-their-own","wrightsville-a-challenge-on-the-boardwalk","wrightsville-a-movie-after-the-beach","wrightsville-a-patrol-base-beside-the-water","wrightsville-a-porch-from-an-earlier-beach","wrightsville-a-summer-church-stays-for-winter","wrightsville-an-evening-at-lumina","wrightsville-can-you-spot-a-bird","wrightsville-fresh-water-beside-the-sea","wrightsville-jo-pickett-makes-room-in-the-lineup","wrightsville-letters-after-the-trolley","wrightsville-nancy-fahey-learns-what-nests-here","wrightsville-summer-rooms-become-wartime-homes","wrightsville-the-beach-car-stops-running","wrightsville-the-building-made-bright","wrightsville-the-cottage-that-became-a-museum","wrightsville-the-fire-engine-that-came-by-trolley","wrightsville-the-hot-dog-with-a-place-name","wrightsville-the-pier-returns-in-concrete","wrightsville-the-sand-is-already-occupied","wrightsville-the-surfer-who-wrote-for-advice","wrightsville-the-tracks-that-morning-walkers-read","wrightsville-the-treasure-beyond-the-channel","wrightsville-when-hazel-reached-the-beach","wrightsville-your-ticket-to-the-beach"]);

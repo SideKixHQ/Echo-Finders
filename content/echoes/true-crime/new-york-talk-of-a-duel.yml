@@ -1,0 +1,237 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (affairs and killings), filed under true-crime until the topic exists, following docs/writing-echoes.md and docs/14-true-crime.md.
+# Listening spot: Public sidewalk on the west side of Madison Avenue at East 26th Street, the Madison Square Park edge, looking east across the avenue at the New York Life Building.
+# Position: the LPC report puts the old Madison Square Garden at the northeast corner of Madison Avenue and East 26th Street, the site of the present New York Life Building; the pin is on the park side of Madison Avenue facing that corner (high confidence on the corner). About 110 m from the nearest echo (the Statue of Liberty arm in the park), which tells a different subject.
+id: new-york-talk-of-a-duel
+title: "Talk of a Duel"
+summary: "In June 1906 Harry Thaw shot Stanford White on the roof garden of Madison Square Garden, across this avenue."
+place: "Madison Avenue at East 26th Street, opposite the New York Life Building, Madison Square, Manhattan"
+at: { lat: 40.74220, lng: -73.98710 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 91
+visibility: landmark-visible
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.75
+tags: [new-york, madison-square, scandal, stanford-white, thaw, nesbit, 1906]
+teaser: "The audience thought the shots were part of the show."
+script: |
+  Look across the avenue at the big insurance building with the gold top. Before it, the corner held Madison Square Garden, designed by the architects McKim, Mead and White.
+
+  Stanford White was one of the partners. And the Garden had a theatre on its roof.
+
+  In June nineteen oh six, the roof was showing the opening night of a musical called Mam'zelle Champagne. About a thousand people were there.
+
+  White had spent the evening at his club, across the street. At five to eleven he walked over, went up to the roof, and sat at a table near the stage, his chin resting on his hand, listening to the music.
+
+  Harry Thaw had been there all evening. He came from a well known Pittsburgh family. He was married to Evelyn Nesbit, an artists' model and chorus girl, and he blamed White for ruining his life with her. He was pale, and kept walking about the roof as if looking for someone.
+
+  On stage there had been talk of a duel. Thaw walked up to White's table, drew a revolver, and fired three times. White died almost at once.
+
+  For a moment, much of the audience thought the shooting was part of the play.
+
+  Thaw walked calmly toward the elevators, the gun held up and pointed at the sky, and handed it to a fireman.
+
+  He was tried for murder. The first jury could not agree. In February nineteen oh eight a second jury acquitted him, on the ground that he had been insane, and the judge sent him to the Matteawan asylum for the criminally insane.
+
+  Look at the gold top again.
+
+  White's firm built the Garden. Demolition began in May nineteen twenty five, to make room for the building you are looking at.
+pronunciations:
+  - written: Mam'zelle
+    say: mam-ZEL
+  - written: Matteawan
+    say: MAT-ee-uh-wahn
+  - written: Nesbit
+    say: NEZ-bit
+detail: >-
+  Conviction status: acquitted by reason of insanity, recorded as "exonerated" as the Sickles echo is, because the schema has no "acquitted"; the script says plainly that the jury acquitted him on the ground of insanity and that he was committed to an asylum. Nobody named is alive (Thaw died 1947, Nesbit 1967). The night itself is from the New-York Tribune of 26 June 1906, with the place and the arrest in the Evening Star of the same day; the trials and verdict are in the Evening Star of 1 February 1908 and the New-York Tribune of 2 February 1908. Injuries are not described; the Tribune's detail of where the shots struck is left out on purpose.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: exonerated
+  reviewedBy: "James (owner), approved 2026-11-13"
+  reviewedAt: "2026-11-13"
+  contentWarning: "This echo concerns a fatal shooting in 1906 and the trials that followed. Injuries are not described."
+claims:
+  - says: "Before it, the corner held Madison Square Garden, designed by the architects McKim, Mead and White."
+    source: 4
+    quote: "In 1890 McKim, Mead & White's famous Madison Square Garden (demolished in 1924 for construction of the New York Life Insurance Company Building) opened at the northeast comer of Madison A venue and East 26th Street"
+  - says: "Stanford White was one of the partners."
+    source: 1
+    quote: "Stanford White, the well known architect, a member of the firm of McKim, Mecad White"
+  - says: "And the Garden had a theatre on its roof."
+    source: 1
+    quote: "The shooting took piace on the roof of Madison Square Garden, while the opening performance of “Mamzelle Champagne\" was heing given."
+  - says: "In June nineteen oh six, the roof was showing the opening night of a musical called Mam'zelle Champagne."
+    source: 1
+    quote: "The shooting took piace on the roof of Madison Square Garden, while the opening performance of “Mamzelle Champagne\" was heing given."
+  - says: "In June nineteen oh six, the roof was showing the opening night of a musical called Mam'zelle Champagne."
+    source: 2
+    quote: "NEW YORK. June 2<V?It had been plan ned to h.-vve Harry Thaw, who shot Stan ford White at Madison Square roof garden last night"
+  - says: "About a thousand people were there."
+    source: 1
+    quote: "There were fully one thousand persqns present, and a panic followed the shooting."
+  - says: "White had spent the evening at his club, across the street."
+    source: 1
+    quote: "White spent most all of the evening at the Manhattan Club, directly across the street, at Madison avenue and 26th street."
+  - says: "At five to eleven he walked over, went up to the roof, and sat at a table near the stage, his chin resting on his hand, listening to the music."
+    source: 1
+    quote: "At the time White centered the roof it was five minutes of 11 oc’'lock."
+  - says: "At five to eleven he walked over, went up to the roof, and sat at a table near the stage, his chin resting on his hand, listening to the music."
+    source: 1
+    quote: "he rested one elbow on the table and his chin on his hand, as he listened to the music."
+  - says: "He was married to Evelyn Nesbit, an artists' model and chorus girl, and he blamed White for ruining his life with her."
+    source: 1
+    quote: "In each of them he blamed White for ruining his domestic life and being the cause of his unhappiness with his wife, who before her marriage was the well known artists’ model und chorus girl, Evelyn Nesbit."
+  - says: "He came from a well known Pittsburgh family."
+    source: 1
+    quote: "was murdered last night by Harry XK. Thaw, of Pittsburg, member of the well known family of that name."
+  - says: "Harry Thaw had been there all evening."
+    source: 1
+    quote: "Thaw and his wife had been on the roof during the entire performance."
+  - says: "He was pale, and kept walking about the roof as if looking for someone."
+    source: 1
+    quote: "frequently during the evening he left his wife and walked about the roof, ag if looking for some one. He was pale and kept glancing about him nervously."
+  - says: "Thaw walked up to White's table, drew a revolver, and fired three times."
+    source: 1
+    quote: "Before White had time to move a finger Thaw fired three shots."
+  - says: "On stage there had been talk of a duel."
+    source: 1
+    quote: "owing to the action of the play itself, in which there had been talk of a duel, the audi- ence, except those directly about Thaw and STANFORD WHITR White, thought the shooting was part of the play."
+  - says: "White died almost at once."
+    source: 1
+    quote: "White did almost instantly."
+  - says: "For a moment, much of the audience thought the shooting was part of the play."
+    source: 1
+    quote: "owing to the action of the play itself, in which there had been talk of a duel, the audi- ence, except those directly about Thaw and STANFORD WHITR White, thought the shooting was part of the play."
+  - says: "Thaw walked calmly toward the elevators, the gun held up and pointed at the sky, and handed it to a fireman."
+    source: 1
+    quote: "Thaw walked calmly down the aisle toward the elevators. He held the re volver, almost level with his shoulder, pointed upward."
+  - says: "Thaw walked calmly toward the elevators, the gun held up and pointed at the sky, and handed it to a fireman."
+    source: 1
+    quote: "Thaw handed the revolver to Bruden."
+  - says: "He was tried for murder."
+    source: 3
+    quote: "June ltOO.?Thaw indicted for 1 murder. January 2H. IW.?First trial of Harry Thaw begun."
+  - says: "The first jury could not agree."
+    source: 3
+    quote: "January 2H. IW.?First trial of Harry Thaw begun. April 111. 11*>7.?Jury announced disagreement."
+  - says: "In February nineteen oh eight a second jury acquitted him, on the ground that he had been insane, and the judge sent him to the Matteawan asylum for the criminally insane."
+    source: 3
+    quote: "NEW YORK, February 1.?Acquitted today of the murder^of Stanford White on the ground that he was insane at the time of the commission of the homieiue, Harry K. Thaw was ordered by Justice Dowling to be committed to the Mattea wan Asylum for the Criminal Insane"
+  - says: "In February nineteen oh eight a second jury acquitted him, on the ground that he had been insane, and the judge sent him to the Matteawan asylum for the criminally insane."
+    source: 5
+    quote: "yizrry K. Thaw, acquitted of the charge of murdering Stanford White on the night of June 2% 1008. on the ground of insanity, left his Tombs cell yesterday afterhoon. and spent last night in the Asylum for the Criminal Insane at Matieawan"
+  - says: "White's firm built the Garden."
+    source: 4
+    quote: "In 1890 McKim, Mead & White's famous Madison Square Garden"
+  - says: "Demolition began in May nineteen twenty five, to make room for the building you are looking at."
+    source: 4
+    quote: "Demolition of Madison Square Garden began in May 1925,"
+sources:
+  - title: "New-York Tribune, 26 June 1906, page 1: Thaw Kills Stanford White"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030214/1906-06-26/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 26 June 1906, page 1: Thaw, Charged With Murder, Committed to the Tombs"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1906-06-26/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 1 February 1908, page 1: Thaw Was Insane Is Jury Finding"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1908-02-01/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "New York Life Insurance Company Building: designation report (LP-2067)"
+    publisher: "New York City Landmarks Preservation Commission"
+    url: https://s-media.nyc.gov/agencies/lpc/lp/2067.pdf
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "New-York Tribune, 2 February 1908, page 1: Thaw Now in Asylum, Acquitted as Insane"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030214/1908-02-02/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-talk-of-a-duel/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 91.4
+    audioBytes: 1463318
+    transcript:
+      totalS: 91.4
+      lines:
+        - text: Look across the avenue at the big insurance building with the gold top.
+          atS: 0
+          durationS: 3.95
+        - text: Before it, the corner held Madison Square Garden, designed by the architects McKim, Mead and White.
+          atS: 4.19
+          durationS: 6.19
+        - text: Stanford White was one of the partners.
+          atS: 10.7
+          durationS: 2.07
+        - text: And the Garden had a theatre on its roof.
+          atS: 12.86
+          durationS: 2.25
+        - text: In June nineteen oh six, the roof was showing the opening night of a musical called Mam'zelle Champagne.
+          atS: 15.39
+          durationS: 6.3
+        - text: About a thousand people were there.
+          atS: 22.02
+          durationS: 1.85
+        - text: White had spent the evening at his club, across the street.
+          atS: 24.2
+          durationS: 2.82
+        - text: At five to eleven he walked over, went up to the roof, and sat at a table near the stage, his chin resting on his hand, listening to the music.
+          atS: 27.3
+          durationS: 7.88
+        - text: Harry Thaw had been there all evening.
+          atS: 35.27
+          durationS: 1.94
+        - text: He came from a well known Pittsburgh family.
+          atS: 37.33
+          durationS: 2.29
+        - text: He was married to Evelyn Nesbit, an artists' model and chorus girl, and he blamed White for ruining his life with her.
+          atS: 39.68
+          durationS: 6.98
+        - text: He was pale, and kept walking about the roof as if looking for someone.
+          atS: 46.78
+          durationS: 3.88
+        - text: On stage there had been talk of a duel.
+          atS: 50.86
+          durationS: 2.23
+        - text: Thaw walked up to White's table, drew a revolver, and fired three times.
+          atS: 53.27
+          durationS: 4.4
+        - text: White died almost at once.
+          atS: 58.05
+          durationS: 1.71
+        - text: For a moment, much of the audience thought the shooting was part of the play.
+          atS: 59.93
+          durationS: 3.48
+        - text: Thaw walked calmly toward the elevators, the gun held up and pointed at the sky, and handed it to a fireman.
+          atS: 63.62
+          durationS: 6
+        - text: He was tried for murder.
+          atS: 69.87
+          durationS: 1.32
+        - text: The first jury could not agree.
+          atS: 71.32
+          durationS: 1.59
+        - text: In February nineteen oh eight a second jury acquitted him, on the ground that he had been insane, and the judge sent him to the Matteawan asylum for the criminally insane.
+          atS: 73.12
+          durationS: 9.64
+        - text: Look at the gold top again.
+          atS: 82.87
+          durationS: 1.47
+        - text: White's firm built the Garden.
+          atS: 84.5
+          durationS: 1.64
+        - text: Demolition began in May nineteen twenty five, to make room for the building you are looking at.
+          atS: 86.31
+          durationS: 5.08

@@ -1,0 +1,206 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (political scandal), filed under history until the topic exists, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on St. Charles Avenue in front of Gallier Hall (545 St. Charles Avenue), across from Lafayette Square, Central Business District.
+# Position: Overture places Gallier Hall (545 St Charles Ave) at 29.94855, -90.07113; the pin is on the St. Charles Avenue sidewalk in front of the portico (medium confidence on the exact frontage). The 1934 reports put the seized registration office in the "city hall annex", "across a narrow street" from City Hall, without naming the street, so the script points the listener at City Hall, not at the annex.
+id: new-orleans-machine-guns-across-the-street
+title: "Machine Guns Across the Street"
+summary: "In July 1934 Huey Long's Guardsmen seized the voting office beside City Hall. Machine guns looked across at the mayor."
+place: "Gallier Hall (former New Orleans City Hall), 545 St. Charles Avenue, New Orleans, Louisiana"
+at: { lat: 29.94860, lng: -90.07080 }
+triggerRadiusKm: 0.04
+category: scandals
+format: short
+durationS: 87
+visibility: landmark-visible
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [new-orleans, cbd, lafayette-square, scandal, huey-long, walmsley, national-guard, 1934]
+teaser: "The Governor's soldiers held the voting office. The Mayor's police held City Hall."
+script: |
+  Look at the white columns of Gallier Hall. In the nineteen thirties, this was New Orleans City Hall.
+
+  The Mayor in here was T. Semmes Walmsley. Once a friend of Huey Long, the Kingfish. By the summer of nineteen thirty four, his bitter enemy.
+
+  One Monday night at the end of July, more than a score of National Guardsmen came to the city hall annex, battered in the door, and took the lists of qualified voters. The Governor, a Long ally, declared partial martial law around City Hall.
+
+  Within two days, machine guns looked from the windows across a narrow street toward City Hall.
+
+  Long said he was cleaning up vice and corruption in the city. Walmsley said that was a ruse to seize the city government. He called five hundred more police to duty, which made fourteen hundred, and issued them riot guns. Long had five hundred Guardsmen waiting at Jackson Barracks.
+
+  On the radio, the Mayor called the Senator a cringing coward. We will never surrender to this madman, he said.
+
+  In September, at the primary, Long brought about two thousand fully armed Guardsmen into the city. His candidates trounced the Mayor's.
+
+  Stand here a moment, and picture it. Ordinary people stared wide eyed at the soldiers in the voting office.
+
+  Some stopped to laugh and joke with them.
+pronunciations:
+  - written: Walmsley
+    say: WAWMZ-lee
+  - written: Gallier
+    say: GAL-ee-ur
+detail: >-
+  The seizure of the registration office "last night" (Monday 30 July 1934), the battered door and the voter lists, partial martial law, the machine guns "across a narrow street toward City Hall", the police at 1,400 with riot guns, the 500 Guardsmen at Jackson Barracks, the radio insults, "We will never surrender to this madman" and the onlookers laughing with the soldiers are from Associated Press reports in the McAllen Daily Monitor of 31 July and the Evening Star of 1 August 1934. The Plentywood Herald's weekly news summary of 9 August 1934 independently gives the seizure of the registration office, the 1,400 police and the "moral crusade" and "smoke screen" exchange. The September primary, the 2,000 Guardsmen and the result are from the Evening Star of 28 December 1934. Gallier Hall as City Hall is from the Historic American Buildings Survey record (City Hall, 545 Saint Charles Street, documentation compiled after 1933). Nobody named is alive. No shots or injuries are described because none are in the sources.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Look at the white columns of Gallier Hall."
+    source: 1
+    quote: "Gallier Hall"
+  - says: "In the nineteen thirties, this was New Orleans City Hall."
+    source: 1
+    quote: "City Hall, 545 Saint Charles Street, New Orleans, Orleans Parish, LA"
+  - says: "In the nineteen thirties, this was New Orleans City Hall."
+    source: 1
+    quote: "Documentation compiled after 1933"
+  - says: "The Mayor in here was T. Semmes Walmsley."
+    source: 3
+    quote: "Mayor T. Srmmu Walmsley today called 500 additional police to duty"
+  - says: "Once a friend of Huey Long, the Kingfish."
+    source: 3
+    quote: "The embattled Walmsley. once a friend of Long"
+  - says: "By the summer of nineteen thirty four, his bitter enemy."
+    source: 2
+    quote: "Mayor T. Semmes Walmsley, bit ter enemy of the Louisiana “King fish,”"
+  - says: "One Monday night at the end of July, more than a score of National Guardsmen came to the city hall annex, battered in the door, and took the lists of qualified voters."
+    source: 2
+    quote: "More than a score of guardsmen appeared at the city hall annex last night, battered in the door and took possession of the lists of names of qualified voters for the September congressional primary."
+  - says: "One Monday night at the end of July, more than a score of National Guardsmen came to the city hall annex, battered in the door, and took the lists of qualified voters."
+    source: 3
+    quote: "Almost two score militiamen held the city registration voting office which they stormed Monday night."
+  - says: "The Governor, a Long ally, declared partial martial law around City Hall."
+    source: 2
+    quote: "Governor O. K. Allen, a Long supporter, issued a proclamation establishing partial martial law"
+  - says: "The Governor, a Long ally, declared partial martial law around City Hall."
+    source: 3
+    quote: "proclamation of partial martial law, applying to the City Hall area, continued in effect"
+  - says: "Within two days, machine guns looked from the windows across a narrow street toward City Hall."
+    source: 3
+    quote: "Machine guns looked from the win dows across a narrow street toward City Hall."
+  - says: "Within two days, machine guns looked from the windows across a narrow street toward City Hall."
+    source: 3
+    quote: "NEW ORLEANS. August 1.-Fur ther answering the challenge"
+  - says: "Long said he was cleaning up vice and corruption in the city."
+    source: 3
+    quote: "Long’s announced determination to clean up i the \"vice and corruption” In the city"
+  - says: "Walmsley said that was a ruse to seize the city government."
+    source: 3
+    quote: "which Walmsley interpreted as a ruse for Long to seise control of the New Orleans administration."
+  - says: "He called five hundred more police to duty, which made fourteen hundred, and issued them riot guns."
+    source: 3
+    quote: "called 500 additional police to duty from the civil service lists, swelling the local constabulary force to 1,400 men. Pull arms. Including riot guns, were issued"
+  - says: "He called five hundred more police to duty, which made fourteen hundred, and issued them riot guns."
+    source: 4
+    quote: "The mayor increased his police forces to 1,400"
+  - says: "Long had five hundred Guardsmen waiting at Jackson Barracks."
+    source: 3
+    quote: "500 National Guardsmen mobi lized at Jackson Barracks"
+  - says: "On the radio, the Mayor called the Senator a cringing coward."
+    source: 3
+    quote: "Walmsley in his radio address last night described Long as a \"cringing coward.”"
+  - says: "We will never surrender to this madman, he said."
+    source: 3
+    quote: "The mayor said. \"We will never sur render to this madman"
+  - says: "In September, at the primary, Long brought about two thousand fully armed Guardsmen into the city."
+    source: 5
+    quote: "It was in that election that Long brought about 2,000 fully armed Na tional Guardsmen into the city"
+  - says: "His candidates trounced the Mayor's."
+    source: 5
+    quote: "in which his candidates trounced those of Mayor Walmsley"
+  - says: "Ordinary people stared wide eyed at the soldiers in the voting office."
+    source: 3
+    quote: "Ordinary citizens stared wide-eyed at the fully armed State soldiers in the voting office."
+sources:
+  - title: "City Hall, 545 Saint Charles Street, New Orleans (Gallier Hall), Historic American Buildings Survey LA-193"
+    publisher: "Library of Congress, Prints and Photographs Division"
+    url: https://www.loc.gov/item/la0041/
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "McAllen Daily Monitor, 31 July 1934, page 1 (Associated Press)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn88083718/1934-07-31/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 1 August 1934, page 1: Senator Pits Guard Against Police in Battle for New Orleans Control (Associated Press)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1934-08-01/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Plentywood Herald (Montana), 9 August 1934, page 6: weekly news review"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn86075293/1934-08-09/ed-1/?sp=6
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 28 December 1934, page 33"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1934-12-28/ed-1/?sp=33
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-machine-guns-across-the-street/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 86.9
+    audioBytes: 1391429
+    transcript:
+      totalS: 86.9
+      lines:
+        - text: Look at the white columns of Gallier Hall.
+          atS: 0
+          durationS: 2.69
+        - text: In the nineteen thirties, this was New Orleans City Hall.
+          atS: 3.51
+          durationS: 3.22
+        - text: The Mayor in here was T.
+          atS: 7.11
+          durationS: 1.49
+        - text: Semmes Walmsley.
+          atS: 8.64
+          durationS: 1.68
+        - text: Once a friend of Huey Long, the Kingfish.
+          atS: 10.7
+          durationS: 2.79
+        - text: By the summer of nineteen thirty four, his bitter enemy.
+          atS: 13.93
+          durationS: 3.42
+        - text: One Monday night at the end of July, more than a score of National Guardsmen came to the city hall annex, battered in the door, and took the lists of qualified voters.
+          atS: 18.17
+          durationS: 9.77
+        - text: The Governor, a Long ally, declared partial martial law around City Hall.
+          atS: 28.46
+          durationS: 4.83
+        - text: Within two days, machine guns looked from the windows across a narrow street toward City Hall.
+          atS: 33.73
+          durationS: 5.85
+        - text: Long said he was cleaning up vice and corruption in the city.
+          atS: 40.18
+          durationS: 3.7
+        - text: Walmsley said that was a ruse to seize the city government.
+          atS: 44.58
+          durationS: 4.12
+        - text: He called five hundred more police to duty, which made fourteen hundred, and issued them riot guns.
+          atS: 49.09
+          durationS: 5.84
+        - text: Long had five hundred Guardsmen waiting at Jackson Barracks.
+          atS: 55.53
+          durationS: 3.66
+        - text: On the radio, the Mayor called the Senator a cringing coward.
+          atS: 60
+          durationS: 3.87
+        - text: We will never surrender to this madman, he said.
+          atS: 64.56
+          durationS: 3.03
+        - text: In September, at the primary, Long brought about two thousand fully armed Guardsmen into the city.
+          atS: 68.1
+          durationS: 6.42
+        - text: His candidates trounced the Mayor's.
+          atS: 74.73
+          durationS: 2.13
+        - text: Stand here a moment, and picture it.
+          atS: 77.1
+          durationS: 2.28
+        - text: Ordinary people stared wide eyed at the soldiers in the voting office.
+          atS: 80.19
+          durationS: 3.88
+        - text: Some stopped to laugh and joke with them.
+          atS: 84.51
+          durationS: 2.38

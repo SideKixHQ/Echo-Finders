@@ -1,0 +1,234 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (spies and espionage), filed under true-crime until the topic exists, following docs/writing-echoes.md and docs/14-true-crime.md.
+# Listening spot: Foley Square (Thomas Paine Park), the public plaza in front of the federal courthouse at 40 Centre Street, Lower Manhattan.
+# Position: the Evening Star of 12 February 1953 gives Judge Kaufman's address as the "Federal Court Building, Foley Square"; the pin is in the open plaza across Centre Street from the courthouse steps (high confidence on the square, medium that the trial courtroom was in the 40 Centre Street building rather than another federal building on the square: the sources say "Foley Square" and "the federal courthouse" without a street number). About 180 m from the nearest echo (African Burial Ground).
+id: new-york-the-typewriter
+title: "The Typewriter"
+summary: "The Rosenbergs were convicted of atomic spying here in 1951. The key witness later took back what he said about a typewriter."
+place: "Foley Square, opposite the federal courthouse at 40 Centre Street, Lower Manhattan"
+at: { lat: 40.71420, lng: -74.00230 }
+triggerRadiusKm: 0.05
+category: true-crime
+format: short
+durationS: 98
+visibility: landmark-visible
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.75
+tags: [new-york, foley-square, scandal, spies, rosenberg, cold-war, 1951]
+teaser: "Her brother said he watched her type his notes. Nearly fifty years later he took it back."
+script: |
+  Look across the square at the federal courthouse, the tall tower with the gold pyramid on top.
+
+  In March nineteen fifty one, a husband and wife went on trial in New York, accused of passing atomic secrets to the Soviet Union. Julius and Ethel Rosenberg. Their judge was Irving Kaufman, of the federal court here on Foley Square.
+
+  The government's star witness was Ethel's younger brother, David Greenglass. During the war he had been an Army machinist at Los Alamos, where the bomb was built. He testified that he had passed what he learned there to the Rosenbergs.
+
+  And he said something else. He had seen his sister type up his handwritten notes, on a portable typewriter, in their New York apartment.
+
+  On the twenty ninth of March, the jury found them guilty. On the fifth of April, the judge sentenced them both to death. I consider your crime worse than murder, he told them.
+
+  They were executed at Sing Sing in June nineteen fifty three. They were the only people ever executed in the United States for Cold War espionage. Some historians have said the evidence against Ethel was weak, compared with the evidence against her husband.
+
+  Then, in two thousand one, nearly fifty years after her death, her brother admitted he had lied under oath. He told a reporter that he did not know who had typed the notes. To this day, he said, I can't remember that the typing took place. He said it was likely his own wife who had typed them.
+
+  In two thousand fifteen, after his death, his grand jury testimony was finally released. It shows Julius at the centre of a spy ring.
+
+  It does not mention the typing.
+pronunciations:
+  - written: Greenglass
+    say: GREEN-glass
+detail: >-
+  Conviction status: convicted (Julius and Ethel Rosenberg, 29 March 1951; Evening Star of 29 March and 5 April 1951). Everyone named is dead: Julius and Ethel Rosenberg (1953), David Greenglass (2014), Ruth Greenglass (2008, not named aloud), Irving Kaufman (1992). The Rosenbergs' two sons are alive and are deliberately not named or mentioned. Morton Sobell, convicted with them, is not named. The recantation is from CBS News (2001, with AP), corroborated by NPR (2015) and CBS News (2015, AP); the grand jury release is in both 2015 reports. "Only people executed for Cold War espionage" is CBS/AP's claim. The script does not say Ethel was innocent; it says what her brother later said and what the released testimony does and does not contain. Execution is mentioned, not described.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-13"
+  reviewedAt: "2026-11-13"
+  contentWarning: "This echo concerns an espionage trial and the execution of a husband and wife in 1953. The execution is not described."
+claims:
+  - says: "In March nineteen fifty one, a husband and wife went on trial in New York, accused of passing atomic secrets to the Soviet Union."
+    source: 4
+    quote: "Julius Rosenberg and his wife, Ethel, arrive at the federal courthouse for their espionage trial in New York City March 21, 1951."
+  - says: "Julius and Ethel Rosenberg."
+    source: 2
+    quote: "Julius and Ethel Rosenberg, husband and wife convicted of stealing Amer ican atom bomb secrets for Russia"
+  - says: "Their judge was Irving Kaufman, of the federal court here on Foley Square."
+    source: 3
+    quote: "To send wires to Judge Irving Kaufman, Federal Court Building, Foley Square, New York City, urging a stay of exe cution"
+  - says: "The government's star witness was Ethel's younger brother, David Greenglass."
+    source: 1
+    quote: "The Government's star witness in the sensational case was David Greenglass, brother of Ethel Rosenberg."
+  - says: "The government's star witness was Ethel's younger brother, David Greenglass."
+    source: 5
+    quote: "Nearly 50 years after convicted Soviet spy Ethel Rosenberg was executed, her younger brother has admitted that he lied under oath to save himself"
+  - says: "During the war he had been an Army machinist at Los Alamos, where the bomb was built."
+    source: 4
+    quote: "he had given the Rosenbergs research data that he had obtained while working as an Army machinist at the Los Alamos, New Mexico headquarters of the top-secret Manhattan Project to build the atomic bomb."
+  - says: "He testified that he had passed what he learned there to the Rosenbergs."
+    source: 1
+    quote: "He said the in formation he obtained there was turned over by him to the Rosen bergs for relay to the Russians."
+  - says: "He had seen his sister type up his handwritten notes, on a portable typewriter, in their New York apartment."
+    source: 4
+    quote: "In especially damaging testimony, he recalled seeing his older sister transcribing handwritten notes to give to the Soviets on a portable typewriter at the Rosenbergs' New York apartment in 1945."
+  - says: "He had seen his sister type up his handwritten notes, on a portable typewriter, in their New York apartment."
+    source: 5
+    quote: "In court, Greenglass delivered what would be the most incriminating testimony against Ethel Rosenberg - that she transcribed his spy notes destined for Moscow on a portable Remington typewriter."
+  - says: "On the twenty ninth of March, the jury found them guilty."
+    source: 1
+    quote: "NEW YORK. Mar. 29.—Two men and a women were convicted today of passing wartime atomic secrets to Russia"
+  - says: "On the fifth of April, the judge sentenced them both to death."
+    source: 2
+    quote: "NEW YORK, April 5.—.Julius and Ethel Rosenberg, husband and wife convicted of stealing Amer ican atom bomb secrets for Russia, were sentenced today to death in the electric chair."
+  - says: "I consider your crime worse than murder, he told them."
+    source: 2
+    quote: "“I consider your crime worse than murder,” said Federal Judge! Irving R. Kaufman."
+  - says: "They were executed at Sing Sing in June nineteen fifty three."
+    source: 5
+    quote: "Julius and Ethel Rosenberg were executed in Sing Sing prison in June 1953, two years after a sensational trial on charges of conspiring to steal U.S. atomic secrets for the Soviet Union."
+  - says: "They were executed at Sing Sing in June nineteen fifty three."
+    source: 6
+    quote: "Julius and Ethel Rosenberg were executed in 1953 for selling U.S. nuclear secrets to the Soviet Union after one of the most sensational Cold War-era espionage trials."
+  - says: "They were the only people ever executed in the United States for Cold War espionage."
+    source: 5
+    quote: "They were the only people ever executed in the United States for Cold War espionage"
+  - says: "Some historians have said the evidence against Ethel was weak, compared with the evidence against her husband."
+    source: 5
+    quote: "While some historians say evidence against Ethel Rosenberg was weak compared with that against her husband"
+  - says: "Then, in two thousand one, nearly fifty years after her death, her brother admitted he had lied under oath."
+    source: 5
+    quote: "Nearly 50 years after convicted Soviet spy Ethel Rosenberg was executed, her younger brother has admitted that he lied under oath to save himself"
+  - says: "Then, in two thousand one, nearly fifty years after her death, her brother admitted he had lied under oath."
+    source: 5
+    quote: "December 5, 2001 / 7:45 AM EST"
+  - says: "He told a reporter that he did not know who had typed the notes."
+    source: 5
+    quote: "In the TV interview, he says, \"I don't know who typed it, frankly, and to this day I can't remember that the typing took place. I had no memory of that at all - none whatsoever.\""
+  - says: "To this day, he said, I can't remember that the typing took place."
+    source: 5
+    quote: "to this day I can't remember that the typing took place."
+  - says: "He said it was likely his own wife who had typed them."
+    source: 4
+    quote: "Greenglass said in his new statements that it was likely his wife, Ruth Greenglass - rather than Ethel Rosenberg - who typed up the notes that were passed to the Soviets."
+  - says: "He said it was likely his own wife who had typed them."
+    source: 6
+    quote: "told New York Times reporter Sam Roberts he had lied to protect his wife, Ruth Greenglass, and suggested it was she who had typed up the notes."
+  - says: "In two thousand fifteen, after his death, his grand jury testimony was finally released."
+    source: 6
+    quote: "Grand Jury Testimony In Cold War-Era Rosenberg Case Released July 15, 2015"
+  - says: "In two thousand fifteen, after his death, his grand jury testimony was finally released."
+    source: 4
+    quote: "ordered the 46-page transcript unsealed following Greenglass' death last year at age 92."
+  - says: "It shows Julius at the centre of a spy ring."
+    source: 4
+    quote: "The newly unsealed transcript presents Julius Rosenberg as a critical figure in an espionage operation"
+  - says: "It does not mention the typing."
+    source: 4
+    quote: "But the grand jury records show no mention of the typing."
+sources:
+  - title: "Evening Star (Washington, D.C.), 29 March 1951, page 1: Three Convicted of Giving Atomic Secrets to Reds"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1951-03-29/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 5 April 1951, page 1: 2 to Die as Atom Spies"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1951-04-05/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 12 February 1953, page 6"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1953-02-12/ed-1/?sp=6
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Testimony from Rosenberg brother released in famous Cold War spy case"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/testimony-from-rosenberg-brother-released-in-famous-cold-war-spy-case/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Cold War, Colder Brother"
+    publisher: "CBS News"
+    url: https://www.cbsnews.com/news/cold-war-colder-brother/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Grand Jury Testimony In Cold War-Era Rosenberg Case Released"
+    publisher: "NPR"
+    url: https://www.npr.org/sections/thetwo-way/2015/07/15/423338243/grand-jury-testimony-in-cold-war-era-rosenberg-case-released
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/new-york-the-typewriter/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 98.4
+    audioBytes: 1575749
+    transcript:
+      totalS: 98.4
+      lines:
+        - text: Look across the square at the federal courthouse, the tall tower with the gold pyramid on top.
+          atS: 0
+          durationS: 5.27
+        - text: In March nineteen fifty one, a husband and wife went on trial in New York, accused of passing atomic secrets to the Soviet Union.
+          atS: 5.65
+          durationS: 8.12
+        - text: Julius and Ethel Rosenberg.
+          atS: 14.15
+          durationS: 2.25
+        - text: Their judge was Irving Kaufman, of the federal court here on Foley Square.
+          atS: 16.79
+          durationS: 4.48
+        - text: The government's star witness was Ethel's younger brother, David Greenglass.
+          atS: 21.87
+          durationS: 4.41
+        - text: During the war he had been an Army machinist at Los Alamos, where the bomb was built.
+          atS: 26.67
+          durationS: 4.76
+        - text: He testified that he had passed what he learned there to the Rosenbergs.
+          atS: 31.75
+          durationS: 3.63
+        - text: And he said something else.
+          atS: 35.45
+          durationS: 1.43
+        - text: He had seen his sister type up his handwritten notes, on a portable typewriter, in their New York apartment.
+          atS: 37.26
+          durationS: 5.61
+        - text: On the twenty ninth of March, the jury found them guilty.
+          atS: 43.56
+          durationS: 3.48
+        - text: On the fifth of April, the judge sentenced them both to death.
+          atS: 47.55
+          durationS: 3.19
+        - text: I consider your crime worse than murder, he told them.
+          atS: 51.26
+          durationS: 3.01
+        - text: They were executed at Sing Sing in June nineteen fifty three.
+          atS: 54.71
+          durationS: 3.96
+        - text: They were the only people ever executed in the United States for Cold War espionage.
+          atS: 59.05
+          durationS: 4.92
+        - text: Some historians have said the evidence against Ethel was weak, compared with the evidence against her husband.
+          atS: 64.57
+          durationS: 5.68
+        - text: Then, in two thousand one, nearly fifty years after her death, her brother admitted he had lied under oath.
+          atS: 70.63
+          durationS: 6.18
+        - text: He told a reporter that he did not know who had typed the notes.
+          atS: 77.25
+          durationS: 3.29
+        - text: To this day, he said, I can't remember that the typing took place.
+          atS: 80.82
+          durationS: 4.06
+        - text: He said it was likely his own wife who had typed them.
+          atS: 85.16
+          durationS: 2.72
+        - text: In two thousand fifteen, after his death, his grand jury testimony was finally released.
+          atS: 88.26
+          durationS: 5.28
+        - text: It shows Julius at the centre of a spy ring.
+          atS: 93.69
+          durationS: 2.76
+        - text: It does not mention the typing.
+          atS: 96.73
+          durationS: 1.67

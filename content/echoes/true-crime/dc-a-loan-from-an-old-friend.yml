@@ -1,0 +1,172 @@
+# Drafted by Claude Code (2026-11-12) for Washington DC (Capitol Hill, Senate side), Scandals topic, following the six beats in docs/writing-echoes.md and docs/14-true-crime.md. Filed under true-crime (a bribery conviction) until the Scandals category is built; tagged scandal.
+# Listening spot: Public sidewalk at the corner of Constitution Avenue and Delaware Avenue NE, at the Russell Senate Office Building's corner rotunda.
+# Position: the Architect of the Capitol bounds the Russell Building by Constitution Avenue, First Street, Delaware Avenue and C Street NE; set at the Constitution and Delaware corner at 38.89245, -77.00695 (high confidence on the building; the Caucus Room itself is inside and not public).
+id: dc-a-loan-from-an-old-friend
+title: "A Loan From an Old Friend"
+summary: "Teapot Dome was heard in this building. One jury found Albert Fall took a bribe. Another found the giver not guilty."
+place: "Russell Senate Office Building, Constitution Avenue and Delaware Avenue NE, Washington, D.C."
+at: { lat: 38.89245, lng: -77.00695 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 82
+visibility: at-hand
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.76
+tags: [washington, capitol-hill, russell-building, scandal, teapot-dome, albert-fall, doheny, harding, 1929, bribery, corruption]
+teaser: "One jury said he took a bribe. The next said nobody gave one."
+script: |
+  Look at the corner of the Senate office building in front of you, the Russell Building. Inside, up twin marble staircases, is its Caucus Room. In nineteen twenty three and twenty four, that room held the hearings into the Teapot Dome scandal.
+
+  It was about oil. Under President Harding, the Secretary of the Interior, Albert Fall, leased naval oil reserves to private companies. One lease, to the oil fields at Elk Hills in California, went to a company of Edward Doheny's.
+
+  Early in nineteen twenty four, Doheny came before Senator Walsh's committee and admitted that he had given Fall one hundred thousand dollars. In cash. Carried to Washington in a satchel by his own son.
+
+  It was a loan, Doheny said. A loan from one old friend to another.
+
+  In October nineteen twenty nine, a jury of eight men and four women found Albert Fall guilty of accepting a bribe of one hundred thousand dollars from Doheny, in exchange for the lease. They had taken twenty three hours and fifty minutes. Fall received the verdict slumped in the invalid's chair he had used through the trial.
+
+  In March nineteen thirty, another jury heard the case against Doheny himself, for giving the same money. That jury accepted that the hundred thousand dollars was a loan, and acquitted him.
+
+  Look at the building again. One man was guilty of taking the money. The other was not guilty of giving it.
+pronunciations:
+  - written: Doheny
+    say: doh-HEE-nee
+detail: >-
+  Conviction status: convicted. Fall was convicted of accepting the bribe on 25 October 1929 (Washington Times, same day, and the Associated Press report of Doheny's trial in the Evening Star, 22 March 1930, which says Fall "Was Convicted in Case"). Doheny was acquitted of giving it on 22 March 1930 (Evening Star). The satchel and Doheny's admission before the Walsh committee are from the Producers News of 1 February 1924, a Montana paper, the only fetched source for the satchel, so that detail rests on one source. The Caucus Room as the place of the Teapot Dome hearings is from the Architect of the Capitol. Everyone named is long dead. Strictly, Fall's bribe was for the Elk Hills lease in California; Teapot Dome in Wyoming went to Harry Sinclair, which is why the script says Teapot Dome only of the hearings. Fall's sentence (a year in prison and a fine) is left out for want of a fetched source.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-13"
+  reviewedAt: "2026-11-13"
+  contentWarning: "This echo concerns a bribery scandal and the trials that followed. No violence is described."
+claims:
+  - says: "Inside, up twin marble staircases, is its Caucus Room."
+    source: 1
+    quote: "At the rear of the Rotunda, twin marble staircases lead to the imposing Caucus Room."
+  - says: "In nineteen twenty three and twenty four, that room held the hearings into the Teapot Dome scandal."
+    source: 1
+    quote: "Topics of Senate hearings and investigations of national significance that have taken place in the Russell Caucus Room include: the sinking of the Titanic (1912), the Teapot Dome Scandal (1923–24)"
+  - says: "Under President Harding, the Secretary of the Interior, Albert Fall, leased naval oil reserves to private companies."
+    source: 4
+    quote: "The Doheny charge was the last of six indictments returned by a grand jury as a result of the oil leasing policies of the Interior Secretary of the Harding administration"
+  - says: "One lease, to the oil fields at Elk Hills in California, went to a company of Edward Doheny's."
+    source: 4
+    quote: "The Government charged that the money was given Fall to influence his award of the Elk Hills naval oil lease to a Doheny company."
+  - says: "Early in nineteen twenty four, Doheny came before Senator Walsh's committee and admitted that he had given Fall one hundred thousand dollars."
+    source: 2
+    quote: "was the first of the major characters in the Teapot Dome scandal to face Senator Walsh's committee after the McLean and Roosevelt disclosures."
+  - says: "In cash. Carried to Washington in a satchel by his own son."
+    source: 2
+    quote: "of $100,000 to Secretary ot the Interior Fall—given in cash and sent to Washington in a satchel carried by Doheny's son"
+  - says: "It was a loan, Doheny said. A loan from one old friend to another."
+    source: 3
+    quote: "E. D. Doheny, who con- j ' tended that the SIOO,OOO was just . ’ i“a loan from one old friend to j another;”"
+  - says: "In October nineteen twenty nine, a jury of eight men and four women found Albert Fall guilty of accepting a bribe of one hundred thousand dollars from Doheny, in exchange for the lease."
+    source: 3
+    quote: "Eight mi’n and four women today found former Secretary of Interior Albert B. Fail guilty of having accepted a SIOO,OOO bribe from E. L. Doheny, California oil baron, in exchange for an invaluable lease on the naval oil reserves."
+  - says: "They had taken twenty three hours and fifty minutes."
+    source: 3
+    quote: "It took the jury 23 hours and 50 minutes to reach its verdict."
+  - says: "Fall received the verdict slumped in the invalid's chair he had used through the trial."
+    source: 3
+    quote: "Fall received the verdict slumped in the invalid's chair which he has , occupied throughout the trial."
+  - says: "In March nineteen thirty, another jury heard the case against Doheny himself, for giving the same money."
+    source: 4
+    quote: "Edward L. Doheny was acquitted today on a charge of bribing a former cabinet officer."
+  - says: "That jury accepted that the hundred thousand dollars was a loan, and acquitted him."
+    source: 4
+    quote: "sustained Doheny’s plea that the SIOO,OOO he gave to Albert B. Fall, Harding’s Secretary of the Interior, was a loan and set him free."
+  - says: "One man was guilty of taking the money. The other was not guilty of giving it."
+    source: 4
+    quote: "Verdict Returned Despite Fact Ex-Secretary Albert B. Fall Was Convicted in Case."
+sources:
+  - title: "Russell Senate Office Building"
+    publisher: "Architect of the Capitol"
+    url: https://www.aoc.gov/explore-capitol-campus/buildings-grounds/senate-office-buildings/russell
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "The Producers News (Plentywood, Montana), 1 February 1924, page 1: Fall, Denby and Daugherty in Limelight"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn85053305/1924-02-01/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "The Washington Times, 25 October 1929, page 1: Fall Found Guilty"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84026749/1929-10-25/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Evening Star (Washington, D.C.), 22 March 1930, page 1: Doheny Found Not Guilty of Giving Bribe (Associated Press)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83045462/1930-03-22/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/dc-a-loan-from-an-old-friend/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 82.2
+    audioBytes: 1316196
+    transcript:
+      totalS: 82.2
+      lines:
+        - text: Look at the corner of the Senate office building in front of you, the Russell Building.
+          atS: 0
+          durationS: 4.02
+        - text: Inside, up twin marble staircases, is its Caucus Room.
+          atS: 4.19
+          durationS: 3.98
+        - text: In nineteen twenty three and twenty four, that room held the hearings into the Teapot Dome scandal.
+          atS: 8.42
+          durationS: 5.48
+        - text: It was about oil.
+          atS: 14.01
+          durationS: 1.2
+        - text: Under President Harding, the Secretary of the Interior, Albert Fall, leased naval oil reserves to private companies.
+          atS: 15.45
+          durationS: 6.7
+        - text: One lease, to the oil fields at Elk Hills in California, went to a company of Edward Doheny's.
+          atS: 22.54
+          durationS: 5.79
+        - text: Early in nineteen twenty four, Doheny came before Senator Walsh's committee and admitted that he had given Fall one hundred thousand dollars.
+          atS: 28.57
+          durationS: 7.86
+        - text: In cash.
+          atS: 36.55
+          durationS: 0.82
+        - text: Carried to Washington in a satchel by his own son.
+          atS: 37.55
+          durationS: 2.98
+        - text: It was a loan, Doheny said.
+          atS: 40.74
+          durationS: 2.28
+        - text: A loan from one old friend to another.
+          atS: 43.13
+          durationS: 2.63
+        - text: In October nineteen twenty nine, a jury of eight men and four women found Albert Fall guilty of accepting a bribe of one hundred thousand dollars from Doheny, in exchange for the lease.
+          atS: 46.88
+          durationS: 11.27
+        - text: They had taken twenty three hours and fifty minutes.
+          atS: 58.43
+          durationS: 2.62
+        - text: Fall received the verdict slumped in the invalid's chair he had used through the trial.
+          atS: 61.38
+          durationS: 4.4
+        - text: In March nineteen thirty, another jury heard the case against Doheny himself, for giving the same money.
+          atS: 66.03
+          durationS: 5.91
+        - text: That jury accepted that the hundred thousand dollars was a loan, and acquitted him.
+          atS: 72.05
+          durationS: 4.27
+        - text: Look at the building again.
+          atS: 76.44
+          durationS: 1.31
+        - text: One man was guilty of taking the money.
+          atS: 77.9
+          durationS: 2.11
+        - text: The other was not guilty of giving it.
+          atS: 80.13
+          durationS: 2.07

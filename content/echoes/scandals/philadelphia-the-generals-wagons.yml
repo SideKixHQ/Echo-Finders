@@ -1,0 +1,179 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (corruption and spies), filed under history until the topic exists, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on the south side of Market Street at Sixth Street, at the open air President's House site, Independence Mall, Philadelphia.
+# Position: NPS places the Masters-Penn House, Arnold's residence and headquarters in 1778 and 1779, on the President's House site at Sixth and Market; the pin is on the Market Street pavement at the west end of the site (high confidence on the site). About 30 m from "Ona Judge Walked Out", which stands at the same site and tells a different subject; the existing Mischianza echo ("The Knights of the Burning Mountain") covers Arnold and Peggy Shippen only in passing, and this echo does not retell it.
+id: philadelphia-the-generals-wagons
+title: "The General's Wagons"
+summary: "Benedict Arnold lived here as commander of Philadelphia. He was court martialled, and began writing to the British."
+place: "President's House site, Sixth and Market Streets, Independence Mall, Philadelphia, Pennsylvania"
+at: { lat: 39.95055, lng: -75.15075 }
+triggerRadiusKm: 0.04
+category: scandals
+format: short
+durationS: 113
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [philadelphia, independence-mall, scandal, spies, arnold, revolution, 1779]
+teaser: "Washington reprimanded him gently. By then it was far too late."
+script: |
+  Look at the outline of the old house here, on Market Street. Before it was the President's House, it was the home of the American commander of Philadelphia, Benedict Arnold.
+
+  The British left the city in June seventeen seventy eight. Arnold marched in, and promptly made this house his residence and headquarters.
+
+  He lived far beyond his pay. A costly carriage, a lavish table, servants in livery. The editor of the trial record later wrote that his style of living was what you might expect of a prince, not of an army officer in a simple republic. He married into the Shippen family, who were known to prefer the old order of things.
+
+  Pennsylvania's government brought charges against him, and in the end he was court martialled.
+
+  Among the charges was the matter of the wagons. Wagons drawn from Pennsylvania for the public service had been sent, at Arnold's request, to move private property out of danger.
+
+  In January seventeen eighty the court gave its verdict. It cleared him of two charges, and found against him on two. On the wagons, it accepted that he had meant to pay for them himself and had not meant to defraud anyone. But a request from a general, it said, could work as an order. The request was imprudent and improper. He was sentenced to a reprimand from Washington.
+
+  Washington's words, as a French diplomat reported them, were gentle. Even the shadow of a fault, he said, tarnishes the lustre of our finest achievements.
+
+  It was far too late. The Park Service says that in the spring of seventeen seventy nine, while he was still living in this house, Arnold had already begun his secret correspondence with the British.
+pronunciations: []
+detail: >-
+  The verdict, the wagon finding, the sentence, the account of his style of living and the Shippen marriage are from the 1865 printing of the court martial proceedings, read on a scan at the Internet Archive (quotations keep the long-s OCR spelling, so "fumptuous" is "sumptuous"). The words of the reprimand are as the French diplomat Marbois reported them, quoted in that book's notes, and the script says so. The house and the start of the treasonous correspondence are from the National Park Service. Filed under History, not True Crime: a court martial on two counts of misconduct, ending in a reprimand, rather than a crime at the centre of the echo; James may prefer to move it. The existing Mischianza echo mentions Arnold and Peggy Shippen; this echo does not retell that evening.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "Before it was the President's House, it was the home of the American commander of Philadelphia, Benedict Arnold."
+    source: 1
+    quote: "Colonial forces enter Philadelphia under the command of Major-General Benedict Arnold. Arnold promptly makes the Masters-Penn House his residence and headquarters."
+  - says: "The British left the city in June seventeen seventy eight."
+    source: 1
+    quote: "In June 1778, the British evacuate Philadelphia and consolidate their forces in New York."
+  - says: "Arnold marched in, and promptly made this house his residence and headquarters."
+    source: 1
+    quote: "Arnold promptly makes the Masters-Penn House his residence and headquarters."
+  - says: "He lived far beyond his pay."
+    source: 2
+    quote: "The habits of General Arnold, while holding chief military command in Philadelphia, were fumptuous and ex- travagant to a degree far beyond the income from his pay and the regular allowances of government."
+  - says: "A costly carriage, a lavish table, servants in livery."
+    source: 2
+    quote: "He indulged in an expenfive equipage, a fumptuous table, and coftly livery."
+  - says: "The editor of the trial record later wrote that his style of living was what you might expect of a prince, not of an army officer in a simple republic."
+    source: 2
+    quote: "his entertainments, and ftyle of living generally, were fuch as might be expected of a prince, rather than of an army officer in a fimple republic."
+  - says: "He married into the Shippen family, who were known to prefer the old order of things."
+    source: 2
+    quote: "he formed an alliance by marriage, with the family of Mr. Edward Shippen, who was prominently known to prefer the old order of things"
+  - says: "Pennsylvania's government brought charges against him, and in the end he was court martialled."
+    source: 2
+    quote: "Report of the committee of congrefs on the charges ex- hibited againft General Arnold by the prefident and council of Pennfylvania."
+  - says: "Wagons drawn from Pennsylvania for the public service had been sent, at Arnold's request, to move private property out of danger."
+    source: 2
+    quote: "General Arnold made application to the deputy quarter mafter general, to fupply him with waggons to remove pro- perty then in imminent danger from the enemy ; that wag- gons were fupplied him by the deputy quarter mafter general on this application, which had been drawn from the ftate of Pennfylvania for the public fervice"
+  - says: "In January seventeen eighty the court gave its verdict."
+    source: 2
+    quote: "January 26. The court met agreeable to adjournment, and having conlidered the feveral charges exhibited againft General Arnold, the evidence produced on the trial, and his defence, are of opinion"
+  - says: "It cleared him of two charges, and found against him on two."
+    source: 2
+    quote: "they do fully acquit General Arnold of it. They do acquit General Arnold of the third charge."
+  - says: "It cleared him of two charges, and found against him on two."
+    source: 2
+    quote: "The court, in confequence of their de- terminations refpecting the firft and laft charges exhibited againft Major General Arnold, do fentence him to receive a reprimand from his excellency the commander in chief."
+  - says: "On the wagons, it accepted that he had meant to pay for them himself and had not meant to defraud anyone."
+    source: 2
+    quote: "he had no defign of employing the waggons otherwife than at his private expence, nor of defrauding the public"
+  - says: "The request was imprudent and improper."
+    source: 2
+    quote: "they are of opinion, the requeft was im- prudent and improper, and that, therefore, it ought not to have been made."
+  - says: "He was sentenced to a reprimand from Washington."
+    source: 2
+    quote: "do fentence him to receive a reprimand from his excellency the commander in chief."
+  - says: "Washington's words, as a French diplomat reported them, were gentle."
+    source: 2
+    quote: "The manner of reprimanding him, was as delicate and gentle as could be expected by the moil fenfitive mind, and was in the following words as reported by Marbois"
+  - says: "Even the shadow of a fault, he said, tarnishes the lustre of our finest achievements."
+    source: 2
+    quote: "Even the lhadow of a \" fault tarnifhes the luftre of our fineft achievements."
+  - says: "The Park Service says that in the spring of seventeen seventy nine, while he was still living in this house, Arnold had already begun his secret correspondence with the British."
+    source: 1
+    quote: "In March 1779, Arnold resigns his post and two months later, while still living in the house, he begins his treasonous correspondence with the British."
+  - says: "The Park Service says that in the spring of seventeen seventy nine, while he was still living in this house, Arnold had already begun his secret correspondence with the British."
+    source: 2
+    quote: "His firft correfpondence with Andre, began under an aflumed name, about April, 1 779."
+sources:
+  - title: "History of the President's House Site"
+    publisher: "National Park Service, Independence National Historical Park"
+    url: https://www.nps.gov/inde/learn/historyculture/history-of-the-presidents-house-site.htm
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Proceedings of a General Court Martial for the Trial of Major General Arnold, with an introduction, notes and index (New York, 1865)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/proceedingsofgen00arno
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-generals-wagons/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 113.1
+    audioBytes: 1810224
+    transcript:
+      totalS: 113.1
+      lines:
+        - text: Look at the outline of the old house here, on Market Street.
+          atS: 0
+          durationS: 3.68
+        - text: Before it was the President's House, it was the home of the American commander of Philadelphia, Benedict Arnold.
+          atS: 4.19
+          durationS: 6.51
+        - text: The British left the city in June seventeen seventy eight.
+          atS: 11.4
+          durationS: 3.33
+        - text: Arnold marched in, and promptly made this house his residence and headquarters.
+          atS: 15.24
+          durationS: 4.98
+        - text: He lived far beyond his pay.
+          atS: 20.73
+          durationS: 2.13
+        - text: A costly carriage, a lavish table, servants in livery.
+          atS: 23.24
+          durationS: 4.42
+        - text: The editor of the trial record later wrote that his style of living was what you might expect of a prince, not of an army officer in a simple republic.
+          atS: 28.48
+          durationS: 8.92
+        - text: He married into the Shippen family, who were known to prefer the old order of things.
+          atS: 37.91
+          durationS: 4.8
+        - text: Pennsylvania's government brought charges against him, and in the end he was court martialled.
+          atS: 43.03
+          durationS: 5.4
+        - text: Among the charges was the matter of the wagons.
+          atS: 49.03
+          durationS: 2.77
+        - text: Wagons drawn from Pennsylvania for the public service had been sent, at Arnold's request, to move private property out of danger.
+          atS: 52.24
+          durationS: 8.85
+        - text: In January seventeen eighty the court gave its verdict.
+          atS: 62.21
+          durationS: 4.08
+        - text: It cleared him of two charges, and found against him on two.
+          atS: 66.61
+          durationS: 3.99
+        - text: On the wagons, it accepted that he had meant to pay for them himself and had not meant to defraud anyone.
+          atS: 71.11
+          durationS: 6.23
+        - text: But a request from a general, it said, could work as an order.
+          atS: 77.73
+          durationS: 3.86
+        - text: The request was imprudent and improper.
+          atS: 82.09
+          durationS: 2.47
+        - text: He was sentenced to a reprimand from Washington.
+          atS: 85.08
+          durationS: 2.61
+        - text: Washington's words, as a French diplomat reported them, were gentle.
+          atS: 88.2
+          durationS: 4.14
+        - text: Even the shadow of a fault, he said, tarnishes the lustre of our finest achievements.
+          atS: 92.86
+          durationS: 5.54
+        - text: It was far too late.
+          atS: 99.69
+          durationS: 1.88
+        - text: The Park Service says that in the spring of seventeen seventy nine, while he was still living in this house, Arnold had already begun his secret correspondence with the British.
+          atS: 102.88
+          durationS: 10.2

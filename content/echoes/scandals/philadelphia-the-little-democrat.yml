@@ -1,0 +1,189 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (political scandal), filed under history until the topic exists, following docs/writing-echoes.md.
+# Listening spot: The Penn's Landing promenade on the Delaware River, near the foot of Walnut Street, Philadelphia, looking out over the river.
+# Position: Jefferson's letter of 1793 says the Little Democrat "had been finCe armed at Philadelphia" and the President's message lists her "in the Delaware"; neither gives a wharf, so the pin is a public riverfront spot in the old port rather than a berth (high confidence on the river and the port, none on the ship's exact mooring, and the script does not claim one). About 170 m from the nearest echo.
+id: philadelphia-the-little-democrat
+title: "The Little Democrat"
+summary: "In 1793 Citizen Genet had a privateer armed in this port against Washington's neutrality. She sailed anyway."
+place: "Penn's Landing, the Delaware River waterfront near Walnut Street, Philadelphia, Pennsylvania"
+at: { lat: 39.94660, lng: -75.14100 }
+triggerRadiusKm: 0.06
+category: scandals
+format: short
+durationS: 103
+visibility: at-hand
+certainty: documented
+minAge: 10
+quality: 0.7
+tags: [philadelphia, delaware-river, scandal, genet, neutrality, 1793]
+teaser: "The government asked him to keep one ship in port. He would not."
+script: |
+  Look out over the Delaware. In the summer of seventeen ninety three, a ship was being armed in this port against the wishes of the President, and the man behind it was the ambassador of France.
+
+  His name was Edmond Charles Genet, the French minister to the United States. He called himself Citizen Genet.
+
+  France was at war with Britain. Washington had declared the United States neutral. But the moment Genet landed in Charleston, he began handing out commissions to privateers, to seize British merchant ships.
+
+  When he came on to Philadelphia, then the capital, Secretary of State Thomas Jefferson told him plainly. Fitting out French privateers in American ports broke American neutrality.
+
+  Genet went ahead. A vessel called the Little Sarah was armed here, as a French privateer, under a new name. The Little Democrat.
+
+  American officials warned him, again and again, to keep her in port. Genet threatened to take his case over their heads, to the American people.
+
+  Jefferson put what happened next in a letter. In disregard of that request, he wrote, the Little Democrat went out immediately on a cruise.
+
+  The cabinet agreed to ask France to call him home. By then France had a new government, and it wanted him sent back to face it. Washington knew that would almost certainly mean his execution, and he let Genet stay.
+
+  Citizen Genet lived in the United States for the rest of his life. He died here, in eighteen thirty four.
+pronunciations:
+  - written: Genet
+    say: zhuh-NAY
+detail: >-
+  The arc is from the State Department Office of the Historian's Milestones essay on the Citizen Genet affair (retired but online). The arming at Philadelphia, the two names of the ship, her being in the Delaware and Jefferson's sentence about her sailing are from the 1793 Message of the President to Congress with its papers, read on a scan at the Internet Archive (OCR spelling kept in the quotations). The script calls Genet "the ambassador of France" once, for the ear; his title was minister, and the next sentence says so.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In the summer of seventeen ninety three, a ship was being armed in this port against the wishes of the President, and the man behind it was the ambassador of France."
+    source: 2
+    quote: "another velTel, the Little De- mocrat, had been finCe armed at Philadelphia, it was defired in my letter of tha 1 2th of July, that fuch veffels with their prizes fliould be detained"
+  - says: "His name was Edmond Charles Genet, the French minister to the United States."
+    source: 1
+    quote: "Edmond Charles Genêt served as French minister to the United States from 1793 to 1794."
+  - says: "He called himself Citizen Genet."
+    source: 1
+    quote: "calling himself “Citizen Genêt” to emphasize his pro-revolutionary stance."
+  - says: "France was at war with Britain."
+    source: 1
+    quote: "the United States Government attempted to remain neutral in the conflict between Great Britain and Revolutionary France."
+  - says: "Washington had declared the United States neutral."
+    source: 1
+    quote: "Washington issued a proclamation of neutrality on April 22, 1793."
+  - says: "But the moment Genet landed in Charleston, he began handing out commissions to privateers, to seize British merchant ships."
+    source: 1
+    quote: "Genêt immediately began to issue privateering commissions upon his arrival in Charleston, with the consent of South Carolina governor William Moultrie. These commissions authorized the bearers, regardless of their country of origin, to seize British merchant ships and their cargo for personal profit"
+  - says: "When he came on to Philadelphia, then the capital, Secretary of State Thomas Jefferson told him plainly."
+    source: 1
+    quote: "When Genêt arrived in the U.S. capital of Philadelphia in May to present his credentials, Secretary of State Thomas Jefferson informed him that the United States Cabinet considered the outfitting of French privateers in American ports to be a violation of the U.S. policy of neutrality."
+  - says: "Fitting out French privateers in American ports broke American neutrality."
+    source: 1
+    quote: "the United States Cabinet considered the outfitting of French privateers in American ports to be a violation of the U.S. policy of neutrality."
+  - says: "Genet went ahead."
+    source: 1
+    quote: "Genêt ignored American warnings and allowed the outfitting of another French privateer, the Little Democrat."
+  - says: "A vessel called the Little Sarah was armed here, as a French privateer, under a new name."
+    source: 2
+    quote: "the JLittle Sarah, or Little Democrat, the fliips Jantf and VVillian*, in the Delaware"
+  - says: "The Little Democrat."
+    source: 2
+    quote: "another velTel, the Little De- mocrat, had been finCe armed at Philadelphia"
+  - says: "American officials warned him, again and again, to keep her in port."
+    source: 1
+    quote: "Defying numerous warnings from U.S. officials to detain the ship in port, Genêt continued to ready the ship to sail."
+  - says: "Genet threatened to take his case over their heads, to the American people."
+    source: 1
+    quote: "Genêt also threatened to take his case to the American people, bypassing official government opposition."
+  - says: "Jefferson put what happened next in a letter."
+    source: 2
+    quote: "In di-regard, however of this defire, the Little Democrat went out immediately on a cruife"
+  - says: "In disregard of that request, he wrote, the Little Democrat went out immediately on a cruise."
+    source: 2
+    quote: "In di-regard, however of this defire, the Little Democrat went out immediately on a cruife"
+  - says: "In disregard of that request, he wrote, the Little Democrat went out immediately on a cruise."
+    source: 1
+    quote: "Before the Cabinet reached a decision, Genêt allowed the Little Democrat to sail and begin attacking British shipping."
+  - says: "The cabinet agreed to ask France to call him home."
+    source: 1
+    quote: "All members agreed to request Genêt’s recall, but were divided as to how to go about doing so."
+  - says: "By then France had a new government, and it wanted him sent back to face it."
+    source: 1
+    quote: "The French government recalled Genêt, and demanded that the U.S. hand him over to the commissioners sent to replace him."
+  - says: "Washington knew that would almost certainly mean his execution, and he let Genet stay."
+    source: 1
+    quote: "President Washington and Attorney General Edmund Randolph, aware that Genêt’s return to France would almost certainly result in his execution, allowed Genêt to remain in the United States."
+  - says: "Citizen Genet lived in the United States for the rest of his life."
+    source: 1
+    quote: "Genêt himself continued to reside in the United States until his death in 1834."
+  - says: "He died here, in eighteen thirty four."
+    source: 1
+    quote: "Genêt himself continued to reside in the United States until his death in 1834."
+sources:
+  - title: "The Citizen Genêt Affair, 1793–1794 (Milestones in the History of U.S. Foreign Relations)"
+    publisher: "U.S. Department of State, Office of the Historian"
+    url: https://history.state.gov/milestones/1784-1800/citizen-genet
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "A Message of the President of the United States to Congress Relative to France and Great Britain, delivered December 5, 1793, with the papers therein referred to"
+    publisher: "Internet Archive (Google Books scan)"
+    url: https://archive.org/details/amessagepreside00conggoog
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/philadelphia-the-little-democrat/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 102.7
+    audioBytes: 1644712
+    transcript:
+      totalS: 102.7
+      lines:
+        - text: Look out over the Delaware.
+          atS: 0
+          durationS: 1.63
+        - text: In the summer of seventeen ninety three, a ship was being armed in this port against the wishes of the President, and the man behind it was the ambassador of France.
+          atS: 2.58
+          durationS: 9.43
+        - text: His name was Edmond Charles Genet, the French minister to the United States.
+          atS: 12.61
+          durationS: 6.08
+        - text: He called himself Citizen Genet.
+          atS: 18.94
+          durationS: 3.04
+        - text: France was at war with Britain.
+          atS: 22.36
+          durationS: 1.68
+        - text: Washington had declared the United States neutral.
+          atS: 24.48
+          durationS: 2.78
+        - text: But the moment Genet landed in Charleston, he began handing out commissions to privateers, to seize British merchant ships.
+          atS: 27.41
+          durationS: 8.01
+        - text: When he came on to Philadelphia, then the capital, Secretary of State Thomas Jefferson told him plainly.
+          atS: 35.75
+          durationS: 6.15
+        - text: Fitting out French privateers in American ports broke American neutrality.
+          atS: 42.5
+          durationS: 4.76
+        - text: Genet went ahead.
+          atS: 47.65
+          durationS: 1.49
+        - text: A vessel called the Little Sarah was armed here, as a French privateer, under a new name.
+          atS: 49.58
+          durationS: 5.69
+        - text: The Little Democrat.
+          atS: 55.51
+          durationS: 1.48
+        - text: American officials warned him, again and again, to keep her in port.
+          atS: 57.31
+          durationS: 4.5
+        - text: Genet threatened to take his case over their heads, to the American people.
+          atS: 62.51
+          durationS: 4.55
+        - text: Jefferson put what happened next in a letter.
+          atS: 68.36
+          durationS: 2.59
+        - text: In disregard of that request, he wrote, the Little Democrat went out immediately on a cruise.
+          atS: 71.55
+          durationS: 5.6
+        - text: The cabinet agreed to ask France to call him home.
+          atS: 78.26
+          durationS: 3.08
+        - text: By then France had a new government, and it wanted him sent back to face it.
+          atS: 82.15
+          durationS: 4.82
+        - text: Washington knew that would almost certainly mean his execution, and he let Genet stay.
+          atS: 87.78
+          durationS: 6.11
+        - text: Citizen Genet lived in the United States for the rest of his life.
+          atS: 94.84
+          durationS: 4.41
+        - text: He died here, in eighteen thirty four.
+          atS: 99.86
+          durationS: 2.87

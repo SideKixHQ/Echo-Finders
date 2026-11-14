@@ -1,0 +1,198 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (political scandal), filed under history until the topic exists, following docs/writing-echoes.md.
+# Listening spot: City Hall Park, on the public path by the fountain south of City Hall, looking north at the front steps of City Hall, Lower Manhattan.
+# Position: the New-York Tribune of 17 June 1857 places the fight on "the stepe of the City Hall"; the pin is in the park by the fountain, where the steps can be seen (the plaza right in front of the steps is behind a security fence). High confidence on the building, medium on the exact spot. About 100 m from the nearest echo (City Hall and the Declaration), which tells a different subject.
+id: new-york-i-shall-obey-myself
+title: "I Shall Obey Myself"
+summary: "In June 1857 the mayor's police and the state's new police fought on these steps over a warrant for the mayor's arrest."
+place: "City Hall Park, by the fountain, facing the steps of City Hall, Lower Manhattan"
+at: { lat: 40.71185, lng: -74.00640 }
+triggerRadiusKm: 0.05
+category: scandals
+format: short
+durationS: 95
+visibility: landmark-visible
+certainty: documented
+minAge: 10
+quality: 0.75
+tags: [new-york, city-hall-park, scandal, fernando-wood, police, 1857]
+teaser: "Two police forces, one warrant, and the mayor on the wrong side of it."
+script: |
+  Look past the fountain at the front steps of City Hall. In June eighteen fifty seven, two police forces fought each other on them.
+
+  New York had two because the state government and the city were at war. One force was the mayor's own Municipal Police. The other was the state's new Metropolitan Police. The mayor was Fernando Wood.
+
+  That morning, the street commissioner the Governor had appointed came to his office to work. The mayor's men told him to leave, and when he would not, they threw him out. The mayor had a candidate of his own for the post, the city's leading street contractor.
+
+  A judge issued a warrant for the mayor's arrest. The coroner brought it to City Hall. He got as far as the mayor's office, where some twenty of the mayor's police stopped him at the rail, and he was put out.
+
+  So he came back with fifty Metropolitans. On these steps they were attacked by a crowd outside and the mayor's police from within, and driven back. Several of them were badly hurt.
+
+  Then the militia came. The Seventh Regiment marched up and stood in front of City Hall. With bayonets outside his door, the mayor stopped resisting, the coroner served the warrant, and Fernando Wood went home under arrest.
+
+  At one point that day, the sheriff asked the militia's general a question. Whose authority did he recognise? Whom did he intend to obey?
+
+  The general said, Sir, I shall obey myself.
+pronunciations: []
+detail: >-
+  The day is told from the New-York Tribune of 17 June 1857 (pages 4 to 6), which was hostile to Wood; its editorial language ("ruffians", "rowdies") is left out. The National Intelligencer of 18 June 1857 gives the fifty policemen, the warrant from Judge Hoffman, the street commissioner dispute and the state and city "in conflict". The Intelligencer also reports deaths; the Tribune of the same day says only that the recovery of one or two injured men was doubtful, so the script says "badly hurt" and no more. The Tribune also calls the regiment the "National Guard"; the script uses "the Seventh Regiment", which the Tribune uses too.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In June eighteen fifty seven, two police forces fought each other on them."
+    source: 2
+    quote: "while ascending the stepe of the City Hall bad been assaulted by an overpoverivg force placed there to protect Mr. Wood seuinst the service of the warrant, and claiming to be Municipal Policemen"
+  - says: "In June eighteen fifty seven, two police forces fought each other on them."
+    source: 2
+    quote: "A GENERAL POLICE FIG. 1T. en, Fifty Metropolitan to 800 Municipal Mens a rem METRBOPOLITANS BEATEN OF Several Men Badly injured."
+  - says: "New York had two because the state government and the city were at war."
+    source: 4
+    quote: "when it is recollected that the Government of the State and that of the city are in con flict"
+  - says: "One force was the mayor's own Municipal Police."
+    source: 3
+    quote: "where he was met by some twenty or more of the Municipal Police, who denied him adwit- tance to the iuner room"
+  - says: "The other was the state's new Metropolitan Police."
+    source: 4
+    quote: "Coroner Perry was furnished with fifty new policemen to enforce it."
+  - says: "The mayor was Fernando Wood."
+    source: 3
+    quote: "the oflica of the Mayor, the said Fernando Woud, within the said City Hall"
+  - says: "That morning, the street commissioner the Governor had appointed came to his office to work."
+    source: 2
+    quote: "Yesterday meming at 9 o’clrek Mr, Conover, the new Street Commissioner appoin’ed by the Goveraor, presented himself at the Depart=sent"
+  - says: "The mayor's men told him to leave, and when he would not, they threw him out."
+    source: 2
+    quote: "Mr. Conover produced his vapers showing the au- thority of his appointment, and refused to go, Mr. Beuvnett ordered ex-Sergeant Lewis of the Second Ward to eject Mr, Conover"
+  - says: "The mayor had a candidate of his own for the post, the city's leading street contractor."
+    source: 3
+    quote: "Develin, the leading street eontractor, who has now got heavy contracts with the city, was nomivated by the Mayor for Street Commissioner"
+  - says: "A judge issued a warrant for the mayor's arrest."
+    source: 4
+    quote: "Judge Hoffman, of the Superior Court, issued the order"
+  - says: "He got as far as the mayor's office, where some twenty of the mayor's police stopped him at the rail, and he was put out."
+    source: 3
+    quote: "was adwitted within the said office and up to the railiog within the same, where he was met by some twenty or more of the Municipal Police"
+  - says: "He got as far as the mayor's office, where some twenty of the mayor's police stopped him at the rail, and he was put out."
+    source: 1
+    quote: "By the orders of that individual he was forcibly expelled, without being allowed to serve his process"
+  - says: "The coroner brought it to City Hall."
+    source: 3
+    quote: "the City Hal! of the said city for the purpose of arresting the ucfer dant, Ferpundo Wood thereon"
+  - says: "So he came back with fifty Metropolitans."
+    source: 4
+    quote: "On attempting the arrest of Mayor Wood, Coroner Perry was furnished with fifty new policemen to enforce it."
+  - says: "On these steps they were attacked by a crowd outside and the mayor's police from within, and driven back."
+    source: 1
+    quote: "He and the force with him were then assailed by a throng of ruffians without the Hall and by a body of Mr. Wood's Police from within, and driven back"
+  - says: "Several of them were badly hurt."
+    source: 1
+    quote: "several Metropolitan policemen being injured by the assailants—one or two of them so severely that their recovery is doubtful."
+  - says: "The Seventh Regiment marched up and stood in front of City Hall."
+    source: 1
+    quote: "the Seventh Regiment soon made their appearance in front of the City Hall"
+  - says: "With bayonets outside his door, the mayor stopped resisting, the coroner served the warrant, and Fernando Wood went home under arrest."
+    source: 1
+    quote: "The presence of this formidable body put an end to Mr. Wood's disposition to resist the process of the Courts; and Coroner Perry now served upon him Judge Hoffman's warrant"
+  - says: "With bayonets outside his door, the mayor stopped resisting, the coroner served the warrant, and Fernando Wood went home under arrest."
+    source: 2
+    quote: "REMARKABLE EFFECT OF THE RAYONETS. ED THE MAYOR IS ARRESTED. re fn SENDS FOR JUDGE RUSSELL TO BAS HM. THE JUDGE 1S MISSING, FERNATLO WOOD GIES HOME UNDER ARREST"
+  - says: "At one point that day, the sheriff asked the militia's general a question."
+    source: 3
+    quote: "Sheriff Willet asked Gen. Sanford whose authority ke recognized, and whom le intended to obey."
+  - says: "The general said, Sir, I shall obey myself."
+    source: 3
+    quote: "Gen. Sanford replied, Sir, I shall obey myself: I have troops enough out, and shall keep the peace of the city at all hazards.”"
+sources:
+  - title: "New-York Daily Tribune, 17 June 1857, page 4"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030213/1857-06-17/ed-1/?sp=4
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "New-York Daily Tribune, 17 June 1857, page 5: A General Police Fight"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030213/1857-06-17/ed-1/?sp=5
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "New-York Daily Tribune, 17 June 1857, page 6"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030213/1857-06-17/ed-1/?sp=6
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Daily National Intelligencer (Washington, D.C.), 18 June 1857, page 3"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83026172/1857-06-18/ed-1/?sp=3
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-york-i-shall-obey-myself/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 94.5
+    audioBytes: 1512219
+    transcript:
+      totalS: 94.5
+      lines:
+        - text: Look past the fountain at the front steps of City Hall.
+          atS: 0
+          durationS: 3.08
+        - text: In June eighteen fifty seven, two police forces fought each other on them.
+          atS: 3.68
+          durationS: 4.75
+        - text: New York had two because the state government and the city were at war.
+          atS: 8.94
+          durationS: 4.12
+        - text: One force was the mayor's own Municipal Police.
+          atS: 13.66
+          durationS: 3.01
+        - text: The other was the state's new Metropolitan Police.
+          atS: 17.11
+          durationS: 3.03
+        - text: The mayor was Fernando Wood.
+          atS: 20.53
+          durationS: 1.97
+        - text: That morning, the street commissioner the Governor had appointed came to his office to work.
+          atS: 23.45
+          durationS: 5.09
+        - text: The mayor's men told him to leave, and when he would not, they threw him out.
+          atS: 29.14
+          durationS: 4.48
+        - text: The mayor had a candidate of his own for the post, the city's leading street contractor.
+          atS: 34.32
+          durationS: 5.05
+        - text: A judge issued a warrant for the mayor's arrest.
+          atS: 40.32
+          durationS: 2.67
+        - text: The coroner brought it to City Hall.
+          atS: 43.8
+          durationS: 1.97
+        - text: He got as far as the mayor's office, where some twenty of the mayor's police stopped him at the rail, and he was put out.
+          atS: 46.48
+          durationS: 6.69
+        - text: So he came back with fifty Metropolitans.
+          atS: 53.67
+          durationS: 2.81
+        - text: On these steps they were attacked by a crowd outside and the mayor's police from within, and driven back.
+          atS: 56.81
+          durationS: 5.98
+        - text: Several of them were badly hurt.
+          atS: 63.39
+          durationS: 2.01
+        - text: Then the militia came.
+          atS: 65.91
+          durationS: 1.29
+        - text: The Seventh Regiment marched up and stood in front of City Hall.
+          atS: 67.52
+          durationS: 3.69
+        - text: With bayonets outside his door, the mayor stopped resisting, the coroner served the warrant, and Fernando Wood went home under arrest.
+          atS: 71.82
+          durationS: 8.27
+        - text: At one point that day, the sheriff asked the militia's general a question.
+          atS: 81.2
+          durationS: 4.32
+        - text: Whose authority did he recognise?
+          atS: 85.9
+          durationS: 2.08
+        - text: Whom did he intend to obey?
+          atS: 88.31
+          durationS: 2.02
+        - text: The general said, Sir, I shall obey myself.
+          atS: 90.77
+          durationS: 3.69

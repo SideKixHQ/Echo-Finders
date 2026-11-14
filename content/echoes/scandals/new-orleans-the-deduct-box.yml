@@ -1,0 +1,165 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (corruption), filed under history until the topic exists, following docs/writing-echoes.md.
+# Listening spot: Public sidewalk on Baronne Street outside the Roosevelt Hotel (123 Baronne Street), Central Business District, a block from Canal Street.
+# Position: Overture places the hotel's Baronne Street side (123 Baronne St) at 29.95397, -90.07228 and the Roosevelt Hotel Bar (116 Roosevelt Way) at 29.95466, -90.07208; the pin is on the Baronne Street sidewalk between them (medium confidence; check which door is the main entrance today). No other echo within 300 m.
+id: new-orleans-the-deduct-box
+title: "The Deduct Box"
+summary: "Huey Long kept a suite here. State workers paid into his locked campaign box, which vanished after he was shot."
+place: "The Roosevelt Hotel, Baronne Street, New Orleans, Louisiana"
+at: { lat: 29.95435, lng: -90.07200 }
+triggerRadiusKm: 0.04
+category: scandals
+format: short
+durationS: 82
+visibility: landmark-visible
+certainty: contested
+certaintyNote: >-
+  That Long's state employees were expected to pay into a campaign fund kept in a locked box is what historians say, according to the Associated Press (2009). That he carried it to his suite here, and that it was hidden in a wall, are legend, and the script says so ("some say", "many believe"). That it has never been found is the hotel's own statement to NPR and the AP.
+minAge: 0
+quality: 0.75
+tags: [new-orleans, cbd, scandal, corruption, huey-long, roosevelt-hotel, deduct-box, 1935]
+teaser: "Every state job came with a contribution. The box it went into has never been found."
+script: |
+  Look at the Roosevelt Hotel. In the nineteen twenties and thirties, this was the place to stay in New Orleans. And Huey Long, the Kingfish, kept a suite here.
+
+  Long was governor of Louisiana, and then a United States senator. NPR, reporting on this hotel, called him ruthless, corrupt, and massively powerful.
+
+  Historians say that every state employee who got a job from Long was expected to contribute to his campaign fund. Long had no base of wealthy donors, and he reasoned that this was a fair source of money. The fund was kept in a locked box. People called it the deduct box.
+
+  Some say he carried that box under his arm through this lobby, on his way up to his suite.
+
+  In September nineteen thirty five, Long was assassinated. The box was believed to have been stolen by one of his associates.
+
+  After Hurricane Katrina, the hotel was closed for nearly four years, and rebuilt for a hundred and forty five million dollars. Many believe Long hid the box in a wall. Even the renovation did not turn it up.
+
+  One of the hotel's managers put it this way. There are a lot of colorful things that may or may not have happened in this room.
+
+  But the deduct box? We sure haven't been able to find it.
+detail: >-
+  The hotel's 1920s and 1930s heyday, Long's suite, "ruthless, corrupt and gained massive political power", the deduct box as his political slush fund, the wall legend, the box not found in the renovation and the manager's words (Mark Wilson, the hotel's director of sales and marketing, not named aloud because he may be living and is not a public figure in this subject) are from NPR (2009). Long's offices and years, "historians say" every state employee who received a job from Long was expected to contribute, the locked box, the lack of wealthy contributors, "tucked under his arm", the assassination in September 1935, the box believed stolen by an associate, the $145 million renovation and the closure after Katrina are from NBC News (2009, Associated Press). NPR and the AP are independent. The script turns Wilson's "There's" into "There are" and "we sure haven't been able to find it" is quoted exactly. Nobody named aloud is alive.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In the nineteen twenties and thirties, this was the place to stay in New Orleans."
+    source: 1
+    quote: "in the 1920s and '30s, it was the place to stay in New Orleans."
+  - says: "And Huey Long, the Kingfish, kept a suite here."
+    source: 1
+    quote: "Long maintained a suite at the hotel, adding to its lure."
+  - says: "And Huey Long, the Kingfish, kept a suite here."
+    source: 1
+    quote: "Part of the lure of this hotel comes from Huey Long, known as The Kingfish."
+  - says: "Long was governor of Louisiana, and then a United States senator."
+    source: 2
+    quote: "Long, the governor of Louisiana from 1928 to 1932 and as a U.S. senator from 1932 to 1935, was a regular guest."
+  - says: "NPR, reporting on this hotel, called him ruthless, corrupt, and massively powerful."
+    source: 1
+    quote: "Long was ruthless, corrupt and gained massive political power."
+  - says: "Historians say that every state employee who got a job from Long was expected to contribute to his campaign fund."
+    source: 2
+    quote: "Historians say every state employee who received a job from Long was expected to contribute to his campaign fund, which was kept in a locked box."
+  - says: "Long had no base of wealthy donors, and he reasoned that this was a fair source of money."
+    source: 2
+    quote: "Without a base of wealthy political contributors, Long reasoned this was an appropriate source of funds for his political activities."
+  - says: "People called it the deduct box."
+    source: 1
+    quote: "Long kept a cash box — known as the deduct box — inside his hotel suite."
+  - says: "Some say he carried that box under his arm through this lobby, on his way up to his suite."
+    source: 2
+    quote: "Some say a box full of kickbacks and shakedown money was tucked under his arm as he made his way to his regular suite in the 1930s."
+  - says: "In September nineteen thirty five, Long was assassinated. The box was believed to have been stolen by one of his associates."
+    source: 2
+    quote: "After Long's assassination in September 1935, the box was believed to have been stolen by one of his associates."
+  - says: "After Hurricane Katrina, the hotel was closed for nearly four years, and rebuilt for a hundred and forty five million dollars."
+    source: 1
+    quote: "The historic Roosevelt Hotel reopened in New Orleans last month nearly four years after Hurricane Katrina left 10 feet of water in its basement."
+  - says: "After Hurricane Katrina, the hotel was closed for nearly four years, and rebuilt for a hundred and forty five million dollars."
+    source: 2
+    quote: "Thanks to a $145 million renovation, it's making an opulent return to its heyday"
+  - says: "Many believe Long hid the box in a wall. Even the renovation did not turn it up."
+    source: 1
+    quote: "Many believe he kept it hidden in a wall, but the box hasn't turned up — even with the latest ren"
+  - says: "But the deduct box? We sure haven't been able to find it."
+    source: 1
+    quote: "but the deduct box, and the money that may have been here, we sure haven't been able to find it,"
+  - says: "One of the hotel's managers put it this way."
+    source: 1
+    quote: "Mark Wilson, director of sales and marketing for the Roosevelt."
+  - says: "There are a lot of colorful things that may or may not have happened in this room."
+    source: 1
+    quote: "There's a lot of colorful things that may or may not have happened in this room"
+sources:
+  - title: "Iconic Hotel Provides Hope For New Orleans (31 August 2009)"
+    publisher: "NPR"
+    url: https://www.npr.org/2009/08/31/112350502/iconic-hotel-provides-hope-for-new-orleans
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "New Orleans hotel reopens 4 years after Katrina (29 July 2009, Associated Press)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna32175340
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/new-orleans-the-deduct-box/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 81.9
+    audioBytes: 1311181
+    transcript:
+      totalS: 81.9
+      lines:
+        - text: Look at the Roosevelt Hotel.
+          atS: 0
+          durationS: 1.79
+        - text: In the nineteen twenties and thirties, this was the place to stay in New Orleans.
+          atS: 2.17
+          durationS: 4.44
+        - text: And Huey Long, the Kingfish, kept a suite here.
+          atS: 6.93
+          durationS: 3.23
+        - text: Long was governor of Louisiana, and then a United States senator.
+          atS: 10.76
+          durationS: 3.98
+        - text: NPR, reporting on this hotel, called him ruthless, corrupt, and massively powerful.
+          atS: 15.56
+          durationS: 5.77
+        - text: Historians say that every state employee who got a job from Long was expected to contribute to his campaign fund.
+          atS: 21.77
+          durationS: 6.27
+        - text: Long had no base of wealthy donors, and he reasoned that this was a fair source of money.
+          atS: 28.48
+          durationS: 5.07
+        - text: The fund was kept in a locked box.
+          atS: 33.94
+          durationS: 2.16
+        - text: People called it the deduct box.
+          atS: 36.34
+          durationS: 2.16
+        - text: Some say he carried that box under his arm through this lobby, on his way up to his suite.
+          atS: 38.94
+          durationS: 5.71
+        - text: In September nineteen thirty five, Long was assassinated.
+          atS: 45.47
+          durationS: 4.45
+        - text: The box was believed to have been stolen by one of his associates.
+          atS: 50.42
+          durationS: 3.77
+        - text: After Hurricane Katrina, the hotel was closed for nearly four years, and rebuilt for a hundred and forty five million dollars.
+          atS: 54.71
+          durationS: 7.89
+        - text: Many believe Long hid the box in a wall.
+          atS: 63.3
+          durationS: 2.53
+        - text: Even the renovation did not turn it up.
+          atS: 66.21
+          durationS: 2.45
+        - text: One of the hotel's managers put it this way.
+          atS: 69.47
+          durationS: 2.43
+        - text: There are a lot of colorful things that may or may not have happened in this room.
+          atS: 72.41
+          durationS: 4.45
+        - text: But the deduct box?
+          atS: 77.46
+          durationS: 1.56
+        - text: We sure haven't been able to find it.
+          atS: 79.53
+          durationS: 2.35

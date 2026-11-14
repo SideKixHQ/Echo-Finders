@@ -1,0 +1,217 @@
+# Drafted by Claude Code (2026-11-12) for the Scandals topic (political scandal), filed under true-crime until the topic exists, following docs/writing-echoes.md and docs/14-true-crime.md.
+# Listening spot: Public sidewalk on Charles Street outside the Liberty Hotel (the former Charles Street Jail), 215 Charles Street, at the foot of Beacon Hill by Charles/MGH station.
+# Position: Overture places The Liberty Hotel (215 Charles St) at 42.36204, -71.07024; the pin is on the Charles Street sidewalk in front of the granite building (high confidence). About 250 m from A Smell of Oranges (Ether Dome), which tells a different subject.
+id: boston-a-campaign-from-a-cell
+title: "A Campaign from a Cell"
+summary: "In 1904 a Boston alderman was jailed here for sitting an exam in another man's name. Boston re-elected him from his cell."
+place: "The Liberty Hotel (former Charles Street Jail), 215 Charles Street, Boston, Massachusetts"
+at: { lat: 42.36210, lng: -71.06995 }
+triggerRadiusKm: 0.04
+category: true-crime
+format: short
+durationS: 90
+visibility: landmark-visible
+certainty: documented
+voice: wC1005J19tvhoqqC2hkf
+minAge: 16
+quality: 0.75
+tags: [boston, beacon-hill, scandal, corruption, curley, charles-street-jail, liberty-hotel, 1904]
+teaser: "He was in a cell when Boston voted for him. He won."
+script: |
+  Look at the big granite building across from you, with the tall arched windows. It is a hotel now, the Liberty. For more than a century it was the Charles Street Jail.
+
+  In the winter of nineteen oh four, one of the men inside was a Boston alderman, James Michael Curley.
+
+  He and his brother Thomas, a state representative, had been convicted of taking civil service examinations in other men's names. Curley had sat the exam for a friend who wanted a job.
+
+  They fought it all the way to the Supreme Court, and lost. The judge sentenced them both to two months in jail. He said their effrontery was only equalled by their boldness in running for office after they had been convicted.
+
+  Outside the federal building, several hundred men cheered them on their way to jail.
+
+  Curley stayed on the ballot. He was renominated for the Board of Aldermen after his sentence had begun, and a newspaper reported that he ran his entire campaign himself, from his prison cell.
+
+  In December, while he was still in here, Boston re-elected him.
+
+  A paper in Maine called the brothers jailbirds. It made no difference. Curley went on to be mayor of Boston four times. During his fourth term, convicted of mail fraud at the age of seventy two, he went to federal prison again.
+
+  The jail closed in nineteen seventy nine. The hotel bar is in the old drunk tank.
+
+  It is called the Alibi.
+pronunciations:
+  - written: Curley
+    say: KUR-lee
+detail: >-
+  Conviction status: convicted (James M. and Thomas F. Curley, conspiracy against the United States by impersonation at a civil service examination; sentenced to two months in jail on 7 November 1904 after the Supreme Court declined to disturb the judgment; Daily Kennebec Journal, Associated Press, 8 November and 17 December 1904). Nobody named is alive (James Michael Curley died 1958). The Charles Street Jail, the renomination from the cell and the re-election are in the Daily Kennebec Journal of 15 December 1904 and the Billings Gazette of 20 December 1904 (both wire reports, counted as one source), and are corroborated by NBC News (2007, Associated Press) and the Boston Globe (2024). "For a friend" is NBC's wording; the 1904 report names the two men for whom the Curleys sat the exams, and the script does not. "Jailbirds" is an editorial in the Daily Kennebec Journal of 17 December 1904, attributed aloud to a paper in Maine. The 1947 prison term, at Danbury, and "fourth non-consecutive term as mayor" are from the Boston Globe. The jail's opening and closing years are from NPR (2007), and the Alibi bar in the former drunk tank from NBC. No violence.
+editorial: approved
+factCheck: corroborated
+trueCrimeReview:
+  involvesLivingPeople: false
+  convictionStatus: convicted
+  reviewedBy: "James (owner), approved 2026-11-13"
+  reviewedAt: "2026-11-13"
+  contentWarning: "This echo concerns a fraud conviction in 1904 and a jail sentence. No violence is described."
+claims:
+  - says: "For more than a century it was the Charles Street Jail."
+    source: 6
+    quote: "Boston's Charles Street Jail was opened in 1851 as an experiment in prison reformation and closed more than a century later"
+  - says: "It is a hotel now, the Liberty."
+    source: 6
+    quote: "the newly opened Liberty Hotel"
+  - says: "In the winter of nineteen oh four, one of the men inside was a Boston alderman, James Michael Curley."
+    source: 2
+    quote: "the re-election o Alderman J. M. Curley, who at present is serving a two-months’ sentence in th Charles street jail."
+  - says: "In the winter of nineteen oh four, one of the men inside was a Boston alderman, James Michael Curley."
+    source: 7
+    quote: "also served terms behind bars in the Charles Street Jail while a Boston alderman in 1904"
+  - says: "He and his brother Thomas, a state representative, had been convicted of taking civil service examinations in other men's names."
+    source: 1
+    quote: "State Representa tive Thomas F. Curley and Alderman James M Curley were sentenced to serve two months in jail in the United States circuit court, today, for having imper sonated others in taking civil service ex aminations."
+  - says: "He and his brother Thomas, a state representative, had been convicted of taking civil service examinations in other men's names."
+    source: 3
+    quote: "The men. Thomas M. Curley an l James F. Ctirley, are brothers"
+  - says: "Curley had sat the exam for a friend who wanted a job."
+    source: 5
+    quote: "Boston Mayor James Michael Curley, who served time for fraud in 1904 after he took a civil service exam for a friend"
+  - says: "They fought it all the way to the Supreme Court, and lost."
+    source: 3
+    quote: "They were tried in the United States district court and convicted. Tha judgment was up held by the circuit and finally by the United States Supreme court"
+  - says: "The judge sentenced them both to two months in jail."
+    source: 1
+    quote: "were sentenced to serve two months in jail in the United States circuit court"
+  - says: "He said their effrontery was only equalled by their boldness in running for office after they had been convicted."
+    source: 1
+    quote: "also declared that the effrontery of the de fendants was only equalled by their bold ness in their general attitude in court and in running for office after they had been convicted."
+  - says: "Outside the federal building, several hundred men cheered them on their way to jail."
+    source: 1
+    quote: "Several hun dred men had assembled In the street out side the federal building and' when the defendants entered the coach on their way to jail they were cheered by the as semblage."
+  - says: "He was renominated for the Board of Aldermen after his sentence had begun, and a newspaper reported that he ran his entire campaign himself, from his prison cell."
+    source: 2
+    quote: "He was renominated for the board after his sen tence had begun and his entire campaign was conducted by himself from his prison cell."
+  - says: "In December, while he was still in here, Boston re-elected him."
+    source: 4
+    quote: "Alderman J. H. Curley, who is serving a two months\" sen tence in jail, was re-elected."
+  - says: "In December, while he was still in here, Boston re-elected him."
+    source: 4
+    quote: "Boston, Dec. 14.-Although the mu nicipal election yesterday resulted in a sweeping"
+  - says: "A paper in Maine called the brothers jailbirds."
+    source: 3
+    quote: "For the jailbirds who were nominated and elected to office are not martyrs or innocent victims of an unjust law"
+  - says: "Curley went on to be mayor of Boston four times."
+    source: 7
+    quote: "during his fourth non-consecutive term as mayor"
+  - says: "During his fourth term, convicted of mail fraud at the age of seventy two, he went to federal prison again."
+    source: 7
+    quote: "in the Federal Correctional Institution in Danbury, Conn., in 1947 — during his fourth non-consecutive term as mayor — after he was convicted at age 72 of conspiracy and nine counts of mail fraud."
+  - says: "The jail closed in nineteen seventy nine."
+    source: 6
+    quote: "The jail closed in 1979."
+  - says: "The hotel bar is in the old drunk tank."
+    source: 5
+    quote: "The hotel bar, Alibi, is built in the jail's former drunk tank."
+  - says: "It is called the Alibi."
+    source: 5
+    quote: "The hotel bar, Alibi, is built in the jail's former drunk tank."
+sources:
+  - title: "Daily Kennebec Journal (Augusta, Maine), 8 November 1904, page 3: Time in Jail"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82014248/1904-11-08/ed-1/?sp=3
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Daily Kennebec Journal (Augusta, Maine), 15 December 1904, page 12"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82014248/1904-12-15/ed-1/?sp=12
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Daily Kennebec Journal (Augusta, Maine), 17 December 1904, page 14: The Case of the Curleys"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82014248/1904-12-17/ed-1/?sp=14
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "The Billings Gazette, 20 December 1904, page 8"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84036008/1904-12-20/ed-1/?sp=8
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Infamous Boston jail now a luxury hotel (2007, Associated Press)"
+    publisher: "NBC News"
+    url: https://www.nbcnews.com/id/wbna21676139
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "From Hard Time to Sweet Times at Boston Jail (transcript)"
+    publisher: "NPR"
+    url: https://www.npr.org/transcripts/16211009
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+  - title: "Nearly 80 years ago, a Boston mayor faced charges similar to Eric Adams (26 September 2024)"
+    publisher: "The Boston Globe"
+    url: https://www.bostonglobe.com/2024/09/26/metro/eric-adams-indictment-boston-mayor-james-michael-curley/
+    retrievedAt: "2026-11-12"
+    rights: fair-use-facts
+renders:
+  - voiceId: wC1005J19tvhoqqC2hkf
+    audioKey: audio/boston-a-campaign-from-a-cell/wC1005J19tvhoqqC2hkf.mp3
+    durationS: 90.1
+    audioBytes: 1443256
+    transcript:
+      totalS: 90.1
+      lines:
+        - text: Look at the big granite building across from you, with the tall arched windows.
+          atS: 0
+          durationS: 4.39
+        - text: It is a hotel now, the Liberty.
+          atS: 4.83
+          durationS: 2.26
+        - text: For more than a century it was the Charles Street Jail.
+          atS: 7.54
+          durationS: 3.09
+        - text: In the winter of nineteen oh four, one of the men inside was a Boston alderman, James Michael Curley.
+          atS: 11.32
+          durationS: 6.44
+        - text: He and his brother Thomas, a state representative, had been convicted of taking civil service examinations in other men's names.
+          atS: 18.09
+          durationS: 7.17
+        - text: Curley had sat the exam for a friend who wanted a job.
+          atS: 25.87
+          durationS: 3.48
+        - text: They fought it all the way to the Supreme Court, and lost.
+          atS: 29.68
+          durationS: 3.17
+        - text: The judge sentenced them both to two months in jail.
+          atS: 33.54
+          durationS: 3.04
+        - text: He said their effrontery was only equalled by their boldness in running for office after they had been convicted.
+          atS: 37.28
+          durationS: 6
+        - text: Outside the federal building, several hundred men cheered them on their way to jail.
+          atS: 43.89
+          durationS: 4.61
+        - text: Curley stayed on the ballot.
+          atS: 49.19
+          durationS: 1.78
+        - text: He was renominated for the Board of Aldermen after his sentence had begun, and a newspaper reported that he ran his entire campaign himself, from his prison cell.
+          atS: 51.48
+          durationS: 9.96
+        - text: In December, while he was still in here, Boston re-elected him.
+          atS: 62.14
+          durationS: 4.13
+        - text: A paper in Maine called the brothers jailbirds.
+          atS: 66.87
+          durationS: 3.03
+        - text: It made no difference.
+          atS: 70.06
+          durationS: 1.35
+        - text: Curley went on to be mayor of Boston four times.
+          atS: 72.1
+          durationS: 3.69
+        - text: During his fourth term, convicted of mail fraud at the age of seventy two, he went to federal prison again.
+          atS: 76
+          durationS: 6.35
+        - text: The jail closed in nineteen seventy nine.
+          atS: 82.79
+          durationS: 2.51
+        - text: The hotel bar is in the old drunk tank.
+          atS: 85.54
+          durationS: 2.58
+        - text: It is called the Alibi.
+          atS: 88.56
+          durationS: 1.58

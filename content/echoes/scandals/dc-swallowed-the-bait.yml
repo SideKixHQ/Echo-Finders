@@ -1,0 +1,210 @@
+# Drafted by Claude Code (2026-11-12) for Washington DC (Capitol Hill), Scandals topic, following the six beats in docs/writing-echoes.md. Filed under history until the Scandals category is built (Greenhow was imprisoned without trial and never convicted, so this is not true crime); tagged scandal and spies.
+# Listening spot: Public sidewalk on First Street NE, opposite the north end of the Supreme Court building, toward Maryland Avenue.
+# Position: the Library of Congress catalogues its Civil War photograph as "The Old Capitol Prison, 1st and A Streets NE"; set on First Street NE near where A Street would meet it, at 38.89120, -77.00500 (medium confidence: the corner is sourced, the exact frontage is not, and the script says only "close to here"). About 70 m from "The Bow in the Corridor", a different subject.
+id: dc-swallowed-the-bait
+title: "Swallowed the Bait"
+summary: "In 1862 a Confederate spy and her daughter, eight, were held in a prison here. She left ink for the guards to find."
+place: "First Street NE near A Street, site of the Old Capitol Prison, Capitol Hill, Washington, D.C."
+at: { lat: 38.89120, lng: -77.00500 }
+triggerRadiusKm: 0.05
+category: scandals
+format: short
+durationS: 110
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.78
+tags: [washington, capitol-hill, old-capitol-prison, scandal, spies, rose-greenhow, civil-war, 1862, confederacy]
+teaser: "She left the ink where they would find it. They took the bait."
+script: |
+  Look along First Street. During the Civil War, a prison stood close to here, at First and A Streets, North East. It was called the Old Capitol.
+
+  In January eighteen sixty two, two women were brought here from a house on Sixteenth Street, where they had been held under guard. One of them was Rose Greenhow, a Washington hostess the Union knew as a dangerous agent of the South. The Library of Congress still files her photograph under two words. Confederate spy.
+
+  Her daughter came with her. Little Rose was eight.
+
+  Greenhow wrote down everything. Her room was about ten feet by twelve, with a straw bed. On her second day, a carpenter came to put bars on the windows.
+
+  Her letters, she wrote, went through the detective police, who treated them with chemicals to bring out the treason. The newspapers reported that she used invisible ink. She wrote that she had left a preparation in plain sight on purpose, to draw attention away from her real means of communication. And they have swallowed the bait.
+
+  Little Rose had a plan of her own. Never fear, she told her mother. I intend to dance and sing Jeff Davis is coming, just to scare them.
+
+  One January day Greenhow stood at her barred window, to get out of the smoke and dust. A guard below shouted at her to go away from the window, and raised his musket. She did not move.
+
+  At the start of June, mother and daughter were released and sent South.
+
+  Look along the street again. A guard with a musket. A woman at the window who would not move. And upstairs, a girl of eight, planning a song.
+pronunciations:
+  - written: Greenhow
+    say: GREEN-how
+detail: >-
+  Rose O'Neal Greenhow was arrested in August 1861, held in her own house on Sixteenth Street, moved to the Old Capitol Prison in January 1862 and sent South in early June 1862; she was never tried. Her room, the bars, the chemical tests, the decoy ink, Little Rose's song and the guard at the window are from her own book, My Imprisonment and the First Year of Abolition Rule at Washington (London, 1863), and are told as her account ("she wrote"). The transfer from her house is from the Chicago Tribune of 20 January 1862; her imprisonment in her own house and the Union view of her as "a dangerous agent of a hostile army" from the New York Herald of 16 December 1861; the release from the Louisville Daily Journal of 3 June 1862 (dateline Baltimore, 2 June). The prison's corner and the "Confederate spy" photograph title are from the Library of Congress catalogue. Her death at sea off Fort Fisher in 1864 is a separate echo (fort-fisher-the-spy-who-tried-to-row-ashore); this one is only the prison. The second woman, Mrs. Baxley, is not named.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "During the Civil War, a prison stood close to here, at First and A Streets, North East. It was called the Old Capitol."
+    source: 4
+    quote: "[Washington, D.C. The Old Capitol Prison, 1st and A Streets NE]"
+  - says: "In January eighteen sixty two, two women were brought here from a house on Sixteenth Street, where they had been held under guard."
+    source: 2
+    quote: "Mistresses Greenhow and Barclay yesterday were transferred from the former’s house to the old Capitol prison."
+  - says: "In January eighteen sixty two, two women were brought here from a house on Sixteenth Street, where they had been held under guard."
+    source: 1
+    quote: "\"Washington, 398 Sixteenth Street."
+  - says: "One of them was Rose Greenhow, a Washington hostess the Union knew as a dangerous agent of the South."
+    source: 3
+    quote: "sbe forgets that while at large in Washington she was a dangerous agent of a hostile army besieging our* national capital."
+  - says: "The Library of Congress still files her photograph under two words. Confederate spy."
+    source: 4
+    quote: "Greenhow, Mrs. & daughter (imprisoned in old Capitol Prison in Wash. D.C.) Confederate spy"
+  - says: "Little Rose was eight."
+    source: 1
+    quote: "Even my child of eight years is deemed of import- ance enough to have her childish speeches recorded."
+  - says: "Her room was about ten feet by twelve, with a straw bed."
+    source: 1
+    quote: "It is about ten feet by twelve, and \"furnished in the rudest manner — a straw bed"
+  - says: "On her second day, a carpenter came to put bars on the windows."
+    source: 1
+    quote: "The second day of my sojourn in this dismal hole a carpenter came to put up bars to the windows."
+  - says: "Her letters, she wrote, went through the detective police, who treated them with chemicals to bring out the treason."
+    source: 1
+    quote: "My letters now all go through the detective police, 216 TRIALS AND DANGEK. who subject them to a chemical process to extract the treason."
+  - says: "The newspapers reported that she used invisible ink."
+    source: 1
+    quote: "In one of the newspaper accounts, prepared- under the direction of the secret police, I am supposed to use sympathetic ink."
+  - says: "She wrote that she had left a preparation in plain sight on purpose, to draw attention away from her real means of communication. And they have swallowed the bait."
+    source: 1
+    quote: "I purposely left a preparation very conspicuously placed, in order to divert attention from my real means of communi- cation, and they have swallowed the bait"
+  - says: "Never fear, she told her mother. I intend to dance and sing Jeff Davis is coming, just to scare them."
+    source: 1
+    quote: "' 0 mamma, never fear ; I hate them too much. I intend to dance and sing \"Jeff. Davis is coming,\" just to scare them ! '"
+  - says: "One January day Greenhow stood at her barred window, to get out of the smoke and dust."
+    source: 1
+    quote: "January 28. — This day, as I raised my barred windows, and stood before one of them to get out of TEIALS AND DANGEK. 217 the smoke and dust"
+  - says: "A guard below shouted at her to go away from the window, and raised his musket. She did not move."
+    source: 1
+    quote: "the guard rudely called, f Go away from that window ! ' and raised his musket and levelled it at rne. I maintained my position without condescending to notice him"
+  - says: "At the start of June, mother and daughter were released and sent South."
+    source: 5
+    quote: "Mrs Greenhow her daughter Mrs Baxley and Mrs Morris four female traitors who have been imprisoned in Washington for some time were released and sent to Baltimore last evening under guard and left for Old Point to be sent South"
+  - says: "Little Rose had a plan of her own."
+    source: 1
+    quote: "I intend to dance and sing \"Jeff. Davis is coming,\" just to scare them !"
+  - says: "And upstairs, a girl of eight, planning a song."
+    source: 1
+    quote: "Even my child of eight years is deemed of import- ance enough to have her childish speeches recorded."
+sources:
+  - title: "My Imprisonment and the First Year of Abolition Rule at Washington (Rose Greenhow, London: Richard Bentley, 1863)"
+    publisher: "Internet Archive"
+    url: https://archive.org/details/myimprisonmentfi00gree
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Chicago Daily Tribune, 20 January 1862, page 1: Washington dispatch"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84031490/1862-01-20/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "New York Herald, 16 December 1861, page 4: Mrs. Greenhow's Indignant Letter to Mr. Seward"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030313/1861-12-16/ed-1/?sp=4
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Prints and Photographs catalogue: The Old Capitol Prison, 1st and A Streets NE; Greenhow, Mrs. & daughter, Confederate spy"
+    publisher: "Library of Congress"
+    url: https://www.loc.gov/item/2017895090/
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Louisville Daily Journal, 3 June 1862, page 4: Baltimore dispatch of 2 June"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84027471/1862-06-03/ed-1/?sp=4
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-swallowed-the-bait/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 109.8
+    audioBytes: 1758397
+    transcript:
+      totalS: 109.8
+      lines:
+        - text: Look along First Street.
+          atS: 0
+          durationS: 1.65
+        - text: During the Civil War, a prison stood close to here, at First and A Streets, North East.
+          atS: 2.03
+          durationS: 5.5
+        - text: It was called the Old Capitol.
+          atS: 7.81
+          durationS: 1.98
+        - text: In January eighteen sixty two, two women were brought here from a house on Sixteenth Street, where they had been held under guard.
+          atS: 10.49
+          durationS: 7.05
+        - text: One of them was Rose Greenhow, a Washington hostess the Union knew as a dangerous agent of the South.
+          atS: 18.15
+          durationS: 6.98
+        - text: The Library of Congress still files her photograph under two words.
+          atS: 26.08
+          durationS: 4.4
+        - text: Confederate spy.
+          atS: 30.99
+          durationS: 1.52
+        - text: Her daughter came with her.
+          atS: 33.02
+          durationS: 1.38
+        - text: Little Rose was eight.
+          atS: 34.61
+          durationS: 1.46
+        - text: Greenhow wrote down everything.
+          atS: 36.4
+          durationS: 2.44
+        - text: Her room was about ten feet by twelve, with a straw bed.
+          atS: 39.16
+          durationS: 3.6
+        - text: On her second day, a carpenter came to put bars on the windows.
+          atS: 43.2
+          durationS: 4.11
+        - text: Her letters, she wrote, went through the detective police, who treated them with chemicals to bring out the treason.
+          atS: 47.64
+          durationS: 6.45
+        - text: The newspapers reported that she used invisible ink.
+          atS: 54.79
+          durationS: 3.23
+        - text: She wrote that she had left a preparation in plain sight on purpose, to draw attention away from her real means of communication.
+          atS: 58.71
+          durationS: 7.79
+        - text: And they have swallowed the bait.
+          atS: 66.75
+          durationS: 1.95
+        - text: Little Rose had a plan of her own.
+          atS: 69.3
+          durationS: 2.08
+        - text: Never fear, she told her mother.
+          atS: 71.98
+          durationS: 2.01
+        - text: I intend to dance and sing Jeff Davis is coming, just to scare them.
+          atS: 74.37
+          durationS: 4.99
+        - text: One January day Greenhow stood at her barred window, to get out of the smoke and dust.
+          atS: 79.97
+          durationS: 6.06
+        - text: A guard below shouted at her to go away from the window, and raised his musket.
+          atS: 86.47
+          durationS: 4.59
+        - text: She did not move.
+          atS: 91.75
+          durationS: 1.25
+        - text: At the start of June, mother and daughter were released and sent South.
+          atS: 93.61
+          durationS: 4.24
+        - text: Look along the street again.
+          atS: 98.66
+          durationS: 1.72
+        - text: A guard with a musket.
+          atS: 100.89
+          durationS: 1.6
+        - text: A woman at the window who would not move.
+          atS: 102.93
+          durationS: 2.45
+        - text: And upstairs, a girl of eight, planning a song.
+          atS: 105.99
+          durationS: 3.84

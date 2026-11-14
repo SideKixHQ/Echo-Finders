@@ -1,0 +1,171 @@
+# Drafted by Claude Code (2026-11-12) for Washington DC (downtown, K Street), Scandals topic, following the six beats in docs/writing-echoes.md. Filed under history until the Scandals category is built; tagged scandal.
+# Listening spot: Public sidewalk on K Street NW in the 1600 block, between 16th and 17th Streets, near Farragut Square.
+# Position: the San Antonio Light of 26 March 1924 gives the house's address as "162 a K street" (OCR; the house is widely given as 1625 K Street). Set mid block on the K Street sidewalk at 38.90245, -77.03755 (medium confidence: the block is sourced, the exact frontage and the side of the street are not). The house itself is long gone; nothing in the script says what stands there now.
+id: dc-the-little-green-house
+title: "The Little Green House"
+summary: "In the Harding years a green house on K Street meant liquor deals in Prohibition. Later, no one recalled who lived there."
+place: "1600 block of K Street NW, near Farragut Square, Washington, D.C."
+at: { lat: 38.90245, lng: -77.03755 }
+triggerRadiusKm: 0.05
+category: scandals
+format: short
+durationS: 92
+visibility: at-hand
+certainty: documented
+minAge: 12
+quality: 0.72
+tags: [washington, k-street, farragut-square, scandal, harding, ohio-gang, prohibition, 1924, corruption]
+teaser: "Twenty or thirty cases of liquor at a time, delivered by express. With a revenue man."
+script: |
+  Look along this block of K Street. In the early nineteen twenties a small house stood on it that the whole country came to know as the Little Green House on K Street.
+
+  It was not grand. A reporter who went to look at it in March nineteen twenty four wrote that, beside the mansions of the city, it was little better than a garage. Its front was green stone, the pale apple color of shallow water in the tropics.
+
+  The man who lived there was Howard Mannington, of Ohio. He had arrived in Washington just after President Harding's inauguration, and he knew Harding's Ohio friends.
+
+  Liquor was against the law. But in April nineteen twenty four, a man who had worked for Mannington told a Senate committee that twenty or thirty cases of liquor at a time were delivered to the little green house by express. A revenue man came with them.
+
+  In May, another witness said he had lived in the house with Mannington. He told the committee that deals in liquor permits and tax cases were arranged there, and that he had split twenty thousand dollars with Mannington.
+
+  Mannington himself flatly refused to appear before the committee. That was the testimony, and it was never answered.
+
+  By then the house had a deserted look by day. Fraternity boys had moved in.
+
+  And the reporter asked a dozen men who had known Mannington who else had lived in the Little Green House. Scratch their heads as they would, they could not recall the name of a single person.
+pronunciations:
+  - written: Mannington
+    say: MAN-ing-tun
+detail: >-
+  The house, its green stone, the garage comparison, the fraternity and the forgotten tenants are from Robert T. Small's dispatch in the San Antonio Light of 26 March 1924. The liquor deliveries (the testimony of Daniel F. Smith, who had worked for Mannington), the permit deals and the twenty thousand dollars (the testimony of M. P. Kraffmiller) and Mannington's refusal are from the Washington Daily News of 4 April, 16 April and 7 May 1924, three pages of one paper and so one source. None of it was tested at a trial, so the script calls it testimony and names nobody but Mannington and the president. The Senate committee was the Brookhart committee investigating Attorney General Harry Daugherty. Often filed with Teapot Dome, this is the Daugherty and Justice Department side of the Harding scandals.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In the early nineteen twenties a small house stood on it that the whole country came to know as the Little Green House on K Street."
+    source: 1
+    quote: "The now famous “Little Green House on K street” is still a house of mystery."
+  - says: "A reporter who went to look at it in March nineteen twenty four wrote that, beside the mansions of the city, it was little better than a garage."
+    source: 1
+    quote: "the “Little Green House” falls away in importance until it is little better than a garage."
+  - says: "Its front was green stone, the pale apple color of shallow water in the tropics."
+    source: 1
+    quote: "The front and a part of the alley side of the dwelling are constructed of green stone. The green is the pale apple color of shallow water in the tropics."
+  - says: "The man who lived there was Howard Mannington, of Ohio."
+    source: 1
+    quote: "No one in Washington recalls now just who did live at the “Little Green House” except Howard Mannington of Ohio"
+  - says: "He had arrived in Washington just after President Harding's inauguration, and he knew Harding's Ohio friends."
+    source: 1
+    quote: "the men who knew Mannington well when he first broke upon Washington, immediately after the inauguration of President Harding"
+  - says: "But in April nineteen twenty four, a man who had worked for Mannington told a Senate committee that twenty or thirty cases of liquor at a time were delivered to the little green house by express."
+    source: 2
+    quote: "Daniel F. Smith, negro, formerly employed by Howard .Mannington, at the “little green house on Kt\" was caller to the -tand."
+  - says: "But in April nineteen twenty four, a man who had worked for Mannington told a Senate committee that twenty or thirty cases of liquor at a time were delivered to the little green house by express."
+    source: 2
+    quote: "or 30 casts of liquor at a time were ■ delivered to the “little green house\""
+  - says: "He told the committee that deals in liquor permits and tax cases were arranged there, and that he had split twenty thousand dollars with Mannington."
+    source: 3
+    quote: "More charges that “deals” in liquor permits and tax cases were arranged at “the little green house on K-st,”"
+  - says: "A revenue man came with them."
+    source: 2
+    quote: "revelue man\" accompanied it."
+  - says: "In May, another witness said he had lived in the house with Mannington."
+    source: 3
+    quote: "K raff miller, who said he had lived at the house with Mannington."
+  - says: "He told the committee that deals in liquor permits and tax cases were arranged there, and that he had split twenty thousand dollars with Mannington."
+    source: 3
+    quote: "1. Split $20,000 with Mannington."
+  - says: "Mannington himself flatly refused to appear before the committee."
+    source: 4
+    quote: "yesterday flatly refused to appear before the investigating committee."
+  - says: "Fraternity boys had moved in."
+    source: 1
+    quote: "has become a “frat” house and the fraternity boys at times seem to have been inspired by the echoes of the left-over revels"
+  - says: "Scratch their heads as they would, they could not recall the name of a single person."
+    source: 1
+    quote: "scratch their heads as they will, they cannot recall the name of a single person who actually lived there."
+  - says: "And the reporter asked a dozen men who had known Mannington who else had lived in the Little Green House."
+    source: 1
+    quote: "The writer has asked a dozen or more of the men who knew Mannington well"
+
+sources:
+  - title: "San Antonio Light, 26 March 1924, page 3: Green House on K Street Deserted Now (Robert T. Small)"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn85060004/1924-03-26/ed-1/?sp=3
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Washington Daily News, 4 April 1924, page 2: Daugherty committee testimony"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82016181/1924-04-04/ed-4/?sp=2
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Washington Daily News, 7 May 1924, page 1: Witness Says He Split Sum for Permits"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82016181/1924-05-07/ed-4/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Washington Daily News, 16 April 1924, page 5: Won't Testify, Mannington's Probe Reply"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82016181/1924-04-16/ed-1/?sp=5
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-the-little-green-house/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 92.1
+    audioBytes: 1475438
+    transcript:
+      totalS: 92.1
+      lines:
+        - text: Look along this block of K Street.
+          atS: 0
+          durationS: 2.13
+        - text: In the early nineteen twenties a small house stood on it that the whole country came to know as the Little Green House on K Street.
+          atS: 2.3
+          durationS: 7.54
+        - text: It was not grand.
+          atS: 10.28
+          durationS: 1.38
+        - text: A reporter who went to look at it in March nineteen twenty four wrote that, beside the mansions of the city, it was little better than a garage.
+          atS: 12.35
+          durationS: 7.96
+        - text: Its front was green stone, the pale apple color of shallow water in the tropics.
+          atS: 21.43
+          durationS: 4.99
+        - text: The man who lived there was Howard Mannington, of Ohio.
+          atS: 27.03
+          durationS: 3.66
+        - text: He had arrived in Washington just after President Harding's inauguration, and he knew Harding's Ohio friends.
+          atS: 31.29
+          durationS: 6.45
+        - text: Liquor was against the law.
+          atS: 38.13
+          durationS: 1.52
+        - text: But in April nineteen twenty four, a man who had worked for Mannington told a Senate committee that twenty or thirty cases of liquor at a time were delivered to the little green house by express.
+          atS: 40.09
+          durationS: 11.29
+        - text: A revenue man came with them.
+          atS: 51.82
+          durationS: 1.81
+        - text: In May, another witness said he had lived in the house with Mannington.
+          atS: 54.32
+          durationS: 4.25
+        - text: He told the committee that deals in liquor permits and tax cases were arranged there, and that he had split twenty thousand dollars with Mannington.
+          atS: 59.01
+          durationS: 7.88
+        - text: Mannington himself flatly refused to appear before the committee.
+          atS: 67.59
+          durationS: 3.91
+        - text: That was the testimony, and it was never answered.
+          atS: 71.95
+          durationS: 2.82
+        - text: By then the house had a deserted look by day.
+          atS: 75.09
+          durationS: 2.83
+        - text: Fraternity boys had moved in.
+          atS: 78.37
+          durationS: 1.9
+        - text: And the reporter asked a dozen men who had known Mannington who else had lived in the Little Green House.
+          atS: 80.55
+          durationS: 5.91
+        - text: Scratch their heads as they would, they could not recall the name of a single person.
+          atS: 87.27
+          durationS: 4.86

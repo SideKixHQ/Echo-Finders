@@ -1,0 +1,188 @@
+# Drafted by Claude Code (2026-11-12) for Washington DC (Capitol Hill), Scandals topic, following the six beats in docs/writing-echoes.md. Filed under history until the Scandals category is built; tagged scandal.
+# Listening spot: The Capitol's East Front plaza, on the open paving below the House wing (the south wing), looking up at it.
+# Position: set on the East Front plaza facing the House wing at 38.88890, -77.00850 (high confidence on the wing; the censure vote was taken in the House chamber inside it). The Capitol already has several pins within 100 m, all on other subjects.
+id: dc-where-they-will-do-most-good
+title: "Where They Will Do Most Good"
+summary: "In 1873 the House condemned Oakes Ames for handing out railroad shares in Congress. His letter said where he put them."
+place: "House wing, East Front of the United States Capitol, Washington, D.C."
+at: { lat: 38.88890, lng: -77.00850 }
+triggerRadiusKm: 0.04
+category: scandals
+format: short
+durationS: 96
+visibility: at-hand
+certainty: documented
+minAge: 0
+quality: 0.75
+tags: [washington, capitol-hill, capitol, scandal, credit-mobilier, oakes-ames, congress, 1873, corruption]
+teaser: "Three shares left to place, he wrote, where they will do most good to us."
+script: |
+  Look up at the south wing of the Capitol, the House side. In February eighteen seventy three, inside it, the House of Representatives sat in judgement on one of its own members, Oakes Ames of Massachusetts.
+
+  Ames made shovels. His family's shovels were used all over the world. He also had money in the railroad being built across the continent, through a company called Credit Mobilier.
+
+  In eighteen seventy two, a lawsuit brought out two of his private letters, and the newspapers printed them. In one, he listed shares he had handed to members of Congress. Four from Massachusetts. One from New Hampshire. And I have three to place, he wrote, which I shall put where they will do most good to us. I am here on the spot, he added, and can better judge where they should go.
+
+  The House argued about him for three days. A committee wanted him expelled. Instead, the House voted that it absolutely condemned what he had done. One hundred and eighty one members voted for it.
+
+  That morning Ames had sat in a front seat with a large and handsome bouquet on his desk. It was a gift from the wife of General Sherman.
+
+  The other members named in the affair escaped any vote at all.
+
+  Ames went home to Easton, Massachusetts. Ten weeks later, in May, he died.
+
+  Look at the House wing again. On that point, at least, his letter was honest. He was here on the spot.
+pronunciations:
+  - written: Mobilier
+    say: moh-BEEL-yay
+detail: >-
+  The letter is quoted from the Chicago Tribune's reprint of 12 September 1872, which says the letters came out when H. S. McComb sued the Credit Mobilier and produced them under oath. The debate, the committee's call for expulsion, the substitute resolution and the vote of 27 February 1873 are from the New York Herald and the Chicago Tribune of 28 February 1873, each with its own Washington correspondent. The Tribune counts the vote on the Ames resolution as 181 to 35 in one place and 181 to 86 (an OCR misreading of 36, probably) in another, so the script gives only the 181. The bouquet is from the Tribune alone, so it rests on one source. The death and the shovels are from the Tribune of 9 May 1873. James Brooks of New York, censured the same day, is left out to keep the echo to one man.
+editorial: approved
+factCheck: corroborated
+claims:
+  - says: "In February eighteen seventy three, inside it, the House of Representatives sat in judgement on one of its own members, Oakes Ames of Massachusetts."
+    source: 2
+    quote: "Oakes Ames, and James Brooks Censured by the House of Representatives."
+  - says: "Ames made shovels. His family's shovels were used all over the world."
+    source: 4
+    quote: "With his brother Oliver, he succeeded to the manufacturing business of his father. Tho shovels made by this firm coma into world-wide use."
+  - says: "He also had money in the railroad being built across the continent, through a company called Credit Mobilier."
+    source: 1
+    quote: "and also a member of the Credit Mobilier Company, one of which says that he has assigned certain shares where they will do most good to the Union Pacific Eailroad"
+  - says: "In eighteen seventy two, a lawsuit brought out two of his private letters, and the newspapers printed them."
+    source: 1
+    quote: "brought suit against the said Credit Mobilier of America, to compel an equitable settlement with himself as a member of the Company. In the course of his examination he presented, under oath, two letters from Oakes Ames, a member of Congress"
+  - says: "Four from Massachusetts. One from New Hampshire."
+    source: 1
+    quote: "I have assigned as far as 1 have given to—four from Massachusetts, one from New Hampshire; one, Delaware"
+  - says: "And I have three to place, he wrote, which I shall put where they will do most good to us."
+    source: 1
+    quote: "and I hare three to place, which I shall put where they will do most good to ns."
+  - says: "I am here on the spot, he added, and can better judge where they should go."
+    source: 1
+    quote: "am here on the spot, and can teller judge where they should go"
+  - says: "The House argued about him for three days."
+    source: 2
+    quote: "The third day of the Congressional debate hus been a long and weary struggle."
+  - says: "A committee wanted him expelled."
+    source: 3
+    quote: "The resolutions to expel Ames and Brooks came over from last night, and it was arranged that Poland should close the debate"
+  - says: "Instead, the House voted that it absolutely condemned what he had done."
+    source: 3
+    quote: "in place of expulsion, it absolutely condemns the doings of Ames and Brooks."
+  - says: "One hundred and eighty one members voted for it."
+    source: 3
+    quote: "Thia resolution was adopted—yeas, 181; nays, 35."
+  - says: "That morning Ames had sat in a front seat with a large and handsome bouquet on his desk. It was a gift from the wife of General Sherman."
+    source: 3
+    quote: "Ames was in a front scat, with a largo and handsome bouquet on his desk, a compliment from Mrs. Gen. Sherman."
+  - says: "The other members named in the affair escaped any vote at all."
+    source: 2
+    quote: "Escape 01 All the Other Implicated Congressmen."
+  - says: "Ten weeks later, in May, he died."
+    source: 4
+    quote: "Boston, May 8. —Ookoa Ames, died at 9:30 tonight."
+  - says: "In one, he listed shares he had handed to members of Congress."
+    source: 1
+    quote: "We republish the letters of Oakes Ames, member of Congress, to McComb, in which he describes his distribution of the property of the Credit Mobilier among the members of Congress"
+  - says: "Ames went home to Easton, Massachusetts."
+    source: 4
+    quote: "in .Easton, whore ho died"
+sources:
+  - title: "Chicago Tribune, 12 September 1872, page 4: Credit Mobilier, Ames' Letters"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn82014064/1872-09-12/ed-1/?sp=4
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "New York Herald, 28 February 1873, page 4: Mitigated Punishment, Oakes Ames and James Brooks Censured"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn83030313/1873-02-28/ed-1/?sp=4
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Chicago Daily Tribune, 28 February 1873, page 1: Washington, The House Decides to Censure"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84031492/1873-02-28/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+  - title: "Chicago Daily Tribune, 9 May 1873, page 1: Death of Oakes Ames"
+    publisher: "Library of Congress, Chronicling America"
+    url: https://www.loc.gov/resource/sn84031492/1873-05-09/ed-1/?sp=1
+    retrievedAt: "2026-11-12"
+    rights: public-domain
+renders:
+  - voiceId: IMlxLW3qgn0MWgfz7Vnh
+    audioKey: audio/dc-where-they-will-do-most-good/IMlxLW3qgn0MWgfz7Vnh.mp3
+    durationS: 96.1
+    audioBytes: 1538968
+    transcript:
+      totalS: 96.1
+      lines:
+        - text: Look up at the south wing of the Capitol, the House side.
+          atS: 0
+          durationS: 3.35
+        - text: In February eighteen seventy three, inside it, the House of Representatives sat in judgement on one of its own members, Oakes Ames of Massachusetts.
+          atS: 4.17
+          durationS: 9.86
+        - text: Ames made shovels.
+          atS: 14.72
+          durationS: 1.52
+        - text: His family's shovels were used all over the world.
+          atS: 16.63
+          durationS: 2.88
+        - text: He also had money in the railroad being built across the continent, through a company called Credit Mobilier.
+          atS: 19.75
+          durationS: 6.56
+        - text: In eighteen seventy two, a lawsuit brought out two of his private letters, and the newspapers printed them.
+          atS: 26.91
+          durationS: 6.51
+        - text: In one, he listed shares he had handed to members of Congress.
+          atS: 33.94
+          durationS: 4.05
+        - text: Four from Massachusetts.
+          atS: 38.27
+          durationS: 1.85
+        - text: One from New Hampshire.
+          atS: 40.32
+          durationS: 1.56
+        - text: And I have three to place, he wrote, which I shall put where they will do most good to us.
+          atS: 42.39
+          durationS: 5.49
+        - text: I am here on the spot, he added, and can better judge where they should go.
+          atS: 48.48
+          durationS: 4.92
+        - text: The House argued about him for three days.
+          atS: 54.52
+          durationS: 2.77
+        - text: A committee wanted him expelled.
+          atS: 57.62
+          durationS: 1.94
+        - text: Instead, the House voted that it absolutely condemned what he had done.
+          atS: 59.94
+          durationS: 4.31
+        - text: One hundred and eighty one members voted for it.
+          atS: 64.95
+          durationS: 3.3
+        - text: That morning Ames had sat in a front seat with a large and handsome bouquet on his desk.
+          atS: 69.06
+          durationS: 5.75
+        - text: It was a gift from the wife of General Sherman.
+          atS: 75.31
+          durationS: 2.73
+        - text: The other members named in the affair escaped any vote at all.
+          atS: 78.43
+          durationS: 3.59
+        - text: Ames went home to Easton, Massachusetts.
+          atS: 82.71
+          durationS: 2.83
+        - text: Ten weeks later, in May, he died.
+          atS: 85.93
+          durationS: 2.79
+        - text: Look at the House wing again.
+          atS: 89.32
+          durationS: 1.57
+        - text: On that point, at least, his letter was honest.
+          atS: 91.27
+          durationS: 2.92
+        - text: He was here on the spot.
+          atS: 94.63
+          durationS: 1.5
