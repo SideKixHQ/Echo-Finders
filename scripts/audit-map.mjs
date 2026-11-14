@@ -453,10 +453,15 @@ if (runs('KICK')) {
         const two = seen.find((m) => m.at >= 10 && m.at < 100);
         const three = seen.find((m) => m.at >= 100);
         const one = seen.find((m) => m.at > 0 && m.at < 10);
-        check('KICK 375, rare: an Extra rare at a two digit position shows the rarity alone',
-          !!two && !two.countShown && two.rarityWhole, JSON.stringify(two));
-        check('KICK 375, rare: an Extra rare at a three digit position shows the rarity alone',
-          !!three && !three.countShown && three.rarityWhole, JSON.stringify(three));
+        // Whether "EXTRA RARE 11 OF 117" fits 375 is a pixel or two either way with the font as
+        // built, so each is held to the rule (its count shown exactly when it fits, all of it
+        // whole), and at least one of them must be the rarity alone.
+        check('KICK 375, rare: an Extra rare at a two digit position, count shown only if it fits',
+          !!two && right(two), JSON.stringify(two));
+        check('KICK 375, rare: an Extra rare at a three digit position, count shown only if it fits',
+          !!three && right(three), JSON.stringify(three));
+        check('KICK 375, rare: and where the count cannot fit, the rarity shows alone',
+          [two, three].some((m) => m && !m.room && !m.countShown && m.rarityWhole), JSON.stringify([two, three]));
         check('KICK 375, rare: and the count is back where it fits (a one digit position)',
           !!one && one.countShown && one.countWhole, JSON.stringify(one));
       }
