@@ -8203,7 +8203,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "charleston-where-the-tide-came-in",
     "title": "Where the Tide Came In",
-    "summary": "Stede Bonnet and his crew were hanged at White Point in 1718 and buried at the low-water mark. The garden was laid out on top.",
+    "summary": "Stede Bonnet and his crew were hanged at White Point in 1718 and buried at the low-water mark. The garden was laid out on that ground.",
     "point": {
       "at": {
         "lat": 32.76992,
@@ -8214,7 +8214,7 @@ export const LIBRARY: readonly Echo[] = [
     },
     "category": "history",
     "format": "short",
-    "durationS": 88,
+    "durationS": 92,
     "minAge": 12,
     "quality": 0.75,
     "visibility": "at-hand",
@@ -8222,14 +8222,14 @@ export const LIBRARY: readonly Echo[] = [
     "sources": [],
     "editorial": "approved",
     "factCheck": "corroborated",
-    "script": "Somewhere in this garden is a small stone with a pirate's name on it. Stede Bonnet. It\nwas put up in nineteen forty-three, and it is easy to walk straight past.\n\nBonnet was not the usual kind of pirate. The old histories describe a gentleman by birth and education, of fair estate, a former army major. There seemed no reason why he took to piracy.\n\nIn the autumn of seventeen eighteen, ships from Charles Town caught him and brought him\nback in irons. He escaped once, in a woman's dress, and was hunted down in the sandhills\nof Sullivan's Island.\n\nThe record of the trials was printed the following year. Twenty-two of his crew were hanged in November. Bonnet followed on the tenth of December, executed, it says, at the White Point\nnear Charles Town.\n\nThat is here.\n\nThere was no garden then. The point took its name from the oyster shells heaped along the shore. A Charleston historian, writing in nineteen-oh-six, recorded where the\npirates went afterwards. They were buried on the White Point shoal, just above the\nlow-water mark. Out on the mud, at the edge of the tide.\n\nThe city later filled the shoal in. This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on top of it.\n\nThey were buried where the tide came in. The city moved the tide.\n",
+    "script": "Somewhere in this garden is a small stone with a pirate's name on it. Stede Bonnet. It\nwas put up in nineteen forty-three, and it is easy to walk straight past.\n\nBonnet was not the usual kind of pirate. The old histories describe a gentleman by birth and education, of fair estate, a former army major. There seemed no reason why he took to piracy.\n\nIn the autumn of seventeen eighteen, ships from Charles Town caught him and brought him\nback in irons. He escaped once, in a woman's dress, and was hunted down in the sandhills\nof Sullivan's Island.\n\nThe record of the trials was printed the following year. Twenty-two of his crew were hanged in November. Bonnet followed on the tenth of December, executed, it says, at the White Point\nnear Charles Town.\n\nWhite Point was this end of the town.\n\nThere was no garden then. The point took its name from the oyster shells heaped along the shore. A Charleston historian, writing in nineteen-oh-six, recorded where the\npirates went afterwards. They were buried on the White Point shoal, just above the\nlow-water mark. Out on the mud, at the edge of the tide.\n\nThe city later filled the shoal in. This garden was laid out in eighteen thirty-seven, and the oaks you are standing under were planted on that ground.\n\nThey were buried where the tide came in. The city moved the tide.\n",
     "teaser": "Somewhere in this garden is a small stone with a pirate's name on it.",
     "renders": [
       {
         "voiceId": "IMlxLW3qgn0MWgfz7Vnh",
         "audioKey": "audio/charleston-where-the-tide-came-in/IMlxLW3qgn0MWgfz7Vnh.mp3",
-        "durationS": 87.5,
-        "audioBytes": 1401878
+        "durationS": 92.3,
+        "audioBytes": 1477528
       }
     ],
     "pronunciations": [
