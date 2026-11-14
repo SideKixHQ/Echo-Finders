@@ -487,7 +487,10 @@ export function Ribbon({
         */}
         <button className="hear-go" onClick={onPlayPause} aria-label={playing ? "Pause" : "Play"}>
           <svg viewBox="-60 -60 120 120" aria-hidden="true">
-            <EchoCharacter face={playing ? "playing" : "armed"} r={46} uid="hear" detail />
+            {/* Extra rare is magenta here too, as its pin and the echo bar are (`.echo-xr`). */}
+            <g className={rarityOf(echo) === "singular" ? "echo-xr" : undefined}>
+              <EchoCharacter face={playing ? "playing" : "armed"} r={46} uid="hear" detail />
+            </g>
           </svg>
         </button>
         <button onClick={() => onNudge(15)} aria-label="Forward fifteen seconds">

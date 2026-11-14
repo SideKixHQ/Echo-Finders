@@ -3872,6 +3872,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
  *
  * The echo bar's creature takes the same colours for an Extra rare echo (`.echo-xr`,
  * James, 2026-11-14), in every face it shows (the bar has no heard face); not the size.
+ * So do the player's creature and the My echoes thumbnails, except heard, which stays the
+ * ember gone cold as a heard pin does.
  */
 .pin-tag-singular { fill: var(--magenta-ink); transform: translateY(3px); }
 .pin:has(> .pin-halo-singular) > .echo-char { transform: scale(1.15); }

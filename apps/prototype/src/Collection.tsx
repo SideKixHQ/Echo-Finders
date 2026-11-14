@@ -27,6 +27,7 @@
 
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode, type RefObject } from "react";
 import type { CaptureEvent, Echo, EchoCategory, PrivacySettings, TravelMode } from "@echofinders/core";
+import { rarityOf } from "@echofinders/core";
 import { EchoCharacter, type EchoFace } from "@echofinders/echo";
 import { CATEGORY_ICON, CATEGORY_LABEL, toggleCategories, ALL_CATEGORIES, type ChipGroup } from "./categories";
 import { KindPicker } from "./KindPicker";
@@ -549,7 +550,10 @@ function Thumb({ echo, face, uid }: { echo: Echo; face: EchoFace; uid: string })
   const photo = echo.archive?.[0];
   const character = (
     <svg viewBox="-60 -60 120 120" aria-hidden="true">
-      <EchoCharacter face={face} r={48} uid={uid} detail={false} />
+      {/* Extra rare is magenta, as on the map (`.echo-xr`); heard is the ember gone cold. */}
+      <g className={rarityOf(echo) === "singular" && face !== "heard" ? "echo-xr" : undefined}>
+        <EchoCharacter face={face} r={48} uid={uid} detail={false} />
+      </g>
     </svg>
   );
   if (!photo) return <span className="me-thumb me-thumb-echo" aria-hidden="true">{character}</span>;

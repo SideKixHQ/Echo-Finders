@@ -19,6 +19,7 @@
  *   XR  Extra rare pins are magenta and 1.15x (option D); Rare stays ember
  *   TAG the labels under Rare and Extra rare pins never print over each other or other pins
  *   XRB the echo bar's creature is magenta for an Extra rare echo
+ *   XRP and so are the player's creature and its My echoes thumbnail
  *   KICK the echo bar's kicker: the topic whole or left out, the count never clipped
  *   ROUTE route chips follow 30 B: the ribbon whole, the topics button gives way
  */
@@ -498,6 +499,36 @@ if (runs('ROUTE')) {
     }
     await ctx.close();
   }
+}
+
+// XRP. The player's creature and the My echoes thumbnail are magenta for an Extra rare echo.
+if (runs('XRP')) {
+  const { ctx, p } = await phone({ latitude: 32.0733, longitude: -81.0897 });
+  await p.goto(`${BASE}/?at=savannah-who-slew-odrey-miller`, { waitUntil: 'domcontentloaded' });
+  await p.locator('.toast-synced .toast-play').first().click({ timeout: 20000 });
+  await p.waitForTimeout(1200);
+  const magenta = await p.evaluate(() => {
+    const d = document.createElement('div'); d.style.color = getComputedStyle(document.documentElement).getPropertyValue('--magenta');
+    document.body.append(d); const c = getComputedStyle(d).color; d.remove(); return c;
+  });
+  const player = await p.locator('.hear-go .echo-char').evaluate((c) => [
+    getComputedStyle(c.querySelector('[id^="ecGlow-"] stop')).stopColor,
+    getComputedStyle(c.querySelector('[id^="ecBody-"] stop:nth-child(3)')).stopColor,
+  ]).catch(() => null);
+  check('XRP the player\'s creature is magenta for the Extra rare echo',
+    !!player && player[0] === magenta && player[1] === 'rgb(200, 19, 106)', JSON.stringify(player));
+  await p.locator('.hear-back').click();
+  await p.getByRole('button', { name: /My echoes/ }).first().click();
+  await p.waitForTimeout(1200);
+  const rows = await p.$$eval('.me-thumb', (ts) => ts.map((t) => {
+    const c = t.querySelector('.echo-char');
+    return { title: t.closest('article, button, li')?.querySelector('h4')?.textContent ?? '', glow: c && getComputedStyle(c.querySelector('[id^="ecGlow-"] stop')).stopColor };
+  }));
+  const xr = rows.find((r) => /Odrey Miller/.test(r.title));
+  const other = rows.find((r) => !/Odrey Miller/.test(r.title) && r.glow);
+  check('XRP its My echoes thumbnail is magenta', !!xr && xr.glow === magenta, JSON.stringify(rows));
+  check('XRP and an echo that is not Extra rare stays ember', !!other && other.glow !== magenta, JSON.stringify(rows));
+  await ctx.close();
 }
 
 await browser.close();
