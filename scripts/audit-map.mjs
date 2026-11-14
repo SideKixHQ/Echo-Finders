@@ -17,7 +17,7 @@
  *       something is
  *   25  on a flight the echo bar and Coming up give the same minutes for the same echo
  *   XR  Extra rare pins are magenta and 1.15x (option D); Rare stays ember
- *   TAG the labels under Rare and Extra rare pins never print over each other
+ *   TAG the labels under Rare and Extra rare pins never print over each other or other pins
  *   XRB the echo bar's creature is magenta for an Extra rare echo
  *   KICK the echo bar's kicker: the topic whole or left out, the count never clipped
  *   ROUTE route chips follow 30 B: the ribbon whole, the topics button gives way
@@ -337,6 +337,18 @@ if (runs('TAG')) {
       if (a.l < b.r && a.r > b.l && a.t < b.b && a.b > b.t) clash.push(`"${a.text}" on "${b.text}"`);
     }
     check(`TAG  pin labels clear of each other at ${at}`, clash.length === 0, clash.join('; '));
+    // And clear of every other pin and group: none sits on a label it does not own.
+    const under = await p.$$eval('.pin-tag', (ts) => {
+      const bodies = [...document.querySelectorAll('.echo-char-body, .pin-body, .clus-body')]
+        .map((b) => ({ owner: b.closest('.pin, .clus'), r: b.getBoundingClientRect() }));
+      return ts.filter((t) => getComputedStyle(t).visibility !== 'hidden').flatMap((t) => {
+        const r = t.getBoundingClientRect();
+        const own = t.closest('.pin');
+        return bodies.filter((b) => b.owner !== own && r.left < b.r.right && r.right > b.r.left && r.top < b.r.bottom && r.bottom > b.r.top)
+          .map((b) => `"${t.textContent}" under ${b.owner?.getAttribute('aria-label')?.slice(0, 30) ?? 'a pin'}`);
+      });
+    });
+    check(`TAG  pin labels clear of other pins at ${at}`, under.length === 0, under.join('; '));
     if (at === '32.0733,-81.0897') {
       check('TAG  the Extra rare label is kept', tags.some((t) => /^Extra rare/.test(t.text)), JSON.stringify(tags.map((t) => t.text)));
     }

@@ -746,16 +746,23 @@ export function RouteMap({
    * collide, the one placed later is left out, and comes back when there is room. The pin
    * labels now follow the same one, after every render, measured as drawn: Extra rare is
    * placed first, then the nearer, and a label that would touch one already placed is
-   * hidden. The pin itself always stays.
+   * hidden. The pin itself always stays, and so does every other pin: a label that would
+   * sit under one is hidden the same way.
    */
   useLayoutEffect(() => {
     const tags = [...(svg.current?.querySelectorAll<SVGTextElement>(".pin-tag") ?? [])];
     tags.sort((a, b) => Number(a.dataset["rank"]) - Number(b.dataset["rank"]));
+    // And a label under another pin or group is left out too (James, 2026-11-14): in
+    // Savannah the Extra rare creature sat on "RARE · 250 M", which read "A · 250 M".
+    const bodies = [...(svg.current?.querySelectorAll<SVGGraphicsElement>(".echo-char-body, .pin-body, .clus-body") ?? [])]
+      .map((body) => ({ owner: body.closest(".pin, .clus"), box: body.getBoundingClientRect() }));
     const placed: DOMRect[] = [];
+    const meets = (r: DOMRect, p: DOMRect) => r.left < p.right && r.right > p.left && r.top < p.bottom && r.bottom > p.top;
     for (const tag of tags) {
       tag.style.visibility = "";
       const r = tag.getBoundingClientRect();
-      const hit = placed.some((p) => r.left < p.right && r.right > p.left && r.top < p.bottom && r.bottom > p.top);
+      const own = tag.closest(".pin");
+      const hit = placed.some((p) => meets(r, p)) || bodies.some((b) => b.owner !== own && meets(r, b.box));
       if (hit) tag.style.visibility = "hidden";
       else placed.push(r);
     }
