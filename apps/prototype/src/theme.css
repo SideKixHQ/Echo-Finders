@@ -2986,6 +2986,9 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* The button row: its own line, lined up with the words. */
 .toast-row { flex-basis: 100%; display: flex; padding-left: 52px; padding-bottom: 4px; }
 .toast-locked .toast-row { padding-left: 40px; }
+/* The usage note's OK and Settings, apart: the 8px the app's other pair of buttons keeps
+   (Membership's Keep and Cancel renewal). */
+.toast-usage .toast-row { gap: 8px; }
 .toast-act {
   min-height: 44px; padding: 0 16px; border: 0; border-radius: 999px; cursor: pointer;
   font: inherit; font-size: var(--fs-button); font-weight: 600;

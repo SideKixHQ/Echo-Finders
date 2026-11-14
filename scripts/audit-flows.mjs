@@ -1575,6 +1575,12 @@ for (const size of [{ width: 1440, height: 789 }, { width: 1366, height: 657 }, 
     && (await note.locator('.toast-words span').innerText().catch(() => '')) === 'Anonymous usage counts help us improve Echo Finders. Turn them off any time in Settings.');
   const small = await note.locator('button').evaluateAll((els) => els.filter((e) => e.getBoundingClientRect().height < 44).length);
   check('Usage note: OK and Settings are 44px targets', small === 0);
+  // The ✕ every toast has, and the two buttons apart rather than touching (James, 2026-11-14).
+  const xb = await note.locator('.toast-close').boundingBox().catch(() => null);
+  check('Usage note: has the ✕, a 44px target', xb !== null && xb.width >= 44 && xb.height >= 44, JSON.stringify(xb));
+  const gap = await note.locator('.toast-row button').evaluateAll((b) => b.length === 2
+    ? b[1].getBoundingClientRect().left - b[0].getBoundingClientRect().right : -1);
+  check('Usage note: OK and Settings stand apart', gap >= 8, String(gap));
   await note.getByRole('button', { name: 'Settings', exact: true }).click().catch(() => {});
   await p.waitForTimeout(800);
   check('Usage note: Settings opens Settings', (await currentTab(p)).includes('Settings'));
@@ -1599,6 +1605,18 @@ for (const size of [{ width: 1440, height: 789 }, { width: 1366, height: 657 }, 
   await p.reload();
   await p.waitForTimeout(12000);
   check('Usage note: OK is for good', (await note.count()) === 0);
+  await ctx.close();
+}
+{
+  const { ctx, p } = await freshApp(START, { usageNote: true });
+  const note = p.locator('.toast-usage');
+  await note.waitFor({ state: 'visible', timeout: 15000 }).catch(() => {});
+  await note.locator('.toast-close').click().catch(() => {});
+  await p.waitForTimeout(600);
+  check('Usage note: ✕ puts it away', (await note.count()) === 0);
+  await p.reload();
+  await p.waitForTimeout(12000);
+  check('Usage note: ✕ is for good, like OK', (await note.count()) === 0);
   await ctx.close();
 }
 {

@@ -208,9 +208,9 @@ export function CopiedToast({ showMs, onClose }: { readonly showMs: number; read
 
 /**
  * The usage counts note, once (approved 2026-11-13, option A): the near toast's shape,
- * an orb, the words, and OK and Settings on their own row. Drawn as the approved mockup
- * draws it, which has no ✕: OK is the way to put it away. Either button dismisses it for
- * good; Settings also opens Settings at the switch.
+ * an orb, the words, and OK and Settings on their own row, with the ✕ every toast has
+ * (James, 2026-11-14), which counts as OK. Each of the three dismisses it for good;
+ * Settings also opens Settings at the switch.
  */
 export function UsageNoteToast({ onOk, onSettings }: { readonly onOk: () => void; readonly onSettings: () => void }) {
   const [leaving, leave] = useLeave(onOk);
@@ -221,6 +221,7 @@ export function UsageNoteToast({ onOk, onSettings }: { readonly onOk: () => void
         <b>We count visits, not you</b>
         <span>Anonymous usage counts help us improve Echo Finders. Turn them off any time in Settings.</span>
       </span>
+      <Close onClick={leave} />
       <span className="toast-row">
         <button className="toast-act toast-act-go" onClick={leave}>
           OK
