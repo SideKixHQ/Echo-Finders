@@ -35,12 +35,13 @@ import * as Location from "expo-location";
 import * as Network from "expo-network";
 import { WebView, type WebViewMessageEvent } from "react-native-webview";
 import type { ShouldStartLoadRequest } from "react-native-webview/lib/WebViewTypes";
-import type { NativeToWeb, PocketPlan, WebToNative } from "../../../prototype/src/native-bridge-protocol";
+import type { LocationAccess, NativeToWeb, PocketPlan, WebToNative } from "../../../prototype/src/native-bridge-protocol";
 import { currentEchoes, refreshLibrary } from "../library";
 import { useNarrator } from "../player";
 import { usePurchases } from "../purchases/PurchasesProvider";
 import { useWalk } from "../walk/WalkProvider";
 import { attachFixes } from "../walk/task";
+import { locationAccessOf } from "../walk/logic";
 import {
   FixRelay,
   PocketJudge,
@@ -182,6 +183,29 @@ export default function WebShell() {
     }
   }, [fixesArrived]);
 
+  /**
+   * Location for Echo Finders, for the page's Hands free lines (mock 7): told as the page
+   * loads and whenever it changes. iOS's own prompts take the app out of active and back,
+   * so looking again each time it is active again catches every answer, and a change made
+   * in iPhone Settings.
+   */
+  const lastAccess = useRef<LocationAccess | null | undefined>(undefined);
+  const reportAccess = useCallback(async () => {
+    try {
+      const [servicesOn, whileUsing, always] = await Promise.all([
+        Location.hasServicesEnabledAsync(),
+        Location.getForegroundPermissionsAsync(),
+        Location.getBackgroundPermissionsAsync(),
+      ]);
+      const access = locationAccessOf(servicesOn, whileUsing, always);
+      if (access === lastAccess.current) return;
+      lastAccess.current = access;
+      if (access) send({ type: "location:access", access });
+    } catch {
+      /* Asked again next time the app is on screen. */
+    }
+  }, [send]);
+
   // --- The page's messages ---------------------------------------------------------------
 
   const handle = useCallback(
@@ -192,6 +216,9 @@ export default function WebShell() {
           ready.current = true;
           send({ type: "purchase:entitlement", entitlement: p.appStore });
           flush();
+          // A page that has just loaded knows nothing yet: tell it afresh.
+          lastAccess.current = undefined;
+          void reportAccess();
           return;
         case "audio:play": {
           const { type: _type, ...request } = message;
@@ -214,6 +241,7 @@ export default function WebShell() {
           return n.setRate(message.rate);
         case "location:start":
           send({ type: "reply", id: message.id, result: { status: await startWatch() } });
+          void reportAccess();
           return;
         case "location:stop":
           return stopWatch();
@@ -246,6 +274,10 @@ export default function WebShell() {
           } else if (message.changed) w.start();
           else w.resume();
           return;
+        case "settings:open":
+          // Echo Finders' own page in iPhone Settings, where Location is.
+          Linking.openSettings().catch(() => undefined);
+          return;
         case "theme":
           setTheme(message.theme);
           return;
@@ -268,7 +300,7 @@ export default function WebShell() {
         }
       }
     },
-    [flush, send, startWatch, stopWatch],
+    [flush, reportAccess, send, startWatch, stopWatch],
   );
 
   const onMessage = useCallback(
@@ -319,6 +351,7 @@ export default function WebShell() {
       active.current = state === "active";
       if (active.current && !wasActive) {
         void refreshLibrary();
+        void reportAccess();
         pocket.current = null;
         plan.current = null;
         live.current.narrator.takeBack();
@@ -329,7 +362,7 @@ export default function WebShell() {
       }
     });
     return () => subscription.remove();
-  }, [flush]);
+  }, [flush, reportAccess]);
 
   useEffect(() => stopWatch, [stopWatch]);
 

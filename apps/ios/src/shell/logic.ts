@@ -115,6 +115,7 @@ const WEB_TYPES = new Set<WebToNative["type"]>([
   "purchase:restore",
   "handsfree",
   "pocket",
+  "settings:open",
   "theme",
 ]);
 

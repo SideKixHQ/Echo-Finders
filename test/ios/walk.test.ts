@@ -13,6 +13,7 @@ import {
   FRESH_LADDER,
   HANDS_FREE_SHEET,
   NO_LOCATION_LINE,
+  locationAccessOf,
   WALKING_LINE,
   WALKING_UPDATES,
   WALK_LISTENER,
@@ -259,5 +260,30 @@ describe("the walk's settings and words", () => {
     expect(FALLBACK_LINE).toBe("Keep Echo Finders on screen while you walk and echoes will still open.");
     const all = [...Object.values(HANDS_FREE_SHEET), FALLBACK_LINE, NO_LOCATION_LINE, ...Object.values(WALKING_LINE)];
     for (const line of all) expect(line).not.toMatch(/[–—]|\s-\s/);
+  });
+});
+
+describe("location for Echo Finders, as the page is told it (mock 7)", () => {
+  const yes = { granted: true, canAskAgain: true, status: "granted" };
+  const no = { granted: false, canAskAgain: false, status: "denied" };
+  const never = { granted: false, canAskAgain: true, status: "undetermined" };
+
+  it("off when Location Services are off, whatever was granted", () => {
+    expect(locationAccessOf(false, yes, yes)).toBe("off");
+  });
+  it("off when Echo Finders was refused location", () => {
+    expect(locationAccessOf(true, no, no)).toBe("off");
+  });
+  it("nothing to say while it has never been asked: iOS will ask", () => {
+    expect(locationAccessOf(true, never, never)).toBeNull();
+  });
+  it("while using, when Always was not given", () => {
+    expect(locationAccessOf(true, yes, no)).toBe("while-using");
+  });
+  it("always", () => {
+    expect(locationAccessOf(true, yes, yes)).toBe("always");
+  });
+  it("the location line is the approved one", () => {
+    expect(NO_LOCATION_LINE).toBe("Turn on location for Echo Finders in iPhone Settings to hear echoes as you go.");
   });
 });

@@ -293,5 +293,28 @@ export const WALKING_LINE = {
   "on-screen": "Echoes start as you reach them while Echo Finders is on screen.",
 } as const;
 
-/** When In Use was refused for good: where to fix it. */
-export const NO_LOCATION_LINE = "Turn on location for Echo Finders in iPhone Settings to walk with echoes.";
+/**
+ * When In Use was refused for good: where to fix it. The page's Settings shows these words
+ * under Hands free (mock 7, approved 2026-11-13, with "to hear echoes as you go" in place of
+ * "to walk with echoes"); kept here the same, so the phone's own copy says what the page says.
+ */
+export const NO_LOCATION_LINE = "Turn on location for Echo Finders in iPhone Settings to hear echoes as you go.";
+
+// --- What the page is told ----------------------------------------------------------------
+
+/**
+ * Location for Echo Finders as iPhone Settings has it, in the bridge's words
+ * (`LocationAccess`): the page's Settings shows the Hands free lines from it (mock 7).
+ *
+ *   off          Location Services are off, or Echo Finders was refused location
+ *   while-using  allowed while the app is in use, not Always
+ *   always       Always
+ *
+ * Null while Echo Finders has never been asked: iOS will ask, so there is nothing to put
+ * right in iPhone Settings yet, and the page shows no line.
+ */
+export function locationAccessOf(servicesOn: boolean, whileUsing: Grant & { readonly status?: string }, always: Grant): "off" | "while-using" | "always" | null {
+  if (!servicesOn) return "off";
+  if (!whileUsing.granted) return whileUsing.status === "undetermined" ? null : "off";
+  return always.granted ? "always" : "while-using";
+}

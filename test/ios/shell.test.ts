@@ -239,3 +239,9 @@ describe("the pocket", () => {
     expect(newer.renders?.[0]?.audioKey).toBe("audio/z/v.mp3");
   });
 });
+
+describe("the page's new asks (build 11)", () => {
+  it("takes Open iPhone Settings", () => {
+    expect(parseWebMessage(JSON.stringify({ type: "settings:open" }))).toEqual({ type: "settings:open" });
+  });
+});
