@@ -116,6 +116,10 @@ describe("toast B: Next", () => {
     );
   });
 
+  it("driving, over an hour is hours and minutes of driving", () => {
+    expect(nextAfterSync("synced", [near("far", 97.5)], null, "driving")?.label).toBe("Next · 1h 05 drive");
+  });
+
   it("on foot it stays minutes walking", () => {
     expect(nextAfterSync("synced", [near("close", 0.065)], null, "walking")?.label).toBe("Next · 1 min walk");
   });

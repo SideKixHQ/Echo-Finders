@@ -121,7 +121,9 @@ export function nextAfterSync(
   if (!best) return null;
   if (mode === "driving") {
     const far = reach(best.distanceKm, null, presetFor(mode).speedKph);
-    return { echo: best.echo, label: `Next · ${far.endsWith(" min") ? `${far} drive` : far}` };
+    // A time is a drive: "4 min drive", and over an hour "1h 05 drive" (James, 2026-11-14).
+    const time = far.endsWith(" min") || /^\d+h \d\d$/.test(far);
+    return { echo: best.echo, label: `Next · ${time ? `${far} drive` : far}` };
   }
   return { echo: best.echo, label: `Next · ${walkMinutes(best.distanceKm)} min walk` };
 }
