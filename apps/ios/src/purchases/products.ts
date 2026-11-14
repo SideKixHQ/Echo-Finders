@@ -8,6 +8,10 @@
  *   com.echofinders.app.weekpass           non-renewing subscription, one place, 7 days
  *   com.echofinders.app.city.<id>          non-consumable, one per City Pass city, with the
  *                                          city id's hyphens as underscores (cape_fear)
+ *   com.echofinders.app.cityupgrade.<id>   non-consumable, one per city: the City Pass for
+ *                                          someone holding that city's Week Pass, $6.99,
+ *                                          "your week counted" (James, 2026-11-13). It opens
+ *                                          the city exactly as a City Pass does.
  *
  * A Week Pass is one product for every place, so the place it was bought for travels with
  * the transaction itself, as its `appAccountToken`: a UUID worked out from the city id
@@ -21,20 +25,40 @@ export const BUNDLE_ID = "com.echofinders.app";
 export const ALL_ACCESS_SKU = `${BUNDLE_ID}.allaccess.yearly`;
 export const WEEK_PASS_SKU = `${BUNDLE_ID}.weekpass`;
 const CITY_PREFIX = `${BUNDLE_ID}.city.`;
+const UPGRADE_PREFIX = `${BUNDLE_ID}.cityupgrade.`;
 
 /** The City Pass product for a city: `com.echofinders.app.city.cape_fear`. */
 export function citySku(cityId: string): string {
   return CITY_PREFIX + cityId.replace(/-/g, "_");
 }
 
-/** The city a City Pass product is for, or null for any other product. */
+/** The City Pass upgrade for a Week Pass holder: `com.echofinders.app.cityupgrade.cape_fear`. */
+export function cityUpgradeSku(cityId: string): string {
+  return UPGRADE_PREFIX + cityId.replace(/-/g, "_");
+}
+
+/**
+ * The city a City Pass product is for, or null for any other product. The upgrade is a
+ * City Pass too: bought, it opens its city for good, the same as the full price one.
+ */
 export function cityOfSku(sku: string): City | null {
-  if (!sku.startsWith(CITY_PREFIX)) return null;
-  return CITIES.find((c) => citySku(c.id) === sku) ?? null;
+  if (sku.startsWith(CITY_PREFIX)) return CITIES.find((c) => citySku(c.id) === sku) ?? null;
+  if (sku.startsWith(UPGRADE_PREFIX)) return CITIES.find((c) => cityUpgradeSku(c.id) === sku) ?? null;
+  return null;
+}
+
+/** Is this the City Pass upgrade, rather than the full price City Pass? */
+export function isUpgradeSku(sku: string): boolean {
+  return sku.startsWith(UPGRADE_PREFIX) && cityOfSku(sku) !== null;
 }
 
 /** Every product the app asks the App Store for, so the paywall can show its prices. */
-export const ALL_SKUS: readonly string[] = [WEEK_PASS_SKU, ...CITIES.map((c) => citySku(c.id)), ALL_ACCESS_SKU];
+export const ALL_SKUS: readonly string[] = [
+  WEEK_PASS_SKU,
+  ...CITIES.map((c) => citySku(c.id)),
+  ...CITIES.map((c) => cityUpgradeSku(c.id)),
+  ALL_ACCESS_SKU,
+];
 
 /** The engine's plan a product is (`PLANS`), or null for a product this app does not sell. */
 export type PlanKey = keyof typeof PLANS;
@@ -45,12 +69,43 @@ export function planOfSku(sku: string): PlanKey | null {
   return cityOfSku(sku) ? "city" : null;
 }
 
-/** The product to buy for a plan, and for a City Pass the city. */
-export function skuFor(plan: PlanKey, cityId?: string): string {
+/**
+ * The product to buy for a plan, and for a City Pass the city. `upgrade`: the City Pass
+ * for someone holding this city's Week Pass (the page shows it as "your week counted").
+ */
+export function skuFor(plan: PlanKey, cityId?: string, upgrade = false): string {
   if (plan === "allAccess") return ALL_ACCESS_SKU;
   if (plan === "week") return WEEK_PASS_SKU;
   if (!cityId) throw new Error("A City Pass needs a city");
-  return citySku(cityId);
+  return upgrade ? cityUpgradeSku(cityId) : citySku(cityId);
+}
+
+/** Apple's prices for the page's paywall, by plan, in the listener's own currency. */
+export interface PagePrices {
+  readonly week?: string;
+  readonly city?: string;
+  readonly cityUpgrade?: string;
+  readonly allAccess?: string;
+}
+
+/**
+ * Apple's prices (`Product.displayPrice`) by plan, for the page to show in place of the
+ * website's (James, 2026-11-13: "never the web amounts"). Every City Pass costs the same,
+ * and every upgrade, so any city's product answers for its plan. A plan whose product the
+ * App Store has not answered for is left out.
+ */
+export function pagePrices(priceOf: (sku: string) => string | null): PagePrices {
+  const first = (skus: readonly string[]) => skus.map(priceOf).find((p): p is string => !!p);
+  const week = priceOf(WEEK_PASS_SKU);
+  const city = first(CITIES.map((c) => citySku(c.id)));
+  const cityUpgrade = first(CITIES.map((c) => cityUpgradeSku(c.id)));
+  const allAccess = priceOf(ALL_ACCESS_SKU);
+  return {
+    ...(week ? { week } : {}),
+    ...(city ? { city } : {}),
+    ...(cityUpgrade ? { cityUpgrade } : {}),
+    ...(allAccess ? { allAccess } : {}),
+  };
 }
 
 /**

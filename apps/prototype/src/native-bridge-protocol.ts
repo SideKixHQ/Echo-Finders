@@ -84,6 +84,15 @@ export interface PocketPlan {
 
 export type PurchasePlan = "week" | "city" | "allAccess";
 
+/** Apple's price for each plan, as the App Store shows it. A plan not answered for yet is absent. */
+export interface AppPrices {
+  readonly week?: string;
+  readonly city?: string;
+  /** The City Pass upgrade for a Week Pass holder ("$6.99, your week counted"). */
+  readonly cityUpgrade?: string;
+  readonly allAccess?: string;
+}
+
 export type PurchaseOutcome = "bought" | "cancelled" | "pending" | "failed";
 
 /** Location permission, in the Permissions API's words. */
@@ -101,7 +110,11 @@ export type WebToNative =
   | { readonly type: "location:start"; readonly id: number }
   | { readonly type: "location:stop" }
   | { readonly type: "location:permission"; readonly id: number }
-  | { readonly type: "purchase:buy"; readonly id: number; readonly plan: PurchasePlan; readonly cityId?: string }
+  /**
+   * `upgrade`: a City Pass the paywall showed as "your week counted", for someone holding
+   * that city's Week Pass; the phone sells it as the City Pass upgrade product.
+   */
+  | { readonly type: "purchase:buy"; readonly id: number; readonly plan: PurchasePlan; readonly cityId?: string; readonly upgrade?: boolean }
   | { readonly type: "purchase:restore"; readonly id: number }
   /**
    * Settings › Hands-free. `changed` is true when the listener just switched it, which is
@@ -151,6 +164,12 @@ export type NativeToWeb =
   | { readonly type: "location:error"; readonly code: 1 | 2 }
   /** What the App Store says this Apple Account holds, and nothing else. */
   | { readonly type: "purchase:entitlement"; readonly entitlement: Entitlement }
+  /**
+   * Apple's prices, in the listener's currency (`Product.displayPrice`), for the paywall in
+   * the app, which never shows the website's amounts (James, 2026-11-13). Sent as the page
+   * loads and whenever the App Store answers.
+   */
+  | { readonly type: "purchase:prices"; readonly prices: AppPrices }
   /** A route saving for no signal: so many bytes of so many on the phone. */
   | { readonly type: "trip:saving"; readonly routeId: string; readonly savedBytes: number; readonly totalBytes: number }
   /** A route saved on the phone, plays with no signal. Sent for each saved route as the page loads, too. */

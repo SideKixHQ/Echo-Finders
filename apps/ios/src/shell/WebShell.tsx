@@ -39,6 +39,7 @@ import type { LocationAccess, NativeToWeb, PocketPlan, WebToNative } from "../..
 import { currentEchoes, refreshLibrary } from "../library";
 import { useNarrator } from "../player";
 import { usePurchases } from "../purchases/PurchasesProvider";
+import { pagePrices } from "../purchases/products";
 import { useWalk } from "../walk/WalkProvider";
 import { attachFixes } from "../walk/task";
 import { locationAccessOf } from "../walk/logic";
@@ -215,6 +216,7 @@ export default function WebShell() {
         case "hello":
           ready.current = true;
           send({ type: "purchase:entitlement", entitlement: p.appStore });
+          send({ type: "purchase:prices", prices: pagePrices(p.priceOf) });
           flush();
           // A page that has just loaded knows nothing yet: tell it afresh.
           lastAccess.current = undefined;
@@ -252,7 +254,7 @@ export default function WebShell() {
           return;
         }
         case "purchase:buy": {
-          const offer = offerFor(message.plan, message.cityId);
+          const offer = offerFor(message.plan, message.cityId, message.upgrade === true);
           if (!offer) {
             send({ type: "reply", id: message.id, result: { outcome: "failed", message: "" } });
             return;
@@ -315,6 +317,11 @@ export default function WebShell() {
   useEffect(() => {
     if (ready.current) send({ type: "purchase:entitlement", entitlement: purchases.appStore });
   }, [purchases.appStore, send]);
+
+  // Apple's prices, once the App Store has answered.
+  useEffect(() => {
+    if (ready.current) send({ type: "purchase:prices", prices: pagePrices(purchases.priceOf) });
+  }, [purchases.priceOf, send]);
 
   // The narrator's own news, for the page.
   useEffect(

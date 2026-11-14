@@ -31,6 +31,7 @@ import { readSettings } from "./settings-store";
 import { mergePasses } from "./native-passes";
 import {
   BRIDGE_VERSION,
+  type AppPrices,
   type BridgeFix,
   type LocationAccess,
   type LocationPermission,
@@ -96,6 +97,10 @@ function receive(message: NativeToWeb): void {
       return;
     case "purchase:entitlement":
       appStore = message.entitlement;
+      for (const listener of entitlementListeners) listener();
+      return;
+    case "purchase:prices":
+      appPrices = message.prices;
       for (const listener of entitlementListeners) listener();
       return;
     case "audio:remote":
@@ -527,6 +532,19 @@ export function useInAppEntitlement(web: Entitlement): Entitlement {
 
 export { mergePasses };
 
+/** Apple's prices, once the phone has said; empty until then. */
+let appPrices: AppPrices = {};
+
+/**
+ * Apple's prices for the paywall, inside the iPhone app; null in a browser, where the
+ * website's own prices stand. In the app the website's amounts are never shown (James,
+ * 2026-11-13): a plan whose price the App Store has not given yet shows none.
+ */
+export function useAppPrices(): AppPrices | null {
+  const prices = useSyncExternalStore(subscribeEntitlement, () => appPrices, () => appPrices);
+  return inApp() ? prices : null;
+}
+
 /** The same, outside React: a record with the App Store's passes added in the app. */
 export function withInApp(web: Entitlement): Entitlement {
   return inApp() ? mergePasses(web, appStore) : web;
@@ -537,8 +555,8 @@ export function withInApp(web: Entitlement): Entitlement {
  * the App Store now holds), false if the listener cancelled; throws with the phone's words
  * when it is waiting for approval or did not go through.
  */
-export async function buyInApp(plan: PurchasePlan, cityId: string | undefined): Promise<boolean> {
-  const result = await ask<PurchaseResult>((id) => ({ type: "purchase:buy", id, plan, ...(cityId ? { cityId } : {}) }));
+export async function buyInApp(plan: PurchasePlan, cityId: string | undefined, upgrade = false): Promise<boolean> {
+  const result = await ask<PurchaseResult>((id) => ({ type: "purchase:buy", id, plan, ...(cityId ? { cityId } : {}), ...(upgrade ? { upgrade } : {}) }));
   if (result?.outcome === "bought") return true;
   if (result?.outcome === "cancelled") return false;
   throw new Error(result?.message ?? "");

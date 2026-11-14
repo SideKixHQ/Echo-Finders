@@ -3697,7 +3697,10 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
   width: 18px; height: 18px; accent-color: var(--ember-core);
 }
 .paywall-plan:has(input:focus-visible) { outline: 2px solid var(--cool); outline-offset: 2px; }
-.paywall-plan-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+/* Wraps rather than squeezing: a long place name with the upgrade's "your week counted" left
+   the name one word a line ("Cape / Fear / Coast / City / Pass"); now the price goes under
+   it. A name and price that fit stay on one line, as before. */
+.paywall-plan-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 10px; }
 .paywall-plan-name { font-size: var(--fs-button); font-weight: 600; color: var(--white); }
 /* Ember, because what is behind the wall is echoes and ember is what an echo is. */
 .paywall-plan-price {

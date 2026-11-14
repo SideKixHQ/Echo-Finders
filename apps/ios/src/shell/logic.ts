@@ -163,7 +163,7 @@ export function parseWebMessage(data: string): WebToNative | null {
       return finite(r["id"]) ? (r as unknown as WebToNative) : null;
     case "purchase:buy":
       return finite(r["id"]) && (r["plan"] === "week" || r["plan"] === "city" || r["plan"] === "allAccess") &&
-        (r["cityId"] === undefined || text(r["cityId"]))
+        (r["cityId"] === undefined || text(r["cityId"])) && (r["upgrade"] === undefined || typeof r["upgrade"] === "boolean")
         ? (r as unknown as WebToNative)
         : null;
     case "handsfree":
@@ -245,12 +245,16 @@ export class FixRelay {
 
 // --- Passes -----------------------------------------------------------------------------------
 
-/** What the page asked to buy, as the App Store sells it. Null for a plan it cannot sell. */
-export function offerFor(plan: PlanKey, cityId: string | undefined): { plan: PlanKey; sku: string; city?: City } | null {
+/**
+ * What the page asked to buy, as the App Store sells it. Null for a plan it cannot sell.
+ * `upgrade`: the page showed this City Pass as the upgrade ("your week counted"), so the
+ * upgrade product is what is bought, at the price the page showed.
+ */
+export function offerFor(plan: PlanKey, cityId: string | undefined, upgrade = false): { plan: PlanKey; sku: string; city?: City } | null {
   if (plan === "allAccess") return { plan, sku: skuFor(plan) };
   const city = CITIES.find((c) => c.id === cityId);
   if (!city) return null;
-  return { plan, sku: skuFor(plan, city.id), city };
+  return { plan, sku: skuFor(plan, city.id, plan === "city" && upgrade), city };
 }
 
 // --- The pocket -------------------------------------------------------------------------------

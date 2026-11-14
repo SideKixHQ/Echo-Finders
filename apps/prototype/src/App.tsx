@@ -63,7 +63,7 @@ import { EchoBar, ECHOBAR_FLOAT, ECHOBAR_H } from "./EchoBar";
 import { UpNext } from "./UpNext";
 import { Paywall } from "./Paywall";
 import { buyAllAccess, buyCityPass, buyWeekPass, readEntitlement, setAllAccessRenewal } from "./entitlement-store";
-import { buyInApp, inApp, openOfflineEchoes, openPhoneSettings, restoreInApp, saveTrip, useInAppEntitlement, useLocationAccess, useTripSaves, withInApp } from "./native-bridge";
+import { buyInApp, inApp, useAppPrices, openOfflineEchoes, openPhoneSettings, restoreInApp, saveTrip, useInAppEntitlement, useLocationAccess, useTripSaves, withInApp } from "./native-bridge";
 import { MembershipPanel } from "./Membership";
 import { ReactionCard, faceOf } from "./ReactionCard";
 import { react, readReactions, type Reactions } from "./reaction-store";
@@ -102,6 +102,7 @@ import {
   freeEchoesLeft,
   membershipOf,
   cityPassPriceMinor,
+  PLANS,
   type Entitlement,
   distanceKm,
   effectiveRadiusKm,
@@ -534,6 +535,8 @@ export function App() {
   const [webEntitlement, setEntitlement] = useState<Entitlement>(() => readEntitlement());
   // In the iPhone app, what the App Store holds as well (`native-bridge.ts`); elsewhere the same.
   const entitlement = useInAppEntitlement(webEntitlement);
+  /** Apple's prices for the paywall, inside the iPhone app; null in a browser. */
+  const appPrices = useAppPrices();
   /*
    * Real payments, once the Stripe keys are in Vercel (`payments.ts`). Until then this stays
    * false and every purchase is the device-only record it always was.
@@ -556,7 +559,9 @@ export function App() {
     // In the iPhone app, the App Store, and never the website's checkout (`native-bridge.ts`).
     if (inApp()) {
       setPaymentError(null);
-      return void buyInApp(plan, cityId).then((bought) => bought && local(), (e: Error) => e.message && setPaymentError(e.message));
+      // A City Pass the paywall showed as "your week counted" is Apple's upgrade product.
+      const upgrade = plan === "city" && !!cityId && cityPassPriceMinor(entitlement, cityId, Date.now()) < PLANS.city.amountMinor;
+      return void buyInApp(plan, cityId, upgrade).then((bought) => bought && local(), (e: Error) => e.message && setPaymentError(e.message));
     }
     if (!paymentsOn) return local();
     setPaymentError(null);
@@ -3168,6 +3173,7 @@ export function App() {
               ? { cityPassMinor: cityPassPriceMinor(entitlement, cityAt(state.position.at)!.id, Date.now()) }
               : {})}
             cityPassMinorFor={(id) => cityPassPriceMinor(entitlement, id, Date.now())}
+            appPrices={appPrices}
             onBuy={(plan, cityId) => {
               // Stripe when payments are on; otherwise recorded on this device, nothing charged.
               // The city is the one the paywall chose: here, or one picked for a trip ahead.
@@ -3185,6 +3191,7 @@ export function App() {
             city={cityAt(paywallFor.point.at)}
             heardCount={heardIds.length}
             cityPassMinorFor={(id) => cityPassPriceMinor(entitlement, id, Date.now())}
+            appPrices={appPrices}
             onBuy={(plan, cityId) => {
               /*
                 Stripe Checkout, when payments are on (`payments.ts`): the page leaves for

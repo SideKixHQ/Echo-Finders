@@ -24,9 +24,13 @@ import {
   cityOfToken,
   citySku,
   cityToken,
+  cityUpgradeSku,
+  isUpgradeSku,
+  pagePrices,
   planOfSku,
   skuFor,
 } from "../../apps/ios/src/purchases/products.js";
+import { offerFor, parseWebMessage } from "../../apps/ios/src/shell/logic.js";
 import {
   entitlementFromStore,
   fromStorePurchase,
@@ -69,7 +73,7 @@ describe("product ids", () => {
       "com.echofinders.app.city.boston",
       "com.echofinders.app.city.houston",
     ]);
-    expect(ALL_SKUS).toHaveLength(CITIES.length + 2);
+    expect(ALL_SKUS).toHaveLength(CITIES.length * 2 + 2);
   });
 
   it("map back to their city and plan", () => {
@@ -365,5 +369,46 @@ describe("Skeleton key", () => {
     expect(stillTester(500)).toBe(true);
     expect(stillTester(403)).toBe(false);
     expect(stillTester(503)).toBe(false);
+  });
+});
+
+describe("the City Pass upgrade and Apple's prices on the page (James, 2026-11-13)", () => {
+  it("has one upgrade product per city, as created in App Store Connect", () => {
+    expect(cityUpgradeSku("cape-fear")).toBe("com.echofinders.app.cityupgrade.cape_fear");
+    expect(cityUpgradeSku("washington-dc")).toBe("com.echofinders.app.cityupgrade.washington_dc");
+    for (const c of CITIES) expect(ALL_SKUS).toContain(cityUpgradeSku(c.id));
+  });
+
+  it("an upgrade opens its city for good, as a City Pass does", () => {
+    expect(cityOfSku("com.echofinders.app.cityupgrade.boston")?.id).toBe("boston");
+    expect(isUpgradeSku("com.echofinders.app.cityupgrade.boston")).toBe(true);
+    expect(isUpgradeSku("com.echofinders.app.city.boston")).toBe(false);
+    const e = entitlementFromStore([
+      { productId: "com.echofinders.app.cityupgrade.boston", transactionId: "t1", purchasedAt: 1000 } as never,
+    ]);
+    expect(e.cities).toEqual(["boston"]);
+  });
+
+  it("sells the upgrade only when the page showed it as the upgrade", () => {
+    expect(offerFor("city", "boston", true)?.sku).toBe("com.echofinders.app.cityupgrade.boston");
+    expect(offerFor("city", "boston")?.sku).toBe("com.echofinders.app.city.boston");
+    expect(offerFor("week", "boston", true)?.sku).toBe("com.echofinders.app.weekpass");
+    expect(offerFor("allAccess", undefined, true)?.sku).toBe("com.echofinders.app.allaccess.yearly");
+  });
+
+  it("the page's buy may say it is the upgrade, and nothing odd", () => {
+    expect(parseWebMessage(JSON.stringify({ type: "purchase:buy", id: 1, plan: "city", cityId: "boston", upgrade: true }))).not.toBeNull();
+    expect(parseWebMessage(JSON.stringify({ type: "purchase:buy", id: 1, plan: "city", cityId: "boston", upgrade: "yes" }))).toBeNull();
+  });
+
+  it("hands the page Apple's price for each plan, and leaves out what Apple has not answered", () => {
+    const apple: Record<string, string> = {
+      "com.echofinders.app.weekpass": "$4.99",
+      "com.echofinders.app.city.boston": "$11.99",
+      "com.echofinders.app.cityupgrade.houston": "$6.99",
+      "com.echofinders.app.allaccess.yearly": "$41.99",
+    };
+    expect(pagePrices((sku) => apple[sku] ?? null)).toEqual({ week: "$4.99", city: "$11.99", cityUpgrade: "$6.99", allAccess: "$41.99" });
+    expect(pagePrices(() => null)).toEqual({});
   });
 });

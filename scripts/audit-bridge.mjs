@@ -233,7 +233,15 @@ let browserSettings = null;
   await panel.getByRole('button', { name: /Membership options/ }).click();
   await p.waitForTimeout(400);
   const sheet = p.getByRole('dialog', { name: 'Membership options' });
-  await sheet.locator('label', { hasText: 'All-Access' }).click();
+  // Apple's prices, never the website's (James, 2026-11-13): none until the phone says,
+  // then the App Store's own.
+  const allAccessCard = sheet.locator('label', { hasText: 'All-Access' });
+  check('Prices: no website price before the App Store answers', !/\$34\.99/.test(await sheet.textContent() ?? ''));
+  await p.evaluate(() => window.__send({ type: 'purchase:prices', prices: { week: '$4.99', city: '$11.99', cityUpgrade: '$6.99', allAccess: '$41.99' } }));
+  await p.waitForTimeout(200);
+  check('Prices: Apple price on the plan', /\$41\.99/.test(await allAccessCard.textContent() ?? ''));
+  await allAccessCard.click();
+  check('Prices: Apple price on the button', /Start All-Access · \$41\.99 a year/.test(await sheet.getByRole('button', { name: /Start All-Access/ }).textContent() ?? ''));
   await sheet.getByRole('button', { name: /Start All-Access/ }).click();
   await p.waitForTimeout(600);
   const buy = (await sent(p, 'purchase:buy')).at(-1);

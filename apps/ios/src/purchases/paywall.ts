@@ -7,8 +7,11 @@
  *
  * The offers are the web paywall's (`Paywall.tsx`) and its approved words, with two
  * differences the App Store asks for: prices are the App Store's own, in the listener's
- * currency (`Product.displayPrice`), and a Week Pass does not count towards a City Pass
- * (James, 2026-11-11: the $6 upgrade is the website's alone).
+ * currency (`Product.displayPrice`), and a Week Pass counts towards a City Pass through
+ * a separate App Store product, the City Pass upgrade ($6.99, "your week counted"), offered
+ * only to someone holding that city's Week Pass (James, 2026-11-13, superseding
+ * 2026-11-11's "the $6 upgrade is the website's alone"). In the app the paywall is the
+ * web page's (`Paywall.tsx`), with Apple's prices from the phone (`pagePrices`).
  */
 import { FREE_ECHO_LIMIT, PLANS, cityAt, mayHearAnother, type City, type Entitlement, type LatLng } from "@echofinders/core";
 import { skuFor, type PlanKey } from "./products";

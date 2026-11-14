@@ -31,6 +31,7 @@
 
 import { useState, type ReactNode } from "react";
 import { CITIES, FREE_ECHO_LIMIT, PLANS, type City, type Echo } from "@echofinders/core";
+import type { AppPrices } from "./native-bridge-protocol";
 
 export type Plan = "week" | "city" | "allAccess";
 
@@ -58,6 +59,13 @@ export interface PaywallProps {
    * The same, for a city chosen under "Buying for another city?". Absent: the list price.
    */
   readonly cityPassMinorFor?: (cityId: string) => number;
+  /**
+   * Inside the iPhone app, Apple's prices (`Product.displayPrice`, sent by the phone), shown
+   * in place of the website's, which the app never shows (James, 2026-11-13). The City
+   * Pass for a Week Pass holder is Apple's upgrade product ("$6.99, your week counted").
+   * Absent in a browser.
+   */
+  readonly appPrices?: AppPrices | null;
   /** The plan, and for a City or Week Pass the city it is for. */
   readonly onBuy: (plan: Plan, cityId?: string) => void;
   readonly onClose: () => void;
@@ -90,6 +98,7 @@ export function Paywall({
   allAccessRunning = false,
   cityPassMinor: herePassMinor = PLANS.city.amountMinor,
   cityPassMinorFor,
+  appPrices = null,
   onBuy,
   onClose,
 }: PaywallProps) {
@@ -107,7 +116,16 @@ export function Paywall({
     ? (cityPassMinorFor?.(elsewhere.id) ?? PLANS.city.amountMinor)
     : herePassMinor;
   const weekRunning = cityPassMinor < PLANS.city.amountMinor;
-  const cityPrice = weekRunning ? `$${(cityPassMinor / 100).toFixed(2)}` : PLANS.city.price;
+  // In the app, Apple's price for each plan, or none until the App Store has said.
+  const weekPrice = appPrices ? (appPrices.week ?? "") : PLANS.week.price;
+  const cityPrice = appPrices
+    ? ((weekRunning ? appPrices.cityUpgrade : appPrices.city) ?? "")
+    : weekRunning
+      ? `$${(cityPassMinor / 100).toFixed(2)}`
+      : PLANS.city.price;
+  const allAccessPrice = appPrices ? (appPrices.allAccess ?? "") : PLANS.allAccess.price;
+  /** "Get the Week Pass · $4.99", or just "Get the Week Pass" while the price is not known. */
+  const priced = (label: string, price: string) => (price ? `${label} · ${price}` : label);
   // The City Pass first when there is one, between the cheaper way in and the better deal
   // from a few cities up; the Week Pass is one tap away for the weekend visitor.
   const [plan, setPlan] = useState<Plan>(here && !allAccessRunning ? "city" : "allAccess");
@@ -196,7 +214,7 @@ export function Paywall({
               <span className="paywall-plan-head">
                 <span className="paywall-plan-name">{PLANS.week.name}</span>
                 <span className="paywall-plan-price">
-                  {PLANS.week.price} <small>{PLANS.week.per}</small>
+                  {weekPrice} <small>{PLANS.week.per}</small>
                 </span>
               </span>
               {chosen === "week" && (
@@ -241,7 +259,7 @@ export function Paywall({
             <span className="paywall-plan-head">
               <span className="paywall-plan-name">{PLANS.allAccess.name}</span>
               <span className="paywall-plan-price">
-                {PLANS.allAccess.price} <small>{PLANS.allAccess.per}</small>
+                {allAccessPrice} <small>{PLANS.allAccess.per}</small>
               </span>
             </span>
             {chosen === "allAccess" && (
@@ -284,12 +302,12 @@ export function Paywall({
           onClick={() => onBuy(chosen, chosen === "allAccess" ? undefined : city?.id)}
         >
           {chosen === "week"
-            ? `Get the ${PLANS.week.name} · ${PLANS.week.price}`
+            ? priced(`Get the ${PLANS.week.name}`, weekPrice)
             : chosen === "city"
-            ? `Get the ${PLANS.city.name} · ${cityPrice}`
+            ? priced(`Get the ${PLANS.city.name}`, cityPrice)
             : allAccessRunning
-              ? `Add a year · ${PLANS.allAccess.price}`
-              : `Start All-Access · ${PLANS.allAccess.price} ${PLANS.allAccess.per}`}
+              ? priced("Add a year", allAccessPrice)
+              : priced("Start All-Access", allAccessPrice && `${allAccessPrice} ${PLANS.allAccess.per}`)}
         </button>
 
         {/*
