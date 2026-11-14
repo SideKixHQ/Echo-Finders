@@ -77,8 +77,12 @@ export function Routes(p: Props) {
           const skipped = (id: string) => p.isSkipped?.(id) ?? false;
           // What the walk will go to: not heard, and not skipped by kids mode.
           const playable = stops.filter((e) => !skipped(e.id));
-          const left = playable.filter((e) => !p.isDone(e.id)).length;
-          const time = timing(stops);
+          const ahead = playable.filter((e) => !p.isDone(e.id));
+          const left = ahead.length;
+          // The time is the walk's (James, 2026-11-14): only the stops it will go to, not
+          // the ones heard already or skipped by kids mode. A Boston ghost story skipped
+          // in kids mode put "about 1254 hr" on a route to one San Francisco stop.
+          const time = timing(ahead);
           const isEditing = editing === r.id;
           const addable = p.saved.filter((e) => !r.stops.includes(e.id));
           return (

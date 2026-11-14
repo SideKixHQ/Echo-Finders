@@ -350,6 +350,10 @@ const currentTab = (p) => p.locator('.nav [aria-current="page"]').textContent().
   const stops = await greyed();
   check('Kids route: in kids mode the ghost story is greyed and the Kids echo is not',
     stops.join(', ') === 'grey:The Lady in Black, on:Turn the Cable Car Around', stops.join(', '));
+  // The time is only the stops the walk will go to (James, 2026-11-14): one stop in San
+  // Francisco is a minute or two of listening, not the 1254 hours from Boston it said.
+  const meta = await p.locator('.rt-meta').innerText();
+  check('Kids route: the time counts only the stops the walk will go to', /about \d+ min with listening/.test(meta) && !/hr/.test(meta), meta);
   await p.locator('.rt-acts').getByRole('button', { name: 'Start' }).click();
   await p.waitForTimeout(2000);
   const card = await p.locator('.pop').innerText().catch(() => '');
