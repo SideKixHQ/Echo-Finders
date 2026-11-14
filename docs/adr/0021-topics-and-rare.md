@@ -76,7 +76,9 @@ Asked of James, not yet decided, built as below until he answers:
   off a coast the outline left out belongs to the nearest country within 25 km. England and
   Scotland are one country, the United Kingdom. A country with none of the topic, or the
   open sea, leaves the map where it is. The echo bar, the area card and the pins all count
-  that country's echoes of the topic (London: 1 of 3, 3 places · 3 echoes).
+  that country's echoes of the topic (London: 1 of 3, 3 places · 3 echoes). Where the
+  country has none of the topic, the map stays put and the echo bar steps through that
+  topic's echoes abroad (Sports from London: 1 of 9), decided 2026-11-14 (James, "yes").
 - ~~The zoom out is while exploring. On a planned journey (a route, a drive, a flight) the
   panel offers every topic and filters the journey's own echoes, as before.~~ Decided
   2026-11-13 (James: "Should it zoom out there too? - yes"): on a planned route, drive or
