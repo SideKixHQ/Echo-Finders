@@ -83,7 +83,7 @@ describe("the lock screen", () => {
 
   it("skips the same fifteen seconds as the echo card", () => {
     expect(SKIP_SECONDS).toBe(15);
-    expect(LOCK_SCREEN_OPTIONS).toMatchObject({ showSeekBackward: true, showSeekForward: true, seekForwardIntervalSeconds: 15 });
+    expect(LOCK_SCREEN_OPTIONS).toMatchObject({ showSeekBackward: true, showSeekForward: true, seekBackwardIntervalSeconds: 15, seekForwardIntervalSeconds: 15 });
   });
 });
 
