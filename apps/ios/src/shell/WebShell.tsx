@@ -39,6 +39,7 @@ import type { ShouldStartLoadRequest } from "react-native-webview/lib/WebViewTyp
 import type { LocationAccess, NativeToWeb, PocketPlan, WebToNative } from "../../../prototype/src/native-bridge-protocol";
 import { currentEchoes, refreshLibrary } from "../library";
 import { useNarrator } from "../player";
+import { NoSignal } from "./NoSignal";
 import { usePurchases } from "../purchases/PurchasesProvider";
 import { usePacks } from "../packs/PacksProvider";
 import { pagePrices } from "../purchases/products";
@@ -84,7 +85,13 @@ export default function WebShell() {
   const packs = usePacks();
   // Reloading remounts the WebView under a new key.
   const [generation, setGeneration] = useState(0);
-  const reload = useCallback(() => setGeneration((g) => g + 1), []);
+  // The page could not load and there is no offline copy of it yet: the first open with no
+  // signal (mock 6). Cleared on every reload; a reload that fails again sets it again.
+  const [noSignal, setNoSignal] = useState(false);
+  const reload = useCallback(() => {
+    setNoSignal(false);
+    setGeneration((g) => g + 1);
+  }, []);
   const failed = useRef(false);
   // The page's theme, for the status bar's text (overnight item 7). Dark until it says.
   const [theme, setTheme] = useState<"dark" | "light">("dark");
@@ -483,8 +490,10 @@ export default function WebShell() {
         onContentProcessDidTerminate={reload}
         onError={() => {
           failed.current = true;
+          setNoSignal(true);
         }}
       />
+      {noSignal ? <NoSignal onTryAgain={reload} /> : null}
     </View>
   );
 }
