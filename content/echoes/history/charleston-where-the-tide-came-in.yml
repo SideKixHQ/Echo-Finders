@@ -3,7 +3,7 @@
 # Position: Overture "White Point Gardens" park point, nudged to the park's centre between the street grid edges; the Stede Bonnet stone's exact spot in the park is not in the sources (medium confidence).
 id: charleston-where-the-tide-came-in
 title: "Where the Tide Came In"
-summary: "Stede Bonnet and his crew were hanged at White Point in 1718 and buried at the low-water mark. The garden was laid out on top."
+summary: "Stede Bonnet and his crew were hanged at White Point in 1718 and buried at the low-water mark. The garden was laid out on that ground."
 place: "White Point Garden, Charleston, South Carolina"
 at: { lat: 32.76992, lng: -79.93035 }
 triggerRadiusKm: 0.08

@@ -7985,7 +7985,7 @@ export const LIBRARY: readonly Echo[] = [
   {
     "id": "charleston-where-the-tide-came-in",
     "title": "Where the Tide Came In",
-    "summary": "Stede Bonnet and his crew were hanged at White Point in 1718 and buried at the low-water mark. The garden was laid out on top.",
+    "summary": "Stede Bonnet and his crew were hanged at White Point in 1718 and buried at the low-water mark. The garden was laid out on that ground.",
     "point": {
       "at": {
         "lat": 32.76992,
