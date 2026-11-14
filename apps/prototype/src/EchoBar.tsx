@@ -47,12 +47,12 @@
  * of twenty six. Nearest first, so the next item is always the cheapest one to go and get.
  */
 
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { presetFor, rarityOf, type Echo, type Guidance, type TravelMode } from "@echofinders/core";
 import { CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, type EchoFace } from "@echofinders/echo";
 import type { PinState } from "./RouteMap";
-import { listenLength } from "./going";
+import { listenLength, reach } from "./going";
 
 export interface EchoBarItem {
   readonly echo: Echo;
@@ -95,6 +95,13 @@ export interface EchoBarProps {
    * exact failure the old proximity strip had when a pin was tapped.
    */
   readonly guidance: Guidance | null;
+  /**
+   * On a journey that carries you (a flight, a train), seconds until the route reaches each
+   * echo, by id: the same `upcomingOnRoute` times Coming up shows, so the two never give
+   * different minutes for the same echo. Null walking and driving, where you go where you
+   * like and the time is distance over speed.
+   */
+  readonly routeS?: ReadonlyMap<string, number> | null;
   /**
    * Walking to this echo (board DirC, 2026-11-10): the bar IS the directions. No arrows and
    * no kicker; the title in full, wrapping rather than cut; how long and when you arrive
@@ -141,6 +148,7 @@ export function EchoBar({
   mode,
   guidance,
   directions,
+  routeS,
 }: EchoBarProps) {
   /*
    * Nothing chosen yet shows the nearest, which is what the right arrow would give you
@@ -179,6 +187,44 @@ export function EchoBar({
       screen?.style.removeProperty("--step-h");
     };
   }, [measuring]);
+  /*
+   * The kicker says what it is worth, its topic and where you are in the ring, in one line.
+   * "EXTRA RARE GHOSTS & LEGENDS 3 OF 30" is about 340px and the line has 181 to 246, so the
+   * topic came out as "G." (James, 2026-11-14). With a rarity on the line, the topic is
+   * shown whole or not at all: measured as it would lay out, and left out when it would not
+   * fit, keeping the rarity and the count. Checked after every render and on a resize.
+   */
+  const kicker = useRef<HTMLSpanElement>(null);
+  const [tight, setTight] = useState(false);
+  const countPad = useRef(0);
+  const [, setWidth] = useState(0);
+  useLayoutEffect(() => {
+    const el = kicker.current;
+    const kind = el?.querySelector<HTMLElement>(".echobar-kind");
+    if (!el || !kind || !el.querySelector("b")) {
+      setTight(false);
+      return;
+    }
+    const gap = parseFloat(getComputedStyle(el).columnGap) || 0;
+    const parts = [...el.children] as HTMLElement[];
+    // Each part at its natural width as the full line lays it out: the topic's whole name,
+    // and the count with the lead-in it has there (it drops it when the topic is out).
+    const width = (part: HTMLElement) => {
+      if (part === kind) return kind.scrollWidth;
+      const w = part.getBoundingClientRect().width;
+      if (part.tagName !== "EM") return w;
+      const pad = parseFloat(getComputedStyle(part).paddingLeft) || 0;
+      if (!el.classList.contains("echobar-kicker-tight")) countPad.current = pad;
+      return w - pad + countPad.current;
+    };
+    const need = parts.reduce((sum, part) => sum + width(part), 0) + gap * (parts.length - 1);
+    setTight(need > el.clientWidth + 0.5);
+  });
+  useLayoutEffect(() => {
+    const resized = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", resized);
+    return () => window.removeEventListener("resize", resized);
+  }, []);
   if (!current) return null;
 
   const { echo, distanceKm } = current;
@@ -293,7 +339,10 @@ export function EchoBar({
               />
             )}
             <svg viewBox="-60 -60 120 120" aria-hidden="true">
-              <EchoCharacter face={face} r={40} uid="echobar" />
+              {/* Extra rare is magenta, as its pin is (`.echo-xr` in theme.css). */}
+              <g className={rarityOf(echo) === "singular" ? "echo-xr" : undefined}>
+                <EchoCharacter face={face} r={40} uid="echobar" />
+              </g>
             </svg>
           </button>
 
@@ -307,10 +356,10 @@ export function EchoBar({
             aria-label={isLoaded ? `Open the player: ${echo.title}` : `Open: ${echo.title}`}
           >
             {!directions && (
-            <span className="echobar-kicker mono">
+            <span ref={kicker} className={`echobar-kicker mono${rarity && tight ? " echobar-kicker-tight" : ""}`}>
               <span className="echobar-dot" />
               {rarity && <b>{rarity}</b>}
-              <span>{CATEGORY_LABEL[echo.category]}</span>
+              <span className="echobar-kind">{CATEGORY_LABEL[echo.category]}</span>
               {/*
                 Where you are in the ring, said as a fact rather than as a progress bar. A
                 bar would imply an order worth finishing; this is a ring of places and you
@@ -342,7 +391,7 @@ export function EchoBar({
             <span className="echobar-where">
               <span className="echobar-place">{shortPlace(echo.point.place)}</span>
               <span className="echobar-facts">
-                {reach(distanceKm, cue?.kind ?? null, presetFor(mode).speedKph)} · {listenLength(durationS)}
+                {reach(distanceKm, cue?.kind ?? null, presetFor(mode).speedKph, routeS?.get(echo.id))} · {listenLength(durationS)}
               </span>
             </span>
             )}
@@ -386,40 +435,6 @@ export function EchoBar({
   );
 }
 
-/**
- * HOW LONG UNTIL I AM THERE, which is the question, and metres only when minutes are silly.
- *
- * It was metres all the way out, and "390 m" is a measurement rather than an answer:
- * nobody decides anything from it without first dividing by their own walking pace in
- * their head. Six minutes is the decision. It is also the one number this bar was missing
- * — the top of the screen has how long the whole journey has left, the bar had how long
- * the story is, and neither of them is how far away the thing in front of you is in the
- * only unit a person plans with.
- *
- * Near the end it goes back to distance, because minutes stop meaning anything there: "one
- * minute" is noise when you can see the doorway, while "100 m" tells you to look up. And
- * inside the trigger radius it stops being a number at all — a live count that close
- * invites staring at a screen instead of at the thing, which is the one behaviour this
- * whole product is arranged to prevent.
- *
- * The metres are rounded to fifty, which is the echo card's rounding. They are on screen
- * together — tap the bar and the card opens above it — and they disagreed in an early
- * render: "390 m" on the bar over "About 400m away" on the card, about the same echo, two
- * inches apart. That is how somebody stops believing either number.
- */
-function reach(distanceKm: number | null, cue: string | null, speedKph: number): string {
-  if (cue === "arrived") return "you're here";
-  if (cue === "close") return "a few steps";
-  if (distanceKm === null) return "near here";
-  const m = distanceKm * 1000;
-  if (m < 150) return `${Math.max(50, Math.round(m / 50) * 50)} m`;
-  const minutes = Math.round((distanceKm / speedKph) * 60);
-  if (minutes < 1) return `${Math.round(m / 50) * 50} m`;
-  if (minutes < 60) return `${minutes} min`;
-  // Somewhere looked up, not walked to: hours on foot is not an answer, a distance is.
-  if (minutes >= 600) return `${Math.round(distanceKm).toLocaleString("en-US")} km`;
-  return `${Math.floor(minutes / 60)}h ${String(minutes % 60).padStart(2, "0")}`;
-}
 
 /**
  * The place, to its first comma.

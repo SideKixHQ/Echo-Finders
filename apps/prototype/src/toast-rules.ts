@@ -13,8 +13,8 @@
  * draws them and App decides which one has the screen.
  */
 
-import { tooFarToWalk } from "./going";
-import type { Echo, TravelMode } from "@echofinders/core";
+import { reach, tooFarToWalk } from "./going";
+import { presetFor, type Echo, type TravelMode } from "@echofinders/core";
 
 /** How close counts as close, for toast A. */
 export const NEAR_KM = 0.15;
@@ -90,22 +90,42 @@ export interface NextEcho {
  * Otherwise the nearest echo still waiting, not the best ranked: this is about where to
  * walk, so only one within a walk (`going.ts`): "Next · 127 min walk" is not a next. Never
  * the one that just synced. Null when there is nothing left.
+ *
+ * Driving, it says it as the echo bar under it does (`reach` in `going.ts`, at the mode's
+ * own speed): "Next · 50 m" close up, "Next · 4 min drive" further off (James, 2026-11-13,
+ * mock 22 B). It said "1 min walk" from a car. And the walking limit is not applied: the
+ * echo bar has none, it steps through what the engine found around you, which is exactly
+ * `around`, as far as the mode's own reach (`WalkSession.nearbyReachKm`).
  */
 export function nextAfterSync(
   syncedId: string,
   around: readonly NearCandidate[],
   plannedStop: { readonly echo: Echo; readonly distanceKm: number } | null,
+  mode: TravelMode,
 ): NextEcho | null {
   if (plannedStop) {
     if (plannedStop.echo.id === syncedId) return null;
-    return { echo: plannedStop.echo, label: `Next stop · ${walkMinutes(plannedStop.distanceKm)} min` };
+    // Driving, the minutes are driving minutes, at the mode's own speed (James, 2026-11-14).
+    const minutes =
+      mode === "driving"
+        ? Math.max(1, Math.round((plannedStop.distanceKm / presetFor(mode).speedKph) * 60))
+        : walkMinutes(plannedStop.distanceKm);
+    return { echo: plannedStop.echo, label: `Next stop · ${minutes} min` };
   }
   let best: NearCandidate | null = null;
   for (const a of around) {
-    if (!a.sealed || a.echo.id === syncedId || tooFarToWalk(a.distanceKm)) continue;
+    if (!a.sealed || a.echo.id === syncedId) continue;
+    if (mode !== "driving" && tooFarToWalk(a.distanceKm)) continue;
     if (!best || a.distanceKm < best.distanceKm) best = a;
   }
-  return best ? { echo: best.echo, label: `Next · ${walkMinutes(best.distanceKm)} min walk` } : null;
+  if (!best) return null;
+  if (mode === "driving") {
+    const far = reach(best.distanceKm, null, presetFor(mode).speedKph);
+    // A time is a drive: "4 min drive", and over an hour "1h 05 drive" (James, 2026-11-14).
+    const time = far.endsWith(" min") || /^\d+h \d\d$/.test(far);
+    return { echo: best.echo, label: `Next · ${time ? `${far} drive` : far}` };
+  }
+  return { echo: best.echo, label: `Next · ${walkMinutes(best.distanceKm)} min walk` };
 }
 
 /** A distance as the toasts say it: "80 m", "1.2 km", "12 km". */

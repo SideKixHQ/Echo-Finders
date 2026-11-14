@@ -1527,6 +1527,26 @@ export function App() {
     [route, onRoute, walkedStep, kept, kids],
   );
   /**
+   * On a journey that carries you, when the route reaches each echo on it: the echo bar's
+   * time, from the same `upcomingOnRoute` as Coming up and from the same point of the
+   * journey, but every echo rather than the next two. Walking and driving it is null and
+   * the bar keeps distance over speed.
+   */
+  const routeS = useMemo(
+    () =>
+      selfDirected
+        ? null
+        : new Map(
+            upcomingOnRoute(route, onRoute, listenerFor(kids, optIns), walkedMetres / 1000, {
+              limit: Number.POSITIVE_INFINITY,
+              minLeadS: Number.NEGATIVE_INFINITY,
+            }).map((u) => [u.echo.id, u.inS]),
+          ),
+    // As `upcoming`: the quantised step says the journey moved.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [selfDirected, route, onRoute, walkedStep, kids],
+  );
+  /**
    * What is around you, in the order you will reach it.
    *
    * The engine ranks `nearby` by score, which blends quality with distance, and distance
@@ -2667,6 +2687,7 @@ export function App() {
                   simple={simple}
                   mode={roaming ? roamMode : route.mode}
                   guidance={state.guidance}
+                  routeS={routeS}
                 />
               )}
               {/*
@@ -3146,6 +3167,7 @@ export function App() {
                         syncedNow.echo.id,
                         around,
                         stopEcho ? { echo: stopEcho, distanceKm: from ? distanceKm(from, stopEcho.point.at) : 0 } : null,
+                        roaming ? roamMode : route.mode,
                       );
                       if (!n) return null;
                       return {
@@ -3310,6 +3332,7 @@ export function App() {
             onRate={setRate}
             onRestart={() => seekTo(0)}
             onNext={() => session.skip()}
+            canNext={state.waiting.length > 0}
             /* The last three arrived when the sheet's player became a one line bar: stop,
                the narrator and the rating had nowhere else to be, and this is the screen
                they belonged on anyway. */

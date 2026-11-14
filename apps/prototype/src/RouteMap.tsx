@@ -20,7 +20,7 @@
  * than no ring.
  */
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { CATEGORY_ICON, CATEGORY_LABEL } from "./categories";
 import { EchoCharacter, characterFor } from "@echofinders/echo";
@@ -346,6 +346,8 @@ const MAPBAR_FALLBACK = 119;
    rail's 10px (`theme.css`). Stale at 8 after the gap changed, which let the rare marker
    sit 8px into the column's top button. */
 const RAIL_H = 44 * 4 + 90 + 10 * 4; // measured 306: the zoom pair is 90 with its borders
+/** The off-screen marker's plate, wide enough for "EXTRA RARE" clear of its arrow. */
+const EDGE_PLATE_W = 176;
 /* The side margin, `--gutter` in `theme.css`. The edge marker lines up with the rail. */
 const GUTTER = 16;
 /**
@@ -740,6 +742,35 @@ export function RouteMap({
    * (see the return), which makes it a new element.
    */
   const [svgEl, setSvgEl] = useState<SVGSVGElement | null>(null);
+  /*
+   * TAG_ROOM: the pin labels never print over each other.
+   *
+   * Two Rare pins a street apart drew "RARE · 200 M" straight over "RARE · 300 M" (Savannah,
+   * found 2026-11-13). The map's own names already follow a rule for this: when two
+   * collide, the one placed later is left out, and comes back when there is room. The pin
+   * labels now follow the same one, after every render, measured as drawn: Extra rare is
+   * placed first, then the nearer, and a label that would touch one already placed is
+   * hidden. The pin itself always stays, and so does every other pin: a label that would
+   * sit under one is hidden the same way.
+   */
+  useLayoutEffect(() => {
+    const tags = [...(svg.current?.querySelectorAll<SVGTextElement>(".pin-tag") ?? [])];
+    tags.sort((a, b) => Number(a.dataset["rank"]) - Number(b.dataset["rank"]));
+    // And a label under another pin or group is left out too (James, 2026-11-14): in
+    // Savannah the Extra rare creature sat on "RARE · 250 M", which read "A · 250 M".
+    const bodies = [...(svg.current?.querySelectorAll<SVGGraphicsElement>(".echo-char-body, .pin-body, .clus-body") ?? [])]
+      .map((body) => ({ owner: body.closest(".pin, .clus"), box: body.getBoundingClientRect() }));
+    const placed: DOMRect[] = [];
+    const meets = (r: DOMRect, p: DOMRect) => r.left < p.right && r.right > p.left && r.top < p.bottom && r.bottom > p.top;
+    for (const tag of tags) {
+      tag.style.visibility = "";
+      const r = tag.getBoundingClientRect();
+      const own = tag.closest(".pin");
+      const hit = placed.some((p) => meets(r, p)) || bodies.some((b) => b.owner !== own && meets(r, b.box));
+      if (hit) tag.style.visibility = "hidden";
+      else placed.push(r);
+    }
+  });
   const svgRef = useCallback((node: SVGSVGElement | null) => {
     svg.current = node;
     setSvgEl(node);
@@ -1744,6 +1775,20 @@ export function RouteMap({
     const taken: { side: "left" | "right"; y: number }[] = [];
     const free = (side: "left" | "right", y: number) =>
       taken.every((t) => t.side !== side || Math.abs(t.y - y) >= 40) && !(side === "right" && onColumn(y));
+    /*
+     * And off the pins (James, 2026-11-13, mock 26 A). Drawn over a pin or a group, a plate
+     * hid it and took its taps: in Lower Manhattan tapping two pins under "RARE" opened the
+     * rare echo 2 km away instead. A plate keeps clear of every pin and group centre by the
+     * mock's margins, 14px either side and 26px (the biggest group's radius) above and below,
+     * at the nearest height that allows it, so it stays as close to the echo's bearing as it
+     * can. Where no height is clear it keeps the slot it had before.
+     */
+    const centres = groups.map((g) => ({ x: g.x, y: g.y }));
+    const clearOfPins = (side: "left" | "right", y: number) => {
+      const left = side === "right" ? box.w - GUTTER - EDGE_PLATE_W : GUTTER;
+      const right = left + EDGE_PLATE_W;
+      return centres.every((c) => !(c.x > left - 14 && c.x < right + 14 && c.y > y - 17 - 26 && c.y < y + 17 + 26));
+    };
     const placed: (EdgeMark & { y: number })[] = [];
     for (const mark of shown) {
       /*
@@ -1754,6 +1799,16 @@ export function RouteMap({
       const want = mark.side === "right" && onColumn(mark.y) ? railTop - 17 - 10 : mark.y;
       const low = mark.side === "right" && want === railTop - 17 - 10 ? barH + 17 + 10 : floor;
       let y: number | null = null;
+      // The nearest slot clear of the pins as well, in 4px steps: here, then above, then below.
+      for (let k = 0; k <= 120 && y === null; k++) {
+        for (const step of k === 0 ? [0] : [-k, k]) {
+          const slot = want + step * 4;
+          if (slot >= low && slot <= ceiling && free(mark.side, slot) && clearOfPins(mark.side, slot)) {
+            y = slot;
+            break;
+          }
+        }
+      }
       for (let k = 0; k < 12 && y === null; k++) {
         // The nearest free slot: here, then above, then below, widening.
         for (const step of k === 0 ? [0] : [-k, k]) {
@@ -1770,7 +1825,7 @@ export function RouteMap({
       placed.push({ ...mark, y });
     }
     return placed;
-  }, [at, overview, lookAt, directions, library, stateOf, projection, box, zoom, barH, reservedBottom, navH, railTopPx]);
+  }, [at, overview, lookAt, directions, library, stateOf, projection, box, zoom, barH, reservedBottom, navH, railTopPx, groups]);
 
   /**
    * One pin, drawn wherever it has been put.
@@ -1932,7 +1987,13 @@ export function RouteMap({
               if (rarity !== "rare" && rarity !== "singular") return null;
               const away = at ? distanceKm(at, echo.point.at) : null;
               return (
-                <text className={`pin-tag pin-tag-${rarity}`} y="27" textAnchor="middle">
+                <text
+                  className={`pin-tag pin-tag-${rarity}`}
+                  y="27"
+                  textAnchor="middle"
+                  /* Which label wins a collision: Extra rare, then the nearer. See `TAG_ROOM`. */
+                  data-rank={(rarity === "singular" ? 0 : 1e6) + (away ?? 1e5)}
+                >
                   {rarity === "singular" ? "Extra rare" : "Rare"}
                   {away !== null && ` · ${coarse(away)}`}
                 </text>
@@ -2155,11 +2216,12 @@ export function RouteMap({
           Rare and singular went up hard. At 0.24 the rare halo was a slightly warmer patch
           of navy and the listener could not see it, which is the whole report.
         */}
+        {/* Extra rare is magenta (James, 2026-11-13, option D); Rare stays ember. */}
         <radialGradient id="raritySingular">
-          <stop offset="0%" stopColor="var(--ember)" stopOpacity="0.62" />
-          <stop offset="30%" stopColor="var(--ember)" stopOpacity="0.3" />
-          <stop offset="64%" stopColor="var(--ember)" stopOpacity="0.1" />
-          <stop offset="100%" stopColor="var(--ember)" stopOpacity="0" />
+          <stop offset="0%" stopColor="var(--magenta)" stopOpacity="0.62" />
+          <stop offset="30%" stopColor="var(--magenta)" stopOpacity="0.3" />
+          <stop offset="64%" stopColor="var(--magenta)" stopOpacity="0.1" />
+          <stop offset="100%" stopColor="var(--magenta)" stopOpacity="0" />
         </radialGradient>
         <radialGradient id="rarityRare">
           <stop offset="0%" stopColor="var(--ember)" stopOpacity="0.5" />
@@ -2505,19 +2567,20 @@ export function RouteMap({
             <g transform={right ? undefined : "scale(-1 1)"}>
               {/* A whole pill on the gutter, its right edge on the rail's: hung off the
                   screen edge as a tab, it read as cut off beside everything else on 16px. */}
-              {/* 144 wide: at 124 the word "Singular" (76px in Space Grotesk at 14) ran under the
-                  arrow, which drew over its last letter on the right and its first on the left. */}
-              <rect className="map-edge-plate" x="-144" y="-17" width="144" height="34" rx="14" />
+              {/* 176 wide (James, 2026-11-13, mock 20 A): at 144 "EXTRA RARE" (about 99px in
+                  Space Grotesk at 14, spaced) ran into the arrow, over its last letter on the
+                  right and its first on the left. */}
+              <rect className="map-edge-plate" x={-EDGE_PLATE_W} y="-17" width={EDGE_PLATE_W} height="34" rx="14" />
             </g>
             <g
               className="map-edge-glyph"
-              transform={`translate(${right ? -130 : 130} 0) scale(0.6) translate(-12 -12)`}
+              transform={`translate(${right ? -162 : 162} 0) scale(0.6) translate(-12 -12)`}
             >
               {CATEGORY_ICON[mark.echo.category]}
             </g>
             <text
               className="map-edge-text"
-              x={right ? -114 : 114}
+              x={right ? -146 : 146}
               y="4"
               textAnchor={right ? "start" : "end"}
             >

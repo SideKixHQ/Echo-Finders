@@ -3528,6 +3528,8 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* Restart and next are secondary to the three in the middle, and saying so with weight
    costs nothing and stops a five-button row reading as five equal choices. */
 .hear-transport button:first-child, .hear-transport button:last-child { color: var(--muted); }
+/* Next with nothing queued: dimmed as the player's chips are (`.hear-chip:disabled`). */
+.hear-transport button:disabled { opacity: 0.4; cursor: default; }
 /*
  * The creature, at 78, and no disc under it.
  *
@@ -3874,7 +3876,31 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
      The stroke is the plate: it lifts the words off whatever tile is behind them. */
   paint-order: stroke; stroke: rgba(4, 6, 15, 0.7); stroke-width: 2.6;
 }
-.pin-tag-singular { fill: var(--ember-core); }
+/*
+ * EXTRA RARE IS MAGENTA on the map (James, 2026-11-13, option D): the creature's body, rim,
+ * glow and eyes, its halo (#raritySingular) and its label, and 1.15x the size, so it
+ * stands out from the Rare ones, which stay ember. Only the map's pins: the echo bar's
+ * creature and the card keep theirs. The colours are the approved mock's, stop for stop;
+ * the creature's own gradients carry them, overridden here only where its pin has the
+ * extra rare halo (a sealed or opening one).
+ *
+ * The echo bar's creature takes the same colours for an Extra rare echo (`.echo-xr`,
+ * James, 2026-11-14), in every face it shows (the bar has no heard face); not the size.
+ */
+.pin-tag-singular { fill: var(--magenta-ink); transform: translateY(3px); }
+.pin:has(> .pin-halo-singular) > .echo-char { transform: scale(1.15); }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecBody-"] stop:nth-child(1) { stop-color: #7a0036; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecBody-"] stop:nth-child(2) { stop-color: #a3004e; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecBody-"] stop:nth-child(3) { stop-color: #c8136a; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecBody-"] stop:nth-child(4) { stop-color: #ee4c95; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecBody-"] stop:nth-child(5) { stop-color: #ff9bc8; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecRim-"] stop:nth-child(1),
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecRim-"] stop:nth-child(2) { stop-color: #ffd6ea; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecRim-"] stop:nth-child(3) { stop-color: #ff6aac; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecRim-"] stop:nth-child(4) { stop-color: #e5157a; }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecGlow-"] stop { stop-color: var(--magenta); }
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecEye-"] stop:nth-child(2),
+:is(.pin:has(> .pin-halo-singular), .echo-xr) > .echo-char [id^="ecEye-"] stop:nth-child(3) { stop-color: #e5157a; }
 .pin-tag-rare { fill: var(--ember); }
 
 /* Which way you are pointed. Wide and soft, because course over ground on foot is
@@ -4116,6 +4142,14 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 /* "RARE" is four letters and the point of the line; the kind gives way first. */
 .echobar-kicker > b { flex: none; }
 /*
+ * With a rarity on the line, the kind is whole or left out (James, 2026-11-14): "EXTRA RARE
+ * G." said nothing. Left out, it is taken out of the row but still laid out, so EchoBar can
+ * measure whether it would fit again. The count then sits one gap from the rarity rather
+ * than a gap and its own 8px, which is what keeps "EXTRA RARE 1 OF 117" whole at 375.
+ */
+.echobar-kicker-tight > .echobar-kind { position: absolute; visibility: hidden; pointer-events: none; }
+.echobar-kicker-tight > em { padding-left: 0; }
+/*
  * ONE LINE, then an ellipsis, and that is the point rather than a saving. A title that
  * wraps changes the height of the card every time an arrow is pressed, and a control that
  * moves under your thumb between presses is the one thing this exists to fix. The whole
@@ -4251,6 +4285,42 @@ a.pop-aim { text-decoration: none; box-sizing: border-box; }
 .jchip-wrap-wide { flex: 1 1 190px; min-width: 0; }
 /* The journey side always fills the row up to the echoes button, chip or ribbon alike. */
 .mapbar-row > .jchip-wrap { flex: 1 1 auto; min-width: 0; }
+/*
+ * Exploring with no route, the trip button keeps its whole name and the topics button gives
+ * way (James, 2026-11-13, mock 30 B): "Ghosts & legends" took the row and cut "Walking
+ * nearby" to "W...". The topics button takes what is left, its words cut with an ellipsis,
+ * its topic icon and its chevron always showing. Its words count for nothing in its own
+ * size (width 0, then grow), so only a trip name too long to leave room for the icon and
+ * chevron (a searched place) is cut, as before. A route's chip (it carries a progress fill)
+ * and the flight ribbon keep the rule above.
+ */
+.mapbar-row > .jchip-wrap:not(.jchip-wrap-wide):not(:has(.jchip-fill)) { flex: 0 1 auto; }
+.mapbar-row > .jchip-wrap:not(.jchip-wrap-wide):not(:has(.jchip-fill)) ~ .kind-tap { flex: 1 0 auto; }
+.mapbar-row > .jchip-wrap:not(.jchip-wrap-wide):not(:has(.jchip-fill)) ~ .kind-tap .kind-label {
+  flex: 1 1 auto; width: 0; min-width: 0; overflow: hidden; text-overflow: ellipsis; text-align: left;
+}
+/*
+ * A route's ribbon follows 30 B too (James, 2026-11-14): its name, or its airports and time,
+ * stay whole and the topics button gives way, down to its icon, an ellipsis and its
+ * chevron. The ribbon still takes whatever the topics button does not need, because on a
+ * flight that is where the progress bar lives (it has no width of its own).
+ *
+ * The topics button's floor is its padding, border, icon, two gaps and chevron (`.kind-tap`,
+ * `.kind-glyph`, `.kind-chev`: 78px, 70px at 380 and under) and 0.92em for the words, which
+ * is room for the ellipsis alone (14.6px in Sora at 16px): any less and the words came out
+ * as a sliver of a letter.
+ * The ribbon's ceiling is the row less that floor and the row's gap, so a name too long for
+ * the row is cut inside the ribbon rather than pushing the button off.
+ */
+.mapbar-row > .jchip-wrap-wide { flex: 1 0 auto; max-width: calc(100% - 78px - 0.92em - 8px); }
+.mapbar-row > .jchip-wrap-wide ~ .kind-tap { flex: 0 1 auto; min-width: calc(78px + 0.92em); overflow: hidden; }
+.mapbar-row > .jchip-wrap-wide ~ .kind-tap .kind-label { min-width: 0.92em; overflow: hidden; text-overflow: ellipsis; }
+.mapbar-row > .jchip-wrap-wide ~ .kind-tap .kind-chev { margin-left: auto; }
+@media (max-width: 380px) {
+  /* The same floor with the small screen's 12px padding and 6px gaps. */
+  .mapbar-row > .jchip-wrap-wide { max-width: calc(100% - 70px - 0.92em - 8px); }
+  .mapbar-row > .jchip-wrap-wide ~ .kind-tap { min-width: calc(70px + 0.92em); }
+}
 .mapbar .jchip { width: 100%; }
 .mapbar .jchip-caret { margin-left: auto; }
 

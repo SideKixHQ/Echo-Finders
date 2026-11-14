@@ -86,3 +86,6 @@ jobs:
       - run: npm run audit:fit
       - run: npm run audit:flows
       - run: npm run audit:bridge
+      # The map's Rare marker, its two buttons, the player's Next and the flight times
+      # (scripts/audit-map.mjs).
+      - run: npm run audit:map
