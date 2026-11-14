@@ -43,11 +43,13 @@ export interface NarrationAudioMode {
  * while the Sound control is on; with Sound off the echo runs on in silence, and lowering
  * someone's music under a silent echo would be a bug, so it simply mixes.
  */
-export function audioModeFor(soundOn: boolean): NarrationAudioMode {
+export function audioModeFor(soundOn: boolean, onDrive = false): NarrationAudioMode {
   return {
     playsInSilentMode: true,
     shouldPlayInBackground: true,
-    interruptionMode: soundOn ? "duckOthers" : "mixWithOthers",
+    // On a drive the music pauses during an echo, so the car's screen and the steering
+    // wheel's buttons control the echo (James, 2026-11-13, decision 5); walks keep ducking.
+    interruptionMode: !soundOn ? "mixWithOthers" : onDrive ? "doNotMix" : "duckOthers",
     allowsRecording: false,
     shouldRouteThroughEarpiece: false,
   };

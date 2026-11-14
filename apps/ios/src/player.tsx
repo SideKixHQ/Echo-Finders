@@ -104,6 +104,8 @@ interface Narrator {
   readonly handOver: (current: PlayRequest | null, waiting: readonly PlayRequest[]) => void;
   /** The page runs again: it queues for itself, so nothing waits here. */
   readonly takeBack: () => void;
+  /** On a drive the music pauses during an echo rather than ducking (`audioModeFor`). */
+  readonly setOnDrive: (onDrive: boolean) => void;
 }
 
 /** What the player tells the web app. */
@@ -161,6 +163,7 @@ export function NarratorProvider({ children }: { children: ReactNode }) {
   const [current, setCurrent] = useState<Echo | null>(null);
   const [waiting, setWaiting] = useState<readonly Echo[]>([]);
   const [soundOn, setSoundOnState] = useState(readSoundOn);
+  const [onDrive, setOnDrive] = useState(false);
 
   const [queue] = useState(walkQueue);
   const intent = useRef<Intent>(IDLE);
@@ -199,10 +202,10 @@ export function NarratorProvider({ children }: { children: ReactNode }) {
   // The session follows the Sound control: duck others while the echo can be heard, mix
   // with them while it is silent, so nobody's music dips under an echo they cannot hear.
   useEffect(() => {
-    setAudioModeAsync(audioModeFor(soundOn)).catch(() => {
+    setAudioModeAsync(audioModeFor(soundOn, onDrive)).catch(() => {
       /* Without it the echo still plays, in the foreground. */
     });
-  }, [soundOn]);
+  }, [soundOn, onDrive]);
 
   const setSoundOn = useCallback((on: boolean) => {
     setSoundOnState(on);
@@ -479,6 +482,7 @@ export function NarratorProvider({ children }: { children: ReactNode }) {
       subscribe,
       handOver,
       takeBack,
+      setOnDrive,
     }),
     [player, status, current, waiting, play, offer, moved, next, toggle, skip, stop, soundOn, setSoundOn, pause, resume, playRequest, offerRequest, seekFraction, setRate, loadedKey, subscribe, handOver, takeBack],
   );

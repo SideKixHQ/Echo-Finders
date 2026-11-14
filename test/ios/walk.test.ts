@@ -13,6 +13,10 @@ import {
   FRESH_LADDER,
   HANDS_FREE_SHEET,
   NO_LOCATION_LINE,
+  DRIVE_SHEET,
+  DRIVING_UPDATES,
+  askOnDrive,
+  updatesFor,
   locationAccessOf,
   WALKING_LINE,
   WALKING_UPDATES,
@@ -285,5 +289,38 @@ describe("location for Echo Finders, as the page is told it (mock 7)", () => {
   });
   it("the location line is the approved one", () => {
     expect(NO_LOCATION_LINE).toBe("Turn on location for Echo Finders in iPhone Settings to hear echoes as you go.");
+  });
+});
+
+describe("a drive starting (D6, mock 1, approved 2026-11-13)", () => {
+  const yes = { granted: true, canAskAgain: true };
+  const no = { granted: false, canAskAgain: true };
+  const never = { granted: false, canAskAgain: false };
+
+  it("asks for Always only with While Using given, Always not, and iOS still able to ask, once a launch", () => {
+    expect(askOnDrive(yes, no, FRESH_LADDER)).toBe(true);
+    expect(askOnDrive(yes, yes, FRESH_LADDER)).toBe(false);
+    expect(askOnDrive(no, no, FRESH_LADDER)).toBe(false);
+    expect(askOnDrive(yes, never, FRESH_LADDER)).toBe(false);
+    expect(askOnDrive(yes, no, { declined: true, fallbackShown: false })).toBe(false);
+  });
+
+  it("says the approved words, verbatim", () => {
+    expect(DRIVE_SHEET).toEqual({
+      caps: "HANDS FREE",
+      title: "Drive with the screen off",
+      body: "Echoes start on their own as you reach them, with the screen off or another app open. To do that, Echo Finders needs to know where you are while the app is closed. It is used only to find echoes near you. Your exact location stays on your phone.",
+      primary: "Turn on hands free",
+      secondary: "Not now",
+      note: "Without it, keep Echo Finders on screen in a phone mount and echoes still play.",
+    });
+    for (const line of Object.values(DRIVE_SHEET)) expect(line).not.toMatch(/[–—]| - /);
+  });
+
+  it("listens as a car does on a drive: automotive, never paused, every 20 m; a walk as before", () => {
+    expect(updatesFor("drive")).toBe(DRIVING_UPDATES);
+    expect(DRIVING_UPDATES).toMatchObject({ activity: "automotiveNavigation", pausesUpdatesAutomatically: false, distanceIntervalM: 20 });
+    expect(updatesFor("walk")).toBe(WALKING_UPDATES);
+    expect(updatesFor("flight")).toBe(WALKING_UPDATES);
   });
 });

@@ -16,7 +16,7 @@
  */
 import * as Location from "expo-location";
 import * as TaskManager from "expo-task-manager";
-import { WALKING_UPDATES } from "./logic";
+import { updatesFor } from "./logic";
 
 /** The background location task's name, as registered with iOS. */
 export const WALK_TASK = "echo-finders-walk";
@@ -53,21 +53,25 @@ TaskManager.defineTask<{ locations?: Location.LocationObject[] }>(WALK_TASK, asy
   feed(data.locations);
 });
 
-/** `WALKING_UPDATES` as expo-location takes them. */
-const UPDATES: Location.LocationTaskOptions = {
-  accuracy: Location.Accuracy.High,
-  distanceInterval: WALKING_UPDATES.distanceIntervalM,
-  activityType: Location.ActivityType.Fitness,
-  pausesUpdatesAutomatically: WALKING_UPDATES.pausesUpdatesAutomatically,
-  showsBackgroundLocationIndicator: WALKING_UPDATES.showsBackgroundLocationIndicator,
-};
+/** `WALKING_UPDATES` or `DRIVING_UPDATES` (`logic.ts`) as expo-location takes them. */
+function optionsFor(travel: "drive" | "walk" | "flight"): Location.LocationTaskOptions {
+  const updates = updatesFor(travel);
+  return {
+    accuracy: Location.Accuracy.High,
+    distanceInterval: updates.distanceIntervalM,
+    activityType: updates.activity === "automotiveNavigation" ? Location.ActivityType.AutomotiveNavigation : Location.ActivityType.Fitness,
+    pausesUpdatesAutomatically: updates.pausesUpdatesAutomatically,
+    showsBackgroundLocationIndicator: updates.showsBackgroundLocationIndicator,
+  };
+}
 
 /**
- * Walk hands free: location updates that carry on with the screen locked. Needs Always.
- * Calling it again while the walk is on re-arms it, which wakes updates iOS paused.
+ * Hands free: location updates that carry on with the screen locked. Needs Always.
+ * Calling it again while it is on re-arms it, which wakes updates iOS paused, and takes the
+ * settings for how you travel now (a drive's, or a walk's).
  */
-export async function startHandsFree(): Promise<void> {
-  await Location.startLocationUpdatesAsync(WALK_TASK, UPDATES);
+export async function startHandsFree(travel: "drive" | "walk" | "flight" = "walk"): Promise<void> {
+  await Location.startLocationUpdatesAsync(WALK_TASK, optionsFor(travel));
 }
 
 /**

@@ -197,3 +197,11 @@ describe("the Sound control, as saved", () => {
     expect(parseSound("nonsense")).toBe(true);
   });
 });
+
+describe("on a drive (James, 2026-11-13, decision 5)", () => {
+  it("music pauses during an echo rather than ducking; with Sound off it still only mixes", () => {
+    expect(audioModeFor(true, true).interruptionMode).toBe("doNotMix");
+    expect(audioModeFor(true, false).interruptionMode).toBe("duckOthers");
+    expect(audioModeFor(false, true).interruptionMode).toBe("mixWithOthers");
+  });
+});

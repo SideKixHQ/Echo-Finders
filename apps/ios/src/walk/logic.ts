@@ -205,6 +205,27 @@ export const WALKING_UPDATES = {
   showsBackgroundLocationIndicator: true,
 } as const;
 
+/**
+ * Location updates on a drive (D5, Drives and flying plan, 2026-11-13): Apple's docs say
+ * iOS decides when to pause from the activity type, and that after a pause the app must
+ * restart updates itself, so a red light or a ferry queue could end a walking setup for
+ * the rest of the drive. So: automotive navigation, never paused automatically, a fix every
+ * 20 m (about one a second at 70 km/h, so the 3 second settle inside a 150 m driving reach
+ * completes many times over).
+ */
+export const DRIVING_UPDATES = {
+  accuracy: "high",
+  distanceIntervalM: 20,
+  activity: "automotiveNavigation",
+  pausesUpdatesAutomatically: false,
+  showsBackgroundLocationIndicator: true,
+} as const;
+
+/** The updates for how you travel: a drive's, or a walk's for anything else. */
+export function updatesFor(travel: "drive" | "walk" | "flight"): typeof WALKING_UPDATES | typeof DRIVING_UPDATES {
+  return travel === "drive" ? DRIVING_UPDATES : WALKING_UPDATES;
+}
+
 // --- The permission ladder --------------------------------------------------------------------
 
 /** A location permission as expo-location reports it, the two fields that matter. */
@@ -283,6 +304,31 @@ export const HANDS_FREE_SHEET = {
   primary: "Turn on hands free",
   secondary: "Not now",
 } as const;
+
+/**
+ * The same explanation when a drive starts (D6, mock 1, approved 2026-11-13), verbatim:
+ * "drive" and "another app open" in place of "walk" and "pocket", and a note under the
+ * buttons for the driver who says Not now.
+ */
+export const DRIVE_SHEET = {
+  caps: "HANDS FREE",
+  title: "Drive with the screen off",
+  body:
+    "Echoes start on their own as you reach them, with the screen off or another app open. To do that, Echo Finders needs to know where you are while the app is closed. It is used only to find echoes near you. Your exact location stays on your phone.",
+  primary: "Turn on hands free",
+  secondary: "Not now",
+  note: "Without it, keep Echo Finders on screen in a phone mount and echoes still play.",
+} as const;
+
+/**
+ * A drive started (the page's "Start driving" or "Find my route" on a drive): show the
+ * drive sheet? Only inside the app (this is the app), only when location is allowed while
+ * in use but not Always, only while iOS can still ask, and once a launch at most, the way
+ * the walk's ladder asks (`planWalk`).
+ */
+export function askOnDrive(whileUsing: Grant, always: Grant, session: LadderSession): boolean {
+  return whileUsing.granted && !always.granted && always.canAskAgain && !session.declined;
+}
 
 /** `docs/ios-permissions.md`, step 3. */
 export const FALLBACK_LINE = "Keep Echo Finders on screen while you walk and echoes will still open.";

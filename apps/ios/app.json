@@ -83,9 +83,9 @@
         "expo-location",
         {
           "locationWhenInUsePermission": "Echo Finders uses your location to find the echoes around you and to start each one as you reach it. Your exact location stays on your phone.",
-          "locationAlwaysAndWhenInUsePermission": "So echoes can start on their own as you reach them, with your phone in your pocket and the screen off, during a hands free walk you start. Echo Finders works without this: keep it on screen while you walk and echoes will still open. Your exact location stays on your phone.",
+          "locationAlwaysAndWhenInUsePermission": "So echoes can start on their own as you reach them, with your phone in your pocket or the screen off, during a hands free walk or drive you start. Echo Finders works without this: keep it on screen and echoes will still open. Your exact location stays on your phone.",
           "isIosBackgroundLocationEnabled": true,
-          "locationAlwaysPermission": "So echoes can start on their own as you reach them, with your phone in your pocket and the screen off, during a hands free walk you start. Echo Finders works without this: keep it on screen while you walk and echoes will still open. Your exact location stays on your phone.",
+          "locationAlwaysPermission": "So echoes can start on their own as you reach them, with your phone in your pocket or the screen off, during a hands free walk or drive you start. Echo Finders works without this: keep it on screen and echoes will still open. Your exact location stays on your phone.",
           "motionUsagePermission": false,
           "locationFullAccuracyPermission": false
         }

@@ -10,20 +10,42 @@ import { PrimaryButton, QuietButton, SmallCaps, outline } from "../packs/ui";
 import { color, font, gutter, size } from "../theme";
 import { HANDS_FREE_SHEET } from "./logic";
 
-export function HandsFreeSheet({ visible, onTurnOn, onNotNow }: { visible: boolean; onTurnOn: () => void; onNotNow: () => void }) {
+/** The sheet's words: the walk's (`HANDS_FREE_SHEET`) or the drive's (`DRIVE_SHEET`, with its note). */
+interface SheetWords {
+  readonly caps: string;
+  readonly title: string;
+  readonly body: string;
+  readonly primary: string;
+  readonly secondary: string;
+  readonly note?: string;
+}
+
+export function HandsFreeSheet({
+  visible,
+  onTurnOn,
+  onNotNow,
+  words = HANDS_FREE_SHEET,
+}: {
+  visible: boolean;
+  onTurnOn: () => void;
+  onNotNow: () => void;
+  words?: SheetWords;
+}) {
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onNotNow}>
       <View style={styles.backdrop}>
-        <Pressable style={StyleSheet.absoluteFill} onPress={onNotNow} accessibilityRole="button" accessibilityLabel={HANDS_FREE_SHEET.secondary} />
+        <Pressable style={StyleSheet.absoluteFill} onPress={onNotNow} accessibilityRole="button" accessibilityLabel={words.secondary} />
         <SafeAreaView edges={["bottom"]} style={styles.sheet} accessibilityViewIsModal>
           <View style={styles.sheetBody}>
-            <SmallCaps>{HANDS_FREE_SHEET.caps}</SmallCaps>
+            <SmallCaps>{words.caps}</SmallCaps>
             <Text style={styles.title} accessibilityRole="header">
-              {HANDS_FREE_SHEET.title}
+              {words.title}
             </Text>
-            <Text style={styles.body}>{HANDS_FREE_SHEET.body}</Text>
-            <PrimaryButton large label={HANDS_FREE_SHEET.primary} onPress={onTurnOn} />
-            <QuietButton large label={HANDS_FREE_SHEET.secondary} onPress={onNotNow} />
+            <Text style={styles.body}>{words.body}</Text>
+            <PrimaryButton large label={words.primary} onPress={onTurnOn} />
+            <QuietButton large label={words.secondary} onPress={onNotNow} />
+            {/* The drive's note under the buttons, as the trip sheet sets its own. */}
+            {words.note ? <Text style={styles.note}>{words.note}</Text> : null}
           </View>
         </SafeAreaView>
       </View>
@@ -43,4 +65,5 @@ const styles = StyleSheet.create({
   sheetBody: { paddingTop: 22, paddingHorizontal: gutter, paddingBottom: 24, gap: 14 },
   title: { fontFamily: font.semibold, fontSize: size.echo, lineHeight: 31, color: color.white },
   body: { fontFamily: font.regular, fontSize: size.body, lineHeight: 25, color: color.cool },
+  note: { fontFamily: font.regular, fontSize: size.secondary, lineHeight: 21, color: color.muted },
 });

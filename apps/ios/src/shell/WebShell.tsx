@@ -320,6 +320,10 @@ export default function WebShell() {
           router.push(`/trip/${encodeURIComponent(message.routeId)}`);
           return;
         case "trip:start":
+          // How you travel now: a drive's location settings and audio, and on a drive the
+          // Always sheet (D6) if Always is not given yet.
+          n.setOnDrive(message.kind === "drive");
+          w.tripStarted(message.kind);
           // A flight saves itself as it starts (the sheet starts the save as it opens).
           if (message.kind === "flight" && message.routeId) router.push(`/trip/${encodeURIComponent(message.routeId)}`);
           return;
@@ -338,6 +342,7 @@ export default function WebShell() {
         case "pocket": {
           const { type: _type, ...handed } = message;
           plan.current = handed;
+          n.setOnDrive(handed.mode === "driving");
           n.handOver(handed.current, handed.waiting);
           pocket.current = handed.handsFree ? new PocketJudge(handed, currentEchoes(), new Date().toISOString()) : null;
           // An echo the page plays that this phone has not heard of (added after the build,

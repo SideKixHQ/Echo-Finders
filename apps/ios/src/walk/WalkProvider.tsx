@@ -25,7 +25,9 @@ import * as Location from "expo-location";
 import { activateKeepAwakeAsync, deactivateKeepAwake } from "expo-keep-awake";
 import { screenAwake } from "@echofinders/core";
 import {
+  DRIVE_SHEET,
   FRESH_LADDER,
+  askOnDrive,
   NO_LOCATION_LINE,
   afterAlwaysAnswer,
   afterExplanation,
@@ -48,6 +50,11 @@ interface Walk {
   readonly resume: () => void;
   readonly stop: () => void;
   readonly dismissNote: () => void;
+  /**
+   * A drive, walk or flight began from the page's journey screen (`trip:start`): a hands
+   * free walk takes that travel's location settings, and a drive asks for Always (D6).
+   */
+  readonly tripStarted: (kind: "drive" | "walk" | "flight") => void;
 }
 
 const WalkContext = createContext<Walk | null>(null);
@@ -61,6 +68,9 @@ export function WalkProvider({ children }: { children: ReactNode }) {
   const [mode, setMode] = useState<WalkMode>("off");
   const [note, setNote] = useState<string | null>(null);
   const [explaining, setExplaining] = useState(false);
+  // The drive's sheet (D6), and how you travel now: hands free takes its settings from it.
+  const [askingDrive, setAskingDrive] = useState(false);
+  const travel = useRef<"drive" | "walk" | "flight">("walk");
   const [active, setActive] = useState(AppState.currentState === "active");
   const busy = useRef(false);
 
@@ -79,7 +89,7 @@ export function WalkProvider({ children }: { children: ReactNode }) {
   const go = useCallback(async (plan: WalkPlan) => {
     if (plan.kind === "hands-free") {
       try {
-        await startHandsFree();
+        await startHandsFree(travel.current);
         setMode("hands-free");
         return;
       } catch {
@@ -164,7 +174,7 @@ export function WalkProvider({ children }: { children: ReactNode }) {
       setActive(state === "active");
       if (state !== "active" || mode !== "hands-free") return;
       void isHandsFreeOn().then((on) => {
-        if (on) return startHandsFree().catch(() => undefined);
+        if (on) return startHandsFree(travel.current).catch(() => undefined);
         setMode("off");
       });
     });
@@ -183,11 +193,51 @@ export function WalkProvider({ children }: { children: ReactNode }) {
 
   const dismissNote = useCallback(() => setNote(null), []);
 
-  const value = useMemo(() => ({ mode, note, start, resume, stop, dismissNote }), [mode, note, start, resume, stop, dismissNote]);
+  const tripStarted = useCallback(
+    (kind: "drive" | "walk" | "flight") => {
+      travel.current = kind;
+      void (async () => {
+        // Hands free already on: the drive's settings, or back to the walk's.
+        if (await isHandsFreeOn()) await startHandsFree(kind).catch(() => undefined);
+        if (kind !== "drive" || busy.current) return;
+        const whileUsing = await Location.getForegroundPermissionsAsync();
+        const always = await Location.getBackgroundPermissionsAsync();
+        if (askOnDrive(whileUsing, always, ladder)) setAskingDrive(true);
+      })().catch(() => undefined);
+    },
+    [],
+  );
+
+  /** The drive's sheet answered: "Turn on hands free" goes on to iOS's prompt; "Not now" does not. */
+  const answerDrive = useCallback(
+    (choice: "turn-on" | "not-now") => {
+      setAskingDrive(false);
+      const next = afterExplanation(ladder, choice);
+      ladder = next.session;
+      if (!next.ask) return;
+      void (async () => {
+        const always = await Location.requestBackgroundPermissionsAsync().catch(() => null);
+        // Granted, with hands free on in Settings: on with the drive's settings now.
+        if (always?.granted && mode !== "off") await go({ kind: "hands-free" });
+      })();
+    },
+    [go, mode],
+  );
+
+  const value = useMemo(
+    () => ({ mode, note, start, resume, stop, dismissNote, tripStarted }),
+    [mode, note, start, resume, stop, dismissNote, tripStarted],
+  );
   return (
     <WalkContext.Provider value={value}>
       {children}
       <HandsFreeSheet visible={explaining} onTurnOn={() => answer("turn-on")} onNotNow={() => answer("not-now")} />
+      <HandsFreeSheet
+        visible={askingDrive && !explaining}
+        words={DRIVE_SHEET}
+        onTurnOn={() => answerDrive("turn-on")}
+        onNotNow={() => answerDrive("not-now")}
+      />
     </WalkContext.Provider>
   );
 }
